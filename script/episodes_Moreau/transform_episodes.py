@@ -18,12 +18,25 @@ def correct_id(liste):
     return new_list
 
 
+# Les dates (parfois incomplètes) sont corrigés pour correspondre au format utilisé dans l'attribut @when.
+def correct_date(date):
+    if date == "N/A":
+        new_date = ""
+    elif date[:2] == "00":
+        new_date = str(date[6:10]) + "-" + str(date[3:5])
+    else:
+        new_date = str(date[6:10]) + "-" + str(date[3:5]) + "-" + str(date[0:2])
+    return new_date
+
+
+
 for year, year_list in Moreau.items():
     for evt in year_list:
         # Chaque évènement correspond à présent à un dictionnaire contenant les informations qui nous intéresse.
         new_evt = {}
         new_evt["title"] = evt["Etiquette Moreau"]
-        new_evt["date"] = evt["date"]
+        new_date = correct_date(evt["date"])
+        new_evt["date"] = new_date
         new_evt["page"] = evt["page"]
         evt["liste"] = correct_id(evt["liste"])
         new_evt["mazarinades"] = evt["liste"]
