@@ -36,20 +36,20 @@ https://lejeunegael.fr/resources/Moreau/test.html : Moteur de recherche des Maza
 2.	Ouvrir le script "Search_pdf_on_..._from_a_list.ipynb".
 
 3.	En bas de la page, dans la section " Exemple d’utilisation ", il y a deux fonctions launch_api() et download_results(). Remplacer le nom du fichier .txt par celui créé dans l’étape 1. En valeur de la variable regex, indiquer la ou les années de publication qui vous intéressent pour filtrer les résultats de l’API (si plusieurs années, séparer les dates par une barre verticale). 
-	Par défaut dans ce script, l’API Gallica est paramétrée pour ne donner que des résultats correspondants à des monographies du 17ème siècle. Pour changer ce paramètre, il faut modifier la variable chaine2 dans def launch_api() en s’appuyant sur la documentation de l’API Gallica disponible à cette adresse : https://api.bnf.fr/fr/api-gallica-de-recherche
-	L’API GBOOKS fonctionne avec un système de clé à créer dans " l’API console " de Google. Il faut coller cette clé en paramètre de la fonction launch_api_gbooks(). Pour plus d’informations : https://developers.google.com/books/docs/v1/using
+	* Par défaut dans ce script, l’API Gallica est paramétrée pour ne donner que des résultats correspondants à des monographies du 17ème siècle. Pour changer ce paramètre, il faut modifier la variable chaine2 dans def launch_api() en s’appuyant sur la documentation de l’API Gallica disponible à cette adresse : https://api.bnf.fr/fr/api-gallica-de-recherche
+	* L’API GBOOKS fonctionne avec un système de clé à créer dans " l’API console " de Google. Il faut coller cette clé en paramètre de la fonction launch_api_gbooks(). Pour plus d’informations : https://developers.google.com/books/docs/v1/using
 
 4.	Cliquer sur Cell > Run All et attendre que le sablier dans l’onglet en haut ait disparu. Si aucun message d’erreur n’apparait dans le notebook, un dossier output a été créé au même niveau que le script. Ouvrir le fichier output_similar.txt qui se trouve à l’intérieur.
-	Dans ce fichier apparaît la liste de tous les titres proposés par l’API de GBOOKS ou de Gallica en réponse aux titres dans le fichier .txt que nous lui avons soumis à l’étape 1. Les réponses se présentent sous la forme : date de publication, titre du document, lien vers le pdf. 
-	Seuls les titres pour lesquels la date de publication coïncide avec celle indiquée dans la variable regex sont affichés.
-	En raison de la forte variation orthographique des documents, nous récupérons les 40premiers résultats du moteur de recherche GBOOKS/Gallica, ce qui signifie que beaucoup de titres sans rapport avec notre requête risquent d’apparaitre. Pour pallier ce problème, un comparateur de similarité lit chacun des titres et propose des correspondances avec les requêtes soumises à l’étape 1 s’il en trouve.
-	Cet indicateur de similarité se présente sous la forme D=score de similarité, (ID=id_du_document) : titre du document soumis à l’étape 1.
-	Si cette ligne n’apparait pas, c’est que le comparateur n’a pas trouvé de correspondance entre le résultat de l’API et les titres recherchés.
+	* Dans ce fichier apparaît la liste de tous les titres proposés par l’API de GBOOKS ou de Gallica en réponse aux titres dans le fichier .txt que nous lui avons soumis à l’étape 1. Les réponses se présentent sous la forme : date de publication, titre du document, lien vers le pdf. 
+	* Seuls les titres pour lesquels la date de publication coïncide avec celle indiquée dans la variable regex sont affichés.
+	* En raison de la forte variation orthographique des documents, nous récupérons les 40premiers résultats du moteur de recherche GBOOKS/Gallica, ce qui signifie que beaucoup de titres sans rapport avec notre requête risquent d’apparaitre. Pour pallier ce problème, un comparateur de similarité lit chacun des titres et propose des correspondances avec les requêtes soumises à l’étape 1 s’il en trouve.
+	* Cet indicateur de similarité se présente sous la forme D=score de similarité, (ID=id_du_document) : titre du document soumis à l’étape 1.
+	* Si cette ligne n’apparait pas, c’est que le comparateur n’a pas trouvé de correspondance entre le résultat de l’API et les titres recherchés.
 
 5.	Le résultat de l’API semble être un PDF recherché pour le corpus de Mazarinades ? Pour confirmer l’identification du document, il faut ouvrir le PDF et vérifier que le nombre de pages, l’éditeur ou la date de publication coïncide avec la notice Moreau. Le moteur de recherche des mazarinades est utile pour cet usage (https://lejeunegael.fr/resources/Moreau/test.html)
 
 6.	Après avoir confirmé l’identification du document et l’avoir enregistré (format de nommage : Moreau5_GALL.pdf), remplir les métadonnées dans le tableur " Avancée_travail_corpus " : texte en vers ou en prose (V ou P), lien url vers le PDF et permalien de la notice BM si elle existe. Si elle n’existe pas, compléter par la mention " sans notice ".
-	Pour trouver facilement si une notice existe sur le site de la BM, se rendre sur https://mazarinades.bibliotheque-mazarine.fr/ et écrire Moreau+id_moreau (ex : Moreau1584)
+	* Pour trouver facilement si une notice existe sur le site de la BM, se rendre sur https://mazarinades.bibliotheque-mazarine.fr/ et écrire Moreau+id_moreau (ex : Moreau1584)
 
 # CHAINE DE TRAITEMENT PDF VERS XML-TEI
 
@@ -80,10 +80,10 @@ https://lejeunegael.fr/resources/Moreau/test.html : Moteur de recherche des Maza
 *	/ ! \ Nos XML renvoyant en première ligne vers cet ODD, toute erreur d'encodage devrait être signalée dans une application telle que Oxygen XML editor.
 
 ### Métadonnées 
-*	Compléter le geonames de la balise <pubPlace> si le champs n'a pas été pré-rempli: https://www.geonames.org/
-*	Compléter les balises <author> et <publisher> en ajoutant leurs isnis (https://isni.oclc.org/).
+*	Compléter le geonames de la balise < pubPlace > si le champs n'a pas été pré-rempli: https://www.geonames.org/
+*	Compléter les balises < author > et < publisher > en ajoutant leurs isnis (https://isni.oclc.org/).
 *	/ ! \ Les geonames et les isnis doivent toujours être les mêmes. Si, par exemple, dans un fichier, l’éditeur Jean Dupont a l’isni " 1987639043215739 ", tous les fichiers ayant pour éditeur Jean Dupont doivent avoir l’isni précité. Sinon, cela gênera la récupération des informations pour les visualisations et autres traitements. 
-*	Remplir la balise <note type= " BM_identifier "> avec l'identifiant du document donné par la Bibliothèque Mazarine, s’il y a une notice.
+*	Remplir la balise < note type= " BM_identifier " > avec l'identifiant du document donné par la Bibliothèque Mazarine, s’il y a une notice.
 *	Vérifier la notice mazarine. S’il s’agit de la bonne au regard du document, changer @cert= " low " en @cert= " high ", à la fois pour < note type="BM_identifier" > et < ref type= "BM_notice" >. Si la notice ne correspond pas, rechercher la bonne sur mazarinum. Si elle n’existe pas, supprimer les informations.
 *	Compléter la balise < format > en s'appuyant sur les métadonnées de la BNF de la BM par exemple.
 *	Compléter l'ensemble du < msDesc > (informations liées au lieu de conservation du document original)
