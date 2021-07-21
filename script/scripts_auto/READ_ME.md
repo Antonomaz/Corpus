@@ -1,4 +1,4 @@
---Documentation synthèse des missions de stage de Mélanie Lecha et Camille ROblin (février-juillet 2021)--
+**Documentation synthèse des missions de stage de Mélanie Lecha et Camille Roblin (février-juillet 2021)**
 
 # LIENS VERS LES RESSOURCES DU PROJET
 
@@ -18,9 +18,11 @@ https://docs.google.com/spreadsheets/d/1uIFuI-9IKC9EKV8jgcFkYhmJq6jhkxCiq3kzfzKD
 https://docs.google.com/spreadsheets/d/1PwAnVkHFILKbt059S5hmdEAdRnN7A_X8zNUd9iBY6n8/edit#gid=477833049
 
 ## Scripts et outils développés pour le projet :
-https://github.com/Antonomaz/Corpus/tree/main/script
+https://github.com/Antonomaz/Corpus/tree/main/script : Dépôt de tous les scripts utiles à la préparation et à la gestion automatisée des données, ainsi que quelques outils pour extraire des informations du corpus XML-TEI.
 
-https://lejeunegael.fr/resources/Moreau/test.html : Moteur de recherche des Mazarinades
+https://github.com/rundimeco/antonomaz_tools : Dépôt des scripts réalisés par Gaël.
+
+https://lejeunegael.fr/resources/Moreau/test.html : Moteur de recherche des Mazarinades.
 
 ## Dépots des données du projet :
 *	https://sharedocs.huma-num.fr/#/5910/21081 : Accès aux PDF
@@ -82,18 +84,18 @@ https://lejeunegael.fr/resources/Moreau/test.html : Moteur de recherche des Maza
 *	Compléter les balises <author> et <publisher> en ajoutant leurs isnis (https://isni.oclc.org/).
 *	/ ! \ Les geonames et les isnis doivent toujours être les mêmes. Si, par exemple, dans un fichier, l’éditeur Jean Dupont a l’isni " 1987639043215739 ", tous les fichiers ayant pour éditeur Jean Dupont doivent avoir l’isni précité. Sinon, cela gênera la récupération des informations pour les visualisations et autres traitements. 
 *	Remplir la balise <note type= " BM_identifier "> avec l'identifiant du document donné par la Bibliothèque Mazarine, s’il y a une notice.
-*	Vérifier la notice mazarine. S’il s’agit de la bonne au regard du document, changer @cert= " low " en @cert= " high ", à la fois pour <note type="BM_identifier" et <ref type= "BM_notice">. Si la notice ne correspond pas, rechercher la bonne sur mazarinum. Si elle n’existe pas, supprimer les informations.
-*	Compléter la balise <format> en s'appuyant sur les métadonnées de la BNF de la BM par exemple.
-*	Compléter l'ensemble du <msDesc> (informations liées au lieu de conservation du document original)
-*	Indiquer True dans la balise <stamp> si un tampon se trouve sur la première page du document, False sinon.
+*	Vérifier la notice mazarine. S’il s’agit de la bonne au regard du document, changer @cert= " low " en @cert= " high ", à la fois pour < note type="BM_identifier" > et < ref type= "BM_notice" >. Si la notice ne correspond pas, rechercher la bonne sur mazarinum. Si elle n’existe pas, supprimer les informations.
+*	Compléter la balise < format > en s'appuyant sur les métadonnées de la BNF de la BM par exemple.
+*	Compléter l'ensemble du < msDesc > (informations liées au lieu de conservation du document original)
+*	Indiquer True dans la balise < stamp > si un tampon se trouve sur la première page du document, False sinon.
 *	Optionnel : copier les notes sur le document que l'on peut trouver sur la BM < p source="BM_notes" > ou sur le site de la BnF < p source="BnF_notes" >.
 *	Optionnel : compléter les keywords.
 
 ### Texte
 *	Supprimer le bruit évident généré par l'OCR.
-*	Vérifier que la pagination est correcte : selon les numérisations, il peut y avoir des décalages. Si besoin, changer le numéro des pages à l’intérieur de la balise <pb>. 
+*	Vérifier que la pagination est correcte : selon les numérisations, il peut y avoir des décalages. Si besoin, changer le numéro des pages à l’intérieur de la balise < pb >. 
 *	Supprimer les pages vides, à l’exception de celle située entre la page de titre et la première page de texte.
-*	S’il s’agit d’un texte en prose, encoder l’ensemble dans une seule balise <p>. Retirer  à l’aide d’un CTRL+H les balises <l></l>, uniquement utilisées pour les vers.
+*	S’il s’agit d’un texte en prose, encoder l’ensemble dans une seule balise < p >. Retirer  à l’aide d’un CTRL+H les balises < l >< /l >, uniquement utilisées pour les vers.
 
 ### Déposer les XML sur github
 *	Pour chaque XML relu, cocher la case correspondante dans l’excel " Avancée_travail_corpus ". 
@@ -114,12 +116,12 @@ https://lejeunegael.fr/resources/Moreau/test.html : Moteur de recherche des Maza
 # ARCHIVES : Documenter la recherche de PDF assistée  + manuelle
 **I. Observations sur l'efficacité des API Gallica / Google Books**
 
-*Avec script > Gallica-
+*Avec script > Gallica*
 
 * Toujours une sortie - sauf en cas d'erreur de connexion au serveur - même si elle ne correspond pas à la requête envoyée. -> le résultat le plus pertinent n'apparaît pas toujours en première place car gallica est assez sensible au bruit et ne considère pas nécessairement comme pertinent ce qui le serait pour un être humain. 
 * Sensibilité aux variations orthographiques -> utilisation de titres tronqués pour tenter de la contourner, mais la solution n'est pas idéale -> il faudrait savoir comment l'API est paramétrée de base pour avoir des sorties plus pertinentes. Pour le moment, il est très difficile de savoir à combien de sorties il faut limiter le script.
 
-*Avec script > Google Books-
+*Avec script > Google Books*
 
 * Quelques fois, le document numérisé n'a pas la page de titre numérisée, donc on est obligé de se fier aux métadonnées de GBOOKS pour l'identification du texte (bout de titre écrit dans l'url par exemple)
 * Si google books ne trouve pas le document correspondant à la requête, il renvoie un xml vide (plus précis que gallica, mais pas les mêmes logiques non plus). 
@@ -130,7 +132,7 @@ https://lejeunegael.fr/resources/Moreau/test.html : Moteur de recherche des Maza
 * Les articles entre parenthèses dans nos listes ont pu gêner le moteur de rechercher google. Supprimer l'article de début à l'avenir. Exemple : titre chez nous : "Courrier (le) de la Guyenne, apportant le véritable état des affaires." titre gbooks : "Le Courrier de la Guienne, Apportant le veritable Estat des Affaires" Requête uniquement trouvable en mettant "le courrier de la guyenne"
 * Pour améliorer le script, possibilité de travailler avec des titres prétronqués après la première virgule ?
 
-*Recherche manuelle > Gallica-
+*Recherche manuelle > Gallica*
 
 * La recherche manuelle "Titre + intervalle de dates" donne des documents du corpus qui n'apparaissaient pas dans les résultats de l'API. Contourner la variation orthographique en prenant dans les titres des termes qui n'y sont pas sensibles (ou bien moins que d'autres). -> il semble quand même que le moteur de recherche les comprenne assez bien (mieux que l'api?). 
 * Certains liens dans la liste des résultats renvoient en fait directement vers d'autres bibliothèques numériques (comme mazarinum) sur lesquelles on peut télécharger (ou pas) le document voulu. -> Pourrait expliquer en partie que certains résultats n'apparaissent pas lors de l'interrogation de l'api. 
@@ -146,7 +148,7 @@ https://lejeunegael.fr/resources/Moreau/test.html : Moteur de recherche des Maza
 
 **III. Modification des titres**
 
-Piste pour améliorer les sorties des deux api : faire des corrections car les erreurs proviennent de variations orthographiques.
+* Piste pour améliorer les sorties des deux api : faire des corrections car les erreurs proviennent de variations orthographiques.
 
 modif_titres = {  
     "ami": "amy",
