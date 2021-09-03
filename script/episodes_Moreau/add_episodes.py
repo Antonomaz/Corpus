@@ -81,7 +81,7 @@ def add_evt(matching_list, files, Moreau):
 
 if __name__ == "__main__":
     # À MODIFIER : faire un vrai glob pour indiquer le chemin de fichier en entrée, voir pour la récursivité 
-    files = glob.glob("../../Mazarinades/**/Moreau36_GALl.xml", recursive=True)
+    files = glob.glob("../../Mazarinades/**/*.xml", recursive=True)
 
     liste_XML_id = []
     for file in files:
