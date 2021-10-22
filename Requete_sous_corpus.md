@@ -1,4 +1,4 @@
-# Sous-corpus
+# Requête pour constituer un sous-corpus
 
 Afin de créer rapidement un sous-corpus à partir de la collection [Mazarinades](https://github.com/Antonomaz/Corpus/tree/main/Mazarinades), il vous suffit de suivre les étapes suivantes :
 
