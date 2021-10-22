@@ -12,7 +12,7 @@ git clone https://github.com/Antonomaz/Corpus.git
 * Dans la barre de recherche XPath (en haut à gauche), assurez-vous que le projet entier est concerné par votre recherche. Pour modifier cela, cliquez sur la petite icône à gauche de la barre de recherche et sélectionnez `Projet`.
 
 * Préciser ensuite la requête qui vous intéresse. En voici quelques exemples :
-  - Tous les textes de type burlesque : `.//keywords/term[@type='genre']/contains(., 'burlesque')
+  - Tous les textes de type burlesque : `.//keywords/term[@type='genre']/contains(., 'burlesque')`
   - Tous les textes contenant uniquement des vers : `.//keywords/term[@type='form']/contains(., 'vers')`
   - Tous les textes de type satirique : `.//keywords/term[@type='genre']/contains(., 'satirique')`
 
