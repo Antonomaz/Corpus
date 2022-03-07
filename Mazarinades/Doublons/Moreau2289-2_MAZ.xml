@@ -1,36 +1,23 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2289_MAZ">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2289_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title type="main" source="BM">Lettres et declaration du Roy, sur le sujet de sa sortie de
-          Paris. Avec l'arrest de son conseil d'Estat, portant cassation de celuy du parlement de
-          Paris, concernant le logement des troupes de sa Majesté.</title>
-        <title type="sub">Édition Antonomaz</title>
+        <title type="main" source="Moreau">Lettres et déclaration du roi sur le sujet de sa sortie de Paris, avec l'arrêt de son conseil d'État, portant cassation de celui du Parlement de Paris, concernant le logement des troupes de Sa Majesté.</title>
+        <title type="sub">ANTONOMAZ édition</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
-          </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
-          </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
-            Jean-Baptiste</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy Jean-Baptiste</persName>
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
         </respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
         <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-06-08">8 juin 2021</date>
+        <date type="file_creation" when="2022-03-02">2 mars 2022</date>
         <availability status="restricted" n="cc-by">
           <licence target="https://creativecommons.org/licenses/by/4.0"/>
         </availability>
@@ -38,38 +25,33 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14710"/>
-          <author ref="isni:0000000383255772">
-            <persName>
-              <forename>Louis</forename>
-              <surname>Bourbon (De)</surname>
-              <surname>Louis XIV</surname>
-            </persName>
+          <author ref="isni:0000000121754977" source="Mazarine">
+            <persName>France. Conseil d'État</persName>
           </author>
-          <author>Conseil d'Etat de France</author>
-          <title source="BM">Lettres et declaration du Roy, sur le sujet de sa sortie de Paris. Avec
-            l'arrest de son conseil d'Estat, portant cassation de celuy du parlement de Paris,
-            concernant le logement des troupes de sa Majesté.</title>
-          <pubPlace ref="geonames:2979783" source="Moreau">Saint-Germain-En-Laye</pubPlace>
-          <publisher>Sans Nom</publisher>
-          <date source="Moreau">Sans Date</date>
+          <author ref="isni:0000000383255772" source="Mazarine">
+            <persName>Louis XIV</persName>
+          </author>
+          <title source="Mazarine">Lettres et declaration du Roy, sur le sujet de sa sortie de Paris. Avec l'arrest de son conseil d'Estat, portant cassation de celuy du parlement de Paris, concernant le logement des troupes de sa Majesté.</title>
+          <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
+          <publisher>Sans nom</publisher>
+          <date source="Mazarine" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM00523</note>
-          <ref type="BM_notice" cert="high"
-            target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49361"/>
+          <note type="BM_identifier" cert="high">BM49361</note>
+          <ref type="BM_notice" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49361"/>
         </bibl>
         <msDesc>
           <msIdentifier>
             <settlement>Paris</settlement>
-            <institution>Bibliothèque mazarine</institution>
+            <institution>Bibliothèque Mazarine</institution>
             <repository/>
-            <idno type="cote">M 11531</idno>
+            <idno type="cote">M11531</idno>
           </msIdentifier>
           <history>
             <provenance>
-              <stamp>True</stamp>
+              <stamp>True/False</stamp>
             </provenance>
           </history>
         </msDesc>
@@ -77,12 +59,8 @@
     </fileDesc>
     <encodingDesc>
       <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
-          est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
-          ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
-          auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
-          bibliothèques numériques publiques et de Google livres.</p>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait, ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un auteur oublié.</p>
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de bibliothèques numériques publiques et de Google livres.</p>
         <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
       </projectDesc>
       <editorialDecl>
@@ -94,950 +72,971 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Les lettres et la déclaration sont des 5, 6 et 7 janvier 1649. Autres
-          éditions : sur l'imprimé à Saint-Germain-en-Laye, [1649], 12 p. in-4 (BM00374),
-          probablement édition hollandaise selon Hubert Carrier (Mazarine Ms 4682-3 f. 310v) ;
-          traduction en néerlandais. Lettres datées à Paris du 5 janvier et à Saint-Germain-en-Laye
-          du 6 janvier 1649, déclaration datée à Saint-Germain du 6 janvier 1649, arrêt daté à
-          Saint-Germain le 7 janvier 1649. </p>
+        <p source="BM_notes"/>
       </abstract>
       <textClass>
         <keywords>
-          <term type="form">prose</term>
-          <term type="genre">lettre</term>
-          <term type="subgenre"/>
-          <term type="subgenre"/>
-          <term type="subject"/>
+          <term type="form">vers/prose</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
+          <term type="subject">Militaires</term>
+          <term type="subject">Logement</term>
         </keywords>
       </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_2" source="Moreau">
-          <p>Le roi sort de Paris</p>
-          <date when="1649-01-06">1649-01-06</date>
-        </setting>
-      </settingDesc>
     </profileDesc>
     <revisionDesc>
-      <change status="not_corrected"/>
+      <change status="not_corrected" when="2022-03-00" who="AB"/>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <p>
         <pb n="1"/>
-        <lb/> LETTRES,
-        <lb/>1
-        <lb/>
-        <lb rend="¬" break="no"/>DECLARATION
-        <lb/>DV ROY.
-        <lb/>SVR LE SVIET DESA
-        <lb/>SORTIEDE PARIS.
-        <lb/>on ſt drs dt ſes Conſoit de les, pnn pauind
-        <lb/>l celuy du Parlement de Paris,
-        <lb/>nt le logement
-        <lb/>s re pe e ile nee
-        <lb/>d
-        <lb/>GERMAIN EN LAYE.
-        <lb/>A S.
-        <lb/>duec Priuilege de Sa Majeſté.
+        <l>
+          <lb/>OIIT NTcLASSC</l>
+        <l>
+          <lb/>e</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>.</l>
+        <l>
+          <lb/>n¬</l>
+        <l>
+          <lb/>e</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>-E</l>
+        <l>
+          <lb/>-EE</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>-E</l>
+        <l>
+          <lb/>EE</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>-E</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>EE</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>e</l>
+        <l>
+          <lb/>-EE</l>
+        <l>
+          <lb/>EE</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>-E</l>
+        <l>
+          <lb/>EE</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>S-2</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>EE</l>
+        <l>
+          <lb/>-E</l>
+        <l>
+          <lb/>¬</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>-E</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>EE</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>e</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>-E</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>s-E</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>-E</l>
+        <l>
+          <lb/>3-¬</l>
         <pb n="2"/>
-        <lb/>.
-        <lb rend="¬" break="no"/> 2
-        <lb/>e
-        <lb/>l ae
-        <lb/>es
-        <lb/>eerraianr
-        <lb/>i
-        <lb/>e, !
-        <lb/>1
-        <lb/>ee
-        <lb/>i
-        <lb/>
-        <lb/>epes e ſe lei
-        <lb/>1gh8
-        <lb/>s
-        <lb/>
-        <lb rend="¬" break="no"/>rs
-        <lb/>e
-        <lb/>e
-        <lb/>
-        <lb/>’
-        <lb/>a
-        <lb/>’aie
-        <lb/>2
-        <lb rend="¬" break="no"/>p
-        <lb/>Jl
-        <lb/>i
-        <lb/>pt
-        <lb/>i ate e lae,
-        <lb/>A
-        <lb rend="¬" break="no"/>il leu ſl
-        <lb/>El
-        <lb/>’e
-        <lb/>i
-        <lb/>A
-        <lb/>iloe nle ei el
-        <lb/>g
-        <lb/>ee
-        <lb/>.
-        <lb/>3
-        <lb/>t
-        <lb/>3
-        <lb/>E
-        <lb/>Eie
-        <lb rend="¬" break="no"/>r
-        <lb/>Pe
-        <lb/>pé
-        <lb/>t
-        <lb/>r
-        <lb/>ſe ſ
-        <lb/>A
-        <lb/>e
-        <lb/> ſs de
-        <lb/>S4
-        <lb/>
-        <lb rend="¬" break="no"/> ’ee
-        <lb rend="¬" break="no"/>r
-        <lb rend="¬" break="no"/>e
-        <lb/>s
-        <lb/>5
-        <lb/>1
-        <lb/>
-        <lb rend="¬" break="no"/>s
-        <lb/>9
-        <lb/>1
-        <lb/>1.
-        <lb/>eſe e ſl ie
-        <lb/>e5
-        <lb/>e;
-        <lb/>l
-        <lb/>’ie
-        <lb/>ie
-        <lb/>i
-        <lb/> eeirile d
-        <lb/>t?.
-        <lb/>eti
-        <lb/>!
-        <lb/>.
-        <lb/>r
-        <lb rend="¬" break="no"/>5
-        <lb/>1
-        <lb/>2
-        <lb/>S
-        <lb/>E
-        <lb/>e3
-        <lb/> ?.
-        <lb/>r
-        <lb/>-
-        <lb/>e
-        <lb/>dl
-        <lb/> y
-        <lb/> e
-        <lb/>e
-        <lb/>e
-        <lb/> ui
-        <lb/>i
-        <lb/>le1
-        <lb/>3
-        <lb/>2
-        <lb/>
-        <lb/>F
-        <lb/>e
-        <lb/> a
-        <lb/>.
-        <lb/>a
-        <lb/>llet
-        <lb/>,
-        <lb/>6
-        <lb/>e.
-        <lb/>i
-        <lb/>p.
-        <lb/>ii
-        <lb/>l
-        <lb/>!
-        <lb/>S 2
-        <lb/>s
-        <lb/>3
-        <lb/>V
-        <lb/>.
-        <lb/>e
-        <lb/>E
-        <lb/>1
-        <lb/>
-        <lb rend="¬" break="no"/>oibé
-        <lb/>e
-        <lb/>.
-        <lb/>E iſi
-        <lb/>VS’
-        <lb/>3
-        <lb/>2
-        <lb/>4
-        <lb/>i
-        <lb/>?
-        <lb/>E
-        <lb/>5
-        <lb/>lt
-        <lb/>,
-        <lb/>aldre i is
-        <lb/>.
-        <lb/>te
-        <lb/>ſ
-        <lb/>t
-        <lb/>u
-        <lb/>g
-        <lb/>ſiſellre
-        <lb/>r
-        <lb/>Séi
-        <lb/>,
-        <lb/>l
-        <lb/>,
-        <lb/>’
-        <lb/> oe p
-        <lb/>5
-        <lb/>3
-        <lb/>e
-        <lb/>’dliii
-        <lb/>r
-        <lb/>t
-        <lb/>2
-        <lb/>F
-        <lb/>eeit
-        <lb rend="¬" break="no"/>p
-        <lb/>eden
-        <lb/>ee
-        <lb/>.
-        <lb/>1
-        <lb/>ee le ee oeiee
-        <lb/>Eſi
-        <lb/>dloee de oeaee
-        <lb/>ele
-        <lb/>leie
-        <lb/>r
-        <lb/>V
-        <lb/>eaee eadi oe lr ede e er e ee ee ene ldl
-        <lb/>2
-        <lb/>r
-        <lb rend="¬" break="no"/>.¬¬¬¬¬- ¬¬¬
-        <lb rend="¬" break="no"/>dſu
-        <lb/>1
-        <lb/>i
-        <lb/>18
-        <lb/>1
-        <lb/>8
-        <lb/>1
-        <lb/>r
-        <lb/>?
-        <lb/>û
-        <lb/>ſlit
-        <lb/>te
-        <lb/>gii
-        <lb/> t
-        <lb/>Jet
-        <lb/>rl
-        <lb/>?
-        <lb/>’i
-        <lb rend="¬" break="no"/>ie
-        <lb/>e
-        <lb/>ljel
-        <lb/>1
-        <lb/>’ Mu
-        <lb/>r!
-        <lb/>s
-        <lb/>de re
-        <lb/>2eva
-        <lb/>dtt
-        <lb/>ee.
-        <lb/>leg’lt e leir
-        <lb/>paa;
-        <lb/>pt
-        <lb/>ee
-        <lb/>
-        <lb/>i
-        <lb/>,
-        <lb/>al
-        <lb/>i
-        <lb rend="¬" break="no"/> e5
-        <lb/>
-        <lb/>d
-        <lb/>Vſſi
-        <lb/>e
-        <lb/>aers
-        <lb/> ei
-        <lb/>1
-        <lb/>lſaee
-        <lb/>.
-        <lb/>i
-        <lb rend="¬" break="no"/>ltuaa
-        <lb/>e
-        <lb/>Al
-        <lb/>eii
-        <lb/> leia
-        <lb/>S!
-        <lb/>-
-        <lb/>iee
-        <lb/>e
-        <lb/>b?
-        <lb/>cſi
-        <lb/>’eeeſd
-        <lb/>lſl
-        <lb/>s
-        <lb/>eoie
-        <lb/>li e
-        <lb/>e
-        <lb/>ei
-        <lb/>prt
-        <lb/>
-        <lb rend="¬" break="no"/>eeeo
-        <lb/>t
-        <lb/>El
-        <lb/>edu
-        <lb/>1
-        <lb/>ſ rt1
-        <lb/>ſ
-        <lb/>
-        <lb/>i
-        <lb/>eeiſelel
-        <lb/>aed
-        <lb/>Fſet
-        <lb/>8
-        <lb/>3
-        <lb/>ette
-        <lb/>- ip
-        <lb/>e
-        <lb/>s
-        <lb/>It
-        <lb/>l
-        <lb/>ldlil si
-        <lb/>
-        <lb/>à
-        <lb/>e
-        <lb/>eeoe g
-        <lb/>iiall?
-        <lb/>p
-        <lb rend="¬" break="no"/>
-        <lb rend="¬" break="no"/>epe e eeer de
-        <lb/>rerun
-        <lb/>.
-        <lb/>er
-        <lb/> etſ eeſt les
-        <lb/>ese eeel e
-        <lb/>a
-        <lb/>Teeeet
-        <lb/>s
-        <lb/>8
-        <lb/>5r
-        <lb/>Pe e
-        <lb/>Edil
-        <lb/>eogee
-        <lb/>entn
-        <lb/>e eei e ſi
-        <lb/>E a
-        <lb/>8
-        <lb/>laenree
-        <lb/>r
-        <lb/>1!
-        <lb/>nge
-        <lb/>Tp
-        <lb/>lEedees ee e
-        <lb/>;
-        <lb/>Ee
-        <lb/>S
-        <lb rend="¬" break="no"/>al eſieſeeeoeſes
-        <lb/>
-        <lb/>a
-        <lb/>a
-        <lb/>Sllllſll
-        <lb/>Stllpele
-        <lb/>Aa
-        <lb/>riſ
-        <lb/>l8
-        <lb/>eel
-        <lb/>.
-        <lb/>e
-        <lb/>is1
-        <lb/>ldel
-        <lb/>6
-        <lb/>3qes
-        <lb/>e
-        <lb/>tſee
-        <lb/>e ereet
-        <lb/>de
-        <lb/> ſdl
-        <lb/>,-é!
-        <lb/>lLilai
-        <lb/>uſde at
-        <lb/>4
-        <lb/> i
-        <lb/>p
-        <lb/>e
-        <lb/>leldie
-        <lb/>1
-        <lb/>retey
-        <lb/>r
-        <lb/> eeepee
-        <lb/>2
-        <lb/>eé
-        <lb/>ai
-        <lb/>as
-        <lb/>e et a ia
-        <lb/> .
-        <lb/>ts
-        <lb/>iu
-        <lb/>’e E
-        <lb/>i
-        <lb rend="¬" break="no"/>nosdl eo
-        <lb rend="¬" break="no"/>u
-        <lb rend="¬" break="no"/>enee
-        <lb/>loe
-        <lb/>j
-        <lb/>e
-        <lb/>e
-        <lb/>uers
-        <lb/>eede
-        <lb/>et
-        <lb/>l di ſe
-        <lb/>Es
-        <lb/>oe
-        <lb/> i
-        <lb/>e
-        <lb/>1
-        <lb/>eieeire
-        <lb/>ſrda
-        <lb/>i
-        <lb/>leeel?
-        <lb/> dee
-        <lb/>&amp;
-        <lb/>nes
-        <lb/>Sa
-        <lb/>qt
-        <lb/>e?
-        <lb/>ees
-        <lb/>oeſdeſſ e ee
-        <lb/>ls
-        <lb/>e?
-        <lb/>ee pe eeſrepeuie,
-        <lb/>eeel eere
-        <lb/>2
-        <lb rend="¬" break="no"/>.
-        <lb/>t
-        <lb/>Atial
-        <lb/>?
-        <lb/>ddd
-        <lb/>S
-        <lb/>e
-        <lb/>qin
-        <lb/>E
-        <lb/>iei
-        <lb rend="¬" break="no"/>5
-        <lb/>8
-        <lb/>Tsre
-        <lb/>ediesl
-        <lb/>a
-        <lb/>le
-        <lb/>detſe
-        <lb/>r5
-        <lb/>
-        <lb rend="¬" break="no"/>ldp
-        <lb/>po
-        <lb/> edee eſres
-        <lb/>sa
-        <lb/>a
-        <lb/>ſ
-        <lb/>Flr
-        <lb/>2
-        <lb rend="¬" break="no"/>leoreose
-        <lb/>e
-        <lb/>le
-        <lb/>r
-        <lb/> e
-        <lb/>Sr lſi !
-        <lb/>e
-        <lb/>e t sean
-        <lb/>toee
-        <lb/>.
-        <lb/> l
-        <lb/>&amp;s
-        <lb/>Tſa l
-        <lb/>ei
-        <lb/>i
-        <lb rend="¬" break="no"/>t
-        <lb/>ede
-        <lb/>tete
-        <lb/>i
-        <lb/>gt
-        <lb/>l
-        <lb/>Pe ed
-        <lb/>de ei
-        <lb/>q
-        <lb/>elee edepſſui
-        <lb/>1
-        <lb/>tse
-        <lb/>laerde
-        <lb/>ry
-        <lb/>sieet
-        <lb/>eot
-        <lb/>.
-        <lb/>I
-        <lb/>é!
-        <lb/>een
-        <lb/>s elirs
-        <lb/>l’
-        <lb/>dee
-        <lb/>
-        <lb/> te
-        <lb rend="¬" break="no"/>eee
-        <lb/> lel l iled
-        <lb/>i
-        <lb/>1
-        <lb/>e
-        <lb/>pi ae
-        <lb/>3
-        <lb/>delie ſei e lelueei i&amp;ei?
-        <lb/>1
-        <lb/>- ’
-        <lb/>1
-        <lb/>
-        <lb rend="¬" break="no"/>R
-        <lb/>ſ
-        <lb/>3
-        <lb/>e
-        <lb/>11
-        <lb/>1
         <pb n="3"/>
-        <lb/>o
-        <lb/>3
-        <lb/>ae
-        <lb/>E
-        <lb/>3
-        <lb/>8
-        <lb/>LETTRE DV ROY
-        <lb/>1
-        <lb/>1 J
-        <lb/>AV DVC DEMONBAZON
-        <lb/>Pair de France, Gouuerneur &amp;
-        <lb/>LieutenanGeneral pour ſa Ma
-        <lb rend="¬" break="no"/>́ en la lile de Pans &amp; lle de
-        <lb/>ON Couſin, Cette Lettre eſt
-        <lb/>l V lE oun onu lire quoie pun ianue
-        <lb/> de la Reyne Regente, Madame
-        <lb/>al
-        <lb/> ma Mere, comme ie me trouue
-        <lb/> obligé auec vn extréme déplai
-        <lb rend="¬" break="no"/> J ſis, à partir cette nuict meſme
-        <lb/> de ma bonne ville de Paris,
-        <lb/>pour eut er es perqieieus efet de la mauuaiſe uo
-        <lb rend="¬" break="no"/>lonté́ d’aucuns Officiers de ma Cour de Parlement
-        <lb rend="¬" break="no"/>de Paris, qui a paſſé ſi auant, qu’ils ont pris intelli
-        <lb rend="¬" break="no"/>gence auec les ennemis dec larez de cet Eſtat, &amp; en
-        <lb/>ſuite ont conſpiré de ſe ſaiſir de ma Perſonne, apres
-        <lb/>auoir entrepris, comme ils ont fait en pluſieurs cho
-        <lb rend="¬" break="no"/>ſes, ſur mon authorité, &amp; ſur celle que les Roys mes
-        <lb/>Predeceſſeurs ont bien voulu communiquer à mes
-        <lb/>173
         <pb n="4"/>
-        <lb/>
-        <lb/> 4
-        <lb/>atres Cours Souueraines, dequoy ie deſire que
-        <lb/>vous donniez part à mes Fidelles Sujets de ma
-        <lb/>bonne Ville de Paris, en attendant que ie vous face
-        <lb/>ſçauoir ma reſolution ſur ces oceurrences: Que ce
-        <lb rend="¬" break="no"/>pendant vous ayez aà̀ vous employer ſelon l’autho
-        <lb rend="¬" break="no"/>rité de voſtre charge, à ce qu’il n’arriue rien en ma
-        <lb rend="¬" break="no"/>dite Ville, qui ſoit préjudiciable à mon ſeruice, ny
-        <lb/>au repos d’icelle, &amp; que vous aſſeuriez les Preuoſt
-        <lb/>des Marchands &amp; Eſcheuins, &amp; principaux Habi
-        <lb rend="¬" break="no"/>tans, que demeurants, come ils ont fait de leur part
-        <lb/>iuſqu’à preſent, dans le deuoir dehons &amp; fidelles
-        <lb/>Sujets, ils receuront de Nous ſrtontinuation de
-        <lb/>tout bon &amp; fauorable traitement: Et ſurce, ie prie
-        <lb/>Dieu qu’il vous ait, mon Couſin, enſa ſainte &amp; di
-        <lb rend="¬" break="no"/>gne garde.
-        <lb/>Eſcrite aà Paris ce cin quiéme iour de lanuier 1649.
-        <lb/>Signé, LOVIS. Et plus bas,DE GVENEGAVD.
-        <lb/>Et à la ſuſcription eſt eſcrit: A mon Couſin le
-        <lb/>Duc de Monbazon, Pair de France, Gouuerneur,
-        <lb/>&amp; mon Lieutenant General en ma bonne Ville de
-        <lb/>Paris &amp; Iſle de France.
-        <lb/> eeep
-        <lb/>A 2 A
         <pb n="5"/>
-        <lb/> &amp; S &amp; &amp; &amp; &amp; &amp; &amp; &amp; dl l &amp;de &amp;d &amp;&amp;d
-        &amp;&amp; dd g
-        <lb/> ofſo Gfafcfb Sotototecootosotosootoceceoososoe
-        <lb/>LETTRE DV ROT AVX PREVOST
-        <lb/> D
-        <lb/> eer L
-        <lb/>des Marchands &amp; Eſcheuins de la lVille de Paris.
-        <lb/>DE PAR LE ROY.
-        <lb/>
-        <lb/>
-        <lb rend="¬" break="no"/>Res chers &amp; bien-amez, eſtans obligez auec vn
-        <lb/> tres-ſenſible déplaiſir de partir de noſtre bonne
-        <lb/>Ville de Paris cette nuict meſme, pour ne pas de
-        <lb rend="¬" break="no"/>meurer expoſez aux pernicieux deſſeins d’aucuns
-        <lb rend="¬" break="no"/>Officiers de noſtre Cour de Parlement de Paris,
-        <lb rend="¬" break="no"/>quels ayans intelligence auec les ennemis decla
-        <lb rend="¬" break="no"/>rez de noſtre Eſtat, apres auoir attenté contre
-        <lb/>noſtre authorité en diuerſes manieres, &amp; abuſé lon
-        <lb rend="¬" break="no"/>guement de noſtre bonté, ſe ſont portez iuſques à̀
-        <lb/>conſpirer de ſe ſaiſir de noſtre propre perſonne:
-        <lb/>Nous auons bien voulu, de l’auis de la Reyne Re
-        <lb rend="¬" break="no"/>gente, noſtre tres-honorée Dame &amp; Mere, vous
-        <lb/>donner part de noſtre reſolution, &amp; vous ordonner,
-        <lb/>comme nous faiſons tres-expreſſeément, de vous em
-        <lb rend="¬" break="no"/>ployer en tout ce qui dépendra de vous, pour em
-        <lb rend="¬" break="no"/>peſcher qu’il n’arriue rien en noſtredite Ville qui
-        <lb rend="¬" break="no"/>puiſſe en alterer le repos, ny prejudicier aà noſtre ſer
-        <lb rend="¬" break="no"/>uice, &amp; vous aſſeurer que comme nous eſperons que
-        <lb rend="¬" break="no"/>tous les Bourgeois &amp; Habitans d’icelle, continueë
-        <lb rend="¬" break="no"/>ront auec vous dans le deuoir de bons &amp; fidelles Su
-        <lb rend="¬" break="no"/>jets, ainſi qu’ils ont fait iuſques à preſent, auſſi ils
-        <lb/>receuront de Nous toute ſorte de bon &amp; fauorable
-        <lb/>traitement, nous reſeruant de vous faire ſçauoir
-        <lb/>dans peu de iours, les ſuites de noſtre reſolution, &amp;
-        <lb/>7
         <pb n="6"/>
-        <lb/>6
-        <lb/>cependant nous confians en voſtre fidelité &amp; affe.
-        <lb/>on anoſtre ſeruiee nous ne vous ferons la preſen
-        <lb rend="¬" break="no"/>te plus longue ny plus expreſſe. Do E aà Paris
-        <lb/>le cinquieſme lanuier mil ſix cent quarante neuf
-        <lb/>Signeé, LOVIS. Et plus bas, DE GVENEGAVD.
-        <lb/>Et en la ſuſcription eſt eſcrit, Anos tres-chers &amp;
-        <lb/>bien-amez les Preuoſt des Marchands &amp; Eſcheuins
-        <lb/>de noſtre bonne Ville de Paris.
-        <lb/>gtggtte82888s
-        <lb/>Sooo oeosooto etoSa o Sosbc coſõococoGß ES
-        <lb/>AVTRE LETTRE DV ROT
-        <lb/>aux Preuoſt des Marchands, Eſcheuins &amp;
-        <lb/>Habitans de ladite Ville de Paris.
-        <lb/>
-        <lb/>DE PAR LE ROY.
-        <lb/>7 E
-        <lb/>Res-chers &amp; bien-amez, Nous vous fiſmes
-        <lb/>l hier ſç̧auoir les raiſons qui nous ont obligé à
-        <lb/>ſortir de Paris; Maintenant nous vous faiſons cette
-        <lb/>Lettre, de l’aduis de la Reyne Regente noſtre tres
-        <lb rend="¬" break="no"/>honorée Dame &amp; Mere, Pour vous dire que nous
-        <lb/>auons commandé à̀ noſtre Cour de Parlement de
-        <lb/>Paris, de transferer ſa ſeance en noſtre Ville de
-        <lb/>Montargis, auec deffenſes de faire aucune fonction
-        <lb/>de luges dans ladite Ville de Paris, &amp; à nos Sujets
-        <lb/>de les reconnoiſtre, ainſi que vous l’apprendrez
-        <lb/>plus particulierement par les Lettres Patentes que
-        <lb/>nos en auons fait expedier, dont nous vous auons
-        <lb/>bien voulu enuoyer copie, ne doutant pas que
         <pb n="7"/>
-        <lb/>---L
-        <lb rend="¬" break="no"/>vous ne nous rendiez auec tous les Bourgeois &amp;
-        <lb/>Habitans de noſtredire Ville, l’obeiſſance que vous
-        <lb/>nous deuez:Ce qui nous donnera ſujet d’y retourner
-        <lb/>plus promptement, ne jugeant pas à propos de le
-        <lb/>faire, que noſtredite Cour n’en ſoit ſortie: Et vous
-        <lb/>aſſurant que nous deſirons vous donner de plus en
-        <lb/>plus des témoignages de l’affection &amp; de l’amour
-        <lb/>que nous auons pour noſtredite Ville, N’y faires
-        <lb/>donc faute: CaR TEL eſt noſtre plaiſir. Don e
-        <lb/>à S. Germain enLaye, le ſixieéme iour de Ianvier i64e.
-        <lb/>Signé, LOVIS. Et plus bas, DE GVENEGAVD.
-        <lb/>Et deſſus eſt eſcrit,
-        <lb/>A nos tres chers &amp; bien-amez les Preuoſt des
-        <lb/>Marchands, Eſcheuins &amp; Habitans de noſtre
-        <lb/>bonne Ville de Paris.
-        <lb/>oo lolool loytpetestoeſleeoto
-        <lb/>&amp;ſl, ſe eo dſee, dſlooſe eî oo ̂6
-        <lb/> A’’V
-        <lb/>OVIS par la grace de Dieu Roy de
-        <lb/>, France &amp; de Nauarre: A tous ceux qui
-        <lb/> ces preſentes Lettres verront, Salut.
-        <lb/> ſléA Les aſſurances que nous auoit données
-        <lb/> noſtre Cour de Parlement de Paris,
-        <lb/>par la bouchedes Gens de noſtre Parquet, qu’elle f
-        <lb rend="¬" break="no"/>niroit toutes les aſſamblées des Chambres, apres que
-        <lb/>nous aurions trouué bon que la Declaration qui auoit
-        <lb/>eſté concertée en leur Compagnie, ſur les propoſi
-        <lb rend="¬" break="no"/>tions de la Chambre de S. Louis, fuſt expediee, Nous
-        <lb/>auoit donné ſujet de conſentir à ce que l’on auoit deſiré
-        <lb/>1 9
+        <l>
+          S81</l>
+        <l>
+          <lb/>a,</l>
+        <l>
+          <lb/>A 229.</l>
         <pb n="8"/>
-        <lb/>de Nous: Mais depuis peu nous auons veu des effſets
-        <lb/>tout contraires aux paroles qui nous auoient eſté ſi ſo
-        <lb rend="¬" break="no"/>lemnellement portées &amp; que noſtre Cour de Parle
-        <lb rend="¬" break="no"/>menteſtoit d’autant plus obligée d’obſeruer religieu
-        <lb rend="¬" break="no"/>ſement, que le reſpect &amp; l’obeyſſance qu’elle nous
-        <lb/>doit, la deuoit empeſcher de ne rien entreprendre
-        <lb/>qui nous pû̂ſt donner mécontentement. Nous auons
-        <lb/>eu grand plaiſir de ſuiure les conſeils que l’on auoit
-        <lb/>iugez neceſſaires pour remedier aux deſordres que l’on
-        <lb/>diſoit s’eſtre formez dans noſtre Eſtat; Et bien que
-        <lb/>la forme que l’on auoit tenuë, nous pûſt empeſcher
-        <lb/>de conſentir à ce que l’on deſiroit de Nous, neant
-        <lb rend="¬" break="no"/>moins l’amour que nous auons pour nos Peuples
-        <lb/>nous a fait diſſimuler le mauuais procedé que l’on
-        <lb/>auoit tenu, qui bleſſoit noſtre authorité: Mais à pre
-        <lb rend="¬" break="no"/>ſent que nous auons fait tout ce que nous pouuions
-        <lb rend="¬" break="no"/>pour le bien de noſtre Eſtat, la diſſimulation des en
-        <lb rend="¬" break="no"/>trepriſes que noſtre Cour de Par lement fait ſur noſtre
-        <lb/>authorité ne pourroit produire autre choſe que l’af
-        <lb rend="¬" break="no"/>foibliſſement de noſtre puiſſance &amp; vn meſpris de
-        <lb/>l’authorité Royalle, par ceux qui ſont plus obligez à
-        <lb/>la reſpecter: Ainſi apres auoir conſideré combien les
-        <lb/>aſſambleées &amp; les deliberations que noſtredite Cour de
-        <lb/>Parlement continuë̈ de faire contre noſtre volonteé,
-        <lb/>&amp; contre les ordres précis que nous luy auons donnez,
-        <lb/>nous ſommes obligez de prendre les voyes que nous
-        <lb/>auons iugé neceſſaires pour en arreſter le cours, dont
-        <lb/>la continuation pourroit cauſer de ſi grands maux à
-        <lb/>noſtre Eſtat, ſans apporter aucun bien au publie: nos
-        <lb/>ennemis font aſſez connoiſtre le préjudice que nous
-        <lb/>en pou¬
         <pb n="9"/>
-        <lb/>en pouvons receuoir, puiſque inſqu’à preſent rien ne
-        <lb/>les a retenus de conſentir a vn traité de paix, que l’eſ
-        <lb rend="¬" break="no"/>perance qu’ils ont conceue de la ruyne de nos affaires,
-        <lb/>dans vn renuerſement general de noſtre Royaume,
-        <lb/>qui ſeroit cauſé par les oppoſitions que noſtre Cour
-        <lb/>de Parlement fait à tous les ordres que nous donnons
-        <lb/>ponr le bien de nos afftaires. Nous auons remis: à
-        <lb/>nos ſujers trente-quatre millions de reuenu que nous
-        <lb/>receuions, &amp; qui eſtoient portez en noſtre par
-        <lb rend="¬" break="no"/>gne: de ſorte que le reuenu ordinaire de nos Tailles
-        <lb/>&amp; de nos Fermes, eſt reduit à trente-fix millions,
-        <lb/>leſquels nous ne pouuons recouoir preſentement,
-        <lb/>puis qu’ils ne doiuaent eſtre payez que dans des ter
-        <lb rend="¬" break="no"/>mes fort éloignez. Ce qui nous auoit donné ſujet
-        <lb/>d’enuoyer vne Declaration à noſtre Chambre des
-        <lb/>COomptes, pour uthoriſer la remiſe que nous ſe
-        <lb rend="¬" break="no"/>rions obligez deifaire à coux qui fenoyent des auances
-        <lb rend="¬" break="no"/>de nosreuenuspourſuhuenir aux deſpences preſen
-        <lb rend="¬" break="no"/>tes de noſtre EſtatCe pendant noſtrediteCour de Par.
-        <lb/>lement s’eſt non ſeulemẽt oppoſée à la verificarion de
-        <lb/>cette Dé́clartation maismefmes quelques panticuliers
-        <lb/>de cetre Compagnie ont ſollioieé les Officiers de nos
-        <lb/>Comptes de la refufer. Ainſi l’on connoiſtaiſénent
-        <lb/>les mauuais deſſoins qu’ils ortd’enopeſcherque ous
-        <lb/>n’ayons aucun fecours dans les aeceffitez publiques,
-        <lb/>qui fſont telles, que s’il n’yeſt promptemert remodieé,
-        <lb/>nous n’auons point moyen de payer nos gons de
-        <lb/>Gucrre, ny d’entretenir les garniſons des qlaeesles
-        <lb/>plus importantes de noſtre Royaume. De forte que
-        <lb/>nous ſerions enfin reduits aà̀ telle extremité, que rous
-        <lb/>3
+        <l>
+          <lb/>LETTRES,</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>¬</l>
+        <l>
+          <lb/>DECLARATION</l>
+        <l>
+          <lb/>DV ROY.</l>
+        <l>
+          <lb/>SVR LE SVIET DESA</l>
+        <l>
+          <lb/>SORTIEDE PARIS.</l>
+        <l>
+          <lb/>on ſt drs dt ſes Conſoit de les, pnn pauind</l>
+        <l>
+          <lb/>l celuy du Parlement de Paris,</l>
+        <l>
+          <lb/>nt le logement</l>
+        <l>
+          <lb/>s re pe  e ile nee</l>
+        <l>
+          <lb/>A S. GERMAIN EN LAYE.</l>
+        <l>
+          <lb/>duec Priuilege de Sa Majeſté.</l>
         <pb n="10"/>
-        <lb/>
-        <lb/>10
-        <lb/>ne pourrions reſiſter à la puiſſance de nos ennemis:
-        <lb/>qui trouuans noſtre Royaume ouuert, ſans forces pour
-        <lb/>oppoſer à leurs armes, y feroyent tout le progrez qu’ils
-        <lb/>entreprendroyent. Il eſt vray que lors que nous nous
-        <lb/>repreſentons la conduite de noſtre dite Cour de Parle
-        <lb rend="¬" break="no"/>ment, nous ne ſçaurions voir qu’auec indignation, que
-        <lb/>des Offieiers qui n’ont autre puiſance que celle que
-        <lb/>nous leur auons donné́e, l’employent aà̀ la ruine de
-        <lb/>noſtre authoriteé́, &amp; que ceux qui ont receu tant de
-        <lb/>graces de nous, au lieu d’en auoir la reconnoiſſance,
-        <lb/>par vne ingratitude qui n’a point d’exemple, trauail
-        <lb rend="¬" break="no"/>lent auec deſſein formé, à porter noſtre Eſtat dans
-        <lb rend="¬" break="no"/>vne ruine aſſeurée. Nous aurions grand ſujet de crain
-        <lb rend="¬" break="no"/>dre que Dieu ne nous fiſt reſſentir les effets de ſ
-        <lb rend="¬" break="no"/>re, en retirant les graces &amp; les benedict ions qu’il a ver
-        <lb rend="¬" break="no"/>ſées ſi heureuſement ſur noſtre regne, que nous pou
-        <lb rend="¬" break="no"/>uons dire, qu’il n’y a point eu dans les ſiecles paſſez
-        <lb/>vne adminiſtration plus glorieuſe &amp; plus heureuſe que
-        <lb/>celle de noſtre minoriré, ſi nous ne nous ſeruions de la
-        <lb/>puiſſance qu’il nous a donueé́e pour la conſeruation de
-        <lb/>uoſtre Eſtat, &amp; imirant les Roys nos predeceſſeurs,
-        <lb/>nous ne nous oppoſios aux entrepriſes de noſtre Cour
-        <lb/>de Parlement, qui s’eſleuant au deſſus du pouuoir que
-        <lb/>nous luy auons donneé, ſe rend indigne de celuy de la
-        <lb/>Magiſtrature dont les Roys nos ’predeceſſeurs &amp;
-        <lb/>nous les auons honorez. Nous ſçauons bien que les
-        <lb/>plus ſages de la Compagnie ſont emportez par le
-        <lb/>plus grand nombre de ceux qui agiſſent par des inte
-        <lb rend="¬" break="no"/>reſts particuliers, qui ne ſont que trop connus. Nous
-        <lb/>ſommes bien informez des pratiques &amp; des intelligen¬
         <pb n="11"/>
-        <lb/>11
-        <lb/>ces qu’ils ont entretenuë̈s auec nos ennemis, &amp; des
-        <lb/>mauuais deſſeins qu’ils ont eu de faire arreſter noſtre
-        <lb/>perſonne, publiant auee artifice, pour per ſüader les
-        <lb/>habitans de noſtre bonne ville de Paris, que nous
-        <lb/>conſeruons touſiours les reſſentimens des mouuemens
-        <lb/>derniers, auec deſſein de leur en faire porter la peine,
-        <lb/>&amp; qu’il n’y a que ce ſeul moyen de s’en garantir. Dieu
-        <lb/>nous eſt à teſmoin combien nous ſommes éloignez
-        <lb/>de ces penſées, &amp; qu’au contraire nous ne trauaillons
-        <lb/>que pour conſeruer le repos &amp; la tranquillité dans
-        <lb/>noſtre bonne ville de Paris: n’ignorant pas que ce
-        <lb/>qui s’eſt paſſé dans ces dernieres occaſions, n’a eſteé́
-        <lb/>que l’effec de l’aour que leſdits habitans ont pour
-        <lb/>nous, &amp; d’arreler le cours des pernicieux deſſeins
-        <lb/>des factieux, qui n’eſtoyent que trop connus. Auſſi
-        <lb/>pouuons-nous dire que non ſeulement nous ſommes
-        <lb/>éloignez de ces ſentiments, mais auſſi que nous les
-        <lb/>auons en horreur. Nous l’auons aſſez teſmoigné, &amp;
-        <lb/>nous le ferons de plus en plus connoiſtre par les gra
-        <lb rend="¬" break="no"/>ces qu’ils receuront de nous. Ainſi l’on n’a rien ou
-        <lb rend="¬" break="no"/>bhié pour corrompre la fidelité de nos ſujets, iuſques
-        <lb rend="¬" break="no"/>là meſme que d’intimider nos fidelles Offieiers du
-        <lb/>Parlement, leur donnant des aduis que le peuple les
-        <lb/>mal traiteroit s’ils prenoyent les bonnes reſolutions
-        <lb/>pour le bien de noſtre ſeruice. Toutes ces conſidera
-        <lb rend="¬" break="no"/>tions nous ont fait réſoudre aà nous retirer, voyant
-        <lb/>qu’il n’y auoit poine de ſeureté pour noſtre perſonne
-        <lb/>au milieu de tous ces factieux, ny de liberté dans
-        <lb/>noſtre Cour de Parlement pour nos fidelles Officiers.
-        <lb/>Cependant nous auons conſideré combien il eſtoit
-        <lb/>S
         <pb n="12"/>
-        <lb/>1 2
-        <lb/>iportant de ne pas laiſſer en noſtre abſence nmoſtre.
-        <lb/>dite Cour de Parlement de Paris tenir ſa ſeance en
-        <lb/>ladite ville, ayant auec raiſon grand ſujet de croire
-        <lb/>que ſi en noſtre preſence les factieux ont oſeé reſiſte
-        <lb/>aà nos commandements ſi iuſtes, &amp; tramer de ſi perni
-        <lb rend="¬" break="no"/>cieux deſſeins contre noſtre perſonne &amp; le bien de
-        <lb/>noſtre Eftat, qu’en noſtre abſenoe ils prendroyent
-        <lb/>l’occaſion de former de nouuelles pratiques pour
-        <lb/>corrompre la fide lité de nos bons Offieciers &amp; ſujets,
-        <lb/>&amp; exciter des mouuements que nous aurions peine à
-        <lb/>étouffer, ſi nous ne les préuenionas promptement.
-        <lb/>C’eſt auec vn extcéme dé́plaifir que nous nous voyons
-        <lb/>foreez d’auoir necours à ces remedes, ſans leſquels
-        <lb/>nous préuoyons la perre aſſeurée e noſtre authorité,
-        <lb/>quiſeroit bien -toſt ſuiuie de celle de noſtre Eftar Nous
-        <lb/>-auons differé autant ue naus auons pû, &amp; ous n’a
-        <lb rend="¬" break="no"/>uonsobmis aucun moyenipour ramener ces miauuals
-        <lb/>eſpits dans leur deuoir, iuſques à re laſher beaucoup
-        <lb/>de noſtre aurhorisé: Mais apres que nous auons
-        <lb/>reconnu que noſtre patiene ne ſeuoit qu’à les for.
-        <lb/>rifier dans lenrsmauuais deſfeins, Nous nous ſommes
-        <lb/>1enfin reſolus de nous ſeruit de l’authorité que Dieu
-        <lb/>nous a donreé́e pour la conſenuation de noſpe Eſtar.
-        <lb/>A CS CAVsSss, apres auoir declaré́ que noſtre
-        <lb/>intention eſt de conſeruer touresles graces qee nous
-        <lb/> auons faites à nos ſujets &amp; Officiers par nos Declara.
-        <lb/>tions dernieres, &amp; particulierement à noſtre bonne
-        <lb/>ville de Paris, &amp; que nous n’entendonsen façon que l
-        <lb rend="¬" break="no"/>conque les dinainuer: D L’avrs de la Reyne Re
-        <lb rend="¬" break="no"/> gente noſtre tres honoée Dane &amp; Mere, de noſtre
-        <lb/>tres
+        <l>
+          <lb/>
+        </l>
+        <l>
+          <lb/>4</l>
+        <l>
+          <lb/>atres Cours Souueraines, dequoy ie deſire que</l>
+        <l>
+          <lb/>vous donniez part à mes Fidelles Sujets de ma</l>
+        <l>
+          <lb/>bonne Ville de Paris, en attendant que ie vous face</l>
+        <l>
+          <lb/>ſçauoir ma reſolution ſur ces oceurrences: Que ce¬</l>
+        <l>
+          <lb/>pendant vous ayez aà̀ vous employer ſelon l’autho¬</l>
+        <l>
+          <lb/>rité de voſtre charge, à ce qu’il n’arriue rien en ma¬</l>
+        <l>
+          <lb/>dite Ville, qui ſoit préjudiciable à mon ſeruice, ny</l>
+        <l>
+          <lb/>au repos d’icelle, &amp; que vous aſſeuriez les Preuoſt</l>
+        <l>
+          <lb/>des Marchands &amp; Eſcheuins, &amp; principaux Habi¬</l>
+        <l>
+          <lb/>tans, que demeurants, come ils ont fait de leur part</l>
+        <l>
+          <lb/>iuſqu’à preſent, dans le deuoir dehons &amp; fidelles</l>
+        <l>
+          <lb/>Sujets, ils receuront de Nous ſrtontinuation de</l>
+        <l>
+          <lb/>tout bon &amp; fauorable traitement: Et ſurce, ie prie</l>
+        <l>
+          <lb/>Dieu qu’il vous ait, mon Couſin, enſa ſainte &amp; di¬</l>
+        <l>
+          <lb/>gne garde.</l>
+        <l>
+          <lb/>Eſcrite aà Paris ce cin quiéme iour de lanuier 1649.</l>
+        <l>
+          <lb/>Signé, LOVIS. Et plus bas,DE GVENEGAVD.</l>
+        <l>
+          <lb/>Et à la ſuſcription eſt eſcrit: A mon Couſin le</l>
+        <l>
+          <lb/>Duc de Monbazon, Pair de France, Gouuerneur,</l>
+        <l>
+          <lb/>&amp; mon Lieutenant General en ma bonne Ville de</l>
+        <l>
+          <lb/>Paris &amp; Iſle de France.</l>
+        <l>
+          eeep  </l>
+        <l>
+          <lb/>A 2  A </l>
         <pb n="13"/>
-        <lb/>¬¬ ’
-        <lb/>tres-cher &amp; tres amé Oncle le Due d’Orleans, de
-        <lb/>noſtre tres cher &amp; tres-ameé Couſin le Prince de
-        <lb/>Condé, &amp; de nſtre certaine ſcience, pleine puiſſan
-        <lb rend="¬" break="no"/>ce &amp; authorité́ Royalle, Nous auons ordoné́ &amp; or
-        <lb rend="¬" break="no"/>donnons, voulons &amp; nous plaiſt que dans vingt
-        <lb rend="¬" break="no"/>quatre heures du iour des preſentes tous les Offi
-        <lb rend="¬" break="no"/>ciers de noſtredite Cour de Parlement ayent à ſor
-        <lb rend="¬" break="no"/>tir de noſtredite ville de Paris, &amp; que dans quinzai
-        <lb rend="¬" break="no"/>ne apres ils ayent à ſe rendre en noſtre Ville de
-        <lb rend="¬" break="no"/>Montargis, enlaquelle nous auons de noſtre meſ
-        <lb rend="¬" break="no"/>me puiſſance &amp; authoriteé́, transferé́ le ſiege de no
-        <lb rend="¬" break="no"/>ſtredite Cour de Parlement, pour y rendre laluſtice
-        <lb/>à nos Sujets, &amp; y faire les fonctions de leurs charges
-        <lb/>tant &amp; ſi longuement qu’il nous plaira, Et à faute de
-        <lb/>ſortir par noſdits Officiers das les vingt- quatre heu
-        <lb rend="¬" break="no"/>res, &amp; de ſe rendre dans ledit temps de quinzaine
-        <lb/>en noſtredite ville de Montargis, NOVS les auons
-        <lb/>dés à preſent declareé &amp; declarons Criminels de leze
-        <lb/>Majeſté, Ordonné &amp; ordonnons qu’il ſera procedé
-        <lb/>contre eux comme rebelles &amp; deſobeyſſans à nos
-        <lb/>commandements, par confiſcation de corps &amp; de
-        <lb/>biens, Leur faiſant deffenſes tres-expreſſes de fair
-        <lb/>aucun acte de leur Huriſdiction, ny de continuer la
-        <lb/>foction de leurs charges en noſtredire ville de Paris,
-        <lb/>&amp; à tous nos Sujets de les recõnoiſtre pour Iuges, ny
-        <lb/>de leur obeyr, à peine d’eſtre procedé contr’eux
-        <lb/>comme rebelles &amp; deſobeiſſans à nos commande
-        <lb rend="¬" break="no"/>ments: CARTEeL eſt noſtre plaiſir. En téoin
-        <lb/>dequoy nous auons fair mettre &amp; appoſer noſtre
-        <lb/>ſeel à ces preſentes. DoNnNE àS. Ger main en
-        <lb/>Laye le ſixiéme iour de Ianvier l’an de grace mil
-        <lb/>32
+        <l>
+          <lb/>&amp; S &amp; &amp; &amp; &amp; &amp; &amp; &amp;  dl l &amp;de &amp;d &amp;&amp;d &amp;&amp; dd g </l>
+        <l>
+          <lb/>ofſo Gfafcfb Sotototecootosotosootoceceoososoe</l>
+        <l>
+          <lb/>LETTRE DV ROT AVX PREVOST</l>
+        <l>
+          <lb/>D </l>
+        <l>
+          <lb/>eer  L</l>
+        <l>
+          <lb/>des Marchands &amp; Eſcheuins de la lVille de Paris.</l>
+        <l>
+          <lb/>DE PAR LE ROY.</l>
+        <l>
+          <lb/>
+        </l>
+        <l>
+          <lb/>¬</l>
+        <l>
+          <lb/>Res chers &amp; bien-amez, eſtans obligez auec vn</l>
+        <l>
+          <lb/>tres-ſenſible déplaiſir de partir de noſtre bonne</l>
+        <l>
+          <lb/>Ville de Paris cette nuict meſme, pour ne pas de¬</l>
+        <l>
+          <lb/>meurer expoſez aux pernicieux deſſeins d’aucuns</l>
+        <l>
+          <lb/>Officiers de noſtre Cour de Parlement de Paris, leſ¬</l>
+        <l>
+          <lb/>quels ayans intelligence auec les ennemis decla¬</l>
+        <l>
+          <lb/>rez de noſtre Eſtat, apres auoir attenté contre</l>
+        <l>
+          <lb/>noſtre authorité en diuerſes manieres, &amp; abuſé lon¬</l>
+        <l>
+          <lb/>guement de noſtre bonté, ſe ſont portez iuſques à̀</l>
+        <l>
+          <lb/>conſpirer de ſe ſaiſir de noſtre propre perſonne:</l>
+        <l>
+          <lb/>Nous auons bien voulu, de l’auis de la Reyne Re¬</l>
+        <l>
+          <lb/>gente, noſtre tres-honorée Dame &amp; Mere, vous</l>
+        <l>
+          <lb/>donner part de noſtre reſolution, &amp; vous ordonner,</l>
+        <l>
+          <lb/>comme nous faiſons tres-expreſſeément, de vous em¬</l>
+        <l>
+          <lb/>ployer en tout ce qui dépendra de vous, pour em¬</l>
+        <l>
+          <lb/>peſcher qu’il n’arriue rien en noſtredite Ville qui</l>
+        <l>
+          <lb/>puiſſe en alterer le repos, ny prejudicier aà noſtre ſer¬</l>
+        <l>
+          <lb/>uice, &amp; vous aſſeurer que comme nous eſperons que</l>
+        <l>
+          <lb/>tous les Bourgeois &amp; Habitans d’icelle, continueë¬</l>
+        <l>
+          <lb/>ront auec vous dans le deuoir de bons &amp; fidelles Su¬</l>
+        <l>
+          <lb/>jets, ainſi qu’ils ont fait iuſques à preſent, auſſi ils</l>
+        <l>
+          <lb/>receuront de Nous toute ſorte de bon &amp; fauorable</l>
+        <l>
+          <lb/>traitement, nous reſeruant de vous faire ſçauoir</l>
+        <l>
+          <lb/>dans peu de iours, les ſuites de noſtre reſolution, &amp;</l>
+        <l>
+          <lb/>7 </l>
         <pb n="14"/>
-        <lb/>14
-        <lb/>ſix cent quarante-neuf, Et de noſtre Regne le
-        <lb/>ſixieme. Signé, LOVIS. Et plus bas, Par le
-        <lb/>Roy, la Reyne Regente ſa Mere preſente, DE
-        <lb/>GVENEGAVD: Et ſeellé ſur double queuë
-        <lb/>de cire jaulne.
-        <lb/> ,, ,s
-        <lb/>ppeopaeaeeePaeaeeeeee?eee ẽ
-        <lb/>eeeeeeeeeeeeep4?
-        <lb/>us as ee ee
-        <lb/>A &amp;e loj
-        <lb/>r e7 7 L
-        <lb/>E r e7
-        <lb/>EXTRAICT DES REGISTRE6
-        <lb/>J rD
-        <lb/>du Conſeil d’Eſtat.
-        <lb/>E ROY eſtant en ſon Conſeil, la
-        <lb/> Reyne Regente ſa Mere preſente, bien
-        <lb/>ſ informé de l’Arreſt donné par la Cour
-        <lb/>de Parlement eſtant de preſent à̀ Pa
-        <lb rend="¬" break="no"/> is, portant deffenſes aux Villes ſituées
-        <lb/>à vingt lieuës à la ronde de ladite Ville de Paris, de
-        <lb/>receuoir les Troupes de ſa Majeſté: Conſiderant
-        <lb/>combié il importe de ne pas ſouſfrir telles entrepri
-        <lb rend="¬" break="no"/>ſes &amp; attétats ſur ſon authorite, par des Officiers qui
-        <lb/>n’ont aucun pouuoir de prendre connoiſſance des
-        <lb/>ordres de la Guerre, &amp; qui font aſſez paroiſtre par
-        <lb/>vn tel procedé leurs mauuais deſſeins de ſuû̂leuer
-        <lb/>les eſprits des peuples, &amp; de les porter à la ſe dition,
-        <lb/>leur donant pretexte de s’oppoſer aux volontez de ſa
-        <lb/>Majeſté: D ’avrs de la Reyne Regente ſa Mere,
-        <lb/>a caſſé́ &amp; annulé́ ledit Arreſt, comme donné par at
-        <lb rend="¬" break="no"/>tentat ſur ſon authorité́ &amp; par gens n’ayans en ce
-        <lb/>regard aucun pouuoir; A fait &amp; fait tres expreſſes
-        <lb/>inhibitions &amp; deffenſes aux Officiers, Maires, Eſ¬
+        <l>
+          <lb/>6</l>
+        <l>
+          <lb/>cependant nous confians en voſtre fidelité &amp; affe.</l>
+        <l>
+          <lb/>on anoſtre ſeruiee nous ne vous ferons la preſen¬</l>
+        <l>
+          <lb/>te plus longue ny plus expreſſe. Do E aà Paris</l>
+        <l>
+          <lb/>le cinquieſme lanuier mil ſix cent quarante neuf</l>
+        <l>
+          <lb/>Signeé, LOVIS. Et plus bas, DE GVENEGAVD.</l>
+        <l>
+          <lb/>Et en la ſuſcription eſt eſcrit, Anos tres-chers &amp;</l>
+        <l>
+          <lb/>bien-amez les Preuoſt des Marchands &amp; Eſcheuins</l>
+        <l>
+          <lb/>de noſtre bonne Ville de Paris.</l>
+        <l>
+          <lb/>gtggtte82888s</l>
+        <l>
+          <lb/>Sooo oeosooto etoSa o Sosbc coſõococoGß ES</l>
+        <l>
+          <lb/>AVTRE LETTRE DV ROT</l>
+        <l>
+          <lb/>aux Preuoſt des Marchands, Eſcheuins &amp;</l>
+        <l>
+          <lb/>Habitans de ladite Ville de Paris.</l>
+        <l>
+          <lb/>
+        </l>
+        <l>
+          <lb/>DE PAR LE ROY.</l>
+        <l>
+          <lb/>7 E</l>
+        <l>
+          <lb/>Res-chers &amp; bien-amez, Nous vous fiſmes</l>
+        <l>
+          <lb/>l hier ſç̧auoir les raiſons qui nous ont obligé à</l>
+        <l>
+          <lb/>ſortir de Paris; Maintenant nous vous faiſons cette</l>
+        <l>
+          <lb/>Lettre, de l’aduis de la Reyne Regente noſtre tres¬</l>
+        <l>
+          <lb/>honorée Dame &amp; Mere, Pour vous dire que nous</l>
+        <l>
+          <lb/>auons commandé à̀ noſtre Cour de Parlement de</l>
+        <l>
+          <lb/>Paris, de transferer ſa ſeance en noſtre Ville de</l>
+        <l>
+          <lb/>Montargis, auec deffenſes de faire aucune fonction</l>
+        <l>
+          <lb/>de luges dans ladite Ville de Paris, &amp; à nos Sujets</l>
+        <l>
+          <lb/>de les reconnoiſtre, ainſi que vous l’apprendrez</l>
+        <l>
+          <lb/>plus particulierement par les Lettres Patentes que</l>
+        <l>
+          <lb/>nos en auons fait expedier, dont nous vous auons</l>
+        <l>
+          <lb/>bien voulu enuoyer copie, ne doutant pas que</l>
         <pb n="15"/>
-        <lb/>cheuins &amp; Habitans deſdites Villes &amp; autres lieux,
-        <lb/>de déferer audit Arreſt, ny de permettre qu’il en ſoit
-        <lb/>fait aucune ſignification;leur enjoint de re ceuoir les
-        <lb/>gens de Guerre qui leur ſeront enuoyez par ſa Ma
-        <lb rend="¬" break="no"/>jeſté, &amp; auſdits gens de Guerre de viure en bonne
-        <lb/>diſeipline &amp; police ſuiuant les Reglements ſur ce
-        <lb/>faits, à peine par les Chefs commandans leſdites
-        <lb/>Troupes d’en reſpondre en leurs priuez noms. Or
-        <lb rend="¬" break="no"/>donne en outre ſadite Majeſteé, que les porteurs du
-        <lb rend="¬" break="no"/>dit Arreſt ſeront arreſtez, &amp; que le procez leur ſera
-        <lb rend="¬" break="no"/>fait &amp; parfait comme à des ſeditieux. FaAIT au Con
-        <lb rend="¬" break="no"/>ſeil d’Eſtat du Roy, tenu aà ſainct Germain en Laye,
-        <lb/>ſa Majeſté y eſtant, la Reyne Regente ſa Mere pre
-        <lb rend="¬" break="no"/>ſente, le7. iour de lavier mil ſix cent quarante-neuf.
-        <lb/>Signé, DE GVENE GA VD.
-        <lb/>OVIS par la grace de Dieu Roy de France &amp;
-        <lb/>T
-        <lb/>Lde Nauarre: Au premier noſtre Huiſſier ou
-        <lb/>Sergent. Nous te mandons &amp; commandons par ces
-        <lb/>preſentes, ſignées de noſtre main, que l’Arreſt ce
-        <lb/>jourd’huy donnéen noſtre Conſeil d’Eſtat, Nous y
-        <lb/>eſtant, la Reyne Regente noſtre tres-honorée Da
-        <lb rend="¬" break="no"/>me &amp; Mere preſente, dont l’extraict eſt cy-attaché
-        <lb/>ſous le contreſcel de noſtre Chancellerie, par le quel
-        <lb/>nous auons caſſé &amp; annulé l’Arreſt donné par la
-        <lb/>Cour de Parlement eſtant à preſent aà̀ Paris, portant
-        <lb/>deffenſes aux Vil les ſituées à vingt lieuës à̀ la ronde
-        <lb/>de ladite ville, de receuoir nos Troupes, Tu ayes
-        <lb/>à ſignifier à tous ceux qu’il appartiendra, afin
-        <lb/> qu’ils n’en pretendent cauſe d’ignorance, &amp; leur
-        <lb/>face les inhibitions &amp; deffences y contenuës, en
-        <lb rend="¬" break="no"/>6
+        <l>
+          <lb/>---L¬</l>
+        <l>
+          <lb/>vous ne nous rendiez auec tous les Bourgeois &amp;</l>
+        <l>
+          <lb/>Habitans de noſtredire Ville, l’obeiſſance que vous</l>
+        <l>
+          <lb/>nous deuez:Ce qui nous donnera ſujet d’y retourner</l>
+        <l>
+          <lb/>plus promptement, ne jugeant pas à propos de le</l>
+        <l>
+          <lb/>faire, que noſtredite Cour n’en ſoit ſortie: Et vous</l>
+        <l>
+          <lb/>aſſurant que nous deſirons vous donner de plus en</l>
+        <l>
+          <lb/>plus des témoignages de l’affection &amp; de l’amour</l>
+        <l>
+          <lb/>que nous auons pour noſtredite Ville, N’y faires</l>
+        <l>
+          <lb/>donc faute: CaR TEL eſt noſtre plaiſir. Don e</l>
+        <l>
+          <lb/>à S. Germain enLaye, le ſixieéme iour de Ianvier i64e.</l>
+        <l>
+          <lb/>Signé, LOVIS. Et plus bas, DE GVENEGAVD.</l>
+        <l>
+          <lb/>Et deſſus eſt eſcrit,</l>
+        <l>
+          <lb/>A nos tres chers &amp; bien-amez les Preuoſt des</l>
+        <l>
+          <lb/>Marchands, Eſcheuins &amp; Habitans de noſtre</l>
+        <l>
+          <lb/>bonne Ville de Paris.</l>
+        <l>
+          <lb/>oo lolool loytpetestoeſleeoto</l>
+        <l>
+          <lb/>&amp;ſl, ſe eo dſee, dſlooſe eî oo ̂6</l>
+        <l>
+              A’’V</l>
+        <l>
+          <lb/>OVIS par la grace de Dieu Roy de</l>
+        <l>
+          <lb/>, France &amp; de Nauarre: A tous ceux qui</l>
+        <l>
+          <lb/>ces preſentes Lettres verront, Salut.</l>
+        <l>
+          <lb/>ſléA Les aſſurances que nous auoit données</l>
+        <l>
+          <lb/>noſtre Cour de Parlement de Paris,</l>
+        <l>
+          <lb/>par la bouchedes Gens de noſtre Parquet, qu’elle f¬</l>
+        <l>
+          <lb/>niroit toutes les aſſamblées des Chambres, apres que</l>
+        <l>
+          <lb/>nous aurions trouué bon que la Declaration qui auoit</l>
+        <l>
+          <lb/>eſté concertée en leur Compagnie, ſur les propoſi¬</l>
+        <l>
+          <lb/>tions de la Chambre de S. Louis, fuſt expediee, Nous</l>
+        <l>
+          <lb/>auoit donné ſujet de conſentir à ce que l’on auoit deſiré</l>
+        <l>
+          <lb/>1 9</l>
         <pb n="16"/>
-        <lb/>16
-        <lb/>ſemble tous autres actes &amp; exploits neceſſaires,
-        <lb/>ſans pour ce demander aueun congé, Placer,
-        <lb/>viſa, ny pareatis: CAR TEI. eſt uoſtre plaiſir.
-        <lb/>DON E à S. Germain en Laye le ſeptiéme iour de
-        <lb/>Ianvier, l’an de grace mil ſix cent quarante neuf
-        <lb/>Et de noſtre Regne le ſixiéme. Signe, LOVIS.
-        <lb/>Et plus bas, Par le oy, la Reyne egente ſa
-        <lb/>Mere preſente, DE GVENEGAVD &amp; ſeellé
-        <lb/>ſur ſimple queuë de cire jaulne.
-        <lb/>Collationné aux Originaux par moy Conſeillar
-        <lb/>Secretaire du Roy &amp;deſes Finances. </p>
+        <l>
+          <lb/>de Nous: Mais depuis peu nous auons veu des effſets</l>
+        <l>
+          <lb/>tout contraires aux paroles qui nous auoient eſté ſi ſo¬</l>
+        <l>
+          <lb/>lemnellement portées &amp; que noſtre Cour de Parle¬</l>
+        <l>
+          <lb/>menteſtoit d’autant plus obligée d’obſeruer religieu¬</l>
+        <l>
+          <lb/>ſement, que le reſpect &amp; l’obeyſſance qu’elle nous</l>
+        <l>
+          <lb/>doit, la deuoit empeſcher de ne rien entreprendre</l>
+        <l>
+          <lb/>qui nous pû̂ſt donner mécontentement. Nous auons</l>
+        <l>
+          <lb/>eu grand plaiſir de ſuiure les conſeils que l’on auoit</l>
+        <l>
+          <lb/>iugez neceſſaires pour remedier aux deſordres que l’on</l>
+        <l>
+          <lb/>diſoit s’eſtre formez dans noſtre Eſtat; Et bien que</l>
+        <l>
+          <lb/>la forme que l’on auoit tenuë, nous pûſt empeſcher</l>
+        <l>
+          <lb/>de conſentir à ce que l’on deſiroit de Nous, neant¬</l>
+        <l>
+          <lb/>moins l’amour que nous auons pour nos Peuples</l>
+        <l>
+          <lb/>nous a fait diſſimuler le mauuais procedé que l’on</l>
+        <l>
+          <lb/>auoit tenu, qui bleſſoit noſtre authorité: Mais à pre¬</l>
+        <l>
+          <lb/>ſent que nous auons fait tout ce que nous pouuions</l>
+        <l>
+          <lb/>pour le bien de noſtre Eſtat, la diſſimulation des en¬</l>
+        <l>
+          <lb/>trepriſes que noſtre Cour de Par lement fait ſur noſtre</l>
+        <l>
+          <lb/>authorité ne pourroit produire autre choſe que l’af¬</l>
+        <l>
+          <lb/>foibliſſement de noſtre puiſſance &amp; vn meſpris de</l>
+        <l>
+          <lb/>l’authorité Royalle, par ceux qui ſont plus obligez à</l>
+        <l>
+          <lb/>la reſpecter: Ainſi apres auoir conſideré combien les</l>
+        <l>
+          <lb/>aſſambleées &amp; les deliberations que noſtredite Cour de</l>
+        <l>
+          <lb/>Parlement continuë̈ de faire contre noſtre volonteé,</l>
+        <l>
+          <lb/>&amp; contre les ordres précis que nous luy auons donnez,</l>
+        <l>
+          <lb/>nous ſommes obligez de prendre les voyes que nous</l>
+        <l>
+          <lb/>auons iugé neceſſaires pour en arreſter le cours, dont</l>
+        <l>
+          <lb/>la continuation pourroit cauſer de ſi grands maux à</l>
+        <l>
+          <lb/>noſtre Eſtat, ſans apporter aucun bien au publie: nos</l>
+        <l>
+          <lb/>ennemis font aſſez connoiſtre le préjudice que nous</l>
+        <l>
+          <lb/>en pou¬</l>
+        <pb n="17"/>
+        <l>
+          <lb/>en pouvons receuoir, puiſque inſqu’à preſent rien ne</l>
+        <l>
+          <lb/>les a retenus de conſentir a vn traité de paix, que l’eſ¬</l>
+        <l>
+          <lb/>perance qu’ils ont conceue de la ruyne de nos affaires,</l>
+        <l>
+          <lb/>dans vn renuerſement general de noſtre Royaume,</l>
+        <l>
+          <lb/>qui ſeroit cauſé par les oppoſitions que noſtre Cour</l>
+        <l>
+          <lb/>de Parlement fait à tous les ordres que nous donnons</l>
+        <l>
+          <lb/>ponr le bien de nos afftaires. Nous auons remis: à</l>
+        <l>
+          <lb/>nos ſujers trente-quatre millions de reuenu que nous</l>
+        <l>
+          <lb/>receuions, &amp; qui eſtoient portez en noſtre par¬</l>
+        <l>
+          <lb/>gne: de ſorte que le reuenu ordinaire de nos Tailles</l>
+        <l>
+          <lb/>&amp; de nos Fermes, eſt reduit à trente-fix millions,</l>
+        <l>
+          <lb/>leſquels nous ne pouuons recouoir preſentement,</l>
+        <l>
+          <lb/>puis qu’ils ne doiuaent eſtre payez que dans des ter¬</l>
+        <l>
+          <lb/>mes fort éloignez. Ce qui nous auoit donné ſujet</l>
+        <l>
+          <lb/>d’enuoyer vne Declaration à noſtre Chambre des</l>
+        <l>
+          <lb/>COomptes, pour uthoriſer la remiſe que nous ſe¬</l>
+        <l>
+          <lb/>rions obligez deifaire à coux qui fenoyent des auances</l>
+        <l>
+          <lb/>de nosreuenuspourſuhuenir aux deſpences preſen¬</l>
+        <l>
+          <lb/>tes de noſtre EſtatCe pendant noſtrediteCour de Par.</l>
+        <l>
+          <lb/>lement s’eſt non ſeulemẽt oppoſée à la verificarion de</l>
+        <l>
+          <lb/>cette Dé́clartation maismefmes quelques panticuliers</l>
+        <l>
+          <lb/>de cetre Compagnie ont ſollioieé les Officiers de nos</l>
+        <l>
+          <lb/>Comptes de la refufer. Ainſi l’on connoiſtaiſénent</l>
+        <l>
+          <lb/>les mauuais deſſoins qu’ils ortd’enopeſcherque ous</l>
+        <l>
+          <lb/>n’ayons aucun fecours dans les aeceffitez publiques,</l>
+        <l>
+          <lb/>qui fſont telles, que s’il n’yeſt promptemert remodieé,</l>
+        <l>
+          <lb/>nous n’auons point moyen de payer nos gons de</l>
+        <l>
+          <lb/>Gucrre, ny d’entretenir les garniſons des qlaeesles</l>
+        <l>
+          <lb/>plus importantes de noſtre Royaume. De forte que</l>
+        <l>
+          <lb/>nous ſerions enfin reduits aà̀ telle extremité, que rous</l>
+        <l>
+          <lb/>3</l>
+        <pb n="18"/>
+        <l>
+          <lb/>
+        </l>
+        <l>
+          <lb/>10</l>
+        <l>
+          <lb/>ne pourrions reſiſter à la puiſſance de nos ennemis:</l>
+        <l>
+          <lb/>qui trouuans noſtre Royaume ouuert, ſans forces pour</l>
+        <l>
+          <lb/>oppoſer à leurs armes, y feroyent tout le progrez qu’ils</l>
+        <l>
+          <lb/>entreprendroyent. Il eſt vray que lors que nous nous</l>
+        <l>
+          <lb/>repreſentons la conduite de noſtre dite Cour de Parle¬</l>
+        <l>
+          <lb/>ment, nous ne ſçaurions voir qu’auec indignation, que</l>
+        <l>
+          <lb/>des Offieiers qui n’ont autre puiſance que celle que</l>
+        <l>
+          <lb/>nous leur auons donné́e, l’employent aà̀ la ruine de</l>
+        <l>
+          <lb/>noſtre authoriteé́, &amp; que ceux qui ont receu tant de</l>
+        <l>
+          <lb/>graces de nous, au lieu d’en auoir la reconnoiſſance,</l>
+        <l>
+          <lb/>par vne ingratitude qui n’a point d’exemple, trauail¬</l>
+        <l>
+          <lb/>lent auec deſſein formé, à porter noſtre Eſtat dans</l>
+        <l>
+          <lb/>vne ruine aſſeurée. Nous aurions grand ſujet de crain¬</l>
+        <l>
+          <lb/>dre que Dieu ne nous fiſt reſſentir les effets de ſa colé́.</l>
+        <l>
+          <lb/>re, en retirant les graces &amp; les benedict ions qu’il a ver¬</l>
+        <l>
+          <lb/>ſées ſi heureuſement ſur noſtre regne, que nous pou¬</l>
+        <l>
+          <lb/>uons dire, qu’il n’y a point eu dans les ſiecles paſſez</l>
+        <l>
+          <lb/>vne adminiſtration plus glorieuſe &amp; plus heureuſe que</l>
+        <l>
+          <lb/>celle de noſtre minoriré, ſi nous ne nous ſeruions de la</l>
+        <l>
+          <lb/>puiſſance qu’il nous a donueé́e pour la conſeruation de</l>
+        <l>
+          <lb/>uoſtre Eſtat, &amp; imirant les Roys nos predeceſſeurs,</l>
+        <l>
+          <lb/>nous ne nous oppoſios aux entrepriſes de noſtre Cour</l>
+        <l>
+          <lb/>de Parlement, qui s’eſleuant au deſſus du pouuoir que</l>
+        <l>
+          <lb/>nous luy auons donneé, ſe rend indigne de celuy de la</l>
+        <l>
+          <lb/>Magiſtrature dont les Roys nos ’predeceſſeurs &amp;</l>
+        <l>
+          <lb/>nous les auons honorez. Nous ſçauons bien que les</l>
+        <l>
+          <lb/>plus ſages de la Compagnie ſont emportez par le</l>
+        <l>
+          <lb/>plus grand nombre de ceux qui agiſſent par des inte¬</l>
+        <l>
+          <lb/>reſts particuliers, qui ne ſont que trop connus. Nous</l>
+        <l>
+          <lb/>ſommes bien informez des pratiques &amp; des intelligen¬</l>
+        <pb n="19"/>
+        <l>
+          <lb/>11</l>
+        <l>
+          <lb/>ces qu’ils ont entretenuë̈s auec nos ennemis, &amp; des</l>
+        <l>
+          <lb/>mauuais deſſeins qu’ils ont eu de faire arreſter noſtre</l>
+        <l>
+          <lb/>perſonne, publiant auee artifice, pour per ſüader les</l>
+        <l>
+          <lb/>habitans de noſtre bonne ville de Paris, que nous</l>
+        <l>
+          <lb/>conſeruons touſiours les reſſentimens des mouuemens</l>
+        <l>
+          <lb/>derniers, auec deſſein de leur en faire porter la peine,</l>
+        <l>
+          <lb/>&amp; qu’il n’y a que ce ſeul moyen de s’en garantir. Dieu</l>
+        <l>
+          <lb/>nous eſt à teſmoin combien nous ſommes éloignez</l>
+        <l>
+          <lb/>de ces penſées, &amp; qu’au contraire nous ne trauaillons</l>
+        <l>
+          <lb/>que pour conſeruer le repos &amp; la tranquillité dans</l>
+        <l>
+          <lb/>noſtre bonne ville de Paris: n’ignorant pas que ce</l>
+        <l>
+          <lb/>qui s’eſt paſſé dans ces dernieres occaſions, n’a eſteé́</l>
+        <l>
+          <lb/>que l’effec de l’aour que leſdits habitans ont pour</l>
+        <l>
+          <lb/>nous, &amp; d’arreler le cours des pernicieux deſſeins</l>
+        <l>
+          <lb/>des factieux, qui n’eſtoyent que trop connus. Auſſi</l>
+        <l>
+          <lb/>pouuons-nous dire que non ſeulement nous ſommes</l>
+        <l>
+          <lb/>éloignez de ces ſentiments, mais auſſi que nous les</l>
+        <l>
+          <lb/>auons en horreur. Nous l’auons aſſez teſmoigné, &amp;</l>
+        <l>
+          <lb/>nous le ferons de plus en plus connoiſtre par les gra¬</l>
+        <l>
+          <lb/>ces qu’ils receuront de nous. Ainſi l’on n’a rien ou¬</l>
+        <l>
+          <lb/>bhié pour corrompre la fidelité de nos ſujets, iuſques¬</l>
+        <l>
+          <lb/>là meſme que d’intimider nos fidelles Offieiers du</l>
+        <l>
+          <lb/>Parlement, leur donnant des aduis que le peuple les</l>
+        <l>
+          <lb/>mal traiteroit s’ils prenoyent les bonnes reſolutions</l>
+        <l>
+          <lb/>pour le bien de noſtre ſeruice. Toutes ces conſidera¬</l>
+        <l>
+          <lb/>tions nous ont fait réſoudre aà nous retirer, voyant</l>
+        <l>
+          <lb/>qu’il n’y auoit poine de ſeureté pour noſtre perſonne</l>
+        <l>
+          <lb/>au milieu de tous ces factieux, ny de liberté dans</l>
+        <l>
+          <lb/>noſtre Cour de Parlement pour nos fidelles Officiers.</l>
+        <l>
+          <lb/>Cependant nous auons conſideré combien il eſtoit</l>
+        <l>
+          <lb/>S</l>
+        <pb n="20"/>
+        <l>
+          <lb/>1 2</l>
+        <l>
+          <lb/>iportant de ne pas laiſſer en noſtre abſence nmoſtre.</l>
+        <l>
+          <lb/>dite Cour de Parlement de Paris tenir ſa ſeance en</l>
+        <l>
+          <lb/>ladite ville, ayant auec raiſon grand ſujet de croire</l>
+        <l>
+          <lb/>que ſi en noſtre preſence les factieux ont oſeé reſiſte</l>
+        <l>
+          <lb/>aà nos commandements ſi iuſtes, &amp; tramer de ſi perni¬</l>
+        <l>
+          <lb/>cieux deſſeins contre noſtre perſonne &amp; le bien de</l>
+        <l>
+          <lb/>noſtre Eftat, qu’en noſtre abſenoe ils prendroyent</l>
+        <l>
+          <lb/>l’occaſion de former de nouuelles pratiques pour</l>
+        <l>
+          <lb/>corrompre la fide lité de nos bons Offieciers &amp; ſujets,</l>
+        <l>
+          <lb/>&amp; exciter des mouuements que nous aurions peine à</l>
+        <l>
+          <lb/>étouffer, ſi nous ne les préuenionas promptement.</l>
+        <l>
+          <lb/>C’eſt auec vn extcéme dé́plaifir que nous nous voyons</l>
+        <l>
+          <lb/>foreez d’auoir necours à ces remedes, ſans leſquels</l>
+        <l>
+          <lb/>nous préuoyons la perre aſſeurée e noſtre authorité,</l>
+        <l>
+          <lb/>quiſeroit bien -toſt ſuiuie de celle de noſtre Eftar Nous</l>
+        <l>
+          <lb/>-auons differé autant ue naus auons pû, &amp; ous n’a¬</l>
+        <l>
+          <lb/>uonsobmis aucun moyenipour ramener ces miauuals</l>
+        <l>
+          <lb/>eſpits dans leur deuoir, iuſques à re laſher beaucoup</l>
+        <l>
+          <lb/>de noſtre aurhorisé: Mais apres que nous auons</l>
+        <l>
+          <lb/>reconnu que noſtre patiene ne ſeuoit qu’à les for.</l>
+        <l>
+          <lb/>rifier dans lenrsmauuais deſfeins, Nous nous ſommes</l>
+        <l>
+          <lb/>1enfin reſolus de nous ſeruit de l’authorité que Dieu</l>
+        <l>
+          <lb/>nous a donreé́e pour la conſenuation de noſpe Eſtar.</l>
+        <l>
+          <lb/>A CS CAVsSss, apres auoir declaré́ que noſtre</l>
+        <l>
+          <lb/>intention eſt de conſeruer touresles graces qee nous</l>
+        <l>
+          <lb/>auons faites à nos ſujets &amp; Officiers par nos Declara.</l>
+        <l>
+          <lb/>tions dernieres, &amp; particulierement à noſtre bonne</l>
+        <l>
+          <lb/>ville de Paris, &amp; que nous n’entendonsen façon que l¬</l>
+        <l>
+          <lb/>conque les dinainuer: D L’avrs de la Reyne Re¬</l>
+        <l>
+          <lb/>gente noſtre tres honoée Dane &amp; Mere, de noſtre</l>
+        <l>
+          <lb/>tres</l>
+        <pb n="21"/>
+        <l>
+          <lb/>¬¬ ’</l>
+        <l>
+          <lb/>tres-cher &amp; tres amé Oncle le Due d’Orleans, de</l>
+        <l>
+          <lb/>noſtre tres cher &amp; tres-ameé Couſin le Prince de</l>
+        <l>
+          <lb/>Condé, &amp; de nſtre certaine ſcience, pleine puiſſan¬</l>
+        <l>
+          <lb/>ce &amp; authorité́ Royalle, Nous auons ordoné́ &amp; or¬</l>
+        <l>
+          <lb/>donnons, voulons &amp; nous plaiſt que dans vingt¬</l>
+        <l>
+          <lb/>quatre heures du iour des preſentes tous les Offi¬</l>
+        <l>
+          <lb/>ciers de noſtredite Cour de Parlement ayent à ſor¬</l>
+        <l>
+          <lb/>tir de noſtredite ville de Paris, &amp; que dans quinzai¬</l>
+        <l>
+          <lb/>ne apres ils ayent à ſe rendre en noſtre Ville de</l>
+        <l>
+          <lb/>Montargis, enlaquelle nous auons de noſtre meſ¬</l>
+        <l>
+          <lb/>me puiſſance &amp; authoriteé́, transferé́ le ſiege de no¬</l>
+        <l>
+          <lb/>ſtredite Cour de Parlement, pour y rendre laluſtice</l>
+        <l>
+          <lb/>à nos Sujets, &amp; y faire les fonctions de leurs charges</l>
+        <l>
+          <lb/>tant &amp; ſi longuement qu’il nous plaira, Et à faute de</l>
+        <l>
+          <lb/>ſortir par noſdits Officiers das les vingt- quatre heu¬</l>
+        <l>
+          <lb/>res, &amp; de ſe rendre dans ledit temps de quinzaine</l>
+        <l>
+          <lb/>en noſtredite ville de Montargis, NOVS les auons</l>
+        <l>
+          <lb/>dés à preſent declareé &amp; declarons Criminels de leze</l>
+        <l>
+          <lb/>Majeſté, Ordonné &amp; ordonnons qu’il ſera procedé</l>
+        <l>
+          <lb/>contre eux comme rebelles &amp; deſobeyſſans à nos</l>
+        <l>
+          <lb/>commandements, par confiſcation de corps &amp; de</l>
+        <l>
+          <lb/>biens, Leur faiſant deffenſes tres-expreſſes de fair</l>
+        <l>
+          <lb/>aucun acte de leur Huriſdiction, ny de continuer la</l>
+        <l>
+          <lb/>foction de leurs charges en noſtredire ville de Paris,</l>
+        <l>
+          <lb/>&amp; à tous nos Sujets de les recõnoiſtre pour Iuges, ny</l>
+        <l>
+          <lb/>de leur obeyr, à peine d’eſtre procedé contr’eux</l>
+        <l>
+          <lb/>comme rebelles &amp; deſobeiſſans à nos commande¬</l>
+        <l>
+          <lb/>ments: CARTEeL eſt noſtre plaiſir. En téoin</l>
+        <l>
+          <lb/>dequoy nous auons fair mettre &amp; appoſer noſtre</l>
+        <l>
+          <lb/>ſeel à ces preſentes. DoNnNE àS. Ger main en</l>
+        <l>
+          <lb/>Laye le ſixiéme iour de Ianvier l’an de grace mil</l>
+        <l>
+          <lb/>32</l>
+        <pb n="22"/>
+        <l>
+          <lb/>14</l>
+        <l>
+          <lb/>ſix cent quarante-neuf, Et de noſtre Regne le</l>
+        <l>
+          <lb/>ſixieme. Signé, LOVIS. Et plus bas, Par le</l>
+        <l>
+          <lb/>Roy, la Reyne Regente ſa Mere preſente, DE</l>
+        <l>
+          <lb/>GVENEGAVD: Et ſeellé ſur double queuë</l>
+        <l>
+          <lb/>de cire jaulne.</l>
+        <l>
+           ,, ,s</l>
+        <l>
+          <lb/>ppeopaeaeeePaeaeeeeee?eee ẽ</l>
+        <l>
+          <lb/>eeeeeeeeeeeeep4?</l>
+        <l>
+          <lb/>us as ee ee</l>
+        <l>
+          <lb/>A  &amp;e loj</l>
+        <l>
+          <lb/>r  e7 7 L</l>
+        <l>
+          <lb/>E r e7 </l>
+        <l>
+          <lb/>EXTRAICT DES REGISTRE6</l>
+        <l>
+          <lb/>J rD</l>
+        <l>
+          <lb/>du Conſeil d’Eſtat.</l>
+        <l>
+          <lb/>E ROY eſtant en ſon Conſeil, la</l>
+        <l>
+          <lb/>Reyne Regente ſa Mere preſente, bien</l>
+        <l>
+          <lb/>ſ informé de l’Arreſt donné par la Cour</l>
+        <l>
+          <lb/>de Parlement eſtant de preſent à̀ Pa¬</l>
+        <l>
+          <lb/>is, portant deffenſes aux Villes ſituées</l>
+        <l>
+          <lb/>à vingt lieuës à la ronde de ladite Ville de Paris, de</l>
+        <l>
+          <lb/>receuoir les Troupes de ſa Majeſté: Conſiderant</l>
+        <l>
+          <lb/>combié il importe de ne pas ſouſfrir telles entrepri¬</l>
+        <l>
+          <lb/>ſes &amp; attétats ſur ſon authorite, par des Officiers qui</l>
+        <l>
+          <lb/>n’ont aucun pouuoir de prendre connoiſſance des</l>
+        <l>
+          <lb/>ordres de la Guerre, &amp; qui font aſſez paroiſtre par</l>
+        <l>
+          <lb/>vn tel procedé leurs mauuais deſſeins de ſuû̂leuer</l>
+        <l>
+          <lb/>les eſprits des peuples, &amp; de les porter à la ſe dition,</l>
+        <l>
+          <lb/>leur donant pretexte de s’oppoſer aux volontez de ſa</l>
+        <l>
+          <lb/>Majeſté: D ’avrs de la Reyne Regente ſa Mere,</l>
+        <l>
+          <lb/>a caſſé́ &amp; annulé́ ledit Arreſt, comme donné par at¬</l>
+        <l>
+          <lb/>tentat ſur ſon authorité́ &amp; par gens n’ayans en ce</l>
+        <l>
+          <lb/>regard aucun pouuoir; A fait &amp; fait tres expreſſes</l>
+        <l>
+          <lb/>inhibitions &amp; deffenſes aux Officiers, Maires, Eſ¬</l>
+        <pb n="23"/>
+        <l>
+          <lb/>cheuins &amp; Habitans deſdites Villes &amp; autres lieux,</l>
+        <l>
+          <lb/>de déferer audit Arreſt, ny de permettre qu’il en ſoit</l>
+        <l>
+          <lb/>fait aucune ſignification;leur enjoint de re ceuoir les</l>
+        <l>
+          <lb/>gens de Guerre qui leur ſeront enuoyez par ſa Ma¬</l>
+        <l>
+          <lb/>jeſté, &amp; auſdits gens de Guerre de viure en bonne</l>
+        <l>
+          <lb/>diſeipline &amp; police ſuiuant les Reglements ſur ce</l>
+        <l>
+          <lb/>faits, à peine par les Chefs commandans leſdites</l>
+        <l>
+          <lb/>Troupes d’en reſpondre en leurs priuez noms. Or¬</l>
+        <l>
+          <lb/>donne en outre ſadite Majeſteé, que les porteurs du¬</l>
+        <l>
+          <lb/>dit Arreſt ſeront arreſtez, &amp; que le procez leur ſera</l>
+        <l>
+          <lb/>fait &amp; parfait comme à des ſeditieux. FaAIT au Con¬</l>
+        <l>
+          <lb/>ſeil d’Eſtat du Roy, tenu aà ſainct Germain en Laye,</l>
+        <l>
+          <lb/>ſa Majeſté y eſtant, la Reyne Regente ſa Mere pre¬</l>
+        <l>
+          <lb/>ſente, le7. iour de lavier mil ſix cent quarante-neuf.</l>
+        <l>
+          <lb/>Signé, DE GVENE GA VD.</l>
+        <l>
+          <lb/>OVIS par la grace de Dieu Roy de France &amp;</l>
+        <l>
+          <lb/>Lde Nauarre: Au premier noſtre Huiſſier ou</l>
+        <l>
+          <lb/>Sergent. Nous te mandons &amp; commandons par ces</l>
+        <l>
+          <lb/>preſentes, ſignées de noſtre main, que l’Arreſt ce</l>
+        <l>
+          <lb/>jourd’huy donnéen noſtre Conſeil d’Eſtat, Nous y</l>
+        <l>
+          <lb/>eſtant, la Reyne Regente noſtre tres-honorée Da¬</l>
+        <l>
+          <lb/>me &amp; Mere preſente, dont l’extraict eſt cy-attaché</l>
+        <l>
+          <lb/>ſous le contreſcel de noſtre Chancellerie, par le quel</l>
+        <l>
+          <lb/>nous auons caſſé &amp; annulé l’Arreſt donné par la</l>
+        <l>
+          <lb/>Cour de Parlement eſtant à preſent aà̀ Paris, portant</l>
+        <l>
+          <lb/>deffenſes aux Vil les ſituées à vingt lieuës à̀ la ronde</l>
+        <l>
+          <lb/>de ladite ville, de receuoir nos Troupes, Tu ayes</l>
+        <l>
+          <lb/>à ſignifier à tous ceux qu’il appartiendra, afin</l>
+        <l>
+          <lb/>qu’ils n’en pretendent cauſe d’ignorance, &amp; leur</l>
+        <l>
+          <lb/>face les inhibitions &amp; deffences y contenuës, en¬</l>
+        <l>
+          <lb/>6</l>
+        <pb n="24"/>
+        <l>
+          <lb/>16</l>
+        <l>
+          <lb/>ſemble tous autres actes &amp; exploits neceſſaires,</l>
+        <l>
+          <lb/>ſans pour ce demander aueun congé, Placer,</l>
+        <l>
+          <lb/>viſa, ny pareatis: CAR TEI. eſt uoſtre plaiſir.</l>
+        <l>
+          <lb/>DON E à S. Germain en Laye le ſeptiéme iour de</l>
+        <l>
+          <lb/>Ianvier, l’an de grace mil ſix cent quarante neuf</l>
+        <l>
+          <lb/>Et de noſtre Regne le ſixiéme. Signe, LOVIS.</l>
+        <l>
+          <lb/>Et plus bas, Par le oy, la Reyne egente ſa</l>
+        <l>
+          <lb/>Mere preſente, DE GVENEGAVD &amp; ſeellé</l>
+        <l>
+          <lb/>ſur ſimple queuë de cire jaulne.</l>
+        <l>
+          <lb/>Collationné aux Originaux par moy Conſeillar</l>
+        <l>
+          <lb/>Secretaire du Roy &amp;deſes Finances.</l>
+        <pb n="25"/>
+        <pb n="26"/>
+        <pb n="27"/>
+        <pb n="28"/>
+      </p>
     </body>
   </text>
 </TEI>

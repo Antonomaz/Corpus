@@ -9,6 +9,20 @@ Le corpus est consultable depuis le dossier [Mazarinades](https://github.com/Ant
 
 Les textes sont ajoutés au fur et à mesure de leur encodage.
 
+### Organisation des fichiers
+
+Les mazarinades sont classées selon l'identifiant qui leur a été attribué par Moreau ([à retrouver ici](http://antonomaz.huma-num.fr/tools/Biblio_Moreau.html)). Elles sont classées par centaines (de 1-101 à 4001-4101).
+
+Ces dossiers sont complétées par les `Suppléments` identifiés par Moreau et les mazarinades identifiées par `Socard` et `Labadie`.
+
+Le dossier `Bibliothèque_Mazarine` contient les documents qui n'ont pas été repérés par Moreau, Socard ou Labadie.
+
+Si plusieurs exemplaires correspondant à un seul et même numéro Moreau ont été trouvés, ils sont placés dans le dossier `Doublons`, ils n'ont à priori pas été relus.
+
+Enfin, les dossiers `to_do` et `temp_MAZ` correspondent à des dossiers de travail et contiennent des fichiers qui doivent être relus avant d'être ajoutés aux dossiers déjà évoqués.
+
+
+
 
 ## Validation
 
