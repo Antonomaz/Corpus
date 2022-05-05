@@ -2,1256 +2,675 @@
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1545_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title source="Moreau" type="main">Harangue d'un capitaine allemand, faite à la
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title source="Moreau" type="main">Harangue d'un capitaine allemand, faite à la
                     reine de France.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven
+                <title type="sub">Édition Antonomaz</title>
+                <respStmt>
+                    <resp>Chaîne de traitement</resp>
+                    <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven
                         Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune
+                    <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune
                         Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+                    <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
                         Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz
+                    <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz
                         Alexandre</persName>
-          <persName ref="orcid:0000-0001-5815-9506" role="intern">Faure 
-                        Margaux</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=k5lAAAAAcAAJ"/>
-          <author/>
-          <title source="Moreau">Harangue d'un capitaine allemand, faite à la reine de
+                    <persName ref="orcid:0000-0001-5815-9506" role="intern">Faure Margaux</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+                <ref target="https://github.com/Antonomaz"/>
+                <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+                <availability n="cc-by" status="restricted">
+                    <licence target="https://creativecommons.org/licenses/by/4.0"/>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <ref target="https://books.google.fr/books?id=k5lAAAAAcAAJ"/>
+                    <author/>
+                    <title source="Moreau">Harangue d'un capitaine allemand, faite à la reine de
                         France.</title>
-          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher ref="isni:000000043524489X">
-            <persName>
-              <forename>Robert</forename>
-              <surname>Feugé</surname>
-            </persName>
-          </publisher>
-          <date source="Moreau" when="1649">1649</date>
-          <date source="Carrier" notBefore="1649-01" notAfter="1649-03">pendant le blocus de Paris</date>
-          <extent>
-            <measure quantity="8" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="BM01344" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50245"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2867714">Munich</settlement>
-            <institution>Bibliothèque de l'État de Bavière</institution>
-            <repository/>
-            <idno type="cote">Gall.g 1021b/4</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif
+                    <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+                    <publisher ref="isni:000000043524489X">
+                        <persName>
+                            <forename>Robert</forename>
+                            <surname>Feugé</surname>
+                        </persName>
+                    </publisher>
+                    <date source="Moreau" when="1649">1649</date>
+                    <date source="Carrier" notBefore="1649-01" notAfter="1649-03">pendant le blocus
+                        de Paris</date>
+                    <extent>
+                        <measure quantity="8" unit="page"/>
+                    </extent>
+                    <note type="format">in-4</note>
+                    <relatedItem source="Mazarine" type="identifier" subtype="BM01344" cert="high"
+                        target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50245"/>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement ref="geonames:2867714">Munich</settlement>
+                        <institution>Bibliothèque de l'État de Bavière</institution>
+                        <repository/>
+                        <idno type="cote">Gall.g 1021b/4</idno>
+                    </msIdentifier>
+                    <history>
+                        <provenance>
+                            <stamp>True</stamp>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif
                     principal est de fournir un texte destiné à l'exploration avec des outils
                     électroniques. De ce fait, ce n'est ni une édition philologique, ni une édition
                     pédagogique ou de redécouverte d'un auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations
+                <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations
                     de bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec
+                <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec
                     Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine">D'après Hubert Carrier, texte paru pendant le blocus de Paris
+            </projectDesc>
+            <editorialDecl>
+                <p/>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="fra">Document en français</language>
+            </langUsage>
+            <abstract>
+                <p source="Mazarine">D'après Hubert Carrier, texte paru pendant le blocus de Paris
                     (Bibliothèque Mazarine, Ms. 4682-3, f. 31v).</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="genre">Discours adressé</term>
-          <term type="subgenre">Harangue</term>
-          <term type="subgenre"/>
-          <term type="subject">Anne d'Autriche, 1601-1666</term>
-          <term type="subject">Régence</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-04-13" who="MF"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p><pb n="1"/><lb/>HARANGVE
-                
-                    <lb/>D'VN
-                
-                    <lb/>CAPITAINE
-                    
-                    <lb/>ALLEMANT, FAITE
-                
-                    <lb/>à la Reyne de France.
-                
-                    <lb/>A PARIS,
-                
-                    <lb/>Chez ROBERT FEVGE, proche le puits-
-                
-                    .<lb/>Certain, à l'Image S. Sebaſtien
-                
-                    <lb/>M. DC. LXIX.
-                
-                    <lb/><imprimatur>Auec Permißion</imprimatur>
+            </abstract>
+            <textClass>
+                <keywords>
+                    <term type="form">prose</term>
+                    <term type="genre">Discours adressé</term>
+                    <term type="subgenre">Harangue</term>
+                    <term type="subgenre"/>
+                    <term type="subject">Anne d'Autriche, 1601-1666</term>
+                    <term type="subject">Régence</term>
+                    <term type="handwritten_note" subtype="no"/>
+                    <term type="table_of_content" subtype="no"/>
+                    <term type="illustration" subtype="no"/>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change status="corrected" when="2022-04-13" who="MF"/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p><pb n="1"/>
+                <lb/>HARANGVE
+                <lb/>D'VN
+                <lb/>CAPITAINE
+                <lb/>ALLEMANT, FAITE
+                <lb/>à la Reyne de France.
+                <lb/>A PARIS,
+                <lb/>Chez ROBERT FEVGE, proche le puits- .
+                <lb/>Certain, à l'Image S. Sebaſtien
+                <lb/>M. DC. LXIX.
+                <lb/><imprimatur>Auec Permißion</imprimatur>
                 <pb n="4"/>
                 <pb n="5"/>
-                                
-                    <lb/>es
-                
-                    <lb/>le e nee
-                
-                    <lb/> V ¬
-                
-                    <lb/>H
-                
-                    <lb/>Allemant à̀ la Reyne
-                
-                    <lb/>de France.
-                
-                    <lb/> ADAmE,
-                
-                    <lb/>ſI Ilny a perſonne quineſça¬
-                
-                    <lb/> che queles François &amp;les Ai
-                
-                    <lb/>- lemans ont eſté́ de tout tëps
-                
-                    <lb/>les na tions es plus belliqueuſes dumõde;
-                
-                    <lb/>&amp; que c’eſt eux qui ont touſiours empeſ¬
-                
-                    <lb/>che la grandeur des Romains dans tou tes
-                
-                    <lb/>les rencontres, les vns ayans meſmes eſté
-                
-                    <lb/>ſaccager ome, les autres ayans toû¬
-                
-                    <lb/>jours eu la guerre, ou dãs l’Italie, ou l’ayàt
-                
-                    <lb/>ſouſtenuë dans le ſein de leur patrie. la
-                
-                    <lb/> France &amp; l’Allemagne ces deux grandes
-                
-                    <lb/>Prouinces ont touſiours eſté comne des
-                
-                    <lb/>pepinieres tres fertiles de gens de guerre;
-                
-                    <lb/>ou comme vn Hydre, dont plus on abba¬
-                
-                    <lb/> toit de teſtes, plus il e croiſſoit Combien
-                
-                    <lb/>A ij
-                <pb n="6"/>
-                
-                    <lb/>de fois les François ont ils ſecoué le ioug
-                
-                    <lb/>des omains, puiſque meſme leurs ois ſe
-                
-                    <lb/>ſont tendus maiſtres de l’Empire:&amp; com¬
-                
-                    <lb/>bien de fois les Allemans auſſi ont-ils fait
-                
-                    <lb/>tomber les Aigles, &amp; ont enfin reduit les
-                
-                    <lb/>mpereurs à̀ reſider dans leurs Prouinces?
-                
-                    <lb/>Cõbien de fois les Franois ont-ils terra¬
-                
-                    <lb/>ceé le Turc, &amp; combien de fois ont-ils em¬
-                
-                    <lb/>peché l’accroiſſemét de ſon EmpireN’eſt¬
-                
-                    <lb/>ce pas ces deux nations qui ont exterminé
-                
-                    <lb/>les Sarrazins, qui croyoient ſe rendre mai¬
-                
-                    <lb/>ſtres de toute la terre ?le ne veux rien dire
-                
-                    <lb/>des glorieuſes con queſtes du dernier oy
-                
-                    <lb/>deSuede, dont toute la vie à eſté pleine de
-                
-                    <lb/>combats &amp; de victoires? Ie ne veux rien
-                
-                    <lb/>dire de tant de ſignalez auantages que
-                
-                    <lb/>nous auons remportés, &amp; contre l’ampe¬
-                
-                    <lb/>reur, &amp; coõ̃tre lesBauarrois, ù nous auons
-                
-                    <lb/>eſte touſiours aydez de la conduite, de la
-                
-                    <lb/>prudence, &amp; de la valeur de tant d’illuſtres
-                
-                    <lb/>Generau que vo nous auiez enuoyez de
-                
-                    <lb/>toué temps pour prendre pat anos con¬
-                
-                    <lb/>queſtes, comme à nos trauaux.
-                
-                    <lb/>Ie crains d’auoirfait vne trop longue
-                
-                    <lb/>digreſſion qui poura vous auoir ennuyée;
-                
-                    <lb/>mais, Ma dame,ie l’ay faire pour faire voic
-                
-                    <lb/>à V.M.
-                
-                    <lb/>.¬.¬-¬¬¬¬¬¬¬¬¬¬LL,
-                <pb n="7"/>
-                
-                    <lb/>à V.M. l’affinité qui a eſté de tout temps
-                
-                    <lb/>ntre la France &amp; l’Allemagne, &amp; pour luy
-                
-                    <lb/>monſtrer que comme ces deux grandes
-                
-                    <lb/>Prouinces ſont é́gales en courage&amp; enva¬
-                
-                    <lb/> leur, qu’elles ſont auſſi vnies en volontez,
-                
-                    <lb/> qu’elles conſeruent inuiolablement
-                
-                    <lb/>toutes deuxle reſpect qu’elles doiuent a
-                
-                    <lb/>leur Souuerain, le ſoin quelles ont pour
-                
-                    <lb/>leur vnion, &amp; la pieté mutuelle pour les
-                
-                    <lb/>guerriers qu’e lles produiſent Nous auons
-                
-                    <lb/>veu de tout temps comme les François
-                
-                    <lb/>ont porté &amp; portent encore vn ſi grand
-                
-                    <lb/>reſpect a leursRois, qu’on les tient pour les
-                
-                    <lb/>plus abſolus Princes de toute la terre;nous
-                
-                    <lb/>n’en auons pas moins fait, &amp; il n’eft point
-                
-                    <lb/>dAllemant qui ne eonſerue vn deſir inuio¬
-                
-                    <lb/>lable de ſacrifier ſa vie&amp; ſon ſang pourſon
-                
-                    <lb/>Souuerain.Si les Francois ont avmé́ leurs
-                
-                    <lb/>oys, ils ont touſiours reſpecté &amp; reſpe¬
-                
-                    <lb/>ctent encore leurs eynes, ſoit pendant
-                
-                    <lb/>lavic de leurs maris, ſcit apres leur mort;
-                
-                    <lb/>nous auons donne des preuues de nos mé¬
-                
-                    <lb/>ms reſpects &amp; obeyſſances, &amp; conſeruõs
-                
-                    <lb/>touſiours comme eux les meſmesvoloõtez.
-                
-                    <lb/>Nous conſeruons auſſi auec eux le ſoin
-                
-                    <lb/>que nous deuons auoir pour uoſtrevnion,
-                <pb n="8"/>
-                
-                    <lb/>6
-                
-                    <lb/>&amp; quand nous es auons priez de venir
-                
-                    <lb/>nous ſecourir dans nos beſoins nous auons
-                
-                    <lb/>reconnu la fermeté, de leurs affections, &amp;
-                
-                    <lb/>ils nous ont touſiours aidégenereuſement 
-                
-                    <lb/>à vaincre &amp; à chaſſernos ennemis:Quand
-                
-                    <lb/>ils ont auſſi eu beſoin de noſtre ſecours &amp;
-                
-                    <lb/>de nos forces, nous n’auons point eſpar¬
-                
-                    <lb/>gné tout ce qui eſtoit en. notre pouuoir
-                
-                    <lb/>pour les ayder à vaincre comme ils nous 
-                
-                    <lb/>auoient aydez. Ie crois qu’ils ne doutent¬
-                
-                    <lb/>aucunement que nous ne ſoyõ̃s tous pour 
-                
-                    <lb/>eux, commenous ne doutons pointqu’ils
-                
-                    <lb/>ne faſſent le meſme, conſeruans pournous
-                
-                    <lb/>vne amitieé pure, &amp; nous pour eux vne af¬
-                
-                    <lb/>fection inuiolable.
-                
-                    <lb/>Cependant, adame, pour appuyer ces i
-                
-                    <lb/>veritez V. . nous ayant appellez nous
-                
-                    <lb/>ſommes venus ſans contrainte; mais me
-                
-                    <lb/>permettra-elle de luy dire qu’elle vſe mal
-                
-                    <lb/>en quelque façon de noſtreaffection&amp; de
-                
-                    <lb/>nos ſeruices, puiſqu’au lieu de nous faire
-                
-                    <lb/>comba ttre ontre ſes ennemis &amp; les no:
-                
-                    <lb/>ſtres, ellenous fait combattre contre nos
-                
-                    <lb/>alliez, &amp; ſans ſcçauoir pour qui, car ceux
-                
-                    <lb/>contre qui nous deuons combartre ve¬ 
-                
-                    <lb/>li eormounupeonrle noy ainſieeae
-                <pb n="9"/>
-                
-                    <lb/>donc pas pour luy que nous prenons les
-                
-                    <lb/>armes: cen’eſt pas pour V. . puis qu’elle
-                
-                    <lb/>n’a d’autre intereſt que celuy du Roy :ce
-                
-                    <lb/>n’eſt pas pour Meſſieurs vos Princes, puis
-                
-                    <lb/>qu’ils ont les meſmes ſentimens:pour qui
-                
-                    <lb/>donc, Madame, nous faites vous combat¬
-                
-                    <lb/>tre pour vn eſtranger, peur vn homme qui
-                
-                    <lb/>n’a aucun intereſt en France: Ie parle hau¬
-                
-                    <lb/>tement, &amp; quoy que le rang que V Mluy
-                
-                    <lb/>adonné́ aupres du Roy, ioint à ſa pourpre
-                
-                    <lb/>me deuroit é́blouyr&amp; eſpouuanter, ie par¬
-                
-                    <lb/>leſelon les termcs que la verite me dite,
-                
-                    <lb/>&amp; ſelonle pur ſentiment de troute noſtre
-                
-                    <lb/>armée.
-                
-                    <lb/>le ne ſeray point rcpris apres cela de mes
-                
-                    <lb/>Superieurs, car ie ſçay tres bï qu’ils auoï¬
-                
-                    <lb/>ront mon diſcours comme ils ont auoüé́
-                
-                    <lb/>ma charge: Nos Generaux qui sot icy n’at¬
-                
-                    <lb/>ront point a ſe plaindre contre moy puiſ¬
-                
-                    <lb/>queie vous declare lers ſ ntinens: ns
-                
-                    <lb/>ſoldats n crieront point apres moy, puiſ¬
-                
-                    <lb/>que ie veuxpreuenir leur perte: leurs fem¬
-                
-                    <lb/>mes ne me reprocht ront pint la mort de
-                
-                    <lb/>leurs maris, puiſque ie veux conſeruer
-                
-                    <lb/>leur vie: Ainſi, queV.M. non plus que
-                
-                    <lb/>l’E.deM.voſtreuiniſtre,nc ’oſfence point
-                
-                    <lb/>i 
-                
-                    <lb/> 2.
-                <pb n="10"/>
-                
-                    <lb/>s
-                
-                    <lb/>ſi ie parle ſi hautement, puiſque c’eſt l’in¬
-                
-                    <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
-                
-                    <lb/>dicte les ſentimens.
-                
-                    <lb/>Vcullez adame, ie vous en coniure au
-                
-                    <lb/>nom de toute noſtre armee, con ſiderer ce
-                
-                    <lb/>que vous faites; &amp; ſi V. M. nous fait com¬
-                
-                    <lb/>battre du moins, qu’e lle nous faſſe ſcauoit
-                
-                    <lb/>contre qui, afin que nous vſions apres
-                
-                    <lb/>auantageuſement ſur lesvaincus du fait de
-                
-                    <lb/>nos victoires. Ne nous expoſc z pas contre
-                
-                    <lb/>nous meſmes &amp; contre nos alliez, puiſque
-                
-                    <lb/>nous ne reſpirons que leur conſeruation
-                
-                    <lb/>qui nous eſt auſſi chere que la noſtre:nous
-                
-                    <lb/>deuons à V. . quelque ſorte d’obeyſſan¬
-                
-                    <lb/>ce, mais de grace traite z nous mieux, puiſ¬
-                
-                    <lb/>que nousſçauonsbien d’ou nous ſommes
-                
-                    <lb/>venus, voila mes ſentimens, adame, ap¬
-                
-                    <lb/>puyez de ceux de tous nos Generaux, &amp;
-                
-                    <lb/>de nos troupes, i’eſpere que Vles peſera
-                
-                    <lb/>&amp; qu’elle y mettra l’ordre que tout l
-                
-                    <lb/>monde deſire.
-                
-                    <lb/>FIN.
-                
-                    <lb/>B
-                
-                    <lb/> aambblbuodût 
-                
-                    <lb/>ou¬
-                <pb n="11"/>
-                
-                    <lb/>em
-                
-                    <lb/>il
-                
-                    <lb/>lllale¬
-                <pb n="12"/>
-                
-                    <lb/>oa¬¬
-                
-                    <lb/>s
-                
-                    <lb/>ſi ie parle ſi hautement, puiſque c’eſt l’in¬
-                
-                    <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
-                
-                    <lb/>dicte les ſentimens.
-                
-                    <lb/>Vcüuillez adame, ie vous en coniure au
-                
-                    <lb/>nom de toute noſtre armce, conſidererce
-                
-                    <lb/>que vous faites; &amp; ſi V. . nous fait com¬
-                
-                    <lb/>battre du moins, qu’elle nous faſſe ſçauoit
-                
-                    <lb/>contre qui, afn que nous vſions apres
-                
-                    <lb/>auantageuſement ſur lesvaincus du fait de
-                
-                    <lb/>nos victoires Ne nous cxpoſc z pas contre
-                
-                    <lb/>nous meſmes &amp; contre nos alliez, puiſque
-                
-                    <lb/>nous ne reſpirons que leur conſeruation
-                
-                    <lb/>qui nous eſt auſſi chere que la noſtre:nous
-                
-                    <lb/>deuons à V. M. quelque ſorte d’obeyſſan¬
-                
-                    <lb/>ce, mais de grace traite z nous mieux, puiſ¬
-                
-                    <lb/>que nous ſç̧aons bien d’ou nous ſommes
-                
-                    <lb/>venus, voila mes ſentimens, Madame, ap¬
-                
-                    <lb/>puyez de ceux de tous nos Generaux, &amp;
-                
-                    <lb/>de nos troupes, i’eſpere que VMles peſera
-                
-                    <lb/>&amp; qu’elle y mettra l’ordre que tout l
-                
-                    <lb/>monde deſire.
-                
-                    <lb/>FIN.
-                
-                    <lb/>î
-                
-                    <lb/> ambblbioat 
-                
-                    <lb/>oou¬
-                
-                    <lb/>!
-                <pb n="13"/>
-                
-                    <lb/>em
-                
-                    <lb/>il
-                
-                    <lb/>lllale¬
-                <pb n="14"/>
-                
-                    <lb/>ſi ie parle ſi hautement, puiſque c’eſt l’in¬
-                
-                    <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
-                
-                    <lb/>dicte les ſentimens.
-                
-                    <lb/>Veüullcz adame, ie vous en coniure au
-                
-                    <lb/>nom de toute noſtre armce, conſidererce
-                
-                    <lb/>que vous faites; &amp; ſi V. M. nous fait com¬
-                
-                    <lb/>battre du moins, qu’elle nous faſſe ſçauoit
-                
-                    <lb/>contre qui, afin que nous vſions apres
-                
-                    <lb/>auantageuſement ſur lesvaincus du fait de
-                
-                    <lb/>nos victoires Ne nous expoſc z pas contre
-                
-                    <lb/>nous meſmes &amp; contre nos alliez, puiſque
-                
-                    <lb/>nous ne reſpirons que leur conſeruation
-                
-                    <lb/>quinous eſt auſſi chere que la noſtre:nous
-                
-                    <lb/>deuons à V. u. quelque ſorte d’obeyſſan¬
-                
-                    <lb/>ce, mais de grace traite z nous mieux, puiſ¬
-                
-                    <lb/>que nousſçauons bien d’ou nous ſommes
-                
-                    <lb/>venus, voila mes ſentimens, madame, ap¬
-                
-                    <lb/>puyez de ceux de tous nos Generaux, &amp;
-                
-                    <lb/>de nos troupes, i’eſpere que V les peſera
-                
-                    <lb/>&amp; qu’elle y mettra l’ordre que tout l
-                
-                    <lb/>monde deſire.
-                
-                    <lb/>FIN.
-                
-                    <lb/>ût
-                
-                    <lb/> aaolboat l
-                
-                    <lb/> tßndben
-                <pb n="15"/>
-                
-                    <lb/>l
-                
-                    <lb/>lid
-                
-                    <lb/>rr
-                
-                    <lb/>l
-                
-                    <lb/>ii
-                
-                    <lb/>d
-                
-                    <lb/>Aa
-                
-                    <lb/>¬
-                
-                    <lb/>eii
-                
-                    <lb/> ¬
-                
-                    <lb/>llll
-                
-                    <lb/>n
-                
-                    <lb/>a
-                
-                    <lb/>e 
-                
-                    <lb/>s
-                
-                    <lb/>ae
-                <pb n="16"/>
-                
-                    <lb/>ſi ie parle ſi hautement, puiſque c’eſt l’in¬
-                
-                    <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
-                
-                    <lb/>dicte les ſentimens.
-                
-                    <lb/>Vecüllez adame, ie vous en coniure au
-                
-                    <lb/>nom de tourte noſtre armée, conſiderer ce
-                
-                    <lb/>que vous faites; &amp; ſi V. M. nous fait com¬
-                
-                    <lb/>battre du moins, qu’e lle nous faſſe ſç̧auoit
-                
-                    <lb/>contre qui, afn que nous vſions apres
-                
-                    <lb/>auantageuſement ſur lesvaincus du fait de
-                
-                    <lb/>nos victoires Ne nous cxpoſc z pas contre
-                
-                    <lb/>nous meſmes &amp; contre nos alliez, puiſque
-                
-                    <lb/>nous ne reſpirons que leur conſeruation
-                
-                    <lb/>qui nous eſt auſſi chere que la noſtre:nous
-                
-                    <lb/>deuons à V. m. quelque ſorte d’obeyſſan¬
-                
-                    <lb/>ce, mais de grace traitez nous mieux, puiſ¬
-                
-                    <lb/>que nous ſç̧auons bien d’ou nous ſommes
-                
-                    <lb/>venus, voila mes ſentimens, Madame, ap¬
-                
-                    <lb/>puyez de ceux de tous nos Generaux, &amp;
-                
-                    <lb/>de nos troupes, i’eſpere que V.les peſera
-                
-                    <lb/>&amp; qu’elle y mettra l’ordre que tout l
-                
-                    <lb/>monde deſire.
-                
-                    <lb/>FIN.
-                
-                    <lb/>Bls
-                
-                    <lb/> amablbaoat 
-                
-                    <lb/>Bobn
-                <pb n="17"/>
-                
-                    <lb/>l
-                
-                    <lb/>lid
-                
-                    <lb/>rr
-                
-                    <lb/>l
-                
-                    <lb/>ii
-                
-                    <lb/>d
-                
-                    <lb/>Aa
-                
-                    <lb/>¬
-                
-                    <lb/>eii
-                
-                    <lb/> ¬
-                
-                    <lb/>llll
-                
-                    <lb/>n
-                
-                    <lb/>a
-                
-                    <lb/>e 
-                
-                    <lb/>s
-                
-                    <lb/>ae
-                <pb n="18"/>
-                
-                    <lb/>-eeereal
-                
-                    <lb/>ſi ie parle ſi hautement, puiſque c’eſt l’in¬
-                
-                    <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
-                
-                    <lb/>dicte les ſentimens.
-                
-                    <lb/>Vcuillez adame, ie vous en coniure au
-                
-                    <lb/>nom de toute noſtre armée, con ſiderer ce
-                
-                    <lb/>que vous faites; &amp; ſi V. . nous fait com¬
-                
-                    <lb/>battre du moins, qu’elle nous faſſe ſçauoit
-                
-                    <lb/>contre qui, afin que nous vſions apres
-                
-                    <lb/>auantageuſement ſur lesvaincus du fait de
-                
-                    <lb/>nos victoires.Ne nous cxpoſc z pas contre
-                
-                    <lb/>nous meſmes &amp; contre nos alliez, puiſque
-                
-                    <lb/>nous ne reſpirons que leur conſeruation
-                
-                    <lb/>qui nous eſt auſſi chere que la noſtre:nous
-                
-                    <lb/>deuons à V. . quelque ſorte d’obeyſſan¬
-                
-                    <lb/>ce, mais de grace traite z nous mieux, puiſ¬
-                
-                    <lb/>que nous ſç̧auons bien d’ou nous ſommes
-                
-                    <lb/>venus, voila mes ſentimens, madame, ap¬
-                
-                    <lb/>puyez de ceux de tous nos Generaux, &amp;
-                
-                    <lb/>de nos troupes, i’eſpere que VM.les peſera
-                
-                    <lb/>&amp; qu’elle y mettra l’ordre que tout l
-                
-                    <lb/>monde deſire.
-                
-                    <lb/>FIN.
-                
-                    <lb/>gs
-                
-                    <lb/> bboat 
-                
-                    <lb/> ôuehen
-                <pb n="19"/>
-                
-                    <lb/>l
-                
-                    <lb/>lid
-                
-                    <lb/>rr
-                
-                    <lb/>l
-                
-                    <lb/>ii
-                
-                    <lb/>d
-                
-                    <lb/>Aa
-                
-                    <lb/>¬
-                
-                    <lb/>eii
-                
-                    <lb/> ¬
-                
-                    <lb/>llll
-                
-                    <lb/>n
-                
-                    <lb/>a
-                
-                    <lb/>e 
-                
-                    <lb/>s
-                
-                    <lb/>ae
-                <pb n="20"/>
-                
-                    <lb/>ſi ie parle ſi hautement, puiſque ceſt l’in¬
-                
-                    <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
-                
-                    <lb/>dicte les ſentimens.
-                
-                    <lb/>Vellecz sadame, ie vous en coniure au
-                
-                    <lb/>nom de toute noſtre armee, con ſiderer ce
-                
-                    <lb/>que vous faites; &amp; ſi V. . nous fait com¬
-                
-                    <lb/>battre du moins, qu’elle nous faſſe ſçauoit
-                
-                    <lb/>contre qui, afin que nous vſions apres
-                
-                    <lb/>auantageuſement ſur lesvaincus du fait de
-                
-                    <lb/>nos victoires, Ne nous expoſe z pas contre
-                
-                    <lb/>nous meſmes &amp; contre nos alliez, puiſque
-                
-                    <lb/>nous ne reſpirons que leur conſeruation
-                
-                    <lb/>qui nous eſt auſſi chere que la noſtre:nous
-                
-                    <lb/>deuons aà̀ V. . quelque ſorte d’obeyſſan¬
-                
-                    <lb/>ce, mais de grace traitez nous mieux, puiſ¬
-                
-                    <lb/>que nous ſç̧auons bien d’ou nous ſommes
-                
-                    <lb/>venus, voila mes ſentimens, madame, ap¬
-                
-                    <lb/>puyez de ceux de tous nos Generaux, &amp;
-                
-                    <lb/>de nos troupes, i’eſpere que VmM les peſera
-                
-                    <lb/>&amp; qu’elle y mettra l’ordre que tout l
-                
-                    <lb/>monde deſire.
-                
-                    <lb/>FIN.
-                
-                    <lb/>ûs
-                
-                    <lb/> ambolboat 
-                
-                    <lb/>ßucn
-                
-                    <lb/>¬ 
-                <pb n="21"/>
-                
-                    <lb/>l
-                
-                    <lb/>lid
-                
-                    <lb/>rr
-                
-                    <lb/>l
-                
-                    <lb/>ii
-                
-                    <lb/>d
-                
-                    <lb/>Aa
-                
-                    <lb/>¬
-                
-                    <lb/>eii
-                
-                    <lb/> ¬
-                
-                    <lb/>llll
-                
-                    <lb/>n
-                
-                    <lb/>a
-                
-                    <lb/>e 
-                
-                    <lb/>s
-                
-                    <lb/>ae
-                <pb n="22"/>
-                
-                    <lb/>s
-                
-                    <lb/>ſi ie parle ſi hautement, puiſque c’eſt l’in¬
-                
-                    <lb/>rtereſt public que i’embraſſe, &amp; qu’ilme
-                
-                    <lb/>dicte les ſentimens.
-                
-                    <lb/>Vecüullez adame, ie vous en coniure au
-                
-                    <lb/>nom de toute noſtre armee, conſiderer ce
-                
-                    <lb/>que vous faites; &amp; ſi V. . nous fait com¬
-                
-                    <lb/>battre du moins, qu’elle nous faſſe ſçauoit
-                
-                    <lb/>contre qui, afin que nous vſions apres
-                
-                    <lb/>auantageuſement ſur lesvaincus du fait de
-                
-                    <lb/>nos victoires, Ne nous expoſe z pas contre
-                
-                    <lb/>nous meſmes &amp; contre nos alliez, puiſque
-                
-                    <lb/>nous ne reſpirons que leur conſeruation
-                
-                    <lb/>qui nous eſt auſſi chere que la noſtre:nous
-                
-                    <lb/>deuons à V. uM. quelque ſorte d’obeyſſan¬
-                
-                    <lb/>ce, mais de grace traitez nous mieux, puiſ¬
-                
-                    <lb/>que nous ſç̧auons bien d’ou nous ſommes
-                
-                    <lb/>venus, voila mes ſentimens, adame, ap¬
-                
-                    <lb/>puyez de ceux de tous nos Generaux, &amp;
-                
-                    <lb/>de nos troupes, i’eſpere que VM les peſera
-                
-                    <lb/>&amp; qu’elle y mettra l’ordre que tout l!
-                
-                    <lb/>monde deſire.
-                
-                    <lb/>FI N.
-                
-                    <lb/>gatata
-                
-                    <lb/> aoblboa 
-                
-                    <lb/>uooa
-                
-                    <lb/>¬ 1
-                <pb n="23"/>
-                
-                    <lb/>l
-                
-                    <lb/>lid
-                
-                    <lb/>rr
-                
-                    <lb/>l
-                
-                    <lb/>ii
-                
-                    <lb/>d
-                
-                    <lb/>Aa
-                
-                    <lb/>¬
-                
-                    <lb/>eii
-                
-                    <lb/> ¬
-                
-                    <lb/>llll
-                
-                    <lb/>n
-                
-                    <lb/>a
-                
-                    <lb/>e 
-                
-                    <lb/>s
-                
-                    <lb/>ae
-                <pb n="24"/>
-                
-                    <lb/>ſi ie parle ſi hautement, puiſque ceſt l’in¬
-                
-                    <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
-                
-                    <lb/>dicte les ſentimens.
-                
-                    <lb/>Vcü̈llez adame, ie vous en coniure au
-                
-                    <lb/>nom de toute noſtre armee, con ſiderer ce
-                
-                    <lb/>que vous faites; &amp; ſi V. M. nous fait com¬
-                
-                    <lb/>battre du moins, qu’elle nous faſſe ſcauoit
-                
-                    <lb/>contre qui, afin que nous vſions apres
-                
-                    <lb/>auantageuſement ſur lesvaincus du fait de
-                
-                    <lb/>nos victoires.Ne nous cxpoſc z pas contre
-                
-                    <lb/>nous meſmes &amp; contre nos alliez, puiſque
-                
-                    <lb/>nous ne reſpirons que leur conſeruation
-                
-                    <lb/>qui nous eſt auſſi chere que la noſtre:nous
-                
-                    <lb/>deuons à V. m. quelque ſorte d’obeyſſan¬
-                
-                    <lb/>ce, mais de grace traite z nous mieux, puiſ¬
-                
-                    <lb/>que nous ſç̧audons bien d’ou nous ſommes
-                
-                    <lb/>venus, voila mes ſentimens, Madame, ap¬
-                
-                    <lb/>puyez de ceux de tous nos Generaux, &amp;
-                
-                    <lb/>de nos troupes, i’eſpere que VM.les peſera
-                
-                    <lb/>&amp; qu’elle y mettra l’ordre que tout l
-                
-                    <lb/>monde deſire.
-                
-                    <lb/>FIN.
-                
-                    <lb/>ataaa
-                
-                    <lb/> amoblbomaû 
-                
-                    <lb/>onucda
-                <pb n="25"/>
-                
-                    <lb/>l
-                
-                    <lb/>lid
-                
-                    <lb/>rr
-                
-                    <lb/>l
-                
-                    <lb/>ii
-                
-                    <lb/>d
-                
-                    <lb/>Aa
-                
-                    <lb/>¬
-                
-                    <lb/>eii
-                
-                    <lb/> ¬
-                
-                    <lb/>llll
-                
-                    <lb/>n
-                
-                    <lb/>a
-                
-                    <lb/>e 
-                
-                    <lb/>s
-                
-                    <lb/>ae
-                <pb n="26"/>
-                
-                    <lb/>ſi ie parle ſi hautement, puiſque c’eſt l’in¬
-                
-                    <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
-                
-                    <lb/>dicte les ſentimens.
-                
-                    <lb/>Vecuillez adame, ie vous en coniure au
-                
-                    <lb/>nom de toute noſtre armce, conſidererce
-                
-                    <lb/>que vous faites; &amp; ſi V M. nous fait com¬
-                
-                    <lb/>battre du moins, qu’elle nous faſſe ſçauoit
-                
-                    <lb/>contre qui, afn que nous vſions apres
-                
-                    <lb/>auantageuſement ſur les vaincus du fait de
-                
-                    <lb/>nos victoires. Ne nous ex poſe z pas contre
-                
-                    <lb/>nous meſmes &amp; contre nos alliez, puiſque
-                
-                    <lb/>nous ne reſpirons que leur conſeruation
-                
-                    <lb/>qui nous eſt auſſi chere que la noſtre:nous
-                
-                    <lb/>deuons aà̀ V. . quelque ſorte d’obeyſſan¬
-                
-                    <lb/>ce, mais de grace traitez nous mieux, puiſ¬
-                
-                    <lb/>que nous ſç̧adons bien d’ou nous ſommes
-                
-                    <lb/>venus, voila mes ſentimens, mMadame, ap¬
-                
-                    <lb/>puyez de ceux de tous nos Generaux, &amp;
-                
-                    <lb/>de nos troupes, i’eſpere que Vles peſera
-                
-                    <lb/>&amp; qu’elle y mettra l’ordre que tout l
-                
-                    <lb/>monde deſire.
-                
-                    <lb/>FIN.
-                
-                    <lb/>û
-                
-                    <lb/> amtblbaoaût 
-                
-                    <lb/> fônoehan
-                
-                    <lb/>¬¬
-                <pb n="27"/>
-                
-                    <lb/>l
-                
-                    <lb/>lid
-                
-                    <lb/>rr
-                
-                    <lb/>l
-                
-                    <lb/>ii
-                
-                    <lb/>d
-                
-                    <lb/>Aa
-                
-                    <lb/>¬
-                
-                    <lb/>eii
-                
-                    <lb/> ¬
-                
-                    <lb/>llll
-                
-                    <lb/>n
-                
-                    <lb/>a
-                
-                    <lb/>e 
-                
-                    <lb/>s
-                
-                    <lb/>ae
-                <pb n="28"/>
-                
-                    <lb/>8
-                
-                    <lb/>ſi ie parle ſi hautement, puiſque ceſt l’in¬
-                
-                    <lb/>rereſt public que i’embraſſe, &amp; qu’ilme
-                
-                    <lb/>dicte les ſentimens.
-                
-                    <lb/>Vcullez adame, ie vous en coniure au
-                
-                    <lb/>nom de toute noſtre armce, conſiderer ce
-                
-                    <lb/>que vous faites; &amp; ſi V. . nous fait com¬
-                
-                    <lb/>battre du moins, qu’elle nous faſſe ſçauoit
-                
-                    <lb/>contre qui, afin que nous vſions apres
-                
-                    <lb/>auantageuſement ſurlesvaincus du fait de
-                
-                    <lb/>nos victoires. Ne nous cxpoſe z pas contre
-                
-                    <lb/>nous meſmes &amp; contre nos alliez, puiſque
-                
-                    <lb/>nous ne reſpirons que leur conſeruation
-                
-                    <lb/>qui nous eſt auſſi chere que la noſtre:nous
-                
-                    <lb/>deuons à V. . quelque ſorte d’obeyſſan¬
-                
-                    <lb/>ce, mais de grace traite z nous mieux, puiſ¬
-                
-                    <lb/>que nousſç̧auons bien d’ou nous ſommes
-                
-                    <lb/>venus, voila mes ſentimens, madame, ap¬
-                
-                    <lb/>puyez de ceux de tous nos Generaux, &amp;
-                
-                    <lb/>de nos troupes, i’eſpere que V les peſera
-                
-                    <lb/>&amp; qu’elle y mettra l’ordre que tout l
-                
-                    <lb/>monde deſire.
-                
-                    <lb/>FIN.
-                
-                    <lb/>ata
-                
-                    <lb/> bblbtos 
-                
-                    <lb/>ûncûen
-                <pb n="29"/>
-                
-                    <lb/>l
-                
-                    <lb/>lid
-                
-                    <lb/>rr
-                
-                    <lb/>l
-                
-                    <lb/>ii
-                
-                    <lb/>d
-                
-                    <lb/>Aa
-                
-                    <lb/>¬
-                
-                    <lb/>eii
-                
-                    <lb/> ¬
-                
-                    <lb/>llll
-                
-                    <lb/>n
-                
-                    <lb/>a
-                
-                    <lb/>e 
-                
-                    <lb/>s
-                
-                    <lb/>ae
-                <pb n="30"/>
-                
-                    <lb/>ſi ie parle ſi hautement, puiſque c’eſt l’in¬
-                
-                    <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
-                
-                    <lb/>dicte les ſentimens.
-                
-                    <lb/>Veuillez adame, ie vous en coniureau
-                
-                    <lb/>nom de toute noſtre armee, con ſidererce
-                
-                    <lb/>que vous faites; &amp; ſi V. M. nous fait com¬
-                
-                    <lb/>battre du moins, qu’elle nous faſſe ſçauoit
-                
-                    <lb/>contre qui, afin que nous vſions apres
-                
-                    <lb/>auantageuſement ſur lesvaincus du fait de
-                
-                    <lb/>nos victoires. Ne nous expoſe z pas contre
-                
-                    <lb/>nous meſmes &amp; contre nos alliez, puiſque
-                
-                    <lb/>nous ne reſpirons que leur conſeruation
-                
-                    <lb/>qui nous eſt auſſi chere que la noſtre:nous
-                
-                    <lb/>deuons à̀ V. m. quelque ſorte d’obeyſſan¬
-                
-                    <lb/>ce, mais de grace traite z nous mieux, puiſ¬
-                
-                    <lb/>que nousſçauons bien d’ou nous ſommes
-                
-                    <lb/>venus, voila mes ſentimens, Madame, ap¬
-
-                    <lb/>puyez de ceux de tous nos Generaux, &amp;
-                
-                    <lb/>de nos troupes, i’eſpere que V. les peſera
-                
-                    <lb/>&amp; qu’elle y mettra l’ordre que tout l
-                
-                    <lb/>mond deſire.
-                
-                    <lb/>FIN.
-            </p>
-    </body>
-  </text>
+                <lb/>es
+                <lb/>le e nee
+                <lb/> V ¬
+                <lb/>H
+                <lb/>Allemant à̀ la Reyne
+                <lb/>de France.
+                <lb/> ADAmE,
+                <lb/>ſI Ilny a perſonne quineſça¬
+                <lb/> che queles François &amp;les Ai
+                <lb/>- lemans ont eſté́ de tout tëps
+                <lb/>les na tions es plus belliqueuſes dumõde;
+                <lb/>&amp; que c’eſt eux qui ont touſiours empeſ¬
+                <lb/>che la grandeur des Romains dans tou tes
+                <lb/>les rencontres, les vns ayans meſmes eſté
+                <lb/>ſaccager ome, les autres ayans toû¬
+                <lb/>jours eu la guerre, ou dãs l’Italie, ou l’ayàt
+                <lb/>ſouſtenuë dans le ſein de leur patrie. la
+                <lb/> France &amp; l’Allemagne ces deux grandes
+                <lb/>Prouinces ont touſiours eſté comne des
+                <lb/>pepinieres tres fertiles de gens de guerre;
+                <lb/>ou comme vn Hydre, dont plus on abba¬
+                <lb/> toit de teſtes, plus il e croiſſoit Combien
+                <lb/>A ij <pb n="6"/>
+                <lb/>de fois les François ont ils ſecoué le ioug
+                <lb/>des omains, puiſque meſme leurs ois ſe
+                <lb/>ſont tendus maiſtres de l’Empire:&amp; com¬
+                <lb/>bien de fois les Allemans auſſi ont-ils fait
+                <lb/>tomber les Aigles, &amp; ont enfin reduit les
+                <lb/>mpereurs à̀ reſider dans leurs Prouinces?
+                <lb/>Cõbien de fois les Franois ont-ils terra¬
+                <lb/>ceé le Turc, &amp; combien de fois ont-ils em¬
+                <lb/>peché l’accroiſſemét de ſon EmpireN’eſt¬
+                <lb/>ce pas ces deux nations qui ont exterminé
+                <lb/>les Sarrazins, qui croyoient ſe rendre mai¬
+                <lb/>ſtres de toute la terre ?le ne veux rien dire
+                <lb/>des glorieuſes con queſtes du dernier oy
+                <lb/>deSuede, dont toute la vie à eſté pleine de
+                <lb/>combats &amp; de victoires? Ie ne veux rien
+                <lb/>dire de tant de ſignalez auantages que
+                <lb/>nous auons remportés, &amp; contre l’ampe¬
+                <lb/>reur, &amp; coõ̃tre lesBauarrois, ù nous auons
+                <lb/>eſte touſiours aydez de la conduite, de la
+                <lb/>prudence, &amp; de la valeur de tant d’illuſtres
+                <lb/>Generau que vo nous auiez enuoyez de
+                <lb/>toué temps pour prendre pat anos con¬
+                <lb/>queſtes, comme à nos trauaux.
+                <lb/>Ie crains d’auoirfait vne trop longue
+                <lb/>digreſſion qui poura vous auoir ennuyée;
+                <lb/>mais, Ma dame,ie l’ay faire pour faire voic
+                <lb/>à V.M.
+                <lb/>.¬.¬-¬¬¬¬¬¬¬¬¬¬LL, <pb n="7"/>
+                <lb/>à V.M. l’affinité qui a eſté de tout temps
+                <lb/>ntre la France &amp; l’Allemagne, &amp; pour luy
+                <lb/>monſtrer que comme ces deux grandes
+                <lb/>Prouinces ſont é́gales en courage&amp; enva¬
+                <lb/> leur, qu’elles ſont auſſi vnies en volontez,
+                <lb/> qu’elles conſeruent inuiolablement
+                <lb/>toutes deuxle reſpect qu’elles doiuent a
+                <lb/>leur Souuerain, le ſoin quelles ont pour
+                <lb/>leur vnion, &amp; la pieté mutuelle pour les
+                <lb/>guerriers qu’e lles produiſent Nous auons
+                <lb/>veu de tout temps comme les François
+                <lb/>ont porté &amp; portent encore vn ſi grand
+                <lb/>reſpect a leursRois, qu’on les tient pour les
+                <lb/>plus abſolus Princes de toute la terre;nous
+                <lb/>n’en auons pas moins fait, &amp; il n’eft point
+                <lb/>dAllemant qui ne eonſerue vn deſir inuio¬
+                <lb/>lable de ſacrifier ſa vie&amp; ſon ſang pourſon
+                <lb/>Souuerain.Si les Francois ont avmé́ leurs
+                <lb/>oys, ils ont touſiours reſpecté &amp; reſpe¬
+                <lb/>ctent encore leurs eynes, ſoit pendant
+                <lb/>lavic de leurs maris, ſcit apres leur mort;
+                <lb/>nous auons donne des preuues de nos mé¬
+                <lb/>ms reſpects &amp; obeyſſances, &amp; conſeruõs
+                <lb/>touſiours comme eux les meſmesvoloõtez.
+                <lb/>Nous conſeruons auſſi auec eux le ſoin
+                <lb/>que nous deuons auoir pour uoſtrevnion, <pb n="8"/>
+                <lb/>6
+                <lb/>&amp; quand nous es auons priez de venir
+                <lb/>nous ſecourir dans nos beſoins nous auons
+                <lb/>reconnu la fermeté, de leurs affections, &amp;
+                <lb/>ils nous ont touſiours aidégenereuſement
+                <lb/>à vaincre &amp; à chaſſernos ennemis:Quand
+                <lb/>ils ont auſſi eu beſoin de noſtre ſecours &amp;
+                <lb/>de nos forces, nous n’auons point eſpar¬
+                <lb/>gné tout ce qui eſtoit en. notre pouuoir
+                <lb/>pour les ayder à vaincre comme ils nous
+                <lb/>auoient aydez. Ie crois qu’ils ne doutent¬
+                <lb/>aucunement que nous ne ſoyõ̃s tous pour
+                <lb/>eux, commenous ne doutons pointqu’ils
+                <lb/>ne faſſent le meſme, conſeruans pournous
+                <lb/>vne amitieé pure, &amp; nous pour eux vne af¬
+                <lb/>fection inuiolable.
+                <lb/>Cependant, adame, pour appuyer ces i
+                <lb/>veritez V. . nous ayant appellez nous
+                <lb/>ſommes venus ſans contrainte; mais me
+                <lb/>permettra-elle de luy dire qu’elle vſe mal
+                <lb/>en quelque façon de noſtreaffection&amp; de
+                <lb/>nos ſeruices, puiſqu’au lieu de nous faire
+                <lb/>comba ttre ontre ſes ennemis &amp; les no:
+                <lb/>ſtres, ellenous fait combattre contre nos
+                <lb/>alliez, &amp; ſans ſcçauoir pour qui, car ceux
+                <lb/>contre qui nous deuons combartre ve¬
+                <lb/>li eormounupeonrle noy ainſieeae <pb n="9"/>
+                <lb/>donc pas pour luy que nous prenons les
+                <lb/>armes: cen’eſt pas pour V. . puis qu’elle
+                <lb/>n’a d’autre intereſt que celuy du Roy :ce
+                <lb/>n’eſt pas pour Meſſieurs vos Princes, puis
+                <lb/>qu’ils ont les meſmes ſentimens:pour qui
+                <lb/>donc, Madame, nous faites vous combat¬
+                <lb/>tre pour vn eſtranger, peur vn homme qui
+                <lb/>n’a aucun intereſt en France: Ie parle hau¬
+                <lb/>tement, &amp; quoy que le rang que V Mluy
+                <lb/>adonné́ aupres du Roy, ioint à ſa pourpre
+                <lb/>me deuroit é́blouyr&amp; eſpouuanter, ie par¬
+                <lb/>leſelon les termcs que la verite me dite,
+                <lb/>&amp; ſelonle pur ſentiment de troute noſtre
+                <lb/>armée.
+                <lb/>le ne ſeray point rcpris apres cela de mes
+                <lb/>Superieurs, car ie ſçay tres bï qu’ils auoï¬
+                <lb/>ront mon diſcours comme ils ont auoüé́
+                <lb/>ma charge: Nos Generaux qui sot icy n’at¬
+                <lb/>ront point a ſe plaindre contre moy puiſ¬
+                <lb/>queie vous declare lers ſ ntinens: ns
+                <lb/>ſoldats n crieront point apres moy, puiſ¬
+                <lb/>que ie veuxpreuenir leur perte: leurs fem¬
+                <lb/>mes ne me reprocht ront pint la mort de
+                <lb/>leurs maris, puiſque ie veux conſeruer
+                <lb/>leur vie: Ainſi, queV.M. non plus que
+                <lb/>l’E.deM.voſtreuiniſtre,nc ’oſfence point
+                <lb/>i
+                <lb/> 2. <pb n="10"/>
+                <lb/>s
+                <lb/>ſi ie parle ſi hautement, puiſque c’eſt l’in¬
+                <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
+                <lb/>dicte les ſentimens.
+                <lb/>Vcullez adame, ie vous en coniure au
+                <lb/>nom de toute noſtre armee, con ſiderer ce
+                <lb/>que vous faites; &amp; ſi V. M. nous fait com¬
+                <lb/>battre du moins, qu’e lle nous faſſe ſcauoit
+                <lb/>contre qui, afin que nous vſions apres
+                <lb/>auantageuſement ſur lesvaincus du fait de
+                <lb/>nos victoires. Ne nous expoſc z pas contre
+                <lb/>nous meſmes &amp; contre nos alliez, puiſque
+                <lb/>nous ne reſpirons que leur conſeruation
+                <lb/>qui nous eſt auſſi chere que la noſtre:nous
+                <lb/>deuons à V. . quelque ſorte d’obeyſſan¬
+                <lb/>ce, mais de grace traite z nous mieux, puiſ¬
+                <lb/>que nousſçauonsbien d’ou nous ſommes
+                <lb/>venus, voila mes ſentimens, adame, ap¬
+                <lb/>puyez de ceux de tous nos Generaux, &amp;
+                <lb/>de nos troupes, i’eſpere que Vles peſera
+                <lb/>&amp; qu’elle y mettra l’ordre que tout l
+                <lb/>monde deſire.
+                <lb/>FIN.
+                <lb/>B
+                <lb/> aambblbuodût
+                <lb/>ou¬ <pb n="11"/>
+                <lb/>em
+                <lb/>il
+                <lb/>lllale¬ <pb n="12"/>
+                <lb/>oa¬¬
+                <lb/>s
+                <lb/>ſi ie parle ſi hautement, puiſque c’eſt l’in¬
+                <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
+                <lb/>dicte les ſentimens.
+                <lb/>Vcüuillez adame, ie vous en coniure au
+                <lb/>nom de toute noſtre armce, conſidererce
+                <lb/>que vous faites; &amp; ſi V. . nous fait com¬
+                <lb/>battre du moins, qu’elle nous faſſe ſçauoit
+                <lb/>contre qui, afn que nous vſions apres
+                <lb/>auantageuſement ſur lesvaincus du fait de
+                <lb/>nos victoires Ne nous cxpoſc z pas contre
+                <lb/>nous meſmes &amp; contre nos alliez, puiſque
+                <lb/>nous ne reſpirons que leur conſeruation
+                <lb/>qui nous eſt auſſi chere que la noſtre:nous
+                <lb/>deuons à V. M. quelque ſorte d’obeyſſan¬
+                <lb/>ce, mais de grace traite z nous mieux, puiſ¬
+                <lb/>que nous ſç̧aons bien d’ou nous ſommes
+                <lb/>venus, voila mes ſentimens, Madame, ap¬
+                <lb/>puyez de ceux de tous nos Generaux, &amp;
+                <lb/>de nos troupes, i’eſpere que VMles peſera
+                <lb/>&amp; qu’elle y mettra l’ordre que tout l
+                <lb/>monde deſire.
+                <lb/>FIN.
+                <lb/>î
+                <lb/> ambblbioat
+                <lb/>oou¬
+                <lb/>! <pb n="13"/>
+                <lb/>em
+                <lb/>il
+                <lb/>lllale¬ <pb n="14"/>
+                <lb/>ſi ie parle ſi hautement, puiſque c’eſt l’in¬
+                <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
+                <lb/>dicte les ſentimens.
+                <lb/>Veüullcz adame, ie vous en coniure au
+                <lb/>nom de toute noſtre armce, conſidererce
+                <lb/>que vous faites; &amp; ſi V. M. nous fait com¬
+                <lb/>battre du moins, qu’elle nous faſſe ſçauoit
+                <lb/>contre qui, afin que nous vſions apres
+                <lb/>auantageuſement ſur lesvaincus du fait de
+                <lb/>nos victoires Ne nous expoſc z pas contre
+                <lb/>nous meſmes &amp; contre nos alliez, puiſque
+                <lb/>nous ne reſpirons que leur conſeruation
+                <lb/>quinous eſt auſſi chere que la noſtre:nous
+                <lb/>deuons à V. u. quelque ſorte d’obeyſſan¬
+                <lb/>ce, mais de grace traite z nous mieux, puiſ¬
+                <lb/>que nousſçauons bien d’ou nous ſommes
+                <lb/>venus, voila mes ſentimens, madame, ap¬
+                <lb/>puyez de ceux de tous nos Generaux, &amp;
+                <lb/>de nos troupes, i’eſpere que V les peſera
+                <lb/>&amp; qu’elle y mettra l’ordre que tout l
+                <lb/>monde deſire.
+                <lb/>FIN.
+                <lb/>ût
+                <lb/> aaolboat l
+                <lb/> tßndben <pb n="15"/>
+                <lb/>l
+                <lb/>lid
+                <lb/>rr
+                <lb/>l
+                <lb/>ii
+                <lb/>d
+                <lb/>Aa
+                <lb/>¬
+                <lb/>eii
+                <lb/> ¬
+                <lb/>llll
+                <lb/>n
+                <lb/>a
+                <lb/>e
+                <lb/>s
+                <lb/>ae <pb n="16"/>
+                <lb/>ſi ie parle ſi hautement, puiſque c’eſt l’in¬
+                <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
+                <lb/>dicte les ſentimens.
+                <lb/>Vecüllez adame, ie vous en coniure au
+                <lb/>nom de tourte noſtre armée, conſiderer ce
+                <lb/>que vous faites; &amp; ſi V. M. nous fait com¬
+                <lb/>battre du moins, qu’e lle nous faſſe ſç̧auoit
+                <lb/>contre qui, afn que nous vſions apres
+                <lb/>auantageuſement ſur lesvaincus du fait de
+                <lb/>nos victoires Ne nous cxpoſc z pas contre
+                <lb/>nous meſmes &amp; contre nos alliez, puiſque
+                <lb/>nous ne reſpirons que leur conſeruation
+                <lb/>qui nous eſt auſſi chere que la noſtre:nous
+                <lb/>deuons à V. m. quelque ſorte d’obeyſſan¬
+                <lb/>ce, mais de grace traitez nous mieux, puiſ¬
+                <lb/>que nous ſç̧auons bien d’ou nous ſommes
+                <lb/>venus, voila mes ſentimens, Madame, ap¬
+                <lb/>puyez de ceux de tous nos Generaux, &amp;
+                <lb/>de nos troupes, i’eſpere que V.les peſera
+                <lb/>&amp; qu’elle y mettra l’ordre que tout l
+                <lb/>monde deſire.
+                <lb/>FIN.
+                <lb/>Bls
+                <lb/> amablbaoat
+                <lb/>Bobn <pb n="17"/>
+                <lb/>l
+                <lb/>lid
+                <lb/>rr
+                <lb/>l
+                <lb/>ii
+                <lb/>d
+                <lb/>Aa
+                <lb/>¬
+                <lb/>eii
+                <lb/> ¬
+                <lb/>llll
+                <lb/>n
+                <lb/>a
+                <lb/>e
+                <lb/>s
+                <lb/>ae <pb n="18"/>
+                <lb/>-eeereal
+                <lb/>ſi ie parle ſi hautement, puiſque c’eſt l’in¬
+                <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
+                <lb/>dicte les ſentimens.
+                <lb/>Vcuillez adame, ie vous en coniure au
+                <lb/>nom de toute noſtre armée, con ſiderer ce
+                <lb/>que vous faites; &amp; ſi V. . nous fait com¬
+                <lb/>battre du moins, qu’elle nous faſſe ſçauoit
+                <lb/>contre qui, afin que nous vſions apres
+                <lb/>auantageuſement ſur lesvaincus du fait de
+                <lb/>nos victoires.Ne nous cxpoſc z pas contre
+                <lb/>nous meſmes &amp; contre nos alliez, puiſque
+                <lb/>nous ne reſpirons que leur conſeruation
+                <lb/>qui nous eſt auſſi chere que la noſtre:nous
+                <lb/>deuons à V. . quelque ſorte d’obeyſſan¬
+                <lb/>ce, mais de grace traite z nous mieux, puiſ¬
+                <lb/>que nous ſç̧auons bien d’ou nous ſommes
+                <lb/>venus, voila mes ſentimens, madame, ap¬
+                <lb/>puyez de ceux de tous nos Generaux, &amp;
+                <lb/>de nos troupes, i’eſpere que VM.les peſera
+                <lb/>&amp; qu’elle y mettra l’ordre que tout l
+                <lb/>monde deſire.
+                <lb/>FIN.
+                <lb/>gs
+                <lb/> bboat
+                <lb/> ôuehen <pb n="19"/>
+                <lb/>l
+                <lb/>lid
+                <lb/>rr
+                <lb/>l
+                <lb/>ii
+                <lb/>d
+                <lb/>Aa
+                <lb/>¬
+                <lb/>eii
+                <lb/> ¬
+                <lb/>llll
+                <lb/>n
+                <lb/>a
+                <lb/>e
+                <lb/>s
+                <lb/>ae <pb n="20"/>
+                <lb/>ſi ie parle ſi hautement, puiſque ceſt l’in¬
+                <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
+                <lb/>dicte les ſentimens.
+                <lb/>Vellecz sadame, ie vous en coniure au
+                <lb/>nom de toute noſtre armee, con ſiderer ce
+                <lb/>que vous faites; &amp; ſi V. . nous fait com¬
+                <lb/>battre du moins, qu’elle nous faſſe ſçauoit
+                <lb/>contre qui, afin que nous vſions apres
+                <lb/>auantageuſement ſur lesvaincus du fait de
+                <lb/>nos victoires, Ne nous expoſe z pas contre
+                <lb/>nous meſmes &amp; contre nos alliez, puiſque
+                <lb/>nous ne reſpirons que leur conſeruation
+                <lb/>qui nous eſt auſſi chere que la noſtre:nous
+                <lb/>deuons aà̀ V. . quelque ſorte d’obeyſſan¬
+                <lb/>ce, mais de grace traitez nous mieux, puiſ¬
+                <lb/>que nous ſç̧auons bien d’ou nous ſommes
+                <lb/>venus, voila mes ſentimens, madame, ap¬
+                <lb/>puyez de ceux de tous nos Generaux, &amp;
+                <lb/>de nos troupes, i’eſpere que VmM les peſera
+                <lb/>&amp; qu’elle y mettra l’ordre que tout l
+                <lb/>monde deſire.
+                <lb/>FIN.
+                <lb/>ûs
+                <lb/> ambolboat
+                <lb/>ßucn
+                <lb/>¬ <pb n="21"/>
+                <lb/>l
+                <lb/>lid
+                <lb/>rr
+                <lb/>l
+                <lb/>ii
+                <lb/>d
+                <lb/>Aa
+                <lb/>¬
+                <lb/>eii
+                <lb/> ¬
+                <lb/>llll
+                <lb/>n
+                <lb/>a
+                <lb/>e
+                <lb/>s
+                <lb/>ae <pb n="22"/>
+                <lb/>s
+                <lb/>ſi ie parle ſi hautement, puiſque c’eſt l’in¬
+                <lb/>rtereſt public que i’embraſſe, &amp; qu’ilme
+                <lb/>dicte les ſentimens.
+                <lb/>Vecüullez adame, ie vous en coniure au
+                <lb/>nom de toute noſtre armee, conſiderer ce
+                <lb/>que vous faites; &amp; ſi V. . nous fait com¬
+                <lb/>battre du moins, qu’elle nous faſſe ſçauoit
+                <lb/>contre qui, afin que nous vſions apres
+                <lb/>auantageuſement ſur lesvaincus du fait de
+                <lb/>nos victoires, Ne nous expoſe z pas contre
+                <lb/>nous meſmes &amp; contre nos alliez, puiſque
+                <lb/>nous ne reſpirons que leur conſeruation
+                <lb/>qui nous eſt auſſi chere que la noſtre:nous
+                <lb/>deuons à V. uM. quelque ſorte d’obeyſſan¬
+                <lb/>ce, mais de grace traitez nous mieux, puiſ¬
+                <lb/>que nous ſç̧auons bien d’ou nous ſommes
+                <lb/>venus, voila mes ſentimens, adame, ap¬
+                <lb/>puyez de ceux de tous nos Generaux, &amp;
+                <lb/>de nos troupes, i’eſpere que VM les peſera
+                <lb/>&amp; qu’elle y mettra l’ordre que tout l!
+                <lb/>monde deſire.
+                <lb/>FI N.
+                <lb/>gatata
+                <lb/> aoblboa
+                <lb/>uooa
+                <lb/>¬ 1 <pb n="23"/>
+                <lb/>l
+                <lb/>lid
+                <lb/>rr
+                <lb/>l
+                <lb/>ii
+                <lb/>d
+                <lb/>Aa
+                <lb/>¬
+                <lb/>eii
+                <lb/> ¬
+                <lb/>llll
+                <lb/>n
+                <lb/>a
+                <lb/>e
+                <lb/>s
+                <lb/>ae <pb n="24"/>
+                <lb/>ſi ie parle ſi hautement, puiſque ceſt l’in¬
+                <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
+                <lb/>dicte les ſentimens.
+                <lb/>Vcü̈llez adame, ie vous en coniure au
+                <lb/>nom de toute noſtre armee, con ſiderer ce
+                <lb/>que vous faites; &amp; ſi V. M. nous fait com¬
+                <lb/>battre du moins, qu’elle nous faſſe ſcauoit
+                <lb/>contre qui, afin que nous vſions apres
+                <lb/>auantageuſement ſur lesvaincus du fait de
+                <lb/>nos victoires.Ne nous cxpoſc z pas contre
+                <lb/>nous meſmes &amp; contre nos alliez, puiſque
+                <lb/>nous ne reſpirons que leur conſeruation
+                <lb/>qui nous eſt auſſi chere que la noſtre:nous
+                <lb/>deuons à V. m. quelque ſorte d’obeyſſan¬
+                <lb/>ce, mais de grace traite z nous mieux, puiſ¬
+                <lb/>que nous ſç̧audons bien d’ou nous ſommes
+                <lb/>venus, voila mes ſentimens, Madame, ap¬
+                <lb/>puyez de ceux de tous nos Generaux, &amp;
+                <lb/>de nos troupes, i’eſpere que VM.les peſera
+                <lb/>&amp; qu’elle y mettra l’ordre que tout l
+                <lb/>monde deſire.
+                <lb/>FIN.
+                <lb/>ataaa
+                <lb/> amoblbomaû
+                <lb/>onucda <pb n="25"/>
+                <lb/>l
+                <lb/>lid
+                <lb/>rr
+                <lb/>l
+                <lb/>ii
+                <lb/>d
+                <lb/>Aa
+                <lb/>¬
+                <lb/>eii
+                <lb/> ¬
+                <lb/>llll
+                <lb/>n
+                <lb/>a
+                <lb/>e
+                <lb/>s
+                <lb/>ae <pb n="26"/>
+                <lb/>ſi ie parle ſi hautement, puiſque c’eſt l’in¬
+                <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
+                <lb/>dicte les ſentimens.
+                <lb/>Vecuillez adame, ie vous en coniure au
+                <lb/>nom de toute noſtre armce, conſidererce
+                <lb/>que vous faites; &amp; ſi V M. nous fait com¬
+                <lb/>battre du moins, qu’elle nous faſſe ſçauoit
+                <lb/>contre qui, afn que nous vſions apres
+                <lb/>auantageuſement ſur les vaincus du fait de
+                <lb/>nos victoires. Ne nous ex poſe z pas contre
+                <lb/>nous meſmes &amp; contre nos alliez, puiſque
+                <lb/>nous ne reſpirons que leur conſeruation
+                <lb/>qui nous eſt auſſi chere que la noſtre:nous
+                <lb/>deuons aà̀ V. . quelque ſorte d’obeyſſan¬
+                <lb/>ce, mais de grace traitez nous mieux, puiſ¬
+                <lb/>que nous ſç̧adons bien d’ou nous ſommes
+                <lb/>venus, voila mes ſentimens, mMadame, ap¬
+                <lb/>puyez de ceux de tous nos Generaux, &amp;
+                <lb/>de nos troupes, i’eſpere que Vles peſera
+                <lb/>&amp; qu’elle y mettra l’ordre que tout l
+                <lb/>monde deſire.
+                <lb/>FIN.
+                <lb/>û
+                <lb/> amtblbaoaût
+                <lb/> fônoehan
+                <lb/>¬¬ <pb n="27"/>
+                <lb/>l
+                <lb/>lid
+                <lb/>rr
+                <lb/>l
+                <lb/>ii
+                <lb/>d
+                <lb/>Aa
+                <lb/>¬
+                <lb/>eii
+                <lb/> ¬
+                <lb/>llll
+                <lb/>n
+                <lb/>a
+                <lb/>e
+                <lb/>s
+                <lb/>ae <pb n="28"/>
+                <lb/>8
+                <lb/>ſi ie parle ſi hautement, puiſque ceſt l’in¬
+                <lb/>rereſt public que i’embraſſe, &amp; qu’ilme
+                <lb/>dicte les ſentimens.
+                <lb/>Vcullez adame, ie vous en coniure au
+                <lb/>nom de toute noſtre armce, conſiderer ce
+                <lb/>que vous faites; &amp; ſi V. . nous fait com¬
+                <lb/>battre du moins, qu’elle nous faſſe ſçauoit
+                <lb/>contre qui, afin que nous vſions apres
+                <lb/>auantageuſement ſurlesvaincus du fait de
+                <lb/>nos victoires. Ne nous cxpoſe z pas contre
+                <lb/>nous meſmes &amp; contre nos alliez, puiſque
+                <lb/>nous ne reſpirons que leur conſeruation
+                <lb/>qui nous eſt auſſi chere que la noſtre:nous
+                <lb/>deuons à V. . quelque ſorte d’obeyſſan¬
+                <lb/>ce, mais de grace traite z nous mieux, puiſ¬
+                <lb/>que nousſç̧auons bien d’ou nous ſommes
+                <lb/>venus, voila mes ſentimens, madame, ap¬
+                <lb/>puyez de ceux de tous nos Generaux, &amp;
+                <lb/>de nos troupes, i’eſpere que V les peſera
+                <lb/>&amp; qu’elle y mettra l’ordre que tout l
+                <lb/>monde deſire.
+                <lb/>FIN.
+                <lb/>ata
+                <lb/> bblbtos
+                <lb/>ûncûen <pb n="29"/>
+                <lb/>l
+                <lb/>lid
+                <lb/>rr
+                <lb/>l
+                <lb/>ii
+                <lb/>d
+                <lb/>Aa
+                <lb/>¬
+                <lb/>eii
+                <lb/> ¬
+                <lb/>llll
+                <lb/>n
+                <lb/>a
+                <lb/>e
+                <lb/>s
+                <lb/>ae <pb n="30"/>
+                <lb/>ſi ie parle ſi hautement, puiſque c’eſt l’in¬
+                <lb/>tereſt public que i’embraſſe, &amp; qu’ilme
+                <lb/>dicte les ſentimens.
+                <lb/>Veuillez adame, ie vous en coniureau
+                <lb/>nom de toute noſtre armee, con ſidererce
+                <lb/>que vous faites; &amp; ſi V. M. nous fait com¬
+                <lb/>battre du moins, qu’elle nous faſſe ſçauoit
+                <lb/>contre qui, afin que nous vſions apres
+                <lb/>auantageuſement ſur lesvaincus du fait de
+                <lb/>nos victoires. Ne nous expoſe z pas contre
+                <lb/>nous meſmes &amp; contre nos alliez, puiſque
+                <lb/>nous ne reſpirons que leur conſeruation
+                <lb/>qui nous eſt auſſi chere que la noſtre:nous
+                <lb/>deuons à̀ V. m. quelque ſorte d’obeyſſan¬
+                <lb/>ce, mais de grace traite z nous mieux, puiſ¬
+                <lb/>que nousſçauons bien d’ou nous ſommes
+                <lb/>venus, voila mes ſentimens, Madame, ap¬
+                <lb/>puyez de ceux de tous nos Generaux, &amp;
+                <lb/>de nos troupes, i’eſpere que V. les peſera
+                <lb/>&amp; qu’elle y mettra l’ordre que tout l
+                <lb/>mond deſire.
+                <lb/>FIN. </p>
+        </body>
+    </text>
 </TEI>
