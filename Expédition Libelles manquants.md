@@ -14,6 +14,10 @@ Moreau2941	Qu'as-tu vu (le) de la cour, ou les Contre-vérités.
 
 Moreau4028	Vin (le) émétique, l'unique antidote et le dernier remède pour les maux dont la France est menacée par son plus grand ennemi, le cardinal Mazarin, révélé à un bon François, et proposé à tous les amateurs du bien public.
 
+Sans_ID Piece de carnaval, ou La description burlesque de la guerre.
+
+Sans_ID La Défense du pet, Pour le Galant du Carnaval.
+
 Moreau2768	Placard affiché dans les rues de Paris, le jour de Notre-Dame d'août 1650, contre le coadjuteur et M. de Beaufort.
 
 Moreau2769	Placard affiché le 1er avril 1649, et par lequel le prince de Conty et les généraux du Parlement déclarent qu'ils n'ont point d'autre intérêt que l'éloignement du cardinal Mazarin.
