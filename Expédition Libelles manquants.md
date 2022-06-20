@@ -1,9 +1,7 @@
 Expédition Libelles manquants
 
-La Custode de la reine
 
-Le véritable bandeau de Thémis ou la Justice bandée (?)
-
+Moreau44	Adieu (l’) du sieur Scarron faict au roy sur son départ pourl’Amérique
 
 Moreau1079	Dialogue de deux vignerons cheminant par la France, qui s’entretiennent de tout ce qui s'est fait et passé depuis la majorité du roi jusques à présent, avec une exacte recherche de tout ce qui s’est fait et passé en leur acheminement, et aussi leurs songes et rêveries de ce qui se passait en leur ménage pendant leur absence, dédié aux curieux de ce temps, par J. L. C. P. M.	1652	Paris
 
@@ -19,9 +17,6 @@ Moreau3677-ii	SVITE DV SOLDAT BORDELOIS, CONTENANT LES PARTICVLARITEZ DE CE qui 
 
 La_Bernade	Bernarde	1651	Dijon
 
-Lettre de Remerciement avec harangue de dame denise		
-
-Harangue d'Omer Talon 15 janvier 1648
-
+	
 Placards ??
 
