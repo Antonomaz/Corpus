@@ -21,5 +21,7 @@ La_Bernade	Bernarde	1651	Dijon
 
 Lettre de Remerciement avec harangue de dame denise		
 
+Harangue d'Omer Talon 15 janvier 1648
+
 Placards ??
 
