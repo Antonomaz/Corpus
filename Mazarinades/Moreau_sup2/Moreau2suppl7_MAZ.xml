@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2suppl7_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2suppl7_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -41,13 +42,12 @@
             <measure unit="page" quantity="10"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49350</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49350" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49350"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12478</idno>
@@ -79,8 +79,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Texte paru à la fin de 1650 d'après Hubert Carrier (Bibliothèque
+        <p source="Mazarine">Texte paru à la fin de 1650 d'après Hubert Carrier (Bibliothèque
           Mazarine, Ms 4682-1, f. 84v).</p>
+        <p source="Moreau">7. L'Aristaque d’état. S. J, 1650. Paris, Jeun Brunet (ad calcem); 10
+          pages. . Sérieuse mais mauvaise apolugie du cardinal Mararin. L'auteur préiend que le
+          pupe, en dopnant à Mazario la mission de Câsal, le quar Vifa du titre de comte. « Aussi
+          a-toil partagé son concage (de César) aussi bies que son Bom, avec selle dilférence
+          toutefois d'avoir partagé avec lay (ous les avantages de son cau- Tage, eù ne lui avoir
+          laissé en apanage que le surgom de Cèsar, que tnt de lasches empereurs ant depuis
+          deshonoré, el qui ue marchera jamsis de pair avec celny de cardémal qu'il a marié à Jules
+          Mazari.r. &gt;</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,8 +105,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L'ARISTARQVE
         <lb/>D’ESTAT.
         <lb/>M. DC. L.<pb n="10"/>

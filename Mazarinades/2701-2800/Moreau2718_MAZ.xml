@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2718_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2718_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -54,13 +55,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49068</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49068" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49068"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11747</idno>
@@ -92,10 +92,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition, repérée par H. Carrier (Bibliothèque Mazarine, Ms
+        <p source="Mazarine">Autre édition, repérée par H. Carrier (Bibliothèque Mazarine, Ms
           4682-4, f. 175v), avec "le nombre des morts" à la place de " le neveu du cardinal Mazarin
           blessé, &amp; autres" au titre. Par Jacques Le Gentil d'après Hubert Carrier (Bibliothèque
           Mazarine, Ms 4682-4, f. 175v). Texte paru début juin 1652 d'après H.Carrier.</p>
+        <p source="Moreau">2718. Particularités (les) du second combat donné en tre l'armée de Son
+          Altesse Royale, commandée par messieurs le comte de Tavannes et le baron de Clin - champ,
+          et l'armée commandée par le maréchal de Turenne, devant la ville d'Etampes, le 29° mai
+          1652, avec la prise de leurs drapeaux, canons et bagages, et le neveu du cardinal Mazarin
+          blessé, et autres. Paris, Jacques Lè Gentil, 1652,8 pages. Mensonges, autant que les
+          Particularités du dernier combat, etc., et les Particularités du grand combat, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -116,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES
         <lb/>PARTICVLARITEZ
         <lb/>DV SECOND COMBAT

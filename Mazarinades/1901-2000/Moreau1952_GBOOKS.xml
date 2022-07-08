@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1952_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1952_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -47,7 +43,6 @@
           <persName role="received" ref="isni:0000000121209573">
             <forename>Louis</forename>
             <surname>Bourbon (De)</surname>
-            <name>Louis II</name>
           </persName>
           <title source="Moreau">Lettre de madame la princesse douairière de Condé envoyée au prince
             de Condé, son fils, sur les armes qu'il a prises injustement contre la France.</title>
@@ -62,13 +57,12 @@
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 311386</idno>
@@ -100,7 +94,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1952. Lettre de madame la princesse douairière de Condé envoyée au prince
+          de Condé, son fils, sur les armes qu'il a prises injustement contre la France. Paris, Jean
+          Musnier, jouxte la copie imprimée par Michel Mettayer, 1649,7 pages. La copie imprimée par
+          Michel Mettayer est intitulée : Remon trance faite par madame la princesse douairière de
+          Condé au prince de Condé, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,6 +108,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -124,8 +126,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>e.
         <lb/>¬ o
         <lb/>
@@ -139,8 +140,7 @@
         <lb/>de ei eleeaua
         <lb/> l e ee
         <lb/>Fee paeau
-        <lb rend="¬" break="no"/>e nas l os
-        <pb n="2"/>
+        <lb rend="¬" break="no"/>e nas l os <pb n="2"/>
         <lb/>N
         <lb/>1 3
         <lb/>3
@@ -201,8 +201,7 @@
         <lb/>
         <lb/> ’.A1.
         <lb/> oomo, Gooſt
-        <lb/>e¬
-        <pb n="3"/>
+        <lb/>e¬ <pb n="3"/>
         <lb/>9
         <lb/>e8lee
         <lb/>T Er¬ r D E T L
@@ -234,8 +233,7 @@
         <lb rend="¬" break="no"/>ſcçauez qu’eſtant ſortie de cette Iluſtretige,i ay vnei
         <lb rend="¬" break="no"/>clination partieuliere pour Paris, laquelle m’eſtant cõ
         <lb rend="¬" break="no"/>mnt ſtsla naiſſance lene ſçaurpis perdre, que lors
-        <lb/>A
-        <pb n="4"/>
+        <lb/>A <pb n="4"/>
         <lb/> ¬,
         <lb/>e
         <lb/> 3
@@ -267,8 +265,7 @@
         <lb/>mais les hommes, &amp; la terre ne peut rapporter de bon
         <lb/>fruitſi ellen’eſt cultiuée par ſes habirans. Ainſi donc au
         <lb/>lieu de ſupporter cette Couonne dont vouseſts lepre
-        <lb rend="¬" break="no"/> miez
-        <pb n="5"/>
+        <lb rend="¬" break="no"/> miez <pb n="5"/>
         <lb/>5
         <lb/> mier &amp; le plus ſerme appuy, vous ſeruez à̀ la deſtrui
         <lb rend="¬" break="no"/>re: Que pourr dire le Roy dans ſa mairité? ſinon
@@ -301,8 +298,7 @@
         <lb/>voudrez vous exeuſer, mais ilſera trop tard, la diuine
         <lb/>-
         <lb rend="¬" break="no"/> B
-        <lb/>s
-        <pb n="6"/>
+        <lb/>s <pb n="6"/>
         <lb/> Maie ſte ſera irrtit́e, la balanee de ſa Iuſtice aua pan
         <lb rend="¬" break="no"/>ooſ
         <lb/>ch́ du coſté de vos fautes, &amp; l’Arreſt ſouuerain de
@@ -332,8 +328,7 @@
         <lb/>de vos illuſttes ayeuls ne ſoient point troublez par
         <lb/>des faits inouys, &amp; n’ayent point ſuiet de vous repro
         <lb rend="¬" break="no"/>cher que vous auez mal vſé de la valeur dont ils vous
-        <lb/> auoient laiſſé heritier: Croyez-vous que ces ames
-        <pb n="7"/>
+        <lb/> auoient laiſſé heritier: Croyez-vous que ces ames <pb n="7"/>
         <lb/> bien-heureuſes ne voyent pas que vous en abuſes
         <lb/>non non aſſurez vous qu’ils portent impatiemment
         <lb/>auſſi bien que moy le mal que vous faites indigne

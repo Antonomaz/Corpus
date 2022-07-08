@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau211_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau211_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -47,13 +48,12 @@
             <measure unit="page" quantity="3"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49848</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49848" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49848"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14410</idno>
@@ -85,7 +85,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mention de la signification aux communautés des vendeurs contrôleurs,
+        <p source="Mazarine">Mention de la signification aux communautés des vendeurs contrôleurs,
           des courtiers et des jaugeurs le 15 octobre 1648. 3 états : p. 1, l. 26 "l'année [ ]593"
           (état A) / "l'année 1593" (B et C) ; p. 3, l. 8 "trente sols" (A et C) / "tente sols" (B),
           p. 3, avec mention de signification (A et B) / sans mention de signification mais
@@ -93,6 +93,12 @@
           différent (BM00936). Titre de départ. Signé "Guyet". Arrêt daté du 14 octobre 1648.
           D'après Hubert Carrier, texte paru le 16 octobre 1648 (Bibliothèque Mazarine, Ms. 4682-1,
           f. 112v).</p>
+        <p source="Moreau">211. Arrêt de la cour de parlement, portant défenses, aux vendeurs
+          contrôleurs de vins, de recevoir et prendre plus grands droits que les deux tiers de ce
+          dont ils jouissent à présent. Sans Lieu, veuve J. Guillemot, 1648, 4 pages. xF 14 octobre
+          1648. L’arrêt est suivi de l’acte de signification aux communautés des vendeurs
+          contrôleurs, des courtiers et des jaugeurs. C’est encore une autre édition de la pièce qui
+          précède.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -111,8 +117,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST DE LA COR DE PARLEMENT
         <lb/>Portant deffences aux Vendeurs, Controolleurs de
         <lb/>Vins, de receuoir &amp; prende plus grands droicts qu
@@ -216,8 +221,7 @@
         <lb/>pe ’lpimeie de l dvi i EoT s
         <lb/> des Marmouets, deuant la petite Porte de
         <lb/>l’Egliſe Sainte Magdeleine,
-        <lb/>M. DC. XLVIII.
-      </p>
+        <lb/>M. DC. XLVIII. </p>
     </body>
   </text>
 </TEI>

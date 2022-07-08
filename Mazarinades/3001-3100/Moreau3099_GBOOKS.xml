@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3099_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3099_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -52,11 +48,11 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309437</idno>
@@ -88,9 +84,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Autre(s) variante(s) du titre : Nouvelle. 1652. Notes : Détails du
-          siège de Saintes. Moreau 3099.</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Autre(s) variante(s) du titre : Nouvelle. 1652. Notes : Détails du siège
+          de Saintes. Moreau 3099.</p>
+        <p source="Moreau">3099. Relation contenant les particularités de tout ce qui s'est passé
+          entre l'armée de M. le prince deCondé et celle du comte d'Harcourt. Paris, Antoine Clé
+          ment, 1652,7 pages. Détails du siège de Saintes par Duplessis Bellière et Montau-
+          sier.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,6 +99,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -114,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>DET HVY N T
         <lb/>N
         <lb/>
@@ -132,8 +135,7 @@
         <lb/>a ,,,,,,-r -,,,,,,.,,,a
         <lb rend="¬" break="no"/>M. DC LII.
         <lb/>Aues Permißon
-        <lb/>¬
-        <pb n="2"/>
+        <lb/>¬ <pb n="2"/>
         <lb/> ?
         <lb/>.
         <lb/>
@@ -167,8 +169,7 @@
         <lb/>nous a fort eſtonnez, mais ayant appris que la
         <lb/>pluſpart des Officiers qui eſtoient dedans la
         <lb/>place ſout ou bleſez ou malades, des fatigues
-        <lb/>,,, ,,,,a, ¬ ¬rr, ¬ -aaa-aa,an¬,
-        <pb n="4"/>
+        <lb/>,,, ,,,,a, ¬ ¬rr, ¬ -aaa-aa,an¬, <pb n="4"/>
         <lb/>4
         <lb/>qu’ils ont enduré. Monſieur le Prince les ou
         <lb rend="¬" break="no"/>-Lloit faire priſonniers de guerre, pour priuer le
@@ -198,8 +199,7 @@
         <lb/>
         <lb rend="¬" break="no"/>
         <lb rend="¬" break="no"/> par
-        <lb/>¬4
-        <pb n="5"/>
+        <lb/>¬4 <pb n="5"/>
         <lb/>5
         <lb/>pa les Gardes: où le ſiear de Genlis faiſant
         <lb/>voirſes ſoins &amp; ſa dijligence, receut vne mouſ
@@ -226,8 +226,7 @@
         <lb/>dans le jardin des Peres de la miſſion, ſe trouua
         <lb/>n eat: mais ledit ſiteur du Pleſſis ne ouluts
         <lb/>pi qelle tirat que oelle qu’il auqit fait faire
-        <lb/>E
-        <pb n="6"/>
+        <lb/>E <pb n="6"/>
         <lb/>entre les deux attaques ne fuſt auſſi acheuée,
         <lb/>afin d’emporter en meſme temps tous les dehors
         <lb/>de la place.
@@ -252,8 +251,7 @@
         <lb rend="¬" break="no"/>ſonniers.
         <lb/>Les aſſiegeans y ont auſſi perdu lesſiéurs de
         <lb/>Bois Guillaumé commandant Noirmonſtiet,
-        <lb/>Anſillon Lieutenant en ce Regiment, le ſiei
-        <pb n="7"/>
+        <lb/>Anſillon Lieutenant en ce Regiment, le ſiei <pb n="7"/>
         <lb/>d’Oriual Euſcigne de la Mſtre de camp’de
         <lb/>Poictou bleſſez à mort: &amp; eu les ſieurs de la
         <lb/>Rabeliere, de Bruc, &amp; de Barſillon Capi

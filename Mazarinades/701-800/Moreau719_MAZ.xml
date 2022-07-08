@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau719_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau719_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -41,13 +42,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50257</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50257" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50257"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10742</idno>
@@ -79,8 +79,10 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabe. D'après Célestin Moreau, texte paru pendant la
+        <p source="Mazarine">En vers octosyllabe. D'après Célestin Moreau, texte paru pendant la
           tenue du camp de Villejuif, en mars 1649</p>
+        <p source="Moreau">719. Commerce (le) rétabli, en vers burlesques. Paris, Nicolas de la
+          Vigne, 1649, 8 pages. Pendant la tenue du camp de Villejuif.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,8 +99,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>COMMERCE
         <lb/> RESTABLY.
@@ -108,7 +109,8 @@
         <lb/>Chez NCOLAS DE LA VIGNE,
         <lb/>prés Sainct Hilaire.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>AVEC PERMISSION</imprimatur>.<pb n="10"/>
+        <lb/>
+        <imprimatur>AVEC PERMISSION</imprimatur>.<pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>
@@ -179,8 +181,7 @@
         <l>
           <lb/>I’iray d’vne main animée</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/> .</l>
         <l>

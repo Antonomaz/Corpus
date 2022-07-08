@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2263_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2263_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -26,23 +27,24 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14700"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Lettres de deux amis, sur la prise de la Bastille.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-01-18">18 janvier 1649</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-12</note>
-          <note type="BM_identifier" cert="high">BM49389</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49389" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49389"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11473</idno>
@@ -74,10 +76,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Également publié dans le recueil éditorial "Recueil de diverses pieces
+        <p source="Mazarine">Également publié dans le recueil éditorial "Recueil de diverses pieces
           qui ont paru durant les mouvemens derniers de l'année 1649." (BM000059) D'après Hubert
           Carrier, texte est paru à partir du 18 janvier 1649 suivant la date des deux lettres, 17
           janvier 1649 (Bibliothèque Mazarine, Ms 4682-3, f. 302v).</p>
+        <p source="Moreau">2263. Lettres de deux amis sur la prise de la Bastille, . Sans Lieu,
+          1649, 8 pages. Datées toutes deux du 17 janvier. - La Bastille fut rendue après quatre ou
+          cinq coups de canon tirés contre le pont-levis ; mais, disait-on, par l'ordre de la cour.
+          Por tail, conseiller au Parlement, voulait disputer, l'épée à la main, à Lefèvre, autre
+          conseiller, l'honneur d'y entrer le premier, à la tête de sa compagnie. Le duc d'Elbeuf
+          les fit entrer ensemble avec lui.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -95,8 +103,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRES
         <lb/>DE DEVX AMIS
         <lb/>Sur la priſe de la Baſtille. <figure type="decoration"/>

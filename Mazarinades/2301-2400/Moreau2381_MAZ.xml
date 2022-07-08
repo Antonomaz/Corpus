@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2381_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2381_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,19 +37,20 @@
           <title source="Mazarine">Manifeste de monsieur le duc de Bouillon à la Reyne
             regente.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49082</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49082" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49082"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13483</idno>
@@ -80,8 +82,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Fausse déclaration qui n'a jamais été prononcée par le duc de Bouillon.
+        <p source="Mazarine">Fausse déclaration qui n'a jamais été prononcée par le duc de Bouillon.
           Daté de 1649, d'après Célestin Moreau.</p>
+        <p source="Moreau">2381 .. Manifeste de monsieur le duc de Bouillon à la reine régente. (S.
+          l. n. d.), 12 pages. Rare. Le duc de Bouillon demande que le roi lui rende Sédan. Si c'est
+          de la Fronde, c'est de 1649.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,13 +104,11 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>MANIFESTE
         <lb/>DE MONSIEVR LE DVC
         <lb/>DE BOVILLON
-        <lb/>A LA REYNE REGENTE. <pb n="10"/>
-        <pb n="11"/>
+        <lb/>A LA REYNE REGENTE. <pb n="10"/><pb n="11"/>
         <lb/>3
         <lb/>MANIFESTE DE MONSIEVR
         <lb/>le Duc de Boüillon.

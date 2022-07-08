@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3947_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3947_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -50,13 +51,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49216</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49216" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49216"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14050</idno>
@@ -88,13 +88,18 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions : Bordeaux, Guillaume de La Court, "juxte la coppie
+        <p source="Mazarine">Autres éditions : Bordeaux, Guillaume de La Court, "juxte la coppie
           imprimée à Paris", 8 p. in-4 (Labadie, n° 342) ; Bordeaux, P. du Coq, 8 p, in-4, d'après
           Tamizey, de Larroque dans "Recueil du grand séminaire", n° 16, p. 114 (papiers Hubert
           Carrier, Bibliothèque Mazarine, Ms. 4682-5, f. 377 v). Attribué par erreur à Claude Du
           Bosc de Montandré par Célestin Moreau, d'après Hubert Carrier, "La Presse de la Fronde
           (1648-1653): les Mazarinades", II, Genève, 1991, p. 55. Texte paru le 21 février 1652
           d'après H. Carrier.</p>
+        <p source="Moreau">3947. Véritable (la) relation de ce qui s'est passé entre les habitants
+          de la ville d'Angers et les troupes du cardinal Mazarin , conduites par le maréchal d'Hoc-
+          quincourt, d'Angers les 14 et 17 février 1652. Paris, veuve J. Guillemot, 1652, 8 pages.
+          Par ordre de Son Altesse royale. C'est donc un récit de la Fronde. Dubosc Montandré. Voir
+          la Seconde relation, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -113,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA VERITABLE
         <lb/>RELATION
         <lb/>DE CE QVI SEST PASSE
@@ -126,7 +130,8 @@
         <lb/>A PARIS,
         <lb/>DE L'IMPRIMERIE de la Veufue I. GVILLEMOT, ruë
         <lb/>des Marmouuerss proche l’Egliſe de la Magdelaone.
-        <lb/><imprimatur>Par ordre de ſon Alteſſe Royale</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Par ordre de ſon Alteſſe Royale</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>LA VERITABLE RELATION
         <lb/>de ce qui s’eſt paſſe entre les Habitans de la Vile

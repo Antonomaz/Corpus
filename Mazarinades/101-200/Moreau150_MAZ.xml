@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau150_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau150_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -39,20 +40,21 @@
             recouvrement d'icelles : avec reglement sur ce sujet, au soulagement des subjets du
             Roy.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1648">1648</date>
           <date source="Antonomaz" when="1648-12-15">daté du 15 décembre 1648</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49768</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49768" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49768"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14257</idno>
@@ -84,10 +86,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Édition différente de celle décrite par Célestin Moreau (Paris :
+        <p source="Mazarine">Édition différente de celle décrite par Célestin Moreau (Paris :
           Rocolet). Autre édition repérée par Hubert Carrier à l'adresse des imprimeurs et libraires
           ordinaires du roi et publiée avec privilège (Bibliothèque Mazarine, Ms.4682-1, f. 85v).
           Daté du 15 décembre 1648.</p>
+        <p source="Moreau">150. Arrêt de la cour des Aydes, sur la requête du procureur général du
+          roi, portant qu'il sera informé des abus commis au fait et exécution des contraintes
+          solidaires des tailles et taxes des huissiers et secrgents, employés au recouvrement
+          d'icelles, avec réglement, sur ce sujet, au soulagement des sujets du roi. Paris, Pierre
+          Rocollet, 1648, 8 pages. Du 15 décembre 1648.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST DE
         <lb/>LA COVR DES AYDES
         <lb/>Sur la Requeſte du Procureur General du Roy.

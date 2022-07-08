@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1921_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1921_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -49,13 +50,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49401</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49401" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49401"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° A 11519-74</idno>
@@ -87,7 +87,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Page 5, l. 2 "accident", fin l. 9 "il n'est rien de", début l. 11 "veut
+        <p source="Mazarine">Page 5, l. 2 "accident", fin l. 9 "il n'est rien de", début l. 11 "veut
           que S. Pierre" ; p. 7, début l. 15 "me des Lions rugissans". Le texte se termine par la
           signature "B. D.". - Deux autres éditions : p. 5, l. 2 "accident", fin l. 9 "il n'est rien
           plus", début l. 11 "que Sainct Pierre" ; p. 7, début l. 15 "me des Lions rougissans". Le
@@ -96,6 +96,13 @@
           rugissans". Le texte se termine par un post-scriptum "Amy lecteur, je vous advertis..."
           (BM00539). Signé "B. D.", attribué à Cyrano de Bergerac. Texte paru la 3e semaine de
           février 1649 d'après Hubert Carrier (Bibliothèque Mazarine, Ms 4682-3, f. 186v).</p>
+        <p source="Moreau">1921. Lettre de consolation envoyée à madame de Châ tillon sur la mort de
+          monsieur de Châtillon. Paris, Jean Brunet, 1649, 8 pages. Signé B. D. « P. S. Le sieur B.
+          D. prévient l'ami lecteur que le Gazetier désin téressé sera une pièce de remarque pour le
+          temps présent. » En serait-il l'auteur ?c'est assez probable.Je n'y vois aucune
+          difficulté, si ce n'est que le Gazetier désintéressé est signé D. B., et mon B. D. Au
+          moins est-il certain que le sieur B. D. est auteur de la Lettre de consolation envoyée à
+          madame la duchesse de Rohan, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -113,8 +120,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="15"/>
+      <p><pb n="15"/>
         <lb/>LETTRE DE
         <lb/>CONSOLATION
         <lb/>ENVOYEE
@@ -123,13 +129,11 @@
         <lb/>CHASTILLON.
         <lb/>SVR LA MORT DE
         <lb/>MONSIEVR DE
-        <lb/>CHASTILLON
-        <figure type="decoration"/>
+        <lb/>CHASTILLON <figure type="decoration"/>
         <lb/>A PARIS,
         <lb/>Chez IEAN BRVNET, ruë Neuve S. Louys
         <lb/>au Canon Royal, prés le Palais.
-        <lb/>M. DC. XLIX.
-        <pb n="16"/>
+        <lb/>M. DC. XLIX. <pb n="16"/>
         <pb n="17"/>
         <lb/>l A
         <lb/>11
@@ -511,8 +515,7 @@
         <lb/> yoſte tes-hunbler;i&amp;
         <lb/>2 ledte ul q earrnrs oaiantauideaup’
         <lb/> a nldeii ol:LCo’upeido
-        <lb/>l,
-      </p>
+        <lb/>l, </p>
     </body>
   </text>
 </TEI>

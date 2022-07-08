@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2666_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2666_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,13 +49,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49158</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49158" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49158"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13550</idno>
@@ -86,10 +86,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Sous forme de lettre adressée à César Chappelain, seigneur de
+        <p source="Mazarine">Sous forme de lettre adressée à César Chappelain, seigneur de
           Palleteau. Également publié dans le recueil éditorial "Recueil de diverses pieces qui ont
           paru durant les mouvemens derniers de l'année 1649." (BM000059). Signée Bonair ("L. S. D.
           B." = Le Sieur De Bonair). Lettre datée à Paris le 29 janvier 1649.</p>
+        <p source="Moreau">2666. Panégyrique pour monseigneur le duc de Beau fort, adressé à M. de
+          Palleteau par L. S. D. B. (le sieur de Bonair). Paris, Pierre Du Pont, 1649,8 pages. Daté
+          du 29 janvier, et signé Bonair. M. de Palleteau s'appelait Chappelain. Il était conseiller
+          secré taire du roi, intendant de la maison du duc de Vendôme.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,8 +111,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>PANEGIRIOVE
         <lb/>POVR MONSEIGNEVR
         <lb/>LE DVC DE
@@ -121,7 +124,8 @@
         <lb/>Chez PIERRE DV PONT, au Mont Sainct Hilaire
         <lb/>ruë d'Eſcoſſe.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Permißion</imprimatur>.<pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Permißion</imprimatur>.<pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1431_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1431_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -26,7 +27,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14639"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">La France irritee contre ses tyrans.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
           <publisher ref="isni:0000000108959687">
@@ -48,13 +49,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48887</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48887" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48887"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10968</idno>
@@ -86,9 +86,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes, l'"Oracle au Parlement" et les deux madrigaux à
+        <p source="Mazarine">En vers octosyllabes, l'"Oracle au Parlement" et les deux madrigaux à
           Broussel en alexandrins. Texte paru durant le blocus de Paris d'après Hubert Carrier
           (Bibliothèque Mazarie, Ms 4682-2, f. 370v).</p>
+        <p source="Moreau">1431. France (la) irritée contre ses tyrans. Paris, veuve Théod. Pépingué
+          et Est. Maucroy, 1649, 7 pages. Ce pamphlet est suivi d’un Oracle au Parlement, et de deux
+          madrigaux à Broussel.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA
         <lb/>FRANCE
         <lb/>IRRITEE
@@ -119,7 +121,8 @@
         <lb/>MAVCROY, ruë de la Harpe, vis a vis
         <lb/>la ruë des Mathurins.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Permiſſion</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Permiſſion</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>LA
@@ -236,8 +239,7 @@
         <l>
           <lb/>A ſuccombé ſous les miſeres.</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>L. VA.</l>
         <l>
@@ -247,8 +249,7 @@
         <l>
           <lb/>I</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>.</l>
         <l>

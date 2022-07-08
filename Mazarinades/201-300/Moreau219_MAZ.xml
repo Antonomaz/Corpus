@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau219_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau219_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -34,20 +35,21 @@
             pour le payement des gens de guerre. Du neufiéme jour de janvier, mil six cens
             quarante-neuf.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Antonomaz" when="1649-01-09">9 janvier 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49890</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49890" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49890"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14425-1</idno>
@@ -79,10 +81,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">3 autres éditions à Paris la même année avec une composition
+        <p source="Mazarine">3 autres éditions à Paris la même année avec une composition
           typographique différente (BM00985, BM00986 et BM00988). A aussi été publié dans le recueil
           éditorial intitulé "Recueil de diverses pieces qui ont paru durant les mouvemens derniers
           de l'année 1649." (BM00059). Signé "Du Tillet".</p>
+        <p source="Moreau">219. Arrêt de la cour de parlement, concernant la levée des deniers pour
+          le payement des gens de guerre, du 9 janvier 1649. Paris, par les imprimeurs et libraires
+          ordinaires du roi, 1649, 4 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,8 +105,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>Arreſt de la Cour
         <lb/>DE PARLEMENT.
         <lb/>CONCERNANT LA LEVEE DE
@@ -112,7 +116,8 @@
         <lb/>A PARIS,
         <lb/>Par les lmprimeurs &amp; Libraires ordinai¬
         <lb/>res du Roy.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>EXTRAICT DES
         <lb/>REGISTRES

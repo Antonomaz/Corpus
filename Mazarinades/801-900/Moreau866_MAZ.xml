@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau866_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau866_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -50,7 +51,9 @@
             les rétablissant en leurs privileges, pour faire triompher le party Mazarin avec plus de
             succez.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-03-23" notAfter="1652-03-26">paru à partir du 23
             mars 1652 et condamné le 26 mars 1652</date>
@@ -58,13 +61,12 @@
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49983</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49983" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49983"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15199</idno>
@@ -96,7 +98,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Pièce condamnée par l'arrêt du 26 mars 1652 (Dubuisson, II, 189). Deux
+        <p source="Mazarine">Pièce condamnée par l'arrêt du 26 mars 1652 (Dubuisson, II, 189). Deux
           états de la p. de titre : "La decadence visible de la roauté" (A) / "La decadence visible
           de la royauté" (B). Autre édition avec composition typographique différente publiée la
           même année avec pour titre "La decadence visible de la royauté, ..." et p. 16 imprimée sur
@@ -106,6 +108,20 @@
           Hubert Carrier, "La presse de la Fronde (1648-1653) : les mazarinades", II, Genève, 1991,
           p. 53. D'après H. Carrier, texte paru à partir du 23 mars 1652 (Bibliothèque Mazarine, Ms.
           4682-3, f. 141v).</p>
+        <p source="Moreau">866. Décadence (la) visible de la royauté, reconnue par cinq marques
+          infaillibles: 4. par.le peu d’autorité que ceux qui sont intéressés à la soutenir ont
+          auprès de Sa Majesté ; Z. par le peu de respect que les peuples ont pour tout ce qui vient
+          de la part du roi; 3. par l’usage des fourbes que le conseil fait pratiquer à Sa Majesté,
+          pour abuser de la simplicité des peuples ; k. par la facilité des entreprises auxquelles
+          on porte Sa Majesté, sans les concerter comme 1l faut pour les faire réussir à son honneur
+          ; 5. et par le secours que le conseil lui fait emprunter des huguenots, en les réta-
+          blissant dans leurs privilèges, pour faire triompher le parti Mazarin avec plus de succès.
+          Sans Lieu, 1652, 16 pag. Dubosc Montandré affirme ici des faits que je ne garantirais pas.
+          « Les Cévennes, dit-il, ont déjà levé le masque ; le Bas-Languedoc est tout embrâsé par
+          les incendiaires qui arment ouvertement et par ordre de Sa Majesté; les commissaires
+          huguenots rétablissent le prêche dans le Dauphiné, comme 1l y étoit avant l’édit de
+          Nantes. » Il a été répondu précisément à ces assertions dans la Chute de la tyrannie ,
+          etc. ' Mailly cite la Décadence visible de la royauté, p. 65de son V* vol.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -126,8 +142,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA
         <lb/>DECADENCE
         <lb/>VISIBLE

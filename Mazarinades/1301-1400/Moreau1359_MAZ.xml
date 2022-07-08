@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1359_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1359_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,13 +43,12 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50016</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50016" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50016"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10127</idno>
@@ -80,9 +80,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Armand d'Artois (Bibliothèque Mazarine, 8° 40523-21/3 [Res], p.
+        <p source="Mazarine">D'après Armand d'Artois (Bibliothèque Mazarine, 8° 40523-21/3 [Res], p.
           4-5), repris dans la mazarinade intitulée "Gazette enrhumée. Pour resjouir plusieurs
           esprits estropiez &amp; melancoliques." (BM01106).</p>
+        <p source="Moreau">1359. Facétieuse (la) défaite d’un boulanger par le gé- néral Herspel
+          Rhusma. Paris, veuve Musnier, 1649, T pages. Cette pièce , médiocrement plaisante, n’est
+          cependant pas tout à fait dénuée d’intérêt. On y voit comment se traitait un rhume au
+          XvIr® siècle. « J’ai appris que le général Rhusma et le colonel Brouillard furent joindre
+          l’infant Apoplexie, qui ont fait la guerre à M. de Bouil- lon, et en trente heures l’ont
+          expédié. » Il ne paraît par aucun autre écrit du temps que le bruit de la mort de M. de
+          Bouillon ait été répandu à cette époque.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA FACESIEVCE
         <lb/>DEFFAICTE D'VN
         <lb/>BOVLANGER

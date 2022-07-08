@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1283_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1283_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,7 +37,9 @@
           <title source="Mazarine">L'esprit de la verité representant nuëment la puissance &amp; l
             authorité du Roy. Dedié à son Altesse Royale.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-07-01" notAfter="1652-07-10">début juillet
             1652</date>
@@ -44,13 +47,12 @@
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50270</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50270" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50270"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12879</idno>
@@ -82,12 +84,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Attribué à Claude Du Bosc de Montandré par Célestin Moreau, mais à M.
+        <p source="Mazarine">Attribué à Claude Du Bosc de Montandré par Célestin Moreau, mais à M.
           B. I.V. D. R. D. L. P. P. T., pamphlétaire dévoué au Coadjuteur et à Gaston d'Orléans, par
           Hubert Carrier ("La Presse de la Fronde (1648-1653) : les Mazarinades", t. 2, Genève,
           1991, p. 56 ; Bibliothèque Mazarine, Ms. 4682-2, f. 302r et Ms. 4676, fiche M 556 T-15).
           Texte paru début août 1652, d'après H. Carrier (Bibliothèque Mazarine, Ms. 4682-2, f.
           301v).</p>
+        <p source="Moreau">1283. Esprit (l') de la vérité représentant nuement la puissance et
+          l’autorité du roi, dédié à Son Altesse Royale. Paris, 1652, 16 pages. Dulbrose Montandré.
+          Sa conclusion est que le peuple peut détré- ner le roi qui n’a pas les qualités
+          nécessaires pour gouverner; mais c’est Dieu qui ôte ou dénie ces qualités; en sorte que le
+          peuple n’est que son instrument.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L'ESPRIT
         <lb/>DE LA
         <lb/>VERIÉ

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1937_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1937_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -33,19 +34,20 @@
           <title source="Mazarine">Lettre de la cour du parlement de Tholose, a la reyne regente,
             sur le sujet du trouble d'Aix &amp; de Bourdeaux.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49263</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49263" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49263"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15436-51</idno>
@@ -77,7 +79,10 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">L'édition toulousaine (Moreau, n° 1937) est de 1649. </p>
+        <p source="Mazarine">L'édition toulousaine (Moreau, n° 1937) est de 1649. </p>
+        <p source="Moreau">1937. Lettre de la cour de Parlement de Tholose (sic) à la reine régente
+          sur le sujet du trouble d'Aix et de Bordeaux. Tholose, Jean Boude, 1649, 7 pages. Il y en
+          a une édition de Paris, jouxte la copie, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -96,8 +101,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>LETTRE
         <lb/>DE LA COVR
         <lb/>DV PARLEMENT
@@ -109,7 +113,8 @@
         <lb/>Iouxte la copie imprimee aà Tholoſe par Iean
         <lb/>Boude, Imprimeur ordinaire du Roy.
         <lb/>M. DC. XLX.
-        <lb/><imprimatur>Auec Permiſſion</imprimatur>. <pb n="8"/>
+        <lb/>
+        <imprimatur>Auec Permiſſion</imprimatur>. <pb n="8"/>
         <pb n="9"/>
         <lb/>A1
         <lb/> 8 ¬0

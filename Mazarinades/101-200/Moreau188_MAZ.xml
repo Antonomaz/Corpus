@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau188_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau188_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -46,13 +47,12 @@
             <measure unit="page" quantity="3"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49818</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49818" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49818"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14246</idno>
@@ -84,13 +84,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mention de publication de l'arrêt dans la ville le 16 février signée
+        <p source="Mazarine">Mention de publication de l'arrêt dans la ville le 16 février signée
           "Mazeran". Autres éditions en 4 p. : "A Bordeaux, par J. Mongiron Millanges, imprimeur
           ordinaire du Roy, 1651" avec le titre "Arrest de la cour de parlement de Bourdeaux,
           portant que le cardinal Mazarin, ses parents &amp; domestiques estrangers videront le
           royaume de France, autrement permis aux communes de leur courir sus" (Labadie, n° 86) ;
           "Paris, jouxte la copie imprimée à Bordeaux." (indiquée par Célestin Moreau mais non
           repérée). Titre de départ. Signé "Suau". Acte daté du 15 février 1651.</p>
+        <p source="Moreau">188. Arrêt de la cour de parlement de Bordeaux contre le cardinal Mazarin
+          , portant qu’il videra le royaume dans huitaine. Paris, Guill. Sassier, Sans Date, 3
+          pages. Daté du 15 février 1651. Il y en a une autre édition de 4 pages, Paris, jouxte la
+          copie imprimée à Bordeaux.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,8 +111,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR DE
         <lb/>Parlement de Bordeaux,

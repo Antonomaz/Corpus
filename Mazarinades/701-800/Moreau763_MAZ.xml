@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau763_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau763_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -44,7 +45,9 @@
             Roy, &amp; tirant en suitte plusieurs consequences, au grand desavantage de cet
             Estat.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" notBefore="1650-01-01" notAfter="1650-01-07">première semaine de
             1650</date>
@@ -52,13 +55,12 @@
             <measure unit="page" quantity="32"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48991</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48991" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48991"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12674</idno>
@@ -90,10 +92,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Titre suivi de la citation latine "Legite Sapientes, vestro enim sale
+        <p source="Mazarine">Titre suivi de la citation latine "Legite Sapientes, vestro enim sale
           conditur hoc embamma. Sal. de Pro. l.1.". Par Claude Du Bosc de Montandré, d'après Moreau.
           Texte paru la première semaine de 1650 d'après Hubert Carrier (Bibliothèque Mazarine, Ms
           4682-2, f. 80v).</p>
+        <p source="Moreau">763. Conseiller (le) d'État sans fourbe, raisonnant sur le choix du
+          Hâvre-de-Grâce pour la détention des princes, et concluant qu’il ne butte qu'à la ruine de
+          l’autorité de Son Altesse Royale, au rétablissement de la tyrannie de Mazarin et à la
+          perte plus assurée de ces illustres , et sur le voyage de Mazarin sans la compagnie du
+          roi, - et tirant ensuite plusieurs conséquences au grand dés- avantage de cet État. Legite
+          sapientes; vestro enim sale conditur hoc embamma. Sau., Prov., 1,1. (S. 1.), 1650, 32
+          pages. Une des pièces de Dubosc Montandré.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -114,8 +123,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>CONSEILLER
         <lb/>D'ESTAT

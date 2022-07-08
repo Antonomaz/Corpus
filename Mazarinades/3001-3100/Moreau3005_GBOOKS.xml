@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3005_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3005_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -40,10 +36,10 @@
         <bibl>
           <ref target="https://books.google.fr/books?id=VVeqaXVvbLYC&amp;hl=fr"/>
           <author/>
-          <title source="Mazarine">Le recit veritable de ce qui s'est passé à l'entrée de Mademoiselle
-            dans la ville d'Orleans le 27 mars. 1652. Avec la resolution qui a esté prise touchant
-            l'arrivée du Garde des Sceaux &amp; du Conseil, envoyez par le Roy dans ladite ville.
-            Donné au public par le commandement de son Altesse Royale.</title>
+          <title source="Mazarine">Le recit veritable de ce qui s'est passé à l'entrée de
+            Mademoiselle dans la ville d'Orleans le 27 mars. 1652. Avec la resolution qui a esté
+            prise touchant l'arrivée du Garde des Sceaux &amp; du Conseil, envoyez par le Roy dans
+            ladite ville. Donné au public par le commandement de son Altesse Royale.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
           <publisher ref="isni:0000000359773502">
             <persName>
@@ -56,13 +52,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM01133</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM01133" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50031"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309448</idno>
@@ -94,10 +89,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Hubert Carrier, texte paru fin mars 1652 (Bibliothèque
+        <p source="Mazarine">D'après Hubert Carrier, texte paru fin mars 1652 (Bibliothèque
           Mazarine, Ms. 4682-5, f. 22v).</p>
-        <p source="BMLyon_notes">Autre(s) variante(s) du titre : Nouvelle. 1652. Recueil
-          factice.</p>
+        <p source="BM_Lyon">Autre(s) variante(s) du titre : Nouvelle. 1652. Recueil factice.</p>
+        <p source="Moreau">3005. Récit (le) véritable de ce qui s'est passé à l'entrée de
+          Mademoiselle dans la ville d'Orléans le 27 mars 1652 , avec la résolution qui a été prise
+          touchant l'arrivée du garde des sceaux et du conseil envoyé par le roi dans ladite ville,
+          donné au public par le commandement de Son Altesse Royale. Paris, veuve Jean Guillemot,
+          1652, 7 pages. Très-rare.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,6 +105,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -121,8 +124,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>3o8
         <lb/>I D T
         <lb rend="¬" break="no"/>1 H
@@ -142,8 +144,7 @@
         <lb/>A PARIS,
         <lb/>De’lanmum de lavaufue lcvuaor rue des
         <lb/>Aamouets, proche ’Egliſe de la Magdeleine.
-        <lb/>M. DC. LI
-        <pb n="2"/>
+        <lb/>M. DC. LI <pb n="2"/>
         <lb/> i
         <lb/>.
         <lb/>Al
@@ -173,8 +174,7 @@
         <lb/>e eé laae
         <lb/>tE’p
         <lb/>I..
-        <lb/>oaa, Google
-        <pb n="3"/>
+        <lb/>oaa, Google <pb n="3"/>
         <lb/>3
         <lb/> r ea
         <lb rend="¬" break="no"/>I ECIT VERITABLE
@@ -198,8 +198,7 @@
         <lb rend="¬" break="no"/>ielenerelei deieneiee
         <lb rend="¬" break="no"/> dleurs bouns itentionen aneconjncoreſ u
         <lb rend="¬" break="no"/> n
-        <lb/>A ij
-        <pb n="4"/>
+        <lb/>A ij <pb n="4"/>
         <lb/>portante luy ſont agreables; &amp; parce que ce ſeroit
         <lb/>mal reconnoiſtre vne action ſi genereuſe que de la
         <lb/>taire aux gens de bien, qui ne ſouhaitent rien tant
@@ -228,8 +227,7 @@
         <lb/>ndours; ou qu’en tout easle pis qiduy ppbti
         <lb rend="¬" break="no"/>uerleroit d’oſtre arreſtée; ce qu elleſupotêroitp
         <lb/>ciemment, yallant du bien del’Eſtat, &amp; duſetulaede
-        <lb/> lon
-        <pb n="5"/>
+        <lb/> lon <pb n="5"/>
         <lb/>25
         <lb/>onilueſe Royalle; ’aduils de-cette Pinceſſe fut
         <lb/>cauant plus confiré par çeux qui eſtoient au prés
@@ -259,8 +257,7 @@
         <lb/>que le Bourgedis eſtant venu en foulle pour mena
         <lb rend="¬" break="no"/>cer l’Aembĺ, onyiuoirareſté dei epointrece
         <lb rend="¬" break="no"/>i la Cout, &amp; que’ilplaidoià &amp;onrAlaeſſe Royle
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/>6
         <lb/>d’auoit vn nomene de patlenee, o oquuirboiſaus
         <lb/>doure r porre Mais ee poſte luyſemblauooo peu
@@ -289,8 +286,7 @@
         <lb/> ao’e haiouot ponitue l’ehbariouioſeo
         <lb/>lsen euuſe derapproehesde la Couu ne lee
         <lb/>peſeiſoſi ouayſua deaenaae poirn
-        <lb/> aouuleauobou’ ſailnem Mai lele i
-        <pb n="7"/>
+        <lb/> aouuleauobou’ ſailnem Mai lele i <pb n="7"/>
         <lb/>eûeeontrainte de ceder au zele du peuple qui l’auoir
         <lb/>aiuarer de la ſorte: Et apres auoir entendu les Ha
         <lb rend="¬" break="no"/>anges &amp; receu les viſites de l’Eueſque, &amp; de vo

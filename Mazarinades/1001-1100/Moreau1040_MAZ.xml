@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1040_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1040_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -38,20 +39,21 @@
             Apres les grandes rigueurs avec lesquelles on l'a traité. Envoyées a tous les
             peuples.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" when="1651-10-15">mi-octobre 1651</date>
           <extent>
             <measure unit="page" quantity="20"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50220</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50220" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50220"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13119</idno>
@@ -83,7 +85,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Deux états de la page chiffrée "20" (A /B) : l. 4 "&amp; oster" /
+        <p source="Mazarine">Deux états de la page chiffrée "20" (A /B) : l. 4 "&amp; oster" /
           "&amp; l'oster" ; l. 10 "raisonnablemēt" / "raisonnablement" ; l. 16 "attachez" /
           "attachees" ; l. 18 "stez, dans les sentiments contraires, que par le seul / "stez, pour
           subsister l'éclat de leur fortune, au mi-" ; l. 19 "dessein de faire subsister l'éclat de
@@ -93,6 +95,10 @@
           Fronde (1648-1653) : les Mazarinades", Genève, t. 2, 1991, p. 54. Publié à la mi-octobre
           1651, d'après H. Carrier, "La Presse de la Fronde (1648-1653) : les Mazarinades", Genève,
           t.1, 1989, p. 131.</p>
+        <p source="Moreau">1040. Dernières (les) résolutions de monseigneur le Prince, après les
+          grandes rigueurs avec lesquelles on l’a traité, envoyées à tous les peuples. (S. 1.),
+          1651, 20 pages. C'est le prince qui parle. Ses dernières résolutions sont de chas- ser les
+          partisans de Mazarin d’auprès du roi. Cela n’est pas neuf ; mais le pamphlet est rare.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -112,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES DERNIEES
         <lb/>RESOLVTIONS
         <lb/>DE

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau514_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau514_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -50,13 +51,12 @@
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49407</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49407" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49407"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10678</idno>
@@ -88,10 +88,23 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers alexandrins. Autres éditions repérées par Armand d'Artois
+        <p source="Mazarine">En vers alexandrins. Autres éditions repérées par Armand d'Artois
           (Bibliothèque Mazarine, 8° 40523-21/1 [Res], p. 158-159) : Rouen, Robert Daré, 16 p. ; sur
           l'imprimé à Paris, chez Denis L'Anglois, 1649, 8 p. Texte parus après le 20 fevrier 1649
           d'après Hubert Carrier (Bibliothèque Mazarine Ms 4682-1, f. 259v).</p>
+        <p source="Moreau">514. Avis (les) héroïques et importants, donnés à M. le prince de Condé
+          par monsieur de Châtillon, revenu de l’autre monde, par l'auteur même des Triolets. Pa-
+          ris, Denys Langlois, 1649, 12 pages. On lit, au bas de la 12° page, un Avis particulier de
+          l’auteur à M. le Prince. Je ne veux pas manquer l’occasion, qui m’est donnée ici , de
+          noter que, dans un très-grand nombre de pièces, on engage le roi, les princes ou le
+          parlement à venger la mort du roi d’Angleterre. Il existe une édition de Rouen, chez
+          Robert Daré , sur l’im- primé à Paris, 1649, 16 pages. Elle contient aussi l’Avertissement
+          Jait par M. de Châtillon, revenu des Champs-Élysées, à M. le prince de Condé, à
+          Saint-Germain-en-Laye. Les Triolets, dont il est parlé dans ce titre, sont les Triolets du
+          prince de Condé; mais l'auteur n’en reste pas moins inconnu. Les Avis héroïques ont été
+          réimprimés sous le titre de POmbre de M. de Châtillon, etc. C’est apparemment le même
+          pamphilet que les Avertissements héroïques de M. de Chätillon à M. le prince de Condé, qui
+          sont cités par Naudé, p. 285 du Muscurat.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES ADVIS
         <lb/>HEROIQVES
         <lb/>ET IMPORTANTS
@@ -234,8 +246,7 @@
         <l>
           <lb/>Tu te ſers de la vie à luy donner la mort,</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>Bien loin de luy ſeruir de fils &amp; de ſupport.</l>
         <l>
@@ -584,8 +595,7 @@
         <l>
           <lb/>Que tu deurois armer des gens &amp; des vaiſſeaux;.</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <pb n="19"/>
         <l>
           <lb/>n1i</l>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1880_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1880_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -41,7 +37,7 @@
           <ref target="https://books.google.fr/books?id=mEJKAAAAcAAJ&amp;hl=fr"/>
           <author>
             <persName>
-              <name>P.D.L.</name>
+              <addName type="initiales">P. D. L.</addName>
             </persName>
           </author>
           <title source="Moreau">Lettre d'un gentilhomme suédois, envoyée à un seigneur polonois,
@@ -59,13 +55,12 @@
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Vienne</settlement>
+            <settlement ref="geonames:2761369">Vienne</settlement>
             <institution>Bibliothèque nationale d'Autriche</institution>
             <repository/>
             <idno type="cote">127361-B ALT MAG</idno>
@@ -97,7 +92,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1880. Lettre d'un gentilhomme suédois, envoyée à un seigneur polonois,
+          touchant l'état présent des affaires de France, avec le catalogue de tous les écrits qui
+          ont été imprimés et publiés depuis le 6 janvier 1649(jour de l'enlèvement du roi hors de
+          la ville de Paris), jus qu'à ce jourd'huy, 1° mars. Paris, Pierre Du Pont, 1649, 8 pages.
+          Le catalogue contient 297 pièces. Il y a une Seconde lettre datée du 20 mars, avec un
+          catalogue de 186 pièces, publiées depuis le 1°. Ces deux lettres sont intéressantes et
+          curieuses par les catalogues; mais elles ne sont pas rares. La Lettre du sieur Lafleur,
+          etc., en est un utile complément.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,6 +109,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -121,13 +127,11 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>1
         <lb/>¬l
         <lb/>l
-        <lb rend="¬" break="no"/>1
-        <pb n="2"/>
+        <lb rend="¬" break="no"/>1 <pb n="2"/>
         <lb/>
         <lb/>a eeaes ee
         <lb/>Z g p a Vp q4
@@ -172,8 +176,7 @@
         <lb rend="¬" break="no"/>’bon Ahs. D.L.
         <lb/> ’.
         <lb rend="¬" break="no"/>A Paris cez. Marsu4s
-        <lb/>l115
-        <pb n="3"/>
+        <lb/>l115 <pb n="3"/>
         <lb/>3
         <lb/>earaLoGs rors s ESe ro r
         <lb/>eſté imprimez &amp; publiez depuis le 6. anoier 1649. iour de l’enleemsent d
@@ -220,8 +223,7 @@
         <lb/>La Complainte des Pauures à la Reyne.
         <lb/>Apparition du Marquis d’Ancre à Iules Mazarin
         <lb/>La Parabole du temps. Aende honorabls de Iules aazaln.
-        <lb/>A ij
-        <pb n="4"/>
+        <lb/>A ij <pb n="4"/>
         <lb/>Prediction de Noftradamus touchant la cheute de Mazarin.
         <lb/>Satyre de aa arin à Monfieur de Beaufort.
         <lb/>Lettres de Mazarin à l’Archiduc Leopold.
@@ -269,8 +271,7 @@
         <lb/>Les Viſfions nocturnes de Mathurin Queſtie.
         <lb/>La miſerable cheute du Miniſtre etrange.
         <lb/>
-        <lb rend="¬" break="no"/>le
-        <pb n="5"/>
+        <lb rend="¬" break="no"/>le <pb n="5"/>
         <lb/>V ¬ L ¬ Vg s
         <lb rend="¬" break="no"/>Le Regne ſans fauory, ou Abregé de la vie de Henry le Grand.
         <lb/>a Monarchie affliǵe. Lettre d’vne Religieuſe à la Reyne.
@@ -319,8 +320,7 @@
         <lb/>Les Triollet d temps. Arreſt de oy.
         <lb/>e onura de manage du Parlement auee la ille de Paris.
         <lb/>efidele dome ique aMonſieur le Due d’Orſeans.
-        <lb/>Angare .. ile à la Ville de Paris.
-        <pb n="6"/>
+        <lb/>Angare .. ile à la Ville de Paris. <pb n="6"/>
         <lb/>6
         <lb/>Le CroteſqueCareſne-prenant de Iules Maxarin, dialogue.
         <lb/>le remercicment des Bourgeois à Meſſieurs du Parlement.
@@ -373,8 +373,7 @@
         <lb/>Les genereux ſentimens des bons François preſentez à la Reyne parvn deſes.
         <lb/>La prſe de Charenton. Le Triomphe des armes Parjienne5.
         <lb/>Requeſte preſenté́e au Conſeil priue du noy par les Bourgeois de Paris, aue
-        <lb/>vnic ettre au Cardinal Mazarin. Les oys ſans oy.
-        <pb n="7"/>
+        <lb/>vnic ettre au Cardinal Mazarin. Les oys ſans oy. <pb n="7"/>
         <lb/>¬ . ,. --T
         <lb/>La fin tragique des Partiſans. Le Cheualier Chreſtien,
         <lb/>Lettre d’vn Secretaire de ſainct Innocent à Inlles Mazarin.
@@ -430,8 +429,7 @@
         <lb/>..
         <lb/>
         <lb rend="¬" break="no"/> 4
-        <lb/>2 y
-        <pb n="8"/>
+        <lb/>2 y <pb n="8"/>
         <lb/>i
         <lb/>Diſconrs tenus entre les trois Figures du Poat aa Change.
         <lb/>Remonſtrances de la eyne d’Angleterre à la eyne de rrance.

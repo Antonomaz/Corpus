@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="M15436-3_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="M15436-3_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -46,13 +47,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49257</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49257" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49257"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15436-3</idno>
@@ -84,7 +84,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Contresignée "De Guenegaud". Lettre datée de Saint-Germain-en-Laye le 2
+        <p source="Mazarine">Contresignée "De Guenegaud". Lettre datée de Saint-Germain-en-Laye le 2
           avril 1649.</p>
       </abstract>
       <textClass>
@@ -104,9 +104,8 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
-        <lb/>LETTRE 
+      <p><pb n="7"/>
+        <lb/>LETTRE
         <lb/>DV ROY,
         <lb/>ESCRITE A MONSEIGNEVR
         <lb/>LE MARQVIS
@@ -114,8 +113,7 @@
         <lb/>Gouuerneur d’Orleans, &amp;c.
         <lb/>Touchant les particularitez de la Paix
         <lb/>concluë &amp; arreſtée, &amp; la marche de
-        <lb/> l’Armeé́e de l’Archiduc Leopold.
-        <figure type="decoration"/>
+        <lb/> l’Armeé́e de l’Archiduc Leopold. <figure type="decoration"/>
         <lb/>A ORLEANS,
         <lb/>Par GILLES HOTOT, Imprimeur ordinaire du Roy.
         <lb/>de Monſeigneur le Gouuerneur &amp; de la Ville.
@@ -206,8 +204,7 @@
         <lb/> nulupſuul ueqa tsnousl
         <lb/> eel ſe ai ’es nun, Con lit det, ooamnan dt n
         <lb/>er es olr un u pos dcorlun, nlalui, drmi.
-        <lb/>Vendon ois &amp; Chartrain.
-      </p>
+        <lb/>Vendon ois &amp; Chartrain. </p>
     </body>
   </text>
 </TEI>

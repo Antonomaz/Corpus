@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau358_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau358_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -41,20 +42,21 @@
             arrest sera remis és mains de monsieur de Sainct Luc, lieutenant du Roy en la province
             de Guyenne, &amp; celuy du 23. octobre dernier.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Antonomaz" when="1651-11-25">daté du 25 novembre 1651</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49396</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49396" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49396"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14225</idno>
@@ -86,10 +88,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions repérées par Célestin Moreau et Armand d'Artois
+        <p source="Mazarine">Autres éditions repérées par Célestin Moreau et Armand d'Artois
           (Bibliothèque Mazarine, 8° 40523-21/1, p. 119) : Toulouse, imprimeurs et libraires
           ordinaires du Roi, sans date, 4 p. in-4 (Moreau, n° 358) ; Paris, Jacob Chevalier, 1652,
           6-[2 bl.] p. in-4 (BM00522).</p>
+        <p source="Moreau">358. Arrêt de la cour de parlement de Toulouse donné, toutes les chambres
+          assemblées, le 25 novembre 1651, déclarant le sieur Guyonnet , conseiller au parlement e
+          Bordeaux, criminel de lèse majesté; défense, à tous sujets, de le reconnaître ni payer les
+          tailles ni arrérages en conséquence de ses ordonnances, et que le présent arrêt sera remis
+          &amp;s-mains de M. de Saint-Luc, lieutenant du roi en la province de Guyenne, pour
+          exécuter tant le présent arrêt que celui du 23 actobre dernier. Tolose , par les.
+          imprimeurs et libraires ordinaires du roi, Sans Date, 4 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -108,8 +117,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT
@@ -126,7 +134,8 @@
         <lb/>A PARIS.
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires du Roy.
         <lb/>M. DC. LII.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſte</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſte</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

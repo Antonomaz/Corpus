@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau250_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau250_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -38,20 +39,21 @@
             contravention, qu'il sera procédé par droict de represailles. Du 22. février mil six
             cens quarante-neuf.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Antonomaz" when="1649-02-22">daté du 22 février 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49934</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49934" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49934"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14463</idno>
@@ -83,9 +85,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Contre l'arrêt du conseil daté du 15 février instaurant une taxe pour
+        <p source="Mazarine">Contre l'arrêt du conseil daté du 15 février instaurant une taxe pour
           les maisons de campagne des conseillers et officiers du Parlement (BM01032). Signé "Du
           Tillet".</p>
+        <p source="Moreau">250. Arrêt de la cour de parlement, portant qu’il sera fait recherche des
+          moyens d’avoir argent, pour l’arme- ment et subsistance des gens de guerre,, avec défense,
+          aux habitants, de payer aucunes tailles ni autres taxes ; et en cas de contravention ,
+          qu’il sera procédé par voie de représailles. Du 22 février 1649. Paris, par les
+          imprimeurset libraires ordinaires du roi, 1649, 4 pages. Il y avait un arrêt du conseil,
+          qui taxait les maisons de campa- gne des conseillers et officiers du parlement. L'arrêét
+          du 22 était donc déjà un acte de représailles. Voir les Taxes faites ès maisons sises aux
+          environs de Paris, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -108,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>Arreſt de la Cour
         <lb/>DE PARLEMENT,
         <lb/>PORTANT QVIL SERA FAIT
@@ -124,7 +133,8 @@
         <lb/>Par les Imprimeur, &amp; Libraires ordinaires
         <lb/>du Roy.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

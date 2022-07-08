@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2382_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2382_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,20 +36,21 @@
             motifs de la levée d'une armée pour le service du Roy, &amp; de Messieurs les
             Princes.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" when="1652-09">septembre 1652</date>
           <extent>
             <measure unit="page" quantity="15"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49081</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49081" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49081"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13482</idno>
@@ -80,8 +82,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Faux manifeste du duc de Guise. Texte paru en septembre 1652 d'après
+        <p source="Mazarine">Faux manifeste du duc de Guise. Texte paru en septembre 1652 d'après
           Hubert Carrier (Bibliothèque Mazarine, Ms 4682-4, f. 17v).</p>
+        <p source="Moreau">2382. Manifeste de monsieur le duc de Guyse, conte nant les véritables
+          motifs de la levée d'une armée pour le service du roi et de messieurs les princes. Sans
+          Lieu, 1652, 15 pages. Il diffère en trois points de celui qu'on a vu plus haut. Il est
+          supposé; il est sans intérêt; il est rare.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>MANIFESTE
         <lb/>DE MONSIEVR
         <lb/>LE DVC

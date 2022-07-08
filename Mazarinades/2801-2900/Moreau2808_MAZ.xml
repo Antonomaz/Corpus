@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2808_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2808_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -52,7 +53,9 @@
             &amp; sur les arrests des parlemens, &amp; par consequent on peut les resoudre avec
             moins de crainte d'injustice.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-03-14" notAfter="1652-03-21">troisième semaine de
             mars 1652</date>
@@ -60,13 +63,12 @@
             <measure unit="page" quantity="15"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49969</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49969" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49969"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14977-13</idno>
@@ -98,7 +100,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Du fait de sa violence, condamnée au feu par le parlement de Paris
+        <p source="Mazarine">Du fait de sa violence, condamnée au feu par le parlement de Paris
           ("Mazarinades : la fronde des mots" / Christian Jouhaud, Paris, 1985, p. 168). 2 états du
           cahier signé B : p. 5, l. 7/8 "laby-"/"rlnte" (A) /"laby"/"rinte" (B), l. 21 "nostro" (A)
           / "nostre" (B), l. 34 "voyẽs" (A) / "voyõs" (B) ; p. 7, l. 2 "nous ue serons" (A) / "nous
@@ -109,6 +111,22 @@
           presse de la Fronde (1648-1653) : les mazarinades", II, Genève, 1991, p. 53. Daté de 1652,
           d'après C. Moreau et plus précisément de la troisième semaine de mars 1652 selon H.
           Carrier (Bibliothèque Mazarine, Ms. 4682-4, f. 219v).</p>
+        <p source="Moreau">2808. Point (le) de l'ovale faisant voir que pour remé dier
+          promptementaux maladies de l'État pendant qu'el les ont encore quelque ressource, 1. il
+          faut renforcer un parti pour le faire triompher de haute lutte, parce que l'égalité feroit
+          tirer la guerre en des longueurs in supportables; 2. il faut renforcer le parti le plus
+          juste ou le seul juste; 3. le parti le plus juste ou le seul juste est celui qui appuie et
+          qui est appuyé des lois ; 4. après avoir reconnu le parti le plus juste, il faut le
+          renforcer par un soulèvement et par une émeute géné rale dans Paris; 5. ce soulèvement et
+          cette émeute générale sont appuyés sur les déclarations royales et sur les arrêts des
+          parlements; et par conséquent on peut les résoudre avec moins de crainte d'injustice. (S.
+          l., 1652), 15 pages. Dubosc Montandré. « En matière de soulèvement, on n'est coupable que
+          d'avoir eu trop de modération. » « Voyons que les grands ne sont grands que parce que nous
+          les portons sur nos épaules. Nous n'avons qu'à les secouer pour en joncher la terre. »
+          C'est l'épigraphe de Prudhomme : « Les grands ne nous parais sent grands que parce que
+          nous sommes à genoux. Levons-nous !» J'ai déjà dit que ce pamphlet avait été condamné au
+          feu par arrêt du Parlement en date du 27 mars 1652. M. de Sainte-Aulaire l'a donné dans
+          son Histoire de la Fronde, dernière pièce justificative.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -130,14 +148,12 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>POINT
         <lb/>DE
-<lb/>L’OVALLE
+        <lb/>L’OVALLE
         <lb/> Faîſant voir que pour remedier promptement
-      
         <lb/>aux maladies de l’Eſtat, pendant qu’elles
         <lb/>ont encor quelque reſource.
         <lb/>I. Il faut renforcer vn parey pour le faire triompher de
@@ -153,8 +169,7 @@
         <lb/>V. Ce ſouleuement &amp; cette eſmutte generalle ſont
         <lb/>apuyez ſur les Declarations Royalles &amp; ſur les Arreſts
         <lb/>des Parlemens. &amp; par conſequent on peut les reſoudre
-        <lb/>auec moins de crainte d’iniuſtice.
-         <pb n="10"/>
+        <lb/>auec moins de crainte d’iniuſtice. <pb n="10"/>
         <pb n="11"/>
         <lb/>LE POINT
         <lb/>DE
@@ -1073,8 +1088,7 @@
         <lb/>eſpeées au vent, tons, ſacageons, briſons ſacrifons à nofftre iuſte
         <lb/>vengeance tout ce qui ne ſe croiſera point, pour marquer le veri¬
         <lb/>table parti du Roy, &amp; de la ibert
-        <lb/>FIN.
-      </p>
+        <lb/>FIN. </p>
     </body>
   </text>
 </TEI>

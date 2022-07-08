@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau901_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau901_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -50,13 +51,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49807</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49807" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49807"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14400</idno>
@@ -88,10 +88,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Relatif à l'amnistie des Bordelais. Titre de départ. Signé
+        <p source="Mazarine">Relatif à l'amnistie des Bordelais. Titre de départ. Signé
           "Phelipeaux". Acte daté du 23 décembre 1649. D'après Hubert Carrier, texte paru la
           dernière semaine de décembre 1649 (Bibliothèque Mazarine, Ms. 4682-2, f. 156v) chez
           Guillaume Sassier (Ms. 4682-3, f. 264v).</p>
+        <p source="Moreau">901. Déclaration du roy. (S. 1., 1649), 7 pages. C’est une amnistie pour
+          les Bordelais. Elle est datée du 23 décem- bre 1649. On peut croire, d’après la note qui
+          se lit à la fin de la Zettre du roy (du 25 décembre ), qu’elle a été imprimée par
+          Guillaume Sassier.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>I.
         <lb/>DECLARATION
         <lb/>DV ROY.

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1120_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1120_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -45,13 +46,12 @@
             <measure unit="page" quantity="30"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49010</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49010" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49010"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14735</idno>
@@ -83,10 +83,19 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition publiée chez Sébastien Martin, 31 p. (BM00158) ; une
+        <p source="Mazarine">Autre édition publiée chez Sébastien Martin, 31 p. (BM00158) ; une
           édition "jouxte la copie imprimee à Paris chez Sébastien Martin", 28 p., une édition à
           Lyon chez Jean-Aymé Candy,31 p. (Moreau, 1er supplément, n° 100). Texte paru à la
           mi-juillet 1650 d'après Hubert Carrier (Bibliothèque Mazarine, Ms. 4682-2, f. 239v)</p>
+        <p source="Moreau">1120. Discours et considérations politiques et morales sur la prison des
+          princes de Condé, de Conty et duc de Longueville, par M. L. Paris, Sébastien Martin, 1650,
+          30 pages. C’est une paraphrasé, plus morale que politique, de la lettre du roi au
+          Parlement. L’auteur espère que le prince de Condé proti- tera chrétiennement de sa prison.
+          « Peut-être croyoit-il que le ciel n’étoit pas au-dessus de sa tête! » J’ai rencontré
+          trois autres pièces signées M. L.; ei toutes ont le caractère moral et la gravité
+          religicuse du Discours. Ce sont : 1. Le Bouclier et l’épée du Parlement, etc.; 2. La
+          Réponse ct réfutation du discours intitulé : Lettre d’Avis à messieurs du Parlement, etc.;
+          à. Lettre ou Exhortation d’un particulier au maréchal de Turenne, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,8 +115,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>DISCOVRS
         <lb/>ET
         <lb/>CONSIDERATIONS

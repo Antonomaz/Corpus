@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau232_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau232_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -38,20 +39,21 @@
             ladite cour, sur les peines y contenuës. Du vingt-cinquiéme janvier mil six cens
             quarente-neuf.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-01-27">27 janvier 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49901</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49901" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49901"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14444</idno>
@@ -83,10 +85,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Armand d'Artois, autre arrêt sur le même sujet daté du 29 mars
+        <p source="Mazarine">D'après Armand d'Artois, autre arrêt sur le même sujet daté du 29 mars
           1649, mais qui, selon Hubert Carrier, n'a jamais été publié (Bibliothèque Mazarine, Ms.
           4682-1, f. 117v ; Journal du Parlement, p. 414). Signé "Du Tillet". D'après H. Carrier,
           texte paru le 27 janvier 1649.</p>
+        <p source="Moreau">232. Arrèt de la cour de Parlement, portant défenses, à tous imprimeurs
+          et colporteurs, d’imprimer et exposer en vente aucuns ouvrages et autres écrits concernant
+          lesaffaires publiques, sans permission registrée augreffe de ladite cour, sur peines y
+          contenues. Du 25 jan- vier 1649. Paris, par les imprimeurs et libraires or- dinaires du
+          roi, 1649, 4 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,8 +111,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>Arreſt de la Cour
         <lb/>DE PARLEMENT.
         <lb/>PORTANT DEFENSES A TOVS
@@ -118,7 +124,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires
         <lb/>du Roy.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>.<pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>.<pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>EXTRAICT DES REGISTRES

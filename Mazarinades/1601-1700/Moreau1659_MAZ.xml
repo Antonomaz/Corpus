@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1659_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1659_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -41,13 +42,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50341</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50341" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50341"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11046</idno>
@@ -79,12 +79,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. D'après Hubert Carrier, évocation par l'auteur de
+        <p source="Mazarine">En vers octosyllabes. D'après Hubert Carrier, évocation par l'auteur de
           sa vie passée d'étudiant parisien au collège de Lisieux (Bibliothèque Mazarine, Ms. 4676,
           fiche M 560 bis). 2 états (A/B) p. 6, l. 1 : "t" / "Et". Identification de
           l'imprimeur-libraire d'après l'adresse par Célestin Moreau. D'après H. Carrier, texte paru
           mi-mars 1649 à la fin de la conférence de Rueil (Bibliothèque Mazarine, Ms. 4682-3, f.
           86v).</p>
+        <p source="Moreau">1659. Homme (l') indifférent, en vers burlesques. Pa ris, G. S.
+          (Guillaume Sassier), 1649, 8 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -108,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L'HOMME
         <lb/>INDIFFERENT,
         <lb/>EN VERS

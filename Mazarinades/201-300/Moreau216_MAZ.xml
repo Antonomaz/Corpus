@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau216_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau216_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,20 +36,21 @@
             assemblées le 6. jour de janvier 1649. Pour la seureté et police de la ville de
             Paris.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-01-07">7 janvier 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49857</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49857" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49857"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° 17646 B-2</idno>
@@ -80,7 +82,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mention de lecture et publication du 7 janvier 1649 signée "Jossier".
+        <p source="Mazarine">Mention de lecture et publication du 7 janvier 1649 signée "Jossier".
           Autres éditions : même date, même adresse avec des compositions typographiques différentes
           sous les titres "Arrest de la cour de Parlement, donné toutes les chambres assemblées le
           sixiéme jour de janvier mil six cens quarente-neuf. Pour la seureté &amp; police de la
@@ -91,6 +93,10 @@
           durant les mouvemens derniers de l'année 1649." (BM00059). Signé "Du Tillet". D'après
           Hubert Carrier, texte paru le 7 janvier 1649 (Bibliothèque Mazarine, Ms. 4682-1, f.
           113v).</p>
+        <p source="Moreau">216. Arrêt de la cour de parlement , donné , toutes les “ chambres
+          assemblées , le sixième jour de janvier 1649, pour la sûreté et police de la ville de
+          Paris. Paris, par les imprimeurs et libraires ordinaires du roi, 1649, 4 pages. Suivi de
+          la mention de publication.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,8 +115,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT
@@ -123,7 +128,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordinai¬
         <lb/>res du Roy.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau4004_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau4004_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -32,7 +33,9 @@
           <title source="Mazarine">La verité sans masque de la misere persecutee, ou La plainte des
             pauvres a la Reine, contre le cardinal Mazarin...</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-01-21" notAfter="1649-01-31">dernière semaine de
             janvier 1649</date>
@@ -40,13 +43,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49326</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49326" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49326"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12397</idno>
@@ -78,7 +80,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Édition composite, deux états de chaque cahier : état A1, p. 3, l. 5 "
+        <p source="Mazarine">Édition composite, deux états de chaque cahier : état A1, p. 3, l. 5 "
           villes sont desertes: Le commerce", p. 3, l. 22 "à vostre Majésté: il", p. 4, l. 32
           "connoissance" ; état A2, p. de titre, "missere", p. 3, l. 5 " villes sont desertes; Le
           commerce", p. 3, l. 22 "à vostre Majesté: il", p. 4, l. 32 "cognoissance" ; état B1, p. 5,
@@ -95,6 +97,9 @@
           suum, Ps. 68.". - Texte signé "la misere persecutee". Texte daté à Paris le 22 janvier
           1649, et paru la dernière semaine de janvier 1649, d'après Hubert Carrier (Bibliothèque
           Mazarine, Ms 4682-5, f. 392v).</p>
+        <p source="Moreau">4004. Vérité (la) sans masque de la misère persécutée, ou la Plainte des
+          pauvres à la reine contre le cardinal Mazarin. In puteo veritas; neque urgent puteus os
+          suum super me. Ps. jlxviii. (S. 1.), 1649, 8 pages. Datée du 22 janvier.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -111,19 +116,16 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
-        <lb/>LA VERITE 
+      <p><pb n="9"/>
+        <lb/>LA VERITE
         <lb/>SANS MASQVE
         <lb/>DE LA MISSERE PERSECVTEE.
         <lb/>OV LA PLAINTE
-       
         <lb/>DES PAVVRES
         <lb/>A LA REINE,
         <lb/>CONTRE LE CARDINAL
         <lb/>Mazarin.
         <lb/>In puteo veritas.
-       
         <lb/>MADAME.
         <lb/>C'eſt la miſere perſecutée, qui dans ſon dernier de¬
         <lb/>ſeſpoir implore voſtre clemence, pour trouuer quelque alege¬

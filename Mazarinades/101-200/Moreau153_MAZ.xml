@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau153_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau153_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,20 +36,21 @@
             general. Par lequel deffenses sont faites d'executer des pretendus mandemens donnez à
             Stenay, au prejudice des commissions des tailles, &amp; ordres du Roy.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" when="1650-02-06">6 février 1650</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49791</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49791" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49791"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14262</idno>
@@ -80,9 +82,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Titre de départ. Signé "Boucher". D'après Hubert Carrier, texte paru le
+        <p source="Mazarine">Titre de départ. Signé "Boucher". D'après Hubert Carrier, texte paru le
           6 février 1650 (Bibliothèque Mazarine, Ms. 4682-1, f. 89v.). Acte daté du 5 février
           1650.</p>
+        <p source="Moreau">153. Arrêt de la cour des Aydes, obtenu par monsieur le procureur général
+          par lequel défenses sont faites d'exécuter des prétendus mandements, donnés à Stenay au
+          préjudice des commissions des tailles et ordres du roi. ( S. l.), par les imprimeurs et
+          libraires ordinaires du roi, Sans Date, 4 pages. Du 5 février 1650.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="8"/>
+      <p><pb n="8"/>
         <lb/>I
         <lb/>ARREST DE LA COVR
         <lb/>des Aydes,
@@ -217,7 +222,8 @@
         <lb/>Secretaire du Roy, &amp; de ſes Finances.
         <lb/>Par les Inprimeurs &amp; Libraires
         <lb/>ordinaires du Roy.
-        <lb/><imprimatur>Auec Priuilege de ſa Maieſté</imprimatur>. </p>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Maieſté</imprimatur>. </p>
     </body>
   </text>
 </TEI>

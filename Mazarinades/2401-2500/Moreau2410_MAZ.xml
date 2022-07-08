@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2410_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2410_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -28,7 +29,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14916"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">La marche du duc de Loraine avec son armee. Et tout ce qui s'est
             fait &amp; passé dans les negociations de son Altesse royale &amp; du C. M. pres le duc
             de Loraine, sur ce sujet.</title>
@@ -46,13 +47,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49092</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49092" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49092"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13494</idno>
@@ -84,8 +84,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Texte paru dans les derniers jours de mai 1652 d'après Hubert Carrier
+        <p source="Mazarine">Texte paru dans les derniers jours de mai 1652 d'après Hubert Carrier
           (Bibliothèque Mazarine, Ms 4682-4, f. 30v-31). </p>
+        <p source="Moreau">2410. Marche (la) du duc de Lorraine, avec son armée, et tout ce qui
+          s'est fait et passé dans les négociations de Son Altesse Royale et du C. Mazarin près le
+          duc de Lorraine sur ce sujet. Paris, Jean Brunet, 1652, 8 pages. L'auteur dit que les
+          étrangers étaient tellement de mode en France, que les gentilshommes préféraient un More à
+          un Français pour les servir.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA
         <lb/>MARCHE
         <lb/>DV DVC
@@ -265,7 +269,8 @@
         <lb/>nombre, mais c’eſt que le changement &amp; la nou¬
         <lb/>ueauté nous plaiſt trop. Il n’y a pas iuſqu’aux Mo¬
         <lb/>res qui n’y ſoient bien receus, &amp; vn Gentil-homr e
-        <lb/>aſſez ſouuent preferera vn More à̀ vn François pour <pb n="16"/><gap/>
+        <lb/>aſſez ſouuent preferera vn More à̀ vn François pour <pb n="16"/>
+        <gap/>
       </p>
     </body>
   </text>

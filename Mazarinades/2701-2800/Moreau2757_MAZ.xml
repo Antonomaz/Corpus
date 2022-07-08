@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2757_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2757_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,7 +37,9 @@
           <title source="Mazarine">La piece curieuse, ou Les sentiments des grands de ce royaume,
             touchant la personne du Mazarin.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" notBefore="1650-11-01" notAfter="1650-11-15">première quinzaine de
             novembre 1650</date>
@@ -44,13 +47,12 @@
             <measure unit="page" quantity="24"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48992</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48992" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48992"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11761</idno>
@@ -82,10 +84,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Avant-propos au verso de la p. de titre Par Claude Du Bosc de
+        <p source="Mazarine">Avant-propos au verso de la p. de titre Par Claude Du Bosc de
           Montandré, d'après H. Carrier, "La Presse de la Fronde (1648-1653): les Mazarinades", II,
           Genève, 1991, p. 53. Texte paru dans la première quinzaine de novembre 1650 d'après H.
           Carrier (Bibliothèque Mazarine, Ms 4682-2, f. 185v).</p>
+        <p source="Moreau">2757. Pièce (la) curieuse, ou les Sentiments des grands de ce royaume
+          touchant la personne de Mazarin. (S. l., 1650), 24 pages. Depuis le roi jusqu'au
+          coadjuteur, jusqu'au corps des partisans, jusqu'à l'archiduc Léopold; et cependant ce
+          n'est encore là que la première partie, en attendant les autres. qui n'ont pas paru ?</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA
         <lb/>PIECE CVRIEVSE.
         <lb/>OV

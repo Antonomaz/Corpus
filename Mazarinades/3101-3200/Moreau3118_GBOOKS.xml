@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3118_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3118_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -54,11 +50,11 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4 227 mm</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309369</idno>
@@ -90,8 +86,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Recueil factice</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Recueil factice</p>
+        <p source="Moreau">3118. Relation de ce qui s'est passé à Péronne sur le refus que les
+          habitants ont fait de recevoir et d'ouvrir leurs portes au maréchal d'Hocquincourt, leur
+          gouver neur. Paris y Jean Brunet, 1652, 7 pages. Avant le siège d'Étampes ! Cela n'est pas
+          vrai. Péronne a fermé ses portes au maréchal quand il a pris le parti du prince de Condc ;
+          et alors c'est le marquis d'Hocquincourt, fils du maréchal, qui en était le
+          gouverneur.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,6 +102,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -115,8 +121,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>oogps
         <lb/>RELATION
         <lb/>E CE QVI SEST PASSE’
@@ -131,8 +136,7 @@
         <lb/>S4
         <lb/>A PARI S
         <lb/>a e nvlr ee!
-        <lb/> uu u vieili oaue le¬
-        <pb n="2"/>
+        <lb/> uu u vieili oaue le¬ <pb n="2"/>
         <lb/>,
         <lb/>1
         <lb/>
@@ -148,8 +152,7 @@
         <lb/>a.
         <lb/>E
         <lb/>3
-        <lb/>oioqe
-        <pb n="3"/>
+        <lb/>oioqe <pb n="3"/>
         <lb/>u&amp;&amp; e,&amp;t,,&amp;, l,
         <lb/>ede t
         <lb/>Relation veritable de ce qui
@@ -174,8 +177,7 @@
         <lb rend="¬" break="no"/>ſiours la place frontiere qui luy eſt proche, &amp;
         <lb/> ploye tous les artifices &amp; ſtraragémes, pour
         <lb/>taſcher à la ſurprendre.
-        <lb/>Sil ya des garniſons, il faut ſoigneuſement
-        <pb n="4"/>
+        <lb/>Sil ya des garniſons, il faut ſoigneuſement <pb n="4"/>
         <lb/>1
         <lb/>eſpier leurs actions voir auec quellesperſonnes,
         <lb/>ils s’entrtiennent, s’il ont quelque familiarité
@@ -206,8 +208,7 @@
         <lb/>Et du depuis ils ſe ſont touſiours maintenus
         <lb/>dans le ſeruice du Roy. Comme le Mrſchal
         <lb/>d’Hoquincourt en eſt Gouuérneur, &amp; aynt
-        <lb/>ſceu
-        <pb n="5"/>
+        <lb/>ſceu <pb n="5"/>
         <lb/>qil etoit de la faction Mazarine, ils ont telle
         <lb/>defance de luy, qu’ils n’ont point manqueé à
         <lb/>eiller ſurſes actions lots qu’il y a eſté.
@@ -237,8 +238,7 @@
         <lb/>tes &amp; de leurs remparts, &amp; ont nettement
         <lb/>thſe l’eatŕe de leur Vlle à ce Mareſchal, di
         <lb rend="¬" break="no"/>a quila la garderoient &amp; la deffendroient
-        <lb/> B
-        <pb n="6"/>
+        <lb/> B <pb n="6"/>
         <lb/>pour le Roy, comme ils ont touſiours fait iiſ
         <lb rend="¬" break="no"/>ques à preſent, ne pouuans s’oter de l’eſprit la
         <lb rend="¬" break="no"/>croyan e qu’ils ont que le Mareſchal d’Hoquin
@@ -267,8 +267,7 @@
         <lb rend="¬" break="no"/>louſe de ſa conſeruation, qu’elle ſe vante d’eſte
         <lb/>pucelle, ear quoy qu’elle ait eſté beaucoup de
         <lb/>fois aſſiegée, elle n’a neantmonsia ais eſteépni
-        <lb rend="¬" break="no"/>ſe, auſſi ne peut-elle endurer de Gouuerneur,
-        <pb n="7"/>
+        <lb rend="¬" break="no"/>ſe, auſſi ne peut-elle endurer de Gouuerneur, <pb n="7"/>
         <lb/>6
         <lb/>Elleae le connoiſt n’eſtre porté d’autre intereſt
         <lb/>qut de la garder contre les entrepriſes des en

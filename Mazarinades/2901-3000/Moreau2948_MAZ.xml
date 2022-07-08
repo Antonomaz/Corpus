@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2948_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2948_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -44,13 +45,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50271</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50271" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50271"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12068</idno>
@@ -82,11 +82,19 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Dialogue entre trois personnages (l'auteur, un Hollandais et un
+        <p source="Mazarine">Dialogue entre trois personnages (l'auteur, un Hollandais et un
           Suisse). Le texte du Hollandais et du Suisse imite le langage de personnes ne maîtrisant
           pas bien le français. Au verso de la p. de titre, avis au lecteur. D'après Hubert Carrier,
           texte paru la seconde quinzaine de mars 1649 (Bibliothèque Mazarine, Ms. 4682-4, f. 272v),
           juste après l'accord de Rueil (Bibliothèque Mazarine, Ms. 4676, fiche 573 D-10).</p>
+        <p source="Moreau">2948. Question cardinale plaisamment traitée ou das thicotée entre un
+          Hollandois et un Suisse, et décidée par un François. Paris, Pierre Du Pont , 1649, 8
+          pages. « Je confesserai ingénument qu'entre les plus agréables et plus ingénieux livrets
+          que l'on ait faits contre le cardinal, l'on peut mettre avec raison la Question
+          dasticotée, parce qu'elle est fort naïve en son patois et soutenue de pointes assez
+          gaillardes et de conceptions plus pressantes que celles de beaucoup d'autres, qui ne
+          médisent pas de si bonne grâce, quoiqu'avec plus de malice et à feu plus découvert. »
+          Mascurat, page 219.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -108,8 +116,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>QVESTION
         <lb/>CARDINALE
         <lb/>PLAISAMMENT

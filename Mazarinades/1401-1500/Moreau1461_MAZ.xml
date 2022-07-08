@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1461_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1461_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,13 +49,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50282</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50282" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50282"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10142</idno>
@@ -86,11 +86,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">À propos de l'assassinat de Jean Bourgeois le 26 août 1652, dont la
+        <p source="Mazarine">À propos de l'assassinat de Jean Bourgeois le 26 août 1652, dont la
           rumeur fit un crime rituel commis par des Juifs (Christian Jouhaud, Mazarinades : la
           Fronde des mots, Paris, 1985, p. 42-62). En vers octosyllabes. Épître dédicatoire de
           l'auteur "A messieurs de la Synagogue". D'après Hubert Carrier, texte paru à la
           mi-septembre 1652 (Bibliothèque Mazarine, Ms. 4682-2, f. 381v).</p>
+        <p source="Moreau">1461. Fureur (la) des juifs, dédié à messieurs de la Synagogue, en vers
+          burlesques, par Claude Veyras. Paris, Jacques Le Gentil, 1652, 7 pages. Voir le Récit natf
+          et véritable du cruel assassinat…. commis.…. Par la compagnie des fripiers de la
+          tonnellerie, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA
         <lb/>FVREVR
         <lb/>DES IVIFS.
@@ -120,8 +123,7 @@
         <lb/>PAR CLAVDE VEIRAS <figure type="decoration"/>
         <lb/>A PARIS,
         <lb/>Chez IACQVES LE GENTIL
-        <lb/>M. DC. LII.<pb n="10"/>
-        <pb n="11"/>
+        <lb/>M. DC. LII.<pb n="10"/><pb n="11"/>
         <lb/>T
         <lb/>LA HEVREV
         <lb/> TVE T E TNYE U
@@ -181,8 +183,7 @@
         <lb/>Voſtre, &amp;e. C. V. <l>
           <lb/>âaA Aû A A &amp; A,â.</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>’ 9 </l>
         <l>

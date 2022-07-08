@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1066_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1066_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -43,13 +44,12 @@
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50266</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50266" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50266"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10828</idno>
@@ -81,9 +81,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. 2 états (A/B) : p. 11, l. 22 "soy mettre" / "s'y
+        <p source="Mazarine">En vers octosyllabes. 2 états (A/B) : p. 11, l. 22 "soy mettre" / "s'y
           mettre". D'après Hubert Carrier, texte paru après la paix de Saint-Germain (Bibliothèque
           Mazarine, Ms. 4682-2, f. 216v).</p>
+        <p source="Moreau">1066. Deux (les) friperies, ou les Drilles revêtus, raillerie en vers
+          burlesques. Paris, Denys Langlois, 1649, 12 pages. Satire assez spirituelle , dirigée
+          principalement contre les cava- liers de portes cochères. J’y ai trouvé le mot
+          très-populaire de quibus, pour signifier de l’argent.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,8 +104,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES DEVX
         <lb/>FRIPPERIES
         <lb/>OV LES
@@ -134,8 +137,7 @@
         <l>
           <lb/>R e </l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>VS, Muſe, reprend ton chaudron,;</l>
         <l>

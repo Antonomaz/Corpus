@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau241_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau241_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,20 +37,21 @@
             entre tous particuliers &amp; communautez. Du quatriéme février mil six cens
             quarante-neuf.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-02-05">5 février 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49925</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49925" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49925"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14454</idno>
@@ -81,10 +83,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Fait suite à l'arrêt du Conseil qui déclare nuls tous contrats et
+        <p source="Mazarine">Fait suite à l'arrêt du Conseil qui déclare nuls tous contrats et
           obligations passés à Paris, daté de Saint-Germain-en-Laye le 5 janvier 1649. Signé
           "Radigues". D'après Hubert Carrier, texte paru le 5 février 1649 (Bibliothèque Mazarine,
           Ms. 4682-1, f. 120v).</p>
+        <p source="Moreau">241. Arrêt de la cour de parlement, pour la validité de tous contrats,
+          obligations et autres actes, faits et passés en cette ville de Paris entre tous
+          particuliers et com- munautés. Du 4 février 1649. Paris, par les impri- meurs et libraires
+          ordinaires du roi, 1649, 4 pages. C’est une riposte à un arrêt du conseil, qui déclarait
+          nul tous les actes passés à Paris depuis le 5 janvier. Je n’ai pas trouvé cet arrêt, qui
+          n'est pas même indiqué dans le Jourral du Parlement.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>Arreſt de la Cour
         <lb/>de Parlement.
         <lb/>POVR LA VALIDITÉ DE TOVS
@@ -115,7 +122,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires
         <lb/>du Roy.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>EXTRAICT DES REGISTRES

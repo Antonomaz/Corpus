@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2730_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2730_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,13 +49,12 @@
             <measure unit="page" quantity="11"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48882</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48882" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48882"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11750</idno>
@@ -86,7 +86,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">2 états : marque décorative différente sur la p. de titre, corbeille de
+        <p source="Mazarine">2 états : marque décorative différente sur la p. de titre, corbeille de
           fleurs à deux anses (état A) / corbeille de fleurs sans anse (état B) ; taille différente
           des caractères à l'adresse, de la lettre pour la signature du cahier C et de certaines
           capitales initiales de vers ; p. 8 l. 28, "Qu'aussi cela" / "Qu'aussicela". Autres
@@ -98,6 +98,12 @@
           "Un vent de fronde s'est levé ce matin : poésies diverses attribuées à Paul Scarron
           (1610-1660)", Paris, 2012, p. 33-44. Texte paru dans la 2e semaine de mars 1649 d'après H.
           Carrier.</p>
+        <p source="Moreau">2730. Passeport,(le) et l'adieu de Mazarin, en vers bur lesques. Paris,
+          Claude Huot, 1649, 11 pages. Assez spirituel pour être recherché, ce pamphlet est des plus
+          COIIlIIllIIlS. On en a réimprimé le commencement sous le titre de : Adieu de Mazarin. Il a
+          été reproduit en entier à la suite des Véritables soupirs fran çois sur le départ de Son
+          Eminence, etc.; et Sautreau de Marsy l'a donné dans son Nouveau siècle de Louis XIV, page
+          319 du I° vol., mais avec la fausse date de 1651.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -114,8 +120,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE PASSE PORT
         <lb/>ET
         <lb/>L'ADIEV
@@ -125,7 +130,8 @@
         <lb/>Chez CLAVDE HVOT, ruë ſaint Iacques,
         <lb/>proche les Iacobins, au pied de Biche.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>AVEC PERMISSION</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>AVEC PERMISSION</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>LE PASSE PORT, ET
@@ -504,8 +510,7 @@
         <l>
           <lb/>Reſpondez-moy Meſſieule! i.</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>Qui paſſez pour parant d’Iile:!</l>
         <l>
@@ -697,8 +702,7 @@
         <l>
           <lb/>.</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>1</l>
         <l>

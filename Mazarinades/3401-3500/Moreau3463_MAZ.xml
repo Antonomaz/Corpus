@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3463_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3463_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -46,13 +47,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50315</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50315" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50315"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11882</idno>
@@ -84,10 +84,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. 2 états (A/B) : p. 4, l. 1 "auecquer"/"auec".
+        <p source="Mazarine">En vers octosyllabes. 2 états (A/B) : p. 4, l. 1 "auecquer"/"auec".
           D'après Hubert Carrier, à partir de la p. 5 et jusqu'à la fin, texte repris par Claude
           Morlot dans "Ode royal [sic]..." (BM01411) (Bibliothèque Mazarine, Ms. 4682-5, f. 200v).
           D'après H. Carrier, texte paru en juin ou début juillet 1649.</p>
+        <p source="Moreau">3463. Requête à monseigneur le maréchal de Villeroy, gouverneur de la
+          personne du roi , touchant le re tardement de son retour dans sa bonne ville de Paris, en
+          vers burlesques. Paris, Jean du Crocq, 1649, 8 pages. « Cher favori de la prudence. » Ce
+          vers ne va-t-il pas bien au maréchal de Villeroy ?</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,8 +111,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>REQVESTE
         <lb/>A
         <lb/>MONSEIGNEVR

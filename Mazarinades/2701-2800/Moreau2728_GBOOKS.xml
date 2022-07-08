@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau2728_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2728_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -41,21 +37,21 @@
           <title source="Moreau">Passage de Jules Mazarin, avec le récit des plus belles pièces
             trouvées en son inventaire.</title>
           <pubPlace source="Moreau">Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau">Sans Date</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM00126</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM00126" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48977"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement/>
-            <institution>Bibliothèque municipale de Lyon (Bibliothèque jésuite des
-              Fontaines)</institution>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
             <repository/>
             <idno type="cote">SJ IF 247/174, 4</idno>
           </msIdentifier>
@@ -86,10 +82,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers, dont une partie en italien. Célestin Moreau a par erreur fait
+        <p source="Mazarine">En vers, dont une partie en italien. Célestin Moreau a par erreur fait
           de la seconde partie, "Passage de Jules Mazarin...", qui a sa propre p. de titre, une
           mazarinade à part entière (n° 2728). Texte paru en mars 1649, d'après Hubert Carrier
           (Bibliothèque Mazarine, Ms. 4682-5, f. 399 v.). </p>
+        <p source="Moreau">2728. Passage de Jules Mazarin, avec le récit des plus belles pièces
+          trouvées en son inventaire. (S. l. n. d.), - paginé de 11 à 14. Exécrables vers; en voici
+          un : « Tu aurois, un jour, regret de voir ta tête en ôtage. » Plusieurs pièces, dont une
+          en italien. Apparemment ces cayers faisaient partie de quelque recueil. Cependant on les
+          trouve séparés, puisqu'ils sont inscrits dans la Bibliothèque du P. Lelong, sous le n°
+          22,366.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,6 +100,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
     </profileDesc>

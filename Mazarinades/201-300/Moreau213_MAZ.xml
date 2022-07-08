@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau213_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau213_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -45,13 +46,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49851</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49851" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49851"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14411</idno>
@@ -83,12 +83,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions : par "les imprimeurs et libraires ordinaires du roi"
+        <p source="Mazarine">Autres éditions : par "les imprimeurs et libraires ordinaires du roi"
           avec des compositions typographiques distinctes (BM00945 et BM00946) ; sans p. de titre, 4
           p., in-4, où cet arrêt est suivi de "Arrest de la cour de Parlement, les chambres
           assemblées. Contre les jurez vendeurs de vins de cette ville de Paris.". Signé "Guyet".
           Arrêt daté du 14 octobre 1648. D'après Hubert Carrier, texte paru le 16 octobre 1648
           (Bibliothèque Mazarine, Ms. 4682-1, f. 112v).</p>
+        <p source="Moreau">213. Arrêt du parlement, donné toutes les chambres assemblées, pour le
+          rabais des entrées de vin. Paris, Alex. Lesselin, 1648, 4 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,13 +109,13 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR DE PARLEMENT.
         <lb/>donné toutes les Chambres aſſemblées
         <lb/>pour le rabais des Entrées du vin. <figure type="decoration"/>
-        <lb/><imprimatur>Imprimé aux deſpens d’vn Particulier</imprimatur>.
+        <lb/>
+        <imprimatur>Imprimé aux deſpens d’vn Particulier</imprimatur>.
         <lb/>A PARIS,
         <lb/>Chez ALEXANDRE LESSELIN , ruë de la vieile
         <lb/>bouclerie à la ville d’Amiens.

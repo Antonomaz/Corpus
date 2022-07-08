@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2252_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2252_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -9,15 +9,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -39,18 +35,19 @@
           <author/>
           <title source="Moreau">Lettre politique sur l'assemblée de la noblesse.</title>
           <pubPlace>Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1651">1651</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 310654</idno>
@@ -82,7 +79,9 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2252. Lettre politique sur l'assemblée de la noblesse. Sans Lieu, 1651, 7
+          pages. Signé l'Amy. Elle n'est pas sans mérite.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -91,6 +90,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -106,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>E ¬ ee
         <lb/>LETTRE POLITIQVE
         <lb/>
@@ -143,8 +144,7 @@
         <lb/>l8
         <lb/>,
         <lb/>
-        <lb/>8 1u1
-        <pb n="2"/>
+        <lb/>8 1u1 <pb n="2"/>
         <lb/>lieuë̈s d’icy. Et ce que l’on y voit de plus dangereux,
         <lb/>c’eſt qu’ils taſchent par toutes ſortes de moyens, de
         <lb/>corrompre le bon naturel du Roy, de luy donner de
@@ -174,8 +174,7 @@
         <lb/>par quelque biais que ce ſoit. Apres, comme il n’eſtoit
         <lb/>pas poſſible que Monſieur le Duc d’Orleans &amp; Meſ
         <lb rend="¬" break="no"/>ſieurs les Princes reconnuſſent aſſez tout ceux qui les
-        <lb/>ont ſeruys dans cette grande occaſion, &amp; que ceux leſ¬
-        <pb n="3"/>
+        <lb/>ont ſeruys dans cette grande occaſion, &amp; que ceux leſ¬ <pb n="3"/>
         <lb/>3
         <lb/>quels y auoient le moins agy demandoient les plus
         <lb/>grandes recopences, il eſt arriué que pluſieurs ſe ſont
@@ -206,8 +205,7 @@
         <lb rend="¬" break="no"/>pable de le faire revenir. Qu’ont-ils donc fait? Ce
         <lb/>qu’il a fait iuſques icy, a paſſé pour des effets de luſtice
         <lb/>&amp; de zele; mais que ſ’il entreptend trop, il ſe mettra
-        <lb/>tant d’Ennemis ſur les bras, qu’ils l’accableront: Et
-        <pb n="4"/>
+        <lb/>tant d’Ennemis ſur les bras, qu’ils l’accableront: Et <pb n="4"/>
         <lb/>du moins on aura raiſon de croire que ce n’a pas eſté
         <lb/>à tort qu’on l’a accuſé d’ambition &amp; d’attentat. Il de
         <lb rend="¬" break="no"/>uroir conſiderer apres tout, que la Nobleſſe ſe racom
@@ -239,8 +237,7 @@
         <lb rend="¬" break="no"/>ce qui l’a protegé, qui vient tout fraiſchement de
         <lb/>chaſſer le Mazarin, &amp; qui n’a que trop, ie dis que t
         <lb/> Ainſi
-        <lb/>deferé aux formalitez de la Iuſtice.
-        <pb n="5"/>
+        <lb/>deferé aux formalitez de la Iuſtice. <pb n="5"/>
         <lb/>3
         <lb/>Ainſi il y apparence que le Peuple, pour le moins de
         <lb rend="¬" break="no"/>meurera neutre;, &amp;alors la Nobleſſe ſera la plus forte. Mais
@@ -274,8 +271,7 @@
         <lb/>qui ſouſſeuoient les grandes Villes, la vouloient oſter, que
         <lb/>non pas de ce dernier mouuement, qui peut eſtre juſte, ou
         <lb/>qu’ils luyferont trouner tel, par leurs tres-humblesRemon
-        <lb rend="¬" break="no"/>b
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>b <pb n="6"/>
         <lb/>6
         <lb/>ſtrances. Nous attendons à Lundy, pourſçauoir ce que le
         <lb/>Parlement ordonnera là deſſus. Toute la Nobleſſe, &amp; meſ
@@ -308,8 +304,7 @@
         <lb/>vous dis rien autre choſe, ſimo que le temps nous fera voir
         <lb/>s’il eſt en effetanſſi deſintereſſé comme il le paroiſt.
         <lb/>Pour ruiner cettuy là, afin de complaire aux Mazarins.
-        <lb/>&amp; pour auoir ſuiet de ſe rendre de plus en plus conſiderable,
-        <pb n="7"/>
+        <lb/>&amp; pour auoir ſuiet de ſe rendre de plus en plus conſiderable, <pb n="7"/>
         <lb/>afin d’obtenir ce qu’il demande; il a- entrepris auec eeluy
         <lb/>dont le biſayeul coignoit ſur les pots d’eſtain, &amp; quelques
         <lb/>aures Mal-contens, de diuiſer le Parlement. En effet, ils
@@ -341,8 +336,7 @@
         <lb rend="¬" break="no"/>tre l’autre. Et il arriuera, peut eſtre, que l’vn des deux ſe rui
         <lb rend="¬" break="no"/>nera dans ce choc; &amp; en ce cas, ſa perte ſera bien toſt ſuiuie
         <lb/>de celle de l autre: au grand regret des bons François, &amp; à
-        <lb/>l’avantage des Tyranniſtes. En quatrieſme lieu, ils enga¬
-        <pb n="8"/>
+        <lb/>l’avantage des Tyranniſtes. En quatrieſme lieu, ils enga¬ <pb n="8"/>
         <lb/>8
         <lb/>gent le Parlementa des ſuittes tres-dangereuſes, &amp; dont le
         <lb/>moindre inconuenient eſt, d’eſtre eternellement l’objerde

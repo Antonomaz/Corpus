@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau189_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau189_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,7 +36,9 @@
             libelle diffamatoire intitulé, Le curé bourdelois, sera bruslé par la main du bourreau.
             Avec un advertissement au lecteur.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Antonomaz" notBefore="1651-03-16">exécution de l'arrêt le 16 mars
             1651</date>
@@ -43,13 +46,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49394</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49394" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49394"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14247</idno>
@@ -81,9 +83,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Arrêt daté du 10 mars 1651. Avertissement. - Mention de l'exécution de
+        <p source="Mazarine">Arrêt daté du 10 mars 1651. Avertissement. - Mention de l'exécution de
           l'arrêt le 16 mars 1651 signée "Suau". Édition originale : Bordeaux, Jean Mongiron
           Millanges, 1651, 6 p. (Labadie, n° 87). Signé "Suau".</p>
+        <p source="Moreau">189. Arrêt de la cour de parlement de Bordeaux, portant que le libelle
+          diffamatoire, intitulé: le Curé bordelois , sera brûlé par la main du bourreau, avec un
+          avertissement au lecteur. Paris, jouxte la copie imprimée à Bordeaux par J. M. Millanges,
+          7 pages. Daté du 10 mars 1651.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,8 +106,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT

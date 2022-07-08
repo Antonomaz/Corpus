@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau2870_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2870_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -42,17 +38,19 @@
           <title source="Moreau">Prise (la) de Charenton par les troupes du roi, commandées par Son
             Altesse Royale, où huit régi ments de Paris ont été entièrement défaits.</title>
           <pubPlace ref="geonames:2979783" source="Moreau">Saint-Germain-En-Laye</pubPlace>
-          <publisher source="GandUniv">Lud. Breeckevelt</publisher>
+          <publisher source="GandUniv">
+            <persName>Lud. Breeckevelt</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="11"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement/>
+            <settlement ref="geonames:2797656">Gand</settlement>
             <institution>Université de Gand</institution>
             <repository/>
             <idno type="cote"/>
@@ -84,7 +82,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2870. Prise (la) de Charenton par les troupes du roi, commandées par Son
+          Altesse Royale, où huit régiments de Paris ont été entièrement défaits. Saint
+          Germain-en-Laye, le 12 février 1649,8 pages. Relation officielle Toutes les relations,
+          sorties des presses de Saint-Germain, sont de Renaudot.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -93,6 +95,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -108,8 +114,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>4d
         <lb/>PRISE
         <lb/>.
@@ -125,8 +130,7 @@
         <lb/>mprime A S GERMAIN
         <lb/>EN L A Y E, le douzieſme Fevrier..
         <lb/>eM. DC. XLIX.
-        <lb/>ec Prioiege du Roy.
-        <pb n="2"/>
+        <lb/>ec Prioiege du Roy. <pb n="2"/>
         <pb n="3"/>
         <lb/>par les Troupes du Roy commandées
         <lb/>par Son Alteſſe Royale.
@@ -154,8 +158,7 @@
         <lb/>ſois le plas grandbion quai vous puiſfe arria, puis qu’aurter
         <lb/> pour un mara uoae unien plos da rois cent. C’eſta ee ſuir
         <lb/> eſoea quadoiaenmieadieaoadoaolesaint
-        <lb/> &amp; vo1
-        <pb n="4"/>
+        <lb/> &amp; vo1 <pb n="4"/>
         <lb/>&amp; vous Religieux, ce n’eſt pas à flater de mllleéloges en ſa pre
         <lb rend="¬" break="no"/>ſence la plus devote Reine que la France ait jamais euë que vous
         <lb/>pouvez eéviter la vice d’ingratitude pour ſes bien-faits: C’eſt en
@@ -189,8 +192,7 @@
         <lb/>Et pour ce que tenans les deux rivieres fermées au deſſus de
         <lb/>Paris, il ne ſembloit pas d’abord que la garde du pont de- Cha
         <lb rend="¬" break="no"/>renton fut neceſſaire, les troupes du Roy ne s’en eſtoyentpas
-        <lb/>laiſies:
-        <pb n="5"/>
+        <lb/>laiſies: <pb n="5"/>
         <lb/>alesé naisld neceſné des Pariſienos’ofanrondnëõiageitue
         <lb/>-a ecbecler vouesles aenus pouir e façiliter l’aborddes uvi
         <lb rend="¬" break="no"/>et, is ſe ſaiſren ners le quinieſme de laneierdernier de ce
@@ -224,8 +226,7 @@
         <lb/>Montecder, nda Regiment de Certe, ua deà gardesdt areſ
         <lb/> caal de Pteſlis, udefa Nobleſſe oolohtaire d ourgongné, &amp;!
         <lb/>qu de ens daaa ade Soa a cande, de boaoi!
-        <lb/>&amp; d’Au¬
-        <pb n="6"/>
+        <lb/>&amp; d’Au¬ <pb n="6"/>
         <lb/>&amp;d’Anuien, oute laquelle Infanteiie &amp; Cavalere; faiſoit en
         <lb rend="¬" break="no"/>viron ttois mil cioq ces:hommnes de pied, &amp; trois mille Che
         <lb rend="¬" break="no"/>vaux leſquels avec ſix petites pieces de canon, eſtans ſortles du
@@ -261,8 +262,7 @@
         <lb rend="¬" break="no"/>aine, de celuy de Bsiſſac, de Brie, Petitiere, Bagnols Cugnac,
         &amp;.
         <lb/>Villebois. Ce qui euſt pu faire changer le deſſein de l’ataque
-        <lb/>comme
-        <pb n="7"/>
+        <lb/>comme <pb n="7"/>
         <lb/>comme tresperilleuſe, err preſenee de l’armée Pariſienne, &amp; a
         <lb rend="¬" break="no"/>veris il y avoit deux jours.outefois, les troupes du oy en
         <lb/>ce petit nombre s’avancerent eu cet ordre.
@@ -299,8 +299,7 @@
         <lb/>ſon entree de ce coſté dans la place: tous les Officiers de ce Re.¬.
         <lb/>giment s’y portans avec grande valeur &amp; condute, &amp; les loldars
         <lb/>fort reſolument: Dans laquelle acion, le Comte de Broglie
-        <lb/>ſut
-        <pb n="8"/>
+        <lb/>ſut <pb n="8"/>
         <lb/>utaccmmpagaé. des Comites de S eo-gs &amp; desPon Pë
         <lb rend="¬" break="no"/>montols. du ſiour de laFrsgae Lienutemht du Roy au gouve
         <lb rend="¬" break="no"/>hemeut de la ohele, &amp;e deaie ë nre dede ore, l
@@ -335,8 +334,7 @@
         <lb/>lieupous los aſſambler voyans un tel camage, ne rouvrnſeus
         <lb/>alut qu’ea leur fuie par le pont à vent qifut rompu, comme
         <lb/>il a eſe depuis: nMaii comne il ſe touva peu d’aoanuaiges ou
-        <lb/>pu15,
-        <pb n="9"/>
+        <lb/>pu15, <pb n="9"/>
         <lb/>puts, &amp; qui ne ſoyent meſlez de quelque perte, oütre celle que
         <lb/>le public ſouffre en perdant autant des ſujets du Roy, comme l
         <lb/> en a eſfle tué de part &amp; d’autre, qui ſont les malheureux fruits de
@@ -374,8 +372,7 @@
         <lb/> eſlé confie, &amp; refuſa le quartier que luy offroit le ſieur de Vau
         <lb rend="¬" break="no"/>tourneux Capiraine &amp; Major du régiment de S. Alteſſe Royale.
         <lb/>&amp; ainſi mourut percé de pluſieurs coups: ce qu’il euſt pû faire
-        <lb/> plus
-        <pb n="10"/>
+        <lb/> plus <pb n="10"/>
         <lb/>plus honorablement &amp; plus fidellement pour ſon Roy dans
         <lb/>Ma: die ou dans Dixmude.
         <lb/>Il ſeroit impoiſible de vous marquer icy dignement le courage
@@ -413,8 +410,7 @@
         <lb/>Perſan ſut auſſi bleſlé, &amp; le ſieur de la Tonr de doue coups,
         <lb/>mais tous ſans peril.
         <lb/>La conſequence de cette action, outre ce qu’il importoit granr
-        <lb/>dement
-        <pb n="11"/>
+        <lb/>dement <pb n="11"/>
         <lb/>dement à la reptation des ãrmes du Roy, de remporter les pre
         <lb rend="¬" break="no"/>miers avantages ſur ſes ſujets rebelles, confiſte entr’autres eho
         <lb rend="¬" break="no"/>ſes en la perte de huict regiments choifis de douze que les Pari

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau1948_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1948_GALL">
   <teiHeader xml:lang="fr">
     <fileDesc>
       <titleStmt>
@@ -11,24 +11,18 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
           <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="Corrector">Hip Amélie
-            <affiliation>
-              <roleName type="status">Vacataire</roleName>
-            </affiliation>
+          <persName role="Corrector">Hip Amélie <affiliation><roleName type="status"
+                >Vacataire</roleName></affiliation>
           </persName>
         </respStmt>
       </titleStmt>
@@ -44,27 +38,29 @@
       <sourceDesc>
         <bibl>
           <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k8570137"/>
-          <author>
-            <persName role="auteur">
-              <name>Foutakina</name>
+          <author role="dubious_author">
+            <persName>
+              <addName type="pseudonyme">Signora Foutakina</addName>
             </persName>
           </author>
           <title source="Moreau">Lettre de la signora Foutakina à messer Julio Mazarini, touchant
             l'armement des bardaches pour donner secours à son éminence, en vers burlesques.</title>
-          <pubPlace>Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <pubPlace source="Moreau">Sans Lieu</pubPlace>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1651">1651</date>
           <extent>
-            <measure unit="page" quantity="7"/>
+            <measure quantity="7" unit="page"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque nationale de France</institution>
-            <repository>Département Littérature et art</repository>
+            <repository>département Littérature et art</repository>
             <idno type="cote">YE-3425</idno>
           </msIdentifier>
           <history>
@@ -94,27 +90,25 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BnF_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1948. Lettre de la signora Foutakina à messer Julio Mazarini, touchant
+          l'armement des bardaches pour donner secours à son éminence, en vers burlesques. Sans
+          Lieu, 1651,7 pages. Libertinage sans esprit. Je regrette d'avoir à dire que cette pièce
+          est assez rare pour être recherchée.</p>
       </abstract>
       <textClass>
         <keywords>
           <term type="form">vers</term>
-          <term type="genre">lettre</term>
+          <term type="genre">Lettre</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
           <term type="subgenre">burlesque</term>
-          <term type="subgenre">satirique</term>
-          <term type="subject"/>
         </keywords>
       </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_58" source="Moreau">
-          <p>Le roi mande au cardinal Mazarin de rentrer en France</p>
-          <date when="1651-12-12">1651-12-12</date>
-        </setting>
-      </settingDesc>
     </profileDesc>
     <revisionDesc>
-      <change status="not_corrected"/>
+      <change status="corrected" when="2022-04-21" who="AB"/>
     </revisionDesc>
   </teiHeader>
   <text>

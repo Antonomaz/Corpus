@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau177_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau177_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -47,13 +48,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49808</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49808" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49808"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14239</idno>
@@ -85,10 +85,33 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions publiées la même année : à Paris mais sans nom
+        <p source="Mazarine">Autres éditions publiées la même année : à Paris mais sans nom
           (BM00907) ; à Bordeaux par J. Mongiron Millanges (Labadie, n° 177) ; à Toulouse, "jouxte
           la copie imprimée à Bordeaux par J. Mongiron Millanges". Signé "De Pontac". Acte daté du
           18 mars 1650.</p>
+        <p source="Moreau">177. Arrêt de la cour de parlement de Bordeaux, portant cassation des
+          jugements, condammnations et ordonnances du sieur Foulé; ensemble inhibition et défenses,
+          aux gens de guerre, de s'employer pour la levée des tailles. Paris, Thomas Lozet, 1650, 8
+          pages. Daté du 18 mars 1650. Voici, d’après l’arrêt, comment Foulé s’y prenait pour lever
+          les tailles : « Par ordonnance du 22 février, il avoit donné, aux gens de guerre, la
+          licence de raser, démolir et brûler tout ce qu’ils prétendoient s’opposer à leurs
+          desseins, sans pouvoir être recherchés. Il condamnoit, sans pourvoi, ceux qu’il supposoit
+          coupables de rébellion envers les gens de guerre. Il prononçoit la contrainte solidaire
+          pour les tailles ; établissoit, par défaut, des peines de mort contre dix des principaux
+          habitants de chaque paroisse, sans les nommer dans l’instance ni dans la dispositive. La
+          descente des cloches, le bannissement des curés et autres ecclésiastiques, la proscription
+          des officiers, la confiscation des biens, la vacance ordonnée des offices et bénéfices,
+          les dommages-intérêts , les rasements des maisons et bâtiments des paroisses entières
+          étoient les plus communes prononciations. Il ordonnoit que des paroisses demeureroient
+          sans culture; condamnoit tous les habitants des paroisses, audessus de l’âge de seize ans
+          et audessous de soixante, à servir par force le roi, le reste de leurs jours, dans les
+          galères et bannissoit le reste hors du royaume. » Tout cela, porte naïvement l’arrêt, est
+          contraire aux ordonnances royaux; mais il est impossible qu’il n’y ait pas beaucoup
+          d’exagération. L’affaire fut portée devant le parlement de Paris. Un sieur Chambrette,
+          fils, de Bordeaux , se constitua partie civile, prétendant que Foulé lui avait fait brûler
+          une maison de vingt mille écus ; mais il ne paraît pas qu’aucun jugement ait été rendu. Il
+          y a, de l’arrêt du 18 mars, une autre édition de 8 pages, de Paris également , mais sans
+          nom d’imprimeur.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,8 +130,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT

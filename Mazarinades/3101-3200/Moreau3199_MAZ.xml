@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3199_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3199_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -28,31 +29,32 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14791"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Relation veritable de ce qui s'est fait et passé a l'attaque de
             la ville de La Reole en Guyenne. Et les genereuses sorties des habitans sur les trouppes
             mazarines.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49398</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49398" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49398"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12211</idno>
           </msIdentifier>
           <history>
             <provenance>
-              <stamp>True/False</stamp>
+              <stamp>True</stamp>
             </provenance>
           </history>
         </msDesc>
@@ -77,8 +79,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Édition originale : Bordeaux, Guillaume de La Court, 1652, 8 p.in-4
+        <p source="Mazarine">Édition originale : Bordeaux, Guillaume de La Court, 1652, 8 p.in-4
           (Moreau, n° 3199). </p>
+        <p source="Moreau">3199. Relation véritable de ce qui s'est fait et passé à l'attaque de la
+          ville de La Réole en Guyenne , et les généreuses sorties des habitants sur les troupes
+          nia/a- rines. Bordeaux, Guillaume de La Court, 1652, 8 pages. Le jour de l'Ascension. Il y
+          a de cette relation une édition de Paris jouxte la copie ; et cependant elle est rare
+          encore.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -96,8 +103,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>RELATION
         <lb/>VERITABLE DE CE
         <lb/>QUI S'EST FAIT ET PASSÉ

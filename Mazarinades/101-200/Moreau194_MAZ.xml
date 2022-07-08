@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau194_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau194_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -49,13 +50,12 @@
             <measure unit="page" quantity="30"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49822</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49822" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49822"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14250</idno>
@@ -87,7 +87,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition de composition typographique différente, sans erreur de
+        <p source="Mazarine">Autre édition de composition typographique différente, sans erreur de
           pagination, et second texte sans la mention de collation ni la signature de "Suau"
           (BM00920). Célestin Moreau a attribué, dans sa Bibliographie des mazarinades, le n° 194
           aux pages 1 à 4 et le n° 3815 au texte suivant. Cette seconde pièce a aussi paru
@@ -96,6 +96,10 @@
           de la retraite de monsieur le prince dans son gouvernement." et sans la signature "Suau"
           (Hubert Carrier, Bibliothèque Mazarine, Ms. 4682-5, f. 326v). Textes signés "Suau". Acte
           daté du 27 octobre 1651.</p>
+        <p source="Moreau">194. Arrêt de la cour de parlement de Bordeaux, portant que très-humbles
+          et itératives remontrances seront faites au roi sur le sujet de la retraite de monsieur le
+          prince et des affaires présentes, avec les remontrances faites en conséquence dudit arrêt.
+          Bordeaux, Mongiron Millanges, 1651, 30 pages. Daté du 27 octobre.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -117,8 +121,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DV PARLEMENT

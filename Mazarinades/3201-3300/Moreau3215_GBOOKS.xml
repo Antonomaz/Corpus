@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3215_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3215_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -43,17 +39,19 @@
             par les troupes de monsieur le Prince, commandées par M. le duc de Rohan, le 15 du mois
             présent (janvier 1652)</title>
           <pubPlace source="Moreau">Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau">Sans Date</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4 217 mm</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309234</idno>
@@ -85,8 +83,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Recueil factice</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Recueil factice</p>
+        <p source="Moreau">3215. Relation véritable de ce qui s'est passé à la prise du Pont de Ce
+          par les troupes de monsieur le Prince, commandées par M. le duc de Roban, le 1 5 du mois
+          présent (Janvier 1652). (S. I. n. d.), 8 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -95,6 +96,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -110,8 +115,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>RE LATION
         <lb/>VAnl1
         <lb/>n e or s
@@ -121,8 +125,7 @@
         <lb/>eounpegns pA
         <lb/>p
         <lb/>ROHA N
-        <lb/>le1s. du mois preſent.
-        <pb n="2"/>
+        <lb/>le1s. du mois preſent. <pb n="2"/>
         <lb/>1
         <lb/>1
         <lb rend="¬" break="no"/>1¬2
@@ -133,8 +136,7 @@
         <lb/> 8¬!
         <lb/>
         <lb rend="¬" break="no"/>¬ E
-        <lb/> ſ
-        <pb n="3"/>
+        <lb/> ſ <pb n="3"/>
         <lb/>3
         <lb/>AA&amp;û eAé h&amp;
         <lb/>Apppppp4e? pe?
@@ -163,8 +165,7 @@
         <lb/>1
         <lb rend="¬" break="no"/>
         <lb rend="¬" break="no"/>.¬ ,é a,
-        <lb/>¬¬
-        <pb n="4"/>
+        <lb/>¬¬ <pb n="4"/>
         <lb/>A
         <lb rend="¬" break="no"/>4
         <lb rend="¬" break="no"/>que celles qui coururent il y a huict ans de la le
@@ -195,8 +196,7 @@
         <lb rend="¬" break="no"/>droiont opprimer &amp; lvn &amp; l’autre. fi leurdeſeins
         <lb/>n’eſtoient contrequarrez par les geaerex.
         <lb/> Mais
-        <lb/>¬¬,¬¬¬-¬¬¬
-        <pb n="5"/>
+        <lb/>¬¬,¬¬¬-¬¬¬ <pb n="5"/>
         <lb/>3
         <lb/>Mais puis qu’ils ont tant de fumée, ils ont
         <lb/>ce qui leur faut pour entretenir leur imagina
@@ -226,8 +226,7 @@
         <lb rend="¬" break="no"/>éroſté toute des-intereſfée, à̀ de tout temps
         <lb/>aché à baduantage des intereſts publics inſe.
         <lb/>¬T
-        <lb rend="¬" break="no"/>¬
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>¬ <pb n="6"/>
         <lb/>Princes; preuigeant ſagement ſur les apparences l.
         <lb/>de ce qui ſe paſſe, que les Mazarins deſtineroient:
         <lb/>ce Fort, pour en maiſtriſer rout l’Anjou; medi
@@ -258,8 +257,7 @@
         <lb/>
         <lb rend="¬" break="no"/>A
         <lb/>parablement vnis auec ceux de Meſſiurs les J
-        <lb/>1
-        <pb n="7"/>
+        <lb/>1 <pb n="7"/>
         <lb/>reuſement le quinzieſme de ce mois, auee-deſ
         <lb rend="¬" break="no"/>ſein de n’en partis iamais qu’auec la gloire de l’a
         <lb rend="¬" break="no"/>uoir emporté, malgré les reſiſtances de ceux qui
@@ -289,8 +287,7 @@
         <lb/>luccezd’vn plus long triomphe.
         <lb/>.
         <lb/>¬
-        <lb rend="¬" break="no"/>¬¬
-        <pb n="8"/>
+        <lb rend="¬" break="no"/>¬¬ <pb n="8"/>
         <lb/>1
         <lb/>La nouuelle de cette priſe ne manqua pas de
         <lb/>donner de grandes allarmes au Maariniſme, &amp;

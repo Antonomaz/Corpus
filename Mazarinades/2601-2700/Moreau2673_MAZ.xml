@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2673_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2673_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -34,7 +35,9 @@
           </author>
           <title source="Mazarine">La parabole du temps present.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-02-01" notAfter="1649-02-10">début février
             1649</date>
@@ -42,13 +45,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49229</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49229" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49229"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11729</idno>
@@ -80,13 +82,19 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition : à Paris, chez Arnoul Cotinet, sous le titre "La
+        <p source="Mazarine">Autre édition : à Paris, chez Arnoul Cotinet, sous le titre "La
           parabole du temps present, denottant les cruautez de Mazarin contre les François, &amp;
           prophetisant la victoire de messieurs du Parlement" (BM00363). Également publié dans le
           recueil éditorial "Recueil de diverses pieces qui ont paru durant les mouvemens derniers
           de l'année 1649." (BM000059). Par Vulson de La Colombière d'après Célestin Moreau. Texte
           paru début février 1649 d'après Hubert Carrier suivant les sources contemporaines
           (Bibliothèque Mazarine, Ms. 4682-4, f. 155v-156).</p>
+        <p source="Moreau">2673. Parabole (la) du temps présent. Paris, 1649, 8 pages. - La
+          Colombière. Un père de famille avait confié son troupeau de moutons à un berger qui, en
+          mourant, laissa à sa veuve un chien. Le troupeau, écorché au lieu d'être tondu, se
+          révolta. La veuve du berger et le chien firent venir, pour l'affamer, les ours de Suisse,
+          les loups d'Allemagne et d'Italie, et les aigles de Pologne. . Voilà le blocus. Il existe
+          de cette pièce une autre édition dont voici le titre :</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,17 +111,13 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA
         <lb/>PARABOLE
         <lb/>DV TEMPS
         <lb/>PRESENT. <figure type="decoration"/>
         <lb/>A PARIS,
-        <lb/>M. DC. XLIX.<pb n="10"/>
-        <pb n="11"/>
-        <gap/>
-        <pb n="12"/>
+        <lb/>M. DC. XLIX.<pb n="10"/><pb n="11"/><gap/><pb n="12"/>
         <lb/>Ce bon Pere de famille promettant à ce Ber¬
         <lb/>ger pour le recompenſer des peines &amp; des ſoins
         <lb/>qu’il prendroit, de l’aimer touſiours, &amp; de le fa¬

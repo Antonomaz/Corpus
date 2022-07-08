@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau783_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau783_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -30,7 +31,9 @@
           <author/>
           <title source="Mazarine">Contract de mariage du Parlement, avec la ville de Paris.</title>
           <pubPlace source="Mazarine" ref="geonames:2989317">Orléans</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-02-07" notAfter="1649-02-14">deuxième semaine de
             février 1649</date>
@@ -38,13 +41,12 @@
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49165</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49165" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49165"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15433-46</idno>
@@ -76,7 +78,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"> Sous forme d'un contrat de mariage passé devant notaire. Probablement
+        <p source="Mazarine"> Sous forme d'un contrat de mariage passé devant notaire. Probablement
           édition orléanaise d'après Hubert Carrier (Bibliothèque Mazarine, Ms 4682-2, f. 85v).
           Autres éditions : sans p. de titre, chez la veuve Guillemot, 8 p. in-4 (BM00623) ; sans p.
           de titre, titre terminé par "touchant les affaires d'Estat et le repos du public", chez la
@@ -87,6 +89,32 @@
           l'année 1649.", sans adresse, 1650, [1-1 bl.-10]-746 p. in-4 (BM00059). "Contrat" daté de
           janvier 1649. Texte paru la deuxième semaine de février 1649, d'après Hubert Carrier
           (Mazarine Ms 4682-2, f. 85v-86).</p>
+        <p source="Moreau">783. Contrat(le) de mariage du parlement avec la ville de Paris. Paris,
+          veuve J. Guillemot, 1649, 8 pages. Cette pièce qui a paru tout de suite après l’arrêt du 8
+          janvier, contient les propositions suivantes : le parlement présentera les personnes qui
+          devront avoir part au gouvernement du royaume et à l’éducatien du roi; il pourra les
+          destituer pour déportements ou incapacité ; il recevra Ic serment des ministres et
+          conseillers d’État ; il nommera les candidats à l’administration des finances, ct exer-
+          cera la Èharge de contrôleur général par deux de ses membres en commission ; il aura la
+          nomination à perpétuité des gouverneurs des places à dix lieues à la ronde autour de
+          Paris. Voilà le programme des chefs de la Fronde dans le parlement. Cette pièce est donc
+          des plus importantes. Elle est aussi des mieux faites. Naudé, page 11 du Mascurat, la
+          classe parmi les pièces raisonnées et soutenues. Il y revient encore, page 204 ; et il la
+          cite comme une des meilleures. Je dois ajouter qu’elle n’est pas rare. Dans la leitre de
+          Bruhl, le 40 avril 1651 (1° de l’édition de M. Ravenel) le cardinal Mazarin dit que le
+          coadjuteur a eu quelque part à la composition de ce pamphlet; sur quoi M. Ravenel répond :
+          « Une des clauses du Cortrat porte que, pendant la minorité du roi, il nesera établi
+          aucune coadjutorerie aux préla- tures, et que toutes celles qui pourront avoir été
+          accordées depuis l’avénement du roi à la couronne , seront révoquées et demeure- ront
+          nulles. Le coadjuteur ou des écrivains inspirés par lui auraient- ils tenu un tel langage?
+          » A mon tour, je réplique : les pamphlé- taires du prince de Condé demandaient, aussi haut
+          que les autres, lasuppression « du pernicieux usage de succéder aux gouvernements comme
+          aux patrimomes.… » Le prince lui-même dut, plus d’une fois, se soumettre à cette exigence
+          de l’opinion dans les conféren- ces et les traités. Cependant il s’était brouillé avec la
+          cour parce qu’elle n’avait pas voulu qu’il recueillit l’amirauté dans la succes- sion de
+          son beau-frère , le duc de Brézé. Les partis sont des maîtres bien durs. Ils ne donnent le
+          com- mandement qu’à ceux qui leur rendent une entière obéissance. Il y a, du Contrat, une
+          édition in-8, s. !. n. d., de 6 feuillets.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -105,8 +133,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>CONTRACT
         <lb/>DE
         <lb/>MARIAGE

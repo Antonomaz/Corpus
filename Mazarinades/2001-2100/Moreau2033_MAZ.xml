@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2033_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2033_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,13 +49,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49938</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49938" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49938"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° A 12822-8</idno>
@@ -86,7 +86,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions : Paris, Nicolas Vivenay, 1651, titre "de son
+        <p source="Mazarine">Autres éditions : Paris, Nicolas Vivenay, 1651, titre "de son
           esloignement" ; p. 4, l. 7 "ce qui joint" ; p. 5, l. 2 "Tellier" ; p. 6, l. 5
           "auantageuse" ; p. 7, l. 3 "qu'elle luy", l. 15 "nom ; par à quoy", l. 17 "l'armée, dans",
           l. 18 "n'autoriseroient", l. 21 "paroles, Puis" ; p. 8, l. 2 "agrée, ie", l. 7/8
@@ -99,6 +99,9 @@
           &amp; que pendant la Regence, sans ma" (BM01034) ; "jouxte la copie...", [4] p. ; à
           Bordeaux, chez J. Mongiron Millanges (BM00394). Signée "Louys de Bourbon". Texte paru le
           15 septembre d'après Hubert Carrier (Bibliothèque Mazarine, Ms. 4682-3, f. 227v-228).</p>
+        <p source="Moreau">2033. Lettre de monsieur le prince de Condé à Son Al tesse Royale sur le
+          sujet de son éloignement de la cour, du 13 septembre 1651. Paris, Nicolas Vivenay, 1651,8
+          pages. Il y en a une autre édition : jouxte la copie, etc., 4 pages non chiffrées.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -115,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>LETTRE
         <lb/>DE MONSIVEUR
         <lb/>LE PRINCE

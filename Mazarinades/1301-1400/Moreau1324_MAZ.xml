@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1324_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1324_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -46,20 +47,21 @@
             IV. Que si les prelats sont gens de bien, ils sont incapables de gouverner les Estats,
             s'ils sont meschants il ne faut point permetre qu'ils s'en aprochent.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" when="1652-05-31">31 mai 1652</date>
           <extent>
             <measure unit="page" quantity="19"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50054</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50054" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50054"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12915</idno>
@@ -91,13 +93,21 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">2 états de la p. de titre : titre sans "Contre les sentimens du
+        <p source="Mazarine">2 états de la p. de titre : titre sans "Contre les sentimens du
           Coadjuteur" et avec "II. Que les Prelats qui singerent (état A) / "titre avec "Contre les
           sentimens du Coadjuteur" et "II. Que les Prelats qui s'ingerent" (état B). Par Claude Du
           Bosc de Montandré, selon Célestin Moreau. D'après Hubert Carrier, texte paru le 31 mai
           1652 au vu de la note ms. contemporaine au bas de la p. de titre de l'exemplaire
           Bibliothèque Mazarine coté 4° 19064-64 "du de.r May" (Bibliothèque Mazarine, Ms 4682-2, f.
           315v et 316).</p>
+        <p source="Moreau">1324. Excommunication politique lancée sur le clergé , contre les
+          sentiments du coadjuteur, où l’on verra : 1° que le maniment des affaires d’'Etat est con-
+          traire à la profession des prélats et cardinaux ; 2° que les prélats qui s’ingèrent dans
+          les affaires d’État, sont des apostats ; 3° que les prélats ne doivent jamais entrer dans
+          les palais des grands , que pour y porter les paroles de l'éterniteé ; 4° que si les
+          prélats sont gens de bien, ils sont incapables de gouverner les États ; s'ils sont
+          méchants, il ne faut pas permettre qu’ils s’en approchent. (S. 1.), 1652, 19 pages. Dubosc
+          Montandré.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -116,8 +126,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>EXCOMMVNICATION
         <lb/>POLITIQVE,
         <lb/>LANCEE SVR LE CLERGE.

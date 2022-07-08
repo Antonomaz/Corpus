@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3721_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3721_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,7 +32,7 @@
           <title source="Mazarine">La subtilité du cardinal Mazarin descouverte, sur la conference
             faite a Ruel pour la paix.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher ref="isni:000000007728855X">
+          <publisher ref="isni:0000000506791357">
             <persName>
               <forename>François</forename>
               <surname>Noël</surname>
@@ -44,13 +45,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49852</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49852" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49852"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12338</idno>
@@ -82,7 +82,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">3 états. (A/B) : fin de la 2e l. de l'adresse "Iacques, aux"/"Iacques,"
+        <p source="Mazarine">3 états. (A/B) : fin de la 2e l. de l'adresse "Iacques, aux"/"Iacques,"
           ; p. 3, l. 4 "C'EST"/"C'Est", début l. 22 "que ;"/"que," ; p. 4, l. 3 "perts, de
           vouloir"/"parts de vouloir", fin l. 13 "opposez à"/"opposez à sa", début l. 16
           "Conference"/"conference", fin l. 16 "ppuuoir de traiter, ie re-"/pouuoir de traitter,
@@ -92,6 +92,8 @@
           édition sans adresse ni date sous le titre "La subtilité descouverte du cardinal."
           (BM00402). D'après Hubert Carrier, texte paru entre le 15 et le 30 mars 1649 (Bibliothèque
           Mazarine, Ms 4682-5, f. 280v).</p>
+        <p source="Moreau">3721 . Subtilité (la' du cardinal Mazarin découverte sur la conférence
+          faite à Ruel pour la paix. Paris, Fran- çois Noël , 1649 , 7 pages. &gt;94 (79I</p>
       </abstract>
       <textClass>
         <keywords>
@@ -110,8 +112,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA SVBTILITE
         <lb/>DV CARDINAL
         <lb/>MAZARIN
@@ -123,7 +124,8 @@
         <lb/>Chez FRANCOIS NOEL, ruë Sainct Iacques, aux
         <lb/>Colonnes d'Hercules.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>AVEC PERMISSION</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>AVEC PERMISSION</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>LA SVBTILITE DV CARD NAL
         <lb/>Mazarin deſcouuerte, ſur la ſonference faite

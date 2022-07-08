@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1365_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1365_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,20 +36,21 @@
             du present mois de juin, &amp; demandeur. Contre le substitut de Monsieur le procureur
             general au Chastelet, appellant, intimé &amp; deffendeur.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-06-06">6 juin 1649</date>
           <extent>
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49077</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49077" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49077"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12928</idno>
@@ -80,7 +82,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Célestin Moreau, Bernard de Bautru est accusé d'avoir fait
+        <p source="Mazarine">D'après Célestin Moreau, Bernard de Bautru est accusé d'avoir fait
           imprimer la mazarinade "Discours sur la députation de Parlement à Mr le prince de Condé",
           écrit en réalité par Du Portail et publié anonymement. 2 états pour les p. 4-5. État A :
           "pas fait" se trouve en bas de la p. 4 ; p. 5, l. 38-39, "impri-/mer". État B : "pas fait"
@@ -88,6 +90,12 @@
           publiée avec les "Causes et moyens d'appel proposez par le procureur du Roy au
           Chastelet...". Titre de départ. Signé "Monsieur Crespin rapporteur.". Texte paru le 6 juin
           1649 d'après Hubert Carrier (Bibliothèque Mazarine, Ms 4682-2, f. 342v).</p>
+        <p source="Moreau">1365. Factum pour maistre Bernard de Bautru, advocat au conseil privé du
+          roy, intimé et appelant de la pro- cédure extraordinaire et sentence du 4* jour du présent
+          mois de juin, et demandeur, Conutre le substitut de monsieur le procureur géne- ral au
+          Chastelet, appelant, intimé et défendeur. (S.1, 1649), 6 pages. Édition originale rare,
+          mais fort peu nécessaire ; car on a, dans le niême temps, reuni le Factæm et les Causes et
+          moyens d'appel, sous le double titre qui suit :</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,8 +112,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>FACTVM
         <lb/>Pour Maiſtre Bernard de Bautru Aduocat au Conſeil Priué du Roy,
         <lb/>intimé &amp; appellant de la procedure extraordinaire,&amp; ſentence du 4.

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2398_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2398_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,7 +32,7 @@
           <title source="Mazarine">Manifeste ou Raisonnement sur les affaires de Catalogne, contre
             les intrigues du cardinal Mazarin. Traduit d'espagnol en françois.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher ref="isni:000000007728855X">
+          <publisher ref="isni:0000000506791357">
             <persName>
               <forename>François</forename>
               <surname>Noël</surname>
@@ -42,13 +43,12 @@
             <measure unit="page" quantity="26"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48888</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48888" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48888"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11567</idno>
@@ -80,10 +80,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Célestin Moreau, la prétendue traduction française est en
+        <p source="Mazarine">D'après Célestin Moreau, la prétendue traduction française est en
           réalité un original. Autre état (B) : p. de titre de composition différente ; ponctuation
           du titre de départ différente : "Manifeste ou Raisonnement sur les affaires de Catalogne
           contre les intrigues du cardinal Mazarin : traduit d'espagnol en françois.".</p>
+        <p source="Moreau">2398. Manifeste, ou Raisonnement sur les affaires de Catalogne contre les
+          intrigues du cardinal Mazarin, traduit de l'espagnol en françois. Paris, François Noël,
+          1649, 26 pages. L'auteur dit en commençant qu'il a pénétré en Catalogne pour voir par ses
+          yeux. A la bonne heure; mais il n'a pas mieux vu. Évidemment la prétendue traduction
+          française est un original.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>MANIFESTE
         <lb/>OV
         <lb/>RAISONNEMENT
@@ -117,7 +121,8 @@
         <lb/>Chez FRANCOIS NOEL, ruë Sainct Iacques, aux
         <lb/>Colomnes d'Hercules.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>AVEC PERMISSION</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>AVEC PERMISSION</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>MANIFESTE OV RAISON.
         <lb/>nement ſur les affaires de Catalo¬

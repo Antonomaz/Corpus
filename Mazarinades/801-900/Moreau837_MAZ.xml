@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau837_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau837_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -44,13 +45,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49170</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49170" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49170"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15435-30</idno>
@@ -82,12 +82,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Selon Hubert Carrier, probablement une contrefaçon orléanaise de
+        <p source="Mazarine">Selon Hubert Carrier, probablement une contrefaçon orléanaise de
           l'édition parisienne à l'adresse de Claude Morlot, sans date, 8 p. in-4 (BM00821),
           l'adresse de Claude Morlot portée au colophon étant fausse, car son atelier était installé
           rue de la Boucherie et non de la Bretonnerie (Bibliothèque Mazarine Ms 4682-2, f. 124).
           Titre de départ Texte paru la deuxième quinzaine de mars 1649, d'après H. Carrier
           (Bibliothèque Mazarine Ms 4682-2, f. 123v).</p>
+        <p source="Moreau">837. Court-bouillon (le) de Mazarin, assaisonné par toutes les bonnes
+          villes de France. Paris, Claude Morlot, Sans Date, 8 pages. On voit, au recto du titre, un
+          mauvais portrait de Mazarin, gravé sur bois.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>LE
         <lb/>COVR BOVILLON
         <lb/>DE

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="M15136_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="M15136_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,19 +43,20 @@
             il suo nemico, e del commun riposo il cardinal Mazarino. Fedelmente tradotta dal
             francese, secondo la copia stampata in Parigi.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
-          <date source="Mazarine">Sans date</date>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
+          <date source="Mazarine">Sans Date</date>
           <extent>
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50189</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50189" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50189"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15136</idno>
@@ -86,7 +88,7 @@
         <language ident="ita">Document en italien</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Traduction de : "Le manifeste de monseigneur le prince de Condé
+        <p source="Mazarine">Traduction de : "Le manifeste de monseigneur le prince de Condé
           touchant les veritables raisons de sa sortie hors de Paris, faite le 6. juillet 1651. Avec
           une protestation qu'il fait à la France, qu'il n'en veut qu'à l'ennemy commun de son
           repos, c'est à dire au cardinal Mazarin.". Édition signalée par Armand d'Artois
@@ -117,8 +119,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>IL MANIFESTO
         <lb/>Di Monſignor il Principe di Conde.
         <lb/>Toccante le veritiere ragioni della di lui

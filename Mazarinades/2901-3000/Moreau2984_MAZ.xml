@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2984_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2984_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -33,20 +34,21 @@
             d'Harcourt. Avec les noms des morts &amp; prisonniers : ensemble la prise des chasteaux
             d'Ambleville &amp; de Barbesieux en Angoumois.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" when="1652-01-24">24 janvier 1652</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49858</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49858" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49858"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12081</idno>
@@ -78,12 +80,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Relation royaliste du combat de Saint-André-de-Cubzac (16 janvier
+        <p source="Mazarine">Relation royaliste du combat de Saint-André-de-Cubzac (16 janvier
           1652). Autre édition : à Poictiers, chez Antoine Mesnier sous le titre "Relation de la
           prise des chasteaux d'Ambleville &amp; de Barbesieux en Angoumois, &amp; de la deroute de
           l'armée de monsieur le Prince par celle du Roy commãdée par monsieur le comte d'Harcourt."
           (BM00331). Le deuxième texte est signé "Belfonds, &amp; De Levy Chalus.". D'après Hubert
           Carrier, texte paru le 24 janvier 1652 (Bibliothèque Mazarine, Ms. 4682-5, f. 9v).</p>
+        <p source="Moreau">2984. Récit d'un combat donné entre monsieur le prince de Condé et le
+          comte d'Harcourt, avec les noms des morts et des prisonniers, ensemble la prise des
+          châteaux d'Ambleville et de Barbésieux en An- goumois. Paris, jouxte la copie imprimee à
+          Poitiers par Antoine Mesnier, 1652, 8 pages. Rare. Relation royaliste du combat de
+          Saint-André. La capitulation de Barbésieux est du 1 5 janvier.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>RECIT
         <lb/>DV COMBAT
         <lb/>donné entre M’le Prince de

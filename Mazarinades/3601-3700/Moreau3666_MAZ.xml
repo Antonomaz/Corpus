@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3666_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3666_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -27,11 +28,13 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz15001"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Les services que la maison de Condé a rendus a la France, contre
             les calomnies des partisans du Mazarin.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" notBefore="1651-01-01" notAfter="1651-01-10">début janvier
             1651</date>
@@ -39,13 +42,12 @@
             <measure unit="page" quantity="30"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48985</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48985" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48985"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13944</idno>
@@ -77,13 +79,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Réplique à "La généalogie du Prince et comme tous ceux de cette Maison
+        <p source="Mazarine">Réplique à "La généalogie du Prince et comme tous ceux de cette Maison
           ont esté funestes au Roy &amp; au Peuple" (n° Moreau1477). Le sonnet intitulé "Les crimes
           de Monsieur le Réplique à "La généalogie du Prince et comme tous ceux de cette Maison ont
           esté funestes au Roy &amp; au Peuple" (BM00167, BM00168, BM00430) d'après Hubert Carrier
           (Bibliothèque Mazarine, Ms 4682-5, f. 263). À la suite du texte, sonnet, "Les crimes de
           Monsieur le prince de Condé", en vers alexandrins. Texte paru début janvier 1651 d'après
           H. Carrier (Bibliothèque Mazarine, Ms 4682-5, f. 262v).</p>
+        <p source="Moreau">3666. Services (les) que la maison de Condé a rendus à la France, contre
+          les calomnies des partisans du Mazarin. (S. 1., 1651), 30 pages. La seule chose qui vaille
+          peut-être la peine d'être notée, c'est que l'auteur dit des protestants au xvie siècle
+          qu'ils étaient les fron deurs de l'époque.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES SERVICES
         <lb/>QVE LA MAISON
         <lb/>DE CONDE

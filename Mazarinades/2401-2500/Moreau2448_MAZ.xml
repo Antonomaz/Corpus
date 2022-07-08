@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2448_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2448_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -30,7 +31,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14922"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Memoires presentez à nosseigneurs de Parlement, pour monstrer que
             les dix-huict deputez nõmez pour la conservation des rentes de l'Hostel de ville peuvent
             s'assembler quand ils le jugeront necessaire ; pour se raporter les uns aux autres les
@@ -48,13 +49,12 @@
             <measure unit="page" quantity="1"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49100</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49100" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49100"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13501</idno>
@@ -86,7 +86,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2448. Mémoires présentés à nos seigneurs du Parlement - pour montrer que
+          les dix-huit députés, nommés pour la conservation des rentes de l'Hôtel de Ville, peuvent
+          s'assembler quand ils le jugeront nécessaire pour se rapporter les uns aux autres les
+          désordres qu'ils auront remarqués dans chaque nature de rente, et pour en arrêter le cours
+          ety chercher conjointement le remède. Paris, M. Mettayer, 1650,9 pages. Bien fait et
+          rare.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -105,8 +111,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>MEMOIRES
         <lb/>preſentez à Noſſeigneurs de Par¬
         <lb/>lement, pour monſtrer que les

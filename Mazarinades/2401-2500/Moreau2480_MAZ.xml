@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2480_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2480_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -28,25 +29,26 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14931"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Le miroir françois representant la face de ce siecle corrompu. Où
             se void si le courtisan, le politique, le partisan, &amp; le financier, sont necessaires
             au maintien &amp; conservation d'un Estat.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-12">décembre 1649</date>
           <extent>
             <measure unit="page" quantity="15"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49110</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49110" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49110"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13509</idno>
@@ -78,9 +80,22 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Texte paru en décembre 1649 d'après Hubert Carrier (Bibliothèque
+        <p source="Mazarine">Texte paru en décembre 1649 d'après Hubert Carrier (Bibliothèque
           Mazarine, Ms 4682-4, f. 61v) suivant une mention ms. sur l'exemplaire Bibliothèque
           Mazarine 4° A 12868-63.</p>
+        <p source="Moreau">2480. Miroir (le) françois, représentant la face de ce siècle corrompu,
+          où se voit si le courtisan, le politi que, le partisan et le financier sont nécessaires au
+          maintien et conservation d'un État. Paris, 1649, 15 pages. Voici les costumes de ces
+          personnages : Le courtisan « avec une grosse perruque frisée , cordelée, sau poudrée, les
+          sourcils pincetés, les joues plâtrées et vermillonnées, la moustache redressée, la tête
+          branlante, la gorge ouverte, la bouche pleine de blasphêmes, et tout le corps en un
+          mouvement perpétuel, une main sur l'épée, l'autre à son côté. » Le politique « avec une
+          ample et longue robe de taffetas, la barbe peinte, la perruque godronnée (sic), les yeux
+          enfoncés et les sourcils relevés, marchant à pas soulevés et mesurés; en son . vivre un
+          Lucullus ; en ses paroles un Caton. » Le financier « avec une petite robe courte à
+          manches, la toque de veloux (sic) sur des cheveux frisés, tout parfumé et mignonne ment
+          chaussé, et pour le reste à peu près accoutré comme le courtisan. » " * Le financier et le
+          partisan, c'était tout un.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>MIROIR
         <lb/>FRANCOIS

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2126_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2126_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -38,7 +34,9 @@
       <sourceDesc>
         <bibl>
           <ref target="https://books.google.fr/books?id=zOUQhXM6YrwC&amp;hl=fr"/>
-          <author>Parlement de Metz</author>
+          <author ref="isni:0000000121801163">
+            <orgName>Parlement de Metz</orgName>
+          </author>
           <persName role="received" ref="isni:0000000121336441">
             <forename>Gaston</forename>
             <surname>France (De)</surname>
@@ -57,13 +55,12 @@
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 312862</idno>
@@ -95,7 +92,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2126. Lettre du Parlement de Metz à monseigneur le duc d'Orléans,
+          lieutenant général du royaume pen dant l'absence et la captivité du roi, touchant la re
+          traite du cardinal Mazarin dedans la ville et citadelle de Metz. Paris, Jacob Chevalier,
+          1652,7 pages. Datée de Toul, le 10 août. Le Parlement n'a point écrit cette lettre.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,6 +105,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -119,8 +123,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/> r¬ r
         <lb rend="¬" break="no"/>J
         <lb/>l lL L I. L
@@ -140,8 +143,7 @@
         <lb/>Chez Iacon. Ce v a LIE R, prés Saint Iean
         <lb/>de Larran.
         <lb/>M. DC. LII.
-        <lb/>S 12S69
-        <pb n="2"/>
+        <lb/>S 12S69 <pb n="2"/>
         <lb/>
         <lb rend="¬" break="no"/>. e.
         <lb rend="¬" break="no"/>
@@ -179,8 +181,7 @@
         <lb/> A
         <lb/>eorp
         <lb/>3
-        <lb rend="¬" break="no"/>¬.
-        <pb n="3"/>
+        <lb rend="¬" break="no"/>¬. <pb n="3"/>
         <lb/>3
         <lb/>LErr D paLE e 2.
         <lb/>à Moſeiger le Dc d’rlaas, Liat Geaesal
@@ -201,8 +202,7 @@
         <lb/>Eueſché moyennant deux Abbayes de cent mille
         <lb/>liures de ente, &amp; treat mile eſcus d’argent com
         <lb rend="¬" break="no"/>pans;ans caidesral gaie le plu aoble&amp;
-        <lb/>A n
-        <pb n="4"/>
+        <lb/>A n <pb n="4"/>
         <lb/>4
         <lb/>grand Benefice du Royaume aà̀ v’eftranger qui e
         <lb/>peut le poſſeder par declaration ſpeciale du Roy
@@ -237,8 +237,7 @@
         <lb/>1 Emppur le Gouuoirneniene; otie A lteſſe Ré.
         <lb/>iala oampelcha foaadlleneil luy’pſt, goil
         <lb/>1
-        <lb/> tombe
-        <pb n="5"/>
+        <lb/> tombe <pb n="5"/>
         <lb/>5
         <lb/>tombe entre les aains de ceſt hpmme, puis que.
         <lb/>ce n’eſt point ſortir du Roiaume que d’eſtre mai
@@ -269,8 +268,7 @@
         <lb/>ſautar, &amp; ſe mettre à̀ couuert atrcnans qu’il rentre
         <lb/>dans le Miniſteriat incoptipens aprp qu’on vous
         <lb/>aura arreſté́, &amp; fait Monſieux le. Prince priſonnier.
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/>e
         <lb/>o neſecondeſois, ce que vo connoiſtrez trop
         <lb/>ſt Vi l’tre ſvous A’aeheutce que voas
@@ -300,8 +298,7 @@
         <lb/>pudéce ordinaire, &amp; puis que la qualite d’oncle
         <lb/>&amp;u Roy; v6ls fait prẽhre celle de cohſeruteur
         <lb/>de ſon’ Roiul ; ’iauillez à ſoh bien &amp; u vo
-        <lb rend="¬" break="no"/>ſtre, &amp; l’eſeittez aueun accommdenent auee
-        <pb n="7"/>
+        <lb rend="¬" break="no"/>ſtre, &amp; l’eſeittez aueun accommdenent auee <pb n="7"/>
         <lb/>vn eſtranger qui ne peut entrer en traitté, ny en
         <lb/>compoſtion auec vous &amp; pendant que vous tra
         <lb rend="¬" break="no"/>uaillez au repos du peuple, &amp; à la reſtaurarion de

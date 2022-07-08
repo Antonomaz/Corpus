@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau237_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau237_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -38,20 +39,21 @@
             de l'autre, &amp; du greffier. Du trentiesme janvier, mil six cent
             quarante-neuf.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-01-31">31 janvier 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49921</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49921" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49921"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14450</idno>
@@ -83,9 +85,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Les conseillers commis étaient Jacques Viole et Claude Le Doulx. Signé
+        <p source="Mazarine">Les conseillers commis étaient Jacques Viole et Claude Le Doulx. Signé
           "Guyet". D'après Hubert Carrier, texte paru le 31 janvier 1649 (Bibliothèque Mazarine, Ms.
           4682-1, f. 119v).</p>
+        <p source="Moreau">237. Arrêt de la cour de parlement, portant qu’il sera délivré passeports
+          aux courriers tant ordinaires qu’extraordinaires, sous la signature de deux de mes- sieurs
+          de la cour, commis pourl’ordre des postes, ou de l’un en l'absence de l’autre, et du
+          greffier. Du 30 jan- vier 1649. Par:s, par les imprimeurs et libraires or- dinaires du
+          roi, 1649, 4 pages. a — Les conseillers commis étaient Viole et Le Doulx.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,8 +111,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE PARLEMENT.
         <lb/>PORTANT QV’IL SERA DELIVRE
@@ -119,7 +125,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires
         <lb/>du Roy.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Maieſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Maieſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>EXTRAICT DES REGISTRES

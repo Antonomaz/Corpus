@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2959_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2959_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -26,7 +27,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14991"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">La raillerie sans venin, a monsieur le Prince.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
           <publisher ref="isni:0000000000278564">
@@ -41,13 +42,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49033</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49033" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49033"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13872</idno>
@@ -79,9 +79,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En prose et en vers. Autre édition, 7 p., sans adresse ni date, repérée
+        <p source="Mazarine">En prose et en vers. Autre édition, 7 p., sans adresse ni date, repérée
           par Hubert Carrier (Bibliothèque Mazarine, Ms 4682-5, f. 2v). Signé "La Coquette du
           Marais.". Texte paru le 28 juillet 1650 d'après H. Carrier.</p>
+        <p source="Moreau">2959. Raillerie (la) sans venin, à monsieur le Prince. Paris, Denys Pelé,
+          1650, 7 pages. Signé la Coquette du Marais.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,8 +100,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA
         <lb/>RAILLERIE
         <lb/>SANS VENIN.

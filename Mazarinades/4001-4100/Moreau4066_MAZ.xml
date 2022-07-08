@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau4066_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau4066_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -38,7 +39,9 @@
             contradictoirement opposées à celles de la politique, de la morale, &amp; du
             christianisme. Le tout verifié par des exemples tirez de sa vie.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" notBefore="1650-09-15" notAfter="1650-09-30">seconde quinzaine de
             septembre 1650</date>
@@ -46,13 +49,12 @@
             <measure unit="page" quantity="35"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48994</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48994" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48994"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12417</idno>
@@ -84,13 +86,18 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Avant-propos. Deux états (A/B): année en caractères de taille
+        <p source="Mazarine">Avant-propos. Deux états (A/B): année en caractères de taille
           supérieure/inférieure ; p. 3 l. 13 "malie"/"malice", l. 14 "d'aveuglement"/"daveuglement",
           l. 15 "d'ospiniastreté"/"d'opiniatreté" ; p. 4 l. 3 "obligé de"/"obligé ce de", l. 11
           "desesperer"/"desesper", l. 22 "mesura"/"mesurera". Par Claude Du Bosc de Montandré,
           d'après Célestin Moreau, confirmé par Hubert Carrier, "La Presse de la Fronde (1648-1653)
           : les Mazarinades", II, Genève, 1991, p. 53. Texte paru dans la seconde quinzaine de
           septembre 1650, d'après Hubert Carrier (Bibliothèque Mazarine, Ms. 4682-5, f. 413).</p>
+        <p source="Moreau">4066. Vrai (le) caractère du tyran, avec toutes les maximes du Mazarin
+          contradictoi rement opposées à celles de la politique, de la morale et du christia nisme,
+          le tout vérifié par des exemples tirés de sa vie. (S. 1.), 1650, 35 pages. Dubosc
+          Montandré. L'auteur porte le nombre des Mazarinades à 11 729. C'est le seul chiffre précis
+          que j'aie trouvé dans les pamphlets ; et je le donne.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,8 +114,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE VRAY CHARACTERE
         <lb/>DV TYRAN
         <lb/>OV TOVTES LES MAXIMES DV

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3170_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3170_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -42,17 +38,19 @@
           <title source="Moreau">Relation fidèle de ce qui s'est passé de plus remarquable au
             Parlement depuis 10 février 1649 jusquesà la fin du mois, envoyée aux provinces.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Les Imprimeurs et libraires ordinaires du Roy</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du Roi</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4 222 mm</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 318026</idno>
@@ -84,8 +82,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Mention de priv. Moreau 3170</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Mention de priv. Moreau 3170</p>
+        <p source="Moreau">3170. Relation fidèle de ce qui s'est passé de plus re- (f F. 2/(53)
+          marquable au Parlement depuis le 10 février 1649 jusques à la fin du mois , envoyée aux
+          provinces. Paris, par les imprimeurs et libraires ordinaires du roi, 1649,yJ-fpages. 10
+          Suite de la pièce intitulée : Relation de ce qui t'est passé à Paris depuis l'enlèvement
+          du roi, etc. Elle a été publiée aussi d'ordre du Parlement. , s .ç. (çq) Il y en a une
+          édition de Rouen chez David du Petitval et Jean ^ / Viret, 1649, 12 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -94,6 +98,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -109,8 +117,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>88o26
         <lb/>DT ArTT
         <lb/>H 4 l
@@ -135,8 +142,7 @@
         <lb/> Par les Imprimeurs &amp; Libraires ordinaires
         <lb/>du Roy.
         <lb/>M. DC. X LIX.
-        <lb/>Auec Priuilege de ſa Majefté́.
-        <pb n="2"/>
+        <lb/>Auec Priuilege de ſa Majefté́. <pb n="2"/>
         <lb/>l
         <lb rend="¬" break="no"/>
         <lb rend="¬" break="no"/>.
@@ -145,8 +151,7 @@
         <lb/>1
         <lb rend="¬" break="no"/>.
         <lb/>n. air
-        <lb/>..’.l¬
-        <pb n="3"/>
+        <lb/>..’.l¬ <pb n="3"/>
         <lb/> , 2. .S .
         <lb/>S e Eeoe- f Sae ESa
         <lb/>SfſẽSeCSCSisCbes
@@ -194,8 +199,7 @@
         <lb/>de deux Tropettes, lequel demandoit à parler au Pat le ment &amp; à
         <lb/>la Ville.
         <lb/>Moaſianr le Priee de Couty fut eonuie, &amp; Meſſieur les Gene
-        <lb rend="¬" break="no"/>¬ A ij
-        <pb n="4"/>
+        <lb rend="¬" break="no"/>¬ A ij <pb n="4"/>
         <lb/>4
         <lb/>raux aduertis d’aſiſter à ladahberation d’vne affaire ſiimportante,
         <lb/>dont la reſolution fut, que le Parlement n’eſtant ny Sounerain, ny
@@ -245,8 +249,7 @@
         inuio
         <lb/>lable fidelité.
         <lb/> La Reyne ayant commandeé à Monſieur le Chancelier de faire
-        <lb/>etendre la volonté, leurt dit qu’elle auoit a greable les teſmoignges
-        <pb n="5"/>
+        <lb/>etendre la volonté, leurt dit qu’elle auoit a greable les teſmoignges <pb n="5"/>
         <lb/>1
         <lb/>de ſoubfmiſion &amp; de reſpede la Compagnie, qu’elle ſouhaitoit en
         <lb/>voir des efets pour en confirner les aſſenrances, &amp; que la Reyne outre
@@ -342,8 +345,7 @@
         <lb rend="¬" break="no"/>dites trouppes peuſſent agir aurement, que’pour le ſeruice &amp;
         ſelon les
         <lb/>bonnes intentions du Parſenent: Et au cas que lcdit Parlement n’euſt
-        <lb/>beſoin deſdites trouppes pour ſe deffſendre, ie donne parole au nom d
-        <pb n="7"/>
+        <lb/>beſoin deſdites trouppes pour ſe deffſendre, ie donne parole au nom d <pb n="7"/>
         <lb/> Roy mon Maiſtre, qu’elles demeureront ſur les frontieres ſans rien en.
         <lb/>reprendre pendant que ladite Paix ſe traitera. I’ay prié la Compagnie
         <lb/>de delihberer ſur ma popoſitrion &amp; mes offres, &amp; me tendre reſponſe
@@ -393,8 +395,7 @@
         <lb rend="¬" break="no"/>peſché de faire prendre iuſques icy le quartier aà nos trouppes,
         nos.
         <lb/>mertrons à̀ la campagne dans cetrte ſepmaine pour fure vue ceueue g
-        <lb rend="¬" break="no"/>erale de noſtre armée.
-        <pb n="8"/>
+        <lb rend="¬" break="no"/>erale de noſtre armée. <pb n="8"/>
         <lb/>Nous attendons dans la fin du mois, Monſieur de Longueville anee
         <lb/>dix à douze nmil hommes. Monſieur le Duc de Retz &amp; Monſieur le
         <lb/>Mar quis de Coaquin ont le ué en Bretagne, &amp; vont joindre lesrs trou
@@ -445,8 +446,7 @@
         <lb/>Les Députez s’eſtant retirez &amp; ne voyant pas de diſpoſition aux cho
         <lb rend="¬" break="no"/>ſes qu’ils pouuoient daſrer, eſtinerent que peur-eftre dans vne
         confe
-        <lb rend="¬" break="no"/>enc
-        <pb n="9"/>
+        <lb rend="¬" break="no"/>enc <pb n="9"/>
         <lb/>9
         <lb/>ence de peude perſonnes où toutes les raiſone fe diſcutent mieux e
         <lb/>partieulier qu’en publiec, ils feroient vn plus grand effect: Elle fut me
@@ -494,8 +494,7 @@
         aſiſteronr’quarre ’re
         <lb rend="¬" break="no"/>idens de ladite Cour, vn ou denx des Generaux, deux Conſeillers de
         la
-        <lb/>Grand’Chambre, vn Conſeiller de chacune Chanbre des Enqueftes,
-        <pb n="10"/>
+        <lb/>Grand’Chambre, vn Conſeiller de chacune Chanbre des Enqueftes, <pb n="10"/>
         <lb/>&amp; vn des Requeſtes, comme anſſi vn Maiſtre des Requeſtes, Deux de
         <lb/>chacune des Compagnics Soaueraines de cette Ville, Et le Preuoſt des
         <lb/>Marchands, ou en ſon ablence l’vn des Eſcheuins, Leſquels auront plein
@@ -527,8 +526,7 @@
         <lb/>Signé,
         <lb/> oV Ti ’rT.
         <lb/>Collatioméa’ riginal par moy Caoſiller
-        <lb/>Secretaire ds Roy e&amp; de ſes Fnaes.
-        <pb n="11"/>
+        <lb/>Secretaire ds Roy e&amp; de ſes Fnaes. <pb n="11"/>
         <lb/>
         <lb/>1 9
         <lb/>1

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2suppl62_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2suppl62_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -39,7 +40,9 @@
           <title source="Mazarine">Declaration du Roy, pour l'establissement d'une Chambre de
             justice. Verifiées en la Cour des aydes, le 23 juillet 1648.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1648">1648</date>
           <date source="Antonomaz" notBefore="1648-07-23">vérifiée en Parlement le 23 juillet
             1648</date>
@@ -47,13 +50,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49874</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49874" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49874"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14385</idno>
@@ -85,9 +87,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mention de l'arrêt de lecture, publication et enregistrement de la
+        <p source="Mazarine">Mention de l'arrêt de lecture, publication et enregistrement de la
           déclaration en la Cour des aides les 23 et 24 juillet 1648 suivi du texte de l'arrêt
           lui-même, signés "Boucher". Déclaration royale datée du 16 juillet 1648.</p>
+        <p source="Moreau">62. Mévdaration u roy pour l'establissement d'uue chawbre de justice,
+          vériliée en la Cour des aydes le 23 juil- let 1G48. Paris, par les imprimeurs et libraires
+          ordinaires du roy, VG48; 8 puges- La declarsuan est du 16 juiliel.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,8 +111,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>DECLARATION
         <lb/>DV ROY
         <lb/>POVR L'ESTABLISSEMENT
@@ -117,7 +121,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires
         <lb/>du Roy.
         <lb/>M. DC. XLVIII.
-        <lb/><imprimatur>Auec Privilege de ſa Majeſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Privilege de ſa Majeſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

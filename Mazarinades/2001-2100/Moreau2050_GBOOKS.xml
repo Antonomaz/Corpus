@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2050_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2050_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -51,18 +47,19 @@
           <title source="Moreau">Lettre de replique de la petite Nichon du Marais à M. le prince de
             Condé, à Saint-Germain .</title>
           <pubPlace>Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Vienne</settlement>
+            <settlement ref="geonames:2761369">Vienne</settlement>
             <institution>Bibliothèque nationale d'Autriche</institution>
             <repository/>
             <idno type="cote">127419-B ALT MAG</idno>
@@ -94,7 +91,10 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2050. Lettre de replique de la petite Nichon du Marais à M. le prince de
+          Condé, à Saint-Germain.Sans Lieu, 1649, 8 pages. Ni moins spirituelle, ni moins libre que
+          la Lettre de la petite Nichon, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,6 +103,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -118,8 +121,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>T D E
         <lb/>1 I
         <lb/> L I IL I L
@@ -131,8 +133,7 @@
         <lb/> A S. GERMAIN.
         <lb/>
         <lb/>M. DC. XLIX.
-        <lb/> 12I9-B
-        <pb n="2"/>
+        <lb/> 12I9-B <pb n="2"/>
         <lb/>¬¬
         <lb rend="¬" break="no"/> g¬ JpP pe
         <lb rend="¬" break="no"/>p
@@ -160,8 +161,7 @@
         <lb/>3 2 .
         <lb/>.1
         <lb/>!
-        <lb/> oogle
-        <pb n="3"/>
+        <lb/> oogle <pb n="3"/>
         <lb/>3
         <lb/>AôAeuelliails
         <lb/>eSE
@@ -187,8 +187,7 @@
         <lb/>erfonſe quoeoutrnuet hie, ermplie
         <lb/>li ſfern n ſfenauanſe d ſenoale nie
         <lb/>npnri auee ataneeſeſpe qe n’dos?
-        <lb/> A ij
-        <pb n="4"/>
+        <lb/> A ij <pb n="4"/>
         <lb/>vne porſonne devbſtce eatdbſta Aêrê.
         <lb/>te. Ainſi, Monſieur, ne dois-ie pas vous dire
         <lb/>en toute humilité, que ſi vous m’eſtinmez neſ
@@ -246,8 +245,7 @@
         <lb/>ptie t-auorteapyu deaurer auxſneu4
         <lb/>rables s ſi yaeleurous emporue plu
         <lb/> oe aa vareſeraux Peies Maiſons,
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/> 6
         <lb/>Si vousattaque aulſfiles FauxbougeS: Mithel
         <lb/>&amp;S. Iaeques, les haremx &amp; les putins
@@ -274,8 +272,7 @@
         <lb/>Si pa le Faubourig-S. Martin, l’on vous cou
         <lb rend="¬" break="no"/>alndra e faire eralre dſns’S. Lare; dâ le
         <lb rend="¬" break="no"/>Pere V?ncent fer̀ ſes effores d’vouscou
-        <lb rend="¬" break="no"/>îrt; &amp;’devous enſe’ghet a iaare deaides
-        <pb n="7"/>
+        <lb rend="¬" break="no"/>îrt; &amp;’devous enſe’ghet a iaare deaides <pb n="7"/>
         <lb/>3
         <lb/>àfats.- Vos popdſais drvbonq a
         <lb rend="¬" break="no"/>b dMotrmaoietal lsMadltyes aaa
@@ -303,8 +300,7 @@
         <lb rend="¬" break="no"/>gneur. C’eſt vne habitude que i’ay contractée
         <lb rend="¬" break="no"/>lors que vous me traittiezcomme voſtre fem
         <lb rend="¬" break="no"/>me, &amp; encore auec beaucoup plus d’affection.
-        <lb/>Mais vous en auez perdu le ſouuenir, &amp; moy ie
-        <pb n="8"/>
+        <lb/>Mais vous en auez perdu le ſouuenir, &amp; moy ie <pb n="8"/>
         <lb/>, ,,a , ¬¬,,, ,a .
         <lb/>e pdray amais la, emoqjire des, maux que
         <lb/>amus aſea la Fsance, qui n m’obligen4

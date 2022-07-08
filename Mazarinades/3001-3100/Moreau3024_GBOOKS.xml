@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3024_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3024_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -40,12 +36,12 @@
         <bibl>
           <ref target="https://books.google.fr/books?id=3aLd99qW_XIC&amp;hl=fr"/>
           <author/>
-          <title source="Mazarine">Recit veritable de tout ce qui s'est fait et passé en Parlement, le
-            mercredy 16. octobre 1652. En presence de son Alt. Royale, et autres ducs &amp; pairs de
-            France. Avec la response du Roy à la derniere lettre &amp; declaration de son Altesse
+          <title source="Mazarine">Recit veritable de tout ce qui s'est fait et passé en Parlement,
+            le mercredy 16. octobre 1652. En presence de son Alt. Royale, et autres ducs &amp; pairs
+            de France. Avec la response du Roy à la derniere lettre &amp; declaration de son Altesse
             Royale.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>
+          <publisher ref="viaf:120750791">
             <persName>
               <forename>Laurent</forename>
               <surname>Toussaint</surname>
@@ -56,13 +52,12 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM01185</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM01185" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50092"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309306</idno>
@@ -94,9 +89,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Hubert Carrier, texte paru après le 17octobre 1652
+        <p source="Mazarine">D'après Hubert Carrier, texte paru après le 17octobre 1652
           (Bibliothèque Mazarine, Ms. 4682-5, f. 29v).</p>
-        <p source="BMLyon_notes">Recueil factice.</p>
+        <p source="BM_Lyon">Recueil factice.</p>
+        <p source="Moreau">3024. Récit véritable de tout ce qui s'est fait et passé en Parlement, le
+          mercredi 16 octobre 1652, en pré sence de Son Altesse Royale et autres ducs et pairs de
+          France, avec la réponse du roi à la dernière lettre et déclaration de Son Altesse Royale.
+          Paris , Laurent Toussaint, 1652, 7 pages. Rare.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -105,6 +104,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -120,8 +123,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>H
         <lb/>. .
         <lb/>¬1
@@ -143,11 +145,9 @@
         <lb/>Che LAVRENI TVSSAINT.
         <lb/>M. De L11
         <lb/>3o980
+        <lb/>. <pb n="2"/>
         <lb/>.
-        <pb n="2"/>
-        <lb/>.
-        <lb/>1
-        <pb n="3"/>
+        <lb/>1 <pb n="3"/>
         <lb/>AA
         <lb/>é&amp;iẽẽS̃SSfe
         <lb/> e’ét’t t ée?
@@ -168,8 +168,7 @@
         <lb rend="¬" break="no"/> dy ſur les ſix heunes du
         <lb/>Sv ſoir, Son Alteſſe Royalle,
         <lb/>auroit baillé ſes ordres de faire aduertis
-        <lb/>Meſſieurs. du Parlemen qu’il s’y deuoi
-        <pb n="4"/>
+        <lb/>Meſſieurs. du Parlemen qu’il s’y deuoi <pb n="4"/>
         <lb/>rendre le lendemain pour faire ouuerture
         <lb/>du pacquet à luy apporté par ſon Cou
         <lb rend="¬" break="no"/>rier.
@@ -196,8 +195,7 @@
         <lb rend="¬" break="no"/>compagnez de onſieur leDuc de Beau
         <lb rend="¬" break="no"/>fort venus en la grand’-Chambre, en la
         <lb rend="¬" break="no"/>quelle eſtns, Son Alteſſe Royalea dit,
-        <lb/>qu’il
-        <pb n="5"/>
+        <lb/>qu’il <pb n="5"/>
         <lb/>53
         <lb/>qu’il auoitreceu Lettre du Roy, portat
         <lb/>Reſponſe à celle qu’id auoit enuoyee l’ou
@@ -232,8 +230,7 @@
         <lb/>e
         <lb/>
         <lb rend="¬" break="no"/>2
-        <lb/>A.
-        <pb n="6"/>
+        <lb/>A. <pb n="6"/>
         <lb/>6
         <lb/>&amp; quatneme luillee. Et d’auantage que
         <lb/>c’eſtoit touſiours pour gagner du temps,

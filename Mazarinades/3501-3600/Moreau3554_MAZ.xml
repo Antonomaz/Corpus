@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3554_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3554_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -47,13 +48,12 @@
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48918</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48918" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48918"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13735</idno>
@@ -85,7 +85,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Quatre états : la page de titre : avec "Cecilien" et signé "D" en bas
+        <p source="Mazarine">Quatre états : la page de titre : avec "Cecilien" et signé "D" en bas
           de la page 9 (état A) ; "Cecilien" et signé "C" en p. 9 (état B) ; "Cicilien" au titre et
           signé "D" en p. 9 (état C) et "Cicilien" avec la signature "C" (état D). Également publiée
           dans le recueil éditorial "Recueil de diverses pieces qui ont paru durant les mouvemens
@@ -94,6 +94,25 @@
           vraisemblablement au début du blocus, en janvier 1649, car il contient un appel à l'union
           des princes français pour chasser le Mazarin (Bibliothèque Mazarine, Ms. 4682-5, f.
           228v).</p>
+        <p source="Moreau">3554. Robe (la) sanglante de Jules Mazarin, ou les Véri- tables récits
+          des fourbes, des impostures et autres vices, par le sieur de Mirand , gentilhomme cécilien
+          (sic). * Paru, François Musnier, 1649, 12 pages. Ce pamphlet n'est ni des plus mauvais ni
+          des plus rares. On peut croire que le sieur Mirand ou Mirande était attaché à la maison du
+          duc de Longueville ; et alors ce serait de lui qu'il est question dans le numéro 23 de la
+          Muse de la Cour, 8 septem bre 1657. « Un des fameux goinfres de France , Digne homme à
+          souffleter potence , Mirande , escroc si renommé, Au ventre toujours affamé, Les dents
+          longues en dents de scie , A plate et grondante vessie. . . . Sachant que monsieur de
+          Chambov, Gouverneur de Caen pour le roy , Devoit traiter en excellence... ... Feignit si
+          bien l'envoyé Au festoyeur du festoyé Que l'hote étant d'esprit facile Le crut à cent pas
+          de la ville... . Il (fhôte) met tout en état De recevoir un potentat. Midi sonne ; une
+          heure redouble; Point de nouvelle pour un double On se met pourtant à table ; et Mirande
+          Mâche et brife comme un diable , Qui dit autant que chancre et plus. Il boit mieux que ne
+          fit Racchus. 11 met les morceaux quatre à quatre.... Ainsi repu des biens de Dieu , Paie
+          son traiteur d'un adieu... Mais Chamboy qui comprend qu'il a éte dupe, place Mirande a
+          califourchon Le cul tourné vers la culace De ses foudroyants fauconneaux... Le goinfre en
+          étreignant le cuivre Accoloit la mort pour mieux vivre. Canon tirant, mon drole en l'aer
+          Faisoit miracle à cabrioler. Canon humain , canon de fonte Faisoit là sa décharge prompte.
+          Enfin au dernier qu'on braqua , Le parasite fit ka, ka. m</p>
       </abstract>
       <textClass>
         <keywords>
@@ -110,8 +129,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA ROBBE
         <lb/>SANGLANTE
         <lb/>DE

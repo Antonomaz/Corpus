@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2481_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2481_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,19 +36,20 @@
             modelle d'un grand Gustave roy de Suede. A monsieur Hambreus docteur en droit canon,
             &amp; professeur du Roy és langues orientales.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49111</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49111" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49111"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13510</idno>
@@ -79,7 +81,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Épitre dédicatoire signée "I. G. D."</p>
+        <p source="Mazarine">Épitre dédicatoire signée "I. G. D."</p>
+        <p source="Moreau">2481. Miroir royal, ou Fidèle portrait du monarque ac compli, tiré au
+          modèle d'un grand Gustave, roi de Suède, à monsieur Hambreus, docteur en droit canon et
+          professeur du roi ès langues orientales. Paris, 1649,7 pages. L'épître dédicatoire est
+          signée J. G. D. On y voit que le docteur Hambreus était Suédois, et que le Miroir royal a
+          été publié après la paix. Le second titre de la pièce est : « Préceptes de Charles IX, roi
+          de Suède, à son fils Gustave Adolphe, après lesquels ledit Charles vécut encore huit ans,
+          l'apprivoisant (sic) son jeune aiglon aux (IN'ACS, m</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>MIROIR
         <lb/>ROYAL
         <lb/>OV

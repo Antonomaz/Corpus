@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau206_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau206_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -34,20 +35,21 @@
             le payement des rentes constituées sur la Ville. Des premier &amp; quatriéme septembre
             1648.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1648">1648</date>
           <date source="Carrier" when="1648-09-05">5 septembre 1648</date>
           <extent>
             <measure unit="page" quantity="10"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49833</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49833" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49833"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14401</idno>
@@ -79,12 +81,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mention de lecture et publication à l'Hôtel de ville de Paris le 9
+        <p source="Mazarine">Mention de lecture et publication à l'Hôtel de ville de Paris le 9
           septembre 1648, signée "Lemaire". Autre édition, par Michel Mettayer en 8 p. in-4 (Hubert
           Carrier, Bibliothèque Mazarine, Ms. 4682-1, f. 110v). Publié également dans "Recueil de
           diverses pieces qui ont paru durant les mouvemens derniers de l'année 1649.", p. 43-46
           (BM00059). Arrêts signés "Dutillet". D'après H. Carrier, texte paru le 5 septembre
           1648.</p>
+        <p source="Moreau">206. Arrêts de la cour de parlement, portants (sic) règlement général
+          pour le paiement des rentes constituées sur la ville. Des premier et quatrième septembre
+          1648. Paris; par les imprimeurs et libraires ordinaires du roi , 1648, 10 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -105,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARRESTS
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT:
@@ -118,7 +122,8 @@
         <lb/>PAR LES IMPRIMEVRS &amp; LIBRAIRES
         <lb/>ordinaires du Roy.
         <lb/>M. DC. XLVIII.
-        <lb/><imprimatur>AVEC PRIVILEGE DE SA MAJESTÉ</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>AVEC PRIVILEGE DE SA MAJESTÉ</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

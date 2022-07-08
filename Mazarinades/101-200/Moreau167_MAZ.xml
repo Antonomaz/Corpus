@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau167_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau167_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -50,13 +51,12 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49383</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49383" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49383"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14236</idno>
@@ -88,8 +88,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Arrêt daté du 11 octobre 1649. Mention de publication de l'arrêt le 12
+        <p source="Mazarine">Arrêt daté du 11 octobre 1649. Mention de publication de l'arrêt le 12
           octobre 1649 signée "Caussan". Signé "De Pontac".</p>
+        <p source="Moreau">167. Arrêt de la cour de parlement de Bordeaux pour la traite et conduite
+          des blés dans la ville de Paris, suivant la permission et approbation de Sa Majesté, qu’en
+          ont un nommé le Bailly et autres marchands de ladite ville de Paris d’y en amener; et
+          défenses sont faites, sur peine de la vie, d’y mettre empêchement. Paris, Alexandre
+          Lesselin, jouxte la copie imprimée à Bordeaux, 1649, 6 pages. Daté du 11 octobre 1649.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,8 +114,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1216_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1216_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -37,20 +38,21 @@
           <title source="Mazarine">L' Enfer burlesque, ou Le sixiesme de l'Eneide travestie, et
             dediée a madamoiselle de Chevreuse. Le tout accomodé à l'histoire du temps.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-03-11">après la paix de Saint-Germain</date>
           <extent>
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50289</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50289" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50289"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10473</idno>
@@ -82,7 +84,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. Épître dédicatoire signée "C.M.C.P.D." à
+        <p source="Mazarine">En vers octosyllabes. Épître dédicatoire signée "C.M.C.P.D." à
           madamoiselle de Chevreuse ; vers adressés à "monsieur Virgille" dédiés à la même ; avis au
           lecteur ; "Epistre burlesque" en vers à la même. Notes marginales. 2 états (A/B) de la p.
           6, col. 1, position de la note marginale : en regard des vers "39" à "44" / "42" à "46".
@@ -93,6 +95,24 @@
           graphiques (BM01382). Par Laurent de Laffemas d’après Lachèvre, confirmé par Hubert
           Carrier (Bibliothèque Mazarine, Ms. 4682-2, f. 277v). D'après Célestin Moreau, confirmé
           par H. Carrier, texte paru après la paix de Saint-Germain.</p>
+        <p source="Moreau">1216. Enfer (l) burlesque ; ou le Sixième HstÉ” de l’Eneïde travestie et
+          dédiée à mademoiselle de Chevreuse, le tout accommodé à l’histoire du temps. Jouxte la
+          copie imprimée à Anvers, Paris, 1649, 36 pages, sans le titre, les épitres et l’avis au
+          lecteur. Les épîtres sont, toutes d_ewf, adressées à mademoiselle de Che- vreuse, l’une,
+          en prose, signée C. M. C. P..D.; l’auÈre, en vers. L’Enfer burlesque a été publié après la
+          paix de Saint-Germain; car 1° l’auteur dit que le retour de mademoiselle de Chevreuse est
+          un des plus doux fruits de la paix (1° épître ) ; 2° je lis dans l’Avis au lecteur : « je
+          me résolus à souffrir le débit d’un livre qui se ressent des derniers troubles. » Ce n’est
+          ni le sixième livre de Scarron , ni celui des trois Per- rault. Il y a pourtant de la
+          facilité, de l’esprit; et généralement les rimes y sont riches. L’auteur nomme Champagne,
+          le coiffeur , l’abbé Le Normant, qui parle avec science de la providence ; Gilles, le
+          baigneur ; et Godenot, dont il y est dit que, dans la soutane, on appelle les détours des
+          procureurs les godenot de la chicane. Le mot était connu ; mais savait-on bien qu’il vient
+          de l’Ænfer burles- que ? / « On y vout (dans l’enfer des damnés) des parlementaires, Et
+          ceux qui troublent les affaires, Si parfois , et quand il le faut , Un roi veut lever un
+          impôt. » L'auteur cite, en marge de la p. 6, une chanson du temps qui commence ainsi : «
+          Si vous n’êtes Italiens, Vous ne verrez pas l'Orphée. » On reprochait à Mazarin de
+          n’admettre aux spectacles de la cour que des Italicns.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -110,8 +130,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L'ENFER
         <lb/>BVRLESQVE.
         <lb/>OV LE
@@ -425,8 +444,7 @@
         <l>
           <lb/>n</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>a</l>
         <l>
@@ -477,16 +495,13 @@
         <l>
           <lb/> aa </l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>i ’ r’ uae ar </l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/> 7</l>
         <l>
@@ -512,8 +527,7 @@
         <l>
           <lb/>LE SIXIESME DE L’ENEID</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>r V </l>
         <l>
@@ -3620,8 +3634,7 @@
         <l>
           <lb/> Mon</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/> Qe</l>
         <l>
@@ -3816,8 +3829,7 @@
         <l>
           <lb/>On ne ſçait que l’eſprit deuint.</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <pb n="36"/>
         <l>
           <lb/> en !eu</l>
@@ -6190,8 +6202,7 @@
         <l>
           <lb/>6</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>L’Enfer Barleſque,</l>
         <l>
@@ -7864,8 +7875,7 @@
         <l>
           <lb/>1</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>ou le ſixieſme de lEneide Traueſtie.</l>
         <l>

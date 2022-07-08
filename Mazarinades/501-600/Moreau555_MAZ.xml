@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau555_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau555_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -45,7 +46,9 @@
             &amp; la naissance de M. de Beaufort. VI. Et la vie irreprochable de M. de
             Broussel.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-08-01" notAfter="1652-08-07">première semaine
             d'août 1652</date>
@@ -53,13 +56,12 @@
             <measure unit="page" quantity="32"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50122</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50122" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50122"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14977-5</idno>
@@ -91,7 +93,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Fait référence à la mazarinade intitulée "La verité toute nuë ou Advis
+        <p source="Mazarine">Fait référence à la mazarinade intitulée "La verité toute nuë ou Advis
           des-interessé sur les veritables causes des maux de l'Estat, &amp; les moyens d'y apporter
           le remede" (BM01496, BM01497 et BM01498). Édition composite. 2 états du premier cahier :
           p. 4, l. 9 "eust du moins pratiqué" (A1) / "eust du moins partagé" (A2), l.15 / l. 16
@@ -129,6 +131,13 @@
           donc très peu de temps après "La vérité toute nue" ; de même dans le recueil chronologique
           de la même bibliothèque coté 4° A 12825-31 (Bibliothèque Mazarine, Ms. 4682-1, f.
           274v).</p>
+        <p source="Moreau">555. Avocat général (l’), soutenant la cause de tous les grands de
+          l'État, outrageusement offensés dans le li- belle intitulé : Za Vérité toute nue, dans
+          laquelle l’auteur insolent choque : 4° l’honneur de la reine ; ° la réputation de Son
+          Altesse Royale; 3° la gloire de monseigneur le Prince, de M. de Nemours, de M. de
+          Larochefoucault; 4° la justice et l’intégrité du parle- ment; 5° la générosité et la
+          naisssance de M. de Beau- fort; 6° et la vie irréprochable de M. de Broussel. (S. 1.,
+          1652), 32 pages. Une des pièces et des plus mauvaises pièces de Dubosc Mon- tandré.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -152,8 +161,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L’ADVOCAT
         <lb/>GENERAL,
         <lb/>SOVSTENANT LA CAVSE DE TOVS
@@ -170,8 +178,7 @@
         <lb/>mours, &amp; de M. de la Rochefoucaut.
         <lb/>IIII. La Iuſtice &amp; l’integrité du Parlement.
         <lb/>V. La generoſité &amp; la naiſſance de M. de Beaufort.
-        <lb/>VI. Et la vie irreprochable de M. de Brouſſel.
-        <pb n="10"/>
+        <lb/>VI. Et la vie irreprochable de M. de Brouſſel. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>L'ADVOCAT

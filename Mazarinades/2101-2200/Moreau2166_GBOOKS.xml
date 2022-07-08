@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2166_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2166_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -41,24 +37,24 @@
             <persName>
               <forename>Louis</forename>
               <surname>Bourbon (De)</surname>
-              <name>Louis XIV</name>
             </persName>
           </author>
           <title source="Moreau">Lettre du roi écrite au Parlement de Provence, avec l'arrêt de la
             cour, du 23 octobre 1651, intervenu en conséquence de ladite lettre.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Les imprimeurs &amp; libraires ordinaires du Roy</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Moreau" when="1651">1651</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 310737</idno>
@@ -90,7 +86,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2166. Lettre du roi écrite au Parlement de Provence, avec l'arrêt de la
+          cour, du 23 octobre 1651, in tervenu en conséquence de ladite lettre. Paris, par les
+          imprimeurs et libraires ordinaires du roi, 1651, 8 pages. Datée du 13 octobre. Quoiqu'il y
+          en ait une autre édition de Paris, 1651 , sans nom d'imprimeur, cette pièce n'est
+          cependant pas commune.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,6 +100,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -114,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>LETTRE
         <lb/>DV RO Y,
         <lb/>AV PARLEMENT
@@ -126,8 +129,7 @@
         <lb/> e i eeeuu
         <lb rend="¬" break="no"/>Par les Im
         <lb rend="¬" break="no"/>er
-        <lb rend="¬" break="no"/>A Pnauld, ſai uu
-        <pb n="2"/>
+        <lb rend="¬" break="no"/>A Pnauld, ſai uu <pb n="2"/>
         <lb/>yre
         <lb/> .
         <lb rend="¬" break="no"/>
@@ -177,8 +179,7 @@
         <lb/>.. ...
         <lb/> e...
         <lb/> 2
-        <lb/>, oogle
-        <pb n="3"/>
+        <lb/>, oogle <pb n="3"/>
         <lb/>AſSAſ
         <lb/>
         <lb rend="¬" break="no"/>LETRED VRoY.
@@ -199,8 +200,7 @@
         <lb rend="¬" break="no"/>Htieſme de ce mois le zele &amp; l’ffe
         <lb rend="¬" break="no"/>tion que voſtre Compagnie a fais
         <lb/>A ij
-        <lb/>2¬
-        <pb n="4"/>
+        <lb/>2¬ <pb n="4"/>
         <lb/>4
         <lb/>paroiſtre en ce rencontre pour e bié
         <lb/>&amp; aduantage de nos affaires &amp; ſerui
@@ -223,8 +223,7 @@
         <lb rend="¬" break="no"/>ehaux de Camp &amp; Meſtire de oamp
         <lb/>d’vni Regiment de Caualleieetr
         <lb rend="¬" break="no"/>ten pournpſtreſeruice; ds vous fa
-        <lb rend="¬" break="no"/> re encores
-        <pb n="5"/>
+        <lb rend="¬" break="no"/> re encores <pb n="5"/>
         <lb/>re encores plus particulierement e
         <lb rend="¬" break="no"/>tendre ce qui eſt de nqsbonnes vo
         <lb rend="¬" break="no"/>loatez en voſtre endrqis, ce qui
@@ -246,8 +245,7 @@
         <lb rend="¬" break="no"/>Cnciergee du Palais &amp; autres
         <lb rend="¬" break="no"/>’Rayles, pout eſte procde à
         <lb rend="¬" break="no"/>coe de ooaihlaemans ſlon lai
-        <lb rend="¬" break="no"/>B
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>B <pb n="6"/>
         <lb/>6
         <lb/>gueur des loix. ſi n’yfaites faute,
         <lb/>CARtel eſt noſtre plaiſir. Donnéaà̀
@@ -272,8 +270,7 @@
         <lb rend="¬" break="no"/>gnie &amp; à la Prouince par le chanigedehte
         <lb/>Gouueineur: Et pouruoyadneſurd̀ feqôiſih
         <lb/>verbdlemon faitepar, le Procureut Gefirl
-        <lb/>du Rboy,; a fjt e fait jhibiions &amp; efaueà
-        <pb n="7"/>
+        <lb/>du Rboy,; a fjt e fait jhibiions &amp; efaueà <pb n="7"/>
         <lb/>outes perſonnes de quelque eſtat, qualité&amp;
         <lb/>condition qu’ils ſoient, de faire aucunes le
         <lb rend="¬" break="no"/>uéesnattrouppemens de gens de guerre ſoit

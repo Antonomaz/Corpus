@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2397_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2397_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,19 +43,20 @@
             souverain, qu'ils doivent avoir, aprez la mort de leur Roy. Traduit d'espagnol en
             françois.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49089</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49089" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49089"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13491</idno>
@@ -86,12 +88,18 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Probablement faux manifeste, sans version originale en espagnol. 2
+        <p source="Mazarine">Probablement faux manifeste, sans version originale en espagnol. 2
           états pour la p. 10 : état A, les chiffres 1 et 0 sont inversés et à la ligne 10 on lit
           "qu'il eut demoli", l. 12 se termine par "Plutar-", fin l. 13 "Ou comme Ci-" ; état B, les
           chiffres ne sont pas inversés, l. 10 on lit "qu'il eust demoly", en fin de l. 12 "Plu-" et
           en fin de l. 13 "ou comme Ci-". Le titre de départ donne le nom de l'auteur : "Dom F. de
           Silves."</p>
+        <p source="Moreau">2397. Manifeste, ou Notable discours que dom F. de S. (de Sylves),
+          ci-devant ministre d'État du roi catho lique, a fait à tous les peuples d'Espagne, et
+          particu lièrement à ceux qui gouvernent actuellement les affaires de cette monarchie,
+          touchant l'élection du sou verain qu'ils doivent avoir après la mort de leur roi, traduit
+          de l'espagnol en françois. Sans Lieu, 1650, 16 pages. Don F. propose d'appeler Louis XIV
+          au trône d'Espagne.A ce titre, le pamphlet est curieux, fût-il apocryphe.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -110,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>MANIFESTE
         <lb/>OV
         <lb/>NOTABLE DISCOVRS

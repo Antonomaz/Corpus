@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau199_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau199_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,21 +37,22 @@
             declarations de sa Majesté concernant le payement des tailles, nonobstant l'ordonnance
             faite par le sieur Le Tillier conseiller du Roy en ses conseils, &amp; intendant des
             finances de France.</title>
-          <pubPlace source="Mazarine" ref="geonames:2982652">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <pubPlace source="Mazarine">Sans Lieu</pubPlace>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Antonomaz" when="1650-03-05">daté du 5 mars 1650</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49828</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49828" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49828"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14204</idno>
@@ -82,7 +84,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Titre de départ. Signé "Dupré". Acte daté du 5 mars 1650.</p>
+        <p source="Mazarine">Titre de départ. Signé "Dupré". Acte daté du 5 mars 1650.</p>
+        <p source="Moreau">199. Arrêt de la cour de parlement de Dauphiné sur l’exécution des
+          déclarations de Sa Majesté, concernant le paiement des tailles, nonobstant l’ordonnance
+          faite par le sieur Le Tillier, conseiller du roi en ses conseils et intendant des finances
+          de France.(S. l. n. d.), 4 pages. Daté du 5 mars 1650.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>1
         <lb/>ARREST DE LA COVR DV PARLEMENT DE
         <lb/>Dauphiné, ſur l’execution des Declarations de ſa Maieſté con¬

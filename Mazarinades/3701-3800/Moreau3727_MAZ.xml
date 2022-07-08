@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3727_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3727_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,7 +32,9 @@
           <title source="Mazarine">La suitte du parlement burlesque de Pontoise, et les moyens de
             recusations, envoyez par la ville de Paris à ceux qui le composent. Burlesques.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-08-20" notAfter="1652-08-25">entre le 20 et le 25
             août 1652</date>
@@ -39,13 +42,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49072</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49072" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49072"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12339</idno>
@@ -77,13 +79,20 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. Fausse suite, d'un autre auteur. Même texte,
+        <p source="Mazarine">En vers octosyllabes. Fausse suite, d'un autre auteur. Même texte,
           moins les vingt-huit premiers vers, que celui intitulé "Satyre du parlement de Pontoise".
           2 états : p. 1, l. 15 "Caton" (A) et "cantons" (B) ; p.1, l 19 "Anathematisent" (A) et
           "Anathomisent" (B) ; p.2, l. 4 "Faire un" (A) et "Faire une" (B) ; p.5, l. 12 "pres" (A)
           et "prests" (B). Titre de départ. Daté 1652 d'après Célestin Moreau. D'après Hubert
           Carrier, publié la 3e semaine d'août 1652(vers le 20 ou entre le 20 et le 25)
           (Bibliothèque Mazarine, Ms 4682-5, f. 285 v).</p>
+        <p source="Moreau">3727. Suite (la) du Parlement burlesque de Pontoise, et les moyens de
+          récusation envoyés par la ville de Paris à ceux qui le composent. (S. 1., 1652), 8 pages.
+          Ce n'est pas une suite du Parlement burlesque de Pontoise. L'au teur de ce dernier
+          pamphlet proteste, dans la Véritable suite, qu'elle n'est pas de lui ; il prétend que
+          c'est plutôt une réponse à son épître , Mais une réponse de chien. On y trouve cependant
+          de l'esprit et de la verve. Elle a été réimprimée, moins les vingt-huit vers du commence
+          ment , sous le titre de : Satyre du Parlement de Pontoise.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA SUITTE
         <lb/>DV PARLEMENT BVRLESQVE
         <lb/>de Pontoiſe,
@@ -237,15 +245,13 @@
         <l>
           <lb/>Pour authoriſer ſon audace,¬</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>Les deux pattes ſur les geo..</l>
         <l>
           <lb/>Pour ſeruir de baille-ly-gous</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>Aux choſes qu’il auoita dire,;;i</l>
         <l>
@@ -343,8 +349,7 @@
         <l>
           <lb/>Et proſterner denat la beſte</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>Dont vous auez proſeript la teſte., </l>
         <l>
@@ -421,8 +426,7 @@
         <l>
           <lb/>¬</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>levos coigaos quedlagrandchambre,</l>
         <l>

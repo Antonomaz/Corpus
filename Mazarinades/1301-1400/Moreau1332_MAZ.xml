@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1332_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1332_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -45,20 +46,21 @@
             contraires, aux Princes, aux Parlemens &amp; aux peuples unis, ne sont point les
             volontez du Roy.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-05-20" notAfter="1652-05-31">fin mai 1652</date>
           <extent>
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50033</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50033" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50033"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10126</idno>
@@ -90,12 +92,23 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">3 états : p. 4, l. 21 "rellement, tel" (états A et B) / "rellement
+        <p source="Mazarine">3 états : p. 4, l. 21 "rellement, tel" (états A et B) / "rellement
           tel," (état C) ; p. 8, réclame erronée "M" (état A) / réclame correcte "Mais" (états B et
           C). Par Claude Du Bosc de Montandré, d'après Célestin Moreau. D'après Hubert Carrier,
           texte paru fin mai 1652 au vu de sa place dans les recueils factices de mazarinades de la
           Bibliothèque Mazarine cotés 4° 19064-30 et 4° 12900-53 et classés chronologiquement
           (Bibliothèque Mazarine, Ms. 4682-2, f. 317v).</p>
+        <p source="Moreau">1332. Exorciste (l') de la reine, faisant voir: 1° que la reine est
+          possédée par le Mazarin, et que ses incli- nations sont esclaves sous la tyrannie de ce
+          lutin de cour ; 2° qu'on ne peut dire sans extravagance que l’autorité du roi est engagée
+          à la protection du Mazarin ; 3° que les inclinations générales des peuples sont
+          préférables aux inclinations particulières de Sa Majesté ; 4° que les volontés contraires
+          aux princes, aux Parlements et aux peuples unis, ne sont point les volontés du roi. (S.
+          l., 1652), 16 pages. Dubosc Montandré. Mailly qui cite ce pamphlet comme le plus original
+          de tous ceux qui ont été publiés par Pauteur (rote de la p. 390 de son 4° vol.), en dit
+          pourtant avec raison : « De tout ce fatras, c’est le titre qui est le plus plaisant. Le
+          reste ne mérite pas un coup d’œil. » C’est appa- remment l’imprimeur qui a laissé passer
+          l’exorciste pour l’exorcisme.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -114,8 +127,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L'EXORCISTE
         <lb/>DE LA REYNE
         <lb/> Faiſant voir,

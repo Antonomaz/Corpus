@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2344_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2344_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,19 +32,20 @@
           <title source="Mazarine">Les maltotiers ou Les pescheurs en eau trouble. En vers
             burlesques, langue normande. Les pesqueux en yau trouble</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50293</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50293" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50293"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11540</idno>
@@ -75,10 +77,13 @@
         <language ident="other">Document en normand</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. Censé être en normand. 3 états (A/B/C) : p. de
+        <p source="Mazarine">En vers octosyllabes. Censé être en normand. 3 états (A/B/C) : p. de
           titre : "pecheurs"(A)/"pescheurs "(B et C); p. 3, titre de départ "Pecheurs (A et
           B)"/"Pescheurs" (C), l. 17 "y eupais"(A)/"yeupais"(B et C); p. 4, l. 16
           "farceres"(A)/"forceres"(B et C).</p>
+        <p source="Moreau">2344. Maltôtiers (les), ou les Pêcheurs en eau trouble, en vers
+          burlesques. Langue normande : les Pesqueux en yau trouble. Paris, 1649, 8 pages. Les
+          pièces en patois ne sont pas communes. De plus, celle-ci est assez spirituelle.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,8 +102,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES
         <lb/>MALTOTIERS
         <lb/>OV
@@ -183,15 +187,13 @@
         <l>
           <lb/>Te vla loque tout hariplay,</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>Viens-tu qui loq, es tu troublay,</l>
         <l>
           <lb/>Ou ſi tu fais du quatemite:</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>Pierot, le haut temps ne m’epite,</l>
         <l>

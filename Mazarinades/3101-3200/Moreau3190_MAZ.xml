@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3190_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3190_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -28,7 +29,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14788"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Relation veritable contenant tout ce qui s'est fait et passé a
             Bordeaux. Ensemble la defaite des trouppes mazarines par l'armée de monseigneur le
             Prince. Avec la prise de Soubise par Mr le prince de Tarente.</title>
@@ -45,13 +46,12 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49218</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49218" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49218"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12202</idno>
@@ -83,8 +83,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Hubert Carrier, texte paru le 22 février 1652 (Bibliothèque
+        <p source="Mazarine">D'après Hubert Carrier, texte paru le 22 février 1652 (Bibliothèque
           Mazarine, Ms 4682-5, f. 105v). </p>
+        <p source="Moreau">3190. Relation véritable contenant tout ce qui s'est fait et passé à
+          Bordeaux, ensemble la défaite des troupes mazarines par l'armée de monseigneur le PrinCe,
+          avec la prise de Soubise par M. le prince de Tarente. Pa ris, Jacob Chevalier, 1652, 6
+          pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -105,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>RELATION
         <lb/>VERITABLE
         <lb/>CONTENANT TOVT CE QVI

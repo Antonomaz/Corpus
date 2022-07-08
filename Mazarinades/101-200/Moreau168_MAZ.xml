@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau168_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau168_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -47,13 +48,12 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49384</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49384" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49384"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14237</idno>
@@ -85,8 +85,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Arrêt daté du 15 octobre 1649. Édition originale : Bordeaux, J.
+        <p source="Mazarine">Arrêt daté du 15 octobre 1649. Édition originale : Bordeaux, J.
           Mongiron Millanges, 1649, 7 p. in-4 (Labadie, n° 69). Signé "De Pontac".</p>
+        <p source="Moreau">168. Arrêt de la cour de parlement de Bordeaux, portant injonction à tous
+          les marchands du haut pays de faire descendre, par la Garonne, des bleds sur le port et
+          havre de la présente ville, pour subvenir à la nécessité de Paris. Paris, Guill. Sassier,
+          jouxte la copie imprimée à Bordeaux, 1649, 6 pages. Daté du 15 octobre 1649.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -105,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMFNT

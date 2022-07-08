@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Ms4414-24_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ms4414-24_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,20 +32,21 @@
           </author>
           <title source="Mazarine">Lettre du Roy escrite aux Parlemens.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-01-13">postérieur au 13 janvier 1652</date>
           <extent>
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49206</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49206" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49206"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">Ms4414-24</idno>
@@ -76,7 +78,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Hubert Carrier, suivant la correspondance de Mazarin,
+        <p source="Mazarine">D'après Hubert Carrier, suivant la correspondance de Mazarin,
           probablement publié par les soins de l'abbé Fouquet à l'instigation du cardinal
           (Bibliothèque Mazarine, Ms 4682-3, f. 269). D'après H. Carrier, postérieure à l'audience
           royale des députés du parlement de Paris à Poitiers le 13 janvier 1652. Selon une note ms.
@@ -98,14 +100,11 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE
         <lb/>DV ROY
         <lb/>ESCRITE
-        <lb/>AVX PARLEMENS.
-        <pb n="10"/>
-        <pb n="11"/>
+        <lb/>AVX PARLEMENS. <pb n="10"/><pb n="11"/>
         <lb/>DE PARLE ROY.
         <lb/>NOS amez &amp; feaux, Nous auons fait
         <lb/> ſcauoir par noſtre depeſcehe du, d

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau887_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau887_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -56,13 +57,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49914</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49914" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49914"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10090</idno>
@@ -94,10 +94,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition : à Lyon, par Jean Aymé Candy (repérée par Armand
+        <p source="Mazarine">Autre édition : à Lyon, par Jean Aymé Candy (repérée par Armand
           d'Artois, Bibliothèque Mazarine, 8° 40523-21/2, p. 266). Signé "Louis de Bourbon".
           Déclaration du 25 mars 1651. D'après Hubert Carrié, texte paru le 26 mars 1651
           (Bibliothèque Mazarine, Ms. 4682-2, f. 151v).</p>
+        <p source="Moreau">887. Déclaration de monseigneur le Prince, faite en personne, et délivrée
+          par écrit, signé de sa main, à messieurs de l'assemblée de la noblesse , portant parole et
+          assurance , de la part de Leurs Majestés, pour la convocation et tenue des États généraux
+          au 8° jour du mois de septembre prochain, avec les promesses , conditions et sûretés
+          requises et nécessaires, tant pour le général que pour les particuliers , en cas de retar-
+          dement ou d’inexécution. Paris, veuve J. Guillemot , 1651 , À pages. Du 25 mars 1651.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -117,8 +123,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>DECLARATION
         <lb/>DE MONSEICNEVR
         <lb/>LE PRINCE,
@@ -138,7 +143,8 @@
         <lb/>De l'Imprimerie de la Veufue I. GVILLEMOT, ruë
         <lb/>des Marmouzets, proche l’Egliſe de la Magdeleine.
         <lb/>M. DC. LI.
-        <lb/><imprimatur>Auec Permißion</imprimatur>
+        <lb/>
+        <imprimatur>Auec Permißion</imprimatur>
         <pb n="10"/>
         <pb n="11"/>
         <lb/>NOUS Louis de Pourbon, Prince de

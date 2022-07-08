@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1314_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1314_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -55,7 +56,9 @@
             des presents mouvements, à la charge de se remettre dans trois jours dans l'obeïssance
             du Roy.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-08-20" notAfter="1652-09-10">entre fin août et
             début septembre 1652</date>
@@ -63,13 +66,12 @@
             <measure unit="page" quantity="15"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49075</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49075" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49075"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12912</idno>
@@ -101,11 +103,20 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">2 états de la p. 4, l. 6 : "pourront en souffrir la lecture. Nous
+        <p source="Mazarine">2 états de la p. 4, l. 6 : "pourront en souffrir la lecture. Nous
           pouvons" (état A) ; "pourront en souffrir la lecture nous pouvons" (état B). Texte paru
           fin août ou début septembre 1652 d'après Hubert Carrier suivant la date de l'édit en
           question et de sa vérification par le parlement de Paris (Bibliothèque Mazarine, Ms.
           4682-2, f. 312v).</p>
+        <p source="Moreau">1314. Examen de l’écrit dressé par Molé, Servien et Zondedei (sic) sous
+          le titre de : Édit du roi portant amnistie de tout ce qui s’est passé à l’occasion des
+          présents mouvements, à la charge de se remcttre, dans trois jours, dans l'obéissance du
+          roi. Paris, 1652, 15 pages. FRare. « Destime que le règne de Néron seroit pour nous le
+          siècle d’or.» « Il ne faut point de pardon, Tout ce que les princes ont fait, mérite
+          plutôt des récompenses que des abolitions. » « Les violences qui se faisoient sur le
+          Pont-Neuf le 25 juin, et tous les complots étoient préparés dans l'hôtel de Lhôpital, et
+          in- ventés par le coadjuteur, madame de Chevreuse et madame de Rhodes. » Ces trois
+          citations font assez connaître l’esprit et le parti , pour ainsi dire , de ce libelle.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -123,8 +134,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>EXAMEN
         <lb/>DE L’ESCRIT
         <lb/>DRESSE’PAR
@@ -134,7 +144,7 @@
         <lb/>s’eſt paſſé́ à l'occaſion des preſents
         <lb/>mouuements, à̀ la charge de ſe re¬
         <lb/>mettre dans trois iours dans l'o¬
-        <lb/>beïſſance du Roy. 
+        <lb/>beïſſance du Roy.
         <lb/>A PARIS,
         <lb/>M. DC. LII. <pb n="10"/>
         <pb n="11"/>

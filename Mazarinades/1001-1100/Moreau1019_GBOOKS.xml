@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau1019_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1019_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -42,18 +38,20 @@
           <title source="Moreau">Dernière (la) défaite des troupes du cardinal Mazarin par les gens
             de monseigneur le Prince, avec la prise de son bagage, près de Montargis.</title>
           <pubPlace source="Moreau">Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1652">1652</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement/>
-            <institution>Bibliothèque municipale de Lyon</institution>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
             <repository/>
             <idno type="cote"/>
           </msIdentifier>
@@ -84,7 +82,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1019. Dernière (la) défaite des troupes du cardinal Mazarin par les gens
+          de monseigneur le Prince, avec la prise de son bagage, près de Montargis. (S. |.), 1652, 7
+          pages. Il n’y a point de combat , partant point de défaite. Ce sont des . injures contre
+          Mazarin ; mais la pièce est rare.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -93,6 +95,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -119,8 +125,7 @@
         <lb/>DE osotieuvn
         <lb/>LE PRINCE;
         <lb/>Auec la priſe de ſon Bagage
-        <lb/>prés de Montargis.
-        <pb n="2"/>
+        <lb/>prés de Montargis. <pb n="2"/>
         <pb n="3"/>
         <lb/>LA DERNIERE
         <lb/>T eg e
@@ -143,8 +148,7 @@
         <lb rend="¬" break="no"/>amy, Cependant que l’on frottera les jam
         <lb rend="¬" break="no"/> bes, que l’on promenera, que l’on fera boi
         <lb rend="¬" break="no"/>re, &amp; que l’on vannera de l’avoine pour
-        <lb/>., ¬
-        <pb n="4"/>
+        <lb/>., ¬ <pb n="4"/>
         <lb/>1
         <lb/>mon Bidet, Ie vous veux raconter ee que
         <lb/>i’ay veu depuis que ie ſuis party de cette
@@ -170,8 +174,7 @@
         <lb/>Muguet ſans manchon; Ie m’enquis d’vn!
         <lb/>de mes Camarades, du ſujet de ſa melan
         <lb rend="¬" break="no"/>cholie; &amp; i’appris que le Seignor Pamphis
-        <lb/> lin0
-        <pb n="5"/>
+        <lb/> lin0 <pb n="5"/>
         <lb/>5
         <lb/> linoi venit d’aiver,; qui portolt entran
         <lb rend="¬" break="no"/> tres choſes, que ſans plus rarder, il falloit
@@ -197,8 +200,7 @@
         <lb rend="¬" break="no"/>meat le cul de la preſſes Lesyns diſans.
         <lb rend="¬" break="no"/> Qu’ils eſtoient appellez en leurs Gouver
         <lb rend="¬" break="no"/> nemens Les autres, eonſeilloient ſon Emi
-        <lb rend="¬" break="no"/>B
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>B <pb n="6"/>
         <lb/>A
         <lb rend="¬" break="no"/>
         <lb rend="¬" break="no"/>nence d’obéir au pluroſt aux Odres de
@@ -225,8 +227,7 @@
         <lb/>s’eſtats ſeparez enquatre gros diffeens; Is
         <lb/>dreſſerent des embuſcades ſìpropos, que
         <lb/>nous n’y trouvaſmes pas noſtre compte; Si
-        <lb/>¬.
-        <pb n="7"/>
+        <lb/>¬. <pb n="7"/>
         <lb/>bien que ce grand homme s’eſt eſchappé,
         <lb/>quelques-vns de ſes gens &amp; de ſes mulets,
         <lb/>tomberent en la puiſſance de leurs enne

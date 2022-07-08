@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3273_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3273_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -44,17 +40,19 @@
             contenant ce qui s'est passé de plus mémorable pendans (sic) ses mouvements, pièce pour
             servir à l'histoire.</title>
           <pubPlace source="Moreau">Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="18"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 310556</idno>
@@ -86,9 +84,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Jovrnal de la Lettre / Conde. - S. l., 1650. - In-4 (Rés
-          310499)</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Jovrnal de la Lettre / Conde. - S. l., 1650. - In-4 (Rés 310499)</p>
+        <p source="Moreau">3273. Remercîment (le) de la ville de Bordeaux aux gé néraux de son
+          armée, contenant ce qui s'est passé de plus mémorable pendans (sic) ses mouvements, pièce
+          pour servir à l'histoire. (S. 1., 1650), 10 pages. Amplification gasconne, assez drôle et
+          qui n'est pas trop com- nune. Les généraux sont Sauvebœuf, Théobon et Lusignan.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,6 +98,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -112,8 +117,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>LE
         <lb/>REMERCIEMENT
         <lb/>DE LA VILLE
@@ -123,8 +127,7 @@
         <lb/>Contenan ce qui s’eſt paſſé de plus
         <lb/>memorable pendansſes
         <lb/>S Piae poar ſnmir à Hjſtoire.
-        <lb/>M. DC. L.
-        <pb n="2"/>
+        <lb/>M. DC. L. <pb n="2"/>
         <lb/>.
         <lb/>2
         <lb/>?1
@@ -183,8 +186,7 @@
         <lb/> . .
         <lb/>,
         <lb/>
-        <lb rend="¬" break="no"/>Doaa GOOQle
-        <pb n="3"/>
+        <lb rend="¬" break="no"/>Doaa GOOQle <pb n="3"/>
         <lb/> ;h,
         <lb/>Le remerciemn de la vlle de Bor
         <lb rend="¬" break="no"/> 1.
@@ -230,8 +232,7 @@
         <lb/>le peple, pourſe mettré à coüucrt -des ecntiépiiſes de ſei enne
         <lb rend="¬" break="no"/>ms reourut à voſtre protection. Ce.ut alois que la Iſtce
         <lb/>leuant lon bandeau, ne le trouua qué là palance à la inain,
-        <lb/>e
-        <pb n="4"/>
+        <lb/>e <pb n="4"/>
         <lb/>e qoe poor tonedesls aeepastque;ûeoaiae
         <lb/>voſtre eſpee.
         <lb/> cate priere eſtott eropbate pauraefre aaccodée parlMds
@@ -271,8 +272,7 @@
         <lb/>o de
         <lb/>maſures, ne luy ſeruerit que de tohbea. Cet oelhtiffedlél
         <lb/>fut l’effet de la poite d’vie pteuiere ardedr tltâitéqde vôuts
-        <lb/>alaſtes
-        <pb n="5"/>
+        <lb/>alaſtes <pb n="5"/>
         <lb/>5
         <lb/> allaſtes faire vo à noftre ennemy, qui n’oſoit auparauant ap¬.
         <lb/>procher de cette ville; Vous fuſtes cueillir des Lauriers juſques
@@ -312,8 +312,7 @@
         <lb rend="¬" break="no"/>rie.
         <lb rend="¬" break="no"/>Toutes ces victoires ont eſté des fruicts d’vne force aggreſſi
         <lb rend="¬" break="no"/>ue: Il vous retoit de faire voir qu’excellent en cetre vertu, vous
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/>6
         <lb/>poſſedie; la perfetion des deux parties quir la campoſene, ſa
         <lb rend="¬" break="no"/>chant egalement bien arttaquer &amp; bien defendre. La Baſtide
@@ -353,8 +352,7 @@
         <lb rend="¬" break="no"/>menty, &amp; ſes gens ont arrouſé ce port du ſang le plusgenereux
         <lb rend="¬" break="no"/>de la France, qui euſt eſté mieux emplové ailleurs. La ſcitua
         <lb rend="¬" break="no"/>rion de ce lieu ne pouuoit donner de preſage plus fatal de leur
-        <lb/>perte, ayant à dos vne foreſt d cyprez, &amp; en front la valeur des
-        <pb n="7"/>
+        <lb/>perte, ayant à dos vne foreſt d cyprez, &amp; en front la valeur des <pb n="7"/>
         <lb/>trouppes qui auoient eſté ſi ſouuent victoirieuſées ſouz la con-:
         <lb/>duitte des plus braues guerriers de ce ſiecle, &amp; l’ennemy du re
         <lb rend="¬" break="no"/>pos public, eut vn tel reſſentiment de cette defaite, que croyant
@@ -393,8 +391,8 @@
         <lb rend="¬" break="no"/>quieter apres la mort les manes de ceux qui auoient echappé
         <lb/>leur fureur.
         <lb/>Blaye, la Parroiſſe de ſainée Luce, &amp; l’iſle de Caſaux, con
-        <lb rend="¬" break="no"/>tent êncore aujourd’huy la nombre des morts ou bleſſez, qu,
-        <pb n="8"/>
+        <lb rend="¬" break="no"/>tent êncore aujourd’huy la nombre des morts ou bleſſez, qu, <pb
+          n="8"/>
         <lb/>35
         <lb/>ayãns eſté rapportez dans les vaiſſeaux ennemis, auec la honte
         <lb/>imprimée deſſus leur ſang, prennent tous les iours part à leurs
@@ -435,8 +433,7 @@
         <lb rend="¬" break="no"/> ne. Et toy Luſignan, tu as pareillement eu grande part au con¬.
         <lb/>ſeil, à la conduitte, au peril &amp; à la gloire de tant de bellesactiõs,
         <lb/>deſquelles nous attendons noſtre bon-heur. Tou le monde
-        <lb/>ſçait.
-        <pb n="9"/>
+        <lb/>ſçait. <pb n="9"/>
         <lb/>9
         <lb/>ſçait que nous euſfions peu donner icy rang à grand nombre
         <lb/>d’autres conqueſtes ſur la riuiere de Garonne, ſi vn pour parler
@@ -477,8 +474,7 @@
         <lb/>des braues Chefs de l’armée de laIuſtice, &amp; de l’innocence des
         <lb/>Bourdelois, &amp; pour ſatis-foire aux ſouhaits des peuples de la
         <lb/>France, qui prennent tous part aà nos aduantages, nous auons
-        <lb/>dreſsé ce monument à l’eternité &amp; à voſtre, emoire.
-        <pb n="10"/>
+        <lb/>dreſsé ce monument à l’eternité &amp; à voſtre, emoire. <pb n="10"/>
         <lb/>’Auise -bœuf, Luſignan, &amp;bi Theobon, en guerre,
         <lb/>ITu dMarpui ſnalee, pla craints que le eanmere,
         <lb/>Padane les foibles anms de la moinorie6.
@@ -494,8 +490,7 @@
         <lb/>ényura le Dieu ars ſur le bord de nos eau.
         <lb/>1
         <lb/>FN.
-        <lb/>-A¬
-        <pb n="11"/>
+        <lb/>-A¬ <pb n="11"/>
         <lb/> Ca -iea-o haao , a o’a...¬.
         <lb/> ’peeqie puu naran o qeume di-ye-q, aa- ſaupaua
         <lb rend="¬" break="no"/> 5?.
@@ -528,8 +523,7 @@
         <lb rend="¬" break="no"/> vay aaaaav’2a,, o u Cg V aa auae aaaar- O eQavu
         <lb/>AL. e o-a aoosala-oqpe a nr- ’a ſpe Pahiq aa . oa,
         <lb/>p,
-        <lb/>-Q. ee l auaa ..4oL Uo i ſ a qav. eaaa hu Qda ¬
-        <pb n="12"/>
+        <lb/>-Q. ee l auaa ..4oL Uo i ſ a qav. eaaa hu Qda ¬ <pb n="12"/>
         <lb/>
         <lb/> .
         <lb/>Q3.Pau, oa ’ oCoau- -Vo y, daa a-u, oaa
@@ -564,8 +558,7 @@
         <lb rend="¬" break="no"/>3
         <lb rend="¬" break="no"/>,,.e...
         <lb/> 3 I’ſauuu He . reoaj ou- aauſ viu 8oda
-        <lb/>..
-        <pb n="13"/>
+        <lb/>.. <pb n="13"/>
         <lb/>jo ta-.m’PO.’ eqai,
         <lb/>ato vaaR-otgu ’qu l a-A paſu oo
         <lb rend="¬" break="no"/>6 ..- uve oeaaae, cyvva cua. e’.¬
@@ -601,8 +594,7 @@
         <lb rend="¬" break="no"/>aux e ’s’u ap a euque pooe o a l bay
         <lb rend="¬" break="no"/>.,a’oaeqaaa&amp; s ’io 6se ., .-ai,
         <lb rend="¬" break="no"/>qae. a.- v...e Qoou,, a oe-oao’o
-        <lb rend="¬" break="no"/>ſaaa nv, ’ ooe uo’.ſa . P.--2¬
-        <pb n="14"/>
+        <lb rend="¬" break="no"/>ſaaa nv, ’ ooe uo’.ſa . P.--2¬ <pb n="14"/>
         <lb/>u.- Sua adaa a -v’ßdeauar-ua-y¬e
         <lb rend="¬" break="no"/>e om uea u dupyua Saeto ee vurp
         <lb rend="¬" break="no"/>
@@ -637,8 +629,7 @@
         <lb rend="¬" break="no"/> a&amp; ſpeopiae qouuouue o-foi- ua j-ſerv
         <lb rend="¬" break="no"/> ua Oaoue po , Qau&amp; auouq
         <lb rend="¬" break="no"/>2
-        <lb rend="¬" break="no"/> ao¬
-        <pb n="15"/>
+        <lb rend="¬" break="no"/> ao¬ <pb n="15"/>
         <lb/>S
         <lb/>u-u o&amp; v ̀ aaa u or Qu ſle aue aue aaa-Qu
         <lb rend="¬" break="no"/>q aveaou uqa-oe oudh aa- n louve umaa Ouo vt ai¬,
@@ -678,8 +669,7 @@
         <lb rend="¬" break="no"/>V
         <lb/> l ou e pluu e e ee e ſdnaer’e- eeeſi
         <lb/>.8...,
-        <lb/>a aiaaueta.....
-        <pb n="16"/>
+        <lb/>a aiaaueta..... <pb n="16"/>
         <lb/>.
         <lb/>1,
         <lb/>poeeZ vuſea -iu q teaoanuau maua ala
@@ -703,8 +693,7 @@
         <lb/>o e-euieadey eraiyauſn- uaao ſt eoaa
         <lb rend="¬" break="no"/>er un e e e peſ́ e eue e rer e e e leſl
         <lb rend="¬" break="no"/>l 4 aiiZ a -d au oa c gouogrſtauaaoo
-        <lb rend="¬" break="no"/>ſ iaeu, qa , g aoo.. l.. oda aaaaSaua, ae2¬¬¬.
-        <pb n="17"/>
+        <lb rend="¬" break="no"/>ſ iaeu, qa , g aoo.. l.. oda aaaaSaua, ae2¬¬¬. <pb n="17"/>
         <lb/>¬ a r¬ rr¬ ¬
         <lb rend="¬" break="no"/>qoa aaa 4oaO, ſ -; aHo-r paa , ab -o
         <lb rend="¬" break="no"/>Q.-j ava
@@ -728,8 +717,7 @@
         <lb rend="¬" break="no"/> ſuaaa a-vaaeo, ue a a ooequ ua-aſoaZ
         <lb rend="¬" break="no"/>l , duo. a q ave a -vſoouvs i8¬
         <lb rend="¬" break="no"/>4 ſ.... u., oo&amp;a R-Aaaa-roe - ſ .. qaav VMa a.
-        <lb rend="¬" break="no"/>¬ 4aa. a ’eaaqaa-- ao Oaa, ſ -’soa¬¬
-        <pb n="18"/>
+        <lb rend="¬" break="no"/>¬ 4aa. a ’eaaqaa-- ao Oaa, ſ -’soa¬¬ <pb n="18"/>
         <lb/>Caa- oaev OSVſoaie, --o aoovo- aaa n?’
         <lb rend="¬" break="no"/>Q’’oooa eRa ageb pa onQue Se euquau
         <lb rend="¬" break="no"/>,4

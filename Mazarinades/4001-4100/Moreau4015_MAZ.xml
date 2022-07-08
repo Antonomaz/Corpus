@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau4015_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau4015_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,20 +37,21 @@
           <title source="Mazarine">Vers burlesques envoyez a monsieur Scarron. Sur l'arrivee du
             convoy a Paris.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-02-12">à partir du 12 février 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49233</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49233" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49233"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14086</idno>
@@ -81,10 +83,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions : Paris, Claude Boudeville (trois éditions de
+        <p source="Mazarine">Autres éditions : Paris, Claude Boudeville (trois éditions de
           composition typographique différente, avec ou sans mention de permission sur la p. de
           titre) ; Paris, Mathurin Hénault. D'après Hubert Carrier, texte paru à partir du 12
           février 1649 (Bibliothèque Mazarine, Ms. 4682-5, f. 399v).</p>
+        <p source="Moreau">4015. Vers burlesques à Scarron sur l'arrivée du convoi à Paris. Jouxte
+          la copie imprimee à Paris, ||(, p I2 (M 1649 , 4 pages. Même pièce que celle qui suit
+          :</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>VERS BVRLESQVES
         <lb/>ENVOYEZ A MONSIEVR
         <lb/>SCARRON
@@ -113,8 +117,7 @@
         <lb/>A PARIS <figure type="decoration"/>
         <lb/>Iouxte la copie imprimée.
         <lb/>A PARIS,
-        <lb/>M. DC. XLVIIII.
-        <pb n="10"/>
+        <lb/>M. DC. XLVIIII. <pb n="10"/>
         <lb/>VERS BVRLESQVES
         <lb/>ENVOYEZ A MONSIEVR
         <lb/>SCARRON
@@ -335,8 +338,7 @@
         <l>
           <lb/>1</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>I</l>
         <l>

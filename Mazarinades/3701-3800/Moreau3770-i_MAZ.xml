@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3770_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3770-i_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,7 +32,9 @@
           <title source="Mazarine">Le theologien d'Estat, a la Reyne. Pour faire desboucher
             Paris.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-02-01" notAfter="1649-02-07">première semaine de
             février</date>
@@ -39,20 +42,19 @@
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49347</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49347" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49347"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° A 11521-15</idno>
           </msIdentifier>
           <history>
             <provenance>
-              <stamp>True/False</stamp>
+              <stamp>True</stamp>
             </provenance>
           </history>
         </msDesc>
@@ -77,7 +79,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Sous forme de lettre. A pour suite "Le second theologien d'Estat, a
+        <p source="Mazarine">Sous forme de lettre. A pour suite "Le second theologien d'Estat, a
           messieurs les generaux." Paris, Arnould Cotinet, 1649, 12 p. (BM01342) À l'exception de
           l'adresse, édition proche de celle chez Arnould Cotinet (BM00473). Autres éditions
           repérées par Célestin Moreau, Armand d'Artois et Hubert Carrier (Mazarine, Ms 4682-5, f.
@@ -95,6 +97,18 @@
           exemplaire repéré) sans adresse, [1649], 12 p. in-4 (BM00458). Notes marginales. Également
           publié sous le titre "Le theologien d'Estat a la Reyne." Texte paru durant le blocus de
           Paris, la première semaine de février 1649, d’après H. Carrier.</p>
+        <p source="Moreau">3770. Théologien (le) d'État à la reyne, pour faire dé- .., p ,, boucher
+          Paris. Paris, Jean du Bray, 1649. Cest la même pièce sous l'un et l'autre titre. Elle se
+          compose fa,23) de deux parties; la première de_12 pages, la seconde de 20 ; v celle-ci
+          intitulée : le Second théologien d'État à messieurs les gé- i , Naudé, page 11, 204 et 208
+          du Mascurat , Guy Patin, dans la jn^ t ••..•'' lettre du 1 i may 1649 à Charles Spon , p.
+          190 du 1" vol., citent ce pamphlet parmi les meilleurs; et ils n'ont pas tort. Mais il
+          faut J&lt;J fY j_ i ajouter qu'il est surtout remarquable par la pureté et la vigueur
+          i&lt;)i / l 7) du style. Jean du Bray en a donné , sous le second titre , deux éditions
+          _&lt;.-„ A |- qui ne diffèrent que par la vignette. Il y en a deux autres encore, l'une
+          chez Arnould Cottinet , l'autre jouxte la copie imprimée chez Jean du Bray, également de
+          12 pages. L'édition de la seconde partie qu' Arnould Cottinet a publiée , n'est que de 12
+          pages au lieu de 20.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -112,19 +126,16 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>LE
         <lb/>THEOLOGIEN
         <lb/>D’ESTAT
         <lb/>A LA REYNE.
-        <lb/>POVR FARE DESBOVCHER PARIS.
-        <figure type="decoration"/>
+        <lb/>POVR FARE DESBOVCHER PARIS. <figure type="decoration"/>
         <lb/>A PARIS,
         <lb/>Iouxte la Copie imprimée chez IEAN DU BRAY,
         <lb/>ruë S. Iacques, aux Eſpics meurs, &amp; au Chapelet.
-        <lb/>M. DC. XILX.
-        <pb n="8"/>
+        <lb/>M. DC. XILX. <pb n="8"/>
         <pb n="9"/>
         <lb/>MADAME,
         <lb/>IIN

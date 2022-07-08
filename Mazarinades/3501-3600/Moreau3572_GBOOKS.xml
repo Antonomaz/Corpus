@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3572_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3572_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -13,15 +13,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -48,17 +44,19 @@
             rompus, et le jour assigné de la bataille ou de l'entier traité de la paix
             générale.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1652">1652</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4 227 mm</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309396</idno>
@@ -90,8 +88,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Recueil factice</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Recueil factice</p>
+        <p source="Moreau">3572. Saisie (la) des places fortes aux environs de Paris par les ordres
+          de Son Altesse Royale, les articles et règlements généraux pour la conservation d'icelles,
+          les desseins des mareschaux de Turcnne , de Senne- terre et d'Hocquincourt rompus, et le
+          jour assigné de la bataille ou de l'entier traité de la paix générale. Paris, 1652, 7
+          pages. Les places fortes étaient Saint -Denis, Saint-Cloud , Mcudon, Bourg-la-Reinc ! La
+          pièce est rare pourtant.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,6 +104,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -115,8 +123,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>LA SAISIE
         <lb/>
         <lb/> ¬ T
@@ -138,8 +145,7 @@
         <lb/>A PAR 1 S3
         <lb/>Rue Eſeoe, ues?
         <lb/>11
-        <lb/>dſ
-        <pb n="2"/>
+        <lb/>dſ <pb n="2"/>
         <lb/> r
         <lb rend="¬" break="no"/>a
         <lb/>1
@@ -485,8 +491,7 @@
         <lb/>es
         <lb/>El
         <lb/>a
-        <lb/>aeas
-        <pb n="3"/>
+        <lb/>aeas <pb n="3"/>
         <lb/>, eu
         <lb/>ypgpep
         <lb/>LA SAISIE DES PLACES
@@ -507,8 +512,7 @@
         <lb/>conclurent, qu’il eſtoit tres opportun de ſe
         <lb/>ſaiſir des places les plus fortes &amp; prochaines
         <lb/> des eauirons de la Ville de Paris. Ce fut yn
-        <lb/>venerable vieillardybafoü̈é de ſottiſes Ma¬
-        <pb n="4"/>
+        <lb/>venerable vieillardybafoü̈é de ſottiſes Ma¬ <pb n="4"/>
         <lb/>arines qui propoſa cette choſe. Ce qui fut
         <lb/>truue bon, &amp; des auſſi- toſt exeut́. Mon
         <lb rend="¬" break="no"/>ſieur de Beaufort proteſta qu’il alloit preprer
@@ -536,8 +540,7 @@
         <lb/>empeſcher nos deſſeins, &amp; ſçachez queievous
         <lb/>ſeconderay inceſſammeat. Ilfaut, mon chet
         <lb/>oaa,, ,-¬-o-a¬-¬¬s ,a„.
-        <lb/> Couin,
-        <pb n="5"/>
+        <lb/> Couin, <pb n="5"/>
         <lb/>Couſin; vous emparer du Claſteau de Vin
         <lb rend="¬" break="no"/>cienne, &amp; de.ſainct Denis &amp; faire vn poſte
         <lb/>auantageux au Port de Neully, afim que nous,
@@ -567,8 +570,7 @@
         <lb/>vangeéde qulques-vns qui s’eſtoient- declarez
         <lb/>ſe enaeuis partiuliers ,, ſe contente &amp; ne
         <lb/>aa a-¬.
-        <lb/>B.
-        <pb n="6"/>
+        <lb/>B. <pb n="6"/>
         <lb/>¬AaaaC
         <lb/>veut plus prendre pare en ce gaſteau. Il a’ya
         <lb/>qu’Hoquincourt qui fait le mutin, &amp; n’appre
@@ -597,8 +599,7 @@
         <lb/> ..¬.
         <lb/>vies.
         <lb/>3. Que ceux qui ſe rencontteroient ſavaſi
-        <lb rend="¬" break="no"/> des, ſeroiérit eomis ’pot la garde des pot¬
-        <pb n="7"/>
+        <lb rend="¬" break="no"/> des, ſeroiérit eomis ’pot la garde des pot¬ <pb n="7"/>
         <lb/>eeee4yy e.
         <lb/>ces &amp; des Fauxbourgs de cette Ville de Paris.
         <lb/>5. Que l’on proproſeroit les recentes arti

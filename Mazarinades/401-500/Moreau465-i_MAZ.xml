@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau465-i_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau465-i_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -34,7 +35,9 @@
           </author>
           <title source="Mazarine">L'aveuglement de la France depuis la minorité.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" notBefore="1650-08-10" notAfter="1650-08-15">entre le 10 et le 15
             août 1650</date>
@@ -42,13 +45,12 @@
             <measure unit="page" quantity="31"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50259</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50259" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50259"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14977-3/1</idno>
@@ -80,7 +82,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition, composition typographique différente (BM01328) repérable
+        <p source="Mazarine">Autre édition, composition typographique différente (BM01328) repérable
           notamment par : titre "France, depuis" / "France depuis" ; bandeaux différents ; p. 3, l.
           8 "cōplaisances de la flaterie estoiēnt criminelles dās" / l.8/9 "Complaisances de la
           flatrerie estoient criminelles/dans", l. 11 "succés" / "succez", p. 4, l.1/2
@@ -99,6 +101,14 @@
           la Fronde (1648-1653) : les Mazarinades", t.2, Genève, 1991, p. 69, note 388, en dépit de
           la note ms. "le 26 d'aoust ["septembre" rayé] 1650" sur l'exemplaire de la Bibliothèque
           Mazarine coté 4° 19066-70.</p>
+        <p source="Moreau">465. Aveuglement de la France depuis la minorité. (S.1. n. d.), 31 pages.
+          Trois parties, qui se divisent : la première en 15 chapitres, la se conde en 10, la
+          troisième en 15. Les deux premières ont 31 pages chacune ; la troisième en a 32. La
+          seconde est datée de 1650 ; la troisième de 1651. Les deux premières ont été écrites
+          pendant la prison des princes ; la troisième, après leur mise en liberté. Enfin, les deux
+          premières sont de Dubosc Montandré ; la troisième, d’un anonyme « qui n’a pris la plume
+          que parce que l’auteur des deux premières parties n’avoit pas poursuivi sa pointe. » Il y
+          a une réponse intitulée : dvis à la reine d’Angleterre et à la France, ete.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -129,8 +139,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L'AVEVGLEMENT
         <lb/>DE
         <lb/>LA FRANCE

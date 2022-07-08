@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2557_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2557_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,20 +32,21 @@
           <title source="Mazarine">Nouvelles burlesques portées par le duc de Chastillon à
             l’Empereur des tenebres, aux affreuses cavernes de sa domination.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-02-10">à partir du 10 février 1649</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50330</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50330" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50330"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13140</idno>
@@ -76,11 +78,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Dialogue en prose entre le duc de Châtillon et Pluton. 2 états (A/B) du
+        <p source="Mazarine">Dialogue en prose entre le duc de Châtillon et Pluton. 2 états (A/B) du
           dernier feuillet : p. 7 chiffrée "6" / p. 7 correctement chiffrée. Également publiée en
           1650 dans le recueil éditorial intitulé "Recueil de diverses pieces. Qui ont paru durant
           les mouvemens derniers de l'année 1649." (BM00059). D'après Hubert Carrier, texte paru à
           partir du 10 février 1649 (Bibliothèque Mazarine, Ms. 4682-4, f. 102v).</p>
+        <p source="Moreau">2557. Nouvelles burlesques portées par le duc de Châ tillon à l'empereur
+          des ténèbres aux affreuses cavernes de sa domination. Sans Lieu, 1649, 7 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,8 +111,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>NOVVELLES
         <lb/>BVRLESQVES
         <lb/>PORTEES PAR LE DVC

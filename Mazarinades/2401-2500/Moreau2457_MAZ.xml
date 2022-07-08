@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2457_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2457_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -33,20 +34,21 @@
             en leurs fins soit aux moyens dont ils se servent pour y parvenir. II. La necessité d'un
             tiers parti pour reduire les autres deux à la raison.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" when="1652-07-12">12 juillet 1652</date>
           <extent>
             <measure unit="page" quantity="24"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48898</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48898" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48898"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15558</idno>
@@ -78,11 +80,18 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">2 états de la p. de titre : "II. La nécessité d'un tiers part" (état A)
+        <p source="Mazarine">2 états de la p. de titre : "II. La nécessité d'un tiers part" (état A)
           ; "II. La nécessité d'un tiers parti" (état B). Texte paru le 12 juillet 1652 d'après
           Hubert Carrier, suivant une note ms. sur l'exemplaire Bibliothèque Mazarine M 13504 et le
           rangement de l'exemplaire 4° A 13966-43 dans le recueil factice classé chronologiquement
           où il est conservé (Bibliothèque Mazarine Ms 4682-4, f. 52v).</p>
+        <p source="Moreau">2457. Mercuriale (la) faisant voir 1. l'injustice des deux partis, soit
+          en leurs fins, soit aux moyens dont ils se servent pour y parvenir; 2. la nécessité d'un
+          tiers parti pour réduire les autres deux à la raison. Paris, 1652, 24 pages. L'auteur
+          attaque le roi avec violence. Il l'accuse de jurements, de blasphèmes, de tyrannie, et le
+          déclare plus coupable et plus odieux que Mazarin. Je ne connais pas trois pamphlets de
+          cette espece. C'est sur l'Ormée de Bordeaux que le libelliste prétend modeler son tiers
+          parti.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="2"/>
+      <p><pb n="2"/>
         <lb/>LA
         <lb/>MERCVRIALE
         <lb/>FAISANT VOIR

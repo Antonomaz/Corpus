@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3154_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3154_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -54,11 +50,11 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Londres</settlement>
+            <settlement ref="geonames:2643743">Londres</settlement>
             <institution>The British Library</institution>
             <repository> General Reference Collection</repository>
             <idno type="cote">8050.g.38.(35.)</idno>
@@ -90,9 +86,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
         <p source="Antonomaz">Carrier : plusieurs orthographes pour l'éditeur : Martin Berlay,
           Bellay, Bellé.</p>
+        <p source="Moreau">3154. Relation des dernières nouvelles du siège de la ville de Rordeaux,
+          avec la prise et conservation du faubourg Saint-Seurin et état de l'armée du roi, avec le
+          nombre des blessés et des prisonniers. Paris , Martin Berlay, 1650 , 8 pages. Relation
+          royaliste et rare. La poste de la Tricherie, entre Châtelleraut et Poitiers , s'appe lait
+          alors de la Torcherie.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,6 +102,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -116,8 +121,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>r
         <lb rend="¬" break="no"/>RELATION
         <lb/>l DES DERNIERES
@@ -128,8 +132,7 @@
         <lb/>de l’Armée du Roy.
         <lb/>mbre des bleſſez, &amp; des priſonniers.
         <lb/>e e e
-        <lb/>1 M. DC. L.
-        <pb n="2"/>
+        <lb/>1 M. DC. L. <pb n="2"/>
         <lb/>.l ¬.
         <lb/> a
         <lb/>¬1
@@ -144,8 +147,7 @@
         <lb/>¬ -oaarr
         <lb/>1. 3
         <lb/>anGo
-        <lb/>1
-        <pb n="3"/>
+        <lb/>1 <pb n="3"/>
         <lb/> tbhn e hef e fuAbſe
         <lb/>pc93
         <lb/>S eereoeoegogeege
@@ -168,8 +170,7 @@
         <lb/>eolr que o comeneerit par le
         <lb/>Faux-boutg Saint lSurin. Ceiouir
         <lb rend="¬" break="no"/>d’huiy de bon matih’Monſieur le Ma
-        <lb rend="¬" break="no"/>ã lj.¬
-        <pb n="4"/>
+        <lb rend="¬" break="no"/>ã lj.¬ <pb n="4"/>
         <lb/>., 4
         <lb/>rechal de la Melleraye a fait don
         <lb rend="¬" break="no"/>ner l’aſfaut, et apres quatre heures de
@@ -192,8 +193,7 @@
         <lb/>Tieut aireehaſpromet de endre eu
         <lb/>breſt adiue vite dains poboeifaned
         <lb/> Roy,
-        <lb/>. De ladite
-        <pb n="5"/>
+        <lb/>. De ladite <pb n="5"/>
         <lb/>5
         <lb/> D lis oius du auares e s anmb
         <lb/> aldit an mil ſix cens cinquante.
@@ -217,8 +217,7 @@
         <lb/>s Trouppes ſont campées dans
         <lb/>ledit Fauxboug S, Surin L’uôn attaque
         <lb/>tte nuict ladite ville de Bordeaux par
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/>deux endroits differenrs ſçauoir duco
         <lb rend="¬" break="no"/>6
         <lb rend="¬" break="no"/>ſté dudit S. Surin&amp; de la porteS. Ger
@@ -242,8 +241,7 @@
         <lb/>nonobſtant qu’elle ſoit à preſenttom
         <lb rend="¬" break="no"/>poſée de plusde dixeſepp mil homnes.;
         <lb/>On y attend encore le Regiment du
-        <lb/>Limoſin cõ̃poſe de quinze cens hom¬
-        <pb n="7"/>
+        <lb/>Limoſin cõ̃poſe de quinze cens hom¬ <pb n="7"/>
         <lb/>f
         <lb/> ae, eduy de Perigueux de milhom
         <lb rend="¬" break="no"/> mes, eeluy de Caualerie-du Marquis de
@@ -269,8 +267,7 @@
         <lb/>pays, n’ont pas eu moins d’honneur &amp;
         <lb/>de ſatsation, ny moins paſſionnezde
         <lb/>receuoi les commandemens de leurſ
-        <lb rend="¬" break="no"/>dites Majeſtez.
-        <pb n="8"/>
+        <lb rend="¬" break="no"/>dites Majeſtez. <pb n="8"/>
         <lb/> Meſieurs les Depuite de aei bnt
         <lb/>eſté rencontrez par le Courier ordinai
         <lb rend="¬" break="no"/>re à laPote de la Torcherie ̀ cinq

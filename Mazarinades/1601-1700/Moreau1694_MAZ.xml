@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1694_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1694_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -29,7 +30,9 @@
           <author/>
           <title source="Mazarine">L'infidélité du prince.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" notBefore="1650-01-18" notAfter="1650-01-31">aussitôt après
             l'arrestation des princes (18 janvier 1650)</date>
@@ -37,13 +40,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49023</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49023" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49023"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11065</idno>
@@ -75,9 +77,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition, 7 p., sans adresse, 1650, peut-être lyonnaise, repérée
+        <p source="Mazarine">Autre édition, 7 p., sans adresse, 1650, peut-être lyonnaise, repérée
           par Hubert Carrier (Bibliothèque Mazarine, Ms 4682-3, f. 101v). Texte paru aussitôt après
           l'arrrestation des princes en janvier 1650 d'après H. Carrier.</p>
+        <p source="Moreau">1694. Infidélité (l') du Prince.Sans Lieu, 1650,8 pages. Un des libelles
+          les plus violents contre le prince de Condé, et non des plus communs. L'auteur accuse le
+          Prince d'avoir dit que « l'Être éternel étoit trop vieux. » Voir l'Entretien secret de
+          messieurs de la cour de Saint-Germain, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -95,12 +101,10 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L'INFIDELITE
         <lb/>DV PRINCE
-        <lb/>M. DC. L.<pb n="10"/>
-        <pb n="11"/>
+        <lb/>M. DC. L.<pb n="10"/><pb n="11"/>
         <lb/>L'INFIDELITE
         <lb/>DV PRINCE
         <lb/>C’Eſt un eſtrange aueuglement à toute ſorte de per¬

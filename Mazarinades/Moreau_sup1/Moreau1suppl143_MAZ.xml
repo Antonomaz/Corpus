@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1suppl143_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1suppl143_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -33,19 +34,20 @@
           <title source="Mazarine">Lettre de la cour de parlement de Bourdeaux, escrite a la cour de
             parlement de Paris.</title>
           <pubPlace source="Mazarine" ref="geonames:6455058">Bordeaux</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49284</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49284" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49284"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15438-39</idno>
@@ -77,7 +79,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Lettre relative à l'arrivée à Bordeaux de la princesse de Condé
+        <p source="Mazarine">Lettre relative à l'arrivée à Bordeaux de la princesse de Condé
           accompagnée de son fils le duc d'Enghien. Autre édition du texte sous le titre "Lettre du
           parlement de Bordeaux, escrite au parlement de Paris. Avec le registre dudit Parlement
           presenté par le deputé d'iceluy audit parlement de Paris le 6. de Juillet 1650. Sur
@@ -86,6 +88,9 @@
           suivie d'un arrêt du parlement de Paris du 6 juillet 1650). D'après Ernest Labadie, fausse
           adresse, car il n'y aurait jamais eu à Bordeaux à cette époque d'imprimeur du nom de Jean
           Millanges.</p>
+        <p source="Moreau">143. Lettre de la cour de parlement de Bourdeaux escrite à la cour de
+          parlement de Paris. Bourdeaux, Jean Millanges, 1650, 4 pages. Ni signée, ni datée. Le
+          parlement de Bordeaux annonce l'arri vée de la princesse de Condé et du duc d'Enghien.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -108,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>LETTRE
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1910_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1910_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -38,7 +34,9 @@
       <sourceDesc>
         <bibl>
           <ref target="https://books.google.fr/books?id=oAdMqMjchoUC&amp;hl=fr"/>
-          <author>France</author>
+          <author>
+            <orgName>France</orgName>
+          </author>
           <persName role="received" ref="isni:0000000123455225">
             <forename>François</forename>
             <surname>L'Hospital (De)</surname>
@@ -58,12 +56,11 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 310526</idno>
@@ -95,7 +92,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1910. Lettre de cachet du roi, envoyée à monseigneur le maréchal de
+          Lhopital, gouverneur de Paris, sur le sujet de l'approche des troupes de l'archiduc
+          Léopold : en France, et des affaires de Bordeaux. Paris, Guil laume Sassier, 1650,7 pages.
+          Datée de Bourg, le 5 septembre.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,6 +105,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -119,8 +123,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>T
         <lb/>L
         <lb/>J e
@@ -147,8 +150,7 @@
         <lb/>ere e ioei ie le ede e
         <lb/>-e-on2
         <lb/>ue Ds’el , nrnuerue
-        <lb rend="¬" break="no"/>8io58
-        <pb n="2"/>
+        <lb rend="¬" break="no"/>8io58 <pb n="2"/>
         <lb/> lee I
         <lb/> a
         <lb/>2 .
@@ -199,8 +201,7 @@
         <lb rend="¬" break="no"/>5
         <lb/>DA 2
         <lb/>e
-        <lb/>¬ ¬ .
-        <pb n="3"/>
+        <lb/>¬ ¬ . <pb n="3"/>
         <lb/>1
         <lb/>3
         <lb/>S
@@ -220,8 +221,7 @@
         <lb/>e Pais one fait paroiſtre d’afe¬,
         <lb/>e? ction, de fidelité́ &amp; de conſtan
         <lb rend="¬" break="no"/>ei eieieielde
-        <lb/>A ij
-        <pb n="4"/>
+        <lb/>A ij <pb n="4"/>
         <lb/> 4
         <lb/>ſance de ma part, vous leur donniez auſſi de nq
         <lb rend="¬" break="no"/>uelles aſſurances de ma bonne volonté &amp; dſo
@@ -251,8 +251,7 @@
         <lb/>de ma bonh Vlede Paris,&amp; vhe femeeſilatibn? l
         <lb/>des’oppr à toures ler àéat d’éqp’&amp;ſ y vle¬!
         <lb/>droit excire, en ſoufſftnt pas ’qus oſe?
-        <lb/> faure
-        <pb n="5"/>
+        <lb/> faure <pb n="5"/>
         <lb/>faire les neſmes demandes &amp; prôpoſitions quee
         <lb/>l’on fait dans l’Armée de l’Archiduc. Il ne faut
         <lb/>point douter que ſe voyant de cette ſorte deé́cheu
@@ -280,8 +279,7 @@
         <lb/>du Parlement que du Corps de Ville, me font di
         <lb rend="¬" break="no"/>re chaque jour, que leur plus grande paſſion eſt de
         <lb/>de le voir bien-toſt rer de la tyrannie que le Due
-        <lb/>E
-        <pb n="6"/>
+        <lb/>E <pb n="6"/>
         <lb/>de oiüillon, aſſié de quelques factieux de ladi¬ y
         <lb/>re Ville, exerce ſur eux. l’aimerois bien qu’ils vou
         <lb rend="¬" break="no"/>luſſent ainſi eux meſmes finir le mal-heur, où ils
@@ -306,8 +304,7 @@
         <lb/>’de Septembre 16j0.
         <lb/> Signé, LOIS.
         <lb/>Et pluas bas,
-        <lb/>, Dn Gvec avd.
-        <pb n="7"/>
+        <lb/>, Dn Gvec avd. <pb n="7"/>
         <lb/>ea
         <lb rend="¬" break="no"/> Letre de onſeigneur le Mareſeha de ’Hoſpital. Goa
         <lb rend="¬" break="no"/> uerneur de Paris, en datte t6. du Mass 6so. ſigre e l’Ho e

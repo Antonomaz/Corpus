@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2525_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2525_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -30,7 +31,9 @@
           <author/>
           <title source="Mazarine">La nappe renversee chez Renard. En vers burlesques.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-06-21" notAfter="1649-06-30">dernière semaine de
             juin 1649</date>
@@ -38,13 +41,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50331</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50331" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50331"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11659</idno>
@@ -76,13 +78,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. Inspiré par la rixe qui a eu lieu en fin de repas
+        <p source="Mazarine">En vers octosyllabes. Inspiré par la rixe qui a eu lieu en fin de repas
           le 18 juin 1649 dans le restaurant du dénommé Renard aux Tuileries et qui a opposé les
           condéens et les partisans de Mazarin (d'après l'article de Myriam Tsimbidy, "Usage des
           mazarinades dans les Mémoires de la Fronde" dans "Histoire et civilisation du livre,
           XII..." p. 228). 2 états (A/B) : p. 3, l. 19 "galenteries" / "galanteries" ; p. 4, l. 24
           "gabale" / "cabale" ; p. 8, l. 3 "des de" / "des termes de". D'après Hubert Carrier, texte
           paru la dernière semaine de juin 1649 (Bibliothèque Mazarine, Ms. 4682-4, f. 90v).</p>
+        <p source="Moreau">2525. Nappe (la) renversée, chez Renard, en vers burlesques. Paris, 1649,
+          8 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +106,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA NAPPE
         <lb/>RENVERSEE,
         <lb/>CHEZ

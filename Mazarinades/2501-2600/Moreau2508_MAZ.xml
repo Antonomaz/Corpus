@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2508_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2508_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,19 +36,20 @@
             seuls remedes qui la peuvent, sans difficulté, apporter dans peu de temps. Par A. D.
             Quercynois.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <extent>
             <measure unit="page" quantity="22"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49129</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49129" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49129"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° 17635-10</idno>
@@ -79,8 +81,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre émission : titre terminé par "sans difficulté apporter."
+        <p source="Mazarine">Autre émission : titre terminé par "sans difficulté apporter."
           (BM00269). </p>
+        <p source="Moreau">2508. Motifs (les) qui ont empêché la paix jusqu'à pré sent, et les seuls
+          remèdes qui la peuvent sans diffi culté apporter dans peu de jours, par A. D., Querci
+          nois. Paris, 1652, 22 pages. Ce Quercinois est insolent et pédant : Il demande au roi
+          d'éloi gner sa mère et de rendre aux États l'éclat qu'ils avaient sous Henri IV ! mais son
+          pamphlet est rare.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,8 +104,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES
         <lb/>MOTIFS
         <lb/>QVI ONT EMPESCHE

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2463_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2463_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,20 +32,21 @@
           <title source="Mazarine">La metamorphose de Mazarin, en la figure du dragon Nostre-Dame.
             En vers burlesque [sic].</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" when="1652-05-10">vers le 10 mai 1652</date>
           <extent>
             <measure unit="page" quantity="11"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50336</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50336" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50336"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11625</idno>
@@ -76,7 +78,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. D'après Hubert Carrier, l'auteur presse Condé de
+        <p source="Mazarine">En vers octosyllabes. D'après Hubert Carrier, l'auteur presse Condé de
           prendre la tête d'une sortie en masse des Parisiens pour aller chercher le roi à
           Saint-Germain (Bibliothèque Mazarine Ms. 4682-4, f. 53v). Célestin Moreau indique que le
           dragon Notre-Dame était l'image du dragon que tua saint Marcel, et qu'on portait en
@@ -84,6 +86,12 @@
           H. Carrier, texte paru vers le 10 mai 1652 d'après la place de l'exemplaire de la
           Bibliothèque Mazarine coté 4° A 12900-30 dans un recueil factice classé
           chronologiquement.</p>
+        <p source="Moreau">2463. Métamorphose (la) de Mazarin en la figure du Dragon Notre-Dame, en
+          vers burlesque (sic). Paris, 1652, 11 pages. Le dragon Notre-Dame était l'image du dragon
+          que tua saint Marcel, et qu'on portait à la procession de la Fête-Dieu. La descrip tion en
+          est assez curieuse. Mazarin est comparé à Néron qui brûla Rome : « Enfin ce fut jeu de
+          jeunesse (l'incendie de Rome); Mais pour lui, par Dieu !jeu n'est-ce. » Le poëte appelle
+          le blocus de Paris la Guerre des Neiges.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA
         <lb/>METAMIRPHOSE
         <lb/>DE

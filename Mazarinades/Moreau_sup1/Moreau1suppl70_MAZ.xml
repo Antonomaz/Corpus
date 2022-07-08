@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1suppl70_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1suppl70_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -26,24 +27,25 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14834"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">La complainte des pauvres a la Reine regente mere du Roy. Contre
             le cardinal Mazarin. In puteo veritas.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Antonomaz" when="1649-01-22">daté du 22 janvier 1649</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49413</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49413" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49413"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12658</idno>
@@ -75,12 +77,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Sous forme de lettre. Autre édition : dans un recueil éditorial
+        <p source="Mazarine">Sous forme de lettre. Autre édition : dans un recueil éditorial
           intitulé "Recueil de diverses pieces. Qui ont paru durant les mouvemens derniers de
           l'année 1649", 1650 (BM00059). - Publié sous le titre "La verité sans masque de la misere
           persecutee, ou La plainte des pauvres a la Reine, contre le cardinal Mazarin...", 1649
           (BM00475). Titre de départ suivi de la citation "Neque urgeat super me puteus os suum, ps.
           68.". Signé "la misere persecutee.". Daté de Paris le 22 janvier 1649.</p>
+        <p source="Moreau">70. Complainte (la) des pauvres à la reine. Lettre d'un gentilhomme
+          suédois , etc. Peut être les derniers suppliants aux pieds de la reine , etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,8 +101,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>1
         <lb/>LA
         <lb/>COMPLAINTE

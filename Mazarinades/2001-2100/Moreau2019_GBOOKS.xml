@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2019_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2019_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -65,12 +61,11 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309423</idno>
@@ -102,7 +97,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2019. Lettre de monsieur le comte de Tavannes à mon seigneur le duc
+          d'Orléans sur la trahison des Alle mands découverte par les habitants de la ville d'É
+          tampes, le 27° jour de mai 1652, avec la punition exemplaire qui en a été faite dans
+          ladite ville. Paris, Claude Le Roy, 1652,7 pages. Datée d'Étampes le 27 mai, et signée de
+          Tavannes et de Clinchamp. Le sauveur d'Étampes était un vigneron nommé Pierre Le Clerc.
+          Curieuse et rare.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -111,6 +112,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -126,8 +130,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>pe
         <lb rend="¬" break="no"/>1
         <lb/>L lL
@@ -149,8 +152,7 @@
         <lb/>A PARIS,
         <lb/>Chez CLAVDE LE RoY, au Mont saint
         <lb/>Hilaire. 1652.
-        <lb/>Aauec Permiſion de ſon leſſe Royale.
-        <pb n="2"/>
+        <lb/>Aauec Permiſion de ſon leſſe Royale. <pb n="2"/>
         <lb/>s ,
         <lb/>N.
         <lb/>
@@ -207,8 +209,7 @@
         <lb/>.... ̀
         <lb/>
         <lb/>1s.
-        <lb/>ooueo Google
-        <pb n="3"/>
+        <lb/>ooueo Google <pb n="3"/>
         <lb/>3.
         <lb/>,
         <lb/>i
@@ -226,8 +227,7 @@
         <lb/>Dieu ne vulant pas permeete que ſoa Peuple
         <lb/>Eeiee
         <lb/>Bourgeois pous la arde de as aues;esAlle
-        <lb rend="¬" break="no"/>A ij.
-        <pb n="4"/>
+        <lb rend="¬" break="no"/>A ij. <pb n="4"/>
         <lb/>2
         <lb/>rmans la voulans entreprandce contse leurs o
         <lb rend="¬" break="no"/>dres,,s e qi fu xaminé dans le Conſet &amp;de
@@ -256,8 +256,7 @@
         <lb/> deſlaror o que ’ay oatondu dire de ſa prepre boache
         <lb/>q’ffapes Ay fruiooit &amp; ſes ciq Copagaoas pa
         <lb/>eſerer ds le horſe ciquqoe ail ls.
-        <lb/>Monſieu
-        <pb n="5"/>
+        <lb/>Monſieu <pb n="5"/>
         <lb/>Monieur de Clinchampt luy dit, és t aſſeu
         <lb rend="¬" break="no"/>é de cela? Il reſpondir, i’en ſuis llementaſſeuré,
         <lb/>gue ffous n’y prenez garde, lors que l’armé́e du Roy
@@ -287,8 +286,7 @@
         <lb/>que s n’ayez prois de l lurr des auſsii toſt que
         <lb/>e Ray paroiſtrois dedaat les raills;: Or il n’eſt
         <lb/>lustemps dediſſimuler, meotez yousà la rai
-        <lb rend="¬" break="no"/>B.
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>B. <pb n="6"/>
         <lb/>6
         <lb/>ſon, &amp; le Conſeil vous fſera grace. Ios l’ũn.
         <lb/>d’ieeux, lequel parloit fort bon Prancois, dit
@@ -318,8 +316,7 @@
         <lb/>dans les foſſe de la Ville, à la veuë de l’at
         <lb rend="¬" break="no"/>mée Mazarlne, qul ne fitaucun effort à eca ſu¬,
         <lb/>ie, ant eſle fut eſpouuentéodeoir vn tel lp.
-        <lb/>ctacle Volla, Monſeigneureommevos mlt
-        <pb n="7"/>
+        <lb/>ctacle Volla, Monſeigneureommevos mlt <pb n="7"/>
         <lb/>7
         <lb/>aecommodent ceux qui veulent vſurper ſu
         <lb/>voſtre authoriteé, voila de la façon qu’ils ont

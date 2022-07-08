@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2384_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2384_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -30,14 +31,16 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14887"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Manifeste des bons Francois. Contre Jules Mazarin perturbateur du
             repos public, ennemy du Roy &amp; de son Estat. Exortant tous les bons François de
             suyvre &amp; proteger ceux qui n'ont point d'autre dessein de remettre le Roy dans son
             authorité accoustumée par la descision de trois poincts qui sont le service du Roy le
             bien public &amp; l'exemption de la tirranie.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-01-14" notAfter="1649-01-21">troisième semaine de
             janvier 1649</date>
@@ -45,13 +48,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49083</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49083" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49083"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13484</idno>
@@ -83,9 +85,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Également publié sous le titre "Manifeste pour messieurs du
+        <p source="Mazarine">Également publié sous le titre "Manifeste pour messieurs du
           Parlement..." (BM00077). Texte paru la 3e semaine de janvier 1649 d'après Hubert Carrier
           (Bibliothèque Mazarine, Ms 4682-4, f. 18v).</p>
+        <p source="Moreau">2384. Manifeste des bons François contre Jules Maza rin, perturbateur du
+          repos public, ennemi du roi et de son État, exhortant tous les bons François de (sic)
+          suivre et protéger ceux qui n'ont point dessein (que) de remettré le roi dans son autorité
+          accoutumée, par la décision de trois points, qui sont le service du roi, le bien public et
+          l'exemption de la tyrannie. Sans Lieu, 1649, 8 pages. Il a paru aussi sous le titre de
+          Manifeste pour Messieurs du Parlement, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>MANIFESTE
         <lb/>DES BONS
         <lb/>FRANCOIS.

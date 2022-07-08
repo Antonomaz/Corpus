@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2415_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2415_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,7 +43,9 @@
             le visage de la cour. Et reçois ces trois pieces comme des divertissemens de ma
             plume.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-10-01" notAfter="1652-10-07">première semaine
             d'octobre 1652</date>
@@ -50,13 +53,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49095</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49095" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49095"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13497</idno>
@@ -88,11 +90,20 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">2 états pour la p. 4 : se termine par "&amp; des deux Haches.", puis la
+        <p source="Mazarine">2 états pour la p. 4 : se termine par "&amp; des deux Haches.", puis la
           réclame "Le" (état A) ; se termine par "&amp; des deux Haches, &amp; rue du Roy de
           Sicile.", puis la réclame "Le" (état B). Par Sandricourt, pseudonyme de François-Eudes de
           Mézeray. Texte paru dans la première semaine d'octobre 1652 d'après Hubert Carrier (Ms
           4682-4, f. 31v).</p>
+        <p source="Moreau">2415. Maréchal (le) des logis logeant le roi et toute sa cour par les
+          rues et principaux quartiers, en consé quence de la prétendue amnistie, par le sieur de
+          San dric (sic). * r Demandes au vendeur l'Etat présent de la fortune des princes (de tous
+          les potentats) et le Visage de la cour; et reçois ces trois pièces comme des divertisse
+          ments de ma plume. Paris, 1652,7 pages. Une des pièces les moins communes de Sandricourt.
+          C'est une espèce de suite des Fourriers d'État : « Il est juste que nous la logions (la
+          cour) un peu plus au large que par le passé. » Sandricourt est-il l'auteur des Fourriers ?
+          Le Maréchal-dcs-logis ne les vaut pas. J'y remarque seulement que le coadjuteur est logé
+          rue Trousse nonain, et de Pénis rue des Francs-Bourgeois.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -110,8 +121,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>MARESCHAL
         <lb/>DES LOGIS,

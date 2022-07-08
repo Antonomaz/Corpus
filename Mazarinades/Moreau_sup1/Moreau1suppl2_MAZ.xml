@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1suppl2_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1suppl2_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -26,10 +27,12 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14878"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">A nosseigneurs de Parlement.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1648">1648</date>
           <date source="Carrier" notBefore="1648-10-23" notAfter="1648-11-30">entre le 23 octobre et
             la dernière semaine de novembre 1648</date>
@@ -37,13 +40,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49410</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49410" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49410"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13333</idno>
@@ -75,10 +77,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Requête adressée de Venise par le duc de Vendôme et son fils le duc de
+        <p source="Mazarine">Requête adressée de Venise par le duc de Vendôme et son fils le duc de
           Beaufort au procureur général du parlement de Paris au sujet de leurs procès. Titre de
           départ. Texte paru entre le 23 octobre et la dernière semaine de novembre 1648 d’après
           Hubert Carrier (Bibliothèque Mazarine, Ms 4682-1, f. 7).</p>
+        <p source="Moreau">2. A nos seigneurs de Parlement. (S. 1., 1649), 8 pages. Requête du duc
+          de Vendôme tendante à mettre le procureur général en demeure de le comprendre dans le
+          procès du duc de Beaufort.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,11 +102,10 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>I
         <lb/>A Noſſeigneur de Parlement.
-        <lb/>SVpplient humblement Caeſar de Vandoſme, Duc de 
+        <lb/>SVpplient humblement Caeſar de Vandoſme, Duc de
         <lb/>Vandoſnois, ’e ſtanpe &amp; de Penthie ure, eair l er anee,
         <lb/>&amp; ieutenant general pour le Roy, auec tous le droirs &amp;
         <lb/>puuoir d’Admiraute en ſes Pays &amp; lounce le Pretage:’t,
@@ -425,7 +429,7 @@
         <lb/>ſonnes &amp; biens deſdits ſieurs Ducs de Vandoſn. &amp;) de Beau¬
         <lb/>fort, iuſques à ce que par la Cour aut:aaaent en ait eſté ordon¬
         <lb/>né &amp; les mertre en la protection &amp; ſauuegarde du Ioy &amp; de la
-        <lb/>Cour,&amp; vous fere2z bien.       </p>
+        <lb/>Cour,&amp; vous fere2z bien. </p>
     </body>
   </text>
 </TEI>

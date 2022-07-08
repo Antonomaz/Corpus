@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1734_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1734_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -27,24 +28,25 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14864"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Le jeu de dames, que monsieur le prince de Condé a joüé avec
             monsieur Guitault.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" when="1650-02">février 1650</date>
           <extent>
             <measure unit="page" quantity="3"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49022</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49022" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49022"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13108</idno>
@@ -76,12 +78,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Relatif à l'arrestation des princes de Condé, Conti et Longueville par
+        <p source="Mazarine">Relatif à l'arrestation des princes de Condé, Conti et Longueville par
           Gaston de Comminges, comte de Guitaut, le 18 janvier 1650. En forme de dialogue. Autre
           édition repérée par Hubert Carrier, avec p. de titre, 4 p., probablement orléanaise
           (Hubert Carrier, Bibliothèque Mazarine Ms 4682-3, f. 118). Titre de départ. Texte paru en
           1651, d'après Célestin Moreau, en février 1650, peu après l'arrestation des princes,
           d'après H. Carrier (Bibliothèque Mazarine Ms. 4682-3, f. 117 v).</p>
+        <p source="Moreau">1734. Jeu (le) de dames que monsieur le prince de Condé joue avec M.
+          Guitault (sic) (S. l., 1651), 3 pages. Pamphlet très-rare, qu'il faut tâcher de ne pas
+          comprendRè.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE IEV DE DAMES,
         <lb/>que Monſieur le Prince de
         <lb/>Condé à ioüé auec Mon¬

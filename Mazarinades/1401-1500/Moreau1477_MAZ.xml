@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1477_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1477_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -49,13 +50,12 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49018</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49018" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49018"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10986</idno>
@@ -87,7 +87,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions : même adresse (colophon), 6 p., caractères de taille
+        <p source="Mazarine">Autres éditions : même adresse (colophon), 6 p., caractères de taille
           supérieure, p. 1, fin de l. 7, "Mai-", p. 3, l. 25 "dit de Bourbon", p. 3, l. 27 "Cét
           Henry", p. 5, l. 26 "souhaite" (BM00168) ; même adresse (p. de titre), 4 p. (BM00430) ; à
           l'adresse de La Haye, chez Michel Stael et Jean Breeckevelt, 1650, [7] p. ; sans adresse,
@@ -97,6 +97,9 @@
           départ. Par Paul Boyer Du Petit-Puy, d'après Hubert Carrier, "La Presse de la Fronde
           (1648-1653): les Mazarinades", I, Genève, 1989, p. 306 D'après H. Carrier, texte paru fin
           janvier-début février 1650 (Bibliothèque Mazarine, Ms. 4682-3, f. 10 v).</p>
+        <p source="Moreau">1477. Généalogie (la) du prince, et comme tous ceux de cette maison ont
+          été funestes au roi et au peuple. Paris, N. Charles, 1650, 6 pages. Sottise et
+          lâcheté.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -115,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>1
         <lb/>LA
         <lb/>GENEALOGIE

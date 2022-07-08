@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau820_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau820_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -56,13 +52,13 @@
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement/>
-            <institution>Bibliothèque municipale de Lyon</institution>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
             <repository/>
             <idno type="cote"/>
           </msIdentifier>
@@ -93,7 +89,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">820. Courrier (le) de la cour, apportafit nouvelles de tout ce qui s'est
+          passé en cour, depuis le dixiesme de ce mois (d’avril) jusqu’au départ du roy de la ville
+          de Gien (20), et de la route qu'a prise Sa Majesté pour son retour à Paris. Paris, Jacques
+          Le Gentil, 1652, 8 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,6 +102,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -117,8 +121,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>..
         <lb/>rD
         <lb/>DID
@@ -136,8 +139,7 @@
         <lb/>re
         <lb/>A PARIS,
         <lb/>ACQVrS LE GENTIL pés Saint
-        <lb/>eee ¬
-        <pb n="2"/>
+        <lb/>eee ¬ <pb n="2"/>
         <pb n="3"/>
         <lb/>LE COVRRIER DE CIEN,
         <lb/>apportant ouulles de tout ce qui s’eſt paſſeé́
@@ -162,8 +164,7 @@
         <lb/>aller voir le bon eſta; doſdites troupas; qui,
         <lb/>diſoit- il, n’eſtoit pas de gens qui venoienp
         <lb/>d’eſtge deffaits, ainſi que l’on publbioit :au-(
-        <lb/>quel aduis, auſſi bien qu’au prtmis’oppon¬
-        <pb n="4"/>
+        <lb/>quel aduis, auſſi bien qu’au prtmis’oppon¬ <pb n="4"/>
         <lb/>4
         <lb/>ſa vigoureuſement le Mareſlal de Ville
         <lb rend="¬" break="no"/>roy, diſant, qu’il ne ſoutfriroit pas que la
@@ -192,8 +193,7 @@
         <lb/>que la Duc de la oehſoucauit fiſoit toû
         <lb rend="¬" break="no"/>jors de nouellesloéd ln le Poi ou, &amp;
         <lb/>que ſes troupes groſſians toujours auoient
-        <lb/> déja
-        <pb n="5"/>
+        <lb/> déja <pb n="5"/>
         <lb/>5
         <lb/>déja pris &amp; pillé trois chaſteaux, &amp; pluſieurs
         <lb/>villages des dépemdans de l’Euoſché de Poi
@@ -221,8 +221,7 @@
         <lb/>Eſpagnole deuantladite villayant enuoyé
         <lb/>vn Trompette pour ſommer les habitans de
         <lb/>ſe rendre, &amp; leur declarer, que s’il ne trou
-        <lb rend="¬" break="no"/>B
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>B <pb n="6"/>
         <lb/>uoit dans la place pour quarante iours de
         <lb rend="¬" break="no"/>viuresil: les forit tous pendre. Cette rodo
         <lb rend="¬" break="no"/>montade fut eeuë̈ par vneautre, les aſſie
@@ -248,8 +247,7 @@
         <lb/>chal de Villoroy, &amp; l’auare, du Maeſchl
         <lb/>du Pleſſis Prafldii Lophremirrdifadoqq I
         <lb/>alloit de lhintofoft dy, ô&amp; dubiendt tu
-        <lb rend="¬" break="no"/>1e laFrane, ique S Majeſté apptohaſt de
-        <pb n="7"/>
+        <lb rend="¬" break="no"/>1e laFrane, ique S Majeſté apptohaſt de <pb n="7"/>
         <lb/>Paris, &amp; qu’il croyoit, en cas qu’on deſiraſt.
         <lb/>de pacifier les choſes, que c’eſtoi livnlique
         <lb/>moyen de lefaire. Pluſieurs enclinoient à
@@ -275,8 +273,7 @@
         <lb/>partir le lendemain pour Auxerre.
         <lb/>C’eſt choſe eſttnge que la preſence de la
         <lb/>Cour, autrefois deſiré́e de tout le monde,
-        <lb/>ſoit à preſent vn ſujet d’apprehenſion:;car
-        <pb n="8"/>
+        <lb/>ſoit à preſent vn ſujet d’apprehenſion:;car <pb n="8"/>
         <lb/>1
         <lb/>s
         <lb/>ceux de Ioigny ſur la nouuelle que le Roy

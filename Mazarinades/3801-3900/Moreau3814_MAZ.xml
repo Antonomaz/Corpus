@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3814_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3814_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,20 +37,21 @@
           <title source="Mazarine">Tres-humble remonstrance du Parlement au Roy, et a la Reyne
             regente.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" when="1651-01-27">27 janvier 1651</date>
           <extent>
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49337</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49337" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49337"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° A 13940-3</idno>
@@ -81,7 +83,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions repérées par C. Moreau, Armand d'Artois et H. Carrier
+        <p source="Mazarine">Autres éditions repérées par C. Moreau, Armand d'Artois et H. Carrier
           (Bibliothèque Mazarine, Ms 4682-5, f. 151v, 323v-324-325) : Paris, imprimeurs et libraires
           ordinaires du Roi, 1649, 16 p. in-4 (édition composite, BM00024) ; Paris, imprimeurs et
           libraires ordinaires du Roi, 1649, 32 p. in-4 (BM00410 et BM00474) ; sans adresse ni date,
@@ -102,6 +104,19 @@
           confirmé par Hubert Carrier suivant Dubuisson Aubenay (Bibliothèque Mazarine, Ms 4682-5,
           f. 326v). Daté de Paris le 21 janvier 1649. - Texte paru le 27 janvier d'après H. Carrier
           suivant Dubuisson Aubenay.</p>
+        <p source="Moreau">3814. Très-humble remontrance du Parlement au roi et à la reine régente.
+          Paris, par les imprimeurs et | fe&gt; r- ' " v. g (f % libraires ordinaires du roi, 1649,
+          16 pages. Signée et datée du 21 janvier. i La loi fondamentale de la monarchie veut qu'il
+          n'y ait qu'un maître en titre et en fonction ; de sorte qu'il est toujours honteux au
+          prince, et dommageable aux sujets , qu'un particulier prenne trop de part à son affection
+          ou à son autorité , celle-là devant être communiquée à tous, et celle-ci n'appartenant
+          qu'à lui seul. » Il en existe une autre édition de 32 pages, en gros caractères, chez les
+          mêmes imprimeurs ; mais la remontrance n'y est pas si gnée; une autre de lôpages in-12, s.
+          1. n. d.; et une autre encore I lv&gt; de Rouen, par les imprimeurs de la cour, pans cette
+          dernière, la Remontrance est suivie de la Lettre de l'archiduc Léopold au Par lement, de
+          ses Propositions et de diverses pièces. Guy Patin dit qu'on en attribuait la rédaction au
+          président Le Coigneux. (lettre du 27 janvier 1649 à Charles Spon, p. 146 du I,r
+          volume.)</p>
       </abstract>
       <textClass>
         <keywords>
@@ -118,8 +133,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="11"/>
+      <p><pb n="11"/>
         <lb/>TRES-HVMBLE
         <lb/>REMONSTRANCE
         <lb/>DV PARLEMENT
@@ -129,7 +143,8 @@
         <lb/>A PARIS,
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires du Roy.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="12"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="12"/>
         <pb n="13"/>
         <gap/>
         <pb n="14"/>

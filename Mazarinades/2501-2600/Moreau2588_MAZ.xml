@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2588_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2588_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,7 +37,9 @@
           <title source="Mazarine">L'ombre de madame la Princesse apparu a la Reyne. Au Parlement,
             et a plusieurs autres.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" notBefore="1651-01-01" notAfter="1651-01-10">début janvier
             1651</date>
@@ -44,13 +47,12 @@
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49028</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49028" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49028"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11693</idno>
@@ -82,7 +84,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En prose avec des passages en vers : sizains d'octosyllabes, et à la
+        <p source="Mazarine">En prose avec des passages en vers : sizains d'octosyllabes, et à la
           fin 3 sizains d'alexandrins, tous rimés ababcc. Autre édition de 16 p. (BM00178) avec une
           composition typographique différente, repérée par Armand d'Artois (Bibliothèque Mazarine,
           Ms 4682-4, f. 118v) : notamment, au verso de la p. de titre, l. 1 : "deffendre" au lieu de
@@ -93,6 +95,8 @@
           Carrier, "La presse de la Fronde (1648-1653) : les mazarinades", II, Paris, 1991, p. 70.
           D'après H. Carrier, texte paru fin décembre 1650 ou début janvier 1651 (Bibliothèque
           Mazarine, Ms. 4682-4, f. 118v).</p>
+        <p source="Moreau">2588. Ombre (l') de madame la Princesse apparue à la reine, au Parlement
+          et à plusieurs autres. Sans Lieu, 1651, 16 pages. François Davenne.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -112,8 +116,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L'OMBRE
         <lb/>DE
         <lb/>MADAME LA

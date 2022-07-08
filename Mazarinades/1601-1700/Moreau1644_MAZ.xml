@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1644_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1644_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -74,13 +75,12 @@
             <measure unit="page" quantity="240"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49180</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49180" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49180"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° A 11109-1</idno>
@@ -112,7 +112,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Épître dédicatoire "A Nosseigneurs Nosseigneurs de Parlement. -
+        <p source="Mazarine">Épître dédicatoire "A Nosseigneurs Nosseigneurs de Parlement. -
           Avertissement "au lecteur, et au Roy" et "Second advertissement au lecteur". - En regard
           du début du texte, permission d'imprimer accordée le 26 mars 1649 par le parlement de
           Rouen en exclusivité pour deux ans à David du Petit Val, Jean Viret, imprimeurs du roi à
@@ -126,6 +126,29 @@
           sans adresse [16]-542 p. in-8 (BM00312), sans adresse, 349 p. in-8 (BM00306) ; sans
           adresse, 395 p. in-8. Attribué d'après Célestin Moreau à Nicolas Johannes Du Portail,
           bailli de Saint-Denis en France, qui signe l'épître dédicatoire "L.P.R.".</p>
+        <p source="Moreau">1644. Histoire (l') du temps, ou le Véritable récit de ce qui s'est passé
+          dans le Parlement, depuis le mois d'août 1647 jusques au mois de novembre 1648, avec les
+          harangues et les avis différents qui ont été propo sés dans les affaires qu'on y a
+          solennellement traitées. Sans Lieu, 1649,336 pages. L'épître dédicatoire à messeigneurs du
+          Parlement est signée L. P. R. Dans le Second avertissement au lecteur, l'auteur nous
+          apprend qu'il a écrit son livre dans le calme de la déclaration d'octobre, et non « dans
+          la furieuse tempête que les ministres ont depuis mali cieusement excitée. » « L'Histoire
+          du temps, rédigée par Nicolas Johannes du Portail, bailli de Saint-Denys en France, est,
+          dit M. Leber (art. 4389 de son Catalogue), du nombre des produits de la presse frondeuse
+          dont Mazarin fit séquestrer les fonds à son profit, lorsqu'il eut re couvré sa force et
+          son autorité. » Je ne conteste assurément pas cette anecdote; mais je dois dire que
+          l'Histoire du temps n'en est pas plus rare.On la trouve facilement in-4° et in-12.
+          Quelques-uns ont pensé que l'édition in-12était l'édition originale, et que celle de
+          format in-4° n'était qu'une réimpression. C'est une erreur, je crois : les deux éditions
+          ont été publiées en même temps, comme cela arrivait souvent pour les pièces importantes.
+          Les exemplaires in-4° étaient remis aux colporteurs ; les autres se vendaient chez le
+          libraire, ou s'expédiaient pour la province. Si cependant l'une des deux éditions a paru
+          la première, c'est l'édition in-4°. Celle de format in-12, en effet, a été complétée par
+          une seconde partie intitulée : Suite de l'Histoire ou Journal du temps. C'est un extrait,
+          souvent infidèle, du Journal du Parlement, depuis le 15 octobre 1648 jusqu'à la paix de
+          1649. Quoique moins étendue, l'édition in-4° doit être préférée à cause de son format, qui
+          est celui du Journal du Parlement, dont l'Histoire du temps ne peut être séparée. Il en
+          existe une réimpression de Rouen, David du Petitval, 1649.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -144,8 +167,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="11"/>
+      <p><pb n="11"/>
         <lb/>L'HISTOIRE
         <lb/>DV TEMPS
         <lb/>OV
@@ -154,10 +176,8 @@
         <lb/>Parlement de Paris.
         <lb/>Auec les Harangues &amp; les advis differends, qui
         <lb/>ont eſté propoſez dans les affaires qu'on y a ſo¬
-        <lb/>lemnellement traitées.
-        <figure type="decoration"/>/
-        <lb/>M. DC. XLIX.
-        <pb n="12"/>
+        <lb/>lemnellement traitées. <figure type="decoration"/>/
+        <lb/>M. DC. XLIX. <pb n="12"/>
         <pb n="13"/>
         <pb n="14"/>
         <lb/>DTT D U
@@ -9068,8 +9088,7 @@
         <lb/> rez, bien ménager le gain de la lVictoire &amp;’ l’honneur
         <lb/>dus Triomphe. Ce ſont les vœux de tous les bons
         <lb/>Francois, &amp; de tous ceux qui ayment le bien Publie
-        <lb/>&amp; le ſiruiee due Prinpſs,
-      </p>
+        <lb/>&amp; le ſiruiee due Prinpſs, </p>
     </body>
   </text>
 </TEI>

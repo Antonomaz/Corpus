@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1125_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1125_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -46,20 +47,21 @@
             l'obeyssance n'est deuë qu'aux justes, c'est pour cela qu'elle doit estre raisonnable
             &amp; non pas aveugle.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" when="1652-10-15">mi-octobre 1652</date>
           <extent>
             <measure unit="page" quantity="14"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50224</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50224" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50224"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12824</idno>
@@ -91,10 +93,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Par Claude Du Bosc de Montandré d'après Célestin Moreau. D'après Hubert
+        <p source="Mazarine">Par Claude Du Bosc de Montandré d'après Célestin Moreau. D'après Hubert
           Carrier, texte paru à la mi-octobre 1652 d'après la place de l'exemplaire de la
           Bibliothèque Mazarine coté 4° A 12825-96 dans un recueil factice classé chronologiquement
           (Bibliothèque Mazarine, ms. 4682-2, f. 242v).</p>
+        <p source="Moreau">1125. Discours important sur l’autorité des ministres et l’obéissance des
+          sujets, faisant voir 1° que les ccclé- siastiques qui flattent les consciences des grands,
+          sont les sources de tous les maux des États ; 2° que tous les ordres sont abligés, en
+          conscience, de résister à la tyrannie des ministres ; 3° qu’aucunes impositions ne peuvent
+          être faites que du consentement des peuples ; 4° que l’obéissance n’est due qu’aux justes
+          ; c'est pour cela qu’elle doit être raisonnable, et non pas aveugle. Paris, 1652, 14
+          pages. Dubosc Montandre.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -113,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>DISCOVRS
         <lb/>IMPORTANT
         <lb/>SVR L’AVTHORITE’ DES

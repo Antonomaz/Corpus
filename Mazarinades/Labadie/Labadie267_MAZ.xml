@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Labadie267_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Labadie267_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -53,13 +54,12 @@
             <measure unit="page" quantity="11"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49254</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49254" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49254"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15380</idno>
@@ -91,10 +91,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Arrêt de lecture, publication et enregistrement par le parlement de
+        <p source="Mazarine">Arrêt de lecture, publication et enregistrement par le parlement de
           Bordeaux le 12 juin 1651. Les lettres patentes et prestation de serment signées
           "Phelypeaux" ; l'arrêt du parlement de Bordeaux signé "Suau". Les lettres patentes et la
           prestation de serment sont du 16 mai 1651 à Paris.</p>
+        <p source="Labadie">267. LETTRES PATENTES du Roy, contenant provision à Monseigneur le
+          Prince du Gouvernement de Guyenne, &amp; prestation de son serment de fidélité, fait en
+          qualité de Gouverneur de la dite Province, entre les mains de Sa Majesté. Verifiées &amp;
+          enregistrées au Parlement de Bourdeaux, &amp; publiées en iceluy le 31. May &amp; 12. de
+          Juin 1651. A Bourdeaux, par J. Mongiron Millanges, Imprimeur ordinaire du Roy, 1651, 11
+          pages. Bibl. de Bordx., 8748.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -113,8 +119,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRES
         <lb/>PATENTES
         <lb/>DV ROY.

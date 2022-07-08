@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3648_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3648_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,20 +37,21 @@
           <title source="Mazarine">Les sentimens d'un fidelle subjet du Roy, sur l'arrest du
             Parlement du vingt-neufiéme decembre 1651.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-02-09">à partir du 9 février 1652</date>
           <extent>
             <measure unit="page" quantity="75"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49207</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49207" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49207"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">Ms 4414-25</idno>
@@ -81,7 +83,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions : 48 p. (BM00767) ; 54 p. (Moreau, 2e supplément, n°
+        <p source="Mazarine">Autres éditions : 48 p. (BM00767) ; 54 p. (Moreau, 2e supplément, n°
           191). D'après Célestin Moreau, attribué (en fait par Louis Machon) à Martineau évêque de
           Bazas, ou à Cohon évêque de Dol, ou encore à Servien, à Silhon ; atribué par la rumeur à
           Bluet d'après Dubuisson-Aubenay ; identification de Cohon finalement confirmée par Hubert
@@ -89,6 +91,16 @@
           dans une première édition à partir du 9 février 1652 ; imprimé au Louvre d'après Louis
           Machon, et d'après lui suivi d'une nouvelle édition le jeudi saint suivant (plutôt quinze
           jours après Pâques selon H. Carrier).</p>
+        <p source="Moreau">3648. Sentiments (les) d'un fidèle sujet du roi sur l'ar rêt du Parlement
+          du vingt-neuvième décembre 1651. (S. 1., 1652), 73 pages. Ce pamphlet a été attribué à
+          Martineau, évêque de Bazas, à Cohon, évêque de Dol, à Servien et à Silhon. Imprime d'abord
+          au Louvre, il ne se vendait pas ; mais il en parut, le jeudi saint 1652, une seconde
+          édition, qui fut criée en plein palais , dit l'auteur des Observations véritables et
+          désintéressées, etc. On trouve dans cette seconde édition un passage au moins qui n'est
+          pas dans la première ; c'est le paragraphe, page 25, où il est parlé de l'arrêt rendu
+          contre l'amiral de Coligr.y. On comprend que l'édition du Louvre doit être rarissime ; et
+          elle l'est. La seconde édition , au contraire , est des plus com munes. Elle n'a que 48
+          pages. Voir Y Apologie de messieurs du Parlement, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -105,8 +117,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="11"/>
+      <p><pb n="11"/>
         <lb/>LES
         <lb/>SENTIMENS
         <lb/>D’VN FIDELLE

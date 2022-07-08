@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau1235_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1235_GALL">
 	<teiHeader xml:lang="fr">
 		<fileDesc>
 			<titleStmt>
@@ -10,15 +10,11 @@
 				<title type="sub">Édition Antonomaz</title>
 				<respStmt>
 					<resp>Chaîne de traitement</resp>
-					<persName role="XML_Encoding">Roblin Camille
-						<affiliation>
-							<roleName type="status">Stagiaire</roleName>
-						</affiliation>
+					<persName role="XML_Encoding">Roblin Camille <affiliation><roleName
+								type="status">Stagiaire</roleName></affiliation>
 					</persName>
-					<persName role="XML_Encoding">Lecha Mélanie
-						<affiliation>
-							<roleName type="status">Stagiaire</roleName>
-						</affiliation>
+					<persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+								>Stagiaire</roleName></affiliation>
 					</persName>
 					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven
 						Karine</persName>
@@ -26,10 +22,8 @@
 						Gaël</persName>
 					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
 						Jean-Baptiste</persName>
-					<persName role="Corrector">Hip Amélie
-						<affiliation>
-							<roleName type="status">Vacataire</roleName>
-						</affiliation>
+					<persName role="Corrector">Hip Amélie <affiliation><roleName type="status"
+								>Vacataire</roleName></affiliation>
 					</persName>
 				</respStmt>
 			</titleStmt>
@@ -46,25 +40,29 @@
 				<bibl>
 					<ref target="https://gallica.bnf.fr/ark:/12148/bpt6k133739b"/>
 					<author>
-						<persName role="auteur">
-							<name>Baugion</name>
+						<persName>
+							<surname>Baugion</surname>
 						</persName>
 					</author>
 					<title source="Moreau">Entretien de Fanchon, Toinon et Nichon, sur l’arrivée de
 						leurs galants, pièce morale, par le sieur Baugion.</title>
 					<pubPlace>Sans Lieu</pubPlace>
-					<publisher>Sans Nom</publisher>
+					<publisher>
+						<persName>Sans Nom</persName>
+					</publisher>
 					<date when="1650">1650</date>
-					<date source="Antonomaz"> entre le 7 mars et le 14 avril 1650</date>
+					<date source="Antonomaz" notBefore="1650-03-07" notAfter="1650-04-14"> entre le
+						7 mars et le 14 avril 1650</date>
 					<extent>
 						<measure unit="page" quantity="14"/>
 					</extent>
 					<note type="format">in-4</note>
-					<note type="BM_identifier" cert="high"/>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low"
+						target="none"/>
 				</bibl>
 				<msDesc>
 					<msIdentifier>
-						<settlement>Paris</settlement>
+						<settlement ref="geonames:2988507">Paris</settlement>
 						<institution>Bibliothèque nationale de France</institution>
 						<repository>Département philosophie, histoire, sciences de
 							l'homme</repository>
@@ -98,8 +96,14 @@
 				<language ident="fra">Document en français</language>
 			</langUsage>
 			<abstract>
-				<p source="BM_notes"/>
-				<p source="BnF_notes"/>
+				<p source="Mazarine"/>
+				<p source="Moreau">1235. Entretien de Fanchon, Toinon et Nichon, sur l’arrivée de
+					leurs galants, pièce morale, par le sieur Baugion. (S. 1.), 1650, 14 pages. « Le
+					siècle est si pervers et si déprave que si j'avuis mis une intitulation sainte à
+					ces remontrances chrétiennes , on m’auroit appelé trouble fête, bigot, mangeur
+					de chapelets; au lieu qu’en ayant mis une burlesque , elle sera débitée beaucoup
+					mieux. » L’idée est originale au moins ; et la pièce n’est pas commune. On était
+					en carnaval.</p>
 			</abstract>
 			<textClass>
 				<keywords>
@@ -108,6 +112,10 @@
 					<term type="subgenre">histoire_tragique</term>
 					<term type="subgenre">occasionnel</term>
 					<term type="subject">pseudo-burlesque</term>
+					<term type="subgenre">burlesque</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
 				</keywords>
 			</textClass>
 			<settingDesc>

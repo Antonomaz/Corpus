@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2080_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2080_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -39,34 +35,25 @@
       <sourceDesc>
         <bibl>
           <ref target="https://books.google.fr/books?id=FkhAjkAWllEC&amp;hl=fr"/>
-          <author>
-            <persName>
-              <forename/>
-              <surname/>
-            </persName>
-          </author>
+          <author/>
           <title source="Moreau">Lettre des trois États de Provence à M. le duc de Guyse (sic), par
             laquelle il est prié d'accepter le gouvernement de la province, et (de) les tirer du
             joug tyrannique sous lequel ils languissent depuis la mort du défunt duc de Guyse, son
             père.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher ref="isni:0000000">
-            <persName>
-              <forename/>
-              <surname/>
-            </persName>
+          <publisher>
+            <persName>Sans Nom</persName>
           </publisher>
           <date source="Moreau" when="1652">1652</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309961</idno>
@@ -98,7 +85,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2080. Lettre des trois États de Provence à M. le duc de Guyse (sic), par
+          laquelle il est prié d'accepter le gouvernement de la province, et (de) les tirer du joug
+          tyrannique sous lequel ils languissent depuis la mort du défunt duc de Guyse, son père.
+          Paris, J. Brunet, 1652,7 pages. . Datée de Toulon, le 10 juillet 1652, et signée :
+          l'Archevêque d'Aix, l'Évêque de Toulon, le comte de Carces, le baron de Mon tosier, de
+          Félix et Coulanges, consuls d'Arles. Il est bien évident qu'elle est fausse ; mais elle
+          est rare.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,6 +101,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -122,15 +119,13 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>ER
         <lb/>DE PROVENCE
         <lb/>A MONSIEVR LE DvC
         <lb/>DE VE
         <lb/>’eie eieee
-        <lb/>eenr
-        <pb n="2"/>
+        <lb/>eenr <pb n="2"/>
         <lb/> n
         <lb/>-v
         <lb/> ’
@@ -160,8 +155,7 @@
         <lb rend="¬" break="no"/>1
         <lb/> ii
         <lb/>Te
-        <lb rend="¬" break="no"/> oouaGoogl
-        <pb n="3"/>
+        <lb rend="¬" break="no"/> oouaGoogl <pb n="3"/>
         <lb/>ptepbeeppte
         <lb/>Lettre des Eſtats de Prouen
         <lb rend="¬" break="no"/> ce à Monſieur le Duc de
@@ -177,8 +171,7 @@
         <lb rend="¬" break="no"/>ſé vne grande ioye parmy ous, oure l’eſpa
         <lb rend="¬" break="no"/> ance qae nous conceuoa de vous voir Gou
         <lb rend="¬" break="no"/> uerneur de Pnoueace, &amp; dôinis desmeſnaeafe
-        <lb rend="¬" break="no"/> liciee qup ona ioiſfions durnt que deffun;
-        <pb n="4"/>
+        <lb rend="¬" break="no"/> liciee qup ona ioiſfions durnt que deffun; <pb n="4"/>
         <lb/>4
         <lb/>Monſeigneur le Duc de Guiſe voſtre Pere,
         <lb/>( dont Dieu ait l’ame) y a demeuré en cette
@@ -207,8 +200,7 @@
         <lb rend="¬" break="no"/>nlron,; on a voulu reduite le Prleintd’Ai en
         <lb/>Semeſtre, deſſein qui rencontra de’grandes di
         <lb/>ficultez &amp; dppbſitionis,&amp; à ce ſuj&amp;furent en
-        <lb rend="¬" break="no"/>uoyez à diuetſes fois des eptee Cour,auoc
-        <pb n="5"/>
+        <lb rend="¬" break="no"/>uoyez à diuetſes fois des eptee Cour,auoc <pb n="5"/>
         <lb/>J.
         <lb/>de tres-humbles remonſttances auu Roy, &amp; au
         <lb rend="¬" break="no"/>res au Parlement de Paris, pour faire vne
@@ -238,8 +230,7 @@
         <lb rend="¬" break="no"/>&amp;e les dommages que nous auonms receus aux
         <lb/>degaſts qu’on a faits de nos Oliuiers, qui ſont,
         <lb/>le meillour denaſtre commerce, &amp; auons mil
-        <lb rend="¬" break="no"/>B
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>B <pb n="6"/>
         <lb/>6
         <lb/>le fois regreté la. perte de feu Monſeigneur de
         <lb/>Guiſe voſtre Pere, ſous lequel le ſicdle d’or.
@@ -268,8 +259,7 @@
         <lb/> faire entendre noſtre reſolution, qui eſt de prier
         <lb/>Voſtre Alteſſe, de conſentir que nous enuoyons
         <lb/>en Cour à Son Alteſſe Royale, &amp; Monſeigneur
-        <lb/>le Prince nos tres-humbles ſupplications, de
-        <pb n="7"/>
+        <lb/>le Prince nos tres-humbles ſupplications, de <pb n="7"/>
         <lb/>1
         <lb/>nous la donner pour Gouuerneur de Prouence,
         <lb/>ſur la confiance que nous auons que vous aurez

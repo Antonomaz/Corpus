@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2892_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2892_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -85,13 +86,12 @@
             <measure unit="page" quantity="32"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49198</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49198" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49198"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15435-84</idno>
@@ -123,9 +123,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions à la même adresse : 35 p. in-4 (BM00958) ; 28 p. in-4.
+        <p source="Mazarine">Autres éditions à la même adresse : 35 p. in-4 (BM00958) ; 28 p. in-4.
           Texte paru la seconde quinzaine de mars 1649 d'après Hubert Carrier (Bibliothèque
           Mazarine, Ms 4682-4, f. 253v);</p>
+        <p source="Moreau">2892. Procès verbal de la conférence faite à Ruel par messieurs les
+          députés du Parlement, chambre des Comptes, cour des Aydes, ensemble ceux de la ville,
+          contenant toutes les propositions qui ont été faites tant par les princes et députés de la
+          reine que par les députés desdites compagnies, et tout ce qui s'est passé entr'eux pendant
+          ladite conférence. Paris, Mathieu Colombel, 1649, 35 pages. On le trouve dans le 6° volume
+          des Mémoires du cardinal de Retz, Genève, Fabry, 1777, in-8°.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -143,8 +149,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>PROCEZ
         <lb/>VERBAL
         <lb/>DE LA CONFERENCE
@@ -161,7 +166,8 @@
         <lb/>De l'Imprimerie de MATHIEV COLOMBEL, ruë neufue
         <lb/>S. Anne du Palais, à la Colombe Royale.
         <lb/>M. DC. XLXI.
-        <lb/><imprimatur>AVEC PERMISSION</imprimatur>. <pb n="8"/>
+        <lb/>
+        <imprimatur>AVEC PERMISSION</imprimatur>. <pb n="8"/>
         <pb n="9"/>
         <lb/>PROCEZ VERBAL.
         <lb/>De la Conference faite à Rael, Pat Meſſieuts les Deputez du Palement,

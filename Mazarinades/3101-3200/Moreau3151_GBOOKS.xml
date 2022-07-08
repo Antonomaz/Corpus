@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3151_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3151_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -54,11 +50,11 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4 205 mm</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309565</idno>
@@ -90,9 +86,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Autre(s) variante(s) du titre : Nouvelle 1652. Dans Moreau, la
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Autre(s) variante(s) du titre : Nouvelle 1652. Dans Moreau, la
           mazarinade n̊ 3 151 porte comme titre : Relation d'un complot...</p>
+        <p source="Moreau">3151. Relation d'un complot formé en la ville de Rheims pour poignarder
+          le cardinal Mazarin, et la façon dont il a été découvert, et les noms des com plices.
+          Paris, P. Vallée, 1652, 7 pages. Rare. Mazarin quittait la France. Dans le village de
+          Gisi, près de Reims , la ferme d'un paysan fut brûlée. Ce paysan résolut de tuer le
+          cardinal pour s'en venger. Il se rendit auprès de lui avec un valet , tous deux armés de
+          poignards ; mais un garde les ayant repoussés , le valet tira son arme et voulut le
+          frapper. On les ar rêta. Us avouèrent leur projet ; et le cardinal les renvoya en fai sant
+          donner quelque argent au paysan. Cela peut être vrai ; mais je ne le garantis pas.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,6 +105,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -116,8 +124,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/> 1
         <lb/>T
         <lb/>ELAI I ON
@@ -137,15 +144,13 @@
         <lb/>M. DC. LIE.
         <lb/>
         <lb rend="¬" break="no"/>-¬.
-        <lb/>2.
-        <pb n="2"/>
+        <lb/>2. <pb n="2"/>
         <lb/>
         <lb/>
         <lb rend="¬" break="no"/> s
         <lb/>,
         <lb/>l. ¬:
-        <lb/>e eo
-        <pb n="3"/>
+        <lb/>e eo <pb n="3"/>
         <lb/>.
         <lb/>AA’AdA¬h a
         <lb/> lhAl, &amp;A e8
@@ -174,8 +179,7 @@
         <lb/>¬
         <lb rend="¬" break="no"/>„¬¬¬.
         <lb rend="¬" break="no"/>¬.
-        <lb/>1
-        <pb n="4"/>
+        <lb/>1 <pb n="4"/>
         <lb/>vrité́, il ne faut que onfideret la durée de la ty
         <lb rend="¬" break="no"/>rannie du Cardinal Mazarin, duquel, bien qu’1l
         <lb rend="¬" break="no"/>ſoitcomme le racourcy de tous les fleaux qui afli
@@ -209,8 +213,7 @@
         <lb/>¬.
         <lb rend="¬" break="no"/>¬¬¬. a--¬¬.,.,
         <lb/>¬¬..
-        <lb/>¬
-        <pb n="5"/>
+        <lb/>¬ <pb n="5"/>
         <lb/>5
         <lb/> Le Cardinal Mazarin ayant pris la route de
         <lb/>Reims pour ſortir de France y arriua le ;. de
@@ -239,8 +242,7 @@
         <lb/>pour auoir ull ice ’urort quj ly auqit eſte fait
         <lb/>par les ſiens,i luy en donncroit dans le lein;
         <lb/>le valet aaſii dſelpe que lon imallre nte
-        <lb rend="¬" break="no"/>¬,. 4.,
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>¬,. 4., <pb n="6"/>
         <lb/>.
         <lb/>prend la charge, &amp; s’eſtant tous deux armez
         <lb/>de poignard, &amp; de la reſolution de mourir:
@@ -268,8 +270,7 @@
         <lb/>Et depuis ce iour là, le Cardinal ſe fait gat
         <lb/>der auec tant de ſoing &amp; de circonſpection
         <lb/>qu’il eſt preſque impoſſible de l’aborder, il eſ!
-        <lb/>touſiours en cette Ville ou il attend, ou faint
-        <pb n="7"/>
+        <lb/>touſiours en cette Ville ou il attend, ou faint <pb n="7"/>
         <lb/>d’attendre la commodité́ de ſortir pour ſe ren
         <lb rend="¬" break="no"/>dre ſans riſques en celle de Boü̈illon.
         <lb rend="¬" break="no"/> Et cependant les trouppes qui l’accompa

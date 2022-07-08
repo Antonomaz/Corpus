@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2suppl112_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2suppl112_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -39,7 +35,9 @@
         <bibl>
           <ref target="https://books.google.fr/books?id=Z4ERvzt7kjgC&amp;hl=fr"/>
           <author>
-            <name>Le C. L.</name>
+            <persName>
+              <addName type="initiales">Le C. L.</addName>
+            </persName>
           </author>
           <title source="Moreau">Lettre d’un gentilhomme de la cour à uu seigneur qui est à l'armée,
             tonchant l’attentat commis aux Filles-Dieu à Paris, en la personne de mademoiselle de
@@ -55,13 +53,12 @@
           <extent>
             <measure unit="page" quantity="20"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 367761(2è p)</idno>
@@ -93,7 +90,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">112. Lettre d’un gentilhomme de la cour à uu seigneur qui œ à l'armée,
+          tonchant l’attentat commis aux Frlles-Dieu à Paris. en la personug de mademoiselle de
+          Sainte-Croix,etc, N° s008 de uu Bhengrapite, Dazer dé Varie le 30 4xn td4x e sipuée L. Le
+          C. La permission d'imprimer est du te joum. Ete v cur pubires sons fn utre de L'dmunt
+          hotina en ces recherches c da file constante cæ s04 rejui, pioce tragique , aon
+          politique.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,6 +105,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
     </profileDesc>
@@ -111,8 +117,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>AA:A.
         <lb/>J
         <lb rend="¬" break="no"/>A
@@ -162,8 +167,8 @@
         deſirs.
         <lb rend="¬" break="no"/>lle y viuoit ſans crainte, autant par la ſainteté de la Com pagnie
         auec la
-        <lb rend="¬" break="no"/>elle elle traittoit ordinairement, commeptect ion de la Reya e
-        <pb n="2"/>
+        <lb rend="¬" break="no"/>elle elle traittoit ordinairement, commeptect ion de la Reya e <pb
+          n="2"/>
         <lb/>s 2.
         <lb/>qui luy ſeroit de ſauue- garde &amp; de defence.
         <lb/>Le croirez vous, Monſieur, que tandis que vous faites ſi bien la guerré
@@ -222,8 +227,7 @@
         eſtoit ſe
         <lb rend="¬" break="no"/>Ietement é́chappée de la chambre oùu elle couchoit, &amp; n’ayant
         ſur ſoy
-        <lb/>1
-        <pb n="3"/>
+        <lb/>1 <pb n="3"/>
         <lb/> 3
         <lb/>que ſa robbe de nuict, apres auoir trouueé la porte du Cloiſtre fermeée, ele
         <lb/>s’eſtoit cachée dans vn petit grenier auec vne ieune Religieuſe qui l y
@@ -283,8 +287,7 @@
         <lb/>S’expoſer au hazard de ne pas reuſſir eu cette procedure, de n’y parler qu’en
         <lb/>feinte, &amp; ny agir que’ par les artuifices. Auſſi cet Annt deguiſe apprit
         <lb/> que ſon vſa
-        <lb rend="¬" break="no"/>bien toſt tar le refus qu’on ly fic d’accepter ces
-        <pb n="4"/>
+        <lb rend="¬" break="no"/>bien toſt tar le refus qu’on ly fic d’accepter ces <pb n="4"/>
         <lb/>4.
         <lb/>ge ne plaiſoit pas, dans ſa verite, ny ſous vn maſque.
         <lb/> Commie l’Amour eſt touſiours ingenieux à ſes propres dommages, ce
@@ -349,8 +352,7 @@
         <lb/>
         <lb/>!
         <lb/>1
-        <lb/>1
-        <pb n="5"/>
+        <lb/>1 <pb n="5"/>
         <lb/>neterre au nom de la fille. Cette propoſition ne leés ſurprit pasD’abord
         <lb/>ls teſmoignerent de s’eſtimer beaucoup honorés, de ce qu’vn ſi grand
         <lb/>Prince encore plus illuſtre par ſon merite qui eſt extraordinaire, que
@@ -404,8 +406,8 @@
         deuant meſ
         <lb rend="¬" break="no"/>me qu’ils fufſent forneés, &amp; preuenu de la pensée, l’iſſuë
         &amp; l’eue
-        <lb rend="¬" break="no"/>vement des choſes mos meſmc auarauant ou’elles fſſezs con¬¬
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>vement des choſes mos meſmc auarauant ou’elles fſſezs con¬¬ <pb
+          n="6"/>
         <lb/>6
         <lb/>mancéẽs. Pour aſſeurẽr lẽ rẽpos de ſa fille, cëtte ſage &amp; veruëuſe Dame
         <lb/>ſe priue elle meſme volontairement de ſa veüe, &amp; de la douceur qu’elle
@@ -457,8 +459,7 @@
         pouuoit non
         <lb/>lus viure ſans ennemy que ſans maiſtreſſe, &amp; dont le ceur eſtoittou
         <lb rend="¬" break="no"/> 2
-        <lb/> l
-        <pb n="7"/>
+        <lb/> l <pb n="7"/>
         <lb/>i
         <lb/>qi
         <lb/>5et
@@ -520,8 +521,7 @@
         <lb/>enuers elle toures les vexations dont ils peurent s’auiſer, de ſorte que
         <lb/>i
         <lb/>l’onpeut dire que deés-lors s’ils é́parguerent contre elle quelque cruau
-        <lb rend="¬" break="no"/> nn en ouin oen en oe e en er
-        <pb n="8"/>
+        <lb rend="¬" break="no"/> nn en ouin oen en oe e en er <pb n="8"/>
         <lb/>En cẽë temps ette ieune Damoyſlle en qui la beauté ſaiſoit vne
         <lb/>a greable alliance auec la vertu, ſe voyant tous les iours au hazard de
         <lb/>tomber entre les mains de ſon ennemi, reſolut de pourvoir à ſa ſeureté
@@ -571,8 +571,7 @@
         <lb/>er inmederé́e qui n’et
         <lb/>1
         <lb/>t
-        <lb/>1
-        <pb n="9"/>
+        <lb/>1 <pb n="9"/>
         <lb/>t
         <lb/>t
         <lb/>pas de la pudeur ny de la vertu; autrement il euſt fallu paſſer pour rebelle
@@ -630,8 +629,7 @@
         <lb/>quecetre occaſionils conſeruoient à la campagne la meſme bien-ſeance
         <lb/>&amp;les meſmes deuoirs de ciuilité, qu’ils gardoient d’ordinaire à la Cour.
         <lb/>Encet eſtat ils arriuent à Paris, n’ayant par tout é́prouueé dans !eur chemin,
-        <lb/>auuaccueil fauorable des amis.&amp; de ceux meſmes c... ient con¬
-        <pb n="10"/>
+        <lb/>auuaccueil fauorable des amis.&amp; de ceux meſmes c... ient con¬ <pb n="10"/>
         <lb/>10.
         <lb/>traires, perſonne noſant alors paraitre pour S’oppoſer à leur deſſein, ouſe
         <lb/>declarer d’vn party qui eſtoit contraire à celuy de la force &amp; de la vertu.
@@ -696,8 +694,7 @@
         <lb/>
         <lb/>u
         <lb/>
-        <lb/>1
-        <pb n="11"/>
+        <lb/>1 <pb n="11"/>
         <lb/>in, ouſe
         <lb/>1Veru.
         <lb/>ſterede l
@@ -791,8 +788,7 @@
         <lb/>contre la Mere. Ils ne furent guecres plus doux enuers l’vn de ſes ommes
         <lb/>qu’ils l’auoient eſté enuers ſa Maiſtreſſe. Ce paaure garçon qui luy ſer
         <lb rend="¬" break="no"/>aoir d’Eſcuvere’eſtant efforcé de la defendre fnt oris auec elle
-        dans le
-        <pb n="12"/>
+        dans le <pb n="12"/>
         <lb/>1r2.
         <lb/>roſſe, &amp; apres I’auoir tenu long temps enfermé au fond d’vne caue qui luy
         <lb/>ſeruoit de cachot, ils l’y laiſſerent trois iours entiers ſans manger. Cruels!
@@ -858,8 +854,7 @@
         <lb/>viſage, dontil dilate les chair.. es ouſtules ui ſemblent teuir de l’vl
         <lb rend="¬" break="no"/>4i
         <lb/>C
-        <lb/>1
-        <pb n="13"/>
+        <lb/>1 <pb n="13"/>
         <lb/>qu
         <lb/>Cl
         <lb/>ev
@@ -916,8 +911,7 @@
         iamais au
         <lb/>terme de voir ſa fille reduite en ſeruitude.Son ennemi, de qui le courage
         <lb/>neſerebute point par tous ces refus, aprés tant d’inutiles efforts, forme
-        <lb/>enſon eſoritvn deſſein dont l’executiõ paroiſſoit d’abord auſſi aiſée, que¬
-        <pb n="14"/>
+        <lb/>enſon eſoritvn deſſein dont l’executiõ paroiſſoit d’abord auſſi aiſée, que¬ <pb n="14"/>
         <lb/>14
         <lb/>leé peoiẽt ẽn eſtoit hardy, &amp; ſe promet à cẽ coup la poſſeſſion de ſa mai
         <lb rend="¬" break="no"/>ſtreſſe aut ineuitable, comme l’iſſue &amp; la conduite de ce
@@ -965,8 +959,7 @@
         <lb/>croyoit eſtre deſia priſe au meſme temps qu’on l’approchoit. Dans la
         <lb/>iuſte apprehenſion de voir ſes proiets inutiles, N. ſoit de rage, ou de
         <lb/>dépis, de ne la rencontrerpas en ſa chambre, auoit tait prendre tout
-        <lb/>i
-        <pb n="15"/>
+        <lb/>i <pb n="15"/>
         <lb/>ds
         <lb/>nel
         <lb/>6i
@@ -1035,7 +1028,7 @@
         <lb rend="¬" break="no"/>geacette pauute fille à quitter ſon aſſociée pour pourueoir à elle
         meſ
         <lb rend="¬" break="no"/>e. Alors cette enereuſe &amp; con? Damovſelle ſe voyant diſiointe
-        <pb n="16"/>
+          <pb n="16"/>
         <lb/> 16
         <lb rend="¬" break="no"/>de celle à qui elle euſt voulu touſiours eſtre inſeparablement
         vnie; à
@@ -1088,8 +1081,7 @@
         d’enceinte
         <lb/>Su onatere, ce ſut laou ſa conanee duint plus ſorte par le plas
         <lb/>Erand peril, &amp; comme ils redonieu e rs oour la oer
-        <lb rend="¬" break="no"/>1
-        <pb n="17"/>
+        <lb rend="¬" break="no"/>1 <pb n="17"/>
         <lb/>1t
         <lb/>in
         <lb/>oup?
@@ -1149,8 +1141,7 @@
         <lb/>auoir d’elle ſeule, ils luy eſtouperent la bouche pour luy fermer dans vn
         <lb/>meſme paſſage, &amp; la voix &amp; la vie. Alors ſainct Ange, ne faiſant rien moins
         <lb/>que le deuoir de ſon nom, la tire violemment en haut par le bras &amp; par la
-        <lb/>nnches, do il luy aachalvne, &amp;dtboita l’aurre, &amp; la prenant meſne
-        <pb n="18"/>
+        <lb/>nnches, do il luy aachalvne, &amp;dtboita l’aurre, &amp; la prenant meſne <pb n="18"/>
         <lb/>18.
         <lb/>corde pour la tirer tout d’vn coup au haut de la muraille, mais la treſſe
         <lb/>fut plus foible que ſa violence: elle ceda à̀ ſa cruauté en ſe detachant de
@@ -1203,8 +1194,7 @@
         <lb/>Encore ſes nnemis ne peurent reculer que par de nouueaux crimes: lIls
         <lb/>bleſſerent deux hommes à coups de fuſils en leurretraite, &amp; creurent auoir
         <lb/>beaucoup fait que d’eſtre eſchapez en ſeureté. En reconnoiſſance d’vne
-        <lb/>faueur ſi ſignalee, ces bonnes Religieuſes chanterent le main meſme le
-        <pb n="19"/>
+        <lb/>faueur ſi ſignalee, ces bonnes Religieuſes chanterent le main meſme le <pb n="19"/>
         <lb/>nis la treſe
         <lb/>letachant de
         <lb/>rant das la
@@ -1301,8 +1291,7 @@
         <lb/>vous m’accuſez de parler auec vn peu trop de chaleur des violences du
         <lb/>ſieur de . contre qui ie ſemble me declarer Partie, ie vous ſunlic de
         <lb/> ¬ oe l , , ....
-        <lb rend="¬" break="no"/>... . ra 5
-        <pb n="20"/>
+        <lb rend="¬" break="no"/>... . ra 5 <pb n="20"/>
         <lb/> 2o
         <lb/>qu’il s’eſt porté pour l’ennemy commun de noſtre ſexe, en le traittãt fi mal,
         <lb/>il eſt iuſte que ie me vange au moins par la parole de toutes les rigueurs

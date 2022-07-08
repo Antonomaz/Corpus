@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau467_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau467_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -55,20 +56,21 @@
             tout à une desolation generale par la mauvaise education ; &amp; par les mauvais
             principes qu'elle inspire au Roy son fils.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" when="1652-09-18">18 septembre 1652</date>
           <extent>
             <measure unit="page" quantity="31"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50225</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50225" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50225"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14977-4</idno>
@@ -100,10 +102,23 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Par Claude Du Bosc de Montandré, d'après Célestin Moreau non contesté
+        <p source="Mazarine">Par Claude Du Bosc de Montandré, d'après Célestin Moreau non contesté
           par Armand d'Artois et Baratte (Bibliothèque Mazarine, Ms. 4682-1, f. 241v). Texte paru le
           18 septembre 1652, d'après Hubert Carrier selon la note ms. sur l'exemplaire de la
           Bibliothèque Mazarine coté 4° A 13960-15.</p>
+        <p source="Moreau">467. Aveuglement (l’) des Parisiens, faisant voir qu'ils sont bien
+          aveugles de ne pas voir : 1° que la cour ne veut pas la paix, quelque montre qu'elle fasse
+          du con- traire ; 2° qu’ils ne peuvent point espérer cette paix, si la cour a le dessus; 3°
+          qu’ils peuvent terminer les troubles,, s'ils s’entendent avec les princes; et qu'ils
+          prolongent ces mêmes troubles, s'ils s'entendent avec la cour; 4° qu’ils sont plus obligés
+          aux princes qu’à la reine, ou qu’ils ne peuvent se passer des princes et qu’ils peuvent se
+          passer de la reine ; 5° que la reine en veut à Paris, et que , pour faire triompher cette
+          haine, elle veut premièrement se défaire des princes ; 6° que la reine fait reconnoître
+          cette haine par le peu de cas qu’elte fait de nos conquêtes de Catalogne, de Flandre et
+          d’Italie; 7° que la reine dispose tout à une désolation générale par la mauvaise éducation
+          et par les mauvais principes qu'elle inspire au roi son fils. (S. 1. n. d. ), 74 pages.
+          Publié le 18 septembre 1652. C’est un des pamphlets de Dubosc Montandré ; et ce n’est pas
+          le plus mauvais.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -129,8 +144,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L'AVEVGLEMENT
         <lb/>DES PARISIENS
         <lb/>FAISANT VOIR QV’ILS SONT BIEN

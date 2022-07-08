@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau802_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau802_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -52,20 +53,21 @@
             generale, sans que la Cour ait aucun droict de s'y opposer, &amp; que les princes
             estrangers ayent seulement un pretexte pour n'y consentir point.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" when="1652-07-23">23 juillet 1652</date>
           <extent>
             <measure unit="page" quantity="32"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50082</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50082" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50082"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12698</idno>
@@ -97,10 +99,23 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Par Claude Du Bosc de Montandré d'après Célestin Moreau. D'après Hubert
+        <p source="Mazarine">Par Claude Du Bosc de Montandré d'après Célestin Moreau. D'après Hubert
           Carrier, texte paru le 23 juillet 1652 au vu de l'annotation ms. d'un contemporain sur
           l'exemplaire de la Bibliothèque Mazarine coté 4° 19126-26 (Bibliothèque Mazarine, Ms.
           4682-2, f. 100v).</p>
+        <p source="Moreau">802. Coup(le)d’État du parlement des Pairs, ou le Prince convainquant le
+          mazarin par la raison et par l’his- toire, 1° que le parlement des pairs a eu le pouvoir
+          de transférer l’exercice de l’autorité souveratne entre les mains de Son Altesse Royale;
+          2° qu’ila dû se résoudre à ce transport par les nécessités de l'État; 3° qu'il n'est point
+          d'autorité qui puisse en casser l’arrêt, que par une usurpation aussi violente que
+          tyrannique; 4° que les nouveautés du gouvernement , justifiées par les conjonctures de
+          l’État, ne sont pas des coups de caprice; 5° que Son Altesse Royale, en qualité de lieu-
+          tenant-général absolu, peut faire la paix générale, sans que la cour aît aucun droit de
+          s’y opposer, et que les princes étrangers aient seulement un prétexte pour n’y consentir
+          point. (S. 1.), 1652, 32 pages. Dubosc Montandré dit, quelque part, qu’il a composé ce
+          pam- phlet dans un jour. Cela ne m’étonne que médiocrement. Mailly le cite deux fois, sous
+          le titre de le Coup d’État du par- lement de Puris, page 223 du 2* vol., et, page 476 du
+          S* vol., sous son véritable titre. [ P J},.!&amp;</p>
       </abstract>
       <textClass>
         <keywords>
@@ -122,8 +137,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>COVP D'ESTAT
         <lb/>DV
@@ -144,10 +158,8 @@
         <lb/>V. Que ſon Alteſſe Royalle en qualite de Lieutenant general
         <lb/>abſſu, peut faire la Paix generale, ſans que la Cour ait aucun
         <lb/>droict de s’y oppoſer, &amp; que les Princes Eſtrangers ayent ſeu¬
-        <lb/>lement vn pretexte pour n’y conſentir point.
-        <figure type="decoration"/>
-        <lb/>M. DC. LII.
-        <pb n="10"/>
+        <lb/>lement vn pretexte pour n’y conſentir point. <figure type="decoration"/>
+        <lb/>M. DC. LII. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>LE COVPDESTAT DV PARLEMENT

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2suppl148_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2suppl148_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -33,20 +34,21 @@
           <title source="Mazarine">Les nouvelles de l'élargissement de monseigneur le Prince,
             envoyées au cardinal Mazarin par un sien amy.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" when="1650-08-15">mi-août 1650</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49027</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49027" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49027"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13142</idno>
@@ -78,9 +80,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Signé "I M.". D'après Hubert Carrier (Bibliothèque Mazarine, Ms. 4682,
+        <p source="Mazarine">Signé "I M.". D'après Hubert Carrier (Bibliothèque Mazarine, Ms. 4682,
           f. 105 ), texte paru mi-août 1650, après la prise du château de Vayres et celle de l'île
           St Georges par l'armée royale (4 août 1650) auxquelles l'auteur fait allusion p. 7.</p>
+        <p source="Moreau">148. Les Nouvelles de l’élargissement de moaseigneur } Prince, envoyées
+          an cardinal Mazaria par un sien ami. $ . 1650; 7 pages. - , ! Signé L. M … . — Par nn
+          ennemr. Raillerie pen plaisante, L'auteur auribae la détivrance du prines de Condé au duc
+          d'Orléans.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES NOVVELLES
         <lb/>de l’élargiſſement de Mon¬
         <lb/>ſeigneur le Prince, enuoyées

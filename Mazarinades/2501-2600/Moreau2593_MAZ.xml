@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2593_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2593_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,7 +32,7 @@
           <title source="Mazarine">L'ombre du grand Armand cardinal duc de Richelieu, parlante a
             Jules Mazarin.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher ref="isni:000000007728855X">
+          <publisher ref="isni:0000000506791357">
             <persName>
               <forename>François</forename>
               <surname>Noël</surname>
@@ -44,13 +45,12 @@
             <measure unit="page" quantity="11"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49146</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49146" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49146"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° A 12854-30</idno>
@@ -82,12 +82,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Deux autres éditions publiées à Paris la même année avec compositions
+        <p source="Mazarine">Deux autres éditions publiées à Paris la même année avec compositions
           typographiques différentes, l'une avec fleuron titre et sans nom d'éditeur sur la p. de
           titre (BM00293), l'autre sans fleuron et ni nom d'éditeur sur la p. de titre (BM00295).
           Titre repris de celui du texte de Scudéry, "L'ombre du grand Armand" (1643). D'après
           Hubert Carrier, texte paru fin janvier, début février 1649 (Bibliothèque Mazarine, Ms
           4682-4, f. 119v).</p>
+        <p source="Moreau">2593. Ombre (l') du grand Armand, cardinal, duc de Richelieu, parlant à
+          Jules Mazarin. Paris, François Noël, 1649, 11 pages. Ce pamphlet contient des détails
+          assez curieux sur l'affaire de Naples.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L'OMBRE
         <lb/>DV GRAND
         <lb/>ARMAND

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2677_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2677_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,20 +49,21 @@
             digne d'estre brigué par un homme de cœur. VII. Qu'il estoit necessaire que les
             jansenistes &amp; les molinistes s'entre-accusassent d'erreur.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" notBefore="1651-07-20">à partir du 20 juillet 1651</date>
           <extent>
             <measure unit="page" quantity="44"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50238</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50238" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50238"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13553</idno>
@@ -93,11 +95,20 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition publiée sous le titre "Le tombeau du sens commun ou Le
+        <p source="Mazarine">Autre édition publiée sous le titre "Le tombeau du sens commun ou Le
           renversement des idees de tous les sages..." (BM00321). Par Claude Du Bosc de Montandré
           d'après Baratte et Armand d'Artois, non contesté par Hubert Carrier (Bibliothèque
           Mazarine, Ms. 4682-4, f. 156v). D'après H. Carrier, texte publié à partir du 20 juillet
           1651.</p>
+        <p source="Moreau">2677. Paradoxes (les) d'État, servant d'entretien aux bons esprits et
+          faisant voir : 1 . qu'il falloit absolument que monseigneur le Prince fût emprisonné,
+          parce qu'il étoit innocent; 2. qu'il est nécessaire que Mazarin re vienne; 3. que le
+          mauvais gouvernement du Mazarin a été très-avantageux à l'État; 4. que la reine a ruiné la
+          fortune du Mazarin; 5. qu'il est nécessaire qu'on fasse de nouvelles impositions pour
+          soulager le peu ple; 6. que le ministère d'État n'est point un degré digne d'être brigué
+          par un homme de cœur; 7. qu'il étoit nécessaire que les jansénistes et les molinistes
+          s'entr'accusâssent d'erreur. Sans Lieu, 1651,44 pages. C'est la même pièce que le Tombeau
+          du sens commun, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -122,8 +133,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES
         <lb/>PARADOXES
         <lb/>D'ESTAT

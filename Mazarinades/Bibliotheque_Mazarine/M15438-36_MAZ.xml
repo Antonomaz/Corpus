@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="M15438-36_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="M15438-36_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -34,19 +35,20 @@
             l'armée du Roy, commandée par monsieur le marquis de Seneterre. Avec la reconnoissance
             faite par leurs Majestez à ceux qui ont esté employé en cette action.</title>
           <pubPlace source="Mazarine" ref="geonames:2989317">Orléans</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49283</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49283" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49283"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15438-36</idno>
@@ -78,7 +80,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Adaptation du texte du n°30 de la "Gazette" du 21 février 1650, p.
+        <p source="Mazarine">Adaptation du texte du n°30 de la "Gazette" du 21 février 1650, p.
           273-283, paru sous le titre "Le detail de la réduction de la ville de Clermont en Lorraine
           au service du Roy : avec la reconnoissance faite par leurs majestez à ceux qui ont esté
           employez en cette action : &amp; quelques autres choses n'aguéres passées à Roüen avant le
@@ -102,8 +104,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>LA PRISE
         <lb/>ET REDVCTION
         <lb/>de la Ville de Clermont
@@ -115,7 +116,8 @@
         <lb/>Maieſtez à ceux qui ont eſfté
         <lb/>employé en cette action. <figure type="decoration"/>
         <lb/>A ORLEANS,
-        <lb/><imprimatur>Auec permiſion de l'Inten
+        <lb/>
+        <imprimatur>Auec permiſion de l'Inten
           <lb/>dant general des Bureaux
           <lb/>d’Adreſſe de France.</imprimatur>
         <pb n="8"/>

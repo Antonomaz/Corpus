@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2158_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2158_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -41,24 +37,24 @@
             <persName>
               <forename>Louis</forename>
               <surname>Bourbon (De)</surname>
-              <name>Louis XIV</name>
             </persName>
           </author>
           <title source="Moreau">Lettre du roi écrite à Son Altesse Royale, de Bourges, le 24
             octobre 1651.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Les imprimeurs &amp; libraires du Roy</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Les imprimeurs et libraires du Roi</persName>
+          </publisher>
           <date source="Moreau" when="1651">1651</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high">in-4</note>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 311501</idno>
@@ -90,7 +86,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2158. Lettre du roi écrite à Son Altesse Royale, de Bourges, le 24
+          octobre 1651. Paris, par les imprimeurs et libraires ordinaires du roi, 1651,4 pages. Il y
+          en a une autre édition, également de Paris et par les impri meurs du roi, qui porte au
+          titre sur son départ de Bourges pour Poitiers. 4 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,6 +99,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
     </profileDesc>
@@ -108,8 +111,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>I
         <lb/>1H I
         <lb/> IL
@@ -130,15 +132,13 @@
         <lb/> A PARIS,
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires du Roy,
         <lb/> DC. L1.
-        <lb/> Aueee Priaulege de ſa Maité
-        <pb n="2"/>
+        <lb/> Aueee Priaulege de ſa Maité <pb n="2"/>
         <lb/>s a 5
         <lb/> 2¬¬ *
         <lb rend="¬" break="no"/> -1
         <lb/>1
         <lb/> .
-        <lb/> ooogle
-        <pb n="3"/>
+        <lb/> ooogle <pb n="3"/>
         <lb/>3
         <lb/>Aſu!
         <lb/>9
@@ -158,8 +158,7 @@
         <lb/>aſſeurantqu&amp; l: ceſolation que ie
         <lb/>prens de m’auancer, ne change point
         <lb/>la volonté que ie vous ay cy-deuant
-        <lb/>A i
-        <pb n="4"/>
+        <lb/>A i <pb n="4"/>
         <lb/>témigńe-pour l’accomrmodeent
         <lb/>des affaires: me promettant auſſi que
         <lb/>vous continuere de me donner des

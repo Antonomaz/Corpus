@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="M15438-46_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="M15438-46_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -33,19 +34,20 @@
             naissance de monseigneur le Prince son fils. Par un docte et celebre personnage
             d'Orleans.</title>
           <pubPlace source="Mazarine" ref="geonames:2989317">Orléans</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49287</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49287" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49287"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15438-46</idno>
@@ -77,7 +79,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Titre de départ. Probablement édité à Orléans d'après l'analyse par
+        <p source="Mazarine">Titre de départ. Probablement édité à Orléans d'après l'analyse par
           Hubert Carrier d'un exemplaire conservé à la Bibliothèque municipale d'Orléans
           (Bibliothèque Mazarine, Ms 4682-3, f. 38v) et la présence de l'exemplaire Bibliothèque
           Mazarine M 15438-46, similaire au précédent, dans un recueil éditorial de pièces d'origine
@@ -101,8 +103,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>HARANGVE
         <lb/>FAITE A MADAME
         <lb/>LA DVCHESSE D'ORLEANS

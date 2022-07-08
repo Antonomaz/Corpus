@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3216_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3216_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -55,11 +51,11 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4 225 mm</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309584</idno>
@@ -91,8 +87,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Recueil factice</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Recueil factice</p>
+        <p source="Moreau">3216. Relation véritable de ce qui s'est passé à la prise du village de
+          la Pointe, situé à la chute de la rivière du (de la) Maine dans la Loire, envoyée à
+          messieurs les prévôt des marchands et échevins de sa (sic) bonne ville de Paris. Paris,
+          Pierre Rocollet, 1652, 8 pages. Rare. Elle lient à l'histoire du siége d'Angers.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,6 +101,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -116,8 +120,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>RELATION
         <lb/> 1
         <lb/>
@@ -135,8 +138,7 @@
         <lb/>Armes du Roy, &amp; de la Ville.
         <lb/>M. DC. L II.
         <lb/>Auec Priuilege de ſa Maué
-        <lb/>oao
-        <pb n="2"/>
+        <lb/>oao <pb n="2"/>
         <lb/> 21
         <lb/>1
         <lb/> i
@@ -206,8 +208,7 @@
         <lb rend="¬" break="no"/>e
         <lb/>oaaa, OOle
         <lb/>l.
-        <lb/>,1
-        <pb n="3"/>
+        <lb/>,1 <pb n="3"/>
         <lb/>5
         <lb/>re e
         <lb/>eae et? 4e oees
@@ -240,8 +241,7 @@
         <lb/>Bateau audit lieu: Ce qui l’obligea de ſi rendre d’aſſez bonne
         <lb/>leure, nonobſtant la diffieulteé qu’il euſt à paſſer &amp; faire paſ
         <lb rend="¬" break="no"/>età̀ ſes ttoupes la Riuiere de Layon a cauſe du grand debor
-        <lb rend="¬" break="no"/>A ij
-        <pb n="4"/>
+        <lb rend="¬" break="no"/>A ij <pb n="4"/>
         <lb/>dement, les deux Galiortes ordonnées poux l’eſcorte deſdin
         <lb/>canons &amp; rmunitions s’y rendirent aà pareilleheure.
         <lb/>Le lendemain 2;j- mondit Sieur Comte de Broglia, fte
@@ -273,8 +273,7 @@
         <lb/>les Galiotes &amp; Darques, il marcha en veuë du Village del?
         <lb/>Poine, auec leſdis oo. cheuaux &amp; cent Dragons, u i
         <lb/>reconneu qu’il y auoit de l’infancerie retranchée dans ledi
-        <lb/>Vilage
-        <pb n="5"/>
+        <lb/>Vilage <pb n="5"/>
         <lb/>5
         <lb/>Village, &amp; ſur la Riuiere vis aà̀ vis d’iceluy ſix Batteaux, deux
         <lb/>Moulins, &amp; deux Galiottes, tous armez ſur vne meſime li
@@ -307,8 +306,7 @@
         <lb/>Maior dudit Regiment ou eftoient les ieurs de Villemur,?
         <lb/>de Chalus, du Bourg, &amp; Vidal Capitaines audie Regiment,
         <lb/>leſquels tous enſemble ataquerent ſi rigoureuſenment que les
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/>ennemis furent obligez de quitter diuers poſtes qu’ils occ¬.
         <lb/>poient dudit lage pour ſe retirer dans vn retranchement
         <lb/>qu’ls auoent fai ſuir le bord de la Riuiere. Auquel lieu, ils
@@ -340,8 +338,8 @@
         <lb/> Regiment de Meſpas commandez par le Sieur de Beau-lieu,
         <lb/>Capitaine &amp; Maior dudit Regiment, &amp; de Desfourneaux.
         <lb/>commandez par le Sieur de la Maronniere premiert Capitai
-        <lb rend="¬" break="no"/>ne d’iceluy: Leſquels ne ſe contentans pas de ſouſtenir leſdits
-        <pb n="7"/>
+        <lb rend="¬" break="no"/>ne d’iceluy: Leſquels ne ſe contentans pas de ſouſtenir leſdits <pb
+          n="7"/>
         <lb/> y
         <lb/>Dragonsàvn defilé qu’ils gardoient, ils le pſſerent &amp; obli
         <lb rend="¬" break="no"/> gerent les ennemis à̀ ſe retirer fuyans.
@@ -374,8 +372,7 @@
         <lb/>de bleſſeées, qui ſont vn des gardes de Monſieur le Comte,
         <lb/>de Broglia bleſſé de deux coups de mouſquecade, l’vn qui
         <lb/>luy caſſe le bras &amp; l’autre à la iouë, les aures uois bleſ
-        <lb rend="¬" break="no"/>¬¬
-        <pb n="8"/>
+        <lb rend="¬" break="no"/>¬¬ <pb n="8"/>
         <lb/>5
         <lb/>ſez ſont du Regiment des Dragons.
         <lb/> Et de la part des ennemis Manſieur de Mon-joffroy

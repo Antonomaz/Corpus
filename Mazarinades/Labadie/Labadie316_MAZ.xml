@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Labadie316_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Labadie316_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,20 +36,21 @@
           <title source="Mazarine">Remerciement des Bourdelois au Roy. Pour la liberté de messieurs
             les Princes. Piece du sieur H. D. L.</title>
           <pubPlace source="Mazarine" ref="geonames:6455058">Bordeaux</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" notBefore="1651-02-21">à partir du 21 février 1651</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49255</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49255" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49255"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15382</idno>
@@ -80,11 +82,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Texte paru à partir du 21 février 1651 (Hubert Carrier, Ms. 4682-5, f.
+        <p source="Mazarine">Texte paru à partir du 21 février 1651 (Hubert Carrier, Ms. 4682-5, f.
           138 v.). "H. D. L." identifié d'après Hubert Carrier ("La presse de la Fronde (1648-1653)
           : les mazarinades, II, Les hommes du livres", 1991, p. 35) à Pierre de Lartigue, praticien
           bordelais, membre de l'Ormée. Édité à Bordeaux d'après H. Carrier (Bibliothèque Mazarine,
           Ms 4682-5, f. 138v).</p>
+        <p source="Labadie">316. REMERCIEMENT des Bourdelois au Roy. Pour la liberté de Messieurs
+          les Princes. Piece du sieur H. D. L. S. 1., 1651, 7 pages. Du 20 février 1651. Bibl. de
+          Bordx., 25994h-1.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>REMERCIEMENT
         <lb/>DES BOVRDELOIS
         <lb/>AV ROY.

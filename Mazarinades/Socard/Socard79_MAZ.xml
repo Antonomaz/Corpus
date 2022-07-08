@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Socard79_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Socard79_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -41,7 +42,9 @@
             l'eglise de S. Louis des PP. jesuites, au jour &amp; feste dudit saint Louis, l'an
             1648.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-02-01" notAfter="1649-02-01">Première semaine de
             février</date>
@@ -49,13 +52,12 @@
             <measure unit="page" quantity="22"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49185</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49185" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49185"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° A 11060-1</idno>
@@ -87,11 +89,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition in-4, mais titre de composition différente, sans bandeau
+        <p source="Mazarine">Autre édition in-4, mais titre de composition différente, sans bandeau
           et dernière p. chiffrée 12 (BM00319). Également publié dans le recueil éditorial "Recueil
           de diverses pieces qui ont paru durant les mouvemens derniers de l'année 1649."
           (BM000059). D'après Hubert Carrier, texte paru la première semaine de février 1649
           (Bibliothèque Mazarine, Ms 4682-5,f. 263v).</p>
+        <p source="Socard">79. Sermon de S. Lovis Roy de France, fait et pro- noncé devant le Roy et
+          la Reyne Regente sa Mere. Par Monseignevr l’Illustrissime et Reuerendissime I. F. PAUL DE
+          GONDY, Archeuesque de Corinthe, et Coad- juteur de Paris : À Paris dans l’Eglise de S.
+          Lovis des PP. Iesuites, au iour et Feste dudit saint Louis, l’an 1648. A Paris, 1649.
+          In-4° de 12 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,8 +116,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>SERMON
         <lb/>DE S. LOVIS
         <lb/>ROY DE FRANCE

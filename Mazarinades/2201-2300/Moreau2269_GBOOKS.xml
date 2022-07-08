@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2269_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2269_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -52,18 +48,19 @@
             sur la disposition de la paix d'entre la France et l'Espagne, des 8 juillet et 15
             septembre 1650.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Les imprimeurs &amp; libraires ordinaires du Roy</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Moreau" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 310525</idno>
@@ -95,7 +92,18 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2269. Lettres de monseigneur le duc d'Orléans et de M. l'archiduc Léopod
+          sur la disposition de la paix d'entre la France et l'Espagne, des 8 juillet et 15 sep
+          tembre 1650. Paris, par les imprimeurs et libraires ordinaires du roi, 1650,8 pages. Rare.
+          A la 8° page, sous le titre de réponse au sieur Renaudot, les imprimeurs du roi rappellent
+          que Renaudot n'a pas le droit d'im primer dans sa Gazette les lettres patentes, missives,
+          édits, etc.; qu'ils l'ont déjà fait condamner en Parlement pour la publication de la
+          Lettre (du roi) sur la détention des princes, etc., encore qu'il eût surpris pour cela une
+          lettre de cachet; que leur privilége intéresse le menu peuple, puisqu'ils vendent six
+          deniers ce que Renaudot fait payer cinq sols; en conséquence, ils protestent de le
+          défendre ; et néanmoins ils le mettent aux pieds de Son Altesse Royale ; ce qui permet de
+          croire qu'en cette circonstance, Renaudot avait été auto risé par le duc d'Orléans.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,6 +112,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -119,8 +130,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>1 rD Q o
         <lb/>LEI IRE9
         <lb/>1 H 1
@@ -136,8 +146,7 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires
         <lb/>
         <lb rend="¬" break="no"/> Dc.1
-        <lb/>At Friuilge de ſa Maijeſe¬
-        <pb n="2"/>
+        <lb/>At Friuilge de ſa Maijeſe¬ <pb n="2"/>
         <lb/>.2
         <lb/>
         <lb rend="¬" break="no"/> a2
@@ -145,8 +154,7 @@
         <lb rend="¬" break="no"/>4
         <lb/>9.
         <lb/>
-        <lb rend="¬" break="no"/>o¬
-        <pb n="3"/>
+        <lb rend="¬" break="no"/>o¬ <pb n="3"/>
         <lb/> A,8
         <lb/>LETRES vR LA DSPoSON L pLX
         <lb/> d’entre la France &amp; l’Efpagne.
@@ -177,8 +185,7 @@
         <lb/> meha refril pl aro de Verdero, veo cumplido quan
         <lb rend="¬" break="no"/> lbaovis eperad de labpena idencigp de VA, à diſponer oiì
         <lb/> iſladmup fire ente lai dos Cooay dn repoſſe duralble en
-        <lb/>¬
-        <pb n="4"/>
+        <lb/>¬ <pb n="4"/>
         <lb/>4
         <lb/>ſus ſubdior, y como el dar fin à eta grande y deſſeada obr.
         <lb/>parece que dios tieur deſîtinado a l ſua prdencia de V.
@@ -214,8 +221,7 @@
         <lb rend="¬" break="no"/>heur -me donne, ẽſetiuant par luy le ſurplus de ce quil
         <lb rend="¬" break="no"/> pſaiſt à V. A. me petetre par ſà Letre: j’eſpere &amp;au
         <lb rend="¬" break="no"/>eans auec impatienteon appiobation &amp; pluſieurs occaſios
-        <lb/>du
-        <pb n="5"/>
+        <lb/>du <pb n="5"/>
         <lb/>du ſeruice de V. Alteſſe, peour monſtte dans la pontuelle execu
         <lb rend="¬" break="no"/>tion, l’affectation &amp; les deſis que i’ay: ieu vëille conſetuer
         <lb/>ongues annces la Sere niſfime perſonne de Voſtre Altee. Du
@@ -249,8 +255,7 @@
         <lb/>¬
         <lb rend="¬" break="no"/>Suma ot ſrvidor e primo
         <lb/>LEoPLD0 V1lL,
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/> C’eſt à dire
         <lb/>EE1ssi S1VR.
         <lb/>ſtre Alteſe me permet, ſelon l ardent deſir qu’Elle
@@ -281,8 +286,7 @@
         <lb/>Au Séréniſſime Seigneur le Duc
         <lb/>d’Orleans mon Couſin.
         <lb/>A l’iſſué de cete audiance Son Alteſſe Royale pria le
-        <lb/>Nonce de Sa Saintetc &amp; fut d’auis que le Comte d’Avaux
-        <pb n="7"/>
+        <lb/>Nonce de Sa Saintetc &amp; fut d’auis que le Comte d’Avaux <pb n="7"/>
         <lb/>4-7
         <lb/>Plenipoteniaire dePrancepour ladle paix &amp; l’Agent de
         <lb/>la Répblique de Venlſe, en l’abſence de ſon Ambaſſa
@@ -320,8 +324,7 @@
         <lb rend="¬" break="no"/>ordnaire &amp; Plcniporentiaire pour la Paix, pour conuenir auec V.
         <lb/>A, de toutes les cbhoſes ſuſdites: Ayant crû ne pouuoir faire à̀ cét
         <lb/>eff vn meilleur chois que d’vne perſonne qui a touſiours ag auec
-        <lb/>beaucoup de candeur &amp; de zele pour paruenir à la paix: Cepes
-        <pb n="8"/>
+        <lb/>beaucoup de candeur &amp; de zele pour paruenir à la paix: Cepes <pb n="8"/>
         <lb/>dant, i’aſſeurerayV. A. qae ie ae ſouhaipas ſoulemeasquenéu4
         <lb/>puiſſions Elle &amp; moy y donner la perfetion poar le bien &amp; l’auana
         <lb/>tage des deux Couronnues &amp; de ioute la Chreſtienté; oais aui
@@ -366,8 +369,7 @@
         <lb/>retia vulgaie, que dcané &amp;, ds Io.
         <lb/>2
         <lb/>a E
-        <lb/>u?
-        <pb n="9"/>
+        <lb/>u? <pb n="9"/>
         <lb/>Ai.
         <lb/>s lu si
         <lb/>u

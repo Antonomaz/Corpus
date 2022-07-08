@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau157_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau157_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -59,13 +60,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49792</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49792" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49792"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14228</idno>
@@ -97,12 +97,21 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mentions de lecture et publication "ès lieux et cantons de la ville"
+        <p source="Mazarine">Mentions de lecture et publication "ès lieux et cantons de la ville"
           signées "Dubosq". Autre édition des arrêts du 30 mars par Guillaume Millanges à Bordeaux
           (Labadie, n° 16). Signés "De La Roche". Actes datés du 30 mars et du 3 avril. Le titre de
           l'extrait indique "premier avril" et l'arrêt sur la citadelle de Libourne publié à
           Bordeaux est du 5 avril (Labadie, n° 21). D'après Hubert Carrier, texte paru à la mi-avril
           1649 (Bibliothèque Mazarine, Ms. 4682-1, f. 91v).</p>
+        <p source="Moreau">157. Arrêts de la cour de parlement de Bordeaux , portant défenses, aux
+          gens de guerre, d'approcher de la ville ; enjoint aux consuls et communautés de les faire
+          vider dans vingt-quatre heures; permis de leur courre sus et s'assembler au son du tocsin
+          ; défenses, à tous officiers de ladite cour et autres officiers du roi, juges, consuls et
+          principaux habitants, de sortir de ladite ville sans congé et sans permission expresse ;
+          enjoint, à tous seigneurs et gentilshommes de la sénéchaussée de Guyenne, de se rendre au
+          plus tôt dans ladite ville pour le service du roi; et défense de continuer la construction
+          de la citadelle de Libourne; donnés, les chambres assemblées, deux du 30 mars, et un [ du
+          3] avril 1649. Paris, veuve Musnier, 1649, 8 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -121,8 +130,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARRESTS
         <lb/>DE LA COVR DV
         <lb/>PARLEMENT

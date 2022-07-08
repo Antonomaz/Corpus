@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1085-i_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1085-i_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,7 +32,9 @@
           <title source="Mazarine">Dialogue de trois paysans picards, Miché, Guillame, &amp; Cherle.
             Sur les affaires de ce temps.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-07-01" notAfter="1649-08-18">entre le 1er juillet
             et le 18 août 1649</date>
@@ -39,13 +42,12 @@
             <measure unit="page" quantity="11"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50275</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50275" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50275"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10839-1</idno>
@@ -77,13 +79,17 @@
         <language ident="other">Document en picard</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">2 états du cahier signé A (états A/B) : p. 3, l. 11 "ma" / "men" , l.
+        <p source="Mazarine">2 états du cahier signé A (états A/B) : p. 3, l. 11 "ma" / "men" , l.
           16 "appris" / "apprins" ; p. 4, l. 2 "nos" / "nous", l. 3 "conté y dit seument" / "couté
           si dit seulement", l. 5 "conteray" / "couteray", l. 18 "apprins" / "appris". Complété par
           : "Suitte et second dialogue de trois paysans picards Michel, Guillaume et Charle. Sur les
           nouvelles de ce temps." (BM01372). D'après Hubert Carrier (Bibliothèque Mazarine, Ms.
           4682-2, f. 224v), texte paru entre le 1er juillet et le 18 août 1649 (retour du roi, après
           son second séjour à Compiègne).</p>
+        <p source="Moreau">1085. Dialogue de trois paysans picards , Miché , Guillaume et Cherle,
+          sur les affaires de ce tem$. (S. 1.), 1649. [ L- }_..t.. u vAX. ditint U d Deux pièces,
+          l’une de 11 , et l’autre de 12 pages. C’est du patois picard. Il n’y a que cela à en dire.
+          rñ LJÜ La cour était à Compiègne.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,8 +106,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>DIALOGVE
         <lb/>DE TROIS PAYSANS
         <lb/>PICARDS

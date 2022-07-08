@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3186_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3186_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -54,11 +50,11 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4 231 mm</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309956</idno>
@@ -90,8 +86,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Recueil factice</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Recueil factice</p>
+        <p source="Moreau">3186. Relation véritable contenant la sortie par force du duc d'Épernon
+          hors la ville de Dijon, avec le siège du château de ladite ville par les habitants
+          d'icelle. Paris, J. Brunet, 1652, 7 pages. Rare. Les vicomte majeur et échevins de Dijon
+          ont dénoncé ce pam phlet aux prévôt des marchands et échevins de Paris ; mais je né vois
+          pas qu'il ait été donné suite à leur plainte. (Lettre de messieurs les vicomte majeur et
+          échevins &lt;le la ville de Dijon, etc.)</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,6 +102,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -115,8 +121,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>RELATION
         <lb/>VERITABLE
         <lb/>CONTENANT
@@ -126,13 +131,11 @@
         <lb/>ea
         <lb/>a
         <lb/>eu le Vle ie duſa lae
-        <lb/>S
-        <pb n="2"/>
+        <lb/>S <pb n="2"/>
         <lb/> a 1
         <lb/> a
         <lb/>p e
-        <lb rend="¬" break="no"/> uaaoGo
-        <pb n="3"/>
+        <lb rend="¬" break="no"/> uaaoGo <pb n="3"/>
         <lb/>AAA6
         <lb/>tpſtttppp?
         <lb/>Relation veritable contenant
@@ -152,8 +155,7 @@
         <lb rend="¬" break="no"/>ie priuée, &amp; auec la force faire é́lire le Procu¬:
         <lb rend="¬" break="no"/>Ieur General du Roy au Paslement, pour Maire
         <lb rend="¬" break="no"/>de la Ville, contre la couſtume de tout temps
-        <lb/>le e e eie
-        <pb n="4"/>
+        <lb/>le e e eie <pb n="4"/>
         <lb/>4
         <lb/>les oniuet la lienne au Parlenent.
         <lb/> Le Due d’Epernon en ſortit voyant la Ville
@@ -182,8 +184,7 @@
         <lb/> Mais il luy a eſté́ reſpondu, que leshabitans
         <lb/>aymoient mieux rembourſer Monſieur le Pria.
         <lb/>ce de l’argent pour lequel ce Ehaſteau luy etoit
-        <lb/>engagé
-        <pb n="5"/>
+        <lb/>engagé <pb n="5"/>
         <lb/>3
         <lb/>engagé, &amp; de le eontenter, que de ſouffrir ſa
         <lb/>ſabſiſlance, pour le grand dommage qu’ils en
@@ -211,8 +212,7 @@
         <lb/>cux de Dijon, &amp; ne les ay dent à prendre promp
         <lb rend="¬" break="no"/>temoat ce Chaſteau, &amp; cela eſtant, l ſt ſans
         <lb rend="¬" break="no"/> doute que nonobſtant la parole donnée au Com
-        <lb rend="¬" break="no"/>ta de bouteuille, ils ne le raſent, ſans artendre
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>ta de bouteuille, ils ne le raſent, ſans artendre <pb n="6"/>
         <lb/>.
         <lb/>nouuelle de Monſieur le Prinee; ce quji aſſeura
         <lb/>Jeur Ville contre eeux qui la voudrojecaſſie
@@ -240,8 +240,7 @@
         <lb/>pour leur ſeureté, puiſſant aiguillon, qui fait
         <lb/>meépriſer les dangers, la mort meſme, comm
         <lb/>les exemples de pluſieurs ſieges de Ville le font
-        <lb/>connoiſtre, qui ont combatu iuſques à l’extre¬
-        <pb n="7"/>
+        <lb/>connoiſtre, qui ont combatu iuſques à l’extre¬ <pb n="7"/>
         <lb/>7
         <lb/>mité pour la deffenſe de leurs murailles, &amp;
         <lb/>meſmes quelques-vnes, comme Numance &amp;

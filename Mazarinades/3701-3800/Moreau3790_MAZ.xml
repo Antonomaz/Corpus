@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3790_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3790_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -46,20 +47,21 @@
             entierement ruiné la royauté, il a du moins pratiqué toutes les intrigues qu'on peut
             inventer pour la perdre.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" when="1651-04-28">28 avril 1651</date>
           <extent>
             <measure unit="page" quantity="31"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49789</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49789" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49789"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11978</idno>
@@ -91,12 +93,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Egalement publié sous le titre : "Le manifeste de monsieur le
+        <p source="Mazarine">Egalement publié sous le titre : "Le manifeste de monsieur le
           coadjuteur de Paris, ..." (BM00229) avec les trois premiers paragraphes différents. Faux
           manifeste de Gondi de Retz d'après Célestin Moreau, attribué à Aubéry par Armand d'Artois,
           d'après une note de ce temps sur l'exemplaire Bibliothèque Mazarine M 13481. D'après
           Hubert Carrier, texte paru le 28 avril 1651 (Bibliothèque Mazarine, Ms. 4682-5, f.
           312v).</p>
+        <p source="Moreau">3790. Tragédie (la) de la royauté, jouée sur le théâtre de la France par
+          le cardinal Mazarin, où les bons François verront que si cet insolent ministre n'a point
+          entièrement ruiné la royauté, il a du moins pratiqué toutes les intrigues qu'on peut
+          inventer pour la perdre. (S. 1., 1651), 31 pages. Même pièce que le Manifeste de monsieur
+          le coadjuteur de Paris, etc</p>
       </abstract>
       <textClass>
         <keywords>
@@ -115,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA
         <lb/>TRAGEDIE
         <lb/>DE LA

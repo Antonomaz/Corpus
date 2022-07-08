@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3219_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3219_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -38,7 +34,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://books.google.fr/books?id=WkdKAAAAcAAJ&amp;hl=fr"/>
-          <author role="attributed_author" source="BnAut">
+          <author ref="isni:0000000363476973" role="alleged_author" source="BnAut">
             <persName>
               <forename>Jacques</forename>
               <surname>Amelot</surname>
@@ -48,17 +44,19 @@
             députation de la cour des Aydes pour le retour de Leurs Majestés à Paris, avec la
             harangue et la réplique de M. Amelot, premier président, sur ce sujet.</title>
           <pubPlace source="Moreau">Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Vienne</settlement>
+            <settlement ref="geonames:2761369">Vienne</settlement>
             <institution>Bibliothèque nationale d'Autriche</institution>
             <repository/>
             <idno type="cote">127523-B ALT MAG</idno>
@@ -90,7 +88,27 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">3219. Relation véritable de ce qui s'est passé à Saint- Germain en la
+          députation de la cour des Aydes pour le retour de Leurs Majestés à Paris, avec la harangue
+          et la réplique de M. Arnelot, premier président, sur ce sujet. (S. 1., 1649),7 pages. La
+          Sommaire relation avait paru avant la Relation véritable; mais toutes les deux sont
+          incomplètes, au moins si j'en crois une note écrite en marge de la première ( exemplaire
+          de la bibliothèque de Sainte-Geneviève ) . Voici deux traits à ajouter : dans sa réplique
+          au chancelier, le premier président avait dit que le Parlement était disposé à donner, de
+          son obéissance, les marques que l'on exigerait, dans les formes prescrites par les
+          ordonnances. Le chancelier répéta ces derniers mots avec mépris. Oui, monsieur, reprit
+          aussitôt le premier prési dent, suivant les formes prescrites par les ordonnances; car
+          vous avez assez vieilli dans le Parlement pour ne pas ignorer que les com pagnies
+          souveraines n'ont point d'obéissance aveugle, et qu'elles soDt obligées seulement
+          d'exécuter les ordonnances vérifiées par liberté de suffrage, et non d'ordre absolu.
+          Monsieur le Prince voyant que le chancelier se taisait , s'écria tout en colère que la
+          maison de Bourbon n'avait pas besoin du Parlement. Le premier président se retira sans
+          rien dire, par res pect pour le prince et pour la reine. On peut croire que la Relation
+          véritable ne fut publiée que pour démentir en quelque sorte la Sommaire relation. Elle est
+          en effet beaucoup plus adoucie. Au moins celle-ci porte que le prince de Condé fit
+          entendre quelques paroles de colère , et que les compa gnies ont le droit de délibérer sur
+          les ordonnances et de faire des remontrances.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,6 +117,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -114,8 +136,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>. .
         <lb/>ATION
         <lb/>4
@@ -133,8 +154,7 @@
         <lb/> premier Preſident, ſur ce ſujet.
         <lb/> 2
         <lb/>M. DC. XLIX.
-        <lb/>I2o8B
-        <pb n="2"/>
+        <lb/>I2o8B <pb n="2"/>
         <lb/>1
         <lb/>.
         <lb/>
@@ -150,8 +170,7 @@
         <lb/> 1
         <lb/>A
         <lb/>m
-        <lb rend="¬" break="no"/>1
-        <pb n="3"/>
+        <lb rend="¬" break="no"/>1 <pb n="3"/>
         <lb/>¬¬¬¬¬-s
         <lb rend="¬" break="no"/>3:
         <lb/>11.
@@ -182,8 +201,7 @@
         <lb/>eouinre la rue pouir le ion de ues iae ie onne de dee
         <lb/>’eue ndnſe dſe naunle reores la eineſe dn e e ne
         <lb/>enmentv. eonuauelenmetoeeuueoyeur e deiſelde
-        <lb/>A ij
-        <pb n="4"/>
+        <lb/>A ij <pb n="4"/>
         <lb/>4
         <lb/>Mais puiſque Dieu nous afflge de leaux dont il ne nous
         <lb/>defend pas de chercher le reme de; &amp; puiſque pour guerir vn
@@ -223,8 +241,7 @@
         <lb rend="¬" break="no"/>reur. Nus ’oſerlons SMudarme pparletdeuant VcMdes pto
         <lb rend="¬" break="no"/> fanations eecrables àquoyſe ſont portez parn decnier ’ef
         <lb rend="¬" break="no"/> fort d’impiete, qulquesvns de’ ces gens ſanfoy &amp; ſans rell
-        <lb rend="¬" break="no"/>gion
-        <pb n="5"/>
+        <lb rend="¬" break="no"/>gion <pb n="5"/>
         <lb/>1
         <lb/>giron. LaVemneration, queſt heredicaire à ſtre Auguſte, Mai
         <lb rend="¬" break="no"/>fon, auſſi bien qu’à celle de S. Loüis, pour le plus ſaint &amp; le
@@ -270,8 +287,7 @@
         <lb/>b2l ils¬.
         <lb/>.?
         <lb/>¬-1
-        <lb/>e2.4¬
-        <pb n="6"/>
+        <lb/>e2.4¬ <pb n="6"/>
         <lb/> Spuoy ledit s’erpremoier Prefdenea’dit qo’ilaaoi? mé́ qo
         <lb/>e Correſpoence qoi a eſfé iſqaes iy emtre les Campagaies; l’obl
         <lb rend="¬" break="no"/>geit à ’repliqeer qelque choſe qsi teſasoiigt ler baoes isrenis
@@ -307,8 +323,7 @@
         <lb/> menacé, puis qu’iſ ne faut, pour obtenir ce grand bien, que
         <lb/>l’obeyſſanice ’vne Compagnie qui ſans doute ſera toufiours
         <lb/>tres-diſpoſé́e d’en donner les marques que l’on exigera ’elle
-        <lb/>dans les formes pgeſcrites par les Ordonnances.
-        <pb n="7"/>
+        <lb/>dans les formes pgeſcrites par les Ordonnances. <pb n="7"/>
         <lb/>¬
         <lb rend="¬" break="no"/>
         <lb rend="¬" break="no"/>!

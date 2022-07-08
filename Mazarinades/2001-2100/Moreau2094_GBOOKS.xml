@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2094_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2094_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -46,14 +42,14 @@
             </persName>
           </author>
           <persName role="received">
-            <name>Comte Pigneranda</name>
+            <surname>Comte Pigneranda</surname>
           </persName>
           <title source="Moreau">Lettre du cardinal Mazarin écrite au comte Pigneranda,
             plénipotentiaire d'Espagne pour la paix générale à Munster, par laquelle se justifie le
             mauvais dessein du cardinal Mazarin, tant sur la ville de Paris que sur tout
             l'État.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>
+          <publisher ref="isni:0000000506791357">
             <persName>
               <forename>François</forename>
               <surname>Noel</surname>
@@ -63,13 +59,12 @@
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 311615</idno>
@@ -101,7 +96,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2094. Lettre du cardinal Mazarin écrite au comte Pi gneranda,
+          plénipotentiaire d'Espagne pour la paix - générale à Munster, par laquelle se justifie le
+          mauvais dessein du cardinal Mazarin , tant sur la ville de Pa - ris que sur tout l'État.
+          Paris , François Noël, 1649, 7 pages. Du 13 janvier. Fausse et sotte.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -110,6 +109,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -125,8 +127,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>811s165
         <lb/>r 3
         <lb/>1é 4
@@ -151,8 +152,7 @@
         <lb/>A PARIS,
         <lb/>Chez Fraeo1s NoEL, rué Sainct lacques,
         <lb/>e l
-        <lb/> Aaec Peruio.
-        <pb n="2"/>
+        <lb/> Aaec Peruio. <pb n="2"/>
         <lb/>2 .
         <lb/>!
         <lb/>rE
@@ -244,8 +244,7 @@
         <lb/>oouaaubooo
         <lb/>aaaa a a ¬ aa
         <lb/>
-        <lb rend="¬" break="no"/>.!
-        <pb n="3"/>
+        <lb rend="¬" break="no"/>.! <pb n="3"/>
         <lb/> ttamôlAtdp
         <lb/> V4Af’’peé
         <lb/>LET TRE DV CARDINAL
@@ -269,8 +268,7 @@
         <lb/>iens desPeuples, ber Parleaae s’yeſtiſfa
         <lb/>? nevoppgaſé, equaaahigéatponnoi
         <lb/> A i
-        <lb/>1 n1
-        <pb n="4"/>
+        <lb/>1 n1 <pb n="4"/>
         <lb/>4
         <lb/>deſtruire vn ſi puiſſant obſtaicle, &amp; me vainger,
         <lb/>en meſme temps de la Ville de Paris, qui le ſou
@@ -298,8 +296,7 @@
         <lb/>douiable à la poſterité, &amp;à ious lespeuples dea
         <lb/>laſtotr; Ello4ua lqa ppin àyrſoudss
         <lb/>i A
-        <lb/>mais
-        <pb n="5"/>
+        <lb/>mais <pb n="5"/>
         <lb/> nais pour ſurmontes leſcrupule qu’elle en fai
         <lb rend="¬" break="no"/>ſoit, ie l’ay porteeà onauoir l’aduis de quarre.
         <lb/> Docteurs de la Sorbonhe quai me fſont affidez,
@@ -325,8 +322,7 @@
         <lb rend="¬" break="no"/>1moyen à ſa MaieſtéCatholiquedea- repqrei ad
         <lb rend="¬" break="no"/>antageuſemeneſes paries ſurls Fnancois, &amp;
         <lb/>eſiſrdesmeilleuespladcs de leur-ftontié
-        <lb rend="¬" break="no"/>B
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>B <pb n="6"/>
         <lb/>res, tandis que Mnſieur le Prince de Condé?
         <lb/>&amp; moy, nous tendrons maiſtres du dedans,
         <lb/>ſous le nom &amp; l’authorité du Roy, duquel
@@ -351,8 +347,7 @@
         <lb/>qui ſeront neceſſaires pour l’execution d’vn
         <lb/>ſi important deſſein: le vous ſupplie d’en
         <lb/>donner aduis àa ſa Maieſté Catholique, &amp; de
-        <lb/>l’aſſeurer de mes fidelles obeïſſances, &amp; pour
-        <pb n="7"/>
+        <lb/>l’aſſeurer de mes fidelles obeïſſances, &amp; pour <pb n="7"/>
         <lb/>7
         <lb/>voſtre particulier, de croire que ie uis de
         <lb/>tout mon cœur,

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3588_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3588_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,7 +36,9 @@
           </author>
           <title source="Mazarine">Satyre de Mazarin, envoyé a monsieur le duc de Beaufort.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-01" notAfter="1649-03">pendant le blocus de
             Paris</date>
@@ -43,13 +46,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48899</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48899" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48899"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15245</idno>
@@ -81,13 +83,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers, strophes alternées de quatre et six alexandrins. Deux états :
+        <p source="Mazarine">En vers, strophes alternées de quatre et six alexandrins. Deux états :
           état A, marque décorative (fleurons en cul-de-lampe) et adresse "A Paris," sur la p. de
           titre. Au verso du feuillet A2, deuxième strophe, seconde ligne "L'Almnach", fleuron à la
           fin. État B : sans marquesur la p. de titre et "A Paris." Au verso du feuillet A2,
           deuxième strophe, seconde ligne "L'Almanach" et "FIN" à la fin du texte. Par Jacques
           Carpentier de Marigny d'après Hubert Carrier (Mazarine Ms 4682-5, f. 239v) Texte paru
           durant le blocus de Paris, d'après H. Carrier.</p>
+        <p source="Moreau">3588. Satyre de Mazarin envoyée à monsieur le duc de Beaufort. Paris,
+          1649 , 4 pages. C'est la Ballade du Mazarin grand Joueur de hoc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -105,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>SATYRE
         <lb/>DE
         <lb/>MAZARIN.
@@ -114,8 +117,7 @@
         <lb/>LE DVC DE
         <lb/>BEAVFORT.
         <lb/>A PARIS.
-        <lb/>M. DC. XLIX. <pb n="10"/>
-        <pb n="11"/>
+        <lb/>M. DC. XLIX. <pb n="10"/><pb n="11"/>
         <lb/>3
         <lb/>SATTRE DE MAZARIN, ENVOYE
         <lb/>A Monſieur le Duc de Beaufort. <l>

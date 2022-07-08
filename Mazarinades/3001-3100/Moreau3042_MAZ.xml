@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3042_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3042_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -30,26 +31,27 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14982"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Recueil de plusieurs pieces curieuses, tant en vers, qu'en prose
             : imprimées depuis l'enlevement fait de la personne du Roy, le 6. janvier 1649. jusques
             à la paix, qui fut publiée le 2. jour d'avril de la mesme année. Et autres choses
             remarquables arrivées depuis ce temps-là jusques à present, lesquelles serviront
             beaucoup à la connoissance de l'Histoire. Tome</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="1"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49063</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49063" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49063"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13773</idno>
@@ -81,11 +83,29 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Page de titre et "preface servant d'advertissement au lecteur." placées
+        <p source="Mazarine">Page de titre et "preface servant d'advertissement au lecteur." placées
           par les imprimeurs-libraires en tête de recueils éditoriaux où les mazarinades sont
           présentées chacune avec sa propre pagination, sa propre page de titre, sa propre
           composition typographique, étant parues d'abord sous cette même forme séparément à
           l'unité. Autres éditions avec différences de titre et de composition typographique.</p>
+        <p source="Moreau">3042. Recueil de plusieurs pièces curieuses tant en prose qu'en vers,
+          imprimées depuis l'enlèvement fait de la personne du roi, le 6 janvier 1649, jusques à la
+          paix qui fut publiée le 2e jour d'avril de la même an née, et autres choses remarquables
+          arrivées depuis ce temps là jusques à présent, lesquelles serviront beau coup à la
+          connoissance de l'histoire. (S. 1., 1649.) Dès le 27 janvier, Guy Patin écrivait à Spon
+          qu'il s'attendait au recueil général qui se ferait des Mazarinades. Le 2 avril, il lui an
+          nonçait qu'on y travaillait et qu'on en avait pour faire cinq ou six tomes in-4% « en
+          ôtant et retranchant les mauvaises pièces. » Apparemment ce premier travail avait été
+          suspendu ; car je lis dans la lettre du 28 mai, à M. C. S. CM. D.R. : « On nous fait espé
+          rer ici qu'on fera un recueil en trois ou quatre tomes in-4° ; » et dans celle du 18 juin
+          à M. G. D. M. : « Trois libraires du palais se disposent à eh faire un recueil où on ne
+          mettra que les bonnes. » Peu de jours après la conclusion de la paix , il fut défendu par
+          arrêt de rien imprimer contre le cardinal Mazarin et sans doute aussi de réimprimer. On ne
+          dut penser à reprendre la publication du re cueil qu'au moment oïl les divisions
+          recommencèrent ; et en effet, nous voyons par le second des titres cités plus haut qu'elle
+          est pos térieure au 18 août 1649. On peut croire que les trois titres , suivis d'une même
+          préface , s'appliquent à un même recueil. Peut-être s'expliquent-ils par l'association des
+          trois libraires dont parle Guy Patin.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="10"/>
+      <p><pb n="10"/>
         <lb/>RECVEIL
         <lb/>DE
         <lb/>PLVSIEVRS PIECES

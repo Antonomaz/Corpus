@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3247_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3247_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -54,11 +50,11 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4 227 mm</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309388</idno>
@@ -90,8 +86,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Recueil factice</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Recueil factice</p>
+        <p source="Moreau">3247. Relation véritable de tout ce qui s'est fait et passé à l'attaque
+          du fauxbourg Saint-Antoine et de la défaite des Mazarins et leur retraite, ensemble le
+          ''*' ' .' nombre des morts et blessés. Paris , Jacob. Chevalier, 1652, 7 pages. « N'est-il
+          pas étrange que les bourgeois aient fait piller aux cro- cheteurs le bagage de messieurs
+          les princes , pendant qu'ils s'oc- cupoient à faire tirer le canon et essuyer les
+          canonades ennemies, et qu'ils hasardoient leurs vies pour leur service? »</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,6 +102,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -115,8 +121,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>DJ A rTJ’T
         <lb/> 1
         <lb/>DDA LIN
@@ -136,8 +141,7 @@
         <lb/>e
         <lb/>A PARIS
         <lb/>e IacoB Cn VAIE R ṕs Sainct Iean
-        <lb/>’’e
-        <pb n="2"/>
+        <lb/>’’e <pb n="2"/>
         <lb/>1
         <lb/>a
         <lb/>E.
@@ -155,8 +159,7 @@
         <lb/>¬ „
         <lb/>
         <lb rend="¬" break="no"/>1
-        <lb/>af
-        <pb n="3"/>
+        <lb/>af <pb n="3"/>
         <lb/>e?s jep
         <lb/>aoS
         <lb/>RELA TION VERITABLE
@@ -184,8 +187,7 @@
         <lb/>J iles mouſquetades, à fait abandonner à vne
         <lb/> ne de ſeize mille hommes, &amp; le fauxbourg Se
         <lb/>A u
-        <lb/>1
-        <pb n="4"/>
+        <lb/>1 <pb n="4"/>
         <lb/>1
         <lb/>8
         <lb/>Antoine qu’ils auoient preſque pris, &amp; quanie
@@ -216,8 +218,7 @@
         <lb/>pas fait encloü̈er les canons à l’Arſenal, ce ’eſt
         <lb/>pas le peuple, ce n’eſt pas legrand Manrin, mais
         <lb/>ce ſont ſes rejettons, comme le Preuoſt des Mar
-        <lb rend="¬" break="no"/>chands
-        <pb n="5"/>
+        <lb rend="¬" break="no"/>chands <pb n="5"/>
         <lb/>3
         <lb/>hands qui commandoit bhier de faire main baſe
         <lb/>ar tous les ſoldats des Pince qui enrreroiene
@@ -246,8 +247,7 @@
         <lb/>uouuabien a-qui parler, lors queſes trouppes eſtas
         <lb/>tuues iuſques à̀ la boucherie, ou autrement les
         <lb/>ales du fauxbourg ſaint Antoine, furent ſaluée,
-        <lb/>Sn coupde canou qui renueſa yingtcinqra.
-        <pb n="6"/>
+        <lb/>Sn coupde canou qui renueſa yingtcinqra. <pb n="6"/>
         <lb/>6
         <lb/>entiers, &amp; que deux ou trois qui le ſuiuirent de¬l
         <lb/>fient enuifon oo. hommes.
@@ -276,8 +276,7 @@
         <lb/>ognoiſent mainternone le dſods que ou
         <lb/>jt deſvniõ ont reſolu de ſorir couragruſement.
         <lb/> de leur monſtrer auiour d’huy que doue mil
-        <lb/>,u’ilsſortiront, ioints auec la luſuce &amp; les troup¬
-        <pb n="7"/>
+        <lb/>,u’ilsſortiront, ioints auec la luſuce &amp; les troup¬ <pb n="7"/>
         <lb/>7
         <lb/> pesde Meſſiers les Princes, ſont capables de de
         <lb rend="¬" break="no"/>endre leur pain, d’exterminer leurs ennemis, &amp;

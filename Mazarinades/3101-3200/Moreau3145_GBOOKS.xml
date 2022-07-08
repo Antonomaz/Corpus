@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3145_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3145_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -16,15 +16,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -43,12 +39,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://books.google.fr/books?id=jXmLx6CPZJkC&amp;hl=fr"/>
-          <author>
-            <persName>
-              <forename/>
-              <surname/>
-            </persName>
-          </author>
+          <author/>
           <title source="Moreau">Relation de tout ce qui s'est fait et passé en la ville de Bordeaux
             et province de Guyenne, et la réponse faite par le roi aux députés dudit Parlement et
             ville de Bordeaux, depuis l'arrivée desdits députés en la ville de Libourne, le 3 août
@@ -58,17 +49,19 @@
             510 hommes de guerre, argent et munitions, et la défaite de 1500 paysans révoltés en
             Catalogne, envoyée à M. le maréchal de Lhôpital.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau">Sans Date</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 310393</idno>
@@ -100,7 +93,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">3145. Relation de tout ce qui s'est fait et passé en la ville de
+          Bordeauxet province de Guyenne, et la réponse faite par le roi aux députés dudit Parlement
+          et ville de Bordeaux, depuis l'arrivée desdits députés en la ville deLibourne, le 3 août
+          1650, jusques au 12 dudit mois, ensemble la prise de l'île Saint-Georges, avec les
+          nouvelles apportées à Leurs Majestés, du 1 2 août 1650, du secours arrivé à Porto-Longone
+          de la galère commandée par le lieutenant du chevalier de Châtel- lus (sic), renforcée de
+          510 hommes de guerre, argent et munitions , et la défaite de 1 500 paysans révoltés en
+          Catalogne, envoyée à M. le maréchal de Lhôpital. Paris, Guillaume Sassier, s. d., 8
+          pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,6 +111,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>

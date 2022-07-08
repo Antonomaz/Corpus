@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2255_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2255_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -44,13 +45,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48870</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48870" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48870"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11469</idno>
@@ -82,11 +82,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. D'après Gabriel Naudé, cité par Célestin Moreau
+        <p source="Mazarine">En vers octosyllabes. D'après Gabriel Naudé, cité par Célestin Moreau
           et Hubert Carrier, imité de "Lettre à Monsieur le cardinal, burlesque" (BM00380). État A :
           sans correction. État B : nombreuses corrections dans le 2e cahier (p. 5-8). Texte paru
           dans la seconde quinzaine de mars 1649 par Hubert Carrier (Bibliothèque Mazarine Ms
           4682-3, f. 298v).</p>
+        <p source="Moreau">2255. Lettre surprise écrite à Jules Mazarin par ses nièces, burlesque.
+          Paris, Jacques Guillery, 1649, 8 pages. Naudé en faisait peu de cas ; et il avait
+          raison.(Mascurat, p.285)</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE
         <lb/>SVRPRISE
         <lb/>ESCRITE
@@ -117,7 +119,8 @@
         <lb/>Voyes, deuant le College de Forter,
         <lb/>proche Mont-Aigu.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>AVEC PERMISSION</imprimatur>
+        <lb/>
+        <imprimatur>AVEC PERMISSION</imprimatur>
         <pb n="10"/>
         <pb n="11"/>
         <lb/>LETTRE

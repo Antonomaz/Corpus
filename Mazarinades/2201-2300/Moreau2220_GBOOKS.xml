@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2220_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2220_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -53,12 +49,11 @@
             <measure unit="page" quantity="15"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 310749</idno>
@@ -90,7 +85,10 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2220. Lettre écrite de Poitiers, portant la réponse aux Avis publiés à
+          Paris, sous le nom de monsieur de Châteauneuf, touchant les affaires du temps. Paris,
+          Louis Chamhoudry, 1651, 15 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,6 +97,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -114,8 +115,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>LETTRE ESCRITE
         <lb/>
         <lb rend="¬" break="no"/>11
@@ -128,8 +128,7 @@
         <lb/>c lovls Cl MO vVDvs &amp;u palui
         <lb rend="¬" break="no"/>pes la Sainte Chapele
         <lb rend="¬" break="no"/>en eien iuiunen
-        <lb rend="¬" break="no"/> e
-        <pb n="2"/>
+        <lb rend="¬" break="no"/> e <pb n="2"/>
         <lb/> .
         <lb/>¬ E,,
         <lb/>E
@@ -168,8 +167,7 @@
         <lb/>ſi meſchant Ouurage, puis que les Aduis qu’on luy
         <lb/>attribuë ſont contraires aux fideles ſentimens qu’il a
         <lb/>pour le ſeruice de l’Eſtat.
-        <lb/>Ne vous étonnez donc pas du nombre prodigieux
-        <pb n="4"/>
+        <lb/>Ne vous étonnez donc pas du nombre prodigieux <pb n="4"/>
         <lb/>des Propoſitions trop libres que i’ay rencontrées dans
         <lb/>cet Eſcrit, puis que le titre meſme n’en eſt pas veritable,
         <lb/>&amp; que l’Autheur emprunte le nom d’vne Perſonne ll
@@ -198,8 +196,7 @@
         <lb/>permertroit pas de faire publier vn Eſcrit au prejudit
         <lb/>de la reputation de ſon Prince &amp; de tout le Conſeil,
         <lb/>comme ſiil n’auoit pas voulu ſuiure ces Aduis pretendus
-        <lb/>que la maliced’v A utheur inuiſible luy auibaë.
-        <pb n="5"/>
+        <lb/>que la maliced’v A utheur inuiſible luy auibaë. <pb n="5"/>
         <lb/>Il eſt trop judicieux pour parler à̀ ſa Majeſté auec ¬i
         <lb/>peu de reſpect &amp; de raiſon, que de luy dire, Que la prom
         <lb rend="¬" break="no"/>ptitude doit tre banie de cette afſaire comme vne ſeditieuſe,
@@ -228,8 +225,7 @@
         <lb/> Syrenes &amp; des menſonges, des veritez aſſeuré́es, &amp; des
         <lb/> Oracles infaillibles, qui ſont bien plus certains que ces
         <lb/>captieuſes Propoſitions, qui portent, Qu’ul et icy queſtion
-        <lb/>J de perdre ou de ſaaaer l’Eſtat.
-        <pb n="6"/>
+        <lb/>J de perdre ou de ſaaaer l’Eſtat. <pb n="6"/>
         <lb/>Il faut eſtre auſſi ignorant du cours des affaires,
         <lb/>qu’ennemy de la verite, pour auancer ce menonge,
         <lb/>Que nous ſommes en danger de perdre ou ſauuer l’Eſtae. Ie
@@ -258,8 +254,7 @@
         <lb rend="¬" break="no"/>ſent pas de trauailler à leur propre honte, &amp; des’expoſe
         <lb/>aux meſmes diſgraces.
         <lb/>La fidelité́ des Prouinces qui ſeſont rangées ſous l’o
-        <lb rend="¬" break="no"/>benſainee duRoy, nepromeent à iondieur lepine
-        <pb n="7"/>
+        <lb rend="¬" break="no"/>benſainee duRoy, nepromeent à iondieur lepine <pb n="7"/>
         <lb/>que de funeſtes ſuccés: L’vnion des Peuples pour le ſer
         <lb rend="¬" break="no"/>uice de leur aiſtre, monſtre aſſez que l’Eſtat n’eſt pas
         <lb/>en danger, puis que les parties qui compoſent ce grand
@@ -288,8 +283,7 @@
         <lb/>jottez dans le party contralre poaur ſignaler leur ingra-
         <lb/>tiude, &amp; pour faire connoiſtre qu’ils ſont dans les
         <lb/> meſmes ſentimens que l’Autheur de l’Eſerit, qui dit,
-        <lb/>Que les Poauples lattant aſſ viſblent -dans leur reueles
-        <pb n="8"/>
+        <lb/>Que les Poauples lattant aſſ viſblent -dans leur reueles <pb n="8"/>
         <lb/>
         <lb rend="¬" break="no"/>Monſieur lePrince, de l’eſperance d’evne Couronne.
         <lb/>Il faut que la paſſion ait bien aueuglél’Autheur des
@@ -320,8 +314,7 @@
         <lb/>ſtance eſt bannie du Conleil des Roys; le caprice d’vnt
         <lb/>populace inconſideré́e ne peut arreſter l’execution d
         <lb/>leurs entrepriſess laurs Sujets ne ſont pas leurs Iugesn
-        <lb/>leun
-        <pb n="9"/>
+        <lb/>leun <pb n="9"/>
         <lb/>leurs Arbitres; leurs ſentimens ſont des Loix; &amp; c’eſt
         <lb/>aſſez qu’ils pourſuiuent vn rebelle, pour que le peuple
         <lb/>ſoit obligé de ſeconder leurs intentions, car le Peuple ne
@@ -350,8 +343,7 @@
         <lb rend="¬" break="no"/>traire, auroit ſouhaité́ de la negligence dans le Conſeil
         <lb/>qui ne trauaille qu’à la conſeruaion de l’Eſtat, &amp; donmt
         <lb/>aute l’oceuparion eſt fidelement attachée au maintien
-        <lb/>de l’Authorité Royale, &amp; à la gueriſon des playes que les
-        <pb n="10"/>
+        <lb/>de l’Authorité Royale, &amp; à la gueriſon des playes que les <pb n="10"/>
         <lb/> 1
         <lb/>ennemis du Roy pourroient faire à la France. Le Con
         <lb rend="¬" break="no"/>ſeil eſt trop ſage, pour ne pas preuenir les maux dont
@@ -381,8 +373,7 @@
         <lb/>qu’à la ruine du Peuple, qui ſe ſouuient encor de
         <lb/>vieux prouerbe Gaulois, A la fn les Granmds s’embraſſen
         <lb/>&amp;les petits s’embaraſſent; les Grands s’accordent, &amp; lespe
-        <lb/>prennent l corde.
-        <pb n="11"/>
+        <lb/>prennent l corde. <pb n="11"/>
         <lb/>11
         <lb rend="¬" break="no"/>Le Roy a encor auſſi peu de ſujet de demander l’ap
         <lb rend="¬" break="no"/>probation des Eſtrangers, que celle de ſon Peuple, com
@@ -412,8 +403,7 @@
         <lb/>les intelligences non plus ſecretes, maus ouuertes, auec les en
         <lb rend="¬" break="no"/>nemis de la Couronne, qui les declaremt crimnels d’Eſtas,
         <lb/>dans le ſentiment meſme de ceux qui fauoriſent leur
-        <lb/>party, &amp; qui diſent, qu’ils nefont la gere que par lapprehen¬
-        <pb n="12"/>
+        <lb/>party, &amp; qui diſent, qu’ils nefont la gere que par lapprehen¬ <pb n="12"/>
         <lb/>2.
         <lb/>ſion qu’ils onmt duretour dau Cardnal Maarin: Ce qui eſt vn
         <lb/>pretexte, puis que le Roy luy a oſté toute eſperance de
@@ -444,8 +434,7 @@
         <lb/>Vile de deſobeiſſance. Le Roy peut donc demor
         <lb/>ae loure dans ee Vvle, dont la fidiudlur dat
         <lb/>le, Il eo peut ſotir pour auancer on Guyennt
-        <lb/>triomp
-        <pb n="13"/>
+        <lb/>triomp <pb n="13"/>
         <lb/>triomphe, &amp; il en peut reuenir auec acclamation pûbli
         <lb rend="¬" break="no"/>ques de tous les peuples, qui luy ſeront pluſtoſt redeuables de
         <lb/>leur repos, qu’à Monſieur le Prince, qui ne les fait que
@@ -475,8 +464,7 @@
         <lb/>eſtoit fdele; que ſon deuoir fauoriſoit aqutant ſes armes
         <lb/>queſon courage, &amp; qu’il n’eſt redeuable de ſes triom
         <lb rend="¬" break="no"/>hes qu’à l’obeïſſance qu’il rendoit àſon Prince; le ſer
-        <lb rend="¬" break="no"/>D
-        <pb n="14"/>
+        <lb rend="¬" break="no"/>D <pb n="14"/>
         <lb/> 14
         <lb/>uice de ſon Roy le faiſoit genereux, &amp; la gneoſitédes
         <lb/>troupes qu’il commandoit luy gagnoit pluiſtoſt des ba.
@@ -506,8 +494,7 @@
         <lb/>Monfieur le pincé. Glorieuſes extrenite qumetteu
         <lb/>le Roy dans vne iuſte &amp; heureuſe impuiſſance de nt
         <lb/>pouuoir vaincre:! Genereuſe neceſſité, de pardonnet
-        <lb/>encor àſes ennemis apres leur défaits! d leur aire cou¬
-        <pb n="15"/>
+        <lb/>encor àſes ennemis apres leur défaits! d leur aire cou¬ <pb n="15"/>
         <lb/> 15j
         <lb/>noiſtre ſa clemence dans le pardon, apres leur auoir fait
         <lb/>ſentir ſa force dans les combare! &amp; de leur faire voir que.

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1401_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1401_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -54,20 +55,21 @@
             entendre cét aveuglement d'obeissance que les subjets doivent aux ordres des souverains
             : pour desarmer les pretentions du Conseil pretendu de sa Majesté.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" when="1652-06-21">21 juin 1652</date>
           <extent>
             <measure unit="page" quantity="24"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50064</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50064" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50064"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12941</idno>
@@ -99,7 +101,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Avertissement au lecteur à la fin du texte. Édition composite. 2 états
+        <p source="Mazarine">Avertissement au lecteur à la fin du texte. Édition composite. 2 états
           du cahier signé A : p. de titre, l. 9 "entreprendre" (état A1) / "enfreindre" (état A2) ;
           p. 3, l. 28 "riqueur" (A1) / "rigueur" (A2). 2 états du cahier signé B : p. 5, l. 11
           "l'euthorité" (B1) / "l'authorité" (B2) ; p. 6, fin l. 9 / début l. 10 "effe-"/"ctuez"
@@ -111,6 +113,18 @@
           d'après Célestin Moreau. D'après Hubert Carrier, texte paru le 21 juin 1652, au vu de la
           note ms. contemporaine "21e juin" sur l'exemplaire de la Bibliothèque Mazarine coté 4°
           19064-86 (Bibliothèque Mazarine, Ms. 4682-2, f. 357v).</p>
+        <p source="Moreau">1401. Formulaire (le) d’État, faisant voir par la raison et par
+          l’histoire 1. que les lois fondamentales de la monarchie sont au-dessus de l’autorité du
+          roi; 2. qu’il n’y a que les états généraux qui puissent entreprendre impunément les lois
+          fondamentales, et que par consé- quent l’autorité des états généraux est au-dessus de
+          celle du roi; 3. que la royauté dégénère en tyrannie lorsqu’elle attente à ces lois
+          fondamentales; 4. que le roi est obligé, par les lois fondamentales, d’agir avec les
+          étrangers, pour lès affaires d'État, par le conseil de ses princes, et que par conséquent
+          le traité que la cour a fait depuis peu avec le duc de Lorraine, sans la par- ticipation
+          des princes du sang , est invalide et tyran- nique; 5. et comme il faut entendre cet
+          aveuglement d'obéissance que les sujets doivent aux ordres des sou- verains, pour désarmer
+          les prétentions du conseil pré- tendu de Sa Majesté. (S. 1.), 1652, 24 pages. Dubosc
+          Montandré.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -138,8 +152,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>FORMVLAIRE
         <lb/>D'ESTAT
@@ -163,8 +176,7 @@
         <lb/>ſance que les ſubjets doiuent aux ordres des Souue¬
         <lb/>rains: pour deſarmer les pretentions du Conſeil pre¬
         <lb/>endu de ſa Majeſté.
-        <lb/>M. DC. LII.
-        <pb n="10"/>
+        <lb/>M. DC. LII. <pb n="10"/>
         <pb n="11"/>
         <lb/>LE
         <lb/>FORMVLAIRE
@@ -948,8 +960,7 @@
         <lb/>Partie, le Controcoup dn Coup de Partie, l’Exocciſte de:
         <lb/>la Reyne, le Manuel Politique, &amp; l’l xeommunication
         <lb/>Politique, qui m’apartient depuis ſix mois. Pour les au¬
-        <lb/>tres ie les laiſſe à leurs autheurs..
-      </p>
+        <lb/>tres ie les laiſſe à leurs autheurs.. </p>
     </body>
   </text>
 </TEI>

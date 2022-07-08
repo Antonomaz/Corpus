@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3845_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3845_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -26,10 +27,12 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14805"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Le trique-trac de la Cour.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-01" notAfter="1652-09-10">entre janvier et début
             septembre 1652</date>
@@ -37,13 +40,12 @@
             <measure unit="page" quantity="3"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48975</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48975" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48975"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12358</idno>
@@ -75,9 +77,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Titre de départ Texte paru en 1652 d'après Célestin Moreau, entre
+        <p source="Mazarine">Titre de départ Texte paru en 1652 d'après Célestin Moreau, entre
           janvier début de septembre d'après Hubert Carrier (Bibliothèque Mazarine, Ms.4682-5, f.
           336v)</p>
+        <p source="Moreau">3845. Trictrac(le) dela cour. (S. 1., 1652), 3 pages. Wio^PV Rare. Vet
+          r-&lt; • .&gt;- -&amp; ' Il y a de l'esprit, et surtout de l'insolence. Le duc de Guise :
+          « Si je sors de mon coin , je serai un Jean de retour. » Mazarin : « J'ai fait mon plein ;
+          mais je ne puis passer sans bonheur. » Le Parlement : « Nous sommes en chemin de gagner le
+          tour de bredouille. » Ce pamphlet a été réimprimé dans le VIe volume des Mémoires du
+          cardinal de Retz. Genève, Fabry, 1777, in-8°.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -94,8 +102,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>I
         <lb/>LE
         <lb/>TRIQVE-TRAC

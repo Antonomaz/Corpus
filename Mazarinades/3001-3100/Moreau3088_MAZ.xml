@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3088_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3088_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -33,19 +34,20 @@
           <title source="Mazarine">Regrets gascons sur la mort dou Praube feu Sarret, que Diu l'agi
             son amne.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="11"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49370</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49370" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49370"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13302</idno>
@@ -77,8 +79,11 @@
         <language ident="other">Document en gascon</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes, l'"epitafe" en alexandrins, patois des Landes
+        <p source="Mazarine">En vers octosyllabes, l'"epitafe" en alexandrins, patois des Landes
           d'après Ernest Labadie. Signé "I. D." à la suite de l'"epitafe" et après le mot "Fin".</p>
+        <p source="Moreau">3088. Regrets gascons sur la mort dou praube feu Sarret ; que Dieu l'agi
+          son aume. Paris , 1649 , 1 2 pages. Rare. Pièce de vers en patois gascon qui se termine
+          par l'épitaphe de Sarret.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -95,8 +100,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>REGRETS
         <lb/>GASCONS
         <lb/>SVR LA MORT
@@ -152,8 +156,7 @@
         <l>
           <lb/>11</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <pb n="12"/>
         <l>
           <lb/>1</l>
@@ -360,8 +363,7 @@
         <l>
           <lb/>A 6</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <pb n="15"/>
         <l>
           <lb/>Et eridabe miſericorde,</l>
@@ -423,8 +425,7 @@
         <l>
           <lb/>aIadaa</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>quan entraben, &amp; puih crldabë</l>
         <l>
@@ -550,11 +551,9 @@
           <lb/>Per han’eu farc la bentreſque,</l>
         <l>
           <lb/>Suſfoutetmandabepeprés</l>
-     
         <l>
           <lb/>E</l>
         <pb n="18"/>
-       
         <l>
           <lb/>qu’ou thengoucen vn tarrin preés,</l>
         <l>

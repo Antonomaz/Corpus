@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau195_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau195_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -57,13 +58,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49395</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49395" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49395"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14252</idno>
@@ -95,8 +95,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Arrêt signé "Monsieur Daffis, president." ; ordonnance contresignée
+        <p source="Mazarine">Arrêt signé "Monsieur Daffis, president." ; ordonnance contresignée
           "Meurtet de La Tour". </p>
+        <p source="Moreau">195. Arrêt d’union du parlement de Bordeaux, portant ratification du
+          serment, fait en faveur de monseigneur le prince de Condé, gouverneur, pour le roi, dans
+          ladite province, et résolution des quatre autres chefs, contenus dans ledit arrêt;
+          ensemble l’ordonnance de monseigneur le prince de Conty pour faire cesser tout ce qui nuit
+          à l’autorité publique, rendus le 15 juin 1652. Paris, Nicolas Vivenay, Sans Date 7
+          pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -115,8 +121,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST D'VNION
         <lb/>DE LA COVR
         <lb/>DE PARLEMENTL

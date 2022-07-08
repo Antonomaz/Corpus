@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau278_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau278_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -49,13 +50,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49343</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49343" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49343"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° A 11544-39</idno>
@@ -87,7 +87,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Texte faux au regard de l'arrêt original. Cahier B différent de BM00484
+        <p source="Mazarine">Texte faux au regard de l'arrêt original. Cahier B différent de BM00484
           : p. 5 l. 3 "interrogatoire", l. 5 "Decembre, cōtenant", l. 8/9 "20./&amp; vingt-deux" ;
           p. 6 l. 2/3 "separ-/remēt", l. 9 "l'opiniō" ; p. 7 l. 5 "renuoyez &amp; renuoyent" ; p. 7
           imprimée avec caractères plus petits . - Autres éditions repérées par Célestin Moreau,
@@ -105,6 +105,10 @@
           ladite Cour et Louis Charreton, aussi conseiller et president aux resquestes du Palais",
           Paris, Pierre Targa, 4 p. in-4 (BM01228). Signé "Le Tenneur". Arrêt daté du 22 janvier
           1650, texte paru à Paris le 26 janvier d'après H. Carrier suivant Dubuisson-Aubenay.</p>
+        <p source="Moreau">278. Arrêt de la cour de parlement sur l’accusation portée contre M. le
+          duc de Beaufort, M. le coadjutenr en l'archevêché de Paris, M. de Broussel, conseiller en
+          ladite cour, et M. Charton, aussi conseiller, président aux requêtes du palais. 7
+          pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -125,8 +129,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="11"/>
+      <p><pb n="11"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT

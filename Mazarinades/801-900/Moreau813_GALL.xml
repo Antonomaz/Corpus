@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau813_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau813_GALL">
   <teiHeader xml:lang="fr">
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -41,17 +37,19 @@
           <title source="Moreau">Courrier (le) burlesque de la guerre de Bordeaux, apportant ce qui
             s'est passé de plus secret en la cour du duc d'Épernon.</title>
           <pubPlace>Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="19"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque nationale de France</institution>
             <repository>Département Littérature et art</repository>
             <idno type="cote">YE-2417</idno>
@@ -83,10 +81,18 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BnF_notes">L'auteur se déclare "natif du Périgord", "orateur &amp; poète" Rédigé
+        <p source="Mazarine"/>
+        <p source="BnF">L'auteur se déclare "natif du Périgord", "orateur &amp; poète" Rédigé
           pendant la semaine sainte (p. 17, vers 17). - Contient des allusions aux combats du 29
           décembre 1649 (attaques de la Bastide et de Bacalan)</p>
+        <p source="Moreau">813. Courrier (le) burlesque de la guerre de Bordeaux, apportant ce qui
+          s'est passé de plus secret en la cour du duc d'Épernon. (S. }.), 1650, 19 pages. Des
+          gasconnades ct des saletés. “ Fette les yeux sur un ouvrage, Qui voit, n’a pas longtemps,
+          le jour. C’est un vrai tableau de la cour, Que j'ai fait en faveur du prince Protecteur de
+          cette province... . Et, pour le discerner au vrai, Il porte en titre ; Manifeste, Que le
+          seul Mazarin déteste , Parce qu’il ne s’en prend qu’à lui, Et qu’il nous fait voir
+          aujourd’hui, D’un style florissant et mâle , Les intrigues de sa cabale. Je ne vois que le
+          Manifeste pour les Bourdelois, ete., auquel il soit possible d’appliquer ce passage.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -95,6 +101,9 @@
           <term type="subgenre">burlesque</term>
           <term type="subgenre">satirique</term>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>

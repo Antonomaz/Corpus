@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3229_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3229_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -54,11 +50,11 @@
             <measure unit="page" quantity="17"/>
           </extent>
           <note type="format">in-4 223 mm</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 310836</idno>
@@ -90,10 +86,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Autre(s) variante(s) du titre : Relation véritable de ce qui s'est
-          passé entre l'armée de messieurs les princes, &amp; les troupes mazarines commandées par
-          le maréchal d'Hauquincourt</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Autre(s) variante(s) du titre : Relation véritable de ce qui s'est passé
+          entre l'armée de messieurs les princes, &amp; les troupes mazarines commandées par le
+          maréchal d'Hauquincourt</p>
+        <p source="Moreau">3229. Relation véritable de ce qui s'est passé entre l'ar mée de
+          messieurs les princes et les troupes maza- rines , commandées par le maréchal
+          d'Hauquincourt (sic), apportée à Son Altesse Royale par M. le comte de Gaucourt. Paris,
+          Nicolas Vivenay, 1652, 16 pages. Rare. Fort détaillée, assez véridique et par là même
+          très-curieuse.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,6 +103,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -117,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>A TT
         <lb/>RELATION
         <lb/>VERITABLE
@@ -134,8 +138,7 @@
         <lb/>che 1eC &amp;eVENA1.
         <lb/>Imprimear Ordinaire deMonftigneur le Ptince
         <lb/> DCL
-        <lb rend="¬" break="no"/>Auec Permiſiion de Sn Alteſſe
-        <pb n="2"/>
+        <lb rend="¬" break="no"/>Auec Permiſiion de Sn Alteſſe <pb n="2"/>
         <lb/>,.7
         <lb/>
         <lb rend="¬" break="no"/>7
@@ -203,8 +206,7 @@
         <lb/>
         <lb/>.. .
         <lb/>
-        <lb rend="¬" break="no"/>Dou, Google
-        <pb n="3"/>
+        <lb rend="¬" break="no"/>Dou, Google <pb n="3"/>
         <lb/>3
         <lb/> iepbas
         <lb/>gSbl
@@ -234,8 +236,7 @@
         <lb/>Vangeancs tous ceux que le hien publicarendus
         <lb/>ſes. ennemis, qu’il paruit de Guyenne apres y.
         <lb/>auoir mis tous les ordres neceſſaires. Quelque pe
-        <lb rend="¬" break="no"/>ril qu’on luy peut repreſenrer, &amp; quoy qu on luy.
-        <pb n="4"/>
+        <lb rend="¬" break="no"/>ril qu’on luy peut repreſenrer, &amp; quoy qu on luy. <pb n="4"/>
         <lb/>fit voir qu’il eſtoit preſque impoſſible de trauerſer
         <lb/>tout le Royaumie, il l’a pourtant fait en huit iours
         <lb/>luy dixieſme mais ou pas ſans auoir couru millesx
@@ -266,8 +267,7 @@
         <lb/>&amp; pareil nombre de fantaſſins qui luy auoit refuſé
         <lb/>les portes. Monſieur de Beaufort auanca encore
         <lb/>auec deux cens cheuaux qui furent auſſi refuſez, en
-        <lb rend="¬" break="no"/>fin
-        <pb n="5"/>
+        <lb rend="¬" break="no"/>fin <pb n="5"/>
         <lb/>finl’armé́e eſtant arriúe deuant la place, ſon Al
         <lb rend="¬" break="no"/>teſſe leur donna demie heure pour prendre leur
         <lb/>derniere reſolution, ils ſe rendirent, &amp; monſieur le.
@@ -298,8 +298,7 @@
         <lb rend="¬" break="no"/>mée du Mateſchal d’Hocquincourt qui eſt lavraye
         <lb/>armée duCardinal, lpuis que c’eſt celle auec laquel
         <lb rend="¬" break="no"/>leil eſt entré en France auoit l’Auant-garde, &amp; s’e-
-        <lb rend="¬" break="no"/>B
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>B <pb n="6"/>
         <lb/>ltoie logé en vn viiage normumé P reteau; &amp; que les
         <lb/>Dragons de la Ferte Seneterre, d’Hocquincourt, &amp;
         <lb/>de anicamp eſtoient logez à ogny, &amp; deux au
@@ -330,8 +329,7 @@
         <lb/>d’y paſſer auant que d’arriuer dans les quanrticrs des
         <lb/>ennemis, on detacha monſieur de Chauaignac
         <lb/>mareſchal de camp, auec cinquante cheuaux pou
-        <lb/>a
-        <pb n="7"/>
+        <lb/>a <pb n="7"/>
         <lb/>s’en aller ſaiſir, ce qu’il fit: à l’entrée de la nuict on
         <lb/>apiua aà la veuë̈ du quartier de Rogny, on vit les
         <lb/>feux des enr emis de l’autre coſteé́ de l’eau, &amp; on iu
@@ -362,8 +360,7 @@
         <lb rend="¬" break="no"/>nant auec monſieur de Clinchan à a teſte des trou
         <lb rend="¬" break="no"/>pes Allemandes: les ehnemis n’auoient aucune
         <lb/>gardeau gay, &amp; s’eſtoient cohtentezde le rompre
-        <lb/>en yjettant quelques arbres:’mals il ne ſe trouua
-        <pb n="8"/>
+        <lb/>en yjettant quelques arbres:’mals il ne ſe trouua <pb n="8"/>
         <lb/>pas ſi bien rompu, que monſieur de Nemoursne
         <lb/>trouua moyen d’y paſſer; &amp; monſieur le Prince en
         <lb rend="¬" break="no"/>ſuite: là les vint joindre le Comte de Gaucort de la
@@ -395,8 +392,7 @@
         <lb/>paſſant proche du Chaſteau y euſt ſon cheual bſeſſeé
         <lb/>d’vne mouſquetade, &amp; ſon Capitainedes gardesauſſi
         <lb/>l’lnfanteie &amp; le canou aiuerens, on ls fomma
-        <lb/>pour
-        <pb n="9"/>
+        <lb/>pour <pb n="9"/>
         <lb/>93
         <lb/>pour laderniere fois, &amp; fe tendirent priſonniers de
         <lb/>guerre. Apres auoir veu lécanohs, Monſieur de Ta
@@ -429,8 +425,7 @@
         <lb/>lautrcbſté, ce ’quſfié-refbue A. dedpdſſer:; &amp;
         <lb/>apres auoir faitſbader leQuaydé ous doſtee, on ne
         <lb/>ouua qu’vn ſel endroit oû-llae pouuoit paeſſee
-        <lb/>vfhitut; &amp;aueebRaueoupepeih, eV
-        <pb n="10"/>
+        <lb/>vfhitut; &amp;aueebRaueoupepeih, eV <pb n="10"/>
         <lb/> 1
         <lb/> mours paſſa à la teſte d’Anguien ſouſtenu de Mr le
         <lb/>Prince qui eſtoit luiuy de Me, de Beaufort, de la Ro
@@ -462,8 +457,7 @@
         <lb rend="¬" break="no"/>fort, de la Rochefooenalt, de Clinchan &amp; de Tauan
         <lb rend="¬" break="no"/>aes, ayantralié le reſte,&amp; le Regimét de meilles eſtant
         <lb/>ariuéaupresda Monſieéur l Prince, on retourna à la
-        <lb/>dugo agc at de yigaeu, que ces Meſſieurs les
-        <pb n="11"/>
+        <lb/>dugo agc at de yigaeu, que ces Meſſieurs les <pb n="11"/>
         <lb/>
         <lb/>ayans chargez pat la teſte, &amp; Moniſter le rince
         <lb/>en lanc, tout plia deuaat eux: Leſſeur Vuarin Lieu
@@ -494,8 +488,7 @@
         <lb/>Dans ca temps làd Mnſiears de Nemouirs qui eſtoit
         <lb/>demeuré́ dansvue ſaiſoapoarſe fairepenſer, manda
         <lb/>à ſon Alteſfe quele Marachal de Turenne marchois
-        <lb/>àla teſte de ſan armée pour venir au ſecours de celle
-        <pb n="12"/>
+        <lb/>àla teſte de ſan armée pour venir au ſecours de celle <pb n="12"/>
         <lb/>quiaoit eſté̂ defaite, &amp; qu’il patiſſoit deia ſurvne
         <lb/>emiaence au delà da ruiſſeau, Ce qui obligea Mr
         <lb/>le Pince de marcher de ce coſte-là,. &amp; de faire
@@ -525,8 +518,7 @@
         <lb rend="¬" break="no"/>2 ufioa acheuer dé l&amp;s defaire.Il fedonc maccher
         <lb/>i’par la gancheile Reimeut de &amp; A.R. &amp; par la
         <lb/> ioite cduy de anguodenaadez par loba
-        <lb rend="¬" break="no"/> F
-        <pb n="13"/>
+        <lb rend="¬" break="no"/> F <pb n="13"/>
         <lb/>ron de Vallon, Mareſchal decamp, louftenus d
         <lb/>Regimens d’Anlac, dis Genſdacmes &amp;e Chgaaua.
         <lb/>legers deS. A.R. Pl ſe rdi aiſtoei des deuxbois
@@ -557,8 +549,7 @@
         <lb/>&amp; en legeres eſcarmonches, où̀ le ſieus Comte de
         <lb/>Maré Mareſchal de camp, fut bleſſé, &amp; ſon chaual.
         <lb/>tué d’vn coup d canons. Le fſiaurde la Chefe com
-        <lb rend="¬" break="no"/>D
-        <pb n="14"/>
+        <lb rend="¬" break="no"/>D <pb n="14"/>
         <lb/>14
         <lb/> le ſieur An
         <lb rend="¬" break="no"/>bndant lo egimeat de
@@ -590,8 +581,7 @@
         <lb/>ouué́ dans le maſme deſordre que luy.
         <lb/>Ie ne vous: nommery point les Offieiers que
         <lb/>leéur courage y a fait remarquer, puis qu’il ny ena
-        <lb/>pasvn qui nue meritaſt vne Relation partuiculiere,
-        <pb n="15"/>
+        <lb/>pasvn qui nue meritaſt vne Relation partuiculiere, <pb n="15"/>
         <lb/> 5
         <lb rend="¬" break="no"/> .
         <lb/>outre que toutes le5 çroupes qui ont donné, y dn
@@ -624,8 +614,7 @@
         <lb/>qui on fait r ſiſtapce,; nfin qpoy. que fa vie ſois
         <lb/>vne ſuite de hoſes extraordinairess-le puisi dire?
         <lb/>que cette a ction n’eſtpas de celles qu’il faut le
-        <lb/>moins admirer: Il fiſt pour le moins dix lieuës,
-        <pb n="16"/>
+        <lb/>moins admirer: Il fiſt pour le moins dix lieuës, <pb n="16"/>
         <lb/> 14
         <lb/>aleas tous les quartiers d’vne arneée, ſans que
         <lb rend="¬" break="no"/> les vnefe puiſſentſauuetr par llalarme des autres, il
@@ -656,12 +645,10 @@
         <lb/>gonerale,cmme Monſieur le Princey eſt engagé,
         <lb/>&amp; aeſtsblir l’auashoriré.
         <lb/>FIN.
-        <lb/>u
-        <pb n="17"/>
+        <lb/>u <pb n="17"/>
         <lb/>le vn E
         <lb/>n
-        <lb/>Doueo, Google
-        <pb n="18"/>
+        <lb/>Doueo, Google <pb n="18"/>
         <lb/>
         <lb/>A
         <lb/>p

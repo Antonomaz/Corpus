@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau221_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau221_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,20 +43,21 @@
             ce, permis aux habitans des villes, bourgs, &amp; villages, de s'armer, &amp; leur
             courir sus.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-01-11">11 janvier 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49895</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49895" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49895"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14428</idno>
@@ -87,11 +89,18 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mention de publication de l'arrêt datée du 11 janvier et signée
+        <p source="Mazarine">Mention de publication de l'arrêt datée du 11 janvier et signée
           "Jossier". Publié également dans le recueil éditorial intitulé "Recueil de diverses
           pieces. Qui ont paru durant les mouvemens derniers de l'année 1649." (BM00059). Signé "Du
           Tillet". D'après Hubert Carrier, texte paru le 11 janvier 1649 (Bibliothèque Mazarine, Ms.
           4682-1, f. 114v).</p>
+        <p source="Moreau">221. Arrêt de la cour de parlement, donné, toutes les chambres assemblées
+          , le 10 janvier 1649, par lequel il est défendu, à tous gouverneurs des villes frontières
+          ou autres places, de laisser sortir aucuns canons, armes et munitions de guerre de leurs
+          dites places, et enjoint, à tous capitaines, soldats et gens de guerre, qui sont proches
+          de Paris, de s’en éloigner de vingt lieues ; à faute de ce, permis aux habitants des
+          villes, bourgs et villages, de s’armer et leur courir sus. Paris, par les imprimeurs et
+          libraires ordinaires du roi, 1649, 4 pages. Suivi de la mention de publication.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT
@@ -130,7 +138,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordi¬
         <lb/>naires du Roy.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Maieſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Maieſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

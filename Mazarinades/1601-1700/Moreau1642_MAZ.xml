@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1642_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1642_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,20 +32,21 @@
           <title source="Mazarine">Le roman des esprits revenus a S. Germain. Burlesque &amp;
             serieux.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-03-04">après le 4 mars 1649</date>
           <extent>
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50329</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50329" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50329"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11929</idno>
@@ -76,7 +78,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">4 états du premier cahier. A1 : titre "Le roman...", adresse "A
+        <p source="Mazarine">4 états du premier cahier. A1 : titre "Le roman...", adresse "A
           Paris,", titre de départ "Le roman...", lettre initiale ornée (petites feuilles). A2 :
           titre "Le roman...", adresse "A Paris,", titre de départ "Histoire des esprits revenus..."
           avec le s de "revenus" légèrement décalé vers le haut, lettre initiale ornée (petites
@@ -89,6 +91,11 @@
           plusieurs autres grands seigneurs de la Cour." (BM01415). Autre état de l'adresse (A3) :
           "A Paris. M. DC. XLIX.". D'après Hubert Carrier, texte paru peu après le 4 mars 1649
           (Bibliothèque Mazarine, Ms. 4682-5, f. 232v).</p>
+        <p source="Moreau">1642. Histoire des esprits revenus à Saint-Germain, burlesque et sérieux.
+          Paris, 1649, 10 pages. Récit assez plaisant, dans lequel l'auteur nous représente le duc
+          d'Orléans qui tremble, le prince de Condé qui est sans peur, le maréchal de La Meilleraye
+          qui veut tout brûler, le maréchal de Grammont toujours prêt à fuir. Il a paru aussi sous
+          les titres de Roman des esprits, etc., et de Conférence secrete tenue à Pontoise, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -121,8 +128,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE ROMAN
         <lb/>DES ESPRITS
         <lb/>REVENVS A

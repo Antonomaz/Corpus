@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1404_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1404_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -27,11 +28,11 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14576"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Le foudroyement des geans mazarinistes abysmez sous les ruines du
             fameux et desolé bourg de Charenton.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher ref="isni:000000007728855X">
+          <publisher ref="isni:0000000506791357">
             <persName>
               <forename>François</forename>
               <surname>Noël</surname>
@@ -43,13 +44,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48917</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48917" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48917"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10135</idno>
@@ -81,10 +81,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Également publié dans le recueil éditorial "Recueil de diverses pièces
+        <p source="Mazarine">Également publié dans le recueil éditorial "Recueil de diverses pièces
           qui ont paru durant les mouvemens derniers de l'année 1649." (BM000059). D'après Hubert
           Carrier, texte paru juste après la mort de Châtillon et de Clanle, à partir du 10 février
           1649 (Bibliothèque Mazarine, Ms. 4682-2, f. 358v).</p>
+        <p source="Moreau">1404. Foudroiement (le) des géants mazarinistes, abîmés sous les ruines
+          du fameux et désolé bourg de Charen- ton. Paris, François Noël, 1649, 8 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +104,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>FOVDROYEMENT
         <lb/>DES

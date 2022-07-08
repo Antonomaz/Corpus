@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2816_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2816_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,7 +49,9 @@
             temps au Roy, à eux-mesmes, &amp; à la France, la liberté tant desirée, &amp; tant
             necessaire de messieurs les Princes.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" notBefore="1651-01-15" notAfter="1651-01-31">seconde quinzaine de
             janvier 1651</date>
@@ -56,13 +59,12 @@
             <measure unit="page" quantity="39"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49001</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49001" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49001"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13816</idno>
@@ -94,10 +96,18 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Par Claude Du Bosc de Montandré, d'après Hubert Carrier, "La Presse de
+        <p source="Mazarine">Par Claude Du Bosc de Montandré, d'après Hubert Carrier, "La Presse de
           la Fronde (1648-1653): les Mazarinades", II, Genève, 1991, p. 53. Texte paru dans le
           seconde quinzaine de janvier 1651 d'après H. Carrier (Bibliothèque Mazarine, Ms 4682-4, f.
           223v).</p>
+        <p source="Moreau">2816. Politique (le) royal faisant voir à Sa Majesté ré gente et à Son
+          Altesse Royale que Mazarin s'en défera infailliblement, supposé qu'il puisse conserver les
+          af fections du roi étant majeur, comme il tâche sans doute de s'y ancrer non moins par
+          leur entremise que par ses propres souplesses ; et les suppliant, par leurs sacrées
+          personnes si chères et si nécessaires à l'État, de préoccuper ce coup infaillible de cet
+          ingrat en le sacri fiant à la haine publique, et rendant à même temps au roi, à eux-mêmes
+          et à la France la liberté tant désirée et tant nécessaire de messieurs les princes. Sans
+          Lieu, 1651,39 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -116,8 +126,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>POLITIQVE
         <lb/>ROYAL

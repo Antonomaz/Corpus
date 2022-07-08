@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3110_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3110_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -41,17 +37,19 @@
           <title source="Moreau">Relation de ce qui s'est passé à Bordeaux le mars 1651 sur la
             liberté de messieurs les princes.</title>
           <pubPlace source="Moreau">Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1651">1651</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Londres</settlement>
+            <settlement ref="geonames:2643743">Londres</settlement>
             <institution>The British Library</institution>
             <repository>General Reference Collection</repository>
             <idno type="cote">8050.g.38.(84.)</idno>
@@ -83,7 +81,20 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">3110. Relation de ce qui s'est passé à Rordeaux le mars 1651 sur la
+          liberté de messieurs les princes. (S. 1., 1651), 4 pages. Curieuse et rare. Les soldats
+          des compagnies bourgeoises portaient à leurs cha peaux des frondes couvertes de rubans
+          bleus, blancs et isabelle. « Il fallut que les enfants goûtassent ce plaisir. Ils firent
+          de leur mouvement une compagnie composée de deux cents , dont le chef n'avoit pas quatorze
+          ans, qui, allant en ordre en queue des com pagnies bourgeoises, chacun sa fronde en la
+          main et une autre en baudrier, firent une salve à leur mode, dont le claquet étoit bien
+          agréable. On vit aussi cinquante chasseurs, montes sur des cou reurs, leur veneur devant
+          qui sonnoit du cor, accompagné d'un guidon qui portoit ces mots : « Nous cherchons le
+          Mazarin, » les quels demandant à chacun par où il passoit , et ne le pouvant ap prendre,
+          après avoir fait une décharge de leurs pistolets, donnè rent les éperons à leurs chevaux
+          pour le suivre dans ces voies ; et crois-je qu'ils sont encore après résolus de le pousser
+          au delà des frontières. »</p>
       </abstract>
       <textClass>
         <keywords>
@@ -92,6 +103,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -107,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>85
         <lb/>o Ao
         <lb/> r T
@@ -146,8 +160,7 @@
         <lb/>.
         <lb/>A
         <lb/> a
-        <lb/>J¬
-        <pb n="2"/>
+        <lb/>J¬ <pb n="2"/>
         <lb/> à la main que cét illuſtre captif fut mis hors de priſon,
         <lb/>on luy promit, mais on ne luy tint pas. Enfin cette in
         <lb rend="¬" break="no"/>juſtice qui auoit porté ſes premiers coups ſur les Borde
@@ -179,8 +192,7 @@
         <lb/>de leurs Magiſtrats, parurent adjuſtez de galans, de plu
         <lb rend="¬" break="no"/>mes &amp; de frdundes à la teſte de leurs troupes, les ſoldats à
         <lb rend="¬" break="no"/>l’exemple des Chefs, ſe piquerent de cette meſme ju
-        <lb rend="¬" break="no"/>¬
-        <pb n="3"/>
+        <lb rend="¬" break="no"/>¬ <pb n="3"/>
         <lb/>ſteſſe, on ne voyoit ſur leurs chappeaux que frondes
         <lb/>couuertes de rubans bleu, blanc &amp; yſabelſe, chaque
         <lb/>compagnie prit ſa plaee en la grand’ruë du Chappeau
@@ -214,8 +226,7 @@
         <lb rend="¬" break="no"/>uers deſquelles on voyoit re luire inceſſamment vn feu
         <lb rend="¬" break="no"/>blanc &amp; bleu, qui lura prés d’vn quart d’heure, &amp; iuſ
         <lb rend="¬" break="no"/>¬,
-        <lb/>ras?
-        <pb n="4"/>
+        <lb/>ras? <pb n="4"/>
         <lb/>ques à ce qu’vn nauire qui fait les armes de Paris pa
         <lb rend="¬" break="no"/>roiſſant enflammeé, s’attacha à vne ſtatuë couuerte de
         <lb/>peau de renards, &amp; la conſommant en fit ſortir grand

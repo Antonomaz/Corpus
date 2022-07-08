@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau886_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau886_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -55,13 +56,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49916</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49916" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49916"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12724</idno>
@@ -93,11 +93,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions. À Paris : par Alexandre Lesselin avec erreur de
+        <p source="Mazarine">Autres éditions. À Paris : par Alexandre Lesselin avec erreur de
           millésime à l'adresse ("M. DC. LXIX.") (BM01010) ; par les imprimeurs &amp; libraires
           ordinaires du roi (BM01014) ; par la veuve Antoine Coulon (Moreau, n° 888). À Rouen, par
           David Du Petit Val, et Jean Viret (BM01009). Signé "Du Tillet". D'après Hubert Carrier,
           texte paru le 21 mars 1649 (Bibliothèque Mazarine, Ms. 4682-2, f. 150v).</p>
+        <p source="Moreau">886. Déclaration (la) de monseigneur le prince de Conty et de messieurs
+          les généraux, enregistrée en parle- ment, pour l’exécution de l’arrêt du huitième janvier
+          dernier contre le cardinal Mazarin, pour le so ulagement du peuple et la paix générale. Du
+          samedi 20 mars 1649. Paris, Alexandre Lesselin, 1649, 4 pages. Il y en a deux autres
+          éditions : Déclaration de ros généraux, etc.; et Déclaration faite au Parlement par
+          monseigneur le prince de Conty, ete. La dernière est l’édition officielle.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -114,8 +120,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA
         <lb/>DECLARATION
         <lb/>DE MONSEIGNEVR
@@ -133,7 +138,8 @@
         <lb/>Chez ALEXANDRE LESSELIN, ruë de la vieille
         <lb/>Boucherie, prés le pont S. Michel.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec permißion</imprimatur>.<pb n="10"/>
+        <lb/>
+        <imprimatur>Auec permißion</imprimatur>.<pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

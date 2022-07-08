@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Labadie284_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Labadie284_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,13 +49,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49157</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49157" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49157"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13549</idno>
@@ -86,8 +86,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers. Attribué à Guillaume Sassier par Hubert Carrier (Bibliothèque
+        <p source="Mazarine">En vers. Attribué à Guillaume Sassier par Hubert Carrier (Bibliothèque
           Mazarine, Ms 4682-4, f. 152v). D'après H. Carrier, texte paru en octobre 1650.</p>
+        <p source="Labadie">284. PANÉGYRIQUE de Monseigneur de Mareschal de l'Hospital, Gouverneur
+          de Paris, sur la Paix générale de Bordeaux. A Paris, chés Guillaume Sassier, Imprimeur et
+          Libraire ordinaire du Roy. S. d., 8 pages. Pièces en vers non datées, la première adressée
+          à Mgr le Mareschal et la seconde à Madame la Mareschale. Bibl. de Bordx., 8739-29 et Bibl.
+          Mazarine, 13549.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -105,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>PANEGYRIOVE
         <lb/>DE
         <lb/>MONSEIGNEVR
@@ -269,8 +273,7 @@
         <l>
           <lb/>lli</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>E </l>
         <l>
@@ -343,8 +346,7 @@
         <l>
           <lb/>1.</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>A</l>
         <l>
@@ -488,8 +490,8 @@
         <l>
           <lb/>Car ce nombre parfait vous rend ſans paralelle</l>
         <l>
-          <lb/>Souueraine des curs; prudente, bonne &amp; belle.’</l></p>
-
+          <lb/>Souueraine des curs; prudente, bonne &amp; belle.’</l>
+      </p>
     </body>
   </text>
 </TEI>

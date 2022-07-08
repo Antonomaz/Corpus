@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3141_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3141_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -27,7 +28,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14784"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Relation de tout ce qui s'est fait et passé dans la levée du
             siege de Miradoux. Par monsieur le Prince.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
@@ -42,13 +43,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49226</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49226" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49226"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12180</idno>
@@ -80,7 +80,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">3141. Relation de tout ce qui s'est fait et passé dans la levée du siège
+          de Miradoux par monsieur le Prince. Jouxte la copie imprimee à Bordeaux. Paris, veuve
+          Marette, 1652, 7 pages. Ici la Fronde avoue la levée du siège; mais elle cherche à en
+          atténuer l'effet.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,8 +103,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>RELATION
         <lb/>DE
         <lb/>TOVT CE QUI

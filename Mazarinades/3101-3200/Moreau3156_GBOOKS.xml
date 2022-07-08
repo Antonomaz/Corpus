@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3156_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3156_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -54,11 +50,11 @@
             <measure unit="page" quantity="10"/>
           </extent>
           <note type="format">in-4 220 mm</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309712</idno>
@@ -90,8 +86,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Recueil factice</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Recueil factice</p>
+        <p source="Moreau">31 56. Relation des plaisantes singeries du prétendu Par- lementde
+          Pontoise, avec l'extrait du premier arrêt qu'il a donné pour l'éloignement de Mazarin.
+          Paris, Pierre Grandin, 1652, 10 pages. Même pièce que Y Arrêt de la tour de Parlement de
+          Pontoise.. du U août 16K2.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,6 +100,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -115,8 +119,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>RELATION
         <lb/>D T
         <lb/>DES PLAISANTES SINGERIES
@@ -128,8 +131,7 @@
         <lb/> A PARIS,
         <lb/>Chez Piere Gnin, ruë de la Calandre
         <lb/>M. DC. LII.
-        <lb/> ¬¬
-        <pb n="2"/>
+        <lb/> ¬¬ <pb n="2"/>
         <lb/> !
         <lb/>1
         <lb/>1
@@ -141,8 +143,7 @@
         <lb/>
         <lb rend="¬" break="no"/> -
         <lb rend="¬" break="no"/>!
-        <lb/>na J
-        <pb n="3"/>
+        <lb/>na J <pb n="3"/>
         <lb/>3
         <lb/>AAAb
         <lb/>e S aée: e ae é8ée
@@ -171,8 +172,7 @@
         <lb rend="¬" break="no"/>quee aaime; parce que l’effet dbit eſtre tou
         <lb rend="¬" break="no"/>¬-..
         <lb rend="¬" break="no"/>A ij
-        <lb/> ¬.aaa¬-aa. ſ
-        <pb n="4"/>
+        <lb/> ¬.aaa¬-aa. ſ <pb n="4"/>
         <lb/>4
         <lb/>ſiours de la nature de ſa cauſe. ſelon le Ptinee
         <lb/>de l’Accademie Scolaſtique.
@@ -203,8 +203,7 @@
         <lb/> faict dont eſt quetion, &amp; ne faiſoit pas la veri
         <lb rend="¬" break="no"/> table
         <lb rend="¬" break="no"/>¬
-        <lb rend="¬" break="no"/>¬
-        <pb n="5"/>
+        <lb rend="¬" break="no"/>¬ <pb n="5"/>
         <lb/>able eonclufion de l’affaire? &amp; puis que font ile
         <lb/>en faiſant cela que ce que Meſſieurs du Parlemé
         <lb/>de Paris ont deſia fait pluſieurs fois, auec vn iu
@@ -233,8 +232,7 @@
         <lb/> Coment eſt-il poſfible que vous deman
         <lb rend="¬" break="no"/>diez l’eoſloignemeont d’vn monſte qu vous
         <lb rend="¬" break="no"/>¬L.A¬.
-        <lb rend="¬" break="no"/>d¬s,,
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>d¬s,, <pb n="6"/>
         <lb/>adrez auec tant de paſſion, &amp; que vous encen
         <lb rend="¬" break="no"/>ſez auec tant d’idolatrie? Comment eſt il poſſi
         <lb rend="¬" break="no"/>ble que vous vouliez perdre de veuë̈ le Dieu
@@ -263,8 +261,7 @@
         <lb/>donnent, &amp; qu’elles ne fuſſent pas ſi funeſtes
         <lb/>qu’elles ſont à toute la France;, ie ne vous re
         <lb rend="¬" break="no"/>..,¬¬,a¬,, ¬¬¬¬2
-        <lb rend="¬" break="no"/>¬. A
-        <pb n="7"/>
+        <lb rend="¬" break="no"/>¬. A <pb n="7"/>
         <lb/>prendrois qu’en goguenardant &amp; qu’e faiſaint
         <lb/>des ſingeries comme yous: Mais ie ne ſçaurois
         <lb/>m’amuſer à railler en des choſes ouù il y va de
@@ -292,8 +289,7 @@
         <lb/>veritable Parlement de Parisa deé́ ja fait, ie luy
         <lb/>veux donaer la coppie de l’arreſt que vous auez.
         <lb/>prononcé en la premiere ſeance de voſtre pre
-        <lb rend="¬" break="no"/>2.¬¬.,.
-        <pb n="8"/>
+        <lb rend="¬" break="no"/>2.¬¬.,. <pb n="8"/>
         <lb/>tendu Parlement,afin qu’il ſoir iuge de voſtre
         <lb/>beau procedé auſſibien que de vos ſingeries.
         <lb/>AnAAAtum
@@ -320,8 +316,7 @@
         <lb/>texte, dont ons’eſt leruy pourn troubler le.
         <lb/>Royaume, &amp; eſmouuoir les peuples; Le
         <lb/> Parlement
-        <lb/>. a
-        <pb n="9"/>
+        <lb/>. a <pb n="9"/>
         <lb/> 53
         <lb/>Parlement auoit creu eſtre obligé defaire
         <lb/>des remonſtrances pour ſon eſloignement,
@@ -349,8 +344,7 @@
         <lb/>aux miſeres publiques, &amp; ſans conſiderer
         <lb/>la conduite de ceux dont ledit Seigneur
         <lb/> peut auoir ſujet d’ſtre mal content; deſa
-        <lb rend="¬" break="no"/>¬¬¬
-        <pb n="10"/>
+        <lb rend="¬" break="no"/>¬¬¬ <pb n="10"/>
         <lb/>10
         <lb/>buſer les peuples, &amp; faire ceſſer tous pre
         <lb rend="¬" break="no"/>textes en accordant aux ſupplications reſ

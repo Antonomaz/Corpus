@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2032_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2032_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -49,13 +50,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50221</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50221" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50221"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11297</idno>
@@ -87,12 +87,18 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Fausse lettre. 2 états de la p. 7 : fin ligne 14 "l'en-" (état A) /
+        <p source="Mazarine">Fausse lettre. 2 états de la p. 7 : fin ligne 14 "l'en-" (état A) /
           "len-" (état B). Signée "Louis de Bourbon". Par Claude Du Bosc de Montandré, d'après
           Hubert Carrier, "La Presse de la Fronde (1648-1653) : les Mazarinades", t. 2, Genève,
           1991, p. 54. Lettre datée "de Nojan, le premier avril 1652". D'après H. Carrier suivant
           Dubuisson-Aubenay, texte paru le 4 avril 1652 (Bibliothèque Mazarine, Ms. 4682-3, f.
           224v).</p>
+        <p source="Moreau">2032. Lettre de monsieur le Prince à Son Altesse Royale sur le sujet de
+          son arrivée aux troupes de messieurs les ducs de Beaufort et de Nemours. Paris, Nicolas
+          Vivenet (sic), 1652,8 pages. Datée de Nojan (sic), le 1er avril 1652, et signée Louis de
+          Bourbon. Cette lettre est-elle bien authentique? Le prince y dit qu'il ne s'est rendu à
+          l'armée que sur une invitation des officiers qui, ap prenant son passage, lui envoyèrent
+          un courrier; et cela n'est pas vrai. Vivenay pourtant était son imprimeur.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -114,8 +120,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE
         <lb/>DE MONSIEVR
         <lb/>LE PRINCE

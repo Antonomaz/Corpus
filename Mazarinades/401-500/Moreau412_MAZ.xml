@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau412_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau412_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -53,13 +54,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49259</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49259" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49259"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15436-22</idno>
@@ -91,9 +91,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions : Paris, veuve Musnier, 1649 (BM01058) ; publié avec
+        <p source="Mazarine">Autres éditions : Paris, veuve Musnier, 1649 (BM01058) ; publié avec
           même adresse et même date et portant au titre "Espernon" au lieu de "Argençon", BM01059) ;
           Bordeaux, J. Mongiron Millanges, 1649 (Labadie, n° 113). Contresigné "Haumont".</p>
+        <p source="Moreau">412. Articles de la paix, accordés entre messieurs du parlement de
+          Bordeaux et monsieur d'Argençon (sic). Paris, veuve Musnier, 1649 , 6 pages. Le traité est
+          du 1°" mai 1649.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -111,8 +114,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>ARTICLES
         <lb/>DE LA PAIX,
         <lb/>Accordée entre Meſſieurs du
@@ -123,7 +125,8 @@
         <lb/>A ORLEANS,
         <lb/>Chez GILLES HOTOT, Imprimeur du Roy,
         <lb/>de ſon Alteſſe Royale &amp; de la Ville. 1649.
-        <lb/><imprimatur>AVEC PERMISSION</imprimatur>
+        <lb/>
+        <imprimatur>AVEC PERMISSION</imprimatur>
         <pb n="8"/>
         <pb n="9"/>
         <lb/>Articles de la Pix, accordée entre Meſſieurs du Par¬

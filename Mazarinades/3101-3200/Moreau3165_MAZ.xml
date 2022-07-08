@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3165_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3165_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,20 +32,21 @@
           <title source="Mazarine">Relation escrite de Poitiers, du XX. janvier M.DC.LII. Contenant
             les avantages emportez sur l'armée de monsieur le Prince par l'armée du Roy.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-01-26">à partir du 26 janvier 1652</date>
           <extent>
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49859</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49859" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49859"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12118</idno>
@@ -76,13 +78,18 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Célestin Moreau, texte relatif au combat de
+        <p source="Mazarine">D'après Célestin Moreau, texte relatif au combat de
           Saint-André-de-Cubzac et à l'affaire de la "dame de Jonsac". Autre édition relatant ces
           événements sous une forme moins officielle, d'après C. Moreau, publiée sous le titre
           "Recit veritable de tout ce qui s'est fait &amp; passé a l'arrivée du cardinal Mazarin,
           vers sa Majesté. Avec la reception qui luy a esté faite." (BM00956). D'après Hubert
           Carrier, texte paru à partir du 26 janvier 1652 (Bibliothèque Mazarine, Ms. 4682-5, f.
           91v).</p>
+        <p source="Moreau">3165. Relation escrite de Poictiers,du xx janvier mdclii, contenant les
+          avantages emportés sur l'armée de M. le Prince par l'armée du roy. Paris, par les
+          imprimeurs et libraires ordinaires du roy, 1652, 6 pages. Combat de Saint-André. Affaire
+          de la dame de Jonsac. Voir le Récit véritable de tout ce qui s'est fait et passé à
+          l'arrivée du cardi nal Muzarin vers Sa Majesté , etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>RELATION
         <lb/>ESCRITE
         <lb/>DE POITIERS.
@@ -118,7 +124,8 @@
         <lb/>A PARIS,
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires du
         <lb/>M. DC. LII.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

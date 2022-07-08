@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau839_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau839_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,7 +43,9 @@
             contre les tyrans, où leur defense estoit un crime d'Estat, &amp; où l'on ne menaçoit
             que de potences &amp; de gibets ceux que le zelle interressoit à leur querelle.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" notBefore="1651-02-15" notAfter="1651-02-28">seconde quinzaine de
             février 1651</date>
@@ -50,13 +53,12 @@
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48989</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48989" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48989"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12702</idno>
@@ -88,10 +90,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En forme de lettre ou d'épître, dédicatoire d'après Hubert Carrier
+        <p source="Mazarine">En forme de lettre ou d'épître, dédicatoire d'après Hubert Carrier
           (Bibliothèque Mazarine, Ms 4682-2, f. 123v). Par Claude Du Bosc de Montandré, d'après
           Célestin Moreau. Texte paru dans la seconde quinzaine de février 1651 d'après
           H.Carrier.</p>
+        <p source="Moreau">839. Courtisan (le) désintéressé ou le Partisan des op- pressés, venant
+          rendre compte, à messieurs les princes, de la constante fidélité qu'il a eue pour ne
+          jamais démordre de leur partie, même en un temps où leurs éloges étoient des invectives
+          contre les tyrans, où leur défense étoit un crime d’État, et où l’on ne menaçoit que de
+          potences et de gibets ceux que le zèle intéressoit à leur querelle. Paris, 4651 , 12
+          pages. Dubosc Montandré fait, ici, parade d’un désintéressement qu’on ne lui a guère
+          reconnu, 1l se vante d’avoir refusé une pension de Mazarin. Est-ce bien vrai?</p>
       </abstract>
       <textClass>
         <keywords>
@@ -108,8 +117,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>COVRTISAN
         <lb/>DESINTERESSE

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2544_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2544_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -28,7 +29,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14950"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">La nouvelle deffaite de l'infanterie du mareschal de Turenne
             devant Estampes. Par Mr le comte de Tavannes. Le mercredy cinquiéme juin 1652.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
@@ -44,13 +45,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49137</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49137" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49137"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13533</idno>
@@ -82,8 +82,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après H. Carrier, texte paru à partir du 7 juin 1652 (Bibliothèque
+        <p source="Mazarine">D'après H. Carrier, texte paru à partir du 7 juin 1652 (Bibliothèque
           Mazarine, Ms. 4682-4, f. 97v). </p>
+        <p source="Moreau">2544. Nouvelle ( la) défaite de l'infanterie du mareschal de Turenne
+          devant Estampes par monsieur le comte de Tavannes, le mercredi cinquiesme juin 1652.
+          Paris, André Chouqueux, 1652, 7 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,8 +106,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA NOVVELLE
         <lb/>DEFAITE
         <lb/>DE L’INFANTERIE
@@ -116,7 +118,8 @@
         <lb/>A PARIS,
         <lb/>Chez ANDRE CHOVQVEVX, ruë S. André
         <lb/>M. DC. LII.
-        <lb/><imprimatur>Auec Permißion de son Al. Royale</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Permißion de son Al. Royale</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>I
         <lb/>LA NOVVELLE DEFAITE

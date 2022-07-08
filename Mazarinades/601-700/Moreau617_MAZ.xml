@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau617_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau617_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -63,13 +64,12 @@
             <measure unit="page" quantity="32"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50079</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50079" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50079"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12603</idno>
@@ -101,13 +101,24 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">4 états du 2e feuillet du cahier signé F : p. 23, l. 19 "empruntés"
+        <p source="Mazarine">4 états du 2e feuillet du cahier signé F : p. 23, l. 19 "empruntés"
           (états A et B) / "empruntée" (états C et D), fin l. 27 "qui l'y" (A et B) / "qui l'y à" (C
           et D) ; p. 24, fin l. 24/ début l. 25 "d'v-/ne parfaite" (A et C) / "d'vne/parfaite" (B et
           D). Autre édition : Paris, Pierre Le Muet, [1652], 39 p. (BM01130). Écrite par Claude Du
           Bosc de Montandré, d'après Célestin Moreau. Texte paru le 20 juillet 1652 d'après Hubert
           Carrier au vu de la note ms. contemporaine sur l'exemplaire de la Bibliothèque Mazarine
           coté 4° 19126-22 (Bibliothèque Mazarine, Ms. 4682-2, f. 23v).</p>
+        <p source="Moreau">617. Caducée (le)d'État, faisant voir par la raison et par l’histoire :
+          1° Que nous ne pouvons pas espérer la paix pendant que la reine sera dans le conseil ; 2°
+          Que l’en- trée du conseil est interdite à la reine par les lois de l’État ; 3° Que la
+          reine est obligée de se retirer dans son apanage , pour ses seuls intérêts et pour son
+          hon- neur; 4° Qu’on ne peut point dire que Mazarin est chassé pendant que la reine sera
+          dans le conseil ; 5° Que les tendresses de fils ne doivent faire aucune impression dans
+          l’esprit du roi, pour l’obliger à rete- nir sa mère dans le conseil, si sa présence y est
+          con- traire au repos de l’État ; 6° Et que si la reine aime son fils, elle doit consentir
+          à cette retraite sans aucune résistance. Paris , Pierre Le Muet, 1652 , 32 pages. Du 20
+          juillet 1652. C’est une des pièces de Dubosc Montandré. Mailly la cite , p. 62 du
+          cinquième volume de l’Esprit de la fronde.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -127,8 +138,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>CADVCEE
         <lb/>D’ESTAT,

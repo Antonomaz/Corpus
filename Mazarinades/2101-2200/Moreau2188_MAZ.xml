@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2188_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2188_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,20 +36,21 @@
             gouverneur de la ville de Paris, sur la reduction de la ville de Xaintes à son
             obeïssance. De Blois le 16. jour de mars, 1652.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" when="1652-03-18">18 mars 1652</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49227</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49227" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49227"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11409</idno>
@@ -80,8 +82,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Texte paru le 18 mars 1652, d'après Hubert Carrier (Bibliothèque
+        <p source="Mazarine">Texte paru le 18 mars 1652, d'après Hubert Carrier (Bibliothèque
           Mazarine, Ms. 4682-3, f. 274v).</p>
+        <p source="Moreau">2188. Lettre du roi envoyée à monsieur le maréchal de Lhopital,
+          gouverneur de la ville de Paris, sur la réduction de la ville de Xaintes à son obéissance.
+          De Blois, le 16° jour de mars 1652. Paris, par les imprimeurs et libraires ordinaires du
+          roi, 1652, 4 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,8 +105,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE
         <lb/>DV ROY
         <lb/>EnuoyÉe à Monſieur le Mareſchal de
@@ -111,7 +116,8 @@
         <lb/>A PARIS,
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires du Roy.
         <lb/>M. DC. LII.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>MON COVSIN, Dés que ie ſceus l’entrée des

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1suppl100_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1suppl100_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -45,13 +46,12 @@
             <measure unit="page" quantity="31"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49009</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49009" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49009"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10472</idno>
@@ -83,12 +83,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Paraphrase morale de la lettre du roi au Parlement sur le même sujet.
+        <p source="Mazarine">Paraphrase morale de la lettre du roi au Parlement sur le même sujet.
           Texte paru à la mi-juillet 1650 d'après Hubert Carrier (Bibliothèque Mazarine, Ms. 4682-2,
           f. 239v). Deux états (A/B) : p. 8 l. 2, "enchaisnons"/"enchaisnōs" ; p. 24 l. 12,
           "coupable"/"coupables". Autre édition publiée par Sébastien Martin, 30 p. (Moreau, n°
           1120) ; une édition "jouxte la copie imprimee à Paris chez Sébastien Martin", 28 p., une
           édition à Lyon chez Jean-Aymé Candy,31 p. (Moreau, 1er supplément, n° 100).</p>
+        <p source="Moreau">100. Discours et considérations politiques et morales sur la prison des
+          princes, etc. [1120.] Il y en a de la même date, chez le même libraire, une autre édi tion
+          en 31 pages ; mais la différence n'est que dans la disposition du texte. Une troisième
+          édition, de 31 pages également, a ete publiée à Lyon, chez Jean-Aymé Candy.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -108,8 +112,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>DISCOVRS
         <lb/>ET
         <lb/>CONSIDERATIONS

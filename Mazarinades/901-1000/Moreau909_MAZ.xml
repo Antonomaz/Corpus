@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau909_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau909_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -45,13 +46,12 @@
             <measure unit="page" quantity="13"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49965</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49965" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49965"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14325</idno>
@@ -83,7 +83,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mention de l'enregistrement par le parlement de Paris le 16 mai 1650
+        <p source="Mazarine">Mention de l'enregistrement par le parlement de Paris le 16 mai 1650
           signée "Guyet". 2 états : titre sans le "R" à "Roy" (état A) / avec le "R" (état B) ; p.
           10, l. 2 "depuis tan" (A) / "depuis tant" (B) ; p. 11, l. 6 "eur" (A) / "leur" (B). Autres
           éditions repérées par Célestin Moreau et Hubert Carrier (Bibliothèque Mazarine,Ms 4682-2,
@@ -93,6 +93,11 @@
           du vray journal du Parlement ; contenant ce qui s'y est fait depuis la saint Martin mil
           six cens quarante-neuf, jusques à Pasques 1651" (BM01061). Contresigné "De Guenegaud".
           Acte daté de Paris le 9 mai 1650. - Texte paru à Paris le 18 mai d'après H. Carrier.</p>
+        <p source="Moreau">909. Déclaration du roi contre madame la duchesse de Longueville, les
+          sieurs duc de Bouillon , maréchal de Turenne, prince de Marsillac, et leurs adherents
+          véri- fiée en parlement, le 16 mai 1650. Paris, Antome Estienne, 1650, 6 pages. Hl y en a
+          une édition jouxrte la copie imprimée à Paris, a Haye, Michei Staël, 1650, 10 pages non
+          chiffrées.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -117,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>DECLARATION
         <lb/>DV ROY.
         <lb/>CONTRE MADAME LA DVCHESSE
@@ -126,15 +130,15 @@
         <lb/>Mareſchal de Turenne, Prince de Marſillac,
         <lb/>&amp; leurs adherans.
         <lb/>Verifee en Parlement le ſeizieme May mil fix
-        <lb/>cens cinquante.
-        <figure type="decoration"/>
+        <lb/>cens cinquante. <figure type="decoration"/>
         <lb/>A PAR1S,
         <lb/>Par ANTOINE ESTIENNE , Premier Imprimeur &amp;
         <lb/>Libraire ordinaire du Roy, de la Cour de Parlement,
         <lb/>&amp; du Clergé de France,
         <lb/>Ruë S. Iacques, au College Royal, deuant S. Penoit,
         <lb/>M. DC. L.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſfé</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſfé</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>
@@ -454,8 +458,7 @@
         <lb/>inqueante.
         <lb/>Signé, Gv ar.
         <lb/>Collaionné à l’Original par moy Conſeiller
-        <lb/>Secretaire du Roy &amp; de ſes Finances.
-      </p>
+        <lb/>Secretaire du Roy &amp; de ſes Finances. </p>
     </body>
   </text>
 </TEI>

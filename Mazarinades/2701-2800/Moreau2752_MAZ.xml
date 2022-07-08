@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2752_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2752_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -41,7 +42,9 @@
             justifier, sans erreur, les armes de l'un ou l'autre des deux partis, qui divisent
             aujord'huy [sic] tout cét Estat…</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1651-12-21" notAfter="1651-12-31">dernière semaine de
             décembre 1651</date>
@@ -49,13 +52,12 @@
             <measure unit="page" quantity="15"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50222</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50222" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50222"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10235</idno>
@@ -87,7 +89,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Avant-propos au lecteur au verso de la p. de titre. Autre édition :
+        <p source="Mazarine">Avant-propos au lecteur au verso de la p. de titre. Autre édition :
           composition typographique différente, sans adresse ni date, 20 p. (BM01298). Texte repris
           et publié sous le titre : "L'homme d'Estat. Faisant voir par l'histoire &amp; la raison
           que la Reine ne doit estre plus dans le Conseil. Où les desinteressez verront clair pour
@@ -97,6 +99,12 @@
           d'après Célestin Moreau, confirmé par Hubert Carrier (Bibliothèque Mazarine, Ms 4682-4, f.
           184v). Texte paru la 4e semaine de décembre 1651, d'après H. Carrier (Bibliothèque
           Mazarine, Ms 4682-4, f. 184v-185).</p>
+        <p source="Moreau">2752. Philosophe (le) d'État sur la majorité des rois, prescrite à l'âge
+          de 14 ans par Charles V, dit le Sage, où les désintéressés verront clair pour justifier
+          sans erreur les armes de l'un ou l'autre des deux partis qui divisent aujourd'huy tout cet
+          État. Non ubi rex est, sed ubi regia autoritas, ib jus. Bol., lib. 1", Conf. (S. l. n.
+          d.), 20 pages. Dubosc Montandré. Ce pamphlet a été publié aussi sous le titre de l'Homme
+          d'État, etc. 344 BlBLlOGRAPHIE [PIÈCE]</p>
       </abstract>
       <textClass>
         <keywords>
@@ -117,8 +125,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>PHILOSOPHE
         <lb/>D’ESTAT.

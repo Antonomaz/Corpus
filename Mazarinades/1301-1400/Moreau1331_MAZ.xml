@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1331_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1331_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,20 +32,21 @@
           <title source="Mazarine">Exorcisme du D. Mazarin, dans lequel il est conjuré par le
             Parlement et le Clergé à sortir du corps de l'Estat.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-05-04">4 mai 1649</date>
           <extent>
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49356</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49356" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49356"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10927</idno>
@@ -76,12 +78,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. Deux états : état A, p. 4, première strophe dite
+        <p source="Mazarine">En vers octosyllabes. Deux états : état A, p. 4, première strophe dite
           par le "clergé", sans "démon" à la suite de la phrase "or bien donc ignorant..." ; état B
           avec "démon". Autre édition : Paris, 1649, 8 p. (BM00424). - Texte repris en 1651 sous le
           titre "Le diable exorcizé ou Mazarin chassé de France par le Parlement, &amp; le Clergé."
           (BM00512) à partir de l'état A de la présente édition. Texte paru le 4 mai 1649 d’après
           Hubert Carrier (Mazarine, Ms 4682-2, f. 317v).</p>
+        <p source="Moreau">1331. Exorcisme du D. Mazarin, dans lequel il est conjuré par le
+          Parlement et le clergé à sortir du corps de l’État. (S. 1.), 1649, 12 pages. Il y en à une
+          autre édition de 8 pages, qui ne diffère de celle-ci qu’en ce qu’elle est imprimée en
+          caractères plus fins.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,8 +104,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>EXORCISME
         <lb/>DV D.
         <lb/>MAZARIN
@@ -190,11 +195,9 @@
         <l>
           <lb/>Et que l’Eau beniſte n’a pu</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>Chaſſer ce Diable corrompu</l>
         <l>
@@ -683,8 +686,7 @@
         <l>
           <lb/>A fait que la Diuinité</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <pb n="20"/>
         <l>
           <lb/>a-eee</l>

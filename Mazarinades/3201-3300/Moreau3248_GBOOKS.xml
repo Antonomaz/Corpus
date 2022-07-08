@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3248_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3248_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -39,7 +35,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://books.google.fr/books?id=erTdWeihwI8C&amp;hl=fr"/>
-          <author role="attributed_author" source="BL">
+          <author role="alleged_author" source="BL">
             <persName>
               <forename>Louis</forename>
               <surname>La Trémoille (de)</surname>
@@ -50,17 +46,19 @@
             Noir-montier (sic), et la prise du sieur de Saint- Etienne fils, gouverneur, avec le
             nombre de ceux qui ont été tués et blessés.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau">Sans Date</date>
           <extent>
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Londres</settlement>
+            <settlement ref="geonames:2643743">Londres</settlement>
             <institution>The British Library</institution>
             <repository>General Reference Collection DRT Digital Store</repository>
             <idno type="cote">8050.g.38.(41.)</idno>
@@ -92,7 +90,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">3248. Relation véritable de tout ce qui s'est fait et passé à la prise
+          des châteaux de Linchamp et Château Regnault , proche Charleville, par le marquis de Noir-
+          montier (sic), et la prise du sieur de Sai nt- Etienne fils, gouverneur, avec le nombre de
+          ceux qui ont été tués et blessés. Paris, Guili. Sassier, Sans Date, 6 pages. Rare. Les
+          deux expéditions avaient moins pour but de prendre les châteaux que les gouverneurs. Elles
+          doivent être de 1652.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,6 +105,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -116,8 +124,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>A¬ -
         <lb/>1
         <lb/>RELATION
@@ -141,8 +148,7 @@
         <lb/> ueeneurs des Chaſteaux Regnaule &amp;
         <lb/>iuchamp, &amp; ces ordres ayans etéadeſſenaux
         <lb/>ſieus Marquis de Noiu moriet, Fſber &amp;e Mon!
-        <lb/>tegu, ilfur’ vefolu que l’on acberoit de ſe ſaiſe
-        <pb n="2"/>
+        <lb/>tegu, ilfur’ vefolu que l’on acberoit de ſe ſaiſe <pb n="2"/>
         <lb/>ſ ’
         <lb/>.
         <lb/>1
@@ -173,8 +179,7 @@
         <lb/>egiaent de caualerie de Noinaontier, &amp; rois
         <lb/>cens fancaſſns insz des ganiſonsde Charleuils.
         <lb/>le, Aocroy, Meieres, Donchey&amp; Sedaa, pou
-        <lb/>ſe rendre aux enuirons deChaſtas-Regnaul¬,3
-        <pb n="3"/>
+        <lb/>ſe rendre aux enuirons deChaſtas-Regnaul¬,3 <pb n="3"/>
         <lb/>1
         <lb/>4
         <lb/>auſi toſt paes que lé? doue ſoldaus y pour
@@ -205,8 +210,7 @@
         <lb/>ſepmes&amp; leurs enfans, &amp; de les faire marchee;
         <lb/>an, afip q es Soldats les voyans, la crainte
         <lb/>¬21
-        <lb/>.1
-        <pb n="4"/>
+        <lb/>.1 <pb n="4"/>
         <lb/>1
         <lb/>1
         <lb/>1
@@ -237,8 +241,7 @@
         <lb/>Ie peuple auoit auerſron de ſhicrimandeaent.?
         <lb/>Ja meſme eboſe quls eſtoit pdiquee pourſs
         <lb/>aque de Chaſeau Regnaulé; ſt ireneore?
-        <lb/> Linchamp
-        <pb n="5"/>
+        <lb/> Linchamp <pb n="5"/>
         <lb/>-Liachamp à l’egarddefemmes des ſoldats, que
         <lb/>l’on obligea d- crier à leuts mris de rerndre la
         <lb/>plac, &amp; de-ſe ſouuenir du mauuais traitélent
@@ -265,8 +268,7 @@
         <lb/>leur tiut parolle de ce qu’on leur promettoit
         <lb/>pour leurs monſtres; ce quileur fut accordeé, &amp;
         <lb/>omme les portes furent ouuertes, ledit ſieur
-        <lb/>de Saint Eſtienne Pere, trouua moyen de
-        <pb n="6"/>
+        <lb/>de Saint Eſtienne Pere, trouua moyen de <pb n="6"/>
         <lb/>ſortir ſans eſtre reeogeu, &amp; de ſe ſauuar la f
         <lb rend="¬" break="no"/>ueue des hois qui ſont dans le pays.
         <lb/>Cette Place eſt excrémement bonne, pout

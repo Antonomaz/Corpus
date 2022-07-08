@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2217_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2217_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -41,18 +37,19 @@
           <title source="Moreau">Lettre écrite de Bordeaux sur le Chapeau rouge, avec la
             Réponse.</title>
           <pubPlace>Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1651">1651</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Londres</settlement>
+            <settlement ref="geonames:2643743">Londres</settlement>
             <institution>The British Library</institution>
             <repository/>
             <idno type="cote">General Reference Collection 8050.g.38.(82.)</idno>
@@ -84,7 +81,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2217. Lettre écrite de Bordeaux sur le Chapeau rouge, avec la
+          Réponse.Sans Lieu, 1651,8 pages. La lettre est signée : l'Hôte du Chapeau rouge de
+          Bordeaux; la réponse : l'Hôte du Chapeau rouge de la rue Saint-Honoré. J'ai dit la réponse
+          pour me conformer au titre. Le fait est que le Chapeau rouge de Paris envoie à son
+          confrère, pour toute ré ponse, les Très-humbles remontrances à nos seigneurs du Parlement
+          pour les cardinaux françois.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -93,6 +96,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -108,14 +114,12 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>1
         <lb/>LETTRE EScRITE
         <lb/>BORDE A VX
         <lb/> ouaon
-        <lb/>M. DC LI.
-        <pb n="2"/>
+        <lb/>M. DC LI. <pb n="2"/>
         <lb/>.,
         <lb/>rl
         <lb/>
@@ -151,8 +155,7 @@
         <lb/>ona, Google
         <lb/>!
         <lb/>
-        <lb/>l
-        <pb n="3"/>
+        <lb/>l <pb n="3"/>
         <lb/>3.
         <lb/>enfge
         <lb/>e
@@ -186,8 +189,7 @@
         <lb/>auſsi les François, pour les eſtrangers baſte chacun trouue el
         <lb rend="¬" break="no"/>fort raiſonnable &amp; fore iuſte, ca il eſt hors de propos que des
         <lb rend="¬" break="no"/>arangergaepeatle uez auaat dnsmos afaires&amp; parieu
-        <lb rend="¬" break="no"/>-
-        <pb n="4"/>
+        <lb rend="¬" break="no"/>- <pb n="4"/>
         <lb/> 4
         <lb/>lierement dans les plus importantes, &amp; les plus ſecrettes du Ro
         <lb rend="¬" break="no"/>yaume, &amp; l’on attendauec mpatience cy auſsi ben quepatto¬!
@@ -246,8 +248,7 @@
         <lb/> de
         <lb/>2L .ae
         <lb rend="¬" break="no"/>5l
-        <lb/>.
-        <pb n="5"/>
+        <lb/>. <pb n="5"/>
         <lb/> ¬ ¬¬,
         <lb/>oſlre Parlement fera gagner les Menuiſiers &amp; les Brouilleursj
         <lb/>d’ocre pour faire d’autres Enſeignes, il ny aura que les Chape
@@ -289,8 +290,7 @@
         <lb/>aaos pour les luafs d Auigo, qui ſoieas noirs ou rouges il
         <lb/>
         <lb/>N
-        <lb/> .
-        <pb n="6"/>
+        <lb/> . <pb n="6"/>
         <lb/>6
         <lb/>importe fort peu pour la cabohe ſi elle n’eſt blen tinbré́e &amp; ls
         <lb/>ceruele pleine de bonnes intentons pour le bien publ Cha
@@ -332,8 +332,7 @@
         <lb/>Vn Catinal eſtois tout de ſon lonag elendu au lit malade à
         <lb/>? a
         <lb/>1
-        <lb/>a
-        <pb n="7"/>
+        <lb/>a <pb n="7"/>
         <lb/>la derniere extremité de telle facon que ſes domeſtiques ne vo
         <lb rend="¬" break="no"/>yant plus d’eſperance de rien gaigner à fon ſeruice ſi ce n’eſt vne
         <lb/>robbe noire, ſe fournirent chacun de ce qui peu des choſes.
@@ -368,8 +367,7 @@
         <lb/>1’. oſtre obeyſſant Seruiteur.
         <lb/> ’Hoſte du Chapeauſpus
         <lb/>de Bordeauz.
-        <lb/>--L¬
-        <pb n="8"/>
+        <lb/>--L¬ <pb n="8"/>
         <lb/>mAtttétû
         <lb/>ſi&amp;eervpv
         <lb/>V

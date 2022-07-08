@@ -1,25 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2203_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2203_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title type="main" source="Mazarine">Lettre du sieur Mazarini au cardinal Mazarin son fils, de
-          Rome du 25. octobre 1648. Tournee d'italien en francois par le sieur de Lionne. Avec la
+        <title type="main" source="Mazarine">Lettre du sieur Mazarini au cardinal Mazarin son fils,
+          de Rome du 25. octobre 1648. Tournee d'italien en francois par le sieur de Lionne. Avec la
           response du cardinal Mazarin à son pere.</title>
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -38,7 +34,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://books.google.fr/books?id=D-YLPZfSBa0C&amp;hl=fr"/>
-          <author role="fake_author" ref="isni:0000000000140733" source="Mazarine">
+          <author role="speaker" ref="isni:0000000000140733" source="Mazarine">
             <persName>
               <forename>Pietro</forename>
               <surname>Mazarini</surname>
@@ -56,23 +52,26 @@
               <surname>Lionne (De)</surname>
             </persName>
           </editor>
-          <title source="Mazarine">Lettre du sieur Mazarini au cardinal Mazarin son fils, de Rome du 25.
-            octobre 1648. Tournee d'italien en francois par le sieur de Lionne. Avec la response du
-            cardinal Mazarin à son pere.</title>
+          <title source="Mazarine">Lettre du sieur Mazarini au cardinal Mazarin son fils, de Rome du
+            25. octobre 1648. Tournee d'italien en francois par le sieur de Lionne. Avec la response
+            du cardinal Mazarin à son pere.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
+          <date source="Carrier" notBefore="1649-01" notAfter="1649-03">pendant le blocus de
+            Paris</date>
           <extent>
             <measure unit="page" quantity="16"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high">BM00075</note>
-          <ref type="BM_notice" cert="high"
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="BM00075" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48926"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Florence</settlement>
+            <settlement ref="geonames:3176959">Florence</settlement>
             <institution>Bibliothèque nationale centrale de Florence</institution>
             <repository/>
             <idno type="cote">sail meay e.e- Frue (3) 1649 (R)</idno>
@@ -104,13 +103,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Lettres sans doutes fausses. La réponse du cardinal Mazarin est datée
+        <p source="Mazarine">Lettres sans doutes fausses. La réponse du cardinal Mazarin est datée
           de Paris le 8 décembre 1648. Autre édition, Paris, 1649, 20 p., sans fleuron (BM00076).
           Également publié sous le titre: "Le Politique estranger ou Les intrigues de Jules Mazarin
           ",Paris, 1649 (BM00843). Également publiée dans le recueil éditorial "Recueil de diverses
           pieces qui ont paru durant les mouvemens derniers de l'année 1649." (BM000059). D'après
           Hubert Carrier, texte paru durant le blocus de Paris (Bibliothèque Mazarine Ms. 4682-3, f.
           282 v). </p>
+        <p source="Moreau">2203. Lettre du sieur Mazarini au cardinal Mazarin, son fils, de Rome, du
+          25 octobre 1648, tournée d'ita lien en françois par le sieur de Lionne, avec la Réponse du
+          cardinal Mazarin à son père. Paris, 1649, 16 pag. Il y en a une autre édition en petits
+          caractères, ainsi intitulée :</p>
       </abstract>
       <textClass>
         <keywords>
@@ -119,6 +122,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -134,8 +140,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/> r r D 1
         <lb/>LE I I E 3
         <lb rend="¬" break="no"/>32 Vv
@@ -150,8 +155,7 @@
         <lb/>
         <lb rend="¬" break="no"/>
         <lb/>A PARIS,
-        <lb/>sC
-        <pb n="2"/>
+        <lb/>sC <pb n="2"/>
         <lb/>1 a
         <lb/>4
         <lb/>1
@@ -164,8 +168,7 @@
         <lb/> i t
         <lb/>
         <lb/>a
-        <lb/>¬2
-        <pb n="3"/>
+        <lb/>¬2 <pb n="3"/>
         <lb/>p t e,-8e
         <lb/> e e Aé e Se-S e
         <lb/>’tdeeededueeett
@@ -192,8 +195,7 @@
         <lb/> lulie, &amp; eſerite de ſa main prope oute entiere, c&amp; qut
         <lb/> eſoit là l uerfon de cene reſponſe sot pormoe, &amp; qu’il
         <lb/> ais pari pa Eapez par la ponter à Rome, n de ſe
-        <lb rend="¬" break="no"/>A ij
-        <pb n="4"/>
+        <lb rend="¬" break="no"/>A ij <pb n="4"/>
         <lb/>8
         <lb rend="¬" break="no"/>rifaire le pere de ſon Emirnee,r luy foumindaquayoon
         <lb rend="¬" break="no"/>ſeruer ſa reputaris.
@@ -227,8 +229,7 @@
         <lb/>turelles, qui ſont incompaâtiblesduec les François,,
         <lb/>qui ſont naturellenent libres&amp; francsi Vous de
         <lb rend="¬" break="no"/>uez taſcher de corrigoar par laveru les maauaiſes
-        <lb/> ncli.
-        <pb n="5"/>
+        <lb/> ncli. <pb n="5"/>
         <lb/>5
         <lb/>inclinations ue nous ſuacçons auec le laicbde nes
         <lb/>nourrices, &amp; nous ahſtenir de tout ce qui nous
@@ -259,8 +260,7 @@
         <lb rend="¬" break="no"/>iteaent, que vous en faitesvn infame commer.
         <lb/>ce, principalement à l’eſgard des Benefices, que
         <lb/>vous ne les done point ſans en rirer quelque
-        <lb/>euſion ou voua en erair pour excroquer quel¬
-        <pb n="6"/>
+        <lb/>euſion ou voua en erair pour excroquer quel¬ <pb n="6"/>
         <lb/>6
         <lb/>que Beneficé àceux à quivous los doano, s’la
         <lb rend="¬" break="no"/>riue qu’ils en ayent dmsj quelquas vns dont vo
@@ -291,8 +291,7 @@
         <lb/>preuenir daoftre bonae condoite;car puiſquele
         <lb/>nombre de eux que vousrieçauisreoro
         <lb/>auue deſpens d laraadre n ſuapaſſe pas couds
-        <lb/>iho orppeble voucdaumemeadevetque eet
-        <pb n="7"/>
+        <lb/>iho orppeble voucdaumemeadevetque eet <pb n="7"/>
         <lb/>nutilemens que vou;vous eſſotcez de ga gnetcet
         <lb rend="¬" break="no"/>te ſaine partie de Eſtat à̀ qui vous n’auez pû̂ cat
         <lb rend="¬" break="no"/>cher quevous ſongie plus voſtre ſeurpté parti
@@ -323,8 +322,7 @@
         <lb/>’obhigarion que vous luy auez de vous auoirrai
         <lb rend="¬" break="no"/>conmodé uec ſ Maieſté́, &amp;. é́ludé́ toues les
         <lb/>poopodiians qu’on luy faiſoit, qui tendoiont à ſe
-        <lb/>defaire de vous, vous luy aues ſuſireé vn’ Cqn¬
-        <pb n="8"/>
+        <lb/>defaire de vous, vous luy aues ſuſireé vn’ Cqn¬ <pb n="8"/>
         <lb/>8
         <lb/>querent inuincible pour vous deffaire de luy, &amp;
         <lb/>auquel vous ſçauez qu’il ne peut reſiſter ſans d
@@ -357,8 +355,7 @@
         <lb/>maaifeſtemét incapable, &amp; devoir eteindre hon
         <lb rend="¬" break="no"/>tcuſemé la gloire de mafamille par vnemortpre
         <lb rend="¬" break="no"/>cipirée par la furie d’vn peuple animé́contre vous.
-        <lb/>Reſponee
-        <pb n="9"/>
+        <lb/>Reſponee <pb n="9"/>
         <lb/>Reſponſe du Cardinal Mazarin aà ſon Pere,
         <lb/>A Paris ce ?. Decembre 168.
         <lb/>4
@@ -392,8 +389,7 @@
         <lb/>ie ſus deux iours entiers que ie penſay mourir de peur quei’a
         <lb rend="¬" break="no"/>ois que le peuple de Paris ne m prit uans la furie pour me
         <lb/>aettre en pieces, &amp; cette bhorribleimage d’vne mort infame
-        <lb/>C
-        <pb n="10"/>
+        <lb/>C <pb n="10"/>
         <lb/>0
         <lb/>m’eſpouvantoit tellement, que ie demeuray en eſtat de pou
         <lb rend="¬" break="no"/> uoir monter à cheual plus de vingt-quatre heures durant, &amp;
@@ -431,8 +427,7 @@
         <lb/>trois choſes, qui font toutes mes inquietudes, &amp; auquellesie
         <lb/>ſuis obligé de ponruoir, deſquelles vous me parlez dans vo
         <lb rend="¬" break="no"/>ſtre Lettre plus particulierement que du reſte.
-        <lb/>L’vne eſt, touchant le Sieur de la Riuiere Fauory duDuec
-        <pb n="11"/>
+        <lb/>L’vne eſt, touchant le Sieur de la Riuiere Fauory duDuec <pb n="11"/>
         <lb/>l
         <lb/>1l
         <lb/>11
@@ -472,8 +467,7 @@
         <lb/>l’Eſtaren France, nous puiſſions ehi poſſeder la iouiſſance
         <lb/>onjointement ſans jalouſie, &amp; ſans mettre la diuiſion entre
         <lb/>ous deux, qui euſt fait perr l’vn ou l’aure vn iur, i’ay
-        <lb/>eſté obligé de rompre enfin auec luy entierement, comme
-        <pb n="12"/>
+        <lb/>eſté obligé de rompre enfin auec luy entierement, comme <pb n="12"/>
         <lb/>i’ay fait, parce qu’encore que ie ne luy fiſſe que fort petite
         <lb/>part de la connoiſſance des aſfaires, ie voyois qu’il ne per
         <lb rend="¬" break="no"/>doit pas eſperance d’y rentrer, &amp; qu’il ſe tcenoit à vn poſte
@@ -511,8 +505,7 @@
         <lb rend="¬" break="no"/>ftré de ſes vaines eſperãices, &amp; en danger d’eſtre dominépar
         <lb rend="¬" break="no"/>ſon ennemy, qui promet me ſucceder ſelon toutes les appa
         <lb rend="¬" break="no"/>ences du uonde, m’accorda la protection de ſon Maiſtre,
-        <lb/>le
-        <pb n="13"/>
+        <lb/>le <pb n="13"/>
         <lb/>l
         <lb/>l
         <lb/>11
@@ -554,8 +547,7 @@
         <lb/> al arriuetolt apres Noël, &amp;e qàl’hiesre il auroit entrée au
         <lb/> onſeil, où eſtaǹ il ſerobit ſon compte, qu’il Vtendroit ayſe
         <lb rend="¬" break="no"/>uut àbodomoypat l’autforlté deſon Maiſte.
-        <lb/>D¬
-        <pb n="14"/>
+        <lb/>D¬ <pb n="14"/>
         <lb/>14
         <lb/>Toutes choſes ainſi diſpoſées, i’auois autant de beſoin de
         <lb/>la faueur du Prince de Condé, &amp; plus que de celle du Duc
@@ -593,8 +585,7 @@
         <lb/>autant d’obligation, que s’ils l’auoient fait.
         <lb/> Ie vous puis bien dire en confiance, que ſi Dieu me conſer.
         <lb/>ue dans l’eſtat où ie ſuis iuſques à la Majorité du Roy de
-        <lb/>France, que e feray bien voir du pays aux vns &amp; aux au¬
-        <pb n="15"/>
+        <lb/>France, que e feray bien voir du pays aux vns &amp; aux au¬ <pb n="15"/>
         <lb/>1
         <lb/>1l
         <lb/>11
@@ -636,8 +627,8 @@
         <lb/>pardonnent point les offenſes: &amp; qu’il a ſujet de ſe plaindre
         <lb/>de la protection, que i’ay deſpartie au Sieur Seruient pendant
         <lb/>la diuiſion qui a eſté entr’eux deux eſtant à Munſter. I’ay eſ
-        <lb rend="¬" break="no"/>ſaye de me bien remettre auec luy en apparence pendant le
-        <pb n="16"/>
+        <lb rend="¬" break="no"/>ſaye de me bien remettre auec luy en apparence pendant le <pb
+          n="16"/>
         <lb/>16.
         <lb/>trouble &amp; aſſemblées du Parlement, à̀ cauſe du Preſident de
         <lb/>Meſme ſon frere, qui eſtoit capable de m y ſeruir: mais à pre

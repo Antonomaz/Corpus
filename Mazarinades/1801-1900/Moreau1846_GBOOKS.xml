@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1846_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1846_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -37,8 +33,11 @@
       <sourceDesc>
         <bibl>
           <ref target="https://books.google.fr/books?id=GUNKAAAAcAAJ&amp;hl=fr"/>
-          <author>
-            <name>Mercier</name>
+          <author ref="isni:0000000039582088">
+            <persName>
+              <forename>Nicolas</forename>
+              <surname>Mercier de Poissy</surname>
+            </persName>
           </author>
           <persName role="received" ref="isni:0000000055360231">
             <forename>Anne</forename>
@@ -56,13 +55,12 @@
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Vienne</settlement>
+            <settlement ref="geonames:2761369">Vienne</settlement>
             <institution>Bibliothèque nationale d'Autriche</institution>
             <repository/>
             <idno type="cote"> 127411-B ALT MAG</idno>
@@ -94,7 +92,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1846. Lettre d'État de monsieur Mercier envoyée à la reine. Paris, Claude
+          Morlot, 1649, 8 pages. Ce M. Mercier dit tout crument à la reine : « Vous savez que le
+          royaume de France a déjà changé trois fois de dynastie. Prenez garde qu'il ne change une
+          quatrième. » Il en existe une édition augmentée d'une Lettre à la reine pour la cause
+          publique, comme elle doit chasser Mazarin. Cette édition est de 11 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,6 +106,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -118,8 +124,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>!
         <lb/>¬¬T
         <lb rend="¬" break="no"/>T
@@ -153,8 +158,7 @@
         <lb/>aux Vieilles Eſtuues.
         <lb/>..¬.
         <lb/>. DC. XLIX
-        <lb rend="¬" break="no"/>121-B
-        <pb n="2"/>
+        <lb rend="¬" break="no"/>121-B <pb n="2"/>
         <lb/>11
         <lb/>
         <lb rend="¬" break="no"/>
@@ -217,8 +221,7 @@
         <lb rend="¬" break="no"/>le
         <lb/> 4
         <lb/>1
-        <lb/>aéa
-        <pb n="3"/>
+        <lb/>aéa <pb n="3"/>
         <lb/>¬-eee
         <lb rend="¬" break="no"/>
         <lb rend="¬" break="no"/>a
@@ -251,8 +254,7 @@
         <lb/>que les terres les plus fertiles portent des char
         <lb rend="¬" break="no"/>dons &amp; des eſpines: que les plus pures lumieres
         <lb/>ſont obſeurcies par des vapeurs groſſieres ou par
-        <lb/>A ij
-        <pb n="4"/>
+        <lb/>A ij <pb n="4"/>
         <lb/> aa,,¬, ,,, s,aa ¬¬
         <lb rend="¬" break="no"/>4
         <lb/>des eelipſes; que les intelligences ne ſont pas ſans
@@ -284,8 +286,7 @@
         <lb/>dauns l hiſtoire, pour ne pas ſçauoir que les plus fl
         <lb/>nffaures onarchies ont irouué leur tombean
         <lb/>preſque dans le moment de leur naiſance; &amp; que
-        <lb/>l’inſolence
-        <pb n="5"/>
+        <lb/>l’inſolence <pb n="5"/>
         <lb/>¬¬¬¬¬.¬-erg.
         <lb/>S- yeeeere-ecese
         <lb/>5
@@ -318,8 +319,7 @@
         <lb/>tenoit eſclaue; par vn reuers de fortune deuenoit
         <lb/>ben-toſt captif d’vn autre Roy. Pharaon tres
         <lb rend="¬" break="no"/>puiſſant Prince, fut enſeuelyauec toute ſon armee
-        <lb/> B
-        <pb n="6"/>
+        <lb/> B <pb n="6"/>
         <lb/>
         <lb rend="¬" break="no"/>6
         <lb rend="¬" break="no"/>dã̃s les eauës de lœmer rouge, pour auoir malheu
@@ -350,8 +350,7 @@
         <lb/>croyons à l’hiſtoire ſaincte, Saül, Dauid, Ioſias &amp;
         <lb/>pluſieurs autres n’eſtoient pas de grande naiſſan
         <lb rend="¬" break="no"/>ce, &amp; ne furent conſiderez parmy leurs. ſujets qu’à.
-        <lb/>cauſe qu’ils auoient eſté eſleus de Dieu &amp; ſacrez
-        <pb n="7"/>
+        <lb/>cauſe qu’ils auoient eſté eſleus de Dieu &amp; ſacrez <pb n="7"/>
         <lb/>..-¬
         <lb rend="¬" break="no"/>¬¬
         <lb rend="¬" break="no"/>
@@ -385,8 +384,7 @@
         <lb rend="¬" break="no"/>uerſes fois, prenez garde qu’il ne change pour la
         <lb/>quatrieſme, &amp; qu’en deſtruiſant par des guerres
         <lb/>inteſtines vos propres ſujets &amp; vos enfans naturels,
-        <lb/>vous ne mettiez le domaine du Roy en proye aux
-        <pb n="8"/>
+        <lb/>vous ne mettiez le domaine du Roy en proye aux <pb n="8"/>
         <lb/>1
         <lb/>8
         <lb/>Ennemis. Les bons Franç̧ois ne peuuent pas fe

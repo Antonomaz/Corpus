@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2489_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2489_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -55,13 +56,12 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49118</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49118" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49118"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13516</idno>
@@ -93,10 +93,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Acte au nom de l'official de Paris, André Du Saussay, contresigné
+        <p source="Mazarine">Acte au nom de l'official de Paris, André Du Saussay, contresigné
           "Terriere", adressé aux curés ou aux vicaires. Texte paru le 2 septembre 1652 d'après
           Hubert Carrier (Bibliothèque Mazarine, Ms. 4682-4, f. 75v.), le monitoire datant du 30
           août.</p>
+        <p source="Moreau">2489. Monitoire publié par toutes les paroisses de la ville de Paris
+          contre les Juifs de la Synagogue, le - 1° jour de septembre 1652, pour avoir cruellement
+          martyrisé, assassiné et tué un notable bourgeois de ladite ville de Paris. Paris, veuve J.
+          Guillemot, 1652, 6 pages. Rare. . Voir le Récit naif et véritable du cruel assassinat.
+          commis par la compagnie des fripiers de la Tonnellerie, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -114,8 +119,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>MONITOIRE
         <lb/>PVBLIE PAR TOVTES
         <lb/>les Parroiſſes de la Ville de

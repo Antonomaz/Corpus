@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3743_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3743_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,19 +32,20 @@
           <title source="Mazarine">Le tableau de l'ingratitude de monseigneur le Prince, presenté à
             monsieur le duc de Beaufort.</title>
           <pubPlace source="Mazarine" ref="geonames:2989317">Orléans</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="3"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49271</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49271" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49271"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15438-11</idno>
@@ -75,12 +77,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition : titre légèrement différent ("Mr le Prince"), sans
+        <p source="Mazarine">Autre édition : titre légèrement différent ("Mr le Prince"), sans
           adresse, 7 p. (BM00241). Probablement édité à Orléans, d'après la description par Hubert
           Carrier (Bibliothèque Mazarine, Ms 4682-5, f. 293v) de l'exemplaire conservé à la
           Bibliothèque municipale d'Orléans et la présence de l'exemplaire Bibliothèque Mazarine M
           15438-11, similaire au précédent, dans un recueil éditorial de pièces d'origine
           orléanaise.</p>
+        <p source="Moreau">3743. Tableau (le) de l'ingratitude de monsieur le Prince, présenté à
+          monsieur le duc de Beaufort. (S. 1., 1650), 15 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,15 +102,13 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>LE
         <lb/>TABLEAV
         <lb/>DE L'INGRATITVDE
         <lb/>de Monſeigneur le Prince,
         <lb/>Preſenté à Monſieur le Duc
-        <lb/>DE BEAVFORT.
-        <figure type="decoration"/>
+        <lb/>DE BEAVFORT. <figure type="decoration"/>
         <lb/>Sur ſ’Imprimé, A PARIS 1650. <pb n="8"/>
         <lb/>DE tous les crimes, il n’y en a point de plus
         <lb/>abominable que l’Ingratitude, qui foule aux

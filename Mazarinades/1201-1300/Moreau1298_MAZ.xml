@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1298_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1298_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -29,7 +30,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14847"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Estat general de l'armee des princes &amp; leur jonction, dont
             s'ensuit les noms des generaux, son A. R. Mrs les princes de Condé, de Conty, les ducs
             de Longueville, de Beaufort &amp; de Nemours, avec la liste des officiers. Ensemble
@@ -48,13 +49,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49224</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49224" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49224"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12888</idno>
@@ -86,10 +86,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Célestin Moreau, contrefaçon de la "Liste de l'armée de M. le
+        <p source="Mazarine">D'après Célestin Moreau, contrefaçon de la "Liste de l'armée de M. le
           Prince, etc" à laquelle on a ajouté un préambule et quelques lignes à la fin. D'après
           Hubert Carrier, texte paru la 3e semaine de juin 1652 (Bibliothèque Mazarine, Ms 4682-2,
           f. 308v).</p>
+        <p source="Moreau">1298. État général de l’armée des princes, et leur jonc- tion, d’où
+          s'ensuit les noms des généraux , Son Altesse Royale, messieurs les princes de Condé, de
+          Conty, les ducs de Longueville, de Beaufort et de Nemours, avec la liste des officiers,
+          ensemble l’ordre des troupes qui sont tant à Chartres (Chastres) qu'aux environs. Paris,
+          Claude Le Roy, 1652, 8 pages. C’est une contrefacon de la Liste de l'armée de M, le
+          Prince, ete., à laquelle on a ajouté un préambule, et quelques lignes à la fin.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -115,8 +121,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ESTAT GENERAL
         <lb/>DE L’ARMEE DES PRINCES
         <lb/>&amp; leur ioncton, dont s’enſuit les

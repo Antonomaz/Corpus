@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3137_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3137_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -28,7 +29,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14778"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Relation de la paix de la ville de Bordeaux, &amp; de la province
             de Guyenne, faite par l'entremise de monseigneur l'archevesque de Bordeaux, le 4 juin
             1649.</title>
@@ -45,13 +46,12 @@
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49373</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49373" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49373"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12156</idno>
@@ -83,9 +83,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition repérée par Armand d'Artois (Bibliothèque Mazarine, 8°
+        <p source="Mazarine">Autre édition repérée par Armand d'Artois (Bibliothèque Mazarine, 8°
           40523-21/5 [Res], p. 50) : (même marque décorative), Paris, sans nom, 1649, 12 p. in-4
           (BM00534).</p>
+        <p source="Moreau">3137. Relation de la paix de la ville de Bordeaux et de la province de
+          Guyenne, faite par l'entremise de mon seigneur l'archevêque de Bordeaux, le 4 juin 1649,
+          Paris, Jean du Crocq, 1649, 12 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>RELATION
         <lb/>DE LA PAIX
         <lb/>DE LA VILLE DE BORDEAVX,

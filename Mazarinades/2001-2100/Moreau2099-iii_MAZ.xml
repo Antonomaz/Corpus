@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2099-iii_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2099-iii_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,19 +32,20 @@
           <title source="Mazarine">La troisiesme lettre du chevalier Georges a monsieur le
             Prince.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50278</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50278" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50278"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13135-3</idno>
@@ -75,7 +77,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Texte quasi identique à celui publié sous le titre "La seconde lettre
+        <p source="Mazarine">Texte quasi identique à celui publié sous le titre "La seconde lettre
           du chevalier Georges à monsieur le Prince" à l'exception de p. 6, "quoy que toutes deux,
           &amp; c'est une vérité connuë" qui remplace "que toutes deux ayent de la ialousie pour ce
           titre, il ne sçauroit legitimement appartenir à toutes deux &amp; c'est une vérité
@@ -91,6 +93,21 @@
           "com-/battans" ; p. [8], l. 7 "posimus", l. 9 "MONSEGNEVR". D'après Hubert Carrier, auteur
           différent de celui de la "Lettre du chevalier Georges de Paris" ("La presse de la Fronde
           (1648) : les Mazarinades", I, Paris, 1989, p. 225).</p>
+        <p source="Moreau">2099. Lettre du chevalier Georges de Paris à monsei gneur le prince de
+          Condé. Paris, 1649, 18 pages. Naudé revient trois fois sur cette lettre dans le Mascurat,
+          pages 11, 199 et 208; et toujours il la cite comme un des plus remarquables pamphlets. Guy
+          Patin la range parmi les meilleurs, dont il espère à la fin un recueil (Lettre à Spon du
+          14 mai 1649, p.190 du Ier volume). Mais il est à remarquer que l'un et l'autre écrivent
+          toujours la Lettre du chevalier Georges. C'est que la Seconde lettre « ne res semble en
+          rien à celle qui l'avoit précédée. » (Mascurat, p. 15) En d'autres termes, elle n'est pas
+          de la même main que la première. Il n'en faut pas moins deux pièces, et même trois; la
+          seconde lettre ayant été réimprimée en 1650 sous le titre de la Troisième lettre du
+          chevalier Georges à monsieur le Prince. « La fortune accoucha de ce monstre adultérin
+          (Mazarin) pen dant son divorce avec la vertu. » « Nous n'avons pour toutes pièces de sa
+          composition que des commentaires sur les brelans; et la seule statue qui restera de lui en
+          France, sera le valet de carreau dans le Hoc mazarin. » « L'administration du royaume
+          appartient naturellement aux enfants de France pendant la minorité du roi. » La Lettre est
+          assez commune. Il y en a une édition in-12, s. l. n. d., 17 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,8 +126,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA TROISIESME
         <lb/>LETTRE
         <lb/>DV CHEVALIER

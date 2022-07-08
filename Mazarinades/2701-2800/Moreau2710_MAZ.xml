@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2710_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2710_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -28,25 +29,26 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14974"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Les particularitez de la route de M le prince de Condé, et le
             sujet de son retardement. Avec le passage des trouppes du cardinal Mazarin à
             Gien.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-04-04">à partir du 4 avril 1652</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49234</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49234" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49234"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13558</idno>
@@ -78,8 +80,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Texte paru à partir du 4 avril 1652 d'après Hubert Carrier
+        <p source="Mazarine">Texte paru à partir du 4 avril 1652 d'après Hubert Carrier
           (Bibliothèque Mazarine, Ms 4682-4, f. 172v). </p>
+        <p source="Moreau">2710. Particularités (les) de la route de M. le prince de Condé, et le
+          sujet de son retardement, avec le passage des troupes du cardinal Mazarin à Gien. Paris,
+          1652, 8 pages. Pièce rare et curieuse, malgré quelques inexactitudes. ' M. le prince
+          s'appelait Motteville (Gourville dit La Motteville); le duc de La Rochefoucault, Beaupré;
+          le baron de Lévy, La Place ; Chavagnac, Saint-Amour; Lestourville (Gourville peut-être ?),
+          Longuepleine.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,8 +105,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES
         <lb/>PARTICVLARITEZ
         <lb/>DE LA ROVTE DE

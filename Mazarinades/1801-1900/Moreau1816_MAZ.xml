@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1816_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1816_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -29,19 +30,20 @@
           <author/>
           <title source="Mazarine">Lettre burlesque à Mazarin.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50339</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50339" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50339"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11129</idno>
@@ -73,9 +75,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Célestin Moreau, mauvaise imitation de la "Lettre à monsieur le
+        <p source="Mazarine">D'après Célestin Moreau, mauvaise imitation de la "Lettre à monsieur le
           cardinal, burlesque." (BM00380, BM00381, BM00382). En vers alexandrins. 2 états (A/B) : p.
           5 non chiffrée / p. 5 chiffrée.</p>
+        <p source="Moreau">1816. Lettre burlesque à Mazarin.Sans Lieu, 1649, 8 pages. Mauvaise
+          imitation de la Lettre au cardinal, burlesque. 1os BIRLIOGRAPHIE [LETTRE ]</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,8 +101,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>A
         <lb/>LETTRE
         <lb/> BVRLESQVE

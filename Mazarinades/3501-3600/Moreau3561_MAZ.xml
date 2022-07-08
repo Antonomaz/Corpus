@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3561_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3561_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -47,7 +48,9 @@
             d'Estat ; &amp; que leur devoir les engage de n'avoir d'attachement que pour le
             sanctuaire.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-07-20" notAfter="1652-07-31">fin juillet
             1652</date>
@@ -55,13 +58,12 @@
             <measure unit="page" quantity="32"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50121</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50121" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50121"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14977-15</idno>
@@ -93,10 +95,20 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Publié par Claude Du Bosc de Montandré, d'après Hubert Carrier, "La
+        <p source="Mazarine">Publié par Claude Du Bosc de Montandré, d'après Hubert Carrier, "La
           Presse de la Fronde (1648-1653) : les Mazarinades", II, Genève, 1991, p. 53. Daté de fin
           juillet 1652 au vu de sa place dans le recueil chronologique de la Bibliothèque Mazarine
           coté 4° A 12825-33 (Bibliothèque Mazarine, Ms. 4682-5, f. 232v).</p>
+        <p source="Moreau">3561 . Royal (le) au Mazarin, lui faisant voir par la rai son et par
+          l'histoire , 1 . que l'autorité des rois sur la vie et sur le bien des sujets est fort
+          limitée , à moins qu'elle ne soit tyrannique ; 2. que l'autorité des princes du sang est
+          essentielle dans le gouvernement; 3. que l'autorité des autres Parlements de France pour
+          les affaires d'État est inférieure et subordonnée à celle du Parlement de Paris; 4. que
+          les prélats n'ont point d'autorité dans le maniement des affaires d'Etat, et que leur
+          devoir les engage à n'avoir d'attachement que pour le sanctuaire. (S. 1., 1652), 32 pages.
+          Dubosc Montandré. Mailly cite ce pamphlet dans la note de la page i 23 de son IIe vo lume;
+          mais il l'intitule à tort le Royal-Mazarin; et il semble lui assigner la date de 1649,
+          tandis qu'il est en réalité de 1652.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -116,8 +128,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>ROYAL
         <lb/>AV

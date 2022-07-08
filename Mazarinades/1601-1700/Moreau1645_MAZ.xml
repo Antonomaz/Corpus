@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1645_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1645_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -53,13 +54,12 @@
             <measure unit="page" quantity="1"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48895</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48895" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48895"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15545</idno>
@@ -91,13 +91,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Publication sous forme de périodique. Par Charles Robinet de Saint-Jean
+        <p source="Mazarine">Publication sous forme de périodique. Par Charles Robinet de Saint-Jean
           d'après Barbier et Moreau, réfutés par Hubert Carrier qui l'attribue à Gaudin
           (Bibliothèque Mazarine Ms 4682-3, f. 78v.-79). Le n° 5 porte le titre "Histoire
           journaliere ; contenant toutes les nouvelles de ce qui se passe dans ce royaume.". Publié
           par Julien Courant, imprimeur du roi à Compiègne, sauf le n° 5 qui porte au colophon
           l'adresse "A Paris, chez Alexandre Lesselin, ruë de la Barillerie, devant le Palais", les
           4 premiers n°, les 5 et 19 septembre,3 et 13 octobre 1652 d'après le colophon.</p>
+        <p source="Moreau">1645. Histoire journalière. Compiègne, 1652,12 pages. L'Histoire
+          journalière se compose de trois pièces, toutes trois imprimées ou réimprimées à Pontoise,
+          par Julien Courant; la pre mière en 16 pages, les deux autres en 8 pages chacune. C'est
+          ici la première. Elle est intitulée dans l'éditiom de Pon tOlSe :</p>
       </abstract>
       <textClass>
         <keywords>
@@ -114,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="2"/>
+      <p><pb n="2"/>
         <lb/>HISTOIRE
         <lb/>IOVRNALIERE..
         <lb/>AYant eu ordre de donner les aduis au public de ce qui
@@ -1662,7 +1665,8 @@
         <lb/>les leuées quiſo font pour la continuation de la guerre.
         <lb/>A PARIS, Chz AEXANDPRE LESSE LIV, rë g4
         <lb/> de la Baillerie, deuant le Palais.
-        <lb/><imprimatur>Auec Priuilege du Roy</imprimatur>. 1652
+        <lb/>
+        <imprimatur>Auec Priuilege du Roy</imprimatur>. 1652
         <lb/>5
         <lb/>. </p>
     </body>

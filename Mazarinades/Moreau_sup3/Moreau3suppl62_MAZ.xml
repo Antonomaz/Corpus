@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3suppl62_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3suppl62_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -58,13 +59,12 @@
             <measure unit="page" quantity="31"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49143</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49143" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49143"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13539</idno>
@@ -96,7 +96,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">2 états pour les cahiers B et G. État A : p. 5, l. 10/11, "Calli-/cane"
+        <p source="Mazarine">2 états pour les cahiers B et G. État A : p. 5, l. 10/11, "Calli-/cane"
           ; p. 8, l. 7/8, "du Duc de Montmorency, apres avoir esté blessé &amp; pris en ba-/taille
           par le Mareschal de Schomberg, qu'il osa donner contre le" ; p. 25, l.30 "cognoît" ; p.
           26, l. 13 "Thresoriers". État B : p. 5, l. 10/11, "Galli-/cane" ; p. 8, l. 7/8, "du Duc de
@@ -105,6 +105,10 @@
           Autre édition (BM00292), portant à la suite du titre "Nouvellement reveuës &amp;
           augmentées", à la même adresse, même date, 36 p. in-4. D'après Hubert Carrier, texte paru
           la première semaine de 1649 (Bibliothèque Mazarine, Ms 4682-4, f. 109v).</p>
+        <p source="Moreau">62. Observations curieuses sur l’État et gouvernement de France, avec les
+          noms, dignitez et familles principales, comme il est en la présente année 1649. Paris,
+          Gervais Al- liot et Jacques Langlois, 1649, 31 pages. C'est la première édition du n° 2568
+          de la Bibliographie des Mazarinades.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -122,8 +126,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>OBSERVATIONS
         <lb/>CVRIEVSES.
         <lb/>SVR L’ESTAT
@@ -141,7 +144,8 @@
         <lb/>IACQVES LANGLOIS, Imprimeur du Roy, vis à vis la Fonteine
         <lb/>saincte Geneuiefue, à la Reine de Paix.
         <lb/>M. DC. XXXXIX..
-        <lb/><imprimatur>AVEC PERMISSION.</imprimatur>
+        <lb/>
+        <imprimatur>AVEC PERMISSION.</imprimatur>
         <pb n="10"/>
         <pb n="11"/>
         <lb/>OBSERVATIONS

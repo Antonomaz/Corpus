@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2163_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2163_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -33,7 +34,9 @@
           <title source="Mazarine">Lettre du Roy, escrite a son parlement de Paris, sur les affaires
             presentes. De Saumur le 11. febvrier 1652.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-02-14" notAfter="1652-02-21">troisième semaine de
             février 1652</date>
@@ -41,13 +44,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49211</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49211" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49211"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11486</idno>
@@ -79,10 +81,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions : Saumur, A.Hesnault, 7 p. in-4 (Moreau 1er supplément,
+        <p source="Mazarine">Autres éditions : Saumur, A.Hesnault, 7 p. in-4 (Moreau 1er supplément,
           n° 159) ; Orléans, Marie Paris, 7 p. in-4 (signalée par Hubert Carrier, Bibliothèque
           Mazarine, Ms 4682-3, f. 268). D'après H. Carrier, édition parue la 3e semaine de février
           1652 (Bibliothèque Mazarine, Ms 4682-3, f. 267v).</p>
+        <p source="Moreau">2163. Lettre du roi écrite à son Parlement de Paris sur les affaires
+          présentes, de Saumur le 11 février 1652. Paris, par les imprimeurs et libraires ordinaires
+          du roi, 1652, 7 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,8 +104,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE
         <lb/>DV ROY,
         <lb/>ESCRITE
@@ -112,7 +116,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires
         <lb/>du Roy.
         <lb/>M. DC. LII.
-        <lb/><imprimatur>Auec Priuilege de ſa Maieſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Maieſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

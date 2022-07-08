@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3769_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3769_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -29,7 +30,9 @@
           <author/>
           <title source="Mazarine">[Le theologien d’Estat a la Reyne...]</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-02-01" notAfter="1649-02-07">première semaine de
             février 1649</date>
@@ -37,13 +40,12 @@
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49319</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49319" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49319"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15435-1</idno>
@@ -75,7 +77,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Sous forme de lettre. Catalogué d’après l’exemplaire de la Bibliothèque
+        <p source="Mazarine">Sous forme de lettre. Catalogué d’après l’exemplaire de la Bibliothèque
           Mazarine coté M 15435-1 (incomplet de la p. de titre). Autres éditions repérées par
           Célestin Moreau, Armand d'Artois et Hubert Carrier (Mazarine, Ms 4682-5, f. 304v-305) :
           titre "... : a la Reyne.", Paris, Jean Du Bray, 1649, 12 p. in-4 (BM00470) ; titre "... :
@@ -96,6 +98,7 @@
           ou encore « Le theologien d’Estat : a la Reyne. Pour faire desboucher Paris. » Texte paru
           durant le blocus de Paris, la première semaine de février 1649, d’après Hubert
           Carrier.</p>
+        <p source="Moreau">3769. Théologien (le) d'État à la reyne. Paris, 'Jean du Bray, 1649.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -112,8 +115,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>SVITTE DES
         <lb/>LIBELLES
         <lb/>QVI ONT PARV

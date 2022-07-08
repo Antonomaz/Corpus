@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2456_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2456_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,7 +32,9 @@
           <title source="Mazarine">La mercuriade, ou L'adjournement personnel envoyé à Mazarin par
             le cardinal de Richelieu. En vers burlesques.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-01" notAfter="1649-03">pendant le blocus de
             Paris</date>
@@ -39,13 +42,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50294</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50294" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50294"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11620</idno>
@@ -77,8 +79,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. D'après Hubert Carrier, texte paru pendant le
+        <p source="Mazarine">En vers octosyllabes. D'après Hubert Carrier, texte paru pendant le
           blocus de Paris (Bibliothèque Mazarine, Ms. 4682-4, f. 52v).</p>
+        <p source="Moreau">2456. Mercuriade (la), ou l'Ajournement personnel en voyé à Mazarin par
+          le cardinal de Richelieu, en vers burlesques.Sans Lieu, 1649, 8 pages. Un frondeur qui
+          défend la reine ! il est bon d'en prendre note : « On l'estime comme une infâme ; On
+          l'injurie librement.... De telle sorte qu'on en dit Ce que jamais elle ne fit, Et dont
+          seulement sa pensée Ne se vit jamais offensée.»</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,8 +105,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA MERCVRIADE
         <lb/>OV
         <lb/>L'ADIOVRNEMENT PERSONNEL

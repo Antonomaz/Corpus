@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2404_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2404_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -38,19 +39,20 @@
             tendent qu'au restablissement de l'authorité souveraine ; et du repos des peuples.
             Presenté a Nosseigneurs de Parlement.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <extent>
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49743</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49743" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49743"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11570</idno>
@@ -82,7 +84,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Pièce sur la polémique entre le prince de Condé et le cardinal de Retz.
+        <p source="Mazarine">Pièce sur la polémique entre le prince de Condé et le cardinal de Retz.
           En réponse, a été publié : "Discours contre le libelle intitulé, le manifeste des
           intentions de M. le Prince. Qui ne tendent (à son sens) qu'au restablissement de
           l'authorité souveraine &amp; du repos des peuples." (BM00545) et "Apologie royale, ou la
@@ -91,6 +93,11 @@
           presse de la Fronde (1648-1653) : les mazarinades", II, Paris, 1991, p. 56. D'après H.
           Carrier, texte paru la première semaine d'octobre 1651 (Mazarine, Ms. 4682-4, f. 26
           v.).</p>
+        <p source="Moreau">2404. Manifeste (le) véritable des intentions de M. le Prince, qui ne
+          tendent qu'au rétablissement de l'auto rité souveraine et du repos des peuples, présenté à
+          nos seigneurs du Parlement. (S. l., 1651), 16 pages. Une des pièces de la polémique entre
+          le prince de Condé et le cardinal de Retz. Ce n'est ni la meilleure, ni la plus hardie. .
+          Il y a été répondu par le Discours contre le libelle intitulé : le Manifeste, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,8 +116,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>MANIFESTE
         <lb/>VERITABLE

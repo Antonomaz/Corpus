@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau393_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau393_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,19 +37,20 @@
           <title source="Mazarine">L'arivée du courrier Mazarin, rapportant le subjet de sa sortie
             hors de France. Aux mazarinistes.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49964</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49964" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49964"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14715</idno>
@@ -80,10 +82,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Sous forme de lettre. 2 états de la p. de titre : avec "Aux
+        <p source="Mazarine">Sous forme de lettre. 2 états de la p. de titre : avec "Aux
           mazarinistes" et un fleuron (état A) / sans "Aux mazarinistes" ni fleuron (état B). Autre
           édition d'un texte de 1649 intitulé "Lettre du cardinal Mazarin aux peres theatins, pour
           redoubler leurs prieres à le retirer du bourbier où il s'est veautré." (BM01043).</p>
+        <p source="Moreau">393. Arrivée (l') ducourrier Mazarin, rapportant le sujet de sa sortie
+          hors de France, aux Mazarinistes. (S. 1.), 16514 , 8 pages. Réimpression d’une pièce de
+          1649 intitulée : Zettre du cardinal Mazarin aux pères Théatins , etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,8 +105,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L’ARIVEE DV
         <lb/>COVRRIER
         <lb/>MAZARIN.

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau1342_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1342_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -54,12 +50,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement/>
-            <institution>Bibliothèque municipale de Lyon</institution>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
             <repository/>
             <idno type="cote"/>
           </msIdentifier>
@@ -90,7 +86,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1342. Extrait de tout ce qui s'est fait et passé à Bor- deaux depuis le
+          29 juin 1652, touchant le parti de messieurs les princes et celui des Mazarins. Paris,
+          Jacob Chevalier, 1652, 7 pages. Récit mensonger du combat de l’Ormée contre le Chapeau
+          Rouge. Voir le Courrier bordelots.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,6 +99,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -114,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>T e
         <lb rend="¬" break="no"/>1 Al
         <lb/> YT
@@ -135,8 +138,7 @@
         <lb/>eIC CIIEAIERpres Saint len
         <lb/>Ae Latran
         <lb/>M. DC. LIl.
-        <lb/> -¬
-        <pb n="2"/>
+        <lb/> -¬ <pb n="2"/>
         <pb n="3"/>
         <lb/>jeeyepgj
         <lb/>EYTRAAITDE TOVT cE QV
@@ -166,8 +168,7 @@
         <lb rend="¬" break="no"/> utiondans le party de Lormiere qu’il ſembloit
         <lb/>A ii
         <lb/>a
-        <lb/>.¬¬.
-        <pb n="4"/>
+        <lb/>.¬¬. <pb n="4"/>
         <lb/>reerement abbatu, puiſqueau lieu de repouſ.
         <lb/>ſer la force par la force, il eſtoit contraint de de
         <lb rend="¬" break="no"/>mander iuſtice à Monſieur le Prince de Conty
@@ -199,8 +200,7 @@
         <lb/> empeſchet
         <lb/> 4
         <lb/>
-        <lb rend="¬" break="no"/>¬aaaa ¬¬¬¬¬
-        <pb n="5"/>
+        <lb rend="¬" break="no"/>¬aaaa ¬¬¬¬¬ <pb n="5"/>
         <lb/>enmpeſcher le deſordre, &amp; de fait Lormireequoy
         <lb/>que l’offence de l’attaquee auoit mis les armes
         <lb/>bas au premietr cõmandement qu’ils auoiét re
@@ -229,8 +229,7 @@
         <lb/>lunt prſe ele fur píe &amp; bruſĺe ; de la ils
         <lb/>alerent à̀ deſcouuert iuqu’au logis dudit Cor
         <lb rend="¬" break="no"/>nt, ouù̀ Fontennelle &amp; Guerault &amp; pluſieurs
-        <lb/>ues eſtoient retiés, mais la peur qu’ils eu¬
-        <pb n="6"/>
+        <lb/>ues eſtoient retiés, mais la peur qu’ils eu¬ <pb n="6"/>
         <lb/>rent que leur reſiſtance ne fut vaine &amp; initile
         <lb/>&amp; qu’en fin ils ſeroient forceé́s, ils ſe ſauuerent
         <lb/>par deſſus les tuilles, ſi bien que la maiſonayant
@@ -260,8 +259,7 @@
         <lb/>&amp; leur inſolence qu’ils profererent hauremen
         <lb rend="¬" break="no"/>en-parlant à Son. Aleſfe, &amp; particulieement lo
         <lb/>ſieur de Leſair Conſeiller nous foat aſſez voi
-        <lb/> A¬e.¬¬.¬.¬
-        <pb n="7"/>
+        <lb/> A¬e.¬¬.¬.¬ <pb n="7"/>
         <lb/>7
         <lb/>uiſ que sils euſſent eu le deſſus nous aurions bien
         <lb/>la! peuenuoyernos Mareſchaux des Logis marquer

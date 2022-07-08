@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="M15416_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="M15416_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -89,13 +90,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-12</note>
-          <note type="BM_identifier" cert="high">BM49386</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49386" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49386"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15416</idno>
@@ -127,9 +127,9 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Lettres et pièces en vers. Dédicace à "monseigneur le comte de
+        <p source="Mazarine">Lettres et pièces en vers. Dédicace à "monseigneur le comte de
           Bristoll" signée "D. C.". </p>
-        <p source="BM_notes">Comprend Prediction de Paul Grebner touchant diverses occurrences des
+        <p source="Mazarine">Comprend Prediction de Paul Grebner touchant diverses occurrences des
           affaires d'Allemagne &amp; Angleterre, en ces derniers temps. Lettre du chevalier
           Suckling. Copie d'une lettre envoyée au Roy par le prince de Galles. En datte du 23.
           janvier 1648. à la Haye. Metamorphose des isles Fortunées. A la Reyne, doüairiere de la
@@ -160,8 +160,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>PREDICTION
         <lb/>OV SE VOIT
         <lb/>COMME LE R0Y

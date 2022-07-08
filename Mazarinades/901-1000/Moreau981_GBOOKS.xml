@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau981_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau981_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -39,12 +35,7 @@
         <bibl>
           <ref
             target="https://www.google.fr/books/edition/La_Defaite_du_mareschal_de_Seneterre_par/kq65jEJvAJ8C?hl=fr&amp;gbpv=0"/>
-          <author>
-            <persName>
-              <forename/>
-              <surname/>
-            </persName>
-          </author>
+          <author/>
           <title source="Moreau">Défaite (la) du maréchal de Seneterre par les troupes de Son A. R.,
             commandées par le comte de Tavannes en l'absence de M. le prince de Condé.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
@@ -59,12 +50,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement/>
-            <institution>Bibliothèque municipale de Lyon</institution>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
             <repository/>
             <idno type="cote"/>
           </msIdentifier>
@@ -95,7 +86,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">981. Défaite (la) du maréchal de Seneterre par les troupes de Son À. R.,
+          commandées par le comte de Tavannes en l’absence de M. le prince de Condé. Pr- ris, André
+          Chouqueux, 1652, 8 pages. Du samed: 13 avril. L’auteur prétend que Mazarin avait envoyé au
+          maréchal d'Ho- quincourt, pour le consoler de sa défaite de Bleneau, un carrosse à six
+          chevaux, deux douzaines et demie de plats d’argent et autant d’assiettes d’argent, deux
+          bassins et deux aiguières , qui étaient tombés entre les mains des soldats du prince de
+          Condé !</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,6 +102,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -119,8 +121,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>S A
         <lb/>
         <lb rend="¬" break="no"/>DEFAIT
@@ -133,8 +134,7 @@
         <lb rend="¬" break="no"/>Prince de Condé.
         <lb/>A PAR
         <lb/>n Dne evivx, ue aln
-        <lb/>r nerir¬
-        <pb n="2"/>
+        <lb/>r nerir¬ <pb n="2"/>
         <pb n="3"/>
         <lb/> E
         <lb/>te &amp;&amp;ee tſeit ſe edleleed
@@ -161,8 +161,7 @@
         <lb/>aux Ducs d’Elbeuf &amp; d’Eſpergnon,ué
         <lb/>chad’Aumont &amp; au reſcll de Seeeer
         <lb/>e qu’il a obligez par les chai ges hai
-        <lb/>.-¬-.
-        <pb n="4"/>
+        <lb/>.-¬-. <pb n="4"/>
         <lb/>4
         <lb/>donne aux vns aux autres, afin de les obliger
         <lb/>à eſpouſer fes intereſts &amp; à ſeconder ſes mal
@@ -188,8 +187,7 @@
         <lb/>en Bourgogne à la faueur du Duc d’Eſper
         <lb rend="¬" break="no"/>non Gouuerneur du Duché, qui a fait four
         <lb rend="¬" break="no"/> nir de vies a ceſfteCaualerie en leur paſſage.
-        <lb/> De
-        <pb n="5"/>
+        <lb/> De <pb n="5"/>
         <lb/> De Bourgongne il eſt entré par la Charité au
         <lb/>Gaſtinois ſans auoir fait aucune rencontre iuſ;
         <lb/>ques aupres de Briare,- &amp; de Chaſtillon ſus
@@ -215,8 +213,7 @@
         <lb rend="¬" break="no"/> ça à laſcher le pied, &amp; alorselle fut chargée en
         <lb/>flanc &amp; en queue, auec tãt de courage &amp; de re¬.
         <lb/>ſolutiõ̃ que la pluſpart ayat eſté tuez &amp; le reſte
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/>6
         <lb/>ua à la fuitte auec enuiron douze Caualliers,
         <lb/>ceux qui furent arteſtez &amp; demontez de leurs
@@ -241,8 +238,7 @@
         <lb rend="¬" break="no"/> preniierordre quelle en auront; ce qui renfoir
         <lb rend="¬" break="no"/> cira grahdement l’armée de ſaditeA. R. &amp; qui
         <lb/> redoublera le coutage aux chefs &amp; aux ſoldats
-        <lb/> lots qu’ils vrront Monſieur le Prince retourneé
-        <pb n="7"/>
+        <lb/> lots qu’ils vrront Monſieur le Prince retourneé <pb n="7"/>
         <lb/>pour donner la chaſſe entiere aux Maarins,
         <lb/>auſquels la peſte &amp; la famine, fait auſſila guer
         <lb rend="¬" break="no"/>re ce qui redoubla leur mal &amp; lcur incommo
@@ -267,8 +263,7 @@
         <lb/> d’argent, le tout tombé entre les mains des
         <lb/>gens de guerre de ſon Alreſſe Royale, ce qui
         <lb/>a eſteé vne augmentation de recompenſe de
-        <lb/>leurs trauaux, &amp; des perils de perdre la vie
-        <pb n="8"/>
+        <lb/>leurs trauaux, &amp; des perils de perdre la vie <pb n="8"/>
         <lb/>3
         <lb/>qu’ils ont eſſuyez.
         <lb/> Mais ces gloieux exploictsſeront bien toſt

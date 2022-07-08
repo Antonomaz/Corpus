@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3478_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3478_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -41,20 +42,21 @@
             &amp; le transport de messieurs les princes du chasteau de Vincennes à Marcoußy &amp; au
             Havre, &amp; sur leur delivrance.</title>
           <pubPlace source="Mazarine" ref="geonames:2989317">Orléans</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" when="1650-01-08">8 janvier 1650</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49293</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49293" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49293"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15439-3</idno>
@@ -86,11 +88,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions avec des graphies du titre différentes : sans adresse
+        <p source="Mazarine">Autres éditions avec des graphies du titre différentes : sans adresse
           ni date, 6 p. (BM) ; sans adresse, 1650, 6 p., et, titre abrégé, Bordeaux (repérées par
           Armand d'Artois (Bibliothèque Mazarine, 8° 40523-21/5 [Res], p. 135) Requête présentée le
           7 décembre 1650, texte paru le 8 d'après Hubert Carrier (Bibliothèque Mazarine, Ms 4682-5,
           f. 203v).</p>
+        <p source="Moreau">3478. Requête de mademoiselle de Longueville , fille de Henry d'Orléans,
+          duc de Longueville, présentée f à nos seigneurs de Parlement ( le 7 décembre 1650) ^ ' ° r
+          . ' k (^ / j touchant la mort de madame la princesse douairière de Condé et le transport
+          de messieurs les princes du château de Vincennes à Marcoussi et au Havre et sur leur
+          délivrance. (S. 1. n. d.), 6 pages. Malgré l'inexactitude dti titre, la requête est
+          véritable. Voir le Journal du Parlement.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -112,8 +120,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>REQUESTE
         <lb/>DE MADEMOISELLE
         <lb/>DE LONGVEVILE

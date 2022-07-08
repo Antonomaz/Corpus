@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1006_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1006_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -50,7 +51,9 @@
             Paris ne peut point esperer la Paix, à moins qu'il ne la fasse luy-mesme en se declarant
             pour les Princes. Par le sieur d'Orandré.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-10-01" notAfter="1652-10-07">première semaine
             d'octobre 1652</date>
@@ -58,13 +61,12 @@
             <measure unit="page" quantity="32"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50183</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50183" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50183"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14977-7</idno>
@@ -96,10 +98,19 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Avis au lecteur à la fin. Par Claude Du Bosc de Montandré sous le
+        <p source="Mazarine">Avis au lecteur à la fin. Par Claude Du Bosc de Montandré sous le
           pseudonyme d'Orandré, d'après Hubert Carrier, "La Presse de la Fronde (1648-1653) : les
           Mazarinades", II, Paris, 1991, p. 53. D'après H. Carrier, publié la première semaine
           d'octobre 1652.</p>
+        <p source="Moreau">1006. Dépositaire (le) des secrets de l’État, découvrant au public 1° les
+          raisons pour lesquelles la reine ne fait entrer dans le conseil que des ministres
+          étrangers ; 2° les raisons pour lesquelles la reine ne veut pas venir à Paris,
+          quoiqu'’elle le puisse sans aucun obstacle ; 3° les raisons pour lesquelles la paix
+          domestique ne peut pas être conclue sans la générale, et pour lesquelles la reine ne veut
+          point la générale ; 4° les raisons pour lesquelles le conseil du roi tombe en des
+          manquements déplorables, et qui marquent un sens réprouvé ; 5° et que Paris ne peut point
+          espérer la paix, à moins qu’il ne la fasse lui-même, en se déclarant pour les princes, par
+          le sieur D’Orandre (Dubose Montandré). (S. t. n. d.), 32 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -122,8 +133,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>DEPOSITAIRE
         <lb/>DES

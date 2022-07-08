@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Labadie90_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Labadie90_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -46,13 +47,12 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49251</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49251" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49251"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15377</idno>
@@ -84,8 +84,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mention de publication le 20 avril 1651, signée "Laroche". L'arrêt est
+        <p source="Mazarine">Mention de publication le 20 avril 1651, signée "Laroche". L'arrêt est
           en réalité du 10 février 1651. - Signé "Suau".</p>
+        <p source="Labadie">90. ARREST de la Cour de Parlement de Bourdeaux. Portant inhibitions
+          &amp; deffences à toutes sortes de personnes du Ressort de ladite Cour, de poursuivre
+          aucune esvoquation generale ou particuliere concernant les mouvements passez. Du 20. Avril
+          1651. A Bourdeaux, parJ. Mongiron Millanges, Imprimeur ordinaire du Roy, 1651, 6
+          pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT

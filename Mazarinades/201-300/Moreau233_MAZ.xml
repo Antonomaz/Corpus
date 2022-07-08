@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau233_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau233_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,20 +37,21 @@
             tout ce qui se trouvera dans ladite maison. Du vingt-cinquiesme janvier mil six cens
             quarante-neuf.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-01-26">26 janvier 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49896</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49896" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49896"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14439</idno>
@@ -81,7 +83,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Le présent arrêt fait référence à un arrêt de la cour du Parlement daté
+        <p source="Mazarine">Le présent arrêt fait référence à un arrêt de la cour du Parlement daté
           par erreur du trois janvier au lieu du treize, intitulé "Arrest de la cour de Parlement,
           portant que tous les biens meubles &amp; immeubles, &amp; revenus des benefices du
           cardinal Mazarin, seront saisis, &amp; commissaires, sequestres &amp; gardiens establis à
@@ -94,6 +96,10 @@
           recueil éditorial intitulé "Recueil de diverses pieces. Qui ont paru durant les mouvemens
           derniers de l'année 1649." (BM00059). Signé "Du Tillet". D'après Hubert Carrier, texte
           paru le 26 janvier 1649 (Bibliothèque Mazarine, Ms. 4682-1, f. 118v).</p>
+        <p source="Moreau">233. Arrêt de la cour de parlement, portant qu’ouver- ture sera faite de
+          toutes les chambres de la maison du cardinal Mazarin, et description sommaire de tout ce
+          qui se trouvera dans ladite maison. Du 25 janvier 1649. Paris, par les imprimeurs et
+          libraires ordinaires du roi, 1649, 4 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -112,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT
@@ -125,7 +130,8 @@
         <lb/>A PARIS,
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires du Roy.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Privilege de ſa Majeſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Privilege de ſa Majeſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

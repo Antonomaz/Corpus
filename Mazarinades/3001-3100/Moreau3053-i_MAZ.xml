@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3053-i_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3053-i_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -26,22 +27,23 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz15165"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Recueil des pieces secretes de ce temps.</title>
           <pubPlace source="Carrier" ref="geonames:2982652">Rouen</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="84"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48903</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48903" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48903"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15078</idno>
@@ -73,8 +75,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Probablement édité à Rouen d'après Hubert Carrier (Bibliothèque
+        <p source="Mazarine">Probablement édité à Rouen d'après Hubert Carrier (Bibliothèque
           Mazarine,Ms 4682-5, f.45v). </p>
+        <p source="Moreau">3053. Recueil des pièces secrètes de ce temps. (S. 1.), i F- 17 (3) 1649.
+          J'en connais deux : en faut-il davantage ? On comprend qu'il n'y a de secret que dans le
+          titre. Il est clair que tous ces recueils sont venus à la suite et par imi tation des
+          premiers, qui sont les Recueils de plusieurs puces curieu ses , etc. Aujourd'hui ils sont
+          à peu près sans intérêt. Le choix des pièces y est toujours mal fait ; et les amateurs ne
+          manqueront pas de préférer les éditions originales.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -91,14 +99,12 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>RECVEIL
         <lb/>DES PIECES
         <lb/>SECRETES
         <lb/>DE CE TEMPS.
-        <lb/>M. DC. XLIX. <pb n="10"/>
-        <pb n="11"/>
+        <lb/>M. DC. XLIX. <pb n="10"/><pb n="11"/>
         <lb/>TABLE DES PIECES
         <lb/>contenues en ce preſent Recueil.
         <lb/>Ettre de la petite Nichon dau Marai, à Mon¬

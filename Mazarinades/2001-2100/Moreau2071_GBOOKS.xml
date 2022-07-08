@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2071_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2071_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -39,29 +35,27 @@
       <sourceDesc>
         <bibl>
           <ref target="https://books.google.fr/books?id=ijfWrpRb0nwC&amp;hl=fr"/>
-          <author>Parlement de Bordeaux</author>
+          <author ref="isni:0000000119572170">
+            <orgName>Parlement de Bordeaux</orgName>
+          </author>
           <title source="Moreau">Lettre des dames du Parlement de Bordeaux aux dames du Parlement de
             Paris, contenant les remercîments de leur entremise pour la paix, avec un récit
             véritable de tout ce qui s'étoit passé au dedans et au dehors de la ville de Bordeaux
             pendant le siége, écrite pendant la trève.</title>
           <pubPlace ref="geonames:3031582" source="Moreau">Bordeaux</pubPlace>
-          <publisher ref="isni:0000000">
-            <persName>
-              <forename/>
-              <surname/>
-            </persName>
+          <publisher>
+            <persName>Sans Nom</persName>
           </publisher>
           <date source="Moreau" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="18"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Londres</settlement>
+            <settlement ref="geonames:2643743">Londres</settlement>
             <institution>The British Library</institution>
             <repository/>
             <idno type="cote">General Reference Collection DRT Digital Store 8050.g.38.(47.)</idno>
@@ -93,7 +87,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2071.. Lettre des dames du Parlement de Bordeaux aux dames du Parlement
+          de Paris, contenant les remercî ments de leur entremise pour la paix, avec un récit
+          véritable de tout ce qui s'étoit passé au dedans et au dehors de la ville de Bordeaux
+          pendant le siége, écrite pendant la trève. Jouxte la copie imprimée à Bor deaux, 1650, 18
+          pages. Datée du 26 septembre 1650. Je ne crois pas à l'édition de Bordeaux. Cela a été
+          écrit et im primé à Paris. Il faut joindre à cette pièce la Copie de la réponse pour les
+          dames du Parlement de Paris, et la Véritable réponse faite par les da mes, etc. Ni bom, ni
+          rare.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,6 +104,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -117,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/> ETD
         <lb rend="¬" break="no"/> IL I I
         <lb/>DV PARLEMENT
@@ -128,8 +132,7 @@
         <lb/>oa llr lEs eeee
         <lb/>eie eeie eſe peiereoie
         <lb/> S
-        <lb/>louxte la Coppie Imprimée à Bordeaux.
-        <pb n="2"/>
+        <lb/>louxte la Coppie Imprimée à Bordeaux. <pb n="2"/>
         <lb/> adpa
         <lb/>p
         <lb rend="¬" break="no"/>e
@@ -149,8 +152,7 @@
         <lb/>. i..
         <lb/>¬.
         <lb/> E
-        <lb/>nuo Google
-        <pb n="3"/>
+        <lb/>nuo Google <pb n="3"/>
         <lb/>
         <lb rend="¬" break="no"/>AhbmAAe,4
         <lb rend="¬" break="no"/> re
@@ -173,8 +175,7 @@
         <lb/>none ſeruanr des pbunes de ie Caſoues pour ooe
         <lb/>lra&amp; meſneiseuſteee eſtedu ſon de nos r
         <lb/>ss ſaus que vos yeu rempls de d&amp;eut eutenx
-        <lb/> ſté bleſſesde cette peintu
-        <pb n="4"/>
+        <lb/> ſté bleſſesde cette peintu <pb n="4"/>
         <lb/>!
         <lb/>Dans ce calme que vous auezprocuré nous ſo
         <lb/>mes rauies d’apprendre que vouslouyez leeſe &amp; l’va
@@ -209,8 +210,7 @@
         <lb rend="¬" break="no"/>mants de vos viſages, n’a mieux imprimé du reſpect
         <lb/>dans les ames de ceux qui les adorentſans l’oſer dire;,
         <lb/>que noſtre Fort de la baſtide qui paroiſ ſur la face
-        <lb/>1
-        <pb n="5"/>
+        <lb/>1 <pb n="5"/>
         <lb/>dnoſtre viſſe, imprîma dea crainte dans le cœur de,
         <lb/>apeie d eeots ſunes uu s de voroue
         <lb/>ſontinelle de aoſtne’honnear ſi aduancée,jliuga lors
@@ -243,8 +243,7 @@
         <lb rend="¬" break="no"/> dematcher !mais ce ſus aip qee Scoane
         <lb/>dans ſunllux&amp;e reflu eſleuoit’&amp; abaiſſois,cp, ein;
         <lb/>oiua lands &amp; ltduitenmoareſemenpauap¬.
-        <lb/>A
-        <pb n="6"/>
+        <lb/>A <pb n="6"/>
         <lb/>6
         <lb/>proches; le cœur luy deffaillit, lors qu’il falut ſe iee
         <lb rend="¬" break="no"/>ter entre ces deux bras, touſiours eſtandus à ſes care
@@ -277,8 +276,7 @@
         <lb/>de nous-le rendre inconnu à nous meſmes, afin que
         <lb/>comme voſtre Gazerierapprit à celuy de Rome la
         <lb/>mort deſa mere quiy eſtoit decedéede meſme ous
-        <lb/>enouenp e oeſ enei e ne oſlneluelau e¬
-        <pb n="7"/>
+        <lb/>enouenp e oeſ enei e ne oſlneluelau e¬ <pb n="7"/>
         <lb/>37
         <lb/>faire demy touxà droir àd ſon amée, pour apres nous
         <lb/>ataquer, ( Excuſez nous ce mor) à la mode dltalie..
@@ -312,8 +310,7 @@
         <lb/> Surce propos vn Religieux ſç̧auant dans l’Hiſtoi
         <lb rend="¬" break="no"/>e luy dit pour l’adoucir, qu’en ſemblable lieu, vn
         <lb/>Lyon teconnpifant enuers vL homme. ondanneé
-        <lb/>fa rge, qui luy auoit quelque esnpsaant tiré vue
-        <pb n="8"/>
+        <lb/>fa rge, qui luy auoit quelque esnpsaant tiré vue <pb n="8"/>
         <lb/>ae du piedle leſcha empureuſement de ſ laingo
         <lb rend="¬" break="no"/>au lieu d’en faire l curée de. ſa gueule affamé́e..
         <lb rend="¬" break="no"/>Neantmons, ce Tygre plus cruel &amp; moins coura
@@ -348,8 +345,7 @@
         <lb rend="¬" break="no"/>aille liymeſme ceuſer le aombeaude luddou
         <lb/>ze ens hmma; ſaas menſonge; quionrreſté́mcs
         <lb/>aux pieds de cette demy. Lune.
-        <lb/>Que!.
-        <pb n="9"/>
+        <lb/>Que!. <pb n="9"/>
         <lb/>Qnuel plaiſrde luy voir employer les appareils de
         <lb/>ſon berceaaupour codaireſoa ouurage quelle ioye
         <lb/>de hay ea voroeſtedre lesbaades en cordean, &amp; faire
@@ -418,8 +414,7 @@
         <lb/> Aſſi leausons nousno pas anmede aens
         <lb/> lealeil, mai ds agrmes o ou latss,
         <lb/> &amp;aqasnoſte Pors qui eaalao laſfiuseis
-        <lb/>..:
-        <pb n="11"/>
+        <lb/>..: <pb n="11"/>
         <lb/>
         <lb rend="¬" break="no"/>1
         <lb/>Taue
@@ -455,8 +450,7 @@
         <lb/>uûanearce preneucde lunes oenous fiſt menacer
         <lb/>-e ſntrompetsd’expoſernoſtre honneur à la bu
         <lb rend="¬" break="no"/> alioedu ſolſae, &amp; pos bieéusaſon adarice, Ilfupme
-        <lb rend="¬" break="no"/> aape hreſtiep deme nos pas eqpuyer offrir ſes
-        <pb n="12"/>
+        <lb rend="¬" break="no"/> aape hreſtiep deme nos pas eqpuyer offrir ſes <pb n="12"/>
         <lb/> 1
         <lb/>Iulgences Pleniees, des faace que nous aais
         <lb rend="¬" break="no"/>pu commettre, ou pat foree ou par eraite ? Ildeaoit
@@ -491,8 +485,7 @@
         <lb/> Auſſi, ME sp E s, attauerent-ilsinutllenec
         <lb/>hds murailles, qui n’ont peu etre endomagées
         <lb/>qu’en leurs parapels, &amp; au ſomet de déux tours qui
-        <lb/> es lasquent. Nous vous aſeuras qu’elles odeſté.
-        <pb n="13"/>
+        <lb/> es lasquent. Nous vous aſeuras qu’elles odeſté. <pb n="13"/>
         <lb/>3
         <lb/>’ eſpreuefe leurs Canons, &amp; d’ailleurs, qu’eſtan
         <lb/> ncore de trante pieds de hauteur, elles ſont terraſ
@@ -528,8 +521,7 @@
         <lb/>conme aſſiegeane, tantoſt corme aſſiegez, par fois
         <lb/> pareat’, le pus ſouuent par terre, hous fſaiſoit elaire
         <lb/>nent iuger quae nuos ennemis në ſeroienit pas plus vito
-        <lb rend="¬" break="no"/> D
-        <pb n="14"/>
+        <lb rend="¬" break="no"/> D <pb n="14"/>
         <lb/>1
         <lb/>
         <lb/>4
@@ -568,8 +560,7 @@
         <lb/>ont ſeruidix campagnes.
         <lb/>....2..
         <lb/>¬....
-        <lb/>.
-        <pb n="15"/>
+        <lb/>. <pb n="15"/>
         <lb/>5
         <lb/>L’oſerons nous dire MEsaes, puis qu’il eſt veri¬;
         <lb/>table? nous auons veu auec dix mille de nos ennemis,
@@ -604,8 +595,7 @@
         <lb/>ſouſteuupr elle meſme, &amp; conſeruee par ſ pro
         <lb rend="¬" break="no"/>gsmouaemen-parſo gal, &amp; par ſa fnc;...
         <lb/>Mais quele intelligence ſeconde croyez ros
-        <lb/>..
-        <pb n="16"/>
+        <lb/>.. <pb n="16"/>
         <lb/>!
         <lb/>!
         <lb/>1
@@ -643,8 +633,7 @@
         <lb rend="¬" break="no"/>aane l’aſne d’Apulee &amp; meſme encore recon
         <lb rend="¬" break="no"/>oiſtee la Ponipautc legiuime, &amp;meſptiſdnt ’vſur
         <lb rend="¬" break="no"/>pee
-        <lb/> Mais
-        <pb n="17"/>
+        <lb/> Mais <pb n="17"/>
         <lb/>Mais cetropen lfepaadesfndses, inoas he
         <lb/>parlions poua aos mats,. ma pras’plus deiparu
         <lb/>dans lers inteeſts, paree quids en penaen dans
@@ -677,8 +666,7 @@
         <lb rend="¬" break="no"/>cer dans leurs cauſes. llny faudroit point d’Aduocats,
         <lb/>car routes les parties voudroient vous parler, &amp; voir
         <lb/>a Maieſté d vos viſages. Vous poaria pacvn meſ
-        <lb rend="¬" break="no"/>pris, par vn regard de tauers, chaſtier plus les cou¬
-        <pb n="18"/>
+        <lb rend="¬" break="no"/>pris, par vn regard de tauers, chaſtier plus les cou¬ <pb n="18"/>
         <lb/>pables, qu’ade Bohena4 d le gefaeé Qaiſt.
         <lb/>ie bea vvs na, deuoir que ouoes le
         <lb rend="¬" break="no"/>parties troauaſente vos Aeſts aduaorageux ſor

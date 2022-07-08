@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2971_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2971_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -44,13 +45,12 @@
             <measure unit="page" quantity="27"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49943</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49943" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49943"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10554</idno>
@@ -82,10 +82,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Deux états de la p. 14 : pagination "14" située entre "t-il" et "pas"
+        <p source="Mazarine">Deux états de la p. 14 : pagination "14" située entre "t-il" et "pas"
           (A1) ; pagination "14" située au-dessus de "pas" (A2). D'après Hubert Carrier, texte paru
           entre la deuxième quinzaine d'octobre et la première semaine de novembre 1650
           (Bibliothèque Mazarine, Ms. 4682-5, f. 6v).</p>
+        <p source="Moreau">2971 . Raisonnements moraux et politiques , dédiés à tous les princes de
+          l'Europe. Paris , Denys Pelé , 1650, 27 pages. Il ne faut pas confondre cette pièce avec
+          celle que l'on va trou ver sous le titre de Raisonnements politiques et moraux , etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,14 +105,13 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>RAISONNEMENS
         <lb/>MORAVX
         <lb/>ET POLITIQVES
         <lb/>DEDIEZ
         <lb/>A TOVS LES PRINCES
-        <lb/>DE L'EVROPE <figure type="decroation"/>
+        <lb/>DE L'EVROPE <figure type="decoration"/>
         <lb/>A PARIS,
         <lb/>Chez DENYS PELE, ruë de la vieille bouche¬
         <lb/>rie, au gros Tournois.
