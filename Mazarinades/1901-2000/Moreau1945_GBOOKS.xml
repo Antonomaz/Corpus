@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1945_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1945_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -62,13 +58,12 @@
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309370</idno>
@@ -100,7 +95,21 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1945. Lettre de la reine de Suède à monseigneur le duc d'Orléans, avec
+          les offres de cette princesse pour mettre le royaume en repos, et en chasser le Mazarin.
+          Paris, Jacob Chevalier, 1651, 7 pages. - Après la lettre que la reine de Suède n'a point
+          écrite, il y a quelques mots sur l'accueil qu'ont fait aux offres de cette princesse le
+          roi qui les a refusées, le duc d'Orléans et le prince de Condé qui les ont acceptées, le
+          coadjuteur qui n'y a répondu que par des civilités. L'auteur dit que Gondy était suspect
+          aux princes comme ne voulant rien que la place de Mazarin. « Cette nouvelle pourpre ne
+          sera pas plus favorable à la France que la vieille ; et pour changer de bouchon, nous ne
+          laisserons pas de boire toujours de mauvais vin, comme on disoit de Catherine de Médicis
+          abandon nant le gouvernement au roi de Pologne. » Je n'ai point vu de lettre au roi ni au
+          prince de Condé. On vient d'en trouver une au coadjuteur ; mais elle est de 1652, aussi
+          bien qu'une autre au prince de Conty, qui n'a pas, dans l'imprimé, d'autre titre que la
+          suscription : A très-haut prince, etc. Le pamphlétaire ne parle pas de la lettre au
+          Parlement, qui est également de 1652 : Lettre latine de la reine de Suède, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,6 +118,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -124,8 +136,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>T rH E
         <lb/>LETTRE
         <lb/> REINE DE SVEDE.
@@ -138,8 +149,7 @@
         <lb/>v
         <lb/>aag
         <lb/>e ess cr e l s
-        <lb/> dsdar
-        <pb n="2"/>
+        <lb/> dsdar <pb n="2"/>
         <lb/>
         <lb/>l u
         <lb/>
@@ -150,8 +160,7 @@
         <lb/>.
         <lb/>
         <lb rend="¬" break="no"/>e
-        <lb/>-a
-        <pb n="3"/>
+        <lb/>-a <pb n="3"/>
         <lb/>ruopggggprg3
         <lb/>e é&amp;oS’oee&amp;6
         <lb/>Lettre de la Reine de Suede à Mon
@@ -175,8 +184,7 @@
         <lb/>qui ne oauroiens eſre vaineus de peſonner
         <lb/>Vlenneua ſe deteuure eua meſnei le denoil
         <lb/>horame qui vous vendta ele-ey eucomma
-        <lb/>A ij
-        <pb n="4"/>
+        <lb/>A ij <pb n="4"/>
         <lb/>dement de preſenter les miennes u Roy, &amp; aà̀ la
         <lb/>Reine ſa Mere, pour leur temoig ie depl.iroù
         <lb/> ieſuis de voir ſon Eſtat en proyeànos ennemis com
@@ -206,8 +214,7 @@
         <lb/>&amp; deſchargée de l’ambition &amp; du dereglenent des
         <lb/>gens d’Egliſe, ce nenous ſeroic pas vne perite cou
         <lb rend="¬" break="no"/>lolation de voir nos peuples &amp; nos Prouinces en
-        <lb/>repos
-        <pb n="5"/>
+        <lb/>repos <pb n="5"/>
         <lb/>3
         <lb/>repos ſans Eueſques &amp; ſans Cardlna;, pendans
         <lb/>qu’on nous aſſeure que raus vos troubles, &amp; tou
@@ -236,8 +243,7 @@
         <lb/>qui ſes s reçouës, de les pqreer toutes, &amp; de les,
         <lb/>ndre en main propre -pour en tirer reſponſe
         <lb rend="¬" break="no"/> Celle da Roy ayant eſté́ veue dans le Conſeil
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/>-oy
         <lb rend="¬" break="no"/>qi’ſe tient à S Gematn en Eayevn peu
         <lb rend="¬" break="no"/>raant que ſa Majeſté en partit pôuir lleér Ĉr
@@ -267,8 +273,7 @@
         <lb rend="¬" break="no"/>les ſiens iront touſiours deuant -afi d’auoir la pla
         <lb rend="¬" break="no"/>ce-du Mazarin, &amp;redûblêtnos au par ôe chan
         <lb/>gement dangereux. Eſtant certain que cêttenou
-        <lb/>elle pourpre, ne ſera pas plus faurable à la Fran¬
-        <pb n="7"/>
+        <lb/>elle pourpre, ne ſera pas plus faurable à la Fran¬ <pb n="7"/>
         <lb/>ce qu’vne plus vieille qu’il en veut chaſſer, &amp; que
         <lb/>pour changer le beuchon, nous ne laiſſerons pas
         <lb/>de hoire touiours d’auſsi mauuais vin, comme on

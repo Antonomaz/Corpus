@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau203_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau203_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -34,20 +35,21 @@
             diminution des baux &amp; loyers des maisons en la ville &amp; faux-bourgs de
             Paris.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-04-15">mi-avril 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49834</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49834" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49834"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14414</idno>
@@ -79,12 +81,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition sans p. de titre, sans adresse, 6 p., in-8, intitulée
+        <p source="Mazarine">Autre édition sans p. de titre, sans adresse, 6 p., in-8, intitulée
           "Arrêt de la cour de Parlement, pour la diminution des loyers des maisons." (Hubert
           Carrier, Bibliothèque Mazarine, Ms. 4682-1, f. 109v). Signé "Le Maçon". D'après Hubert
           Carrier, texte paru à la mi-avril 1649 d'après sa place dans le recueil chronologique de
           la Bibliothèque Mazarine coté 4° A 13961-14, c'est-à-dire après les arrêts des 6 et 10
           avril (Moreau, n° 261 et n° 264) (Bibliothèque Mazarine, Ms. 4682-1, f. 110).</p>
+        <p source="Moreau">203. Arréêt de la cour de parlement, du 8 janvier 1592, pour la
+          diminution des baux et loyers des maisons en la ville et faubourgs de Paris. Paris, par
+          les imprimeurs et libraires ordinaires du roi, 1649, 4 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,8 +106,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT.
@@ -113,7 +117,8 @@
         <lb/>Par les Imprimeurs &amp; Librairés ordinaires
         <lb/>du Roy.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Majefté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majefté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>

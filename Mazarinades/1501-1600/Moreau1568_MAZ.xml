@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1568_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1568_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -51,13 +52,12 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49020</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49020" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49020"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13013</idno>
@@ -89,7 +89,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1568. Harangue faite à madame la duchesse de Longue ville sur la liberté
+          des princes de Condé, de Conty et duc de Longueville, princes du sang de France, pro
+          noncée par le sieur de Sommerance, lieutenant géné ral civil et criminel de Stenay, et
+          député des trois estats de la province d'Argonne. Paris, N. Bessin, 1651, 6 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>HARANGVE
         <lb/>FAITE
         <lb/>A MADAME

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau207_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau207_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -33,20 +34,21 @@
           <title source="Mazarine">Arrest de la cour de Parlement, les chambres assemblées, le 23.
             septembre 1648.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1648">1648</date>
           <date source="Antonomaz" when="1648-09-23">daté du 23 septembre 1648</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49837</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49837" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49837"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14402</idno>
@@ -78,11 +80,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Arrêt décidant d'adresser des remontrances à l'arrêt du conseil du roi
+        <p source="Mazarine">Arrêt décidant d'adresser des remontrances à l'arrêt du conseil du roi
           du 22 septembre et enjoignant à la municipalité de Paris d'assurer la sécurité dans la
           ville et aux autorités des environs de laisser passer les vivres destinés à la capitale.
           Autre édition publiée la même année chez Michel Mettayer avec une composition
           typographique différente (BM00935). Signé "Guyet"</p>
+        <p source="Moreau">207. Arrêt de la cour de parlement, les chambres assemblées, le 23
+          septembre 1648. Paris, par les imprimeurs et libraires ordinaires du roi, 1648, 4 pages.
+          Pour la police de la ville et le passage des vivres. Il y en a une édition, chez Michel
+          Mettayer, 4 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,8 +106,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST DE
         <lb/>la Cour de Parlement,
         <lb/>les Chambres aſſem¬
@@ -111,7 +116,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires or¬
         <lb/>dinaires du Roy.
         <lb/>M. DC. XLVIII.
-        <lb/><imprimatur>AVEC PRIVILEGE DE SA MAJESTÉ</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>AVEC PRIVILEGE DE SA MAJESTÉ</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>EXTRAICT DES REGISTRES
         <lb/>CE jour la Cour, toutes les

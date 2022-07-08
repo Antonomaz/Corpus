@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1367_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1367_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -29,20 +30,21 @@
           <author/>
           <title source="Mazarine">Factum, pour messieurs les Princes.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" when="1650-05-04">4 mai 1650</date>
           <extent>
             <measure unit="page" quantity="36"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49015</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49015" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49015"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° 19053-2</idno>
@@ -74,7 +76,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Faux factum D'après Hubert Carrier, d'abord publié sous forme de tract
+        <p source="Mazarine">Faux factum D'après Hubert Carrier, d'abord publié sous forme de tract
           intitulé "Remarques véritables sur la lettre envoyée sous le nom du Roi..." (Bibliothèque
           Mazarine, Ms 4682-2, f. 346v). Autres éditions repérées par Célestin Moreau et Armand
           d'Artois : [sans lieu : sans nom, 1650], 36 p., composition typographique différente
@@ -85,6 +87,10 @@
           de départ Texte paru le 4 mai 1650, publié par l'officine animée par Pierre Lénet à
           Chantilly pour le prince de Condé, d'après H. Carrier, "La Presse de la Fronde (1648-1653)
           : les Mazarinades", I, Genève, 1989, p. 110.</p>
+        <p source="Moreau">1367. Factum pour messieurs les princes. (S. |., 1650), 36 pages.
+          L'anteur était nourri de lhistoire de France. Il ne raisonne pas mal; et son style est
+          bon. Il ne peut pas comprendre qu’on emprisonne un prince du sang. « Autrefois on les
+          condamnoit quelquefois à mort ; mais on ne les mettoit pas en prison. »</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>FACTVM,
         <lb/>Pour Meſsieurs les Princes.
         <lb/>LEs Sets d’vne Repablique ou Monarchie ſont heu¬

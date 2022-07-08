@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2083_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2083_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -39,24 +35,25 @@
           <ref target="https://books.google.fr/books?id=1HdKAAAAcAAJ&amp;hl=fr"/>
           <author>
             <persName>
-              <name>Latour</name>
+              <surname>Latour</surname>
             </persName>
           </author>
           <title source="Moreau">Lettre du capitaine Latour contenant la réfutation des calomnies
             imposées au parti du Parlement et de la ville de Paris.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="14"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Vienne</settlement>
+            <settlement ref="geonames:2761369">Vienne</settlement>
             <institution>Bibliothèque nationale d'Autriche</institution>
             <repository/>
             <idno type="cote">127189-B ALT MAG</idno>
@@ -88,7 +85,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2083. Lettre du capitaine Latour contenant la réfuta tion des calomnies
+          imposées au parti du Parlement et de la ville de Paris. Paris, 1649, 14 pages. Naudé
+          classe cette lettre parmi les bonnes pièces (p. 208 du Mascurat). « Quand les rois privent
+          eux-mêmes de leur protection leurs sujets sans justice , ils les absolvent du serment de
+          fidélité. »</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,6 +99,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -113,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>A
         <lb/> rr
         <lb/> I
@@ -130,8 +134,7 @@
         <lb/> de Paris.
         <lb/>A PARIS.
         <lb/> oeii
-        <lb/> l189-B
-        <pb n="2"/>
+        <lb/> l189-B <pb n="2"/>
         <lb/>e
         <lb/>
         <lb rend="¬" break="no"/>¬¬-
@@ -162,8 +165,7 @@
         <lb rend="¬" break="no"/>
         <lb rend="¬" break="no"/>ooua,ooqle
         <lb rend="¬" break="no"/>
-        <lb rend="¬" break="no"/>1 3
-        <pb n="3"/>
+        <lb rend="¬" break="no"/>1 3 <pb n="3"/>
         <lb/>3
         <lb/>hnh
         <lb/>- e aaee.
@@ -188,8 +190,7 @@
         <lb/>coulpables qu’il ſouſtient pour en faine la pu
         <lb rend="¬" break="no"/>ition.
         <lb/>Ponr moy, bin que ie ne veüille coder à qui
-        <lb/>qae ce ſoitla qualité́de vray ſeruiteur du Roy, e
-        <pb n="4"/>
+        <lb/>qae ce ſoitla qualité́de vray ſeruiteur du Roy, e <pb n="4"/>
         <lb/>4
         <lb/>que i’eſtime ne pouuoir-mieux employer mon
         <lb/>ſang &amp; ma vie, que dans ce deuoir, comme re
@@ -220,8 +221,7 @@
         <lb rend="¬" break="no"/>ples, &amp; au reſtabliſſement des preſts, des Parties
         <lb/>des Tailles, &amp; de-affaires au neſneeſtat qu’elles
         <lb/>eſtoient aparauant que e Cardinal Mazarin
-        <lb/>vouloit
-        <pb n="5"/>
+        <lb/>vouloit <pb n="5"/>
         <lb/>vouloit faire par le moyen de certaines Declara
         <lb rend="¬" break="no"/>tions qu’il auoit enuoyé́es en dernier lieu en la
         <lb/>Chambre des Comptes, &amp; à la Cour des Aydes,
@@ -251,8 +251,7 @@
         <lb/>de la Ville de Paris, &amp; de leurs perſonnes, &amp; à leur
         <lb/>communeſubſiſtance, par les meſmes voyes dont
         <lb/>ils eſtoient attaquez, &amp; certes auee ralſon, cax s’il
-        <lb/> B
-        <pb n="6"/>
+        <lb/> B <pb n="6"/>
         <lb/>eſt permis à chacun de deffendre ſa propre vie
         <lb/>contre toute ſorte de violence, &amp; ſi la naturea ar
         <lb rend="¬" break="no"/>mé &amp; muny toute ſorte d’animaux pour cét effer,
@@ -281,8 +280,7 @@
         <lb/>ville de Paris, eſt d’autant plus iuſte, qu’ils n’a
         <lb rend="¬" break="no"/>uoient aurre voye pour ſe garentir de la eruelle
         <lb rend="¬" break="no"/>vengeance qui alloit tomber ſur leurs principa
-        <lb rend="¬" break="no"/>los teſtes, que celle de la reſiſtance, d’autant que
-        <pb n="7"/>
+        <lb rend="¬" break="no"/>los teſtes, que celle de la reſiſtance, d’autant que <pb n="7"/>
         <lb/>1
         <lb/> d’vne part leCardinal Mazarin les auoit exclus
         <lb/>de tout aecez aupres du Roy, &amp; de la Reyne Re
@@ -312,8 +310,7 @@
         <lb/>&amp; rop hardies trompeties;, a eu l’audace d’enle.
         <lb rend="¬" break="no"/>uer nuictamment le Roy, de calonnier le Parle
         <lb rend="¬" break="no"/>ment, comme s’ils euſſent entrepris contrela per
-        <lb rend="¬" break="no"/>ſonne de ſa Maieſteé, deſuſcitet vne cruelle guerre
-        <pb n="8"/>
+        <lb rend="¬" break="no"/>ſonne de ſa Maieſteé, deſuſcitet vne cruelle guerre <pb n="8"/>
         <lb/>Ciuiſe en France, &amp; d’ouurir en meſme temps
         <lb/>toutes les frontieres du Royaume à l’Ennemy;
         <lb/>puiſſamment armeé de toutes parts contre nous.
@@ -344,8 +341,7 @@
         <lb/>eſtant toutaſſeuré́ de reçeuoir de ſa bonteé́, &amp; de
         <lb/>ſa clemence, des teſmoignages d’vne bien-veil
         <lb rend="¬" break="no"/>
-        <lb/> lance,
-        <pb n="9"/>
+        <lb/> lance, <pb n="9"/>
         <lb/>9
         <lb/>lance veritablemaent Royale, &amp; parternelle
         <lb/>lors que Dieu luyaura faic la grace de pauenit à
@@ -376,8 +372,7 @@
         <lb rend="¬" break="no"/>poſerapresàſa volonté, &amp; ſans reſiſtancejde la
         <lb/>vie, &amp; des biens de tous les François, ainſi qu’il
         <lb/>auoit fait par le paſſé, &amp; ſe rendre finalement
-        <lb/>cC
-        <pb n="10"/>
+        <lb/>cC <pb n="10"/>
         <lb/>maiſtre abſolu de ſon Royaume, par la perte du
         <lb/>Roy, &amp; des Princes dua ſang; dont il s’oſt ſaiſi à
         <lb/>cet effet, auec intention, ſans doute, de sen def
@@ -406,8 +401,7 @@
         <lb rend="¬" break="no"/>ré́ toutes les garniſons, il n’y a point de doute,
         <lb rend="¬" break="no"/>que Meſſieurs du Parlement come les princi
         <lb rend="¬" break="no"/>paux appuis de l’Eſtat, ont peu &amp; deu s’oppoſer
-        <lb/>directement par toutes voyes, à vn ſi deteſtable
-        <pb n="11"/>
+        <lb/>directement par toutes voyes, à vn ſi deteſtable <pb n="11"/>
         <lb/>11
         <lb/>deſſein, meſmes contre l’intention de la Reyne
         <lb/>Regente: &amp; ce pour deux conſiderations, noram
@@ -438,8 +432,7 @@
         <lb rend="¬" break="no"/>rer, ny d’en changer les ordres &amp; les maximes,
         <lb rend="¬" break="no"/>commeelle a fait par vneinfnité d’Edicts, &amp; De
         <lb rend="¬" break="no"/>larations non deuëment verifiez; eins elle eſt
-        <lb/>bligéede ſouſmettre ſes ordres &amp; mandemes
-        <pb n="12"/>
+        <lb/>bligéede ſouſmettre ſes ordres &amp; mandemes <pb n="12"/>
         <lb/>¬¬¬¬¬
         <lb rend="¬" break="no"/>12
         <lb rend="¬" break="no"/>au iugement du Conſeil du Roy, afin de leur don.
@@ -471,8 +464,7 @@
         <lb/>en dernier lieu, de ſe maintcenir en ſa liberté &amp;
         <lb/>puiſſancepar armes, contre la force &amp; violence,
         <lb/>par laquelle elle le veut contraindre &amp; aſſuiettir,
-        <lb/> &amp;
-        <pb n="13"/>
+        <lb/> &amp; <pb n="13"/>
         <lb/>.
         <lb/>13
         <lb/>e empeſcher par ce moyen, la deſolation del’Eſtat
@@ -504,8 +496,7 @@
         <lb/>leur eſt ifmportant, &amp; pour ainſi dire, eſſentiel, d’e
         <lb rend="¬" break="no"/>lre toufiours dans les termes de luſtice:Et ſi pou
         <lb/>la meſe confiderain ils ne peuuent perdrevn
-        <lb/>D
-        <pb n="14"/>
+        <lb/>D <pb n="14"/>
         <lb/>4
         <lb/>ſimple Particulier, du moins auec aparence de Iu
         <lb rend="¬" break="no"/>ſtice, ſans lefairecondamner ſur quelquepretexte,
@@ -535,8 +526,7 @@
         <lb/>qu’il les ait fait accuſer &amp; condamner pardes Iuges
         <lb/>legitimes, ainſi qu’il eſtoit obligé de faire du moins.
         <lb/>par contumace: Au contraire, lots qu’on a mandé
-        <lb/>demander ceux qu’il preſupoſoit auoir conſpiré
-        <pb n="15"/>
+        <lb/>demander ceux qu’il preſupoſoit auoir conſpiré <pb n="15"/>
         <lb/>1
         <lb/>15
         <lb/>auec les ennemis de l’Eſtat, afin que leur procez
@@ -567,8 +557,7 @@
         <lb/>auoir faitvne guerreouuerte pendant ſix ſemaines,
         <lb/>mais encore, falloit-il pour doner quelquejappa
         <lb rend="¬" break="no"/> rence de Iuſticeà ce procedé, &amp; mettre les Bour
-        <lb rend="¬" break="no"/>geois de Paris dansvn tort du moins apareAt;leur
-        <pb n="16"/>
+        <lb rend="¬" break="no"/>geois de Paris dansvn tort du moins apareAt;leur <pb n="16"/>
         <lb/>16
         <lb/>faire voir quelque condemnation legitime, contre
         <lb/>ceux du Parlement qu’il pretend eſtre coupables.
@@ -599,8 +588,7 @@
         <lb/>Qi auoient vn pouuoir abſolu ſur leurs Eſelaues, &amp;
         <lb/>qui ſe les acqueroient pour leurproprevtilité, &amp;à
         <lb/>meſme titre que leurs autres bins, &amp; leurs beſtes
-        <lb/>n’auoien
-        <pb n="17"/>
+        <lb/>n’auoien <pb n="17"/>
         <lb/>13
         <lb/>n’auoient poltdrolt d’s abuſeray de les taitter
         <lb/>alecteop de lgeur, béaucoup moins les Princes
@@ -632,8 +620,7 @@
         <lb rend="¬" break="no"/>ſiſter, les arnes auec Ieſquelles elle les oprime,
         <lb rend="¬" break="no"/>eftant non vne force legieimi d’vn Prince verita
         <lb rend="¬" break="no"/>blement offencé contre &amp;dos-Sujets rebelles, mais
-        <lb/>E
-        <pb n="18"/>
+        <lb/>E <pb n="18"/>
         <lb/>18
         <lb/>vne pure loſtilié ennemie,lqui n’a-autre but que la
         <lb/>conſruation d’va homme non ſelement Eſtran
@@ -664,8 +651,7 @@
         <lb/> que le feu Duc de Sauoye laiſſa yolontairement Pi
         <lb rend="¬" break="no"/>gnerol entre les mains du Roy, il vint deſonpr0
         <lb rend="¬" break="no"/>pre mouuement chercher dans l’amité́ &amp; la faueur
-        <lb/>de noſtre Monar quele repos &amp; la ſeurse, dont
-        <pb n="19"/>
+        <lb/>de noſtre Monar quele repos &amp; la ſeurse, dont <pb n="19"/>
         <lb/>19
         <lb/>Eſpagne n’auoit pû lé faire iouïr: mais quand les
         <lb/>ſeruices du Cardinal Mazarin nous auroient eſté
@@ -696,8 +682,7 @@
         <lb rend="¬" break="no"/>ment, n’auoit-il pas de hia lesplaces qu’il vouloit en
         <lb/>ſa puiſſance puis qu’ayant vn pouuoir abſolu ſurla
         <lb/>Reyne, il diſpoſoit à ſa volonté de tous les gouuer
-        <lb rend="¬" break="no"/>nemens, en faueur deſes plus affidez, en pruant les
-        <pb n="20"/>
+        <lb rend="¬" break="no"/>nemens, en faueur deſes plus affidez, en pruant les <pb n="20"/>
         <lb/>ee
         <lb/>¬¬.¬¬
         <lb rend="¬" break="no"/>eeeee¬
@@ -732,8 +717,7 @@
         <lb/>entieresà faute de payement. Que l’on a rayeé l’E
         <lb rend="¬" break="no"/>ſtat des penſions dont le feu Roy auoit gratifié les
         <lb rend="¬" break="no"/>Princes, Gentils-hommes &amp; autres, qui auoient
-        <lb/> merité
-        <pb n="21"/>
+        <lb/> merité <pb n="21"/>
         <lb/>aeriaé lezbié faits pat loursſerdices impcireâs, rete
         <lb rend="¬" break="no"/> ulegages désOffiiess, diuerty les réces del’H0
         <lb rend="¬" break="no"/>&amp;eſ de Vill, au preiudice des Proprieeaires; &amp; al
@@ -764,8 +748,7 @@
         <lb rend="¬" break="no"/>remonſtranceà la Reyne egente, leſquelles fin
         <lb rend="¬" break="no"/>lementone eſté téouuées ſi iuſtes &amp; ſi equieables,
         <lb/>que nonobſtant’tous les obſtacles, &amp; les artifices
-        <lb/>F
-        <pb n="22"/>
+        <lb/>F <pb n="22"/>
         <lb/>22
         <lb/> dont le Cardinal Mazarin ſe ſeruit poûur l’eap
         <lb/>clrer: Leurs Maieſtez leur accorderent au mois
@@ -796,8 +779,7 @@
         <lb/>en vne ſieſtran ge conioncture? qu’oppoſer la logi
         <lb rend="¬" break="no"/>time &amp; veritable authoriteé du Roy, qu’ilstiennenc
         <lb rend="¬" break="no"/>àpreſent en depoſt contre celle qui n’en a quel’ap
-        <lb rend="¬" break="no"/>parence, &amp; declarer perturbateur durepos publie,
-        <pb n="23"/>
+        <lb rend="¬" break="no"/>parence, &amp; declarer perturbateur durepos publie, <pb n="23"/>
         <lb/>
         <lb rend="¬" break="no"/>8
         <lb/> enney du Rpy e, de l’Eſta, l’authaeur dvne
@@ -830,8 +812,7 @@
         <lb rend="¬" break="no"/>nel reproche, d’auoir manqué au R oy &amp; à leur Pa
         <lb rend="¬" break="no"/>trie, ainſi qu’il arriuera ſans doute aà ces Miniſtres
         <lb/>d’Eſtat, qui pour des conſiderations laſches, &amp; des
-        <lb/>¬
-        <pb n="24"/>
+        <lb/>¬ <pb n="24"/>
         <lb/>
         <lb/>iaereſts qul ſonlt, oiſdsetsuttéhe,ota
         <lb rend="¬" break="no"/>hertiuſquesiey, &amp;adheuentnceoreà preſét, aux

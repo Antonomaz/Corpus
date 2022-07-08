@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1986_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1986_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -34,20 +35,21 @@
           </author>
           <title source="Mazarine">Lettre de monsieur le cardinal Mazarin au Roy.</title>
           <pubPlace source="Mazarine" ref="geonames:2975349">Sedan</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" when="1652-01-13">13 janvier 1652</date>
           <extent>
             <measure unit="page" quantity="27"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49197</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49197" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49197"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">Ms 4414-13</idno>
@@ -79,11 +81,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après une note ms. de Dubuisson-Aubenay sur son exemplaire
+        <p source="Mazarine">D'après une note ms. de Dubuisson-Aubenay sur son exemplaire
           (Bibliothèque Mazarine, Ms 4414-13), édition donnée "entre amis, non publiée, à Paris".
           Les lettres au roi et à la reine sont datées "A Boüillon le 23. decembre 1651". - Texte
           imprimé à Sedan d'après Célestin Moreau, à Paris par l'imprimerie du Louvre et paru le 13
           janvier 1652 d'après Hubert Carrier (Bibliothèque Mazarine, Ms 4682-3, f. 208).</p>
+        <p source="Moreau">1986. Lettre de M. le cardinal Mazarin au roi. (S. l. n. d.), 27 pages.
+          Datée aussi de Bouillon, le 23 décembre 1651, mais non signée. On lit ensuite une lettre
+          du cardinal à la reine. Ces trois lettres réunies ne sont pas communes. Si nous en croyons
+          l'auteur des Observations sur quelques lettres écrites au cardinal Mazarin et par le
+          cardinal Mazarin, elles sont sorties « de l'imprimerie baveuse de Sédan. »</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE
         <lb/>DE MONSIEVR
         <lb/>LE CARDINAL MAZARIN

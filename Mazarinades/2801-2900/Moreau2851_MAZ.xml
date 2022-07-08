@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2851_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2851_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -27,22 +28,23 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14600"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Premier recueil de diverses pieces curieuses de ce temps.</title>
-          <pubPlace source="Mazarine" ref="geonames:2802247">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <pubPlace source="Mazarine">Sans Lieu</pubPlace>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="2"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49055</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49055" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49055"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10538</idno>
@@ -74,8 +76,10 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Recueil éditorial. Autre édition sous le titre "Recueil de diverses
+        <p source="Mazarine">Recueil éditorial. Autre édition sous le titre "Recueil de diverses
           pieces curieuses de ce temps." (BM00196). Table.</p>
+        <p source="Moreau">2851. Premier recueil de diverses pièces curieuses de ce temps. Sans
+          Lieu, 1649. Voir Recueil , etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -92,8 +96,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>PREMIER
         <lb/>RECVEIL
         <lb/>DE

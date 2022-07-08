@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau146_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau146_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -27,7 +28,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14615"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Archipræsulis in Joanne Francisco Paulo Gondæo, propter
             impugnatum Mazarinum, germanus character. Oratio panegyrica.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
@@ -44,13 +45,12 @@
             <measure unit="page" quantity="32"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49759</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49759" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49759"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10636</idno>
@@ -82,9 +82,16 @@
         <language ident="lat">Document en latin</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Épître dédicatoire au cardinal de Retz par Matthieu Du Bos. D'après
+        <p source="Mazarine">Épître dédicatoire au cardinal de Retz par Matthieu Du Bos. D'après
           Hubert Carrier, texte paru la deuxième quinzaine de mars 1649 (Bibliothèque Mazarine, Ms.
           4682-1, f. 84v).</p>
+        <p source="Moreau">146. Archipræsulis , in Joanne , Francisco, Paulo Gondœo, propter
+          impugnatum Mazarinum, germanus character. Oratio panegyrica. Parisiis, Mathurinus Henault,
+          1649, 32 pages. L’épître dédicatoire est signée Mathæus du Bos. Voir À monseigneur Charles
+          de Lorraine, duc d’Elbeuf , etc. Dans le latin de Mathieu du Bos, Gondy est tour à tour un
+          Cicéron, un Démosthènes, un Ambroise, un Bernard, un Martin, un Moïse, un Samuel et même
+          un Alexandre ! Il est un héros de piété, de modestie et de chasteté ! Il faut connaître
+          Mathieu du Bos pour ne pas croire à une ironie. Après la paix de Ruel.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARCHIPRESVLIS
         <lb/>FRANCISCO PAVLO
         <lb/>GONDAEO,
@@ -115,7 +121,8 @@
         <lb/>Apud MATHVRUM HENAVLT, viâ Iacobaeâ,
         <lb/>ſub ſigno Angeli Cuſtodis.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Cum licentia</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Cum licentia</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>ſſ’i’tlpt
         <lb/>ILLVSTRISSIMO ET

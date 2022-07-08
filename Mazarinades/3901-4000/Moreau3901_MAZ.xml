@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3901_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3901_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -56,7 +57,9 @@
             contre toute sorte de loix, &amp; que toute la France est obligée de s'y opposer, pour
             l'interest de la couronne.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-08" notAfter="1652-10">entre août et octobre
             1652</date>
@@ -64,13 +67,12 @@
             <measure unit="page" quantity="274"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50226</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50226" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50226"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13319</idno>
@@ -102,7 +104,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Notes marginales en latin, français et grec. D'après Célestin Moreau,
+        <p source="Mazarine">Notes marginales en latin, français et grec. D'après Célestin Moreau,
           confirmé par H. Carrier, texte composé en 3 parties : la première intitulée "La tutelle
           des roys mineurs..." ; la 2e qui est une récupération, avec des ornements différents, des
           p. [1]-180 d'exemplaires de "Le roy mineur ou panegyrique..." de François de Bretagne
@@ -112,6 +114,18 @@
           Montandré. Par Claude Du Bosc de Montandré, d'après Hubert Carrier (Bibliothèque Mazarine,
           Ms. 4682-5, f. 360v). D'après H. Carrier, texte paru entre août et octobre 1652, mais plus
           probablement pendant l'été 1652.</p>
+        <p source="Moreau">3901. Tutelle (la) des rois mineurs en France, avec des 7&lt;&gt;
+          réflexions politiques sur le gouvernement de l'Etat de chaque roi mineur, premièrement :
+          que tous les rois qui ont été dans la minorité, ont eu des tuteurs jus qu'à l'âge de 25
+          ans, soit par choix ou par usurpation, mais toujours par nécessité; II. que Charles V n'a
+          réglé la majorité à 14 ans que pour changer de ré gente, et non pas pour abolir la régence
+          ; III. que la reine contrevient formellement à la constitution de ce sage roi et à la loi
+          salique, faisant un tort irréparable à l'autorité royale ; IV. qu'elle ne tient le pouvoir
+          qu'elle a, que par usurpation, et le veut maintenir par la force des armes du roi,
+          desquelles elle fait un mauvais usage , et est tenue d'en rendre compte à l'État ; V.
+          qu'enfin il s'ensuit que sa puissance est tyrannique, puisqu'elle subsiste contre toute
+          sorte de lois, et que toute la France est obligée de s'y opposer pour l'intérêt de la
+          couronne. (S. 1.), 1652, 64 pages. Rare.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -131,8 +145,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA
         <lb/>TVTELLE
         <lb/>EN FRANCE.

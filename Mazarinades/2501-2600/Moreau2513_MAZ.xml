@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2513_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2513_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -27,11 +28,13 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14580"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Moyen pour obtenir de Dieu une veritable paix, par l'intercession
             de sainte Geneviefve, en la solemnité de la descente de sa chasse.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-06-07" notAfter="1652-06-14">deuxième semaine de
             juin 1652</date>
@@ -39,13 +42,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49130</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49130" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49130"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10215</idno>
@@ -77,10 +79,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition, comportant en plus le paragraphe en italiques avant "Des
+        <p source="Mazarine">Autre édition, comportant en plus le paragraphe en italiques avant "Des
           Faux-bourgs S. Marcel, S. Victor, &amp; S. Jacques, le 6. juin 1652." et de composition
           typographique différente (BM00273). Titre de départ. Texte paru la 2e semaine de juin
           1652, d'après Hubert Carrier (Bibliothèque Mazarine, Ms. 4682-4, f. 84v).</p>
+        <p source="Moreau">2513. Moyen pour obtenir de Dieu une véritable paix par l'intercession de
+          sainte Geneviève, en la solem nité de la descente de sa châsse.Sans Lieu, 1652,4 pages.
+          Rare. Le moyen, c'est la charité. Les personnes pieuses désignées , pour recevoir les
+          aumônes sont, outre les curés, la présidente de Hercé, madame de Traversé et mademoiselle
+          de Lamoignon. Voir le Mandement de l'archevêque de Paris pour le secours des pauvres.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,8 +105,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>MOYEN
         <lb/>POVR OBTENIR DE DIEV
         <lb/>vne veritable Paix, par l’interceſſion de

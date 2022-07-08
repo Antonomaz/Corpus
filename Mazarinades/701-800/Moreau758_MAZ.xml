@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau758_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau758_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -28,12 +29,14 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14835"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">La conjuration italienne contre la France, par l'introduction des
             Italiens, des Anglois, &amp; des Savoyards, au Conseil du Roy. Qui sont les effets de la
             haine que le cardinal Mazarin porte aux François.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Moreau" notBefore="1652-08">après l'installation du Parlement à
             Pontoise</date>
@@ -41,13 +44,12 @@
             <measure unit="page" quantity="29"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49116</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49116" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49116"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12672</idno>
@@ -79,8 +81,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Texte paru après l'installation du parlement de Pontoise, d'après
+        <p source="Mazarine">Texte paru après l'installation du parlement de Pontoise, d'après
           Célestin Moreau.</p>
+        <p source="Moreau">758. Conjuration (la) italienne contre la France par l’introduction des
+          Italiens, des Anglois et des Savoyards au conseil du roi , qui sont les effets de la haine
+          que le cardinal Mazarin porte aux François. Paris , 1652, 39 pages. Après l’installation
+          du parlement de Pontoise.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,8 +103,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA
         <lb/>CONIRUATION
         <lb/>ITALIENNE

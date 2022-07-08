@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3100_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3100_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -29,25 +30,26 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14781"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Relation contenant tout ce qui s'est fait &amp; passé dans la
             ville de Pontoise, entre les vrais serviteurs du Roy, &amp; les partisans du cardinal
             Mazarin. Avec la conspiration secrette de quelques uns des plus apparens pour livrer la
             ville aux troupes du duc d'Elbeuf, decouverte par les habitans</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <extent>
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48897</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48897" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48897"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12163</idno>
@@ -79,7 +81,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">3100. Relation contenant tout ce qui s'est fait et passé dans la ville de
+          Pontoise entre les vrais serviteurs du roy et les partisans du cardinal Mazarin, avec la
+          con spiration secrète de quelques uns des plus apparents pour livrer la ville au duc
+          d'Elbeuf, découverte par les habitants. (S. 1., 1652), 12 pages. Très-rare. Querelle de
+          petite ville au sujet des tailles. Ce pamphlet pour tant est curieux à cause des familles
+          qui y sont nommées.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>RELATION
         <lb/>CONTENANT TOVT
         <lb/>ce qui s’eſt fait &amp; paſſé dans la ville

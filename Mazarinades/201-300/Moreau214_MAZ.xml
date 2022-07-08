@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau214_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau214_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -37,20 +38,21 @@
             de commettre aucunes exactions &amp; violences à l'endroit des subjets de sa Majesté :
             et à eux enjoint, vivre &amp; se contenir suivant les ordonnances.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1648">1648</date>
           <date source="Carrier" when="1648-12-22">22 décembre 1648</date>
           <extent>
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49853</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49853" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49853"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14413</idno>
@@ -82,10 +84,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mention de lecture et publication le 19 décembre 1648 signée "Jossier".
+        <p source="Mazarine">Mention de lecture et publication le 19 décembre 1648 signée "Jossier".
           2 états p. 5 : signature "Besace" à la griffe (état A) / sans la signature (état B). Signé
           "Du Tillet". D'après Hubert Carrier, texte paru le 22 décembre 1648 (Bibliothèque
           Mazarine, Ms. 4682-1, f. 112v).</p>
+        <p source="Moreau">214. Arrêt de la cour de parlement, du 17 décembre 1648, portant
+          défenses, sur peine de la vie, à tous gens de guerre, capitaines, soldats et autres , de
+          commettre aucunes exactions et violences à l’endroit des sujets de Sa Majesté, et à eux
+          enjoint de vivre et se contenir suivant les ordonnances.Paris, 1648, 4 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR DE
         <lb/>PARLEMENT, Du 17. Decembre 1648.
@@ -118,7 +123,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires
         <lb/>ordinaires du Roy.
         <lb/>M. DC. XLVII.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſeté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſeté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

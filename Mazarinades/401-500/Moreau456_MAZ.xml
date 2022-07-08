@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau456_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau456_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,13 +49,12 @@
             <measure unit="page" quantity="23"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49865</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49865" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49865"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12515</idno>
@@ -86,9 +86,22 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Célestin Moreau, pamphlet qui expose un programme de très
+        <p source="Mazarine">D'après Célestin Moreau, pamphlet qui expose un programme de très
           larges réformes. D'après Hubert Carrier, texte paru après le 20 juillet 1652 (Bibliothèque
           Mazarine, Ms. 4682-1, f. 238v).</p>
+        <p source="Moreau">456. Avertissement, envoyé aux provinces pour le grand soulagement du
+          peuple, sur la déclaration de mon- seigneur le duc d’Orléans, lieutenant-général du roi
+          par toute la France, pays, terres et seigneuries de son obéissance. Par:s, Samuel de
+          Larru, 1652, 23 pages. Ce pamphlet, qui a été publié en vertu d’une permission spcciale,
+          contient le programme des plus larges réformes : réduction des tailles à neuf millions,
+          dispense pour les campagnes pendant trois ans, rappel des intendants de justice,
+          convocation des États géné- raux à Paris , cahiers reçus pour lois, organisation d’une
+          milice “ avec des officiers élus, etc. Que ne promettait-on pas au peuple ? Il est à
+          remarquer, cependant, qu’on ne touchait aux priviléges d’aueune classe, d’aucune
+          corporation. C’était l’autorité royale qui faisait les frais de la guerre. L’Avertissement
+          est une sorte de charte, où tout est réglé , méme le prix du sel et du charbon. Ajoutons
+          que les exemplaires n’en sont pas communs ; et nous aurons donmné toutes les raisons, qui
+          doivent le faire rechercher.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -113,8 +126,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ADVERTISSEMENT
         <lb/>ENVOYE AVX PRO¬
         <lb/>uinces, pour le grand ſoulage¬
@@ -126,7 +138,8 @@
         <lb/>A PARIS,
         <lb/>Chez SAMVEL DE LARRV, prés S. Eſtienne.
         <lb/>M. DC. LII.
-        <lb/><imprimatur>Auec Permißion</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Permißion</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>ADVERTISSEMENT

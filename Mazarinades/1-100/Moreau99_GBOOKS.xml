@@ -1,943 +1,914 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI type="non_classé" xml:id="Moreau99_GBOOKS" xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title source="Moreau" type="main">Apologie curieuse pour les justes procédures du
-                    parlement de Paris jusques au jour de la conférence ( de Ruel), et pour servir
-                    de supplément aux Motifs véritables de la défense du parlement, etc.</title>
-                <title type="sub">Édition Antonomaz</title>
-                <respStmt>
-                    <resp>Chaîne de traitement</resp>
-                    <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven
-                        Karine</persName>
-                    <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune
-                        Gaël</persName>
-                    <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
-                        Jean-Baptiste</persName>
-                    <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz
-                        Alexandre</persName>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-                <ref target="https://github.com/Antonomaz"/>
-                <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-                <availability n="cc-by" status="restricted">
-                    <licence target="https://creativecommons.org/licenses/by/4.0"/>
-                </availability>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl>
-                    <ref target="https://books.google.fr/books?id=BkhCAAAAcAAJ"/>
-                    <author>
-                        <persName>
-                            <forename/>
-                            <surname/>
-                        </persName>
-                    </author>
-                    <title source="Moreau">Apologie curieuse pour les justes procédures du parlement
-                        de Paris jusques au jour de la conférence ( de Ruel), et pour servir de
-                        supplément aux Motifs véritables de la défense du parlement, etc.</title>
-                    <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-                    <publisher ref="isni:0000000109284925">
-                        <persName>
-                            <forename>Cardin</forename>
-                            <surname>Besongne</surname>
-                        </persName>
-                    </publisher>
-                    <date source="Moreau" when="1649">1649</date>
-                    <extent>
-                        <measure quantity="22" unit="page"/>
-                    </extent>
-                    <note type="format">in-4</note>
-                    <note cert="high" type="BM_identifier">BM00720</note>
-                    <ref cert="high"
-                        target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49592"
-                        type="BM_notice"/>
-                </bibl>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement/>
-                        <institution>Bibliothèque de l'État de Bavière</institution>
-                        <repository/>
-                        <idno type="cote"/>
-                    </msIdentifier>
-                    <history>
-                        <provenance>
-                            <stamp>False</stamp>
-                        </provenance>
-                    </history>
-                </msDesc>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <projectDesc>
-                <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif
-                    principal est de fournir un texte destiné à l'exploration avec des outils
-                    électroniques. De ce fait, ce n'est ni une édition philologique, ni une édition
-                    pédagogique ou de redécouverte d'un auteur oublié.</p>
-                <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations
-                    de bibliothèques numériques publiques et de Google livres.</p>
-                <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec
-                    Kraken.</p>
-            </projectDesc>
-            <editorialDecl>
-                <p/>
-            </editorialDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="fra">Document en français</language>
-            </langUsage>
-            <abstract>
-                <p source="BM_notes"/>
-            </abstract>
-            <textClass>
-                <keywords>
-                    <term type="form">prose</term>
-                    <term type="genre">non renseigné</term>
-                    <term type="subject">Cisneros‎, Francisco Jiménez de‎, 1436-1517 </term>
-                    <term type="subject">Charles-Quint‎, empereur germanique‎, 1500-1558 </term>
-                    <term type="subject">Richelieu‎, Armand Jean Du Plessis‎, cardinal duc de,
-                        1585-1642‎ </term>
-                    <term type="subject">Anne d'Autriche, 1601-1666</term>
-                    <term type="subject">Conférence de Rueil</term>
-                    <term type="handwritten_note" subtype="no"/>
-                    <term type="table_of_content" subtype="no"/>
-                    <term type="illustration" subtype="no"/>
-                </keywords>
-            </textClass>
-        </profileDesc>
-        <revisionDesc>
-            <change status="corrected" when="2021-11-18" who="AB"/>
-        </revisionDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <p>
-                <pb n="1"/>
-                <lb/>APOLOG1E
-                <lb/>CVRIEVSE
-                <lb/>POVR LES IVSTES PROCEDVRES
-                <lb/>DV PARLEMENT
-                <lb/>DE PARIS
-                <lb/>Iuſque au iour de la Conference
-                <lb/>Et pour ſeruir de ſuppléement aux Motifs veriables. <figure type="decoration"/>
-                <lb/>A PARIS
-                <lb/>Chez CARDIN BESONGNE, ruë
-                <lb/>d'Eſcoſſe, prés S. Hilaire.
-                <lb/>M. DC. XLIX.
-                <lb/><imprimatur>AVEC PERMISSION</imprimatur>.
-                <pb n="2"/>
-                <pb n="3"/>
-                <lb/>APOLOGIE CVRIEVSE
-                <lb/>POVR LES ISTES PROCEDVRES
-                <lb/>du Parlement de Paris,
-                <lb/>Iuſques au iour de là Conference.
-                <lb/> Ee poar ſerair de ſuppléement aux Motifs uer itables.
-                <lb/>Ex n Eae nounarend ſ
-                <lb/>e el lueiedaoiroeane le eue e irnilene
-                <lb/>pnun e toun de de oeile e e renr e
-                <lb/>ne oe e pie oeoeouoiene nen e ine
-                <lb/>Airniſe les er pe en a nes enue enoe!
-                <lb/>Frdeinnoene e i enrede oun lieioune enniuir
-                <lb/>eeneune mnnſin l oeen dine enl er e lue nelen
-                <lb/>ie ne eue eneſeu ieſoueae onnuinaeoaiu pa¬
-                <lb/>Ve nuene de ſes plus gandes aſnaire
-                <lb/>einr ilſefeieuonene eneienn
-                <lb/>elr nune e ſieneneoue loaenreneue e e
-                <lb/> oaie pe ſe e len e erar eneie n ’ unmne ſee
-                <lb/>nſi ienr lini n le ene iueei rne rene eder
-                <lb/>e edleiuilien ereuer enlenis lee oen e enr
-                <lb/>l eienenueuelereiereaeneimu
-                <lb/>dſenileiue le ereoeiueoireiaeine¬
-                <lb/>a e renine den e ioeneleiui nniene
-                <lb/>ieinene ereireieeir ne oee
-                <lb/>ernoeieieiie eſeneunrereuere
-                <lb/>erenuſe eni on edene rre reaerele rene
-                <lb/>lrlſieoi elie uerſoeſai eenei eies
-                <lb/>eie eoune eoenea ene eprue
-                <lb/>Eeieiſienreneneio eoun nei eeietee
-                <lb/>nee deli oe ne e e e en e eui ieien de n
-                <pb n="4"/>
-                <lb/>¬¬
-                <lb/>4
-                <lb/>ment amblatoire, qula durée iuſques à ae qu’il ait eſté fai ſo¬
-                <lb/>deneaieen la vile de Paris, eaiale du Royaume, an deren¬
-                <lb/>de au publicela meſme ufice que le Coaſeil du oy leus di;
-                <lb/>ſhbuoi, ans pour ce eſtre priuez de la coenoiſſance des prn
-                <lb/>es aaires de ’Eſat, qui ne ſe reſouôoent que pat lon
-                <lb/>Conſeil.
-                <lb/>L’n ſcait qu’ourte ces legiimes Caneilere ’ Eas qui
-                <lb/>9 compoſoientet Auguſte Seat, ily a eu des vſurp-reus qui
-                <lb/>ſe ſont laiſſez aller a la violence, &amp; ont ruinë toures ces illuſtres
-                <lb/>Compagnies, ou du moins les ont tellement affoiblies qu’elles
-                <lb/>eſtoient demeurees preſque inutiles.
-                <lb/>C ceque airent les trente Tyranad’henes, &amp; les di de
-                <lb/>Rome, aptés s’eſûtrt ſaſis de PEſtat, &amp; l’auoir change en vue
-                <lb/>Oqgarchie cres-inſolence, &amp; auparauant ces derniers, Tar¬
-                <lb/>quießuperbe, apres auoir change le gouuenement legiui¬
-                <lb/>e eſes padeceſeurs en vne dominanion yrannique &amp; in¬
-                <lb/>ſuppottable.
-                <lb/>b’asaneage, u eſt plus aiſe de calomnier les actions n
-                <lb/>Prince qui coaduit ſes affires par le conſel &amp; miniſtere de peu
-                <lb/>de gens &amp; de quelques Oficiers rtieuliers: que celuy qui e
-                <lb/>gouaerné paf les auis reſolutions d’vn Conſet celebre, ap¬
-                <lb/>ptbuué &amp; enpoſé des plus grands, des plus ſages &amp; experi¬
-                <lb/>mentez de ſon Eſtar
-                <lb/> On adioaſte à cela, que les affaires eſtant entre les mains de
-                <lb/>peu-de perſonnes , il ſera plusfacle a vn Prnce Eſtranger ouà
-                <lb/>vn autre, qui aura des deſſeins conere l’Eſtat, de le trauerſet,
-                <lb/>quſt el les eſtoient entre les maine d’vne Compagnie de Con¬¬
-                <lb/>ſeillets compoſez de gens de bien; eſtant beaucoup plus aiſé
-                <lb/> de pratiquer &amp; corrompre vn petit nombte d’hommes que
-                <lb/>tout vn geand Corps.
-                <lb/> Ore cela, il eſt diicile defire choix partieulier de quel¬
-                <lb/>e vs pout leur confier ee que le Prince eſtime de plus egrãd
-                <lb/>poids, ſais en meconeenter ininis aucres; &amp; en ce faiſant iet¬
-                <lb/> r des ſemehces de roubles, &amp; queuofoisde ſoeuemene.
-                <lb/>Ca ou conſe eroi ue peut ere compoſe que de peu de
-                <lb/>peonnts, ceſta dire du Prnce ou de qoare ou ono dni¬
-                <lb/>es oat nl yen vu plu grand uomote, ee ne ferplu ¬
-                <lb/>Couſeil eſtroit.
-                <pb n="5"/>
-                <lb/>Or dans vn grand Eat, eel qu’eſt celuy de la Franc, ilya
-                <lb/>pluiour Grands &amp; encores de grnde Compegmiesreſtablie¬
-                <lb/>Selonoue nains &amp;Cqui pa leurefuliſement one paurs ca lad:
-                <lb/> miniiruron deis grandosafaires: Que ſ oreduit reſtrain
-                <lb/>lemaniementde eleaafire prinepaleù pudeerſonne.
-                <lb/>Sn meconrenea romuece grand Cotpsde l’Eſtat, nPoſ¬¬
-                <lb/>eonie Cnſei eit ltenuie deoue ceue Conpane
-                <lb/>ou peue nuire infini ineonauemen Caru e.
-                <lb/>lanu ſes aes ſe veulene maincenit en depi de vous u
-                <lb/>uietounermunais, pout oeteaeilacabalent enſembl.
-                <lb/>Vu iule perſetoux dinre de leurmaſie &amp; oupuble, l
-                <lb/>nnount ods lenpenſe eequis coiemt pouuoire¬
-                <lb/>i a eut ceonſenaion, ſimarinat que tout le monde ee
-                <lb/>i uunrn ils eonnenuent aui delux pana s n le
-                <lb/>re oamnent eeus quis ſçuentleurnuure, &amp; den iu
-                <lb/>paſſent ſouaent à l’inſolencé &amp; à la cruauté.
-                <lb/>e eſie pe ſieunmoe des iiniſiuenfianniſun cenin one.
-                <lb/>es iu apareo que uutrſlu onlenedn denunlue
-                <lb/>dir dlu l ine ennuoerea e perunſs lE pinr et
-                <lb/>u urunre ee en neaniu rie de pueuauaſen es e denr
-                <lb/>’niane oueſenoee al y a len de cone nt lan laoen
-                <lb/>enue ne eonle uenunee l dlea ae lbonoioe uns one
-                <lb/>enei eue u une e ns ueu unres undies s eonie
-                <lb/>ele d e e ni ſe eouiroi da remue &amp; qudela l le
-                <lb/>leon e lt eſ enſe i nui neina e eeuine l peun ſaeſ¬
-                <lb/>que le fire au iee en mgouenel doeqnm e,
-                <lb/>e rneren e e pe e deouie dane le deneunr le
-                <lb/>ne rne en u piea odilues vu cdunre ie
-                <lb/>lee eliut id ſeuounur uo prndosaaunen uni eie e
-                <lb/>nleler e nle p en ue eueſini u ie di de noene
-                <lb/>un ne e onun n e i ierne ieroune , le e i enn
-                <lb/>n pesl loune e de ei e e renmenoi eioendn e aeſe
-                <lb/>nneneuen ne eſde ue dupeſonuasſauendie ner
-                <lb/>Eeenener ue oei de nereie e le le eue
-                <lb/>’lelune e lnes den leu rede daiflauaeroie dlunn
-                <lb/>oeeneneur lneſenenſir lſrnie ſoe deaiue oeu ſe
-                <lb/>pnuiene toue e lueleunr e ſenerus ee e le nue
-                <lb/>triepu ee le en ſaſa ueuen arnaoa ſao¬
-                <lb/>B
-                <lb/>aa¬
-                <pb n="6"/>
-                <lb/>¬¬
-                <lb/>eelei!
-                <lb/>nemmeuſeaeuſanuon aout bampyleinee.
-                <lb/>lper e eno nunres raedirnoins ſlieueſene denenr
-                <lb/>e ln eneun nu aeeqeeue linl dne le oe e
-                <lb/>enuner e n n eun e e lduielosau ponenoenene ns dele
-                <lb/>eſenune lun e lſe eououaneneus aſiu aunoie ſdniendlelee
-                <lb/>n ilſ iſon aus nos u donuant pou ſeus oonueneeri
-                <lb/>enele l l le ſnuln e qui ne le lie pont uuoit eſtes nna
-                <lb/>aueun Miniſtre tant abſolu ai-il eſto.
-                <lb/>linler ſer dil iue eounuoinie denre lhamn aſ
-                <lb/> le nro n e eupu iu paſeoan ooe ſene onie
-                <lb/>lene ure nne ee oeli a r noue uir nne, ieeus des lonl
-                <lb/>ueneni eſielieleueoe oe oe rr ous eiuie nei pnr nel
-                <lb/>l nr ue e eure enſiu lures noropoienerauaeoreſe
-                <lb/>pe ene enr le pen enil rue eooe pous ee e den
-                <lb/>le i i n n o ſuinu eni ſoue queila iendu ls Pne ſdn
-                <lb/>’renu es vles eſoies, le plaux pyne poſt au vol s un
-                <lb/>enus u uo oeſeonr de Paraſari leus l daebud ſunuet
-                <lb/>e iesarmees inees flauto d’argent &amp;e de ſeoour lerenme
-                <lb/>ni foiee noſure miſere, dont loy ſeul a profite.
-                <lb/>P pu eooile dinſeoieeiieiuouluoudreuu cone
-                <lb/>emanes, ors ouen arendua ſemeſbes , poury auoir das e
-                <lb/>une a fa deuonon, lesayans c6me incerdits, ila vouluretra
-                <lb/>er iles aoeu de oiele reudte ua loboleſe ronuiee uſu
-                <lb/>ete au’ilea, aſer les priuileges des propres doaſtique
-                <lb/>e la maiſon du Roy,oerla plus ſeure garde de ſa Majeſte, n
-                <lb/>eaſſane eerce genereaſe &amp; fdeile comapagnie de ſes Mouſque¬
-                <lb/>aires à cheual, pour en mettre d’aure à ſa volonté : compô
-                <lb/>gnie qui auoiteſté choiie &amp; eſtablie par le defunct Roy, p
-                <lb/>ſe la plus ſeute de ſa perſonne, &amp; remplir la Cour oyale
-                <lb/>d’Officiers Iltaliens, &amp; les places meſmes des Ociers des ar¬
-                <lb/> mees &amp; de la guere, &amp;e renforeer la garde de ſa peſonne de
-                <lb/>cent Caualiens, &amp; Fuzelies, dont il affoibliſſoit celles qui
-                <lb/>eſtoient neceſſaires, fait perir los Regimens &amp; Copagni,
-                <lb/>at de cheual que de pieds dans les armées eſtrangeres, faute
-                <lb/>d’argent &amp; de viuras.
-                <lb/>E ’eyant ſeeu le Parlement de Paris, que le mal alloit
-                <lb/>oateuenit uemdiable, i de bonne hure onn’y
-                <lb/>s, ,,,,,,aaaa a,aa-
-                <pb n="7"/>
-                <lb/>3
-                <lb/>1
-                <lb/>apportoit le ſecours neceſſaire, vnit en ſon adionction les au¬
-                <lb/>tres Compagnies Souueraines de Paris, comme la Cour des
-                <lb/>Aydes, la Chambre des Comptes, le Grand Conſeil, les Mai¬
-                <lb/>ſtres des Requeſtes de l’Hoſtel du Roy, les Treſoriers Ge ne¬
-                <lb/>raux &amp; autres Corps, qui par deputation &amp; aſſemblé́e trauail¬
-                <lb/>lent &amp; commencent à remedier aux abus par les voyes les plus
-                <lb/>douces, ſages &amp; moderées poſſibles, comme par Remonſtrau¬
-                <lb/>ces tres -humbles à la Reyne, aux Princes du Sang, pour leur fai¬
-                <lb/>e entendre les maux que les deſordres faiſoiene naiſtre dans le
-                <lb/>Royaume, receut les offres des autres Cours Souueraines de
-                <lb/>Etance, de ſeconder ſes bonnes &amp; iuſtes intentions, &amp; de de¬
-                <lb/>meurer conſtans dans ſes delibetations, qu’ils ſuiuroieat &amp; fe¬
-                <lb/>roient obſeruer par toutes les Prouinces pour le bien &amp; ſeruic¬
-                <lb/>du Roy, ſoulagement du peuple &amp; conſeruartion de l’Eſtat,
-                <lb/>neantmoins leurs procedures equitables ont eſte mai intrp¬
-                <lb/>ees par ceux qui veulene continuer à viure dans le deſordre &amp;
-                <lb/>emichir de la rune &amp; de la miſere du peuple, &amp; ſe ſont ſeruis
-                <lb/>du nom de l’auhorite du Roy, pour faire proſerire &amp; éloi¬
-                <lb/>sneraueuns deſdies Cours Souueraines, &amp;e au milieu des aio
-                <lb/>degraces faites à Paris pour la victoire ſignaĺe obpsrué P
-                <lb/>re les Etpnola pre de Lens, faire piſonnie eſeust
-                <lb/>Sunſmeri preuſent &amp;derouenles Conſeile auPalemie
-                <lb/>In eunduitau Aois de Vineennes l’auure pourmeń en diuen¬
-                <lb/>ieu autre qui euſrent eſle eaiue de nmieſnme, rls euſen
-                <lb/>ſie a duuriu le onſoirnuiou, ’ areit dea leunfu
-                <lb/>eauſe du ſoudeuenment de la populace de Paris, qui aloit nes
-                <lb/>e ee prande vieenpgond deſordre, ſiaPoirgroiſe neur
-                <lb/>euenmus i ’de diam par la pniſe des anmes eantonnanens ar
-                <lb/>eades par toorusſuuen, op de qpde etablindauou
-                <lb/>leaquurieurs rou neanmoinsreiſollent uiret lelr
-                <lb/>iuſiueu ene eue eu deue lſleſieuns ſoeneeinisens leee
-                <lb/>nieneu o ſiuoee de ilereſes eeoides de ous lrPe
-                <lb/>iu linut n ſeie ſe ri eun eonenann ie Cieiomdluaure ſit e
-                <lb/>En oe enee ae anutoue eurnieuis qu auoene onpete
-                <lb/>pauienerne ie ecere ovaie Cmpmaoie uniouſi&amp;e e
-                <lb/>raaire auvoiontez &amp; eonmandemens da Roy.
-                <lb/>e urole ade orine leait pointmeae amainE
-                <lb/>elounſi nleutou leor ae ldunieutle pe u¬
-                <lb/>-¬
-                <pb n="8"/>
-                <lb/>¬¬
-                <lb/>aonſtue uieai rel l de l l eile ene ueun
-                <lb/>uonleue ein elee ineainee nenueenele
-                <lb/>r ſiunurene eone e lſenaiſn eneneeui.
-                <lb/>irueeil edenme l perereie feieiene e.
-                <lb/>li nele eſeoueue e en reoeie i lene e e
-                <lb/>luiennererpune ieuoen pns pene n elnes
-                <lb/>a eeſlunen e elene e ueſrernreeneuenlis
-                <lb/>enenſau eln onene eien e eninuies e enuenee
-                <lb/>enre unuinre n ie dene eu eue oeoeni
-                <lb/>e enunennenenie uerne ns eiae ene on
-                <lb/>ppouneron de u e ieuaueoſions ue ue leoenees re
-                <lb/> luredne enenue eue ine pienioinele pee e
-                <lb/>uel l ne u ruenune le eonoun deunenerne oeun¬
-                <lb/>eunſioune oeruſueueron eſroreoniſeounune ſ en rne
-                <lb/>oen dlen enre e ue l l au u eordae onur unue l ire
-                <lb/> eonel en o nenneueue eoe eu die eine le
-                <lb/>pe enene ueo eeriu eneie ue ſer oue deln ln dle ie
-                <lb/>aanuie n ein one ſen en ie e e i ieeinun ſe e el
-                <lb/>ae eſe oe nue e enese euer e deur lnrue de nr de
-                <lb/>lenie ie ne ue ene nes eremene eoe ſur ſun oe
-                <lb/>eau deie re e enunu e ueinuoe utareſeonons deou
-                <lb/>e oui uoin niſie ea es qpermieieu Conſen
-                <lb/> qoi uenrns nourene ue e nu ſue edloi lue eque lſle¬
-                <lb/>aiun uoit die enlr les ronppes da o vui coien
-                <lb/>pn ile u deil us ueni e elnironu de Pais oonreſie
-                <lb/>eune e lunenu ne i e enunes e pnaund reainle l le
-                <lb/>ln e en u ean ſie e ne uree reius deueinanrnr
-                <lb/>e ſe uneaſiten des umulte arnags, volees, meurr
-                <lb/>euenile ur eus ui pie l le puin eui nanmue, C ei
-                <lb/>donunu ſuie aſ panlenene de adonnet ere coire launi
-                <lb/>e leeiurn ennet de leae lieii a lnyenioint deſorur de
-                <lb/>a Cour dans a, heures, &amp; du Royaumé dans haictaine
-                <lb/>ute dequoyiſ pit i delenſe ie reſrat &amp; gouue-roement des
-                <lb/>uairesermain pour remee ux meonuenaens qui pouo
-                <lb/>arriuer de làa, non ſeulemene dans Paris, mais par toute la Fta¬
-                <lb/>ce. Et afin d’empeſchet le courts d’vne ſi petnicieuſe entrepr¬
-                <lb/>ſe de ruyner Paris &amp; tout le Royaume, reſolut de prendre l
-                <lb/>armes, d’éluire des &amp;eneraux, des Capiaines &amp; Oheiers, &amp; de
-                <lb/>faire
-                <lb/>ut
-                <lb/>r̂
-                <lb/>vqiles1
-                <lb/>¬
-                <lb/>dtt
-                <lb/>u!
-                <lb/>tpou
-                <lb/>Lq
-                <lb/>ulesd
-                <lb/>han
-                <lb/>oin
-                <lb/>po!
-                <lb/>d8
-                <lb/>ute
-                <lb/>&amp;
-                <pb n="9"/>
-                <lb/>93
-                <lb/>faire contribuer euxmeſnes tout le Corps tant pour laſub¬
-                <lb/>ſſtante des gens de guerre, que pour auoir le pouuoir de faire
-                <lb/>venir les viures à Paris.
-                <lb/>De là chacun peut iuger de l’imprudence de ce premier Mi¬
-                <lb/>niſtre &amp; de ceux qui prennent intereſt en l’execuion de ſes
-                <lb/>mauuais deſſeins, d’auoir voulu ruiner cet Auguſte Senat, le te¬
-                <lb/>nir pour ſe ditieux &amp; de s’enté lre auee les Ennemis de ce Eeae.
-                <lb/>Luy qui eſt tres-inteneſſe &amp; porte A ſoutenir les l-i fondamé¬
-                <lb/>rales du Royaume, a faire valoir l’authorit du Roy, &amp; à̀ cha¬
-                <lb/>ier ceux, qui comme criminels de lete-Majeſté y avroiens la
-                <lb/>moindreinteluipencee auee nos Ennems, comme ila aſez fai
-                <lb/>paroſre en la puirion demort d’vn Conneſtable de Fance,
-                <lb/>d’vnSur-inen dant de s Fmances.des Mairargues, des Lihoſtes&amp;
-                <lb/>aes oOieierns de la Couronne qui auoiene coniure auec l’e.
-                <lb/>ſtranger la ruyne de l’Eſtat.
-                <lb/> ſauuais Conſei de vouloir faire perir les plus couregur
-                <lb/> idele Oeiars de eetiluſe Paément, poutseftre auee
-                <lb/>oue fome ntegnite pore a l deenſe de liluſtiee uuſeut
-                <lb/>e dui oi auſoilugemene dupblie, eſerr inſn duille
-                <lb/>auoieneaiuran erne eule cooiuraniieuque ’niſnoirefl
-                <lb/>ie puns biens qu’ia fais ’aeeroiſement de ee Eat&amp;e
-                <lb/>ſplendeur de cette Courone.
-                <lb/>noene e e on euen ie rns nainſiemnrelre l nnſle
-                <lb/> uernee qei prerendoit auoir de la Guyenne, en le
-                <lb/>condamnant de pur crime de felonie.
-                <lb/>oui a enſiruer uli oe Saique onne eaaoudene Pe ie
-                <lb/>auon d pe, cutl, Vi, qurndiugeoi la Couronne derra¬
-                <lb/>ce aux Anglois.
-                <lb/>ne ſ eſeiute nunle la eeſeonqnele o ’inunoprniſeſi
-                <lb/>oei u oeoe e nee u e eue qiſoaonele ſenee
-                <lb/>pEeuer neeuo renneue len alrun daſe onuns eoi ene ſe
-                <lb/>leone ne e r n e e eeunune de piles e de dreiet
-                <lb/>le lu e lo e ni e es puon eiuit ounoe pous adea¬
-                <lb/>e’e panement de Pars qui a eunmyla Duee de P?
-                <lb/>urauice.
-                <lb/>o, ſle ie eone en es de aurues ſaiue de ſen e le ie
-                <lb/>lene de eoneunene de i eoue aiene lſle
-                <lb/>eui iſi ieur ler eue ie ns eduroaue dreuune ſai¬
-                <lb/>C
-                <lb/>aa
-                <pb n="10"/>
-                <lb/>o
-                <lb/>par Perdnndo de Caaule ſu o;
-                <lb/>ene enenierl on di ſiad oeoe oui rnn en ſilen
-                <lb/>Qe e ie e ot e la Fnane eonmrne eel du papeboni¬
-                <lb/>ee ous leregne du R oy Pilippes le e
-                <lb/>en e e ae eu d punis ens puiſumnens deſenlo le
-                <lb/>f, le l eeſ eilene onure ueuns du Conde de
-                <lb/>Trente qui les vouloiene ſupprimes.
-                <lb/>on lele en due n os erur, le oen du dunle erpe de de
-                <lb/>eue e n e ere ſeu lne ſe ſrepoſe e na lee de l leſnes
-                <lb/>lene li ſe lnue e e n p ue de i idaiſon du lonnee!
-                <lb/>ele ires ue enrne ſeriereennn on de une le lns
-                <lb/>enent de panis ſeroidie couageuſemeut contre ctepro
-                <lb/>E nen enruns rmei ſoennelnrepnu ouee deferſe de
-                <lb/>aoe efot yentendre, comme tendamue qterla Couronn
-                <lb/>u vrayhertier d’icele &amp; ’emparer ainſi du Royaun¬
-                <lb/>nrn ene a pue eues eraues de a idline da ſe
-                <lb/>men de Pars, de leurs uſes proeedures pour la
-                <lb/>ſeruation des drois de cete Couronne, &amp; chaſtimens ee¬
-                <lb/>inre ſeuen eoeeueiun de eun Anreis eonue le aite
-                <lb/>Ireun ue oui uoient neingee auee lea enius de
-                <lb/> pnne s nl onun leun onſprauions qui ſeua ſi
-                <lb/>ſe de mettre en auant, conme on a fat, de publier que
-                <lb/>aans eeee ſiure Compagnie il y en auoi qui conni¬
-                <lb/>uoient auec es Elpagnols &amp; autres Ennemis de l’Eſtat, &amp; qu
-                <lb/>pour ce ſujet on auoit enleué le Roy hors de Paris pour le me
-                <lb/>tre en plus grande ſeureté. Impoſture manifeſte qui ſe ruyné
-                <lb/>d’ele-meſme, &amp; et condamnee par lHiſtoire de France qui
-                <lb/>ſi dignement eſcrit de l’integrité inuiolable de cet Auguſte Se¬
-                <lb/>nat, que cela ferme la bouche à ſes Ennemis meſnes &amp; con¬
-                <lb/>uainque les rmédiſans d’impoſture.
-                <lb/>Ieſt bien plus a ceaindre de confier les grandes affaires d’v
-                <lb/>puiſſant Etat àvn Eſtranger ignorant aux maximes , aux Loix,
-                <lb/>aux Couſtumes &amp; aux mœurs des peuples naturels: cat gtr?
-                <lb/>la hayne qu’il s’aequiert l doit eſtré couſiours ſuſpect, nonans
-                <lb/>on, qu engouuenant les afaires plus imporeantes, &amp; co¬
-                <lb/>gnoiſant les forces ou la foibleſſe &amp; les maquemens de ’Eſtat,
-                <lb/>l ne les faſe cognoitre aux Prnees deſquei il eſtoie vaſal.
-                <lb/>qui etans ou duenans Ennenmys en raat psst a prenneni
-                <lb/>1
-                <pb n="11"/>
-                <lb/>leur auantage pour le troubler y ietrant la guerre.
-                <lb/>Secondement, la pluſpare de rels Miniſtres eſtrangets ’etans
-                <lb/>ainſi éleuez dans le gouuernemene d’vn Eſtar, ne penſent qu
-                <lb/>eſtablir leur fortuone, ou à s’entichir d’or &amp; de biens, afn que sil
-                <lb/>arriue quelque diſgrace, mecontencentement, ou changeme¬..
-                <lb/>ie yenemoen de’feretiree &amp; mettrea couuert, ce qui vaà la
-                <lb/>ayne d’vn Royaume &amp; de ſon peuple.
-                <lb/>En troiſieſmelieu, tels Eſtrangers aini leuez &amp; protegez
-                <lb/>deuiennent amboitieux, ſuperbes &amp;e inſolens, ce qui eauſe bien
-                <lb/>ſouuene de granada toubles, procedans de la ialouſie que ¬
-                <lb/>Prinees, le, Gand les Peuples !leur portent, &amp; qui ſe con¬
-                <lb/>uerriſſene en dz grandes guerres ciuiles, comme nous auont
-                <lb/>mnaintefois veu jen France.
-                <lb/>Einlemen la France, les Peinces &amp; les gtands Corps de
-                <lb/>Nobeſſe &amp; de oiice, feront croire aux Nations voiſines, ou
-                <lb/>qu’iu manquent de courage de ſoufir vn Miniſte Eſans
-                <lb/>uoir la meileure pare en la conduite des afraires, quienuovr
-                <lb/>ien ines d sanse les qanis Caoainesl laquierenupe
-                <lb/>de leurvie, poorlſpoſer ſeul &amp;e ſans contredis du oouues
-                <lb/>ens ou ele nou ornnaes la ſehes u ſrlde, uma u
-                <lb/> pointel ornues enPrenea qui ſoens ſnſion eomaele
-                <lb/>eleorineue puu nuntius leus ſeaiesuntdela ee
-                <lb/>i Caerre Se que la Fmanee ſe voyereduite aeee hane.
-                <lb/>nere maneur defeire venitn enanmgen, pour diſpoſer or
-                <lb/>uilunen deneſir en nuis dles reinane i deuomelsſaoue
-                <lb/>e linpunin ene unenure puruie d oune ſonpnlſi
-                <lb/>nut ei r ſelſue plerenue de ſienreveos de oue e nlſr
-                <lb/>euenuer irun ie e pene un ſeni ues eenoeſunoe le
-                <lb/>neun re nen e e n i indire sinonre Slaſhure nedlenu
-                <lb/>ieoſeuei e que rſolenea omonenſpeos eleee
-                <lb/>le piuldenrene ds eurdis pour ier u duouanme ’ne ree le ’e
-                <lb/>ee rnene e ne eoeil eren pun due conaſne e e
-                <lb/>e de en eoe e ne e upeie u noe ouinis de l l enue
-                <lb/>Poorun le eo eni e d leos llaienlens ns ee ne nei.
-                <lb/> eope eneſnr e e uee ens eſeuiſes pe oe nenre
-                <lb/>e oeoeene enene r eiſai r ie ani eſoſnr
-                <lb/>eſiuenieln pnane e e e en e eeruede eioe le ſnrſde.
-                <lb/>liſ ounlen e tl eſe e ilſi renaurquer qour aorune
-                <lb/>-l
-                <pb n="12"/>
-                <lb/>¬
-                <lb/>12
-                <lb/>aiſons eeneomces daaires eſquellesileſtuot .
-                <lb/>leie ne lu oner oe pee de du dur lns lnrni
-                <lb/>pene anines nu au ens onune ponirenenleſe n pe
-                <lb/>neiounen eupee u qun e ſein ous ſonin den ene;
-                <lb/>ne e ſueailon ouine eoueauoune uneneene en le
-                <lb/>ee oeies ne au dlen prmerpeuu nen ps de l lue ernuee
-                <lb/>ne erne e dn eei qe er onine leioaes oernaſe dens
-                <lb/>penur e e nr inueier eans de e ſierns de ſenen n?
-                <lb/>pne e enen di eſeue e e eſi poiouoeoude e nre eſon
-                <lb/>ement toutes les formes que l’on iuoie urdee aopamuuan¬
-                <lb/> e eres, u l onterue la eae de reſtute mueſdte ueere enun
-                <lb/>e e u il eonupeeries qi oureſle eſublies daneenunet
-                <lb/>eſ’e que at uguſe apes les queres Cuile en
-                <lb/>uaeſi ſioie e ſes luee rus i qui li ſauſnuepnne dei ſei
-                <lb/>Ere lu eele iees oneenruneſis pe ſoe oaſonae
-                <lb/>aene eui eienun eoeuedeſe pe rn e enens
-                <lb/> in uee eue puiene eeeomnſpeaon, uau neſe
-                <lb/>nue eue e aeune eneleouaſi ai le lure dn siequs aame
-                <lb/>eeeae eee
-                <lb/>me i adioutoit a ſa ſplendear, les deſehargeans de ceux qu
-                <lb/>ce grand Corps.
-                <lb/> Que ſ cel ſ’obſerooie enFranee le Roy en ſeroit beaucout
-                <lb/>miex ſeruy, ’Eſat mieusx poliee &amp; conſerue la luſtuice main¬
-                <lb/>enue en ſon integnite, le puple deſeharge &amp; ſoulage, &amp;
-                <lb/>Royaume puiſſant pour s’oppoſer à toutes entrepriſes ens
-                <lb/>mies &amp; eſtrangeres, au lieu qui ſe void preſex à la veille
-                <lb/>d’en eſtre la proye, n le Parlement par ſa preuoyance iudi¬
-                <lb/>cieuſe ny apporte les remedes, que toute la Frauce eſpere
-                <lb/>de luy.
-                <lb/>Qui voudroit s’arreſter à lire l’Hiſtoire de France &amp; celle
-                <lb/>de nos voiſins, ſçauroit qee le trop grand pouuoir que les So¬
-                <lb/>uerains ont donné à leurs Miniſtres particuliers à canſe des
-                <lb/>grandes guerres &amp; grandes ruynes &amp; dommages en leurs Eſtats,
-                <lb/>puis qu’il eſt iey queſtiond’ vnCardnaliſtre tel qu’eſtlu¬
-                <lb/>les Mazarin.
-                <lb/>Sous l regne du Roy Louys onieſme eſtoit le Cardi¬
-                <lb/>na Baue &amp; qui de courier auoit ee fa Threſorie¬
-                <lb/> pa
-                <pb n="13"/>
-                <lb/>1
-                <lb/>t l onut de nſaie aeſue deperi le nie den e
-                <lb/>e e lere de l ene e eoes ’a ienenue e oe le
-                <lb/>e e de ueuie i oeoaie ls lon e pnee p en leei
-                <lb/>e e euete ee e le len i de oini ers enenee
-                <lb/>ne e npeie eue ome ueraoaun l uone lne lo lerene
-                <lb/>ls ſen leunre e e ue nrein an se lnon i e ſle
-                <lb/>u e ineier ne oeten n l rau rds loetoes lu nn doue
-                <lb/>e n e lon i l pinredu apeon
-                <lb/>d e nilun n e peſe i ſioneouens lunrn dele
-                <lb/>e eidln i ee de luoe e eoane peaule er neie ie
-                <lb/>en e le eiepeonnieine u raedu eeſe ne noe eoleie
-                <lb/>eoeſe n noene ene eue eneieni eneile eirer
-                <lb/>ee ſie egr os le ſe e n quileilnnt nlade toanuu onne¬
-                <lb/>dns oque pu ſonns en pnſl ein deeonniir
-                <lb/>ieernſlon e n euei e e r oe onſi ounen elele
-                <lb/>e eonieneleoue euenee ei eeeian er le
-                <lb/>nrenennene ne e e u eie lne nun ele lne ier
-                <lb/>nniee renens e e e e pe ea lauienunuanan¬
-                <lb/>n liniene li e eimna nenneeoinelneſerpeei
-                <lb/>Louys XI. ſon bon Maiſtre.
-                <lb/> e ieneu e renenenerenie e oneſn lernel
-                <lb/> ounieie ene e reun aen e eonaere nenr ens
-                <lb/>e eueaie en ne leie liereue eneſne
-                <lb/>Eeoueileneineune e eieieue eunelin
-                <lb/>ere eſ anuneneneieſine eoieie eneni
-                <lb/>enenedinierene eiei ee ene le
-                <lb/>eeuruſemeuee lroeueneie neouo pde leneinee
-                <lb/>e eerereneee ei rene ieieeafe
-                <lb/>neſeien e eieneſe deierpe es elieieireſen!
-                <lb/>eurnene eeie e e eaeies e ele
-                <lb/>uel eieue o de le e e lenione n e eie
-                <lb/>ienineneuie eie e i ſen ue e ie ie ne
-                <lb/>’eni e enue euni pne eler ire eieue
-                <lb/>eeneie le enie ere de ſileniennrene
-                <lb/>anieeenepniereperoſeue liene eieree
-                <lb/>une e eaenmuereile reeoeonedprine eo euepeai¬
-                <lb/>’luil ieinie roeen ie ſeonauenuene reun rgnaees
-                <lb/>D
-                <pb n="14"/>
-                <lb/>aa,
-                <lb/>¬
-                <lb/>t exceſſiuement bon traitement, &amp; tel qu’onn’y pouaoit tien
-                <lb/>adioulet peut ilaſouui cet homme auare ambiuieux, al en
-                <lb/>ſeher d’auoir l’œil ailleurs Rien de eele, mais tout le con¬
-                <lb/>ttaire.
-                <lb/>Nous auons veu cela en la perſonne de Iules Mazarin, depuis
-                <lb/>qu’il a eſté appellé en Erance, pat le teu Cardinal de cneleu
-                <lb/>éxtrait de vi! &amp; bas lieu. Lequel par la bonté de la Reyne Regen¬
-                <lb/>e, dontil a ſi ſort abuſe, ne s’eſt pas toſt veu eleué à̀ la dignité
-                <lb/>e Mmiſtre d’Eſtat, qu’il a voulu diſpoſer abſolument: Non leu¬
-                <lb/>lement des plus grades affaires, mais encores de celle de le
-                <lb/>Guerre, &amp; des Finanees, ayant rencontré ce qu’il deſiroitſçauoit
-                <lb/>des hommes accouſtumez à voler &amp; rïner le peuple, &amp; profiter,
-                <lb/>aon ſeulement des deniers du Roy, mais de toute la France, ſou
-                <lb/>pretexte de faire ſubſiſter la guerte, &amp; entretenir les armées.
-                <lb/>pour plus hbrement aſouuit leur auarice, auee leſquels il a telle¬
-                <lb/>ment eſpuiſé tooe a ſubſtance des peuples que l’on ne void par les
-                <lb/>Villes, &amp; les Prouinces que miſete, deſolation, &amp; ruyne, plus
-                <lb/>grandes que ſi la guetre euſt eſté allumée au milieu, &amp; aux quattes
-                <lb/>toins du Royaume.
-                <lb/>Mais ſon ambition a bien’paſſé plus auant: car ne ſe contenant
-                <lb/>point du gouuernement abſolu de tout l’Eſtat; d’eſtre logé prés le
-                <lb/>Palais Royal, a fin que la meſme Garde de ſa Majeſté, fut celle de
-                <lb/>ſon Palais, &amp; d’anoirt vne porte au dertiere du Iardin, pour paſſer à
-                <lb/>toutes heures; &amp; à couuert de ſa maiſon en celle du Roy, il voulut
-                <lb/>eſtre logé dans le meſme Palais Royal, pretextant cetre ſienne am¬
-                <lb/>biion exceſſue, de la charge qu’il ſe fit donner par la Reyne de
-                <lb/>Surinendant conuerneut de la perſône du Roy, pour auoir moyen
-                <lb/>de diſpoſer abſolument des volontex de leurs Mteſtez, commeil,
-                <lb/>fai: Et qui coferre, &amp; oſte toutes les charges de la guerre , &amp; de
-                <lb/>I’Eſtat, ainſi qu’il luy plauſt, pour y ſubſtiuer des Itaſiens, &amp; des
-                <lb/>Peſonnes qui cabulent auee luy: &amp;e pour e qu concerne les di¬
-                <lb/>gniez &amp; les benefices Eeeleſiaſtques de la Franc:, les diſtri¬.
-                <lb/>e à ſes confdens retient les meilleurs, &amp; Ies plus riches
-                <lb/>obayea pout luy, obiseant eux qui le poe dent pat merire
-                <lb/>e e’en denure, ̀nn de ne renu es eſe e fu dupaee,
-                <lb/>de laveyearee or dnaire d’vn eeur amabaueu n , l neia
-                <lb/>es onie dedaiſoun duRoy, e a ene, qul chuase,
-                <pb n="15"/>
-                <lb/>&amp; chaſſe, pour y mettre de ſes creatores: Afin que leure Ma¬
-                <lb/>ieſtez ne ſoient ſibres en leurs actions, &amp; ayent de celles gens
-                <lb/>pourptendre garde à ceux qui les approchent, &amp; qui ont l ’hon¬
-                <lb/>neur d’eſtre res leurs perſonnes
-                <lb/>L’Eſpgne nous foutnt d’vn aure exemple de lules Mazarin.
-                <lb/>D. Pere Fanco de Ximenes de Ciſneros, peſonne de medio¬
-                <lb/>cre maiſon: encores qu’aucuns eſecriuent qu’il eûtoit Gennihom¬
-                <lb/>me. Il ſe rendit Religieux de l’Obſeruance de S. Fransois,
-                <lb/>e eaifutreeoonéupour habile homme oar le Cardinulet
-                <lb/>doee reheueſque de T’olade. lequel eſtant malade le choiſu?
-                <lb/>pour lu, ſuere der enſon aAreheueiehé, eneion quifur eprou
-                <lb/>uee pariles Rois Don Ferdinand &amp; Iſabele. Il etoi flsde To¬
-                <lb/>dedlruna, nonme iphonſe imeea, npres ſes ſtudus ſ
-                <lb/>paroſe iereilenee de ſon eſpt, &amp; comne Conſeau dl
-                <lb/>eine, i dueu aia Cout, ou il enras en faueur &amp;e eredir pa
-                <lb/>deſſus le reſte des Courtiſans.
-                <lb/>iorusli nr in ſeoneD lebone l n n ſener d
-                <lb/>a, S’prinua dſon nauy, qui ur obun due Pelll
-                <lb/>aduileus dle e nleue u lane aene aun onies epne;
-                <lb/>ni ae eoue que de iſur i rouſn pau es dren n
-                <lb/>u e l e ene e eru eiear de eure eun ine ll
-                <lb/>pe n peun e en ue n ueſiſe au ous ſuipn runee e
-                <lb/>ene e a rrliene e e noun lenue le Caieini neee
-                <lb/> rſe’le e d oine Ctar leu qui clonen ’uud ntt
-                <lb/> liſriſſu rlun e e onueriinee areſroaqoe ſeradunet
-                <lb/>pei en enen e nni e ien eins oe ſonus e enie
-                <lb/>P nene nuoe ne nee s enr o y era umu ul ſdſe.
-                <lb/>anue ene e noere neaue i e oe lnanepinne e
-                <lb/> e eon ie lſlereon oouinl uoir leur ies airea lane
-                <lb/>ae en neinernunein eue e re corſedinienueiaer lee
-                <lb/>ne e eueenon e rn ne e e perea de nois runnue fdene e
-                <lb/>e en e ne e oinus eune e Courdinl oaeiuuln
-                <lb/>i oe ee ſe reruo e au dipreone ruuoaius conenenr n en
-                <lb/>leeonie e enenres en e re u aoeae aieoenl e done
-                <lb/> e oeleil lun neepe e enenen ae reiu iueeleeunſe
-                <lb/>nuoer slel e e lrun e u reu ouee vuueonannes
-                <lb/>E e de re e eſnuues leuaun lepande Cui la ¬
-                <pb n="16"/>
-                <lb/>ſans nettre biea auant la ialouſio en la teſte du Cardinal l¬
-                <lb/> pine oolunuaur decomruormou ne iuny volue eſen
-                <lb/>ſeinunt tir ouiuns le preaaier laou dans le munianen
-                <lb/>eiees ainſi’ ſu ler ſie panminre Cur n ior le er
-                <lb/> t e cainnii dlan apans ſene qelques dep¬
-                <lb/>s u lniit pueun Cuinai xihenespourlnis n lsle
-                <lb/>eiennn i lemit enpieees e ea ſiureeied’uiures, qu’il ſ
-                <lb/>ſeul ſans permetre que les autte les ſigaaſſons
-                <lb/>e ’eſie e npu renpereur ſaanuuanarim lpumrl
-                <lb/>es fou preere deeonferer auee le oy Chaeſar ſon voS
-                <lb/>anſeou lnue, e puinmi le Cardini lmens en rnlpine
-                <lb/>Caignan que cere Conſernce reuſnſt aſonpreiudieepe
-                <lb/>lui enr uoyes ſe nperu ldlaimian conarmder enſp
-                <lb/>ne en ’abſeaee duRoy Maia es Eſpagnols voyanas yt
-                <lb/>ureuue duroit trop lons emps aleur gte, e que le oy ne
-                <lb/>uloipinu dereni en e puone anreoau de gnndias fplaiuael
-                <lb/>fns que ’Epane etoit enre les mains des Flamaa u
-                <lb/>us les granda reſors que le Cardina Ximenes auoi aceomu
-                <lb/>le eſient pourifouuirſon aunice. Et ſor cela ils fren plu
-                <lb/>eurs aſemblees pour y remedier, &amp;e par Deere publie il
-                <lb/>donaereque lRoy ean en Epaone n’auroit puanee d
-                <lb/>Seeaueun oaee, Chage nEſatdu Royaumé aux Etran¬
-                <lb/>gers. Tout cela ſut ſuiuy de pluſieurs libelleés dffamatoires &amp;
-                <lb/>niurieux eontre ledit Cardinal.
-                <lb/>En outre out les Grands d’Eſpagne ſe reſolurent de ne pl
-                <lb/>uy obeir, lequel(eomne Viceroy en l’abſence du Roy) fut ſite¬
-                <lb/>aeraire quedeſe vouloir vanger d’eux, &amp; les contraindre de luey
-                <lb/>obeit. leur diſants Qu’il auoit le pouuoir de faire executer les vo¬
-                <lb/>lontez du Roy comr qui que ce ſoit, Et voiey ce qu’il fi C’eſt
-                <lb/>qu’apprehendant que I’Inſant Dom Ferdinand, par le conſeil de
-                <lb/>ux qui le gouuernoient, allaſt en Arragon, pour s’en faire Roy;
-                <lb/> quiluy eut reiſià eaaſe de l’extreme eion que leArrago¬
-                <lb/>onluy poroint. Pour preuenir ce coup, le Cardina e chiaſ¬
-                <lb/>lt ou ue enace poee ſe conoit uuuge, &amp;e chunqe¬
-                <lb/>ou le Oſfnus de ſ iſon, e prnepalemnent Dom Pede
-                <lb/>uanea de ounimu ſon Goouemour, o unrs Oion¬
-                <lb/>Emeque dſoregpſoQreeepeut Sprenmert e plnparmieuſia¬
-                <lb/>Conſeiller
-                <pb n="17"/>
-                <lb/>Coneuler: Ce qui deſplatgrandemet l’ſant , ſade
-                <lb/>eetnuan eCarouni Creonmmeil dpoſou doounraa¬.
-                <lb/>a ſeur ulnent ſe aegree a o, Chae pui eſonten
-                <lb/>’iun ie e oilunen due pus ius aſan oneeſlne quo ilſe
-                <lb/> l’ ſlne Cen doana ouanenoaehenis une
-                <lb/>oee Ctuual ouinqp’eule aaieauconſormes ala mlon¬
-                <lb/>é du Roy.
-                <lb/>Eeſey cnare dune me enſpagpnutgpee
-                <lb/>li ileiu l dui ae oenupul ſirſioar l eeneln
-                <lb/>Iiie elieunult iearin, dun, auaſuuua d e n be¬
-                <lb/> n nee e e ſeue piaue laeeoemans e renunueſe
-                <lb/>Eoeeuet ue un d edenieut pli pua pnnerne il
-                <lb/>e rnne ue er eurerenecedue leda eene tnſnlou
-                <lb/>n ee nene i dl le eeae eus rline e ln eſi aſilne
-                <lb/>u e e ere lue ee i yenu di iera eer ſeile
-                <lb/>lr aenmnonene ure drieonae ue orpnde eſeriſen
-                <lb/>e ente eer eelnaiu ueoe eiluengere ee
-                <lb/>lenereee e r ne n inruea eoae e eree
-                <lb/>leouſetene e e e re e dn du oenre eree,
-                <lb/> eunſe nr eennue e e er e onelſeſe pnereelee
-                <lb/>ononuſle eſt enene eou edire ni ouapeon e ie lr per
-                <lb/> utue eus enurne pnein erie ueie lena enrien.
-                <lb/>nee eſiun de reu r ine eoenedie ple enitene
-                <lb/>nmneon eln i le e eaoeun en a ierouoedi dunl ene
-                <lb/>le ne elunee ue r eieu ereiueieleenerer ter
-                <lb/>ineeunrnenennrueenene dron reneie ee ee lr
-                <lb/>leunelenerni ene e e relrnu de n ſnenrſe
-                <lb/>eniulſleeoeu iſe ounumeieiedeu i couoianad de ouaen
-                <lb/>euee ſe liuner enenune oremuil larſeniun¬
-                <lb/>r nele e eneele er e ene en pemaene de¬
-                <lb/>neue enen i aiee ier eln rne e i enee
-                <lb/>tnle oue e e ene eſi e ene len e le er
-                <lb/>nuineen eeſoneiere ienmde d ſeoen ee le lnlne
-                <lb/>ilaun nſenen ne ninne ru ſ oni ennee¬
-                <lb/>e l nerelen eui peneoeienmeleoeourenie conene
-                <lb/>eiſ le e neſlein n e ieieuoe ene eile¬
-                <lb/>en e l lre n neleie e eoelie ineue u u oeipe
-                <lb/>E
-                <lb/>.-eLaa
-                <pb n="18"/>
-                <lb/>¬¬¬
-                <lb/>eebnaſtre ne pouuoit faire qu’il ne continuaſt ſes neſmes deſeins
-                <lb/>de cotinuet troubler: Sa Maieſté. a’en fit point ce iugemens
-                <lb/>t eiſe le croyoit poré à la paix, &amp; qu’enla procutamt à toute la
-                <lb/>Chreſtiente, il ſacondeoie ſes bonnes inenions. M ais comme il!
-                <lb/>ſauoi les moayens deſquels le Catdinal deRichelieu ’eſtot ſuy
-                <lb/>pour seatichir e ſeredce abſolu &amp;e redoutable; ſçauoir ceux da¬
-                <lb/>uort del’argent par la conunuatioo de la guerreil a ſceue-bpien
-                <lb/>limiter en celaon point ea ſes maximes poluriques, qui s
-                <lb/>dent ſe gouuernemene, &amp; preuoir les dagers qui expoſent vn
-                <lb/>ſtat enproyeà ſes ennemis, c’eſt vne leçan qil n’aucit point
-                <lb/>priſe; maiſaulemenoelle de l’auarice. des plaiſits, des feſtins¬
-                <lb/>ee jeux, aaſpuiſant la Erauce de nances, &amp;e de.moyens de
-                <lb/>ſubſiſter, ayantealeué les millions d’or pour s’enrichir &amp; ancrete¬
-                <lb/>i ſes intelligeaces auec les Eſtrangers à la ruine de l’Eſtat.
-                <lb/>Les petſuoaaiaf choiſioee appelléesaux eharges eminep̀
-                <lb/>ues à la Caut esRi&amp; venaos le bas lie, dearaieot prineipa¬
-                <lb/>lement rendse garde de plus prés à toutes ces choſes. Que ſi la
-                <lb/>olonteé des Maitres qu’ils ſeruent en la dignité de leur chotg
-                <lb/>les excite d’en ſer auttement; ce ſeroit udence à eux deisa¬
-                <lb/>ſre qu’ils n’y ſont voloairementpotez, n cela le Cardmal
-                <lb/>menés au commencement de ſa fotuane ſe pona tres-hien:cos
-                <lb/>il fit oir ſa madeſtie au refus qu’il fit d’accepter la dignité d’Ar¬
-                <lb/>cheueſque de Tolede iugeant que s’il le faiſoit, il attireroit ſut
-                <lb/>luy l’enuie de tous les, Srands du oyaume. ſous le faix de la¬
-                <lb/>elle l urcomberoit:de ſaç̧on que pour e’aſeurerde ce coté-là.
-                <lb/>la eine P Neanne ſue eontrainte ds le faire prier par tous les
-                <lb/>nde deſa Cour daeeeper eeue chage eequi t anfnapres
-                <lb/>Dluſaioas eus maui deneun quelque’eenp linu Couloit no
-                <lb/>ae nſouanns ſa deſipenſs qeique emnonſiane qon i
-                <lb/>ln ue oene d ue negpeoie ſidhun di dle ſi pun de vire.
-                <lb/> ſilne pue ſ ain doiu le enunnuneeleus eure l pape5
-                <lb/>rnine nauel en ſnilien e ainſii tee ere lile inue ſnu
-                <lb/>ſeoee eſeie dle uou e cnuie d i en eu eo u an ne eenr
-                <lb/>eaſe iun tena ou oureſannnue ele oe ee re
-                <lb/>le oidnas iuniua aer ei puiun ie e ielome d
-                <lb/>eonuie ue luenin lus enulun l le e ne ſ ornrnene e
-                <lb/>ounerenſeolemene ſ obei nutolune de l eeil
-                <pb n="19"/>
-                <lb/>A
-                <lb/>rouloiefaire premierMinite d’la;Mais l em ploya tous ſes
-                <lb/>ſoin&amp; oute ſon induſtrie pout monter à cette eminente hag.
-                <lb/>de laquelle il eſtoit indigne: &amp; y aſtant inſtaleé il commecà
-                <lb/>tailler du Sounerain dans les affaires, &amp; dans a diſtribution des
-                <lb/>charges,comme de cele de Gouuecneur de la peſonns u or
-                <lb/>onmſ ſedonma la ſunintendance, &amp; voulut auoit ſous luy le Ma¬
-                <lb/>eſehail de Vileroy &amp; les ſieurs de Saine Eennee du one.
-                <lb/>creaures du defun Catrdinal de Richelieu, pou n ’auoit d’atre
-                <lb/>Palais que eeluy du Roy il aſa la plus beue&amp;s fiee conmpesni
-                <lb/> do ſa daieſe eele deſea Mauſqueaires à cheual, &amp;epopela pous
-                <lb/>la ſienme cinqantoCenrils- hoinmes, ee eent bamaes de cau¬
-                <lb/>leie pout plus gundeoenaiomndeſon amiooneafu
-                <lb/>desdne CCſe n quoy il imia le Cdauda ime
-                <lb/>e en lu onduite dafaires.A augouaernement dane il voa
-                <lb/>iait cire soouernn la eitie meſae, an us e ſai dur¬
-                <lb/>Coſeiu qu deſien la ouu oounrla oequeſund
-                <lb/>eer auoitallumee dans Chreuiente, Cen faie d’apr ou
-                <lb/>aele a tuironnleu, leu rneeu dSunge y ſat o¬
-                <lb/>Duſen uur peoreie uſi ua luile que pai eoear les
-                <lb/>ne aieonr nen eneſder neiain eun edeen ee le
-                <lb/>ilpuerne der ere lenue i eoeurn uaſeonauun Dde ſle
-                <lb/>puee n qnue ae e riua e eaerioun leereea leſe
-                <lb/>dene nerte des ooſaeles aux eſeils qu’l aeueloiu, pout a¬
-                <lb/>croiſtre ſon credit &amp; ſon auhorité partout.
-                <lb/>nre enun nin e neoe ens dnunr ru le nueendle nnpee
-                <lb/>Ee dſu e punue n noſe e ae iſa den en ſe elre
-                <lb/>a unonet e l e eeernuae u on laonue de ſen leu
-                <lb/>lenneone unue e e e e e qa ſa leoe e ril nlee
-                <lb/>none ue ue erroe rnereilioe roileau luoaerr leliniee
-                <lb/> endne neonue ern eren rn ſdn uiloueue Ceoee
-                <lb/>ieunu unue e le eeure elninreoeut a Conuamne n len eunr
-                <lb/>unr p une e eo eou uneus oa iniouilen iſee
-                <lb/>ui d e eue ue e enen e e direus naonu pous oaidlan
-                <lb/>nlſeen ne nunoei ſu eree lain eurpe ioia p eoeeue
-                <lb/>de lonr enur ſeie lie erneoe u r ene il pe e qeiure
-                <lb/>er e e oiun e ln rne neun punedene onſ iler
-                <lb/>’ auins e llre ne lueſaa, deuueu l ai uar¬
-                <pb n="20"/>
-                <lb/>¬
-                <lb/>e ceux qu’l oyoa luy ere uſpeas, afindedpoſss d vme
-                <lb/>e uuresi ſon plaiſir. yen merre d’autres faisde ſamain
-                <lb/>ecCardnaſ imemés eſtoit louable en cocy. C’eſt qu’aprea
-                <lb/>unt delteine D iibel eeue Prnceſſel’aymtreeommnm
-                <lb/>, pDon eeruinundi ln, uendi de gandu ſie eu le
-                <lb/>aſruioun des nobies ſſeiteis pus les oramd de Cſllnoe
-                <lb/>urſeduſis &amp; conſeaiu fuentappailea eu gueme conlut or
-                <lb/> is iaaures ’iſnique l Cardinul daaun au ouais
-                <lb/>presiauot ds deun oy loue XI d’hureunſe nenoi
-                <lb/>ene Regae luy aniu en aain la diſpoſuaon u pe
-                <lb/>npoanes airea aulieu de ly donoet deooafeiadepa
-                <lb/>eſeeon de, ou phſii ſoniſier les bondens qus ſa Maiets
-                <lb/>uou de faiueiout la Chreſuiene d’vnſolderepoail ne loyinſp¬
-                <lb/>roi que deucoaſeila deuerre , ſongeant plus profus das ou¬
-                <lb/>les qu’a faire la paix, qui luy oteroi les pretextes-&amp;o las moyu¬
-                <lb/>efale degandſ amu d’ot d’augente ’aeu qu’a uy ſou!
-                <lb/>que la paix enerale n’ait eſé canclueé for auaneageuſemnt pous
-                <lb/>Fraaceſeſoueianepandurepos de la Creen, puraeuqu’
-                <lb/>uiſe touſiours tcouuer dequoy afouuir ſon auaeie infatiable.
-                <lb/>aaant rmieu vois les Chteliersſe rner dans leus guerres et¬
-                <lb/>uiles, que de penſer aux moyens de liberer l’Ermpire Chreſtien des
-                <lb/>uoubles que les Tuces y nourtiſent, pour proûier de nos quereles
-                <lb/>&amp;e diſſenions paticulieras,
-                <lb/>Le Cardinal imenés prit ombrage de l’enreueuë de l’Em¬
-                <lb/>pereu Maimilian aaaee le oy Chales àBruxelles mais ſon
-                <lb/>oyage anEſpagneompir ce coup. Ce quifus cauſe que les Eſpa¬
-                <lb/>ols voyans que le Roy ne pailoit plus de venir en Eſpagne.
-                <lb/>a’eſleueren &amp; cierent hauteoeut, que ce Cardina ne deſiroit
-                <lb/>paaſa venuë, &amp; que lEſpagne durant ſon abſence eſteu entre les
-                <lb/>ains des Flamans. C’eſt ce que nous auons veu en France depis
-                <lb/>mous que le Cardanal ilaarin a eieue par daux foia leoy
-                <lb/>ſa boonie vile de Pariu pous legur camae i voudroit &amp;e
-                <lb/>ene lnFPrante entreles mains des luliems, dom i rempiſiois
-                <lb/>sehages t lus oaeeaonſeulemnentae i urasnu du ſy e
-                <lb/>laleine nndlnnaſa ean deun e u un uni de i ep¬
-                <lb/>n e eſen e gd y enuremo e dſuurs ns ae rueree
-                <lb/>douavodeai renlr lea gurdeu ſis alilſ ’ee er er
-                <lb/>François.
-                <pb n="21"/>
-                <lb/>1
-                <lb/>21
-                <lb/>François. Ce mauuais meſnaage ayant reſueillé les Cours Souue¬
-                <lb/>raines de France, notamman le Parlement de Paris, ayant pour
-                <lb/>luy les voix &amp;e les cœurs de toute la France, c’eſt porté auec cou¬
-                <lb/>tge aux reſolutiona peſſantes d’aller audeuus de la uiptni¬
-                <lb/>Aade Eſtat &amp;c des Pinces, &amp; des mauuais deſſoins de ce Cardnal.
-                <lb/>emainenant nenmoins lenr fdeliteé inuiolable enuers le Roy
-                <lb/>ae vaique e legiuimeMonnrque faiſanteoonoaſs ̀ tous les
-                <lb/>inpoires meſehantes de lalehaaans quda ait ſemae par
-                <lb/> ſloedle ſuana noa dquis quequer ioaui u du lu
-                <lb/> Patt par le Cuaaier de l Vlee, pout deſtni la loaable
-                <lb/>ſaisée aeiuſſes menions de eeue auguſte Compagnie &amp; par
-                <lb/>eoyeafuireſouileue lepoaple ouele, u eit lept
-                <lb/>t rldle e cCnul aue ceau de faire inueſit l vaus
-                <lb/>depauinue qaaiuſede gen de gueie ’anpuas e lſlrnieee
-                <lb/> pliui ſeſlr de rn le au ſeaimmreauslanepnſie e
-                <lb/>Ce ern die eue pnun ius enaadedaerone ſies une eſt
-                <lb/>aeuerolne l ueldue i l mei ueeounie ſunapeeueree
-                <lb/>e e eei ſeeadele luiiean as race pau dee
-                <lb/>e euer er eu e n rne n n empi r l eie e eruene
-                <lb/>a e un eoe e lai lueu euun deieranei e ein dene unle
-                <lb/>Seu enen ue deue e rea a eſquodleſaunſounusprnule
-                <lb/>nue re l nue ie reennmneſei euaie leue elns erie oeer
-                <lb/>pu fn e nie n eere eier neoan eu euenlie
-                <lb/>peeu ne oneue oen nerenenel pe eon lon leln e
-                <lb/>e e e epune e en n uneneudſe e eneenree
-                <lb/>e n er eernee e e enmrnerieſas nenne eier
-                <lb/>eune ees onepeun i e eeie rereoerdleioene lnne.
-                <lb/>nen ne en er mene unenielene ieopieneneen enenee
-                <lb/>e e n e rene ene ue rnen i eeuenee uneeee
-                <lb/>peſe runenplen en au e e eos eae ennrne nle o nee
-                <lb/>Snue pe e e renur rvaier pes dne un
-                <lb/>’anedoen nmneoen dn e n ieien pe ſeoſene oiuelneſe
-                <lb/>anenrni unenununeierne ſene dnuirſiennele deel
-                <lb/>loeune rneue ne eun e ue qſi eoieieonene le er
-                <lb/>nour eonu en e ene enr re di euili eaſous di un e eu
-                <lb/> oeneuene e ne pne nei nonen e aone oes lanene iee
-                <lb/>aoun pee e liene anr ies nai cCnuuian deo,lain
-                <lb/>E
-                <pb n="22"/>
-                <lb/>bu¬¬
-                <lb/> 22
-                <lb/>ampromne cheſeaq pooeat donme dbntllel
-                <lb/>See Ce re ta dnienienmeld anu nene enboandanuteſunee
-                <lb/>e eu ere ean enueaiu pioendlene iuanet e ueus leae
-                <lb/>eCaniai renneſuns eaaiedeaCaoaudeleoet en
-                <lb/>e ſs e ſleeunu euredſe ſen lire leoue banop e
-                <lb/>eneunr i oulurpus is ſ aueui damis doalreaepu de leſet
-                <lb/>P es tpunainonas auſnunianade lpee qeaquens dela lane
-                <lb/>gue, pout la defenſe de toute la France.
-                <lb/>ilſaſleienpuaenulon gtouaenunre s pomuanopulille;
-                <lb/>e ſa loue piin deu longueus que le pPadenemu opiodi
-                <lb/>tomade neceire duemp ſanuoonſderer queleprenmuMobuile
-                <lb/>Een r ou ur euruouiennu ua Ceaenſudoa ais ae
-                <lb/>pr le aen ani le parlemene, qi eſt le premier pobie de pn¬
-                <lb/>Senee eſe luiſe poiat empoer pat leas aguuuons d’vn popleioon¬
-                <lb/>ant qui dot reœut lafotmedela canduite dece premier lou
-                <lb/>leouſgemenut peſr&amp;e dieret oues les dhieute qui ſe preſemoinr
-                <lb/>neie renoonres dinreouiy ailoi de faire vuloir lauhorue du
-                <lb/>Roy, ſans laiſer ehoſe qui y puit donner eſchee- &amp;e maineenir le peuple
-                <lb/>danms laretenue ſans luy donuner ſuet de prenadre la ſeduron pout le pus
-                <lb/>mauuais conſeil &amp; ainſi c’a eſté vne grande prudence au Parle-¬
-                <lb/>’uoirareſl eeuorren gooadms pat la digue d’vne reenue loubl
-                <lb/>ſaas pourt cea n’ouir uen ououe dece qui Conacernoit laſeureue de lae
-                <lb/>ville de Paris, &amp; de preuenir vn pluagtand mal, qui euſt peu arriuer pâ¬
-                <lb/>les gens de guerte qui la tenoient conmmeinueſtie de tous coſtez, atte¬
-                <lb/>at qu’l pluſt Dieutoueher les cœun de lera-e, e lesporrerà
-                <lb/>redorner le repos à leur bonne vile de Pars, ce qu’il a fai &amp; à ce ſuies
-                <lb/>s’eſt ſeruy du raeſme Parlerment, pour par ſes humbles remonſtrances
-                <lb/>aenex la Reine à conſenuir vne Conference indiquée au Bourg de
-                <lb/>Ruel, poury choiſir les moyens plus raiſonnables d’appaiſer ces app¬
-                <lb/>used’ vn plus grand trouble, à quoy les Depuez rauaillent auec les
-                <lb/>Princes du Sang &amp; les Miniſtres,
-            </p>
-        </body>
-    </text>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau99_GBOOKS">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title source="Moreau" type="main">Apologie curieuse pour les justes procédures du parlement
+          de Paris jusques au jour de la conférence ( de Ruel), et pour servir de supplément aux
+          Motifs véritables de la défense du parlement, etc.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+            Jean-Baptiste</persName>
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz"/>
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=BkhCAAAAcAAJ"/>
+          <author/>
+          <title source="Moreau">Apologie curieuse pour les justes procédures du parlement de Paris
+            jusques au jour de la conférence ( de Ruel), et pour servir de supplément aux Motifs
+            véritables de la défense du parlement, etc.</title>
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher ref="isni:0000000109284925">
+            <persName>
+              <forename>Cardin</forename>
+              <surname>Besongne</surname>
+            </persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure quantity="22" unit="page"/>
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="BM00720" cert="high"
+            target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49592"/>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2867714">Munich</settlement>
+            <institution>Bibliothèque de l'État de Bavière</institution>
+            <repository/>
+            <idno type="cote"/>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>False</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
+          ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
+          auteur oublié.</p>
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+          bibliothèques numériques publiques et de Google livres.</p>
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p/>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine"/>
+        <p source="Moreau">99. Apologie curieuse pour les justes procédures du parlement de Paris
+          jusques au jour de la conférence ( de Ruel), et pour servir de supplément aux Motifs
+          véritables de la défense du parlement, etc. Paris, Cardin Besogne, 1649, 22 pages. Il faut
+          lire : les Raisons ou Motifs véritables, etc.</p>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">non renseigné</term>
+          <term type="subject">Cisneros‎, Francisco Jiménez de‎, 1436-1517 </term>
+          <term type="subject">Charles-Quint‎, empereur germanique‎, 1500-1558 </term>
+          <term type="subject">Richelieu‎, Armand Jean Du Plessis‎, cardinal duc de, 1585-1642‎ </term>
+          <term type="subject">Anne d'Autriche, 1601-1666</term>
+          <term type="subject">Conférence de Rueil</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2021-11-18" who="AB"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p><pb n="1"/>
+        <lb/>APOLOG1E
+        <lb/>CVRIEVSE
+        <lb/>POVR LES IVSTES PROCEDVRES
+        <lb/>DV PARLEMENT
+        <lb/>DE PARIS
+        <lb/>Iuſque au iour de la Conference
+        <lb/>Et pour ſeruir de ſuppléement aux Motifs veriables. <figure type="decoration"/>
+        <lb/>A PARIS
+        <lb/>Chez CARDIN BESONGNE, ruë
+        <lb/>d'Eſcoſſe, prés S. Hilaire.
+        <lb/>M. DC. XLIX.
+        <lb/>
+        <imprimatur>AVEC PERMISSION</imprimatur>. <pb n="2"/>
+        <pb n="3"/>
+        <lb/>APOLOGIE CVRIEVSE
+        <lb/>POVR LES ISTES PROCEDVRES
+        <lb/>du Parlement de Paris,
+        <lb/>Iuſques au iour de là Conference.
+        <lb/> Ee poar ſerair de ſuppléement aux Motifs uer itables.
+        <lb/>Ex n Eae nounarend ſ
+        <lb/>e el lueiedaoiroeane le eue e irnilene
+        <lb/>pnun e toun de de oeile e e renr e
+        <lb/>ne oe e pie oeoeouoiene nen e ine
+        <lb/>Airniſe les er pe en a nes enue enoe!
+        <lb/>Frdeinnoene e i enrede oun lieioune enniuir
+        <lb/>eeneune mnnſin l oeen dine enl er e lue nelen
+        <lb/>ie ne eue eneſeu ieſoueae onnuinaeoaiu pa¬
+        <lb/>Ve nuene de ſes plus gandes aſnaire
+        <lb/>einr ilſefeieuonene eneienn
+        <lb/>elr nune e ſieneneoue loaenreneue e e
+        <lb/> oaie pe ſe e len e erar eneie n ’ unmne ſee
+        <lb/>nſi ienr lini n le ene iueei rne rene eder
+        <lb/>e edleiuilien ereuer enlenis lee oen e enr
+        <lb/>l eienenueuelereiereaeneimu
+        <lb/>dſenileiue le ereoeiueoireiaeine¬
+        <lb/>a e renine den e ioeneleiui nniene
+        <lb/>ieinene ereireieeir ne oee
+        <lb/>ernoeieieiie eſeneunrereuere
+        <lb/>erenuſe eni on edene rre reaerele rene
+        <lb/>lrlſieoi elie uerſoeſai eenei eies
+        <lb/>eie eoune eoenea ene eprue
+        <lb/>Eeieiſienreneneio eoun nei eeietee
+        <lb/>nee deli oe ne e e e en e eui ieien de n <pb n="4"/>
+        <lb/>¬¬
+        <lb/>4
+        <lb/>ment amblatoire, qula durée iuſques à ae qu’il ait eſté fai ſo¬
+        <lb/>deneaieen la vile de Paris, eaiale du Royaume, an deren¬
+        <lb/>de au publicela meſme ufice que le Coaſeil du oy leus di;
+        <lb/>ſhbuoi, ans pour ce eſtre priuez de la coenoiſſance des prn
+        <lb/>es aaires de ’Eſat, qui ne ſe reſouôoent que pat lon
+        <lb/>Conſeil.
+        <lb/>L’n ſcait qu’ourte ces legiimes Caneilere ’ Eas qui
+        <lb/>9 compoſoientet Auguſte Seat, ily a eu des vſurp-reus qui
+        <lb/>ſe ſont laiſſez aller a la violence, &amp; ont ruinë toures ces illuſtres
+        <lb/>Compagnies, ou du moins les ont tellement affoiblies qu’elles
+        <lb/>eſtoient demeurees preſque inutiles.
+        <lb/>C ceque airent les trente Tyranad’henes, &amp; les di de
+        <lb/>Rome, aptés s’eſûtrt ſaſis de PEſtat, &amp; l’auoir change en vue
+        <lb/>Oqgarchie cres-inſolence, &amp; auparauant ces derniers, Tar¬
+        <lb/>quießuperbe, apres auoir change le gouuenement legiui¬
+        <lb/>e eſes padeceſeurs en vne dominanion yrannique &amp; in¬
+        <lb/>ſuppottable.
+        <lb/>b’asaneage, u eſt plus aiſe de calomnier les actions n
+        <lb/>Prince qui coaduit ſes affires par le conſel &amp; miniſtere de peu
+        <lb/>de gens &amp; de quelques Oficiers rtieuliers: que celuy qui e
+        <lb/>gouaerné paf les auis reſolutions d’vn Conſet celebre, ap¬
+        <lb/>ptbuué &amp; enpoſé des plus grands, des plus ſages &amp; experi¬
+        <lb/>mentez de ſon Eſtar
+        <lb/> On adioaſte à cela, que les affaires eſtant entre les mains de
+        <lb/>peu-de perſonnes , il ſera plusfacle a vn Prnce Eſtranger ouà
+        <lb/>vn autre, qui aura des deſſeins conere l’Eſtat, de le trauerſet,
+        <lb/>quſt el les eſtoient entre les maine d’vne Compagnie de Con¬¬
+        <lb/>ſeillets compoſez de gens de bien; eſtant beaucoup plus aiſé
+        <lb/> de pratiquer &amp; corrompre vn petit nombte d’hommes que
+        <lb/>tout vn geand Corps.
+        <lb/> Ore cela, il eſt diicile defire choix partieulier de quel¬
+        <lb/>e vs pout leur confier ee que le Prince eſtime de plus egrãd
+        <lb/>poids, ſais en meconeenter ininis aucres; &amp; en ce faiſant iet¬
+        <lb/> r des ſemehces de roubles, &amp; queuofoisde ſoeuemene.
+        <lb/>Ca ou conſe eroi ue peut ere compoſe que de peu de
+        <lb/>peonnts, ceſta dire du Prnce ou de qoare ou ono dni¬
+        <lb/>es oat nl yen vu plu grand uomote, ee ne ferplu ¬
+        <lb/>Couſeil eſtroit. <pb n="5"/>
+        <lb/>Or dans vn grand Eat, eel qu’eſt celuy de la Franc, ilya
+        <lb/>pluiour Grands &amp; encores de grnde Compegmiesreſtablie¬
+        <lb/>Selonoue nains &amp;Cqui pa leurefuliſement one paurs ca lad:
+        <lb/> miniiruron deis grandosafaires: Que ſ oreduit reſtrain
+        <lb/>lemaniementde eleaafire prinepaleù pudeerſonne.
+        <lb/>Sn meconrenea romuece grand Cotpsde l’Eſtat, nPoſ¬¬
+        <lb/>eonie Cnſei eit ltenuie deoue ceue Conpane
+        <lb/>ou peue nuire infini ineonauemen Caru e.
+        <lb/>lanu ſes aes ſe veulene maincenit en depi de vous u
+        <lb/>uietounermunais, pout oeteaeilacabalent enſembl.
+        <lb/>Vu iule perſetoux dinre de leurmaſie &amp; oupuble, l
+        <lb/>nnount ods lenpenſe eequis coiemt pouuoire¬
+        <lb/>i a eut ceonſenaion, ſimarinat que tout le monde ee
+        <lb/>i uunrn ils eonnenuent aui delux pana s n le
+        <lb/>re oamnent eeus quis ſçuentleurnuure, &amp; den iu
+        <lb/>paſſent ſouaent à l’inſolencé &amp; à la cruauté.
+        <lb/>e eſie pe ſieunmoe des iiniſiuenfianniſun cenin one.
+        <lb/>es iu apareo que uutrſlu onlenedn denunlue
+        <lb/>dir dlu l ine ennuoerea e perunſs lE pinr et
+        <lb/>u urunre ee en neaniu rie de pueuauaſen es e denr
+        <lb/>’niane oueſenoee al y a len de cone nt lan laoen
+        <lb/>enue ne eonle uenunee l dlea ae lbonoioe uns one
+        <lb/>enei eue u une e ns ueu unres undies s eonie
+        <lb/>ele d e e ni ſe eouiroi da remue &amp; qudela l le
+        <lb/>leon e lt eſ enſe i nui neina e eeuine l peun ſaeſ¬
+        <lb/>que le fire au iee en mgouenel doeqnm e,
+        <lb/>e rneren e e pe e deouie dane le deneunr le
+        <lb/>ne rne en u piea odilues vu cdunre ie
+        <lb/>lee eliut id ſeuounur uo prndosaaunen uni eie e
+        <lb/>nleler e nle p en ue eueſini u ie di de noene
+        <lb/>un ne e onun n e i ierne ieroune , le e i enn
+        <lb/>n pesl loune e de ei e e renmenoi eioendn e aeſe
+        <lb/>nneneuen ne eſde ue dupeſonuasſauendie ner
+        <lb/>Eeenener ue oei de nereie e le le eue
+        <lb/>’lelune e lnes den leu rede daiflauaeroie dlunn
+        <lb/>oeeneneur lneſenenſir lſrnie ſoe deaiue oeu ſe
+        <lb/>pnuiene toue e lueleunr e ſenerus ee e le nue
+        <lb/>triepu ee le en ſaſa ueuen arnaoa ſao¬
+        <lb/>B
+        <lb/>aa¬ <pb n="6"/>
+        <lb/>¬¬
+        <lb/>eelei!
+        <lb/>nemmeuſeaeuſanuon aout bampyleinee.
+        <lb/>lper e eno nunres raedirnoins ſlieueſene denenr
+        <lb/>e ln eneun nu aeeqeeue linl dne le oe e
+        <lb/>enuner e n n eun e e lduielosau ponenoenene ns dele
+        <lb/>eſenune lun e lſe eououaneneus aſiu aunoie ſdniendlelee
+        <lb/>n ilſ iſon aus nos u donuant pou ſeus oonueneeri
+        <lb/>enele l l le ſnuln e qui ne le lie pont uuoit eſtes nna
+        <lb/>aueun Miniſtre tant abſolu ai-il eſto.
+        <lb/>linler ſer dil iue eounuoinie denre lhamn aſ
+        <lb/> le nro n e eupu iu paſeoan ooe ſene onie
+        <lb/>lene ure nne ee oeli a r noue uir nne, ieeus des lonl
+        <lb/>ueneni eſielieleueoe oe oe rr ous eiuie nei pnr nel
+        <lb/>l nr ue e eure enſiu lures noropoienerauaeoreſe
+        <lb/>pe ene enr le pen enil rue eooe pous ee e den
+        <lb/>le i i n n o ſuinu eni ſoue queila iendu ls Pne ſdn
+        <lb/>’renu es vles eſoies, le plaux pyne poſt au vol s un
+        <lb/>enus u uo oeſeonr de Paraſari leus l daebud ſunuet
+        <lb/>e iesarmees inees flauto d’argent &amp;e de ſeoour lerenme
+        <lb/>ni foiee noſure miſere, dont loy ſeul a profite.
+        <lb/>P pu eooile dinſeoieeiieiuouluoudreuu cone
+        <lb/>emanes, ors ouen arendua ſemeſbes , poury auoir das e
+        <lb/>une a fa deuonon, lesayans c6me incerdits, ila vouluretra
+        <lb/>er iles aoeu de oiele reudte ua loboleſe ronuiee uſu
+        <lb/>ete au’ilea, aſer les priuileges des propres doaſtique
+        <lb/>e la maiſon du Roy,oerla plus ſeure garde de ſa Majeſte, n
+        <lb/>eaſſane eerce genereaſe &amp; fdeile comapagnie de ſes Mouſque¬
+        <lb/>aires à cheual, pour en mettre d’aure à ſa volonté : compô
+        <lb/>gnie qui auoiteſté choiie &amp; eſtablie par le defunct Roy, p
+        <lb/>ſe la plus ſeute de ſa perſonne, &amp; remplir la Cour oyale
+        <lb/>d’Officiers Iltaliens, &amp; les places meſmes des Ociers des ar¬
+        <lb/> mees &amp; de la guere, &amp;e renforeer la garde de ſa peſonne de
+        <lb/>cent Caualiens, &amp; Fuzelies, dont il affoibliſſoit celles qui
+        <lb/>eſtoient neceſſaires, fait perir los Regimens &amp; Copagni,
+        <lb/>at de cheual que de pieds dans les armées eſtrangeres, faute
+        <lb/>d’argent &amp; de viuras.
+        <lb/>E ’eyant ſeeu le Parlement de Paris, que le mal alloit
+        <lb/>oateuenit uemdiable, i de bonne hure onn’y
+        <lb/>s, ,,,,,,aaaa a,aa- <pb n="7"/>
+        <lb/>3
+        <lb/>1
+        <lb/>apportoit le ſecours neceſſaire, vnit en ſon adionction les au¬
+        <lb/>tres Compagnies Souueraines de Paris, comme la Cour des
+        <lb/>Aydes, la Chambre des Comptes, le Grand Conſeil, les Mai¬
+        <lb/>ſtres des Requeſtes de l’Hoſtel du Roy, les Treſoriers Ge ne¬
+        <lb/>raux &amp; autres Corps, qui par deputation &amp; aſſemblé́e trauail¬
+        <lb/>lent &amp; commencent à remedier aux abus par les voyes les plus
+        <lb/>douces, ſages &amp; moderées poſſibles, comme par Remonſtrau¬
+        <lb/>ces tres -humbles à la Reyne, aux Princes du Sang, pour leur fai¬
+        <lb/>e entendre les maux que les deſordres faiſoiene naiſtre dans le
+        <lb/>Royaume, receut les offres des autres Cours Souueraines de
+        <lb/>Etance, de ſeconder ſes bonnes &amp; iuſtes intentions, &amp; de de¬
+        <lb/>meurer conſtans dans ſes delibetations, qu’ils ſuiuroieat &amp; fe¬
+        <lb/>roient obſeruer par toutes les Prouinces pour le bien &amp; ſeruic¬
+        <lb/>du Roy, ſoulagement du peuple &amp; conſeruartion de l’Eſtat,
+        <lb/>neantmoins leurs procedures equitables ont eſte mai intrp¬
+        <lb/>ees par ceux qui veulene continuer à viure dans le deſordre &amp;
+        <lb/>emichir de la rune &amp; de la miſere du peuple, &amp; ſe ſont ſeruis
+        <lb/>du nom de l’auhorite du Roy, pour faire proſerire &amp; éloi¬
+        <lb/>sneraueuns deſdies Cours Souueraines, &amp;e au milieu des aio
+        <lb/>degraces faites à Paris pour la victoire ſignaĺe obpsrué P
+        <lb/>re les Etpnola pre de Lens, faire piſonnie eſeust
+        <lb/>Sunſmeri preuſent &amp;derouenles Conſeile auPalemie
+        <lb/>In eunduitau Aois de Vineennes l’auure pourmeń en diuen¬
+        <lb/>ieu autre qui euſrent eſle eaiue de nmieſnme, rls euſen
+        <lb/>ſie a duuriu le onſoirnuiou, ’ areit dea leunfu
+        <lb/>eauſe du ſoudeuenment de la populace de Paris, qui aloit nes
+        <lb/>e ee prande vieenpgond deſordre, ſiaPoirgroiſe neur
+        <lb/>euenmus i ’de diam par la pniſe des anmes eantonnanens ar
+        <lb/>eades par toorusſuuen, op de qpde etablindauou
+        <lb/>leaquurieurs rou neanmoinsreiſollent uiret lelr
+        <lb/>iuſiueu ene eue eu deue lſleſieuns ſoeneeinisens leee
+        <lb/>nieneu o ſiuoee de ilereſes eeoides de ous lrPe
+        <lb/>iu linut n ſeie ſe ri eun eonenann ie Cieiomdluaure ſit e
+        <lb/>En oe enee ae anutoue eurnieuis qu auoene onpete
+        <lb/>pauienerne ie ecere ovaie Cmpmaoie uniouſi&amp;e e
+        <lb/>raaire auvoiontez &amp; eonmandemens da Roy.
+        <lb/>e urole ade orine leait pointmeae amainE
+        <lb/>elounſi nleutou leor ae ldunieutle pe u¬
+        <lb/>-¬ <pb n="8"/>
+        <lb/>¬¬
+        <lb/>aonſtue uieai rel l de l l eile ene ueun
+        <lb/>uonleue ein elee ineainee nenueenele
+        <lb/>r ſiunurene eone e lſenaiſn eneneeui.
+        <lb/>irueeil edenme l perereie feieiene e.
+        <lb/>li nele eſeoueue e en reoeie i lene e e
+        <lb/>luiennererpune ieuoen pns pene n elnes
+        <lb/>a eeſlunen e elene e ueſrernreeneuenlis
+        <lb/>enenſau eln onene eien e eninuies e enuenee
+        <lb/>enre unuinre n ie dene eu eue oeoeni
+        <lb/>e enunennenenie uerne ns eiae ene on
+        <lb/>ppouneron de u e ieuaueoſions ue ue leoenees re
+        <lb/> luredne enenue eue ine pienioinele pee e
+        <lb/>uel l ne u ruenune le eonoun deunenerne oeun¬
+        <lb/>eunſioune oeruſueueron eſroreoniſeounune ſ en rne
+        <lb/>oen dlen enre e ue l l au u eordae onur unue l ire
+        <lb/> eonel en o nenneueue eoe eu die eine le
+        <lb/>pe enene ueo eeriu eneie ue ſer oue deln ln dle ie
+        <lb/>aanuie n ein one ſen en ie e e i ieeinun ſe e el
+        <lb/>ae eſe oe nue e enese euer e deur lnrue de nr de
+        <lb/>lenie ie ne ue ene nes eremene eoe ſur ſun oe
+        <lb/>eau deie re e enunu e ueinuoe utareſeonons deou
+        <lb/>e oui uoin niſie ea es qpermieieu Conſen
+        <lb/> qoi uenrns nourene ue e nu ſue edloi lue eque lſle¬
+        <lb/>aiun uoit die enlr les ronppes da o vui coien
+        <lb/>pn ile u deil us ueni e elnironu de Pais oonreſie
+        <lb/>eune e lunenu ne i e enunes e pnaund reainle l le
+        <lb/>ln e en u ean ſie e ne uree reius deueinanrnr
+        <lb/>e ſe uneaſiten des umulte arnags, volees, meurr
+        <lb/>euenile ur eus ui pie l le puin eui nanmue, C ei
+        <lb/>donunu ſuie aſ panlenene de adonnet ere coire launi
+        <lb/>e leeiurn ennet de leae lieii a lnyenioint deſorur de
+        <lb/>a Cour dans a, heures, &amp; du Royaumé dans haictaine
+        <lb/>ute dequoyiſ pit i delenſe ie reſrat &amp; gouue-roement des
+        <lb/>uairesermain pour remee ux meonuenaens qui pouo
+        <lb/>arriuer de làa, non ſeulemene dans Paris, mais par toute la Fta¬
+        <lb/>ce. Et afin d’empeſchet le courts d’vne ſi petnicieuſe entrepr¬
+        <lb/>ſe de ruyner Paris &amp; tout le Royaume, reſolut de prendre l
+        <lb/>armes, d’éluire des &amp;eneraux, des Capiaines &amp; Oheiers, &amp; de
+        <lb/>faire
+        <lb/>ut
+        <lb/>r̂
+        <lb/>vqiles1
+        <lb/>¬
+        <lb/>dtt
+        <lb/>u!
+        <lb/>tpou
+        <lb/>Lq
+        <lb/>ulesd
+        <lb/>han
+        <lb/>oin
+        <lb/>po!
+        <lb/>d8
+        <lb/>ute
+        <lb/>&amp; <pb n="9"/>
+        <lb/>93
+        <lb/>faire contribuer euxmeſnes tout le Corps tant pour laſub¬
+        <lb/>ſſtante des gens de guerre, que pour auoir le pouuoir de faire
+        <lb/>venir les viures à Paris.
+        <lb/>De là chacun peut iuger de l’imprudence de ce premier Mi¬
+        <lb/>niſtre &amp; de ceux qui prennent intereſt en l’execuion de ſes
+        <lb/>mauuais deſſeins, d’auoir voulu ruiner cet Auguſte Senat, le te¬
+        <lb/>nir pour ſe ditieux &amp; de s’enté lre auee les Ennemis de ce Eeae.
+        <lb/>Luy qui eſt tres-inteneſſe &amp; porte A ſoutenir les l-i fondamé¬
+        <lb/>rales du Royaume, a faire valoir l’authorit du Roy, &amp; à̀ cha¬
+        <lb/>ier ceux, qui comme criminels de lete-Majeſté y avroiens la
+        <lb/>moindreinteluipencee auee nos Ennems, comme ila aſez fai
+        <lb/>paroſre en la puirion demort d’vn Conneſtable de Fance,
+        <lb/>d’vnSur-inen dant de s Fmances.des Mairargues, des Lihoſtes&amp;
+        <lb/>aes oOieierns de la Couronne qui auoiene coniure auec l’e.
+        <lb/>ſtranger la ruyne de l’Eſtat.
+        <lb/> ſauuais Conſei de vouloir faire perir les plus couregur
+        <lb/> idele Oeiars de eetiluſe Paément, poutseftre auee
+        <lb/>oue fome ntegnite pore a l deenſe de liluſtiee uuſeut
+        <lb/>e dui oi auſoilugemene dupblie, eſerr inſn duille
+        <lb/>auoieneaiuran erne eule cooiuraniieuque ’niſnoirefl
+        <lb/>ie puns biens qu’ia fais ’aeeroiſement de ee Eat&amp;e
+        <lb/>ſplendeur de cette Courone.
+        <lb/>noene e e on euen ie rns nainſiemnrelre l nnſle
+        <lb/> uernee qei prerendoit auoir de la Guyenne, en le
+        <lb/>condamnant de pur crime de felonie.
+        <lb/>oui a enſiruer uli oe Saique onne eaaoudene Pe ie
+        <lb/>auon d pe, cutl, Vi, qurndiugeoi la Couronne derra¬
+        <lb/>ce aux Anglois.
+        <lb/>ne ſ eſeiute nunle la eeſeonqnele o ’inunoprniſeſi
+        <lb/>oei u oeoe e nee u e eue qiſoaonele ſenee
+        <lb/>pEeuer neeuo renneue len alrun daſe onuns eoi ene ſe
+        <lb/>leone ne e r n e e eeunune de piles e de dreiet
+        <lb/>le lu e lo e ni e es puon eiuit ounoe pous adea¬
+        <lb/>e’e panement de Pars qui a eunmyla Duee de P?
+        <lb/>urauice.
+        <lb/>o, ſle ie eone en es de aurues ſaiue de ſen e le ie
+        <lb/>lene de eoneunene de i eoue aiene lſle
+        <lb/>eui iſi ieur ler eue ie ns eduroaue dreuune ſai¬
+        <lb/>C
+        <lb/>aa <pb n="10"/>
+        <lb/>o
+        <lb/>par Perdnndo de Caaule ſu o;
+        <lb/>ene enenierl on di ſiad oeoe oui rnn en ſilen
+        <lb/>Qe e ie e ot e la Fnane eonmrne eel du papeboni¬
+        <lb/>ee ous leregne du R oy Pilippes le e
+        <lb/>en e e ae eu d punis ens puiſumnens deſenlo le
+        <lb/>f, le l eeſ eilene onure ueuns du Conde de
+        <lb/>Trente qui les vouloiene ſupprimes.
+        <lb/>on lele en due n os erur, le oen du dunle erpe de de
+        <lb/>eue e n e ere ſeu lne ſe ſrepoſe e na lee de l leſnes
+        <lb/>lene li ſe lnue e e n p ue de i idaiſon du lonnee!
+        <lb/>ele ires ue enrne ſeriereennn on de une le lns
+        <lb/>enent de panis ſeroidie couageuſemeut contre ctepro
+        <lb/>E nen enruns rmei ſoennelnrepnu ouee deferſe de
+        <lb/>aoe efot yentendre, comme tendamue qterla Couronn
+        <lb/>u vrayhertier d’icele &amp; ’emparer ainſi du Royaun¬
+        <lb/>nrn ene a pue eues eraues de a idline da ſe
+        <lb/>men de Pars, de leurs uſes proeedures pour la
+        <lb/>ſeruation des drois de cete Couronne, &amp; chaſtimens ee¬
+        <lb/>inre ſeuen eoeeueiun de eun Anreis eonue le aite
+        <lb/>Ireun ue oui uoient neingee auee lea enius de
+        <lb/> pnne s nl onun leun onſprauions qui ſeua ſi
+        <lb/>ſe de mettre en auant, conme on a fat, de publier que
+        <lb/>aans eeee ſiure Compagnie il y en auoi qui conni¬
+        <lb/>uoient auec es Elpagnols &amp; autres Ennemis de l’Eſtat, &amp; qu
+        <lb/>pour ce ſujet on auoit enleué le Roy hors de Paris pour le me
+        <lb/>tre en plus grande ſeureté. Impoſture manifeſte qui ſe ruyné
+        <lb/>d’ele-meſme, &amp; et condamnee par lHiſtoire de France qui
+        <lb/>ſi dignement eſcrit de l’integrité inuiolable de cet Auguſte Se¬
+        <lb/>nat, que cela ferme la bouche à ſes Ennemis meſnes &amp; con¬
+        <lb/>uainque les rmédiſans d’impoſture.
+        <lb/>Ieſt bien plus a ceaindre de confier les grandes affaires d’v
+        <lb/>puiſſant Etat àvn Eſtranger ignorant aux maximes , aux Loix,
+        <lb/>aux Couſtumes &amp; aux mœurs des peuples naturels: cat gtr?
+        <lb/>la hayne qu’il s’aequiert l doit eſtré couſiours ſuſpect, nonans
+        <lb/>on, qu engouuenant les afaires plus imporeantes, &amp; co¬
+        <lb/>gnoiſant les forces ou la foibleſſe &amp; les maquemens de ’Eſtat,
+        <lb/>l ne les faſe cognoitre aux Prnees deſquei il eſtoie vaſal.
+        <lb/>qui etans ou duenans Ennenmys en raat psst a prenneni
+        <lb/>1 <pb n="11"/>
+        <lb/>leur auantage pour le troubler y ietrant la guerre.
+        <lb/>Secondement, la pluſpare de rels Miniſtres eſtrangets ’etans
+        <lb/>ainſi éleuez dans le gouuernemene d’vn Eſtar, ne penſent qu
+        <lb/>eſtablir leur fortuone, ou à s’entichir d’or &amp; de biens, afn que sil
+        <lb/>arriue quelque diſgrace, mecontencentement, ou changeme¬..
+        <lb/>ie yenemoen de’feretiree &amp; mettrea couuert, ce qui vaà la
+        <lb/>ayne d’vn Royaume &amp; de ſon peuple.
+        <lb/>En troiſieſmelieu, tels Eſtrangers aini leuez &amp; protegez
+        <lb/>deuiennent amboitieux, ſuperbes &amp;e inſolens, ce qui eauſe bien
+        <lb/>ſouuene de granada toubles, procedans de la ialouſie que ¬
+        <lb/>Prinees, le, Gand les Peuples !leur portent, &amp; qui ſe con¬
+        <lb/>uerriſſene en dz grandes guerres ciuiles, comme nous auont
+        <lb/>mnaintefois veu jen France.
+        <lb/>Einlemen la France, les Peinces &amp; les gtands Corps de
+        <lb/>Nobeſſe &amp; de oiice, feront croire aux Nations voiſines, ou
+        <lb/>qu’iu manquent de courage de ſoufir vn Miniſte Eſans
+        <lb/>uoir la meileure pare en la conduite des afraires, quienuovr
+        <lb/>ien ines d sanse les qanis Caoainesl laquierenupe
+        <lb/>de leurvie, poorlſpoſer ſeul &amp;e ſans contredis du oouues
+        <lb/>ens ou ele nou ornnaes la ſehes u ſrlde, uma u
+        <lb/> pointel ornues enPrenea qui ſoens ſnſion eomaele
+        <lb/>eleorineue puu nuntius leus ſeaiesuntdela ee
+        <lb/>i Caerre Se que la Fmanee ſe voyereduite aeee hane.
+        <lb/>nere maneur defeire venitn enanmgen, pour diſpoſer or
+        <lb/>uilunen deneſir en nuis dles reinane i deuomelsſaoue
+        <lb/>e linpunin ene unenure puruie d oune ſonpnlſi
+        <lb/>nut ei r ſelſue plerenue de ſienreveos de oue e nlſr
+        <lb/>euenuer irun ie e pene un ſeni ues eenoeſunoe le
+        <lb/>neun re nen e e n i indire sinonre Slaſhure nedlenu
+        <lb/>ieoſeuei e que rſolenea omonenſpeos eleee
+        <lb/>le piuldenrene ds eurdis pour ier u duouanme ’ne ree le ’e
+        <lb/>ee rnene e ne eoeil eren pun due conaſne e e
+        <lb/>e de en eoe e ne e upeie u noe ouinis de l l enue
+        <lb/>Poorun le eo eni e d leos llaienlens ns ee ne nei.
+        <lb/> eope eneſnr e e uee ens eſeuiſes pe oe nenre
+        <lb/>e oeoeene enene r eiſai r ie ani eſoſnr
+        <lb/>eſiuenieln pnane e e e en e eeruede eioe le ſnrſde.
+        <lb/>liſ ounlen e tl eſe e ilſi renaurquer qour aorune
+        <lb/>-l <pb n="12"/>
+        <lb/>¬
+        <lb/>12
+        <lb/>aiſons eeneomces daaires eſquellesileſtuot .
+        <lb/>leie ne lu oner oe pee de du dur lns lnrni
+        <lb/>pene anines nu au ens onune ponirenenleſe n pe
+        <lb/>neiounen eupee u qun e ſein ous ſonin den ene;
+        <lb/>ne e ſueailon ouine eoueauoune uneneene en le
+        <lb/>ee oeies ne au dlen prmerpeuu nen ps de l lue ernuee
+        <lb/>ne erne e dn eei qe er onine leioaes oernaſe dens
+        <lb/>penur e e nr inueier eans de e ſierns de ſenen n?
+        <lb/>pne e enen di eſeue e e eſi poiouoeoude e nre eſon
+        <lb/>ement toutes les formes que l’on iuoie urdee aopamuuan¬
+        <lb/> e eres, u l onterue la eae de reſtute mueſdte ueere enun
+        <lb/>e e u il eonupeeries qi oureſle eſublies daneenunet
+        <lb/>eſ’e que at uguſe apes les queres Cuile en
+        <lb/>uaeſi ſioie e ſes luee rus i qui li ſauſnuepnne dei ſei
+        <lb/>Ere lu eele iees oneenruneſis pe ſoe oaſonae
+        <lb/>aene eui eienun eoeuedeſe pe rn e enens
+        <lb/> in uee eue puiene eeeomnſpeaon, uau neſe
+        <lb/>nue eue e aeune eneleouaſi ai le lure dn siequs aame
+        <lb/>eeeae eee
+        <lb/>me i adioutoit a ſa ſplendear, les deſehargeans de ceux qu
+        <lb/>ce grand Corps.
+        <lb/> Que ſ cel ſ’obſerooie enFranee le Roy en ſeroit beaucout
+        <lb/>miex ſeruy, ’Eſat mieusx poliee &amp; conſerue la luſtuice main¬
+        <lb/>enue en ſon integnite, le puple deſeharge &amp; ſoulage, &amp;
+        <lb/>Royaume puiſſant pour s’oppoſer à toutes entrepriſes ens
+        <lb/>mies &amp; eſtrangeres, au lieu qui ſe void preſex à la veille
+        <lb/>d’en eſtre la proye, n le Parlement par ſa preuoyance iudi¬
+        <lb/>cieuſe ny apporte les remedes, que toute la Frauce eſpere
+        <lb/>de luy.
+        <lb/>Qui voudroit s’arreſter à lire l’Hiſtoire de France &amp; celle
+        <lb/>de nos voiſins, ſçauroit qee le trop grand pouuoir que les So¬
+        <lb/>uerains ont donné à leurs Miniſtres particuliers à canſe des
+        <lb/>grandes guerres &amp; grandes ruynes &amp; dommages en leurs Eſtats,
+        <lb/>puis qu’il eſt iey queſtiond’ vnCardnaliſtre tel qu’eſtlu¬
+        <lb/>les Mazarin.
+        <lb/>Sous l regne du Roy Louys onieſme eſtoit le Cardi¬
+        <lb/>na Baue &amp; qui de courier auoit ee fa Threſorie¬
+        <lb/> pa <pb n="13"/>
+        <lb/>1
+        <lb/>t l onut de nſaie aeſue deperi le nie den e
+        <lb/>e e lere de l ene e eoes ’a ienenue e oe le
+        <lb/>e e de ueuie i oeoaie ls lon e pnee p en leei
+        <lb/>e e euete ee e le len i de oini ers enenee
+        <lb/>ne e npeie eue ome ueraoaun l uone lne lo lerene
+        <lb/>ls ſen leunre e e ue nrein an se lnon i e ſle
+        <lb/>u e ineier ne oeten n l rau rds loetoes lu nn doue
+        <lb/>e n e lon i l pinredu apeon
+        <lb/>d e nilun n e peſe i ſioneouens lunrn dele
+        <lb/>e eidln i ee de luoe e eoane peaule er neie ie
+        <lb/>en e le eiepeonnieine u raedu eeſe ne noe eoleie
+        <lb/>eoeſe n noene ene eue eneieni eneile eirer
+        <lb/>ee ſie egr os le ſe e n quileilnnt nlade toanuu onne¬
+        <lb/>dns oque pu ſonns en pnſl ein deeonniir
+        <lb/>ieernſlon e n euei e e r oe onſi ounen elele
+        <lb/>e eonieneleoue euenee ei eeeian er le
+        <lb/>nrenennene ne e e u eie lne nun ele lne ier
+        <lb/>nniee renens e e e e pe ea lauienunuanan¬
+        <lb/>n liniene li e eimna nenneeoinelneſerpeei
+        <lb/>Louys XI. ſon bon Maiſtre.
+        <lb/> e ieneu e renenenerenie e oneſn lernel
+        <lb/> ounieie ene e reun aen e eonaere nenr ens
+        <lb/>e eueaie en ne leie liereue eneſne
+        <lb/>Eeoueileneineune e eieieue eunelin
+        <lb/>ere eſ anuneneneieſine eoieie eneni
+        <lb/>enenedinierene eiei ee ene le
+        <lb/>eeuruſemeuee lroeueneie neouo pde leneinee
+        <lb/>e eerereneee ei rene ieieeafe
+        <lb/>neſeien e eieneſe deierpe es elieieireſen!
+        <lb/>eurnene eeie e e eaeies e ele
+        <lb/>uel eieue o de le e e lenione n e eie
+        <lb/>ienineneuie eie e i ſen ue e ie ie ne
+        <lb/>’eni e enue euni pne eler ire eieue
+        <lb/>eeneie le enie ere de ſileniennrene
+        <lb/>anieeenepniereperoſeue liene eieree
+        <lb/>une e eaenmuereile reeoeonedprine eo euepeai¬
+        <lb/>’luil ieinie roeen ie ſeonauenuene reun rgnaees
+        <lb/>D <pb n="14"/>
+        <lb/>aa,
+        <lb/>¬
+        <lb/>t exceſſiuement bon traitement, &amp; tel qu’onn’y pouaoit tien
+        <lb/>adioulet peut ilaſouui cet homme auare ambiuieux, al en
+        <lb/>ſeher d’auoir l’œil ailleurs Rien de eele, mais tout le con¬
+        <lb/>ttaire.
+        <lb/>Nous auons veu cela en la perſonne de Iules Mazarin, depuis
+        <lb/>qu’il a eſté appellé en Erance, pat le teu Cardinal de cneleu
+        <lb/>éxtrait de vi! &amp; bas lieu. Lequel par la bonté de la Reyne Regen¬
+        <lb/>e, dontil a ſi ſort abuſe, ne s’eſt pas toſt veu eleué à̀ la dignité
+        <lb/>e Mmiſtre d’Eſtat, qu’il a voulu diſpoſer abſolument: Non leu¬
+        <lb/>lement des plus grades affaires, mais encores de celle de le
+        <lb/>Guerre, &amp; des Finanees, ayant rencontré ce qu’il deſiroitſçauoit
+        <lb/>des hommes accouſtumez à voler &amp; rïner le peuple, &amp; profiter,
+        <lb/>aon ſeulement des deniers du Roy, mais de toute la France, ſou
+        <lb/>pretexte de faire ſubſiſter la guerte, &amp; entretenir les armées.
+        <lb/>pour plus hbrement aſouuit leur auarice, auee leſquels il a telle¬
+        <lb/>ment eſpuiſé tooe a ſubſtance des peuples que l’on ne void par les
+        <lb/>Villes, &amp; les Prouinces que miſete, deſolation, &amp; ruyne, plus
+        <lb/>grandes que ſi la guetre euſt eſté allumée au milieu, &amp; aux quattes
+        <lb/>toins du Royaume.
+        <lb/>Mais ſon ambition a bien’paſſé plus auant: car ne ſe contenant
+        <lb/>point du gouuernement abſolu de tout l’Eſtat; d’eſtre logé prés le
+        <lb/>Palais Royal, a fin que la meſme Garde de ſa Majeſté, fut celle de
+        <lb/>ſon Palais, &amp; d’anoirt vne porte au dertiere du Iardin, pour paſſer à
+        <lb/>toutes heures; &amp; à couuert de ſa maiſon en celle du Roy, il voulut
+        <lb/>eſtre logé dans le meſme Palais Royal, pretextant cetre ſienne am¬
+        <lb/>biion exceſſue, de la charge qu’il ſe fit donner par la Reyne de
+        <lb/>Surinendant conuerneut de la perſône du Roy, pour auoir moyen
+        <lb/>de diſpoſer abſolument des volontex de leurs Mteſtez, commeil,
+        <lb/>fai: Et qui coferre, &amp; oſte toutes les charges de la guerre , &amp; de
+        <lb/>I’Eſtat, ainſi qu’il luy plauſt, pour y ſubſtiuer des Itaſiens, &amp; des
+        <lb/>Peſonnes qui cabulent auee luy: &amp;e pour e qu concerne les di¬
+        <lb/>gniez &amp; les benefices Eeeleſiaſtques de la Franc:, les diſtri¬.
+        <lb/>e à ſes confdens retient les meilleurs, &amp; Ies plus riches
+        <lb/>obayea pout luy, obiseant eux qui le poe dent pat merire
+        <lb/>e e’en denure, ̀nn de ne renu es eſe e fu dupaee,
+        <lb/>de laveyearee or dnaire d’vn eeur amabaueu n , l neia
+        <lb/>es onie dedaiſoun duRoy, e a ene, qul chuase, <pb n="15"/>
+        <lb/>&amp; chaſſe, pour y mettre de ſes creatores: Afin que leure Ma¬
+        <lb/>ieſtez ne ſoient ſibres en leurs actions, &amp; ayent de celles gens
+        <lb/>pourptendre garde à ceux qui les approchent, &amp; qui ont l ’hon¬
+        <lb/>neur d’eſtre res leurs perſonnes
+        <lb/>L’Eſpgne nous foutnt d’vn aure exemple de lules Mazarin.
+        <lb/>D. Pere Fanco de Ximenes de Ciſneros, peſonne de medio¬
+        <lb/>cre maiſon: encores qu’aucuns eſecriuent qu’il eûtoit Gennihom¬
+        <lb/>me. Il ſe rendit Religieux de l’Obſeruance de S. Fransois,
+        <lb/>e eaifutreeoonéupour habile homme oar le Cardinulet
+        <lb/>doee reheueſque de T’olade. lequel eſtant malade le choiſu?
+        <lb/>pour lu, ſuere der enſon aAreheueiehé, eneion quifur eprou
+        <lb/>uee pariles Rois Don Ferdinand &amp; Iſabele. Il etoi flsde To¬
+        <lb/>dedlruna, nonme iphonſe imeea, npres ſes ſtudus ſ
+        <lb/>paroſe iereilenee de ſon eſpt, &amp; comne Conſeau dl
+        <lb/>eine, i dueu aia Cout, ou il enras en faueur &amp;e eredir pa
+        <lb/>deſſus le reſte des Courtiſans.
+        <lb/>iorusli nr in ſeoneD lebone l n n ſener d
+        <lb/>a, S’prinua dſon nauy, qui ur obun due Pelll
+        <lb/>aduileus dle e nleue u lane aene aun onies epne;
+        <lb/>ni ae eoue que de iſur i rouſn pau es dren n
+        <lb/>u e l e ene e eru eiear de eure eun ine ll
+        <lb/>pe n peun e en ue n ueſiſe au ous ſuipn runee e
+        <lb/>ene e a rrliene e e noun lenue le Caieini neee
+        <lb/> rſe’le e d oine Ctar leu qui clonen ’uud ntt
+        <lb/> liſriſſu rlun e e onueriinee areſroaqoe ſeradunet
+        <lb/>pei en enen e nni e ien eins oe ſonus e enie
+        <lb/>P nene nuoe ne nee s enr o y era umu ul ſdſe.
+        <lb/>anue ene e noere neaue i e oe lnanepinne e
+        <lb/> e eon ie lſlereon oouinl uoir leur ies airea lane
+        <lb/>ae en neinernunein eue e re corſedinienueiaer lee
+        <lb/>ne e eueenon e rn ne e e perea de nois runnue fdene e
+        <lb/>e en e ne e oinus eune e Courdinl oaeiuuln
+        <lb/>i oe ee ſe reruo e au dipreone ruuoaius conenenr n en
+        <lb/>leeonie e enenres en e re u aoeae aieoenl e done
+        <lb/> e oeleil lun neepe e enenen ae reiu iueeleeunſe
+        <lb/>nuoer slel e e lrun e u reu ouee vuueonannes
+        <lb/>E e de re e eſnuues leuaun lepande Cui la ¬ <pb n="16"/>
+        <lb/>ſans nettre biea auant la ialouſio en la teſte du Cardinal l¬
+        <lb/> pine oolunuaur decomruormou ne iuny volue eſen
+        <lb/>ſeinunt tir ouiuns le preaaier laou dans le munianen
+        <lb/>eiees ainſi’ ſu ler ſie panminre Cur n ior le er
+        <lb/> t e cainnii dlan apans ſene qelques dep¬
+        <lb/>s u lniit pueun Cuinai xihenespourlnis n lsle
+        <lb/>eiennn i lemit enpieees e ea ſiureeied’uiures, qu’il ſ
+        <lb/>ſeul ſans permetre que les autte les ſigaaſſons
+        <lb/>e ’eſie e npu renpereur ſaanuuanarim lpumrl
+        <lb/>es fou preere deeonferer auee le oy Chaeſar ſon voS
+        <lb/>anſeou lnue, e puinmi le Cardini lmens en rnlpine
+        <lb/>Caignan que cere Conſernce reuſnſt aſonpreiudieepe
+        <lb/>lui enr uoyes ſe nperu ldlaimian conarmder enſp
+        <lb/>ne en ’abſeaee duRoy Maia es Eſpagnols voyanas yt
+        <lb/>ureuue duroit trop lons emps aleur gte, e que le oy ne
+        <lb/>uloipinu dereni en e puone anreoau de gnndias fplaiuael
+        <lb/>fns que ’Epane etoit enre les mains des Flamaa u
+        <lb/>us les granda reſors que le Cardina Ximenes auoi aceomu
+        <lb/>le eſient pourifouuirſon aunice. Et ſor cela ils fren plu
+        <lb/>eurs aſemblees pour y remedier, &amp;e par Deere publie il
+        <lb/>donaereque lRoy ean en Epaone n’auroit puanee d
+        <lb/>Seeaueun oaee, Chage nEſatdu Royaumé aux Etran¬
+        <lb/>gers. Tout cela ſut ſuiuy de pluſieurs libelleés dffamatoires &amp;
+        <lb/>niurieux eontre ledit Cardinal.
+        <lb/>En outre out les Grands d’Eſpagne ſe reſolurent de ne pl
+        <lb/>uy obeir, lequel(eomne Viceroy en l’abſence du Roy) fut ſite¬
+        <lb/>aeraire quedeſe vouloir vanger d’eux, &amp; les contraindre de luey
+        <lb/>obeit. leur diſants Qu’il auoit le pouuoir de faire executer les vo¬
+        <lb/>lontez du Roy comr qui que ce ſoit, Et voiey ce qu’il fi C’eſt
+        <lb/>qu’apprehendant que I’Inſant Dom Ferdinand, par le conſeil de
+        <lb/>ux qui le gouuernoient, allaſt en Arragon, pour s’en faire Roy;
+        <lb/> quiluy eut reiſià eaaſe de l’extreme eion que leArrago¬
+        <lb/>onluy poroint. Pour preuenir ce coup, le Cardina e chiaſ¬
+        <lb/>lt ou ue enace poee ſe conoit uuuge, &amp;e chunqe¬
+        <lb/>ou le Oſfnus de ſ iſon, e prnepalemnent Dom Pede
+        <lb/>uanea de ounimu ſon Goouemour, o unrs Oion¬
+        <lb/>Emeque dſoregpſoQreeepeut Sprenmert e plnparmieuſia¬
+        <lb/>Conſeiller <pb n="17"/>
+        <lb/>Coneuler: Ce qui deſplatgrandemet l’ſant , ſade
+        <lb/>eetnuan eCarouni Creonmmeil dpoſou doounraa¬.
+        <lb/>a ſeur ulnent ſe aegree a o, Chae pui eſonten
+        <lb/>’iun ie e oilunen due pus ius aſan oneeſlne quo ilſe
+        <lb/> l’ ſlne Cen doana ouanenoaehenis une
+        <lb/>oee Ctuual ouinqp’eule aaieauconſormes ala mlon¬
+        <lb/>é du Roy.
+        <lb/>Eeſey cnare dune me enſpagpnutgpee
+        <lb/>li ileiu l dui ae oenupul ſirſioar l eeneln
+        <lb/>Iiie elieunult iearin, dun, auaſuuua d e n be¬
+        <lb/> n nee e e ſeue piaue laeeoemans e renunueſe
+        <lb/>Eoeeuet ue un d edenieut pli pua pnnerne il
+        <lb/>e rnne ue er eurerenecedue leda eene tnſnlou
+        <lb/>n ee nene i dl le eeae eus rline e ln eſi aſilne
+        <lb/>u e e ere lue ee i yenu di iera eer ſeile
+        <lb/>lr aenmnonene ure drieonae ue orpnde eſeriſen
+        <lb/>e ente eer eelnaiu ueoe eiluengere ee
+        <lb/>lenereee e r ne n inruea eoae e eree
+        <lb/>leouſetene e e e re e dn du oenre eree,
+        <lb/> eunſe nr eennue e e er e onelſeſe pnereelee
+        <lb/>ononuſle eſt enene eou edire ni ouapeon e ie lr per
+        <lb/> utue eus enurne pnein erie ueie lena enrien.
+        <lb/>nee eſiun de reu r ine eoenedie ple enitene
+        <lb/>nmneon eln i le e eaoeun en a ierouoedi dunl ene
+        <lb/>le ne elunee ue r eieu ereiueieleenerer ter
+        <lb/>ineeunrnenennrueenene dron reneie ee ee lr
+        <lb/>leunelenerni ene e e relrnu de n ſnenrſe
+        <lb/>eniulſleeoeu iſe ounumeieiedeu i couoianad de ouaen
+        <lb/>euee ſe liuner enenune oremuil larſeniun¬
+        <lb/>r nele e eneele er e ene en pemaene de¬
+        <lb/>neue enen i aiee ier eln rne e i enee
+        <lb/>tnle oue e e ene eſi e ene len e le er
+        <lb/>nuineen eeſoneiere ienmde d ſeoen ee le lnlne
+        <lb/>ilaun nſenen ne ninne ru ſ oni ennee¬
+        <lb/>e l nerelen eui peneoeienmeleoeourenie conene
+        <lb/>eiſ le e neſlein n e ieieuoe ene eile¬
+        <lb/>en e l lre n neleie e eoelie ineue u u oeipe
+        <lb/>E
+        <lb/>.-eLaa <pb n="18"/>
+        <lb/>¬¬¬
+        <lb/>eebnaſtre ne pouuoit faire qu’il ne continuaſt ſes neſmes deſeins
+        <lb/>de cotinuet troubler: Sa Maieſté. a’en fit point ce iugemens
+        <lb/>t eiſe le croyoit poré à la paix, &amp; qu’enla procutamt à toute la
+        <lb/>Chreſtiente, il ſacondeoie ſes bonnes inenions. M ais comme il!
+        <lb/>ſauoi les moayens deſquels le Catdinal deRichelieu ’eſtot ſuy
+        <lb/>pour seatichir e ſeredce abſolu &amp;e redoutable; ſçauoir ceux da¬
+        <lb/>uort del’argent par la conunuatioo de la guerreil a ſceue-bpien
+        <lb/>limiter en celaon point ea ſes maximes poluriques, qui s
+        <lb/>dent ſe gouuernemene, &amp; preuoir les dagers qui expoſent vn
+        <lb/>ſtat enproyeà ſes ennemis, c’eſt vne leçan qil n’aucit point
+        <lb/>priſe; maiſaulemenoelle de l’auarice. des plaiſits, des feſtins¬
+        <lb/>ee jeux, aaſpuiſant la Erauce de nances, &amp;e de.moyens de
+        <lb/>ſubſiſter, ayantealeué les millions d’or pour s’enrichir &amp; ancrete¬
+        <lb/>i ſes intelligeaces auec les Eſtrangers à la ruine de l’Eſtat.
+        <lb/>Les petſuoaaiaf choiſioee appelléesaux eharges eminep̀
+        <lb/>ues à la Caut esRi&amp; venaos le bas lie, dearaieot prineipa¬
+        <lb/>lement rendse garde de plus prés à toutes ces choſes. Que ſi la
+        <lb/>olonteé des Maitres qu’ils ſeruent en la dignité de leur chotg
+        <lb/>les excite d’en ſer auttement; ce ſeroit udence à eux deisa¬
+        <lb/>ſre qu’ils n’y ſont voloairementpotez, n cela le Cardmal
+        <lb/>menés au commencement de ſa fotuane ſe pona tres-hien:cos
+        <lb/>il fit oir ſa madeſtie au refus qu’il fit d’accepter la dignité d’Ar¬
+        <lb/>cheueſque de Tolede iugeant que s’il le faiſoit, il attireroit ſut
+        <lb/>luy l’enuie de tous les, Srands du oyaume. ſous le faix de la¬
+        <lb/>elle l urcomberoit:de ſaç̧on que pour e’aſeurerde ce coté-là.
+        <lb/>la eine P Neanne ſue eontrainte ds le faire prier par tous les
+        <lb/>nde deſa Cour daeeeper eeue chage eequi t anfnapres
+        <lb/>Dluſaioas eus maui deneun quelque’eenp linu Couloit no
+        <lb/>ae nſouanns ſa deſipenſs qeique emnonſiane qon i
+        <lb/>ln ue oene d ue negpeoie ſidhun di dle ſi pun de vire.
+        <lb/> ſilne pue ſ ain doiu le enunnuneeleus eure l pape5
+        <lb/>rnine nauel en ſnilien e ainſii tee ere lile inue ſnu
+        <lb/>ſeoee eſeie dle uou e cnuie d i en eu eo u an ne eenr
+        <lb/>eaſe iun tena ou oureſannnue ele oe ee re
+        <lb/>le oidnas iuniua aer ei puiun ie e ielome d
+        <lb/>eonuie ue luenin lus enulun l le e ne ſ ornrnene e
+        <lb/>ounerenſeolemene ſ obei nutolune de l eeil <pb n="19"/>
+        <lb/>A
+        <lb/>rouloiefaire premierMinite d’la;Mais l em ploya tous ſes
+        <lb/>ſoin&amp; oute ſon induſtrie pout monter à cette eminente hag.
+        <lb/>de laquelle il eſtoit indigne: &amp; y aſtant inſtaleé il commecà
+        <lb/>tailler du Sounerain dans les affaires, &amp; dans a diſtribution des
+        <lb/>charges,comme de cele de Gouuecneur de la peſonns u or
+        <lb/>onmſ ſedonma la ſunintendance, &amp; voulut auoit ſous luy le Ma¬
+        <lb/>eſehail de Vileroy &amp; les ſieurs de Saine Eennee du one.
+        <lb/>creaures du defun Catrdinal de Richelieu, pou n ’auoit d’atre
+        <lb/>Palais que eeluy du Roy il aſa la plus beue&amp;s fiee conmpesni
+        <lb/> do ſa daieſe eele deſea Mauſqueaires à cheual, &amp;epopela pous
+        <lb/>la ſienme cinqantoCenrils- hoinmes, ee eent bamaes de cau¬
+        <lb/>leie pout plus gundeoenaiomndeſon amiooneafu
+        <lb/>desdne CCſe n quoy il imia le Cdauda ime
+        <lb/>e en lu onduite dafaires.A augouaernement dane il voa
+        <lb/>iait cire soouernn la eitie meſae, an us e ſai dur¬
+        <lb/>Coſeiu qu deſien la ouu oounrla oequeſund
+        <lb/>eer auoitallumee dans Chreuiente, Cen faie d’apr ou
+        <lb/>aele a tuironnleu, leu rneeu dSunge y ſat o¬
+        <lb/>Duſen uur peoreie uſi ua luile que pai eoear les
+        <lb/>ne aieonr nen eneſder neiain eun edeen ee le
+        <lb/>ilpuerne der ere lenue i eoeurn uaſeonauun Dde ſle
+        <lb/>puee n qnue ae e riua e eaerioun leereea leſe
+        <lb/>dene nerte des ooſaeles aux eſeils qu’l aeueloiu, pout a¬
+        <lb/>croiſtre ſon credit &amp; ſon auhorité partout.
+        <lb/>nre enun nin e neoe ens dnunr ru le nueendle nnpee
+        <lb/>Ee dſu e punue n noſe e ae iſa den en ſe elre
+        <lb/>a unonet e l e eeernuae u on laonue de ſen leu
+        <lb/>lenneone unue e e e e e qa ſa leoe e ril nlee
+        <lb/>none ue ue erroe rnereilioe roileau luoaerr leliniee
+        <lb/> endne neonue ern eren rn ſdn uiloueue Ceoee
+        <lb/>ieunu unue e le eeure elninreoeut a Conuamne n len eunr
+        <lb/>unr p une e eo eou uneus oa iniouilen iſee
+        <lb/>ui d e eue ue e enen e e direus naonu pous oaidlan
+        <lb/>nlſeen ne nunoei ſu eree lain eurpe ioia p eoeeue
+        <lb/>de lonr enur ſeie lie erneoe u r ene il pe e qeiure
+        <lb/>er e e oiun e ln rne neun punedene onſ iler
+        <lb/>’ auins e llre ne lueſaa, deuueu l ai uar¬ <pb n="20"/>
+        <lb/>¬
+        <lb/>e ceux qu’l oyoa luy ere uſpeas, afindedpoſss d vme
+        <lb/>e uuresi ſon plaiſir. yen merre d’autres faisde ſamain
+        <lb/>ecCardnaſ imemés eſtoit louable en cocy. C’eſt qu’aprea
+        <lb/>unt delteine D iibel eeue Prnceſſel’aymtreeommnm
+        <lb/>, pDon eeruinundi ln, uendi de gandu ſie eu le
+        <lb/>aſruioun des nobies ſſeiteis pus les oramd de Cſllnoe
+        <lb/>urſeduſis &amp; conſeaiu fuentappailea eu gueme conlut or
+        <lb/> is iaaures ’iſnique l Cardinul daaun au ouais
+        <lb/>presiauot ds deun oy loue XI d’hureunſe nenoi
+        <lb/>ene Regae luy aniu en aain la diſpoſuaon u pe
+        <lb/>npoanes airea aulieu de ly donoet deooafeiadepa
+        <lb/>eſeeon de, ou phſii ſoniſier les bondens qus ſa Maiets
+        <lb/>uou de faiueiout la Chreſuiene d’vnſolderepoail ne loyinſp¬
+        <lb/>roi que deucoaſeila deuerre , ſongeant plus profus das ou¬
+        <lb/>les qu’a faire la paix, qui luy oteroi les pretextes-&amp;o las moyu¬
+        <lb/>efale degandſ amu d’ot d’augente ’aeu qu’a uy ſou!
+        <lb/>que la paix enerale n’ait eſé canclueé for auaneageuſemnt pous
+        <lb/>Fraaceſeſoueianepandurepos de la Creen, puraeuqu’
+        <lb/>uiſe touſiours tcouuer dequoy afouuir ſon auaeie infatiable.
+        <lb/>aaant rmieu vois les Chteliersſe rner dans leus guerres et¬
+        <lb/>uiles, que de penſer aux moyens de liberer l’Ermpire Chreſtien des
+        <lb/>uoubles que les Tuces y nourtiſent, pour proûier de nos quereles
+        <lb/>&amp;e diſſenions paticulieras,
+        <lb/>Le Cardinal imenés prit ombrage de l’enreueuë de l’Em¬
+        <lb/>pereu Maimilian aaaee le oy Chales àBruxelles mais ſon
+        <lb/>oyage anEſpagneompir ce coup. Ce quifus cauſe que les Eſpa¬
+        <lb/>ols voyans que le Roy ne pailoit plus de venir en Eſpagne.
+        <lb/>a’eſleueren &amp; cierent hauteoeut, que ce Cardina ne deſiroit
+        <lb/>paaſa venuë, &amp; que lEſpagne durant ſon abſence eſteu entre les
+        <lb/>ains des Flamans. C’eſt ce que nous auons veu en France depis
+        <lb/>mous que le Cardanal ilaarin a eieue par daux foia leoy
+        <lb/>ſa boonie vile de Pariu pous legur camae i voudroit &amp;e
+        <lb/>ene lnFPrante entreles mains des luliems, dom i rempiſiois
+        <lb/>sehages t lus oaeeaonſeulemnentae i urasnu du ſy e
+        <lb/>laleine nndlnnaſa ean deun e u un uni de i ep¬
+        <lb/>n e eſen e gd y enuremo e dſuurs ns ae rueree
+        <lb/>douavodeai renlr lea gurdeu ſis alilſ ’ee er er
+        <lb/>François. <pb n="21"/>
+        <lb/>1
+        <lb/>21
+        <lb/>François. Ce mauuais meſnaage ayant reſueillé les Cours Souue¬
+        <lb/>raines de France, notamman le Parlement de Paris, ayant pour
+        <lb/>luy les voix &amp;e les cœurs de toute la France, c’eſt porté auec cou¬
+        <lb/>tge aux reſolutiona peſſantes d’aller audeuus de la uiptni¬
+        <lb/>Aade Eſtat &amp;c des Pinces, &amp; des mauuais deſſoins de ce Cardnal.
+        <lb/>emainenant nenmoins lenr fdeliteé inuiolable enuers le Roy
+        <lb/>ae vaique e legiuimeMonnrque faiſanteoonoaſs ̀ tous les
+        <lb/>inpoires meſehantes de lalehaaans quda ait ſemae par
+        <lb/> ſloedle ſuana noa dquis quequer ioaui u du lu
+        <lb/> Patt par le Cuaaier de l Vlee, pout deſtni la loaable
+        <lb/>ſaisée aeiuſſes menions de eeue auguſte Compagnie &amp; par
+        <lb/>eoyeafuireſouileue lepoaple ouele, u eit lept
+        <lb/>t rldle e cCnul aue ceau de faire inueſit l vaus
+        <lb/>depauinue qaaiuſede gen de gueie ’anpuas e lſlrnieee
+        <lb/> pliui ſeſlr de rn le au ſeaimmreauslanepnſie e
+        <lb/>Ce ern die eue pnun ius enaadedaerone ſies une eſt
+        <lb/>aeuerolne l ueldue i l mei ueeounie ſunapeeueree
+        <lb/>e e eei ſeeadele luiiean as race pau dee
+        <lb/>e euer er eu e n rne n n empi r l eie e eruene
+        <lb/>a e un eoe e lai lueu euun deieranei e ein dene unle
+        <lb/>Seu enen ue deue e rea a eſquodleſaunſounusprnule
+        <lb/>nue re l nue ie reennmneſei euaie leue elns erie oeer
+        <lb/>pu fn e nie n eere eier neoan eu euenlie
+        <lb/>peeu ne oneue oen nerenenel pe eon lon leln e
+        <lb/>e e e epune e en n uneneudſe e eneenree
+        <lb/>e n er eernee e e enmrnerieſas nenne eier
+        <lb/>eune ees onepeun i e eeie rereoerdleioene lnne.
+        <lb/>nen ne en er mene unenielene ieopieneneen enenee
+        <lb/>e e n e rene ene ue rnen i eeuenee uneeee
+        <lb/>peſe runenplen en au e e eos eae ennrne nle o nee
+        <lb/>Snue pe e e renur rvaier pes dne un
+        <lb/>’anedoen nmneoen dn e n ieien pe ſeoſene oiuelneſe
+        <lb/>anenrni unenununeierne ſene dnuirſiennele deel
+        <lb/>loeune rneue ne eun e ue qſi eoieieonene le er
+        <lb/>nour eonu en e ene enr re di euili eaſous di un e eu
+        <lb/> oeneuene e ne pne nei nonen e aone oes lanene iee
+        <lb/>aoun pee e liene anr ies nai cCnuuian deo,lain
+        <lb/>E <pb n="22"/>
+        <lb/>bu¬¬
+        <lb/> 22
+        <lb/>ampromne cheſeaq pooeat donme dbntllel
+        <lb/>See Ce re ta dnienienmeld anu nene enboandanuteſunee
+        <lb/>e eu ere ean enueaiu pioendlene iuanet e ueus leae
+        <lb/>eCaniai renneſuns eaaiedeaCaoaudeleoet en
+        <lb/>e ſs e ſleeunu euredſe ſen lire leoue banop e
+        <lb/>eneunr i oulurpus is ſ aueui damis doalreaepu de leſet
+        <lb/>P es tpunainonas auſnunianade lpee qeaquens dela lane
+        <lb/>gue, pout la defenſe de toute la France.
+        <lb/>ilſaſleienpuaenulon gtouaenunre s pomuanopulille;
+        <lb/>e ſa loue piin deu longueus que le pPadenemu opiodi
+        <lb/>tomade neceire duemp ſanuoonſderer queleprenmuMobuile
+        <lb/>Een r ou ur euruouiennu ua Ceaenſudoa ais ae
+        <lb/>pr le aen ani le parlemene, qi eſt le premier pobie de pn¬
+        <lb/>Senee eſe luiſe poiat empoer pat leas aguuuons d’vn popleioon¬
+        <lb/>ant qui dot reœut lafotmedela canduite dece premier lou
+        <lb/>leouſgemenut peſr&amp;e dieret oues les dhieute qui ſe preſemoinr
+        <lb/>neie renoonres dinreouiy ailoi de faire vuloir lauhorue du
+        <lb/>Roy, ſans laiſer ehoſe qui y puit donner eſchee- &amp;e maineenir le peuple
+        <lb/>danms laretenue ſans luy donuner ſuet de prenadre la ſeduron pout le pus
+        <lb/>mauuais conſeil &amp; ainſi c’a eſté vne grande prudence au Parle-¬
+        <lb/>’uoirareſl eeuorren gooadms pat la digue d’vne reenue loubl
+        <lb/>ſaas pourt cea n’ouir uen ououe dece qui Conacernoit laſeureue de lae
+        <lb/>ville de Paris, &amp; de preuenir vn pluagtand mal, qui euſt peu arriuer pâ¬
+        <lb/>les gens de guerte qui la tenoient conmmeinueſtie de tous coſtez, atte¬
+        <lb/>at qu’l pluſt Dieutoueher les cœun de lera-e, e lesporrerà
+        <lb/>redorner le repos à leur bonne vile de Pars, ce qu’il a fai &amp; à ce ſuies
+        <lb/>s’eſt ſeruy du raeſme Parlerment, pour par ſes humbles remonſtrances
+        <lb/>aenex la Reine à conſenuir vne Conference indiquée au Bourg de
+        <lb/>Ruel, poury choiſir les moyens plus raiſonnables d’appaiſer ces app¬
+        <lb/>used’ vn plus grand trouble, à quoy les Depuez rauaillent auec les
+        <lb/>Princes du Sang &amp; les Miniſtres, </p>
+    </body>
+  </text>
 </TEI>

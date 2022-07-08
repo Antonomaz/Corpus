@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_narration" xml:id="Moreau1317-2_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1317_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -52,12 +48,11 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309538</idno>
@@ -89,7 +84,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1317. Examen de la vie des juifs, de leur religion, commerce et trafic
+          dans leur synagogue. Paris, Fr. Preuveray, 1652, 8 pages. C’est contre ce pamphlet qu’a
+          été publiée la Réponse des prin- cipaux de la synagoguc , etc. Les deux pièces se
+          rattachent à l’as- sassinat de l’épinglier de la rue Saint-Honoré. Voir le Récit naïf et
+          véritable du cruel assassinat , etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,6 +98,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
     </profileDesc>
@@ -107,11 +110,9 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/> LEXAMEN DELAVIE TTT7 T DES IVI9 DE LEVR RELIGION, coui E E TAEC DANS LEVR
+      <p><pb n="1"/> LEXAMEN DELAVIE TTT7 T DES IVI9 DE LEVR RELIGION, coui E E TAEC DANS LEVR
         SYNAooGVE l¬ Ar, ue Saint Iacques¬. ane oei¬ dliei eee reudee¬ uee Approbanio &amp;
-        Permiſion.
-        <pb n="2"/> 2
+        Permiſion. <pb n="2"/> 2
         <lb/>tetepteiiei ipiépes
         <lb/>’prpeiePPPpi
         <lb/>J E v
@@ -161,8 +162,7 @@
         <lb/>bourelez, tourmtez, apres pendus en Croix, ſelon qu’ils auoient
         <lb/>fair au uſte. Mds da ſuite la aontre cncore plus eideamens :&amp; s’ils
         <lb/>eonſiderent que tamde ſfiecles n’omt pâ expier ce erirme : Il faut aoües
-        <lb/>aaſi qu’il ne poou ſte plas gfad gaé de la mace d’v Dieu. us ¬..
-        <pb n="3"/>
+        <lb/>aaſi qu’il ne poou ſte plas gfad gaé de la mace d’v Dieu. us ¬.. <pb n="3"/>
         <lb/>31
         <lb/>moquie qu nous fait voir qo’ils auoient eae les premlers eppelleiaa ’e
         <lb/>le oe ſs e e leuis’ pees uoue ena noourele ſauees poureo auu
@@ -207,8 +207,7 @@
         <lb/>ene len u ie eeue e dn nrordoue en l nl ee onrle lee
         <lb/>eunre duen le caiui eoie eoenſe ln l ſu anleoe
         <lb/>Eenrli pen en eau a oeole eene ieuenen ſreule elror
-        <lb/>leſle e isule pueuiupt lonener qeaenu lu Paru¬
-        <pb n="4"/>
+        <lb/>leſle e isule pueuiupt lonener qeaenu lu Paru¬ <pb n="4"/>
         <lb/>4
         <lb/>Dieu leur demande, ’il eſt done le Pere, ò eſt l’hSneur qu’ils luy rendé
         <lb/>Cela s’entend, puis qu’ils meſpriſentſon Fils: Et s’il eſt le Seigneur,où
@@ -271,8 +270,7 @@
         <lb/>ſigne. Il indique la Diuinité de Ie svs’- C ri s rt en ſon Hnnanié,
         <lb/>quand il dit, que l’Ange marchera deuant ſa face, &amp; qu’il appelle l’An
         <lb rend="¬" break="no"/>ge du Teſtament le Dominateur; e’et à dire, Dien: dais lé Prdpheé
-        <lb/>no
-        <pb n="5"/>
+        <lb/>no <pb n="5"/>
         <lb/>nous le narque du dolgt auſſi bien que S. lean, quand il dit, qu’il vien
         <lb rend="¬" break="no"/>dra ponr refondre &amp; purger; qui n’eſt autre choſe que le but de
         l’Euan
@@ -335,8 +333,7 @@
         <lb/>ny de Religion, ils ne peuuentplus auoir te regle, &amp; que leur Reproba
         <lb rend="¬" break="no"/>noalesmet daus cette neceſué. Ils furent ecxerminez de la
         Chreſtienté
-        <lb/>D
-        <pb n="6"/>
+        <lb/>D <pb n="6"/>
         <lb/>6
         <lb/>pour ce ſujet ſous l’Empire d’Heraclius, &amp; caſſez u êgorgez de eous
         <lb/>parts. La France a touſiours eſté principalement le plus fort objet de leu
@@ -393,8 +390,7 @@
         <lb/>&amp;
         <lb/>par le feu de tous coſtez, ſouas les lgemens de Dieu qui les ſuiueat :
         <lb/>la rage qui leur poſſedoir le cœur , laiſſa des exemples en plufieurs lieus
-        <lb/>d’vue cruanté ents àa-ueſmes abaninadleà la uatue. ls iaetees
-        <pb n="7"/>
+        <lb/>d’vue cruanté ents àa-ueſmes abaninadleà la uatue. ls iaetees <pb n="7"/>
         <lb/>laars eaſansſur teux qui les aſſiegeoient en Lagaedoe, dans va Fort o
         <lb/>ils s’eſtoient retirez: Et il y en eut quarante empriſonnez à Vitry en
         <lb/>hampagne qui eſleurent vn Vieillad pour leur couper la gorge; Le
@@ -449,8 +445,7 @@
         <lb rend="¬" break="no"/>l’inte
         <lb rend="¬" break="no"/>ret dela Foy, il ne les ſoufftiroit pas. Mais outre que nous
         n’auons pas
-        <lb/>lloquiſiiou, pous les tetenir dans les borues gqui leur ſont preſcritess Le
-        <pb n="8"/>
+        <lb/>lloquiſiiou, pous les tetenir dans les borues gqui leur ſont preſcritess Le <pb n="8"/>
         <lb/>S. Pere’eſt obligé́ miſterieuſement de leur donner quelque azile, pour le
         <lb/>reſpetl meſme de la Foy; Et c’eſt icy, que nous leur pouuons encore
         <lb/>appliquer vne Prophetie qui leur fernera la bouche. L’vn des pls mi

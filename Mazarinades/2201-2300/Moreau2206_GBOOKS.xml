@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2206_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2206_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -39,7 +35,7 @@
           <ref target="https://books.google.fr/books?id=uXxKAAAAcAAJ&amp;hl=fr"/>
           <author ref="isni:0000000063043308">
             <persName>
-              <name>Longin-Toupin</name>
+              <surname>Longin-Toupin</surname>
             </persName>
           </author>
           <persName role="recipient" ref="isni:0000000445012443">
@@ -59,13 +55,12 @@
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Vienne</settlement>
+            <settlement ref="geonames:2761369">Vienne</settlement>
             <institution>Bibliothèque nationale d'Autriche</institution>
             <repository/>
             <idno type="cote"> 127265-B ALT MAG</idno>
@@ -97,7 +92,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2206. Lettre du soldat françois au cavalier Georges, ou Suite de la
+          Lettre à M. le cardinal, burlesque. Paris, Jacques Cailloué, 1649, 8 pages. - Signé :
+          Longin Toupin. « A Paris ce vingt-sept mars, Au matin dix heures trois quarts. » Elle a
+          été réimprimée à Rouen sous le même titre , 16i9, 8 p. Denys Langlois l'a publiée de son
+          côté; et il l'a intitulée ;</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,6 +106,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>

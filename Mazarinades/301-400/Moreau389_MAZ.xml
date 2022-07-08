@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau389_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau389_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -34,19 +35,20 @@
             Mazarin, avec la deroute d'un regiment allemand, de douze cens hommes dudit
             Mazarin.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49415</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49415" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49415"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15398-1</idno>
@@ -78,7 +80,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Sans la "Déroute" annoncée au titre et par la réclame de la p. 8.</p>
+        <p source="Mazarine">Sans la "Déroute" annoncée au titre et par la réclame de la p. 8.</p>
+        <p source="Moreau">389. Arrivée de M, le duc de Nemours à Bruxelles, pour prendre le
+          commandement de l’armée de M. le prince de Condé , levée contre le cardinal Mazarin ; avec
+          la déroute d'un régiment allemand de douze cents e hommes dudit Mazarin. Paris, 1652, 8
+          pages. are.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,8 +103,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARRIVE
         <lb/>DE M LE DVC
         <lb/>DE NEMOVRS

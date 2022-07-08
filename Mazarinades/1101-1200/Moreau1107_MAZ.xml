@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1107_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1107_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -41,20 +42,21 @@
             calmer les troubles de la monarchie. Et qu’a moins de cela, il faut se resoudre à vivre
             tousjours, ou dans la crainte, ou dans les effets d’une guerre civille.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" when="1650-09-15">mi-septembre 1650</date>
           <extent>
             <measure unit="page" quantity="27"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49960</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49960" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49960"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14977-8</idno>
@@ -86,10 +88,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Par Claude Du Bosc de Montandré, d'après Célestin Moreau. Daté de 1651
+        <p source="Mazarine">Par Claude Du Bosc de Montandré, d'après Célestin Moreau. Daté de 1651
           d'après C. Moreau, mais d'après Hubert Carrier, paru en septembre 1650, « La Presse de la
           Fronde (1648-1653) : les Mazarinades », II, Genève, 1991, p. 52-53 et plus précisément à
           la mi-septembre 1650 (Bibliothèque Mazarine, Ms. 4682-2, f. 233v).</p>
+        <p source="Moreau">1107. Discours d’État, où il est prouvé par un raisonne- ment invincible
+          que la perte du Mazarin et la déli- vrance des princes sont absolument nécessaires pour
+          calmer les troubles de la monarchie, et qu’à moins de cela, àl faut se résoudre à vivre
+          toujours ou dans la crainte ou dans les effets d’une guerre civile. (S. L, 1651 }, 27
+          pages. Dubose Montandré.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,8 +116,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>DISCOURS
         <lb/>D'ESTAT
         <lb/>OV IL EST PROVVE’ PAR VN

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau944_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau944_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -51,13 +52,12 @@
             <measure unit="page" quantity="15"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49864</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49864" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49864"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14378</idno>
@@ -89,7 +89,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Édition composite formée de combinaisons de 2 états du cahier signé A,
+        <p source="Mazarine">Édition composite formée de combinaisons de 2 états du cahier signé A,
           3 du cahier B, 3 du cahier C et 1 du cahier D. 2 états du cahier signé A : au titre,
           "quarente-neuf" (A1) / "quarante-neuf" (A2), armoiries de 82*72 mm (A1) / 45*37 mm (A2) ;
           p. 3, lettre ornée de végétaux (A1) / de fleurs (A2), l. 4 "cognoistre" (A1) /
@@ -116,6 +116,12 @@
           [Pays-Bas] à l'adresse de Paris par les imprimeurs et libraires ordinaires du roi, 12 p.
           in-4 ; édition d'une traduction en italien et deux éditions de traductions en néerlandais.
           Acte daté de mars 1649.</p>
+        <p source="Moreau">944. Déclaration du roi, pour faire cesser les mouvements et rétablir le
+          repos et la tranquillité de son royaume, vérifiée en parlement, le 1” avril 4649. Paris,
+          par les imprimeurs et libraires ordinaires du roi, 1649, 16 pages. 1 y en a une édition de
+          Rouen par David du Petit-Val e! Jean Viret, 1649, 12 pages. La Déclaration est dans le
+          Journal de parlement, dans Ÿ Histoire du temps et dans l'Histoire de la Fronde, par M. de
+          Saint-Aulaire , pièces justificatives.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -133,8 +139,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>DECLARATION
         <lb/>DV ROY,
         <lb/>POVR FAIRE CESSER LES
@@ -146,7 +151,8 @@
         <lb/>Pat les Imprimeurs &amp; Libraires ordi¬
         <lb/>naires du ROY.
         <lb/>M DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>4
         <lb/>LOVIS par la grace de Dieu Roy de

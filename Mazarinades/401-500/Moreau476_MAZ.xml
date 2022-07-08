@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau476_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau476_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,20 +37,21 @@
           <title source="Mazarine">Advis a nosseigneurs de Parlement, sur la vente de la
             bibliotheque de Mr. le card. Mazarin.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" when="1652-02-17">17 février 1652</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49208</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49208" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49208"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10052</idno>
@@ -81,11 +83,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Traduit en allemand, à Francfort, chez Simon Beckenstein, 1654, [8] p.
+        <p source="Mazarine">Traduit en allemand, à Francfort, chez Simon Beckenstein, 1654, [8] p.
           (BM00378). Titre de départ. - Texte signé "G.N.P.", identifié à Gabriel Naudé
           ("Parisien"), d'après A.-A. Barbier, Dictionnaire des ouvrages anonymes... ", col. 357.
           D'après Hubert Carrier, texte composé début janvier 1652 et paru le 17 février suivant
           (Bibliothèque Mazarine, Ms 4682-1, f. 243v-244).</p>
+        <p source="Moreau">476. Avis à nos seigneurs du parlement, sur la vente de la bibliothèque
+          de monsieur le cardinal Mazarin. (S. 1. n. d.), 4 pages. Signé G. N. P. (Gabriel Naudé,
+          Parisien.) La date doit être de 1632. M. le comte Léon de Laborde l’a publiée dans les
+          notes (p. 251) de son excellent ouvrage surle palais Mazarin.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>I.
         <lb/>ADVIS
         <lb/>A NOSSEIGNEVRS DE PARLEMENT.

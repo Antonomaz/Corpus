@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau465-ii_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau465-ii_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,7 +36,9 @@
           <title source="Mazarine">Seconde partie de l'aveuglement de la France depuis la
             minorité.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" notBefore="1650-09-16" notAfter="1650-09-25">entre le 16 et le 25
             septembre 1650</date>
@@ -43,13 +46,12 @@
             <measure unit="page" quantity="31"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50260</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50260" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50260"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14977-3/2</idno>
@@ -81,12 +83,20 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Complété par : "Troisiesme partie de l'aveuglement de la France pendant
+        <p source="Mazarine">Complété par : "Troisiesme partie de l'aveuglement de la France pendant
           la minorité", 1651. En réponse, François Davenne a publié : "Avis a la reyne d'Angleterre
           &amp; à la France, ..." (Moreau, n°471). Par Claude Du Bosc de Montandré, d'après Hubert
           Carrier, "La Presse de la Fronde (1648-1653) : les Mazarinades", t. 2, Genève, 1991, p.
           52. Texte paru entre le 16 et le 25 septembre 1650, d'après H. Carrier (Bibliothèque
           Mazarine, Ms. 4682-1, f. 240v).</p>
+        <p source="Moreau">465. Aveuglement de la France depuis la minorité. (S.1. n. d.), 31 pages.
+          Trois parties, qui se divisent : la première en 15 chapitres, la se conde en 10, la
+          troisième en 15. Les deux premières ont 31 pages chacune ; la troisième en a 32. La
+          seconde est datée de 1650 ; la troisième de 1651. Les deux premières ont été écrites
+          pendant la prison des princes ; la troisième, après leur mise en liberté. Enfin, les deux
+          premières sont de Dubosc Montandré ; la troisième, d’un anonyme « qui n’a pris la plume
+          que parce que l’auteur des deux premières parties n’avoit pas poursuivi sa pointe. » Il y
+          a une réponse intitulée : dvis à la reine d’Angleterre et à la France, ete.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -118,16 +128,14 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>SECONDE PARTIE
         <lb/>DE
         <lb/>L'AVEVGLEMENT
         <lb/>DE LA
         <lb/>FRANCE
         <lb/>DEPVIS LA MINORITE
-        <lb/>M. DC. L.<pb n="10"/>
-        <pb n="11"/>
+        <lb/>M. DC. L.<pb n="10"/><pb n="11"/>
         <lb/>3
         <lb/>L’AVEVGLEMENT
         <lb/>Du Parlement de Tholoze.

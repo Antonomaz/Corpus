@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau228_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau228_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,20 +37,21 @@
             de se travestir &amp; déguiser, pour sortir de ladite ville, sur peine de la vie. Du
             vingtiéme janvier mil six cens quarante neuf.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-01-21">21 janvier 1649</date>
           <extent>
             <measure unit="page" quantity="3"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49897</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49897" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49897"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14440</idno>
@@ -81,9 +83,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Suivi de la mention de publication datée du 21 janvier et signée
+        <p source="Mazarine">Suivi de la mention de publication datée du 21 janvier et signée
           "Jossier". Autre édition en 4 p. Signé "Du Tillet". D'après Hubert Carrier, texte paru le
           21 janvier 1649 (Bibliothèque Mazarine, Ms. 4682-1, f. 117v).</p>
+        <p source="Moreau">228. Arrêt de la cour de parlement, portant défenses, à toutes personnes
+          en cette ville et faubourgs de Paris, de changer leurs noms et de se travestir et déguiser
+          pour sortir de ladite ville, sur peine de la vie. Du 20 jan- vier 1649. Paris, par les
+          imprimeurs et libraires or- dinaires du roi, 1649, 4 pages. t Suivi de la mention de
+          publication.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>Arreſt de la Cour
         <lb/>DE PARLEMENT.
         <lb/>PORTANT DEFENSES A TOVTES
@@ -115,7 +121,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires
         <lb/>du Roy.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>EXTRAICT DES REGISTRES

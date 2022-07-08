@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1656_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1656_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -40,7 +41,9 @@
             justifier, sans erreur les armes de l un ou l'autre des deux partis qui divisent
             aujourd'huy cet Estat.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-10-01" notAfter="1652-10-10">début octobre
             1652</date>
@@ -48,13 +51,12 @@
             <measure unit="page" quantity="19"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50227</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50227" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50227"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11053</idno>
@@ -86,13 +88,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Reprise du texte de Claude Du Bosc de Montandré intitulé "Le philosophe
+        <p source="Mazarine">Reprise du texte de Claude Du Bosc de Montandré intitulé "Le philosophe
           d'Estat. Sur la majorité des roys, prescrite à l'age de 14. ans par Charles V. dit le Sage
           Où les des-interessez verront clair pour justifier, sans erreur, les armes de l'un ou
           l'autre des deux partis, qui divisent aujourd'huy tout cét Estat." (BM01296 et BM01298).
           D'après Hubert Carrier, texte publié début octobre 1652 d'après sa place dans le t. XII
           des recueils chronologiques de Camille de Neufville, BM de Lyon Rés. 309869 (Bibliothèque
           Mazarine, Ms. 4682-3, f. 86v).</p>
+        <p source="Moreau">1656. Homme (l') d'État, faisant voir par l'histoire et la raison que la
+          reine ne doit plus être dans le conseil, où les désintéressés verront clair pour justifier
+          sans erreur les armes de l'un ou l'autre des deux partis qui divisent aujourd'huy cet
+          État. Sans Lieu, 1652, 19 pages. Contrefaçon du Philosophe d'État de Dubosc Montandré.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -115,8 +121,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L'HOMME
         <lb/>D'ESTAT
         <lb/>FAISANT VOIR PAR

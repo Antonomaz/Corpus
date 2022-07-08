@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2444_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2444_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -29,7 +30,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14921"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Le memoire des plus remarquables pieces faites depuis le 26.
             aoust jusques à present. Contenant une particuliere description de toutes les affaires
             &amp; negociations de l'Estat &amp; des barricades, avec l'emprisonnement de monsieur de
@@ -46,13 +47,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49099</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49099" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49099"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13500</idno>
@@ -84,7 +84,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2444. Mémoire (le) des plus remarquables pièces faites depuis le 26 août
+          (1648)jusques à présent, contenant une particulière description de toutes les affaires et
+          négociations de l'État, et des barricades, avec l'empri sonnement de M. de Broussel et son
+          élargissement. Paris, Claude Morlot, 1649, 8 pages. Une des premières pièces de la Fronde,
+          des moins communes, mais non des meilleures. L'auteur prétend que les émeutiers s'étant
+          portés chez le pre mier président, celui-ci s'avança au-devant d'eux, en criant : «
+          Allons, mes enfants, allons chercher nos prisonniers. » Par là on peut juger de sa
+          véracité. Il ne dit pas le moindre mot des pamphlets qui avaient précédé le sien.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,8 +111,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>MEMOIRE
         <lb/>DES PlVS REMARQVABLES PIECES
@@ -118,7 +125,8 @@
         <lb/>Chez CLAVDE MORLOT, ruë de la Bucherie
         <lb/>aux Vieilles Eſtuues.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>AVEC PERMISSION</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>AVEC PERMISSION</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>Le Mmoire des plus remarquables pieces faites depuis lte

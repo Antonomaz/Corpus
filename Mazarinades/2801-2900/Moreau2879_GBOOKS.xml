@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau2879_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2879_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -38,12 +34,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://books.google.fr/books?id=PWVCAAAAcAAJ&amp;hl=fr"/>
-          <author>
-            <persName>
-              <forename/>
-              <surname/>
-            </persName>
-          </author>
+          <author/>
           <title source="Moreau">Prise (la) du château de Tournon, dans le Vivarats (sic), et du
             Pont Saint-Esprit, sur le Rhône, par les troupes de Son Altesse Royale, commandées par
             M. le vicomte d'Arpajon.</title>
@@ -59,11 +50,11 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement/>
+            <settlement ref="geonames:2867714">Munich</settlement>
             <institution>Bibliothèque de l'État de Bavière</institution>
             <repository/>
             <idno type="cote"/>
@@ -95,7 +86,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2879. Prise (la) du château de Tournon, dans le Viva rats (sic), et du
+          Pont Saint-Esprit, sur le Rhône, par les troupes de Son Altesse Royale, commandées par M.
+          le vicomte d'Arpajon. Paris, André Chouqueux, 1652,7 pages. L'imprimeur avait eu une
+          permission expresse du duc d'Orléans; mais ce n'est pas une raison pour croire à
+          l'authenticité de ses nouvelles.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,6 +100,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -119,8 +119,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>L A PRISE DV
         <lb/>CHASTEA V
         <lb/>TOVRNON
@@ -134,8 +133,7 @@
         <lb/>ee
         <lb/>cue epn e cio voy e ne eie
         <lb/>-e see
-        <lb/>Auec permißion de ſon A. Royale.
-        <pb n="2"/>
+        <lb/>Auec permißion de ſon A. Royale. <pb n="2"/>
         <pb n="3"/>
         <lb/>3
         <lb/>aetaêsiaiaes
@@ -160,8 +158,7 @@
         <lb rend="¬" break="no"/>ſon, i s’auança ſuſques à la ville du Pon
         <lb/>du Sainm ſprit ſur la’ riuiere u hoſne.
         <lb/>igat la place tres-inportant comme
-        <lb/>A ij
-        <pb n="4"/>
+        <lb/>A ij <pb n="4"/>
         <lb/>4
         <lb/>ſtant la clef de trois Prouinccs, Daupli
         <lb/>é, Proicnce &amp; Laniguedoc, il fit ſommet’
@@ -187,8 +184,7 @@
         <lb rend="¬" break="no"/> Aguerre ſe continuant er Guytme
         <lb/>Lepje l’araee de pnſieq ld nge
         <lb/> de
-        <lb/>1
-        <pb n="5"/>
+        <lb/>1 <pb n="5"/>
         <lb/>.
         <lb/>de Condé &amp; celle du Comte d’Harcourt
         <lb/>laquelle à paſſé la Garonne &amp;s’eſt auan
@@ -214,8 +210,7 @@
         <lb/>agquide Maſin &amp; leapitaine Balthaar
         <lb/>afe; aus roupps pour alle couere le
         <lb/>s dascous.
-        <lb/>2
-        <pb n="6"/>
+        <lb/>2 <pb n="6"/>
         <lb/>e
         <lb/>,a:,
         <lb/>Refus fait pa l Ville de Thoulouſe, de?
@@ -238,8 +233,7 @@
         <lb/>balles qu’on dmandoit.
         <lb/>Mais comme on eſtoit à̀ l’Arſenal de la
         <lb/>ville pour en titer ces Canonis, le peuple
-        <lb/>courut aux armes auec telle ardour queceux
-        <pb n="7"/>
+        <lb/>courut aux armes auec telle ardour queceux <pb n="7"/>
         <lb/>53
         <lb/>e
         <lb/>quiauoient eſteé d’aduis de les enoyer,e

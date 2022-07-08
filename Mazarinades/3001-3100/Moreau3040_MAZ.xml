@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3040_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3040_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -30,7 +31,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14986"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Recueil de plusieurs pieces curieuses, contre le cardinal
             Mazarin. Imprimées depuis l'enlevement qu'il fit de la personne du Roy, le 6. janvier
             1649. jusques à la paix qui fut publiée le 2. jour d'avril de la mesme année. Et autres
@@ -38,20 +39,21 @@
             guerre contre le Parlement, &amp; le peuple de Paris, &amp; autres bons
             François.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-05">à partir de mai ou de juin 1649</date>
           <extent>
             <measure unit="page" quantity="1"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49058</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49058" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49058"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13777</idno>
@@ -83,13 +85,24 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Page de titre et "preface servant d'advertissement au lecteur." placées
+        <p source="Mazarine">Page de titre et "preface servant d'advertissement au lecteur." placées
           par les imprimeurs-libraires en tête de recueils éditoriaux où les mazarinades sont
           présentées chacune avec sa propre pagination, sa propre page de titre, sa propre
           composition typographique, étant parues d'abord sous cette même forme séparément à
           l'unité. Autres éditions avec différences de titre et de composition typographique.
           D'après Hubert Carrier, paru à partir du printemps 1649, en mai ou juin (Bibliothèque
           Mazarine, Ms. 4682-5, f. 37v).</p>
+        <p source="Moreau">3040. Recueil de plusieurs pièces curieuses contre le cardinal Mazarin,
+          imprimées depuis l'enlèvement qu'il fit de la personne du roi, le 6 janvier 1649, jusques
+          à la paix qui fut publiée le 2e jour d'avril de la même année, et autres choses
+          remarquables arrivées durant les trois mois que ce ministre étranger a allumé la guerre
+          contre le Parlement , le peuple de Paris et au tres bons François. (S. 1., 1649.) Ce n'est
+          ici que la préface qui contient 6 pages. L'auteur prétend prouver, par la publication de
+          ces pièces, que la piété et la justice sont préférables à tous les trésors du monde ; que
+          l'éclat des richesses, de la pourpre et de l'autorité de ceux qui ne les mettent point en
+          pratique, se fane et se perd entièrement. II espère que son recueil apprendra au lecteur à
+          régler ses passions et ses désirs. Cette préface se retrouve également avec les titres qui
+          suivent :</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,8 +119,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>RECVEIL
         <lb/>DE
         <lb/>PLVSIEVRS PIECES

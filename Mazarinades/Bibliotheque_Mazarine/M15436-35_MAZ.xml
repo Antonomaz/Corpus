@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="M15436-35_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="M15436-35_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -43,20 +44,19 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49260</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49260" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49260"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15436-35</idno>
           </msIdentifier>
           <history>
             <provenance>
-              <stamp>True/False</stamp>
+              <stamp>True</stamp>
             </provenance>
           </history>
         </msDesc>
@@ -81,7 +81,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Reprise du texte paru dans la Gazette de 1649, n° 59, Extraordinaire du
+        <p source="Mazarine">Reprise du texte paru dans la Gazette de 1649, n° 59, Extraordinaire du
           17 juin 1649, p. 377-380. Titre de départ.</p>
       </abstract>
       <textClass>
@@ -101,8 +101,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>L’ACCOMMODEMENT
         <lb/>DES
         <lb/>HABITANS
@@ -222,8 +221,8 @@
         <lb/> coſez:
         <lb/> Orleans, ce 22 Iain 1649. chez Giles Hotot,
         <lb/>Imprimeur ordinaire du Roy. <imprimatur>Auec Permiſſion de
-        <lb/>l’Intendant geerl des Bureaux d’Adreſſe de
-        <lb/>France. </imprimatur>
+          <lb/>l’Intendant geerl des Bureaux d’Adreſſe de
+          <lb/>France. </imprimatur>
       </p>
     </body>
   </text>

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1093_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1093_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,7 +32,9 @@
           <title source="Mazarine">Dialogue guepinois, sur les affaizes du temps qui cort. Ou
             Entretien de Louet &amp; Brase.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-03-15" notAfter="1652-03-31">deuxième quinzaine de
             mars 1652</date>
@@ -39,13 +42,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50273</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50273" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50273"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12805</idno>
@@ -77,7 +79,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Hubert Carrier, reprise du texte paru en 1649 sous le titre
+        <p source="Mazarine">D'après Hubert Carrier, reprise du texte paru en 1649 sous le titre
           "Dialogue de deux guepeins" (BM01373), adaptée aux intérêts des princes (Bibliothèque
           Mazarine, Ms 4682-2 f. 227v). Réédition du "Dialogue de deux guepeins, sur les affaires du
           temps.", Paris, chez la veufve François Targa, 1649 (BM01373), lui-même repris de
@@ -90,6 +92,11 @@
           et B) / "asture" (C et D), l. 13 "faim" (A et B) / "fouin" (C et D), l. 21 "ne se deffait"
           (A et B) / "ne deffait" (C et D). D'après H. Carrier, texte paru la deuxième quinzaine de
           mars 1652.</p>
+        <p source="Moreau">1093. Dialogue guépinois sur les affaires du temps qui cort, ou Entretien
+          de Louet et Braze. Parts, jouxte la copie imprimée à Orléans, (1652), 8 pages. Je ne crois
+          pas à l’impression d’Orléans. C’est probablement un artifice du libraire, qui ne voulait
+          pas rappeler le Dzalogue des deux guépeins de 1649. « Quand un maistre lasche faire sa
+          breugne a son valet, cela ne va pas bian. » Voilà toute la politique guépinoise.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -110,8 +117,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>DIALOGVE
         <lb/>GVEPINOIS.
         <lb/>SVR LES AFFAIZES DU

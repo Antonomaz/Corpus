@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3121_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3121_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -45,17 +41,19 @@
             Parlement contre le duc d'Épernon, le chevalier de La Valette, son frère, et leurs
             adhérents.</title>
           <pubPlace source="Moreau">Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4 214 mm</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon, bibliothèque jésuite des
               Fontaines</institution>
             <repository>Réserve</repository>
@@ -88,8 +86,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Recueil factice</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Recueil factice</p>
+        <p source="Moreau">3121 . Relation de ce qui s'est passé au combat de Blan- quefort, et la
+          reprise de l'île Saint-Georges par les troupes des Bordelois, avec l'arrêt donné par le
+          Par- • leraent contre le duc d'Épernon, le chevalier de La Va lette, son frère, et leurs
+          adhérents. (S. 1., 1650 8 pages. Deuxième course du Courrier bordelois. On a supprimé ici
+          quelques passages. Voir Relation de ce qui s'est naguère passé en Guyenne, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,6 +101,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -113,8 +120,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>r 1
         <lb/>TJ
         <lb/>A. AI I I
@@ -126,8 +132,7 @@
         <lb/>Auec l’Arreſt donné par le Parlement contre le Duc
         <lb/>ee
         <lb/>ſrere, &amp; leurs adherans.
-        <lb/>M DC L
-        <pb n="2"/>
+        <lb/>M DC L <pb n="2"/>
         <lb/>
         <lb/>l 1
         <lb/>1.
@@ -139,8 +144,7 @@
         <lb/> 8
         <lb/>l
         <lb/>
-        <lb/> i
-        <pb n="3"/>
+        <lb/> i <pb n="3"/>
         <lb/>et t ,t
         <lb/>&amp;t, *
         <lb/>tteilttat sdu tt d de ſ d d ſdt ed dd ſl t d ſl luſl dl
@@ -186,8 +190,7 @@
         <lb/>retenir audit lieu de la Baſlide(où ils luy firent grand here) iuſes
         <lb/>qu’iis euſſent eu ordre pour le faire paſſer a la ille, vu por le renye
         <lb/>Le Parlemen ayant conſideré́ qu’ou n’ nuoyoit de ltttes par des I.e
-        <lb/>pettes qu’à des eunemis &amp; que ce n’eſtoit pas de la ſorte qu’on fioe!
-        <pb n="4"/>
+        <lb/>pettes qu’à des eunemis &amp; que ce n’eſtoit pas de la ſorte qu’on fioe! <pb n="4"/>
         <lb/>ir aux P lements &amp; aux ſubiets du Roy les volontez de ſa sieſt́, &amp;
         <lb/> i eas ee le Maeſcal de la eilleraye depuis qu’il etit ee dans
         <lb/>iiot l: la Cor n’auoit pas enuoyé ſon pouuoir &amp; ſa com n ſi n u
@@ -230,8 +233,7 @@
         <lb rend="¬" break="no"/>e les ea les cſtaans ds l eperanee de oy de la pur ſe roue
         <lb rend="¬" break="no"/> deſe e il a liut d i que etnt uſi de ſ’iſie S. Geet.
         <lb/> ciſteaax Dluier, de la uaion de Cayae &amp; autres poſes des enui¬i
-        <lb/>5os
-        <pb n="5"/>
+        <lb/>5os <pb n="5"/>
         <lb/>tons de Bordeaux, ayant deſolé routes les prouincés voiſines, &amp; per.
         <lb/>is tous les ſacrileges &amp; auttes cas execrables qu il auoit fait auttes
         <lb rend="¬" break="no"/>ſois pratiquer, ſorceé ladite llle S. George, &amp; laiſſe garniſon
@@ -276,8 +278,7 @@
         beſoin ſera.
         <lb rend="¬" break="no"/>Fait à Bordeaux en Parlement, les Chambres aſſemblees, le vingt
         <lb rend="¬" break="no"/>cinquieſme Iuin 65e. Signé, DE LA ROCHE.
-        <lb/>Le as. le Due d’Eſpernon prenant ſa roure vers le Medoc pour
-        <pb n="6"/>
+        <lb/>Le as. le Due d’Eſpernon prenant ſa roure vers le Medoc pour <pb n="6"/>
         <lb/>aller aſſie ger Caſtelnau que le Duc de Bouillon a pris ſur luy depais
         <lb/>quelques iours, ayant eſté aduery que les trouppes du Duc de ouil
         <lb rend="¬" break="no"/>lon s’eſtoient retirees de Blanquefore, où̀ elles auoient campé
@@ -319,8 +320,7 @@
         <lb/>le Dc de Bilon luy enuoya vn tromoette pous luy offrieja bails
         <lb/>le ’il v uloit s auaneer dans vae pleine prache dé ee lieu, mii
         <lb/>n’en voulut pas manget, a contaire ciaignaut qu’on n’allaſt à lu
-        <lb/>aſ.
-        <pb n="7"/>
+        <lb/>aſ. <pb n="7"/>
         <lb/>en paſſant la riuiére il fit auaacer tontes ſes fſorces pres du pont od il
         <lb/>fi traller des retrauchemens &amp; poiuter quatre pieces de cano
         <lb/>pour en d feodre le paſlage.
@@ -360,8 +360,7 @@
         <lb/>dooua en neſine t: mos au paylans de to t i’etre denx mess,ui
         <lb/>ſont des plus vaillans &amp; de plus a gerris de Gacgne, de ſe r .e
         <lb/>à oze heure de nuict au port Deſcaunac, qui e vn pe au d lis
-        <lb/>d eute Iſle, &amp; l’ou pota par eau de Bordeau tss les eleis
-        <pb n="8"/>
+        <lb/>d eute Iſle, &amp; l’ou pota par eau de Bordeau tss les eleis <pb n="8"/>
         <lb/>neceſſaires pour l’attaque de ce lieu, qui ne pouuoit eſtre que tre
         <lb rend="¬" break="no"/>diffeile, atendu ſa ſcituacion qui la rend preſque imprenable.
         <lb/>L’uraque ut faiue le y. luin A la poime da lout ;’es paſia

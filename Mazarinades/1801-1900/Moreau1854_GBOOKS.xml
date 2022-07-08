@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1854_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1854_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -41,18 +37,19 @@
           <title source="Moreau">Lettre d'un bourgeois de Paris, écrite à un sien ami de la ville de
             Lyon, sur les affaires de ce temps.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1652">1652</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309477</idno>
@@ -84,7 +81,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1854. Lettre d'un bourgeois de Paris, écrite à un sien ami de la ville de
+          Lyon, sur les affaires de ce temps. Paris, 1652,8 pages. Datée de Paris, le 29 avril.
+          C'est un partisan des princes qui cherche àjustifier la députation du duc de Rohan, de
+          Chavigny et de Goulas, à Saint-Germain. Quoique rare, cela n'a pas grande valeur.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -93,6 +94,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -108,8 +112,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>on .
         <lb/>I
         <lb/>lE
@@ -120,8 +123,7 @@
         <lb/> A PARIS,
         <lb/>-¬¬-¬¬-¬¬-¬¬. ¬¬¬¬¬¬¬¬-¬¬¬-
         <lb/>. c. L1.
-        <lb/>1
-        <pb n="2"/>
+        <lb/>1 <pb n="2"/>
         <lb/>2
         <lb/> 2
         <lb rend="¬" break="no"/> . 2
@@ -131,8 +133,7 @@
         <lb/>.
         <lb/>1
         <lb/>1
-        <lb/> A
-        <pb n="3"/>
+        <lb/> A <pb n="3"/>
         <lb/>3
         <lb/> Aa
         <lb/>Pee’etee’d’tele?
@@ -168,8 +169,7 @@
         <lb/>qu’il obligeroit l’armee de Meſſieurs les Princes à combatre,
         <lb/>&amp; qu’l ſe promettoit de la defaire; Mais les deux armées ſons
         <lb/>rapées de telle maniere, qu’elles ne ſe choqueront quequand
-        <lb/> leus
-        <pb n="4"/>
+        <lb/> leus <pb n="4"/>
         <lb/>
         <lb/>4
         <lb/>iſ leur plaira. Ie croy qut chacune de ſon coſté attend quel
@@ -212,8 +212,7 @@
         <lb/>Mouſicur de Lorraiuc en ſes Eſtats, Monſieur le Chancelieren
         <lb/>ſa co
         <lb rend="¬" break="no"/>.
-        <lb/>-aaſ
-        <pb n="5"/>
+        <lb/>-aaſ <pb n="5"/>
         <lb/>.¬¬¬¬. EE
         <lb/>5
         <lb/>ſacommiſion de Garde des Seaux, &amp; M. lIe Preſident de Ma
@@ -257,8 +256,7 @@
         <lb/>qu’il leur promette àa tous de leur faire office en toutes occa
         <lb rend="¬" break="no"/>ns, &amp; qu’il le faſſe en effet, que d’en choiſir aucuns, &amp;
         <lb/>b laiſſes
-        <lb/>...
-        <pb n="6"/>
+        <lb/>... <pb n="6"/>
         <lb/>6
         <lb/>&amp;t Hiſſer les autres en arriere.
         <lb/>Le quatrieſme poict eſt, l’excluſion ede Monſieurs le Cardi
@@ -299,8 +297,7 @@
         <lb/>euſt fait plaiſir à S. R. A. d’en parler preſentement, artendu?
         <lb/>que cela donncroit lieu au Mazarin de faire entendre au ll
         <lb/> que
-        <lb/>..4...¬. ¬Laaa¬
-        <pb n="7"/>
+        <lb/>..4...¬. ¬Laaa¬ <pb n="7"/>
         <lb/> 7
         <lb/>que ſon A. R. n’a pris les armes en apprence, que pour le
         <lb/>maſſer hors du Royaume;dautant quil l’incommodoit en s’o
@@ -342,8 +339,7 @@
         <lb rend="¬" break="no"/>pes, Cour des Aydes &amp; Hoſtel de Ville, qu’ils ne denandoient
         <lb/>que l’excluſion du Cardiual, pour laquelle tous ces Corps ont
         <lb/>depute vers le Roy.
-        <lb/>eſdits
-        <pb n="8"/>
+        <lb/>eſdits <pb n="8"/>
         <lb/>.?
         <lb/>8
         <lb/> Meſdits Seigneurs les Princes ſçavent bien que la fidelité et

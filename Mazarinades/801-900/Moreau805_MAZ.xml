@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau805_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau805_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -30,7 +31,9 @@
           <author/>
           <title source="Mazarine">Le coup de fronde ou L'echo du bois de Vincenne.</title>
           <pubPlace source="Mazarine" ref="geonames:2989317">Orléans</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" notBefore="1650-02-01" notAfter="1650-02-07">première semaine de
             février 1650</date>
@@ -38,13 +41,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49273</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49273" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49273"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15438-13</idno>
@@ -76,13 +78,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes, sur la captivité des princes à Vincennes en 1650.
+        <p source="Mazarine">En vers octosyllabes, sur la captivité des princes à Vincennes en 1650.
           Probablement édité à Orléans à la suite de l'édition parisienne (BM01519 et BM01520)
           d'après l'analyse de Hubert Carrier (Bibliothèque Mazarine, Ms 4682-2, f. 102v) sur
           l'exemplaire conservé à la Bibliothèque municipale d'Orléans, et la présence de
           l'exemplaire Bibliothèque Mazarine M 15438-13, similaire au précédent, dans un recueil
           éditorial de pièces d'origine orléanaise. D'après H. Carrier, texte paru à Paris la
           première semaine de février 1650.</p>
+        <p source="Moreau">805. Coup (le) de fodre ou l’Écho du bois de Vincen- nes. Paris,
+          Pierre-Jacques Canabot, 1650, 7 pages. Si quelqu’un leur ouvre la porte , Je veux que le
+          diable l’emporte , Et que l’estafier saint Martin Le tourmente soir et matin.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>LE COVP
         <lb/>DE FRONDE
         <lb/>OV
@@ -165,8 +169,7 @@
         <l>
           <lb/>Nousſommes à l’ombre du Soleil,</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>1</l>
         <l>

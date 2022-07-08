@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau2049_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2049_GALL">
   <teiHeader xml:lang="fr">
     <fileDesc>
       <titleStmt>
@@ -14,24 +14,18 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
           <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="Corrector">Hip Amélie
-            <affiliation>
-              <roleName type="status">Vacataire</roleName>
-            </affiliation>
+          <persName role="Corrector">Hip Amélie <affiliation><roleName type="status"
+                >Vacataire</roleName></affiliation>
           </persName>
         </respStmt>
       </titleStmt>
@@ -55,17 +49,19 @@
             Paris, touchant les bienfaits qu'elle a reçus d'elle pendant tout le caresme dernier.
             Ridendo di cere veru, quis vetat ? </title>
           <pubPlace ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1651">1651</date>
           <extent>
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque nationale de France</institution>
             <repository>Département Arsenal</repository>
             <idno type="cote">8-H-7717(46)</idno>
@@ -97,8 +93,31 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BnF_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2049. Lettre de remercîment envoyée au cardinal Ma zarin sur la lettre
+          qu'il a écrite à une dame de la cour pour l'accommodement de ses affaires, avec la ha
+          rangue de dame Denize, au large chaperon des halles, - députée vers son Everminence (sic)
+          par la comnu nauté de toutes les beurrières de la ville, cité et uni versité de Paris,
+          touchant les bienfaits qu'elle a reçus d'elle pendant tout le caresme dernier. Ridendo di
+          cere verum, quis vetat ? Paris, 1651, 16 pages. Très-rare, assez plaisante, mais fort
+          ordurière. r « vous savez bien qu'il (le duc de Beaufort) demeure toujours dans la rue
+          Quinquampoix, là où durant tout le caresme il a mangé de notre meilleur beurre (grand bien
+          lui fasse) et des meilleures Thuîtres des halles avec son bon ami, le M. de La B. (marquis
+          de La Boulaye) qui, avec sa mine turquesque, nous fit bien manger des cochons en caresme,
+          pendant le blocus de Paris. » Quand cette pièce a paru, le cardinal Mazarin était déjà
+          arrivé à Bouillon. voici le témoignage le plus positif que j'aie rencontré dans les
+          pamphlets sur la paternité de la Mazarinade.Il est extrait de la harangue de dame Denize :
+          « Au commencement de ce caresme, j'allis porter du beurre de . Vanves à madame Le T. (Le
+          Tellier). Par malheur, faut ainsi dire, j'avois porté la Mazarinade du sieur Scurron ( sic
+          ) en vers burlesques ; et comme la lisions , son mari, votre bon et fidèle serviteur,
+          survint, et nous surprit dans la lecture ; et prenant mes cinq ou six feuillets , il
+          commença à parcourir dedans. Il me sou vient qu'en lisant chaque page, il se sousrioit;
+          quelquefois il escla toit; autrefois, en marquant quelques lignes de son ongle, il lui
+          échappoit de dire : O le meschant esprit ! enfin il se mit en colère et dit à sa femme : «
+          Qu'on chasse cette coquine de céans ; il me prend fantaisie de lui faire bailler cent
+          coups d'étrivières. » Je repris vistement ma Mazarinade et mon beurre, et m'enfuis comme
+          tous les mille dièbles , avec protestation de n'y jamais plus retour ner, ne deust-il
+          manger que de l'huile de noix. »</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,6 +126,9 @@
           <term type="subgenre">burlesque</term>
           <term type="subgenre">satirique</term>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -122,8 +144,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k857089x.r=bpt6k857089x?rk=21459;2"
+      <p><pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k857089x.r=bpt6k857089x?rk=21459;2"
         />LETTRE
         <lb/>DE
         <lb/>REMERCIMENT
@@ -275,8 +296,8 @@
         <lb break="no" rend="¬"/>uez qu'à luy mander ma derniere reſponſe, <hi rend="it">ne ſe</hi>
         <lb/>
         <hi rend="it">os</hi>. Elle alla viſiter auſſi Meſſieurs les Princes, qui
-        <lb/>par la grace de Dieu ſont ſortis des priſons de Vin
-        <pb n="7" facs="https://gallica.bnf.fr/ark:/12148/bpt6k857089x/f7.item.r=bpt6k857089x"/>
+        <lb/>par la grace de Dieu ſont ſortis des priſons de Vin <pb n="7"
+          facs="https://gallica.bnf.fr/ark:/12148/bpt6k857089x/f7.item.r=bpt6k857089x"/>
         <fw place="top-center" type="pageNum">7</fw>
         <lb break="no" rend="¬"/>cennes, de Marcouſſi, &amp; du Val de glace, comme
         <lb/>ſçauez bien: ce braue Prince de Condé, cét Her
@@ -337,8 +358,8 @@
         <lb/>vous eſtions allé faire la Veſſerence, prians Dieu
         <lb/>de bon coeur, Monſieur le Cardinal, qu’il vous
         <lb/>donne la foire ſix mois durant, la colique nephre
-        <lb break="no" rend="¬"/>tique
-        <pb n="9" facs="https://gallica.bnf.fr/ark:/12148/bpt6k857089x/f9.item.r=bpt6k857089x"/>
+        <lb break="no" rend="¬"/>tique <pb n="9"
+          facs="https://gallica.bnf.fr/ark:/12148/bpt6k857089x/f9.item.r=bpt6k857089x"/>
         <fw place="top-center" type="pageNum">9</fw>
         <lb/>tique quinze jours entiers, la fiévre quartaine, la
         <lb/>ſcatique, ſans vous faire mourir pourtant: car
@@ -396,8 +417,8 @@
         <lb break="no" rend="¬"/>ton dans le Royaume des morts. Nous nous ſom
         <lb break="no" rend="¬"/>mes trop eſtanduës ſur ce ſujet &amp; dans ce peram
         <lb break="no" rend="¬"/>bule, excuſez, s'il vous plaiſt noſtre zele, &amp; la gran
-        <lb break="no" rend="¬"/>de affection que j'auons pour vous. Donné en no
-        <pb n="11" facs="https://gallica.bnf.fr/ark:/12148/bpt6k857089x/f11.item.r=bpt6k857089x"/>
+        <lb break="no" rend="¬"/>de affection que j'auons pour vous. Donné en no <pb n="11"
+          facs="https://gallica.bnf.fr/ark:/12148/bpt6k857089x/f11.item.r=bpt6k857089x"/>
         <fw place="top-center" type="pageNum">11</fw>
         <lb break="no" rend="¬"/>ſtre Chapitre General les an &amp; jour que deſſus, &amp;
         <lb/>ſouſcrit par noſtre Secretaire ordinaire le Scuron
@@ -428,8 +449,8 @@
         <lb rend="indent"/>
         <hi rend="it">Vniuerſité de Paris, vers ſon Euermin Mazaurine.</hi>
         <lb/>TRes-rouge, tres-chauue, tres-fourbe, &amp;
-        <lb/>tres-eminent porc-ſauuage, &amp; enflé de bel
-        <pb n="12" facs="https://gallica.bnf.fr/ark:/12148/bpt6k857089x/f12.item.r=bpt6k857089x"/>
+        <lb/>tres-eminent porc-ſauuage, &amp; enflé de bel <pb n="12"
+          facs="https://gallica.bnf.fr/ark:/12148/bpt6k857089x/f12.item.r=bpt6k857089x"/>
         <fw place="top-center" type="pageNum">12</fw>
         <lb break="no" rend="¬"/>les eſperances, autant &amp; plus qu'il y en ait d'icy à
         <lb/>trois pas &amp; vn faut, Monſeigneur, Monſeigneur
@@ -521,8 +542,8 @@
         <lb break="no" rend="¬"/>uerſaires pourront faire ny dire contre vous &amp; que
         <lb/>jamais il ne vous arriue de faire apprehender ny
         <lb/>codamner aucun de vos Imprimeurs pour les faire
-        <lb/>pendre comme vous auez eu le deſſein de le faire
-        <pb n="15" facs="https://gallica.bnf.fr/ark:/12148/bpt6k857089x/f15.item.r=bpt6k857089x"/>
+        <lb/>pendre comme vous auez eu le deſſein de le faire <pb n="15"
+          facs="https://gallica.bnf.fr/ark:/12148/bpt6k857089x/f15.item.r=bpt6k857089x"/>
         <fw place="top-center" type="pageNum">15</fw>
         <lb/>à quelques vns, car par ainſi vous eſtonneriez les Autheurs
         <lb/>modernes, qui font tant de biaux &amp; gros vomule, qui ont
@@ -561,8 +582,8 @@
         <lb break="no" rend="¬"/>horre ce vice plus que la peſte, mais ce n'eſt pas là tout,
         <lb/>nous en auons bien veu d'autres devant la guerre de Pazis,
         <lb/>le Theologien d'Eſtat, les ſouſpirs François ſur la paix
-        <lb/>Italienne, la lettre de Pepoly, la conferance de Ruël, celie
-        <pb n="16" facs="https://gallica.bnf.fr/ark:/12148/bpt6k857089x/f16.item.r=bpt6k857089x"/>
+        <lb/>Italienne, la lettre de Pepoly, la conferance de Ruël, celie <pb n="16"
+          facs="https://gallica.bnf.fr/ark:/12148/bpt6k857089x/f16.item.r=bpt6k857089x"/>
         <fw place="top-center" type="pageNum">16</fw>
         <lb/>que vous euſtes auec Galeraty deputé d'Eſpagne dans
         <lb/>ſain Germain en Laye au Cabinet en Conleil eſtroit &amp;

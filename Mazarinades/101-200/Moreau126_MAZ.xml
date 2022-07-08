@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau126_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau126_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -55,13 +56,12 @@
             <measure unit="page" quantity="87"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48982</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48982" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48982"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° 17617-14</idno>
@@ -93,7 +93,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Variantes typographiques, notamment : p. 5, l.1, "ruynes" ; l. 4
+        <p source="Mazarine">Variantes typographiques, notamment : p. 5, l.1, "ruynes" ; l. 4
           "sujet" ; l. 9 "hayne" ; p. 6, l. 9 et p. 11, l. 33 "Reyne" ; p. 16, l. 42, "n'o-" ; p.
           18, l. 28 "Traittez" ; p. 24, l. 19 et 29 "MESSIEVRS" ; p. 44, l. 42 "consideré" ; p. 56,
           l. 42 "d'hyuer" ; pas d'inversion des p. 58 et 59. Autres éditions : sans adresse ni date,
@@ -105,6 +105,18 @@
           Presse de la Fronde (1648-1653): les Mazarinades", I, Genève, 1989, p. 109. D'après H.
           Carrier, texte paru la troisième semaine d'août 1650 (Bibliothèque Mazarine, Ms. 4682-1,
           f. 76 v.) et imprimé par la veuve Camusat (Ms. 4677, fiches Mss 200).</p>
+        <p source="Moreau">126. Apologie pour messieurs les princes, envoyée par madame de
+          Longueville à messieurs du parlement de Paris. (S. l., 1650), 37 pages. Le plus curieux et
+          peut-être le plus habile factum qui aît été fait sur la prison des princes. On y trouve
+          beaucoup de choses qu’on chercherait inutilement ailleurs et qui semblent accuser la
+          coopération directe de madame de Longueville. Je dois dire pourtant que les faits,
+          relatifs aux négociations de Munster, sont perfidement tronqués ; Mais encore pour les
+          dénaturer ainsi, il fallait avoir été trés-avant dans les secrets de l’ambassade. Voici un
+          trait de mœurs fort bon à recueillir : presque toutes les villes de la Champagne et de la
+          Brie étaient protégées par des princes, des Cardinaux, des ducs, des maréchaux qui
+          s’offensaient quand on y mettait des garnisons. L’Apologie a été réimprimée, en 1650,
+          petit in-12, à la sphère en caractéres elzéviriens. C’est un honneur qui n’a été fait qu’à
+          un très-petit nombre de mazarinades.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -124,8 +136,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>APOLOGIE
         <lb/>POVR MESSIEVRS
         <lb/>LES PRINCES

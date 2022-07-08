@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2068_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2068_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -37,7 +33,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://books.google.fr/books?id=NQlndbICFOEC&amp;hl=fr"/>
-          <author>Bourgeois de Paris</author>
+          <author/>
           <persName role="received" ref="isni:0000000055360231">
             <forename>Anne</forename>
             <surname>Autriche (D')</surname>
@@ -46,18 +42,19 @@
           <title source="Moreau">Lettre dernière envoyée à la reine par les bourgeois de
             Paris.</title>
           <pubPlace>Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 312659</idno>
@@ -89,7 +86,9 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2068. Lettre dernière envoyée à la reine par les bour geois de Paris.Sans
+          Lieu, ce vingtième mars 1649,7 pag.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,6 +97,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -113,14 +115,12 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>LETTRE
         <lb/>n u ue
         <lb/>e i e
         <lb/>P ARIS
-        <lb/>eeoeener
-        <pb n="2"/>
+        <lb/>eeoeener <pb n="2"/>
         <lb/>tssee
         <lb/>Jg
         <lb/>s
@@ -211,8 +211,7 @@
         <lb/>
         <lb rend="¬" break="no"/>u
         <lb/>5
-        <lb/>E
-        <pb n="3"/>
+        <lb/>E <pb n="3"/>
         <lb/>3
         <lb/>e
         <lb/>s
@@ -240,8 +239,7 @@
         <lb/>dont ils auroient bien de lapeine des’acu
         <lb rend="¬" break="no"/>ſen apres levœua qu’ils ons fait aurefois
         <lb/>poux V. M. auec tant de feueur &amp; apres
-        <lb/>A ij
-        <pb n="4"/>
+        <lb/>A ij <pb n="4"/>
         <lb/>tant de prieres continuelles qu’ils ont ad
         <lb rend="¬" break="no"/>dreſſées à̀ Dieu, qui les a exaucées en vous
         <lb/>donnant vn Fils &amp; a eux vn Roy, dont la
@@ -269,8 +267,7 @@
         <lb/>iuſte raſon Dieu donné, par ce qu’au temps
         <lb/>de ſa naiſſance nous etions comme deſ
         <lb rend="¬" break="no"/>.l ch3;
-        <lb/>12
-        <pb n="5"/>
+        <lb/>12 <pb n="5"/>
         <lb/> heus de naos eſperances, nous écounoi.
         <lb/>ſons auſſi outre la grandeur de toſtrenaiſ
         <lb/>ſance, voõs. vertus eſclatantes qui ſeruene
@@ -298,8 +295,7 @@
         <lb/>de la Couronne des Roys auſſi eſt
         <lb/>le phus bel obiet de la puiſſnce ſouueai
         <lb rend="¬" break="no"/> B
-        <lb/> Cole
-        <pb n="6"/>
+        <lb/> Cole <pb n="6"/>
         <lb/>niſſ
         <lb/>6
         <lb/>e m.
@@ -335,8 +331,7 @@
         <lb/>s’affoibliſſent &amp; l
         <lb/>dim
         <lb/> peu
-        <lb/>reſte, nous
-        <pb n="7"/>
+        <lb/>reſte, nous <pb n="7"/>
         <lb/>ployons a redoubler nos humbles prieres
         <lb/>enuers voſtre Maieſté́ que nous ſupplions
         <lb/>encore de tout noſtre cœur par la ferueur
@@ -357,8 +352,7 @@
         <lb/>MADAME.
         <lb/>Vos tres humbles fide ls &amp;
         <lb/> obeiſſans ſeruiteurs &amp; ſujets
-        <lb/> les Bourgeois de Paris.
-        <pb n="8"/>
+        <lb/> les Bourgeois de Paris. <pb n="8"/>
         <lb/>e1
         <lb/>
         <lb/>iee!

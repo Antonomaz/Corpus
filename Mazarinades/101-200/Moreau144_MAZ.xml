@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau144_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau144_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -38,7 +39,9 @@
             d'Ancre venu par ambassade a Jules Mazarin. Le marquis d'Ancre en reproches avec
             Mazarin.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-01-01" notAfter="1649-03-31">pendant le Blocus de
             Paris</date>
@@ -46,13 +49,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48901</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48901" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48901"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12476</idno>
@@ -84,13 +86,26 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Deux autres états :sans signature B en bas de la p. 5 (état B) et un
+        <p source="Mazarine">Deux autres états :sans signature B en bas de la p. 5 (état B) et un
           autre sans la signature B et avec "de l'espirt" au titre au lieu "de l'esprit" (état C).
           Autre édition (BM00051) repérée par Hubert Carrier (Bibliothèque Mazarine, Ms. 4682-1,
           f.82v) : "Marquis" au lieu de "Marques" (p. 6, l. 20), "n'aufrage" au lieu de "naufrage"
           (p. 7, l. 10), "Lymbes" au lieu de "Limbes" (p. 7, l. 13), etc. Signé "Par le sieur N.T.
           Drazor, Champenois". D'après Célestin Moreau, Drazor est l'anagramme de Rozard. Texte paru
           durant le blocus de Paris d'après H. Carrier.</p>
+        <p source="Moreau">144. Apparitions (les) épouvantable (sic) de l’esprit du marquis d’Ancre,
+          venu par ambassade à Jules Mazarin. Le marquis d'Ancre en reproches avec Mazarin. ( S.
+          l.), 1649, 8 pages. Signée N. T. Drazor, Champenois. C’est l’anagramme de Rozard. J'ai vu
+          de cet écrivain, un des plus mauvais de la Fronde , onze autres pièces qui portent tantôt
+          Rozard, tantôt Drazor, et quel- quefois N. R. Champenois. ° Ce sont : 1° Le Triomphe royal
+          et la Réjouissance des bons François, etc.; 2 Harangue à Messieurs les échevins et
+          bourgeois de Paris, etc.; 3° l'Italie vengée de son tyran, etc.; 4° Histoire tragique de
+          trois magiciens, etc. ; 5° Récit de ce qui s’est passé à l’emprisonnement du père de Jules
+          Mazarin; 6° Relation véritable de ce qui s’est fait et passé devant Saint-Denys , etc. ;
+          7° les Éloges et louanges du peuple, adressés à l’archevêque de Corinthe, etc.; 8°
+          Panégyrique royal ou Triomphe de Ia paix , etc. ; 9° Première partie des Vérités
+          françoises , etc.; 10° Relation curieuse de la pompe du jour de la Saint-Louis, etc. ; 11°
+          l’Arrivée du Courrier extraordinaire des François.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -108,8 +123,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES
         <lb/>APPARITIONS
         <lb/>EPOVVENTABLE, DE L’ESPRIT

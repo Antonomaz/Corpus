@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2suppl85_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2suppl85_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -30,20 +31,21 @@
           <author/>
           <title source="Mazarine">Factum pour messieurs les Princes, contre Jules Mazarin.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" when="1651-01">janvier 1651</date>
           <extent>
             <measure unit="page" quantity="1"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49016</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49016" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49016"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° A 16006-2 [Res]</idno>
@@ -75,7 +77,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Faux factum. D'après Hubert Carrier, d'abord publié sous forme de tract
+        <p source="Mazarine">Faux factum. D'après Hubert Carrier, d'abord publié sous forme de tract
           intitulé "Remarques véritables sur la lettre envoyée sous le nom du Roi..." (Bibliothèque
           Mazarine, Ms. 4682-2, f. 346 v). Autres éditions repérées par Célestin Moreau et Armand
           d'Artois : sous le titre "Factum pour messieurs les Princes.", [sans lieu : sans nom,
@@ -84,6 +86,8 @@
           même titre, [sans lieu : sans nom, 1650], 48 p. (C. Moreau, 2nd supplément, n° 85), 1651,
           36 p.,composition typographique différente (BM00162). Texte paru probablement en janvier
           1651 d'après H. Carrier</p>
+        <p source="Moreau">85. Factum pour messieurs les princes contre Jules Ma- zarin.. S. [.;
+          1650; 48 pages. Même pièce que le n° 1367 de la Bibliographi</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="5"/>
+      <p><pb n="5"/>
         <lb/>FACTVM
         <lb/>POVR
         <lb/>MESSIEVRS
@@ -112,10 +115,7 @@
         <lb/>PRINCES
         <lb/>CONTRE
         <lb/>IVLES MAZARIN
-        <lb/>M. DC. LI. <pb n="6"/>
-        <pb n="7"/>
-        <pb n="8"/>
-         <pb n="9"/>
+        <lb/>M. DC. LI. <pb n="6"/><pb n="7"/><pb n="8"/><pb n="9"/>
         <lb/>FACTVM
         <lb/>Pour Meſsieurs les Princes
         <lb/>LEs Sujets d’vne Republique ou Monarchie ſont heu¬
@@ -1815,8 +1815,7 @@
         <lb/>ſonſans vouloir encore d’abondan eſoufer le SangRoyalL
         <lb/>&amp; adjouſter par la capeiuité de Monſieur le Prince, à routes
         <lb/>ces belles qualitez cele qu’il merite le mieux, du plus ingrat J
-        <lb/>homme du monde. 
-      </p>
+        <lb/>homme du monde. </p>
     </body>
   </text>
 </TEI>

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1448_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1448_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,13 +43,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48886</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48886" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48886"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12953</idno>
@@ -80,9 +80,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Deux états : marque décorative sur la p. de titre à l'endroit (état A),
+        <p source="Mazarine">Deux états : marque décorative sur la p. de titre à l'endroit (état A),
           ou renversé (état B). Texte paru dans la seconde quinzaine de février 1649 d'après Hubert
           Carrier (Bibliothèque Mazarine Ms. 4682-2 f. 376v).</p>
+        <p source="Moreau">1448. Fronde (la) du Parlement fatale au Mazarin. Paris , Pierre
+          Sévestre, 1649, 8 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,8 +103,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA
         <lb/>FRONDE
         <lb/>DV
@@ -113,9 +114,11 @@
         <lb/>Chez PIERRE SEVESTRE, au mont ſainct
         <lb/>Hilaire, dans la Cour d'Albret.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Permiſſion</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Permiſſion</imprimatur>. <pb n="10"/>
         <pb n="11"/>
-        <gap/><pb n="12"/>
+        <gap/>
+        <pb n="12"/>
         <lb/>3
         <lb/>chilles, les Vliſſes, les Ajax &amp; les Hercules n’ont
         <lb/>fait auec toutes leurs armes &amp; leurs maſſuës. Ils

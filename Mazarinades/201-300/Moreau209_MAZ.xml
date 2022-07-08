@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau209_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau209_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -45,13 +46,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49841</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49841" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49841"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14406</idno>
@@ -83,12 +83,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mention de lecture et publication le 3 octobre 1648 signée Jossier.
+        <p source="Mazarine">Mention de lecture et publication le 3 octobre 1648 signée Jossier.
           Autres éditions publiées la même année, sous des titres et des compositions typographiques
           différents : par "les imprimeurs &amp; libraires ordinaires du Roy" (BM00937), par J.
           Guillemot (BM00936), par la veuve Musnier (BM00938), par Claude Morlot. Signé "Guyet".
           Acte daté du 2 octobre 1648. D'après Hubert Carrier, texte paru le 5 octobre 1648
           (Bibliothèque Mazarine, Ms. 4682-1, f. 110v).</p>
+        <p source="Moreau">209. Arrêt de la cour de parlement pour le rabais du pied fourché, avec
+          défense, aux fermiers et leurs commis, de lever ledit droit. Paris, Michel Mettayer, 1648,
+          4 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT.
@@ -119,7 +121,8 @@
         <lb/>meur ordinaire du Roy, demeurant en l’Iſle
         <lb/>Noſtre Dame à l"Image S. Iean
         <lb/>M. DC. XLVIII.
-        <lb/><imprimatur>AVEC PRIVILEGE DV ROY</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>AVEC PRIVILEGE DV ROY</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>EXTRAICT DES REGI¬

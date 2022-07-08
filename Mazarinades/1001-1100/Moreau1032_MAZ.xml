@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1032_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1032_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -44,7 +45,9 @@
             la necessité de soulager le peuple, pour tacher de le remettre. IV. Et par les approohes
             [sic] de la majorité, moins à desirer qu'à craindre.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" notBefore="1651-01-01" notAfter="1651-01-15">première quinzaine de
             janvier 1651</date>
@@ -52,13 +55,12 @@
             <measure unit="page" quantity="24"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48998</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48998" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48998"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10099</idno>
@@ -90,7 +92,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition (BM00148), repérée par Armand d'Artois (Bibliothèque
+        <p source="Mazarine">Autre édition (BM00148), repérée par Armand d'Artois (Bibliothèque
           Mazarine, Ms 4682-2, f. 205v) : composition typographique différente, fleuron de la p. de
           titre, ! entre le 6e et le 7e fleuron du bandeau ; p. 3 l. 9 "aux plus clairs-voyans"/"au
           moins clairs voyans" ; p. 5 l. 16 "toutes les raisons""touts les raisons" ; p. 5 l. 28
@@ -100,6 +102,13 @@
           ans"/"quatorze ans" ; p. 21 l. 7 "obeïr"/"obeyr". Par Dubosc Montandré, d'après Célestin
           Moreau Texte paru dans la première quinzaine de janvier 1651 d'après Hubert Carrier
           (Bibliothèque Mazarine, Ms 4682-2, f. 205v-206).</p>
+        <p source="Moreau">1032. Dernières (les) convulsions de la monarchie reconnues 1° par la
+          nécessité d’éloigner Mazarin et par la nécessité de le retenir; 2° par la nécessité de
+          l'élargissement et par la nécessité de la détention des princes ; 3° par la nécessité de
+          faire de grandes impo- sitions pour remplir l'épargne vide, et par la nécessité de
+          soulager le peuple pour tâcher de le remettre ; 4° et par les approches de la majorité
+          moins à désirer qu’à craindre. (S. 1.), 1651, 24 pages. Dubosc Montandré. Le titre est
+          plus piquant que la pièce.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -116,8 +125,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES DERNIERES
         <lb/>CONVVLSIONS
         <lb/>DE LA

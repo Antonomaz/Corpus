@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1820_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1820_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -54,12 +50,11 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309415</idno>
@@ -91,7 +86,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1820. Lettre circulaire de messieurs du Parlement de Provence, envoyée à
+          toutes les villes de France sur le sujet de l'arrivée de M. de Mercœur en Provence. Paris,
+          Jacques Le Gentil, 1652, 7 pages. Datée d'Aix le 10 mai. Elle est d'un partisan du comte
+          d'Alais, et non du Parlement. " Aussi le second titre porte-t-il : Lettre circulaire
+          envoyée de Pro vence, etc. Cela est plus vrai.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,6 +100,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -115,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>soo11
         <lb/>1 E TD
         <lb/>LI I I L
@@ -131,8 +133,7 @@
         <lb/>A l
         <lb/>lilu e dleſe
         <lb/>ou le el e es leiln
-        <lb/>P ee ee
-        <pb n="2"/>
+        <lb/>P ee ee <pb n="2"/>
         <lb/>
         <lb/>un
         <lb/>i
@@ -147,8 +148,7 @@
         <lb/>
         <lb/>i
         <lb/> 3
-        <lb/>a¬
-        <pb n="3"/>
+        <lb/>a¬ <pb n="3"/>
         <lb/>oûooû: éûooûoûoo
         <lb/> D
         <lb/> v1
@@ -170,8 +170,7 @@
         <lb rend="¬" break="no"/>tous les deſordres que nous foupirons en
         <lb rend="¬" break="no"/>ute, afn d’auoir vn pretexte dële deſpoüil
         <lb rend="¬" break="no"/>ler de ſon Gouuernement. ne pouuoit
-        <lb/>antmoins croire qu’en l’eſtat mmiſorable
-        <pb n="4"/>
+        <lb/>antmoins croire qu’en l’eſtat mmiſorable <pb n="4"/>
         <lb/>4
         <lb/>ou ſont reduites les affaires, il vouluſt ha
         <lb rend="¬" break="no"/>arder d’y enuoyer ſon Neveu, &amp; y allu
@@ -199,8 +198,7 @@
         <lb rend="¬" break="no"/>tiere, &amp; le ’thieatre ou ſe joueroit le dernier,
         <lb/>mais le plus ſanglant acte de la tragedie.
         <lb/>Voua pouuez bien çoire, Meſſieurs, que
-        <lb/>tous
-        <pb n="5"/>
+        <lb/>tous <pb n="5"/>
         <lb/>J
         <lb/>tous les Princes du Sang qui ont entrepris
         <lb/>auec les Parlemens du Royaume d’en chaſ
@@ -230,8 +228,7 @@
         <lb/>pty, qui ’eſt heurouſemeat &amp; pudee
         <lb/>B
         <lb/>¬ ¬.
-        <lb/>E¬
-        <pb n="6"/>
+        <lb/>E¬ <pb n="6"/>
         <lb/>maent fortifié depuis quelques mois, de ce.
         <lb/>qu’il y auoit de plus pur. &amp; de plus genereux
         <lb/>dans le Parlement, &amp; du reſte de la Nobleſ
@@ -258,8 +255,7 @@
         <lb/>de la paix, dont les Mazarins parent leurs
         <lb/>mauuais deſſeins: Lors qu’il ſera à propos
         <lb/>de lIa faire, e’eſt à dire lors qu’il ſe pourna
-        <lb/>¬¬¬-,,¬,
-        <pb n="7"/>
+        <lb/>¬¬¬-,,¬, <pb n="7"/>
         <lb/>,,,.. 2,¬ ¬¬,......
         <lb rend="¬" break="no"/>7
         <lb rend="¬" break="no"/>¬

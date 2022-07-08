@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau915_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau915_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -50,13 +51,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49297</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49297" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49297"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15439-49</idno>
@@ -88,11 +88,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mention,signée "Guyet", de la lecture, publication et enregistrement de
+        <p source="Mazarine">Mention,signée "Guyet", de la lecture, publication et enregistrement de
           la déclaration au parlement de Paris le 19 mai 1651. Autres éditons : Paris, par les
           imprimeurs et libraires du Roi, 1651, 7 p. (Moreau, n° 915) ; Bordeaux, G. de La Court, 8
           p. (Labadie, n° 167). Déclaration datée du 5 mai 1651 à Paris ; texte paru à Paris le 23
           mai d'après Hubert Carrier (Bibliothèque Mazarine, Ms 4682-2, f. 160v).</p>
+        <p source="Moreau">915. Déclaration du roi en faveur de madame la duchesse de Longueville,
+          de M. le maréchal de Turenne et de tous ceux qui ont suivi ou exécuté leurs ordres, véri-
+          fiée en parlement, le 19 mai 1651. Paris, par les imprimeurs et libraires ordinaires du
+          roi, 1651, T pages. Du 5 mai.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -113,8 +117,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>DECLARAIION
         <lb/>DV ROY,
         <lb/>EN FAVEVR DE MADAME LA
@@ -128,7 +131,8 @@
         <lb/>&amp; de Monſeigneur le Reuerend Eueſque
         <lb/>d’Orleans, &amp; de la Nation Germanique,
         <lb/>pres l'Egliſe S. Liphard. 1651.
-        <lb/><imprimatur>Auec permeſſion</imprimatur>. <pb n="8"/>
+        <lb/>
+        <imprimatur>Auec permeſſion</imprimatur>. <pb n="8"/>
         <pb n="9"/>
         <lb/>Declaration du Roy, en faueur
         <lb/>de Madame la Ducheſſe de

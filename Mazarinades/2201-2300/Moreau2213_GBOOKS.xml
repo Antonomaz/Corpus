@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2213_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2213_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -39,11 +35,10 @@
       <sourceDesc>
         <bibl>
           <ref target="https://books.google.fr/books?id=l2ZCAAAAcAAJ&amp;hl=fr"/>
-          <author>Anciens échevins de Paris</author>
+          <author/>
           <persName role="recipient" ref="isni:0000000383255772">
             <forename>Louis</forename>
             <surname>Bourbon (De)</surname>
-            <name>Louis XIV</name>
           </persName>
           <title source="Moreau">Lettre écrite au roi par des anciens échevins de Paris, sur les
             assurances d'une bonne et véritable paix générale, suivant la déclaration de Son Altesse
@@ -60,13 +55,12 @@
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Munich</settlement>
+            <settlement ref="geonames:2867714">Munich</settlement>
             <institution>Bibliothèque de l'Etat de Bavière</institution>
             <repository>BSB / Außenmagazin</repository>
             <idno type="cote">4 Gall.g. 234-4,1/49</idno>
@@ -98,7 +92,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2213. Lettre écrite au roi par des anciens échevins de Paris, sur les
+          assurances d'une bonne et véritable paix générale, suivant la déclaration de Son Altesse
+          Royale et de messieurs les princes, du 22 août 1652, et aussi sur le retour de Sa Majesté
+          en sa bonne ville de Pa ris. Paris, Jean Richard, 1652,8 pages. Datée du 23 août, et
+          signée N. P. T. Rare, mais bien insignifiante.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,6 +106,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -122,8 +124,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>L
         <lb/>
         <lb rend="¬" break="no"/> ¬ D
@@ -147,10 +148,8 @@
         <lb/>CeIEAN RICHARD, au haut de la tuë des
         <lb/>Carmes proche S. Hilaire.
         <lb/>M. DC. LII.
-        <lb/>l
-        <pb n="2"/>
-        <lb/>¬
-        <pb n="3"/>
+        <lb/>l <pb n="2"/>
+        <lb/>¬ <pb n="3"/>
         <lb/>Enonhhbtûêt
         <lb/>ſ’Ve v
         <lb/>2 LETRE ESCRITE AV ROY,
@@ -175,8 +174,7 @@
         <lb/>l̀ &amp;no plainres ſi uous neproreſions deu
         <lb/>qe d les hine qu eſont deas plaiuen dunote
         <lb/>ui ne euanchene nen des reſpets que nou
-        <lb/>ae
-        <pb n="4"/>
+        <lb/>ae <pb n="4"/>
         <lb/>deaonsà Voſtre Maiete, ny del’eſtime queo¬s
         <lb/>faiſons de ſon Conſeil Permetez nous doue,
         <lb/>SIRE, de vous dire que durant voſtre abſen
@@ -207,8 +205,7 @@
         <lb/>Vrerrain queles vericablesCouronnes ſont fai
         <lb rend="¬" break="no"/>es de launets, &amp; que le Seepe dsoysn’et
         <lb/>q’v
-        <lb/>. ae
-        <pb n="5"/>
+        <lb/>. ae <pb n="5"/>
         <lb/>anbſonpouuappueuloraQuoyrtnt
         <lb/>ul rea ſoa deiareu aleunSubie do
         <lb rend="¬" break="no"/>l auuir deuooupoutlapunit Ceen ileſ
@@ -238,8 +235,7 @@
         <lb/>ue pune qealaia que Pa pnur oern
         <lb/>e lſue die pſe eldin de ooie quua
         <lb/>3
-        <lb/>¬
-        <pb n="6"/>
+        <lb/>¬ <pb n="6"/>
         <lb/> 5
         <lb/>point de Puiſſance qui luy puiſſe empeſcdher
         <lb/>’en rendre la maiſtreſſe, ayant ſeule vn Patis, c’e
@@ -269,8 +265,7 @@
         <lb rend="¬" break="no"/> Pleſt à̀ Die, SIRE, que vous fuſiez teſ
         <lb rend="¬" break="no"/>moides douleurs que ſes habitams ſouhrenr n
         <lb/>voſeabſence mais quediſonynuauNouaa
-        <lb/> , aaaſ
-        <pb n="7"/>
+        <lb/> , aaaſ <pb n="7"/>
         <lb/>T
         <lb/>as
         <lb/>d
@@ -309,8 +304,7 @@
         <lb/>vous a choiſi pout cauſer le meſme bon-heurà la
         <lb/>France, &amp; t’amener vne paix glorieuſe, pour con
         <lb rend="¬" break="no"/> fondre ſeaennemis, &amp;e len faite erever de deſpit,
-        <lb/>a1
-        <pb n="8"/>
+        <lb/>a1 <pb n="8"/>
         <lb/>2
         <lb/>la voyant dans ſon premier eſtat, &amp; dans l’éclat
         <lb/>deſa gloire, vous regardant dans la pompede vo

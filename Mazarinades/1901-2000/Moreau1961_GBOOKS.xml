@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1961_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1961_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -57,13 +53,12 @@
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 312127</idno>
@@ -95,7 +90,10 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1961. Lettre de mademoiselle la Paix à madame la Guerre, avec la réponse.
+          Paris, veuve Théod. Pépin gué et Est. Maucroy, 1649,8 pages. Si elle était plus commune,
+          on n'en dirait rien.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,6 +102,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -119,13 +120,11 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>eeet
         <lb/>L GvEE
         <lb/> tea
-        <lb/>oue ieie
-        <pb n="2"/>
+        <lb/>oue ieie <pb n="2"/>
         <lb/>,.
         <lb/>1.
         <lb/>lupj
@@ -208,8 +207,7 @@
         <lb rend="¬" break="no"/>onnn ooQle
         <lb/>.
         <lb/> y
-        <lb/>1
-        <pb n="3"/>
+        <lb/>1 <pb n="3"/>
         <lb/>5
         <lb/>1 E ¬ e¬ D
         <lb/>H H
@@ -235,8 +233,7 @@
         <lb/>metre tout au hazard pour gagner quelque petite cho
         <lb rend="¬" break="no"/>ſe, ou pluſtoſt pourtout perdre? Certes qui vous vou
         <lb rend="¬" break="no"/>droit croire feroit vnbeau meſnage, mais il ſeroit de
-        <lb/>ort peu de durée. Ne ſç̧ait-on point que par l’vnion
-        <pb n="4"/>
+        <lb/>ort peu de durée. Ne ſç̧ait-on point que par l’vnion <pb n="4"/>
         <lb/>1
         <lb/>1
         <lb/>l
@@ -284,8 +281,7 @@
         <lb/>lors qu’on delibere de la fortune d’autruy, il faut appel
         <lb rend="¬" break="no"/>ler la ſienne au conſeil. Mais ne ſongeons plus au paſſé,
         <lb/>ce qui eſt fait eſt fait, &amp; ce qui eſt dt eſt dit : quand les
-        <lb/>choſes
-        <pb n="5"/>
+        <lb/>choſes <pb n="5"/>
         <lb/>choſes ſont faites les conſeils ſont inutiles. Ie vous di
         <lb rend="¬" break="no"/>ray pourtant vne choſe, Madame, c’eſt que ne vous
         <lb/>en deſplaiſe, le meſtier dont vous faites profeſſion ne
@@ -314,8 +310,7 @@
         <lb rend="¬" break="no"/>ques, des Heros, ou des demy-Dieux aunombre de
         <lb rend="¬" break="no"/>vus ſeruiteurs: mais ie n’enuieray iamais voſtre bon
         <lb rend="¬" break="no"/> heur. Quelque mauuais deſſein que vous ayez pour
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/>1
         <lb/>l!
         <lb/>&amp;
@@ -390,8 +385,7 @@
         <lb/>Ie n’ayme point le bruit ſi ie ne le fais i vous n’auez
         <lb/>aucun ſujet de vous plaindre de moy Sivous croyez
         <lb/>meriter plus de gloire, qu’on vous meine en triom
-        <lb/>phe, ie ſaiuray deriere. Vous eſtes bie rompée,.
-        <pb n="8"/>
+        <lb/>phe, ie ſaiuray deriere. Vous eſtes bie rompée,. <pb n="8"/>
         <lb/>l!
         <lb/>l!
         <lb/> ili

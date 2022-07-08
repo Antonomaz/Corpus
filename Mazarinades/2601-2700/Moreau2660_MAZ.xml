@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2660_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2660_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -53,13 +54,12 @@
             <measure unit="page" quantity="15"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49156</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49156" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49156"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13548</idno>
@@ -91,9 +91,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">À la fin, permission d'imprimer, datée du 29 avril 1649, accordée à la
+        <p source="Mazarine">À la fin, permission d'imprimer, datée du 29 avril 1649, accordée à la
           veuve de Théodore Pépingué et à Étienne Maucroy. Par Mercier d'après sa dédicace au
           roi.</p>
+        <p source="Moreau">2660. Panégyrique à l'honneur du roi, présenté à Sa Majesté. Paris, veuve
+          Théodore Pépingué et Estienne Maucroy, 1649, 15 pages. C'est signé Mercier. Ce Mercier
+          déclame contre les flatteurs ; et il dit au roi qu'il est un chef-d'œuvre de la nature !
+          Il fait de Mécène un conseiller d'Alexanâe , et d'Anacréon un politique !</p>
       </abstract>
       <textClass>
         <keywords>
@@ -111,8 +115,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>PANEGYRIOVE
         <lb/>A L’HONNEVR
         <lb/>DV ROY.
@@ -122,7 +125,8 @@
         <lb/>MAVCROY ruë de la Harpe, vis à vis
         <lb/>la ruë des Mathurins.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Permiſſion</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Permiſſion</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>AV ROY,
@@ -489,7 +493,8 @@
         <lb/>les ations glorieuſes que vous ferez dans vn aage plus
         <lb/>auancé, ſeront des matieres pour publier vos loü̈anges,
         <lb/>&amp; faire l’hiſtoire d’vne vie qui iamais n’a en de pareille.
-        <lb/><imprimatur>Il eſt permis à la Veſve Theodore Pepingué, &amp; Eſtienne
+        <lb/>
+        <imprimatur>Il eſt permis à la Veſve Theodore Pepingué, &amp; Eſtienne
           <lb/>Maucroy d’imprimer le Panegyrique en l’honneur du Roy, &amp;
           <lb/>deffenſes à tous autres de l’imprimer. Fait ce 29. Avril
           <lb/>1649. Signé, D’AVBRAY. </imprimatur>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3244_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3244_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -43,17 +39,19 @@
             (sic) contre monsieur le prince de Condé par les adhérents du cardinal Mazarin; comment
             découverte et les traitres surpris."</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1652">1652</date>
           <extent>
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Londres</settlement>
+            <settlement ref="geonames:2643743">Londres</settlement>
             <institution>The British Library</institution>
             <repository>General Reference Collection</repository>
             <idno type="cote">1570/816.</idno>
@@ -85,7 +83,10 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">3244. Relation véritable de la trahison tramée dans la ville de Ligourne
+          (sic) contre monsieur le prince de Condé par les adhérents du cardinal Mazarin; com ment
+          découverte et les traitres surpris. Paris, 1652, 6 pages. Rare.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -94,6 +95,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -109,8 +114,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>RELATION
         <lb/>VERITABLE
         <lb/> De la trahiſon traḿe dans la Viſle
@@ -118,11 +122,9 @@
         <lb/> M. le Prince de Condé.
         <lb/>n l len ee e deulnoenes ca
         <lb rend="¬" break="no"/>decoerte, &amp; les raiſtres ſurpris.
-        <lb/>A PARIS,
-        <pb n="2"/>
+        <lb/>A PARIS, <pb n="2"/>
         <lb/> l
-        <lb/>2
-        <pb n="3"/>
+        <lb/>2 <pb n="3"/>
         <lb/>Amn l ſ
         <lb/>ledlaſdiſdeſilelſ
         <lb/>Qsſ ieiſeeolo
@@ -145,8 +147,7 @@
         <lb/>’nenele eia ee ſeus leoaue e ere l e
         <lb/>arpe u eure naol e aen ſe e ue
         <lb/>l ln ne ne lene poeoei oen eoeeie l onien
-        <lb/>rn iſ e enue P re ooie dliare de l uaſee
-        <pb n="4"/>
+        <lb/>rn iſ e enue P re ooie dliare de l uaſee <pb n="4"/>
         <lb/>qu’elle ſouffre, que par les bons deſſeins qu’ils teſ
         <lb rend="¬" break="no"/>moignent auoir par vne bonne &amp; conſtante vnion,
         <lb/>chaſler ce commun ennemy, qui ſeul eſt la cauſe
@@ -178,8 +179,7 @@
         <lb/>pour qui il vouloit rendre vn mauuais ſeruice contre
         <lb/>Monſieur le Prince, auoient trouué en luy ce qu’ils
         <lb/>cherchoient
-        <lb/>¬¬
-        <pb n="5"/>
+        <lb/>¬¬ <pb n="5"/>
         <lb/>cherchoient ſous promeſſe de grande recompence.
         <lb/>Dans cette Ville de Ligourne eſt la Cour des Ay
         <lb rend="¬" break="no"/>des de la Prouince de Guyenne, de laquelle Cour
@@ -209,8 +209,7 @@
         <lb/>En ſuitte ils vont par les maiſons où ils prennent
         <lb/> touteés les armes des Bourgeois, iuſques aux cou
         <lb rend="¬" break="no"/> ſteaux ſans y laiſſer aucune chole qui peuſt ſeruir à̀
-        <lb/>..¬
-        <pb n="6"/>
+        <lb/>..¬ <pb n="6"/>
         <lb/>leur deffence: Et comme ils ſçauoient les noms de
         <lb/>prineipaux traiſtres &amp; leurs demeures, lls y furent &amp;
         <lb/>ſe ſaiſirent de deux Conſeillers, d’vn Greffier &amp; de

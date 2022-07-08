@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2850-i_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2850-i_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,20 +32,21 @@
           <title source="Mazarine">Le premier Mercure de Compiegne depuis l'arrivee du Roy en ceste
             ville, jusques à jeudy 10. jour du mois de juin 1649. En vers burlesques.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-06-15">mi-juin 1649</date>
           <extent>
             <measure unit="page" quantity="11"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50309</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50309" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50309"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10535-1</idno>
@@ -76,10 +78,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. Évoque les récentes opérations militaires en
+        <p source="Mazarine">En vers octosyllabes. Évoque les récentes opérations militaires en
           Artois et en Flandres. 2 états (A/B) : p. 9, l. 15 "pres en pas"/"pas en pas". D'après
           Hubert Carrier, texte paru vers la mi-juin 1649 (Bibliothèque Mazarine, Ms. 4682-4, f.
           237r).</p>
+        <p source="Moreau">2850. Premier (le) mercure de Compiègne, depuis l'ar rivée du roi en
+          cette ville jusques au jeudi 10 du mois de juin 1649, en vers burlesques.Sans Lieu, 1649.
+          Trois numéros de 11 et 12 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE PREMIER MERCVRE
         <lb/>DE
         <lb/>COMPIEGNE

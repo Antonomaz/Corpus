@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2957_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2957_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -45,13 +46,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49369</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49369" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49369"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12069</idno>
@@ -83,9 +83,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. Par l'abbé de Laffemas d'après Tallemant des
+        <p source="Mazarine">En vers octosyllabes. Par l'abbé de Laffemas d'après Tallemant des
           Réaux (note ms. sur l'exemplaire Bibliothèque Mazarine M 15432-6 ; Hubert Carrier, "Les
           muses guerrières", p. 193).</p>
+        <p source="Moreau">2957. Rabais (le) du pain, en vers burlesques. Paris, Claude Huot, 1649,
+          7 pages. 1 Mais Paris n'est pas huguenot , Et fait des tours de Godcnot. s Godenot était
+          un prédicateur très-subtil. L'auteur de l' Enfer burlesque dit que, dans la soutane, on
+          appelait les détours des pro cureurs les Godenots de la chicane.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +106,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE RABAIS
         <lb/>DV PAIN
         <lb/>EN VERS BVRLESQVES. <figure type="decoration"/>
@@ -111,7 +114,8 @@
         <lb/>Chez CLAVDE HVOT, ruë ſaint Iacques,
         <lb/>proche les Iacobins, au pied de Biche.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>AVEC PERMISSION</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>AVEC PERMISSION</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>LE RABAIS DVPAIN
         <lb/>EN VERS BvRLESQvES. <l>

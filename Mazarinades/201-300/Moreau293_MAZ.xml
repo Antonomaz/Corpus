@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau293_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau293_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -33,20 +34,21 @@
           <title source="Mazarine">Arrest de la cour de Parlement toutes les chambres assemblees'
             [sic], contre le cardinal Mazarin. Du samedy 11. mars 1651.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" when="1651-03-13">13 mars 1651</date>
           <extent>
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49831</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49831" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49831"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14531</idno>
@@ -78,7 +80,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">293. Arrêt de la cour de parlement, toutes les chambres assemblées,
+          contre le cardinal Mazarin. Du samedi 114 mars 1651. Paris , par les imprimeurs et
+          libraires ordinaires du roi, Sans Date, 6 pages. « Confirmation des arrêts des 7, 9, 20
+          février et Ÿ mars. Il est rapporté dans les Mémoires de madame de Motteville , page 384,
+          coll. Michaud. '</p>
       </abstract>
       <textClass>
         <keywords>
@@ -96,8 +103,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE
@@ -107,7 +113,8 @@
         <lb/>Du Samedy 11. Mars 1651. <figure type="decoration"/>
         <lb/>A PARIS,
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires du Roy.
-        <lb/><imprimatur>Auec Privilege de ſa Maieſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Privilege de ſa Maieſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

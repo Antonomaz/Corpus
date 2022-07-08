@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau705_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau705_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,20 +49,21 @@
             de Merlou, &amp; autres terres &amp; seigneuries. Decedée à Chastillon sur Loin le
             deuxiéme decembre 1650.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" when="1651-01">janvier 1651</date>
           <extent>
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48987</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48987" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48987"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12642</idno>
@@ -93,11 +95,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">État A : p. 11, l. 4 "Escuyer" et p. 12 l. 11 "l heure" ; état B : p.
+        <p source="Mazarine">État A : p. 11, l. 4 "Escuyer" et p. 12 l. 11 "l heure" ; état B : p.
           11, l. 4 "Escuzer" et p. 12 l. 11 "l heure" ; état C : p. 11, l. 4 "Escuzer" et p. 12 l.
           11 "l'heure". Signé "Pellaut", notaire à Châtillon-sur-Loing Premier codicille daté du 31
           octobre 1650, second, du 13 novembre 1650. Texte paru en janvier 1651 d'après Hubert
           Carrier (Bibliothèque Mazarine, s 4682-2, f. 60v).</p>
+        <p source="Moreau">705. Codicile ct suite du testament de très-honorable,* très-illustre et
+          très-puissante princesse Charlotte- Marguerite de Montmorency, princesse douairière de
+          Condé, duchesse de Montmorency et de Château Roux (sic), dame de Chantilly, de Merlou et
+          autres terres et seigneuries , décédée à Châtillon-sur-Loing lc deuxième décembre 1650.
+          Paris, 1651 , 12 pages. Signé Pellaut, notaire à Châtillon , et daté du dernier octo- bre
+          1650.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -114,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>CODICILLE
         <lb/>ET
         <lb/>SVITE DV TESTAMENT

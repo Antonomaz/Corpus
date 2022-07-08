@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau782_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau782_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -41,13 +42,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49169</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49169" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49169"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15435-29</idno>
@@ -79,8 +79,22 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Même texte que "Les contens et mescontens sur le sujet du temps"
+        <p source="Mazarine">Même texte que "Les contens et mescontens sur le sujet du temps"
           (Moreau 782). </p>
+        <p source="Moreau">782. Contents (les) et mécontents sur le sujet du temps. Paris, 4649, 8
+          pages. Pendant la conférence de Ruel. Contents : les armuriers, clinqualhers, bahutiers,
+          faiseurs de malles , valises et fourreaux de pistolets , pâtissiers, boulangers. meuniers,
+          bouchers , épiciers, charcuitiers , fourbisseurs , faiseurs de pistolets, usuriers et
+          préteurs sur gages, cordonniers, impri- meurs , cabaretiers, colporteurs et vendeurs de
+          rogatons, maqui- gnons, panachers, faiseurs de baudriers, vendeurs de poudre et de balle ,
+          officiers de guerre et cavaliers. Mécontents : peintres, architectes, seulpteurs,
+          graveurs, horlo- geurs, menuisiers, massons, relieurs, libraires, marchands de soie,
+          lingères, prêtres, passementiers , rubaniers , luthiers, musiciens, violons, rétisseurs,
+          harangères , chaudronniers , avocats, procu- reurs, solliciteurs, sergents à cheval et à
+          verge, miroitiers, éguille- tiers, épingliers, joailliers, vendeurs de babioles,
+          tablettiers, serru- riers, fondeurs, vendeurs d’éventails et d’écrans, teinturiers ,
+          blanchisseurs , maquereaux, p , ete. L’auteur dit que ce dernier parti était de beaucoup
+          le plus fort.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,8 +111,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="6"/>
+      <p><pb n="6"/>
         <lb/>LA LISTE
         <lb/>DES
         <lb/>CONTENS
@@ -110,7 +123,8 @@
         <lb/>Chez IEAN BERCHE, Libraire &amp; Imprimeur, demeurant
         <lb/>Ruë Calandre, au Nom de Ieſus.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Permiſſion</imprimatur>. <pb n="7"/>
+        <lb/>
+        <imprimatur>Auec Permiſſion</imprimatur>. <pb n="7"/>
         <lb/>e
         <lb/>aia
         <lb/>Aaau

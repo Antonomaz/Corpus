@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau371_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau371_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -33,20 +34,21 @@
           <title source="Mazarine">Arrest du Conseil d'Estat du Roy, donné en faveur du cardinal
             Mazarin.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" when="1652-02-01">1er février 1652</date>
           <extent>
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49188</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49188" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49188"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14285</idno>
@@ -78,10 +80,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions sous des titres différents. Signé "De Guenegaud". Acte
+        <p source="Mazarine">Autres éditions sous des titres différents. Signé "De Guenegaud". Acte
           daté à Poitiers le 18 janvier 1652. Texte paru à partir du 19 janvier 1652 à Poitiers et
           le 1er février 1652 à Paris d'après Hubert Carrier (Bibliothèque Mazarine, Ms. 4682-1, f.
           191v).</p>
+        <p source="Moreau">371. Arrêt du conseil d’État du roi donné en faveur du cardinal Mazarin.
+          Jouxte la copte imprimée à Poitiers par Julien Thoreau, 1652, 4 pages. Daté du 18 janvier
+          1652. ,</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,8 +103,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DV CONSEIL
         <lb/>D'ESTAT DV ROY
@@ -179,7 +183,8 @@
         <lb/>de de onil lures damene l lemeonnme unr dr
         <lb/>dis Ccommſauirea que des Adu dernire, ſoida.
         <lb/>ement Et ſea le preſent Areſt leu &amp; publié par <pb n="14"/>
-        <gap/></p>
+        <gap/>
+      </p>
     </body>
   </text>
 </TEI>

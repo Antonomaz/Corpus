@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Labadie58_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Labadie58_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -45,13 +46,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49241</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49241" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49241"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15372</idno>
@@ -83,10 +83,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mention, signée 'Caussan", de publication de l'arrêt le 9 septembre
+        <p source="Mazarine">Mention, signée 'Caussan", de publication de l'arrêt le 9 septembre
           1649. Autre édition : "Juxte la copie imprimée à Bourdeaux" (BM00902). Signé "De Pontac".
           Acte du 9 septembre 1649. - D'après Hubert Carrier, texte paru le 11 septembre 1649
           (Bibliothèque Mazarine, Ms. 4682-1, f. 94v).</p>
+        <p source="Labadie">58. ARREST de la Cour de Parlement de Bourdeaux. Portant que le Roy sera
+          tres humblement supplié, de donner un autre Gouverneur à sa Province de Guyenne. A
+          Bourdeaux, par J. Mongiron Millanges, Imprimeur ordinaire du Roy, 1649, 7 pages. Du 9
+          septembre. Moreau ne cite, n" 164, que l'édition Jouxte la copie. Bibl. de Bordx,
+          10504-37.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,16 +109,14 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT
         <lb/>DE BOVRDEAVX.
         <lb/>Portant que le Roy ſera treſ-humblement ſupplié,
         <lb/>de donner un autre gouuerneur à ſa Prouin¬
-        <lb/>ce de Guyenne.
-        <figure type="decoration"/>
+        <lb/>ce de Guyenne. <figure type="decoration"/>
         <lb/>A BOVRDEAVX,
         <lb/>Par I. MONGIRON MILLANGES, Imprimeur
         <lb/>ordinaire du Roy. 1649.<pb n="10"/>

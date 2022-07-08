@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2567_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2567_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,7 +36,9 @@
           </author>
           <title source="Mazarine">Observationes politicæ. Super nuperis Galliæ motibus.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-07-01" notAfter="1649-07-10">début juillet
             1649</date>
@@ -43,13 +46,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49142</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49142" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49142"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13538</idno>
@@ -81,10 +83,21 @@
         <language ident="lat">Document en latin</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Préface. Autres éditions : in-4, même date, mais de composition
+        <p source="Mazarine">Préface. Autres éditions : in-4, même date, mais de composition
           typographique différente (BM00298), et in-12. Préface. Notes en marge. Par le baron
           Shering Rosenhane, d'après Célestin Moreau. D'après Hubert Carrier, texte paru début
           juillet 1649 (Bibliothèque Mazarine, Ms. 4682-4, f. 109v).</p>
+        <p source="Moreau">2567. Observationes politicæ super nuperis Galliæ mo tibus. Sans Lieu,
+          1649,47 pages. Bonnes réflexions , surtout au commencement; critique souvent juste des
+          deux partis ; style élégant et ferme; en un mot, pam phlet très-remarquable , dont
+          l'édition in-4° est des plus com Il a été publié après la paix, ainsi que cela résulte
+          évidemment des passages qui suivent. « Demùm coacti sunt pro beneficio habere, pace
+          quantociùs factâ , omnia in priorem statum restitui. » « Nondium constat qud soliditate
+          illa transactio futura. » L'auteur, dans sa préface, promet d'être impartial : « Gallus
+          enim non sum, inquit, nec Italus, et neutri partium beneficio nec odio cognitus. » Il
+          était Suédois en effet, ambassadeur à Paris , sous le règne de Christine. Il se nommait le
+          baron Shernig Rhose IlaI1C. Il existe de ce pamphlet une édition elzévirienne du même
+          titre et de la même date, de format petit in-12. Les exemplaires en SOnt rareS.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,14 +114,12 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>OBSERVATIONES
         <lb/>POLITICAE
         <lb/>SVPER NVPERIS
         <lb/>GALLIAE MOTIBVS
-        <lb/>M DC XLIX. <pb n="10"/>
-        <pb n="11"/>
+        <lb/>M DC XLIX. <pb n="10"/><pb n="11"/>
         <lb/>PRAEFATIO
         <lb/>AMPLA ciuitas mundu eſt, uius cius quot¬
         <lb/>quot homines. Terminos &amp; fines partum,

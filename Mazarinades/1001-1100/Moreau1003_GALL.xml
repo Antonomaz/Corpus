@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau1003_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1003_GALL">
   <teiHeader xml:lang="fr">
     <fileDesc>
       <titleStmt>
@@ -10,24 +10,18 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
           <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="Corrector">Hip Amélie
-            <affiliation>
-              <roleName type="status">Vacataire</roleName>
-            </affiliation>
+          <persName role="Corrector">Hip Amélie <affiliation><roleName type="status"
+                >Vacataire</roleName></affiliation>
           </persName>
         </respStmt>
       </titleStmt>
@@ -58,11 +52,11 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque nationale de France</institution>
             <repository>Département Littérature et art</repository>
             <idno type="cote">YE-2512</idno>
@@ -94,8 +88,9 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BnF_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1003. Départ (le) des Allemands et des Polonois du château de Meudon, en
+          vers burlesques. Paris, Jacques Guillery, 1649, 7 pages. Après la paix.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,6 +99,9 @@
           <term type="subgenre">burlesque</term>
           <term type="subgenre">satirique</term>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -119,22 +117,20 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k5710032x.r=bpt6k5710032x?rk=21459;2"/>
+      <p><pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k5710032x.r=bpt6k5710032x?rk=21459;2"/>
         <lb/>LE DEPART
         <lb/>DES ALEMANDS
         <lb/>ET
         <lb/>POLONOIS
         <lb/>DV CHASTEAV
         <lb/>DE MEVDON:
-        <lb/>
-        <hi rend="it">EN VERS BVRLESQVES.</hi>
-        <figure type="decoration"/>
+        <lb/><hi rend="it">EN VERS BVRLESQVES.</hi><figure type="decoration"/>
         <lb/>A PARIS,
         <lb/>Chez IACQVES GVILLERY, ruë des Sept-Voyes, de
         <lb break="no" rend="¬"/>uant le College de Fortet, proche Mont-Aigu.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>AVEC PERMISSION.</imprimatur>
+        <lb/>
+        <imprimatur>AVEC PERMISSION.</imprimatur>
       </p>
       <p>
         <pb n="2" facs="https://gallica.bnf.fr/ark:/12148/bpt6k5710032x/f3.item.r=bpt6k5710032x"/>

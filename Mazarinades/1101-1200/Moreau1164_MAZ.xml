@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1164_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1164_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -29,7 +30,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14632"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Les divines revelations et promesses faites a sainct Denys patron
             de la France, et a sainte Geneviefve patrone de Paris, en faveur des Francois. Contre le
             tyran Mazarin. Apportées du Ciel en Terre par l'archange S. Michel.</title>
@@ -47,13 +48,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48916</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48916" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48916"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10868</idno>
@@ -85,8 +85,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Hubert Carrier, texte paru fin janvier ou début février 1649
+        <p source="Mazarine">D'après Hubert Carrier, texte paru fin janvier ou début février 1649
           (Bibliothèque Mazarine Ms. 4682-2, f. 257v). </p>
+        <p source="Moreau">1164. Divines (les) révélations el promesses faites à saint Denys, patron
+          de la France, et à sainte Geneviève , patronne de Paris, en faveur des François contre le
+          tyran Mazarin, apportées du ciel en terre par l’archange saint Mmhel Paru Claude
+          Boudeville, 1649, 8 pages. Les révélations ont été posées sur le grand autel de
+          Saint-Denys et celui de Sainte-Geneviève , où on les a trouvées, écrites en let- tres d’or
+          sur un papier merveilleux, de couleur azurée, qui disparut au moment qu’on en eut fait des
+          copies. À leur insignifiance, il faut soupçonner les copistes d’infidélité.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES DIVINES
         <lb/>REVELATIONS
         <lb/>ET PROMESSES

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Labadie63_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Labadie63_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -45,13 +46,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49248</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49248" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49248"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15374</idno>
@@ -83,7 +83,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Signé "De Pontac".</p>
+        <p source="Mazarine">Signé "De Pontac".</p>
+        <p source="Labadie">63. ARREST de la Cour de Parlement de Bourdeaux. Portant inhibitions
+          &amp; deffences aux Commissaires du Sieur Duc d'Espernon, de lever aucuns deniers des
+          Tailles, dans la Seneschaussée de Tartas, &amp; defence aux habitans dud. lieu de les
+          payer ausd. Com. A. Bourdeaux, par J. Mongiron Millanges, Imprimeur ordinaire du Roy,
+          1649, 4 pages. Du 14 septembre 1549. Bibl. de Bordx, 10504-42.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau921_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau921_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -50,13 +51,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49399</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49399" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49399"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11204</idno>
@@ -88,7 +88,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Page 5, l. 2 "accident", fin l. 9 "il n'est rien plus", début l. 11
+        <p source="Mazarine">Page 5, l. 2 "accident", fin l. 9 "il n'est rien plus", début l. 11
           "que Sainct Pierre" ; p. 7, début l. 15 "me des Lions rougissans". Le texte se termine par
           la signature "B. D.". - Deux autres éditions à la même adresse, 8 p. in-4 : p. 5, l. 2
           "Accident", fin l. 9 "il n'est rien de", début l. 11 "veut que S. Pierre" ; p. 7, début l.
@@ -98,6 +98,10 @@
           par la signature "B. D." (BM00546). TTexte paru la 3e semaine de février 1649 d'après
           Hubert Carrier (Bibliothèque Mazarine, Ms 4682-3, f. 186v). Signé "B. D.", attribué à
           Cyrano de Bergerac.</p>
+        <p source="Moreau">921. Déclaration du roi, portant abolition générale de ce qui s’est passé
+          en la ville de Paris, l’onzième décembre dernier, 1649, vériliée en parlement le dou-
+          zième mai 1650. Paris, par les imprimeurs et libraires ordinaires du roi, 1650, 6 pages.
+          Datée de Dijon, avril 1659. C’est l’affaire de Joly et du marquis de La Boulaye.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -115,8 +119,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>.LETTRE DE
         <lb/>CONSOLATION
         <lb/>ENVOYEE

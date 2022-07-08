@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2470_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2470_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,7 +36,9 @@
           </author>
           <title source="Mazarine">Le ministre d'Estat flambé.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-02-20" notAfter="1649-02-28">fin février
             1649</date>
@@ -43,13 +46,12 @@
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49107</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49107" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49107"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14807</idno>
@@ -81,7 +83,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. Trois états : empreinte 1, texte de l'"Epitaphe"
+        <p source="Mazarine">En vers octosyllabes. Trois états : empreinte 1, texte de l'"Epitaphe"
           en italiques" (A) ; empreinte 2, texte de l'"Epitaphe" en italiques" (B), empreinte 1,
           texte de l'"Epitaphe" en romains (C). Édition différente de celle "jouxte la coppie
           imprimée à Paris" (Moreau 2470, BM00253). Repérée par Armand d'Artois avec deux autres
@@ -91,6 +93,21 @@
           verum quid vetat?". Attribué à Cyrano de Bergerac par Barbier (III, 305) d'après
           l'épitaphe finale signée "D. B." Texte paru fin février 1649 d'après Hubert Carrier
           (Bibliothèque Mazarine, Ms. 4682-4, f. 57v-58).</p>
+        <p source="Moreau">2470. Ministre (le) d'État flambé. Ridendo dicere ve rum quid vetat
+          ?Jouxte la copie imprimee à Paris, 1649, 16 pages. Signé D. B. Pamphlet gai, spirituel,
+          bien écrit, et que Naudé place au qua trième rang des pièces burlesques (page 283 du
+          Mascurat); mais l'auteur développe trop longuement cette idée : « Et vous avez fait à
+          rebours Le gaillard péché de luxure. » Voici une citation qu'on ne trouvera pas trop
+          longue, j'espère, et que dans tous les cas la rareté de ce curieux libelle fera GeXCllSer°
+          : « Le Bretilleux est sans chalands ; . Morel n'enseigne plus à lire ; Boisseau n'étale
+          plus d'écrans; Martial ne vend plus de gants ; Rangouze ne sait plus qu'écrire; Richard ne
+          va plus chez les grands ; Et Vinot n'a plus de quoi frire. « Neufgermain ne dit pas un mot
+          ; Les muses ne l'ont plus pour mome ; Le Savoyard plaint chaque écot; L'Orviétan est pris
+          pour sot ; Il n'a ni théâtre, ni baume ; - Et Cousin, Saumur et Sercot Ne gagment plus
+          rien à la paume - - « Cardelin semble être perclus ; Son corps ne fait plus de merveille ;
+          Carneline en un coin réclus Voit ses pélicans superflus ; Le Coutelier même sommeille ; Et
+          Champagne ne coiffe plus Que la poupée ou la bouteille « Sur le Pont-Neuf Cormier en vain
+          Plaint sa gibecière engagée ; La Roche y prône pour du pain ... »</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,8 +124,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>MINISTRE
         <lb/>D'ESTAT

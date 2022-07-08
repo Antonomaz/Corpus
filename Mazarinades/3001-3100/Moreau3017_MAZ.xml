@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3017_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3017_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -28,7 +29,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14976"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Recit veritable de tout ce qui s'est fait &amp; passé a l'arrivée
             du cardinal Mazarin, vers sa Majesté. Avec la reception qui luy a esté faite.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
@@ -43,13 +44,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49860</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49860" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49860"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13602</idno>
@@ -81,9 +81,25 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Relate aussi l'affaire de la "dame de Jonsac". Autre édition sous le
+        <p source="Mazarine">Relate aussi l'affaire de la "dame de Jonsac". Autre édition sous le
           titre "Relation escrite de Poitiers, du XX. janvier M.DC.LII. Contenant les avantages
           emportez sur l'armée de monsieur le Prince par l'armée du Roy." (BM00955)</p>
+        <p source="Moreau">3017. Récit véritable de tout ce qui s'est fait et passé à l'arrivée du
+          cardinal Mazarin vers Sa Majesté, avec la réception qui lui a été faite. Paris, Jacob
+          Chevalier, 1652, 7 pages. Mal écrit et peu exact. L'auteur raconte, en terminant,
+          l'histoire de la baronne de Jon- sac , qui aurait enivré mille hommes des troupes de M. le
+          prince dans son château , et les aurait ensuite fait massacrer par les pay sans. Voici
+          comment Loret rend compte de ce singulier épisode de la Fronde, dans sa lettre du 28
+          janvier 1652, quatrième du livre III: a On avoit mis en sa maison Trois cents soldats en
+          garnison... Ladite dame en elle-même Sentant un déplaisir extrême Des crimes tous les
+          jours commis Par ces déloyaux ennemis... Voulant s'affranchir de ces pestes Et de ces
+          hôtes si funestes , Par je ne sais quel subtil tour, Les enferma dans une tour; Puis porta
+          les clefs à la reine, Qui fit partir un capitaine, Lequel en moins d'un jour ou deux Alla
+          , dit-on , se saisir d'eux . » Loret convient, il est vrai, que la version du pamphlétaire
+          était également répandue : « Mais aucuns parlent d'autre sorte, Disant que la dame Jonsac
+          Elle-même les mit à sac. » D'après la Relation escrite de Poitiers , qui a un caractère
+          offi ciel , la dame de Jonsac a tout simplement soulevé les gens de la campagne contre la
+          garnison, quia été attaquée et forcée à la re traite. X</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,8 +120,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>RECIT
         <lb/>VERITABLE
         <lb/>DE TOVT CE QVI S'EST FAIT

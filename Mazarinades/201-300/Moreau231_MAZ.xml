@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau231_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau231_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -45,13 +46,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49900</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49900" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49900"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14443</idno>
@@ -83,11 +83,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Célestin Moreau, autre édition de l'arrêt intitulé "Arrest de
+        <p source="Mazarine">D'après Célestin Moreau, autre édition de l'arrêt intitulé "Arrest de
           la cour de Parlement. Du vingt-cinquiéme janvier 1649. Par lequel il est ordonné aux
           payeurs des rentes de payer les arrerages deubs &amp; escheus aux rentiers qui sont
           present en cette ville". (BM01002). Signé "Guiet". Daté du 25 janvier 1649. D'après Hubert
           Carrier, texte paru le 26 janvier 1649 (Bibliothèque Mazarine, Ms. 4682-1, f. 117v).</p>
+        <p source="Moreau">231. Arrêt de la cour de parlement pour le payement des rentes de l’Hôtel
+          de Ville de Paris. Paris, Gervais Alliot, 1649, 4 pages. Autre édition de l’arrêt qui
+          précède.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -105,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR DE
         <lb/>PARLEMENT,

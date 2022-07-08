@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_chantables" xml:id="Moreau3794_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3794_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -9,15 +9,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -39,18 +35,19 @@
           <author/>
           <title source="Moreau">Trahisons (les) découvertes, ou le Peuple vendu.</title>
           <pubPlace>Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Munich</settlement>
+            <settlement ref="geonames:2867714">Munich</settlement>
             <institution>Bibliothèque de l'Etat de Bavière</institution>
             <repository>BSB / Außenmagazin</repository>
             <idno type="cote">4 Gall.g. 233-4</idno>
@@ -82,7 +79,24 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Antonomaz">
+          <ref
+            target="https://mazarinum.bibliotheque-mazarine.fr/viewer/17815?css-name=blank&amp;back=%2Fexpositions-virtuelles%2Fitem%2F17782-redirection%3Foeuvre%3D7#page=1&amp;viewer=picture&amp;o=bookmarks&amp;n=0&amp;q="
+            >La collection de la bibliothèque Mazarine contient un exemplaire d'une autre édition de
+            ce texte, augmenté d'une chanson, avec la musique notée, ce qui est très rare. Ce point
+            est signalé dans l'exposition virtuelle de la Mazarine sur les mazarinades</ref>
+        </p>
+        <p source="Moreau">3794. Trahisons (les) découvertes , ou le Peuple vendu. (S. l., 1649), 7
+          pages. Invectives violentes contre le Parlement, la reine, que l'auteur menace du sort de
+          Brunehaut, le prince de Condé, le prince de Conty, le duc de Longueville et le duc
+          d'Elbeuf, « qui a ferré la mule au peuple de Paris. &gt;&gt; Pendant les conférences de
+          Ruel . J'en ai vu une autre édition plus belle, de 12 pages, portant sur le titre : et le
+          peuple, etc., au lieu de ou le peuple, Dédiez à monseigneur le duc de Beaufort, et la date
+          de 1649. Le pamphlet y est augmenté d'une strophe sur le coadjuteur, et suivi de huit
+          couplets d'une chanson assez spirituelle contre le prince de Conty, le duc de Beaufort, le
+          duc de Longueville, les enfants du duc d'Elbeuf, le duc de Bouillon et le maréchal de
+          Lamothe , qui «... A pillé Paris Comme il a fait Cardonne. »</p>
       </abstract>
       <textClass>
         <keywords>
@@ -91,6 +105,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -101,58 +118,27 @@
       </settingDesc>
     </profileDesc>
     <revisionDesc>
-      <change status="not_corrected"/>
+      <change status="corrected" when="2022-05-06" who="KA"/>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <pb n="1"/>
       <l>
-        <lb/>¬</l>
+        <lb/>LES TRAHISONS DESCOVVERTES</l>
       <l>
-        <lb/>. </l>
+        <lb/> ou</l>
       <l>
-        <lb/>1.</l>
+        <lb/> le Pevple
+        <lb/>Vendv.</l>
       <l>
-        <lb/>..</l>
+        <lb/>Poltrons, eprits bas&amp; craintifs,</l>
       <l>
-        <lb/>11.</l>
+        <lb/>L&amp; Vous auez donc perdu courage,</l>
       <l>
-        <lb/>.</l>
+        <lb/> Quoy tous nos grands preparatifs,</l>
       <l>
-        <lb/> -¬¬¬</l>
-      <l>
-        <lb/>Et</l>
-      <l>
-        <lb/>
-      </l>
-      <l>
-        <lb/>
-      </l>
-      <l>
-        <lb/> -</l>
-      <l>
-        <lb/>..</l>
-      <l>
-        <lb/>oonaoogle</l>
-      <pb n="2"/>
-      <pb n="3"/>
-      <l>
-        <lb/>ſllllllillllilstteldſepetleſle</l>
-      <l>
-        <lb/>LES TRAHISONS DESCOVVERTEs</l>
-      <l>
-        <lb/> e </l>
-      <l>
-        <lb/> ou lePeuple Vendu.</l>
-      <l>
-        <lb/>Q rons, eprits ba&amp; crains,</l>
-      <l>
-        <lb/>L&amp; Vousauez doncperdu courage,</l>
-      <l>
-        <lb/> Quoy tous nos grands preparaifs,</l>
-      <l>
-        <lb/> Nonr point auancé vore ouurage,</l>
+        <lb/> Non point auancé vore ouurage,</l>
       <l>
         <lb/>Pourquoy donc impoſteurs auez vous proteſté</l>
       <l>
@@ -550,7 +536,7 @@
       <l>
         <lb/>Si toſt qu’vn Dieu vengeantnotre iuſte querelle,</l>
       <l>
-        <lb/>Aur mis en leurs mains vn Fauory rebelle.</l>
+        <lb/>Aura mis en leurs mains vn Fauory rebelle.</l>
       <l>
         <lb/>FIN.</l>
     </body>

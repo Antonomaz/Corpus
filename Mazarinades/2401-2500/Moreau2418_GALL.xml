@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau2418_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2418_GALL">
   <teiHeader xml:lang="fr">
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -38,8 +34,8 @@
         <bibl>
           <ref target="https://gallica.bnf.fr/ark:/12148/btv1b8626232m"/>
           <author ref="isni:0000000120990126">
-            <persName role="auteur">
-              <forename type="usual">Paul</forename>
+            <persName>
+              <forename>Paul</forename>
               <surname>Scarron</surname>
             </persName>
           </author>
@@ -57,11 +53,11 @@
             <measure unit="page" quantity="20"/>
           </extent>
           <note type="format">in-8</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque nationale de France</institution>
             <repository>Département réserve des livres rares</repository>
             <idno type="cote">RES-YE-4826</idno>
@@ -93,8 +89,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BnF_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2418. Masarinade (la), ou Éloge du cardinal Masarin, an vers burlesques,
+          corect e an la bone ortografe. Amsterdam (Paris), 1663, petit in-8°. Nous croyions que la
+          bone ortografe avait été découverte de nos jours. On voit qu'il n'en est rien. Voir la
+          Mazarinade.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,6 +102,9 @@
           <term type="subgenre">burlesque</term>
           <term type="subgenre">satirique</term>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
     </profileDesc>
@@ -112,8 +114,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1" facs="https://gallica.bnf.fr/ark:/12148/btv1b8626232m/f11.highres"/>
+      <p><pb n="1" facs="https://gallica.bnf.fr/ark:/12148/btv1b8626232m/f11.highres"/>
         <lb/>LA
         <lb/>MAZARINADE
         <lb/>Ou
@@ -948,13 +949,9 @@
       <l>
         <lb/>’Onan maſturpateur inſigne,</l>
       <l>
-        <lb/>Bougre Docteur <foreign xml:lang="la">
-          <hi rend="it">in utroque</hi>
-        </foreign>,</l>
+        <lb/>Bougre Docteur <foreign xml:lang="la"><hi rend="it">in utroque</hi></foreign>,</l>
       <l>
-        <lb/>pipeur, Magiciin <foreign xml:lang="la">
-          <hi rend="it">quoque</hi>
-        </foreign>:</l>
+        <lb/>pipeur, Magiciin <foreign xml:lang="la"><hi rend="it">quoque</hi></foreign>:</l>
       <l>
         <lb/>ome aus Fames, é Fame aus Omes,</l>
       <l>
@@ -1168,7 +1165,7 @@
         <lb/>Arêt, ledit Cardinal Maſarin, sês paransé
         <lb/>domêſtiques Etrangérs, videront le Roiau
         <lb rend="¬" break="no"/>me de France, Téres é Places de l’obẽ̈ſſan
-        <lb rend="¬" break="no"/>reak="no"/>ce du Roi: E faute de ce faire, le-d
+        <lb rend="¬" break="no"/>reak="no"/&gt;ce du Roi: E faute de ce faire, le-d
         <lb rend="¬" break="no"/> ſé, ſera contre eus procédé extraôrdinaire¬
         <lb rend="¬" break="no"/>i mant, përmis aus Comunes, é tous autres,
         <lb/> de leur courir ſus, ſans qu’ils puiſſent reve

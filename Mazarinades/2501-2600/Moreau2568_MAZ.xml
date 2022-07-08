@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2568_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2568_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -58,20 +59,19 @@
             <measure unit="page" quantity="36"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49144</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49144" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49144"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11681</idno>
           </msIdentifier>
           <history>
             <provenance>
-              <stamp>True/False</stamp>
+              <stamp>True</stamp>
             </provenance>
           </history>
         </msDesc>
@@ -96,10 +96,18 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">2 états des p. 35 et 36 : chiffrées 13 et 14 (état A) ; chiffrées 35 et
+        <p source="Mazarine">2 états des p. 35 et 36 : chiffrées 13 et 14 (état A) ; chiffrées 35 et
           36 (état B). Autre édition (BM00291) : même adresse, même année, 31-[1 bl.] p. in-4.
           D'après Hubert Carrier, texte paru après la paix de Saint-Germain (Bibliothèque Mazarine,
           Ms 4682-4, f. 109v).</p>
+        <p source="Moreau">2568. Observations curieuses sur l'état et gouverne ment de France, avec
+          les noms, dignités et familles principales, comme il est en la présente année 1649,
+          nouvellement revue et augmentée (sic). Paris, Ger vais Allyot, Denys et Jacques Langlois ,
+          1649, 34 pages. La date de 1649 est probablement une erreur; au moins l'édi tion in-8°
+          est-elle de 1650, Gervais Allyot. C'est la première dont il soit parlé dans le privilége
+          du Véritable état du gouvernement de la France, première édition donnée en 1657 par
+          Nicolas Besogne, clerc de la chapelle du roi. Il y avait pourtant déjà un État de la
+          France, publié en 1649 pour l'année 1648, petit in-12, Sans Lieu</p>
       </abstract>
       <textClass>
         <keywords>
@@ -117,8 +125,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>OBSERVATIONS
         <lb/>CVRIEVSES.
         <lb/>SVR L'ESTAT
@@ -127,8 +134,7 @@
         <lb/>Auec les Noms, Dignitez &amp; Familles
         <lb/>principales,
         <lb/>Comme il eſt en la preſente annee 1649.
-        <lb/>Nouuellement reueuës &amp; augmentées.
-        <figure type="decoration"/>
+        <lb/>Nouuellement reueuës &amp; augmentées. <figure type="decoration"/>
         <lb/>A PARIS,
         <lb/>Chez GERVAIS ALLIOT, Marchand Libraire, proche la
         <lb/>Chappelle Sainct Michel, dans la Cour du Palais:
@@ -137,7 +143,8 @@
         <lb/>IACQUES LANGLOIS, Imprimeur du Roy, vis à vis la Fonteine
         <lb/>ſaincte Geneuiefue, à la Reine de Paix.
         <lb/>M. DC. XXXXIX.
-        <lb/><imprimatur>AVEC PERMISSION.</imprimatur>
+        <lb/>
+        <imprimatur>AVEC PERMISSION.</imprimatur>
         <pb n="10"/>
         <pb n="11"/>
         <lb/>aaaauut?

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau190_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau190_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -47,13 +48,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49250</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49250" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49250"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15376</idno>
@@ -85,9 +85,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mention de publication de l'acte le 20 avril 1651, signée "Caussan".
+        <p source="Mazarine">Mention de publication de l'acte le 20 avril 1651, signée "Caussan".
           Autre édition, à Paris (BM00900). L'arrêt est en réalité du 18 avril 1651. - Signé
           "Suau".</p>
+        <p source="Moreau">190. Arrêt de la cour de parlement de Bordeaux, portant qu’il sera
+          informé contre ceux qui font des brigues, pratiques et menées, pour le rétablissement du
+          duc d’Épernon dans le gouvernement de Guyenne. Du 10 avril 1651. Bordeaux, J. M.
+          Millanges, 1651, 8 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT

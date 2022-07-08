@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau158_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau158_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -51,13 +52,12 @@
             <measure unit="page" quantity="11"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49793</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49793" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49793"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14229</idno>
@@ -89,7 +89,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Hubert Carrier indique que l'édition originale de ce texte a paru la
+        <p source="Mazarine">Hubert Carrier indique que l'édition originale de ce texte a paru la
           même année à Bordeaux chez J. Millanges sous le titre "Arrest de la Cour de Parlement de
           Bourdeaux, Du 21. May 1649. Concernant la cassation des Ordonnances de Monsieur le Duc
           d'Espernon &amp; la radiation des qualités de Tres-haut &amp; Tres-puissant Prince, &amp;
@@ -98,6 +98,18 @@
           fait fabriquer sous son Effigie &amp;: armes, Nom &amp; qualitez." (Bibliothèque Mazarine,
           Ms. 4682-1, f. 91v ; Labadie, n° 35). Signé "De Laroche". Acte daté du 21 mai 1649.
           D'après H. Carrier, texte paru fin mai 1649.</p>
+        <p source="Moreau">158. Arrêt de la cour de parlement de Bordeaux , prononcé les chambres
+          assemblées, par lequel il est fait défenses, à monsieur d’Epernon, de faire fabriquer
+          monnaie avec son nom et effigie, et de prendre les qualités de très-haut et très-puissant
+          prince et d’altesse qu'il s’attribue, avec cassation de ses ordonnances. Paris, Claude
+          Morlot, jouxte la copie imprimée à Bordeaux chez Millanges, 1649, 11 pages. Daté du 21 mai
+          1649 (voir ci-après n° 178). Voici la description de la monnaie de M. d’Épernon, Elle
+          était frappée « sous le coing de son effigie d’un côté et de ses armes de l’autre côté,
+          avec les lettres de son nom et de ses qualités et de celle de prince de Buch dans le
+          cordon de ladite monnaie, faite au moulinet… de l’alloy des quarts de louis d’argent. » On
+          sait que le duc d’Épernon répondait que cette monnaie prétendue était simplement un jeton,
+          qui avait été frappé à son insu et qu’il avait reçu du parlement lui-même. L’arrêt est
+          rapporté dans l’Histoire des mouvements de Bordeaux.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -115,8 +127,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT DE

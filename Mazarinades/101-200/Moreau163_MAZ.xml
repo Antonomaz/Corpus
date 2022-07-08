@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau163_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau163_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -37,7 +38,9 @@
             du sieur duc d'Espernon, à peine de privation de noblesse, &amp; autres plus grandes
             peines portées par ledit arrest.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-08-19">édition de Bordeaux parue le 19 août
             1649</date>
@@ -45,13 +48,12 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49803</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49803" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49803"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14232</idno>
@@ -83,10 +85,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Édition originale publiée par J. Mongiron Millanges à Bordeaux
+        <p source="Mazarine">Édition originale publiée par J. Mongiron Millanges à Bordeaux
           (Labadie, n° 52). Signé "Depontac". Acte daté du 16 août 1649. D'après Hubert Carrier,
           texte de l'édition bordelaise paru le 19 août 1649 (Bibliothèque Mazarine, Ms. 4682-1, f.
           94v).</p>
+        <p source="Moreau">163. Arrêt de la cour de parlement de Bordeaux, portant inhibitions et
+          défenses, à tous les gentilshommes de ce ressort, de porter les armes à la suite du sieur
+          duc d'Épernon, à peine de privation de noblesse et autres plus grandes peines, portées par
+          ledit arrêt. Sans Lieu, Jouxte la copie imprimée à Bordeaux, 1649, 6 pages. Daté du 16
+          août 1649 et publié le 19.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PALEMENT

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1650_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1650_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -49,13 +50,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48872</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48872" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48872"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13058</idno>
@@ -87,9 +87,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Drazor est l'anagramme de Rozard d'après Célestin Moreau. Texte paru
+        <p source="Mazarine">Drazor est l'anagramme de Rozard d'après Célestin Moreau. Texte paru
           durant le blocus de Paris d'après Hubert Carrier (Bibliothèque Mazarine, Ms 4682-3, f.
           83v).</p>
+        <p source="Moreau">1650. Histoire tragique de trois magisiens (sic), qui ont accusé à la
+          mort Mazarin, en Italie, par le sieur H. R. Drazor, Champenois. Paris, François Musnier,
+          1649, 7 pages. Cela est odieux; mais il faut dire que le sieur Drazor ne dé ment pas le
+          proverbe. .</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>HISTOIRE TRAGIQVE
         <lb/>DE TROIS
         <lb/>MAGISIENS

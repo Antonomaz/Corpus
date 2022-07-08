@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau806_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau806_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -57,7 +58,9 @@
             qu'il est à propos qu'on supplie tres humblement la Reyne, de se retirer dans son
             apanage.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-06-01" notAfter="1652-06-07">première semaine de
             juin 1652</date>
@@ -65,13 +68,12 @@
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50002</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50002" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50002"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12699</idno>
@@ -103,7 +105,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Avertissement au lecteur dans lequel l'auteur récuse la paternité de
+        <p source="Mazarine">Avertissement au lecteur dans lequel l'auteur récuse la paternité de
           trois libelles : "La discussion" (BM01264), "Les cautèles de la paix..." (BM01263) et "Le
           Caton François" (BM00590). Édition composite formée à partir des 3 états du premier cahier
           (non signé ou A), 5 états du cahier B, 4 états du C et 2 états du D identifiables
@@ -121,6 +123,18 @@
           chiffrée 19 et p. 19 chiffrée 16 (BM01080). Par Claude Du Bosc de Montandré, d'après
           Célestin Moreau. D'après Hubert Carrier, texte paru la première semaine de juin 1652
           (Bibliothèque Mazarine, Ms. 4682-2, f. 102v).</p>
+        <p source="Moreau">806. Coup (le) de partie qui consiste à faire un régent, jusqu’à ce que
+          le roi soit pleimement désabusé des mau- vaises impressions que le Mazarin lui donne, où
+          l’on voit, dans une agréable méthode et par les preuves de la raison et de l’histoire, 1°
+          en combien d’occasions et de rencontres on a vu des régents dans l’État; 2° quelles sont
+          les personnes qu’on doit choisir pour cette dignité, et qui est-ce qui a le droit de
+          choisir; 3° que toutes les raisons qu'on pent avoir pour l'éta- blissement d’un régent, se
+          rencontrent aujourd’huy, et que les personnes qu'on doit choisir pour la régence, et qui
+          ont droit d'en faire le choix , sont dans le parti contraire à celui de l’ennemi de
+          l’État; 4° qu’à moins de procéder bientôt à l’établissement d’un régent , on ne terminera
+          jamais les désordres qu'avec la dernière désolation de cet État, qui ne s'ensuivra pas
+          moins de la paix et de la guerre ; 5° et qu’il est à propos qu’on supplie très-humblement
+          la reine de se retirer dans son apanage. (S. 1.), 1652, 20 pages. Dubosc Montandré.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -140,8 +154,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE COVP
         <lb/>DE
         <lb/>PARTIE
@@ -165,8 +178,7 @@
         <lb/>paix que de la guerre.
         <lb/>V. Et qu'il eſt à propos qu'on ſupplie tres-humblement la Reyne,
         <lb/>de ſe retirer dans ſon apanage.
-        <lb/>M. DC. LII.
-        <pb n="10"/>
+        <lb/>M. DC. LII. <pb n="10"/>
         <lb/>ADVERTISSEMENT
         <lb/>au Lecteur.
         <lb/>MON cher Lecteur, on vous a preſenté

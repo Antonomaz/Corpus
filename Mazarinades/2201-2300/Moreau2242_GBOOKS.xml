@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2242_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2242_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -44,7 +40,7 @@
             </persName>
           </author>
           <persName role="recipient">
-            <name>Gaultier</name>
+            <surname>Gaultier</surname>
           </persName>
           <title source="Moreau">Lettre interceptée de M. Servien à M. Gaultier, avec la Réponse
             contre ladite lettre.</title>
@@ -60,12 +56,11 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309733</idno>
@@ -97,7 +92,10 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2242. Lettre interceptée de M. Servien à M. Gaultier, avec la Réponse
+          contre ladite lettre. Paris, S, de Larru, 1652, 6 pages. Rare. Datée de Pontoise, le 7
+          août. M. Gaultier était un agent de la cour à Paris.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,6 +104,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -121,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>0
         <lb/>LETTRE
         <lb/>INTERCEPTE’E
@@ -132,8 +132,7 @@
         <lb/>
         <lb/> EAIS
         <lb/>cae eupe eees e euau
-        <lb/>Aec Permiſionx.
-        <pb n="2"/>
+        <lb/>Aec Permiſionx. <pb n="2"/>
         <lb/>
         <lb/>
         <lb/>
@@ -142,8 +141,7 @@
         <lb/>¬.
         <lb/>a,
         <lb/> -
-        <lb/>ooaaGot
-        <pb n="3"/>
+        <lb/>ooaaGot <pb n="3"/>
         <lb/>9t0.
         <lb/>l ei i e
         <lb rend="¬" break="no"/>at,
@@ -172,8 +170,7 @@
         <lb/>vous pouuez auoir pour Moſieur le Prince;
         <lb/>Vous continuerez, s’il vous piſt, à parler
         <lb/>hautement dans le Palais pour la cauſe du
-        <lb/>A’¬
-        <pb n="4"/>
+        <lb/>A’¬ <pb n="4"/>
         <lb/>
         <lb/>’oya Cmmevounauez fait inſqus à pre
         <lb rend="¬" break="no"/> pre ſuiuaheles ntruooas qul vouis om
@@ -202,8 +199,7 @@
         <lb/>2.
         <lb/> .LL e pu2i
         <lb/>
-        <lb/>Reſponf
-        <pb n="5"/>
+        <lb/>Reſponf <pb n="5"/>
         <lb/>5
         <lb/>4 da&amp;a
         <lb/>t e tee e?
@@ -227,8 +223,7 @@
         <lb rend="¬" break="no"/>d’vn Eſtranger, declareé Perturbateur du re
         <lb rend="¬" break="no"/> pos public &amp; ennemy de l’Eſtat, &amp; qui s’eſt
         <lb/>emparé de la perſonne du Roy &amp; le detient
-        <lb/>priſonnier; Ils ſçauent auſſi que les mau¬
-        <pb n="6"/>
+        <lb/>priſonnier; Ils ſçauent auſſi que les mau¬ <pb n="6"/>
         <lb/>uuis Miniſtres ont accouſtumé de ſe ſeir
         <lb/>u nom du Roy pour ſouſenir leuis peni
         <lb rend="¬" break="no"/>ceux deſſems, qui vont touſiours à leur pro

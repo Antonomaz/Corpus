@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau723_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau723_GALL">
   <teiHeader xml:lang="fr">
     <fileDesc>
       <titleStmt>
@@ -10,24 +10,18 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
           <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="Corrector">Hip Amélie
-            <affiliation>
-              <roleName type="status">Vacataire</roleName>
-            </affiliation>
+          <persName role="Corrector">Hip Amélie <affiliation><roleName type="status"
+                >Vacataire</roleName></affiliation>
           </persName>
         </respStmt>
       </titleStmt>
@@ -47,17 +41,19 @@
           <title source="Moreau">Comparaison (la) des comparaisons aux Mazarins, burlesque fait à
             Descain (sic).</title>
           <pubPlace ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1652">1652</date>
           <extent>
             <measure unit="page" quantity="23"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque nationale de France</institution>
             <repository>Département Littérature et art</repository>
             <idno type="cote">YE-2351</idno>
@@ -89,8 +85,9 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BnF_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">723. Comparaison (la) des comparaisons aux Mazarins, burlesque fait à
+          Descain (sic). Paris, 1652, 23 pages. Contrefacon de l’Icare sicilien.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,6 +96,9 @@
           <term type="subgenre">burlesque</term>
           <term type="subgenre">satirique</term>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
     </profileDesc>
@@ -196,15 +196,7 @@
         <lb/>le chemin par lequel ils doiuent marcher, car ie leur diray
         <lb/>comme Dedale diſoit à ſon fils,</p>
       <p rend="indent">
-        <lb/>--<foreign xml:lang="la">
-          <hi rend="it">Medio</hi>
-        </foreign>
-        <foreign xml:lang="la">
-          <hi rend="it">tutiſsimus</hi>
-        </foreign>
-        <foreign xml:lang="la">
-          <hi rend="it">ibis</hi>
-        </foreign>.</p>
+        <lb/>-- <hi rend="it">Medio</hi><hi rend="it">tutiſsimus</hi><hi rend="it">ibis</hi> .</p>
       <p>
         <lb rend="indent"/>Vn voyageur qui rencontre en vn Carrefour trois che
         <lb break="no" rend="¬"/>mins qui le font douter, lequel il doit ſuiure, ne ſe deſtour
@@ -264,24 +256,12 @@
         <lb/>qu'à vous. Ie remarque à cét endroit ceque le Poëte a eu rai
         <lb break="no" rend="¬"/>ſon de dire que Dedale ſe retira, vers l'Occident,
         <lb rend="indent"/>
-        <foreign xml:lang="la">
-          <hi rend="it">Chalcidicaque</hi>
-        </foreign>
-        <foreign xml:lang="la">
-          <hi rend="it">leuis</hi>
-        </foreign>
-        <foreign xml:lang="la">
-          <hi rend="it">ſumma</hi>
-        </foreign>
-        <foreign xml:lang="la">
-          <hi rend="it">ſuper</hi>
-        </foreign>
-        <foreign xml:lang="la">
-          <hi rend="it">aſtitit</hi>
-        </foreign>
-        <foreign xml:lang="la">
-          <hi rend="it">arce</hi>
-        </foreign>,
+        <hi rend="it">Chalcidicaque</hi>
+        <hi rend="it">leuis</hi>
+        <hi rend="it">ſumma</hi>
+        <hi rend="it">ſuper</hi>
+        <hi rend="it">aſtitit</hi>
+        <hi rend="it">arce</hi> ,
         <lb rend="indent"/>Pour faire voir que Dedale à la verité, par ſon bel eſprit, ſe
         <lb/>retiroit de chez eux, des embuſches que Minos luy auoit dreſ
         <lb break="no" rend="¬"/>ſées, mais auſſi, qu'il entroit par ce moyen dans vn perpetuel
@@ -421,13 +401,9 @@
       <l>
         <lb/>L'on ne parle point de la mere,</l>
       <l>
-        <lb/>Elle eſtoit dé-ja <foreign xml:lang="la">
-          <hi rend="it">adpatres</hi>
-        </foreign>,</l>
+        <lb/>Elle eſtoit dé-ja <foreign xml:lang="la"><hi rend="it">adpatres</hi></foreign>,</l>
       <l>
-        <lb/>En Sicile faiſoient <foreign xml:lang="la">
-          <hi rend="it">flores</hi>
-        </foreign>;</l>
+        <lb/>En Sicile faiſoient <foreign xml:lang="la"><hi rend="it">flores</hi></foreign>;</l>
       <l>
         <lb/>Les plus rafinez de cette Iſle</l>
       <l>
@@ -890,16 +866,9 @@
         </foreign>
       </l>
       <l>
-        <lb/>
-        <foreign xml:lang="la">
-          <hi rend="it">Nominibus</hi>
-        </foreign>
-        <foreign xml:lang="la">
-          <hi rend="it">ſecit</hi>
-        </foreign>
-        <foreign xml:lang="la">
-          <hi rend="it">aquas</hi>
-        </foreign>.</l>
+        <lb/><foreign xml:lang="la"><hi rend="it">Nominibus</hi></foreign><foreign xml:lang="la"><hi
+            rend="it">ſecit</hi></foreign><foreign xml:lang="la"><hi rend="it"
+        >aquas</hi></foreign>.</l>
       <l rend="indent">
         <lb/>Si cette cheute fut affreuſe,</l>
       <l>
@@ -1305,15 +1274,9 @@
       <l>
         <lb/>Pour auoir, eſtant treſpaſſé</l>
       <l>
-        <lb/>Vn <foreign xml:lang="la">
-          <hi rend="it">Requieſcat</hi>
-        </foreign>
-        <foreign xml:lang="la">
-          <hi rend="it">in</hi>
-        </foreign>
-        <foreign xml:lang="la">
-          <hi rend="it">pace</hi>
-        </foreign>,</l>
+        <lb/>Vn <foreign xml:lang="la"><hi rend="it">Requieſcat</hi></foreign><foreign xml:lang="la"
+            ><hi rend="it">in</hi></foreign><foreign xml:lang="la"><hi rend="it"
+        >pace</hi></foreign>,</l>
       <l>
         <lb/>Ioüir de l'éternelle Gloire</l>
       <l>

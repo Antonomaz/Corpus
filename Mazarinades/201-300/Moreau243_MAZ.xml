@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau243_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau243_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -37,20 +38,21 @@
             matieres que de celles à eux attribuées par les edicts du Roy, verifiez en ladite Cour.
             Du huictiéme fevrier mil six cens quarente-neuf.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-02-09">9 février 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49927</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49927" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49927"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14456</idno>
@@ -82,8 +84,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Signé "Du Tillet". D'après Hubert Carrier, texte paru le 9 février 1649
+        <p source="Mazarine">Signé "Du Tillet". D'après Hubert Carrier, texte paru le 9 février 1649
           (Bibliothèque Mazarine, Ms. 4682-1, f. 120v).</p>
+        <p source="Moreau">243. Arvrêt de la cour de parlement, portant défenses, aux officiers du
+          présidial , pfévôté, maire et échevins d'Orléans, de connaître et juger d’autres matières
+          que de celles à eux attribuées par les édits du roi, vérifiés en ladite cour. Du 8 février
+          1649, Paris, par les im- primeurs et libraires ordinaires du roi, 1649, 4 pages. Le
+          présidial avait enregistré, est-il dit dans l’arrét du parlement, un arrêt du conseil qui
+          donnait, aux presidiaux, pouvoir de juger souverainement toutes les affaires dc leur
+          ressort. Je ne sais si cet arrét a été imprimé. Je ne l’ai pas vu, et le Jowrnal du
+          Parlement n’en donne pas la date ; mais il y a une Déclaration du roï en date du 22
+          janvier. Le parlement n’avait-il rendu son arrêt que sur la rumeur publique?</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,8 +112,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>Arreſt de la Cour
         <lb/>DE PARLEMENT
         <lb/>PORTANT DEFENSES AVX
@@ -116,7 +126,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordinai¬
         <lb/>res du Roy.
         <lb/>M. DC. XLI.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

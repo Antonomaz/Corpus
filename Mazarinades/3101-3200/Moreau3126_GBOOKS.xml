@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3126_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3126_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -52,11 +48,11 @@
             <measure unit="page" quantity="15"/>
           </extent>
           <note type="format">in-4 218 mm</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 311158</idno>
@@ -88,9 +84,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Rel. à la suite de 311.104 : Paris (Parl.).- Actes (1649 (21
-          janv)).- (Paris, 1649).- 4̊</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Rel. à la suite de 311.104 : Paris (Parl.).- Actes (1649 (21 janv)).-
+          (Paris, 1649).- 4̊</p>
+        <p source="Moreau">3126. Relation de ce qui s'est passé en la dernière as semblée du
+          Parlement, le deuxième jour de ce mois (août 1651 ). Paris-, Nicolas Vivenay, 1651 , 1 5
+          pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,6 +98,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -114,8 +117,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>RELATION
         <lb/>DE CE QVI S’EST PASSE
         <lb/>EN LA DERNIERE
@@ -129,8 +131,7 @@
         <lb/>A PARIS.
         <lb/>Chez NCOLAS VIVENAY,
         <lb/>en ſaPoutiqueau PalaiS¬
-        <lb rend="¬" break="no"/>M. DC. L1.
-        <pb n="2"/>
+        <lb rend="¬" break="no"/>M. DC. L1. <pb n="2"/>
         <lb/>1
         <lb/>a:
         <lb/> :
@@ -145,8 +146,7 @@
         <lb/>Ee
         <lb/> . !
         <lb/>1
-        <lb/> amda
-        <pb n="3"/>
+        <lb/> amda <pb n="3"/>
         <lb/>dſttptſpſtſtſdltljſjltjt
         <lb/>RELATION
         <lb/>r
@@ -167,8 +167,7 @@
         <lb/>Vous ſçaurez done, que le Palement
         <lb/>s’eſtantaſſemblé le deuxiecme d’Aouſt, pour
         <lb/> entendre la reſponce de la Reyne auec in
-        <lb rend="¬" break="no"/> A ij
-        <pb n="4"/>
+        <lb rend="¬" break="no"/> A ij <pb n="4"/>
         <lb/>4
         <lb/>tances qui luy auoient eſfé faices de la part
         <lb/>de cette Cõpagnie, à̀ l’effect que l’éloigne
@@ -195,8 +194,7 @@
         <lb/>auec veriteé &amp; ſans feintiſe les Sieurs Ser
         <lb rend="¬" break="no"/>uient, le Tellier, &amp; Lyonne, que Mon
         <lb rend="¬" break="no"/>ſieur le Priace retoureroit au pluftoſt
-        <lb/>pres
-        <pb n="5"/>
+        <lb/>pres <pb n="5"/>
         <lb/>ptés du Roy, ainſi qu’il en auoit aſſeuré́ pat
         <lb/>les lettres la Compagnie. Que neantmoins
         <lb/>il y auoit trois iours qu’il eſtoit dans Paris,
@@ -223,8 +221,7 @@
         <lb rend="¬" break="no"/>ne la pefection a cét oumagei precieux
         <lb/>de I’Vniode la Maion Ro alle tat deſie
         <lb/>réc &amp; ſi neceſlaupou, l’aiſermiſſemende,
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/>’authorité́ du Roy dans ſon Eſtat, &amp; qu’il
         <lb/>pouuoitdire en vn mot, eſtre la ſource fœ
         <lb rend="¬" break="no"/>onde de la fœiité publique. Mais que
@@ -249,8 +246,7 @@
         <lb/>Et par ce qu’auſi Monſieur le premier
         <lb/>Preſident auoir adiouſté à la Relation de
         <lb/>Monſieur le Chanceler, que le vœu de la
-        <lb/>oompagnie eſtoit, que Monſieur le Ptince!
-        <pb n="7"/>
+        <lb/>oompagnie eſtoit, que Monſieur le Ptince! <pb n="7"/>
         <lb/>35
         <lb/>vit au pluſtſt leuirs Maieſt́s, pour ſarisfai
         <lb rend="¬" break="no"/>re au deuoir de ſa naiſſance, &amp; leuecr tous
@@ -277,8 +273,7 @@
         <lb/>commece d’hommes, &amp; de lettes qui s’en-
         <lb/>tretenoient nonobſtant toutes les Decla
         <lb rend="¬" break="no"/>rations fates au Pa lement; deſigna meſ-
-        <lb/>alesnqmés Bertet, Fouquet, Rache
-        <pb n="8"/>
+        <lb/>alesnqmés Bertet, Fouquet, Rache <pb n="8"/>
         <lb/>&amp; Ciron, comê avant fait pluſleurs voya
         <lb rend="¬" break="no"/>ges à Cologne, d’où Berthet eſtoit nouuel
         <lb rend="¬" break="no"/>lement reuenu pour la ſeconde fois; que
@@ -303,8 +298,7 @@
         <lb/>auoit publieé ſur le ſubiet de ſa promenade
         <lb/>au couts, quoy que ce fut voe renconte
         <lb/>impreueueë, &amp; laquelle au temps qu’il eut
-        <lb/>aduis de la venue du oy, il ne pouuoi
-        <pb n="9"/>
+        <lb/>aduis de la venue du oy, il ne pouuoi <pb n="9"/>
         <lb/>.2. LL¬-a.¬¬.
         <lb/>eéuiter ſans paroiſtre criminel; &amp; aux
         <lb/>bruits que l’on ſemaoit dans Paris, qu’il
@@ -331,8 +325,7 @@
         <lb/>dit des voyages de Cologne, &amp; du Ma
         <lb rend="¬" break="no"/>riage de Monſieur de Merecœur: Et qu’il
         <lb/>eſtoit neceſſaire de pouruoir à la ſeureté
-        <lb/>C
-        <pb n="10"/>
+        <lb/>C <pb n="10"/>
         <lb/> 10
         <lb/>publique par de bons advis, contre ceux
         <lb/>qui entretenoient des intelligences auec
@@ -357,8 +350,7 @@
         <lb/>point de reſpect enuers le Roy &amp; la Rey
         <lb rend="¬" break="no"/>ne, &amp; qu’il n’en manqueroit jamais; &amp;
         <lb rend="¬" break="no"/> que perſonne ne luy pouuoir faire de le
-        <lb rend="¬" break="no"/>con ſur ce ſuijet, Que ſon Alteſſe Royale en
-        <pb n="11"/>
+        <lb rend="¬" break="no"/>con ſur ce ſuijet, Que ſon Alteſſe Royale en <pb n="11"/>
         <lb/>ar.,,
         <lb/>¬-.
         <lb/>11
@@ -385,8 +377,7 @@
         <lb/>qui eſtoit aà̀ faire en cette occurrance: En
         <lb/>ſuitte, Meſſieurs les Gens du Roy ayant
         <lb/>eſté mandez, &amp; ayans donné leurs conclu
-        <lb rend="¬" break="no"/>ſions; L’Arreſt a eſté formé preſque par
-        <pb n="12"/>
+        <lb rend="¬" break="no"/>ſions; L’Arreſt a eſté formé preſque par <pb n="12"/>
         <lb/>2
         <lb/>12
         <lb/>les communs conſentemens, ſuiuant l’ad
@@ -441,8 +432,7 @@
         <lb rend="¬" break="no"/>deuable de l’eſloignement du Cardinal
         <lb rend="¬" break="no"/> Mazarin, lequel eſtant important à la tén
         <lb rend="¬" break="no"/>quillité publique, d’aſleurospar toutesſor
-        <lb/>d
-        <pb n="14"/>
+        <lb/>d <pb n="14"/>
         <lb/>14
         <lb/>tes demoyens les Gens de bien ſe promet
         <lb rend="¬" break="no"/>tent qu’il employera toute ſon Authorité,
@@ -467,8 +457,7 @@
         <lb/>reſpect qu’l doit aux volontez de ſon Al
         <lb rend="¬" break="no"/>reſſe Royale, ſuiuies des vœux du Parle
         <lb rend="¬" break="no"/>néût, à̀ la iuſte crainte que tant de ſoup
-        <lb rend="¬" break="no"/>gons deuoient raiſonaablement imprimer
-        <pb n="15"/>
+        <lb rend="¬" break="no"/>gons deuoient raiſonaablement imprimer <pb n="15"/>
         <lb/>15
         <lb/>dans ſon eſprit, eſt auiourdhuy allé auec
         <lb/>Monſieur le Duc d’Orleans au Palais

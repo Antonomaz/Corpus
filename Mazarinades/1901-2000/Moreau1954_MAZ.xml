@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1954_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1954_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -46,7 +47,9 @@
             monsieur le Prince ; &amp; pour emprisonner messieurs les princes de Condé &amp; de
             Conty, &amp; monsieur le duc de Longueville.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" notBefore="1650-05-21" notAfter="1650-05-31">dernière semaine de
             mai 1650</date>
@@ -54,13 +57,12 @@
             <measure unit="page" quantity="1"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48986</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48986" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48986"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11240</idno>
@@ -92,10 +94,36 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Également publié sous le titre: "Journal de la lettre de la princesse
+        <p source="Mazarine">Également publié sous le titre: "Journal de la lettre de la princesse
           douairière de Condé". Signé "C. de Montmorancy", mais Célestin Moreau doute qu'elle soit
           l'auteur réel Lettre datée de Chilly, le 16 mai 1650, texte paru dans la dernière semaine
           de mai 1650 d'après H. Carrier (Bibliothèque Mazarine, Ms 4682-3, f. 197v)</p>
+        <p source="Moreau">1954. Lettre de madame la princesse douairière de Condé présentée à la
+          reine régente, contenant tous les moyens dont le cardinal Mazarin s'est servi pour em
+          pêcher la paix, pour ruiner le Parlement et le peuple de Paris, pour tâcher de perdre M.
+          le duc de Beau fort, M. le coadjuteur, M. de Brousselles (sic) et M. le président Charton
+          par l'assassinat supposé contre la personne de M. le Prince, et pour emprisonner mes
+          sieurs les princes de Condé et de Conty et M. le duc de Longueville.Sans Lieu, 1650, 57
+          pages. Datée de Chilly, le 16 mai. Guy Patin écrit à Spon, sous la date du 14 juin 1650,
+          tome Ier, page 313 : « Le même jour (2 juin) ont été emprisonnés deux im primeurs qui
+          vendoient un nouveau libelle intitulé : Lettre de madame la Princesse à la reine, qui est
+          un libelle de quinze cahiers, une demi-feuille, entièrement contre le Mazarin. » Malgré
+          l'in exactitude du titre, il est certain que dans ce fragment il s'agit de la lettre qui
+          fait le sujet de cet article. Villefore croit que la princesse douairière composa cette
+          lettre elle-même : « Elle fit, dit-il (Véritable vie de laduchesse de Lon gueville , p.
+          141, du 1er vol.); elle fit, pendant les deux ou trois jours qu'on lui laissa passer à
+          Chilly, une longue lettre pour la reine, dans laquelle on voit un ample détail de ses
+          malheurs et des persécutions qu'elle a souffertes. Cette lettre, qui est éloquente et
+          pathétique, mérite que l'on en rapporte quelques endroits. » Et, en effet, il en cite
+          trois ou quatre passages assez remarquables. On peut croire que la princesse n'a ni écrit
+          ni dicté la lettre ; mais on ne peut pas douter qu'elle n'en ait fourni les matériaux.
+          Aussi est-ce une des pièces les plus intéressantes et les plus cu rieuses. Elle contient
+          des anecdotes qu'on chercherait inutilement ailleurs ; par exemple, Bragelogne, enseigne
+          des gardes du corps, essaya de briser le cercueil de mademoiselle de Dunois, morte de puis
+          peu, et exposée dans la chapelle de Chantilly pour être trans portée aux Carmélites de
+          Paris. Mazarin autorisait les galères du roi à exercer la piraterie dans la Méditerranée.
+          Il faut bien qu'elles vivent, disait-il. La Lettre a paru presque en même temps sous le
+          titre de : Jour nal de la lettre de la princesse douairière de Condé, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -120,8 +148,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE DE MADAME
         <lb/>la Princeſſe Doüairiere de Condé, preſentée
         <lb/>à̀ la Reine Regente.

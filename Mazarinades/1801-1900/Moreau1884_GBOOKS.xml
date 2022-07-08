@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1884_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1884_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -48,18 +44,19 @@
             avec l'instruction secrète du cardinal Mazarin pour Zongo Ondedei, retournant à
             Paris.</title>
           <pubPlace>Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1651">1651</date>
           <extent>
             <measure unit="page" quantity="11"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 311467</idno>
@@ -91,7 +88,10 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1884. Lettre d'un marchand de Liège à un sien corres pondant de Paris,
+          avec l'instruction secrète du cardi nal Mazarin pour Zongo Ondedei, retournant à Paris.
+          Sans Lieu, 1651, 11 pages. Curieuse, mais assez commune. Datée de Liége, le 10 août.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,6 +100,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -115,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>I E1
         <lb rend="¬" break="no"/>
         <lb/>H
@@ -131,8 +133,7 @@
         <lb/>VEC LINSTRVCTION SECRETTE
         <lb/> oud uee nui pner e oudu
         <lb/>
-        <lb/> C. L1.
-        <pb n="2"/>
+        <lb/> C. L1. <pb n="2"/>
         <lb/>1
         <lb/>i
         <lb/>
@@ -149,8 +150,7 @@
         <lb/>a
         <lb rend="¬" break="no"/>i.
         <lb/>aa
-        <lb/>l! a.
-        <pb n="3"/>
+        <lb/>l! a. <pb n="3"/>
         <lb/> 3
         <lb/>::,
         <lb/>&amp;’e: e:pe:eû
@@ -175,8 +175,7 @@
         <lb/>1651.
         <lb/> Voſtre bien afſe ctionné
         <lb/> ſeruiteur &amp; bon amy.
-        <lb/> I.D.
-        <pb n="4"/>
+        <lb/> I.D. <pb n="4"/>
         <lb/>ee ee e : eAe e
         <lb/>INSTRVCTION PoVR oNG0
         <lb/> Oudedei retournanrt à Paris.
@@ -206,8 +205,7 @@
         <lb/>que ſa Majeſté m’auoit donneées de mon retour par les
         <lb/>deux derniers Couriers qu’elle m’a fait l’honneur de
         <lb/>m’enuoyer, il luy dira qu’ayant long-temps medité́ ſur
-        <lb/>lHes
-        <pb n="5"/>
+        <lb/>lHes <pb n="5"/>
         <lb/>1
         <lb/>lesmoyens aec leſquels on peut plus facilement de.
         <lb/>ſtruire tous ces empeſchemens; i’ay crû qu’il n’y en
@@ -240,8 +238,7 @@
         <lb rend="¬" break="no"/>derau public que c’eſt pour remplir ma place, luydon
         <lb rend="¬" break="no"/>ner la qualité́ de premier Miniſtre;, mais cependant il
         <lb rend="¬" break="no"/>neluy faudra laiſſer que la ſeule apparence de la con
-        <lb rend="¬" break="no"/>B
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>B <pb n="6"/>
         <lb/> 6
         <lb/>fiance &amp; du credit que la Reyne ne peut donner à
         <lb/>d’autre qu’à moy, ſans hazard de le perdre.
@@ -273,8 +270,8 @@
         <lb/>au Roy pour ſa fidelite, apres cette double Alliance, ie
         <lb/>le pourray faire rentrer dans Sedan. Et dautant que la
         <lb/>Reyne trouuera peut-eſtre ces cõditions trop avanta
-        <lb rend="¬" break="no"/>geuſes, il faudra faire connoiſtre à̀ ſa Majeſté qu’il ſen
-        <pb n="7"/>
+        <lb rend="¬" break="no"/>geuſes, il faudra faire connoiſtre à̀ ſa Majeſté qu’il ſen <pb
+          n="7"/>
         <lb/>r
         <lb/>2
         <lb/>7
@@ -309,8 +306,7 @@
         <lb rend="¬" break="no"/>rier que de ſept ou huict ans.
         <lb/>8. La Reynecofiera le ſecret de cette negociation au
         <lb/>areſchal de Villeroy, &amp; pour le fair retourner dans
-        <lb/>a ¬
-        <pb n="8"/>
+        <lb/>a ¬ <pb n="8"/>
         <lb/>.
         <lb/>s8
         <lb/>mes intereſts, il ſera fort à̀ propos que ſa ajeſtéluy.
@@ -344,8 +340,7 @@
         <lb/>eſté conuoquez, &amp; reſiſtera à toutes les demandes qui
         <lb/>luy ſeront faites pour le changement du lieu.
         <lb/>11. Il faudra en cét endroit faire conſiderer à laRoye
-        <lb/>que
-        <pb n="9"/>
+        <lb/>que <pb n="9"/>
         <lb/>S
         <lb/>queſi l’Aſſemblee ſe ient dans vne petite Ville, il luy
         <lb/>ſera facile d’intimider les Deputez, &amp; de leur fermér
@@ -379,8 +374,7 @@
         <lb rend="¬" break="no"/>geà diſtribuer: &amp; cependant les prometre dela part
         <lb/> s ,
         <lb rend="¬" break="no"/>2
-        <lb/> a...
-        <pb n="10"/>
+        <lb/> a... <pb n="10"/>
         <lb/>
         <lb rend="¬" break="no"/>10
         <lb/>de la Reyne &amp; de la mienne, à chacun des Deputez en
@@ -413,8 +407,7 @@
         <lb/>peut allarmer les Eſprirs il faudra en meſme temps en
         <lb rend="¬" break="no"/>uoyer des Manifeſtes dans les Provinces, &amp; des Lét
         <lb rend="¬" break="no"/>tres aux Parlemens, pour retenir les Compagnies &amp;
-        <lb/>Amaaala2L.
-        <pb n="11"/>
+        <lb/>Amaaala2L. <pb n="11"/>
         <lb/>i11
         <lb rend="¬" break="no"/>les Peuples; &amp; leur faire entendre que le Roy, pour le
         <lb/>reſtabliſſement de ſon Autlhorité &amp; du repos public,

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2440_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2440_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -33,7 +34,9 @@
             secretaire L. F. Avec l'oraison qu'il à [sic] composée, pour la reciter quand il sera
             sur l'eschaffaut.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-08-01">dernière semaine de juillet ou 1er août
             1649</date>
@@ -41,13 +44,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49098</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49098" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49098"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13499</idno>
@@ -79,9 +81,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">2 états (A/B) : p. 3 l. 19, "Mere" / "Mer". Texte paru la dernière
+        <p source="Mazarine">2 états (A/B) : p. 3 l. 19, "Mere" / "Mer". Texte paru la dernière
           semaine de juillet ou le 1er août 1649 d'après Hubert Carrier (Bibliothèque Mazarine, Ms
           4682-4, f. 44v).</p>
+        <p source="Moreau">2440. Méditations du cardinal Mazarin, données au pu blic par son
+          sécrétaire, L. F., avec l'oraison qu'il a composée pour la réciter quand il sera sur
+          l'échafaud. Sans Lieu, 1649,7 pages. Je ne crois pas que cela soit commun ; mais quel
+          intérêt? ou quel mérite ?</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,8 +104,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>MEDITATIONS
         <lb/>DV CARDINAL
         <lb/>MAZARIN

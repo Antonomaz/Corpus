@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1674_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1674_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,19 +43,20 @@
           <title source="Mazarine">Icon tyranni, in invectiva contra Mazarinum, expressa et
             aucta.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="28"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49968</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49968" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49968"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13072</idno>
@@ -86,7 +88,7 @@
         <language ident="lat">Document en latin</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Épître dédicatoire à Armand de Bourbon, prince de Conti, signée "M. D.
+        <p source="Mazarine">Épître dédicatoire à Armand de Bourbon, prince de Conti, signée "M. D.
           B.". Autres éditions : en 20 p. (BM00491) ; en 19 p. (BM00551) ; en 28 p. dédiée au
           Parlement (Moreau, 2e supplément, n° 100) ; sans lieu, 1649 ; dans un recueil éditorial
           intitulé "Recueil de diverses pieces. Qui ont paru durant les mouvemens derniers de
@@ -94,6 +96,15 @@
           Le tableau du tyran Mazarin" (BM00069). Par Du Bosc de Montandré, d'après Hubert Carrier,
           "La presse de la Fronde (1648-1653) : les Mazarinades", Genève, 1991, t. 2, p. 51.
           L'ouvrage est attribué à tort à Matthieu Du Bos par Célestin Moreau.</p>
+        <p source="Moreau">1674. Icon tyranni in invectiva contra Mazarinum ex pressa. Parisiis,
+          1649, 20 pages. Du commencement de la Fronde, puisque le duc d'Elbeuf était alors
+          généralissime. Bonne latinité; de la verve et quelquefois de l'éloquence. La première
+          édition est dédiée au Parlement ; la seconde, un peu augmentée , au prince de Conty.
+          Celle-ci est encore de 1649, mais sans nom de lieu. Elle ajoute au titre : Et aucta. Elle
+          a 28 pages. Les deux épîtres dédicatoires sont signées M. D. B. (Mathieu Du Bos). C'est
+          sur la première édition que la traduction a été faite. Elle est au moins médiocre. Du Bos
+          s'en est plaint vi vement : il a dit quelque part que le traducteur avait fait de son
+          pamphlet une pièce de carnaval.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -110,14 +121,12 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ICON TYRANNI
         <lb/>IN INVECTIVA
         <lb/>CONTRA MAZARINVM
         <lb/>EXPRESSA ET AVCTA.
-        <lb/>M.DC. XLIX. <pb n="10"/>
-        <pb n="11"/>
+        <lb/>M.DC. XLIX. <pb n="10"/><pb n="11"/>
         <lb/>Potpſeſptopppptt
         <lb/>ILLVSTRISSIMO
         <lb/>NEC NON CEL SISSIM0

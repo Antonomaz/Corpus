@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1923_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1923_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -34,7 +35,9 @@
           <title source="Mazarine">Lettre de consolation envoyée á messieurs les Princes au Havre de
             Grace, sur le sujet de la mort de madame la Princesse doüairiere leur mere.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" notBefore="1650-12-15" notAfter="1651-01-10">entre la seconde
             quinzaine de décembre 1650 et début janvier 1651</date>
@@ -42,13 +45,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49025</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49025" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49025"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11206</idno>
@@ -80,9 +82,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Signé "H. M. D. M.". Texte paru dans la seconde quinzaine de décembre
+        <p source="Mazarine">Signé "H. M. D. M.". Texte paru dans la seconde quinzaine de décembre
           1650 ou début janvier 1651 d'après Hubert Carrier (Bibliothèque Mazarine, Ms 4682-3, f.
           188v).</p>
+        <p source="Moreau">1923. Lettre de consolation envoyée à messieurs les princes, au Hâvre de
+          Grâce, sur le sujet de la mort de madame la princesse douairière, leur mère. Sans Lieu,
+          1651, 8 pages. Rare. Signé H. M. D. M.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,8 +106,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE
         <lb/>DE
         <lb/>CONSOLATION

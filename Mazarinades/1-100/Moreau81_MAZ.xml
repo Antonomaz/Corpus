@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau81_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau81_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -49,13 +50,12 @@
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48912</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48912" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48912"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° 17611-11</idno>
@@ -87,13 +87,18 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Sous forme de lettre adressée à la reine Anne d'Autriche. Autre édition
+        <p source="Mazarine">Sous forme de lettre adressée à la reine Anne d'Autriche. Autre édition
           (BM00060) sans mention de permission à l'adresse et de composition typographique
           différente. Attribué à Louis Machon par Raymond Céleste d'après Armand d'Artois
           (Bibliothèque Mazarine, Ms. 4682-1, f. 56v). Texte paru dans derniers jours de 1649,
           d'après la place de l'exemplaire Bibliothèque Mazarine 4° A 13969-51 dans un recueil
           factice de pièces rangées chronologiquement (Hubert Carrier, Bibliothèque Mazarine Ms.
           4682-1, f. 57).</p>
+        <p source="Moreau">81. Anathème (l') et l'excommunication d’un ministre d’État étranger,
+          tiré de l’Écriture sainte. Paris, Mathieu Colombel, 1649, 12 pages. Naudé, p. 208 du
+          Mascurat, range cette pièce entre les bonnes, c’est-à-dire entre celles qui sont composées
+          avec adresse , et dont le raisonnement est ingénieusement aiguisé et proprement
+          assaisomné.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -110,8 +115,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L’ANATHEME
         <lb/>ET
         <lb/>L’EXCOMMVNICATION
@@ -123,7 +127,9 @@
         <lb/>De l'Imprimerie de MATHIEV COLOMBEL, ruë
         <lb/>neufve S. Anne du Palais, à la Colombe Royale.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>AVEC PERMISSION</imprimatur>. <pb n="10"/><pb n="11"/>
+        <lb/>
+        <imprimatur>AVEC PERMISSION</imprimatur>. <pb n="10"/>
+        <pb n="11"/>
         <lb/>1
         <lb/>447
         <lb/>,AAAt

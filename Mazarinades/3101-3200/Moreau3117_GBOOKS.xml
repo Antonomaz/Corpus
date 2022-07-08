@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3117_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3117_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -41,17 +37,19 @@
           <title source="Moreau">Relation de ce qui s'est passé à Paris depuis l'enlavement du roi
             jusqu'à présent, envoyée aux provinces.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Les imprimeurs et libraires ordinaires du Roy</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du Roi</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Vienne</settlement>
+            <settlement ref="geonames:2761369">Vienne</settlement>
             <institution>Bibliothèque nationale d'Autriche</institution>
             <repository/>
             <idno type="cote">127468-B ALT MAG</idno>
@@ -83,7 +81,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">3117. Relation de ce qui s'est passé à Paris depuis l'en- lavement du ro'
+          jusqu'à présent, envoyée aux pro- vinces. Paris, par les imprimeurs et libraires ordi
+          naires du roi, 1649, 8 pages. Pièce publiée d'ordre du Parlement et par conséquent
+          officielle. Du 6 janvier au 5 février. « Des chambres , composées de députés des cours
+          souveraines , régloient la police et les vivres , les finances , les passeports et les
+          dépêchés. » Il y en a une édition de i pages, sans titre et sans date. L'exem plaire de la
+          bibliothèque de l'Arsenal a été intitulé, apparemment par un contemporain : Motifs envoyés
+          par MM. de la chambre des dépesches aux Parlements et villes du royaume.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -92,6 +98,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -108,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>RELATION
         <lb/>I
         <lb/>pe es oyl ss
@@ -125,8 +134,7 @@
         <lb rend="¬" break="no"/>res du Roy.
         <lb/>A DCXL1X.
         <lb/>Auec Priuilege de ſa ajeſté.
-        <lb/> 2468-B
-        <pb n="2"/>
+        <lb/> 2468-B <pb n="2"/>
         <lb/>2
         <lb/>¬. pr
         <lb rend="¬" break="no"/>. ¬.
@@ -154,8 +162,7 @@
         <lb rend="¬" break="no"/>ooaoGoogle
         <lb/>1
         <lb/>!
-        <lb/>1
-        <pb n="3"/>
+        <lb/>1 <pb n="3"/>
         <lb/>Adla , 4
         <lb/>m
         <lb/>edpeeeétegeqeté
@@ -201,8 +208,7 @@
         <lb/>à l’enleuement qu’il en auoit fait. Il fut vnanimement reſolu, que
         <lb/>les Gens du Roy iroient à Sainr Germain trouuer leurs Majeſtez, pour
         <lb/>les aſſeurer de ſa fidelité&amp; de ſon obeyſfance, leuer ces calomnies, ou
-        <lb/>A.
-        <pb n="4"/>
+        <lb/>A. <pb n="4"/>
         <lb/>¬¬¬...
         <lb/> 2.
         <lb/>és ſuppſier res-hurmblemant de vonsloir norasrmer es ’eoupibles da
@@ -257,8 +263,7 @@
         <lb rend="¬" break="no"/>trerent le ledemain au Parlement, &amp; Monſieur leDuc d Boiiiilon
         <lb/>s’y treuua auce Monſieur le Mreſchal de l Motthe Houdancourt.
         <lb/>L’ordre
-        <lb/> .
-        <pb n="5"/>
+        <lb/> . <pb n="5"/>
         <lb/>L’ordre des ſceancœes les emplois fuſt bien-totreglé entr’eu,
         <lb/>&amp; conclu ſur le champ auec vn contentement incroyable de toutes
         <lb/>parts, &amp; auec vn aplaudiſſement vniuerſel de tous les ordres de cette
@@ -310,8 +315,7 @@
         legi
         <lb rend="¬" break="no"/>time.
         <lb rend="¬" break="no"/> Il ſeroit mal-aiſe de nombrer la quantite de Mareſchaux, de Me
-        <lb rend="¬" break="no"/>B
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>B <pb n="6"/>
         <lb/>s
         <lb/>ſtres de Camp &amp; de Seigneurs de marque, qui ſe ſont declarés pour le
         <lb/>meſme party; nous les nommerons confuſément.
@@ -361,8 +365,7 @@
         <lb rend="¬" break="no"/>mens. Ce qui fait bien voir que s’agiſſant de la conſeruation de
         l’Eſtat,
         <lb/>ils ne veulent auoir qu’vn meſme eſprit &amp; vne meſme çonduite poar
-        <lb/>empeſcherla ruine.
-        <pb n="7"/>
+        <lb/>empeſcherla ruine. <pb n="7"/>
         <lb/> ¬a......¬a2...,.. .. ¬¬
         <lb rend="¬" break="no"/>7
         <lb rend="¬" break="no"/>’Nous ne doutohs pas, que’ les pernicieux conſeil s du Cardihial Ma
@@ -416,8 +419,7 @@
         <lb/>poſſible au peu de troupes du Cardinal Mazarin, de garder &amp; deffendre
         <lb/>differens poſtes en meſme temps.
         <lb/>Nous allons mettre en campagne, &amp; nous ne dourons pas qu’e
-        <lb/>cette occafion toutes les Villes ne deſnient l’aſſiſtance que l’on les
-        <pb n="8"/>
+        <lb/>cette occafion toutes les Villes ne deſnient l’aſſiſtance que l’on les <pb n="8"/>
         <lb/>.¬ aaa , -a,,,
         <lb/>poutroit demander en faueur du Cardinal Mazarin ſous le norm du
         <lb/>Roy qu’il vſurpe, &amp; qu’elles ne manqueront pas de refuſer paſſage

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2372_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2372_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -40,7 +41,9 @@
             protestation qu'il fait à la France, qu'il n'en veut qu'à l'ennemy commun de son repos,
             c'est à dire au cardinal Mazarin.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" notBefore="1651-07-09" notAfter="1651-07-10">le 9 ou le 10 juillet
             1651</date>
@@ -48,13 +51,12 @@
             <measure unit="page" quantity="23"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50187</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50187" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50187"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° 17620-34</idno>
@@ -86,7 +88,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Titre sur 11 lignes. Les p.12, 20 et cahier F sont de composition
+        <p source="Mazarine">Titre sur 11 lignes. Les p.12, 20 et cahier F sont de composition
           différente de BM01293. p. 3, l. 10 "necessa-" ; p. 12, l. 23/24 "raines de la conduite." ;
           p. 17, l. 23 "Voyla", l. 2, fin l. 1 "tie ?", l. 22 "coni-", l. 25 "Ay-je peu", fin l. 27
           "le" ; p. 18, fin l. 1 "mortelle-", l. 2 "deffence", l. 9/10 "redui-/te à l'estat où ie me
@@ -106,6 +108,18 @@
           Ms. 4682-3, f. 15v) car après la lettre de Condé au parlement de Paris, publiée le 8
           (Moreau, n° 2028) et avant le 11, date à laquelle le prince de Conti le désarme en plein
           Parlement.</p>
+        <p source="Moreau">2372 Manifeste (le)de monseigneur le prince de Condé, touchant les
+          véritables raisons de sa sortie hors de Pa - ris, faite le 6 juillet 1651, avec une
+          protestation qu'il fait à la France, qu'il n'en veut qu'à l'ennemi com mun de son repos,
+          c'est-à-dire au cardinal Mazarin. (S. l., 1651), 23 pages. Il a été reproduit en entier
+          dans les Mémoires de la minorité de Louis XIV, page 381 , édition de 1690. Coste le cite
+          d'après cette reproduction dans la seconde édition de son Histoire du prince de Condé,
+          page 258. Il en admet plei nement l'authenticité; et cependant l'auteur s'était, sinon
+          nommé, au moins désigné très-clairement dans un pamphlet publié peu de temps après sous le
+          titre de : le Manifeste de l'auteur qui a com posé le Manifeste de M. le prince, etc.
+          C'est Mathieu Dubos. Il me semble qu'il n'était pas permis de s'y tromper. On peut y
+          joindre les Motifs qui ont porté Son Altesse Royale à se déclarer pour Mgr. le Prince,
+          etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -126,8 +140,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>MANIFESTE
         <lb/>DE MONSEIGNEVR

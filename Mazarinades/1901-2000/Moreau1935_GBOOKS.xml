@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1935_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1935_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -38,23 +34,26 @@
       <sourceDesc>
         <bibl>
           <ref target="https://books.google.fr/books?id=GSvFvqlKPNYC&amp;hl=fr"/>
-          <author>Parlement de Paris</author>
+          <author ref="isni:0000000121755355">
+            <orgName>Parlement de Paris </orgName>
+          </author>
           <title source="Moreau">Lettre de la cour de Parlement de Paris, envoyée aux baillifs,
             sénéchaux, maires, échevins et autres officiers de ce royaume, du 18 janvier
             1649.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Les imprimeurs &amp; libraires ordinaires du Roy</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Les imprimeurs &amp; libraires ordinaires du Roi</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 311918</idno>
@@ -86,7 +85,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1935. Lettre de la cour de Parlement de Paris, envoyée aux baillifs,
+          sénéchaux, maires, échevins et autres of ficiers de ce royaume, du 18 janvier 1649. Paris,
+          par 136 BlBLI0GRAPHIE [LETTRE] les imprimeurs et libraires ordinaires du roi, 1649, 4
+          pages. C'est ici la lettre publiée; la lettre envoyée est imprimée en caractères italiques
+          sur une page in-4° et porte la signature auto graphe de Du Tillet. Elle est très-rare.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -95,6 +99,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -110,8 +117,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>r¬a.
         <lb/>
         <lb rend="¬" break="no"/>LEI
@@ -132,11 +138,9 @@
         <lb/>Pa les lmprneus e uionine o
         <lb/>raires ordinaires du Roy.
         <lb/>M. DC. XLIX.
-        <lb/>Auec Priuilege de ſa Majeſle.
-        <pb n="2"/>
+        <lb/>Auec Priuilege de ſa Majeſle. <pb n="2"/>
         <lb/>1
-        <lb rend="¬" break="no"/>e¬
-        <pb n="3"/>
+        <lb rend="¬" break="no"/>e¬ <pb n="3"/>
         <lb/>es
         <lb/>Et
         <lb/> eSSIEVS.
@@ -156,8 +160,7 @@
         <lb rend="¬" break="no"/>claré perturbateur du repos public, &amp; par
         <lb/> l’autre enjoint auxtroupes de ſe retirer, &amp; à
         <lb/>A ij
-        <lb/>r,,
-        <pb n="4"/>
+        <lb/>r,, <pb n="4"/>
         <lb/>.
         <lb/>4
         <lb/>faute dece faire, aux Conamuaes de courre

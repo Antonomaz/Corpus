@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2412_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2412_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -28,7 +29,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14917"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">La marche du Roy vers Paris, et sa route depuis sa sortie de Gien
             jusqu'à Melun, &amp; tout ce qui s'y est passé. Avec le dessein du cardinal Mazarin sur
             ladite marche, descouvert. Et sa cheute de cheval devant le Roy.</title>
@@ -45,13 +46,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49097</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49097" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49097"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13495</idno>
@@ -83,8 +83,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Texte paru le 23 avril 1652 d'après Hubert Carrier (Bibliothèque
+        <p source="Mazarine">Texte paru le 23 avril 1652 d'après Hubert Carrier (Bibliothèque
           Mazarine, Ms 4682-4, f. 31v). </p>
+        <p source="Moreau">2412. Marche (la)du roi vers Paris, et sa route depuis sa sortie de Gien
+          jusqu'à Melun, et tout ce qui s'y est passé, avec le dessein du cardinal Mazarin, sur
+          ladite marche, découvert, et sa chute de cheval devant le roi. Paris, Jean Brunet, 1652,8
+          pages. Rare.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +106,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA MARCHE
         <lb/>DV ROY
         <lb/>VERS PARIS

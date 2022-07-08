@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,19 +37,20 @@
           <title source="Mazarine">La France, a monseigneur le duc d'Elbeuf general des armées du
             Roy. Parenetique</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="1"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49371</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49371" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49371"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15210</idno>
@@ -80,12 +82,57 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"> En vers octosyllabes. Épître dédicatoire au duc d'Elbeuf. Autre
+        <p source="Mazarine"> En vers octosyllabes. Épître dédicatoire au duc d'Elbeuf. Autre
           édition : composition du texte, taille des caractères et ornement typographique différents
           (BM00531). Attribué par Armand d'Artois (Bibliothèque Mazarine, 8° 40523-21/2 [Res], p.
           414) à Matthieu Du Bos qui signe l'épître dédicatoire. D’après Hubert Carrier, texte paru
           en janvier 1649, le texte le 10 et l'épître dédicatoire le 11 (Mazarine, Ms 4682-1, f. 1v
           et 4682-2, f. 365v). </p>
+        <p source="Moreau">3. A monseigneur Charles de Lorraine, duc d’Elbeuf, généralissime des
+          armées du roi. (S. l. n. d.), 4 pages. Cette pièce est signée du Bos ( Mathieu). Puisque
+          le duc d’Elbeuf était encore généralissime des armées du roi…. pour le parlement, le
+          prince de Conti n’était pas entré dans Paris. On voit que le sieur Du Bos n’avait pas
+          perdu de temps pour mettre sa plume au service de la Fronde. J’ai rencontré de ce
+          pamphlétaire sept pièces tant en prose qu’en vers, tant en français qu’en latin. La
+          meilleure, sans contredit, est l’Icon tyranni in invectiva contra Mazarinum expressa. Elle
+          est d’une bonne latinité et ne manque ni d’élégance ni de vigueur. Les autres vaudraient
+          tout au plus la peine d’être indiquées par leur titre si l'une d’elles, le Manifeste de M.
+          le prince, n’avait mis l’auteur dans la nécessité de se cacher , et si elle n’avait pas
+          été reproduite en entier dans les Mémoires de Ia minorité de Louis XIV, page 385 de
+          l’édition de 1690, et citée comme document officiel dans la seconde édition de l’Histoire
+          du prince de Condé par Pierre Coste, page 258. Pour se défendre, Du Bos fit paraître le
+          Manifeste de l’auteur du Manifeste de M. le prince , etc. Les autres pièces de Du Bos sont
+          les Illustres présages des avan- tageux succés de nos troupes, etc. ; le Procès-verbal de
+          la canonisation du bienheureux Jules Mazarin, et Archipræsulis in Joanne- Francisco-Paulo
+          Gondæo , etc. On lit dans les Mémoires du cardinal de Retz que le marquis de Vardes fit
+          couper le nez à Dubosc Montandré pour un libelle dans lequel la maréchale de Guébriant, sa
+          sœur, était déchirée. Il paraît que les paroles du cardinal doivent être prises dans leur
+          sens le plus littéral. Du moins voici comment, de son côté, Loret raconte « Témoin ce
+          méchant Manifeste Qui fat à son auteur funeste, Où Vardes étant mal traité En devint si
+          fort irrité, Que ses laquais , gascons ou basques, Ayant pris l’auteur par les basques,
+          Coupèrent à coups de ciseau Son très-infortuné naseau ; Ce qni fait qu’après cet outrage
+          On peut dire de son ouvrage : « Ce sont des discours mal tournés « D’un auteur qui n’a
+          point de nez. » C’est le même fait, comme on voit. Seulement le cardimal de Retz s’est
+          trompé en deux points : l’auteur mutilé n’est point Dubosc Montandré, mais Du Bos ; il
+          n’avait point injurié la maréchale de Guébriant, mais le marquis de Vardes lui-même. Il
+          faut se rappeler que Loret écrivait toujours en présence des faits. Il recueillait jour
+          par jour les nouvelles dont il devait chaque semaine composer une lettre pour mademoiselle
+          de Longueville. Aussi la parfaite exactitude de sa Muse historique est-elle
+          universellement reconnue. Or, la lettre dans laquelle il raconte l’action brutale et
+          cruelle du marquis de Vardes, est datée du 27 juillet 1651. C’est la xxIix° du livre II.
+          Il y est dit en termes exprès que le libelle était un Manifeste qu’on faisait courir sous
+          le nom d’un prince, et que le marquis de Vardes y était maltraité. Dubosc Montandré n’a
+          publié tout au plus qu’un seul Manifeste; c’est celui du cardinal Mazarin ; mais Du Bos
+          est, comme je viens de le dire , l’auteur du Manifeste de M. le prince de Condé, contenant
+          les véritables raisons de sa sortie de Paris le 6 juillet 1681. Ce pamphlet a dù paraître
+          vers le 15 juillet; et j’y lis le passage suivant : « Ce qui me fait croire sans aucun
+          doute que mes ennemis et ceux du repos de la France destinent Brissac pour en faire le
+          port où Mazarin conservera le débris de son naufrage, c’est que je vois qu’on en donne le
+          gouvernement à Vardes , insigne partisan de ce cardinal et lâche déserteur du service de
+          Son Altesse Royale. Évidemment voilà le libelle désigné par Loret. Entre le gazetier qui
+          écrivait sur les lieux, en présence du fait qu’il avait pu vérifier, et le cardinal de
+          Retz qui n’a rédigé ses Mémoires que plus de vingt ans après, il me semble qu’il n’est pas
+          permis d’hésiter.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,15 +150,14 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA FRANCE,
         <lb/>A MONSEIGNEVR.
         <lb/>LE DVC D'ELBEVF!
         <lb/>GENERAL DES ARMEES
         <lb/>DV ROY.
         <lb/>PARENETIQVE
-        <lb/> A PARIS,
+        <lb/>A PARIS,
         <lb/>M. DC. XLIX. <pb n="10"/>
         <pb n="11"/>
         <gap/>

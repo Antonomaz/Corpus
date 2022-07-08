@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1282_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1282_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,20 +37,21 @@
           <title source="Mazarine">L'esprit de guerre des Parisiens, contre l'esprit de paix du
             Corinthien, refuté article par article.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" when="1652-07-15">mi-juillet 1652</date>
           <extent>
             <measure unit="page" quantity="20"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50268</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50268" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50268"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12878</idno>
@@ -81,7 +83,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition : composition typographique différente, sauf pour le 1er
+        <p source="Mazarine">Autre édition : composition typographique différente, sauf pour le 1er
           cahier et le cahier C (BM01354). Variantes graphiques, notamment : p. 5, l. 5 "estës", l.
           22/23 "Ro-/che foucaut" ; p. 6, l. 17 "traitté, i'entent" ; p. 7, l. 19 deffendant ; p. 8,
           l. 5 "Psal" ; p. 15, l. 22 "uppe", dernière l. "ab amico" ; p. 17, note marginale "Croy
@@ -93,6 +95,29 @@
           Célestin Moreau, ni par Armand d'Artois d'après Hubert Carrier (Bibliothèque Mazarine, Ms.
           4682-2, f. 301v). D'après H. Carrier, texte paru à partir de la mi-juillet 1652
           (Bibliothèque Mazarine, Ms. 4682-2, f. 299v).</p>
+        <p source="Moreau">1282. Esprit (l') de guerre des Parisiens contre l’Esprit de paix du
+          Corinthien, refuté article par article. (S. L), 1652, 20 pages. « Corinthien, vous êtes un
+          séditieux, aussi impudent que crimi- nel. » On connaît après cela le ton du pamphlet.
+          L’auteur ne discute pas ; il injurie. Parlementaires frondeurs : le président de Nesmond,
+          les prési- dents d'Hodie, Charton, Viole, Molé, de Thou, Lagrange, et MM. Broussel, Le
+          Meusnier, Deslandes-Payen , Portail, Coulon, Dorat, Montauglan, Pithou, Foucault, Leclerc
+          de Courcelles, Bitaut, Canais (sic), Védeau, Pinon, Durand, Petau, Croissy, Mar- tineau ,
+          Géniers, Cumont, Pontcarré et Machaut. Royalistes : le premier président, les présidents
+          de Bailleul, Novion, de Mesmes, Lecoigneux, Bocquemare, Guénégaud, de Lamoignon,, Perot,
+          Le Féron, les conseillers Doujat, Prévost, Sévin, Quélin (sic), Champré , Grasseteau,
+          Lefèvre , Tibeuf , Ri- bier, Caumont, Bernard-Ressé, Bragelogne, Corbeville, Labarre et
+          Fouquet , procureur général. « La naissance et la bonté de Son Altesse Royale, le courage
+          et les victoires du prince de Condé, la vertu et la science du prince de Conty, le zèle et
+          l’affection du duc de Beaufort, la sagesse et la générosité du duc de Nemours,
+          l’assistance et la modération du duc de Rohan, l’effort et la conduite du duc de Sully,
+          les peines et les fatigues du duc de Richelieu, les soins et la fidélité du duc de
+          Larochefoucault, la douceur et la franchise du duc d’Angouléme, la bonne grâce et la
+          civilité du prince de Tarente, la qualité et l’expérience de M. le chancelier, l’adresse
+          et l’esprit de M. de-Chavigny, les emplois de Marsin, la vigilance de Tavannes, les
+          défaites de Baltazar, les forces du Doignon, et la résolution de tous les chefs qui
+          commandent dans l’armée des princes, nous obligent à suivre un si juste parti. » Barbier,
+          sur la foi de Van Thol , attribue ce pamphlet à Dubosc Montandré, art. 5401; maiïs je ne
+          saurais dire sur quoi se fonde lopinion de Van Thol,</p>
       </abstract>
       <textClass>
         <keywords>
@@ -118,8 +143,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L'ESPRIT
         <lb/>DE GVERRE
         <lb/>DES PARISIENS

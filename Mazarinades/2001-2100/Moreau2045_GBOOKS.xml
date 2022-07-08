@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2045_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2045_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -9,15 +9,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -38,7 +34,7 @@
           <ref target="https://books.google.fr/books?id=_X1KAAAAcAAJ&amp;hl=fr"/>
           <author>
             <persName>
-              <name>Polichinelle</name>
+              <addName type="pseudonyme">Polichinelle</addName>
             </persName>
           </author>
           <persName role="received" ref="isni:0000000121223121">
@@ -47,18 +43,19 @@
           </persName>
           <title source="Moreau">Lettre de Polichinelle à Jules Mazarin.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Vienne</settlement>
+            <settlement ref="geonames:2761369">Vienne</settlement>
             <institution>Bibliothèque nationale d'Autriche</institution>
             <repository/>
             <idno type="cote">127331-B ALT MAG</idno>
@@ -90,7 +87,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2045. Lettre de Polichinelle à Jules Mazarin. Paris, Jean Hénault, 1649,8
+          pages. Rare. Signé : Je suis Polichinelle, Qui fais la sentinelle A la porte de Nesle.
+          L'abbé d'Artigny cite, page 36 du II vol de ses Mémoires, un rondeau à l'abbé de La
+          Rivière, qui porte la même signature; mais il ne dit pas qu'il ait été imprimé.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,6 +100,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -114,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/> LETTRE
         <lb/> re D
         <lb/>POLICHINELLE
@@ -127,8 +130,7 @@
         <lb/>t
         <lb/>neiee
         <lb/>u pmſ
-        <lb rend="¬" break="no"/> 2o-B
-        <pb n="2"/>
+        <lb rend="¬" break="no"/> 2o-B <pb n="2"/>
         <lb/>
         <lb/> ?
         <lb/>a.
@@ -151,8 +153,7 @@
         <lb/> .
         <lb rend="¬" break="no"/>1
         <lb/>
-        <lb/>E
-        <pb n="3"/>
+        <lb/>E <pb n="3"/>
         <lb/>3
         <lb/> Ate’ſtAlps
         <lb/>LETTRE DE POL ICHINELLE.
@@ -172,8 +173,7 @@
         <lb/>Courtiſans, voſtre mal-heur prouienr de ce que
         <lb/>vous auez monſtré tout d’vn coup ce que vous
         <lb/>çauiez faire, &amp; vous auez fait voir d’abord que
-        <lb/>ous ſçaui tres-hie uoler: c’eſt pourquoy l’on
-        <pb n="4"/>
+        <lb/>ous ſçaui tres-hie uoler: c’eſt pourquoy l’on <pb n="4"/>
         <lb/>¬¬ ¬-ra- -aa¬-m¬¬¬¬¬,
         <lb/>4
         <lb/>vousa voulu racourcir les aiſles. Cela n’a point em
@@ -205,8 +205,7 @@
         <lb/>vous prend dans Paris pour vn affameur de petits
         <lb/>enfans, quixvous nomment grand Goliat: ſi ie viens
         <lb/>aauoir faimcqmme eux, mfunde roueraſoni,
-        <lb/>&amp; ie
-        <pb n="5"/>
+        <lb/>&amp; ie <pb n="5"/>
         <lb/>l¬¬.
         <lb/>&amp; ie pourrois bien eſtropier Goliat par la teſte
         <lb/>comme fit le petit Dauid; ſi vous vous rendez en
@@ -237,8 +236,7 @@
         <lb/>beaucoup de Meſtiers tout aà la fois; c’eſt à ſçauoir,
         <lb/>Poſtillon d’Amour, ioü̈eur, trompeus, rapin, rueé,
         <lb/>mpoſteur; &amp; vous auez aſſez fais paroiſtre voſte
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/>8
         <lb/>experience en tous ces Arts, tant à Rome, qu’a Pa
         <lb rend="¬" break="no"/>ris: mais il vous reſte encor à endormir ce grand
@@ -268,8 +266,7 @@
         <lb rend="¬" break="no"/>elle de rien, puis qu’on vous a deſa mis au court
         <lb rend="¬" break="no"/>boüuillon, &amp; à̀ toutes les ſaulſes imaginables, &amp;
         <lb/>l’on a trouué que vous ne valiez rien, ny à̀ roſtir,
-        <lb/>ny à̀ boüillir. Ce que i’en dis, n’eſt pas pour vous
-        <pb n="7"/>
+        <lb/>ny à̀ boüillir. Ce que i’en dis, n’eſt pas pour vous <pb n="7"/>
         <lb/>7
         <lb/>offencer: car la verité ne doit offencer perſonne.
         <lb/>Que ſi vous vous en offenſez, plaignez-vous de
@@ -299,8 +296,7 @@
         <lb/>moy: c’eſt ce qui a fait qu’on m’a receu comme vn
         <lb/>noble Bourgeois dans Paris;&amp; vous au contraire, on
         <lb/>vous en a chaſseé comme vn peteux d’Egliſe. Vous
-        <lb/>me direz peut-eſtre, qu’on voudroit bien mainte¬
-        <pb n="8"/>
+        <lb/>me direz peut-eſtre, qu’on voudroit bien mainte¬ <pb n="8"/>
         <lb/>nant vous y tenſr, vous direz vray de ce coup-la,
         <lb/>&amp; l’on ſe repent’bien de vous auoir laiſsé ſortir ſans
         <lb/>ous aſſommer: mais n’y reuenez pas deuxfois, de

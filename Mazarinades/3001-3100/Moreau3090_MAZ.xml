@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3090_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3090_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -51,13 +52,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49069</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49069" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49069"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12114</idno>
@@ -89,11 +89,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers : ode composée de 12 dizains d'octosyllabes. Signé "François
+        <p source="Mazarine">En vers : ode composée de 12 dizains d'octosyllabes. Signé "François
           Colletet. Fils de G. Colletet." Année erronée sur la p. de titre. Texte, daté du "25.
           aoust 1650",paru la dernière semaine d'août 1650 d'après Hubert Carrier (Bibliothèque
           Mazarine, Ms 4682-4, f. 63v), le prince étant né le 17 août (Patrick Van Kerrebrouck, "La
           maison de Bourbon, 1256-1987", Villeneuve d'Ascq, 1987, p. 615).</p>
+        <p source="Moreau">3090. Réjouissance (la) des poètes à monseigneur le duc d'Orléans sur
+          l'heureuse naissance de monseigneur le Prince , son fils, par le sieur Colletet, le fils.
+          Paris, Nicolas Bcssin, 1650, 7 pages. Rare. Datée du 33 août et signée François Colletet ,
+          fils de G. Col letet.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -112,8 +116,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA
         <lb/>REIOVISSANCE
         <lb/>DES POETES
@@ -234,16 +237,13 @@
         <l>
           <lb/>1</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>Les</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <pb n="13"/>
         <l>
           <lb/>¬¬¬</l>
@@ -329,8 +329,7 @@
         <l>
           <lb/>1</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>Gasr o t, à qui le Cielobrojs </l>
         <l>
@@ -447,7 +446,8 @@
         <lb/>Fils de G. COTTELET.
         <lb/>A PARIS, Chez NICOLAS BOISSET, ruë Galande, proche
         <lb/>la place Maubert à l’Image S. Eſtienne. 1650.
-        <lb/><imprimatur>Auec Permßion</imprimatur>. </p>
+        <lb/>
+        <imprimatur>Auec Permßion</imprimatur>. </p>
     </body>
   </text>
 </TEI>

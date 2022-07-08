@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2540_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2540_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -26,10 +27,12 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14947"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Les nouveaux jeux du piquet de la Cour.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-03" notAfter="1649-06">au printemps 1649, après la
             paix de Saint-Germain</date>
@@ -37,13 +40,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49134</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49134" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49134"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13530</idno>
@@ -75,13 +77,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Dialogues. D'après Hubert Carrier, reprise, abrégée, du " Piquet de la
+        <p source="Mazarine">Dialogues. D'après Hubert Carrier, reprise, abrégée, du " Piquet de la
           Cour" (BM00932) et de sa suite (Bibliothèque Mazarine, Ms 4682-4, f. 98). Trois éditions
           de composition typographique différente et avec variantes d'ornement typographique : avec
           un bandeau en tête du texte et en p. 2 (BM00282) ; avec un bandeau seulement en tête du
           texte (BM00283) ; sans bandeau (BM00284). Titre de départ. D'après H. Carrier, texte paru
           durant le printemps 1649 après la paix de Saint-Germain (Bibliothèque Mazarine, Ms 4682-4,
           f. 97v).</p>
+        <p source="Moreau">2540. Nouveaux (les)jeux du piquet de la Cour. (S. l. n. d.), 4
+          pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,8 +102,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES NOVVEAVX IEVX
         <lb/>DV PIQVET DE LA COVR.
         <lb/>LE ROY.

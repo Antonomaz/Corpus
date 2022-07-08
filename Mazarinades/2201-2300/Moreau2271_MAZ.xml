@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2271_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2271_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -51,13 +52,12 @@
             <measure unit="page" quantity="20"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49204</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49204" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49204"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">Ms 4414-18</idno>
@@ -89,10 +89,20 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Postface "au lecteur". Lettres datées du "camp de Brisambourg" le 4
+        <p source="Mazarine">Postface "au lecteur". Lettres datées du "camp de Brisambourg" le 4
           janvier 1652. - D'après Hubert Carrier suivant une note ms. de Debuisson-Aubenay sur son
           exemplaire (Bibliothèque Mazarine, Ms 4414-18), texte imprimé les 15 et 16 janvier 1652
           (Bibliothèque Mazarine, Ms 4682-3, f. 303v).</p>
+        <p source="Moreau">2271. Lettres (les) de monseigneur le Prince à Son Al tesse Royale et à
+          nos seigneurs du Parlement, en semble la Requête de monseigneur le Prince envoyée au
+          Parlement. Paris, Nicolas Vivenay, 1652, 20 pages. . Quatre pièces : une lettre au duc
+          d'Orléans, et une autre au Par lement, pour leur offrir son concours contre le Mazarin qui
+          venait d'entrer en France, toutes deux datées du camp de Brisambourg, le 4janvier 1652;
+          une requête au Parlement, afin qu'il soit sursis à l'exécution de la déclaration du 4
+          octobre 1651 ; la créance donnée au sieur de Salzest pour proposer l'union au Parlement et
+          au duc. Puis des réflexions au lecteur, morceau insignifiant, écrit le sur lendemain de la
+          nouvelle de l'action exercée sur les conseillers de Géniez et Bitaut. Pièce des plus
+          communes.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,8 +119,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES
         <lb/>LETTRES
         <lb/>DE MONSEIGNEVR

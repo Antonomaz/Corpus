@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau729_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau729_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,7 +36,9 @@
             Contenant les principaux chefs d'accusation proposez par la France contre le ministere
             du cardinal Mazarin. Par le sieur de Sandricourt.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-06-07" notAfter="1652-06-14">deuxième semaine de
             juin 1652</date>
@@ -43,13 +46,12 @@
             <measure unit="page" quantity="23"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50263</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50263" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50263"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10745</idno>
@@ -81,11 +83,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">2 états (A/B) : p. 6, dernière ligne "Mõsieur"/"Monsieur". D'après
+        <p source="Mazarine">2 états (A/B) : p. 6, dernière ligne "Mõsieur"/"Monsieur". D'après
           Célestin Moreau, texte incluant celui publié sous le titre "Le procez du cardinal Mazarin,
           tiré du greffe de la Cour..." (BM01366). Avis "A mon lecteur" à la fin du texte. Notes
           marginales D'après Hubert Carrier, texte paru la deuxième semaine de juin 1652
           (Bibliothèque Mazarine, Ms. 4682-5, f. 10v).</p>
+        <p source="Moreau">729. Complot (le) et entretien burlesque sur l’arrêt du 29 décembre,
+          contenant les principaux chefs d’accusa- *=nH 14 jan e tion/conitre le ministère du
+          cardinal Mazarin, par le Fr+-au sieur de Sandricourt. Paris, 1652, 23 pages. Seconde
+          édition du Procéès du cardinal Mazarin, etc. L’auteur a Pn “ajouté , au commencement , une
+          invective contre/ief Sentiments %:““'* A d’un fidèle sujet du roi sur l’arrét du 29
+          décembre.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,8 +117,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>COMPLOT
         <lb/>ET
@@ -122,8 +129,7 @@
         <lb/>LES PRINCIPAVX CHEFS D’ACCVSATION
         <lb/>propoſez par la France contre le Miniſtere.
         <lb/>du Cardinal Mazarin.
-        <lb/>Par le ſieur DE SANDRICOVRT.
-        <figure type="decoration"/>
+        <lb/>Par le ſieur DE SANDRICOVRT. <figure type="decoration"/>
         <lb/>A PAR1S
         <lb/>M. DC. LII. <pb n="10"/>
         <pb n="11"/>
@@ -905,8 +911,7 @@
         <lb/>PARTIE DV CENSEVR DV TEMPS ET DV MON¬
         <lb/>DE. Laquelle plus que les autres, ie e pnie de lire aucc
         <lb/>attention, comme tirée des plus profondçources de la Scien¬
-        <lb/>ce Morale &amp; Politique.
-      </p>
+        <lb/>ce Morale &amp; Politique. </p>
     </body>
   </text>
 </TEI>

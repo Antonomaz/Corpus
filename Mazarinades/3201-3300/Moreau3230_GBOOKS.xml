@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3230_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3230_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -43,17 +39,19 @@
             Rheims, depuis le 20 mai 1651, et l'état déplorable du pays, tirée de diverses lettres
             écrites de ladite ville de Rheims.</title>
           <pubPlace source="Moreau">Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1651">1651</date>
           <extent>
             <measure unit="page" quantity="16"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Silo ancien</repository>
             <idno type="cote">SJ IF 247/176, 28</idno>
@@ -85,9 +83,18 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">SJ IF 247/176, 28 : Recueil Factice (SJ IF 247/176). Pièce de titre
-          : "Histoire de France - Recueil Louis XIV - 1"</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">SJ IF 247/176, 28 : Recueil Factice (SJ IF 247/176). Pièce de titre :
+          "Histoire de France - Recueil Louis XIV - 1"</p>
+        <p source="Moreau">3230. Relation véritable de ce qui s'est passé ès envi rons deHa ville de
+          Rheims, depuis le 20 mai 1651, et l'état déplorable du pays , tirée de diverses lettres
+          écrites de ladite ville de Rheims. ((S. 1., 1651), 16 pages. Rare. Détails horribles, qui
+          s'ajoutent à la Champagne désolée pari'ar mée d'Erlac. Il semble que l'auteur des lettres
+          soit un magistrat municipal, car il fait arrêter des officiers dans la ville et leur donne
+          des gardes. La dernière date est du 17 juin. A la page 1 3, commence un « Extrait de
+          quelques informations des violences et désordres commis par les troupes du général Rose
+          dans le pays de Thiérache, diocèse de Laon , où elles ont été pen dant l'hyver dernier, et
+          ont entièrement ruiné et désolé ledit pays. » Du 30 avril! 651.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -96,6 +103,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -111,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>-aai
         <lb/>VE
         <lb/>
@@ -152,8 +162,7 @@
         <lb/>oeiereree e eeieie
         <lb/>O dermier ay
         <lb/>rris oaſoun ſnete leſleienuaetlel oue enae uaua
-        <lb/>¬A
-        <pb n="2"/>
+        <lb/>¬A <pb n="2"/>
         <lb/>,
         <lb/>ue ie vous ay ey deant donne denos miſees l Pe eee
         <lb/>ae e unne eul e de enureren nenene de euous denunet
@@ -194,8 +203,7 @@
         <lb/>le one forcé la maiſon, apneée du Nuyſeman qui i
         <lb/>nen l’la dane de&amp;uind Slere ont pule rue Nueols dopo
         <lb rend="¬" break="no"/>ſon Fernier, &amp; enleué tous ſes haeuaux &amp; beftau¬.
-        <lb/>üaA
-        <pb n="3"/>
+        <lb/>üaA <pb n="3"/>
         <lb/>Perſonne n’oſeroit paroitre en la campagne, où le briganda
         <lb rend="¬" break="no"/>ge, le meurtre, l’incendie, les violemens &amp; ienconnemens ſone
         <lb/>plus frequens &amp; plus libres que dans le pays ennemy, deux oui
@@ -238,8 +246,7 @@
         <lb/>ltgimement excuſez. Vn de nos Vilages fur aiaqué auanr- hyer
         <lb/> a nnict par deux cens hoimmes de Paſſiau qui e foeerent, vue
         <lb rend="¬" break="no"/>rent vn des Habitans, &amp; bleſſerent tous les autres à
-        l’exceprion
-        <pb n="4"/>
+        l’exceprion <pb n="4"/>
         <lb/>v
         <lb/>-
         <lb/>d’n ſeul, eoleuerent tous les cneuaux, aches, &amp; dépolllepe
@@ -287,8 +294,7 @@
         <lb/>e &amp; leurs biens pour le ſeruite d Ro,, &amp; aderes e auue.!
         <lb/> hoſtre
         <lb/>1
-        <lb/>:
-        <pb n="5"/>
+        <lb/>: <pb n="5"/>
         <lb/>yv
         <lb/>I
         <lb/>E
@@ -342,8 +348,7 @@
         <lb rend="¬" break="no"/>ier, luy, fa femmne&amp; quate enfans chafſez &amp; nmis en
         chomiſe: ie le
         <lb/>B
-        <lb/> L¬.¬ ¬¬¬
-        <pb n="6"/>
+        <lb/> L¬.¬ ¬¬¬ <pb n="6"/>
         <lb/>le
         <lb/>1
         <lb/>6
@@ -387,8 +392,7 @@
         <lb/>nommes, n’eſtoit pas éloign. Le Soildas n’ont paine de pain, 1
         <lb/>aucun Commiſſaire des iuros qui lent a foumiſſeat, en ſorte
         <lb/>- SL¬..
-        <lb/>1
-        <pb n="7"/>
+        <lb/>1 <pb n="7"/>
         <lb/>
         <lb rend="¬" break="no"/> .
         <lb/>,.
@@ -437,8 +441,7 @@
         <lb rend="¬" break="no"/>ment ſe voyant hors d’eſperance de rerirer l’Officier arrefté, ſans
         <lb/>eſtablir les deſordres. Du iour d’hyer, enuiron les quarre heures dê
         <lb/>eleueée: les Oficiars de ce Regiment ſe ſaifirent prés de la Ville de
-        <lb/> 2-L
-        <pb n="8"/>
+        <lb/> 2-L <pb n="8"/>
         <lb/>A
         <lb/>p
         <lb/>Jl
@@ -486,8 +489,7 @@
         <lb/>os ous ſeninre oe iiſoile os vue ilernre i enaeue o
         <lb/>iue le uoun pe ne iun a eue ne oerer ene eoee
         <lb/>Pluſſoit, i ayurt pa le loiar dei,fte, ad qru puiae rade
-        <lb/> 2.
-        <pb n="9"/>
+        <lb/> 2. <pb n="9"/>
         <lb/>i.
         <lb/>
         <lb/>1
@@ -535,8 +537,7 @@
         <lb/>uſio ne aeoan ere iſi un eue e l rl en diunrl ne nr
         <lb/> au neu ediſrenſite arn puiſreeln le renee eunne ile ſe
         <lb/>C
-        <lb/> a¬¬
-        <pb n="10"/>
+        <lb/> a¬¬ <pb n="10"/>
         <lb/>E4
         <lb/>t
         <lb/>msunue d u us d naerile, le niluſeee i
@@ -580,8 +581,7 @@
         <lb/>onmes e ne nen alſoeu e i nrodnine de neiren, doneeu
         <lb/>n’eſt pas eapable.
         <lb/>ſſſll.¬ .aa
-        <lb/>1
-        <pb n="11"/>
+        <lb/>1 <pb n="11"/>
         <lb/>E
         <lb/>5.
         <lb/>nous puoirfaie reſpie par’oode dee.!
@@ -623,8 +623,7 @@
         <lb/> Paſfeurs d’abandonner leurs ouailles, pour les laiſier ſans ſecours
         <lb/> aſiſtance à la mort, laquelle on ne reſuſe point aux plus grand
         <lb/> Ctiminels condamnez à la mort.
-        <lb/>A ah¬¬¬
-        <pb n="12"/>
+        <lb/>A ah¬¬¬ <pb n="12"/>
         <lb/>
         <lb/> La Déelaration du Rby da’y. Ianuiër dé́tl
         <lb/>Cour le a4. Auril, porte la’verité d rapport
@@ -678,8 +677,7 @@
         <lb/>l A herylea paehy, l’Fit a ſeruſ ſe orps de &amp;arde auſdies
         <lb/>J Voupes long- temps.!
         <lb/> Roeosy, omefy, Aſpfemoit, Rhimd̂s, Maincau, Huſre
-        <lb rend="¬" break="no"/>D
-        <pb n="14"/>
+        <lb rend="¬" break="no"/>D <pb n="14"/>
         <lb/>.
         <lb/>I
         <lb/> 2
@@ -728,8 +726,7 @@
         <lb/>daſerurne geſenei Qnoe poiroieſſepple eaatee
         <lb/>ſele, e’esdopes Sd’eereeſſlyEre ’tfet
         <lb/>e piples, &amp;e liire lei epnes , e ſe ſffoinſes &amp;e
-        <lb rend="¬" break="no"/>¬¬ . ...-... ..
-        <pb n="15"/>
+        <lb rend="¬" break="no"/>¬¬ . ...-... .. <pb n="15"/>
         <lb/>1
         <lb/> i
         <lb/>oient ſauyerngonnez, Les Soſdats-ſe ſont ſajſi de trois fem
@@ -773,8 +770,7 @@
         <lb/>orſe froidſans l’aſſiftançeé d’vn Caualier qui luy donna enfin vn
         <lb/>eſcha ſac pour couurir ſes eſpaulles &amp; v viei caleſon pour
         <lb/>couurir Iã nudité.
-        <lb/>Les femmes &amp; filles ont eſté violées en la preſence du ieur Cu¬
-        <pb n="16"/>
+        <lb/>Les femmes &amp; filles ont eſté violées en la preſence du ieur Cu¬ <pb n="16"/>
         <lb/>!
         <lb/> a
         <lb/>

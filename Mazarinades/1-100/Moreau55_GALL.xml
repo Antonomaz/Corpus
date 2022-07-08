@@ -1,25 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau55_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau55_GALL">
   <teiHeader xml:lang="fr">
     <fileDesc>
       <titleStmt>
-        <title type="main" source="Mazarine">Agreable et veritable recit de ce qui s'est passé, devant et
-          depuis l'enlevement du Roy, hors la ville de Paris, par le Conseil de Jule Mazarin. En
-          vers burlesques.</title>
+        <title type="main" source="Mazarine">Agreable et veritable recit de ce qui s'est passé,
+          devant et depuis l'enlevement du Roy, hors la ville de Paris, par le Conseil de Jule
+          Mazarin. En vers burlesques.</title>
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -39,9 +35,9 @@
         <bibl>
           <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k55441976/"/>
           <author/>
-          <title source="Mazarine">Agreable et veritable recit de ce qui s'est passé, devant et depuis
-            l'enlevement du Roy, hors la ville de Paris, par le Conseil de Jule Mazarin. En vers
-            burlesques.</title>
+          <title source="Mazarine">Agreable et veritable recit de ce qui s'est passé, devant et
+            depuis l'enlevement du Roy, hors la ville de Paris, par le Conseil de Jule Mazarin. En
+            vers burlesques.</title>
           <pubPlace ref="geonames:2988507">Paris</pubPlace>
           <publisher ref="isni:0000000060006122">
             <persName>
@@ -54,13 +50,12 @@
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM00646</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM00646" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49519"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque nationale de France</institution>
             <repository>Département Littérature et art</repository>
             <idno type="cote">YE-1182</idno>
@@ -92,12 +87,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">3 états. État A : grande vignette au titre, p. 4 l. 23 "ce porte
+        <p source="Mazarine">3 états. État A : grande vignette au titre, p. 4 l. 23 "ce porte
           mandille", p. 16 fin l. 11 "murailles,". État B : petite vignette au titre, p. 4 l. 23 "ce
           porte mandille", p. 16 fin de l. 11 "marmailles,". État C : petite vignette au titre, p. 4
           l. 23 "le porte manditte", p. 16 fin de l. 11 "marmailles,". D'après Hubert Carrier, texte
           paru à la mi-février 1649 (Bibliothèque Mazarine, Ms. 4682-1, f. 34 v).</p>
-        <p source="BnF_notes"/>
+        <p source="Moreau">55. Agréable et véritable récit de ce qui s’est passé devant et depuis
+          l’enlèvement du roi hors de la ville de Paris par le conseil de Jules Mazarin, en vers
+          burlesques. Paris, Jacques Guillery, 1649, 16 pages. Cette pièce a paru après la prise de
+          Charenton.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,6 +104,9 @@
           <term type="subgenre">burlesque</term>
           <term type="subgenre">satirique</term>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -121,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55441976/f2.highres"/>
+      <p><pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55441976/f2.highres"/>
         <lb/>ABREABLE
         <lb/>ET
         <lb/>VERITABLE RECIT
@@ -135,7 +135,8 @@
         <lb/>Chez IACQVES GVILLERY, ruë des Sept-Voyes,
         <lb/>deuant le College de Fortet, proche Mont-Aigu.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>AVEC PERMISSION.</imprimatur>
+        <lb/>
+        <imprimatur>AVEC PERMISSION.</imprimatur>
       </p>
       <pb n="2" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55441976/f3.highres"/>
       <pb n="3" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55441976/f4.highres"/>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3205_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3205_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -54,12 +50,12 @@
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Munich</settlement>
+            <settlement ref="geonames:2867714">Munich</settlement>
             <institution>Bibliothèque de l'Etat de Bavière</institution>
             <repository>BSB / Außenmagazin</repository>
             <idno type="cote">4 Gall.g. 192 k</idno>
@@ -91,10 +87,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
         <p source="Antonomaz">Lors de la numérisation de l'imprimé, il semble qu'une partie de la
           page de garde - sur laquelle figuraient probablement le nom de l'éditeur ainsi que la date
           d'édition - ait été coupée. Peut-être l'éditeur serait-il Toussaint Quinet ?</p>
+        <p source="Moreau">3205. Relation véritable de ce qui s'est fait et passé en Parlement, le
+          lundi 1 4 octobre 1652, en présence de Son Altesse Royale et de plusieurs ducs et pairs de
+          France, avec la déclaration de Son Altesse Royale et de M. le duc de Beaufort pour
+          l'éloignement sans re tour des gens de guerre. Paris, Laurent Toussaint, 1652, 7
+          pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,6 +104,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -118,8 +123,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>RELATION
         <lb/>H
         <lb/>T
@@ -130,8 +134,7 @@
         <lb/>&amp; pluſieurs Duc &amp; Pairs de France.
         <lb/>e.Eeeeee
         <lb/>de ſon . R. &amp; de ſonſieur le ue de eufort, pour
-        <lb/>l’eloignement, ſans retour, des gens de guerre.
-        <pb n="2"/>
+        <lb/>l’eloignement, ſans retour, des gens de guerre. <pb n="2"/>
         <lb/>e
         <lb/>J i
         <lb/>,..
@@ -139,8 +142,7 @@
         <lb/>’.
         <lb/>1
         <lb/>L
-        <lb/>nnoo Gogle
-        <pb n="3"/>
+        <lb/>nnoo Gogle <pb n="3"/>
         <lb/>8
         <lb/>AA&amp;&amp;6
         <lb/>e&amp;ë&amp;eéSeCé
@@ -162,8 +164,7 @@
         <lb/>t no,e doi pte deuoye
         <lb/>en Cour, d’eſcrire au Roy, &amp; luy enuoyer
         <lb/>la Declaration qu’il a tant de fois faicte en
-        <lb/>Parlement, qui n’auoit eſté́ baillé́e par
-        <pb n="4"/>
+        <lb/>Parlement, qui n’auoit eſté́ baillé́e par <pb n="4"/>
         <lb/>dit Segneur vy, ..
         <lb/> e den nl ua penieres roeni
         <lb/>que eiene e aepe pe lele e
@@ -174,8 +175,7 @@
         <lb/>e lens er nnus de eie el e
         <lb/> eie e enen inus ne lues aoeſnee.
         <lb/>noie le lne de uaieni e nouaa e
-        <lb/>que
-        <pb n="5"/>
+        <lb/>que <pb n="5"/>
         <lb/>1
         <lb/>1
         <lb/>que ce ſecond pacquet luy fuſt preſenté
@@ -205,8 +205,7 @@
         <lb/>plus grand &amp; plusaelé qu a l’aooouſtume,
         <lb/>metmede, le feray qe chacunſeraſa
         <lb rend="¬" break="no"/>nlai..!
-        <lb/>’3
-        <pb n="6"/>
+        <lb/>’3 <pb n="6"/>
         <lb/>preentes eeeu-:.
         <lb/>ltſt osoie ve bone depoſiio
         <lb/>-a..
@@ -215,8 +214,7 @@
         <lb/> lene lun e n eaepaii eue elne
         <lb/>e leuer eriies o i ls au aene ſee
         <lb/>e lnu uel eir reispuol u denr linr
-        <lb/> e e e e ore que eoue la ouan
-        <pb n="7"/>
+        <lb/> e e e e ore que eoue la ouan <pb n="7"/>
         <lb/>1
         <lb/>11
         <lb/>1
@@ -238,21 +236,15 @@
         <lb/>ſoubmiſſion bien grande tous d’vne voiz à
         <lb/>ſon A.R. Dieu le veuille.
         <lb/>FIN.
-        <lb/>¬
-        <pb n="8"/>
-        <lb/>aaſ
-        <pb n="9"/>
+        <lb/>¬ <pb n="8"/>
+        <lb/>aaſ <pb n="9"/>
         <pb n="10"/>
-        <lb/>-aaa
-        <pb n="11"/>
+        <lb/>-aaa <pb n="11"/>
         <pb n="12"/>
-        <lb/>Laal
-        <pb n="13"/>
+        <lb/>Laal <pb n="13"/>
         <pb n="14"/>
-        <lb/>aal
-        <pb n="15"/>
-        <lb/>nnoo Gogle
-        <pb n="16"/>
+        <lb/>aal <pb n="15"/>
+        <lb/>nnoo Gogle <pb n="16"/>
         <lb/>a </p>
     </body>
   </text>

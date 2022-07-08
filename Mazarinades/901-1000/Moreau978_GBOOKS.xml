@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau978_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau978_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -57,12 +53,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement/>
-            <institution>Bibliothèque municipale de Lyon</institution>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
             <repository/>
             <idno type="cote"/>
           </msIdentifier>
@@ -93,7 +89,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">978. Défaite (la) des troupes mazarines, à l’attaque du château du
+          Plessis, par les paysans réfugies dans le même château , et les désordres commis dans le
+          château de Villebon près Palaiseau, appartenant à M. le pré- sident de Novion , avec la
+          route de Sa Majesté. Paris, J. Le Gentil, 1652, 8 pages. Le Plessis près de Lardie, aux
+          environs de Chastres, aujourd’hui Arpajon. Histoire curieuse et rare.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,6 +103,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -132,8 +137,7 @@
         <lb/>Che IaACQVES LE GENTIL, ue dE
         <lb/>coſſe, à̀ l’enſeigne S. Ierôme, preés Saint Hilaire.
         <lb/>5r5
-        <lb rend="¬" break="no"/>M. DC. LII.
-        <pb n="2"/>
+        <lb rend="¬" break="no"/>M. DC. LII. <pb n="2"/>
         <pb n="3"/>
         <lb/> 3
         <lb/>LA DEFAAITE DE8 TROVPE
@@ -159,8 +163,7 @@
         <lb/>ette humanité́ qui les doit diſtinguer d’a
         <lb rend="¬" break="no"/>uee les demon: mais c mme s’ils faiſoientla
         <lb/>guctre conte les diables meſmes, &amp; contse.
-        <lb/>1
-        <pb n="4"/>
+        <lb/>1 <pb n="4"/>
         <lb/>4
         <lb/>des ennemis tout à tait irreconciliables,
         <lb/>ſans conſiderer que ceux qu’ils nomment
@@ -188,8 +191,7 @@
         <lb/>de leur cruauté, a fait payer aux Autheurs
         <lb/>dapeinme du plus damnable deſſein qui puiſſe!
         <lb/>tômberen la penſée des hommes.
-        <lb/>L’approche
-        <pb n="5"/>
+        <lb/>L’approche <pb n="5"/>
         <lb/> L’approche des trouppes Mazarines, ſous.
         <lb/>la conduite du Mareſchal de Turenne,
         <lb/>ayant mis l’allame dans tous les village
@@ -216,8 +218,7 @@
         <lb rend="¬" break="no"/>tin à faire, c’eſtoit dans les Chaſteaux &amp;
         <lb/>auttes lieux de retraitte, ils ſe preſenterent
         <lb/>de uant pluſieus qu ils pillerent ſans reſi
-        <lb rend="¬" break="no"/>B.
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>B. <pb n="6"/>
         <lb/>ſtance; mais eſtans venus iuſqu’au nombe
         <lb/>de ſoixante Maiſtres à cely du Pleſſis pot
         <lb/>loger diſoient-ils dedans ſuiuant l’ordre
@@ -241,8 +242,7 @@
         <lb rend="¬" break="no"/>ſolurent de percer la voûte, &amp; jetter de
         <lb/>la poudre dans ladite caue, &amp; enſeuelir dans
         <lb/>ſes ruines ceux qui s’y eſtoient retirez, ce
-        <lb/>peueue uenieue pneaie
-        <pb n="7"/>
+        <lb/>peueue uenieue pneaie <pb n="7"/>
         <lb/>ce poudre dedans cette caue, y ay ant mis le
         <lb/>fea, &amp; s’eftans preparez pour enrer à l’in
         <lb rend="¬" break="no"/>ſtant que la mine auroit fait ſon effet, op
@@ -268,8 +268,7 @@
         <lb/>paiſans, ce Mareſchal loua tout haut leur
         <lb/>generoſité, &amp; deffendit qu’il ne leurfut fait
         <lb/>aucun tort, diſant qu’il n’eſtoit pas juſte
-        <lb/>que des François fuſſent puns pour auoir
-        <pb n="8"/>
+        <lb/>que des François fuſſent puns pour auoir <pb n="8"/>
         <lb/>1
         <lb/>defendus leurs vies leurs femmes, &amp; leurs
         <lb/>biens, &amp; qu’il ſçauoit bien quele Royn’au

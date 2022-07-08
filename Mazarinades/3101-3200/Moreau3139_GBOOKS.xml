@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3139_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3139_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -14,15 +14,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -60,11 +56,11 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4 23 cm</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Silo ancien</repository>
             <idno type="cote">SJ IF 247/188, 66</idno>
@@ -96,9 +92,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Titre restitué d'après l'exemplaire de la Bibliothèque de la
-          Sorbonne Moreau, Mazarinades 3139. Recueil factice.</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Titre restitué d'après l'exemplaire de la Bibliothèque de la Sorbonne
+          Moreau, Mazarinades 3139. Recueil factice.</p>
+        <p source="Moreau">3139. Relation de la victoire obtenue par les armées de la sérénissime
+          république de Venise sous le com mandement de l'illustrissime et excellentissime sei gneur
+          Jacques de Riva, capitaine des vaisseaux, contre l'armée turquesque en Asie au port de
+          Foquie, traduit d'italien en françois par N. D. F., et par lui donnée à l'illustrissime et
+          excellentissime seigneur Michel Morosini, ambassadeur ordinaire de ladite sérénissime
+          république de Venise auprès du roi très-chrétien. Paris, Antoine Estienne, 1649, 8
+          pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,6 +110,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
     </profileDesc>
@@ -116,8 +123,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>
         <lb rend="¬" break="no"/>Q
         <lb/>3
@@ -163,8 +169,7 @@
         <lb/>Mai quel isgement de Dieu fut iamais plus viſible, &amp; quand
         <lb/>eſt-ce que l’aſſiſtance diuine en faueur de la Chreſtienté, a
         <lb/>PaIu plus vigoureuſe qu’en cete rentontre, ſous la pupllarié́
-        <lb/>A ij
-        <pb n="2"/>
+        <lb/>A ij <pb n="2"/>
         <lb/>’
         <lb/>de leur ieune Roy? La Regence de ſes grands Baſſas, a creu par
         <lb/>des nouucaux appareils de guerre, &amp; par vne puiſſante armée
@@ -204,8 +209,7 @@
         <lb rend="¬" break="no"/>magea tres fott aue ſon canon; mais eſtant abandonné́ du
         <lb rend="¬" break="no"/>vent, les Turcs s’éioigncrent &amp; ſe garentirent de cette pte
         <lb rend="¬" break="no"/>miere attaque, ncantmoins auce perte &amp; dommage norable,
-        <lb/>comme
-        <pb n="3"/>
+        <lb/>comme <pb n="3"/>
         <lb/>5
         <lb/>coane on apprit depais par leur propres qu’on fiſt Eſela.
         <lb/>s pendant la uit ’approehat, e peidte pou quel
@@ -246,8 +250,7 @@
         <lb/>laile du Panoon iie ea ſol ere e ven i l
         <lb/>t ea dedans euiron ois milles aat de long que de lae,
         <lb/>B
-        <lb/>i
-        <pb n="4"/>
+        <lb/>i <pb n="4"/>
         <lb/>¬¬¬¬¬¬¬¬¬
         <lb rend="¬" break="no"/>6
         <lb rend="¬" break="no"/>les Turcs ne pouuant s’irginer qeles nores ſoagoaſſaatà
@@ -288,8 +291,7 @@
         <lb/>vne heure de combat s’en rendirent les aaiſtres.
         <lb/>Enfin lesGaleres &amp; Galeafſes enaeniies eſtaneén butte d
         <lb/>oas coſtez à la valeur des uoſtres, qai deſchargeoiene unou
-        <lb/>-aſ
-        <pb n="5"/>
+        <lb/>-aſ <pb n="5"/>
         <lb/> pierir chage dechaiſnes, de cloud, de ſacs, de bales,
         <lb/> aues morceaux e ſer, ſa voyant ſi nmorabilement endomſ
         <lb/>gea perdent corag, &amp; eomnençant da relaſcher tournent
@@ -338,8 +340,7 @@
         <lb/>1
         <lb/>E
         <lb/>1
-        <lb/>e
-        <pb n="6"/>
+        <lb/>e <pb n="6"/>
         <lb/>Gerome Battaglia. Iacques Bolani.
         <lb/>François Moroſni. George Polani.
         <lb/>François ragade.
@@ -365,8 +366,7 @@
         <lb/>dene plas ſeruir à l’interot des Turos..
         <lb/>
         <pb n="7"/>
-        <lb/>ſſâ
-        <pb n="8"/>
+        <lb/>ſſâ <pb n="8"/>
         <lb/>Gerome Battagli. Iacques Bolani.
         <lb/>François Moroſiai. George Polani.
         <lb/>Francois Bragadi.

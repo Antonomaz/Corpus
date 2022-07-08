@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3225_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3225_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -41,7 +37,7 @@
           <title source="Moreau">Relation véritable de ce qui s'est passé dans le combat de
             messieurs les ducs de Beaufort et de Nemours, avec le sujet de leur querelle.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>
+          <publisher ref="viaf:120177787">
             <persName>
               <forename>Julien</forename>
               <surname>Mallard</surname>
@@ -52,11 +48,11 @@
             <measure unit="page" quantity="15"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309672</idno>
@@ -88,9 +84,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Rel. à la suite de 312 849 : Retz.- La Véritable harangue.- Paris,
-          1652. 4°</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Rel. à la suite de 312 849 : Retz.- La Véritable harangue.- Paris, 1652.
+          4°</p>
+        <p source="Moreau">3225. Relation véritable de ce qui s'est passé dans le combat de
+          messieurs les ducs de Beaufort et de Ne mours, avec le sujet de leur querelle. Paris,
+          Julien Mallard , 1652 , 1 5 pages. Récit de bonne foi , curieux et rare. L'auteur dit
+          qu'on n'a rien su positivement du combat , a chacun le racontant à l'avantage de son
+          maître. '</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,6 +100,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -114,8 +119,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>RELATION
         <lb/> 1
         <lb/>VERITABLE
@@ -124,8 +128,7 @@
         <lb/> leur querelle.
         <lb/>
         <lb/>e
-        <lb/>Chez IVLIEN MALLARD, au Puits Certain.
-        <pb n="2"/>
+        <lb/>Chez IVLIEN MALLARD, au Puits Certain. <pb n="2"/>
         <lb/>..:.
         <lb/>
         <lb rend="¬" break="no"/>e¬ 7 ,
@@ -173,8 +176,7 @@
         <lb/>nieie a IIA1 IS.
         <lb/>.
         <lb/>
-        <lb rend="¬" break="no"/>onaaaOogle
-        <pb n="3"/>
+        <lb rend="¬" break="no"/>onaaaOogle <pb n="3"/>
         <lb/>3
         <lb/>o,,,
         <lb/>é’otte:P’t’’
@@ -201,8 +203,7 @@
         <lb/>homme, affin de nous faire connoiſtre que par vn
         <lb/>ds ſes reuers elle peut terraſſer d’vne ſeule main,
         <lb/>ceux à qui pluſieurs eſcadrons, voire meſme des ar
-        <lb rend="¬" break="no"/>mées entieres n’aurontpeu reſiſter. Cetce reflexion
-        <pb n="4"/>
+        <lb rend="¬" break="no"/>mées entieres n’aurontpeu reſiſter. Cetce reflexion <pb n="4"/>
         <lb/>ſeroit capable de pouſſer mes ſentimens bien plus
         <lb/>auant ſur ce ſuiet, mais comme mon principal but
         <lb/>n’eſt que de aconter fi lellement ce qui seſt paſſé
@@ -231,8 +232,7 @@
         <lb/>contraire aà celuy de Mazarin; mais fçachant qu
         <lb/>M. le Due de Beaufort ne ſcç̧auroit mahquer d’y eſtre
         <lb/>appellé par les meſmes raiſonsil ſe dours quil ne
-        <lb/>rmanqueroit point d’y prendre ſa ſeanee daeuant luy,.
-        <pb n="5"/>
+        <lb/>rmanqueroit point d’y prendre ſa ſeanee daeuant luy,. <pb n="5"/>
         <lb/>ilteſmoigna la luy vouloir diſputer, dans la croy
         <lb rend="¬" break="no"/> ance qu l auoit de n eſtre point obligé de ceder le
         <lb/>deuant one oeſonne né́e d’vn Prince de France
@@ -262,8 +262,7 @@
         <lb rend="¬" break="no"/>fieur de Nemours, ne perdit pas vn moment apres
         <lb rend="¬" break="no"/>que cela fut venu à ſes orilles pour eſuirer le ma
         <lb rend="¬" break="no"/>cur qu’il preuoyoit bien qui nousen pouarroit arri
-        <lb rend="¬" break="no"/>B
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>B <pb n="6"/>
         <lb/>uer, il enuoa ſoudain prier de ſ perM le Due
         <lb/>de Nemouts d ſe ren lre cezvaame l uhe ſſe
         <lb/>deCh ſtillon pour quelque pot ante aſlaire qu il
@@ -292,8 +291,7 @@
         <lb/>l’Eſtat, qu’il falloir bien ſe donner de garde de le
         <lb/>mettre en confuſion par la mort de l’vn ou de l’au
         <lb rend="¬" break="no"/>tre, que ſachant que le ſuccez des armes efſt incertain
-        <lb/>qu’il eſtoit auſſi incertain lequel des deux auroi l’a¬
-        <pb n="7"/>
+        <lb/>qu’il eſtoit auſſi incertain lequel des deux auroi l’a¬ <pb n="7"/>
         <lb/>uantage, mais que faiſant eſtime- partieuliee de
         <lb/>cous les deux, qu’il le prioir denepainr ſonger àen
         <lb/>venir aux mains, que ſi le mal-heur arriuoit quiil fult
@@ -322,8 +320,7 @@
         <lb/>intereſts eſtoient deſia enre les mains de Rlà
         <lb/>deſſus chacun ſereira claſoy, mais ſi deflon.M..
         <lb/>de Nemoirs ſongeoit à ce qui n arrua le lone
-        <lb/>main, il l diſſimlaſ̀ bien, que M. la Prino aleu
-        <pb n="8"/>
+        <lb/>main, il l diſſimlaſ̀ bien, que M. la Prino aleu <pb n="8"/>
         <lb/>8
         <lb rend="¬" break="no"/>bmas peu ſe perſuador qu’il en fut arriué, ce que
         <lb/>ddapuis tous les gens de bien dé́plorent auec tant
@@ -353,8 +350,7 @@
         <lb rend="¬" break="no"/>neſme, que les parolles que M. de Ncmours luy
         <lb rend="¬" break="no"/>auoitdittes enſorape eftientaearque infail
         <lb rend="¬" break="no"/>lille de quelque deſſeip, &amp; ainf ns penſer à Mi de
-        <lb/>Beaufor; s’e all pnier Died au graadAuguſtins,
-        <pb n="9"/>
+        <lb/>Beaufor; s’e all pnier Died au graadAuguſtins, <pb n="9"/>
         <lb/>ooecftant en deuotion, elle saduiſa d’enuoyer ſca
         <lb rend="¬" break="no"/>uoir des nounelles, ſe retira chez elle ſas pen
         <lb rend="¬" break="no"/>ſeraàautre choſe, les premieres qu’elle en apprit fu
@@ -382,8 +378,7 @@
         <lb/>Beaufort ſe mocqueroit de luy &amp; qu’il ne vie ndroit
         <lb/>point aſſeurement, puis qu’il voyoit qu’il y auois
         <lb/>deſia pres d’vne heure que Vilar eſtoit arriué́ ſar.s
-        <lb/>C
-        <pb n="10"/>
+        <lb/>C <pb n="10"/>
         <lb/>voir celuy qui le deuoit ſuiure, l’impatience com
         <lb rend="¬" break="no"/>mençoit à le prendre, lors qu’il vit arriuer le ſieur
         <lb/>de Ericour Eſcuyer de Monſiaur de Beaufort qul
@@ -410,8 +405,7 @@
         <lb/>faire reü̈ſſir, que les hommes s’eſloignoient du lieu
         <lb/>ou ils paſſoit, &amp; que le quartier de leur Rendez
         <lb rend="¬" break="no"/>vous s’eſtoit ce iour deſerté pour faire reü̈ſſir leur
-        <lb/>deſſein; enfin Monſieur de Beaufort arriua à̀
-        <pb n="11"/>
+        <lb/>deſſein; enfin Monſieur de Beaufort arriua à̀ <pb n="11"/>
         <lb/>21
         <lb/>IHoſtel de Vandoſme aue’ le Comte de Boury,
         <lb/>Ericour, Brilet, &amp; Deſry, ils s’en allerent au Mar
@@ -439,8 +433,7 @@
         <lb/>de Monſieur le Duc de Nemours vne perte des
         <lb/>plus conſiderables qu’elle ayt iamais fait de cette
         <lb/>nature, &amp; Paris principallement pert auiour
-        <lb rend="¬" break="no"/>d’huy vn de ſes plus fidels protecteurs, ce grand
-        <pb n="12"/>
+        <lb rend="¬" break="no"/>d’huy vn de ſes plus fidels protecteurs, ce grand <pb n="12"/>
         <lb/>2.
         <lb/>. 2
         <lb/>-¬-
@@ -471,8 +464,7 @@
         <lb/>de recoopenſe, &amp; puis que i ſçay fort bien que ie n’en
         <lb/>oy point merié de ſa bonté par mes ſeruices, qus ſa
         <lb/>Maiefté aottende que n’en puiſſa eſperer par l’eſlagiſ
-        <lb rend="¬" break="no"/>ſement
-        <pb n="13"/>
+        <lb rend="¬" break="no"/>ſement <pb n="13"/>
         <lb/>13
         <lb/>ſeame de Meßieurs les Praces, de l’intereſt deſquels
         <lb/>E bie das mode e ſcçanroit me ſeparer, aſſeurez-luy
@@ -530,8 +522,7 @@
         <lb rend="¬" break="no"/>auoit reçeie ànls deffaite du Mareſchal d’Hoe
         <lb rend="¬" break="no"/>quincourt; enfin depuis qu’il a eſté à la teſte des
         <lb/>trouppes pour Ie ſeruice du publicq, on e l’a ia
-        <lb rend="¬" break="no"/>mais veu qu’auoe les marques ide l’aitié qu’il
-        <pb n="15"/>
+        <lb rend="¬" break="no"/>mais veu qu’auoe les marques ide l’aitié qu’il <pb n="15"/>
         <lb/> 15
         <lb/>auoit pour nous, que nous pouuons aſſeurer
         <lb/>eſtre ſi grande, que ſa vie ne luy eſtoit pas ſi chere
@@ -541,8 +532,7 @@
         <lb/>neration ineffaçable de nos cœurs, ſi nous eſtions
         <lb/>auſi reconnoiſſans, qu’il auoit de bonté pour
         <lb/>nhous.
-        <lb/>FIN.
-        <pb n="16"/>
+        <lb/>FIN. <pb n="16"/>
         <lb/>
         <lb rend="¬" break="no"/>.
         <lb rend="¬" break="no"/>.

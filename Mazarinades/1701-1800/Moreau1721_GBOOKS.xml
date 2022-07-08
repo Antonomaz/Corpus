@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau1721_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1721_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -41,17 +37,19 @@
           <title source="Moreau">Interprète (l') des écrits du temps, tant en proses (sic) qu'en
             rimes, et son sentiment burlesque sur iceux.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Munich</settlement>
+            <settlement ref="geonames:2867714">Munich</settlement>
             <institution>Bibliothèque de l'Etat de Bavière</institution>
             <repository>BSB / Außenmagazin</repository>
             <idno type="cote">4 Gall.g. 201</idno>
@@ -83,7 +81,22 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1721 . Interprète (l') des écrits du temps, tant en proses (sic) qu'en
+          rimes, et son sentiment burlesque sur iceux. Paris, 1649, 8 pages. Après avoir nommé les
+          cinq meilleures pièces burlesques, Naudé dit, p. 283 du Mascurat : « Pour la sixième, il
+          faut mettre, si j'en suis crû, l'Interprète des écrits du temps, sinon pour la bonté de
+          ses rimes, au moins pour avoir écrit avec plus de jugement que tous les autres , en ce
+          qu'il se moque plaisam ment de la prodigieuse quantité et du peu de génie de tous ces
+          poëtes. » C'est fort bien ; mais il fallait faire quelque réserve « à cause des horribles
+          saletés que cette pièce vomit contre le précepte nil dictu fœdum. « L'Interprète n'est pas
+          plus pur que le Ministre d'État flambé ou la Plainte du carnaval. J'ajoute qu'il est des
+          plus communs. L'auteur a intercalé dans ses vers ce couplet de Blot : « Cette cabale est
+          mal habile D'avoir choisi l'hostel de ville Pour conférer de ses exploits. Leur esprit qui
+          toujours s'élève, Ne devoit pas avoir fait choix D'un lieu si proche de la Grève. Et la
+          réponse d'un anonyme : Si Conty, Beaufort, Longueville Ont fait choix de l'hostel de
+          ville, N'ont-ils pas fait bien prudemment ? Dedans la Grève, sans descendre, Ils pourront
+          voir commodément Le Mazarin qu'on y doit pendre. »</p>
       </abstract>
       <textClass>
         <keywords>
@@ -92,6 +105,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>

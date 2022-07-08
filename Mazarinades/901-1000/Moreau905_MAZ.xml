@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau905_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau905_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -38,20 +39,21 @@
             ville de Bordeaux, &amp; autres de la province de Guyenne, qui se sont unis à
             icelle.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-01-22">à partir du 22 janvier 1652</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49190</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49190" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49190"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14319</idno>
@@ -83,11 +85,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions : à Poitiers, par les imprimeurs commandés de Sa
+        <p source="Mazarine">Autres éditions : à Poitiers, par les imprimeurs commandés de Sa
           Majesté, 1652, 7 p. ; à Rouen, chez Jean Viret, 7 p. Acte daté du 10 décembre 1651. -
           Publication ordonnée par arrêt du conseil d'État du 23 décembre 1651. - D'après Hubert
           Carrier, texte paru à Poitiers fin décembre 1651 ou début janvier 1652, à Paris à partir
           du 22 janvier 1652 (Bibliothèque Mazarine, Ms 4682-2, f. 157v).</p>
+        <p source="Moreau">905. Déclaration du roi contre les officiers et habitants ‘ de la ville
+          de Bordeaux, et autres de la province de Guyenne qui se sont unies à icelle. Poitrers, par
+          les imprimeurs commandés de Sa Majesté, 1652, 7 pages. Du 10 décembre 1651. La publication
+          en a été ordonnée par arrêt du conseil, en date du 23 décembre. 1l y en a une édition de
+          Paris, par les imprimeurs du roi, 8 pages, et une de Rouen, Jean Viret, 7 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/> a
+      <p><pb n="9"/> a
         <lb/>DECLARATION
         <lb/>DV ROY.
         <lb/>CONTRE LES OFFICIERS
@@ -119,7 +125,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires
         <lb/>du Roy.
         <lb/>M. DC. LII.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſte</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſte</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>LOVIS par la grace de Dieu Roy de France &amp; de

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau306_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau306_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -45,13 +46,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49203</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49203" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49203"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14552</idno>
@@ -83,9 +83,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En réalité arrêt portant surséance à l'enregistrement de la déclaration
+        <p source="Mazarine">En réalité arrêt portant surséance à l'enregistrement de la déclaration
           (note d'Hubert Carrier, Bibliothèque Mazarine, Ms 4682-3, f. 150). Signé "Guyet". Daté du
           12 janvier 1652.</p>
+        <p source="Moreau">306. Arrêt de la cour de parlement, portant cassation de la déclaration,
+          donnée contre monseigneur le prince de Condé. Paris, Nicolas Vivenay, 1652, 4 pages. Daté
+          du 12 janvier 1652. Le titre n’est pas parfaitement exact, car la déclaration ne fut pas
+          cassée ; seulement il fut sursis à l’enre- gistrement. * Nicolas Vivenay a imprimé tout ce
+          qu’on lui a présenté pour le prince de Condé, sans choix, sans examen. Aussi les pièces
+          qui sont sorties de ses presses, sont-elles fort suspectes ; mais 1l gagna, à ce métier,
+          de devenir l’imprimeur du prince qui lui donna un atelier dans son hôtel.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT

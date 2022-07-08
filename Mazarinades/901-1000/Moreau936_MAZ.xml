@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau936_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau936_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -53,13 +54,12 @@
             <measure unit="page" quantity="19"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49787</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49787" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49787"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14361</idno>
@@ -91,7 +91,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">A la fin, mention de la lecture, publication et enregistrement au
+        <p source="Mazarine">A la fin, mention de la lecture, publication et enregistrement au
           parlement de Paris le 24 octobre 1648, signée "Du Tillet". 2 états : p. 5, fin l. 10 "sur
           nostre" (état A) / "sur no-" (état B) ; p. 6 chiffrée 8 (A) / chiffrée 6 (B) ; p. 18, l. 3
           "Charge" (A) / "Chasge" (B). Une autre édition de ce titre porte un extrait du privilège
@@ -101,6 +101,13 @@
           Paris et en province. Marque des Estienne au verso du dernier feuillet (marques
           d'impressors, ID 0068544a). D'après Hubert Carrier, texte paru le 26 octobre 1648
           (Bibliothèque Mazarine, Ms. 4682-2, f. 169v).</p>
+        <p source="Moreau">936. Déclaration du roi, portant réglement sur le fait de la justice,
+          police, finances et soulagement des sujets de Sa Majesté, vérifiée en parlement , le 24
+          octobre 1648. Paris, par les imprimeurs et libraires ordinaires J’en ai vu une autre
+          édition, suivie de l’arrét de vérification en la chambre des Comptes, le 27 octobre,
+          Paris, Denys de Cay, 1648; et une autre encore, où se Îit l’arrêt de vérification de la
+          chambre des Comptes de Normandie, le 16 décembre, Rouen , David du Petit-Val, 1648, 22
+          pages. La cour des A ydes n’a vérifié la déclara- tion que le 30 décembre.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -117,8 +124,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>DECLARATION
         <lb/>DV ROY.
         <lb/>PORTANT REGLEMENT SVR
@@ -130,7 +136,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires
         <lb/>du Roy.
         <lb/>M. DC. XLVIII.
-        <lb/><imprimatur>Auec Pruilege de ſa Maieſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Pruilege de ſa Maieſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

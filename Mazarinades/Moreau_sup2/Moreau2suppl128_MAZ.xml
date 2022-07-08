@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2suppl128_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2suppl128_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -45,13 +46,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49223</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49223" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49223"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11407</idno>
@@ -83,12 +83,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition publiée la même année à Rouen par les imprimeurs
+        <p source="Mazarine">Autre édition publiée la même année à Rouen par les imprimeurs
           ordinaires du roi (Moreau 2189). Contresignée "De Guenegaud". À la fin : "Escrit à Saumeur
           le dernier fevrier mil six cens cinquante-deux". D'après Hubert Carrier, texte paru le 6
           mars 1652, cette édition précédant celle de Rouen décrite par Célestin Moreau sous le n°
           2189 de la "Bibliographie des mazarinades" (Bibliothèque Mazarine, Ms 4682-3, f.
           274v).</p>
+        <p source="Moreau">128. Lettre du roy ‘envoyée à monsieur le maréchal de Lhospital,
+          gouverneur de la ville de Paris. Paris, Pierre Rucolet, 1652; à pages Mème pièce que le n°
+          2180 de la Bibliographie.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -108,8 +111,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE
         <lb/>DV ROY.
         <lb/>Enuoyée a Monſieur le Mareſchal

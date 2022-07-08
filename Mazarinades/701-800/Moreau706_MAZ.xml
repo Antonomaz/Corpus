@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau706_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau706_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -49,13 +50,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48988</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48988" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48988"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12642 bis</idno>
@@ -87,10 +87,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Faux codicille. Réédité à Rouen à la suite du "Gazetier désintéressé"
+        <p source="Mazarine">Faux codicille. Réédité à Rouen à la suite du "Gazetier désintéressé"
           (BM00787), d'après Hubert Carrier (Bibliothèque Mazarine, Ms 4682-2, f. 63). Texte daté du
           7 mars 1649, paru dans la 2e semaine de mars 1649 d'après H. Carrier (Bibliothèque
           Mazarine, Ms 4682-2, f. 62v).</p>
+        <p source="Moreau">706. Codicile très-véritable de Jules Mazarin, fait par la permission du
+          roi dans Saint-Germain-en-Laye. Paris, Claude Morlot, 1649, 8 pages. Daté du 7 mars. On
+          comprend qu’il n’est pas plus véritable que le Testament, — ä</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>CODICILE
         <lb/>TRES-VERITABLE
         <lb/>DE IVLES
@@ -120,7 +122,8 @@
         <lb/>Chez CLAVDE MORLOT, ruë de la Bucherie, aux
         <lb/>vieilles Eſtuuves.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>AVEC PERMISSION</imprimatur>.<pb n="10"/>
+        <lb/>
+        <imprimatur>AVEC PERMISSION</imprimatur>.<pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>CODICILE TRES-VERITABLE

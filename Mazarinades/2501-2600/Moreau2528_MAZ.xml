@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2528_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2528_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -27,11 +28,13 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14946"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Le noble confus, ou Le poinct d'argent du temps present. Dialogue
             de deux gentils-hommes, &amp; d'un valet depuis peu arrivez en cour.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-01" notAfter="1649-03">pendant le blocus de
             Paris</date>
@@ -39,13 +42,12 @@
             <measure unit="page" quantity="11"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49131</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49131" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49131"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13528</idno>
@@ -77,9 +79,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Publiée aussi sous le titre "Le cavalier démonté" (Moreau 661). Texte
+        <p source="Mazarine">Publiée aussi sous le titre "Le cavalier démonté" (Moreau 661). Texte
           paru durent le blocus de Paris d'après Hubert Carrier (Bibliothèque Mazarine, Ms 4682-4,
           f. 90v).</p>
+        <p source="Moreau">2528. Noble (le) confus, ou le Point d'argent du temps présent, dialogue
+          de deux gentilshommes et d'un valet depuis peu arrivés en Cour. Paris, 1649, 11 pages.
+          Même pièce que le Cavalier démonté, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,8 +102,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE NOBLE
         <lb/>CONFVS,
         <lb/>OV

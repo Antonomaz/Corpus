@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Socard84_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Socard84_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,13 +43,12 @@
             <measure unit="page" quantity="22"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49057</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49057" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49057"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10574</idno>
@@ -80,9 +80,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers, stances suivies d'une élégie. Stances dédicatoires au maréchal
+        <p source="Mazarine">En vers, stances suivies d'une élégie. Stances dédicatoires au maréchal
           de Schomberg ; extrait de la permission, 29 octobre 1649, signé "d'Aubray". "A la
           noblesse. Stances." signé "C. M."</p>
+        <p source="Socard">84. Tombeav (Le) de l'Espagne ou les victoires des Francois. Dedié à
+          Monseigneur le Mareschal de Schom- berg. ÀA Paris, chez Guillaume Sassier, 1649. In-4° de
+          22 pages. On trouve, sous ce titre, les pièces de vers suivantes : Stances à Mgr de
+          Schomberg; stances à la Noblesse, signées C. M.; le tombeav de l'Es- pagne; les vœvx et
+          soubaits de la France povr la prosperité de ses Armes» Elegie.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,9 +105,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
-        <pb n="9"/>
+      <p><pb n="1"/><pb n="9"/>
         <lb/>LE
         <lb/>TOMBEAV
         <lb/>DE
@@ -116,7 +119,8 @@
         <lb/>ordinaire du Roy, ruë des Cordiers, proche
         <lb/>Sorbonne, aux deux Tourelles.
         <lb/>M. DC. XXXXIX.
-        <lb/><imprimatur>Auec Permiſßion.</imprimatur>
+        <lb/>
+        <imprimatur>Auec Permiſßion.</imprimatur>
         <pb n="10"/>
         <pb n="11"/>
         <l>
@@ -222,8 +226,7 @@
         <l>
           <lb/>A LA NOBLESSE.</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>STANCES</l>
         <l>

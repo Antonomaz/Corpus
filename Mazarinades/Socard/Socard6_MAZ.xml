@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Socard6_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Socard6_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -47,13 +48,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49799</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49799" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49799"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14253</idno>
@@ -85,8 +85,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Acte et lettre signés "Suau". Acte daté du 12 janvier 1652 et lettre du
+        <p source="Mazarine">Acte et lettre signés "Suau". Acte daté du 12 janvier 1652 et lettre du
           18 janvier.</p>
+        <p source="Socard">6. Arrest de la Covr de Parlement de Bovrdeavx, donné les Chambres
+          assemblées contre la déclaration du Roy publiée à Blaye le huictiesme du present mois. Et
+          declare le Cardinal Mazarin et ses adherans criminels de leze-Majesté. Ensemble la Lettre
+          dudit Parlement escrite à Monseigneur le Duc d’Orleans. À Paris, la Veufue I. Gvillemot,
+          1652. In-4° de 8 pages. Daié du 12 janvier 1652 et signé : Svav.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT

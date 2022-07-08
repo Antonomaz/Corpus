@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau217_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau217_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -39,20 +40,21 @@
             Ville, &amp; pour faire amener &amp; apporter seurement &amp; librement les vivres à
             Paris.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Antonomaz" when="1649-01-08">8 janvier 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49878</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49878" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49878"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° A 12881-19</idno>
@@ -84,7 +86,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions de compositions typographiques différentes (titre,
+        <p source="Mazarine">Autres éditions de compositions typographiques différentes (titre,
           adresse et texte) : titre différent, sans mention de publication et l'arrêt est signé
           "Guyet" (BM00972) ; avec mention de publication signée "Jossier" et l'arrêt avec la
           signature "Du Tillet" (BM00971, BM00973 et BM00975). A également été publié dans un
@@ -93,6 +95,12 @@
           publication par Jean Jossier datée du "huictiesme iour de Ianuier mil six cens
           quarente-neuf". Dernière ligne du titre : "porter seurement &amp; librement les Viures à
           Paris.". - Arrêt signé "Du Tillet".</p>
+        <p source="Moreau">217. Arrêt de la cour de parlement , donné, toutes les chambres
+          assemblées, le huitième jour de janvier 1649, par lequel il est ordonné, que le cardinal
+          Mazarin videra le royaume, et qu’il sera fait levée de gens de guerre, pour la sûreté de
+          la ville et pour faire amener et apporter sûrement et librement les vivres à Paris. Paris,
+          par les imprimeurs et libraires ordinaires du roi, 1649, 4 pages. , C’est l’édition
+          officielle ; l’arrêt est daté à la fin et porte la signature autographe de Du Tillet.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -110,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>ARRFST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT
@@ -127,7 +134,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordinai¬
         <lb/>res du Roy.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſte</imprimatur>.<pb n="8"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſte</imprimatur>.<pb n="8"/>
         <pb n="9"/>
         <lb/>EXTRAIT DES REGISTRES
         <lb/>de Parlement.

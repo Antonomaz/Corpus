@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau786_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau786_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -50,7 +51,9 @@
             soulager le peuple. V. On doit fermer au Clergé toutes les portes du gouvernement, afin
             qu'il ne puisse jamais plus entrer dans le maniment des affaires d'Estat.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-06-07" notAfter="1652-06-14">deuxième semaine de
             juin 1652</date>
@@ -58,13 +61,12 @@
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50004</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50004" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50004"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12687</idno>
@@ -96,7 +98,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">4 états : p. 4, l. 29 "sans vous amuser" (A et D) / "sans nous amuser"
+        <p source="Mazarine">4 états : p. 4, l. 29 "sans vous amuser" (A et D) / "sans nous amuser"
           (B et C) ; p. 7, l. 15 "contraincts" (A et D) / "contraires" (B et C) ; numéros des p. 9
           et 12 mal imprimés (A) / numéros des p. 9 et 12 bien imprimés (B et C) / n° des p. 12 et
           13 mal imprimés (D) ; p. 13, premier mot de la dernière l. "emps" (A et B) / "temps" (C et
@@ -106,6 +108,16 @@
           Montandré donnée par lui-même, "Le contre-coup..." se place juste avant "Le manuel
           politique", daté par un contemporain du 14 juin (Bibliothèque Mazarine, Ms. 4682-2, f.
           87v).</p>
+        <p source="Moreau">786. Contrecoup (le) du coup de partie, faisant voir qu’après
+          l’établissement d’un régent , 1. on doit faire commandement à toute sorte d’officiers,
+          tant géné- raux que gouverneurs de villes et de provinces , de remettre la personne du roi
+          entre les mains du régent ; 2. on doit faire le procès à tous ceux qui ont contre- venu à
+          la déclaration donnée contre Mazarin ; 3. on doit casser tout ce qui se sera fait en cour
+          depuis le commencement de ces troubles ; 4. on doit ravir aux partisans le bien qu’ils ont
+          pillé au peuple pendant le ministère du Mazarin , pour soulager le peuple; 5. on doit
+          fermer au clergétoutes les portes du gouvernement, afin qu’ils ne puissent plus jamais
+          entrer dans le mani- ment des affaires d’État. (S. 1.), 1652 , 16 pages. Une des pièces de
+          Dubose Montandré.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -123,8 +135,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>CONTRE-COVP
         <lb/>DV COVP DE PARTIE.

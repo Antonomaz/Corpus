@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3214_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3214_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -54,11 +50,11 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 312274</idno>
@@ -90,9 +86,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Rel. à la suite de 312 679 : Recueil de plusieurs pièces
-          curieuses.- Sl., 1649.- 4̊</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Rel. à la suite de 312 679 : Recueil de plusieurs pièces curieuses.-
+          Sl., 1649.- 4̊</p>
+        <p source="Moreau">3214. Relation véritable de ce qui s'est passé à la prise de la ville de
+          Harfleur près le Havre par l'armée de monseigneur le duc de Longueville, ensemble la liste
+          de tous les officiers de son armée. Paris, Nicolas de La Vigne, 1649, 8 pages. Pièce
+          curieuse par les noms.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,6 +101,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -116,8 +120,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>RELATION
         <lb/>VERITABLE
         <lb/>pe oi est pse
@@ -127,8 +130,7 @@
         <lb/>se l.
         <lb/>3
         <lb/>i i e oiu iele le
-        <lb/>te dero
-        <pb n="2"/>
+        <lb/>te dero <pb n="2"/>
         <lb/>1
         <lb/>la
         <lb/>s
@@ -140,8 +142,7 @@
         <lb/>.
         <lb rend="¬" break="no"/>
         <lb rend="¬" break="no"/>
-        <lb rend="¬" break="no"/> ooe
-        <pb n="3"/>
+        <lb rend="¬" break="no"/> ooe <pb n="3"/>
         <lb/>5
         <lb/> â : b&amp;A8
         <lb/> T T
@@ -166,8 +167,7 @@
         <lb rend="¬" break="no"/> quante cheuaux, le gouuerneur du Haure don
         <lb rend="¬" break="no"/> na ordre que la Compagnie du ſieur du Parc
         <lb/> allaſt ſe iettet dans Harfleur aſſiſté des ſieurs
-        <lb/> de Liſle &amp; Preboys Lieutenant &amp; Enſeigne, &amp;
-        <pb n="4"/>
+        <lb/> de Liſle &amp; Preboys Lieutenant &amp; Enſeigne, &amp; <pb n="4"/>
         <lb/>1
         <lb/>4
         <lb/>1
@@ -198,8 +198,7 @@
         <lb/>ceats cnquante hommes ſous la conduite des
         <lb/>ſieurs de Beauplan, laſſac Capitaines, &amp; les
         <lb/>ſieurs Beauregard, &amp; la Guillotiere Lieutenats,
-        <lb/> nais
-        <pb n="5"/>
+        <lb/> nais <pb n="5"/>
         <lb/>5
         <lb/>mais eſtans proches de Harfleur ayant deſcou
         <lb rend="¬" break="no"/>uert quelque Caualerie, l’eſpouuante les ſaiſit,
@@ -226,8 +225,7 @@
         <lb rend="¬" break="no"/>tel ſur Bollebec dans lequel il prit cinqpieces de
         <lb/>Campagne leſquelles il fit conduire à Roüen le
         <lb/>Mercredy vingt-quatrieſme du Courant.
-        <lb/>Le Mercredy la nuict qu’il eſt ſorty quatre
-        <pb n="6"/>
+        <lb/>Le Mercredy la nuict qu’il eſt ſorty quatre <pb n="6"/>
         <lb/>1
         <lb/>l
         <lb/>
@@ -287,8 +285,7 @@
         <lb/>Regiment de S. Paul.
         <lb/>Le Cheualier de Rotelin.
         <lb/>J Du eferoor,
-        <lb rend="¬" break="no"/> einaadaat.
-        <pb n="7"/>
+        <lb rend="¬" break="no"/> einaadaat. <pb n="7"/>
         <lb/> 57
         <lb/>Le Marquis d’Hecot. Deuaux.
         <lb/>S. Icques.
@@ -359,8 +356,7 @@
         <lb/>J Douuille.
         <lb/>J Premare.
         <lb/> Vieux Fume.
-        <lb/> Pe leiue n.
-        <pb n="8"/>
+        <lb/> Pe leiue n. <pb n="8"/>
         <lb/>1
         <lb/>1
         <lb/>1

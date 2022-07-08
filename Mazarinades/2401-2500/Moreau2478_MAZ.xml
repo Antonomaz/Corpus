@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2478_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2478_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -29,14 +30,14 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14930"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Le miroir des souverains ou se void l'art de bien regner, et
             quelles sont les personnes qu'ils doivent élire pour estre leurs commensaux, leurs
             domestiques, leurs serviteurs, leurs conseillers, &amp; leurs ministres d'Estat. Quel
             est le devoir de tous ces divers esprits ; &amp; quelle doit estre leur
             recompense.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher ref="isni:000000007728855X">
+          <publisher ref="isni:0000000506791357">
             <persName>
               <forename>François</forename>
               <surname>Noël</surname>
@@ -47,13 +48,12 @@
             <measure unit="page" quantity="50"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49109</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49109" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49109"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13508</idno>
@@ -85,8 +85,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Contrairement à ce qu'indique Célestin Moreau, tous les exemplaires
+        <p source="Mazarine">Contrairement à ce qu'indique Célestin Moreau, tous les exemplaires
           connus portent la date erronée "M. DC. LXIX.". </p>
+        <p source="Moreau">2478. Miroir (le) des souverains, où se voit l'art de régner, et quelles
+          sont les personnes qu'ils doivent élire pour être leurs commensaux, leurs domestiques,
+          leurs serviteurs, leurs conseillers et leurs ministres d'État, quel est le devoir de ces
+          divers esprits, et quelle doit être leur récompense. Paris, François Noël, 1649, 50 pages.
+          C'est le moins commun des Miroirs et le plus mauvais.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE MIROIR
         <lb/>DES SOVVERAINS
         <lb/>OV SE VOID L’ART DE BIEN

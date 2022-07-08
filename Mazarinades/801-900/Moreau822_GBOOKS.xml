@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau822_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau822_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -53,12 +49,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement/>
-            <institution>Bibliothèque municipale de Lyon</institution>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
             <repository/>
             <idno type="cote"/>
           </msIdentifier>
@@ -89,7 +85,10 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">822. Courrier (le) de la Guyenne, apportant le véritable état des
+          affaires. Paris, Jacob Chevalier, 1652, 8 pages. Défense de l’Ormée contre le Courrier
+          bourdelois.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,6 +97,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -113,8 +116,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>LE
         <lb/> e
         <lb/>I
@@ -128,8 +130,7 @@
         <lb/>e l
         <lb/>u
         <lb/>ce IAco su , roche
-        <lb/>M. DC. LIl.
-        <pb n="2"/>
+        <lb/>M. DC. LIl. <pb n="2"/>
         <pb n="3"/>
         <lb/>3
         <lb/>tteêâß
@@ -153,8 +154,7 @@
         <lb/>oi paſſe du Lainguedoe auee des Toupes au ſe
         <lb rend="¬" break="no"/> coons de la Guyenne, où elles auoient combatu eeſ
         <lb rend="¬" break="no"/>u du Comé d’Harcourt. L’Autheur ne pouuoi
-        <lb/> e méprendre au delA, on n’a veu on Guyenne nm
-        <pb n="4"/>
+        <lb/> e méprendre au delA, on n’a veu on Guyenne nm <pb n="4"/>
         <lb/>Vicomte, ny ſesTroupes. On donne encore toutes
         <lb/>les ſémaines quelque mauuaiſe imptreſſion touchant
         <lb/>l’Aſſemblés qu’on ſurnome de ſOmaé, &amp; l’on écit
@@ -183,8 +183,7 @@
         <lb/>Ville puiſſe s’aſſeabler. Et pour faire toucher la
         <lb/>verité au doigt, il ne faut que ſe ſouuenir de ce qui.
         <lb/> ſe paſſa le 5. de May dernier, lors que les Oriſtei
-        <lb/>eſtans
-        <pb n="5"/>
+        <lb/>eſtans <pb n="5"/>
         <lb/>edtans ſoubs les armes, le Parlement commanda aux
         <lb/>lurats de faire marcher contr’eux les Compagnies
         <lb/>de la Ville; ne s’en eſtant pas trouué vne qui l’en
@@ -212,8 +211,7 @@
         <lb/> ottiſer pour leuer vn Regiment: dequoy ſn Al
         <lb rend="¬" break="no"/>eſle témogna par la Lere lur eſttetrt obigée.
         <lb/>lls ont touſiours ſoûms au ̃ &amp; aux u: ats
-        <lb/> luts aduis ſur les moyens de. ieui t pu! qae; &amp;
-        <pb n="6"/>
+        <lb/> luts aduis ſur les moyens de. ieui t pu! qae; &amp; <pb n="6"/>
         <lb/>s’ils ont chaſſé de leur Ville quelques-vns de ee
         <lb/>Corps, ce n’a eſté qu’à l’induction de leurs Confre
         <lb rend="¬" break="no"/>res qui les ont indiquez. Outre que ſi les moyensde
@@ -241,8 +239,7 @@
         <lb rend="¬" break="no"/>ſoit vn effet d’vne entrepriſe pleine de violence, ie.
         <lb/>veux apprendre au public que leur eloignement eſt,
         <lb/>p eéalablement deliberé dans la Chambie qu’onſur
-        <lb rend="¬" break="no"/>nomme d’Expuſſion, où preſide Monſieur le Pince
-        <pb n="7"/>
+        <lb rend="¬" break="no"/>nomme d’Expuſſion, où preſide Monſieur le Pince <pb n="7"/>
         <lb/>e de Cony, aſſiſté des Officiers du Parlement, &amp; des
         <lb/>e lurats de la Ville auec le Procureur Syndic. De ſor
         <lb rend="¬" break="no"/> le que ces zelez ou Ormiſtes ne ſont que les Denõ
@@ -270,8 +267,7 @@
         <lb/>Voila la nature de l’Aſſemblée, &amp; des actions de
         <lb/>l’Ormé́e.
         <lb/>Apreés ceét Eclairciſſement dont ie me porteray
-        <lb/>pour guarand, en cas qu’il ſoit cotredit, ie laiſſe à iu¬
-        <pb n="8"/>
+        <lb/>pour guarand, en cas qu’il ſoit cotredit, ie laiſſe à iu¬ <pb n="8"/>
         <lb/>1
         <lb/>ger aux Deſ-intereſſez quel accueil meritent lesarti¬,
         <lb/>cles de la Gazette, &amp; le Courier Bourdelois, qui trai

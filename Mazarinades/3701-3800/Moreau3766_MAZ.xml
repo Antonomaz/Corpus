@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3766_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3766_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -56,13 +57,12 @@
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49763</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49763" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49763"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13890</idno>
@@ -94,7 +94,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">10 états : p. de titre "Testament solemnel du [...] baricades et" (état
+        <p source="Mazarine">10 états : p. de titre "Testament solemnel du [...] baricades et" (état
           A, E et F) / "Testament du [...] baricades et" (états B et D) / "Testament solemnel du
           [...] baricades, et" (état C, G, H, I et J) ; p. 3, l. 8/9 "de-/deliberation" (A, B, D, H
           et J) / "de-/liberation" (C, E, F, G et I) ; p. 4, l. 6 "teusiours" (A, B, D, E et F) /
@@ -109,6 +109,12 @@
           titre, d'autres portent une virgule après "baricades". D'après H. Carrier, texte paru la
           troisième semaine de février 1649 (entre le 17 et le 21) (Bibliothèque Mazarine, Ms.
           4682-5, f.302v).</p>
+        <p source="Moreau">3766. Testament solennel du cardinal Mazarin par lui fait au temps des
+          barricades et trouvé depuis sa sor- *'e ^e Paris en son cabinet, daté du 29 août 1648,
+          avec l'avertissement de la vente de ses biens, etc., sui vant l'arrêt de la cour du mois
+          précédent. Paris, François Musnier, 1649 , 16 pages. Il faut y joindre le Codicite. Le
+          succès de ce pamphlet , en effet assez spirituel , donna a un poëte du temps l'idée de le
+          traduire en vers sous le titre de :</p>
       </abstract>
       <textClass>
         <keywords>
@@ -128,8 +134,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>TESTAMENT
         <lb/>SOLEMNEL DV
         <lb/>CARDNAL MAZARIN
@@ -144,7 +149,8 @@
         <lb/>Chez FRANCOIS MUSNIER , au mont ſainct
         <lb/>Hilaire pré́s le puys Certain.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Permißion</imprimatur>.<pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Permißion</imprimatur>.<pb n="10"/>
         <pb n="11"/>
         <lb/>LE TESTAMENT DV CARDINAL
         <lb/>n, trouué en ſon cabinet, par luy dreſſe

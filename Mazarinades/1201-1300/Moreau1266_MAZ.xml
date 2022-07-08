@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1266_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1266_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,20 +32,21 @@
           <title source="Mazarine">Epitaphe de la sainte Boutique d'un maistre savetier de la rue
             des Prescheurs.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-04-15">mi-avril 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50287</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50287" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50287"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10904</idno>
@@ -76,12 +78,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. D'après Célestin Moreau, la "sainte Boutique"
+        <p source="Mazarine">En vers octosyllabes. D'après Célestin Moreau, la "sainte Boutique"
           était le sobriquet du savetier Thomas Mouthié, membre de la milice urbaine parisienne
           durant le blocus. 2 états (A/B) : p. de titre "sainte Boutique"/"venerable Boutique" ; p.
           2, l. 1 "sainte"/"venerable", l. 27 "Siceron"/"Ciceron" ; p. 3 correctement
           chiffrée/chiffrée 6, l. 19 "Et" avec un E en petite capitale/en grande capitale. D'après
           Hubert Carrier, texte paru mi-avril 1649 (Bibliothèque Mazarine, Ms. 4682-2, f. 293v).</p>
+        <p source="Moreau">1266. Épitaphe de la sainte boutique d'un maîtrev savetier de la rue des
+          Prêcheurs. Paris, 1649, 4 pages. Sainte Boutique etait le sobriquet du savetier, qui
+          s’appelait Thomas Mouthié. Cependant j’ai vu deux autres exemplaires de cette pièce qui
+          portaient au titre : de la vénérable boutique.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,8 +104,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>EPITAPHE
         <lb/>DE LA SAINTE
         <lb/>BOVTIQVE

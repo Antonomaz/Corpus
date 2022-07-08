@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau345_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau345_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -54,13 +55,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48914</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48914" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48914"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14198</idno>
@@ -92,7 +92,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Faux arrêt daté du 18 janvier 1649, d'après Célestin Moreau suivant
+        <p source="Mazarine">Faux arrêt daté du 18 janvier 1649, d'après Célestin Moreau suivant
           Gabriel Naudé. Deux états, A/B : composition typographique différente ; p.3 "les fruits" /
           "des fruits" ; p. 4 "aide" / "ayde", "ressort de " / "ressort, de", "huitiesme /
           huictiesme". Autre émission (BM00064) à la même adresse portant au titre "fauteurs" au
@@ -101,6 +101,14 @@
           "Recueil de diverses pieces qui ont paru durant les mouvemens derniers de l'année 1649."
           (BM000059) D'après Hubert Carrier, texte paru dans la dernière semaine de janvier
           1649.</p>
+        <p source="Moreau">345. Arrêt de la cour de parlement de Rennes en Bretagne contre le nommé
+          Jules Mazarin et ses fauteurs et adhérents, par lequel ils sont tous déclarés criminels de
+          lèse majesté, tous leurs biens acquis et confisqués. Paris, veuve Théod. Pépingué et Est.
+          Maucroy, 1649, 4 pages. Daté du 18 janvier 1649. Naudé, page 16 du Mascurat, dit que cet
+          arrêt est faux ; et son opinion est confirmée par ce passage du Journal du Parlement, 1
+          février 1649 : « Ce jour, les colporteurs ayant vendu, par Paris, un arrêt du parlement de
+          Bretagne contre le cardinal Mazarin, et ledit arrêt s’étant trouvé faux , les exem-
+          plaires en furent saisis et déchirés, avec défense de les plus ex- poser. »</p>
       </abstract>
       <textClass>
         <keywords>
@@ -118,8 +126,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR DE PARLEMENT
         <lb/>de Rennes en Bretagne, contre

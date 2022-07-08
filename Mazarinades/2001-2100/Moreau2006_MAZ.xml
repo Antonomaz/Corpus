@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2006_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2006_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,7 +37,9 @@
           <title source="Mazarine">Lettre de monseigneur le prince de Condé a messieurs de
             Paris.</title>
           <pubPlace source="Mazarine" ref="geonames:2989317">Orléans</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" notBefore="1650-02-01" notAfter="1650-02-15">première quinzaine de
             février 1650</date>
@@ -44,13 +47,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49269</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49269" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49269"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15438-8</idno>
@@ -82,13 +84,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">ausse lettre. Autres éditions : Paris, 1650, 7 p. (BM00173) ; d'après
+        <p source="Mazarine">ausse lettre. Autres éditions : Paris, 1650, 7 p. (BM00173) ; d'après
           Hubert Carrier (Bibliothèque Mazarine, Ms 4682-3, f. 213v) [Lyon, 1650], 6 p. Titre de
           départ. Signé "C.". Probablement édité à Orléans d'après l'analyse par H. Carrier de
           l'exemplaire conservé à la Bibliothèque municipale d'Orléans et la présence de
           l'exemplaire Bibliothèque Mazarine M 15438-6, similaire au précédent, dans un recueil
           éditorial de pièces d'origine orléanaise. D'après H. Carrier, texte paru à Paris dans la
           1ère quinzaine de février 1650.</p>
+        <p source="Moreau">2006. Lettre de monseigneur le prince de Condé à mes sieurs de Paris.
+          Paris, 1650,7 pages. Signée C. Sotte.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -105,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>LETTRE
         <lb/>DE MONSEIGNEVR
         <lb/>LE

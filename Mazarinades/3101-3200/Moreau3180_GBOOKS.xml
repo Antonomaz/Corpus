@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3180_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3180_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -54,11 +50,11 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309429</idno>
@@ -90,8 +86,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Autre(s) variante(s) du titre Nouvelle, 1652</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Autre(s) variante(s) du titre Nouvelle, 1652</p>
+        <p source="Moreau">3180. Relation véritabie contenant la chasse donnée au comte d'Harcourt
+          devant Bordeaux, avec la défaite de $oç arrière-garde et l'arrivée du courrier du duc de
+          Lorraine. Paris, Jean Brunet, 1652, 8 pages. EUe se continue par celle qui suit :</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,6 +99,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -115,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>3o29
         <lb/>T
         <lb/>ſRELATION
@@ -130,16 +132,14 @@
         <lb/>s
         <lb/>A PARIS,
         <lb/>Chez lean Brvnr, rué Saincte Anne.
-        <lb/>M. DC. LI I.
-        <pb n="2"/>
+        <lb/>M. DC. LI I. <pb n="2"/>
         <lb/>
         <lb/> a
         <lb rend="¬" break="no"/>
         <lb rend="¬" break="no"/>e lALL
         <lb/>ûa E
         <lb/> 1
-        <lb/>21
-        <pb n="3"/>
+        <lb/>21 <pb n="3"/>
         <lb/>3
         <lb/> t h i, &amp; i 2 &amp;u d, ,e:
         <lb/>gge ; St e:
@@ -166,8 +166,7 @@
         <lb/>lreut pouuoir venir iuſqu’à Bordeaux, qui n’en
         <lb/>qu’àquinze ou ſeize lieüs, &amp; defait il y vint ſans
         <lb/>eun oſaele, &amp;s’en approcha à la: portée du ca
-        <lb rend="¬" break="no"/>non du coſté de Blancfort, où eſtant arriué, ilſe
-        <pb n="4"/>
+        <lb rend="¬" break="no"/>non du coſté de Blancfort, où eſtant arriué, ilſe <pb n="4"/>
         <lb/>campa &amp; fit feinte de les vouloit aſieger, leur en
         <lb rend="¬" break="no"/>4
         <lb/>uoyant vn Trompette les ſommer de le receuoir de
@@ -199,8 +198,7 @@
         <lb/>en ont donneé des teſmoignages aſſeurez à Mon
         <lb rend="¬" break="no"/>ſieur le Prince de Conty ſon frere, auquel ils ons
         <lb/>reitereé des vœux de fidelité.
-        <lb/>1
-        <pb n="5"/>
+        <lb/>1 <pb n="5"/>
         <lb/> Cete eſcarmouche s’eſt paſſée en vn lleu appellé
         <lb/>l raue à vn quart de lieue de Bordeaux, qui ett vn
         <lb/>pays couuert, fauorable au deſſein dudit Comte
@@ -231,8 +229,7 @@
         <lb/>rluit tous les peuples dans le deſeſpoir, &amp; furent
         <lb/>encore hier en foulle au Palais d’Orleans demander
         <lb/>B
-        <lb/>1
-        <pb n="6"/>
+        <lb/>1 <pb n="6"/>
         <lb/>auec inſtance qu’on leur fit prendre les armes poux
         <lb/>aller aà̀ Sainct Germain deliurer Sa Majeſté, c
         <lb/>qu’on leur accorda; ie croy que ce ſeroit bien le
@@ -262,8 +259,7 @@
         <lb/>&amp; fait des Comedies de nos mal-heurs, maintenant
         <lb/>qu’il ſe croit dans vn azile aſſuré, &amp; fauoriſé d’vne
         <lb/>Prouince à qui il va bien-toſt faire gouſter des fruits
-        <lb/>¬aaaa
-        <pb n="7"/>
+        <lb/>¬aaaa <pb n="7"/>
         <lb/>7
         <lb/>deſa raraite, comme il a fait aux autres Prouintes
         <lb/>qui l’ontretiré; mais ſi cette mal-heureuſe Prouin
@@ -293,8 +289,7 @@
         <lb/>que des auſſi-toſt qu’il ſe vit en faueur aupres du Roy
         <lb/>&amp;de la Reine, il fit diſgracier ceux meſme à̀ qui il
         <lb/>n auoit l’obligation, mettant toute ſa politique
-        <lb/>ans ſa fourberle, de laquelle il fit paroiſtre encore
-        <pb n="8"/>
+        <lb/>ans ſa fourberle, de laquelle il fit paroiſtre encore <pb n="8"/>
         <lb/>dernierement vne aſſez belle piece, lors que nos De
         <lb/>putez furent trouuer Sa Majeſté à ſainct Germai n
         <lb/>en Laye, s’eſtant fait habiller de gris, en groſſe bot

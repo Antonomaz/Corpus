@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2047_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2047_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -40,7 +36,7 @@
           <ref target="https://books.google.fr/books?id=oh9xxd0dJKEC&amp;hl=fr"/>
           <author>
             <persName>
-              <name>L.M.F.</name>
+              <addName type="initiales">L. M. F.</addName>
             </persName>
           </author>
           <persName role="received" ref="isni:0000000121223121">
@@ -51,18 +47,19 @@
             noble sire Jules Mazarin, cardinal, lui mandant tout ce qui s'est passé en France depuis
             son départ.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1652">1652</date>
           <extent>
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309879</idno>
@@ -94,7 +91,10 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2047. Lettre de proverbes d'un messire abbé, voisin de Compiègne, au
+          noble sire Jules Mazarin, cardinal, lui mandant tout ce qui s'est passé en France depuis
+          son départ. Paris, 1652, 16 pages. Signé L. M, F. Pièce plaisante et rare.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,6 +103,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -118,16 +121,14 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>0
         <lb/>LETTRE
         <lb/>DEPROVERBES.
         <lb/>u laeire eoiooes voſnn de
         <lb/> ontee.
         <lb/>-ee
-        <lb rend="¬" break="no"/>1
-        <pb n="2"/>
+        <lb rend="¬" break="no"/>1 <pb n="2"/>
         <lb/>¬¬7
         <lb/>3 a
         <lb/>i
@@ -143,8 +144,7 @@
         <lb rend="¬" break="no"/>
         <lb rend="¬" break="no"/>
         <lb rend="¬" break="no"/>
-        <lb rend="¬" break="no"/> oua Google
-        <pb n="3"/>
+        <lb rend="¬" break="no"/> oua Google <pb n="3"/>
         <lb/>a¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬-L
         <lb/>&amp;A.
         <lb/>pup ddptdte
@@ -167,8 +167,7 @@
         <lb/>pour remonter ſur voſtre beſte, vous auez reſolu
         <lb/>de pouſſer touſiours voſtre bidet. Les vns diſent
         <lb/> d’vne ſorte, les autres de l’autre: les vns que vous
-        <lb/>vous preparez à faire vne grande leueée de bou¬
-        <pb n="4"/>
+        <lb/>vous preparez à faire vne grande leueée de bou¬ <pb n="4"/>
         <lb/>cliers, &amp; que vous vous en reuiendrez bien-toſt
         <lb/> ſur vos pas, armé́ de pied en cap, monte comme
         <lb/>vn S. Gcorge, furieux comme vn Rodomont,
@@ -198,8 +197,7 @@
         <lb/>ſuiuront. C’eſt ce qu’ils en iugent chacun aà̀ part
         <lb/>ſoy: Mais les vns &amp; les autres demeurent d’ac
         <lb rend="¬" break="no"/>cord, que vous n’eſtes pas laà pour enfiler des per
-        <lb rend="¬" break="no"/> les
-        <pb n="5"/>
+        <lb rend="¬" break="no"/> les <pb n="5"/>
         <lb/>e
         <lb/>53
         <lb/>les, que vous auez tant d’affaires à voſtre pochet
@@ -231,8 +229,7 @@
         <lb rend="¬" break="no"/>les du monde, par-cy par-la, bred breda, &amp; qu’ils
         <lb/>en baillent des plus molles de leur panniere mais
         <lb/>pour ce qui eſt de leur curioſiteé, ie la trouue du
-        <lb/> 1
-        <pb n="6"/>
+        <lb/> 1 <pb n="6"/>
         <lb/>6
         <lb/>tout hors de bord &amp; ourre meſure, &amp; neles puis
         <lb/>à qui mieux comparer, qu’au nouueau Preltre,
@@ -263,8 +260,7 @@
         <lb rend="¬" break="no"/>d’ailleurs qu’ils ne imordent pas comme ils ab¬.
         <lb/>boyent, &amp; ne chaſſent pas touſiours bien enſemj,
         <lb/>ble: &amp; comme oüy dire va pat ville, &amp; qu’es,
-        <lb/>¬
-        <pb n="7"/>
+        <lb/>¬ <pb n="7"/>
         <lb/>p
         <lb/>.
         <lb/>
@@ -296,8 +292,7 @@
         <lb rend="¬" break="no"/>ant vn peu de ſoucy. Ceux-là meſmes qui vous
         <lb/>uaulent le moins de bien, diſent que vous eſtes
         <lb/>ho cbeuald ompette, qui me s’eſtonne point
-        <lb/>pu le broit,&amp; l’ocroit qae l Reine vous aie
-        <pb n="8"/>
+        <lb/>pu le broit,&amp; l’ocroit qae l Reine vous aie <pb n="8"/>
         <lb/>1
         <lb/>3
         <lb/> me principalement, parce qu’elle vous a toujours
@@ -330,8 +325,7 @@
         <lb/>cela. Vous peniez biecn auoir fait vn coup en
         <lb/>l’eau, &amp; pris la pie au iu, en vonus rculant ponr
         <lb/> mieux
-        <lb/> Aaaaaſ¬¬l
-        <pb n="9"/>
+        <lb/> Aaaaaſ¬¬l <pb n="9"/>
         <lb/>aieux fautee, &amp; faiſaat ſemblant de faire gile4.
         <lb/>mais vous eſtes à preſent meſme ſujet à caution,.
         <lb/>&amp; on ne ſe fie en vous, non plus qu’an vne plan
@@ -362,8 +356,7 @@
         <lb/> que luy n’y ſes gens n’ont pasdu pain toutes les
         <lb/>fois qu’l leuen ſouuient, &amp; qulon les tuë,coup,
         <lb/>àtaille, ſi toſt qu’ils oſent mettre les nez au vent,
-        <lb/>C
-        <pb n="10"/>
+        <lb/>C <pb n="10"/>
         <lb/> 10
         <lb/>ou hazarder le pacquet. Ie ne doute poiatque
         <lb/>vous ne ſç̧achiez à preſent qui ſont les Chefs de
@@ -394,8 +387,7 @@
         <lb/>amy iſqu’ad aras. De demander ſi les ſoldat
         <lb/>des deux armées s’entr’iniurient, vous ſçauez
         <lb/>que cela va ſans dire, &amp; qu’entre les iniures qu’ili
-        <lb/>ſe diſent, le nom de Mazarin n’eſt pas oublié du
-        <pb n="11"/>
+        <lb/>ſe diſent, le nom de Mazarin n’eſt pas oublié du <pb n="11"/>
         <lb/>
         <lb rend="¬" break="no"/>21
         <lb/>cbté de l’armée des Princes, &amp; du voſtre, ceux.
@@ -427,8 +419,7 @@
         <lb/>la grande porte, qui eſt la Paix generale, que les
         <lb/>ſfpagnols, quien ont maintenant la clef,ne nous
         <lb/>ouuriront qu’en nous faiſant auparauant gages
-        <lb/>levin, &amp; faiſanequ’il nous en couſte pinre &amp; fa¬
-        <pb n="12"/>
+        <lb/>levin, &amp; faiſanequ’il nous en couſte pinre &amp; fa¬ <pb n="12"/>
         <lb/>got. Vos bons amis de par deçà, qui comme
         <lb rend="¬" break="no"/>çoient à prendre cœur à braſſeées, ſe ſont trouues
         <lb/>fort ſurpris de ette eſchaufourée, qui n’aide pas
@@ -460,8 +451,7 @@
         <lb rend="¬" break="no"/>ſages non de paille, quin’ont pas nuie des’entai
         <lb rend="¬" break="no"/>re, &amp; qui ſe prometrentbiende nous rendre tri?
         <lb/>pour
-        <lb/>¬
-        <pb n="13"/>
+        <lb/>¬ <pb n="13"/>
         <lb/>13
         <lb/>pour trac, de faire éncor icy bien leurs orges, &amp; d’a
         <lb rend="¬" break="no"/>uoir part au gaſteau. On dit que ce Prince a la pucé
@@ -493,8 +483,7 @@
         <lb/>aignois à vous mander cette nouuelle, parce que
         <lb/>c’eſt vous gratter en l’endroit où vous ne vous de
         <lb rend="¬" break="no"/>angez pas, que martel en teſte donne beaucoup
-        <lb/>D.
-        <pb n="14"/>
+        <lb/>D. <pb n="14"/>
         <lb/>4
         <lb/>d’afaires, &amp; que mal ſur mal n’eſt pas fanté.. Mais
         <lb/>bien que youas lç̧achiez qu’on dirt communémentà̀
@@ -525,8 +514,7 @@
         <lb/>a eſteé́ conuieé par la Cheureuſe de venir comeavn
         <lb/>victoire certaine, ne croirez-vous pas que tout en
         <lb/>eſt dit, que vous eſtes pris pour duppe, &amp; que vous
-        <lb/>eſtes ſorui de Ftanee le iour ſaint Lambert, où qui
-        <pb n="15"/>
+        <lb/>eſtes ſorui de Ftanee le iour ſaint Lambert, où qui <pb n="15"/>
         <lb/>1J
         <lb/>quute ſa place la perd. Il eſt vray que cette femme
         <lb/>dtvne eſtrange pouletre, qu’on vot bien à̀ ſes yeux
@@ -557,8 +545,7 @@
         <lb/>comme les Moines font l’Abbeé, auec force miches
         <lb/>de fainct Eſtienne, bien reſolu de tailler des crou
         <lb rend="¬" break="no"/>pieres aà vos gens, &amp; de les accommoder de toutes
-        <lb/>pieces, fi nonobſtant tous ces obſtacles vous eſpe¬
-        <pb n="16"/>
+        <lb/>pieces, fi nonobſtant tous ces obſtacles vous eſpe¬ <pb n="16"/>
         <lb/>rez encor vous en venir icy la gueule enfarinée faire
         <lb/>le pot à̀ deux ances, &amp; le Robert le Diable, dans le
         <lb/>deſſein de frotter comme de couſtume, voſtrecoén

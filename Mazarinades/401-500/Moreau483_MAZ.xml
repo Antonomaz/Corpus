@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau483_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau483_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -30,7 +31,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14826"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Advis aux bourgeois de Paris, sur une levée de gens de guerre. Où
             Raisons pour lesquelles il est plus expedient de faire presentement des recreuës, tant
             cavalerie qu'infanterie, des trouppes de l'armée de monseigneur le duc d'Orleans &amp;
@@ -48,13 +49,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49869</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49869" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49869"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12531</idno>
@@ -86,7 +86,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">483. Avis aux bourgeois de Paris, sur une levée de gens de guerre, ou
+          l'aisons pour lesquelles 1l est plus expé- dient de faire présentement des recrues, tant
+          cavalerie qu’infanterie, des troupes de l’armée de monseigneur le duc d'Orléans et de M.
+          le Prince que de nouvelles troupes, avec la réponse aux objections contraires. Paris ,
+          André Chouqueux, 1652, 4 pages. dou Tn</p>
       </abstract>
       <textClass>
         <keywords>
@@ -108,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/> I
+      <p><pb n="9"/> I
         <lb/>AVIS AVX BOVRGEOIS
         <lb/>DE PARIS,
         <lb/>SVR VNE LEVEE DE GENS
@@ -124,7 +128,8 @@
         <lb/>A PARIS,
         <lb/>Chez ANDRE CHOVQVEVX, ruë S. André,
         <lb/>M. DC. LII.
-        <lb/><imprimatur>Auec Permißion de Son Alteſſe Royale</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Permißion de Son Alteſſe Royale</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>ADVIS AVX BOVRGEOIS

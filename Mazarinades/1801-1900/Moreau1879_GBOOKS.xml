@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1879_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1879_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -45,18 +41,19 @@
             ils connoissent que ses afflictions ne viennent que des trahisons de ses ministres,
             nouvellement et fidèlement traduite d'italien en françois.</title>
           <pubPlace>Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Vienne</settlement>
+            <settlement ref="geonames:2761369">Vienne</settlement>
             <institution>Bibliothèque nationale d'Autriche</institution>
             <repository/>
             <idno type="cote">127052-B ALT MAG</idno>
@@ -88,7 +85,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1879. Lettre d'un gentilhomme romain à un François, contenant les
+          discours que tiennent les politiques étrangers, du gouvernement de la France, et comme ils
+          connoissent que ses afflictions ne viennent que des trahisons de ses ministres,
+          nouvellement et fidèlement traduite d'italien en françois. Sans Lieu, 1649, 8 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,6 +98,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -112,8 +116,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>
         <lb rend="¬" break="no"/>1l
         <lb rend="¬" break="no"/>rr
@@ -133,8 +136,7 @@
         <lb/> y
         <lb/>en François.
         <lb/>M. DC. XLIX.
-        <lb/>17o2-B
-        <pb n="2"/>
+        <lb/>17o2-B <pb n="2"/>
         <lb/>
         <lb/>3
         <lb/>y
@@ -167,8 +169,7 @@
         <lb/>1 1 4
         <lb/>, . A . .
         <lb/>e;
-        <lb/>.
-        <pb n="3"/>
+        <lb/>. <pb n="3"/>
         <lb/>a
         <lb/>3
         <lb/>4
@@ -212,8 +213,7 @@
         <lb/>nac ia2
         <lb/>-.
         <lb/>l¬
-        <lb rend="¬" break="no"/>-L-eLe
-        <pb n="4"/>
+        <lb rend="¬" break="no"/>-L-eLe <pb n="4"/>
         <lb/> 2ain, qui eſt o ſeulement Etranger comm le,Marquis
         <lb/>Rnëre-, aſs htreoeiginaſre d’vn pays irrectiliabole
         <lb/>ment Ennemy ds Fragçoi&amp; Sgjet d Royd Eſpagne.
@@ -253,8 +253,7 @@
         <lb/>cauellisdaſadeſiodacegpoegoiddldbuade, la aeaa!
         <lb/>ciatio
         <lb/>aae
-        <lb/>¬¬.. a2¬
-        <pb n="5"/>
+        <lb/>¬¬.. a2¬ <pb n="5"/>
         <lb/>çation qu’elle en a faite par ſon Conrat de Mariage, ne de
         <lb rend="¬" break="no"/>uant auoir lieu que pendant qu’elle ſeroit mariée auec le feu
         <lb rend="¬" break="no"/>Roy. Et ne regardant point du tout les enfans qu’elle pour
@@ -293,8 +292,7 @@
         <lb/>Cohſiderer ce qui s’eſt paſsé certe année à Courtray, à Na
         <lb rend="¬" break="no"/>le, &amp; à, Cremone: Pour l’vn, on n’auroit eu garde de re
         <lb rend="¬" break="no"/>B
-        <lb/>s. ,l... .
-        <pb n="6"/>
+        <lb/>s. ,l... . <pb n="6"/>
         <lb/>1
         <lb rend="¬" break="no"/>
         <lb/>6...
@@ -337,8 +335,7 @@
         <lb/>bien qu’en ce temps tous les Habitans de Naples fuſfent en
         <lb/>aaaaa
         <lb rend="¬" break="no"/>. -2.2
-        <lb/>¬
-        <pb n="7"/>
+        <lb/>¬ <pb n="7"/>
         <lb/>1!
         <lb/>à
         <lb/>u1
@@ -387,8 +384,7 @@
         <lb/>Mareſchal de Schombert ne priſt pas occaſion de ſe ſeruir de
         <lb/>ſes forces, pour executer le deſſein qu’il auoit ſur la Tour des
         <lb/>Alfax qui comande l’embouchure de l’Ebre.
-        <lb/>-a ¬ ¬¬ ,
-        <pb n="8"/>
+        <lb/>-a ¬ ¬¬ , <pb n="8"/>
         <lb/> Voila vne partie de ce qu’on ſçait en eette Cour cthane
         <lb/>les affaires de la’voſtre, &amp;ſi voftre curiofite ſe trode ſaaiſ
         <lb rend="¬" break="no"/>faite d’auoir appris les ihnfidelitez qui ſe practiquent: eotte

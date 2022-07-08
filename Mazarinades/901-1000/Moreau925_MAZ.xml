@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau925_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau925_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,7 +43,9 @@
             gouverneurs &amp; autres officiers de les y souffrir, sur les peines y mentionnées.
             Verifiée en Parlement le sixiéme septembre 1651.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <publisher ref="isni:0000000121209450">
             <persName>
               <forename>Antoine</forename>
@@ -55,13 +58,12 @@
             <measure unit="page" quantity="14"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49182</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49182" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49182"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14725</idno>
@@ -93,7 +95,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions : à Rouen, 7 p. in-4 ; jouxte la copie imprimée à
+        <p source="Mazarine">Autres éditions : à Rouen, 7 p. in-4 ; jouxte la copie imprimée à
           Paris, en Hollande d'après Hubert Carrier (Bibliothèque Mazarine, Ms 4682-2, f. 165v),
           1652, 7 p. in-4. 4 états du cahier D, p. 13, l. 14 et marque typographique : "quante un,
           &amp; de nostre Regne le neu-" ; la marque typographique au colophon est de grand format
@@ -101,6 +103,14 @@
           (B) ; "quante un, Et de nostre Regne le neu-" ; marque typographique de grand format (C) ;
           "quante un, Et de nostre Regne le neu-" ; marque typographique de petit format (D).
           D'après H. Carrier, texte paru le 9 septembre 1651.</p>
+        <p source="Moreau">925. Déclaration du roi, portant défenses au cardinal Mazarin, ses
+          parents, alliés et domestiques étrangers , sous quelque prétexte que ce soit, de rentrer
+          dans ce royaume et autres pays sous la protection de Sa Majesté, et, à tous gouverneurs et
+          autres officiers, de les y souffrir sur les peines y mentionnées, vérifiée en parlement,
+          le sixième septembre 1654. Paris, par les imprimeurset libraires ordinaires du roi, 1651,
+          14 pag. Il en existe une édition de Rouer par les imprimeurs du roi, 7 pages. Lecardmal de
+          Retz dit, page 305 de ses Mémoires, Coll. Michaud, qu’elle fut rédigée par le conseiller
+          Portail.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -117,8 +127,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>DECLARATION
         <lb/>DV ROY.
         <lb/>Portant defenſes au Cardinal Maza¬
@@ -134,7 +143,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires
         <lb/>du Roy.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

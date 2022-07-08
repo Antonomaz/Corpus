@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="M15439-39_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="M15439-39_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,13 +43,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49296</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49296" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49296"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15439-39</idno>
@@ -80,7 +80,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Reprend, dans une version remanié notamment p. 7 et 8, le texte de
+        <p source="Mazarine">Reprend, dans une version remanié notamment p. 7 et 8, le texte de
           "Lettre du cardinal Mazarin aux peres theatins, pour redoubler leurs prieres à le retirer
           du bourbier où il s'est veautré" (Moreau, n° 2092) également repris dans "L'arrivée du
           courrier Mazarin, rapportant le subjet de sa sortie hors de France...(Moreau, n° 393).</p>
@@ -100,8 +100,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>L’ARIVEE DV
         <lb/>COVRRIER
         <lb/>MAZARIN.
@@ -112,7 +111,8 @@
         <lb/>hez GERMAIN EVRAR, demeurant ruë de
         <lb/>Reins prés le Colege du Mans.
         <lb/>M. DC. LI.
-        <lb/><imprimatur>AVEC PERMISSION.</imprimatur>
+        <lb/>
+        <imprimatur>AVEC PERMISSION.</imprimatur>
         <pb n="8"/>
         <pb n="9"/>
         <lb/>Aââ

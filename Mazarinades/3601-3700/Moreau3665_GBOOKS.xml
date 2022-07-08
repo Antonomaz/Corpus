@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3665_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3665_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -44,17 +40,19 @@
             Grande-Bretagne, vérifiée devant Son Altesse Royale, ensemble les plus véritables
             particularités touchant cette affaire.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1652">1652</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Munich</settlement>
+            <settlement ref="geonames:2867714">Munich</settlement>
             <institution>Bibliothèque de l'Etat de Bavière</institution>
             <repository>BSB / Außenmagazin</repository>
             <idno type="cote">4 Gall.g. 192 k</idno>
@@ -86,7 +84,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">3665. Serpent (le) britannique, ou la Trahison décou verte du roi de la
+          Grande-Bretagne, vérifiée devant Son Altesse Royale, ensemble les plus véritables par
+          ticularités touchant cette affaire. Paris, 1652, 3 pag. Récit singulier et rare du traité
+          de Villeneuve-Saint-Georges entre Turenne et le duc de Lorraine, après la levée du siège
+          d'É- tampes.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -95,6 +98,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -110,8 +117,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>BRITANIOVE.
         <lb/>LA TRAHISON
         <lb/>DV ROV
@@ -121,8 +127,7 @@
         <lb/>Enſemble les plus v
         <lb/>eritables particulariez
         <lb/>nuſ lun n ſi
-        <lb/>’e oet tlei
-        <pb n="2"/>
+        <lb/>’e oet tlei <pb n="2"/>
         <lb/>
         <lb rend="¬" break="no"/>A
         <lb rend="¬" break="no"/>- J
@@ -134,8 +139,7 @@
         <lb/> l
         <lb/>-.
         <lb/> il
-        <lb/>¬
-        <pb n="3"/>
+        <lb/>¬ <pb n="3"/>
         <lb/>s3.
         <lb/>eoûo:
         <lb/>da
@@ -169,8 +173,7 @@
         <lb/>a qu’il et deſia aduenu es Royaumes de celuy qu!
         <lb/>A ii
         <lb/>
-        <lb/>-
-        <pb n="4"/>
+        <lb/>- <pb n="4"/>
         <lb/>t reudre le iofte ſemblableaa ſien. Ses peinas &amp; fa
         <lb rend="¬" break="no"/>uat sxraardnaires à la conſeruarion de lſon legitime
         <lb/>oy, ſont bormes par vne laſche &amp; perfie rahiſon.
@@ -207,8 +210,7 @@
         <lb/>pt llſtarlndlne empineonr ue pueounre le pn
         <lb/>pr erain, enraauee luy&amp; le iareſehi d Ttane
         <lb/>e ſo obinet, eompunad ſeuinene e pn
-        <lb/>Genils.
-        <pb n="5"/>
+        <lb/>Genils. <pb n="5"/>
         <lb/>Snauilr hommes, les hysfeme2 Le Cudinai p
         <lb/>laparole, &amp; dit, He bien, Monſieu, nvoi
         <lb/> pa maineenir le party du Roy, vous eſtes ie eroy
@@ -245,8 +247,7 @@
         <lb/> ui pour lors auoit quelque riotte contre luy, Et luy
         <lb/>di, Ete biea Madame, ne ſcauois ie paa bion que é
         <lb/> vendrois à bout de ce maſtin qui ſemblt abboyer
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/>6
         <lb/>contre voſte paiſfsnce; ie le viens d’enchaiſner, il ne
         <lb/>tuintplus q’à̀ vous de luy commander de ſe taire; car
@@ -283,8 +284,7 @@
         <lb/>Turenne vous preſſa de liurer baraille, &amp; pour cet
         <lb/>effet, ie me tiendray auec vous, faiſant mine de vou
         <lb rend="¬" break="no"/>loir reſiſter au maareſchal de Turenne. Lors qu’ils ſe
-        <lb rend="¬" break="no"/>ron venu il faudra que vous faſſiez les preparatifs
-        <pb n="7"/>
+        <lb rend="¬" break="no"/>ron venu il faudra que vous faſſiez les preparatifs <pb n="7"/>
         <lb/>7
         <lb/>pour vn Conſeil de guerre, dans l’interoal duque!
         <lb/>nous nous ſaiſirons de leurs perſonnes. Voila l’orde
@@ -321,8 +321,7 @@
         <lb/>auec moy, i’en vais aduertir ſon Alteſſe Royale, &amp;
         <lb/>aonſieur de Condé, afu que nous aduiſions de ce
         <lb/>qu’il ſera beſoin de faire. Auſſi-toſt le Prince Lorrain
-        <lb/>ſe douta qu’il auoit eſté aduerty de ſon deſſein, &amp; le
-        <pb n="8"/>
+        <lb/>ſe douta qu’il auoit eſté aduerty de ſon deſſein, &amp; le <pb n="8"/>
         <lb/>8
         <lb/> Roy de la Grand’ Bretagne ſemblablement: C’eſt ce
         <lb/>qui fuat cauſe qu’il deſpeſcha vn Courrier vers Mon

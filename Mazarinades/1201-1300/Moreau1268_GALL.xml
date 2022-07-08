@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau1268_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1268_GALL">
   <teiHeader xml:lang="fr">
     <fileDesc>
       <titleStmt>
@@ -9,24 +9,18 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
           <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="Corrector">Hip Amélie
-            <affiliation>
-              <roleName type="status">Vacataire</roleName>
-            </affiliation>
+          <persName role="Corrector">Hip Amélie <affiliation><roleName type="status"
+                >Vacataire</roleName></affiliation>
           </persName>
         </respStmt>
       </titleStmt>
@@ -45,17 +39,19 @@
           <author/>
           <title source="Moreau">Épitre chagrine</title>
           <pubPlace>Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1652">1652</date>
           <extent>
             <measure unit="page" quantity="13"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque nationale de France</institution>
             <repository>Département littérature et art</repository>
             <idno type="cote">YE-1275</idno>
@@ -87,8 +83,24 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BnF_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1268. Épitre chagrine. (S. 1., 1652), 13 pages non chiffrées. Édition
+          originale et rare d’une des meilleures pièces de vers de Scarron. Scarron écrit des bords
+          de la Loire, peut-être de Tours, à son ami Rosteau : « Toï qui, de tous temps, as été Le
+          fidèle dépositaire De ma moindre petite affaire… Depuis que je suis venu boire Des eaux du
+          beau fleuve de Loire, Et que, de crainte d’un blocus Et de la dizette d’écus... . Pai
+          quitté Paris sans trompette... . Il faut porter dans l’Amérique Un chagrin si
+          mélancolique, Et voir si, sous un autre ciel, Son absinthe deviendra miel, » Il règne dans
+          ceite pièce un ton de mélancolie qu’on n’attend guère de Scarron, quoique le burlesque n’y
+          perde pas tous ses droits. Le poëte se plaint de la mauvaise fortune des poëtes : « De
+          Corneille les tragédies Si magnifiques, si hardies, De jour en jour baissent de prix.. . .
+          L’auteur du fameux Ærtamène (Scudéry) À perdu son gouvernement.….… . Notre ami Tristan ,
+          gentiïhomme Autant qu’un dictateur de Rome.. . Atiend encor que la fortune Contre lui
+          n’ait point de rancune. » Scarron se plaint de ce que d’Aorrétes gens ne lui rendaient pas
+          l’argent qu’il leur prétait. Je crois que ce fait est assez nouveau. En 1639, il fit
+          paraître une Seconde épêtre chagrine qui ne vaut pas la première. N’est-ce pas l’Épître
+          chagrine que Mailly signale sous le titre inexact de : Voyage du sieur Scarron en
+          Amérique, page 265 de son deuxième vol.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,6 +109,9 @@
           <term type="subgenre">burlesque</term>
           <term type="subgenre">satirique</term>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>

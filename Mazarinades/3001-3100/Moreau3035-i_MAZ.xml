@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3035_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3035-i_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -30,19 +31,20 @@
           <author/>
           <title source="Mazarine">Recueil de diverses pieces curieuses de ce temps.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="1"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49047</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49047" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49047"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10041-1</idno>
@@ -74,7 +76,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Recueil éditorial. Repérée par Armand d'Artois (Bibliothèque Mazarine,
+        <p source="Mazarine">Recueil éditorial. Repérée par Armand d'Artois (Bibliothèque Mazarine,
           Ms 4682-5, f.33v). Autres éditions repérées par Célestin Moreau : "Sur l'imprimé à Paris.
           Rouen, par les imprimeurs de la Cour", 1649, 56 p. ; [Rouen], 80 p., in-12. Paru également
           sous le titre "Premier recueil de diverses pièces curieuses de ce temps." (BM00204).
@@ -109,6 +111,12 @@
           ennemis de l'Estat. La liberté de la France, et l'aneantissement des ministres estrangers.
           Discours d'Estat presenté à la Reyne regente. La France desolée aux pieds du Roy, où le
           gouvernement tyrannique de Mazarin est succinctement descrit.</p>
+        <p source="Moreau">3035. Recueil de diverses pièces curieuses de ce temps, (o F -'7 (' »^rv
+          sur F impritné à Paris. Rouen, par les imprimeurs de la cour (de Parlement), 1649.
+          I-ftecM-eA^j Il y a quatre recueils ; les deux premiers ont paru chez Ber- thelin. J'ai vu
+          sous le même titre un petit in-12 de 80 pages aussi im primé à Rouen, mais sans indication
+          de lieu. Enfin on rencontre un Premier recueil de diverses pièces cu rieuses de ce temps,
+          sans nom de lieu et seulement avec la date de 1649.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -125,15 +133,13 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>RECVEIL
         <lb/>DE
         <lb/>DIVERSES PIECES
         <lb/>CVRIEVSES DE
         <lb/>ce temps.
-        <lb/>M.DC. XLIX.<pb n="10"/>
-        <pb n="11"/>
+        <lb/>M.DC. XLIX.<pb n="10"/><pb n="11"/>
         <lb/>TABLE DES PIECES CONTENVES
         <lb/>EN CE RECVEIL.
         <lb/> Atagaes faites à la Reyne Re gente par Monſieur le Prcmier

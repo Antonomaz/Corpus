@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3041_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3041_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -30,26 +31,27 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14983"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Recueil de plusieurs pieces curieuses, imprimées depuis
             l'enlevement fait de la personne du Roy, le 6. janvier 1649. jusques à la paix, qui fut
             publiée le 2. jour d'avril de la mesme année. Et autres choses remarquables arrivées
             depuis ce temps-là jusques à l'heureux retour de sa Majesté dans sa bonne ville de
             Paris, qui fut le 18. jour d'aoust 1649.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="1"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49059</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49059" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49059"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13774</idno>
@@ -81,11 +83,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Page de titre et "preface servant d'advertissement au lecteur." placées
+        <p source="Mazarine">Page de titre et "preface servant d'advertissement au lecteur." placées
           par les imprimeurs-libraires en tête de recueils éditoriaux où les mazarinades sont
           présentées chacune avec sa propre pagination, sa propre page de titre, sa propre
           composition typographique, étant parues d'abord sous cette même forme séparément à
           l'unité. Autres éditions avec différences de titre et de composition typographique.</p>
+        <p source="Moreau">3041 . Recueil de plusieurs pièces curieuses imprimées depuis
+          l'enlèvement fait de la personne du roi, le 6 janvier 1649, jusques à la paix qui fut
+          publiée le 2e jour d'avril de la même année, et autres choses remarquables arrivées depuis
+          ce temps jusques à l'heu reux retour de Sa Majesté dans sa bonne ville de Paris, qui fut
+          le 18* jour d'août 1649. (S. 1., 1649.)</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>RECVEIL
         <lb/>DE
         <lb/>PLVSIEVRS PIECES

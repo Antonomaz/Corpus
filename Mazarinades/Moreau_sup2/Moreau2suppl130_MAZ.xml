@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2suppl130_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2suppl130_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -33,19 +34,20 @@
           <title source="Mazarine">Lettre du Roy envoyee aux gouverneurs des provinces de ce
             royaume, sur les mouvemens de Paris.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1648-09-30">30 septembre 1648</date>
           <extent>
             <measure unit="page" quantity="3"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49357</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49357" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49357"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15128</idno>
@@ -77,12 +79,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Les exemplaires repérés n'ont pas de p. de titre et commencent p. 3. Il
+        <p source="Mazarine">Les exemplaires repérés n'ont pas de p. de titre et commencent p. 3. Il
           en existe une édition fautive paru sous le titre "Lettre circulaire envoyee par le Roy a
           tous les gouverneurs du royaume de France." (BM01126). Également publié dans le recueil
           éditorial "Recueil de diverses pieces qui ont paru durant les mouvemens derniers de
           l'année 1649." (BM000059). Titre de départ. - contresigné "Le Thellier". Daté à
           Saint-Germain-en-Laye le 30 septembre 1648.</p>
+        <p source="Moreau">130. Lettre du roy envoyée aux gouverneurs des pro- vinces de ce royaume
+          sur les mouvements de Paris. (S. Z, 1648.); 6 pages. Dalée de Saial-Germain en Laye le 30
+          septembre 1548 : officieile. Sur les bar- ficades el les événements qui suivirent, .</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,8 +105,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE DV ROY
         <lb/>ENVOYEE
         <lb/>AVX GOVVERNEVRS

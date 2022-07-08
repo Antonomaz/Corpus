@@ -1,854 +1,488 @@
-<?xml version='1.0' encoding='UTF-8'?><?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?> <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI type="non_classé" xml:id="Moreau673_GBOOKS" xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title source="Moreau" type="main">Censure générale de tous les libelles
-                    diffamatoires, imprimés depuis la conclusion de la paix, au préjudice de cet
-                    état.</title>
-                <title type="sub">Édition Antonomaz</title>
-                <respStmt>
-                    <resp>Chaîne de traitement</resp>
-                    <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven
-                        Karine</persName>
-                    <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune
-                        Gaël</persName>
-                    <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
-                        Jean-Baptiste</persName>
-                    <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz
-                        Alexandre</persName>
-                    <persName ref="orcid:0000-0002-3327-3967" role="intern">Cappe
-                        Zoé</persName>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-                <ref target="https://github.com/Antonomaz"/>
-                <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-                <availability n="cc-by" status="restricted">
-                    <licence target="https://creativecommons.org/licenses/by/4.0"/>
-                </availability>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl>
-                    <ref target="https://books.google.fr/books?id=hMrgXv8lt-cC&amp;hl=fr"/>
-                    <author/>
-                    <title source="Moreau">Censure générale de tous les libelles diffamatoires,
-                        imprimés depuis la conclusion de la paix, au préjudice de cet état.</title>
-                    <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-                    <publisher ref="isni:0000000"/>                    
-                    <date source="Moreau" when="1649">1649</date>
-                    <date source="Carrier" notBefore="1649-04-15"/>
-                    <extent>
-                        <measure quantity="11" unit="page"/>
-                    </extent>
-                    <note type="format">in-4</note>
-                    <note cert="high" type="BM_identifier">BM00780</note>
-                    <ref cert="high"
-                        target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49657"
-                        type="BM_notice"/>
-                </bibl>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Lyon</settlement>
-                        <institution>Bibliothèque municipale</institution>
-                        <repository/>
-                        <idno type="cote">SJ IF 247/188, 56</idno>
-                    </msIdentifier>
-                    <history>
-                        <provenance>
-                            <stamp>False</stamp>
-                        </provenance>
-                    </history>
-                </msDesc>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <projectDesc>
-                <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif
-                    principal est de fournir un texte destiné à l'exploration avec des outils
-                    électroniques. De ce fait, ce n'est ni une édition philologique, ni une édition
-                    pédagogique ou de redécouverte d'un auteur oublié.</p>
-                <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations
-                    de bibliothèques numériques publiques et de Google livres.</p>
-                <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec
-                    Kraken.</p>
-            </projectDesc>
-            <editorialDecl>
-                <p/>
-            </editorialDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="fra">Document en français</language>
-            </langUsage>
-            <abstract>
-                <p source="BM_notes">Libelles censurés : "Les soupirs françois sur la paix italienne" [Moreau 3710], 
-                    "La requête civile sur la conclusion de la paix", "Les généreux sentiments d'un bon François 
-                    contre la conférence" [Moreau 1491], "La pure vérité découverte", "La cuirasse", 
-                    "Le pot de chambre", "Le bandeau". 4 états des p. 3-5. Etat A :
-                    p. 3, l. 11 "Lybie : [...] fut-il ja-", l. 15 "venin, que [...] Chimere" ; 
-                    p. 4 l. 10 "suiet [...] de moy le respect", l. 21 "ministere, i'en ay" ; 
-                    p. 5 l. 22 "erreurs, &amp; laissé". Etat B : p. 3, l. 11 "Lybie : [...] fut-il ja-", 
-                    l. 15 "venin, que [...] Chimere" ; p. 4 l. 10 "sujet [...] de moy de respect", 
-                    l. 21 "ministere, Ie n'ay" ; 
-                    p. 5 l. 22 "erreurs, &amp; laissé". Etat C : p. 3, l. 11 
-                    "Lybie, [...] fut-il ia-", l. 15 "venin que [...] chimere" ; 
-                    p. 4 l. 10 "sujet [...] de moy de respect", l. 21 "ministere, Ie n'ay" ; 
-                    p. 5 l. 22 "erreurs, a laissé". Etat D : p. 3, l. 11 "Lybie, [...] 
-                    fut-il ia-", l. 15 "venin que [...] chimere" ; 
-                    p. 4 l. 10 "sujet [...] de moy de respect", l. 21 "ministere, Ie n'ay" ; 
-                    p. 5 l. 22 "erreurs, &amp; laissé". Imitation burlesque de ce texte 
-                    dans "La chasse aux satyres du temps. Vers burlesques." 
-                    (Moreau n° 690). D'après Hubert Carrier, texte paru
-                    la deuxième quinzaine d'avril 1649 ou début mai 
-                    (Bibliothèque Mazarine, Ms. 4682-2, f. 46 v).</p>
-            </abstract>
-            <textClass>
-                <keywords>
-                    <term type="form">prose</term>
-                    <term type="genre">non renseigné</term>
-                    <term type="subgenre"/>
-                    <term type="subgenre"/>
-                    <term type="subject"/>
-                    <term type="handwritten_note" subtype="no"/>
-                    <term type="table_of_content" subtype="no"/>
-                    <term type="illustration" subtype="no"/>
-                </keywords>
-            </textClass>
-        </profileDesc>
-        <revisionDesc>
-            <change status="corrected" when="2022-04-05" who="ZC"/>
-        </revisionDesc>
-    </teiHeader>
-    <text>
-        <body><p>
-            <gap/>
-            <gap/>
-            <pb n="1"/>
-            
-                <lb/>CENSVRE GENERALLE
-                        
-                <lb/>de tous les Libelles diffamatoires,
-            
-                <lb/>imprimez depuis la concluſion de la
-            
-                <lb/>Paix, au preiudice de cét Eſtat.
-            
-                <lb/>FAVT IL que la France ſousvn climat ſi pur &amp;
-            
-                <lb/>APoe ſi ſlain , poduſe naicnaus an de nonſres
-            
-                <lb/> differens, &amp; qu’ayant eſte iuſques icy ecxempre
-            
-                <lb/>2 de e urnie ene e en pne n pnener n e
-            
-                <lb/>deuenir plus fertile en ces funeſtes prodiges, que les deſerts
-            
-                <lb/>de l’Egypte &amp; les cauernes de la Lybie: Hercules fut-il ja¬
-            
-                <lb/>mais plus neceſſaire, &amp; cetHydre dont la ſouſtraction d’vne
-            
-                <lb/>teſte faiſoit la multiplication de quantité́ d’autres, donna¬
-            
-                <lb/>tellc iamais plus de difficulté à̀ ce grand homme, &amp; vmt¬
-            
-                <lb/>clle plus de venin, que cette dangereuſe Chimere enfantée
-            
-                <lb/>par tant de pernicieux eſprits, iette d’ancre auſſi noire que
-            
-                <lb/>leur ame ſur la blancheur de l’innocence &amp; de la vcrit́.
-            
-                <lb/>Ie ne puis conceuoir comme la corruption du ſiecle, a pu
-            
-                <lb/>monter le vice en vn degré́ ſi releué, qu’il paſſe en place de
-            
-                <lb/>la vertu; come ccs Angcs de tenebres ſe puiſſent ſi bien
-            
-                <lb/>deſguiſer en eſprits luminex; &amp; que la plus criminclle mcſ¬
-            
-                <lb/>diſace ayt vne approbarion ſi generallc que l’on en cano¬
-            
-                <lb/>iſe les Autheurs, apres anoir place leurs inſames eſcrits,
-            
-                <lb/>comme des picces d’eſprit fort precicuſes dans les plus mo¬
-            
-                <lb/>deſtes cabincts, iuſques-là que l’impudence &amp; la calomnie
-            
-                <lb/>donne le poids à preſent à toutes lcs productions d’eſprit, &amp;
-            
-                <lb/>que ſçachant ouvne piece eſt inſolente &amp; ſatrique, on in¬
-            
-                <lb/>ſerc auſſi-toſt qu’clle eſt bonne par vne hrutale conſe¬
-            
-                <lb/>quence.
-            
-                <lb/>A ij
-            <pb n="2"/>
-            
-                <lb/>4
-            
-                <lb/> Il me ſemble quë i’entens deſié quelques-vns de cës ſe
-            
-                <lb/>ditieux me taxer d’eſtre de la caballe, &amp; m’appeller Maza¬
-            
-                <lb/> riniſte, pour me mettre en horreur dans l’eſprit du vulguai¬
-            
-                <lb/>re, &amp; l’empeſcher de reconnoiſtre mes veritables inten¬
-            
-                <lb/> tionus, qui ne tendent qu’à les des-abuſer dé ces illuſions
-            
-                <lb/> peruicieuſes; quoy que cette-iniure n’ayt aucun fondement,
-            
-                <lb/>ie ſuis obligé toutesfois de deſtruirecette ſotte opinion, &amp;
-            
-                <lb/> de dire quë ie n’ay iamais fait aucune acceptatlon de per¬
-            
-                <lb/>ſonnes; qu’outre ce que la Maieſteé des Roys &amp; des puiſſan¬
-            
-                <lb/> ces, auſquelles ie fuis ſuiet a tiré de moy le relſpe &amp; la ſub¬
-            
-                <lb/> miſſion; Les honneſtes gems deſquels ie ſuis connu, pour¬
-            
-                <lb/> ront dire que dl faueur ne m’a iamais fait comnettre des
-            
-                <lb/>laſcheté, &amp; qûe i’ay toufſours proportionnél’eſtime d’vne
-            
-                <lb/> perſonne à la grandeur de ſa ſeulevertu. Pour ce quieſt de
-            
-                <lb/>celle du Cardinal Maearin, ie n’en ay receu ny deſplaiſir:
-            
-                <lb/> ny fſaueur partieulſiere, &amp; quant ils’eſt apparammentporté :
-            
-                <lb/> cntraire à ma Patrie, i’ay teſmoigné autant de zele àſa
-            
-                <lb/>deffenſe que l’ooeaſion &amp; la neceſſité me l’ont pupermet¬
-            
-                <lb/>re: Maisà preſent que les affaires ſont pacifiées, &amp; dans vn:
-            
-                <lb/>eſtattranquille &amp; eepoſe, ſi lespuiſſances qui nous gouuer¬
-            
-                <lb/>ner t approuuent ſon miniſters, i’en ay ny la volonté ny la
-            
-                <lb/> force de les contredire, &amp; ſans approfondir l’interieurde
-            
-                <lb/> ſa conſcience &amp; le ſecret de ſes maximes, ie ſouhaitte ſeu¬.
-            
-                <lb/> lement ques’il a bian fait qu’il continue, &amp; ques’il a fait
-            
-                <lb/> du mal à la France, qu’il luy faſſe aſſez de bien pour en oſter
-            
-                <lb/> ent ierement la memoire &amp; le reſſentiment.
-            
-                <lb/>ue ce peuple n’ayt donc point cette creance, que m
-            
-                <lb/>plume ſoit mercenaire &amp; que mon eſprit ſoit eſclaue de la.
-            
-                <lb/>lauurs le nefauis yppaaliſtenyp-ieulierementinteree,
-            
-                <lb/>&amp; mes fſentimens font ſi conformes aà la verité que la fran¬
-            
-                <lb/> chiſe, auec laquelle ie les metsau iour, &amp; la ſuitre dece
-            
-                <lb/> diſcours feront aiſé́ment reconnoiſtre qu’il ſeroit ridicule
-            
-                <lb/>de me taxer de corruption &amp; de flatterie.
-            
-                <lb/>Mais pour iuſtifier les motifs qui me portent à cette Cen¬
-            
-                <lb/>ſure generalle, contrel’opinion d’vn nombre d’ignoransô&amp;
-            
-                <lb/> de libertins, que ces inſolens Eſcriuains ont pour approba¬
-            
-                <lb/> teurs
-            <pb n="3"/>
-            
-                <lb/>5
-            
-                <lb/>teurs de leurs ouurges; ces raiſons comme ie croy, ſeroist
-            
-                <lb/>plus que ſuffiſane.
-            
-                <lb/>Qu’outre l’intereſt commun qui m’excite à eombattre
-            
-                <lb/>ſes monſtres, ma conſcience m’y rend obligé, &amp; que pene¬
-            
-                <lb/>tranr clairement dans les crreurs de des Libelles; lIe ferois
-            
-                <lb/>vn crime de les receller &amp; ne les pas mettte au iour, pour
-            
-                <lb/>détromper les ſimples qui ſe laiſſent pipper pardes prerex¬
-            
-                <lb/>tes de liberté &amp; de frauchile, dont cs eſoritsſe maſquet
-            
-                <lb/>artificieuſement: que la charité doit animer mon zele a la
-            
-                <lb/>deſtruction du vice &amp; la deffenſe de la verite, &amp; qu’enfin
-            
-                <lb/>ces pieces diffamantes eſtãt ſi preiudiciables au repos de ces.
-            
-                <lb/>te Moarchie, &amp; ſi ſcandaleuſes à ous les gens de bien, com¬
-            
-                <lb/> me faiſant proſeſſion d’eſcrire quelquefois, i’ay toates les
-            
-                <lb/>raiſons du monde de condamner ces ouurages qui des. ho¬
-            
-                <lb/>norent les muſes par leur ſalletez &amp; leurs lnfamies, &amp; main¬
-            
-                <lb/>tenir par ce moyen maon innocence contre les ſoupçon
-            
-                <lb/>que l’on poutrroit auoir que quelques-vns fuſſent de ma
-            
-                <lb/>façon.
-            
-                <lb/> Ces motifs eſtans fi clairs &amp; ſi certains, ie me ſuis eſton¬
-            
-                <lb/>ue que de tant d’excellens eſprits beaucoup plus capables
-            
-                <lb/>d’entreprendre vn ſi digne trauail, la plaſpart ayo preſté
-            
-                <lb/>par ſonſilenco vn eacite conſentement à oas erreurs, &amp; laiſſé
-            
-                <lb/>gliſſer tant d’abus ſans les refuter. Que fi quelques-vns ont
-            
-                <lb/>iraité de cette matiere, ils ſermble qu’ils on ou peur de les
-            
-                <lb/>choquer ouuertement, &amp; par vne certaine retonu qui
-            
-                <lb/>procedoit de leur modeſtie, Ils ſe ſont ſeruis de remede le¬
-            
-                <lb/>itifs pour guerir vn mal qui ne ſe peut chaſſer que par la
-            
-                <lb/>violence. I’appronue les intentions de l’Autheur de la een¬
-            
-                <lb/>ſure, ſor les Soupivs Fraçois,- mais i’aurois deſiré que ſon
-            
-                <lb/>ſtyle euſt eſté moins charitable, ou que ſa charit&amp; euſt eſté
-            
-                <lb/>plus enflammée, &amp; qu’i ſe fuſt entierement ſeruy de l’auan¬
-            
-                <lb/>age que lu donnoit la ſoibleſſe de ſon enncmy; En effect
-            
-                <lb/>la douceur ne fait qu’aigrir ces eſprits tacochimes, &amp; quand.
-            
-                <lb/>leur effronterie eſt paruenuë iuſques au dernier point. I
-            
-                <lb/>faut pluſtoſt ſonger à les deſtruire qu’a les guerir, &amp; retran¬
-            
-                <lb/>cher cesmembces pouris &amp; cangrenez du Corps del Eſtat,
-            
-                <lb/>1
-            <pb n="4"/>
-            
-                <lb/>6.
-            
-                <lb/>epeur que pat ve mortelle contagion lereſte n’en ſoit
-            
-                <lb/>par apres incoõmodé;Il faut, il faut que la verité triomphade
-            
-                <lb/>-calamui, &amp; puiſque cos ſaditieepublien auectaned’eſ¬.
-            
-                <lb/>clat leur inſolence, ll ne faut point ſlatte le dé &amp; declame
-            
-                <lb/>hautemet çoutreces peſtes enuanimées, qui s’efforcen
-            
-                <lb/>de ruinçe le ropos-&amp; la ttanquillité de cette Couronne.
-            
-                <lb/> C’eſt en aiu que pps Mailtcats ont crupar quelques
-            
-                <lb/>enaces remettèlaraifou coseſpits deſtoyez, iuſques
-            
-                <lb/>icy leur doaceut n’a ait qu’augmentet leur mahice, &amp; le
-            
-                <lb/>peu decechorchoqu’ils -onut faifte du premier de ces Libe¬
-            
-                <lb/>les, cauſu la productiou de beucoup d’autres plis ſcan¬
-            
-                <lb/>dale &amp; plus crinels,dont quelques-vns ſe couurent
-            
-                <lb/>etitres peciox, &amp; les aautres portent l’impudence eſcrits
-            
-                <lb/>ſur le lront &amp; fon gloir de lour infſandiss mais i’eſpere
-            
-                <lb/>qu’àl’aduenir ils y douneront vnu i bonordre’, que l’on ne
-            
-                <lb/>mettra plus aucne piece d. cette eſtoffe en luamiere que
-            
-                <lb/>dans le feu: qu’allumera le bourecau, pour y btuſler &amp; l’Au¬
-            
-                <lb/>theur &amp; l’Ouurage.
-            
-                <lb/> eſt ce que merise eeluy des oupirs rani ſa la aie
-            
-                <lb/>talieane, celuy de la Requeſte Cuille ſur la C oolaſia de la
-            
-                <lb/>dix, celuy desFenereac ſetiaens d’ bat Fraças conrela
-            
-                <lb/>Caferance, de la pure ’emire deſcouore; delaCaefſe, c. d
-            
-                <lb/>pas dé cbaobre &amp;c. dabandeu,&amp;de quelques aures, don la
-            
-                <lb/>diſcretiome faie taire le tutre,. pour eftre exceſſiuement ef¬
-            
-                <lb/>frontez &amp; decs-honneſtes, imprimez depuis la concluſon
-            
-                <lb/>de la Paix, circonſtance qui rend leur crime digu d’vn
-            
-                <lb/>plus ſeuere puoition, puiſque c’eſt brauer les puiſſances, &amp;
-            
-                <lb/>par ces exemples libertines eetirer lous: ſuits du reſpect, ou
-            
-                <lb/>l’accommodcment des affaires les atamis.
-            
-                <lb/>Sans m’amuſer à la diſcutioi du deſſein de ces Eſcriuains
-            
-                <lb/>ſi mal intentionnés, qui ne peut eſtre quo tres-mauuais, ie
-            
-                <lb/>de contenteray d’en condaner les œuares, &amp; d’en fairs
-            
-                <lb/>voir les vicieuſes conſequences apres ’oxamen que i’en ay
-            
-                <lb/>fait exactementfur la leure de chacum d’eux ; mais com¬
-            
-                <lb/>me ils ſont ſi dangereux que les eſprits foibles en ayant
-            
-                <lb/>quelque: connoiſanceen pourroient eſtreinſectez e co¬
-            <pb n="5"/>
-            
-                <lb/>rhpus, le ne prétens pas en faire vné refſutation ſi partie.
-            
-                <lb/>liere qu’elle en puiſſe donner quelque norion, mais ſeule¬
-            
-                <lb/>ment ie taſcheray de leur donner ſur les doigts a chacun, &amp;
-            
-                <lb/>n’eſpargmer en cette cenſure ny les vns ny lesautres.
-            
-                <lb/> Conme l’on a deſia refuté les Sopis Faagois, ie n’a¬
-            
-                <lb/>iouſterayrien au ſentimens de l’Autheur de cette cenſure,
-            
-                <lb/>qu’vne raiſon dont ila touch é quelque choſe, mais qu’il n’a
-            
-                <lb/>pas aſfez clairemcn explquee, pour montrer l’iepto taçon
-            
-                <lb/>de raiſonner de celibelle qui ſe deſtruit par ſes propres rai¬
-            
-                <lb/>ſons, il fait vne longue deſcription des mal-heurslle la gaet
-            
-                <lb/>e, exagere les deſordresj&amp; les prefanations commiſes pas
-            
-                <lb/>des rouapes eſtengeres, qui eauſe vn horreur de rerombe¬
-            
-                <lb/>dans les ncſimes mal-heurs, &amp; conclusr en ſuitte à la ruption
-            
-                <lb/>de la paix, ſous quelqs preextes qu’elle n’eſt que ſimulée,
-            
-                <lb/>-&amp; comevn piege pour nousattraper; n’eſt-ce pas argl
-            
-                <lb/>menter en hablle home, de dire que la guerre cſt cauſe
-            
-                <lb/> desmaſſacres &amp; des mal-heurs, &amp; parCõſequent qu’il ne faut
-            
-                <lb/>pas faire la paix, à la yerité c’eſtioindre l’ignorance à la ma
-            
-                <lb/>lice, &amp; nmericer la rmarotte auſſi bien que la rame pour de ſi
-            
-                <lb/>ares qualitez.
-            
-                <lb/>Cetre pieco a toutefois faie grand baeuit, &amp; meſmes queél
-            
-                <lb/>ques-vns ſans l’auoir veuë pour paſſr en eſtiie. de galane
-            
-                <lb/>hom mes dans de ceraines compagnies, ont ſſeuré́ que
-            
-                <lb/>c’eſtoit la plus belle choſe du monde, &amp; qu’apres cette pro¬
-            
-                <lb/>duction il falloit neceſſairement tirer l’eſchelle: il eſt vray
-            
-                <lb/>grads eſprits, mais l’Autheur y deuoit monter auparauant
-            
-                <lb/>pour y receuoir le collier d’honueur &amp; la recompenſo de ſes;
-            
-                <lb/>tauaux, ſi profitables au public qu’il l’uroit reconnu par
-            
-                <lb/>vne priere genet alle: Touresfois quoy qu’il ayt fraý le he¬!
-            
-                <lb/>nmin àd’aucres Aurheurs de meſme farine, lenr impudence
-            
-                <lb/>a bien enchery fur la ſienne, &amp; comne ils ont porté leur in¬
-            
-                <lb/>ſolence au plus hut point qu’elle pouuoit arteindre, c’eſ.
-            
-                <lb/>auec heaucoup de raiſo qu’ils peuuent pterendre vn degré
-            
-                <lb/>plus eminent ſur cett eſchelle, &amp; demourir en vn dlemene
-            
-                <lb/>plus releué.
-            
-                <lb/> r pors verit deſcpere, doan cet auantage àſon Au¬
-            <pb n="6"/>
-            
-                <lb/> *
-            
-                <lb/>lheur, &amp; de vray ie ne connois point de cenfeur plus propr
-            
-                <lb/>à corrigct vue piece de cette nature qu’vn executeur de I¬
-            
-                <lb/>ſtice, ſes llgnes les plus innocentes ne mcritent pas moins
-            
-                <lb/>que d’eſtre effaées par le ſang de l’Autheur, &amp; ce ſeroit
-            
-                <lb/>profaner ma plume que de l’employer contre vn ouurage
-            
-                <lb/>digne des corrections du plus infame de tous les hom¬
-            
-                <lb/>es.
-            
-                <lb/>es genere oxſentseus ds vevirabls Façois, procedét d’v¬
-            
-                <lb/>eſprit plus ſubil &amp; plus malicieux, &amp; i’aduoue qu’ils ont pu
-            
-                <lb/>romper beaucoup de perſonmes ſous vné apparance de fran¬
-            
-                <lb/>chiſe &amp; de aele pour ſa Patrie, il taſchent de perſuader les
-            
-                <lb/>aſprits cetre creance, &amp; prennent l’occaſion des tosbles
-            
-                <lb/>&amp; des deſordres pour les porter dans des extromitez, ou
-            
-                <lb/>eſia la chaleur &amp; lei eſmotions les pouſſent auec aſſez de
-            
-                <lb/>violence: cependaat quoy que lce ſtyle enſoit plus cloquent,
-            
-                <lb/>da phraſe mieus eſtudie e, les periodes mieux meſuré́es, &amp; le
-            
-                <lb/>defſein moins crimiel en apparance, la conſequencetou¬
-            
-                <lb/>esfois n’en eſt pas moins pernicieuſe, &amp; comme les poiſons
-            
-                <lb/>deſguiſez ſous quolque doueur, font plus à craindre qu
-            
-                <lb/>ceux quiſont connus, &amp; qui paroiſſent ingenuëment dans
-            
-                <lb/>leur purté naturelle; Aufſfices pieces qui conſeruent quel¬
-            
-                <lb/>que ideés de bonoe intention, &amp; qui gliſſent par ce moyen
-            
-                <lb/>ſi facile ment dans les efprits, meritant- d’eſtre examinées &amp;
-            
-                <lb/>recherchez de plus plés, &amp; la cenſurc en doit eſtre plus ri¬
-            
-                <lb/>goureuſe.
-            
-                <lb/> Mais comme ie ſuis obligde ſerrer mon ſtyle, &amp; de parlen
-            
-                <lb/>generalement de quelques autrres pioces fans m’amuſer à
-            
-                <lb/>nefuter ſes raiſons qui conſiſtent dans des boutades, &amp; qui
-            
-                <lb/>ſont tiréesde quelques harangues militaires, pour picquer
-            
-                <lb/>honneur &amp; de gaeneroſit les Pariſiens, &amp; les empeſc her
-            
-                <lb/>e poſorles armes; ie na veux en examiner que lafin, &amp; fai¬
-            
-                <lb/>e voir qu’elle n’oſt aucunement differente de celles à quoy
-            
-                <lb/>nous auons deſia reſpondu, il prerend l’vno de ces deux cho.¬
-            
-                <lb/>fes, ouquele Cardinal meure ou ſoit exilé, ou bien que les
-            
-                <lb/>Pariſiens &amp; tous les François en general ſe mettent en de¬.
-            
-                <lb/>uoi. dele ſacrifier à leur paſſion, quandils deuroientàace
-            
-                <lb/>qu’il
-            <pb n="7"/>
-            
-                <lb/>9.
-            
-                <lb/>qu’il dit mounir on la peins, &amp;x redpandié euirfangdahe vne
-            
-                <lb/>enepriſe ſi glorieuſe, il eſt facile d’inſerer qu’ilne réſpe
-            
-                <lb/>quela guerre &amp; les maſſacros, &amp; qu’i ne veut point admes¬
-            
-                <lb/>re de paix qu’à des conditions tout à fait impoſſibles &amp; dé¬
-            
-                <lb/>aiſonnables: ceux qui pour auoir eſté choequez par ce
-            
-                <lb/>ainiſtee deuroiant aue plus de raifon &amp; de iaſticen tirer
-            
-                <lb/>quelque ſatisfacion, qui ne anquent ny de ceut ny de
-            
-                <lb/>puiſſancepour effeAuer leurs deſſeins, &amp; dont la diguiné
-            
-                <lb/>&amp; la naiſſaânce les auanraeent ininiment au deſius adu 
-            
-                <lb/>oun, acquieſcent toutesfois à ces accerd, &amp; reltaſchent de
-            
-                <lb/>leurs intereſts pourremetre cét ſtat dans lerepos, &amp;finr
-            
-                <lb/>vne guerre dans laquelle ils ſe pouroient maintenir imiet
-            
-                <lb/>que perſonne: &amp; vous Monſieur le ſeditieux, eſchaué
-            
-                <lb/>poſſible d’vne chaleur hacchique, vous preſcherez entre
-            
-                <lb/>deux treteaux, la ſediuion &amp; le camage, &amp; prefereteaz à la.
-            
-                <lb/>paix la plus adaanageuſo que nous pouuions deſirer, l’em¬
-            
-                <lb/>braſement general de cetus Monarchie; mais ie coy que
-            
-                <lb/>voſtre eſpée n’eſgale pas voſtre plumae, &amp; que ſi l’o vo.
-            
-                <lb/>auoit pis au mot, vous auriez ſaigaé dus nez auſſi bienque
-            
-                <lb/> baueoup d aues hez qui vos eſeris reçoiuent de ’ap.
-            
-                <lb/>poboation Enfinvoua etas de ceux qui ne demandencoque
-            
-                <lb/>playe &amp; boſe, &amp; qui aſchentde pelchr op cou rrouhls,
-            
-                <lb/>poel eetpne unEſeateomme doue peila daaeraſe
-            
-                <lb/>à la ranquilliré publique.
-            
-                <lb/> C’eſt rop demeurer ſut yn luiet, i faue comme vn ſe¬.
-            
-                <lb/>ond Philoûete apres auoir eoupé cette teſte, y paſſer leſeu
-            
-                <lb/>de crainte qu’iln’ nnaiſſe de plux dangereuſos, iſl en reſte
-            
-                <lb/>d’aures à çét hydre qu’il faut abharre au?c autant ad ſor¬
-            
-                <lb/>e, donx voiy la pls homible &amp; pleine de vanin, ſous le
-            
-                <lb/>nom de Requeſte ciille caarre ls concluſios de la paix, a l v.
-            
-                <lb/>té ay de ſeeimans bien aigres contre l’nfame pere
-            
-                <lb/>dun moſtreſi dangereux, il ſaut que ma paſons’exprim
-            
-                <lb/>&amp; que i’aduoue qu’vn domon amimant le conpsde quelq
-            
-                <lb/>liberti,a eoepoſé certe equefte ineciaille, plaltoſt que ii¬
-            
-                <lb/>le, dont chaque lignea quelque crime pariculier:, &amp;t dam
-            
-                <lb/>lAquelle l’impieé fai à̀ l’eouy de l’impudence, ce Prinea,
-            
-                <lb/> C.
-            <pb n="8"/>
-            
-                <lb/>41o
-            
-                <lb/>qui s’addreſeeese belle legend , et fautolnà ſmagi¬
-            
-                <lb/>naire &amp; ſuppoſé, &amp; quoy que ſon Autheur proteſte d’eſtres.
-            
-                <lb/>fort affeionné àſon ſeruice; Ie ctoy que s’il eſtoit effeit
-            
-                <lb/>il le deuroit reconnoiſtre par vne bonne charge debois, &amp;
-            
-                <lb/>luy payer ſes gages à coups d’eſtriuieres, pour le traictar
-            
-                <lb/>d’importun, de ſtupide &amp; d’eſprir foible, &amp; peu varſé daus
-            
-                <lb/>les maximes de la Cour.
-            
-                <lb/> Ce ſont là les moidres traits de ſon inſolence, il s’atta¬
-            
-                <lb/>que d’abord à la Maieſté Royale, &amp; la traiteauec tant din¬
-            
-                <lb/>dignité que tous les ſuiets de cette Couronne, ont intereſt
-            
-                <lb/>de vanger ces outages difamans, &amp; percer vne langueſi
-            
-                <lb/>venimeuſe qui ternit le luſtre de cet Eſtat, &amp; l’expoſe à la
-            
-                <lb/>deriſion des eſtrangers par ſes ſanglantes calomnies: Les
-            
-                <lb/>Princes &amp; les Magiſtrats, nos Generaux, &amp; iuſques aux per¬
-            
-                <lb/>ſonnes ſacrées ne ſout pas eſpargnez dans cette lnfame ſa¬
-            
-                <lb/>tyre, &amp; cette redite inepte d’eau benmite &amp; de deuotios de
-            
-                <lb/>Co, y meſle les choſes les plus ſainctes auec les profanes:
-            
-                <lb/> Mais quoy que s’attaquant aux puiſſances, &amp; taxantla ver¬
-            
-                <lb/> tu des plus hommes de bien, ſa meſdiſance merite decs cha¬
-            
-                <lb/>ſtimens exemplaires, ſa brutalité me ſemble encot plus pu¬
-            
-                <lb/>niſſable, &amp; ce conte ridicule qu’il tire par les cheueux, &amp;
-            
-                <lb/>qu’il adapte ſi mal aà propos à ſon ſuiet, me rend plus animé
-            
-                <lb/>contre cét ignorant Autheur, qui ne paroiſt eloquent qu’en
-            
-                <lb/>iniures, &amp; dont les mots de gueulle ſont les rermes les plus
-            
-                <lb/>choiſis; Il conclut par vne mal- encoutreuſe prophetie, qui
-            
-                <lb/>ne doit eſtre accomplie qu’en ſon endroit, excepté qu’au
-            
-                <lb/>lieu d’aualler ce ſang, il ſera contraint de le’regorger par vn
-            
-                <lb/>infame ſupplice, la creance que i’ay que cette criminelle
-            
-                <lb/>ſatyre a plus amplement eſté refutée, fait que ieretiens ma
-            
-                <lb/>paſſion &amp; ma plume, pour m’en ſeruir contre quelques au¬
-            
-                <lb/>es qui meritent d’eſtre viucment eſtrillées.
-            
-                <lb/> Quelques vers adreſſez, a Prince du ſang ſurommé́ la
-            
-                <lb/>Cuiraſſe, en vallent bien la peine, puiſque ſuiuant le ſtyle
-            
-                <lb/>des precedentes ils taxent iuſolemment vn l’rince, à qui la
-            
-                <lb/>France eſt obliǵe pour auoir expoſé ſon ſangà ſa deffenſe,
-            
-                <lb/>&amp; l’augmentation de ſa gloire;. les troubleSpaſſez l’ont à
-            <pb n="9"/>
-            
-                <lb/>ii
-            
-                <lb/>ll verité mis ê nauuaiſe odeur das quelquẽs ſpritsMaisé
-            
-                <lb/>puis qu’ils ſont pacifiés nous deuons eſperer qu’ayant em¬
-            
-                <lb/>ployé tant de puiſſance à nous nuire, il n’en aura pas moins
-            
-                <lb/>à̀ nous protreger d’oreſnauant, nous en auons des aſſeuran¬
-            
-                <lb/>ces ſi certaines, que nous u’en deuons aucunement douter,
-            
-                <lb/>pourueu que ces libclles dont les Autheurs n’oſeroient pa¬
-            
-                <lb/>reſtre au iour, n’aigriſſent plus ſon courage genereux à nous
-            
-                <lb/>eſtre contraire; En effect cette licence effrontée eſt cauſe
-            
-                <lb/>des plus grands mal-heurs, &amp; comme vn prince qui cherit
-            
-                <lb/>l’honneur, aime ceux qui le louent. Il hayt dautant plus les
-            
-                <lb/> ennemis de ſa gloire, &amp; deés qu’il ſe ſent bleſſe le moins du
-            
-                <lb/>monde en vne partie ſiſenſible, Il n’eſpargne tien pour en
-            
-                <lb/>tirer la ſatisfaction.
-            
-                <lb/>Tout le reſte de ces eſcrits ſeditieux ne merite pas d’eſtre
-            
-                <lb/>refutez, puiſque leur titres ſont ſiſales &amp; ridicules, que i’au¬
-            
-                <lb/>rois honte de les eſcrire: Ceux qui les ont produit toutes¬
-            
-                <lb/>ſois ne ſont pas moins coupables que les autres, &amp; l’on peut
-            
-                <lb/>dire que ſi leur ouurage n’eſt pas ſi malicieux ny ſi ſubtil
-            
-                <lb/>quc le defaut d’eſprit en eſt la ſeule cauſe, &amp; qu’ils ont fait
-            
-                <lb/>de leur mieux en faiſant du pis qu’ils pouuoient faire: Ie
-            
-                <lb/>n’employeray donc point de raiſons contre des choſes ſ6
-            
-                <lb/>deſraiſonnables, &amp; ie finis par cette conſequence que I’on
-            
-                <lb/>ne doit donner aucune eſtime d’eſprit à des perſonnes qui
-            
-                <lb/>ne l’employent qu’aà mal faire, &amp; qu’vn ouurage pernicieux
-            
-                <lb/>fait iuger de la qualité de l’Autheur.
-            
-                <lb/>Q3
-            
-                <lb/>8
-            
-                <lb/> .¬
-            <pb n="10"/>
-            
-                <lb/>416
-            
-                <lb/>qui s’addreſſe ceeë belle egende , et fatoſaaéimag¬
-            
-                <lb/>naire &amp; ſuppoſé, &amp; quoy que ſon Autheur proteſte d’eſtce.
-            
-                <lb/>fort afectionné à ſon ſeruice; Ie ctoy que s’il oſtoist effeif
-            
-                <lb/>il le deuroit reconnoiſtre par vne bonne charge de bois, &amp;
-            
-                <lb/>luy payer ſes gages à coups d’eſtriuieres, pour le traictr
-            
-                <lb/>d’importun, de ſtupide &amp; d’eſprit foible, &amp; pou verſé daas
-            
-                <lb/>les maximes de la Cour.
-            
-                <lb/> Ce ſont là les moidres traits de ſon inſolence, il s’atta¬
-            
-                <lb/>que d’abord à la Maieſté Royale, &amp; la craiteauec tant d’in¬
-            
-                <lb/>dignité que tous les ſuiets de cere Couronne, ont intereſt
-            
-                <lb/>de vanger ces outrages diffamans, &amp; percer vne languo ſi
-            
-                <lb/>venimeuſe qui ternit le luſtre de cet Eſtat, &amp; l’expoſe à la
-            
-                <lb/>deriſion des eſtrangers par ſes ſanglantes calomnies: Les
-            
-                <lb/>Princes &amp; les Magiſtrats, uos Generaux, &amp; iuſques aux per¬
-            
-                <lb/>ſonnes ſacré́es ne ſont pas eſpargnez dans cette nfame ſa¬
-            
-                <lb/>tyre, &amp; cette redite inepte d’eau beite &amp; de deuosioas de
-            
-                <lb/>Cou, y meſle les choſes les plus ſainctes auec les profanes:
-            
-                <lb/> Mais quoy que s’attaquant aux puiſſances, &amp; taxant la ver¬
-            
-                <lb/> tu des plus hommes de bien, ſa meſdiſance merite des cha¬
-            
-                <lb/>ſtimens exemplaires, ſa brutalité me ſemble encor plus pu¬
-            
-                <lb/>aiſſable, &amp; ce conte ridicule qu’il tire par les cheueux, &amp;
-            
-                <lb/>qu’il adapte ſi mal à propos à ſon ſuiet, me rend plus animé
-            
-                <lb/>contre cét ignorant Autheur, qui ne paroiſt eloquent qu’en
-            
-                <lb/>iniures, &amp; dont les mots de gueulle ſont les termes les plus
-            
-                <lb/>choiſis; Il conclut par vne mal- enconutreuſe prophetie, qui
-            
-                <lb/>ne doit cſtre accomplie qu’en ſon endroit, ex cepté qu’au
-            
-                <lb/>lieu d’aualler ce ſang, il ſera contraint de le regorger par vn
-            
-                <lb/>infame ſupplice, la creance que i’ay que cette criminelle
-            
-                <lb/>ſatyre a plus amplement eſté refutée, fait que ie retiens ma
-            
-                <lb/>paſſion &amp; ma plume, pour m’en ſeruir contre quelques au¬
-            
-                <lb/>es qui meritent d’eſtre viucment eſtrillées.
-            
-                <lb/> Quelques vers adreſſez, a prince du ſang ſurommé la
-            
-                <lb/>Cuiraſſe, en vallent bien la peine, puiſque ſuiuant le ſtyle
-            
-                <lb/>des precedentes ils taxent iuſolemment vn l’rince, à qui la
-            
-                <lb/>France eſt obligé́e pour auoir expoſeé ſonſangà̀ ſa deffenſe,
-            
-                <lb/>&amp; l’augmentation de ſa gloire;. les troublepaſſez l’ont à
-        </p></body>
-    </text>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau673_GBOOKS">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title source="Moreau" type="main">Censure générale de tous les libelles diffamatoires,
+          imprimés depuis la conclusion de la paix, au préjudice de cet état.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+            Jean-Baptiste</persName>
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+          <persName ref="orcid:0000-0002-3327-3967" role="intern">Cappe Zoé</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz"/>
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=hMrgXv8lt-cC&amp;hl=fr"/>
+          <author/>
+          <title source="Moreau">Censure générale de tous les libelles diffamatoires, imprimés
+            depuis la conclusion de la paix, au préjudice de cet état.</title>
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <date source="Carrier" notBefore="1649-04-15">Texte paru la deuxième quinzaine d'avril
+            1649 ou début mai </date>
+          <extent>
+            <measure quantity="11" unit="page"/>
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="BM00780" cert="high"
+            target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49657"/>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
+            <repository/>
+            <idno type="cote">SJ IF 247/188, 56</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>False</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
+          ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
+          auteur oublié.</p>
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+          bibliothèques numériques publiques et de Google livres.</p>
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p/>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine">Libelles censurés : "Les soupirs françois sur la paix italienne"
+          [Moreau 3710], "La requête civile sur la conclusion de la paix", "Les généreux sentiments
+          d'un bon François contre la conférence" [Moreau 1491], "La pure vérité découverte", "La
+          cuirasse", "Le pot de chambre", "Le bandeau". 4 états des p. 3-5. Etat A : p. 3, l. 11
+          "Lybie : [...] fut-il ja-", l. 15 "venin, que [...] Chimere" ; p. 4 l. 10 "suiet [...] de
+          moy le respect", l. 21 "ministere, i'en ay" ; p. 5 l. 22 "erreurs, &amp; laissé". Etat B :
+          p. 3, l. 11 "Lybie : [...] fut-il ja-", l. 15 "venin, que [...] Chimere" ; p. 4 l. 10
+          "sujet [...] de moy de respect", l. 21 "ministere, Ie n'ay" ; p. 5 l. 22 "erreurs, &amp;
+          laissé". Etat C : p. 3, l. 11 "Lybie, [...] fut-il ia-", l. 15 "venin que [...] chimere" ;
+          p. 4 l. 10 "sujet [...] de moy de respect", l. 21 "ministere, Ie n'ay" ; p. 5 l. 22
+          "erreurs, a laissé". Etat D : p. 3, l. 11 "Lybie, [...] fut-il ia-", l. 15 "venin que
+          [...] chimere" ; p. 4 l. 10 "sujet [...] de moy de respect", l. 21 "ministere, Ie n'ay" ;
+          p. 5 l. 22 "erreurs, &amp; laissé". Imitation burlesque de ce texte dans "La chasse aux
+          satyres du temps. Vers burlesques." (Moreau n° 690). D'après Hubert Carrier, texte paru la
+          deuxième quinzaine d'avril 1649 ou début mai (Bibliothèque Mazarine, Ms. 4682-2, f. 46
+          v).</p>
+        <p source="Moreau">673. Censure générale de tous les libelles diffamatoires, imprimés depuis
+          la conclusion de la paix, au préjudice de cet état. Paris, 1649, 11 pages. Les libelles
+          censurés sont : 1. les Soupirs françois sur la paix italienne. « C’est le premier qui ait
+          paru. Parce qu’on ne l’a pas poursuivi, les autres sont venus après ; » 2. la Requéte
+          civile sur la conclusion de la paiz; 3. les Généreux sentiments d’un bon Fran- çois contre
+          la conférence ; 4. la Pure vérité découverte (cachée) ; S. la Cuèrasse (au prince du sang
+          surnommé la Cuirasse); 6. le Pot de chambre ; Î, le Bundeau (de l’honneur). Il faut «
+          qu’on ne mette plus aucune pièce de cette étoffe en lu- mière que dans le feu qu’allumera
+          le bourreau , pour y brûler et l’auteur et l’ouvrage. » :</p>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">non renseigné</term>
+          <term type="subgenre"/>
+          <term type="subgenre"/>
+          <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-04-05" who="ZC"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p><gap/><gap/><pb n="1"/>
+        <lb/>CENSVRE GENERALLE
+        <lb/>de tous les Libelles diffamatoires,
+        <lb/>imprimez depuis la concluſion de la
+        <lb/>Paix, au preiudice de cét Eſtat.
+        <lb/>FAVT IL que la France ſousvn climat ſi pur &amp;
+        <lb/>APoe ſi ſlain , poduſe naicnaus an de nonſres
+        <lb/> differens, &amp; qu’ayant eſte iuſques icy ecxempre
+        <lb/>2 de e urnie ene e en pne n pnener n e
+        <lb/>deuenir plus fertile en ces funeſtes prodiges, que les deſerts
+        <lb/>de l’Egypte &amp; les cauernes de la Lybie: Hercules fut-il ja¬
+        <lb/>mais plus neceſſaire, &amp; cetHydre dont la ſouſtraction d’vne
+        <lb/>teſte faiſoit la multiplication de quantité́ d’autres, donna¬
+        <lb/>tellc iamais plus de difficulté à̀ ce grand homme, &amp; vmt¬
+        <lb/>clle plus de venin, que cette dangereuſe Chimere enfantée
+        <lb/>par tant de pernicieux eſprits, iette d’ancre auſſi noire que
+        <lb/>leur ame ſur la blancheur de l’innocence &amp; de la vcrit́.
+        <lb/>Ie ne puis conceuoir comme la corruption du ſiecle, a pu
+        <lb/>monter le vice en vn degré́ ſi releué, qu’il paſſe en place de
+        <lb/>la vertu; come ccs Angcs de tenebres ſe puiſſent ſi bien
+        <lb/>deſguiſer en eſprits luminex; &amp; que la plus criminclle mcſ¬
+        <lb/>diſace ayt vne approbarion ſi generallc que l’on en cano¬
+        <lb/>iſe les Autheurs, apres anoir place leurs inſames eſcrits,
+        <lb/>comme des picces d’eſprit fort precicuſes dans les plus mo¬
+        <lb/>deſtes cabincts, iuſques-là que l’impudence &amp; la calomnie
+        <lb/>donne le poids à preſent à toutes lcs productions d’eſprit, &amp;
+        <lb/>que ſçachant ouvne piece eſt inſolente &amp; ſatrique, on in¬
+        <lb/>ſerc auſſi-toſt qu’clle eſt bonne par vne hrutale conſe¬
+        <lb/>quence.
+        <lb/>A ij <pb n="2"/>
+        <lb/>4
+        <lb/> Il me ſemble quë i’entens deſié quelques-vns de cës ſe
+        <lb/>ditieux me taxer d’eſtre de la caballe, &amp; m’appeller Maza¬
+        <lb/> riniſte, pour me mettre en horreur dans l’eſprit du vulguai¬
+        <lb/>re, &amp; l’empeſcher de reconnoiſtre mes veritables inten¬
+        <lb/> tionus, qui ne tendent qu’à les des-abuſer dé ces illuſions
+        <lb/> peruicieuſes; quoy que cette-iniure n’ayt aucun fondement,
+        <lb/>ie ſuis obligé toutesfois de deſtruirecette ſotte opinion, &amp;
+        <lb/> de dire quë ie n’ay iamais fait aucune acceptatlon de per¬
+        <lb/>ſonnes; qu’outre ce que la Maieſteé des Roys &amp; des puiſſan¬
+        <lb/> ces, auſquelles ie fuis ſuiet a tiré de moy le relſpe &amp; la ſub¬
+        <lb/> miſſion; Les honneſtes gems deſquels ie ſuis connu, pour¬
+        <lb/> ront dire que dl faueur ne m’a iamais fait comnettre des
+        <lb/>laſcheté, &amp; qûe i’ay toufſours proportionnél’eſtime d’vne
+        <lb/> perſonne à la grandeur de ſa ſeulevertu. Pour ce quieſt de
+        <lb/>celle du Cardinal Maearin, ie n’en ay receu ny deſplaiſir:
+        <lb/> ny fſaueur partieulſiere, &amp; quant ils’eſt apparammentporté :
+        <lb/> cntraire à ma Patrie, i’ay teſmoigné autant de zele àſa
+        <lb/>deffenſe que l’ooeaſion &amp; la neceſſité me l’ont pupermet¬
+        <lb/>re: Maisà preſent que les affaires ſont pacifiées, &amp; dans vn:
+        <lb/>eſtattranquille &amp; eepoſe, ſi lespuiſſances qui nous gouuer¬
+        <lb/>ner t approuuent ſon miniſters, i’en ay ny la volonté ny la
+        <lb/> force de les contredire, &amp; ſans approfondir l’interieurde
+        <lb/> ſa conſcience &amp; le ſecret de ſes maximes, ie ſouhaitte ſeu¬.
+        <lb/> lement ques’il a bian fait qu’il continue, &amp; ques’il a fait
+        <lb/> du mal à la France, qu’il luy faſſe aſſez de bien pour en oſter
+        <lb/> ent ierement la memoire &amp; le reſſentiment.
+        <lb/>ue ce peuple n’ayt donc point cette creance, que m
+        <lb/>plume ſoit mercenaire &amp; que mon eſprit ſoit eſclaue de la.
+        <lb/>lauurs le nefauis yppaaliſtenyp-ieulierementinteree,
+        <lb/>&amp; mes fſentimens font ſi conformes aà la verité que la fran¬
+        <lb/> chiſe, auec laquelle ie les metsau iour, &amp; la ſuitre dece
+        <lb/> diſcours feront aiſé́ment reconnoiſtre qu’il ſeroit ridicule
+        <lb/>de me taxer de corruption &amp; de flatterie.
+        <lb/>Mais pour iuſtifier les motifs qui me portent à cette Cen¬
+        <lb/>ſure generalle, contrel’opinion d’vn nombre d’ignoransô&amp;
+        <lb/> de libertins, que ces inſolens Eſcriuains ont pour approba¬
+        <lb/> teurs <pb n="3"/>
+        <lb/>5
+        <lb/>teurs de leurs ouurges; ces raiſons comme ie croy, ſeroist
+        <lb/>plus que ſuffiſane.
+        <lb/>Qu’outre l’intereſt commun qui m’excite à eombattre
+        <lb/>ſes monſtres, ma conſcience m’y rend obligé, &amp; que pene¬
+        <lb/>tranr clairement dans les crreurs de des Libelles; lIe ferois
+        <lb/>vn crime de les receller &amp; ne les pas mettte au iour, pour
+        <lb/>détromper les ſimples qui ſe laiſſent pipper pardes prerex¬
+        <lb/>tes de liberté &amp; de frauchile, dont cs eſoritsſe maſquet
+        <lb/>artificieuſement: que la charité doit animer mon zele a la
+        <lb/>deſtruction du vice &amp; la deffenſe de la verite, &amp; qu’enfin
+        <lb/>ces pieces diffamantes eſtãt ſi preiudiciables au repos de ces.
+        <lb/>te Moarchie, &amp; ſi ſcandaleuſes à ous les gens de bien, com¬
+        <lb/> me faiſant proſeſſion d’eſcrire quelquefois, i’ay toates les
+        <lb/>raiſons du monde de condamner ces ouurages qui des. ho¬
+        <lb/>norent les muſes par leur ſalletez &amp; leurs lnfamies, &amp; main¬
+        <lb/>tenir par ce moyen maon innocence contre les ſoupçon
+        <lb/>que l’on poutrroit auoir que quelques-vns fuſſent de ma
+        <lb/>façon.
+        <lb/> Ces motifs eſtans fi clairs &amp; ſi certains, ie me ſuis eſton¬
+        <lb/>ue que de tant d’excellens eſprits beaucoup plus capables
+        <lb/>d’entreprendre vn ſi digne trauail, la plaſpart ayo preſté
+        <lb/>par ſonſilenco vn eacite conſentement à oas erreurs, &amp; laiſſé
+        <lb/>gliſſer tant d’abus ſans les refuter. Que fi quelques-vns ont
+        <lb/>iraité de cette matiere, ils ſermble qu’ils on ou peur de les
+        <lb/>choquer ouuertement, &amp; par vne certaine retonu qui
+        <lb/>procedoit de leur modeſtie, Ils ſe ſont ſeruis de remede le¬
+        <lb/>itifs pour guerir vn mal qui ne ſe peut chaſſer que par la
+        <lb/>violence. I’appronue les intentions de l’Autheur de la een¬
+        <lb/>ſure, ſor les Soupivs Fraçois,- mais i’aurois deſiré que ſon
+        <lb/>ſtyle euſt eſté moins charitable, ou que ſa charit&amp; euſt eſté
+        <lb/>plus enflammée, &amp; qu’i ſe fuſt entierement ſeruy de l’auan¬
+        <lb/>age que lu donnoit la ſoibleſſe de ſon enncmy; En effect
+        <lb/>la douceur ne fait qu’aigrir ces eſprits tacochimes, &amp; quand.
+        <lb/>leur effronterie eſt paruenuë iuſques au dernier point. I
+        <lb/>faut pluſtoſt ſonger à les deſtruire qu’a les guerir, &amp; retran¬
+        <lb/>cher cesmembces pouris &amp; cangrenez du Corps del Eſtat,
+        <lb/>1 <pb n="4"/>
+        <lb/>6.
+        <lb/>epeur que pat ve mortelle contagion lereſte n’en ſoit
+        <lb/>par apres incoõmodé;Il faut, il faut que la verité triomphade
+        <lb/>-calamui, &amp; puiſque cos ſaditieepublien auectaned’eſ¬.
+        <lb/>clat leur inſolence, ll ne faut point ſlatte le dé &amp; declame
+        <lb/>hautemet çoutreces peſtes enuanimées, qui s’efforcen
+        <lb/>de ruinçe le ropos-&amp; la ttanquillité de cette Couronne.
+        <lb/> C’eſt en aiu que pps Mailtcats ont crupar quelques
+        <lb/>enaces remettèlaraifou coseſpits deſtoyez, iuſques
+        <lb/>icy leur doaceut n’a ait qu’augmentet leur mahice, &amp; le
+        <lb/>peu decechorchoqu’ils -onut faifte du premier de ces Libe¬
+        <lb/>les, cauſu la productiou de beucoup d’autres plis ſcan¬
+        <lb/>dale &amp; plus crinels,dont quelques-vns ſe couurent
+        <lb/>etitres peciox, &amp; les aautres portent l’impudence eſcrits
+        <lb/>ſur le lront &amp; fon gloir de lour infſandiss mais i’eſpere
+        <lb/>qu’àl’aduenir ils y douneront vnu i bonordre’, que l’on ne
+        <lb/>mettra plus aucne piece d. cette eſtoffe en luamiere que
+        <lb/>dans le feu: qu’allumera le bourecau, pour y btuſler &amp; l’Au¬
+        <lb/>theur &amp; l’Ouurage.
+        <lb/> eſt ce que merise eeluy des oupirs rani ſa la aie
+        <lb/>talieane, celuy de la Requeſte Cuille ſur la C oolaſia de la
+        <lb/>dix, celuy desFenereac ſetiaens d’ bat Fraças conrela
+        <lb/>Caferance, de la pure ’emire deſcouore; delaCaefſe, c. d
+        <lb/>pas dé cbaobre &amp;c. dabandeu,&amp;de quelques aures, don la
+        <lb/>diſcretiome faie taire le tutre,. pour eftre exceſſiuement ef¬
+        <lb/>frontez &amp; decs-honneſtes, imprimez depuis la concluſon
+        <lb/>de la Paix, circonſtance qui rend leur crime digu d’vn
+        <lb/>plus ſeuere puoition, puiſque c’eſt brauer les puiſſances, &amp;
+        <lb/>par ces exemples libertines eetirer lous: ſuits du reſpect, ou
+        <lb/>l’accommodcment des affaires les atamis.
+        <lb/>Sans m’amuſer à la diſcutioi du deſſein de ces Eſcriuains
+        <lb/>ſi mal intentionnés, qui ne peut eſtre quo tres-mauuais, ie
+        <lb/>de contenteray d’en condaner les œuares, &amp; d’en fairs
+        <lb/>voir les vicieuſes conſequences apres ’oxamen que i’en ay
+        <lb/>fait exactementfur la leure de chacum d’eux ; mais com¬
+        <lb/>me ils ſont ſi dangereux que les eſprits foibles en ayant
+        <lb/>quelque: connoiſanceen pourroient eſtreinſectez e co¬ <pb n="5"/>
+        <lb/>rhpus, le ne prétens pas en faire vné refſutation ſi partie.
+        <lb/>liere qu’elle en puiſſe donner quelque norion, mais ſeule¬
+        <lb/>ment ie taſcheray de leur donner ſur les doigts a chacun, &amp;
+        <lb/>n’eſpargmer en cette cenſure ny les vns ny lesautres.
+        <lb/> Conme l’on a deſia refuté les Sopis Faagois, ie n’a¬
+        <lb/>iouſterayrien au ſentimens de l’Autheur de cette cenſure,
+        <lb/>qu’vne raiſon dont ila touch é quelque choſe, mais qu’il n’a
+        <lb/>pas aſfez clairemcn explquee, pour montrer l’iepto taçon
+        <lb/>de raiſonner de celibelle qui ſe deſtruit par ſes propres rai¬
+        <lb/>ſons, il fait vne longue deſcription des mal-heurslle la gaet
+        <lb/>e, exagere les deſordresj&amp; les prefanations commiſes pas
+        <lb/>des rouapes eſtengeres, qui eauſe vn horreur de rerombe¬
+        <lb/>dans les ncſimes mal-heurs, &amp; conclusr en ſuitte à la ruption
+        <lb/>de la paix, ſous quelqs preextes qu’elle n’eſt que ſimulée,
+        <lb/>-&amp; comevn piege pour nousattraper; n’eſt-ce pas argl
+        <lb/>menter en hablle home, de dire que la guerre cſt cauſe
+        <lb/> desmaſſacres &amp; des mal-heurs, &amp; parCõſequent qu’il ne faut
+        <lb/>pas faire la paix, à la yerité c’eſtioindre l’ignorance à la ma
+        <lb/>lice, &amp; nmericer la rmarotte auſſi bien que la rame pour de ſi
+        <lb/>ares qualitez.
+        <lb/>Cetre pieco a toutefois faie grand baeuit, &amp; meſmes queél
+        <lb/>ques-vns ſans l’auoir veuë pour paſſr en eſtiie. de galane
+        <lb/>hom mes dans de ceraines compagnies, ont ſſeuré́ que
+        <lb/>c’eſtoit la plus belle choſe du monde, &amp; qu’apres cette pro¬
+        <lb/>duction il falloit neceſſairement tirer l’eſchelle: il eſt vray
+        <lb/>grads eſprits, mais l’Autheur y deuoit monter auparauant
+        <lb/>pour y receuoir le collier d’honueur &amp; la recompenſo de ſes;
+        <lb/>tauaux, ſi profitables au public qu’il l’uroit reconnu par
+        <lb/>vne priere genet alle: Touresfois quoy qu’il ayt fraý le he¬!
+        <lb/>nmin àd’aucres Aurheurs de meſme farine, lenr impudence
+        <lb/>a bien enchery fur la ſienne, &amp; comne ils ont porté leur in¬
+        <lb/>ſolence au plus hut point qu’elle pouuoit arteindre, c’eſ.
+        <lb/>auec heaucoup de raiſo qu’ils peuuent pterendre vn degré
+        <lb/>plus eminent ſur cett eſchelle, &amp; demourir en vn dlemene
+        <lb/>plus releué.
+        <lb/> r pors verit deſcpere, doan cet auantage àſon Au¬ <pb n="6"/>
+        <lb/> *
+        <lb/>lheur, &amp; de vray ie ne connois point de cenfeur plus propr
+        <lb/>à corrigct vue piece de cette nature qu’vn executeur de I¬
+        <lb/>ſtice, ſes llgnes les plus innocentes ne mcritent pas moins
+        <lb/>que d’eſtre effaées par le ſang de l’Autheur, &amp; ce ſeroit
+        <lb/>profaner ma plume que de l’employer contre vn ouurage
+        <lb/>digne des corrections du plus infame de tous les hom¬
+        <lb/>es.
+        <lb/>es genere oxſentseus ds vevirabls Façois, procedét d’v¬
+        <lb/>eſprit plus ſubil &amp; plus malicieux, &amp; i’aduoue qu’ils ont pu
+        <lb/>romper beaucoup de perſonmes ſous vné apparance de fran¬
+        <lb/>chiſe &amp; de aele pour ſa Patrie, il taſchent de perſuader les
+        <lb/>aſprits cetre creance, &amp; prennent l’occaſion des tosbles
+        <lb/>&amp; des deſordres pour les porter dans des extromitez, ou
+        <lb/>eſia la chaleur &amp; lei eſmotions les pouſſent auec aſſez de
+        <lb/>violence: cependaat quoy que lce ſtyle enſoit plus cloquent,
+        <lb/>da phraſe mieus eſtudie e, les periodes mieux meſuré́es, &amp; le
+        <lb/>defſein moins crimiel en apparance, la conſequencetou¬
+        <lb/>esfois n’en eſt pas moins pernicieuſe, &amp; comme les poiſons
+        <lb/>deſguiſez ſous quolque doueur, font plus à craindre qu
+        <lb/>ceux quiſont connus, &amp; qui paroiſſent ingenuëment dans
+        <lb/>leur purté naturelle; Aufſfices pieces qui conſeruent quel¬
+        <lb/>que ideés de bonoe intention, &amp; qui gliſſent par ce moyen
+        <lb/>ſi facile ment dans les efprits, meritant- d’eſtre examinées &amp;
+        <lb/>recherchez de plus plés, &amp; la cenſurc en doit eſtre plus ri¬
+        <lb/>goureuſe.
+        <lb/> Mais comme ie ſuis obligde ſerrer mon ſtyle, &amp; de parlen
+        <lb/>generalement de quelques autrres pioces fans m’amuſer à
+        <lb/>nefuter ſes raiſons qui conſiſtent dans des boutades, &amp; qui
+        <lb/>ſont tiréesde quelques harangues militaires, pour picquer
+        <lb/>honneur &amp; de gaeneroſit les Pariſiens, &amp; les empeſc her
+        <lb/>e poſorles armes; ie na veux en examiner que lafin, &amp; fai¬
+        <lb/>e voir qu’elle n’oſt aucunement differente de celles à quoy
+        <lb/>nous auons deſia reſpondu, il prerend l’vno de ces deux cho.¬
+        <lb/>fes, ouquele Cardinal meure ou ſoit exilé, ou bien que les
+        <lb/>Pariſiens &amp; tous les François en general ſe mettent en de¬.
+        <lb/>uoi. dele ſacrifier à leur paſſion, quandils deuroientàace
+        <lb/>qu’il <pb n="7"/>
+        <lb/>9.
+        <lb/>qu’il dit mounir on la peins, &amp;x redpandié euirfangdahe vne
+        <lb/>enepriſe ſi glorieuſe, il eſt facile d’inſerer qu’ilne réſpe
+        <lb/>quela guerre &amp; les maſſacros, &amp; qu’i ne veut point admes¬
+        <lb/>re de paix qu’à des conditions tout à fait impoſſibles &amp; dé¬
+        <lb/>aiſonnables: ceux qui pour auoir eſté choequez par ce
+        <lb/>ainiſtee deuroiant aue plus de raifon &amp; de iaſticen tirer
+        <lb/>quelque ſatisfacion, qui ne anquent ny de ceut ny de
+        <lb/>puiſſancepour effeAuer leurs deſſeins, &amp; dont la diguiné
+        <lb/>&amp; la naiſſaânce les auanraeent ininiment au deſius adu
+        <lb/>oun, acquieſcent toutesfois à ces accerd, &amp; reltaſchent de
+        <lb/>leurs intereſts pourremetre cét ſtat dans lerepos, &amp;finr
+        <lb/>vne guerre dans laquelle ils ſe pouroient maintenir imiet
+        <lb/>que perſonne: &amp; vous Monſieur le ſeditieux, eſchaué
+        <lb/>poſſible d’vne chaleur hacchique, vous preſcherez entre
+        <lb/>deux treteaux, la ſediuion &amp; le camage, &amp; prefereteaz à la.
+        <lb/>paix la plus adaanageuſo que nous pouuions deſirer, l’em¬
+        <lb/>braſement general de cetus Monarchie; mais ie coy que
+        <lb/>voſtre eſpée n’eſgale pas voſtre plumae, &amp; que ſi l’o vo.
+        <lb/>auoit pis au mot, vous auriez ſaigaé dus nez auſſi bienque
+        <lb/> baueoup d aues hez qui vos eſeris reçoiuent de ’ap.
+        <lb/>poboation Enfinvoua etas de ceux qui ne demandencoque
+        <lb/>playe &amp; boſe, &amp; qui aſchentde pelchr op cou rrouhls,
+        <lb/>poel eetpne unEſeateomme doue peila daaeraſe
+        <lb/>à la ranquilliré publique.
+        <lb/> C’eſt rop demeurer ſut yn luiet, i faue comme vn ſe¬.
+        <lb/>ond Philoûete apres auoir eoupé cette teſte, y paſſer leſeu
+        <lb/>de crainte qu’iln’ nnaiſſe de plux dangereuſos, iſl en reſte
+        <lb/>d’aures à çét hydre qu’il faut abharre au?c autant ad ſor¬
+        <lb/>e, donx voiy la pls homible &amp; pleine de vanin, ſous le
+        <lb/>nom de Requeſte ciille caarre ls concluſios de la paix, a l v.
+        <lb/>té ay de ſeeimans bien aigres contre l’nfame pere
+        <lb/>dun moſtreſi dangereux, il ſaut que ma paſons’exprim
+        <lb/>&amp; que i’aduoue qu’vn domon amimant le conpsde quelq
+        <lb/>liberti,a eoepoſé certe equefte ineciaille, plaltoſt que ii¬
+        <lb/>le, dont chaque lignea quelque crime pariculier:, &amp;t dam
+        <lb/>lAquelle l’impieé fai à̀ l’eouy de l’impudence, ce Prinea,
+        <lb/> C. <pb n="8"/>
+        <lb/>41o
+        <lb/>qui s’addreſeeese belle legend , et fautolnà ſmagi¬
+        <lb/>naire &amp; ſuppoſé, &amp; quoy que ſon Autheur proteſte d’eſtres.
+        <lb/>fort affeionné àſon ſeruice; Ie ctoy que s’il eſtoit effeit
+        <lb/>il le deuroit reconnoiſtre par vne bonne charge debois, &amp;
+        <lb/>luy payer ſes gages à coups d’eſtriuieres, pour le traictar
+        <lb/>d’importun, de ſtupide &amp; d’eſprir foible, &amp; peu varſé daus
+        <lb/>les maximes de la Cour.
+        <lb/> Ce ſont là les moidres traits de ſon inſolence, il s’atta¬
+        <lb/>que d’abord à la Maieſté Royale, &amp; la traiteauec tant din¬
+        <lb/>dignité que tous les ſuiets de cette Couronne, ont intereſt
+        <lb/>de vanger ces outages difamans, &amp; percer vne langueſi
+        <lb/>venimeuſe qui ternit le luſtre de cet Eſtat, &amp; l’expoſe à la
+        <lb/>deriſion des eſtrangers par ſes ſanglantes calomnies: Les
+        <lb/>Princes &amp; les Magiſtrats, nos Generaux, &amp; iuſques aux per¬
+        <lb/>ſonnes ſacrées ne ſout pas eſpargnez dans cette lnfame ſa¬
+        <lb/>tyre, &amp; cette redite inepte d’eau benmite &amp; de deuotios de
+        <lb/>Co, y meſle les choſes les plus ſainctes auec les profanes:
+        <lb/> Mais quoy que s’attaquant aux puiſſances, &amp; taxantla ver¬
+        <lb/> tu des plus hommes de bien, ſa meſdiſance merite decs cha¬
+        <lb/>ſtimens exemplaires, ſa brutalité me ſemble encot plus pu¬
+        <lb/>niſſable, &amp; ce conte ridicule qu’il tire par les cheueux, &amp;
+        <lb/>qu’il adapte ſi mal aà propos à ſon ſuiet, me rend plus animé
+        <lb/>contre cét ignorant Autheur, qui ne paroiſt eloquent qu’en
+        <lb/>iniures, &amp; dont les mots de gueulle ſont les rermes les plus
+        <lb/>choiſis; Il conclut par vne mal- encoutreuſe prophetie, qui
+        <lb/>ne doit eſtre accomplie qu’en ſon endroit, excepté qu’au
+        <lb/>lieu d’aualler ce ſang, il ſera contraint de le’regorger par vn
+        <lb/>infame ſupplice, la creance que i’ay que cette criminelle
+        <lb/>ſatyre a plus amplement eſté refutée, fait que ieretiens ma
+        <lb/>paſſion &amp; ma plume, pour m’en ſeruir contre quelques au¬
+        <lb/>es qui meritent d’eſtre viucment eſtrillées.
+        <lb/> Quelques vers adreſſez, a Prince du ſang ſurommé́ la
+        <lb/>Cuiraſſe, en vallent bien la peine, puiſque ſuiuant le ſtyle
+        <lb/>des precedentes ils taxent iuſolemment vn l’rince, à qui la
+        <lb/>France eſt obliǵe pour auoir expoſé ſon ſangà ſa deffenſe,
+        <lb/>&amp; l’augmentation de ſa gloire;. les troubleSpaſſez l’ont à <pb n="9"/>
+        <lb/>ii
+        <lb/>ll verité mis ê nauuaiſe odeur das quelquẽs ſpritsMaisé
+        <lb/>puis qu’ils ſont pacifiés nous deuons eſperer qu’ayant em¬
+        <lb/>ployé tant de puiſſance à nous nuire, il n’en aura pas moins
+        <lb/>à̀ nous protreger d’oreſnauant, nous en auons des aſſeuran¬
+        <lb/>ces ſi certaines, que nous u’en deuons aucunement douter,
+        <lb/>pourueu que ces libclles dont les Autheurs n’oſeroient pa¬
+        <lb/>reſtre au iour, n’aigriſſent plus ſon courage genereux à nous
+        <lb/>eſtre contraire; En effect cette licence effrontée eſt cauſe
+        <lb/>des plus grands mal-heurs, &amp; comme vn prince qui cherit
+        <lb/>l’honneur, aime ceux qui le louent. Il hayt dautant plus les
+        <lb/> ennemis de ſa gloire, &amp; deés qu’il ſe ſent bleſſe le moins du
+        <lb/>monde en vne partie ſiſenſible, Il n’eſpargne tien pour en
+        <lb/>tirer la ſatisfaction.
+        <lb/>Tout le reſte de ces eſcrits ſeditieux ne merite pas d’eſtre
+        <lb/>refutez, puiſque leur titres ſont ſiſales &amp; ridicules, que i’au¬
+        <lb/>rois honte de les eſcrire: Ceux qui les ont produit toutes¬
+        <lb/>ſois ne ſont pas moins coupables que les autres, &amp; l’on peut
+        <lb/>dire que ſi leur ouurage n’eſt pas ſi malicieux ny ſi ſubtil
+        <lb/>quc le defaut d’eſprit en eſt la ſeule cauſe, &amp; qu’ils ont fait
+        <lb/>de leur mieux en faiſant du pis qu’ils pouuoient faire: Ie
+        <lb/>n’employeray donc point de raiſons contre des choſes ſ6
+        <lb/>deſraiſonnables, &amp; ie finis par cette conſequence que I’on
+        <lb/>ne doit donner aucune eſtime d’eſprit à des perſonnes qui
+        <lb/>ne l’employent qu’aà mal faire, &amp; qu’vn ouurage pernicieux
+        <lb/>fait iuger de la qualité de l’Autheur.
+        <lb/>Q3
+        <lb/>8
+        <lb/> .¬ <pb n="10"/>
+        <lb/>416
+        <lb/>qui s’addreſſe ceeë belle egende , et fatoſaaéimag¬
+        <lb/>naire &amp; ſuppoſé, &amp; quoy que ſon Autheur proteſte d’eſtce.
+        <lb/>fort afectionné à ſon ſeruice; Ie ctoy que s’il oſtoist effeif
+        <lb/>il le deuroit reconnoiſtre par vne bonne charge de bois, &amp;
+        <lb/>luy payer ſes gages à coups d’eſtriuieres, pour le traictr
+        <lb/>d’importun, de ſtupide &amp; d’eſprit foible, &amp; pou verſé daas
+        <lb/>les maximes de la Cour.
+        <lb/> Ce ſont là les moidres traits de ſon inſolence, il s’atta¬
+        <lb/>que d’abord à la Maieſté Royale, &amp; la craiteauec tant d’in¬
+        <lb/>dignité que tous les ſuiets de cere Couronne, ont intereſt
+        <lb/>de vanger ces outrages diffamans, &amp; percer vne languo ſi
+        <lb/>venimeuſe qui ternit le luſtre de cet Eſtat, &amp; l’expoſe à la
+        <lb/>deriſion des eſtrangers par ſes ſanglantes calomnies: Les
+        <lb/>Princes &amp; les Magiſtrats, uos Generaux, &amp; iuſques aux per¬
+        <lb/>ſonnes ſacré́es ne ſont pas eſpargnez dans cette nfame ſa¬
+        <lb/>tyre, &amp; cette redite inepte d’eau beite &amp; de deuosioas de
+        <lb/>Cou, y meſle les choſes les plus ſainctes auec les profanes:
+        <lb/> Mais quoy que s’attaquant aux puiſſances, &amp; taxant la ver¬
+        <lb/> tu des plus hommes de bien, ſa meſdiſance merite des cha¬
+        <lb/>ſtimens exemplaires, ſa brutalité me ſemble encor plus pu¬
+        <lb/>aiſſable, &amp; ce conte ridicule qu’il tire par les cheueux, &amp;
+        <lb/>qu’il adapte ſi mal à propos à ſon ſuiet, me rend plus animé
+        <lb/>contre cét ignorant Autheur, qui ne paroiſt eloquent qu’en
+        <lb/>iniures, &amp; dont les mots de gueulle ſont les termes les plus
+        <lb/>choiſis; Il conclut par vne mal- enconutreuſe prophetie, qui
+        <lb/>ne doit cſtre accomplie qu’en ſon endroit, ex cepté qu’au
+        <lb/>lieu d’aualler ce ſang, il ſera contraint de le regorger par vn
+        <lb/>infame ſupplice, la creance que i’ay que cette criminelle
+        <lb/>ſatyre a plus amplement eſté refutée, fait que ie retiens ma
+        <lb/>paſſion &amp; ma plume, pour m’en ſeruir contre quelques au¬
+        <lb/>es qui meritent d’eſtre viucment eſtrillées.
+        <lb/> Quelques vers adreſſez, a prince du ſang ſurommé la
+        <lb/>Cuiraſſe, en vallent bien la peine, puiſque ſuiuant le ſtyle
+        <lb/>des precedentes ils taxent iuſolemment vn l’rince, à qui la
+        <lb/>France eſt obligé́e pour auoir expoſeé ſonſangà̀ ſa deffenſe,
+        <lb/>&amp; l’augmentation de ſa gloire;. les troublepaſſez l’ont à </p>
+    </body>
+  </text>
 </TEI>

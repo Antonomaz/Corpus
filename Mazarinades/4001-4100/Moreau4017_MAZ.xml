@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau4017_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau4017_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -28,7 +29,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14595"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Vers burlesque, per l'honnor d'un chiamatto Julio ensemble le
             passage de Jules Mazarin avec le recit des pieces qui ont esté trouvées dans son
             inventaire, present un commissaire, &amp; en l'absence de Varin.</title>
@@ -45,13 +46,12 @@
             <measure unit="page" quantity="14"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48977</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48977" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48977"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10366</idno>
@@ -84,10 +84,15 @@
         <language ident="ita">Document en italien</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers, dont une partie en italien. Célestin Moreau a par erreur fait
+        <p source="Mazarine">En vers, dont une partie en italien. Célestin Moreau a par erreur fait
           de la seconde partie, "Passage de Jules Mazarin...", qui a sa propre p. de titre, une
           mazarinade à part entière (n° 2728). Texte paru en mars 1649, d'après Hubert Carrier
           (Bibliothèque Mazarine, Ms. 4682-5, f. 399 v.).</p>
+        <p source="Moreau">4017. Vers burlesques per l'honnor d'un chiamato Julio, ensemble le
+          passage de Jules Mazarin, avec le récit des pièces qui ont été trouvées dans son inven
+          taire, présent un commissaire, et en l'absence de Varin. Paris, Nicolas Gasse , 1649,
+          Hspages. Il faut ajouter YAdieu de la France à Mazarin , qui n'est point indiqué dans le
+          titre; le tout assez mauvais.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="8"/>
+      <p><pb n="8"/>
         <lb/>VERS BVRLESQVE,
         <lb/>PER L’HONNOR.
         <lb/>d’un chiamatto Iulio
@@ -121,7 +125,8 @@
         <lb/>Chez NICOLAS GASSE, au mont
         <lb/>ſainct Hilaire, prés la cour d’Albret.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>AVEC PERMISSION</imprimatur>. <pb n="9"/>
+        <lb/>
+        <imprimatur>AVEC PERMISSION</imprimatur>. <pb n="9"/>
         <pb n="10"/>
         <l>
           <lb/>Vune</l>
@@ -140,8 +145,7 @@
         <l>
           <lb/>PER L’HONNORDVN</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>ChiamatoIulio.</l>
         <l>
@@ -591,11 +595,9 @@
         <l>
           <lb/>ge</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>4</l>
         <l> 1</l>

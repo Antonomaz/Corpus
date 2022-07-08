@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="M14405_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="M14405_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,20 +49,19 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49840</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49840" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49840"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14405</idno>
           </msIdentifier>
           <history>
             <provenance>
-              <stamp>True/False</stamp>
+              <stamp>False</stamp>
             </provenance>
           </history>
         </msDesc>
@@ -86,7 +86,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mention de lecture et publication le 3 octobre 1648 signée "Jossier".
+        <p source="Mazarine">Mention de lecture et publication le 3 octobre 1648 signée "Jossier".
           Autres éditions publiées la même année, sous des titres et des compositions typographiques
           différents : par "les imprimeurs &amp; libraires ordinaires du Roy" (BM00937), par Michel
           Mettayer (BM00939), par Jean Guillemot (BM00936), par Claude Morlot. Signé "Guyet".</p>
@@ -107,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST DE LA
         <lb/>COVR DE PARLEMENT
         <lb/>Portant deffences au Fermiers des Aydes, leurs Com¬

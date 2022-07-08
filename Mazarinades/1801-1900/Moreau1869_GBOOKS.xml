@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1869_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1869_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -39,7 +35,9 @@
         <bibl>
           <ref target="https://books.google.fr/books?id=tXdKAAAAcAAJ&amp;hl=fr"/>
           <author>
-            <name>H.R.P.</name>
+            <persName>
+              <addName type="initiales">H.R.P.</addName>
+            </persName>
           </author>
           <title source="Moreau">Lettre d'un gentilhomme de la ville d'Aix, en Provence, adressée à
             un sien ami, à Paris, sur ce qui s'est passé depuis la détention du comte d'Alais et du
@@ -55,13 +53,12 @@
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Vienne</settlement>
+            <settlement ref="geonames:2761369">Vienne</settlement>
             <institution>Bibliothèque nationale d'Autriche</institution>
             <repository/>
             <idno type="cote">127175-B ALT MAG</idno>
@@ -93,7 +90,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1869. Lettre d'un gentilhomme de la ville d'Aix, en Provence, adressée à
+          un sien ami, à Paris, sur ce qui s'est passé depuis la détention du comte d'Alais et du
+          duc de Richelieu. Paris, Jean Hénault, 1649, 7 pages. Datée d'Aix, le 20 février, et
+          signée H. R. P.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,6 +103,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -117,8 +121,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>T r re D
         <lb/>l L L L. L
         <lb/>D’VN GEN TILHOMME
@@ -134,8 +137,7 @@
         <lb/> 9
         <lb/>M. DC. XLIX.
         <lb/> Auec Permißio.
-        <lb/>116-8
-        <pb n="2"/>
+        <lb/>116-8 <pb n="2"/>
         <lb/> rlr
         <lb/>¬ E
         <lb/>2
@@ -156,8 +158,7 @@
         <lb/>l
         <lb/> ua OGoogle
         <lb/>1
-        <lb/>3
-        <pb n="3"/>
+        <lb/>3 <pb n="3"/>
         <lb/>3
         <lb/>’p’tttptetteAeepé
         <lb/>LETTRE D’VN GEN TIL
@@ -176,8 +177,7 @@
         <lb/>&amp; faire cognoiſtre que tout co qui s’y eſtoit paſſé
         <lb/>le iour de Sainct Sebaſtien, ne pouuoit bleſſer ſon
         <lb/>ſeruice; attendu que rien n’auolt eſté fait que
-        <lb/>dans l’extremité,, pour repouſſer l’iniure que le
-        <pb n="4"/>
+        <lb/>dans l’extremité,, pour repouſſer l’iniure que le <pb n="4"/>
         <lb/>Comte d’Alais vouloit faire au Comte de Car?
         <lb/>ces, à ceux du Parlement, &amp; aux principaux
         <lb/>Gentils-hommes de la Prouince qui auoient
@@ -208,8 +208,7 @@
         <lb rend="¬" break="no"/>modement pour l’élargiſſement du Comte d’A
         <lb rend="¬" break="no"/>lais, du General des Galleres, de l’Intendant, &amp; de
         <lb/>ousles priſonniers, leſqueſs ſone touſioursgardeés
-        <lb/>aue
-        <pb n="5"/>
+        <lb/>aue <pb n="5"/>
         <lb/> 3
         <lb/>tecvn ſoimtres-grand. Teoutes ces nmeſſesme
         <lb/>Aoanerentennie d’alles à la place des Preſchours,
@@ -240,8 +239,7 @@
         <lb/>gueree qu’ludit faltentter dans Ai
         <lb/>’e por faire voir le proiudice que le Semet
         <lb/>faiſoit aux iatetſts du Roy, ruidnt fosſuiers dana
-        <lb/>7¬
-        <pb n="6"/>
+        <lb/>7¬ <pb n="6"/>
         <lb/> o
         <lb rend="¬" break="no"/>a¬¬ pr¬ama .
         <lb/>8
@@ -274,8 +272,7 @@
         <lb/>autre choſe pour le preſent que le ſalutde tons las
         <lb/>chers amis qui vous coniurent d’acquiter vos
         <lb/>debtes, par la premiere occaſion que vous aurés de
-        <lb/>l
-        <pb n="7"/>
+        <lb/>l <pb n="7"/>
         <lb/>.
         <lb/>7
         <lb/>nous donner de vos nouuelles, &amp; de nous fairela

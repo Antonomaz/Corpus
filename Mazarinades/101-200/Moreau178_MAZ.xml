@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau178_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau178_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -49,13 +50,12 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49810</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49810" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49810"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14241</idno>
@@ -87,9 +87,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Édition originale la même année à Bordeaux chez J. M. Millanges en 8 p.
+        <p source="Mazarine">Édition originale la même année à Bordeaux chez J. M. Millanges en 8 p.
           (Desgraves, n° 955). Acte daté du 8 avril 1650. D'après Hubert Carrier, texte paru à la
           mi-avril 1650 (Bibliothèque Mazarine, Ms. 4682-1, f. 100v).</p>
+        <p source="Moreau">178. Arrêt de la cour de parlement de Bordeaux, portant inhibitions et
+          deffenses, au sieur duc d’Épernon, de prendre et usurper, à l'advenir, les qualités de
+          très- haut et très-puissant prince et d’altesse, et à toutes personnes de les lui bailler.
+          Bourdeaux, J. Mongiron Millanges, 1650, 4 pages. Du 8 avril 1650 (voir ci-dessus n° 158).
+          Guillaume Sassier en a donné, à Paris, une autre édition sous le même titre et de la même
+          date.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT

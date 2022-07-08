@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau753_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau753_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -47,13 +48,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49037</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49037" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49037"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10077</idno>
@@ -85,7 +85,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. Succède à l'édition originale rouennaise d'après
+        <p source="Mazarine">En vers octosyllabes. Succède à l'édition originale rouennaise d'après
           É. Frère et H. Carrier (Bibliothèque Mazarine, Ms 4682-2, f. 77v), 4 p., sans p. de titre,
           sans adresse ni date (BM00181), et à l'édition parisienne, "Jouxte la copie imprimée à
           Roüen", 1649, 7-[1 bl.] p. BM00180) . Réimpression vers 1880 pour la Société rouennaise
@@ -93,6 +93,7 @@
           normand, I, p.463, et Hubert Carrier, "La Presse de la Fronde (1648-1653) : Les
           Mazarinades", II , Genève, 1991, p.33. D'après Hubert Carrier, texte paru dans la première
           quinzaine d'avril 1649 (Bibliothèque Mazarine, Ms 4682-2, f. 77).</p>
+        <p source="Moreau">753. Congé de l’armée normande. Paris, 1649, 7 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -110,8 +111,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>CONGE
         <lb/>DE L’ARMEE

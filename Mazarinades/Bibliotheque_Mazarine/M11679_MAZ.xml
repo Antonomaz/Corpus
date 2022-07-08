@@ -1,10 +1,16 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="M11679_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="M11679_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title type="main" source="Moreau"/>
+        <title type="main" source="Mazarine">Officialis Parisiensis dilectis nostris rectoribus, seu
+          eorum vicariis, &amp; in eorum recusationem omnibus presbyteris, &amp; notariis nobis
+          subditis, salutem in Domino... [Lettre monitoire de l'official de l'archevêché de Paris au
+          clergé du diocèse pour exhorter les fidèles à révéler ce qu'ils savent des transactions
+          immobilières, mobilières, financières, pécuniaires et métalliques faites par Mazarin,
+          introuvalbe depuis le 7 mai 1652, ou en son nom par d'autres personnes]</title>
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
@@ -37,20 +43,21 @@
             par Mazarin, introuvalbe depuis le 7 mai 1652, ou en son nom par d'autres
             personnes].</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Antonomaz" when="1652-05-17">daté du 17 mai 1652</date>
           <extent>
             <measure unit="page" quantity="3"/>
           </extent>
           <note type="format">in-folio</note>
-          <note type="BM_identifier" cert="high">BM49067</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49067" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49067"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11679</idno>
@@ -83,7 +90,7 @@
         <language ident="lat">Document en latin</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Signé "Du Saussay" et "Gallot". Daté de Paris le 17 mai 1652.</p>
+        <p source="Mazarine">Signé "Du Saussay" et "Gallot". Daté de Paris le 17 mai 1652.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>OFFICIALIS PARISIEFNSIS DIIE.
         <lb/>inelen enls ſon leos &amp;neom¬
         <lb/>recuſationem omnibus Presbyteris, &amp; Notarys nobis

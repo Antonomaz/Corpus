@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2017_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2017_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,20 +36,21 @@
           </author>
           <title source="Mazarine">Lettre de monsieur le Cardinal au Roy.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" when="1652-01-11">11 janvier 1652</date>
           <extent>
             <measure unit="page" quantity="10"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49187</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49187" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49187"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15339</idno>
@@ -80,13 +82,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions : à Sedan, chez Jean Tollon, 1652, 8 p. in-4 ; sous un
+        <p source="Mazarine">Autres éditions : à Sedan, chez Jean Tollon, 1652, 8 p. in-4 ; sous un
           titre différent, sans adresse, 1652 (lettre datée d'Épernay le 4 janvier 1652 au lieu de
           Bouillon le 23 décembre 1651), 16 p. in-4 signée et datée à la fin (BM00323). Texte
           identique contenu dans BM00336 (Moreau 1986), édition parisienne sans doute supervisée par
           Naudé d'après Hubert Carrier (Bibliothèque Mazarine, Ms. 4682-3, f. 219). - Traduit en
           allemand et en néerlandais. Titre de départ. Texte paru le 11 janvier 1652 d'après Hubert
           Carrier (Bibliothèque Mazarine, Ms. 4682-3, f. 218v).</p>
+        <p source="Moreau">2017. Lettre de monsieur le cardinal Mazarin écrite au roi, sur son
+          retour en France.Sans Lieu, 1652, 16 pages. Datée d'Épernay le 4 janvier, et signée Jules,
+          cardinal Mazarin.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE
         <lb/>DE MONSIEVR
         <lb/>LE CARDINAL
@@ -429,8 +433,7 @@
         <lb/>e &amp;e à l’Eſtas auecautant de fidelite quéade 2ele, dene voudoinpas
         <lb/>que im’ngero à l’aduein enaucuncfaqon dana le maiement
         <lb/>derafaires Ce poinc on cas que V. M ais hfſez bormeopinion
-        <lb/>ide moy pour me l’ordonner eſtant le ſeulqipouroieus ae.
-      </p>
+        <lb/>ide moy pour me l’ordonner eſtant le ſeulqipouroieus ae. </p>
     </body>
   </text>
 </TEI>

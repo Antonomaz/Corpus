@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2580_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2580_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,13 +49,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49367</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49367" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49367"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11689</idno>
@@ -86,10 +86,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers, onze strophes de dix octosyllabes. Signé "Burnel", comme
+        <p source="Mazarine">En vers, onze strophes de dix octosyllabes. Signé "Burnel", comme
           "Remerciement de la France pour la paix à monseigneur le prince de Conty" (Moreau, n°
           3288). Texte paru à la mi-janvier 1649 d’après Hubert Carrier (Bibliothèque Mazarine, Ms
           4682-4, f. 115v).</p>
+        <p source="Moreau">2580. Ode présentée à monseigneur le prince de Conty, en la maison de
+          ville, sur son arrivée à Paris. Paris, Blageart, 1649,8 pages. Burnet, qui a signé ce
+          pamplet, est aussi l'auteur du Remercie ment de la France pour la paix à monseigneur le
+          prince de Conty.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,8 +111,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ODE
         <lb/>PRESENTEE
         <lb/>A MONSEIGNEVR

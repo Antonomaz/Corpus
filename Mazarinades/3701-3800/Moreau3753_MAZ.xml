@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3753_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3753_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -39,20 +40,21 @@
           <title source="Mazarine">Taxes faites des maisons sises aux environs de Paris et ailleurs,
             en exécution de l'arrest suivant du Conseil.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-02-18">18 février 1649</date>
           <extent>
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49935</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49935" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49935"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11964</idno>
@@ -84,12 +86,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Liste des terres et des propriétaires, des frondeurs d'après Célestin
+        <p source="Mazarine">Liste des terres et des propriétaires, des frondeurs d'après Célestin
           Moreau, taxés en vertu de l'arrêt du Conseil du Roi du 15 février 1649 (BM01031). Autre
           édition : à Lyon par Jean-Aymé de Candy, jouxte la copie imprimée à St-Germain.
           Moreau3753. Titre de départ. Arrêt et rôle signés "De Guenegaud". Arrêt du conseil d'État
           daté du 15 février 1649. D'après Hubert Carrier, texte paru le 18 février 1649
           (Bibliothèque Mazarine, Ms. 4682-5, f. 298v).</p>
+        <p source="Moreau">3753. Taxes faites des maisons sises aux environs de Paris et ailleurs ,
+          en exécution de l'arrêt suivant du {, f- I Ç li.%) conseil. Saint-Germain en Laje, le 18
+          février 1649, 12 pages. Rare. L'arrêt du conseil est du 15 février. Ce rôle est d'autant
+          plus curieux qu'il est une liste nominative des principaux frondeurs. Il y a, sous la date
+          du 22 février, un arrêt du Parlement contre l'arrêt du conseil.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,8 +114,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>TAXES FAITES
         <lb/>DES MAISONS SISES
         <lb/>AVX ENVIRONS DE PARIS
@@ -697,7 +703,8 @@
         <lb/>ſolaionné aux Originaux par moy ſonſeilles
         <lb/>Secretaire du Roy &amp; de ſes inances.
         <lb/>Inpriméa S Germain en Laye, le 8 Février 1649
-        <lb/><imprimatur>Avec privilége</imprimatur>. </p>
+        <lb/>
+        <imprimatur>Avec privilége</imprimatur>. </p>
     </body>
   </text>
 </TEI>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1915_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1915_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -9,15 +9,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -38,7 +34,7 @@
           <ref target="https://books.google.fr/books?id=GT5owreijYQC&amp;hl=fr"/>
           <author>
             <persName>
-              <name>M.D.M.</name>
+              <addName type="initiales">M. D. M.</addName>
             </persName>
           </author>
           <persName role="received" ref="isni:0000000447083018">
@@ -57,13 +53,12 @@
           <extent>
             <measure unit="page" quantity="12"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Londres</settlement>
+            <settlement ref="geonames:2643743">Londres</settlement>
             <institution>The British Library</institution>
             <repository/>
             <idno type="cote">General Reference Collection DRT Digital Store 807.d.7.(13.)</idno>
@@ -95,7 +90,9 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1915. Lettre de consolation à la reine d'Angleterre. Paris, Jaçques
+          Langlois, 1649, 12 pages. Signé M. D. M.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,6 +101,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -119,8 +119,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>........,..¬¬¬¬¬.......¬¬¬¬¬¬2¬¬
         <lb rend="¬" break="no"/>LETTRE
         <lb/>DE CONSOLATION
@@ -130,8 +129,7 @@
         <lb/> Chez IACQvEsl
         <lb/>ne e e lſpn reoa
         <lb rend="¬" break="no"/>eu e iere n iei S e Ce
-        <lb/> le Pe n l
-        <pb n="2"/>
+        <lb/> le Pe n l <pb n="2"/>
         <lb/>.2
         <lb/>te:
         <lb rend="¬" break="no"/>,
@@ -206,8 +204,7 @@
         <lb/>
         <lb/>E.3
         <lb/>
-        <lb rend="¬" break="no"/>ooaeo Google
-        <pb n="3"/>
+        <lb rend="¬" break="no"/>ooaeo Google <pb n="3"/>
         <lb/>pdlpe e ldtteuieetiittede
         <lb/> r V y
         <lb/> I
@@ -228,8 +225,7 @@
         <lb/>de paroles capables dexprimer leur peine, l’Eloquence en ces
         <lb/>rencontres eſtant auſſi impuiſſante, que la main ſe trouuefoi
         <lb rend="¬" break="no"/>ble pour les ſecourir, &amp; moderer la violence du coup dont el
-        <lb rend="¬" break="no"/>A i
-        <pb n="4"/>
+        <lb rend="¬" break="no"/>A i <pb n="4"/>
         <lb/>les ſont frappées; &amp; comme ces grands vaiſſeaux qui ſont agi
         <lb rend="¬" break="no"/>tez par la tempeſte, ne permettent à eux qui en preſagent
         <lb/>le naufrage, de deſſus les bods de la mer; que les cris, que les
@@ -262,8 +258,7 @@
         <lb rend="¬" break="no"/>ligeées par des peines de ete nature, experience les fait.
         <lb/>&amp; plus ingenieuſes pour en découurir le remele, &amp; plus en
         <lb rend="¬" break="no"/>enduës pour recognoiſtre les qualitez, qui ſot neœſſaires
-        <lb/>au
-        <pb n="5"/>
+        <lb/>au <pb n="5"/>
         <lb/>1
         <lb/>au parfair ſoulagebment d’va md, dont voaeliſgtate partilie
         <lb rend="¬" break="no"/>re les aura inſtruit. Mais comme la conditicn des Roys eſt
@@ -297,8 +292,7 @@
         <lb/>pouuons dire;eſte le demier dans bordre de lgeato, doemib?
         <lb/>priuation de la vie eftle plus ſenſible dans l’ordre de hniare.
         <lb/>Fair aque ladcleus en edemefurée, &amp; le coupſans remedei!
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/>comme il n’y a auune puiſſance au defſus de vbſtre Majeſté;
         <lb/>que œlle de Dieu, c’eſt à ſa Bonté infinie à preparervn ſoulage
         <lb rend="¬" break="no"/>ment, onuenable au mal que ſa Prouidenœ à permis;C’eſt aſa
@@ -331,8 +325,7 @@
         <lb/>mcore, puur vne terre oû ell eſtoit obligée d’aimer la plus!
         <lb/>conſiderable partie d’elle-meſme: Mais puis qu’vn Roy a eſté
         <lb/>reduir a y laiſſer la vie, ileſt du deuoir de la Reyneſon Eſpouſe,
-        <lb/>d’y laiſſer perir ſo amour. Et comme eoſtre douleu, MADA¬.
-        <pb n="7"/>
+        <lb/>d’y laiſſer perir ſo amour. Et comme eoſtre douleu, MADA¬. <pb n="7"/>
         <lb/>ME, eſtinſeparable de voſtre amour, il eſt iuſte que ſuiuant
         <lb/>ſa pente naturelle, voſtre Majeſté le faſſe deſœndre ſur d’autres
         <lb/>Princes en la perſonne de ſes Enfans; &amp; que leur preſence oc
@@ -367,8 +360,7 @@
         <lb/>uger des maux qu’elle reſſent, pr rapport aux peines qu’il d
         <lb/>ſouffert; &amp; ayant perdu la vie auec la gloire, ſurs un Thcoſneéde
         <lb/>honte &amp; de ſupplie Ayant eſté éleuí ſur la Cmi,pa lels mao
-        <lb/>B ij
-        <pb n="8"/>
+        <lb/>B ij <pb n="8"/>
         <lb/>mes peuples, qui auant peu de iours l’auoient reconnu pout
         <lb/>leur Souuerain, curonné pour leur Roy, &amp; le prodamant
         <lb/>dans les ruës &amp; dans les places publiques de leruſalem, luy
@@ -400,8 +392,7 @@
         <lb/>de ſoy-meſme, aſſoure qu’il eſt plus conſi lerable que Salomon:
         <lb/>CoPrine ſe ſeruant des lumieres qu’il auoit receuës duCiel,
         <lb/>a’eſt conenté d’inſtruire les Souuerains, &amp; de leur faire part de
-        <lb/>sbelles lumieres: mais il a pis tres peu de ſoin de les inftruire
-        <pb n="9"/>
+        <lb/>sbelles lumieres: mais il a pis tres peu de ſoin de les inftruire <pb n="9"/>
         <lb/> 9.1
         <lb/>par ſon exemple, il les prie de preſter l’oreille à ſes aduis, deſti
         <lb rend="¬" break="no"/>mer &amp; de ſuiure ſes conſeils; mais il ne leur preſene point ſes
@@ -437,8 +428,7 @@
         <lb/>re, ont eſpanduldans ’Egliſe des odeurs de grae &amp; de.
         <lb/>ſaincteté,ſont les teſmoins fidelles de ces Diuines incendies.
         <lb/> Cet exemple, MADAME, quine doit polat ott de re
-        <lb/>e
-        <pb n="10"/>
+        <lb/>e <pb n="10"/>
         <lb/>10
         <lb/>ſiſtance dans les cœurs, &amp; qui doit perſuader tous les Souue
         <lb rend="¬" break="no"/>rains, a fait il y a long-temps dans voſtre ame de puiſſantes im
@@ -472,8 +462,7 @@
         <lb rend="¬" break="no"/>ſance Royale vous a élcué; &amp; comme voſtre Majeſté en a mé
         <lb rend="¬" break="no"/>priſé volontairement la pompe &amp; la magnificence, pour con
         <lb rend="¬" break="no"/>ſoeuer àl’Egliſs lafidelité qu’elle leay a voiée au Bapteſime,
-        elle
-        <pb n="11"/>
+        elle <pb n="11"/>
         <lb/>r
         <lb/>ne doit point douter que ce meſme Dieu, qui a eſté le motif
         <lb/>d’vnſi genereuxabandon, prendra ſoin de la couronner d’vne
@@ -509,8 +498,7 @@
         <lb/>lequel apres auoir eſſuyé vos larmes, auec les miſeres de cœtte
         <lb/>vie, mettra fur voſtre teſte vne nouuelle Couronne, quiſeraau
         <lb/>deſſus des coups de la fortune &amp; du temps: comme voſtre Ma
-        <lb rend="¬" break="no"/>C ij
-        <pb n="12"/>
+        <lb rend="¬" break="no"/>C ij <pb n="12"/>
         <lb/>jeſté ſe verra au deſſus de l’enuie &amp; des perſecuteurs de ſon in
         <lb rend="¬" break="no"/>noœnce, leſquels ayant pû ſur la erre troubler voſtrerepos, en
         <lb/>combattant les loix de la nature, &amp; en deſtruiſant les fondemens

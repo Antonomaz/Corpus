@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2501_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2501_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,20 +36,21 @@
             conspirer la ruine de Mazarin avec S. A. R. &amp; Messieurs les Princes, presentez à son
             Altesse royalle. Par le sieur de Vieu-Pont,</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-01-04">à partir du 4 ou 5 janvier 1652</date>
           <extent>
             <measure unit="page" quantity="15"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49120</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49120" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49120"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13518</idno>
@@ -80,12 +82,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après H. Carrier (Bibliothèque Mazarine, Ms 4682-4, f. 81),
+        <p source="Mazarine">D'après H. Carrier (Bibliothèque Mazarine, Ms 4682-4, f. 81),
           contrefait sous le titre "La requête des peuples présentée à son Altesse royale..."
           (Moreau 3491). Vieu-Pont, pseudonyme d'après Hubert Carrier (Bibliothèque Mazarine, Ms
           4682-4, f. 80v). Bandeau (frise de fleurons) gravé sur bois au titre de départ D'après H.
           Carrier et suivant une note ms. d'un contemporain sur l'exemplaire Bibliothèque Mazarine
           4° A 12867-4, texte paru à partir du 4 ou 5 janvier 1652.</p>
+        <p source="Moreau">2501. Motifs de la ligue de tous les véritables François pour conspirer
+          la ruine de Mazarin, avec Son Altesse Royale et messieurs les princes, présentés à Son Al
+          tesse Royale par le sieur de Vieupont. Paris, chez dé funt mon grand père,à l'enseigne du
+          Carême prenant (1652), 15 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES
         <lb/>MOTIFS
         <lb/>DE LA LIGVE

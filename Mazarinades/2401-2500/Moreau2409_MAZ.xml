@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2409_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2409_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,7 +43,9 @@
             offres faites par les bourgeois &amp; habitans de la ville de Bourdeaux, pour le secours
             de ladite ville.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-07-07" notAfter="1652-07-14">deuxième semaine de
             juillet 1652</date>
@@ -50,13 +53,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49091</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49091" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49091"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13493</idno>
@@ -88,9 +90,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Contient seulement l'ordonnance du prince de Conti. Contresigné "Meuret
+        <p source="Mazarine">Contient seulement l'ordonnance du prince de Conti. Contresigné "Meuret
           de La Tour". Ordonnance datée de Bordeaux le 2 juillet 1652. Texte paru la 2e semaine de
           juillet d'après Hubert Carrier (Bibliothèque Mazarine, Ms 4682-4, f. 30v).</p>
+        <p source="Moreau">2409. Marche (la) de l'armée de monseigneur le prince de Conty, commandée
+          par le marquis de Lusignan, pour le secours de la ville d'Agénois (sic), assiégée par
+          monsieur le comte d'Arcourt (sic), avec l'ordonnance - de mondit seigneur le prince sur
+          les offres faites par les bourgeois et habitants de la ville de Bourdeaux . pour le
+          secours de ladite ville. Paris, jouxte la copie imprimée à Bourdeaux, par Guill. de La
+          Court, 1652, 4 pages. Il n'y a que l'ordonnance, datée de Bourdeaux, le 2juillet 1652, . .
+          signée A. de Bourbon, et contre-signée Meuret de La Tour.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -111,8 +120,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA MARCHE
         <lb/>DE L’ARMEE
         <lb/>DE MONSEIGNEVR LE PRINCE
@@ -129,7 +137,8 @@
         <lb/>Par G. DE LA COVRT, Imprimeur ordinaire du
         <lb/>Roy, &amp; de ſon Alteſſe.
         <lb/>M. DC. LII.
-        <lb/><imprimatur>Auec Permißion de ſon Alteſſe Royale</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Permißion de ſon Alteſſe Royale</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>LE PRINCE

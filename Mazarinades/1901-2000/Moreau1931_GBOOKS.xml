@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1931_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1931_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -59,12 +55,11 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309287</idno>
@@ -96,7 +91,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1931. Lettre de l'archiduc Léopold envoyée à Son Al tesse Royale,
+          détestant la trahison du duc Charles, avec l'approche de son armée au service des princes.
+          Paris, Claude Le Roy, 1652,7 pages. Datée d'Anty, le 18 juin 1652 Sotte et grossière ,
+          mais peu commune.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -105,6 +104,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -120,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>I r¬ D E
         <lb/>LE I I E
         <lb/>LARCHIDVC
@@ -133,8 +134,7 @@
         <lb/>V
         <lb/>cmen cLAoE i’n o y; odua
         <lb/>DCLI
-        <lb/>A1
-        <pb n="2"/>
+        <lb/>A1 <pb n="2"/>
         <lb/>*
         <lb/>i.
         <lb/>
@@ -158,8 +158,7 @@
         <lb rend="¬" break="no"/>l
         <lb rend="¬" break="no"/>ooſ
         <lb/>Donmq
-        <lb/>¬
-        <pb n="3"/>
+        <lb/>¬ <pb n="3"/>
         <lb/>ehoétt
         <lb/>oêoooûoaâo
         <lb/>V’
@@ -184,8 +183,7 @@
         <lb/> aux Princes François, il aduroit bian l’aſſeuran
         <lb rend="¬" break="no"/> ce d’en faire le ſemblable u Princes Eſtran
         <lb rend="¬" break="no"/>gen Qil eftoit neoſſaire de paat &amp; S’aurre
-        <lb/>A
-        <pb n="4"/>
+        <lb/>A <pb n="4"/>
         <lb/>1
         <lb/>1
         <lb/>.
@@ -219,8 +217,7 @@
         <lb rend="¬" break="no"/>ſtoianplu qu’ v corpsvny, &amp; hbien aſſemblé:
         <lb rend="¬" break="no"/> i
         <lb rend="¬" break="no"/> ,¬¬,
-        <lb/>¬¬¬¬
-        <pb n="5"/>
+        <lb/>¬¬¬¬ <pb n="5"/>
         <lb/>Mais le ne me ſisiraadis tméfprirrde els
         <lb/>occutrences, parce que ie ſçay que ce Prince
         <lb/>(s’il eſt loiſble de l’appeller ou nammer de ce
@@ -246,8 +243,7 @@
         <lb/>la faut, &amp; mes armnes’oppſnqu’àteu
         <lb/>qui n l veuleno pas.. Io’vei tuyſuluh.
         <lb/>Main ; &amp; monſtrer au Dpolhartesqu’lut
-        <lb/>faitvneres-grande faute, laquellene ſe pour¬
-        <pb n="6"/>
+        <lb/>faitvneres-grande faute, laquellene ſe pour¬ <pb n="6"/>
         <lb/>1
         <lb/>1
         <lb/>E

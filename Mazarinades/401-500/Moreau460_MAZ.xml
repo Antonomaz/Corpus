@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau460_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau460_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -44,13 +45,12 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49756</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49756" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49756"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10656</idno>
@@ -82,7 +82,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">3 états : p. 3 "3" à l'envers (A) / "3" à l'endroit (B et C), p. 3 l.
+        <p source="Mazarine">3 états : p. 3 "3" à l'envers (A) / "3" à l'endroit (B et C), p. 3 l.
           15 "par leurs fausses doctrines" (A) / "qu'à leurs fausses doctrines" (B et C), p. 3 note
           marginale "al Paisl" (A) / "Pallais" (B et C), p. 4 l. 7 "seditieux, n'employent" (A) /
           "seditieux, ils employent" (B et C), p. 6 l. 7/8 "Guyenne, contre les sentimens du
@@ -95,6 +95,11 @@
           "L'apologie des bons François contre les Mazarins" (BM00774). D'après Hubert Carrier,
           texte paru la deuxième semaine d'août 1650 (Bibliothèque Mazarine, Ms. 4682-1, f.
           239v).</p>
+        <p source="Moreau">460. Avertissement salutaire, donné aux bourgeois de Paris, contre les
+          fourbes secrètes des ennemis de leur repos et de leurs familles. ( S. 1.), 1650, G pages.
+          Le duc d’Orléans avait fait, dans le parlement, ses propositions pour la paix de Bordeaux.
+          L’auteur attaque vigoureusement les partisans des princes , qui sont défendus aveec bien
+          plus d’habileté dans l’.fpologie des bons François, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -111,8 +116,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ADVERTISSEMENT
         <lb/>Salutaire, donné aux Bour¬
         <lb/>geois de Paris, contre les four¬

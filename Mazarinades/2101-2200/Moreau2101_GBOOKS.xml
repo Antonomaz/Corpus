@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2101_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2101_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -48,27 +44,28 @@
             <forename>Jules</forename>
             <surname>Mazarin</surname>
           </persName>
-          <title source="Mazarine">Lettre du comte duc d'Olivarez ministre d'Estat du roy d'Espagne: A
-            Jules Mazarin cardinal, et n'agueres ministre d'Estat du roy de France.</title>
+          <title source="Mazarine">Lettre du comte duc d'Olivarez ministre d'Estat du roy d'Espagne:
+            A Jules Mazarin cardinal, et n'agueres ministre d'Estat du roy de France.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>
+          <publisher ref="isni:0000000506791357">
             <persName>
               <forename>François</forename>
               <surname>Noel</surname>
             </persName>
           </publisher>
           <date source="Moreau" when="1649">1649</date>
+          <date source="Carrier" notBefore="1649-01" notAfter="1649-03">pendant le blocus de
+            Paris</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high">BM00630</note>
-          <ref type="BM_notice" cert="high"
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="BM00630" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49513"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 312669</idno>
@@ -100,9 +97,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Moreau, ce texte est cité à la p. 15 du Mascurat "parmis les
+        <p source="Mazarine">D'après Moreau, ce texte est cité à la p. 15 du Mascurat "parmis les
           lettres fausses et supposées." (Mazarine Ms 4682-3, f. 245v) Texte daté du Blocus d'après
           Hubert Carrier (Mazarine Ms 4682-3, f. 245v) </p>
+        <p source="Moreau">2101. Lettre du comte-duc d'Olivarez, ministre d'État du roi d'Espagne, à
+          Jules Mazarin, cardinal, naguères ministre d'État du roi de France. Paris, François Noël,
+          1649, 8 pages. Citée à la p. 15 du Mascurat parmi les lettres fausses et sup posees.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -111,6 +111,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -126,8 +129,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/> I I L
         <lb/>COMTE DvC
         <lb/>DOLIVAREZ
@@ -138,8 +140,7 @@
         <lb/>D’V Ro6Y
         <lb/>DE FRANCE.
         <lb/>e no
-        <lb rend="¬" break="no"/>leei irne
-        <pb n="2"/>
+        <lb rend="¬" break="no"/>leei irne <pb n="2"/>
         <lb/>4¬ 5-¬¬,
         <lb/>1
         <lb rend="¬" break="no"/>, 4.
@@ -201,8 +202,7 @@
         <lb/>1
         <lb/>¬¬-
         <lb rend="¬" break="no"/>¬.
-        <lb/>!..
-        <pb n="3"/>
+        <lb/>!.. <pb n="3"/>
         <lb/>3
         <lb/>lt
         <lb/>epee p
@@ -232,8 +232,7 @@
         <lb/>emeſes crimses, nous-en rcſenions de pareils chaſtûmen;,
         <lb/> y eeay à redire ei hos imalheurs, c’eſt que les- dhiſna
         <lb/>uim ealét, n’âet le pouoir-dle efauuer ’e apu
-        <lb/>tts, que comme vn illuſtre malheureux, il-ſe trouue en¬
-        <pb n="4"/>
+        <lb/>tts, que comme vn illuſtre malheureux, il-ſe trouue en¬ <pb n="4"/>
         <lb/>, s¬¬.,
         <lb/>cres des am das eais o oſgy aapar
         <lb/>ua tr:ſ’att di dqpCtéalaude viaulfa
@@ -273,8 +272,7 @@
         <lb/>&amp;e moy, fi tam d’inrmes pecez mecitenr vaendulgcee
         <lb/>le trouue ma prſon rtp dous, pr mon deli, cvout
         <lb/> exenpleue &amp;na-uas as baniereô
-        <lb/>.. a4
-        <pb n="5"/>
+        <lb/>.. a4 <pb n="5"/>
         <lb/>ttop fapotable paua. ora e
         <lb/>Qglollae arêdaae’oibye duaa loü̈an
         <lb rend="¬" break="no"/>g-dal, gudepaldquebloaenda ioyalge
@@ -312,8 +310,7 @@
         <lb rend="¬" break="no"/>laquencel’erudtian, &amp; leurs pareilles, ie js des autres meſ
         <lb rend="¬" break="no"/>aa, quiſemblenc en eſtre eierementéloignés;, comme
         <lb/>lles qui ompoles lperfectiond’v chefdegerre. Car;
-        <lb/> ie.. 2n.
-        <pb n="6"/>
+        <lb/> ie.. 2n. <pb n="6"/>
         <lb/>6
         <lb/>qu’ont de cmmun n ppareneg. Souae 4 &amp; leACamail
         <lb/>auec la çuiraſſe, &amp; le baudrierla aionge, laAiaret,&amp;
@@ -352,8 +349,7 @@
         <lb/>en gages entrſes domeſtqus, comme s’il n’eur eſté quede¬ J
         <lb/>phſitaire, ou’diſpenſateur de tout ce que ſon Maiſtre luy auois
         <lb/>daué. ll n’a pas fait de ſes reſos comme fit auefuislé
-        <lb/>aſ
-        <pb n="7"/>
+        <lb/>aſ <pb n="7"/>
         <lb/>3
         <lb/>Camt Ae;’ſes ehipSea ſbrs du Royaume, os
         <lb/>emm’ce’ut;gſes ſtrſau’dſſpin qu’il deſcou
@@ -391,8 +387,7 @@
         <lb/>ou vous les auiez fait pluſieurs fois ex poſer. Si nos eſ
         <lb rend="¬" break="no"/>prits euſſenr eſté vertueux, &amp; excellens, ils euſſent abhor.
         <lb/>rez les artifices, &amp; les meſchanctez, &amp; n’euſſen ao
-        <lb/>e les chofes taiſonnables de fideles Miniſtres, doiuent tan
-        <pb n="8"/>
+        <lb/>e les chofes taiſonnables de fideles Miniſtres, doiuent tan <pb n="8"/>
         <lb/>1
         <lb/>auoir d’inclintion àe chtrileboa dedeur Pcinçe qegétſon
         <lb rend="¬" break="no"/>ne ne puiſſe iamais mettre en due leur affection inuiolabl

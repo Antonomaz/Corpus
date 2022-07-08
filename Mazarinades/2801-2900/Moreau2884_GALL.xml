@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau2884_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2884_GALL">
   <teiHeader xml:lang="fr">
     <fileDesc>
       <titleStmt>
@@ -10,24 +10,18 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
           <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="Corrector">Hip Amélie
-            <affiliation>
-              <roleName type="status">Vacataire</roleName>
-            </affiliation>
+          <persName role="Corrector">Hip Amélie <affiliation><roleName type="status"
+                >Vacataire</roleName></affiliation>
           </persName>
         </respStmt>
       </titleStmt>
@@ -44,8 +38,8 @@
         <bibl>
           <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k5540086t"/>
           <author>
-            <persName role="auteur">
-              <name>D. S. M.</name>
+            <persName>
+              <addName type="initiales">S. D. S. M.</addName>
             </persName>
           </author>
           <title source="Moreau">Procès burlesque entre monsieur le Prince et madame la duchesse
@@ -68,11 +62,11 @@
             <measure unit="page" quantity="36"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque nationale de France</institution>
             <repository>Département Littérature et art</repository>
             <idno type="cote">YE-1180</idno>
@@ -104,8 +98,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BnF_notes">Permis d'imprimer (25. mars 1649) au verso du dernier f.</p>
+        <p source="Mazarine"/>
+        <p source="BnF">Permis d'imprimer (25. mars 1649) au verso du dernier f.</p>
+        <p source="Moreau">2884. Procès burlesque entre monsieur le Prince et madame la duchesse
+          d'Aiguillon, avec les plaidoiries, par le S. D. S. M. Paris, veuve Théod. Pépingué et Est.
+          Maucroy, 1649, 35 pages. La permission d'imprimer est datée du 25 mars. Pièce plaisante et
+          curieuse, mais commune.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -114,6 +112,9 @@
           <term type="subgenre">burlesque</term>
           <term type="subgenre">satirique</term>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -129,8 +130,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k5540086t/f2.item.r=bpt6k5540086t"/>
+      <p><pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k5540086t/f2.item.r=bpt6k5540086t"/>
         <lb/>PROCEZ
         <lb/>BVRLESQVE
         <lb/>ENTRE
@@ -345,14 +345,11 @@
           <pb n="6" facs="https://gallica.bnf.fr/ark:/12148/bpt6k5540086t/f7.item.r=bpt6k5540086t"/>
           <fw place="top-center" type="pageNum">6</fw>
           <l>
-            <lb/>
-            <unclear>mneur</unclear> de l'auoir pour femme;</l>
+            <lb/><unclear>mneur</unclear> de l'auoir pour femme;</l>
           <l>
-            <lb/>
-            <unclear>and</unclear> la mort deſſous la lame</l>
+            <lb/><unclear>and</unclear> la mort deſſous la lame</l>
           <l>
-            <lb/>
-            <unclear>uit</unclear> ce pauure Monſieur,</l>
+            <lb/><unclear>uit</unclear> ce pauure Monſieur,</l>
           <l>
             <lb/>de l'ancienne faueur,</l>
           <l>
@@ -362,13 +359,11 @@
           <l>
             <lb/>Montauban emporta,</l>
           <l>
-            <lb/>
-            <unclear>aucoup</unclear> on ne s’attriſta.</l>
+            <lb/><unclear>aucoup</unclear> on ne s’attriſta.</l>
           <l>
             <lb/> Dame ſe voyant vefue</l>
           <l>
-            <lb/>
-            <unclear>ne</unclear> douleur griefue;</l>
+            <lb/><unclear>ne</unclear> douleur griefue;</l>
           <l>
             <lb/>que ſa grande beauté,</l>
           <l>
@@ -376,25 +371,19 @@
           <l>
             <lb/> de l'amour à grands Princes,</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> à Gouuerneurs de Prouinces)</l>
+            <lb/><unclear>e</unclear> à Gouuerneurs de Prouinces)</l>
           <l>
-            <lb/>
-            <unclear>viure</unclear> en viduité,</l>
+            <lb/><unclear>viure</unclear> en viduité,</l>
           <l>
             <lb/>à Dieu virginité;</l>
           <l>
-            <lb/>
-            <unclear>ent</unclear> qu'elle a fait mettre en boſſe,</l>
+            <lb/><unclear>ent</unclear> qu'elle a fait mettre en boſſe,</l>
           <l>
-            <lb/>
-            <unclear>iere</unclear> de ſon caroſſe,</l>
+            <lb/><unclear>iere</unclear> de ſon caroſſe,</l>
           <l>
-            <lb/>
-            <unclear>mirable</unclear> faſſon</l>
+            <lb/><unclear>mirable</unclear> faſſon</l>
           <l>
-            <lb/>
-            <unclear>ucelle</unclear> l'eſcuſſon:</l>
+            <lb/><unclear>ucelle</unclear> l'eſcuſſon:</l>
           <l>
             <lb/>deſfunte Eminence,</l>
           <l>
@@ -406,130 +395,101 @@
           <l>
             <lb/>prudente &amp; ſage Dame</l>
           <l>
-            <lb/>
-            <unclear>oin</unclear> pas n'auoit dans l'ame;</l>
+            <lb/><unclear>oin</unclear> pas n'auoit dans l'ame;</l>
           <l>
             <lb/> que ſa deuotion</l>
           <l>
-            <lb/>
-            <unclear>1y</unclear> fiſt attention,</l>
+            <lb/><unclear>1y</unclear> fiſt attention,</l>
           <l>
-            <lb/>
-            <unclear>nct</unclear> &amp; ſacré myſtere</l>
+            <lb/><unclear>nct</unclear> &amp; ſacré myſtere</l>
           <l>
-            <lb/>
-            <unclear>ebroit</unclear> vn fort bon Pere:</l>
+            <lb/><unclear>ebroit</unclear> vn fort bon Pere:</l>
           <l>
             <lb/>voyoit quelque Conſeiller</l>
           <l>
             <lb/>grande Chambre driller,</l>
           <l>
-            <lb/>
-            <unclear>ds</unclear> ceux-là de qui les teſtes</l>
+            <lb/><unclear>ds</unclear> ceux-là de qui les teſtes</l>
           <l>
-            <lb/>
-            <unclear>nches</unclear> ſortans des Enqueſtes,</l>
+            <lb/><unclear>nches</unclear> ſortans des Enqueſtes,</l>
           <l>
-            <lb/>
-            <unclear>ez</unclear> ſur les fleurs de Lys,</l>
+            <lb/><unclear>ez</unclear> ſur les fleurs de Lys,</l>
           <l>
             <lb/>Monarques ſont aſfis)</l>
           <pb n="7" facs="https://gallica.bnf.fr/ark:/12148/bpt6k5540086t/f8.item.r=bpt6k5540086t"/>
           <fw place="top-center" type="pageNum">7</fw>
           <l>
-            <lb/>
-            <unclear>rs</unclear> ſe leuoit en diligence;</l>
+            <lb/><unclear>rs</unclear> ſe leuoit en diligence;</l>
           <l>
-            <lb/>
-            <unclear>ur</unclear> luy faire la reuerence,</l>
+            <lb/><unclear>ur</unclear> luy faire la reuerence,</l>
           <l>
             <lb/> recommander le bon droit,</l>
           <l>
             <lb/>important procez qu'elle auoit,</l>
           <l>
-            <lb/>
-            <unclear>uchant</unclear> la volonté derniere,</l>
+            <lb/><unclear>uchant</unclear> la volonté derniere,</l>
           <l>
             <lb/> l'empourpré Frere à ſa Mere:</l>
           <l>
             <lb/> quand Preſident paroiſſoit,</l>
           <l>
-            <lb/>
-            <unclear>umblement</unclear> elle s'abaiſſoit,</l>
+            <lb/><unclear>umblement</unclear> elle s'abaiſſoit,</l>
           <l>
-            <lb/>
-            <unclear>endant</unclear> fort grande defference,</l>
+            <lb/><unclear>endant</unclear> fort grande defference,</l>
           <l>
             <lb/>ſouueraine Preſidence</l>
           <l>
-            <lb/>
-            <unclear>roupe</unclear> fort belle la ſuiuoit,</l>
+            <lb/><unclear>roupe</unclear> fort belle la ſuiuoit,</l>
           <l>
-            <lb/>
-            <unclear>ui</unclear> la mine tres-bonne auoit,</l>
+            <lb/><unclear>ui</unclear> la mine tres-bonne auoit,</l>
           <l>
             <lb/>Gentils-hommes, ou Damoiſelles,</l>
           <l>
-            <lb/>
-            <unclear>u</unclear> bien femmes, ou bien pucelles;</l>
+            <lb/><unclear>u</unclear> bien femmes, ou bien pucelles;</l>
           <l>
-            <lb/>
-            <unclear>celles</unclear> pourtant que ie croy,</l>
+            <lb/><unclear>celles</unclear> pourtant que ie croy,</l>
           <l>
             <lb/> ſi tu demande pourquoy ?</l>
           <l>
-            <lb/>
-            <unclear>'eſt</unclear> que cette Dame eſtant fille</l>
+            <lb/><unclear>'eſt</unclear> que cette Dame eſtant fille</l>
           <l>
-            <lb/>
-            <unclear>'en</unclear> voudroit d'autre en ſa famille;</l>
+            <lb/><unclear>'en</unclear> voudroit d'autre en ſa famille;</l>
           <l>
-            <lb/>
-            <unclear>ette</unclear> troupe n'auoit bon teint;</l>
+            <lb/><unclear>ette</unclear> troupe n'auoit bon teint;</l>
           <l>
-            <lb/>
-            <unclear>ais</unclear> c'eſt que trop matin l'on vint,</l>
+            <lb/><unclear>ais</unclear> c'eſt que trop matin l'on vint,</l>
           <l>
             <lb/>Telles Dames ayant couſtume,</l>
           <l>
             <lb/> leuer tard crainte du rume)</l>
           <l>
-            <lb/>
-            <unclear>ais</unclear> laiſſons la complimenter,</l>
+            <lb/><unclear>ais</unclear> laiſſons la complimenter,</l>
           <l>
             <lb/> ſes raiſons repreſenter,</l>
           <l>
-            <lb/>
-            <unclear>endant</unclear> que puiſſant Prince arriue;</l>
+            <lb/><unclear>endant</unclear> que puiſſant Prince arriue;</l>
           <l>
             <lb/>Ie croy que ſans que le deſcriue</l>
           <l>
-            <lb/>
-            <unclear>rop</unclear> bien ſçauez deſia qui c'eſt;</l>
+            <lb/><unclear>rop</unclear> bien ſçauez deſia qui c'eſt;</l>
           <l>
-            <lb/>
-            <unclear>ais</unclear> comme ie croy qu'il te plaiſt,</l>
+            <lb/><unclear>ais</unclear> comme ie croy qu'il te plaiſt,</l>
           <l>
-            <lb/>
-            <unclear>endre</unclear> il te faut obeïſſance)</l>
+            <lb/><unclear>endre</unclear> il te faut obeïſſance)</l>
           <l>
             <lb/>C'eſt le premier Prince de France,</l>
           <l>
             <lb/>Chef de la Maiſon de Bourbon,</l>
           <l>
-            <lb/>
-            <unclear>age</unclear>, vaillant, ſçauant, &amp; bon;</l>
+            <lb/><unclear>age</unclear>, vaillant, ſçauant, &amp; bon;</l>
           <l>
-            <lb/>
-            <unclear>u</unclear> ſi tu veux que ie m'explique,</l>
+            <lb/><unclear>u</unclear> ſi tu veux que ie m'explique,</l>
           <l>
-            <lb/>
-            <unclear>'eſt</unclear> de Condé Prince heroïque.</l>
+            <lb/><unclear>'eſt</unclear> de Condé Prince heroïque.</l>
           <l>
             <lb/>Il conduiſoit à ſon coſté</l>
           <l>
-            <lb/>
-            <unclear>ne</unclear> ieune &amp; tendre beauté,</l>
+            <lb/><unclear>ne</unclear> ieune &amp; tendre beauté,</l>
           <pb n="8" facs="https://gallica.bnf.fr/ark:/12148/bpt6k5540086t/f9.item.r=bpt6k5540086t"/>
           <fw place="top-center" type="pageNum">8</fw>
           <l>
@@ -959,8 +919,7 @@
           <l>
             <lb/>Que ie l'auois deuant l'Automne)</l>
           <l>
-            <lb/>Que cet acte, <hi rend="it">vno contextu</hi>
-          </l>
+            <lb/>Que cet acte, <hi rend="it">vno contextu</hi></l>
           <l>
             <lb/>Auoir eſté parfait, n'a pû.</l>
           <l rend="indent">
@@ -1250,8 +1209,7 @@
           <l>
             <lb/>Du teſtament la Loy derniere,</l>
           <l>
-            <lb/>La Loy <hi rend="it">Has conſultißima,</hi>
-          </l>
+            <lb/>La Loy <hi rend="it">Has conſultißima,</hi></l>
           <l>
             <lb/>Que grand Iuſtinian forma,</l>
           <l>
@@ -1466,18 +1424,15 @@
           <l>
             <lb/>Qu'on a hautement diffamée;</l>
           <l>
-            <lb/>
-            <hi rend="it">Immo vero</hi>, a demandé,</l>
+            <lb/><hi rend="it">Immo vero</hi>, a demandé,</l>
           <l>
-            <lb/>
-            <hi rend="it">Primo</hi>, qu'il luy fuſt accordé,</l>
+            <lb/><hi rend="it">Primo</hi>, qu'il luy fuſt accordé,</l>
           <l>
             <lb/>Que du Roolle de mediſance,</l>
           <l>
             <lb/>La Cour rayaſt ſon Eminence.</l>
           <l rend="indent">
-            <lb/>
-            <hi rend="it">Secundo</hi>, que ce teſtament,</l>
+            <lb/><hi rend="it">Secundo</hi>, que ce teſtament,</l>
           <l>
             <lb/>Fait auecque grand Iugement,</l>
           <l>
@@ -1512,42 +1467,33 @@
           <l>
             <lb/>quoy librement obtempere;</l>
           <l>
-            <lb/>
-            <unclear>omme</unclear> doit faire ſon nepueu,</l>
+            <lb/><unclear>omme</unclear> doit faire ſon nepueu,</l>
           <l>
-            <lb/>
-            <unclear>yant</unclear> l'ame aſſize en haut lieu.</l>
+            <lb/><unclear>yant</unclear> l'ame aſſize en haut lieu.</l>
           <l rend="indent">
             <lb/>Puis cita forces beaux paſſages,</l>
           <l>
-            <lb/>
-            <unclear>ont</unclear> fit merueilleux aſſemblages:</l>
+            <lb/><unclear>ont</unclear> fit merueilleux aſſemblages:</l>
           <l rend="indent">
             <lb/>Autheurs cogneus &amp; non cogneus,</l>
           <l>
             <lb/>pour rares hommes tenus;</l>
           <l>
-            <lb/>
-            <unclear>ont</unclear> au Palais bien ancienne,</l>
+            <lb/><unclear>ont</unclear> au Palais bien ancienne,</l>
           <l>
             <lb/>mais ne par la langue ſienne,</l>
           <l>
-            <lb/>
-            <unclear>equoy</unclear> le monde eſtonné fut;</l>
+            <lb/><unclear>equoy</unclear> le monde eſtonné fut;</l>
           <l>
-            <lb/>
-            <unclear>ar</unclear> ſans l'oüyr, creu l'on ne l'euſt:</l>
+            <lb/><unclear>ar</unclear> ſans l'oüyr, creu l'on ne l'euſt:</l>
           <l>
-            <lb/>
-            <unclear>ais</unclear> ſon eſpoiſſe corpulence,</l>
+            <lb/><unclear>ais</unclear> ſon eſpoiſſe corpulence,</l>
           <l>
             <lb/>Auecque plus de reuerence,</l>
           <l>
-            <lb/>
-            <unclear>euot</unclear> ſon diſcours prononcer,</l>
+            <lb/><unclear>euot</unclear> ſon diſcours prononcer,</l>
           <l>
-            <lb/>
-            <unclear>ns</unclear> Monſieur le Prince offenſer.</l>
+            <lb/><unclear>ns</unclear> Monſieur le Prince offenſer.</l>
           <l rend="indent">
             <lb/>Apres qu'il eut conclud, Bataille</l>
           <l>
@@ -1555,54 +1501,39 @@
           <l>
             <lb/>Ainſi que jadis il faiſoit,</l>
           <l>
-            <lb/>
-            <unclear>ur</unclear> ceux que trop on cottiſoit,</l>
+            <lb/><unclear>ur</unclear> ceux que trop on cottiſoit,</l>
           <l>
-            <lb/>
-            <unclear>rauant</unclear> que ſon éloquence</l>
+            <lb/><unclear>rauant</unclear> que ſon éloquence</l>
           <l>
-            <lb/>
-            <unclear>2</unclear> fiſt Aduocat d'importance,)</l>
+            <lb/><unclear>2</unclear> fiſt Aduocat d'importance,)</l>
           <l>
-            <lb/>
-            <unclear>rla</unclear> pour le Duc de Breſé,</l>
+            <lb/><unclear>rla</unclear> pour le Duc de Breſé,</l>
           <l>
-            <lb/>
-            <unclear>i</unclear> ne doit eſtre meſpriſé;</l>
+            <lb/><unclear>i</unclear> ne doit eſtre meſpriſé;</l>
           <l>
-            <lb/>
-            <unclear>ar</unclear> de Dame d'Anguien eſt Frere,</l>
+            <lb/><unclear>ar</unclear> de Dame d'Anguien eſt Frere,</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> Pere, auſſi bien que de Mere;</l>
+            <lb/><unclear>e</unclear> Pere, auſſi bien que de Mere;</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> la France Grand Admiral,</l>
+            <lb/><unclear>e</unclear> la France Grand Admiral,</l>
           <l>
-            <lb/>
-            <unclear>aillant</unclear>, courtois, &amp; liberal:</l>
+            <lb/><unclear>aillant</unclear>, courtois, &amp; liberal:</l>
           <l>
             <lb/>dit, quoy que la Cour pourprine</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> ce teſtament determine,</l>
+            <lb/><unclear>e</unclear> ce teſtament determine,</l>
           <l>
-            <lb/>
-            <unclear>n</unclear> Client n'a point d'intereſt,</l>
+            <lb/><unclear>n</unclear> Client n'a point d'intereſt,</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> quelle façon ſoit l'Arreſt;</l>
+            <lb/><unclear>e</unclear> quelle façon ſoit l'Arreſt;</l>
           <l>
-            <lb/>
-            <unclear>inſi</unclear> qu'à la Cour ſe rapporte,</l>
+            <lb/><unclear>inſi</unclear> qu'à la Cour ſe rapporte,</l>
           <l>
-            <lb/>
-            <unclear>t</unclear> de conteſter ſe déporte.</l>
+            <lb/><unclear>t</unclear> de conteſter ſe déporte.</l>
           <l>
             <lb/>Pour la Sorbonne, Montelon</l>
           <l>
-            <lb/>
-            <unclear>it</unclear> ſon plaidoyer par trop long,</l>
+            <lb/><unclear>it</unclear> ſon plaidoyer par trop long,</l>
           <fw place="bot-right" type="sig">F</fw>
           <pb n="22" facs="https://gallica.bnf.fr/ark:/12148/bpt6k5540086t/f23.item.r=bpt6k5540086t"/>
           <fw place="top-center" type="pageNum">22</fw>
@@ -1943,8 +1874,7 @@
           <l>
             <lb/>Non pas meſme, en quel iour ce fut,</l>
           <l>
-            <lb/>Que dans grande Chambre <unclear>naleselua e</unclear>
-          </l>
+            <lb/>Que dans grande Chambre <unclear>naleselua e</unclear></l>
           <l>
             <lb/>(A vous, à moy, cela n'importe)</l>
           <l>
@@ -1966,8 +1896,7 @@
           <l>
             <lb/>Me logea vers la cheminée.</l>
           <l>
-            <lb/>Apres que porte ouuerte <unclear>oaneuift,</unclear>
-          </l>
+            <lb/>Apres que porte ouuerte <unclear>oaneuift,</unclear></l>
           <l>
             <lb/>Et que tout le monde entré ſeuſt;</l>
           <l>
@@ -1982,100 +1911,75 @@
           <pb n="29" facs="https://gallica.bnf.fr/ark:/12148/bpt6k5540086t/f28.item.r=bpt6k5540086t"/>
           <fw place="top-center" type="pageNum">29</fw>
           <l>
-            <lb/>
-            <unclear>e</unclear> diſpoſant à patience,</l>
+            <lb/><unclear>e</unclear> diſpoſant à patience,</l>
           <l>
-            <lb/>
-            <unclear>ur</unclear>entendre cette audiance.</l>
+            <lb/><unclear>ur</unclear>entendre cette audiance.</l>
           <l rend="indent">
             <lb/>Silence fait, Monſieur Briquet,</l>
           <l>
             <lb/>vn des trois Aſtres du parquet,</l>
           <l>
-            <lb/>
-            <unclear>ur</unclear> le Roy portant la parolle,</l>
+            <lb/><unclear>ur</unclear> le Roy portant la parolle,</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> dit rien du tout de friuolle;</l>
+            <lb/><unclear>e</unclear> dit rien du tout de friuolle;</l>
           <l>
-            <lb/>
-            <unclear>ar</unclear> puiſſamment il raiſonna,</l>
+            <lb/><unclear>ar</unclear> puiſſamment il raiſonna,</l>
           <l>
             <lb/> tout le droict examina,</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> pouuoit auoir la Ducheſſe.</l>
+            <lb/><unclear>e</unclear> pouuoit auoir la Ducheſſe.</l>
           <l>
-            <lb/>
-            <unclear>ar</unclear> diſpoſition expreſſe</l>
+            <lb/><unclear>ar</unclear> diſpoſition expreſſe</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> Monſeigneur le Cardinal,</l>
+            <lb/><unclear>e</unclear> Monſeigneur le Cardinal,</l>
           <l>
             <lb/>Nom qu'il perdit au iour final;</l>
           <l>
-            <lb/>
-            <unclear>’il</unclear> laiſſa pour la ſepulture,</l>
+            <lb/><unclear>’il</unclear> laiſſa pour la ſepulture,</l>
           <l>
-            <lb/>
-            <unclear>on</unclear> corps remply de pourriture)</l>
+            <lb/><unclear>on</unclear> corps remply de pourriture)</l>
           <l>
-            <lb/>
-            <unclear>ar</unclear> depuis cet heureux moment</l>
+            <lb/><unclear>ar</unclear> depuis cet heureux moment</l>
           <l>
             <lb/>ceſte ce haut compliment;</l>
           <l>
-            <lb/>
-            <unclear>t</unclear> Monſieur, à peine on le nomme</l>
+            <lb/><unclear>t</unclear> Monſieur, à peine on le nomme</l>
           <l>
             <lb/>Eſtant mort ainſi qu'vn autre homme.</l>
           <l rend="indent">
             <lb/>De ces nullitez il parla,</l>
           <l>
-            <lb/>
-            <unclear>ue</unclear> Gautier articulez a,</l>
+            <lb/><unclear>ue</unclear> Gautier articulez a,</l>
           <l>
-            <lb/>
-            <unclear>our</unclear> ce grand teſtament deſtruire.</l>
+            <lb/><unclear>our</unclear> ce grand teſtament deſtruire.</l>
           <l>
             <lb/>Où ne trouua guere à redire,</l>
           <l>
-            <lb/>
-            <unclear>uis</unclear> a loüanges eſtallé,</l>
+            <lb/><unclear>uis</unclear> a loüanges eſtallé,</l>
           <l>
-            <lb/>
-            <unclear>t</unclear> tous les beaux faits enfilé,</l>
+            <lb/><unclear>t</unclear> tous les beaux faits enfilé,</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> celuy-là, qui la Sorbonne,</l>
+            <lb/><unclear>e</unclear> celuy-là, qui la Sorbonne,</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> vieille a faite belle &amp; bonne;</l>
+            <lb/><unclear>e</unclear> vieille a faite belle &amp; bonne;</l>
           <l>
             <lb/>eaux faits deſquels il ſe ſeruit</l>
           <l>
-            <lb/>
-            <unclear>t</unclear> par où tant d'or il rauit</l>
+            <lb/><unclear>t</unclear> par où tant d'or il rauit</l>
           <l>
-            <lb/>
-            <unclear>ous</unclear> ombre d'enuahir l'Eſpagne.</l>
+            <lb/><unclear>ous</unclear> ombre d'enuahir l'Eſpagne.</l>
           <l>
-            <lb/>
-            <unclear>eſolant</unclear> toute la campagne</l>
+            <lb/><unclear>eſolant</unclear> toute la campagne</l>
           <l>
-            <lb/>
-            <unclear>ar</unclear> impoſts &amp; tributs nouueaux,</l>
+            <lb/><unclear>ar</unclear> impoſts &amp; tributs nouueaux,</l>
           <l>
-            <lb/>
-            <unclear>aiſfant</unclear> paſſer François pour veaux.</l>
+            <lb/><unclear>aiſfant</unclear> paſſer François pour veaux.</l>
           <l>
-            <lb/>
-            <unclear>l</unclear> reuinſt à Monſieur le Prince,</l>
+            <lb/><unclear>l</unclear> reuinſt à Monſieur le Prince,</l>
           <l>
             <lb/>Seigneur qui n'eſt point du tout mince,</l>
           <l>
-            <lb/>
-            <unclear>uis</unclear> le Duc d'Anguien loüangea,</l>
+            <lb/><unclear>uis</unclear> le Duc d'Anguien loüangea,</l>
           <l>
             <lb/>Sans que point du tout menſongea,</l>
           <fw place="bot-right" type="sig">H</fw>
@@ -2154,103 +2058,77 @@
           <pb n="31" facs="https://gallica.bnf.fr/ark:/12148/bpt6k5540086t/f30.item.r=bpt6k5540086t"/>
           <fw place="top-center" type="pageNum">31</fw>
           <l>
-            <lb/>
-            <unclear>ont</unclear> le Cardinal prit courage,</l>
+            <lb/><unclear>ont</unclear> le Cardinal prit courage,</l>
           <l>
             <lb/>que fit eſclater ſa rage,</l>
           <l>
-            <lb/>
-            <unclear>ntre</unclear> deux pauures mal heureux,</l>
+            <lb/><unclear>ntre</unclear> deux pauures mal heureux,</l>
           <l>
             <lb/>qui ce coeur point genereux,</l>
           <l rend="indent">
             <lb/>Lyon fit couper les teſtes,</l>
           <l>
-            <lb/>
-            <unclear>u'il</unclear> creut arreſter ſes conqueſtes,</l>
+            <lb/><unclear>u'il</unclear> creut arreſter ſes conqueſtes,</l>
           <l>
-            <lb/>
-            <unclear>ais</unclear> rien que leur mal-heureux ſort,</l>
+            <lb/><unclear>ais</unclear> rien que leur mal-heureux ſort,</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> les conduiſit à la mort,</l>
+            <lb/><unclear>e</unclear> les conduiſit à la mort,</l>
           <l>
-            <lb/>
-            <unclear>arquoy</unclear> l'on plaint leur infortune,</l>
+            <lb/><unclear>arquoy</unclear> l'on plaint leur infortune,</l>
           <l>
-            <lb/>
-            <unclear>aquelle</unclear> ne fut point commune:</l>
+            <lb/><unclear>aquelle</unclear> ne fut point commune:</l>
           <l>
-            <lb/>
-            <unclear>ar</unclear> ſi lors l'euſſent éuité,</l>
+            <lb/><unclear>ar</unclear> ſi lors l'euſſent éuité,</l>
           <l>
-            <lb/>
-            <unclear>uyant</unclear> deuant la cruauté,</l>
+            <lb/><unclear>uyant</unclear> deuant la cruauté,</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> cét homme plein de vengeance,</l>
+            <lb/><unclear>e</unclear> cét homme plein de vengeance,</l>
           <l>
             <lb/>de pardon n'ayant ſcience,</l>
           <l>
-            <lb/>
-            <unclear>eurs</unclear> teſtes ſur leurs cous ſeroient,</l>
+            <lb/><unclear>eurs</unclear> teſtes ſur leurs cous ſeroient,</l>
           <l>
             <lb/>leurs carroſſes trotteroient,</l>
           <l>
-            <lb/>
-            <unclear>omme</unclear> ceux de maintes perſonnes,</l>
+            <lb/><unclear>omme</unclear> ceux de maintes perſonnes,</l>
           <l>
-            <lb/>
-            <unclear>u’on</unclear> n'a point eſtimé poltronnes,</l>
+            <lb/><unclear>u’on</unclear> n'a point eſtimé poltronnes,</l>
           <l>
-            <lb/>
-            <unclear>’auoir</unclear> éuité ſa fureur,</l>
+            <lb/><unclear>’auoir</unclear> éuité ſa fureur,</l>
           <l>
-            <lb/>
-            <unclear>ont</unclear> tout le monde auoit horreur,</l>
+            <lb/><unclear>ont</unclear> tout le monde auoit horreur,</l>
           <l>
-            <lb/>
-            <unclear>iniſſans</unclear> leur pelerinage,</l>
+            <lb/><unclear>iniſſans</unclear> leur pelerinage,</l>
           <l>
             <lb/>toſt qu'il eut plié bagages,</l>
           <l>
             <lb/>que ſur Pont-Neuf eut paſſé,</l>
           <l>
-            <lb/>
-            <unclear>omme</unclear> la bien Rondeau penſé,</l>
+            <lb/><unclear>omme</unclear> la bien Rondeau penſé,</l>
           <l>
-            <lb/>
-            <unclear>ais</unclear> comme il fut en aſſeurance,</l>
+            <lb/><unclear>ais</unclear> comme il fut en aſſeurance,</l>
           <l>
-            <lb/>
-            <unclear>u</unclear> Prince il n'eut plus ſouciance,</l>
+            <lb/><unclear>u</unclear> Prince il n'eut plus ſouciance,</l>
           <l>
             <lb/> meſme là desherité,</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> qui procez a ſuſcité;</l>
+            <lb/><unclear>e</unclear> qui procez a ſuſcité;</l>
           <l rend="indent">
             <lb/>Puis dit que bruit de populace,</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> doit auoir telle efficace,</l>
+            <lb/><unclear>e</unclear> doit auoir telle efficace,</l>
           <l>
-            <lb/>
-            <unclear>u’il</unclear> puiſſe le perſuader,</l>
+            <lb/><unclear>u’il</unclear> puiſſe le perſuader,</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> confiſcation demander,</l>
+            <lb/><unclear>e</unclear> confiſcation demander,</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> l'inumerable cheuance,</l>
+            <lb/><unclear>e</unclear> l'inumerable cheuance,</l>
           <l>
             <lb/>ont il auoit grande abondance,</l>
           <l>
-            <lb/>
-            <unclear>e</unclear> qu'on ne peut ſans que procez,</l>
+            <lb/><unclear>e</unclear> qu'on ne peut ſans que procez,</l>
           <l>
-            <lb/>
-            <unclear>oit</unclear> fait au corps pourry d'abcez,</l>
+            <lb/><unclear>oit</unclear> fait au corps pourry d'abcez,</l>
           <pb n="32" facs="https://gallica.bnf.fr/ark:/12148/bpt6k5540086t/f31.item.r=bpt6k5540086t"/>
           <fw place="top-center" type="pageNum">32</fw>
           <l>

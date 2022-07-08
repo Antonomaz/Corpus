@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau180_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau180_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -49,13 +50,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49812</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49812" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49812"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15189</idno>
@@ -87,8 +87,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Signé : "De Pontac". Daté du 1er juin 1650. D'après Hubert Carrier,
+        <p source="Mazarine">Signé : "De Pontac". Daté du 1er juin 1650. D'après Hubert Carrier,
           texte paru le 2 juin 1650 (Bibliothèque Mazarine, Ms. 4682-1, f. 100v).</p>
+        <p source="Moreau">180. Arrêt de la cour de parlement de Bordeaux , portant que le roi sera
+          très-humblement supplié d'agréer que madame la princesse de Condé et monsieur le duc
+          d'Anguien (sic), son fils, demeureront en la présente ville, sous sa sauvegarde et de sa
+          justice, avec le registre y mentionné. Bordeaux, J. Mongiron Millanges , 1650 , 8 pages.
+          Du 1ᵉʳ juin 1650.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -108,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT
@@ -122,8 +126,7 @@
         <lb/>Auec le Regiſtre y mentionné. <figure type="decoration"/>
         <lb/>A BOVRDEAVX.
         <lb/>Par I.MOGIRON MILLANGES, Imprimeur
-        <lb/>ordinaire du Roy. 16̃50.
-        <lb/>. <pb n="10"/>
+        <lb/>ordinaire du Roy. 16̃50. <pb n="10"/>
         <pb n="11"/>
         <lb/>EXTRAICT DES
         <lb/>Regſtres de, Palehent.

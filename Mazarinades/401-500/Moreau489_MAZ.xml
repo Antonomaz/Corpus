@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau489_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau489_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -34,20 +35,21 @@
           </author>
           <title source="Mazarine">Avis aux Parisiens.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Antonomaz" when="1652-04-02">affiché le 2 avril 1652</date>
           <extent>
             <measure unit="page" quantity="1"/>
           </extent>
           <note type="format" subtype="placard">in-folio</note>
-          <note type="BM_identifier" cert="high">BM49953</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49953" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49953"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10036</idno>
@@ -79,7 +81,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Célestin Moreau, placard affiché la nuit du 1er au 2 avril 1652
+        <p source="Mazarine">D'après Célestin Moreau, placard affiché la nuit du 1er au 2 avril 1652
           annonçant l’arrivée du prince de Condé à Paris, après le combat de Bleneau et qui, d'après
           Hubert Carrier (Ms. 4677, fiches A. E. 219-220) a provoqué une émeute sur le Pont-Neuf.
           Édition attestée par C. Moreau et repérée par Armand d'Artois (8° 40523-21/1 [Res] p.
@@ -90,6 +92,18 @@
           placard in-folio sur une prétendue conspiration tramée contre Condé dans Libourne connue
           dès le 2 février 1652. Attribué à Claude Du Bosc de Montandré par H. Carrier ("La Presse
           de la Fronde (1648-1653) : les Mazarinades", II, Genève, 1991, p. 54).</p>
+        <p source="Moreau">489. Avis aux Parisiens. Il y a, sous ce titre , trois pièces. La
+          première est un placard in-4°, affiché le 4 novembre 1650 et dans lequel Mazarin est
+          accusé d’avoir empoisonné le duc de Beaufort ; la seconde , un placard in-folio, relatif à
+          une prétendue conspiration des habi- tants de Libourne contre le prince de Condé. L’auteur
+          propose, par occasion , de raser les maisons de D'Elbeuf,, d’Hocquincourt , de La Ferté
+          Senneterre, d’Aumont, Le Tellier, Servient , de Lyonne, de Chevreuse , d’Harcourt, de La
+          Vieuville, d’Ampus, de la prin- cesse Palatine, de Manican, de Guénégaud, de Grandpré,
+          etc. La troisième, enfin, est une copie du placard par lequel est an- noncée l’arrivée de
+          M. le Prince à Paris, après le combat de Ble- neau. Elle porte au titre : Paris, jouxte la
+          copie imprimée, 1632, 7 pages. Il en existe une autre édition, où Parisiens est écrit
+          Parissiens , et qui n’a que 6 pages. Le placard avait été affiché, le mardi de Pâques.
+          Voir l‘Avis important et nécessaire donné aux Parisiens par le duc de Beaufort.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -108,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>AVIS
         <lb/>AVX PARISIENS.
         <lb/>affiché le 2e iour d'avril 1652 dans tous les carrefours de paris

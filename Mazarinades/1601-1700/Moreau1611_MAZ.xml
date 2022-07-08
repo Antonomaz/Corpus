@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1611_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1611_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -27,7 +28,7 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14647"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Harangue prononcée le 9. avril 1651. Sur la promotion de monsieur
             le premier President, a la charge de garde des seaux.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
@@ -43,13 +44,12 @@
             <measure unit="page" quantity="11"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49052</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49052" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49052"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11034</idno>
@@ -81,9 +81,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Texte paru à partir du 10 avril 1651 d'après Hubert Carrier
+        <p source="Mazarine">Texte paru à partir du 10 avril 1651 d'après Hubert Carrier
           (Bibliothèque Mazarine, Ms 4682-3, f. 58v). Citation au titre : "Acceptus est Regi
           minister intelligens. Proverb. Salom. c. 13."</p>
+        <p source="Moreau">1611. Harangue prononcée le 9 avril 1651, sur la pro motion de M. le
+          premier président à la charge de garde des sceaux. Paris, Pierre Du Pont, 1651, 4 1
+          Beaucoup de phrases louangeuses ; pas um fait.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,8 +104,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>HARANGVE
         <lb/>PRONONCEE LE 9 Auril 1651.
         <lb/>SVR LA PROMOTION DE

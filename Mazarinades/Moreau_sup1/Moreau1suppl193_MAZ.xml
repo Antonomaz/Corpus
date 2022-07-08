@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1suppl193_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1suppl193_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -44,13 +45,12 @@
             <measure unit="page" quantity="22"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49308</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49308" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49308"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13768 bis</idno>
@@ -82,7 +82,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions repérées par Célestin Moreau, Armand d'Artois et Hubert
+        <p source="Mazarine">Autres éditions repérées par Célestin Moreau, Armand d'Artois et Hubert
           Carrier (Bibliothèque Mazarine, Ms 4682-5, f.4v-5) : Paris, chez François Preuveray, 1649,
           26-[2 bl.] p. in-4 (BM00465) ; même adresse, 1649, 16 [i. e. 26]-[2] p. in 4 (BM00469 et
           BM00471) ; Paris, 1649, 26-[2 bl.] p. in-4 (BM00467) ; sans adresse ni date ni p. de
@@ -94,6 +94,9 @@
           de l'année 1649", 1650 (BM00059) ; "traduction en néerlandais, sans lieu, sur la copie
           imprimée à Paris, 1649, 20 p. in-4 ; autre édition hollandaise, 24 p. in-4. Texte paru le
           27 janvier 1649 d'après H. Carrier.</p>
+        <p source="Moreau">193. Raisons (les) ou les motifs véritables de la deffense du Parlement,
+          etc. [2967.] Deux autres éditions ont été publiées dans le même temps : chez Preuveray, 26
+          pages ; chez Michel Mettayer, 22.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -110,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES
         <lb/>RAISONS
         <lb/>OV

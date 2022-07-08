@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1suppl149_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1suppl149_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,13 +49,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49937</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49937" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49937"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15065</idno>
@@ -86,7 +86,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions : Paris, Nicolas Vivenay, 1651, titre avec "de son
+        <p source="Mazarine">Autres éditions : Paris, Nicolas Vivenay, 1651, titre avec "de son
           esloignement" et la date, titre de départ avec "de sa retraitte" ; p. 5, l. 2 "Teillier",
           p. 8, l. 2 "agrée : Ie", l. 7/8 "auan-/tageuse", l. 8/9 "d'vn bon Conseil, en a fait vn
           contre/vostre volonté, &amp; que pendant la Regence sans ma" (BM01035) ; Paris, Nicolas
@@ -99,6 +99,9 @@
           Millanges (BM00394). Signée "Louys de Bourbon". Lettre datée du 13 septembre d'après les
           éditions référencées BM01033 et BM00394. Texte paru le 15 septembre d'après Hubert Carrier
           (Bibliothèque Mazarine, Ms. 4682-3, f. 227v-228).</p>
+        <p source="Moreau">149. Lettre de monsieur le Prince à Son Altesse Royale sur le sujet de
+          son esloignement de la Cour etc [2033.] Vivenay en a donné une autre édition dont le titre
+          porte : sur le sujet de sa retraite, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -115,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE
         <lb/>DE MONSIEVR
         <lb/>LE PRINCE

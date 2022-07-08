@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2531_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2531_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -44,8 +45,10 @@
             Reyne. Avec un beau parallele des sorties de monseigneur le Prince, &amp; de monsieur le
             duc de Mercoeur, pour servir d'instruction aux mediateurs des troubles de
             l'Estat.</title>
-          <pubPlace source="Mazarine" ref="geonames:6455058">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <pubPlace source="Mazarine">Sans Lieu</pubPlace>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" notBefore="1651-08-07" notAfter="1651-08-12">entre le 7 et le 12
             août 1651</date>
@@ -53,13 +56,12 @@
             <measure unit="page" quantity="28"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49000</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49000" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49000"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11663</idno>
@@ -91,12 +93,19 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Attribué à Dubosc Montandré par Gabriel Naudé (papiers Hubert Carrier,
+        <p source="Mazarine">Attribué à Dubosc Montandré par Gabriel Naudé (papiers Hubert Carrier,
           Bibliothèque Mazarine,Ms 4677, fiches AE 107-108), suivi par Christine Baratte, "Un
           pamphlétaire et théoricien de la Fronde, Dubosc-Montandré", mémoire de maîtrise, 1973, p.
           58-61, mais attribution douteuse d'après Célestin Moreau, "Bibliographie des mazarinades",
           I, p. 29. Texte paru entre 7 et le 12 août 1651 d'après Hubert Carrier suivant Gabriel
           Naudé et Armand d'Artois (Bibliothèque Mazarine, Ms 4682-4, f. 91v-92)</p>
+        <p source="Moreau">2531. Nœud (le) de l'affaire, ou la Seule ressource des grands désordres
+          qui menacent cette monarchie avec un danger évident de quelque changement d'État ;
+          discours sans flatterie sur la défiance que la reine a de , la conduite de monseigneur le
+          Prince, et sur la dé fiance que monseigneur le Prince a de la conduite de la reine, avec
+          un beau parallèle des sorties de mon seigneur le Prince et de monsieur le duc de Mercœur,
+          pour servir d'instruction aux médiateurs des troubles de l'État. Sans Lieu, 1651, 28
+          pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -116,8 +125,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE NEVD
         <lb/>DE
         <lb/>L’AFFAIRE.

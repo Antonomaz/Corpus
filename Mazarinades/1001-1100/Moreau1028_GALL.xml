@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau1028_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1028_GALL">
   <teiHeader xml:lang="fr">
     <fileDesc>
       <titleStmt>
@@ -10,24 +10,18 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
           <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="Corrector">Hip Amélie
-            <affiliation>
-              <roleName type="status">Vacataire</roleName>
-            </affiliation>
+          <persName role="Corrector">Hip Amélie <affiliation><roleName type="status"
+                >Vacataire</roleName></affiliation>
           </persName>
         </respStmt>
       </titleStmt>
@@ -44,8 +38,8 @@
         <bibl>
           <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k5851782w"/>
           <author ref="isni:0000000063037063">
-            <persName role="auteur">
-              <forename type="usual">Laurent</forename>
+            <persName>
+              <forename>Laurent</forename>
               <surname>Laffemas (De)</surname>
             </persName>
           </author>
@@ -63,11 +57,11 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque nationale de France</institution>
             <repository>Département Littérature et art</repository>
             <idno type="cote">YE-3333</idno>
@@ -99,8 +93,20 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BnF_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1028. Dernière (la) soupe à l’oignon pour Mazarin ou la Confirmation de
+          l’arrêt du huitième janvier 1649, en vers burlesques. Paris, Nicolas Jacquard , 1649, G
+          pages. * - Signée Nicolas Ledru. On s’est accordé jusqu’ici à reconnaître , sous cette
+          signature, Isaac de Laffemas. C’est une erreur que la publication des Héisto- riettes de
+          Tallemant des Réaux nous permet de rectifier aujour- d’hui. Isaac de Laffemas n’a composé
+          que les deux parties du Frondeur désintéressé. L’auteur de la Derniére soupe à l’oignon,
+          de la Lettre à M. le cardinal burlesque et du Terme de Pâques sans trébuchet, est un fils
+          puiné d’Isaac, qu’on appelait l’abbé de Laffemas. « Ce garçon à de l’esprit, dit Tallemant
+          des Réaux , fait des bagatelles en vers assez bien, Il fit plusieurs épitres contre le
+          Mazarin durant la Fronde ; mais il a l’honneur de n’avoir pas un grain de cervelle. »
+          (Historiette de Laffemas, pag. 36, 4° vol.) M. le comte Léon de Laborde dit, page 164 des
+          notes du Palais Mazarin, que le cardinal nomme Pabbé de Laffemas dans un de ses
+          carnets.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,6 +115,9 @@
           <term type="subgenre">burlesque</term>
           <term type="subgenre">satirique</term>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -124,8 +133,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k5851782w/f2.highres"/>
+      <p><pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k5851782w/f2.highres"/>
         <lb/>LA
         <lb/>DERNIERE
         <lb/>SOVPPE A L'OGNON

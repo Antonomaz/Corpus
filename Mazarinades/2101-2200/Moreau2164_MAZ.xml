@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2164_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2164_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,7 +32,9 @@
           </author>
           <title source="Mazarine">Lettre du Roy escrite au cardinal Mazarin.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" notBefore="1651-12-21" notAfter="1651-12-31">dernière semaine de
             décembre 1651</date>
@@ -39,13 +42,12 @@
             <measure unit="page" quantity="2"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49195</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49195" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49195"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11487</idno>
@@ -77,9 +79,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Titre de départ. Datée de Poitiers, le 12 décembre 1651. - Texte paru
+        <p source="Mazarine">Titre de départ. Datée de Poitiers, le 12 décembre 1651. - Texte paru
           la dernière semaine de décembre 1651 d'après Hubert Carrier (Bibliothèque Mazarine, Ms
           4682-3, f. 267v).</p>
+        <p source="Moreau">2164. Lettre duroiécrite au cardinalMazarin.(S. l. n.d.), 2 pages. Rare.
+          Datée de Poitiers, le 12 décembre 1651. Le roi ordonne à Ma zarin d'entrer en France avec
+          les troupes qu'il a dû lever.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -96,8 +101,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE DV ROY
         <lb/>eſcrite au Cardinal Mazarin
         <lb/>MOn Couſin, i’ay ſujet de croire ſelon les or¬
@@ -134,8 +138,7 @@
         <lb/>LoVS. V ply ba, a Lou ,Et ai
         <lb/> daet al daCo
         <lb/>A mon Cousin le Cardinal Ma¬
-        <lb/>arin.
-             </p>
+        <lb/>arin. </p>
     </body>
   </text>
 </TEI>

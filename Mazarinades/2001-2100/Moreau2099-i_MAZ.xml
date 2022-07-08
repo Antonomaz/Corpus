@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2099-i_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2099-i_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -55,13 +56,12 @@
             <measure unit="page" quantity="18"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49332</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49332" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49332"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13135-1</idno>
@@ -93,7 +93,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Édition composite. Deux états du cahier A : état A1, sur la p. de titre
+        <p source="Mazarine">Édition composite. Deux états du cahier A : état A1, sur la p. de titre
           "Lettre du chevalier Georges de Paris.", absence de marque décorative ; p. 4 l. 12-13,
           "qu’il ne le privast enfin de ce qu’il avoit de plus précieux, &amp;" ; état A2, comme
           l'état A1, sauf la phrase p. 4 l. 12-13 qui n'est pas imprimée. - Trois états du dernier
@@ -109,6 +109,21 @@
           de Scudéry d'après Célestin Moreau, réfuté par Hubert Carrier, qui l'attribue à Louis Le
           Laboureur (Bibliothèque Mazarine Ms 4682-3, f. 245v). Texte paru la dernière semaine de
           janvier 1649, selon H. Carrier.</p>
+        <p source="Moreau">2099. Lettre du chevalier Georges de Paris à monsei gneur le prince de
+          Condé. Paris, 1649, 18 pages. Naudé revient trois fois sur cette lettre dans le Mascurat,
+          pages 11, 199 et 208; et toujours il la cite comme un des plus remarquables pamphlets. Guy
+          Patin la range parmi les meilleurs, dont il espère à la fin un recueil (Lettre à Spon du
+          14 mai 1649, p.190 du Ier volume). Mais il est à remarquer que l'un et l'autre écrivent
+          toujours la Lettre du chevalier Georges. C'est que la Seconde lettre « ne res semble en
+          rien à celle qui l'avoit précédée. » (Mascurat, p. 15) En d'autres termes, elle n'est pas
+          de la même main que la première. Il n'en faut pas moins deux pièces, et même trois; la
+          seconde lettre ayant été réimprimée en 1650 sous le titre de la Troisième lettre du
+          chevalier Georges à monsieur le Prince. « La fortune accoucha de ce monstre adultérin
+          (Mazarin) pen dant son divorce avec la vertu. » « Nous n'avons pour toutes pièces de sa
+          composition que des commentaires sur les brelans; et la seule statue qui restera de lui en
+          France, sera le valet de carreau dans le Hoc mazarin. » « L'administration du royaume
+          appartient naturellement aux enfants de France pendant la minorité du roi. » La Lettre est
+          assez commune. Il y en a une édition in-12, s. l. n. d., 17 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -125,8 +140,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE DV CHEVALIER
         <lb/>GEORGES
         <lb/>DE PARIS.
@@ -1045,8 +1059,7 @@
         <lb/>D
         <lb/>,
         <lb/>Chez NcoLAs B oss ET, Maiſtre Imprimeur?
-        <lb/>ruë Calende, à l’Image Saint Eſtienne. 
-      </p>
+        <lb/>ruë Calende, à l’Image Saint Eſtienne. </p>
     </body>
   </text>
 </TEI>

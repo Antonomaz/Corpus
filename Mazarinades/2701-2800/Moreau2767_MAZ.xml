@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2767_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2767_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -26,10 +27,12 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14735"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Le piquet de la Cour.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-01" notAfter="1649-03">pendant le blocus de
             Paris</date>
@@ -37,13 +40,12 @@
             <measure unit="page" quantity="3"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49835</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49835" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49835"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11765</idno>
@@ -75,11 +77,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Dialogues. Version abrégée de ce texte publiée sous le titre "Les
+        <p source="Mazarine">Dialogues. Version abrégée de ce texte publiée sous le titre "Les
           nouveaux jeux du piquet de la Cour." (Hubert Carrier, Bibliothèque Mazarine, Ms 4682-4, f.
           98). D'après Célestin Moreau, suite parue sous le titre "Le second et entier jeu de piquet
           de la Cour" (BM00933). Titre de départ. D'après H. Carrier, texte paru pendant le blocus
           de Paris (Bibliothèque Mazarine, Ms. 4682-4, f. 195v).</p>
+        <p source="Moreau">2767. Piquet (le) de la cour. (S. l., 1649), 3 pages Pièce rare et assez
+          plaisante. Le duc d'Orléans : « Je n'ai jamais de cœur. » Il en existe une suite qui n'est
+          pas moins rare, sous le titre de : le Second et entier jeu de piquet de la cour.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -96,8 +101,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE PIQVET DE
         <lb/>LA COVR.
         <lb/>La Reyne.

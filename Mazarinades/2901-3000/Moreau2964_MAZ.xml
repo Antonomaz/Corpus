@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2964_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2964_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -32,7 +33,9 @@
           <title source="Mazarine">Les raisons et motifs ou La decision de la question du temps,
             pourquoy l'on ne s'est pas opposé au passage de Mazarin, s'en allant à la Cour.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-01-20" notAfter="1652-01-31">fin janvier
             1652</date>
@@ -40,13 +43,12 @@
             <measure unit="page" quantity="14"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49942</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49942" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49942"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12073</idno>
@@ -78,12 +80,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">À propos du retour de Mazarin à Paris. Édition hybride. Deux états du
+        <p source="Mazarine">À propos du retour de Mazarin à Paris. Édition hybride. Deux états du
           cahier A, p. 3 (dernière ligne) : accident typographique sur le premier "n" de "sienne" et
           position différente de la signature A (A1) ; "sienne" correctement imprimé (A2). Deux
           états du cahier B, p. 7 (dernière ligne) : lettre "T" majuscule isolée en fin de ligne
           après "un" (B1) ; espace blanc après "un" (B2). D'après Hubert Carrier, texte paru fin
           janvier 1652 (Bibliothèque Mazarine, Ms. 4682-5, f. 2v et 4v).</p>
+        <p source="Moreau">2964. Raisons (les) et motifs ou la Décision de la ques tion du temps :
+          pourquoi l'on ne s'est pas opposé au passage de Mazarin s'en allant à la cour. (S. 1.,
+          1652), 14 pages. Dans quelques lignes après la pièce, l'auteur promet de faire voir les
+          justes intentions de chacun de nos braves héros avec leurs éloges. Je n'ai rien vu de
+          cela.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES
         <lb/>RAISONS
         <lb/>ET MOTIFS.

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1353_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1353_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,20 +32,21 @@
           </author>
           <title source="Mazarine">Extraict des registres du parlement de Bordeaux.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Antonomaz" when="1649-09-24">daté du 24 septembre 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49798</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49798" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49798"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14181</idno>
@@ -76,8 +78,10 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Arrêt rendu contre le duc d'Épernon, gouverneur de Guyenne, en faveur
+        <p source="Mazarine">Arrêt rendu contre le duc d'Épernon, gouverneur de Guyenne, en faveur
           des habitants de Bordeaux Acte daté du 24 septembre 1649.</p>
+        <p source="Moreau">1353. Extrait des registres du Parlement de Bordeaux. Paris, 1649, 4
+          pages. Du 24 septembre 1649.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -96,14 +100,12 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>EXTRAICT
         <lb/>DES REGISTRES
         <lb/>du Parlement de Bordeaux.
         <lb/>A PARIS,
-        <lb/>M. DC. XLIX.<pb n="10"/>
-        <pb n="11"/>
+        <lb/>M. DC. XLIX.<pb n="10"/><pb n="11"/>
         <lb/>EXTRAICT DES
         <lb/>REGISTRES DV PARLEMENT
         <lb/>de Bordeaux.
@@ -152,8 +154,7 @@
         <lb/>darepouſſod aqui vouroieey ppte de l’Em¬
         <lb/>peſheneutodongque lprgenp Arreſt ſera, l;,,
         <lb/>peiuibleu, publje paygout ou, efninſe. Donné en
-        <lb/>Parlement le 24. Sepembre, 1649.
-      </p>
+        <lb/>Parlement le 24. Sepembre, 1649. </p>
     </body>
   </text>
 </TEI>

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2688_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2688_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -27,11 +28,13 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14973"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Le parfait repos de la France, ou Moyens asseurez pour rendre la
             France tranquille, heureuse &amp; invincible.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-05-21" notAfter="1652-05-31">dernière semaine de
             mai 1652</date>
@@ -39,13 +42,12 @@
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49230</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49230" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49230"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13555</idno>
@@ -77,11 +79,22 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Réédité sans le premier paragraphe sous le titre "Le François désabusé,
+        <p source="Mazarine">Réédité sans le premier paragraphe sous le titre "Le François désabusé,
           montrant les moyens infaillibles pour établir et affermir la véritable paix dans l'État."
           (BM00976). D'après Hubert Carrier suivant la place de l'exemplaire Bibliothèque Mazarine
           4° A 13947-37 dans un recueil factice classé chronologiquement, texte paru la dernière
           semaine de mai 1652 (Bibliothèque Mazarine, Ms 4682-4, f. 160v).</p>
+        <p source="Moreau">2688. Parfait (le) repos de la France, ou Moyens assu rés pour rendre la
+          France tranquille, heureuse et in vincible. Paris, 1652, 16 pages. Il faut remédier à deux
+          maux : la dépravation des mœurs et la diversité des religions. Pour le premier, « il est
+          nécessaire que chacun s'applique dès sa jeunesse à des occupations légitimes; les petits
+          aux arts et métiers ; les médiocres aux sciences et aux négoces; et les gentilshommes aux
+          professions qui leur sont convenables, comme les charges de l'une et l'autre robe ,
+          l'étude des belles lettres, de la politique et des morales, l'art militaire, les
+          fortifications, la fabrique des monnoies, de l'artillerie, des poudres et salpêtres, et
+          des verres, l'escrime, l'art de monter à cheval, la peinture et l'agriculture. » Pour le
+          second , la tolérance. Ce pamphlet a été réimprimé, moins le premier paragraphe, sous le
+          titre de : le François désabusé, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,8 +111,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE
         <lb/>PARFAIT REPOS
         <lb/>DE LA

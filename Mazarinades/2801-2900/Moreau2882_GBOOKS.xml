@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau2882_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2882_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -45,7 +41,7 @@
             sieur de Manicamp (sic), et la défaite entière de leur armée apportée à Son Altesse
             Royale par un courrier, le 18 juillet 1652.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>
+          <publisher ref="viaf:107069880	">
             <persName>
               <forename>Martin</forename>
               <surname>Maury</surname>
@@ -56,12 +52,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement/>
-            <institution>Bibliothèque municipale de Lyon</institution>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
             <repository/>
             <idno type="cote">Rés 309957</idno>
           </msIdentifier>
@@ -92,7 +88,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2882. Prise (la) et réduction de la ville et château de Chaulny par les
+          troupes de l'archiduc Léopold, avec la prise du duc d'Elbeuf, du prince d'Harcourt et du
+          sieur de Manicamp (sic), et la défaite entière de leur armée apportée à Son Altesse Royale
+          par un courrier, le 18 juillet 1652. Paris, M. Maury, 1652,8 pages. Je ne connais rien de
+          plus mal écrit et de plus mal imprimé ; mais cela est rare. En général toutes ces prises
+          de villes ne sont pas communes.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,6 +103,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -116,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>LA PRISE
         <lb/> 1
         <lb/>ET REDVCTION
@@ -133,8 +138,7 @@
         <lb rend="¬" break="no"/>l d-fuiisſe luilet os.
         <lb/> ̀
         <lb/> 2V
-        <lb/>A PAR1S.
-        <pb n="2"/>
+        <lb/>A PAR1S. <pb n="2"/>
         <pb n="3"/>
         <lb/>ebletêéAêêê8
         <lb/> S. 0
@@ -156,8 +160,7 @@
         <lb/>verrons bien oſt l’iſſuë, auſujet de l’Arreſt
         <lb/>d’Vnion, qui ſe vay faire entre Meſſieurs
         <lb/>s Prinćes &amp; le Parlement; car la Reſponſe
-        <lb/>que nDeputez on fait à ſon Alteſſe Roya¬
-        <pb n="4"/>
+        <lb/>que nDeputez on fait à ſon Alteſſe Roya¬ <pb n="4"/>
         <lb/>8
         <lb/>le &amp; à nos Princes’, à leurs deliurance à
         <lb/>Sainct Denis en France, nous en donne yne
@@ -186,8 +189,7 @@
         <lb/>d’Infantetie pareillement.
         <lb rend="¬" break="no"/> Les vieux Regiment de Liege, cant Caua
         <lb rend="¬" break="no"/>lerie qu’Ilufanterie.
-        <lb/> Les
-        <pb n="5"/>
+        <lb/> Les <pb n="5"/>
         <lb/> Les vieux Regimene de Eourgue fort an
         <lb rend="¬" break="no"/>ciens en guere.
         <lb/>Tous ayant à tous donneé l’ordre d’inueſtir
@@ -214,8 +216,7 @@
         <lb rend="¬" break="no"/>ehal d Hoquincourt ſortiroit arme &amp; baga.
         <lb/>t ainſi quel’Aschiduc leur auoitoffert:
         <lb/>Que lesaures officiers &amp; ioldas du Regi
-        <lb rend="¬" break="no"/>B
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>B <pb n="6"/>
         <lb/>ment de Champagre, mis en cette Vil le par
         <lb/>le Duc d’Elbeufluyſeronenuoyée.
         <lb/> Que ces 4. piece de canon, -appar tenant
@@ -241,8 +242,7 @@
         <lb/>leés verta en ces qutiers pendant peu de
         <lb/>iours. L’Archiduc Leopold a ant la ville de
         <lb/>Chaulny poûr retraite &amp; y ayant laiſſé bon
-        <lb rend="¬" break="no"/>ne gatnmiſon,il a pris fon chemin pour pre¬
-        <pb n="7"/>
+        <lb rend="¬" break="no"/>ne gatnmiſon,il a pris fon chemin pour pre¬ <pb n="7"/>
         <lb/>re ſon paſfage à Soiſſons, quoy queceé fut
         <lb/>ſon plus long. nevoulant point faire tort a
         <lb/>gtaad courage du Duc d’Elbeufi mais le
@@ -268,8 +268,7 @@
         <lb/>&amp; le reſte de ſes gens, qui s’eſtoient defen
         <lb rend="¬" break="no"/>dus de ſe treadre aux plus forts, apres auoir
         <lb/>perdu- trois cens hommes ſur la place, on
-        <lb/>luy fit paſſer la riuiere, à luy, à ſon Fils, &amp;
-        <pb n="8"/>
+        <lb/>luy fit paſſer la riuiere, à luy, à ſon Fils, &amp; <pb n="8"/>
         <lb/>iu ſiear de Manican, &amp; on leur adonmé eſ
         <lb rend="¬" break="no"/>corte pour les conduire à Bruxelles, ouils
         <lb/>auront le temps de ſe repoſer pendant cete

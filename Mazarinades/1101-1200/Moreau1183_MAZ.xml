@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1183_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1183_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -55,7 +56,9 @@
             ambitieux, qui veut s'establir par complot, &amp; par intrigue. Par le Sieur
             d'Orandré.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-10-07" notAfter="1652-10-14">deuxième semaine
             d'octobre 1652</date>
@@ -63,13 +66,12 @@
             <measure unit="page" quantity="32"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50314</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50314" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50314"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14977-9</idno>
@@ -101,7 +103,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Édition composite. 2 états du premier cahier (A1/A2) : p. de titre avec
+        <p source="Mazarine">Édition composite. 2 états du premier cahier (A1/A2) : p. de titre avec
           "III. Que le Conseil semble dégrader... IV. Que le Conseil fait mépriser... V. Que le
           Conseil fait agir..." et p. 4, l. 10 "l'affermissament" / "III. Que le Conseil fait
           mépriser... IV. Que le Conseil fait agir... V. Que le Conseil semble dégrader..." et p. 4,
@@ -112,6 +114,18 @@
           Hubert Carrier, "La Presse de la Fronde (1648-1653) : les Mazarinades", t. 2, Paris, 1991,
           p. 53. D'après H. Carrier, texte paru la deuxième semaine d'octobre 1652 (Bibliothèque
           Mazarine, Ms. 4682-2, f. 266v).</p>
+        <p source="Moreau">1183. Écueil (l’) dela royauté, oula Politique du conseil, où l'on verra,
+          dans un raisonnement pathétique, 1° que le conseil nous fait appréhender le retour du roi,
+          lorsque nous le désirons avec passion, et qu'il veut le faire revenir en tyran, lorsque
+          nous demandons qu'il revienne en roi ; 2° que le conseil fait appréhen- der ce règne, en
+          ce qu'il ne veut pas que le roi relâche même dans les choses qui sont les plus contraires
+          à l’avantage des peuples ; 3° que le conseil fait mépri- ser le roi, en ce qu'il le fait
+          parler fièrement, lors même qu'il n’a pas assez de force pour vouloir ce qu'il veut ; 4°
+          que le conseil fait agir le roi, non pas pour établir les intérêts de la royauté, mais
+          pour établir les intérêts de ses ministres ; 5° que le conseil semble dégrader le roi, en
+          ce qu’il le fait agir en sujet ambi- tieux qui veut s'établir par complot et par intrigue,
+          ‘ Par le sieur d’Orandre (Dubosc Montandré). (S. 1., 1652), 32 pages. Après la députation
+          de Compiègne.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -134,8 +148,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L'ESCVEIL
         <lb/>DE LA
         <lb/>ROYAVTE

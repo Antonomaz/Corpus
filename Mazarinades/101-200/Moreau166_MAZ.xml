@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau166_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau166_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,20 +36,21 @@
             moitié des tailles ; et aussi contenant une fidelle relation des ruynes &amp; desordres
             fait dans ladite ville.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Antonomaz" when="1649-09-28">daté du 28 septembre 1649</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49381</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49381" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49381"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14234</idno>
@@ -80,10 +82,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition à la même adresse sous le titre "Arrest de la cour du
+        <p source="Mazarine">Autre édition à la même adresse sous le titre "Arrest de la cour du
           parlement de Bordeaux, portant rabais de la moitié des tailles ; et aussi faisant une
           fidelle relation des grandes cruautez commises dans ladite ville,par l'ordre du sieur duc
           d'Espernon" (BM0515). Signé "De Pontac". Arrêt du 28 septembre 1649.</p>
+        <p source="Moreau">166. Arrêt de la cour de parlement de Rordeaux, portant rabais de la
+          moitié des tailles, et aussi contenant une fidèle relation des ruines et désordres faits
+          dans ladite ville. Il est rapporté, avec la date du 28 août, dans l’Histoire des
+          mouvements de Bordeaux.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT

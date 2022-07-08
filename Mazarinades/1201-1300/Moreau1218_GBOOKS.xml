@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau1218_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1218_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -46,17 +42,19 @@
             application, toute l’histoire du temps présent se trouve parfaitement
             représentée.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="30"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement/>
+            <settlement ref="geonames:2867714">Munich</settlement>
             <institution>Bibliothèque de l'État de Bavière</institution>
             <repository/>
             <idno type="cote"/>
@@ -88,7 +86,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1218. Enfer (l’) révolté sur l’étrange désordre qui y est arrivé, depuis
+          peu, par les tyrans et les favoris des premiers siècles, où, par une merve1]leuse
+          application, toute l’histoire du temps présent’se trouve parfaite- ment représentée.
+          Paris, Pierre Variquet, 1649, 30 pages. L'auteur dit qu’étant à Fontainebleau, six
+          semaines environ après la déclaration du blocus, il réva qu’il se trouvait en enfer, où il
+          assistait à des d!sputes entre les rois et leurs favoris, les con- quérants et les
+          législateurs, les tyrans et les historiens. L’idée n’était pas mauvaise; mais… la pièce
+          n’est pas commume.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,6 +103,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -112,8 +122,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>T
         <lb/>1 I1
         <lb/> LL LN I.
@@ -129,8 +138,7 @@
         <lb/>ſe rouue parfaitement bien repreſentée.
         <lb/>A PARIS.
         <lb/>CxLx
-        <lb/>A
-        <pb n="2"/>
+        <lb/>A <pb n="2"/>
         <pb n="3"/>
         <lb/>s
         <lb/>ea
@@ -162,8 +170,7 @@
         <lb rend="¬" break="no"/>S’Ppagne, il ſe trouua de monaduis, auec
         <lb rend="¬" break="no"/>e: Nous paſſames toue la iounte à nous di
         <lb rend="¬" break="no"/>enir, &amp; ueſmes à preparer noftre equipage, qui n’eſtoi;
-        <lb/>A. ij
-        <pb n="4"/>
+        <lb/>A. ij <pb n="4"/>
         <lb/>pas à vray dire de grande importance. Mais le lendemain
         <lb/>noſtre malheur fut ſi grand, que nous fuûmes arreſtez par
         <lb/>ceux qui gardoient la porte ſainct laeques. Ce qui fut
@@ -202,8 +209,7 @@
         <lb rend="¬" break="no"/>ſirer au monde. Dcſorte qu’apres auoir demeure là quel
         <lb rend="¬" break="no"/>queſix ſemaines, me trouuant ſurpris plus que iamais de
         <lb/>ma melãcholie ordinaire,leme couchayauec vne rêuerie
-        <lb/>qui
-        <pb n="5"/>
+        <lb/>qui <pb n="5"/>
         <lb/>guin’en tent iamais defemblabole. Enfin ne pouuadt trou
         <lb rend="¬" break="no"/>uer lê repos que ie fouhaitois, ie me leue pour me donner
         <lb/>aſtant dehout, ce qu’il m’eoit ianpoſfible d’auoir dans
@@ -241,8 +247,7 @@
         <lb rend="¬" break="no"/>eriftal liquide, qui cajalledsca foyans, auec le graaier &amp;
         <lb/>es petits caillouqui les veulent diuerir de leur coarſe.
         <lb/>e l’autre coſte voas y eéntendez les agreables conplis
-        <lb/>eoqeaoa Zephire fais àoupes les ftüuilles
-        <pb n="6"/>
+        <lb/>eoqeaoa Zephire fais àoupes les ftüuilles <pb n="6"/>
         <lb/>6
         <lb/>des arbres: Et par toutvous y trouuez vn nonbre infiny
         <lb/>de petits oyſeaux qui entonnent continuellement mille!
@@ -281,8 +286,7 @@
         <lb/>pas ſi toſt ouy prononcer m ſentenc que i’enten d te
         <lb rend="¬" break="no"/>doublet ce tintamarre plus fort qu’auparauant; ſi. bieœn
         <lb/>que les plus aaciens habitans de ce nmiſerable IEmpite
-        <lb/>confeſſoient qu’ils ’auoiene iamaisriea veu de séblable.
-        <pb n="7"/>
+        <lb/>confeſſoient qu’ils ’auoiene iamaisriea veu de séblable. <pb n="7"/>
         <lb/>1
         <lb/>E v aaot taas l’Eae de ees nire eoliaes
         <lb/>eoblait alors oler ſoas ſes popres raies;
@@ -322,8 +326,7 @@
         <lb/>Epre que la s ade u aire ado,
         <lb/>Qe fat qs poar coor lor pepre aſu..
         <lb/>Encjs que. a f de lear anapdie vie,
-        <lb/>aſt qaardem aniaaee apoie
-        <pb n="8"/>
+        <lb/>aſt qaardem aniaaee apoie <pb n="8"/>
         <lb/>3
         <lb/>Eaoe gqa s de cds qu gfaa,
         <lb/>Ne fn qa par ner ſr le ls as é’ſâai.
@@ -363,8 +366,7 @@
         <lb/>Les yoausr eae fécolons ls adee;.
         <lb/>egardaos de rars oas es o&amp;e ſaui,
         <lb/>eur ehde e baſpêeat ve poe jſa
-        <lb/>o Sa¬
-        <pb n="9"/>
+        <lb/>o Sa¬ <pb n="9"/>
         <lb/>9
         <lb/>o etears i (die-il) eprits ious oirs de crimer,
         <lb/>De deſrs aéreglez, de oœo illegitimes,
@@ -403,8 +405,7 @@
         <lb/>obligez ſcomme eſtans ſes tuteurs) à luy procurer les
         <lb/>moyens de r’entrer dans les Eſtats, que tu luy auois
         <lb/>vſurpez, à quel pris que ce fuſt, pour n’eſtre pas
-        <lb/>complices de ta tyrannie? N’eſt-ce pas vne eaxteaordi¬
-        <pb n="10"/>
+        <lb/>complices de ta tyrannie? N’eſt-ce pas vne eaxteaordi¬ <pb n="10"/>
         <lb/>naire obligation que tu nous as, de t’auoir acquite en¬.
         <lb/>uers Pompée, de la vie que tu luy auois oſtée, pat
         <lb rend="¬" break="no"/>l’entremiſe de tes complices Achilles, qui fut vn des
@@ -443,8 +444,7 @@
         <lb/>en quelque lieu do monde qu’ils ſe trouuent D ſorte
         <lb/>que le Pince des tenebres fut contralnt de fiie tedre
         <lb/>les chaines part tout. &amp; de faire prendre les Armes a tout
-        <lb/>ſo Peuple. Et nonobſtaut leurs charges &amp; leurs digni¬,
-        <pb n="11"/>
+        <lb/>ſo Peuple. Et nonobſtaut leurs charges &amp; leurs digni¬, <pb n="11"/>
         <lb/>11
         <lb/>tez, il ne laiſſa pas de les contraindre à capituler &amp; à̀ ſe
         <lb/>rendre. Si le charbonnier fut maiſtre en ſa maſon, ie
@@ -483,8 +483,7 @@
         <lb/>tres puiſſant, &amp; d’vne grandeur demeſié́e. ll alloit en
         <lb rend="¬" break="no"/>core enfiler vne llliade de ciltres de qualtez &amp; de faits
         <lb rend="¬" break="no"/>heroiques, à l’imitanon des Eſpagnols, ſi l’vn des Huiſ
-        <lb rend="¬" break="no"/>ſiers du grapd Seigneur qui l’auoit fat ſon eſclaue, ne
-        <pb n="12"/>
+        <lb rend="¬" break="no"/>ſiers du grapd Seigneur qui l’auoit fat ſon eſclaue, ne <pb n="12"/>
         <lb/> 2
         <lb/>ly eſt impoſeé ſilence, &amp; commandé à Clitass de conti
         <lb rend="¬" break="no"/>nuer le diſcours qu’il auoit enuie de faire.
@@ -524,8 +523,7 @@
         <lb/>Vn iour entre autres, luy entendant rabaiſſer lesproueſ
         <lb rend="¬" break="no"/>ſes des Macedoniens, en vn banquet qu ’il faiſoit à ſes
         <lb rend="¬" break="no"/>amis; &amp; en ſuite luy voyant meſpriſer les gloieux ex
-        <lb rend="¬" break="no"/>ploits
-        <pb n="13"/>
+        <lb rend="¬" break="no"/>ploits <pb n="13"/>
         <lb/>13
         <lb/>ploits de Philippe de Macedoine ſon pere, qui eſtoir ce
         <lb/>me ſemble, ternir l’eclat &amp; la generoſité d’vn Pince qui
@@ -564,8 +562,7 @@
         <lb rend="¬" break="no"/>ſer à vn Lyon, pour auoir ſeulement eu compſſioni de ce
         <lb/>pauute malheureux que nous venons de dire. O digne
         <lb/>Seigneur des ames plus criminelles, ne rendrez-vous
-        <lb/>pasiuemens à chacu ce qui luy appartient, ſelon la¬
-        <pb n="14"/>
+        <lb/>pasiuemens à chacu ce qui luy appartient, ſelon la¬ <pb n="14"/>
         <lb/> 14
         <lb/> grandeur de ſes merites: Vous voye bien qu’il néfaut
         <lb/>eſtre que fauory d’vn Tyran, pour ſe rendre le plus abe
@@ -604,8 +601,7 @@
         <lb/>d’vn autre coſté. A meſme temps on vid paroiſtre vn ve
         <lb rend="¬" break="no"/>nerable Vieillard, aoſſi ſec &amp; auſſi baſané, que la mort
         <lb/>Sainct lnnocent, lequel s’approchant de Lucifer, luy dit;
-        <lb/>Ie ſuis ce grand &amp; cet Illuſtre tant roenommé Seneque
-        <pb n="15"/>
+        <lb/>Ie ſuis ce grand &amp; cet Illuſtre tant roenommé Seneque <pb n="15"/>
         <lb/> r
         <lb/>Philoſophé Stoſcien,autrement nommé Lucius Aneus,
         <lb/>ils d’vn Gentilhomme de la ville de Cordoüe en Eſpa
@@ -644,8 +640,7 @@
         <lb/>qu’il eſtoit meilleur’Poẽëte que luy, &amp; parce qu’ll ne vou
         <lb rend="¬" break="no"/>oit pas arter ſes crimes. Et pour’ne payerapres cela
         <lb rend="¬" break="no"/>de la meſme monnoye qu’il payoit les autres, il n’or
-        <lb rend="¬" break="no"/>donna de eoiſitel genre dehiort qu ie voudrois, afi
-        <pb n="16"/>
+        <lb rend="¬" break="no"/>donna de eoiſitel genre dehiort qu ie voudrois, afi <pb n="16"/>
         <lb/>2L rz -a-ammao-e¬¬a
         <lb rend="¬" break="no"/>16
         <lb rend="¬" break="no"/>a¬¬4-¬¬-.a
@@ -687,8 +682,7 @@
         <lb rend="¬" break="no"/>rmal- hieureux ſucceſſeund’Auguſte, ie ſceus ſi amoureu
         <lb rend="¬" break="no"/>ſemens gagner l’efrit de ce Prince, que de ſa propre &amp;
         <lb/>fgnche volonté, il me ſinonſeulemes compagnon de
-        <lb/>ſon
-        <pb n="17"/>
+        <lb/>ſon <pb n="17"/>
         <lb/>TL..
         <lb rend="¬" break="no"/>17
         <lb rend="¬" break="no"/>bn Empire, eriger des ſtatuës, auſquelles ilaaoit conce
@@ -729,8 +723,7 @@
         <lb rend="¬" break="no"/>tenit au ſupreme degré de l’honneur, &amp; de la condition
         <lb/>oùma peſonne ſe voyoit eſſeuée; de ſorte que par vne
         <lb/>coaduite qui n’e a point de pareille,ie m’accommodois
-        <lb rend="¬" break="no"/>E
-        <pb n="18"/>
+        <lb rend="¬" break="no"/>E <pb n="18"/>
         <lb/>8
         <lb/> ux diffſerentes humeurs de ceux dont ie me ſeruois,
         <lb/>proportionnant les emplois aux diuerſes inclinations de
@@ -769,8 +762,7 @@
         <lb rend="¬" break="no"/>fillible de leur perfide attenat, que faire noſtre mal
         <lb rend="¬" break="no"/>heur, &amp; que de ſe ranger du party de nos aduerſaires?
         <lb/>A meſme remps l’lantiau Fauory de Seuere, comme
-        <lb/>eſtant tres-intereſſé en vne cauſe de parelle nature, ſça¬
-        <pb n="19"/>
+        <lb/>eſtant tres-intereſſé en vne cauſe de parelle nature, ſça¬ <pb n="19"/>
         <lb/>9
         <lb/>anee poar ſe plaindre ’du mauas traitement qu’il
         <lb/>auoit receu d’vn Prinace ſictuel, ſi vindicatif, &amp; ſangui
@@ -809,8 +801,7 @@
         <lb/>ontreptiſes. Et ce Beliſaire, qui portoit autresfois la ter
         <lb rend="¬" break="no"/>reut dans toutes es prouinces eſtrangeres, fut reduit à
         <lb/>des necefſitez, qui n’en eurent iamais de pareilles, par
-        <lb/>la foiblefſe du plus lngrat de tous les Pninces de la tert
-        <pb n="20"/>
+        <lb/>la foiblefſe du plus lngrat de tous les Pninces de la tert <pb n="20"/>
         <lb/>20
         <lb/> Il n’ent pas ſi toſt acheue ſa plainte qu’tn vit venir
         <lb/>Amproniſius fauory d’Adrian, eanemy mortel des
@@ -850,8 +841,7 @@
         <lb/> on eut nachié vn peu plsauant, onvd que c’eſtoit vae
         <lb/>troupe de Tyrans &amp; de Legiſlateurs qui ſe battoient en
         <lb rend="¬" break="no"/>ſemble. Tout beau, tout beau, dit alors Monſicar de
-        <lb/>Diable,
-        <pb n="21"/>
+        <lb/>Diable, <pb n="21"/>
         <lb/>21
         <lb/>Diable, eſce là le reſpect que vous deuez porter au Prin
         <lb rend="¬" break="no"/>ce des tenebres. Autfi-roſt l’orage furappaiſé, &amp; lvn de
@@ -891,8 +881,7 @@
         <lb/>lejiellau&amp; ceu gtme ſouipnt ſot esſeps Sases ds
         <lb/>2
         <lb/>Gece uiténomér ptdute la teſret habeabi. Ceſuyſà
-        <lb/>F
-        <pb n="22"/>
+        <lb/>F <pb n="22"/>
         <lb/>...
         <lb/>8.
         <lb/>S’appelle Anaxarque, Philoſopbe-Abderitaiu, Setatoue.
@@ -931,8 +920,7 @@
         <lb/>iuſtice à toutos ſortes de. poerſonnes? Eſt- ce à caiſt que ie
         <lb/>me ſuls oppoſeé à latyrannie de Piſiſtrate? ou bien à cau
         <lb rend="¬" break="no"/>e que i’eûtois diſolu &amp; laſcifà outrance? Heéi que vous
-        <lb/>eûes, hien eſlolguez de la veruua de Nua Pompilis,
-        <pb n="23"/>
+        <lb/>eûes, hien eſlolguez de la veruua de Nua Pompilis, <pb n="23"/>
         <lb/>z3
         <lb/>deusieſme Roy des Romains, lequel priſt grand ſoiea
         <lb/>d’inſtituer quantit́ de Loix, &amp; de fonder l’ordre des Ve.
@@ -970,8 +958,7 @@
         <lb/>c’eſt cequi cauſera d’eterneblés reuolutions parmy nous¬2
         <lb/>tant qu’ily aura dés Souuerains dans le monde. Con
         <lb rend="¬" break="no"/>bien de parricides àton veus-danslViuers, fondez ſur
-        <lb rend="¬" break="no"/>lés precepes quevous auez donez aux bommes; ſans.
-        <pb n="24"/>
+        <lb rend="¬" break="no"/>lés precepes quevous auez donez aux bommes; ſans. <pb n="24"/>
         <lb/> 24
         <lb/>conſiderer I’infamie de laquelle vous auez noircy laplus
         <lb/>noble de touces les Renommées?
@@ -1010,8 +997,7 @@
         <lb rend="¬" break="no"/>rains, qui ne releuent que de cette authoriteé indepen
         <lb rend="¬" break="no"/>dante; &amp; apré́s cela vous irez publier hautement, qu’vn
         <lb/>Prince, qui n’a pas plus de ſoin de ſes Sujets que de ſa
-        <lb/>perſonne,
-        <pb n="25"/>
+        <lb/>perſonne, <pb n="25"/>
         <lb/>
         <lb rend="¬" break="no"/> 5
         <lb/>peſonne, eſt vn Tyran, ou du moins vn barbare. Rac
@@ -1051,8 +1037,7 @@
         <lb rend="¬" break="no"/>enuent de perſonne? l’eſtes-vous pas audefſus des Loix;
         <lb/>puis que c’eſt de par vous qu’elles ſe font, &amp; puis que
         <lb/>c’eſt de par rous qu’elles ſont obſeruées? Il n’eſt rien que:
-        <lb/>G.
-        <pb n="26"/>
+        <lb/>G. <pb n="26"/>
         <lb/>6
         <lb/>homme néë doiure faire pour regner, &amp; pour ſe faire crain
         <lb rend="¬" break="no"/>dre. Callipus Athenien, &amp; diſeiple de Platon, ne poi
@@ -1090,8 +1075,7 @@
         <lb rend="¬" break="no"/>ſon d’Eſtat, conſiſte à ſçauoir regner à quelque prix que
         <lb rend="¬" break="no"/>ce ſoit par deſſus le reſte des hommes. Et la prudence po
         <lb rend="¬" break="no"/> litique, qui ne ſe rouue que dans vne vigoureuſe force
-        <lb/>d’eſprir, &amp; dans vne eperience çonſommée au maniment
-        <pb n="27"/>
+        <lb/>d’eſprir, &amp; dans vne eperience çonſommée au maniment <pb n="27"/>
         <lb/> 7
         <lb/>des affaires publiques, ſe doit exercer dans les change
         <lb rend="¬" break="no"/>mens &amp;. les reuolutions de la loy &amp; du droir common,
@@ -1129,8 +1113,7 @@
         <lb rend="¬" break="no"/>dant qu’ils ne ſont pas, que lors qu’ils eſtoient dans le
         <lb rend="¬" break="no"/>nmonde: Ils veulent que les ſieclesſçachent de leur ourrta
         <lb rend="¬" break="no"/>geuſe facçon d’eſcrire, ce que la Nature auois pris ſoin
-        <lb/>denſeuelir, ſous les ruines de celuy qu’vue inexorable
-        <pb n="28"/>
+        <lb/>denſeuelir, ſous les ruines de celuy qu’vue inexorable <pb n="28"/>
         <lb/>Atropo, uoit tiŕ de la- memoire des hommes; veu
         <lb/>qu’ils luy donnent vn eſtre tout nouueau, pour le noireis
         <lb/>de crimcs, comme a fait cet abominable Chroniqueur.
@@ -1168,8 +1151,7 @@
         <lb/>puis ie mais des fautes &amp; des pesulars de ceuxque i’ay
         <lb/>eſtablis pour exercer la Iuſtice par toutes les prouinces?
         <lb/>e ’eſtoane que ceux qui ont ſaccedeé à la Couronne
-        <lb/>apres
-        <pb n="29"/>
+        <lb/>apres <pb n="29"/>
         <lb/>29
         <lb/>apres moy lenr ayene pernis d’eſerire des choſes ſi ſeanda
         <lb rend="¬" break="no"/>lenſesà leurs Souuerains, &amp; ſi honteuſes à la memoire de
@@ -1208,8 +1190,7 @@
         <lb/>de fi dangereux dans. la Couldes Roys, que de dire les.
         <lb/>hoſes eomme lles ſont, ou comme elles doiuent eſtre.
         <lb/>Areheueſque de France diſoit vn iour à la ReyueMe
-        <lb rend="¬" break="no"/>H1
-        <pb n="30"/>
+        <lb rend="¬" break="no"/>H1 <pb n="30"/>
         <lb/>30
         <lb/>rie, Marle de Mediecle, durane l’Aſemblédes Ettatee
         <lb rend="¬" break="no"/>eray à Paris: Q’il y auoit quelque cinquate aas qué

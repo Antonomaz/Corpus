@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2suppl61_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2suppl61_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -61,13 +62,12 @@
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49866</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49866" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49866"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14381</idno>
@@ -99,7 +99,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mention d'enregistrement de la déclaration par le Parlement de Paris le
+        <p source="Mazarine">Mention d'enregistrement de la déclaration par le Parlement de Paris le
           1er avril, par la Chambre des comptes et la Cour des aides, le 3 avril ; arrêt de
           vérification et d'enregistrement par le Parlement et mention de la publication le 2 avril
           ; arrêt de vérification par la Cour des aides le 3 avril ; extrait des privilèges accordés
@@ -117,6 +117,11 @@
           [Pays-Bas] à l'adresse de Paris par les imprimeurs et libraires ordinaires du roi, 12 p.
           in-4 ; édition d'une traduction en italien et deux éditions de traductions en néerlandais.
           Acte daté de mars 1649.</p>
+        <p source="Moreau">61. Dédaration du roy pour faire cesser les mouvements et restablir le
+          repos et la tranquillité en son royaume, vérifiée en parlement, Chambre des comptes et
+          Cour des aydes les t et 3 uvril 1649, avec les arrèts de vérification des- dites cours.
+          Paris, par les imprimeurs et libraires ordinaires u roy, 16433 16 pages. Your c9 a° 244 de
+          ta Brblingraphie.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -134,8 +139,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>DECLARATION
         <lb/>DV ROY.
         <lb/>POVR FAIRE CESSER LES MOVVE

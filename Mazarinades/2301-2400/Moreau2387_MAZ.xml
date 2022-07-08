@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2387_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2387_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -77,7 +78,9 @@
             circulaire du parlement de Paris aux autres parlemens de France. Au sujet de l'expulsion
             du cardinal Mazarin hors du royaume.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" notBefore="1651-03-15" notAfter="1651-03-31">seconde quinzaine de
             mars 1651</date>
@@ -85,13 +88,12 @@
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49085</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49085" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49085"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13486</idno>
@@ -123,11 +125,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition, sans adresse, 1651, 10 p. in-4, repérée par Hubert
+        <p source="Mazarine">Autre édition, sans adresse, 1651, 10 p. in-4, repérée par Hubert
           Carrier (Bibliothèque Mazarine, Ms 4682-4, f. 20v). D'après Célestin Moreau, le véritable
           titre de la lettre du Parlement est "Lettre de nosseigneurs de la cour de parlement de
           Paris envoyée aux autres parlements de France...". Texte paru dans la seconde quinzaine de
           mars 1651 d'après H. Carrier.</p>
+        <p source="Moreau">2387. Manifeste des provinces fait aux parlements sur la lettre
+          circulaire du Parlement de Paris aux autres parlements de France, au sujet de l'expulsion
+          du car dinal Mazarin hors du royaume. Sans Lieu, 1651, 16 pages. Le véritable titre de la
+          lettre du parlement est Lettre de nossei gneurs de la cour de parlement de Paris envoyée
+          aux autres parle ments de France, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -144,8 +151,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>MANIFESTE
         <lb/>DES PROVINCES
         <lb/>FAIT AVX

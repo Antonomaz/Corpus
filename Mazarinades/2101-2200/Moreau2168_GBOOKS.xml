@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2168_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2168_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -41,24 +37,24 @@
             <persName>
               <forename>Louis</forename>
               <surname>Bourbon (De)</surname>
-              <name>Louis XIV</name>
             </persName>
           </author>
           <title source="Moreau">Lettre du roi envoyée à messieurs de la cour de Parlement de Paris
             sur son départ pour la Guyenne, lue le 8 juillet 1650.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Les imprimeurs &amp; libraires ordinaires du Roy</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Moreau" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Vienne</settlement>
+            <settlement ref="geonames:2761369">Vienne</settlement>
             <institution>Bibliothèque nationale d'Autriche</institution>
             <repository/>
             <idno type="cote">127233-B ALT MAG</idno>
@@ -90,7 +86,10 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2168. Lettre du roi envoyée à messieurs de la cour de Parlement de Paris
+          sur son départ pour la Guyenne, lue le 8 juillet 1650. Paris, par les imprimeurs et li
+          braires ordinaires du roi, 1650, 7 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,6 +98,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -114,8 +116,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>T
         <lb rend="¬" break="no"/>H
         <lb/> L. 1L IL I
@@ -130,8 +131,7 @@
         <lb/> Pa lelopnineun &amp; lioaireosodinaisduoyr
         <lb/>C
         <lb/>Auec Priuilege de ſa Majeſté.
-        <lb/>I228-B
-        <pb n="2"/>
+        <lb/>I228-B <pb n="2"/>
         <lb/> a s.
         <lb rend="¬" break="no"/>. L
         <lb/>
@@ -143,8 +143,7 @@
         <lb/> ni¬.
         <lb/>omoioſe
         <lb/>1
-        <lb/>3
-        <pb n="3"/>
+        <lb/>3 <pb n="3"/>
         <lb/>.
         <lb/>elAl
         <lb/>LETTRE DV ROT, E NVOTEE
@@ -170,8 +169,7 @@
         <lb/>pour y readre inutils les deſſeins des Ennemis, &amp; pour
         <lb rend="¬" break="no"/>uoiraà la conſeruation, tant de la Ville &amp; Chaſteau de
         <lb/>Guiſe qu’ils eſtoient venus aſſieger, que des aurres places
-        <lb/>A ij
-        <pb n="4"/>
+        <lb/>A ij <pb n="4"/>
         <lb/>4
         <lb/>qu’ils pouuuiét pretendre d’attaquer à la ſolicitation du
         <lb/>Mareſchal de Thurenne, qui les a conduits &amp; pouſſez à
@@ -202,8 +200,7 @@
         <lb/>iour en iour; &amp; que par leurs ’pratiques i&amp; laeleuéasde
         <lb/>quelques gens qu’ils ont mis enſemble danis le Vicomté
         <lb/>de Thurenne, ils eſſayent de jetter le trouble &amp; la re
-        <lb rend="¬" break="no"/>uolte
-        <pb n="5"/>
+        <lb rend="¬" break="no"/>uolte <pb n="5"/>
         <lb/>uolte dans noſtre Prouince de Guïenne;pretendans d’y
         <lb/>attirer noſtre Ville de Bordeaux; &amp; qu’ls ont traitté́ auec
         <lb/>les Eſpagnols, pour les introduire dans le Royaume,
@@ -233,8 +230,7 @@
         <lb/>quenous pouuons attendre d’vne perſonne qui nous
         <lb/>eſt fi proche &amp; ſi chnere, &amp; qui par ſon rang &amp; ſa quali
         <lb rend="¬" break="no"/>éa tant de part à l’adminiſtration &amp; au ſuccés de nos
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/>affaires. Novs nous repoſons donc ſur luy du comman
         <lb rend="¬" break="no"/>dement en noſtre abſence, tant en noſtredite Ville d
         <lb rend="¬" break="no"/>Paris, qu’en nos Prouinces de l’Iſle deFrance, Norman
@@ -263,8 +259,7 @@
         <lb rend="¬" break="no"/>dant de redoubler,s’il fe peut, vosfoins &amp; voſtre vigilan
         <lb rend="¬" break="no"/>ce pour empeſcher que dans les oceaſions preſentesjl
         <lb/>n’arriue aucun trouble, deſobeiſſance, deſordre ny eg
-        <lb/>trepriſe au preiudie de aoſtre ſeruice, de noſtre a¬
-        <pb n="7"/>
+        <lb/>trepriſe au preiudie de aoſtre ſeruice, de noſtre a¬ <pb n="7"/>
         <lb/>thoriteé, &amp; du repos de nos ſujets; vous aſſeurans que les
         <lb/>ſeruices que vous continuerez de nous rendre, en ce
         <lb/>faiſant, nous feront en particuliere conſideration.

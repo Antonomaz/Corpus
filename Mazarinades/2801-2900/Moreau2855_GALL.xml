@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau2855_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2855_GALL">
   <teiHeader xml:lang="fr">
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -38,21 +34,23 @@
         <bibl>
           <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k58493582"/>
           <author>
-            <name>Laboussière (De)</name>
+            <persName>Laboussière (De)</persName>
           </author>
           <title source="Moreau">Première partie du philosophe malotru, en vers burlesques.</title>
           <pubPlace ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="20"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque nationale de France</institution>
             <repository>Département Littérature et art</repository>
             <idno type="cote">YE-3173</idno>
@@ -84,8 +82,27 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BnF_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2855. Première partie du philosophe malotru, en vers burlesques. Paris,
+          1649,20 pages. Signé de La Boussière M. « ... Pour être négentillastre , Ce n'est pas un
+          si grand désastre D'être réduit au petit pied, A faire voyages à pied, Par la ville aller
+          sans épée, Gagner sa petite journée Tantôt en dictant mes écrits, Tantôt transcrivant
+          manuscrits , Ou visitant quelque malade, Ou bien vendant de la pommade, Tantôt allant
+          faire leçon A quelque beau petit garçon, Tantôt servant dans des villages De médecin à
+          petits gages, Ou, faute de meilleur emploi, Étant mouchard aux gens du roi, 372
+          BlBLIOGRAPHIE [PRÉPARATIFs] , Tantôt montrant des bagatelles A quelques jeunes
+          damoiselles, Ores par des subtilités Ou par quelques jolivetés, Comme seroit le
+          déchiffrage De l'écriture hors d'usage , Ou débitant papier nouveau Transparent qu'on
+          trouve fort beau, Bon pour apprendre l'écriture, Bon pour apprendre la peinture, Lequel
+          assure mieux la main Que le meilleur maître écrivain , Tantôt, c'étoit en temps de guerre,
+          Faisant valoir le cimeterre, Le cimeterre ou coutelas Afin de ne vous mentir pas ; Mais
+          vous saurez par mon mémoire , Un peu plus bas dans cette histoire, Que je ne fus sitôt
+          monté Que fus cavalier démonté. Vous savez donc que ma naissance Me communiqua la
+          vaillance. Croyez ou ne le croyez pas ; Quant à moi, je ne le crois pas. » L'auteur nous
+          apprend qu'il avait écrit en prose son Philosophe malotru; mais qu'il avait dû le mettre
+          en vers parce qu'on ne vou lait rien lui en donner. Je serais tenté de croire qu'il n'y a
+          pas eu plus d'amateurs après la transformation, et qu'à cause de cela, la seconde partie
+          n'a pas paru. En tout cas la première n'est pas commune.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -94,6 +111,9 @@
           <term type="subgenre">burlesque</term>
           <term type="subgenre">satirique</term>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>

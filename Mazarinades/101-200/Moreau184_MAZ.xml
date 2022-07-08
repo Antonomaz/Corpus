@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau184_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau184_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -47,13 +48,12 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49814</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49814" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49814"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14399</idno>
@@ -85,10 +85,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">2 états A/B p. 5 : fin l. 7 "Corps" / "Corps de" ; l. 10 "dās la cause
+        <p source="Mazarine">2 états A/B p. 5 : fin l. 7 "Corps" / "Corps de" ; l. 10 "dās la cause
           cōmune" / "dans la cause commune". Signés "De Pontac". Datés du 28 juillet 1650. D'après
           Hubert Carrier, texte paru le 4 août 1650 (Bibliothèque Mazarine, Ms. 4682-1, f.
           101v).</p>
+        <p source="Moreau">184. Arrêts de la cour de parlement de Bordeaux sur le refus de l’entrée
+          des gens de guerre et du cardinal Mazarin dans la ville de Bordeaux, et sur le sujet de la
+          députation vers le roi, garde et sûreté de ladite ville. Paris , veuve J. Guillemot,
+          jouxte la copie imprimée à Bordeaux, 1650 , 6 pages. Deux arrêts du 28 juillet 1650.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,8 +111,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT

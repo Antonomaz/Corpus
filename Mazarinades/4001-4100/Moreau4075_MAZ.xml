@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau4075_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau4075_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -66,20 +67,21 @@
             d'Enguyen son fils, des ducs de Boüillon &amp; de La Rochefoucault, de demeurer dans le
             service du Roy.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" when="1650-10-20">vers le 20 octobre 1650</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49391</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49391" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49391"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14317</idno>
@@ -111,8 +113,19 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Texte paru la troisième semaine d'octobre 1650, vers le 20, d'après
+        <p source="Mazarine">Texte paru la troisième semaine d'octobre 1650, vers le 20, d'après
           Hubert Carrier (Bibliothèque Mazarine, Ms. 4682-5, f. 417v). </p>
+        <p source="Moreau">4075. Vraie suite de la déclaration du roi accordée pour la pacification
+          des troubles de Bordeaux, du 1er octobre 1650, à Bourg sur la mer, portant amnistie
+          générale de ce qui a été fait depuis la dernière déclaration de Sa Majesté, du 26 décembre
+          1649, enregistré en ladite cour le 7 janvier 1650 , ensem ble les propositions de
+          monseigneur le duc d'Orléans, registres du Parlement de Paris, lettres de Sadite Majesté
+          portant approbation d'iceux, et révocation de M. le duc d'Épernon du gouvernement de
+          Guyenne , avec l'arrêt d'enregistrement et publication et actes de protestation (sic) de
+          serment faits par madame la Princesse , pour elle et M. le duc d'Enguyen (sic) , son fils,
+          des ducs de Bouillon et de Larochefoucault, de demeurer dans le service du roi. Paris, par
+          les imprimeurs et libraires ordinaires du roi, 1650, 7 pages. Plus complet et plus rare
+          que la Suite.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -135,8 +148,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>VRAYE SVITE DE LA
         <lb/>DECLARATION
         <lb/>DV ROY
@@ -160,7 +172,8 @@
         <lb/>Par les Imprimeurs &amp; libraires ordinaires
         <lb/>du Roy.
         <lb/>M. D C. L.
-        <lb/><imprimatur>Auec Priuilege de ſa Maieſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Maieſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>PROPOSITIONS

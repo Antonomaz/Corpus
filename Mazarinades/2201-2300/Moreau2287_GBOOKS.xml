@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2287_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2287_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -38,23 +34,26 @@
       <sourceDesc>
         <bibl>
           <ref target="https://books.google.fr/books?id=tzR7YSNxxD8C&amp;hl=fr"/>
-          <author>Parlement de Normandie</author>
+          <author ref="isni:0000000480502587">
+            <orgName>Parlement de Normandie</orgName>
+          </author>
           <title source="Moreau">Lettres et arrêts de la cour de Parlement de Normandie envoyés à la
             cour de Parlement de Paris pour l'adjonction (sic) desdites cours et affaires présentes,
             avec l'arrêt portant ladite adjonction, du 5 février 1649.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Les imprimeurs &amp; libraires du Roy</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="16"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 311931</idno>
@@ -86,7 +85,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2287. Lettres et arrêts de la cour de Parlement de Nor mandie envoyés à
+          la cour de Parlement de Paris pour l'adjonction (sic) desdites cours et affaires
+          présentes, avec l'arrêt portant ladite adjonction, du 5 février 1649. Paris, par les
+          imprimeurs et libraires ordi naires du roi, 1649, 16 pages. Sept pièces des 27 et 30
+          janvier, 1° et 5 février.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -95,6 +99,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -111,8 +118,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>T ¬ T ’lloa
         <lb/>1 1
         <lb/>L 1 1
@@ -126,8 +132,7 @@
         <lb/>Pair les Inmprimeurs &amp; Libraires ordinaires
         <lb/> du Roy.
         <lb/>M. DC. XLIX.
-        <lb/>Auec Priuilege de ſae Majeſfté.!
-        <pb n="2"/>
+        <lb/>Auec Priuilege de ſae Majeſfté.! <pb n="2"/>
         <lb/>1
         <lb/>p,
         <lb/> 3
@@ -197,8 +202,7 @@
         <lb/>1 9
         <lb/>IIN..
         <lb/> ll
-        <lb/>onaaoo, GooQle
-        <pb n="3"/>
+        <lb/>onaaoo, GooQle <pb n="3"/>
         <lb/>3
         <lb/>.m
         <lb/>e ſl fiudſr’ lg pe des ldlue
@@ -224,8 +228,7 @@
         <lb/>meat leRtoüediy uſſant monpis, ſe ddopnear
         <lb/>Aeieiſti oonuo l endeſt ;ohforme àceluydu
         <lb/>e!4
-        <lb/>A ij
-        <pb n="4"/>
+        <lb/>A ij <pb n="4"/>
         <lb/>die PaHlefnene; Que les nidhtez deeee ſtalblſ¬l
         <lb/> mont edtoat aſez cognues, Qu’ilſto fondéſux
         <lb/>evn fau &amp;cſomaieux pretete, pardes peafonnes
@@ -254,8 +257,7 @@
         <lb/>part, &amp;e les aſſeueer quae nous conibneobdeoout
         <lb/>ſtre pouuoir au ion puble repos de lſtab
         <lb/>Nous
-        <lb/>u .
-        <pb n="5"/>
+        <lb/>u . <pb n="5"/>
         <lb/>itez dttt talſ
         <lb/> Qu’iloſto ſondeſ
         <lb rend="¬" break="no"/>te, pardes pefoine
@@ -279,8 +281,7 @@
         <lb/>pſeae deie
         <lb/>arboailen
         <lb/>ipu delete
-        <lb/>Nou6
-        <pb n="6"/>
+        <lb/>Nou6 <pb n="6"/>
         <lb/>
         <lb rend="¬" break="no"/>l. le .
         <lb/>nia.
@@ -308,8 +309,7 @@
         <lb/>leese
         <lb/>a!
         <lb/>eln n
-        <lb/>la
-        <pb n="7"/>
+        <lb/>la <pb n="7"/>
         <lb/>ea o- a -re, 3A
         <lb/>Nous vous enuoions auſſi les Arreſts que nous auons
         <lb/>donnez, tant pour les affaires generales que pour ce
@@ -337,8 +337,7 @@
         <lb/>à Panu.
         <lb/>2
         <lb/> ..
-        <lb/>B
-        <pb n="8"/>
+        <lb/>B <pb n="8"/>
         <lb/>VlAAAAub
         <lb/> ere
         <lb/>LETTRE DV PARLEMENT
@@ -364,8 +363,7 @@
         <lb/>aſſeurons que comme l’authorité que le Roy a miſe.
         <lb/>ennos mains, ne tire ſa vigueur &amp; ſa puiſſance que
         <lb/>de ſa Souueraineté́, Nous amploy erons ainſi que
-        <lb/>vous tous, les moyens à nous poſſibles po ur empeſ¬
-        <pb n="9"/>
+        <lb/>vous tous, les moyens à nous poſſibles po ur empeſ¬ <pb n="9"/>
         <lb/>chet la naiſſance d’vne guerre eiuile, &amp; pour la
         <lb/> conſeruation de ſa perſonne &amp; de ſon authorite.
         <lb/>Pour à quoy paruenir, nous conſeruerons touſiours
@@ -388,8 +386,7 @@
         <lb/>Longueuille Gouuerneur pour le Roy
         <lb/>Aen la Prouince de Normandie, &amp; le
         <lb/>naacjeur de Beuuron Lieutenant General
-        <lb/>audit Gouuernement, s’eſtant fair repreſenter l’Edit
-        <pb n="10"/>
+        <lb/>audit Gouuernement, s’eſtant fair repreſenter l’Edit <pb n="10"/>
         <lb/>du mois de Ianuiier mil ſix cens quarante &amp; vn, por
         <lb rend="¬" break="no"/>tant creation de pluſieurs Officiers en ladite Cour,
         <lb rend="¬" break="no"/>pour eſtre tenuë à l’aduenir par deux ſeances &amp;
@@ -420,8 +417,7 @@
         <lb rend="¬" break="no"/>ſes: Autre Declaration du cinquieſme iour de Mars
         <lb rend="¬" break="no"/>1642. regſtreée le huictieſme May enſuiuant, par au
         <lb rend="¬" break="no"/>tres Commiſſaires tenans ladite Cour, ſubſtituez à
-        <lb/>ceux
-        <pb n="11"/>
+        <lb/>ceux <pb n="11"/>
         <lb/>ceux du Parlement de Paris, contenant qu’à la rece
         <lb rend="¬" break="no"/>ption deſdits Offieiers de ladite nouuelle creatior,
         <lb/>iln’aſſiſteroit qu’vn tiers de l’ancienne creation, &amp;
@@ -451,8 +447,7 @@
         <lb rend="¬" break="no"/>ce dudit Arreſt du ;o Aouſt, portant reſtabliſſement
         <lb/>dudit Semeſtre &amp; des Officiers ſuprimez par ledit
         <lb/>Elict du 1. Feburier 643. &amp; l’autre donné à̀ Fontai
-        <lb rend="¬" break="no"/>nebleau au mois d’Octobre enſuiuant, portnt crea¬
-        <pb n="12"/>
+        <lb rend="¬" break="no"/>nebleau au mois d’Octobre enſuiuant, portnt crea¬ <pb n="12"/>
         <lb/>10.
         <lb/>tion de ſept autres Offices de Conſeillers en ladite
         <lb/>Cour, regiſtrez les io. &amp; 7 dudit mois audit temps
@@ -483,8 +478,8 @@
         <lb rend="¬" break="no"/>humbles remonſtrances ſeront faites à̀ ſa Majeſté, de
         <lb rend="¬" break="no"/>la conſequence &amp; importance deſdits Edits. Et ſe
         <lb rend="¬" break="no"/>ra le preſent Arreſt leu &amp; publié́ à la Barre de la Sal
-        <lb rend="¬" break="no"/>le du l’alais, &amp; les Vidimus d’iceluy enuoyez par les
-        <pb n="13"/>
+        <lb rend="¬" break="no"/>le du l’alais, &amp; les Vidimus d’iceluy enuoyez par les <pb
+          n="13"/>
         <lb/>11
         <lb/>le Bailliages &amp; Vicomtez, pour y eſtre pareillemét leus.
         <lb/>p publiez &amp; regiſtrez Fait &amp; arreſteé aà̀ Roü̈en, en la
@@ -514,8 +509,7 @@
         <lb/>l’aduis à elle donné des pilleries, extorſions &amp; vio
         <lb rend="¬" break="no"/> lences faites tant au enuirons de la ville de Roüier
         <lb/>qu’ailleurs en la Prouince, Deſirant pouruoir au bien
-        <lb/>du ſeruice du Roy, repos &amp; tranquillite de ladité
-        <pb n="14"/>
+        <lb/>du ſeruice du Roy, repos &amp; tranquillite de ladité <pb n="14"/>
         <lb/>r2
         <lb/>Prouince, A ordonné &amp; ordonne qu’il en ſera inm
         <lb rend="¬" break="no"/>formé en cette Ville, par les Conſeillers Commiſſai

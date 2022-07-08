@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau239_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau239_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,20 +36,21 @@
             recepte generale de Reims seront apportez en cette ville, &amp; mis és coffres de
             l'Hostel d'icelle. Du trentiesme janvier mil six cens quarante-neuf.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" when="1649-01-31">31 janvier 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49923</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49923" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49923"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14452</idno>
@@ -80,8 +82,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Signé "Du Tillet". D'après Hubert Carrier, texte paru le 31 janvier
+        <p source="Mazarine">Signé "Du Tillet". D'après Hubert Carrier, texte paru le 31 janvier
           1649 (Bibliothèque Mazarine, Ms. 4682-1, f. 119v).</p>
+        <p source="Moreau">239. Arrêt de la cour de parlement, portant que les de- niers de la
+          recette générale de Reims seront apportés en cette villeet mis ès coffres de l’hôtel
+          d’icelle. Du 30 janvier 1649. Paris, par les imprimeurs et libraires ordinaires du roi,
+          1649 , 4 pages.“0et d E 4</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,8 +106,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT.
@@ -112,7 +117,8 @@
         <lb/>A PARIS,
         <lb/>Par les Imprimeur &amp; Libraires ordinaires du Roy.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>

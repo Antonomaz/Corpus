@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1903_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1903_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -13,15 +13,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -40,7 +36,9 @@
       <sourceDesc>
         <bibl>
           <ref target="https://books.google.fr/books?id=7k0NlbcMQxUC&amp;hl=fr"/>
-          <author>France</author>
+          <author>
+            <orgName>France</orgName>
+          </author>
           <persName role="received" ref="isni:0000000123455225">
             <forename>François</forename>
             <surname>L'Hospital (De)</surname>
@@ -61,13 +59,12 @@
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 311248</idno>
@@ -99,7 +96,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1903. Lettre de cachet du roy, du 8 octobre 1651, en voyée à monseigneur
+          le mareschal de Lhospital, che valier des ordres du roy, gouverneur et lieutenant gé néral
+          pour Sa Majesté en la ville, prévosté et viconté de Paris, et seul son lieutenant général
+          en Champagne et Brie, pour advertir les députés des provinces de se rendre au plutost dans
+          la ville de Tours pour tenir les Etats généraux du royaume. Paris, Guillaume Sassier,
+          1651, 4 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -108,6 +111,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -123,8 +129,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>T parD E VE
         <lb/> H
         <lb rend="¬" break="no"/>AAA IL LI IL L I L 1
@@ -153,14 +158,12 @@
         <lb/>ene e roe ls i ene us le
         <lb/>’e g re eu u eeee
         <lb rend="¬" break="no"/> Auec Priuilege du Roy.
-        <lb/>311s8
-        <pb n="2"/>
+        <lb/>311s8 <pb n="2"/>
         <lb/> ¬2.
         <lb/> e
         <lb/>I
         <lb rend="¬" break="no"/>¬l
-        <lb/> g
-        <pb n="3"/>
+        <lb/> g <pb n="3"/>
         <lb/>u
         <lb/>1
         <lb/>en -r;
@@ -191,8 +194,7 @@
         <lb rend="¬" break="no"/>nuanmt dans le deſſein que j’ay toûjours eu de
         <lb/>les emir, pour poeurer à nmes Sujes tour le
         <lb/>ſoulagement qui me ſera poſſible, ie vous faits
-        <lb/>A ij
-        <pb n="4"/>
+        <lb/>A ij <pb n="4"/>
         <lb/>l.
         <lb/>
         <lb rend="¬" break="no"/>’

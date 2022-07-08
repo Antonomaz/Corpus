@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau236_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau236_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,20 +36,21 @@
             Portant reglement pour le prix des mousquets avec bandoüilleres, picques, paire d'armes
             avec le pot, pistolets avec les fourreaux, pouldre, plomb &amp; mesche.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-02-01">à partir du 1er février 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49920</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49920" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49920"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14448</idno>
@@ -80,10 +82,19 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">2 états de la p. de titre (A/B) : titre sur 7 lignes / titre sur 8
+        <p source="Mazarine">2 états de la p. de titre (A/B) : titre sur 7 lignes / titre sur 8
           lignes ; marque décorative 72×52 mm / marque 65×47 mm ; adresse en grands caractères / en
           petits caractères. Signé "Guyet". D'après Hubert Carrier, texte paru à partir du 1er
           février 1649 (Bibliothèque Mazarine, Ms. 4682-1, f. 118v).</p>
+        <p source="Moreau">236. Arrêt de la cour de parlement, du 30 janvier 1649, portant règlement
+          pour le prix des mousquets avec bandoulières, picques (sic),. paire d’armes avec le pot ,
+          pistolets avec les foureaux, poudre, plomb et mesche (sic). Paris, par les imprimeurs et
+          libraires ordinaires du roi, 1649, 4 pages. Mousquets de Charleville, Mézières et Liége. 8
+          liv. — Hollande et Sédan......... . 10 Piques de frêne.........….…....…..... 24 sols Paire
+          d’armes fortes..........…..…...... 12 — — faibles.................. 10 Pistolets à
+          fusil....20.0010000 0 se 00000 « 18 — ä rouet.......….…....00ceucau0s 16 Poudre à
+          mousquet........0.0.0.+0000000 20 — ÉNE L se 1L e s0 su n e se e us 0000 6 24
+          Plomb.......22220 0220c aa sn 00 s000 n 0 4 1 CZE 4</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,8 +112,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST DE LA
         <lb/>Cour de Parlement.
         <lb/>Du trentiéme Ianuier 1649.
@@ -114,7 +124,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires
         <lb/>ordinaires du Roy.
         <lb/>M DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Maieſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Maieſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

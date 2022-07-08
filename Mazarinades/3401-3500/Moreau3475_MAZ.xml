@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3475_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3475_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -37,20 +38,21 @@
             Parlement, pour la justification de meßieurs les Princes. Le deuxiéme decembre, mil six
             cens cinquante.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Antonomaz" when="1650-12-02">daté du 2 décembre 1650</date>
           <extent>
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49292</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49292" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49292"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11890</idno>
@@ -82,10 +84,20 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Certains exemplaires présentent un accident d'impression au titre entre
+        <p source="Mazarine">Certains exemplaires présentent un accident d'impression au titre entre
           le "Q" et le "V" de "Reqveste" et sur la marge extérieure. D'après Hubert Carrier, autre
           édition portant au titre "a Nosseigneurs de Parlement" (Bibliothèque Mazarine, Ms 4682-5,
           f. 202v). Titre de départ.</p>
+        <p source="Moreau">3475. Requête de madame la princesse de Condé à . ç 1/(755 messieurs du
+          Parlement pour la justification de mes sieurs les princes, le 2 décembre 1650. Paris,
+          1650, 6 pages. Elle est dans le Journal du parlement. On lit dans les Mémoires de la
+          princesse palatine, p. 167, que le projet en fut dressé chez elle et sous ses yeux.
+          Apparemment l'auteur des Mémoires avait emprunté cette cir constance au cardinal de Retz,
+          qui dit (p. 229 de ses Mém., coll. Michaud) : « Ce qui fut assez plaisant à l'égard de
+          cette requête, fut qu'elle fut concertée, l'avant-veille, chez madame la Palatine, entre
+          Croissy, Viole et moi, et qu'elle fut minutée, la veille, chez le pre mier président, qui
+          disoit aux deux autres : Voilà servir monsieur le prince dans les formes et en gens de
+          biens, et non pas comme des factieux. »</p>
       </abstract>
       <textClass>
         <keywords>
@@ -105,8 +117,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>REQVESTE
         <lb/>DE
         <lb/>MADAME

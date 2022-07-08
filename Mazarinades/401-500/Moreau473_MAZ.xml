@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau473_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau473_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -44,13 +45,12 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48892</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48892" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48892"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12525</idno>
@@ -82,8 +82,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Texte paru la dernière semaine de mars 1649 d'après Hubert Carrier
+        <p source="Mazarine">Texte paru la dernière semaine de mars 1649 d'après Hubert Carrier
           (Bibliothèque Mazarine, Ms 4682-1, f. 243v).</p>
+        <p source="Moreau">473. Avis à messieurs du parlement, sur la continuation de la trève et
+          suspension d’armes. Paris, Michel Mé- tayer, 1649, G pages. « Depuis le commencement de la
+          trève, 1,500 hommes des troupes parlementaires ont pris parti dans l’armée du roi. »</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,8 +103,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ADVIS
         <lb/>A
         <lb/>MESSIEVRS

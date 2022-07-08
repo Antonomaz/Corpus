@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2004_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2004_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,13 +49,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49215</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49215" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49215"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11271</idno>
@@ -86,9 +86,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition : Bordeaux, P. Du Cocq, 7 p. (Labadie,n° 224). D'après
+        <p source="Mazarine">Autre édition : Bordeaux, P. Du Cocq, 7 p. (Labadie,n° 224). D'après
           Hubert Carrier, texte paru le 18 février 1652 (Bibliothèque Mazarine, Ms 4682-3,f.
           213v).</p>
+        <p source="Moreau">2004. Lettre de monseigneur le duc de Rohan à Son Altesse Royale sur les
+          entreprises du cardinal Maza rin contre la ville d'Angers. Paris, Jean de La Caille,
+          1652,8 pages. Datée d'Angers, le 3 février. La Caille a eu le soin d'imprimer in extenso,
+          sur la 8° page, l'ordre du duc d'Orléans qui lui avait été donné le 17 du même I1O1S,</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE
         <lb/>DE MONSEIGNEVR
         <lb/>LE DVC
@@ -121,7 +124,8 @@
         <lb/>A PARIS.
         <lb/>Chez Iean de la Caille, Imprimeur ordinaire du Roy.
         <lb/>M. DC. LII.
-        <lb/><imprimatur>Par odre de ſon Alteſſe Royale</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Par odre de ſon Alteſſe Royale</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1174_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1174_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -44,13 +45,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50355</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50355" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50355"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10874</idno>
@@ -82,11 +82,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. Note marginale. 2 états (A/B) : p. 5, l. 18
+        <p source="Mazarine">En vers octosyllabes. Note marginale. 2 états (A/B) : p. 5, l. 18
           "m'entens"/"m'entend". Autre émission (BM01453) : Paris, 1649, mais sans mention "En vers
           burlesque" à la fin du titre et frise de fleurons simple au titre de départ. Titre de
           départ. D'après Hubert Carrier, texte paru la première semaine d'avril 1649 (Bibliothèque
           Mazarine, Ms. 4682-2, f. 262v).</p>
+        <p source="Moreau">1174. Doux (les) entretiens d’un caporal de laville, étant en garde, en
+          vers burlesques. Paris, Pierre Targa, 1649, 8 pages. C’est une satire de la milice
+          bourgeoise qui pourrait être plus spirituelle. « La justice et les généraux VQ"""C Ont
+          tant fait que la paix est faite. » =</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES
         <lb/>DOUX ENTRETIENS
         <lb/>D’VN
@@ -242,8 +245,7 @@
         <l>
           <lb/>Voulant retourner ſur ſes pas.</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/> Notre Appointé́ eſtfort adroit</l>
         <l>
@@ -584,7 +586,8 @@
         <lb/> Chez PIERRE TARGA, rue Saint
         <lb/>Victor au Soleil d’Or.
         <lb/>M. DC. XLIX
-        <lb/><imprimatur>AVEC PERISSION</imprimatur>. </p>
+        <lb/>
+        <imprimatur>AVEC PERISSION</imprimatur>. </p>
     </body>
   </text>
 </TEI>

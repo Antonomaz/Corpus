@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau248_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau248_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -38,20 +39,21 @@
             qu'ils recevront cy-apres des particuliers habitans de cettedite ville. Du 18. février
             mil six cens quarante-neuf.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Antonomaz" when="1649-02-18">daté du 18 février 1649</date>
           <extent>
             <measure unit="page" quantity="3"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49932</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49932" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49932"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14461</idno>
@@ -83,7 +85,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Signé "Du Tillet".</p>
+        <p source="Mazarine">Signé "Du Tillet".</p>
+        <p source="Moreau">248. Arrêt de la cour de parlement, par lequel il est en- joint, à tous
+          les quartiniers de la ville de Paris, de porter ou envoyer ès mains de Sébastien Cramoisy
+          et Jean- * Baptiste Forne, toutes les taxes, par eux reçues, et celles qu’ils recevront
+          ci-après des particuliers, habitants de ladite ville. Du 18 février 1649. Paris, par les
+          im- primeurs et libraires ordinaires du roi, 1649, 4 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>Arreſt de la Cour
         <lb/>DE PARLEMENT.
         <lb/>PAR LEQVEL ILEST ENIOINT
@@ -119,7 +125,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordinaires
         <lb/>du Roy.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>3
         <lb/>EXTRAICT DES REGISTRES

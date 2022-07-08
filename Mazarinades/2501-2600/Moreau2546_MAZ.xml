@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2546_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2546_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -57,13 +58,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49138</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49138" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49138"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13534</idno>
@@ -95,8 +95,20 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Titre de départ. Lettres datées de Donchery les 1er et 5 décembre
+        <p source="Mazarine">Titre de départ. Lettres datées de Donchery les 1er et 5 décembre
           1650.</p>
+        <p source="Moreau">2546. Nouvelle (la) extraordinaire contenant tout ce qui s'est fait et
+          passé en Champagne depuis l'arrivée de l'armée du roi, commandée par monseigneur le
+          cardinal Mazarin, avec la prise du château et garnison de Chemery par le sieur de La
+          Marre, envoyée à monsieur le maréchal de Lhopital, gouverneur de la ville de Paris et seul
+          lieutenant-général pour le roi en Champagne et Brie, par le sieur de Saint-Sauflieu (sic),
+          gouverneur de Donchery. Paris, Guillaume Sassier, 1650, 7 pages. Deux lettres des 1er et 5
+          décembre. Sassier était l'imprimeur du maréchal de Lhôpital. Ces nouvelles ont ainsi un
+          caractère officiel jusque dans la forme sous laquelle elles sont présentées. Or, il faut
+          remarquer que dans le titre on attribue le commandement de l'armée du roi au cardinal
+          Mazarin et non au maréchal du Plessis. C'est au moins une présomption en faveur de ceux
+          qui disent que le maréchal fut sollicité de concéder au cardinal l'honneur de la victoire
+          de Rethel, qui fut remportée , comme on sait, le 15 décembre.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -115,8 +127,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA NOVVELLE
         <lb/>EXTRAORDINAIRE, CONTENANT
         <lb/>tout ce qui s’eſt fait &amp; paſſé en Champagne, de¬

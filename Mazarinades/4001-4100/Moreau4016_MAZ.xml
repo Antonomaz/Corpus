@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau4016_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau4016_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,13 +49,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49885</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49885" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49885"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10365</idno>
@@ -86,13 +86,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers Autres éditions : Paris, Claude Boudeville (deux autres
+        <p source="Mazarine">En vers Autres éditions : Paris, Claude Boudeville (deux autres
           éditions de composition typographique différente, avec ou sans mention de permission sur
           la p. de titre, BM00978 et BM00980) ; Paris, Mathurin Henault (BM00977) ; jouste la coppie
           imprimée a Paris, M. DC. XLVIIII. (BM00368). Par l'abbé de Laffemas d'après Hubert Carrier
           suivant Tallemant des Réaux et réfutant l'attribution à Saint-Julien par Célestin Moreau
           (Bibliothèque Mazarine, Ms. 4682-5, f. 399v-400). D'après Hubert Carrier, texte paru à
           partir du 12 février 1649 (Bibliothèque Mazarine, Ms. 4682-5, f. 399v).</p>
+        <p source="Moreau">4016. Vers burlesques envoyés à monsieur Scarron, sur l'arrivée du convoi
+          à Paris. Paris, Claude Boude- ville, 1649, 4 pages. De la gaieté et de l'esprit. Il y en a
+          une autre édition jouxte la copie imprimée à Paris. Saint-Julien pourrait bien être
+          l'auteur de ce pamphlet. Voir le Courrier burlesque de la guerre de Paris.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -110,8 +114,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>VERS BVRLESQVES
         <lb/>ENVOYEZ A MONSIEVR
         <lb/>SCARRON
@@ -122,7 +125,8 @@
         <lb/>Chez CLAVDE BOVDEVILLE, ruë des Carmes,
         <lb/>au Lys Fleuriſſant.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>AVEC PERMISSION</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>AVEC PERMISSION</imprimatur>. <pb n="10"/>
         <lb/>2
         <lb/>VERS BVRLESQVES
         <lb/>ENVOYEZ A MONSIEVR
@@ -324,8 +328,7 @@
         <l>
           <lb/>Le Bourgeois ſe haſta d’ouurir ¬</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>En ſuitte venoit vuesrouppe</l>
         <l>

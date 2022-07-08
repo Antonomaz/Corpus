@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau988_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau988_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -29,19 +30,20 @@
           <author/>
           <title source="Mazarine">La deffence du prince invincible.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
-          <date source="Mazarine">Sans date</date>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
+          <date source="Mazarine">Sans Date</date>
           <extent>
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49007</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49007" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49007"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12763</idno>
@@ -73,7 +75,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">D'après Célestin Moreau, le "prince invincible" est le duc de Beaufort.
+        <p source="Mazarine">D'après Célestin Moreau, le "prince invincible" est le duc de Beaufort.
           Quatre états : numéro de la p. 3 imprimé à l'envers, le titre de départ commence par "La
           deffence", p. 4 l. 11, "pour son service" (état A) ; numéro de la p. 3 imprimé à l'envers,
           titre de départ commence par "La deffences", p. 4, l.11, "pour son services", réclame de
@@ -82,6 +84,8 @@
           réclame de la p. 4, erronée : "met-" au lieu de "tre-" (état C) ; numéro de la p. 3
           imprimé à l'endroit, titre de départ commence par "La deffence", p. 4, l. 11, "pour son
           service" (état D).</p>
+        <p source="Moreau">988. Défense (la) du prince invincible. (S. 1. n. d.), 6 pages. Ce prince
+          invincible est le duc de Beaufort! Après le traité des frondeurs avec Mazarin.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -99,13 +103,11 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA
         <lb/>DEFFENCE
         <lb/>DV PRINCE
-        <lb/>INVINCIBLE <pb n="10"/>
-        <pb n="11"/>
+        <lb/>INVINCIBLE <pb n="10"/><pb n="11"/>
         <lb/>LA DEEFENCE
         <lb/>DV PRINCE
         <lb/>INVINCIBLE

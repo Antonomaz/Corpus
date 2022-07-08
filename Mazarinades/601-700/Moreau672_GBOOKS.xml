@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_narration" xml:id="Moreau672_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau672_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -46,20 +42,21 @@
             les ducs de Beaufort, &amp; de Nemours. Addressé à la noblesse raisonnable &amp;
             chrestienne.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1652">1652</date>
           <extent>
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM01258</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM01258" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50152"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
-            <institution>Bibliothèque municipale de Lyon</institution>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309118</idno>
           </msIdentifier>
@@ -90,7 +87,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Contre le duel. D'après Célestin Moreau, réponse à la mazarinade
+        <p source="Mazarine">Contre le duel. D'après Célestin Moreau, réponse à la mazarinade
           intitulée "Le recit du duel deplorable entre messieurs le duc de Beaufort &amp; de
           Nemours. Avec ce qui s'est passé dans le Luxembourg entre monsieur le Prince &amp; le
           comte de Rieux." (BM01091). Autre édition sans lieu, sans nom, sans date signalée par
@@ -98,6 +95,13 @@
           deuxième semaine d'août 1652 (Bibliothèque Mazarine, Ms. 4682-2, f. 46v). Extraict du
           decret du Concile de Trente, contre les duels en la session vingt-cinquiesme. Chap.
           19.</p>
+        <p source="Moreau">672. Censure (la) et l’antidote de quelques maximes très-pernicieuses,
+          contenues dans un libelle qui a pour titre : Le Récit du duel déplorable entre MM. les
+          ducs de Beaufori et de Nemours, adressé (sic) à la noblesse raisonnable et chrestienne.
+          Paris, 1652 , 12 pages. Rare. Contre le duel. Il y avait eu, peu auparavant, une
+          association de quelques gentilshommes pour combattre et détruire le préjugé du duel. Cette
+          association avait eu l’approbation des maréchaux de France. Elle comptait, parmi ses
+          fondateurs, le marquis de Fé- nelon. ‘</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,6 +110,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -121,8 +128,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>LA
         <lb/>AVT 7 S
         <lb/>4
@@ -134,8 +140,7 @@
         <lb/>vn libelle qui a ponr tierr,
         <lb/>Le recit du duel déplorable entre Meſiieurs le Dues
         <lb/>de Beaufort, &amp; de Nemours.
-        <lb/>Aaddreſſé à la Nobleſſe Raiſonnable &amp; Chreſtienne.
-        <pb n="2"/>
+        <lb/>Aaddreſſé à la Nobleſſe Raiſonnable &amp; Chreſtienne. <pb n="2"/>
         <pb n="3"/>
         <lb/>C
         <lb/>LA
@@ -162,8 +167,7 @@
         <lb rend="¬" break="no"/>aſtre.
         <lb/>Maisaane que de paſſer outre, i’informeray le Lecteur de
         <lb/>l ſincerité, &amp; de la droirure de mes intetions, qui ſont pour
-        <lb/>A¬
-        <pb n="4"/>
+        <lb/>A¬ <pb n="4"/>
         <lb/>profiter, &amp; non pour nuire; pourtaet l naal, ſans aoûtses
         <lb/>des coupables; pour terraſſer l’impieté́, ſans dénoncer de
         <lb/>impies pour reſpecter la grandeur meſme, parmy l’infamie
@@ -201,8 +205,7 @@
         <lb/>alors qu’on ne reconnoiſt point de Dieu que poueloree&amp;
         <lb/>pour le blaſphemer; ny de Religion que pour s’en sailler,
         <lb/>¬¬¬¬¬¬¬¬¬¬
-        <lb rend="¬" break="no"/>pour
-        <pb n="5"/>
+        <lb rend="¬" break="no"/>pour <pb n="5"/>
         <lb/>pour la profaner: l’honnu du monde,l’intereſt, &amp; la voluapté
         <lb/>eſtans les ſeules diuinitez quj regneat ſur la terre, à̀ qui iour &amp;
         <lb/>uit on ſacrifie vne infiniré d’ames. Diuinitez tres-execra
@@ -241,8 +244,7 @@
         <lb rend="¬" break="no"/>mouts, oà pour monſtrer l’iguootance, l’aueuglement, l
         <lb/>faufſeaée, &amp; leaeuamartel que cotiueat. q
         <lb/>bs nai
-        <lb rend="¬" break="no"/>B
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>B <pb n="6"/>
         <lb/>mes qui y ſont contenuësle les mettray iey en éuidenee, pout u
         <lb/>détromper la noblefſe &amp; la déliurer du naufrage eéternel que
         <lb/>luy peuuent cauſer ces écueils, reiterant ce que i’ay inſinue
@@ -279,8 +281,7 @@
         <lb/> tant d’horreur, tant d’extrauagance, tant de barbarie, &amp; tant
         <lb/>ar, e de lâcheté dans le duel, qu’il faut que quoy ſeulement onceſſe
         <lb/>’’ ’eſtre Cnreſtien, maisencare d’eſtre homme, pour conſnti
-        <lb/>au. à vne telloabominaci6, ſoit qu’on apelle, ſoit qu’o ſoit apelle
-        <pb n="7"/>
+        <lb/>au. à vne telloabominaci6, ſoit qu’on apelle, ſoit qu’o ſoit apelle <pb n="7"/>
         <lb/>73
         <lb/>Et ieſouhaiterois ce Liure où l’Eſtat Eccleſiaſtique &amp; ſeculien
         <lb/>fulminent ſi clairement contre ce crime, fuſt entre les maius
@@ -316,8 +317,7 @@
         <lb rend="¬" break="no"/>gez d’éuiter le duel puis qu’il tient lieu de crime dans roures
         <lb/>ſortes de Loix, &amp; dans toutes ſortes d’Eſtats, comme on
         <lb/>le pent verifier par vne induction generale de deux chefe:
-        <lb/>’oà il faut tirer vne autre conſequence, à̀ ſçauoir que le
-        <pb n="8"/>
+        <lb/>’oà il faut tirer vne autre conſequence, à̀ ſçauoir que le <pb n="8"/>
         <lb/>i6. 5
         <lb/>Conſol.
         <lb/>Prab. 6.
@@ -359,8 +359,7 @@
         <lb rend="¬" break="no"/>rone ue uous ces bies ſopt des participationsdas perfacties (
         <lb/> diuines
         <lb/>¬ ,aaan,
-        <lb/>-ea
-        <pb n="9"/>
+        <lb/>-ea <pb n="9"/>
         <lb/> 3
         <lb/>dluines; Et par conſequent ne connoiſtrons que tons lest
         <lb/> liſtes dans ces deplorables combats n’ont pas vne once de cou
@@ -397,8 +396,7 @@
         <lb/>pour s’eſtre battus en duel, on ne les punit point d’eauſe de
         <lb/>deur qualité de Nobles: mais ſeulement à̀ cauſe de celle de
         <lb/>Chreſtien, pour laquelle ils ſeront eternellement damne
-        <lb/>L
-        <pb n="10"/>
+        <lb/>L <pb n="10"/>
         <lb/> 0
         <lb/>Duſauueelesdemon, quel paoure eonſolationue quel
         <lb/>fraichiſſement pour eux dans cet abiſme &amp; cette é́tarnité de
@@ -436,8 +434,7 @@
         <lb/> deuient homicide de ſoy meſme, &amp; par vn mauuais ſueceés
         <lb/>parricides de ſa famille, laiſſant vne femme &amp; des enfans deſt
         <lb rend="¬" break="no"/>tuez d’appuy, moleſtez de creanciers, la proye de l’oppre
-        <lb rend="¬" break="no"/>ion, &amp; la victime de mille deſaſtres.
-        <pb n="11"/>
+        <lb rend="¬" break="no"/>ion, &amp; la victime de mille deſaſtres. <pb n="11"/>
         <lb/> 11
         <lb/>Ce comhat inhumain eſt auſſi contraire au bien &amp;ax ieix
         <lb/> de ſ’Eſtat, &amp; partant le Souuerain ne peut q’il ne le ondam
@@ -477,8 +474,7 @@
         <lb rend="¬" break="no"/> daalr inroduit par l’œre du abſe, dce que par la mort ſanſ,,
         <lb/> s corps, id barinme la perte des ames, ſoit exterminé́ eorerom-r
         <lb/>e l Chrefbiense. Deateſtabilis duellerun ſu, ſal r icadia diaboſo i
-        <lb/>m--.
-        <pb n="12"/>
+        <lb/>m--. <pb n="12"/>
         <lb/>A
         <lb/> 1
         <lb/>leſe e e ne e e e n ee nil neniomn nnoai

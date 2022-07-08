@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1256_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1256_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -32,19 +33,20 @@
           <title source="Mazarine">Les entretiens misterieux des trois princes en cage, dans le bois
             de Vincenne, sous les figures du lyon, du renard, &amp; du singe. Dialogue.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="20"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49940</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49940" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49940"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10900</idno>
@@ -76,7 +78,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. 2 états de la p. de titre (A1 : "VINCENNE"
+        <p source="Mazarine">En vers octosyllabes. 2 états de la p. de titre (A1 : "VINCENNE"
           imprimé droit, A2 : les "N" sont décalés vers le haut et le bas), 3 états des cahiers
           signés B, C et E, 4 états pour le D. États identifiables notamment par : p. 5, fin l. 3
           "le mestier" (B1 et B3) / "le mestier," (B2) ; p. 6, l. 2 "iamais" (B1 et B3) / "ïamais"
@@ -99,6 +101,11 @@
           un recueil éditorial de pièces d'origine orléanaise. Autres éditions repérées par Armand
           d'Artois et H. Carrier (Bibliothèque Mazarine, Ms 4682-2, f. 291v) : sans adresse, [16] p.
           ; [Lyon], 18 p.</p>
+        <p source="Moreau">1256. Entretiens (les) mystérieux des trois princes en cage dans le bois
+          de Vincennes, sous les figures du lyon, du renard et du singe, dialogue. Paris, 1650, 20
+          pages. « Quand on annonça au duc d’Orléans la nouvelle (de l’arrestation des princes), Son
+          Altesse Royale dit : « Voilà un beau coup de filet ! On vient de prendre un lion, un singe
+          et un renard. » Guy Joly, page 33, coll. Michaud.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -119,8 +126,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES
         <lb/>ENTRETIENS
         <lb/>MISTERIEVX
@@ -133,7 +139,7 @@
         <lb/>A PARIS
         <lb/>M. DC. L. <pb n="10"/>
         <pb n="11"/>
-        <lb/>3> <l>
+        <lb/>3&gt; <l>
           <lb/>LES ENTRETIENS</l>
         <l>
           <lb/>Myſterieux des trois Princes en</l>

@@ -1,24 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau1521_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1521_GALL">
   <teiHeader xml:lang="fr">
     <fileDesc>
       <titleStmt>
-        <title type="main" source="Mazarine">La guerre burlesque ou L'injustice terrassée aux pieds de
-          Monsieur de Beaufort.</title>
+        <title type="main" source="Mazarine">La guerre burlesque ou L'injustice terrassée aux pieds
+          de Monsieur de Beaufort.</title>
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -37,9 +33,9 @@
       <sourceDesc>
         <bibl>
           <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k5851853h"/>
-          <author source="Mazarine">Anonyme</author>
-          <title source="Mazarine">La guerre burlesque ou L'injustice terrassée aux pieds de Monsieur de
-            Beaufort.</title>
+          <author/>
+          <title source="Mazarine">La guerre burlesque ou L'injustice terrassée aux pieds de
+            Monsieur de Beaufort.</title>
           <pubPlace ref="geonames:2988507">Paris</pubPlace>
           <publisher ref="isni:0000000109088537">
             <persName>
@@ -52,13 +48,12 @@
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM01220</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM01220" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50118"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque nationale de France</institution>
             <repository>Département Littérature et art</repository>
             <idno type="cote">YE-3219</idno>
@@ -90,11 +85,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Sous forme de dialogue en vers octosyllabes entre "Le crieur
+        <p source="Mazarine">Sous forme de dialogue en vers octosyllabes entre "Le crieur
           d'eau-de-vie" et "Le crocheteur". Epître dédicatoire au duc de Beaufort signée "De La
           Frenaye". Texte paru la troisième semaine de mars 1649 d'après Hubert Carrier
           (Bibliothèque Mazarine, Ms. 4682-3, fol. 23v-24r).</p>
-        <p source="BnF_notes"/>
+        <p source="Moreau">1521. Guerre (la)burlesque, ou l'Injustice terrassée aux pieds de M. de
+          Beaufort. Paris, Nicolas Jacquard, 1649, 12 pages. L'épître dédicatoire au duc de Beaufort
+          est signée De La Frenaye. Il semble que l'auteur avait précédemment écrit un petit œuvre «
+          Du nom de justice éclairée Des rêts de la voute dorée. » Est-ce la Justice triomphante
+          ?</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,6 +102,9 @@
           <term type="subgenre">burlesque</term>
           <term type="subgenre">satirique</term>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -118,8 +120,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k5851853h/f4.highres"/>
+      <p><pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k5851853h/f4.highres"/>
         <lb/>LA
         <lb/>GVERRE BVRLESQVE
         <lb/>OV

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3163_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3163_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -41,17 +37,19 @@
           <title source="Moreau">Relation du voyage du roi depuis son départ de Paris jusques à
             cejourd'huy 6? octobre 1651, arrivé à Aubigny.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1651">1651</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4 212 mm</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 311459</idno>
@@ -83,9 +81,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Rel. à la suite de 311.453 : Panégyrique du Roy.Paris, 1651.- 4
-          Autre(s) variante(s) du titre : Nouvelle, 1651 </p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Rel. à la suite de 311.453 : Panégyrique du Roy.Paris, 1651.- 4 Autre(s)
+          variante(s) du titre : Nouvelle, 1651 </p>
+        <p source="Moreau">3163. Relation du voyage du roi depuis son départ de Paris jusques à
+          cejourd'huy 6e octobre 1651, arrivé à Aubigny. Paris, 1651 , 7 pages. Une autre édition ,
+          s. 1. n. d., 3 pages, ajoute au titre ces mots : Où les députés de Bourges sont venus
+          rendre leurs devoirs à Sa Ma jesté. Enfin, il y en a une troisième édition de Rouen, s.
+          d., i pages. *f</p>
       </abstract>
       <textClass>
         <keywords>
@@ -94,6 +97,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -109,8 +116,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>RELATION
         <lb/>DV VOYAGE
         <lb/>Dv ROY.
@@ -120,8 +126,7 @@
         <lb rend="¬" break="no"/>bigny.
         <lb/>A PARIS.
         <lb/>.¬¬,
-        <lb/>M. DE L1
-        <pb n="2"/>
+        <lb/>M. DE L1 <pb n="2"/>
         <lb/>
         <lb/>a
         <lb/>A
@@ -129,8 +134,7 @@
         <lb/>ûi
         <lb/>.
         <lb/> u
-        <lb rend="¬" break="no"/> aſ
-        <pb n="3"/>
+        <lb rend="¬" break="no"/> aſ <pb n="3"/>
         <lb/>3
         <lb/>7
         <lb/>RELATION.
@@ -150,8 +154,7 @@
         <lb rend="¬" break="no"/>les n’ont ſeruy qu’à faire éclatter da
         <lb rend="¬" break="no"/>uantage ſa mauuaiſe volonté. Il l’a de.
         <lb/>claré́e bien hautement à la Maiorité.
-        <lb/>A ij
-        <pb n="4"/>
+        <lb/>A ij <pb n="4"/>
         <lb/>¬¬¬
         <lb rend="¬" break="no"/>du Roy; n’ayant voulu aſſiſter, ny ac
         <lb rend="¬" break="no"/>compagner ſa Maieſté en vne action
@@ -175,8 +178,7 @@
         <lb/>aller a Fontaine-bleau, où elles ſeiour
         <lb rend="¬" break="no"/>nerent iuſques au 2. Octobre, &amp; ſe
         <lb/>rendirent en deux iours à Gien, où
-        <lb/>elles
-        <pb n="5"/>
+        <lb/>elles <pb n="5"/>
         <lb/>5
         <lb/>elles apprirent que Monſieur le Prin
         <lb rend="¬" break="no"/>ce de Conty, Madame de Longue
@@ -199,8 +201,7 @@
         <lb/>les Receptes, &amp; faiſoient vendre tout
         <lb/>le ſel des Greniers. Le Roy ayant ſes
         <lb/>aduis reſolut de faire paſſer la riuiere
-        <lb/>de Loire à la Charité aux deux Regi¬
-        <pb n="6"/>
+        <lb/>de Loire à la Charité aux deux Regi¬ <pb n="6"/>
         <lb/>6
         <lb/>mens de Caualerie d’Harcourt &amp; la
         <lb/>Meilleraye commandez par le Sieur
@@ -223,8 +224,7 @@
         <lb/> deuoirs à ſa Maieſté, &amp; la remercier
         <lb/>de ce qu’elle les auoit ſecourus ſi à
         <lb/>propos: que ſans ſa venuë ils eſtoient
-        <lb/>entierement opprimez: qu’ils la ſup¬
-        <pb n="7"/>
+        <lb/>entierement opprimez: qu’ils la ſup¬ <pb n="7"/>
         <lb/>7
         <lb/> - EEE.
         <lb rend="¬" break="no"/>plioient de faire raſer la groſſe Tour

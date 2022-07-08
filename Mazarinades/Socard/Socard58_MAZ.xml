@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Socard58_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Socard58_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -33,19 +34,20 @@
             à cause de la pairie de Vandosmois, contestée par monsieur le duc d'Elbeuf, außi pair de
             France.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <extent>
             <measure unit="page" quantity="23"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49179</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49179" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49179"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14149</idno>
@@ -77,9 +79,19 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition de composition typographique différente, le titre
+        <p source="Mazarine">Autre édition de composition typographique différente, le titre
           commençant par "Le maintien..." (BM00307). Titre de départ. Affaire plaidée en 1651,
           d'après les autres pièces relatives au procès.</p>
+        <p source="Socard">58. Maintien (Le) de la Preseance de Monsieur le Duc de Vandosme, à cause
+          de la Pairie de Vandosmois, contestée par Monsieur le Duc d’Elbeuf, aussi Pair de France,
+          Sans titre. In-4° de 23 pages. Cette pièce renferme plusieurs chapitres : {° Povr la
+          Pairie de Vandosmois: » % Povr la personne; 3° Erection du Comté de Vandosmois en Duché et
+          Pairie; 4 Donation entre vifs dyv Duché de Vandosniwis; 5° Lettres-Pa- tentes de
+          verification du Don du Duchè de Vandosme ; 6° Première séance de Monsieur le Duc de
+          Vandosme au Parlement en quatlité de Puc et Pair de France; ° Exemption dv Dvché de
+          Vandosme à la réunion du Domaine; 8 Lettres-Patentes povr le rang et seance de Monsieur le
+          Duc de Vandosme, et l’arrest du Parlement d'enregistrement desdites Lettres; 9° Extrmcî
+          des Registres du Parlement (pour le même objet).</p>
       </abstract>
       <textClass>
         <keywords>
@@ -98,8 +110,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>POVR LE MAINTIEN DE LA
         <lb/>Preſeance de Monſieur le Duc de Vandoſme, à
         <lb/>cauſe de la Pairie de Vandoſmois, conteſtée par

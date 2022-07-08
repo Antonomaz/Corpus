@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2698_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2698_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,13 +43,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49231</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49231" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49231"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13556</idno>
@@ -80,8 +80,10 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">2 états p. 6 : l. 15 "simpbles" et l. 17 "apprandre" (état A) ; l. 15
+        <p source="Mazarine">2 états p. 6 : l. 15 "simpbles" et l. 17 "apprandre" (état A) ; l. 15
           "simples" et l. 17 "apprendre" (état B).</p>
+        <p source="Moreau">2698. Paris triomphant et consolé par l'heureux retour de Leurs Majestés
+          en cette ville. Paris, Jean Jullien, 1649, 7 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,8 +102,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>PARIS
         <lb/>TRIOMPHANT
         <lb/>ET CONSOLE’

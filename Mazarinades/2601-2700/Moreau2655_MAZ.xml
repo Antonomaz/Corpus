@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2655_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2655_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -38,18 +39,18 @@
             </persName>
           </publisher>
           <date source="Mazarine" when="1649">1649</date>
-          <date/>
+          <date source="Carrier" notBefore="1649-03-20" notAfter="1649-04-10">fin mars, début avril
+            1649</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49155</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49155" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49155"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13547</idno>
@@ -81,10 +82,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. Texte similaire, mais en prose, sous le titre "Le
+        <p source="Mazarine">En vers octosyllabes. Texte similaire, mais en prose, sous le titre "Le
           rameau royal, ou Le symbole de la paix, presenté a la Reyne, le jour des Rameaux"
           (BM01070). D'après Hubert Carrier, texte paru fin mars, début avril 1649 (Bibliothèque
           Mazarine, Ms 4682-4, 150v).</p>
+        <p source="Moreau">2655. Palme (la) présentée au roi et à la reine à Saint Germain-en-Laye,
+          le jour des Rameaux, pour un symbole de paix. Paris, Guillaume Sassier, 1649, 8 pages. Ce
+          pamphlet a aussi paru sous le titre de le Rameau royal, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -104,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA PALME
         <lb/>PRESENTEE AU
         <lb/>ROY ET A LA REYNE
@@ -117,7 +120,8 @@
         <lb/>ordinaire du Roy, ruë des Cordiers, proche
         <lb/> Sorbone, aux deux Tourterelles.
         <lb/>M. DC. XXXYV.
-        <lb/><imprimatur>Auec Permißion</imprimatur>.<pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Permißion</imprimatur>.<pb n="10"/>
         <pb n="11"/>
         <lb/>LA PALME
         <lb/>A D A
@@ -247,8 +251,7 @@
         <l>
           <lb/>Auſſitoſt ſe crouue chargée</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>De cette Palme, qui jamais</l>
         <l>

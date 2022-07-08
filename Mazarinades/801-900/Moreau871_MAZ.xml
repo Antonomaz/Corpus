@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau871_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau871_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -53,13 +54,12 @@
             <measure unit="page" quantity="14"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49378</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49378" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49378"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° A 11294-9</idno>
@@ -91,7 +91,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Sous forme de lettre. Au verso de la p. de titre, adresse de l'auteur
+        <p source="Mazarine">Sous forme de lettre. Au verso de la p. de titre, adresse de l'auteur
           au confesseur d'Anne d'Autriche pour la transmission du texte de la lettre à celle-ci. -
           Permission exclusive accordée par le Parlement à Cardin Besongne, Paris, 17 février 1649,
           imprimée sur 5 lignes. Autres éditions de composition différente : cahier B, p. 5 finie
@@ -112,6 +112,17 @@
           142v), puis à Jean Rousse par Hubert Carrier, "La Presse de la Fronde (1648-1653) : les
           Mazarinades", I, Paris, 1989, p. 226, note 115. Texte paru à partir du 28 février 1649
           d'après H. Carrier.</p>
+        <p source="Moreau">871. Décision de la question du temps, à la reine régente. Paris, Cardin
+          Besongne, 1649, 15 pages. e Pièce d’une éloquence grave et triste. L’auteur attaque la
+          reine par la piété, et lui déclare qu’elle offense Dieu par les excès que commettent les
+          troupes du blocus « L'honneur qu’elle me fait de m'écouter quelquefois, et de me
+          communiquer avec confiance ses actions de piété. » Est-ce sérieux ? Naudé, page 11 du
+          Mascurat, met ce pamphlet au nombre des pièces soutenues et raisonnées; Guy Patin le cite
+          parmi les meilleurs, page 190 du I" volume des lettres à Spon.‘ Il ya, de la Décision,
+          trois autres éditions, deux de Paris, jouxte la copie imprimée à Paris chez Cardin
+          Besongne, 1649, in-4° et in-12; la troisième de Rouen , chez Jacques Besongne , 1649, 14
+          pages. On peut croire aisément qu’elle n’est pas rare. La permission d’imprimer, donnée à
+          Cardin Besongne , est du 27 février.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -128,19 +139,18 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="11"/>
+      <p><pb n="11"/>
         <lb/>DECISION
         <lb/>DE LA
         <lb/>OVESTION
         <lb/>DV TEMPS
-        <lb/>A LA REYNE REGENTE.
-       <figure type="decoration"/>
+        <lb/>A LA REYNE REGENTE. <figure type="decoration"/>
         <lb/>A PARIS,
         <lb/>Chez CARDIN BESONGNE, ruë
         <lb/>d’Eſcoſſe pres S. Hilaire.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>AVEC PERMISSION</imprimatur>
+        <lb/>
+        <imprimatur>AVEC PERMISSION</imprimatur>
         <pb n="12"/>
         <lb/>Au R P. Confeſſeur de la Reyne.
         <lb/>, M Pere, dans la difſulte qu’il y a dalar¬
@@ -1054,12 +1064,13 @@
         <lb/> il 1
         <lb/> pene
         <lb/>J7H <pb n="25"/>
-        <imprimatur><lb/>PERMISSION.
-        <lb/>La Coura permis à Cardin Beſongne d’imprimer, vendre &amp;
-        <lb/>debiter le preſent Liure intitulé, D-ciſio de la Queſtion da temps,
-        <lb/>̀ la Reyne Regente. Et deffenſes à tous autres de Timprimer, ſur
-        <lb/>pPeine de confiſcation des Exemplaires contre-faits. Fait à Paris le
-        <lb/>2. Fevrier mil ſix cents quar ante neuf.</imprimatur>
+        <imprimatur>
+          <lb/>PERMISSION.
+          <lb/>La Coura permis à Cardin Beſongne d’imprimer, vendre &amp;
+          <lb/>debiter le preſent Liure intitulé, D-ciſio de la Queſtion da temps,
+          <lb/>̀ la Reyne Regente. Et deffenſes à tous autres de Timprimer, ſur
+          <lb/>pPeine de confiſcation des Exemplaires contre-faits. Fait à Paris le
+          <lb/>2. Fevrier mil ſix cents quar ante neuf.</imprimatur>
       </p>
     </body>
   </text>

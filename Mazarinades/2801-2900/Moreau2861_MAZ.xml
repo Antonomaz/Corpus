@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2861_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2861_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -51,19 +52,20 @@
           <title source="Mazarine">Les pressantes conjurations d'un tres-devot exorciste francois,
             en vertu desquelles on doit chasser ce diable de Mazarin du corps de la France.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <extent>
             <measure unit="page" quantity="30"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50244</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50244" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50244"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13581</idno>
@@ -95,8 +97,25 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Par Claude Du Bosc de Montandré, d'après Hubert Carrier, "La Presse de
+        <p source="Mazarine">Par Claude Du Bosc de Montandré, d'après Hubert Carrier, "La Presse de
           la Fronde (1648-1653) : les Mazarinades", t. 2, Genève, 1991, p. 55.</p>
+        <p source="Moreau">2861. Pressantes (les) conjurations d'un très-dévot exor ciste françois,
+          en vertu desquelles on doit chasser ce diable de Mazarin du corps de la France. 1.Conjura
+          tion faite au roi, où notre très-dévot exorciste françois lui fait voir la perte générale
+          de tous ses États, si Sa Majesté ne chasse pas tout présentement ce diable de Mazarin et
+          toute sa sequelle du corps de la France ; 2. conjuration faite à la reine, où notre
+          très-dévot exorciste françois lui fait assez sensiblement voir l'é trange précipice où
+          elle se va jetter, si elle ne chasse pas ce diable de Mazarin du corps de la France; 3.
+          con juration faite à messieurs les princes, où notre très dévot exorciste françois leur
+          fait voir qu'ils n'ont rien de plus assuré qu'une étroite détention ou qu'un exil
+          volontaire, s'ils ne chassent pas, comme ils l'ont en trepris, ce diable de Mazarin du
+          corps de la France; 4. conjuration faite à messieurs du Parlement, où notre très-dévot
+          exorciste françois leur fait voir qu'ils sont infailliblement perdus, s'ils ne font pas
+          tout leur pos sible pour chasser ce diable de Mazarin du corps de la France; 5.
+          conjuration faite à tous lés peuples, où notre très-dévot exorciste françois leur fait
+          voir qu'ils ne sont pas encore à la fin de toutes les misères qui leur doivent arriver,
+          s'ils ne vont fondre tous ensemble sur ce diable de Mazarin pour le chasser du corps de la
+          France. Sans Lieu, 1652, 30 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -119,8 +138,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES PRESSANTES
         <lb/>CONIVRATIONS
         <lb/>D’VN TRES-DEVOT

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1078_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1078_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -43,13 +44,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50274</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50274" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50274"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12800</idno>
@@ -81,7 +81,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">2 états de l'adresse : "A Paris, chez la veufve François Targa, ruë
+        <p source="Mazarine">2 états de l'adresse : "A Paris, chez la veufve François Targa, ruë
           Saint Victor au Soleil d'or. M. DC. XLIX." (état A) / Sans lieu, sans nom, "M. DC. XLIX."
           (état B). D'après Hubert Carrier, réédition parisienne de l'édition originale orléanaise
           intitulée "Dialogue d'Ingré sur les affaires du temps." (BM01374), qui a eu pour suite
@@ -89,6 +89,17 @@
           1652 sous le titre "Dialogue guépinois sur les affaires du temps qui cort, ou Entretien de
           Louet et Brase." (BM01375). D'après H. Carrier texte paru la deuxième quinzaine de janvier
           1649.</p>
+        <p source="Moreau">1078. Dialogue de deux guepeins sur les affaires du temps. (S. 1.), 1649,
+          7 pages. Le second titre est : Dialordre d’Indré sus les affaizes du temps qui cort.
+          Rencontre de deux Ingrears, Louet et Braze. « Je te confesserai ingénument, dit Naudé,
+          page 219 du Mascu- rat, qu’entre les plus agréables et ingénieux livrets que l'on ait
+          faits contre le cardinal, Pon peut mettre avec raison… le Dialogue des deux Guespins…
+          parce qu’il est fort naïf én son patois, etsou- tenu de pointes assez gaillardes et de
+          conceptions plus pressantes que celles de beaucoup d’autres, qui ne médisent pas de si
+          bonne grâce, quoiqu’avec plus de malice et à sens plus découvert. » Cette pièce est du
+          commencement du blocus. Elle a été, en 1652, ‘accommodée aux circonstances, et réimprimée
+          sous le titre de Dia- logue guépinois , etc. « L’inclination des Orléanois à la raillerie
+          et leur naturel piquant les a fait surnommer Guépins. » Ménagiana, t. 1, p. 179.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -109,8 +120,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>DIALOGVE
         <lb/>DE DEVX
         <lb/>GVEPEINS.

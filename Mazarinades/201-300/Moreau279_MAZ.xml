@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau279_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau279_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -45,13 +46,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49795</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49795" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49795"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14503</idno>
@@ -83,13 +83,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition en 7 p. publiée la même année chez Denis Langlois sous le
+        <p source="Mazarine">Autre édition en 7 p. publiée la même année chez Denis Langlois sous le
           titre "Arrest d'absolution de Me Guy Joly, conseiller du Roy au Chastelet. Avec la
           permission de continuer son information. En Parlement le 1. février 1650." (BM00892). Dans
           cette autre édition, les "conseillers à ce commis" et "conseillers commis" sont remplacés
           par "commissaires à ce commis" et "commissaires commis" sauf p. 6, l. 20-21. Signé "Le
           Tenneur". Acte daté du 1er février 1650. D'après Hubert Carrier, texte paru le 2 février
           1650 (Bibliothèque Mazarine, Ms. 4682-1, f. 134v).</p>
+        <p source="Moreau">279. Arrêt de la cour de parlement donné en faveur de Monsieur Joly.
+          Paris, Jean Brunet, 1650, 4 pages. Daté du 1 février 1650.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT.

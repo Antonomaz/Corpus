@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3985_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3985_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,7 +37,9 @@
           <title source="Mazarine">La verité dans sa naïveté, ou Discours veritable sur la vie du
             prince de Condé : avec ses justes plaintes au Parlement.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" notBefore="1650-05-15" notAfter="1650-05-31">seconde quinzaine de
             mai 1650</date>
@@ -44,13 +47,12 @@
             <measure unit="page" quantity="20"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49044</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49044" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49044"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12392</idno>
@@ -82,10 +84,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Faux discours du price de Condé. D'après Célestin Moreau, édition
+        <p source="Mazarine">Faux discours du price de Condé. D'après Célestin Moreau, édition
           portant la date de 1650, mais aucun exemplaire repéré. Signé "Louys de Bourbon Prince de
           Condé.". D'après Hubert Carrier, texte paru dans la seconde quinzaine de mai 1650
           (Bibliothèque Mazarine Ms 4682-5, f. 388v-389).</p>
+        <p source="Moreau">3985. Vérité (la) dans sa naïveté, ou Discours véritable sur la vie du
+          prince de Condé, avec ses justes plaintes au Parlement. (S. 1.), 1650 , 20 pages. Mazarin
+          y est appelé le fils du fermier et de la bâtarde du moine Buffalin. C'est tout ce qu'on
+          peut prendre dans ce détestable pamphlet.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,8 +109,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA
         <lb/>VERITE
         <lb/>DANS SA

@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1368_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1368_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -39,18 +40,18 @@
             </persName>
           </publisher>
           <date source="Mazarine" when="1649">1649</date>
-          <date source="Carrier" notBefore="1649-01-21" notAfter="1649-01-22">le 21 ou le 22 janvier 1649</date>
+          <date source="Carrier" notBefore="1649-01-21" notAfter="1649-01-22">le 21 ou le 22 janvier
+            1649</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48909</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48909" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48909"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">4° 17608-5/14</idno>
@@ -82,7 +83,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions : même adresse, composition typographique différente
+        <p source="Mazarine">Autres éditions : même adresse, composition typographique différente
           (BM00054) ; Paris, chez Arnoul Cotinet, 1649 (BM00055) ; sans adresse ni date, composition
           typographique différente, avec ou sans lettre ornée (BM00057et BM00058) ; dans un recueil
           éditorial intitulé "Recueil de diverses pieces. Qui ont paru durant les mouvemens derniers
@@ -90,6 +91,17 @@
           de janvier ou au début de février 1649 et paru le 21 ou le 22 janvier 1649 selon Hubert
           Carrier d'après la place de l'exemplaire Bibliothèque Mazarine 4° A 13969-35 dans un
           recueil classé chronologiquement (Ms 4682-2, f. 346v-347).</p>
+        <p source="Moreau">1368. Factum servant au procès criminel fait au cardi- nal Mazarin,
+          touchant ses intelligences avec les étran- gers ennemis de l'État. Paris, veuve J.
+          Guillemot, 1649, 8 pages. Naudé revient quatre fois sur ce pamphlet dans le Mascurat, p.
+          11, 199 et 208 , pour le présenter comme un modèle des meil- leures pièces, et p. 459,
+          pour le réfnter ex professo. Malheureuse- ment pour les amateurs, le Factum est assez
+          commun. C’est, avec la première Lettre du chevalier George et la Lettre d’un religieux au
+          prince de Condé, la pièce à laquelle Naudé s’at- tache le plus, parce que, dit-il, la
+          plupart des circonstances cotées par ces trois auteurs, quoique absolument fausses, sont
+          néanmoins si bien colorées, que ceux qui ne sont pas informés de la vérité, les peuvent
+          plus facilement croire que toutes les niaiseries et sot- tises de tant d’autres
+          auteurs.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,8 +119,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>FACTVM
         <lb/>SERVANT AV PROCEZ CRIMINEL
         <lb/>FAIT AV CARDINAL MAZARIN,

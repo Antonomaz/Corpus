@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1950_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1950_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -43,26 +39,23 @@
               <surname>Bourbon-Condé (De)</surname>
             </persName>
           </author>
-          <persName role="received" ref="isni:0000000383255772">
-            <forename>Louis</forename>
-            <surname>Bourbon (De)</surname>
-            <name>Louis XIV</name>
-          </persName>
+          <persName role="received" ref="isni:0000000383255772">Louis XIV</persName>
           <title source="Moreau">Lettre de madame la duchesse de Longueville au roi.</title>
           <pubPlace ref="geonames:2747891" source="Moreau">Rotterdam</pubPlace>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 310464</idno>
@@ -94,7 +87,10 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1950. Lettre de madame la duchesse de Longueville au roi. Rotterdam,
+          1650, 8 pages. Datée de Rotterdam, le 28 février. Il y en a une édition de Paris, jouxte
+          la copie, etc. Voir la Copie d'une lettre écrite à madame la duchesse de Longue ville.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,6 +99,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -118,22 +117,19 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/> LETTRE
         <lb/>MADAME LA DVCHESSE
         <lb/>LONGVEVILLE
         <lb/>RO
-        <lb/> C
-        <pb n="2"/>
+        <lb/> C <pb n="2"/>
         <lb/>e¬4
         <lb/>
         <lb rend="¬" break="no"/>i..
         <lb/>e
         <lb/>
         <lb/> n
-        <lb/> as aa.
-        <pb n="3"/>
+        <lb/> as aa. <pb n="3"/>
         <lb/>T
         <lb rend="¬" break="no"/>L E
         <lb/>MADAME
@@ -162,8 +158,7 @@
         <lb rend="¬" break="no"/>ie, ae voulnat encor faire paſſer ma retraite pour vne
         <lb/>etion vollontaire. C’eſt pourquoy, SIRE ie ſupplie
         <lb/>Voſtre Maieſté d’auoir agreable que ie l’informe de la
-        <lb/>etite, &amp; que par vne relation ſincere de ma conduite,
-        <pb n="4"/>
+        <lb/>etite, &amp; que par vne relation ſincere de ma conduite, <pb n="4"/>
         <lb/> ,
         <lb/>4
         <lb/>ie luy faſſe cognoiſtre que ce n’a eſteé qu’a toute extr
@@ -196,8 +191,7 @@
         <lb/>venuë pour y rencontrer ma ſeureté́, n’ayant pas d’eu
         <lb/>choiſir vn autre lieu que celuy doe Monſieur mon
         <lb/>mary auoit le gouuzrnement, &amp; ou la plus part de ſer
-        <lb/>hiens
-        <pb n="5"/>
+        <lb/>hiens <pb n="5"/>
         <lb/>5
         <lb/>biens eftoient ſcitueés, ie les coniuray en ſuite de depu
         <lb rend="¬" break="no"/>ter vers voſtte Maieſté pour l’informer de ma reſolu
@@ -229,8 +223,7 @@
         <lb/>fait de me prendre ou de me chaſſer, &amp; qui ſç̧auoit bien
         <lb/>d’ailleurs, que par les ordtes que i’auois donnés, il ne
         <lb/>trouuerroit aucune reſiſtace dãis la Prouince, preferant
-        <lb/>B..
-        <pb n="6"/>
+        <lb/>B.. <pb n="6"/>
         <lb/> 6
         <lb/>aà toutes conſiderations celle de ſatisfire ſavanité, &amp;a
         <lb/>haine, quoy que mes acCtions ne luy d’onnaſſent aucun
@@ -262,8 +255,7 @@
         <lb/>me d’effendre, ie d’onnay ordre par touque l’on obeit,
         <lb/>&amp; ie d’eſpechay derechef à la Reyne, pour luy cõfitmet
         <lb/>les aſſeuranees de ma fidelitd. Ce fut lors que l C.M.
-        <lb/>panſat me ſurprendre, m’enuoiavne lettre de Cachet
-        <pb n="7"/>
+        <lb/>panſat me ſurprendre, m’enuoiavne lettre de Cachet <pb n="7"/>
         <lb/>qui me cõmandoir d’ller aà̀ Coulomniers, ou à Trye; car
         <lb/>ayant iu geé́ que ie n’obeyrois pas, &amp; croyant qu’il auroit
         <lb/>leu de me pouſſer auec ſuſtice; comme il ſçeuſt par ma
@@ -295,8 +287,7 @@
         <lb/>vn vaiſſeau Hollandois quis’en retournoit, ie m’embar
         <lb rend="¬" break="no"/>quay deſſus en vne rade pendant la nuit par vn temps s’y
         <lb rend="¬" break="no"/>ude, qu’il eſtoit aiſé́ de cognoiſtre qu’il falloit que le pe
-        <lb rend="¬" break="no"/>8
-        <pb n="8"/>
+        <lb rend="¬" break="no"/>8 <pb n="8"/>
         <lb/>3
         <lb/>Hil que ie voulois euirer fut bien grand, puis qu’il m’e
         <lb rend="¬" break="no"/>faiſoit meſpriſer vn exteme. C’a eſté par cette voye,

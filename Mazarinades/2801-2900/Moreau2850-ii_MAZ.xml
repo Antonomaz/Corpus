@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2850-ii_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2850-ii_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,7 +32,9 @@
           <title source="Mazarine">Le second Mercure de Compiegne, depuis le sixiesme juin jusques
             au dix-neuf. En vers burlesques.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-06-21" notAfter="1649-06-30">dernière semaine de
             juin 1649</date>
@@ -39,13 +42,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50310</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50310" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50310"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10535-2</idno>
@@ -77,10 +79,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. Évoque la révolte du chef cosaque Hmelʹnicʹkij
+        <p source="Mazarine">En vers octosyllabes. Évoque la révolte du chef cosaque Hmelʹnicʹkij
           contre la Pologne depuis 1648. 2 états (A/B) : p. 3, l. 6 "Enfer"/"Enfer,". D'après Hubert
           Carrier, texte paru dans la dernière semaine de juin 1649 (Bibliothèque Mazarine, Ms.
           4682-4, f. 237r).</p>
+        <p source="Moreau">2850. Premier (le) mercure de Compiègne, depuis l'ar rivée du roi en
+          cette ville jusques au jeudi 10 du mois de juin 1649, en vers burlesques.Sans Lieu, 1649.
+          Trois numéros de 11 et 12 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +107,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LE SECOND
         <lb/>MERCVRE
         <lb/>DE
@@ -275,8 +279,7 @@
         <l>
           <lb/> Nous</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <pb n="13"/>
         <l>
           <lb/> 5</l>
@@ -380,8 +383,7 @@
         <l>
           <lb/>Eſlont renſdus dompeſlique lel;</l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>De ſes entretiens magnifiques,</l>
         <l>

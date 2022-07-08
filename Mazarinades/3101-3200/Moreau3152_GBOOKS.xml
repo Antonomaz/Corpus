@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3152_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3152_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -51,12 +47,12 @@
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Munich</settlement>
+            <settlement ref="geonames:2867714">Munich</settlement>
             <institution>Bibliothèque de l'Etat de Bavière</institution>
             <repository>BSB / Außenmagazin</repository>
             <idno type="cote">Gall.g. 1017 g</idno>
@@ -88,7 +84,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">3152. Relation des avantages remportés par l'armée de monseigneur le
+          Prince sur les troupes de monsieur le comte d'Harcourt. Bordeaux, Guillaume de La Court,
+          1651 , 8 pages. Rare. Il suffira de dire que de La Court était l'imprimeur privilégié de
+          monsieur le Prince.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,6 +97,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -112,16 +116,14 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>RELA TION
         <lb/>DES AVANTAGES
         <lb/>DE MONSEICNEVR
         <lb/>LE PRINCE
         <lb/>Sur les Trouppes de Monſieur
         <lb/>le Comte d’Harcourt.
-        <lb/>eu ſoudu or fore n.
-        <pb n="2"/>
+        <lb/>eu ſoudu or fore n. <pb n="2"/>
         <lb/>
         <lb/>1
         <lb/>
@@ -132,8 +134,7 @@
         <lb/>
         <lb/>
         <lb/>1
-        <lb/>1
-        <pb n="3"/>
+        <lb/>1 <pb n="3"/>
         <lb/>8
         <lb/>AAe a,A .
         <lb/>peeepMd: &amp;t&amp;piu
@@ -158,8 +159,7 @@
         <lb/>L’autre conſideration qui m’oblige à eſcri
         <lb rend="¬" break="no"/>te, c’eſt pour contenter la curioſité raiſonna
         <lb rend="¬" break="no"/>ble des peuples, qui attendent auec imparien
-        <lb rend="¬" break="no"/>Se que cette Prouince où ſe paſſent les plus
-        <pb n="4"/>
+        <lb rend="¬" break="no"/>Se que cette Prouince où ſe paſſent les plus <pb n="4"/>
         <lb/>importantes affaires de la France, en donne
         <lb/>elle meſne les Relations, auant que des plu
         <lb rend="¬" break="no"/>mes intereſſé́es ſe ſeruent de leur éloi gnement
@@ -194,8 +194,7 @@
         <lb/>1
         <lb/>l
         <lb/>1
-        <lb/>1i
-        <pb n="5"/>
+        <lb/>1i <pb n="5"/>
         <lb/>l
         <lb/>rendië nonps à a vertu des aſfiegeans, mais
         <lb/>pa la tahiſon des Soldats qu’on auoit mis
@@ -223,8 +222,7 @@
         <lb/>laiſer entre-deax vne grande pleine ibre, où̀
         <lb/>ispouuoient paſſer aiſement.
         <lb/>Cependant apres que Son Alteſſeeut ran
-        <lb rend="¬" break="no"/>B
-        <pb n="6"/>
+        <lb rend="¬" break="no"/>B <pb n="6"/>
         <lb/>6
         <lb/>gé ſon Armeé́e en bataille, elle enuioya Mon
         <lb rend="¬" break="no"/>ſieur de Balthaſar auec vne par tie de ſes trou
@@ -256,8 +254,7 @@
         <lb/>1
         <lb/>1
         <lb/>1i
-        <lb/>1
-        <pb n="7"/>
+        <lb/>1 <pb n="7"/>
         <lb/>1.
         <lb/>7
         <lb/>Tarente ſortant de Taillebourg ouù il eſtoit
@@ -285,8 +282,7 @@
         <lb/>plus long-temps la ioye que tous les bons
         <lb/>François, &amp; particuſierement les habitans de
         <lb/>Bordeaux receuront de ces Vitoires.
-        <lb/>Cependant pour ſoulager leur attente, ie
-        <pb n="8"/>
+        <lb/>Cependant pour ſoulager leur attente, ie <pb n="8"/>
         <lb/> 8
         <lb/>leur feray part d’vne nouuselle bien confide
         <lb rend="¬" break="no"/>rable qui vient d’arriuer de Stenay. C’eſt que

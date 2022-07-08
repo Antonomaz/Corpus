@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau83_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau83_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,7 +49,9 @@
             du Vray-semblable sont ensuite combatuës l'une apres l'autre, par des evidences qui
             justifient tous les bruits qui ont couru contre le cardinal de Rets.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-08-24" notAfter="1652-08-31">dernière semaine
             d'août</date>
@@ -56,13 +59,12 @@
             <measure unit="page" quantity="32"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49570</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49570" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49570"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14977-1</idno>
@@ -94,10 +96,32 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Publié en réponse à "Le vray-semblable sur la conduite de monseigneur
+        <p source="Mazarine">Publié en réponse à "Le vray-semblable sur la conduite de monseigneur
           le cardinal de Retz", paru en 1652 (BM00739). Par Claude Du Bosc de Montandré, d'après
           Célestin Moreau. D'après Hubert Carrier, texte paru la dernière semaine d'août
           (Bibliothèque Mazarine, Ms. 4682-1, f. 56v).</p>
+        <p source="Moreau">83. Anatomie (l’) de la politique du coadjuteur faite par le
+          vraisemblable sur la conduite du cardinal de Retz, où l’auteur donne à connaître : 1° que
+          le cardinal n’est innocent que parce qu'il soutient que ses crimes sont plus cachés que
+          ceux des autres; 2° que ce prélat n’est religicux ue parce qu’il a l’adresse de se
+          déguiser sous le voile de l’hypocrisie; 3° que sa conduite est pharisienne, c’est-à-dire
+          apparemment innocente, en effet coupable. Les vraisemblances du vraisemblable sont ensuite
+          combattues l’une après l’autre par des évidences que justifient tous les bruits qui ont
+          couru contre le cardinal de Retz. (S. l. n. d.), 32 pages. Bonne réponse au Vraisemblable
+          sur la conduite de monseigneur le cardinal de Retz. Cette pièce est de Dubose Montandré.
+          Elle appartient à la polémique engagée entre le prince de Condé et le coadjuteur pendant
+          la retraite à laquelle celui-ci crut devoir se condamner après sa promotion au cardinalat.
+          En voici un passage très-curieux : « Faut-il connaître tous les déguisements que ce
+          cardinal a pris pour se rendre méconnaissable lorsqu’il intriguait avec ceux de sa
+          faction, tantôt avec de grandes moustaches noires à l'espagnole , appliquées adroitement
+          sur ses joues, avec des manteaux d’écarlate et des grègues rouges de même couleur; tantôt
+          à la cavalière avec de grands buffles, avec des caudebecs furieusement retroussés à la
+          mauvaise , et de petites brettes traînantes, soutenues de ces beaux baudriers de quinze ou
+          vingt pistoles qui lui couvraient presque tout le corps ?…. Faut-il qu’on ait tenu compte
+          de toutes les maisons bourgeoises que le cardinal de Retz a honorées de ses visites pour
+          haranguer les pères de famille et les engager au parti qu’il brassait au préjudice de
+          notre repos? Faut-il qu'on n’ait pas ignoré un seul festin de tous ceux qu’il a fait faire
+          pour y traiter , de sa part , les bons bourgeois qu’il voulait gagner? »</p>
       </abstract>
       <textClass>
         <keywords>
@@ -115,8 +139,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L'ANATOMIE
         <lb/>DE LA POLITIQVE DV
         <lb/>COADIVTEVR
@@ -134,7 +157,8 @@
         <lb/>Les Vray-ſemblances du Vray-ſemblable ſont en ſui¬
         <lb/>re combatües l’vne apres l’autre, par des euidences
         <lb/>qui iustifient tous les bruis qui ont couru contre
-        <lb/>le Cardinal de Rets. <pb n="10"/><pb n="11"/>
+        <lb/>le Cardinal de Rets. <pb n="10"/>
+        <pb n="11"/>
         <lb/>L’anatomie de la Politique du Co¬
         <lb/>adiuteur faicte par le Vray-ſem¬
         <lb/>blable ſur la conduitte du Cardi¬

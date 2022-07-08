@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2958_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2958_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -27,24 +28,26 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14773"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">La raillerie sans fiel ou L'innocent jeu d'esprit. En vers
             burlesques.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
-          <date source="Carrier" notBefore="1649-05-15" notAfter="1649-05-31"/>
+          <date source="Carrier" notBefore="1649-05-15" notAfter="1649-05-31">deuxième quinzaine de
+            mai 1649</date>
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49941</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49941" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49941"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12070</idno>
@@ -76,9 +79,18 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. - À propos de l'emprisonnement de l'imprimeur
+        <p source="Mazarine">En vers octosyllabes. - À propos de l'emprisonnement de l'imprimeur
           Jean de La Caille. D'après Hubert Carrier, texte paru dans la deuxième quinzaine de mai
           1649 (Bibliothèque Mazarine, Ms. 4682-5, f. 1v).</p>
+        <p source="Moreau">2958. Raillerie (la) sans fiel, ou l'Innocent jeu d'esprit, en vers
+          burlesques. Paris, 649, 7 pages. « Soyons sages par exemple. Voyons La Caille ou bien
+          Monet, Dont le premier fut mis tout net Dedans une affreuse demeure , Où la nuit se trouve
+          à toute heure. Même sort seroit pour rimeur Que fut celui de l'imprimeur. » La Caille
+          était un des imprimeurs ordinaires du roi. J'ai vu de pièces sorties de ses presses. Je
+          n'en ai point vu de Monet. « On sait que je n'ai fait encore Pas un vers qu'on puisse
+          blâmer, Depuis que l'on m'a vu rimer. Et c'est ce qui fait que j'expose Dedans mes vers et
+          dans ma prose Avecque tant de liberté Le nom que mon père a porté. » Ce nom n'est pourtant
+          pas dans la Raillerie sans fiel.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -96,8 +108,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="8"/>
+      <p><pb n="8"/>
         <lb/>LA
         <lb/>RAILLERIE
         <lb/>SANS FIEL
@@ -106,8 +117,7 @@
         <lb/>IEV D'ESPRIT.
         <lb/>EN VERS BVRLESQVES. <figure type="decoration"/>
         <lb/>A PARIS,
-        <lb/>M. DC. XLIX. <pb n="9"/>
-        <pb n="10"/>
+        <lb/>M. DC. XLIX. <pb n="9"/><pb n="10"/>
         <lb/>LA
         <lb/>RAILLERIE
         <lb/>SANS FIEL

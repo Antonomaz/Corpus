@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau4026_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau4026_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -44,13 +45,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48913</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48913" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48913"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12401</idno>
@@ -82,11 +82,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers (sizains d'octosyllabes). Deux états de la première p. : le
+        <p source="Mazarine">En vers (sizains d'octosyllabes). Deux états de la première p. : le
           premier t de "peut-estre" décalé sous la ligne (état A) ou correctement imprimé (état B).
           Titre de départ. - A la fin, six vers avec pour titre le "Tombeau de la maltaute &amp; des
           partisans", signé "L. C. Artillerie". Texte paru durant le blocus de !paris d'après Hubert
           Carrier (Bibliothèque Mazarine, Ms 4682-5, f. 402v).</p>
+        <p source="Moreau">4026. Vie (la) infâme de la Maltaute (sic) , dédiée aux curieux par les
+          peuples de Paris. Paris, François Musnier, 1649, 8 pages. hfe F 1 g fo) La pièce se
+          termine par le Tombeau de la Maltaute et des par- titans, signé L. G. artillerie.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -103,8 +106,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>I
         <lb/>LA VIE INFAME
         <lb/>DE LA
@@ -183,8 +185,7 @@
         <l>
           <lb/>En eſl uant touſiours leut vol </l>
         <l>
-          <lb/>
-        </l>
+          <lb/></l>
         <l>
           <lb/>Par les aduis remplis de dol,’’</l>
         <l>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau1160_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1160_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -42,17 +38,19 @@
           <title source="Moreau">Diverses pièces de ce qui s'est passé à Saint-Germain-en-Laye, le
             23 janvier 1649 et suivants.</title>
           <pubPlace source="Moreau">Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
           <extent>
             <measure unit="page" quantity="20"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement/>
+            <settlement ref="geonames:2867714">Munich</settlement>
             <institution>Bibliothèque de l'État de Bavière</institution>
             <repository/>
             <idno type="cote"/>
@@ -84,7 +82,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1160. Diverses pièces de ce qui s'est passé à Saint-Ger- main-en-Laye ,
+          le 23 janvier 1649 et suivants. (S. 1., 1649), 20 pages. La première pièce est la
+          déclaration du roi contre les princes, ducs et seigneurs parlementaires. La seconde
+          intitulée : Swite de ce qui s’est passé à Saint-Germain- en-Laye, est la pièce, sans titre
+          ni date, qui commenee par ces mots : « Le roy veut que le Parlement sorte de Paris, etc. »
+          Comme elle avait été publiée dans l’intérét et par l’ordre de la cour, l’éditeur parisien,
+          qui voulait se mettre en règle avec la justice de la Fronde, y a ajouté cette seule ligne
+          : « Par cet écrit, lon peut juger des intentions qu’ont les ennemis du Parlement. » Voir
+          Pièce sans titre ni date, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -93,6 +100,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -108,15 +119,13 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>DIVERSES PIECES
         <lb/>CE QVI SEST PASSE
         <lb/>A S GERMAIN
         <lb/>EN LAYE,
         <lb/>Le vingt-troiſiéme lanvier 16 49.
-        <lb/> &amp; ſuiuans.
-        <pb n="2"/>
+        <lb/> &amp; ſuiuans. <pb n="2"/>
         <pb n="3"/>
         <lb/>. 3,
         <lb/>DECLA RATION DV ROYT,
@@ -150,8 +159,7 @@
         <lb/>ſare des leudes, &amp; des lmpoſitions de deniers ſur les Habi
         <lb rend="¬" break="no"/>ans de noſtre bonneville de Paris, qu’ils cõ̃raignent depuis
         <lb rend="¬" break="no"/>pa force &amp; violence, mais ils font des deffencesà nos S
-        <lb rend="¬" break="no"/>A ij
-        <pb n="4"/>
+        <lb rend="¬" break="no"/>A ij <pb n="4"/>
         <lb/>Jets depayer la Taiſle, &amp; les doits de os Fermes à ioſdits
         <lb/>Receueurs, de les porter es noſtre épargne, leur ordonnunt
         <lb/>de les faire inceſſamet-oicbarer en l’Hoſtel de noare
@@ -189,8 +197,7 @@
         <lb/>ſeruir, nous voulonms dire le Pice de- Coety, ui auoſe
         <lb/>grand ſujat de demedree reuny à ha Maiſon Royalle par l’e
         <lb/>emplede noſte eres cher &amp; cres-amé́Coafi le riaee de..
-        <lb/>Condé́
-        <pb n="5"/>
+        <lb/>Condé́ <pb n="5"/>
         <lb/>Codé ſon Frere, qai coalaa de joar enjour de faire pa
         <lb rend="¬" break="no"/>roiſtre par ſes fignaleés ſeruices, le eele qu’lla pour la gran
         <lb rend="¬" break="no"/>deur de aoſtre Couronase, &amp; qa’il eraploye auee tant eg
@@ -226,8 +233,7 @@
         <lb/>de nouuelles Conqueſtes, ſoi deſtruit par la rebellion, &amp;
         <lb/>que l’on arrache à la France ſes Couronnes de gloire, qui
         <lb/>ont eſté ſi heureusſemen formées par la valeur; que toutes
-        <lb/>les Villes qu’la conquiſes, retombent auec injuſtice ſous
-        <pb n="6"/>
+        <lb/>les Villes qu’la conquiſes, retombent auec injuſtice ſous <pb n="6"/>
         <lb/>1
         <lb rend="¬" break="no"/>la’domination des vſurpareurs: Ce ſont les genereuſes pen
         <lb/>ées de ce grand Prince, Fils de Henry le Grand, noſtre
@@ -264,8 +270,7 @@
         <lb/>ordinaires, de nous affoiblit par nos duiſions; Iuſques icy,
         <lb/>leurs deſſeins aaoient tourneé à leur confuſion, mais enfin
         <lb/>l’infidelité de quelqnes vns de nos Subjets leur ont ouuere
-        <lb/> tte, &amp; nous sõmes ſur le point de les voir entrer ea po¬
-        <pb n="7"/>
+        <lb/> tte, &amp; nous sõmes ſur le point de les voir entrer ea po¬ <pb n="7"/>
         <lb/>tre Eſtat, pour y exereer toutes les violéces qae la paſfari
         <lb/>d’vn ennemy irrité peur conceuoir, pefidãr que nos armeées
         <lb/>sõt occopé́es pour Nous oppoſer à̀ la faction qui ſ’eſt ſoûle
@@ -302,8 +307,7 @@
         <lb rend="¬" break="no"/>Oroons, que leurs biens demeurent à nous aquis
         <lb/>&amp; cõfiſquez, &amp; reünis à noſtre Couronne, ſit dans trois lours,
         <lb/> du iour &amp; datte des preſentes, ils ne ſe rendent preés de
-        <lb/> ij
-        <pb n="8"/>
+        <lb/> ij <pb n="8"/>
         <lb/>Nous, poury rédre ſeruice &amp; la fidelité qu’ils nous doiuent.
         <lb/>Faiſant eepeodant tres. expreſſes inhibitions &amp; deffences à
         <lb/>rous nos Officiers, Maires, &amp; Eſcheuns de nos Villes &amp; nos
@@ -328,8 +332,7 @@
         <lb/>queüe de cire jaune.
         <lb/>Collationneé à l’Original par moy Conſeiller
         <lb/>Secreraire du Roy &amp; de ſes Finances.
-        <lb/>Suire.
-        <pb n="9"/>
+        <lb/>Suire. <pb n="9"/>
         <lb/>Suite de ce qui s’eſt paſſé́à S. CGermain en Laaye.
         <lb/>E Roy veut que le Parlement ſorte de Paris, par
         <lb rend="¬" break="no"/>ce qu’il ne croid pas y pouvoir eſtreen ſeurete,
@@ -363,8 +366,7 @@
         <lb rend="¬" break="no"/> rene pou qelqu uemps, juſques à ce que leur ſejour y ſoit
         <lb/> copatible avec celuy du Roy.
         <lb/>Le Parlement reconnoiſſant cõ̃bien il ſe rendroit odieux,
-        <lb/>s’il seuggeoit ourerrerér dans vne çonteſtation ſi etra¬
-        <pb n="10"/>
+        <lb/>s’il seuggeoit ourerrerér dans vne çonteſtation ſi etra¬ <pb n="10"/>
         <lb/>vgante, vous a donné́ le change (mes chers Pariſiens)&amp; a
         <lb/>mis en jeu le Cardnal, dont il n’eſtoit nullement queſtion,
         <lb/> voss faiſant à croire que c’eſt luy qui vous affame, &amp; que
@@ -401,8 +403,7 @@
         <lb/>il e ſt inunle &amp; meſme ridcule de luy donner congé. &amp; à
         <lb/>plus forte raſon, ſi ce Maiſtre là eſt auſſi bien le noſtre que
         <lb/>le ſien.
-        <lb/> Le Parlement n’enſeigne pas fort l’obeſſance. Peut-il
-        <pb n="11"/>
+        <lb/> Le Parlement n’enſeigne pas fort l’obeſſance. Peut-il <pb n="11"/>
         <lb/>1
         <lb/>trouuer à dire que le Cardinal n’execute ças ſes ordres, ſi
         <lb/>luy me!me meé́priſe ceux de ſon Maiſtr?
@@ -440,8 +441,7 @@
         <lb/>ſortie, nous ſetõheureuxdes qu’il aa l.: nous aur õs
         <lb/>l’abondance de toures choles, &amp; n’entena ns pius parlet
         <lb/>de gens de gnerre, ny dans ’aris, nv aux e.varons: cepen
-        <lb rend="¬" break="no"/>dant il veu que nous loufſrions, l anue meux que uous
-        <pb n="12"/>
+        <lb rend="¬" break="no"/>dant il veu que nous loufſrions, l anue meux que uous <pb n="12"/>
         <lb/>ſoyons envelopez dans ſon chaſtinent, nous qui n’avons
         <lb/>eu aueune part à ſes fautes paſſées, eſt-ce là avoir eu paſ
         <lb rend="¬" break="no"/>ſion pour noſtre bien?
@@ -479,8 +479,7 @@
         <lb rend="¬" break="no"/>ecane qui puiſſe egaler celle d’artaquer vnR oymineur, lors
         <lb/>qu’ia ſur. les bras d’autres Enoemis tres-conſiderables,
         <lb/>ouloir abatre fon authaoriteé, diuiſer l’Eſtat, &amp; donner lieu
-        <lb/>par
-        <pb n="13"/>
+        <lb/>par <pb n="13"/>
         <lb/>par ee moyen aux Eſpagnols de reprendre en peu de temps, &amp;
         <lb/>auec faciliré, ce qui a couſte la vie à tant de braues gens, &amp;
         <lb/>épuiſé la plus pure ſubſtance des peuples.
@@ -521,8 +520,7 @@
         <lb rend="¬" break="no"/>conſiderable? Et ceét argent la eſt employé à faire la guerre à
         <lb/>noſtre Souverain, &amp; l’autre l’eſtoit à abattre la puiſſa nce des
         <lb/>D
-        <lb/>Ennemis de cét Eſtae.
-        <pb n="14"/>
+        <lb/>Ennemis de cét Eſtae. <pb n="14"/>
         <lb/>14
         <lb/>On nous forge chaque jour cent impertinences &amp; cent chi
         <lb rend="¬" break="no"/>meres, pour nous obliger à ſouffrir nos maux ſans nous plain
@@ -561,8 +559,7 @@
         <lb/>forces des quarters avancez, que toute noſtre milice &amp; tren te
         <lb/>fois autant n’oſerot affronter.
         <lb/>Que le Roy ne ft pont eſtar de partir de là que pour re
-        <lb rend="¬" break="no"/>trer aà Paris, ou de voſtre bon gré, ou par force.
-        <pb n="15"/>
+        <lb rend="¬" break="no"/>trer aà Paris, ou de voſtre bon gré, ou par force. <pb n="15"/>
         <lb/>Que le Due d’Orles ayme trop l’Eſtar, &amp; a trop d’intereſt au
         <lb/>ſouſten de l’aurhorité́ Royale, pour prendre jamais le party de
         <lb/>ceux qui la veulent abattre, &amp; que d’ailleurs il ſent trop ſon
@@ -600,8 +597,7 @@
         <lb/>fautr pas s’en eſtonner, veu que les butins qu’ls font dans les
         <lb/>cõvois qu’ls dé́trouſſent à̀ cha que momenr,. ſont des charmes
         <lb/>bien plus puſſans pour attirer &amp; arreſter la ſoldareſque, que le
-        <lb/>peu d’argent qu’on luy donne icy au jour la journée.
-        <pb n="16"/>
+        <lb/>peu d’argent qu’on luy donne icy au jour la journée. <pb n="16"/>
         <lb/>I’ay remarqueé en outre, que vray-ſemblablement le Roy ne
         <lb/>manquera pas d’argent. l’en ay veu arriver eſtant à la Cour
         <lb/>des voictures conſiderables, qu’on dſoit eſtre ſuivies d’autres
@@ -642,8 +638,7 @@
         <lb/>Nous voyons que cette armé́e là eſt neceſſairemẽt ſeparée en
         <lb/>divers quartiers fort eſloignez les vns des autres, &amp; cependant
         <lb/>ils ne ſont pas ſeulement tous en entiere ſeureté; mais nous ne
-        <lb/>ſcaurions
-        <pb n="17"/>
+        <lb/>ſcaurions <pb n="17"/>
         <lb/>ſçaurions faire ſortir toute hoſtre cavalerie de Paris, qu’on ne luy
         <lb/>coure ſus auſſi-toſt, &amp; qu’on ne l’oblige aà la retraite, ou d la fuite.
         <lb/>Chacun de leurs Quartiers eſt toûjours preſt à̀ combattretou
@@ -685,8 +680,7 @@
         <lb rend="¬" break="no"/>lenent &amp; contre leur greé́.
         <lb/>Pour la jonction des Parlemens, nous laiſſerons- nous toujours
         <lb/>ſut prendre à cer artifice groſſier dont on nous bufle, lors qu’on
-        <lb/>fait aller au Palais &amp; à la Maiſon de Ville, des perlonnes apoſteées,
-        <pb n="18"/>
+        <lb/>fait aller au Palais &amp; à la Maiſon de Ville, des perlonnes apoſteées, <pb n="18"/>
         <lb/>comme s’ils eſtoient deputez des autres Parlemens, &amp; ayans
         <lb/>charge d’eux de pourſuivre l’Vnion avec celuy de Paris. On les
         <lb/>appelle en preſence de beaucoup de monde: On leur fait degoi
@@ -729,8 +723,7 @@
         <lb rend="¬" break="no"/>dant le Parlement a envoyé vnCourrier expres au Roy pour l’aſ
         <lb rend="¬" break="no"/>ſeurer de ſon enere obeſſance.
         <lb/>Le Parlement de Thoulouze a fait dire &amp; eſcrit au Roy, qu’il
-        <lb/>maintiendrois tout le Languedoc dans vn plein calme, &amp; qu’il
-        <pb n="19"/>
+        <lb/>maintiendrois tout le Languedoc dans vn plein calme, &amp; qu’il <pb n="19"/>
         <lb/>donneroit en cette oceurence des preuves d’vne fideliré inviola
         <lb rend="¬" break="no"/>ble.
         <lb/>Il n’y a eu que Roüen ſeul, que les cabales du D uc de Lon.
@@ -770,8 +763,7 @@
         <lb/>qu’ila enuoyées à eux &amp; à nous. Serons nous ſi aueuglez que de
         <lb/>reſiſter encore ̀ tant de graces?Et ne faut-il pas eroire que noſtre
         <lb/>ruine eſt reſoluë dans le Cel ſi nous reſiſtons plus long- temps à..
-        <lb/>la voix qui nous appelle.
-        <pb n="20"/>
+        <lb/>la voix qui nous appelle. <pb n="20"/>
         <lb/>Ie m’aſſure que plus des deux tiers d’entre nous ont horreur de
         <lb/>noſtre rebellion, &amp; des cruautez qu’on nous contraint d’ercer
         <lb/>cõtre nous meſme, Qui eſt celuy qui ſe peut vanter d’a voir quel.

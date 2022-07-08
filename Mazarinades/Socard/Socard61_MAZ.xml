@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Socard61_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Socard61_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -52,13 +53,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49139</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49139" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49139"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13535</idno>
@@ -90,9 +90,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Lettre datée de Donchery le 16 octobre 1650. Texte paru le 21 octobre
+        <p source="Mazarine">Lettre datée de Donchery le 16 octobre 1650. Texte paru le 21 octobre
           1650 d'après Hubert Carrier (Bibliothèque Mazarine, Ms. 4682-4, f. 98v). Titre de départ.
           Lettre signée "S. Sauflieu".</p>
+        <p source="Socard">61. Novvelle (La) extraordinaire d’vn grand secours jetté dans Mouzon,
+          auec la defaite des Ennemis, et la reprise des dehors que les assiégés auoient perdu. Par
+          le Marquis de Villequier, Lieutenant General des Armées du Roy. Envoyée à Monseignevr le
+          Mareschal de l’Hos- pital, Gouuerneur de Paris. De Donchery, le 16. Octobre 1650. Sans
+          titre. À la fin : A Paris, chez Guillaume Sassier, s. d. (1650). In-4° de 8 pages. Signée
+          : S, SAVFLIEV. ;</p>
       </abstract>
       <textClass>
         <keywords>
@@ -111,8 +117,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LA NOVVELLE
         <lb/>extraaordinaire d’vn grand
         <lb/>ſecours jetté dans Mou¬

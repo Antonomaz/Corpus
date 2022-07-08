@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1985_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1985_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,7 +32,9 @@
           <title source="Mazarine">Lettre de Monsieur le cardinal Mazarin a Monsieur le prevost des
             marchands.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" notBefore="1651-01-07" notAfter="1651-01-14">deuxième semaine de
             janvier 1651</date>
@@ -39,13 +42,12 @@
             <measure unit="page" quantity="1"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49151</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49151" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49151"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15338</idno>
@@ -77,9 +79,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Lettre datée de "Boüillon le 23. decembre 1651.". D'après Hubert
+        <p source="Mazarine">Lettre datée de "Boüillon le 23. decembre 1651.". D'après Hubert
           Carrier publié la deuxième semaine de janvier 1652 pour l'édition parisienne (Bibliothèque
           Mazarine, Ms. 4682-3, f. 207 v).</p>
+        <p source="Moreau">1985. Lettre de M. le cardinal Mazarin à M. le prévôt des marchands. (S.
+          l. n. d.), 7 pages non chiffrées. Datée de Bouillon, le 23 décembre 1651. Il faut y
+          joindre la pièce qui suit :</p>
       </abstract>
       <textClass>
         <keywords>
@@ -96,14 +101,12 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE
         <lb/>DE MONSIEVR
         <lb/>LE CARDINAL MAZARIN
         <lb/>A MONSIEVR
-        <lb/>LE PREVOST DES MARCHANDS.<pb n="10"/>
-        <pb n="11"/>
+        <lb/>LE PREVOST DES MARCHANDS.<pb n="10"/><pb n="11"/>
         <lb/>A MONSIEVR
         <lb/>LE PREVOST DES MARCHANDS.
         <lb/>MONSIEVR, L’eſtime que ie fais de

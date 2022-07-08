@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau1778_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1778_GALL">
   <teiHeader xml:lang="fr">
     <fileDesc>
       <titleStmt>
@@ -17,24 +17,18 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
           <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="Corrector">Hip Amélie
-            <affiliation>
-              <roleName type="status">Vacataire</roleName>
-            </affiliation>
+          <persName role="Corrector">Hip Amélie <affiliation><roleName type="status"
+                >Vacataire</roleName></affiliation>
           </persName>
         </respStmt>
       </titleStmt>
@@ -61,17 +55,19 @@
             Juliade, ou Adieux au Mazarin, Paris, 1651. Elle est écrite en stances, avec un adieu
             pour refrain."</title>
           <pubPlace ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1651">1651</date>
           <extent>
             <measure unit="page" quantity="47"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque nationale de France</institution>
             <repository>Département littérature et art</repository>
             <idno type="cote">YE-3153</idno>
@@ -103,8 +99,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BnF_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1778. Juliade (la), ou Discours de l'Europe à monsei gneur le duc
+          d'Orléans sur l'éloignement du cardinal Mazarin et le retour des princes. Paris, 1651.
+          Deux parties, l'une de 47, et l'autre de 18 pages. Ce pamphlet n'a aucun rapport, ni au
+          fond, ni dans la forme, avec celui qui suit. Il est en vers burlesques et paraît avoir été
+          inspiré par la Mazarinade, qu'il ne vaut pas. On y trouve pour tant quelques passages
+          assez spirituels, par exemple, les Fourbes ; mais la pièce est beaucoup trop longue. Elle
+          n'est d'ailleurs pas 1'are, La seconde partie est intitulée : Suite de la Juliade, ou
+          Adieux au Mazarin, Paris, 1651. Elle est écrite en stances, avec un adieu pour
+          refrain.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -113,6 +117,9 @@
           <term type="subgenre">burlesque</term>
           <term type="subgenre">satirique</term>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -399,9 +406,7 @@
       <l>
         <lb/>Pour teſmoigner d’eſtre marry</l>
       <l>
-        <lb/>Des <foreign xml:lang="la">
-          <hi rend="it">viuat</hi>
-        </foreign> qu’on donne à Madame</l>
+        <lb/>Des <foreign xml:lang="la"><hi rend="it">viuat</hi></foreign> qu’on donne à Madame</l>
       <l>
         <lb/>Puiſque c'eſt voſtre digne femme,</l>
       <l>
@@ -843,16 +848,11 @@
       <l>
         <lb/>(Car il ſçait promettre &amp; promettre,)</l>
       <l>
-        <lb/>Sçauoir <foreign xml:lang="la">
-          <hi rend="it">primò</hi>
-        </foreign> ſelon la lettre</l>
+        <lb/>Sçauoir <foreign xml:lang="la"><hi rend="it">primò</hi></foreign> ſelon la lettre</l>
       <l>
         <lb/>Ou promettre verbalement;</l>
       <l>
-        <lb/>
-        <foreign xml:lang="la">
-          <hi rend="it">Secundò</hi>
-        </foreign>, poſitiuement.</l>
+        <lb/><foreign xml:lang="la"><hi rend="it">Secundò</hi></foreign>, poſitiuement.</l>
       <l>
         <lb/>Teſmoin Monſieur de Longueuille,</l>
       <l>
@@ -1010,9 +1010,7 @@
       <l>
         <lb/>Fourbe en tous genres &amp; tous cas,</l>
       <l>
-        <lb/>Fourbe <foreign xml:lang="la">
-          <hi rend="it">per omnes Regulas</hi>
-        </foreign>,</l>
+        <lb/>Fourbe <foreign xml:lang="la"><hi rend="it">per omnes Regulas</hi></foreign>,</l>
       <l>
         <lb/>Fourbe par art &amp; par Nature,</l>
       <l>
@@ -1683,8 +1681,7 @@
         <lb/>Quand on luy rompoit la <choice>
           <sic>ccruelle</sic>
           <corr>cruelle</corr>
-        </choice>
-      </l>
+        </choice></l>
       <l>
         <lb/>De rendre Monſieur de Bruſſelle,</l>
       <l>
@@ -2454,9 +2451,7 @@
       <l>
         <lb/>Mais chacun luy tournant le dos.</l>
       <l>
-        <lb/>Luy dit par tout <foreign xml:lang="la">
-          <hi rend="it">neſcio vos</hi>
-        </foreign>.</l>
+        <lb/>Luy dit par tout <foreign xml:lang="la"><hi rend="it">neſcio vos</hi></foreign>.</l>
       <l>
         <lb/>Point de Mazarin dans la France,</l>
       <l>
@@ -2728,10 +2723,7 @@
       <l>
         <lb/>Mais s'il a du mal, à ſon dam.</l>
       <l>
-        <lb/>
-        <foreign xml:lang="la">
-          <hi rend="it">Ne ſutor vltra Crepidam</hi>
-        </foreign>.</l>
+        <lb/><foreign xml:lang="la"><hi rend="it">Ne ſutor vltra Crepidam</hi></foreign>.</l>
       <l>
         <lb/>Pourquoy vouloir l’Inſatiable</l>
       <l>
@@ -2861,8 +2853,7 @@
         <hi rend="it">Et per il popolo Franceſe</hi>
       </l>
       <l>
-        <lb/>
-        <hi rend="it">Quitar vn tanto buon paeſe.</hi>.</l>
+        <lb/><hi rend="it">Quitar vn tanto buon paeſe.</hi>.</l>
       <l>
         <lb/>En ſuitte il maudit hautement</l>
       <l>

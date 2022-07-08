@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3004_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3004_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -27,11 +28,13 @@
       <sourceDesc>
         <bibl>
           <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14979"/>
-          <author>Anonyme</author>
+          <author/>
           <title source="Mazarine">Recit veritable de ce qui s'est passé à l'emprisonnement des
             Princes.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" notBefore="1650-01-21" notAfter="1650-01-31">dernière semaine de
             janvier 1650</date>
@@ -39,13 +42,12 @@
             <measure unit="page" quantity="6"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49034</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49034" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49034"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M13771</idno>
@@ -77,9 +79,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Satire contre le prince de Condé en forme de dialogue entre lui, et le
+        <p source="Mazarine">Satire contre le prince de Condé en forme de dialogue entre lui, et le
           roi, la reine, le parlement et la ville de Paris. Texte paru la dernière semaine de
           janvier 1650 d'après Hubert Carrier (Bibliothèque Mazarine, Ms 4682-5, f. 21v).</p>
+        <p source="Moreau">3004. Récit véritable de ce qui s'est passé à l'emprison nement des
+          princes. (S. 1., 1650), 6 pages. Pièce assez plaisante, mais qui n'est pas un récit. C'est
+          une sa tire contre le prince de Condé.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -97,8 +102,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>RECIT VERITABLE
         <lb/>de ce qui s’eſt paſsé à
         <lb/>l'empriſonnement

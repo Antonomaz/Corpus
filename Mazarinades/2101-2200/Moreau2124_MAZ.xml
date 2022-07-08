@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2124_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2124_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,8 +37,10 @@
             Avec le registre dudit Parlement presenté par le deputé d'iceluy audit parlement de
             Paris le 6. de juillet 1650. Sur l'infraction de la paix faite par le duc d'Espernon, la
             liberté de messieurs les Princes, &amp; les procedures violentes du sieur Foulé.</title>
-          <pubPlace source="Mazarine" ref="geonames:2982652">Sans Lieu</pubPlace>
-          <publisher>Sans nom</publisher>
+          <pubPlace source="Mazarine">Sans Lieu</pubPlace>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <date source="Carrier" notBefore="1650-07-07" notAfter="1650-07-14">deuxième semaine de
             juillet 1650</date>
@@ -45,13 +48,12 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49962</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49962" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49962"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11367</idno>
@@ -83,12 +85,19 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Lettre relative à l'arrivée à Bordeaux de la princesse de Condé
+        <p source="Mazarine">Lettre relative à l'arrivée à Bordeaux de la princesse de Condé
           accompagnée de son fils le duc d'Enghien. Autre édition du texte sous le titre : "Lettre
           de la cour de parlement de Bourdeaux, escrite a la cour de parlement de Paris.", Bordeaux,
           Jean Millanges, 1650 (BM00446). Lettre du parlement de Bordeaux et extrait du registre
           signés "De La Roche". D'après Hubert Carrier, texte paru la 2e semaine de juillet 1650
           (Bibliothèque Mazarine, Ms. 4682-3, f. 252v).</p>
+        <p source="Moreau">2124. Lettre du Parlement de Bordeaux écrite au Parle ment de Paris, avec
+          le registre dudit Parlement pré senté par le député d'icelui audit Parlement de Paris, le
+          6 juillet 1650, sur l'infraction de la paix faite par le duc d'Épernon, la liberté de
+          messieurs les princes et les procédures violentes du sieur Froulé.(S. l. n. d.), 8 pages.
+          Datée du 18 juin 1650. Après la lettre, on lit l'arrêt du 1° juillet, qui ordonne des
+          remontrances pour la liberté des princes, et autorise la princesse de Condé et le duc
+          d'Enghien à demeurer dans Bordeaux.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -111,8 +120,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE
         <lb/>DV PARLEMENT
         <lb/>DE BORDEAVX.

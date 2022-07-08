@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau192_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau192_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -41,20 +42,21 @@
             faites au Roy sur ce sujet, &amp; les lettres écrittes à la Reyne regente, à Mr le duc
             d'Orléans, &amp; à Mr le Prince.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Sans nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" when="1651-09-05">5 septembre 1651</date>
           <extent>
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49820</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49820" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49820"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14249</idno>
@@ -86,10 +88,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autres éditions : également en 12 p. à Paris et la même année par
+        <p source="Mazarine">Autres éditions : également en 12 p. à Paris et la même année par
           Nicolas Vivenay (BM00916) ; en 8 p. "Sur l'imprimé à Paris" (indiquée par Célestin Moreau
           mais non repérée). Acte et lettres datés du 30 août 1651. D'après Hubert Carrier, parution
           le 5 septembre 1651 (Bibliothèque Mazarine, Ms. 4682-1, f. 106v).</p>
+        <p source="Moreau">192. Arrêt de la cour de parlement de Bordeaux, portant la justification
+          de monsieur le prince sur le sujet des calomnies, inventées contre son altesse par les
+          factionnaires du cardinal Mazarin, pour le faire sortir de Paris et faciliter le retour de
+          leur maître; ensemble les remontrances du même parlement, faites au roi sur ce sujet, et
+          les lettres écrites à la reine régentè, à monsieur le duc d’Orléans et à monsieur le
+          prince. Paris, 1651, 12 pages. Toutes ces pièces sont du 30 août 1651. Il y en a une autre
+          édition : Sur l’imprimé à Paris, 8 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -110,8 +119,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DV PARLEMENT

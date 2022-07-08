@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques"
-  xml:id="Moreau2suppl175_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2suppl175_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -14,15 +13,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -49,17 +44,19 @@
             passage du C. Mazarin, avec tout ce qui s'est pasaé au parlement le unzième jour de ce
             mois en présence de Son Altesse Royale.</title>
           <pubPlace source="Moreau">Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1652">1652</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309223</idno>
@@ -91,7 +88,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">175. Relation véritable de l’assassinat commis à Pont-sur- Yunne par les
+          trouppes mazarines commandées par le ma- reschal de Hoquiucour, sur les personnes des
+          sieurs -du Coudré et Bitaut, conseillers et députez par la cour, pour s'apposer au pussage
+          du C. Mazarin, avec tout ce qui s’est passé au parlement le anzième jour de ce mois en
+          présence de Son Altesu Hoyale. S. L, 1852; 8 pages. ! Da Veudras me et Bitaur blessé.
+          Decismauon.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -100,6 +103,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
     </profileDesc>
@@ -109,8 +116,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>o.
         <lb/>3o9228
         <lb/>RELATION
@@ -129,15 +135,13 @@
         <lb rend="¬" break="no"/>me iour de ce mois, en preſence de ſon
         <lb/>Alteſse Royale.
         <lb/>M. DC. LII.
-        <lb/> ,,,,oar -¬-¬--¬¬
-        <pb n="2"/>
+        <lb/> ,,,,oar -¬-¬--¬¬ <pb n="2"/>
         <lb/> a
         <lb rend="¬" break="no"/>
         <lb/>
         <lb/>r.
         <lb/>
-        <lb rend="¬" break="no"/>LE m2
-        <pb n="3"/>
+        <lb rend="¬" break="no"/>LE m2 <pb n="3"/>
         <lb/>3.
         <lb/>rrépyrs
         <lb/>qoe; doe e8?e
@@ -164,8 +168,8 @@
         <lb/>des fers de Maaarin, que celle de luy reprocher ſon
         <lb/>ſang, pour l’enfaire encor vne fois rougir auanrſa more;
         <lb/>&amp; de luy teſmoigner auantl’Arreſt dont ilattend l’iniu
-        <lb rend="¬" break="no"/>ſtice, qu’il ſe defieroit de ſa propre innocence, s’ilauoi
-        <pb n="4"/>
+        <lb rend="¬" break="no"/>ſtice, qu’il ſe defieroit de ſa propre innocence, s’ilauoi <pb
+          n="4"/>
         <lb/>4
         <lb/>ant de mal heur que de ne perir point par les meſmes
         <lb/>mains, qui ſe ſont de faites d’vn ſi genereux conffré,
@@ -195,8 +199,7 @@
         <lb rend="¬" break="no"/>mains meſme quis’en ſont defaits, n’euſſent ſeulement
         <lb/>pas eu l’efronterie de regarder ſans reſpect s’ils euſſent
         <lb/>conſideré́ qu’ils ne pouuoient attenter à ſa vie, ſans ſe
-        <lb/>rendre criminels parle droit des gens.
-        <pb n="5"/>
+        <lb/>rendre criminels parle droit des gens. <pb n="5"/>
         <lb/>
         <lb/>C’eſtoit incontinent apres, S. A. R.’eut fait part
         <lb/>à la Cour des aproches du C. Mazarin iuſques à
@@ -231,8 +234,7 @@
         <lb/>Il neſe faut point douter que, ſi la pnudenceeut pû
         <lb/>fairereuſſir vne entrepriſe, auec tous lesaduantages
         <lb/>qu’on en eut peuſouhaiter de la plus belle eonduite.
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/>1
         <lb/> du rmonde;on l’eut à ce coup vee triompher daus
         <lb/>ſon plas haut eſciatar l’entt emine le ces deu gta
@@ -266,8 +268,7 @@
         <lb/>que neantmoins il y fut atteint de deux pla yes aſſe
         <lb/>dangereuaſes, eut encor le malheur pour vn plus
         <lb/> grand ſureroy d’aflition de tomber ence les mains
-        <lb/>de ſes ennenis, ſous l’iniuſfte captiuité deſquels il
-        <pb n="7"/>
+        <lb/>de ſes ennenis, ſous l’iniuſfte captiuité deſquels il <pb n="7"/>
         <lb/>demeuréeme il deeurera ſans dute, iuſqu’à ce
         <lb/>qu’ils ayent eu loiſir à la faueur d’vn plus peu de
         <lb/>temps de confeſer parſon eſlargiſſement qu’ils ſou
@@ -301,8 +302,7 @@
         <lb/>que ce meſme Prince à eſcrit à cette Cour ſouue
         <lb rend="¬" break="no"/>raine pour luy proteſtet q’il n’a d’eutre deſſein dans
         <lb/>out ſon armement quo celuy de r’oppoſer au retour
-        <lb/>1
-        <pb n="8"/>
+        <lb/>1 <pb n="8"/>
         <lb/>de Mazarins; quelque bruit qu’en faſſent courirar
         <lb/>contraire certains enfarinés, qui ſe rompent lateſte
         <lb/>pour faire aprehender aux Pariſiens le retour de la

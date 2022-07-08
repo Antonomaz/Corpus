@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau1878_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1878_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -46,13 +47,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49366</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49366" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49366"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11163</idno>
@@ -84,11 +84,14 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Autre édition, même adresse, 1649, 7 p. in-4 repérée par Hubert Carrier
+        <p source="Mazarine">Autre édition, même adresse, 1649, 7 p. in-4 repérée par Hubert Carrier
           (Bibliothèque Mazarine, Ms 4682-3, f. 173v). - Réédité en 1650 dans le " Recueil de
           diverses pieces. Qui ont paru durant les mouvemens derniers de l'année 1649." (BM00059).
           Texte adressé à "Acanthe" et signé "Alessandro". Texte paru pendant le blocus de Paris,
           entre janvier et mars 1649, d’après H. Carrier.</p>
+        <p source="Moreau">1878. Lettre d'un gentilhomme italien à un François son ami, sur
+          l'enlèvement du roi très chrétien, traduite par P. D. P., sieur de Carigny. Paris, Nicolas
+          de La Vigne, 1649, 7 pages. De Livorne, s. d., et signée Alessandro.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -105,16 +108,14 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETTRE
         <lb/>D’VN GENTIL-HOM.
         <lb/>me Italien à vn François, ſon
         <lb/>amy, ſur l’enleuement du
         <lb/>Roy tres-Chreſtien.
         <lb/>TRADIVTE PAR. P. D. P.
-        <lb/>Sieur de Carigny.
-        <figure type="decoration"/>
+        <lb/>Sieur de Carigny. <figure type="decoration"/>
         <lb/>A PARIS,
         <lb/>Chez NICOLAS DE LA VIGNE
         <lb/>pres Sainct Hilaire.

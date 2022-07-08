@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau258_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau258_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -40,20 +41,21 @@
             monseigneur le prince de Conty, pour l'éloignement du cardinal Mazarin. Du 27. mars
             1649.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Antonomaz" when="1649-03-27">27 mars 1649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49910</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49910" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49910"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14917</idno>
@@ -85,13 +87,16 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Fait référence à la déclaration du prince de Conti, datée du 20 mars
+        <p source="Mazarine">Fait référence à la déclaration du prince de Conti, datée du 20 mars
           1649, pour l'exécution de l'arrêt du 8 janvier contre le cardinal Mazarin (BM01009,
           BM01010 et BM01011). D'après Célestin Moreau et confirmé par Hubert Carrier, le présent
           arrêt est vrai ; il en a été fait deux faux (BM00123 ; Moreau n° 260). Autre édition avec
           une composition typographique différente et notamment la p. 4 chiffrée "2" (BM01008). 2
           états du début du titre : "Arrest de la cour du Parlement. Sur la proposition..." (état A)
           / "Arrest de la cour de Parlement, sur la proposition..." (état B). Signé "Du Tillet".</p>
+        <p source="Moreau">258. Arrêt de la cour de parlement, sur la proposition, faite par
+          monseigneur le prince de Conty, pour l’éloi- gnement du cardinal Mazarin. Du 27 mars 1649.
+          Pa- ris, par les imprimeurs et libratres ordinaires du roi, 1649, 4 pages.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -108,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DV PARLEMENT.
@@ -121,7 +125,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordinai¬
         <lb/>res du Roy.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <gap/>
         <pb n="12"/>

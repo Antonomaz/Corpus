@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2105_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2105_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -41,7 +37,6 @@
             <persName>
               <forename>Charles</forename>
               <surname>Lorraine (De)</surname>
-              <name>Charles IV</name>
             </persName>
           </author>
           <persName role="received" ref="isni:0000000083439713">
@@ -61,13 +56,12 @@
           <extent>
             <measure unit="page" quantity="7"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309828</idno>
@@ -99,7 +93,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2105. Lettre du duc de Lorraine au maréchal de Tu renne qui a été
+          interceptée, par laquelle il tâche de couvrir sa trahison manifeste. Paris, A. Chouqueux,
+          1652, 7 pages Datée du camp de Soissy, le 16 juin, -- La permission du duc d'Orléans ne me
+          paraît pas une garantie suffisante d'authenticité. Je ne crois pas que les banalités qui
+          al longent démesurément la lettre soient du duc de Lorraine.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -108,6 +107,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -123,8 +125,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>LETTRE
         <lb/>DV DVC
         <lb/>DE LORRAINE
@@ -136,8 +137,7 @@
         <lb/>’e u iaiou anunirdae ne
         <lb/>?
         <lb/> eaeneie enaua
-        <lb/>Auee Prmihan d ſa ieſs Royal:
-        <pb n="2"/>
+        <lb/>Auee Prmihan d ſa ieſs Royal: <pb n="2"/>
         <lb/>o
         <lb/> e aa2
         <lb rend="¬" break="no"/> 8
@@ -153,8 +153,7 @@
         <lb rend="¬" break="no"/>
         <lb rend="¬" break="no"/>
         <lb/>.
-        <lb/> aaoo
-        <pb n="3"/>
+        <lb/> aaoo <pb n="3"/>
         <lb/>1
         <lb/>,;
         <lb/>AAA, A &amp; ,,
@@ -183,8 +182,7 @@
         <lb/>paſſée fait deuant Rethel; ou vous rémoigna
         <lb rend="¬" break="no"/>ſtes ne vouloir entreéprendre’de ſecouri la
         <lb/>place aſſiegée par l’armé́e du Roy, auanr que
-        <lb/>2
-        <pb n="4"/>
+        <lb/>2 <pb n="4"/>
         <lb/>vous euſſiez joint mes trouppes que vous me
         <lb rend="¬" break="no"/>nerent le Comse de Ligneille mon Lieute
         <lb rend="¬" break="no"/>nant, &amp; Fauga Mareſchal de Camp on mo
@@ -213,8 +211,7 @@
         <lb/>qu’ils auoient de mertre enſemble vne armée
         <lb/>capable de reſiſter à̀ celle du Roy, &amp; que ie
         <lb/>preuoyois mes trouppes en eſtat d’eſtrerom
-        <lb rend="¬" break="no"/> puës
-        <pb n="5"/>
+        <lb rend="¬" break="no"/> puës <pb n="5"/>
         <lb/>3
         <lb/>patôu pnenisffor,’ oateoeda tiſgraesdai
         <lb/> Maiefté́ que i’allois noourir, ces coaſide
@@ -242,8 +239,7 @@
         <lb/>vne forte garniſon pou dfſoneſe
         <lb/>les armes du roy, maintenant tugcà deſa
         <lb/>Maieſté tres-Chreſtienne. le neſerois obligé
-        <lb/>d’y auoir des gens de guerrte pour la grder,
-        <pb n="6"/>
+        <lb/>d’y auoir des gens de guerrte pour la grder, <pb n="6"/>
         <lb/>5
         <lb/>atai ohitſts des violoas poii qu e feis
         <lb/>loirs d’apprhonſion d’y eſtca :inquieté lp
@@ -273,8 +269,7 @@
         <lb/>aen6.laiga reve i l
         <lb/> gi’co iolnl.2rle n2
         <lb/> el ae1
-        <lb/>l11
-        <pb n="7"/>
+        <lb/>l11 <pb n="7"/>
         <lb/>,
         <lb/>Ar cetre Lettre le Due de Lorraine veut
         <lb/> eſſuyer le blaſme que toute la poſterité

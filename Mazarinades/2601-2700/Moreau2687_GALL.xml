@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau2687_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2687_GALL">
   <teiHeader xml:lang="fr">
     <fileDesc>
       <titleStmt>
@@ -11,24 +11,18 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
           <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="Corrector">Hip Amélie
-            <affiliation>
-              <roleName type="status">Vacataire</roleName>
-            </affiliation>
+          <persName role="Corrector">Hip Amélie <affiliation><roleName type="status"
+                >Vacataire</roleName></affiliation>
           </persName>
         </respStmt>
       </titleStmt>
@@ -60,11 +54,11 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque nationale de France</institution>
             <repository>Département Littérature et art</repository>
             <idno type="cote">YE-3826</idno>
@@ -96,8 +90,12 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BnF_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2687. Paraphraze sur le bref de Sa Sainteté, envoyé à la reine régente,
+          mère du roi, touchant sa réconciliation avec plusieurs des plus signalés de son royaume et
+          le soulagement de ses peuples, en vers burlesques. Paris, Claude Morlot, 1649, 8 pages.
+          L'auteur dit que Mazarin est poëte, et que « Il seroit bon orateur S'il n'étoit pas si
+          grand menteur. »</p>
       </abstract>
       <textClass>
         <keywords>
@@ -106,6 +104,9 @@
           <term type="subgenre">burlesque</term>
           <term type="subgenre">satirique</term>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -121,20 +122,16 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k56122676.r=bpt6k56122676?rk=21459;2"/>
+      <p><pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k56122676.r=bpt6k56122676?rk=21459;2"/>
         <lb/>PARAPHRASE
         <lb/>SVR LE BREF
         <lb/>DE SA
         <lb/>SAINCTETE
         <lb/>ENVOYE A LA REYNE
         <lb/>REGENTE MERE DV ROY.
-        <lb/>
-        <hi rend="it">TOVCHANT SA RECONCILIATION</hi>
-        <lb/>
-        <hi rend="it">Auec pluſieurs des plus ſignalez de ſon Royaume,</hi>
-        <lb/>
-        <hi rend="it">&amp; le ſoulagement de ſon peuple.</hi>
+        <lb/><hi rend="it">TOVCHANT SA RECONCILIATION</hi>
+        <lb/><hi rend="it">Auec pluſieurs des plus ſignalez de ſon Royaume,</hi>
+        <lb/><hi rend="it">&amp; le ſoulagement de ſon peuple.</hi>
         <lb/>EN VERS BVRLESQVES. <figure type="decoration"/>
         <lb/>A PARIS,
         <lb/>Chez CLAVDE MORLOT, ruë de la Bucherie, aux

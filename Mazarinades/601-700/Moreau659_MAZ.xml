@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau659_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau659_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -43,7 +44,9 @@
             de la Grand'Bretagne. IV. Ce que la ville de Paris peut &amp; doit faire en cas de
             trahison.</title>
           <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-05-07" notAfter="1652-05-14">deuxième semaine de
             mai 1652</date>
@@ -51,13 +54,12 @@
             <measure unit="page" quantity="23"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50168</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50168" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50168"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M12624</idno>
@@ -89,7 +91,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">2 états de la p. 11, l. 15 : "quatre-heurs", "seulement" (état A) /
+        <p source="Mazarine">2 états de la p. 11, l. 15 : "quatre-heurs", "seulement" (état A) /
           "quatre-heures", "seulemēt" (état B). Pamphlet à la manière de Claude Du Bosc de
           Montandré, mais désavoué par lui-même dans l'avertissement au lecteur du "Coup de partie"
           (BM01079 et BM01080). Mais d'après Hubert Carrier, l'auteur a également composé "Le Caton
@@ -99,6 +101,22 @@
           de mai 1652 car allusion à l'émeute du 30 avril rue de Tournon contre le Prévôt des
           marchands et à l'émeute à la porte de l'armurier Bénicourt le 1er mai (Bibliothèque
           mazarine, Ms. 4675-1, fiche 212).</p>
+        <p source="Moreau">659. Cautèles (les) de la paix, faisant voir : 4. si la paix, avant
+          l’exécution des arrêts et de la déclaration contre le cardinal Mazarin, seroit plus
+          préjudiciable que la guerre ; 2. si le soupçon qu’on a d’un traité secret de la cour avec
+          les princes, est injuste; 3. la sincérité des intentions du roi et de la reine de la
+          Grande-Bretagne ; 4. ce que la ville de Paris peut et doit faire en cas de trahison. (S.
+          !. n. d.), 23 pages. . 1652, après la députation des cours souveraines à Saint-Germain. «
+          La plupart estiment que le roi et la reine d’Angleterre sont plutôt mazarins que
+          frondeurs. Quels qu’ils puissent être, on a violé le respect qui leur est dû , d’avoir
+          reproché à ce jeune prince, dans son carrosse , d’être cause que le roi est venu à
+          Saint-Germain. » Malgré la netteté de ce blème, l’auteur n’en reste pas moins un frondeur
+          très-entété. Il ne veut pas de l’assistance des Anglais, à cause de la différence des
+          religions. « Mais s’ils prétendoient seulement donner du secours aux peuples qui sont
+          opprimés sous le joug d’une rude tyrannie, leur zèle scroit louable, quand même leur
+          dessein seroit plus grand que leurs forces. » Il conseille, en cas de trahison des
+          princes, « de chasser premiè- rement tous ceux qui seront soupçonnés d’être mazarins, et,
+          pour ceux qui le sont ouvertement, de les dépêcher sans remise et sans pltlé »</p>
       </abstract>
       <textClass>
         <keywords>
@@ -126,8 +144,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LES
         <lb/>CAVTELES
         <lb/>DE LA PAIX

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3204_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3204_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,15 +12,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -56,11 +52,11 @@
             <measure unit="page" quantity="11"/>
           </extent>
           <note type="format">in-4 231 mm</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 309969</idno>
@@ -92,11 +88,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Autre(s) variante(s) du titre Relation véritable de ce qui s'est
-          fait et passé en la dernière assemblée du parlement... sur la réponse du roi, faite à MM.
-          les députés ; l'arrêt intervenu sur icelle ; et ce qui s'est passé au parlement de
-          Normandie et en la ville de Rouen. Recueil factice</p>
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Autre(s) variante(s) du titre Relation véritable de ce qui s'est fait et
+          passé en la dernière assemblée du parlement... sur la réponse du roi, faite à MM. les
+          députés ; l'arrêt intervenu sur icelle ; et ce qui s'est passé au parlement de Normandie
+          et en la ville de Rouen. Recueil factice</p>
+        <p source="Moreau">3204. Relation véritable de ce qui s'est fait et passé en la dernière
+          assemblée du Parlement, en présence de M. le duc d'Orléans et de M. le Prince, sur la
+          réponse du roi faite à M™ les députés, l'arrêt intervenu sur icelle et ce qui s'est passé
+          au Parlement de Nor mandie et en la ville de Rouen. Paris, veuve J. Guil lemot, 1652, 11
+          pages. L'assemblée est du 13 juillet. Il n'y a rien du Parlement de Normandie, et
+          seulement quelques contes de Rouen. Cette relation n'est pas commune.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -105,6 +107,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -121,8 +127,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>DLA’ION 3
         <lb/>VERITABLE
         <lb/>DE CE QVI SEST FAIT
@@ -144,8 +149,7 @@
         <lb/>De l’Imprimerie de la Vefue I. G v1 L LE oT, Imprlmeuſe
         <lb/>ordinaire de ſon Alteſſe Royale, rueë des Marmoues.
         <lb/>proche l’Egliſe de la Magdelaiue.
-        <lb/> M. DC. LII.
-        <pb n="2"/>
+        <lb/> M. DC. LII. <pb n="2"/>
         <lb/>5
         <lb rend="¬" break="no"/>1
         <lb rend="¬" break="no"/>
@@ -155,8 +159,7 @@
         <lb rend="¬" break="no"/>1
         <lb rend="¬" break="no"/>2
         <lb rend="¬" break="no"/>
-        <lb rend="¬" break="no"/>aaa l
-        <pb n="3"/>
+        <lb rend="¬" break="no"/>aaa l <pb n="3"/>
         <lb/> 3.
         <lb/> . i
         <lb/>MA e &amp; &amp; a
@@ -185,8 +188,7 @@
         <lb rend="¬" break="no"/>former de l’intention de Sa Majeſté, &amp; de ne point
         <lb rend="¬" break="no"/>quitter la Cour qu’ils n’ayent eu réponſe du Parle
         <lb rend="¬" break="no"/>meat &amp; de Meſſieurs les Princes.
-        <lb/> A ij
-        <pb n="4"/>
+        <lb/> A ij <pb n="4"/>
         <lb/>Cette réponſe leüie, le ſieur Bechefer antlen Subſt
         <lb rend="¬" break="no"/>ud de Monſieur le Procureur General pour l’abſan.
         <lb/>ce des Gens du Roy, a pris ſes concluſions tendantes,
@@ -217,8 +219,7 @@
         <lb/>de prier Meſſieurs les Princes d’enuoyer leurs Depu
         <lb rend="¬" break="no"/>ter pour conuenir des articles de la Paix &amp; les arreſtes
         <lb/>apres que le Cardinal Mazarin ſeroit retiré de la
-        <lb/> Cour,
-        <pb n="5"/>
+        <lb/> Cour, <pb n="5"/>
         <lb/>Cour, &amp; les eeeter quãil ſeroit hors du Royame
         <lb/> Le troiſiéme aſloit à l’vnion du Parlement auec
         <lb/>Meſſieurs les Princes, mais il n’a eſté ſuiuy que de
@@ -249,8 +250,7 @@
         <lb/>ur ce ſuiet, &amp; empeſchoit qu’on ne le peuſt ſoup
         <lb rend="¬" break="no"/>onner d’auoit eu aueune penſée de fauoriſer &amp; d’ap
         <lb rend="¬" break="no"/>PEuuer vne ation dons le loopenir luy donnait en
-        <lb/>B
-        <pb n="6"/>
+        <lb/>B <pb n="6"/>
         <lb/>8
         <lb/>eore de l’eſtonnemene &amp; de l’hoeu:
         <lb/> Monſieur le Prince fit le meſme éelairciſſement
@@ -281,8 +281,7 @@
         <lb/>ſobmes que trop porſuadez qu’il n’y a que lr force
         <lb/>qui le puiſſe abbarre, &amp; que les Cõferences le ſauuent
         <lb/>rofiours, ſouuenons-nniis deé celle de Ruel, de la
-        <lb rend="¬" break="no"/>honteé deé é́t ihfae traltté; des maux que: la France
-        <pb n="7"/>
+        <lb rend="¬" break="no"/>honteé deé é́t ihfae traltté; des maux que: la France <pb n="7"/>
         <lb/>1.
         <lb rend="¬" break="no"/>areſſentis de l’atioir ſauueé dans cetté paix , desi vei
         <lb rend="¬" break="no"/> gemces qu’il a eerćes ſur toutes les Prouinces qu
@@ -314,8 +313,7 @@
         <lb rend="¬" break="no"/>ferences que quelques vns de leurs am’s ont eéuauec
         <lb rend="¬" break="no"/>ce perfide, les retlendra dore ſnauant dans vné con
         <lb rend="¬" break="no"/>duite plos fore &amp; plus vigoureuſe, aduitanit de ton
-        <lb rend="¬" break="no"/> ¬
-        <pb n="8"/>
+        <lb rend="¬" break="no"/> ¬ <pb n="8"/>
         <lb/>ſeils qu’il doine à noſtreRyee ſontacant de fautes,
         <lb/>ils n’ont plus leurs gens &amp; leurs creatures dans Paris.
         <lb/>Ceux qui luy donnoient des eſperances de luy liurer.
@@ -346,8 +344,7 @@
         <lb/>le demeuraſt abandonneée ſans Chef &amp; ſans Oficiers
         <lb/>dans ces malheureuſes extremité́s, n’eſt-il pas plusiu
         <lb rend="¬" break="no"/>te &amp; plus aduaneageux d’y prepoſer vn homme de
-        <lb/>bies
-        <pb n="9"/>
+        <lb/>bies <pb n="9"/>
         <lb/>3
         <lb/>len qu’vn inereſé ; ne feae’on pas que tous les Of
         <lb/>ceiers de la Pelice; le Gouuerneur de Paris, &amp; tous
@@ -378,8 +375,8 @@
         <lb rend="¬" break="no"/>ues de la Cour &amp; Minitres; de la tyrannie, moins ils
         <lb/> poſſederoient de biens, plus ils auroient de gloire &amp;
         <lb/>d’honneur, noſtre Senat ſeroit pauure, mais triom
-        <lb rend="¬" break="no"/>Phant, leur pauurereé feroit la gloire de l’Eſtar, au hieu
-        <pb n="10"/>
+        <lb rend="¬" break="no"/>Phant, leur pauurereé feroit la gloire de l’Eſtar, au hieu <pb
+          n="10"/>
         <lb/>quà preſent peut dire que l’abondancẽ &amp;e 1
         <lb/>cheſſe des Ofieiers fait la ruine &amp; la deſolatiou du(
         <lb/>Royaume, c’eſt ce que Saluian diſoit des Royaumes.1
@@ -409,8 +406,7 @@
         <lb/>la paille, &amp; que dans toutes les Prouinces de France
         <lb/>on commence à faire la meſme declaration. Leſquel.
         <lb/>les nouuelles iointes à l’approche des trouppes de
-        <lb/>l’Archiduc obligeront peut-eſtre le Cardinal Mau;
-        <pb n="11"/>
+        <lb/>l’Archiduc obligeront peut-eſtre le Cardinal Mau; <pb n="11"/>
         <lb/>n
         <lb/>nàfûnt par ſes ſordes hor da RoymeeTrage
         <lb rend="¬" break="no"/>Comedie, dont le dernler ae ue luay ſeroit pas d;

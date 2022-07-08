@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3242_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3242_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -52,11 +48,11 @@
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4 23 cm</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon, Bibliothèque jésuite des
               Fontaines</institution>
             <repository>Réserve</repository>
@@ -89,10 +85,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BMLyon_notes">Autre(s) variante(s) du titre : Relation véritable de la réduction
-          de la ville de Caudecoste et la capitulation faite avec Monseigneur le prince de Conti Rés
+        <p source="Mazarine"/>
+        <p source="BM_Lyon">Autre(s) variante(s) du titre : Relation véritable de la réduction de la
+          ville de Caudecoste et la capitulation faite avec Monseigneur le prince de Conti Rés
           309212 - Recueil factice</p>
+        <p source="Moreau">3242. Relation véritable de la réduction de la ville de Caudecoste, et la
+          capitulation faite avec monseigneur le prince de Conty. Jouxte la copie imprimée à Bor
+          deaux. Paris y Simon de La Fosse, 1652 , 8 pages. La capitulation est du 2 février.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,6 +100,10 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="subgenre">burlesque</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -116,8 +119,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>9.
         <lb/>RELATION
         <lb/> I
@@ -131,8 +133,7 @@
         <lb/> eeSoon p i ros
         <lb/>M. DC. LII.
         <lb/>Auec Permiſßion de ſon Alteſſe Royale.
-        <lb/>1
-        <pb n="2"/>
+        <lb/>1 <pb n="2"/>
         <lb/>-,
         <lb/>2
         <lb/>¬.
@@ -155,8 +156,7 @@
         <lb/>.
         <lb/> 4
         <lb/>
-        <lb rend="¬" break="no"/>o
-        <pb n="3"/>
+        <lb rend="¬" break="no"/>o <pb n="3"/>
         <lb/>eoeeppoelpeepppeeebe8
         <lb/>RELATION VERITABLE DE L
         <lb/>pedution de l -ville de Caudccaſte, &amp; l capitula
@@ -186,8 +186,7 @@
         <lb/>pour vne marche ſi prompte &amp; ſi preſſée, &amp; poſſible
         <lb/>qu’elle euſt eu ſon efect, ſi Dieu, qui n’eſt pasobligé
         <lb/>,¬e.¬. -2
-        <lb/>.. ALL-.
-        <pb n="4"/>
+        <lb/>.. ALL-. <pb n="4"/>
         <lb/>.
         <lb/>de rendre raiſon de ſes ſecrets aux hommes, n’euſt
         <lb/>oppoſé le courage des ſieurs Marquis de larzay &amp; de
@@ -220,8 +219,7 @@
         <lb/>pillé, ſuiuant les dernieres &amp; certaines nouuelles,
         <lb/>tont aſſez voir que Dieu ne trauille pas ſeulementà
         <lb/>a
-        <lb/>¬e-tl¬... -..¬...¬
-        <pb n="5"/>
+        <lb/>¬e-tl¬... -..¬...¬ <pb n="5"/>
         <lb/>3
         <lb/>latibeédepeiples àmefprueas yrans’appjos
         <lb/>he; nis eaſſi qoe naons deueſpertla uiao du
@@ -255,8 +253,7 @@
         <lb rend="¬" break="no"/>gné les parties tas plls bobles de toateetne Prouin
         <lb rend="¬" break="no"/>.B
         <lb rend="¬" break="no"/>¬¬..
-        <lb rend="¬" break="no"/> ¬...L A¬.
-        <pb n="6"/>
+        <lb rend="¬" break="no"/> ¬...L A¬. <pb n="6"/>
         <lb/>ee, i le Peine de Cony, pouſſé pãr leseſmes ſen
         <lb rend="¬" break="no"/>ainens quaſon fôte,m’eut iuagé qu’il eſtoià propos
         <lb/>d’arreſter le cours de ce malen ſa biaiſſance, &amp; que la
@@ -288,8 +285,7 @@
         <lb/>qu’il n’eſtois pas ouſtenuparlegiment d Gon
         <lb rend="¬" break="no"/>drin, commeil en aoi decél’odte, ce qui dna
         <lb/>-E-r ¬¬..
-        <lb/>¬
-        <pb n="7"/>
+        <lb/>¬ <pb n="7"/>
         <lb/> ,
         <lb/>ſujet au Prince de Conty; qui àuoit raiſon de crain
         <lb rend="¬" break="no"/>dre qu’on ne donnat du ſecours le lendemain, d’ani
@@ -322,8 +318,7 @@
         <lb/>a l’honneur des feqi neſeuit, ha
         <lb/>desEloges raiſel, la roleutde eaueyupa
         <lb/> s -.
-        <lb rend="¬" break="no"/>¬¬¬ ¬¬ .¬¬¬
-        <pb n="8"/>
+        <lb rend="¬" break="no"/>¬¬¬ ¬¬ .¬¬¬ <pb n="8"/>
         <lb/>icies qui oht donné́ les preuues ſignalé́es de leu
         <lb/>eourage, meſmemont celle: du ſieur de Choupes,
         <lb/>Lieutenant General de cette Armée, la Bruour &amp;

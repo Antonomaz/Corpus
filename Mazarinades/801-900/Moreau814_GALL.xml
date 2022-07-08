@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau814_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau814_GALL">
   <teiHeader xml:lang="fr">
     <fileDesc>
       <titleStmt>
@@ -11,15 +11,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -38,9 +34,9 @@
       <sourceDesc>
         <bibl>
           <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k56951907"/>
-          <author ref="isni:0000000061408668">
-            <persName role="auteur_présumé" source="Moreau">
-              <name>Saint-Julien</name>
+          <author ref="isni:0000000061408668" source="Moreau" role="alleged_author">
+            <persName>
+              <surname>Saint-Julien</surname>
             </persName>
           </author>
           <title source="Moreau">Courrier (le) burlesque de la guerre de Paris, envoyé à monseigneur
@@ -48,17 +44,19 @@
             passa jusqu’au retour de Leurs Majestés.</title>
           <pubPlace ref="geonames:2988507">Paris</pubPlace>
           <pubPlace ref="geonames:2803138">Anvers</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="32"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque nationale de France</institution>
             <repository>Département Littérature et art</repository>
             <idno type="cote">YE-2419</idno>
@@ -90,8 +88,8 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BnF_notes">Par Saint-Julien, d'après Moreau. - L'épitre dédicatoire est signée :
+        <p source="Mazarine"/>
+        <p source="BnF">Par Saint-Julien, d'après Moreau. - L'épitre dédicatoire est signée :
           A.B.C.D.E.. - Nouvelle édition revue et corrigée du "Courrier françois, traduit
           fidellement en vers burlesques". - L'adresse d'Anvers est fictive. - Se rapporte aux
           événements écoulés entre le 5 janvier et le 1er avril 1649. Complété par une seconde
@@ -99,6 +97,10 @@
           burlesque envoyé à Monseigneur le prince de Condé, pour divertir Son Altesse durant sa
           prison, luy racontant tout ce qui se passa à Paris en l'année 1648, au sujet de l'arrest
           d'union"</p>
+        <p source="Moreau">814. Courrier (le) burlesque de la guerre de Paris, en- voyé à
+          monseigneur le prince de Condé, pour divertir Son Altesse durant sa prison : ensemble tout
+          ce qui se passa jusqu’au retour de Leurs Majestés. Jouxte la co- pie imprimée à Anvers, et
+          se vend à Pavis. 1650, 32 pages. Deux parties. La seconde est intitulée :</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,6 +109,9 @@
           <term type="subgenre">burlesque</term>
           <term type="subgenre">satirique</term>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -122,8 +127,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k56951907/f2.item.r=bpt6k56951907"/>
+      <p><pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k56951907/f2.item.r=bpt6k56951907"/>
         <lb/>LE
         <lb/>COVRRIER
         <lb/>BVRLESQVE
@@ -175,8 +179,7 @@
         <lb/> Voſtre tres-humble, &amp; tres-obeiſſant
         <lb/>ſerteur, AB.C.D.E. </p>
       <pb n="4" facs="https://gallica.bnf.fr/ark:/12148/bpt6k56951907/f5.item.r=bpt6k56951907"/>
-      <p>
-        <title type="sub">ADVIS TRES-SALVTAIRE au Lecteur.</title>
+      <p><title type="sub">ADVIS TRES-SALVTAIRE au Lecteur.</title>
         <lb/>PRimo. Ce Courrier bien que venant des Païs
         <lb rend="¬" break="no"/>Bas, eſt natif de Paris, ſur les fonds de Sainct
         <lb/>a Paul.
@@ -564,8 +567,7 @@
           <l>
             <lb/>Valloit bien vn meſchant aſſaut.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">7. Ianv.</note> Le Ieudy la Cour toute entiere</l>
+            <lb/><note place="margin-left">7. Ianv.</note> Le Ieudy la Cour toute entiere</l>
           <l>
             <lb/>Reſoudoit ſur cette matiere:</l>
           <l>
@@ -613,8 +615,7 @@
           <l>
             <lb/>De Saint Germain peu réjoûis.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left"> S.Ianv.</note> Le Vendredy premier iour maigre,s</l>
+            <lb/><note place="margin-left"> S.Ianv.</note> Le Vendredy premier iour maigre,s</l>
           <l>
             <lb/> Meſſieurs ſur le traittement aigre</l>
           <l>
@@ -772,8 +773,7 @@
           <l>
             <lb/> De General du Parlement</l>
           <l>
-            <lb/>
-            <note place="margin-left">1o au</note> Dmanche du mos le dixieſme.</l>
+            <lb/><note place="margin-left">1o au</note> Dmanche du mos le dixieſme.</l>
           <l>
             <lb/>Monſieur de Conty ce iour meſme</l>
           <l>
@@ -841,8 +841,7 @@
           <l>
             <lb/>Pour ſa perſonne &amp; pour ſes hardes.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">11 Ian.</note> Le Lundy ſi ie n’ay menty)</l>
+            <lb/><note place="margin-left">11 Ian.</note> Le Lundy ſi ie n’ay menty)</l>
           <l>
             <lb/>Monſieur le Prince de Conty</l>
           <l>
@@ -1241,8 +1240,7 @@
           <l>
             <lb/> Et s’eſt du depuis eſcoullée.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">s lan. </note>Le lendemain au Parlement</l>
+            <lb/><note place="margin-left">s lan. </note>Le lendemain au Parlement</l>
           <l>
             <lb/>Beaufort vint faire compliment,</l>
           <l>
@@ -1312,8 +1310,7 @@
           <l>
             <lb/>Il fit depuis vn Regiment.</l>
           <l rend="indent">
-            <lb/>Le Dimanche le compliment <note place="margin-right">i. Ian.</note>
-          </l>
+            <lb/>Le Dimanche le compliment <note place="margin-right">i. Ian.</note></l>
           <l>
             <lb/>Du Parlement de la Prouence</l>
           <l>
@@ -1321,8 +1318,7 @@
           <l>
             <lb/>Leu par Meſſieurs, leurs plûſt bien fort.</l>
           <l rend="indent">
-            <lb/>Le Lundy le Due de Beaufort <note place="margin-left">18. Ian.</note>
-          </l>
+            <lb/>Le Lundy le Due de Beaufort <note place="margin-left">18. Ian.</note></l>
           <l>
             <lb/>FEut fait Pair en pleine Audience,</l>
           <l>
@@ -1397,8 +1393,7 @@
           <l>
             <lb/>Qui portoient des viures des charmps.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left"> 1an. </note>Le Mardy du coſté de Brie</l>
+            <lb/><note place="margin-left"> 1an. </note>Le Mardy du coſté de Brie</l>
           <l>
             <lb/>Sortit auec Cauallerie</l>
           <l>
@@ -1422,8 +1417,7 @@
           <l>
             <lb/>Firent counoiſtre à tout Paris.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">a0. Ian.</note> Le Mercredy le vingt, nous ſceuſmes</l>
+            <lb/><note place="margin-left">a0. Ian.</note> Le Mercredy le vingt, nous ſceuſmes</l>
           <l>
             <lb/>Par deux lettres que nous receuſmes,</l>
           <l>
@@ -1627,8 +1621,7 @@
           <l>
             <lb/>Qui ſont aſſez conſiderables.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">e an. </note>Vendredy contre les Notables,</l>
+            <lb/><note place="margin-left">e an. </note>Vendredy contre les Notables,</l>
           <l>
             <lb/>Et quelques Eſcheuims d’Amiens,</l>
           <l>
@@ -1811,8 +1804,7 @@
           <l>
             <lb/>Ne pouuoit s’empeſcher de rre.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">25 lan. </note>Le Lundy ne doit eſtre ol mis</l>
+            <lb/><note place="margin-left">25 lan. </note>Le Lundy ne doit eſtre ol mis</l>
           <l>
             <lb/>Qu’on ſceut qu’en Bretagne vn Cõmis</l>
           <l>
@@ -1848,8 +1840,7 @@
           <l>
             <lb/>Soit rejoint le droict des billots.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">a6 Ian. </note>Le Mardy le ſieur la Railliere</l>
+            <lb/><note place="margin-left">a6 Ian. </note>Le Mardy le ſieur la Railliere</l>
           <l>
             <lb/>Fut pns en noüant ſa jartiere</l>
           <l>
@@ -2023,8 +2014,7 @@
           <l rend="indent">
             <lb/>Seuigny commandant pour nous.</l>
           <l>
-            <lb/>
-            <note place="margin-left">a8. Ian. </note>Le Ieudy nous appriſmes taus</l>
+            <lb/><note place="margin-left">a8. Ian. </note>Le Ieudy nous appriſmes taus</l>
           <l>
             <lb/>Que dans la terre Prouençale</l>
           <l>
@@ -2062,8 +2052,7 @@
           <l>
             <lb/>Plus des trois quarts de ſes Galleres.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">o.Ian. </note>Le Samedy trentieſme iour</l>
+            <lb/><note place="margin-left">o.Ian. </note>Le Samedy trentieſme iour</l>
           <l>
             <lb/>De l’Ordonnance de la Cour</l>
           <l>
@@ -2223,8 +2212,7 @@
           <l>
             <lb/>N’ayant reconfort que de Dieu.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">Févr. </note>Le Lundy premiere iournée,</l>
+            <lb/><note place="margin-left">Févr. </note>Le Lundy premiere iournée,</l>
           <l>
             <lb/>IDu ſecond mois de cette année,.</l>
           <l>
@@ -2258,11 +2246,9 @@
           <l>
             <lb/>Qu’ils ne reſpecterent pas plus.</l>
           <l>
-            <lb/>
-            <note place="margin-left">2.Févr. </note>Le Mardy n’eſt pas remarquable.</l>
+            <lb/><note place="margin-left">2.Févr. </note>Le Mardy n’eſt pas remarquable.</l>
           <l>
-            <lb/>
-            <note place="margin-left">4Fé</note>oIeudy quatre. Sortant de tahle</l>
+            <lb/><note place="margin-left">4Fé</note>oIeudy quatre. Sortant de tahle</l>
           <l>
             <lb/>Ou l’on ſetuit force roſty,.</l>
           <l>
@@ -2431,8 +2417,7 @@
           <l>
             <lb/>Et mord fierement la pouſſiere.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">7. Fv. </note>Le ſept. Par vous braue Condé́</l>
+            <lb/><note place="margin-left">7. Fv. </note>Le ſept. Par vous braue Condé́</l>
           <l>
             <lb/>Siege Le Duc d’Orleans ſecondé,</l>
           <l>
@@ -2703,8 +2688,7 @@
           <l>
             <lb/>Et puis apres ſe retirerent.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">1o. Fév. </note>Le Mercredy noſtre ſupport</l>
+            <lb/><note place="margin-left">1o. Fév. </note>Le Mercredy noſtre ſupport</l>
           <l>
             <lb/> d lnoi la pnes l ſ onoie</l>
           <l>
@@ -2865,8 +2849,7 @@
           <l>
             <lb/> Auecques force priſonniers.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">n Eu. </note>Le Ieudy fut pris la Valette,</l>
+            <lb/><note place="margin-left">n Eu. </note>Le Ieudy fut pris la Valette,</l>
           <l>
             <lb/>Il fut pris ſemant des placards,</l>
           <l>
@@ -3038,8 +3021,7 @@
           <l>
             <lb/>Infame bourreau de ſes Rois.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">4.Féo. </note>Le quatorzieſme, &amp; le Dimanhe</l>
+            <lb/><note place="margin-left">4.Féo. </note>Le quatorzieſme, &amp; le Dimanhe</l>
           <l>
             <lb/>Par vn Prelat à barbe blanche</l>
           <l>
@@ -3091,8 +3073,7 @@
           <l>
             <lb/>Tan qu’i lboit, qu’il dort, ou qu’il cauſe.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">15. Feu </note>Or le Lundy quinzieſme iour,</l>
+            <lb/><note place="margin-left">15. Feu </note>Or le Lundy quinzieſme iour,</l>
           <l>
             <lb/> Le vaillant la Mothe Houdancour</l>
           <l>
@@ -3188,8 +3169,7 @@
           <l>
             <lb/>Et qui leurs fit touſiours eſcorte.</l>
           <l rend="indent">
-            <lb/>Ieudy le Gouuerneur de Bry. <note place="margin-right">1S.Fév.</note>
-          </l>
+            <lb/>Ieudy le Gouuerneur de Bry. <note place="margin-right">1S.Fév.</note></l>
           <l>
             <lb/>Qui depuis le fut de Sainct Pry,</l>
           <l>
@@ -3468,8 +3448,7 @@
           <l>
             <lb/> Qui ne fait rien que des cocus.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">2Févr. </note>e Samedy, cent trois charettes</l>
+            <lb/><note place="margin-left">2Févr. </note>e Samedy, cent trois charettes</l>
           <l>
             <lb/> De bleds, &amp; de farines faittes,</l>
           <l>
@@ -3521,8 +3500,7 @@
           <l>
             <lb/>Fut pris &amp; tout ſon ſaint-creſpin.</l>
           <l rend="indent">
-            <lb/>Le Lundy la Trouppe Royalle <note place="margin-right">22. Eéu</note>
-          </l>
+            <lb/>Le Lundy la Trouppe Royalle <note place="margin-right">22. Eéu</note></l>
           <l>
             <lb/>Fit Gribouillette generalle</l>
           <l>
@@ -3647,8 +3625,7 @@
           <l>
             <lb/>Soûpirent depulsplufieuvs mois.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">23.Fe. </note>Le Mardy -pour eur aſſeurance</l>
+            <lb/><note place="margin-left">23.Fe. </note>Le Mardy -pour eur aſſeurance</l>
           <l>
             <lb/>NosDeputez aà̀ ’Audience</l>
           <l>
@@ -3936,8 +3913,7 @@
           <l>
             <lb/>S’y firent traiſner par charroy.</l>
           <l rend="indent">
-            <lb/>Le Dimanche quelque canaille<note place="margin-right"> 2 Fé.</note>
-          </l>
+            <lb/>Le Dimanche quelque canaille<note place="margin-right"> 2 Fé.</note></l>
           <l>
             <lb/>Dont le feu fut vn feu de paille,</l>
           <l>
@@ -3959,8 +3935,7 @@
           <l rend="indent">
             <lb/>Le Lundy premier iour de Mars</l>
           <l>
-            <lb/>Ie fus courre de toutes parts <note place="margin-right">1.Mars.</note>
-          </l>
+            <lb/>Ie fus courre de toutes parts <note place="margin-right">1.Mars.</note></l>
           <l>
             <lb/>Sans apprendre auecune nouuelle.</l>
           <l rend="indent">
@@ -4033,8 +4008,7 @@
           <l>
             <lb/>Des ſoldats tant que tous les milles.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">3. Mars </note>Ils reuinrent le trois de Mars</l>
+            <lb/><note place="margin-left">3. Mars </note>Ils reuinrent le trois de Mars</l>
           <l>
             <lb/>oins guais que deuãr des trois quarts,</l>
           <l>
@@ -4118,8 +4092,7 @@
           <l>
             <lb/>Aux deux bouts ils firent vn fort.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">4.Mars </note>Le leudy ſe bortifierent</l>
+            <lb/><note place="margin-left">4.Mars </note>Le leudy ſe bortifierent</l>
           <l>
             <lb/>Et pour faire accord s’en qllerens</l>
           <l>
@@ -4295,8 +4268,7 @@
           <l>
             <lb/>oii ani eſ pilr ie</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">72 Marse. </note>Le ’anche ie vi’s vn fomnne</l>
+            <lb/><note place="margin-left">72 Marse. </note>Le ’anche ie vi’s vn fomnne</l>
           <l>
             <lb/>Qui diſoit que vẽrs Bray lur Somme</l>
           <l>
@@ -4312,8 +4284,7 @@
           <l>
             <lb/>Et, forces-trouppes qu’ il enoit.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">3 Mars </note>Lundy qu’il eſt ot inutile</l>
+            <lb/><note place="margin-left">3 Mars </note>Lundy qu’il eſt ot inutile</l>
           <l>
             <lb/>Le Regiuent dé noſtre Ville,</l>
           <l>
@@ -4533,8 +4504,7 @@
           <l>
             <lb/>Comfhie vn ſecond Gargantua.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">.Mars </note>Le Ieuidy vint à l’Audience</l>
+            <lb/><note place="margin-left">.Mars </note>Le Ieuidy vint à l’Audience</l>
           <l>
             <lb/>Auec des lettres de creance</l>
           <l>
@@ -4628,8 +4598,7 @@
           <l>
             <lb/>Et qu’ellds’éuſſet ben aie</l>
           <l>
-            <lb/>Le Dimanthe, les Deputez <note place="margin-right">4Mrs</note>
-          </l>
+            <lb/>Le Dimanthe, les Deputez <note place="margin-right">4Mrs</note></l>
           <l>
             <lb/> Qevoir de loing bienatlumé:?</l>
           <l>
@@ -4903,8 +4872,7 @@
           <l>
             <lb/>Le ſieur de Bas &amp; de Crecy.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left"> 19Mrs </note>Le Vendredy dix-neuf, icy</l>
+            <lb/><note place="margin-left"> 19Mrs </note>Le Vendredy dix-neuf, icy</l>
           <l>
             <lb/> Nous ſçeuſmes que daas la Gaſcogne</l>
           <l>
@@ -4936,8 +4904,7 @@
           <l>
             <lb/> C’eſtoit vn quatorze bien fait.</l>
           <l rend="indent">
-            <lb/>
-            <note place="margin-left">2oars </note>Le Samedy ny beau ny laid,</l>
+            <lb/><note place="margin-left">2oars </note>Le Samedy ny beau ny laid,</l>
           <l>
             <lb/>Ny chaud ny froid, à l’Audience</l>
           <l>

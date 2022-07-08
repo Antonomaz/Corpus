@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau105_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau105_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -44,7 +45,9 @@
             poinct au Libelle intitulé, Les sentiments d'un fidel sujet du Roy. Sur l'Arrest du
             Parlement du 29. Decemb. 1651.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1652">1652</date>
           <date source="Carrier" notBefore="1652-04-15">deuxième quinzaine d'avril au plus
             tôt</date>
@@ -52,13 +55,12 @@
             <measure unit="page" quantity="40"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49597</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49597" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49597"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10627</idno>
@@ -90,7 +92,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Réponse au libelle "Les sentiments d'un fidèle sujet du Roy. Sur
+        <p source="Mazarine">Réponse au libelle "Les sentiments d'un fidèle sujet du Roy. Sur
           l'Arrest du Parlement du vingt-neufiésme Decembre 1651" (Moreau n° 3648) attribué à
           Martineau, évêque de Bazas, à Cohon, évêque de Dol, à Servien et à Silhon. Autre édition
           de 1652 mais sans lieu. Avis au lecteur au verso de la p. de titre : l'auteur y dit avoir
@@ -99,6 +101,23 @@
           veritables et des-interessees" (Moreau n° 2574). Attribuée à Louis Machon par R. Celeste
           et à Du Bosc de Montandré. D'après Hubert Carrier, texte paru la deuxième quinzaine
           d'avril au plus tôt (Bibliothèque Mazarine, Ms. 4682-1, f. 66 v.).</p>
+        <p source="Moreau">105. Apologie de messieurs du parlement, répondant, de point en point, au
+          libelle intitulé : Les Sentiments d’un fidèle sujet du roi sur l’arrét du parlement, du 29
+          décembre 1651. Paris , 1652, 40 pages. L’arrêt du 29 décembre mettait à prix la tête du
+          cardinal Mazarin. Il fut cassé parun arrêt du conseil, rendu à Poitiers le 12 janvier
+          1652. Cette lutte judiciaire devint aussitôt à Paris l’objet d’une polémique
+          très-passionnée. On publia d’abord les Véritables maximes du gouvernement de la France
+          contre l’arrêt du conseil. Presqu’en même temps parurent les Sentiments d’un fidèle sujet
+          du roi , qui s’attaquaient à l’arrêt du parlement, et auxquels il fut répondu par
+          l’Apologie , par les Observations véritables et désintéressées , enfin par le Complot et
+          entretien Durlesque sur l’arrêt du 29 décembre, l’une des pièces de Sandricourt. Ces trois
+          derniers pamphlets s’appuient, pour la partie doctrinale, sur les Véritables maximes, qui
+          eurent alors un grand retentissement. L’opinion du parti des princes pour qui ils furent
+          écrits, était que la monarchie devait être tempérée d’aristocratie, c’est-à-dire que les
+          princes et le parlement devaient avoir au gouvernement des affaires une part à peu près
+          égale à celle du roi Au contraire , l’auteur des Sentiments d’un fidèle sujet voulait que
+          la royauté fût absolue. Je ne parle pas du libelle intitulé : De la rature et qualité du
+          parlement de Paris, qui n’est guère qu’un plagiat.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -119,8 +138,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>APOLOGIE
         <lb/>DE
         <lb/>MESSIEVRS

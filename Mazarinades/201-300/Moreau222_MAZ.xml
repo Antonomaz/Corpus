@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau222_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau222_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,7 +37,9 @@
             communes de courre sus. Publié l'unziéme jour de janvier, mil six cens
             quarante-neuf.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Imprimeurs et libraires ordinaires du roi</publisher>
+          <publisher ref="isni:0000000123698534">
+            <persName>Imprimeurs et libraires ordinaires du roi</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Antonomaz" when="1649-01-11">mention de publication le 11 janvier
             1649</date>
@@ -44,13 +47,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49362</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49362" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49362"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14429</idno>
@@ -82,12 +84,18 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Mention de publication de l'arrêt le 10 janvier 1649 signée "Jossier".
+        <p source="Mazarine">Mention de publication de l'arrêt le 10 janvier 1649 signée "Jossier".
           Trois autres éditions de ce texte (BM00525, BM00526, BM00527 titre fini par "Du dixiéme
           janvier mil six cens quarante-neuf" au lieu de "Publié l'unziéme...") selon Armand
           d'Artois et Hubert Carrier (Bibliothèque Mazarine, Ms 4682-1, f. 114v). Arrêt signé "Du
           Tillet". "Par les imprimeurs &amp; libraires ordinaires du Roy" est imprimé sur deux
           lignes. Arrêt daté du 10 janvier 1649 .</p>
+        <p source="Moreau">222. Arrêt de la cour de parlement, contre les gens de guerre, qui ont
+          quitté les frontières pour empêcher les vivres en cette ville, avec injonction aux
+          communes de courre sus, publié l’onzième jour de janvier 1649. Paris, par les imprimeurs
+          et libraires ordinaires du roi, 1649, 4 pages. Il y en a une autre édition, qui diffère de
+          celle-ci seutement en ce qu’au lieu de publié le 11, etc., on lit sur le titre : Du
+          dixième janvier seize cent-quarante-neuf.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -105,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>Arreſt de la Cour
         <lb/>DE PARLEMENT.
         <lb/>CONTRE LES GENS DE VERRE
@@ -119,7 +126,8 @@
         <lb/>Par les Imprimeurs &amp; Libraires ordinai¬
         <lb/>res du Roy.
         <lb/>M. DC. XLIX.
-        <lb/><imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
+        <lb/>
+        <imprimatur>Auec Priuilege de ſa Majeſté</imprimatur>. <pb n="10"/>
         <pb n="11"/>
         <lb/>1
         <lb/>EXTRAICT DES

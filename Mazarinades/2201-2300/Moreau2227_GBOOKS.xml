@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau2227_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2227_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -56,12 +52,11 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Silo ancien</repository>
             <idno type="cote">SJ IF 247/191, 108</idno>
@@ -93,7 +88,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">2227. Lettre envoyée à la reine de Suède pour la di vertir de prendre les
+          armes contre les Parisiens, par un bon et véritable François. Paris, Charles Chenault,
+          1649,7 pages. Signé D. P. On trouve la même signature au bas d'une autre pièce : la Joie
+          publique sur le retour de la paix.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,6 +101,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>
@@ -117,8 +119,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/> ,At a ,&amp;&amp;,ſ,t &amp;, u V,t,,
         <lb/>’’t’’’e ete ’te.oee
         <lb/>LTTRE ES’CRITE A LAREINE
@@ -149,8 +150,7 @@
         <lb/>eſtonnement a ctte mutation quic’eſt impereeptble mét
         <lb/>gliſſee dans cette belle ame dont les paſſions ne s’employ
         <lb rend="¬" break="no"/>oient autrefois qu’a ben fane &amp; qui mantenant ſe mon
-        <lb rend="¬" break="no"/>A ij
-        <pb n="2"/>
+        <lb rend="¬" break="no"/>A ij <pb n="2"/>
         <lb/>tre ſi contraire a certe ville qui eſtend voſtre gloire par
         <lb/>oute l’Europe &amp; qui s’apreſtoit deſia à la perpetuer dans
         <lb/>la poſteriteé́ des ſiecles, Paris le deſir des Nat ions &amp; le ſe
@@ -183,8 +183,7 @@
         <lb rend="¬" break="no"/>ſes de voſtre Illuſtre Parlemét, que l’ona bienozé nomer
         <lb/>ces ſuites ſeditieuſes de quelques caballes, eſtoiét des loços
         <lb/>ſuffiſantes qui vous inſtruiſoient de ce qu’il y auoit à faire
-        <lb/>preuenir
-        <pb n="3"/>
+        <lb/>preuenir <pb n="3"/>
         <lb/>5
         <lb/>preuenir pour cetre charge d’Impoſtsces cocuſſios impu
         <lb rend="¬" break="no"/>nies, cette clameur de tant d’innocés, de vefues &amp;d’orphe
@@ -218,8 +217,7 @@
         <lb/>Mais ie ne croy point, MADAME, que vous manquiez
         <lb/>de lumieres pour connoiſtre l’abandonnement que vous
         <lb/>faitres de voſtre Eſtat, puis que vous ne pouuez conſentir à
-        <lb/>B
-        <pb n="4"/>
+        <lb/>B <pb n="4"/>
         <lb/> 6
         <lb/>cét eſloignement de Paris en vne ſaiſonſi contraire au di
         <lb rend="¬" break="no"/>uertiiſement &amp; à la ſante que vous ne vous perluadiez
@@ -253,8 +251,7 @@
         <lb/>nosRoys, celuy de vos Couches&amp; le berceau de ceMonar
         <lb rend="¬" break="no"/>que que nos vœux nous obtinrent. S. Germain que nous
         <lb/>côſiderios côme vn aſtre debonnaire, qui auoit contribueé́
-        <lb/>au bon-heur de la France, neſera plus regardé de nous que
-        <pb n="5"/>
+        <lb/>au bon-heur de la France, neſera plus regardé de nous que <pb n="5"/>
         <lb/>9
         <lb/>come vre regio oû grondét les orages, &amp; de qui nous naiſ
         <lb rend="¬" break="no"/>ſentles liſgr ſes: Ainſi vous perueruſſez les ordres, &amp;vous
@@ -287,8 +284,7 @@
         <lb rend="¬" break="no"/>nation contrare aà̀ celle que vous luy communiquaſtes
         <lb/>dans vos entrailles, &amp; que Dieu verſe dans ſon ame par le
         <lb/>merite du Sacre auquel l eſt preparé, n’eſt. ce point vne
-        <lb/>maudite yuroye au mlieu d’vneabondante &amp; belle moiſ¬
-        <pb n="6"/>
+        <lb/>maudite yuroye au mlieu d’vneabondante &amp; belle moiſ¬ <pb n="6"/>
         <lb/>
         <lb/>8
         <lb/> ſon?qu’elle erudition d’éleuer le cœur d’vnPrince à la hai

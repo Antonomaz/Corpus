@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2638_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2638_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,7 +37,9 @@
           <title source="Mazarine">L'oygnon, ou L'union qui fait mal a Mazarin, avec quelques autres
             pieces du temps, contre luy.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1649">1649</date>
           <date source="Carrier" notBefore="1649-01" notAfter="1649-03">pendant le blocus de
             Paris</date>
@@ -44,13 +47,12 @@
             <measure unit="page" quantity="12"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM48880</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48880" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48880"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M10523</idno>
@@ -82,7 +84,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers. 4 états : A, avec la réclame en bas de la p. 4 ; B, sans la
+        <p source="Mazarine">En vers. 4 états : A, avec la réclame en bas de la p. 4 ; B, sans la
           réclame "S'il" ; C avec la réclame et le mot "FIN" en p. 9 alors que le texte se poursuit,
           mais sans signature et ; D sans la réclame, mais avec le mot "FIN" et sans signature p.9.
           Autre édition sans ornement au titre, la date d'édition est écrite "M. DC. XLIX.", la
@@ -92,6 +94,10 @@
           le sonnet principal dans "Nouveau siècle de Louis XIV", I, p. 83-84, avec "mat" au lieu de
           "mal" dans le titre. Texte de 1648 mais imprimé en 1649 pendant le blocus de Paris ou
           juste après.</p>
+        <p source="Moreau">2638. Oygnon (l') ou l'union qui fait mal à Mazarin, avec quelques autres
+          pièces du temps contre lui. Pa ris, 1649, 12 pages. Voici la plus jolie pièce de ce
+          recueil. Le surintendant d'Emery venait d'être exilé à son château de Tanlay. On lui
+          écrivit : « D'Hemery, ne t'en vas pas. Jules te suit pas à pas, Attends-le (à Tanlay).</p>
       </abstract>
       <textClass>
         <keywords>
@@ -111,8 +117,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>L'OYGNON
         <lb/>OV
         <lb/>L'VNION,
@@ -123,8 +128,7 @@
         <lb/>Auec quelques autres pieces du
         <lb/>temps, contre luy. <figure type="decoration"/>
         <lb/>A PARIS,
-        <lb/>M. DC XLVIIII.<pb n="10"/>
-        <pb n="11"/>
+        <lb/>M. DC XLVIIII.<pb n="10"/><pb n="11"/>
         <lb/>L’OYGNON
         <lb/>OV
         <lb/>L’VNION,

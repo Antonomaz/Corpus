@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau171_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau171_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -47,13 +48,12 @@
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49806</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49806" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49806"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14238 bis</idno>
@@ -85,12 +85,17 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Les deux arrêts sont également publiés dans "Lettre et declaration du
+        <p source="Mazarine">Les deux arrêts sont également publiés dans "Lettre et declaration du
           Roy, avec les articles en consequence, accordez par sa Majesté pour le repos &amp; pour la
           tranquillité publique de ses subjets de la ville de Bordeaux. Verifiez au Parlement de
           ladite ville de Bordeaux le 7. Janvier mil six cens cinquante." (BM00508). Signés "De
           Pontac". D'après Hubert Carrier, texte paru mi-janvier 1650 (Bibliothèque Mazarine, Ms.
           4682-1, f. 97v).</p>
+        <p source="Moreau">171. Arrêt de la cour de parlement de Bordeaux pour la paix générale de
+          la province, avec ordre de chanter le Te Deum par toute ladite province. Paris, Guill.
+          Sassier, 1650 , 8 pages. Il y a deux arrêts; l’un pour le Te Deum, l’autre pour la
+          vérification de la déclaration du roi; celui-ci du 7 janvier 1650. IIs sont dans la Lettre
+          et déclaration du roi, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -108,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARRESTS
         <lb/>DE LA COVR DE
         <lb/>PARLEMENT DE

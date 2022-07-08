@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau2246_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2246_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -31,20 +32,21 @@
           <title source="Mazarine">Lettre joviale presentée aux Princes, pour leur sortie du Havre
             de Grace. En vers burlesques.</title>
           <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1651">1651</date>
           <date source="Carrier" when="1651-02-15">mi-février 1651</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM50292</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50292" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50292"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M11462</idno>
@@ -76,9 +78,11 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">En vers octosyllabes. 2 états (A/B) : p. 6, l. 17 "Iralie"/"Italie".
+        <p source="Mazarine">En vers octosyllabes. 2 états (A/B) : p. 6, l. 17 "Iralie"/"Italie".
           D'après Hubert Carrier, texte paru la mi-février 1651 (Bibliothèque Mazarine, Ms. 4682-3,
           f. 295v).</p>
+        <p source="Moreau">2246. Lettre joviale, présentée aux princes pour leur sortie du Hâvre de
+          Grâce, en vers burlesques. Paris, 1651, 8 pages. Rare et sotte.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -102,8 +106,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>LETRE
         <lb/>IOVIALE
         <lb/>prſentée aux

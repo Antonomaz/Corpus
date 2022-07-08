@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_lettres" xml:id="Moreau1990_GBOOKS">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1990_GBOOKS">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -10,15 +10,11 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie
-            <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
@@ -49,18 +45,19 @@
           </persName>
           <title source="Moreau">Lettre de M. le maréchal de Turennes (sic ) à la reine.</title>
           <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="8"/>
           </extent>
-          <note type="format"/>
-          <note type="BM_identifier" cert="high"/>
-          <ref type="BM_notice" cert="high" target="#URLSource"/>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Lyon</settlement>
+            <settlement ref="geonames:2996944">Lyon</settlement>
             <institution>Bibliothèque municipale de Lyon</institution>
             <repository>Réserve</repository>
             <idno type="cote">Rés 311151 </idno>
@@ -92,7 +89,10 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
+        <p source="Mazarine"/>
+        <p source="Moreau">1990. Lettre de M. le maréchal de Turennes (sic)à la reine. Paris, 1650,8
+          pages. Il y en a une meilleure édition, s. l. n. d. : Lettre de monsieur le maréchal de
+          Turenne envoyée à la reine, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -101,6 +101,9 @@
           <term type="subgenre"/>
           <term type="subgenre"/>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
     </profileDesc>
@@ -110,15 +113,13 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="1"/>
+      <p><pb n="1"/>
         <lb/>LETTRE
         <lb/>MONSIEVR
         <lb/>MARESCHAL
         <lb/> ala Reyne
         <lb/>Pl
-        <lb/>oe
-        <pb n="2"/>
+        <lb/>oe <pb n="2"/>
         <lb/> T
         <lb rend="¬" break="no"/> 1J
         <lb rend="¬" break="no"/> ..
@@ -140,8 +141,7 @@
         <lb/>IIAI1
         <lb/>„¬¬¬¬¬¬¬¬2¬¬¬¬¬¬¬,¬¬.¬¬¬¬¬
         <lb rend="¬" break="no"/>1
-        <lb/>IDI.I6
-        <pb n="3"/>
+        <lb/>IDI.I6 <pb n="3"/>
         <lb/>5
         <lb/>Letre d onſieur le Mareſhal de Turennes,,
         <lb/>iet l ope..
@@ -169,8 +169,7 @@
         <lb/>ois auez fou biié lrgM e pomarpir ouiſér le’ boule
         <lb rend="¬" break="no"/>ueſement :pour eodmbiem vosdiie.vousſ aDA M,
         <lb/>que ét aguſte qenat, debelabird Parlaene de Pan.
-        <lb/>2
-        <pb n="4"/>
+        <lb/>2 <pb n="4"/>
         <lb/>Ee ſe fut point oppoſéaux conſeils de Monſeignenr le
         <lb/>Cardinal Mazarin, lors qu’il auoit perſuadé à V. M.
         <lb/>que la ruïne de cette grande Ville eſtoit vrile au ſerui
@@ -202,8 +201,7 @@
         <lb/>le Prince ont celuy de ousprupoſer oe qu’ilscroyen
         <lb/> tile au bien de cét Eſtat &amp;l’on ne petteurfefmer la
         <lb/> bouche,
-        <lb/>1
-        <pb n="5"/>
+        <lb/>1 <pb n="5"/>
         <lb/>bouche, ant qriſs seulent porret aàV. M. les plaintes
         <lb/>de ſon peuple; mais bien Ioing deluy laiſſer ce droict,
         <lb/>vous le mettez dans v lieu o il ne-peut pas meſme
@@ -233,8 +231,7 @@
         <lb/> autre, que de recourir aà̀ V. M. &amp; la ſupplier auec tout
         <lb/>le roſpect que ſes ſuiess luy doiuent,de rentrer en élle¬.
         <lb/> aeſme, &amp; vouloir, ou par ſa propre bonté́ relaſchet
-        <lb/>nonſieur le Princa, ou du moins vouloir que le Parle¬
-        <pb n="6"/>
+        <lb/>nonſieur le Princa, ou du moins vouloir que le Parle¬ <pb n="6"/>
         <lb/>ment econnoiſſe, &amp;s qu’il puifſe désauioumd’hyais
         <lb/>dre compte à voſtre aajeſté, &amp; vn iour au Roy voſtre
         <lb/>Fils, du bien ou d mal que ſa detention pencprcurer!
@@ -264,8 +261,7 @@
         <lb rend="¬" break="no"/>nant lequel nous auons eſté obligez de leur promettre
         <lb/>d’employer iuſqu’à aoſtre dernier ſouſpir, toures oos
         <lb/>pçines &amp; nos ſoins, &amp; detromper V. M. du perni
-        <lb rend="¬" break="no"/>cieux conſeil que leé Cardinal ’masarin luy donne, d
-        <pb n="7"/>
+        <lb rend="¬" break="no"/>cieux conſeil que leé Cardinal ’masarin luy donne, d <pb n="7"/>
         <lb/>Eehir couſidurs l’Europe en guerre, &amp; ionſeignene le
         <lb/>Prince en priſon, comme de leur coſté ils ſe ſont obli
         <lb rend="¬" break="no"/>gez de n’entendre iamais propoſition de paix aucune,
@@ -296,8 +292,7 @@
         <lb/>la fin obligé de tenir pour ſuſpectes les chicanes, dont
         <lb/>vos Miniſtres vſoient continuellement ſur des traittez
         <lb/>de cette importance, &amp; qui deuoient donner le repos
-        <lb/>¬¬¬
-        <pb n="8"/>
+        <lb/>¬¬¬ <pb n="8"/>
         <lb/>a vn peuple entiérement deſolé: mais vn Prince qui
         <lb/>ſouuen a expoſeé ſa vie, &amp;verſeé ſon ſang à la teſte de
         <lb/>oarmées, pour rendre voſtre nom redourable à tou;

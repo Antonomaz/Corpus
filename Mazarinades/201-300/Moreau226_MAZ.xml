@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau226_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau226_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -53,13 +54,12 @@
             <measure unit="page" quantity="7"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49905</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49905" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49905"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M14436</idno>
@@ -91,10 +91,13 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">A aussi été publié dans le recueil éditorial intitulé "Recueil de
+        <p source="Mazarine">A aussi été publié dans le recueil éditorial intitulé "Recueil de
           diverses pieces qui ont paru durant les mouvemens derniers de l'année 1649." (BM00059).
           Signé "Guyet". Arrêt daté du 15 janvier 1649. D'après Hubert Carrier, texte paru le 16
           janvier 1649 (Bibliothèque Mazarine, Ms. 4682-1, f. 115v).</p>
+        <p source="Moreau">226. Arrêt de la cour de parlement, portant absolution de la calomnieuse
+          accusation intentée contre monsei- gneur le duc de Beaufort par le cardinal Mazarin. Pa-
+          ris, veuve Théodore Pépingué et Est. Maucroy, 1649, 7 pages. Du 15 janvier 1649.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -112,8 +115,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="9"/>
+      <p><pb n="9"/>
         <lb/>ARREST
         <lb/>DE LA COVR
         <lb/>DE PARLEMENT,

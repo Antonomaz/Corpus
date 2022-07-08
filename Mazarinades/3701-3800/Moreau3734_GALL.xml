@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="mazarinades_burlesques" xml:id="Moreau3734_GALL">
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3734_GALL">
   <teiHeader xml:lang="fr">
     <fileDesc>
       <titleStmt>
@@ -10,21 +10,18 @@
         <title type="sub">Édition Antonomaz</title>
         <respStmt>
           <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
-          <persName role="XML_Encoding">Lecha Mélanie <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
+          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
+                >Stagiaire</roleName></affiliation>
           </persName>
           <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
           <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
           <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="Corrector">Hip Amélie <affiliation>
-              <roleName type="status">Vacataire</roleName>
-            </affiliation>
+          <persName role="Corrector">Hip Amélie <affiliation><roleName type="status"
+                >Vacataire</roleName></affiliation>
           </persName>
         </respStmt>
       </titleStmt>
@@ -41,7 +38,7 @@
         <bibl>
           <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k55164793"/>
           <author ref="isni:0000000120990126">
-            <persName role="auteur">
+            <persName>
               <forename>Paul</forename>
               <surname>Scarron</surname>
             </persName>
@@ -49,18 +46,21 @@
           <title source="Moreau">Sur la conférence de Ruel en mars, vers burlesques du sieur
             S.</title>
           <pubPlace>Sans Lieu</pubPlace>
-          <publisher>Sans Nom</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Moreau" when="1649">1649</date>
-          <date source="Antonomaz" notAfter="1649-03-31">vers la paix de Saint-Germain, fin mars 16649</date>
+          <date source="Antonomaz" notAfter="1649-03-31">vers la paix de Saint-Germain, fin mars
+            16649</date>
           <extent>
             <measure unit="page" quantity="4"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high"/>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque nationale de France</institution>
             <repository>Département Littérature et art</repository>
             <idno type="cote">YE-4939</idno>
@@ -92,10 +92,15 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes"/>
-        <p source="BnF_notes"/>
-        <p source="Antonomaz"/>Couplets en quintils d'octosyllabes. Sur l'air de la petite Fronde. A
-        partir de la 4e strophe, publié dans les Oeuvres de Scarron, 1668,t. I, p. 103</abstract>
+        <p source="Mazarine"/>
+        <p source="Antonomaz">Couplets en quintils d'octosyllabes. Sur l'air de la petite Fronde. A
+          partir de la 4e strophe, publié dans les Oeuvres de Scarron, 1668,t. I, p. 103</p>
+        <p source="Moreau">3734. Sur la conférence de Ruel en mars, vers bur- ,^ r - y lesques du
+          sieur S. (S. 1., 1649), 4 pages. Couplets spirituels qui pourraient être de Scarron. a Six
+          semaines de réglement Font pis que vingt ans de désordre. » Sautreau de Marsy a donné à ce
+          pamphlet le singulier titre de : Disette (p. 186 du I" vol. du Nouveau siècle de Louis
+          XIV).</p>
+      </abstract>
       <textClass>
         <keywords>
           <term type="form">vers</term>
@@ -103,6 +108,9 @@
           <term type="subgenre">burlesque</term>
           <term type="subgenre">satirique</term>
           <term type="subject"/>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
         </keywords>
       </textClass>
       <settingDesc>

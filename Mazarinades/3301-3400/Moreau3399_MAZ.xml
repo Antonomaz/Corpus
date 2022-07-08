@@ -1,6 +1,7 @@
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="non_classé" xml:id="Moreau3399_MAZ">
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3399_MAZ">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -36,19 +37,20 @@
           <title source="Mazarine">Response de messieurs les Princes aux calomnies &amp; impostures
             du Mazarin.</title>
           <pubPlace source="Mazarine" ref="geonames:2989317">Orléans</pubPlace>
-          <publisher>Anonyme</publisher>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
           <date source="Mazarine" when="1650">1650</date>
           <extent>
             <measure unit="page" quantity="35"/>
           </extent>
           <note type="format">in-4</note>
-          <note type="BM_identifier" cert="high">BM49267</note>
-          <ref type="BM_notice" cert="high"
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49267" cert="high"
             target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49267"/>
         </bibl>
         <msDesc>
           <msIdentifier>
-            <settlement>Paris</settlement>
+            <settlement ref="geonames:2988507">Paris</settlement>
             <institution>Bibliothèque Mazarine</institution>
             <repository/>
             <idno type="cote">M15438-3</idno>
@@ -80,7 +82,7 @@
         <language ident="fra">Document en français</language>
       </langUsage>
       <abstract>
-        <p source="BM_notes">Réponse à la "Lettre du roy, sur la detention des princes de Condé et
+        <p source="Mazarine">Réponse à la "Lettre du roy, sur la detention des princes de Condé et
           de Conty, &amp; duc de Longueville. Envoyée au parlement le 20. janvier 1650." (Célestin
           Moreau, "Bibliographie des mazarinades", t. 2, n° 2197). Autres éditions : sans adresse,
           1650, 50 p. (BM00189, BM00190 et BM00191) ; "Reveue et corrigée", 1650, 44 p. (BM00188) ;
@@ -88,6 +90,10 @@
           (Bibliothèque Mazarine, Ms 4682-5, f. 180). Probablement édité à Orléans d'après la
           présence de l'exemplaire Bibliothèque Mazarine M 15438-3 dans un recueil éditorial de
           pièces d'origine orléanaise</p>
+        <p source="Moreau">3399. Reponse de messieurs les princes aux calomnies Ce factura ne manque
+          pas d'habileté ; et il mérite d'être lu. Il y en a une édition revue et corrigée, sur le
+          titre du moins , de la même année 16S0 , mais qui n'a que 44 pages. On sait qu'il répond à
+          la Lettre du roi sur la détention des prin ces, etc.</p>
       </abstract>
       <textClass>
         <keywords>
@@ -107,8 +113,7 @@
   </teiHeader>
   <text>
     <body>
-      <p>
-        <pb n="7"/>
+      <p><pb n="7"/>
         <lb/>RESPONSE
         <lb/>DE MESSIERsS
         <lb/>LES PRINCES
