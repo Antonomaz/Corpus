@@ -49,7 +49,7 @@ def check(file):
 
 if __name__ == "__main__":
     # À MODIFIER : faire un vrai glob pour indiquer le chemin de fichier en entrée, voir pour la récursivité 
-    files = glob.glob("../Mazarinades/**/*.xml", recursive=True)
+    files = glob.glob("../to_do/Karine_Précarré_glane3/*.xml", recursive=True)
     Moreau = "ListeMazarinades - Documents_all.csv"
 
     for file in files:
