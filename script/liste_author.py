@@ -76,9 +76,11 @@ if __name__ == "__main__":
         doc = etree.parse(file, parser)
         data = get_data(doc)
         output.append(data)
+        output = list({v['author_id']:v for v in output}.values())
+
         
     
-    with open('../output/author.csv', 'w+', newline='') as csvfile:
+    with open('../output/author_unique.csv', 'w+', newline='') as csvfile:
         fieldnames = ['id', 'author_id', 'orgName', 'persName', 'forename', 'surname', 'addname']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter=',')
         writer.writeheader()
