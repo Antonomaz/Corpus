@@ -92,7 +92,7 @@ if __name__ == "__main__":
     liste_XML_id.sort()
     
     # On récupère les identifiants Moreau contenu dans le json
-    Moreau = open('episodes_Moreau_v2.json', 'r')
+    Moreau = open('episodes_Moreau_v3.json', 'r')
     Moreau = json.load(Moreau)
     liste_Moreau_id = get_Moreau_id(Moreau)
     liste_Moreau_id.sort()

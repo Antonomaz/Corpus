@@ -1,390 +1,733 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau805_MAZ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Coup (le) de fronde ou l’Écho du bois de
-          Vincennes.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
-            Jean-Baptiste</persName>
-          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2022-01-31">31 janvier 2022</date>
-        <availability status="restricted" n="cc-by">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz17695"/>
-          <author/>
-          <title source="Mazarine">Le coup de fronde ou L'echo du bois de Vincenne.</title>
-          <pubPlace source="Mazarine" ref="geonames:2989317">Orléans</pubPlace>
-          <publisher>
-            <persName>Sans Nom</persName>
-          </publisher>
-          <date source="Mazarine" when="1650">1650</date>
-          <date source="Carrier" notBefore="1650-02-01" notAfter="1650-02-07">première semaine de
-            février 1650</date>
-          <extent>
-            <measure unit="page" quantity="4"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="BM49273" cert="high"
-            target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49273"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2988507">Paris</settlement>
-            <institution>Bibliothèque Mazarine</institution>
-            <repository/>
-            <idno type="cote">M15438-13</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+<TEI xml:id="Moreau805_MAZ" xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title source="Moreau" type="main">
+     Le Coup de fronde ou l’Écho du bois de
+          Vincennes.
+    </title>
+    <title type="sub">
+     Édition Antonomaz
+    </title>
+    <respStmt>
+     <resp>
+      Chaîne de traitement
+     </resp>
+     <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">
+      Abiven Karine
+     </persName>
+     <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">
+      Lejeune Gaël
+     </persName>
+     <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">
+      Tanguy
+            Jean-Baptiste
+     </persName>
+     <persName ref="orcid:0000-0003-0850-8266" role="engineer">
+      Bartz Alexandre
+     </persName>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <publisher>
+     Projet ANTONOMAZ / Sorbonne Université
+    </publisher>
+    <ref target="https://github.com/Antonomaz"/>
+    <date type="file_creation" when="2022-01-31">
+     31 janvier 2022
+    </date>
+    <availability n="cc-by" status="restricted">
+     <licence target="https://creativecommons.org/licenses/by/4.0"/>
+    </availability>
+   </publicationStmt>
+   <sourceDesc>
+    <bibl>
+     <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz17695"/>
+     <author/>
+     <title source="Mazarine">
+      Le coup de fronde ou L'echo du bois de Vincenne.
+     </title>
+     <pubPlace ref="geonames:2989317" source="Mazarine">
+      Orléans
+     </pubPlace>
+     <publisher>
+      <persName>
+       Sans Nom
+      </persName>
+     </publisher>
+     <date source="Mazarine" when="1650">
+      1650
+     </date>
+     <date notAfter="1650-02-07" notBefore="1650-02-01" source="Carrier">
+      première semaine de
+            février 1650
+     </date>
+     <extent>
+      <measure quantity="4" unit="page"/>
+     </extent>
+     <note type="format">
+      in-4
+     </note>
+     <relatedItem cert="high" source="Mazarine" subtype="BM49273" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49273" type="identifier"/>
+    </bibl>
+    <msDesc>
+     <msIdentifier>
+      <settlement ref="geonames:2988507">
+       Paris
+      </settlement>
+      <institution>
+       Bibliothèque Mazarine
+      </institution>
+      <repository/>
+      <idno type="cote">
+       M15438-13
+      </idno>
+     </msIdentifier>
+     <history>
+      <provenance>
+       <stamp>
+        True
+       </stamp>
+      </provenance>
+     </history>
+    </msDesc>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <projectDesc>
+    <p>
+     Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
-          auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
-          bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Antonomaz">Il s'agit de couplets chantés sur l'air de la (Grande) Fronde. Le
+          auteur oublié.
+    </p>
+    <p>
+     Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+          bibliothèques numériques publiques et de Google livres.
+    </p>
+    <p>
+     L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.
+    </p>
+   </projectDesc>
+   <editorialDecl>
+    <p/>
+   </editorialDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="fra">
+     Document en français
+    </language>
+   </langUsage>
+   <abstract>
+    <p source="Antonomaz">
+     Il s'agit de couplets chantés sur l'air de la (Grande) Fronde. Le
           numéro Moreau correspond à une autre édition, chez Pierre-Jacques Canabot, ce texte ayant
           connu un assez grand nombre de rééditions comme le signale Carrier. Il s'agit d'une des
           nombreuses chansons faites juste après l'emprisonnement des princes, et souvent copiée
-          dans des recueils manuscrits de chansons ultérieurs.</p>
-        <p source="Mazarine">En vers octosyllabes, sur la captivité des princes à Vincennes en 1650.
+          dans des recueils manuscrits de chansons ultérieurs.
+    </p>
+    <p source="Mazarine">
+     En vers octosyllabes, sur la captivité des princes à Vincennes en 1650.
           Probablement édité à Orléans à la suite de l'édition parisienne (BM01519 et BM01520)
           d'après l'analyse de Hubert Carrier (Bibliothèque Mazarine, Ms 4682-2, f. 102v) sur
           l'exemplaire conservé à la Bibliothèque municipale d'Orléans, et la présence de
           l'exemplaire Bibliothèque Mazarine M 15438-13, similaire au précédent, dans un recueil
           éditorial de pièces d'origine orléanaise. D'après H. Carrier, texte paru à Paris la
-          première semaine de février 1650.</p>
-        <p source="Moreau">805. Coup (le) de fodre ou l’Écho du bois de Vincen- nes. Paris,
+          première semaine de février 1650.
+    </p>
+    <p source="Moreau">
+     805. Coup (le) de fodre ou l’Écho du bois de Vincen- nes. Paris,
           Pierre-Jacques Canabot, 1650, 7 pages. Si quelqu’un leur ouvre la porte , Je veux que le
-          diable l’emporte , Et que l’estafier saint Martin Le tourmente soir et matin. Corrigé dans le suplément 1.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">vers</term>
-          <term type="genre" ref="litterature/chansons.xml">Chanson</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-          <term type="subject">Condé‎, Louis de Bourbon‎ (1621-1686 ; prince de‎)</term>
-          <term type="subject">Conti‎, Armand de Bourbon‎ (1629-1666 ; prince de‎)</term>
-          <term type="subject">Longueville‎ II, Henri (1595-1663‎ ; duc de)</term>
-          <term type="subject">Paris (France)</term>
-        </keywords>
-      </textClass>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-02-10" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p><pb n="7"/>
-        <lb/>LE COVP
-        <lb/>DE FRONDE
-        <lb/>OV
-        <lb/>L’ECH0
-        <lb/>Du Bois de Vincenne. <pb n="8"/>
-        <l>
-          <lb/>LE COVP DE FRONDE</l>
-        <l>
-          <lb/>Où l’Echo du Bois de Vincenne,</l>
-        <l>
-          <lb/>Sur le chant des Frondeurs.</l>
-        <l> Il est certain depuis quinzaine,</l>
-        <l>
-          <lb/> Qu’on entend que gemiſſemens,</l>
-        <l>
-          <lb/>u Studſlous du lou de meeaue</l>
-        <l>
-          <lb/> Que ſbut Candô &amp;ſs parens,</l>
-        <l>
-          <lb/> L&amp;qaels l’vn lautre fe querellent,</l>
-        <l>
-          <lb/>Et tre-mal-heureux ils s’appellent,</l>
-        <l>
-          <lb/>Le plus vieux diſantà Condé,</l>
-        <l>
-          <lb/>C’eſtpouvousavoir ſecondé.4</l>
-        <l>
-          <lb/>eCoey iſoit ſon fere, </l>
-        <l>
-          <lb/>Ea quellé miſereſormanesnus,</l>
-        <l>
-          <lb/>Le Roy &amp; la Reyne ſa Mere,</l>
-        <l>
-          <lb/>Nous traittentauec grand courtroux,.</l>
-        <l>
-          <lb/>Eſt-cereenpencernos peipe</l>
-        <l>
-          <lb/>De nous tenir en telles geſnes,</l>
-        <l>
-          <lb/>Eſt-ce le fruit de nos valeurs</l>
-        <l>
-          <lb/>De nous tiaiteer comme vlers.</l>
-        <l>
-          <lb/>Ventrebleu dit Condé i’enrage,</l>
-        <l>
-          <lb/>De me voir pris de la, façon,</l>
-        <l>
-          <lb/>C’eſt Mazarin cét homme Sage</l>
-        <l>
-          <lb/>Qui nous a tendu l’hameçon,</l>
-        <l>
-          <lb/>Mais par la mort ſi ’en eſchappe,</l>
-        <l>
-          <lb/>Ie luy donneré boane tappe,</l>
-        <l>
-          <lb/>Puiſque par ſon maudit Conſeil,</l>
-        <l>
-          <lb/>Nousſommes à l’ombre du Soleil,</l>
-        <l>
-          <lb/>
-        </l>
-        <l>
-          <lb/>1</l>
-        <l>
-          <lb/>i</l>
-        <l>
-          <lb/>¬</l>
-        <l>
-          <lb/>¬</l>
-        <l>
-          <lb/>les</l>
-        <l>
-          <lb/>D:.</l>
-        <l>
-          <lb/>S1c</l>
-        <l>
-          <lb/>l</l>
-        <l>
-          <lb/>C</l>
-        <l>
-          <lb/>1</l>
-        <l>
-          <lb/>1</l>
-        <l>
-          <lb/>2</l>
-        <l>
-          <lb/>l:</l>
-        <l>
-          <lb/>l</l>
-        <l>
-          <lb/>.</l>
-        <l>
-          <lb/>.</l>
-        <l>
-          <lb/>7</l>
-        <l>
-          <lb/>C</l>
-        <pb n="9"/>
-        <l>
-          <lb/>l l</l>
-        <l>
-          <lb/>11</l>
-        <l>
-          <lb/>3</l>
-        <l>
-          <lb/>Que n’ay-ie pas fait pour ce Maitre</l>
-        <l>
-          <lb/>Ils’en devroit bion ſouuenir,</l>
-        <l>
-          <lb/>Quoy ne ma-t’on pas veu pareſtre,</l>
-        <l>
-          <lb/>En tous lieux pou le rafntenir,</l>
-        <l>
-          <lb/>I’ay hazardé́ cene fois ma ie,</l>
-        <l>
-          <lb/>Pour ſatisfaireà fonenvye.</l>
-        <l>
-          <lb/>Et auiourd’huy grand Cardial</l>
-        <l>
-          <lb/>Ne me procure que du mal.</l>
-        <l>
-          <lb/>Ie veux q’onme berne &amp; me tỗde,</l>
-        <l>
-          <lb/>Dit Longueville iuran Dieu.</l>
-        <l>
-          <lb/>Si ce n’eſt vn grand coup de fronde,</l>
-        <l>
-          <lb/>Qui nous a ieté́ en ce lieu,</l>
-        <l>
-          <lb/>L’on void l’effect deſa puiſſance,</l>
-        <l>
-          <lb/>Car elle a de tous oüiſſance</l>
-        <l>
-          <lb/>Et l’on voit les frondeurs au point,</l>
-        <l>
-          <lb/>Que l’on ne s’imaginoit point.</l>
-        <l>
-          <lb/>Conſiderez vn peu le monde,</l>
-        <l>
-          <lb/>Il ny a point deſeureté,</l>
-        <l>
-          <lb/>Et qu’il eſt bien fol qui ſi fonde,</l>
-        <l>
-          <lb/>Ie vous le dis en vérité,</l>
-        <l>
-          <lb/>A-ton pas veu pendant la guerre,</l>
-        <l>
-          <lb/>Le Bourgeois renuerſer parterre,</l>
-        <l>
-          <lb/>Les partiſans de Mazarin,</l>
-        <l>
-          <lb/>Et maintenant c’eſt leur Couſin.</l>
-        <l>
-          <lb/>Conty epaeauaa leurs paloe,</l>
-        <l>
-          <lb/>Dit ma foy il ont bienraſon</l>
-        <l>
-          <lb/>Puiſque i’aypris de leurs piſtolles,</l>
-        <l>
-          <lb/>Dec nous laiſſer dans la priſon,</l>
-        <l>
-          <lb/>Et vous Moaſieur de Longueuille,</l>
-        <l>
-          <lb/>Vous vous teniez dans voſtrs Ville,</l>
-        <l>
-          <lb/>Mon frere faiſoit le diableicy,</l>
-        <l>
-          <lb/>Etmoy i’allois à luuiy.</l>
-        <l>
-          <lb/>,,a,,,,,,,. ,,, a ,,,a</l>
-        <l>
-          <lb/>l1</l>
-        <l>
-          <lb/>I</l>
-        <l>
-          <lb/>l</l>
-        <pb n="10"/>
-        <l>
-          <lb/>!</l>
-        <l>
-          <lb/>1</l>
-        <l>
-          <lb/>1</l>
-        <l>
-          <lb/>11</l>
-        <l>
-          <lb/>1</l>
-        <l>
-          <lb/>1</l>
-        <l>
-          <lb/>1l</l>
-        <l>
-          <lb/>1</l>
-        <l>
-          <lb/>8</l>
-        <l>
-          <lb/>!</l>
-        <l>
-          <lb/>l</l>
-        <l>
-          <lb/>4</l>
-        <l>
-          <lb/>1</l>
-        <l>
-          <lb/>4</l>
-        <l>
-          <lb/>Mai s ne ſoyons point tanten peine,</l>
-        <l>
-          <lb/>Et ceſſons vn peu de geémir,</l>
-        <l>
-          <lb/> Bouillon, la Mouſſaye, &amp; Turenne,</l>
-        <l>
-          <lb/>Nous pourront venirſecourir,</l>
-        <l>
-          <lb/>5’il ny viennent a la mal-heure,</l>
-        <l>
-          <lb/> ous y ferons longue demoure,</l>
-        <l>
-          <lb/>Et n’aurons pasle meſmeſort,</l>
-        <l>
-          <lb/>Qu’a eu cy-deuant dc Beaufort.</l>
-        <l>
-          <lb/>Ce Beaufornousfaitbienlanique,</l>
-        <l>
-          <lb/>Auecque le Coadjuteur,</l>
-        <l>
-          <lb/>Et ioignent l’homme de prarique,</l>
-        <l>
-          <lb/>Pour augmenter noſtre mal-heur,</l>
-        <l>
-          <lb/>Chacun en rit, chacun en dance,</l>
-        <l>
-          <lb/>Chacun en faitreſiouiſſance,</l>
-        <l>
-          <lb/>Et meſme l’on voit dans Paris,</l>
-        <l>
-          <lb/>Par noſtre perte bien des ris.</l>
-        <l>
-          <lb/>Nous penſiõs biẽpar noſtreadreſſe,</l>
-        <l>
-          <lb/>Venir about de nos projets,</l>
-        <l>
-          <lb/>Mais ils ſont tous a la renuerſe,</l>
-        <l>
-          <lb/>Et la Fronde les a deffaicts,</l>
-        <l>
-          <lb/>Si l’on voulois vnpeu attendre,</l>
-        <l>
-          <lb/>A ce que nous voulons pretendre,</l>
-        <l>
-          <lb/>Et nous tirer de ce lieu cy,.</l>
-        <l>
-          <lb/>Nous dirons ma foy grandmerey.</l>
-        <l>
-          <lb/>C’eſt vne choſe uariol</l>
-        <l>
-          <lb/>Et l’on ne le peutpanler,</l>
-        <l>
-          <lb/>D’heureux on deuient miſerable,</l>
-        <l>
-          <lb/>De Prelatson deuient meuſnier,</l>
-        <l>
-          <lb/>L’on en voitvn fortbon exenmple,</l>
-        <l>
-          <lb/>En ces meſſieursſi l’on contemple</l>
-        <l>
-          <lb/>Le commancement &amp; la fin,</l>
-        <l>
-          <lb/>Du Boſſu, du Preux, &amp; du Fin.</l>
-        <lb/>FIN. </p>
-    </body>
-  </text>
+          diable l’emporte , Et que l’estafier saint Martin Le tourmente soir et matin. Corrigé dans
+          le suplément 1.
+    </p>
+   </abstract>
+   <textClass>
+    <keywords>
+     <term type="form">
+      vers
+     </term>
+     <term ref="litterature/chansons.xml" type="genre">
+      chanson
+     </term>
+     <term subtype="no" type="handwritten_note"/>
+     <term subtype="no" type="table_of_content"/>
+     <term subtype="no" type="illustration"/>
+     <term type="subject">
+      Condé‎, Louis de Bourbon‎ (1621-1686 ; prince de‎)
+     </term>
+     <term type="subject">
+      Conti‎, Armand de Bourbon‎ (1629-1666 ; prince de‎)
+     </term>
+     <term type="subject">
+      Longueville‎ II, Henri (1595-1663‎ ; duc de)
+     </term>
+     <term type="subject">
+      Paris (France)
+     </term>
+    </keywords>
+   </textClass>
+   <settingDesc>
+    <setting source="Moreau" xml:id="evt_Moreau_32">
+     <p>
+      Arrestation des princes
+     </p>
+     <date when="1650-01-18">
+      1650-01-18
+     </date>
+    </setting>
+   </settingDesc>
+  </profileDesc>
+  <revisionDesc>
+   <change status="corrected" when="2022-02-10" who="AB"/>
+  </revisionDesc>
+ </teiHeader>
+ <text>
+  <body>
+   <p>
+    <pb n="7"/>
+    <lb/>
+    LE COVP
+    <lb/>
+    DE FRONDE
+    <lb/>
+    OV
+    <lb/>
+    L’ECH0
+    <lb/>
+    Du Bois de Vincenne.
+    <pb n="8"/>
+    <l>
+     <lb/>
+     LE COVP DE FRONDE
+    </l>
+    <l>
+     <lb/>
+     Où l’Echo du Bois de Vincenne,
+    </l>
+    <l>
+     <lb/>
+     Sur le chant des Frondeurs.
+    </l>
+    <l>
+     Il est certain depuis quinzaine,
+    </l>
+    <l>
+     <lb/>
+     Qu’on entend que gemiſſemens,
+    </l>
+    <l>
+     <lb/>
+     u Studſlous du lou de meeaue
+    </l>
+    <l>
+     <lb/>
+     Que ſbut Candô &amp;ſs parens,
+    </l>
+    <l>
+     <lb/>
+     L&amp;qaels l’vn lautre fe querellent,
+    </l>
+    <l>
+     <lb/>
+     Et tre-mal-heureux ils s’appellent,
+    </l>
+    <l>
+     <lb/>
+     Le plus vieux diſantà Condé,
+    </l>
+    <l>
+     <lb/>
+     C’eſtpouvousavoir ſecondé.4
+    </l>
+    <l>
+     <lb/>
+     eCoey iſoit ſon fere,
+    </l>
+    <l>
+     <lb/>
+     Ea quellé miſereſormanesnus,
+    </l>
+    <l>
+     <lb/>
+     Le Roy &amp; la Reyne ſa Mere,
+    </l>
+    <l>
+     <lb/>
+     Nous traittentauec grand courtroux,.
+    </l>
+    <l>
+     <lb/>
+     Eſt-cereenpencernos peipe
+    </l>
+    <l>
+     <lb/>
+     De nous tenir en telles geſnes,
+    </l>
+    <l>
+     <lb/>
+     Eſt-ce le fruit de nos valeurs
+    </l>
+    <l>
+     <lb/>
+     De nous tiaiteer comme vlers.
+    </l>
+    <l>
+     <lb/>
+     Ventrebleu dit Condé i’enrage,
+    </l>
+    <l>
+     <lb/>
+     De me voir pris de la, façon,
+    </l>
+    <l>
+     <lb/>
+     C’eſt Mazarin cét homme Sage
+    </l>
+    <l>
+     <lb/>
+     Qui nous a tendu l’hameçon,
+    </l>
+    <l>
+     <lb/>
+     Mais par la mort ſi ’en eſchappe,
+    </l>
+    <l>
+     <lb/>
+     Ie luy donneré boane tappe,
+    </l>
+    <l>
+     <lb/>
+     Puiſque par ſon maudit Conſeil,
+    </l>
+    <l>
+     <lb/>
+     Nousſommes à l’ombre du Soleil,
+    </l>
+    <l>
+     <lb/>
+    </l>
+    <l>
+     <lb/>
+     1
+    </l>
+    <l>
+     <lb/>
+     i
+    </l>
+    <l>
+     <lb/>
+     ¬
+    </l>
+    <l>
+     <lb/>
+     ¬
+    </l>
+    <l>
+     <lb/>
+     les
+    </l>
+    <l>
+     <lb/>
+     D:.
+    </l>
+    <l>
+     <lb/>
+     S1c
+    </l>
+    <l>
+     <lb/>
+     l
+    </l>
+    <l>
+     <lb/>
+     C
+    </l>
+    <l>
+     <lb/>
+     1
+    </l>
+    <l>
+     <lb/>
+     1
+    </l>
+    <l>
+     <lb/>
+     2
+    </l>
+    <l>
+     <lb/>
+     l:
+    </l>
+    <l>
+     <lb/>
+     l
+    </l>
+    <l>
+     <lb/>
+     .
+    </l>
+    <l>
+     <lb/>
+     .
+    </l>
+    <l>
+     <lb/>
+     7
+    </l>
+    <l>
+     <lb/>
+     C
+    </l>
+    <pb n="9"/>
+    <l>
+     <lb/>
+     l l
+    </l>
+    <l>
+     <lb/>
+     11
+    </l>
+    <l>
+     <lb/>
+     3
+    </l>
+    <l>
+     <lb/>
+     Que n’ay-ie pas fait pour ce Maitre
+    </l>
+    <l>
+     <lb/>
+     Ils’en devroit bion ſouuenir,
+    </l>
+    <l>
+     <lb/>
+     Quoy ne ma-t’on pas veu pareſtre,
+    </l>
+    <l>
+     <lb/>
+     En tous lieux pou le rafntenir,
+    </l>
+    <l>
+     <lb/>
+     I’ay hazardé́ cene fois ma ie,
+    </l>
+    <l>
+     <lb/>
+     Pour ſatisfaireà fonenvye.
+    </l>
+    <l>
+     <lb/>
+     Et auiourd’huy grand Cardial
+    </l>
+    <l>
+     <lb/>
+     Ne me procure que du mal.
+    </l>
+    <l>
+     <lb/>
+     Ie veux q’onme berne &amp; me tỗde,
+    </l>
+    <l>
+     <lb/>
+     Dit Longueville iuran Dieu.
+    </l>
+    <l>
+     <lb/>
+     Si ce n’eſt vn grand coup de fronde,
+    </l>
+    <l>
+     <lb/>
+     Qui nous a ieté́ en ce lieu,
+    </l>
+    <l>
+     <lb/>
+     L’on void l’effect deſa puiſſance,
+    </l>
+    <l>
+     <lb/>
+     Car elle a de tous oüiſſance
+    </l>
+    <l>
+     <lb/>
+     Et l’on voit les frondeurs au point,
+    </l>
+    <l>
+     <lb/>
+     Que l’on ne s’imaginoit point.
+    </l>
+    <l>
+     <lb/>
+     Conſiderez vn peu le monde,
+    </l>
+    <l>
+     <lb/>
+     Il ny a point deſeureté,
+    </l>
+    <l>
+     <lb/>
+     Et qu’il eſt bien fol qui ſi fonde,
+    </l>
+    <l>
+     <lb/>
+     Ie vous le dis en vérité,
+    </l>
+    <l>
+     <lb/>
+     A-ton pas veu pendant la guerre,
+    </l>
+    <l>
+     <lb/>
+     Le Bourgeois renuerſer parterre,
+    </l>
+    <l>
+     <lb/>
+     Les partiſans de Mazarin,
+    </l>
+    <l>
+     <lb/>
+     Et maintenant c’eſt leur Couſin.
+    </l>
+    <l>
+     <lb/>
+     Conty epaeauaa leurs paloe,
+    </l>
+    <l>
+     <lb/>
+     Dit ma foy il ont bienraſon
+    </l>
+    <l>
+     <lb/>
+     Puiſque i’aypris de leurs piſtolles,
+    </l>
+    <l>
+     <lb/>
+     Dec nous laiſſer dans la priſon,
+    </l>
+    <l>
+     <lb/>
+     Et vous Moaſieur de Longueuille,
+    </l>
+    <l>
+     <lb/>
+     Vous vous teniez dans voſtrs Ville,
+    </l>
+    <l>
+     <lb/>
+     Mon frere faiſoit le diableicy,
+    </l>
+    <l>
+     <lb/>
+     Etmoy i’allois à luuiy.
+    </l>
+    <l>
+     <lb/>
+     ,,a,,,,,,,. ,,, a ,,,a
+    </l>
+    <l>
+     <lb/>
+     l1
+    </l>
+    <l>
+     <lb/>
+     I
+    </l>
+    <l>
+     <lb/>
+     l
+    </l>
+    <pb n="10"/>
+    <l>
+     <lb/>
+     !
+    </l>
+    <l>
+     <lb/>
+     1
+    </l>
+    <l>
+     <lb/>
+     1
+    </l>
+    <l>
+     <lb/>
+     11
+    </l>
+    <l>
+     <lb/>
+     1
+    </l>
+    <l>
+     <lb/>
+     1
+    </l>
+    <l>
+     <lb/>
+     1l
+    </l>
+    <l>
+     <lb/>
+     1
+    </l>
+    <l>
+     <lb/>
+     8
+    </l>
+    <l>
+     <lb/>
+     !
+    </l>
+    <l>
+     <lb/>
+     l
+    </l>
+    <l>
+     <lb/>
+     4
+    </l>
+    <l>
+     <lb/>
+     1
+    </l>
+    <l>
+     <lb/>
+     4
+    </l>
+    <l>
+     <lb/>
+     Mai s ne ſoyons point tanten peine,
+    </l>
+    <l>
+     <lb/>
+     Et ceſſons vn peu de geémir,
+    </l>
+    <l>
+     <lb/>
+     Bouillon, la Mouſſaye, &amp; Turenne,
+    </l>
+    <l>
+     <lb/>
+     Nous pourront venirſecourir,
+    </l>
+    <l>
+     <lb/>
+     5’il ny viennent a la mal-heure,
+    </l>
+    <l>
+     <lb/>
+     ous y ferons longue demoure,
+    </l>
+    <l>
+     <lb/>
+     Et n’aurons pasle meſmeſort,
+    </l>
+    <l>
+     <lb/>
+     Qu’a eu cy-deuant dc Beaufort.
+    </l>
+    <l>
+     <lb/>
+     Ce Beaufornousfaitbienlanique,
+    </l>
+    <l>
+     <lb/>
+     Auecque le Coadjuteur,
+    </l>
+    <l>
+     <lb/>
+     Et ioignent l’homme de prarique,
+    </l>
+    <l>
+     <lb/>
+     Pour augmenter noſtre mal-heur,
+    </l>
+    <l>
+     <lb/>
+     Chacun en rit, chacun en dance,
+    </l>
+    <l>
+     <lb/>
+     Chacun en faitreſiouiſſance,
+    </l>
+    <l>
+     <lb/>
+     Et meſme l’on voit dans Paris,
+    </l>
+    <l>
+     <lb/>
+     Par noſtre perte bien des ris.
+    </l>
+    <l>
+     <lb/>
+     Nous penſiõs biẽpar noſtreadreſſe,
+    </l>
+    <l>
+     <lb/>
+     Venir about de nos projets,
+    </l>
+    <l>
+     <lb/>
+     Mais ils ſont tous a la renuerſe,
+    </l>
+    <l>
+     <lb/>
+     Et la Fronde les a deffaicts,
+    </l>
+    <l>
+     <lb/>
+     Si l’on voulois vnpeu attendre,
+    </l>
+    <l>
+     <lb/>
+     A ce que nous voulons pretendre,
+    </l>
+    <l>
+     <lb/>
+     Et nous tirer de ce lieu cy,.
+    </l>
+    <l>
+     <lb/>
+     Nous dirons ma foy grandmerey.
+    </l>
+    <l>
+     <lb/>
+     C’eſt vne choſe uariol
+    </l>
+    <l>
+     <lb/>
+     Et l’on ne le peutpanler,
+    </l>
+    <l>
+     <lb/>
+     D’heureux on deuient miſerable,
+    </l>
+    <l>
+     <lb/>
+     De Prelatson deuient meuſnier,
+    </l>
+    <l>
+     <lb/>
+     L’on en voitvn fortbon exenmple,
+    </l>
+    <l>
+     <lb/>
+     En ces meſſieursſi l’on contemple
+    </l>
+    <l>
+     <lb/>
+     Le commancement &amp; la fin,
+    </l>
+    <l>
+     <lb/>
+     Du Boſſu, du Preux, &amp; du Fin.
+    </l>
+    <lb/>
+    FIN.
+   </p>
+  </body>
+ </text>
 </TEI>

@@ -1,233 +1,423 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2464_MAZ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Métamorphose (la) morale, ou l'Heureux changement de nos
-          fortunes par la prudence de nos seigneurs du Parlement.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
-            Jean-Baptiste</persName>
-          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2022-03-02">2 mars 2022</date>
-        <availability status="restricted" n="cc-by">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14925"/>
-          <author/>
-          <title source="Mazarine">La metamorphose morale ou l'heureux changement de nos fortunes.
-            Par la prudence de nosseigneurs de Parlement.</title>
-          <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher ref="isni:0000000121237136" xml:id="IL_CoulonVeuvedAntoine.xml">
-            <persName>
-              <forename>Veuve d'Antoine</forename>
-              <surname>Coulon</surname>
-            </persName>
-          </publisher>
-          <date source="Mazarine" when="1649">1649</date>
-          <date source="Carrier" notBefore="1649-03-04" notAfter="1649-03-11">entre le 4 mars et le
-            11 mars 1649</date>
-          <extent>
-            <measure unit="page" quantity="7"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="BM49103" cert="high"
-            target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49103"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2988507">Paris</settlement>
-            <institution>Bibliothèque Mazarine</institution>
-            <repository/>
-            <idno type="cote">M13505</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+<TEI xml:id="Moreau2464_MAZ" xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title source="Moreau" type="main">
+     La Métamorphose morale, ou l'Heureux changement de nos
+          fortunes par la prudence de nos seigneurs du Parlement.
+    </title>
+    <title type="sub">
+     Édition Antonomaz
+    </title>
+    <respStmt>
+     <resp>
+      Chaîne de traitement
+     </resp>
+     <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">
+      Abiven Karine
+     </persName>
+     <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">
+      Lejeune Gaël
+     </persName>
+     <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">
+      Tanguy
+            Jean-Baptiste
+     </persName>
+     <persName ref="orcid:0000-0003-0850-8266" role="engineer">
+      Bartz Alexandre
+     </persName>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <publisher>
+     Projet ANTONOMAZ / Sorbonne Université
+    </publisher>
+    <ref target="https://github.com/Antonomaz"/>
+    <date type="file_creation" when="2022-03-02">
+     2 mars 2022
+    </date>
+    <availability n="cc-by" status="restricted">
+     <licence target="https://creativecommons.org/licenses/by/4.0"/>
+    </availability>
+   </publicationStmt>
+   <sourceDesc>
+    <bibl>
+     <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14925"/>
+     <author/>
+     <title source="Mazarine">
+      La metamorphose morale ou l'heureux changement de nos fortunes.
+            Par la prudence de nosseigneurs de Parlement.
+     </title>
+     <pubPlace ref="geonames:2988507" source="Mazarine">
+      Paris
+     </pubPlace>
+     <publisher ref="isni:0000000121237136" xml:id="IL_CoulonVeuvedAntoine.xml">
+      <persName>
+       <forename>
+        Veuve d'Antoine
+       </forename>
+       <surname>
+        Coulon
+       </surname>
+      </persName>
+     </publisher>
+     <date source="Mazarine" when="1649">
+      1649
+     </date>
+     <date notAfter="1649-03-11" notBefore="1649-03-04" source="Carrier">
+      entre le 4 mars et le
+            11 mars 1649
+     </date>
+     <extent>
+      <measure quantity="7" unit="page"/>
+     </extent>
+     <note type="format">
+      in-4
+     </note>
+     <relatedItem cert="high" source="Mazarine" subtype="BM49103" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49103" type="identifier"/>
+    </bibl>
+    <msDesc>
+     <msIdentifier>
+      <settlement ref="geonames:2988507">
+       Paris
+      </settlement>
+      <institution>
+       Bibliothèque Mazarine
+      </institution>
+      <repository/>
+      <idno type="cote">
+       M13505
+      </idno>
+     </msIdentifier>
+     <history>
+      <provenance>
+       <stamp>
+        True
+       </stamp>
+      </provenance>
+     </history>
+    </msDesc>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <projectDesc>
+    <p>
+     Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
-          auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
-          bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine">Texte paru entre le 4 et 11 mars 1649, au début de la conférence de
-          Rueil d'après Hubert Carrier (Bibliothèque Mazarine, Ms 4682-4, f. 56v)</p>
-        <p source="Moreau">2464. Métamorphose (la) morale, ou l'Heureux change ment de nos fortunes
+          auteur oublié.
+    </p>
+    <p>
+     Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+          bibliothèques numériques publiques et de Google livres.
+    </p>
+    <p>
+     L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.
+    </p>
+   </projectDesc>
+   <editorialDecl>
+    <p/>
+   </editorialDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="fra">
+     Document en français
+    </language>
+   </langUsage>
+   <abstract>
+    <p source="Mazarine">
+     Texte paru entre le 4 et 11 mars 1649, au début de la conférence de
+          Rueil d'après Hubert Carrier (Bibliothèque Mazarine, Ms 4682-4, f. 56v)
+    </p>
+    <p source="Moreau">
+     2464. Métamorphose (la) morale, ou l'Heureux change ment de nos fortunes
           par la prudence de nos seigneurs du Parlement. Paris, veuve d'Anthoine Coulon, 1649, 7
-          pages.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-03-16" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p><pb n="9"/>
-        <lb/>LA
-        <lb/>METAMORPHOSE l
-        <lb/>OV
-        <lb/>L'HEVREVX
-        <lb/>CHANGEMENT
-        <lb/>DE NOS FORTVNES.
-        <lb/>Par la Prudence de Noſſeigneurs
-        <lb/>de Parlement. <figure type="decoration"/>
-        <lb/>A PARIS,
-        <lb/>Chez la Venfve d’ANTHOINE COVLON, rue d’Eſecoſe
-        <lb/>aux trois Cramaileres. 1649.
-        <lb/>
-        <imprimatur>AVEC PERMITSION.</imprimatur> <pb n="10"/>
-        <pb n="11"/>
-        <gap/>
-        <pb n="12"/>
-        <lb/>N.
-        <lb/>tentifs vers les Aſtrés, bronchent en marchant ſur la ter¬
-        <lb/>e: Mais les perſonnes zelées pour la ſocieté, s’el eue
-        <lb/>des degrez dans le Ciel, en adminiſtrant la choſe public,
-        <lb/>en ſeruant le Prince; en protegeant les villes; en con¬
-        <lb/>ſeruant les peuples, &amp; donnant ſecours à leurs alliezs ou
-        <lb/>par leur prudence, ou par leur liberalitez: Et c’eſt d’eux
-        <lb/>ue le Poeëte ſemble auõit dit fort à̀ propos.
-        <lb/>Qui que ſui memores alios fecere merar:
-        <lb/>pince de l’eloquen ce remarque auſſi ſur ce fuiot
-        <lb/>quil n’y a rien de ſiagreble a eu qui gouuene touue
-        <lb/>hoſes, que de voir les ſſemblées des hommes vmiespus
-        <lb/>e doit de la ſoeieré. Ceux qui le coſeruent, dit ile¬
-        <lb/>ane deſtondus du Ciel, retournentà leur premiere o
-        <lb/>gine, &amp; ce ates de verus toures heroiqueleurs ouuren
-        <lb/>es aouucavx paſſages dans le Ciel;,
-        <lb/>d , erno are de pan de erureſeuanne ee neo
-        <lb/>ee uujondnuy du noſe uouſe Pulemen de Pa
-        <lb/>ui ne peu nmieu neire du plie qus enreſnurnns r
-        <lb/>au deſoies en releuan l’audiorie d’vn popiles enpo
-        <lb/>eſeounen peple e ſe, l aopeau ls l’as dpue
-        <lb/>lono uenop bonnie San douie les Pas s Sooeu e
-        <lb/>eee nſoires des mouuemens pus Cieſens, &amp; la
-        <lb/>haaié ne peut eſtre plus parfaite.
-        <lb/>inereſ a touſious yranniquemen urpé la reou
-        <lb/>ne que nue ieren les pius luldas ioons les lenure
-        <lb/>a. le, Ceſurs re ſont ouue foibles on aein,
-        <lb/>louq is e ſlou unea l li Conquete de oun lerno
-        <lb/>e ui en et Auguſte Corps d paement , aous
-        <lb/>ns ere laer auiourdty reiom li pus uoe l
-        <lb/>moins <pb n="13"/>
-        <lb/>1
-        <lb/>moins inereſſée; puis que ces i luſtres Senareurs prodi¬
-        <lb/>guent genereuſement leurs vies pour le public,s n’ons
-        <lb/>pour objet que le bon heur d’autry: C’eſt en cét illuſtre
-        <lb/>ſujet que l’intereſt ne ſe rencontre point, ou du moins
-        <lb/>qu’il ne derobe pas la recompenſe de uë̈ a l’action. Ainſi
-        <lb/>ce Corps Auguſte du Senat François, ne trouue pe int de
-        <lb/>plus glorieuſe recompenſe qu’en la vetu meſme.
-        <lb/>Qui trauaille pour la fortune de ſes ſucceſeuts, me¬
-        <lb/>rite de viure dans leurs memoises mais qui s’attache au
-        <lb/>bien de tout vn Eſtat, eſt digne des louanges, &amp; des
-        <lb/>vœux de tout le peuple qui la publie.
-        <lb/>Nos dignes Reſtaurateuts de l’Eſtat, ont genereuſe¬
-        <lb/>ment tourne le dos à vn tyran que la forune faiſoit ſui¬
-        <lb/>ure auec empreſſement, pour ſe rendre au ſecours d’vn
-        <lb/>peuple que tout le monde abandonne.
-        <lb/>Qui vient au ſe ours d’vn oppreſſe fait vn effort gene¬
-        <lb/>reux: mais qui deffend vn party deſpourueu de toute aſſi¬
-        <lb/>ſtance, execute vne choſe diuine. Quant Homere void
-        <lb/>Vlyſſe abandonneé des hommes, il luy ſuſcite vn Dieu pour
-        <lb/>ſon deffenſeur.
-        <lb/>C’eſt ainſi que le Parlement a volontairement meſpri¬
-        <lb/>ſeé le repos domeſtique, pour trauailler au calme pu¬
-        <lb/>blie; Et s’auançant aà l’ayde des oppreſſez, s’efforce au¬
-        <lb/>jourd’huy par vn coup ineſperé de les r’emmener triom¬
-        <lb/>phans du bort du precipice, où les pouſſoient vne main ty¬
-        <lb/>rannique.
-        <lb/>Le Cardinal Mazarin ennemy de cetteCourSouueraine,
-        <lb/>s’eſt couuert de honte en penſant eſbloü̈yr tant deſoleils;
-        <lb/>Et ſa langue enuenimée n’a pû à l’ayde de ſes libelles
-        <lb/>B <pb n="14"/>
-        <lb/>calomnieux, noircir la renommée de tant d’illuſtres pe¬
-        <lb/>ſonnages.
-        <lb/>L’enuieux ce declare inferieur de celuy qui luy fait om¬
-        <lb/>brage auſſi-toſt qu’il choque ſa grander; il a perdu la
-        <lb/>gloire du combat, deuant que d’en veir aux mans, &amp;
-        <lb/>ſon eſprit timide ſe rendant à̀ la deffince, ſe dérobe
-        <lb/>le pris du combat, auant qu’il ayt fait eſſay de ſes for¬
-        <lb/>ces.
-        <lb/>C’eſt ainſi que ſes dignes Conſeruateurs de la liberté
-        <lb/>Françoiſe, ont par leurs pruden. e deſtruit les progrés de
-        <lb/>ceét eune my puhlic, dés le poinct de leurs coneeptions.
-        <lb/>Deux mois de ſiege, n’ont pu allentir leur zele, ny leurs
-        <lb/>ſoins ordinaises, pout la conſeruation de cette vi le; qui
-        <lb/>ſans leurs a dmirble conduitte, auro:t ſenty des les pre¬
-        <lb/>mirs iou:s de ſon oppreſſion, les plus cuſantcs attein¬
-        <lb/>tes que liure la dizette &amp; la neceſſité; Enfin quelques
-        <lb/>efforts qu’ayent pû faire ſes perturbateurs du repos pu¬
-        <lb/>blic, pour deſtruire le peuple d’auecque le Parlement,
-        <lb/>ils n’ont pû diuertir les appres d’vne Paix prochaine; &amp;
-        <lb/>ſes grands perſonnages portent aujourd’uy deſſus le front
-        <lb/>les Celeſtes l mpeſſions de Themis &amp; de Mierue tout
-        <lb/>enſemble; Auſlſi ny a-il point de Paix plus gloieuſe ny
-        <lb/>mieux affcrmie que celle que font les armes, &amp; qui
-        <lb/>eſt cimantée pr la prudence &amp; le reſonnement. Le Par¬
-        <lb/>lement s’eſt acquis cy-deuant des Lauriers immortels,
-        <lb/>par ſa genereuſe reſoluion; Il gaigne auijourd’huy le a¬
-        <lb/>meau de la Paix auec l’or de ſes paroles, &amp; la force de
-        <lb/>ſon lugement. Ses deux Auguſtes actions ſont nées par¬
-        <lb/>my les Diadeſmes, &amp; les Sceptres. L’vne eſt touſiours <pb n="15"/>
-        <lb/>ermpourprée de ſang, l’autre eſt touſiours eſclatante des
-        <lb/>richeſſes de l’eloquence.
-        <lb/>Ainſi nous n’auons plus qu’vn pas pour franchir le re¬
-        <lb/>ſte de cette carriere eſpineuſe. Et c’eſt, s’il plaiſt à Dieu,
-        <lb/>pour la derniere fois qu’eſtant armeé pour le repos de l’E
-        <lb/>ſtat nous aurons à combatre ce monſtre de famire, qué
-        <lb/>lePoëte appelle, Inſtrument difforme &amp;l eſpouaamtable. No¬
-        <lb/>ſtre ennemy commun n’a plus de retraitte aſſeurée dans
-        <lb/>le Royaume; ila tourneé le dos à la raiſon; le deſeſpoir eſt
-        <lb/>le ſeul qui luy tendent les bras &amp; le plus fort rampart ne
-        <lb/>le peuuent cacher au tonnere qui gronde; il ſuccombe
-        <lb/>ſous le poids de ſes crimes: Et la grace du Ciel nous re¬
-        <lb/>leue des maux qu’il nous a fait ſentir; Il ſe trouue ſurpris
-        <lb/>dans le piege qu’il auoit tendu a ſes illuſtres Senateurs,
-        <lb/>&amp; leurs gloire paroiſt plus eſclatante apres les ombres de
-        <lb/>cette nuit detrouble, &amp; de guerre ciuile. <pb n="16"/>
-      </p>
-    </body>
-  </text>
+          pages.
+    </p>
+   </abstract>
+   <textClass>
+    <keywords>
+     <term type="form">
+      prose
+     </term>
+     <term subtype="no" type="handwritten_note"/>
+     <term subtype="no" type="table_of_content"/>
+     <term subtype="no" type="illustration"/>
+    </keywords>
+   </textClass>
+   <settingDesc>
+    <setting source="Moreau" xml:id="evt_Moreau_16">
+     <p>
+      Le parlement accepte le traité de Ruel
+     </p>
+     <date when="1649-03-15">
+      1649-03-15
+     </date>
+    </setting>
+   </settingDesc>
+  </profileDesc>
+  <revisionDesc>
+   <change status="corrected" when="2022-03-16" who="AB"/>
+  </revisionDesc>
+ </teiHeader>
+ <text>
+  <body>
+   <p>
+    <pb n="9"/>
+    <lb/>
+    LA
+    <lb/>
+    METAMORPHOSE l
+    <lb/>
+    OV
+    <lb/>
+    L'HEVREVX
+    <lb/>
+    CHANGEMENT
+    <lb/>
+    DE NOS FORTVNES.
+    <lb/>
+    Par la Prudence de Noſſeigneurs
+    <lb/>
+    de Parlement.
+    <figure type="decoration"/>
+    <lb/>
+    A PARIS,
+    <lb/>
+    Chez la Venfve d’ANTHOINE COVLON, rue d’Eſecoſe
+    <lb/>
+    aux trois Cramaileres. 1649.
+    <lb/>
+    <imprimatur>
+     AVEC PERMITSION.
+    </imprimatur>
+    <pb n="10"/>
+    <pb n="11"/>
+    <gap/>
+    <pb n="12"/>
+    <lb/>
+    N.
+    <lb/>
+    tentifs vers les Aſtrés, bronchent en marchant ſur la ter¬
+    <lb/>
+    e: Mais les perſonnes zelées pour la ſocieté, s’el eue
+    <lb/>
+    des degrez dans le Ciel, en adminiſtrant la choſe public,
+    <lb/>
+    en ſeruant le Prince; en protegeant les villes; en con¬
+    <lb/>
+    ſeruant les peuples, &amp; donnant ſecours à leurs alliezs ou
+    <lb/>
+    par leur prudence, ou par leur liberalitez: Et c’eſt d’eux
+    <lb/>
+    ue le Poeëte ſemble auõit dit fort à̀ propos.
+    <lb/>
+    Qui que ſui memores alios fecere merar:
+    <lb/>
+    pince de l’eloquen ce remarque auſſi ſur ce fuiot
+    <lb/>
+    quil n’y a rien de ſiagreble a eu qui gouuene touue
+    <lb/>
+    hoſes, que de voir les ſſemblées des hommes vmiespus
+    <lb/>
+    e doit de la ſoeieré. Ceux qui le coſeruent, dit ile¬
+    <lb/>
+    ane deſtondus du Ciel, retournentà leur premiere o
+    <lb/>
+    gine, &amp; ce ates de verus toures heroiqueleurs ouuren
+    <lb/>
+    es aouucavx paſſages dans le Ciel;,
+    <lb/>
+    d , erno are de pan de erureſeuanne ee neo
+    <lb/>
+    ee uujondnuy du noſe uouſe Pulemen de Pa
+    <lb/>
+    ui ne peu nmieu neire du plie qus enreſnurnns r
+    <lb/>
+    au deſoies en releuan l’audiorie d’vn popiles enpo
+    <lb/>
+    eſeounen peple e ſe, l aopeau ls l’as dpue
+    <lb/>
+    lono uenop bonnie San douie les Pas s Sooeu e
+    <lb/>
+    eee nſoires des mouuemens pus Cieſens, &amp; la
+    <lb/>
+    haaié ne peut eſtre plus parfaite.
+    <lb/>
+    inereſ a touſious yranniquemen urpé la reou
+    <lb/>
+    ne que nue ieren les pius luldas ioons les lenure
+    <lb/>
+    a. le, Ceſurs re ſont ouue foibles on aein,
+    <lb/>
+    louq is e ſlou unea l li Conquete de oun lerno
+    <lb/>
+    e ui en et Auguſte Corps d paement , aous
+    <lb/>
+    ns ere laer auiourdty reiom li pus uoe l
+    <lb/>
+    moins
+    <pb n="13"/>
+    <lb/>
+    1
+    <lb/>
+    moins inereſſée; puis que ces i luſtres Senareurs prodi¬
+    <lb/>
+    guent genereuſement leurs vies pour le public,s n’ons
+    <lb/>
+    pour objet que le bon heur d’autry: C’eſt en cét illuſtre
+    <lb/>
+    ſujet que l’intereſt ne ſe rencontre point, ou du moins
+    <lb/>
+    qu’il ne derobe pas la recompenſe de uë̈ a l’action. Ainſi
+    <lb/>
+    ce Corps Auguſte du Senat François, ne trouue pe int de
+    <lb/>
+    plus glorieuſe recompenſe qu’en la vetu meſme.
+    <lb/>
+    Qui trauaille pour la fortune de ſes ſucceſeuts, me¬
+    <lb/>
+    rite de viure dans leurs memoises mais qui s’attache au
+    <lb/>
+    bien de tout vn Eſtat, eſt digne des louanges, &amp; des
+    <lb/>
+    vœux de tout le peuple qui la publie.
+    <lb/>
+    Nos dignes Reſtaurateuts de l’Eſtat, ont genereuſe¬
+    <lb/>
+    ment tourne le dos à vn tyran que la forune faiſoit ſui¬
+    <lb/>
+    ure auec empreſſement, pour ſe rendre au ſecours d’vn
+    <lb/>
+    peuple que tout le monde abandonne.
+    <lb/>
+    Qui vient au ſe ours d’vn oppreſſe fait vn effort gene¬
+    <lb/>
+    reux: mais qui deffend vn party deſpourueu de toute aſſi¬
+    <lb/>
+    ſtance, execute vne choſe diuine. Quant Homere void
+    <lb/>
+    Vlyſſe abandonneé des hommes, il luy ſuſcite vn Dieu pour
+    <lb/>
+    ſon deffenſeur.
+    <lb/>
+    C’eſt ainſi que le Parlement a volontairement meſpri¬
+    <lb/>
+    ſeé le repos domeſtique, pour trauailler au calme pu¬
+    <lb/>
+    blie; Et s’auançant aà l’ayde des oppreſſez, s’efforce au¬
+    <lb/>
+    jourd’huy par vn coup ineſperé de les r’emmener triom¬
+    <lb/>
+    phans du bort du precipice, où les pouſſoient vne main ty¬
+    <lb/>
+    rannique.
+    <lb/>
+    Le Cardinal Mazarin ennemy de cetteCourSouueraine,
+    <lb/>
+    s’eſt couuert de honte en penſant eſbloü̈yr tant deſoleils;
+    <lb/>
+    Et ſa langue enuenimée n’a pû à l’ayde de ſes libelles
+    <lb/>
+    B
+    <pb n="14"/>
+    <lb/>
+    calomnieux, noircir la renommée de tant d’illuſtres pe¬
+    <lb/>
+    ſonnages.
+    <lb/>
+    L’enuieux ce declare inferieur de celuy qui luy fait om¬
+    <lb/>
+    brage auſſi-toſt qu’il choque ſa grander; il a perdu la
+    <lb/>
+    gloire du combat, deuant que d’en veir aux mans, &amp;
+    <lb/>
+    ſon eſprit timide ſe rendant à̀ la deffince, ſe dérobe
+    <lb/>
+    le pris du combat, auant qu’il ayt fait eſſay de ſes for¬
+    <lb/>
+    ces.
+    <lb/>
+    C’eſt ainſi que ſes dignes Conſeruateurs de la liberté
+    <lb/>
+    Françoiſe, ont par leurs pruden. e deſtruit les progrés de
+    <lb/>
+    ceét eune my puhlic, dés le poinct de leurs coneeptions.
+    <lb/>
+    Deux mois de ſiege, n’ont pu allentir leur zele, ny leurs
+    <lb/>
+    ſoins ordinaises, pout la conſeruation de cette vi le; qui
+    <lb/>
+    ſans leurs a dmirble conduitte, auro:t ſenty des les pre¬
+    <lb/>
+    mirs iou:s de ſon oppreſſion, les plus cuſantcs attein¬
+    <lb/>
+    tes que liure la dizette &amp; la neceſſité; Enfin quelques
+    <lb/>
+    efforts qu’ayent pû faire ſes perturbateurs du repos pu¬
+    <lb/>
+    blic, pour deſtruire le peuple d’auecque le Parlement,
+    <lb/>
+    ils n’ont pû diuertir les appres d’vne Paix prochaine; &amp;
+    <lb/>
+    ſes grands perſonnages portent aujourd’uy deſſus le front
+    <lb/>
+    les Celeſtes l mpeſſions de Themis &amp; de Mierue tout
+    <lb/>
+    enſemble; Auſlſi ny a-il point de Paix plus gloieuſe ny
+    <lb/>
+    mieux affcrmie que celle que font les armes, &amp; qui
+    <lb/>
+    eſt cimantée pr la prudence &amp; le reſonnement. Le Par¬
+    <lb/>
+    lement s’eſt acquis cy-deuant des Lauriers immortels,
+    <lb/>
+    par ſa genereuſe reſoluion; Il gaigne auijourd’huy le a¬
+    <lb/>
+    meau de la Paix auec l’or de ſes paroles, &amp; la force de
+    <lb/>
+    ſon lugement. Ses deux Auguſtes actions ſont nées par¬
+    <lb/>
+    my les Diadeſmes, &amp; les Sceptres. L’vne eſt touſiours
+    <pb n="15"/>
+    <lb/>
+    ermpourprée de ſang, l’autre eſt touſiours eſclatante des
+    <lb/>
+    richeſſes de l’eloquence.
+    <lb/>
+    Ainſi nous n’auons plus qu’vn pas pour franchir le re¬
+    <lb/>
+    ſte de cette carriere eſpineuſe. Et c’eſt, s’il plaiſt à Dieu,
+    <lb/>
+    pour la derniere fois qu’eſtant armeé pour le repos de l’E
+    <lb/>
+    ſtat nous aurons à combatre ce monſtre de famire, qué
+    <lb/>
+    lePoëte appelle, Inſtrument difforme &amp;l eſpouaamtable. No¬
+    <lb/>
+    ſtre ennemy commun n’a plus de retraitte aſſeurée dans
+    <lb/>
+    le Royaume; ila tourneé le dos à la raiſon; le deſeſpoir eſt
+    <lb/>
+    le ſeul qui luy tendent les bras &amp; le plus fort rampart ne
+    <lb/>
+    le peuuent cacher au tonnere qui gronde; il ſuccombe
+    <lb/>
+    ſous le poids de ſes crimes: Et la grace du Ciel nous re¬
+    <lb/>
+    leue des maux qu’il nous a fait ſentir; Il ſe trouue ſurpris
+    <lb/>
+    dans le piege qu’il auoit tendu a ſes illuſtres Senateurs,
+    <lb/>
+    &amp; leurs gloire paroiſt plus eſclatante apres les ombres de
+    <lb/>
+    cette nuit detrouble, &amp; de guerre ciuile.
+    <pb n="16"/>
+   </p>
+  </body>
+ </text>
 </TEI>

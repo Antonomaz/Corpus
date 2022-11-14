@@ -1,636 +1,1236 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3545_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title source="Moreau" type="main">Revers (le) du mauvais temps passé et la libre entrée de
-          la paix, livrée à ses adorateurs, par Questier, dit Fort Lys, parisien.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
-            Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-          <persName ref="orcid:0000-0002-3327-3967" role="intern">Cappe Zoé</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=yUJKAAAAcAAJ"/>
-          <author ref="isni:0000000061406291">
-            <persName>
-              <forename>Mathurin</forename>
-              <surname>Questier</surname>
-            </persName>
-          </author>
-          <author ref="isni:0000000108887898" role="dubious_author">
-            <persName>
-              <forename>Jacques</forename>
-              <surname>Brousse</surname>
-            </persName>
-          </author>
-          <title source="Moreau">Revers (le) du mauvais temps passé et la libre entrée de la paix,
-            livrée à ses adorateurs, par Questier, dit Fort Lys, parisien.</title>
-          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher ref="isni:0000000121237136" xml:id="IL_CoulonVeuvedAntoine.xml">
-            <persName>
-              <forename>(veuve d'Antoine)</forename>
-              <surname>Coulon</surname>
-            </persName>
-          </publisher>
-          <date source="Moreau" when="1649">1649</date>
-          <extent>
-            <measure quantity="15" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2761369">Vienne</settlement>
-            <institution>Bibliothèque nationale d'Autriche</institution>
-            <repository/>
-            <idno type="cote"/>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>False</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+<TEI xml:id="Moreau3545_GBOOKS" xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title source="Moreau" type="main">
+     Le Revers du mauvais temps passé et la libre entrée de
+          la paix, livrée à ses adorateurs, par Questier, dit Fort Lys, parisien.
+    </title>
+    <title type="sub">
+     Édition Antonomaz
+    </title>
+    <respStmt>
+     <resp>
+      Chaîne de traitement
+     </resp>
+     <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">
+      Abiven Karine
+     </persName>
+     <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">
+      Lejeune Gaël
+     </persName>
+     <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">
+      Tanguy
+            Jean-Baptiste
+     </persName>
+     <persName ref="orcid:0000-0003-0850-8266" role="engineer">
+      Bartz Alexandre
+     </persName>
+     <persName ref="orcid:0000-0002-3327-3967" role="intern">
+      Cappe Zoé
+     </persName>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <publisher>
+     Projet ANTONOMAZ / Sorbonne Université
+    </publisher>
+    <ref target="https://github.com/Antonomaz"/>
+    <date type="file_creation" when="2021-11-02">
+     2 novembre 2021
+    </date>
+    <availability n="cc-by" status="restricted">
+     <licence target="https://creativecommons.org/licenses/by/4.0"/>
+    </availability>
+   </publicationStmt>
+   <sourceDesc>
+    <bibl>
+     <ref target="https://books.google.fr/books?id=yUJKAAAAcAAJ"/>
+     <author ref="isni:0000000061406291">
+      <persName>
+       <forename>
+        Mathurin
+       </forename>
+       <surname>
+        Questier
+       </surname>
+      </persName>
+     </author>
+     <author ref="isni:0000000108887898" role="dubious_author">
+      <persName>
+       <forename>
+        Jacques
+       </forename>
+       <surname>
+        Brousse
+       </surname>
+      </persName>
+     </author>
+     <title source="Moreau">
+      Le Revers du mauvais temps passé et la libre entrée de la paix,
+            livrée à ses adorateurs, par Questier, dit Fort Lys, parisien.
+     </title>
+     <pubPlace ref="geonames:2988507" source="Moreau">
+      Paris
+     </pubPlace>
+     <publisher ref="isni:0000000121237136" xml:id="IL_CoulonVeuvedAntoine.xml">
+      <persName>
+       <forename>
+        (veuve d'Antoine)
+       </forename>
+       <surname>
+        Coulon
+       </surname>
+      </persName>
+     </publisher>
+     <date source="Moreau" when="1649">
+      1649
+     </date>
+     <extent>
+      <measure quantity="15" unit="page"/>
+     </extent>
+     <note type="format">
+      in-4
+     </note>
+     <relatedItem cert="low" source="Mazarine" subtype="none" target="none" type="identifier"/>
+    </bibl>
+    <msDesc>
+     <msIdentifier>
+      <settlement ref="geonames:2761369">
+       Vienne
+      </settlement>
+      <institution>
+       Bibliothèque nationale d'Autriche
+      </institution>
+      <repository/>
+      <idno type="cote"/>
+     </msIdentifier>
+     <history>
+      <provenance>
+       <stamp>
+        False
+       </stamp>
+      </provenance>
+     </history>
+    </msDesc>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <projectDesc>
+    <p>
+     Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
-          auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
-          bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">3545. Revers (le) du mauvais temps passé et la libre entrée de la paix ,
+          auteur oublié.
+    </p>
+    <p>
+     Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+          bibliothèques numériques publiques et de Google livres.
+    </p>
+    <p>
+     L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.
+    </p>
+   </projectDesc>
+   <editorialDecl>
+    <p/>
+   </editorialDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="fra">
+     Document en français
+    </language>
+   </langUsage>
+   <abstract>
+    <p source="Mazarine"/>
+    <p source="Moreau">
+     3545. Revers (le) du mauvais temps passé et la libre entrée de la paix ,
           livrée à ses adorateurs , par Questier, dit Fort Lys, parisien. Paris, veuve d'Anthoine
           Coulon, 1649, 15 pages. C'est une des pièces qu'on attribuait à M. Brousse, curé de Saint-
           Roch. Naudé dit, page 1 35 du Mascurat, « qu'elle est assez soutenue, tant pour le
-          raisonnement que pour l'élocution. »</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="genre">non renseigné</term>
-          <term type="subject"/>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-07-25" who="ZC"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p><pb n="5"/>
-        <lb/>LE
-        <lb/>REVERS
-        <lb/>DV
-        <lb/>MAVVAIS
-        <lb/>TEMPS PASSÉ
-        <lb/>ET LA
-        <lb/>LIBRE ENTREE
-        <lb/>DE LA
-        <lb/>PAIX
-        <lb/>DEDIE A SES ADORATEURS.
-        <lb/>Par Me M. QVESTIER, dit FORT-LYS, Parifien. <figure type="decoration"/>
-        <lb/>A PARIS,
-        <lb/>Chez la Veufue d'ANTHOINE COVLON, ruë d'Efcoffe
-        <lb/>aux trois Cramallieres. 1649.
-        <lb/><imprimatur>AVEC PERMISSION.</imprimatur>
-        <pb n="6"/>
-        <pb n="7"/>
-        <lb/>LE REVERS
-        <lb/>DV
-        <lb/>MAVVAIS TEMPS
-        <lb/>PASSÉ
-        <lb/>’OE humain coniemiple également tourteés chofes
-        <lb/>s qui luy peuuent apporter quelque profit; meſme lors
-        <lb/>y qu’i ſe void paeſque obſcurey, par vne certainetaye
-        <lb/>e qui luy vient couurir ſes paupieres; il taſche ſubtile¬
-        <lb/>S nientde s’oppoſer àvh tel mal- heur, par l’ayde
-        <lb/>qu’il emprunte d’vne moins noble partie de ſon corps, &amp; fait
-        <lb/>tant qu’enfin il s’en deliure &amp; reprend ſa premiere elarté. Il en
-        <lb/>eſt de meſme icy, cher Lecteur; Noſtre œil a eſté depnis vn aſſez
-        <lb/>long temps ſous la ſombre taye d’vne obſcurité outrageufe ; C’eſt
-        <lb/>noſtre Roy, l’unique œil de toute laFrance; qui parmy des noires
-        <lb/>e’effroyableés tenebres nous a eſté enleué, &amp; tranfporté en vn autre
-        <lb/>lieu de ſon Corps: Paris s’eſt trouué orphelia de ſon vray Soleil; &amp;
-        <lb/>n’a pas toutesfois laifſé de eontempler à trauers d’vh voile; ſes ade¬
-        <lb/> rables rayons! Sesyeux ont ronſioûts eſté comme frcfez ſarſa per¬
-        <lb/>fonne; Sa langueae s’eſt point trouuéé miuette pour annoucer
-        <lb/>chanter ſes Royales loüanges. Ses mains n’ont iamas trauaillé qu’à
-        <lb/>ſa conſeruation; Bref tout ce grand-Corps s’eſt rencontré relle.
-        <lb/>nent vny à ſa perſonne; que nul ne peut douter deſonintegtité?ll
-        <lb/> n’ya pointde clarté pour vn monde qui chope à tous omeas
-        <lb/>patmy les alles de cetce grande &amp; adnirable :Maiſon, puts qu’on
-        <lb/>lIuy a oſtéceluy qui l’eſclaitoit perpetuellement Le Ciel s’eſt raeſime
-        <lb/>A ij <pb n="8"/>
-        <lb/>4
-        <lb/>faſché contre ces deſolezHabitans, à cauſe qu’ils ont laiſſé enleué
-        <lb/> celuy ſur qui il verſe ncdfſammaent ſes faueurs; Il ne leur a point de¬
-        <lb/>puis voulu monſtrer ſon ſerain &amp; radieux viſage; lIl n’a ceſſé de
-        <lb/>pleuret &amp; lamenter; verſant continuellerment des larmes luuialles,
-        <lb/>&amp; des eris Aquiloniens qui ſembloient de leurs geniſſemens eſ¬
-        <lb/>crouller ce Chef d’œure rl’Vniuers. Que ſi l’onaveu quelques
-        <lb/> beaux iours, ce n’a eſté que pour voir des aflictions &amp; des infortu¬
-        <lb/>nes: llſensble que out ſoitbandé contr l’nnocence d’vn Peuple
-        <lb/>qui ne ſçauroit viure ſansauoir prés de luy ſon legitime Seigneur &amp;
-        <lb/>Roy; A t’on iamais veu la Seine courroucée contre ſes chers Nout¬
-        <lb/>riſſons de la façon qu’elle l’a’eſté cctte année; L’Air n’a-t’il pas puis
-        <lb/>apres contribué à ſa colere, &amp; uons-nous depuis huit ou dix ans
-        <lb/>ſeny vnſi ra de, fi log, &amp; ſi aſprsfroid? Quoy t les niges n’ont¬
-        <lb/>alles pas eſté plus quſuffiſantos poueenfoutfnir aſſez plantureuſe¬
-        <lb/>ment trois Hyuers? Et n’eſt il pas croyable que le Ciel fait cela
-        <lb/>pour ſe vanger de nos pech? uy, certes, puiſque tout ſemble s’é¬
-        <lb/>uouuoir de ſoy nmeſme; &amp; que latyrannie &amp; anmbition d’rn Eſtran¬
-        <lb/>gor aſt la principale cauſedetous ces aal- heurs. Mais, oourage, ſi
-        <lb/>l’on nons a dérobé noſte aymnable LOV I S pendanrs l’obſcurlré
-        <lb/>de la nuifts;nous deuons eſperor qu l’on nous le r’amaeera e plein
-        <lb/>iour: Etecmme cfut pa vates faſcheuax &amp;auuoisemp ; nous
-        <lb/>l’admireoons &amp; adorerouns dams nahele &amp; agreable teperatùure
-        <lb/>d’air. Curage, encore vne fois, chers Compariots; Voiecy, Voiey,
-        <lb/>noſtre Mnarque qui vient caaſſer &amp; diſſiper l’abondance de nos
-        <lb/>ennuis. Le voicy, oés Hercule, qui doit dompter les eſtas ransſſas¬
-        <lb/> tes le cét Hy drpeſtilent, qui infete la meilleure partie d noftre
-        <lb/>France Venez, ô̂ grand Roy, paiſque vous nons auez oé dooné
-        <lb/> du Ciel Vonoz, diui Eafane, ſoulager oſtre Peuple aigés Ve¬
-        <lb/>nez auec ceue qui vous yaeat cheriſſent parfaictemtent. Ne
-        <lb/>vous axmuſez plus pary les fooids deſerts d’vn Sainct Gernaainu en
-        <lb/>haye il yfait en ſté paſabdemoot beau; mais voſtre Paris eſt
-        <lb/> gsoahdle.en uaqes lesſaiſans de l’aanée. N’yail pas aſſez loag¬
-        <lb/> mpls que vasy eſts t le v’u biea que vous y alliez &amp; venleg
-        <lb/>quanl bsao e bon us ſemblara; mais au oins faites. comme le
-        <lb/> ftambdu iouir, alad nez-lepout quelque oracnt, &amp; erz
-        <lb/>uas échauffar de pds delicata rayons, piſque vous eſtea aoſtae
-        <lb/>nique&amp;e ſtabSoei n. hiacuu voas uend e uous deſire; ne
-        <lb/>nous trurmpez pas, vanfdtez esbaday d’encendn os eos de
-        <lb/>Mufſique; <pb n="9"/>
-        <lb/>2
-        <lb/>Muſique; qui ſans ceſſe entonneront, Viue le Roy, Viue le
-        <lb/>Roy.
-        <lb/> Vn mal ne s’autache iamais à vne perſonne, qu’il ny ioigne
-        <lb/>vn compagnon auec luy; De meſmne nous voyans priuez de la
-        <lb/>digne compagnie de cét Aſtre Royal quine nous prometroit rien
-        <lb/>moins qu’vue perpetuelle felitité; nous fuſmes dans cét inſtant,
-        <lb/>comme perturbe d’eſprit, de voir que le ſiege de toutes les Pr¬
-        <lb/>uinces Françoiſes eſtoit deſgarny de la pluſpart de ces gonoreux
-        <lb/>Princes; &amp;e que le ſouſten des pauures s’en eſtoit exilé volontai¬
-        <lb/>rement. Grande Reyne, quel mal auons nous commis con¬
-        <lb/>tre voſtre Majeſté, pour nous raitter de la ſorte? Ce peuple qui
-        <lb/>vous ayme plus que ſoy-meſme, a -il merité vn tel chaſtimnt?
-        <lb/>Vous nous quittez &amp; nous laiſſez orphelins de voſtre Vertu &amp;
-        <lb/>grauité? Mais naal-heur pour nous, c’eſt durant la nuict que vous
-        <lb/>fuyez auec noſtre Soleil, comme ſi nous eſtions des Triphons
-        <lb/>qui euſſent oſé entreprendre ſur voſtre grandeur, &amp; vous deſ¬
-        <lb/>poſſeder de voſtre Troſne a Non, non, grande Reyne, ce n’eſt
-        <lb/>pas nous qui vous ont mis à la mercy des beſtes ſauuages, qui ſe
-        <lb/>peuuent rencontrer durant l’obſcurité d’vne nuit; Nous vous
-        <lb/>cheriſſons troppour ce faire. ’Si nous euſſions eſté aduertis de
-        <lb/>cette entrepriſe( car nous ſçauons fort bien qu’elle ne vient point
-        <lb/>de vous) ſçachez que voſtre humble &amp; touſiours pliant Peuple,
-        <lb/>n’euſt pas permis de vous mettre en vn tel danger? Quoy pen¬
-        <lb/>ſez- vous que nous euſſions manqué de cœur, pour nous vange
-        <lb/>de l’ennemy de voſtre repos &amp; du noſtre? Et que nous euſſions
-        <lb/>permis que voſtre ſplendeur nous eut laiſſé dans vne eſpoiſſe obſ¬
-        <lb/>curité? Non, Madame, puis qu’ils n’y à point de Pariſiens en cet¬
-        <lb/>te Ville, qui euſſe negligé aà̀ perdre ſa vie pour la conſeruation
-        <lb/>de la voſtre. Sus, don, Madaime, Monſtrez nous que vouseſtes
-        <lb/>Mere de noſtre Roy; Venez auec luy nous reuoir, ou ſi ie n’of¬
-        <lb/>ſenſe voſtre Majeſté, pemettez à vos fidels ſeruiteurs de l’aller
-        <lb/>uerirs oi vous le retenez? Sans Luy &amp; Vous, nous ne ſçaurions
-        <lb/>plus viure? Que la diſgrace qui nous a cauſe vos eſloignemens,
-        <lb/>oen maintenant conuertis n joye &amp; lieſſe Que no Pfinee
-        <lb/>oiene bien vnis enſemble, &amp; qu’ils ſoient vn peu ouchez de no
-        <lb/>ue amií, Amirie, o gand Due d’Onleans s pour moſe R6,
-        <lb/>vofre nepuou- R’amenei-le &amp;e venez en paix habier parmyeeux
-        <lb/>qui vous oit touſiours reſpecté e honore; le eroy u’il ny a <pb n="10"/>
-        <lb/>-
-        <lb/>1
-        <lb/>1
-        <lb/>¬
-        <lb/>point d’Autels où vous eſtes, qui ſoyent chargez des encens &amp; pat¬
-        <lb/>fums que l’on vouë à voſtre ſeruice., C’eſt à Paris ou vous deue
-        <lb/>eſtre adoré; C’eſt le lieu qui vous rend abſolu par toute la Fran¬
-        <lb/> ce; C’eſt luy qui vous a produit preſque tous vos enfans, &amp; qui
-        <lb/>voudroit ſe mettre en mille morceaux pout conſeruer voſtre Al¬
-        <lb/>teſſe Royalle. Tout le monde ne reſpire que voſtre air, &amp; ſans
-        <lb/>vous, nous commençons d’eſtre languiſſans? Faites, s’il vous plaiſt,
-        <lb/>amollir le courage, à ce couroucé de Condé, monſtrez-luy, que
-        <lb/>la guerre qu’il liure à ſa propre Patrie eſt injuſte; &amp; que lopretex¬
-        <lb/>te qu’il prend d’vne iniure qu’on luy a fait, n’eſt pas capable de
-        <lb/>cauſer tant de mal à ſes freres, puis que nous ſommes tels. De
-        <lb/>graces, remonſtrez luy qu’il n’eſt pas touſiours bon d’eſtre ſous
-        <lb/>les armes, pour terraſſer ſes meilleurs amys; qu’il fait la guetre à
-        <lb/>ſoy-meſme, en croyant vn inique &amp; eſtranger Conſeil; &amp; qu’en
-        <lb/>mettant tant ſoy peu la main à la conſcienceil peut:, auec vous,
-        <lb/>nous renuoyer la bonace, &amp; calmer l’orage qui menaſſe inceſſa¬
-        <lb/>ment des teſtes innocentes. Ioignez vous comme deux colom¬
-        <lb/>nes, afin de ſouſtenir cét Empire contre les frequentes ſecouſſes
-        <lb/>des eſtrangers. Sus donc Monſeigneur, Venez auec noſtre Roy;
-        <lb/>Scachant bien que nul ne le peut amener que ous. Nous yous
-        <lb/>attendons de pied ferme, &amp; commençons deſia d’amaſſer du
-        <lb/>bois quoy qu’il ſoit cher) pour faire des feux de ioye à voſtre heu¬
-        <lb/>reuſe arriuée. Ne laiſſez point derriere Madamoiſelle voſtre fille;
-        <lb/>afin qu’elle aye &amp; prenne part au contentement que vous rece¬
-        <lb/>urez en cette Vlle. Paris eſt voſtre delice, venez donc y de¬
-        <lb/>meurer, ll vous ſouhaitte auec tous les Princes, &amp; grands Sei¬
-        <lb/>gneurs quiſe rencontr ẽt à preſent auec noſtre Roy. Pacifiez-le tout,
-        <lb/>&amp; enuoyez pourmener la guerre chez les eſtrangers qui cauſe vne
-        <lb/> grande partie de noſtre mal. Ainſi vous ferez vnmerueilleux Re¬
-        <lb/>uers du mauuas temps. à vn rout aà fait &amp; bon a greable; Vous ſe¬
-        <lb/>rez cauſe de noſtte reſioü̈iſſance; Nous dirons de vous ce que les
-        <lb/>Romains diſoient d’Auguſte. Vous eſtes noſtre ’acificarenmr &amp; Pro¬
-        <lb/>ecteu. Et comme nouueaux regenerez en voſtre alliance, nous
-        <lb/> vous ferons ſççauoir tous les iours, que nos affections s’augmen¬
-        <lb/>tent &amp; ſe renforcent en voſtre amour. C’eſt ce que nous eſpe¬
-        <lb/> rons de voſtre Alteſſe; Et ſommes deſia tous certains que vous
-        <lb/>amenerez bien toſten cette Ville le Roy, la Reyne, le Prince in¬
-        <lb/>digné contre nous, &amp; tous les bons ſeriteurs de ſa Majeſté. Que <pb n="11"/>
-        <lb/>vous exillerez les perturbateurs du repos publie, &amp; les ennemis
-        <lb/>iurez du Roy &amp; de l’Eſtat. Dieu le veuille par ſa ſaincte grace.
-        <lb/> Commaapres le ruail la Nature permet au corps de prendre
-        <lb/>fon repos; ainſi, Meſſeigneurs les Senateurs &amp;e Conſeruateurs d’vn
-        <lb/>Peuple afligé, pretendent-ils de, faire. Vn chacun ſçait que vous
-        <lb/>eſtes, Iuges equirables, dont l’œil ne peut en aucune facçon eſtre ob¬
-        <lb/> ſcurcy. Nous ne ſç̧auonsque trop la peine que yous prenez pour
-        <lb/>raſcher à nous faire gouſter; Qu dis je gouſter? mais pluſtoſt man¬
-        <lb/>ger vne longue &amp; perdurable Paix. Que vos ſoins ſont infinis, &amp;
-        <lb/>voſtre amié ſans pareille pour vos enſas. Qu’il n’y a rien qui puiſ¬
-        <lb/>ſe intereſſer vos conſciencs; Et que vos Arrlts ne ſoient plſtoſt
-        <lb/>venus &amp; prononce du Cie, que formez dans vos teſtes, &amp; annpn,
-        <lb/>cez pat yos bouches ſur lterre, Qui ne croit cela, ſe monſtre igno¬
-        <lb/>rant en toute autre choſe; ſans conſiderer que vous eſtes le fort Ty¬
-        <lb/>monſur qui eſt appuyé la baze de ceét Empire François. Ne vous
-        <lb/>laſſez done point, Meſſcigneurs, de nous procurer la Paix? Monſtrez
-        <lb/>à tout le mode que les Roys &amp; les Loix ne ſont maintenus que par
-        <lb/>voſtre Iuſtice; &amp; que qui choque leurs intereſts ne demeure iamais
-        <lb/>ſans punition. Ce ſeroit peu d’eſtre les Deffenſeurs des innocens, ſi
-        <lb/>au prealable vous ne puniſſiez les mal-faicteurs &amp; oppreſſeurs d’i¬
-        <lb/>ceux? Puiſque lors qu’on parelonne vn erime on le commet ſoy¬
-        <lb/>meſme, il eſt loiſible pour s’exempter decé́t opprobre de ne le ia¬
-        <lb/>mais patdonner. Ie ſçay bien que les Loix ne ſont pas ſi ſeueres; &amp;
-        <lb/>que la mort ne punit pas touſiours les coulpables; mais auſſi ic ſuis
-        <lb/>certain qu’elles commandent que l’on leur oſte la lberteé de mal
-        <lb/>faire à l’aduenir. C n’eſt pas que ie vous veuille apprendre voſtre
-        <lb/>deuoir, ſçachanrtres bien que vous eſtes les premiers &amp; mieux ver¬
-        <lb/>ſez en toutes les ſciences du monde, mais leulement afin que vous
-        <lb/>ne vous laiſſiez emporter à la compaſſion. N’eſres-vous pas aſſez
-        <lb/>certains &amp; aſſeurez que le peuple viura en paix dés lors quil oſera
-        <lb/>ietter ſes regards ſur ſon Roy? N’aurez-vous pas vn grand hon¬
-        <lb/>neur de luy auoir conlerué ſa Couronne &amp; ſon Royaume, pour ne
-        <lb/>le pas laiſſer en proye à l’Eſtrangetr? N’eſitimerez-vous rien cela,
-        <lb/>qu’vn monde parfait en toutes choſes, vous appellent les Deffen¬
-        <lb/>ſeus de leurs iuſtes cauſes? Que les femmes de Paris, vous nom¬
-        <lb/>ment Protecteurs de leurs marys &amp; enfans; Bref, que les Paiſans
-        <lb/>rouuent leur refge chez vous, &amp; dans vos maiſons, à̀ cauſe des
-        <lb/>meurtres, des vols, des yiols, des incendies, des ſacrileges, autres <pb n="12"/>
-        <lb/> ,
-        <lb/>8
-        <lb/>oppreſions qui ſe commettent tous les iours au ſujet do la guerre?
-        <lb/>Ouy cettes, Meſſelgneurs, &amp; ne faut point douter que le Tout- puiſ¬
-        <lb/>ſant, voyant &amp; cognoiſſanc vos treuaux, ne vous donne à la fin vne
-        <lb/>tres-ample recompenſe. Pourſuiuez donc, &amp; ne vous laſfez pas, S!
-        <lb/>Germain n’eſt qu’vne petite pourmenade. Ioignez- vous auec nos
-        <lb/>Princes, &amp; rus r’amenez le Roy. Ieſç̧ay qu’il ſera ioyeux de vous
-        <lb/>voir, co eſtant ſa main dextre; &amp; qu’il ſera bien-aiſe de venir
-        <lb/>reuolt ſon Paris, auec vous.-Que le commun intereſt vous touche
-        <lb/>ſenſiblement, ſans eſpouſer le particulier; &amp; vous verrez que la be¬
-        <lb/>nediction des Cieux tombera ſur vos teſtes. Que le Peuple ne reſpi¬
-        <lb/> rera que vos vertus; &amp; ne ſç̧aura dire autre choſe en ſon cœur, que
-        <lb/>Viue le Roy, Viue les Princes, Viue le Parlement, &amp; que Dieu gar¬
-        <lb/>de de mal Noſſeigneurs de Ville. N’eſt-ce pas là vne agreable re¬
-        <lb/>compenſe de tous les trauaux que vous aurez ſoufferts? Quoy! n’eſt¬
-        <lb/>ce pas emporrer les Lauriers deubs à vos merites? qui ſera celuy qui
-        <lb/>ſe rendra ſi ingrat que de ne pas recognoiſtre le bien que vous luy
-        <lb/>aurez fait? quel cœur de roche ne ſe doit armolir lors que nous ne ſe¬
-        <lb/>tons plus ſujets de monter la Garde, que pour la ſeureté de la per¬
-        <lb/>ſonne de noſtre Roy? Mais enfin qui ſera celuy qui oſcra nier que
-        <lb/>vous eſtes la ſeule &amp; premiere cauſe de ſon bien; puiſque par tout
-        <lb/>vous vous rendez vigilans à le conſeruer ? C’eſt ce que nous atren¬
-        <lb/>dons bien-toſt de vous, Meſſeigneurs, eſperans de vous voir en bon
-        <lb/>ordre à l’entrée que vous allez preparer pour noſtre Monarque. Ce
-        <lb/>ſera alors que vous nous ferez oublier les fatigues &amp; les peines, que
-        <lb/>nous auons endurées parmy les rigueurs d’vne tres-faſcheſe ſai¬
-        <lb/>ſon. Vous nous ferez gouſter les fruicts delicieux que produit or¬
-        <lb/>dinairement la Paix, &amp; que chaſſant loin de nous les obſtacles qui
-        <lb/>la peuuent empeſcher; Vous nous remettrez dans le repos, ſeul ob¬
-        <lb/>ject qui doit enfin conſoler nos ames depuis vn ſi long-remps aſli¬
-        <lb/>gé́es. Et bref toute noſtre attente eit en vous, &amp; ne deſirons pas
-        <lb/>qu’elle en ſorte; eſtimant mieux la mort que de vous laiſſer dans
-        <lb/>e; faſcheux labyrinrhes que peut façonner &amp; conſtruire vn Finet
-        <lb/>&amp; ruſé Eſtranger.
-        <lb/>Vn noble cœur rejette tout ce qui luy ſemble contraire. Ce di¬
-        <lb/>re franc &amp; ne l’eſtre pas monſtre pluſtoſt vne bntordiſe qune
-        <lb/>addreſſe: Et celuy qui entre le dernier au combat auecque pru¬
-        <lb/> dence r’empotrte bien ſouuent plus de Lauriers que ceux qui l’ont
-        <lb/>premedité auant le temps, fe fortifiant ſur des paroles niaiſ
-        <lb/>friuoles. <pb n="13"/>
-        <lb/>i
-        <lb/>riuolles.Les combattans ſe trouuent honnore quand on leur dit
-        <lb/>qu’ils ſont genereux. Chers amis excuſez moy, puis que ieſçay
-        <lb/>la plus grande partie du meſtier de la guerre; &amp; que vous n’igno¬
-        <lb/>rez point que ſuiuaut le ſanguinaire Mars: il vous eſt poſſible d’ap¬
-        <lb/>procher de celle qui ſçait fort bien allentir ſes feux, &amp; briſer ſes ar¬
-        <lb/>mures; Cen’eſt pas que ie veuille vous contraindre d’eſtre de no¬
-        <lb/>ſtre parry, en ſecouüant le ioug de l’obeyſſance que vous deuez à
-        <lb/> noſtre Monarque; mais comme tous diffeends ne ſe terminent
-        <lb/>iamais qu’il n’y ayt vne honorable fin; ie dis que la douceur l’em¬
-        <lb/>porte ſur vos courages. Ce n’eſt pas peu d’eſtre animez, pour
-        <lb/>deffendre ſon droit; il faut de pluas ſçauoir, comment &amp; en quelle
-        <lb/>ſorte. Ce n’eſt pas eſtre Soldat que de porter les armes; mais c’eſt
-        <lb/>ſe rendre Capitaine de les ſçauoir bien manier pour ſe deffendre.
-        <lb/>Il en eſt ainſi, genereuſe Nobleſſe Françoiſe, que lors que l’on vous
-        <lb/>penſe meſpriſer, c’eſt alors que vous faites mieux voſtre deuoir ſans
-        <lb/>erainte de reſpandre voſtre ſang, quand il eſt queſtion du ſeruice.
-        <lb/>du Roy &amp; de la Patrie. Que paurray ie dire de vous aucres, ſinon
-        <lb/>que vous eſtes les aymez de Caſtor &amp; Pollux, Caualliers auſſi diſ¬
-        <lb/>crets que les armes reluyſantes qu’ils portoient pour leur deffence,
-        <lb/>&amp; contre leurs ennemis. Ce ſeroit peu de dire que vous eſtes le
-        <lb/>premier nerf de la main de noſtre Monarque, &amp; que vous pouuez
-        <lb/>beaucoup en toutes les affaires qui concernent vne indiſſoluble
-        <lb/>Paix: mais mal-heur pour vous; c’eſt qu’il y a parmy nous vne
-        <lb/>grande quantité de traiſtres, qui ne laiſſentſlpas en nous affoibliſ¬
-        <lb/>ſans de vous donnur le dernier coup de lancettes, afin de nous re¬
-        <lb/>dre auec vous du tout inutilles.
-        <lb/> Faires mieux ſi vous me croyez; repreſentez à noſtre Roy, que
-        <lb/>voſtre ſang &amp; le noſtre n’eſt qu’vn meſme ſang, &amp; que comme vous
-        <lb/>eſtes François, nous ſommes Pa riſiens; Que pluſieurs d’entre vous
-        <lb/>ont leurs femmes, &amp; enfans, voire meſme leurs Maiſtreſſes enfer¬
-        <lb/>mez dans cetre ſameuſe Ville; Dirtes luy que vos armes ſont tres¬
-        <lb/>bonnes pour tuer &amp; maſſacrer des Tures &amp; non pas des Chre¬
-        <lb/>ſſiens; Que vos mains n’ont point accouſtumé de ſe lauer dans le
-        <lb/>ſang que vous cognoiſſez; Que voicy le temps que vous deuez
-        <lb/>cueillit des palmes dans l’Idumée, en vangeant l’affront que l’ony
-        <lb/>fait au ſacré Nom de Ieſus; Et que vouseſtes tout preſt de téter tou¬
-        <lb/>tes les aduantures qui ſe pourront rencontrer dans le monde, pour¬
-        <lb/>ueu qu’il. donne la Paix à ſoa Peuple chery; Sans doute vous ga¬ <pb n="14"/>
-        <lb/>1
-        <lb/>l
-        <lb/>l
-        <lb/>8
-        <lb/>1e
-        <lb/>¬¬¬¬-¬-¬
-        <lb/>gnerez le cœur de noſtre Regente; lors que vous luy remonſtre¬
-        <lb/>rez, que le nom de Reyne de Paix, eſt de beaucoup plus excellent
-        <lb/>que celuy de Guerre; Qu’il eſt bien plus ſeant à ſa Majeſté d’eſtre.
-        <lb/>adorée dans vn Paris, que parmy des deſerts, vaites &amp; affreux à
-        <lb/>la veuë. Qu’elley ſera rauie d’entendre l’eloquence de nos Pre¬
-        <lb/>dicateurs; leſquels tous d’vn meſme accord la conuie de les y
-        <lb/>venir entendre. Et enfin, que ſa charité augmentera doublement
-        <lb/>lors qu’elle pardonnera les offenſes paſſées. C’eſt ce que vous de¬
-        <lb/>uez faire, Genereuſe Nobleſſe, &amp; c’eſt auſſi ce que nous atten¬
-        <lb/>dons de vous. Nous aſſeurant que pat voſtre moen nous ſerons
-        <lb/>deliurez des peines que l’on ſonffre otdinaitement pour le ſujet de
-        <lb/>la guetre; Que nous mangerons du Pain à’bon marché; Que nous
-        <lb/>ne ſerons point contraints de ſoliller nos conſciences en man¬
-        <lb/>geant des viandes que l’Egliſe noſtte Mere nous defend de man¬
-        <lb/>ger durant le Sainct Temps de Careſmre. Et qu’nfailliblement le
-        <lb/>trafic ſe temettraſus; nous faiſant viures les pluheureux &amp; lés plus
-        <lb/>contents de la terte. Poutſuiuez-donc, hardiment voſtre entre¬
-        <lb/>priſe; &amp; ne permettez que nous ſoyons tourmentez deſormais;
-        <lb/>quirtez les armes, pour vous amuſer à pincer vn Luth nous vous
-        <lb/>ferons des chanuſons toutes nouuelles; meſme il n’y a pas vn de nos
-        <lb/>Poëtes qui ne ſe ptomettent de chanter vos louanges. Venez¬
-        <lb/>done’nous reuolr ſans laiſſer la Paix derriere vous; faites là mar¬
-        <lb/>chet enceſte, meſme deuant vos genereux Capitaines. Ainſinous
-        <lb/>yrons au deuant de vous pourvous accoller la botte.
-        <lb/> La Sainceté, la Pieté &amp; la luſtice ſont trois eurs qui ne ſe ſe¬
-        <lb/>parent iamais;Si l’vne ſe ſent afſſigé́e les deux autres la conſolent; &amp;
-        <lb/>ainſi font vne admirable liaiſon, que les temps meſme ne peuuent
-        <lb/>déjoindre. La Samcteté dans ce rencontre fait bien ſouent des
-        <lb/>rmitacles; La Pieté fai. amolir les cœurs les plus endurcis au mal, en
-        <lb/>les tendant doux, h mbies &amp; paiſibles; Et la Iuſtice punit ſeuere¬
-        <lb/>ee e ue ne ien le en eone e n en i leneren eſt
-        <lb/>a veitu, c’eſt dans la tranquilié &amp; parmy la Paix, qu’elles font va¬
-        <lb/>loir leur ralént Neuantmcins elles ne laſſent pas de ſe rencontrer
-        <lb/>parmy les Eccleſiaſtiques, &amp; ſemble bien qu’elles y vyeullent inceſ¬
-        <lb/>ſam nt demeurer; Elles les conjurent de prier leur Maiſtre pour
-        <lb/>lenrs auancements; de feſchir leurs genoux pour Ies mettte en
-        <lb/> graee aueç celuy qui les peut remeute en credit, en deſtruiſnt <pb n="15"/>
-        <lb/>-r .¬¬L
-        <lb/>.¬
-        <lb/>leurs ennemis. C’eſt donc à vous, ô Anges &amp; Miniſtres de Die¬s
-        <lb/>que ces trois humbles ſœurs s’addreſſent, ils ne regneront iamais
-        <lb/>ſans vous: Et leur importe fott peu les loilanges, &amp; les auanta¬
-        <lb/>ges que l’on leurt, donne ſans qu’au prealable vous n’en ſoyez
-        <lb/>conſentent, eſtimant mieux ſe voir gouuerner par vos prudences;
-        <lb/>que de ſelaiſſer manier par des eſprrts brutaux. Puiſque c’eſt dans
-        <lb/>la Paix qu’elles agiſſent, procutez là enuers celuy que vous ſoruez
-        <lb/>aueec tant de ferueur &amp; de deuotion. Que vos bouches ne ſoient
-        <lb/>point muettes pour fleſchit vn Dieu courroucé contre nous, &amp;
-        <lb/>taſcher de remettre ces trois ſœuts en graçes Que vos cœurs ſoyent
-        <lb/>touchez d’amour, &amp;-eſchauffez de charité, pour briier les fleſches
-        <lb/>d’vn Dieu corroucé contre ſon Peuple Que vos penſées neſoyent
-        <lb/>autres que de le prier d nous enuoyer bien toſt la Paix; Que tou¬
-        <lb/>tes vos veilles ne tendent qu’a chaſſer &amp; deſtournet loing de nous
-        <lb/>la guerre, qui cauſe que vos Egliſes, &amp; vos Autels ſont ſi ſou¬
-        <lb/>uent pollüs &amp; rophanées C’eſt eſtre Sain&amp;t que de faire tels mi¬
-        <lb/>racles? Ainſi ſerez vous eſtimez tels ſi vous nous procutez quel¬
-        <lb/>que bien enuers le Dieu de Paix &amp; de concorde. Il ne tient qu’à
-        <lb/>vous que nous ne ſoyons tous rauis de voir vn changement ſi ad¬
-        <lb/>mirable, puis que vos prieres peuuent changer le glaiue en oli¬
-        <lb/>uier, &amp; le ſang en laict Que vous ſerez glorieux ſi l’on dit de
-        <lb/>vous; Ils ont ieuſné, ils ont veillé, ils ont prié inceſſamment
-        <lb/>pour leſchir ce grand Dieu qui eſtoit irrité contre nous; leur ſin¬
-        <lb/>cerité eſt la eule cauſe de ncſtre bien; leur deuoion a formé &amp; fa¬
-        <lb/>çonné la baze de noſtre felicité, &amp; leur Charité a tellement eſ¬
-        <lb/>cha ffé les cœurs de nos ennemis, qu’ils ont eſté c ne aints de laiſ¬
-        <lb/>ſer tomber les armes deſquelles ils nous vouloient f apper; N’eſt ce
-        <lb/> is-là aſſez dequoy vous longe? Ne vous tiendra-t’on pas pour
-        <lb/>bien heureux ſi vous nous moyennez la Paix auee Dieu &amp; les
-        <lb/>homnes?Qui ſera coluy qui me vous honorera &amp; reſpectera pour
-        <lb/>yntel bien fait? Y a-il quelque demon dans l’enfer qui vous piſſe
-        <lb/>eſtourner d’vne ſi ſaincte ation. Non, non Meſſieurs, vos prie¬
-        <lb/>res ſont aſſez feruentes, pourabattre les cœuts qui ne reſpirent que
-        <lb/>l’air de noſtre ſang; Vos ſainctetez ſont aſſez fortes pour deſtrui¬
-        <lb/> re nos plus cruels ennemis; Et vos vertus ont le pouuoi de nous ta¬
-        <lb/>mener la Paix. Pourſuiuez donc &amp; ne vous laſſez pas de la deman¬
-        <lb/>der à celny qui ſeul nous la peut donner. Ainſi vous ſerez Sair ts
-        <lb/>&amp; ferez de merueilleux miracles dont la yeru s’eſtendra pamy <pb n="16"/>
-        <lb/>tout le monde. Demandant à Dieu la Paix, c’eſt luy deman der no¬
-        <lb/>ſtre repos; &amp; le loyer de nos peines &amp; fatigues paſſées. C’eſt nous
-        <lb/>nourrir d’vn pain qui ne peut preuenit que du Ciel. C’eſt nous ren¬
-        <lb/>dre vuis, &amp; bons amis auec nos freres; Enfin c’eſt nous faite gou¬
-        <lb/>ſter en ce monde les delices des eſprits bien-heureux. Prlez donc
-        <lb/>ſans fin puis que vos prieres nous peuuent appoter vn ſi gra nd
-        <lb/>bien. Tout l’Vniuers ſera esbahy quand on lcaura que vous eſtes
-        <lb/>en partie cauſe que nous auons la Paix; &amp; que vous auez auec droit
-        <lb/>fulminé contre celuy qui en a des long-temps empeſché l’effe.
-        <lb/>C’eſt ce qu’vn peuple affîigé attẽ̃d de vous, &amp; ce que vous deuez faire.
-        <lb/>Deſia l’Hyuer d’vne ennuyeuſe guerre ſe va paſſer; chers &amp; fi¬
-        <lb/>dels Compatriots, vos armes ſont maintenant plus propes à pa¬
-        <lb/>roiſtreſur vos ratelliers que ſur vos corps; voſtre ennemy ſe trou¬
-        <lb/>ue tellement affoibly qu’il commence à ployer le genouil pour vous
-        <lb/>demander humblement pardon de ſes offenſes. Il vous a fait beau¬
-        <lb/> coup paſtir &amp; endarer, mais en reuanche il vous veut doreſnauant
-        <lb/>ſeruir &amp; honorer &amp; vous monſtrer que s’il a encore quelque gou¬
-        <lb/>ſte de ſang dans ſes veines qu’il le veut prodiguer &amp; reſpandre
-        <lb/>pour voſtre deffenſe &amp; conſeruaion. Ce n’eſt pas peu de voir vn
-        <lb/>ennemy conuerty de laſorte, &amp; ſe rendre en vn moment de temps
-        <lb/>voſtre parfait amy. Les maux qu’il vous a faits, ſont autant de ro¬
-        <lb/>ſes qui croiſtront à ce Printemps dans le parterte de voſtre valeur;
-        <lb/>Il vous a fait ieuſner afin de vous mieux ſaouler puis apres; Il vous
-        <lb/>a fait patroüillet dans les bouës durant vne faſcheuſe ſaiſon d’Hy¬
-        <lb/>uer, à deſſcin de vous reudre le pied feme &amp; ſec durant l’ayma.
-        <lb/>ble Printemps; Il vous a faitjtrembler, pour vous r’aſſurer durant
-        <lb/>les tempeſtes que peut former vn rurbulent Eſté. Il vous a fait
-        <lb/>veiller, eſtimant que le ſommeil vous eſtoit nuyſible &amp; domma¬
-        <lb/>geable. Il vous à fait tirer l’argent de vos bourſes, pour ayder à
-        <lb/>ſouldoyer des Soldats, pour reſiſter à ſes violences; mais ſon de¬
-        <lb/>ſir eſt de les remplir lors que le commerceſera permiss &amp; pacifiant,
-        <lb/>fera retirer ceux qui eſtoient eſleus pour le vaincre &amp; deſtruire. Au
-        <lb/>tant de pas que vous auez faits ſous les armes, ſe conuertiront en au¬
-        <lb/>rant de degrez pour monter au lieu où ſe rencontre vne agreable
-        <lb/>&amp; ſincere Paix. Les cœurs genereux qui ont ſenty le ſubtil eſguil¬
-        <lb/>lon de la mort pour la cauſe publique ne ſe faſcheront point du
-        <lb/>mal qu’ils auront enduré, lors qu’ils ſçauront que nous viuons en
-        <lb/>amitié &amp; concorde. Les bleſſez en cette occaſion ſeront glorieux
-        <lb/>de <pb n="17"/>
-        <lb/>reeee--e¬¬
-        <lb/>13
-        <lb/>demonſtrer leurs playes &amp; cicatrices, diſant hardiment; Voylà ce.
-        <lb/>que nous auons ſouffert pour deffendre noſtre Roy &amp; noſtre Pa¬
-        <lb/>trie. Gloire ineſtimable? puis que reſpandre ſon ſang en telles oc¬
-        <lb/>caſions, eſt conſeruer la vie de ſes freres &amp; bons Compatriots.
-        <lb/>Courage, les trauaux ſont preſque finis, le calme veut dominerl’o¬
-        <lb/>rage; IIn’eſt plus temps de s’affſiger, quand la ioye ſe veut empa¬
-        <lb/>rer de nos eſprits, &amp; chaſſer hors de nos cœurs la hayne &amp; la diſ¬
-        <lb/>corde. Et vous pauures Payſans conſolez vos ames, la rigueur de
-        <lb/>la guerre vous facilite l’entrée de la felicité eternelle; Si l’on a vio¬
-        <lb/>lé vos femmes &amp; vos filleos, ce n’eſt que pout les rendre plus no¬
-        <lb/> bles &amp; plus chaſtes deuant le troſne de Dieu. Ne penſez-pas que
-        <lb/>leurs ames en ſoient moins belles dans l’eternité. Et que d’eſtre
-        <lb/>forcées par des pendarts, leur puiſſe rauir leur honneur parmy les
-        <lb/>hommes. Non, non, mes chers amys, opprenez que neceſſité n’a
-        <lb/>point de loy, &amp; que c’eſt la force, &amp; la rage de nos ennemis quiont
-        <lb/>auſé vn mal qui n’eſt que pour vous doanerapres cestroubles vn
-        <lb/>per durable contentement. Si nosenaemis ontpillé ſi peu que vous
-        <lb/>auiez amaſſé pour voſtre entretien, afſeurez-vous que dans peu de
-        <lb/>temps Dieu vous le multipliera au double. Que ſi ils ont inſolem¬
-        <lb/>ment bruſlé vos maiſons; imaginez vous qu’ils auoient beſoin de
-        <lb/>hois pourſe chanffer; mais conſolez vous-qu’ils n’oneſceu empot¬
-        <lb/>ter la place o elles eſtoient baſties ;E dites hardinaent: Qu’ont-ils
-        <lb/>gagné de me ruyner?Et ſont-ils deuenus plus riches? Ces- marauts
-        <lb/>ſe voyent maintenant confus, ils n’ent plus aucun lieu de retraitte.
-        <lb/>Ma maiſon eſt rebaſtie beaucoup plus belle qu’elle n’eſtoit aupara¬
-        <lb/>uant, &amp; Dieu benit mon tranail manuel, &amp; fait diſtiller: vne graſſe
-        <lb/>roſéeſur les biens que i’ay ſemez en terte. Il ne m’importe plus
-        <lb/>de vire puis que ie vay gouſter les delices d’vne ſauoureuſe &amp; a¬
-        <lb/>greable Paix; &amp; que ie puis m’aſſeurer qu’elle demeurera inceſ¬
-        <lb/>ſamment auec mes enfans. Mespertes ſont paſſées, voicy le temps
-        <lb/>du gain; Ie vuray&amp; ſi ie nedoutepoint que: ie dois voir mes amys
-        <lb/>ioyeux &amp; gaillads. La guerre ne peut pastouſiours durer, il eſt
-        <lb/>tres-necefſaire que la Paix prenne ſa place. O adorable Paix, vien
-        <lb/>icy nous t’attendons pour t’honnorer Nos cœurs deſia commen¬
-        <lb/>cent à ſautiller de ioye quand ils entendent dire que tu es conrtente
-        <lb/>d’habier parmy nous:! Vien donc &amp; ne craint point d’eſtretrahie;
-        <lb/>arnous ſommes tes vrays Zelateurs; en quelque lieu où tu puiſſe
-        <lb/>aller u’ne te rencontreras iamais mieux que parmy nous. Vien.
-        <lb/>D <pb n="18"/>
-        <lb/>2
-        <lb/>1
-        <lb/>14
-        <lb/>dono encore ne fois; nous te dreſſerons des Autels; La guerren’a
-        <lb/>paint fait anceore encherir l’encens; il y en a aſſez en cette ville pour
-        <lb/>parfumer tes ſarifices; Ne croy point que nous ſoyons ſi ingrats
-        <lb/>quode re nefuſer. Le plus paure d’entre nous t’offnira volonaire¬
-        <lb/>ment ſa maiſon, poutt’y heberger; &amp; ſe plaira de t’offrir continuel¬
-        <lb/>lement ſon humble ſeruice. Ne ſeras-tu pas bien ayſe de te voiz
-        <lb/>cherie &amp; honoréÉe d’vn Peuple qu’il y a ſi long-Jemps qui ne t’a veuë
-        <lb/>ny contemplée. Taioye-ne s’augmentera-lle poia, quand tu ſçau¬
-        <lb/>ras que le Roy, la Reyns Regente; Monſeigneur le Duc d’Or¬
-        <lb/>leans, le Prioe indigné, &amp; taus les gsands Seigneurs, ſeront reue¬
-        <lb/>nusen cette Villepour t’adorer? Ouy ; certes, &amp; ie çroy que tout
-        <lb/>ton plaiſir ſera de les y voir en bonne proſperité &amp; ſanteé, rendre
-        <lb/>les ations de graces à Dieu pour vne telle &amp; preſque incroyable
-        <lb/>ranqulliré. Que nous faut-il plus ſi tu te range de aoſtre coſté3
-        <lb/>L’ennenmy redoutera nosforces, ors qu’il entendra dire que l’ay¬
-        <lb/>mable fille du Cielaura auec ardeur embraſſé noſtre party. Oj
-        <lb/>eſt la crainte qui menaſfe de ſaiſir nos eſprits? Elle ne ſe rencon¬
-        <lb/>tre plus patrmy aous, à cauſe que l’on nous fait apprendre, com¬
-        <lb/>me par force le meſtiar de la guorte. Ns ennemis ſe treuuent
-        <lb/>aintenant yaineus ;&amp;e ſans coup fappar nous mporons ſut
-        <lb/>luy la Vitoire, qui uous auoit eſté promiſe dés vn ſiecle d’années.
-        <lb/>O! heureuſe&amp; tres-aymable Paix? O! Deeſſe incomparable? O;
-        <lb/>Vertu excéllonte! qui quitte ſon Palais du Ciel pour ſe venir lo¬
-        <lb/>ger auec naus fur la terre? Adairable reuers du mauuais temps
-        <lb/>aſſé? Poe paro rtous les haons Françqis doiuent paſſer, pour
-        <lb/>gouſter les delices d’vn misl agreable &amp; ſauoureux? Deſcendez
-        <lb/>doac viſtement; ain de nous faire reuiure. Nous ſemmes deſis
-        <lb/>a domy morts; mais nousſcauons fort bien que vous auez le pou¬
-        <lb/>uoir de nous guerir en nous reſuſcitant. Puis que c’aſt par le
-        <lb/> aoyeu de tant de genoroux guaerriers( qui toutesfois s’eſtime¬
-        <lb/>roient beaucoup plus heureux de viure ſous voas loix, que ſous
-        <lb/>clles de e ſanguinaire Maxs) que vous daignez nous venir vi¬
-        <lb/>ſiter: Faites qu’ils prennent tous part à voſtre trionmphe: Et tous
-        <lb/>ain ſi qu’ils ſont les protetaurs, &amp; deffenſeurs des innocens con¬?
-        <lb/>tre la rage d’vn ennemy eſtranger; Faites que nons ſoyons tſ¬
-        <lb/>moias des hbelles ationus qu’ils ont produites pour nous conſer¬
-        <lb/>uer la vie. Que ſils ot enduré des peines &amp; des fatigues pour
-        <lb/>noſtre ſujet; Faites que nos vœux, &amp; nos ſouhaits les recompe¬ <pb n="19"/>
-        <lb/>ſent en quelque choſe; nous permettant de publier leur renemnée
-        <lb/>par tout l’Vniuers, &amp; faire en ſorte que leurs noms ſoyent pet¬
-        <lb/>petuellement grauez au Temple de memoite, pour y eſtre veus
-        <lb/>&amp; admirez de nos nepueux; &amp; reuerez pary les infinis ſiecles
-        <lb/>aduenir. C’eſt ce que nous deſirons de voir en nos iours, ô ! alme
-        <lb/>Paix? C’eſt voſtre viue douceur que nous cherchons? C’eſt le r¬
-        <lb/>pos de nos Princes &amp; Seigneurs; &amp; la tranquillité d’vn monde
-        <lb/>tout entier, qui ne reſpire autre air que celuy que Dieu leur a
-        <lb/>donné pour Roy. Venez donc auec nous, &amp; ne nous meſpri¬
-        <lb/> ſez pas. Vous ſerez esbaye de nous ontendre chanter ce moret;
-        <lb/>Seignmeur ſauue noſtre oy penmdant le iour de rribalation s &amp; exace les
-        <lb/>prieres des cœurs feruenrs qui t’inaoqent en icelauy.
-        <lb/>FIN.
-        <lb/>ADERTISSE E T V LE cTE v.
-        <lb/>Her Lecteur, tu ſeras aduerty que c’ayant fait preſent de mon Iour
-        <lb/>Lnal Poëtique de la Guerre Pariſienne, comme auſſi de mes Viſions
-        <lb/>Nocturnes, l’on memenaſſe de les contre faire; &amp; ainſi me deſrober mo
-        <lb/>trauail. C’eſt ce qui me retarde de te faire les ſuittes tant de l’vn que de
-        <lb/>l’autre; Toutesfois ie ne laiſſeray pas de continuer; mais ie te prie au moins
-        <lb/>de n’en point achetter d’autre Impreſſton que de celle de la Veufue d’An
-        <lb/>thoine Coulon; ny de plus petite lettre; car iceux ſeront contrefaits; E
-        <lb/>comme ie n’ay pas e le temps de les bien amplifier; ie te promets qu’ils
-        <lb/>ſerons augmentez de plus de moitié à la ſeconde impreſſion. Ne laiſſant
-        <lb/>donc pas de continuer, à la priere de nes plus familiers amys; ie te feray
-        <lb/>voir cctte ſepmaine la troiſieſme partie de mes Viſions, ou tu verras nai¬
-        <lb/>fuenent deſpeint ce qui nous peut aduenir de mauuais, en tous les mois
-        <lb/> de la preſente année é649. Comme auſſi rma cinquieſme Sepmaine de la
-        <lb/>Guerte Pariſienne; &amp; ainſi ie caſcheray e continuant de contenter ta cu
-        <lb/>rioſlté. Adieu. </p>
-    </body>
-  </text>
+          raisonnement que pour l'élocution. »
+    </p>
+   </abstract>
+   <textClass>
+    <keywords>
+     <term type="form">
+      prose
+     </term>
+     <term type="genre">
+      non renseigné
+     </term>
+     <term type="subject"/>
+     <term subtype="no" type="handwritten_note"/>
+     <term subtype="no" type="table_of_content"/>
+     <term subtype="no" type="illustration"/>
+    </keywords>
+   </textClass>
+   <settingDesc>
+    <setting source="Moreau" xml:id="evt_Moreau_13">
+     <p>
+      Réception de l’envoyé de l’archiduc Léopold au parlement
+     </p>
+     <date when="1649-02-19">
+      1649-02-19
+     </date>
+    </setting>
+   </settingDesc>
+  </profileDesc>
+  <revisionDesc>
+   <change status="corrected" when="2022-07-25" who="ZC"/>
+  </revisionDesc>
+ </teiHeader>
+ <text>
+  <body>
+   <p>
+    <pb n="5"/>
+    <lb/>
+    LE
+    <lb/>
+    REVERS
+    <lb/>
+    DV
+    <lb/>
+    MAVVAIS
+    <lb/>
+    TEMPS PASSÉ
+    <lb/>
+    ET LA
+    <lb/>
+    LIBRE ENTREE
+    <lb/>
+    DE LA
+    <lb/>
+    PAIX
+    <lb/>
+    DEDIE A SES ADORATEURS.
+    <lb/>
+    Par Me M. QVESTIER, dit FORT-LYS, Parifien.
+    <figure type="decoration"/>
+    <lb/>
+    A PARIS,
+    <lb/>
+    Chez la Veufue d'ANTHOINE COVLON, ruë d'Efcoffe
+    <lb/>
+    aux trois Cramallieres. 1649.
+    <lb/>
+    <imprimatur>
+     AVEC PERMISSION.
+    </imprimatur>
+    <pb n="6"/>
+    <pb n="7"/>
+    <lb/>
+    LE REVERS
+    <lb/>
+    DV
+    <lb/>
+    MAVVAIS TEMPS
+    <lb/>
+    PASSÉ
+    <lb/>
+    ’OE humain coniemiple également tourteés chofes
+    <lb/>
+    s qui luy peuuent apporter quelque profit; meſme lors
+    <lb/>
+    y qu’i ſe void paeſque obſcurey, par vne certainetaye
+    <lb/>
+    e qui luy vient couurir ſes paupieres; il taſche ſubtile¬
+    <lb/>
+    S nientde s’oppoſer àvh tel mal- heur, par l’ayde
+    <lb/>
+    qu’il emprunte d’vne moins noble partie de ſon corps, &amp; fait
+    <lb/>
+    tant qu’enfin il s’en deliure &amp; reprend ſa premiere elarté. Il en
+    <lb/>
+    eſt de meſme icy, cher Lecteur; Noſtre œil a eſté depnis vn aſſez
+    <lb/>
+    long temps ſous la ſombre taye d’vne obſcurité outrageufe ; C’eſt
+    <lb/>
+    noſtre Roy, l’unique œil de toute laFrance; qui parmy des noires
+    <lb/>
+    e’effroyableés tenebres nous a eſté enleué, &amp; tranfporté en vn autre
+    <lb/>
+    lieu de ſon Corps: Paris s’eſt trouué orphelia de ſon vray Soleil; &amp;
+    <lb/>
+    n’a pas toutesfois laifſé de eontempler à trauers d’vh voile; ſes ade¬
+    <lb/>
+    rables rayons! Sesyeux ont ronſioûts eſté comme frcfez ſarſa per¬
+    <lb/>
+    fonne; Sa langueae s’eſt point trouuéé miuette pour annoucer
+    <lb/>
+    chanter ſes Royales loüanges. Ses mains n’ont iamas trauaillé qu’à
+    <lb/>
+    ſa conſeruation; Bref tout ce grand-Corps s’eſt rencontré relle.
+    <lb/>
+    nent vny à ſa perſonne; que nul ne peut douter deſonintegtité?ll
+    <lb/>
+    n’ya pointde clarté pour vn monde qui chope à tous omeas
+    <lb/>
+    patmy les alles de cetce grande &amp; adnirable :Maiſon, puts qu’on
+    <lb/>
+    lIuy a oſtéceluy qui l’eſclaitoit perpetuellement Le Ciel s’eſt raeſime
+    <lb/>
+    A ij
+    <pb n="8"/>
+    <lb/>
+    4
+    <lb/>
+    faſché contre ces deſolezHabitans, à cauſe qu’ils ont laiſſé enleué
+    <lb/>
+    celuy ſur qui il verſe ncdfſammaent ſes faueurs; Il ne leur a point de¬
+    <lb/>
+    puis voulu monſtrer ſon ſerain &amp; radieux viſage; lIl n’a ceſſé de
+    <lb/>
+    pleuret &amp; lamenter; verſant continuellerment des larmes luuialles,
+    <lb/>
+    &amp; des eris Aquiloniens qui ſembloient de leurs geniſſemens eſ¬
+    <lb/>
+    crouller ce Chef d’œure rl’Vniuers. Que ſi l’onaveu quelques
+    <lb/>
+    beaux iours, ce n’a eſté que pour voir des aflictions &amp; des infortu¬
+    <lb/>
+    nes: llſensble que out ſoitbandé contr l’nnocence d’vn Peuple
+    <lb/>
+    qui ne ſçauroit viure ſansauoir prés de luy ſon legitime Seigneur &amp;
+    <lb/>
+    Roy; A t’on iamais veu la Seine courroucée contre ſes chers Nout¬
+    <lb/>
+    riſſons de la façon qu’elle l’a’eſté cctte année; L’Air n’a-t’il pas puis
+    <lb/>
+    apres contribué à ſa colere, &amp; uons-nous depuis huit ou dix ans
+    <lb/>
+    ſeny vnſi ra de, fi log, &amp; ſi aſprsfroid? Quoy t les niges n’ont¬
+    <lb/>
+    alles pas eſté plus quſuffiſantos poueenfoutfnir aſſez plantureuſe¬
+    <lb/>
+    ment trois Hyuers? Et n’eſt il pas croyable que le Ciel fait cela
+    <lb/>
+    pour ſe vanger de nos pech? uy, certes, puiſque tout ſemble s’é¬
+    <lb/>
+    uouuoir de ſoy nmeſme; &amp; que latyrannie &amp; anmbition d’rn Eſtran¬
+    <lb/>
+    gor aſt la principale cauſedetous ces aal- heurs. Mais, oourage, ſi
+    <lb/>
+    l’on nons a dérobé noſte aymnable LOV I S pendanrs l’obſcurlré
+    <lb/>
+    de la nuifts;nous deuons eſperor qu l’on nous le r’amaeera e plein
+    <lb/>
+    iour: Etecmme cfut pa vates faſcheuax &amp;auuoisemp ; nous
+    <lb/>
+    l’admireoons &amp; adorerouns dams nahele &amp; agreable teperatùure
+    <lb/>
+    d’air. Curage, encore vne fois, chers Compariots; Voiecy, Voiey,
+    <lb/>
+    noſtre Mnarque qui vient caaſſer &amp; diſſiper l’abondance de nos
+    <lb/>
+    ennuis. Le voicy, oés Hercule, qui doit dompter les eſtas ransſſas¬
+    <lb/>
+    tes le cét Hy drpeſtilent, qui infete la meilleure partie d noftre
+    <lb/>
+    France Venez, ô̂ grand Roy, paiſque vous nons auez oé dooné
+    <lb/>
+    du Ciel Vonoz, diui Eafane, ſoulager oſtre Peuple aigés Ve¬
+    <lb/>
+    nez auec ceue qui vous yaeat cheriſſent parfaictemtent. Ne
+    <lb/>
+    vous axmuſez plus pary les fooids deſerts d’vn Sainct Gernaainu en
+    <lb/>
+    haye il yfait en ſté paſabdemoot beau; mais voſtre Paris eſt
+    <lb/>
+    gsoahdle.en uaqes lesſaiſans de l’aanée. N’yail pas aſſez loag¬
+    <lb/>
+    mpls que vasy eſts t le v’u biea que vous y alliez &amp; venleg
+    <lb/>
+    quanl bsao e bon us ſemblara; mais au oins faites. comme le
+    <lb/>
+    ftambdu iouir, alad nez-lepout quelque oracnt, &amp; erz
+    <lb/>
+    uas échauffar de pds delicata rayons, piſque vous eſtea aoſtae
+    <lb/>
+    nique&amp;e ſtabSoei n. hiacuu voas uend e uous deſire; ne
+    <lb/>
+    nous trurmpez pas, vanfdtez esbaday d’encendn os eos de
+    <lb/>
+    Mufſique;
+    <pb n="9"/>
+    <lb/>
+    2
+    <lb/>
+    Muſique; qui ſans ceſſe entonneront, Viue le Roy, Viue le
+    <lb/>
+    Roy.
+    <lb/>
+    Vn mal ne s’autache iamais à vne perſonne, qu’il ny ioigne
+    <lb/>
+    vn compagnon auec luy; De meſmne nous voyans priuez de la
+    <lb/>
+    digne compagnie de cét Aſtre Royal quine nous prometroit rien
+    <lb/>
+    moins qu’vue perpetuelle felitité; nous fuſmes dans cét inſtant,
+    <lb/>
+    comme perturbe d’eſprit, de voir que le ſiege de toutes les Pr¬
+    <lb/>
+    uinces Françoiſes eſtoit deſgarny de la pluſpart de ces gonoreux
+    <lb/>
+    Princes; &amp;e que le ſouſten des pauures s’en eſtoit exilé volontai¬
+    <lb/>
+    rement. Grande Reyne, quel mal auons nous commis con¬
+    <lb/>
+    tre voſtre Majeſté, pour nous raitter de la ſorte? Ce peuple qui
+    <lb/>
+    vous ayme plus que ſoy-meſme, a -il merité vn tel chaſtimnt?
+    <lb/>
+    Vous nous quittez &amp; nous laiſſez orphelins de voſtre Vertu &amp;
+    <lb/>
+    grauité? Mais naal-heur pour nous, c’eſt durant la nuict que vous
+    <lb/>
+    fuyez auec noſtre Soleil, comme ſi nous eſtions des Triphons
+    <lb/>
+    qui euſſent oſé entreprendre ſur voſtre grandeur, &amp; vous deſ¬
+    <lb/>
+    poſſeder de voſtre Troſne a Non, non, grande Reyne, ce n’eſt
+    <lb/>
+    pas nous qui vous ont mis à la mercy des beſtes ſauuages, qui ſe
+    <lb/>
+    peuuent rencontrer durant l’obſcurité d’vne nuit; Nous vous
+    <lb/>
+    cheriſſons troppour ce faire. ’Si nous euſſions eſté aduertis de
+    <lb/>
+    cette entrepriſe( car nous ſçauons fort bien qu’elle ne vient point
+    <lb/>
+    de vous) ſçachez que voſtre humble &amp; touſiours pliant Peuple,
+    <lb/>
+    n’euſt pas permis de vous mettre en vn tel danger? Quoy pen¬
+    <lb/>
+    ſez- vous que nous euſſions manqué de cœur, pour nous vange
+    <lb/>
+    de l’ennemy de voſtre repos &amp; du noſtre? Et que nous euſſions
+    <lb/>
+    permis que voſtre ſplendeur nous eut laiſſé dans vne eſpoiſſe obſ¬
+    <lb/>
+    curité? Non, Madame, puis qu’ils n’y à point de Pariſiens en cet¬
+    <lb/>
+    te Ville, qui euſſe negligé aà̀ perdre ſa vie pour la conſeruation
+    <lb/>
+    de la voſtre. Sus, don, Madaime, Monſtrez nous que vouseſtes
+    <lb/>
+    Mere de noſtre Roy; Venez auec luy nous reuoir, ou ſi ie n’of¬
+    <lb/>
+    ſenſe voſtre Majeſté, pemettez à vos fidels ſeruiteurs de l’aller
+    <lb/>
+    uerirs oi vous le retenez? Sans Luy &amp; Vous, nous ne ſçaurions
+    <lb/>
+    plus viure? Que la diſgrace qui nous a cauſe vos eſloignemens,
+    <lb/>
+    oen maintenant conuertis n joye &amp; lieſſe Que no Pfinee
+    <lb/>
+    oiene bien vnis enſemble, &amp; qu’ils ſoient vn peu ouchez de no
+    <lb/>
+    ue amií, Amirie, o gand Due d’Onleans s pour moſe R6,
+    <lb/>
+    vofre nepuou- R’amenei-le &amp;e venez en paix habier parmyeeux
+    <lb/>
+    qui vous oit touſiours reſpecté e honore; le eroy u’il ny a
+    <pb n="10"/>
+    <lb/>
+    -
+    <lb/>
+    1
+    <lb/>
+    1
+    <lb/>
+    ¬
+    <lb/>
+    point d’Autels où vous eſtes, qui ſoyent chargez des encens &amp; pat¬
+    <lb/>
+    fums que l’on vouë à voſtre ſeruice., C’eſt à Paris ou vous deue
+    <lb/>
+    eſtre adoré; C’eſt le lieu qui vous rend abſolu par toute la Fran¬
+    <lb/>
+    ce; C’eſt luy qui vous a produit preſque tous vos enfans, &amp; qui
+    <lb/>
+    voudroit ſe mettre en mille morceaux pout conſeruer voſtre Al¬
+    <lb/>
+    teſſe Royalle. Tout le monde ne reſpire que voſtre air, &amp; ſans
+    <lb/>
+    vous, nous commençons d’eſtre languiſſans? Faites, s’il vous plaiſt,
+    <lb/>
+    amollir le courage, à ce couroucé de Condé, monſtrez-luy, que
+    <lb/>
+    la guerre qu’il liure à ſa propre Patrie eſt injuſte; &amp; que lopretex¬
+    <lb/>
+    te qu’il prend d’vne iniure qu’on luy a fait, n’eſt pas capable de
+    <lb/>
+    cauſer tant de mal à ſes freres, puis que nous ſommes tels. De
+    <lb/>
+    graces, remonſtrez luy qu’il n’eſt pas touſiours bon d’eſtre ſous
+    <lb/>
+    les armes, pour terraſſer ſes meilleurs amys; qu’il fait la guetre à
+    <lb/>
+    ſoy-meſme, en croyant vn inique &amp; eſtranger Conſeil; &amp; qu’en
+    <lb/>
+    mettant tant ſoy peu la main à la conſcienceil peut:, auec vous,
+    <lb/>
+    nous renuoyer la bonace, &amp; calmer l’orage qui menaſſe inceſſa¬
+    <lb/>
+    ment des teſtes innocentes. Ioignez vous comme deux colom¬
+    <lb/>
+    nes, afin de ſouſtenir cét Empire contre les frequentes ſecouſſes
+    <lb/>
+    des eſtrangers. Sus donc Monſeigneur, Venez auec noſtre Roy;
+    <lb/>
+    Scachant bien que nul ne le peut amener que ous. Nous yous
+    <lb/>
+    attendons de pied ferme, &amp; commençons deſia d’amaſſer du
+    <lb/>
+    bois quoy qu’il ſoit cher) pour faire des feux de ioye à voſtre heu¬
+    <lb/>
+    reuſe arriuée. Ne laiſſez point derriere Madamoiſelle voſtre fille;
+    <lb/>
+    afin qu’elle aye &amp; prenne part au contentement que vous rece¬
+    <lb/>
+    urez en cette Vlle. Paris eſt voſtre delice, venez donc y de¬
+    <lb/>
+    meurer, ll vous ſouhaitte auec tous les Princes, &amp; grands Sei¬
+    <lb/>
+    gneurs quiſe rencontr ẽt à preſent auec noſtre Roy. Pacifiez-le tout,
+    <lb/>
+    &amp; enuoyez pourmener la guerre chez les eſtrangers qui cauſe vne
+    <lb/>
+    grande partie de noſtre mal. Ainſi vous ferez vnmerueilleux Re¬
+    <lb/>
+    uers du mauuas temps. à vn rout aà fait &amp; bon a greable; Vous ſe¬
+    <lb/>
+    rez cauſe de noſtte reſioü̈iſſance; Nous dirons de vous ce que les
+    <lb/>
+    Romains diſoient d’Auguſte. Vous eſtes noſtre ’acificarenmr &amp; Pro¬
+    <lb/>
+    ecteu. Et comme nouueaux regenerez en voſtre alliance, nous
+    <lb/>
+    vous ferons ſççauoir tous les iours, que nos affections s’augmen¬
+    <lb/>
+    tent &amp; ſe renforcent en voſtre amour. C’eſt ce que nous eſpe¬
+    <lb/>
+    rons de voſtre Alteſſe; Et ſommes deſia tous certains que vous
+    <lb/>
+    amenerez bien toſten cette Ville le Roy, la Reyne, le Prince in¬
+    <lb/>
+    digné contre nous, &amp; tous les bons ſeriteurs de ſa Majeſté. Que
+    <pb n="11"/>
+    <lb/>
+    vous exillerez les perturbateurs du repos publie, &amp; les ennemis
+    <lb/>
+    iurez du Roy &amp; de l’Eſtat. Dieu le veuille par ſa ſaincte grace.
+    <lb/>
+    Commaapres le ruail la Nature permet au corps de prendre
+    <lb/>
+    fon repos; ainſi, Meſſeigneurs les Senateurs &amp;e Conſeruateurs d’vn
+    <lb/>
+    Peuple afligé, pretendent-ils de, faire. Vn chacun ſçait que vous
+    <lb/>
+    eſtes, Iuges equirables, dont l’œil ne peut en aucune facçon eſtre ob¬
+    <lb/>
+    ſcurcy. Nous ne ſç̧auonsque trop la peine que yous prenez pour
+    <lb/>
+    raſcher à nous faire gouſter; Qu dis je gouſter? mais pluſtoſt man¬
+    <lb/>
+    ger vne longue &amp; perdurable Paix. Que vos ſoins ſont infinis, &amp;
+    <lb/>
+    voſtre amié ſans pareille pour vos enſas. Qu’il n’y a rien qui puiſ¬
+    <lb/>
+    ſe intereſſer vos conſciencs; Et que vos Arrlts ne ſoient plſtoſt
+    <lb/>
+    venus &amp; prononce du Cie, que formez dans vos teſtes, &amp; annpn,
+    <lb/>
+    cez pat yos bouches ſur lterre, Qui ne croit cela, ſe monſtre igno¬
+    <lb/>
+    rant en toute autre choſe; ſans conſiderer que vous eſtes le fort Ty¬
+    <lb/>
+    monſur qui eſt appuyé la baze de ceét Empire François. Ne vous
+    <lb/>
+    laſſez done point, Meſſcigneurs, de nous procurer la Paix? Monſtrez
+    <lb/>
+    à tout le mode que les Roys &amp; les Loix ne ſont maintenus que par
+    <lb/>
+    voſtre Iuſtice; &amp; que qui choque leurs intereſts ne demeure iamais
+    <lb/>
+    ſans punition. Ce ſeroit peu d’eſtre les Deffenſeurs des innocens, ſi
+    <lb/>
+    au prealable vous ne puniſſiez les mal-faicteurs &amp; oppreſſeurs d’i¬
+    <lb/>
+    ceux? Puiſque lors qu’on parelonne vn erime on le commet ſoy¬
+    <lb/>
+    meſme, il eſt loiſible pour s’exempter decé́t opprobre de ne le ia¬
+    <lb/>
+    mais patdonner. Ie ſçay bien que les Loix ne ſont pas ſi ſeueres; &amp;
+    <lb/>
+    que la mort ne punit pas touſiours les coulpables; mais auſſi ic ſuis
+    <lb/>
+    certain qu’elles commandent que l’on leur oſte la lberteé de mal
+    <lb/>
+    faire à l’aduenir. C n’eſt pas que ie vous veuille apprendre voſtre
+    <lb/>
+    deuoir, ſçachanrtres bien que vous eſtes les premiers &amp; mieux ver¬
+    <lb/>
+    ſez en toutes les ſciences du monde, mais leulement afin que vous
+    <lb/>
+    ne vous laiſſiez emporter à la compaſſion. N’eſres-vous pas aſſez
+    <lb/>
+    certains &amp; aſſeurez que le peuple viura en paix dés lors quil oſera
+    <lb/>
+    ietter ſes regards ſur ſon Roy? N’aurez-vous pas vn grand hon¬
+    <lb/>
+    neur de luy auoir conlerué ſa Couronne &amp; ſon Royaume, pour ne
+    <lb/>
+    le pas laiſſer en proye à l’Eſtrangetr? N’eſitimerez-vous rien cela,
+    <lb/>
+    qu’vn monde parfait en toutes choſes, vous appellent les Deffen¬
+    <lb/>
+    ſeus de leurs iuſtes cauſes? Que les femmes de Paris, vous nom¬
+    <lb/>
+    ment Protecteurs de leurs marys &amp; enfans; Bref, que les Paiſans
+    <lb/>
+    rouuent leur refge chez vous, &amp; dans vos maiſons, à̀ cauſe des
+    <lb/>
+    meurtres, des vols, des yiols, des incendies, des ſacrileges, autres
+    <pb n="12"/>
+    <lb/>
+    ,
+    <lb/>
+    8
+    <lb/>
+    oppreſions qui ſe commettent tous les iours au ſujet do la guerre?
+    <lb/>
+    Ouy cettes, Meſſelgneurs, &amp; ne faut point douter que le Tout- puiſ¬
+    <lb/>
+    ſant, voyant &amp; cognoiſſanc vos treuaux, ne vous donne à la fin vne
+    <lb/>
+    tres-ample recompenſe. Pourſuiuez donc, &amp; ne vous laſfez pas, S!
+    <lb/>
+    Germain n’eſt qu’vne petite pourmenade. Ioignez- vous auec nos
+    <lb/>
+    Princes, &amp; rus r’amenez le Roy. Ieſç̧ay qu’il ſera ioyeux de vous
+    <lb/>
+    voir, co eſtant ſa main dextre; &amp; qu’il ſera bien-aiſe de venir
+    <lb/>
+    reuolt ſon Paris, auec vous.-Que le commun intereſt vous touche
+    <lb/>
+    ſenſiblement, ſans eſpouſer le particulier; &amp; vous verrez que la be¬
+    <lb/>
+    nediction des Cieux tombera ſur vos teſtes. Que le Peuple ne reſpi¬
+    <lb/>
+    rera que vos vertus; &amp; ne ſç̧aura dire autre choſe en ſon cœur, que
+    <lb/>
+    Viue le Roy, Viue les Princes, Viue le Parlement, &amp; que Dieu gar¬
+    <lb/>
+    de de mal Noſſeigneurs de Ville. N’eſt-ce pas là vne agreable re¬
+    <lb/>
+    compenſe de tous les trauaux que vous aurez ſoufferts? Quoy! n’eſt¬
+    <lb/>
+    ce pas emporrer les Lauriers deubs à vos merites? qui ſera celuy qui
+    <lb/>
+    ſe rendra ſi ingrat que de ne pas recognoiſtre le bien que vous luy
+    <lb/>
+    aurez fait? quel cœur de roche ne ſe doit armolir lors que nous ne ſe¬
+    <lb/>
+    tons plus ſujets de monter la Garde, que pour la ſeureté de la per¬
+    <lb/>
+    ſonne de noſtre Roy? Mais enfin qui ſera celuy qui oſcra nier que
+    <lb/>
+    vous eſtes la ſeule &amp; premiere cauſe de ſon bien; puiſque par tout
+    <lb/>
+    vous vous rendez vigilans à le conſeruer ? C’eſt ce que nous atren¬
+    <lb/>
+    dons bien-toſt de vous, Meſſeigneurs, eſperans de vous voir en bon
+    <lb/>
+    ordre à l’entrée que vous allez preparer pour noſtre Monarque. Ce
+    <lb/>
+    ſera alors que vous nous ferez oublier les fatigues &amp; les peines, que
+    <lb/>
+    nous auons endurées parmy les rigueurs d’vne tres-faſcheſe ſai¬
+    <lb/>
+    ſon. Vous nous ferez gouſter les fruicts delicieux que produit or¬
+    <lb/>
+    dinairement la Paix, &amp; que chaſſant loin de nous les obſtacles qui
+    <lb/>
+    la peuuent empeſcher; Vous nous remettrez dans le repos, ſeul ob¬
+    <lb/>
+    ject qui doit enfin conſoler nos ames depuis vn ſi long-remps aſli¬
+    <lb/>
+    gé́es. Et bref toute noſtre attente eit en vous, &amp; ne deſirons pas
+    <lb/>
+    qu’elle en ſorte; eſtimant mieux la mort que de vous laiſſer dans
+    <lb/>
+    e; faſcheux labyrinrhes que peut façonner &amp; conſtruire vn Finet
+    <lb/>
+    &amp; ruſé Eſtranger.
+    <lb/>
+    Vn noble cœur rejette tout ce qui luy ſemble contraire. Ce di¬
+    <lb/>
+    re franc &amp; ne l’eſtre pas monſtre pluſtoſt vne bntordiſe qune
+    <lb/>
+    addreſſe: Et celuy qui entre le dernier au combat auecque pru¬
+    <lb/>
+    dence r’empotrte bien ſouuent plus de Lauriers que ceux qui l’ont
+    <lb/>
+    premedité auant le temps, fe fortifiant ſur des paroles niaiſ
+    <lb/>
+    friuoles.
+    <pb n="13"/>
+    <lb/>
+    i
+    <lb/>
+    riuolles.Les combattans ſe trouuent honnore quand on leur dit
+    <lb/>
+    qu’ils ſont genereux. Chers amis excuſez moy, puis que ieſçay
+    <lb/>
+    la plus grande partie du meſtier de la guerre; &amp; que vous n’igno¬
+    <lb/>
+    rez point que ſuiuaut le ſanguinaire Mars: il vous eſt poſſible d’ap¬
+    <lb/>
+    procher de celle qui ſçait fort bien allentir ſes feux, &amp; briſer ſes ar¬
+    <lb/>
+    mures; Cen’eſt pas que ie veuille vous contraindre d’eſtre de no¬
+    <lb/>
+    ſtre parry, en ſecouüant le ioug de l’obeyſſance que vous deuez à
+    <lb/>
+    noſtre Monarque; mais comme tous diffeends ne ſe terminent
+    <lb/>
+    iamais qu’il n’y ayt vne honorable fin; ie dis que la douceur l’em¬
+    <lb/>
+    porte ſur vos courages. Ce n’eſt pas peu d’eſtre animez, pour
+    <lb/>
+    deffendre ſon droit; il faut de pluas ſçauoir, comment &amp; en quelle
+    <lb/>
+    ſorte. Ce n’eſt pas eſtre Soldat que de porter les armes; mais c’eſt
+    <lb/>
+    ſe rendre Capitaine de les ſçauoir bien manier pour ſe deffendre.
+    <lb/>
+    Il en eſt ainſi, genereuſe Nobleſſe Françoiſe, que lors que l’on vous
+    <lb/>
+    penſe meſpriſer, c’eſt alors que vous faites mieux voſtre deuoir ſans
+    <lb/>
+    erainte de reſpandre voſtre ſang, quand il eſt queſtion du ſeruice.
+    <lb/>
+    du Roy &amp; de la Patrie. Que paurray ie dire de vous aucres, ſinon
+    <lb/>
+    que vous eſtes les aymez de Caſtor &amp; Pollux, Caualliers auſſi diſ¬
+    <lb/>
+    crets que les armes reluyſantes qu’ils portoient pour leur deffence,
+    <lb/>
+    &amp; contre leurs ennemis. Ce ſeroit peu de dire que vous eſtes le
+    <lb/>
+    premier nerf de la main de noſtre Monarque, &amp; que vous pouuez
+    <lb/>
+    beaucoup en toutes les affaires qui concernent vne indiſſoluble
+    <lb/>
+    Paix: mais mal-heur pour vous; c’eſt qu’il y a parmy nous vne
+    <lb/>
+    grande quantité de traiſtres, qui ne laiſſentſlpas en nous affoibliſ¬
+    <lb/>
+    ſans de vous donnur le dernier coup de lancettes, afin de nous re¬
+    <lb/>
+    dre auec vous du tout inutilles.
+    <lb/>
+    Faires mieux ſi vous me croyez; repreſentez à noſtre Roy, que
+    <lb/>
+    voſtre ſang &amp; le noſtre n’eſt qu’vn meſme ſang, &amp; que comme vous
+    <lb/>
+    eſtes François, nous ſommes Pa riſiens; Que pluſieurs d’entre vous
+    <lb/>
+    ont leurs femmes, &amp; enfans, voire meſme leurs Maiſtreſſes enfer¬
+    <lb/>
+    mez dans cetre ſameuſe Ville; Dirtes luy que vos armes ſont tres¬
+    <lb/>
+    bonnes pour tuer &amp; maſſacrer des Tures &amp; non pas des Chre¬
+    <lb/>
+    ſſiens; Que vos mains n’ont point accouſtumé de ſe lauer dans le
+    <lb/>
+    ſang que vous cognoiſſez; Que voicy le temps que vous deuez
+    <lb/>
+    cueillit des palmes dans l’Idumée, en vangeant l’affront que l’ony
+    <lb/>
+    fait au ſacré Nom de Ieſus; Et que vouseſtes tout preſt de téter tou¬
+    <lb/>
+    tes les aduantures qui ſe pourront rencontrer dans le monde, pour¬
+    <lb/>
+    ueu qu’il. donne la Paix à ſoa Peuple chery; Sans doute vous ga¬
+    <pb n="14"/>
+    <lb/>
+    1
+    <lb/>
+    l
+    <lb/>
+    l
+    <lb/>
+    8
+    <lb/>
+    1e
+    <lb/>
+    ¬¬¬¬-¬-¬
+    <lb/>
+    gnerez le cœur de noſtre Regente; lors que vous luy remonſtre¬
+    <lb/>
+    rez, que le nom de Reyne de Paix, eſt de beaucoup plus excellent
+    <lb/>
+    que celuy de Guerre; Qu’il eſt bien plus ſeant à ſa Majeſté d’eſtre.
+    <lb/>
+    adorée dans vn Paris, que parmy des deſerts, vaites &amp; affreux à
+    <lb/>
+    la veuë. Qu’elley ſera rauie d’entendre l’eloquence de nos Pre¬
+    <lb/>
+    dicateurs; leſquels tous d’vn meſme accord la conuie de les y
+    <lb/>
+    venir entendre. Et enfin, que ſa charité augmentera doublement
+    <lb/>
+    lors qu’elle pardonnera les offenſes paſſées. C’eſt ce que vous de¬
+    <lb/>
+    uez faire, Genereuſe Nobleſſe, &amp; c’eſt auſſi ce que nous atten¬
+    <lb/>
+    dons de vous. Nous aſſeurant que pat voſtre moen nous ſerons
+    <lb/>
+    deliurez des peines que l’on ſonffre otdinaitement pour le ſujet de
+    <lb/>
+    la guetre; Que nous mangerons du Pain à’bon marché; Que nous
+    <lb/>
+    ne ſerons point contraints de ſoliller nos conſciences en man¬
+    <lb/>
+    geant des viandes que l’Egliſe noſtte Mere nous defend de man¬
+    <lb/>
+    ger durant le Sainct Temps de Careſmre. Et qu’nfailliblement le
+    <lb/>
+    trafic ſe temettraſus; nous faiſant viures les pluheureux &amp; lés plus
+    <lb/>
+    contents de la terte. Poutſuiuez-donc, hardiment voſtre entre¬
+    <lb/>
+    priſe; &amp; ne permettez que nous ſoyons tourmentez deſormais;
+    <lb/>
+    quirtez les armes, pour vous amuſer à pincer vn Luth nous vous
+    <lb/>
+    ferons des chanuſons toutes nouuelles; meſme il n’y a pas vn de nos
+    <lb/>
+    Poëtes qui ne ſe ptomettent de chanter vos louanges. Venez¬
+    <lb/>
+    done’nous reuolr ſans laiſſer la Paix derriere vous; faites là mar¬
+    <lb/>
+    chet enceſte, meſme deuant vos genereux Capitaines. Ainſinous
+    <lb/>
+    yrons au deuant de vous pourvous accoller la botte.
+    <lb/>
+    La Sainceté, la Pieté &amp; la luſtice ſont trois eurs qui ne ſe ſe¬
+    <lb/>
+    parent iamais;Si l’vne ſe ſent afſſigé́e les deux autres la conſolent; &amp;
+    <lb/>
+    ainſi font vne admirable liaiſon, que les temps meſme ne peuuent
+    <lb/>
+    déjoindre. La Samcteté dans ce rencontre fait bien ſouent des
+    <lb/>
+    rmitacles; La Pieté fai. amolir les cœurs les plus endurcis au mal, en
+    <lb/>
+    les tendant doux, h mbies &amp; paiſibles; Et la Iuſtice punit ſeuere¬
+    <lb/>
+    ee e ue ne ien le en eone e n en i leneren eſt
+    <lb/>
+    a veitu, c’eſt dans la tranquilié &amp; parmy la Paix, qu’elles font va¬
+    <lb/>
+    loir leur ralént Neuantmcins elles ne laſſent pas de ſe rencontrer
+    <lb/>
+    parmy les Eccleſiaſtiques, &amp; ſemble bien qu’elles y vyeullent inceſ¬
+    <lb/>
+    ſam nt demeurer; Elles les conjurent de prier leur Maiſtre pour
+    <lb/>
+    lenrs auancements; de feſchir leurs genoux pour Ies mettte en
+    <lb/>
+    graee aueç celuy qui les peut remeute en credit, en deſtruiſnt
+    <pb n="15"/>
+    <lb/>
+    -r .¬¬L
+    <lb/>
+    .¬
+    <lb/>
+    leurs ennemis. C’eſt donc à vous, ô Anges &amp; Miniſtres de Die¬s
+    <lb/>
+    que ces trois humbles ſœurs s’addreſſent, ils ne regneront iamais
+    <lb/>
+    ſans vous: Et leur importe fott peu les loilanges, &amp; les auanta¬
+    <lb/>
+    ges que l’on leurt, donne ſans qu’au prealable vous n’en ſoyez
+    <lb/>
+    conſentent, eſtimant mieux ſe voir gouuerner par vos prudences;
+    <lb/>
+    que de ſelaiſſer manier par des eſprrts brutaux. Puiſque c’eſt dans
+    <lb/>
+    la Paix qu’elles agiſſent, procutez là enuers celuy que vous ſoruez
+    <lb/>
+    aueec tant de ferueur &amp; de deuotion. Que vos bouches ne ſoient
+    <lb/>
+    point muettes pour fleſchit vn Dieu courroucé contre nous, &amp;
+    <lb/>
+    taſcher de remettre ces trois ſœuts en graçes Que vos cœurs ſoyent
+    <lb/>
+    touchez d’amour, &amp;-eſchauffez de charité, pour briier les fleſches
+    <lb/>
+    d’vn Dieu corroucé contre ſon Peuple Que vos penſées neſoyent
+    <lb/>
+    autres que de le prier d nous enuoyer bien toſt la Paix; Que tou¬
+    <lb/>
+    tes vos veilles ne tendent qu’a chaſſer &amp; deſtournet loing de nous
+    <lb/>
+    la guerre, qui cauſe que vos Egliſes, &amp; vos Autels ſont ſi ſou¬
+    <lb/>
+    uent pollüs &amp; rophanées C’eſt eſtre Sain&amp;t que de faire tels mi¬
+    <lb/>
+    racles? Ainſi ſerez vous eſtimez tels ſi vous nous procutez quel¬
+    <lb/>
+    que bien enuers le Dieu de Paix &amp; de concorde. Il ne tient qu’à
+    <lb/>
+    vous que nous ne ſoyons tous rauis de voir vn changement ſi ad¬
+    <lb/>
+    mirable, puis que vos prieres peuuent changer le glaiue en oli¬
+    <lb/>
+    uier, &amp; le ſang en laict Que vous ſerez glorieux ſi l’on dit de
+    <lb/>
+    vous; Ils ont ieuſné, ils ont veillé, ils ont prié inceſſamment
+    <lb/>
+    pour leſchir ce grand Dieu qui eſtoit irrité contre nous; leur ſin¬
+    <lb/>
+    cerité eſt la eule cauſe de ncſtre bien; leur deuoion a formé &amp; fa¬
+    <lb/>
+    çonné la baze de noſtre felicité, &amp; leur Charité a tellement eſ¬
+    <lb/>
+    cha ffé les cœurs de nos ennemis, qu’ils ont eſté c ne aints de laiſ¬
+    <lb/>
+    ſer tomber les armes deſquelles ils nous vouloient f apper; N’eſt ce
+    <lb/>
+    is-là aſſez dequoy vous longe? Ne vous tiendra-t’on pas pour
+    <lb/>
+    bien heureux ſi vous nous moyennez la Paix auee Dieu &amp; les
+    <lb/>
+    homnes?Qui ſera coluy qui me vous honorera &amp; reſpectera pour
+    <lb/>
+    yntel bien fait? Y a-il quelque demon dans l’enfer qui vous piſſe
+    <lb/>
+    eſtourner d’vne ſi ſaincte ation. Non, non Meſſieurs, vos prie¬
+    <lb/>
+    res ſont aſſez feruentes, pourabattre les cœuts qui ne reſpirent que
+    <lb/>
+    l’air de noſtre ſang; Vos ſainctetez ſont aſſez fortes pour deſtrui¬
+    <lb/>
+    re nos plus cruels ennemis; Et vos vertus ont le pouuoi de nous ta¬
+    <lb/>
+    mener la Paix. Pourſuiuez donc &amp; ne vous laſſez pas de la deman¬
+    <lb/>
+    der à celny qui ſeul nous la peut donner. Ainſi vous ſerez Sair ts
+    <lb/>
+    &amp; ferez de merueilleux miracles dont la yeru s’eſtendra pamy
+    <pb n="16"/>
+    <lb/>
+    tout le monde. Demandant à Dieu la Paix, c’eſt luy deman der no¬
+    <lb/>
+    ſtre repos; &amp; le loyer de nos peines &amp; fatigues paſſées. C’eſt nous
+    <lb/>
+    nourrir d’vn pain qui ne peut preuenit que du Ciel. C’eſt nous ren¬
+    <lb/>
+    dre vuis, &amp; bons amis auec nos freres; Enfin c’eſt nous faite gou¬
+    <lb/>
+    ſter en ce monde les delices des eſprits bien-heureux. Prlez donc
+    <lb/>
+    ſans fin puis que vos prieres nous peuuent appoter vn ſi gra nd
+    <lb/>
+    bien. Tout l’Vniuers ſera esbahy quand on lcaura que vous eſtes
+    <lb/>
+    en partie cauſe que nous auons la Paix; &amp; que vous auez auec droit
+    <lb/>
+    fulminé contre celuy qui en a des long-temps empeſché l’effe.
+    <lb/>
+    C’eſt ce qu’vn peuple affîigé attẽ̃d de vous, &amp; ce que vous deuez faire.
+    <lb/>
+    Deſia l’Hyuer d’vne ennuyeuſe guerre ſe va paſſer; chers &amp; fi¬
+    <lb/>
+    dels Compatriots, vos armes ſont maintenant plus propes à pa¬
+    <lb/>
+    roiſtreſur vos ratelliers que ſur vos corps; voſtre ennemy ſe trou¬
+    <lb/>
+    ue tellement affoibly qu’il commence à ployer le genouil pour vous
+    <lb/>
+    demander humblement pardon de ſes offenſes. Il vous a fait beau¬
+    <lb/>
+    coup paſtir &amp; endarer, mais en reuanche il vous veut doreſnauant
+    <lb/>
+    ſeruir &amp; honorer &amp; vous monſtrer que s’il a encore quelque gou¬
+    <lb/>
+    ſte de ſang dans ſes veines qu’il le veut prodiguer &amp; reſpandre
+    <lb/>
+    pour voſtre deffenſe &amp; conſeruaion. Ce n’eſt pas peu de voir vn
+    <lb/>
+    ennemy conuerty de laſorte, &amp; ſe rendre en vn moment de temps
+    <lb/>
+    voſtre parfait amy. Les maux qu’il vous a faits, ſont autant de ro¬
+    <lb/>
+    ſes qui croiſtront à ce Printemps dans le parterte de voſtre valeur;
+    <lb/>
+    Il vous a fait ieuſner afin de vous mieux ſaouler puis apres; Il vous
+    <lb/>
+    a fait patroüillet dans les bouës durant vne faſcheuſe ſaiſon d’Hy¬
+    <lb/>
+    uer, à deſſcin de vous reudre le pied feme &amp; ſec durant l’ayma.
+    <lb/>
+    ble Printemps; Il vous a faitjtrembler, pour vous r’aſſurer durant
+    <lb/>
+    les tempeſtes que peut former vn rurbulent Eſté. Il vous a fait
+    <lb/>
+    veiller, eſtimant que le ſommeil vous eſtoit nuyſible &amp; domma¬
+    <lb/>
+    geable. Il vous à fait tirer l’argent de vos bourſes, pour ayder à
+    <lb/>
+    ſouldoyer des Soldats, pour reſiſter à ſes violences; mais ſon de¬
+    <lb/>
+    ſir eſt de les remplir lors que le commerceſera permiss &amp; pacifiant,
+    <lb/>
+    fera retirer ceux qui eſtoient eſleus pour le vaincre &amp; deſtruire. Au
+    <lb/>
+    tant de pas que vous auez faits ſous les armes, ſe conuertiront en au¬
+    <lb/>
+    rant de degrez pour monter au lieu où ſe rencontre vne agreable
+    <lb/>
+    &amp; ſincere Paix. Les cœurs genereux qui ont ſenty le ſubtil eſguil¬
+    <lb/>
+    lon de la mort pour la cauſe publique ne ſe faſcheront point du
+    <lb/>
+    mal qu’ils auront enduré, lors qu’ils ſçauront que nous viuons en
+    <lb/>
+    amitié &amp; concorde. Les bleſſez en cette occaſion ſeront glorieux
+    <lb/>
+    de
+    <pb n="17"/>
+    <lb/>
+    reeee--e¬¬
+    <lb/>
+    13
+    <lb/>
+    demonſtrer leurs playes &amp; cicatrices, diſant hardiment; Voylà ce.
+    <lb/>
+    que nous auons ſouffert pour deffendre noſtre Roy &amp; noſtre Pa¬
+    <lb/>
+    trie. Gloire ineſtimable? puis que reſpandre ſon ſang en telles oc¬
+    <lb/>
+    caſions, eſt conſeruer la vie de ſes freres &amp; bons Compatriots.
+    <lb/>
+    Courage, les trauaux ſont preſque finis, le calme veut dominerl’o¬
+    <lb/>
+    rage; IIn’eſt plus temps de s’affſiger, quand la ioye ſe veut empa¬
+    <lb/>
+    rer de nos eſprits, &amp; chaſſer hors de nos cœurs la hayne &amp; la diſ¬
+    <lb/>
+    corde. Et vous pauures Payſans conſolez vos ames, la rigueur de
+    <lb/>
+    la guerre vous facilite l’entrée de la felicité eternelle; Si l’on a vio¬
+    <lb/>
+    lé vos femmes &amp; vos filleos, ce n’eſt que pout les rendre plus no¬
+    <lb/>
+    bles &amp; plus chaſtes deuant le troſne de Dieu. Ne penſez-pas que
+    <lb/>
+    leurs ames en ſoient moins belles dans l’eternité. Et que d’eſtre
+    <lb/>
+    forcées par des pendarts, leur puiſſe rauir leur honneur parmy les
+    <lb/>
+    hommes. Non, non, mes chers amys, opprenez que neceſſité n’a
+    <lb/>
+    point de loy, &amp; que c’eſt la force, &amp; la rage de nos ennemis quiont
+    <lb/>
+    auſé vn mal qui n’eſt que pour vous doanerapres cestroubles vn
+    <lb/>
+    per durable contentement. Si nosenaemis ontpillé ſi peu que vous
+    <lb/>
+    auiez amaſſé pour voſtre entretien, afſeurez-vous que dans peu de
+    <lb/>
+    temps Dieu vous le multipliera au double. Que ſi ils ont inſolem¬
+    <lb/>
+    ment bruſlé vos maiſons; imaginez vous qu’ils auoient beſoin de
+    <lb/>
+    hois pourſe chanffer; mais conſolez vous-qu’ils n’oneſceu empot¬
+    <lb/>
+    ter la place o elles eſtoient baſties ;E dites hardinaent: Qu’ont-ils
+    <lb/>
+    gagné de me ruyner?Et ſont-ils deuenus plus riches? Ces- marauts
+    <lb/>
+    ſe voyent maintenant confus, ils n’ent plus aucun lieu de retraitte.
+    <lb/>
+    Ma maiſon eſt rebaſtie beaucoup plus belle qu’elle n’eſtoit aupara¬
+    <lb/>
+    uant, &amp; Dieu benit mon tranail manuel, &amp; fait diſtiller: vne graſſe
+    <lb/>
+    roſéeſur les biens que i’ay ſemez en terte. Il ne m’importe plus
+    <lb/>
+    de vire puis que ie vay gouſter les delices d’vne ſauoureuſe &amp; a¬
+    <lb/>
+    greable Paix; &amp; que ie puis m’aſſeurer qu’elle demeurera inceſ¬
+    <lb/>
+    ſamment auec mes enfans. Mespertes ſont paſſées, voicy le temps
+    <lb/>
+    du gain; Ie vuray&amp; ſi ie nedoutepoint que: ie dois voir mes amys
+    <lb/>
+    ioyeux &amp; gaillads. La guerre ne peut pastouſiours durer, il eſt
+    <lb/>
+    tres-necefſaire que la Paix prenne ſa place. O adorable Paix, vien
+    <lb/>
+    icy nous t’attendons pour t’honnorer Nos cœurs deſia commen¬
+    <lb/>
+    cent à ſautiller de ioye quand ils entendent dire que tu es conrtente
+    <lb/>
+    d’habier parmy nous:! Vien donc &amp; ne craint point d’eſtretrahie;
+    <lb/>
+    arnous ſommes tes vrays Zelateurs; en quelque lieu où tu puiſſe
+    <lb/>
+    aller u’ne te rencontreras iamais mieux que parmy nous. Vien.
+    <lb/>
+    D
+    <pb n="18"/>
+    <lb/>
+    2
+    <lb/>
+    1
+    <lb/>
+    14
+    <lb/>
+    dono encore ne fois; nous te dreſſerons des Autels; La guerren’a
+    <lb/>
+    paint fait anceore encherir l’encens; il y en a aſſez en cette ville pour
+    <lb/>
+    parfumer tes ſarifices; Ne croy point que nous ſoyons ſi ingrats
+    <lb/>
+    quode re nefuſer. Le plus paure d’entre nous t’offnira volonaire¬
+    <lb/>
+    ment ſa maiſon, poutt’y heberger; &amp; ſe plaira de t’offrir continuel¬
+    <lb/>
+    lement ſon humble ſeruice. Ne ſeras-tu pas bien ayſe de te voiz
+    <lb/>
+    cherie &amp; honoréÉe d’vn Peuple qu’il y a ſi long-Jemps qui ne t’a veuë
+    <lb/>
+    ny contemplée. Taioye-ne s’augmentera-lle poia, quand tu ſçau¬
+    <lb/>
+    ras que le Roy, la Reyns Regente; Monſeigneur le Duc d’Or¬
+    <lb/>
+    leans, le Prioe indigné, &amp; taus les gsands Seigneurs, ſeront reue¬
+    <lb/>
+    nusen cette Villepour t’adorer? Ouy ; certes, &amp; ie çroy que tout
+    <lb/>
+    ton plaiſir ſera de les y voir en bonne proſperité &amp; ſanteé, rendre
+    <lb/>
+    les ations de graces à Dieu pour vne telle &amp; preſque incroyable
+    <lb/>
+    ranqulliré. Que nous faut-il plus ſi tu te range de aoſtre coſté3
+    <lb/>
+    L’ennenmy redoutera nosforces, ors qu’il entendra dire que l’ay¬
+    <lb/>
+    mable fille du Cielaura auec ardeur embraſſé noſtre party. Oj
+    <lb/>
+    eſt la crainte qui menaſfe de ſaiſir nos eſprits? Elle ne ſe rencon¬
+    <lb/>
+    tre plus patrmy aous, à cauſe que l’on nous fait apprendre, com¬
+    <lb/>
+    me par force le meſtiar de la guorte. Ns ennemis ſe treuuent
+    <lb/>
+    aintenant yaineus ;&amp;e ſans coup fappar nous mporons ſut
+    <lb/>
+    luy la Vitoire, qui uous auoit eſté promiſe dés vn ſiecle d’années.
+    <lb/>
+    O! heureuſe&amp; tres-aymable Paix? O! Deeſſe incomparable? O;
+    <lb/>
+    Vertu excéllonte! qui quitte ſon Palais du Ciel pour ſe venir lo¬
+    <lb/>
+    ger auec naus fur la terre? Adairable reuers du mauuais temps
+    <lb/>
+    aſſé? Poe paro rtous les haons Françqis doiuent paſſer, pour
+    <lb/>
+    gouſter les delices d’vn misl agreable &amp; ſauoureux? Deſcendez
+    <lb/>
+    doac viſtement; ain de nous faire reuiure. Nous ſemmes deſis
+    <lb/>
+    a domy morts; mais nousſcauons fort bien que vous auez le pou¬
+    <lb/>
+    uoir de nous guerir en nous reſuſcitant. Puis que c’aſt par le
+    <lb/>
+    aoyeu de tant de genoroux guaerriers( qui toutesfois s’eſtime¬
+    <lb/>
+    roient beaucoup plus heureux de viure ſous voas loix, que ſous
+    <lb/>
+    clles de e ſanguinaire Maxs) que vous daignez nous venir vi¬
+    <lb/>
+    ſiter: Faites qu’ils prennent tous part à voſtre trionmphe: Et tous
+    <lb/>
+    ain ſi qu’ils ſont les protetaurs, &amp; deffenſeurs des innocens con¬?
+    <lb/>
+    tre la rage d’vn ennemy eſtranger; Faites que nons ſoyons tſ¬
+    <lb/>
+    moias des hbelles ationus qu’ils ont produites pour nous conſer¬
+    <lb/>
+    uer la vie. Que ſils ot enduré des peines &amp; des fatigues pour
+    <lb/>
+    noſtre ſujet; Faites que nos vœux, &amp; nos ſouhaits les recompe¬
+    <pb n="19"/>
+    <lb/>
+    ſent en quelque choſe; nous permettant de publier leur renemnée
+    <lb/>
+    par tout l’Vniuers, &amp; faire en ſorte que leurs noms ſoyent pet¬
+    <lb/>
+    petuellement grauez au Temple de memoite, pour y eſtre veus
+    <lb/>
+    &amp; admirez de nos nepueux; &amp; reuerez pary les infinis ſiecles
+    <lb/>
+    aduenir. C’eſt ce que nous deſirons de voir en nos iours, ô ! alme
+    <lb/>
+    Paix? C’eſt voſtre viue douceur que nous cherchons? C’eſt le r¬
+    <lb/>
+    pos de nos Princes &amp; Seigneurs; &amp; la tranquillité d’vn monde
+    <lb/>
+    tout entier, qui ne reſpire autre air que celuy que Dieu leur a
+    <lb/>
+    donné pour Roy. Venez donc auec nous, &amp; ne nous meſpri¬
+    <lb/>
+    ſez pas. Vous ſerez esbaye de nous ontendre chanter ce moret;
+    <lb/>
+    Seignmeur ſauue noſtre oy penmdant le iour de rribalation s &amp; exace les
+    <lb/>
+    prieres des cœurs feruenrs qui t’inaoqent en icelauy.
+    <lb/>
+    FIN.
+    <lb/>
+    ADERTISSE E T V LE cTE v.
+    <lb/>
+    Her Lecteur, tu ſeras aduerty que c’ayant fait preſent de mon Iour
+    <lb/>
+    Lnal Poëtique de la Guerre Pariſienne, comme auſſi de mes Viſions
+    <lb/>
+    Nocturnes, l’on memenaſſe de les contre faire; &amp; ainſi me deſrober mo
+    <lb/>
+    trauail. C’eſt ce qui me retarde de te faire les ſuittes tant de l’vn que de
+    <lb/>
+    l’autre; Toutesfois ie ne laiſſeray pas de continuer; mais ie te prie au moins
+    <lb/>
+    de n’en point achetter d’autre Impreſſton que de celle de la Veufue d’An
+    <lb/>
+    thoine Coulon; ny de plus petite lettre; car iceux ſeront contrefaits; E
+    <lb/>
+    comme ie n’ay pas e le temps de les bien amplifier; ie te promets qu’ils
+    <lb/>
+    ſerons augmentez de plus de moitié à la ſeconde impreſſion. Ne laiſſant
+    <lb/>
+    donc pas de continuer, à la priere de nes plus familiers amys; ie te feray
+    <lb/>
+    voir cctte ſepmaine la troiſieſme partie de mes Viſions, ou tu verras nai¬
+    <lb/>
+    fuenent deſpeint ce qui nous peut aduenir de mauuais, en tous les mois
+    <lb/>
+    de la preſente année é649. Comme auſſi rma cinquieſme Sepmaine de la
+    <lb/>
+    Guerte Pariſienne; &amp; ainſi ie caſcheray e continuant de contenter ta cu
+    <lb/>
+    rioſlté. Adieu.
+   </p>
+  </body>
+ </text>
 </TEI>

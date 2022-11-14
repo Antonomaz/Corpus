@@ -1,345 +1,632 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau392_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Arrivée (l') du courrier extraordinaire des François, qui
-          apporte bonnes nouvelles (sic), et une harangue par écrit, faite par un grand seigneur à
-          MM. les prévôt, échevins et bourgeois de Paris; ensemble ce qui c'est (sic) passé à Paris
-          dans ce grand convoi, par le sieur Rozard.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille <affiliation><roleName type="status"
-                >Stagiaire</roleName></affiliation>
-          </persName>
-          <persName role="XML_Encoding">Lecha Mélanie <affiliation><roleName type="status"
-                >Stagiaire</roleName></affiliation>
-          </persName>
-          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
-            Jean-Baptiste</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2026-04-20">26 avril 2021</date>
-        <availability status="restricted" n="cc-by">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref
-            target="https://www.google.fr/books/edition/L_Arriv%C3%A9e_dv_Covrier_extraordinaire_des/wqSd0FFB5jcC?hl=fr&amp;gbpv=0"/>
-          <author ref="isni:0000000391335916">
-            <persName>
-              <forename>N.</forename>
-              <surname>Rozard</surname>
-            </persName>
-          </author>
-          <title source="Moreau">"Arrivée (l') du courrier extraordinaire des François, qui apporte
-            bonnes nouvelles (sic), et une harangue par écrit, faite par un grand seigneur à MM. les
-            prévôt, échevins et bourgeois de Paris; ensemble ce qui c'est (sic) passé à Paris dans
-            ce grand convoi, par le sieur Rozard."</title>
-          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher ref="isni:0000000002569584" xml:id="IL_RemyVeuvedeJean.xml">
-            <persName>
-              <forename>Veuve de Jean</forename>
-              <surname>Rémy</surname>
-            </persName>
-          </publisher>
-          <date source="Moreau" when="1649">1649</date>
-          <extent>
-            <measure unit="page" quantity="8"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2996944">Lyon</settlement>
-            <institution>Bibliothèque municipale</institution>
-            <repository/>
-            <idno type="cote">312960</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+<TEI xml:id="Moreau392_GBOOKS" xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title source="Moreau" type="main">
+     L'Arrivée du courrier extraordinaire des François, qui
+          apporte bonnes nouvelles , et une harangue par écrit, faite par un grand seigneur à
+          MM. les prévôt, échevins et bourgeois de Paris; ensemble ce qui c'est  passé à Paris
+          dans ce grand convoi, par le sieur Rozard.
+    </title>
+    <title type="sub">
+     Édition Antonomaz
+    </title>
+    <respStmt>
+     <resp>
+      Chaîne de traitement
+     </resp>
+     <persName role="XML_Encoding">
+      Roblin Camille
+      <affiliation>
+       <roleName type="status">
+        Stagiaire
+       </roleName>
+      </affiliation>
+     </persName>
+     <persName role="XML_Encoding">
+      Lecha Mélanie
+      <affiliation>
+       <roleName type="status">
+        Stagiaire
+       </roleName>
+      </affiliation>
+     </persName>
+     <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">
+      Abiven Karine
+     </persName>
+     <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">
+      Lejeune Gaël
+     </persName>
+     <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">
+      Tanguy
+            Jean-Baptiste
+     </persName>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <publisher>
+     Projet ANTONOMAZ / Sorbonne Université
+    </publisher>
+    <ref target="https://github.com/Antonomaz"/>
+    <date type="file_creation" when="2026-04-20">
+     26 avril 2021
+    </date>
+    <availability n="cc-by" status="restricted">
+     <licence target="https://creativecommons.org/licenses/by/4.0"/>
+    </availability>
+   </publicationStmt>
+   <sourceDesc>
+    <bibl>
+     <ref target="https://www.google.fr/books/edition/L_Arriv%C3%A9e_dv_Covrier_extraordinaire_des/wqSd0FFB5jcC?hl=fr&amp;gbpv=0"/>
+     <author ref="isni:000000038974880X">
+      <persName>
+       <forename>
+        N.
+       </forename>
+       <surname>
+        Rozard
+       </surname>
+      </persName>
+     </author>
+     <title source="Moreau">
+      L'"Arrivée du courrier extraordinaire des François, qui apporte
+            bonnes nouvelles , et une harangue par écrit, faite par un grand seigneur à MM. les
+            prévôt, échevins et bourgeois de Paris; ensemble ce qui c'est  passé à Paris dans
+            ce grand convoi, par le sieur Rozard."
+     </title>
+     <pubPlace ref="geonames:2988507" source="Moreau">
+      Paris
+     </pubPlace>
+     <publisher ref="isni:0000000002569584" xml:id="IL_RemyVeuvedeJean.xml">
+      <persName>
+       <forename>
+        Veuve de Jean
+       </forename>
+       <surname>
+        Rémy
+       </surname>
+      </persName>
+     </publisher>
+     <date source="Moreau" when="1649">
+      1649
+     </date>
+     <extent>
+      <measure quantity="8" unit="page"/>
+     </extent>
+     <note type="format">
+      in-4
+     </note>
+     <relatedItem cert="low" source="Mazarine" subtype="none" target="none" type="identifier"/>
+    </bibl>
+    <msDesc>
+     <msIdentifier>
+      <settlement ref="geonames:2996944">
+       Lyon
+      </settlement>
+      <institution>
+       Bibliothèque municipale
+      </institution>
+      <repository/>
+      <idno type="cote">
+       312960
+      </idno>
+     </msIdentifier>
+     <history>
+      <provenance>
+       <stamp>
+        True
+       </stamp>
+      </provenance>
+     </history>
+    </msDesc>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <projectDesc>
+    <p>
+     Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
-          auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
-          bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">392. Arrivée (l') du courrier extraordinaire des François, qui apporte
+          auteur oublié.
+    </p>
+    <p>
+     Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+          bibliothèques numériques publiques et de Google livres.
+    </p>
+    <p>
+     L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.
+    </p>
+   </projectDesc>
+   <editorialDecl>
+    <p/>
+   </editorialDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="fra">
+     Document en français
+    </language>
+   </langUsage>
+   <abstract>
+    <p source="Mazarine"/>
+    <p source="Moreau">
+     392. Arrivée (l') du courrier extraordinaire des François, qui apporte
           bonnes nouvelles (sëc), et une harangue parécrit, faite par un grand seigneur à MM. les
           prévôt, échevins et bourgeois de Paris; ensemble ce qui c’est (sic) passé à Paris dans ce
           grand convoi, par le sieur Rozard. Paris, veuve Jean Remy, 1649, 8 pages. Le convoi du 25
           février. L’auteur voulait sans doute élever une concurrence au Courrier françois ; car il
-          promettait une suite.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="genre">narration</term>
-          <term type="subject"/>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_13" source="Moreau">
-          <p>Réception de l’envoyé de l’archiduc Léopold au parlement</p>
-          <date when="1649-02-19">1649-02-19</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-09-14" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>L’ARRIVEE
-        <lb/>DV
-        <lb/>COVRRIER
-        <lb/>EXTRAORDINAIRE
-        <lb/>DES
-        <lb/>PRANCOIS.
-        <lb/>QVI APPORTE BONNES NOVVELLES,
-        <lb/>&amp; vne Harangue par eſcrit, faite par vn grand Sei
-        <lb/>gneur, à Meſſieurs les Preuoſts, Eſcheuins &amp;
-        <lb/>Bourgeois de Paris.
-        <lb/>ENSEMBLE CE QVI C'EST PASSÉ
-        <lb/>à Paris dans ce grand Conuoy.
-        <lb/>Par le ſieur Rozard. <figure type="decoration"/>
-        <lb/>A PARIS,
-        <lb/>Chez la vefue IEAN REMY, ruë S. Iacques à
-        <lb/>l'Image S. Remy, prés le College du Pleſſis.
-        <lb/>M. DC. XLIX.
-        <lb/><imprimatur>AVEC PERMISSION.</imprimatur>
-        <pb n="2"/>
-        <lb/>2
-        <lb/>LARRIVEE
-        <lb/>QVI APPORTE BONNES NOVVELLES,
-        <lb/> &amp; vne Harangue par eſcrit, faite par vn grand
-        <lb/>-Seigneut, aMeſſieurs les ’reuolts Eſehe
-        <lb rend="¬" break="no"/> uins &amp; Bourgeois de Paris.
-        <lb/>1
-        <lb/>ENSEMBLE E QVI ’EST ASSE’LA PR1S
-        <lb/>duns ce grand ſonuoy.
-        <lb/>ſt Vr REo1s Mercure le Meſſager des
-        <lb/>e Dieux lors qu’il apportoit de bonnes nou
-        <lb rend="¬" break="no"/> uelles, il receuoit les acclamations d’vn
-        <lb rend="¬" break="no"/>chacun, dans le Temple que Ceſar Auguſte de
-        <lb rend="¬" break="no"/>an er e e le leroe ea oun eoe er nee es
-        <lb/>nes, letr oupeaux de Calabre, la ſplendeur de l’Or,
-        <lb/>les threſors de la Terre, ny l’yuoire des lndes ne fai
-        <lb rend="¬" break="no"/>ſoient pas tant d’mpreſsion ſur les cœurs, ny deſa
-        <lb rend="¬" break="no"/>tisfaction à l’eſprit, que les bonnes nouuelles de ce
-        <lb/>glorieux meſſager, qui eſt encore dans l’eſtime des <pb n="3"/>
-        <lb/>uples; quoy que ſon eéclat ſemble pluſtoſt vne
-        <lb/>ion, qu’vne verité. Mais moy qui ſuis vcritable
-        <lb/>açois &amp; ne voudroit diſsimuler pour toutes choſes,
-        <lb/>dois eſtre bien venu dars ma Patrie &amp; lieu nat!, qui
-        <lb/> Paris, en luy annonç̧ant de tres-bonnes nouuclles.
-        <lb/>ay paſſeé par pluſieurs ’rouinces, &amp; dans les plus ce
-        <lb rend="¬" break="no"/>bres villes de ce Royaume, qui ſont preſtes de ſa
-        <lb rend="¬" break="no"/>rifier &amp; leurs biens &amp; leurs vies &amp; celles de leursen
-        <lb rend="¬" break="no"/>ns pour ſouſlenir vne cauſe, auſsi iuſte que celle
-        <lb rend="¬" break="no"/>Abcl, lors qu’il demandoit vengeance au Ciel &amp; im
-        <lb rend="¬" break="no"/>loroit ſon ſecours &amp; aſsiſtance, contre le frarricide
-        <lb/>e ſon frere.
-        <lb/>Toures leſquelles Villes &amp; Prouinces promettent
-        <lb/>le prende les armes ſſi beſoin fait) pour appuyer vn
-        <lb/>i glorieux party &amp; pour defendre vne ſi iuſte querel
-        <lb rend="¬" break="no"/>e protclans de ne donner aucun quartier a celuy qui
-        <lb/>n ſt autheur, en cas qu’il prenne la fuite, ny à ces
-        <lb/>complices Leurs armes ſont toutes preſtes &amp; ne de
-        <lb rend="¬" break="no"/>mandent que l’occaſion de les ioindre auec les no
-        <lb rend="¬" break="no"/>ſtres, melme les plus timides.
-        <lb/>Ayant couru qui de çà, qui de là, &amp; approché des
-        <lb/>limites etrangere, n’ay rencontré aucun qui n’ait
-        <lb/>loü̈é le zele &amp; generoſité de la plus celebre V ille du
-        <lb/>monde, &amp; qui donne le mouuement &amp; fait heureu
-        <lb rend="¬" break="no"/>ſement ſubſiſter toutes les autres, qui eſt laris
-        <lb/>Les grands Seigncurs auſli bien que les petits, les
-        <lb/>riches &amp; les pauures n’ont d’autre ambition que d’v.
-        <lb/>nir leurs armes auec les noſtres, ainſi qu’ils ſe ſont
-        <lb/>vnis auec nous par vne meſme inclination: &amp; pour
-        <lb/>défende les melmes intereſts. Ils ont vne ſaincte é
-        <lb rend="¬" break="no"/>A i <pb n="4"/>
-        <lb/>4.
-        <lb/> mulation de participer à l’honneur de nos armes, &amp;
-        <lb/>aux Couronnes qui les enuironnent.
-        <lb/>Dans la varieté &amp; oceurrence que i’ay faite, plu
-        <lb rend="¬" break="no"/>ſieurs m’ont aſſeure qu’ils contribueroient aà vn ſi glo
-        <lb rend="¬" break="no"/>rieux deſſein, &amp; ſe rendroient tres heureux en ſecon
-        <lb rend="¬" break="no"/>dans vne ſi haute entrepriſe, qui ne tend qu’à purger
-        <lb rend="¬" break="no"/> la France de ſon oppreſſeur &amp; Tyran, les enfans à̀ p
-        <lb rend="¬" break="no"/>ne ont-il l’aage de la raiſon, qu’ils ſouhaittent les meſ
-        <lb rend="¬" break="no"/>mes aduantages, n’y ayant aucun genre humain, qui
-        <lb/>egale celuy de défendre leur vie, leur liberteé, &amp; leurs
-        <lb/>biens.
-        <lb/>On fabrique des armes dans Roü̈en par où i’ay re
-        <lb rend="¬" break="no"/>paſſé, on diſpoſe des munitions, on dépeſche les trou
-        <lb rend="¬" break="no"/>pes pour nous ſecourir, qui viennent de toutes parts,
-        <lb/>par l’entremiſe de cét Auguſte, tres genereux, &amp; tres
-        <lb/>prudent Printce, Monſeigneur de Longueuille, qui a
-        <lb/>fait vn Corps d’armée, qui eſt en marche, ſous la con
-        <lb rend="¬" break="no"/>duirte de ſon Lieutenant, homme de probité &amp; tres
-        <lb/>genereux &amp; experime nté dans le fait de Mars, qui
-        <lb/>promet de donner de la peine aux ennemis, le Com
-        <lb rend="¬" break="no"/>te d’Arcourt a deſia experimenteé la peſanteur de ſon
-        <lb/>bras.
-        <lb/>Cette armée eſt compoſée de ſoldats bien faits &amp;
-        <lb/>d’elites, &amp; d’vn grand nombre de Caualiers, qui vo
-        <lb rend="¬" break="no"/>lontairement ce ſont engagez en cette glorieuſe mili
-        <lb rend="¬" break="no"/>ce. La Nobleſſe y a contribué, &amp; les plus Nobles &amp;
-        <lb/>belliqueux de cette Prouince s’y ſont engagez, &amp; les
-        <lb/>Capitaines les plus genereux ont fait ſerment de fide
-        <lb rend="¬" break="no"/>liteé, &amp; de viure &amp; mouris pour le ſeruice de la France.
-        <lb rend="¬" break="no"/>lls empeſchent les viures du coſté de ſainct Ger
-        <lb rend="¬" break="no"/>mai <pb n="5"/>
-        <lb/>1
-        <lb/>maln en Laye, ſauf l’iniure du temps ils ſeroient à
-        <lb/>Paris: car ils n’ont pas moins d’impatience de voir
-        <lb/>les Bourgeois pour les ſeruir, qu’eux de voir le gl0
-        <lb rend="¬" break="no"/>rieux ſuccez de leurs armes.
-        <lb rend="¬" break="no"/> Mais pour n’eſtre prolixe &amp; ennuyeux, i’ay fait
-        <lb rend="¬" break="no"/>rer en ’ce narré pour la curioſité du Lecteur, vne ha
-        <lb rend="¬" break="no"/>rangue d’vn grand Seigneur Lyonnois, addreſſée aux
-        <lb/>Bourgeois de Paris, conceuë en ces termes.
-        <lb/> (MEss1EvRSJVous laiſſez à la poſterité vne mar
-        <lb rend="¬" break="no"/>que eternelle &amp; vn caractere ineffaçable de vos me
-        <lb rend="¬" break="no"/>ites, auſsi bien que de voſtre valleur, toutes les plu
-        <lb rend="¬" break="no"/>mes les plus diſertes s’oceupét à tracer par leurs trais,
-        <lb/> vos merueilles, qui ne ſont pas moins que celles que
-        <lb/>publioit l’Oracle au Temple de Memoire: Vous eſtes
-        <lb/>de centre glorieux, qui maintient les lignes de la cir
-        <lb rend="¬" break="no"/>confereuce, vous eſtes ceét arbre glorieux; &amp; nous
-        <lb/>n’en ſommes que les membres, c’eſt vous qui nous
-        <lb/>affranchiſſez de l’orage qui nous menaſſoit, &amp; de la
-        <lb/>fin mal’heureuſe où ce Tyran nous vouloit precipi
-        <lb rend="¬" break="no"/>ter, vous eſtes les rouës qui nous donnez le mouue
-        <lb rend="¬" break="no"/>meént, les enuemis ne pouuant vous flechir ne font
-        <lb/> qu’inuectiuer, &amp; leurs mauuais deſſeins s’euaporent
-        <lb/>’aupres de vous comme vne legere exhalaiſon, ou fu
-        <lb rend="¬" break="no"/>meée, ils croyoient vous intiider par leur cruauté -&amp;
-        <lb/> barbarie, qu’ils exercent aux villages circonuoiſins,
-        <lb/>mais ce qui abat leur courage, eſt de voir voſtre con
-        <lb rend="¬" break="no"/> ſtance fondée dans l’vnion, &amp; que vos nombreuſes
-        <lb rend="¬" break="no"/>ſorties qui rempliſſent les Campagnes, leur font laſ
-        <lb rend="¬" break="no"/>eher le pied, meſme l’ombre reflechiſſant de vos
-        <lb/>orps les iutiuident. Orphée autrefois charmoit des <pb n="6"/>
-        <lb/>
-        <lb rend="¬" break="no"/>Rothers aüéeſa Lyre chantereſſe, &amp; cẽs doux cha
-        <lb/>mes &amp; accords faiſoient impreſsion ſur les eſprits les
-        <lb/>plus brutes &amp; ſauuages. Par Analogie, ie diray que
-        <lb/>vous eſtes le miracle du monde, &amp; lornement de l’V
-        <lb rend="¬" break="no"/>niuers, &amp; les productions de vos loü̈ables entrepri
-        <lb rend="¬" break="no"/>ſes, n’ont point de comparaiſon &amp; attirent le reſpect
-        <lb/>des Peuples auec l’admiration. Vous eſtes des ćtoilles
-        <lb/>qui brillent &amp; qui font vn agreable iour, auſsivous
-        <lb/>empruntezvoſtre lumiere &amp; voſtre éclat, de ces illu
-        <lb rend="¬" break="no"/>ſtres Senateurs, qui ſont comme des Aſtres, quivous
-        <lb rend="¬" break="no"/>verſent des benignes infuences, ils vous ſeruent heu
-        <lb rend="¬" break="no"/>reuſement d’auſpice &amp; de bouclier pour reſiſterà l’at
-        <lb rend="¬" break="no"/>taque de vos ennemis, il ſont les Peres de la Pattie
-        <lb/>qui par vne bonté naturelle, défendent voſtre heri
-        <lb rend="¬" break="no"/>tage, ny plus ny moins qu’vne geline qui défend ces
-        <lb/>pouſsins des griffes du mllan, ces grands Magiſtrats
-        <lb/>&amp; illuſtres Politiques, leurs ſoins &amp; leurs veilles, ne
-        <lb/>tendent qu’à voſtre bien.
-        <lb/>Ce ſont des ſeconds Anges tutelaires deputezde
-        <lb/>Dieu, pour la deffenſe de vos intereſts, contre ceur
-        <lb/>qui les veulent rauir, &amp; tyranniquement extorquer
-        <lb/>vos biens, Ces beaux flambeaux diſsiperont les nua
-        <lb rend="¬" break="no"/>ges; &amp; le vif é́clat de leur lumiere offuſquera les yeux
-        <lb/>des ennemis, ils purgeront la France de ces monſtres
-        <lb/>effroyables, qui l’ont reduitte en vn eſtat digne de
-        <lb/>compaſſion &amp; tireé toute ſa ſubſtance: mais cette heu
-        <lb rend="¬" break="no"/>reuſe conionction de ſes prudens, ſages, bons, &amp;
-        <lb/> heroiques Magiſtrats, auec de ſi nobles &amp; vertueux
-        <lb/>Bourgeois &amp; Concitoyens, cetre vnion eſt vn preſa4
-        <lb rend="¬" break="no"/>ge tres aſſeuré, que Dieu monue vos cœurs, &amp; les <pb n="7"/>
-        <lb/>ndra victorieu &amp; triomphans: par tout on vous
-        <lb/>reſſe des tropheé́e, &amp; les acelamations des Peuples
-        <lb/>nt retentir l’air de voſtre gloire.
-        <lb/>Le Vendredy vingt ſixiéme Feurier, Meſſieurs de
-        <lb/>oüiillon &amp; de Noirmontier donnerent ordre, pour
-        <lb/>uoit des chariots &amp; charettes, pour faire venir vn
-        <lb/>Conuoy, ce qui fut promptementexecuteé́, &amp; il ſortit
-        <lb/>lus de trois mille charettes &amp; chariots, eſcortez par
-        <lb/>’armée commandée par nos Generaux, fortifiée pat
-        <lb/>es Compagnies Bourgeoiſes, qui faiſoient v gros
-        <lb/>de plus de quatre-vingt mille hommes, ſans preiudi
-        <lb rend="¬" break="no"/>ce de la Cauallerie commandeée par Monſieur del
-        <lb rend="¬" break="no"/>Mothe-Houdancour, ioinct auec Monſieur de Beau
-        <lb rend="¬" break="no"/>fort, qui ont rendus les chemins de Goneſſe de la
-        <lb/>France libres, iuſques à Dammartin.
-        <lb/>
-        <lb rend="¬" break="no"/>C’eſtoit vne merueille ( qui ne ſe peut trop admi
-        <lb rend="¬" break="no"/>rer à voir l’empeſchement du Peuple, à courir à ce
-        <lb rend="¬" break="no"/>grand Conuoy, meſme plus de dix mille de la popu
-        <lb rend="¬" break="no"/>lace ſortoient auec ſacs &amp; hoſtes, leſquels à la faueur
-        <lb/>d’vne ſi puiſſante armeée, qu’ils ont ſurgit à bon port:
-        <lb/>mais ce qui eſt admirable, c’eſt que quatre ou cinq
-        <lb/>mille hommes eſtans ſortis, la Ville n’en eſt point al
-        <lb rend="¬" break="no"/>terée, &amp; on ne s’en apperçoit nonplus que d’vn Ato
-        <lb rend="¬" break="no"/>me c’eſt la meditarion des Eſtrangers, &amp; le motif de
-        <lb/>leur eſtonnement.
-        <lb/>Les Ennemis ayans aduis par leurs eſpions des ſor
-        <lb rend="¬" break="no"/>ties ordinaires, ils imitent les colimaçons qui ce re
-        <lb rend="¬" break="no"/>ſertent dans leurs coquilles, ou pour mieux dire, ils
-        <lb/>mettent des aiſles à leurs pieds, afin de mieux gager
-        <lb/>la guerite. <pb n="8"/>
-        <lb/> Ce porpeux conuoy dontenoi’plus de lſuiétlieuës,
-        <lb/> lequel n’eſt arriué́ que le lendemain Samedy, ſinon
-        <lb/>5oo. ou 6oo charettes qui arriuerent’là nict du pre
-        <lb rend="¬" break="no"/>cedent, qui ontenoit plus de ſix ce nt muids de bled,
-        <lb/>ſans preiudice du pain, frine, poids, moutons &amp;
-        <lb/>ſale, Ce quia forme vne grande ceſiouyſſance d’vn ſi
-        <lb/>heureux ſuccez, on en eſpere encore vn dans vingt
-        <lb rend="¬" break="no"/>quatre heures du coſté́ de la Brie, il y a quatre mil le
-        <lb/> Caualiers que Monſieur de Beaufort y a enuoyeé, &amp;
-        <lb/> poupfauoriſer tce deſſein, il aura la meſme eſcorte &amp;
-        <lb/>-auec la meſme affection, que celle qui le fait recon
-        <lb rend="¬" break="no"/>noiſtre le Protecteur des opprimés. le vous diray à
-        <lb/> mon retour de ce’voyage de grandes particularitez,
-        <lb/>.¬ 3
-        <lb/>daipes dle voitunoſue na preniee poſe ſai
-        <lb/> pi le eneueiene eine onee euennlenuenen!
-        <lb/> en fera partiipant té ſeront choſes bien remarqua
-        <lb rend="¬" break="no"/> bles, &amp; dignes de voſtre lecture.
-        <lb/>FIN.</p>
-    </body>
-  </text>
+          promettait une suite.
+    </p>
+   </abstract>
+   <textClass>
+    <keywords>
+     <term type="form">
+      prose
+     </term>
+     <term type="genre">
+      narration
+     </term>
+     <term type="subject"/>
+     <term subtype="no" type="handwritten_note"/>
+     <term subtype="no" type="table_of_content"/>
+     <term subtype="no" type="illustration"/>
+    </keywords>
+   </textClass>
+   <settingDesc>
+    <setting source="Moreau" xml:id="evt_Moreau_13">
+     <p>
+      Réception de l’envoyé de l’archiduc Léopold au parlement
+     </p>
+     <date when="1649-02-19">
+      1649-02-19
+     </date>
+    </setting>
+   </settingDesc>
+  </profileDesc>
+  <revisionDesc>
+   <change status="corrected" when="2022-09-14" who="AB"/>
+  </revisionDesc>
+ </teiHeader>
+ <text>
+  <body>
+   <p>
+    <pb n="1"/>
+    <lb/>
+    L’ARRIVEE
+    <lb/>
+    DV
+    <lb/>
+    COVRRIER
+    <lb/>
+    EXTRAORDINAIRE
+    <lb/>
+    DES
+    <lb/>
+    PRANCOIS.
+    <lb/>
+    QVI APPORTE BONNES NOVVELLES,
+    <lb/>
+    &amp; vne Harangue par eſcrit, faite par vn grand Sei
+    <lb/>
+    gneur, à Meſſieurs les Preuoſts, Eſcheuins &amp;
+    <lb/>
+    Bourgeois de Paris.
+    <lb/>
+    ENSEMBLE CE QVI C'EST PASSÉ
+    <lb/>
+    à Paris dans ce grand Conuoy.
+    <lb/>
+    Par le ſieur Rozard.
+    <figure type="decoration"/>
+    <lb/>
+    A PARIS,
+    <lb/>
+    Chez la vefue IEAN REMY, ruë S. Iacques à
+    <lb/>
+    l'Image S. Remy, prés le College du Pleſſis.
+    <lb/>
+    M. DC. XLIX.
+    <lb/>
+    <imprimatur>
+     AVEC PERMISSION.
+    </imprimatur>
+    <pb n="2"/>
+    <lb/>
+    2
+    <lb/>
+    LARRIVEE
+    <lb/>
+    QVI APPORTE BONNES NOVVELLES,
+    <lb/>
+    &amp; vne Harangue par eſcrit, faite par vn grand
+    <lb/>
+    -Seigneut, aMeſſieurs les ’reuolts Eſehe
+    <lb break="no" rend="¬"/>
+    uins &amp; Bourgeois de Paris.
+    <lb/>
+    1
+    <lb/>
+    ENSEMBLE E QVI ’EST ASSE’LA PR1S
+    <lb/>
+    duns ce grand ſonuoy.
+    <lb/>
+    ſt Vr REo1s Mercure le Meſſager des
+    <lb/>
+    e Dieux lors qu’il apportoit de bonnes nou
+    <lb break="no" rend="¬"/>
+    uelles, il receuoit les acclamations d’vn
+    <lb break="no" rend="¬"/>
+    chacun, dans le Temple que Ceſar Auguſte de
+    <lb break="no" rend="¬"/>
+    an er e e le leroe ea oun eoe er nee es
+    <lb/>
+    nes, letr oupeaux de Calabre, la ſplendeur de l’Or,
+    <lb/>
+    les threſors de la Terre, ny l’yuoire des lndes ne fai
+    <lb break="no" rend="¬"/>
+    ſoient pas tant d’mpreſsion ſur les cœurs, ny deſa
+    <lb break="no" rend="¬"/>
+    tisfaction à l’eſprit, que les bonnes nouuelles de ce
+    <lb/>
+    glorieux meſſager, qui eſt encore dans l’eſtime des
+    <pb n="3"/>
+    <lb/>
+    uples; quoy que ſon eéclat ſemble pluſtoſt vne
+    <lb/>
+    ion, qu’vne verité. Mais moy qui ſuis vcritable
+    <lb/>
+    açois &amp; ne voudroit diſsimuler pour toutes choſes,
+    <lb/>
+    dois eſtre bien venu dars ma Patrie &amp; lieu nat!, qui
+    <lb/>
+    Paris, en luy annonç̧ant de tres-bonnes nouuclles.
+    <lb/>
+    ay paſſeé par pluſieurs ’rouinces, &amp; dans les plus ce
+    <lb break="no" rend="¬"/>
+    bres villes de ce Royaume, qui ſont preſtes de ſa
+    <lb break="no" rend="¬"/>
+    rifier &amp; leurs biens &amp; leurs vies &amp; celles de leursen
+    <lb break="no" rend="¬"/>
+    ns pour ſouſlenir vne cauſe, auſsi iuſte que celle
+    <lb break="no" rend="¬"/>
+    Abcl, lors qu’il demandoit vengeance au Ciel &amp; im
+    <lb break="no" rend="¬"/>
+    loroit ſon ſecours &amp; aſsiſtance, contre le frarricide
+    <lb/>
+    e ſon frere.
+    <lb/>
+    Toures leſquelles Villes &amp; Prouinces promettent
+    <lb/>
+    le prende les armes ſſi beſoin fait) pour appuyer vn
+    <lb/>
+    i glorieux party &amp; pour defendre vne ſi iuſte querel
+    <lb break="no" rend="¬"/>
+    e protclans de ne donner aucun quartier a celuy qui
+    <lb/>
+    n ſt autheur, en cas qu’il prenne la fuite, ny à ces
+    <lb/>
+    complices Leurs armes ſont toutes preſtes &amp; ne de
+    <lb break="no" rend="¬"/>
+    mandent que l’occaſion de les ioindre auec les no
+    <lb break="no" rend="¬"/>
+    ſtres, melme les plus timides.
+    <lb/>
+    Ayant couru qui de çà, qui de là, &amp; approché des
+    <lb/>
+    limites etrangere, n’ay rencontré aucun qui n’ait
+    <lb/>
+    loü̈é le zele &amp; generoſité de la plus celebre V ille du
+    <lb/>
+    monde, &amp; qui donne le mouuement &amp; fait heureu
+    <lb break="no" rend="¬"/>
+    ſement ſubſiſter toutes les autres, qui eſt laris
+    <lb/>
+    Les grands Seigncurs auſli bien que les petits, les
+    <lb/>
+    riches &amp; les pauures n’ont d’autre ambition que d’v.
+    <lb/>
+    nir leurs armes auec les noſtres, ainſi qu’ils ſe ſont
+    <lb/>
+    vnis auec nous par vne meſme inclination: &amp; pour
+    <lb/>
+    défende les melmes intereſts. Ils ont vne ſaincte é
+    <lb break="no" rend="¬"/>
+    A i
+    <pb n="4"/>
+    <lb/>
+    4.
+    <lb/>
+    mulation de participer à l’honneur de nos armes, &amp;
+    <lb/>
+    aux Couronnes qui les enuironnent.
+    <lb/>
+    Dans la varieté &amp; oceurrence que i’ay faite, plu
+    <lb break="no" rend="¬"/>
+    ſieurs m’ont aſſeure qu’ils contribueroient aà vn ſi glo
+    <lb break="no" rend="¬"/>
+    rieux deſſein, &amp; ſe rendroient tres heureux en ſecon
+    <lb break="no" rend="¬"/>
+    dans vne ſi haute entrepriſe, qui ne tend qu’à purger
+    <lb break="no" rend="¬"/>
+    la France de ſon oppreſſeur &amp; Tyran, les enfans à̀ p
+    <lb break="no" rend="¬"/>
+    ne ont-il l’aage de la raiſon, qu’ils ſouhaittent les meſ
+    <lb break="no" rend="¬"/>
+    mes aduantages, n’y ayant aucun genre humain, qui
+    <lb/>
+    egale celuy de défendre leur vie, leur liberteé, &amp; leurs
+    <lb/>
+    biens.
+    <lb/>
+    On fabrique des armes dans Roü̈en par où i’ay re
+    <lb break="no" rend="¬"/>
+    paſſé, on diſpoſe des munitions, on dépeſche les trou
+    <lb break="no" rend="¬"/>
+    pes pour nous ſecourir, qui viennent de toutes parts,
+    <lb/>
+    par l’entremiſe de cét Auguſte, tres genereux, &amp; tres
+    <lb/>
+    prudent Printce, Monſeigneur de Longueuille, qui a
+    <lb/>
+    fait vn Corps d’armée, qui eſt en marche, ſous la con
+    <lb break="no" rend="¬"/>
+    duirte de ſon Lieutenant, homme de probité &amp; tres
+    <lb/>
+    genereux &amp; experime nté dans le fait de Mars, qui
+    <lb/>
+    promet de donner de la peine aux ennemis, le Com
+    <lb break="no" rend="¬"/>
+    te d’Arcourt a deſia experimenteé la peſanteur de ſon
+    <lb/>
+    bras.
+    <lb/>
+    Cette armée eſt compoſée de ſoldats bien faits &amp;
+    <lb/>
+    d’elites, &amp; d’vn grand nombre de Caualiers, qui vo
+    <lb break="no" rend="¬"/>
+    lontairement ce ſont engagez en cette glorieuſe mili
+    <lb break="no" rend="¬"/>
+    ce. La Nobleſſe y a contribué, &amp; les plus Nobles &amp;
+    <lb/>
+    belliqueux de cette Prouince s’y ſont engagez, &amp; les
+    <lb/>
+    Capitaines les plus genereux ont fait ſerment de fide
+    <lb break="no" rend="¬"/>
+    liteé, &amp; de viure &amp; mouris pour le ſeruice de la France.
+    <lb break="no" rend="¬"/>
+    lls empeſchent les viures du coſté de ſainct Ger
+    <lb break="no" rend="¬"/>
+    mai
+    <pb n="5"/>
+    <lb/>
+    1
+    <lb/>
+    maln en Laye, ſauf l’iniure du temps ils ſeroient à
+    <lb/>
+    Paris: car ils n’ont pas moins d’impatience de voir
+    <lb/>
+    les Bourgeois pour les ſeruir, qu’eux de voir le gl0
+    <lb break="no" rend="¬"/>
+    rieux ſuccez de leurs armes.
+    <lb break="no" rend="¬"/>
+    Mais pour n’eſtre prolixe &amp; ennuyeux, i’ay fait
+    <lb break="no" rend="¬"/>
+    rer en ’ce narré pour la curioſité du Lecteur, vne ha
+    <lb break="no" rend="¬"/>
+    rangue d’vn grand Seigneur Lyonnois, addreſſée aux
+    <lb/>
+    Bourgeois de Paris, conceuë en ces termes.
+    <lb/>
+    (MEss1EvRSJVous laiſſez à la poſterité vne mar
+    <lb break="no" rend="¬"/>
+    que eternelle &amp; vn caractere ineffaçable de vos me
+    <lb break="no" rend="¬"/>
+    ites, auſsi bien que de voſtre valleur, toutes les plu
+    <lb break="no" rend="¬"/>
+    mes les plus diſertes s’oceupét à tracer par leurs trais,
+    <lb/>
+    vos merueilles, qui ne ſont pas moins que celles que
+    <lb/>
+    publioit l’Oracle au Temple de Memoire: Vous eſtes
+    <lb/>
+    de centre glorieux, qui maintient les lignes de la cir
+    <lb break="no" rend="¬"/>
+    confereuce, vous eſtes ceét arbre glorieux; &amp; nous
+    <lb/>
+    n’en ſommes que les membres, c’eſt vous qui nous
+    <lb/>
+    affranchiſſez de l’orage qui nous menaſſoit, &amp; de la
+    <lb/>
+    fin mal’heureuſe où ce Tyran nous vouloit precipi
+    <lb break="no" rend="¬"/>
+    ter, vous eſtes les rouës qui nous donnez le mouue
+    <lb break="no" rend="¬"/>
+    meént, les enuemis ne pouuant vous flechir ne font
+    <lb/>
+    qu’inuectiuer, &amp; leurs mauuais deſſeins s’euaporent
+    <lb/>
+    ’aupres de vous comme vne legere exhalaiſon, ou fu
+    <lb break="no" rend="¬"/>
+    meée, ils croyoient vous intiider par leur cruauté -&amp;
+    <lb/>
+    barbarie, qu’ils exercent aux villages circonuoiſins,
+    <lb/>
+    mais ce qui abat leur courage, eſt de voir voſtre con
+    <lb break="no" rend="¬"/>
+    ſtance fondée dans l’vnion, &amp; que vos nombreuſes
+    <lb break="no" rend="¬"/>
+    ſorties qui rempliſſent les Campagnes, leur font laſ
+    <lb break="no" rend="¬"/>
+    eher le pied, meſme l’ombre reflechiſſant de vos
+    <lb/>
+    orps les iutiuident. Orphée autrefois charmoit des
+    <pb n="6"/>
+    <lb/>
+    <lb break="no" rend="¬"/>
+    Rothers aüéeſa Lyre chantereſſe, &amp; cẽs doux cha
+    <lb/>
+    mes &amp; accords faiſoient impreſsion ſur les eſprits les
+    <lb/>
+    plus brutes &amp; ſauuages. Par Analogie, ie diray que
+    <lb/>
+    vous eſtes le miracle du monde, &amp; lornement de l’V
+    <lb break="no" rend="¬"/>
+    niuers, &amp; les productions de vos loü̈ables entrepri
+    <lb break="no" rend="¬"/>
+    ſes, n’ont point de comparaiſon &amp; attirent le reſpect
+    <lb/>
+    des Peuples auec l’admiration. Vous eſtes des ćtoilles
+    <lb/>
+    qui brillent &amp; qui font vn agreable iour, auſsivous
+    <lb/>
+    empruntezvoſtre lumiere &amp; voſtre éclat, de ces illu
+    <lb break="no" rend="¬"/>
+    ſtres Senateurs, qui ſont comme des Aſtres, quivous
+    <lb break="no" rend="¬"/>
+    verſent des benignes infuences, ils vous ſeruent heu
+    <lb break="no" rend="¬"/>
+    reuſement d’auſpice &amp; de bouclier pour reſiſterà l’at
+    <lb break="no" rend="¬"/>
+    taque de vos ennemis, il ſont les Peres de la Pattie
+    <lb/>
+    qui par vne bonté naturelle, défendent voſtre heri
+    <lb break="no" rend="¬"/>
+    tage, ny plus ny moins qu’vne geline qui défend ces
+    <lb/>
+    pouſsins des griffes du mllan, ces grands Magiſtrats
+    <lb/>
+    &amp; illuſtres Politiques, leurs ſoins &amp; leurs veilles, ne
+    <lb/>
+    tendent qu’à voſtre bien.
+    <lb/>
+    Ce ſont des ſeconds Anges tutelaires deputezde
+    <lb/>
+    Dieu, pour la deffenſe de vos intereſts, contre ceur
+    <lb/>
+    qui les veulent rauir, &amp; tyranniquement extorquer
+    <lb/>
+    vos biens, Ces beaux flambeaux diſsiperont les nua
+    <lb break="no" rend="¬"/>
+    ges; &amp; le vif é́clat de leur lumiere offuſquera les yeux
+    <lb/>
+    des ennemis, ils purgeront la France de ces monſtres
+    <lb/>
+    effroyables, qui l’ont reduitte en vn eſtat digne de
+    <lb/>
+    compaſſion &amp; tireé toute ſa ſubſtance: mais cette heu
+    <lb break="no" rend="¬"/>
+    reuſe conionction de ſes prudens, ſages, bons, &amp;
+    <lb/>
+    heroiques Magiſtrats, auec de ſi nobles &amp; vertueux
+    <lb/>
+    Bourgeois &amp; Concitoyens, cetre vnion eſt vn preſa4
+    <lb break="no" rend="¬"/>
+    ge tres aſſeuré, que Dieu monue vos cœurs, &amp; les
+    <pb n="7"/>
+    <lb/>
+    ndra victorieu &amp; triomphans: par tout on vous
+    <lb/>
+    reſſe des tropheé́e, &amp; les acelamations des Peuples
+    <lb/>
+    nt retentir l’air de voſtre gloire.
+    <lb/>
+    Le Vendredy vingt ſixiéme Feurier, Meſſieurs de
+    <lb/>
+    oüiillon &amp; de Noirmontier donnerent ordre, pour
+    <lb/>
+    uoit des chariots &amp; charettes, pour faire venir vn
+    <lb/>
+    Conuoy, ce qui fut promptementexecuteé́, &amp; il ſortit
+    <lb/>
+    lus de trois mille charettes &amp; chariots, eſcortez par
+    <lb/>
+    ’armée commandée par nos Generaux, fortifiée pat
+    <lb/>
+    es Compagnies Bourgeoiſes, qui faiſoient v gros
+    <lb/>
+    de plus de quatre-vingt mille hommes, ſans preiudi
+    <lb break="no" rend="¬"/>
+    ce de la Cauallerie commandeée par Monſieur del
+    <lb break="no" rend="¬"/>
+    Mothe-Houdancour, ioinct auec Monſieur de Beau
+    <lb break="no" rend="¬"/>
+    fort, qui ont rendus les chemins de Goneſſe de la
+    <lb/>
+    France libres, iuſques à Dammartin.
+    <lb/>
+    <lb break="no" rend="¬"/>
+    C’eſtoit vne merueille ( qui ne ſe peut trop admi
+    <lb break="no" rend="¬"/>
+    rer à voir l’empeſchement du Peuple, à courir à ce
+    <lb break="no" rend="¬"/>
+    grand Conuoy, meſme plus de dix mille de la popu
+    <lb break="no" rend="¬"/>
+    lace ſortoient auec ſacs &amp; hoſtes, leſquels à la faueur
+    <lb/>
+    d’vne ſi puiſſante armeée, qu’ils ont ſurgit à bon port:
+    <lb/>
+    mais ce qui eſt admirable, c’eſt que quatre ou cinq
+    <lb/>
+    mille hommes eſtans ſortis, la Ville n’en eſt point al
+    <lb break="no" rend="¬"/>
+    terée, &amp; on ne s’en apperçoit nonplus que d’vn Ato
+    <lb break="no" rend="¬"/>
+    me c’eſt la meditarion des Eſtrangers, &amp; le motif de
+    <lb/>
+    leur eſtonnement.
+    <lb/>
+    Les Ennemis ayans aduis par leurs eſpions des ſor
+    <lb break="no" rend="¬"/>
+    ties ordinaires, ils imitent les colimaçons qui ce re
+    <lb break="no" rend="¬"/>
+    ſertent dans leurs coquilles, ou pour mieux dire, ils
+    <lb/>
+    mettent des aiſles à leurs pieds, afin de mieux gager
+    <lb/>
+    la guerite.
+    <pb n="8"/>
+    <lb/>
+    Ce porpeux conuoy dontenoi’plus de lſuiétlieuës,
+    <lb/>
+    lequel n’eſt arriué́ que le lendemain Samedy, ſinon
+    <lb/>
+    5oo. ou 6oo charettes qui arriuerent’là nict du pre
+    <lb break="no" rend="¬"/>
+    cedent, qui ontenoit plus de ſix ce nt muids de bled,
+    <lb/>
+    ſans preiudice du pain, frine, poids, moutons &amp;
+    <lb/>
+    ſale, Ce quia forme vne grande ceſiouyſſance d’vn ſi
+    <lb/>
+    heureux ſuccez, on en eſpere encore vn dans vingt
+    <lb break="no" rend="¬"/>
+    quatre heures du coſté́ de la Brie, il y a quatre mil le
+    <lb/>
+    Caualiers que Monſieur de Beaufort y a enuoyeé, &amp;
+    <lb/>
+    poupfauoriſer tce deſſein, il aura la meſme eſcorte &amp;
+    <lb/>
+    -auec la meſme affection, que celle qui le fait recon
+    <lb break="no" rend="¬"/>
+    noiſtre le Protecteur des opprimés. le vous diray à
+    <lb/>
+    mon retour de ce’voyage de grandes particularitez,
+    <lb/>
+    .¬ 3
+    <lb/>
+    daipes dle voitunoſue na preniee poſe ſai
+    <lb/>
+    pi le eneueiene eine onee euennlenuenen!
+    <lb/>
+    en fera partiipant té ſeront choſes bien remarqua
+    <lb break="no" rend="¬"/>
+    bles, &amp; dignes de voſtre lecture.
+    <lb/>
+    FIN.
+   </p>
+  </body>
+ </text>
 </TEI>
