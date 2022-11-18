@@ -1,415 +1,234 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xml:id="Moreau2540_MAZ" xmlns="http://www.tei-c.org/ns/1.0">
- <teiHeader>
-  <fileDesc>
-   <titleStmt>
-    <title source="Moreau" type="main">
-     Les 
-     Nouveaux jeux du piquet de la Cour.
-    </title>
-    <title type="sub">
-     Édition Antonomaz
-    </title>
-    <respStmt>
-     <resp>
-      Chaîne de traitement
-     </resp>
-     <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">
-      Abiven Karine
-     </persName>
-     <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">
-      Lejeune Gaël
-     </persName>
-     <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">
-      Tanguy
-            Jean-Baptiste
-     </persName>
-     <persName ref="orcid:0000-0003-0850-8266" role="engineer">
-      Bartz Alexandre
-     </persName>
-    </respStmt>
-   </titleStmt>
-   <publicationStmt>
-    <publisher>
-     Projet ANTONOMAZ / Sorbonne Université
-    </publisher>
-    <ref target="https://github.com/Antonomaz"/>
-    <date type="file_creation" when="2022-03-02">
-     2 mars 2022
-    </date>
-    <availability n="cc-by" status="restricted">
-     <licence target="https://creativecommons.org/licenses/by/4.0"/>
-    </availability>
-   </publicationStmt>
-   <sourceDesc>
-    <bibl>
-     <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14947"/>
-     <author/>
-     <title source="Mazarine">
-      Les nouveaux jeux du piquet de la Cour.
-     </title>
-     <pubPlace source="Mazarine">
-      Sans Lieu
-     </pubPlace>
-     <publisher>
-      <persName>
-       Sans Nom
-      </persName>
-     </publisher>
-     <date source="Mazarine" when="1649">
-      1649
-     </date>
-     <date notAfter="1649-06" notBefore="1649-03" source="Carrier">
-      au printemps 1649, après la
-            paix de Saint-Germain
-     </date>
-     <extent>
-      <measure quantity="4" unit="page"/>
-     </extent>
-     <note type="format">
-      in-4
-     </note>
-     <relatedItem cert="high" source="Mazarine" subtype="BM49134" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49134" type="identifier"/>
-    </bibl>
-    <msDesc>
-     <msIdentifier>
-      <settlement ref="geonames:2988507">
-       Paris
-      </settlement>
-      <institution>
-       Bibliothèque Mazarine
-      </institution>
-      <repository/>
-      <idno type="cote">
-       M13530
-      </idno>
-     </msIdentifier>
-     <history>
-      <provenance>
-       <stamp>
-        True
-       </stamp>
-      </provenance>
-     </history>
-    </msDesc>
-   </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-   <projectDesc>
-    <p>
-     Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2540_MAZ">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Nouveaux (les) jeux du piquet de la Cour.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+            Jean-Baptiste</persName>
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz"/>
+        <date type="file_creation" when="2022-03-02">2 mars 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14947"/>
+          <author/>
+          <title source="Mazarine">Les nouveaux jeux du piquet de la Cour.</title>
+          <pubPlace source="Mazarine">Sans Lieu</pubPlace>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
+          <date source="Mazarine" when="1649">1649</date>
+          <date source="Carrier" notBefore="1649-03" notAfter="1649-06">au printemps 1649, après la
+            paix de Saint-Germain</date>
+          <extent>
+            <measure unit="page" quantity="4"/>
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49134" cert="high"
+            target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49134"/>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2988507">Paris</settlement>
+            <institution>Bibliothèque Mazarine</institution>
+            <repository/>
+            <idno type="cote">M13530</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
-          auteur oublié.
-    </p>
-    <p>
-     Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
-          bibliothèques numériques publiques et de Google livres.
-    </p>
-    <p>
-     L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.
-    </p>
-   </projectDesc>
-   <editorialDecl>
-    <p/>
-   </editorialDecl>
-  </encodingDesc>
-  <profileDesc>
-   <langUsage>
-    <language ident="fra">
-     Document en français
-    </language>
-   </langUsage>
-   <abstract>
-    <p source="Mazarine">
-     Dialogues. D'après Hubert Carrier, reprise, abrégée, du " Piquet de la
+          auteur oublié.</p>
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+          bibliothèques numériques publiques et de Google livres.</p>
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p/>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine">Dialogues. D'après Hubert Carrier, reprise, abrégée, du " Piquet de la
           Cour" (BM00932) et de sa suite (Bibliothèque Mazarine, Ms 4682-4, f. 98). Trois éditions
           de composition typographique différente et avec variantes d'ornement typographique : avec
           un bandeau en tête du texte et en p. 2 (BM00282) ; avec un bandeau seulement en tête du
           texte (BM00283) ; sans bandeau (BM00284). Titre de départ. D'après H. Carrier, texte paru
           durant le printemps 1649 après la paix de Saint-Germain (Bibliothèque Mazarine, Ms 4682-4,
-          f. 97v).
-    </p>
-    <p source="Moreau">
-     2540. Nouveaux (les)jeux du piquet de la Cour. (S. l. n. d.), 4
-          pages.
-    </p>
-   </abstract>
-   <textClass>
-    <keywords>
-     <term type="form">
-      prose
-     </term>
-     <term subtype="no" type="handwritten_note"/>
-     <term subtype="no" type="table_of_content"/>
-     <term subtype="no" type="illustration"/>
-    </keywords>
-   </textClass>
-  </profileDesc>
-  <revisionDesc>
-   <change status="corrected" when="2022-03-16" who="AB"/>
-  </revisionDesc>
- </teiHeader>
- <text>
-  <body>
-   <p>
-    <pb n="9"/>
-    <lb/>
-    LES NOVVEAVX IEVX
-    <lb/>
-    DV PIQVET DE LA COVR.
-    <lb/>
-    LE ROY.
-    <lb/>
-    JE parie, ne ſçachant pas le leu.
-    <lb/>
-    La Reine.
-    <lb/>
-    Mon ieu eſt bien brouillé, pour n’auoir ecarté-sſe cou¬
-    <lb/>
-    leur Rouge.
-    <lb/>
-    Mazarin.
-    <lb/>
-    L’on ne iouë en France, comme en Italie, l’on me veut
-    <lb/>
-    forcer d’ecarter; ce n’eſt pas mon ieu.
-    <lb/>
-    Les Niece; dle MZairin.
-    <lb/>
-    Notre ieu nous paroiſſoit’hbeauau commencement: mais la
-    <lb/>
-    chance a tourné, qui nous’a tanvoié bien doin.
-    <lb/>
-    Les Filles de la Reine.
-    <lb/>
-    Nous regardons pour apprendre le ieu:
-    <lb/>
-    Mouſieur le Due d’orleans.
-    <lb/>
-    I’avois beau, &amp; ie cours riſque de perdre la partie, pour
-    <lb/>
-    avoir creu mauvais conſeil Et ſi cela arrlve, ie ietterai le ieu
-    <lb/>
-    dans la Riviere, &amp; apres i’ecarterai à propos.
-    <lb/>
-    Le Prince de Condeé.
-    <lb/>
-    I faut bien balaneer, i’ai du cœur &amp; du pique, ie ne ſçai de
-    <lb/>
-    quel coſté ie dois tomber, il faut voir le ieu des vns &amp; des au¬
-    <lb/>
-    tres, &amp; ne faire voir le mien que le dernier.
-    <lb/>
-    Monſieur de Longueville.
-    <lb/>
-    I’ai peine à comprendre tout ceci, quand les cartes ſont
-    <lb/>
-    bien brouillées, l’on m’appelle au ieu; ceux qui ont profité,
-    <lb/>
-    les doivent debrouiller, ou bien reſtituer.
-    <lb/>
-    Moſfeur le Princs de Conty.
-    <lb/>
-    Ie commence à connoitre le ieu des vns &amp; des autres, i’en
-    <lb/>
-    feray mon profit en temps &amp; leu.
-    <lb/>
-    Mademoiſeſle.
-    <lb/>
-    Que i’aurois beau ieu, s’il me venoit vn Roy!
-    <lb/>
-    Al
-    <pb n="10"/>
-    <lb/>
-    4 eillerye.
-    <lb/>
-    Le carreau ne m’accommode point, il me pourroit cauſer
-    <lb/>
-    Le Chaeellier,
-    <lb/>
-    dommagée..
-    <lb/>
-    La Pique m’a dé-ja penſé faire perdre, s’il continuë à me
-    <lb/>
-    venir, ie ietteray le ieu dans la Bouë, biea que i’y aye trouxé
-    <lb/>
-    Tub-af.
-    <lb/>
-    mon compte.
-    <lb/>
-    Tout le ieu m’empeſche d’avoir le mot pour rire, comme de
-    <lb/>
-    coutume, ’y pouvant trouver mon compte, à moins de faire
-    <lb/>
-    e Seneterre.
-    <lb/>
-    capot.
-    <lb/>
-    Ie parie ma perte, s’il ne me vient vn repic.
-    <lb/>
-    Le Chevalier d ars.
-    <lb/>
-    Ie crains l’ecart de couleur Rouge.
-    <lb/>
-    Les Partiſas.
-    <lb/>
-    L’on a veunotre ieu, &amp; par notre tromperie neus perdrons
-    <lb/>
-    Meßſieurs d Parlenment.
-    <lb/>
-    la partie.
-    <lb/>
-    A la fin l’on connoit que notre ieu n’etoit que fidelité, &amp;
-    <lb/>
-    notre intere eſt l’vn des Principaux ioueurs.
-    <lb/>
-    L’Arehduc Leopol.
-    <lb/>
-    Ie penſois gagner quelque choſe à ce ieu, mais ie connois
-    <lb/>
-    à preſent, que ie n’y gagneray rien.
-    <lb/>
-    uuuettAea2? t
-    <lb/>
-    Autre Ieu du Picquet de la Cour.
-    <lb/>
-    L Reine.
-    <lb/>
-    TE porte vn As, qui me fait bien, I’ay ſort beau ieu, mais
-    <lb/>
-    l ſans ecart.
-    <lb/>
-    Le Ry.
-    <lb/>
-    Ie ne ſçay as encore le ieu, mais ie l’apprendray.
-    <lb/>
-    Moſieur le Dae d’Ajo.
-    <lb/>
-    Ie n’y connois rien, mais i’y ioueray quelque iour.
-    <lb/>
-    Le Cardinal.
-    <lb/>
-    Au haſard, ie prends tout,
-    <lb/>
-    E io voglio pigliar la roba di la Francia.
-    <lb/>
-    Monſfeur le Du d’Orleans.
-    <lb/>
-    I’ay beau ieu, mais le cœur me manque.
-    <pb n="11"/>
-    <lb/>
-    Le Prince de Caadé,
-    <lb/>
-    I’ay bien du cœur, mais ie ne ſçay que portér, car i’apprë.¬
-    <lb/>
-    hende le carreau.
-    <lb/>
-    Moſiear le Prine de Comy.
-    <lb/>
-    Pour garder mon cœur, faut ecarter cetAs.
-    <lb/>
-    Moeur le Dac de Longueville.
-    <lb/>
-    Ie ne puis gagner, car l’on m’a riché́.
-    <lb/>
-    Le Roy.
-    <lb/>
-    A force de perdre i’apprendrai le ieu.
-    <lb/>
-    La Reine.
-    <lb/>
-    Ie ne ſongeois pas, qu’il faur ecarter.
-    <lb/>
-    Le Cardnal.
-    <lb/>
-    I ſomo béne impedito, é crede che tutto é perditro, per
-    <lb/>
-    che il mio juocque é cativo.
-    <lb/>
-    Madamoiſeſle de Beauvais à Philandre.
-    <lb/>
-    Nous ne ſ̧avons plus que iouer.
-    <lb/>
-    Les Filles de la eine.
-    <lb/>
-    Nous apprendrons, en voiant le ieu.
-    <lb/>
-    L Reie d’ngleterre.
-    <lb/>
-    I voi bien, que tout eſt perdu, car ie connois les ieux.
-    <lb/>
-    Madamoiſelle.
-    <lb/>
-    Si i’avois vn Roi, ie ſçaurois bien que faire.
-    <lb/>
-    Meſiers d Parlemest.
-    <lb/>
-    Pour nous ſauver du capot, faut ecarter cet Az..
-    <lb/>
-    Moſieur de eaufort.
-    <lb/>
-    Vne Dame &amp; vn Az me faiſoient capot, c’etoit par trichée¬
-    <lb/>
-    -rie, mais ie l’ai decouvert.
-    <lb/>
-    Le Chaneelier.
-    <lb/>
-    Mon ieu ne vaut rie, &amp; peu en a falu, que ie n’aie tout
-    <lb/>
-    perdu.
-    <lb/>
-    La Meilleraye.
-    <lb/>
-    lIe me ſuis perdu moi-meſme par trop battre.
-    <lb/>
-    onſfeur de Chaeau- nef,
-    <lb/>
-    Ie m’en vai touiours du tout.
-    <lb/>
-    Monmſfeur de Chaigny &amp; ſ Feme,
-    <lb/>
-    Par vn mal- heureux ecart nous ſommes capot.
-    <lb/>
-    Mosfſeur d’vax.
-    <lb/>
-    Ie ne gagne rien au ieu, car ie veux demeſler.
-    <pb n="12"/>
-    <lb/>
-    Mosſer Seyrvies.
-    <lb/>
-    Pour gagler, ie mesle touiaurs.
-    <lb/>
-    L Combaler.
-    <lb/>
-    Ie ne fai plus rien, &amp; ne veux plus iouér.
-    <lb/>
-    Les Mieces da Cadial.
-    <lb/>
-    Eſt biſogne che noi andavifimo dautoper che noftre iuoc.
-    <lb/>
-    que nou val niente.
-    <lb/>
-    aatra, ogent &amp; Senaeterre.
-    <lb/>
-    Notre ieu eſt retourué.
-    <lb/>
-    Les Secretairet d’Etat, &amp; utedans.
-    <lb/>
-    Nous ne ſervons plus, qu’̀ marquer le ieu.
-    <lb/>
-    D’emery.
-    <lb/>
-    Ie ſuis bien pris, ie n’ai plus beau ieu.
-    <lb/>
-    es Courtiſans.
-    <lb/>
-    Notre Ieu nous reſſemble.
-    <lb/>
-    FIN.
-   </p>
-  </body>
- </text>
+          f. 97v).</p>
+        <p source="Moreau">2540. Nouveaux (les)jeux du piquet de la Cour. (S. l. n. d.), 4
+          pages.</p>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-03-16" who="AB"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="9"/>
+        <lb/>LES NOVVEAVX IEVX
+        <lb/>DV PIQVET DE LA COVR.
+        <lb/>LE ROY.
+        <lb/>JE parie, ne ſçachant pas le leu.
+        <lb/>La Reine.
+        <lb/>Mon ieu eſt bien brouillé, pour n’auoir ecarté-sſe cou¬
+        <lb/>leur Rouge.
+        <lb/>Mazarin.
+        <lb/>L’on ne iouë en France, comme en Italie, l’on me veut
+        <lb/>forcer d’ecarter; ce n’eſt pas mon ieu.
+        <lb/>Les Niece; dle MZairin.
+        <lb/>Notre ieu nous paroiſſoit’hbeauau commencement: mais la
+        <lb/>chance a tourné, qui nous’a tanvoié bien doin.
+        <lb/>Les Filles de la Reine.
+        <lb/>Nous regardons pour apprendre le ieu:
+        <lb/>Mouſieur le Due d’orleans.
+        <lb/>I’avois beau, &amp; ie cours riſque de perdre la partie, pour
+        <lb/>avoir creu mauvais conſeil Et ſi cela arrlve, ie ietterai le ieu
+        <lb/>dans la Riviere, &amp; apres i’ecarterai à propos.
+        <lb/>Le Prince de Condeé.
+        <lb/>I faut bien balaneer, i’ai du cœur &amp; du pique, ie ne ſçai de
+        <lb/>quel coſté ie dois tomber, il faut voir le ieu des vns &amp; des au¬
+        <lb/>tres, &amp; ne faire voir le mien que le dernier.
+        <lb/>Monſieur de Longueville.
+        <lb/>I’ai peine à comprendre tout ceci, quand les cartes ſont
+        <lb/>bien brouillées, l’on m’appelle au ieu; ceux qui ont profité,
+        <lb/>les doivent debrouiller, ou bien reſtituer.
+        <lb/>Moſfeur le Princs de Conty.
+        <lb/>Ie commence à connoitre le ieu des vns &amp; des autres, i’en
+        <lb/>feray mon profit en temps &amp; leu.
+        <lb/>Mademoiſeſle.
+        <lb/>Que i’aurois beau ieu, s’il me venoit vn Roy!
+        <lb/>Al <pb n="10"/>
+        <lb/>4 eillerye.
+        <lb/>Le carreau ne m’accommode point, il me pourroit cauſer
+        <lb/>Le Chaeellier,
+        <lb/>dommagée..
+        <lb/>La Pique m’a dé-ja penſé faire perdre, s’il continuë à me
+        <lb/>venir, ie ietteray le ieu dans la Bouë, biea que i’y aye trouxé
+        <lb/>Tub-af.
+        <lb/>mon compte.
+        <lb/>Tout le ieu m’empeſche d’avoir le mot pour rire, comme de
+        <lb/>coutume, ’y pouvant trouver mon compte, à moins de faire
+        <lb/>e Seneterre.
+        <lb/>capot.
+        <lb/>Ie parie ma perte, s’il ne me vient vn repic.
+        <lb/>Le Chevalier d ars.
+        <lb/>Ie crains l’ecart de couleur Rouge.
+        <lb/>Les Partiſas.
+        <lb/>L’on a veunotre ieu, &amp; par notre tromperie neus perdrons
+        <lb/>Meßſieurs d Parlenment.
+        <lb/>la partie.
+        <lb/>A la fin l’on connoit que notre ieu n’etoit que fidelité, &amp;
+        <lb/>notre intere eſt l’vn des Principaux ioueurs.
+        <lb/>L’Arehduc Leopol.
+        <lb/>Ie penſois gagner quelque choſe à ce ieu, mais ie connois
+        <lb/>à preſent, que ie n’y gagneray rien.
+        <lb/>uuuettAea2? t
+        <lb/>Autre Ieu du Picquet de la Cour.
+        <lb/>L Reine.
+        <lb/>TE porte vn As, qui me fait bien, I’ay ſort beau ieu, mais
+        <lb/>l ſans ecart.
+        <lb/>Le Ry.
+        <lb/>Ie ne ſçay as encore le ieu, mais ie l’apprendray.
+        <lb/>Moſieur le Dae d’Ajo.
+        <lb/>Ie n’y connois rien, mais i’y ioueray quelque iour.
+        <lb/>Le Cardinal.
+        <lb/>Au haſard, ie prends tout,
+        <lb/>E io voglio pigliar la roba di la Francia.
+        <lb/>Monſfeur le Du d’Orleans.
+        <lb/>I’ay beau ieu, mais le cœur me manque. <pb n="11"/>
+        <lb/>Le Prince de Caadé,
+        <lb/>I’ay bien du cœur, mais ie ne ſçay que portér, car i’apprë.¬
+        <lb/>hende le carreau.
+        <lb/>Moſiear le Prine de Comy.
+        <lb/>Pour garder mon cœur, faut ecarter cetAs.
+        <lb/>Moeur le Dac de Longueville.
+        <lb/>Ie ne puis gagner, car l’on m’a riché́.
+        <lb/>Le Roy.
+        <lb/>A force de perdre i’apprendrai le ieu.
+        <lb/>La Reine.
+        <lb/>Ie ne ſongeois pas, qu’il faur ecarter.
+        <lb/>Le Cardnal.
+        <lb/>I ſomo béne impedito, é crede che tutto é perditro, per
+        <lb/>che il mio juocque é cativo.
+        <lb/>Madamoiſeſle de Beauvais à Philandre.
+        <lb/>Nous ne ſ̧avons plus que iouer.
+        <lb/>Les Filles de la eine.
+        <lb/>Nous apprendrons, en voiant le ieu.
+        <lb/>L Reie d’ngleterre.
+        <lb/>I voi bien, que tout eſt perdu, car ie connois les ieux.
+        <lb/>Madamoiſelle.
+        <lb/>Si i’avois vn Roi, ie ſçaurois bien que faire.
+        <lb/>Meſiers d Parlemest.
+        <lb/>Pour nous ſauver du capot, faut ecarter cet Az..
+        <lb/>Moſieur de eaufort.
+        <lb/>Vne Dame &amp; vn Az me faiſoient capot, c’etoit par trichée¬
+        <lb/>-rie, mais ie l’ai decouvert.
+        <lb/>Le Chaneelier.
+        <lb/>Mon ieu ne vaut rie, &amp; peu en a falu, que ie n’aie tout
+        <lb/>perdu.
+        <lb/>La Meilleraye.
+        <lb/>lIe me ſuis perdu moi-meſme par trop battre.
+        <lb/>onſfeur de Chaeau- nef,
+        <lb/>Ie m’en vai touiours du tout.
+        <lb/>Monmſfeur de Chaigny &amp; ſ Feme,
+        <lb/>Par vn mal- heureux ecart nous ſommes capot.
+        <lb/>Mosfſeur d’vax.
+        <lb/>Ie ne gagne rien au ieu, car ie veux demeſler. <pb n="12"/>
+        <lb/>Mosſer Seyrvies.
+        <lb/>Pour gagler, ie mesle touiaurs.
+        <lb/>L Combaler.
+        <lb/>Ie ne fai plus rien, &amp; ne veux plus iouér.
+        <lb/>Les Mieces da Cadial.
+        <lb/>Eſt biſogne che noi andavifimo dautoper che noftre iuoc.
+        <lb/>que nou val niente.
+        <lb/>aatra, ogent &amp; Senaeterre.
+        <lb/>Notre ieu eſt retourué.
+        <lb/>Les Secretairet d’Etat, &amp; utedans.
+        <lb/>Nous ne ſervons plus, qu’̀ marquer le ieu.
+        <lb/>D’emery.
+        <lb/>Ie ſuis bien pris, ie n’ai plus beau ieu.
+        <lb/>es Courtiſans.
+        <lb/>Notre Ieu nous reſſemble.
+        <lb/>FIN. </p>
+    </body>
+  </text>
 </TEI>

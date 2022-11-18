@@ -1,1299 +1,671 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xml:id="Moreau994_GBOOKS" xmlns="http://www.tei-c.org/ns/1.0">
- <teiHeader>
-  <fileDesc>
-   <titleStmt>
-    <title source="Moreau" type="main">
-     Les Délices de la paix, représentés par les États
-          et les villes de ce royaume, par le sieur Bertaut.
-    </title>
-    <title type="sub">
-     Édition Antonomaz
-    </title>
-    <respStmt>
-     <resp>
-      Chaîne de traitement
-     </resp>
-     <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">
-      Abiven Karine
-     </persName>
-     <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">
-      Lejeune Gaël
-     </persName>
-     <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">
-      Tanguy
-            Jean-Baptiste
-     </persName>
-     <persName ref="orcid:0000-0003-0850-8266" role="engineer">
-      Bartz Alexandre
-     </persName>
-    </respStmt>
-   </titleStmt>
-   <publicationStmt>
-    <publisher>
-     Projet ANTONOMAZ / Sorbonne Université
-    </publisher>
-    <ref target="https://github.com/Antonomaz"/>
-    <date type="file_creation" when="2022-10-25">
-     25 octobre 2022
-    </date>
-    <availability n="cc-by" status="restricted">
-     <licence target="https://creativecommons.org/licenses/by/4.0"/>
-    </availability>
-   </publicationStmt>
-   <sourceDesc>
-    <bibl>
-     <ref target="https://books.google.fr/books?id=64gHsfHxp4wC"/>
-     <author ref="isni:0000000061212972">
-      <persName>
-       <forename>
-        Bertin
-       </forename>
-       <surname>
-        Bertaut
-       </surname>
-      </persName>
-     </author>
-     <title source="Moreau">
-      Les 
-      Délices de la paix, représentés  par les États et les
-            villes de ce royaume, par le sieur Bertaut.
-     </title>
-     <pubPlace ref="geonames:2988507" source="Moreau">
-      Paris
-     </pubPlace>
-     <publisher ref="isni:0000000109088537" xml:id="IL_JacquardNicolas.xml">
-      <persName>
-       <forename>
-        Nicolas
-       </forename>
-       <surname>
-        Jacquard
-       </surname>
-      </persName>
-     </publisher>
-     <date source="Moreau" when="1649">
-      1649
-     </date>
-     <extent>
-      <measure quantity="20" unit="page"/>
-     </extent>
-     <note type="format">
-      in-4
-     </note>
-     <relatedItem cert="low" source="Mazarine" subtype="none" target="none" type="identifier"/>
-    </bibl>
-    <msDesc>
-     <msIdentifier>
-      <settlement ref="geonames:2996944">
-       Lyon
-      </settlement>
-      <institution>
-       Bibliothèque municipale de Lyon
-      </institution>
-      <repository/>
-      <idno type="cote">
-       Rés 312578
-      </idno>
-     </msIdentifier>
-     <history>
-      <provenance>
-       <stamp>
-        True
-       </stamp>
-      </provenance>
-     </history>
-    </msDesc>
-   </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-   <projectDesc>
-    <p>
-     Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau994_GBOOKS">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Délices (les) de la paix, représentés (sic) par les États
+          et les villes de ce royaume, par le sieur Bertaut.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+            Jean-Baptiste</persName>
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz"/>
+        <date type="file_creation" when="2022-10-25">25 octobre 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=64gHsfHxp4wC"/>
+          <author ref="isni:0000000061212972">
+            <persName>
+              <forename>Bertin</forename>
+              <surname>Bertaut</surname>
+            </persName>
+          </author>
+          <title source="Moreau">Délices (les) de la paix, représentés (sic) par les États et les
+            villes de ce royaume, par le sieur Bertaut.</title>
+          <pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
+          <publisher ref="isni:0000000109088537" xml:id="IL_JacquardNicolas.xml">
+            <persName>
+              <forename>Nicolas</forename>
+              <surname>Jacquard</surname>
+            </persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure unit="page" quantity="20"/>
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale de Lyon</institution>
+            <repository/>
+            <idno type="cote">Rés 312578</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
-          auteur oublié.
-    </p>
-    <p>
-     Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
-          bibliothèques numériques publiques et de Google livres.
-    </p>
-    <p>
-     L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.
-    </p>
-   </projectDesc>
-   <editorialDecl>
-    <p/>
-   </editorialDecl>
-  </encodingDesc>
-  <profileDesc>
-   <langUsage>
-    <language ident="fra">
-     Document en français
-    </language>
-   </langUsage>
-   <abstract>
-    <p source="Mazarine"/>
-    <p source="Moreau">
-     994. Délices (les) de la paix, représentés (sic) par les États et les
+          auteur oublié.</p>
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+          bibliothèques numériques publiques et de Google livres.</p>
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p/>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine"/>
+        <p source="Moreau">994. Délices (les) de la paix, représentés (sic) par les États et les
           villes de ce royaume, par le sieur Bertaut. Paris, Nicolas Jacquard,, 1649, 20 pages. La
           permission d’imprimer est du 24 avril. Bertaut a dédié son pamphlet au premier président
           Molé, quil déclare, dans son épître dédicatoire, l’auteur principal de la paix. Il avait)
           publié, précédemment, pendant les conférences de Ruel et de Saint-Germain, les Sentiments
-          du orai citayer, etc., et les Avan- tages de la paix et de l’union, etc.
-    </p>
-   </abstract>
-   <textClass>
-    <keywords>
-     <term type="form">
-      prose
-     </term>
-     <term type="form">
-      vers
-     </term>
-     <term type="genre">
-      poésie
-     </term>
-     <term type="genre">
-      pamphlet
-     </term>
-     <term subtype="no" type="handwritten_note"/>
-     <term subtype="no" type="table_of_content"/>
-     <term subtype="no" type="illustration"/>
-    </keywords>
-   </textClass>
-   <settingDesc>
-    <setting source="Moreau" xml:id="evt_Moreau_19">
-     <p>
-      Arrivée du prince de Condé à Paris
-     </p>
-     <date when="1649-04-16">
-      1649-04-16
-     </date>
-    </setting>
-   </settingDesc>
-  </profileDesc>
-  <revisionDesc>
-   <change status="corrected" when="2022-10-25" who="AB"/>
-  </revisionDesc>
- </teiHeader>
- <text>
-  <body>
-   <p>
-    <pb n="1"/>
-    <lb/>
-    LES
-    <lb/>
-    DELICES
-    <lb/>
-    I
-    <lb/>
-    LA PAIX
-    <lb/>
-    REPRESEN TEZ
-    <lb/>
-    PARLES ESTATS
-    <lb/>
-    Et les Villes de ce Royaume.
-    <lb/>
-    l e l.
-    <lb/>
-    l ues Cnare
-    <lb/>
-    e
-    <lb/>
-    l e re eleren
-    <pb n="2"/>
-    <pb n="3"/>
-    <lb/>
-    te
-    <lb/>
-    A.
-    <lb/>
-    s
-    <lb/>
-    Ee
-    <lb/>
-    s
-    <lb/>
-    E VT ¬
-    <lb/>
-    A MONSEIGNEVR
-    <lb/>
-    MONSEIGNEVR
-    <lb/>
-    r E
-    <lb/>
-    MOLE
-    <lb/>
-    J
-    <lb/>
-    CONSEILLER DV ROY
-    <lb/>
-    en ſes Conſeils d’Eſtat, Privé,
-    <lb/>
-    &amp; Premier Preſident en ſa
-    <lb/>
-    Cour de Parlement.
-    <lb/>
-    ONsEGNEVR,
-    <lb/>
-    J Cetre heureuſe Pair dont le
-    <lb/>
-    lbauviſage a deiapeneaie faine
-    <lb/>
-    Ee e ere
-    <lb/>
-    vent avec actions de grace, ayant eſté tracée,
-    <lb/>
-    A ij
-    <pb n="4"/>
-    <lb/>
-    conduite &amp; aceomplie par voſtre incompara¬
-    <lb/>
-    ble prudence &amp; bonteé: C’eſt, MONSE I.
-    <lb/>
-    GNEVR, preſenter à vos yeux les fruits que J
-    <lb/>
-    vous avez produits, en vous offrant les delices
-    <lb/>
-    de la paix. A peine deux mois ſeront-ils é́eou¬
-    <lb/>
-    lez que toute la France ne face entendre des cris
-    <lb/>
-    d’allégreſfes &amp; dé Benedictions pour voſtre
-    <lb/>
-    lene de lrqoene eren e ele ne
-    <lb/>
-    Perſonne, do luy avoir faitvn ſi che preſent
-    <lb/>
-    iours eſté d’humeur à ne pas conſideérer l’origi¬
-    <lb/>
-    ne des choſes, mais à s’arreſter aux effets qu’elles
-    <lb/>
-    produiſent. Celle-cy qui eſt toute vôtre, ſe fera
-    <lb/>
-    voir autant prodigue en bienfaits à l’endroit
-    <lb/>
-    de tout les Hommes, que ce Monſtre de Guer¬
-    <lb/>
-    re Civile plus que demy formeé leur préparoit
-    <lb/>
-    d’amertumes &amp; de douleurs, bien que ie par¬
-    <lb/>
-    ticipe avec le general à tant de graces qui pro¬
-    <lb/>
-    cé́dent de vous: Ie vous ſupplie tres-humble¬
-    <lb/>
-    ment, MONSEIGNEVR, de mhonorer!
-    <lb/>
-    de cette particuliere, permettre que ie me diſe
-    <lb/>
-    avec le reſpect que ie vous dois,
-    <lb/>
-    MONSEIGNEVR,
-    <lb/>
-    oftre tres-bumble, tresr-obeiſſant,
-    <lb/>
-    &amp; vyfdle ſronr,
-    <lb/>
-    E’E TvT.
-    <pb n="5"/>
-    <lb/>
-    1
-    <lb/>
-    A.
-    <lb/>
-    éi faet S
-    <lb/>
-    e H- e pé
-    <lb/>
-    eeetpeeee
-    <lb/>
-    LES.
-    <lb/>
-    DELICES
-    <lb/>
-    DE LA PAIX,
-    <lb/>
-    REPRESENTEE
-    <lb/>
-    PARLES. ESTATS
-    <lb/>
-    &amp; les Villes¬
-    <lb/>
-    DE CE ROYAVME.
-    <lb/>
-    ae la erur des amxains,
-    <lb/>
-    er ue ie mi eenee¬
-    <lb/>
-    Id aieoie eiei eiee
-    <lb/>
-    ld iunlilnr ioe di de de
-    <lb/>
-    inie reuereee
-    <lb/>
-    So uaeſien enenuer
-    <lb/>
-    Fdſint eialie liopiule elins
-    <lb/>
-    lelneraein epre
-    <lb/>
-    llnd e oeu e ne dliſdeua ee,
-    <pb n="6"/>
-    <lb/>
-    6
-    <lb/>
-    Guerrier acroche ton epee,.
-    <lb/>
-    a laloporte &amp; l’araignée,
-    <lb/>
-    Font leur ſejour en ta uaiſon,
-    <lb/>
-    Là guerre neſt plus de ſaiſon:
-    <lb/>
-    Muze adoucs vn peu ta ve ine,
-    <lb/>
-    Soufle moy de ta douce haleine;
-    <lb/>
-    pour chanter le lots d’vne paix,
-    <lb/>
-    Qui ſoit durable pour jamais.
-    <lb/>
-    , ¬
-    <lb/>
-    pirâinûndnddl
-    <lb/>
-    aſ paecei
-    <lb/>
-    2
-    <lb/>
-    L
-    <lb/>
-    T N r¬ ¬
-    <lb/>
-    E
-    <lb/>
-    IVIIL . L.
-    <lb/>
-    ¬
-    <lb/>
-    Oier le char de la luſtice,
-    <lb/>
-    A Ces mots gravez au frontiſpice,
-    <lb/>
-    Dieu beniſſe voſtre retour,
-    <lb/>
-    Deeſe de paix &amp; d’amour,
-    <lb/>
-    En main vn épée ranehante21
-    <lb/>
-    Cherchant la beſfte devorante,1!
-    <lb/>
-    Du moins la trace du paſſé.
-    <lb/>
-    par tant de ſang qu’elle a verſé,
-    <lb/>
-    Ie ſuis la lunmiee éclatante, r:.
-    <lb/>
-    .
-    <lb/>
-    Ie ſus la main toute puiſſanat, r
-    <lb/>
-    Ie voy, ie frape en tous les lleu,
-    <lb/>
-    I’ay le meſme pouvoir des Dieus,!
-    <lb/>
-    Ie ſuis l’effroy des paricides1
-    <lb/>
-    Du vol du feu des aeido,1..
-    <pb n="7"/>
-    <lb/>
-    Pour eux il n’y a point de lieux,
-    <lb/>
-    Qui ne ſoient preſens à mes yeux,
-    <lb/>
-    Si pendant le cours de la guerre,
-    <lb/>
-    L’on a pris ton pre &amp; ta terre,
-    <lb/>
-    Ie ſuis pour t’en faire raiſon,
-    <lb/>
-    Et te conſerver ta maiſon.
-    <lb/>
-    iiea
-    <lb/>
-    auaagou
-    <lb/>
-    LE
-    <lb/>
-    ET1
-    <lb/>
-    <lb/>
-    H I
-    <lb/>
-    <lb/>
-    IEIN I IL IL- PVILLL.
-    <lb/>
-    T E voy l’honneſte Gentil-aomme,
-    <lb/>
-    Conſulter auec le bon- homme,
-    <lb/>
-    A Comment remettre ſon fruitier,
-    <lb/>
-    Son jardin &amp; ſon beau vivier:
-    <lb/>
-    Ie le voy marcher de viteſſe,
-    <lb/>
-    pouſsé du deſir qui le preſſe,
-    <lb/>
-    De reuoir la vigne ou le preé,
-    <lb/>
-    Ou ſon par-terre diapreé,
-    <lb/>
-    De milles fleurs que la Nature,
-    <lb/>
-    IEnrichit auec ſa peinture;
-    <lb/>
-    Ie le voy dans la baſſe court,
-    <lb/>
-    pour voir chaque choſe a ſon tour,
-    <lb/>
-    Ou à loifir il conſidere,
-    <lb/>
-    Ce qui luy plaiſt ou peut déplaire;
-    <lb/>
-    Il regarde le colombier,
-    <lb/>
-    Si du couvreur ou du plombier,1i
-    <lb/>
-    1
-    <lb/>
-    8
-    <pb n="8"/>
-    <lb/>
-    8
-    <lb/>
-    Le meſtier ſeroit neceſaire,
-    <lb/>
-    Si ſon Fcrmier parle d’affaire,
-    <lb/>
-    Il temoigne du déplaſiir,
-    <lb/>
-    Qu’il n’ayt tout veu à ſon loiſir,
-    <lb/>
-    Il entre dedans l’eſcurie,
-    <lb/>
-    Il viſite la bergerie,
-    <lb/>
-    Ravy d’entendre les aigneaux,
-    <lb/>
-    Faire muſique auec les veaux;
-    <lb/>
-    Il voit ſi la grange eſt bien pleine,
-    <lb/>
-    De fromant meſtail &amp; d’avoyne,
-    <lb/>
-    A lors il demande au fermier,
-    <lb/>
-    Ce qu’il a dedans ſon grenier,
-    <lb/>
-    S’entretenant juſques à l’heure,
-    <lb/>
-    Du ſouper à lors ſans demeure,
-    <lb/>
-    Il s’achemine à la maiſon,
-    <lb/>
-    Au bruit de la cane &amp; l’oyſo;s
-    <lb/>
-    Il laue ſans ceremonie,
-    <lb/>
-    En ſe raillant de l’armonie,
-    <lb/>
-    D’vn prémedité coapliment,
-    <lb/>
-    Si- toſt l’on luy ſert ſeulement,
-    <lb/>
-    Du veau &amp; du mouton enſemble,
-    <lb/>
-    puis pour le ſecond l’on aſſemble
-    <lb/>
-    Vne paire de pigeonneaux,
-    <lb/>
-    Auec autant de Hétudeaux,
-    <lb/>
-    pour le deſert de toute ſorte,
-    <lb/>
-    De fruit que ſon jardin rapporte,
-    <lb/>
-    Vne heure apres il va coucher;,.
-    <lb/>
-    Auſſi content qu’vn notnnier,
-    <lb/>
-    Qui s’eſt ſauueé de la tempeſte,:
-    <lb/>
-    Si le l’endemain il eſt feſte,
-    <lb/>
-    Il fait dire devotement,.
-    <lb/>
-    La Meſſe bien houû,11.
-    <lb/>
-    ¬¬¬
-    <lb/>
-    ad
-    <lb/>
-    .
-    <pb n="9"/>
-    <lb/>
-    Puis boit vn coup dans la franchiſe
-    <lb/>
-    Avec la mere ſmte t’gliſe:
-    <lb/>
-    Apres il va ſe promenan,
-    <lb/>
-    Tout ſeulet, ou s’entet nant
-    <lb/>
-    Dans le bois de haute futaye,
-    <lb/>
-    Dans le taillis &amp; dans Launaye,
-    <lb/>
-    Où il entend nombre d’oyſeaux,
-    <lb/>
-    Fait lever quelques; perdreaux,
-    <lb/>
-    Ou quelque Lívre de ſon giſte,
-    <lb/>
-    Qu’iſ ſuit doucement à la piſte,
-    <lb/>
-    pour l’atraper le lendemain,
-    <lb/>
-    Retournant &amp; faiſant chemin,
-    <lb/>
-    Il entre dans la maiſonnette,
-    <lb/>
-    Du berger qui prend ſa nmaſette,
-    <lb/>
-    pour entonner vne chanſon,
-    <lb/>
-    De perrette ou bien d’aliſon,
-    <lb/>
-    Ravy de revoir ſon bon Maiſtre,
-    <lb/>
-    Auquel il promet faire paiſtre,
-    <lb/>
-    Son troupeau auectout le ſoin,
-    <lb/>
-    De ce qui luy fera beſoin,
-    <lb/>
-    Aymant mieux cete aelodie,
-    <lb/>
-    Qu’vne muſique bien choiſie:
-    <lb/>
-    S’il aprend qu’il ſoit Vendredy,
-    <lb/>
-    Il demeure vn peu eſtourdy;
-    <lb/>
-    puis tout à l’inſtant il commande,
-    <lb/>
-    Que dans le logis l’on demande,
-    <lb/>
-    Ou l’on a ſerré l’eſchiquier,
-    <lb/>
-    pour le ietter dans le vivier,,.
-    <lb/>
-    Que ſil’on peſche quelque choſe,
-    <lb/>
-    Vne bonne ſauſſe on compoſe,
-    <lb/>
-    Recommandant au cuiſinier,¬
-    <lb/>
-    De faire valoir le maeſtiera.1.
-    <lb/>
-    4
-    <lb/>
-    ¬,
-    <pb n="10"/>
-    <lb/>
-    1e
-    <lb/>
-    O Dieusx la differante vie,
-    <lb/>
-    De celle-là qui n’eſt ſuivie,
-    <lb/>
-    Que de qui viue ou qui vala,
-    <lb/>
-    L’enfer invente tout cela,
-    <lb/>
-    Ravy ſans bouger de la place,
-    <lb/>
-    Les yeux au Ciel l luy rend grace,
-    <lb/>
-    De revoir encor ſa maiſon,
-    <lb/>
-    Malgré la guerre &amp; ſon poyſom
-    <lb/>
-    1
-    <lb/>
-    , ,, ,, é.
-    <lb/>
-    ’epette’e eedeeo
-    <lb/>
-    LE
-    <lb/>
-    Lr
-    <lb/>
-    MARCHAND
-    <lb/>
-    O voit le Marchand qui s’éveille,
-    <lb/>
-    Sa joue devenir vermeille,
-    <lb/>
-    - Eſperant que dans peu de jours,
-    <lb/>
-    Le traficq reprendra ſon cours,
-    <lb/>
-    Il ne peut demeurer en place;
-    <lb/>
-    A. midy il court à la place,
-    <lb/>
-    pour ſçavoir ce que vaut l’atgent,
-    <lb/>
-    A Lyon, &amp; combien pour cent,
-    <lb/>
-    voit du monde en ſa bourique,
-    <lb/>
-    Il ne veut plus revoir ſa pique;,
-    <lb/>
-    Aymant mieux vn combien cela,
-    <lb/>
-    Que le mot de demeure laà,
-    <lb/>
-    L’argent qui chez ſoy ſe remes,
-    <lb/>
-    peu à peu raſſeure ſa veuë,
-    <pb n="11"/>
-    <lb/>
-    11
-    <lb/>
-    S’il viſite ſon Magazin,
-    <lb/>
-    Il prend le petit doit de vin,
-    <lb/>
-    S’il vient vne lettre dechange,
-    <lb/>
-    l’accepte &amp; paye le change,
-    <lb/>
-    Ainſi ſans remiſe &amp; protez,
-    <lb/>
-    Il abrege vn mauvais procez,
-    <lb/>
-    Son ſeruiteur reprend ſa force,
-    <lb/>
-    La vieille ſeruante sefforce,
-    <lb/>
-    De faire quelque bon ragouſt,
-    <lb/>
-    pour faire reuenir ſon gouſt:
-    <lb/>
-    Il eſt tout change de viſage;
-    <lb/>
-    Il cauſe avec le Voyfinage,
-    <lb/>
-    De guerre il ne s’en parle plus,
-    <lb/>
-    Aymant mieux quelque bon rebus
-    <lb/>
-    De picardie ou de champagne,
-    <lb/>
-    Su veut ales ̀ la campaene,
-    <lb/>
-    pour y voir ſon petit logis,
-    <lb/>
-    Il n’eſt plus comme la ſouris,
-    <lb/>
-    Qui ne ſort jamais ſans la crainte,
-    <lb/>
-    DP’avoir quelque mauvaiſe aeinue,
-    <lb/>
-    Sa femme &amp; luy s’entretenant;
-    <lb/>
-    ODieux!quel ſoudain tcaangement,
-    <lb/>
-    L’on doit bien benir l jponte,
-    <lb/>
-    Que la paix a eſté ſſgné.
-    <lb/>
-    .
-    <lb/>
-    .
-    <lb/>
-    13.
-    <lb/>
-    ¬
-    <lb/>
-    l
-    <lb/>
-    .. 1.
-    <lb/>
-    ¬
-    <lb/>
-    n
-    <lb/>
-    1
-    <pb n="12"/>
-    <lb/>
-    12
-    <lb/>
-    e
-    <lb/>
-    e- sjeet-q-géa3
-    <lb/>
-    e ee e tee ee e
-    <lb/>
-    LE
-    <lb/>
-    LABOVREVR
-    <lb/>
-    1 M
-    <lb/>
-    ON voit le pauvre laboureur,
-    <lb/>
-    outré d’vne iuſte douleur,
-    <lb/>
-    Les yeux creux, le viſage bleme,
-    <lb/>
-    penſif, reſvaſſer en ſoy-meſme,
-    <lb/>
-    Auquel il pouroit adreſe,
-    <lb/>
-    ponr ayder à le redreſſer,
-    <lb/>
-    Mais quoy i n’a plu que l’écoree,
-    <lb/>
-    Sa voix n’a pas aſſez de force,
-    <lb/>
-    pour faire entendre la douleur,
-    <lb/>
-    Qui luy ſerre &amp; preſſe le cœur,
-    <lb/>
-    La paix quelque peu le conſole,
-    <lb/>
-    Ses bleds qui ſont en bonne ſole,
-    <lb/>
-    Et de faç̧on d’eſtre meilleurs,
-    <lb/>
-    Qu’aux térres qu’il laboure ailleun
-    <lb/>
-    Il a recours à ſon bon Maiſtre,
-    <lb/>
-    Chez lequel il n’ozoit paraiſtre,
-    <lb/>
-    pour vne debte du paſſé,
-    <lb/>
-    Dont il l’avoit fort menaſſé;
-    <lb/>
-    Qui luy donne bonne eſperance,
-    <lb/>
-    Luy remonſtre la conſequence,
-    <lb/>
-    De ne pas quitter ſon Travail.,
-    <lb/>
-    Sa ferme &amp; tout ſon attirail,
-    <lb/>
-    pour lors
-    <pb n="13"/>
-    <lb/>
-    13
-    <lb/>
-    Pour lors reduit aà peede choſe,
-    <lb/>
-    Lors vn petit vermeil-de roſe,.1¬
-    <lb/>
-    S’entremeſle avec ſa couleur,i:
-    <lb/>
-    .
-    <lb/>
-    Tout reſſemblant à la lueur.11
-    <lb/>
-    D’urore qui commence à poindre,
-    <lb/>
-    Il choiſt de deux maux le ioindre,
-    <lb/>
-    Et ſans attendre au lendemain,
-    <lb/>
-    Il reprend la charuë en main,u
-    <lb/>
-    Il prend courage il s’évertuë,l.l
-    <lb/>
-    Sa femme à̀ travailler ſe tuë,
-    <lb/>
-    Et avec eux tous leurs onfans,
-    <lb/>
-    1.
-    <lb/>
-    pendant les ’eſprits &amp; leur ſens,
-    <lb/>
-    Doucement reprennent la place,
-    <lb/>
-    Qu’ils auoient auant leurs diſgraces
-    <lb/>
-    Et voyant la belle ſaiſon,
-    <lb/>
-    Repeuplent vn peu la maiſon,
-    <lb/>
-    De pigeons &amp; d’autres volaillesi;
-    <lb/>
-    Ils acheptent quelques auomailes,
-    <lb/>
-    pour refaire vn nouueamroupeuu,
-    <lb/>
-    D’autres Vaches &amp; vn Tdrréau,
-    <lb/>
-    Car la forme eſtoit dénuée,
-    <lb/>
-    Ainſi qu’on voir vne nuée,
-    <lb/>
-    Qui a verſe toute ſon eau,
-    <lb/>
-    n peu de graiſſe ſur la pau u;
-    <lb/>
-    lLuy paroiſt plus qu’a l’ordinaire:
-    <lb/>
-    C’eſt lors qu’il comméce aàſe plaire
-    <lb/>
-    Au travail comme auparavant,
-    <lb/>
-    Que le matin en ſe leant,!
-    <lb/>
-    Il adreſe à Dieu ſa priere,
-    <lb/>
-    Sil at pus de ſi miſere,
-    <lb/>
-    Beniſſant ſon petit labeur,
-    <lb/>
-    Le delivrant de la fiayeur
-    <lb/>
-    D
-    <lb/>
-    i 1
-    <lb/>
-    .
-    <lb/>
-    3
-    <lb/>
-    .L1
-    <lb/>
-    ,
-    <lb/>
-    1:1
-    <lb/>
-    ;’¬¬
-    <pb n="14"/>
-    <lb/>
-    14
-    <lb/>
-    Qui ne peut quitter ſa penſoe,
-    <lb/>
-    L’horreur de la guerre paſſee;
-    <lb/>
-    Il ſupplie ſa prouidence,
-    <lb/>
-    Sa grace la pcrſeuerance,
-    <lb/>
-    De reſiſter à tant de maux,.,
-    <lb/>
-    Tant de peines, tant de travaux,
-    <lb/>
-    Dont la creature eſt ſuivie,
-    <lb/>
-    En attendant vne autre vie,
-    <lb/>
-    puis, il ſe leve bruſquement,
-    <lb/>
-    pour paroiſtre plus promptement,
-    <lb/>
-    A tous ſes gens &amp; ſa prelence,
-    <lb/>
-    Les exorte à la diligence,
-    <lb/>
-    Le chartier penſe les cheuaux,
-    <lb/>
-    Les autres voyent leurs troupeax,
-    <lb/>
-    Ainſi chacun pour luy complaire,
-    <lb/>
-    S’entremet à ce qu’il doit faire,
-    <lb/>
-    Iuſques au temps du des jeûner,
-    <lb/>
-    De ce que Dieu lear veut donner:
-    <lb/>
-    pour cela perſonne ne grogne,
-    <lb/>
-    C’eſt le plus doux de la beſogne,
-    <lb/>
-    Vn peu apres aſſez ſoudain,
-    <lb/>
-    Il prend ſa baguette à la main,
-    <lb/>
-    Faiſant vne forme de ronde,
-    <lb/>
-    pour voir travailler tout ſon monde,
-    <lb/>
-    Il voit ſes bleds tout à lentour,
-    <lb/>
-    Qu’il trouue beau de iour en iour;
-    <lb/>
-    Laize luy faire dire en ſoy- meſnmie,
-    <lb/>
-    Voyons ſi l’auoyne eſt de meſme;
-    <lb/>
-    Il paſſe ainſi tout le matin,
-    <lb/>
-    Iuſques à l’heure du feſtin,
-    <lb/>
-    Compoſ d’vn fort grand potage,
-    <lb/>
-    D’vn peu de lart &amp; d’vn fromage;
-    <pb n="15"/>
-    <lb/>
-    15
-    <lb/>
-    Et quand cela eſt en ſo’lieu,
-    <lb/>
-    Faut dire grace &amp; puis adieu;
-    <lb/>
-    En mengant perſonne ne raille,
-    <lb/>
-    Car ceux qui demande la raiſle,
-    <lb/>
-    Sout à̀ la porte en atedant,
-    <lb/>
-    Avec eux vn rouge Sergent.
-    <lb/>
-    Qui en entrant prend la vaiſſelle,
-    <lb/>
-    Quil guarre deſſous ſon aiſſelle:
-    <lb/>
-    La nappe eſt priſe par les autres,
-    <lb/>
-    Qui en demandent encor d’autres
-    <lb/>
-    Ou qu’on prendra le maiſtre au corps;
-    <lb/>
-    Cependant vn maiſtre Recors
-    <lb/>
-    Voyant vn manteau pres la porte,
-    <lb/>
-    Le met ſur ſon dos &amp; l’ecmporte.
-    <lb/>
-    y -, &amp;
-    <lb/>
-    Ae e iFi
-    <lb/>
-    o’oe t eteua&amp;peeae pe
-    <lb/>
-    T 7 D
-    <lb/>
-    MESSIEVRS
-    <lb/>
-    DE
-    <lb/>
-    D T E
-    <lb/>
-    D R1
-    <lb/>
-    5 r¬
-    <lb/>
-    RI
-    <lb/>
-    E . L L I I.
-    <lb/>
-    AIS voicy vn autre Sergent,
-    <lb/>
-    De par Mefieurs de Parſement,
-    <lb/>
-    Qui fait commandement de rendre,
-    <lb/>
-    Tout cela que l’on vient de prendre,
-    <lb/>
-    En vertu d’vn fort bon Arreſt,
-    <lb/>
-    Qui defend l’vſage du preſt,
-    <pb n="16"/>
-    <lb/>
-    I6
-    <lb/>
-    Le quart de diminution,
-    <lb/>
-    Porte par Declaration,
-    <lb/>
-    Ce qui fut fait à l’heure meſme
-    <lb/>
-    Le partizan en deuint bleſme,
-    <lb/>
-    Ou ſon commis que ie ne mente,
-    <lb/>
-    Sur lequel on fait la decente,
-    <lb/>
-    De quinze ou vingt coups de baſtons,
-    <lb/>
-    Qui luy font touner les talons,
-    <lb/>
-    A lors le bon-homme rerourne,
-    <lb/>
-    priant le Sergent qu’il s’éjoune;.
-    <lb/>
-    Qu’il luy veut faire vn bon repas,
-    <lb/>
-    Et le contenter de ſes pas,
-    <lb/>
-    Luy doucement le remere,
-    <lb/>
-    Qu’il faut que l’Arreſt il publie,
-    <lb/>
-    promptement &amp; en diters lieux,
-    <lb/>
-    pour faire rendre grace aux Dieux,
-    <lb/>
-    Qui aſſeurent toute la France,
-    <lb/>
-    Que deſormais la violence,
-    <lb/>
-    Des nouueautez &amp; les abus,
-    <lb/>
-    1.
-    <lb/>
-    par eux ne ſe ſouffciront plus,
-    <lb/>
-    Quoy que la Cour en face inſtance,
-    <lb/>
-    Bien armé́e de perſeuerance,
-    <lb/>
-    Contre Prince ou Grand quiſoit-il,
-    <lb/>
-    Le Fermier dit, ainſi ſoit il.
-    <lb/>
-    Le Deſiee
-    <pb n="17"/>
-    <lb/>
-    17
-    <lb/>
-    ete
-    <lb/>
-    Ae e e ee es s ae s ¬
-    <lb/>
-    régera e
-    <lb/>
-    es eeee
-    <lb/>
-    T ¬
-    <lb/>
-    LD E
-    <lb/>
-    LE
-    <lb/>
-    r T
-    <lb/>
-    I L
-    <lb/>
-    DES
-    <lb/>
-    VILLES
-    <lb/>
-    T o1ey le delice des villes
-    <lb/>
-    Vaeoeaii eleiaeeei
-    <lb/>
-    len ſer ienrenſre
-    <lb/>
-    leſie e le rene enie
-    <lb/>
-    plaideurs dnnt la mulitode,
-    <lb/>
-    paeni e eu ienuneie
-    <lb/>
-    T us rpnraionent leu
-    <lb/>
-    le boneen
-    <lb/>
-    eui e i ſer ere nueue
-    <lb/>
-    e eiee ſe
-    <lb/>
-    i eei ee.
-    <lb/>
-    l’iaeſinl des
-    <lb/>
-    nene n dne e reu
-    <lb/>
-    li e e enie e a i
-    <lb/>
-    Et ſes anes au rarell
-    <lb/>
-    1
-    <pb n="18"/>
-    <lb/>
-    Chaeun reuoit ces promenades,
-    <lb/>
-    La comméde, les aubades,.
-    <lb/>
-    Ont leur cours comme auparavat,
-    <lb/>
-    ¬.
-    <lb/>
-    Les Roys &amp; careſme-prenant,
-    <lb/>
-    La terre couuerte de londe,
-    <lb/>
-    Cet hyuer eſtonnoit le monde,
-    <lb/>
-    Vne fſte qu’il face beau,
-    <lb/>
-    Paris déborde comme l’eau,
-    <lb/>
-    La tetre ſe troue cpuuerte,1
-    <lb/>
-    De gens aſſis ſur l’herbe verte,
-    <lb/>
-    Et d autres qui roullent le bois,
-    <lb/>
-    pour boire la petite fois,
-    <lb/>
-    L’on voit les peres de familles,
-    <lb/>
-    Auec lers femnmes &amp; leurs filles,¬
-    <lb/>
-    prendre le diuertiſſemant,
-    <lb/>
-    Doucement en ſe pounmenant,
-    <lb/>
-    Ceux quiont des maisõs prochaines,
-    <lb/>
-    Y courent aà perte d’halaines,
-    <lb/>
-    Tant ils ſont deſireumx devoir,
-    <lb/>
-    Si leurs gens ont fait le devoir:
-    <lb/>
-    Arrivez qu’ils ſont l’vn devore,
-    <lb/>
-    Quelque arbre qui boutonneencore,
-    <lb/>
-    L’autre s’encourt droit au fruitier,
-    <lb/>
-    Au par-terre ou au potager,
-    <lb/>
-    perſonne en ce lieu n’eſt malade,
-    <lb/>
-    Le valet cueille la Salade,
-    <lb/>
-    La ſeruante apporte le vin,
-    <lb/>
-    Le paſté, le frait &amp; le pain,
-    <lb/>
-    pour lors vn chacun ſe raſſemble,
-    <lb/>
-    L’on demande que vous enſemble,
-    <lb/>
-    Le jardinier n’eſt pas ſoigneux,
-    <lb/>
-    Vne autre fois il fera mieux,
-    <pb n="19"/>
-    <lb/>
-    9
-    <lb/>
-    Le ſeruiteur &amp; la maiſtreſſe,
-    <lb/>
-    S’ils ont vne égale tendreſfe;!
-    <lb/>
-    .:3
-    <lb/>
-    7
-    <lb/>
-    n i
-    <lb/>
-    Souhaiteroyent qu’vn ſi beauiour,
-    <lb/>
-    e ſi qi anre ieau neonr er ai l e e1
-    <lb/>
-    Mais voicy la nuit qui s’aproche,
-    <lb/>
-    Qu’avec regret l’on ſe raproche,
-    <lb/>
-    achez d’avoir ſi peu de temps,
-    <lb/>
-    A gouter le bon air des champs,
-    <lb/>
-    O d’it-on la belle iournée,
-    <lb/>
-    Du matin &amp; d’apres diſnée,
-    <lb/>
-    O campagne d’heureux ſejour,.
-    <lb/>
-    pourquoy fi- toſt finir le jour,
-    <lb/>
-    Pee ie e n l ledldiſls e r le l n
-    <lb/>
-    Hé bien ſouperons aous enſemble,
-    <lb/>
-    lIoignons tout ce que nous avons,
-    <lb/>
-    Et ce ſoir nous réjouyſſons,
-    <lb/>
-    Chacun ayant veu ſa cuyfine;
-    <lb/>
-    I’ay vn Gigot de bonne mine,
-    <lb/>
-    Et moy vne longe de veau,
-    <lb/>
-    Et quelqu’autre bon alloyau,
-    <lb/>
-    Celuy qui n’a que du potage,
-    <lb/>
-    Aportera fruit &amp; fromage,
-    <lb/>
-    Des oranges, &amp; pour le vin,
-    <lb/>
-    Chacun porte le pot à frin;
-    <lb/>
-    Là l’on boit &amp; miange à ſa guiſe,
-    <lb/>
-    La grimaſe ny la feintiſe,
-    <lb/>
-    Les querelles &amp; les excez,
-    <lb/>
-    En ces lieux perdent leurs procez,
-    <lb/>
-    Sur la fin la paix ſe preſente,
-    <lb/>
-    comme vne Déeſſe contente,
-    <lb/>
-    Davoir chaſsé tant de mal-heurs,
-    <lb/>
-    pour introduire ſes douceurs,
-    <pb n="20"/>
-    <lb/>
-    O paix que és agreable.
-    <lb/>
-    que on fruie eſt deletable;.
-    <lb/>
-    Deu eniſe pour v , jaaais,.
-    <lb/>
-    L’autheur d’vue i boane paiuz
-    <lb/>
-    <lb/>
-    s faune ipriuer lus Vere, iaoitalee, les
-    <lb/>
-    Delices de la pass e. Fauit ee nui C,
-    <lb/>
-    Signé, dAV bRAY.
-    <lb/>
-    vo
-   </p>
-  </body>
- </text>
+          du orai citayer, etc., et les Avan- tages de la paix et de l’union, etc.</p>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="form">vers</term>
+          <term type="genre">poésie</term>
+          <term type="genre">pamphlet</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_19" source="Moreau">
+          <p>Arrivée du prince de Condé à Paris</p>
+          <date when="1649-04-16">1649-04-16</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-10-25" who="AB"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1"/>
+        <lb/>LES
+        <lb/>DELICES
+        <lb/>I
+        <lb/>LA PAIX
+        <lb/>REPRESEN TEZ
+        <lb/>PARLES ESTATS
+        <lb/>Et les Villes de ce Royaume.
+        <lb/> l e l.
+        <lb/>l ues Cnare
+        <lb/>e
+        <lb/>l e re eleren <pb n="2"/>
+        <pb n="3"/>
+        <lb/>te
+        <lb/>A.
+        <lb/>s
+        <lb/>Ee
+        <lb/>s
+        <lb/>E VT ¬
+        <lb/>A MONSEIGNEVR
+        <lb/> MONSEIGNEVR
+        <lb/>r E
+        <lb/>MOLE
+        <lb/>J
+        <lb/>CONSEILLER DV ROY
+        <lb/>en ſes Conſeils d’Eſtat, Privé,
+        <lb/>&amp; Premier Preſident en ſa
+        <lb/> Cour de Parlement.
+        <lb/>ONsEGNEVR,
+        <lb/>J Cetre heureuſe Pair dont le
+        <lb/>lbauviſage a deiapeneaie faine
+        <lb/>Ee e ere
+        <lb/>vent avec actions de grace, ayant eſté tracée,
+        <lb/>A ij <pb n="4"/>
+        <lb/> conduite &amp; aceomplie par voſtre incompara¬
+        <lb/>ble prudence &amp; bonteé: C’eſt, MONSE I.
+        <lb/>GNEVR, preſenter à vos yeux les fruits que J
+        <lb/>vous avez produits, en vous offrant les delices
+        <lb/>de la paix. A peine deux mois ſeront-ils é́eou¬
+        <lb/>lez que toute la France ne face entendre des cris
+        <lb/>d’allégreſfes &amp; dé Benedictions pour voſtre
+        <lb/>lene de lrqoene eren e ele ne
+        <lb/>Perſonne, do luy avoir faitvn ſi che preſent
+        <lb/>iours eſté d’humeur à ne pas conſideérer l’origi¬
+        <lb/>ne des choſes, mais à s’arreſter aux effets qu’elles
+        <lb/>produiſent. Celle-cy qui eſt toute vôtre, ſe fera
+        <lb/>voir autant prodigue en bienfaits à l’endroit
+        <lb/>de tout les Hommes, que ce Monſtre de Guer¬
+        <lb/>re Civile plus que demy formeé leur préparoit
+        <lb/>d’amertumes &amp; de douleurs, bien que ie par¬
+        <lb/>ticipe avec le general à tant de graces qui pro¬
+        <lb/> cé́dent de vous: Ie vous ſupplie tres-humble¬
+        <lb/>ment, MONSEIGNEVR, de mhonorer!
+        <lb/>de cette particuliere, permettre que ie me diſe
+        <lb/>avec le reſpect que ie vous dois,
+        <lb/>MONSEIGNEVR,
+        <lb/> oftre tres-bumble, tresr-obeiſſant,
+        <lb/> &amp; vyfdle ſronr,
+        <lb/> E’E TvT. <pb n="5"/>
+        <lb/>1
+        <lb/>A.
+        <lb/>éi faet S
+        <lb/> e H- e pé
+        <lb/>eeetpeeee
+        <lb/>LES.
+        <lb/>DELICES
+        <lb/>DE LA PAIX,
+        <lb/>REPRESENTEE
+        <lb/>PARLES. ESTATS
+        <lb/>&amp; les Villes¬
+        <lb/>DE CE ROYAVME.
+        <lb/>ae la erur des amxains,
+        <lb/>er ue ie mi eenee¬
+        <lb/>Id aieoie eiei eiee
+        <lb/>ld iunlilnr ioe di de de
+        <lb/> inie reuereee
+        <lb/>So uaeſien enenuer
+        <lb/>Fdſint eialie liopiule elins
+        <lb/>lelneraein epre
+        <lb/>llnd e oeu e ne dliſdeua ee, <pb n="6"/>
+        <lb/>6
+        <lb/>Guerrier acroche ton epee,.
+        <lb/>a laloporte &amp; l’araignée,
+        <lb/>Font leur ſejour en ta uaiſon,
+        <lb/>Là guerre neſt plus de ſaiſon:
+        <lb/>Muze adoucs vn peu ta ve ine,
+        <lb/>Soufle moy de ta douce haleine;
+        <lb/>pour chanter le lots d’vne paix,
+        <lb/>Qui ſoit durable pour jamais.
+        <lb/>, ¬
+        <lb/>pirâinûndnddl
+        <lb/> aſ paecei
+        <lb/>2
+        <lb/>L
+        <lb/>T N r¬ ¬
+        <lb/> E
+        <lb/>IVIIL . L.
+        <lb/> ¬
+        <lb/> Oier le char de la luſtice,
+        <lb/>A Ces mots gravez au frontiſpice,
+        <lb/> Dieu beniſſe voſtre retour,
+        <lb/>Deeſe de paix &amp; d’amour,
+        <lb/>En main vn épée ranehante21
+        <lb/>Cherchant la beſfte devorante,1!
+        <lb/>Du moins la trace du paſſé.
+        <lb/>par tant de ſang qu’elle a verſé,
+        <lb/>Ie ſuis la lunmiee éclatante, r:.
+        <lb/>.
+        <lb/>Ie ſus la main toute puiſſanat, r
+        <lb/>Ie voy, ie frape en tous les lleu,
+        <lb/>I’ay le meſme pouvoir des Dieus,!
+        <lb/>Ie ſuis l’effroy des paricides1
+        <lb/>Du vol du feu des aeido,1.. <pb n="7"/>
+        <lb/>Pour eux il n’y a point de lieux,
+        <lb/>Qui ne ſoient preſens à mes yeux,
+        <lb/>Si pendant le cours de la guerre,
+        <lb/>L’on a pris ton pre &amp; ta terre,
+        <lb/>Ie ſuis pour t’en faire raiſon,
+        <lb/>Et te conſerver ta maiſon.
+        <lb/>iiea
+        <lb/> auaagou
+        <lb/>LE
+        <lb/>ET1
+        <lb/>
+        <lb/>H I
+        <lb/>
+        <lb/>IEIN I IL IL- PVILLL.
+        <lb/>T E voy l’honneſte Gentil-aomme,
+        <lb/> Conſulter auec le bon- homme,
+        <lb/>A Comment remettre ſon fruitier,
+        <lb/>Son jardin &amp; ſon beau vivier:
+        <lb/>Ie le voy marcher de viteſſe,
+        <lb/>pouſsé du deſir qui le preſſe,
+        <lb/>De reuoir la vigne ou le preé,
+        <lb/>Ou ſon par-terre diapreé,
+        <lb/>De milles fleurs que la Nature,
+        <lb/>IEnrichit auec ſa peinture;
+        <lb/>Ie le voy dans la baſſe court,
+        <lb/>pour voir chaque choſe a ſon tour,
+        <lb/>Ou à loifir il conſidere,
+        <lb/>Ce qui luy plaiſt ou peut déplaire;
+        <lb/>Il regarde le colombier,
+        <lb/>Si du couvreur ou du plombier,1i
+        <lb/>1
+        <lb/>8 <pb n="8"/>
+        <lb/>8
+        <lb/>Le meſtier ſeroit neceſaire,
+        <lb/>Si ſon Fcrmier parle d’affaire,
+        <lb/>Il temoigne du déplaſiir,
+        <lb/>Qu’il n’ayt tout veu à ſon loiſir,
+        <lb/>Il entre dedans l’eſcurie,
+        <lb/>Il viſite la bergerie,
+        <lb/>Ravy d’entendre les aigneaux,
+        <lb/>Faire muſique auec les veaux;
+        <lb/>Il voit ſi la grange eſt bien pleine,
+        <lb/>De fromant meſtail &amp; d’avoyne,
+        <lb/>A lors il demande au fermier,
+        <lb/>Ce qu’il a dedans ſon grenier,
+        <lb/>S’entretenant juſques à l’heure,
+        <lb/>Du ſouper à lors ſans demeure,
+        <lb/>Il s’achemine à la maiſon,
+        <lb/>Au bruit de la cane &amp; l’oyſo;s
+        <lb/>Il laue ſans ceremonie,
+        <lb/>En ſe raillant de l’armonie,
+        <lb/>D’vn prémedité coapliment,
+        <lb/>Si- toſt l’on luy ſert ſeulement,
+        <lb/>Du veau &amp; du mouton enſemble,
+        <lb/>puis pour le ſecond l’on aſſemble
+        <lb/>Vne paire de pigeonneaux,
+        <lb/>Auec autant de Hétudeaux,
+        <lb/>pour le deſert de toute ſorte,
+        <lb/>De fruit que ſon jardin rapporte,
+        <lb/>Vne heure apres il va coucher;,.
+        <lb/>Auſſi content qu’vn notnnier,
+        <lb/>Qui s’eſt ſauueé de la tempeſte,:
+        <lb/>Si le l’endemain il eſt feſte,
+        <lb/>Il fait dire devotement,.
+        <lb/>La Meſſe bien houû,11.
+        <lb/>¬¬¬
+        <lb/> ad
+        <lb/> . <pb n="9"/>
+        <lb/>Puis boit vn coup dans la franchiſe
+        <lb/>Avec la mere ſmte t’gliſe:
+        <lb/>Apres il va ſe promenan,
+        <lb/>Tout ſeulet, ou s’entet nant
+        <lb/>Dans le bois de haute futaye,
+        <lb/>Dans le taillis &amp; dans Launaye,
+        <lb/>Où il entend nombre d’oyſeaux,
+        <lb/>Fait lever quelques; perdreaux,
+        <lb/>Ou quelque Lívre de ſon giſte,
+        <lb/>Qu’iſ ſuit doucement à la piſte,
+        <lb/>pour l’atraper le lendemain,
+        <lb/>Retournant &amp; faiſant chemin,
+        <lb/>Il entre dans la maiſonnette,
+        <lb/>Du berger qui prend ſa nmaſette,
+        <lb/>pour entonner vne chanſon,
+        <lb/>De perrette ou bien d’aliſon,
+        <lb/>Ravy de revoir ſon bon Maiſtre,
+        <lb/>Auquel il promet faire paiſtre,
+        <lb/>Son troupeau auectout le ſoin,
+        <lb/>De ce qui luy fera beſoin,
+        <lb/>Aymant mieux cete aelodie,
+        <lb/>Qu’vne muſique bien choiſie:
+        <lb/>S’il aprend qu’il ſoit Vendredy,
+        <lb/>Il demeure vn peu eſtourdy;
+        <lb/>puis tout à l’inſtant il commande,
+        <lb/>Que dans le logis l’on demande,
+        <lb/>Ou l’on a ſerré l’eſchiquier,
+        <lb/>pour le ietter dans le vivier,,.
+        <lb/>Que ſil’on peſche quelque choſe,
+        <lb/>Vne bonne ſauſſe on compoſe,
+        <lb/>Recommandant au cuiſinier,¬
+        <lb/>De faire valoir le maeſtiera.1.
+        <lb/> 4
+        <lb/> ¬, <pb n="10"/>
+        <lb/>1e
+        <lb/>O Dieusx la differante vie,
+        <lb/>De celle-là qui n’eſt ſuivie,
+        <lb/>Que de qui viue ou qui vala,
+        <lb/>L’enfer invente tout cela,
+        <lb/>Ravy ſans bouger de la place,
+        <lb/>Les yeux au Ciel l luy rend grace,
+        <lb/>De revoir encor ſa maiſon,
+        <lb/>Malgré la guerre &amp; ſon poyſom
+        <lb/>1
+        <lb/>, ,, ,, é.
+        <lb/> ’epette’e eedeeo
+        <lb/>LE
+        <lb/> Lr
+        <lb/>MARCHAND
+        <lb/> O voit le Marchand qui s’éveille,
+        <lb/> Sa joue devenir vermeille,
+        <lb/>- Eſperant que dans peu de jours,
+        <lb/>Le traficq reprendra ſon cours,
+        <lb/>Il ne peut demeurer en place;
+        <lb/>A. midy il court à la place,
+        <lb/>pour ſçavoir ce que vaut l’atgent,
+        <lb/>A Lyon, &amp; combien pour cent,
+        <lb/> voit du monde en ſa bourique,
+        <lb/>Il ne veut plus revoir ſa pique;,
+        <lb/>Aymant mieux vn combien cela,
+        <lb/>Que le mot de demeure laà,
+        <lb/> L’argent qui chez ſoy ſe remes,
+        <lb/>peu à peu raſſeure ſa veuë, <pb n="11"/>
+        <lb/>11
+        <lb/>S’il viſite ſon Magazin,
+        <lb/> Il prend le petit doit de vin,
+        <lb/>S’il vient vne lettre dechange,
+        <lb/> l’accepte &amp; paye le change,
+        <lb/>Ainſi ſans remiſe &amp; protez,
+        <lb/> Il abrege vn mauvais procez,
+        <lb/>Son ſeruiteur reprend ſa force,
+        <lb/>La vieille ſeruante sefforce,
+        <lb/>De faire quelque bon ragouſt,
+        <lb/>pour faire reuenir ſon gouſt:
+        <lb/>Il eſt tout change de viſage;
+        <lb/>Il cauſe avec le Voyfinage,
+        <lb/>De guerre il ne s’en parle plus,
+        <lb/>Aymant mieux quelque bon rebus
+        <lb/>De picardie ou de champagne,
+        <lb/>Su veut ales ̀ la campaene,
+        <lb/>pour y voir ſon petit logis,
+        <lb/>Il n’eſt plus comme la ſouris,
+        <lb/>Qui ne ſort jamais ſans la crainte,
+        <lb/>DP’avoir quelque mauvaiſe aeinue,
+        <lb/>Sa femme &amp; luy s’entretenant;
+        <lb/>ODieux!quel ſoudain tcaangement,
+        <lb/>L’on doit bien benir l jponte,
+        <lb/>Que la paix a eſté ſſgné.
+        <lb/>.
+        <lb/>.
+        <lb/>13.
+        <lb/>¬
+        <lb/> l
+        <lb/> .. 1.
+        <lb/>¬
+        <lb/>n
+        <lb/>1 <pb n="12"/>
+        <lb/>12
+        <lb/> e
+        <lb/>e- sjeet-q-géa3
+        <lb/> e ee e tee ee e
+        <lb/>LE
+        <lb/>LABOVREVR
+        <lb/>1 M
+        <lb/>ON voit le pauvre laboureur,
+        <lb/> outré d’vne iuſte douleur,
+        <lb/>Les yeux creux, le viſage bleme,
+        <lb/>penſif, reſvaſſer en ſoy-meſme,
+        <lb/>Auquel il pouroit adreſe,
+        <lb/>ponr ayder à le redreſſer,
+        <lb/>Mais quoy i n’a plu que l’écoree,
+        <lb/>Sa voix n’a pas aſſez de force,
+        <lb/>pour faire entendre la douleur,
+        <lb/>Qui luy ſerre &amp; preſſe le cœur,
+        <lb/>La paix quelque peu le conſole,
+        <lb/>Ses bleds qui ſont en bonne ſole,
+        <lb/>Et de faç̧on d’eſtre meilleurs,
+        <lb/>Qu’aux térres qu’il laboure ailleun
+        <lb/>Il a recours à ſon bon Maiſtre,
+        <lb/>Chez lequel il n’ozoit paraiſtre,
+        <lb/>pour vne debte du paſſé,
+        <lb/>Dont il l’avoit fort menaſſé;
+        <lb/>Qui luy donne bonne eſperance,
+        <lb/>Luy remonſtre la conſequence,
+        <lb/>De ne pas quitter ſon Travail.,
+        <lb/>Sa ferme &amp; tout ſon attirail,
+        <lb/>pour lors <pb n="13"/>
+        <lb/>13
+        <lb/>Pour lors reduit aà peede choſe,
+        <lb/>Lors vn petit vermeil-de roſe,.1¬
+        <lb/>S’entremeſle avec ſa couleur,i:
+        <lb/>.
+        <lb/>Tout reſſemblant à la lueur.11
+        <lb/>D’urore qui commence à poindre,
+        <lb/>Il choiſt de deux maux le ioindre,
+        <lb/>Et ſans attendre au lendemain,
+        <lb/>Il reprend la charuë en main,u
+        <lb/> Il prend courage il s’évertuë,l.l
+        <lb/>Sa femme à̀ travailler ſe tuë,
+        <lb/>Et avec eux tous leurs onfans,
+        <lb/>1.
+        <lb/>pendant les ’eſprits &amp; leur ſens,
+        <lb/>Doucement reprennent la place,
+        <lb/>Qu’ils auoient auant leurs diſgraces
+        <lb/> Et voyant la belle ſaiſon,
+        <lb/>Repeuplent vn peu la maiſon,
+        <lb/>De pigeons &amp; d’autres volaillesi;
+        <lb/>Ils acheptent quelques auomailes,
+        <lb/>pour refaire vn nouueamroupeuu,
+        <lb/>D’autres Vaches &amp; vn Tdrréau,
+        <lb/>Car la forme eſtoit dénuée,
+        <lb/>Ainſi qu’on voir vne nuée,
+        <lb/>Qui a verſe toute ſon eau,
+        <lb/>n peu de graiſſe ſur la pau u;
+        <lb/>lLuy paroiſt plus qu’a l’ordinaire:
+        <lb/>C’eſt lors qu’il comméce aàſe plaire
+        <lb/>Au travail comme auparavant,
+        <lb/>Que le matin en ſe leant,!
+        <lb/>Il adreſe à Dieu ſa priere,
+        <lb/>Sil at pus de ſi miſere,
+        <lb/> Beniſſant ſon petit labeur,
+        <lb/>Le delivrant de la fiayeur
+        <lb/>D
+        <lb/>i 1
+        <lb/>.
+        <lb/>3
+        <lb/>.L1
+        <lb/>,
+        <lb/>1:1
+        <lb/>;’¬¬ <pb n="14"/>
+        <lb/>14
+        <lb/>Qui ne peut quitter ſa penſoe,
+        <lb/>L’horreur de la guerre paſſee;
+        <lb/>Il ſupplie ſa prouidence,
+        <lb/>Sa grace la pcrſeuerance,
+        <lb/>De reſiſter à tant de maux,.,
+        <lb/>Tant de peines, tant de travaux,
+        <lb/>Dont la creature eſt ſuivie,
+        <lb/>En attendant vne autre vie,
+        <lb/>puis, il ſe leve bruſquement,
+        <lb/>pour paroiſtre plus promptement,
+        <lb/>A tous ſes gens &amp; ſa prelence,
+        <lb/>Les exorte à la diligence,
+        <lb/>Le chartier penſe les cheuaux,
+        <lb/>Les autres voyent leurs troupeax,
+        <lb/>Ainſi chacun pour luy complaire,
+        <lb/>S’entremet à ce qu’il doit faire,
+        <lb/>Iuſques au temps du des jeûner,
+        <lb/>De ce que Dieu lear veut donner:
+        <lb/>pour cela perſonne ne grogne,
+        <lb/>C’eſt le plus doux de la beſogne,
+        <lb/>Vn peu apres aſſez ſoudain,
+        <lb/>Il prend ſa baguette à la main,
+        <lb/>Faiſant vne forme de ronde,
+        <lb/>pour voir travailler tout ſon monde,
+        <lb/>Il voit ſes bleds tout à lentour,
+        <lb/>Qu’il trouue beau de iour en iour;
+        <lb/>Laize luy faire dire en ſoy- meſnmie,
+        <lb/>Voyons ſi l’auoyne eſt de meſme;
+        <lb/>Il paſſe ainſi tout le matin,
+        <lb/>Iuſques à l’heure du feſtin,
+        <lb/>Compoſ d’vn fort grand potage,
+        <lb/>D’vn peu de lart &amp; d’vn fromage; <pb n="15"/>
+        <lb/>15
+        <lb/>Et quand cela eſt en ſo’lieu,
+        <lb/>Faut dire grace &amp; puis adieu;
+        <lb/>En mengant perſonne ne raille,
+        <lb/>Car ceux qui demande la raiſle,
+        <lb/>Sout à̀ la porte en atedant,
+        <lb/>Avec eux vn rouge Sergent.
+        <lb/>Qui en entrant prend la vaiſſelle,
+        <lb/>Quil guarre deſſous ſon aiſſelle:
+        <lb/>La nappe eſt priſe par les autres,
+        <lb/>Qui en demandent encor d’autres
+        <lb/>Ou qu’on prendra le maiſtre au corps;
+        <lb/>Cependant vn maiſtre Recors
+        <lb/>Voyant vn manteau pres la porte,
+        <lb/>Le met ſur ſon dos &amp; l’ecmporte.
+        <lb/> y -, &amp;
+        <lb/>Ae e iFi
+        <lb/>o’oe t eteua&amp;peeae pe
+        <lb/> T 7 D
+        <lb/>MESSIEVRS
+        <lb/>DE
+        <lb/>D T E
+        <lb/>D R1
+        <lb/>5 r¬
+        <lb/>RI
+        <lb/>E . L L I I.
+        <lb/> AIS voicy vn autre Sergent,
+        <lb/> De par Mefieurs de Parſement,
+        <lb/> Qui fait commandement de rendre,
+        <lb/>Tout cela que l’on vient de prendre,
+        <lb/>En vertu d’vn fort bon Arreſt,
+        <lb/>Qui defend l’vſage du preſt, <pb n="16"/>
+        <lb/>I6
+        <lb/>Le quart de diminution,
+        <lb/>Porte par Declaration,
+        <lb/>Ce qui fut fait à l’heure meſme
+        <lb/>Le partizan en deuint bleſme,
+        <lb/>Ou ſon commis que ie ne mente,
+        <lb/>Sur lequel on fait la decente,
+        <lb/>De quinze ou vingt coups de baſtons,
+        <lb/>Qui luy font touner les talons,
+        <lb/>A lors le bon-homme rerourne,
+        <lb/>priant le Sergent qu’il s’éjoune;.
+        <lb/>Qu’il luy veut faire vn bon repas,
+        <lb/>Et le contenter de ſes pas,
+        <lb/>Luy doucement le remere,
+        <lb/>Qu’il faut que l’Arreſt il publie,
+        <lb/>promptement &amp; en diters lieux,
+        <lb/>pour faire rendre grace aux Dieux,
+        <lb/>Qui aſſeurent toute la France,
+        <lb/>Que deſormais la violence,
+        <lb/>Des nouueautez &amp; les abus,
+        <lb/>1.
+        <lb/>par eux ne ſe ſouffciront plus,
+        <lb/>Quoy que la Cour en face inſtance,
+        <lb/>Bien armé́e de perſeuerance,
+        <lb/>Contre Prince ou Grand quiſoit-il,
+        <lb/>Le Fermier dit, ainſi ſoit il.
+        <lb/>Le Deſiee <pb n="17"/>
+        <lb/>17
+        <lb/>ete
+        <lb/>Ae e e ee es s ae s ¬
+        <lb/>régera e
+        <lb/>es eeee
+        <lb/>T ¬
+        <lb/>LD E
+        <lb/>LE
+        <lb/>r T
+        <lb/> I L
+        <lb/>DES
+        <lb/>VILLES
+        <lb/>T o1ey le delice des villes
+        <lb/>Vaeoeaii eleiaeeei
+        <lb/>len ſer ienrenſre
+        <lb/>leſie e le rene enie
+        <lb/>plaideurs dnnt la mulitode,
+        <lb/>paeni e eu ienuneie
+        <lb/>T us rpnraionent leu
+        <lb/>le boneen
+        <lb/>eui e i ſer ere nueue
+        <lb/>e eiee ſe
+        <lb/>i eei ee.
+        <lb/>l’iaeſinl des
+        <lb/>nene n dne e reu
+        <lb/>li e e enie e a i
+        <lb/>Et ſes anes au rarell
+        <lb/>1 <pb n="18"/>
+        <lb/>Chaeun reuoit ces promenades,
+        <lb/>La comméde, les aubades,.
+        <lb/>Ont leur cours comme auparavat,
+        <lb/>¬.
+        <lb/>Les Roys &amp; careſme-prenant,
+        <lb/>La terre couuerte de londe,
+        <lb/>Cet hyuer eſtonnoit le monde,
+        <lb/>Vne fſte qu’il face beau,
+        <lb/>Paris déborde comme l’eau,
+        <lb/>La tetre ſe troue cpuuerte,1
+        <lb/>De gens aſſis ſur l’herbe verte,
+        <lb/>Et d autres qui roullent le bois,
+        <lb/>pour boire la petite fois,
+        <lb/>L’on voit les peres de familles,
+        <lb/>Auec lers femnmes &amp; leurs filles,¬
+        <lb/>prendre le diuertiſſemant,
+        <lb/>Doucement en ſe pounmenant,
+        <lb/>Ceux quiont des maisõs prochaines,
+        <lb/>Y courent aà perte d’halaines,
+        <lb/>Tant ils ſont deſireumx devoir,
+        <lb/>Si leurs gens ont fait le devoir:
+        <lb/>Arrivez qu’ils ſont l’vn devore,
+        <lb/>Quelque arbre qui boutonneencore,
+        <lb/>L’autre s’encourt droit au fruitier,
+        <lb/>Au par-terre ou au potager,
+        <lb/>perſonne en ce lieu n’eſt malade,
+        <lb/>Le valet cueille la Salade,
+        <lb/>La ſeruante apporte le vin,
+        <lb/>Le paſté, le frait &amp; le pain,
+        <lb/>pour lors vn chacun ſe raſſemble,
+        <lb/>L’on demande que vous enſemble,
+        <lb/>Le jardinier n’eſt pas ſoigneux,
+        <lb/>Vne autre fois il fera mieux, <pb n="19"/>
+        <lb/>9
+        <lb/>Le ſeruiteur &amp; la maiſtreſſe,
+        <lb/>S’ils ont vne égale tendreſfe;!
+        <lb/>.:3
+        <lb/>7
+        <lb/>n i
+        <lb/>Souhaiteroyent qu’vn ſi beauiour,
+        <lb/>e ſi qi anre ieau neonr er ai l e e1
+        <lb/>Mais voicy la nuit qui s’aproche,
+        <lb/>Qu’avec regret l’on ſe raproche,
+        <lb/>achez d’avoir ſi peu de temps,
+        <lb/>A gouter le bon air des champs,
+        <lb/>O d’it-on la belle iournée,
+        <lb/>Du matin &amp; d’apres diſnée,
+        <lb/>O campagne d’heureux ſejour,.
+        <lb/>pourquoy fi- toſt finir le jour,
+        <lb/>Pee ie e n l ledldiſls e r le l n
+        <lb/>Hé bien ſouperons aous enſemble,
+        <lb/>lIoignons tout ce que nous avons,
+        <lb/>Et ce ſoir nous réjouyſſons,
+        <lb/>Chacun ayant veu ſa cuyfine;
+        <lb/>I’ay vn Gigot de bonne mine,
+        <lb/>Et moy vne longe de veau,
+        <lb/>Et quelqu’autre bon alloyau,
+        <lb/>Celuy qui n’a que du potage,
+        <lb/>Aportera fruit &amp; fromage,
+        <lb/>Des oranges, &amp; pour le vin,
+        <lb/>Chacun porte le pot à frin;
+        <lb/>Là l’on boit &amp; miange à ſa guiſe,
+        <lb/>La grimaſe ny la feintiſe,
+        <lb/>Les querelles &amp; les excez,
+        <lb/>En ces lieux perdent leurs procez,
+        <lb/>Sur la fin la paix ſe preſente,
+        <lb/>comme vne Déeſſe contente,
+        <lb/>Davoir chaſsé tant de mal-heurs,
+        <lb/>pour introduire ſes douceurs, <pb n="20"/>
+        <lb/>O paix que és agreable.
+        <lb/>que on fruie eſt deletable;.
+        <lb/>Deu eniſe pour v , jaaais,.
+        <lb/>L’autheur d’vue i boane paiuz
+        <lb/>
+        <lb/>s faune ipriuer lus Vere, iaoitalee, les
+        <lb/>Delices de la pass e. Fauit ee nui C,
+        <lb/> Signé, dAV bRAY.
+        <lb/>vo </p>
+    </body>
+  </text>
 </TEI>

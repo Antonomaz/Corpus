@@ -1,1222 +1,637 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xml:id="Moreau2482_MAZ" xmlns="http://www.tei-c.org/ns/1.0">
- <teiHeader>
-  <fileDesc>
-   <titleStmt>
-    <title source="Moreau" type="main">
-     Le Mirouer de la reine lui représentant tous les
-          désordres de sa régence et lui donnant d'infaillibles moyens de les réparer.
-    </title>
-    <title type="sub">
-     Édition Antonomaz
-    </title>
-    <respStmt>
-     <resp>
-      Chaîne de traitement
-     </resp>
-     <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">
-      Abiven Karine
-     </persName>
-     <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">
-      Lejeune Gaël
-     </persName>
-     <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">
-      Tanguy
-            Jean-Baptiste
-     </persName>
-     <persName ref="orcid:0000-0003-0850-8266" role="engineer">
-      Bartz Alexandre
-     </persName>
-    </respStmt>
-   </titleStmt>
-   <publicationStmt>
-    <publisher>
-     Projet ANTONOMAZ / Sorbonne Université
-    </publisher>
-    <ref target="https://github.com/Antonomaz"/>
-    <date type="file_creation" when="2022-03-02">
-     2 mars 2022
-    </date>
-    <availability n="cc-by" status="restricted">
-     <licence target="https://creativecommons.org/licenses/by/4.0"/>
-    </availability>
-   </publicationStmt>
-   <sourceDesc>
-    <bibl>
-     <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14935"/>
-     <author ref="isni:0000000122780448" role="dubious_author" source="Mazarine">
-      <persName>
-       <forename>
-        François Eudes de
-       </forename>
-       <surname>
-        Mézeray
-       </surname>
-      </persName>
-     </author>
-     <author ref="isni:0000000108378014">
-      <persName>
-       <addName type="pseudonyme">
-        Sieur de Sandricourt
-       </addName>
-      </persName>
-     </author>
-     <title source="Mazarine">
-      Le miroüer de la Reyne. Luy representant tous les desordres de sa
-            regence. Et luy donnant d'infaillibles moyens pour les reparer.
-     </title>
-     <pubPlace ref="geonames:2988507" source="Mazarine">
-      Paris
-     </pubPlace>
-     <publisher ref="isni:0000000385986464" xml:id="IL_ChevalierJacob.xml">
-      <persName>
-       <forename>
-        Jacob
-       </forename>
-       <surname>
-        Chevalier
-       </surname>
-      </persName>
-     </publisher>
-     <date source="Mazarine" when="1652">
-      1652
-     </date>
-     <date notAfter="1652-05-21" notBefore="1652-05-14" source="Carrier">
-      troisième semaine de
-            mai 1652
-     </date>
-     <extent>
-      <measure quantity="16" unit="page"/>
-     </extent>
-     <note type="format">
-      in-4
-     </note>
-     <relatedItem cert="high" source="Mazarine" subtype="BM49112" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49112" type="identifier"/>
-    </bibl>
-    <msDesc>
-     <msIdentifier>
-      <settlement ref="geonames:2988507">
-       Paris
-      </settlement>
-      <institution>
-       Bibliothèque Mazarine
-      </institution>
-      <repository/>
-      <idno type="cote">
-       M13511
-      </idno>
-     </msIdentifier>
-     <history>
-      <provenance>
-       <stamp>
-        True
-       </stamp>
-      </provenance>
-     </history>
-    </msDesc>
-   </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-   <projectDesc>
-    <p>
-     Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2482_MAZ">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Mirouer (le) de la reine lui représentant tous les
+          désordres de sa régence et lui donnant d'infaillibles moyens de les réparer.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+            Jean-Baptiste</persName>
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz"/>
+        <date type="file_creation" when="2022-03-02">2 mars 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14935"/>
+          <author ref="isni:0000000122780448" source="Mazarine" role="dubious_author">
+            <persName>
+              <forename>François Eudes de</forename>
+              <surname>Mézeray</surname>
+            </persName>
+          </author>
+          <author ref="isni:0000000108378014">
+            <persName>
+              <addName type="pseudonyme">Sieur de Sandricourt</addName>
+            </persName>
+          </author>
+          <title source="Mazarine">Le miroüer de la Reyne. Luy representant tous les desordres de sa
+            regence. Et luy donnant d'infaillibles moyens pour les reparer.</title>
+          <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
+          <publisher ref="isni:0000000385986464" xml:id="IL_ChevalierJacob.xml">
+            <persName>
+              <forename>Jacob</forename>
+              <surname>Chevalier</surname>
+            </persName>
+          </publisher>
+          <date source="Mazarine" when="1652">1652</date>
+          <date source="Carrier" notBefore="1652-05-14" notAfter="1652-05-21">troisième semaine de
+            mai 1652</date>
+          <extent>
+            <measure unit="page" quantity="16"/>
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49112" cert="high"
+            target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49112"/>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2988507">Paris</settlement>
+            <institution>Bibliothèque Mazarine</institution>
+            <repository/>
+            <idno type="cote">M13511</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
-          auteur oublié.
-    </p>
-    <p>
-     Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
-          bibliothèques numériques publiques et de Google livres.
-    </p>
-    <p>
-     L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.
-    </p>
-   </projectDesc>
-   <editorialDecl>
-    <p/>
-   </editorialDecl>
-  </encodingDesc>
-  <profileDesc>
-   <langUsage>
-    <language ident="fra">
-     Document en français
-    </language>
-   </langUsage>
-   <abstract>
-    <p source="Mazarine">
-     Texte paru la 3e semaine de mai 1652 d'après Hubert Carrier
-          (Bibliothèque Mazarine, Ms 4682-4, f. 62v).
-    </p>
-    <p source="Moreau">
-     2482. Mirouer (le) de la reine lui représentant tous les désordres de sa
+          auteur oublié.</p>
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+          bibliothèques numériques publiques et de Google livres.</p>
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p/>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine">Texte paru la 3e semaine de mai 1652 d'après Hubert Carrier
+          (Bibliothèque Mazarine, Ms 4682-4, f. 62v). </p>
+        <p source="Moreau">2482. Mirouer (le) de la reine lui représentant tous les désordres de sa
           régence et lui donnant d'infaillibles moyens de les réparer. Paris, Jacob Chevalier, 1652,
           16 pages. « Je n'ai pas peur que vous m'en envoyez un (évêché, il y en avait cinq vacants)
           pour avoir dit la vérité. Ce seroit pourtant une action de justice, que le Mazarin n'a
           garde de faire. » Est ce une plaisanterie ? Les infaillibles moyens ont été réservés pour
-          une autre pièce qui n'a peut-être pas été publiée, qu'en tout cas je n'ai pas vue.
-    </p>
-   </abstract>
-   <textClass>
-    <keywords>
-     <term type="form">
-      prose
-     </term>
-     <term subtype="no" type="handwritten_note"/>
-     <term subtype="no" type="table_of_content"/>
-     <term subtype="no" type="illustration"/>
-     <term type="subject">
-      Régence
-     </term>
-    </keywords>
-   </textClass>
-  </profileDesc>
-  <revisionDesc>
-   <change status="corrected" when="2022-03-16" who="AB"/>
-  </revisionDesc>
- </teiHeader>
- <text>
-  <body>
-   <p>
-    <pb n="9"/>
-    <lb/>
-    LE
-    <lb/>
-    MIROVER
-    <lb/>
-    DE LA REYNE.
-    <lb/>
-    Luy repreſentant tous les deſordres
-    <lb/>
-    de ſa Regence.
-    <lb/>
-    ET LUY DONNANT D'INFAILLIBLES
-    <lb/>
-    moyens pour les reparer.
-    <figure type="decoration"/>
-    <lb/>
-    A PARIS,
-    <lb/>
-    Chez IACOB CHEVALIER, prés Sainct Iean
-    <lb/>
-    de Latran.
-    <lb/>
-    M. DC. LII.
-    <pb n="10"/>
-    <pb n="11"/>
-    <lb/>
-    3
-    <lb/>
-    LE
-    <lb/>
-    MIROVER
-    <lb/>
-    DE LA REYNE,
-    <lb/>
-    Luy repreſentant tous les deſordres de
-    <lb/>
-    ſa Regence.
-    <lb/>
-    ET LV DONNNT D’INFAILLIBLES
-    <lb/>
-    noens pour les reparer.
-    <lb/>
-    MADAME.
-    <lb/>
-    Il faudroit n’eſtre point Franç̧ols pour voir la deſo¬
-    <lb/>
-    aion generale de la pauureFrance ſans eſtre touché
-    <lb/>
-    vme iuſte compaſſion à la veue de ſes miſeres, l’eſtat
-    <lb/>
-    deplorable où nous la voyons reduitte ne nous re¬
-    <lb/>
-    garde que trop pour n’ette ny indifferents ny inſen¬
-    <lb/>
-    bles a’es ſoûffrances qui nous ſont communes, &amp;
-    <lb/>
-    puis que nous ſommes nez Fraçois, c’eſt à dire mſe¬
-    <lb/>
-    ablesl faur que noſtte propre malheur, &amp; la Ruine
-    <lb/>
-    de noſtre chere patrie nous faſſent du moins ietter
-    <lb/>
-    des larmes &amp; former des plaintes contre tous ceux
-    <lb/>
-    -qui ſeront cauſe de noſtre mal: elles ne ſeront que
-    <lb/>
-    urop legiimes, quelque relpet que demande de
-    <lb/>
-    o, les ſouueraihes puiſſances qui diſpoſent ſi ab¬
-    <lb/>
-    ſolment du deſtin des hommes qu’ils font d’autant
-    <lb/>
-    plu rigoreux; qu’ils peuaent le rendre imeilleur &amp;
-    <lb/>
-    A ij
-    <pb n="12"/>
-    <lb/>
-    !
-    <lb/>
-    .
-    <lb/>
-    4,
-    <lb/>
-    plus fauorable.
-    <lb/>
-    1
-    <lb/>
-    ll n’eſt ien de ſi naturel que de ſe plaindre dans
-    <lb/>
-    o afilidon, c’eſ va ſipne que la ante a impran
-    <lb/>
-    tt oueeraurye lpble qu pepreſepte d
-    <lb/>
-    lplon le e fomj, put le nFot
-    <lb/>
-    etanmars la volenee q’ dee del gen dt mero
-    <lb/>
-    delareo poPprepoge ſt n peſlenqnment que
-    <lb/>
-    Deu ménle ’ne ’eonb ihe peis dls la plusti ou¬
-    <lb/>
-    reue’ iſlco e dont lem far capahlea dans l’eee¬
-    <lb/>
-    de les aſſcton ſas, oqutefois qu’il renqaſt enrlen
-    <lb/>
-    Seu Qu preparoit des çouropes d oute ſe, ſloe
-    <lb/>
-    rTV S
-    <lb/>
-    ¬ 2
-    <lb/>
-    Que ſie reſſentimentprops n’e tpnnt contraire à
-    <lb/>
-    la loy Dulne qui eaceconnode al la foibleſile hunai
-    <lb/>
-    ne encor qu’el le luy ſoit ſi fort Supte e a ſſ¬
-    <lb/>
-    plte qus lon temoione des miſerejgnerledlſn
-    <lb/>
-    Peuple afflgé qui ſemble eſtre enct elqueicuib¬
-    <lb/>
-    ſe de plus que ce qui quy toueheen partieul,
-    <lb/>
-    eſt ſans dorte auſi queſqe eloſe d plus légrie
-    <lb/>
-    &amp; de plus raiſonnable, meſme vne ſadblimne vCrtſ
-    <lb/>
-    elle eſt miſe en vſage par vn prinipe de charite a
-    <lb/>
-    Jenmdroit du prrhai qui fouſfre, &amp; qpi nou oblige
-    <lb/>
-    de compar à ſa ſouiffiace, aini le Prophere leſe,
-    <lb/>
-    e deplore ls ma qui deuoient ariuer auPeu
-    <lb/>
-    ple de Dieu vuou qu ls fuſeut n iuiſte ch ,
-    <lb/>
-    ment de leur incre dulité.
-    <lb/>
-    5, l ne ſeit de ien doppoſer ier que eeſt lſl4
-    <lb/>
-    l’auloi e que de ’eu plaindre, &amp;uſu on doirſ
-    <lb/>
-    portet Piment tout cé que fqnt le;ſoquuepaias
-    <lb/>
-    lans rien dire de peur, deſtre ctiminol d’eſtat &amp;
-    <lb/>
-    lupplieahle -auſſi ioſt pait les ldux, qui, de ſfe nént
-    <lb/>
-    oua c monuements quls opae, eſroó
-    <lb/>
-    &amp; editi-p à atr s faux ereſhets qi e, loiu
-    <lb/>
-    t¬
-    <lb/>
-    deuhbs. ua Nabclodonſot uile vouloir, aie
-    <lb/>
-    acomme y Diau,&amp; fispaſep, uaſaus
-    <lb/>
-    ſés
-    <lb/>
-    ,
-    <pb n="13"/>
-    <lb/>
-    es mechaucetez por legitlmes; oſte edt abus in¬
-    <lb/>
-    ſupportable de latterie qui fait des Tyrans, &amp; qui
-    <lb/>
-    ruine ien pls infailliblement cette authorité de la¬
-    <lb/>
-    quelle ls ſont ſi ialoux; il en eſt de cete autorite com¬
-    <lb/>
-    e de bombre qui ſuit le corps qui la produit, &amp; qui
-    <lb/>
-    le fuit rout auſſi toſt qu’il ſe met à la pourſuiure,
-    <lb/>
-    fuyes cette vanité &amp; dire comme le ſage Salomon
-    <lb/>
-    donnez moy Seigncur vn cœur plein de iuſtice pour
-    <lb/>
-    ien conduire le Peuple que vous m’auez ſoumis.
-    <lb/>
-    Ne ſç̧ait on pas que Dieu a toûjours eſcouté les
-    <lb/>
-    plaintes des Péuples à l’extremité. Il tira les Iſtaeli¬
-    <lb/>
-    es de captiuité parce que Pharaon les auoit faie
-    <lb/>
-    eſelaues, &amp; les traitoit auec trop de rigueur, il per¬
-    <lb/>
-    mit la diuiſion de leur Monarchie pour la trop gran¬
-    <lb/>
-    de tyrannie de Roboam qui les accabloit, mais ſans
-    <lb/>
-    rapporter icy les changemens d’eſtat dont les Hiſ¬
-    <lb/>
-    toires ſont pleines pour preuue de ce droit naturel;
-    <lb/>
-    ſut de dire qu’il eſt inouy que l’on ait voula
-    <lb/>
-    ermer la bouche aux affligez, &amp; qu’on ayt voulu fai
-    <lb/>
-    re vn crime de deſobeiſſance de’ leurs iuſtes plain!
-    <lb/>
-    tes.
-    <lb/>
-    La preuue de cette juſtice qui ſe lit dans tous les
-    <lb/>
-    temps ſans interrption, ſe treuue encor en nos
-    <lb/>
-    ermers ſiecles, qui a’ont pas manque de ſujets de
-    <lb/>
-    plaintes, qui ſe ſont fait entendt́e aux Souuerains
-    <lb/>
-    ans les oppreſſions où̀ leurs ſujets ſe ſontveus ſi ſou¬
-    <lb/>
-    uent par les mauuais conſeils des Miniſtres, &amp; prin¬
-    <lb/>
-    cipalement des Etranges: car ſans aller cherhe
-    <lb/>
-    ains la premiere race de nos Roys des Saincts Ger¬
-    <lb/>
-    nains, des Saincs Leger j ou le bon Atcheueſque de
-    <lb/>
-    ouën nommeé Prerextat, qui repreſenta ſi bien à̀ la
-    <lb/>
-    eine Fredegonde tous les deſordres dont elle eſtoit
-    <lb/>
-    là̀ cauſe, &amp; qui enfin fut ſacrifé à ſa vangeance, ans
-    <lb/>
-    rapportericy les Cardinaux d’Amiboiſe, &amp; de Sour¬
-    <lb/>
-    ron; qui ont dit touſiours leurs ſontimens auee vne
-    <lb/>
-    lihberté ſi ſincere &amp; deſ-intereſſée, &amp; ont fait enten
-    <lb/>
-    B
-    <lb/>
-    i
-    <pb n="14"/>
-    <lb/>
-    1
-    <lb/>
-    1
-    <lb/>
-    dre les plaintes du peuple à̀ leur Souuerain, ie ne eon
-    <lb/>
-    tenreray de marquer icy la repreſentation des deſor..
-    <lb/>
-    dres qui furent faits dans le pays d’Auns, ſous la Re¬
-    <lb/>
-    gence de Catherine de Medicis, im mediartement
-    <lb/>
-    apres la mort de Charles I X elle eſcouta fauorable.
-    <lb/>
-    ment les plaintes de ces bonnes gens ruynez, quoy
-    <lb/>
-    qu’ils fuſſent de la Religion, &amp; pour les recompenſer
-    <lb/>
-    de leurs pertes, elle leur accorda douze cent mille
-    <lb/>
-    eſcus; ie veux que cela ſe fit par maxime d’eſtae
-    <lb/>
-    pour les retenir dans le deuoir, pendant l’abſence du
-    <lb/>
-    Roy qui retournoit de Pologne, mais du moins ne
-    <lb/>
-    crût. elle en rien diminuer de l’authorité, d’eſcouter
-    <lb/>
-    des ſujers qui ſe plaignoient auec aſſez de raiſon, &amp;
-    <lb/>
-    de leur faire quelque ſorte de Iuſtice en leur accor¬
-    <lb/>
-    dant quelque grace, afin de ſoulager leurs miſeres.
-    <lb/>
-    Sous la Regence de Marie de Medcis qui a prece¬
-    <lb/>
-    dé la voſtre, le Fauory tyran qui s’eſtoir rendu mai.
-    <lb/>
-    ſtre de l’authorité, ruyna la pluſpart des familles.
-    <lb/>
-    d’Amiens, en abbatant &amp; bruſlant les maiſons de plu.
-    <lb/>
-    ſieurs particuliers de cette ville, ſans leur faire aucun
-    <lb/>
-    remplacement de leur perte, &amp; meſme les chaſſant
-    <lb/>
-    de la auec violence &amp; par mocquerie, il ne pûr pour.
-    <lb/>
-    tant empeſcher qu’ils ne fiſſent leurs plaintes haute¬.
-    <lb/>
-    ment, &amp; qu’il ne leur reſtaſt encor cette derniere li.¬
-    <lb/>
-    berte de gemir dans leur plus grande oppreſſion qut
-    <lb/>
-    ſe fit reſſenur é́galement dans la Picardie &amp; dans la
-    <lb/>
-    Champagne, &amp; particulierement es enuirons de Soiſ¬
-    <lb/>
-    ſons, ou la deſolation fut horrble &amp; déplorable.
-    <lb/>
-    C’eſt donc vn dro:ct, MADAME, qui ne ſe
-    <lb/>
-    peut oſter aux affligez de ſe plaindre pour route con.
-    <lb/>
-    ſolarion de leurs mileres, mais ce que ie voy de plus
-    <lb/>
-    pitoyable en leurs lamentations, c’eſt, helas qu’elles
-    <lb/>
-    ſont vaines &amp; inutiles le plus ſouuent, &amp; que les cris
-    <lb/>
-    &amp; les gemiſfemens inoxplicables qu’ils pouſſent vers
-    <lb/>
-    les Cieux n’arriuent que trop rarenent aux oreilles
-    <pb n="15"/>
-    <lb/>
-    7
-    <lb/>
-    des puiſſances, elles ſont toutes remplies de flate.
-    <lb/>
-    ries, il n’y reſte plus de place aux plaintes des miſera.¬
-    <lb/>
-    bles, &amp; quand elles y pourroient eſtre receuës, on
-    <lb/>
-    empeſche par tous moyens qu’elles n’en approchent
-    <lb/>
-    ſelon la damnable politique de ceux qui les obſe¬
-    <lb/>
-    dent, &amp; cependant pour comble de tyrannie &amp; d’op¬
-    <lb/>
-    preſſion, ces mauuais Miniſtres taſchent d’étouffer
-    <lb/>
-    les plaintes par des menaces dont ils épouuante nt
-    <lb/>
-    des mal. heureux effrayez encor des premieres at¬
-    <lb/>
-    teintes qu’ils viennent de reſſentir.
-    <lb/>
-    Cependant, MADAME, vous ignorez ces
-    <lb/>
-    deſordres qui rejllſſenr ſur voſtre conduitte, &amp;
-    <lb/>
-    rempliſſent de mlle taches Voſtre Majeſté, qui ne
-    <lb/>
-    les remarque peut-eſtre pas, faute d’vn Mroir qui
-    <lb/>
-    vous repreſente telle que vous eſtes, ſans qu’il deé́gui¬
-    <lb/>
-    ſe er rien la face de voſtre gouuernemenr.
-    <lb/>
-    Dans la creance que i’ay que ce Miroir vous ſeruir
-    <lb/>
-    de quelque choſe malgré́ tout le fard dont la Cour
-    <lb/>
-    veut couurir ces defauts; Vous les pourrez voir,
-    <lb/>
-    MADA ME, a découuert, &amp; vous chercherez peut¬
-    <lb/>
-    eſtre des remedes conuenables pour les effacer, ou.
-    <lb/>
-    du moins pour leur oſter vne partie de leur deformi¬
-    <lb/>
-    teé, en leur oppoſant l’eéclat de quelques Vertus he¬
-    <lb/>
-    roiques dont la practique n’eſt iamais trop tard em¬
-    <lb/>
-    braſſée. Du moins, MAD AME, vous vous y vẽrrez
-    <lb/>
-    auec toutes ces laideurs que vous pourrez deétruire
-    <lb/>
-    en les faiſant ceſſer, ie veux dire en faſant vn noblc
-    <lb/>
-    effort qui rende la France paiſible, ce doit eſtre-là, la
-    <lb/>
-    fin de voſtre regne, ſi vous auez enuie d’en lortit
-    <lb/>
-    auec honneur, &amp; auec ce brillant éclat qui e fface t ou¬
-    <lb/>
-    tes ces obſeuritez affreuſes qui nous empeſchent de
-    <lb/>
-    voir ce qui eſt de plus beau dans la conduite d’vne
-    <lb/>
-    puiſſante &amp; glorieuſe Reyne. Enfi, MADAME,
-    <lb/>
-    vous y verres ce que vou ne pouuez peut. eſtre en¬
-    <lb/>
-    tendre, n’y ayant perſonne aupres de vous aſiez zeleé
-    <pb n="16"/>
-    <lb/>
-    <lb/>
-    &amp; deſ iarereſſé poeaf vous le dire, &amp;vous auréco
-    <lb/>
-    jours cet auantage de vousy eſtre veu toute tells
-    <lb/>
-    que l’ſtoire vous reprefenrera vn iout, çe ſera à
-    <lb/>
-    vous de iuger ſi vous ne voulez point qu’on n’y
-    <lb/>
-    corrige rien, &amp; ſi le tout eſt iuſtement comme vous.
-    <lb/>
-    le deſirez.
-    <lb/>
-    Le diuin legiſlateur Moiſe auoit fait entourer de
-    <lb/>
-    niroirs le Tabernacle afin que tous ceux qui ve¬
-    <lb/>
-    noent preſenrer leurs vœux &amp; leurs prieres a Dieu
-    <lb/>
-    puſſent voir de quelle maniere &amp; en quelle poſture
-    <lb/>
-    ils paroiſſoient en preſence du Dieu des batailles,
-    <lb/>
-    en ſorte que tout le monde puſt du moins remar¬
-    <lb/>
-    quer en quel eſtat il ſe treuuoit pour lors, &amp; s’il
-    <lb/>
-    eſtoit purt en telle ſorte qu’il ne rêmarquaſt ſur ſoyl
-    <lb/>
-    aucune tache ou dans ſon maintien aucuné deſa¬
-    <lb/>
-    greable poſture.
-    <lb/>
-    L’hiſtoire eſt le tabernacle des grans, o vodus
-    <lb/>
-    pouuez, Madame, remarquer tousvos geſtés comptef¬
-    <lb/>
-    outes vos demarches &amp; reconnoiſtre ce qu’il y a e
-    <lb/>
-    beau ou de difforme en voſtre vie, &amp; ce miroir quel
-    <lb/>
-    ie vous preſente n’eſt que pour vous aiuſter ſi bien
-    <lb/>
-    que vous y paroiſſiez ſans re proche, &amp; que s’il y a
-    <lb/>
-    en vous quelques taches vous metriez peine les
-    <lb/>
-    reparer, ou les couurir par quelque agreable orne¬
-    <lb/>
-    ment de vertu, iettez les yex ſur cette glace qui né
-    <lb/>
-    flatte point &amp; vous y remarquerez d’abord, le mau¬
-    <lb/>
-    uais choix que vous fiſtes des le commencement de
-    <lb/>
-    voſtre Regence d’vn minſtre d’eſtat eſtranger à qui,
-    <lb/>
-    ous renmltes ’entier mamimene de l’eſtuat ſa pl!
-    <lb/>
-    grande ruine Vous luy fuiſtes d’albord ſi prodigue qe,
-    <lb/>
-    es faueurs qu’il n’y eut point de grandeuts dohtl
-    <lb/>
-    vous ne rempliſſiez ſon ambition, qu’il n’y eut point
-    <lb/>
-    Aae rcheſſes dont vous ne contencaſſie ſon àuarl¬
-    <lb/>
-    e, poiut de dediees dour ſa voluprei pe fuſtaſouuies,
-    <lb/>
-    ur d’abord eſleué eni vn rang ſupeneu adceluſ?
-    <pb n="17"/>
-    <lb/>
-    9
-    <lb/>
-    de tous les Princes du Sang, &amp; il n’yeut pas vn gtand
-    <lb/>
-    du Royaume qui ne ſe viſt ſoûmis aux volontez
-    <lb/>
-    de ćt Eſtranger auquel il falloit obeir ou vous dé¬
-    <lb/>
-    plaire quelque dépit qu’ils en conçeuſſent tous,
-    <lb/>
-    i n’y en eut pas vn qui ne flechit plûitoſt que d’en¬
-    <lb/>
-    ourir voſtre diſgrace, &amp; vous fiſtes en vninſtant vôtre
-    <lb/>
-    Mazarin le plus abſolu de tous les hommes pour ſoute¬
-    <lb/>
-    nir certe dignité; les treſors du deffunct Roy voſtrema¬
-    <lb/>
-    ry, ne fuirent pas ſuffiſans, non plus que les moyens qu’il
-    <lb/>
-    auoit laiſſez pour les entretenir, il fallut ſurcharger le
-    <lb/>
-    peuple de nouuelles impoſitions, &amp; luy cirer iuſqu’à la
-    <lb/>
-    la derniere goutte de ſes ſueurs &amp; de ſon ſang, dont il
-    <lb/>
-    ne luy reſtoit plus que des larmes qu’il eſtoit encore
-    <lb/>
-    contraint d’épancher à la veuë de ſes miſeres reduit à
-    <lb/>
-    cette extremité, il a fallu ſe ſeruir du fer &amp; du feu pour
-    <lb/>
-    obliger leurs veines languiſſantes à verſer encore quel¬
-    <lb/>
-    ques goutres qu’elles fſe conſeruoient pour leur propre
-    <lb/>
-    nourrture, il a fallu enuoyer par les Prouinces des im¬
-    <lb/>
-    pitoyables fuſiliers, dont les extorſions inoüyes n’ont
-    <lb/>
-    pas laiſſé dequoy fournir à l’entretien d’vne vie lan¬
-    <lb/>
-    guiſſante. Voila l’eſtat des pauures Prouinces ſous vô¬
-    <lb/>
-    tre Regence, dé́s-lors on jugea bien que la Monarchie
-    <lb/>
-    ſ fort afoibli e en tous ſes membres ne ſe pouuoit preſ¬
-    <lb/>
-    que plus ſoû̂tenir, &amp; qu’ellc eſtoit menacée d’vne foi¬
-    <lb/>
-    bleſſe qui deuoit luy faire attcinte iuſqu’au cœure, &amp;
-    <lb/>
-    luy cauſer vn dangereux cuanoiiſſement.
-    <lb/>
-    Cette authorité Souueraine que vous auiez commu¬
-    <lb/>
-    niqúc à voſtre Miniſtre, fut d’abord employée ̀ la con¬
-    <lb/>
-    tinuation de la guerre pour ſe rendre comme il penſoit
-    <lb/>
-    fort neceſſaire, iuſques-là qu’il fut bien ſi inſolent quc
-    <lb/>
-    d’en abuſer à la rupture du Traitté de Paix auec nos en¬
-    <lb/>
-    nemis qui s’y eſtoient portes de bonne ſorte. Ce mal¬
-    <lb/>
-    aeureux coup quioftfenſa oute l’Europe, fit vn tortir¬
-    <lb/>
-    reparable laFrance, qui dans cette conjoncture re¬
-    <lb/>
-    geut le blaſme d’eſtre le flambeau fatal des diuiſions de
-    <lb/>
-    C
-    <lb/>
-    !
-    <pb n="18"/>
-    <lb/>
-    1
-    <lb/>
-    1
-    <lb/>
-    ’Europe, &amp; détruiſant la Iuſtice de ſes armes dont elle
-    <lb/>
-    eſtoit en poſſeſſion, la faiſoit voir deſormais les armes
-    <lb/>
-    à la main pour combattre iniuſtemecnt ceux qui ne luy
-    <lb/>
-    demandent que la Paix. Car dinal’en ſuitte de tous ces coups d’auathorité
-    <lb/>
-    abſoluë̈ qui luy auoient ſi heureuſement reuſſi, outre
-    <lb/>
-    quel ques progrez en Flandres dontil eſtoit redeuable
-    <lb/>
-    au courae de Monſieur le Prince, ſe creut aſſez puiſ¬
-    <lb/>
-    ſant pour rompre l’vnion des Parlemens qui luy ſem¬
-    <lb/>
-    bloir vne pierre d’achopement aà ſa grandeur, il reſolut
-    <lb/>
-    donc de rompre cette chaine qui ne luy donnoit pas ha
-    <lb/>
-    lierté́ de tout faire ſelon ſa volonté́. Il entrepnt cette
-    <lb/>
-    deſunion fatale d’où ſont prouenus deſia tant de de¬
-    <lb/>
-    ſordres, &amp; en fait encore raiſonnablement apprehen¬
-    <lb/>
-    derde pires: SiV. M. MADAME, ne prend bien-toſt
-    <lb/>
-    la reſolution d’y pouruoir mieux que par le paſſe.
-    <lb/>
-    Vſtre Miniſtere ne pouuant reuſſir au gré de ſon
-    <lb/>
-    mbition auec cette facilite qu’il s’eſtoit propoſee, ex¬
-    <lb/>
-    oſa tout voſtre pouuoir pour ptendre les ſieurs de
-    <lb/>
-    Blaſmenil &amp; Brouſſel, qui auoient genereuſement ¬
-    <lb/>
-    ſté a toutes ſes attaques, vous fauoriſaſtes trop la pa¬
-    <lb/>
-    ſion déreglée qu’il auoit de ſe rendre redoutable par la
-    <lb/>
-    vangeance. Ce fut la ſeule cauſe des barricades qui fi¬
-    <lb/>
-    rent vne ſi grande hreſche à cette aurhorité que vous
-    <lb/>
-    ſouteres, ans diſcerner ſur quels fodemẽt elle s’établit.
-    <lb/>
-    Vous ous ſouuenez bien, MADAME, que voſtre
-    <lb/>
-    pafion trop vehnemente vous porta au Blocus de Pa,
-    <lb/>
-    que le ſdan arinaliuma ce feu de vangeance das voſtre
-    <lb/>
-    eſpritirrité, &amp; que Monſieur le Prince ſuiuit tous os
-    <lb/>
-    moumuemens auee ardeur ſur les pretendus afronts que
-    <lb/>
-    l’authorite auoit receu comme vous luy fiſtes bien
-    <lb/>
-    adroittement accroire.
-    <lb/>
-    e fut pour loes que le cœur de l’Eſat reſſenuit les
-    <lb/>
-    Hudes ſympromes d’ne maladie prochaine qui le de¬
-    <lb/>
-    uoit mertre aux derniers abois où nous le voyonsapre¬
-    <lb/>
-    ſ
-    <pb n="19"/>
-    <lb/>
-    11
-    <lb/>
-    ſent, &amp; que le feu commença de s’allumer ponr aller
-    <lb/>
-    par apres deuorer toutes les Prouinces, &amp; pPuis retour¬
-    <lb/>
-    uer à ſa ſource y faire vn dernier effort.
-    <lb/>
-    Cette leuée de bouclierqu’on qualifie du titre d’en¬
-    <lb/>
-    leuement du Roy, a ruiné l’épargne, incommodé les
-    <lb/>
-    grands &amp; plus ayſez du Royaume, &amp; mis à ſec la meil:
-    <lb/>
-    leure pattie des familles particulieres.
-    <lb/>
-    Dans la iuſte apprehenſion que vous auiez que touté
-    <lb/>
-    la hayne publique ne vint à tomber ſur le Mazarin vous
-    <lb/>
-    priſtes la reſolucion de la rejetter ſur M. le Prinee qui
-    <lb/>
-    en auoit eſté le principal inſtrument, vous ſuuiſtes le
-    <lb/>
-    Conſeil trop precipité que vous donna voſtre iniſtre
-    <lb/>
-    de le faire arreſter, mais ſon innocence ayant eéclatteé
-    <lb/>
-    par deſſus tant d’impoſtures dont il le ſurchargeoit, la
-    <lb/>
-    Iuſtice vous a obligée à le laſcher, &amp; contraint voſtre
-    <lb/>
-    fauory d’abandonner la France pour vn temps auec l
-    <lb/>
-    malediction de tout le monde, &amp; pouſſé par vn Arreſt
-    <lb/>
-    du Parlement irrité́ de ſes procedures.
-    <lb/>
-    l’oubliois la priſon de monſieur de Beaufort, qui n’eut
-    <lb/>
-    iamais de cauſe legitime, ſi ce n’eſt que l’enuie que luy
-    <lb/>
-    portoit le Cardinal, vous l’ait fait trouuer digne d’vn
-    <lb/>
-    traittement ſirigoureux, bien qu’en effet il ne merite
-    <lb/>
-    que de la gloire &amp; des Couronnes.
-    <lb/>
-    Si vous vous regardez bien dans ce miroir, MADA¬
-    <lb/>
-    ME, vous vous remarquerez toute enuironnée d’in¬
-    <lb/>
-    trigues, de fourbes, de tromperies, de laſchetez, de per¬
-    <lb/>
-    fidies, que vos Courtiſans ont mis en vogue aupres de
-    <lb/>
-    vous pour s’aſſurer des diuerſes pretentions qu’ils ont
-    <lb/>
-    de profiter du debris de voſtre puiſſance.
-    <lb/>
-    Voſtre Miniſtre entre tous les autres introduit adroit¬
-    <lb/>
-    rement ces laſches practiques pour ſe conſeruer encore
-    <lb/>
-    dans voſtre eſprit pendant ſon Exil, &amp; dans l’eſperan¬
-    <lb/>
-    ce qu’il a de reuenir aupres de vous, il fait jouer tous
-    <lb/>
-    Jes reſorts que ſon eſprit fertile en fourbes eſt capable
-    <lb/>
-    d’inuenter pour entretenir voſtre bonne volonté en ſon
-    <pb n="20"/>
-    <lb/>
-    l
-    <lb/>
-    endroir, d’autre part la Cabale de Madame de Che¬
-    <lb/>
-    ureuſe &amp; de Mõſieur le Coadjuteur tend à’ſes fins, pen¬
-    <lb/>
-    dant qu’ouuertement on pouſſe les Princes du Sang à
-    <lb/>
-    bout, &amp; qu’on reduir les l’euples à l’extremité, qui ge¬
-    <lb/>
-    miſſent ſous le poids inſupportable des amées. Ce.
-    <lb/>
-    pendanr ces Princes ſont declarés. criminels de leze
-    <lb/>
-    Majeſteé, parce qu’ils fuyent voſtre colere, les miſera¬
-    <lb/>
-    bles P’euples pour comble de leurs afflictions ſont tenus
-    <lb/>
-    pour des rebelles, parce qu’ils reſiſtent à ceux qui vien¬
-    <lb/>
-    nent leur rauir le peu qu’ils ont de rete, &amp; leur viele
-    <lb/>
-    plus ſouuent, enſuitte dequoy le Mazarin eſt rappellé
-    <lb/>
-    en France auec cinq ou ſix mille Eſtrangers auſſi meſ¬
-    <lb/>
-    chants que luy pour les venir chaſtier de leur rchellion.
-    <lb/>
-    O que le Roy aura vn iour de beaux remercimens à
-    <lb/>
-    faire à ces Meſſieurs Eſtrangers qui viennent etahlir
-    <lb/>
-    vne ſibelle Police en ſon Royaume, qu’il leur aura d’o¬
-    <lb/>
-    bligation quand ſes Peuples luy obeiront. Voila les
-    <lb/>
-    François reduits à l’obeiſſance forcée, eux qui ſe ſont
-    <lb/>
-    ſoû̂mis ſi volontairement, &amp; auec tant de franchiſe aux
-    <lb/>
-    Loix de leur Monarque, de maniere qu’il eſtoit com¬
-    <lb/>
-    me nacurel de leur eſtre ſoumis. Que leurs voiſinsſont
-    <lb/>
-    bien meilleurs &amp; plus iuſtes qu’eux de venir eſtablir vne
-    <lb/>
-    dependance ſi legitime, leur charité eſt incomparable.
-    <lb/>
-    Mais que bien loin de voir ſonRoyaume loriſſant
-    <lb/>
-    de ces, belles ;conqueſtes, il ſe trouuera defolé &amp;
-    <lb/>
-    remply de funeſtes ruines. Helas! que lors qu’il ſern
-    <lb/>
-    en aage d’en prendre la conduitte il le trouuera ploain
-    <lb/>
-    de croubles, &amp; de- difficiles embaras, qui l’empeſ¬
-    <lb/>
-    cheront de faire tout ce qu’i voudroit bien, &amp; qui
-    <lb/>
-    l’obligeront par des neceſſitez Politiques à ce qu’il
-    <lb/>
-    ne voudroit pas, &amp; pour lors il deteſtera l’affection
-    <lb/>
-    Eſtrangere qui luy aura eſté́ ſi funeſte, &amp; ſe prendra’à
-    <lb/>
-    vous, MADAME, de les auoir introduits &amp; ſoute¬
-    <lb/>
-    nus auee tant de paſſion.
-    <lb/>
-    li ous plaiſt d’enuiſager ce miroir, MADAME,
-    <lb/>
-    vous
-    <lb/>
-    <pb n="21"/>
-    <lb/>
-    13j
-    <lb/>
-    vous y allez voir toutes les cruautez les plus ſanglan¬
-    <lb/>
-    tes quui ſe ſoient iamais exercé́es pendant la plus gran¬
-    <lb/>
-    de chaleur des armes entre les plus mortels ennemis
-    <lb/>
-    u monde. Elles ont commance par le meurtre illu¬
-    <lb/>
-    ſtre d’vn grand Roy à qui les diuiſions de France on
-    <lb/>
-    donné occaſion, preuoyant l’impunité de la part du
-    <lb/>
-    hepueu, qui auroit bien d’autres affaires à̀ demeler le
-    <lb/>
-    changement de l’Eta d’Angleterre qui fruſtre les le¬
-    <lb/>
-    eitmes ſucceſſeurs de leur droit par vne manifeſte in¬
-    <lb/>
-    iuſtice. Vous auez veu, MADAME, la teſte de ceét
-    <lb/>
-    illuſtre allié de voſtre ſang tomber ſi prés de vous, que
-    <lb/>
-    vous en auez veu rejaillir le ſang eotre le Ciel qui de¬
-    <lb/>
-    mandoit vangeance d’vne ſi haorrible perfidie, vous
-    <lb/>
-    l’auez détournée, MAD AME, par les mauuais con¬
-    <lb/>
-    ſeils qu’on vous a donné d’en pourſuiure vne autre qui
-    <lb/>
-    pouuoit eſtre ſuſpenduë ſans peril de voſtrepuiſſance,
-    <lb/>
-    &amp; ſans l’amoindriſſement de voſtre gloire; trop mal¬
-    <lb/>
-    heureux Prince, dne l’aſſaſſinat eroyable ne laiſta
-    <lb/>
-    que de l’inſenſibilité dans le cœur de ceux qui ſont les
-    <lb/>
-    plus intereſſezà pourſuiure vné ſijuſte vengeane:,
-    <lb/>
-    Cependanronfait agir voſtre paſſion, MADAM,
-    <lb/>
-    à maintenir le reſſentiment d’vn iniſtre offen ſé ſeu¬
-    <lb/>
-    lemẽt, parceque tout ne ſemene pas e France au gré
-    <lb/>
-    de ſa Tyrannie, Voſtre ajeſte prortege vn Tyran
-    <lb/>
-    Eſtranger, &amp; le veut eſtablir ſur les François quin’en
-    <lb/>
-    ont ranais ſoufferc de leur Nation meſme, &amp; qui ne ſe
-    <lb/>
-    peuuent accouſtumer à ployer ſous le joug d’vn laſ¬
-    <lb/>
-    he Italien, bien qu’ils ſe voyent à̀ l’extremité pour
-    <lb/>
-    cette ſeula cauſe: ’renez en garde, MADAE,
-    <lb/>
-    à çette tache elle peur defigu rer toute l hbeaute dont
-    <lb/>
-    vous pourrez parer voitre Regece¬
-    <lb/>
-    ’Vdais voyez,ADAE iuſ ques ou le deſordre de
-    <lb/>
-    la cruauté s’eten depuis que vous auez vne fois in¬
-    <lb/>
-    oduit cecte m lheureuie guerre da ns l’Eltat, des le
-    <lb/>
-    egede daris xſe plagnt des vols, brgandags,
-    <pb n="22"/>
-    <lb/>
-    14
-    <lb/>
-    aſſaſſinas, violements, incendies, facrileges pollu¬
-    <lb/>
-    tions des Autels, &amp; de leur tres-S. Sacrenent, &amp;
-    <lb/>
-    l’on s’eétonnoit que cela arriuaſt ſous la meilleure
-    <lb/>
-    Reyne du Monde, comme diſoit vn Autheur: Mais
-    <lb/>
-    Dieu que la contcinuation de ces deſordres eſt vne
-    <lb/>
-    choſe de bien plus grand étonnement à quoy cette
-    <lb/>
-    bonté Royale deuoit mettre ordre pour ſa iuſtifica¬
-    <lb/>
-    tion. Toutesfois nous en auons veu la ſuitte auec
-    <lb/>
-    horreur; &amp; nous en voyons l’excez auec deſeſpoir, &amp;
-    <lb/>
-    il n’y a auacun Eſtat qui s’en puiſſe exceprer; car ſi
-    <lb/>
-    nous conſiderons celuy de la Nobleſſe, nous le trou¬
-    <lb/>
-    uerons ruiné, &amp; mis au deſſous des plus viles canail¬
-    <lb/>
-    -les qui tiennent les plus dignes charges de l’Eſtat,
-    <lb/>
-    nous verrons des entilhommes égorgez, battus,
-    <lb/>
-    foüüettez, chaſſez de leurs maiſons qu’on ex poſe au
-    <lb/>
-    pillage &amp; au feu. Ie n’en donneray que deux exem¬
-    <lb/>
-    ples a. V. M. de peur que la quantité qu’il y en a ne la
-    <lb/>
-    rempliſſe plus d’horreur que de compaſſion. Le pre¬
-    <lb/>
-    mier fut l’acte de la plus barbare inhumanité qui ſe
-    <lb/>
-    pratiqua iamais, ce fut à l’endroit d’vn Gentilhomme
-    <lb/>
-    d’auprés de Rheims dont le nom ſe perdit auec le
-    <lb/>
-    ſang, lors que pour empeſcher queſa fille vnique ne
-    <lb/>
-    -fut violée il fut percé de mille eoups, &amp; vir en expi¬
-    <lb/>
-    rant le deſaſtre de ſa fille, &amp; la cheute de ſa famille
-    <lb/>
-    malheureuſe.
-    <lb/>
-    Le ſecond exemple, qui eſt d’autant plus à déplorer
-    <lb/>
-    que V. M. de pleine ſcience &amp; d’authorité paſſion¬
-    <lb/>
-    née le voulut laiſſer à la poſterité. e fut la condam¬
-    <lb/>
-    nation du mifſerable Richon que VL M. fit pendre à
-    <lb/>
-    Liborne quelque priere qu’on vous pût faire en ſa fa.¬
-    <lb/>
-    ueur, &amp; meſme contre l’auis de voſtre braue Miniſtre
-    <lb/>
-    qui en témoignoit ou feignoit du moins quelque pe¬
-    <lb/>
-    tite emotion, encore cette acte n’auroit point ſemble
-    <lb/>
-    ſi iniuſte s’il n’auoit donné lieu à la plus cruelle iniu¬
-    <lb/>
-    ſtice du-monde, le Baron de Cauollé eſtoit entre os
-    <pb n="23"/>
-    <lb/>
-    15
-    <lb/>
-    mains des Bourdelois, il auoit eté pris comne’il ve¬
-    <lb/>
-    noit rrouuer V. M. Le droit de la guerre auquel vous
-    <lb/>
-    donnates lieu luy oſta cruellement la vie ſans auoir
-    <lb/>
-    d’autre crime queſon malheur que vous auiez cauſé
-    <lb/>
-    tout entier, on luy vient dire au milieu de ſes diuertiſ¬
-    <lb/>
-    ſemens qu’il faut qu’il ſoit pendu dans vn quart d’heu¬
-    <lb/>
-    re&amp; qu’il ſe reſoluë à la mort, parce ſeulement qu’il
-    <lb/>
-    -eſt le plus conſide rable qu’on tiénne. O cruauté
-    <lb/>
-    inouie à l’endroit dela Nobleſſe &amp; d’vn jeune Gen¬
-    <lb/>
-    tilhomme, qui pour n’autoir point de crime dois payer
-    <lb/>
-    -a faute d’autruy par la perte de ſa propre vie.
-    <lb/>
-    . Iettez les yeux, MADAME, ſur l’Eſtat Eccleſiaſti¬
-    <lb/>
-    qie, &amp; vous vertez vnetelle confuſion de deſordres
-    <lb/>
-    qu’o n’enpeue faire de partieuliere explication. Des
-    <lb/>
-    Preſtros brûſlez, découppez, chaſtrez, égorgez proche
-    <lb/>
-    es Autels cõme victimes des violents Sacrifices que
-    <lb/>
-    font ſous voſtre adueu des Eſtrangers, des miſerables
-    <lb/>
-    Françeois, des Religieuſesviolées dans le Sanctuaire,
-    <lb/>
-    d’aurre reduites aà̀ coutes les extrcmitez des armes &amp;
-    <lb/>
-    de la famine qui fuyent erraces par les Cumpagnes,
-    <lb/>
-    qui ſont ſemées de pieces de croix briſées de reliquai¬
-    <lb/>
-    res rompus de Saintes Reliques épanché́es, choſes
-    <lb/>
-    qui neleur peuuent ſeruir de butin. Mais voyez, &amp;
-    <lb/>
-    quece ne ſoit pas ſans laſcher quelques larmes,ltes mi¬
-    <lb/>
-    ſerables Peuples vgabons par les bois &amp; les cauet¬
-    <lb/>
-    nes comme beſtes farouches, fuyant l’Eſtranger im¬
-    <lb/>
-    pitoyable qui inuente les plus cruels ſupplices pour
-    <lb/>
-    leur detremper la mortauec la vie. O combien en ont
-    <lb/>
-    ils aſſommez, combien de ſaccagez, combien de
-    <lb/>
-    bruûlez tout vits, &amp; combien abandonnans leurs pau¬
-    <lb/>
-    ureschaurieres qu’ilsont veu embraſées en regardãt
-    <lb/>
-    derniere eux ſont allez mourir de déplaiſir &amp; de fami¬
-    <lb/>
-    ne derriere vn buiſſon. Ie croy que vous ſç̧auez bien,
-    <lb/>
-    MAD AME, que ceux qui les gouuernent reſpecn¬
-    <lb/>
-    dront deuant Deu des ames, du ſang &amp; de la vie de
-    <pb n="24"/>
-    <lb/>
-    16
-    <lb/>
-    ces miſerables Sujets, &amp; voſtre directeur de conſcion¬
-    <lb/>
-    ce vous la deu dire.
-    <lb/>
-    Vous pouuez encore icy conſiderer, MADAME,
-    <lb/>
-    vne tache generale qui approche bien de la tyrannie,
-    <lb/>
-    c’eſt qu’en voſtre Cour cette maudite &amp; Mazarine
-    <lb/>
-    maxime eſt introduitte que tout s’y pratique pardes
-    <lb/>
-    laſchetez interreſſées routes les charges, y ſonc rere¬
-    <lb/>
-    mues pour les proſutuer à vne honteuſe venalite, en¬
-    <lb/>
-    core faut-il que ce ſoit aux eſclaues dut-iazarin que
-    <lb/>
-    tous Benefices-ſont dans la meſmes proſtitution auec
-    <lb/>
-    vne eſpouuantable ſymonie, temoin les deux Arche¬
-    <lb/>
-    ueſchez, &amp; les cinq Eueſchez que le Cardinal ent
-    <lb/>
-    entre ſes mains ſi long-temps ſans y pouruoir, ſans
-    <lb/>
-    tous ceux que l’on ne ſç̧ait pas qu’il met publiquemet.
-    <lb/>
-    à l’encherec pour contenter ſon inſatjable auidité, &amp;
-    <lb/>
-    deshonorer voſtre conduite. e n’ay pas peur que
-    <lb/>
-    vous m’en enuoyez vn pour auoir dit la verité, ce ſe¬
-    <lb/>
-    roit pourtant vne action de luſtice que le Mazarinn’a
-    <lb/>
-    garde de faire.
-    <lb/>
-    Que m’importe deluy auoir cet obligation cela
-    <lb/>
-    n’empeſche pas que icne vous offre gratuitement çe
-    <lb/>
-    peti miroir, dont la glace. eſt tropſimple pour rien
-    <lb/>
-    deéguiſer, ſi vous trouuez que ces taches vous deéplai¬
-    <lb/>
-    ſent, j’offriray bien-toſt d’excellens remedes à V. M.
-    <lb/>
-    pour les effacer, &amp; pour vous rendre la plus glorieſe
-    <lb/>
-    Reyne du monde.
-    <lb/>
-    FIN.
-   </p>
-  </body>
- </text>
+          une autre pièce qui n'a peut-être pas été publiée, qu'en tout cas je n'ai pas vue.</p>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
+          <term type="subject">Régence</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-03-16" who="AB"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="9"/>
+        <lb/>LE
+        <lb/>MIROVER
+        <lb/>DE LA REYNE.
+        <lb/>Luy repreſentant tous les deſordres
+        <lb/>de ſa Regence.
+        <lb/>ET LUY DONNANT D'INFAILLIBLES
+        <lb/>moyens pour les reparer. <figure type="decoration"/>
+        <lb/>A PARIS,
+        <lb/>Chez IACOB CHEVALIER, prés Sainct Iean
+        <lb/>de Latran.
+        <lb/>M. DC. LII. <pb n="10"/>
+        <pb n="11"/>
+        <lb/>3
+        <lb/>LE
+        <lb/>MIROVER
+        <lb/>DE LA REYNE,
+        <lb/>Luy repreſentant tous les deſordres de
+        <lb/>ſa Regence.
+        <lb/>ET LV DONNNT D’INFAILLIBLES
+        <lb/>noens pour les reparer.
+        <lb/>MADAME.
+        <lb/>Il faudroit n’eſtre point Franç̧ols pour voir la deſo¬
+        <lb/>aion generale de la pauureFrance ſans eſtre touché
+        <lb/>vme iuſte compaſſion à la veue de ſes miſeres, l’eſtat
+        <lb/>deplorable où nous la voyons reduitte ne nous re¬
+        <lb/>garde que trop pour n’ette ny indifferents ny inſen¬
+        <lb/>bles a’es ſoûffrances qui nous ſont communes, &amp;
+        <lb/>puis que nous ſommes nez Fraçois, c’eſt à dire mſe¬
+        <lb/>ablesl faur que noſtte propre malheur, &amp; la Ruine
+        <lb/>de noſtre chere patrie nous faſſent du moins ietter
+        <lb/>des larmes &amp; former des plaintes contre tous ceux
+        <lb/>-qui ſeront cauſe de noſtre mal: elles ne ſeront que
+        <lb/>urop legiimes, quelque relpet que demande de
+        <lb/>o, les ſouueraihes puiſſances qui diſpoſent ſi ab¬
+        <lb/>ſolment du deſtin des hommes qu’ils font d’autant
+        <lb/>plu rigoreux; qu’ils peuaent le rendre imeilleur &amp;
+        <lb/>A ij <pb n="12"/>
+        <lb/>!
+        <lb/>.
+        <lb/>4,
+        <lb/>plus fauorable.
+        <lb/>1
+        <lb/>ll n’eſt ien de ſi naturel que de ſe plaindre dans
+        <lb/>o afilidon, c’eſ va ſipne que la ante a impran
+        <lb/>tt oueeraurye lpble qu pepreſepte d
+        <lb/>lplon le e fomj, put le nFot
+        <lb/>etanmars la volenee q’ dee del gen dt mero
+        <lb/>delareo poPprepoge ſt n peſlenqnment que
+        <lb/>Deu ménle ’ne ’eonb ihe peis dls la plusti ou¬
+        <lb/>reue’ iſlco e dont lem far capahlea dans l’eee¬
+        <lb/>de les aſſcton ſas, oqutefois qu’il renqaſt enrlen
+        <lb/>Seu Qu preparoit des çouropes d oute ſe, ſloe
+        <lb/>rTV S
+        <lb/>¬ 2
+        <lb/>Que ſie reſſentimentprops n’e tpnnt contraire à
+        <lb/>la loy Dulne qui eaceconnode al la foibleſile hunai
+        <lb/>ne encor qu’el le luy ſoit ſi fort Supte e a ſſ¬
+        <lb/>plte qus lon temoione des miſerejgnerledlſn
+        <lb/>Peuple afflgé qui ſemble eſtre enct elqueicuib¬
+        <lb/>ſe de plus que ce qui quy toueheen partieul,
+        <lb/>eſt ſans dorte auſi queſqe eloſe d plus légrie
+        <lb/>&amp; de plus raiſonnable, meſme vne ſadblimne vCrtſ
+        <lb/>elle eſt miſe en vſage par vn prinipe de charite a
+        <lb/>Jenmdroit du prrhai qui fouſfre, &amp; qpi nou oblige
+        <lb/>de compar à ſa ſouiffiace, aini le Prophere leſe,
+        <lb/>e deplore ls ma qui deuoient ariuer auPeu
+        <lb/>ple de Dieu vuou qu ls fuſeut n iuiſte ch ,
+        <lb/>ment de leur incre dulité.
+        <lb/>5, l ne ſeit de ien doppoſer ier que eeſt lſl4
+        <lb/>l’auloi e que de ’eu plaindre, &amp;uſu on doirſ
+        <lb/>portet Piment tout cé que fqnt le;ſoquuepaias
+        <lb/>lans rien dire de peur, deſtre ctiminol d’eſtat &amp;
+        <lb/>lupplieahle -auſſi ioſt pait les ldux, qui, de ſfe nént
+        <lb/>oua c monuements quls opae, eſroó
+        <lb/>&amp; editi-p à atr s faux ereſhets qi e, loiu
+        <lb/>t¬
+        <lb/>deuhbs. ua Nabclodonſot uile vouloir, aie
+        <lb/>acomme y Diau,&amp; fispaſep, uaſaus
+        <lb/>ſés
+        <lb/>, <pb n="13"/>
+        <lb/>es mechaucetez por legitlmes; oſte edt abus in¬
+        <lb/>ſupportable de latterie qui fait des Tyrans, &amp; qui
+        <lb/>ruine ien pls infailliblement cette authorité de la¬
+        <lb/>quelle ls ſont ſi ialoux; il en eſt de cete autorite com¬
+        <lb/>e de bombre qui ſuit le corps qui la produit, &amp; qui
+        <lb/>le fuit rout auſſi toſt qu’il ſe met à la pourſuiure,
+        <lb/>fuyes cette vanité &amp; dire comme le ſage Salomon
+        <lb/>donnez moy Seigncur vn cœur plein de iuſtice pour
+        <lb/>ien conduire le Peuple que vous m’auez ſoumis.
+        <lb/>Ne ſç̧ait on pas que Dieu a toûjours eſcouté les
+        <lb/>plaintes des Péuples à l’extremité. Il tira les Iſtaeli¬
+        <lb/>es de captiuité parce que Pharaon les auoit faie
+        <lb/>eſelaues, &amp; les traitoit auec trop de rigueur, il per¬
+        <lb/>mit la diuiſion de leur Monarchie pour la trop gran¬
+        <lb/>de tyrannie de Roboam qui les accabloit, mais ſans
+        <lb/>rapporter icy les changemens d’eſtat dont les Hiſ¬
+        <lb/>toires ſont pleines pour preuue de ce droit naturel;
+        <lb/>ſut de dire qu’il eſt inouy que l’on ait voula
+        <lb/>ermer la bouche aux affligez, &amp; qu’on ayt voulu fai
+        <lb/>re vn crime de deſobeiſſance de’ leurs iuſtes plain!
+        <lb/>tes.
+        <lb/>La preuue de cette juſtice qui ſe lit dans tous les
+        <lb/>temps ſans interrption, ſe treuue encor en nos
+        <lb/>ermers ſiecles, qui a’ont pas manque de ſujets de
+        <lb/>plaintes, qui ſe ſont fait entendt́e aux Souuerains
+        <lb/>ans les oppreſſions où̀ leurs ſujets ſe ſontveus ſi ſou¬
+        <lb/>uent par les mauuais conſeils des Miniſtres, &amp; prin¬
+        <lb/>cipalement des Etranges: car ſans aller cherhe
+        <lb/>ains la premiere race de nos Roys des Saincts Ger¬
+        <lb/>nains, des Saincs Leger j ou le bon Atcheueſque de
+        <lb/>ouën nommeé Prerextat, qui repreſenta ſi bien à̀ la
+        <lb/>eine Fredegonde tous les deſordres dont elle eſtoit
+        <lb/>là̀ cauſe, &amp; qui enfin fut ſacrifé à ſa vangeance, ans
+        <lb/>rapportericy les Cardinaux d’Amiboiſe, &amp; de Sour¬
+        <lb/>ron; qui ont dit touſiours leurs ſontimens auee vne
+        <lb/>lihberté ſi ſincere &amp; deſ-intereſſée, &amp; ont fait enten
+        <lb/>B
+        <lb/>i <pb n="14"/>
+        <lb/>1
+        <lb/>1
+        <lb/>dre les plaintes du peuple à̀ leur Souuerain, ie ne eon
+        <lb/>tenreray de marquer icy la repreſentation des deſor..
+        <lb/>dres qui furent faits dans le pays d’Auns, ſous la Re¬
+        <lb/>gence de Catherine de Medicis, im mediartement
+        <lb/>apres la mort de Charles I X elle eſcouta fauorable.
+        <lb/>ment les plaintes de ces bonnes gens ruynez, quoy
+        <lb/>qu’ils fuſſent de la Religion, &amp; pour les recompenſer
+        <lb/>de leurs pertes, elle leur accorda douze cent mille
+        <lb/>eſcus; ie veux que cela ſe fit par maxime d’eſtae
+        <lb/>pour les retenir dans le deuoir, pendant l’abſence du
+        <lb/>Roy qui retournoit de Pologne, mais du moins ne
+        <lb/>crût. elle en rien diminuer de l’authorité, d’eſcouter
+        <lb/>des ſujers qui ſe plaignoient auec aſſez de raiſon, &amp;
+        <lb/>de leur faire quelque ſorte de Iuſtice en leur accor¬
+        <lb/>dant quelque grace, afin de ſoulager leurs miſeres.
+        <lb/>Sous la Regence de Marie de Medcis qui a prece¬
+        <lb/>dé la voſtre, le Fauory tyran qui s’eſtoir rendu mai.
+        <lb/>ſtre de l’authorité, ruyna la pluſpart des familles.
+        <lb/>d’Amiens, en abbatant &amp; bruſlant les maiſons de plu.
+        <lb/>ſieurs particuliers de cette ville, ſans leur faire aucun
+        <lb/>remplacement de leur perte, &amp; meſme les chaſſant
+        <lb/>de la auec violence &amp; par mocquerie, il ne pûr pour.
+        <lb/>tant empeſcher qu’ils ne fiſſent leurs plaintes haute¬.
+        <lb/>ment, &amp; qu’il ne leur reſtaſt encor cette derniere li.¬
+        <lb/>berte de gemir dans leur plus grande oppreſſion qut
+        <lb/>ſe fit reſſenur é́galement dans la Picardie &amp; dans la
+        <lb/>Champagne, &amp; particulierement es enuirons de Soiſ¬
+        <lb/>ſons, ou la deſolation fut horrble &amp; déplorable.
+        <lb/>C’eſt donc vn dro:ct, MADAME, qui ne ſe
+        <lb/>peut oſter aux affligez de ſe plaindre pour route con.
+        <lb/>ſolarion de leurs mileres, mais ce que ie voy de plus
+        <lb/>pitoyable en leurs lamentations, c’eſt, helas qu’elles
+        <lb/>ſont vaines &amp; inutiles le plus ſouuent, &amp; que les cris
+        <lb/>&amp; les gemiſfemens inoxplicables qu’ils pouſſent vers
+        <lb/>les Cieux n’arriuent que trop rarenent aux oreilles <pb n="15"/>
+        <lb/>7
+        <lb/>des puiſſances, elles ſont toutes remplies de flate.
+        <lb/>ries, il n’y reſte plus de place aux plaintes des miſera.¬
+        <lb/>bles, &amp; quand elles y pourroient eſtre receuës, on
+        <lb/>empeſche par tous moyens qu’elles n’en approchent
+        <lb/>ſelon la damnable politique de ceux qui les obſe¬
+        <lb/>dent, &amp; cependant pour comble de tyrannie &amp; d’op¬
+        <lb/>preſſion, ces mauuais Miniſtres taſchent d’étouffer
+        <lb/>les plaintes par des menaces dont ils épouuante nt
+        <lb/>des mal. heureux effrayez encor des premieres at¬
+        <lb/>teintes qu’ils viennent de reſſentir.
+        <lb/>Cependant, MADAME, vous ignorez ces
+        <lb/>deſordres qui rejllſſenr ſur voſtre conduitte, &amp;
+        <lb/>rempliſſent de mlle taches Voſtre Majeſté, qui ne
+        <lb/>les remarque peut-eſtre pas, faute d’vn Mroir qui
+        <lb/>vous repreſente telle que vous eſtes, ſans qu’il deé́gui¬
+        <lb/>ſe er rien la face de voſtre gouuernemenr.
+        <lb/>Dans la creance que i’ay que ce Miroir vous ſeruir
+        <lb/>de quelque choſe malgré́ tout le fard dont la Cour
+        <lb/>veut couurir ces defauts; Vous les pourrez voir,
+        <lb/>MADA ME, a découuert, &amp; vous chercherez peut¬
+        <lb/>eſtre des remedes conuenables pour les effacer, ou.
+        <lb/>du moins pour leur oſter vne partie de leur deformi¬
+        <lb/>teé, en leur oppoſant l’eéclat de quelques Vertus he¬
+        <lb/>roiques dont la practique n’eſt iamais trop tard em¬
+        <lb/>braſſée. Du moins, MAD AME, vous vous y vẽrrez
+        <lb/>auec toutes ces laideurs que vous pourrez deétruire
+        <lb/>en les faiſant ceſſer, ie veux dire en faſant vn noblc
+        <lb/>effort qui rende la France paiſible, ce doit eſtre-là, la
+        <lb/>fin de voſtre regne, ſi vous auez enuie d’en lortit
+        <lb/>auec honneur, &amp; auec ce brillant éclat qui e fface t ou¬
+        <lb/>tes ces obſeuritez affreuſes qui nous empeſchent de
+        <lb/>voir ce qui eſt de plus beau dans la conduite d’vne
+        <lb/>puiſſante &amp; glorieuſe Reyne. Enfi, MADAME,
+        <lb/>vous y verres ce que vou ne pouuez peut. eſtre en¬
+        <lb/>tendre, n’y ayant perſonne aupres de vous aſiez zeleé <pb n="16"/>
+        <lb/>
+        <lb/>&amp; deſ iarereſſé poeaf vous le dire, &amp;vous auréco
+        <lb/>jours cet auantage de vousy eſtre veu toute tells
+        <lb/>que l’ſtoire vous reprefenrera vn iout, çe ſera à
+        <lb/>vous de iuger ſi vous ne voulez point qu’on n’y
+        <lb/>corrige rien, &amp; ſi le tout eſt iuſtement comme vous.
+        <lb/>le deſirez.
+        <lb/>Le diuin legiſlateur Moiſe auoit fait entourer de
+        <lb/>niroirs le Tabernacle afin que tous ceux qui ve¬
+        <lb/>noent preſenrer leurs vœux &amp; leurs prieres a Dieu
+        <lb/>puſſent voir de quelle maniere &amp; en quelle poſture
+        <lb/>ils paroiſſoient en preſence du Dieu des batailles,
+        <lb/>en ſorte que tout le monde puſt du moins remar¬
+        <lb/>quer en quel eſtat il ſe treuuoit pour lors, &amp; s’il
+        <lb/>eſtoit purt en telle ſorte qu’il ne rêmarquaſt ſur ſoyl
+        <lb/>aucune tache ou dans ſon maintien aucuné deſa¬
+        <lb/>greable poſture.
+        <lb/>L’hiſtoire eſt le tabernacle des grans, o vodus
+        <lb/>pouuez, Madame, remarquer tousvos geſtés comptef¬
+        <lb/>outes vos demarches &amp; reconnoiſtre ce qu’il y a e
+        <lb/>beau ou de difforme en voſtre vie, &amp; ce miroir quel
+        <lb/>ie vous preſente n’eſt que pour vous aiuſter ſi bien
+        <lb/>que vous y paroiſſiez ſans re proche, &amp; que s’il y a
+        <lb/>en vous quelques taches vous metriez peine les
+        <lb/>reparer, ou les couurir par quelque agreable orne¬
+        <lb/>ment de vertu, iettez les yex ſur cette glace qui né
+        <lb/>flatte point &amp; vous y remarquerez d’abord, le mau¬
+        <lb/>uais choix que vous fiſtes des le commencement de
+        <lb/>voſtre Regence d’vn minſtre d’eſtat eſtranger à qui,
+        <lb/>ous renmltes ’entier mamimene de l’eſtuat ſa pl!
+        <lb/>grande ruine Vous luy fuiſtes d’albord ſi prodigue qe,
+        <lb/>es faueurs qu’il n’y eut point de grandeuts dohtl
+        <lb/>vous ne rempliſſiez ſon ambition, qu’il n’y eut point
+        <lb/>Aae rcheſſes dont vous ne contencaſſie ſon àuarl¬
+        <lb/>e, poiut de dediees dour ſa voluprei pe fuſtaſouuies,
+        <lb/>ur d’abord eſleué eni vn rang ſupeneu adceluſ? <pb n="17"/>
+        <lb/>9
+        <lb/>de tous les Princes du Sang, &amp; il n’yeut pas vn gtand
+        <lb/>du Royaume qui ne ſe viſt ſoûmis aux volontez
+        <lb/>de ćt Eſtranger auquel il falloit obeir ou vous dé¬
+        <lb/>plaire quelque dépit qu’ils en conçeuſſent tous,
+        <lb/>i n’y en eut pas vn qui ne flechit plûitoſt que d’en¬
+        <lb/>ourir voſtre diſgrace, &amp; vous fiſtes en vninſtant vôtre
+        <lb/>Mazarin le plus abſolu de tous les hommes pour ſoute¬
+        <lb/>nir certe dignité; les treſors du deffunct Roy voſtrema¬
+        <lb/>ry, ne fuirent pas ſuffiſans, non plus que les moyens qu’il
+        <lb/>auoit laiſſez pour les entretenir, il fallut ſurcharger le
+        <lb/>peuple de nouuelles impoſitions, &amp; luy cirer iuſqu’à la
+        <lb/>la derniere goutte de ſes ſueurs &amp; de ſon ſang, dont il
+        <lb/>ne luy reſtoit plus que des larmes qu’il eſtoit encore
+        <lb/>contraint d’épancher à la veuë de ſes miſeres reduit à
+        <lb/>cette extremité, il a fallu ſe ſeruir du fer &amp; du feu pour
+        <lb/>obliger leurs veines languiſſantes à verſer encore quel¬
+        <lb/>ques goutres qu’elles fſe conſeruoient pour leur propre
+        <lb/>nourrture, il a fallu enuoyer par les Prouinces des im¬
+        <lb/>pitoyables fuſiliers, dont les extorſions inoüyes n’ont
+        <lb/>pas laiſſé dequoy fournir à l’entretien d’vne vie lan¬
+        <lb/>guiſſante. Voila l’eſtat des pauures Prouinces ſous vô¬
+        <lb/>tre Regence, dé́s-lors on jugea bien que la Monarchie
+        <lb/>ſ fort afoibli e en tous ſes membres ne ſe pouuoit preſ¬
+        <lb/>que plus ſoû̂tenir, &amp; qu’ellc eſtoit menacée d’vne foi¬
+        <lb/>bleſſe qui deuoit luy faire attcinte iuſqu’au cœure, &amp;
+        <lb/>luy cauſer vn dangereux cuanoiiſſement.
+        <lb/>Cette authorité Souueraine que vous auiez commu¬
+        <lb/>niqúc à voſtre Miniſtre, fut d’abord employée ̀ la con¬
+        <lb/>tinuation de la guerre pour ſe rendre comme il penſoit
+        <lb/>fort neceſſaire, iuſques-là qu’il fut bien ſi inſolent quc
+        <lb/>d’en abuſer à la rupture du Traitté de Paix auec nos en¬
+        <lb/>nemis qui s’y eſtoient portes de bonne ſorte. Ce mal¬
+        <lb/>aeureux coup quioftfenſa oute l’Europe, fit vn tortir¬
+        <lb/>reparable laFrance, qui dans cette conjoncture re¬
+        <lb/>geut le blaſme d’eſtre le flambeau fatal des diuiſions de
+        <lb/>C
+        <lb/>! <pb n="18"/>
+        <lb/>1
+        <lb/>1
+        <lb/>’Europe, &amp; détruiſant la Iuſtice de ſes armes dont elle
+        <lb/>eſtoit en poſſeſſion, la faiſoit voir deſormais les armes
+        <lb/>à la main pour combattre iniuſtemecnt ceux qui ne luy
+        <lb/>demandent que la Paix. Car dinal’en ſuitte de tous ces coups d’auathorité
+        <lb/>abſoluë̈ qui luy auoient ſi heureuſement reuſſi, outre
+        <lb/>quel ques progrez en Flandres dontil eſtoit redeuable
+        <lb/>au courae de Monſieur le Prince, ſe creut aſſez puiſ¬
+        <lb/>ſant pour rompre l’vnion des Parlemens qui luy ſem¬
+        <lb/>bloir vne pierre d’achopement aà ſa grandeur, il reſolut
+        <lb/>donc de rompre cette chaine qui ne luy donnoit pas ha
+        <lb/>lierté́ de tout faire ſelon ſa volonté́. Il entrepnt cette
+        <lb/>deſunion fatale d’où ſont prouenus deſia tant de de¬
+        <lb/>ſordres, &amp; en fait encore raiſonnablement apprehen¬
+        <lb/>derde pires: SiV. M. MADAME, ne prend bien-toſt
+        <lb/>la reſolution d’y pouruoir mieux que par le paſſe.
+        <lb/>Vſtre Miniſtere ne pouuant reuſſir au gré de ſon
+        <lb/>mbition auec cette facilite qu’il s’eſtoit propoſee, ex¬
+        <lb/>oſa tout voſtre pouuoir pour ptendre les ſieurs de
+        <lb/>Blaſmenil &amp; Brouſſel, qui auoient genereuſement ¬
+        <lb/>ſté a toutes ſes attaques, vous fauoriſaſtes trop la pa¬
+        <lb/>ſion déreglée qu’il auoit de ſe rendre redoutable par la
+        <lb/>vangeance. Ce fut la ſeule cauſe des barricades qui fi¬
+        <lb/>rent vne ſi grande hreſche à cette aurhorité que vous
+        <lb/>ſouteres, ans diſcerner ſur quels fodemẽt elle s’établit.
+        <lb/>Vous ous ſouuenez bien, MADAME, que voſtre
+        <lb/>pafion trop vehnemente vous porta au Blocus de Pa,
+        <lb/>que le ſdan arinaliuma ce feu de vangeance das voſtre
+        <lb/>eſpritirrité, &amp; que Monſieur le Prince ſuiuit tous os
+        <lb/>moumuemens auee ardeur ſur les pretendus afronts que
+        <lb/>l’authorite auoit receu comme vous luy fiſtes bien
+        <lb/>adroittement accroire.
+        <lb/>e fut pour loes que le cœur de l’Eſat reſſenuit les
+        <lb/>Hudes ſympromes d’ne maladie prochaine qui le de¬
+        <lb/>uoit mertre aux derniers abois où nous le voyonsapre¬
+        <lb/>ſ <pb n="19"/>
+        <lb/>11
+        <lb/>ſent, &amp; que le feu commença de s’allumer ponr aller
+        <lb/>par apres deuorer toutes les Prouinces, &amp; pPuis retour¬
+        <lb/>uer à ſa ſource y faire vn dernier effort.
+        <lb/>Cette leuée de bouclierqu’on qualifie du titre d’en¬
+        <lb/>leuement du Roy, a ruiné l’épargne, incommodé les
+        <lb/>grands &amp; plus ayſez du Royaume, &amp; mis à ſec la meil:
+        <lb/>leure pattie des familles particulieres.
+        <lb/>Dans la iuſte apprehenſion que vous auiez que touté
+        <lb/>la hayne publique ne vint à tomber ſur le Mazarin vous
+        <lb/>priſtes la reſolucion de la rejetter ſur M. le Prinee qui
+        <lb/>en auoit eſté le principal inſtrument, vous ſuuiſtes le
+        <lb/>Conſeil trop precipité que vous donna voſtre iniſtre
+        <lb/>de le faire arreſter, mais ſon innocence ayant eéclatteé
+        <lb/>par deſſus tant d’impoſtures dont il le ſurchargeoit, la
+        <lb/>Iuſtice vous a obligée à le laſcher, &amp; contraint voſtre
+        <lb/>fauory d’abandonner la France pour vn temps auec l
+        <lb/>malediction de tout le monde, &amp; pouſſé par vn Arreſt
+        <lb/>du Parlement irrité́ de ſes procedures.
+        <lb/>l’oubliois la priſon de monſieur de Beaufort, qui n’eut
+        <lb/>iamais de cauſe legitime, ſi ce n’eſt que l’enuie que luy
+        <lb/>portoit le Cardinal, vous l’ait fait trouuer digne d’vn
+        <lb/>traittement ſirigoureux, bien qu’en effet il ne merite
+        <lb/>que de la gloire &amp; des Couronnes.
+        <lb/>Si vous vous regardez bien dans ce miroir, MADA¬
+        <lb/>ME, vous vous remarquerez toute enuironnée d’in¬
+        <lb/>trigues, de fourbes, de tromperies, de laſchetez, de per¬
+        <lb/>fidies, que vos Courtiſans ont mis en vogue aupres de
+        <lb/>vous pour s’aſſurer des diuerſes pretentions qu’ils ont
+        <lb/>de profiter du debris de voſtre puiſſance.
+        <lb/>Voſtre Miniſtre entre tous les autres introduit adroit¬
+        <lb/>rement ces laſches practiques pour ſe conſeruer encore
+        <lb/>dans voſtre eſprit pendant ſon Exil, &amp; dans l’eſperan¬
+        <lb/>ce qu’il a de reuenir aupres de vous, il fait jouer tous
+        <lb/>Jes reſorts que ſon eſprit fertile en fourbes eſt capable
+        <lb/>d’inuenter pour entretenir voſtre bonne volonté en ſon <pb n="20"/>
+        <lb/>l
+        <lb/>endroir, d’autre part la Cabale de Madame de Che¬
+        <lb/>ureuſe &amp; de Mõſieur le Coadjuteur tend à’ſes fins, pen¬
+        <lb/>dant qu’ouuertement on pouſſe les Princes du Sang à
+        <lb/>bout, &amp; qu’on reduir les l’euples à l’extremité, qui ge¬
+        <lb/>miſſent ſous le poids inſupportable des amées. Ce.
+        <lb/>pendanr ces Princes ſont declarés. criminels de leze
+        <lb/>Majeſteé, parce qu’ils fuyent voſtre colere, les miſera¬
+        <lb/>bles P’euples pour comble de leurs afflictions ſont tenus
+        <lb/>pour des rebelles, parce qu’ils reſiſtent à ceux qui vien¬
+        <lb/>nent leur rauir le peu qu’ils ont de rete, &amp; leur viele
+        <lb/>plus ſouuent, enſuitte dequoy le Mazarin eſt rappellé
+        <lb/>en France auec cinq ou ſix mille Eſtrangers auſſi meſ¬
+        <lb/>chants que luy pour les venir chaſtier de leur rchellion.
+        <lb/>O que le Roy aura vn iour de beaux remercimens à
+        <lb/>faire à ces Meſſieurs Eſtrangers qui viennent etahlir
+        <lb/>vne ſibelle Police en ſon Royaume, qu’il leur aura d’o¬
+        <lb/>bligation quand ſes Peuples luy obeiront. Voila les
+        <lb/>François reduits à l’obeiſſance forcée, eux qui ſe ſont
+        <lb/>ſoû̂mis ſi volontairement, &amp; auec tant de franchiſe aux
+        <lb/>Loix de leur Monarque, de maniere qu’il eſtoit com¬
+        <lb/>me nacurel de leur eſtre ſoumis. Que leurs voiſinsſont
+        <lb/>bien meilleurs &amp; plus iuſtes qu’eux de venir eſtablir vne
+        <lb/>dependance ſi legitime, leur charité eſt incomparable.
+        <lb/>Mais que bien loin de voir ſonRoyaume loriſſant
+        <lb/>de ces, belles ;conqueſtes, il ſe trouuera defolé &amp;
+        <lb/>remply de funeſtes ruines. Helas! que lors qu’il ſern
+        <lb/>en aage d’en prendre la conduitte il le trouuera ploain
+        <lb/>de croubles, &amp; de- difficiles embaras, qui l’empeſ¬
+        <lb/>cheront de faire tout ce qu’i voudroit bien, &amp; qui
+        <lb/>l’obligeront par des neceſſitez Politiques à ce qu’il
+        <lb/>ne voudroit pas, &amp; pour lors il deteſtera l’affection
+        <lb/>Eſtrangere qui luy aura eſté́ ſi funeſte, &amp; ſe prendra’à
+        <lb/>vous, MADAME, de les auoir introduits &amp; ſoute¬
+        <lb/>nus auee tant de paſſion.
+        <lb/>li ous plaiſt d’enuiſager ce miroir, MADAME,
+        <lb/>vous
+        <lb/>
+        <pb n="21"/>
+        <lb/>13j
+        <lb/>vous y allez voir toutes les cruautez les plus ſanglan¬
+        <lb/>tes quui ſe ſoient iamais exercé́es pendant la plus gran¬
+        <lb/>de chaleur des armes entre les plus mortels ennemis
+        <lb/>u monde. Elles ont commance par le meurtre illu¬
+        <lb/>ſtre d’vn grand Roy à qui les diuiſions de France on
+        <lb/>donné occaſion, preuoyant l’impunité de la part du
+        <lb/>hepueu, qui auroit bien d’autres affaires à̀ demeler le
+        <lb/>changement de l’Eta d’Angleterre qui fruſtre les le¬
+        <lb/>eitmes ſucceſſeurs de leur droit par vne manifeſte in¬
+        <lb/>iuſtice. Vous auez veu, MADAME, la teſte de ceét
+        <lb/>illuſtre allié de voſtre ſang tomber ſi prés de vous, que
+        <lb/>vous en auez veu rejaillir le ſang eotre le Ciel qui de¬
+        <lb/>mandoit vangeance d’vne ſi haorrible perfidie, vous
+        <lb/>l’auez détournée, MAD AME, par les mauuais con¬
+        <lb/>ſeils qu’on vous a donné d’en pourſuiure vne autre qui
+        <lb/>pouuoit eſtre ſuſpenduë ſans peril de voſtrepuiſſance,
+        <lb/>&amp; ſans l’amoindriſſement de voſtre gloire; trop mal¬
+        <lb/>heureux Prince, dne l’aſſaſſinat eroyable ne laiſta
+        <lb/>que de l’inſenſibilité dans le cœur de ceux qui ſont les
+        <lb/>plus intereſſezà pourſuiure vné ſijuſte vengeane:,
+        <lb/>Cependanronfait agir voſtre paſſion, MADAM,
+        <lb/>à maintenir le reſſentiment d’vn iniſtre offen ſé ſeu¬
+        <lb/>lemẽt, parceque tout ne ſemene pas e France au gré
+        <lb/>de ſa Tyrannie, Voſtre ajeſte prortege vn Tyran
+        <lb/>Eſtranger, &amp; le veut eſtablir ſur les François quin’en
+        <lb/>ont ranais ſoufferc de leur Nation meſme, &amp; qui ne ſe
+        <lb/>peuuent accouſtumer à ployer ſous le joug d’vn laſ¬
+        <lb/>he Italien, bien qu’ils ſe voyent à̀ l’extremité pour
+        <lb/>cette ſeula cauſe: ’renez en garde, MADAE,
+        <lb/>à çette tache elle peur defigu rer toute l hbeaute dont
+        <lb/>vous pourrez parer voitre Regece¬
+        <lb/>’Vdais voyez,ADAE iuſ ques ou le deſordre de
+        <lb/>la cruauté s’eten depuis que vous auez vne fois in¬
+        <lb/>oduit cecte m lheureuie guerre da ns l’Eltat, des le
+        <lb/>egede daris xſe plagnt des vols, brgandags, <pb n="22"/>
+        <lb/>14
+        <lb/>aſſaſſinas, violements, incendies, facrileges pollu¬
+        <lb/>tions des Autels, &amp; de leur tres-S. Sacrenent, &amp;
+        <lb/>l’on s’eétonnoit que cela arriuaſt ſous la meilleure
+        <lb/>Reyne du Monde, comme diſoit vn Autheur: Mais
+        <lb/>Dieu que la contcinuation de ces deſordres eſt vne
+        <lb/>choſe de bien plus grand étonnement à quoy cette
+        <lb/>bonté Royale deuoit mettre ordre pour ſa iuſtifica¬
+        <lb/>tion. Toutesfois nous en auons veu la ſuitte auec
+        <lb/>horreur; &amp; nous en voyons l’excez auec deſeſpoir, &amp;
+        <lb/>il n’y a auacun Eſtat qui s’en puiſſe exceprer; car ſi
+        <lb/>nous conſiderons celuy de la Nobleſſe, nous le trou¬
+        <lb/>uerons ruiné, &amp; mis au deſſous des plus viles canail¬
+        <lb/>-les qui tiennent les plus dignes charges de l’Eſtat,
+        <lb/>nous verrons des entilhommes égorgez, battus,
+        <lb/>foüüettez, chaſſez de leurs maiſons qu’on ex poſe au
+        <lb/>pillage &amp; au feu. Ie n’en donneray que deux exem¬
+        <lb/>ples a. V. M. de peur que la quantité qu’il y en a ne la
+        <lb/>rempliſſe plus d’horreur que de compaſſion. Le pre¬
+        <lb/>mier fut l’acte de la plus barbare inhumanité qui ſe
+        <lb/>pratiqua iamais, ce fut à l’endroit d’vn Gentilhomme
+        <lb/>d’auprés de Rheims dont le nom ſe perdit auec le
+        <lb/>ſang, lors que pour empeſcher queſa fille vnique ne
+        <lb/>-fut violée il fut percé de mille eoups, &amp; vir en expi¬
+        <lb/>rant le deſaſtre de ſa fille, &amp; la cheute de ſa famille
+        <lb/>malheureuſe.
+        <lb/>Le ſecond exemple, qui eſt d’autant plus à déplorer
+        <lb/>que V. M. de pleine ſcience &amp; d’authorité paſſion¬
+        <lb/>née le voulut laiſſer à la poſterité. e fut la condam¬
+        <lb/>nation du mifſerable Richon que VL M. fit pendre à
+        <lb/>Liborne quelque priere qu’on vous pût faire en ſa fa.¬
+        <lb/>ueur, &amp; meſme contre l’auis de voſtre braue Miniſtre
+        <lb/>qui en témoignoit ou feignoit du moins quelque pe¬
+        <lb/>tite emotion, encore cette acte n’auroit point ſemble
+        <lb/>ſi iniuſte s’il n’auoit donné lieu à la plus cruelle iniu¬
+        <lb/>ſtice du-monde, le Baron de Cauollé eſtoit entre os <pb n="23"/>
+        <lb/>15
+        <lb/>mains des Bourdelois, il auoit eté pris comne’il ve¬
+        <lb/>noit rrouuer V. M. Le droit de la guerre auquel vous
+        <lb/>donnates lieu luy oſta cruellement la vie ſans auoir
+        <lb/>d’autre crime queſon malheur que vous auiez cauſé
+        <lb/>tout entier, on luy vient dire au milieu de ſes diuertiſ¬
+        <lb/>ſemens qu’il faut qu’il ſoit pendu dans vn quart d’heu¬
+        <lb/>re&amp; qu’il ſe reſoluë à la mort, parce ſeulement qu’il
+        <lb/>-eſt le plus conſide rable qu’on tiénne. O cruauté
+        <lb/>inouie à l’endroit dela Nobleſſe &amp; d’vn jeune Gen¬
+        <lb/>tilhomme, qui pour n’autoir point de crime dois payer
+        <lb/>-a faute d’autruy par la perte de ſa propre vie.
+        <lb/>. Iettez les yeux, MADAME, ſur l’Eſtat Eccleſiaſti¬
+        <lb/>qie, &amp; vous vertez vnetelle confuſion de deſordres
+        <lb/>qu’o n’enpeue faire de partieuliere explication. Des
+        <lb/>Preſtros brûſlez, découppez, chaſtrez, égorgez proche
+        <lb/>es Autels cõme victimes des violents Sacrifices que
+        <lb/>font ſous voſtre adueu des Eſtrangers, des miſerables
+        <lb/>Françeois, des Religieuſesviolées dans le Sanctuaire,
+        <lb/>d’aurre reduites aà̀ coutes les extrcmitez des armes &amp;
+        <lb/>de la famine qui fuyent erraces par les Cumpagnes,
+        <lb/>qui ſont ſemées de pieces de croix briſées de reliquai¬
+        <lb/>res rompus de Saintes Reliques épanché́es, choſes
+        <lb/>qui neleur peuuent ſeruir de butin. Mais voyez, &amp;
+        <lb/>quece ne ſoit pas ſans laſcher quelques larmes,ltes mi¬
+        <lb/>ſerables Peuples vgabons par les bois &amp; les cauet¬
+        <lb/>nes comme beſtes farouches, fuyant l’Eſtranger im¬
+        <lb/>pitoyable qui inuente les plus cruels ſupplices pour
+        <lb/>leur detremper la mortauec la vie. O combien en ont
+        <lb/>ils aſſommez, combien de ſaccagez, combien de
+        <lb/>bruûlez tout vits, &amp; combien abandonnans leurs pau¬
+        <lb/>ureschaurieres qu’ilsont veu embraſées en regardãt
+        <lb/>derniere eux ſont allez mourir de déplaiſir &amp; de fami¬
+        <lb/>ne derriere vn buiſſon. Ie croy que vous ſç̧auez bien,
+        <lb/>MAD AME, que ceux qui les gouuernent reſpecn¬
+        <lb/>dront deuant Deu des ames, du ſang &amp; de la vie de <pb n="24"/>
+        <lb/>16
+        <lb/>ces miſerables Sujets, &amp; voſtre directeur de conſcion¬
+        <lb/>ce vous la deu dire.
+        <lb/>Vous pouuez encore icy conſiderer, MADAME,
+        <lb/>vne tache generale qui approche bien de la tyrannie,
+        <lb/>c’eſt qu’en voſtre Cour cette maudite &amp; Mazarine
+        <lb/>maxime eſt introduitte que tout s’y pratique pardes
+        <lb/>laſchetez interreſſées routes les charges, y ſonc rere¬
+        <lb/>mues pour les proſutuer à vne honteuſe venalite, en¬
+        <lb/>core faut-il que ce ſoit aux eſclaues dut-iazarin que
+        <lb/>tous Benefices-ſont dans la meſmes proſtitution auec
+        <lb/>vne eſpouuantable ſymonie, temoin les deux Arche¬
+        <lb/>ueſchez, &amp; les cinq Eueſchez que le Cardinal ent
+        <lb/>entre ſes mains ſi long-temps ſans y pouruoir, ſans
+        <lb/>tous ceux que l’on ne ſç̧ait pas qu’il met publiquemet.
+        <lb/>à l’encherec pour contenter ſon inſatjable auidité, &amp;
+        <lb/>deshonorer voſtre conduite. e n’ay pas peur que
+        <lb/>vous m’en enuoyez vn pour auoir dit la verité, ce ſe¬
+        <lb/>roit pourtant vne action de luſtice que le Mazarinn’a
+        <lb/>garde de faire.
+        <lb/>Que m’importe deluy auoir cet obligation cela
+        <lb/>n’empeſche pas que icne vous offre gratuitement çe
+        <lb/>peti miroir, dont la glace. eſt tropſimple pour rien
+        <lb/>deéguiſer, ſi vous trouuez que ces taches vous deéplai¬
+        <lb/>ſent, j’offriray bien-toſt d’excellens remedes à V. M.
+        <lb/>pour les effacer, &amp; pour vous rendre la plus glorieſe
+        <lb/>Reyne du monde.
+        <lb/>FIN. </p>
+    </body>
+  </text>
 </TEI>

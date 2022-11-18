@@ -1,1208 +1,636 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xml:id="Moreau2549-ii_MAZ" xmlns="http://www.tei-c.org/ns/1.0">
- <teiHeader>
-  <fileDesc>
-   <titleStmt>
-    <title source="Moreau" type="main">
-     La Nouvelle Gazette du temps, en vers bur lesques. Du
-          dix -neuvièmeoctobre 1652.
-    </title>
-    <title type="sub">
-     Édition Antonomaz
-    </title>
-    <respStmt>
-     <resp>
-      Chaîne de traitement
-     </resp>
-     <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">
-      Abiven Karine
-     </persName>
-     <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">
-      Lejeune Gaël
-     </persName>
-     <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">
-      Tanguy
-            Jean-Baptiste
-     </persName>
-     <persName ref="orcid:0000-0003-0850-8266" role="engineer">
-      Bartz Alexandre
-     </persName>
-    </respStmt>
-   </titleStmt>
-   <publicationStmt>
-    <publisher>
-     Projet ANTONOMAZ / Sorbonne Université
-    </publisher>
-    <ref target="https://github.com/Antonomaz"/>
-    <date type="file_creation" when="2022-01-31">
-     31 janvier 2022
-    </date>
-    <availability n="cc-by" status="restricted">
-     <licence target="https://creativecommons.org/licenses/by/4.0"/>
-    </availability>
-   </publicationStmt>
-   <sourceDesc>
-    <bibl>
-     <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz18489"/>
-     <author ref="isni:0000000061345732">
-      <persName>
-       <forename>
-        Jean
-       </forename>
-       <surname>
-        Loret
-       </surname>
-      </persName>
-     </author>
-     <title source="Mazarine">
-      La nouvelle gazette du temps. En vers burlesques. Du dix-neufiéme
-            octobre 1652.
-     </title>
-     <pubPlace ref="geonames:2988507" source="Mazarine">
-      Paris
-     </pubPlace>
-     <publisher>
-      <persName>
-       Sans Nom
-      </persName>
-     </publisher>
-     <date source="Mazarine" when="1652">
-      1652
-     </date>
-     <date notAfter="1652-10-21" notBefore="1652-10-14" source="Carrier">
-      troisième semaine
-            d'octobre 1652
-     </date>
-     <extent>
-      <measure quantity="6" unit="page"/>
-     </extent>
-     <note type="format">
-      in-4
-     </note>
-     <relatedItem cert="high" source="Mazarine" subtype="BM50285" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50285" type="identifier"/>
-    </bibl>
-    <msDesc>
-     <msIdentifier>
-      <settlement ref="geonames:2988507">
-       Paris
-      </settlement>
-      <institution>
-       Bibliothèque Mazarine
-      </institution>
-      <repository/>
-      <idno type="cote">
-       M10519-2
-      </idno>
-     </msIdentifier>
-     <history>
-      <provenance>
-       <stamp>
-        False
-       </stamp>
-      </provenance>
-     </history>
-    </msDesc>
-   </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-   <projectDesc>
-    <p>
-     Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2549-ii_MAZ">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Nouvelle (la) Gazette du temps, en vers bur lesques. Du
+          dix -neuvièmeoctobre 1652.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+            Jean-Baptiste</persName>
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz"/>
+        <date type="file_creation" when="2022-01-31">31 janvier 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz18489"/>
+          <author ref="isni:0000000061345732">
+            <persName>
+              <forename>Jean</forename>
+              <surname>Loret</surname>
+            </persName>
+          </author>
+          <title source="Mazarine">La nouvelle gazette du temps. En vers burlesques. Du dix-neufiéme
+            octobre 1652.</title>
+          <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
+          <date source="Mazarine" when="1652">1652</date>
+          <date source="Carrier" notBefore="1652-10-14" notAfter="1652-10-21">troisième semaine
+            d'octobre 1652</date>
+          <extent>
+            <measure unit="page" quantity="6"/>
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50285" cert="high"
+            target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50285"/>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2988507">Paris</settlement>
+            <institution>Bibliothèque Mazarine</institution>
+            <repository/>
+            <idno type="cote">M10519-2</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>False</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
-          auteur oublié.
-    </p>
-    <p>
-     Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
-          bibliothèques numériques publiques et de Google livres.
-    </p>
-    <p>
-     L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.
-    </p>
-   </projectDesc>
-   <editorialDecl>
-    <p/>
-   </editorialDecl>
-  </encodingDesc>
-  <profileDesc>
-   <langUsage>
-    <language ident="fra">
-     Document en français
-    </language>
-   </langUsage>
-   <abstract>
-    <p source="Mazarine">
-     En vers octosyllabes. Édition subreptice, d'une "lettre" originale
+          auteur oublié.</p>
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+          bibliothèques numériques publiques et de Google livres.</p>
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p/>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine">En vers octosyllabes. Édition subreptice, d'une "lettre" originale
           adressée par Jean Loret à mademoiselle de Longueville et datée du 19 octobre 1652 d'après
           la fin du texte. D'après Célestin Moreau, publiée en tant que lettre "41" du Livre
           troisième du t. I de la "Muze historique" en 1658. Réeditée en 1857 Repris sous le titre
           "La gazette nouvelle. En vers burlesques. Sur l'arrivée du Roy en sa bonne ville de Paris.
           Premiere Sepmaine." (BM01386), avec un ajout relatif à Louis XIV. D'après Hubert Carrier,
           suivant la date de la lettre, texte paru la troisième semaine d'octobre 1652 (Bibliothèque
-          Mazarine, Ms. 4682-3, f. 6).
-    </p>
-    <p source="Moreau">
-     2549. Nouvelle (la) Gazette du temps, en vers bur lesques. Du
+          Mazarine, Ms. 4682-3, f. 6).</p>
+        <p source="Moreau">2549. Nouvelle (la) Gazette du temps, en vers bur lesques. Du
           dix-neuvième octobre 1652. Paris, 1652, 6 pages. Contrefaçon de la Gazette nouvelle en
-          vers burlesques, etc.
-    </p>
-   </abstract>
-   <textClass>
-    <keywords>
-     <term type="form">
-      vers
-     </term>
-     <term subtype="no" type="handwritten_note"/>
-     <term subtype="no" type="table_of_content"/>
-     <term subtype="no" type="illustration"/>
-     <term type="subject">
-      Condé, Louis de Bourbon (1621-1686 ; prince de)
-     </term>
-     <term type="subject">
-      Lorraine, Charles II de (1596-1657 ; duc d'Elbeuf)
-     </term>
-     <term type="subject">
-      Nemours, Marie d'Orléans-Longueville (1625-1707 ; duchesse
-            de)‎
-     </term>
-     <term type="subject">
-      Beaufort, François de Bourbon-Vendôme (1616-1669 ; duc de)
-     </term>
-    </keywords>
-   </textClass>
-  </profileDesc>
-  <revisionDesc>
-   <change status="corrected" when="2022-02-15" who="AB"/>
-  </revisionDesc>
- </teiHeader>
- <text>
-  <body>
-   <p>
-    <pb n="9"/>
-    <lb/>
-    LA NOVVELLE
-    <lb/>
-    GAZETTE
-    <lb/>
-    DV TEMPS.
-    <lb/>
-    EN VERS BVRLESQVES.
-    <lb/>
-    Du dix-neufiéme Octobre 1652.
-    <lb/>
-    A PARIS,
-    <lb/>
-    M. DC. LII.
-    <pb n="10"/>
-    <pb n="11"/>
-    <lb/>
-    LA NOVVELLE
-    <lb/>
-    GAZETTE
-    <lb/>
-    DV TEMPS
-    <lb/>
-    A SON ALTESSE
-    <lb/>
-    MADEMOISELE DE LONGEVFZE.
-    <l>
-     <lb/>
-     Enerenſe &amp; bonne Ptinceſſe, De ces ſots falſificateuts,
-    </l>
-    <l>
-     <lb/>
-     LPour qui toutmon eſprtſan eſe E de Cieus colpoeurs.
-    </l>
-    <l>
-     <lb/>
-     D’vn profond reſpect eſt atteint, Qui par leurs meſquines practiques
-    </l>
-    <l>
-     <lb/>
-     Et dont l’ame, comme le teinte, Les rendent tout à fait publiques
-    </l>
-    <l>
-     <lb/>
-     Brillante d’vn éclat extreſme Dans les Places &amp; Cartefours
-    </l>
-    <l>
-     <lb/>
-     epout dire la blancueur nmeſme; Mais il faut changpet de diſcous.
-    </l>
-    <l>
-     <lb/>
-     Vous auez tant d’aduerſion
-    </l>
-    <l>
-     <lb/>
-     Pour la noire &amp; laſche action
-    </l>
-    <l>
-     <lb/>
-     De ces audacieux beliſtres
-    </l>
-    <l>
-     <lb/>
-     eSe,
-    </l>
-    <l>
-     <lb/>
-     52
-    </l>
-    <l>
-     <lb/>
-     Qui font imprimer mes Epiſtres,
-    </l>
-    <l>
-     <lb/>
-     Que ie crois que voſtre grandeus Le Prince de Condé, Dimanche
-    </l>
-    <l>
-     <lb/>
-     Dereſtant leut peu de candeur, Ayant pris ſa chemiſe blanche,
-    </l>
-    <l>
-     <lb/>
-     Sans donte fera bien-toſt faite Partit de cette ville icy,
-    </l>
-    <l>
-     <lb/>
-     Vn chaſtiement ures-exemplaire Et le Duc de Larraine auſfi;
-    </l>
-    <l>
-     <lb/>
-     A ij
-    </l>
-    <l>
-     <lb/>
-     1l
-    </l>
-    <l>
-     <lb/>
-     E
-    </l>
-    <pb n="12"/>
-    <l>
-     <lb/>
-     3
-    </l>
-    <l>
-     <lb/>
-     11
-    </l>
-    <l>
-     <lb/>
-     l
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     !
-    </l>
-    <l>
-     <lb/>
-     . -ee o¬
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     J
-    </l>
-    <l>
-     <lb/>
-     1l
-    </l>
-    <l>
-     <lb/>
-     11
-    </l>
-    <l>
-     <lb/>
-     s
-    </l>
-    <l>
-     <lb/>
-     ¬
-    </l>
-    <l>
-     <lb/>
-     4
-    </l>
-    <l>
-     <lb/>
-     Eeus Trouppes meſmes de tallerent Employant au bien de la cance
-    </l>
-    <l>
-     <lb/>
-     Qûi deuetsdmmaren fillerent
-    </l>
-    <l>
-     <lb/>
-     Tout ce qu’ils ont de luffiſance,
-    </l>
-    <l>
-     <lb/>
-     Et depus leur chemin ſuiuant,
-    </l>
-    <l>
-     <lb/>
-     Entre le Nord, &amp; le Leuant,
-    </l>
-    <l>
-     <lb/>
-     Traiſnent leur ttirail bellique
-    </l>
-    <l>
-     <lb/>
-     Du ccſté du climat Belgique,
-    </l>
-    <l>
-     <lb/>
-     Mas ſi c’eſt pour mal, ou peur pien,
-    </l>
-    <l>
-     <lb/>
-     Dieu me damne ſi i’en l4ais- nien.
-    </l>
-    <l>
-     <lb/>
-     e.
-    </l>
-    <l>
-     <lb/>
-     1v.
-    </l>
-    <l>
-     <lb/>
-     de eee maligne nie.
-    </l>
-    <l>
-     <lb/>
-     Qu’on appelle la populace,
-    </l>
-    <l>
-     <lb/>
-     Le Duc de Beaufort prudemment
-    </l>
-    <l>
-     <lb/>
-     L’autre iourn plein P.rlemenc
-    </l>
-    <l>
-     <lb/>
-     Abjura leltre inutille
-    </l>
-    <l>
-     <lb/>
-     De Gouurnéur de cetre ville,
-    </l>
-    <l>
-     <lb/>
-     Il ſe deſmit de cét employ,
-    </l>
-    <l>
-     <lb/>
-     Et fit aux volonte du Roy
-    </l>
-    <l>
-     <lb/>
-     Soubmiſſion aſſez exée,
-    </l>
-    <l>
-     <lb/>
-     De laquelle chole il pit acte.
-    </l>
-    <l>
-     <lb/>
-     2
-    </l>
-    <l>
-     <lb/>
-     29
-    </l>
-    <l>
-     <lb/>
-     Mſſieurs Seruient, &amp; le Tellies, 1
-    </l>
-    <l>
-     <lb/>
-     Chacun en ſon particulier,
-    </l>
-    <l>
-     <lb/>
-     Oat, dit-on, quelque pieque enſemble
-    </l>
-    <l>
-     <lb/>
-     Dont i’enrage, car uue ſemble
-    </l>
-    <l>
-     <lb/>
-     Qu’eſtre frois, &amp; ſe diuiſer,
-    </l>
-    <l>
-     <lb/>
-     Ce n’eſt. pas rop bien en vſer, r
-    </l>
-    <l>
-     <lb/>
-     L’vn &amp; l’aurre eſt grmd Politique,
-    </l>
-    <l>
-     <lb/>
-     Et certes, l’Eſtat Monarchique,
-    </l>
-    <l>
-     <lb/>
-     5’ls ſe tenoient nis touſiours
-    </l>
-    <l>
-     <lb/>
-     Prẽédroit, ſans doute, on meilleur cours:
-    </l>
-    <l>
-     <lb/>
-     Aus ne-feueuair aues foree!
-    </l>
-    <l>
-     <lb/>
-     Ces deua grands bõmeslane i’elhaore
-    </l>
-    <l>
-     <lb/>
-     De ſe rejoindre &amp; ieuiuir,
-    </l>
-    <l>
-     <lb/>
-     .
-    </l>
-    <l>
-     <lb/>
-     Et d’eſtre ’anis aà l’aduenis;! 1
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     Si ce n’eſt pour l’amour de moy
-    </l>
-    <l>
-     <lb/>
-     Que ce loit pour l’amour du Roy.
-    </l>
-    <l>
-     <lb/>
-     Lundy dernier, Madamoiſelle,
-    </l>
-    <l>
-     <lb/>
-     Par vne inuention nouuelle,
-    </l>
-    <l>
-     <lb/>
-     Soi qule quſt ou non, le bonque
-    </l>
-    <l>
-     <lb/>
-     Fit vn dlicienx banquet,.
-    </l>
-    <l>
-     <lb/>
-     Et tratta neuf ou dix perſonneA
-    </l>
-    <l>
-     <lb/>
-     Non de ces viandes tres-bonnes,
-    </l>
-    <l>
-     <lb/>
-     Comme mouton, agneau, ahevreau,
-    </l>
-    <l>
-     <lb/>
-     Bicne, Sauglies, CerCooVeau,
-    </l>
-    <l>
-     <lb/>
-     Oyſeaux de mer prisdansdes hares,
-    </l>
-    <l>
-     <lb/>
-     Qui ſont à Paris vn peu rares,
-    </l>
-    <l>
-     <lb/>
-     Phaiſans, Lapins, Levraulrs, Dindons,
-    </l>
-    <l>
-     <lb/>
-     Tanſans larder, qu’auec lardons,
-    </l>
-    <l>
-     <lb/>
-     Chippons, Poules, Poulets, Poulettes,
-    </l>
-    <l>
-     <lb/>
-     Bocfigs, Ortollans, Alloü̈ertes,
-    </l>
-    <l>
-     <lb/>
-     Beccaſſines, &amp; Beccaſſeaux,..
-    </l>
-    <l>
-     <lb/>
-     Quiſonr de-tres-friands morceatx;
-    </l>
-    <l>
-     <lb/>
-     Confe étion d’or, d’ambre, ou peles,
-    </l>
-    <l>
-     <lb/>
-     Pigeons, Petdnix, Cailles &amp; Meles,
-    </l>
-    <l>
-     <lb/>
-     Tuffes, Chappignons, aues d’œ
-    </l>
-    <l>
-     <lb/>
-     Mais tjen ſetement que du bœué5 A
-    </l>
-    <l>
-     <lb/>
-     Dont par de rares artifices,
-    </l>
-    <l>
-     <lb/>
-     On fit quatre ou cinq beaux ſeruices,,
-    </l>
-    <l>
-     <lb/>
-     A ce que diſeng geps loyaux,:
-    </l>
-    <l>
-     <lb/>
-     Langues, poicrnes, alloya,?
-    </l>
-    <l>
-     <lb/>
-     Roſty, bauiil,, capillotades,.
-    </l>
-    <l>
-     <lb/>
-     Tourtes, paſto &amp; carbopaades,
-    </l>
-    <l>
-     <lb/>
-     Et tout ſt bien aſſaſſonné
-    </l>
-    <l>
-     <lb/>
-     Que chaeun dit, i’ay bien diſné,
-    </l>
-    <l>
-     <lb/>
-     Si d’auanure op’me emande
-    </l>
-    <l>
-     <lb/>
-     Pourquox cotrs ſules vianude
-    </l>
-    <l>
-     <lb/>
-     Fue leruije eneo anl’ fepas,
-    </l>
-    <l>
-     <lb/>
-     I.a raiſou, e s l luy pa¬.
-    </l>
-    <l>
-     <lb/>
-     Mais
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <pb n="13"/>
-    <l>
-     <lb/>
-     S.
-    </l>
-    <l>
-     <lb/>
-     is
-    </l>
-    <l>
-     <lb/>
-     Mais ’appris &amp; ſeeus tontle reſte,
-    </l>
-    <l>
-     <lb/>
-     D’vne Dame aymable &amp; modeſte,
-    </l>
-    <l>
-     <lb/>
-     Femme de Monfieur de Monmotr
-    </l>
-    <l>
-     <lb/>
-     Qui vaut plus d’vn million d’or.
-    </l>
-    <l>
-     <lb/>
-     L’autre iour ce Seigneur ou Prince,
-    </l>
-    <l>
-     <lb/>
-     Qui maintenant eſt en Prouince,
-    </l>
-    <l>
-     <lb/>
-     Sçauoir Monſieut de Guemeré,
-    </l>
-    <l>
-     <lb/>
-     En eſpoſe tres-fortuné,
-    </l>
-    <l>
-     <lb/>
-     Eſtant chez Madame du Lude,
-    </l>
-    <l>
-     <lb/>
-     Luy fit à peu pres ce prelude:
-    </l>
-    <l>
-     <lb/>
-     Madame, mon fils premiet né
-    </l>
-    <l>
-     <lb/>
-     Que ’auois quaſi deſtiné
-    </l>
-    <l>
-     <lb/>
-     A porter la Mitre &amp; la Chappe,
-    </l>
-    <l>
-     <lb/>
-     N’a point voulu mordre àla grappe,
-    </l>
-    <l>
-     <lb/>
-     le l’en ay mille fois prié,
-    </l>
-    <l>
-     <lb/>
-     Mais il veut eſtre marié;
-    </l>
-    <l>
-     <lb/>
-     Vous auez vne vnique fille
-    </l>
-    <l>
-     <lb/>
-     Tres-rauiſſante &amp; tries- gentille,
-    </l>
-    <l>
-     <lb/>
-     Madame, quand l vous plaira
-    </l>
-    <l>
-     <lb/>
-     Monſieur mon s l’eſo ooſere,
-    </l>
-    <l>
-     <lb/>
-     Madame, apres cette ſeaonee
-    </l>
-    <l>
-     <lb/>
-     C’eſt à vous à faire reſponce.
-    </l>
-    <l>
-     <lb/>
-     Voila ce que le Prince dit,
-    </l>
-    <l>
-     <lb/>
-     Et la Dame luy reſpondit,
-    </l>
-    <l>
-     <lb/>
-     ee n’eſtpas vn res galbdhomme,
-    </l>
-    <l>
-     <lb/>
-     Et luy propoſeray le fait,
-    </l>
-    <l>
-     <lb/>
-     Auſſi toſt dit, auſſi toſt fait,
-    </l>
-    <l>
-     <lb/>
-     Ele alla conſulter la belle.
-    </l>
-    <l>
-     <lb/>
-     Que ſans faire trop la rebelle,
-    </l>
-    <l>
-     <lb/>
-     Oynt parler du Sacrement
-    </l>
-    <l>
-     <lb/>
-     Y conſentit gaillardement.
-    </l>
-    <l>
-     <lb/>
-     Ainſi ſans aucune remiſe
-    </l>
-    <l>
-     <lb/>
-     Et le iour d’apres qu’à l’Egliſe
-    </l>
-    <l>
-     <lb/>
-     On eut fait le troiſi eſme ban,
-    </l>
-    <l>
-     <lb/>
-     L’heureux Monſieur de Montauban
-    </l>
-    <l>
-     <lb/>
-     Eſpouſa l’aimable pucelle,
-    </l>
-    <l>
-     <lb/>
-     E cette rare iouuencelle
-    </l>
-    <l>
-     <lb/>
-     Accepta ledit iouuencea,
-    </l>
-    <l>
-     <lb/>
-     Qui paſſoit auſſi pout puceaul
-    </l>
-    <l>
-     <lb/>
-     9
-    </l>
-    <l>
-     <lb/>
-     Mardy quine ou ſeize donſaine
-    </l>
-    <l>
-     <lb/>
-     ais il et naytres ebl homme, De Colonnels &amp; Capitaine,
-    </l>
-    <l>
-     <lb/>
-     Et de plus le ſoir &amp; matin
-    </l>
-    <l>
-     <lb/>
-     Il dit ſon breuiaire en Latin,
-    </l>
-    <l>
-     <lb/>
-     E ’auirres bourgeois de Paris,
-    </l>
-    <l>
-     <lb/>
-     Tant rmentons blonds, quemétons gti,
-    </l>
-    <l>
-     <lb/>
-     Son Pater, &amp; touoſonſeruice uice, S’eſqupperent, la matiuee,
-    </l>
-    <l>
-     <lb/>
-     Mieux qu’aueun Clere Preſtre, ou No0¬ Puis parirent l’preſdiſnée,
-    </l>
-    <l>
-     <lb/>
-     Il a vingt &amp; deuxlans paſſez,
-    </l>
-    <l>
-     <lb/>
-     Dtete, vous le connoilsez:
-    </l>
-    <l>
-     <lb/>
-     Enfin ſi ce fils dont ie parle
-    </l>
-    <l>
-     <lb/>
-     ’our aller cmne depntés
-    </l>
-    <l>
-     <lb/>
-     Preſenres a lents Maieſtés
-    </l>
-    <l>
-     <lb/>
-     Vne requeſte hunble &amp; ciuile
-    </l>
-    <l>
-     <lb/>
-     omme Louys, &amp; non pas Charle, De rerournet en cee ville;
-    </l>
-    <l>
-     <lb/>
-     I’honmeur d’ere voſure gre. Leut rendez vous fus a Ruel:
-    </l>
-    <l>
-     <lb/>
-     le l’ay de bon eœur conſacré
-    </l>
-    <l>
-     <lb/>
-     Mais d’antaat que le camp cruoel
-    </l>
-    <l>
-     <lb/>
-     oun’eſtre eſpous d voſtre Infane De ces beles troupes d’Eſpegne.
-    </l>
-    <l>
-     <lb/>
-     u’il trouue tout à fair charmante, Ont our taſlé par la campegn¬,
-    </l>
-    <l>
-     <lb/>
-     Ile viens icy ſans heſiter
-    </l>
-    <l>
-     <lb/>
-     La parole vous en porter,
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     Monſieur, ie vais trouuer ma fille,
-    </l>
-    <l>
-     <lb/>
-     Qui ie vois trauaille à l’eſguille,
-    </l>
-    <l>
-     <lb/>
-     Eux craignant de ne trouuer pas
-    </l>
-    <l>
-     <lb/>
-     Dequoy faire vn ample repas,
-    </l>
-    <l>
-     <lb/>
-     B
-    </l>
-    <l>
-     <lb/>
-     E
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <pb n="14"/>
-    <l>
-     <lb/>
-     31
-    </l>
-    <l>
-     <lb/>
-     1l
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     31
-    </l>
-    <l>
-     <lb/>
-     3
-    </l>
-    <l>
-     <lb/>
-     3
-    </l>
-    <l>
-     <lb/>
-     ls porterent force mangeaille
-    </l>
-    <l>
-     <lb/>
-     6
-    </l>
-    <l>
-     <lb/>
-     Cent mille eſeis d’agent omptan,
-    </l>
-    <l>
-     <lb/>
-     Pour la ctapule &amp; la ripaille,
-    </l>
-    <l>
-     <lb/>
-     Office vrayment important.
-    </l>
-    <l>
-     <lb/>
-     Fromage, bœuf, mouron, &amp; lard, Honnorable, brllant, &amp; leſte, ;
-    </l>
-    <l>
-     <lb/>
-     Du gbies, pas pour vn liatd,
-    </l>
-    <l>
-     <lb/>
-     A cauſe du cotdon celaſte,
-    </l>
-    <l>
-     <lb/>
-     Mas quantité de poulets d’indes,
-    </l>
-    <l>
-     <lb/>
-     Et du uin pours faire des brindes.
-    </l>
-    <l>
-     <lb/>
-     e,
-    </l>
-    <l>
-     <lb/>
-     8
-    </l>
-    <l>
-     <lb/>
-     Iln’et pas que vous n’ayeſçeu,
-    </l>
-    <l>
-     <lb/>
-     Que la Coureſſe de B ſlu
-    </l>
-    <l>
-     <lb/>
-     En atrrairs, diton, ſans eſgalle,
-    </l>
-    <l>
-     <lb/>
-     De la belle du Pont, Rualle,
-    </l>
-    <l>
-     <lb/>
-     Apres maint trauai &amp; ſoucy
-    </l>
-    <l>
-     <lb/>
-     Et enfin artiuée icy:
-    </l>
-    <l>
-     <lb/>
-     Mais on doute encor ſi ſes larmes,
-    </l>
-    <l>
-     <lb/>
-     Sa douceur, ſa vertu, ſes cdhaaraes,
-    </l>
-    <l>
-     <lb/>
-     Et ſa rare, &amp; ſainte amitié,
-    </l>
-    <l>
-     <lb/>
-     Inſpireront quelque pitié
-    </l>
-    <l>
-     <lb/>
-     Au cœur nouueau venu d’Eſpagne,
-    </l>
-    <l>
-     <lb/>
-     Dont elle ſe dit la compagne.
-    </l>
-    <l>
-     <lb/>
-     e
-    </l>
-    <l>
-     <lb/>
-     e,
-    </l>
-    <l>
-     <lb/>
-     9
-    </l>
-    <l>
-     <lb/>
-     n hoane arriué de de nouueau,
-    </l>
-    <l>
-     <lb/>
-     M’a dit que Monfieur de Nouueau
-    </l>
-    <l>
-     <lb/>
-     Auoit offere groſſe finance
-    </l>
-    <l>
-     <lb/>
-     Pour certe charge d’importance
-    </l>
-    <l>
-     <lb/>
-     Par qui Monſieur de Chauigny
-    </l>
-    <l>
-     <lb/>
-     Deuenu riche à l’infiny
-    </l>
-    <l>
-     <lb/>
-     s
-    </l>
-    <l>
-     <lb/>
-     Toute laCour qu’a Sainct Germain
-    </l>
-    <l>
-     <lb/>
-     On attendoi de longue main,
-    </l>
-    <l>
-     <lb/>
-     I vin leudy prendre ſou poſte,
-    </l>
-    <l>
-     <lb/>
-     Tel en carrtoſſe, el en poſte,
-    </l>
-    <l>
-     <lb/>
-     A pied, en fourgonenrelais,
-    </l>
-    <l>
-     <lb/>
-     Tant les maiſtres, que les valets;
-    </l>
-    <l>
-     <lb/>
-     Pluſieuts gens ſi toſt qu’ils leſceurent,
-    </l>
-    <l>
-     <lb/>
-     En grande diligence y feurent
-    </l>
-    <l>
-     <lb/>
-     Pour monſtrer en faiſant leur Cour,
-    </l>
-    <l>
-     <lb/>
-     Leur foy, leus zele, &amp; leuramour,
-    </l>
-    <l>
-     <lb/>
-     I’ay ſceu meſmes, que voſtre Arnsss
-    </l>
-    <l>
-     <lb/>
-     Teſmoignan beaucoup d’allegteſſe,
-    </l>
-    <l>
-     <lb/>
-     Pour y faire ſon compllment
-    </l>
-    <l>
-     <lb/>
-     S’y tranſporta parellemena;
-    </l>
-    <l>
-     <lb/>
-     Ie ne ſç̧ay pas ſi ce voyage
-    </l>
-    <l>
-     <lb/>
-     Sera d’vn iour, ou dauanage
-    </l>
-    <l>
-     <lb/>
-     Mais ſoiz auiqurd’huy, ſoit demain?
-    </l>
-    <l>
-     <lb/>
-     Soie iey ſoit à ſaint Germain,
-    </l>
-    <l>
-     <lb/>
-     La letre par moy griffonée
-    </l>
-    <l>
-     <lb/>
-     Vous ſera portée ou donanée.
-    </l>
-    <l>
-     <lb/>
-     es
-    </l>
-    <l>
-     <lb/>
-     Fait dans le propre Hoftel d’vn Da
-    </l>
-    <l>
-     <lb/>
-     Eſtoit Secretaire de l’Ordre,
-    </l>
-    <l>
-     <lb/>
-     Mais on en veut ſans rien deſmordre Le lendenaain du lour ſaint Lue.
-    </l>
-    <l>
-     <lb/>
-     FIN.
-    </l>
-   </p>
-  </body>
- </text>
+          vers burlesques, etc.</p>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">vers</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
+          <term type="subject">Condé, Louis de Bourbon (1621-1686 ; prince de)</term>
+          <term type="subject">Lorraine, Charles II de (1596-1657 ; duc d'Elbeuf)</term>
+          <term type="subject">Nemours, Marie d'Orléans-Longueville (1625-1707 ; duchesse
+            de)‎</term>
+          <term type="subject">Beaufort, François de Bourbon-Vendôme (1616-1669 ; duc de)</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-02-15" who="AB"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="9"/>
+        <lb/>LA NOVVELLE
+        <lb/>GAZETTE
+        <lb/>DV TEMPS.
+        <lb/>EN VERS BVRLESQVES.
+        <lb/>Du dix-neufiéme Octobre 1652.
+        <lb/>A PARIS,
+        <lb/>M. DC. LII.<pb n="10"/>
+        <pb n="11"/>
+        <lb/>LA NOVVELLE
+        <lb/>GAZETTE
+        <lb/>DV TEMPS
+        <lb/>A SON ALTESSE
+        <lb/>MADEMOISELE DE LONGEVFZE.
+        <l>
+          <lb/>Enerenſe &amp; bonne Ptinceſſe, De ces ſots falſificateuts,</l>
+        <l>
+          <lb/>LPour qui toutmon eſprtſan eſe E de Cieus colpoeurs.</l>
+        <l>
+          <lb/>D’vn profond reſpect eſt atteint, Qui par leurs meſquines practiques</l>
+        <l>
+          <lb/>Et dont l’ame, comme le teinte, Les rendent tout à fait publiques</l>
+        <l>
+          <lb/>Brillante d’vn éclat extreſme Dans les Places &amp; Cartefours</l>
+        <l>
+          <lb/>epout dire la blancueur nmeſme; Mais il faut changpet de diſcous.</l>
+        <l>
+          <lb/>Vous auez tant d’aduerſion</l>
+        <l>
+          <lb/>Pour la noire &amp; laſche action</l>
+        <l>
+          <lb/>De ces audacieux beliſtres</l>
+        <l>
+          <lb/>eSe,</l>
+        <l>
+          <lb/>52</l>
+        <l>
+          <lb/>Qui font imprimer mes Epiſtres,</l>
+        <l>
+          <lb/>Que ie crois que voſtre grandeus Le Prince de Condé, Dimanche</l>
+        <l>
+          <lb/>Dereſtant leut peu de candeur, Ayant pris ſa chemiſe blanche,</l>
+        <l>
+          <lb/>Sans donte fera bien-toſt faite Partit de cette ville icy,</l>
+        <l>
+          <lb/>Vn chaſtiement ures-exemplaire Et le Duc de Larraine auſfi;</l>
+        <l>
+          <lb/>A ij</l>
+        <l>
+          <lb/>1l</l>
+        <l>
+          <lb/>E</l>
+        <pb n="12"/>
+        <l>
+          <lb/>3</l>
+        <l>
+          <lb/>11</l>
+        <l>
+          <lb/> l</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>!</l>
+        <l>
+          <lb/> . -ee o¬</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/> J</l>
+        <l>
+          <lb/>1l</l>
+        <l>
+          <lb/>11</l>
+        <l>
+          <lb/> s</l>
+        <l>
+          <lb/>¬</l>
+        <l>
+          <lb/>4</l>
+        <l>
+          <lb/> Eeus Trouppes meſmes de tallerent Employant au bien de la cance</l>
+        <l>
+          <lb/> Qûi deuetsdmmaren fillerent</l>
+        <l>
+          <lb/> Tout ce qu’ils ont de luffiſance,</l>
+        <l>
+          <lb/>Et depus leur chemin ſuiuant,</l>
+        <l>
+          <lb/>Entre le Nord, &amp; le Leuant,</l>
+        <l>
+          <lb/>Traiſnent leur ttirail bellique</l>
+        <l>
+          <lb/>Du ccſté du climat Belgique,</l>
+        <l>
+          <lb/>Mas ſi c’eſt pour mal, ou peur pien,</l>
+        <l>
+          <lb/>Dieu me damne ſi i’en l4ais- nien.</l>
+        <l>
+          <lb/>e.</l>
+        <l>
+          <lb/>1v.</l>
+        <l>
+          <lb/> de eee maligne nie.</l>
+        <l>
+          <lb/>Qu’on appelle la populace,</l>
+        <l>
+          <lb/>Le Duc de Beaufort prudemment</l>
+        <l>
+          <lb/>L’autre iourn plein P.rlemenc</l>
+        <l>
+          <lb/>Abjura leltre inutille</l>
+        <l>
+          <lb/>De Gouurnéur de cetre ville,</l>
+        <l>
+          <lb/>Il ſe deſmit de cét employ,</l>
+        <l>
+          <lb/>Et fit aux volonte du Roy</l>
+        <l>
+          <lb/>Soubmiſſion aſſez exée,</l>
+        <l>
+          <lb/>De laquelle chole il pit acte.</l>
+        <l>
+          <lb/>2</l>
+        <l>
+          <lb/>29</l>
+        <l>
+          <lb/>Mſſieurs Seruient, &amp; le Tellies, 1</l>
+        <l>
+          <lb/>Chacun en ſon particulier,</l>
+        <l>
+          <lb/>Oat, dit-on, quelque pieque enſemble</l>
+        <l>
+          <lb/>Dont i’enrage, car uue ſemble</l>
+        <l>
+          <lb/>Qu’eſtre frois, &amp; ſe diuiſer,</l>
+        <l>
+          <lb/>Ce n’eſt. pas rop bien en vſer, r</l>
+        <l>
+          <lb/>L’vn &amp; l’aurre eſt grmd Politique,</l>
+        <l>
+          <lb/>Et certes, l’Eſtat Monarchique,</l>
+        <l>
+          <lb/>5’ls ſe tenoient nis touſiours</l>
+        <l>
+          <lb/>Prẽédroit, ſans doute, on meilleur cours:</l>
+        <l>
+          <lb/>Aus ne-feueuair aues foree!</l>
+        <l>
+          <lb/>Ces deua grands bõmeslane i’elhaore</l>
+        <l>
+          <lb/>De ſe rejoindre &amp; ieuiuir,</l>
+        <l>
+          <lb/>.</l>
+        <l>
+          <lb/>Et d’eſtre ’anis aà l’aduenis;! 1</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>Si ce n’eſt pour l’amour de moy</l>
+        <l>
+          <lb/>Que ce loit pour l’amour du Roy.</l>
+        <l>
+          <lb/> Lundy dernier, Madamoiſelle,</l>
+        <l>
+          <lb/>Par vne inuention nouuelle,</l>
+        <l>
+          <lb/>Soi qule quſt ou non, le bonque</l>
+        <l>
+          <lb/>Fit vn dlicienx banquet,.</l>
+        <l>
+          <lb/>Et tratta neuf ou dix perſonneA</l>
+        <l>
+          <lb/>Non de ces viandes tres-bonnes,</l>
+        <l>
+          <lb/>Comme mouton, agneau, ahevreau,</l>
+        <l>
+          <lb/>Bicne, Sauglies, CerCooVeau,</l>
+        <l>
+          <lb/>Oyſeaux de mer prisdansdes hares,</l>
+        <l>
+          <lb/>Qui ſont à Paris vn peu rares,</l>
+        <l>
+          <lb/>Phaiſans, Lapins, Levraulrs, Dindons,</l>
+        <l>
+          <lb/>Tanſans larder, qu’auec lardons,</l>
+        <l>
+          <lb/>Chippons, Poules, Poulets, Poulettes,</l>
+        <l>
+          <lb/>Bocfigs, Ortollans, Alloü̈ertes,</l>
+        <l>
+          <lb/>Beccaſſines, &amp; Beccaſſeaux,..</l>
+        <l>
+          <lb/>Quiſonr de-tres-friands morceatx;</l>
+        <l>
+          <lb/>Confe étion d’or, d’ambre, ou peles,</l>
+        <l>
+          <lb/>Pigeons, Petdnix, Cailles &amp; Meles,</l>
+        <l>
+          <lb/>Tuffes, Chappignons, aues d’œ</l>
+        <l>
+          <lb/>Mais tjen ſetement que du bœué5 A</l>
+        <l>
+          <lb/>Dont par de rares artifices,</l>
+        <l>
+          <lb/>On fit quatre ou cinq beaux ſeruices,,</l>
+        <l>
+          <lb/>A ce que diſeng geps loyaux,:</l>
+        <l>
+          <lb/>Langues, poicrnes, alloya,?</l>
+        <l>
+          <lb/>Roſty, bauiil,, capillotades,.</l>
+        <l>
+          <lb/>Tourtes, paſto &amp; carbopaades,</l>
+        <l>
+          <lb/>Et tout ſt bien aſſaſſonné</l>
+        <l>
+          <lb/>Que chaeun dit, i’ay bien diſné,</l>
+        <l>
+          <lb/>Si d’auanure op’me emande</l>
+        <l>
+          <lb/>Pourquox cotrs ſules vianude</l>
+        <l>
+          <lb/>Fue leruije eneo anl’ fepas,</l>
+        <l>
+          <lb/>I.a raiſou, e s l luy pa¬.</l>
+        <l>
+          <lb/>Mais</l>
+        <l>
+          <lb/>1</l>
+        <pb n="13"/>
+        <l>
+          <lb/>S.</l>
+        <l>
+          <lb/>is</l>
+        <l>
+          <lb/>Mais ’appris &amp; ſeeus tontle reſte,</l>
+        <l>
+          <lb/>D’vne Dame aymable &amp; modeſte,</l>
+        <l>
+          <lb/>Femme de Monfieur de Monmotr</l>
+        <l>
+          <lb/>Qui vaut plus d’vn million d’or.</l>
+        <l>
+          <lb/>L’autre iour ce Seigneur ou Prince,</l>
+        <l>
+          <lb/>Qui maintenant eſt en Prouince,</l>
+        <l>
+          <lb/>Sçauoir Monſieut de Guemeré,</l>
+        <l>
+          <lb/>En eſpoſe tres-fortuné,</l>
+        <l>
+          <lb/>Eſtant chez Madame du Lude,</l>
+        <l>
+          <lb/>Luy fit à peu pres ce prelude:</l>
+        <l>
+          <lb/>Madame, mon fils premiet né</l>
+        <l>
+          <lb/>Que ’auois quaſi deſtiné</l>
+        <l>
+          <lb/>A porter la Mitre &amp; la Chappe,</l>
+        <l>
+          <lb/>N’a point voulu mordre àla grappe,</l>
+        <l>
+          <lb/>le l’en ay mille fois prié,</l>
+        <l>
+          <lb/>Mais il veut eſtre marié;</l>
+        <l>
+          <lb/>Vous auez vne vnique fille</l>
+        <l>
+          <lb/>Tres-rauiſſante &amp; tries- gentille,</l>
+        <l>
+          <lb/>Madame, quand l vous plaira</l>
+        <l>
+          <lb/>Monſieur mon s l’eſo ooſere,</l>
+        <l>
+          <lb/>Madame, apres cette ſeaonee</l>
+        <l>
+          <lb/>C’eſt à vous à faire reſponce.</l>
+        <l>
+          <lb/>Voila ce que le Prince dit,</l>
+        <l>
+          <lb/>Et la Dame luy reſpondit,</l>
+        <l>
+          <lb/>ee n’eſtpas vn res galbdhomme,</l>
+        <l>
+          <lb/>Et luy propoſeray le fait,</l>
+        <l>
+          <lb/>Auſſi toſt dit, auſſi toſt fait,</l>
+        <l>
+          <lb/>Ele alla conſulter la belle.</l>
+        <l>
+          <lb/>Que ſans faire trop la rebelle,</l>
+        <l>
+          <lb/>Oynt parler du Sacrement</l>
+        <l>
+          <lb/>Y conſentit gaillardement.</l>
+        <l>
+          <lb/>Ainſi ſans aucune remiſe</l>
+        <l>
+          <lb/>Et le iour d’apres qu’à l’Egliſe</l>
+        <l>
+          <lb/>On eut fait le troiſi eſme ban,</l>
+        <l>
+          <lb/>L’heureux Monſieur de Montauban</l>
+        <l>
+          <lb/>Eſpouſa l’aimable pucelle,</l>
+        <l>
+          <lb/>E cette rare iouuencelle</l>
+        <l>
+          <lb/>Accepta ledit iouuencea,</l>
+        <l>
+          <lb/>Qui paſſoit auſſi pout puceaul</l>
+        <l>
+          <lb/>9</l>
+        <l>
+          <lb/>Mardy quine ou ſeize donſaine</l>
+        <l>
+          <lb/>ais il et naytres ebl homme, De Colonnels &amp; Capitaine,</l>
+        <l>
+          <lb/>Et de plus le ſoir &amp; matin</l>
+        <l>
+          <lb/>Il dit ſon breuiaire en Latin,</l>
+        <l>
+          <lb/>E ’auirres bourgeois de Paris,</l>
+        <l>
+          <lb/>Tant rmentons blonds, quemétons gti,</l>
+        <l>
+          <lb/>Son Pater, &amp; touoſonſeruice uice, S’eſqupperent, la matiuee,</l>
+        <l>
+          <lb/>Mieux qu’aueun Clere Preſtre, ou No0¬ Puis parirent l’preſdiſnée,</l>
+        <l>
+          <lb/>Il a vingt &amp; deuxlans paſſez,</l>
+        <l>
+          <lb/>Dtete, vous le connoilsez:</l>
+        <l>
+          <lb/>Enfin ſi ce fils dont ie parle</l>
+        <l>
+          <lb/>’our aller cmne depntés</l>
+        <l>
+          <lb/>Preſenres a lents Maieſtés</l>
+        <l>
+          <lb/> Vne requeſte hunble &amp; ciuile</l>
+        <l>
+          <lb/>omme Louys, &amp; non pas Charle, De rerournet en cee ville;</l>
+        <l>
+          <lb/> I’honmeur d’ere voſure gre. Leut rendez vous fus a Ruel:</l>
+        <l>
+          <lb/>le l’ay de bon eœur conſacré</l>
+        <l>
+          <lb/> Mais d’antaat que le camp cruoel</l>
+        <l>
+          <lb/>oun’eſtre eſpous d voſtre Infane De ces beles troupes d’Eſpegne.</l>
+        <l>
+          <lb/>u’il trouue tout à fair charmante, Ont our taſlé par la campegn¬,</l>
+        <l>
+          <lb/>Ile viens icy ſans heſiter</l>
+        <l>
+          <lb/>La parole vous en porter,</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>Monſieur, ie vais trouuer ma fille,</l>
+        <l>
+          <lb/>Qui ie vois trauaille à l’eſguille,</l>
+        <l>
+          <lb/>Eux craignant de ne trouuer pas</l>
+        <l>
+          <lb/>Dequoy faire vn ample repas,</l>
+        <l>
+          <lb/>B</l>
+        <l>
+          <lb/>E</l>
+        <l>
+          <lb/>1</l>
+        <pb n="14"/>
+        <l>
+          <lb/>31</l>
+        <l>
+          <lb/>1l</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>31</l>
+        <l>
+          <lb/>3</l>
+        <l>
+          <lb/>3</l>
+        <l>
+          <lb/> ls porterent force mangeaille</l>
+        <l>
+          <lb/>6</l>
+        <l>
+          <lb/> Cent mille eſeis d’agent omptan,</l>
+        <l>
+          <lb/>Pour la ctapule &amp; la ripaille,</l>
+        <l>
+          <lb/>Office vrayment important.</l>
+        <l>
+          <lb/>Fromage, bœuf, mouron, &amp; lard, Honnorable, brllant, &amp; leſte, ;</l>
+        <l>
+          <lb/>Du gbies, pas pour vn liatd,</l>
+        <l>
+          <lb/>A cauſe du cotdon celaſte,</l>
+        <l>
+          <lb/>Mas quantité de poulets d’indes,</l>
+        <l>
+          <lb/>Et du uin pours faire des brindes.</l>
+        <l>
+          <lb/>e,</l>
+        <l>
+          <lb/> 8</l>
+        <l>
+          <lb/>Iln’et pas que vous n’ayeſçeu,</l>
+        <l>
+          <lb/>Que la Coureſſe de B ſlu</l>
+        <l>
+          <lb/>En atrrairs, diton, ſans eſgalle,</l>
+        <l>
+          <lb/>De la belle du Pont, Rualle,</l>
+        <l>
+          <lb/>Apres maint trauai &amp; ſoucy</l>
+        <l>
+          <lb/>Et enfin artiuée icy:</l>
+        <l>
+          <lb/>Mais on doute encor ſi ſes larmes,</l>
+        <l>
+          <lb/>Sa douceur, ſa vertu, ſes cdhaaraes,</l>
+        <l>
+          <lb/>Et ſa rare, &amp; ſainte amitié,</l>
+        <l>
+          <lb/>Inſpireront quelque pitié</l>
+        <l>
+          <lb/>Au cœur nouueau venu d’Eſpagne,</l>
+        <l>
+          <lb/>Dont elle ſe dit la compagne.</l>
+        <l>
+          <lb/>e</l>
+        <l>
+          <lb/>e,</l>
+        <l>
+          <lb/> 9</l>
+        <l>
+          <lb/>n hoane arriué de de nouueau,</l>
+        <l>
+          <lb/>M’a dit que Monfieur de Nouueau</l>
+        <l>
+          <lb/>Auoit offere groſſe finance</l>
+        <l>
+          <lb/>Pour certe charge d’importance</l>
+        <l>
+          <lb/>Par qui Monſieur de Chauigny</l>
+        <l>
+          <lb/>Deuenu riche à l’infiny</l>
+        <l>
+          <lb/>s</l>
+        <l>
+          <lb/>Toute laCour qu’a Sainct Germain</l>
+        <l>
+          <lb/>On attendoi de longue main,</l>
+        <l>
+          <lb/>I vin leudy prendre ſou poſte,</l>
+        <l>
+          <lb/>Tel en carrtoſſe, el en poſte,</l>
+        <l>
+          <lb/>A pied, en fourgonenrelais,</l>
+        <l>
+          <lb/>Tant les maiſtres, que les valets;</l>
+        <l>
+          <lb/>Pluſieuts gens ſi toſt qu’ils leſceurent,</l>
+        <l>
+          <lb/>En grande diligence y feurent</l>
+        <l>
+          <lb/>Pour monſtrer en faiſant leur Cour,</l>
+        <l>
+          <lb/> Leur foy, leus zele, &amp; leuramour,</l>
+        <l>
+          <lb/>I’ay ſceu meſmes, que voſtre Arnsss</l>
+        <l>
+          <lb/>Teſmoignan beaucoup d’allegteſſe,</l>
+        <l>
+          <lb/>Pour y faire ſon compllment</l>
+        <l>
+          <lb/>S’y tranſporta parellemena;</l>
+        <l>
+          <lb/>Ie ne ſç̧ay pas ſi ce voyage</l>
+        <l>
+          <lb/>Sera d’vn iour, ou dauanage</l>
+        <l>
+          <lb/>Mais ſoiz auiqurd’huy, ſoit demain?</l>
+        <l>
+          <lb/>Soie iey ſoit à ſaint Germain,</l>
+        <l>
+          <lb/>La letre par moy griffonée</l>
+        <l>
+          <lb/>Vous ſera portée ou donanée.</l>
+        <l>
+          <lb/>es</l>
+        <l>
+          <lb/>Fait dans le propre Hoftel d’vn Da</l>
+        <l>
+          <lb/>Eſtoit Secretaire de l’Ordre,</l>
+        <l>
+          <lb/>Mais on en veut ſans rien deſmordre Le lendenaain du lour ſaint Lue.</l>
+        <l>
+          <lb/>FIN.</l>
+      </p>
+    </body>
+  </text>
 </TEI>

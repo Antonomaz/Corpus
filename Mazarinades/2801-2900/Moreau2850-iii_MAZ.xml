@@ -1,1018 +1,542 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
 <?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
-<TEI xml:id="Moreau2850-iii_MAZ" xmlns="http://www.tei-c.org/ns/1.0">
- <teiHeader>
-  <fileDesc>
-   <titleStmt>
-    <title source="Moreau" type="main">
-     Le Premier mercure de Compiègne, depuis l'arrivée du
-          roi en cette ville jusques au jeudi 10 du mois de juin 1649, en vers burlesques.
-    </title>
-    <title type="sub">
-     Édition Antonomaz
-    </title>
-    <respStmt>
-     <resp>
-      Chaîne de traitement
-     </resp>
-     <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">
-      Abiven Karine
-     </persName>
-     <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">
-      Lejeune Gaël
-     </persName>
-     <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">
-      Tanguy
-            Jean-Baptiste
-     </persName>
-     <persName ref="orcid:0000-0003-0850-8266" role="engineer">
-      Bartz Alexandre
-     </persName>
-    </respStmt>
-   </titleStmt>
-   <publicationStmt>
-    <publisher>
-     Projet ANTONOMAZ / Sorbonne Université
-    </publisher>
-    <ref target="https://github.com/Antonomaz"/>
-    <date type="file_creation" when="2022-01-31">
-     31 janvier 2022
-    </date>
-    <availability n="cc-by" status="restricted">
-     <licence target="https://creativecommons.org/licenses/by/4.0"/>
-    </availability>
-   </publicationStmt>
-   <sourceDesc>
-    <bibl>
-     <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz18492"/>
-     <author/>
-     <title source="Mazarine">
-      Le troisiesme Mercure de Compiegne et d'Amiens, depuis le
-            dix-neuf juin, jusques au I. jour de juillet 1649.
-     </title>
-     <pubPlace source="Mazarine">
-      Sans Lieu
-     </pubPlace>
-     <publisher>
-      <persName>
-       Sans Nom
-      </persName>
-     </publisher>
-     <date source="Mazarine" when="1649">
-      1649
-     </date>
-     <date notAfter="1649-07-07" notBefore="1649-07-01" source="Carrier">
-      première semaine de
-            juillet 1649
-     </date>
-     <extent>
-      <measure quantity="8" unit="page"/>
-     </extent>
-     <note type="format">
-      in-4
-     </note>
-     <relatedItem cert="high" source="Mazarine" subtype="BM50311" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50311" type="identifier"/>
-    </bibl>
-    <msDesc>
-     <msIdentifier>
-      <settlement ref="geonames:2988507">
-       Paris
-      </settlement>
-      <institution>
-       Bibliothèque Mazarine
-      </institution>
-      <repository/>
-      <idno type="cote">
-       M10535-3
-      </idno>
-     </msIdentifier>
-     <history>
-      <provenance>
-       <stamp>
-        False
-       </stamp>
-      </provenance>
-     </history>
-    </msDesc>
-   </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-   <projectDesc>
-    <p>
-     Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2850-iii_MAZ">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Premier (le) mercure de Compiègne, depuis l'arrivée du
+          roi en cette ville jusques au jeudi 10 du mois de juin 1649, en vers burlesques.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+            Jean-Baptiste</persName>
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz"/>
+        <date type="file_creation" when="2022-01-31">31 janvier 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz18492"/>
+          <author/>
+          <title source="Mazarine">Le troisiesme Mercure de Compiegne et d'Amiens, depuis le
+            dix-neuf juin, jusques au I. jour de juillet 1649.</title>
+          <pubPlace source="Mazarine">Sans Lieu</pubPlace>
+          <publisher>
+            <persName>Sans Nom</persName>
+          </publisher>
+          <date source="Mazarine" when="1649">1649</date>
+          <date source="Carrier" notBefore="1649-07-01" notAfter="1649-07-07">première semaine de
+            juillet 1649</date>
+          <extent>
+            <measure unit="page" quantity="8"/>
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="BM50311" cert="high"
+            target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50311"/>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2988507">Paris</settlement>
+            <institution>Bibliothèque Mazarine</institution>
+            <repository/>
+            <idno type="cote">M10535-3</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>False</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
-          auteur oublié.
-    </p>
-    <p>
-     Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
-          bibliothèques numériques publiques et de Google livres.
-    </p>
-    <p>
-     L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.
-    </p>
-   </projectDesc>
-   <editorialDecl>
-    <p/>
-   </editorialDecl>
-  </encodingDesc>
-  <profileDesc>
-   <langUsage>
-    <language ident="fra">
-     Document en français
-    </language>
-   </langUsage>
-   <abstract>
-    <p source="Mazarine">
-     En vers octosyllabes. Évoque le siège de Cambrai par les troupes du
+          auteur oublié.</p>
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+          bibliothèques numériques publiques et de Google livres.</p>
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p/>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine">En vers octosyllabes. Évoque le siège de Cambrai par les troupes du
           comte d'Harcourt. D'après Hubert Carrier, texte paru dans la première semaine de juillet
-          1649 (Bibliothèque Mazarine, Ms. 4682-4, f. 237r).
-    </p>
-    <p source="Moreau">
-     2850. Premier (le) mercure de Compiègne, depuis l'ar rivée du roi en
+          1649 (Bibliothèque Mazarine, Ms. 4682-4, f. 237r).</p>
+        <p source="Moreau">2850. Premier (le) mercure de Compiègne, depuis l'ar rivée du roi en
           cette ville jusques au jeudi 10 du mois de juin 1649, en vers burlesques.Sans Lieu, 1649.
-          Trois numéros de 11 et 12 pages.
-    </p>
-   </abstract>
-   <textClass>
-    <keywords>
-     <term type="form">
-      vers
-     </term>
-     <term subtype="no" type="handwritten_note"/>
-     <term subtype="no" type="table_of_content"/>
-     <term subtype="no" type="illustration"/>
-     <term type="subject">
-      Louis XIV (1638-1715 ; roi de France)
-     </term>
-     <term type="subject">
-      Anne d'Autriche (1601-1666 ; reine de France)
-     </term>
-     <term type="subject">
-      Orléans, Philippe (1640-1701 ; duc d')
-     </term>
-     <term type="subject">
-      Harcourt, Henri de Lorraine (1601-1666 ; comte d')
-     </term>
-     <term type="subject">
-      Cambrai (Pas-de-Calais) -- 1648 (Siège)
-     </term>
-     <term type="subject">
-      Compiègne (Oise)
-     </term>
-     <term type="subject">
-      Amiens (Somme)
-     </term>
-    </keywords>
-   </textClass>
-  </profileDesc>
-  <revisionDesc>
-   <change status="corrected" when="2022-02-16" who="AB"/>
-  </revisionDesc>
- </teiHeader>
- <text>
-  <body>
-   <p>
-    <pb n="9"/>
-    <lb/>
-    LE TROISIESME
-    <lb/>
-    MERCVRE
-    <lb/>
-    DE
-    <lb/>
-    COMPIEGNE
-    <lb/>
-    ET D'AMIENS
-    <lb/>
-    depuis le dix-neuf Iuin iuſques
-    <lb/>
-    au 1. iour de luillet 1649.
-    <lb/>
-    M. DC. XLIX.
-    <pb n="10"/>
-    <pb n="11"/>
-    <lb/>
-    3
-    <lb/>
-    LE TROISIESME
-    <lb/>
-    MERCVRE
-    <lb/>
-    DE
-    <lb/>
-    COMPIEGNE
-    <lb/>
-    ET D’AMIENS.
-    <lb/>
-    DEPVIS LE19. VIN, IVSQVE
-    <lb/>
-    au I. iour de Iuillet 1649.
-    <l>
-     <lb/>
-     Etroiſieſme Mereure enſeigne
-    </l>
-    <l>
-     <lb/>
-     AAue dans la ville de Compiegne
-    </l>
-    <l>
-     <lb/>
-     Les Bourgeois ſont fort meſcontans,
-    </l>
-    <l>
-     <lb/>
-     Quand la Courà̀ ſi peu de temps
-    </l>
-    <l>
-     <lb/>
-     Demeure dans leur bonne Ville
-    </l>
-    <l>
-     <lb/>
-     Qui ne la rendoit moins fertille
-    </l>
-    <l>
-     <lb/>
-     En prouiſions qu’en grands threſors:
-    </l>
-    <l>
-     <lb/>
-     Mais ce qui rend doux leurs remords
-    </l>
-    <l>
-     <lb/>
-     Eſt l’efpoir de voir noſtre Prince
-    </l>
-    <l>
-     <lb/>
-     Dien-oſt dans la meſme Prounce,
-    </l>
-    <l>
-     <lb/>
-     Et ſa Cour dans ceſte Cité́:
-    </l>
-    <l>
-     <lb/>
-     Car on dit que ſa Maieſleé
-    </l>
-    <l>
-     <lb/>
-     Doit partir d’Amiens ſans doute
-    </l>
-    <pb n="12"/>
-    <l>
-     <lb/>
-     l
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     ..- -
-    </l>
-    <l>
-     <lb/>
-     4
-    </l>
-    <l>
-     <lb/>
-     Lors qu’il aura donné la route,
-    </l>
-    <l>
-     <lb/>
-     Et les Ordres du Pays-bas
-    </l>
-    <l>
-     <lb/>
-     .
-    </l>
-    <l>
-     <lb/>
-     Pour bien conduire ſes ſoldats,
-    </l>
-    <l>
-     <lb/>
-     Lors que noſtre ieuneMonarque
-    </l>
-    <l>
-     <lb/>
-     ûigſi qeaphylemo marqur r
-    </l>
-    <l>
-     <lb/>
-     I1
-    </l>
-    <l>
-     <lb/>
-     rrpéans miens
-    </l>
-    <l>
-     <lb/>
-     ltrdunreſtene eldA 1
-    </l>
-    <l>
-     <lb/>
-     Durant les pre mieres iournées
-    </l>
-    <l>
-     <lb/>
-     Que les Harangues ordonnées
-    </l>
-    <l>
-     <lb/>
-     Taps roe le uppie ſ
-    </l>
-    <l>
-     <lb/>
-     ap
-    </l>
-    <l>
-     <lb/>
-     Devouloir faire r’allior
-    </l>
-    <l>
-     <lb/>
-     Se Sroupesqui ſont dansla Flanlre,1l
-    </l>
-    <l>
-     <lb/>
-     Et apres on luy fit entendre
-    </l>
-    <l>
-     <lb/>
-     Les vaeux du peuple de ce lieu.
-    </l>
-    <l>
-     <lb/>
-     Qu’ls faſoienttous les iours àDteu
-    </l>
-    <l>
-     <lb/>
-     Pour auoir la Paix general le
-    </l>
-    <l>
-     <lb/>
-     Et pour ſa perſonne Royalle:
-    </l>
-    <l>
-     <lb/>
-     Mais ce que l’on doir remarquer
-    </l>
-    <l>
-     <lb/>
-     Vn ieune enfant fit conuoquer
-    </l>
-    <l>
-     <lb/>
-    </l>
-    <l>
-     <lb/>
-     Tous ſes eſgaux pourvoir leur Prince
-    </l>
-    <l>
-     <lb/>
-     Bien que leur pouuoir fut fort mince,
-    </l>
-    <l>
-     <lb/>
-     Le Roy trouua bon leur deſir,.
-    </l>
-    <l>
-     <lb/>
-     Et priſt vn ſingulier plaiſir
-    </l>
-    <l>
-     <lb/>
-     De voir baſtre ceſte ieuneſſe
-    </l>
-    <l>
-     <lb/>
-     Durant vne bonne heure expreſſe
-    </l>
-    <l>
-     <lb/>
-     Auec des eſpees de bois,
-    </l>
-    <l>
-     <lb/>
-     anoueregie ne vou pundite
-    </l>
-    <l>
-     <lb/>
-     r d
-    </l>
-    <l>
-     <lb/>
-     L
-    </l>
-    <l>
-     <lb/>
-     Quand les leſches de leurs carquois
-    </l>
-    <l>
-     <lb/>
-     Comme le Roy ſe priſt aà rire,
-    </l>
-    <l>
-     <lb/>
-     7
-    </l>
-    <l>
-     <lb/>
-     i
-    </l>
-    <l>
-     <lb/>
-     Auee
-    </l>
-    <l>
-     <lb/>
-     .
-    </l>
-    <l>
-     <lb/>
-     .
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     A
-    </l>
-    <l>
-     <lb/>
-     I9
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <pb n="13"/>
-    <l>
-     <lb/>
-     Auec Monſieur le Due d’Aniou
-    </l>
-    <l>
-     <lb/>
-     De voir ſes enfants à tout coup
-    </l>
-    <l>
-     <lb/>
-     Se lancer &amp; ietter par terre.
-    </l>
-    <l>
-     <lb/>
-     Le Roy fit finir ceſte guerre,
-    </l>
-    <l>
-     <lb/>
-     Et fit venir leur general
-    </l>
-    <l>
-     <lb/>
-     Qui ne s’eſtoit pas battu mal
-    </l>
-    <l>
-     <lb/>
-     Qui d’abort luy fit vne Harangue
-    </l>
-    <l>
-     <lb/>
-     Des mots de la Picardie langue
-    </l>
-    <l>
-     <lb/>
-     Les Eſcheuins de la lite
-    </l>
-    <l>
-     <lb/>
-     Supplierent ſa Majeſté
-    </l>
-    <l>
-     <lb/>
-     De vouloir trouuer agreable
-    </l>
-    <l>
-     <lb/>
-     Que l’on preparaſſe vne table
-    </l>
-    <l>
-     <lb/>
-     Pour luy faire vn petit feſtin
-    </l>
-    <l>
-     <lb/>
-     Ce qu’il accorda au matin
-    </l>
-    <l>
-     <lb/>
-     De la Feſte ſainct Iean Baptiſte,
-    </l>
-    <l>
-     <lb/>
-     La Reyne Mere qui l’aſſiſte
-    </l>
-    <l>
-     <lb/>
-     Par ſon Conſeil &amp; ſon Amour
-    </l>
-    <l>
-     <lb/>
-     Auec le reſte de ſa Cour
-    </l>
-    <l>
-     <lb/>
-     Furent voir ce beau feu de ioye,
-    </l>
-    <l>
-     <lb/>
-     Que ſelon l’ordinaire voye
-    </l>
-    <l>
-     <lb/>
-     On fait la veille de ce Sainct,
-    </l>
-    <l>
-     <lb/>
-     Et le Roy meſme fut contrainct
-    </l>
-    <l>
-     <lb/>
-     Par leur douce &amp; bonne priere,
-    </l>
-    <l>
-     <lb/>
-     Auec encor Monſieur ſonfrere
-    </l>
-    <l>
-     <lb/>
-     D’oü̈ir les acclamations
-    </l>
-    <l>
-     <lb/>
-     Des peuples que leurs paſſions
-    </l>
-    <l>
-     <lb/>
-     Faiſoientlancer contre le Polle
-    </l>
-    <l>
-     <lb/>
-     On n’oyoitpoint autre parole
-    </l>
-    <l>
-     <lb/>
-     Que ſeulement viue le Roy
-    </l>
-    <l>
-     <lb/>
-    </l>
-    <l>
-     <lb/>
-    </l>
-    <pb n="14"/>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-    </l>
-    <l>
-     <lb/>
-     11
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     11
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     l1
-    </l>
-    <l>
-     <lb/>
-     Viue le Roy, viue le Roy,
-    </l>
-    <l>
-     <lb/>
-     Ce feu d’artifice admirable
-    </l>
-    <l>
-     <lb/>
-     Formoit vn dragon formidable
-    </l>
-    <l>
-     <lb/>
-     Qui Medus vouloit manger,
-    </l>
-    <l>
-     <lb/>
-     Et lupiter pour la vanger
-    </l>
-    <l>
-     <lb/>
-     Lançoit ſur ce dragon ſa foudre
-    </l>
-    <l>
-     <lb/>
-     Les fuſeées plaines de poudre,
-    </l>
-    <l>
-     <lb/>
-     Formoient par leurs diuers replis
-    </l>
-    <l>
-     <lb/>
-     Dans l’air trois belles fleurs de Lys.
-    </l>
-    <l>
-     <lb/>
-     Le canon de la Citadelle
-    </l>
-    <l>
-     <lb/>
-     Publioit la ioye immortelle
-    </l>
-    <l>
-     <lb/>
-     Que l’on doit auoir dans ce iour,
-    </l>
-    <l>
-     <lb/>
-     Enfin noſtre Prince &amp;ſa Cour
-    </l>
-    <l>
-     <lb/>
-     furent ſatisfait du delice
-    </l>
-    <l>
-     <lb/>
-     De ce gentil feu d’Artifice..
-    </l>
-    <l>
-     <lb/>
-     Le lendemain ſa Maieſté
-    </l>
-    <l>
-     <lb/>
-     Ainſi qu’on auoit arreſté
-    </l>
-    <l>
-     <lb/>
-     Fuſt diſner auec la Reyne;
-    </l>
-    <l>
-     <lb/>
-     Son Frere &amp; ſa Cour Souueraine,
-    </l>
-    <l>
-     <lb/>
-     Et le Cardinal Mazarin.
-    </l>
-    <l>
-     <lb/>
-     L’on m’écrit que tout ce beau trein
-    </l>
-    <l>
-     <lb/>
-     Se fit dans la Maiſon e Ville,
-    </l>
-    <l>
-     <lb/>
-     La bonne chaire eſtſit fernille.
-    </l>
-    <l>
-     <lb/>
-     Des Cailles&amp; des Ortolans.
-    </l>
-    <l>
-     <lb/>
-     Et de gras gibier d’Orleans
-    </l>
-    <l>
-     <lb/>
-     Mais vne choſe eſt remarquable,
-    </l>
-    <l>
-     <lb/>
-     C’eſt qu’on auoit mis ſur la table
-    </l>
-    <l>
-     <lb/>
-     Vn ſanglier lardé des perdreaux
-    </l>
-    <l>
-     <lb/>
-     Encore auecque quatreveaux
-    </l>
-    <pb n="15"/>
-    <l>
-     <lb/>
-     L’alſegreſſe eſtoit ſanségalle,
-    </l>
-    <l>
-     <lb/>
-     aeſme ſon Alteſſe Roalle
-    </l>
-    <l>
-     <lb/>
-     Pria le braue Cardinal
-    </l>
-    <l>
-     <lb/>
-     De vouloir dancer dans lebal,
-    </l>
-    <l>
-     <lb/>
-     Qu’apres le feſtin deuoit eſtre,.
-    </l>
-    <l>
-     <lb/>
-     Ilobeit à ce bon aiſtre,.
-    </l>
-    <l>
-     <lb/>
-     Il dança ſelon ſafaçon,
-    </l>
-    <l>
-     <lb/>
-     Auſſi diſpoſts qu’vn limaçon:
-    </l>
-    <l>
-     <lb/>
-     aais l’heure de Veſpres venuë
-    </l>
-    <l>
-     <lb/>
-     La Reyne comme lle eſt tenuë
-    </l>
-    <l>
-     <lb/>
-     D’auoir de la deuotion
-    </l>
-    <l>
-     <lb/>
-     Auecque grande paſſion
-    </l>
-    <l>
-     <lb/>
-     Conduiſit le Roy dans l’Egliſe,
-    </l>
-    <l>
-     <lb/>
-     Où par vne uſlque exquile
-    </l>
-    <l>
-     <lb/>
-     L’on y chantat l’Exaudias
-    </l>
-    <l>
-     <lb/>
-     Afin que Dieu rermediat
-    </l>
-    <l>
-     <lb/>
-     Aux troubles qui ſont dans la Franee
-    </l>
-    <l>
-     <lb/>
-     Par ſa ſinguliere puiſſance,
-    </l>
-    <l>
-     <lb/>
-     Il eſt certain que dans ce iour
-    </l>
-    <l>
-     <lb/>
-     La ioye fuſt grande en la Cous
-    </l>
-    <l>
-     <lb/>
-     En apres le vingt-cinquieſme
-    </l>
-    <l>
-     <lb/>
-     Le Roy ſonbon Frere qui l’ayme
-    </l>
-    <l>
-     <lb/>
-     Et le cherit auec reſpet,
-    </l>
-    <l>
-     <lb/>
-     S’en allerent dans la foreſt
-    </l>
-    <l>
-     <lb/>
-     Prendre le plaiſir de la chaſſe
-    </l>
-    <l>
-     <lb/>
-     Vnrenard’quiſuiuit leur trace¬,
-    </l>
-    <l>
-     <lb/>
-     Fut leſuiet de leur plaiſir
-    </l>
-    <l>
-     <lb/>
-     Les chiens qui le vouloient ſaiſi
-    </l>
-    <l>
-     <lb/>
-     uy donnoient vne telle crainte
-    </l>
-    <pb n="16"/>
-    <l>
-     <lb/>
-     l
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     11
-    </l>
-    <l>
-     <lb/>
-     1
-    </l>
-    <l>
-     <lb/>
-     19v
-    </l>
-    <l>
-     <lb/>
-     8
-    </l>
-    <l>
-     <lb/>
-     ¬
-    </l>
-    <l>
-     <lb/>
-     Qu’il ne courroit qu’aeote l
-    </l>
-    <l>
-     <lb/>
-     Ses ſaurs auec ſes diuers tou.
-    </l>
-    <l>
-     <lb/>
-     Scs ſaillies &amp; ſes deſtouts,
-    </l>
-    <l>
-     <lb/>
-     Ses ſouppleſſes &amp; tes garabades, l o
-    </l>
-    <l>
-     <lb/>
-     Ses ruſes auec ſes boutadesi1i 221
-    </l>
-    <l>
-     <lb/>
-     Furent leur diuertiſſemento sleilce!
-    </l>
-    <l>
-     <lb/>
-     eur plus grand contontemant.
-    </l>
-    <l>
-     <lb/>
-     2.
-    </l>
-    <l>
-     <lb/>
-     e iour ſuiuant on nous aſſeure
-    </l>
-    <l>
-     <lb/>
-     Que l’on ouyt quelques armare0e l
-    </l>
-    <l>
-     <lb/>
-     e! bs I
-    </l>
-    <l>
-     <lb/>
-     Car le Cardinal mazarin ii
-    </l>
-    <l>
-     <lb/>
-     Sous la faueur du bon deſtid.
-    </l>
-    <l>
-     <lb/>
-     Vouloit auoir la Citadelle
-    </l>
-    <l>
-     <lb/>
-     mais en peu de temp-l uaerele:
-    </l>
-    <l>
-     <lb/>
-     Fut conuertie en bonnt ais l!
-    </l>
-    <l>
-     <lb/>
-     Veu qu’il promit la rendreapres
-    </l>
-    <l>
-     <lb/>
-     Qu’il lortiroiéde Picardie
-    </l>
-    <l>
-     <lb/>
-     Cependant vne malad l ooilup l
-    </l>
-    <l>
-     <lb/>
-     L’a ſaiſit d’vn granM deafeſpois pe 1!1
-    </l>
-    <l>
-     <lb/>
-     ?¬
-    </l>
-    <l>
-     <lb/>
-     Lors qu’il ne put pjas faire auolr.
-    </l>
-    <l>
-     <lb/>
-     A ſa Niepce dansſonbon cage
-    </l>
-    <l>
-     <lb/>
-     T- 5¬
-    </l>
-    <l>
-     <lb/>
-     Le Duc de ueir en mariage,’n¬
-    </l>
-    <l>
-     <lb/>
-     Le Pays-bas pour vne fbois ie! 2is1
-    </l>
-    <l>
-     <lb/>
-     ’l¬?
-    </l>
-    <l>
-     <lb/>
-     A rendu lereſte du mois
-    </l>
-    <l>
-     <lb/>
-     Fauorable à nos entrepriſes
-    </l>
-    <l>
-     <lb/>
-     Que Cambray teouue tros enquiſe l
-    </l>
-    <l>
-     <lb/>
-     On croyoit qu’au mois de lauilletl
-    </l>
-    <l>
-     <lb/>
-     Sans doute il tourheroit feuillet
-    </l>
-    <l>
-     <lb/>
-     On apprendra ſon auanture
-    </l>
-    <l>
-     <lb/>
-     eulement par l’autre ercure.
-    </l>
-    <lb/>
-    FIN.
-   </p>
-  </body>
- </text>
+          Trois numéros de 11 et 12 pages.</p>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">vers</term>
+          <term type="handwritten_note" subtype="no"/>
+          <term type="table_of_content" subtype="no"/>
+          <term type="illustration" subtype="no"/>
+          <term type="subject">Louis XIV (1638-1715 ; roi de France)</term>
+          <term type="subject">Anne d'Autriche (1601-1666 ; reine de France)</term>
+          <term type="subject">Orléans, Philippe (1640-1701 ; duc d')</term>
+          <term type="subject">Harcourt, Henri de Lorraine (1601-1666 ; comte d')</term>
+          <term type="subject">Cambrai (Pas-de-Calais) -- 1648 (Siège)</term>
+          <term type="subject">Compiègne (Oise)</term>
+          <term type="subject">Amiens (Somme)</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-02-16" who="AB"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="9"/>
+        <lb/> LE TROISIESME
+        <lb/>MERCVRE
+        <lb/>DE
+        <lb/>COMPIEGNE
+        <lb/>ET D'AMIENS
+        <lb/>depuis le dix-neuf Iuin iuſques
+        <lb/>au 1. iour de luillet 1649.
+        <lb/>M. DC. XLIX. <pb n="10"/>
+        <pb n="11"/>
+        <lb/> 3
+        <lb/>LE TROISIESME
+        <lb/>MERCVRE
+        <lb/>DE
+        <lb/> COMPIEGNE
+        <lb/>ET D’AMIENS.
+        <lb/>DEPVIS LE19. VIN, IVSQVE
+        <lb/>au I. iour de Iuillet 1649.
+        <l>
+          <lb/>Etroiſieſme Mereure enſeigne</l>
+        <l>
+          <lb/>AAue dans la ville de Compiegne</l>
+        <l>
+          <lb/>Les Bourgeois ſont fort meſcontans,</l>
+        <l>
+          <lb/>Quand la Courà̀ ſi peu de temps</l>
+        <l>
+          <lb/>Demeure dans leur bonne Ville</l>
+        <l>
+          <lb/>Qui ne la rendoit moins fertille</l>
+        <l>
+          <lb/>En prouiſions qu’en grands threſors:</l>
+        <l>
+          <lb/>Mais ce qui rend doux leurs remords</l>
+        <l>
+          <lb/>Eſt l’efpoir de voir noſtre Prince</l>
+        <l>
+          <lb/>Dien-oſt dans la meſme Prounce,</l>
+        <l>
+          <lb/>Et ſa Cour dans ceſte Cité́:</l>
+        <l>
+          <lb/>Car on dit que ſa Maieſleé</l>
+        <l>
+          <lb/>Doit partir d’Amiens ſans doute</l>
+        <pb n="12"/>
+        <l>
+          <lb/>l</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>..- -</l>
+        <l>
+          <lb/>4</l>
+        <l>
+          <lb/>Lors qu’il aura donné la route,</l>
+        <l>
+          <lb/>Et les Ordres du Pays-bas</l>
+        <l>
+          <lb/> .</l>
+        <l>
+          <lb/>Pour bien conduire ſes ſoldats,</l>
+        <l>
+          <lb/>Lors que noſtre ieuneMonarque</l>
+        <l>
+          <lb/>ûigſi qeaphylemo marqur r </l>
+        <l>
+          <lb/>I1</l>
+        <l>
+          <lb/> rrpéans miens</l>
+        <l>
+          <lb/>ltrdunreſtene eldA 1</l>
+        <l>
+          <lb/>Durant les pre mieres iournées</l>
+        <l>
+          <lb/>Que les Harangues ordonnées</l>
+        <l>
+          <lb/>Taps roe le uppie ſ</l>
+        <l>
+          <lb/>ap</l>
+        <l>
+          <lb/>Devouloir faire r’allior</l>
+        <l>
+          <lb/>Se Sroupesqui ſont dansla Flanlre,1l</l>
+        <l>
+          <lb/> Et apres on luy fit entendre</l>
+        <l>
+          <lb/>Les vaeux du peuple de ce lieu.</l>
+        <l>
+          <lb/>Qu’ls faſoienttous les iours àDteu</l>
+        <l>
+          <lb/>Pour auoir la Paix general le</l>
+        <l>
+          <lb/>Et pour ſa perſonne Royalle:</l>
+        <l>
+          <lb/>Mais ce que l’on doir remarquer</l>
+        <l>
+          <lb/>Vn ieune enfant fit conuoquer</l>
+        <l>
+          <lb/>
+        </l>
+        <l>
+          <lb/>Tous ſes eſgaux pourvoir leur Prince</l>
+        <l>
+          <lb/>Bien que leur pouuoir fut fort mince,</l>
+        <l>
+          <lb/>Le Roy trouua bon leur deſir,.</l>
+        <l>
+          <lb/>Et priſt vn ſingulier plaiſir</l>
+        <l>
+          <lb/>De voir baſtre ceſte ieuneſſe</l>
+        <l>
+          <lb/>Durant vne bonne heure expreſſe</l>
+        <l>
+          <lb/>Auec des eſpees de bois,</l>
+        <l>
+          <lb/>anoueregie ne vou pundite</l>
+        <l>
+          <lb/>r d</l>
+        <l>
+          <lb/>L</l>
+        <l>
+          <lb/>Quand les leſches de leurs carquois</l>
+        <l>
+          <lb/>Comme le Roy ſe priſt aà rire,</l>
+        <l>
+          <lb/>7</l>
+        <l>
+          <lb/>i</l>
+        <l>
+          <lb/> Auee</l>
+        <l>
+          <lb/>.</l>
+        <l>
+          <lb/>.</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>A</l>
+        <l>
+          <lb/>I9</l>
+        <l>
+          <lb/>1</l>
+        <pb n="13"/>
+        <l>
+          <lb/>Auec Monſieur le Due d’Aniou</l>
+        <l>
+          <lb/>De voir ſes enfants à tout coup</l>
+        <l>
+          <lb/>Se lancer &amp; ietter par terre.</l>
+        <l>
+          <lb/>Le Roy fit finir ceſte guerre,</l>
+        <l>
+          <lb/>Et fit venir leur general</l>
+        <l>
+          <lb/>Qui ne s’eſtoit pas battu mal</l>
+        <l>
+          <lb/>Qui d’abort luy fit vne Harangue</l>
+        <l>
+          <lb/>Des mots de la Picardie langue</l>
+        <l>
+          <lb/>Les Eſcheuins de la lite</l>
+        <l>
+          <lb/>Supplierent ſa Majeſté</l>
+        <l>
+          <lb/>De vouloir trouuer agreable</l>
+        <l>
+          <lb/>Que l’on preparaſſe vne table</l>
+        <l>
+          <lb/>Pour luy faire vn petit feſtin</l>
+        <l>
+          <lb/>Ce qu’il accorda au matin</l>
+        <l>
+          <lb/>De la Feſte ſainct Iean Baptiſte,</l>
+        <l>
+          <lb/>La Reyne Mere qui l’aſſiſte</l>
+        <l>
+          <lb/>Par ſon Conſeil &amp; ſon Amour</l>
+        <l>
+          <lb/>Auec le reſte de ſa Cour</l>
+        <l>
+          <lb/>Furent voir ce beau feu de ioye,</l>
+        <l>
+          <lb/>Que ſelon l’ordinaire voye</l>
+        <l>
+          <lb/>On fait la veille de ce Sainct,</l>
+        <l>
+          <lb/>Et le Roy meſme fut contrainct</l>
+        <l>
+          <lb/>Par leur douce &amp; bonne priere,</l>
+        <l>
+          <lb/>Auec encor Monſieur ſonfrere</l>
+        <l>
+          <lb/>D’oü̈ir les acclamations</l>
+        <l>
+          <lb/>Des peuples que leurs paſſions</l>
+        <l>
+          <lb/>Faiſoientlancer contre le Polle</l>
+        <l>
+          <lb/>On n’oyoitpoint autre parole</l>
+        <l>
+          <lb/>Que ſeulement viue le Roy</l>
+        <l>
+          <lb/>
+        </l>
+        <l>
+          <lb/>
+        </l>
+        <pb n="14"/>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>
+        </l>
+        <l>
+          <lb/>11</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>11</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>l1</l>
+        <l>
+          <lb/> Viue le Roy, viue le Roy,</l>
+        <l>
+          <lb/>Ce feu d’artifice admirable</l>
+        <l>
+          <lb/>Formoit vn dragon formidable</l>
+        <l>
+          <lb/>Qui Medus vouloit manger,</l>
+        <l>
+          <lb/>Et lupiter pour la vanger</l>
+        <l>
+          <lb/>Lançoit ſur ce dragon ſa foudre</l>
+        <l>
+          <lb/>Les fuſeées plaines de poudre,</l>
+        <l>
+          <lb/>Formoient par leurs diuers replis</l>
+        <l>
+          <lb/>Dans l’air trois belles fleurs de Lys.</l>
+        <l>
+          <lb/>Le canon de la Citadelle</l>
+        <l>
+          <lb/>Publioit la ioye immortelle</l>
+        <l>
+          <lb/>Que l’on doit auoir dans ce iour,</l>
+        <l>
+          <lb/> Enfin noſtre Prince &amp;ſa Cour</l>
+        <l>
+          <lb/>furent ſatisfait du delice</l>
+        <l>
+          <lb/>De ce gentil feu d’Artifice..</l>
+        <l>
+          <lb/>Le lendemain ſa Maieſté</l>
+        <l>
+          <lb/>Ainſi qu’on auoit arreſté</l>
+        <l>
+          <lb/>Fuſt diſner auec la Reyne;</l>
+        <l>
+          <lb/>Son Frere &amp; ſa Cour Souueraine,</l>
+        <l>
+          <lb/>Et le Cardinal Mazarin.</l>
+        <l>
+          <lb/>L’on m’écrit que tout ce beau trein</l>
+        <l>
+          <lb/>Se fit dans la Maiſon e Ville,</l>
+        <l>
+          <lb/>La bonne chaire eſtſit fernille.</l>
+        <l>
+          <lb/>Des Cailles&amp; des Ortolans.</l>
+        <l>
+          <lb/>Et de gras gibier d’Orleans</l>
+        <l>
+          <lb/>Mais vne choſe eſt remarquable,</l>
+        <l>
+          <lb/>C’eſt qu’on auoit mis ſur la table</l>
+        <l>
+          <lb/>Vn ſanglier lardé des perdreaux</l>
+        <l>
+          <lb/>Encore auecque quatreveaux</l>
+        <pb n="15"/>
+        <l>
+          <lb/>L’alſegreſſe eſtoit ſanségalle,</l>
+        <l>
+          <lb/>aeſme ſon Alteſſe Roalle</l>
+        <l>
+          <lb/>Pria le braue Cardinal</l>
+        <l>
+          <lb/>De vouloir dancer dans lebal,</l>
+        <l>
+          <lb/>Qu’apres le feſtin deuoit eſtre,.</l>
+        <l>
+          <lb/>Ilobeit à ce bon aiſtre,.</l>
+        <l>
+          <lb/>Il dança ſelon ſafaçon,</l>
+        <l>
+          <lb/>Auſſi diſpoſts qu’vn limaçon:</l>
+        <l>
+          <lb/>aais l’heure de Veſpres venuë</l>
+        <l>
+          <lb/>La Reyne comme lle eſt tenuë</l>
+        <l>
+          <lb/>D’auoir de la deuotion</l>
+        <l>
+          <lb/>Auecque grande paſſion</l>
+        <l>
+          <lb/>Conduiſit le Roy dans l’Egliſe,</l>
+        <l>
+          <lb/>Où par vne uſlque exquile</l>
+        <l>
+          <lb/>L’on y chantat l’Exaudias</l>
+        <l>
+          <lb/>Afin que Dieu rermediat</l>
+        <l>
+          <lb/>Aux troubles qui ſont dans la Franee</l>
+        <l>
+          <lb/>Par ſa ſinguliere puiſſance,</l>
+        <l>
+          <lb/>Il eſt certain que dans ce iour</l>
+        <l>
+          <lb/>La ioye fuſt grande en la Cous</l>
+        <l>
+          <lb/>En apres le vingt-cinquieſme</l>
+        <l>
+          <lb/>Le Roy ſonbon Frere qui l’ayme</l>
+        <l>
+          <lb/>Et le cherit auec reſpet,</l>
+        <l>
+          <lb/>S’en allerent dans la foreſt</l>
+        <l>
+          <lb/>Prendre le plaiſir de la chaſſe</l>
+        <l>
+          <lb/>Vnrenard’quiſuiuit leur trace¬,</l>
+        <l>
+          <lb/>Fut leſuiet de leur plaiſir</l>
+        <l>
+          <lb/>Les chiens qui le vouloient ſaiſi</l>
+        <l>
+          <lb/>uy donnoient vne telle crainte</l>
+        <pb n="16"/>
+        <l>
+          <lb/>l</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>11</l>
+        <l>
+          <lb/>1</l>
+        <l>
+          <lb/>19v</l>
+        <l>
+          <lb/>8</l>
+        <l>
+          <lb/>¬</l>
+        <l>
+          <lb/>Qu’il ne courroit qu’aeote l</l>
+        <l>
+          <lb/>Ses ſaurs auec ſes diuers tou.</l>
+        <l>
+          <lb/>Scs ſaillies &amp; ſes deſtouts,</l>
+        <l>
+          <lb/> Ses ſouppleſſes &amp; tes garabades, l o</l>
+        <l>
+          <lb/>Ses ruſes auec ſes boutadesi1i 221</l>
+        <l>
+          <lb/>Furent leur diuertiſſemento sleilce!</l>
+        <l>
+          <lb/> eur plus grand contontemant.</l>
+        <l>
+          <lb/>2.</l>
+        <l>
+          <lb/> e iour ſuiuant on nous aſſeure</l>
+        <l>
+          <lb/>Que l’on ouyt quelques armare0e l</l>
+        <l>
+          <lb/> e! bs I</l>
+        <l>
+          <lb/> Car le Cardinal mazarin ii</l>
+        <l>
+          <lb/>Sous la faueur du bon deſtid.</l>
+        <l>
+          <lb/> Vouloit auoir la Citadelle</l>
+        <l>
+          <lb/>mais en peu de temp-l uaerele:</l>
+        <l>
+          <lb/>Fut conuertie en bonnt ais l! </l>
+        <l>
+          <lb/>Veu qu’il promit la rendreapres</l>
+        <l>
+          <lb/>Qu’il lortiroiéde Picardie</l>
+        <l>
+          <lb/>Cependant vne malad l ooilup l</l>
+        <l>
+          <lb/>L’a ſaiſit d’vn granM deafeſpois pe 1!1</l>
+        <l>
+          <lb/>?¬</l>
+        <l>
+          <lb/>Lors qu’il ne put pjas faire auolr.</l>
+        <l>
+          <lb/>A ſa Niepce dansſonbon cage</l>
+        <l>
+          <lb/>T- 5¬</l>
+        <l>
+          <lb/>Le Duc de ueir en mariage,’n¬</l>
+        <l>
+          <lb/>Le Pays-bas pour vne fbois ie! 2is1</l>
+        <l>
+          <lb/>’l¬?</l>
+        <l>
+          <lb/>A rendu lereſte du mois</l>
+        <l>
+          <lb/>Fauorable à nos entrepriſes</l>
+        <l>
+          <lb/>Que Cambray teouue tros enquiſe l</l>
+        <l>
+          <lb/>On croyoit qu’au mois de lauilletl</l>
+        <l>
+          <lb/>Sans doute il tourheroit feuillet</l>
+        <l>
+          <lb/>On apprendra ſon auanture</l>
+        <l>
+          <lb/>eulement par l’autre ercure.</l>
+        <lb/>FIN. </p>
+    </body>
+  </text>
 </TEI>
