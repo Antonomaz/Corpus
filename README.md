@@ -1,10 +1,5 @@
 # Corpus - Antonomaz
 
-<table id="myTable">
-<tr><td></td><td>Total</td><td>1648</td><td>1649</td><td>1650</td><td>1651</td><td>1652</td><td>1653</td><td>1654</td><td>Après 1654</td><td>Sans Date</td></tr>
-<tr><td>Référencées</td><td>5062 (100.0%)</td><td>70 (1.38%)</td><td>1817 (35.89%)</td><td>493 (9.74%)</td><td>598 (11.81%)</td><td>1381 (27.28%)</td><td>42 (0.83%)</td><td>25 (0.49%)</td><td>29 (0.57%)</td><td>602 (11.89%)</td></tr>
-<tr><td>Antonomaz</td><td>3248 (64.16%)</td><td>34 (0.67%)</td><td>1442 (28.49%)</td><td>275 (5.43%)</td><td>311 (6.14%)</td><td>948 (18.73%)</td><td>8 (0.16%)</td><td>12 (0.24%)</td><td>4 (0.08%)</td><td>212 (4.19%)</td></tr>
-</table>
 Ce répertoire contient un corpus de mazarinades encodées en XML-TEI.
 
 ## Les données
