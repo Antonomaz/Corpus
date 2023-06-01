@@ -2,6 +2,7 @@ import contextlib
 import glob
 import json
 import re
+from typing import Union
 from collections import Counter
 
 import xmltodict
@@ -24,7 +25,7 @@ with open("LGERM.json", encoding="utf-8") as f:
 mots_LGERM = set(LGERM)
 
 
-def corpora(path):
+def corpora(path: Union[str, list]):
     if isinstance(path, str):
         path = glob.glob(path)
 
@@ -36,6 +37,8 @@ class Texte:
     lexique = mots_LGERM
 
     def __init__(self, path):
+        # added in
+        self.corrector: bool = None
         self.elts = None
 
         self.ttrs = None
@@ -79,7 +82,7 @@ class Texte:
     def __len__(self):
         return len(self.txt)
 
-    def process_header(self):
+    def process_header(self) -> dict:
         dict_ = xmltodict.parse(self.txt)
         dict_ = dict_["TEI"]["teiHeader"]
 
@@ -87,7 +90,7 @@ class Texte:
         header = [{header["@type"]: header["#text"] if "#text" in header else eval_sub_type(
             header["@subtype"]) if "@subtype" in header else None} for header in header]
 
-        dict_header = {}
+        dict_header: dict = {}
         for dicts in header:
             for k, v in dicts.items():
                 if k not in dict_header:
@@ -111,10 +114,41 @@ class Texte:
 
         dict_header["dates"] = dict_["fileDesc"]["publicationStmt"]["date"]
 
+        # added in: 2023-06-01
+        # checking author
+        dict_header["author"] = dict_["fileDesc"]["sourceDesc"]["bibl"]["author"]
+        # print(dict_header["author"])
+
+        # publication date
+        dict_header["pubDate"] = dict_["fileDesc"]["sourceDesc"]["bibl"]["date"]
+        # print(dict_header["pubDate"])
+
+        # publication place
+        dict_header["pubPlace"] = dict_["fileDesc"]["sourceDesc"]["bibl"]["pubPlace"]
+        # print(dict_header["pubPlace"])
+
+        # publisher
+        dict_header["publisher"] = dict_["fileDesc"]["sourceDesc"]["bibl"]["publisher"]
+        print(dict_header["publisher"])
+
+        # checking if the file has been reviewed or not
+        persName_dict: dict = {}
+        persName_list: list = dict_["fileDesc"]["titleStmt"]["respStmt"]["persName"]
+        self.corrector = False
+        for pers_dict in persName_list:
+            if pers_dict["@role"] == "Corrector":
+                self.corrector = True
+                break
+        # page count
+        dict_header["nbPages"] = dict_["fileDesc"]["sourceDesc"]["bibl"]["extent"]["measure"]["@quantity"]
+        # print(dict_header["nbPages"])
         return dict_header
 
     def get_header(self):
         return self.header
+
+    def get_nb_pages(self):
+        return (self.header)["nbPages"]
 
     def process_body(self):
         tei_head = re.search(r"<teiHeader>.*?</teiHeader>", self.txt, re.DOTALL).group()
@@ -181,7 +215,7 @@ class Texte:
 
         return len(mots) / len(tokens)
 
-    @staticmethod
+    @ staticmethod
     def mesurer_hapax(text):
         mots = text.split()
         count = Counter(mots)
@@ -200,4 +234,3 @@ if __name__ == "__main__":
 
     if test != "soft":
         liste = list(corpora(path))
-
