@@ -52,7 +52,7 @@ def author_helper(result_dict: dict, author_dict: dict)->dict:
         # pseudonyms
         #print(author_dict)
         flat_author_dict = flatdict.FlatDict(value=author_dict)
-        print(flat_author_dict)
+        #print(flat_author_dict)
         if "pseudonyme" in flat_author_dict.values():
             result_dict["pseudonym"] += 1
         # confirmed OR alleged/dubious author
@@ -88,10 +88,15 @@ def author_stats(dir_path: str) -> dict:
 
 def publisher_helper(result_dict: dict, publisher_dict: dict):
     # inconsistent formatting handling
-    if "persName" not in publisher_dict and "surname" in publisher_dict:
+    #note: persName/orgName
+    if "persName" not in publisher_dict and ("surname" or "orgName" in publisher_dict):
         result_dict["named_publisher"] += 1
-    # regular case
     else:
+        # regular case
+        flat_publisher_dict = flatdict.FlatDict(value=publisher_dict)
+        #print(flat_publisher_dict)
+        if "pseudonyme" in flat_publisher_dict.values():
+            result_dict["pseudonym"] +=1
         persName = publisher_dict["persName"]
         if isinstance(persName, dict) and "surname" in persName:
             result_dict["named_publisher"] += 1
@@ -107,7 +112,7 @@ def publisher_stats(dir_path: str) -> dict:
     result_dict: dict = {"named_publisher": 0, "unnamed_publisher": 0, "pseudonym": 0}
     file_count: int = len(file_list)
     for filepath in file_list:
-        # print(filepath)
+        print(filepath)
         data_dict: dict = json.load(open(filepath))
         publisher = data_dict["entête"]["publisher"]
         # handling lists of publishers
@@ -162,8 +167,9 @@ def pub_date_stats(dir_path: str):
 def test_stats():
     #print(corrected_file_stats(dir_path=test_dir))
     #print(nb_page_stats(dir_path=test_dir))
-    print(author_stats(dir_path=test_dir))
-    #print(publisher_stats(dir_path=test_dir))
+    #print(author_stats(dir_path=test_dir))
+    # to fix
+    print(publisher_stats(dir_path=test_dir))
     #print(pub_place_stats(dir_path=test_dir))
     return
 
