@@ -1,8 +1,9 @@
 import json
 import glob
-
+import flatdict #external dependancy but hopefully just for the temporary fixes anyway until the xml files are normalised/no need for special handling for anything
+ 
 test_file: str = "../tests/Mazarinades_jsons_tests/1-100/Moreau100_GALL.json"
-test_dir: str = "../tests/Mazarinades_jsons_tests/1-100/*.json"
+test_dir: str = "../tests/Mazarinades_jsons_tests/*/*.json"
 
 unknown_pub_place: str = "Sans Lieu"
 unknown_pub_name: str = "Sans Nom"
@@ -42,7 +43,22 @@ def nb_page_stats(dir_path: str):
     return {key: (val, val/file_count * 100) for key, val in result_dict.items()}
 
 # WASDONE: put dubious/alleged authors in known authors
-
+# for pseudonyms: tests/Mazarinades_jsons_tests/1-100/Moreau50_GALL.json
+def author_helper(result_dict: dict, author_dict: dict)->dict:
+    #unnamed/unknown authors
+    if author_dict is None:
+        result_dict["unnamed_author"] += 1
+    else:
+        # pseudonyms
+        #print(author_dict)
+        flat_author_dict = flatdict.FlatDict(value=author_dict)
+        print(flat_author_dict)
+        if "pseudonyme" in flat_author_dict.values():
+            result_dict["pseudonym"] += 1
+        # confirmed OR alleged/dubious author
+        else:
+            result_dict["named_author"] += 1
+    return result_dict
 
 def author_stats(dir_path: str) -> dict:
     """returns stats on the authorship status of the texts in the corpus. There are three possible statuses: "unnamed_author", "pseudonym", and "named_author". Documents specified to have "dubious/alleged authorship" in the json metadata are counted under "named_author".
@@ -52,30 +68,21 @@ def author_stats(dir_path: str) -> dict:
         dict{<str>: tuple(<int>, <float>)}: {<authorship status>: (<number of docs with that authorship status>, <percentage compared to total file count>)}
     """
     file_list: list = glob.glob(dir_path)
-    result_dict: dict = {}
+    result_dict: dict = {"named_author": 0, "unnamed_author":0, "pseudonym": 0}
     file_count: int = len(file_list)
     for filepath in file_list:
         data_dict: dict = json.load(open(filepath))
-        author_dict: dict = data_dict["entête"]["author"]
-        if author_dict is None:
-            if "unnamed_author" in result_dict:
-                result_dict["unnamed_author"] += 1
-            else:
-                result_dict["unnamed_author"] = 1
-        else:
-            # pseudonyms
-            if "addName" in author_dict:
-                if "@type" in author_dict["addName"] and author_dict["addName"]["@type"] == "pseudonyme":
-                    if result_dict["pseudonym"] in result_dict:
-                        result_dict["pseudonym"] += 1
-                    else:
-                        result_dict["pseudonym"] = 1
-            # confirmed OR alleged/dubious author
-            else:
-                if "named_author" in result_dict:
-                    result_dict["named_author"] += 1
-                else:
-                    result_dict["named_author"] = 1
+        author = data_dict["entête"]["author"]
+        # list handling
+        if isinstance(author, list):
+            for a in author:
+                old_named_author_count:int = result_dict["named_author"]
+                result_dict = author_helper(result_dict=result_dict, author_dict=a)
+                #TODO: case where one author is dubious and the other not
+                if result_dict["named_author"] > old_named_author_count:
+                    break
+        else:                
+            result_dict = author_helper(result_dict=result_dict, author_dict=author)
     return {key: (val, val/file_count * 100) for key, val in result_dict.items()}
 
 
@@ -148,12 +155,16 @@ def pub_place_stats(dir_path: str):
     return {key: (val, val/file_count * 100) for key, val in result_dict.items() if val > 10}
 
 
+def pub_date_stats(dir_path: str):
+    return
+
+
 def test_stats():
-    print(corrected_file_stats(dir_path=test_dir))
-    print(nb_page_stats(dir_path=test_dir))
+    #print(corrected_file_stats(dir_path=test_dir))
+    #print(nb_page_stats(dir_path=test_dir))
     print(author_stats(dir_path=test_dir))
-    print(publisher_stats(dir_path=test_dir))
-    print(pub_place_stats(dir_path=test_dir))
+    #print(publisher_stats(dir_path=test_dir))
+    #print(pub_place_stats(dir_path=test_dir))
     return
 
 

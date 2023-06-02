@@ -6,7 +6,7 @@ import texte
 
 from tqdm.auto import tqdm
 
-path = "../Mazarinades/1-100/*.xml"
+path = "../Mazarinades/*/*.xml"
 
 files = glob(path)
 
