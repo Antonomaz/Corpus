@@ -1,5 +1,6 @@
 import json
 import glob
+from typing import Callable
 import dateutil.parser as duparser
 import flatdict #external dependancy but hopefully just for the temporary fixes anyway until the xml files are normalised/no need for special handling for anything
  
@@ -106,11 +107,14 @@ def author_stats(dir_path: str) -> dict:
     return {key: (val, val/file_count * 100) for key, val in result_dict.items()}
 
 
-def publisher_helper(result_dict: dict, publisher_dict: dict):
+def publisher_helper(result_dict: dict, publisher_dict: dict, filepath = "", in_list:bool = False):
+    keys: list = ["named_publisher", "pseudonym", "unnamed_publisher"]
+    updated_key:str = ""
     # inconsistent formatting handling
     # note: persName/orgName
     if "persName" not in publisher_dict and ("surname" or "orgName" in publisher_dict):
         result_dict["named_publisher"] += 1
+        updated_key = keys[0]
     else:
         # regular case
         flat_publisher_dict = flatdict.FlatDict(value=publisher_dict)
@@ -118,24 +122,31 @@ def publisher_helper(result_dict: dict, publisher_dict: dict):
         #pseudonyms
         if "pseudonyme" in flat_publisher_dict.values():
             result_dict["pseudonym"] +=1
+            updated_key = keys[1]
+
         else:
             persName = publisher_dict["persName"]
             if isinstance(persName, dict):
                if "surname" in persName:
                 result_dict["named_publisher"] += 1
+                updated_key = keys[0]
+
                elif unknown_pub_name in persName.values():
                    result_dict["unnamed_publisher"] +=1
+                   print(publisher_dict, filepath)
             elif isinstance(persName, str):
                 if persName == unknown_pub_name:
                     result_dict["unnamed_publisher"] += 1
+                    updated_key = keys[2]
                 else:
                     result_dict["named_publisher"] +=1
-            else:
-                print(publisher_dict)
-    return result_dict
+                    updated_key = keys[0]
+                #else:
+                #    print(publisher_dict, filepath)
+    return result_dict, updated_key
 
 # assumption: no case where one publisher is clearly known and the other has a pseudonym or is unnamed
-
+# NB: false assumption: one case was found (../tests/Mazarinades_jsons_tests/101-200/Moreau169_MAZ.json)
 
 def publisher_stats(dir_path: str) -> dict:
     file_list: list = glob.glob(dir_path)
@@ -147,14 +158,24 @@ def publisher_stats(dir_path: str) -> dict:
         publisher = data_dict["entête"]["publisher"]
         # handling lists of publishers
         if isinstance(publisher, list):
+            temp_dict:dict = dict.fromkeys(result_dict, 0)
             #print(publisher)
+            all_it:bool = True
             for p in publisher:
-                old_named_publisher_count: int = result_dict["named_publisher"]
-                result_dict = publisher_helper(result_dict=result_dict, publisher_dict=p)
-                if result_dict["named_publisher"] > old_named_publisher_count:
+                temp_dict, updated_key = publisher_helper(result_dict=temp_dict, publisher_dict=p, filepath=filepath)
+                if updated_key == "named_publisher":
+                    result_dict["named_publisher"] +=1
+                    all_it = False
                     break
+                if all_it:
+                    print(publisher, filepath)
+            else:
+                if temp_dict["pseudonym"] > 0:
+                    result_dict["pseudonym"] +=1
+                else:
+                    result_dict["unnamed_author"] +=1
         else:
-            result_dict = publisher_helper(result_dict=result_dict, publisher_dict=publisher)
+            result_dict, _ = publisher_helper(result_dict=result_dict, publisher_dict=publisher, filepath=filepath)
     print(sum(result_dict.values()))
      # {<page count>: (<number of docs for page count>, <percent compared to total file count>)}
     return {key: (val, val/file_count * 100) for key, val in result_dict.items()}
