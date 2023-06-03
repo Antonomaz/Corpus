@@ -112,7 +112,7 @@ def publisher_stats(dir_path: str) -> dict:
     result_dict: dict = {"named_publisher": 0, "unnamed_publisher": 0, "pseudonym": 0}
     file_count: int = len(file_list)
     for filepath in file_list:
-        print(filepath)
+        #print(filepath)
         data_dict: dict = json.load(open(filepath))
         publisher = data_dict["entête"]["publisher"]
         # handling lists of publishers
@@ -148,15 +148,25 @@ def pub_place_stats(dir_path: str):
     for filepath in file_list:
         # print(filepath)
         data_dict: dict = json.load(open(filepath))
-        # print(data_dict["entête"]["pubPlace"])
+        #print(data_dict["entête"]["pubPlace"])
         pub_place = data_dict["entête"]["pubPlace"]
-        # handling lists
-        if isinstance(pub_place, list):
-            for p in pub_place:
-                result_dict = pub_place_helper(result_dict=result_dict, pub_place_dict=p)
-        else:
-            result_dict = pub_place_helper(result_dict=result_dict, pub_place_dict=pub_place)
+        #handling inconsistent formatting
+        if isinstance(pub_place, str):
+            print(pub_place)
+            if pub_place != unknown_pub_place:
+                if pub_place in result_dict:
+                 result_dict[pub_place] += 1
+                else:
+                    result_dict[pub_place] = 1
+        else:            
+            # handling lists
+            if isinstance(pub_place, list):
+                for p in pub_place:
+                    result_dict = pub_place_helper(result_dict=result_dict, pub_place_dict=p)
+            else:
+               result_dict = pub_place_helper(result_dict=result_dict, pub_place_dict=pub_place)
      # {<page count>: (<number of docs for page count>, <percent compared to total file count>)}
+    print(file_count)
     return {key: (val, val/file_count * 100) for key, val in result_dict.items() if val > 10}
 
 
@@ -165,12 +175,12 @@ def pub_date_stats(dir_path: str):
 
 
 def test_stats():
-    #print(corrected_file_stats(dir_path=test_dir))
-    #print(nb_page_stats(dir_path=test_dir))
-    #print(author_stats(dir_path=test_dir))
-    # to fix
+    print(corrected_file_stats(dir_path=test_dir))
+    print(nb_page_stats(dir_path=test_dir))
+    print(author_stats(dir_path=test_dir))
     print(publisher_stats(dir_path=test_dir))
-    #print(pub_place_stats(dir_path=test_dir))
+    #to fix
+    print(pub_place_stats(dir_path=test_dir))
     return
 
 
