@@ -11,9 +11,9 @@ path = "../Mazarinades/*/*.xml"
 files = glob(path)
 
 collection_textes = [e for e in texte.corpora(files) if e.plain]
-lst = [[files[i], e.header, e.texte, e.corrector] for i, e in enumerate(collection_textes)]
+lst = [[files[i], e.header, e.texte, e.corrector, e.imprimatur] for i, e in enumerate(collection_textes)]
 
-main_folder = Path("../Mazarinades_jsons_tests")
+main_folder = Path("../tests/Mazarinades_jsons_tests")
 for e in tqdm(lst):
     file = e[0]
     file = Path(file).parts
@@ -25,6 +25,7 @@ for e in tqdm(lst):
     newpath = newpath.joinpath(file)
 
     tempdict = {
+        "imprimatur": e[4],
         "corrector": e[3],
         "entête": e[1],
         "texte": e[2]

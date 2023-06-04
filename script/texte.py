@@ -39,6 +39,7 @@ class Texte:
     def __init__(self, path):
         # added in
         self.corrector: bool = None
+        self.imprimatur:str = None
         self.elts = None
 
         self.ttrs = None
@@ -129,7 +130,7 @@ class Texte:
 
         # publisher
         dict_header["publisher"] = dict_["fileDesc"]["sourceDesc"]["bibl"]["publisher"]
-        print(dict_header["publisher"])
+        #print(dict_header["publisher"])
 
         # checking if the file has been reviewed or not
         persName_dict: dict = {}
@@ -152,14 +153,16 @@ class Texte:
 
     def process_body(self):
         tei_head = re.search(r"<teiHeader>.*?</teiHeader>", self.txt, re.DOTALL).group()
+        #print(tei_head)
 
         soup = BeautifulSoup(tei_head, "html.parser")
 
-        elts = {
-            e.tag: e.text
-            for e in soup.find_all()
-        }
-
+        # 2023-06-05
+        # elts = {e.tag: e.text for e in soup.find_all()} not sure what it was supposed to do: doesn't return anything
+        elts = {tag.name: tag.text for tag in soup.find_all()}
+        #print(elts)
+        #print(elts.keys())
+        
         txt = re.split(r"(?:<pb .*?>)", self.txt)[1:]
         txt = [re.split(r"\n|<lb/>|<l>|<\\l>", line) for line in txt]
         txt = [[re.sub(r"<.*?>|  |\t", "", line) for line in page] for page in txt]
@@ -178,6 +181,7 @@ class Texte:
 
         self.elts = elts
 
+
         self.n_pages = len(self.txt)
         self.n_lines = sum(len(page) for page in txt)
         self.n_words = len(plain.split())
@@ -195,6 +199,14 @@ class Texte:
 
         self.pages = pages
         self.plain = plain
+        # added in: 2023-06-04
+        text_soup = BeautifulSoup(self.txt, features="xml")
+        imprimatur_text:str = text_soup.find("imprimatur")
+        self.imprimatur = imprimatur_text.text if imprimatur_text is not None else None
+        print(self.imprimatur)
+
+        
+        return
 
     def mesurer_ttr(self, text):
         mots = text.split()
