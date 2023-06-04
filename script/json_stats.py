@@ -1,6 +1,6 @@
 import json
 import glob
-from typing import Callable
+from typing import Callable, Union
 import dateutil.parser as duparser
 import flatdict #external dependancy but hopefully just for the temporary fixes anyway until the xml files are normalised/no need for special handling for anything
  
@@ -159,6 +159,7 @@ def publisher_stats(dir_path: str) -> dict:
         # handling lists of publishers
         if isinstance(publisher, list):
             temp_dict:dict = dict.fromkeys(result_dict, 0)
+            #print(temp_dict)
             #print(publisher)
             all_it:bool = True
             for p in publisher:
@@ -231,19 +232,40 @@ def pub_place_stats(dir_path: str):
     print(sum(result_dict.values())- dup_count)
     return {key: (val, val/file_count * 100) for key, val in result_dict.items() if val > 10}
 
-def pub_date_helper(result_dict:dict, pub_date_dict:dict)->dict:
+def pub_date_helper(result_dict:dict, pub_date_dict:dict):
+    updated_key: Union[str, int] = ""
     when_key:str = "@when"
     if when_key not in pub_date_dict:
         if unknown_pub_date in pub_date_dict.values():
             result_dict[unknown_pub_date]+=1
+            updated_key = unknown_pub_date
+        else:
+            #mooooore edge cases and inconsistent formatting
+            if "@notAfter" in pub_date_dict:
+                pub_date = duparser.parse(timestr=pub_date_dict["@notAfter"]).year
+                updated_key = pub_date
+                if pub_date in result_dict:
+                    result_dict[pub_date] += 1
+                else:
+                    result_dict[pub_date] = 1
+            elif "@notBefore" in pub_date_dict:
+                pub_date = duparser.parse(timestr=pub_date_dict["@notBefore"]).year
+                updated_key = pub_date
+                if pub_date in result_dict:
+                    result_dict[pub_date] += 1
+                else:
+                    result_dict[pub_date] = 1
+            else:
+                print(pub_date_dict)
     else:        
         #using the year by default
         pub_date = duparser.parse(timestr=pub_date_dict["@when"]).year
+        updated_key = pub_date
         if pub_date in result_dict:
             result_dict[pub_date] += 1
         else:
             result_dict[pub_date] = 1
-    return result_dict
+    return result_dict, updated_key
 
 def pub_date_stats(dir_path: str):
     file_list: list = glob.glob(dir_path)
@@ -270,12 +292,20 @@ def pub_date_stats(dir_path: str):
         else:
             # handling lists
             if isinstance(pub_date, list):
+                #print(result_dict)
+                temp_dict:dict = dict.fromkeys(result_dict, 0)
                 for p_d in pub_date:
-                    if "@when" in p_d:
-                        result_dict = pub_date_helper(result_dict=result_dict, pub_date_dict=p_d)
-                        break               
+                    temp_dict, updated_key = pub_date_helper(result_dict=temp_dict, pub_date_dict=p_d)
+                    if updated_key != unknown_pub_date:
+                        if updated_key in result_dict:
+                            result_dict[updated_key] +=1
+                        else:
+                            result_dict[updated_key] = 1
+                        break
+                else:
+                    result_dict[unknown_pub_date] +=1               
             else:
-                result_dict = pub_date_helper(result_dict=result_dict, pub_date_dict=pub_date)
+                result_dict, _ = pub_date_helper(result_dict=result_dict, pub_date_dict=pub_date)
     print(sum(result_dict.values()))
     # {<page count>: (<number of docs for page count>, <percent compared to total file count>)}
     return {key: (val, val/file_count * 100) for key, val in result_dict.items()}
@@ -287,9 +317,9 @@ def test_stats():
     #print(corrected_file_stats(dir_path=test_dir)) #ok count
     #print(nb_page_stats(dir_path=test_dir)) #ok count
     #print(author_stats(dir_path=test_dir)) #ok count
-    print(publisher_stats(dir_path=test_dir))
+    #print(publisher_stats(dir_path=test_dir)) #ok count
     #print(pub_place_stats(dir_path=test_dir)) #ok count
-    #print(pub_date_stats(dir_path=test_dir))
+    print(pub_date_stats(dir_path=test_dir)) #ok_count
     return
 
 
