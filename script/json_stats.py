@@ -1,19 +1,31 @@
 import json
 import glob
-from typing import Callable
+import csv
 import dateutil.parser as duparser
 import flatdict #external dependancy but hopefully just for the temporary fixes anyway until the xml files are normalised/no need for special handling for anything
  
-test_file: str = "../tests/Mazarinades_jsons_tests/1-100/Moreau100_GALL.json"
-test_dir: str = "../tests/Mazarinades_jsons_tests/*/*.json"
+test_file: str = "../Mazarinades_jsons/1-100/Moreau100_GALL.json"
+test_dir: str = "../Mazarinades_jsons/*/*.json"
 csv_dir:str="../output/stats"
 unknown_pub_place: str = "Sans Lieu"
 unknown_pub_name: str = "Sans Nom"
 unknown_pub_date:str = "Sans Date"
 
-def save_to_csv:
+def write_to_csv(data_dict:dict, csv_dir:str = csv_dir, filename:str="", mode:str = "w", fieldnames:list = ["status", "count"], iterable_values:bool = True):
+    csv_file = open(file=f"{csv_dir}/{filename}.csv", mode=mode)
+    res = csv.DictWriter(f=csv_file, fieldnames=fieldnames)
+    res.writeheader()
+    if not iterable_values:
+        res.writerow(data_dict)
+        return
+    for key,val in data_dict.items():
+        rowdict:dict = {fieldnames[0]:key}
+        for i in range(1,len(fieldnames)):
+            rowdict[fieldnames[i]] = val[i-1]
+        res.writerow(rowdict=rowdict)      
+    return
 
-def corrected_file_stats(dir_path: str) -> dict:
+def corrected_file_stats(dir_path: str, save_to_csv:bool = True) -> dict:
     """returns stats on the proportion of files in the corpus that has been manually reviewed and corrected by humans.
 
     Args:
@@ -29,10 +41,13 @@ def corrected_file_stats(dir_path: str) -> dict:
         data_dict: dict = json.load(open(filepath))
         if data_dict["corrector"]:
             corrected_file_count += 1
-    return {"file_count": file_count, "corrected_file_count": corrected_file_count, "corrected_file_percentage": corrected_file_count/file_count * 100}
+    stat_dict:dict = {"file_count": file_count, "corrected_file_count": corrected_file_count, "corrected_file_percentage": corrected_file_count/file_count * 100}
+    if save_to_csv:
+        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="corrected_file_stats", fieldnames=["file_count", "corrected_file_count", "corrected_file_percentage"], iterable_values=False)   
+    return stat_dict
+    
 
-
-def nb_page_stats(dir_path: str):
+def nb_page_stats(dir_path: str, save_to_csv:bool = True):
     file_list: list = glob.glob(dir_path)
     result_dict: dict = {}
     file_count: int = len(file_list)
@@ -45,7 +60,10 @@ def nb_page_stats(dir_path: str):
             result_dict[nbPages] = 1
     # {<page count>: (<number of docs for page count>, <percent compared to total file count>)}
     print(sum(result_dict.values()))
-    return {key: (val, val/file_count * 100) for key, val in result_dict.items()}
+    stat_dict:dict= {key: (val, val/file_count * 100) for key, val in result_dict.items()}
+    if save_to_csv:
+        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="nb_page_stat", fieldnames=["nb_page", "count", "percentage"])   
+    return stat_dict
 
 # WASDONE: put dubious/alleged authors in known authors
 # for pseudonyms: tests/Mazarinades_jsons_tests/1-100/Moreau50_GALL.json
@@ -76,7 +94,7 @@ def author_helper(result_dict: dict, author_dict: dict, in_list:bool = False)->d
             result_dict["named_author"] += 1
     return result_dict
 
-def author_stats(dir_path: str) -> dict:
+def author_stats(dir_path: str, save_to_csv:bool = True) -> dict:
     """returns stats on the authorship status of the texts in the corpus. There are three possible statuses: "unnamed_author", "pseudonym", and "named_author". Documents specified to have "dubious/alleged authorship" in the json metadata are counted under "named_author".
     Args:
         dir_path (str): path to the corpus' directory
@@ -105,7 +123,10 @@ def author_stats(dir_path: str) -> dict:
         else:                
             result_dict = author_helper(result_dict=result_dict, author_dict=author)
     print(sum(result_dict.values()))
-    return {key: (val, val/file_count * 100) for key, val in result_dict.items()}
+    stat_dict:dict = {key: (val, val/file_count * 100) for key, val in result_dict.items()}
+    if save_to_csv:
+        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="author_stats", fieldnames=["authorship status", "count", "percentage"])   
+    return stat_dict
 
 
 def publisher_helper(result_dict: dict, publisher_dict: dict, filepath = "", in_list:bool = False):
@@ -149,7 +170,7 @@ def publisher_helper(result_dict: dict, publisher_dict: dict, filepath = "", in_
 # assumption: no case where one publisher is clearly known and the other has a pseudonym or is unnamed
 # NB: false assumption: one case was found (../tests/Mazarinades_jsons_tests/101-200/Moreau169_MAZ.json)
 
-def publisher_stats(dir_path: str) -> dict:
+def publisher_stats(dir_path: str, save_to_csv:bool = True) -> dict:
     file_list: list = glob.glob(dir_path)
     result_dict: dict = {"named_publisher": 0, "unnamed_publisher": 0, "pseudonym": 0}
     file_count: int = len(file_list)
@@ -180,7 +201,10 @@ def publisher_stats(dir_path: str) -> dict:
             result_dict, _ = publisher_helper(result_dict=result_dict, publisher_dict=publisher, filepath=filepath)
     print(sum(result_dict.values()))
      # {<page count>: (<number of docs for page count>, <percent compared to total file count>)}
-    return {key: (val, val/file_count * 100) for key, val in result_dict.items()}
+    stat_dict: dict = {key: (val, val/file_count * 100) for key, val in result_dict.items()}
+    if save_to_csv:
+        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="publisher_stats", fieldnames=["publisher status", "count", "percentage"])   
+    return stat_dict
 
 
 def pub_place_helper(result_dict: dict, pub_place_dict: dict):
@@ -195,7 +219,7 @@ def pub_place_helper(result_dict: dict, pub_place_dict: dict):
     return result_dict
 
 
-def pub_place_stats(dir_path: str):
+def pub_place_stats(dir_path: str, save_to_csv:bool = True):
     file_list: list = glob.glob(dir_path)
     result_dict: dict = {unknown_pub_place:0}
     file_count: int = len(file_list)
@@ -231,7 +255,10 @@ def pub_place_stats(dir_path: str):
      # {<page count>: (<number of docs for page count>, <percent compared to total file count>)}
     #print(file_count)
     print(sum(result_dict.values())- dup_count)
-    return {key: (val, val/file_count * 100) for key, val in result_dict.items() if val > 10}
+    stat_dict:dict = {key: (val, val/file_count * 100) for key, val in result_dict.items() if val > 10}
+    if save_to_csv:
+        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="pub_place_stat", fieldnames=["place", "count", "percentage"])   
+    return stat_dict
 
 def pub_date_helper(result_dict:dict, pub_date_dict:dict):
     updated_key: str|int = ""
@@ -268,7 +295,7 @@ def pub_date_helper(result_dict:dict, pub_date_dict:dict):
             result_dict[pub_date] = 1
     return result_dict, updated_key
 
-def pub_date_stats(dir_path: str):
+def pub_date_stats(dir_path: str, save_to_csv:bool=True):
     file_list: list = glob.glob(dir_path)
     result_dict: dict = {unknown_pub_date: 0}
     file_count: int = len(file_list)
@@ -309,31 +336,43 @@ def pub_date_stats(dir_path: str):
                 result_dict, _ = pub_date_helper(result_dict=result_dict, pub_date_dict=pub_date)
     print(sum(result_dict.values()))
     # {<page count>: (<number of docs for page count>, <percent compared to total file count>)}
-    return {key: (val, val/file_count * 100) for key, val in result_dict.items()}
+    stat_dict:dict = {key: (val, val/file_count * 100) for key, val in result_dict.items()}
+    if save_to_csv:
+        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="pub_date_stat", fieldnames=["year", "count", "percentage"])
+    return stat_dict   
 
-def imprimatur_stats(dir_path:str):
+def imprimatur_stats(dir_path:str, save_to_csv:bool=True):
     file_list: list = glob.glob(dir_path)
     file_count: int = len(file_list)
     imprimatur_count: int = 0
     #imprimatur_list:list = []
     for filepath in file_list:
+        print(filepath)
         data_dict: dict = json.load(open(filepath))
+        print(data_dict.keys())
         if (impr:= data_dict["imprimatur"]) is not None:
             imprimatur_count += 1
             #if impr not in imprimatur_list:
                 #imprimatur_list.append(impr)
     #print(imprimatur_list)
-    return {"file_count": file_count, "imprimatur-ed_file_count": imprimatur_count, "imprimatur-ed_file_percentage": imprimatur_count/file_count * 100}
+    stat_dict:dict = {"file_count": file_count, "imprimatur-ed_file_count": imprimatur_count, "imprimatur-ed_file_percentage": imprimatur_count/file_count * 100}
+    if save_to_csv:
+        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="imprimatur_stat")    
+    return stat_dict
 
 def test_stats():
-    #print(corrected_file_stats(dir_path=test_dir)) #ok count
+    print(corrected_file_stats(dir_path=test_dir)) #ok count
     #print(nb_page_stats(dir_path=test_dir)) #ok count
     #print(author_stats(dir_path=test_dir)) #ok count
     #print(publisher_stats(dir_path=test_dir)) #ok count
     #print(pub_place_stats(dir_path=test_dir)) #ok count
     #print(pub_date_stats(dir_path=test_dir)) #ok_count
-    print(imprimatur_stats(dir_path=test_dir))
+    #imprimatur_dict: dict = imprimatur_stats(dir_path=test_dir)
+    #write_to_csv(data_dict=imprimatur_dict, csv_dir=csv_dir, filename="imprimatur_stats")
+    
     return
 
 
 test_stats()
+
+#RDV 14:40 

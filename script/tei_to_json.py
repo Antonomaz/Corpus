@@ -13,7 +13,7 @@ files = glob(path)
 collection_textes = [e for e in texte.corpora(files) if e.plain]
 lst = [[files[i], e.header, e.texte, e.corrector, e.imprimatur] for i, e in enumerate(collection_textes)]
 
-main_folder = Path("../tests/Mazarinades_jsons_tests")
+main_folder = Path("../Mazarinades_jsons")
 for e in tqdm(lst):
     file = e[0]
     file = Path(file).parts

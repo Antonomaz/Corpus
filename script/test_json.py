@@ -13,3 +13,6 @@ for path in glob.glob(pathname=test_dir):
     print("\n")
     # print((texte.Texte(test_path).get_header))
 #texte.Texte(test_path)
+
+
+# ajout des when
