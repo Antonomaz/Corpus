@@ -2,7 +2,6 @@ import contextlib
 import glob
 import json
 import re
-from typing import Union
 from collections import Counter
 
 import xmltodict
@@ -25,7 +24,7 @@ with open("LGERM.json", encoding="utf-8") as f:
 mots_LGERM = set(LGERM)
 
 
-def corpora(path: Union[str, list]):
+def corpora(path: str|list):
     if isinstance(path, str):
         path = glob.glob(path)
 
@@ -57,10 +56,10 @@ class Texte:
         self.lexicalite = None
         self.lignes_non_lexicalisees = 0
 
-        self.n_words = None
-        self.n_lines = None
-        self.n_pages = None
-        self.n_chars = None
+        self.n_words:int = None
+        self.n_lines:int = None
+        self.n_pages:int = None
+        self.n_chars:int = None
 
         self.path = path
 
@@ -199,8 +198,9 @@ class Texte:
 
         self.pages = pages
         self.plain = plain
+        
         # added in: 2023-06-04
-        text_soup = BeautifulSoup(self.txt, features="xml")
+        text_soup:BeautifulSoup = BeautifulSoup(self.txt, features="xml")
         imprimatur_text:str = text_soup.find("imprimatur")
         self.imprimatur = imprimatur_text.text if imprimatur_text is not None else None
         print(self.imprimatur)

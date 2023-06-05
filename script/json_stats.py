@@ -1,16 +1,17 @@
 import json
 import glob
-from typing import Callable, Union
+from typing import Callable
 import dateutil.parser as duparser
 import flatdict #external dependancy but hopefully just for the temporary fixes anyway until the xml files are normalised/no need for special handling for anything
  
 test_file: str = "../tests/Mazarinades_jsons_tests/1-100/Moreau100_GALL.json"
 test_dir: str = "../tests/Mazarinades_jsons_tests/*/*.json"
-
+csv_dir:str="../output/stats"
 unknown_pub_place: str = "Sans Lieu"
 unknown_pub_name: str = "Sans Nom"
 unknown_pub_date:str = "Sans Date"
 
+def save_to_csv:
 
 def corrected_file_stats(dir_path: str) -> dict:
     """returns stats on the proportion of files in the corpus that has been manually reviewed and corrected by humans.
@@ -233,7 +234,7 @@ def pub_place_stats(dir_path: str):
     return {key: (val, val/file_count * 100) for key, val in result_dict.items() if val > 10}
 
 def pub_date_helper(result_dict:dict, pub_date_dict:dict):
-    updated_key: Union[str, int] = ""
+    updated_key: str|int = ""
     when_key:str = "@when"
     if when_key not in pub_date_dict:
         if unknown_pub_date in pub_date_dict.values():
@@ -311,7 +312,18 @@ def pub_date_stats(dir_path: str):
     return {key: (val, val/file_count * 100) for key, val in result_dict.items()}
 
 def imprimatur_stats(dir_path:str):
-    return
+    file_list: list = glob.glob(dir_path)
+    file_count: int = len(file_list)
+    imprimatur_count: int = 0
+    #imprimatur_list:list = []
+    for filepath in file_list:
+        data_dict: dict = json.load(open(filepath))
+        if (impr:= data_dict["imprimatur"]) is not None:
+            imprimatur_count += 1
+            #if impr not in imprimatur_list:
+                #imprimatur_list.append(impr)
+    #print(imprimatur_list)
+    return {"file_count": file_count, "imprimatur-ed_file_count": imprimatur_count, "imprimatur-ed_file_percentage": imprimatur_count/file_count * 100}
 
 def test_stats():
     #print(corrected_file_stats(dir_path=test_dir)) #ok count
@@ -319,7 +331,8 @@ def test_stats():
     #print(author_stats(dir_path=test_dir)) #ok count
     #print(publisher_stats(dir_path=test_dir)) #ok count
     #print(pub_place_stats(dir_path=test_dir)) #ok count
-    print(pub_date_stats(dir_path=test_dir)) #ok_count
+    #print(pub_date_stats(dir_path=test_dir)) #ok_count
+    print(imprimatur_stats(dir_path=test_dir))
     return
 
 
