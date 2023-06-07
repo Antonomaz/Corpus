@@ -24,7 +24,7 @@ with open("LGERM.json", encoding="utf-8") as f:
 mots_LGERM = set(LGERM)
 
 
-def corpora(path):
+def corpora(path: str|list):
     if isinstance(path, str):
         path = glob.glob(path)
 
@@ -36,6 +36,9 @@ class Texte:
     lexique = mots_LGERM
 
     def __init__(self, path):
+        # added in
+        self.corrector: bool = None
+        self.imprimatur:str = None
         self.elts = None
 
         self.ttrs = None
@@ -53,10 +56,10 @@ class Texte:
         self.lexicalite = None
         self.lignes_non_lexicalisees = 0
 
-        self.n_words = None
-        self.n_lines = None
-        self.n_pages = None
-        self.n_chars = None
+        self.n_words:int = None
+        self.n_lines:int = None
+        self.n_pages:int = None
+        self.n_chars:int = None
 
         self.path = path
 
@@ -79,7 +82,7 @@ class Texte:
     def __len__(self):
         return len(self.txt)
 
-    def process_header(self):
+    def process_header(self) -> dict:
         dict_ = xmltodict.parse(self.txt)
         dict_ = dict_["TEI"]["teiHeader"]
 
@@ -87,7 +90,7 @@ class Texte:
         header = [{header["@type"]: header["#text"] if "#text" in header else eval_sub_type(
             header["@subtype"]) if "@subtype" in header else None} for header in header]
 
-        dict_header = {}
+        dict_header: dict = {}
         for dicts in header:
             for k, v in dicts.items():
                 if k not in dict_header:
@@ -111,21 +114,54 @@ class Texte:
 
         dict_header["dates"] = dict_["fileDesc"]["publicationStmt"]["date"]
 
+        # added in: 2023-06-01
+        # checking author
+        dict_header["author"] = dict_["fileDesc"]["sourceDesc"]["bibl"]["author"]
+        # print(dict_header["author"])
+
+        # publication date
+        dict_header["pubDate"] = dict_["fileDesc"]["sourceDesc"]["bibl"]["date"]
+        # print(dict_header["pubDate"])
+
+        # publication place
+        dict_header["pubPlace"] = dict_["fileDesc"]["sourceDesc"]["bibl"]["pubPlace"]
+        # print(dict_header["pubPlace"])
+
+        # publisher
+        dict_header["publisher"] = dict_["fileDesc"]["sourceDesc"]["bibl"]["publisher"]
+        #print(dict_header["publisher"])
+
+        # checking if the file has been reviewed or not
+        persName_dict: dict = {}
+        persName_list: list = dict_["fileDesc"]["titleStmt"]["respStmt"]["persName"]
+        self.corrector = False
+        for pers_dict in persName_list:
+            if pers_dict["@role"] == "Corrector":
+                self.corrector = True
+                break
+        # page count
+        dict_header["nbPages"] = dict_["fileDesc"]["sourceDesc"]["bibl"]["extent"]["measure"]["@quantity"]
+        # print(dict_header["nbPages"])
         return dict_header
 
     def get_header(self):
         return self.header
 
+    def get_nb_pages(self):
+        return (self.header)["nbPages"]
+
     def process_body(self):
         tei_head = re.search(r"<teiHeader>.*?</teiHeader>", self.txt, re.DOTALL).group()
+        #print(tei_head)
 
         soup = BeautifulSoup(tei_head, "html.parser")
 
-        elts = {
-            e.tag: e.text
-            for e in soup.find_all()
-        }
-
+        # 2023-06-05
+        # elts = {e.tag: e.text for e in soup.find_all()} not sure what it was supposed to do: doesn't return anything
+        elts = {tag.name: tag.text for tag in soup.find_all()}
+        #print(elts)
+        #print(elts.keys())
+        
         txt = re.split(r"(?:<pb .*?>)", self.txt)[1:]
         txt = [re.split(r"\n|<lb/>|<l>|<\\l>", line) for line in txt]
         txt = [[re.sub(r"<.*?>|  |\t", "", line) for line in page] for page in txt]
@@ -144,6 +180,7 @@ class Texte:
 
         self.elts = elts
 
+
         self.n_pages = len(self.txt)
         self.n_lines = sum(len(page) for page in txt)
         self.n_words = len(plain.split())
@@ -161,6 +198,15 @@ class Texte:
 
         self.pages = pages
         self.plain = plain
+        
+        # added in: 2023-06-04
+        text_soup:BeautifulSoup = BeautifulSoup(self.txt, features="xml")
+        imprimatur_text:str = text_soup.find("imprimatur")
+        self.imprimatur = imprimatur_text.text if imprimatur_text is not None else None
+        print(self.imprimatur)
+
+        
+        return
 
     def mesurer_ttr(self, text):
         mots = text.split()
@@ -181,7 +227,7 @@ class Texte:
 
         return len(mots) / len(tokens)
 
-    @staticmethod
+    @ staticmethod
     def mesurer_hapax(text):
         mots = text.split()
         count = Counter(mots)
@@ -200,4 +246,3 @@ if __name__ == "__main__":
 
     if test != "soft":
         liste = list(corpora(path))
-

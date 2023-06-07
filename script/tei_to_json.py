@@ -6,12 +6,13 @@ import texte
 
 from tqdm.auto import tqdm
 
-path = "../Mazarinades/*/*.xml"
+#path = "../Mazarinades/*/*.xml"
+path = "../Mazarinades/Antonomaz/*.xml"
 
 files = glob(path)
 
 collection_textes = [e for e in texte.corpora(files) if e.plain]
-lst = [[files[i], e.header, e.texte] for i, e in enumerate(collection_textes)]
+lst = [[files[i], e.header, e.texte, e.corrector, e.imprimatur] for i, e in enumerate(collection_textes)]
 
 main_folder = Path("../Mazarinades_jsons")
 for e in tqdm(lst):
@@ -25,6 +26,8 @@ for e in tqdm(lst):
     newpath = newpath.joinpath(file)
 
     tempdict = {
+        "imprimatur": e[4],
+        "corrector": e[3],
         "entête": e[1],
         "texte": e[2]
     }
