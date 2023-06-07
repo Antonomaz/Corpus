@@ -3,14 +3,16 @@ import glob
 import csv
 import dateutil.parser as duparser
 import flatdict #external dependancy but hopefully just for the temporary fixes anyway until the xml files are normalised/no need for special handling for anything
- 
 test_file: str = "../Mazarinades_jsons/1-100/Moreau100_GALL.json"
 test_dir: str = "../Mazarinades_jsons/*/*.json"
 csv_dir:str="../output/stats"
 unknown_pub_place: str = "Sans Lieu"
 unknown_pub_name: str = "Sans Nom"
 unknown_pub_date:str = "Sans Date"
-
+inconsistent_format_list_path:str = "../output/"
+no_when_file:str = "../output/inconsistent_format/no_when.txt"
+str_when_file:str = "../output/inconsistent_format/str_when.txt"
+no_date_dict_file:str = "../output/inconsistent_format/no_date_dict.txt"
 def write_to_csv(data_dict:dict, csv_dir:str = csv_dir, filename:str="", mode:str = "w", fieldnames:list = ["status", "count"], iterable_values:bool = True):
     csv_file = open(file=f"{csv_dir}/{filename}.csv", mode=mode)
     res = csv.DictWriter(f=csv_file, fieldnames=fieldnames)
@@ -43,7 +45,7 @@ def corrected_file_stats(dir_path: str, save_to_csv:bool = True) -> dict:
             corrected_file_count += 1
     stat_dict:dict = {"file_count": file_count, "corrected_file_count": corrected_file_count, "corrected_file_percentage": corrected_file_count/file_count * 100}
     if save_to_csv:
-        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="corrected_file_stats", fieldnames=["file_count", "corrected_file_count", "corrected_file_percentage"], iterable_values=False)   
+        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="corrected_file_stats", fieldnames=[k for k in stat_dict.keys()], iterable_values=False)   
     return stat_dict
     
 
@@ -135,6 +137,7 @@ def publisher_helper(result_dict: dict, publisher_dict: dict, filepath = "", in_
     # inconsistent formatting handling
     # note: persName/orgName
     if "persName" not in publisher_dict and ("surname" or "orgName" in publisher_dict):
+        #print(publisher_dict, filepath)
         result_dict["named_publisher"] += 1
         updated_key = keys[0]
     else:
@@ -149,14 +152,15 @@ def publisher_helper(result_dict: dict, publisher_dict: dict, filepath = "", in_
         else:
             persName = publisher_dict["persName"]
             if isinstance(persName, dict):
+               #print(publisher_dict, filepath)
                if "surname" in persName:
                 result_dict["named_publisher"] += 1
                 updated_key = keys[0]
 
                elif unknown_pub_name in persName.values():
                    result_dict["unnamed_publisher"] +=1
-                   print(publisher_dict, filepath)
             elif isinstance(persName, str):
+                print(publisher_dict, filepath, file=open("temp.txt", "a"))
                 if persName == unknown_pub_name:
                     result_dict["unnamed_publisher"] += 1
                     updated_key = keys[2]
@@ -219,7 +223,7 @@ def pub_place_helper(result_dict: dict, pub_place_dict: dict):
     return result_dict
 
 
-def pub_place_stats(dir_path: str, save_to_csv:bool = True):
+def pub_place_stats(dir_path: str, save_to_csv:bool = True, filepath:str=""):
     file_list: list = glob.glob(dir_path)
     result_dict: dict = {unknown_pub_place:0}
     file_count: int = len(file_list)
@@ -233,7 +237,7 @@ def pub_place_stats(dir_path: str, save_to_csv:bool = True):
         pub_place = data_dict["entête"]["pubPlace"]
         #handling inconsistent formatting
         if isinstance(pub_place, str):
-            #print(pub_place)
+            print(pub_place, filepath)
             if pub_place == unknown_pub_place:
                 result_dict[unknown_pub_place] +=1
             else:
@@ -260,11 +264,13 @@ def pub_place_stats(dir_path: str, save_to_csv:bool = True):
         write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="pub_place_stat", fieldnames=["place", "count", "percentage"])   
     return stat_dict
 
-def pub_date_helper(result_dict:dict, pub_date_dict:dict):
+def pub_date_helper(result_dict:dict, pub_date_dict:dict, filepath:str= ""):
     updated_key: str|int = ""
     when_key:str = "@when"
     if when_key not in pub_date_dict:
+        #print(pub_date_dict, filepath, file=open(no_when_file, "a"))
         if unknown_pub_date in pub_date_dict.values():
+            #print(pub_date_dict, filepath, file=open(file=no_date_dict_file, mode="a"))
             result_dict[unknown_pub_date]+=1
             updated_key = unknown_pub_date
         else:
@@ -285,14 +291,18 @@ def pub_date_helper(result_dict:dict, pub_date_dict:dict):
                     result_dict[pub_date] = 1
             else:
                 print(pub_date_dict)
-    else:        
-        #using the year by default
-        pub_date = duparser.parse(timestr=pub_date_dict["@when"]).year
-        updated_key = pub_date
-        if pub_date in result_dict:
-            result_dict[pub_date] += 1
-        else:
-            result_dict[pub_date] = 1
+    else: 
+        if unknown_pub_date in pub_date_dict.values():
+            result_dict[unknown_pub_date]+=1
+            #print(pub_date_dict, filepath)
+        else:               
+            #using the year by default
+            pub_date = duparser.parse(timestr=pub_date_dict["@when"]).year
+            updated_key = pub_date
+            if pub_date in result_dict:
+                result_dict[pub_date] += 1
+            else:
+                result_dict[pub_date] = 1
     return result_dict, updated_key
 
 def pub_date_stats(dir_path: str, save_to_csv:bool=True):
@@ -306,7 +316,7 @@ def pub_date_stats(dir_path: str, save_to_csv:bool=True):
         
         #handling inconsistent formatting
         if isinstance(pub_date, str):
-            #print(pub_date)
+            print(pub_date, filepath)
             if pub_date == unknown_pub_date:
                 result_dict[pub_date] += 1
             else:
@@ -323,7 +333,7 @@ def pub_date_stats(dir_path: str, save_to_csv:bool=True):
                 #print(result_dict)
                 temp_dict:dict = dict.fromkeys(result_dict, 0)
                 for p_d in pub_date:
-                    temp_dict, updated_key = pub_date_helper(result_dict=temp_dict, pub_date_dict=p_d)
+                    temp_dict, updated_key = pub_date_helper(result_dict=temp_dict, pub_date_dict=p_d, filepath=filepath)
                     if updated_key != unknown_pub_date:
                         if updated_key in result_dict:
                             result_dict[updated_key] +=1
@@ -331,9 +341,11 @@ def pub_date_stats(dir_path: str, save_to_csv:bool=True):
                             result_dict[updated_key] = 1
                         break
                 else:
-                    result_dict[unknown_pub_date] +=1               
+                    result_dict[unknown_pub_date] +=1  
+                    print(pub_date)
+             
             else:
-                result_dict, _ = pub_date_helper(result_dict=result_dict, pub_date_dict=pub_date)
+                result_dict, _ = pub_date_helper(result_dict=result_dict, pub_date_dict=pub_date,filepath=filepath)
     print(sum(result_dict.values()))
     # {<page count>: (<number of docs for page count>, <percent compared to total file count>)}
     stat_dict:dict = {key: (val, val/file_count * 100) for key, val in result_dict.items()}
@@ -357,16 +369,16 @@ def imprimatur_stats(dir_path:str, save_to_csv:bool=True):
     #print(imprimatur_list)
     stat_dict:dict = {"file_count": file_count, "imprimatur-ed_file_count": imprimatur_count, "imprimatur-ed_file_percentage": imprimatur_count/file_count * 100}
     if save_to_csv:
-        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="imprimatur_stat")    
+        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="imprimatur_stat", fieldnames=[k for k in stat_dict.keys()], iterable_values=False)    
     return stat_dict
 
 def test_stats():
-    print(corrected_file_stats(dir_path=test_dir)) #ok count
-    #print(nb_page_stats(dir_path=test_dir)) #ok count
-    #print(author_stats(dir_path=test_dir)) #ok count
-    #print(publisher_stats(dir_path=test_dir)) #ok count
-    #print(pub_place_stats(dir_path=test_dir)) #ok count
-    #print(pub_date_stats(dir_path=test_dir)) #ok_count
+    ##print(corrected_file_stats(dir_path=test_dir, save_to_csv=False)) #ok count
+    ##print(nb_page_stats(dir_path=test_dir)) #ok count
+    ##print(author_stats(dir_path=test_dir)) #ok count
+    ##print(publisher_stats(dir_path=test_dir, save_to_csv=False)) #ok count
+    ##print(pub_place_stats(dir_path=test_dir, save_to_csv=False)) #ok count
+    print(pub_date_stats(dir_path=test_dir, save_to_csv=False)) #ok_count
     #imprimatur_dict: dict = imprimatur_stats(dir_path=test_dir)
     #write_to_csv(data_dict=imprimatur_dict, csv_dir=csv_dir, filename="imprimatur_stats")
     
@@ -374,5 +386,3 @@ def test_stats():
 
 
 test_stats()
-
-#RDV 14:40 
