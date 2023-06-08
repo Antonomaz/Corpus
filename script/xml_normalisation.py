@@ -108,13 +108,8 @@ def normalise_xml(input_filepath:str, output_filepath:str):
     #print(new_new_xml["TEI"]["teiHeader"]["fileDesc"]["sourceDesc"]["bibl"])
     return new_xml
 
-def normalise_names(input_filepath:str, output_filepath:str):
-    xml_dict:dict = xmltodict.parse(open(input_filepath).read())
-    dict_header:dict =xml_dict["TEI"]["teiHeader"]
-    publisher:dict = dict_header["fileDesc"]["sourceDesc"]["bibl"]["publisher"]
-    pub_date:dict = dict_header["fileDesc"]["sourceDesc"]["bibl"]["date"]
-    pub_place:dict = dict_header["fileDesc"]["sourceDesc"]["bibl"]["pubPlace"]
-    #publisher
+
+def name_publisher_helper(publisher:dict):
     print(f"publisher: {publisher}")
     publisher_flatdict = flatdict.FlatDict(value=publisher)
     #print(publisher_flatdict.values())
@@ -122,34 +117,66 @@ def normalise_names(input_filepath:str, output_filepath:str):
         for flat_key in publisher:
             if publisher_flatdict[flat_key]== "Sans Nom":
                 publisher_flatdict[flat_key] = "Sans nom"
-    xml_dict["TEI"]["teiHeader"]["fileDesc"]["sourceDesc"]["bibl"]["publisher"] = publisher_flatdict.as_dict()
-    print(publisher)
-    #pub date
-    #print(pub_date)
+        publisher = publisher_flatdict.as_dict()
+    #print(publisher)
+    return publisher
+
+def name_pub_date(pub_date:dict):
     pub_date_flatdict = flatdict.FlatDict(value=pub_date)
+    print(f"pub_date: {pub_date}")
     if "Sans Date" in pub_date_flatdict.values():
-        print(f"pub_date: {pub_date}")
         for flat_key in pub_date:
             if pub_date_flatdict[flat_key] == "Sans Date":
                 pub_date_flatdict[flat_key] = "Sans date"
-    xml_dict["TEI"]["teiHeader"]["fileDesc"]["sourceDesc"]["bibl"]["date"] = pub_date_flatdict.as_dict()
-    print(pub_date)
+    pub_date = pub_date_flatdict.as_dict()
     #print(pub_date)
-    #pub place
+    return pub_date
+
+def name_pub_place(pub_place:dict):
     pub_place_flatdict = flatdict.FlatDict(value=pub_place)
     print(f"pub_place: {pub_place}")
     if "Sans Lieu" in pub_place_flatdict.values():
         for flat_key in pub_place_flatdict:
             if pub_place_flatdict[flat_key] == "Sans Lieu":
                 pub_place_flatdict[flat_key] = "Sans lieu"
-        xml_dict["TEI"]["teiHeader"]["fileDesc"]["sourceDesc"]["bibl"]["pubPlace"] = pub_place_flatdict.as_dict()
-    print(pub_place)
+        pub_place = pub_place_flatdict.as_dict()
+    return pub_place
+
+def normalise_names(input_filepath:str, output_filepath:str):
+    xml_dict:dict = xmltodict.parse(open(input_filepath).read())
+    dict_header:dict =xml_dict["TEI"]["teiHeader"]
+    publisher:dict|list = dict_header["fileDesc"]["sourceDesc"]["bibl"]["publisher"]
+    pub_date:dict|list = dict_header["fileDesc"]["sourceDesc"]["bibl"]["date"]
+    pub_place:dict|list = dict_header["fileDesc"]["sourceDesc"]["bibl"]["pubPlace"]
+    #publisher
+    if isinstance(publisher, list):
+        xml_dict["TEI"]["teiHeader"]["fileDesc"]["sourceDesc"]["bibl"]["publisher"] = [name_publisher_helper(publisher=pub) for pub in publisher]
+    else:
+        xml_dict["TEI"]["teiHeader"]["fileDesc"]["sourceDesc"]["bibl"]["publisher"] = name_publisher_helper(publisher=publisher)
+    print(xml_dict["TEI"]["teiHeader"]["fileDesc"]["sourceDesc"]["bibl"]["publisher"]) 
+    #pub date
+    #print(pub_date)
+    if isinstance(pub_date, list):
+        xml_dict["TEI"]["teiHeader"]["fileDesc"]["sourceDesc"]["bibl"]["date"] = [name_pub_date(pub_date=date) for date in pub_date]
+    else:
+        xml_dict["TEI"]["teiHeader"]["fileDesc"]["sourceDesc"]["bibl"]["date"] = name_pub_date(pub_date=pub_date)
+    print(xml_dict["TEI"]["teiHeader"]["fileDesc"]["sourceDesc"]["bibl"]["date"])
+        
+    #print(pub_date)
+    #pub place
+    if isinstance(pub_place, list):
+        xml_dict["TEI"]["teiHeader"]["fileDesc"]["sourceDesc"]["bibl"]["pubPlace"] = [name_pub_place(pub_place=place) for place in pub_place]
+    else:
+        xml_dict["TEI"]["teiHeader"]["fileDesc"]["sourceDesc"]["bibl"]["pubPlace"] = name_pub_place(pub_place=pub_place)
+    
+    print(xml_dict["TEI"]["teiHeader"]["fileDesc"]["sourceDesc"]["bibl"]["pubPlace"])
     new_xml = xmltodict.unparse(input_dict=xml_dict, output=open(output_filepath, mode="w"), pretty=True, short_empty_elements=True)
     return new_xml
 
 def normalise_xml_dir(dir_path:str):
     for filepath in glob.glob(pathname=dir_path):
         new_xml = normalise_xml(input_filepath=filepath, output_filepath=filepath)
+        new_xml = normalise_names(input_filepath=filepath, output_filepath=filepath)
     return
 
 #normalise_xml(input_filepath=test_file1)
@@ -160,7 +187,7 @@ def normalise_xml_dir(dir_path:str):
 #normalise_xml(input_filepath=test_file6, output_filepath="temp_xml/temp.xml")
 #normalise_xml(input_filepath=test_file7, output_filepath="temp_xml/temp.xml")
 #tei_to_json_file(filepath="temp_xml/temp.xml", main_output_dir="./temp")
-#normalise_xml_dir(dir_path=test_dir)
-normalise_names(input_filepath=test_file6, output_filepath="temp_xml/temp.xml")
-tei_to_json_file(filepath="temp_xml/temp.xml", main_output_dir="./temp")
+normalise_xml_dir(dir_path=test_dir)
+#normalise_names(input_filepath=test_file6, output_filepath="temp_xml/temp.xml")
+#tei_to_json_file(filepath="temp_xml/temp.xml", main_output_dir="./temp")
 #test_stats()

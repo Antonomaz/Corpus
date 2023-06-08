@@ -6,9 +6,9 @@ import texte
 
 from tqdm.auto import tqdm
 
-input_dir_path:str = "../Mazarinades/*/*.xml"
+#input_dir_path:str = "../Mazarinades/*/*.xml"
 #path = "../Mazarinades/Antonomaz/*.xml"
-#input_dir_path = "../tests/Mazarinades_tests/*/*.xml"
+input_dir_path = "../tests/Mazarinades_tests/*/*.xml"
 #file_list:list = glob(path)
 test_file5:str = "../tests/Mazarinades_tests/2001-2100/Moreau2022_GBOOKS.xml"
 #main_output_dir:str = "../tests/Mazarinades_jsons"
