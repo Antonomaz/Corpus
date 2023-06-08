@@ -13,6 +13,8 @@ inconsistent_format_list_path:str = "../output/"
 no_when_file:str = "../output/inconsistent_format/no_when.txt"
 str_when_file:str = "../output/inconsistent_format/str_when.txt"
 no_date_dict_file:str = "../output/inconsistent_format/no_date_dict.txt"
+no_persName_file:str = "../output/inconsistent_format/no_persName.txt"
+
 def write_to_csv(data_dict:dict, csv_dir:str = csv_dir, filename:str="", mode:str = "w", fieldnames:list = ["status", "count"], iterable_values:bool = True):
     csv_file = open(file=f"{csv_dir}/{filename}.csv", mode=mode)
     res = csv.DictWriter(f=csv_file, fieldnames=fieldnames)
@@ -132,15 +134,18 @@ def author_stats(dir_path: str, save_to_csv:bool = True) -> dict:
 
 
 def publisher_helper(result_dict: dict, publisher_dict: dict, filepath = "", in_list:bool = False):
+    persName_keys:list = ["surname", "forename", "orgName"]
     keys: list = ["named_publisher", "pseudonym", "unnamed_publisher"]
     updated_key:str = ""
     # inconsistent formatting handling
     # note: persName/orgName
     if "persName" not in publisher_dict and ("surname" or "orgName" in publisher_dict):
-        #print(publisher_dict, filepath)
+        #print("a")
+        #print(publisher_dict, filepath, file=open(no_persName_file, "a"))
         result_dict["named_publisher"] += 1
         updated_key = keys[0]
     else:
+        #print(publisher_dict)
         # regular case
         flat_publisher_dict = flatdict.FlatDict(value=publisher_dict)
         #print(flat_publisher_dict)
@@ -148,19 +153,18 @@ def publisher_helper(result_dict: dict, publisher_dict: dict, filepath = "", in_
         if "pseudonyme" in flat_publisher_dict.values():
             result_dict["pseudonym"] +=1
             updated_key = keys[1]
-
         else:
             persName = publisher_dict["persName"]
             if isinstance(persName, dict):
-               #print(publisher_dict, filepath)
-               if "surname" in persName:
+               if "surname" or "orgName" in persName:
                 result_dict["named_publisher"] += 1
                 updated_key = keys[0]
-
+                # not normal for this one
                elif unknown_pub_name in persName.values():
                    result_dict["unnamed_publisher"] +=1
+                   print(publisher_dict, filepath)
             elif isinstance(persName, str):
-                print(publisher_dict, filepath, file=open("temp.txt", "a"))
+                #print(publisher_dict, filepath, file=open("temp.txt", "a"))
                 if persName == unknown_pub_name:
                     result_dict["unnamed_publisher"] += 1
                     updated_key = keys[2]
@@ -194,8 +198,8 @@ def publisher_stats(dir_path: str, save_to_csv:bool = True) -> dict:
                     result_dict["named_publisher"] +=1
                     all_it = False
                     break
-                if all_it:
-                    print(publisher, filepath)
+                #if all_it:
+                #    print(publisher, filepath)
             else:
                 if temp_dict["pseudonym"] > 0:
                     result_dict["pseudonym"] +=1
@@ -214,6 +218,7 @@ def publisher_stats(dir_path: str, save_to_csv:bool = True) -> dict:
 def pub_place_helper(result_dict: dict, pub_place_dict: dict):
     pub_place: str = pub_place_dict["#text"]
     if pub_place == unknown_pub_place:
+        print(pub_place_dict)
         result_dict[unknown_pub_place] +=1
     else:
         if pub_place in result_dict:
@@ -237,7 +242,7 @@ def pub_place_stats(dir_path: str, save_to_csv:bool = True, filepath:str=""):
         pub_place = data_dict["entête"]["pubPlace"]
         #handling inconsistent formatting
         if isinstance(pub_place, str):
-            print(pub_place, filepath)
+            #print(pub_place, filepath)
             if pub_place == unknown_pub_place:
                 result_dict[unknown_pub_place] +=1
             else:
@@ -270,11 +275,13 @@ def pub_date_helper(result_dict:dict, pub_date_dict:dict, filepath:str= ""):
     if when_key not in pub_date_dict:
         #print(pub_date_dict, filepath, file=open(no_when_file, "a"))
         if unknown_pub_date in pub_date_dict.values():
+            #print(pub_date_dict, filepath)
             #print(pub_date_dict, filepath, file=open(file=no_date_dict_file, mode="a"))
             result_dict[unknown_pub_date]+=1
             updated_key = unknown_pub_date
         else:
             #mooooore edge cases and inconsistent formatting
+            #print(pub_date_dict, filepath)
             if "@notAfter" in pub_date_dict:
                 pub_date = duparser.parse(timestr=pub_date_dict["@notAfter"]).year
                 updated_key = pub_date
@@ -313,10 +320,9 @@ def pub_date_stats(dir_path: str, save_to_csv:bool=True):
         data_dict: dict = json.load(open(filepath))
         pub_date = data_dict["entête"]["pubDate"]
         #print(pub_date)
-        
         #handling inconsistent formatting
         if isinstance(pub_date, str):
-            print(pub_date, filepath)
+            #print(pub_date, filepath)
             if pub_date == unknown_pub_date:
                 result_dict[pub_date] += 1
             else:
@@ -359,9 +365,9 @@ def imprimatur_stats(dir_path:str, save_to_csv:bool=True):
     imprimatur_count: int = 0
     #imprimatur_list:list = []
     for filepath in file_list:
-        print(filepath)
+        #print(filepath)
         data_dict: dict = json.load(open(filepath))
-        print(data_dict.keys())
+        #print(data_dict.keys())
         if (impr:= data_dict["imprimatur"]) is not None:
             imprimatur_count += 1
             #if impr not in imprimatur_list:
@@ -375,14 +381,10 @@ def imprimatur_stats(dir_path:str, save_to_csv:bool=True):
 def test_stats():
     ##print(corrected_file_stats(dir_path=test_dir, save_to_csv=False)) #ok count
     ##print(nb_page_stats(dir_path=test_dir)) #ok count
-    ##print(author_stats(dir_path=test_dir)) #ok count
-    ##print(publisher_stats(dir_path=test_dir, save_to_csv=False)) #ok count
-    ##print(pub_place_stats(dir_path=test_dir, save_to_csv=False)) #ok count
+    #print(author_stats(dir_path=test_dir, save_to_csv=False )) #ok count
+    print(publisher_stats(dir_path=test_dir, save_to_csv=False)) #ok count
+    print(pub_place_stats(dir_path=test_dir, save_to_csv=False)) #ok count
     print(pub_date_stats(dir_path=test_dir, save_to_csv=False)) #ok_count
     #imprimatur_dict: dict = imprimatur_stats(dir_path=test_dir)
     #write_to_csv(data_dict=imprimatur_dict, csv_dir=csv_dir, filename="imprimatur_stats")
-    
     return
-
-
-test_stats()
