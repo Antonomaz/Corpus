@@ -1,595 +1,1095 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau803_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Le coup d’Etat du prince de Condé.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Le coup d’Etat du prince de Condé.</title>
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=EcZLwJSigPAC"/>
-          <author/>
-          <title source="Moreau">Coup (le) d’Etat du prince de Condé.</title>
-          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>
-            <persName>Sans Nom</persName>
-          </publisher>
-          <date source="Moreau" when="1651">1651</date>
-          <extent>
-            <measure quantity="18" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2996944">Lyon</settlement>
-            <institution>Bibliothèque municipale de Lyon</institution>
-            <repository/>
-            <idno type="cote">Res 3111223</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+				<availability n="cc-by" status="restricted">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=EcZLwJSigPAC"/>
+					<author/>
+					<title source="Moreau">Coup (le) d’Etat du prince de Condé.</title>
+					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+					<publisher>
+						<persName>Sans nom</persName>
+					</publisher>
+					<date source="Moreau" when="1651">1651</date>
+					<extent>
+						<measure quantity="18" unit="page"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2996944">Lyon</settlement>
+						<institution>Bibliothèque municipale de Lyon</institution>
+						<repository/>
+						<idno type="cote">Res 3111223</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>True</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">803. Coup (le) d’Etatÿd'prince de Condé. Paris, 1651, 18 pages. Le prince
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">803. Coup (le) d’Etatÿd'prince de Condé. Paris, 1651, 18 pages. Le prince
           était encore à Saint-Maur.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="genre">non renseigné</term>
-          <term type="subject"/>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_51" source="Moreau">
-          <p>Le prince de Condé se retire à Saint-Maur</p>
-          <date when="1651-07-06">1651-07-06</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2021-11-18" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>LE
-        <lb/>COVP D'ESTAT
-        <lb/>DE
-        <lb/>MONSIEVR
-        <lb/>LE PRINCE
-        <lb/>DE
-        <lb/>CONDÉ
-        <lb/>A PARIS,
-        <lb/>M. DC. LI. <pb n="2"/>
-        <pb n="3"/>
-        <lb/>3
-        <lb/>LE COVP DESTAT DE MON
-        <lb rend="¬" break="no"/>ſieur le Prince de Conde.
-        <lb/>IL arriue aux hommes &amp; principalement aux Roys
-        <lb/> &amp; Princes de a terre de faire pendant le cours de
-        <lb/>Lleurs vies dans des conjonctures diffieilles des acions
-        <lb/> heroiques, pleincs de merueille &amp; admiration, leſ
-        <lb rend="¬" break="no"/> quelles pour leur conſequence en la perſonne des Sou
-        <lb rend="¬" break="no"/>uerains &amp; grands Seigneurs ont merité le nom de coups
-        <lb/>d’Eſtat. Ces actioas ſont des productions d’vn eſprie
-        <lb/>excellent, des ouurages d’vne rare prudence, des effects
-        <lb/>d’vne bonne Politique, des mouuements d’vn cœur in
-        <lb rend="¬" break="no"/>trepide, des reſolutions hardies &amp; genereuſes, mais plu
-        <lb rend="¬" break="no"/>ſtoſt des inſpirations d’vne prouidence Diuine, qui
-        <lb/>veille pour le bien des Eſtats: ceux qui ont fait l’Hi
-        <lb rend="¬" break="no"/>ſtoire de leur temps ont eſté curieux de les remar
-        <lb rend="¬" break="no"/>quer pour en faire conſiderer l’eſclat &amp; les merueilles.
-        <lb/>I’obſerue quelque choſe de ſemblable aà̀ ſes actions de
-        <lb/>-courage, dans le procedé qu’a tenu Monſieur le Prince
-        <lb/>de-puis ſa ſorie de Paris pour fainct Maur.
-        <lb/> a vie de ce Princea eſté vne merueille iuſques à pre
-        <lb/>çit, ſa- naiſſance à reüny deux cœurs diuiſez, &amp; à̀ com
-        <lb rend="¬" break="no"/>mancé́ la bonne fortune de fa maiſon, dans la ſuitte, apres
-        <lb/>auoir acquis pendant les premieres anńes de ſa ieuneſ
-        <lb rend="¬" break="no"/>ſe les ſcinces neceſſaires pour falre vn parfait Capitaine;
-        <lb/>Il a fait le meſtier de Prince, qui eſt celuy de deffeadre <pb n="4"/>
-        <lb/>par les armes les intereſts du Roy &amp; de l’Eſtat contre ſes
-        <lb/>Ennemis declarez auec le ſuccez que l’Europe ſçait &amp; ad
-        <lb rend="¬" break="no"/>mire, en cinqannées de guerre, il a ſurpaſſé la reputatrion
-        <lb/>de ſes Anciens conquerans de la terre &amp;a acheué le temps
-        <lb/>du plus grand Capitaine du ſiecle qui auroit vieilly ſoub
-        <lb/>le harnois: ſes triomphes ont fait naiſtre vne cruelle en
-        <lb rend="¬" break="no"/>uie dans l’eſprit d’vn Fauory, le Cardinal Mazarin, le
-        <lb rend="¬" break="no"/>quel ne pouuant ſupporter ceſte eſleuation, laquelle il a
-        <lb/>eſtimé́e vn obſtacle à ſa grandeur &amp; à̀ celle des ſiens, la
-        <lb/>faict arreſter, ſoubs vn prerexte de faits imaginaires &amp;
-        <lb/>eſtudiez. Mais il s’eſt trouué que ſa priſon, qu’il a penſé
-        <lb/>deuoir ſeruiraà l’eſtabliſſement de ſa fortune, par vn con
-        <lb rend="¬" break="no"/>tre coup, a cauſé ſa perte &amp; augmenté la gloire de ce Prin
-        <lb rend="¬" break="no"/>ce. Car dans la ſuitte, le Ciel &amp; la terre ont diſputé pour
-        <lb/>l’honneur de ſa liberté, &amp; par l’éuenement, le meſme
-        <lb/>iour a veu ſa deſliurance, &amp; l’eſloignement de ce Mi
-        <lb rend="¬" break="no"/>niſtre.
-        <lb/>Monſieur le Prince ſe voyant en liberté a mis tous
-        <lb/>ſes ſoins à rcmettre le calme dans l’Eſtat, &amp; aà nous donnert
-        <lb/>vne paix generale, que ſa detention auoit eſloignée, il a
-        <lb/>fait reuerr en Cour Madame la Princeſſe, Madameé de
-        <lb/>Longueuille, Monſieur de Boüillon, Monlieur de la Ro
-        <lb rend="¬" break="no"/>chefoucaut, &amp; tous ceux que ſon empriſonnement auoit
-        <lb/>eſcartez, fuyans la perſecution de ce Miniſtre, qui ont
-        <lb/>vnanimement proteſté à leurs Maieſtez de la ſincerité́ de
-        <lb/>leurs intentions, fidelité́ &amp; affection aà leur ſeruice,
-        <lb/>Monſieur le Maraſchal de Turenne pa ſes ſollicitations
-        <lb/>a rompu tous les attachemens qu’il auoit auee l’Eſpa
-        <lb rend="¬" break="no"/>gne, &amp; s’eſt rendu aupres du Roy pour luy continuer ſes
-        <lb/>ſeruices. <pb n="5"/>
-        <lb/>ſeruices. Il a ſi fort paſſionné le repos de la France, que
-        <lb/>pour terminer ce funeſte differend entre le Parlement de
-        <lb/>Bourdeaux, la Prouince de Guyenne, &amp; Monſieur le Duc
-        <lb/>d’Eſpernon, il a abandonné ſes intereſts vtils, ayant quitt́
-        <lb/>à ce Duc le Gouuernement de Bourgongne, qui eſt de
-        <lb/>ſoixante huict mil liures de reuenu, pour prendre celuy
-        <lb/>de Guyenne, qui ne vaut au Gouuerneur que quarante
-        <lb/>deux mil liures: ſa deſliurance a obligé l’Eſpagne de faire
-        <lb/> de nouuelles demarches pourla paix qu’elle auoit refuſée
-        <lb/>pendant ſa priſon. Enfin il a mis en vſage toutes ſortes de
-        <lb/>moyens pour apporter la tranquillité́ à l’Eſtat, &amp; reduire
-        <lb/>les Ennemis aà̀ vn accommodement.
-        <lb/>l gouſtoit les plaiſirs de ſa liberté́ dans le repos de ſon
-        <lb/>ame; comme il seſt veu menacé dans cette bonace, &amp;
-        <lb/>tout l’Eſtat d’vn nouueaus trouble. Le Cardinal Maza
-        <lb rend="¬" break="no"/>rin s’eſtoit imaginé́ que luy ouurant les portes de la
-        <lb/>citadelle du Haure il le rendroit tellement ſon obli
-        <lb rend="¬" break="no"/>geé, qu’il le maintiendroit dans la durée de ſon miniſte
-        <lb rend="¬" break="no"/>re, contre tous les efforts qu’on faiſolt pour le chaſ
-        <lb rend="¬" break="no"/>ſer, s’eſtant veu trompeé dans ſes eſperances. Ce Prin
-        <lb rend="¬" break="no"/>ce ayant bien recognu qu’il ne luy auoit donné ſali
-        <lb rend="¬" break="no"/>berté,. que dans l’extremité, ne la pouuant plus empeſ
-        <lb rend="¬" break="no"/>cher, &amp; ne luy auoit rendu ce bon office, que pour trou
-        <lb rend="¬" break="no"/>uer ſon ſalu dansſa dellurahce, n’ayant poinmt d’au
-        <lb rend="¬" break="no"/>tres moyens pour ſubſiſter comme il a touſiours l’eſprit
-        <lb/>d retour, &amp; ne s’eſt eſloigné que pour reuemr; luy reſtant
-        <lb/>cette penſée, que ce Prince luy eſt redeuable de ſa dſluran
-        <lb rend="¬" break="no"/>ce, &amp; ne ley a’refuſé ſae proeétiof en ſortadnt du Haure,
-        <lb/>queparcequ’il n’auoitpas lors i gé àpropos dela prendre
-        <lb/>B <pb n="6"/>
-        <lb/>6
-        <lb/>0
-        <lb/>pour le bien de ſes affaires: Il a ereu qu’auee le temps il
-        <lb/>accorderoit ſon retour, pour cet effect, on a fait de ſa part
-        <lb/>diuerſes tentatiues pour le vaincre; mais ne s’aſſeurant pas
-        <lb/>de ſa volonté, en le faiſant rechercher, il a voulu en meſ
-        <lb rend="¬" break="no"/>me temps le perdre par le meſme artifice, duquel il s’eſt
-        <lb/>deſ-ja ſeruy ſi heureuſement pour luy, pour entreprendre
-        <lb/>ſa priſon, afin que l’vn des deux peut reuſſir à ces deſſeins;
-        <lb/>pour cela il l’a fait aceuſer des deſordres des Gens de Guer
-        <lb rend="¬" break="no"/>re, &amp; fait courir le bruit qu’il eſtoit la ſeule cauſequ’il n’y
-        <lb rend="¬" break="no"/>auoit point de fond dans l’Eſpargne pour leur pay ment.
-        <lb/>On a dit aux Suiſſes qu’on ne pouuoit les payer, paree qu’il
-        <lb/>auoit abſorbé la meilleure parte ds Finans: ona jllié
-        <lb/>qu’il demandoit rous les iours ̀ ia Reyne d. nouelles
-        <lb/>Prueopun e le ſiene e oe pe eioi i e ene
-        <lb/> terefts, &amp; qu’elle ne pouuoit plus luppoter ſes importu
-        <lb rend="¬" break="no"/>nitez: on a dit qu’il auoit affe té́- le Gouuernement de
-        <lb/>Guyenne, pour y former vn party contre le Roy; enfin on
-        <lb/>l’a rendu le ſuject de toutes les plaintes qu’oa a formées
-        <lb/>depus ſa ſortie hors du Royaume, afin de le rendre odieux
-        <lb/>au peuple, &amp; qu’il peuſtentrer dans l’eſprit de quelqu’vn
-        <lb/>quelque regret de l’abſence de ce Miniſtre: mais ſur toutes
-        <lb/>choſes ons’eſt eſtudié aà perſuader les peuples qu’il n’auoit
-        <lb/>pas ſeulement conſanei à ſur reuour, Mais s’eſtoir engagé
-        <lb/>de le reſtablir hautement; pour le faire croire, on a ven
-        <lb rend="¬" break="no"/>é l’entremiſe de deux femmes de conſideration, &amp; on a
-        <lb/>fait oſtentation de ſon reſtabliſſement dans ſes Gou
-        <lb rend="¬" break="no"/>uernemens, places fortes, &amp; charges, ſnonobſtant les arti
-        <lb rend="¬" break="no"/>cles arreſtez dans la cnference tenu auprauant ſaliber
-        <lb rend="¬" break="no"/>té) &amp; de quelques autres bienfaits qu’ils diſent que laRey¬
-          <pb n="7"/>
-        <lb/> 53
-        <lb/>ne luy a fait depuis ſa deſliurance.
-        <lb/> Ce Miniſtre ayant appris par ſes Creatures qu’on ne
-        <lb/>pouuoit obtenir de luy, ſon retour: mais qu’on auoit aſſez
-        <lb/>heureuſement reuſſi dans les bruits qu’on auoit ſemez con
-        <lb rend="¬" break="no"/>tre ſa conduite, pour ſe deſliurer de l’obſtacle qu’il croic
-        <lb/>ſeul trouuer ſur ſon chemin pour ſon retour: il a creu
-        <lb/>qu’il pouuoir prendre encore vne fois contre luy le
-        <lb/> deſſein de le faire empriſonner: pluſieurs aduis luy en
-        <lb/>ſont venus, auſquels d’abord il n’a peu adiouſter aucune
-        <lb/>creance, n’ayant peu s’imagner qu’vn ennemy ſi eſloigné
-        <lb/>&amp;.ni cſ coaſerué vn ſi grand pouuoir dans les Con
-        <lb rend="¬" break="no"/>ſeils du Roy. Mais luy ayant eſté rapporté́ la nuict du cn
-        <lb rend="¬" break="no"/>queſme uiilt par diuerſes peſonnes de foy, que trois ou
-        <lb/>quatre cens ſoldats aſſemb’ez marchoient auec armes &amp;
-        <lb/>quelques Officiers dans le fauxboutg Saint Germain, ſe
-        <lb/>ſouuenans des aduis qu’on lui auoit donnez, il a eu raiſon
-        <lb rend="¬" break="no"/>de croire qu’on vouloit s’en ſeruir pour ſe ſaiſir de luy. C’eſt
-        <lb/>pourquoy il a eſté obligeé, pour la ſeureré de ſa perſonne,
-        <lb/>de ſe retirer hors de cette Ville à̀ ſainct Maur, affin de ne
-        <lb/>pas toniber dans le meſme malheur, duquel ſa bonne for
-        <lb rend="¬" break="no"/>tune l’atiré, ne pouuant pas s’aſſeurer qu’elle lui ſera touſ
-        <lb rend="¬" break="no"/>iouts fauorable.
-        <lb/>Quoy que cette ſortie ait eu des raiſons legirimes,
-        <lb/>neantmoins la nouuelle en aeſté receueë diuerſement, les
-        <lb/>bons Prançois qui cognoiſſent le zele auec lequel il s’eſt
-        <lb/>touſiours comporté dans ſes employs pour le ſeruice du
-        <lb/>oy, n’ont rien penſé ny attendu de ſiniſtre de cette ſorie,
-        <lb/>ils onr bien iugé qu’il ne voudroit pas ternir certe belle re
-        <lb rend="¬" break="no"/>putationa qu’il s’eſt conſeruée par la liberté, ny manque <pb n="8"/>
-        <lb/>5
-        <lb/>aux obligations qu’il à au Parlemnent, à Monſieur le De
-        <lb/>d’Orleans, aux gens de bien &amp; aux peuples pour ſa deli
-        <lb rend="¬" break="no"/>urance, ils ont creu que ſa retraite adoit de ioſtes cuſes, &amp;
-        <lb/>que ſa ſuitc nous proluiroit du bien. Mais la f tion du
-        <lb/>C. M12. n’a pas mnqueé́ de s’en preuloir, ſes emilaires ont
-        <lb/>dit qu’il ne s’eſtoit abſenté que pour ſes intere ſts &amp; con
-        <lb rend="¬" break="no"/>renter ſon ambition, que le veritble ſujet de aſortie e¬.
-        <lb/>ſtoit le re fus que la Reyne luy auoit fait du Gouuernement.
-        <lb/>de Prouence pour Monſieur ſon frere &amp; de pluſieurs au
-        <lb rend="¬" break="no"/>tres demandes, que pour ſortir il s’eſtoit forgé vn pretex
-        <lb rend="¬" break="no"/>te qui paroiſioit foible par ces; circonſtances, qu’ayant fe¬.
-        <lb/>cogneu ſes forces apres ſa deſliurance par le grand nom
-        <lb rend="¬" break="no"/>bre de ſes Alliez, amis &amp; ſeruiteurs, Gouuernemens, places
-        <lb/>fortes &amp; affection des Gens de guerre, il vouloit auoir la
-        <lb/>gloire d’emporter à la teſte d’vne puiſſante armeé́e, tout
-        <lb/>ce qu’il voudroit propoſer &amp; pouſſer ſa bonne fortune
-        <lb/>iuſques où peut aller la valeur, le courage &amp; le bon heur
-        <lb/>d’vn ieune Prince victoricux. lls ont meſme publié que
-        <lb/>cette ſortie eſtoit vn eff ct d’vne intelligence ſecrete de
-        <lb/>ce Prince auec le Cardmal Mazarin &amp; ſes Creatures, pour
-        <lb/>fon reſtabliſſement, lors que la Reine lu auroit accordé
-        <lb/>ſes pretentions, ſur leſquelles elle ne pouuoit autrement
-        <lb/>lui donner de ſarfaction, de crainte de bailler quelque ſu
-        <lb rend="¬" break="no"/>jer de meſcontentement aà̀ des perſonncs d’vne haute con
-        <lb rend="¬" break="no"/>ſideration qui en prendroient ialouſie.
-        <lb/> Ces diſcous per niceux ceuoient les eſprits en ſuſpende:
-        <lb/>mais ſes mauuiſes impreſſions qu’on a taſché́ de donner
-        <lb/>au peuple ont ceſſé par la letre qu’l eſcrite au Prle
-        <lb rend="¬" break="no"/>ment le ſepteſme du meſme mois de uillet, par laque ll,
-        <lb/>apres <pb n="9"/>
-        <lb/>-apres auoir rendu la raiſon de ſa ſortie, laquelle il dit
-        <lb/>eſtre l’aduis certain d’vne entrepriſe, contre ſa perſon
-        <lb rend="¬" break="no"/>ne, par le conſeil &amp; pour les intereſts de ce Miniſtre:
-        <lb/>parce qu’il n’a pas voulu conſentir à ſon retour, il decla
-        <lb rend="¬" break="no"/>re hautement, qu’il n’a point d’autro deſſein, n’a point
-        <lb/>d’autres pretentions, que d’empeſcher ſon, retour, &amp;
-        <lb/>procurer l’eſloignement de ſes Creatures, qui ont deſia
-        <lb/>eſté nommées dans la Compagnie, &amp; qu’il nomme
-        <lb/>par ſa Lettre du vnzieſme du meſime mois de luillet.
-        <lb/>O glorieuſe &amp; illuſtre Declaration, digne de la gene
-        <lb rend="¬" break="no"/>roſité &amp; du courage de ce brauc Duc d’Anguien, le Prin
-        <lb rend="¬" break="no"/>ce de Condé, vn Conquerant, vn gaigneur de batailles,
-        <lb/>comme luy, ne pouuoit pas auoir des ſentimens moins
-        <lb/>glorieux &amp; aduantageux pour le bien de l’Eſtat, &amp;
-        <lb/>les François ne deuoient pas attendre vne moin
-        <lb rend="¬" break="no"/>dre recognoiſſance de ſes obligatious pour ſa liberte.
-        <lb/>Cette declaration eſtoit neceſſaire pour détromper &amp;
-        <lb/>deſabuſer les eſprits du peuple, de ces bruits iniurieux
-        <lb/>qu’on auoit reſpanduscontre luy, mais principalement
-        <lb/>pour deſtruire cetre calomnie qu’on luy auoit impoſé,
-        <lb/>de n’auoir pas ſeulementconſenty au retonur de ce Mini
-        <lb rend="¬" break="no"/>ſtre, mais d’auoir promis de prendre ſa cauſe en main,
-        <lb/>pour le reſtablir auec authorité; on peut dite auec veri
-        <lb rend="¬" break="no"/>té, que ceſte declaration lui donrie plus d’auantage &amp;
-        <lb/>d’eſtime, que n’a fait çeſte celebre bataillede Lents, mais
-        <lb/>plus que n’ont pas fait tous ſes exploicts de guerre, puis
-        <lb/>qu’elle luy rend plainement l’amour des peuples, &amp; le
-        <lb/>fait conſiderer pour l’hõnour du nom Ftançoi, &amp;e le plus
-        <lb/>ferme appuy de noſtre libeé. Auſſieſt clle l’expreſſion
-        <lb/>C <pb n="10"/>
-        <lb/>10
-        <lb/>d’vne blle ame, vne production d’n eſprit incompara¬
-        <lb rend="¬" break="no"/>ble, vn eſfect d’vne grande prudẽce, le traict d’vne excel
-        <lb rend="¬" break="no"/>lenre politique, vn eſfect d’vne gene roſité́ non pareille,
-        <lb/>vn teſmoignage authentique de ſon zele au bien de l’E
-        <lb rend="¬" break="no"/>ſtat &amp; ſoulagcment des peupler, vn Conſeil deſintereſſé́
-        <lb/>pis opportunément pour le ſalut de la France, enfi le
-        <lb/>Coup d’Eſtat u Prince de Condé.
-        <lb/> Cette celebre declaration ne doit point eſtre ſuſpe
-        <lb rend="¬" break="no"/>te, elle part d’vn cœur ouuert, qui ignore les trahiſons
-        <lb/>&amp; diſſimulations Italiennes. C’eſt vne reſolution d’v
-        <lb/>ne ame ſincere laquelle n’eſt point capable de laſche
-        <lb rend="¬" break="no"/>teé́ &amp; perfidie, c’eſt vne explication naifue de ſes inten
-        <lb rend="¬" break="no"/>rions, vn deſſein d’vne vertu heroique; enfin c’ ſt le lan
-        <lb rend="¬" break="no"/> gage veritable d’vn Prince genereux, Prince defoy &amp; de
-        <lb/>parole, qui n’a garde de dementir la gloire de ſa belle
-        <lb/>vie par vne action indigne de ſon nom &amp; de ſa reputa
-        <lb rend="¬" break="no"/>tion; il ne faut pas craindre que mettant toute ſa bonne
-        <lb/>fortune aà ſe conſeruer l’honneur quil’ s’eſt acquis par
-        <lb/>ſes explois dé guerre, il vueille le perdre en s’eſloignant
-        <lb/>de ſes deſſein, &amp; il ſe ſent trop obligé au Parlement, à
-        <lb/>Monſieur le Duc d’Orleans &amp; aà tous ceux qui ont con
-        <lb rend="¬" break="no"/>tribué à ſa liberté pour changer ſes reſolutions en des
-        <lb/>entrepriſes funeſtes pour la France.
-        <lb/> Mais dira quelqu’vn, eſtil raiſonnable que le Roy &amp;
-        <lb/>la Reine abandonnent à la volonté́ de Monſieur le Prin
-        <lb rend="¬" break="no"/>ce ſes trois petſonnes, par ce qu’elles lu ſont ſuſpectes?
-        <lb/>le Roy n’a-t’il pas le pouuoir de les retenir, comme il ena
-        <lb/>eu le choix ? n’eſt-ce pas choquer l’authorité Royale, que
-        <lb/>de vouloiroſter au Roy desOiciers deſquels il luy plaiſt <pb n="11"/>
-        <lb/>1
-        <lb/>de ſe ſeruir, &amp; à̀ la Reine ſes domeſtiques: C’eſt faire
-        <lb/>violence à la liberté publique, que de vou loir impoſer
-        <lb/>la neceſſité aà̀ des particuliers de chaſſer leurs domeſti
-        <lb rend="¬" break="no"/>ques, la condition des Roys ne doit pas eſtre moins fa
-        <lb rend="¬" break="no"/>uorable.
-        <lb/> Ileſt vray que parlant en general, c’eſt donner de la
-        <lb/>contrainte à la liberté publique, que de vouloirobliger
-        <lb/>vn particulier à changerſes domeſtiques, mais il ne faut
-        <lb/>point faire de comparaiſon entre la conduite des parri
-        <lb rend="¬" break="no"/>uliers, &amp; celle des Roys &amp; du public: il n’eſt pas permis
-        <lb/> pour la ſarisfaction d’vn particulier, d’arracher vn ſerui¬.
-        <lb/>teur du ſein de ſon maiſtre, mais il eſt touſiours expe
-        <lb rend="¬" break="no"/>dient, encores qu’il ne ſoit pas touſiours agreable, de
-        <lb/>chaſſer &amp; de punir des Miniſtres dan gereux &amp; corrom
-        <lb rend="¬" break="no"/>pus, quand il y va du ſalut ou de la ruine des peuples.
-        <lb/>Mais quand ceſte comparaſon ſeroit bonne, il ſe
-        <lb/>peut rencontrer des occaſions dans leſquelles il eſt per
-        <lb rend="¬" break="no"/>mis d’impoſer cecte Loy aà vn particulier, par exemple:
-        <lb/>le Magſtrat a le pouuoir, pour le hien de la paix, de con.
-        <lb/>traindre vn particulier de chaſſer de ſa maiſon ſur la
-        <lb/>plainte des parens, vn domeſtique turbulent &amp; factieux
-        <lb/>qui ſemera la diuiſiõ̃ parmy les proches d’vne famille en
-        <lb/>tiere &amp;en cauſera la perte; ſi pour le repos &amp; intereſt d’v.
-        <lb/>ne famille particuliere, la luſtice veut qu’on eſloigne des
-        <lb/>domeſtques ſur la demande des parens. ll eſt plus luſte
-        <lb/>de receuoir la plalnte d’vn Prince du Sang contre des
-        <lb/>perſonnes qui veulent mettre le diuorce dans vne famil
-        <lb rend="¬" break="no"/>le Royalle, ſi preiudiciable à l’Eſtat, &amp; ietter le Ryua
-        <lb rend="¬" break="no"/>me ea n aouueau rouble, &amp; il eſt plu raiſonmable <pb n="12"/>
-        <lb/>1
-        <lb/>de les eſloigner pour preuenir ſes malheurs: car dequoy
-        <lb/>eſt-il queſtion dans ce rencontre? ll eſt queſtion de ſça
-        <lb rend="¬" break="no"/>uoir, ſi Monſieur le Princeeſt en droit de demander l’ex
-        <lb rend="¬" break="no"/>pulſion de ces trois perſonnes, &amp; s’il eſt iuſte de luy ac
-        <lb rend="¬" break="no"/>corder ſa demande. Qu’a voulu faire le Parlement lors
-        <lb/>4 a
-        <lb/>que conformément à la volonté du RNoy &amp; de la Reyne,
-        <lb/>il a ordonné́ que le Cardinal Mazarin vuderoit hors du
-        <lb/>Royaume, ſans eſperance de retour? ſans doute il a vou
-        <lb rend="¬" break="no"/>lu deſliurer la France de ce Miniſtre, non ſeulement in
-        <lb rend="¬" break="no"/>digne par ſes mœurs, mais incapable, par ſon inſu
-        <lb rend="¬" break="no"/>fiſance du rang qu’il auoit l’honneur d’y tenir; Il a voulu
-        <lb/>purger l’Eſtat de cét eſtranger, de ce voleur public &amp;
-        <lb/> ryran de Sicile, &amp; afin que la France ne ſouffre plus ſes
-        <lb/>miſeres &amp; ne voye plus la calamité que ſon ambition &amp;
-        <lb/>ſon auarice ont cauſé, il a voulu que ſon baniſſement
-        <lb/>fut perpetuel, que veulent faire ces Meſſieurs qui en
-        <lb rend="¬" break="no"/>rretiennent vn commerce &amp; intelligence ſecrette auec
-        <lb/>ce proſcript, pour ſon retour en France? ils pretendent
-        <lb/>par diuerſes mené́es, caballes, negotiations, entremi
-        <lb rend="¬" break="no"/>ſes, &amp; toutes ſortes de voyes &amp; moyens de le faire re
-        <lb rend="¬" break="no"/>uenir, ce ſont leurs ſoings, &amp; c’eſt aà̀ quoy ils trauaillent
-        <lb/>continuellement, qu’arriuera-il s’ils obtiennent ce qu’ils
-        <lb/>deſirent? La volonté du Roy n’aura pas eu ſon cffect,
-        <lb/>l’Arreſt du Parlement, ſuiuy de celuy de tous les au
-        <lb rend="¬" break="no"/>tres Parlemens, deuiendra vne illuſion &amp; vne chimere,
-        <lb/>&amp; certe iuſte &amp; ſaincte ordonnance demeurera du par
-        <lb rend="¬" break="no"/>chemin ſeulement ( comme dit ce Miniſtre par deri
-        <lb rend="¬" break="no"/>ſinn ). Mbnſieur le Duc d’Orleans &amp; tous les gens de
-        <lb/>bieu trouueront n’auoir eu que de vains efforts. La ville
-        <lb/>de <pb n="13"/>
-        <lb/>13
-        <lb/>de Paris; que des deſſelns lnutils, &amp; les eſperances de
-        <lb/>peuples, ſeront trompez dans l’atrente du bien que
-        <lb/>nous deuoit donner ſon eſloignement: aon ſeule
-        <lb rend="¬" break="no"/> ment les iuſtes intentions du Roy &amp; du Parlement ſe
-        <lb rend="¬" break="no"/>ront fruſtrées, Les gens de bien &amp; les peuples deceus
-        <lb/>&amp; abuſez: mais uous verrons encore te Miniſtne de
-        <lb rend="¬" break="no"/>uenu plus fier, &amp; lors reueftu des qualitez &amp;tiltres
-        <lb/>de Duc &amp; Pair de Ftance dans vn temps de maiorité́
-        <lb/>gourmnnder les François plus inſolemment que ia
-        <lb/>mais, nous le verrohs exercer de cruelles vengeances
-        <lb/>contre tous ceux qui out denmdé ſa ſortie, mais parti
-        <lb rend="¬" break="no"/>culierement cõtre le Parlement, pour l’auoir obtenuë
-        <lb/>&amp; ordonnée, &amp; la ville de Paris pour y auoir beau
-        <lb rend="¬" break="no"/>coup contribué; nous le vertons faire violence aux
-        <lb/>Cours Souueraines &amp; leur monſtrer le baſton, ſi elles
-        <lb/>ont le courage de reſiſter aà̀ ſes volontez, nous le ver
-        <lb rend="¬" break="no"/>rons traitter les Princes comme des valets, les peuples
-        <lb/>omme des Eſ laues, &amp; ſouſmettre de donueau les
-        <lb/>ſubjets du, Roy à la foule des Edits &amp; l’oppieſſion des
-        <lb/>Partizans pour acheuer ſa fortune, elle d fon nep
-        <lb rend="¬" break="no"/>ueu &amp; de ſes niepces, &amp; les combler d’honneurs &amp; de
-        <lb/>Hicheſſes: enfin nous nous verrons tomnber derechef
-        <lb/>dases maux que nous pleurons encores, &amp; deſquels
-        <lb/>ous ſentons iuſques à preſen l’incommodité, &amp;
-        <lb/>dans la crainte legitime de ſts nmadheurs: il ne ſera pas
-        <lb/>permis de demander l’eſloignement de ceux qui nous
-        <lb/>preparent ce grand nombre de miſeres; &amp; veu lent re
-        <lb rend="¬" break="no"/>ptoduire au miheu de nous deſujet-d’vne nouelle <pb n="14"/>
-        <lb/>14
-        <lb/>guerre ciuile. Quand le Parlement a prononcé le
-        <lb/>banniſſement du Cardinal Mazarin, il pouuoit pro
-        <lb rend="¬" break="no"/>noner en meſme temps &amp; auec Iuſtice leur eſloigne
-        <lb rend="¬" break="no"/>men-trparce qu’il a eu raiſon de croire qu’ils eſtoient
-        <lb/>en ſciatéde erimes auec luy &amp; complices de ſcs mal
-        <lb rend="¬" break="no"/>ucrſations., infectez du meſme venin, &amp; imbus des
-        <lb/>meſmes maximes &amp; conſeils: mais quand on leur fe.
-        <lb/>roit cettce grace de croire qu’ils n’ont point participé
-        <lb/>àt ſes crimes, ayans ce nmalheur. que d’auoir eſté mis
-        <lb/>de ſa main auprés du Roy &amp; de la Reine, &amp; qu’ils
-        <lb/>ſont ſes creatures,en ordonnant ſon eſloignement,
-        <lb/>on a eu ſujet d’ordonner le leur conioinctement, &amp;
-        <lb/>de comprendre leurs noms auec celuy de cec Miniſtre:
-        <lb/>neantmoins le Parlement diſſimulant par ſa bonté,
-        <lb/>ne l’ipas ft, en lançant ſon foudre ſur la teſte de ce
-        <lb/>fauory, il n’a pas voulu eſtendre ſa main iuſques à
-        <lb/>eux dans la croyance qu’il a euë̈, que ce coup leur
-        <lb/>donnant de-l’eſtonnement &amp; de la crainte tout en
-        <lb rend="¬" break="no"/>ſemble, ils en profiteroient, &amp; qu’eſtans nés François
-        <lb/>ils quitteroient l’attachement hõteux qu’ls auoient
-        <lb/>auec cét Eſtranger, &amp; ſe tiendroient en leur deuoir:
-        <lb/>mais tant s’en faut. qu’ils ayent changé leurs incli
-        <lb rend="¬" break="no"/>nations &amp; rompu cette malheureuſe vnion, quau
-        <lb rend="¬" break="no"/>contraire, depuis la ſortie de ce Miniſtre, entretenans
-        <lb/>vne eſtroite correſpondance aue luy, &amp; agiſſans patr
-        <lb/>ſes ordres; ils n’ont rien eſpargné &amp; ren obmis
-        <lb/>pour faciliter ſon retour: ceſte negociation les ren
-        <lb/> auſſi coulpables, que ceux qui ont intelligé̃ceauec les
-        <lb/>ennemis declarez de l’Eſtat &amp; veulent les faire entrer <pb n="15"/>
-        <lb/>15
-        <lb/>n Prance: car il faut maintenant conſiderer cét e
-        <lb rend="¬" break="no"/>ſtranger comme vn ennemy iuré du Royaume, qui
-        <lb/>conſerue dans ſon cœur le reſſentiment de ſon ban
-        <lb rend="¬" break="no"/>niſſement, &amp; attend les occaſions propices pour s’en
-        <lb/>venger; &amp; aprestoutes ces prattiques criminelles leſ
-        <lb rend="¬" break="no"/>quelles ſont cognüs dans le monde, on trouuera
-        <lb/>eſtrange ſi ce Prince demande l’eſloignement de ces
-        <lb/>trois perſonnes, qui ſe donnent autant de peine à
-        <lb/>faire reuiure la cauſe de nos deſordres, que de bons
-        <lb/>François s’en donneroient pour reparer vne perte ſi
-        <lb rend="¬" break="no"/>gnalée que nous aurions faite, &amp; on ſe tiendra ſcan
-        <lb rend="¬" break="no"/>daliſé́ qu’il entreprenne d’exclure des conſeils du
-        <lb/>Roy, ceux qui trauaillent à rappeller vn homme de
-        <lb/>malheurs pour la France, qui n’a point d’autre perfe
-        <lb rend="¬" break="no"/>ction, que celle de ſç̧auoir coupper nos bources a
-        <lb rend="¬" break="no"/>dretement, ne s’eſtant pas contenté, pour aſſouuir
-        <lb/>ſa conuotiſe, deſe ſeruir de tous les moyens iniuſtes
-        <lb/>que le monopole &amp; ſon eſprit ingenieux en partis
-        <lb/>luy ont ſucgereé: ayant ancore inuente des ieux de
-        <lb/>ecartes, des ieux de Hoc &amp; autres, pour nous voler
-        <lb/>plus agreablement, à la mode de ſa niation: enfin on
-        <lb/>trouuera mauuais, que par vne ſuitte naturelle il de
-        <lb rend="¬" break="no"/>mande l’execution des Arreſts rendus contre le Car
-        <lb rend="¬" break="no"/>dinal Mazarin pour ſa ſortie hors du Royaume. Car
-        <lb/>quoy que ces trois perſonnes n’y ſoyent point nom
-        <lb rend="¬" break="no"/>ez, neanrmoins ſans doute l’intention de la Cour a
-        <lb/>eſté́ d’exclure desConſeils du Roy tous ſes fauteurs &amp;
-        <lb/>adherans; &amp; ſi deſlors ils n’on eu leur effect contr’eux,
-        <lb/>c’a eſté dans l’eſperance qu’abandonnans ſes inte¬ <pb n="16"/>
-        <lb/>reſts, leur conduite dans les affaires donneroit’vne
-        <lb/>ſatisfaction toute entiere, &amp; leueroit tous les ſoup
-        <lb rend="¬" break="no"/>çons &amp; deffiances qu’on auoit d’eux.
-        <lb/>ll paroiſt par le diſeours cy-deſſus, que des ſubjets
-        <lb/>ont la voye de plainte en quelques occaſions contre
-        <lb/>des Officiers &amp; Domeſtques des Roys, &amp; qu’il eſt de
-        <lb/>l’equité de leur faire raiſon, ſans diminution de
-        <lb/>la puiſlance Royalle: car les Roys doiuent la luſtice à
-        <lb/>leurs ſubjets deuant toutes choſes, &amp; l’ayant renduéë
-        <lb/>employer leur authorité pour la faire executer, &amp;
-        <lb/>dans ſes occaſions il n’eſt pas beſoin de les conuain
-        <lb rend="¬" break="no"/>cre des faicts deſquels ils ſont accuſez, quand ils ſont
-        <lb/>notoires d’vne notorieté publique; on ſçait qu’il eſt
-        <lb/>diſſicie, mais impoſſible de faire le procez à des Of
-        <lb rend="¬" break="no"/>ficiers de cette nature, qui ont part à la faueur, &amp; que
-        <lb/>leur credit redoutable arreſte les depoſiuons, nous
-        <lb/>auons l’experience de cette fatalle authorite, dans les
-        <lb/>informations leſquelles ont eſté faites conte ce Fauo
-        <lb rend="¬" break="no"/>ry abſent depuis ſa ſortie; la crainte de ſonrerour &amp; de
-        <lb/>ſes vengeances quandil ſera reuenu, retient pluſieurs
-        <lb/>e e iene rninei d enpe dlue l ibn d
-        <lb rend="¬" break="no"/>preuues: &amp; on a de la peine de trouuer des teſmoins
-        <lb/>contre le plus ſcelerat &amp; coulpable de tous les hom
-        <lb rend="¬" break="no"/>mes, tant eſt grande &amp; formidable la puiſſance de la
-        <lb/>faueur. De ſorte qu’on eſt ſouuent contraint d’atten
-        <lb rend="¬" break="no"/>dre leur mort, pour faire le procez à leur memoire,
-        <lb/>&amp; ces raiſons ſont cauſe que dans ce rencontre la voix
-        <lb/>publique artſtée par des perſonnes norables &amp; de
-        <lb/>conſideration eſt ſuffiſante, &amp; entre les ſubjets du
-        <lb/> Roy, <pb n="17"/>
-        <lb/>1
-        <lb/>Roy, il n’y en apoint qui puiſſe porter plus legitime
-        <lb rend="¬" break="no"/>ment ſes plaintes, &amp; en rendre teſmoignage, que
-        <lb/>les Prnces du ſang, comme ayans plus d’intereſt à̀
-        <lb/>la conſeruation de l’Eſtat.
-        <lb/> Ces Meſfieurs cognoiſſent biens que le commerce
-        <lb/>auec le Cardinal Mazarin, &amp; lm deſſcin pour ſon re
-        <lb rend="¬" break="no"/>toureſt vn ſuet legitime pour demander leur eſloi
-        <lb rend="¬" break="no"/>gmement: c’eſt pour cela qu’ils deſnient auoir aucu
-        <lb rend="¬" break="no"/>ne intelligence auec luy, &amp; auoir fait aucune ne
-        <lb rend="¬" break="no"/>gotiation pour ſon retour: Mais qui ſera obligé de
-        <lb/>les croirë, &amp; qui ſera garand de leurs paroles? Ces
-        <lb/>Meſſieurs inſtruits dans ſes maximes de leur Maiſtre,
-        <lb/>ne croyent pas faillr contre la bonne foy, que de fai
-        <lb rend="¬" break="no"/>re vn menſonge pou rendre ſeruice aà ce Miniſtre
-        <lb/>leur maiſtre, dans la penſeée qu’ils ont que c’eſt rendre
-        <lb/>ſeruice à l’Eſtat, &amp; qu’ils n’y ſont pas obligez. D’ail
-        <lb rend="¬" break="no"/>leurs ils n’ont garde d’auoü̈er vne faute ſi criminelle:
-        <lb/>mais pluſtoſt leur turpitudé: Leur depottemens de
-        <lb/>mentent leur bouche; cette correſpondance &amp; l’entre
-        <lb rend="¬" break="no"/>pnſe de ce retour par leurs intrigues &amp; mené́es, eſt
-        <lb/>vne hiſtoire que perſonne n’ignore, &amp; il eſt conſtans
-        <lb/>que ce ſone les Miniſtres de ſes paſſions, les confi
-        <lb rend="¬" break="no"/>dens les plus intimes de ſes ſerets, les depoſitaires
-        <lb/>de ſon deſfein pour ſon retour, &amp; ſes fidels negotia
-        <lb rend="¬" break="no"/>teurs: pour en eſtre plus certain &amp; s’en eſclarcir da
-        <lb rend="¬" break="no"/>uantage, il ne faut qu’interroger les habitans des
-        <lb/>Villes, &amp; les Maiſtresdes Poſtes ſur le chemin de Co
-        <lb rend="¬" break="no"/>logne, il ne faut que conſideror ce qui s’eſt paſſe à
-        <lb/>Briſac &amp; aà Sedan, &amp; le voyage de Monſieur de Mer¬ <pb n="18"/>
-        <lb/>œur: il ne faut qu’interroger le peuple de Paris, qui.
-        <lb/>a cognoiſſance des propoſitions faites de puis quel
-        <lb rend="¬" break="no"/>ques iours à Monſieur le Duc d’Orleans ſur le ſuijet
-        <lb/>de ſon retour par Monſieut Turgot Conſeiller dE.
-        <lb/>ſtat: Il ne faut qu’interroger les plus norables des
-        <lb/>trois Ordres, ſur le credit qu’il conſerue dans les Con¬
-        <lb rend="¬" break="no"/>ſeils du Roy par leur moyen, &amp; dans la diſtribution
-        <lb/>des benefices &amp; charges du Royaume. Enfin il ne
-        <lb/>faut qu’interroger ceux qui reç̧oiuent des letrres &amp;
-        <lb/>aduis de Cologne, Rome, &amp; Auignon, ils appren
-        <lb rend="¬" break="no"/>dront qu’on parle dans ces lieux du retour du Cardi
-        <lb rend="¬" break="no"/>nal Mazarin comme d’vne choſe concluë &amp; arreſtée:
-        <lb/>&amp; ſes Emiſſaires dans Paris ont larhardieſſe de dire,
-        <lb/>qu’il faut qu’il reuienne: on doit eſperer que le Ciel
-        <lb/>confondra ſes deſſeins, &amp; que le Parlement cognoiſ
-        <lb rend="¬" break="no"/>ſant la iuſtice de la demande de Monſieur le Prince,
-        <lb/>laquelle reſpond aux vœux de tous les bons François,
-        <lb/>ordonnant l’execution de ſes Arreſts, &amp; puniſſant
-        <lb/>ceux qui ont contreuenu aux defenſes portées par
-        <lb/>iceux, vſant de ſon authorité, il nous deſliure
-        <lb rend="¬" break="no"/>ra du mal duquel nous ſommes menacez, par les
-        <lb/>moyens qu’il trouuera, par ſa prudence ordinaire,
-        <lb/>pour eſloigner les trois creatures de ce Miniſtre, &amp;
-        <lb/>luy fermer à̀ iamais les paſſages de ſon retour en Fran
-        <lb rend="¬" break="no"/>ce, luy en fuire perdre toutes les eſperances, &amp;
-        <lb/>meſme luy en oſter les penſées.
-        <lb/>FIN. </p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="genre">non renseigné</term>
+					<term type="subject"/>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_51" source="Moreau">
+					<p>Le prince de Condé se retire à Saint-Maur</p>
+					<date when="1651-07-06">1651-07-06</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2021-11-18" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<pb n="8"/>
+				<pb n="9"/>
+				<pb n="10"/>
+				<pb n="11"/>
+				<pb n="12"/>
+				<pb n="13"/>
+				<pb n="14"/>
+				<pb n="15"/>
+				<pb n="16"/>
+				<pb n="17"/>
+				<pb n="18"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+LE
+        COVP D'ESTAT
+        DE
+        MONSIEVR
+        LE PRINCE
+        DE
+        CONDÉ
+        A PARIS,
+        M. DC. LI. 
+        
+        3
+        LE COVP DESTAT DE MON
+        ſieur le Prince de Conde.
+        IL arriue aux hommes &amp; principalement aux Roys
+         &amp; Princes de a terre de faire pendant le cours de
+        Lleurs vies dans des conjonctures diffieilles des acions
+         heroiques, pleincs de merueille &amp; admiration, leſ
+         quelles pour leur conſequence en la perſonne des Sou
+        uerains &amp; grands Seigneurs ont merité le nom de coups
+        d’Eſtat. Ces actioas ſont des productions d’vn eſprie
+        excellent, des ouurages d’vne rare prudence, des effects
+        d’vne bonne Politique, des mouuements d’vn cœur in
+        trepide, des reſolutions hardies &amp; genereuſes, mais plu
+        ſtoſt des inſpirations d’vne prouidence Diuine, qui
+        veille pour le bien des Eſtats: ceux qui ont fait l’Hi
+        ſtoire de leur temps ont eſté curieux de les remar
+        quer pour en faire conſiderer l’eſclat &amp; les merueilles.
+        I’obſerue quelque choſe de ſemblable aà̀ ſes actions de
+        -courage, dans le procedé qu’a tenu Monſieur le Prince
+        de-puis ſa ſorie de Paris pour fainct Maur.
+         a vie de ce Princea eſté vne merueille iuſques à pre
+        çit, ſa- naiſſance à reüny deux cœurs diuiſez, &amp; à̀ com
+        mancé́ la bonne fortune de fa maiſon, dans la ſuitte, apres
+        auoir acquis pendant les premieres anńes de ſa ieuneſ
+        ſe les ſcinces neceſſaires pour falre vn parfait Capitaine;
+        Il a fait le meſtier de Prince, qui eſt celuy de deffeadre 
+        par les armes les intereſts du Roy &amp; de l’Eſtat contre ſes
+        Ennemis declarez auec le ſuccez que l’Europe ſçait &amp; ad
+        mire, en cinqannées de guerre, il a ſurpaſſé la reputatrion
+        de ſes Anciens conquerans de la terre &amp;a acheué le temps
+        du plus grand Capitaine du ſiecle qui auroit vieilly ſoub
+        le harnois: ſes triomphes ont fait naiſtre vne cruelle en
+        uie dans l’eſprit d’vn Fauory, le Cardinal Mazarin, le
+        quel ne pouuant ſupporter ceſte eſleuation, laquelle il a
+        eſtimé́e vn obſtacle à ſa grandeur &amp; à̀ celle des ſiens, la
+        faict arreſter, ſoubs vn prerexte de faits imaginaires &amp;
+        eſtudiez. Mais il s’eſt trouué que ſa priſon, qu’il a penſé
+        deuoir ſeruiraà l’eſtabliſſement de ſa fortune, par vn con
+        tre coup, a cauſé ſa perte &amp; augmenté la gloire de ce Prin
+        ce. Car dans la ſuitte, le Ciel &amp; la terre ont diſputé pour
+        l’honneur de ſa liberté, &amp; par l’éuenement, le meſme
+        iour a veu ſa deſliurance, &amp; l’eſloignement de ce Mi
+        niſtre.
+        Monſieur le Prince ſe voyant en liberté a mis tous
+        ſes ſoins à rcmettre le calme dans l’Eſtat, &amp; aà nous donnert
+        vne paix generale, que ſa detention auoit eſloignée, il a
+        fait reuerr en Cour Madame la Princeſſe, Madameé de
+        Longueuille, Monſieur de Boüillon, Monlieur de la Ro
+        chefoucaut, &amp; tous ceux que ſon empriſonnement auoit
+        eſcartez, fuyans la perſecution de ce Miniſtre, qui ont
+        vnanimement proteſté à leurs Maieſtez de la ſincerité́ de
+        leurs intentions, fidelité́ &amp; affection aà leur ſeruice,
+        Monſieur le Maraſchal de Turenne pa ſes ſollicitations
+        a rompu tous les attachemens qu’il auoit auee l’Eſpa
+        gne, &amp; s’eſt rendu aupres du Roy pour luy continuer ſes
+        ſeruices. 
+        ſeruices. Il a ſi fort paſſionné le repos de la France, que
+        pour terminer ce funeſte differend entre le Parlement de
+        Bourdeaux, la Prouince de Guyenne, &amp; Monſieur le Duc
+        d’Eſpernon, il a abandonné ſes intereſts vtils, ayant quitt́
+        à ce Duc le Gouuernement de Bourgongne, qui eſt de
+        ſoixante huict mil liures de reuenu, pour prendre celuy
+        de Guyenne, qui ne vaut au Gouuerneur que quarante
+        deux mil liures: ſa deſliurance a obligé l’Eſpagne de faire
+         de nouuelles demarches pourla paix qu’elle auoit refuſée
+        pendant ſa priſon. Enfin il a mis en vſage toutes ſortes de
+        moyens pour apporter la tranquillité́ à l’Eſtat, &amp; reduire
+        les Ennemis aà̀ vn accommodement.
+        l gouſtoit les plaiſirs de ſa liberté́ dans le repos de ſon
+        ame; comme il seſt veu menacé dans cette bonace, &amp;
+        tout l’Eſtat d’vn nouueaus trouble. Le Cardinal Maza
+        rin s’eſtoit imaginé́ que luy ouurant les portes de la
+        citadelle du Haure il le rendroit tellement ſon obli
+        geé, qu’il le maintiendroit dans la durée de ſon miniſte
+        re, contre tous les efforts qu’on faiſolt pour le chaſ
+        ſer, s’eſtant veu trompeé dans ſes eſperances. Ce Prin
+        ce ayant bien recognu qu’il ne luy auoit donné ſali
+        berté,. que dans l’extremité, ne la pouuant plus empeſ
+        cher, &amp; ne luy auoit rendu ce bon office, que pour trou
+        uer ſon ſalu dansſa dellurahce, n’ayant poinmt d’au
+        tres moyens pour ſubſiſter comme il a touſiours l’eſprit
+        d retour, &amp; ne s’eſt eſloigné que pour reuemr; luy reſtant
+        cette penſée, que ce Prince luy eſt redeuable de ſa dſluran
+        ce, &amp; ne ley a’refuſé ſae proeétiof en ſortadnt du Haure,
+        queparcequ’il n’auoitpas lors i gé àpropos dela prendre
+        B 
+        6
+        0
+        pour le bien de ſes affaires: Il a ereu qu’auee le temps il
+        accorderoit ſon retour, pour cet effect, on a fait de ſa part
+        diuerſes tentatiues pour le vaincre; mais ne s’aſſeurant pas
+        de ſa volonté, en le faiſant rechercher, il a voulu en meſ
+        me temps le perdre par le meſme artifice, duquel il s’eſt
+        deſ-ja ſeruy ſi heureuſement pour luy, pour entreprendre
+        ſa priſon, afin que l’vn des deux peut reuſſir à ces deſſeins;
+        pour cela il l’a fait aceuſer des deſordres des Gens de Guer
+        re, &amp; fait courir le bruit qu’il eſtoit la ſeule cauſequ’il n’y
+        auoit point de fond dans l’Eſpargne pour leur pay ment.
+        On a dit aux Suiſſes qu’on ne pouuoit les payer, paree qu’il
+        auoit abſorbé la meilleure parte ds Finans: ona jllié
+        qu’il demandoit rous les iours ̀ ia Reyne d. nouelles
+        Prueopun e le ſiene e oe pe eioi i e ene
+         terefts, &amp; qu’elle ne pouuoit plus luppoter ſes importu
+        nitez: on a dit qu’il auoit affe té́- le Gouuernement de
+        Guyenne, pour y former vn party contre le Roy; enfin on
+        l’a rendu le ſuject de toutes les plaintes qu’oa a formées
+        depus ſa ſortie hors du Royaume, afin de le rendre odieux
+        au peuple, &amp; qu’il peuſtentrer dans l’eſprit de quelqu’vn
+        quelque regret de l’abſence de ce Miniſtre: mais ſur toutes
+        choſes ons’eſt eſtudié aà perſuader les peuples qu’il n’auoit
+        pas ſeulement conſanei à ſur reuour, Mais s’eſtoir engagé
+        de le reſtablir hautement; pour le faire croire, on a ven
+        é l’entremiſe de deux femmes de conſideration, &amp; on a
+        fait oſtentation de ſon reſtabliſſement dans ſes Gou
+        uernemens, places fortes, &amp; charges, ſnonobſtant les arti
+        cles arreſtez dans la cnference tenu auprauant ſaliber
+        té) &amp; de quelques autres bienfaits qu’ils diſent que laRey¬
+          
+         53
+        ne luy a fait depuis ſa deſliurance.
+         Ce Miniſtre ayant appris par ſes Creatures qu’on ne
+        pouuoit obtenir de luy, ſon retour: mais qu’on auoit aſſez
+        heureuſement reuſſi dans les bruits qu’on auoit ſemez con
+        tre ſa conduite, pour ſe deſliurer de l’obſtacle qu’il croic
+        ſeul trouuer ſur ſon chemin pour ſon retour: il a creu
+        qu’il pouuoir prendre encore vne fois contre luy le
+         deſſein de le faire empriſonner: pluſieurs aduis luy en
+        ſont venus, auſquels d’abord il n’a peu adiouſter aucune
+        creance, n’ayant peu s’imagner qu’vn ennemy ſi eſloigné
+        &amp;.ni cſ coaſerué vn ſi grand pouuoir dans les Con
+        ſeils du Roy. Mais luy ayant eſté rapporté́ la nuict du cn
+        queſme uiilt par diuerſes peſonnes de foy, que trois ou
+        quatre cens ſoldats aſſemb’ez marchoient auec armes &amp;
+        quelques Officiers dans le fauxboutg Saint Germain, ſe
+        ſouuenans des aduis qu’on lui auoit donnez, il a eu raiſon
+        de croire qu’on vouloit s’en ſeruir pour ſe ſaiſir de luy. C’eſt
+        pourquoy il a eſté obligeé, pour la ſeureré de ſa perſonne,
+        de ſe retirer hors de cette Ville à̀ ſainct Maur, affin de ne
+        pas toniber dans le meſme malheur, duquel ſa bonne for
+        tune l’atiré, ne pouuant pas s’aſſeurer qu’elle lui ſera touſ
+        iouts fauorable.
+        Quoy que cette ſortie ait eu des raiſons legirimes,
+        neantmoins la nouuelle en aeſté receueë diuerſement, les
+        bons Prançois qui cognoiſſent le zele auec lequel il s’eſt
+        touſiours comporté dans ſes employs pour le ſeruice du
+        oy, n’ont rien penſé ny attendu de ſiniſtre de cette ſorie,
+        ils onr bien iugé qu’il ne voudroit pas ternir certe belle re
+        putationa qu’il s’eſt conſeruée par la liberté, ny manque 
+        5
+        aux obligations qu’il à au Parlemnent, à Monſieur le De
+        d’Orleans, aux gens de bien &amp; aux peuples pour ſa deli
+        urance, ils ont creu que ſa retraite adoit de ioſtes cuſes, &amp;
+        que ſa ſuitc nous proluiroit du bien. Mais la f tion du
+        C. M12. n’a pas mnqueé́ de s’en preuloir, ſes emilaires ont
+        dit qu’il ne s’eſtoit abſenté que pour ſes intere ſts &amp; con
+        renter ſon ambition, que le veritble ſujet de aſortie e¬.
+        ſtoit le re fus que la Reyne luy auoit fait du Gouuernement.
+        de Prouence pour Monſieur ſon frere &amp; de pluſieurs au
+        tres demandes, que pour ſortir il s’eſtoit forgé vn pretex
+        te qui paroiſioit foible par ces; circonſtances, qu’ayant fe¬.
+        cogneu ſes forces apres ſa deſliurance par le grand nom
+        bre de ſes Alliez, amis &amp; ſeruiteurs, Gouuernemens, places
+        fortes &amp; affection des Gens de guerre, il vouloit auoir la
+        gloire d’emporter à la teſte d’vne puiſſante armeé́e, tout
+        ce qu’il voudroit propoſer &amp; pouſſer ſa bonne fortune
+        iuſques où peut aller la valeur, le courage &amp; le bon heur
+        d’vn ieune Prince victoricux. lls ont meſme publié que
+        cette ſortie eſtoit vn eff ct d’vne intelligence ſecrete de
+        ce Prince auec le Cardmal Mazarin &amp; ſes Creatures, pour
+        fon reſtabliſſement, lors que la Reine lu auroit accordé
+        ſes pretentions, ſur leſquelles elle ne pouuoit autrement
+        lui donner de ſarfaction, de crainte de bailler quelque ſu
+        jer de meſcontentement aà̀ des perſonncs d’vne haute con
+        ſideration qui en prendroient ialouſie.
+         Ces diſcous per niceux ceuoient les eſprits en ſuſpende:
+        mais ſes mauuiſes impreſſions qu’on a taſché́ de donner
+        au peuple ont ceſſé par la letre qu’l eſcrite au Prle
+        ment le ſepteſme du meſme mois de uillet, par laque ll,
+        apres 
+        -apres auoir rendu la raiſon de ſa ſortie, laquelle il dit
+        eſtre l’aduis certain d’vne entrepriſe, contre ſa perſon
+        ne, par le conſeil &amp; pour les intereſts de ce Miniſtre:
+        parce qu’il n’a pas voulu conſentir à ſon retour, il decla
+        re hautement, qu’il n’a point d’autro deſſein, n’a point
+        d’autres pretentions, que d’empeſcher ſon, retour, &amp;
+        procurer l’eſloignement de ſes Creatures, qui ont deſia
+        eſté nommées dans la Compagnie, &amp; qu’il nomme
+        par ſa Lettre du vnzieſme du meſime mois de luillet.
+        O glorieuſe &amp; illuſtre Declaration, digne de la gene
+        roſité &amp; du courage de ce brauc Duc d’Anguien, le Prin
+        ce de Condé, vn Conquerant, vn gaigneur de batailles,
+        comme luy, ne pouuoit pas auoir des ſentimens moins
+        glorieux &amp; aduantageux pour le bien de l’Eſtat, &amp;
+        les François ne deuoient pas attendre vne moin
+        dre recognoiſſance de ſes obligatious pour ſa liberte.
+        Cette declaration eſtoit neceſſaire pour détromper &amp;
+        deſabuſer les eſprits du peuple, de ces bruits iniurieux
+        qu’on auoit reſpanduscontre luy, mais principalement
+        pour deſtruire cetre calomnie qu’on luy auoit impoſé,
+        de n’auoir pas ſeulementconſenty au retonur de ce Mini
+        ſtre, mais d’auoir promis de prendre ſa cauſe en main,
+        pour le reſtablir auec authorité; on peut dite auec veri
+        té, que ceſte declaration lui donrie plus d’auantage &amp;
+        d’eſtime, que n’a fait çeſte celebre bataillede Lents, mais
+        plus que n’ont pas fait tous ſes exploicts de guerre, puis
+        qu’elle luy rend plainement l’amour des peuples, &amp; le
+        fait conſiderer pour l’hõnour du nom Ftançoi, &amp;e le plus
+        ferme appuy de noſtre libeé. Auſſieſt clle l’expreſſion
+        C 
+        10
+        d’vne blle ame, vne production d’n eſprit incompara¬
+        ble, vn eſfect d’vne grande prudẽce, le traict d’vne excel
+        lenre politique, vn eſfect d’vne gene roſité́ non pareille,
+        vn teſmoignage authentique de ſon zele au bien de l’E
+        ſtat &amp; ſoulagcment des peupler, vn Conſeil deſintereſſé́
+        pis opportunément pour le ſalut de la France, enfi le
+        Coup d’Eſtat u Prince de Condé.
+         Cette celebre declaration ne doit point eſtre ſuſpe
+        te, elle part d’vn cœur ouuert, qui ignore les trahiſons
+        &amp; diſſimulations Italiennes. C’eſt vne reſolution d’v
+        ne ame ſincere laquelle n’eſt point capable de laſche
+        teé́ &amp; perfidie, c’eſt vne explication naifue de ſes inten
+        rions, vn deſſein d’vne vertu heroique; enfin c’ ſt le lan
+         gage veritable d’vn Prince genereux, Prince defoy &amp; de
+        parole, qui n’a garde de dementir la gloire de ſa belle
+        vie par vne action indigne de ſon nom &amp; de ſa reputa
+        tion; il ne faut pas craindre que mettant toute ſa bonne
+        fortune aà ſe conſeruer l’honneur quil’ s’eſt acquis par
+        ſes explois dé guerre, il vueille le perdre en s’eſloignant
+        de ſes deſſein, &amp; il ſe ſent trop obligé au Parlement, à
+        Monſieur le Duc d’Orleans &amp; aà tous ceux qui ont con
+        tribué à ſa liberté pour changer ſes reſolutions en des
+        entrepriſes funeſtes pour la France.
+         Mais dira quelqu’vn, eſtil raiſonnable que le Roy &amp;
+        la Reine abandonnent à la volonté́ de Monſieur le Prin
+        ce ſes trois petſonnes, par ce qu’elles lu ſont ſuſpectes?
+        le Roy n’a-t’il pas le pouuoir de les retenir, comme il ena
+        eu le choix ? n’eſt-ce pas choquer l’authorité Royale, que
+        de vouloiroſter au Roy desOiciers deſquels il luy plaiſt 
+        1
+        de ſe ſeruir, &amp; à̀ la Reine ſes domeſtiques: C’eſt faire
+        violence à la liberté publique, que de vou loir impoſer
+        la neceſſité aà̀ des particuliers de chaſſer leurs domeſti
+        ques, la condition des Roys ne doit pas eſtre moins fa
+        uorable.
+         Ileſt vray que parlant en general, c’eſt donner de la
+        contrainte à la liberté publique, que de vouloirobliger
+        vn particulier à changerſes domeſtiques, mais il ne faut
+        point faire de comparaiſon entre la conduite des parri
+        uliers, &amp; celle des Roys &amp; du public: il n’eſt pas permis
+         pour la ſarisfaction d’vn particulier, d’arracher vn ſerui¬.
+        teur du ſein de ſon maiſtre, mais il eſt touſiours expe
+        dient, encores qu’il ne ſoit pas touſiours agreable, de
+        chaſſer &amp; de punir des Miniſtres dan gereux &amp; corrom
+        pus, quand il y va du ſalut ou de la ruine des peuples.
+        Mais quand ceſte comparaſon ſeroit bonne, il ſe
+        peut rencontrer des occaſions dans leſquelles il eſt per
+        mis d’impoſer cecte Loy aà vn particulier, par exemple:
+        le Magſtrat a le pouuoir, pour le hien de la paix, de con.
+        traindre vn particulier de chaſſer de ſa maiſon ſur la
+        plainte des parens, vn domeſtique turbulent &amp; factieux
+        qui ſemera la diuiſiõ̃ parmy les proches d’vne famille en
+        tiere &amp;en cauſera la perte; ſi pour le repos &amp; intereſt d’v.
+        ne famille particuliere, la luſtice veut qu’on eſloigne des
+        domeſtques ſur la demande des parens. ll eſt plus luſte
+        de receuoir la plalnte d’vn Prince du Sang contre des
+        perſonnes qui veulent mettre le diuorce dans vne famil
+        le Royalle, ſi preiudiciable à l’Eſtat, &amp; ietter le Ryua
+        me ea n aouueau rouble, &amp; il eſt plu raiſonmable 
+        1
+        de les eſloigner pour preuenir ſes malheurs: car dequoy
+        eſt-il queſtion dans ce rencontre? ll eſt queſtion de ſça
+        uoir, ſi Monſieur le Princeeſt en droit de demander l’ex
+        pulſion de ces trois perſonnes, &amp; s’il eſt iuſte de luy ac
+        corder ſa demande. Qu’a voulu faire le Parlement lors
+        4 a
+        que conformément à la volonté du RNoy &amp; de la Reyne,
+        il a ordonné́ que le Cardinal Mazarin vuderoit hors du
+        Royaume, ſans eſperance de retour? ſans doute il a vou
+        lu deſliurer la France de ce Miniſtre, non ſeulement in
+        digne par ſes mœurs, mais incapable, par ſon inſu
+        fiſance du rang qu’il auoit l’honneur d’y tenir; Il a voulu
+        purger l’Eſtat de cét eſtranger, de ce voleur public &amp;
+         ryran de Sicile, &amp; afin que la France ne ſouffre plus ſes
+        miſeres &amp; ne voye plus la calamité que ſon ambition &amp;
+        ſon auarice ont cauſé, il a voulu que ſon baniſſement
+        fut perpetuel, que veulent faire ces Meſſieurs qui en
+        rretiennent vn commerce &amp; intelligence ſecrette auec
+        ce proſcript, pour ſon retour en France? ils pretendent
+        par diuerſes mené́es, caballes, negotiations, entremi
+        ſes, &amp; toutes ſortes de voyes &amp; moyens de le faire re
+        uenir, ce ſont leurs ſoings, &amp; c’eſt aà̀ quoy ils trauaillent
+        continuellement, qu’arriuera-il s’ils obtiennent ce qu’ils
+        deſirent? La volonté du Roy n’aura pas eu ſon cffect,
+        l’Arreſt du Parlement, ſuiuy de celuy de tous les au
+        tres Parlemens, deuiendra vne illuſion &amp; vne chimere,
+        &amp; certe iuſte &amp; ſaincte ordonnance demeurera du par
+        chemin ſeulement ( comme dit ce Miniſtre par deri
+        ſinn ). Mbnſieur le Duc d’Orleans &amp; tous les gens de
+        bieu trouueront n’auoir eu que de vains efforts. La ville
+        de 
+        13
+        de Paris; que des deſſelns lnutils, &amp; les eſperances de
+        peuples, ſeront trompez dans l’atrente du bien que
+        nous deuoit donner ſon eſloignement: aon ſeule
+         ment les iuſtes intentions du Roy &amp; du Parlement ſe
+        ront fruſtrées, Les gens de bien &amp; les peuples deceus
+        &amp; abuſez: mais uous verrons encore te Miniſtne de
+        uenu plus fier, &amp; lors reueftu des qualitez &amp;tiltres
+        de Duc &amp; Pair de Ftance dans vn temps de maiorité́
+        gourmnnder les François plus inſolemment que ia
+        mais, nous le verrohs exercer de cruelles vengeances
+        contre tous ceux qui out denmdé ſa ſortie, mais parti
+        culierement cõtre le Parlement, pour l’auoir obtenuë
+        &amp; ordonnée, &amp; la ville de Paris pour y auoir beau
+        coup contribué; nous le vertons faire violence aux
+        Cours Souueraines &amp; leur monſtrer le baſton, ſi elles
+        ont le courage de reſiſter aà̀ ſes volontez, nous le ver
+        rons traitter les Princes comme des valets, les peuples
+        omme des Eſ laues, &amp; ſouſmettre de donueau les
+        ſubjets du, Roy à la foule des Edits &amp; l’oppieſſion des
+        Partizans pour acheuer ſa fortune, elle d fon nep
+        ueu &amp; de ſes niepces, &amp; les combler d’honneurs &amp; de
+        Hicheſſes: enfin nous nous verrons tomnber derechef
+        dases maux que nous pleurons encores, &amp; deſquels
+        ous ſentons iuſques à preſen l’incommodité, &amp;
+        dans la crainte legitime de ſts nmadheurs: il ne ſera pas
+        permis de demander l’eſloignement de ceux qui nous
+        preparent ce grand nombre de miſeres; &amp; veu lent re
+        ptoduire au miheu de nous deſujet-d’vne nouelle 
+        14
+        guerre ciuile. Quand le Parlement a prononcé le
+        banniſſement du Cardinal Mazarin, il pouuoit pro
+        noner en meſme temps &amp; auec Iuſtice leur eſloigne
+        men-trparce qu’il a eu raiſon de croire qu’ils eſtoient
+        en ſciatéde erimes auec luy &amp; complices de ſcs mal
+        ucrſations., infectez du meſme venin, &amp; imbus des
+        meſmes maximes &amp; conſeils: mais quand on leur fe.
+        roit cettce grace de croire qu’ils n’ont point participé
+        àt ſes crimes, ayans ce nmalheur. que d’auoir eſté mis
+        de ſa main auprés du Roy &amp; de la Reine, &amp; qu’ils
+        ſont ſes creatures,en ordonnant ſon eſloignement,
+        on a eu ſujet d’ordonner le leur conioinctement, &amp;
+        de comprendre leurs noms auec celuy de cec Miniſtre:
+        neantmoins le Parlement diſſimulant par ſa bonté,
+        ne l’ipas ft, en lançant ſon foudre ſur la teſte de ce
+        fauory, il n’a pas voulu eſtendre ſa main iuſques à
+        eux dans la croyance qu’il a euë̈, que ce coup leur
+        donnant de-l’eſtonnement &amp; de la crainte tout en
+        ſemble, ils en profiteroient, &amp; qu’eſtans nés François
+        ils quitteroient l’attachement hõteux qu’ls auoient
+        auec cét Eſtranger, &amp; ſe tiendroient en leur deuoir:
+        mais tant s’en faut. qu’ils ayent changé leurs incli
+        nations &amp; rompu cette malheureuſe vnion, quau
+        contraire, depuis la ſortie de ce Miniſtre, entretenans
+        vne eſtroite correſpondance aue luy, &amp; agiſſans patr
+        ſes ordres; ils n’ont rien eſpargné &amp; ren obmis
+        pour faciliter ſon retour: ceſte negociation les ren
+         auſſi coulpables, que ceux qui ont intelligé̃ceauec les
+        ennemis declarez de l’Eſtat &amp; veulent les faire entrer 
+        15
+        n Prance: car il faut maintenant conſiderer cét e
+        ſtranger comme vn ennemy iuré du Royaume, qui
+        conſerue dans ſon cœur le reſſentiment de ſon ban
+        niſſement, &amp; attend les occaſions propices pour s’en
+        venger; &amp; aprestoutes ces prattiques criminelles leſ
+        quelles ſont cognüs dans le monde, on trouuera
+        eſtrange ſi ce Prince demande l’eſloignement de ces
+        trois perſonnes, qui ſe donnent autant de peine à
+        faire reuiure la cauſe de nos deſordres, que de bons
+        François s’en donneroient pour reparer vne perte ſi
+        gnalée que nous aurions faite, &amp; on ſe tiendra ſcan
+        daliſé́ qu’il entreprenne d’exclure des conſeils du
+        Roy, ceux qui trauaillent à rappeller vn homme de
+        malheurs pour la France, qui n’a point d’autre perfe
+        ction, que celle de ſç̧auoir coupper nos bources a
+        dretement, ne s’eſtant pas contenté, pour aſſouuir
+        ſa conuotiſe, deſe ſeruir de tous les moyens iniuſtes
+        que le monopole &amp; ſon eſprit ingenieux en partis
+        luy ont ſucgereé: ayant ancore inuente des ieux de
+        ecartes, des ieux de Hoc &amp; autres, pour nous voler
+        plus agreablement, à la mode de ſa niation: enfin on
+        trouuera mauuais, que par vne ſuitte naturelle il de
+        mande l’execution des Arreſts rendus contre le Car
+        dinal Mazarin pour ſa ſortie hors du Royaume. Car
+        quoy que ces trois perſonnes n’y ſoyent point nom
+        ez, neanrmoins ſans doute l’intention de la Cour a
+        eſté́ d’exclure desConſeils du Roy tous ſes fauteurs &amp;
+        adherans; &amp; ſi deſlors ils n’on eu leur effect contr’eux,
+        c’a eſté dans l’eſperance qu’abandonnans ſes inte¬ 
+        reſts, leur conduite dans les affaires donneroit’vne
+        ſatisfaction toute entiere, &amp; leueroit tous les ſoup
+        çons &amp; deffiances qu’on auoit d’eux.
+        ll paroiſt par le diſeours cy-deſſus, que des ſubjets
+        ont la voye de plainte en quelques occaſions contre
+        des Officiers &amp; Domeſtques des Roys, &amp; qu’il eſt de
+        l’equité de leur faire raiſon, ſans diminution de
+        la puiſlance Royalle: car les Roys doiuent la luſtice à
+        leurs ſubjets deuant toutes choſes, &amp; l’ayant renduéë
+        employer leur authorité pour la faire executer, &amp;
+        dans ſes occaſions il n’eſt pas beſoin de les conuain
+        cre des faicts deſquels ils ſont accuſez, quand ils ſont
+        notoires d’vne notorieté publique; on ſçait qu’il eſt
+        diſſicie, mais impoſſible de faire le procez à des Of
+        ficiers de cette nature, qui ont part à la faueur, &amp; que
+        leur credit redoutable arreſte les depoſiuons, nous
+        auons l’experience de cette fatalle authorite, dans les
+        informations leſquelles ont eſté faites conte ce Fauo
+        ry abſent depuis ſa ſortie; la crainte de ſonrerour &amp; de
+        ſes vengeances quandil ſera reuenu, retient pluſieurs
+        e e iene rninei d enpe dlue l ibn d
+        preuues: &amp; on a de la peine de trouuer des teſmoins
+        contre le plus ſcelerat &amp; coulpable de tous les hom
+        mes, tant eſt grande &amp; formidable la puiſſance de la
+        faueur. De ſorte qu’on eſt ſouuent contraint d’atten
+        dre leur mort, pour faire le procez à leur memoire,
+        &amp; ces raiſons ſont cauſe que dans ce rencontre la voix
+        publique artſtée par des perſonnes norables &amp; de
+        conſideration eſt ſuffiſante, &amp; entre les ſubjets du
+         Roy, 
+        1
+        Roy, il n’y en apoint qui puiſſe porter plus legitime
+        ment ſes plaintes, &amp; en rendre teſmoignage, que
+        les Prnces du ſang, comme ayans plus d’intereſt à̀
+        la conſeruation de l’Eſtat.
+         Ces Meſfieurs cognoiſſent biens que le commerce
+        auec le Cardinal Mazarin, &amp; lm deſſcin pour ſon re
+        toureſt vn ſuet legitime pour demander leur eſloi
+        gmement: c’eſt pour cela qu’ils deſnient auoir aucu
+        ne intelligence auec luy, &amp; auoir fait aucune ne
+        gotiation pour ſon retour: Mais qui ſera obligé de
+        les croirë, &amp; qui ſera garand de leurs paroles? Ces
+        Meſſieurs inſtruits dans ſes maximes de leur Maiſtre,
+        ne croyent pas faillr contre la bonne foy, que de fai
+        re vn menſonge pou rendre ſeruice aà ce Miniſtre
+        leur maiſtre, dans la penſeée qu’ils ont que c’eſt rendre
+        ſeruice à l’Eſtat, &amp; qu’ils n’y ſont pas obligez. D’ail
+        leurs ils n’ont garde d’auoü̈er vne faute ſi criminelle:
+        mais pluſtoſt leur turpitudé: Leur depottemens de
+        mentent leur bouche; cette correſpondance &amp; l’entre
+        pnſe de ce retour par leurs intrigues &amp; mené́es, eſt
+        vne hiſtoire que perſonne n’ignore, &amp; il eſt conſtans
+        que ce ſone les Miniſtres de ſes paſſions, les confi
+        dens les plus intimes de ſes ſerets, les depoſitaires
+        de ſon deſfein pour ſon retour, &amp; ſes fidels negotia
+        teurs: pour en eſtre plus certain &amp; s’en eſclarcir da
+        uantage, il ne faut qu’interroger les habitans des
+        Villes, &amp; les Maiſtresdes Poſtes ſur le chemin de Co
+        logne, il ne faut que conſideror ce qui s’eſt paſſe à
+        Briſac &amp; aà Sedan, &amp; le voyage de Monſieur de Mer¬ 
+        œur: il ne faut qu’interroger le peuple de Paris, qui.
+        a cognoiſſance des propoſitions faites de puis quel
+        ques iours à Monſieur le Duc d’Orleans ſur le ſuijet
+        de ſon retour par Monſieut Turgot Conſeiller dE.
+        ſtat: Il ne faut qu’interroger les plus norables des
+        trois Ordres, ſur le credit qu’il conſerue dans les Con¬
+        ſeils du Roy par leur moyen, &amp; dans la diſtribution
+        des benefices &amp; charges du Royaume. Enfin il ne
+        faut qu’interroger ceux qui reç̧oiuent des letrres &amp;
+        aduis de Cologne, Rome, &amp; Auignon, ils appren
+        dront qu’on parle dans ces lieux du retour du Cardi
+        nal Mazarin comme d’vne choſe concluë &amp; arreſtée:
+        &amp; ſes Emiſſaires dans Paris ont larhardieſſe de dire,
+        qu’il faut qu’il reuienne: on doit eſperer que le Ciel
+        confondra ſes deſſeins, &amp; que le Parlement cognoiſ
+        ſant la iuſtice de la demande de Monſieur le Prince,
+        laquelle reſpond aux vœux de tous les bons François,
+        ordonnant l’execution de ſes Arreſts, &amp; puniſſant
+        ceux qui ont contreuenu aux defenſes portées par
+        iceux, vſant de ſon authorité, il nous deſliure
+        ra du mal duquel nous ſommes menacez, par les
+        moyens qu’il trouuera, par ſa prudence ordinaire,
+        pour eſloigner les trois creatures de ce Miniſtre, &amp;
+        luy fermer à̀ iamais les paſſages de ſon retour en Fran
+        ce, luy en fuire perdre toutes les eſperances, &amp;
+        meſme luy en oſter les penſées.
+        FIN.			</p>
+		</body>
+	</text>
 </TEI>

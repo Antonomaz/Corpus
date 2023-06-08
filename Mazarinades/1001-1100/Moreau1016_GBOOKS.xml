@@ -1,426 +1,705 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1016_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Le dernier exorcisme du cardinal Mazarin, présenté à la
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Le dernier exorcisme du cardinal Mazarin, présenté à la
           reine, pour l’obliger à sortir au plus tôt de la France, par un de ses meilleurs
           amis.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=EN94ogXtGr4C"/>
-          <author/>
-          <title source="Moreau">Dernier exorcisme (le) du cardinal Mazarin, présenté à la reine,
+					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+				<availability n="cc-by" status="restricted">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=EN94ogXtGr4C"/>
+					<author/>
+					<title source="Moreau">Dernier exorcisme (le) du cardinal Mazarin, présenté à la reine,
             pour l’obliger à sortir au plus tôt de la France, par un de ses meilleurs amis.</title>
-          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>
-            <persName>
-              <forename>Jacques</forename>
-              <surname>Clément</surname>
-            </persName>
-          </publisher>
-          <date source="Moreau" when="1652">1652</date>
-          <extent>
-            <measure quantity="8" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2996944">Lyon</settlement>
-            <institution>Bibliothèque municipale de Lyon</institution>
-            <repository/>
-            <idno type="cote">Res 309508</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+					<publisher>
+						<persName>
+							<forename>Jacques</forename>
+							<surname>Clément</surname>
+						</persName>
+					</publisher>
+					<date source="Moreau" when="1652">1652</date>
+					<extent>
+						<measure quantity="8" unit="page"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2996944">Lyon</settlement>
+						<institution>Bibliothèque municipale de Lyon</institution>
+						<repository/>
+						<idno type="cote">Res 309508</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>True</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">1016. Dernier exorcisme (le) du cardinal Mazarin, présenté à la reine,
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">1016. Dernier exorcisme (le) du cardinal Mazarin, présenté à la reine,
           pour l’obliger à sortir au plus tôt de la France, par un de ses meilleurs amis. Paris,
           Jacques Clément, 1652, 8 pageâ}</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">vers</term>
-          <term type="form">prose</term>
-          <term type="genre">non renseigné</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_94" source="Moreau">
-          <p>Le cardinal Mazarin s’éloigne de la cour</p>
-          <date when="1652-08-19">1652-08-19</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2021-11-10" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>LE DERNIER
-        <lb/>EXORCISME
-        <lb/>DV
-        <lb/>CARDINAL
-        <lb/>MAZARIN,
-        <lb/>PRESENTE A LA REYNE.
-        <lb/>Pour l’obliger à ſortir au pluſtoſt de la
-        <lb/>France.
-        <lb/>Par vn de ſes meilleurs Amis. <figure type="decoration"/>
-        <lb/>A PARIS
-        <lb/>Chez IACQVES CLEMENT, à la mon
-        <lb/>tagne Ste Geneuiéve.
-        <lb/>M. DC. LII. <pb n="2"/>
-        <pb n="3"/>
-        <lb/>3
-        <lb/>LE DERNIER EYORCISME
-        <lb/>de Monſieur le Cardinmal Mazarin pour l’obliger
-        <lb/>à ſortir au plaſtoſt de la France,
-        <lb/>PAR VN. DE SES ’AM1S.
-        <lb/> Oyant que Monſieur le Cardinal Mazarin n’a pas moins
-        <lb/>ſ de peine à quitter la France, qu’vn vieux pecheur à̀
-        <lb/> mourir, ou qu’vn Demon des plus obſtinez à ſortir du
-        <lb/>corps d’vn malheureux poſſedeé, que tant de Declarations de ſa
-        <lb/>Maieſté, tãt d’Arreſts de Cours ſouueraines, &amp; tant d’Armé́es
-        <lb/>de nos Princes vnis au deſſe de cauſer ſon éloignemét, n’ont
-        <lb/>encor’pû procurer ce bien os Peuples qui le ſouhaitét auec
-        <lb/>des vœux les plus preſſants du monde; I’ay creu que pour leur
-        <lb/>donner cette ſatisfaction, ie deuois vſer d’Exorciſme en
-        <lb rend="¬" break="no"/>uers ce perſecuteur de nos Prouinces, &amp; que c’eſtoit luy ren
-        <lb rend="¬" break="no"/>dre lIuſtice que de le traitter à la façn de ces Eſprits, Hoſtes
-        <lb/>des Tenebres, qui ne trauaillent comme luy qu’a la deſtruCti6
-        <lb/>du genre humain. Il eſt vray que comme le Formulaire de
-        <lb/>Coniurations ne m’eſt pas familier, &amp; que ie ne veux rieni me
-        <lb rend="¬" break="no"/>Jer de ſaint à ece ſuiet tout prophane, ie le veux coniurer d’vne
-        <lb/>façon extraordinaire, ou pluſtoſt au nom de la Muſe dont l’An
-        <lb rend="¬" break="no"/>touſiaſme a quelque choſe de Diuin: &amp; c’eſt ce qui m’oblige aà̀
-        <lb/>luy dire en ſon langage que ce bon Prelat n’aima iamais peut
-        <lb rend="¬" break="no"/>eſtre, ſçachant qu’il deuoit ſeruir vn iour à decricr ſa con
-        <lb rend="¬" break="no"/>duite:; <l>
-          <lb/>Cors de la France aearin,</l>
-        <l>
-          <lb/>AEngeance de l’Eprist malin?</l>
-        <l>
-          <lb/>Sors Maariu auec es braes?</l>
-        <l>
-          <lb/>Sors auec tes liches Eſclaucs?</l>
-        <pb n="4"/>
-        <l>
-          <lb/>Aec es infames conſorts,</l>
-        <l>
-          <lb/>4</l>
-        <l>
-          <lb/>.Qge meaoenr les traiſtres reſorr</l>
-        <l>
-          <lb/>De r poditigqe infermaſe ?</l>
-        <l>
-          <lb/>Fa noaus ſortir de ce Deadala?</l>
-        <l>
-          <lb/>Abandone, dis-je, ce lies,</l>
-        <l>
-          <lb/> Sors de Frace de pr Die?</l>
-        <l>
-          <lb/>Sors, dis-ie, eaf aist Cerbers</l>
-        <l>
-          <lb/>Dus corps de ntre bone Mere ?</l>
-        <l>
-          <lb/>V-r’en por remplir nos ſoabaits,</l>
-        <l>
-          <lb/>Laiſſé nmos reſpirer e paix.</l>
-        <l>
-          <lb/>Pais qu’icy chac te deefe,</l>
-        <l>
-          <lb/>Pu q’om te bait pla que le peffe,</l>
-        <l>
-          <lb/>Et qu’on deteſte aaprés ads oy</l>
-        <l>
-          <lb/>Qironque a de l’amor pour toy;</l>
-        <l>
-          <lb/>Emporte auecgue toy l Gerre</l>
-        <l>
-          <lb/>Qe t norras en cesse terre</l>
-        <l>
-          <lb/>L Guerre, das-ie, &amp; oanos aaax</l>
-        <l>
-          <lb/>Que l’Aergez des Cardima3</l>
-        <l>
-          <lb/>A ſr noua plas menau qae ceſye</l>
-        <l>
-          <lb/>Deps certais tems fait deſcedre.</l>
-        <l>
-          <lb/> Emf n’attends pas qa’vs lico!</l>
-        <l>
-          <lb/> Sere d’arnement d o eol,</l>
-        <l>
-          <lb/>Et qu’on te traite en Marqos</l>
-        <l>
-          <lb/>’ncre</l>
-        <l>
-          <lb/>Aprés auoir époiſé l’encre</l>
-        <l>
-          <lb/>De nos generenx Eſcyiaine,</l>
-        <l>
-          <lb/>Qoi tous ſe ſont laſſez les maios</l>
-        <l>
-          <lb/>A force de pouſſer la plame</l>
-        <l>
-          <lb/>Pouyr faire sait oaint voloo;</l>
-        <l>
-          <lb/>Qi teémoignaſt ax bons Fraoa</l>
-        <l>
-          <lb/>Qee qoelque iluſtre que t ſs</l>
-        <l>
-          <lb/>T n’es pas tot exenmpt de blânmoe,</l>
-        <l>
-          <lb/>’en deplaiſe à la bonne Dame:</l>
-        <l>
-          <lb/>Qi croit qoe ta n’as poitd’éga,</l>
-        <l>
-          <lb/>3’id et mandit qui t veos nsĺ,</l>
-        <l>
-          <lb/>E qi procure ta ſortie,</l>
-        <l>
-          <lb/>A voir</l>
-        <pb n="5"/>
-        <lb/>5 <l>
-          <lb/> Deu-le efu perdre da ve</l>
-        <l>
-          <lb/> A voir on ppre fnir,</l>
-        <l>
-          <lb/>s-t’eu pour e plus reaenir.</l>
-        <lb/>Vas-t’en, Mazarin, ie te le dis maintenant en Proſe, aprés te
-        <lb/>a uoir mille fois dit en Vers; &amp; te veux traiter quelque temps
-        <lb/>I’homme raiſonnable, aprés t’auoir oſé traiter de Demon. Vas
-        <lb rend="¬" break="no"/>’en, dis-ie, laiſſe noſtre France en repos, &amp; donne ce conten
-        <lb rend="¬" break="no"/>ement aà tant de perſonnes, qui dans la haine mortelle qu’elle te
-        <lb/>portent, penſent que leur ſalut ne dé́pend que de tonéloigne
-        <lb rend="¬" break="no"/>ment, ou e ta mort. Ainſi, Mazarin, ne ſois pas moins gene
-        <lb rend="¬" break="no"/>eux qu’Ochon, lequel ſe voyaat en poſſeſſion de l’Empire où it
-        <lb/>auoit. ſouhaite de paruenir, pour iouyr auec plus de liberté de
-        <lb/>toutes ſortcs de plaiſirs, ſe priua volontairement de l’empire de
-        <lb/>la vie, pour ne r’allumer les feux d’vne Guerre Ciuile, en vne
-        <lb/>occurrence où̀ l’ardeur de ſes ſoldats preſeats, &amp; d́s armées qui
-        <lb/>s’auançoient de tous coſtez à ſon ſecours, luy faiſoient eſperet
-        <lb/>vne prompte Victoire ſur ſes Ennemis, s’il n’euſt embraſſé plû
-        <lb rend="¬" break="no"/>toſt la reſolution d’vne belle mort. Que s’il importe à tant de
-        <lb/>monde, ou que tu t’en aille, ou que tu meures, ne ſois point pa
-        <lb rend="¬" break="no"/>reſſeux à partir, puiſque chaque moment où̀ tu tarde, adiouiſte
-        <lb/>à noſtre peine &amp; à la tienne. Ne t’aſſeure poine, au reſte, à
-        <lb/>l’Armée du Roy, qui trauaille à ton rétabliſſemenc; Sçachan
-        <lb/>que Henry le Grand meſme, auec plus de troupes, &amp; mieux
-        <lb/>aguerries; aprés auoir gagné tant de batailles, &amp; pris tant de Vi
-        <lb rend="¬" break="no"/>les dans la France, dont il eſtoit Roy legitime, ne pût iamaiss’en
-        <lb/>rendre tout à fait Maiſtre, tant que ſon eſprit parut infeété de
-        <lb/>l’hereſie, à qui l’on te peut iuſtemenr comparer. C’eſt pour
-        <lb/>te dire, Mazarin, que une peunianmais eſperer de voir le Roy
-        <lb/>paiſible en ſon Royaume, ny la eyn bien vouluë des Peuples;
-        <lb/>tant que tu les ſuiuras comme tu fais pour te mettre à l’abry des
-        <lb/>orages qui te aenacent de toaus coſûtez. Que ſi c’eſt vn effet de
-        <lb/>prudence de témoigner qu’oa fait de greé, ce qu’autrement on
-        <lb/>ſeroit obligé de faire ds fose, ne diffene point à prendre certe
-        <lb/>reſolation, &amp; fais que noas deuions ainſipluſtoſt le bonheur de
-        <lb/>taretraixe à ta pradence meſme, qui’àla violence d’vne extrême
-        <lb/>neçeſſité. Mais i’aytort de te faire cece xloetation, ſçachant <pb n="6"/>
-        <lb/>e el ſl e e en e unaun que la fgures &amp; que lrntern’apout
-        <lb/>lea oneoeren lenier e nel leerenr
-        <lb/>e lene le nmeſls e pone d i oieile dunnrenupe e pneun
-        <lb/>enuelei eoniſlne e erne les enue renleus eiere enen ieuee
-        <lb/>leue e ele el en le fe uonauore pluvreleneu enien erne
-        <lb/>pe neoue e nmnre ponai pueoldionil lene on ie un le enur
-        <lb/>e e nun ediene e p oolre aurenſiſen ue n e ue euen
-        <lb/>eeie de ſpnes de ſien reni, ue eue nunr uereeor ue
-        <lb/>Se de epeenn oui nunusrinrernnunuinuneue r eieruene
-        <lb/>lit oun ſune de e nuaelen e o aiure piuoe rnre:
-        <lb/>ſeui eero er le ene elee deanene rennunenre
-        <lb/>leunen enepoienupoa lep ſiure pnee le enun pue eeulene
-        <lb/>aienu ie unerenn a dueiſut nſlne eune de en pe oe le
-        <lb/>peuenele lunrne deſon eſpernur lenriuiſounus den nun enrenuſ
-        <lb/>edle rue ne lur dne nies pleſonue uoun der enreue nre eon
-        <lb/>lſle e eue lue ſoes n eopie de l ueſe pe en e neren
-        <lb/>aoeſune li ien e ſenuer nere qeunioune eue nrene
-        <lb/>puene oe de e iunue ie li l puneie le pinunuue
-        <lb/>nue eue pen eenenei iaone euieueun ſei oen lr er
-        <lb/>peder e ne ennnunonanmne dl enun euede sre nure pnre
-        <lb/>pune eueiſiue eeuere leſie nſilie punea eunieie ene
-        <lb/>leuene oie unel e dee un eurnuoienrene pene ie rne
-        <lb/>nue e e loun lanuinedts ſon edlaie, ee ſeuns oe poerne
-        <lb/>ne oue ee de nue en ons de ſuriee ie de e e nne
-        <lb/>eennuen e penu de oe ea eie ne ee.
-        <lb/>ene e leue pe vtrnele ſnerei ei lenie e nee
-        <lb/>ſe luneſ e dlte &amp; dns ſdei l le er ie e eioiue
-        <lb/>eun uſei le e ne o uirele l ſer i i ueiſnen in
-        <lb/>le eſine eipne ie pni der en l ple eie lune e e e pn
-        <lb/>ur ren e n ierer ee delep pe une ie eee
-        <lb/>ee l eniene l oaeia loumen ene ine e one e ene
-        <lb/>enſineae oen rue e lieue eioie enre eeu
-        <lb/>nei e e e ei uninieneonn ſeieueounerne nrnr pn
-        <lb/>e elſene ee le lrpie ſeoen di ne eue epnoe e elſien
-        <lb/>lonli let uele ſireuerereie aeie eneoen
-        <lb/>uune puele uienieun e onue inſee e oeſe n er l leſne <pb n="7"/>
-        <lb/>gure: &amp; qui’il
-        <lb/>e qui me peud:
-        <lb/>cile danslestde.
-        <lb/>uterelles, &amp;l
-        <lb rend="¬" break="no"/>lus veleneurnne
-        <lb rend="¬" break="no"/>pour ce ſuiet ont fait pluſieurs Careſmes en vne ’Anné́e; Celuy
-        <lb/>de tant de malheureux Villageois, &amp; d’autres chetiues perſon
-        <lb rend="¬" break="no"/>nes dans Paris, qui pour l’amour de coy l’obſeruent par neceſſité
-        <lb/>plus rigoureuſement que les anciens Iuifs, reduits à faire ieuſner
-        <lb/>cõme eux, iuſques aux animaux, t’auroit forcé de r’encrer dans les
-        <lb/>brûlantes cauernes de ton Montgibel, qui t’a vomy pour noſtre
-        <lb/>donal dõt ple nle
-        <lb/>tre diſentqe lu, malheur, ou ſi la priere aduioit eu des forces eſficaces pour cée
-        <lb/> eu fus renpnr effet, les Prieres de Quaranté heures faites pat toute la France
-        <lb/>auec tant de zele, &amp; tant de Meſſes dites à cette intention,
-        <lb/>tant de Proceſfions Generales, &amp; de vœux faits au Ciel, pour
-        <lb/>le meſme ſuiet par vne infinité de pcrſonnes pieufes &amp; deuotes,
-        <lb/>auroient, ſans doute deſia mis la France au comble de
-        <lb/>ſes felicitez par ce moyen. Quoy donc, Mazarin, croirons- nous
-        <lb/>que tu ſois vn de ces quatre Anges de l’Apocalypſe, auſquels
-        <lb/>il eſt donné d’enhaut de nuire à Ia mer, à la terre, aux arbres,
-        <lb/>aux plantes, &amp; generalement à toutce qu’Il y a de viuant &amp; d’i
-        <lb rend="¬" break="no"/>nanimé dans la Nature. C’eſt ce que ie ne puis non pſtis preſu
-        <lb rend="¬" break="no"/>mer, parce que les ſeruiceurs deDieu ne portent point encore
-        <lb/>ſur le front les marques de leur future predeſtination, comme
-        <lb/>il ſe doit remarquer ſous le regne de ces quatre Anges malins;
-        <lb/>Si ce n’eſt qu’on peut paſſer icy pour predeſtinés ceux qui ſe
-        <lb/>declarent amis de la Iuſtice, en ſe declarants ennemis de Maza
-        <lb rend="¬" break="no"/>rin. Quoy qu’il en ſoit, il eſt certain que Mazarin n’eſt pas vn
-        <lb/>Demon de la moindre eſpece, puis qu’il eſt vn de ceux qui ſont
-        <lb/>employés à troubler le repos des grands Eſtats, au lieu que
-        <lb/>beaucoup d’autres n’ont la commiſſion que de faire enfler les ri
-        <lb rend="¬" break="no"/>uieres, exciter des brouü̈illards en l’air, ou ſeulement faire tom
-        <lb rend="¬" break="no"/>ber de la grele ſur le perſil, ce qui ne tend pas de meſme à la
-        <lb/>détruction de tout vn pais. C’eſt pour cela que le voyant oppo
-        <lb rend="¬" break="no"/>ſé directement au bon S. Michel-Ange-Tutelaire de la France,
-        <lb/>ie veux adreſſer mes prieres à ce grand Saint, afin que ſon ſecours
-        <lb/>inuincible, au defaut de celuy des hommes, nous déliure bien
-        <lb rend="¬" break="no"/>pae
-        <lb/>toit de la perſecution de ce Tyran, en luy diſant auec vne de
-        <lb rend="¬" break="no"/>eleniſliue o uore ſodſnuiſion <l>
-          <lb/>leue ine e</l>
-        <l>
-          <lb/>eareox Archnge ſaint Michel</l>
-        <l>
-          <lb/>nrde</l>
-        <l>
-          <lb/>lriedleuonl</l>
-        <l>
-          <lb/>Feal amy de l’Etenel,</l>
-        <pb n="8"/>
-        <l>
-          <lb/>l</l>
-        <l>
-          <lb/>8</l>
-        <l>
-          <lb/>Qsi tiens ſins fer y ballebande</l>
-        <l>
-          <lb/>Noſfre France en fa ſouuegarde,</l>
-        <l>
-          <lb/>oyant q’auioard’bay aeari</l>
-        <l>
-          <lb/>Plos afameé q’vn Lop Marin</l>
-        <l>
-          <lb/> Ios pille, ſaiccage &amp; deuore.</l>
-        <l>
-          <lb/> Et naus traiie de Tarc à More.</l>
-        <l>
-          <lb/>Nous les bons &amp; ſages Francois</l>
-        <l>
-          <lb/> Ranges ſos les dioines Loix.</l>
-        <l>
-          <lb/>Enfas qu’il fſaie le Diable ̀ qoatre</l>
-        <l>
-          <lb/>Toaſfours en eſfas de combare,</l>
-        <l>
-          <lb/> Et qe ce maudit Cndinal</l>
-        <l>
-          <lb/>Et vn parfait origina?</l>
-        <l>
-          <lb/> D’impieté́ toute notoire :</l>
-        <l>
-          <lb/>Lſcoute ce fulminatoire,</l>
-        <l>
-          <lb/> Et ſe iugeant to enemy</l>
-        <l>
-          <lb/>Le mal-traite e Diable &amp;de,</l>
-        <l>
-          <lb/>Ly tenaus le pié ſur le gorge</l>
-        <l>
-          <lb/>Conme vne autre braae S. Geage.,.</l>
-        <l>
-          <lb/>Tns que noa ſortions de peril,</l>
-        <l>
-          <lb/>E quil expire</l>
-        <l>
-          <lb/>o2</l>
-        <l>
-          <lb/>Aiaé ſi-i.. </l>
-        <l>
-          <lb/>FIN.</l>
-        <l>
-          <lb/>l</l>
-        <l>
-          <lb/>3</l>
-        <l>
-          <lb/>¬¬</l>
-        <l>
-          <lb/>!</l>
-        <l>
-          <lb/>1</l>
-      </p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">vers</term>
+					<term type="form">prose</term>
+					<term type="genre">non renseigné</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_94" source="Moreau">
+					<p>Le cardinal Mazarin s’éloigne de la cour</p>
+					<date when="1652-08-19">1652-08-19</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2021-11-10" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<pb n="8"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<figure type="decoration"/>
+				<l>
+					<lb/>
+Cors de la France aearin,				</l>
+				<l>
+					<lb/>
+AEngeance de l’Eprist malin?				</l>
+				<l>
+					<lb/>
+Sors Maariu auec es braes?				</l>
+				<l>
+					<lb/>
+Sors auec tes liches Eſclaucs?				</l>
+				<l>
+					<lb/>
+Aec es infames conſorts,				</l>
+				<l>
+					<lb/>
+4				</l>
+				<l>
+					<lb/>
+.Qge meaoenr les traiſtres reſorr				</l>
+				<l>
+					<lb/>
+De r poditigqe infermaſe ?				</l>
+				<l>
+					<lb/>
+Fa noaus ſortir de ce Deadala?				</l>
+				<l>
+					<lb/>
+Abandone, dis-je, ce lies,				</l>
+				<l>
+					<lb/>
+Sors de Frace de pr Die?				</l>
+				<l>
+					<lb/>
+Sors, dis-ie, eaf aist Cerbers				</l>
+				<l>
+					<lb/>
+Dus corps de ntre bone Mere ?				</l>
+				<l>
+					<lb/>
+V-r’en por remplir nos ſoabaits,				</l>
+				<l>
+					<lb/>
+Laiſſé nmos reſpirer e paix.				</l>
+				<l>
+					<lb/>
+Pais qu’icy chac te deefe,				</l>
+				<l>
+					<lb/>
+Pu q’om te bait pla que le peffe,				</l>
+				<l>
+					<lb/>
+Et qu’on deteſte aaprés ads oy				</l>
+				<l>
+					<lb/>
+Qironque a de l’amor pour toy;				</l>
+				<l>
+					<lb/>
+Emporte auecgue toy l Gerre				</l>
+				<l>
+					<lb/>
+Qe t norras en cesse terre				</l>
+				<l>
+					<lb/>
+L Guerre, das-ie, &amp; oanos aaax				</l>
+				<l>
+					<lb/>
+Que l’Aergez des Cardima3				</l>
+				<l>
+					<lb/>
+A ſr noua plas menau qae ceſye				</l>
+				<l>
+					<lb/>
+Deps certais tems fait deſcedre.				</l>
+				<l>
+					<lb/>
+Emf n’attends pas qa’vs lico!				</l>
+				<l>
+					<lb/>
+Sere d’arnement d o eol,				</l>
+				<l>
+					<lb/>
+Et qu’on te traite en Marqos				</l>
+				<l>
+					<lb/>
+’ncre				</l>
+				<l>
+					<lb/>
+Aprés auoir époiſé l’encre				</l>
+				<l>
+					<lb/>
+De nos generenx Eſcyiaine,				</l>
+				<l>
+					<lb/>
+Qoi tous ſe ſont laſſez les maios				</l>
+				<l>
+					<lb/>
+A force de pouſſer la plame				</l>
+				<l>
+					<lb/>
+Pouyr faire sait oaint voloo;				</l>
+				<l>
+					<lb/>
+Qi teémoignaſt ax bons Fraoa				</l>
+				<l>
+					<lb/>
+Qee qoelque iluſtre que t ſs				</l>
+				<l>
+					<lb/>
+T n’es pas tot exenmpt de blânmoe,				</l>
+				<l>
+					<lb/>
+’en deplaiſe à la bonne Dame:				</l>
+				<l>
+					<lb/>
+Qi croit qoe ta n’as poitd’éga,				</l>
+				<l>
+					<lb/>
+3’id et mandit qui t veos nsĺ,				</l>
+				<l>
+					<lb/>
+E qi procure ta ſortie,				</l>
+				<l>
+					<lb/>
+A voir				</l>
+				<l>
+					<lb/>
+Deu-le efu perdre da ve				</l>
+				<l>
+					<lb/>
+A voir on ppre fnir,				</l>
+				<l>
+					<lb/>
+s-t’eu pour e plus reaenir.				</l>
+				<l>
+					<lb/>
+leue ine e				</l>
+				<l>
+					<lb/>
+eareox Archnge ſaint Michel				</l>
+				<l>
+					<lb/>
+nrde				</l>
+				<l>
+					<lb/>
+lriedleuonl				</l>
+				<l>
+					<lb/>
+Feal amy de l’Etenel,				</l>
+				<l>
+					<lb/>
+l				</l>
+				<l>
+					<lb/>
+8				</l>
+				<l>
+					<lb/>
+Qsi tiens ſins fer y ballebande				</l>
+				<l>
+					<lb/>
+Noſfre France en fa ſouuegarde,				</l>
+				<l>
+					<lb/>
+oyant q’auioard’bay aeari				</l>
+				<l>
+					<lb/>
+Plos afameé q’vn Lop Marin				</l>
+				<l>
+					<lb/>
+Ios pille, ſaiccage &amp; deuore.				</l>
+				<l>
+					<lb/>
+Et naus traiie de Tarc à More.				</l>
+				<l>
+					<lb/>
+Nous les bons &amp; ſages Francois				</l>
+				<l>
+					<lb/>
+Ranges ſos les dioines Loix.				</l>
+				<l>
+					<lb/>
+Enfas qu’il fſaie le Diable ̀ qoatre				</l>
+				<l>
+					<lb/>
+Toaſfours en eſfas de combare,				</l>
+				<l>
+					<lb/>
+Et qe ce maudit Cndinal				</l>
+				<l>
+					<lb/>
+Et vn parfait origina?				</l>
+				<l>
+					<lb/>
+D’impieté́ toute notoire :				</l>
+				<l>
+					<lb/>
+Lſcoute ce fulminatoire,				</l>
+				<l>
+					<lb/>
+Et ſe iugeant to enemy				</l>
+				<l>
+					<lb/>
+Le mal-traite e Diable &amp;de,				</l>
+				<l>
+					<lb/>
+Ly tenaus le pié ſur le gorge				</l>
+				<l>
+					<lb/>
+Conme vne autre braae S. Geage.,.				</l>
+				<l>
+					<lb/>
+Tns que noa ſortions de peril,				</l>
+				<l>
+					<lb/>
+E quil expire				</l>
+				<l>
+					<lb/>
+o2				</l>
+				<l>
+					<lb/>
+Aiaé ſi-i..				</l>
+				<l>
+					<lb/>
+FIN.				</l>
+				<l>
+					<lb/>
+l				</l>
+				<l>
+					<lb/>
+3				</l>
+				<l>
+					<lb/>
+¬¬				</l>
+				<l>
+					<lb/>
+!				</l>
+				<l>
+					<lb/>
+1				</l>
+LE DERNIER
+        EXORCISME
+        DV
+        CARDINAL
+        MAZARIN,
+        PRESENTE A LA REYNE.
+        Pour l’obliger à ſortir au pluſtoſt de la
+        France.
+        Par vn de ſes meilleurs Amis. 
+        A PARIS
+        Chez IACQVES CLEMENT, à la mon
+        tagne Ste Geneuiéve.
+        M. DC. LII. 
+        
+        3
+        LE DERNIER EYORCISME
+        de Monſieur le Cardinmal Mazarin pour l’obliger
+        à ſortir au plaſtoſt de la France,
+        PAR VN. DE SES ’AM1S.
+         Oyant que Monſieur le Cardinal Mazarin n’a pas moins
+        ſ de peine à quitter la France, qu’vn vieux pecheur à̀
+         mourir, ou qu’vn Demon des plus obſtinez à ſortir du
+        corps d’vn malheureux poſſedeé, que tant de Declarations de ſa
+        Maieſté, tãt d’Arreſts de Cours ſouueraines, &amp; tant d’Armé́es
+        de nos Princes vnis au deſſe de cauſer ſon éloignemét, n’ont
+        encor’pû procurer ce bien os Peuples qui le ſouhaitét auec
+        des vœux les plus preſſants du monde; I’ay creu que pour leur
+        donner cette ſatisfaction, ie deuois vſer d’Exorciſme en
+        uers ce perſecuteur de nos Prouinces, &amp; que c’eſtoit luy ren
+        dre lIuſtice que de le traitter à la façn de ces Eſprits, Hoſtes
+        des Tenebres, qui ne trauaillent comme luy qu’a la deſtruCti6
+        du genre humain. Il eſt vray que comme le Formulaire de
+        Coniurations ne m’eſt pas familier, &amp; que ie ne veux rieni me
+        Jer de ſaint à ece ſuiet tout prophane, ie le veux coniurer d’vne
+        façon extraordinaire, ou pluſtoſt au nom de la Muſe dont l’An
+        touſiaſme a quelque choſe de Diuin: &amp; c’eſt ce qui m’oblige aà̀
+        luy dire en ſon langage que ce bon Prelat n’aima iamais peut
+        eſtre, ſçachant qu’il deuoit ſeruir vn iour à decricr ſa con
+        duite:; 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        5 
+        
+        
+        Vas-t’en, Mazarin, ie te le dis maintenant en Proſe, aprés te
+        a uoir mille fois dit en Vers; &amp; te veux traiter quelque temps
+        I’homme raiſonnable, aprés t’auoir oſé traiter de Demon. Vas
+        ’en, dis-ie, laiſſe noſtre France en repos, &amp; donne ce conten
+        ement aà tant de perſonnes, qui dans la haine mortelle qu’elle te
+        portent, penſent que leur ſalut ne dé́pend que de tonéloigne
+        ment, ou e ta mort. Ainſi, Mazarin, ne ſois pas moins gene
+        eux qu’Ochon, lequel ſe voyaat en poſſeſſion de l’Empire où it
+        auoit. ſouhaite de paruenir, pour iouyr auec plus de liberté de
+        toutes ſortcs de plaiſirs, ſe priua volontairement de l’empire de
+        la vie, pour ne r’allumer les feux d’vne Guerre Ciuile, en vne
+        occurrence où̀ l’ardeur de ſes ſoldats preſeats, &amp; d́s armées qui
+        s’auançoient de tous coſtez à ſon ſecours, luy faiſoient eſperet
+        vne prompte Victoire ſur ſes Ennemis, s’il n’euſt embraſſé plû
+        toſt la reſolution d’vne belle mort. Que s’il importe à tant de
+        monde, ou que tu t’en aille, ou que tu meures, ne ſois point pa
+        reſſeux à partir, puiſque chaque moment où̀ tu tarde, adiouiſte
+        à noſtre peine &amp; à la tienne. Ne t’aſſeure poine, au reſte, à
+        l’Armée du Roy, qui trauaille à ton rétabliſſemenc; Sçachan
+        que Henry le Grand meſme, auec plus de troupes, &amp; mieux
+        aguerries; aprés auoir gagné tant de batailles, &amp; pris tant de Vi
+        les dans la France, dont il eſtoit Roy legitime, ne pût iamaiss’en
+        rendre tout à fait Maiſtre, tant que ſon eſprit parut infeété de
+        l’hereſie, à qui l’on te peut iuſtemenr comparer. C’eſt pour
+        te dire, Mazarin, que une peunianmais eſperer de voir le Roy
+        paiſible en ſon Royaume, ny la eyn bien vouluë des Peuples;
+        tant que tu les ſuiuras comme tu fais pour te mettre à l’abry des
+        orages qui te aenacent de toaus coſûtez. Que ſi c’eſt vn effet de
+        prudence de témoigner qu’oa fait de greé, ce qu’autrement on
+        ſeroit obligé de faire ds fose, ne diffene point à prendre certe
+        reſolation, &amp; fais que noas deuions ainſipluſtoſt le bonheur de
+        taretraixe à ta pradence meſme, qui’àla violence d’vne extrême
+        neçeſſité. Mais i’aytort de te faire cece xloetation, ſçachant 
+        e el ſl e e en e unaun que la fgures &amp; que lrntern’apout
+        lea oneoeren lenier e nel leerenr
+        e lene le nmeſls e pone d i oieile dunnrenupe e pneun
+        enuelei eoniſlne e erne les enue renleus eiere enen ieuee
+        leue e ele el en le fe uonauore pluvreleneu enien erne
+        pe neoue e nmnre ponai pueoldionil lene on ie un le enur
+        e e nun ediene e p oolre aurenſiſen ue n e ue euen
+        eeie de ſpnes de ſien reni, ue eue nunr uereeor ue
+        Se de epeenn oui nunusrinrernnunuinuneue r eieruene
+        lit oun ſune de e nuaelen e o aiure piuoe rnre:
+        ſeui eero er le ene elee deanene rennunenre
+        leunen enepoienupoa lep ſiure pnee le enun pue eeulene
+        aienu ie unerenn a dueiſut nſlne eune de en pe oe le
+        peuenele lunrne deſon eſpernur lenriuiſounus den nun enrenuſ
+        edle rue ne lur dne nies pleſonue uoun der enreue nre eon
+        lſle e eue lue ſoes n eopie de l ueſe pe en e neren
+        aoeſune li ien e ſenuer nere qeunioune eue nrene
+        puene oe de e iunue ie li l puneie le pinunuue
+        nue eue pen eenenei iaone euieueun ſei oen lr er
+        peder e ne ennnunonanmne dl enun euede sre nure pnre
+        pune eueiſiue eeuere leſie nſilie punea eunieie ene
+        leuene oie unel e dee un eurnuoienrene pene ie rne
+        nue e e loun lanuinedts ſon edlaie, ee ſeuns oe poerne
+        ne oue ee de nue en ons de ſuriee ie de e e nne
+        eennuen e penu de oe ea eie ne ee.
+        ene e leue pe vtrnele ſnerei ei lenie e nee
+        ſe luneſ e dlte &amp; dns ſdei l le er ie e eioiue
+        eun uſei le e ne o uirele l ſer i i ueiſnen in
+        le eſine eipne ie pni der en l ple eie lune e e e pn
+        ur ren e n ierer ee delep pe une ie eee
+        ee l eniene l oaeia loumen ene ine e one e ene
+        enſineae oen rue e lieue eioie enre eeu
+        nei e e e ei uninieneonn ſeieueounerne nrnr pn
+        e elſene ee le lrpie ſeoen di ne eue epnoe e elſien
+        lonli let uele ſireuerereie aeie eneoen
+        uune puele uienieun e onue inſee e oeſe n er l leſne 
+        gure: &amp; qui’il
+        e qui me peud:
+        cile danslestde.
+        uterelles, &amp;l
+        lus veleneurnne
+        pour ce ſuiet ont fait pluſieurs Careſmes en vne ’Anné́e; Celuy
+        de tant de malheureux Villageois, &amp; d’autres chetiues perſon
+        nes dans Paris, qui pour l’amour de coy l’obſeruent par neceſſité
+        plus rigoureuſement que les anciens Iuifs, reduits à faire ieuſner
+        cõme eux, iuſques aux animaux, t’auroit forcé de r’encrer dans les
+        brûlantes cauernes de ton Montgibel, qui t’a vomy pour noſtre
+        donal dõt ple nle
+        tre diſentqe lu, malheur, ou ſi la priere aduioit eu des forces eſficaces pour cée
+         eu fus renpnr effet, les Prieres de Quaranté heures faites pat toute la France
+        auec tant de zele, &amp; tant de Meſſes dites à cette intention,
+        tant de Proceſfions Generales, &amp; de vœux faits au Ciel, pour
+        le meſme ſuiet par vne infinité de pcrſonnes pieufes &amp; deuotes,
+        auroient, ſans doute deſia mis la France au comble de
+        ſes felicitez par ce moyen. Quoy donc, Mazarin, croirons- nous
+        que tu ſois vn de ces quatre Anges de l’Apocalypſe, auſquels
+        il eſt donné d’enhaut de nuire à Ia mer, à la terre, aux arbres,
+        aux plantes, &amp; generalement à toutce qu’Il y a de viuant &amp; d’i
+        nanimé dans la Nature. C’eſt ce que ie ne puis non pſtis preſu
+        mer, parce que les ſeruiceurs deDieu ne portent point encore
+        ſur le front les marques de leur future predeſtination, comme
+        il ſe doit remarquer ſous le regne de ces quatre Anges malins;
+        Si ce n’eſt qu’on peut paſſer icy pour predeſtinés ceux qui ſe
+        declarent amis de la Iuſtice, en ſe declarants ennemis de Maza
+        rin. Quoy qu’il en ſoit, il eſt certain que Mazarin n’eſt pas vn
+        Demon de la moindre eſpece, puis qu’il eſt vn de ceux qui ſont
+        employés à troubler le repos des grands Eſtats, au lieu que
+        beaucoup d’autres n’ont la commiſſion que de faire enfler les ri
+        uieres, exciter des brouü̈illards en l’air, ou ſeulement faire tom
+        ber de la grele ſur le perſil, ce qui ne tend pas de meſme à la
+        détruction de tout vn pais. C’eſt pour cela que le voyant oppo
+        ſé directement au bon S. Michel-Ange-Tutelaire de la France,
+        ie veux adreſſer mes prieres à ce grand Saint, afin que ſon ſecours
+        inuincible, au defaut de celuy des hommes, nous déliure bien
+        pae
+        toit de la perſecution de ce Tyran, en luy diſant auec vne de
+        eleniſliue o uore ſodſnuiſion			</p>
+		</body>
+	</text>
 </TEI>

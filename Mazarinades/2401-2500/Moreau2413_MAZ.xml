@@ -1,256 +1,396 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2413_MAZ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">La marche du sieur de Balthazar dans le Périgord,
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">La marche du sieur de Balthazar dans le Périgord,
           ensemble la prise de la ville de Saint-Astier et de quelques chasteaux.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2022-03-02">2 mars 2022</date>
-        <availability status="restricted" n="cc-by">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14918"/>
-          <author/>
-          <title source="Mazarine">La marche du sieur de Balthazar, dans le Perigord. Ensemble la
+					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2022-03-02">2 mars 2022</date>
+				<availability status="restricted" n="cc-by">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14918"/>
+					<author/>
+					<title source="Mazarine">La marche du sieur de Balthazar, dans le Perigord. Ensemble la
             prise de la ville de Saint Astier, &amp; de quelques chasteaux.</title>
-          <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-          <publisher ref="isni:0000000121408134" xml:id="IL_VivenayNicolas.xml">
-            <persName>
-              <forename>Nicolas</forename>
-              <surname>Vivenay</surname>
-            </persName>
-          </publisher>
-          <date source="Mazarine" when="1652">1652</date>
-          <date source="Carrier" notBefore="1652-06-07">à partir du 7 juin 1652</date>
-          <extent>
-            <measure unit="page" quantity="7"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="BM49094" cert="high"
-            target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49094"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2988507">Paris</settlement>
-            <institution>Bibliothèque Mazarine</institution>
-            <repository/>
-            <idno type="cote">M13496</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
+					<publisher ref="isni:0000000121408134" xml:id="IL_VivenayNicolas.xml">
+						<persName>
+							<forename>Nicolas</forename>
+							<surname>Vivenay</surname>
+						</persName>
+					</publisher>
+					<date source="Mazarine" when="1652">1652</date>
+					<date source="Carrier" notBefore="1652-06-07" when="1652">à partir du 7 juin 1652</date>
+					<extent>
+						<measure unit="page" quantity="7"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="BM49094" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49094"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2988507">Paris</settlement>
+						<institution>Bibliothèque Mazarine</institution>
+						<repository/>
+						<idno type="cote">M13496</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>True</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine">Aucun exemplaire repéré d'une éventuelle édition de Bordeaux. Texte
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine">Aucun exemplaire repéré d'une éventuelle édition de Bordeaux. Texte
           paru à partir du 7 juin 1652 d'après Hubert Carrier (Bibliothèque Mazarine, Ms 4682-4, f.
           31v).</p>
-        <p source="Moreau">2413. Marche (la) du sieur de Balthazar dans le Péri gord, ensemble la
+				<p source="Moreau">2413. Marche (la) du sieur de Balthazar dans le Péri gord, ensemble la
           prise de la ville de Saint-Astier et de quelques chasteaux. Jouxte la copie imprimée à
           Bourdeaux. Paris, Nicolas Vivenay, 1652,7 pages. Très-rare. On peut consulter sur cette
           affaire l'Histoire de la guerre de Guyenne , p. 46.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-          <term type="subject">Balthazard, Jean (160?-168?)</term>
-          <term type="subject">Saint-Astier (Dordogne)</term>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_71" source="Moreau">
-          <p>Prise de Saintes par les troupes royales ; Affaires de la Guyenne</p>
-          <date when="1652-03-16">1652-03-16</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-03-15" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="9"/>
-        <lb/>LA
-        <lb/>MARCHE
-        <lb/>DV SIEVR DE
-        <lb/>BALTHAZAR.
-        <lb/>DANS LE PERIGORD.
-        <lb/>ENSEMBLE LA PRISE
-        <lb/>de la Ville de Saint Aſtier, &amp; de
-        <lb/>quelques Chaſteaux. <figure type="decoration"/>
-        <lb/>Iouxte la copie imprimée à Bordeaux.
-        <lb/>A PARIS,
-        <lb/>Chez NICOLAS VIVENAY, Imprimeur de
-        <lb/>Monſeigneur le Prince.
-        <lb/>M. DC. LII. <pb n="10"/>
-        <pb n="11"/>
-        <lb/>3
-        <lb/>LA MARCHE
-        <lb/>du Sieur de Balthazar dans
-        <lb/>le Perigord: Et la priſe de la
-        <lb/>Ville de Sa nct Aſtier &amp; de
-        <lb/>quelques Chaſteaux.
-        <lb/>NOVS auons dit dans vne de nos
-        <lb/>Relations que le Sieur de Balthazas nous bailleroit ſouuent des ſujets
-        <lb/>de le louër, tandis que les Ennemis luy don
-        <lb rend="¬" break="no"/>noront des occaſions de combattre. Il l’a
-        <lb/>fait depuis pu fot aduantageuſement dans
-        <lb/>la maichie deſes Trouppes dont on peut eom
-        <lb rend="¬" break="no"/>per les iourme es parles Chaleau quilà gai
-        <lb rend="¬" break="no"/>gnez, ou par les Vil es qu’il a priſes.
-        <lb/>Aprs la Victoire remportée ſur le Sieur
-        <lb/>de Foilevlle, le Sieur Balehazar macha
-        <lb/>auee ſon egiment du cot́-de Sarlat, où
-        <lb/>le Marquis de Sauuebœuſ cemmençoit à
-        <lb/>faae gand employ. Mais ce Marquis ayant <pb n="12"/>
-        <lb/>1
-        <lb/>1
-        <lb/>4
-        <lb/>eu aduis de la marche de ce gr and C apitaine
-        <lb/>ſe retira dcn lé Ville; apres auroir laiſſe dans
-        <lb/>Salignac à deux lieuës de là, deux Compa
-        <lb rend="¬" break="no"/>gnaies de Cauallerie.
-        <lb/>Bien que les Ennemys fuſſent bien barri
-        <lb rend="¬" break="no"/>cadez &amp; en’eſtat de ſe pouuoir deffendre; ils
-        <lb/>ne peurent pas eantmois empeſcher que
-        <lb/>ce quartier ne fut enleue; Tous les Cheuaux
-        <lb/>e ces deux cmpagnies furent pris auec yne
-        <lb/>partie de ceux de Sauuebœuf, &amp; tous les Mu
-        <lb rend="¬" break="no"/>lets de ſon équipage. Layde Major de ſon
-        <lb/>Regiaent, vn Lieutenant aucc ſon Eſcuyer
-        <lb/>&amp; ſon Tromette demeurerent parmy les
-        <lb/>Priſonniers.
-        <lb/>En ſuitte de ce premier aduantage, le Sieur
-        <lb/>Balchazar iugeant que ſa preſence n’eſtoit
-        <lb/>plus neceſſaire en ce lieu, où le Marquis d
-        <lb rend="¬" break="no"/>Sauuebœuf ne pouuoir faire d’autres ex
-        <lb rend="¬" break="no"/>ploicts que de leuer la Taille, repaſſa le
-        <lb/>Vezer, &amp; ſe rendit auec vne diligence in
-        <lb rend="¬" break="no"/>croyable deuant le Chaſteau de l’Ardima
-        <lb rend="¬" break="no"/>rie. Cette place incommodoit beaucoup
-        <lb/>la Viſle de Perigueux, dont elle n’eft eſloi
-        <lb rend="¬" break="no"/>gnée que de deux lieues ſeulement. Elle fut
-        <lb/>urpriſe par l’arriuée inopinée de ces troup
-        <lb rend="¬" break="no"/>pes; Ceux qui auoient accouſtumeé de la gar
-        <lb rend="¬" break="no"/>der, n’eureat pas loiſir de s’y rendre; &amp; le
-        <lb/>Gentil-homme <pb n="13"/>
-        <lb/>3
-        <lb/>Geni hoAmeſhae à puiile appaelenrſ
-        <lb/>e trouua pounloreabſen til9’e
-        <lb/>Cependant le Marquis de Chnlot premier
-        <lb/>Eſcuy er de Moufieur le Printe, qui commain
-        <lb/>de dans Perigueux ſoubs lauthorité́ de Son
-        <lb/>Alreſſe, auoi faitlortir deux pieces de can on
-        <lb/>pour aller battre ce Chaſteau; Mais ceuax qut
-        <lb/>etoient dedans, eſtonnez ou par l’abſence
-        <lb/>de leut Capitaine, ſans artendre les dernieres
-        <lb/>attaques, ſe rendirent à diſcretion.
-        <lb/>Le lendemain le ſieur Balthiazas partit de
-        <lb/>L’ardimarie, alla paſſer à Perigueux, &amp; de là
-        <lb/>pit ſa marche versS. Aſtier. Ceſt vne petite
-        <lb/>ville ſcitu cdé ſur le bod de la tiuere de l’Iſle à
-        <lb/>deux lieuës de Perigueux, elle a de bonnes mu
-        <lb rend="¬" break="no"/>railles, &amp; vne Egliſe quir eiſt ſans doubte la plus
-        <lb/>fuse du pais. C’eſt pourquoy les Enncmis re
-        <lb rend="¬" break="no"/>or noiſſans l’impotance de ce poſte y auoiét
-        <lb/>miis en garniſon vne coapagnie de Cauallerie,
-        <lb/>&amp; deux alnlantere.
-        <lb/>Quoy. que le ſieur Balthazar euſt donné́ or
-        <lb rend="¬" break="no"/>dre à l’infanteric de le luiure (c’eſtois vn petit
-        <lb/>corpsompoſeé́ des nourgeois de Prgleux &amp;
-        <lb/>dc Paiſans du Pareage:) eantmoins ſelais
-        <lb rend="¬" break="no"/>ſûs emposrtcr aà l’ardeur deſes gens auſfi bien
-        <lb/>qu’a cellt de ſon courage3 os qu il ſut atriné́.
-        <lb/>deuant SamuAſtier, il uit attaquer eue plae; <pb n="14"/>
-        <lb/>¬-
-        <lb/>ſerauaierolhiienx piaedederrẽ; &amp; l’eſpdoo
-        <lb/>le piſtolet à la main, dnnerentauoetant de vi
-        <lb rend="¬" break="no"/>guee,; qu’alt’ erhpoté la Ville d’abord, ils
-        <lb/>enernrpofſe moſle auiecles Ennemis dans
-        <lb/>llniglif:
-        <lb/>rh Capiraine qui commandoit leur infance
-        <lb rend="¬" break="no"/>aieftni dansle ambat auec pluieurs autres;
-        <lb/>La Liminade Capitaine de Cauallerie ſe ſauu
-        <lb/>darsle clocher aue ce qui pû̂t. eſchappet à la
-        <lb/>premiere impetuoſé des vaiqueurs
-        <lb rend="¬" break="no"/>. Mais leſieur Balthazar pour ne perdre point
-        <lb/>emps, partit le lendemair matin auec trois
-        <lb/>cens Chenaux, &amp; cent hommes du Pareage
-        <lb/>pour marcher dtoir au Chaſteau de Beau-ſe
-        <lb rend="¬" break="no"/>jour qui eſt aſſez proche de la. Il laiſſa à Saint
-        <lb/>Aſtier les ſieurs Ricous, &amp; de la Roque, auec
-        <lb/>ordre de ne reeceuoir les Ennemis qui s’étoienr
-        <lb/>refugiez dans e locher a aucune ſorte de
-        <lb/>compoſition ſoir du meſme iour la Limie
-        <lb/>nade ayant demandé de capituler, il en fut re
-        <lb rend="¬" break="no"/>fuſé &amp; fut obligé de ſe rendre à diſcretion auec
-        <lb/>tout ce qui teſtot dans la place.
-        <lb/>Le deſſein du ſieur Balthazar eſtoit ſeule
-        <lb rend="¬" break="no"/>naent d’inueſtir Beau-ſejour; mais ayant ren
-        <lb rend="¬" break="no"/>contré l’occaſioufauorable, il fit mettre pied
-        <lb/>à rerre à ſes Caualiers, &amp; donner l’aſlaut ſur
-        <lb/>l’heure meſme. Il y eut d’abord quelque reſi¬ <pb n="15"/>
-        <lb/>ſtahnceé: mais le courage des attaquans empor
-        <lb rend="¬" break="no"/>ta dans peu de temps cette place. Vn Capi
-        <lb rend="¬" break="no"/>taine du Regiment de Balthazar fut bleſſe
-        <lb/>dans cette occaſion, vn Cornette, deux Ma
-        <lb rend="¬" break="no"/>reſchaux des logis, &amp; quinze Caualiers fuent
-        <lb/>tuez ſur la place.
-        <lb/>Ce Chaſteau eſt ttes-fort &amp; tres important,
-        <lb/>il y auoit quatre-vingts hommes dedans, qui
-        <lb/>ont eſte tous tuez ou faits priſonniers. ll ap
-        <lb rend="¬" break="no"/>partient au Comte de Grignols, qui auec les
-        <lb/>Vicomtes de Riberac, &amp; d’Aubetere, fai
-        <lb rend="¬" break="no"/>ſoient des leué́es dans lePais, pour en chaſſr le
-        <lb/>ſieur Balthazar: Mais il eſt royable que la va
-        <lb/>leur &amp; la vigilance de ce braue Capitaine, ache
-        <lb rend="¬" break="no"/>uera de diſſiper leurs deſſeins, comne il a com
-        <lb rend="¬" break="no"/>nence à prendre leurs plasey
-        <lb/>FIN. </p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+					<term type="subject">Balthazard, Jean (160?-168?)</term>
+					<term type="subject">Saint-Astier (Dordogne)</term>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_71" source="Moreau">
+					<p>Prise de Saintes par les troupes royales ; Affaires de la Guyenne</p>
+					<date when="1652-03-16">1652-03-16</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-03-15" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="9"/>
+				<pb n="10"/>
+				<pb n="11"/>
+				<pb n="12"/>
+				<pb n="13"/>
+				<pb n="14"/>
+				<pb n="15"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<figure type="decoration"/>
+LA
+        MARCHE
+        DV SIEVR DE
+        BALTHAZAR.
+        DANS LE PERIGORD.
+        ENSEMBLE LA PRISE
+        de la Ville de Saint Aſtier, &amp; de
+        quelques Chaſteaux. 
+        Iouxte la copie imprimée à Bordeaux.
+        A PARIS,
+        Chez NICOLAS VIVENAY, Imprimeur de
+        Monſeigneur le Prince.
+        M. DC. LII. 
+        
+        3
+        LA MARCHE
+        du Sieur de Balthazar dans
+        le Perigord: Et la priſe de la
+        Ville de Sa nct Aſtier &amp; de
+        quelques Chaſteaux.
+        NOVS auons dit dans vne de nos
+        Relations que le Sieur de Balthazas nous bailleroit ſouuent des ſujets
+        de le louër, tandis que les Ennemis luy don
+        noront des occaſions de combattre. Il l’a
+        fait depuis pu fot aduantageuſement dans
+        la maichie deſes Trouppes dont on peut eom
+        per les iourme es parles Chaleau quilà gai
+        gnez, ou par les Vil es qu’il a priſes.
+        Aprs la Victoire remportée ſur le Sieur
+        de Foilevlle, le Sieur Balehazar macha
+        auee ſon egiment du cot́-de Sarlat, où
+        le Marquis de Sauuebœuſ cemmençoit à
+        faae gand employ. Mais ce Marquis ayant 
+        1
+        1
+        4
+        eu aduis de la marche de ce gr and C apitaine
+        ſe retira dcn lé Ville; apres auroir laiſſe dans
+        Salignac à deux lieuës de là, deux Compa
+        gnaies de Cauallerie.
+        Bien que les Ennemys fuſſent bien barri
+        cadez &amp; en’eſtat de ſe pouuoir deffendre; ils
+        ne peurent pas eantmois empeſcher que
+        ce quartier ne fut enleue; Tous les Cheuaux
+        e ces deux cmpagnies furent pris auec yne
+        partie de ceux de Sauuebœuf, &amp; tous les Mu
+        lets de ſon équipage. Layde Major de ſon
+        Regiaent, vn Lieutenant aucc ſon Eſcuyer
+        &amp; ſon Tromette demeurerent parmy les
+        Priſonniers.
+        En ſuitte de ce premier aduantage, le Sieur
+        Balchazar iugeant que ſa preſence n’eſtoit
+        plus neceſſaire en ce lieu, où le Marquis d
+        Sauuebœuf ne pouuoir faire d’autres ex
+        ploicts que de leuer la Taille, repaſſa le
+        Vezer, &amp; ſe rendit auec vne diligence in
+        croyable deuant le Chaſteau de l’Ardima
+        rie. Cette place incommodoit beaucoup
+        la Viſle de Perigueux, dont elle n’eft eſloi
+        gnée que de deux lieues ſeulement. Elle fut
+        urpriſe par l’arriuée inopinée de ces troup
+        pes; Ceux qui auoient accouſtumeé de la gar
+        der, n’eureat pas loiſir de s’y rendre; &amp; le
+        Gentil-homme 
+        3
+        Geni hoAmeſhae à puiile appaelenrſ
+        e trouua pounloreabſen til9’e
+        Cependant le Marquis de Chnlot premier
+        Eſcuy er de Moufieur le Printe, qui commain
+        de dans Perigueux ſoubs lauthorité́ de Son
+        Alreſſe, auoi faitlortir deux pieces de can on
+        pour aller battre ce Chaſteau; Mais ceuax qut
+        etoient dedans, eſtonnez ou par l’abſence
+        de leut Capitaine, ſans artendre les dernieres
+        attaques, ſe rendirent à diſcretion.
+        Le lendemain le ſieur Balthiazas partit de
+        L’ardimarie, alla paſſer à Perigueux, &amp; de là
+        pit ſa marche versS. Aſtier. Ceſt vne petite
+        ville ſcitu cdé ſur le bod de la tiuere de l’Iſle à
+        deux lieuës de Perigueux, elle a de bonnes mu
+        railles, &amp; vne Egliſe quir eiſt ſans doubte la plus
+        fuse du pais. C’eſt pourquoy les Enncmis re
+        or noiſſans l’impotance de ce poſte y auoiét
+        miis en garniſon vne coapagnie de Cauallerie,
+        &amp; deux alnlantere.
+        Quoy. que le ſieur Balthazar euſt donné́ or
+        dre à l’infanteric de le luiure (c’eſtois vn petit
+        corpsompoſeé́ des nourgeois de Prgleux &amp;
+        dc Paiſans du Pareage:) eantmoins ſelais
+        ſûs emposrtcr aà l’ardeur deſes gens auſfi bien
+        qu’a cellt de ſon courage3 os qu il ſut atriné́.
+        deuant SamuAſtier, il uit attaquer eue plae; 
+        ¬-
+        ſerauaierolhiienx piaedederrẽ; &amp; l’eſpdoo
+        le piſtolet à la main, dnnerentauoetant de vi
+        guee,; qu’alt’ erhpoté la Ville d’abord, ils
+        enernrpofſe moſle auiecles Ennemis dans
+        llniglif:
+        rh Capiraine qui commandoit leur infance
+        aieftni dansle ambat auec pluieurs autres;
+        La Liminade Capitaine de Cauallerie ſe ſauu
+        darsle clocher aue ce qui pû̂t. eſchappet à la
+        premiere impetuoſé des vaiqueurs
+        . Mais leſieur Balthazar pour ne perdre point
+        emps, partit le lendemair matin auec trois
+        cens Chenaux, &amp; cent hommes du Pareage
+        pour marcher dtoir au Chaſteau de Beau-ſe
+        jour qui eſt aſſez proche de la. Il laiſſa à Saint
+        Aſtier les ſieurs Ricous, &amp; de la Roque, auec
+        ordre de ne reeceuoir les Ennemis qui s’étoienr
+        refugiez dans e locher a aucune ſorte de
+        compoſition ſoir du meſme iour la Limie
+        nade ayant demandé de capituler, il en fut re
+        fuſé &amp; fut obligé de ſe rendre à diſcretion auec
+        tout ce qui teſtot dans la place.
+        Le deſſein du ſieur Balthazar eſtoit ſeule
+        naent d’inueſtir Beau-ſejour; mais ayant ren
+        contré l’occaſioufauorable, il fit mettre pied
+        à rerre à ſes Caualiers, &amp; donner l’aſlaut ſur
+        l’heure meſme. Il y eut d’abord quelque reſi¬ 
+        ſtahnceé: mais le courage des attaquans empor
+        ta dans peu de temps cette place. Vn Capi
+        taine du Regiment de Balthazar fut bleſſe
+        dans cette occaſion, vn Cornette, deux Ma
+        reſchaux des logis, &amp; quinze Caualiers fuent
+        tuez ſur la place.
+        Ce Chaſteau eſt ttes-fort &amp; tres important,
+        il y auoit quatre-vingts hommes dedans, qui
+        ont eſte tous tuez ou faits priſonniers. ll ap
+        partient au Comte de Grignols, qui auec les
+        Vicomtes de Riberac, &amp; d’Aubetere, fai
+        ſoient des leué́es dans lePais, pour en chaſſr le
+        ſieur Balthazar: Mais il eſt royable que la va
+        leur &amp; la vigilance de ce braue Capitaine, ache
+        uera de diſſiper leurs deſſeins, comne il a com
+        nence à prendre leurs plasey
+        FIN.			</p>
+		</body>
+	</text>
 </TEI>

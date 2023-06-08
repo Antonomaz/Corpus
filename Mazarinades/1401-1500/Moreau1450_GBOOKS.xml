@@ -1,240 +1,382 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1450_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">La fronde royale.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">La fronde royale.</title>
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=INA8AAAAcAAJ"/>
-          <author/>
-          <title source="Moreau">Fronde (la) royale.</title>
-          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher ref="isni:0000000001831368" xml:id="IL_BrunetJean.xml">
-            <persName>
-              <forename>Jean</forename>
-              <surname>Brunet</surname>
-            </persName>
-          </publisher>
-          <date source="Moreau" when="1650">1650</date>
-          <extent>
-            <measure quantity="7" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2867714">Munich</settlement>
-            <institution>Bibliothèque de l'État de Bavière</institution>
-            <repository/>
-            <idno type="cote"/>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>False</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+				<availability n="cc-by" status="restricted">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=INA8AAAAcAAJ"/>
+					<author/>
+					<title source="Moreau">Fronde (la) royale.</title>
+					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+					<publisher ref="isni:0000000001831368" xml:id="IL_BrunetJean.xml">
+						<persName>
+							<forename>Jean</forename>
+							<surname>Brunet</surname>
+						</persName>
+					</publisher>
+					<date source="Moreau" when="1650">1650</date>
+					<extent>
+						<measure quantity="7" unit="page"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2867714">Munich</settlement>
+						<institution>Bibliothèque de l'État de Bavière</institution>
+						<repository/>
+						<idno type="cote"/>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>False</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">1450. Fronde (la) royale. Paris, Jean Brunet, 1650, 7 pages.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-03-02" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>LA
-        <lb/>FRONDE
-        <lb/>ROYALE <figure type="decoration"/>
-        <lb/>A PARIS,
-        <lb/>Chez IEAN BRVNET, ruë neuve S. Louys
-        <lb/>au Canon Royal, proche le Palais.
-        <lb/>M. DC. L. <pb n="2"/>
-        <pb n="3"/>
-        <lb/>3
-        <lb/>LA FRoNDE oILE.
-        <lb/> Es noms des choſes eſt vne
-        <lb rend="¬" break="no"/>5 pteſion ſiadmirable, que quoy
-        <lb/>qu’ils paroiſſent eſtre vne dé
-        <lb/> peodance de l’homme, il faut
-        <lb/>roire que c’eſt pluſtoſt vn effet
-        <lb/>t de la ſageſſe eern lle qui nous
-        <lb/>veut faire admirer ſa puiſſance dans tous les
-        <lb/>euenemens de la vie, par les plus glorieux de ſes
-        <lb/>deerets, Cette Fonde Royale qui pouſie,
-        <lb/>raits de ſa fidelire aueec tant de vigueur, c’et
-        <lb/>el’e qui doie torraſſer tous les Goliats qui on
-        <lb/>dedeſſoins nſolens &amp; pernirieux &amp; cesnœud
-        <lb/>ſonr ſi fermes dans leur laiſon qu’ilne ſe irouuea
-        <lb/>n plus d’epe fatale qued’Alexandre pout
-        <lb/>ſa rupure; la Fance eſt en poſſeſſion de. vai.
-        <lb/> aduantage- procede de daenbue &amp;
-        <lb/>fielié qu’ellea ouiſon Roy; ’efaFemde
-        <lb/>rijompabte qui lurmonte les plus dangeceaſe
-        <lb/>1 <pb n="4"/>
-        <lb/>4
-        <lb/>armes des plus grands guerriers du monde, &amp;
-        <lb/>comme il n’eſt ren de plus obeyſſant que la ma
-        <lb rend="¬" break="no"/>tiere des Frondes, il n’eſt pas d’inuention à por
-        <lb rend="¬" break="no"/>ter les pierres plus prompte que celle-là, &amp; par
-        <lb/>cette raiſon nous pouaons nous perſuader que
-        <lb/>nos ſubmiſſions &amp; nos fermetez porreront ai
-        <lb/>haut &amp; ſi loin les eſleuations Françoiſes que
-        <lb/>nous louërons la Fronde &amp; la-Fronderie d’e
-        <lb/>auoir eſté les dignes inſtrumens, la ſainte pru
-        <lb rend="¬" break="no"/>dence de la Reyne a ſi bien ſeparé́ le bon grain
-        <lb/>d’auec l’iuroye que tout eſt à̀ preſent calme
-        <lb/>fauorable, nos Princes ſont l’appuy de la Fron
-        <lb rend="¬" break="no"/>de &amp; leurs generoſitez la font voir ſi magniſ
-        <lb rend="¬" break="no"/>que que nos ennemis en tremblent de fraye,
-        <lb/>ſon Alteſſe Royale à qui Dieu a donné des
-        <lb/>mouuemens d’vn vray Fils de Franee qui ayme
-        <lb/>paſſionnement l’Eſtat &amp; la Couronne, &amp; qud
-        <lb/>n’agit que pour l’honneur du Roy, le epos des
-        <lb/>peuples a l’admiration &amp; applaudiſſemont des
-        <lb/>ſiecles, c’eſt le premier Frondeur de nos iours
-        <lb/>celuy qui par ſes ordres iudioieux &amp; les aions
-        <lb/>gloieuſes, abattra plus des monſtres de ebellioa
-        <lb/>que lereule n’en eſfouffa dans lon berceau, puis
-        <lb/>que les heures meſmes de ſon ropos produiſent
-        <lb/>les meditations poutr ſurprendee les eſprits dan
-        <lb rend="¬" break="no"/>gereux à̀ la Monarhie &amp; contraies à ſon au
-        <lb rend="¬" break="no"/>thorité, ſon Eminonca tuis nexemple ſi parfai
-        <lb rend="¬" break="no"/>&amp; auec les intelligénces d’vn eſprit ſublime, 1
-        <lb/>teſmoigne <pb n="5"/>
-        <lb/>teſmoigue l’ardeur,le zele &amp; l’affoâion quil à
-        <lb/>oüée à vn Regne ſi chery de Dieu &amp; des hom
-        <lb rend="¬" break="no"/>mes raiſonnables, c’eſt vn Frondeur des-inte
-        <lb rend="¬" break="no"/>reſſeé, &amp; ſans autre paſſion que celle de ſeruir
-        <lb/>fdellement vn Monarque incomprable, &amp; il
-        <lb/>enaprononcé laDeclaration auc tant de grace
-        <lb/>qu’l y aurois vne meſcogooiſſance brurale de
-        <lb/>n’en reuerer pas le ſouuenir ; peuple fidelle ho
-        <lb rend="¬" break="no"/> norez cét éminent Frondeurquivcille pour vos
-        <lb/>feuretez &amp; qui cherche laiſe de vor vies, au
-        <lb/>deſpens des trauu precieux de la ſiene3
-        <lb/>Frondeur excellent qu arrache les places des
-        <lb/> mains ecnnemies pour vous en dmmer la poſſeſ
-        <lb rend="¬" break="no"/>l on, qu’vn chacun. de vous diſpoſe ſon cœu
-        <lb/>au reſpect, aà l’amour &amp; à la deference ea tef
-        <lb rend="¬" break="no"/>moignage de ce que vous deuez à vne conduitte
-        <lb/>ſ1 venerable ſiheureule, &amp; dan l’iercede vos
-        <lb/>jodyes pubolioeooe vos endreſſes &amp; tranſporus;
-        <lb/>FErondeurs les Eſloges d’vn Due de Beaufort qui
-        <lb/>en vous donnant ſes aſſtances comaunique à
-        <lb/>vosamestoutos les grandeus:&amp; les verus dont
-        <lb/>la ne eautres liberalenient prouueuë, loüe
-        <lb/>es grandeura deſonmerite &amp; ſuiuaut les mou
-        <lb rend="¬" break="no"/>umene de ſa Fronde vous terminerez vos de
-        <lb rend="¬" break="no"/>uooirs au ſeruica de ſa Majeſté &amp; de l’Eſtat, ce
-        <lb/>pefit Fils de Roy eſt ſi excellent dans toutes ſes
-        <lb/>aions que leur gloire n’ont point de bornes
-        <lb/>on plusqueles fidelitez de ſonaffection pour <pb n="6"/>
-        <lb/>6
-        <lb/>le plus triomphant Roy del’Europe, apres cela
-        <lb/>brauons tous enſemble tour ce qu’il y a de plusl
-        <lb/>rodomont dans les armes eſtrangeres, voſtre
-        <lb/>lenu ie ie lunue e e enue deunrne dieles
-        <lb/>&amp; vous eſtos orgueilleuſes qui auez ozé conſeil
-        <lb rend="¬" break="no"/>ler la reſiſtance, repentez-vous de ſes penſées
-        <lb/>criminelles &amp; funeſtes, nous aurons des victoires
-        <lb/>infaillibles, qui releueronta iamais le luſtre du
-        <lb/>dadeſme, vn Roy tres accomply, vne Reyne de
-        <lb/>quit lu pieé la verxa-&amp; la douceur lons les
-        <lb/>en de eie l len ſerens de ſ el nee
-        <lb/>uante, la pureté de cette grande Rrinceſſe, la
-        <lb/>chariteé &amp; ſon pfodigieux iugement ſont les ad
-        <lb rend="¬" break="no"/>eoeoſeielie
-        <lb/>unces de nos prbſperitez e’eſt la merueille des
-        <lb/>Beyes, la gloire du Royaume &amp; la ſeureté de la
-        <lb/>bleſſe, ſa Mjeſté n’a. eſté pattagée que de la
-        <lb/>pieté́ &amp; la modeſtie, les-imperfetions n’ont
-        <lb/>pine ioe e ei eie noe d nue er
-        <lb/>Saints &amp; d’Emnpereurs, &amp; comme la race de
-        <lb/>uint l oreſidurleaduoſae adiFnnmus la pu
-        <lb/>dence, le cœu la guandeuo&amp;ilafocad’rad
-        <lb/>Reyne blancdt ,en eſt de meſme ſ’appuy ea la
-        <lb/>perſonne de noſtre triohdphante maiſtreſſe, tout
-        <lb/>accourt au biuit bien-houreux- des auguſtas
-        <lb/>exemples de leurs vſajeſtez, les Oaho nefoats
-        <lb/>chargez quepar les fuins des ſuſets reſjſouys; qui <pb n="7"/>
-        <lb/>auec les feux de leur zele allument ceux de leurs
-        <lb/>deuoinrs, mais qui diſputeroit auſſi quelque choſe
-        <lb/>aà des puiſſances ſi auguſtes &amp; legitimes, grand
-        <lb/>Roy l’vnique object de tous vos fidelles ſujets,
-        <lb/>permettez à la Fronde de ſubſiſter auec ardeut
-        <lb/>&amp; fidelité dans l’honneur de voſtre ſeruice, &amp;
-        <lb/>d’aſſeurer voſtre Majeſté, qu’il ny aura point de
-        <lb/>place rebelle qu’elle ne faſſe ſubmettre à ſon
-        <lb/>obeyſſance, point de cabale factieuſe &amp; mutine
-        <lb/>qu’elle ne deſtruiſe, n’ont pas meſme de penſeée
-        <lb/>contraire que par vne ſeerette permiſſion de la
-        <lb/>toute puiſſance elle ne penetre &amp; n’empeſche,
-        <lb/>c’eſt ce que i’aſſeure à ceux qui ont flaté leurs eſ
-        <lb rend="¬" break="no"/>perances de la creance de nos malheurs chimeri.
-        <lb/>ques, &amp; que la Fronde ſans emprunter des forces
-        <lb/>eſtrangeres eſt en eſtat de faire autant d’eſclaues
-        <lb/>qu’il y aura de temeraires &amp; audacieux à refuſer
-        <lb/>le droit d’hommage &amp; de fidelité que Dieu veut
-        <lb/>eſte rendu à noſtre puiſſant &amp; glorieux Monar
-        <lb rend="¬" break="no"/>que par vn decret ſouuerain &amp; mpen crable qui
-        <lb/>ne ſe doit nonplus diſputer qu’éuiter, voila le
-        <lb/>beau nœud de la Fronde &amp; le fidelle ſentiraent de
-        <lb/>nos ſupreſmes Frondes.</p>
-    </body>
-  </text>
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">1450. Fronde (la) royale. Paris, Jean Brunet, 1650, 7 pages.</p>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-03-02" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<figure type="decoration"/>
+LA
+        FRONDE
+        ROYALE 
+        A PARIS,
+        Chez IEAN BRVNET, ruë neuve S. Louys
+        au Canon Royal, proche le Palais.
+        M. DC. L. 
+        
+        3
+        LA FRoNDE oILE.
+         Es noms des choſes eſt vne
+        5 pteſion ſiadmirable, que quoy
+        qu’ils paroiſſent eſtre vne dé
+         peodance de l’homme, il faut
+        roire que c’eſt pluſtoſt vn effet
+        t de la ſageſſe eern lle qui nous
+        veut faire admirer ſa puiſſance dans tous les
+        euenemens de la vie, par les plus glorieux de ſes
+        deerets, Cette Fonde Royale qui pouſie,
+        raits de ſa fidelire aueec tant de vigueur, c’et
+        el’e qui doie torraſſer tous les Goliats qui on
+        dedeſſoins nſolens &amp; pernirieux &amp; cesnœud
+        ſonr ſi fermes dans leur laiſon qu’ilne ſe irouuea
+        n plus d’epe fatale qued’Alexandre pout
+        ſa rupure; la Fance eſt en poſſeſſion de. vai.
+         aduantage- procede de daenbue &amp;
+        fielié qu’ellea ouiſon Roy; ’efaFemde
+        rijompabte qui lurmonte les plus dangeceaſe
+        1 
+        4
+        armes des plus grands guerriers du monde, &amp;
+        comme il n’eſt ren de plus obeyſſant que la ma
+        tiere des Frondes, il n’eſt pas d’inuention à por
+        ter les pierres plus prompte que celle-là, &amp; par
+        cette raiſon nous pouaons nous perſuader que
+        nos ſubmiſſions &amp; nos fermetez porreront ai
+        haut &amp; ſi loin les eſleuations Françoiſes que
+        nous louërons la Fronde &amp; la-Fronderie d’e
+        auoir eſté les dignes inſtrumens, la ſainte pru
+        dence de la Reyne a ſi bien ſeparé́ le bon grain
+        d’auec l’iuroye que tout eſt à̀ preſent calme
+        fauorable, nos Princes ſont l’appuy de la Fron
+        de &amp; leurs generoſitez la font voir ſi magniſ
+        que que nos ennemis en tremblent de fraye,
+        ſon Alteſſe Royale à qui Dieu a donné des
+        mouuemens d’vn vray Fils de Franee qui ayme
+        paſſionnement l’Eſtat &amp; la Couronne, &amp; qud
+        n’agit que pour l’honneur du Roy, le epos des
+        peuples a l’admiration &amp; applaudiſſemont des
+        ſiecles, c’eſt le premier Frondeur de nos iours
+        celuy qui par ſes ordres iudioieux &amp; les aions
+        gloieuſes, abattra plus des monſtres de ebellioa
+        que lereule n’en eſfouffa dans lon berceau, puis
+        que les heures meſmes de ſon ropos produiſent
+        les meditations poutr ſurprendee les eſprits dan
+        gereux à̀ la Monarhie &amp; contraies à ſon au
+        thorité, ſon Eminonca tuis nexemple ſi parfai
+        &amp; auec les intelligénces d’vn eſprit ſublime, 1
+        teſmoigne 
+        teſmoigue l’ardeur,le zele &amp; l’affoâion quil à
+        oüée à vn Regne ſi chery de Dieu &amp; des hom
+        mes raiſonnables, c’eſt vn Frondeur des-inte
+        reſſeé, &amp; ſans autre paſſion que celle de ſeruir
+        fdellement vn Monarque incomprable, &amp; il
+        enaprononcé laDeclaration auc tant de grace
+        qu’l y aurois vne meſcogooiſſance brurale de
+        n’en reuerer pas le ſouuenir ; peuple fidelle ho
+         norez cét éminent Frondeurquivcille pour vos
+        feuretez &amp; qui cherche laiſe de vor vies, au
+        deſpens des trauu precieux de la ſiene3
+        Frondeur excellent qu arrache les places des
+         mains ecnnemies pour vous en dmmer la poſſeſ
+        l on, qu’vn chacun. de vous diſpoſe ſon cœu
+        au reſpect, aà l’amour &amp; à la deference ea tef
+        moignage de ce que vous deuez à vne conduitte
+        ſ1 venerable ſiheureule, &amp; dan l’iercede vos
+        jodyes pubolioeooe vos endreſſes &amp; tranſporus;
+        FErondeurs les Eſloges d’vn Due de Beaufort qui
+        en vous donnant ſes aſſtances comaunique à
+        vosamestoutos les grandeus:&amp; les verus dont
+        la ne eautres liberalenient prouueuë, loüe
+        es grandeura deſonmerite &amp; ſuiuaut les mou
+        umene de ſa Fronde vous terminerez vos de
+        uooirs au ſeruica de ſa Majeſté &amp; de l’Eſtat, ce
+        pefit Fils de Roy eſt ſi excellent dans toutes ſes
+        aions que leur gloire n’ont point de bornes
+        on plusqueles fidelitez de ſonaffection pour 
+        6
+        le plus triomphant Roy del’Europe, apres cela
+        brauons tous enſemble tour ce qu’il y a de plusl
+        rodomont dans les armes eſtrangeres, voſtre
+        lenu ie ie lunue e e enue deunrne dieles
+        &amp; vous eſtos orgueilleuſes qui auez ozé conſeil
+        ler la reſiſtance, repentez-vous de ſes penſées
+        criminelles &amp; funeſtes, nous aurons des victoires
+        infaillibles, qui releueronta iamais le luſtre du
+        dadeſme, vn Roy tres accomply, vne Reyne de
+        quit lu pieé la verxa-&amp; la douceur lons les
+        en de eie l len ſerens de ſ el nee
+        uante, la pureté de cette grande Rrinceſſe, la
+        chariteé &amp; ſon pfodigieux iugement ſont les ad
+        eoeoſeielie
+        unces de nos prbſperitez e’eſt la merueille des
+        Beyes, la gloire du Royaume &amp; la ſeureté de la
+        bleſſe, ſa Mjeſté n’a. eſté pattagée que de la
+        pieté́ &amp; la modeſtie, les-imperfetions n’ont
+        pine ioe e ei eie noe d nue er
+        Saints &amp; d’Emnpereurs, &amp; comme la race de
+        uint l oreſidurleaduoſae adiFnnmus la pu
+        dence, le cœu la guandeuo&amp;ilafocad’rad
+        Reyne blancdt ,en eſt de meſme ſ’appuy ea la
+        perſonne de noſtre triohdphante maiſtreſſe, tout
+        accourt au biuit bien-houreux- des auguſtas
+        exemples de leurs vſajeſtez, les Oaho nefoats
+        chargez quepar les fuins des ſuſets reſjſouys; qui 
+        auec les feux de leur zele allument ceux de leurs
+        deuoinrs, mais qui diſputeroit auſſi quelque choſe
+        aà des puiſſances ſi auguſtes &amp; legitimes, grand
+        Roy l’vnique object de tous vos fidelles ſujets,
+        permettez à la Fronde de ſubſiſter auec ardeut
+        &amp; fidelité dans l’honneur de voſtre ſeruice, &amp;
+        d’aſſeurer voſtre Majeſté, qu’il ny aura point de
+        place rebelle qu’elle ne faſſe ſubmettre à ſon
+        obeyſſance, point de cabale factieuſe &amp; mutine
+        qu’elle ne deſtruiſe, n’ont pas meſme de penſeée
+        contraire que par vne ſeerette permiſſion de la
+        toute puiſſance elle ne penetre &amp; n’empeſche,
+        c’eſt ce que i’aſſeure à ceux qui ont flaté leurs eſ
+        perances de la creance de nos malheurs chimeri.
+        ques, &amp; que la Fronde ſans emprunter des forces
+        eſtrangeres eſt en eſtat de faire autant d’eſclaues
+        qu’il y aura de temeraires &amp; audacieux à refuſer
+        le droit d’hommage &amp; de fidelité que Dieu veut
+        eſte rendu à noſtre puiſſant &amp; glorieux Monar
+        que par vn decret ſouuerain &amp; mpen crable qui
+        ne ſe doit nonplus diſputer qu’éuiter, voila le
+        beau nœud de la Fronde &amp; le fidelle ſentiraent de
+        nos ſupreſmes Frondes.			</p>
+		</body>
+	</text>
 </TEI>

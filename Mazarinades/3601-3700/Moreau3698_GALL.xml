@@ -1,271 +1,356 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3698_GALL">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Le soufflet de la fortune, donué au prince de
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Le soufflet de la fortune, donué au prince de
           Condé.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-          <persName ref="orcid:0000-0002-3327-3967" role="intern">Cappe Zoé</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k5612270p"/>
-          <author/>
-          <title source="Moreau">Soufflet (le) de la fortune, donué au prince de Condé.</title>
-          <pubPlace source="Moreau">Sans Lieu</pubPlace>
-          <publisher>
-            <persName>Sans Nom</persName>
-          </publisher>
-          <date source="Moreau" when="1650">1650</date>
-          <extent>
-            <measure quantity="6" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2988507">Paris</settlement>
-            <institution>Bibliothèque nationale de France</institution>
-            <repository>département Littérature et art</repository>
-            <idno type="cote">YE-4468</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+					<persName ref="orcid:0000-0002-3327-3967" role="intern">Cappe Zoé</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+				<availability n="cc-by" status="restricted">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://gallica.bnf.fr/ark:/12148/bpt6k5612270p"/>
+					<author/>
+					<title source="Moreau">Soufflet (le) de la fortune, donué au prince de Condé.</title>
+					<pubPlace source="Moreau">Sans lieu</pubPlace>
+					<publisher>
+						<persName>Sans nom</persName>
+					</publisher>
+					<date source="Moreau" when="1650">1650</date>
+					<extent>
+						<measure quantity="6" unit="page"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2988507">Paris</settlement>
+						<institution>Bibliothèque nationale de France</institution>
+						<repository>département Littérature et art</repository>
+						<idno type="cote">YE-4468</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>True</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">3698. Soufflet (le) de la fortune, donué au prince de Condé. (S. 1.),
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">3698. Soufflet (le) de la fortune, donué au prince de Condé. (S. 1.),
           1650, 6 pages. Rare, mais mauvais. a Et vous avez vécu d'une vie hébétée , Vivant en
           inchritien. . . »</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">vers</term>
-          <term type="genre">non renseigné</term>
-          <term type="subject"/>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_32" source="Moreau">
-          <p>Arrestation des princes</p>
-          <date when="1650-01-18">1650-01-18</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-06-03" who="ZC"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>LE
-        <lb/>SOVFLET
-        <lb/>DE LA
-        <lb/>FORTVNE,
-        <lb/>Donné au Prince de Condé. <figure type="decoration"/>
-        <lb/>M. DC. L. <pb n="2"/>
-        <pb n="4"/>
-        <lb/>LE
-        <lb/>SOVFLET
-        <lb/>DE LA
-        <lb/>FORTVNE,
-        <lb/>Donné au Prince de Condé. <l>
-          <lb/>JA! Prince de Condé, vous eſtes vn Factieux,</l>
-        <l>
-          <lb/>I IU Vous vouliez Furibond preſque eſcheller les</l>
-        <l>
-          <lb/>Cieux,</l>
-        <l>
-          <lb/>C’eurquoy ous aue n reuers deForne,</l>
-        <l>
-          <lb/>Touarant qu’eſtiez haut vous voila abaiſſé,</l>
-        <l>
-          <lb/>nei eun eon eue l no e en rna</l>
-        <l>
-          <lb/>aSé3</l>
-        <l>
-          <lb/>Vous auez laiſſé Dieu, eſtant pis qu’vn Ath́e,</l>
-        <l>
-          <lb/> Et vous auez veſcu d’vne vie hebetée,</l>
-        <l>
-          <lb/>Viuant en In-Chreſtien, bien plus mal que les Iuifs,</l>
-        <l>
-          <lb/>Souffrant des cruautez, &amp; les faiſant conmettre,</l>
-        <l>
-          <lb/>Que de faire eſeorcher, &amp; de bruſler tous vifs</l>
-        <l>
-          <lb/>Des pauures Innocens, des Vieillards, &amp; des Preſtres.</l>
-        <l>
-          <lb/> 8¬.</l>
-        <l>
-          <lb/>L , ¬s -a aaas a</l>
-        <l>
-          <lb/>A i</l>
-        <pb n="5"/>
-        <l>
-          <lb/>4</l>
-        <l>
-          <lb/> Venant à y penſer mon iugement S’eſgare,</l>
-        <l>
-          <lb/>Voir qu’ín prince Erançois aie elſté ſi Batbadre</l>
-        <l>
-          <lb/>Que de faire des maux indignes à recitere</l>
-        <l>
-          <lb/>Combien de filles a-t’onviolées, maſſacrées?</l>
-        <l>
-          <lb/> Combienluy &amp; ſes gens ont ils oſé porter</l>
-        <l>
-          <lb/> Leurs ſacrileges mains ſur les chopſes ſacrées.</l>
-        <l>
-          <lb/> oee</l>
-        <l>
-          <lb/>Ha! combien de lieux faincts, &amp; d’Eſouillées,</l>
-        <l>
-          <lb/>Dans icelles on voyoit les filles violées</l>
-        <l>
-          <lb/>Par le commandement de ce voluptueux,</l>
-        <l>
-          <lb/>Qui faiſoient de grands maux de minutes en minutes,</l>
-        <l>
-          <lb/>-</l>
-        <l>
-          <lb/>Les Turcs auroient eſté bien plus reſpectueux,</l>
-        <l>
-          <lb/>Et n’auroient iamais fait ce que faiſoient ces brutes.</l>
-        <l>
-          <lb/>e4</l>
-        <l>
-          <lb/>Vous braues Orateuirs dõnt la langue faconde</l>
-        <l>
-          <lb/> L’auez tant autrefois vanté par tout le monde,</l>
-        <l>
-          <lb/>Et aux plus grnds Heros vous l’auez comPal</l>
-        <l>
-          <lb/>Ne l’eſtimaſit pas moins qu’Hereules &amp; Alexfre;</l>
-        <l>
-          <lb/>Que de palmes &amp; lauriers luy a-t’on preparé,</l>
-        <l>
-          <lb/>Mais il faut à preſent bien le faire deſcendre.</l>
-        <l>
-          <lb/>ée.</l>
-        <l>
-          <lb/>Qu’il ſonge à Bazajet, Richard &amp; Ptolomée,</l>
-        <l>
-          <lb/>Dont autrefois eſt dit grande la renommée,</l>
-        <l>
-          <lb/>Dé combien de malheurs ne furent palonnez,</l>
-        <l>
-          <lb/>Et plus que Balthanar il a fait d’inſolences;</l>
-        <l>
-          <lb/>Car lesvaſes ſacrez il a tant prophanez,</l>
-        <l>
-          <lb/>Et fait faire par tout de grandes violences.</l>
-        <l>
-          <lb/>Ha!</l>
-        <pb n="6"/>
-        <l>
-          <lb/>5</l>
-        <l>
-          <lb/>4a! Prnee malheureux, plain d’vn eſpritinique,</l>
-        <l>
-          <lb/>Vousous eſtes monſtré cruel &amp; tyrannique,</l>
-        <l>
-          <lb/>Car vous auez bien fait pis que ce Roy Payen,</l>
-        <l>
-          <lb/>Dauoir tant enduré d’execrables malices,</l>
-        <l>
-          <lb/>D’autant que l’on a veu par voſtre ſeul moyen</l>
-        <l>
-          <lb/> Soüiller par- tant de fois nos precieux Calices.</l>
-        <l>
-          <lb/>ti4e</l>
-        <l>
-          <lb/>Qui auroit iamais eru qu’vn Prince Catholique</l>
-        <l>
-          <lb/>Eaſſe eſté le Chef d’vne Armée ſninique,</l>
-        <l>
-          <lb/>Qui ont en pluſieurs lieu tant de maux effectuel,</l>
-        <l>
-          <lb/>Tuant &amp; violanttant de Religieuſes,</l>
-        <l>
-          <lb/>Et en diuers endroits les Temples pnlus,</l>
-        <l>
-          <lb/>Enfin faiſanit patous des choſes odieuſes,.</l>
-        <l>
-          <lb/> ee</l>
-        <l>
-          <lb/>Vous penſiez bien Condé ruiner noſtre ville,</l>
-        <l>
-          <lb/>Mais on voit à preſent voſtre enuie inutile,</l>
-        <l>
-          <lb/>Et le deſſein qu’auiez meſchamment conſpiré,</l>
-        <l>
-          <lb/>Vous penſiez tout gaigner par vne haute lute:;</l>
-        <l>
-          <lb/> Songez a Abiron, Dathan &amp; à Choré,</l>
-        <l>
-          <lb/>Qui pour trop s’eſleuer firent vne grande cheute¬</l>
-        <l>
-          <lb/>es</l>
-        <l>
-          <lb/>Veneoneoeoe r ane ne e l on eti</l>
-        <l>
-          <lb/>Et qu’il ſ̧ait du meſchant le deſſein renuerſer:</l>
-        <l>
-          <lb/>Vous voila bien trompé l’affaire eſt eſuentée,</l>
-        <l>
-          <lb/>C’eſt pourquoy il vous faut de beaucoup rabaiſſer,,</l>
-        <l>
-          <lb/>Vous voulez faire vn vol de trop haute portée.</l>
-      </p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">vers</term>
+					<term type="genre">non renseigné</term>
+					<term type="subject"/>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_32" source="Moreau">
+					<p>Arrestation des princes</p>
+					<date when="1650-01-18">1650-01-18</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-06-03" who="ZC"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<figure type="decoration"/>
+				<l>
+					<lb/>
+JA! Prince de Condé, vous eſtes vn Factieux,				</l>
+				<l>
+					<lb/>
+I IU Vous vouliez Furibond preſque eſcheller les				</l>
+				<l>
+					<lb/>
+Cieux,				</l>
+				<l>
+					<lb/>
+C’eurquoy ous aue n reuers deForne,				</l>
+				<l>
+					<lb/>
+Touarant qu’eſtiez haut vous voila abaiſſé,				</l>
+				<l>
+					<lb/>
+nei eun eon eue l no e en rna				</l>
+				<l>
+					<lb/>
+aSé3				</l>
+				<l>
+					<lb/>
+Vous auez laiſſé Dieu, eſtant pis qu’vn Ath́e,				</l>
+				<l>
+					<lb/>
+Et vous auez veſcu d’vne vie hebetée,				</l>
+				<l>
+					<lb/>
+Viuant en In-Chreſtien, bien plus mal que les Iuifs,				</l>
+				<l>
+					<lb/>
+Souffrant des cruautez, &amp; les faiſant conmettre,				</l>
+				<l>
+					<lb/>
+Que de faire eſeorcher, &amp; de bruſler tous vifs				</l>
+				<l>
+					<lb/>
+Des pauures Innocens, des Vieillards, &amp; des Preſtres.				</l>
+				<l>
+					<lb/>
+8¬.				</l>
+				<l>
+					<lb/>
+L , ¬s -a aaas a				</l>
+				<l>
+					<lb/>
+A i				</l>
+				<l>
+					<lb/>
+4				</l>
+				<l>
+					<lb/>
+Venant à y penſer mon iugement S’eſgare,				</l>
+				<l>
+					<lb/>
+Voir qu’ín prince Erançois aie elſté ſi Batbadre				</l>
+				<l>
+					<lb/>
+Que de faire des maux indignes à recitere				</l>
+				<l>
+					<lb/>
+Combien de filles a-t’onviolées, maſſacrées?				</l>
+				<l>
+					<lb/>
+Combienluy &amp; ſes gens ont ils oſé porter				</l>
+				<l>
+					<lb/>
+Leurs ſacrileges mains ſur les chopſes ſacrées.				</l>
+				<l>
+					<lb/>
+oee				</l>
+				<l>
+					<lb/>
+Ha! combien de lieux faincts, &amp; d’Eſouillées,				</l>
+				<l>
+					<lb/>
+Dans icelles on voyoit les filles violées				</l>
+				<l>
+					<lb/>
+Par le commandement de ce voluptueux,				</l>
+				<l>
+					<lb/>
+Qui faiſoient de grands maux de minutes en minutes,				</l>
+				<l>
+					<lb/>
+-				</l>
+				<l>
+					<lb/>
+Les Turcs auroient eſté bien plus reſpectueux,				</l>
+				<l>
+					<lb/>
+Et n’auroient iamais fait ce que faiſoient ces brutes.				</l>
+				<l>
+					<lb/>
+e4				</l>
+				<l>
+					<lb/>
+Vous braues Orateuirs dõnt la langue faconde				</l>
+				<l>
+					<lb/>
+L’auez tant autrefois vanté par tout le monde,				</l>
+				<l>
+					<lb/>
+Et aux plus grnds Heros vous l’auez comPal				</l>
+				<l>
+					<lb/>
+Ne l’eſtimaſit pas moins qu’Hereules &amp; Alexfre;				</l>
+				<l>
+					<lb/>
+Que de palmes &amp; lauriers luy a-t’on preparé,				</l>
+				<l>
+					<lb/>
+Mais il faut à preſent bien le faire deſcendre.				</l>
+				<l>
+					<lb/>
+ée.				</l>
+				<l>
+					<lb/>
+Qu’il ſonge à Bazajet, Richard &amp; Ptolomée,				</l>
+				<l>
+					<lb/>
+Dont autrefois eſt dit grande la renommée,				</l>
+				<l>
+					<lb/>
+Dé combien de malheurs ne furent palonnez,				</l>
+				<l>
+					<lb/>
+Et plus que Balthanar il a fait d’inſolences;				</l>
+				<l>
+					<lb/>
+Car lesvaſes ſacrez il a tant prophanez,				</l>
+				<l>
+					<lb/>
+Et fait faire par tout de grandes violences.				</l>
+				<l>
+					<lb/>
+Ha!				</l>
+				<l>
+					<lb/>
+5				</l>
+				<l>
+					<lb/>
+4a! Prnee malheureux, plain d’vn eſpritinique,				</l>
+				<l>
+					<lb/>
+Vousous eſtes monſtré cruel &amp; tyrannique,				</l>
+				<l>
+					<lb/>
+Car vous auez bien fait pis que ce Roy Payen,				</l>
+				<l>
+					<lb/>
+Dauoir tant enduré d’execrables malices,				</l>
+				<l>
+					<lb/>
+D’autant que l’on a veu par voſtre ſeul moyen				</l>
+				<l>
+					<lb/>
+Soüiller par- tant de fois nos precieux Calices.				</l>
+				<l>
+					<lb/>
+ti4e				</l>
+				<l>
+					<lb/>
+Qui auroit iamais eru qu’vn Prince Catholique				</l>
+				<l>
+					<lb/>
+Eaſſe eſté le Chef d’vne Armée ſninique,				</l>
+				<l>
+					<lb/>
+Qui ont en pluſieurs lieu tant de maux effectuel,				</l>
+				<l>
+					<lb/>
+Tuant &amp; violanttant de Religieuſes,				</l>
+				<l>
+					<lb/>
+Et en diuers endroits les Temples pnlus,				</l>
+				<l>
+					<lb/>
+Enfin faiſanit patous des choſes odieuſes,.				</l>
+				<l>
+					<lb/>
+ee				</l>
+				<l>
+					<lb/>
+Vous penſiez bien Condé ruiner noſtre ville,				</l>
+				<l>
+					<lb/>
+Mais on voit à preſent voſtre enuie inutile,				</l>
+				<l>
+					<lb/>
+Et le deſſein qu’auiez meſchamment conſpiré,				</l>
+				<l>
+					<lb/>
+Vous penſiez tout gaigner par vne haute lute:;				</l>
+				<l>
+					<lb/>
+Songez a Abiron, Dathan &amp; à Choré,				</l>
+				<l>
+					<lb/>
+Qui pour trop s’eſleuer firent vne grande cheute¬				</l>
+				<l>
+					<lb/>
+es				</l>
+				<l>
+					<lb/>
+Veneoneoeoe r ane ne e l on eti				</l>
+				<l>
+					<lb/>
+Et qu’il ſ̧ait du meſchant le deſſein renuerſer:				</l>
+				<l>
+					<lb/>
+Vous voila bien trompé l’affaire eſt eſuentée,				</l>
+				<l>
+					<lb/>
+C’eſt pourquoy il vous faut de beaucoup rabaiſſer,,				</l>
+				<l>
+					<lb/>
+Vous voulez faire vn vol de trop haute portée.				</l>
+LE
+        SOVFLET
+        DE LA
+        FORTVNE,
+        Donné au Prince de Condé. 
+        M. DC. L. 
+        
+        LE
+        SOVFLET
+        DE LA
+        FORTVNE,
+        Donné au Prince de Condé.			</p>
+		</body>
+	</text>
 </TEI>

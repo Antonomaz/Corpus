@@ -1,458 +1,811 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1225_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">L’entrée du roi dans son Parlement, pour la déclaration
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">L’entrée du roi dans son Parlement, pour la déclaration
           de sa majorité.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="http://books.google.fr/books?id=NmFlg0jcQR4C"/>
-          <author/>
-          <title source="Moreau">Entrée (l’) du roi dans son Parlement, pour la déclaration de sa
+					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+				<availability n="cc-by" status="restricted">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="http://books.google.fr/books?id=NmFlg0jcQR4C"/>
+					<author/>
+					<title source="Moreau">Entrée (l’) du roi dans son Parlement, pour la déclaration de sa
             majorité.</title>
-          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher ref="isni:0000000109088537" xml:id="IL_JacquardNicolas.xml">
-            <persName>
-              <forename>Nicolas</forename>
-              <surname>Jacquard</surname>
-            </persName>
-          </publisher>
-          <date source="Moreau" when="1654">1654</date>
-          <extent>
-            <measure quantity="15" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2996944">Lyon</settlement>
-            <institution>Bibliothèque municipale de Lyon</institution>
-            <repository/>
-            <idno type="cote"/>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>False</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+					<publisher ref="isni:0000000109088537" xml:id="IL_JacquardNicolas.xml">
+						<persName>
+							<forename>Nicolas</forename>
+							<surname>Jacquard</surname>
+						</persName>
+					</publisher>
+					<date source="Moreau" when="1654">1654</date>
+					<extent>
+						<measure quantity="15" unit="page"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2996944">Lyon</settlement>
+						<institution>Bibliothèque municipale de Lyon</institution>
+						<repository/>
+						<idno type="cote"/>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>False</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">1225. Entrée (l’) du roi dans son Parlement, pour la déclaration de sa
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">1225. Entrée (l’) du roi dans son Parlement, pour la déclaration de sa
           majorité. Parts, Nicolas Jacquard, 1654, 45 pages. Ce médiocre pamphlet se termine par un
           sonnet non moins mé- diocre, signé Du Teil. « Entin, c'est aujourd’huy que vous avez
           d'années Autant que ce sonnet vous présente de vers. » La belle chute! Plus tard on a
           retranché le sonnet ; on a ajouté la lettre du prince de Condé ; et on a publie :</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">vers</term>
-          <term type="form">prose</term>
-          <term type="genre">pamphlet</term>
-          <term type="genre">sonnet</term>
-          <term type="genre">poésie à forme fixe</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_54" source="Moreau">
-          <p>Déclaration de la majorité du roi</p>
-          <date when="1651-09-07">1651-09-07</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2021-11-12" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>L'ENTREE
-        <lb/>DV ROY
-        <lb/>dans ſon Parlement,
-        <lb/>POVR
-        <lb/>LA DECLARATION
-        <lb/>DE SA MAIORITE. <figure type="decoration"/>
-        <lb/>A PARIS
-        <lb/>Chez NICOLAS IACQVARD, ruë Chartiére
-        <lb/>prés le Puits Certain, à la Renommée
-        <lb/>M. DC. LII. <pb n="2"/>
-        <pb n="3"/>
-        <lb/>3
-        <lb/>LE OY MAIEVR
-        <lb/>DANS SON TROSNE
-        <lb/>DE IVSTICE.
-        <lb/>OV
-        <lb/>L'ENTREE DV ROY
-        <lb/>DANS SON PARLEMENT.
-        <lb/>SI Toute puiſſanece eſt de
-        <lb/>Eouen e one dles
-        <lb/>au, ele d n oi
-        <lb/>E doit eſtre plus parteulie
-        <lb rend="¬" break="no"/>Vremenmt, puiſqu’ en ſone
-        <lb/>le plu auguſes, &amp; le,
-        <lb/> plusviuaes jmages, &amp; ſileur
-        <lb/>ariſt pas dans leur enfance
-        <lb/>e, &amp;auec touteſa Pompe,
-        <lb/>dans leur Majoriee Cut
-        <lb/>A i <pb n="4"/>
-        <lb/>Soleil dans ſon oid’apri
-        <lb/>lpe erui einr unaouue
-        <lb/>lels ouionule leanmbitent &amp;equraou
-        <lb/>le enmerires, Ce qand nſire enuironéde
-        <lb/>onres le lumieres de la Cour ne eoirt pal
-        <lb/>onnme raunre les imrneious d pemie
-        <lb/>eoue &amp;needhangepoineſoncoonnamure¬.
-        <lb/>iln’aquelenommmaoneuluyetpore!
-        <lb/>’eeſ auiourdnuyqpue Aſepaneuu
-        <lb/>pouuoit pas auoir vn Nom plus avontaoea
-        <lb/>aue eelu de pie V ou dot pren
-        <lb/>aie e rmon de lpſat e min&amp; lte y
-        <lb/>e e e leie e i oe ine, aſeielde nuu
-        <lb/>i a ſans douee appris les verilables maimes
-        <lb rend="¬" break="no"/>&amp;laele methde de regner. Le Saintdo
-        <lb/>sre le on edon oute la Fae
-        <lb/>promet quil imirea la vie auoit fait ſonn
-        <lb rend="¬" break="no"/>perdau dans ne pauedle eceoe,&amp; t
-        <lb/>conque voudra faire le Paralelle des ege
-        <lb/>s de la eyne nlanehe de la ons
-        <lb/>3 rouuera aoiu d&amp;e diſterenee quede e;
-        <lb/>lrmi epoe a donne la neiſan
-        <lb/>Iooe &amp; a laue toutes deux ont neaom
-        <lb rend="¬" break="no"/>moapar s os leunsEpouns
-        <lb/>e ſdooigne noouranrleſemiui lulet
-        <lb/>ſoient <pb n="5"/>
-        <lb/>ces ẽfecelenecsfeso, outeshas
-        <lb/>é lars Miners das la crainte de
-        <lb/>dans l’aaour de lRauplas, l’v
-        <lb rend="¬" break="no"/>tre ont ſurmonté de giands oſûu
-        <lb rend="¬" break="no"/>ia: ioulſpalbe an
-        <lb rend="¬" break="no"/>oaampaſblaodg,ou
-        <lb rend="¬" break="no"/> agications épouvaaaales, Maisce
-        <lb/>rmon’deſſei de faiaacopa
-        <lb rend="¬" break="no"/>cte&amp; dasoasfeioia, Ia aeveu
-        <lb/>que e la Maionaé dnos ois, &amp;
-        <lb/>ble couſtunioqu’ils ût d’en faire
-        <lb/>laation à leaus aldaede,ais
-        <lb/>i omesßaleeſoaalsss
-        <lb/>s ne fuſſenrpas eh pls gmoa,
-        <lb/>ſages, on auroit le meſne eſpect.
-        <lb/>sMieus que pouxceuqulon
-        <lb/>ge de la Maioitd, vne Regencs
-        <lb/>abſoluë qu le gouvernementdu
-        <lb/>, par cette raiſon que Dieul’a or.
-        <lb/>ue cer deux puiffaceofanc ega4
-        <lb/>ulées de lafioad e halesfoihleſ,
-        <lb/>le ſone ſi grande qu’ibae recon.
-        <lb/>bien le caaacteredela Diuiaitéſus
-        <lb/>In oTdansſon enfaae,queda4
-        <lb/>masileſtears
-        <lb/>gouſier
-        <lb/>B. <pb n="6"/>
-        <lb/>aoéaait
-        <lb/>asgne qunsâtd
-        <lb/>oonsooiſnodne pa asds
-        <lb/> dlaaeolheiuvquedealeoden¬
-        <lb rend="¬" break="no"/>dido dooigs ab inot ruis nes oueldl
-        <lb/>dfoaaadooilo maetume
-        <lb/>oopaardaanmumahel
-        <lb/>ài &amp;ousaſouaopauauumqoil¬
-        <lb rend="¬" break="no"/>poaaaap iulooarauſib
-        <lb/> uaaigouauaoaaiot
-        <lb/>aio unſdlmnae aouonſit
-        <lb/>ſe uaeuaoriread danenene
-        <lb/>uadadeaaaiauediaonmouſbuot
-        <lb/>iſedeanadinouo luafi
-        <lb/>d qieoa dela eoropeaon de luuar
-        <lb/>tcedes Miittés quirnabuo- i!
-        <lb/>’iledſunerne enepe enpoaeie
-        <lb/>als uorlesauaelbrama poiuaoao
-        <lb/>naorale qu uluoat blenvne duauaonpl
-        <lb/>aduanasſe, qls noont apooodn u
-        <lb/>pan dobeeſpics, quilbn’enedent gp
-        <lb/>qubdbhodes abaſoibebvoyeroqut.
-        <lb/>maoioaſhonneâsé, &amp; de iien-ſean
-        <lb/>e quiaat deiepeaheoua delo
-        <lb/>pdeaſſpa ’no n2
-        <lb/>Pe elnuvaidauarmeſua
-        <lb/>E¬a. <pb n="7"/>
-        <lb/>mensl lesdeclahts ſaieursal’aa.
-        <lb/>atone ans, quoyquele rete des
-        <lb/>nele inqu vinncin4, Ileſt eai
-        <lb rend="¬" break="no"/>qeleRoys ayaul queique Pnuie.
-        <lb/>caquidifpeaomlasdaites de
-        <lb/>es lqix, sen puaiſfmt dſpenſer eu
-        <lb rend="¬" break="no"/>-paaqauſuaidoute eſté
-        <lb/>ns Politiques du tcermps paſſé accor
-        <lb/>nnene laooiſpane d’aage aux
-        <lb/>s quir biguoient desdignitez, lors
-        <lb/>ugqidn dapqbleaand le Roy
-        <lb/>papeſtte Majeuepaos loi, &amp; pat
-        <lb/>mes, fa grauité̂, &amp; ſon humeur
-        <lb/>lgeoent out le monde a uy
-        <lb/> naui lesreſfes doſon Enpipe.
-        <lb/>onla plasfouee vient dGuriſti
-        <lb rend="¬" break="no"/>noiuapprenqule les eoears de
-        <lb/>cnla maido ieu,&amp; pas conſe
-        <lb rend="¬" break="no"/>na qued’qſneimoe lon ua ſcau
-        <lb/>qunedadſſeſelonſa uolont́,
-        <lb/> pesles ne foiene cauſe qui le
-        <lb/> quelquefois à leuremauuaiſes in
-        <lb rend="¬" break="no"/>C’eſtla leyeritablo ſuies de ſ me
-        <lb rend="¬" break="no"/>d il die quil nopus donnara des
-        <lb/>S,eſt à dire des Rys qui-gou¬ <pb n="8"/>
-        <lb/>2
-        <lb/>uermeront bad &amp; non pasdasAoyn
-        <lb rend="¬" break="no"/>o u condiee ed bian ſouumtuae
-        <lb rend="¬" break="no"/>uileie nun ſiens que oaſe de dln lſ
-        <lb/>lelr rui aiaea aieſeſbnue
-        <lb/>I le lonenmadaet
-        <lb/> ca, &amp;e eet anſii fa
-        <lb/>e e nudaie anoa pa au adds
-        <lb/> et ſi as oors les yaun ſulhali
-        <lb rend="¬" break="no"/>lettre.
-        <lb/>oueid pedſa ie, outnounnne eet
-        <lb/>le ſ Sedoeododſ n heanuſee
-        <lb/>nt enammpueſirſdſaius ue eeianmneiſee
-        <lb/>n one ies de iueredi aoae lneee
-        <lb/>l e tue ue s ſeonluea iarena lel;
-        <lb/> nenres pe poen le roſnedau eneel.
-        <lb/>enn l lapeeaiennus edue ne
-        <lb/>piea a qagnde le qunuene oa deſ
-        <lb/>Jpue e eon eue rmeroeieeee
-        <lb/>ponrenonn apenuudul;
-        <lb/>pen uenuenu ienoaſa paea
-        <lb/>Pl l e ſe d eſa eure pit e ſeat
-        <lb rend="¬" break="no"/>dunme eae, pui a daeu ddbbamele
-        <lb/>nen de en ee neiu iume dai lee
-        <lb/>pn e nie oueie lenomn armaite
-        <lb/>paanueeaidlonduuriepne iua
-        <lb/>comp
-        <lb/>aenb’is.L <pb n="9"/>
-        <lb/>.
-        <lb/>blé qaiſt aulſſtacouſtumeéde yainm
-        <lb/>2coaaatte.
-        <lb/>nqueſtes deſon Aleeſſe Royalle, lors
-        <lb/>commandé les Arméesne ſont elles
-        <lb/>resmarquos du bonheur, &amp; de la
-        <lb/>cette Minorit, les ſeules priſes de
-        <lb/>s ; de Danlerque, ſe peuuent
-        <lb/> a tates clles quénous auons ia
-        <lb rend="¬" break="no"/>s ſur l’ennemy durant la Maiorité
-        <lb/>is, C’eſt ddns ces maeſmes rencontres
-        <lb/>ſieur le Prince a continuer de don
-        <lb rend="¬" break="no"/>euues ſi éclatances de ſon courage
-        <lb/>epesiece au- fait des Armes que la
-        <lb/>ne s’en perdra iamais. ll ſeroit ſuper
-        <lb rend="¬" break="no"/>iter icy en deçail, &amp; gar ordre, ce.
-        <lb/> die qu engros &amp; confuſeme nt, ce
-        <lb/>oſes arriuées de aoſ e temps, &amp;
-        <lb/>emoire eſt ſi fraiche quil n’yaper
-        <lb rend="¬" break="no"/>esignore.
-        <lb/>3V. ſurnodmé́ leSage, a eſté́ le pre
-        <lb rend="¬" break="no"/>reglé la Maiorité des Roys à qua
-        <lb rend="¬" break="no"/>par vn Edict irreuoc ble, aupara
-        <lb rend="¬" break="no"/>lil n’y auoitde temps limité, les vns
-        <lb/>declarer Meursà quinae ans, &amp;
-        <lb/>cizeouenrpn l feu oy de go <pb n="10"/>
-        <lb/>l
-        <lb/>
-        <lb rend="¬" break="no"/>i
-        <lb/>¬.
-        <lb/>euſe memoire fe ft daclaârer lalane,
-        <lb/>Octobre de l’an 16i4. qui fuediiourspes
-        <lb/>ſa Maijorité, &amp; le Royon fils na pas voulu
-        <lb/>eant differer, fçachant bien que-plus l o
-        <lb rend="¬" break="no"/>mectroit vne action ſi ſolennelle, &amp;ſiimpo
-        <lb/>eante, plus remettroit-il auſſi le bon-heur,
-        <lb/>lh ſaisfaction de ſes ſujes, qui ont conceuô,
-        <lb/>fi hautes, &amp; de ſi juttes eſperancos de ?,
-        <lb/>Regne.
-        <lb/> Ces geands avantages de la plusenle,
-        <lb/>moitede noſre Lôvs ſont autante
-        <lb/>preuues de cette veriteé, qui la menaoe ,
-        <lb/>daonner das enfans pour Rois ne emia,
-        <lb/>pas de l’aage, mais de la folle conduit
-        <lb/>de la mauuaiſe adminiſtration.
-        <lb/> alin rnr ſetl int &amp;lu omupodee
-        <lb/>iies quiabuſeae ordinairemeedela toibl,
-        <lb/>ſedes ois Mineurs, &amp; de larop gandeé
-        <lb rend="¬" break="no"/>fiance des Reynes Regentes, la noſrea ſi ha,
-        <lb/>reuſemens demeſé les broulleres-de lat.,
-        <lb/>qu’elle le emee au Roy ſon fils auſi paiſbls
-        <lb/>qu’elle le receut de ſon cher Bpoux:
-        <lb/>uia apenne ne duons ois pauuu
-        <lb/>detoute ſorte de bon-heur, ſi l’enfaneede
-        <lb/>noſître jeune Monarque eſté ſi gloiuſ,
-        <lb/>aaa
-        <lb/>¬ -A. <pb n="11"/>
-        <lb/> eue nous deuos arendre à’vn
-        <lb/>us auancé Nauons nou pas ſue
-        <lb/>Sen promettre quelque choſe au dela
-        <lb/>ce qu’ont fait ſes Predeceeunm
-        <lb/> ne ſot amais i redoutablepour
-        <lb/>e air point dennemis qu ſ
-        <lb/>n edle eſt aſleuree du eriomphe, nis
-        <lb/>t que ſes propes fores, lamais pa
-        <lb/> oisn’eut vne Phyſionomie ſi av
-        <lb/>que LQVS n La nanuresei
-        <lb/>a lut ſomer n corp qui fut
-        <lb/>on epmis toures ſeaenios fone a
-        <lb/>ees de cae de graees, &amp; de
-        <lb rend="¬" break="no"/>l are le pe &amp;e les coeun d
-        <lb/>onde, i patqiſt ſ ferme &amp; nireſou
-        <lb/>peoe pasdouer de la qandleu
-        <lb/>S on dlueauion a leort d
-        <lb/>e ſ aiſianee, la epue mi
-        <lb/>ln dls peſones inronrunualle
-        <lb/>lpme on&amp; pout u doie ſenne
-        <lb/>la PDoarmne, daisſur rout sj
-        <lb/>neeligieuſe crainte deie, &amp;e
-        <lb/>enaondes Samens eſl
-        <lb/>ouuemeuis &amp; des maiſtepouit
-        <lb/>es d’eereio, Mais ellea eſté fſſli
-        <lb/>C ii <pb n="12"/>
-        <lb/>2
-        <lb/>.
-        <lb/>.
-        <lb/>.
-        <lb/>e
-        <lb/> 1
-        <lb/> j
-        <lb/> N
-        <lb/>T
-        <lb/>eeraaopuaoppteofaou
-        <lb/>e onr onne e oae ee ſoielonie
-        <lb/>aoeo oer en eir nieus earle ouedeel
-        <lb/>e n ooeuuilnenmanueue ee
-        <lb/>e leuiſie o roaeoens dele
-        <lb/>leoi n uaſe p oierodlonerneſie
-        <lb/>Peun ar ue doen lel ree le
-        <lb/>aeoenoenun rleupeieneſieieeie
-        <lb/>Edi unnſlnir ſioeoaple denuau
-        <lb/>l iounu ueoeuprerenonn dinneer
-        <lb/>uneſn ue enre oaainon aſeen
-        <lb/>nun en ſeiieo l eoeuoeqiee
-        <lb/>auone ni uieorordue laidlieee
-        <lb/>loener e n enoanlens quianaeu l
-        <lb/>oimaon des abus quyy comnme
-        <lb/>nou r anie dea ileoeidu ſueſe
-        <lb/> u enene n eun l oloureoaeit
-        <lb/>eae eu oeai ue re ſons puiu ſee
-        <lb/>lesmauuas conſelp qui lur vpudrenrne
-        <lb/>aadet oue la puiſdanoe d on ltoarmuee
-        <lb/>lnrn oſdneiuoi ’die uones, de que l pole
-        <lb/>eia leroui de ioy eaneoe euaiele ueianieſe
-        <lb/>au comraire il ede oueta ceie qui lu
-        <lb/>noiſinron que las poui eineis te
-        <lb/>Pluloſlleaus oonaaurloit ueles l
-        <lb/> a leu!
-        <lb/>L.ae?. . <pb n="13"/>
-        <lb/>rs volontez qu’il ne montera pasſuar ſon
-        <lb/>e poury eſtre c poſture d’orgueil &amp; de
-        <lb/>Tis: maiau
-        <lb/>iré pour eſtre mieux en
-        <lb/>deſefaiers, &amp;pour eneſcouer les plain
-        <lb/>qu’il neſe ſeruirapas de ſon fceptre pour
-        <lb/>al traitter, mais les deffendre. Ce ſont les
-        <lb/>r &amp; les eſperances de tous les bons Fran
-        <lb rend="¬" break="no"/>qui ue reſpirent gue la reü̈niondes Prin
-        <lb rend="¬" break="no"/>la concorde dans lanaiſon Royalle, l’o
-        <lb rend="¬" break="no"/>ace parmyſes ſuiees, &amp;ienfin la gran
-        <lb rend="¬" break="no"/>&amp; la gloire de cette Monarchie,
-        <lb/>A
-        <lb/>¬7y
-        <lb/>¬ <pb n="14"/>
-        <lb/>ll
-        <lb/>1!
-        <lb/>VIVE LE RO1.
-        <lb/>ra <pb n="15"/>
-        <lb/>1I
-        <lb/>15
-        <lb/> H
-        <lb/>SONNE T
-        <lb/>C
-        <lb/>JTE
-        <lb/>EEN IE AV ROY
-        <lb/>Sur ſa Majorité, <l>
-          <lb/>r--s,</l>
-        <l>
-          <lb/> d mſs dour, &amp;r de mſte eeum,</l>
-        <l>
-          <lb/>p onuus dus Cnquomn, lau ceſdounl</l>
-        <l>
-          <lb/> des Cieux;</l>
-        <l>
-          <lb/> pe ns onans comme vn preſent des Diesxs</l>
-        <l>
-          <lb/>oiſt leur qander, &amp; leur magnifiene</l>
-        <l>
-          <lb/> t fois le joaur qui finit voſle Enſfaaee</l>
-        <l>
-          <lb/> eutant en main le Scepte glonieux,</l>
-        <l>
-          <lb/>puis ſi ong emps oue paré vui Ayaue</l>
-        <l>
-          <lb/>ant de lon- heur, &amp; de gloire à̀ l Frane</l>
-        <l>
-          <lb/>ſe mile fols voſtre Majorié!</l>
-        <l>
-          <lb/> le Parlement qui dans ſon dqui</l>
-        <l>
-          <lb/>s le pouuair des gramdes deſtnees,</l>
-        <l>
-          <lb/>lIS qui meriez de regir l’V’niuers,</l>
-        <l>
-          <lb/>ſt aujourd huy que vous auez d’annde</l>
-        <l>
-          <lb/>ue ce Soanet vous preſente de vers.</l>
-        <lb/>DV TEIL. </p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">vers</term>
+					<term type="form">prose</term>
+					<term type="genre">pamphlet</term>
+					<term type="genre">sonnet</term>
+					<term type="genre">poésie à forme fixe</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_54" source="Moreau">
+					<p>Déclaration de la majorité du roi</p>
+					<date when="1651-09-07">1651-09-07</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2021-11-12" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<pb n="8"/>
+				<pb n="9"/>
+				<pb n="10"/>
+				<pb n="11"/>
+				<pb n="12"/>
+				<pb n="13"/>
+				<pb n="14"/>
+				<pb n="15"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<figure type="decoration"/>
+				<l>
+					<lb/>
+r--s,				</l>
+				<l>
+					<lb/>
+d mſs dour, &amp;r de mſte eeum,				</l>
+				<l>
+					<lb/>
+p onuus dus Cnquomn, lau ceſdounl				</l>
+				<l>
+					<lb/>
+des Cieux;				</l>
+				<l>
+					<lb/>
+pe ns onans comme vn preſent des Diesxs				</l>
+				<l>
+					<lb/>
+oiſt leur qander, &amp; leur magnifiene				</l>
+				<l>
+					<lb/>
+t fois le joaur qui finit voſle Enſfaaee				</l>
+				<l>
+					<lb/>
+eutant en main le Scepte glonieux,				</l>
+				<l>
+					<lb/>
+puis ſi ong emps oue paré vui Ayaue				</l>
+				<l>
+					<lb/>
+ant de lon- heur, &amp; de gloire à̀ l Frane				</l>
+				<l>
+					<lb/>
+ſe mile fols voſtre Majorié!				</l>
+				<l>
+					<lb/>
+le Parlement qui dans ſon dqui				</l>
+				<l>
+					<lb/>
+s le pouuair des gramdes deſtnees,				</l>
+				<l>
+					<lb/>
+lIS qui meriez de regir l’V’niuers,				</l>
+				<l>
+					<lb/>
+ſt aujourd huy que vous auez d’annde				</l>
+				<l>
+					<lb/>
+ue ce Soanet vous preſente de vers.				</l>
+L'ENTREE
+        DV ROY
+        dans ſon Parlement,
+        POVR
+        LA DECLARATION
+        DE SA MAIORITE. 
+        A PARIS
+        Chez NICOLAS IACQVARD, ruë Chartiére
+        prés le Puits Certain, à la Renommée
+        M. DC. LII. 
+        
+        3
+        LE OY MAIEVR
+        DANS SON TROSNE
+        DE IVSTICE.
+        OV
+        L'ENTREE DV ROY
+        DANS SON PARLEMENT.
+        SI Toute puiſſanece eſt de
+        Eouen e one dles
+        au, ele d n oi
+        E doit eſtre plus parteulie
+        Vremenmt, puiſqu’ en ſone
+        le plu auguſes, &amp; le,
+         plusviuaes jmages, &amp; ſileur
+        ariſt pas dans leur enfance
+        e, &amp;auec touteſa Pompe,
+        dans leur Majoriee Cut
+        A i 
+        Soleil dans ſon oid’apri
+        lpe erui einr unaouue
+        lels ouionule leanmbitent &amp;equraou
+        le enmerires, Ce qand nſire enuironéde
+        onres le lumieres de la Cour ne eoirt pal
+        onnme raunre les imrneious d pemie
+        eoue &amp;needhangepoineſoncoonnamure¬.
+        iln’aquelenommmaoneuluyetpore!
+        ’eeſ auiourdnuyqpue Aſepaneuu
+        pouuoit pas auoir vn Nom plus avontaoea
+        aue eelu de pie V ou dot pren
+        aie e rmon de lpſat e min&amp; lte y
+        e e e leie e i oe ine, aſeielde nuu
+        i a ſans douee appris les verilables maimes
+        &amp;laele methde de regner. Le Saintdo
+        sre le on edon oute la Fae
+        promet quil imirea la vie auoit fait ſonn
+        perdau dans ne pauedle eceoe,&amp; t
+        conque voudra faire le Paralelle des ege
+        s de la eyne nlanehe de la ons
+        3 rouuera aoiu d&amp;e diſterenee quede e;
+        lrmi epoe a donne la neiſan
+        Iooe &amp; a laue toutes deux ont neaom
+        moapar s os leunsEpouns
+        e ſdooigne noouranrleſemiui lulet
+        ſoient 
+        ces ẽfecelenecsfeso, outeshas
+        é lars Miners das la crainte de
+        dans l’aaour de lRauplas, l’v
+        tre ont ſurmonté de giands oſûu
+        ia: ioulſpalbe an
+        oaampaſblaodg,ou
+         agications épouvaaaales, Maisce
+        rmon’deſſei de faiaacopa
+        cte&amp; dasoasfeioia, Ia aeveu
+        que e la Maionaé dnos ois, &amp;
+        ble couſtunioqu’ils ût d’en faire
+        laation à leaus aldaede,ais
+        i omesßaleeſoaalsss
+        s ne fuſſenrpas eh pls gmoa,
+        ſages, on auroit le meſne eſpect.
+        sMieus que pouxceuqulon
+        ge de la Maioitd, vne Regencs
+        abſoluë qu le gouvernementdu
+        , par cette raiſon que Dieul’a or.
+        ue cer deux puiffaceofanc ega4
+        ulées de lafioad e halesfoihleſ,
+        le ſone ſi grande qu’ibae recon.
+        bien le caaacteredela Diuiaitéſus
+        In oTdansſon enfaae,queda4
+        masileſtears
+        gouſier
+        B. 
+        aoéaait
+        asgne qunsâtd
+        oonsooiſnodne pa asds
+         dlaaeolheiuvquedealeoden¬
+        dido dooigs ab inot ruis nes oueldl
+        dfoaaadooilo maetume
+        oopaardaanmumahel
+        ài &amp;ousaſouaopauauumqoil¬
+        poaaaap iulooarauſib
+         uaaigouauaoaaiot
+        aio unſdlmnae aouonſit
+        ſe uaeuaoriread danenene
+        uadadeaaaiauediaonmouſbuot
+        iſedeanadinouo luafi
+        d qieoa dela eoropeaon de luuar
+        tcedes Miittés quirnabuo- i!
+        ’iledſunerne enepe enpoaeie
+        als uorlesauaelbrama poiuaoao
+        naorale qu uluoat blenvne duauaonpl
+        aduanasſe, qls noont apooodn u
+        pan dobeeſpics, quilbn’enedent gp
+        qubdbhodes abaſoibebvoyeroqut.
+        maoioaſhonneâsé, &amp; de iien-ſean
+        e quiaat deiepeaheoua delo
+        pdeaſſpa ’no n2
+        Pe elnuvaidauarmeſua
+        E¬a. 
+        mensl lesdeclahts ſaieursal’aa.
+        atone ans, quoyquele rete des
+        nele inqu vinncin4, Ileſt eai
+        qeleRoys ayaul queique Pnuie.
+        caquidifpeaomlasdaites de
+        es lqix, sen puaiſfmt dſpenſer eu
+        -paaqauſuaidoute eſté
+        ns Politiques du tcermps paſſé accor
+        nnene laooiſpane d’aage aux
+        s quir biguoient desdignitez, lors
+        ugqidn dapqbleaand le Roy
+        papeſtte Majeuepaos loi, &amp; pat
+        mes, fa grauité̂, &amp; ſon humeur
+        lgeoent out le monde a uy
+         naui lesreſfes doſon Enpipe.
+        onla plasfouee vient dGuriſti
+        noiuapprenqule les eoears de
+        cnla maido ieu,&amp; pas conſe
+        na qued’qſneimoe lon ua ſcau
+        qunedadſſeſelonſa uolont́,
+         pesles ne foiene cauſe qui le
+         quelquefois à leuremauuaiſes in
+        C’eſtla leyeritablo ſuies de ſ me
+        d il die quil nopus donnara des
+        S,eſt à dire des Rys qui-gou¬ 
+        2
+        uermeront bad &amp; non pasdasAoyn
+        o u condiee ed bian ſouumtuae
+        uileie nun ſiens que oaſe de dln lſ
+        lelr rui aiaea aieſeſbnue
+        I le lonenmadaet
+         ca, &amp;e eet anſii fa
+        e e nudaie anoa pa au adds
+         et ſi as oors les yaun ſulhali
+        lettre.
+        oueid pedſa ie, outnounnne eet
+        le ſ Sedoeododſ n heanuſee
+        nt enammpueſirſdſaius ue eeianmneiſee
+        n one ies de iueredi aoae lneee
+        l e tue ue s ſeonluea iarena lel;
+         nenres pe poen le roſnedau eneel.
+        enn l lapeeaiennus edue ne
+        piea a qagnde le qunuene oa deſ
+        Jpue e eon eue rmeroeieeee
+        ponrenonn apenuudul;
+        pen uenuenu ienoaſa paea
+        Pl l e ſe d eſa eure pit e ſeat
+        dunme eae, pui a daeu ddbbamele
+        nen de en ee neiu iume dai lee
+        pn e nie oueie lenomn armaite
+        paanueeaidlonduuriepne iua
+        comp
+        aenb’is.L 
+        .
+        blé qaiſt aulſſtacouſtumeéde yainm
+        2coaaatte.
+        nqueſtes deſon Aleeſſe Royalle, lors
+        commandé les Arméesne ſont elles
+        resmarquos du bonheur, &amp; de la
+        cette Minorit, les ſeules priſes de
+        s ; de Danlerque, ſe peuuent
+         a tates clles quénous auons ia
+        s ſur l’ennemy durant la Maiorité
+        is, C’eſt ddns ces maeſmes rencontres
+        ſieur le Prince a continuer de don
+        euues ſi éclatances de ſon courage
+        epesiece au- fait des Armes que la
+        ne s’en perdra iamais. ll ſeroit ſuper
+        iter icy en deçail, &amp; gar ordre, ce.
+         die qu engros &amp; confuſeme nt, ce
+        oſes arriuées de aoſ e temps, &amp;
+        emoire eſt ſi fraiche quil n’yaper
+        esignore.
+        3V. ſurnodmé́ leSage, a eſté́ le pre
+        reglé la Maiorité des Roys à qua
+        par vn Edict irreuoc ble, aupara
+        lil n’y auoitde temps limité, les vns
+        declarer Meursà quinae ans, &amp;
+        cizeouenrpn l feu oy de go 
+        l
+        
+        i
+        ¬.
+        euſe memoire fe ft daclaârer lalane,
+        Octobre de l’an 16i4. qui fuediiourspes
+        ſa Maijorité, &amp; le Royon fils na pas voulu
+        eant differer, fçachant bien que-plus l o
+        mectroit vne action ſi ſolennelle, &amp;ſiimpo
+        eante, plus remettroit-il auſſi le bon-heur,
+        lh ſaisfaction de ſes ſujes, qui ont conceuô,
+        fi hautes, &amp; de ſi juttes eſperancos de ?,
+        Regne.
+         Ces geands avantages de la plusenle,
+        moitede noſre Lôvs ſont autante
+        preuues de cette veriteé, qui la menaoe ,
+        daonner das enfans pour Rois ne emia,
+        pas de l’aage, mais de la folle conduit
+        de la mauuaiſe adminiſtration.
+         alin rnr ſetl int &amp;lu omupodee
+        iies quiabuſeae ordinairemeedela toibl,
+        ſedes ois Mineurs, &amp; de larop gandeé
+        fiance des Reynes Regentes, la noſrea ſi ha,
+        reuſemens demeſé les broulleres-de lat.,
+        qu’elle le emee au Roy ſon fils auſi paiſbls
+        qu’elle le receut de ſon cher Bpoux:
+        uia apenne ne duons ois pauuu
+        detoute ſorte de bon-heur, ſi l’enfaneede
+        noſître jeune Monarque eſté ſi gloiuſ,
+        aaa
+        ¬ -A. 
+         eue nous deuos arendre à’vn
+        us auancé Nauons nou pas ſue
+        Sen promettre quelque choſe au dela
+        ce qu’ont fait ſes Predeceeunm
+         ne ſot amais i redoutablepour
+        e air point dennemis qu ſ
+        n edle eſt aſleuree du eriomphe, nis
+        t que ſes propes fores, lamais pa
+         oisn’eut vne Phyſionomie ſi av
+        que LQVS n La nanuresei
+        a lut ſomer n corp qui fut
+        on epmis toures ſeaenios fone a
+        ees de cae de graees, &amp; de
+        l are le pe &amp;e les coeun d
+        onde, i patqiſt ſ ferme &amp; nireſou
+        peoe pasdouer de la qandleu
+        S on dlueauion a leort d
+        e ſ aiſianee, la epue mi
+        ln dls peſones inronrunualle
+        lpme on&amp; pout u doie ſenne
+        la PDoarmne, daisſur rout sj
+        neeligieuſe crainte deie, &amp;e
+        enaondes Samens eſl
+        ouuemeuis &amp; des maiſtepouit
+        es d’eereio, Mais ellea eſté fſſli
+        C ii 
+        2
+        .
+        .
+        .
+        e
+         1
+         j
+         N
+        T
+        eeraaopuaoppteofaou
+        e onr onne e oae ee ſoielonie
+        aoeo oer en eir nieus earle ouedeel
+        e n ooeuuilnenmanueue ee
+        e leuiſie o roaeoens dele
+        leoi n uaſe p oierodlonerneſie
+        Peun ar ue doen lel ree le
+        aeoenoenun rleupeieneſieieeie
+        Edi unnſlnir ſioeoaple denuau
+        l iounu ueoeuprerenonn dinneer
+        uneſn ue enre oaainon aſeen
+        nun en ſeiieo l eoeuoeqiee
+        auone ni uieorordue laidlieee
+        loener e n enoanlens quianaeu l
+        oimaon des abus quyy comnme
+        nou r anie dea ileoeidu ſueſe
+         u enene n eun l oloureoaeit
+        eae eu oeai ue re ſons puiu ſee
+        lesmauuas conſelp qui lur vpudrenrne
+        aadet oue la puiſdanoe d on ltoarmuee
+        lnrn oſdneiuoi ’die uones, de que l pole
+        eia leroui de ioy eaneoe euaiele ueianieſe
+        au comraire il ede oueta ceie qui lu
+        noiſinron que las poui eineis te
+        Pluloſlleaus oonaaurloit ueles l
+         a leu!
+        L.ae?. . 
+        rs volontez qu’il ne montera pasſuar ſon
+        e poury eſtre c poſture d’orgueil &amp; de
+        Tis: maiau
+        iré pour eſtre mieux en
+        deſefaiers, &amp;pour eneſcouer les plain
+        qu’il neſe ſeruirapas de ſon fceptre pour
+        al traitter, mais les deffendre. Ce ſont les
+        r &amp; les eſperances de tous les bons Fran
+        qui ue reſpirent gue la reü̈niondes Prin
+        la concorde dans lanaiſon Royalle, l’o
+        ace parmyſes ſuiees, &amp;ienfin la gran
+        &amp; la gloire de cette Monarchie,
+        A
+        ¬7y
+        ¬ 
+        ll
+        1!
+        VIVE LE RO1.
+        ra 
+        1I
+        15
+         H
+        SONNE T
+        C
+        JTE
+        EEN IE AV ROY
+        Sur ſa Majorité, 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        DV TEIL.			</p>
+		</body>
+	</text>
 </TEI>

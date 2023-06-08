@@ -1,343 +1,578 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3408_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Réponse de monsieur le dite de Mercœur à la Lettre de
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Réponse de monsieur le dite de Mercœur à la Lettre de
           monsieur le duc de Beaufort, son frère.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=jltCAAAAcAAJ"/>
-          <author ref="isni:0000000061383077">
-            <persName>
-              <forename>Louis de Bourbon-Vendôme, duc de</forename>
-              <surname>Mercoeur</surname>
-            </persName>
-          </author>
-          <title source="Moreau">Réponse de monsieur le duc de Mercœur à la Lettre de monsieur le
+					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+				<availability n="cc-by" status="restricted">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=jltCAAAAcAAJ"/>
+					<author ref="isni:0000000061383077">
+						<persName>
+							<forename>Louis de Bourbon-Vendôme, duc de</forename>
+							<surname>Mercoeur</surname>
+						</persName>
+					</author>
+					<title source="Moreau">Réponse de monsieur le duc de Mercœur à la Lettre de monsieur le
             duc de Beaufort, son frère.</title>
-          <pubPlace source="Moreau">Sans Lieu</pubPlace>
-          <publisher>
-            <persName>Sans Nom</persName>
-          </publisher>
-          <date source="Moreau" when="1649">1649</date>
-          <extent>
-            <measure quantity="11" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2867714">Munich</settlement>
-            <institution>Bibliothèque de l'État de Bavière</institution>
-            <repository/>
-            <idno type="cote"/>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>False</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<pubPlace source="Moreau">Sans lieu</pubPlace>
+					<publisher>
+						<persName>Sans nom</persName>
+					</publisher>
+					<date source="Moreau" when="1649">1649</date>
+					<extent>
+						<measure quantity="11" unit="page"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2867714">Munich</settlement>
+						<institution>Bibliothèque de l'État de Bavière</institution>
+						<repository/>
+						<idno type="cote"/>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>False</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">3408. Réponse de monsieur le duc de Mercœur à la Lettre de monsieur le
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">3408. Réponse de monsieur le duc de Mercœur à la Lettre de monsieur le
           duc de Beaufort, son frère. (S. l., 1649), 11 pages.</p>
-        <p source="BM_Lyon">Le duc de Beaufort n'avait pas de frère de ce nom.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="genre">réponse</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_26" source="Moreau">
-          <p>Anniversaire de la naissance du roi</p>
-          <date when="1649-09-05">1649-09-05</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-07-18" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>RESPONCE
-        <lb/>DE MONSIEVR
-        <lb/>LE DVC DE
-        <lb/>MERCOEVR
-        <lb/>A la Lettre de Monſieur le Duc de
-        <lb/>BEAVOFRT
-        <lb/>SON FRERE.
-        <lb/>M DC. XLIX. <pb n="2"/>
-        <pb n="3"/>
-        <lb/>3
-        <lb/>RESPONCE
-        <lb/>DE MONSIEVR
-        <lb/>LE DVC DE
-        <lb/>MERC OEVR
-        <lb/>A la Lettre de Monſieur le Duc de
-        <lb/>BEAVFORT
-        <lb/>SON FRERE.
-        <lb/>MONSIEVR,
-        <lb/>Le glorieux deſſeia que i’ay conçeu dans mon
-        <lb/>ane, de vous teſmoigner en toutes les occaſions
-        <lb/>ut le Ciel fera naiſtre mes tre-humbles reſpe
-        <lb rend="¬" break="no"/>noblige, &amp; me porte denme donner lhonneur d
-        <lb/>ou eſerire, ̀ deſſein de remerier voſtre l e
-        <lb rend="¬" break="no"/>ede vous dlueaireu Conle iu, devou lppu
-        <lb/>de eroe que le n’ayiauuaie lavnlond
-        <lb/>abbaiſer à ce poin. que d’eſpouſer la ie
-        <lb/>pee du Cardinail Maarin, pluſieurs conſide
-        <lb rend="¬" break="no"/>. <pb n="4"/>
-        <lb/>AA¬.
-        <lb/>1ions m’ont obligé́ à vous faire ſeauoir erni
-        <lb rend="¬" break="no"/> ſons; dont ſe ſeruoient les PHauioris de ceMliſte,
-        <lb/>pour me porter à cndeſcendrél à̀ ſa volonté, le
-        <lb/>croy que les phantoſnes de la Fortune ſe peſua
-        <lb/>doient par le ſouppleſes &amp; inuentions de me
-        <lb/>fuie prendre la reſolurion, &amp; l’enuie d acquieſce,
-        <lb/>&amp; d luiure le bon plaiſir du Cardinl: Ie vous
-        <lb/> aſeure, Monſieur, que i’eſtimerois pluq ſfiu
-        <lb/> nies iours dins une ſeruitude, qne d’eſpouleſvae
-        <lb/>flx qui ne nerteroit pas de ſei uir, de Paoſele
-        <lb/>de Chaiubre à la ſemme que ie dois pretende
-        <lb/> dauoir, i’apprpenderoſs que noſtre inuincfle
-        <lb/>ayeul H y E Q ne ſoruit bors de on
-        <lb/>mauſolee, a deſſein de ne fujre pſte l vie enpe
-        <lb/>nition du crime que’ie comhettrois, quand rois
-        <lb/>ſuppots du Minmſtre d’Eſtat meurent, abbardesle
-        <lb/>feus ſuppris &amp; ie demeuray long-temips en doue,
-        <lb/>à quel ſujet ils prenoient la hardieſſe de e vehis
-        <lb/>voir, leur abbord ſuſt auſi ſerieux &amp; graue que
-        <lb/>leur Hlarangue eſtoit douce &amp; enmiellee, auan
-        <lb/>que de me parler de leur ipe tinente pretention
-        <lb/>ils empluoyetrent routes le fléurs de leur Rhetoti
-        <lb/>que, pour blen orrer &amp; pô̂ſit le diſcours qu’ils fai
-        <lb rend="¬" break="no"/>ſoient, touchant la gloire &amp; le’luſtre dé noſte
-        <lb/>Royalle ’aiſon de la grandeur de voſtie gener
-        <lb/>ſite, &amp; de l’exte de on mepire: Ceinemei
-        <lb/>ie creus que léuir charge, &amp; léut éominiion ſtot
-        <lb/>de
-        <lb/>. <pb n="5"/>
-        <lb/>1
-        <lb/>
-        <lb rend="¬" break="no"/>paa--e,¬¬¬,
-        <lb/>de ne porer par leur Panegyrique d’auoie aſſez
-        <lb/>de bonteé, que de non ſeulement pardonner à leur
-        <lb/> -aam..
-        <lb/>Maiſtre : mais encore de vous dreſſer mes tres¬:
-        <lb/>humbles ſupplicaions pour ce meſme ſujet, la fin
-        <lb/>e couronna pas l’œuure, d’autant qu’auec vne
-        <lb/>contenance &amp; ſubmiſſion ridicule, ils me propo
-        <lb rend="¬" break="no"/>ferent ce beau mariage, par vne Letrtre qu ils me
-        <lb/>donnerent de la part du Cardinal Mazain en ces
-        <lb/>ermes.
-        <lb/>ONSIEVR.
-        <lb/>edſſr que j’ay de viure dans vne eſtroite vnion,
-        <lb/>auec voſtre illuſtre Maiſonm’oblige à rechercher
-        <lb/>voſtrealliance: Ie ne doure pas que voſtre Alteſ
-        <lb rend="¬" break="no"/>ſe ne ſç̧ache que j’ay reriré de Scicille mes deux
-        <lb/>Niepces, à deſſein de les marier auec des Sei
-        <lb rend="¬" break="no"/>gneurs dignes de plus grandes dignités, &amp; de plus
-        <lb/>grands amplois de la Couronne, qui ſont à ma
-        <lb/>diſpoſition, ſi vous aggreées les vœux &amp; les ſerui
-        <lb rend="¬" break="no"/>ces de rma Niepce aiſnée, ie vous l’accorde de
-        <lb/>es-gran cœur; aueec ces conuentios.
-        <lb/>ARTICLE. I.
-        <lb/> Ie prometsdormer à ma Niepce en dot &amp; gra.
-        <lb/>ification quatre millions de liuros à la benedi
-        <lb rend="¬" break="no"/>B
-        <lb/>-¬¬
-        <lb rend="¬" break="no"/> ¬¬.
-        <lb/>. <pb n="6"/>
-        <lb/>6
-        <lb/>tion de l’anneau, la moitié en louys, &amp;ſ’autreen
-        <lb/>piſtolles d’Italie &amp; d’Eſpagne, laquelle ſomme
-        <lb/>prouient du reuenu de mes Benefices, &amp; des
-        <lb/>charge de mon Miniſtraire d’Eſtat, &amp; non pas
-        <lb/>comme l’on ſe pourroit per uader, des coffres &amp;
-        <lb/> des threſors du Roy...
-        <lb/>ART C L-1.
-        <lb/>Ie promets luy donner encore mon Palais pa:
-        <lb/>ré &amp;garny de pluſieurs licts de damas bleu’à fonds
-        <lb/>d’or, d’vne tres-belle tapiſſerie, des belles chairts,
-        <lb/>bffets, &amp; entre autres d’vn buffet d’yuoire cialé
-        <lb/>d’eſmail de lavaleur de cinquante qil liures, d’n
-        <lb/>cabinet ſurdoré, &amp; enrichy des plus belles raréiés
-        <lb/>&amp; eurioſités de l’vniuers, de pluſieurs autres meu
-        <lb rend="¬" break="no"/>bles de grande valeur: Comme de veſſelle d’ar
-        <lb rend="¬" break="no"/>gent tres-exquiſe &amp; pretieuſe.
-        <lb/>ARTICLE 1’1..
-        <lb/>Ie promets encore luy faire preſent d’vn colier
-        <lb/>de petles de cent mille liures, &amp; d’vn diamanede
-        <lb/>vingt mille eſcus, &amp; de troijs rohbes; de veloé
-        <lb/>cramoiſin, blanc, &amp; noir embelies des plus ra
-        <lb rend="¬" break="no"/>res piercries de la terre, &amp; outre les quatre mil
-        <lb rend="¬" break="no"/>lions; Ie promets luy donner durant cin années
-        <lb/>coadeeutiues, à chaque anmescent milleeſs.
-        <lb/>!
-        <lb/>4 <pb n="7"/>
-        <lb/>¬-ee
-        <lb rend="¬" break="no"/>1
-        <lb/>aRT cL 1V.
-        <lb/>pronetseneoreobenir du Roy pourvoſtre
-        <lb/> luſfilu viue dleoqurl d contninpie ent
-        <lb/> ehédeicardonno, &amp;e rende donſeur de oe
-        <lb/> fort poſtee frere Cdrand-A dmiral des mers
-        <lb/>ONSIE vR,
-        <lb/> ous deuez eſperer, de viure en la Fran
-        <lb rend="¬" break="no"/> e lns lon dus ernr des luonuun qple pee
-        <lb/> nlin pie urerne dire qe ie dilſo leie
-        <lb/> en dlinunl dh ſor o deidepe iu eoe pe
-        <lb/> lpuſaſeiopt le uns ſaueni qu ooune er
-        <lb/> eeine dli ſon rſnie inuerednene
-        <lb/> gndeour queie deſreelee
-        <lb/> os eVvR,
-        <lb/>a vdan unanueadt coerſiat ſrine
-        <lb rend="¬" break="no"/> le Catdial Maaaria.
-        <lb/>2
-        <lb/>i
-        <lb/>.2
-        <lb/>e
-        <lb rend="¬" break="no"/>¬- <pb n="8"/>
-        <lb/>3i
-        <lb/>ll vous faut croire, Monſieutres-cher Frere,
-        <lb/>que la lecture de ceſte Lettre esbloüit tellement
-        <lb/>mes ſens, que ie demëüray lông énips ſans ſça
-        <lb rend="¬" break="no"/>uoir à quoy me reſodte, ou à lay faire refponce,
-        <lb/>ou à̀ luy renuoyet ſa Lettre, lcolaire &amp; le deſplai
-        <lb rend="¬" break="no"/>ſir qui auoient ſaiſi mon cœr, ſederent à la fnà la
-        <lb/>bien- ſeance, &amp; à la ciuilité, ſi bien que ie me reſo
-        <lb rend="¬" break="no"/>lus de luy eſcrire on ces term
-        <lb/>1 e r
-        <lb/>Mo SiEVE
-        <lb rend="¬" break="no"/> V’ay eſte celenent ſurps pat elre de
-        <lb/>votre, que du premier abbord i’ay creu que
-        <lb/>vous ne m’auiés farct l’honneurde m’eſerire, to
-        <lb/>chant ce ſujet, que pour rire, &amp; vous diuerir
-        <lb/>apres ayant recuelly me eſprirs, e mpefyis perſu
-        <lb rend="¬" break="no"/>dé le contraire. Ce qui ma obligé de mettree
-        <lb/>main à la plume, pour vous remercier de voſtre
-        <lb/>bonne volonté, &amp; de celle de Mademoiſelle vôue
-        <lb/>Niepce;Vousçauz que lePrinces ſont donń
-        <lb/>immediatement de’Dieu en terre, &amp; que ſape:
-        <lb/>ciance ſe reſerue le pouuoirde les marier, ie
-        <lb/>erois que ſa Diuine bonteé, lors qu’elle prendrale
-        <lb/>ſoin de me loger dans le mariage, m’aſſembler <pb n="9"/>
-        <lb/>
-        <lb rend="¬" break="no"/>¬¬¬¬-LLE EEE
-        <lb rend="¬" break="no"/>9
-        <lb/>auee vne perſonne digne de mon merire, &amp; telle
-        <lb/> que vous me deueés ſouhaitter, puis que ie ſuis,
-        <lb/>MONSIEVR,
-        <lb/>E
-        <lb/>Voſts tres affeti onǹ ſe a’teut
-        <lb/>le Duc de Mr1.
-        <lb/>Ar la le ure de l’vne &amp; de l’autre que i ay in.
-        <lb/> ſerée en celle que ie vous enuoye, vous de
-        <lb rend="¬" break="no"/>uez connoiſtre que iamais ma volonté́ n a eſteé
-        <lb/>conforme à celle de ce Miniſtre d’Eſtat, à qui in
-        <lb rend="¬" break="no"/>continant i’ay renuoyé auec ma Lettre es meſſa
-        <lb rend="¬" break="no"/>gers d’amour: Ie vous prie de me perettre, Mo.
-        <lb/>ſieur, &amp; tres-cher Frere, de vous dire que vous
-        <lb/>auez tort de vous plaindre de moy, lans qu’au
-        <lb/>prealable vous n’aye eſteé eſclaircy de mes deſirs,
-        <lb/>&amp; de mes pretentions, la pluye ne fait pas tous
-        <lb/>les iourstomber du Ciel des Armands de Riche
-        <lb rend="¬" break="no"/>lio, dont la gloire &amp; le merite ſoit capable d’o
-        <lb rend="¬" break="no"/>Abhget vn Prinee d’eſpouſer vne Damoiſelle. &amp; ſa
-        <lb/>Niepce, qui tire ſa naiſſanoe &amp; ſa Nobleſſe dep is
-        <lb/>us de douze ent années, les medailles &amp; les pi
-        <lb rend="¬" break="no"/>toles ne ſont faicte que pou les aarchands, qui
-        <lb/>eugs, ſont autant psoftables qu’elles ſont dom.
-        <lb/>ageables, quelquefois à des Princes de noſtre
-        <lb/>uete, les perles, les. diamants, les piereries, les <pb n="10"/>
-        <lb/>Palais, les cabinets, les raretés, les magnifcences,
-        <lb/>les pompes, &amp; les grandes chargesſont capables
-        <lb/>d’e ſmouuoir vn c œur de rocher, &amp; nonpas celuy
-        <lb/>du lyon, vous me permettrez, monſieur &amp;res
-        <lb rend="¬" break="no"/>cher Frere, d’inſerer dans la preſente mes iuſtes
-        <lb/>plaintes, &amp; de vous dire que les richeſſes ſont v
-        <lb/>mal que ie ne ſouhaitte point, principalement
-        <lb/>preiudice de ma grandeur, les threſors ſot la rt
-        <lb rend="¬" break="no"/>compence des peuples, &amp; la peine des Princes, i
-        <lb/>mais vn Psince n’eſt plus malheureux, que quandil
-        <lb/>eſt riche teſmoin, Creſus &amp; idas, &amp; ie crois que
-        <lb/>vous ne doutez point que tous les biens de lafo
-        <lb rend="¬" break="no"/>une du Cardinal Mazarin eſt aufſi bien de noſte
-        <lb/>domaine, que celuy de nos Anceptres, &amp; que
-        <lb/>par conſequent ie ne doit pas, ſelon le droit &amp;h
-        <lb/>raiſon, ternir par vne alliance le luſtre de ma race
-        <lb/>par vne ſimple reſtitution, ie vous eoniure de ne
-        <lb/>pardonner, ie vous oſe dire que vous auez tortd
-        <lb/>vous meffier de ma conduite, la clané de la Luue
-        <lb/>eſt plus grande en ſon deffaut que dans ſa plei
-        <lb rend="¬" break="no"/>de, &amp; la grandeur de mon cœur eſt plus grands
-        <lb/>dans le rabbais de la fortune, que ſi ie poſed
-        <lb/>toutes ſes graces imaginables, le temps et ineo
-        <lb rend="¬" break="no"/>ſtants, la fortune change de face, l’oner &amp; l
-        <lb/>yertu démeurent touſiours en vn eſts permaa,
-        <lb/>l’honneur daaine ſur ls teps, la vertu, ſarl <pb n="11"/>
-        <lb/>fortune, &amp; puis que nous auons l’honneur &amp; la
-        <lb/>Vtu, nous deuons eſperer de dompter le temps
-        <lb/>&amp;la forune, &amp; de nous maier auſi auantageuſe
-        <lb rend="¬" break="no"/>ent que noſtre ſang, &amp; noſtre merite le deman
-        <lb rend="¬" break="no"/>depouſuiuez touſiours iſeruir noe Paie, i..
-        <lb/>Paneevous en remerciera, Paris vous reconnoi
-        <lb rend="¬" break="no"/>mapour ſonPere, &amp;moy qui ſais voire, me pu
-        <lb rend="¬" break="no"/>blieray.
-        <lb/>FIN.
-        <lb/>Voſtre ſeruiteur &amp; Frere
-        <lb/>M cosv r. </p>
-    </body>
-  </text>
+				<p source="BM_Lyon">Le duc de Beaufort n'avait pas de frère de ce nom.</p>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="genre">réponse</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_26" source="Moreau">
+					<p>Anniversaire de la naissance du roi</p>
+					<date when="1649-09-05">1649-09-05</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-07-18" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<pb n="8"/>
+				<pb n="9"/>
+				<pb n="10"/>
+				<pb n="11"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+RESPONCE
+        DE MONSIEVR
+        LE DVC DE
+        MERCOEVR
+        A la Lettre de Monſieur le Duc de
+        BEAVOFRT
+        SON FRERE.
+        M DC. XLIX. 
+        
+        3
+        RESPONCE
+        DE MONSIEVR
+        LE DVC DE
+        MERC OEVR
+        A la Lettre de Monſieur le Duc de
+        BEAVFORT
+        SON FRERE.
+        MONSIEVR,
+        Le glorieux deſſeia que i’ay conçeu dans mon
+        ane, de vous teſmoigner en toutes les occaſions
+        ut le Ciel fera naiſtre mes tre-humbles reſpe
+        noblige, &amp; me porte denme donner lhonneur d
+        ou eſerire, ̀ deſſein de remerier voſtre l e
+        ede vous dlueaireu Conle iu, devou lppu
+        de eroe que le n’ayiauuaie lavnlond
+        abbaiſer à ce poin. que d’eſpouſer la ie
+        pee du Cardinail Maarin, pluſieurs conſide
+        . 
+        AA¬.
+        1ions m’ont obligé́ à vous faire ſeauoir erni
+         ſons; dont ſe ſeruoient les PHauioris de ceMliſte,
+        pour me porter à cndeſcendrél à̀ ſa volonté, le
+        croy que les phantoſnes de la Fortune ſe peſua
+        doient par le ſouppleſes &amp; inuentions de me
+        fuie prendre la reſolurion, &amp; l’enuie d acquieſce,
+        &amp; d luiure le bon plaiſir du Cardinl: Ie vous
+         aſeure, Monſieur, que i’eſtimerois pluq ſfiu
+         nies iours dins une ſeruitude, qne d’eſpouleſvae
+        flx qui ne nerteroit pas de ſei uir, de Paoſele
+        de Chaiubre à la ſemme que ie dois pretende
+         dauoir, i’apprpenderoſs que noſtre inuincfle
+        ayeul H y E Q ne ſoruit bors de on
+        mauſolee, a deſſein de ne fujre pſte l vie enpe
+        nition du crime que’ie comhettrois, quand rois
+        ſuppots du Minmſtre d’Eſtat meurent, abbardesle
+        feus ſuppris &amp; ie demeuray long-temips en doue,
+        à quel ſujet ils prenoient la hardieſſe de e vehis
+        voir, leur abbord ſuſt auſi ſerieux &amp; graue que
+        leur Hlarangue eſtoit douce &amp; enmiellee, auan
+        que de me parler de leur ipe tinente pretention
+        ils empluoyetrent routes le fléurs de leur Rhetoti
+        que, pour blen orrer &amp; pô̂ſit le diſcours qu’ils fai
+        ſoient, touchant la gloire &amp; le’luſtre dé noſte
+        Royalle ’aiſon de la grandeur de voſtie gener
+        ſite, &amp; de l’exte de on mepire: Ceinemei
+        ie creus que léuir charge, &amp; léut éominiion ſtot
+        de
+        . 
+        1
+        
+        paa--e,¬¬¬,
+        de ne porer par leur Panegyrique d’auoie aſſez
+        de bonteé, que de non ſeulement pardonner à leur
+         -aam..
+        Maiſtre : mais encore de vous dreſſer mes tres¬:
+        humbles ſupplicaions pour ce meſme ſujet, la fin
+        e couronna pas l’œuure, d’autant qu’auec vne
+        contenance &amp; ſubmiſſion ridicule, ils me propo
+        ferent ce beau mariage, par vne Letrtre qu ils me
+        donnerent de la part du Cardinal Mazain en ces
+        ermes.
+        ONSIEVR.
+        edſſr que j’ay de viure dans vne eſtroite vnion,
+        auec voſtre illuſtre Maiſonm’oblige à rechercher
+        voſtrealliance: Ie ne doure pas que voſtre Alteſ
+        ſe ne ſç̧ache que j’ay reriré de Scicille mes deux
+        Niepces, à deſſein de les marier auec des Sei
+        gneurs dignes de plus grandes dignités, &amp; de plus
+        grands amplois de la Couronne, qui ſont à ma
+        diſpoſition, ſi vous aggreées les vœux &amp; les ſerui
+        ces de rma Niepce aiſnée, ie vous l’accorde de
+        es-gran cœur; aueec ces conuentios.
+        ARTICLE. I.
+         Ie prometsdormer à ma Niepce en dot &amp; gra.
+        ification quatre millions de liuros à la benedi
+        B
+        -¬¬
+         ¬¬.
+        . 
+        6
+        tion de l’anneau, la moitié en louys, &amp;ſ’autreen
+        piſtolles d’Italie &amp; d’Eſpagne, laquelle ſomme
+        prouient du reuenu de mes Benefices, &amp; des
+        charge de mon Miniſtraire d’Eſtat, &amp; non pas
+        comme l’on ſe pourroit per uader, des coffres &amp;
+         des threſors du Roy...
+        ART C L-1.
+        Ie promets luy donner encore mon Palais pa:
+        ré &amp;garny de pluſieurs licts de damas bleu’à fonds
+        d’or, d’vne tres-belle tapiſſerie, des belles chairts,
+        bffets, &amp; entre autres d’vn buffet d’yuoire cialé
+        d’eſmail de lavaleur de cinquante qil liures, d’n
+        cabinet ſurdoré, &amp; enrichy des plus belles raréiés
+        &amp; eurioſités de l’vniuers, de pluſieurs autres meu
+        bles de grande valeur: Comme de veſſelle d’ar
+        gent tres-exquiſe &amp; pretieuſe.
+        ARTICLE 1’1..
+        Ie promets encore luy faire preſent d’vn colier
+        de petles de cent mille liures, &amp; d’vn diamanede
+        vingt mille eſcus, &amp; de troijs rohbes; de veloé
+        cramoiſin, blanc, &amp; noir embelies des plus ra
+        res piercries de la terre, &amp; outre les quatre mil
+        lions; Ie promets luy donner durant cin années
+        coadeeutiues, à chaque anmescent milleeſs.
+        !
+        4 
+        ¬-ee
+        1
+        aRT cL 1V.
+        pronetseneoreobenir du Roy pourvoſtre
+         luſfilu viue dleoqurl d contninpie ent
+         ehédeicardonno, &amp;e rende donſeur de oe
+         fort poſtee frere Cdrand-A dmiral des mers
+        ONSIE vR,
+         ous deuez eſperer, de viure en la Fran
+         e lns lon dus ernr des luonuun qple pee
+         nlin pie urerne dire qe ie dilſo leie
+         en dlinunl dh ſor o deidepe iu eoe pe
+         lpuſaſeiopt le uns ſaueni qu ooune er
+         eeine dli ſon rſnie inuerednene
+         gndeour queie deſreelee
+         os eVvR,
+        a vdan unanueadt coerſiat ſrine
+         le Catdial Maaaria.
+        2
+        i
+        .2
+        e
+        ¬- 
+        3i
+        ll vous faut croire, Monſieutres-cher Frere,
+        que la lecture de ceſte Lettre esbloüit tellement
+        mes ſens, que ie demëüray lông énips ſans ſça
+        uoir à quoy me reſodte, ou à lay faire refponce,
+        ou à̀ luy renuoyet ſa Lettre, lcolaire &amp; le deſplai
+        ſir qui auoient ſaiſi mon cœr, ſederent à la fnà la
+        bien- ſeance, &amp; à la ciuilité, ſi bien que ie me reſo
+        lus de luy eſcrire on ces term
+        1 e r
+        Mo SiEVE
+         V’ay eſte celenent ſurps pat elre de
+        votre, que du premier abbord i’ay creu que
+        vous ne m’auiés farct l’honneurde m’eſerire, to
+        chant ce ſujet, que pour rire, &amp; vous diuerir
+        apres ayant recuelly me eſprirs, e mpefyis perſu
+        dé le contraire. Ce qui ma obligé de mettree
+        main à la plume, pour vous remercier de voſtre
+        bonne volonté, &amp; de celle de Mademoiſelle vôue
+        Niepce;Vousçauz que lePrinces ſont donń
+        immediatement de’Dieu en terre, &amp; que ſape:
+        ciance ſe reſerue le pouuoirde les marier, ie
+        erois que ſa Diuine bonteé, lors qu’elle prendrale
+        ſoin de me loger dans le mariage, m’aſſembler 
+        
+        ¬¬¬¬-LLE EEE
+        9
+        auee vne perſonne digne de mon merire, &amp; telle
+         que vous me deueés ſouhaitter, puis que ie ſuis,
+        MONSIEVR,
+        E
+        Voſts tres affeti onǹ ſe a’teut
+        le Duc de Mr1.
+        Ar la le ure de l’vne &amp; de l’autre que i ay in.
+         ſerée en celle que ie vous enuoye, vous de
+        uez connoiſtre que iamais ma volonté́ n a eſteé
+        conforme à celle de ce Miniſtre d’Eſtat, à qui in
+        continant i’ay renuoyé auec ma Lettre es meſſa
+        gers d’amour: Ie vous prie de me perettre, Mo.
+        ſieur, &amp; tres-cher Frere, de vous dire que vous
+        auez tort de vous plaindre de moy, lans qu’au
+        prealable vous n’aye eſteé eſclaircy de mes deſirs,
+        &amp; de mes pretentions, la pluye ne fait pas tous
+        les iourstomber du Ciel des Armands de Riche
+        lio, dont la gloire &amp; le merite ſoit capable d’o
+        Abhget vn Prinee d’eſpouſer vne Damoiſelle. &amp; ſa
+        Niepce, qui tire ſa naiſſanoe &amp; ſa Nobleſſe dep is
+        us de douze ent années, les medailles &amp; les pi
+        toles ne ſont faicte que pou les aarchands, qui
+        eugs, ſont autant psoftables qu’elles ſont dom.
+        ageables, quelquefois à des Princes de noſtre
+        uete, les perles, les. diamants, les piereries, les 
+        Palais, les cabinets, les raretés, les magnifcences,
+        les pompes, &amp; les grandes chargesſont capables
+        d’e ſmouuoir vn c œur de rocher, &amp; nonpas celuy
+        du lyon, vous me permettrez, monſieur &amp;res
+        cher Frere, d’inſerer dans la preſente mes iuſtes
+        plaintes, &amp; de vous dire que les richeſſes ſont v
+        mal que ie ne ſouhaitte point, principalement
+        preiudice de ma grandeur, les threſors ſot la rt
+        compence des peuples, &amp; la peine des Princes, i
+        mais vn Psince n’eſt plus malheureux, que quandil
+        eſt riche teſmoin, Creſus &amp; idas, &amp; ie crois que
+        vous ne doutez point que tous les biens de lafo
+        une du Cardinal Mazarin eſt aufſi bien de noſte
+        domaine, que celuy de nos Anceptres, &amp; que
+        par conſequent ie ne doit pas, ſelon le droit &amp;h
+        raiſon, ternir par vne alliance le luſtre de ma race
+        par vne ſimple reſtitution, ie vous eoniure de ne
+        pardonner, ie vous oſe dire que vous auez tortd
+        vous meffier de ma conduite, la clané de la Luue
+        eſt plus grande en ſon deffaut que dans ſa plei
+        de, &amp; la grandeur de mon cœur eſt plus grands
+        dans le rabbais de la fortune, que ſi ie poſed
+        toutes ſes graces imaginables, le temps et ineo
+        ſtants, la fortune change de face, l’oner &amp; l
+        yertu démeurent touſiours en vn eſts permaa,
+        l’honneur daaine ſur ls teps, la vertu, ſarl 
+        fortune, &amp; puis que nous auons l’honneur &amp; la
+        Vtu, nous deuons eſperer de dompter le temps
+        &amp;la forune, &amp; de nous maier auſi auantageuſe
+        ent que noſtre ſang, &amp; noſtre merite le deman
+        depouſuiuez touſiours iſeruir noe Paie, i..
+        Paneevous en remerciera, Paris vous reconnoi
+        mapour ſonPere, &amp;moy qui ſais voire, me pu
+        blieray.
+        FIN.
+        Voſtre ſeruiteur &amp; Frere
+        M cosv r.			</p>
+		</body>
+	</text>
 </TEI>

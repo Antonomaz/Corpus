@@ -1,296 +1,483 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2565_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Les obsèques , les funérailles et l'oraison funèbre de
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Les obsèques , les funérailles et l'oraison funèbre de
           Mazarin.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2022-10-25">25 octobre 2022</date>
-        <availability status="restricted" n="cc-by">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=p-rn5Cq9Vr0C"/>
-          <author/>
-          <title source="Moreau">Obsèques (les), les funérailles et l'oraison funèbre de
+					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2022-10-25">25 octobre 2022</date>
+				<availability status="restricted" n="cc-by">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=p-rn5Cq9Vr0C"/>
+					<author/>
+					<title source="Moreau">Obsèques (les), les funérailles et l'oraison funèbre de
             Mazarin.</title>
-          <pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
-          <publisher ref="isni:0000000110472958" xml:id="IL_CharlesNoel.xml">
-            <persName>
-              <forename>Noël</forename>
-              <surname>Charles</surname>
-            </persName>
-          </publisher>
-          <date source="Moreau" when="1649">1649</date>
-          <extent>
-            <measure unit="page" quantity="8"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2996944">Lyon</settlement>
-            <institution>Bibliothèque municipale de Lyon</institution>
-            <repository/>
-            <idno type="cote">Rés 312431</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
+					<publisher ref="isni:0000000110472958" xml:id="IL_CharlesNoel.xml">
+						<persName>
+							<forename>Noël</forename>
+							<surname>Charles</surname>
+						</persName>
+					</publisher>
+					<date source="Moreau" when="1649">1649</date>
+					<extent>
+						<measure unit="page" quantity="8"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2996944">Lyon</settlement>
+						<institution>Bibliothèque municipale de Lyon</institution>
+						<repository/>
+						<idno type="cote">Rés 312431</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>True</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">2565. Obsèques (les), les funérailles et l'oraison funè bre de Mazarin.
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">2565. Obsèques (les), les funérailles et l'oraison funè bre de Mazarin.
           Paris, N. Charles, 1649,8 pages.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="genre">pamphlet</term>
-          <term type="subject" ref="personnes/Mazarin.xml">Mazarin</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_28" source="Moreau">
-          <p>Avant la paix</p>
-          <date when="1649-03-01">1649-03-01</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-10-25" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>LES OBSEQVES. ’
-        <lb/>LES FVNERAILLES
-        <lb/> ien
-        <lb/>che N C n ue Saine laeques
-        <lb rend="¬" break="no"/>eeers <pb n="2"/>
-        <pb n="3"/>
-        <lb/>aaeaS
-        <lb/>Sa
-        <lb/>3
-        <lb/>ee
-        <lb/>eais
-        <lb/>
-        <lb rend="¬" break="no"/> y
-        <lb rend="¬" break="no"/>IE ORE
-        <lb/>
-        <lb/> AL Z LA2
-        <lb/>LES FVNERAILLES
-        <lb/>TT
-        <lb/>ET
-        <lb/>L’ORAISON FVNEBRE
-        <lb/>1
-        <lb/>1
-        <lb/>DE
-        <lb/>
-        <lb/>
-        <lb/>MAZARIN.
-        <lb/>AJ
-        <lb/>
-        <lb/> le die aue on’ de nſlun lne.
-        <lb/> faire eomparaiſon de l’innocent auee
-        <lb/>? le coupable, &amp; de mettre quelque pa
-        <lb rend="¬" break="no"/>alele entre le Createur, &amp; la ereumte e pout
-        <lb rend="¬" break="no"/>rîs dire d’abord que nous ſommes dans le temps
-        <lb/>ou le Fils de Dieu eſt mort, pour l’amour exceſſi
-        <lb/>il portoit à ſon peuple, là où Iules Mazarin
-        <lb/>eſt môrt pour auoir trahy la France, pour auoir
-        <lb/>voleé les finances du Roy, pour auoir foulé́ les
-        <lb/>peuples par des leuées immenſes de deniers, &amp;
-        <lb/>auoir tiré́ le ſang des veines des pauures gens. Il
-        <lb/>eſtbien mort, puis qu’il ne vit plus ny dans l’eſ
-        <lb rend="¬" break="no"/>A ij
-        <lb/>¬ <pb n="4"/>
-        <lb/>prit du Roy, ny dans la penſée de la Royne, ny
-        <lb/>dans l’eſtime des Princes: il ne vit plus depuis
-        <lb/>qu’il a eſté condamné à mort par l’Arreſt de la
-        <lb/>Cour, &amp; banny hors du Royaume de France. Il
-        <lb/>eſt bien mort, pais qu’il eſt en horreur aux gens
-        <lb/>de bien, &amp; en abomination aux plus ſages: que
-        <lb/>les bons &amp; les méchans le haiſſent également:
-        <lb/>que les elemens ne le veulent plus ſupporter, que
-        <lb/>la terre &amp; les Cieux ont iuré ſa perte &amp; ſa ruine.
-        <lb/>Dans les funerailles ordinaires des morts, on ny
-        <lb/>voit que des marques lugubres de triſteſſe &amp; de
-        <lb/>dueil! que des larmes répanduës que des ſoûpirs
-        <lb/>entre-couppez ! que de profonds ſanglots on n’y
-        <lb/>entend que des voix plaintiues, des regrets, des
-        <lb/>reſſentimens! des paroles de deſeſpoir, &amp; des té
-        <lb rend="¬" break="no"/>moignage d’vne perte qui pour eſtre irrepara
-        <lb rend="¬" break="no"/>ble, nous eſt extremement ſenſble. Les Egli
-        <lb rend="¬" break="no"/>ſes parées de noir, nos habits, nos deportemens,
-        <lb/>nos yeux, nô̂tre ſilence expriment les ſentinmens
-        <lb/>de nos cœurs, &amp; de nos Ames abbatuë̈s de deſ
-        <lb rend="¬" break="no"/>plaiſir. L’on dit qu’Alexandre aymoit ſi parf
-        <lb/>ctement vn ſien fauory nommeé Epheſtion, que
-        <lb/>eſtant mort, il commanda vn dueil public
-        <lb/>voulut que par toute l’étenduë de ſon Empe, on
-        <lb/>reſſentit la perte d’vn ſi grand homme. Nous de
-        <lb rend="¬" break="no"/>uons faire tout au contraire en la mort de Maza
-        <lb rend="¬" break="no"/>rin; car au lieu de nous affliger, &amp; verſer des lar
-        <lb rend="¬" break="no"/>mes, nous deuons faire des feux de joye, &amp; té
-        <lb rend="¬" break="no"/>moigne, <pb n="5"/>
-        <lb/>5
-        <lb/>moigner beaucoup d’allegreſſe &amp; de réjoüiſſan
-        <lb rend="¬" break="no"/>ce.Ne pouuons nous pas dire que la France
-        <lb/>reſſuſcite dans la mort &amp; dans l’éloignement
-        <lb/>de ce mal-heureux, &amp; que les Fran çois repren
-        <lb rend="¬" break="no"/>nent vne nouuelle vie dans ſa diſgrace, com
-        <lb rend="¬" break="no"/>me le Phœnix renaiſt de ſes propres cendres. Ne
-        <lb/>deuons nous pas eſperer maintenant toutes ſor
-        <lb rend="¬" break="no"/>tes de felicité &amp; de bon-heur, vn notable chan
-        <lb rend="¬" break="no"/>gement dans les affaires, de nouuelles reſolutions
-        <lb/>dans les courages, &amp; de genereuſes entrepriſes
-        <lb/>pour le ſeruice de nôtre bon Roy. Doreſnauant
-        <lb/>sout le monde reſpirera, &amp; le trafic venant à coa
-        <lb rend="¬" break="no"/>mencer chacun gagnera ſa vie, &amp; ſe mettra à la
-        <lb rend="¬" break="no"/>bry de la eceſſité. Vous verrez dans Paris les
-        <lb/>Pantalons ne plus danſer que les branles de la ſor
-        <lb rend="¬" break="no"/>tie de Mazarin, les joueurs de luth luy feront
-        <lb/>joü̈er des Allemande, les violons des Sarabandes,
-        <lb/>les Vielleux des chanſons nouuelles, des Maſca
-        <lb rend="¬" break="no"/> rins, &amp; des paſſe par-tout, les Theatres, le diuer
-        <lb rend="¬" break="no"/> tiſſement des plus honneftes gens, comme des
-        <lb/> meilleurs eſprits de Paris, qui depuis les Roys
-        <lb/>auoient eſté tellement abandonnez, que des par
-        <lb rend="¬" break="no"/>terres on en auoit fait des jeux de bolle, ſeront
-        <lb/>doreſnauant plus frequentez que jamais; la luſ
-        <lb rend="¬" break="no"/>patt des Comedies qui s’y repreſenteront, ſeront
-        <lb/>au ſujet de Mazarin, &amp; les plus excellens Poëres
-        <lb/>du ſiecle n’ouurirot leurs veines que pour publier
-        <lb/>les eloges, les hauts faits, les belles actions, lesmer
-        <lb rend="¬" break="no"/>ueilles, les miracles à rebours de ce monſtre de na¬ <pb n="6"/>
-        <lb/>rare, qui luy ſeul à fait plus de mal au Royauime de
-        <lb/>France, que n’ont jamais fait ny les Anglois, ny les
-        <lb/>Eſpagnols, ny les Huguenots, ny les autres enne
-        <lb rend="¬" break="no"/> mis &amp; domeſtiques eſtrangers. Les peintres qui
-        <lb/>dans ce mauuais temps n’ont point emploié a ſub
-        <lb rend="¬" break="no"/>tilité́ de leur pinceau, ny pour les cabinets, ny pour
-        <lb/>les galleries, ny pour les enjoliuemens, ny pour
-        <lb/>les pourtraits, parce que les plus riches meme ſe
-        <lb/>ſont ſentis des incommoditez de la guerre, &amp; que
-        <lb/>les mediocres en ont puiſſamment é́prouueé les
-        <lb/>miſeres: maintenant que Mazarin eſt mort, ſeront
-        <lb/>toûjours occupez; car outre que chacun voudra
-        <lb/>auoir ſon pourtraict, comme il ſe trouue des Chre
-        <lb rend="¬" break="no"/>ſtiens qui ſont aſſez curieux pour auoir de beaux
-        <lb/>tableaux qui repreſentent des diables: ou comme
-        <lb/>ces grands Monarques de la Chine au recit de Pau
-        <lb rend="¬" break="no"/>ſanias, qui ſe faiſoient tirer les pourtraits des en
-        <lb rend="¬" break="no"/>nemis qu’ils auolent à combatre, afin que dans
-        <lb/>leurs viſages ils iugeaſſent de leur genoroſiteé, &amp;
-        <lb/>en ſuite les aſſeurances d’vne victoire certaine. Les
-        <lb/>peintres pour exercerleur pinceau, leur eſprit, &amp;
-        <lb/>leur main, &amp; faire voir qu’ils reü̈ſſiſſent à merueil
-        <lb rend="¬" break="no"/>le dans de beaux deſſeins, repreſenteront Mazarin
-        <lb/>tantôt en Satyre, tantoô̂t en Barbare, tantô̂t en Mi
-        <lb rend="¬" break="no"/>ſantrope, tant̂t en Iean des vignes, &amp; en mille
-        <lb/>autres viſages, qui ſous leurs figures feront con
-        <lb rend="¬" break="no"/>noiſtre les mauuaiſes inclinations de ce perdu:
-        <lb/>Les Phyſionomiſtes qui tireront ſon Horoſcope,
-        <lb/>trouueront par les regles de leurs ſcience, qu’il <pb n="7"/>
-        <lb/>mourra d’vne mort honteuſe, &amp; infame, &amp; iuge
-        <lb rend="¬" break="no"/>ront que la fortune ne l’auoit ſi haut éleué, que
-        <lb/>pour le precipiter auec plus d’ignominie. Les
-        <lb/>Theologiens même les plus rigoureux diſputerot
-        <lb/>de ſon ſalut ou de ſa damnation; &amp; douterontſi
-        <lb/>apres tant de maux, tant de rapines, tant de diſ
-        <lb rend="¬" break="no"/>ſolutions, tant de violemens, tant de mépris des
-        <lb/>choſes ſainctes, tant de blaſphemes contre Dieu,
-        <lb/>tant de ſacrilege dont il a eſté ſeul la cauſe, ſi les
-        <lb/>diables ne l’emporteront pas en corps &amp; en ame
-        <lb/>dans les enfers, &amp; ſi Dieu aura aſſez de bonté pour
-        <lb/>luy faire miſericorde, &amp; le mettre dans ſon Para
-        <lb rend="¬" break="no"/>dis au rang des bons Larrons, des Magdelaines,
-        <lb/>des Longis, des Publicains, &amp; des meurtriers. En
-        <lb rend="¬" break="no"/>fin le ſouuenir de Mazarin ne s’éffacera jamais de
-        <lb/>nôtre memoire, les bons &amp; les meéchans ne l’ou
-        <lb rend="¬" break="no"/>blieront point, parce qu’il a eſté compagnon des
-        <lb/>vns, &amp; hay des autres. Et comme les hiſtoires de la
-        <lb/>Grece en faiſant mention de ce ſuperbe, &amp; ma
-        <lb rend="¬" break="no"/>gnifique temple d’Epheſe, parlent en même téps
-        <lb/>de celuy qui la brû̂lé. Ainſi les Annales &amp; les Hi
-        <lb rend="¬" break="no"/>ſtoires de France, qui dans la ſuite des ſiecles en
-        <lb/>d’é́criront les mal-heureux, &amp; en marqueront les
-        <lb/>guerres, ditont quant &amp; quant qee Mazarin auoit
-        <lb/>eſté l’autheur, le principe, &amp; le motif de celle-cy.
-        <lb/>Enſin on ne verra doreſnauant dans Paris que
-        <lb/>Bals, Ballets, Comedies, Feſtins, Carrouſels, puis
-        <lb/>que Mazarin n’eſt plus au monde, &amp; que ce per
-        <lb rend="¬" break="no"/>fide ne tient plus nos fortunes, &amp; nos vies en ba¬ <pb n="8"/>
-        <lb/>lance; qu’il eſt enſeueli dans la penſéé des bons
-        <lb/>Prançois; qu’il n’eſt plus au nombre des viuans,
-        <lb/>dans l’eſprit des Princes judicieux; que la terre ne
-        <lb/>le connoiſt plus, que le Ciel ne le veut point rece
-        <lb rend="¬" break="no"/>uoir, &amp; que de volonté au moins nous l’auons
-        <lb/>mis dans le tombeau. Accompagnons ce miſera
-        <lb rend="¬" break="no"/>ble iuſques dans le ſepulchre, &amp; le mettons auec
-        <lb/>les Corbeaux au gibet de Mont-faucon. Faiſons
-        <lb/>luy des funerailles, &amp; des obſeques auec des flam
-        <lb rend="¬" break="no"/>beaux de poix-raiſine qui luy brû̂lent continuel
-        <lb rend="¬" break="no"/>lement les entrailles, &amp; pour témoigner que nous
-        <lb/>auons dextremes regrets de ſa mort, faiſons danm
-        <lb rend="¬" break="no"/>ſer deſſus ſa foſſe, tous les joü̈eurs de violons.
-        <lb/>Pour ſon oraiſon funebre donnons luy mille ma
-        <lb rend="¬" break="no"/>ledictions, &amp; mille imprecations; Et pour prieres
-        <lb/>ſupplions la diuine Majeſté, que bien-tô̂t il de
-        <lb rend="¬" break="no"/> liure la France de ce monſtre horrible, qui a blaſ
-        <lb rend="¬" break="no"/>phemé ſon nom, abbatu ſes Autels, &amp; violé ſes.
-        <lb/>Eſpouſes.
-        <lb/>
-        <lb/>EIN.
-        <lb/>AF.
-        <lb/>le
-        <lb/>Su </p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="genre">pamphlet</term>
+					<term type="subject" ref="personnes/Mazarin.xml">Mazarin</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_28" source="Moreau">
+					<p>Avant la paix</p>
+					<date when="1649-03-01">1649-03-01</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-10-25" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<pb n="8"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+LES OBSEQVES. ’
+        LES FVNERAILLES
+         ien
+        che N C n ue Saine laeques
+        eeers 
+        
+        aaeaS
+        Sa
+        3
+        ee
+        eais
+        
+         y
+        IE ORE
+        
+         AL Z LA2
+        LES FVNERAILLES
+        TT
+        ET
+        L’ORAISON FVNEBRE
+        1
+        1
+        DE
+        
+        
+        MAZARIN.
+        AJ
+        
+         le die aue on’ de nſlun lne.
+         faire eomparaiſon de l’innocent auee
+        ? le coupable, &amp; de mettre quelque pa
+        alele entre le Createur, &amp; la ereumte e pout
+        rîs dire d’abord que nous ſommes dans le temps
+        ou le Fils de Dieu eſt mort, pour l’amour exceſſi
+        il portoit à ſon peuple, là où Iules Mazarin
+        eſt môrt pour auoir trahy la France, pour auoir
+        voleé les finances du Roy, pour auoir foulé́ les
+        peuples par des leuées immenſes de deniers, &amp;
+        auoir tiré́ le ſang des veines des pauures gens. Il
+        eſtbien mort, puis qu’il ne vit plus ny dans l’eſ
+        A ij
+        ¬ 
+        prit du Roy, ny dans la penſée de la Royne, ny
+        dans l’eſtime des Princes: il ne vit plus depuis
+        qu’il a eſté condamné à mort par l’Arreſt de la
+        Cour, &amp; banny hors du Royaume de France. Il
+        eſt bien mort, pais qu’il eſt en horreur aux gens
+        de bien, &amp; en abomination aux plus ſages: que
+        les bons &amp; les méchans le haiſſent également:
+        que les elemens ne le veulent plus ſupporter, que
+        la terre &amp; les Cieux ont iuré ſa perte &amp; ſa ruine.
+        Dans les funerailles ordinaires des morts, on ny
+        voit que des marques lugubres de triſteſſe &amp; de
+        dueil! que des larmes répanduës que des ſoûpirs
+        entre-couppez ! que de profonds ſanglots on n’y
+        entend que des voix plaintiues, des regrets, des
+        reſſentimens! des paroles de deſeſpoir, &amp; des té
+        moignage d’vne perte qui pour eſtre irrepara
+        ble, nous eſt extremement ſenſble. Les Egli
+        ſes parées de noir, nos habits, nos deportemens,
+        nos yeux, nô̂tre ſilence expriment les ſentinmens
+        de nos cœurs, &amp; de nos Ames abbatuë̈s de deſ
+        plaiſir. L’on dit qu’Alexandre aymoit ſi parf
+        ctement vn ſien fauory nommeé Epheſtion, que
+        eſtant mort, il commanda vn dueil public
+        voulut que par toute l’étenduë de ſon Empe, on
+        reſſentit la perte d’vn ſi grand homme. Nous de
+        uons faire tout au contraire en la mort de Maza
+        rin; car au lieu de nous affliger, &amp; verſer des lar
+        mes, nous deuons faire des feux de joye, &amp; té
+        moigne, 
+        5
+        moigner beaucoup d’allegreſſe &amp; de réjoüiſſan
+        ce.Ne pouuons nous pas dire que la France
+        reſſuſcite dans la mort &amp; dans l’éloignement
+        de ce mal-heureux, &amp; que les Fran çois repren
+        nent vne nouuelle vie dans ſa diſgrace, com
+        me le Phœnix renaiſt de ſes propres cendres. Ne
+        deuons nous pas eſperer maintenant toutes ſor
+        tes de felicité &amp; de bon-heur, vn notable chan
+        gement dans les affaires, de nouuelles reſolutions
+        dans les courages, &amp; de genereuſes entrepriſes
+        pour le ſeruice de nôtre bon Roy. Doreſnauant
+        sout le monde reſpirera, &amp; le trafic venant à coa
+        mencer chacun gagnera ſa vie, &amp; ſe mettra à la
+        bry de la eceſſité. Vous verrez dans Paris les
+        Pantalons ne plus danſer que les branles de la ſor
+        tie de Mazarin, les joueurs de luth luy feront
+        joü̈er des Allemande, les violons des Sarabandes,
+        les Vielleux des chanſons nouuelles, des Maſca
+         rins, &amp; des paſſe par-tout, les Theatres, le diuer
+         tiſſement des plus honneftes gens, comme des
+         meilleurs eſprits de Paris, qui depuis les Roys
+        auoient eſté tellement abandonnez, que des par
+        terres on en auoit fait des jeux de bolle, ſeront
+        doreſnauant plus frequentez que jamais; la luſ
+        patt des Comedies qui s’y repreſenteront, ſeront
+        au ſujet de Mazarin, &amp; les plus excellens Poëres
+        du ſiecle n’ouurirot leurs veines que pour publier
+        les eloges, les hauts faits, les belles actions, lesmer
+        ueilles, les miracles à rebours de ce monſtre de na¬ 
+        rare, qui luy ſeul à fait plus de mal au Royauime de
+        France, que n’ont jamais fait ny les Anglois, ny les
+        Eſpagnols, ny les Huguenots, ny les autres enne
+         mis &amp; domeſtiques eſtrangers. Les peintres qui
+        dans ce mauuais temps n’ont point emploié a ſub
+        tilité́ de leur pinceau, ny pour les cabinets, ny pour
+        les galleries, ny pour les enjoliuemens, ny pour
+        les pourtraits, parce que les plus riches meme ſe
+        ſont ſentis des incommoditez de la guerre, &amp; que
+        les mediocres en ont puiſſamment é́prouueé les
+        miſeres: maintenant que Mazarin eſt mort, ſeront
+        toûjours occupez; car outre que chacun voudra
+        auoir ſon pourtraict, comme il ſe trouue des Chre
+        ſtiens qui ſont aſſez curieux pour auoir de beaux
+        tableaux qui repreſentent des diables: ou comme
+        ces grands Monarques de la Chine au recit de Pau
+        ſanias, qui ſe faiſoient tirer les pourtraits des en
+        nemis qu’ils auolent à combatre, afin que dans
+        leurs viſages ils iugeaſſent de leur genoroſiteé, &amp;
+        en ſuite les aſſeurances d’vne victoire certaine. Les
+        peintres pour exercerleur pinceau, leur eſprit, &amp;
+        leur main, &amp; faire voir qu’ils reü̈ſſiſſent à merueil
+        le dans de beaux deſſeins, repreſenteront Mazarin
+        tantôt en Satyre, tantoô̂t en Barbare, tantô̂t en Mi
+        ſantrope, tant̂t en Iean des vignes, &amp; en mille
+        autres viſages, qui ſous leurs figures feront con
+        noiſtre les mauuaiſes inclinations de ce perdu:
+        Les Phyſionomiſtes qui tireront ſon Horoſcope,
+        trouueront par les regles de leurs ſcience, qu’il 
+        mourra d’vne mort honteuſe, &amp; infame, &amp; iuge
+        ront que la fortune ne l’auoit ſi haut éleué, que
+        pour le precipiter auec plus d’ignominie. Les
+        Theologiens même les plus rigoureux diſputerot
+        de ſon ſalut ou de ſa damnation; &amp; douterontſi
+        apres tant de maux, tant de rapines, tant de diſ
+        ſolutions, tant de violemens, tant de mépris des
+        choſes ſainctes, tant de blaſphemes contre Dieu,
+        tant de ſacrilege dont il a eſté ſeul la cauſe, ſi les
+        diables ne l’emporteront pas en corps &amp; en ame
+        dans les enfers, &amp; ſi Dieu aura aſſez de bonté pour
+        luy faire miſericorde, &amp; le mettre dans ſon Para
+        dis au rang des bons Larrons, des Magdelaines,
+        des Longis, des Publicains, &amp; des meurtriers. En
+        fin le ſouuenir de Mazarin ne s’éffacera jamais de
+        nôtre memoire, les bons &amp; les meéchans ne l’ou
+        blieront point, parce qu’il a eſté compagnon des
+        vns, &amp; hay des autres. Et comme les hiſtoires de la
+        Grece en faiſant mention de ce ſuperbe, &amp; ma
+        gnifique temple d’Epheſe, parlent en même téps
+        de celuy qui la brû̂lé. Ainſi les Annales &amp; les Hi
+        ſtoires de France, qui dans la ſuite des ſiecles en
+        d’é́criront les mal-heureux, &amp; en marqueront les
+        guerres, ditont quant &amp; quant qee Mazarin auoit
+        eſté l’autheur, le principe, &amp; le motif de celle-cy.
+        Enſin on ne verra doreſnauant dans Paris que
+        Bals, Ballets, Comedies, Feſtins, Carrouſels, puis
+        que Mazarin n’eſt plus au monde, &amp; que ce per
+        fide ne tient plus nos fortunes, &amp; nos vies en ba¬ 
+        lance; qu’il eſt enſeueli dans la penſéé des bons
+        Prançois; qu’il n’eſt plus au nombre des viuans,
+        dans l’eſprit des Princes judicieux; que la terre ne
+        le connoiſt plus, que le Ciel ne le veut point rece
+        uoir, &amp; que de volonté au moins nous l’auons
+        mis dans le tombeau. Accompagnons ce miſera
+        ble iuſques dans le ſepulchre, &amp; le mettons auec
+        les Corbeaux au gibet de Mont-faucon. Faiſons
+        luy des funerailles, &amp; des obſeques auec des flam
+        beaux de poix-raiſine qui luy brû̂lent continuel
+        lement les entrailles, &amp; pour témoigner que nous
+        auons dextremes regrets de ſa mort, faiſons danm
+        ſer deſſus ſa foſſe, tous les joü̈eurs de violons.
+        Pour ſon oraiſon funebre donnons luy mille ma
+        ledictions, &amp; mille imprecations; Et pour prieres
+        ſupplions la diuine Majeſté, que bien-tô̂t il de
+         liure la France de ce monſtre horrible, qui a blaſ
+        phemé ſon nom, abbatu ſes Autels, &amp; violé ſes.
+        Eſpouſes.
+        
+        EIN.
+        AF.
+        le
+        Su			</p>
+		</body>
+	</text>
 </TEI>

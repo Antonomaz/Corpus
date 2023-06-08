@@ -1,861 +1,1635 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau748_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">La confession générale des partisans et maltôtiers de
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">La confession générale des partisans et maltôtiers de
           France, reconnue par l’examen qu'ils en ont fait dans leur dernière assemblée du mois de
           mai à Paris, recueillie par M. J. D. L. R., un de leurs commis.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=gR6CyYCNnJMC"/>
-          <author/>
-          <title source="Moreau">Confession (la) générale des partisans et maltôtiers de France,
+					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+				<availability n="cc-by" status="restricted">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=gR6CyYCNnJMC"/>
+					<author/>
+					<title source="Moreau">Confession (la) générale des partisans et maltôtiers de France,
             reconnue par l’examen qu'ils en ont fait dans leur dernière assemblée du mois de mai à
             Paris, recueillie par M. J. D. L. R., un de leurs commis.</title>
-          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>
-            <persName>Sans Nom</persName>
-          </publisher>
-          <date source="Moreau" when="1652">1652</date>
-          <extent>
-            <measure quantity="28" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:3067696">Prague</settlement>
-            <institution>Bibliothèque nationale de République Tchèque</institution>
-            <repository/>
-            <idno type="cote"/>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+					<publisher>
+						<persName>Sans nom</persName>
+					</publisher>
+					<date source="Moreau" when="1652">1652</date>
+					<extent>
+						<measure quantity="28" unit="page"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:3067696">Prague</settlement>
+						<institution>Bibliothèque nationale de République Tchèque</institution>
+						<repository/>
+						<idno type="cote"/>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>True</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">748. Confession (la) générale des partisans et maltôtiers de France,
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">748. Confession (la) générale des partisans et maltôtiers de France,
           reconnue par l’examen qu'ils en ont fait dans leur dernière assemblée du mois de mai à
           Paris , recueillie par M. J. D. L. R., un de leurs commis. Paris, 1652 , 28 pages.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_81" source="Moreau">
-          <p>Le duc de Lorraine vient à Paris</p>
-          <date when="1652-05-31">1652-05-31</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-03-23" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>LA
-        <lb/>CONFESSION
-        <lb/>GENERALE
-        <lb/>DES PARTISANS
-        <lb/>ET MALTOTIERS
-        <lb/>de France.
-        <lb/>RECONNVE PAR L'EXAMEN QV'ILS
-        <lb/>en ont fait en leur dernière Aſſemblée du mois
-        <lb/>de May dernier à Paris.
-        <lb/>Reccueillie par M. I. D. L. R. vn de leur Commis.
-        <lb/>A PARIS,1652.<pb n="2"/>
-        <pb n="3"/>
-        <lb/>3
-        <lb/>La Confeſion generale des Partiſans &amp; Maleoeiers de Fran
-        <lb rend="¬" break="no"/>ce; reconnuë par l’examen qu’ils en ont fait en leur dernie
-        <lb rend="¬" break="no"/>re Aſſemblée du mois de May dernier, à Paris.
-        <lb/>Recueillie par M.I. D.L.R. vn de leur Commis.
-        <lb/>LE CHANCELIER
-        <lb/>MAL-vit qui ne s’amende. Ce Prouerbe eſt tres
-        <lb/>veritable pour toutes ſortes de conditions
-        <lb/>mais comme il n’y a rien de ſi general qui n’ait
-        <lb/>ſon exception, les Mal-toticrs en ſont exceptez.
-        <lb/>Auſſil Eſcriture ſaincte dit; Qu’il eſt p’us dfheci
-        <lb rend="¬" break="no"/>le qu’vn riche entre dans le Ciel, qu’il n’eſt mal
-        <lb rend="¬" break="no"/>aiſe qu’vn double paſſe dans le pertuis d’vne eſ
-        <lb rend="¬" break="no"/>guille. Hé! ie vous ſupplie, Meſſieurs, y a t’l
-        <lb/>quelques perſonnes au monde plus riches qu
-        <lb/>nous: car nous pouuons dire, bien que ce ſot à
-        <lb/>noſtre confuſion; que dés qu’vn homme a mis
-        <lb/>ſeulement le pied dans la Maltote, c’eſt aſſez
-        <lb/>pour luy faire acquerir des richeſſes ſans nom
-        <lb rend="¬" break="no"/>bre, &amp; pour le mettre au milieu de toute ſorte
-        <lb/>de bonne fortune. Nous aurions aſſez de ſujet
-        <lb/>pour vous deſcouurir à ce propos les maximes de
-        <lb/>noſtre profeſſion; mais comme nous ſçauons
-        <lb/>bien que ce n’eſt pas à cette occaſion là que
-        <lb/>vous nous auez aſſignez à la Chambre de Iuſti
-        <lb rend="¬" break="no"/>ce, eſtablie pour nous faire rendre compte de
-        <lb/>mos actions, &amp; des deniers que nous auons vſur
-        <lb rend="¬" break="no"/>pez ſur le Roy &amp; ſurſon Eſſar, &amp; que vous deſi¬ <pb n="4"/>
-        <lb/>rez de nous vne Confeſſion generale de nos ex
-        <lb rend="¬" break="no"/>cez &amp; de nos iniquitez; nous ne refuſerons point
-        <lb/>5
-        <lb/>de vous obeir, &amp; vous reconnoiſſans pour nos
-        <lb/>Iuges, ayans nos mains deſſus la ſaincte Euangi
-        <lb rend="¬" break="no"/>le, nous iurons &amp; proreſtons tous enſemble de
-        <lb/>ne dire que laverite. Nous auons employé quel
-        <lb rend="¬" break="no"/>que temps pour ſongerà nos conſciences, car
-        <lb/>c’eſt de l’eſſence d’vne bonne Confeſſion, d’eſtre
-        <lb/>premeditée auparauent que de la prononcer,)
-        <lb/>nous n’aurons donc pas beaucoup de peine à de
-        <lb rend="¬" break="no"/>uelopper nos penſées, &amp; vous n’aurez, s’il veus
-        <lb/>plaiſt qu’à nous eſcouter. Ie vay me confeſſer le
-        <lb/>premier. Confiteor, &amp;c.
-        <lb/>Moy qui commence à me confeſſer le pre
-        <lb rend="¬" break="no"/>mier, ie ſuis ce grand Chancelier de France, qui
-        <lb/>ſuis ſorty d’vn Apoticaire &amp; d’vn Procureur, les.
-        <lb/>Charniers de ſainct Seuerin teſmoignent aſſez
-        <lb/>mon extraction; je me ſuis ſi bien veautré́ dans
-        <lb/>les Bouës de Paris, que i’en ay acquis vne infini
-        <lb rend="¬" break="no"/>té de richeſſes, qui montent iuſques aà dix-ſept
-        <lb/>cens mille liures de reuenu tous les ans. l’ay en
-        <lb rend="¬" break="no"/>trepris toutes les ſortes de Partys qui ſe ſont pâ
-        <lb/>preſenter, ſans en auoir refuſe vn ſeul. De ſorte
-        <lb/>que ie puis bien dire auec toute humilité, com
-        <lb rend="¬" break="no"/>me eſtant en confeſſion; que i’ay eſteé vn des
-        <lb/>plus dangereux Partiſans qui ait iamais paru ſur
-        <lb/>la terre.
-        <lb/>Bretonuilliers. Il ne ſeroit pas beſoin, ſi ce n’e
-        <lb rend="¬" break="no"/>ſtoit pour me confeſſer, que ie vous diſſece que
-        <lb/>iay <pb n="5"/>
-        <lb/>a
-        <lb/> ie ae o!
-        <lb/> Fse
-        <lb/>a
-        <lb/>e delei
-        <lb rend="¬" break="no"/>E aaagre
-        <lb/>lal
-        <lb/>T
-        <lb rend="¬" break="no"/>1
-        <lb/>
-        <lb rend="¬" break="no"/>s <pb n="6"/>
-        <lb/>nir.
-        <lb/>6
-        <lb/>De Luynes. Ie ſuis Commiſſaire general aux
-        <lb/>ſaiſies reelles, mais ie me ſuis touſiours ſaiſi du
-        <lb/>plus clair, &amp; du plus lquide.
-        <lb/>Houſſel. I’ay eſte premierement Commis de
-        <lb/>Rabatus, mais auſſi toſt qu’il eſt venu à tomber
-        <lb/>ie me ſuis preualu de ſon infortune, &amp; me ſuis in
-        <lb rend="¬" break="no"/>finiment enrichy a l’imitation de mon maiſtre;
-        <lb/>mais bien plus heureuſement que luy.
-        <lb/>L’Hilher. Mon frere &amp; moy, nous auons
-        <lb/>commis des vſures ſans nombre, nous eſtant aſ
-        <lb rend="¬" break="no"/>ſociez aue des per ſonnes ſans foy, ny ſans con
-        <lb rend="¬" break="no"/>lciencc comme nous.
-        <lb/>ILrdſ l’ay continué de toiſer les maiſons, &amp;
-        <lb/>a donné l’inuenion d’eſtablir le ſol pour liure,
-        <lb/>&amp; de pluſieurs autres Maltores
-        <lb/>loſſelin. l’ay tout volé les deniers du Roy, que
-        <lb/>meſme il s’eſt reneontré que le Roy n’auoit pas
-        <lb/>dquoy faire la deſpenſe pour ſa bouche meſ
-        <lb rend="¬" break="no"/>me.
-        <lb/>illetre, Ie me ſuis enrichy auec tous mes a
-        <lb rend="¬" break="no"/>ſociez, aux deſpens des Courtiers du reſſort de
-        <lb/>Bordeaux.
-        <lb/>Drouin. La reduction des Droicts eſt la prin
-        <lb rend="¬" break="no"/> cipale cauſe de mon aduantage.
-        <lb/>Forcoel. Bien que ie n’aye eſté en mon com
-        <lb rend="¬" break="no"/>mencement que Laquais;neantmoins i’ay vain
-        <lb rend="¬" break="no"/>cu tant de difficultez, que ie ſuis enfin paruenu
-        <lb/> apas aaa,a <pb n="7"/>
-        <lb/>dans la Maltote des Aydes, &amp; apres auoir volé́
-        <lb/>tout ce que i’ay pû̂, ie me ſuis acquis la Ferme de
-        <lb/>Normandie, puis la Ferme Generale, auec vn
-        <lb/>Office de Greffier au Conſeil.
-        <lb/> Morauron. De ſimple ſoldat que i’eſtois, i’ay
-        <lb/>eſté depuis employé pour les Sur-lntendans &amp;
-        <lb/>Intendans des finances qui m’ont fourny de
-        <lb/>grandes deſpenſes, a meſme les deniers du Roy.
-        <lb/>Beaur. le me ſuis meſlé de toutes ſortes d’af
-        <lb rend="¬" break="no"/>faires, &amp; par ce moyen ie me ſuis acquis de
-        <lb/>rands biens.
-        <lb/>Boudon. l’eſtois Procureur dans la Ville de
-        <lb/>Montpellier, mais eſtant ennuyé de clabauder
-        <lb/>dans le Barreau, ie mc ſuis ietté dans les traittez
-        <lb/>de Languedoc auc du Vidal, &amp; comme i’eſtois
-        <lb/>accouſt mé aux proceé́s; i’ay ietté par mes
-        <lb/>actions pluſieurs differns dans cette prouince,
-        <lb/>&amp; ay rouſiours pelché́ en eau trouble.
-        <lb/>Portier. Iay eſté cauſe du malheur du public
-        <lb/>en beaucoup de choſe, &amp; ſur tout aux Greffes,
-        <lb/>Notihications, &amp; taxes d’Aiſez
-        <lb/>Peirat. Ie me ſuis aſſocié de Demons, &amp; de
-        <lb/>pluſieurs autres, &amp; auons fait enſemble des ex
-        <lb rend="¬" break="no"/>cez ſur les taxes de Confirmation d’heredité &amp;
-        <lb/>de droict Royal, Chambre de luſtice, offices &amp;
-        <lb/>quatriennaux, taxes d’aiſez, &amp; ſur la Iluriſdiction.
-        <lb/>Bachelier. Ie me ſuis entrete nu de pluſieurs af
-        <lb rend="¬" break="no"/>faires: &amp; enfin, bien que i’euſſe beaucoup de <pb n="8"/>
-        <lb/>moyens, ie n’ay pas laiſſé de faire banqeroute à
-        <lb/>Lyon, d’vne ſomme aſſez norable; &amp; neant
-        <lb rend="¬" break="no"/>moins cette ignominie n’a pû me retenir, que
-        <lb/>ie n’aye achepté vne Charge de Payeur des Ren
-        <lb rend="¬" break="no"/>tes ſur les huict millions des Tailles, &amp; vne autre
-        <lb/>de Receueur General des Finances aà Orleans.
-        <lb/>De Combes. Ie me ſuis inſeré dans tous les
-        <lb/>Traittez qui ſe ſont faits depuis vn long-temps,
-        <lb/>tant pour l’eſtabliſſement de nouueaux droicts
-        <lb/>de Ferme, que de nouuelle creation, où i’ay
-        <lb/>tant acquis de biens, que i ’ay achepteé vne mai
-        <lb rend="¬" break="no"/>ſon qui a appartenu autrefois à vn Chancelier.
-        <lb/>Maler. Ie ne ſuis pas de bien loin de Paris; cat
-        <lb/>ie ne ſuis que de Senlis, où ie poſſedois à la veri
-        <lb rend="¬" break="no"/>té peu de choſe; mais à cette heure par le moyen
-        <lb/>des Partys, ie ſuis eſtimé l’vn des plus riches qui
-        <lb/>ſoit dans Paris.
-        <lb/>De S. André. Ie ſuis fils d’vn pauure homme
-        <lb/>Bourguignon; &amp; lors que ie ſuis venu à Paris, ie
-        <lb/>pris la Mandille, ne pouuant faire vne autre con
-        <lb rend="¬" break="no"/>dition, où ie trouuay le moyen par mon inuen
-        <lb rend="¬" break="no"/>tion de faire mille concuſſions en la ferme de
-        <lb/>droits des Aides, &amp; ſur pluſieurs autres traittez.
-        <lb/>De l Garde. Ie ne me ſuis pas mal trouue d’a
-        <lb rend="¬" break="no"/>uoir quitté ma boutique de Draperie pour em
-        <lb rend="¬" break="no"/>braſſer la Maltote ſous la faueur de Monſieur
-        <lb/>Tubœuf; que ie poſſede à cette heure, plus d’vn
-        <lb/>million d’or.
-        <lb/>Sa¬ <pb n="9"/>
-        <lb/>9
-        <lb/> Samoin. Ie ſuis d’vne pauure extraction, car
-        <lb/>mon pere eſtoit baſtelier à Aramon en Langue
-        <lb rend="¬" break="no"/>d oc. Mon premier employ fut de porter vne
-        <lb/>mandille, puis ie ſuis deuenu frippier &amp; vendeur
-        <lb/> de hardes; mais apres m’eſtre aſſocié auecque
-        <lb/>Decombes, ie ſuis arriué dans vn tel aduantage
-        <lb/>de biens, que ie me ſuis acquis la Baronie du meſ
-        <lb rend="¬" break="no"/>me lieu d’Aramon, pour la ſomme de cent mille
-        <lb/>eſcus, poſſedant par ce moyen vne des plus an
-        <lb rend="¬" break="no"/>ciennes terres de France, moy qui ne faiſois que
-        <lb/>naiſtre; Mais ie ne veux pas oublier, pour bien
-        <lb/>purger ma conſcience, qu’apres auoir falſifié vn
-        <lb/>Arreſt du Conſel, qui me donnoit la perception
-        <lb/>de quelques nouueaux droicts, ie fus ſi heureux,
-        <lb/>que i’en fus quitte pour faire amende honora
-        <lb rend="¬" break="no"/>ble.
-        <lb/>La Railliere, Quand ie fus ioint auec Mouſ
-        <lb rend="¬" break="no"/>ſeau dans la Ferme des Aydes, nous auons ¬i
-        <lb/>bien pillé, que les Rentiers de l’Hloſtel de Ville
-        <lb/>par les corruptions que nous auons faites aà d’E
-        <lb rend="¬" break="no"/>mery, qu’onleur a diuerty pour vne ſeule fois
-        <lb/>trois quartiers &amp; demy de leurs rentes: que s’il
-        <lb/>eſtoit beſoin de dire par le menu les autres trom
-        <lb rend="¬" break="no"/>peries que nous auons fait en ſuite, il faudroit
-        <lb/>vn peu trop de temps, ſeulement ie me confeſ
-        <lb rend="¬" break="no"/>ſeray pour ma part que i’ay trompé les vns &amp; les
-        <lb/>autres de douze millions de liures pour le moins.
-        <lb/>De plus eſtant Fermiers des Entrées le Vanel &amp;
-        <lb/>cC <pb n="10"/>
-        <lb/>moy, nous auons fait vn traitté́ de quinze cans
-        <lb/>mille liures de rentes ſur les entrees creées en:
-        <lb/>l’an 1é644. &amp; pour ce ſuiet nous auons taxé de Ai
-        <lb/>ſez qui nous a ſemblé le plus riche &amp; le plus pro
-        <lb rend="¬" break="no"/>pre à payer; &amp; meſme ſous de faux Roolles nous
-        <lb/>auons exerce ſur les bourgeois deParis mille vio
-        <lb rend="¬" break="no"/>lences inouyes, &amp; u’en auons pas moins fait à la
-        <lb/>campagne, &amp; tout cela contre l’Edit, qur portoit
-        <lb/>que les rentes ne pourroient eſtre aliené́es, ny
-        <lb/>miſes en traitte, n’ayant pas oublié de ioindre
-        <lb/>auec nous les principaux Partiſans de l’Eſtat,
-        <lb/>co nme d’Emery, Petit, Bordier, Galand, de
-        <lb/>l’ordeaux, &amp;c
-        <lb/>Tuleuf. Lors que ie commenç̧ay de m’inge
-        <lb rend="¬" break="no"/>1er dans la altote, i’eſtois ſcribe ſuiuant le
-        <lb/>Conſeil. Dcpuis par mon bonheur ie fus es
-        <lb rend="¬" break="no"/>lcu lntendant, où i’ay trouue la nouueauteé des
-        <lb/>prels ſur l’argent du oy, pour les veufues d’Ef
-        <lb/>fiat, Camus &amp; autres; leſquels au lieu de quator
-        <lb rend="¬" break="no"/>2e cens mille liures, qu’elles faiſoient ſemblant
-        <lb/>de mettre aux coffres du Roy, en- faiſoienr les
-        <lb/>remb ourſemens au double, ie veux dire qu’elles
-        <lb/>en rtiroient deux millions huict cens mille li
-        <lb rend="¬" break="no"/>ures, &amp; pour l’enchere de quatorze cens mille
-        <lb/>liures, l on faiſoit croire au Roy que l’on amor
-        <lb rend="¬" break="no"/>iſſoit à ſon profit cent mille liures ou enuiron.
-        <lb/>De ſorte qu’il ſe trouuoit que le Roy perdo on
-        <lb rend="¬" break="no"/>2c ens mille liures, que nous partagions enrre <pb n="11"/>
-        <lb/>11
-        <lb/>nous; mais depuis mettant de l’eau à̀ mon vin, &amp;
-        <lb/>deteſtant le Mazatin &amp; tous les monopoles qu’il
-        <lb/>auoit fomentées en France depuis qu’il a eſteé́ le
-        <lb/>Miniſtre, ie me ſuis retiré doucement pour faire
-        <lb/>penitence de tant de fraudes, &amp; d’vne infinité de
-        <lb/>crimes contre le Roy &amp; contre l’Eſtat De quoy,
-        <lb/>Meſſieurs, i’ay bien voulu me confeſſer deuant
-        <lb/>vous, pour m’en deſcharger en voſtre preſence.
-        <lb/>Iubert. Ie n’auois iamais poſſedé ſeulement
-        <lb/>deux fois mille eſcus de mon patrimoine, car
-        <lb/>mon grand pere eſtoit vn bouchcr, &amp; mainte
-        <lb rend="¬" break="no"/>nant ie ſuis dans l’employ, i’ay de ſi belles Char
-        <lb rend="¬" break="no"/>ges &amp; ſi conſiderables, i’ay de ſi belles maiſons
-        <lb/>dedans la ville &amp; aux champs, &amp; tant d’argent
-        <lb/>dans mes coffres, que i’ay fait de grandes dépen
-        <lb rend="¬" break="no"/>ſes auecque les femmes, &amp; que ie n’ay voire fait
-        <lb/>difficulté de ioüer &amp; de perdre en vne nuict ſeule
-        <lb/>la ſomme de cent ille eſeus.
-        <lb/>Biaus. I’ay eſte premierement laquais de Tu
-        <lb rend="¬" break="no"/>beuf, &amp; la premiere choſe que i’ay entrepris ont
-        <lb/>eſté les Eſtapes de la Generalité de Paris, auec vn
-        <lb/>nommé Boulay &amp; tous deux enſemble auons ¬i
-        <lb/>bien trauaillé, que nous n’auons rien payé de la
-        <lb/>fourniture des Eſtapes, &amp; par ce moye n nous en
-        <lb/>auons ruineé́ pluſieurs; Nous auons eſté aidez en
-        <lb/>cela par l’Intendant, auquel nous auons fair vn
-        <lb/>preſent de ving mille liures, afin qu’il nous fuſt <pb n="12"/>
-        <lb/>fauorable.
-        <lb/>Varin. I’ay entrepris la monnoye au moulin,
-        <lb/>&amp; par le moyen des falſifications que i’y ay faites,
-        <lb/>i’ay acquis beaucoup de richeſſes.
-        <lb/>Chaatelort. I’ay eſté fait Commis du Partiſan
-        <lb/>des Noyers, &amp; ay ſi bien plumé ſur les fortifica
-        <lb rend="¬" break="no"/>ions quil auoit la charge de faire, que ie ſuis ri
-        <lb rend="¬" break="no"/>che à cette heure de plus de cinq cens mille eſ
-        <lb rend="¬" break="no"/>CuS.
-        <lb/>Ramhouillet. l’ay eſté Fermier des cinq groſſes
-        <lb/>Fermes, dont le tiers eſt augmenté par mon ad
-        <lb rend="¬" break="no"/>miniſtration; de ſorte que i’ay acquis plus de ſix
-        <lb/>millions de liures.
-        <lb/> I’lleman. I’ay eſte l’aſſocié de Ramboü̈illet
-        <lb/>auecque mon fils; nous auons fait beaucoup de
-        <lb/>traittez contre les Controlleurs, les Conſerua
-        <lb rend="¬" break="no"/>teurs des Fermes, &amp; leurs Lieutenans, dont nous
-        <lb/>auons deuore tous les reuenus.
-        <lb/>De Launay. Ie ſuis Conſeiller au Chaſtelet, &amp;
-        <lb/>le principal aſſocié de Catalan, &amp; ſuis la ſeule
-        <lb/>ſource &amp; la cauſe de tous les maux qu’il a faits.
-        <lb/>Memeret. Brochamain &amp; beaucoup d’autres
-        <lb/>ont eſté́ mes aſſociez, &amp; auons cauſé tous enſem
-        <lb rend="¬" break="no"/>ble les retranchemens des rentes des Tailles &amp;
-        <lb/>des gages, droicts &amp; reuenus des Officiers du
-        <lb/>Taillon.
-        <lb/>Marin. dit Rigny.
-        <lb/> L <pb n="13"/>
-        <lb/>13
-        <lb/>La Picardiere, l’ay eſté Commis de Tubeuf, &amp;
-        <lb/>pauure garç̧on de Loches; Ie n’auois aucun bien
-        <lb/>de naiſſance, ny du coſteé de monpere, ny de ce
-        <lb rend="¬" break="no"/>luy de ma mere; &amp; neantmoins par les frippon
-        <lb rend="¬" break="no"/>neries &amp; corruptions de mon maiſtre, ie me ſuis
-        <lb/>aduenceé dans vne belle fortune.
-        <lb/>Boſſuel. Ie ſuis Fermier des Gabelles du Lyon
-        <lb rend="¬" break="no"/>nois &amp; du Languedocauec pluſieurs autres: l’ay
-        <lb/>conſumé de taes-tous les Officiers pendant que
-        <lb/>i’ay eſtéen charge.
-        <lb/>Guerin. Ie me ſuis meſlé du ſol pour liure, &amp; ay
-        <lb/>fait traité du Domaine auecque Beraut &amp; pluſieurs
-        <lb/>autres.
-        <lb/>Guillard. Ie me ſuis meſle de toutes les affaires
-        <lb/>&amp; ay touſiours ſi bien reûſfi que i’en ſuis dans vn
-        <lb/>aſſez bon point
-        <lb/>Le Feron. l’ay ſi bien fait que i’ay mis au bas
-        <lb/>point les rentes de l’Hoſtel de Ville, en les re
-        <lb rend="¬" break="no"/>tranchant, ce n’a pas eſteé ſans en receuoir beau
-        <lb rend="¬" break="no"/>coup de preſens; ce que i’ay ſouffert eſlre fait con
-        <lb rend="¬" break="no"/>Hre mon propre deuoir, m’y deuant oppoſer de
-        <lb/>toutes mes forces, &amp; ſans aucune confideration
-        <lb/>de l’intereſt du public, ieme ſuis laiſſé corrompre,
-        <lb/>ce qui m’a donné de tres-grandes poſſeſſions, ſans
-        <lb/>mettre en compre les cent mille eſceus qui me ſont
-        <lb/>deus par les Fermiers des Gabelles, &amp; deux mille
-        <lb/>liures par les Payeurs des Rentes des Tailles.
-        <lb/>Le Clere. Ie ſuis reſorier extraordinaire, &amp; ay <pb n="14"/>
-        <lb/>14
-        <lb/>pour compagnon d’Ofices le Page, qui ſfom
-        <lb rend="¬" break="no"/>mes tous deux perſonnes de neant; &amp; auons ſi
-        <lb/>bien fait par nos volleries, que nous auons amaſſé
-        <lb/>de grands biens,
-        <lb/> mbert. I’ay eſté Commis de Deſnoyers, &amp; ſous
-        <lb/>luy ay acquis de tres-grand moyens.
-        <lb/>Ionglas. Ie ſuis Treſorier de France dans la Ville
-        <lb/>de Montpellier, &amp; par pluſieurs traittez que i’ay
-        <lb/>faits ſur le Languedoc, ie me ſuis eſleueé dans vn
-        <lb/>aſſez bon point de bonne fortune.
-        <lb/>Muſſal. l’ay eſté pauure petit Laquais de
-        <lb/>Morin, &amp; i’ay ſibien appris les leçons que mon
-        <lb/>maiſtre m’a donnez, qu’en pillant &amp; en dérobant
-        <lb/>ie me ſuis trouué beaucoup de richeſſes.
-        <lb/>Le Groin. Nous auons eſté deux freres tous deux
-        <lb/>fils du maiſtre de la Pomme-de-pin, le plus cele
-        <lb rend="¬" break="no"/>bre Cabaret de Paris, &amp; auons ſi bien trouué à̀
-        <lb/>piller ſur la ſubſiſtance, quand elle fut eſtablie,
-        <lb/>que nous yauons acquis de grands biens, &amp; poſ
-        <lb rend="¬" break="no"/>ſedons maintenant des Charges ttes-conſide
-        <lb rend="¬" break="no"/>rables.
-        <lb/>Flaurian. Ieſuis né de la ville de Tours, &amp; lors
-        <lb/>que i’arriuay en cetce Ville, i’eſtois vn pauure gar
-        <lb rend="¬" break="no"/>con, mais à preſent ie ſuis’Fermier de la Patente
-        <lb/>de Languedoc, &amp; faiſant à l’imitation de Bon
-        <lb rend="¬" break="no"/>neau mon maiſtre, pluſieurs choſes iniuſtes, ie
-        <lb/>poſſede beaucoup de biens à preſent.
-        <lb/>Montmirot.I’ay eſteé Comnmis de Bretonuilliers, <pb n="15"/>
-        <lb/>15
-        <lb/>&amp; ay ſi bien appris de mon maiſtreà voller, que
-        <lb/>ie ne l’ay pas épargné lui-meſme, non plus que
-        <lb/>le Roy.
-        <lb/>Barbe. I’ay participé à pluſieurs traittez, auec
-        <lb/>Guenegaud, Rollet, &amp; la Place, &amp; beaucoup d’au
-        <lb rend="¬" break="no"/>tres encore, où̀ i’ay commis beaucoup d’injuſtices
-        <lb/>&amp; de rapines.
-        <lb/>Meuſnier. Lors que le ſol pour liure fut eſtably.
-        <lb/>ie deuois bien m’aſſeurer qu’il m’en viendroit
-        <lb/>beaucoup dans mes cofſres, mais ie n’ay pas outre
-        <lb/>cela laiſſe de faire encore beaucoup de traittez, qui
-        <lb/>m’ont enrichy.
-        <lb/>Launay Graué. I’ay eſte employé dans la Gene
-        <lb rend="¬" break="no"/>ralité d’Orleans pour le recouurement que i’auois
-        <lb/>pris en party, &amp; mes deſpences y ont eſteé exceſſi
-        <lb rend="¬" break="no"/>ues, car pour venir à bout de mon entrepriſe, il a
-        <lb/>eſté neceſſaire d’auoir auee moy ſix Compagnies
-        <lb/>de Fuſiliers, qui non plus que moy n’ont pas ou
-        <lb rend="¬" break="no"/>blié le pillage, &amp; ont mis à ſec toute cette belle
-        <lb/>Prouince. Ie me ſuis enſuite aſſocié aux taxes des
-        <lb/>Fermiers des Aiſez.
-        <lb/>Roſe. I’ay eſté Munitionnaire, &amp; par la dimi
-        <lb rend="¬" break="no"/>nution du party i’ay augmenté mon reuenu.
-        <lb/> anguer. l’ay eu Repas auec moy, qui a ſi bien
-        <lb/>ropu, que nousauons eſté lui &amp; moy de tous les
-        <lb/>traittez des nouueaux Offices qui ont eſté eſtablis
-        <lb/>ſur les Ports.
-        <lb/>oly. Ie ſuis le Payeur des Rentes des Aydes, &amp; <pb n="16"/>
-        <lb/>16
-        <lb/>ay eſté l’aſſocié de Barbe &amp; de Guenegaud, &amp; n’ay
-        <lb/>pas moins volle qu’eux.
-        <lb/>henoe. Il ne s’eſt point paſſé de traitré oì ie
-        <lb/>n’ayeeu quelque part, &amp; oùie n’aye attrappé.
-        <lb/>Peration. l’ay Amal auec moy Fermier general
-        <lb/>des Gabelles de Dauphiné, où il a fort bien té
-        <lb rend="¬" break="no"/>moigné qu’il aimoit aà peſcher au plat; &amp; moy ie
-        <lb/>l’ayſi bien ſecondé, que ie ne lui ay cedé en rien
-        <lb/>quant il a eſté queſtion de happer.
-        <lb/>Tabouret. Ie ſuis le Fils d’vn Frippier, ou pour
-        <lb/>dire d’vn Iuif. Ma premiere condition a eſté celle
-        <lb/>de Notaire, &amp; depuis i’ay eſteé́ fait Maltotier, &amp;
-        <lb/>1me ſuis rendu compagnon d’vn des plus inſignes
-        <lb/>Maltotiers nommeCatalan, qui s’eſt attribué auſſi
-        <lb/>bien que moy toutes lesTaes, Creations &amp; Aug
-        <lb rend="¬" break="no"/>mentations des Greffiers du Royaume. Vous
-        <lb/>pouuez ſçauoir les richeſſes que mon Aſſocié a
-        <lb/>laiſſez, &amp; veu le mariage qu’il adonné a ſa fille,
-        <lb/>qui a monteé à ſix cens mil liures contant, &amp; au
-        <lb rend="¬" break="no"/>tant apres ſa mort.
-        <lb/>Arnoul. I’ay eſteé Commis de Deſnoyers, &amp;
-        <lb/>n’ay pas mieux vallu quelui.
-        <lb/>Carelan. Ie ſuis vn Grifon des Montagnes de
-        <lb/>Dauphiné; auſſi en ay-ie apporté debons ongles,
-        <lb/>&amp; de bonnes mains. Lepremier meſtier que i’ay
-        <lb/>exercé dans Paris, a eſte celui de Laquais; Mon
-        <lb/>maiſtre, qui fut Cornuel, me recompenſa de mes
-        <lb/>ſeuicas enme donnant vne concubine qu’il auoit
-        <lb/>long¬ <pb n="17"/>
-        <lb/> 17
-        <lb/>long-temps entretenuë, &amp; auecelle il me fit pre
-        <lb rend="¬" break="no"/> ſent de tous les Offices de Sergens qui deuoient
-        <lb/>vacquer depuis le iour de mon mariage. Depuis
-        <lb/>i’ay eu entreée chez Bullion &amp; chez Tubeuf, &amp;
-        <lb/>entre tous les autres traittez que i’ay faits celui des
-        <lb/>retranchemens des gages eſt le plus inſigne. Et
-        <lb/>pour mieux couurir mes ſupercheries &amp; mes op
-        <lb rend="¬" break="no"/>preſſions, i’ay ermprunté le nom de Moyſet mon
-        <lb/>nepueu, qui s’appelle auſſi Catalan, couurant
-        <lb/>ſon propre nom par vn ſuppoſe, afin de déguiſer
-        <lb/>par ce moyen-la les pillages &amp; les volleries que
-        <lb/>i’ay exercées.
-        <lb/>2
-        <lb/>Picard. Vous ne me ſçauriez connoiſtre, ſi ie
-        <lb/>ne vous dis moy-meſme qui ie ſuis. On m’appelle
-        <lb/>veritablement le Marqus-de Danpierre,&amp; it
-        <lb/>meriee ben ce nbm, car i’en ay’ achepté le Mar
-        <lb rend="¬" break="no"/>quiſat a deniers contans. Neantmoins ie ſuis Pi
-        <lb rend="¬" break="no"/>card ſis d’vn cordoſinier, &amp; ſuis deuenu Treſorier
-        <lb/>des Parties Caſuelles, &amp; cçt’éque V eſ
-        <lb rend="¬" break="no"/>me inteſt que imoy, ſont Catelin, de Morii,
-        <lb/>Galand &amp; Camus, &amp; beaucoup d’aurres dont ie
-        <lb/>nie me ſouuiens pas, mais ie ne ſuis point obligé
-        <lb/>de dire les choſes dont i’ay pefdu la’ niemoire, à
-        <lb/>ce que diſent les Caſuites.
-        <lb/>D’Emery. Au temps que i’eſtois Intendant,
-        <lb/>Controlleur general, &amp; ſur-Intendant, i’ay receu
-        <lb/>beaucoup de preſens &amp; de penſiofis qu’on’m’a
-        <lb/>apportez &amp; offerts de tous les coſtez, ay fait <pb n="18"/>
-        <lb/>rembourcer des rentes ſous diuérs pretextes, di
-        <lb rend="¬" break="no"/>uerti &amp; deſtourneé les deniers du Roy, pour me
-        <lb/>les attribuer; &amp; i’ai ſi bien amaſſe que depurs
-        <lb/>quinze ans i’ay deſpenſé́ toutes les annees plus de
-        <lb/>trois cens mille liures, ſans compter les immen
-        <lb rend="¬" break="no"/>ſes acquiſitions que i’ai faites, &amp; les maiſons
-        <lb/>ſomptueuſes, &amp; les baux &amp; riches Palais
-        <lb/>que i’ai fait baſtir, tanten la Ville qu’aux Champs,
-        <lb/>(comme entr’autres laChevrette pres deS. Denis.)
-        <lb/>tous ornez de meubles riches &amp; precieux, a qui on
-        <lb/>ne- ſç̧auroi donner de ptrix. Chatun ſçait pour
-        <lb rend="¬" break="no"/>tant en quoy pouuoit conſiſter mon patrimoine,
-        <lb/>puis que mon pere &amp; mon frere ſont morts dans
-        <lb/>la Conciergerie pour leurs dçbtes, apres auoir
-        <lb/>fait banqueroute à leurs; ereanciers. Mon pere
-        <lb/>auoit ſi bien reü̈ſliaà m’apprendre par ſon-axein
-        <lb rend="¬" break="no"/>ple aà voller, que i’ai eu la hardieſſe de deérober
-        <lb/>iuſques dans le Cabinet du Roy, &amp; poutcela ie
-        <lb/>fus condamne à eſtre pendu, &amp; hien m’en prit
-        <lb/>que mes Iuges ſe laiſſerent aller aà l’argnt. Ie n’ay
-        <lb/>pas noantmoins laiſſé de faire amende honorable
-        <lb/>à Lion auec Particelle, come on peut voir les Ar
-        <lb rend="¬" break="no"/>reſts quiont eſteé donnez çontre moi l’anneée6i7.
-        <lb/>I’ai rencotré deux ſupoſts de mes débauchez &amp; de
-        <lb/>mes deébordemens, Petit &amp; Chabenat ſon gen
-        <lb rend="¬" break="no"/>dre, dont l’vn me ſeruit de Maquereau, &amp; auoit
-        <lb/>çhez moi la charge des preſens que l’on me faiſoit,
-        <lb/>&amp; tous deu en m’obligeant de la ſorte, onta¬ <pb n="19"/>
-        <lb/>15
-        <lb/>quis chacun plus d’vn million de liurés; le Peeit
-        <lb/>n’ayant eſté́auparauant que ſimple Procureur a
-        <lb/> Chaſtelet de Paris, &amp; Chabenat ſimple Copiſte
-        <lb/> au Conſeil.
-        <lb/>Gedoin. I’ai eſté de mon temps aſſocieé de Mar
-        <lb rend="¬" break="no"/>tineau, &amp; n’ai iamais mieux valu que lui, &amp;
-        <lb/>ne me ſuis iamais contenté de faire moi ſeul des
-        <lb/>exactions, i’yay encore inſtruit pluſieurs Com
-        <lb rend="¬" break="no"/>mis qui ont auſſi bien volleé que moi.
-        <lb/>La Bſiniere. Ma premiete fortune fut d’eſtre
-        <lb/>Laquais, d’où i’ai eſté éleué petit à̀ perit dans vne
-        <lb/>prodigieuſe fortune.
-        <lb/> Bordier. Ie ſuis fils d’vn Chandelier, &amp; i’ai ¬i
-        <lb/>bien ſceu traitter les Partis qu’il ne s’en eſt fait pas
-        <lb/> vn ou ie n’aye eſté employé. Ie m’en ſuis ſi bien
-        <lb/>trouueé, que i’en poſſede maintenant beaucoup de
-        <lb/>ſubſtance; &amp; bien que ie me ſois laiſſé aller aux
-        <lb/>grandes deſpenſes, ie n’ai pas laiſſé de marier ri
-        <lb rend="¬" break="no"/>chement mes filles, &amp; principalement la dernier0,
-        <lb/>à̀ quii’ai donné huict cens mil liures. I’ai faitéle
-        <lb rend="¬" break="no"/>uer vn logis qui m’eſt reuenu à plus de quatre cens
-        <lb/>mille liures, &amp; me ſuis acquis vne charge de huit
-        <lb/>cens mille autres, ſans mettre en compte la mai
-        <lb rend="¬" break="no"/>ſon que i’ai dans Paris, &amp; les meubles precieux
-        <lb/>qui montent eneoreà vn tres-grand prix.
-        <lb/>Demons. Ie fus premierement Commis de Gal
-        <lb rend="¬" break="no"/>land, &amp; à preſent ie ſuis Greffier du Conſeil. I’ay
-        <lb/>ptis le titre de Vieomte d’Andrezellis, ere a¬ <pb n="20"/>
-        <lb/>20
-        <lb/>eienne &amp; tres-noble, que i’ay accompagnee d’vn
-        <lb/>Ofice de quatre cents mil liures. Ce n’eſt pas tout
-        <lb/>le bien que ie poſſede, car ’ay de l’argent concent
-        <lb/>en grand nombre, des rentes bien aſſeurées,&amp; vne
-        <lb/>infinité de biens immeubles. Ce n’eſt pas toutes
-        <lb rend="¬" break="no"/>fois par quelque bon mariage quei’aytrouuê tant
-        <lb/>de biens, car ie n’ay eu pour femme que la fille
-        <lb/>d’vn Plombier, auec douze mil liures, auſfi mon
-        <lb/>pere n’eſtoit il qu’vn ouurier en ſoye demeurant à
-        <lb/>Tours.
-        <lb/>Le Camus. Ie ſuis l’enfant d’vn Notaire, &amp;
-        <lb/>neantmoins apres toutes ſortes d’excez que i’ay
-        <lb/>pratiquez pour amaſſer des richeſſes, i’ay fait ba
-        <lb rend="¬" break="no"/>ſtir vne maiſon dans Colombe, qui me reuient à
-        <lb/>plus decent mille eſcus. Iugez s’il ne faut pas que
-        <lb/>i’aye d’autres poſſeſſions pour accompagner cet
-        <lb/>ouurage.
-        <lb/>Doubler. I’ay conduit toutes les maltotes du
-        <lb/>Clergé, auec le retranchement des cinqgroſſes Fer
-        <lb rend="¬" break="no"/>mes. A quoy i’ay eu pour aſſociez, du Mas, Mar
-        <lb rend="¬" break="no"/>go, &amp; Bordier.
-        <lb/>arin. Ie ſuis ſorti d’vn Paiſan de Bourgogne,
-        <lb/>&amp; entre autres traittez que i’ay faits, eſt la ſuppre
-        <lb rend="¬" break="no"/>ſion des droits alienez fur les Tailles &amp; Gabelles,
-        <lb/>ce qui aruineé tous les Officiers du Royaume, &amp;
-        <lb/>tous les particuliers qui y pouuoient auoir in
-        <lb rend="¬" break="no"/>tereſt.
-        <lb/> Fevre, Anparauant ma fortune, ie vendois
-        <lb/>de <pb n="21"/>
-        <lb/>21
-        <lb/>de l’huilleà Melun, &amp; mon premier accommo
-        <lb rend="¬" break="no"/>dement a eſt́ par le pillage des deniers du Roi, qui
-        <lb/>venoient de l’impoſition miſe aux entrées du vin
-        <lb/>pendant le ſiege de Corbie, &amp; encore depuis par
-        <lb/>le moyen de pluſieurs autres traittez.
-        <lb/>Maillet. I’ay eſté le confident &amp; l’aſſocié de Bor
-        <lb rend="¬" break="no"/>deaux. I’ay traitteé́ du ſol pour liure, &amp; des taxes
-        <lb/>des Aiſez ſur les Tailles. l’ay eu beaucoup d’aſſo
-        <lb rend="¬" break="no"/>ciez qu’il ſeroit trop long de compter.
-        <lb/>Bautru Nogent. Ie ſuis le Couſin germain &amp;
-        <lb/>l’aſſocié de le Fevre, &amp; i’ay de plus auec moi Ca
-        <lb rend="¬" break="no"/>niuet mon beau-frere qui ne me cede en rien, ni
-        <lb/>en mauuaiſc volonte, ny en artifice.
-        <lb/>Guenegaut. l’ay eſté Commis de Cornuel Inten
-        <lb rend="¬" break="no"/>dant, &amp; maintenant ie ſuis vn des Threſoriers de
-        <lb/>France.
-        <lb/>Mauroy. Qui veut ſçauoir mon integrité. il n’a
-        <lb/>qu’a regarder Corauel lntendant, que ie me ſuis
-        <lb/>efforceé dimiter.
-        <lb/>De Bordaux. Qui voudroit dire ce que ie poſ
-        <lb rend="¬" break="no"/>ſede, &amp; les moyens dont ie me ſuis ſeruy pour de
-        <lb rend="¬" break="no"/>uenir riche, il entreprendroitvne choſe aſſez dif
-        <lb rend="¬" break="no"/>ficile, mais on peut dire que i’ay fait autrefois ban
-        <lb rend="¬" break="no"/>queroute, que i’ay entrepris beaucoup de trait
-        <lb rend="¬" break="no"/>tez.
-        <lb/>Bonneau. Ie ſuis de la ville de Tours, mon tra
-        <lb rend="¬" break="no"/>uail eſtoit en ſoye:mais pour moiie meſuis adon
-        <lb rend="¬" break="no"/>né aux maltotes, &amp; ſuis encore fermier des Gabel¬ <pb n="22"/>
-        <lb/>1
-        <lb/>le iſle deiei eienuſermlneleneie
-        <lb/>primé les fermes, depuis dix ans, qui montent à
-        <lb/>plus de vingt cinqou trente millions.
-        <lb/>Camus. Ie ſuis Controlleur des Finances, &amp;
-        <lb/>ſuis le fils de ce Camus qui nous a laiſſé́ en mou
-        <lb rend="¬" break="no"/>rant, au nombre de neuf enfans, &amp; nous à legueé
-        <lb/>à chacun quatre cens mil liures vaillant.
-        <lb/>Cornul. le ſus Threſorier extraordinaire des
-        <lb/>guerres &amp; frere de Cornuel l’lntendant, i’ai de
-        <lb/>belleterre aux champs, des rentes ſur la ville, vne
-        <lb/>infinité d’autres biens.
-        <lb/>Demery. La luſtice à tant de force qu’elle m’a
-        <lb/>fait reuenir de l’autre monde, Meſſieurs, pour
-        <lb/>vous rendre compte de ce que i’ai fait durant ma
-        <lb/>vie, qui conſiſte en pillage &amp; en volleries, &amp; ce
-        <lb/>qui eſt le pire pour moi, ie ne me ſuis iamais ca
-        <lb rend="¬" break="no"/>cheé pour les faire, &amp; ſur toute autre choſe i’ai fait
-        <lb/>rembourſer ſur les fermes du Roi, pluſieurs ren
-        <lb rend="¬" break="no"/>tes ſur les Tailles &amp; autres choſes de diuerſe nature
-        <lb/>I’ai tant chery le ſexe des femmes que i’en ai en
-        <lb rend="¬" break="no"/>richi vne infinité par des moiens illicites, par mil
-        <lb rend="¬" break="no"/>les intrigues dont ie me ſuis ſerui, i’ai d’eſtourneé
-        <lb/>des Finaaces du Roi pour mon profit plus de qua
-        <lb rend="¬" break="no"/>torze millions deliures. Mais auiourd’hui ie vou
-        <lb rend="¬" break="no"/>drois qu’il me fuſt permis d’en dire ma coulpe,
-        <lb/>corme à mes autres confreres, qui viuent en
-        <lb rend="¬" break="no"/> -¬ o
-        <lb rend="¬" break="no"/>ore. <pb n="23"/>
-        <lb/>ordior. Ie ſuis le fils du Recgeaides Tale
-        <lb/>de Paris&amp; ai fait tant de partis que ie m’en ſuis
-        <lb/>enrichi, entre autres mon gain principal eſt ſu.
-        <lb/>le Domaine.
-        <lb/>Verdier. Pauillon &amp; moi auons trouué́ bon ap
-        <lb rend="¬" break="no"/>paſt à la Ferme du conuoi de ordeaux, où nous
-        <lb/>auons attrapé de tres grandes ſommes.
-        <lb/>Marcillac. I’ai ſuiui les traces des gens de ſem
-        <lb rend="¬" break="no"/>blable forme que moi, &amp; me ſuis enrichi par tou
-        <lb rend="¬" break="no"/>tes ſortes d’iniuſtice &amp; d’iniquité.
-        <lb/>Dalnimare. Ie ſuis heritiord’vn de qui ie por
-        <lb rend="¬" break="no"/>te le nom, qui ma enrichi auſſi bien que lui au
-        <lb/>grenier à ſel.
-        <lb/>De vic. I’ai fait pluſieurs traittez, &amp; principa
-        <lb rend="¬" break="no"/>lement ſur la Prouince de Normandie.
-        <lb/>Bertaut. Celui qui a parlé le premier, a confeſ
-        <lb rend="¬" break="no"/>ſé ingenument en voſtre preſence qu’il n’i auoit
-        <lb/>point eu de Partiſans deuant lui, ni meſme de ſon
-        <lb/>temps, quel qu’il fuſt, qu’il l’euſt egalé en meſ
-        <lb rend="¬" break="no"/>chancetez, mais ne luien deplaiſe, bien que ie ne
-        <lb/>ſois pas Chancelier, Garde des Sceaux, ni premier
-        <lb/>Preſident, ie ſerois bien marri de lui ceder en ce
-        <lb rend="¬" break="no"/>la. Que s’il a fait le deuoir de bon Orateur, en pre
-        <lb rend="¬" break="no"/>parant voſtre attention à ceux qui deuoient parler
-        <lb/>apres lui, ie ne ferai pas moins à cette heure, vous
-        <lb/>faiſant reſouuenir à la fin de cette confeftion de
-        <lb/>tout ce qui a eſteé dit par les autres. Car il ſe trou
-        <lb rend="¬" break="no"/>ue dansma vie, que i’ai ſurpaſſeé́ tous les Malo¬ <pb n="24"/>
-        <lb/>224
-        <lb/>tiets qui ont iamais ntrepris de falſiler les affai
-        <lb rend="¬" break="no"/>res duRoi &amp; le maniaentde l’Eſtat Aptesdeln
-        <lb/>auoir fait outes les extorons imaginablescaprs
-        <lb/>auoir exerce ſur le Roi &amp; ſur les membres de lE
-        <lb/>ſtat toutes ſortes d’iniquinez, ie meſuis trouué
-        <lb/>dans vn haut point de bonne fort̂ne, misoe
-        <lb/>me i’ay preueu que ce qui vient de’ la fluſte;rs’en
-        <lb/>retourne en tabourin, i’ay voulu’ioüer au lus
-        <lb/>fin, &amp; pour m’exempter des recherches, tant du
-        <lb/>Roy que des autres particuliers, ie me ſuis tié
-        <lb/>pour me mettrea couuert des reſtirutions, à quoy
-        <lb/>la luſtice me pourroit contraindre. Pourcét effet,
-        <lb/>i’auois preueu des long-temps comme il nmefal
-        <lb rend="¬" break="no"/>loit agir dans mes affaires; car autant que mon
-        <lb/>nom eſtoit odieux aà chacun: le me ſuis ſerui de
-        <lb/>celui d’autrui pour faire plus aſſeurément valoir
-        <lb/>mes contracts &amp; mes traittez, oſtant par ce moyet
-        <lb/>tout pouuoir de m’en connoiſtre l’autheur. Auſf
-        <lb/>ne voyant pas les choſes humaines capables de
-        <lb/>me faire venir à iubé, on a cmployé les excoml
-        <lb rend="¬" break="no"/>munications &amp; les fulminations de l’Egliſe, qul
-        <lb/>m’ayant en quelque ſorte ébranlé́, nm’ont fait
-        <lb/>mettre de l’eau dans mon vin, &amp; recherchile
-        <lb/>moyens d’accommoder les affaires. Et defait, iag
-        <lb/>employé toute ma puiſſance&amp; celle de mes amis,
-        <lb/>pour faire en ſorte quemes creanciers ſe conten
-        <lb rend="¬" break="no"/>-aſſentde la moitié de ce que ie leur pouuois de
-        <lb/>uoir, afin de rerenir l’autre en es mains, &amp; pour
-        <lb/>taſchet <pb n="25"/>
-        <lb/>raſcher de me conſeruer pluſieurs maiſons que
-        <lb/>i’ay dans Paris, dont ily en a quatre en la ruë de la
-        <lb/>Verrerie, &amp; deux aux portes de S. Iacques &amp; de S.
-        <lb/>Michel; mais tous mes efforts ſe ſont trouuez
-        <lb/>inutiles, &amp; i’ay eſteé́ contraint de quitter la terre
-        <lb/>pout les ſens, &amp; me contenter de ce que i’ay d’aſ
-        <lb rend="¬" break="no"/>ſeuré, &amp; que ie ne laiſſeray iamais eſchapper tant
-        <lb/>que ie pourray me le conſeruer. Voila, Meſfieurs,
-        <lb/>tout ce que i’auois à vous dire touchant ma
-        <lb/>confeſſion; de ſorte que vous laiſſant le reſte
-        <lb/>penſer, ie n’ay plus qu’a dire, Mea culpa, mea
-        <lb/>cuſpa, mea mxima cuſpa, &amp;c.
-        <lb/>Ie prie Dieu, Meſſieurs, que cette Confeſſion
-        <lb/>porte coup, &amp; qu’elle perſuade ceux qui manient
-        <lb/>les deniers du Roy, &amp; ceux du public, de ne ſe
-        <lb/>laiſſer pas aller ſi fort à l’auarice &amp; au deſir de tout
-        <lb/>poſſeder, qu’ils ne regardent en quelque ſorte la
-        <lb/>raiſon &amp; leur conſcience, qui ſont les deux choſes
-        <lb/>qui nous doiuecnt conduire en toutes nos ations.
-        <lb/>Mais quoy, la conuoitiſe eſt vn venin ſi puiſſant,
-        <lb/>qu’il ſe gliſſe inſenſiblement dans nos cœurs ſans
-        <lb/>que nous nous en apperceuions; C’eſt vn ſerpent
-        <lb/>plus perſuaſif que celui qui tenta noſtre pre
-        <lb rend="¬" break="no"/>mier Pere, &amp; prncipalement lors que noſtre in
-        <lb rend="¬" break="no"/>clination nous porte à l’acquiſition des richeſſes,
-        <lb/>&amp; qu’elles offrent à nous d’elle-meſme, comme
-        <lb/>vn beau fruit qui pend à vn arbre ſemble ſe
-        <lb/>preſenter au paſſans, pour etre cueilly. En eſſe, <pb n="26"/>
-        <lb/>29
-        <lb/>voulez-vous que ie ne mente point, ieaepenſe
-        <lb/>pas qu’il y aitaucun d’eux qui ſuiuent le chemin
-        <lb/>du party, qui puiſſe conſeruer l’innocence, &amp; qui
-        <lb/>ne s’abandonnent au mal, comme ſi c’eſtoit des
-        <lb/>ames que Dieu euſt de tout temps reprouuez. En
-        <lb/>effet ſi vous auiez conſideré l’Hiſtoire Romaine,
-        <lb/>vous vous reſouuiendrez que Trajan, ce Prince ſi
-        <lb/>ſage &amp; ſi vertueux entre tous les ſoins qu’il eut de
-        <lb/>l’Empire, ilſe propoſa d’exterminer les Partis &amp;
-        <lb/>les Partiſans, &amp; meſme contre ſonordinaire bon
-        <lb rend="¬" break="no"/>té, il les fit chaſtier par des peines qui ne reſen
-        <lb rend="¬" break="no"/>toient point l’inclination naturelle qu’il auoit à
-        <lb/>la clemence &amp; aà̀ la douceur. Il les perſecuta de tout
-        <lb/>point, &amp; neantmoins il luy fut preſque impoſſi
-        <lb rend="¬" break="no"/>ble de venir à bout de les perdre, ce qui luy faiſoit
-        <lb/>perſecuter ces ſortes de gens, c’eſtoit qu’il n’auoit
-        <lb/>eſprouué pluſieurs fois, le dommage qu’ils ap
-        <lb rend="¬" break="no"/>portent à vn Eſtat où on leur permet d’auoir
-        <lb/>cours. Il ſçauoit que les Vſuriers auoient excité
-        <lb/>dans Rome des ſeditions, &amp; que le peuple chargeé
-        <lb/>de debtes s’eſtoit retiré pluſieurs fois ſur le janicu
-        <lb rend="¬" break="no"/>le, pour s’exempter de leurs tyrannies, &amp; n’auoit
-        <lb/>point voulu reuenir dans la ville, que l’on n’euſt
-        <lb/>accordé auec les Vſuriers pour les debtes, dont
-        <lb/>l’intereſt reuenoit à beaucoup plus que le pre
-        <lb rend="¬" break="no"/>ci put. Le peuple ſeroit bien redeuable à vn
-        <lb/>Prince, qui ne permettroit point les vſures, &amp;
-        <lb/>les monopoles, &amp; tour au conraire onſe doit <pb n="27"/>
-        <lb/>27
-        <lb/>formaliſer lors qu’vn Miniſtre d’Eaſouſtient
-        <lb/>de telles canailles, car c’eſt vn témoignage de
-        <lb/>la pauureté d’vn Eſtat, en tant qu’ils foulent
-        <lb/>lepeuple, &amp; qu’ils introduiſent la pauureté dans
-        <lb/>les coffres du Roy; leur deſſein n’eſtant autre que
-        <lb/>des’enrichir, &amp; d’enrichir le fauory qui les porte
-        <lb/>&amp; qui les maintient. Comment penſez- vous que
-        <lb/>l Cardinal de iehedieu ait pi ſubſiſter ſi lon
-        <lb rend="¬" break="no"/>emps auec vn ſi grandeſelat, vne maiſon ſi pom.
-        <lb/>peuſe, &amp;ſemblable à cedle d’vn Roy: N’eſt-ilpas
-        <lb/>vray que de ſon temps la France auoit deux Roys
-        <lb/>à entretenir. Tout cela ne luyvenoit que par les
-        <lb/>monopoles. Ce qui fait voir que la trop grande
-        <lb/>auhorité d’vn fauory eſt dommageablea P’Eſtat.
-        <lb/>Que n’il euſt fallu qu’il euſt pris ſes excefſiues de
-        <lb rend="¬" break="no"/>penſes immediatement dans les coſres du Roy; il
-        <lb/>n’euſt iamais eu le pouuoir ny l’effrontere de
-        <lb/>penſer ſeulement a le faire, mais nous luy ſeuion
-        <lb/>de main, ’il faut aiſi dire, pourattraper ſar le
-        <lb/>peuple, puis qu’il ne le pouuoit faire entire
-        <lb rend="¬" break="no"/>ment urle Roy, ce qui luy eſtoit neceſſaire, Le
-        <lb/>Marain qui luy a depuis ſuceedé, n’a pas oublié
-        <lb/>les mainme d’n Maiſtre ſiſçauant en e at,
-        <lb/>blen quil ſoitaſe lourdaut de ſoymeſne,
-        <lb rend="¬" break="no"/>antlanappe rmiſe, &amp; ne rouant qu’vne ſimple
-        <lb/>ene de uni naiſann eaibus aequi lrp
-        <lb/>nernieone iunn dhe ſde polarnionene
-        <lb rend="¬" break="no"/>ce ilafomente pus que ſonpredeceſeur la luai
-        <lb rend="¬" break="no"/>¬¬¬
-        <lb rend="¬" break="no"/>e ee <pb n="28"/>
-        <lb/>28
-        <lb/>leté, a el’impudence d’attaqer le Palaaa!
-        <lb/>pour luyfaire payer des impoſitions tyranniques;
-        <lb/>d’oils ont ſans doute procede les Gueres que
-        <lb/>nous auons maintenant, &amp; qui ſont en etat de
-        <lb/>perdre la France, ſi Dieu par ſa bonté́ n’y appoe
-        <lb/>bientoſt du remede. Mais c’eſt trop, Meſſiurs,
-        <lb/>pour vne ſimple Confeſſion, il eſt temps de r
-        <lb rend="¬" break="no"/>per n dnre oun e deienrnri
-        <lb/>ie vous auoueray franchement, que mes Confre
-        <lb rend="¬" break="no"/>res &amp; moy nous ne tenons pas la regle de ceux qui
-        <lb/>ſe confeſſent pour vn bon ſuiet; c’eſt vn point ne
-        <lb rend="¬" break="no"/>ceſſaire à vne bonne confeſſion d’auoir les lanes
-        <lb/>aux yeux &amp; la contrition dans le cœur, mais oss
-        <lb/>n’auons ny l’vn ny l’autre tous tant que nous
-        <lb/>ſommes, n’eſtant qu’vne formalite d’Eſtat qui
-        <lb/>nous a fait parroiſtre deuant cette celebre Aſſem
-        <lb rend="¬" break="no"/>bleée, reſſemblans à̀ ces hypocrites qui priene
-        <lb/>dans le Temple &amp; qui ne font que remuer les
-        <lb/>levres, n’ayant rien dans le cœur de ce qu’ils fon
-        <lb/>partoiſtre au dehors. Dequoy, Meſſieurs, ie vous
-        <lb/>ay bien vouluaduertir charitablement, tar il et
-        <lb/>certain que nous ſommes tous preſts de reprendre
-        <lb/>noſtre premier train, s’il faut que le Mazarin
-        <lb/>l’emporte ſur vous, à quoi vous deuez prendre
-        <lb/>gatdeſi vous deſirez voſtre bien, &amp; ſi vous recher
-        <lb rend="¬" break="no"/>chez l’auanrage des peuples qui vous ſont com
-        <lb rend="¬" break="no"/>mis.
-        <lb/>FIN. </p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_81" source="Moreau">
+					<p>Le duc de Lorraine vient à Paris</p>
+					<date when="1652-05-31">1652-05-31</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-03-23" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<pb n="8"/>
+				<pb n="9"/>
+				<pb n="10"/>
+				<pb n="11"/>
+				<pb n="12"/>
+				<pb n="13"/>
+				<pb n="14"/>
+				<pb n="15"/>
+				<pb n="16"/>
+				<pb n="17"/>
+				<pb n="18"/>
+				<pb n="19"/>
+				<pb n="20"/>
+				<pb n="21"/>
+				<pb n="22"/>
+				<pb n="23"/>
+				<pb n="24"/>
+				<pb n="25"/>
+				<pb n="26"/>
+				<pb n="27"/>
+				<pb n="28"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+LA
+        CONFESSION
+        GENERALE
+        DES PARTISANS
+        ET MALTOTIERS
+        de France.
+        RECONNVE PAR L'EXAMEN QV'ILS
+        en ont fait en leur dernière Aſſemblée du mois
+        de May dernier à Paris.
+        Reccueillie par M. I. D. L. R. vn de leur Commis.
+        A PARIS,1652.
+        
+        3
+        La Confeſion generale des Partiſans &amp; Maleoeiers de Fran
+        ce; reconnuë par l’examen qu’ils en ont fait en leur dernie
+        re Aſſemblée du mois de May dernier, à Paris.
+        Recueillie par M.I. D.L.R. vn de leur Commis.
+        LE CHANCELIER
+        MAL-vit qui ne s’amende. Ce Prouerbe eſt tres
+        veritable pour toutes ſortes de conditions
+        mais comme il n’y a rien de ſi general qui n’ait
+        ſon exception, les Mal-toticrs en ſont exceptez.
+        Auſſil Eſcriture ſaincte dit; Qu’il eſt p’us dfheci
+        le qu’vn riche entre dans le Ciel, qu’il n’eſt mal
+        aiſe qu’vn double paſſe dans le pertuis d’vne eſ
+        guille. Hé! ie vous ſupplie, Meſſieurs, y a t’l
+        quelques perſonnes au monde plus riches qu
+        nous: car nous pouuons dire, bien que ce ſot à
+        noſtre confuſion; que dés qu’vn homme a mis
+        ſeulement le pied dans la Maltote, c’eſt aſſez
+        pour luy faire acquerir des richeſſes ſans nom
+        bre, &amp; pour le mettre au milieu de toute ſorte
+        de bonne fortune. Nous aurions aſſez de ſujet
+        pour vous deſcouurir à ce propos les maximes de
+        noſtre profeſſion; mais comme nous ſçauons
+        bien que ce n’eſt pas à cette occaſion là que
+        vous nous auez aſſignez à la Chambre de Iuſti
+        ce, eſtablie pour nous faire rendre compte de
+        mos actions, &amp; des deniers que nous auons vſur
+        pez ſur le Roy &amp; ſurſon Eſſar, &amp; que vous deſi¬ 
+        rez de nous vne Confeſſion generale de nos ex
+        cez &amp; de nos iniquitez; nous ne refuſerons point
+        5
+        de vous obeir, &amp; vous reconnoiſſans pour nos
+        Iuges, ayans nos mains deſſus la ſaincte Euangi
+        le, nous iurons &amp; proreſtons tous enſemble de
+        ne dire que laverite. Nous auons employé quel
+        que temps pour ſongerà nos conſciences, car
+        c’eſt de l’eſſence d’vne bonne Confeſſion, d’eſtre
+        premeditée auparauent que de la prononcer,)
+        nous n’aurons donc pas beaucoup de peine à de
+        uelopper nos penſées, &amp; vous n’aurez, s’il veus
+        plaiſt qu’à nous eſcouter. Ie vay me confeſſer le
+        premier. Confiteor, &amp;c.
+        Moy qui commence à me confeſſer le pre
+        mier, ie ſuis ce grand Chancelier de France, qui
+        ſuis ſorty d’vn Apoticaire &amp; d’vn Procureur, les.
+        Charniers de ſainct Seuerin teſmoignent aſſez
+        mon extraction; je me ſuis ſi bien veautré́ dans
+        les Bouës de Paris, que i’en ay acquis vne infini
+        té de richeſſes, qui montent iuſques aà dix-ſept
+        cens mille liures de reuenu tous les ans. l’ay en
+        trepris toutes les ſortes de Partys qui ſe ſont pâ
+        preſenter, ſans en auoir refuſe vn ſeul. De ſorte
+        que ie puis bien dire auec toute humilité, com
+        me eſtant en confeſſion; que i’ay eſteé vn des
+        plus dangereux Partiſans qui ait iamais paru ſur
+        la terre.
+        Bretonuilliers. Il ne ſeroit pas beſoin, ſi ce n’e
+        ſtoit pour me confeſſer, que ie vous diſſece que
+        iay 
+        a
+         ie ae o!
+         Fse
+        a
+        e delei
+        E aaagre
+        lal
+        T
+        1
+        
+        s 
+        nir.
+        6
+        De Luynes. Ie ſuis Commiſſaire general aux
+        ſaiſies reelles, mais ie me ſuis touſiours ſaiſi du
+        plus clair, &amp; du plus lquide.
+        Houſſel. I’ay eſte premierement Commis de
+        Rabatus, mais auſſi toſt qu’il eſt venu à tomber
+        ie me ſuis preualu de ſon infortune, &amp; me ſuis in
+        finiment enrichy a l’imitation de mon maiſtre;
+        mais bien plus heureuſement que luy.
+        L’Hilher. Mon frere &amp; moy, nous auons
+        commis des vſures ſans nombre, nous eſtant aſ
+        ſociez aue des per ſonnes ſans foy, ny ſans con
+        lciencc comme nous.
+        ILrdſ l’ay continué de toiſer les maiſons, &amp;
+        a donné l’inuenion d’eſtablir le ſol pour liure,
+        &amp; de pluſieurs autres Maltores
+        loſſelin. l’ay tout volé les deniers du Roy, que
+        meſme il s’eſt reneontré que le Roy n’auoit pas
+        dquoy faire la deſpenſe pour ſa bouche meſ
+        me.
+        illetre, Ie me ſuis enrichy auec tous mes a
+        ſociez, aux deſpens des Courtiers du reſſort de
+        Bordeaux.
+        Drouin. La reduction des Droicts eſt la prin
+         cipale cauſe de mon aduantage.
+        Forcoel. Bien que ie n’aye eſté en mon com
+        mencement que Laquais;neantmoins i’ay vain
+        cu tant de difficultez, que ie ſuis enfin paruenu
+         apas aaa,a 
+        dans la Maltote des Aydes, &amp; apres auoir volé́
+        tout ce que i’ay pû̂, ie me ſuis acquis la Ferme de
+        Normandie, puis la Ferme Generale, auec vn
+        Office de Greffier au Conſeil.
+         Morauron. De ſimple ſoldat que i’eſtois, i’ay
+        eſté depuis employé pour les Sur-lntendans &amp;
+        Intendans des finances qui m’ont fourny de
+        grandes deſpenſes, a meſme les deniers du Roy.
+        Beaur. le me ſuis meſlé de toutes ſortes d’af
+        faires, &amp; par ce moyen ie me ſuis acquis de
+        rands biens.
+        Boudon. l’eſtois Procureur dans la Ville de
+        Montpellier, mais eſtant ennuyé de clabauder
+        dans le Barreau, ie mc ſuis ietté dans les traittez
+        de Languedoc auc du Vidal, &amp; comme i’eſtois
+        accouſt mé aux proceé́s; i’ay ietté par mes
+        actions pluſieurs differns dans cette prouince,
+        &amp; ay rouſiours pelché́ en eau trouble.
+        Portier. Iay eſté cauſe du malheur du public
+        en beaucoup de choſe, &amp; ſur tout aux Greffes,
+        Notihications, &amp; taxes d’Aiſez
+        Peirat. Ie me ſuis aſſocié de Demons, &amp; de
+        pluſieurs autres, &amp; auons fait enſemble des ex
+        cez ſur les taxes de Confirmation d’heredité &amp;
+        de droict Royal, Chambre de luſtice, offices &amp;
+        quatriennaux, taxes d’aiſez, &amp; ſur la Iluriſdiction.
+        Bachelier. Ie me ſuis entrete nu de pluſieurs af
+        faires: &amp; enfin, bien que i’euſſe beaucoup de 
+        moyens, ie n’ay pas laiſſé de faire banqeroute à
+        Lyon, d’vne ſomme aſſez norable; &amp; neant
+        moins cette ignominie n’a pû me retenir, que
+        ie n’aye achepté vne Charge de Payeur des Ren
+        tes ſur les huict millions des Tailles, &amp; vne autre
+        de Receueur General des Finances aà Orleans.
+        De Combes. Ie me ſuis inſeré dans tous les
+        Traittez qui ſe ſont faits depuis vn long-temps,
+        tant pour l’eſtabliſſement de nouueaux droicts
+        de Ferme, que de nouuelle creation, où i’ay
+        tant acquis de biens, que i ’ay achepteé vne mai
+        ſon qui a appartenu autrefois à vn Chancelier.
+        Maler. Ie ne ſuis pas de bien loin de Paris; cat
+        ie ne ſuis que de Senlis, où ie poſſedois à la veri
+        té peu de choſe; mais à cette heure par le moyen
+        des Partys, ie ſuis eſtimé l’vn des plus riches qui
+        ſoit dans Paris.
+        De S. André. Ie ſuis fils d’vn pauure homme
+        Bourguignon; &amp; lors que ie ſuis venu à Paris, ie
+        pris la Mandille, ne pouuant faire vne autre con
+        dition, où ie trouuay le moyen par mon inuen
+        tion de faire mille concuſſions en la ferme de
+        droits des Aides, &amp; ſur pluſieurs autres traittez.
+        De l Garde. Ie ne me ſuis pas mal trouue d’a
+        uoir quitté ma boutique de Draperie pour em
+        braſſer la Maltote ſous la faueur de Monſieur
+        Tubœuf; que ie poſſede à cette heure, plus d’vn
+        million d’or.
+        Sa¬ 
+        9
+         Samoin. Ie ſuis d’vne pauure extraction, car
+        mon pere eſtoit baſtelier à Aramon en Langue
+        d oc. Mon premier employ fut de porter vne
+        mandille, puis ie ſuis deuenu frippier &amp; vendeur
+         de hardes; mais apres m’eſtre aſſocié auecque
+        Decombes, ie ſuis arriué dans vn tel aduantage
+        de biens, que ie me ſuis acquis la Baronie du meſ
+        me lieu d’Aramon, pour la ſomme de cent mille
+        eſcus, poſſedant par ce moyen vne des plus an
+        ciennes terres de France, moy qui ne faiſois que
+        naiſtre; Mais ie ne veux pas oublier, pour bien
+        purger ma conſcience, qu’apres auoir falſifié vn
+        Arreſt du Conſel, qui me donnoit la perception
+        de quelques nouueaux droicts, ie fus ſi heureux,
+        que i’en fus quitte pour faire amende honora
+        ble.
+        La Railliere, Quand ie fus ioint auec Mouſ
+        ſeau dans la Ferme des Aydes, nous auons ¬i
+        bien pillé, que les Rentiers de l’Hloſtel de Ville
+        par les corruptions que nous auons faites aà d’E
+        mery, qu’onleur a diuerty pour vne ſeule fois
+        trois quartiers &amp; demy de leurs rentes: que s’il
+        eſtoit beſoin de dire par le menu les autres trom
+        peries que nous auons fait en ſuite, il faudroit
+        vn peu trop de temps, ſeulement ie me confeſ
+        ſeray pour ma part que i’ay trompé les vns &amp; les
+        autres de douze millions de liures pour le moins.
+        De plus eſtant Fermiers des Entrées le Vanel &amp;
+        cC 
+        moy, nous auons fait vn traitté́ de quinze cans
+        mille liures de rentes ſur les entrees creées en:
+        l’an 1é644. &amp; pour ce ſuiet nous auons taxé de Ai
+        ſez qui nous a ſemblé le plus riche &amp; le plus pro
+        pre à payer; &amp; meſme ſous de faux Roolles nous
+        auons exerce ſur les bourgeois deParis mille vio
+        lences inouyes, &amp; u’en auons pas moins fait à la
+        campagne, &amp; tout cela contre l’Edit, qur portoit
+        que les rentes ne pourroient eſtre aliené́es, ny
+        miſes en traitte, n’ayant pas oublié de ioindre
+        auec nous les principaux Partiſans de l’Eſtat,
+        co nme d’Emery, Petit, Bordier, Galand, de
+        l’ordeaux, &amp;c
+        Tuleuf. Lors que ie commenç̧ay de m’inge
+        1er dans la altote, i’eſtois ſcribe ſuiuant le
+        Conſeil. Dcpuis par mon bonheur ie fus es
+        lcu lntendant, où i’ay trouue la nouueauteé des
+        prels ſur l’argent du oy, pour les veufues d’Ef
+        fiat, Camus &amp; autres; leſquels au lieu de quator
+        2e cens mille liures, qu’elles faiſoient ſemblant
+        de mettre aux coffres du Roy, en- faiſoienr les
+        remb ourſemens au double, ie veux dire qu’elles
+        en rtiroient deux millions huict cens mille li
+        ures, &amp; pour l’enchere de quatorze cens mille
+        liures, l on faiſoit croire au Roy que l’on amor
+        iſſoit à ſon profit cent mille liures ou enuiron.
+        De ſorte qu’il ſe trouuoit que le Roy perdo on
+        2c ens mille liures, que nous partagions enrre 
+        11
+        nous; mais depuis mettant de l’eau à̀ mon vin, &amp;
+        deteſtant le Mazatin &amp; tous les monopoles qu’il
+        auoit fomentées en France depuis qu’il a eſteé́ le
+        Miniſtre, ie me ſuis retiré doucement pour faire
+        penitence de tant de fraudes, &amp; d’vne infinité de
+        crimes contre le Roy &amp; contre l’Eſtat De quoy,
+        Meſſieurs, i’ay bien voulu me confeſſer deuant
+        vous, pour m’en deſcharger en voſtre preſence.
+        Iubert. Ie n’auois iamais poſſedé ſeulement
+        deux fois mille eſcus de mon patrimoine, car
+        mon grand pere eſtoit vn bouchcr, &amp; mainte
+        nant ie ſuis dans l’employ, i’ay de ſi belles Char
+        ges &amp; ſi conſiderables, i’ay de ſi belles maiſons
+        dedans la ville &amp; aux champs, &amp; tant d’argent
+        dans mes coffres, que i’ay fait de grandes dépen
+        ſes auecque les femmes, &amp; que ie n’ay voire fait
+        difficulté de ioüer &amp; de perdre en vne nuict ſeule
+        la ſomme de cent ille eſeus.
+        Biaus. I’ay eſte premierement laquais de Tu
+        beuf, &amp; la premiere choſe que i’ay entrepris ont
+        eſté les Eſtapes de la Generalité de Paris, auec vn
+        nommé Boulay &amp; tous deux enſemble auons ¬i
+        bien trauaillé, que nous n’auons rien payé de la
+        fourniture des Eſtapes, &amp; par ce moye n nous en
+        auons ruineé́ pluſieurs; Nous auons eſté aidez en
+        cela par l’Intendant, auquel nous auons fair vn
+        preſent de ving mille liures, afin qu’il nous fuſt 
+        fauorable.
+        Varin. I’ay entrepris la monnoye au moulin,
+        &amp; par le moyen des falſifications que i’y ay faites,
+        i’ay acquis beaucoup de richeſſes.
+        Chaatelort. I’ay eſté fait Commis du Partiſan
+        des Noyers, &amp; ay ſi bien plumé ſur les fortifica
+        ions quil auoit la charge de faire, que ie ſuis ri
+        che à cette heure de plus de cinq cens mille eſ
+        CuS.
+        Ramhouillet. l’ay eſté Fermier des cinq groſſes
+        Fermes, dont le tiers eſt augmenté par mon ad
+        miniſtration; de ſorte que i’ay acquis plus de ſix
+        millions de liures.
+         I’lleman. I’ay eſte l’aſſocié de Ramboü̈illet
+        auecque mon fils; nous auons fait beaucoup de
+        traittez contre les Controlleurs, les Conſerua
+        teurs des Fermes, &amp; leurs Lieutenans, dont nous
+        auons deuore tous les reuenus.
+        De Launay. Ie ſuis Conſeiller au Chaſtelet, &amp;
+        le principal aſſocié de Catalan, &amp; ſuis la ſeule
+        ſource &amp; la cauſe de tous les maux qu’il a faits.
+        Memeret. Brochamain &amp; beaucoup d’autres
+        ont eſté́ mes aſſociez, &amp; auons cauſé tous enſem
+        ble les retranchemens des rentes des Tailles &amp;
+        des gages, droicts &amp; reuenus des Officiers du
+        Taillon.
+        Marin. dit Rigny.
+         L 
+        13
+        La Picardiere, l’ay eſté Commis de Tubeuf, &amp;
+        pauure garç̧on de Loches; Ie n’auois aucun bien
+        de naiſſance, ny du coſteé de monpere, ny de ce
+        luy de ma mere; &amp; neantmoins par les frippon
+        neries &amp; corruptions de mon maiſtre, ie me ſuis
+        aduenceé dans vne belle fortune.
+        Boſſuel. Ie ſuis Fermier des Gabelles du Lyon
+        nois &amp; du Languedocauec pluſieurs autres: l’ay
+        conſumé de taes-tous les Officiers pendant que
+        i’ay eſtéen charge.
+        Guerin. Ie me ſuis meſlé du ſol pour liure, &amp; ay
+        fait traité du Domaine auecque Beraut &amp; pluſieurs
+        autres.
+        Guillard. Ie me ſuis meſle de toutes les affaires
+        &amp; ay touſiours ſi bien reûſfi que i’en ſuis dans vn
+        aſſez bon point
+        Le Feron. l’ay ſi bien fait que i’ay mis au bas
+        point les rentes de l’Hoſtel de Ville, en les re
+        tranchant, ce n’a pas eſteé ſans en receuoir beau
+        coup de preſens; ce que i’ay ſouffert eſlre fait con
+        Hre mon propre deuoir, m’y deuant oppoſer de
+        toutes mes forces, &amp; ſans aucune confideration
+        de l’intereſt du public, ieme ſuis laiſſé corrompre,
+        ce qui m’a donné de tres-grandes poſſeſſions, ſans
+        mettre en compre les cent mille eſceus qui me ſont
+        deus par les Fermiers des Gabelles, &amp; deux mille
+        liures par les Payeurs des Rentes des Tailles.
+        Le Clere. Ie ſuis reſorier extraordinaire, &amp; ay 
+        14
+        pour compagnon d’Ofices le Page, qui ſfom
+        mes tous deux perſonnes de neant; &amp; auons ſi
+        bien fait par nos volleries, que nous auons amaſſé
+        de grands biens,
+         mbert. I’ay eſté Commis de Deſnoyers, &amp; ſous
+        luy ay acquis de tres-grand moyens.
+        Ionglas. Ie ſuis Treſorier de France dans la Ville
+        de Montpellier, &amp; par pluſieurs traittez que i’ay
+        faits ſur le Languedoc, ie me ſuis eſleueé dans vn
+        aſſez bon point de bonne fortune.
+        Muſſal. l’ay eſté pauure petit Laquais de
+        Morin, &amp; i’ay ſibien appris les leçons que mon
+        maiſtre m’a donnez, qu’en pillant &amp; en dérobant
+        ie me ſuis trouué beaucoup de richeſſes.
+        Le Groin. Nous auons eſté deux freres tous deux
+        fils du maiſtre de la Pomme-de-pin, le plus cele
+        bre Cabaret de Paris, &amp; auons ſi bien trouué à̀
+        piller ſur la ſubſiſtance, quand elle fut eſtablie,
+        que nous yauons acquis de grands biens, &amp; poſ
+        ſedons maintenant des Charges ttes-conſide
+        rables.
+        Flaurian. Ieſuis né de la ville de Tours, &amp; lors
+        que i’arriuay en cetce Ville, i’eſtois vn pauure gar
+        con, mais à preſent ie ſuis’Fermier de la Patente
+        de Languedoc, &amp; faiſant à l’imitation de Bon
+        neau mon maiſtre, pluſieurs choſes iniuſtes, ie
+        poſſede beaucoup de biens à preſent.
+        Montmirot.I’ay eſteé Comnmis de Bretonuilliers, 
+        15
+        &amp; ay ſi bien appris de mon maiſtreà voller, que
+        ie ne l’ay pas épargné lui-meſme, non plus que
+        le Roy.
+        Barbe. I’ay participé à pluſieurs traittez, auec
+        Guenegaud, Rollet, &amp; la Place, &amp; beaucoup d’au
+        tres encore, où̀ i’ay commis beaucoup d’injuſtices
+        &amp; de rapines.
+        Meuſnier. Lors que le ſol pour liure fut eſtably.
+        ie deuois bien m’aſſeurer qu’il m’en viendroit
+        beaucoup dans mes cofſres, mais ie n’ay pas outre
+        cela laiſſe de faire encore beaucoup de traittez, qui
+        m’ont enrichy.
+        Launay Graué. I’ay eſte employé dans la Gene
+        ralité d’Orleans pour le recouurement que i’auois
+        pris en party, &amp; mes deſpences y ont eſteé exceſſi
+        ues, car pour venir à bout de mon entrepriſe, il a
+        eſté neceſſaire d’auoir auee moy ſix Compagnies
+        de Fuſiliers, qui non plus que moy n’ont pas ou
+        blié le pillage, &amp; ont mis à ſec toute cette belle
+        Prouince. Ie me ſuis enſuite aſſocié aux taxes des
+        Fermiers des Aiſez.
+        Roſe. I’ay eſté Munitionnaire, &amp; par la dimi
+        nution du party i’ay augmenté mon reuenu.
+         anguer. l’ay eu Repas auec moy, qui a ſi bien
+        ropu, que nousauons eſté lui &amp; moy de tous les
+        traittez des nouueaux Offices qui ont eſté eſtablis
+        ſur les Ports.
+        oly. Ie ſuis le Payeur des Rentes des Aydes, &amp; 
+        16
+        ay eſté l’aſſocié de Barbe &amp; de Guenegaud, &amp; n’ay
+        pas moins volle qu’eux.
+        henoe. Il ne s’eſt point paſſé de traitré oì ie
+        n’ayeeu quelque part, &amp; oùie n’aye attrappé.
+        Peration. l’ay Amal auec moy Fermier general
+        des Gabelles de Dauphiné, où il a fort bien té
+        moigné qu’il aimoit aà peſcher au plat; &amp; moy ie
+        l’ayſi bien ſecondé, que ie ne lui ay cedé en rien
+        quant il a eſté queſtion de happer.
+        Tabouret. Ie ſuis le Fils d’vn Frippier, ou pour
+        dire d’vn Iuif. Ma premiere condition a eſté celle
+        de Notaire, &amp; depuis i’ay eſteé́ fait Maltotier, &amp;
+        1me ſuis rendu compagnon d’vn des plus inſignes
+        Maltotiers nommeCatalan, qui s’eſt attribué auſſi
+        bien que moy toutes lesTaes, Creations &amp; Aug
+        mentations des Greffiers du Royaume. Vous
+        pouuez ſçauoir les richeſſes que mon Aſſocié a
+        laiſſez, &amp; veu le mariage qu’il adonné a ſa fille,
+        qui a monteé à ſix cens mil liures contant, &amp; au
+        tant apres ſa mort.
+        Arnoul. I’ay eſteé Commis de Deſnoyers, &amp;
+        n’ay pas mieux vallu quelui.
+        Carelan. Ie ſuis vn Grifon des Montagnes de
+        Dauphiné; auſſi en ay-ie apporté debons ongles,
+        &amp; de bonnes mains. Lepremier meſtier que i’ay
+        exercé dans Paris, a eſte celui de Laquais; Mon
+        maiſtre, qui fut Cornuel, me recompenſa de mes
+        ſeuicas enme donnant vne concubine qu’il auoit
+        long¬ 
+         17
+        long-temps entretenuë, &amp; auecelle il me fit pre
+         ſent de tous les Offices de Sergens qui deuoient
+        vacquer depuis le iour de mon mariage. Depuis
+        i’ay eu entreée chez Bullion &amp; chez Tubeuf, &amp;
+        entre tous les autres traittez que i’ay faits celui des
+        retranchemens des gages eſt le plus inſigne. Et
+        pour mieux couurir mes ſupercheries &amp; mes op
+        preſſions, i’ay ermprunté le nom de Moyſet mon
+        nepueu, qui s’appelle auſſi Catalan, couurant
+        ſon propre nom par vn ſuppoſe, afin de déguiſer
+        par ce moyen-la les pillages &amp; les volleries que
+        i’ay exercées.
+        2
+        Picard. Vous ne me ſçauriez connoiſtre, ſi ie
+        ne vous dis moy-meſme qui ie ſuis. On m’appelle
+        veritablement le Marqus-de Danpierre,&amp; it
+        meriee ben ce nbm, car i’en ay’ achepté le Mar
+        quiſat a deniers contans. Neantmoins ie ſuis Pi
+        card ſis d’vn cordoſinier, &amp; ſuis deuenu Treſorier
+        des Parties Caſuelles, &amp; cçt’éque V eſ
+        me inteſt que imoy, ſont Catelin, de Morii,
+        Galand &amp; Camus, &amp; beaucoup d’aurres dont ie
+        nie me ſouuiens pas, mais ie ne ſuis point obligé
+        de dire les choſes dont i’ay pefdu la’ niemoire, à
+        ce que diſent les Caſuites.
+        D’Emery. Au temps que i’eſtois Intendant,
+        Controlleur general, &amp; ſur-Intendant, i’ay receu
+        beaucoup de preſens &amp; de penſiofis qu’on’m’a
+        apportez &amp; offerts de tous les coſtez, ay fait 
+        rembourcer des rentes ſous diuérs pretextes, di
+        uerti &amp; deſtourneé les deniers du Roy, pour me
+        les attribuer; &amp; i’ai ſi bien amaſſe que depurs
+        quinze ans i’ay deſpenſé́ toutes les annees plus de
+        trois cens mille liures, ſans compter les immen
+        ſes acquiſitions que i’ai faites, &amp; les maiſons
+        ſomptueuſes, &amp; les baux &amp; riches Palais
+        que i’ai fait baſtir, tanten la Ville qu’aux Champs,
+        (comme entr’autres laChevrette pres deS. Denis.)
+        tous ornez de meubles riches &amp; precieux, a qui on
+        ne- ſç̧auroi donner de ptrix. Chatun ſçait pour
+        tant en quoy pouuoit conſiſter mon patrimoine,
+        puis que mon pere &amp; mon frere ſont morts dans
+        la Conciergerie pour leurs dçbtes, apres auoir
+        fait banqueroute à leurs; ereanciers. Mon pere
+        auoit ſi bien reü̈ſliaà m’apprendre par ſon-axein
+        ple aà voller, que i’ai eu la hardieſſe de deérober
+        iuſques dans le Cabinet du Roy, &amp; poutcela ie
+        fus condamne à eſtre pendu, &amp; hien m’en prit
+        que mes Iuges ſe laiſſerent aller aà l’argnt. Ie n’ay
+        pas noantmoins laiſſé de faire amende honorable
+        à Lion auec Particelle, come on peut voir les Ar
+        reſts quiont eſteé donnez çontre moi l’anneée6i7.
+        I’ai rencotré deux ſupoſts de mes débauchez &amp; de
+        mes deébordemens, Petit &amp; Chabenat ſon gen
+        dre, dont l’vn me ſeruit de Maquereau, &amp; auoit
+        çhez moi la charge des preſens que l’on me faiſoit,
+        &amp; tous deu en m’obligeant de la ſorte, onta¬ 
+        15
+        quis chacun plus d’vn million de liurés; le Peeit
+        n’ayant eſté́auparauant que ſimple Procureur a
+         Chaſtelet de Paris, &amp; Chabenat ſimple Copiſte
+         au Conſeil.
+        Gedoin. I’ai eſté de mon temps aſſocieé de Mar
+        tineau, &amp; n’ai iamais mieux valu que lui, &amp;
+        ne me ſuis iamais contenté de faire moi ſeul des
+        exactions, i’yay encore inſtruit pluſieurs Com
+        mis qui ont auſſi bien volleé que moi.
+        La Bſiniere. Ma premiete fortune fut d’eſtre
+        Laquais, d’où i’ai eſté éleué petit à̀ perit dans vne
+        prodigieuſe fortune.
+         Bordier. Ie ſuis fils d’vn Chandelier, &amp; i’ai ¬i
+        bien ſceu traitter les Partis qu’il ne s’en eſt fait pas
+         vn ou ie n’aye eſté employé. Ie m’en ſuis ſi bien
+        trouueé, que i’en poſſede maintenant beaucoup de
+        ſubſtance; &amp; bien que ie me ſois laiſſé aller aux
+        grandes deſpenſes, ie n’ai pas laiſſé de marier ri
+        chement mes filles, &amp; principalement la dernier0,
+        à̀ quii’ai donné huict cens mil liures. I’ai faitéle
+        uer vn logis qui m’eſt reuenu à plus de quatre cens
+        mille liures, &amp; me ſuis acquis vne charge de huit
+        cens mille autres, ſans mettre en compte la mai
+        ſon que i’ai dans Paris, &amp; les meubles precieux
+        qui montent eneoreà vn tres-grand prix.
+        Demons. Ie fus premierement Commis de Gal
+        land, &amp; à preſent ie ſuis Greffier du Conſeil. I’ay
+        ptis le titre de Vieomte d’Andrezellis, ere a¬ 
+        20
+        eienne &amp; tres-noble, que i’ay accompagnee d’vn
+        Ofice de quatre cents mil liures. Ce n’eſt pas tout
+        le bien que ie poſſede, car ’ay de l’argent concent
+        en grand nombre, des rentes bien aſſeurées,&amp; vne
+        infinité de biens immeubles. Ce n’eſt pas toutes
+        fois par quelque bon mariage quei’aytrouuê tant
+        de biens, car ie n’ay eu pour femme que la fille
+        d’vn Plombier, auec douze mil liures, auſfi mon
+        pere n’eſtoit il qu’vn ouurier en ſoye demeurant à
+        Tours.
+        Le Camus. Ie ſuis l’enfant d’vn Notaire, &amp;
+        neantmoins apres toutes ſortes d’excez que i’ay
+        pratiquez pour amaſſer des richeſſes, i’ay fait ba
+        ſtir vne maiſon dans Colombe, qui me reuient à
+        plus decent mille eſcus. Iugez s’il ne faut pas que
+        i’aye d’autres poſſeſſions pour accompagner cet
+        ouurage.
+        Doubler. I’ay conduit toutes les maltotes du
+        Clergé, auec le retranchement des cinqgroſſes Fer
+        mes. A quoy i’ay eu pour aſſociez, du Mas, Mar
+        go, &amp; Bordier.
+        arin. Ie ſuis ſorti d’vn Paiſan de Bourgogne,
+        &amp; entre autres traittez que i’ay faits, eſt la ſuppre
+        ſion des droits alienez fur les Tailles &amp; Gabelles,
+        ce qui aruineé tous les Officiers du Royaume, &amp;
+        tous les particuliers qui y pouuoient auoir in
+        tereſt.
+         Fevre, Anparauant ma fortune, ie vendois
+        de 
+        21
+        de l’huilleà Melun, &amp; mon premier accommo
+        dement a eſt́ par le pillage des deniers du Roi, qui
+        venoient de l’impoſition miſe aux entrées du vin
+        pendant le ſiege de Corbie, &amp; encore depuis par
+        le moyen de pluſieurs autres traittez.
+        Maillet. I’ay eſté le confident &amp; l’aſſocié de Bor
+        deaux. I’ay traitteé́ du ſol pour liure, &amp; des taxes
+        des Aiſez ſur les Tailles. l’ay eu beaucoup d’aſſo
+        ciez qu’il ſeroit trop long de compter.
+        Bautru Nogent. Ie ſuis le Couſin germain &amp;
+        l’aſſocié de le Fevre, &amp; i’ay de plus auec moi Ca
+        niuet mon beau-frere qui ne me cede en rien, ni
+        en mauuaiſc volonte, ny en artifice.
+        Guenegaut. l’ay eſté Commis de Cornuel Inten
+        dant, &amp; maintenant ie ſuis vn des Threſoriers de
+        France.
+        Mauroy. Qui veut ſçauoir mon integrité. il n’a
+        qu’a regarder Corauel lntendant, que ie me ſuis
+        efforceé dimiter.
+        De Bordaux. Qui voudroit dire ce que ie poſ
+        ſede, &amp; les moyens dont ie me ſuis ſeruy pour de
+        uenir riche, il entreprendroitvne choſe aſſez dif
+        ficile, mais on peut dire que i’ay fait autrefois ban
+        queroute, que i’ay entrepris beaucoup de trait
+        tez.
+        Bonneau. Ie ſuis de la ville de Tours, mon tra
+        uail eſtoit en ſoye:mais pour moiie meſuis adon
+        né aux maltotes, &amp; ſuis encore fermier des Gabel¬ 
+        1
+        le iſle deiei eienuſermlneleneie
+        primé les fermes, depuis dix ans, qui montent à
+        plus de vingt cinqou trente millions.
+        Camus. Ie ſuis Controlleur des Finances, &amp;
+        ſuis le fils de ce Camus qui nous a laiſſé́ en mou
+        rant, au nombre de neuf enfans, &amp; nous à legueé
+        à chacun quatre cens mil liures vaillant.
+        Cornul. le ſus Threſorier extraordinaire des
+        guerres &amp; frere de Cornuel l’lntendant, i’ai de
+        belleterre aux champs, des rentes ſur la ville, vne
+        infinité d’autres biens.
+        Demery. La luſtice à tant de force qu’elle m’a
+        fait reuenir de l’autre monde, Meſſieurs, pour
+        vous rendre compte de ce que i’ai fait durant ma
+        vie, qui conſiſte en pillage &amp; en volleries, &amp; ce
+        qui eſt le pire pour moi, ie ne me ſuis iamais ca
+        cheé pour les faire, &amp; ſur toute autre choſe i’ai fait
+        rembourſer ſur les fermes du Roi, pluſieurs ren
+        tes ſur les Tailles &amp; autres choſes de diuerſe nature
+        I’ai tant chery le ſexe des femmes que i’en ai en
+        richi vne infinité par des moiens illicites, par mil
+        les intrigues dont ie me ſuis ſerui, i’ai d’eſtourneé
+        des Finaaces du Roi pour mon profit plus de qua
+        torze millions deliures. Mais auiourd’hui ie vou
+        drois qu’il me fuſt permis d’en dire ma coulpe,
+        corme à mes autres confreres, qui viuent en
+         -¬ o
+        ore. 
+        ordior. Ie ſuis le fils du Recgeaides Tale
+        de Paris&amp; ai fait tant de partis que ie m’en ſuis
+        enrichi, entre autres mon gain principal eſt ſu.
+        le Domaine.
+        Verdier. Pauillon &amp; moi auons trouué́ bon ap
+        paſt à la Ferme du conuoi de ordeaux, où nous
+        auons attrapé de tres grandes ſommes.
+        Marcillac. I’ai ſuiui les traces des gens de ſem
+        blable forme que moi, &amp; me ſuis enrichi par tou
+        tes ſortes d’iniuſtice &amp; d’iniquité.
+        Dalnimare. Ie ſuis heritiord’vn de qui ie por
+        te le nom, qui ma enrichi auſſi bien que lui au
+        grenier à ſel.
+        De vic. I’ai fait pluſieurs traittez, &amp; principa
+        lement ſur la Prouince de Normandie.
+        Bertaut. Celui qui a parlé le premier, a confeſ
+        ſé ingenument en voſtre preſence qu’il n’i auoit
+        point eu de Partiſans deuant lui, ni meſme de ſon
+        temps, quel qu’il fuſt, qu’il l’euſt egalé en meſ
+        chancetez, mais ne luien deplaiſe, bien que ie ne
+        ſois pas Chancelier, Garde des Sceaux, ni premier
+        Preſident, ie ſerois bien marri de lui ceder en ce
+        la. Que s’il a fait le deuoir de bon Orateur, en pre
+        parant voſtre attention à ceux qui deuoient parler
+        apres lui, ie ne ferai pas moins à cette heure, vous
+        faiſant reſouuenir à la fin de cette confeftion de
+        tout ce qui a eſteé dit par les autres. Car il ſe trou
+        ue dansma vie, que i’ai ſurpaſſeé́ tous les Malo¬ 
+        224
+        tiets qui ont iamais ntrepris de falſiler les affai
+        res duRoi &amp; le maniaentde l’Eſtat Aptesdeln
+        auoir fait outes les extorons imaginablescaprs
+        auoir exerce ſur le Roi &amp; ſur les membres de lE
+        ſtat toutes ſortes d’iniquinez, ie meſuis trouué
+        dans vn haut point de bonne fort̂ne, misoe
+        me i’ay preueu que ce qui vient de’ la fluſte;rs’en
+        retourne en tabourin, i’ay voulu’ioüer au lus
+        fin, &amp; pour m’exempter des recherches, tant du
+        Roy que des autres particuliers, ie me ſuis tié
+        pour me mettrea couuert des reſtirutions, à quoy
+        la luſtice me pourroit contraindre. Pourcét effet,
+        i’auois preueu des long-temps comme il nmefal
+        loit agir dans mes affaires; car autant que mon
+        nom eſtoit odieux aà chacun: le me ſuis ſerui de
+        celui d’autrui pour faire plus aſſeurément valoir
+        mes contracts &amp; mes traittez, oſtant par ce moyet
+        tout pouuoir de m’en connoiſtre l’autheur. Auſf
+        ne voyant pas les choſes humaines capables de
+        me faire venir à iubé, on a cmployé les excoml
+        munications &amp; les fulminations de l’Egliſe, qul
+        m’ayant en quelque ſorte ébranlé́, nm’ont fait
+        mettre de l’eau dans mon vin, &amp; recherchile
+        moyens d’accommoder les affaires. Et defait, iag
+        employé toute ma puiſſance&amp; celle de mes amis,
+        pour faire en ſorte quemes creanciers ſe conten
+        -aſſentde la moitié de ce que ie leur pouuois de
+        uoir, afin de rerenir l’autre en es mains, &amp; pour
+        taſchet 
+        raſcher de me conſeruer pluſieurs maiſons que
+        i’ay dans Paris, dont ily en a quatre en la ruë de la
+        Verrerie, &amp; deux aux portes de S. Iacques &amp; de S.
+        Michel; mais tous mes efforts ſe ſont trouuez
+        inutiles, &amp; i’ay eſteé́ contraint de quitter la terre
+        pout les ſens, &amp; me contenter de ce que i’ay d’aſ
+        ſeuré, &amp; que ie ne laiſſeray iamais eſchapper tant
+        que ie pourray me le conſeruer. Voila, Meſfieurs,
+        tout ce que i’auois à vous dire touchant ma
+        confeſſion; de ſorte que vous laiſſant le reſte
+        penſer, ie n’ay plus qu’a dire, Mea culpa, mea
+        cuſpa, mea mxima cuſpa, &amp;c.
+        Ie prie Dieu, Meſſieurs, que cette Confeſſion
+        porte coup, &amp; qu’elle perſuade ceux qui manient
+        les deniers du Roy, &amp; ceux du public, de ne ſe
+        laiſſer pas aller ſi fort à l’auarice &amp; au deſir de tout
+        poſſeder, qu’ils ne regardent en quelque ſorte la
+        raiſon &amp; leur conſcience, qui ſont les deux choſes
+        qui nous doiuecnt conduire en toutes nos ations.
+        Mais quoy, la conuoitiſe eſt vn venin ſi puiſſant,
+        qu’il ſe gliſſe inſenſiblement dans nos cœurs ſans
+        que nous nous en apperceuions; C’eſt vn ſerpent
+        plus perſuaſif que celui qui tenta noſtre pre
+        mier Pere, &amp; prncipalement lors que noſtre in
+        clination nous porte à l’acquiſition des richeſſes,
+        &amp; qu’elles offrent à nous d’elle-meſme, comme
+        vn beau fruit qui pend à vn arbre ſemble ſe
+        preſenter au paſſans, pour etre cueilly. En eſſe, 
+        29
+        voulez-vous que ie ne mente point, ieaepenſe
+        pas qu’il y aitaucun d’eux qui ſuiuent le chemin
+        du party, qui puiſſe conſeruer l’innocence, &amp; qui
+        ne s’abandonnent au mal, comme ſi c’eſtoit des
+        ames que Dieu euſt de tout temps reprouuez. En
+        effet ſi vous auiez conſideré l’Hiſtoire Romaine,
+        vous vous reſouuiendrez que Trajan, ce Prince ſi
+        ſage &amp; ſi vertueux entre tous les ſoins qu’il eut de
+        l’Empire, ilſe propoſa d’exterminer les Partis &amp;
+        les Partiſans, &amp; meſme contre ſonordinaire bon
+        té, il les fit chaſtier par des peines qui ne reſen
+        toient point l’inclination naturelle qu’il auoit à
+        la clemence &amp; aà̀ la douceur. Il les perſecuta de tout
+        point, &amp; neantmoins il luy fut preſque impoſſi
+        ble de venir à bout de les perdre, ce qui luy faiſoit
+        perſecuter ces ſortes de gens, c’eſtoit qu’il n’auoit
+        eſprouué pluſieurs fois, le dommage qu’ils ap
+        portent à vn Eſtat où on leur permet d’auoir
+        cours. Il ſçauoit que les Vſuriers auoient excité
+        dans Rome des ſeditions, &amp; que le peuple chargeé
+        de debtes s’eſtoit retiré pluſieurs fois ſur le janicu
+        le, pour s’exempter de leurs tyrannies, &amp; n’auoit
+        point voulu reuenir dans la ville, que l’on n’euſt
+        accordé auec les Vſuriers pour les debtes, dont
+        l’intereſt reuenoit à beaucoup plus que le pre
+        ci put. Le peuple ſeroit bien redeuable à vn
+        Prince, qui ne permettroit point les vſures, &amp;
+        les monopoles, &amp; tour au conraire onſe doit 
+        27
+        formaliſer lors qu’vn Miniſtre d’Eaſouſtient
+        de telles canailles, car c’eſt vn témoignage de
+        la pauureté d’vn Eſtat, en tant qu’ils foulent
+        lepeuple, &amp; qu’ils introduiſent la pauureté dans
+        les coffres du Roy; leur deſſein n’eſtant autre que
+        des’enrichir, &amp; d’enrichir le fauory qui les porte
+        &amp; qui les maintient. Comment penſez- vous que
+        l Cardinal de iehedieu ait pi ſubſiſter ſi lon
+        emps auec vn ſi grandeſelat, vne maiſon ſi pom.
+        peuſe, &amp;ſemblable à cedle d’vn Roy: N’eſt-ilpas
+        vray que de ſon temps la France auoit deux Roys
+        à entretenir. Tout cela ne luyvenoit que par les
+        monopoles. Ce qui fait voir que la trop grande
+        auhorité d’vn fauory eſt dommageablea P’Eſtat.
+        Que n’il euſt fallu qu’il euſt pris ſes excefſiues de
+        penſes immediatement dans les coſres du Roy; il
+        n’euſt iamais eu le pouuoir ny l’effrontere de
+        penſer ſeulement a le faire, mais nous luy ſeuion
+        de main, ’il faut aiſi dire, pourattraper ſar le
+        peuple, puis qu’il ne le pouuoit faire entire
+        ment urle Roy, ce qui luy eſtoit neceſſaire, Le
+        Marain qui luy a depuis ſuceedé, n’a pas oublié
+        les mainme d’n Maiſtre ſiſçauant en e at,
+        blen quil ſoitaſe lourdaut de ſoymeſne,
+        antlanappe rmiſe, &amp; ne rouant qu’vne ſimple
+        ene de uni naiſann eaibus aequi lrp
+        nernieone iunn dhe ſde polarnionene
+        ce ilafomente pus que ſonpredeceſeur la luai
+        ¬¬¬
+        e ee 
+        28
+        leté, a el’impudence d’attaqer le Palaaa!
+        pour luyfaire payer des impoſitions tyranniques;
+        d’oils ont ſans doute procede les Gueres que
+        nous auons maintenant, &amp; qui ſont en etat de
+        perdre la France, ſi Dieu par ſa bonté́ n’y appoe
+        bientoſt du remede. Mais c’eſt trop, Meſſiurs,
+        pour vne ſimple Confeſſion, il eſt temps de r
+        per n dnre oun e deienrnri
+        ie vous auoueray franchement, que mes Confre
+        res &amp; moy nous ne tenons pas la regle de ceux qui
+        ſe confeſſent pour vn bon ſuiet; c’eſt vn point ne
+        ceſſaire à vne bonne confeſſion d’auoir les lanes
+        aux yeux &amp; la contrition dans le cœur, mais oss
+        n’auons ny l’vn ny l’autre tous tant que nous
+        ſommes, n’eſtant qu’vne formalite d’Eſtat qui
+        nous a fait parroiſtre deuant cette celebre Aſſem
+        bleée, reſſemblans à̀ ces hypocrites qui priene
+        dans le Temple &amp; qui ne font que remuer les
+        levres, n’ayant rien dans le cœur de ce qu’ils fon
+        partoiſtre au dehors. Dequoy, Meſſieurs, ie vous
+        ay bien vouluaduertir charitablement, tar il et
+        certain que nous ſommes tous preſts de reprendre
+        noſtre premier train, s’il faut que le Mazarin
+        l’emporte ſur vous, à quoi vous deuez prendre
+        gatdeſi vous deſirez voſtre bien, &amp; ſi vous recher
+        chez l’auanrage des peuples qui vous ſont com
+        mis.
+        FIN.			</p>
+		</body>
+	</text>
 </TEI>

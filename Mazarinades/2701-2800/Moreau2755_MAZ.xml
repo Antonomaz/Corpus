@@ -1,314 +1,521 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2755_MAZ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Le philothemis , ou Contrebandeau du Parlement. Discite
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Le philothemis , ou Contrebandeau du Parlement. Discite
           justitiam moniti ; et non temnite divos.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2022-01-31">31 janvier 2022</date>
-        <availability status="restricted" n="cc-by">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz17553"/>
-          <author/>
-          <title source="Mazarine">Le Philothemis, ou Contre-bandeau du Parlement.</title>
-          <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>
-            <persName>Sans Nom</persName>
-          </publisher>
-          <date source="Mazarine" when="1649">1649</date>
-          <date source="Carrier" when="1649-04-15">mi-avril 1649</date>
-          <extent>
-            <measure unit="page" quantity="8"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="BM49754" cert="high"
-            target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49754"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2988507">Paris</settlement>
-            <institution>Bibliothèque Mazarine</institution>
-            <repository/>
-            <idno type="cote">M13209</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2022-01-31">31 janvier 2022</date>
+				<availability status="restricted" n="cc-by">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz17553"/>
+					<author/>
+					<title source="Mazarine">Le Philothemis, ou Contre-bandeau du Parlement.</title>
+					<pubPlace source="Mazarine">Sans lieu</pubPlace>
+					<publisher>
+						<persName>Sans nom</persName>
+					</publisher>
+					<date source="Mazarine" when="1649">1649</date>
+					<date source="Carrier" when="1649-04-15">mi-avril 1649</date>
+					<extent>
+						<measure unit="page" quantity="8"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="BM49754" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49754"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2988507">Paris</settlement>
+						<institution>Bibliothèque Mazarine</institution>
+						<repository/>
+						<idno type="cote">M13209</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>True</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine">D'après Armand d'Artois, reprend un texte publié en 1614 sous le titre
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine">D'après Armand d'Artois, reprend un texte publié en 1614 sous le titre
           "Le Philothemis..." (Bibliothèque Mazarine, Ms 4682-4, f. 185v). 3 états (A/B/C) : p. de
           titre "diues" (A et C) / "diuos" (B) ; p. 3 l. 6 "diuos"(A) / "diues" (B et C). Publié en
           réponse à : "Le veritable bandeau de Themis" (BM00852 et BM00853). Citation au titre :
           "Discite justitiam moniti &amp; non temnite dives." D'après Hubert Carrier, texte paru
           mi-avril 1649 (Bibliothèque Mazarine, Ms 4682-4, f. 185v).</p>
-        <p source="Moreau">2755. Philothemis(le), ou Contrebandeau du Parlement. Discite justitiam
+				<p source="Moreau">2755. Philothemis(le), ou Contrebandeau du Parlement. Discite justitiam
           moniti; et non temnite divos. (S. l., 1649), 8 pages. Ce pamphlet appartient à la
           polémique soulevée par le Véri table bandeau de Thémis, etc.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-02-15" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="9"/>
-        <lb/>LE
-        <lb/>PHILOTHEMIS
-        <lb/>OV
-        <lb/>CONTREBANDEAV
-        <lb/>DV PARLEMENT.
-        <lb/>Diſcite iuſtitiam moniti &amp; non tenmnite diues.
-        <lb/>M. DC. XLIX. <pb n="10"/>
-        <pb n="11"/>
-        <lb/>LE
-        <lb/>PHILOTHEMIS.
-        <lb/>OV
-        <lb/>CONTREBANDEAV
-        <lb/>DV PARLEMNT.
-        <lb/>Diſeite iuſtitiam moniti &amp; noetetdduos.
-        <lb/>ON nous dit que l’Aigle, apres qu’elle a eſclos
-        <lb/>Jſes peris, pour diſeerher les ſiens d’auee les ba
-        <lb rend="¬" break="no"/>ſtards, elle les preſente aux rayons du Soleil, &amp;
-        <lb/>leur fait regardex fixement la viue clarté de ce grand
-        <lb/>ſlambeau, de telle ſorte qu’elle chaſſe de ſon nid eceux
-        <lb/>ui ne la peuuent ſupporter; Si nous voulons recognoi
-        <lb rend="¬" break="no"/>ſtre dans le temps ou nous ſommes vn bon François,
-        <lb/>qui ayt vn viſage feint &amp; diſſimulé, lequel toutesfois
-        <lb/>contrefait l’honneſte homme: il en faut faire de meſ
-        <lb rend="¬" break="no"/>me, &amp; l’oppoſr au Soleil de la Iuſtice, qui de ſoneſelat
-        <lb/>confonds en meſme temps tous les meſchans, la veue
-        <lb/>deſquels eſt ropfoible pour ſouffrir vneſi viue lumie
-        <lb rend="¬" break="no"/>IE ui penetre iuſques au plus profond de leurs cœurs,
-        <lb/>eſquel eſtamt rauaillez d’vne continuele apprehen
-        <lb rend="¬" break="no"/>ſionde leurs crimes ſont ſemblables aux Chafleuu leſ
-        <lb rend="¬" break="no"/>quels ue peuuent porter la clarté d’vn beau iour; Ainſi <pb n="12"/>
-        <lb/>ces meſchans que l’on peut appeller Hiboux de mãlen
-        <lb rend="¬" break="no"/>contre haiſſent d’vne haïne mortelle la luſtice, &amp; en
-        <lb/>cette maniere tous ceux qui ont l’ame cauteriſée ſont
-        <lb/>ſeparez des bons &amp; reconnus pour tels qu’ils ſont.
-        <lb/>I! ne faut pas s’eſtonner ſi ces malheureuſes ames ſe
-        <lb/>plaiſent parmy le Trouble &amp; les confuſions, raſchant
-        <lb/>par toute ſorte de moyens de ſuffoquer &amp; d’eſteindre
-        <lb/>la force &amp; la vigueur des Loix, offuſqu le luſtre &amp; la
-        <lb/>ſplendeur des Cours Souueraines, &amp; depoſſeder la Iu
-        <lb rend="¬" break="no"/>ſtice de ſon troſne ancien; Pour à quoy plus facilement
-        <lb/>paruenir, ils s’attaquent aux principaux Miniſtres de la
-        <lb/>Iuſtice, qui ſont les Magiſtrats, qu’vn Ancien appelle,
-        <lb/>voix prlantes, leſquels eſtant hors de credit, il eſt in
-        <lb rend="¬" break="no"/>dubitable que les Loix, qui ſont les Magiſtrats muets,
-        <lb/>ne peuuent aueunement ſubſiſter.
-        <lb/>Mais au contraire les bons François vrayment ma
-        <lb rend="¬" break="no"/>gnanimes &amp; courageux, amis de l’Eſtat. jaloux du bien
-        <lb/>public, fidels &amp; immuables au ſeruice de leur Roy,ren
-        <lb rend="¬" break="no"/>dent toute ſorte d’honneur &amp; obeiſſance à cette ſinte
-        <lb/>Deeſſe Themis, laquelle nous rend agreables à Dieu,
-        <lb/>nous fait approcher de plus prés de ſa Diuinité que cho
-        <lb rend="¬" break="no"/>ſe qui ſoit au monde, &amp; rend noſtre ame toute celeſte
-        <lb/>&amp; diuine; Ceux là, diſ-ie, qui ont vne ame de puror, &amp;
-        <lb/>qui n’ont iamais ſaly leur front, chargé leunhonneur,
-        <lb/>ny terny leur gloire du blaſme d’aucun crimes, qui n’õ̃t
-        <lb/>apporté de la honte à leur ſang, &amp; de ſeandale à leur
-        <lb/>nation, embraſſent d’vne extreme affection la Iuſtice,
-        <lb/>reuerent grandement les Adminiſtrateurs d’icelle, &amp;
-        <lb/>obeiſſent entierement aà leurs commandements.
-        <lb/>L’experience pour les occaſions qui ſe preſentent
-        <lb/>maintenant deuant nos yeux donne vne preuue aſſez
-        <lb/>ſuffiſante
-        <lb/> 1
-        <lb/>P
-        <lb/> n
-        <lb/>1
-        <lb/>l <pb n="13"/>
-        <lb/>ſuffiſant de mon dire, ſans qu’il ſoit beſoin d’en recher
-        <lb rend="¬" break="no"/>cher de plus particulieres raiſons: Car ne voyons- nous
-        <lb/>pas en France, &amp; en la Ville capitale de tout le Royau
-        <lb rend="¬" break="no"/>me, &amp; meſme dans ce ſacré Temple de Themys, les
-        <lb/>plus Grands &amp;les plus vertueux Princes, aymer &amp; ho
-        <lb rend="¬" break="no"/>norer la Iuſtice ſur toutes choſes.
-        <lb/>Au contraire, ne voyons nous pas vn homme inſolét
-        <lb/>eſleué de la pouſſiere, enfant de la fortune, qui eſt en
-        <lb rend="¬" break="no"/>tré dans le Temple de l’honneur, ſans paſſer premiere
-        <lb rend="¬" break="no"/>ment dans celuy de la vertu, homme deuenu grand &amp;
-        <lb/>enrichy aux deſpens du pauure peuple, enflé comme
-        <lb/>vne ſangſuë̈ du ſang &amp; des nmoyens des pauures Subjets
-        <lb/>du Roy, lequel a oſé entreprendre contre l’authoriteé
-        <lb/>Souueraine desCours de Parlement, &amp; attenter iuſques
-        <lb/>à la perſonne meſmes des Officiers de ſa Majeſté &amp;
-        <lb/>Souuerains Magiſtrats; malice la plus ſcadaleuſe qu’on
-        <lb/>ayt iamais veu, attentat du tout eſtrange &amp; inoüy en
-        <lb/>France, meſme en temps de Paix
-        <lb/>N’eſt-il pas permis maintenant,voire meſme com
-        <lb rend="¬" break="no"/>mandé à̀ tous les François de vanger l’injure faite à la
-        <lb/>Iuſtice, qui eſt vn des premiers &amp; plus nobles membres
-        <lb/>du Corps de l’Eſtat, lequel eſtant affligé &amp; offencé, tous
-        <lb/>le reſte des membres demeureroient malades &amp; lan
-        <lb rend="¬" break="no"/>guiſſans: car ne plus ny moins que la force du corps
-        <lb/>decline à meſure que la chaleur naturelle d’iceluy va
-        <lb/> décroiſſant, ainſi la vigueur de l’Eſtat diminuë au prix
-        <lb/>que la puiſſance des Magiſtrats l’appetiſſe.
-        <lb/>Ie me ſens forcé de parler, voyant qu’on s’attaque aà
-        <lb/>’authorité Royalle en s’attaquant à̀ la luſtice, &amp; qu’on
-        <lb/>veut mettre maintenant toute la France en deſordre
-        <lb/>pendant le regne heureux de noſtre ieune Roy, ſoubs
-        <lb/>B
-        <lb/>
-        <pb n="14"/>
-        <lb/>3
-        <lb/>Je Sceptre du quel elle reſpire auiourd huy vn Eſtt pai
-        <lb rend="¬" break="no"/>ſble, plein de repos &amp; de tranquillité; Ie ne me puis
-        <lb/>fermer la bouche, lors qu’il faut parler pour l’intereſt
-        <lb/>du public, &amp;teſmoigner du moins de parolle, ſi l on ne
-        <lb/>peudren’ effeét l’affectiori que ie dos au Roy au public,
-        <lb/>&amp; à la Iuſtice, comme eſtant bon François. C’eſt le ſeul
-        <lb/>zele qui me fait dire ces parolles: Ne touche point au
-        <lb/>Roy ou à ſon authorité, ne nous fais point recheoir aux
-        <lb/>malheurs &amp; aux pleurs deſquels il n’y a pas long temps
-        <lb/>que nous ſommes ſortis &amp; retirez par latoute puiſſante
-        <lb/> main de Dieu.
-        <lb/>Nous auons aà peine eſſuyé nos larmes &amp; ſomes en
-        <lb rend="¬" break="no"/>cores moiiillez du naufrage de nos dernieres miſeres
-        <lb/>publiques, deſquelles le peuple, qui eſt(comme l’on dit;
-        <lb/>la voix de Dieu t’en attribuë la principalle cauſe. Car il
-        <lb/>eſt aiſé de le croirepar pluſieurs reſmognages; Que tu
-        <lb/>as fait tous tes efforts pournous plonger en vne Guerre
-        <lb/>Ciuille, &amp; que tu tal he de nous precipirer dans de
-        <lb/>nouueaux malheurs, ſi Dieu n errele tes mauuas del
-        <lb rend="¬" break="no"/>ſeings.
-        <lb/>Meſchant tu atraque le Roy en attaquant ſa Cour de
-        <lb/>Parlement ſa Cour des Pairs &amp; aà̀ laquelle il a re ſigné
-        <lb/>la plus grande &amp; la plus importante charge de la Cou
-        <lb rend="¬" break="no"/>ronne, qui eſt l’adminiſtration de la luſtce Souueraine,
-        <lb/>Cour tres-celebre &amp; fenommé́e, aà̀ laquelle, non ſeule
-        <lb rend="¬" break="no"/>ment les particuliers &amp; les Princes du Sang Royal de
-        <lb/>France, mais encores les Roys Eſtrangers ont deferé le
-        <lb/>lugement de leurs differends.
-        <lb/>Tu attaque le Roy en luy voulant rauir le plus beau:
-        <lb/>leuron de ſa Couronne, qui eſt ſa Iuſtice, &amp; diminuer
-        <lb/>la force &amp; l’authorité de ſon Parlement, qui luy ſert
-        <lb/>l <pb n="15"/>
-        <lb/>1
-        <lb/>s
-        <lb/>s
-        <lb/>1
-        <lb/>1
-        <lb/>comme de rempart à ſon authorité ſuprême, lequel
-        <lb/>contribuë par ſon ſoing continuel, par ſa pudeur &amp; in
-        <lb rend="¬" break="no"/>tegrité au ſalut de ſa Majeſté &amp; manutention de ſa
-        <lb/>Couronne.
-        <lb/>Tu veux troubler le repos de l’Eſtt en meſpriſant
-        <lb/>&amp; out ageant la luſtice, de laquelle depend le vray ap
-        <lb rend="¬" break="no"/>puy de la vertu &amp; la conſeruation de la Societé humai
-        <lb rend="¬" break="no"/>ne, qui eſt l’vn des principaux mots du Corps Monar
-        <lb rend="¬" break="no"/>chique, &amp; la principalle colomne d’vn Royaume ou
-        <lb/>E mpire. Et ie ne ſçaurois aſſez deteſter ta perfidie &amp;
-        <lb/>meſchanceteé, ny découurir toutes tes malices, puis que
-        <lb/>tu taſche de mettre tout en deſordre, en voulant perdre
-        <lb/>&amp; ſupprimer l’exercice de la luſtice, quieſtuſſi neceſ
-        <lb rend="¬" break="no"/>ſaire &amp; important à la conſeruation duoyaume, qu’eſt
-        <lb/>le Soleil du monde pour l’entretien de l’Vniuers.
-        <lb/>Tu as voulu rauir l’honneur &amp; l’obeiſſance deuë aux
-        <lb/>Magiſtrats &amp; à̀ tes Iuges, qui ont receu du Roy vn plein
-        <lb/> pouuoir au gouuernement de la choſe publique, &amp; tien
-        <lb rend="¬" break="no"/>nent de ſa Mjeſté la puiſſance de iuger, de l’honneur,
-        <lb/>de la vie &amp; les biens de tous ſes Subjets Car ne plus ny
-        <lb/>moins quHercules alloit par tout le monde auec ſa
-        <lb/>maſſe &amp; ſ peau de Lyon, puniſſant les voleurs &amp; exter
-        <lb rend="¬" break="no"/>minant tous ces monſtres inhumains qui rauageoient
-        <lb/>les P ouinces, de meſme leés Cours de Parlement auec
-        <lb/>vn billet de parchemin, qui ſont leur Arreſt &amp; la verge
-        <lb/>où parolle d’vnduiſſier, renuerſent &amp;exterminent ceux
-        <lb/>qui vſurpent la dominarion ſur leurs Concitoyens, de
-        <lb rend="¬" break="no"/>cidant leurs querelles particulieres &amp; appaiſans leurs
-        <lb/>ſeditions ſans faire marcher vn ſeul homme de Guerre.
-        <lb/>C’eſt pour cette raiſon qu’il a iuſtement &amp; ſaintemét
-        <lb/>eſtably e grand &amp; ſuprême Tribunal de luſtice, armé <pb n="16"/>
-        <lb/>11
-        <lb/>3
-        <lb/>&amp; authoriſe de force &amp; de puiſſance pour conſeruer les
-        <lb/>bons, chaſtier les meſchans, &amp; contenir en leur deuoir
-        <lb/>ceux qui auroient volonté de mal faire par la crainte des
-        <lb/>peines &amp; ſeuerité des Loix.
-        <lb/> Nous deuons eſperer que Dieu, qui eſt le iuſte Iuge,
-        <lb/>les punira ſelon tes demerites, &amp; que tu n’eſchapperas
-        <lb/>ſa luſtice ſi tu eſchappe celle des homes, &amp; qui ne croi
-        <lb rend="¬" break="no"/>ra que Dieu cõmence ſes chaſtimens puis qu’il t’a deſia
-        <lb/>oſte l’vſage de la raiſon au declin de ton age, lors que tu
-        <lb/>en deurois vſer plus que iamais: Car eſtant enyuré des
-        <lb/>douceurs de ta proſperité, &amp;ayant eu touſiours fortune
-        <lb/>fauorable iuſques à preſent; tu feras come vn bon cou
-        <lb rend="¬" break="no"/>reur, qui par malheur ſe laiſſe cheoir au plus pres du
-        <lb/>but de ſa carriere, Ainſi ayant eu durant toure ta vie
-        <lb/>du bon heur, &amp; par tes douces parolles, piperies &amp; ſub
-        <lb rend="¬" break="no"/>tils artifices, tu te precipiteras toy meſme à la fin au
-        <lb/>malheur, &amp; te renueſera du plus haut de la rouë où tu
-        <lb/>es monté.
-        <lb/>Les Hiſtoires ſont remplies des exéples de ceux qui
-        <lb/>ſont morts auſſi malheureuſement qu’ils ont veſcu, &amp;
-        <lb/>nous aſſeurent que Dieu, qui eſt le grand &amp; iuſte luge,
-        <lb/>retarde &amp; diſfere ſouuent le ſupplice des meſchans.
-        <lb/>Mais vous, Genereux François qui aymez noſtre Roy, &amp; par
-        <lb/>conſe quent ſesMagiſtrats &amp;officiers , qu’l a eſleú au troſne de
-        <lb/>ſa luiee pour conſeeuer la candeur des Fleuts de Lys, &amp; aſſeu.
-        <lb/>rer le repos de ſes Subets Soyez ſenmblables à cetre belle fleus
-        <lb/>qui ſe toune vers le Soleil de quel coſt́ qu’laille&amp; que voſt
-        <lb rend="¬" break="no"/>Ace tourtes vos actions s’enclinent touſiours vers ſa Majeſteé,
-        <lb/>negouſant d auete fruit que ceux de l’obenſſance &amp; dela fide
-        <lb rend="¬" break="no"/>ire &amp; que vous ayez touſours ferme en vos Cours lamour de
-        <lb/>noſire Roy &amp; de là Iuſtice, la quelle vous conduiraa l’immorra:
-        <lb/>iee deſiree, &amp; vous acquerera vne vreyegloire &amp; vn repos aſ
-        <lb rend="¬" break="no"/>ſeuré. Ainſi ſoit-il. </p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-02-15" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="9"/>
+				<pb n="10"/>
+				<pb n="11"/>
+				<pb n="12"/>
+				<pb n="13"/>
+				<pb n="14"/>
+				<pb n="15"/>
+				<pb n="16"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+LE
+        PHILOTHEMIS
+        OV
+        CONTREBANDEAV
+        DV PARLEMENT.
+        Diſcite iuſtitiam moniti &amp; non tenmnite diues.
+        M. DC. XLIX. 
+        
+        LE
+        PHILOTHEMIS.
+        OV
+        CONTREBANDEAV
+        DV PARLEMNT.
+        Diſeite iuſtitiam moniti &amp; noetetdduos.
+        ON nous dit que l’Aigle, apres qu’elle a eſclos
+        Jſes peris, pour diſeerher les ſiens d’auee les ba
+        ſtards, elle les preſente aux rayons du Soleil, &amp;
+        leur fait regardex fixement la viue clarté de ce grand
+        ſlambeau, de telle ſorte qu’elle chaſſe de ſon nid eceux
+        ui ne la peuuent ſupporter; Si nous voulons recognoi
+        ſtre dans le temps ou nous ſommes vn bon François,
+        qui ayt vn viſage feint &amp; diſſimulé, lequel toutesfois
+        contrefait l’honneſte homme: il en faut faire de meſ
+        me, &amp; l’oppoſr au Soleil de la Iuſtice, qui de ſoneſelat
+        confonds en meſme temps tous les meſchans, la veue
+        deſquels eſt ropfoible pour ſouffrir vneſi viue lumie
+        IE ui penetre iuſques au plus profond de leurs cœurs,
+        eſquel eſtamt rauaillez d’vne continuele apprehen
+        ſionde leurs crimes ſont ſemblables aux Chafleuu leſ
+        quels ue peuuent porter la clarté d’vn beau iour; Ainſi 
+        ces meſchans que l’on peut appeller Hiboux de mãlen
+        contre haiſſent d’vne haïne mortelle la luſtice, &amp; en
+        cette maniere tous ceux qui ont l’ame cauteriſée ſont
+        ſeparez des bons &amp; reconnus pour tels qu’ils ſont.
+        I! ne faut pas s’eſtonner ſi ces malheureuſes ames ſe
+        plaiſent parmy le Trouble &amp; les confuſions, raſchant
+        par toute ſorte de moyens de ſuffoquer &amp; d’eſteindre
+        la force &amp; la vigueur des Loix, offuſqu le luſtre &amp; la
+        ſplendeur des Cours Souueraines, &amp; depoſſeder la Iu
+        ſtice de ſon troſne ancien; Pour à quoy plus facilement
+        paruenir, ils s’attaquent aux principaux Miniſtres de la
+        Iuſtice, qui ſont les Magiſtrats, qu’vn Ancien appelle,
+        voix prlantes, leſquels eſtant hors de credit, il eſt in
+        dubitable que les Loix, qui ſont les Magiſtrats muets,
+        ne peuuent aueunement ſubſiſter.
+        Mais au contraire les bons François vrayment ma
+        gnanimes &amp; courageux, amis de l’Eſtat. jaloux du bien
+        public, fidels &amp; immuables au ſeruice de leur Roy,ren
+        dent toute ſorte d’honneur &amp; obeiſſance à cette ſinte
+        Deeſſe Themis, laquelle nous rend agreables à Dieu,
+        nous fait approcher de plus prés de ſa Diuinité que cho
+        ſe qui ſoit au monde, &amp; rend noſtre ame toute celeſte
+        &amp; diuine; Ceux là, diſ-ie, qui ont vne ame de puror, &amp;
+        qui n’ont iamais ſaly leur front, chargé leunhonneur,
+        ny terny leur gloire du blaſme d’aucun crimes, qui n’õ̃t
+        apporté de la honte à leur ſang, &amp; de ſeandale à leur
+        nation, embraſſent d’vne extreme affection la Iuſtice,
+        reuerent grandement les Adminiſtrateurs d’icelle, &amp;
+        obeiſſent entierement aà leurs commandements.
+        L’experience pour les occaſions qui ſe preſentent
+        maintenant deuant nos yeux donne vne preuue aſſez
+        ſuffiſante
+         1
+        P
+         n
+        1
+        l 
+        ſuffiſant de mon dire, ſans qu’il ſoit beſoin d’en recher
+        cher de plus particulieres raiſons: Car ne voyons- nous
+        pas en France, &amp; en la Ville capitale de tout le Royau
+        me, &amp; meſme dans ce ſacré Temple de Themys, les
+        plus Grands &amp;les plus vertueux Princes, aymer &amp; ho
+        norer la Iuſtice ſur toutes choſes.
+        Au contraire, ne voyons nous pas vn homme inſolét
+        eſleué de la pouſſiere, enfant de la fortune, qui eſt en
+        tré dans le Temple de l’honneur, ſans paſſer premiere
+        ment dans celuy de la vertu, homme deuenu grand &amp;
+        enrichy aux deſpens du pauure peuple, enflé comme
+        vne ſangſuë̈ du ſang &amp; des nmoyens des pauures Subjets
+        du Roy, lequel a oſé entreprendre contre l’authoriteé
+        Souueraine desCours de Parlement, &amp; attenter iuſques
+        à la perſonne meſmes des Officiers de ſa Majeſté &amp;
+        Souuerains Magiſtrats; malice la plus ſcadaleuſe qu’on
+        ayt iamais veu, attentat du tout eſtrange &amp; inoüy en
+        France, meſme en temps de Paix
+        N’eſt-il pas permis maintenant,voire meſme com
+        mandé à̀ tous les François de vanger l’injure faite à la
+        Iuſtice, qui eſt vn des premiers &amp; plus nobles membres
+        du Corps de l’Eſtat, lequel eſtant affligé &amp; offencé, tous
+        le reſte des membres demeureroient malades &amp; lan
+        guiſſans: car ne plus ny moins que la force du corps
+        decline à meſure que la chaleur naturelle d’iceluy va
+         décroiſſant, ainſi la vigueur de l’Eſtat diminuë au prix
+        que la puiſſance des Magiſtrats l’appetiſſe.
+        Ie me ſens forcé de parler, voyant qu’on s’attaque aà
+        ’authorité Royalle en s’attaquant à̀ la luſtice, &amp; qu’on
+        veut mettre maintenant toute la France en deſordre
+        pendant le regne heureux de noſtre ieune Roy, ſoubs
+        B
+        
+        
+        3
+        Je Sceptre du quel elle reſpire auiourd huy vn Eſtt pai
+        ſble, plein de repos &amp; de tranquillité; Ie ne me puis
+        fermer la bouche, lors qu’il faut parler pour l’intereſt
+        du public, &amp;teſmoigner du moins de parolle, ſi l on ne
+        peudren’ effeét l’affectiori que ie dos au Roy au public,
+        &amp; à la Iuſtice, comme eſtant bon François. C’eſt le ſeul
+        zele qui me fait dire ces parolles: Ne touche point au
+        Roy ou à ſon authorité, ne nous fais point recheoir aux
+        malheurs &amp; aux pleurs deſquels il n’y a pas long temps
+        que nous ſommes ſortis &amp; retirez par latoute puiſſante
+         main de Dieu.
+        Nous auons aà peine eſſuyé nos larmes &amp; ſomes en
+        cores moiiillez du naufrage de nos dernieres miſeres
+        publiques, deſquelles le peuple, qui eſt(comme l’on dit;
+        la voix de Dieu t’en attribuë la principalle cauſe. Car il
+        eſt aiſé de le croirepar pluſieurs reſmognages; Que tu
+        as fait tous tes efforts pournous plonger en vne Guerre
+        Ciuille, &amp; que tu tal he de nous precipirer dans de
+        nouueaux malheurs, ſi Dieu n errele tes mauuas del
+        ſeings.
+        Meſchant tu atraque le Roy en attaquant ſa Cour de
+        Parlement ſa Cour des Pairs &amp; aà̀ laquelle il a re ſigné
+        la plus grande &amp; la plus importante charge de la Cou
+        ronne, qui eſt l’adminiſtration de la luſtce Souueraine,
+        Cour tres-celebre &amp; fenommé́e, aà̀ laquelle, non ſeule
+        ment les particuliers &amp; les Princes du Sang Royal de
+        France, mais encores les Roys Eſtrangers ont deferé le
+        lugement de leurs differends.
+        Tu attaque le Roy en luy voulant rauir le plus beau:
+        leuron de ſa Couronne, qui eſt ſa Iuſtice, &amp; diminuer
+        la force &amp; l’authorité de ſon Parlement, qui luy ſert
+        l 
+        1
+        s
+        s
+        1
+        1
+        comme de rempart à ſon authorité ſuprême, lequel
+        contribuë par ſon ſoing continuel, par ſa pudeur &amp; in
+        tegrité au ſalut de ſa Majeſté &amp; manutention de ſa
+        Couronne.
+        Tu veux troubler le repos de l’Eſtt en meſpriſant
+        &amp; out ageant la luſtice, de laquelle depend le vray ap
+        puy de la vertu &amp; la conſeruation de la Societé humai
+        ne, qui eſt l’vn des principaux mots du Corps Monar
+        chique, &amp; la principalle colomne d’vn Royaume ou
+        E mpire. Et ie ne ſçaurois aſſez deteſter ta perfidie &amp;
+        meſchanceteé, ny découurir toutes tes malices, puis que
+        tu taſche de mettre tout en deſordre, en voulant perdre
+        &amp; ſupprimer l’exercice de la luſtice, quieſtuſſi neceſ
+        ſaire &amp; important à la conſeruation duoyaume, qu’eſt
+        le Soleil du monde pour l’entretien de l’Vniuers.
+        Tu as voulu rauir l’honneur &amp; l’obeiſſance deuë aux
+        Magiſtrats &amp; à̀ tes Iuges, qui ont receu du Roy vn plein
+         pouuoir au gouuernement de la choſe publique, &amp; tien
+        nent de ſa Mjeſté la puiſſance de iuger, de l’honneur,
+        de la vie &amp; les biens de tous ſes Subjets Car ne plus ny
+        moins quHercules alloit par tout le monde auec ſa
+        maſſe &amp; ſ peau de Lyon, puniſſant les voleurs &amp; exter
+        minant tous ces monſtres inhumains qui rauageoient
+        les P ouinces, de meſme leés Cours de Parlement auec
+        vn billet de parchemin, qui ſont leur Arreſt &amp; la verge
+        où parolle d’vnduiſſier, renuerſent &amp;exterminent ceux
+        qui vſurpent la dominarion ſur leurs Concitoyens, de
+        cidant leurs querelles particulieres &amp; appaiſans leurs
+        ſeditions ſans faire marcher vn ſeul homme de Guerre.
+        C’eſt pour cette raiſon qu’il a iuſtement &amp; ſaintemét
+        eſtably e grand &amp; ſuprême Tribunal de luſtice, armé 
+        11
+        3
+        &amp; authoriſe de force &amp; de puiſſance pour conſeruer les
+        bons, chaſtier les meſchans, &amp; contenir en leur deuoir
+        ceux qui auroient volonté de mal faire par la crainte des
+        peines &amp; ſeuerité des Loix.
+         Nous deuons eſperer que Dieu, qui eſt le iuſte Iuge,
+        les punira ſelon tes demerites, &amp; que tu n’eſchapperas
+        ſa luſtice ſi tu eſchappe celle des homes, &amp; qui ne croi
+        ra que Dieu cõmence ſes chaſtimens puis qu’il t’a deſia
+        oſte l’vſage de la raiſon au declin de ton age, lors que tu
+        en deurois vſer plus que iamais: Car eſtant enyuré des
+        douceurs de ta proſperité, &amp;ayant eu touſiours fortune
+        fauorable iuſques à preſent; tu feras come vn bon cou
+        reur, qui par malheur ſe laiſſe cheoir au plus pres du
+        but de ſa carriere, Ainſi ayant eu durant toure ta vie
+        du bon heur, &amp; par tes douces parolles, piperies &amp; ſub
+        tils artifices, tu te precipiteras toy meſme à la fin au
+        malheur, &amp; te renueſera du plus haut de la rouë où tu
+        es monté.
+        Les Hiſtoires ſont remplies des exéples de ceux qui
+        ſont morts auſſi malheureuſement qu’ils ont veſcu, &amp;
+        nous aſſeurent que Dieu, qui eſt le grand &amp; iuſte luge,
+        retarde &amp; diſfere ſouuent le ſupplice des meſchans.
+        Mais vous, Genereux François qui aymez noſtre Roy, &amp; par
+        conſe quent ſesMagiſtrats &amp;officiers , qu’l a eſleú au troſne de
+        ſa luiee pour conſeeuer la candeur des Fleuts de Lys, &amp; aſſeu.
+        rer le repos de ſes Subets Soyez ſenmblables à cetre belle fleus
+        qui ſe toune vers le Soleil de quel coſt́ qu’laille&amp; que voſt
+        Ace tourtes vos actions s’enclinent touſiours vers ſa Majeſteé,
+        negouſant d auete fruit que ceux de l’obenſſance &amp; dela fide
+        ire &amp; que vous ayez touſours ferme en vos Cours lamour de
+        noſire Roy &amp; de là Iuſtice, la quelle vous conduiraa l’immorra:
+        iee deſiree, &amp; vous acquerera vne vreyegloire &amp; vn repos aſ
+        ſeuré. Ainſi ſoit-il.			</p>
+		</body>
+	</text>
 </TEI>

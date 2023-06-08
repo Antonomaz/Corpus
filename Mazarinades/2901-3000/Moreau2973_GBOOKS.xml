@@ -1,501 +1,909 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2973_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Raisonnements politiques et moraux, ou l'Eschole de
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Raisonnements politiques et moraux, ou l'Eschole de
           Mazarin.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2022-10-25">25 octobre 2022</date>
-        <availability status="restricted" n="cc-by">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=dSqovZqbm3oC"/>
-          <author/>
-          <title source="Moreau">Raisonnements politiques et moraux, ou l'Eschole de
+					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2022-10-25">25 octobre 2022</date>
+				<availability status="restricted" n="cc-by">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=dSqovZqbm3oC"/>
+					<author/>
+					<title source="Moreau">Raisonnements politiques et moraux, ou l'Eschole de
             Mazarin.</title>
-          <pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>
-            <persName>Sans Nom</persName>
-          </publisher>
-          <date source="Moreau" when="1651">1651</date>
-          <extent>
-            <measure unit="page" quantity="16"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2996944">Lyon</settlement>
-            <institution>Bibliothèque municipale de Lyon</institution>
-            <repository/>
-            <idno type="cote">Rés 310614</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
+					<publisher>
+						<persName>Sans nom</persName>
+					</publisher>
+					<date source="Moreau" when="1651">1651</date>
+					<extent>
+						<measure unit="page" quantity="16"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2996944">Lyon</settlement>
+						<institution>Bibliothèque municipale de Lyon</institution>
+						<repository/>
+						<idno type="cote">Rés 310614</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>True</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">2973. Raisonnements politiques et moraux, ou l'Eschole de Mazarin. Paris,
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">2973. Raisonnements politiques et moraux, ou l'Eschole de Mazarin. Paris,
           1651 , 16 pages.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="genre">didactique</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-10-25" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>57
-        <lb/>s lo oeenurns
-        <lb/>LESCHOLE
-        <lb/>MAZARIN. <pb n="2"/>
-        <pb n="3"/>
-        <lb/>3
-        <lb/>RAISONNE MENS POLIT
-        <lb rend="¬" break="no"/> ques &amp; eMoraux, ou l’Eſchole
-        <lb/> de Mazarin.
-        <lb/>ſOv voy conſiderons nous Ieschoſs
-        <lb/> du monde, aue des yeux ſi peu dignes
-        <lb/>SQ de les regarder; des yeux ſi foibles qu’uls
-        <lb/>trouuent la lumiere inſuportable, &amp; ſifa
-        <lb rend="¬" break="no"/>-iles à tromper, ſi aiſez à ſurprendre, que
-        <lb/>ſouueut ils voyent trop &amp; multiplient leurs objets, &amp;
-        <lb/>ſouuent les diminüent &amp; les perdent entierement; ou
-        <lb/>du moinss’ils fe voyent encores, ce n’eſt pas tels qu’ils
-        <lb/>ſonn, ce n’eſt pas dansleur veritable naeure, c’eſt plû
-        <lb rend="¬" break="no"/>oſt dans de trompeuſes apparences. Que ne paſſons
-        <lb/>nous iuſques au dedans, &amp; aà la verité́ des choſes, ſans
-        <lb/>nous arreſter à leur ſurface &amp; à leur ombre? Que n’en
-        <lb rend="¬" break="no"/>rons nous iuſques dans leur œur &amp; dans leuz ſecrer,
-        <lb/>’il le faut ainſi dire, &amp; que ne taſchons nous de vain
-        <lb rend="¬" break="no"/>re les illuſioas qui nous en font faire de idicules iu
-        <lb rend="¬" break="no"/>gemens.
-        <lb/> Nous auons vû̂ &amp; nous ne verrons plus ce Maza
-        <lb rend="¬" break="no"/> u, qui v moeut aupaaant diſpoſoit quaſi de tout
-        <lb rend="¬" break="no"/> A it <pb n="4"/>
-        <lb/>4
-        <lb/>le Royaume. Tous ſes amis en verſent des larme,
-        <lb/>tous ſes ennemis en pouſſent des cris de ioye, &amp; les vns
-        <lb/>&amp; lesautres ne ſont ioyeux &amp; ne pleurent que pource
-        <lb/>qu’ils l’eſtiment miſerable. Pourquoy nous laiſſer ſur
-        <lb rend="¬" break="no"/>prendre à la premiere montre de cet accident, ſans
-        <lb/>faire aucune des reflexions dignes de l’ame raiſonna
-        <lb rend="¬" break="no"/>ble? Pourquoy ne ſera-il pas infortuneé, n’ayant ſer
-        <lb rend="¬" break="no"/>uy que d’vn faux Miniſtre pour aous perſuader, que
-        <lb/>de erompeur pout nous piper, que de ſuborneur pour
-        <lb/>nous ſeduire, de perfide en vn mot, qui de ſubeil flat
-        <lb rend="¬" break="no"/>teur s’erige en ſuperbe tyran do uos eſpits. Car n’eſt
-        <lb rend="¬" break="no"/>ce pas eſtre tyran que de vouloir nous faire obeir, de
-        <lb/>vouloir regner iuſques ſur les volontez, d’eſtablir ſon
-        <lb/>empire ſur l’entendement, &amp; de nous faire croire ce
-        <lb/>qui n’eſt pas, commes’ileſtoit?
-        <lb/> C’eſt par ces regles &amp; par ces maximes, qu’onape
-        <lb rend="¬" break="no"/>le reuers de forune, malheur, diſgrace, &amp;qu’a ba
-        <lb rend="¬" break="no"/>ptiſe de noms funeſtes &amp; lugubtes le Banniſſemenc
-        <lb/>de Mazarin, c’eſt parce que ’on ne conſidere ſe
-        <lb rend="¬" break="no"/>traicte quepar la politique, que par l’ambidoni, qae
-        <lb/>par l’auarioe, qu’on la plaint &amp; qu’on lanoAme mal
-        <lb rend="¬" break="no"/>heureuſe. On ne la trouue noire que pame qu’on la
-        <lb/>regarde dans les aueuglemens de la raiſon. la’eſt ebi
-        <lb rend="¬" break="no"/>-m. des haommes quepar ds ames qui ueſonrpasi
-        <lb rend="¬" break="no"/>-lres. Ceux qui le plaigaent ſont plus à plaindœ quz
-        <lb/>luy; &amp; ie puis dire, mais le dire veritablement,
-        <lb/>-Advn veitblli gne d’eftneſorite e leterts de lâûe &amp;
-        <lb/>ou ſucr u toplddasgiequu imailue
-        <lb/>peut eſtre plus heureux.
-        <lb/>Iamais <pb n="5"/>
-        <lb/>Iamais le el quoy qu’il ſemble irrité
-        <lb/>Ne luy fit ſentir tant de grace;
-        <lb/>Iamais il n’eſprouua de ſi grande bonté,
-        <lb/>Ny ne fut ſi flatté,
-        <lb/>Que de grand coup qui le terraſſe.
-        <lb/>Et de fait ſi nous conſiderons biea la main qui l’a
-        <lb/>renuerſé, nous ne la mettrons pas au nombre de ces
-        <lb/>mains meurtieres qui ne nous abbattent que pour
-        <lb/>nous ofter la vie: elle eſt pluſtoſt comme ces mains
-        <lb/>maternelles, quiappaiſent les crls &amp; les inquietudes de
-        <lb/>leurs enfans, en leur faiſant jouir par quelque ſorte de
-        <lb/>violence d’vne bien-heureuſe tranquillité. lleſten fui
-        <lb rend="¬" break="no"/>re, &amp; ne ſe repoſe que par neceſſiré; &amp; quoy que ſon
-        <lb/>eſprit agiſfe, quoy qu’ilſoit tout plein d’inquietudes,!
-        <lb/>quoy qu’il trauaille d’autant plus qu’il a moins d’eſpe
-        <lb rend="¬" break="no"/>rance de voir les effſets ſuaiure ſes penſées; enfin il ſe
-        <lb/>laſſera d’vne peine ſi inutile, &amp; il deuiendra tran
-        <lb rend="¬" break="no"/>quille &amp; s’arreſtera auſſi bien que le eorps.
-        <lb/>Qu’y aura-t’il alors de plus heureux que Mazarin?
-        <lb/>ſi la ſouueraine felicit́ meſme n’eſt autre choſe
-        <lb/>qu’vn aſſeuré repos. Pourquoy voulons nous qu’il
-        <lb/>ſoit plus mal-heureux qu’il n’eſtoit, &amp; qu’il deuienne
-        <lb/>miſerable aà̀ meſure qu’il s’approche de la tranquillité
-        <lb/>qui le doit rendre heureux? Pourquoy voulons nous
-        <lb/>que ce ſoit vn reuers de bonne fortune? Pourquoy le
-        <lb/>nommons nous vn triſte accident? Pour qüoy diſons
-        <lb/>nous que ſa fortune eſt déplorable &amp; trop digne de
-        <lb/>nos pleurs &amp; de nos ſoû̂pirs? Elle l’oſte du tracas des
-        <lb/>affaires d’Eſtat, de l’embarras d’vae infinité de diffe¬ <pb n="6"/>
-        <lb/>rents objets qui ſollicitoient ſes paſſions, qui ren
-        <lb rend="¬" break="no"/>doient vaine toute la fermeté de ſon ame, qui le me
-        <lb rend="¬" break="no"/> naçoient continuellement de la cheute par de con
-        <lb rend="¬" break="no"/>tinuels ébranlemens Elle l’oſte du peril apres vne in
-        <lb rend="¬" break="no"/>finité de trauerſes. Iamais pillote ne conduiſit mieus
-        <lb/>ſon vaiſſeau au port, malgré́ la tempeſte. Iamais hom
-        <lb rend="¬" break="no"/>me echapeé de naufrage n’éuita mieux l’horteur des
-        <lb/>flots eſcumans &amp; auec tant de ſeureté, qu’il conſidere
-        <lb/>les mouuemens de la Cour; ny iamais du haut d’vn
-        <lb/>rocher on ne vit auec ſi peu de danger le creux d’vn
-        <lb/>abiſme &amp; la pente d’vn precipice.
-        <lb/>C’eſt cét é́loignement bien-heureux pour luy qui
-        <lb/>l’aſſeure de la qualité de Maiſtre d’Eſchole, qui luy
-        <lb/>conſerue tiltre de Miniſtre, qui luy vaut mieux que
-        <lb/>le commandement de nos armées: C’eſt elle qui nous
-        <lb/>fait dire de luy s’il euſt eſteé dauantage en regne, que
-        <lb/>n’euſt-il point fait? C’eſt elle qui nous en donne des
-        <lb/>penſées encore plus hautes que ſes actions, &amp; qui nous
-        <lb/>le ſaiſant mettre autre au rang d’Eminence, nous fait
-        <lb/>croire que ſans elle rien ne luy pourroit reſiſter. Com
-        <lb rend="¬" break="no"/>me nous diſons de ce braue Grec, tout luy alloit ceder,
-        <lb/>ſans ce coup de vent venu du coſté de la Cour de Par
-        <lb rend="¬" break="no"/>lement de Paris, qui l’eloigne ſi bien de nous par ſes
-        <lb/>Arreſts, que nous n’auons plus rien à en apprehen
-        <lb rend="¬" break="no"/>der.
-        <lb/>Doit-on appeller cela eſtre malheureux? &amp; plû
-        <lb rend="¬" break="no"/>coſt ne faut-il pas dire que iamais la fortune (s’il faut la
-        <lb/>recognoiſtre) n’euſt tant d’adreſſe à carreſſer ſes fauo
-        <lb rend="¬" break="no"/>ris. Que c’eſt vn bon-heur pour luy d’eſtre fugitif;. <pb n="7"/>
-        <lb/>mais vn bon-heur d’vne nature extraordinaire, &amp;
-        <lb/>d’vne maniere non commune; vn bon-heur rare &amp;
-        <lb/>ſans pareil; vn bon-heur digne de celuy qui le reçoit,
-        <lb/>proportionneé au merite de celuy qui le gouſte; vn
-        <lb/>bon-heur, enfin, qu’on eſtime malheur, parce qu’il
-        <lb/>eſt extreme &amp; qu’il approche du malheur dans ſon ex
-        <lb rend="¬" break="no"/>
-        <lb rend="¬" break="no"/>tremiré: &amp; c’eſt tout dire.
-        <lb/>Il faut ſçauoir que certains Philoſophes &amp; qui n’e
-        <lb rend="¬" break="no"/>ſtoient pas des moins entendus, ont mis la ſouueraine.
-        <lb/>felicité́ dans les illuminations de l’entendement, dans
-        <lb/>la cognoiſſance habituelle des choſes naturelles &amp; ſur
-        <lb rend="¬" break="no"/>naturelles, dans la ſcience en vn mot, ou pour le mieux
-        <lb/>dire dans l’acte de cette ſcience. Et de fait, c’eſt etre
-        <lb/>tres-heureux que d’eſtre tres-content: or le conten
-        <lb rend="¬" break="no"/>tement eſt extreme en celuy duquel la ſeience eſt par
-        <lb rend="¬" break="no"/>faite; ils’enſuit donc que la ſcience ne ſç̧auroit man
-        <lb rend="¬" break="no"/>quer de bon-heur.
-        <lb/> Neſt- ce pas eſtre heureux que d’auoir penetré
-        <lb/>Dans les ſecrets de la nmature;
-        <lb/>M’eft- te pas eftre heureux que d’auoir rencontré
-        <lb/>Ce que le Ciel n’a pas montré.
-        <lb/>Mais qu’il auoit cacheé dans vne nuict obcure?
-        <lb/>Car pourquoy nous a-t’il caché ſes threſors, fi ce
-        <lb/>n’eſt à cauſe qu’il les eſtimoit trop: &amp; nous indignes
-        <lb/>d’eux, &amp; s’ils ſont ſi pleins de dignité, s’ils ſontſiri
-        <lb rend="¬" break="no"/>ches &amp; ſi beaux, quelle eſt, ou pluſtoſt quelle n’eſt
-        <lb/>point la ioye de Ieur poſſeſſion? Aueugles qui ne
-        <lb/>voyez pas, comprenez au moins, combien la cognoiſ
-        <lb rend="¬" break="no"/>ſance de ces beaux ſecrets, combien ces niches larcins <pb n="8"/>
-        <lb/>ont d’apas: combien il eſt doux en foüillant la nature,
-        <lb/>d’en tirer de ſi grands treſors.
-        <lb/>Il ne ſera plus dans l’embarras du commandement;
-        <lb/>il ne ſera plus interrompu par le tumulte d’vne armé́e,
-        <lb/>il ne penſera plus à deffendre cette Ville, ny aà̀ faire vn
-        <lb/>ſiege contre cette autre. L’Archiduc Leopold ne le
-        <lb/>forcera plus à veiller. Il ſera dans l’exercice d’vn hom
-        <lb rend="¬" break="no"/>me qui veut eſtudier.
-        <lb/>Pourquoy le plains-ne done eſprit bas de raiſon,
-        <lb/>Ta plainte eſt laſche, vaine &amp; folle;
-        <lb/>Ne recognou-t pas qu’il va tenir Eſchole,
-        <lb/> Pour y faire leçon?
-        <lb/>C’eſt-la où il apprendra s’il veut, &amp; ſans peine tout
-        <lb/>ce qu’a de plus beau la Phyſique, la Metaphyſique, &amp;
-        <lb/>la Morale; tout ce qu’a de plus ſainct la Theologie;
-        <lb/>tout ce qu’a de plus neceſſaire la Medecine; tout ce
-        <lb/>qu’a de plus iuſte la Iuriſprudence; tout ce qu’ont de
-        <lb/>plus certain les Mathemathiques: &amp; tout ce qu’a de
-        <lb/>plus haut l’Aſtrologie. Mais c’eſt-la qu’il ne ſçauroit
-        <lb/>manquer d’apprendre particulierement beaucoup de
-        <lb/>choſes qui luy ſont tres-neceſſaires, &amp; ſans la cognoiſ
-        <lb rend="¬" break="no"/>ſance &amp; l’vſage deſquelles, quel qu’il parroiſſe, il ne
-        <lb/>peut pas eſtre meſme vn homme raiſonnable.
-        <lb/>C’eſt-là que tour à loiſir il fera de belles &amp; neceſ
-        <lb rend="¬" break="no"/>ſaires reflexions ſur ſes actions paſſées, &amp; que ſe conſi
-        <lb rend="¬" break="no"/>derant malheureux, il condamnera l’imprudence qui
-        <lb/>l’a mis où il eſt, &amp; il ſe reſoudra à la prudence qu’il n’a
-        <lb/>pas eueë, &amp; qui luy euſt fait éuiter l’écueil où il a brizé.
-        <lb/>llapprendra que c’eſt elle quiconduit les actions bien
-        <lb rend="¬" break="no"/>faires; <pb n="9"/>
-        <lb/>faites; qu’elle eſt leur œil &amp; leur lumiere, &amp; que ſous
-        <lb/>elle nous ne faiſons rien que de temeraire &amp; d’indiſ
-        <lb rend="¬" break="no"/>cret. Comme le Soleil n’éclaire pas ſeulement nos
-        <lb/>yeux; mais il leur donne encor vn éclat &amp; vne beauté
-        <lb/>qu’ils n’ont point dedans les tenebres; la prudence en
-        <lb/>conduiſant nos mouuemens, leur communique la per
-        <lb rend="¬" break="no"/>fection toute entiere &amp; ſans reſerue; Ce n’eſt point
-        <lb/>vne perfection à demy &amp; qui manque de quelque
-        <lb/>circonſtance: c’eſt vne perfetion pleine, toure bel
-        <lb rend="¬" break="no"/>le, toute complete, &amp; qui ne ſouffre aucune ſorte
-        <lb/>de deffauts.
-        <lb/>Qui eſt-ce qui ne ſç̧ait pas, que pour meriter le til
-        <lb rend="¬" break="no"/>tre de parfaite, vne action doit auoir la bonté pro
-        <lb rend="¬" break="no"/>pre &amp; naturelle, qu’ello doit eſtre faite &amp; dans ſon
-        <lb/>temps &amp; dans ſon lieu? quand elle peur ſe vanter de
-        <lb/>ces trois choſes, il faut que le Cenſeur ſoit bien aſ
-        <lb rend="¬" break="no"/>pre &amp; bien critique, s’il y peut trouuer à redire, il faut
-        <lb/>que la veuë ſoit bien penetrante, ſi elle y découure
-        <lb/>quelque deffaut, &amp; qu’on la compare auec vne per
-        <lb rend="¬" break="no"/>fection bien ſublime pour y remarquer de l’imper
-        <lb rend="¬" break="no"/>fection. Or ces trois qualitez neceſſaires à la bonté
-        <lb/>d’vne action, n’eſt-ce pas la prudence qui les donne?
-        <lb/>N’eſt-ce pas elle qui iuge de ce qui eſt bon &amp; de ce
-        <lb/>qui eſt mauuais? N’eſt-ce pas elle qui nous dit que
-        <lb/>c’eſt vne folie de brûler le Temple de Diane pour fai
-        <lb rend="¬" break="no"/>re patler de ſoy; N’eſt-ce pas elle qui nous aſſeure qu’il
-        <lb/>faut combatre contre cet Ennemy à force d’eſprit
-        <lb/>&amp; de bras? N’eſt-ce pas elle qui nous auertit qu’il y
-        <lb/>peut auoir vn ſerpent ſous cette fleur, &amp; dedans ce
-        <lb/> C <pb n="10"/>
-        <lb/>10
-        <lb/>bois vne embuſcade, &amp; quil ne faut ny eueillir l’vne,
-        <lb/>ny s’approcher de l’autre C’eſt ainſi qu’elle forme la
-        <lb/>bonté des deſſeins, &amp; qu’elle en ordonne les execu
-        <lb rend="¬" break="no"/>tions aux endroits &amp; aux heures les plus propres. L’a
-        <lb rend="¬" break="no"/>ction, dit-elle, ſeroit bonne de combatre cet Enne
-        <lb rend="¬" break="no"/>my, d’entrer dedans ce bois, de cueillir cette impe
-        <lb rend="¬" break="no"/>riale; mais ce ne doit pas eſtre à cette heure: il y a
-        <lb/>plus de danger à l’entreprendre, que de gloire &amp; de
-        <lb/>plaiſir à l’executer. Elle ſçait bien qu’il faut joiüir du
-        <lb/>repos apres la victoire: mais elle ſç̧ait auſſi que ce n’eſt
-        <lb/>pas meſme choſe de toutes ſortes de victoires, &amp; qu’A
-        <lb rend="¬" break="no"/>nibal ſe repoſa mal à propos apres la deffaite de Can
-        <lb rend="¬" break="no"/>nes, quand il pouuoit prendre Rome en pourſuiuant
-        <lb/>les Romains vaincus, quoy que ce repos ſoit legitime
-        <lb/>&amp; neceſſaire, il n’eſtoit ny le lieu ny le temps de ſere
-        <lb rend="¬" break="no"/>poſer; auſſi ne puſt-elle s’empeſcher de luy en faire
-        <lb/>vn ſeuere reproche par la bouche de Maharbal Mai
-        <lb rend="¬" break="no"/>ſtre de ſa Caualerie, &amp; de luy dire, Hannibal, tu ſçais
-        <lb/>bien vaincre; mais tu ne ſcais pas vſer de ta victoire.
-        <lb/>Ie n’ay garde de vouloir particulariſer toutes ces
-        <lb/>acCtions, il ſuſfit ſeulement d’eſtablir ces maximes; cs
-        <lb/>ſont celles que Mazarin apprendra dedans ſon repos;
-        <lb/>c’eſt par leur cognoiſſance qu’il verra qu’elle eſt en
-        <lb rend="¬" break="no"/>tierement neceſſaire aux actions des Miniſtres d’Eſtar.
-        <lb/>Les lumieres qu’il en receura, luy feront voir que
-        <lb/>l’imprudence de l’infidelité́ eſt ruïneuſe autant qu’elle
-        <lb/>eſt criminelle, il en apprendra que la flatterie des
-        <lb/>grands deſſeins qu’elle forme, eſt vne flatterie aueu
-        <lb rend="¬" break="no"/>glante qui nous conduit auec fierté &amp; auec plaiſir dans <pb
-          n="11"/>
-        <lb/>1i
-        <lb/>le precipice parce qu’elle nous y conduit ſans nous le
-        <lb/>découurir, &amp; qu’elle nous amuſe à de belles appafan
-        <lb rend="¬" break="no"/>ces &amp; à de pompeuſes promeſſes.
-        <lb/>Faiſant reflexion ſur ce qui luy en eſt arriué, ſa
-        <lb/>memoire luy en preſentera vn nombre infiny d’autres
-        <lb/>exemples, &amp; il verra que c’eſt eſtre tres-imprudent
-        <lb/>que d’eſtre ſi remeraire, puis qu’ordinairement cette
-        <lb/>temerité eſt autant punie qu’elle eſt puniſſable.
-        <lb/>Et que le Ciel! jaloux de la gloire des Rois,
-        <lb/>Prepare aux eſprits infidelles,
-        <lb/>Outre les chaſtimens qu’ils ſouffrent par les Loix,
-        <lb/>Des punitions eternelles.
-        <lb/>Tellement qu’il a à ſoufrir vn double ſuplice pour
-        <lb/>toutes ſes fautes; Et quant il pourroit éuiter le pre
-        <lb rend="¬" break="no"/>mier, il ne ſçauroit ſe garantir du ſecond, c’eſt aà̀ dire
-        <lb/>du plus grand; c’eſt à dire ce qui ne ſe peut dire, encor
-        <lb/>qu’il ſe puiſſe ſouffrir.
-        <lb/> Ces meditarions effrayantes abattront ſon orgueil,
-        <lb/>&amp; cetre preſomption eſtrange qui luy donnoit des
-        <lb/>penſées de ſoy-meſme qu’il ne deuoit auoir que de
-        <lb/> noſtre Souuerain; elles luy feront connoiſtre com
-        <lb rend="¬" break="no"/>bien l’humilte eſt noble dans les plus grandes ames,
-        <lb/>&amp; combien il eſt ſeant de s’abaiſſer à ceux que la naiſ
-        <lb rend="¬" break="no"/>ſance auoit premierement abbaiſez; il comprendra
-        <lb/>que toutes ces grandes qualitez, qui luy ont donné
-        <lb/>tant de vaine gloire, n’eſtoient que de foibles acci
-        <lb rend="¬" break="no"/>dens qui ne conſeruent point leur ſubſtance, contre
-        <lb/>les atraques d’autres redoutables accidens; qu’elle en
-        <lb/>paroiſt bien plus brillante; mais quelle n’en eſt pas <pb n="12"/>
-        <lb/>12
-        <lb/>meilleure. Que cét éclat eſt faux, que ce n’eſt pas vné
-        <lb/>emanation de la pureté ny de la vertu de l’eſprit qui en
-        <lb/>brille, &amp; que c’eſt pluſtoſt vne lumiere eſtrangere qui
-        <lb/>l’enuironne ſans l’illuſtrer, &amp; qui luy vaut infiniment
-        <lb/>moins que de mediocres tenebres. Il ſe ſouuiendra
-        <lb/> que celuy qui a beaucoup de vertus les augmente
-        <lb/>quand il en diminuë̈ luy-meſme l’eſtime; que c’en eſt
-        <lb/>vne qui couronne toutes les autres, que de ſçauoir
-        <lb/>modeſtement les taire; que la pudique rougeur que
-        <lb/>les acclamations nous cauſent, enrichit noſtre gloi
-        <lb rend="¬" break="no"/>re de nouuelles beautez &amp; luy donne de nouueaux
-        <lb/>eclats.
-        <lb/> Vn homme genereux qui rougit de ſa gloire,
-        <lb/>En rrahiſſant ſon cœucr,
-        <lb/>Eſt mille fois plus beau dedans cette rougeur,
-        <lb/>Que dans vne victoire.
-        <lb/>Qu’y a-t’il, de fait, de plus aymable que celuy qui
-        <lb/>eſtant ardant à la vertu, paroiſt froid aux loüanges? il
-        <lb/>vous donne la liberté des ſuffrages coute entiere, loü̈ez
-        <lb/>ou condamnez, il ne luy importe: il ayme peut-eſtre
-        <lb/>encores dauantage la condamnation que l’applaudiſ
-        <lb rend="¬" break="no"/>ſement. L’vne pourroit l’amollir, mais l’autre le pie
-        <lb rend="¬" break="no"/>que; S’il eſt blaſmé pour auoir bien fait, il veut s’ef
-        <lb rend="¬" break="no"/>forcer de mieux faire, &amp; encores alors loüez-le ou ne
-        <lb/>le loü̈ez pas, iamais vous ne l’obligerez aà vous taxer
-        <lb/>d’aueuglement &amp; d ingratitude, ny de vous dire des
-        <lb/>injures pour ſouſtenir ſes bonnes actions. Qui n’ay
-        <lb rend="¬" break="no"/>meroit pas des glorieux ſi doux &amp; qui ne vaincroit
-        <lb/>pas leur modeſtie par des acclamations eternelles? que
-        <lb/> Ieu <pb n="13"/>
-        <lb/>18
-        <lb/>leur bouehe le taiſe, eſle n’a que faire depaler, il en
-        <lb/>eſt aſſezd’autres pour publier leurs loü̈anges, ſans pu
-        <lb rend="¬" break="no"/>bliet meſme celle de leur modeſtie.
-        <lb/> Totle maooadeles ſonne &amp; les chante en tous lieux,
-        <lb/> Touit l’aifen retentit toute la terre&amp; l’onde,
-        <lb/> Elles rompliſſent tout le monde,
-        <lb/>Et vont meſmes iuſques aux Cieux.
-        <lb/>Il arriue tout au rebours aux orgueilleux &amp; à ceux
-        <lb/>qui prefument trop de leur merite; quelque gloire
-        <lb/>qu’ils ſe ſoient acquiſe, ils la perdent quand ils arriuent
-        <lb/>aà la publier, en voulans donner de l’admiration ils.
-        <lb/>donnent de la haine; on ne peut que difficillement
-        <lb/>ſouffrirceluy qui ne ſe peut ſoufrir ſoy-meſme, ce
-        <lb rend="¬" break="no"/>luy quis’enfle, quis’éleue, qui ne peut demeurer en
-        <lb/>vn lieu, qui veut erigor ſes merites en tyrannie, qui ne
-        <lb/>veut pas auoir des acclamations, mais deseſclaues.
-        <lb/>L Mazarin connoiſt aujourdhuy la grandeur de
-        <lb/>ce vice; C’eſt luy qui s’eſt acquis la haine de cout le
-        <lb/>monde, &amp; chacun a eſté bien-aiſe de voir humilié́
-        <lb/>par fore, celuy qui ſe vouloit ſi fort éleuer. Il ſç̧ait
-        <lb/>enfin ce que c’eſt de fe trop eſtimer, &amp; de faire erop
-        <lb/>peu d’eſtime des autres, aujourd’huy qu’il auroit be
-        <lb rend="¬" break="no"/>oin deleur eſtime, il n’a rien à eſperer que leurs mé
-        <lb rend="¬" break="no"/>pris.
-        <lb/> Tout le monde veut bien qu’il ſoit banny, parce
-        <lb/> qu’il ne vouloit pas que perſonne fuſt libre; il vouloit
-        <lb/>que tout le monde pliaſt ſous ſa vaniteé, &amp; chacun eſt
-        <lb/>bien aiſe qu’elle ſoit abbattuë. Ce joug peſoit trop
-        <lb/>pour eſre plaiſanr,l’allegement eſt bien doux &amp; bien. <pb n="14"/>
-        <lb/>14
-        <lb/>agteable &amp;vn fardeau ſi inſupoable &amp; ſi aceasblant.
-        <lb/>Commeil n’ignore point l joye que ſon éloigne
-        <lb rend="¬" break="no"/>ment cauſe à tout le monde, il ſe mot en eſtat d’affli
-        <lb rend="¬" break="no"/>ger ceux qui rient, &amp; abaiſe cette vaine opinion de
-        <lb/>ſoy-meſme, ce mal-heureux orgueil qui l’a perdu. Il
-        <lb/>eſtudie des actions toutes contraires à celles qui luy
-        <lb/>ont artire tant de haine. Il poſepour maxime infail
-        <lb rend="¬" break="no"/>lible que iamais l’affection des peuples ne peut eſtre
-        <lb/>que glorieuſe à ceux qu’ils ayment, &amp; que l’aproba
-        <lb rend="¬" break="no"/>tion generale eſtant vne marque de vertu, eſt toû
-        <lb rend="¬" break="no"/>jours vne aſſeurance de bon-heur.
-        <lb/>Sur ce fondementil voit que l’ambition eſtvn mon
-        <lb rend="¬" break="no"/>ſtre inſatiable, qui n’eſtant iamais generalement ap
-        <lb rend="¬" break="no"/>prouueé, eſt touſiours condamné auec iuſtice, parce
-        <lb/>qu’il n’eſt iamais d’accord auec la raiſon. Il voit que.
-        <lb/>c’eſt le vice des Miniſtres d’Eſtat; mais que pour eſtre
-        <lb/>tel, il eſt touſiours vice, &amp; qu’il n’en eſt pas meilleur
-        <lb/>pour eſtre plus grand. C’eſt-luy qui fait par tout tans
-        <lb/>d’horribles rauages: qui porte le fer &amp; le feu dans le
-        <lb/>ſein des hommes; qui ruine les Prouinces- entiertes &amp;
-        <lb/>les Royaumes; qui trouhle la paix du monde; &amp; qui
-        <lb/>ne donnant point de repos à celuy qui le ſouffre, eſt
-        <lb/>ſon bourreau &amp; ſon flarteur tout à la fois. C’eſt luy
-        <lb/>ſeul, ce formidable demon, qui nous oſte la ſatisfa
-        <lb rend="¬" break="no"/>ction qui ſe peur trouuer ſur la terre; ſans luy, il neſe
-        <lb rend="¬" break="no"/>roit point de pauute qui ne fuſt aſſez riche pour eſtre
-        <lb/>contant; point d’ignorant qui n’euſt aſſez de ſcience
-        <lb/>pour eſtre ſatisfait. Mais ce tyran immortel noua fait
-        <lb/>croire que ce que naus poſſedns, n’aſt rien aupjit <pb n="15"/>
-        <lb/>de ce qui reſte. Il’ous pouſſe touſiours à de nou
-        <lb rend="¬" break="no"/>ueaux deſirs, &amp; ne nous ſouffre iamaisde repos.
-        <lb/> Mazarin cognoiſt auiourd’huy ce violen perſecu
-        <lb rend="¬" break="no"/>teur, il ſçait quel malheur il nous artiue dele croire.
-        <lb/>Il n’ignore plus qu’il nous fair courre apres des biens.
-        <lb/>imaginaires pour nous faire perdre les veritables feli
-        <lb rend="¬" break="no"/>citez; qu’il nous donne pour l’ombre l’amour que
-        <lb/>nous deurions auoir pour le corps, &amp; qu’il nous fait
-        <lb/>ſouffrir de cruels &amp; d’indignes trauaux pour conque
-        <lb rend="¬" break="no"/>rir ce qui deſia eſt en noſtre poſſeſſion. Il ſe ſouuien
-        <lb rend="¬" break="no"/>dra de ce que le ſage Conſeiller de Pyrrhus Cyneas, diſt
-        <lb/>à ſon Maiſtre pour le diuertir du deſſein qu’il auoit
-        <lb/>formé contre l’Italie. Pourquoy, Sire, luy demanda
-        <lb rend="¬" break="no"/>r’il, leuez vous vne ſi puiſſante armeée? C’eſt, reſpondit
-        <lb/>Pyrrhus, pour conquerir l’Italie, &amp; apres que vous
-        <lb/>l’aurez conquiſe, continua Cyneas, que ferez vous?
-        <lb/>ie paſſeray, luy diſt-il, en Gaule, &amp; delà en Eſpagne;
-        <lb/>I’iray en ſuitte ſubijuguer l’Afrique, &amp; quand i’auray
-        <lb/>ſoûmis toute la terre à mon Empire, alors ie me repo
-        <lb rend="¬" break="no"/>ſeray &amp; ie viuray aà mon aiſe. Ha! Sire, s’écria le ſage
-        <lb/>Cyneas, qui vous empeſche icy ce contentement &amp;
-        <lb/>ce repos que vous allez chercher au milieu de tant de
-        <lb/>trauaux &amp; de tant de peines, que n’en jouiſſez vous
-        <lb/>ſans attendre dauantage, puis qu’il eſt e voſtre pou
-        <lb rend="¬" break="no"/>uoir?
-        <lb/>Ce Maazarin le cognoiſt, que cerepos eſten noſtre
-        <lb/>puiſſance, que l’ambition nous repreſente ſi fort eloi
-        <lb rend="¬" break="no"/>gné. Il voit bien que ce n’eſt pas par ſon moyen qu’on
-        <lb/>peut l’acquerir; qu’elle n’enfante que trouble, que <pb n="16"/>
-        <lb/>confufion, que deſorde, &amp; que bien loing de nousy
-        <lb/>conduire, elle nous plonge &amp; nous engage en des ſo
-        <lb rend="¬" break="no"/>licitudes &amp; en des peines eternelles. C’eſt dans ſa fuite
-        <lb/>qu’il apprendra à lahaïr autant qu’il l’a airmée dans la
-        <lb/>liberté. Il trouuera les amertumes de ces fmicts dorcz;
-        <lb/>&amp;ſous cette beauté toufiours riante il ne rencontrera
-        <lb/>que des laideurs qui loferont fremi.
-        <lb/> l voit que cet objet ſi pompeux à ſes ſens,
-        <lb/>Tout d’or par le dehars, n eſt que plomb au dedans
-        <lb/>FIN.</p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="genre">didactique</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-10-25" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<pb n="8"/>
+				<pb n="9"/>
+				<pb n="10"/>
+				<pb n="11"/>
+				<pb n="12"/>
+				<pb n="13"/>
+				<pb n="14"/>
+				<pb n="15"/>
+				<pb n="16"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+57
+        s lo oeenurns
+        LESCHOLE
+        MAZARIN. 
+        
+        3
+        RAISONNE MENS POLIT
+         ques &amp; eMoraux, ou l’Eſchole
+         de Mazarin.
+        ſOv voy conſiderons nous Ieschoſs
+         du monde, aue des yeux ſi peu dignes
+        SQ de les regarder; des yeux ſi foibles qu’uls
+        trouuent la lumiere inſuportable, &amp; ſifa
+        -iles à tromper, ſi aiſez à ſurprendre, que
+        ſouueut ils voyent trop &amp; multiplient leurs objets, &amp;
+        ſouuent les diminüent &amp; les perdent entierement; ou
+        du moinss’ils fe voyent encores, ce n’eſt pas tels qu’ils
+        ſonn, ce n’eſt pas dansleur veritable naeure, c’eſt plû
+        oſt dans de trompeuſes apparences. Que ne paſſons
+        nous iuſques au dedans, &amp; aà la verité́ des choſes, ſans
+        nous arreſter à leur ſurface &amp; à leur ombre? Que n’en
+        rons nous iuſques dans leur œur &amp; dans leuz ſecrer,
+        ’il le faut ainſi dire, &amp; que ne taſchons nous de vain
+        re les illuſioas qui nous en font faire de idicules iu
+        gemens.
+         Nous auons vû̂ &amp; nous ne verrons plus ce Maza
+         u, qui v moeut aupaaant diſpoſoit quaſi de tout
+         A it 
+        4
+        le Royaume. Tous ſes amis en verſent des larme,
+        tous ſes ennemis en pouſſent des cris de ioye, &amp; les vns
+        &amp; lesautres ne ſont ioyeux &amp; ne pleurent que pource
+        qu’ils l’eſtiment miſerable. Pourquoy nous laiſſer ſur
+        prendre à la premiere montre de cet accident, ſans
+        faire aucune des reflexions dignes de l’ame raiſonna
+        ble? Pourquoy ne ſera-il pas infortuneé, n’ayant ſer
+        uy que d’vn faux Miniſtre pour aous perſuader, que
+        de erompeur pout nous piper, que de ſuborneur pour
+        nous ſeduire, de perfide en vn mot, qui de ſubeil flat
+        teur s’erige en ſuperbe tyran do uos eſpits. Car n’eſt
+        ce pas eſtre tyran que de vouloir nous faire obeir, de
+        vouloir regner iuſques ſur les volontez, d’eſtablir ſon
+        empire ſur l’entendement, &amp; de nous faire croire ce
+        qui n’eſt pas, commes’ileſtoit?
+         C’eſt par ces regles &amp; par ces maximes, qu’onape
+        le reuers de forune, malheur, diſgrace, &amp;qu’a ba
+        ptiſe de noms funeſtes &amp; lugubtes le Banniſſemenc
+        de Mazarin, c’eſt parce que ’on ne conſidere ſe
+        traicte quepar la politique, que par l’ambidoni, qae
+        par l’auarioe, qu’on la plaint &amp; qu’on lanoAme mal
+        heureuſe. On ne la trouue noire que pame qu’on la
+        regarde dans les aueuglemens de la raiſon. la’eſt ebi
+        -m. des haommes quepar ds ames qui ueſonrpasi
+        -lres. Ceux qui le plaigaent ſont plus à plaindœ quz
+        luy; &amp; ie puis dire, mais le dire veritablement,
+        -Advn veitblli gne d’eftneſorite e leterts de lâûe &amp;
+        ou ſucr u toplddasgiequu imailue
+        peut eſtre plus heureux.
+        Iamais 
+        Iamais le el quoy qu’il ſemble irrité
+        Ne luy fit ſentir tant de grace;
+        Iamais il n’eſprouua de ſi grande bonté,
+        Ny ne fut ſi flatté,
+        Que de grand coup qui le terraſſe.
+        Et de fait ſi nous conſiderons biea la main qui l’a
+        renuerſé, nous ne la mettrons pas au nombre de ces
+        mains meurtieres qui ne nous abbattent que pour
+        nous ofter la vie: elle eſt pluſtoſt comme ces mains
+        maternelles, quiappaiſent les crls &amp; les inquietudes de
+        leurs enfans, en leur faiſant jouir par quelque ſorte de
+        violence d’vne bien-heureuſe tranquillité. lleſten fui
+        re, &amp; ne ſe repoſe que par neceſſiré; &amp; quoy que ſon
+        eſprit agiſfe, quoy qu’ilſoit tout plein d’inquietudes,!
+        quoy qu’il trauaille d’autant plus qu’il a moins d’eſpe
+        rance de voir les effſets ſuaiure ſes penſées; enfin il ſe
+        laſſera d’vne peine ſi inutile, &amp; il deuiendra tran
+        quille &amp; s’arreſtera auſſi bien que le eorps.
+        Qu’y aura-t’il alors de plus heureux que Mazarin?
+        ſi la ſouueraine felicit́ meſme n’eſt autre choſe
+        qu’vn aſſeuré repos. Pourquoy voulons nous qu’il
+        ſoit plus mal-heureux qu’il n’eſtoit, &amp; qu’il deuienne
+        miſerable aà̀ meſure qu’il s’approche de la tranquillité
+        qui le doit rendre heureux? Pourquoy voulons nous
+        que ce ſoit vn reuers de bonne fortune? Pourquoy le
+        nommons nous vn triſte accident? Pour qüoy diſons
+        nous que ſa fortune eſt déplorable &amp; trop digne de
+        nos pleurs &amp; de nos ſoû̂pirs? Elle l’oſte du tracas des
+        affaires d’Eſtat, de l’embarras d’vae infinité de diffe¬ 
+        rents objets qui ſollicitoient ſes paſſions, qui ren
+        doient vaine toute la fermeté de ſon ame, qui le me
+         naçoient continuellement de la cheute par de con
+        tinuels ébranlemens Elle l’oſte du peril apres vne in
+        finité de trauerſes. Iamais pillote ne conduiſit mieus
+        ſon vaiſſeau au port, malgré́ la tempeſte. Iamais hom
+        me echapeé de naufrage n’éuita mieux l’horteur des
+        flots eſcumans &amp; auec tant de ſeureté, qu’il conſidere
+        les mouuemens de la Cour; ny iamais du haut d’vn
+        rocher on ne vit auec ſi peu de danger le creux d’vn
+        abiſme &amp; la pente d’vn precipice.
+        C’eſt cét é́loignement bien-heureux pour luy qui
+        l’aſſeure de la qualité de Maiſtre d’Eſchole, qui luy
+        conſerue tiltre de Miniſtre, qui luy vaut mieux que
+        le commandement de nos armées: C’eſt elle qui nous
+        fait dire de luy s’il euſt eſteé dauantage en regne, que
+        n’euſt-il point fait? C’eſt elle qui nous en donne des
+        penſées encore plus hautes que ſes actions, &amp; qui nous
+        le ſaiſant mettre autre au rang d’Eminence, nous fait
+        croire que ſans elle rien ne luy pourroit reſiſter. Com
+        me nous diſons de ce braue Grec, tout luy alloit ceder,
+        ſans ce coup de vent venu du coſté de la Cour de Par
+        lement de Paris, qui l’eloigne ſi bien de nous par ſes
+        Arreſts, que nous n’auons plus rien à en apprehen
+        der.
+        Doit-on appeller cela eſtre malheureux? &amp; plû
+        coſt ne faut-il pas dire que iamais la fortune (s’il faut la
+        recognoiſtre) n’euſt tant d’adreſſe à carreſſer ſes fauo
+        ris. Que c’eſt vn bon-heur pour luy d’eſtre fugitif;. 
+        mais vn bon-heur d’vne nature extraordinaire, &amp;
+        d’vne maniere non commune; vn bon-heur rare &amp;
+        ſans pareil; vn bon-heur digne de celuy qui le reçoit,
+        proportionneé au merite de celuy qui le gouſte; vn
+        bon-heur, enfin, qu’on eſtime malheur, parce qu’il
+        eſt extreme &amp; qu’il approche du malheur dans ſon ex
+        
+        tremiré: &amp; c’eſt tout dire.
+        Il faut ſçauoir que certains Philoſophes &amp; qui n’e
+        ſtoient pas des moins entendus, ont mis la ſouueraine.
+        felicité́ dans les illuminations de l’entendement, dans
+        la cognoiſſance habituelle des choſes naturelles &amp; ſur
+        naturelles, dans la ſcience en vn mot, ou pour le mieux
+        dire dans l’acte de cette ſcience. Et de fait, c’eſt etre
+        tres-heureux que d’eſtre tres-content: or le conten
+        tement eſt extreme en celuy duquel la ſeience eſt par
+        faite; ils’enſuit donc que la ſcience ne ſç̧auroit man
+        quer de bon-heur.
+         Neſt- ce pas eſtre heureux que d’auoir penetré
+        Dans les ſecrets de la nmature;
+        M’eft- te pas eftre heureux que d’auoir rencontré
+        Ce que le Ciel n’a pas montré.
+        Mais qu’il auoit cacheé dans vne nuict obcure?
+        Car pourquoy nous a-t’il caché ſes threſors, fi ce
+        n’eſt à cauſe qu’il les eſtimoit trop: &amp; nous indignes
+        d’eux, &amp; s’ils ſont ſi pleins de dignité, s’ils ſontſiri
+        ches &amp; ſi beaux, quelle eſt, ou pluſtoſt quelle n’eſt
+        point la ioye de Ieur poſſeſſion? Aueugles qui ne
+        voyez pas, comprenez au moins, combien la cognoiſ
+        ſance de ces beaux ſecrets, combien ces niches larcins 
+        ont d’apas: combien il eſt doux en foüillant la nature,
+        d’en tirer de ſi grands treſors.
+        Il ne ſera plus dans l’embarras du commandement;
+        il ne ſera plus interrompu par le tumulte d’vne armé́e,
+        il ne penſera plus à deffendre cette Ville, ny aà̀ faire vn
+        ſiege contre cette autre. L’Archiduc Leopold ne le
+        forcera plus à veiller. Il ſera dans l’exercice d’vn hom
+        me qui veut eſtudier.
+        Pourquoy le plains-ne done eſprit bas de raiſon,
+        Ta plainte eſt laſche, vaine &amp; folle;
+        Ne recognou-t pas qu’il va tenir Eſchole,
+         Pour y faire leçon?
+        C’eſt-la où il apprendra s’il veut, &amp; ſans peine tout
+        ce qu’a de plus beau la Phyſique, la Metaphyſique, &amp;
+        la Morale; tout ce qu’a de plus ſainct la Theologie;
+        tout ce qu’a de plus neceſſaire la Medecine; tout ce
+        qu’a de plus iuſte la Iuriſprudence; tout ce qu’ont de
+        plus certain les Mathemathiques: &amp; tout ce qu’a de
+        plus haut l’Aſtrologie. Mais c’eſt-la qu’il ne ſçauroit
+        manquer d’apprendre particulierement beaucoup de
+        choſes qui luy ſont tres-neceſſaires, &amp; ſans la cognoiſ
+        ſance &amp; l’vſage deſquelles, quel qu’il parroiſſe, il ne
+        peut pas eſtre meſme vn homme raiſonnable.
+        C’eſt-là que tour à loiſir il fera de belles &amp; neceſ
+        ſaires reflexions ſur ſes actions paſſées, &amp; que ſe conſi
+        derant malheureux, il condamnera l’imprudence qui
+        l’a mis où il eſt, &amp; il ſe reſoudra à la prudence qu’il n’a
+        pas eueë, &amp; qui luy euſt fait éuiter l’écueil où il a brizé.
+        llapprendra que c’eſt elle quiconduit les actions bien
+        faires; 
+        faites; qu’elle eſt leur œil &amp; leur lumiere, &amp; que ſous
+        elle nous ne faiſons rien que de temeraire &amp; d’indiſ
+        cret. Comme le Soleil n’éclaire pas ſeulement nos
+        yeux; mais il leur donne encor vn éclat &amp; vne beauté
+        qu’ils n’ont point dedans les tenebres; la prudence en
+        conduiſant nos mouuemens, leur communique la per
+        fection toute entiere &amp; ſans reſerue; Ce n’eſt point
+        vne perfection à demy &amp; qui manque de quelque
+        circonſtance: c’eſt vne perfetion pleine, toure bel
+        le, toute complete, &amp; qui ne ſouffre aucune ſorte
+        de deffauts.
+        Qui eſt-ce qui ne ſç̧ait pas, que pour meriter le til
+        tre de parfaite, vne action doit auoir la bonté pro
+        pre &amp; naturelle, qu’ello doit eſtre faite &amp; dans ſon
+        temps &amp; dans ſon lieu? quand elle peur ſe vanter de
+        ces trois choſes, il faut que le Cenſeur ſoit bien aſ
+        pre &amp; bien critique, s’il y peut trouuer à redire, il faut
+        que la veuë ſoit bien penetrante, ſi elle y découure
+        quelque deffaut, &amp; qu’on la compare auec vne per
+        fection bien ſublime pour y remarquer de l’imper
+        fection. Or ces trois qualitez neceſſaires à la bonté
+        d’vne action, n’eſt-ce pas la prudence qui les donne?
+        N’eſt-ce pas elle qui iuge de ce qui eſt bon &amp; de ce
+        qui eſt mauuais? N’eſt-ce pas elle qui nous dit que
+        c’eſt vne folie de brûler le Temple de Diane pour fai
+        re patler de ſoy; N’eſt-ce pas elle qui nous aſſeure qu’il
+        faut combatre contre cet Ennemy à force d’eſprit
+        &amp; de bras? N’eſt-ce pas elle qui nous auertit qu’il y
+        peut auoir vn ſerpent ſous cette fleur, &amp; dedans ce
+         C 
+        10
+        bois vne embuſcade, &amp; quil ne faut ny eueillir l’vne,
+        ny s’approcher de l’autre C’eſt ainſi qu’elle forme la
+        bonté des deſſeins, &amp; qu’elle en ordonne les execu
+        tions aux endroits &amp; aux heures les plus propres. L’a
+        ction, dit-elle, ſeroit bonne de combatre cet Enne
+        my, d’entrer dedans ce bois, de cueillir cette impe
+        riale; mais ce ne doit pas eſtre à cette heure: il y a
+        plus de danger à l’entreprendre, que de gloire &amp; de
+        plaiſir à l’executer. Elle ſçait bien qu’il faut joiüir du
+        repos apres la victoire: mais elle ſç̧ait auſſi que ce n’eſt
+        pas meſme choſe de toutes ſortes de victoires, &amp; qu’A
+        nibal ſe repoſa mal à propos apres la deffaite de Can
+        nes, quand il pouuoit prendre Rome en pourſuiuant
+        les Romains vaincus, quoy que ce repos ſoit legitime
+        &amp; neceſſaire, il n’eſtoit ny le lieu ny le temps de ſere
+        poſer; auſſi ne puſt-elle s’empeſcher de luy en faire
+        vn ſeuere reproche par la bouche de Maharbal Mai
+        ſtre de ſa Caualerie, &amp; de luy dire, Hannibal, tu ſçais
+        bien vaincre; mais tu ne ſcais pas vſer de ta victoire.
+        Ie n’ay garde de vouloir particulariſer toutes ces
+        acCtions, il ſuſfit ſeulement d’eſtablir ces maximes; cs
+        ſont celles que Mazarin apprendra dedans ſon repos;
+        c’eſt par leur cognoiſſance qu’il verra qu’elle eſt en
+        tierement neceſſaire aux actions des Miniſtres d’Eſtar.
+        Les lumieres qu’il en receura, luy feront voir que
+        l’imprudence de l’infidelité́ eſt ruïneuſe autant qu’elle
+        eſt criminelle, il en apprendra que la flatterie des
+        grands deſſeins qu’elle forme, eſt vne flatterie aueu
+        glante qui nous conduit auec fierté &amp; auec plaiſir dans 
+        1i
+        le precipice parce qu’elle nous y conduit ſans nous le
+        découurir, &amp; qu’elle nous amuſe à de belles appafan
+        ces &amp; à de pompeuſes promeſſes.
+        Faiſant reflexion ſur ce qui luy en eſt arriué, ſa
+        memoire luy en preſentera vn nombre infiny d’autres
+        exemples, &amp; il verra que c’eſt eſtre tres-imprudent
+        que d’eſtre ſi remeraire, puis qu’ordinairement cette
+        temerité eſt autant punie qu’elle eſt puniſſable.
+        Et que le Ciel! jaloux de la gloire des Rois,
+        Prepare aux eſprits infidelles,
+        Outre les chaſtimens qu’ils ſouffrent par les Loix,
+        Des punitions eternelles.
+        Tellement qu’il a à ſoufrir vn double ſuplice pour
+        toutes ſes fautes; Et quant il pourroit éuiter le pre
+        mier, il ne ſçauroit ſe garantir du ſecond, c’eſt aà̀ dire
+        du plus grand; c’eſt à dire ce qui ne ſe peut dire, encor
+        qu’il ſe puiſſe ſouffrir.
+         Ces meditarions effrayantes abattront ſon orgueil,
+        &amp; cetre preſomption eſtrange qui luy donnoit des
+        penſées de ſoy-meſme qu’il ne deuoit auoir que de
+         noſtre Souuerain; elles luy feront connoiſtre com
+        bien l’humilte eſt noble dans les plus grandes ames,
+        &amp; combien il eſt ſeant de s’abaiſſer à ceux que la naiſ
+        ſance auoit premierement abbaiſez; il comprendra
+        que toutes ces grandes qualitez, qui luy ont donné
+        tant de vaine gloire, n’eſtoient que de foibles acci
+        dens qui ne conſeruent point leur ſubſtance, contre
+        les atraques d’autres redoutables accidens; qu’elle en
+        paroiſt bien plus brillante; mais quelle n’en eſt pas 
+        12
+        meilleure. Que cét éclat eſt faux, que ce n’eſt pas vné
+        emanation de la pureté ny de la vertu de l’eſprit qui en
+        brille, &amp; que c’eſt pluſtoſt vne lumiere eſtrangere qui
+        l’enuironne ſans l’illuſtrer, &amp; qui luy vaut infiniment
+        moins que de mediocres tenebres. Il ſe ſouuiendra
+         que celuy qui a beaucoup de vertus les augmente
+        quand il en diminuë̈ luy-meſme l’eſtime; que c’en eſt
+        vne qui couronne toutes les autres, que de ſçauoir
+        modeſtement les taire; que la pudique rougeur que
+        les acclamations nous cauſent, enrichit noſtre gloi
+        re de nouuelles beautez &amp; luy donne de nouueaux
+        eclats.
+         Vn homme genereux qui rougit de ſa gloire,
+        En rrahiſſant ſon cœucr,
+        Eſt mille fois plus beau dedans cette rougeur,
+        Que dans vne victoire.
+        Qu’y a-t’il, de fait, de plus aymable que celuy qui
+        eſtant ardant à la vertu, paroiſt froid aux loüanges? il
+        vous donne la liberté des ſuffrages coute entiere, loü̈ez
+        ou condamnez, il ne luy importe: il ayme peut-eſtre
+        encores dauantage la condamnation que l’applaudiſ
+        ſement. L’vne pourroit l’amollir, mais l’autre le pie
+        que; S’il eſt blaſmé pour auoir bien fait, il veut s’ef
+        forcer de mieux faire, &amp; encores alors loüez-le ou ne
+        le loü̈ez pas, iamais vous ne l’obligerez aà vous taxer
+        d’aueuglement &amp; d ingratitude, ny de vous dire des
+        injures pour ſouſtenir ſes bonnes actions. Qui n’ay
+        meroit pas des glorieux ſi doux &amp; qui ne vaincroit
+        pas leur modeſtie par des acclamations eternelles? que
+         Ieu 
+        18
+        leur bouehe le taiſe, eſle n’a que faire depaler, il en
+        eſt aſſezd’autres pour publier leurs loü̈anges, ſans pu
+        bliet meſme celle de leur modeſtie.
+         Totle maooadeles ſonne &amp; les chante en tous lieux,
+         Touit l’aifen retentit toute la terre&amp; l’onde,
+         Elles rompliſſent tout le monde,
+        Et vont meſmes iuſques aux Cieux.
+        Il arriue tout au rebours aux orgueilleux &amp; à ceux
+        qui prefument trop de leur merite; quelque gloire
+        qu’ils ſe ſoient acquiſe, ils la perdent quand ils arriuent
+        aà la publier, en voulans donner de l’admiration ils.
+        donnent de la haine; on ne peut que difficillement
+        ſouffrirceluy qui ne ſe peut ſoufrir ſoy-meſme, ce
+        luy quis’enfle, quis’éleue, qui ne peut demeurer en
+        vn lieu, qui veut erigor ſes merites en tyrannie, qui ne
+        veut pas auoir des acclamations, mais deseſclaues.
+        L Mazarin connoiſt aujourdhuy la grandeur de
+        ce vice; C’eſt luy qui s’eſt acquis la haine de cout le
+        monde, &amp; chacun a eſté bien-aiſe de voir humilié́
+        par fore, celuy qui ſe vouloit ſi fort éleuer. Il ſç̧ait
+        enfin ce que c’eſt de fe trop eſtimer, &amp; de faire erop
+        peu d’eſtime des autres, aujourd’huy qu’il auroit be
+        oin deleur eſtime, il n’a rien à eſperer que leurs mé
+        pris.
+         Tout le monde veut bien qu’il ſoit banny, parce
+         qu’il ne vouloit pas que perſonne fuſt libre; il vouloit
+        que tout le monde pliaſt ſous ſa vaniteé, &amp; chacun eſt
+        bien aiſe qu’elle ſoit abbattuë. Ce joug peſoit trop
+        pour eſre plaiſanr,l’allegement eſt bien doux &amp; bien. 
+        14
+        agteable &amp;vn fardeau ſi inſupoable &amp; ſi aceasblant.
+        Commeil n’ignore point l joye que ſon éloigne
+        ment cauſe à tout le monde, il ſe mot en eſtat d’affli
+        ger ceux qui rient, &amp; abaiſe cette vaine opinion de
+        ſoy-meſme, ce mal-heureux orgueil qui l’a perdu. Il
+        eſtudie des actions toutes contraires à celles qui luy
+        ont artire tant de haine. Il poſepour maxime infail
+        lible que iamais l’affection des peuples ne peut eſtre
+        que glorieuſe à ceux qu’ils ayment, &amp; que l’aproba
+        tion generale eſtant vne marque de vertu, eſt toû
+        jours vne aſſeurance de bon-heur.
+        Sur ce fondementil voit que l’ambition eſtvn mon
+        ſtre inſatiable, qui n’eſtant iamais generalement ap
+        prouueé, eſt touſiours condamné auec iuſtice, parce
+        qu’il n’eſt iamais d’accord auec la raiſon. Il voit que.
+        c’eſt le vice des Miniſtres d’Eſtat; mais que pour eſtre
+        tel, il eſt touſiours vice, &amp; qu’il n’en eſt pas meilleur
+        pour eſtre plus grand. C’eſt-luy qui fait par tout tans
+        d’horribles rauages: qui porte le fer &amp; le feu dans le
+        ſein des hommes; qui ruine les Prouinces- entiertes &amp;
+        les Royaumes; qui trouhle la paix du monde; &amp; qui
+        ne donnant point de repos à celuy qui le ſouffre, eſt
+        ſon bourreau &amp; ſon flarteur tout à la fois. C’eſt luy
+        ſeul, ce formidable demon, qui nous oſte la ſatisfa
+        ction qui ſe peur trouuer ſur la terre; ſans luy, il neſe
+        roit point de pauute qui ne fuſt aſſez riche pour eſtre
+        contant; point d’ignorant qui n’euſt aſſez de ſcience
+        pour eſtre ſatisfait. Mais ce tyran immortel noua fait
+        croire que ce que naus poſſedns, n’aſt rien aupjit 
+        de ce qui reſte. Il’ous pouſſe touſiours à de nou
+        ueaux deſirs, &amp; ne nous ſouffre iamaisde repos.
+         Mazarin cognoiſt auiourd’huy ce violen perſecu
+        teur, il ſçait quel malheur il nous artiue dele croire.
+        Il n’ignore plus qu’il nous fair courre apres des biens.
+        imaginaires pour nous faire perdre les veritables feli
+        citez; qu’il nous donne pour l’ombre l’amour que
+        nous deurions auoir pour le corps, &amp; qu’il nous fait
+        ſouffrir de cruels &amp; d’indignes trauaux pour conque
+        rir ce qui deſia eſt en noſtre poſſeſſion. Il ſe ſouuien
+        dra de ce que le ſage Conſeiller de Pyrrhus Cyneas, diſt
+        à ſon Maiſtre pour le diuertir du deſſein qu’il auoit
+        formé contre l’Italie. Pourquoy, Sire, luy demanda
+        r’il, leuez vous vne ſi puiſſante armeée? C’eſt, reſpondit
+        Pyrrhus, pour conquerir l’Italie, &amp; apres que vous
+        l’aurez conquiſe, continua Cyneas, que ferez vous?
+        ie paſſeray, luy diſt-il, en Gaule, &amp; delà en Eſpagne;
+        I’iray en ſuitte ſubijuguer l’Afrique, &amp; quand i’auray
+        ſoûmis toute la terre à mon Empire, alors ie me repo
+        ſeray &amp; ie viuray aà mon aiſe. Ha! Sire, s’écria le ſage
+        Cyneas, qui vous empeſche icy ce contentement &amp;
+        ce repos que vous allez chercher au milieu de tant de
+        trauaux &amp; de tant de peines, que n’en jouiſſez vous
+        ſans attendre dauantage, puis qu’il eſt e voſtre pou
+        uoir?
+        Ce Maazarin le cognoiſt, que cerepos eſten noſtre
+        puiſſance, que l’ambition nous repreſente ſi fort eloi
+        gné. Il voit bien que ce n’eſt pas par ſon moyen qu’on
+        peut l’acquerir; qu’elle n’enfante que trouble, que 
+        confufion, que deſorde, &amp; que bien loing de nousy
+        conduire, elle nous plonge &amp; nous engage en des ſo
+        licitudes &amp; en des peines eternelles. C’eſt dans ſa fuite
+        qu’il apprendra à lahaïr autant qu’il l’a airmée dans la
+        liberté. Il trouuera les amertumes de ces fmicts dorcz;
+        &amp;ſous cette beauté toufiours riante il ne rencontrera
+        que des laideurs qui loferont fremi.
+         l voit que cet objet ſi pompeux à ſes ſens,
+        Tout d’or par le dehars, n eſt que plomb au dedans
+        FIN.			</p>
+		</body>
+	</text>
 </TEI>

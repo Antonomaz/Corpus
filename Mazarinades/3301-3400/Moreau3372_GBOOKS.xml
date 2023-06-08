@@ -1,742 +1,1389 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3372_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Réponse à la Résolution politique des deux principaux
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Réponse à la Résolution politique des deux principaux
           doutes qui occupent les esprits du temps, dédiée à tous ceux qui voudront voir des raisons
           sans passion, des justifications sans ambiguïté, et des conclusions sans fallace.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2022-10-25">25 octobre 2022</date>
-        <availability status="restricted" n="cc-by">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=qv40Lr8v2q4C"/>
-          <author/>
-          <title source="Moreau">Réponse à la Résolution politique des deux principaux doutes qui
+					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2022-10-25">25 octobre 2022</date>
+				<availability status="restricted" n="cc-by">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=qv40Lr8v2q4C"/>
+					<author/>
+					<title source="Moreau">Réponse à la Résolution politique des deux principaux doutes qui
             occupent les esprits du temps, dédiée à tous ceux qui voudront voir des raisons sans
             passion, des justifications sans ambiguïté, et des conclusions sans fallace.</title>
-          <pubPlace source="Moreau">Sans Lieu</pubPlace>
-          <publisher>
-            <persName>Sans Nom</persName>
-          </publisher>
-          <date source="Moreau" when="1650">1650</date>
-          <extent>
-            <measure unit="page" quantity="20"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2996944">Lyon</settlement>
-            <institution>Bibliothèque municipale de Lyon</institution>
-            <repository/>
-            <idno type="cote">Rés 310565</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<pubPlace source="Moreau">Sans lieu</pubPlace>
+					<publisher>
+						<persName>Sans nom</persName>
+					</publisher>
+					<date source="Moreau" when="1650">1650</date>
+					<extent>
+						<measure unit="page" quantity="20"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2996944">Lyon</settlement>
+						<institution>Bibliothèque municipale de Lyon</institution>
+						<repository/>
+						<idno type="cote">Rés 310565</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>True</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">3372. Réponse à la Résolution politique des deux prin cipaux doutes qui
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">3372. Réponse à la Résolution politique des deux prin cipaux doutes qui
           occupent les esprits du temps , dédiée à tous ceux qui voudront voir des raisons sans
           passion , des justifications sans ambiguïté, et des con clusions sans fallace. (S. 1.,
           165!&gt;), 20 pages. « Les rois ont une puissance si absolue sur leurs sujets qu'il ne
           leur reste autre chose que la mort ou l'obéissance. » « S'en prendre à ceux qu'ils ont
           établis pour la conduite de leurs affaires, c'est s'en prendre à leurs propres personnes.
           » Voilà qui est, en effet, net et sans ambiguïté.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="genre">réponse</term>
-          <term type="genre">discours adressé</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-10-25" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>4¬
-        <lb rend="¬" break="no"/> p
-        <lb/>NCE
-        <lb/>. . a
-        <lb/> 4
-        <lb/>A LA RESOLVTION POLITIQVE,
-        <lb/>des deux principaux doutes qui oceupent
-        <lb/>les eſprits du temps.
-        <lb/>SCAVOIR EST.
-        <lb/>Pourquoy eſt-ce que le Cardinmal azarin afait em
-        <lb rend="¬" break="no"/>priſonner Meſieurs les Princes dans le temps de
-        <lb/>la Minorité
-        <lb/>Et pourquoy eſt-ce qu’il s’opiniaſtre à leur detention,
-        <lb/>en veuë̈ des deſordres qui troublent l’Eſtat, pour proe
-        <lb/>curer leur eſlargiſſement.
-        <lb/>Dediée à tous ceux qui voudront voir des raiſons
-        <lb/>ſans paſsion, des iuſtifications ſans ambiguité, &amp;
-        <lb/>des concluſions ſans fallace. <pb n="2"/>
-        <pb n="3"/>
-        <lb/> :., 8s
-        <lb/>de A opee e es ens re, ds ele diles e ae es ee ee cnes
-        <lb/>u g e4 4e &amp;s ô, 4 Q &amp; &amp; e &amp;
-        <lb/>es ee EeE
-        <lb/>7r r
-        <lb rend="¬" break="no"/>RESPONCE A LA RESOLV
-        <lb rend="¬" break="no"/>D D
-        <lb rend="¬" break="no"/>tou Politique, des deux principaux
-        <lb/>doutes qui occupent les eſprits du temp;
-        <lb/>Scauoir eſt, pourquoy eſt-ce que le Car
-        <lb rend="¬" break="no"/>dinal aarin a fair empriſonner
-        <lb/>Meſieurs les Princes dans le temps de.
-        <lb/>la inorite.
-        <lb/>LVFARQVE au traireé qu’il a compoſe.
-        <lb/>JJ de la malice d’Herodote, remarque quels
-        <lb/> ſont les effets dont cette fueſte &amp; inſigne
-        <lb/>. Megere ſe ſert, pour rernir toute la gloite
-        <lb/>que les grands hommes du Siecle ſe ſont acquis,
-        <lb/>par les plus illuſtres actions de cette vië moftelle.
-        <lb/> Le premier, dit il, c’eſt d’vſer de certaines paro
-        <lb rend="¬" break="no"/>les faſcheuſes &amp; picquantes pou exprimer ſes
-        <lb/>penſées., Et cela eſt ſi ftequent dans e libelleé de
-        <lb/>la Reſolution Politique, que qui voudroir prendre
-        <lb/>la peine de repliquer aà̀ routes ces calomnies; en
-        <lb/>pourroit faire vn iuſte volume, quoy qu’il l’ait de
-        <lb rend="¬" break="no"/>deé à̀ ceux qui voudront voir vne Apologie ſans
-        <lb/>paſſion, vne inuetiue ſans aigretr, &amp; vn raiſonné̈.
-        <lb/>ment fans obſeuriré, qu’il proeeſtedeuaine Dieu
-        <lb/>de parlér auec beaucoup de reteme.
-        <lb/> Lſecond eſt de rompre le fil de ſes paroles, af
-        <lb rend="¬" break="no"/>d’y faire entrer plus d’innprecations quede raiſon
-        <lb rend="¬" break="no"/>esdſcours, ou que de fapoſuons vtay-em
-        <lb rend="¬" break="no"/>blables.
-        <lb/>A ij <pb n="4"/>
-        <lb/>Et le roiſieſme eſt de meſler quelque blaſméou
-        <lb/>quelque mediſance, parmy les loüanges que l’on
-        <lb/>veut donaer aux perſonnes, &amp; ccla c’eft encourirla
-        <lb/>malediction du l’oë̈te tragique lors qu’il dit,
-        <lb/> Maudit celuy qui blaſme accortement,
-        <lb/>Tout ceux qu’il veut exalter hautement.
-        <lb/> Ce quiſe trouue par cxcellcnce dans les ouura
-        <lb rend="¬" break="no"/>ges de noſtre Autheur, lors qu’il dit que Monſieur
-        <lb/>le Cardinal ne ſe ſeroit iamais peu maintenir dans
-        <lb/>le gouuernemét de l’Eſtar, ſans la faueur &amp; l’aſſiſtã
-        <lb rend="¬" break="no"/>ce de monſieur le Prince. Que monſieur le Prince.
-        <lb/>ne pouuoit faire des demandes que tres ambitieu
-        <lb rend="¬" break="no"/>ſes: que ça eſté́ la ſeule imprudence de monſieur le
-        <lb/>Prince, d’auoir entrepris de ſouſtenir le Cardinal
-        <lb/>Mazarin mqlgré tous les efforts que le Royaume
-        <lb/>faiſoit pour le precipiter du’gouuernemétdel Eſtat:
-        <lb/>que la Fran n cbãgea ſon amour en haine qu’a
-        <lb rend="¬" break="no"/>pres l’aueuglafentdecete prorection: Que mon
-        <lb rend="¬" break="no"/>ſicur le Pripce reſtabhis monſieur le Cardinal dans
-        <lb/>ſoni’preierécdaen deſpit de la coniuration gene
-        <lb rend="¬" break="no"/>ralle de toute la mMonarchie; Que monſieur le Prin.
-        <lb/>ne s’eſt degie que pour auoi ſouſtenu la chœute de
-        <lb/>joſierle asdinal: Que la eonſeraationde m
-        <lb rend="¬" break="no"/>ſierle Cainal dans l’eminéte dignmité de premior
-        <lb/>Miniſtre d’Eſtat,, &amp; la reconnoiſſance qu’il doit au
-        <lb/>biens qu’il areçgusde monſieur le Prince, ſontin
-        <lb rend="¬" break="no"/>compatilés, &amp; qu’il faue neceſſairomentqu’il ſe
-        <lb/>teſmpigneipgras,pour ſ: mainoanirſ, ou qu’il fe
-        <lb/>etquiſe, , Que Moſieur le Cadial noſçauoit
-        <lb/>fauoriſer toutos,-les demandes de Monſieur
-        <lb/>le Prinçe ſa ſ perdre : Q’il far lneceſ
-        <lb rend="¬" break="no"/>ſairemeuil le choque pourſemainrenin
-        <lb/>Que lpoudeonſeuleCardinabeſbabſoßu,
-        <lb/>ljuby
-        <lb/>1
-        <lb/>2 4 <pb n="5"/>
-        <lb/>quoy que dependant des ordres de leurs Maieſtez,
-        <lb/>Que la reconnoiſſanee que monſieur leCardinal
-        <lb/>fefoit à monſicur le Prince le feroit choir dela S ou
-        <lb rend="¬" break="no"/>ueraineté qu’il a dans lEſtar: Que ce ſeroit l eſ
-        <lb/>cueil de fa haute fortune: Que mouſieur le Car
-        <lb rend="¬" break="no"/>dinal doit eſtre ingrat pour ſe maintenir, ou recon
-        <lb rend="¬" break="no"/>noiſſant pour ſe perdre: Que la neceſſite de ſe main
-        <lb rend="¬" break="no"/>tenir luy a fait empriſonner les Princes: &amp; que
-        <lb/>monſieur le Cardinal ne peut ny ne doit iamais
-        <lb/>conſentis à la deliurance de monſieur le Prince ſans
-        <lb/>ſouſcrire à ſa perte.
-        <lb/>Voila s’il me ſemble ſçauoir fort mal prendre la
-        <lb/>cauſe de celuy pour qui l’on plaide, &amp; ie neſcay ſi
-        <lb/>ſes propres ennemis auroient l’eſprit de trouuer des
-        <lb/>raiſons ſi outrageuſes à la valleur &amp; à la digniteé de
-        <lb/>ce grand Prince. Si nmonſieur le Cardinaſ ne s’eſt
-        <lb/>peu maintenir dans le gouuernement de l’Eſtar,
-        <lb/>ſans l’aſſiſtance de monſieur le Prince, monſieur le
-        <lb/>Prince eſt donc plus criminel que luy, ſi l’autre l’eſt
-        <lb/>de l’auoir fair ce qu’il eſt, &amp; de l’auoir mais en eſtat
-        <lb/>de faire ce que bon luy ſemble. Si monſieur le Prin
-        <lb rend="¬" break="no"/>ce ne pouuoit faire que des demandes tres ambi.
-        <lb/>tieuſes, il n’a pas eu tort de le ſeurer de-cela. Si ça
-        <lb/>eſté vne imprudence à monſieur le Prince d’auoir
-        <lb/>ſouſtenu le Cardinal Mazarin, c’eſt vne action tres
-        <lb rend="¬" break="no"/>louable à̀ monſieur le Cardinal Mazarin de le punir
-        <lb/>de ſon iniuſtice. Si monſieur le Cardinal ne ſçau
-        <lb rend="¬" break="no"/>roir fauoriſer les demandes de Monſieur le Priuce
-        <lb/>ſans ſe perdre, eſt-il iuſte qu’il le face. Si le pouuoir
-        <lb/>de monſieur le Cardinal eſt abſolu, &amp; qu il neſoit
-        <lb/>dependant que des ordres de leurs Maieſtez, qui
-        <lb/>ſont ceux outre leurs Maieſtez qui puiſſent trou
-        <lb rend="¬" break="no"/>uer à redire à pas vne de ſes procedures? Enfin ſi
-        <lb/>monſieur le Cardinal ne peut ny ne doit iamais cõ¬ <pb n="6"/>
-        <lb/>ſentir à la deliurance de Meſſieurs les princes, ſans
-        <lb/>ſouſcrire ad ſa perte, eſt-il raiſonnable qu’il y con
-        <lb rend="¬" break="no"/>ſente. Ie voy bien que leur Aduocat n eſt pas fort
-        <lb/>ſç̧auant en l’art de perſuader de bonne grace. Voi.
-        <lb/>la donc pour le troizicſme effect de la malice qui
-        <lb/>eſt ſans iugement &amp; ſans conduite. Et pour faire
-        <lb/>comme les eſcreuices, ou comme ceux qui liſent
-        <lb/>l’hebreu, nous paſſerons de celuy-cy au deuxieſme,
-        <lb/>qul eſt de rompre le fil de ſon diſcours, pour y faire
-        <lb/> entrer plus de calomnies que de raiſonnables diſ
-        <lb rend="¬" break="no"/>cours, ou que des ſuppoſitions vray ſemblables.
-        <lb/>Quand ie parle de monſieur le Cardinal, ie
-        <lb/>parle de celuy dont le nom n’a é́claté́ que comme
-        <lb/>celuy d’Heroſtrate à Epheſe; c’eſt aà dire aà la faueur
-        <lb/>des cmbraſements qu’il a fomentez dãs toute l’Eu
-        <lb rend="¬" break="no"/>rope, dont les trrahiſons ſont generalement dete
-        <lb rend="¬" break="no"/>ſtées, tant des eſtrangers que des domeſtiques, &amp;
-        <lb/>de peur de redite, dont la naiſſance n’eſt pas plus
-        <lb/>releué́e que celle des Boulangers-de Gonneſſe, ou
-        <lb/>des Charbonniers de Paris, &amp; neantmoins toute
-        <lb/>l’Europe ſçaura que ce traiſtre, ce vilain, ce deſcrié,
-        <lb/>a fait empriſonner, &amp; le reſte.
-        <lb/>Voyez de grace ſi c’eſt là parler ſans paſſi6 &amp; ſans
-        <lb/>calõ̃nies, puis que le l’ape ne s’eſt iamais porté dans
-        <lb/>la promotiõ de ſon Eminence (ainſi que nous l’ap
-        <lb rend="¬" break="no"/>prend fort bien l’Autheur des Lumiers pour l’hi
-        <lb rend="¬" break="no"/>ſtoire de ce temps( qu apres auoir recherché ſelon
-        <lb/> la couſtume ſa gencalogie iuſques dans ſa ſource.
-        <lb/>La nobleſſe de ſes anceſtres, dit-il en paſſant plus
-        <lb/>outre, luy a fait vn chemin aux dignitez Eccleſia
-        <lb rend="¬" break="no"/>ſtiques, &amp; ſaint Pierre n’ouure la porte de ſon Pa
-        <lb rend="¬" break="no"/>lais qu’aux perſonnes d’vne naiſſance bien releué́e,
-        <lb/>afin de les obliger à̀ des actions de meſme nature. Il
-        <lb/>n’y a rien pourtant ny de plus ancien ny de ſi celo¬ <pb n="7"/>
-        <lb/>bre que le nom de Mazarin ſur toute l’eſtendue de
-        <lb/>la terre, &amp; l’on à veu le Sceptre &amp; ce nom portez
-        <lb/>par vne meſme perſonne: on voit encore à preſent
-        <lb/>vne ville trouuer plus de gloire dans ce nom, que
-        <lb/>dans ces richeſſes.
-        <lb/>Maara teli genus antiquans. Mazares prorex apad
-        <lb/>Medos. Mazaris vrbs Sicili. dir noſtre excellent Au
-        <lb/>rheur en parlant de ce grand homme.
-        <lb/>Aprez cela voyez ſi Ies diſcouts de noſtre me
-        <lb rend="¬" break="no"/>diſant peuuent paſſer pour des raiſonsſans paſſion,
-        <lb/>ou pour des ſupoſitions vray ſemblables Et outre
-        <lb/>tout ce que ie viens de dire, n’a t’il pas plus fait en
-        <lb/>moins de quatre ans, qu’on n'auoit ſceu faire de puis
-        <lb/>que nous faiſons la guerre, &amp; ſi Meſſieurs les Princes
-        <lb/>n’euſſent pas troublé les affaires, n’auroient il pas
-        <lb/>contraint les ennemis de cette Couronne à faire la
-        <lb/>Paix relle que nous l’euſſions deſiré.
-        <lb/>Voyons maintenant le pre mier effet de la milice
-        <lb/>de noſtre Autheur, qui eſt d’vſer de certaines pareo
-        <lb rend="¬" break="no"/>les faſcheuſes &amp; picquantes, pour exprimer ſes pen
-        <lb rend="¬" break="no"/>ſées. En la page ſeprieſme, il l’appelle ingrat &amp; infa
-        <lb rend="¬" break="no"/>me: En la huictieſme, malicieux Politique: En la on
-        <lb rend="¬" break="no"/>ze, extrauagant &amp; yoleur: En la quatorze, Mazarin
-        <lb/>endiablé: En la ſeiſieſme enragé: En la dix-huict am,
-        <lb/>bitieux: En la vingt-ſix, il l’accuſe d’eſtre de villaine
-        <lb/>extraton: Et en la vingt-ſept. il l’appelle deſcrié,
-        <lb/>traiſtre &amp; vilain. Se peut il trouuer vn caque qui puiſ
-        <lb rend="¬" break="no"/>ſe contenir pus de grains de poudre que le corps
-        <lb/>de noſtre Autheur contient d’iniures, de meſdiſances,
-        <lb/>de paroles faſcheuſes &amp; picquantes, d’mprecations
-        <lb/>&amp; de calomnies Et apres cela il feira des proreſta
-        <lb rend="¬" break="no"/>tions qu’il parle ſans intereſt, ſans paſſion, ſans ai
-        <lb rend="¬" break="no"/>greur, &amp; ſans inuectues: En voila aſſz poudr faire
-        <lb/>voie qui vous eſtes iuſques au fonds de l’aine. DPu <pb n="8"/>
-        <lb/>plus profond du cœur, la bouche parle dit le pro
-        <lb rend="¬" break="no"/>uerbe.
-        <lb/>Phlon Iuif au traité qu’ila compoſé contreFlac..
-        <lb/>cusrapporte qu’il y auoit en Alexandrie vn certain
-        <lb/>Greffier, qui pour ſes fauſſetez fut nommé l’homme
-        <lb/>à la plume meurtriere, l me ſemble que ceſte qualité
-        <lb/>ne vous conulendroix pas mal pour les voſtres, puis
-        <lb/>qu’elles ſont ſi funeſtes au plus grand homme d’Eſtat
-        <lb/>au moius intereſſeé de tous ceux qui ont iaimais gou
-        <lb rend="¬" break="no"/>uerué les affaires de cette Monarchie. Tanuss veri
-        <lb rend="¬" break="no"/>aei obſtrepist aduler ſenſs, quamtuma &amp; corruptor ſti
-        <lb rend="¬" break="no"/>lus. Dit fort bien Tertulien en parlant anx perſonnes
-        <lb/>de voſtre ſorte. C’eſt pourquoy toute la France vous
-        <lb/>doit auoir en vne tres grande abomination, à cauſe
-        <lb/>que vous dechirez l’honneur &amp; la renommée d’au
-        <lb rend="¬" break="no"/>truy ſelon le bon plaiſir de voſtre intereſt, ouſelon
-        <lb/>le caprice de voſtre Paſſion tres deſordonnée, ſans
-        <lb/>craindre les tourmens dont lont iuſte ment menaſſez
-        <lb/>ceux qui oſent entreprendre de commettre vn ſi
-        <lb/>abominab le crime.
-        <lb/>La raiſon pour laquelle Monſieur le Cardinaſ a
-        <lb/>fait empſonner les Princes, n’a point de ſondement
-        <lb/>dans lidée de petits ſç̧auanteaux, qui tranchent des
-        <lb/>Doéteurs en Politique,sãs faire aucune relexion que
-        <lb/>c’eſt la ſcience des ſolides, &amp; que les taiſons d’Eſtat
-        <lb/>ne peuuent eſtre mamées que fort groſſierement,
-        <lb/>par des perſonnes qui n’ont point vieilly daasl’exer
-        <lb rend="¬" break="no"/>cice de leurs intigres, ſelon le die de noſtre Au
-        <lb rend="¬" break="no"/>theur au commencement de ſon libelle.
-        <lb/>Si cela eſt, comme il n’en faut pas douter, comment
-        <lb/>eſt-ce qu’vn hõôme comme noſtre Autheur qui n’eſt
-        <lb/>ny Philoſophe, ny Politique, ainſi qu’il l’aduoüe luy
-        <lb/>meſme, &amp; comme il la deſia proreſté dans l’entréc
-        <lb/>de ſon diſcours d’Eſtat, eſt ſioſé que de vouloir diſ
-        <lb rend="¬" break="no"/>courit <pb n="9"/>
-        <lb/>5
-        <lb/>courir d’vhe ſoience, ou les plus grands homes du
-        <lb/>ſieçle ne voyent goute. La raiſon d’Eſtat, oula
-        <lb/>prudeace Poliriqueeſt d’vne cornoiſſance ſi dffieile,
-        <lb/>quea yie de l’hotome eſttrop courte pour l’appren
-        <lb rend="¬" break="no"/>dre, &amp; vous Manſieur le cririque, qui n’auez peut
-        <lb rend="¬" break="no"/>eſtre iamais mis le nez que dans vne claſſe de Pedan
-        <lb rend="¬" break="no"/>terie, yous voule igerer d’en faiuedes leons aux
-        <lb/>plus couſomme , - ce que cete ſciancea de pls
-        <lb/>ayſteiaux &amp; dan les reuolulons, &amp; dans lade
-        <lb rend="¬" break="no"/>monſtration des choſes les plus diffieiles..
-        <lb/>Petit ſçauameau en cette doftrines Royale, eftu
-        <lb rend="¬" break="no"/>dez yous de grace à des mtieres qui vous puiſſent
-        <lb/>eſre plhs’ytiles e plus; honorablas, Et ſas aller
-        <lb/>ſoüiiller adola des idées du commun comme vous
-        <lb/>voulez,pour y contempler les prineipes de cette
-        <lb/>dangereufe émanatipn, &amp; les grands Morifs de ce!
-        <lb/>empriſonnement s Et ſans meſme que ces quatre
-        <lb/>puiſſans partis, quiſont les inereſſez, les genereux,
-        <lb/>les Theologiens, &amp; les Philoſophes à’voſtre compte
-        <lb/>ſe debatent pout la reſolution de ce doute, ſçachez
-        <lb/>quoy que vous ne ſoyez ny Philoſophe ny Politique,
-        <lb/>ny auunement ioereſſé comme vous l’auez defia
-        <lb/>dit, que çe n’aſt nypour aupoir voulu l’eſpće de Con
-        <lb rend="¬" break="no"/>neſtahle, ny pot auoir fait des deandes qui luy
-        <lb/>eſtoient inferieures, ny pour auolr cormblé́ Mon
-        <lb rend="¬" break="no"/>ſieur le. Catdinal de ſes faueurs &amp; deſesgraces, ny.
-        <lb/>parce que mnoaſieur Je Prinçe ne fçauroit demander
-        <lb/>à la France:, que ce qu; a faue a ais à a diſpoſi
-        <lb rend="¬" break="no"/>tion de. Monſieut le Cardinal,, nypar ee queſon
-        <lb/>Eminécne ſçutoit fauoriſer outesles demãdcbde
-        <lb/>mouſiu le Rtinçe; ſans ſe deſtruite aypanceque
-        <lb/>Monſieur le Cadnal n’a point de paad forte paſ
-        <lb rend="¬" break="no"/>ſion que celle de ſe mantenir dans ea jgauanement
-        <lb/>abſol vquì fat toutes vos ſappoſisMaispout
-        <lb/>C <pb n="10"/>
-        <lb/>10
-        <lb/>auoir voulu faire beaucoup de choſes o voſtre éfi
-        <lb rend="¬" break="no"/>endement ne ſç̧auroit at indre; pare-qu vous n’e
-        <lb rend="¬" break="no"/>ſtes pas jnydans le ſeerex, ny dans Je Miniſtere.
-        <lb/> Que ſi d’auanture l’on ſe vouloit figurer que ie
-        <lb/>vouluſle toucher aà l’honneur de ceé Prince, en ad
-        <lb rend="¬" break="no"/>uançant ces paroles, que l’on perde cetté opinion
-        <lb/>de grace: le pnoteſte deuant Dieu &amp; deuantſcs
-        <lb/>hommas, que t’eſt à quoy ie -peaſ lemoſns , ſça
-        <lb rend="¬" break="no"/>chant bin le reſpet qae l’oni dois &amp; a ſa naſſance
-        <lb/>&amp; à ſon merite. Quand ces deux conſiderations
-        <lb/>ne me feroientpas en la vneration qae ie les ay
-        <lb/>touſours enës, ſaſule veru me reriendroit dans
-        <lb/>mon deuoir, &amp; mz porteroit à ne rien de qui ne
-        <lb/>fut tres eiuil &amp; trsraiſonnable; ie ́ue ropre
-        <lb rend="¬" break="no"/>ligieuſoment ſa valeur &amp; la qualire de Prince, pout
-        <lb/>auoir des paroles licentieuſs conrtrone perſonne
-        <lb/>ſi eſleuéé Ou il faur parler auoc grande venera
-        <lb rend="¬" break="no"/>rion dc ccs Illuſfnes, oa nen parlepianais en faç̧o
-        <lb/>quelconque Quoy qu’ils facen ou qu’ils dient, la
-        <lb/>cenſur de leurs deportemens h’oeſt pas dée noſtre
-        <lb/>iuriſdiction ls ſont tropeſleuez au deſſus de nous,
-        <lb/>pour bion iuger de leurs facons de faire. Noſtre
-        <lb/>modeſtie nbus oblige à ſuppoſer qu’ils ſout par
-        <lb rend="¬" break="no"/>faits, parce- que leur condiion les oblige à l’eſtre:
-        <lb/>-Quié ſipafois il nous ſemable voir certaines taches
-        <lb/>en ieurs actions, nous les deuons regarderauec ad
-        <lb rend="¬" break="no"/>miration, comme celles qui paroiſſent aux corps
-        <lb/>de quelques planetes. Ee ie vus iure-que ie n’ay
-        <lb/>rautredeſſein que de reſpondre à l’Autheurdes re
-        <lb/> ſolutious Politiques ſur les difours qu’ià fait,
-        <lb/>que monſieur le Prince, deſaptrouuera comrae
-        <lb/>tres pernicieux à l Eſtat &amp; à̀ ſon honneur, lors
-        <lb/>qu’il aur aconnoiſſance.
-        <lb/> Ouy Certe l faut que ce petit ſç̧auanu ſqaehe <pb n="11"/>
-        <lb/>1
-        <lb/>1
-        <lb/>quec les Roys ſont des perſonnes ſacré́es, qui me
-        <lb/>ſont pasmoins au deſſus des Princes, que les Prin.
-        <lb/>ces le ſont au deſſus dureſte des hommes, &amp; quand
-        <lb/>ie diray encore bien plas, ie ne croiray pas auan
-        <lb rend="¬" break="no"/>cer vne propoſition qui ne ſoit tres raiſonnable.
-        <lb/>Les Roys ont vne puiſſance ſi abſolue ſur les ſu
-        <lb rend="¬" break="no"/>iets qu’il ne leur reſte autre choſe que la mortou
-        <lb/>lP’obeiſſanee: Et quandie parle des ſubiets; i’entens
-        <lb/>parler auſſi bien des Princes, que du commun du
-        <lb/>peuple. Les hiſtoires ſone pleines de ces exemples
-        <lb/>ans qu’il ſoit beſon d’en raporter icy pas vn
-        <lb/>pour la lſtification dé mon dire- Lesperſonnes,
-        <lb/>Royales ſohſacf́es, que Dieu ne veut pas qu vni
-        <lb/>hlomne de quelque condldni qu il puiſſe eſtre,
-        <lb/>ait vne mauuaiſe penſée. Cela eſtant puis qu la pa
-        <lb rend="¬" break="no"/>role éternelle le’ veut, par quelle Loy eſt ce que
-        <lb/>les Princes ſeroient liberez de leur puſſſance. Vous
-        <lb/>ne trouuerez pas ny’dans les Loix humines ny
-        <lb/>dans leN Loix diuines d’abrogation de cette Loy
-        <lb/>inniolable qui les oblige comme nous à̀ l’authorit
-        <lb/>des Souuerains’&amp; à cette puiſſance independantc.
-        <lb/>Ne teprécipite poitrtde te retirer’ de deuant la fa
-        <lb rend="¬" break="no"/>ce du Roy, dit nicore lainefmbe Vlonté lnfnie n,
-        <lb/>ſon Eccléſiaſte; &amp; he petſéuere point n choſ
-        <lb/>mauuaiſe, car il fera ront ce il ſtiy plaira.
-        <lb/> Si ce Souuicrau Seigneur de ront lſtre crée nc
-        <lb/>met point d’exceptio -en ſa puiſſaee, comment
-        <lb/>eſt que tu as l uidace Politique, criiineſd’y pbe
-        <lb/>ſedehoſtc &amp; d’A vouIiir eélirles Prin2
-        <lb/>Comment eſt ce ue tu oſes cxamlrrer des actions
-        <lb/>ſi ſublimies&amp; ſi eſleuces iu deſſus de ta portée? Sil
-        <lb/>neé nous eſt pas’peérmis de dire au Roy quiefais t,
-        <lb/>ſelon la mene Sageſſe, re te laſſe pëſersil elſt
-        <lb/>.2
-        <lb rend="¬" break="no"/>bien ſeant d’en diſtourir de la ſorte.
-        <lb/>¬ <pb n="12"/>
-        <lb/>12
-        <lb/>Ne ſçais tu pas comme i’ay deſ-ia di en repli,
-        <lb/>quant à l’Autheur du Reueille. Matin de laFronde
-        <lb/>Royale, que le Miniſtre capable de ſoulager leSou,
-        <lb/>uerain en la cõduite de ſa Monarchi, &amp; qui le ſçait
-        <lb/>aſſiſter de ſes conſeils pour aſſujettir tout’ce qui
-        <lb/>ſe voudroit oppoſer à̀ la felicité de ſon regne, eſt
-        <lb/>a ſa perſonne ce que les rayons du Soleil ſourà ce
-        <lb/>bel Aſtre duiour, ouee que les facultez de l’am4
-        <lb/>ſont à cette ſubſtance ſpirituelle; Ou pour te l4
-        <lb/>mieux cxprimer vn autre ſoy meſme? C’eſt à vray
-        <lb/>dire vn appuy ſans l’aide duquel le Monarque de;
-        <lb/>meuroit accabléſous le faix de ſes affaires. Et çer,
-        <lb/>tes pour viue &amp;pour forte que puiſſe eſtre l’appre
-        <lb rend="¬" break="no"/>heſion du iugenmer du Prince, il ne laiſſe pasd’a,
-        <lb/>uoir touſiours beſoin de l’aſſiſtance deſon Mini
-        <lb rend="¬" break="no"/>ſtre. En vn moc s’en prendre à ceux qu’ils ont eſta.
-        <lb/>blis pour la conduite de leurs affaire;, c’eſt s’en
-        <lb/>prendre à leur propre perſonne..
-        <lb/>Iugez aprez céla Monſieur le nouuea, Politl,
-        <lb/>que, ſi vous eſtes criminel, &amp; ſi voſtre perſonne
-        <lb/>court riſque. Iugez apreés cela ſi le Miuiſtre m’eſt
-        <lb/>pas vne partie du Souuerain, &amp; ſi l’on peut rauail
-        <lb rend="¬" break="no"/>ler à la ruine de l’vn, ſans ranter à la Maieſteé de
-        <lb/>l’autre. Changez de barerie ie vous en ſupplie, &amp;
-        <lb/>taſchez d’obeir à Dieu, au Roy, &amp; meſne aux
-        <lb/>Loix de lvraye Politique. Il ny a ny honneur ny
-        <lb/>profit ̀ faire le caprieieux, ny le calomniateur, ny
-        <lb/>l’ennemy du Ciel &amp; de la terre. Vous auez beau
-        <lb/>abyer contre la Lue, les mouaemens degoqute
-        <lb/>la machine Aſtrée, n’en ſeront pas pour cela ny,
-        <lb/>plus lents, uy plus precipitez en facon quelçon
-        <lb rend="¬" break="no"/>que. C eſt pourquoy vous n’auez qu’à vousreſo
-        <lb rend="¬" break="no"/>dre à faire mieux, ou bien a vous reſoudre ducou5
-        <lb/>à ne rien faire.
-        <lb/>Les <pb n="13"/>
-        <lb/>Les mediſances, les iniures, les diſcours picquans
-        <lb/>&amp; les calomies, comme i’ay deſia dit, ne furent
-        <lb/>iamais des raiſons à nous perſuader aà faire iniuſte
-        <lb rend="¬" break="no"/>ment des choſes contre nous meſmes. De grace à
-        <lb/>quoy ſeruéttant de redites ſur vn meſme ſuier,n’eſt
-        <lb/>ce pas donner diuerſes formes d’expreſſion à̀ vne
-        <lb/>meſme matiere, &amp; ſe rendre importun à ceux
-        <lb/>qu’on voudroit artirer aà ſon party, &amp; qu’on vou
-        <lb rend="¬" break="no"/>droit animer de ſa propre paſſion, pour les meta
-        <lb rend="¬" break="no"/>morphoſer en vn autre ſoy-meſme.
-        <lb/>Ie voy bien que vous vous laiſſez inſenſiblemenc
-        <lb/>ſi fort aller à ces termes emphatiques de ma pre
-        <lb rend="¬" break="no"/>miere ſuppoſirion, de ma ſeconde verité, de cet
-        <lb/>inuincible raiſonnement, de cette conſequence
-        <lb/>qui paroiſt ſi viſible &amp; dont vous vous ſeruez à tout
-        <lb/>propos, que vous ne ſongez plus à̀ la iuſtece de
-        <lb/>vos conceprions, ny à̀ l’ordre de vos matieres,
-        <lb/>prenez garde de grace àl aduis que ie vous donne,
-        <lb/>&amp; taſchcz d’en faire voſtre profir le mieux qu’il
-        <lb/>vous ſera poſſible. Les bons conſeils ne ſont iamais
-        <lb/>a meſpriſer, &amp; de quelque part que le bien nous
-        <lb/>puiſſe arriuer, ine doit iamais eſtre rebuté de per
-        <lb rend="¬" break="no"/>ſonne. Il eſt de ſoy ſi aymable que ſi la nature ſç̧a
-        <lb rend="¬" break="no"/>uoit parler, elle diroit que c’eſt le Dieu de l’Vni
-        <lb rend="¬" break="no"/>uers, &amp; le principe de toures les plus gloriecuſes
-        <lb/>actious deshommes.
-        <lb/>Paſſons donc de cette reſolution à ſa deuxieſme,
-        <lb/>qui eſt, pourquoy eſt-ce que monſireur le Cardinal
-        <lb/>s opiniaſtre ſi fort à leur derention.
-        <lb/>Mais c’eſt trop s’eſtendre ſur vne reſolution qui fe
-        <lb/>pouuoit conclure en bien peu de parolles, puis
-        <lb/>qu’il ne s’agiſſoit que de ſç̧auoir pourquoy eſt-ce
-        <lb/>que moſieur le Cardinal a frit empriſonner meſ
-        <lb rend="¬" break="no"/>ſieurs les Princes, au pourquoy eſ4-ce. que leuts
-        <lb/>D <pb n="14"/>
-        <lb/>i14
-        <lb/>actions les a fait mettre ou ils ſont, pour ne pas fail
-        <lb rend="¬" break="no"/>lir en parlant, &amp; pour dire la choſe comme elle
-        <lb/>ſe doit dire.
-        <lb/> C’eſt icy ouù noſtre Aurheur interreſſé, né fait
-        <lb/>pas bcaucoupde reflexions pour en trouuer la cau
-        <lb rend="¬" break="no"/>e, ainſi quil e fait en ſa premiere Reſolution Po
-        <lb rend="¬" break="no"/>litique, comme ſi les myſteres de l’vne, eſtoient
-        <lb/>d’vne nature plus inconnuë que ceux de l’autre. ll
-        <lb/>dit d’abord quc la deliurance de meſſieurs les l’rin.
-        <lb/>ces eſt la perte de monſieur le Cardinal. Si cela eſt
-        <lb/>ainſi, pourquoy eſt-ce qu’il fait tant d’impreca
-        <lb rend="¬" break="no"/>rions, &amp; qu’il dit tant de paroles iniurieuſes &amp; pic’
-        <lb/>quantes contre vn Miniſtre qui n’a iamais encore
-        <lb/>eſtry ſa reputation par aucun acte d’infidelité́, &amp;
-        <lb/>qui n’a pont de vie que pour la conſacrer au bien
-        <lb/>du Roy &amp; du peuple. De grace monſieur le nou
-        <lb rend="¬" break="no"/>ueau Polltiquie, ou ſont ceux qui’voudroient con
-        <lb rend="¬" break="no"/>ſentir à leur perte, pour ſeulement donner la liber
-        <lb rend="¬" break="no"/>té à leurs ennemis, en vne ſaiſon, où peut-eſtre
-        <lb/>toute laFrance s’en trouueroit bien affligeée.
-        <lb/> Nous ne ſosnmes plus du temps où̀ certains he
-        <lb/>roiques s’expoſoient à la mort pour le bien de la
-        <lb/>patrie, &amp; encore moins au temps où vn particulier
-        <lb/>ſe veuiille ſacrifier pour vn autre, comme il ſe trou
-        <lb rend="¬" break="no"/>uoit dansl’ancienne Rome. Il faudroit eſtre bien
-        <lb/>adroit en l’art de perſuader, pour l’obliger à̀ faire
-        <lb/>vne actioh de cette aature. Voyez apres ce que
-        <lb/> vous vcnez de dire, ſi monſieur le Cardinal doit
-        <lb/>faire ce que vous luy conſeillez en le menaç̧ant de
-        <lb/> la ſorte C’eſt luy apprendre à ne le pas faire quand
-        <lb/>vous veulez qil le face, comme nous auons deſia
-        <lb/>dit ailleurs en reſpõ̃ndant au Reueille-matin de la
-        <lb/>Fronde Royale. Et certes vous auez beau prendre
-        <lb/>la peine d deueloper vn pou plus clairement vo¬ <pb n="15"/>
-        <lb/> 15
-        <lb/>ſtré veriteé́ par vne longue deduction de toutes les
-        <lb/>circonſtances qui ſont ſuruenuës à cét empriſon
-        <lb rend="¬" break="no"/>nenent, &amp; qui ne laiſſent point trouuer d’autre
-        <lb/>ſource à̀ la deliurance des Princes, que celle de la
-        <lb/>perte de Monſieur le Cardinal. Son Eminence ny
-        <lb/>conſentira iamais puis qu’il ne le ſç̧auroir faire ſans
-        <lb/>ſouſcrire tacitement à̀ ſa perte Voila l’entréec de
-        <lb/>voſtre premiere raiſon, que vous pretendez ren
-        <lb rend="¬" break="no"/>dre plus ſenſible aà tous les curieux deſinterreſſez,
-        <lb/>bien toſt deduitte.
-        <lb/> Quand vous parlez de moſieur le Prince, vous
-        <lb/>parlez de celuy dont le noni eſt plus grand que
-        <lb/>toute l’Europe; dont la valeur eſt plus connu8
-        <lb/>que celle des Ceſars; Et dont la naiſſance peutal
-        <lb/>ler du pair auec toutes les plus ilfluſtres de la terre,
-        <lb/>ie l’aduouë. Mairs quand vous parlez de Monſieur
-        <lb/>le Cardinal Mazarin, vous parlez du plus grand
-        <lb/>homme que la narure ait mis au monde. Si mõſieur
-        <lb/>le Prince ne voyoit que trop qu’il falloic decrediter
-        <lb/>dans lidée des François en protegeant Monſieur
-        <lb/>le Cardinal, ie m’eſtonne q’l altvoulu trauailler
-        <lb/>luy meſme à̀ ſa diſgrace. Mais ie croy que c’eſt vne
-        <lb/>ſuppoſition que vous lnuentez pour luy faire dire
-        <lb/>ce qu’il n’a iamais eu dans la penſeée. Il faut bien
-        <lb/>auoir renoncé́ au ſens commun, pour parler de la
-        <lb/>ſorte, &amp; pur dire qu’il n’eſt pas bligé de luy
-        <lb/>pardnner vnorime qu’il na’iamais comnls, ny
-        <lb/>par les loix humaines, ny par les loix diuinés.
-        <lb/> C’eſt bien ignorer la plus belle partie de l’orai
-        <lb rend="¬" break="no"/>ſon Dominicale, &amp; le iugemcat que nous donnons
-        <lb/>contre nous meſmes lors que nous parlons à̀ Dieu,
-        <lb/>quand nous luy diſons, pardounez nous nos offons
-        <lb/>ſes, ainſi que nous les pardonnonseux qui ndas
-        <lb/>ont offenſez. Ce n’eſt ny raiſonner. en Chneſtien, <pb n="16"/>
-        <lb/>ny en Genereux, &amp; moins encbre en Philoſopue.
-        <lb/>Dien, l’Egliſe, &amp; noſtre propre gloire nous obli
-        <lb rend="¬" break="no"/>gent de pardonner à nos ennemis; &amp; la congrega
-        <lb rend="¬" break="no"/>tion des fidelles met cette action au rang des ſept
-        <lb/>uures de miſcricorde. Dieu pardonne bien quel
-        <lb rend="¬" break="no"/>que fois à̀ toute vne ville, aà cauſe de bien peu de
-        <lb/>iuſtes. Etiugement tres rigoureux ſera fait à celuy
-        <lb/>qui ne pardonnera pas, dit Sainct Iacques en ſe
-        <lb/>deuxieſme Epiſtre, &amp; tout cela ſe peut faire ſans
-        <lb/>que monſieur le Prince ſe mette en peine de iuſt
-        <lb rend="¬" break="no"/>fier l’iniuſtice du procedé de monſieur le Cardinal
-        <lb/>par celle de la tolerance, &amp; ſans qu’il laiſſe l’idée de
-        <lb/>ſon acouſatrion dans l imagination des foibles pour
-        <lb/>faire paiſiblement ſuruiure à la reparation de ſa
-        <lb/>gloire, celuy qui ne la iamais fletrie.
-        <lb/>La Politique, la Morale, &amp; le Chriſtianiſme ne
-        <lb/>ſont point dans voſtre ſenriment, &amp; vous feront
-        <lb/>voſtre procez, quand vous ne les forcerez comme
-        <lb/>vous faites à̀ dire le contraire. La Politique( pour
-        <lb rend="¬" break="no"/>ueu que ce ſoit vne Politique Chreſtienne: Car
-        <lb/>c’eſt de celle-là que vous &amp; moy deuons parler,
-        <lb/>vous condamnera. S’eſt-il iamais veu vn plus grand
-        <lb/>ny vn plus digne legiſlateur que Moyſe Et s’eſt-il
-        <lb/>iamais veu vn Souuerain plus offencé de ſon peu
-        <lb rend="¬" break="no"/>ple, que ce conducteur des legions Hebraiques.
-        <lb/>Combien de fois a t’il failly d’eſtre lapidé par cette
-        <lb/>race Abramide &amp; bien loin de s’en venger ne ſe
-        <lb/>mettoiril pas concinuellement en prieres &amp; en
-        <lb/>oraiſons, pour appaiſer l’ire que Dieu pourroit
-        <lb/>auoir conceuë contre ce peuple Il y a vn nombre
-        <lb/>infiny d’autres exemples pour cela mais il faut
-        <lb/>paſſer outre.
-        <lb/>La Morale nous preſche. t’elle autre choſe qu’à
-        <lb/>rauailler à lamoderation de toures nos paſſions?
-        <lb/>Et <pb n="17"/>
-        <lb/>Et fut elle inuanté́e que pour adoueir toutes nos
-        <lb/>ſaillies. N’eſt-ce pas par ſon moyen, &amp; par vn mi
-        <lb rend="¬" break="no"/>racle auſſi rare lqu’il eſt il!uſtre que nous tirons
-        <lb/>uos forces de nos propres foibleſſes, &amp; l’ornement
-        <lb/>de noſtre ame, de la confuſion de noſtre nature?
-        <lb/>les paſſions mal meſnagées ne ſç̧auroient faire que
-        <lb/>des demons, &amp; tout au contraire elle ne ſçauroient
-        <lb/>faire que des Anges ſans aigreur ou dumoins que
-        <lb/>des hommes ſans vangeance.
-        <lb/>Et la religion Chreſtienne, que dit elle en tous
-        <lb/>ſes precepres, ſi ce n’eſt qu’il faut pardonner à ſes
-        <lb/>ennemis, ſi nous voulons qoe Dieu’nous pardon
-        <lb rend="¬" break="no"/>ne eſcoure ce que dit leſus- Chriſt mourant en.
-        <lb/>l’arbre de la Croix, lors qu’il prie ſon pere en fa
-        <lb rend="¬" break="no"/>ueur de ceux qui le perçoient de rtoutes parts, pour
-        <lb/>luy faire rendre l’ame. Mon pere, pardonnez de
-        <lb/>gace à̀ ces pauures- creatures les tourmens qu’ils.
-        <lb/>me font ſoufftir injuſtement: car ils ne ſçauent ce
-        <lb/>qu’ils fone ny ne le ſçauroient comprendre. Il eſt
-        <lb/>ray que cét Adorable Seigneur nous deffend
-        <lb/>d’auoir meſme la penſée de faire mal à peſonne,
-        <lb/>&amp; que certainemẽt ilnous en ferrérc cõ̃pt toſt
-        <lb/>ou rard, ou en ce monde ou en l’ure: Mais quand
-        <lb/>’actioneſtfaite, il veut abſolumeat qu’on pardon
-        <lb rend="¬" break="no"/>ne à ſes ennemis, ſi l’on ne veut faire vn crme éter
-        <lb rend="¬" break="no"/>nellemenr puniſſable. Ie n’ay dit tout ccey que
-        <lb/>pour vous monſter que vous auanez inconſide
-        <lb rend="¬" break="no"/>ement des parolles mal. digres..
-        <lb/>Enfin ſi monſieur le Prince eſt détenudans v.
-        <lb/>lieu de ſeuneté, il ne s’en doit prendre qu’à luy meſ
-        <lb rend="¬" break="no"/>mes, &amp; à ceux qui par lur pernicieux conſeils l’one
-        <lb/>fait tomber dans l inconuenient ò il ſe trauue: I
-        <lb/>auoit vne ſouueraine Auchomté. daus d’Eſtat, il
-        <lb/>eſtoitaimeé de tous les Ftançois &amp; redbuté de tous
-        <lb/>E <pb n="18"/>
-        <lb/>les ennemis de cette Couronne. Il iouiſſoit d’vn
-        <lb/>entier repos &amp; d’vne gloire ſans pareille. Il auoit
-        <lb/>outes les plus belles charges &amp;les plus beaux Gou
-        <lb rend="¬" break="no"/>uernemens de l’Eſtat. Il le pouuoit dire auec raiſon
-        <lb/>le plus riche ſeigneut de toute l’Europe, ſans mettre
-        <lb/>en ligne de compte les gratfications extraordinaires
-        <lb/>qu’il reçeuoit tous les iouts du Roy &amp; de la Reyne.
-        <lb/>Et cependant ſans conſiderer ee haut poinel d’hon.
-        <lb/>neur &amp; de gloire où il eſtoit eſleué, &amp; ſans contria
-        <lb/>buer à tout ce qui dependoit de luy pour ſe taintenir
-        <lb/>en l’Eſtat ou il eſtoit, ayant preſteé l’oreille à ſon am
-        <lb rend="¬" break="no"/>bition, &amp; à ceux qui le conſeilloient plus pour leurs
-        <lb/>inereſts particuliers que pout le ſien propre, ( puis
-        <lb/>que l bien &amp; l’haonneur ſont les princpaux motiſs
-        <lb/>de toutes les ations humaines ) il s’eſt embarqué
-        <lb/>dans des deſſeins qui ont tellement deplû au Roy
-        <lb/>&amp; a la Reyne, &amp; leur ont ſemblé ſi preiudiciable à
-        <lb/>lEtat, comme il ſe peut voit par la declaration du
-        <lb/>Roy, ſur la detentio des Princes faite le ao Ian
-        <lb rend="¬" break="no"/>uier, de l’année i6o. que leurs Maieſté́s ont eſté
-        <lb/>contraintes pour cela &amp; pour d’aut res raiſons que
-        <lb/>ie paſſe ſous ſilence, pour ne rien dire contre l’hon
-        <lb rend="¬" break="no"/>neur des Princes, de les faire arreſter, &amp; delas mer
-        <lb rend="¬" break="no"/>tre en eſtat de ne pouuoir pas executer leurs funeſtes
-        <lb/>entreprſes.
-        <lb/>Qui à t’il d’eftrange &amp; de nouueau en cel a Mon
-        <lb rend="¬" break="no"/>ſieur le Politique qui vous puiſle obliger à clabauder
-        <lb/>de la ſorte, concre l’honneur &amp; lereſpet que vous
-        <lb/>deuez à Dieu, au Roy, aux Regens, à la luſtice,
-        <lb/>à vos Miniſtres, &amp; à voſtre Prochain meſme, puis
-        <lb/>que cela eſt arriué pluſieurs fois à des perſonnes dõt
-        <lb/>la naiſſan e n’eſtoit pas moins illuſtre l’iſtoire
-        <lb/>de EF ance ne nous en fournit que tropd’exemples.
-        <lb/>&amp; ſans aller bien loing, Monſieur ſon Pere ne fut¬ <pb n="19"/>
-        <lb/>19
-        <lb/>il pas l’eſpace deſeize années enfermé dans le Bois
-        <lb/>de Vincene pour des moindres choſes.
-        <lb/>Sçauez vous monſieur que par tout ailleurs qu’é̃
-        <lb/>France on n’enfernme pas les perſonnes de ſa condi
-        <lb rend="¬" break="no"/>tion pour le mal qu’ils ont fat: mais ſeulemelr auſ
-        <lb rend="¬" break="no"/>ſi pour le mal qu’ils peuuent faite. La Maieſté des
-        <lb/>Roys,ne peut pas ſouffrir qu’vn homme ſoit en eſtat
-        <lb/>de luy donner de la ialouſie. Il ne faut que luy faire
-        <lb/>vn peu d’ombre pouir la bleſſer beaucoup, &amp; pour
-        <lb/>eſtre criminel lenefte dſavies¬2
-        <lb/>Quelle cruaurez nexerça pas Philippe 2. contre
-        <lb/>Soto&amp; contre Eſeouedo, pour vn ſimple ſoupeon?
-        <lb rend="¬" break="no"/>Quel tratement ne fitpuas Charles-Quint à ſon
-        <lb/>propre frere, ſur vn aduis qu’o luydonna, qui paut
-        <lb/>eſtre n’eſtoit pas veritable? Et ſans aller chercher
-        <lb/>des exemples que dans noſtre Hiſtoire, que ne fit
-        <lb/>pas encores Louyſe de Sauoye mere du Roy Fran
-        <lb rend="¬" break="no"/>çois lI. à ce pauure Prince, pour auoir ſeulement re
-        <lb rend="¬" break="no"/>fuſé de l’eſpouſer? Et vous voudriez apres vn grãd
-        <lb/>n ombre d’exemples dont toutes les Hiſtoires ſont
-        <lb/>pleines, blaſmer vne action faite auec tant de luſti
-        <lb rend="¬" break="no"/>ce. Que chacun comme vous trouueà redire au Mi
-        <lb rend="¬" break="no"/>niſtere de ſon Eminence, &amp;e qu’a meſme tẽps il pro
-        <lb rend="¬" break="no"/>poſe vn homme plus entendu que luy aux raiſons
-        <lb/>d’Eſtat, &amp; en la ſçience Politique, ils ſeront eſcoutez
-        <lb/>ſimplenent; Car de dire à leurs Maieſtez, auec tant
-        <lb/>de chaleux comme vous faites, que monſieur le Car¬
-        <lb rend="¬" break="no"/>dinal eſt eérnger, qu’il eſt de bas lieu, &amp; qu’l set
-        <lb/>emparé de toutes les finanees de France, ce n’eſt rien
-        <lb/>dire que desſetiſes.
-        <lb/>D’où eſtoit le Comne d’Oliuare en Eſpagne, &amp; d’oâ
-        <lb/>eſtoit le Mareſchal d’Ancre en Fr ance, &amp; d’où eſtoit
-        <lb/>pluſieurs autres en Angletetre, &amp; en Allemagne.
-        <lb/>Quil eſt de bas liou, aous auons deſia reſpondu à cete
-        <lb/>. <pb n="20"/>
-        <lb/>2
-        <lb/>ealomnie. Qu’il a vollé outes les finances de Fran
-        <lb/>e, &amp; depuſs qu’il eſt au Miniſtere onn’a pas ſceu
-        <lb/>aer ſeuſement en toute la France dequoy payer
-        <lb/>ex de la maiſon du Roy, ny dequoy payer les ga
-        <lb rend="¬" break="no"/>r des oneiers de la couroms peunt peut
-        <lb/>mtrouuerde l’argent pout faire aller la deſpencae de
-        <lb/>bouehe. Mais comme ces matieres demandent &amp;
-        <lb/>plus de loiſir, &amp;e plus d’eſte due pour y reſpodre nou
-        <lb rend="¬" break="no"/>Eemertcons la partie à vne autre fois,&amp; c’eſt- la moy
-        <lb rend="¬" break="no"/>enmant la igtace de Dieu, ou i’eſpere deſnller les
-        <lb/>yeux a ous les ennemis de ſon Eminence pour
-        <lb/>les reduire ou paur les confondre. Ce qui me ſera
-        <lb/>eommeie eroy fort facile, puis que ie n’auray que
-        <lb/>des ignorans &amp; des enuleux à cobatre, Adieu. </p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="genre">réponse</term>
+					<term type="genre">discours adressé</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-10-25" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<pb n="8"/>
+				<pb n="9"/>
+				<pb n="10"/>
+				<pb n="11"/>
+				<pb n="12"/>
+				<pb n="13"/>
+				<pb n="14"/>
+				<pb n="15"/>
+				<pb n="16"/>
+				<pb n="17"/>
+				<pb n="18"/>
+				<pb n="19"/>
+				<pb n="20"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+4¬
+         p
+        NCE
+        . . a
+         4
+        A LA RESOLVTION POLITIQVE,
+        des deux principaux doutes qui oceupent
+        les eſprits du temps.
+        SCAVOIR EST.
+        Pourquoy eſt-ce que le Cardinmal azarin afait em
+        priſonner Meſieurs les Princes dans le temps de
+        la Minorité
+        Et pourquoy eſt-ce qu’il s’opiniaſtre à leur detention,
+        en veuë̈ des deſordres qui troublent l’Eſtat, pour proe
+        curer leur eſlargiſſement.
+        Dediée à tous ceux qui voudront voir des raiſons
+        ſans paſsion, des iuſtifications ſans ambiguité, &amp;
+        des concluſions ſans fallace. 
+        
+         :., 8s
+        de A opee e es ens re, ds ele diles e ae es ee ee cnes
+        u g e4 4e &amp;s ô, 4 Q &amp; &amp; e &amp;
+        es ee EeE
+        7r r
+        RESPONCE A LA RESOLV
+        D D
+        tou Politique, des deux principaux
+        doutes qui occupent les eſprits du temp;
+        Scauoir eſt, pourquoy eſt-ce que le Car
+        dinal aarin a fair empriſonner
+        Meſieurs les Princes dans le temps de.
+        la inorite.
+        LVFARQVE au traireé qu’il a compoſe.
+        JJ de la malice d’Herodote, remarque quels
+         ſont les effets dont cette fueſte &amp; inſigne
+        . Megere ſe ſert, pour rernir toute la gloite
+        que les grands hommes du Siecle ſe ſont acquis,
+        par les plus illuſtres actions de cette vië moftelle.
+         Le premier, dit il, c’eſt d’vſer de certaines paro
+        les faſcheuſes &amp; picquantes pou exprimer ſes
+        penſées., Et cela eſt ſi ftequent dans e libelleé de
+        la Reſolution Politique, que qui voudroir prendre
+        la peine de repliquer aà̀ routes ces calomnies; en
+        pourroit faire vn iuſte volume, quoy qu’il l’ait de
+        deé à̀ ceux qui voudront voir vne Apologie ſans
+        paſſion, vne inuetiue ſans aigretr, &amp; vn raiſonné̈.
+        ment fans obſeuriré, qu’il proeeſtedeuaine Dieu
+        de parlér auec beaucoup de reteme.
+         Lſecond eſt de rompre le fil de ſes paroles, af
+        d’y faire entrer plus d’innprecations quede raiſon
+        esdſcours, ou que de fapoſuons vtay-em
+        blables.
+        A ij 
+        Et le roiſieſme eſt de meſler quelque blaſméou
+        quelque mediſance, parmy les loüanges que l’on
+        veut donaer aux perſonnes, &amp; ccla c’eft encourirla
+        malediction du l’oë̈te tragique lors qu’il dit,
+         Maudit celuy qui blaſme accortement,
+        Tout ceux qu’il veut exalter hautement.
+         Ce quiſe trouue par cxcellcnce dans les ouura
+        ges de noſtre Autheur, lors qu’il dit que Monſieur
+        le Cardinal ne ſe ſeroit iamais peu maintenir dans
+        le gouuernemét de l’Eſtar, ſans la faueur &amp; l’aſſiſtã
+        ce de monſieur le Prince. Que monſieur le Prince.
+        ne pouuoit faire des demandes que tres ambitieu
+        ſes: que ça eſté́ la ſeule imprudence de monſieur le
+        Prince, d’auoir entrepris de ſouſtenir le Cardinal
+        Mazarin mqlgré tous les efforts que le Royaume
+        faiſoit pour le precipiter du’gouuernemétdel Eſtat:
+        que la Fran n cbãgea ſon amour en haine qu’a
+        pres l’aueuglafentdecete prorection: Que mon
+        ſicur le Pripce reſtabhis monſieur le Cardinal dans
+        ſoni’preierécdaen deſpit de la coniuration gene
+        ralle de toute la mMonarchie; Que monſieur le Prin.
+        ne s’eſt degie que pour auoi ſouſtenu la chœute de
+        joſierle asdinal: Que la eonſeraationde m
+        ſierle Cainal dans l’eminéte dignmité de premior
+        Miniſtre d’Eſtat,, &amp; la reconnoiſſance qu’il doit au
+        biens qu’il areçgusde monſieur le Prince, ſontin
+        compatilés, &amp; qu’il faue neceſſairomentqu’il ſe
+        teſmpigneipgras,pour ſ: mainoanirſ, ou qu’il fe
+        etquiſe, , Que Moſieur le Cadial noſçauoit
+        fauoriſer toutos,-les demandes de Monſieur
+        le Prinçe ſa ſ perdre : Q’il far lneceſ
+        ſairemeuil le choque pourſemainrenin
+        Que lpoudeonſeuleCardinabeſbabſoßu,
+        ljuby
+        1
+        2 4 
+        quoy que dependant des ordres de leurs Maieſtez,
+        Que la reconnoiſſanee que monſieur leCardinal
+        fefoit à monſicur le Prince le feroit choir dela S ou
+        ueraineté qu’il a dans lEſtar: Que ce ſeroit l eſ
+        cueil de fa haute fortune: Que mouſieur le Car
+        dinal doit eſtre ingrat pour ſe maintenir, ou recon
+        noiſſant pour ſe perdre: Que la neceſſite de ſe main
+        tenir luy a fait empriſonner les Princes: &amp; que
+        monſieur le Cardinal ne peut ny ne doit iamais
+        conſentis à la deliurance de monſieur le Prince ſans
+        ſouſcrire à ſa perte.
+        Voila s’il me ſemble ſçauoir fort mal prendre la
+        cauſe de celuy pour qui l’on plaide, &amp; ie neſcay ſi
+        ſes propres ennemis auroient l’eſprit de trouuer des
+        raiſons ſi outrageuſes à la valleur &amp; à la digniteé de
+        ce grand Prince. Si nmonſieur le Cardinaſ ne s’eſt
+        peu maintenir dans le gouuernement de l’Eſtar,
+        ſans l’aſſiſtance de monſieur le Prince, monſieur le
+        Prince eſt donc plus criminel que luy, ſi l’autre l’eſt
+        de l’auoir fair ce qu’il eſt, &amp; de l’auoir mais en eſtat
+        de faire ce que bon luy ſemble. Si monſieur le Prin
+        ce ne pouuoit faire que des demandes tres ambi.
+        tieuſes, il n’a pas eu tort de le ſeurer de-cela. Si ça
+        eſté vne imprudence à monſieur le Prince d’auoir
+        ſouſtenu le Cardinal Mazarin, c’eſt vne action tres
+        louable à̀ monſieur le Cardinal Mazarin de le punir
+        de ſon iniuſtice. Si monſieur le Cardinal ne ſçau
+        roir fauoriſer les demandes de Monſieur le Priuce
+        ſans ſe perdre, eſt-il iuſte qu’il le face. Si le pouuoir
+        de monſieur le Cardinal eſt abſolu, &amp; qu il neſoit
+        dependant que des ordres de leurs Maieſtez, qui
+        ſont ceux outre leurs Maieſtez qui puiſſent trou
+        uer à redire à pas vne de ſes procedures? Enfin ſi
+        monſieur le Cardinal ne peut ny ne doit iamais cõ¬ 
+        ſentir à la deliurance de Meſſieurs les princes, ſans
+        ſouſcrire ad ſa perte, eſt-il raiſonnable qu’il y con
+        ſente. Ie voy bien que leur Aduocat n eſt pas fort
+        ſç̧auant en l’art de perſuader de bonne grace. Voi.
+        la donc pour le troizicſme effect de la malice qui
+        eſt ſans iugement &amp; ſans conduite. Et pour faire
+        comme les eſcreuices, ou comme ceux qui liſent
+        l’hebreu, nous paſſerons de celuy-cy au deuxieſme,
+        qul eſt de rompre le fil de ſon diſcours, pour y faire
+         entrer plus de calomnies que de raiſonnables diſ
+        cours, ou que des ſuppoſitions vray ſemblables.
+        Quand ie parle de monſieur le Cardinal, ie
+        parle de celuy dont le nom n’a é́claté́ que comme
+        celuy d’Heroſtrate à Epheſe; c’eſt aà dire aà la faueur
+        des cmbraſements qu’il a fomentez dãs toute l’Eu
+        rope, dont les trrahiſons ſont generalement dete
+        ſtées, tant des eſtrangers que des domeſtiques, &amp;
+        de peur de redite, dont la naiſſance n’eſt pas plus
+        releué́e que celle des Boulangers-de Gonneſſe, ou
+        des Charbonniers de Paris, &amp; neantmoins toute
+        l’Europe ſçaura que ce traiſtre, ce vilain, ce deſcrié,
+        a fait empriſonner, &amp; le reſte.
+        Voyez de grace ſi c’eſt là parler ſans paſſi6 &amp; ſans
+        calõ̃nies, puis que le l’ape ne s’eſt iamais porté dans
+        la promotiõ de ſon Eminence (ainſi que nous l’ap
+        prend fort bien l’Autheur des Lumiers pour l’hi
+        ſtoire de ce temps( qu apres auoir recherché ſelon
+         la couſtume ſa gencalogie iuſques dans ſa ſource.
+        La nobleſſe de ſes anceſtres, dit-il en paſſant plus
+        outre, luy a fait vn chemin aux dignitez Eccleſia
+        ſtiques, &amp; ſaint Pierre n’ouure la porte de ſon Pa
+        lais qu’aux perſonnes d’vne naiſſance bien releué́e,
+        afin de les obliger à̀ des actions de meſme nature. Il
+        n’y a rien pourtant ny de plus ancien ny de ſi celo¬ 
+        bre que le nom de Mazarin ſur toute l’eſtendue de
+        la terre, &amp; l’on à veu le Sceptre &amp; ce nom portez
+        par vne meſme perſonne: on voit encore à preſent
+        vne ville trouuer plus de gloire dans ce nom, que
+        dans ces richeſſes.
+        Maara teli genus antiquans. Mazares prorex apad
+        Medos. Mazaris vrbs Sicili. dir noſtre excellent Au
+        rheur en parlant de ce grand homme.
+        Aprez cela voyez ſi Ies diſcouts de noſtre me
+        diſant peuuent paſſer pour des raiſonsſans paſſion,
+        ou pour des ſupoſitions vray ſemblables Et outre
+        tout ce que ie viens de dire, n’a t’il pas plus fait en
+        moins de quatre ans, qu’on n'auoit ſceu faire de puis
+        que nous faiſons la guerre, &amp; ſi Meſſieurs les Princes
+        n’euſſent pas troublé les affaires, n’auroient il pas
+        contraint les ennemis de cette Couronne à faire la
+        Paix relle que nous l’euſſions deſiré.
+        Voyons maintenant le pre mier effet de la milice
+        de noſtre Autheur, qui eſt d’vſer de certaines pareo
+        les faſcheuſes &amp; picquantes, pour exprimer ſes pen
+        ſées. En la page ſeprieſme, il l’appelle ingrat &amp; infa
+        me: En la huictieſme, malicieux Politique: En la on
+        ze, extrauagant &amp; yoleur: En la quatorze, Mazarin
+        endiablé: En la ſeiſieſme enragé: En la dix-huict am,
+        bitieux: En la vingt-ſix, il l’accuſe d’eſtre de villaine
+        extraton: Et en la vingt-ſept. il l’appelle deſcrié,
+        traiſtre &amp; vilain. Se peut il trouuer vn caque qui puiſ
+        ſe contenir pus de grains de poudre que le corps
+        de noſtre Autheur contient d’iniures, de meſdiſances,
+        de paroles faſcheuſes &amp; picquantes, d’mprecations
+        &amp; de calomnies Et apres cela il feira des proreſta
+        tions qu’il parle ſans intereſt, ſans paſſion, ſans ai
+        greur, &amp; ſans inuectues: En voila aſſz poudr faire
+        voie qui vous eſtes iuſques au fonds de l’aine. DPu 
+        plus profond du cœur, la bouche parle dit le pro
+        uerbe.
+        Phlon Iuif au traité qu’ila compoſé contreFlac..
+        cusrapporte qu’il y auoit en Alexandrie vn certain
+        Greffier, qui pour ſes fauſſetez fut nommé l’homme
+        à la plume meurtriere, l me ſemble que ceſte qualité
+        ne vous conulendroix pas mal pour les voſtres, puis
+        qu’elles ſont ſi funeſtes au plus grand homme d’Eſtat
+        au moius intereſſeé de tous ceux qui ont iaimais gou
+        uerué les affaires de cette Monarchie. Tanuss veri
+        aei obſtrepist aduler ſenſs, quamtuma &amp; corruptor ſti
+        lus. Dit fort bien Tertulien en parlant anx perſonnes
+        de voſtre ſorte. C’eſt pourquoy toute la France vous
+        doit auoir en vne tres grande abomination, à cauſe
+        que vous dechirez l’honneur &amp; la renommée d’au
+        truy ſelon le bon plaiſir de voſtre intereſt, ouſelon
+        le caprice de voſtre Paſſion tres deſordonnée, ſans
+        craindre les tourmens dont lont iuſte ment menaſſez
+        ceux qui oſent entreprendre de commettre vn ſi
+        abominab le crime.
+        La raiſon pour laquelle Monſieur le Cardinaſ a
+        fait empſonner les Princes, n’a point de ſondement
+        dans lidée de petits ſç̧auanteaux, qui tranchent des
+        Doéteurs en Politique,sãs faire aucune relexion que
+        c’eſt la ſcience des ſolides, &amp; que les taiſons d’Eſtat
+        ne peuuent eſtre mamées que fort groſſierement,
+        par des perſonnes qui n’ont point vieilly daasl’exer
+        cice de leurs intigres, ſelon le die de noſtre Au
+        theur au commencement de ſon libelle.
+        Si cela eſt, comme il n’en faut pas douter, comment
+        eſt-ce qu’vn hõôme comme noſtre Autheur qui n’eſt
+        ny Philoſophe, ny Politique, ainſi qu’il l’aduoüe luy
+        meſme, &amp; comme il la deſia proreſté dans l’entréc
+        de ſon diſcours d’Eſtat, eſt ſioſé que de vouloir diſ
+        courit 
+        5
+        courir d’vhe ſoience, ou les plus grands homes du
+        ſieçle ne voyent goute. La raiſon d’Eſtat, oula
+        prudeace Poliriqueeſt d’vne cornoiſſance ſi dffieile,
+        quea yie de l’hotome eſttrop courte pour l’appren
+        dre, &amp; vous Manſieur le cririque, qui n’auez peut
+        eſtre iamais mis le nez que dans vne claſſe de Pedan
+        terie, yous voule igerer d’en faiuedes leons aux
+        plus couſomme , - ce que cete ſciancea de pls
+        ayſteiaux &amp; dan les reuolulons, &amp; dans lade
+        monſtration des choſes les plus diffieiles..
+        Petit ſçauameau en cette doftrines Royale, eftu
+        dez yous de grace à des mtieres qui vous puiſſent
+        eſre plhs’ytiles e plus; honorablas, Et ſas aller
+        ſoüiiller adola des idées du commun comme vous
+        voulez,pour y contempler les prineipes de cette
+        dangereufe émanatipn, &amp; les grands Morifs de ce!
+        empriſonnement s Et ſans meſme que ces quatre
+        puiſſans partis, quiſont les inereſſez, les genereux,
+        les Theologiens, &amp; les Philoſophes à’voſtre compte
+        ſe debatent pout la reſolution de ce doute, ſçachez
+        quoy que vous ne ſoyez ny Philoſophe ny Politique,
+        ny auunement ioereſſé comme vous l’auez defia
+        dit, que çe n’aſt nypour aupoir voulu l’eſpće de Con
+        neſtahle, ny pot auoir fait des deandes qui luy
+        eſtoient inferieures, ny pour auolr cormblé́ Mon
+        ſieur le. Catdinal de ſes faueurs &amp; deſesgraces, ny.
+        parce que mnoaſieur Je Prinçe ne fçauroit demander
+        à la France:, que ce qu; a faue a ais à a diſpoſi
+        tion de. Monſieut le Cardinal,, nypar ee queſon
+        Eminécne ſçutoit fauoriſer outesles demãdcbde
+        mouſiu le Rtinçe; ſans ſe deſtruite aypanceque
+        Monſieur le Cadnal n’a point de paad forte paſ
+        ſion que celle de ſe mantenir dans ea jgauanement
+        abſol vquì fat toutes vos ſappoſisMaispout
+        C 
+        10
+        auoir voulu faire beaucoup de choſes o voſtre éfi
+        endement ne ſç̧auroit at indre; pare-qu vous n’e
+        ſtes pas jnydans le ſeerex, ny dans Je Miniſtere.
+         Que ſi d’auanture l’on ſe vouloit figurer que ie
+        vouluſle toucher aà l’honneur de ceé Prince, en ad
+        uançant ces paroles, que l’on perde cetté opinion
+        de grace: le pnoteſte deuant Dieu &amp; deuantſcs
+        hommas, que t’eſt à quoy ie -peaſ lemoſns , ſça
+        chant bin le reſpet qae l’oni dois &amp; a ſa naſſance
+        &amp; à ſon merite. Quand ces deux conſiderations
+        ne me feroientpas en la vneration qae ie les ay
+        touſours enës, ſaſule veru me reriendroit dans
+        mon deuoir, &amp; mz porteroit à ne rien de qui ne
+        fut tres eiuil &amp; trsraiſonnable; ie ́ue ropre
+        ligieuſoment ſa valeur &amp; la qualire de Prince, pout
+        auoir des paroles licentieuſs conrtrone perſonne
+        ſi eſleuéé Ou il faur parler auoc grande venera
+        rion dc ccs Illuſfnes, oa nen parlepianais en faç̧o
+        quelconque Quoy qu’ils facen ou qu’ils dient, la
+        cenſur de leurs deportemens h’oeſt pas dée noſtre
+        iuriſdiction ls ſont tropeſleuez au deſſus de nous,
+        pour bion iuger de leurs facons de faire. Noſtre
+        modeſtie nbus oblige à ſuppoſer qu’ils ſout par
+        faits, parce- que leur condiion les oblige à l’eſtre:
+        -Quié ſipafois il nous ſemable voir certaines taches
+        en ieurs actions, nous les deuons regarderauec ad
+        miration, comme celles qui paroiſſent aux corps
+        de quelques planetes. Ee ie vus iure-que ie n’ay
+        rautredeſſein que de reſpondre à l’Autheurdes re
+         ſolutious Politiques ſur les difours qu’ià fait,
+        que monſieur le Prince, deſaptrouuera comrae
+        tres pernicieux à l Eſtat &amp; à̀ ſon honneur, lors
+        qu’il aur aconnoiſſance.
+         Ouy Certe l faut que ce petit ſç̧auanu ſqaehe 
+        1
+        1
+        quec les Roys ſont des perſonnes ſacré́es, qui me
+        ſont pasmoins au deſſus des Princes, que les Prin.
+        ces le ſont au deſſus dureſte des hommes, &amp; quand
+        ie diray encore bien plas, ie ne croiray pas auan
+        cer vne propoſition qui ne ſoit tres raiſonnable.
+        Les Roys ont vne puiſſance ſi abſolue ſur les ſu
+        iets qu’il ne leur reſte autre choſe que la mortou
+        lP’obeiſſanee: Et quandie parle des ſubiets; i’entens
+        parler auſſi bien des Princes, que du commun du
+        peuple. Les hiſtoires ſone pleines de ces exemples
+        ans qu’il ſoit beſon d’en raporter icy pas vn
+        pour la lſtification dé mon dire- Lesperſonnes,
+        Royales ſohſacf́es, que Dieu ne veut pas qu vni
+        hlomne de quelque condldni qu il puiſſe eſtre,
+        ait vne mauuaiſe penſée. Cela eſtant puis qu la pa
+        role éternelle le’ veut, par quelle Loy eſt ce que
+        les Princes ſeroient liberez de leur puſſſance. Vous
+        ne trouuerez pas ny’dans les Loix humines ny
+        dans leN Loix diuines d’abrogation de cette Loy
+        inniolable qui les oblige comme nous à̀ l’authorit
+        des Souuerains’&amp; à cette puiſſance independantc.
+        Ne teprécipite poitrtde te retirer’ de deuant la fa
+        ce du Roy, dit nicore lainefmbe Vlonté lnfnie n,
+        ſon Eccléſiaſte; &amp; he petſéuere point n choſ
+        mauuaiſe, car il fera ront ce il ſtiy plaira.
+         Si ce Souuicrau Seigneur de ront lſtre crée nc
+        met point d’exceptio -en ſa puiſſaee, comment
+        eſt que tu as l uidace Politique, criiineſd’y pbe
+        ſedehoſtc &amp; d’A vouIiir eélirles Prin2
+        Comment eſt ce ue tu oſes cxamlrrer des actions
+        ſi ſublimies&amp; ſi eſleuces iu deſſus de ta portée? Sil
+        neé nous eſt pas’peérmis de dire au Roy quiefais t,
+        ſelon la mene Sageſſe, re te laſſe pëſersil elſt
+        .2
+        bien ſeant d’en diſtourir de la ſorte.
+        ¬ 
+        12
+        Ne ſçais tu pas comme i’ay deſ-ia di en repli,
+        quant à l’Autheur du Reueille. Matin de laFronde
+        Royale, que le Miniſtre capable de ſoulager leSou,
+        uerain en la cõduite de ſa Monarchi, &amp; qui le ſçait
+        aſſiſter de ſes conſeils pour aſſujettir tout’ce qui
+        ſe voudroit oppoſer à̀ la felicité de ſon regne, eſt
+        a ſa perſonne ce que les rayons du Soleil ſourà ce
+        bel Aſtre duiour, ouee que les facultez de l’am4
+        ſont à cette ſubſtance ſpirituelle; Ou pour te l4
+        mieux cxprimer vn autre ſoy meſme? C’eſt à vray
+        dire vn appuy ſans l’aide duquel le Monarque de;
+        meuroit accabléſous le faix de ſes affaires. Et çer,
+        tes pour viue &amp;pour forte que puiſſe eſtre l’appre
+        heſion du iugenmer du Prince, il ne laiſſe pasd’a,
+        uoir touſiours beſoin de l’aſſiſtance deſon Mini
+        ſtre. En vn moc s’en prendre à ceux qu’ils ont eſta.
+        blis pour la conduite de leurs affaire;, c’eſt s’en
+        prendre à leur propre perſonne..
+        Iugez aprez céla Monſieur le nouuea, Politl,
+        que, ſi vous eſtes criminel, &amp; ſi voſtre perſonne
+        court riſque. Iugez apreés cela ſi le Miuiſtre m’eſt
+        pas vne partie du Souuerain, &amp; ſi l’on peut rauail
+        ler à la ruine de l’vn, ſans ranter à la Maieſteé de
+        l’autre. Changez de barerie ie vous en ſupplie, &amp;
+        taſchez d’obeir à Dieu, au Roy, &amp; meſne aux
+        Loix de lvraye Politique. Il ny a ny honneur ny
+        profit ̀ faire le caprieieux, ny le calomniateur, ny
+        l’ennemy du Ciel &amp; de la terre. Vous auez beau
+        abyer contre la Lue, les mouaemens degoqute
+        la machine Aſtrée, n’en ſeront pas pour cela ny,
+        plus lents, uy plus precipitez en facon quelçon
+        que. C eſt pourquoy vous n’auez qu’à vousreſo
+        dre à faire mieux, ou bien a vous reſoudre ducou5
+        à ne rien faire.
+        Les 
+        Les mediſances, les iniures, les diſcours picquans
+        &amp; les calomies, comme i’ay deſia dit, ne furent
+        iamais des raiſons à nous perſuader aà faire iniuſte
+        ment des choſes contre nous meſmes. De grace à
+        quoy ſeruéttant de redites ſur vn meſme ſuier,n’eſt
+        ce pas donner diuerſes formes d’expreſſion à̀ vne
+        meſme matiere, &amp; ſe rendre importun à ceux
+        qu’on voudroit artirer aà ſon party, &amp; qu’on vou
+        droit animer de ſa propre paſſion, pour les meta
+        morphoſer en vn autre ſoy-meſme.
+        Ie voy bien que vous vous laiſſez inſenſiblemenc
+        ſi fort aller à ces termes emphatiques de ma pre
+        miere ſuppoſirion, de ma ſeconde verité, de cet
+        inuincible raiſonnement, de cette conſequence
+        qui paroiſt ſi viſible &amp; dont vous vous ſeruez à tout
+        propos, que vous ne ſongez plus à̀ la iuſtece de
+        vos conceprions, ny à̀ l’ordre de vos matieres,
+        prenez garde de grace àl aduis que ie vous donne,
+        &amp; taſchcz d’en faire voſtre profir le mieux qu’il
+        vous ſera poſſible. Les bons conſeils ne ſont iamais
+        a meſpriſer, &amp; de quelque part que le bien nous
+        puiſſe arriuer, ine doit iamais eſtre rebuté de per
+        ſonne. Il eſt de ſoy ſi aymable que ſi la nature ſç̧a
+        uoit parler, elle diroit que c’eſt le Dieu de l’Vni
+        uers, &amp; le principe de toures les plus gloriecuſes
+        actious deshommes.
+        Paſſons donc de cette reſolution à ſa deuxieſme,
+        qui eſt, pourquoy eſt-ce que monſireur le Cardinal
+        s opiniaſtre ſi fort à leur derention.
+        Mais c’eſt trop s’eſtendre ſur vne reſolution qui fe
+        pouuoit conclure en bien peu de parolles, puis
+        qu’il ne s’agiſſoit que de ſç̧auoir pourquoy eſt-ce
+        que moſieur le Cardinal a frit empriſonner meſ
+        ſieurs les Princes, au pourquoy eſ4-ce. que leuts
+        D 
+        i14
+        actions les a fait mettre ou ils ſont, pour ne pas fail
+        lir en parlant, &amp; pour dire la choſe comme elle
+        ſe doit dire.
+         C’eſt icy ouù noſtre Aurheur interreſſé, né fait
+        pas bcaucoupde reflexions pour en trouuer la cau
+        e, ainſi quil e fait en ſa premiere Reſolution Po
+        litique, comme ſi les myſteres de l’vne, eſtoient
+        d’vne nature plus inconnuë que ceux de l’autre. ll
+        dit d’abord quc la deliurance de meſſieurs les l’rin.
+        ces eſt la perte de monſieur le Cardinal. Si cela eſt
+        ainſi, pourquoy eſt-ce qu’il fait tant d’impreca
+        rions, &amp; qu’il dit tant de paroles iniurieuſes &amp; pic’
+        quantes contre vn Miniſtre qui n’a iamais encore
+        eſtry ſa reputation par aucun acte d’infidelité́, &amp;
+        qui n’a pont de vie que pour la conſacrer au bien
+        du Roy &amp; du peuple. De grace monſieur le nou
+        ueau Polltiquie, ou ſont ceux qui’voudroient con
+        ſentir à leur perte, pour ſeulement donner la liber
+        té à leurs ennemis, en vne ſaiſon, où peut-eſtre
+        toute laFrance s’en trouueroit bien affligeée.
+         Nous ne ſosnmes plus du temps où̀ certains he
+        roiques s’expoſoient à la mort pour le bien de la
+        patrie, &amp; encore moins au temps où vn particulier
+        ſe veuiille ſacrifier pour vn autre, comme il ſe trou
+        uoit dansl’ancienne Rome. Il faudroit eſtre bien
+        adroit en l’art de perſuader, pour l’obliger à̀ faire
+        vne actioh de cette aature. Voyez apres ce que
+         vous vcnez de dire, ſi monſieur le Cardinal doit
+        faire ce que vous luy conſeillez en le menaç̧ant de
+         la ſorte C’eſt luy apprendre à ne le pas faire quand
+        vous veulez qil le face, comme nous auons deſia
+        dit ailleurs en reſpõ̃ndant au Reueille-matin de la
+        Fronde Royale. Et certes vous auez beau prendre
+        la peine d deueloper vn pou plus clairement vo¬ 
+         15
+        ſtré veriteé́ par vne longue deduction de toutes les
+        circonſtances qui ſont ſuruenuës à cét empriſon
+        nenent, &amp; qui ne laiſſent point trouuer d’autre
+        ſource à̀ la deliurance des Princes, que celle de la
+        perte de Monſieur le Cardinal. Son Eminence ny
+        conſentira iamais puis qu’il ne le ſç̧auroir faire ſans
+        ſouſcrire tacitement à̀ ſa perte Voila l’entréec de
+        voſtre premiere raiſon, que vous pretendez ren
+        dre plus ſenſible aà tous les curieux deſinterreſſez,
+        bien toſt deduitte.
+         Quand vous parlez de moſieur le Prince, vous
+        parlez de celuy dont le noni eſt plus grand que
+        toute l’Europe; dont la valeur eſt plus connu8
+        que celle des Ceſars; Et dont la naiſſance peutal
+        ler du pair auec toutes les plus ilfluſtres de la terre,
+        ie l’aduouë. Mairs quand vous parlez de Monſieur
+        le Cardinal Mazarin, vous parlez du plus grand
+        homme que la narure ait mis au monde. Si mõſieur
+        le Prince ne voyoit que trop qu’il falloic decrediter
+        dans lidée des François en protegeant Monſieur
+        le Cardinal, ie m’eſtonne q’l altvoulu trauailler
+        luy meſme à̀ ſa diſgrace. Mais ie croy que c’eſt vne
+        ſuppoſition que vous lnuentez pour luy faire dire
+        ce qu’il n’a iamais eu dans la penſeée. Il faut bien
+        auoir renoncé́ au ſens commun, pour parler de la
+        ſorte, &amp; pur dire qu’il n’eſt pas bligé de luy
+        pardnner vnorime qu’il na’iamais comnls, ny
+        par les loix humaines, ny par les loix diuinés.
+         C’eſt bien ignorer la plus belle partie de l’orai
+        ſon Dominicale, &amp; le iugemcat que nous donnons
+        contre nous meſmes lors que nous parlons à̀ Dieu,
+        quand nous luy diſons, pardounez nous nos offons
+        ſes, ainſi que nous les pardonnonseux qui ndas
+        ont offenſez. Ce n’eſt ny raiſonner. en Chneſtien, 
+        ny en Genereux, &amp; moins encbre en Philoſopue.
+        Dien, l’Egliſe, &amp; noſtre propre gloire nous obli
+        gent de pardonner à nos ennemis; &amp; la congrega
+        tion des fidelles met cette action au rang des ſept
+        uures de miſcricorde. Dieu pardonne bien quel
+        que fois à̀ toute vne ville, aà cauſe de bien peu de
+        iuſtes. Etiugement tres rigoureux ſera fait à celuy
+        qui ne pardonnera pas, dit Sainct Iacques en ſe
+        deuxieſme Epiſtre, &amp; tout cela ſe peut faire ſans
+        que monſieur le Prince ſe mette en peine de iuſt
+        fier l’iniuſtice du procedé de monſieur le Cardinal
+        par celle de la tolerance, &amp; ſans qu’il laiſſe l’idée de
+        ſon acouſatrion dans l imagination des foibles pour
+        faire paiſiblement ſuruiure à la reparation de ſa
+        gloire, celuy qui ne la iamais fletrie.
+        La Politique, la Morale, &amp; le Chriſtianiſme ne
+        ſont point dans voſtre ſenriment, &amp; vous feront
+        voſtre procez, quand vous ne les forcerez comme
+        vous faites à̀ dire le contraire. La Politique( pour
+        ueu que ce ſoit vne Politique Chreſtienne: Car
+        c’eſt de celle-là que vous &amp; moy deuons parler,
+        vous condamnera. S’eſt-il iamais veu vn plus grand
+        ny vn plus digne legiſlateur que Moyſe Et s’eſt-il
+        iamais veu vn Souuerain plus offencé de ſon peu
+        ple, que ce conducteur des legions Hebraiques.
+        Combien de fois a t’il failly d’eſtre lapidé par cette
+        race Abramide &amp; bien loin de s’en venger ne ſe
+        mettoiril pas concinuellement en prieres &amp; en
+        oraiſons, pour appaiſer l’ire que Dieu pourroit
+        auoir conceuë contre ce peuple Il y a vn nombre
+        infiny d’autres exemples pour cela mais il faut
+        paſſer outre.
+        La Morale nous preſche. t’elle autre choſe qu’à
+        rauailler à lamoderation de toures nos paſſions?
+        Et 
+        Et fut elle inuanté́e que pour adoueir toutes nos
+        ſaillies. N’eſt-ce pas par ſon moyen, &amp; par vn mi
+        racle auſſi rare lqu’il eſt il!uſtre que nous tirons
+        uos forces de nos propres foibleſſes, &amp; l’ornement
+        de noſtre ame, de la confuſion de noſtre nature?
+        les paſſions mal meſnagées ne ſç̧auroient faire que
+        des demons, &amp; tout au contraire elle ne ſçauroient
+        faire que des Anges ſans aigreur ou dumoins que
+        des hommes ſans vangeance.
+        Et la religion Chreſtienne, que dit elle en tous
+        ſes precepres, ſi ce n’eſt qu’il faut pardonner à ſes
+        ennemis, ſi nous voulons qoe Dieu’nous pardon
+        ne eſcoure ce que dit leſus- Chriſt mourant en.
+        l’arbre de la Croix, lors qu’il prie ſon pere en fa
+        ueur de ceux qui le perçoient de rtoutes parts, pour
+        luy faire rendre l’ame. Mon pere, pardonnez de
+        gace à̀ ces pauures- creatures les tourmens qu’ils.
+        me font ſoufftir injuſtement: car ils ne ſçauent ce
+        qu’ils fone ny ne le ſçauroient comprendre. Il eſt
+        ray que cét Adorable Seigneur nous deffend
+        d’auoir meſme la penſée de faire mal à peſonne,
+        &amp; que certainemẽt ilnous en ferrérc cõ̃pt toſt
+        ou rard, ou en ce monde ou en l’ure: Mais quand
+        ’actioneſtfaite, il veut abſolumeat qu’on pardon
+        ne à ſes ennemis, ſi l’on ne veut faire vn crme éter
+        nellemenr puniſſable. Ie n’ay dit tout ccey que
+        pour vous monſter que vous auanez inconſide
+        ement des parolles mal. digres..
+        Enfin ſi monſieur le Prince eſt détenudans v.
+        lieu de ſeuneté, il ne s’en doit prendre qu’à luy meſ
+        mes, &amp; à ceux qui par lur pernicieux conſeils l’one
+        fait tomber dans l inconuenient ò il ſe trauue: I
+        auoit vne ſouueraine Auchomté. daus d’Eſtat, il
+        eſtoitaimeé de tous les Ftançois &amp; redbuté de tous
+        E 
+        les ennemis de cette Couronne. Il iouiſſoit d’vn
+        entier repos &amp; d’vne gloire ſans pareille. Il auoit
+        outes les plus belles charges &amp;les plus beaux Gou
+        uernemens de l’Eſtat. Il le pouuoit dire auec raiſon
+        le plus riche ſeigneut de toute l’Europe, ſans mettre
+        en ligne de compte les gratfications extraordinaires
+        qu’il reçeuoit tous les iouts du Roy &amp; de la Reyne.
+        Et cependant ſans conſiderer ee haut poinel d’hon.
+        neur &amp; de gloire où il eſtoit eſleué, &amp; ſans contria
+        buer à tout ce qui dependoit de luy pour ſe taintenir
+        en l’Eſtat ou il eſtoit, ayant preſteé l’oreille à ſon am
+        bition, &amp; à ceux qui le conſeilloient plus pour leurs
+        inereſts particuliers que pout le ſien propre, ( puis
+        que l bien &amp; l’haonneur ſont les princpaux motiſs
+        de toutes les ations humaines ) il s’eſt embarqué
+        dans des deſſeins qui ont tellement deplû au Roy
+        &amp; a la Reyne, &amp; leur ont ſemblé ſi preiudiciable à
+        lEtat, comme il ſe peut voit par la declaration du
+        Roy, ſur la detentio des Princes faite le ao Ian
+        uier, de l’année i6o. que leurs Maieſté́s ont eſté
+        contraintes pour cela &amp; pour d’aut res raiſons que
+        ie paſſe ſous ſilence, pour ne rien dire contre l’hon
+        neur des Princes, de les faire arreſter, &amp; delas mer
+        tre en eſtat de ne pouuoir pas executer leurs funeſtes
+        entreprſes.
+        Qui à t’il d’eftrange &amp; de nouueau en cel a Mon
+        ſieur le Politique qui vous puiſle obliger à clabauder
+        de la ſorte, concre l’honneur &amp; lereſpet que vous
+        deuez à Dieu, au Roy, aux Regens, à la luſtice,
+        à vos Miniſtres, &amp; à voſtre Prochain meſme, puis
+        que cela eſt arriué pluſieurs fois à des perſonnes dõt
+        la naiſſan e n’eſtoit pas moins illuſtre l’iſtoire
+        de EF ance ne nous en fournit que tropd’exemples.
+        &amp; ſans aller bien loing, Monſieur ſon Pere ne fut¬ 
+        19
+        il pas l’eſpace deſeize années enfermé dans le Bois
+        de Vincene pour des moindres choſes.
+        Sçauez vous monſieur que par tout ailleurs qu’é̃
+        France on n’enfernme pas les perſonnes de ſa condi
+        tion pour le mal qu’ils ont fat: mais ſeulemelr auſ
+        ſi pour le mal qu’ils peuuent faite. La Maieſté des
+        Roys,ne peut pas ſouffrir qu’vn homme ſoit en eſtat
+        de luy donner de la ialouſie. Il ne faut que luy faire
+        vn peu d’ombre pouir la bleſſer beaucoup, &amp; pour
+        eſtre criminel lenefte dſavies¬2
+        Quelle cruaurez nexerça pas Philippe 2. contre
+        Soto&amp; contre Eſeouedo, pour vn ſimple ſoupeon?
+        Quel tratement ne fitpuas Charles-Quint à ſon
+        propre frere, ſur vn aduis qu’o luydonna, qui paut
+        eſtre n’eſtoit pas veritable? Et ſans aller chercher
+        des exemples que dans noſtre Hiſtoire, que ne fit
+        pas encores Louyſe de Sauoye mere du Roy Fran
+        çois lI. à ce pauure Prince, pour auoir ſeulement re
+        fuſé de l’eſpouſer? Et vous voudriez apres vn grãd
+        n ombre d’exemples dont toutes les Hiſtoires ſont
+        pleines, blaſmer vne action faite auec tant de luſti
+        ce. Que chacun comme vous trouueà redire au Mi
+        niſtere de ſon Eminence, &amp;e qu’a meſme tẽps il pro
+        poſe vn homme plus entendu que luy aux raiſons
+        d’Eſtat, &amp; en la ſçience Politique, ils ſeront eſcoutez
+        ſimplenent; Car de dire à leurs Maieſtez, auec tant
+        de chaleux comme vous faites, que monſieur le Car¬
+        dinal eſt eérnger, qu’il eſt de bas lieu, &amp; qu’l set
+        emparé de toutes les finanees de France, ce n’eſt rien
+        dire que desſetiſes.
+        D’où eſtoit le Comne d’Oliuare en Eſpagne, &amp; d’oâ
+        eſtoit le Mareſchal d’Ancre en Fr ance, &amp; d’où eſtoit
+        pluſieurs autres en Angletetre, &amp; en Allemagne.
+        Quil eſt de bas liou, aous auons deſia reſpondu à cete
+        . 
+        2
+        ealomnie. Qu’il a vollé outes les finances de Fran
+        e, &amp; depuſs qu’il eſt au Miniſtere onn’a pas ſceu
+        aer ſeuſement en toute la France dequoy payer
+        ex de la maiſon du Roy, ny dequoy payer les ga
+        r des oneiers de la couroms peunt peut
+        mtrouuerde l’argent pout faire aller la deſpencae de
+        bouehe. Mais comme ces matieres demandent &amp;
+        plus de loiſir, &amp;e plus d’eſte due pour y reſpodre nou
+        Eemertcons la partie à vne autre fois,&amp; c’eſt- la moy
+        enmant la igtace de Dieu, ou i’eſpere deſnller les
+        yeux a ous les ennemis de ſon Eminence pour
+        les reduire ou paur les confondre. Ce qui me ſera
+        eommeie eroy fort facile, puis que ie n’auray que
+        des ignorans &amp; des enuleux à cobatre, Adieu.			</p>
+		</body>
+	</text>
 </TEI>

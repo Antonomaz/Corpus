@@ -1,524 +1,936 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2506_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Motifs du traité de madame de Longueville et de monsieur
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Motifs du traité de madame de Longueville et de monsieur
           de Turenne avec le roi catholique, revus et corrigés.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-          <persName ref="orcid:0000-0001-5815-9506" role="intern">Faure Margaux</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=V5PHAZKStkwC"/>
-          <author/>
-          <title source="Moreau">Motifs du traité de madame de Longueville et de monsieur de Turenne
+					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+					<persName ref="orcid:0000-0001-5815-9506" role="intern">Faure Margaux</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+				<availability n="cc-by" status="restricted">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=V5PHAZKStkwC"/>
+					<author/>
+					<title source="Moreau">Motifs du traité de madame de Longueville et de monsieur de Turenne
             avec le roi catholique, revus et corrigés.</title>
-          <pubPlace ref="geonames:2747373" source="Moreau">La Haye</pubPlace>
-          <publisher>
-            <persName>Sans Nom</persName>
-          </publisher>
-          <date source="Moreau" when="1650">1650</date>
-          <extent>
-            <measure quantity="13" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2996944">Lyon</settlement>
-            <institution>Bibliothèque municipale</institution>
-            <repository/>
-            <idno type="cote">Rés 310500</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<pubPlace ref="geonames:2747373" source="Moreau">La Haye</pubPlace>
+					<publisher>
+						<persName>Sans nom</persName>
+					</publisher>
+					<date source="Moreau" when="1650">1650</date>
+					<extent>
+						<measure quantity="13" unit="page"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2996944">Lyon</settlement>
+						<institution>Bibliothèque municipale</institution>
+						<repository/>
+						<idno type="cote">Rés 310500</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>True</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">2506. Motifs du traité de madame de Longueville et de monsieur de Turenne
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">2506. Motifs du traité de madame de Longueville et de monsieur de Turenne
           avec le roi catholique, revus et corrigés. Jouxte la copie imprimée à La Haye, 1650, 13
           pages. Libelle artificieusement écrit. Il n'est pas commun. On chercherait en vain
           l'édition de la Haye. C'est ici la première et la dernière.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="genre">parodie</term>
-          <term type="subject"/>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_35" source="Moreau">
-          <p>Déclaration du roi contre la duchesse de Longueville</p>
-          <date when="1650-05-09">1650-05-09</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-05-24" who="MF"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>MOTIFS
-        <lb/>DV TRAITTE
-        <lb/>DE MADAME
-        <lb/>DE LONGVEVILLE,
-        <lb/>ET DE
-        <lb/>MONSIEVR DE TVRENNE
-        <lb/>AVEC
-        <lb/>LE ROY CATHOLIQVE.
-        <lb/>Reueus &amp; Corrigez.
-        <lb/>Iouxte la copie imprimée à la Haye.
-        <lb/>M. DC. L. <pb n="2"/>
-        <pb n="3"/>
-        <lb/>3
-        <lb/>MOTIFS DV TRAIHTTE DE
-        <lb/> Madame de Loagueuille, &amp; de Mon
-        <lb rend="¬" break="no"/>ſieur de Turenne , auee le Roy Catbolique.
-        <lb/> Es crimes &amp; ſes artentatadu Crdinal Mazarincontre
-        <lb/>. l’Eſtat ſont publcs &amp; connus de rout le monde. Lere
-        <lb rend="¬" break="no"/>Adfus conſtant &amp; obſtin de couclure la paix à Munſter, la
-        <lb/>plus glorieuſe &amp; la plus auantageuſe qu’on pouuoit ſouhaitter,
-        <lb/>la perte des alliez qui là ſuiue, l’entrepjiſe d’abbatre &amp; d
-        <lb/>uyner par la priſon &amp; par les proſcripiions l’aurborie d
-        <lb/>Parlement qui eſt l’appuy &amp; le fondemenit de dai Monaic hie,
-        <lb/>les Barricades de Paris, la Declaration du aa. dOcobe ac
-        <lb rend="¬" break="no"/>cordée &amp; rompaë remerairement, le ſiege de la Capitale du
-        <lb/>Royaume, l’empriſonnemen de Monſieur le Ptrince qui a ren
-        <lb rend="¬" break="no"/>du de ſi grands ſeruice à l Eſtat, de Monſieur Ie l’rince de
-        <lb/>Conty &amp; de Monſieur le Duc de Longueuille, qui auoient
-        <lb/>deffendu le Parlemuent &amp; la liberté publque, la perſecuton
-        <lb/>eſtrange &amp; inouye de toute la Maiſon de Bourbon qu’il eſlend
-        <lb/>iuſques aux femmes auyx enfans, &amp; aux mondes domeſtiqes.
-        <lb/>auee tant de olence &amp; d’artifice, que n ayan pû trouuer de
-        <lb/>ſeuaeté dans les lieux o il peut abuler du noi du Roy, &amp; e.
-        <lb/>faire ſeruir à fa paſſion, ils out eſté coptraiuts de ſe reirer dan;
-        <lb/>ceux où l’on conſeue du reſpet pou le Sang Royal &amp; de
-        <lb/>l’horreur, pour le Tiran de l’Eſtat. Les troubles de Pro
-        <lb rend="¬" break="no"/>uence, la guerte de Bourdeaux qu’il, a ralunée deux fois
-        <lb/>par vne complaiſanoe riminelle &amp; inereſſé́e, la dſſipa
-        <lb rend="¬" break="no"/>tion des finances, l’avilliſſement de l’authotiteé Royale, &amp;
-        <lb/>es factions qui duiſent la, Cour &amp; deſchirene les Prouia.
-        <lb/>ces, ſot les efets uneſtes de ſa mlicé &amp; e ſo igno
-        <lb rend="¬" break="no"/>rane, Laforune de lEſta cedé aln a pe i meſchante <pb n="4"/>
-        <lb/>4
-        <lb/>ndce uées e ojce; epreſparfe
-        <lb/>a pupeie&amp; u pbus haui point de oire de plei
-        <lb/>deurpu ſpaapeut-ſteaqpars yeu uaſlres MiuatelueCa
-        <lb/>ernieiéux Miniſire la preciṕe dains vnie conſſin &amp; dans
-        <lb/>Tne miſer inropapl. evehoſes eſans oneeeſont
-        <lb/>Culees ,&amp; ſa deriiere dloſaiuon ertſſt nſl lble at i.
-        <lb/>7AAſtdedb-li le gouét jSneeradeneues plus ong
-        <lb rend="¬" break="no"/>tpsntte Semani, &amp;ſr, o e l peuieZ par la prompe
-        <lb/>econluſion d’vne lonne paix. Nous n’eltmons pas auoit be
-        <lb rend="¬" break="no"/>ſoin d’aucun mapfeſte pour iuſtifet la reſolution, où l’amour
-        <lb/>ade là ltle nous Nporté lé prédr él les aemes’ aflede haſr
-        <lb/>dés aiſlés lſ Erarges &amp;’de proeutér la pa a la ince,
-        <lb/> liberte x ’ituce du Sng opprimez ſiinjfemea
-        <lb/>mortificaition des gens dobieh l’in ghnaton detout Paris, &amp;
-        <lb/>uiné dés principdiir Ptliders, qu eſeladta ouertetnênt-n
-        <lb rend="¬" break="no"/>te Moiiſieut le Ftnce, los qu beyſant aeoglefaefit à I3
-        <lb/>vVolonié de la Reyne jltefſt lé’Carliia MParlii en’ſes Don
-        <lb rend="¬" break="no"/>nes graces, nous aſſeurent adſſez de l’approbarion publique, &amp;
-        <lb/>ne nous laiſfent aucunlieu de didt́et que noRtre deſſein e ſot
-        <lb/>loui. &amp;uluy gerletpedt de oot t qu’i y à de ai&amp; de
-        <lb/>ien irentlonne dailsle oyaume’ Neirthfs aſifi que les
-        <lb/>’altſins du Car dial he piſſent adlohlet dcn ehdblde
-        <lb/>notre condulte, ny ſutptëhlre les bons François par la hain
-        <lb/>du’iin Eſpagol, ous dons voulti infbrrmer le puiblie de?
-        <lb/>nlcons du dtt́ qe nous Vvérioe’ de faſle aluée tes Miſl
-        <lb rend="¬" break="no"/>ſtee d’Eſpign ’ts ptofmertons de ne poirt pofer les ares
-        <lb/>que a paix ie ſoirfalré edere le’eut Cvrohnes;&amp; eR
-        <lb/>Catholique s’otige de latraltedr’&amp; cohcftre à des condibns
-        <lb/>raiſonables des que’Melſſieursps Pileeſeront en liberté i1
-        <lb/>soblige ecot dé nods foultnlt qutlque atgént poir ehdretd
-        <lb rend="¬" break="no"/>niement de noſtre rmée, &amp;e ois’loy doo- en epoſt a
-        <lb/>qes ai la betté de Monſieur le Prnce r ile Stenay, ui
-        <lb/>’eſt diueuné conſequence ſahs ſa Citadelle que hous gardons.
-        <lb/>C’eſt tut oſtreraitt é que us ſoinettons volontets au
-        <lb/>iugemeilt pblie&amp;, ſilesbons Frdncos ̃rttoiſfoote e Iauerfou
-        <lb/>olr le Carinll Maaſ? qui a’lrt la petre de l’Eat, céttaſ¬ <pb n="5"/>
-        <lb/>teé leur fournit vne oeaſion fauorable de le ſauuer, il ne faut
-        <lb/>que mettre Meſſieurs les Princes enliberté, &amp; la paix qui ſut
-        <lb rend="¬" break="no"/>ura infailliblement, arreſtera le cours de tous nos maux, &amp;
-        <lb/>aſſeurera la fortune publique contre les :empeſtes qui s eſle
-        <lb rend="¬" break="no"/>uent de tous coſtez, car puis que c’eſt touſiours le meſme
-        <lb/>homme, expoſant a toute heure pour ſon intereſt &amp; pour la
-        <lb/>ſatisfaction de ſes haiues &amp; de ſes vengeances, l ellat d’vn mi
-        <lb rend="¬" break="no"/>ueur dont il vſurpe le gouuernement, &amp; qui reiettant la paix
-        <lb/>veut rendre la guerre nos malheurs eternels. Ce ſeroit vne
-        <lb/>honte à la naon de ſouſt r quil abuſaſt plus long-temps de
-        <lb/>noſtre patience; &amp; nousne pouuonspas croire quil y ait encore
-        <lb/>apres cela des Francos aſſez deſnarurez pour preferer cét
-        <lb/>Eſtranger au ſalut &amp; au repos du Pays; nous eſperons au con
-        <lb rend="¬" break="no"/>traire qu’ils ſe reueilleront de ce profond ſommeil où ils ſem
-        <lb rend="¬" break="no"/>blent eſtre enſeuelis, qu’ils prendront la deffenſe de la iuſt ce,
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="genre">parodie</term>
+					<term type="subject"/>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_35" source="Moreau">
+					<p>Déclaration du roi contre la duchesse de Longueville</p>
+					<date when="1650-05-09">1650-05-09</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-05-24" who="MF"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<pb n="8"/>
+				<pb n="9"/>
+				<pb n="10"/>
+				<pb n="11"/>
+				<pb n="12"/>
+				<pb n="13"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+MOTIFS
+        DV TRAITTE
+        DE MADAME
+        DE LONGVEVILLE,
+        ET DE
+        MONSIEVR DE TVRENNE
+        AVEC
+        LE ROY CATHOLIQVE.
+        Reueus &amp; Corrigez.
+        Iouxte la copie imprimée à la Haye.
+        M. DC. L. 
+        
+        3
+        MOTIFS DV TRAIHTTE DE
+         Madame de Loagueuille, &amp; de Mon
+        ſieur de Turenne , auee le Roy Catbolique.
+         Es crimes &amp; ſes artentatadu Crdinal Mazarincontre
+        . l’Eſtat ſont publcs &amp; connus de rout le monde. Lere
+        Adfus conſtant &amp; obſtin de couclure la paix à Munſter, la
+        plus glorieuſe &amp; la plus auantageuſe qu’on pouuoit ſouhaitter,
+        la perte des alliez qui là ſuiue, l’entrepjiſe d’abbatre &amp; d
+        uyner par la priſon &amp; par les proſcripiions l’aurborie d
+        Parlement qui eſt l’appuy &amp; le fondemenit de dai Monaic hie,
+        les Barricades de Paris, la Declaration du aa. dOcobe ac
+        cordée &amp; rompaë remerairement, le ſiege de la Capitale du
+        Royaume, l’empriſonnemen de Monſieur le Ptrince qui a ren
+        du de ſi grands ſeruice à l Eſtat, de Monſieur Ie l’rince de
+        Conty &amp; de Monſieur le Duc de Longueuille, qui auoient
+        deffendu le Parlemuent &amp; la liberté publque, la perſecuton
+        eſtrange &amp; inouye de toute la Maiſon de Bourbon qu’il eſlend
+        iuſques aux femmes auyx enfans, &amp; aux mondes domeſtiqes.
+        auee tant de olence &amp; d’artifice, que n ayan pû trouuer de
+        ſeuaeté dans les lieux o il peut abuler du noi du Roy, &amp; e.
+        faire ſeruir à fa paſſion, ils out eſté coptraiuts de ſe reirer dan;
+        ceux où l’on conſeue du reſpet pou le Sang Royal &amp; de
+        l’horreur, pour le Tiran de l’Eſtat. Les troubles de Pro
+        uence, la guerte de Bourdeaux qu’il, a ralunée deux fois
+        par vne complaiſanoe riminelle &amp; inereſſé́e, la dſſipa
+        tion des finances, l’avilliſſement de l’authotiteé Royale, &amp;
+        es factions qui duiſent la, Cour &amp; deſchirene les Prouia.
+        ces, ſot les efets uneſtes de ſa mlicé &amp; e ſo igno
+        rane, Laforune de lEſta cedé aln a pe i meſchante 
+        4
+        ndce uées e ojce; epreſparfe
+        a pupeie&amp; u pbus haui point de oire de plei
+        deurpu ſpaapeut-ſteaqpars yeu uaſlres MiuatelueCa
+        ernieiéux Miniſire la preciṕe dains vnie conſſin &amp; dans
+        Tne miſer inropapl. evehoſes eſans oneeeſont
+        Culees ,&amp; ſa deriiere dloſaiuon ertſſt nſl lble at i.
+        7AAſtdedb-li le gouét jSneeradeneues plus ong
+        tpsntte Semani, &amp;ſr, o e l peuieZ par la prompe
+        econluſion d’vne lonne paix. Nous n’eltmons pas auoit be
+        ſoin d’aucun mapfeſte pour iuſtifet la reſolution, où l’amour
+        ade là ltle nous Nporté lé prédr él les aemes’ aflede haſr
+        dés aiſlés lſ Erarges &amp;’de proeutér la pa a la ince,
+         liberte x ’ituce du Sng opprimez ſiinjfemea
+        mortificaition des gens dobieh l’in ghnaton detout Paris, &amp;
+        uiné dés principdiir Ptliders, qu eſeladta ouertetnênt-n
+        te Moiiſieut le Ftnce, los qu beyſant aeoglefaefit à I3
+        vVolonié de la Reyne jltefſt lé’Carliia MParlii en’ſes Don
+        nes graces, nous aſſeurent adſſez de l’approbarion publique, &amp;
+        ne nous laiſfent aucunlieu de didt́et que noRtre deſſein e ſot
+        loui. &amp;uluy gerletpedt de oot t qu’i y à de ai&amp; de
+        ien irentlonne dailsle oyaume’ Neirthfs aſifi que les
+        ’altſins du Car dial he piſſent adlohlet dcn ehdblde
+        notre condulte, ny ſutptëhlre les bons François par la hain
+        du’iin Eſpagol, ous dons voulti infbrrmer le puiblie de?
+        nlcons du dtt́ qe nous Vvérioe’ de faſle aluée tes Miſl
+        ſtee d’Eſpign ’ts ptofmertons de ne poirt pofer les ares
+        que a paix ie ſoirfalré edere le’eut Cvrohnes;&amp; eR
+        Catholique s’otige de latraltedr’&amp; cohcftre à des condibns
+        raiſonables des que’Melſſieursps Pileeſeront en liberté i1
+        soblige ecot dé nods foultnlt qutlque atgént poir ehdretd
+        niement de noſtre rmée, &amp;e ois’loy doo- en epoſt a
+        qes ai la betté de Monſieur le Prnce r ile Stenay, ui
+        ’eſt diueuné conſequence ſahs ſa Citadelle que hous gardons.
+        C’eſt tut oſtreraitt é que us ſoinettons volontets au
+        iugemeilt pblie&amp;, ſilesbons Frdncos ̃rttoiſfoote e Iauerfou
+        olr le Carinll Maaſ? qui a’lrt la petre de l’Eat, céttaſ¬ 
+        teé leur fournit vne oeaſion fauorable de le ſauuer, il ne faut
+        que mettre Meſſieurs les Princes enliberté, &amp; la paix qui ſut
+        ura infailliblement, arreſtera le cours de tous nos maux, &amp;
+        aſſeurera la fortune publique contre les :empeſtes qui s eſle
+        uent de tous coſtez, car puis que c’eſt touſiours le meſme
+        homme, expoſant a toute heure pour ſon intereſt &amp; pour la
+        ſatisfaction de ſes haiues &amp; de ſes vengeances, l ellat d’vn mi
+        ueur dont il vſurpe le gouuernement, &amp; qui reiettant la paix
+        veut rendre la guerre nos malheurs eternels. Ce ſeroit vne
+        honte à la naon de ſouſt r quil abuſaſt plus long-temps de
+        noſtre patience; &amp; nousne pouuonspas croire quil y ait encore
+        apres cela des Francos aſſez deſnarurez pour preferer cét
+        Eſtranger au ſalut &amp; au repos du Pays; nous eſperons au con
+        traire qu’ils ſe reueilleront de ce profond ſommeil où ils ſem
+        blent eſtre enſeuelis, qu’ils prendront la deffenſe de la iuſt ce,
         &amp;
-        <lb/>ſe ioindront à nous pour maintenir en vigueur lesLoix &amp; laDe
-        <lb rend="¬" break="no"/>claration, pou faire executer les Arteits des Parlemens con
-        <lb rend="¬" break="no"/>tre ce pertubateur du repos public, pour mettre Meſſieur; les
-        <lb/>Princes en lberté, &amp; reſtablir enfin la paix &amp; la tranquilité de..
-        <lb/>dans &amp; dehors le Royaume, qui eſt le ſeul but de nos armes &amp;
-        <lb/>lafin de nboſte traitté.
-        <lb/>Puiſque la Pax de la France, la liberté des Princes, le main
-        <lb rend="¬" break="no"/>tien de l’ahorité des Loix &amp; des dernieres Declararions, le
-        <lb/>ſoulagement des peuples, la deffenſe des Parlemens, la conſer
-        <lb rend="¬" break="no"/>uation du Royaume, &amp; le repos de la Chreſtient ́; à̀ quoy le
-        <lb/>Cardinal Mazarin s’oppoſe, &amp; qui ne peuuent deſormaiss’ob
-        <lb rend="¬" break="no"/>tenir que par ſon eſloignement, m’ont oblgé de me mettre en
-        <lb/>eſtat de combatre les reſiſtances &amp; les efſorts qu’il fat, afin
-        <lb/>d’empeſcher que de ſi glorieux deſſeins, ſi vtiles &amp; ſi aduanta
-        <lb rend="¬" break="no"/>geux à la France ne reuiſſiſſent, puiſque i’ay eé́ portée par le
-        <lb/>conſeil des gens de bien de repouſſer la violence de la tyrannie
-        <lb/>de ce Mniſtre, &amp; d’arreſter le cours de cesnoires perfidies,
-        <lb/>i’ay trouué à̀ propos de rendre compte au publc de la conudte
-        <lb/>que i’ay tenuë, &amp; de faire cognoiſtre à tout le monde la neceſ
-        <lb rend="¬" break="no"/>ité que i’ay aeu de laiſſer les remedes doux, qui n’ont ſait iuſ
-        <lb rend="¬" break="no"/>qu’̀ preſent qu’irttes uos mau pour en prendre de plus con¬ <pb
-          n="6"/>
-        <lb/>uenables à la maladie de l’Eſtat, &amp; plus propres aà̀ ſa gueiſon;
-        <lb/>voyant mes tres-humbes ſoubnmſſions rebutez par le Cardi
-        <lb rend="¬" break="no"/>nal Mazarin, la rance proche de ſa ruyne, &amp; vne partie de la
-        <lb/>HFamille Royale ſur le bord du precipice, il a fallur par la gran
-        <lb rend="¬" break="no"/>deur de ce mal, l’extremité des perils auquel le loyaume eſt
-        <lb/>expoſc &amp; l’eſtrange perſeecution qu’on ait ſouffrir à noſtre
-        <lb/>ma on mettre le fer dans des bleſſures enueniḿes, &amp; armet
-        <lb/>contre le pouuoitr tyrannique qu’à vſurpe ceét ennemy public,
-        <lb/>l’e quite des Loix, qui ſeules ne pouuoent remedier à la perte
-        <lb/>de !’ſtat, ny deffendre noſtre innocence.
-        <lb/>lIe ne ſouhaitte rien d’auantage des perſonnes qui verront
-        <lb/>comme les choſes ſe ſont paſſé́es depuis la detention de Meſ
-        <lb rend="¬" break="no"/>ſieurs mes freres &amp; de Monſeur mon mary, iuſques autemps
-        <lb/>que Monſieur de Tureunne s’eſt mis en campagne, &amp; eſt mar
-        <lb rend="¬" break="no"/>ch́ à̀ la teſtc de noſtre armée pour deliurer la Frãce du Car
-        <lb rend="¬" break="no"/>dinal Mazarin, pour eſtablir le repos &amp; latranquilite publique,
-        <lb/>&amp; aire iouyt Meſſieurs les P inces du benefce des dernieres
-        <lb/>Deciaratons, ſimon qu’examinant ces choſes ſans preocupa
-        <lb rend="¬" break="no"/>tion, ils faſlen genereuſement ce que leur conſcence leurs.
-        <lb/>conſeller, &amp; s’aquittent de ce qu’ls doiuent à leur parrie.
-        <lb/>La nuit que le. rdinal Mazarin renuerſant les Lox fon
-        <lb rend="¬" break="no"/>damentalles de noſtre Monarchie, conamit ſon funeſte attentat
-        <lb/>en la perſonne des Princes m’eſat heureuſemét deſtobée à ſa
-        <lb/>iireur cne elle eſtoit preſte de in’arracher d’entre les bras de
-        <lb/>Mdame ma mere, ie me retiray dans le Gouuernement de
-        <lb/>Monſieur mon mary, reſolué̈ d’employer pour remedier à nos
-        <lb/>niſeres, le ſeul ſecours des Loix &amp; de la bonte de leurs Ma
-        <lb rend="¬" break="no"/>ietez, mais ny la depuration du Parlement de Roiien, à qui
-        <lb/>mes bonnes intentions eſtoient cognuës, n’y la ſoubmiſſion d
-        <lb/>la Nobleſſe dont i’arreſtay les reſlentimens, n’y tant de places
-        <lb/>que i’abandonné volontairement les pouuant deffendre, &amp; que
-        <lb/>1e ſrifiay à l’ambition du Cardinal Mazarin ne l’ayant pû
-        <lb/>eeſcherde faire marcher vne armce dans cette lPrince. &amp;
-        <lb/>d’y expoſer le Roy au milieu de la peſte, afin de nous en oſter
-        <lb/>le gouuernement, &amp; d’y eſtabhir ſes creatures, &amp; mon innocen
-        <lb rend="¬" break="no"/>ce ny mon ſexe, ny mon rang, n’ayant pû̂ me donner ſeureté <pb
-          n="7"/>
-        <lb/>ehez moy das la ſolide d’vne maiſon de canpagne ou ien’e¬.
-        <lb/>ftois rerireée: La paſſiõ daregle de cebdiniſtre le poſſant aueu
-        <lb rend="¬" break="no"/>glement à meperdre, ie fut contrainte de quitter la France, de
-        <lb/>m’embarquer de nuict eu vne rade diſfiele pendant l’Hyuer
-        <lb/>par vn mauuais temps &amp; auec vn peril extreme. pour venir
-        <lb/>chercher chez les alliez de la Couronne la tranqml:té, dont ia
-        <lb/>perfidie d’vn Eſtranger m’empeſchoit de iouyr dans mon
-        <lb/>pays: ainſi donc apres auoir eſte battuë d’vne furieuſe tempe
-        <lb rend="¬" break="no"/>ſte, i’arriué en Hollande, mais la perſecution du C. M. m’y
-        <lb/>ſuiuit, il me continua la guerre en ce pays de liberté́, il voalut
-        <lb/>en ma peeſonne violor le droict des gens &amp; la digniré de cette
-        <lb/>epublique, qui à la gloire depuis ſi long-temps de donne re
-        <lb rend="¬" break="no"/> raicte aux priuées malheureux, de donnet ſeureté aux teſtes
-        <lb/>couronnées, de les conſeruer pour vne meilleure fortune, &amp;
-        <lb/>auoir touſiours protegée les particuliers contre l’oppreſſton &amp; la
-        <lb/>violence de leurs ennemis, les Emiſſaires en attendant que l’oca
-        <lb/>caſiou ſe preſentaſt, d’executer ſes mauuais deſſeins, cherche
-        <lb rend="¬" break="no"/>rent des pretextes de les rendre plus excuſables, &amp; les faire
+        ſe ioindront à nous pour maintenir en vigueur lesLoix &amp; laDe
+        claration, pou faire executer les Arteits des Parlemens con
+        tre ce pertubateur du repos public, pour mettre Meſſieur; les
+        Princes en lberté, &amp; reſtablir enfin la paix &amp; la tranquilité de..
+        dans &amp; dehors le Royaume, qui eſt le ſeul but de nos armes &amp;
+        lafin de nboſte traitté.
+        Puiſque la Pax de la France, la liberté des Princes, le main
+        tien de l’ahorité des Loix &amp; des dernieres Declararions, le
+        ſoulagement des peuples, la deffenſe des Parlemens, la conſer
+        uation du Royaume, &amp; le repos de la Chreſtient ́; à̀ quoy le
+        Cardinal Mazarin s’oppoſe, &amp; qui ne peuuent deſormaiss’ob
+        tenir que par ſon eſloignement, m’ont oblgé de me mettre en
+        eſtat de combatre les reſiſtances &amp; les efſorts qu’il fat, afin
+        d’empeſcher que de ſi glorieux deſſeins, ſi vtiles &amp; ſi aduanta
+        geux à la France ne reuiſſiſſent, puiſque i’ay eé́ portée par le
+        conſeil des gens de bien de repouſſer la violence de la tyrannie
+        de ce Mniſtre, &amp; d’arreſter le cours de cesnoires perfidies,
+        i’ay trouué à̀ propos de rendre compte au publc de la conudte
+        que i’ay tenuë, &amp; de faire cognoiſtre à tout le monde la neceſ
+        ité que i’ay aeu de laiſſer les remedes doux, qui n’ont ſait iuſ
+        qu’̀ preſent qu’irttes uos mau pour en prendre de plus con¬ 
+        uenables à la maladie de l’Eſtat, &amp; plus propres aà̀ ſa gueiſon;
+        voyant mes tres-humbes ſoubnmſſions rebutez par le Cardi
+        nal Mazarin, la rance proche de ſa ruyne, &amp; vne partie de la
+        HFamille Royale ſur le bord du precipice, il a fallur par la gran
+        deur de ce mal, l’extremité des perils auquel le loyaume eſt
+        expoſc &amp; l’eſtrange perſeecution qu’on ait ſouffrir à noſtre
+        ma on mettre le fer dans des bleſſures enueniḿes, &amp; armet
+        contre le pouuoitr tyrannique qu’à vſurpe ceét ennemy public,
+        l’e quite des Loix, qui ſeules ne pouuoent remedier à la perte
+        de !’ſtat, ny deffendre noſtre innocence.
+        lIe ne ſouhaitte rien d’auantage des perſonnes qui verront
+        comme les choſes ſe ſont paſſé́es depuis la detention de Meſ
+        ſieurs mes freres &amp; de Monſeur mon mary, iuſques autemps
+        que Monſieur de Tureunne s’eſt mis en campagne, &amp; eſt mar
+        ch́ à̀ la teſtc de noſtre armée pour deliurer la Frãce du Car
+        dinal Mazarin, pour eſtablir le repos &amp; latranquilite publique,
+        &amp; aire iouyt Meſſieurs les P inces du benefce des dernieres
+        Deciaratons, ſimon qu’examinant ces choſes ſans preocupa
+        tion, ils faſlen genereuſement ce que leur conſcence leurs.
+        conſeller, &amp; s’aquittent de ce qu’ls doiuent à leur parrie.
+        La nuit que le. rdinal Mazarin renuerſant les Lox fon
+        damentalles de noſtre Monarchie, conamit ſon funeſte attentat
+        en la perſonne des Princes m’eſat heureuſemét deſtobée à ſa
+        iireur cne elle eſtoit preſte de in’arracher d’entre les bras de
+        Mdame ma mere, ie me retiray dans le Gouuernement de
+        Monſieur mon mary, reſolué̈ d’employer pour remedier à nos
+        niſeres, le ſeul ſecours des Loix &amp; de la bonte de leurs Ma
+        ietez, mais ny la depuration du Parlement de Roiien, à qui
+        mes bonnes intentions eſtoient cognuës, n’y la ſoubmiſſion d
+        la Nobleſſe dont i’arreſtay les reſlentimens, n’y tant de places
+        que i’abandonné volontairement les pouuant deffendre, &amp; que
+        1e ſrifiay à l’ambition du Cardinal Mazarin ne l’ayant pû
+        eeſcherde faire marcher vne armce dans cette lPrince. &amp;
+        d’y expoſer le Roy au milieu de la peſte, afin de nous en oſter
+        le gouuernement, &amp; d’y eſtabhir ſes creatures, &amp; mon innocen
+        ce ny mon ſexe, ny mon rang, n’ayant pû̂ me donner ſeureté 
+        ehez moy das la ſolide d’vne maiſon de canpagne ou ien’e¬.
+        ftois rerireée: La paſſiõ daregle de cebdiniſtre le poſſant aueu
+        glement à meperdre, ie fut contrainte de quitter la France, de
+        m’embarquer de nuict eu vne rade diſfiele pendant l’Hyuer
+        par vn mauuais temps &amp; auec vn peril extreme. pour venir
+        chercher chez les alliez de la Couronne la tranqml:té, dont ia
+        perfidie d’vn Eſtranger m’empeſchoit de iouyr dans mon
+        pays: ainſi donc apres auoir eſte battuë d’vne furieuſe tempe
+        ſte, i’arriué en Hollande, mais la perſecution du C. M. m’y
+        ſuiuit, il me continua la guerre en ce pays de liberté́, il voalut
+        en ma peeſonne violor le droict des gens &amp; la digniré de cette
+        epublique, qui à la gloire depuis ſi long-temps de donne re
+         raicte aux priuées malheureux, de donnet ſeureté aux teſtes
+        couronnées, de les conſeruer pour vne meilleure fortune, &amp;
+        auoir touſiours protegée les particuliers contre l’oppreſſton &amp; la
+        violence de leurs ennemis, les Emiſſaires en attendant que l’oca
+        caſiou ſe preſentaſt, d’executer ſes mauuais deſſeins, cherche
+        rent des pretextes de les rendre plus excuſables, &amp; les faire
         pa
-        <lb rend="¬" break="no"/>oiſtre moins iniurieux enuers Meſſieurs les Eſtats, ils firent
-        <lb/>leurs caballes &amp; leurs pratiques pour empeſcher qu’ils ne fiſſent
-        <lb/>les ciuilitez qu’on dot à ma naiſſance, &amp; ne me rendiſſent le
-        <lb/>reſpect qu’on rend par tout au ſang de nos Rois: Certe perſe
-        <lb rend="¬" break="no"/>eution deuenuë encore plus violente, par la chaleur inconſide
-        <lb rend="¬" break="no"/> rée &amp; le zele indſoret qu’apportoiét les Miniſtras de ſes
+        oiſtre moins iniurieux enuers Meſſieurs les Eſtats, ils firent
+        leurs caballes &amp; leurs pratiques pour empeſcher qu’ils ne fiſſent
+        les ciuilitez qu’on dot à ma naiſſance, &amp; ne me rendiſſent le
+        reſpect qu’on rend par tout au ſang de nos Rois: Certe perſe
+        eution deuenuë encore plus violente, par la chaleur inconſide
+         rée &amp; le zele indſoret qu’apportoiét les Miniſtras de ſes
         paſſions
-        <lb/>à executer fes ordres, &amp; a tout entreprendre , pluſtoſt que de
-        <lb/>ſoufrir aon feiour en ces Prouinces, me teſmoignant aſſez le.
-        <lb/>periloù ie me trouuois, &amp; par conſequent me faiſant cognoi
-        <lb rend="¬" break="no"/>ſtre que ie couro.s vn meſme danger dans les autros pays de
-        <lb/>noſtre alliance. ie iugeay qu il ne me reſtoit aucun lieu où ie
-        <lb/>puiſſe eſtre aue hien ſeance &amp; enfeuroté que ceux de noſtre
-        <lb/>Maiſon, fis deſſein de me rendre à Stenay, où Monſieur de
-        <lb/>Thurenne s’elloir retiré auec quelques-vns de nos anais, afin
-        <lb/>de ſe guarantir de la hayne de ce Miniſtre, qui le pourſuiuoi
-        <lb/>conmaue vn coupable, parce qu’il ne renonçoi pas ànoſtre ami
-        <lb rend="¬" break="no"/>é, qu’il des-approuuoit l’empriſonnement de Meſſieurs mes <pb n="8"/>
-        <lb/>ſreres, &amp; de Monſieur mon mary, &amp; iugéoit qu’il ſeroit fune
-        <lb rend="¬" break="no"/>ſte a l’Eſtat, la conſideraton du Nonce que la aincteteé a de
-        <lb rend="¬" break="no"/>ſtiné à l’ouurage de la paix, m’ayant conuiée de me deſtourner
-        <lb/>de mon chemin pour le voir à Aix ouù il demeurot, m obligea
-        <lb/>encor de faire quelque ſeiour, ie voulus eſprouuer ſi ie trou
-        <lb rend="¬" break="no"/>uertois poiut par ſon moyen quelque ſoulagement à nos in
-        <lb/>fortunes, &amp; ſi le miſtere de cette perſonne cholie pour tra
-        <lb rend="¬" break="no"/>uailler au repos de toute l’Europe, ne contriburoit point au
-        <lb/>mien, mais les nouuelles qu’on receuoit de Paris m’ayant ſait
-        <lb/>cornoiſtre que la cruauté de nos ennemis qui croiſloit de iour
-        <lb/>en iour m’enoſtoit toute eſperance, ie connuay ma route. En
-        <lb/>paſſant par les Eſtats du Roy Cat holique, les peuples las de la
-        <lb/>guerre, obligez aux ſoins continuelsque Monſieur mon mary
-        <lb/>a pris de fare reüſſir le traicté enre les deux Courounes, &amp;
-        <lb/>aſligez de ſcçauoir que les bõ̃nes intentions qu’il conſeruot en
-        <lb rend="¬" break="no"/>cor pour ce ſubiet faloient tout ſon crime, &amp; auſſi ſe
+        à executer fes ordres, &amp; a tout entreprendre , pluſtoſt que de
+        ſoufrir aon feiour en ces Prouinces, me teſmoignant aſſez le.
+        periloù ie me trouuois, &amp; par conſequent me faiſant cognoi
+        ſtre que ie couro.s vn meſme danger dans les autros pays de
+        noſtre alliance. ie iugeay qu il ne me reſtoit aucun lieu où ie
+        puiſſe eſtre aue hien ſeance &amp; enfeuroté que ceux de noſtre
+        Maiſon, fis deſſein de me rendre à Stenay, où Monſieur de
+        Thurenne s’elloir retiré auec quelques-vns de nos anais, afin
+        de ſe guarantir de la hayne de ce Miniſtre, qui le pourſuiuoi
+        conmaue vn coupable, parce qu’il ne renonçoi pas ànoſtre ami
+        é, qu’il des-approuuoit l’empriſonnement de Meſſieurs mes 
+        ſreres, &amp; de Monſieur mon mary, &amp; iugéoit qu’il ſeroit fune
+        ſte a l’Eſtat, la conſideraton du Nonce que la aincteteé a de
+        ſtiné à l’ouurage de la paix, m’ayant conuiée de me deſtourner
+        de mon chemin pour le voir à Aix ouù il demeurot, m obligea
+        encor de faire quelque ſeiour, ie voulus eſprouuer ſi ie trou
+        uertois poiut par ſon moyen quelque ſoulagement à nos in
+        fortunes, &amp; ſi le miſtere de cette perſonne cholie pour tra
+        uailler au repos de toute l’Europe, ne contriburoit point au
+        mien, mais les nouuelles qu’on receuoit de Paris m’ayant ſait
+        cornoiſtre que la cruauté de nos ennemis qui croiſloit de iour
+        en iour m’enoſtoit toute eſperance, ie connuay ma route. En
+        paſſant par les Eſtats du Roy Cat holique, les peuples las de la
+        guerre, obligez aux ſoins continuelsque Monſieur mon mary
+        a pris de fare reüſſir le traicté enre les deux Courounes, &amp;
+        aſligez de ſcçauoir que les bõ̃nes intentions qu’il conſeruot en
+        cor pour ce ſubiet faloient tout ſon crime, &amp; auſſi ſe
         ſouuenant
-        <lb/>qu’ils auoient autrefois conçeu les eſperances de voir finir leurs
-        <lb/>maux, &amp; leurs miſetes me receuam dans leurs; Villes pour aller
-        <lb/>aà Munſter &amp; qu’ils auoient teſmoigné par les acclamaions
-        <lb/>pubhques, &amp; les vœux qu’ils faiſoent pour l’heureux ſuccez de
-        <lb/> mon voyage, le deſir qu’ils auoient de la pax, me la deman
-        <lb/>doient encor eu më voyant, &amp; ſçachant que la mauuaiſe foy;
-        <lb/>du Cardinual Mazarin a fait reſoudre dans le Conſeil d’Eſpagne
-        <lb/>qu’on n’entreroit plus en negociation auec luy, ls me coniu
-        <lb rend="¬" break="no"/>roient inſtamment de m’entremettre, &amp; de trauailler à la faire,
-        <lb/>ce ſentiment ſi vniuetſel des peuples, le deſir qu’en tort paroi
-        <lb rend="¬" break="no"/>ſtre les grands Seigneurs des Pays-bas, les aſſeurances qu’ils
-        <lb/>donnent de leurs Miniftres la ſouhaittont, &amp; les propoſitions
-        <lb/>qu’ils me firent, me donnerent eſperance d’en enuoyer des
-        <lb/>ouuertures à la Reyne, &amp; au Par lement dés que ie ſerois à
-        <lb/>Stenay, &amp; ie me flattois de lacroyance que ie pourrois ſeruir
-        <lb/>vtilemeat à l’vnion des deux Couronnes, mais eſtant arriuée
-        <lb/>en ce lieu bien loinZ de trouuer quelque conjoncture fauorable
-        <lb/>pour vnſi ſalutaire deſſein, ie m’y ſuis veuë inueſtie par les
-        <lb/>tEouppes du Carlinal Maarin i’y ay ap is que non cohtet de
-        <lb/>la priſo &amp; de l’exil qu’il noas fait ſouffrir, &amp; de la perte des
-        <lb/>biens <pb n="9"/>
-        <lb/>biens que nous tenions du Roy, dont il nous a deſpoüillez, &amp;
-        <lb/>ne mettant point de bornes à ſa hayne, il employot la force
-        <lb/>pour nous arracher Belle-garde, qui eſt le parimoine de la
-        <lb/>maſon de Monſieur mon frere, i’y ay ſç̧eu que Madame ma
-        <lb/>mere enuronnee de gens de guerre a eſte farcée de ſe deſrober
-        <lb/>de Chanilly le iour de Paſques, qu’on laà encor chaſſée de P’aris
-        <lb/>où elle s’eſtoit venue ietter entre les bras de la luſtice, que Ma
-        <lb rend="¬" break="no"/>dame ma helle-ſur s’eſt reriré́e auec vn danger etreme,
-        <lb/>qu vne eſme fuire a ſauue mon nepueu, que ſon entanca
-        <lb/>u’eut pas guatanty, i’y ay ſçeu que des gens de qualiteé ſont
-        <lb/>menaſſe de l’exil pour auoir deploré noſtre infortune, que des
-        <lb/>femmes de condition pour la meſme cauſe ont ſouffert leban
-        <lb rend="¬" break="no"/>uſſenent, que pour ce meſme ſuiet on a banny des Religieux,
-        <lb/>on a farmé la bouche aux Eueſques, que noſtre amuié tait vn
-        <lb/>crime, que la pitié qu’on a de nos maux eſt punie comme vn
-        <lb/>attentat contre l’Eſtat, que les priſons ſont pleines de nos do
-        <lb rend="¬" break="no"/>meſtiques, qu’on a ms garniſon dans nos maiſons de l’ars
-        <lb/>comme dans des places conquiſes, &amp; qu’enfin la barbarie dus
-        <lb/>Cardinal Mazarin ſe porte contre nous à vntel excez, que ne
-        <lb/>ſe trouuant point dans les Hiſtoires d’exemple d’vne plus
-        <lb/>grande innocence que la noſtre, il ne s’y en trouue point d’uvne
-        <lb/>plus grande fureur que celle qu’il exerce en noſtre endroit. En
-        <lb/>vn tel eſtat cognoiſſant que da douceur ne fait qu’irrirer ſa try
-        <lb rend="¬" break="no"/>rannie, que la moderationle rend inſolenut, &amp; voyant que no
-        <lb rend="¬" break="no"/>ſtreperte eſtoit inéuitable ſi ie ne m’y oppoſois, conſiderant de
-        <lb/>plus que la Monarchie ne ſouffre pas moins que noſtre maiſon,
-        <lb/>que la foy publique des Declarations eſt violée, que l’on ren
-        <lb rend="¬" break="no"/>uerſe l’authorité des Loix, que les charges de la Couronne &amp;
-        <lb/>les Gouuernemens des places &amp; des Prouinces qu’on deuroit
-        <lb/>donner au ſeul merite, deuiennent le prix de noſtre ſang &amp; la
-        <lb/>recompenſe du deeſtable forfaict de ceux qui par l’eſpoir de
-        <lb/>ces recompenſes ayant renoncé à leur honneur &amp; ſacrifieé l’in
-        <lb rend="¬" break="no"/>teret public aux vaines eſperanees d’vne meilleure fortune,
-        <lb/>ſouſtiennent l’attentat duCardinl M. que la meilleurepart ie du
-        <lb/>reuenu des Talles &amp; des lmpofitions dont les ſubiets du Roy
-        <lb/>ourt ſurcargez, qui ont autrefois ſufit à toutes les deſpenſes <pb n="10"/>
-        <lb/>de l’Eſtat, &amp; qu’il deuoit moſnager pour l’entretien de la mai
-        <lb rend="¬" break="no"/>ſon du Roy, pour la deffenſe &amp; la conſeruation de la France eſt
-        <lb/>tr anſoorté́e hors du Royaume, pour agrandir ce Miniſtre in
-        <lb rend="¬" break="no"/>ſa’able, que ce peu qui en eſt employe ne ſert qu’à̀ eſtancher
-        <lb/>l’auarce des gens, dont il achepte &amp; paye les attachemens hon
-        <lb rend="¬" break="no"/>teux &amp; les liaſons qu’ils prennent auecluy, au preudice de la
-        <lb/>fidelité́ qu’ils doiuent à leur Sonuerain, que cette inquſiion
-        <lb/>d Eſtat qu’il renouuelle, &amp; qui ne laſſe ny biens ny authorite,
-        <lb/>ny liberte à perſonne, &amp; contre laquelle l’on a deſia eu ſecours
-        <lb/>aux armes, reprend de fortes racines. Que les plaint es qu’on en
-        <lb/>fait ſont crimnelles: Que le Clergeé eſt meſpriſeé: Que l’on
-        <lb/>traficque des Eueſchez &amp; des Abbayes, qui deuroient eſtte
-        <lb/>donnéces a des perſonnes de merite &amp; d’vne piete exemplaire:
-        <lb/>Que la Nobleſſe eſt perſecutée, ſes ſeruices meſcognus, les
-        <lb/>penuions &amp; les appointemens de ceux qui expoſene leurs vies
-        <lb/>pour la grandeur de la France, conſumées par l’auidit́ du Mi
-        <lb rend="¬" break="no"/>nſtre, ieurs recompenſes donńes à des Eſtrangers, ou à̀ des
-        <lb/>ateuts de Cour, qui honnorent ſes vices &amp; adorent le Phan
-        <lb rend="¬" break="no"/>toſme d ſa puiſſance: Quo les biens que les Gentilhommes
-        <lb/>ont trouué dans leurs famlles, qui ſont des teſmoignages de la
-        <lb/>vertu de leurs Ae ſtres, ſont donnez en proye aux gens de
-        <lb/>guerre, qui maſſacrent, bruſlent &amp; violent impunement: Que
-        <lb/>les Officiers ſont miſerables, ſuoiets aux interdictions que l’on
-        <lb/>continuc de ſoubmettre l’au horité des Parlemens à celle du
-        <lb/>Conſeil: Qe quelques-vns ſont expoſez à la fureur des Gou
-        <lb rend="¬" break="no"/>uerneurs des Prouinces: Que l’on fotfie &amp; que l’on arme pour
-        <lb/>les deſtruire: Que toutes les Declarations ſont rendües inuri
-        <lb rend="¬" break="no"/>les, les peuples ruynez, les Tailles miſes en party, la ſolidité
-        <lb/>reſtablié, les contrainctes par corps deliurez &amp; executé́es auec
-        <lb/>plus de viodlence que iamais: Que les compagnies de fuzeliers
-        <lb/>ſont remiſes ſur pied, qui exercent toutes ſortes d’inhuma
-        <lb rend="¬" break="no"/>nirez, &amp; portent les ſubiets du Roy dans le dernier deſeſpoir:
-        <lb/>Qe la miſere de la campagne paſſe dans les Villes: Cue la ca
-        <lb rend="¬" break="no"/>ptae du Royaume qui ti t ſon alirent de toutes les Prouin
-        <lb rend="¬" break="no"/>ces en relent les mieres &amp; les incommodirez qu’elle demeure
-        <lb/>ſans com nerce, &amp; le plus ſouuent priuée de la preſence du <pb n="11"/>
-        <lb/>i11
-        <lb/>Roy, que la haine ou la crainte du Cardinal Maarin en eſloſ
-        <lb rend="¬" break="no"/>gne: Que pour comble de malheur il ſe declare ennemy iuré
-        <lb/>de la pax, n’ayant empriſonné les Princes qui le vouloent con
-        <lb rend="¬" break="no"/>traindre à la faire, &amp; n’excitant tous les troubles que nous
-        <lb/>voyons que pour enempeſcher la concluſion. Qu’ainſi i! ny à
-        <lb/>a eſperer, ny de ſalutr pout l’Eſtat, ny de remedes à nos inſortu
-        <lb rend="¬" break="no"/>nes, ſi les choſes demeurent plus long temps dans vn tel deſor
-        <lb rend="¬" break="no"/>dre.
-        <lb/>Ces conſiderations iointes aux aduis que pluſieurs perſon
-        <lb rend="¬" break="no"/>nes de condition rm’ont donné, que la bonsé de laReyne eſtanc
-        <lb/>plus ſurpriſe que iarmis par les artifices de ſon Miniſtre, &amp; la
-        <lb/>facilité de Monſieur le Duc d’Orleans l’abaudonnant à la con
-        <lb rend="¬" break="no"/>duite de quelques-vns deces faux Tribuns du peuple, qui par
-        <lb/>deſordides pretentions, d’ennemis decdarez du Ca dinal Ma
-        <lb rend="¬" break="no"/>zarin, ſe ſont rendus ſes eſclaues, i’eſtois vnedesprincipales per
-        <lb rend="¬" break="no"/>ſonnes à qui il teſtoit des nmoyens de pouuoir mettre vne fin à
-        <lb/>tant de malheurs, &amp; que mon honneur, ma naiſſance, &amp; nmon
-        <lb/>debuoir enuers l’Eſtat m’y obligeoient puiſſamment, &amp; de plus
-        <lb/>me trouuant portéée à entreprendre vn deſſein i grand &amp; ſi
-        <lb/>glorieux, par les prieres que m’en font les plus otables perſon
-        <lb rend="¬" break="no"/>nages destrois Ordres du Royaume, &amp; encor par les ſenti
-        <lb rend="¬" break="no"/>mens geaereux que les meillours Habitans de Paris &amp; des gran
-        <lb rend="¬" break="no"/>des Villes m’ont teſmoigné, mais ſur tout me ſentant fortifiee
-        <lb/>encette occafion de l’affection, du conſeil &amp; de l’aide de Mon
-        <lb rend="¬" break="no"/>ſieur de Thurenne, qui par les grands ſeruices qu’il a rendu à
-        <lb/>la France &amp; l’affection qu’il a teſmoigneé pour le bien public &amp;
-        <lb/>pour la ville de Paris dans les derniers mouuemens, a fait paroi
-        <lb rend="¬" break="no"/>ſtre ſon zele pour la grandeur de l’Eſtat, il a ſçeu faire differen
-        <lb rend="¬" break="no"/>ce des veritables intereſts du Roy d’auec la pafſion aueugiée
-        <lb/>d’yn Mniſtre furieux, &amp; ſans bleſſer le reſpect de l’authoritée
-        <lb/>du Souuerain,il a ſçeu e degager &amp; ſouſtraire les forces qu’il
-        <lb/>commandoit au Party du Cardinal Mazarin qui les vouloit
-        <lb/>emnployer à la deſtruction de la ville capitale du Royaumo &amp; à
-        <lb/>l’oppreſſion des peuples, apres auoir examiné toures choſes,
-        <lb/>nous auons iugé que l’eſloigneent du Car dinal Mazarin qui
-        <lb/>eſt yn perpetue obſtacle à l’eſtabliſſement de la tranquilité <pb n="12"/>
-        <lb/>12
-        <lb/>publique, eſtoit le premier pas qu’l falloit faire pour preparerla
-        <lb/>guerſon aux maux de la France, &amp; qu’e uite la hiberte dos
-        <lb/>Princes,la paix generale &amp; le ſoulagement des peuples eltoient
-        <lb/>les ſeuls remedes qu’il falloit apporter aux calamitez qui l
-        <lb/>deſtruiſſent; c’eſt pourquoy ſa Maeſte Cat holique m’ayant
-        <lb/>fait l’honneur de m’inuter à ſeconder les bonnes inentions
-        <lb/>qu’elle teſmoigne de conclure cette paix : Nous auou moy &amp;
-        <lb/>Monſieur de Thurenne reſolu de toindre forces &amp; er
-        <lb rend="¬" break="no"/>ployertousiius moyens pbur fare reuſſir vn deſſein li glorieux
-        <lb/>&amp; li aduantageux aà̀ l’Lſtat, de ne point poſer les atmes que les
-        <lb/>Princes na ſoient enliberté: Que les Parleens, le Clerge, la
-        <lb/>Nobleſſe, les Communautez, les Vlles &amp; tous les ſubets du
-        <lb/>Roy ae ouyſſent de leuits priuileges &amp; du benefice dos Decla
-        <lb rend="¬" break="no"/>ations, &amp;ds trauailler onſlamment à eſtablir le repos &amp; l’v
-        <lb rend="¬" break="no"/>nion entre les deux Cauronnes: Comme auſſi le Roy d Eſpa
-        <lb rend="¬" break="no"/>gnede ſa part ne trouuant aucune ſeureté à̀ tratter la paix auec
-        <lb/>de Cardinal Maarin, declaré ennemy du Roy &amp; de l’Eſtat par
-        <lb/>lo Parlement de Patis, &amp; recognoiſſant l’abſol̂e noeceſſité ou il
-        <lb/>ſe tr ouue engage d’auoit le conſentement des Princes, quipen
-        <lb rend="¬" break="no"/>dant la minoriré du Roy ſon Cunſeillers neceſſaires de la
-        <lb/>Regenee, &amp; pour pluſieurs autres grandes &amp; importantes rai
-        <lb rend="¬" break="no"/>ſons qui regardent la ſtabilite &amp; l’aftermiſſerment du repos de
-        <lb/>la Chreſtinte, s’eſtobligé des qu’ilsſ eront libres de eonclure
-        <lb/>ioceſſament à des tondtons équitables, &amp; meſme de remer
-        <lb rend="¬" break="no"/>re les difficultez qui ſe pourroient rencontrer dans le traiét
-        <lb/>ou la deciſion des ſtats generaux legitmement aſſemblez, ou
-        <lb/>à l’arbirrage des Princes.
-        <lb/>Certes, s’il eſt permis par le droit dos gens, &amp; ſi la nature
-        <lb/>meſme nousenſeigne de nous ſeruir de coutes choſes pour no
-        <lb rend="¬" break="no"/>ſtre deffence lors qu’on nous opprime iniuſtemenc: Il faut
-        <lb/>auoiier qu’il ſe trouue vne exrréme ſatisfaction quand en nous
-        <lb/>garantiſſant d’vn malheur nous en garantiſſons le public, &amp;
-        <lb/>qu’il n’eſt rien ſi dgne de loûange en nous deliurant que de
-        <lb/>deliurer encor noſtre patrie. Et puiſque cela eſt ainſi, i’ay tout
-        <lb/>lieu de croire que m’eſtant trouúe contraiunte d’employer la
-        <lb/>ſorce legitime contre l’aiuſte, &amp; l’ayant ſat deſorte que ce que
-        <lb/>i’en¬ <pb n="13"/>
-        <lb/>’entreprens va moins au ſalut de noſtre maiſon qu’au ſeruice
-        <lb/>du Roy &amp; l’vtilite de la France, il ny à perſonne qui aye de
-        <lb/>la conſcience &amp; du iugement qui n’approuue ce iuſte deſſein,
-        <lb/>qul ny concoure, qui ne l’appuye, qui ne voye que le Cardinal
-        <lb/>Mazarin nous neceſſite de nous ſeruir de ces remedes, qu ne
-        <lb/>cognoiſſe la maladie de l’Eſtat, qui ne ſçache qu’il en eſt la
-        <lb/>veritable cauſe, qui ne luy impute ee que quelques parties affii
-        <lb rend="¬" break="no"/>geées pourront ſouffrir ny paruenir à leur parfaie gueriſon, &amp;
-        <lb/>celles quien reſte ſaines &amp; entieres, &amp; qui enfin ne m’eſtime en
-        <lb/>quelque façon heureuſe dans mon malheur, d’auoir ſeruy au
-        <lb/>reſtabliſſement du Royaume.
-        <lb/>Ce ſont là les veritables ſentimens dont i’ay eſtimé qu’il
-        <lb/>eſtoit neceſſaire que le public fut informe, apres quoy il ne me
-        <lb/>reſte rien à adiouſter, ſinon que i’exhorte icy tous les gens
-        <lb/>d’honneur &amp; principalement le Parlement qui eſt le plus ſolde
-        <lb/>fondement de la Monarchie, &amp; la ville captale du Royaume
-        <lb/>qui donne l’exemple à toutes les autres, de ne pas perdre vne ſi
-        <lb/>illuſtre occaſion d’aider à conſeruer au Roy ſon Eſtat, de ſe
-        <lb rend="¬" break="no"/>couer le ioug inſuportable de la tyrannie eſtrangere, de deli
-        <lb rend="¬" break="no"/>urer d’vne priſon iniuſte les Princes du Sang, &amp; de rendre la
-        <lb/>paix à la Franceeſperant que la Diuine bonté qu penettre les
-        <lb/>ſentimens de mon cœur, &amp; qui ſçait qu’ils ſont achemnez à
-        <lb/>ces fins, benira la iuſtice des armes qu’on employe pour les
-        <lb/>fair e reſſir, que deſillant les yeux de la Reyne, elle luv fera
-        <lb/>voir en qu’elle abyſme des malheurs, ſon Miniſtretache à la
-        <lb/>precipiter, qu’elle detrompera Monſieur le Duc d Orleans des
-        <lb/>mauuais conſeils qu’onluy donne, &amp; qu’elle fera enhn qu’vn
-        <lb/>party ſi vtil &amp; ſi neceffaire que celuy de l’eſlognement du
-        <lb/>Cardinal Mazarin, du maintient de l’aurhoritée des Loi &amp; des
-        <lb/>dernieres Declarations, du reſtabliſſement des priuileges attri
-        <lb rend="¬" break="no"/>buez au Clergé &amp; à la Nobleſſe, de la conſeruation des l’as le
-        <lb rend="¬" break="no"/>mens, du ſoulagement des peuples, de la liberteé des l’rnces, &amp;
-        <lb/>de la pax generale, ſera auſſi generalement ſouſtenu par les
-        <lb/>gens de bien, qne ie ſçay qu’il en ſera generalement approuue.
-        <lb/>D </p>
-    </body>
-  </text>
+        qu’ils auoient autrefois conçeu les eſperances de voir finir leurs
+        maux, &amp; leurs miſetes me receuam dans leurs; Villes pour aller
+        aà Munſter &amp; qu’ils auoient teſmoigné par les acclamaions
+        pubhques, &amp; les vœux qu’ils faiſoent pour l’heureux ſuccez de
+         mon voyage, le deſir qu’ils auoient de la pax, me la deman
+        doient encor eu më voyant, &amp; ſçachant que la mauuaiſe foy;
+        du Cardinual Mazarin a fait reſoudre dans le Conſeil d’Eſpagne
+        qu’on n’entreroit plus en negociation auec luy, ls me coniu
+        roient inſtamment de m’entremettre, &amp; de trauailler à la faire,
+        ce ſentiment ſi vniuetſel des peuples, le deſir qu’en tort paroi
+        ſtre les grands Seigneurs des Pays-bas, les aſſeurances qu’ils
+        donnent de leurs Miniftres la ſouhaittont, &amp; les propoſitions
+        qu’ils me firent, me donnerent eſperance d’en enuoyer des
+        ouuertures à la Reyne, &amp; au Par lement dés que ie ſerois à
+        Stenay, &amp; ie me flattois de lacroyance que ie pourrois ſeruir
+        vtilemeat à l’vnion des deux Couronnes, mais eſtant arriuée
+        en ce lieu bien loinZ de trouuer quelque conjoncture fauorable
+        pour vnſi ſalutaire deſſein, ie m’y ſuis veuë inueſtie par les
+        tEouppes du Carlinal Maarin i’y ay ap is que non cohtet de
+        la priſo &amp; de l’exil qu’il noas fait ſouffrir, &amp; de la perte des
+        biens 
+        biens que nous tenions du Roy, dont il nous a deſpoüillez, &amp;
+        ne mettant point de bornes à ſa hayne, il employot la force
+        pour nous arracher Belle-garde, qui eſt le parimoine de la
+        maſon de Monſieur mon frere, i’y ay ſç̧eu que Madame ma
+        mere enuronnee de gens de guerre a eſte farcée de ſe deſrober
+        de Chanilly le iour de Paſques, qu’on laà encor chaſſée de P’aris
+        où elle s’eſtoit venue ietter entre les bras de la luſtice, que Ma
+        dame ma helle-ſur s’eſt reriré́e auec vn danger etreme,
+        qu vne eſme fuire a ſauue mon nepueu, que ſon entanca
+        u’eut pas guatanty, i’y ay ſçeu que des gens de qualiteé ſont
+        menaſſe de l’exil pour auoir deploré noſtre infortune, que des
+        femmes de condition pour la meſme cauſe ont ſouffert leban
+        uſſenent, que pour ce meſme ſuiet on a banny des Religieux,
+        on a farmé la bouche aux Eueſques, que noſtre amuié tait vn
+        crime, que la pitié qu’on a de nos maux eſt punie comme vn
+        attentat contre l’Eſtat, que les priſons ſont pleines de nos do
+        meſtiques, qu’on a ms garniſon dans nos maiſons de l’ars
+        comme dans des places conquiſes, &amp; qu’enfin la barbarie dus
+        Cardinal Mazarin ſe porte contre nous à vntel excez, que ne
+        ſe trouuant point dans les Hiſtoires d’exemple d’vne plus
+        grande innocence que la noſtre, il ne s’y en trouue point d’uvne
+        plus grande fureur que celle qu’il exerce en noſtre endroit. En
+        vn tel eſtat cognoiſſant que da douceur ne fait qu’irrirer ſa try
+        rannie, que la moderationle rend inſolenut, &amp; voyant que no
+        ſtreperte eſtoit inéuitable ſi ie ne m’y oppoſois, conſiderant de
+        plus que la Monarchie ne ſouffre pas moins que noſtre maiſon,
+        que la foy publique des Declarations eſt violée, que l’on ren
+        uerſe l’authorité des Loix, que les charges de la Couronne &amp;
+        les Gouuernemens des places &amp; des Prouinces qu’on deuroit
+        donner au ſeul merite, deuiennent le prix de noſtre ſang &amp; la
+        recompenſe du deeſtable forfaict de ceux qui par l’eſpoir de
+        ces recompenſes ayant renoncé à leur honneur &amp; ſacrifieé l’in
+        teret public aux vaines eſperanees d’vne meilleure fortune,
+        ſouſtiennent l’attentat duCardinl M. que la meilleurepart ie du
+        reuenu des Talles &amp; des lmpofitions dont les ſubiets du Roy
+        ourt ſurcargez, qui ont autrefois ſufit à toutes les deſpenſes 
+        de l’Eſtat, &amp; qu’il deuoit moſnager pour l’entretien de la mai
+        ſon du Roy, pour la deffenſe &amp; la conſeruation de la France eſt
+        tr anſoorté́e hors du Royaume, pour agrandir ce Miniſtre in
+        ſa’able, que ce peu qui en eſt employe ne ſert qu’à̀ eſtancher
+        l’auarce des gens, dont il achepte &amp; paye les attachemens hon
+        teux &amp; les liaſons qu’ils prennent auecluy, au preudice de la
+        fidelité́ qu’ils doiuent à leur Sonuerain, que cette inquſiion
+        d Eſtat qu’il renouuelle, &amp; qui ne laſſe ny biens ny authorite,
+        ny liberte à perſonne, &amp; contre laquelle l’on a deſia eu ſecours
+        aux armes, reprend de fortes racines. Que les plaint es qu’on en
+        fait ſont crimnelles: Que le Clergeé eſt meſpriſeé: Que l’on
+        traficque des Eueſchez &amp; des Abbayes, qui deuroient eſtte
+        donnéces a des perſonnes de merite &amp; d’vne piete exemplaire:
+        Que la Nobleſſe eſt perſecutée, ſes ſeruices meſcognus, les
+        penuions &amp; les appointemens de ceux qui expoſene leurs vies
+        pour la grandeur de la France, conſumées par l’auidit́ du Mi
+        nſtre, ieurs recompenſes donńes à des Eſtrangers, ou à̀ des
+        ateuts de Cour, qui honnorent ſes vices &amp; adorent le Phan
+        toſme d ſa puiſſance: Quo les biens que les Gentilhommes
+        ont trouué dans leurs famlles, qui ſont des teſmoignages de la
+        vertu de leurs Ae ſtres, ſont donnez en proye aux gens de
+        guerre, qui maſſacrent, bruſlent &amp; violent impunement: Que
+        les Officiers ſont miſerables, ſuoiets aux interdictions que l’on
+        continuc de ſoubmettre l’au horité des Parlemens à celle du
+        Conſeil: Qe quelques-vns ſont expoſez à la fureur des Gou
+        uerneurs des Prouinces: Que l’on fotfie &amp; que l’on arme pour
+        les deſtruire: Que toutes les Declarations ſont rendües inuri
+        les, les peuples ruynez, les Tailles miſes en party, la ſolidité
+        reſtablié, les contrainctes par corps deliurez &amp; executé́es auec
+        plus de viodlence que iamais: Que les compagnies de fuzeliers
+        ſont remiſes ſur pied, qui exercent toutes ſortes d’inhuma
+        nirez, &amp; portent les ſubiets du Roy dans le dernier deſeſpoir:
+        Qe la miſere de la campagne paſſe dans les Villes: Cue la ca
+        ptae du Royaume qui ti t ſon alirent de toutes les Prouin
+        ces en relent les mieres &amp; les incommodirez qu’elle demeure
+        ſans com nerce, &amp; le plus ſouuent priuée de la preſence du 
+        i11
+        Roy, que la haine ou la crainte du Cardinal Maarin en eſloſ
+        gne: Que pour comble de malheur il ſe declare ennemy iuré
+        de la pax, n’ayant empriſonné les Princes qui le vouloent con
+        traindre à la faire, &amp; n’excitant tous les troubles que nous
+        voyons que pour enempeſcher la concluſion. Qu’ainſi i! ny à
+        a eſperer, ny de ſalutr pout l’Eſtat, ny de remedes à nos inſortu
+        nes, ſi les choſes demeurent plus long temps dans vn tel deſor
+        dre.
+        Ces conſiderations iointes aux aduis que pluſieurs perſon
+        nes de condition rm’ont donné, que la bonsé de laReyne eſtanc
+        plus ſurpriſe que iarmis par les artifices de ſon Miniſtre, &amp; la
+        facilité de Monſieur le Duc d’Orleans l’abaudonnant à la con
+        duite de quelques-vns deces faux Tribuns du peuple, qui par
+        deſordides pretentions, d’ennemis decdarez du Ca dinal Ma
+        zarin, ſe ſont rendus ſes eſclaues, i’eſtois vnedesprincipales per
+        ſonnes à qui il teſtoit des nmoyens de pouuoir mettre vne fin à
+        tant de malheurs, &amp; que mon honneur, ma naiſſance, &amp; nmon
+        debuoir enuers l’Eſtat m’y obligeoient puiſſamment, &amp; de plus
+        me trouuant portéée à entreprendre vn deſſein i grand &amp; ſi
+        glorieux, par les prieres que m’en font les plus otables perſon
+        nages destrois Ordres du Royaume, &amp; encor par les ſenti
+        mens geaereux que les meillours Habitans de Paris &amp; des gran
+        des Villes m’ont teſmoigné, mais ſur tout me ſentant fortifiee
+        encette occafion de l’affection, du conſeil &amp; de l’aide de Mon
+        ſieur de Thurenne, qui par les grands ſeruices qu’il a rendu à
+        la France &amp; l’affection qu’il a teſmoigneé pour le bien public &amp;
+        pour la ville de Paris dans les derniers mouuemens, a fait paroi
+        ſtre ſon zele pour la grandeur de l’Eſtat, il a ſçeu faire differen
+        ce des veritables intereſts du Roy d’auec la pafſion aueugiée
+        d’yn Mniſtre furieux, &amp; ſans bleſſer le reſpect de l’authoritée
+        du Souuerain,il a ſçeu e degager &amp; ſouſtraire les forces qu’il
+        commandoit au Party du Cardinal Mazarin qui les vouloit
+        emnployer à la deſtruction de la ville capitale du Royaumo &amp; à
+        l’oppreſſion des peuples, apres auoir examiné toures choſes,
+        nous auons iugé que l’eſloigneent du Car dinal Mazarin qui
+        eſt yn perpetue obſtacle à l’eſtabliſſement de la tranquilité 
+        12
+        publique, eſtoit le premier pas qu’l falloit faire pour preparerla
+        guerſon aux maux de la France, &amp; qu’e uite la hiberte dos
+        Princes,la paix generale &amp; le ſoulagement des peuples eltoient
+        les ſeuls remedes qu’il falloit apporter aux calamitez qui l
+        deſtruiſſent; c’eſt pourquoy ſa Maeſte Cat holique m’ayant
+        fait l’honneur de m’inuter à ſeconder les bonnes inentions
+        qu’elle teſmoigne de conclure cette paix : Nous auou moy &amp;
+        Monſieur de Thurenne reſolu de toindre forces &amp; er
+        ployertousiius moyens pbur fare reuſſir vn deſſein li glorieux
+        &amp; li aduantageux aà̀ l’Lſtat, de ne point poſer les atmes que les
+        Princes na ſoient enliberté: Que les Parleens, le Clerge, la
+        Nobleſſe, les Communautez, les Vlles &amp; tous les ſubets du
+        Roy ae ouyſſent de leuits priuileges &amp; du benefice dos Decla
+        ations, &amp;ds trauailler onſlamment à eſtablir le repos &amp; l’v
+        nion entre les deux Cauronnes: Comme auſſi le Roy d Eſpa
+        gnede ſa part ne trouuant aucune ſeureté à̀ tratter la paix auec
+        de Cardinal Maarin, declaré ennemy du Roy &amp; de l’Eſtat par
+        lo Parlement de Patis, &amp; recognoiſſant l’abſol̂e noeceſſité ou il
+        ſe tr ouue engage d’auoit le conſentement des Princes, quipen
+        dant la minoriré du Roy ſon Cunſeillers neceſſaires de la
+        Regenee, &amp; pour pluſieurs autres grandes &amp; importantes rai
+        ſons qui regardent la ſtabilite &amp; l’aftermiſſerment du repos de
+        la Chreſtinte, s’eſtobligé des qu’ilsſ eront libres de eonclure
+        ioceſſament à des tondtons équitables, &amp; meſme de remer
+        re les difficultez qui ſe pourroient rencontrer dans le traiét
+        ou la deciſion des ſtats generaux legitmement aſſemblez, ou
+        à l’arbirrage des Princes.
+        Certes, s’il eſt permis par le droit dos gens, &amp; ſi la nature
+        meſme nousenſeigne de nous ſeruir de coutes choſes pour no
+        ſtre deffence lors qu’on nous opprime iniuſtemenc: Il faut
+        auoiier qu’il ſe trouue vne exrréme ſatisfaction quand en nous
+        garantiſſant d’vn malheur nous en garantiſſons le public, &amp;
+        qu’il n’eſt rien ſi dgne de loûange en nous deliurant que de
+        deliurer encor noſtre patrie. Et puiſque cela eſt ainſi, i’ay tout
+        lieu de croire que m’eſtant trouúe contraiunte d’employer la
+        ſorce legitime contre l’aiuſte, &amp; l’ayant ſat deſorte que ce que
+        i’en¬ 
+        ’entreprens va moins au ſalut de noſtre maiſon qu’au ſeruice
+        du Roy &amp; l’vtilite de la France, il ny à perſonne qui aye de
+        la conſcience &amp; du iugement qui n’approuue ce iuſte deſſein,
+        qul ny concoure, qui ne l’appuye, qui ne voye que le Cardinal
+        Mazarin nous neceſſite de nous ſeruir de ces remedes, qu ne
+        cognoiſſe la maladie de l’Eſtat, qui ne ſçache qu’il en eſt la
+        veritable cauſe, qui ne luy impute ee que quelques parties affii
+        geées pourront ſouffrir ny paruenir à leur parfaie gueriſon, &amp;
+        celles quien reſte ſaines &amp; entieres, &amp; qui enfin ne m’eſtime en
+        quelque façon heureuſe dans mon malheur, d’auoir ſeruy au
+        reſtabliſſement du Royaume.
+        Ce ſont là les veritables ſentimens dont i’ay eſtimé qu’il
+        eſtoit neceſſaire que le public fut informe, apres quoy il ne me
+        reſte rien à adiouſter, ſinon que i’exhorte icy tous les gens
+        d’honneur &amp; principalement le Parlement qui eſt le plus ſolde
+        fondement de la Monarchie, &amp; la ville captale du Royaume
+        qui donne l’exemple à toutes les autres, de ne pas perdre vne ſi
+        illuſtre occaſion d’aider à conſeruer au Roy ſon Eſtat, de ſe
+        couer le ioug inſuportable de la tyrannie eſtrangere, de deli
+        urer d’vne priſon iniuſte les Princes du Sang, &amp; de rendre la
+        paix à la Franceeſperant que la Diuine bonté qu penettre les
+        ſentimens de mon cœur, &amp; qui ſçait qu’ils ſont achemnez à
+        ces fins, benira la iuſtice des armes qu’on employe pour les
+        fair e reſſir, que deſillant les yeux de la Reyne, elle luv fera
+        voir en qu’elle abyſme des malheurs, ſon Miniſtretache à la
+        precipiter, qu’elle detrompera Monſieur le Duc d Orleans des
+        mauuais conſeils qu’onluy donne, &amp; qu’elle fera enhn qu’vn
+        party ſi vtil &amp; ſi neceffaire que celuy de l’eſlognement du
+        Cardinal Mazarin, du maintient de l’aurhoritée des Loi &amp; des
+        dernieres Declarations, du reſtabliſſement des priuileges attri
+        buez au Clergé &amp; à la Nobleſſe, de la conſeruation des l’as le
+        mens, du ſoulagement des peuples, de la liberteé des l’rnces, &amp;
+        de la pax generale, ſera auſſi generalement ſouſtenu par les
+        gens de bien, qne ie ſçay qu’il en ſera generalement approuue.
+        D			</p>
+		</body>
+	</text>
 </TEI>

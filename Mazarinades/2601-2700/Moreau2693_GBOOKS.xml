@@ -1,443 +1,782 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2693_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Paris en deuil réfléchissant sur son état présent, sur
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Paris en deuil réfléchissant sur son état présent, sur
           les périls auxquels elle a été exposée, les pertes qu'elle a faites, la semaine dernière,
           et les dangers qui la menacent encore à l'avenir.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=SIglkylNFQgC"/>
-          <author/>
-          <title source="Moreau">Paris en deuil réfléchissant sur son état présent, sur les périls
+					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+				<availability n="cc-by" status="restricted">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=SIglkylNFQgC"/>
+					<author/>
+					<title source="Moreau">Paris en deuil réfléchissant sur son état présent, sur les périls
             auxquels elle a été exposée, les pertes qu'elle a faites, la semaine dernière, et les
             dangers qui la menacent encore à l'avenir.</title>
-          <pubPlace source="Moreau">Sans Lieu</pubPlace>
-          <publisher>
-            <persName>Sans Nom</persName>
-          </publisher>
-          <date source="Moreau" when="1652">1652</date>
-          <extent>
-            <measure quantity="14" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2996944">Lyon</settlement>
-            <institution>Bibliothèque municipale</institution>
-            <repository/>
-            <idno type="cote">309905</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<pubPlace source="Moreau">Sans lieu</pubPlace>
+					<publisher>
+						<persName>Sans nom</persName>
+					</publisher>
+					<date source="Moreau" when="1652">1652</date>
+					<extent>
+						<measure quantity="14" unit="page"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2996944">Lyon</settlement>
+						<institution>Bibliothèque municipale</institution>
+						<repository/>
+						<idno type="cote">309905</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>True</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">2693. Paris en deuil réfléchissant sur son état présent, sur les périls
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">2693. Paris en deuil réfléchissant sur son état présent, sur les périls
           auxquels elle a été exposée, les pertes qu'elle a faites, la semaine dernière, et les
           dangers qui la menacent encore à l'avenir.Foris interficit gladius; et domi mors similis
           est. Sans Lieu, 1652, 14 pages. Amplification vulgaire sur le combat du faubourg Saint-An
           toine et l'incendie de l'Hôtel de Ville. Les exemplaires n'en sont pas communs.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="genre">prosopopée</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_88" source="Moreau">
-          <p>Incendie de l’Hôtel de Ville</p>
-          <date when="1652-07-04">1652-07-04</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-06-02" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>PARIS
-        <lb/>EN DVEIL.
-        <lb/>RFLECHISSANT SVR SON
-        <lb/>Eſtat preſent, les perils auſquels elle a
-        <lb/>eſté expoſée &amp; les pertes qu’elle a faites la
-        <lb/>ſemaine derniere, &amp; les dangers qui la
-        <lb/>menaſsent encor à l’aduenir.
-        <lb/>Foris interficit gladius &amp; domi mors ſimilis eſt.
-        <lb/>M DC. LII. <pb n="2"/>
-        <pb n="3"/>
-        <lb/>3
-        <lb/>PARIS EN DVEIL, REFLE
-        <lb/>chiſſant ſur ſon Eſtat preſent, les
-        <lb/>perils auſquels elle a eſſé expoſce,
-        <lb/>&amp; les pertes qu’elle a faites la ſe
-        <lb rend="¬" break="no"/>maine derniere, &amp; les dangers qui
-        <lb/>la menaſsent à l’aduenir.
-        <lb/> Foris interficit gladius &amp; domi mors
-        <lb/>imilis eft.
-        <lb/> V I vid iamaisrien de plus funeſte que
-        <lb/> J mon ſort&amp; qui ne plaindroit ma miſere
-        <lb/>au deplorable eſtat où ie ſuis’ne ſemble
-        <lb rend="¬" break="no"/>t’il pas que tout conſpire à ma perte, &amp;
-        <lb/>n’ay-ie pas ſuies de dire comme leremie, par
-        <lb rend="¬" break="no"/>lant en la perſonne de leruſalem. foris inteficit
-        <lb/>gladus &amp; domi maors fioilis eſt.
-        <lb/>Mardy, toutes les eminences que ie regarde
-        <lb/>ucoſté du Soleil Leuant me parurentcouuertes
-        <lb/>de bataillons &amp; d’eſcadrons ennemis, quime re
-        <lb rend="¬" break="no"/>gardoient comme la proye qu’ils eſperoient
-        <lb/>Aij <pb n="4"/>
-        <lb/>bien-toſt deuorer, apres auoir defait vne armeée
-        <lb/>plns foible qui defendoit mes muailles au
-        <lb/>dehors, &amp; ſur laquelle ils ſe prometfoient vne
-        <lb/>entiere victoire, par le moyen des Capitaines
-        <lb/>commandans aux portes de ce coſte laà, qu’ils
-        <lb/>auoieat pratiqués par le paſſé.
-        <lb/> Et Ieudy ie veis dans mon ſein meſme l’appa
-        <lb rend="¬" break="no"/>reil d’vne funeſte ſedition, qui s’aluma ſoudain
-        <lb/>autour de ma maiſon de ville pour l’embraſer
-        <lb/>auec la plus part de ceux qui s’y eſtoient aſſem
-        <lb rend="¬" break="no"/>blez pour deliberer, couchant le remede qu’on
-        <lb/>pouuoit trouuer à mes malheurs.
-        <lb/>Mardy, l’armée des Princes quiſe ſont decla
-        <lb rend="¬" break="no"/>rez mes Protecteurs, quelque temps enfermés
-        <lb/>entre les troupes ennemies qui fondoient ſur el
-        <lb rend="¬" break="no"/>les de toutos parts, &amp; les Compagnies qui pour
-        <lb/>lors eſtans de garde à mes portes, refuſoient à
-        <lb/>leur bagage l’entrée de ma ville.
-        <lb/> Et Ieudy, les Chefs eſleus de tous les Corps
-        <lb/>&amp; de tous les quartiers de la ville, pour ſe trou
-        <lb rend="¬" break="no"/>uer à l’aſſemblée qui ſe deuoit faire pour le bien
-        <lb/>public, furent reduits à̀ la derniere exeremi
-        <lb rend="¬" break="no"/>té dans cet Hoſtel, enuironne d’vne multitude
-        <lb/>infinie de peuple ardant à leur ruine, comme
-        <lb/>ſi la gloire &amp; le ſalut du païs euſt dependu de
-        <lb/>cette defaite.
-        <lb/>Mardy, toutes les ruës d’vn de mes faux
-        <lb rend="¬" break="no"/> bourgs, &amp; tous les champs qui enſont proches,
-        <lb/> eſtoient <pb n="5"/>
-        <lb/>eſtoient couuerts de corps morts des Soldats &amp;
-        <lb/>des Chcfs de l vn &amp; de l’autre party.
-        <lb/>Iet dy, mon Hatel de Ville &amp; la place de
-        <lb/>Gréve qui ſeruoit de champ de bataille aux aſ
-        <lb rend="¬" break="no"/>ſiegeans, me fait voir vn pareil ſpectacle, où
-        <lb/>beaucoup d innocens ſouffrirent de meſme, pour
-        <lb/>vn petit nombre de coupables, qui refuſoient
-        <lb/>de s’vnir, pour veiller conjointement auec les
-        <lb/>autres à ma protection.
-        <lb/>Mardy, le tranchant des eſpées &amp; les balles
-        <lb/>d mouſquet au dehors.
-        <lb/>leudy, toutes ſortes d’armesau dedans.
-        <lb/>Mardy, des crouppes en ordre.
-        <lb/>leudy, des furſeux en deſordre.
-        <lb/>Mardy, le Dieu des armes en couroux.
-        <lb/>leudy, la plus cruelle des furies la-torche ar
-        <lb rend="¬" break="no"/>dante a la main,&amp; dans l’vne &amp; l’autre orage,
-        <lb/>les bras des miens tendans à la deſtruction des
-        <lb/>iens ’ont fait vne guerre mortelle &amp;lettans
-        <lb/>dans mon eſprit les pointes des plus viues ter
-        <lb rend="¬" break="no"/>reurs, m’ont obhgée de m’eſcrier pluſieurs fois.
-        <lb/>Circsederant me dolores morts &amp; eticula imfrrni in
-        <lb rend="¬" break="no"/>enernt .
-        <lb/>Ainſi le temps de mes perils &amp; de mes mal
-        <lb rend="¬" break="no"/>heurs n’eſt dinſtingué que par de petits inter
-        <lb rend="¬" break="no"/>ualles, ouû̂ la faim ne me donne pas moins d’a
-        <lb rend="¬" break="no"/>larmes que ces deux autres leaux, dontefle t
-        <lb/>en quelque fayon la cauſe &amp; l’efet. Mais ’ayje
-        <lb/> B <pb n="6"/>
-        <lb/>6
-        <lb/>pas mauuaiſe grace de commencer ſi tard de me
-        <lb/>plaindre pour des max que ie ſens depuis tant
-        <lb/>d’années, &amp; compatiſſant aux douleurs des mié̃s,
-        <lb/>n’ayje pas ſuiet de dire à̀ celuy qui ſoutient le
-        <lb/>Tyran qui me fait ſouffrir toutes ces pertes.
-        <lb/>Non rude vulgus lachrymiſqae nouum,
-        <lb/>Lugere luges hoc continais
-        <lb/>Coimus annis ex quo tetigis
-        <lb/>Phrygiu grajas hoſes amylas.
-        <lb/>Ce qui ne peut s’enten dre que de l’arriuee de
-        <lb/>Mazarin en Fran ce.
-        <lb/>Sans mentir ce n’eſt pas aujourd’huy que ie
-        <lb/>dois regler ma douleur ſur celle des Citez les plus
-        <lb/>infortuneées, &amp; qu’ayant veu des degats &amp; des
-        <lb/>meurtres autour de mes murailles, &amp; des ſedi
-        <lb rend="¬" break="no"/>tions mortelles au dedans, i’ay peu me plaindre
-        <lb/>en ces termes, foris interficit gladius, &amp;c. le paſſe
-        <lb/>déja pour vieille pleureuſe, &amp; toute l’Europe qui
-        <lb/>me portoit enuie auparauant comme au ſejour
-        <lb/>des felicitez &amp; des parfaites delices, ne iette les
-        <lb/>yeux ſur moy maintenant que pour connoiſtre
-        <lb/>de quel œil ie voy fondre ſur moy tant de diſgra
-        <lb rend="¬" break="no"/>ces, &amp; pour voir la cataſtrophe de mes mal
-        <lb rend="¬" break="no"/>heuirs. Mais quoy, ſi mes enfans ſont atmez con
-        <lb rend="¬" break="no"/>tre mes enfans eſtant mere commune, ne doiſ je
-        <lb/>eilenplne ſt neonene enereiir ue dſe
-        <lb/>d’en prendre touſiours au malheur: Que puis¬ <pb n="7"/>
-        <lb/>ie, ſinon deteſtet la cauſe &amp; le pretexte qui les
-        <lb/>anime les vns contre les autres, d’vne fureur dont
-        <lb/>les animaux ne ſont point capables, ſi ce n’eſt
-        <lb/>enuers ceux qui ſont d’vne eſpece differente de
-        <lb/>laleur. Deteſtable Mazarin, maudit Eſtranger,
-        <lb/>faut il que pour la ſatisfaction d’vne perſonne
-        <lb/>que tu deſ-honores, &amp; que tu met en danger de
-        <lb/>ſe perdre auec toy, tu couſtes tant de ſang, de
-        <lb/>vies &amp; de biens à la France’&amp; ſe peut il qu’en
-        <lb rend="¬" break="no"/>fermé de tous coſtez des villes &amp; des fortereſſes
-        <lb/>deceux qui te haïſſent mortellement, tu ſubſi
-        <lb rend="¬" break="no"/>ſtes ſi long temps en vne rerre eſtranagere à la
-        <lb/>ine de tout l’Eſtat’ ne t’eſtonne point de voir
-        <lb/>que ie m’emporte ſi hautement contre toy, puis
-        <lb/>que i’ay tant dinterreſt dans les maux que tu
-        <lb/>cauſes &amp; que dans vne ſeule ſemaine, tu mas
-        <lb/>fit voir des ſpectacles d’horreur ſi dfferents &amp;
-        <lb/>ſi tragiques. Ne t’eſtonne point anſſi de voir
-        <lb/>que ſi ie timpute la cauſe des guerres inre
-        <lb rend="¬" break="no"/>ſtines qui m’agittent, puis que ſans te voir ie
-        <lb/>e ſens dans les pratiques &amp; l’action de ceux
-        <lb/>qu’on nomme vulgairement de ton nom, parce
-        <lb/>qu’ilsſont tes fauteurs: mais les voyant aujour
-        <lb/>dhuy prelque’ tous ſortis de mes urs, puiſ ie
-        <lb/>eſperer quelque tréve à mes infortunes, ou me
-        <lb/>croire en eſtat d’en eſprouuer moins quepar le
-        <lb/>paſſé?Il eſt vray que ſçachant l’Vnion qui s’eſt
-        <lb/>ſormée au ſein de ma ville contre toy, ie me croi¬ <pb n="8"/>
-        <lb/> 8
-        <lb/>rois ſur le point deſtre du tout ſoulagée, ſi ie ne
-        <lb/>craignois pour beaucoup de bons rrançois que
-        <lb/>des interreſts particuliers attachent pa bien
-        <lb rend="¬" break="no"/>ſeance au party que tu rends lobjet de la haime
-        <lb/>vniuerſelle: mais parce que ie les ayme autan
-        <lb/>que ie ſuis ob’igée de le hair, ma peine redouble
-        <lb/>par la crainte que i’ay pour eux. Non, non, ma
-        <lb/>douleur ſans doute ne doit point diminuer de ſa
-        <lb/>force. puiſque mon mal heur à le bien conſi
-        <lb rend="¬" break="no"/>derer, eſt encore auſi grand qu’il fut ia
-        <lb rend="¬" break="no"/>mais.
-        <lb/>Si ie ietce les yeux autour de mes murailles,
-        <lb/>i’y vois encor des deux cofſtez deux camps qui ſe
-        <lb/>regardent auec de grandes forces, qui pillent
-        <lb/>tous les biens qui ſe rencontrnt dans les mai
-        <lb rend="¬" break="no"/>ſons &amp; dans la campagne: &amp; ie n’atrend que
-        <lb/>l’heure où l’vn des deux partis eſtant groſſi des.
-        <lb/>forces qui s’y viennentioindre, ende le change
-        <lb/>à l’autre, de l’entreprile qu’il fiſt Mardy de l’atta¬.
-        <lb/>quer à ſon aduantage, &amp; ne merende, ainſicom
-        <lb rend="¬" break="no"/>me deſia ie la ſuis, la mere des orphelins &amp; des
-        <lb/>vefucs&amp; ſi ie m’arreſte à conſiderer ce qui ſel
-        <lb/>paſſe dans mon propre ſejour. i’y voytout rem
-        <lb rend="¬" break="no"/>ply de murmures, dhorteur &amp; de düeil, ſtraa
-        <lb/>paſsim corpora plenz fueibus vi collucentes vdiqee
-        <lb/>facer; Enfin- toutes ces marques de mes pertes!
-        <lb/>deimieres ſont les objets les plus frequents que
-        <lb/>i’enuilage auecautant de douleur que deſtonne
-        <lb rend="¬" break="no"/>ment <pb n="9"/>
-        <lb/> 9
-        <lb/>nement? ô ma Nauire qui ſera deſormais ton pi
-        <lb rend="¬" break="no"/>lote &amp; ton guide en vn temps ſi dangereux, ou
-        <lb/>ant de vẽts contrairesagitetla mere de la Frãce,
-        <lb/>où ie te vis ſingler auec vnvent ſifauorable : mais
-        <lb/>qui ne te croiroit au pointde fairevn fueſtena
-        <lb rend="¬" break="no"/>frage parmy tane d’eſciü̈eils qui t’enuironnent ’ne
-        <lb/>vois eu pas ’les foudres &amp; les eſlaite menaſſer
-        <lb/>de toutes pats, &amp; quolque haut œſleue que. u
-        <lb/>ois, ’as tu pas defia veu la fumie deces fex ’o
-        <lb rend="¬" break="no"/>fuſquer, &amp; par vn nouueau prodige qui ohdque
-        <lb/>l’ordre de la narure, n’as tu pas veu cesfoudtes
-        <lb/>monter de la terre en lair poare confonde, &amp;e
-        <lb/>l’eau ontre ſa couſtume, fournir l’alimenx aà̀ cos
-        <lb/>feux dont elle eſt naturellemenr ennemie, en ler
-        <lb/>fourniſſaht du bois pour tembraſer. Maislhelasà̀
-        <lb/>4ui puiſ je auoir recours dans de: ſi dangreuos
-        <lb/>extremitez? à don peupfe’mais il eſt coretuut
-        <lb/>eſcumant de fureur, &amp; piein de reſſentimentco
-        <lb rend="¬" break="no"/>tre vne partie de ſes Chefs, à ſes hefs : mais lles
-        <lb/>partialitez regnert entreux plus que iamais, à
-        <lb/>non Parlement mais il feint dem ſecourir
-        <lb/>pour me perdre, &amp; beaucop moins conſidereé
-        <lb/>ſes ireroſts que les miens, bien quiils ayentſer
-        <lb rend="¬" break="no"/>y de pretexte a ſor remüienaent. A la Reyne,
-        <lb/>mais elle voudtoit voir le dernierdes miens aù
-        <lb/>ercieil, parce qui ſentant l’effe&amp;t de fes ri
-        <lb rend="¬" break="no"/>gueurs, ils ont déppiiilléleeſpect qu’ils auoieue
-        <lb/>ou ſai Muueſé -u mom Roy, oalh’eſt, il pas <pb n="10"/>
-        <lb/>10
-        <lb/>eſclaue du Mazarin, ce cruel perſecutieur de mes
-        <lb/>’ ſujets. Aux Saints tutelaire de ma Ville, mais n’a
-        <lb rend="¬" break="no"/>ton pas vainement, pour remedier aux maux qui
-        <lb/> me preſſent, porteé leurs ſaintes Reliques en pro
-        <lb rend="¬" break="no"/>-ceſfion par les ruës, &amp; deſcendu la Chaſſe de
-        <lb/>Saimte eneuiefue, qu’on n’auoit iamais deſ
-        <lb rend="¬" break="no"/>cenduë ſans miracle aaparauant: Aux Celeſtes
-        <lb/>intelligences, mais celles qui meuuent les Glo
-        <lb rend="¬" break="no"/>bes Celeſtes. fontvoir dans les aſpects des Aſtres,
-        <lb/>pluſieurs diſpoſitions quiſemblent tendre à̀ ma
-        <lb/>ruine. A Dieu meſme, nais il eſt tout à fait irriteé
-        <lb/> contre mon peuple, &amp; n’a t’on pas remarqué́
-        <lb/>que la veuë de ſon Sacré Corps, oppoſeé dns la
-        <lb/>place de Gréve, à la fureur des mutins, ne les
-        <lb/>empeſchoit pas de tirer côtre moHoſtel de ville ¬i
-        <lb/>toſt que leé Preſtre qui le porroit en toute vene
-        <lb rend="¬" break="no"/>ration eſtoit paſſeé́, &amp; que les feux allumés en
-        <lb/>quatre endrois, contre les portes de ecet Ho
-        <lb rend="¬" break="no"/>tel, n’en furent pas moins ardants. I’aurois peut
-        <lb rend="¬" break="no"/>eſtre reclamé́ la memoire &amp; le genie de ce grand
-        <lb/>Henry, ſous le Regne duquel ie paſſay de ſi dou
-        <lb rend="¬" break="no"/>ces anneée, affin qu’il priſt le ſoin de conſetuer
-        <lb/>ce bel ouurage, dont il futlauteur, &amp; qui porte
-        <lb/>encore ces Auguſtes marques, ſt ie n’auois veu
-        <lb/>on effigie inuiolable poſée ſur la grand’porto,
-        <lb/>pat vn preſage funeſteà ſes ſucceſſeurs lau calſi
-        <lb rend="¬" break="no"/>oeé par le feu, ou defiguree par lefer
-        <lb/>Quel Aſte onneny de modbon-haus, inuan <pb n="11"/>
-        <lb/>ant de diſgraces ſur ma Ville, ſuſpend ainſi les
-        <lb/>effets des Puiſſances qui m’eroient le plus fauora
-        <lb rend="¬" break="no"/>bles, &amp; d’ou vient que le Soleil en.me cachant
-        <lb/>ſõ viſage, eut plus de noirceurpounmoy ſee, dãs
-        <lb/>ſa derniere éclipfe, que pour tout le reſte de l’Eu..
-        <lb/>rope Neſt ce pas pour moaſrer que plus de
-        <lb/>malheurs me ogardent, &amp; que ie les ay merites
-        <lb/>par les crimes de qu’elques vns des miens, qui ſe
-        <lb/>ſont plus dans l’opprſſion des lnocens.
-        <lb/>Ceſt ce qui me perſuade auiourd’huy, que
-        <lb/>comme Troye, &amp; les autres plus belles Villes du
-        <lb/>monde, ont eſté ruineé́es au point de leur plus
-        <lb/>grande perfection, peut-eſtre mon heure farale
-        <lb/>aproche, &amp; que ie dois ſatisfaire par ma cheute
-        <lb/>ou mon changement, ceux a qui ie feis quelque
-        <lb/>outrag au temps de mes proſperitez. Qu’on ne
-        <lb/>m’appelle donc plus Faris, puis que ce nom qui
-        <lb/>porte aux oreilles ie ne ſç̧ay quoy d’aggreable &amp;
-        <lb/>de delicieux, à peu de rapport auec ma fortune
-        <lb/>preſente: ais Luceſſe, c’eſt à dire l’Eſclaue &amp;
-        <lb/>labject:, comme la boüe qu’on foule aux pieds,
-        <lb/>&amp; qu’on ne me regarde plus deſormais pour fla
-        <lb rend="¬" break="no"/>ter ſes yeux de l’aſpect de ce que i’ay d ’illuſtre &amp;
-        <lb/>de beau dans la ſuperficie: mais qu’on s’arreſte
-        <lb/>à conſiderer ce que i’ay de nmſerable &amp; de defe
-        <lb rend="¬" break="no"/>tueux dans le centre, où l’on ne vVerra que des
-        <lb/>l’pe de die au ue oanmeeſde purmueſ <pb n="12"/>
-        <lb/>2
-        <lb/>grands malheurs, mes Princes ne m’abandonne..
-        <lb/>ont point à la rigueur du ſort qui me perſecute.
-        <lb/>Le paſſé me reſpond de l’aduenir, &amp; i’oſe croire
-        <lb/>que ſi dans mes viues apprehentins, &amp; mes
-        <lb/>plus grands perils, i’ay ſenti les effects de leur
-        <lb/>ſecours inuincble qui m’a conre toute eſpe
-        <lb rend="¬" break="no"/>rance ſauué de l’abyſme oùi’eſtois fur le point de
-        <lb/>tober. ils me feront le meſme bien deſormais, &amp;
-        <lb/>que i’auray ſuiet de dire en leur rendant
-        <lb/> graces de ces faueurs que i’eſtois perduë ſi ie
-        <lb/> n’euſſe eſté́ perduë, &amp; qu’il me falloir ſouffrir ces
-        <lb/>maux pour arriuer a la felicité qu’ils me font eſ
-        <lb rend="¬" break="no"/>perer ſous vn Regne beaucoup plus doux &amp;e
-        <lb/>mieux ordonné mille fois. Ne ſçay ie pas qu’on
-        <lb/>n’arriue au doux ſe;our des lſles Fortunees que
-        <lb/>parvn longtraict demers: qu’on achetre la iouſ
-        <lb rend="¬" break="no"/>ſance de la douce clarre du iour par la ſoufftan
-        <lb rend="¬" break="no"/>ce des tenebres qui nous diſpoſent à̀ le trouuer
-        <lb/>plus agreable qu’vn corps chargé d’bumeurs pu
-        <lb rend="¬" break="no"/>trides &amp; cotrompues, ne peut eſtre guery que
-        <lb/>par pluſieurs facheux medicamens, plufieures
-        <lb/>ſaignées &amp; pluſieursefforts que fait la nature en
-        <lb/> des criſes violentes &amp; de grands accez de fiévre,
-        <lb/> pour chaſier ce venin des-veines du malade, &amp;
-        <lb/> que meſme ſi le grain de froment ſemé́ dans la
-        <lb/>terre n’y ſouffre vne entiere corruprion, il ne pro
-        <lb rend="¬" break="no"/>duit iamis de tige fecondes ny d’eſpicsqui rem
-        <lb rend="¬" break="no"/> pliſſent la maiſon du laboureur. Qu’ainſi dans
-        <lb/>les <pb n="13"/>
-        <lb/>les changemens qui le font pour noſte bon
-        <lb rend="¬" break="no"/>eut. le Cel prend’ plaifir de nousvendre tou
-        <lb rend="¬" break="no"/> ſiours les biens qu’il nous faie au pri de quel
-        <lb rend="¬" break="no"/>ques pelnes qu’il nous en couſte de forte que ie
-        <lb/> Pvis eſpererauec raiſon, qu’apres que la guerre
-        <lb/>conme vne fatale peſteaura con ſomme tout ue
-        <lb/>qu’il yauoit de corrompu dans mes murs &amp; aux
-        <lb/>enuirons, ie verray ma ſanté naiſtre de ma mala
-        <lb rend="¬" break="no"/>die, &amp;n’eſprouueray pas encore la funeſte reuo
-        <lb rend="¬" break="no"/>lutionque ie crains;puiſque i’ayde ſi bons prote.
-        <lb/> Qeats pour l’empeſcher Que ſi mon SoteHm’a
-        <lb rend="¬" break="no"/>pandorne en la perſonne de mon Roy; eesaſres
-        <lb/>fauoables ſufront pour m’eſclairer,’ nme iee
-        <lb rend="¬" break="no"/>tent ils point déja des rayons auec tant d’éclat
-        <lb/>ut vous les yeux en ſont eſbloüisSur tout ie les
-        <lb/>pi derendre leur influance fauorable au peu
-        <lb rend="¬" break="no"/>ple, &amp;de croire que ſuiuant l’opinion de ces An
-        <lb rend="¬" break="no"/>eiens, qui croyoient que les Aſtres tiroient leur.
-        <lb/>nourriture des fumees des Cieux &amp; de la terre.
-        <lb/>Les Princes tirent leur puiſſance de la bien
-        <lb rend="¬" break="no"/>veillance &amp; de lafaueur des peuples auſquel il.
-        <lb/>ſont obligez de fendre par certe loy des bien
-        <lb rend="¬" break="no"/>ſaiu pourde bonnes volonte &amp; des oſſers pour
-        <lb/>des dſirs. Ainſi voyant cette parfaite vmion de,
-        <lb/>uis de tous mes ſuiets qui ſont à preſent trou
-        <lb rend="¬" break="no"/>leadinquierude &amp; de craines, ieverery pl
-        <lb/>delumeideioye queien’en veiſe à̀ peſent de
-        <lb/>D <pb n="14"/>
-        <lb/>douleur, &amp; ſi mon Roy ſe tient eſloigne de moy
-        <lb/>ie plaindray moins le mal- heur de ſon ab
-        <lb rend="¬" break="no"/>ſence, ayant chez moy pluſieurs Princes dignes
-        <lb/>de l’eſtre &amp; dont la valeur trouue à peine des élo
-        <lb rend="¬" break="no"/>ges dignes d’elle dans les plus belles expreſſions
-        <lb/>de aoſtre langue &amp; le genie des plus beaux eſ
-        <lb rend="¬" break="no"/> prits.
-        <lb/>FIN.
-        <lb/>Faues ſuraemues en l’impreſsionm.
-        <lb/>Page 4. ligne i4. liſez fut quelque temps. ligne15.
-        <lb/> &amp;16. liſez ſur elle de toutesparts.</p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="genre">prosopopée</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_88" source="Moreau">
+					<p>Incendie de l’Hôtel de Ville</p>
+					<date when="1652-07-04">1652-07-04</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-06-02" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<pb n="8"/>
+				<pb n="9"/>
+				<pb n="10"/>
+				<pb n="11"/>
+				<pb n="12"/>
+				<pb n="13"/>
+				<pb n="14"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+PARIS
+        EN DVEIL.
+        RFLECHISSANT SVR SON
+        Eſtat preſent, les perils auſquels elle a
+        eſté expoſée &amp; les pertes qu’elle a faites la
+        ſemaine derniere, &amp; les dangers qui la
+        menaſsent encor à l’aduenir.
+        Foris interficit gladius &amp; domi mors ſimilis eſt.
+        M DC. LII. 
+        
+        3
+        PARIS EN DVEIL, REFLE
+        chiſſant ſur ſon Eſtat preſent, les
+        perils auſquels elle a eſſé expoſce,
+        &amp; les pertes qu’elle a faites la ſe
+        maine derniere, &amp; les dangers qui
+        la menaſsent à l’aduenir.
+         Foris interficit gladius &amp; domi mors
+        imilis eft.
+         V I vid iamaisrien de plus funeſte que
+         J mon ſort&amp; qui ne plaindroit ma miſere
+        au deplorable eſtat où ie ſuis’ne ſemble
+        t’il pas que tout conſpire à ma perte, &amp;
+        n’ay-ie pas ſuies de dire comme leremie, par
+        lant en la perſonne de leruſalem. foris inteficit
+        gladus &amp; domi maors fioilis eſt.
+        Mardy, toutes les eminences que ie regarde
+        ucoſté du Soleil Leuant me parurentcouuertes
+        de bataillons &amp; d’eſcadrons ennemis, quime re
+        gardoient comme la proye qu’ils eſperoient
+        Aij 
+        bien-toſt deuorer, apres auoir defait vne armeée
+        plns foible qui defendoit mes muailles au
+        dehors, &amp; ſur laquelle ils ſe prometfoient vne
+        entiere victoire, par le moyen des Capitaines
+        commandans aux portes de ce coſte laà, qu’ils
+        auoieat pratiqués par le paſſé.
+         Et Ieudy ie veis dans mon ſein meſme l’appa
+        reil d’vne funeſte ſedition, qui s’aluma ſoudain
+        autour de ma maiſon de ville pour l’embraſer
+        auec la plus part de ceux qui s’y eſtoient aſſem
+        blez pour deliberer, couchant le remede qu’on
+        pouuoit trouuer à mes malheurs.
+        Mardy, l’armée des Princes quiſe ſont decla
+        rez mes Protecteurs, quelque temps enfermés
+        entre les troupes ennemies qui fondoient ſur el
+        les de toutos parts, &amp; les Compagnies qui pour
+        lors eſtans de garde à mes portes, refuſoient à
+        leur bagage l’entrée de ma ville.
+         Et Ieudy, les Chefs eſleus de tous les Corps
+        &amp; de tous les quartiers de la ville, pour ſe trou
+        uer à l’aſſemblée qui ſe deuoit faire pour le bien
+        public, furent reduits à̀ la derniere exeremi
+        té dans cet Hoſtel, enuironne d’vne multitude
+        infinie de peuple ardant à leur ruine, comme
+        ſi la gloire &amp; le ſalut du païs euſt dependu de
+        cette defaite.
+        Mardy, toutes les ruës d’vn de mes faux
+         bourgs, &amp; tous les champs qui enſont proches,
+         eſtoient 
+        eſtoient couuerts de corps morts des Soldats &amp;
+        des Chcfs de l vn &amp; de l’autre party.
+        Iet dy, mon Hatel de Ville &amp; la place de
+        Gréve qui ſeruoit de champ de bataille aux aſ
+        ſiegeans, me fait voir vn pareil ſpectacle, où
+        beaucoup d innocens ſouffrirent de meſme, pour
+        vn petit nombre de coupables, qui refuſoient
+        de s’vnir, pour veiller conjointement auec les
+        autres à ma protection.
+        Mardy, le tranchant des eſpées &amp; les balles
+        d mouſquet au dehors.
+        leudy, toutes ſortes d’armesau dedans.
+        Mardy, des crouppes en ordre.
+        leudy, des furſeux en deſordre.
+        Mardy, le Dieu des armes en couroux.
+        leudy, la plus cruelle des furies la-torche ar
+        dante a la main,&amp; dans l’vne &amp; l’autre orage,
+        les bras des miens tendans à la deſtruction des
+        iens ’ont fait vne guerre mortelle &amp;lettans
+        dans mon eſprit les pointes des plus viues ter
+        reurs, m’ont obhgée de m’eſcrier pluſieurs fois.
+        Circsederant me dolores morts &amp; eticula imfrrni in
+        enernt .
+        Ainſi le temps de mes perils &amp; de mes mal
+        heurs n’eſt dinſtingué que par de petits inter
+        ualles, ouû̂ la faim ne me donne pas moins d’a
+        larmes que ces deux autres leaux, dontefle t
+        en quelque fayon la cauſe &amp; l’efet. Mais ’ayje
+         B 
+        6
+        pas mauuaiſe grace de commencer ſi tard de me
+        plaindre pour des max que ie ſens depuis tant
+        d’années, &amp; compatiſſant aux douleurs des mié̃s,
+        n’ayje pas ſuiet de dire à̀ celuy qui ſoutient le
+        Tyran qui me fait ſouffrir toutes ces pertes.
+        Non rude vulgus lachrymiſqae nouum,
+        Lugere luges hoc continais
+        Coimus annis ex quo tetigis
+        Phrygiu grajas hoſes amylas.
+        Ce qui ne peut s’enten dre que de l’arriuee de
+        Mazarin en Fran ce.
+        Sans mentir ce n’eſt pas aujourd’huy que ie
+        dois regler ma douleur ſur celle des Citez les plus
+        infortuneées, &amp; qu’ayant veu des degats &amp; des
+        meurtres autour de mes murailles, &amp; des ſedi
+        tions mortelles au dedans, i’ay peu me plaindre
+        en ces termes, foris interficit gladius, &amp;c. le paſſe
+        déja pour vieille pleureuſe, &amp; toute l’Europe qui
+        me portoit enuie auparauant comme au ſejour
+        des felicitez &amp; des parfaites delices, ne iette les
+        yeux ſur moy maintenant que pour connoiſtre
+        de quel œil ie voy fondre ſur moy tant de diſgra
+        ces, &amp; pour voir la cataſtrophe de mes mal
+        heuirs. Mais quoy, ſi mes enfans ſont atmez con
+        tre mes enfans eſtant mere commune, ne doiſ je
+        eilenplne ſt neonene enereiir ue dſe
+        d’en prendre touſiours au malheur: Que puis¬ 
+        ie, ſinon deteſtet la cauſe &amp; le pretexte qui les
+        anime les vns contre les autres, d’vne fureur dont
+        les animaux ne ſont point capables, ſi ce n’eſt
+        enuers ceux qui ſont d’vne eſpece differente de
+        laleur. Deteſtable Mazarin, maudit Eſtranger,
+        faut il que pour la ſatisfaction d’vne perſonne
+        que tu deſ-honores, &amp; que tu met en danger de
+        ſe perdre auec toy, tu couſtes tant de ſang, de
+        vies &amp; de biens à la France’&amp; ſe peut il qu’en
+        fermé de tous coſtez des villes &amp; des fortereſſes
+        deceux qui te haïſſent mortellement, tu ſubſi
+        ſtes ſi long temps en vne rerre eſtranagere à la
+        ine de tout l’Eſtat’ ne t’eſtonne point de voir
+        que ie m’emporte ſi hautement contre toy, puis
+        que i’ay tant dinterreſt dans les maux que tu
+        cauſes &amp; que dans vne ſeule ſemaine, tu mas
+        fit voir des ſpectacles d’horreur ſi dfferents &amp;
+        ſi tragiques. Ne t’eſtonne point anſſi de voir
+        que ſi ie timpute la cauſe des guerres inre
+        ſtines qui m’agittent, puis que ſans te voir ie
+        e ſens dans les pratiques &amp; l’action de ceux
+        qu’on nomme vulgairement de ton nom, parce
+        qu’ilsſont tes fauteurs: mais les voyant aujour
+        dhuy prelque’ tous ſortis de mes urs, puiſ ie
+        eſperer quelque tréve à mes infortunes, ou me
+        croire en eſtat d’en eſprouuer moins quepar le
+        paſſé?Il eſt vray que ſçachant l’Vnion qui s’eſt
+        ſormée au ſein de ma ville contre toy, ie me croi¬ 
+         8
+        rois ſur le point deſtre du tout ſoulagée, ſi ie ne
+        craignois pour beaucoup de bons rrançois que
+        des interreſts particuliers attachent pa bien
+        ſeance au party que tu rends lobjet de la haime
+        vniuerſelle: mais parce que ie les ayme autan
+        que ie ſuis ob’igée de le hair, ma peine redouble
+        par la crainte que i’ay pour eux. Non, non, ma
+        douleur ſans doute ne doit point diminuer de ſa
+        force. puiſque mon mal heur à le bien conſi
+        derer, eſt encore auſi grand qu’il fut ia
+        mais.
+        Si ie ietce les yeux autour de mes murailles,
+        i’y vois encor des deux cofſtez deux camps qui ſe
+        regardent auec de grandes forces, qui pillent
+        tous les biens qui ſe rencontrnt dans les mai
+        ſons &amp; dans la campagne: &amp; ie n’atrend que
+        l’heure où l’vn des deux partis eſtant groſſi des.
+        forces qui s’y viennentioindre, ende le change
+        à l’autre, de l’entreprile qu’il fiſt Mardy de l’atta¬.
+        quer à ſon aduantage, &amp; ne merende, ainſicom
+        me deſia ie la ſuis, la mere des orphelins &amp; des
+        vefucs&amp; ſi ie m’arreſte à conſiderer ce qui ſel
+        paſſe dans mon propre ſejour. i’y voytout rem
+        ply de murmures, dhorteur &amp; de düeil, ſtraa
+        paſsim corpora plenz fueibus vi collucentes vdiqee
+        facer; Enfin- toutes ces marques de mes pertes!
+        deimieres ſont les objets les plus frequents que
+        i’enuilage auecautant de douleur que deſtonne
+        ment 
+         9
+        nement? ô ma Nauire qui ſera deſormais ton pi
+        lote &amp; ton guide en vn temps ſi dangereux, ou
+        ant de vẽts contrairesagitetla mere de la Frãce,
+        où ie te vis ſingler auec vnvent ſifauorable : mais
+        qui ne te croiroit au pointde fairevn fueſtena
+        frage parmy tane d’eſciü̈eils qui t’enuironnent ’ne
+        vois eu pas ’les foudres &amp; les eſlaite menaſſer
+        de toutes pats, &amp; quolque haut œſleue que. u
+        ois, ’as tu pas defia veu la fumie deces fex ’o
+        fuſquer, &amp; par vn nouueau prodige qui ohdque
+        l’ordre de la narure, n’as tu pas veu cesfoudtes
+        monter de la terre en lair poare confonde, &amp;e
+        l’eau ontre ſa couſtume, fournir l’alimenx aà̀ cos
+        feux dont elle eſt naturellemenr ennemie, en ler
+        fourniſſaht du bois pour tembraſer. Maislhelasà̀
+        4ui puiſ je auoir recours dans de: ſi dangreuos
+        extremitez? à don peupfe’mais il eſt coretuut
+        eſcumant de fureur, &amp; piein de reſſentimentco
+        tre vne partie de ſes Chefs, à ſes hefs : mais lles
+        partialitez regnert entreux plus que iamais, à
+        non Parlement mais il feint dem ſecourir
+        pour me perdre, &amp; beaucop moins conſidereé
+        ſes ireroſts que les miens, bien quiils ayentſer
+        y de pretexte a ſor remüienaent. A la Reyne,
+        mais elle voudtoit voir le dernierdes miens aù
+        ercieil, parce qui ſentant l’effe&amp;t de fes ri
+        gueurs, ils ont déppiiilléleeſpect qu’ils auoieue
+        ou ſai Muueſé -u mom Roy, oalh’eſt, il pas 
+        10
+        eſclaue du Mazarin, ce cruel perſecutieur de mes
+        ’ ſujets. Aux Saints tutelaire de ma Ville, mais n’a
+        ton pas vainement, pour remedier aux maux qui
+         me preſſent, porteé leurs ſaintes Reliques en pro
+        -ceſfion par les ruës, &amp; deſcendu la Chaſſe de
+        Saimte eneuiefue, qu’on n’auoit iamais deſ
+        cenduë ſans miracle aaparauant: Aux Celeſtes
+        intelligences, mais celles qui meuuent les Glo
+        bes Celeſtes. fontvoir dans les aſpects des Aſtres,
+        pluſieurs diſpoſitions quiſemblent tendre à̀ ma
+        ruine. A Dieu meſme, nais il eſt tout à fait irriteé
+         contre mon peuple, &amp; n’a t’on pas remarqué́
+        que la veuë de ſon Sacré Corps, oppoſeé dns la
+        place de Gréve, à la fureur des mutins, ne les
+        empeſchoit pas de tirer côtre moHoſtel de ville ¬i
+        toſt que leé Preſtre qui le porroit en toute vene
+        ration eſtoit paſſeé́, &amp; que les feux allumés en
+        quatre endrois, contre les portes de ecet Ho
+        tel, n’en furent pas moins ardants. I’aurois peut
+        eſtre reclamé́ la memoire &amp; le genie de ce grand
+        Henry, ſous le Regne duquel ie paſſay de ſi dou
+        ces anneée, affin qu’il priſt le ſoin de conſetuer
+        ce bel ouurage, dont il futlauteur, &amp; qui porte
+        encore ces Auguſtes marques, ſt ie n’auois veu
+        on effigie inuiolable poſée ſur la grand’porto,
+        pat vn preſage funeſteà ſes ſucceſſeurs lau calſi
+        oeé par le feu, ou defiguree par lefer
+        Quel Aſte onneny de modbon-haus, inuan 
+        ant de diſgraces ſur ma Ville, ſuſpend ainſi les
+        effets des Puiſſances qui m’eroient le plus fauora
+        bles, &amp; d’ou vient que le Soleil en.me cachant
+        ſõ viſage, eut plus de noirceurpounmoy ſee, dãs
+        ſa derniere éclipfe, que pour tout le reſte de l’Eu..
+        rope Neſt ce pas pour moaſrer que plus de
+        malheurs me ogardent, &amp; que ie les ay merites
+        par les crimes de qu’elques vns des miens, qui ſe
+        ſont plus dans l’opprſſion des lnocens.
+        Ceſt ce qui me perſuade auiourd’huy, que
+        comme Troye, &amp; les autres plus belles Villes du
+        monde, ont eſté ruineé́es au point de leur plus
+        grande perfection, peut-eſtre mon heure farale
+        aproche, &amp; que ie dois ſatisfaire par ma cheute
+        ou mon changement, ceux a qui ie feis quelque
+        outrag au temps de mes proſperitez. Qu’on ne
+        m’appelle donc plus Faris, puis que ce nom qui
+        porte aux oreilles ie ne ſç̧ay quoy d’aggreable &amp;
+        de delicieux, à peu de rapport auec ma fortune
+        preſente: ais Luceſſe, c’eſt à dire l’Eſclaue &amp;
+        labject:, comme la boüe qu’on foule aux pieds,
+        &amp; qu’on ne me regarde plus deſormais pour fla
+        ter ſes yeux de l’aſpect de ce que i’ay d ’illuſtre &amp;
+        de beau dans la ſuperficie: mais qu’on s’arreſte
+        à conſiderer ce que i’ay de nmſerable &amp; de defe
+        tueux dans le centre, où l’on ne vVerra que des
+        l’pe de die au ue oanmeeſde purmueſ 
+        2
+        grands malheurs, mes Princes ne m’abandonne..
+        ont point à la rigueur du ſort qui me perſecute.
+        Le paſſé me reſpond de l’aduenir, &amp; i’oſe croire
+        que ſi dans mes viues apprehentins, &amp; mes
+        plus grands perils, i’ay ſenti les effects de leur
+        ſecours inuincble qui m’a conre toute eſpe
+        rance ſauué de l’abyſme oùi’eſtois fur le point de
+        tober. ils me feront le meſme bien deſormais, &amp;
+        que i’auray ſuiet de dire en leur rendant
+         graces de ces faueurs que i’eſtois perduë ſi ie
+         n’euſſe eſté́ perduë, &amp; qu’il me falloir ſouffrir ces
+        maux pour arriuer a la felicité qu’ils me font eſ
+        perer ſous vn Regne beaucoup plus doux &amp;e
+        mieux ordonné mille fois. Ne ſçay ie pas qu’on
+        n’arriue au doux ſe;our des lſles Fortunees que
+        parvn longtraict demers: qu’on achetre la iouſ
+        ſance de la douce clarre du iour par la ſoufftan
+        ce des tenebres qui nous diſpoſent à̀ le trouuer
+        plus agreable qu’vn corps chargé d’bumeurs pu
+        trides &amp; cotrompues, ne peut eſtre guery que
+        par pluſieurs facheux medicamens, plufieures
+        ſaignées &amp; pluſieursefforts que fait la nature en
+         des criſes violentes &amp; de grands accez de fiévre,
+         pour chaſier ce venin des-veines du malade, &amp;
+         que meſme ſi le grain de froment ſemé́ dans la
+        terre n’y ſouffre vne entiere corruprion, il ne pro
+        duit iamis de tige fecondes ny d’eſpicsqui rem
+         pliſſent la maiſon du laboureur. Qu’ainſi dans
+        les 
+        les changemens qui le font pour noſte bon
+        eut. le Cel prend’ plaifir de nousvendre tou
+         ſiours les biens qu’il nous faie au pri de quel
+        ques pelnes qu’il nous en couſte de forte que ie
+         Pvis eſpererauec raiſon, qu’apres que la guerre
+        conme vne fatale peſteaura con ſomme tout ue
+        qu’il yauoit de corrompu dans mes murs &amp; aux
+        enuirons, ie verray ma ſanté naiſtre de ma mala
+        die, &amp;n’eſprouueray pas encore la funeſte reuo
+        lutionque ie crains;puiſque i’ayde ſi bons prote.
+         Qeats pour l’empeſcher Que ſi mon SoteHm’a
+        pandorne en la perſonne de mon Roy; eesaſres
+        fauoables ſufront pour m’eſclairer,’ nme iee
+        tent ils point déja des rayons auec tant d’éclat
+        ut vous les yeux en ſont eſbloüisSur tout ie les
+        pi derendre leur influance fauorable au peu
+        ple, &amp;de croire que ſuiuant l’opinion de ces An
+        eiens, qui croyoient que les Aſtres tiroient leur.
+        nourriture des fumees des Cieux &amp; de la terre.
+        Les Princes tirent leur puiſſance de la bien
+        veillance &amp; de lafaueur des peuples auſquel il.
+        ſont obligez de fendre par certe loy des bien
+        ſaiu pourde bonnes volonte &amp; des oſſers pour
+        des dſirs. Ainſi voyant cette parfaite vmion de,
+        uis de tous mes ſuiets qui ſont à preſent trou
+        leadinquierude &amp; de craines, ieverery pl
+        delumeideioye queien’en veiſe à̀ peſent de
+        D 
+        douleur, &amp; ſi mon Roy ſe tient eſloigne de moy
+        ie plaindray moins le mal- heur de ſon ab
+        ſence, ayant chez moy pluſieurs Princes dignes
+        de l’eſtre &amp; dont la valeur trouue à peine des élo
+        ges dignes d’elle dans les plus belles expreſſions
+        de aoſtre langue &amp; le genie des plus beaux eſ
+         prits.
+        FIN.
+        Faues ſuraemues en l’impreſsionm.
+        Page 4. ligne i4. liſez fut quelque temps. ligne15.
+         &amp;16. liſez ſur elle de toutesparts.			</p>
+		</body>
+	</text>
 </TEI>

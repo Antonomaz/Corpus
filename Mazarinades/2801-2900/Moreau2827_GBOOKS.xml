@@ -1,258 +1,414 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2827_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Le pot aux roses découvert.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Le pot aux roses découvert.</title>
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-          <persName ref="orcid:0000-0001-5815-9506" role="intern">Faure Margaux</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=rVtTI8ec_x0C&amp;hl=fr"/>
-          <author/>
-          <title source="Moreau">Pot (le) aux roses découvert.</title>
-          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher ref="isni:0000000001831368" xml:id="IL_BrunetJean.xml">
-            <persName>
-              <forename>Jean</forename>
-              <surname>Brunet</surname>
-            </persName>
-          </publisher>
-          <date source="Moreau" when="1649">1649</date>
-          <extent>
-            <measure quantity="8" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2996944">Lyon</settlement>
-            <institution>Bibliothèque municipale</institution>
-            <repository/>
-            <idno type="cote">Rés 312278</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>False</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+					<persName ref="orcid:0000-0001-5815-9506" role="intern">Faure Margaux</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+				<availability n="cc-by" status="restricted">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=rVtTI8ec_x0C&amp;hl=fr"/>
+					<author/>
+					<title source="Moreau">Pot (le) aux roses découvert.</title>
+					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+					<publisher ref="isni:0000000001831368" xml:id="IL_BrunetJean.xml">
+						<persName>
+							<forename>Jean</forename>
+							<surname>Brunet</surname>
+						</persName>
+					</publisher>
+					<date source="Moreau" when="1649">1649</date>
+					<extent>
+						<measure quantity="8" unit="page"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2996944">Lyon</settlement>
+						<institution>Bibliothèque municipale</institution>
+						<repository/>
+						<idno type="cote">Rés 312278</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>False</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">2827. Pot (le) aux roses découvert. Paris, Jean Brunet, 1649,8 pages.
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">2827. Pot (le) aux roses découvert. Paris, Jean Brunet, 1649,8 pages.
           Cette pièce n'a de commun que le titre avec la facétie de 1615 et les pamphlets de 1651 et
           1652.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="genre">non renseigné</term>
-          <term type="subject"/>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-06-27" who="MF"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>LE
-        <lb/>POT
-        <lb/>AVX
-        <lb/>ROSES
-        <lb/>DESCOVVERT. <figure type="decoration"/>
-        <lb/>A PARIS,
-        <lb/>Chez IEAN BRVNET, ruë neuue S.
-        <lb/>Louys, au Canon Royal, proche le Palais.
-        <lb/>M. DC. XLIX. <pb n="2"/>
-        <pb n="3"/>
-        <lb/>3
-        <lb/>LE POT AVX ROSES DESCOVVERT.
-        <lb/>&amp;eeel l alnae no e le ee
-        <lb/> ce nma reſenty que des eſpi
-        <lb rend="¬" break="no"/>JA nes, &amp; ſi les printemps luy ont
-        <lb/>’ aporté des bouquets de roſes.,
-        <lb/>E ellesont eſté de peu de durée,
-        <lb/> n’ayant point eu le ſecret d’en
-        <lb/>conſeruer pour les hyuers. Ce Royaume qui
-        <lb/>porte des fſeurs pour ſon Blaſon, voit que ceux
-        <lb/>qui ont intereſt à la conſeruation de les lys,
-        <lb/>les atrrachent ou ſouffrent que les eſtrangers y
-        <lb/>mettent la main pour les ternir. Il en eſt de
-        <lb/>ces fleurs comme de ces ſimples qu’on peu
-        <lb/>appeller vergongneux, dautant qu’elles reſ
-        <lb rend="¬" break="no"/>ſerrent leurs feuilles, comme ſi elles eſtoient
-        <lb/>honteuſes de ſe laiſſer voir, &amp; meſme on peut
-        <lb/>dire que la veuë ou l’haleine de ces perſonnes
-        <lb/> leur eſt funeſte, en leur communiquant vne
-        <lb/>eſpece d’ait enpoiſſonné. Mais en recom
-        <lb rend="¬" break="no"/>penſe, ilſemble que Dieu qui prend vn ſoin <pb n="4"/>
-        <lb/>partlculier de cét Eſtat, a permis que nos
-        <lb/>tyrans ſe ſoient aueuglez dans leuss iniuſtes
-        <lb/>pretenſions. C’eſt en cela qu’on peut rema
-        <lb rend="¬" break="no"/>quer euidemmens la verité de ce Prouerbe
-        <lb/>Eſpagnol, da dios alas a la hormiga, parague
-        <lb/>ſe pierda mas ayna. C’eſt à dire que ieu
-        <lb/>donne des aiſles à la fourmy afin qu’elle ſe per
-        <lb rend="¬" break="no"/>de pluſtoſt, lla permisque par vne ſouffrance
-        <lb/>vn peu honteuſe pour nous, les eſtrangers ſe
-        <lb/>ſoient meſlez dans le gouuernement des affai.
-        <lb rend="¬" break="no"/>es d’vn Eſtat qui leur deuoent eſtre entiere
-        <lb rend="¬" break="no"/>meni inconnues. O peut dire qu’il en eſt
-        <lb/>d’eux, ainſi que de ces mauuais hoſtes qui
-        <lb/>mettent le feu dans la maiſon ouù̀ ils ont eſté
-        <lb/>logez. Pour peu que ces perſonneseuſſent de
-        <lb/>ſens cormmun, elles ſe ſouuien droient. ae; me
-        <lb/> ſemble de ce que dit agreablemenae ditiſpai
-        <lb/>gnol, quant0 mayot es la ventura, ianto es
-        <lb/>menos ſegura, tant plus eſt grande la formu
-        <lb rend="¬" break="no"/>e tant mpinselle eſtſeure. Ce quit eſt eue
-        <lb/>core le plus à oraindre, c’eſt qu’ox peut dis
-        <lb/>d’eux oe qu’ ditvn Sayrique..
-        <lb/>Scirs euolaas ſecreta -domus, atque mde tien..
-        <lb/> C’eſt pourquuy il eſttres dangenreud’ad.
-        <lb/>mrtre au guuérnemeit i desmiiſtres dols
-        <lb/> la. probité́ ou l ſciearniont poin. ett
-        <lb/>eſprouuées. <pb n="5"/>
-        <lb/>eſprouueées. L’on n’entre qu’en tremblant
-        <lb/>dans vn vaiſſeau qui eſt expoſeé ſur vne mer
-        <lb/>orageuſe &amp; pleine de bancs &amp; d’écueils, ſi l’on
-        <lb/>n’eſt bien aſſeuré de l’adreſſe du maiſtre Pi
-        <lb rend="¬" break="no"/>lote. La conduite des Eſtats eſt infiniment
-        <lb/>plus difficile que celle des nauires, les tempe
-        <lb rend="¬" break="no"/>ſtes y ſont plus frequentes que ſur les mers,
-        <lb/>&amp; c’eſt en biaiſant qu’on obtient des peuples
-        <lb/>ce qu’on n’emporteroit pas par la violence.
-        <lb/>On. ne vient pas à bout de toures les nations
-        <lb/>par les meſmes maximes, &amp; particulierement
-        <lb/>dans la France où̀ celles de Machiauel ne ſont
-        <lb/>point de miſes. ll en eſt des Royaumes com.
-        <lb/>me les corps, dont les vns ſe gueriſſent par la
-        <lb/>ſaigneée, &amp; les autres par des purgations dou
-        <lb rend="¬" break="no"/>ces, &amp; certes ce. ſeroit tout perdre ſi n Mini
-        <lb rend="¬" break="no"/>ſtre chez nous vouloit imiter ce Proconſul
-        <lb/>qui donnoit. le nom d’action Royalle, d’a
-        <lb rend="¬" break="no"/>batre troiçensreſlesen viour. Il y meſme
-        <lb/>doeceraines conioncturesoù il faut fermer les
-        <lb/>yeux aux fautes que les peuples commetent,
-        <lb/> tfaut ſounent imiter l’adreſſe de Tibere
-        <lb/>qui ut le plus adroic detcs les Empereurs en
-        <lb/>l’are dediſſimuler. C’eſt peut eſtre ce qul a
-        <lb/>fair dire autrefois, que celuy la ne ſçait pas
-        <lb/>regner, qui ne ſçait pasdiſſimulor, Ce qui eſt
-        <lb/>B <pb n="6"/>
-        <lb/>vn vice chez les patticuliers, eſt ſouuent vne
-        <lb/>vertu chez les Princes, &amp; chez ceux qui ſe
-        <lb/>meſlent de la conduite des Eſtats. Ce ’eſt
-        <lb/>pas qu’il ny ait de certaines rencontres ou
-        <lb/>pour le bien des Eſtats, ’il nefaille vſer &amp; du
-        <lb/>fer &amp; du feu pour couperdes membres gatez
-        <lb/>par la cangrene, qui pourroit gagner iuſques
-        <lb/>au cœur, &amp; ruiner ainſi les Eſtars meſme ſi
-        <lb/>l’on ne ſe ſcruoit de cesremedes violens. C’eſt
-        <lb/>ponsquoy la ſcience,eſt ſi neceſſaire aux Pin
-        <lb rend="¬" break="no"/>ces &amp; aux Miniſtres. On peut comparer la
-        <lb/>ſcience auec les yeux, &amp; puis que les yeux
-        <lb/>ſont en la teſte, il faut que la ſcience ſoit aux
-        <lb/>chefs des Republiques. Elle eſt preſque inu
-        <lb rend="¬" break="no"/>tile &amp; de nul vſage dans les particuliers, &amp; l’on
-        <lb/>peut dire que comme ce ſont des intellgen
-        <lb rend="¬" break="no"/>ces qu mouuent les cieux, qu’il faut que ce
-        <lb/>ſoient des intelligens qui gouuernent les
-        <lb/>Eſtars. L’on a continué de comparer les.
-        <lb/>grands aux Aigles pluſtoſt qu’aux Lyons ny
-        <lb/>aux Taureaux, pour nous apprendre que la
-        <lb/>ſcience leur eſt plus vile que la force. S il eſt.
-        <lb/>vray ce que dit vn Ancien qu’il faut que les
-        <lb/>grands obëſſent premierement à la raſon
-        <lb/>comme à leurs ſouuerains, s’ils veulent que
-        <lb/>leurs ſujets leur obeiſſent, c’eſt aſſeurement <pb n="7"/>
-        <lb/>¬.2,
-        <lb/>par le moyen de la ſcilence qu’on diſeernera
-        <lb/> - c s
-        <lb/>ce qui eſt inſle, d’auec ce qui ne l’eſt pas, &amp;
-        <lb/>le raiſonnable d’auec l’irraiſonnable. C’eſt
-        <lb/>par elle qu’on peut obtenir l’amitié́ de ſes vaſ
-        <lb rend="¬" break="no"/>ſaux. Quant à moy ie ne voy rien de ſi royal
-        <lb/>que la penſeée de ce Prince de Caſtille qui di
-        <lb rend="¬" break="no"/>ſoit ſouuent qu’il auoit plus de peur des im
-        <lb rend="¬" break="no"/>precatiors de ſon peuple, que des armes de
-        <lb/>ſes ennemis. Il me ſemble que ce doit eſtre
-        <lb/>là vne belle leçon pour ceux qui ſe meſlent du
-        <lb/>gouuernement, &amp; que les Roys ne peuuent
-        <lb/>rien conceuoir de plus vtile pour leur ſceptro,
-        <lb/>&amp; que c’eſt par de ſemblables inſtructions
-        <lb/> qu’on apprend à maintenir les Throſnes.
-        <lb/>Dans le ſoin que i’ay pris d’examiner les
-        <lb/>actions de nos Miniſtres, i’ay remarqué que
-        <lb/>c’eſtoit là la pierre de leur achopement. 1l
-        <lb/>ſemble qu’ils veuillent prendre pou leur de
-        <lb rend="¬" break="no"/>uize celle du meſchant Prince qui penſoit aſ
-        <lb rend="¬" break="no"/>ſeurer ſa Couronse parla crainte qu’on auroit
-        <lb/>de luy &amp; non pas par l’amour des peuples, qui
-        <lb/>eſt la plus ſeure gerde des Monarques. Il faut
-        <lb/>que les Roys imitent les aſtres qui veillent ce¬.
-        <lb/>pendant que nous dormons, il faut que leur
-        <lb/>trauail ſoit l’aſſeurance de noſtre repos &amp; de
-        <lb/>nos innocentes elices. Voila les regles que <pb n="8"/>
-        <lb/>8
-        <lb/>Seneque leur impoſe, &amp; certes ils n’en pou
-        <lb rend="¬" break="no"/>uoient receuoir d’vne plus belle bouche, on
-        <lb/>peut dire que ſi Neron euz. voulu mertre en
-        <lb/>qraique ce que ce docte &amp; ſage Precepteur
-        <lb/>luy enſeignoir, que celuy qui a eſté diffamé
-        <lb/>par toutes les hitoires eut eſté́ vn modelle
-        <lb/>imitable à tous les Princes. Mais apres tout, ie
-        <lb/>penſe auoir par ce peu de ptecepres découuert
-        <lb/>le Pot aux Roſes, &amp; que l’odeur de ces fleurs
-        <lb/>ſera agréable à tout le monde.
-        <lb/>An, </p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="genre">non renseigné</term>
+					<term type="subject"/>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-06-27" who="MF"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<pb n="8"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<figure type="decoration"/>
+LE
+        POT
+        AVX
+        ROSES
+        DESCOVVERT. 
+        A PARIS,
+        Chez IEAN BRVNET, ruë neuue S.
+        Louys, au Canon Royal, proche le Palais.
+        M. DC. XLIX. 
+        
+        3
+        LE POT AVX ROSES DESCOVVERT.
+        &amp;eeel l alnae no e le ee
+         ce nma reſenty que des eſpi
+        JA nes, &amp; ſi les printemps luy ont
+        ’ aporté des bouquets de roſes.,
+        E ellesont eſté de peu de durée,
+         n’ayant point eu le ſecret d’en
+        conſeruer pour les hyuers. Ce Royaume qui
+        porte des fſeurs pour ſon Blaſon, voit que ceux
+        qui ont intereſt à la conſeruation de les lys,
+        les atrrachent ou ſouffrent que les eſtrangers y
+        mettent la main pour les ternir. Il en eſt de
+        ces fleurs comme de ces ſimples qu’on peu
+        appeller vergongneux, dautant qu’elles reſ
+        ſerrent leurs feuilles, comme ſi elles eſtoient
+        honteuſes de ſe laiſſer voir, &amp; meſme on peut
+        dire que la veuë ou l’haleine de ces perſonnes
+         leur eſt funeſte, en leur communiquant vne
+        eſpece d’ait enpoiſſonné. Mais en recom
+        penſe, ilſemble que Dieu qui prend vn ſoin 
+        partlculier de cét Eſtat, a permis que nos
+        tyrans ſe ſoient aueuglez dans leuss iniuſtes
+        pretenſions. C’eſt en cela qu’on peut rema
+        quer euidemmens la verité de ce Prouerbe
+        Eſpagnol, da dios alas a la hormiga, parague
+        ſe pierda mas ayna. C’eſt à dire que ieu
+        donne des aiſles à la fourmy afin qu’elle ſe per
+        de pluſtoſt, lla permisque par vne ſouffrance
+        vn peu honteuſe pour nous, les eſtrangers ſe
+        ſoient meſlez dans le gouuernement des affai.
+        es d’vn Eſtat qui leur deuoent eſtre entiere
+        meni inconnues. O peut dire qu’il en eſt
+        d’eux, ainſi que de ces mauuais hoſtes qui
+        mettent le feu dans la maiſon ouù̀ ils ont eſté
+        logez. Pour peu que ces perſonneseuſſent de
+        ſens cormmun, elles ſe ſouuien droient. ae; me
+         ſemble de ce que dit agreablemenae ditiſpai
+        gnol, quant0 mayot es la ventura, ianto es
+        menos ſegura, tant plus eſt grande la formu
+        e tant mpinselle eſtſeure. Ce quit eſt eue
+        core le plus à oraindre, c’eſt qu’ox peut dis
+        d’eux oe qu’ ditvn Sayrique..
+        Scirs euolaas ſecreta -domus, atque mde tien..
+         C’eſt pourquuy il eſttres dangenreud’ad.
+        mrtre au guuérnemeit i desmiiſtres dols
+         la. probité́ ou l ſciearniont poin. ett
+        eſprouuées. 
+        eſprouueées. L’on n’entre qu’en tremblant
+        dans vn vaiſſeau qui eſt expoſeé ſur vne mer
+        orageuſe &amp; pleine de bancs &amp; d’écueils, ſi l’on
+        n’eſt bien aſſeuré de l’adreſſe du maiſtre Pi
+        lote. La conduite des Eſtats eſt infiniment
+        plus difficile que celle des nauires, les tempe
+        ſtes y ſont plus frequentes que ſur les mers,
+        &amp; c’eſt en biaiſant qu’on obtient des peuples
+        ce qu’on n’emporteroit pas par la violence.
+        On. ne vient pas à bout de toures les nations
+        par les meſmes maximes, &amp; particulierement
+        dans la France où̀ celles de Machiauel ne ſont
+        point de miſes. ll en eſt des Royaumes com.
+        me les corps, dont les vns ſe gueriſſent par la
+        ſaigneée, &amp; les autres par des purgations dou
+        ces, &amp; certes ce. ſeroit tout perdre ſi n Mini
+        ſtre chez nous vouloit imiter ce Proconſul
+        qui donnoit. le nom d’action Royalle, d’a
+        batre troiçensreſlesen viour. Il y meſme
+        doeceraines conioncturesoù il faut fermer les
+        yeux aux fautes que les peuples commetent,
+         tfaut ſounent imiter l’adreſſe de Tibere
+        qui ut le plus adroic detcs les Empereurs en
+        l’are dediſſimuler. C’eſt peut eſtre ce qul a
+        fair dire autrefois, que celuy la ne ſçait pas
+        regner, qui ne ſçait pasdiſſimulor, Ce qui eſt
+        B 
+        vn vice chez les patticuliers, eſt ſouuent vne
+        vertu chez les Princes, &amp; chez ceux qui ſe
+        meſlent de la conduite des Eſtats. Ce ’eſt
+        pas qu’il ny ait de certaines rencontres ou
+        pour le bien des Eſtats, ’il nefaille vſer &amp; du
+        fer &amp; du feu pour couperdes membres gatez
+        par la cangrene, qui pourroit gagner iuſques
+        au cœur, &amp; ruiner ainſi les Eſtars meſme ſi
+        l’on ne ſe ſcruoit de cesremedes violens. C’eſt
+        ponsquoy la ſcience,eſt ſi neceſſaire aux Pin
+        ces &amp; aux Miniſtres. On peut comparer la
+        ſcience auec les yeux, &amp; puis que les yeux
+        ſont en la teſte, il faut que la ſcience ſoit aux
+        chefs des Republiques. Elle eſt preſque inu
+        tile &amp; de nul vſage dans les particuliers, &amp; l’on
+        peut dire que comme ce ſont des intellgen
+        ces qu mouuent les cieux, qu’il faut que ce
+        ſoient des intelligens qui gouuernent les
+        Eſtars. L’on a continué de comparer les.
+        grands aux Aigles pluſtoſt qu’aux Lyons ny
+        aux Taureaux, pour nous apprendre que la
+        ſcience leur eſt plus vile que la force. S il eſt.
+        vray ce que dit vn Ancien qu’il faut que les
+        grands obëſſent premierement à la raſon
+        comme à leurs ſouuerains, s’ils veulent que
+        leurs ſujets leur obeiſſent, c’eſt aſſeurement 
+        ¬.2,
+        par le moyen de la ſcilence qu’on diſeernera
+         - c s
+        ce qui eſt inſle, d’auec ce qui ne l’eſt pas, &amp;
+        le raiſonnable d’auec l’irraiſonnable. C’eſt
+        par elle qu’on peut obtenir l’amitié́ de ſes vaſ
+        ſaux. Quant à moy ie ne voy rien de ſi royal
+        que la penſeée de ce Prince de Caſtille qui di
+        ſoit ſouuent qu’il auoit plus de peur des im
+        precatiors de ſon peuple, que des armes de
+        ſes ennemis. Il me ſemble que ce doit eſtre
+        là vne belle leçon pour ceux qui ſe meſlent du
+        gouuernement, &amp; que les Roys ne peuuent
+        rien conceuoir de plus vtile pour leur ſceptro,
+        &amp; que c’eſt par de ſemblables inſtructions
+         qu’on apprend à maintenir les Throſnes.
+        Dans le ſoin que i’ay pris d’examiner les
+        actions de nos Miniſtres, i’ay remarqué que
+        c’eſtoit là la pierre de leur achopement. 1l
+        ſemble qu’ils veuillent prendre pou leur de
+        uize celle du meſchant Prince qui penſoit aſ
+        ſeurer ſa Couronse parla crainte qu’on auroit
+        de luy &amp; non pas par l’amour des peuples, qui
+        eſt la plus ſeure gerde des Monarques. Il faut
+        que les Roys imitent les aſtres qui veillent ce¬.
+        pendant que nous dormons, il faut que leur
+        trauail ſoit l’aſſeurance de noſtre repos &amp; de
+        nos innocentes elices. Voila les regles que 
+        8
+        Seneque leur impoſe, &amp; certes ils n’en pou
+        uoient receuoir d’vne plus belle bouche, on
+        peut dire que ſi Neron euz. voulu mertre en
+        qraique ce que ce docte &amp; ſage Precepteur
+        luy enſeignoir, que celuy qui a eſté diffamé
+        par toutes les hitoires eut eſté́ vn modelle
+        imitable à tous les Princes. Mais apres tout, ie
+        penſe auoir par ce peu de ptecepres découuert
+        le Pot aux Roſes, &amp; que l’odeur de ces fleurs
+        ſera agréable à tout le monde.
+        An,			</p>
+		</body>
+	</text>
 </TEI>

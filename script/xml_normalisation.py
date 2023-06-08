@@ -5,7 +5,8 @@ import flatdict
 import dateutil.parser as duparser
 from tei_to_json import tei_to_json_file
 from json_stats_normalised import unknown_pub_date, unknown_pub_name, unknown_pub_place, test_stats
-test_dir:str = "../tests/Mazarinades_tests/*/*.xml"
+#test_dir:str = "../tests/Mazarinades_tests/*/*.xml"
+test_dir:str = "../Mazarinades/*/*.xml"
 test_file1:str = "../tests/Mazarinades_tests/1701-1800/Moreau1751_GBOOKS.xml"
 test_file2:str = "../tests/Mazarinades_tests/1701-1800/Moreau1704_GALL.xml"
 test_file3:str = "../tests/Mazarinades_tests/2401-2500/Moreau2497_GBOOKS.xml"
@@ -118,7 +119,7 @@ def name_publisher(publisher:dict):
             if publisher_flatdict[flat_key]== "Sans Nom":
                 publisher_flatdict[flat_key] = "Sans nom"
         publisher = publisher_flatdict.as_dict()
-    #print(publisher)
+        print(publisher)
     return publisher
 
 def name_pub_date(pub_date:dict):
@@ -127,7 +128,7 @@ def name_pub_date(pub_date:dict):
     if "Sans Date" in pub_date_flatdict.values():
         for flat_key in pub_date:
             if pub_date_flatdict[flat_key] == "Sans Date":
-                pub_date_flatdict[flat_key] = "Sans date"
+                pub_date_flatdict[flat_key] = "Sans date"130
     pub_date = pub_date_flatdict.as_dict()
     #print(pub_date)
     return pub_date

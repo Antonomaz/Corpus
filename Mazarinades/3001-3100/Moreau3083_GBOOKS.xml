@@ -1,345 +1,579 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3083_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Regrets de Paris sur la mort de M. le duc de Nemours
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Regrets de Paris sur la mort de M. le duc de Nemours
           .</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=gpAwtXczPkoC"/>
-          <author/>
-          <title source="Moreau">Regrets de Paris sur la mort de M. le duc de Nemours .</title>
-          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher ref="isni:0000000506791357" xml:id="IL_NoelFrancois.xml">
-            <persName>
-              <forename>François</forename>
-              <surname>Noël</surname>
-            </persName>
-          </publisher>
-          <date source="Moreau" when="1652">1652</date>
-          <extent>
-            <measure quantity="8" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="BM01317" cert="high"
-            target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50213"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2996944">Lyon</settlement>
-            <institution>Bibliothèque municipale</institution>
-            <repository/>
-            <idno type="cote">309901</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+				<availability n="cc-by" status="restricted">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=gpAwtXczPkoC"/>
+					<author/>
+					<title source="Moreau">Regrets de Paris sur la mort de M. le duc de Nemours .</title>
+					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+					<publisher ref="isni:0000000506791357" xml:id="IL_NoelFrancois.xml">
+						<persName>
+							<forename>François</forename>
+							<surname>Noël</surname>
+						</persName>
+					</publisher>
+					<date source="Moreau" when="1652">1652</date>
+					<extent>
+						<measure quantity="8" unit="page"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="BM01317" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50213"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2996944">Lyon</settlement>
+						<institution>Bibliothèque municipale</institution>
+						<repository/>
+						<idno type="cote">309901</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>True</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">3083. Regrets de Paris sur la mort de M. le duc de Ne mours. Paris,
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">3083. Regrets de Paris sur la mort de M. le duc de Ne mours. Paris,
           François Noël, 1652, 8 pages.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="genre">lamentation</term>
-          <term type="genre">prosopopée</term>
-          <term type="genre">regrets</term>
-          <term type="subject">Nemours, Charles-Amédée de Savoie, duc de, 1624-1652</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_92" source="Moreau">
-          <p>Duel des ducs de Beaufort et de Nemours</p>
-          <date when="1652-07-30">1652-07-30</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-07-01" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>LES REGRETS
-        <lb/>DE PARIS
-        <lb/>SVR LA MORT
-        <lb/>DE MONSIEVR LE DVC
-        <lb/>DE NEMOVRS. <figure type="decoration"/>
-        <lb/>A PARIS,
-        <lb/>Chez FRANÇOIS NOEL, ruë Saint Iacques, à l'Image
-        <lb/>Saint Louys, proche la vieille Poſte.
-        <lb/>M. DC. LII.<pb n="2"/>
-        <pb n="3"/>
-        <lb/>3
-        <lb/>LES REGRETS DE PARIS,
-        <lb/>ſur la mort de Monſieur le Duc de
-        <lb/>Nemours.
-        <lb/>ES grandes douleurs trouuent à peine
-        <lb/>R des termes pour s’exprimer. Leſaiſſſe
-        <lb rend="¬" break="no"/>é ment do6t ellespreocupent l’ame, tient
-        <lb/> nos penſées dans vne ſuſpenſion qui
-        <lb/>, ne permet pas à nos ideé́es de ſe ren.
-        <lb/>l contrer en noſtre fantaiſie, dans l’or.
-        <lb/>Z dre qu’il faut pour former nos concep
-        <lb rend="¬" break="no"/>tions, dont les parolles ſont les images
-        <lb/>&amp; les interpretes. France, ie n’vſeray d’autre prelude
-        <lb/>pour te figurer la grandeur de mon deüil &amp; de ma per
-        <lb rend="¬" break="no"/>te, qui m a tenu durant pluſieurs heures dans le ſilence
-        <lb/>&amp; l’interdiction. e veux te faire part de ma ſurpriſe auſ
-        <lb rend="¬" break="no"/>ibien que de mon malheur, &amp; pour en porter l’image
-        <lb/>toute enriere en ton eſprir, ie te diray dabord que ie
-        <lb/>vienms de perdre ce genereux Duc de Ncmours, qui t’a
-        <lb rend="¬" break="no"/>uoit rendu de ſi grands ſeruices depuis quelques mois,
-        <lb/>pour te deliurer de la perſecurion des tyrans qui t’oppreſ
-        <lb rend="¬" break="no"/>ſent&amp; dont la renormmée auoirt tant celebré́ les exploits
-        <lb/>depuispea, qu’elle auoit employeé tontes ſes cent bou
-        <lb rend="¬" break="no"/>chesà̀ cereffer. Tous les perils qui t’auoient le plus me
-        <lb rend="¬" break="no"/>naſſe, &amp; tous los efforts que mos ennemis auoient faits
-        <lb/>pourm’aoabler, auaoient eſté ls marches du degré qui le
-        <lb/>conduifoitau temaple de la gloire, où ſon lmage eſtoit
-        <lb/>deé-ja ſollemellement reueŕe, &amp; la perte de ſon ſang
-        <lb/>en toutes ces ccaſions, auoit fait voir le meſpris qu’il
-        <lb/>faiſoit de la vie, lors qu’il s’agiſſoit de te prouuer ſon
-        <lb/>courge. &amp; le zele incroyable qu’il auoit de te voir
-        <lb/>riompher de l inſolence &amp; de l’orgueil de tes ennemis.
-        <lb/>Ses bleſſures dont le ſentimet euſt eſteé capable d’alentir
-        <lb/>l’ardeur des plus grands courages, ne fit qu’eſchauffer le
-        <lb/>fien, il voulut tout vaincre ou perir. Mais apres t’auoir
-        <lb/>A ij <pb n="4"/>
-        <lb/>celebré ſes auantages: te dirai-je anſſi ſon defaut, ou plu
-        <lb rend="¬" break="no"/>toſt ſon excés, qui l’a conduit dans le precipice, lors qu’il
-        <lb/>croyoit par laà s’eſleuer au comble de la gloire &amp; de la
-        <lb/>grandeur. Sa ieuneſſe l’empeſchant de mettre des bor
-        <lb rend="¬" break="no"/>nes aà ſes deſirs, il crû̂t que la fortune luy ſeroit auſſi fa
-        <lb rend="¬" break="no"/>uorable combatant contre ſes amis, qu’il la trouua pro
-        <lb rend="¬" break="no"/>pice, faiſant la guerre à ſes ennemis. Imprudent qui ne
-        <lb/>s’apperceut pas qu’il auoit touſiours comhatu ſous les.
-        <lb/>auſpices de deux ou trois princes que les aſtres virent en
-        <lb/>naiſſant d’vn œil plus fauorable que luy: &amp; que ſi leur
-        <lb/>bon genie l’auoit touſiours aſſiſteé, lors qu’il tiroit l’eſ
-        <lb rend="¬" break="no"/>peée en leur faueur, il l’abandonneroit ſi toſt qu’il auroit
-        <lb/>l’audace de penſer à la tremper dans le ſang d’vn de leur
-        <lb/>ombre, au deſſeinde s’acquerir par là vne pré́eminéẽce.
-        <lb/>qui ne l’euſt pas moins deſtruir vaincœur que vaincu.
-        <lb/>C’eſt beaucoup de ce que ie viens d’exprimer: mais ô
-        <lb/>ſacres morifs d’aliance, qui fiſtes porter le nom de fre
-        <lb rend="¬" break="no"/>re à deux Princes, dont l’vn eſpouſa la ſœur de l’autre,
-        <lb/>na’aurez-vous donc non plus de pouuoir icy que vous en
-        <lb/>euſtes autrefois à Rome, au temps de Pompé́e &amp; de Ce
-        <lb rend="¬" break="no"/>ſar ou ne ſeruirez que de couuerture aux mouuemens
-        <lb/>de leur ambition, qui fes porte à ſe deſtruire l’vn &amp; l’au
-        <lb rend="¬" break="no"/>tre en leuant les défiances &amp; les ombrages qu’autrement
-        <lb/>on pouuoit auoir de leur deſſein. Ce braue Duc de Ne
-        <lb rend="¬" break="no"/>mours, auoit eſpouſé la ſœur de ce grand &amp; fameux Duc
-        <lb/> de Beaufort, qui fut touſiours mes delices &amp; mon apuy:
-        <lb/>certe alliance contractée auec beaucoup de ſolemniteé,
-        <lb/>aiſoit croire que ce ne ſeroit deſormais qu’vne ame en
-        <lb/>deux corps, &amp; que la maiſon de l’vn &amp; de l’autreeneſtoit.
-        <lb/>beaucoup fortifiée. l’en reſſentis vne ioye exceſſiue que
-        <lb/>ie fis eſclater par des ſignes trop viſibles, pour n’y pas fai
-        <lb rend="¬" break="no"/>reparticiper tout le reſte de la France, &amp; cependant, ô.
-        <lb/>mal-heur qu’on ne peut aſſez déplorer coup fatal qui
-        <lb/>ranche vn des doigts de ma main! &amp; prodige que
-        <lb/>les ſiecles à venir croiront à peine. Celuy qui priſt: al
-        <lb rend="¬" break="no"/>liance en la maiſon de l’autre, ce Prince ſi iudi
-        <lb rend="¬" break="no"/>cieux &amp; ſi ſage, pourueu de ſi belles mœus, &amp; qui¬
-        <lb rend="¬" break="no"/>ſembloit <pb n="5"/>
-        <lb/>1
-        <lb/>leubloit vn portrair de la parfaitte moderation, s’eſt
-        <lb/>iey endu l’aggreſſeur &amp; celuy qui deuoit n’eſtre armé
-        <lb/>qepour ſa deffence apres s’eſtre quelque temps def
-        <lb rend="¬" break="no"/>eadud’en venir aux priſes auec luy par ces conſidera
-        <lb rend="¬" break="no"/>uionsd’alliance &amp; de pieté, foree de ſe trouuer au ren
-        <lb rend="¬" break="no"/>de-sous, s’eſt offert a tiré l’eſpé́e &amp; mis le piſtolet à̀ la
-        <lb/>mn, &amp;. par vn oup mal. heuraux dont le plus malia
-        <lb/>des demons a ſans doute conduit le plomb, a tueé celuy
-        <lb/>dontla femme ne le peut nommer que par le cher nou
-        <lb/>defrtre, &amp; les enfans, par celuy d’onecle, vn Prince diſ
-        <lb rend="¬" break="no"/>eta qui tous les dons &amp; toutes les graes de l’eſprit &amp;
-        <lb/>corps formoient vn doux meſlange de perfections, &amp;
-        <lb/>dnttures les vertus ornoient Lame pour le rendre ve
-        <lb rend="¬" break="no"/>ablement digne du nom de Prince qu’il portoit grau
-        <lb/>lurle viſage. Mais pourquoy contre ma promeſle tar
-        <lb rend="¬" break="no"/>day-je tant à renplir ton eſprit d’vne idêe que tu n’as.
-        <lb/>deſia que rrop conceuë. En ce funeſte combat le Duc de.
-        <lb/>eaufart a tueé le Duc de Neaours, vn beau frere ſon
-        <lb/>beau-frere, vn Prinee chef d’vn party, vn autre Peince.
-        <lb/>hefdu meſme party, &amp; pour tour dire en deux mots le
-        <lb/>oilleur lPrince du mondea tué le plus genereux Prinece
-        <lb/>q fut iamas, ſice n’eſt qu’ou peut dire auſſi vray- ſem.
-        <lb/>blablement que le mauuais demon du Duc de Nemours
-        <lb/> &amp; de laFrdce, pour me nuire &amp; m’affoiblir par cette dou:
-        <lb/>ble perte, la tuë par les mains du genereux Duc de Beau
-        <lb rend="¬" break="no"/>frt mais qui dois-je plaindre premierement de la veu
-        <lb rend="¬" break="no"/>e du mort? du mort meſme de celuy qui luy a porté le
-        <lb/>oup mortel des Princes ? leurs alliez? des Pariſiens mes
-        <lb/>ſuijets, ou des Franç̧ois en generalQui ne plaindroit eu
-        <lb/>effet certe ieune Princeſſe, qui perd ſi roſt vn mary ſi
-        <lb/>ieune, ſi beau, ſi bien né, ſi bienfart, ſi plein de merite &amp;
-        <lb/>d’eſtime, ſi preſſé du deſir d’en acquerir encor vne plus
-        <lb/>grande, &amp; qui ne peut en voulant vanger ſa mort, faire
-        <lb/>es vœux ou des pourſuittes pour ceér effet qui ne ten.
-        <lb/>dent à la deſtrution de ſon ſang, de ſa famille, &amp; du par
-        <lb rend="¬" break="no"/>y quelan mag auoi prisde ſa ville maſume,; &amp; de tout
-        <lb/>B <pb n="6"/>
-        <lb/>6
-        <lb/>l’Empire qu’il auoit voulu conſeruserQui ne plaindroiee8.
-        <lb/>grand ’rince, qu’vne mort precipité́e dérobe en vnâge1
-        <lb/>ſi rendre. à l’amour d’vn ſi cher ebjet, à̀ tant de merite.
-        <lb/>tant de bien, tant de vertu, tant d’eſtime, &amp; de gloire
-        <lb/>&amp; à̀ la bienveillance de tousmnes ſujets qui le voyoient
-        <lb/>d’vn œil auſſi doux que le ſien, eſtoit riant &amp; plein de
-        <lb/>charmes? Qui ne plaindroit ſon vainqueur qui s’eſt ve
-        <lb/>forcé par vn puiſſant motif d’honeur &amp; de reſſentrimont
-        <lb/>de porter vn coup mortel à celuy qu’il aymoit preſque
-        <lb/>l’eégal de ſa vie, &amp; de trahir les intereſts &amp; les reſpeéts de
-        <lb rend="¬" break="no"/>la double alliance, qui les vniſſoient dans vn meſme pa
-        <lb rend="¬" break="no"/>ty., &amp; preſque dans vne meſme famille à ce tyrannique
-        <lb/>deuoir du point d’honneur, dont l’humeur de ce iecle
-        <lb/>fait pour tous les braues vne loy qui ne peut eſtre violée.
-        <lb/>que par des laſches &amp; des ſtupides: e Prince diſ-ie qui
-        <lb/>voudroit ſans doute auoir racheté́ de la moitié de ſon
-        <lb/>ſang la perte de celuy d’vn amy ſi cher. Qui ne plaindroit
-        <lb/>les Princes leurs alliez, qui perdent vn Prince qui leur
-        <lb/>auoit rendu de ſi grands ſeruices, &amp; dont le credit &amp; l’a
-        <lb rend="¬" break="no"/>ction leur eſtoitſi necefſaire pour l’acheuement de leurs
-        <lb/>deſſeins,l&amp; qui ſont priuez pour quelques iours de la pre
-        <lb rend="¬" break="no"/>ſence d’vn autre dont la perſonne eſtoit les delices de
-        <lb/>tous mes ſujers, &amp; done la voix par de ſecrets reſſorts les
-        <lb/>oblige comme il luy plaſt à̀ ſuiure le mouuement de ſes
-        <lb/>deſirs: mes ſujets ne ſont-ils pas à plaindre auſſi; perdans
-        <lb/>n des plus beaux aſtres du Ciel de la France&amp;e dont l’in.
-        <lb/>uence ſe rendoit ſi fauorable à tour le monde, que l’a¬.
-        <lb/>rmaur eſtoit inſeparable du reſpect qu’on auoit pour luy,
-        <lb/>&amp; de ce qu ils le perdent en vn temps où l’vnion de tous
-        <lb/>ces Princes qui me protegent maintenant, iodinre au pou
-        <lb rend="¬" break="no"/>oir du Parlemér declaré pour leur party, me faſoit dé
-        <lb rend="¬" break="no"/>ja iouir d’vn calme, que ie prenois pour vn auane-guſt,
-        <lb/>&amp; pour vn gage infaillible de la felicite qu’ils me font e
-        <lb/>perer? mais rous les François ne doiuent- ils pas ſouſplre?
-        <lb/>uec moy, de voir que celuy que toures les forces de mes.
-        <lb/>anemis n’aaoient pû vaincre ny mettre bas derniere <pb n="7"/>
-        <lb/>99
-        <lb/>mnt as Fa-bourg S. Anthoine, dont il reuint tous
-        <lb/>ouuerr de leur ſang &amp; du ſien, vn mois apres les voyan
-        <lb rend="¬" break="no"/>ut aàfait eſloignez de mes murailles, vient de faire
-        <lb/>aufage au port, tueé par le meſme bras qui le ſecourut
-        <lb/>lrs, tué prés. d’vne naſon qu’il pouuoit regarde
-        <lb/>enela ſieane, puis qu’elle eſt celle d vn Prince pere de
-        <lb/>l Dueheſſe ſa fenme, &amp; dans vn lieu où il ne deuoit
-        <lb/>omtartre que pour ma deffence, ſi l’on m attaquoit de
-        <lb/>e toſté-l : mais quoy pour vanger ſon mary, cauſe e
-        <lb/>quelque façon de ſamort, voudroit-elle perdre vn frere
-        <lb/>ocent qui ſemnbloit deſtourner les yeux, lors qu’il
-        <lb/>pnoit le coup, dans la crainte d’en oir l’effet; vn Priae
-        <lb/>elappuy de ma ville, auſi bieh que la gloire de ſa famil
-        <lb rend="¬" break="no"/>le, &amp;pour lequel tous les Pariſiens ne s’intereſſeroient
-        <lb/>pas moins s’ileſtoit en peril que les Romains firent au:
-        <lb/>eſois pour la deffence de l’iſné des Horaces. apres
-        <lb/>qu’il eut ioint le meurrre de ſa ſœur, qui l outrageoit
-        <lb/>par des paroles iniurieuſes &amp; d’inſuportables reproches
-        <lb/>lclay de ſon ſeruiteur, &amp; des deux autres Curiaces.
-        <lb/>Sns menrir la foeune ſemble auoir épuiſé ſa foree à for
-        <lb rend="¬" break="no"/>mer va mal- heur eſtrange qu’elle me fiſt ſouffrir, pour
-        <lb/>m’obligerà des reſſentimens extraordinaires. Mais que
-        <lb/>ps-je accuſer auec iuſtice de m’auoir cauſé cette diſ
-        <lb rend="¬" break="no"/>gace, le mort ie ſerois cruelle ſi i’en auois formé́ la pen
-        <lb rend="¬" break="no"/>ſée, il a ſuiuy le mouuement d’vne belle ambition que
-        <lb/>luy inſpiroit l’ardeur de ſon noble ſang: accuſeray-ie le
-        <lb/>vainqueur mais auroit-il pû ſe deffendre de tant de
-        <lb/>pourſuittes que ſoa aduerſaire faiſoit chaque iour pout
-        <lb/>l’eogager dans le eombar, eſtant dans vne Cour ſi ſcru
-        <lb rend="¬" break="no"/>puleuſe, &amp;ſi pleine de ialouſie, pour ce qui le touche,
-        <lb/>&amp; qui sãs doreauroit fait paſſer ſa pieté pour foibleſſe,
-        <lb/>e ne l’auroit pas apres ce refus iugé́ digne de ſa grande
-        <lb/>putatian; Blaſmeray. ie donc leurs amis comrmuns de
-        <lb/>aaoir pas aſſex bié veillé pour les empeſcher d’en venir.
-        <lb/>aux mains mais n’auoisu-is pas ſuiet de croire que la
-        <lb/>coaſideratiode leur alliance mutuelle viendroi con¬ <pb n="8"/>
-        <lb/>ese mere comfune, ou comme vne autre Ioeaſte ſe
-        <lb/>ietter entre deux lors auroient les épeées tirées, pour les
-        <lb/>abliger à les remettre dans le fourreau, puſque ne peut
-        <lb/>tromper l’induſtrie qui tend à ces ſanglans effets qui ſe
-        <lb/>decident en vn moment, &amp; dont l’occaſion ſe concerte.
-        <lb/>en ſecrt pour s’execurer dans le temps où ceux qui
-        <lb/>pourroientrompre cette partie, ont de plus preſſantes
-        <lb/>affaires qui les occupent.
-        <lb/>Aceusõs dõc noſtre malheur, qui noveur pas ſouffrir que
-        <lb/>ie gouſte aucun plaiſir ſans amertume: aceuſons la con
-        <lb rend="¬" break="no"/>ſtellation ennemie, &amp; l’eſprit des Mazarns, qu repar
-        <lb rend="¬" break="no"/>du dans. ma ville, recherchecomme vn demon in
-        <lb rend="¬" break="no"/>quiet à perdre les mieux intentionnes. Qu’ils ne ſe pre
-        <lb rend="¬" break="no"/>ualent pas auſſi de cér aduantage, puis qu’ils n’y ont rien
-        <lb/>contribueé que d’vne façon ſi laſche, qu’ils en deſauoue:
-        <lb/>ront touſiours -l’effet: &amp; d’ailleurs qu’ils ſcçachet qu
-        <lb/>puiſque la fortune exige touſiours de ſanglants tributs
-        <lb/>de ceux qu’elle veut le plus fauoriſer, apres auoir receu
-        <lb/>celuy que ie viens de luy payer en conpenſarion de ſes
-        <lb/>faueurs, elle me promet vn long calme, mais qu’ils ap
-        <lb rend="¬" break="no"/>prehendent la main qui ſçait porter des coups ſi dange.
-        <lb/>reux, &amp; qu’ils iugent quel maſſacre elle feroit de ſes en
-        <lb rend="¬" break="no"/>nemis, ſi ſon malheur la renduë ſi fatale àſes amis meſ,
-        <lb/>mes.
-        <lb/>Toy donc chere ombre qui deueloppeée des nuages
-        <lb rend="¬" break="no"/>des paſſions, dont ton eſprit fut touſiours offuſqu
-        <lb/>dansles derniers iours de ta vie, conguois maintenane
-        <lb/>combien les deſſeins &amp; les deſirs de ton aduerſaire fu
-        <lb rend="¬" break="no"/>rent pleins d’équité́, viens rendre ce rteſmoignageaux
-        <lb/>chefs d’vn peuple qui plaintaurant le viuant que le more
-        <lb/>ſç̧achant combien ce deplaiſir le geſne en ſecret, &amp; l
-        <lb/>iuſtifiant meſme à ſes ennerms, Viens me rendre la paix
-        <lb/>que tua perte m’a rauie. Adieu.
-        <lb/>FIN. </p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="genre">lamentation</term>
+					<term type="genre">prosopopée</term>
+					<term type="genre">regrets</term>
+					<term type="subject">Nemours, Charles-Amédée de Savoie, duc de, 1624-1652</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_92" source="Moreau">
+					<p>Duel des ducs de Beaufort et de Nemours</p>
+					<date when="1652-07-30">1652-07-30</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-07-01" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<pb n="8"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<figure type="decoration"/>
+LES REGRETS
+        DE PARIS
+        SVR LA MORT
+        DE MONSIEVR LE DVC
+        DE NEMOVRS. 
+        A PARIS,
+        Chez FRANÇOIS NOEL, ruë Saint Iacques, à l'Image
+        Saint Louys, proche la vieille Poſte.
+        M. DC. LII.
+        
+        3
+        LES REGRETS DE PARIS,
+        ſur la mort de Monſieur le Duc de
+        Nemours.
+        ES grandes douleurs trouuent à peine
+        R des termes pour s’exprimer. Leſaiſſſe
+        é ment do6t ellespreocupent l’ame, tient
+         nos penſées dans vne ſuſpenſion qui
+        , ne permet pas à nos ideé́es de ſe ren.
+        l contrer en noſtre fantaiſie, dans l’or.
+        Z dre qu’il faut pour former nos concep
+        tions, dont les parolles ſont les images
+        &amp; les interpretes. France, ie n’vſeray d’autre prelude
+        pour te figurer la grandeur de mon deüil &amp; de ma per
+        te, qui m a tenu durant pluſieurs heures dans le ſilence
+        &amp; l’interdiction. e veux te faire part de ma ſurpriſe auſ
+        ibien que de mon malheur, &amp; pour en porter l’image
+        toute enriere en ton eſprir, ie te diray dabord que ie
+        vienms de perdre ce genereux Duc de Ncmours, qui t’a
+        uoit rendu de ſi grands ſeruices depuis quelques mois,
+        pour te deliurer de la perſecurion des tyrans qui t’oppreſ
+        ſent&amp; dont la renormmée auoirt tant celebré́ les exploits
+        depuispea, qu’elle auoit employeé tontes ſes cent bou
+        chesà̀ cereffer. Tous les perils qui t’auoient le plus me
+        naſſe, &amp; tous los efforts que mos ennemis auoient faits
+        pourm’aoabler, auaoient eſté ls marches du degré qui le
+        conduifoitau temaple de la gloire, où ſon lmage eſtoit
+        deé-ja ſollemellement reueŕe, &amp; la perte de ſon ſang
+        en toutes ces ccaſions, auoit fait voir le meſpris qu’il
+        faiſoit de la vie, lors qu’il s’agiſſoit de te prouuer ſon
+        courge. &amp; le zele incroyable qu’il auoit de te voir
+        riompher de l inſolence &amp; de l’orgueil de tes ennemis.
+        Ses bleſſures dont le ſentimet euſt eſteé capable d’alentir
+        l’ardeur des plus grands courages, ne fit qu’eſchauffer le
+        fien, il voulut tout vaincre ou perir. Mais apres t’auoir
+        A ij 
+        celebré ſes auantages: te dirai-je anſſi ſon defaut, ou plu
+        toſt ſon excés, qui l’a conduit dans le precipice, lors qu’il
+        croyoit par laà s’eſleuer au comble de la gloire &amp; de la
+        grandeur. Sa ieuneſſe l’empeſchant de mettre des bor
+        nes aà ſes deſirs, il crû̂t que la fortune luy ſeroit auſſi fa
+        uorable combatant contre ſes amis, qu’il la trouua pro
+        pice, faiſant la guerre à ſes ennemis. Imprudent qui ne
+        s’apperceut pas qu’il auoit touſiours comhatu ſous les.
+        auſpices de deux ou trois princes que les aſtres virent en
+        naiſſant d’vn œil plus fauorable que luy: &amp; que ſi leur
+        bon genie l’auoit touſiours aſſiſteé, lors qu’il tiroit l’eſ
+        peée en leur faueur, il l’abandonneroit ſi toſt qu’il auroit
+        l’audace de penſer à la tremper dans le ſang d’vn de leur
+        ombre, au deſſeinde s’acquerir par là vne pré́eminéẽce.
+        qui ne l’euſt pas moins deſtruir vaincœur que vaincu.
+        C’eſt beaucoup de ce que ie viens d’exprimer: mais ô
+        ſacres morifs d’aliance, qui fiſtes porter le nom de fre
+        re à deux Princes, dont l’vn eſpouſa la ſœur de l’autre,
+        na’aurez-vous donc non plus de pouuoir icy que vous en
+        euſtes autrefois à Rome, au temps de Pompé́e &amp; de Ce
+        ſar ou ne ſeruirez que de couuerture aux mouuemens
+        de leur ambition, qui fes porte à ſe deſtruire l’vn &amp; l’au
+        tre en leuant les défiances &amp; les ombrages qu’autrement
+        on pouuoit auoir de leur deſſein. Ce braue Duc de Ne
+        mours, auoit eſpouſé la ſœur de ce grand &amp; fameux Duc
+         de Beaufort, qui fut touſiours mes delices &amp; mon apuy:
+        certe alliance contractée auec beaucoup de ſolemniteé,
+        aiſoit croire que ce ne ſeroit deſormais qu’vne ame en
+        deux corps, &amp; que la maiſon de l’vn &amp; de l’autreeneſtoit.
+        beaucoup fortifiée. l’en reſſentis vne ioye exceſſiue que
+        ie fis eſclater par des ſignes trop viſibles, pour n’y pas fai
+        reparticiper tout le reſte de la France, &amp; cependant, ô.
+        mal-heur qu’on ne peut aſſez déplorer coup fatal qui
+        ranche vn des doigts de ma main! &amp; prodige que
+        les ſiecles à venir croiront à peine. Celuy qui priſt: al
+        liance en la maiſon de l’autre, ce Prince ſi iudi
+        cieux &amp; ſi ſage, pourueu de ſi belles mœus, &amp; qui¬
+        ſembloit 
+        1
+        leubloit vn portrair de la parfaitte moderation, s’eſt
+        iey endu l’aggreſſeur &amp; celuy qui deuoit n’eſtre armé
+        qepour ſa deffence apres s’eſtre quelque temps def
+        eadud’en venir aux priſes auec luy par ces conſidera
+        uionsd’alliance &amp; de pieté, foree de ſe trouuer au ren
+        de-sous, s’eſt offert a tiré l’eſpé́e &amp; mis le piſtolet à̀ la
+        mn, &amp;. par vn oup mal. heuraux dont le plus malia
+        des demons a ſans doute conduit le plomb, a tueé celuy
+        dontla femme ne le peut nommer que par le cher nou
+        defrtre, &amp; les enfans, par celuy d’onecle, vn Prince diſ
+        eta qui tous les dons &amp; toutes les graes de l’eſprit &amp;
+        corps formoient vn doux meſlange de perfections, &amp;
+        dnttures les vertus ornoient Lame pour le rendre ve
+        ablement digne du nom de Prince qu’il portoit grau
+        lurle viſage. Mais pourquoy contre ma promeſle tar
+        day-je tant à renplir ton eſprit d’vne idêe que tu n’as.
+        deſia que rrop conceuë. En ce funeſte combat le Duc de.
+        eaufart a tueé le Duc de Neaours, vn beau frere ſon
+        beau-frere, vn Prinee chef d’vn party, vn autre Peince.
+        hefdu meſme party, &amp; pour tour dire en deux mots le
+        oilleur lPrince du mondea tué le plus genereux Prinece
+        q fut iamas, ſice n’eſt qu’ou peut dire auſſi vray- ſem.
+        blablement que le mauuais demon du Duc de Nemours
+         &amp; de laFrdce, pour me nuire &amp; m’affoiblir par cette dou:
+        ble perte, la tuë par les mains du genereux Duc de Beau
+        frt mais qui dois-je plaindre premierement de la veu
+        e du mort? du mort meſme de celuy qui luy a porté le
+        oup mortel des Princes ? leurs alliez? des Pariſiens mes
+        ſuijets, ou des Franç̧ois en generalQui ne plaindroit eu
+        effet certe ieune Princeſſe, qui perd ſi roſt vn mary ſi
+        ieune, ſi beau, ſi bien né, ſi bienfart, ſi plein de merite &amp;
+        d’eſtime, ſi preſſé du deſir d’en acquerir encor vne plus
+        grande, &amp; qui ne peut en voulant vanger ſa mort, faire
+        es vœux ou des pourſuittes pour ceér effet qui ne ten.
+        dent à la deſtrution de ſon ſang, de ſa famille, &amp; du par
+        y quelan mag auoi prisde ſa ville maſume,; &amp; de tout
+        B 
+        6
+        l’Empire qu’il auoit voulu conſeruserQui ne plaindroiee8.
+        grand ’rince, qu’vne mort precipité́e dérobe en vnâge1
+        ſi rendre. à l’amour d’vn ſi cher ebjet, à̀ tant de merite.
+        tant de bien, tant de vertu, tant d’eſtime, &amp; de gloire
+        &amp; à̀ la bienveillance de tousmnes ſujets qui le voyoient
+        d’vn œil auſſi doux que le ſien, eſtoit riant &amp; plein de
+        charmes? Qui ne plaindroit ſon vainqueur qui s’eſt ve
+        forcé par vn puiſſant motif d’honeur &amp; de reſſentrimont
+        de porter vn coup mortel à celuy qu’il aymoit preſque
+        l’eégal de ſa vie, &amp; de trahir les intereſts &amp; les reſpeéts de
+        la double alliance, qui les vniſſoient dans vn meſme pa
+        ty., &amp; preſque dans vne meſme famille à ce tyrannique
+        deuoir du point d’honneur, dont l’humeur de ce iecle
+        fait pour tous les braues vne loy qui ne peut eſtre violée.
+        que par des laſches &amp; des ſtupides: e Prince diſ-ie qui
+        voudroit ſans doute auoir racheté́ de la moitié de ſon
+        ſang la perte de celuy d’vn amy ſi cher. Qui ne plaindroit
+        les Princes leurs alliez, qui perdent vn Prince qui leur
+        auoit rendu de ſi grands ſeruices, &amp; dont le credit &amp; l’a
+        ction leur eſtoitſi necefſaire pour l’acheuement de leurs
+        deſſeins,l&amp; qui ſont priuez pour quelques iours de la pre
+        ſence d’vn autre dont la perſonne eſtoit les delices de
+        tous mes ſujers, &amp; done la voix par de ſecrets reſſorts les
+        oblige comme il luy plaſt à̀ ſuiure le mouuement de ſes
+        deſirs: mes ſujets ne ſont-ils pas à plaindre auſſi; perdans
+        n des plus beaux aſtres du Ciel de la France&amp;e dont l’in.
+        uence ſe rendoit ſi fauorable à tour le monde, que l’a¬.
+        rmaur eſtoit inſeparable du reſpect qu’on auoit pour luy,
+        &amp; de ce qu ils le perdent en vn temps où l’vnion de tous
+        ces Princes qui me protegent maintenant, iodinre au pou
+        oir du Parlemér declaré pour leur party, me faſoit dé
+        ja iouir d’vn calme, que ie prenois pour vn auane-guſt,
+        &amp; pour vn gage infaillible de la felicite qu’ils me font e
+        perer? mais rous les François ne doiuent- ils pas ſouſplre?
+        uec moy, de voir que celuy que toures les forces de mes.
+        anemis n’aaoient pû vaincre ny mettre bas derniere 
+        99
+        mnt as Fa-bourg S. Anthoine, dont il reuint tous
+        ouuerr de leur ſang &amp; du ſien, vn mois apres les voyan
+        ut aàfait eſloignez de mes murailles, vient de faire
+        aufage au port, tueé par le meſme bras qui le ſecourut
+        lrs, tué prés. d’vne naſon qu’il pouuoit regarde
+        enela ſieane, puis qu’elle eſt celle d vn Prince pere de
+        l Dueheſſe ſa fenme, &amp; dans vn lieu où il ne deuoit
+        omtartre que pour ma deffence, ſi l’on m attaquoit de
+        e toſté-l : mais quoy pour vanger ſon mary, cauſe e
+        quelque façon de ſamort, voudroit-elle perdre vn frere
+        ocent qui ſemnbloit deſtourner les yeux, lors qu’il
+        pnoit le coup, dans la crainte d’en oir l’effet; vn Priae
+        elappuy de ma ville, auſi bieh que la gloire de ſa famil
+        le, &amp;pour lequel tous les Pariſiens ne s’intereſſeroient
+        pas moins s’ileſtoit en peril que les Romains firent au:
+        eſois pour la deffence de l’iſné des Horaces. apres
+        qu’il eut ioint le meurrre de ſa ſœur, qui l outrageoit
+        par des paroles iniurieuſes &amp; d’inſuportables reproches
+        lclay de ſon ſeruiteur, &amp; des deux autres Curiaces.
+        Sns menrir la foeune ſemble auoir épuiſé ſa foree à for
+        mer va mal- heur eſtrange qu’elle me fiſt ſouffrir, pour
+        m’obligerà des reſſentimens extraordinaires. Mais que
+        ps-je accuſer auec iuſtice de m’auoir cauſé cette diſ
+        gace, le mort ie ſerois cruelle ſi i’en auois formé́ la pen
+        ſée, il a ſuiuy le mouuement d’vne belle ambition que
+        luy inſpiroit l’ardeur de ſon noble ſang: accuſeray-ie le
+        vainqueur mais auroit-il pû ſe deffendre de tant de
+        pourſuittes que ſoa aduerſaire faiſoit chaque iour pout
+        l’eogager dans le eombar, eſtant dans vne Cour ſi ſcru
+        puleuſe, &amp;ſi pleine de ialouſie, pour ce qui le touche,
+        &amp; qui sãs doreauroit fait paſſer ſa pieté pour foibleſſe,
+        e ne l’auroit pas apres ce refus iugé́ digne de ſa grande
+        putatian; Blaſmeray. ie donc leurs amis comrmuns de
+        aaoir pas aſſex bié veillé pour les empeſcher d’en venir.
+        aux mains mais n’auoisu-is pas ſuiet de croire que la
+        coaſideratiode leur alliance mutuelle viendroi con¬ 
+        ese mere comfune, ou comme vne autre Ioeaſte ſe
+        ietter entre deux lors auroient les épeées tirées, pour les
+        abliger à les remettre dans le fourreau, puſque ne peut
+        tromper l’induſtrie qui tend à ces ſanglans effets qui ſe
+        decident en vn moment, &amp; dont l’occaſion ſe concerte.
+        en ſecrt pour s’execurer dans le temps où ceux qui
+        pourroientrompre cette partie, ont de plus preſſantes
+        affaires qui les occupent.
+        Aceusõs dõc noſtre malheur, qui noveur pas ſouffrir que
+        ie gouſte aucun plaiſir ſans amertume: aceuſons la con
+        ſtellation ennemie, &amp; l’eſprit des Mazarns, qu repar
+        du dans. ma ville, recherchecomme vn demon in
+        quiet à perdre les mieux intentionnes. Qu’ils ne ſe pre
+        ualent pas auſſi de cér aduantage, puis qu’ils n’y ont rien
+        contribueé que d’vne façon ſi laſche, qu’ils en deſauoue:
+        ront touſiours -l’effet: &amp; d’ailleurs qu’ils ſcçachet qu
+        puiſque la fortune exige touſiours de ſanglants tributs
+        de ceux qu’elle veut le plus fauoriſer, apres auoir receu
+        celuy que ie viens de luy payer en conpenſarion de ſes
+        faueurs, elle me promet vn long calme, mais qu’ils ap
+        prehendent la main qui ſçait porter des coups ſi dange.
+        reux, &amp; qu’ils iugent quel maſſacre elle feroit de ſes en
+        nemis, ſi ſon malheur la renduë ſi fatale àſes amis meſ,
+        mes.
+        Toy donc chere ombre qui deueloppeée des nuages
+        des paſſions, dont ton eſprit fut touſiours offuſqu
+        dansles derniers iours de ta vie, conguois maintenane
+        combien les deſſeins &amp; les deſirs de ton aduerſaire fu
+        rent pleins d’équité́, viens rendre ce rteſmoignageaux
+        chefs d’vn peuple qui plaintaurant le viuant que le more
+        ſç̧achant combien ce deplaiſir le geſne en ſecret, &amp; l
+        iuſtifiant meſme à ſes ennerms, Viens me rendre la paix
+        que tua perte m’a rauie. Adieu.
+        FIN.			</p>
+		</body>
+	</text>
 </TEI>

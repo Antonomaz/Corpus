@@ -1,604 +1,1090 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2232_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Mazarine">Lettre envoyée au Roy par un docteur en
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Mazarine">Lettre envoyée au Roy par un docteur en
           theologie.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName role="XML_Encoding">Roblin Camille <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
-          </persName>
-          <persName role="XML_Encoding">Lecha Mélanie <affiliation>
-              <roleName type="status">Stagiaire</roleName>
-            </affiliation>
-          </persName>
-          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName role="XML_Encoding">
+						<affiliation>
+							<roleName type="status">Stagiaire</roleName>
+						</affiliation>
+Roblin Camille					</persName>
+					<persName role="XML_Encoding">
+						<affiliation>
+							<roleName type="status">Stagiaire</roleName>
+						</affiliation>
+Lecha Mélanie					</persName>
+					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-06-08">8 juin 2021</date>
-        <availability status="restricted" n="cc-by">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=Ok1KAAAAcAAJ"/>
-          <author>
-            <persName>
-              <addName type="initiales">A. L.</addName>
-            </persName>
-          </author>
-          <title source="Mazarine">Lettre envoyée au Roy par un docteur en theologie.</title>
-          <pubPlace>Sans Lieu</pubPlace>
-          <publisher>
-            <persName>Sans Nom</persName>
-          </publisher>
-          <date source="Moreau" when="1651">1651</date>
-          <date source="Carrier" when="1651-12">fin décembre 1651</date>
-          <extent>
-            <measure unit="page" quantity="19"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="BM01112" cert="high"
-            target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50017"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2761369">Vienne</settlement>
-            <institution>Bibliothèque nationale d'Autriche</institution>
-            <repository/>
-            <idno type="cote">127669-B ALT MAG</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>False</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2021-06-08">8 juin 2021</date>
+				<availability status="restricted" n="cc-by">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=Ok1KAAAAcAAJ"/>
+					<author>
+						<persName>
+							<addName type="initiales">A. L.</addName>
+						</persName>
+					</author>
+					<title source="Mazarine">Lettre envoyée au Roy par un docteur en theologie.</title>
+					<pubPlace source="None">Sans lieu</pubPlace>
+					<publisher>
+						<persName>Sans nom</persName>
+					</publisher>
+					<date source="Moreau" when="1651">1651</date>
+					<date source="Carrier" when="1651-12">fin décembre 1651</date>
+					<extent>
+						<measure unit="page" quantity="19"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="BM01112" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50017"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2761369">Vienne</settlement>
+						<institution>Bibliothèque nationale d'Autriche</institution>
+						<repository/>
+						<idno type="cote">127669-B ALT MAG</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>False</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine">Sous forme de lettre adressée au roi Louis XIV Deux états (A/B) : p. 5,
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine">Sous forme de lettre adressée au roi Louis XIV Deux états (A/B) : p. 5,
           l. 3 "Molé :"/"Molé.", l. 7 "Authorité"/"Auctorité", l. 9 "ces"/"ses", l. 14
           "authorité"/"auctorité" ; p. 7, l. 5 "tous"/"tout", l. 9 "? Cét"/", cét", l. 14
           "France."/"France?" ; p. 8, l. 7 "authorité"/"auctorité", l. 20
           "considarable"/"considerable". Texte repris dans la mazarinade intitulée "La genealogie du
           premier President" (BM01113). Texte paru à fin décembre 1651 d'après Hubert Carrier
-          (Bibliothèque Mazarine, Ms 4682-3, f. 291v). </p>
-        <p source="Moreau">2232. Lettre envoyée au roi par un docteur en théolo gie. Sans Lieu,
+          (Bibliothèque Mazarine, Ms 4682-3, f. 291v).</p>
+				<p source="Moreau">2232. Lettre envoyée au roi par un docteur en théolo gie. Sans Lieu,
           1651, 19 pages. Signé A. L. Pamphlet des plus furieux contre Mathieu Molé. Il en existe
           une contrefaçon de 1652, sous le titre de : Généalogie du premier Président.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="form">vers</term>
-          <term type="genre">lettre</term>
-          <term type="subject">Molé, Mathieu, 1584-1656</term>
-          <term type="subject">Molé, Édouard, 1609-1652</term>
-          <term type="subject">Molé, Jean, 1610?-1682</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_48" source="Moreau">
-          <p>Arrêt du parlement contre le cardinal Mazarin</p>
-          <date when="1651-03-11">1651-03-11</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-10-04" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>LETTRE
-        <lb/>ENVOYEE
-        <lb/>AV ROY
-        <lb/>Par vn Docteur en Theologie.
-        <lb/>M. DC. LI.<pb n="2"/>
-        <pb n="3"/>
-        <lb/>3
-        <lb/>LETTRE ENVOYEE
-        <lb/>AV ROY, parvn Docteur
-        <lb/>en Theologie
-        <lb/>SIRE.
-        <lb/> Vn Particulier qui met ſa gloire &amp; ſa bonné for
-        <lb rend="¬" break="no"/>tune a eſtre né Sujet de Voſtre Majeſteé, oſe luy de
-        <lb rend="¬" break="no"/>clarer auec vne ſinceriteé́ toute entiere, ce qu’elle
-        <lb rend="¬" break="no"/> doit attendre de Matthieu Mole ſon premier Pre
-        <lb rend="¬" break="no"/>ſident, qu’elle a eſleue depuis peu à la dignité de
-        <lb/>Garde-des-Seaux de Fraace. Cette Charge, S R E,
-        <lb/>eſtant la premiere &amp; la plus importante de voſtre
-        <lb/>Eſtat, requiert ſans doute, outre la ſuffiſance de l’eſ
-        <lb rend="¬" break="no"/>prit, vne probité exemplaire en celuy qui y eſt appel
-        <lb rend="¬" break="no"/>lé, &amp; des mœurs tout à̀ fait incompatibles. Que ſi
-        <lb/>les Roys auoient autant de lumiere pour diſcerner
-        <lb/>dans les choſes de fait, ce qui eſt veritable d’auec ce
-        <lb/>qui eſt faux &amp; ſuppoſé, comme nous deuons croi
-        <lb rend="¬" break="no"/>re qu’ils ſont éclairez de Dieu dans celles de la lu
-        <lb rend="¬" break="no"/>ſtice, pour faire difference de ce qui eſt juſte d’auec.
-        <lb rend="¬" break="no"/>ce qui ne l’elt pas; je n’aurois garde, SrRe, d’exa
-        <lb rend="¬" break="no"/>miner le choix qu’a fait Voſtre Majeſteé de ſon p
-        <lb rend="¬" break="no"/>mier Preſident, pour luy mettre en depoſt les mar
-        <lb rend="¬" break="no"/>ques de ſon Authoriteé plus ſouueraine. Mais l’ex
-        <lb rend="¬" break="no"/>A <pb n="4"/>
-        <lb/>l
-        <lb/>4
-        <lb/>perience nous faiſant voir que les plus grands Prin
-        <lb rend="¬" break="no"/>ces eſlans hommes, ſont ſouuent trompez par l’er
-        <lb rend="¬" break="no"/>reur ou la malice de leurs ſemblables, qui leur dé
-        <lb rend="¬" break="no"/>guiſent la verité &amp; ſe la cachent à eux-meſmes: I’ay
-        <lb rend="¬" break="no"/>eſtimeé, SRE, que Voſtre Majeſté au lieu de con
-        <lb rend="¬" break="no"/>damner mon action de hardieſſe &amp; de temerité, re
-        <lb rend="¬" break="no"/>ceuroit pour vn témoignage de mon aele &amp; de ma
-        <lb/>fidelité à ſon ſeruice, la liberté reſpectueuſe dont j’o
-        <lb rend="¬" break="no"/>ſe vſer enuers Elle, en luy faiſant entendre ce qui eſt
-        <lb/>des mœurs &amp; conditions de ſon premier Preſident, &amp;
-        <lb/>ce qu’elle pourra apprendre encore de la voix publi
-        <lb rend="¬" break="no"/>que, ſi elle prend la peine de ſ’enenquerir.
-        <lb rend="¬" break="no"/>Marthieu Molé, SRE, a trois qualitez remar
-        <lb rend="¬" break="no"/>quables, ſelon leſquelles il peut eſtre conſideré de
-        <lb/>Voſtre Majeſté;, Il eſt Pere, il eſt premier Preſident,
-        <lb/>&amp; en qualité́ de Garde-des-Seaux de France, il eſt
-        <lb/>Miniſtre d’Eſtat, &amp; a ſeance &amp; ſuffrage dans vos
-        <lb/>Conſeils. La premiere qualité, il l’a de la Nature;
-        <lb/>mais il eſt redeuable des deux autres à la bonte de
-        <lb/>Voſtre Majeſté, &amp; à celle du ſeu Roy voſtre pere, de
-        <lb/>tres glorieuſe memoire, qui l’a reueſtu de la dignité
-        <lb/>de premier Preſident en ſon Parlement de Paris,
-        <lb/>comme Voſtre Majeſte le vient d’honorer de celle
-        <lb/>de Miniſtre d’Eſtat, &amp; de Garde-des-Seaux de Fran
-        <lb rend="¬" break="no"/>ce. Et c’eſt, SrrREe, en la veuë de ces trois qualitez,
-        <lb/>&amp; des rapports &amp; liaiſons qu’elles ont entr elles, que
-        <lb/>j’oſe dire à Voſtre Majeſté́ que ſi elle daigne faire
-        <lb/>tant ſoit peu de reflexon ſur l’vſage &amp; fonction des
-        <lb/>deux premieres, e lle ſera plainement inſtruite de ce
-        <lb/>qu’elle
-        <lb/>¬¬ <pb n="5"/>
-        <lb/>qu’elle doit efperer, ou pluſtoſt de ce qu’elle doit
-        <lb/>craindre de la troiſieſme, en la perſonne de Matthieu
-        <lb/>Molé: Car il aſt certain, S1rE, qu’eſtant pere, la
-        <lb/>Nature en cette qualité luy donne pouuoir ſurſes en
-        <lb rend="¬" break="no"/>fans; &amp; il n’eſt pas moins veritable qu’eſtant premier
-        <lb/>Preſident, Voſtre Majeſteé luy donne ſous ce tiltre,
-        <lb/>Authorité́ ſur tous ſes Sujets; Comme en le faiſant
-        <lb/>Miniſtre d’Eſtat &amp; ſon Garde-des-Seaux, elle luy
-        <lb/>donne part aà̀ ſes Conſeils plus ſecrets, &amp; aà̀ ces deli
-        <lb rend="¬" break="no"/>berations plus importantes. Que ſi donc il eſt vray
-        <lb/>de dire que Matthieu Molé abuſant du pouuoir que
-        <lb/>la Nature luy donne en qualité de pere, il fait injure
-        <lb/>à ſes enfans; N’eſt-il pas auſſi veritable d’aſſeurer
-        <lb/>que faiſant ſeruir à de mauuais vſages l’authoriré que
-        <lb/>Voſtre Majeſté́ luy done en qualiteé de ſon premier
-        <lb/>Preſident, il fait injuſtice à tous vos Sujets? Et ne
-        <lb/> peut-on pas encore adjouſter auec la meſme verité́,
-        <lb/>que pechant dans le Miniſtere de l’Eſtat, &amp; la Garde
-        <lb/>des Secrets que Voſtre Majeſté luy confie, il trahit
-        <lb/>ſon Prince &amp; l’Eſtat, &amp; deuient coupable d’vn crime
-        <lb/>auſſi grand que les effets en ſont dangereux, &amp; les
-        <lb/>ſuittes pernicieuſes? Et cependant, Si e, ie ne fein
-        <lb rend="¬" break="no"/>dray point de dire à Voſtre Majeſté, que Matthieu
-        <lb/>Molé ſeſt ſi mal gouuerné en la qualité de Pere &amp;
-        <lb/>de premier Preſident, qu’elle n’en doit rien eſperer
-        <lb/>de bon en celle de Miniſtre d’Eſtat, &amp; d’Aſſocié à
-        <lb/>ſes Conſeils; Mais pluſtoſt elle doit craindre que ce
-        <lb/>miſerable Pere, &amp; ce Magiſtrat tres-injuſte, ayant ſi
-        <lb/>. <pb n="6"/>
-        <lb/>6
-        <lb/>outrageuſement abuſé de ſa puiſſance, au reſpet de
-        <lb/>ſes Enfans &amp; à l’égard de vos Sujets, il n’en faſſe vn
-        <lb/>auſſi mauuais vſage dans le Miniſtere de l’Eſtat, &amp;
-        <lb/>l’exercice de la premiere Charge du Royaume. Car
-        <lb/>ſi Voſtre Majeſté, SIRE, prend la peine d’écouter
-        <lb/>la voix du Peuple ( qui eſt celle de Dieu, quand elle
-        <lb/>eſt vniuerſelle &amp; vniforme, &amp; non produite par la
-        <lb/>hain &amp; paſhon de quelques particuliers) elle ſç̧aura
-        <lb/>d’elle que tout ce qu’vne molle indulgence, tout ce
-        <lb/>qu vne complaiſance flateuſe, tout ce qu’vne paſſion
-        <lb/>aueugle, &amp; vne affection idolâtre, peut produire de
-        <lb/>mauuais &amp; de reprehenſible en la perſonne d’vn pe
-        <lb rend="¬" break="no"/>re, ſe rencontre en celle de Matthieu Molé, à l’eſ
-        <lb rend="¬" break="no"/>gard de ſes Enfans; pour leſquels, partieulierement
-        <lb rend="¬" break="no"/>pour l’aiſné, il n’a pas ſeulement vn amour deſor
-        <lb rend="¬" break="no"/>donne, mais furieux &amp; maniacle. Si l’affection qu’il
-        <lb/>leur porte, n’eſtoit ſimplement que deſreglé́e dans
-        <lb/>ſon excés, elle ſeroit peut-eſtre exeuſable, quoy que
-        <lb/>touſiours ridicule, puis quelle eſt ſans fondement,
-        <lb/>&amp; qu’elle n’a pour object en la perſonne de ſes en
-        <lb rend="¬" break="no"/>fans, que des Pigmées &amp; des Auortons; qui outre
-        <lb/> leurs autres difformirés, ont vne laideur hideuſe
-        <lb/>dans le viſage, qui approche de celle des Monſtres.
-        <lb/>Mais d’auoir pour eux vne paſſion enragée, &amp; par
-        <lb/>vne ambition inſatiable, leur procurerdes honneurs
-        <lb/>dont ils ſont tout à fait indignes, &amp; les y aduancer en
-        <lb/>efet au grand ſcandale de l’Egliſe &amp; de l’Eſtat: C’eſt
-        <lb/>ce qui ne peut proceder que d’vn fonds d’orgueil eſ
-        <lb rend="¬" break="no"/>1 <pb n="7"/>
-        <lb/>froyable, &amp; d’vn amour propre, que Sainct Paul die
-        <lb/>etre la racine de rous maux; qui rend Mathieu Molé
-        <lb/>idolatre de ſes enfans, comme d’vn ouurage qu’il
-        <lb/>eſtime ſien, quoy qu’il n’ait point ſujet de ſe glo
-        <lb rend="¬" break="no"/>rifier d’vne ſi ſotre production, qui cloche en tous
-        <lb/>ſens, &amp; qui eſt ſi deffectueuſe. Et en effect, SR;
-        <lb/>à quoy pourroit-on attribuer qu’à vne preſomption
-        <lb/>tres-orgueilleuſe qu’a Matthieu Moleé de luy meſme
-        <lb/>&amp; detout ce qui part de luy? Ceét amour folement
-        <lb/>paternel qu’il a pour ſon aiſné, qui l’auuegle &amp; l’en
-        <lb rend="¬" break="no"/>chante iuſqu’à ce point, que de luy faire dire que ſon
-        <lb/>fils de Champlatreux le rauit de ſon entretien, &amp;
-        <lb/>qu’il le juge le plus habil-homme pour gouuerner,
-        <lb/>&amp; le plus grand eſprit qui ſoit en France. Quel
-        <lb/>charme ridicule, &amp; quelle faſcination prodigieuſe
-        <lb/>produit la chair &amp; le ſang en l’ame de ce pere
-        <lb/>fol &amp; enyvreé́ de ſon affection paternelle? Ie ne
-        <lb/>diray rien iey, Sie, aà Voſtre Majeſté de ſon ſe
-        <lb rend="¬" break="no"/>cond fils, pour qui il a obtenu l’Eueſché de Bayeux,
-        <lb rend="¬" break="no"/>&amp; la Theſorerie de la ſaincte Chapelle de Paris, de
-        <lb rend="¬" break="no"/>puis quelques anneés: Si Voſtre Majeſté conſulte les
-        <lb/>pus gens de bien de ſon Royaume, ils luy diront
-        <lb/> qu’ils ont gemy, de voir que ce pere infortuné a ſa
-        <lb rend="¬" break="no"/>crifie à ſon ambition forcenée, non moins le ſalut
-        <lb rend="¬" break="no"/>de ſon enfant, que l’honneur de l’Egliſe, qui eſt no
-        <lb rend="¬" break="no"/>tablement intereſſeé dans cét Eueſque pitoyable;
-        <lb/>Miſer &amp; Miſerabila! qui outre ſes defauts corpo
-        <lb rend="¬" break="no"/> rels qui ſont viſibles, &amp; ſur l’infirmité de ſa com¬ <pb
-          n="8"/>
-        <lb/>plexion, mince, &amp; delicate juſqu’à l’exceés, &amp; qui le
-        <lb/>met dans vne incapacite’ coõtinuelle, &amp; irremediable,
-        <lb/>de prendre ſoin des affaires de ſon Dioceſe, n’a en
-        <lb rend="¬" break="no"/>core aucune des conditions que requiert Saint Paul
-        <lb rend="¬" break="no"/>en celuy quieſt apelleé a cette dignité ſupreme;com
-        <lb rend="¬" break="no"/>me ſi Matthieu Molé qui fait eſtat de long-temps
-        <lb/>de meſpriſer l’authorité du Saint Siege qu’iſ combat
-        <lb/>par ſes eſcrits, ſe ſoucioit auſſi peu des laincts Conci
-        <lb rend="¬" break="no"/>Ies&amp; des Ordonnances de l’Egliſe, ne s’eſtant gue
-        <lb rend="¬" break="no"/>res mis en peine d’eſcouter la voix publique à l’eſ
-        <lb rend="¬" break="no"/>gard de ſon fils, qui ſelon le precepre de l’Apoſtre,
-        <lb rend="¬" break="no"/>doit eſtre fauorable à celuy qu’on deſtine à l’Ep
-        <lb rend="¬" break="no"/>copat, moins encore de conſulrer le Canon neufieſ
-        <lb rend="¬" break="no"/>me du Concile de Neocœſarée. Mais m’arreſtant
-        <lb/>ſeulement à ce qui regarde ſon aiſne, quel mal-heur,
-        <lb/>SIRE,; neſeroit-ce point pour voſtre Eſtat, ſi ce pe
-        <lb rend="¬" break="no"/>tit fripon &amp; mutin audacieux, la proye de la fougue,
-        <lb/>de la luxure &amp; de l’ambition, perdu &amp; abyſmé dans
-        <lb/>les plus vilaines desbauches, venoit à eſtre pourueu
-        <lb/>d’vne Charge conſidarable, ſoit dans le maniement
-        <lb/>des Finances, ſoit dans l’axercice de la iuſtice, ſoit
-        <lb/>dans quelque autre employ ou Commiſſion d’im¬.
-        <lb/>portance? Ce mal-heureux perene peutignorer que
-        <lb/>ſon fils eſt endebté d’vn million de liures, qu’il a
-        <lb/> emprunté pour ſatisfaire à ſon luxe &amp; à ſa deſbauche:
-        <lb/>il ſçait qu’il a par tout Paris de ſales pratiques, &amp; des
-        <lb/>comrmerces tout à fait honteux. Il s’eſt veulay meſ
-        <lb rend="¬" break="no"/>me dans le ſcandale &amp; dans l’infamie, &amp; contraint
-        <lb/> de ſe <pb n="9"/>
-        <lb/> 9
-        <lb/>de ſe déthroner, pour vſer des termes de ſon fils,
-        <lb/>afin de n’eſtre point Iuge en vne affaire où̀ il s’agiſ
-        <lb rend="¬" break="no"/>ſolt de l’intereſt d’vne Maiſtreſſe qui veut paſſer
-        <lb/>pour fille, ( quoy qu’elle aye eſté vefue &amp; qui
-        <lb/>met le peuple en peine de ſç̧auoir ſi elle eſt la Fem
-        <lb rend="¬" break="no"/>me ſecrette, ou la Coneubine publique de Cham
-        <lb rend="¬" break="no"/>platreux. Son logis eſt vn Bordel, où au veu &amp; au
-        <lb/>ſceu de ſes domeſtiques, ſe retire la nuit vne autre
-        <lb/>Garſe, qui vient eſſuyer les ſueurs &amp; les fatigues de
-        <lb/>ſon fils. I ſçait qu’il a fauoriſe le rapt de pluſieurs
-        <lb/>filles, &amp; que pour auoir trahy ſon Couſin de Nully
-        <lb/>dans la reſolution qu’ils auoient priſe d’en enleuer
-        <lb/>vne à ſa Mere, qui demeure aſſez proche de ſainct
-        <lb/>Paul, il faillit aà perdre la vie, que ce Couſin venoit
-        <lb/>pour luy oſter, l’eſpeée nuë en la main iuſques dans
-        <lb/>ſa chambre, ſi vn Valet n’euſt paru au coup, &amp; n’en
-        <lb/>euſt deſtourné l’atteinte. Et cependant ce meſ
-        <lb rend="¬" break="no"/>chant fourbe, cét ambitieux, cet hypocrite, qui fait
-        <lb/>eſtat de tromper les ſimples, &amp; qui abuſeroit s’il luy
-        <lb/>eſtoit poſſible, de l’auctorité des Souuerains, &amp; de
-        <lb/>la bonté &amp; facilité de la plus grande Reyne du mon
-        <lb rend="¬" break="no"/>de, eſſaye par tous les mauuais artifices dont ſon eſ
-        <lb/>prit eſt capable, d’eſtablir dans vne des premieres
-        <lb/>Charges de la Iuſtice, celuy qui ne fit iamais raiſon à̀
-        <lb/>ſes Creanciers; propoſe pour le maniement des Fi
-        <lb rend="¬" break="no"/>nances celuy qui en eſt le diſſipateur, &amp; en vn mot
-        <lb/>vante pour le gouuernement &amp; la reforme de l’E¬ <pb n="10"/>
-        <lb/>10
-        <lb/>ſtat, celuy dont le luxe &amp; la deſbauche y ont eauſeé
-        <lb/>tant de deſordres ſcandaleux. Or cette legere idée,
-        <lb/>S rRE, que ie viens de donner à Voſtre Majeſte de
-        <lb/>Matthieu Molé, en qualité de pere, ſembleroit ſuf
-        <lb rend="¬" break="no"/>ſante pour luy faire connoiſtre ce qu’elle en doit at
-        <lb rend="¬" break="no"/>tendre en qualité de Garde des Seaux de France &amp;
-        <lb rend="¬" break="no"/>de Miniſtre d’Eſtat; puiſque ſelon le commun ſen
-        <lb rend="¬" break="no"/>timent des Sages, il eſt trop dangereux d’appeller
-        <lb/>aux affaires publiques, celuy qui gouuerne ſi mal
-        <lb/>les ſiennes propres; &amp; qu’eſtant tres-difficile que ce
-        <lb rend="¬" break="no"/>luy qui eſt vitieux en qualité d’homme priué, ſoit
-        <lb/>bon Citoyen &amp; bon Magiſtrar à l’eſgard des Loix &amp;
-        <lb/>du public, il eſt tout à fait impoſſible que ceduy là
-        <lb/>s’acquitte bien de ſa charge dans le Miniſtere de l’E
-        <lb rend="¬" break="no"/>ſtat, qui a ſi mal reüſſi dans le gouuernement de ſa
-        <lb/>famille &amp; la conduitte de ſes enfans, la nature ou la
-        <lb/>paſſion ou inclination vicieuſe fortement enracinée
-        <lb/>en elle, ſe produiſant enfin au dehors, quelque ſe
-        <lb rend="¬" break="no"/>crette violence qu’elle ſe face au dedans, ſur tout
-        <lb rend="¬" break="no"/>l’ambition, qui treuue touſiours dans les afſfaires pu
-        <lb rend="¬" break="no"/>bliques desſujets propres à chatouiller &amp; irriter ſes
-        <lb/>deſirs, &amp; aà exciter en elle de nouuelles pretentions
-        <lb/>&amp; de plus hautes eſperances. Mais s’il plaiſt, S1 ,
-        <lb/>à Voſtre Majeſté, que ie donne encore vn traict de
-        <lb/>plume à Matthieu Mole, pour vous en exprimer l’i
-        <lb rend="¬" break="no"/>mage en qualité de premier Preſident, ainſi que ie
-        <lb/>le luy ay repreſenté comme pere, à l’eſgard de ſes eu¬ <pb n="11"/>
-        <lb/>fans, I’eſpere qu’elle connoiſtra clairement
-        <lb/> que s’il eſt deſpourueu des conditions que doir
-        <lb/>auoir vn bon pere de famille, il a encore moins
-        <lb/>celles que requiert l’Office d’vn luge, &amp; d’vn
-        <lb/>Iuge Souuerain, &amp; qui eſt le Chef d’vne Com
-        <lb rend="¬" break="no"/> pagnie la premiere &amp; la plus Auguſte du Ro
-        <lb rend="¬" break="no"/>yaume. Ie ne m’arreſte pas dauantage, SIRs,
-        <lb/>à faire remarquer à Voſtre Majeſté ce defaut,
-        <lb/>ie dis cette moleſſe, &amp; cette affection aueugle
-        <lb/>&amp; idolatre qu’a Matthieu Molé à l’eſgard de ſon
-        <lb/>aiſné, qui eſt pourtant cres-conſiderable en luy,
-        <lb/>en la qualité meſme de Magiſtrat &amp; de Premier
-        <lb/>Preſident, eſtant vray de dire que ce fils eſt l’a
-        <lb rend="¬" break="no"/>me de ſon pere, ou pluſtoſt le Demon qui le
-        <lb rend="¬" break="no"/>poſſede, &amp; qui le meut &amp; le pouſſe à entrepren
-        <lb rend="¬" break="no"/>dre, &amp; à faire tour ce qu’il veut, tou le monde
-        <lb/>eſtant teſmoin que le procedé calomnieux &amp;
-        <lb/>rout aà fait damnable, dont ce meſchant hom
-        <lb rend="¬" break="no"/>me ſe ſeruit il n’y a pas long-temps, non ſeule
-        <lb rend="¬" break="no"/>ment pour perſecuter l’innocence d’vn Conſeil
-        <lb rend="¬" break="no"/>ler &amp; d’vn Preſident ſes Conmfreres, mais pour
-        <lb rend="¬" break="no"/>perdre encore vn grand Prince &amp; le Coadju
-        <lb rend="¬" break="no"/>teur de Paris, luy fut ſuggeré par cé́t eſprit per
-        <lb rend="¬" break="no"/>nicieux, auquel le pere ſe laiſſa enfin aller, quoy
-        <lb/>que preſſé des remords de ſa conſcience &amp; de la
-        <lb/>crainte de ce qui en pourroit arriuer; il luy re
-        <lb rend="¬" break="no"/>petat ces mos: Vous me perdrez Champlareux, <pb n="12"/>
-        <lb/>12
-        <lb/>Champlatreux, vous me perdrez Et n’eſtant pas
-        <lb/>encore moins veritable, que ſi Voſtre Maje
-        <lb rend="¬" break="no"/>té ſouffroit ce fol pere en la charge de Gar
-        <lb rend="¬" break="no"/>de-des-Seaux &amp; de Miniſtre d’Eſtat, on pour
-        <lb rend="¬" break="no"/>roit dire de luy ce que Themiſtocle diſoitautre
-        <lb/>fois de luy meſme: Mon fils diſoit-il, a plus de
-        <lb/>pouuoir qu’aucun homme qui ſoit en la Grece,
-        <lb/>carles Atheniens commandent aux autres
-        <lb/>Grecs, ie commande aux Atheniens;, ma mere
-        <lb/>me commande, &amp; mon fils à elle. Ainſion pour
-        <lb rend="¬" break="no"/>roit aſſeurer, SiRE, que quelque Garſe fa
-        <lb rend="¬" break="no"/>meuſe auroit tout credit dans voſtre Eſtat, par
-        <lb rend="¬" break="no"/>le moyen de Matthieu Molé́ enchanté de l’affe
-        <lb rend="¬" break="no"/>Ction forcené́e qu’il a pour Champlatreux, s’il
-        <lb/>demeuroit plus long- temps Prermier Preſident
-        <lb/>ou Garde des Seaux de Prance. Car diroit-on,
-        <lb/> Paris donne la loy aux autres villes du Royau
-        <lb rend="¬" break="no"/>me, Matthieu Molé y a tout pouuoir en qualité
-        <lb/>de Garde des Seaux, &amp; de Premier Preſident,
-        <lb/>ſon fils luy commande, &amp; la G. à luy, ou quel
-        <lb rend="¬" break="no"/>que autre putain ſemblable. Mais afin, Sine,
-        <lb rend="¬" break="no"/>de faire mieux connoiſtre à Voſtre Majeſté l’in
-        <lb rend="¬" break="no"/>capacité toute entiere qu’à Matthieu Moleé à
-        <lb/>exercer vne charge de Magiſtraure &amp; de telle
-        <lb/>importance encore, qu’eſt celle de premier Pre
-        <lb rend="¬" break="no"/>ſident, ie luy diray que c’eſt l’homme peut-eſtre
-        <lb rend="¬" break="no"/>de tout ſon Royaume le plus ſujet à̀ la preuen
-        <lb rend="¬" break="no"/>tion &amp; <pb n="13"/>
-        <lb/>13
-        <lb/>loa &amp; preoceupatjon de l’eſprit, qualité du
-        <lb/>tout contraire à l’indifference, qui eſt neceſſaire
-        <lb rend="¬" break="no"/>ment requiſe en toutIuge pour bien s’acquitter
-        <lb rend="¬" break="no"/>de ſon Office. C’eſt, Sir, entre pluſieurs au
-        <lb rend="¬" break="no"/>tres, lIe plus grand defaut d’eſprit de Matthie
-        <lb/>Molé, mais tellement viſible &amp; conneu de tout
-        <lb/>le monde, que pour vſer icy des termes dont ſe
-        <lb/>ſert ailleursvn des plus grands Peres del’Eglſe,
-        <lb/>c’eſtce que chantent les Bergers ſur les monta
-        <lb rend="¬" break="no"/>gnes &amp; les Poëtes ſur les Theatres, c’eſt ce que
-        <lb/>publient les ignorans aſſemblez au coing des
-        <lb/>ruës, &amp; les ſçauans dans les Bibliotheques, &amp; les
-        <lb/>Docteurs dans les Eſcholes, &amp; les Euefques
-        <lb/>dans les Lieux ſaints; c’eſt, dis-je, ce qui eſt en
-        <lb/>la bouche de tous les hommes, c’eſt ce qui re
-        <lb rend="¬" break="no"/>ſonne dans le Barreau &amp; dans le Louure, &amp; les
-        <lb/>lieux plus publics, c’eſt ce que teſmoignent les
-        <lb/>Iuges &amp; les Parties, c’eſt ce qu’ont eſprouué, &amp;
-        <lb/>dont ſe plaignent les Grands &amp; les petits, qui ont
-        <lb/> eu affaire à ceIuge tres inique; Et i’oſe dire en¬.
-        <lb/>core à Voſtre Majefté, C’eſt ce qui a l’approba
-        <lb rend="¬" break="no"/>tion, &amp; le commun ſentiment des Docteurs, &amp;
-        <lb/>le premier d’entr’eux, &amp; le plus ſage, &amp; le plus
-        <lb/>en reputation, eſtaat prié par v autre de par
-        <lb rend="¬" break="no"/>ler à Matthieu Molé de quelqae affaire, où ſon
-        <lb/>eſprit preoccupé auoit eſté out à fait contraire
-        <lb/>¬ <pb n="14"/>
-        <lb/>
-        <lb rend="¬" break="no"/>14
-        <lb rend="¬" break="no"/> à̀ la juſtiçe de ſa cauſe, Ie n’y gagneray rien, dit
-        <lb rend="¬" break="no"/>il, car il eſt imprimé parles autres, entendant
-        <lb/>par les autres les parties de celuy qui luy parloit.
-        <lb/>Ce qui eſt ellement publie, qu’il a eite dit de
-        <lb/>luy il y a dos-ja quelques années.
-        <lb/> Au diable ſoit le ſot víildaſe,
-        <lb/>Euſ-il iuſqu’̀ l’antonoaaſe
-        <lb/>Le haut don de preeaion,
-        <lb/>Ou de preoccupation:
-        <lb/>Que ſans paſſion ennemie,
-        <lb/> Ie nore ad bon druit d’ifamie
-        <lb/> En feit d’Eſtat, au moins ſelon
-        <lb/>La loy propre au ſage Solon.
-        <lb/>Car touſiours dangereux &amp; foarbe,
-        <lb/> Vers les deux partis il ſe cour.e
-        <lb/> Si fort douteux, qu’eſtans de l’eun,
-        <lb/>Et puis de l’autre, il n’eſt d’aucun.
-        <lb/>. Q’auſſi bies-toſt denant la Reyne,
-        <lb/> Des Souuerains la Somueraine,
-        <lb/>e rendray ma fay bien camas,
-        <lb/>Fuſt-il evn Preſes Maximus:
-        <lb/> Luy faiſanmt evoir en ſa preſence
-        <lb/>. Auſſi mol enuers ſon ngeance,
-        <lb/> Q’eſt oppoe à ce Faquin,
-        <lb/> L’Illuſtre ennemy de Tarquin
-        <lb/>
-        <lb rend="¬" break="no"/>l <pb n="15"/>
-        <lb/>1
-        <lb/>1
-        <lb/>Que s’il plaiſoit ehcore, Ss, à Voſtre Ma
-        <lb rend="¬" break="no"/>jeſteé, que ie fiſſe legerement deuant-elle l’ana
-        <lb rend="¬" break="no"/>romie de ce vice; &amp; luy en deſcouuriſſe lescau
-        <lb rend="¬" break="no"/>ſes en la perſonne de Matthieu Molé, je luy di
-        <lb rend="¬" break="no"/>rois que cette preocecupation d’eſprit, ou plu
-        <lb rend="¬" break="no"/>ſtoſt cette obſtination &amp; opiniaſtreté ſansexem
-        <lb rend="¬" break="no"/>ple, &amp; qui, ſion met à part ſes intereſts ambi
-        <lb rend="¬" break="no"/>tieux, eſt la ſource plus vniuerſelle, d’où d’eſ
-        <lb rend="¬" break="no"/>coule la pluſpart des injuſtices qu’il commer,
-        <lb/>procede de ce meſme orgueil, qui luy faiſant
-        <lb/>cherir auec vn excez monſtreux ſes enfans
-        <lb/>comme ſa prouction &amp; ſon ouurage, le rend
-        <lb/>encore plus idolatre de ſon propre jugement
-        <lb/>qu’il eſtime eſtre plus sien, &amp; luy appartenir
-        <lb/>de plus prés, &amp; que pour cela, quand il l’a vne
-        <lb/>fois formeé, il ne peut ſe reſoudre à deſdire ny à
-        <lb/>corriger tant ſoit peu, quelque inique d’ail
-        <lb rend="¬" break="no"/>leurs &amp; des-caiſonnable qu’il luy paroiſſe C’et
-        <lb/>de ce meſme orgueil d’où naiſt en luy la colese;
-        <lb/>&amp; les paroles iniurieuſes dont il a vſé mille fois
-        <lb/>enuers les parties, &amp; qu’il a profereées n’agueres
-        <lb/>&amp; e priué &amp; en public contre des perſonnes Ec
-        <lb rend="¬" break="no"/>cleſiaſtiques, &amp; des Preſtres, &amp; des Docteurs,
-        <lb rend="¬" break="no"/>&amp; des Miniſtres de l’Euangile, &amp; d’vne naiſſan
-        <lb rend="¬" break="no"/>ce au reſte, &amp; d’vne vertu, qui eſt bien au deſſus
-        <lb/>de la ſienme; &amp; enfin, c’eſt de ce meſme fond <pb n="16"/>
-        <lb/>d’orgueil, &amp; de cette vanié preſompueuſe qui
-        <lb/>domine en Matthieu Molé, que part cette hu.
-        <lb/>meur railleuſe ſi mal ſeante a vn grand Magi
-        <lb rend="¬" break="no"/>ſtrat, &amp; qui luy eſt pourtant ordinaire, &amp; qui le
-        <lb/>fiſt paſſer pourvn Comedien en l’eſtime de tous
-        <lb/>ceux qui eurent affaire à luy ce iour vaique
-        <lb/>qu’il eut les Seaux, que Voſtre Majeſte luy oſta
-        <lb/>le lendemain, &amp; dont ſans doute elle le va pr
-        <lb rend="¬" break="no"/>uer pour la ſeconde &amp; la derniere fois, ſi aupa
-        <lb rend="¬" break="no"/>rauantil ne luy arriue vne plus mauuaiſe fortu
-        <lb/>ne. Car enfin, Sire, pour finir cette lettre, &amp;
-        <lb/>n’eſtre point ennayeux à Voſtre Majeſté, ie ſuis
-        <lb/>obligé de luy dire, qu’il faut bien que nos pe
-        <lb rend="¬" break="no"/>ehez ſoient grands, &amp; qu’ils ayent attiré forte
-        <lb rend="¬" break="no"/>ment la colere de Dieu ſur nous, s’il permet
-        <lb/>que Matthrieu Molé demeure tant ſoit peu de
-        <lb/>temps dauantage auec charge &amp; auctorité dans
-        <lb/>le public, ou que Voſtre Majeſté luy ſouffre. La
-        <lb/> reſiſtance qu a apporté le Duc d’Orleans vo
-        <lb rend="¬" break="no"/>ſtre Oncle, afin qu’il n’euſt point les Seaux, &amp;
-        <lb/>la eonſtante rteſolution de ce bon &amp; fage Prince
-        <lb/> à ne point ſe tcouuer auec luy dans voſtre Con
-        <lb rend="¬" break="no"/>ſeil, eſt l’efect de la connoiſfance certaine qu’il
-        <lb/>a de ſes meſchantes intentions: Ilſçait qu’l n
-        <lb/>point d’autre veuë en tous ſes deſſeinas, que l’in.
-        <lb/>tereſt de ſa famille &amp; l’ambition de Champla
-        <lb rend="¬" break="no"/>ruex: <pb n="17"/>
-        <lb/>1
-        <lb/>treux:; Ila l’experience de ſes fourberies &amp; de ſes
-        <lb/>urahiſons, qui ſeules à vray dire, &amp; ie le dis, SirE,
-        <lb/>auec douleur &amp; indignation extreme, ornt mis
-        <lb/>la France, &amp; l’auctorité dé Voſtre Majeſté à
-        <lb/>deux doigts pres de ſa ruine: Et il eſt teſmoin
-        <lb/>qu’il fiſt Iigue contre le Duc de Beaufort, le
-        <lb/>meilleur, le plus ſage, &amp; le plus Genereux Prin
-        <lb rend="¬" break="no"/>ce de voſtre Royaume, y eſtant excité́ par ſon
-        <lb rend="¬" break="no"/>fils, qui penſoit par là acquerir tout credit au
-        <lb rend="¬" break="no"/>pres du Prince de Condé; &amp; que depuis ayant
-        <lb/>veu ce fils chaſſe de la Maiſon de ce meſme
-        <lb/>Prince, comme vn coquin, &amp; menaſſé́ d’eſtri
-        <lb rend="¬" break="no"/>uieres, il s’eſt porte à donner à̀ Voſtre Majeſté́,
-        <lb/>&amp; à la Reyne voſtre Mere, des Conſeils tout à
-        <lb/> fait violens, qui mettent la diuiſion dans la Fa
-        <lb rend="¬" break="no"/> mille Royale, qui donnent tout ſujet de mau
-        <lb rend="¬" break="no"/>uaiſe ſatisfation au Duec d’Orleans, &amp; qui jet¬.
-        <lb rend="¬" break="no"/>tent le Prince de Condé dans vne mal-heureu
-        <lb rend="¬" break="no"/>ſs neceſſité́ de ſe deffendre des intrigues de ce
-        <lb/>Faquin, luy qui iuſqu’icy n’a eu vn bras &amp; vn
-        <lb/>courage, que pour maintenir l’Eſtat &amp; voſtre
-        <lb/>Couronne contre les efforts de vos Ennemis.
-        <lb/>Ne permettez pas, Sr, que ce meſchant
-        <lb/>homme ſoit plus lang-temps dans le pouuoit
-        <lb/>de faire des injuſtices à vos ſujets, d’irriter la
-        <lb/>patience &amp; le courage des Princes de voſtre
-        <lb/>9
-        <lb/>E <pb n="18"/>
-        <lb/> 18
-        <lb/>Sang, &amp; d’entretenir le trouble &amp; la diuiſion
-        <lb/>dans voſtre Eſtar, par ſes meſchans Conſeils
-        <lb/>ſe s ſuggeſtions pernicieuſes: Que Voſtre Ma
-        <lb rend="¬" break="no"/>jeſteé ne dffere pas d’vn ſeul iour à luy oſter
-        <lb/> les Seaux, ſans que pour le peu de temps qu’il
-        <lb/>les à eus, il en tire autre ad antage ſinon
-        <lb/>qu’ils luy ſeelent peut eſtre l’abolition de ſes
-        <lb/>crimes, qui ſeront enſeuelis auec luy dans vne
-        <lb/>eſtroitte priſon, iuſqu’à̀ la fin de ſa vie; Que
-        <lb/>Champlatreux ſoit foüeteé &amp; fleurdeliſé en
-        <lb/>ſa preſence, &amp; qu’au meſme temps ſonſecond
-        <lb/>fils, priue de ſon Eueſcheé, &amp; reſerreé́ dans la
-        <lb/>ſolitude d’vn Cloiſtre pour y faire penitence,
-        <lb/>prie Dieu qu’il donne la grace à ſon pere, en
-        <lb/>la veü̈e de ce ſpectacle, d’imiter vn peu la
-        <lb/>Vertu &amp; la ſeueriré paternelle de ce premier
-        <lb/>Brutus, dont ſes mœurs ſont ſi eſlolgnées, &amp;.
-        <lb/>que Voſtre Majeſte enfin. r’appelle à̀ elle ce
-        <lb/>genereux Prince, qui aura bien meilleure gra
-        <lb rend="¬" break="no"/>ce, &amp; plus de bon- heur &amp; de joye à faire
-        <lb/>bruire ſes armes victorieuſes dans le milieu de
-        <lb/>la Flandre, ou dans le fond de l’Allemagne,
-        <lb/>aà la honte &amp; au dommage de vos Ennemis,
-        <lb/>qu’a ſe fortifier contre les perſecutions de
-        <lb/>Matthieu Molé, qui ſeul pour ſatis faire à ſa
-        <lb/>mal-heureuſe ambitio, nous jetre dans la
-        <lb/>1 <pb n="19"/>
-        <lb/>19
-        <lb/>guerre Ciuile, auec l’extreéme regret, &amp; la dou
-        <lb rend="¬" break="no"/>leur commune de tous vos bons’&amp; fideles ſer
-        <lb rend="¬" break="no"/> uiteurs. Ce ſont, Sir, les ſouhaits de tous
-        <lb/>vos peuples, &amp; c’eſt en particulier, le deſir
-        <lb/>tres-ardent de celuy qui eſt
-        <lb/>De Voſtre Majeſté,
-        <lb/>é
-        <lb rend="¬" break="no"/>Le tres-obeiſſant, &amp; tres-fidele
-        <lb/>ſeruiteur &amp; ſujet A. L. </p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="form">vers</term>
+					<term type="genre">lettre</term>
+					<term type="subject">Molé, Mathieu, 1584-1656</term>
+					<term type="subject">Molé, Édouard, 1609-1652</term>
+					<term type="subject">Molé, Jean, 1610?-1682</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_48" source="Moreau">
+					<p>Arrêt du parlement contre le cardinal Mazarin</p>
+					<date when="1651-03-11">1651-03-11</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-10-04" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<pb n="8"/>
+				<pb n="9"/>
+				<pb n="10"/>
+				<pb n="11"/>
+				<pb n="12"/>
+				<pb n="13"/>
+				<pb n="14"/>
+				<pb n="15"/>
+				<pb n="16"/>
+				<pb n="17"/>
+				<pb n="18"/>
+				<pb n="19"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+LETTRE
+        ENVOYEE
+        AV ROY
+        Par vn Docteur en Theologie.
+        M. DC. LI.
+        
+        3
+        LETTRE ENVOYEE
+        AV ROY, parvn Docteur
+        en Theologie
+        SIRE.
+         Vn Particulier qui met ſa gloire &amp; ſa bonné for
+        tune a eſtre né Sujet de Voſtre Majeſteé, oſe luy de
+        clarer auec vne ſinceriteé́ toute entiere, ce qu’elle
+         doit attendre de Matthieu Mole ſon premier Pre
+        ſident, qu’elle a eſleue depuis peu à la dignité de
+        Garde-des-Seaux de Fraace. Cette Charge, S R E,
+        eſtant la premiere &amp; la plus importante de voſtre
+        Eſtat, requiert ſans doute, outre la ſuffiſance de l’eſ
+        prit, vne probité exemplaire en celuy qui y eſt appel
+        lé, &amp; des mœurs tout à̀ fait incompatibles. Que ſi
+        les Roys auoient autant de lumiere pour diſcerner
+        dans les choſes de fait, ce qui eſt veritable d’auec ce
+        qui eſt faux &amp; ſuppoſé, comme nous deuons croi
+        re qu’ils ſont éclairez de Dieu dans celles de la lu
+        ſtice, pour faire difference de ce qui eſt juſte d’auec.
+        ce qui ne l’elt pas; je n’aurois garde, SrRe, d’exa
+        miner le choix qu’a fait Voſtre Majeſteé de ſon p
+        mier Preſident, pour luy mettre en depoſt les mar
+        ques de ſon Authoriteé plus ſouueraine. Mais l’ex
+        A 
+        l
+        4
+        perience nous faiſant voir que les plus grands Prin
+        ces eſlans hommes, ſont ſouuent trompez par l’er
+        reur ou la malice de leurs ſemblables, qui leur dé
+        guiſent la verité &amp; ſe la cachent à eux-meſmes: I’ay
+        eſtimeé, SRE, que Voſtre Majeſté au lieu de con
+        damner mon action de hardieſſe &amp; de temerité, re
+        ceuroit pour vn témoignage de mon aele &amp; de ma
+        fidelité à ſon ſeruice, la liberté reſpectueuſe dont j’o
+        ſe vſer enuers Elle, en luy faiſant entendre ce qui eſt
+        des mœurs &amp; conditions de ſon premier Preſident, &amp;
+        ce qu’elle pourra apprendre encore de la voix publi
+        que, ſi elle prend la peine de ſ’enenquerir.
+        Marthieu Molé, SRE, a trois qualitez remar
+        quables, ſelon leſquelles il peut eſtre conſideré de
+        Voſtre Majeſté;, Il eſt Pere, il eſt premier Preſident,
+        &amp; en qualité́ de Garde-des-Seaux de France, il eſt
+        Miniſtre d’Eſtat, &amp; a ſeance &amp; ſuffrage dans vos
+        Conſeils. La premiere qualité, il l’a de la Nature;
+        mais il eſt redeuable des deux autres à la bonte de
+        Voſtre Majeſté, &amp; à celle du ſeu Roy voſtre pere, de
+        tres glorieuſe memoire, qui l’a reueſtu de la dignité
+        de premier Preſident en ſon Parlement de Paris,
+        comme Voſtre Majeſte le vient d’honorer de celle
+        de Miniſtre d’Eſtat, &amp; de Garde-des-Seaux de Fran
+        ce. Et c’eſt, SrrREe, en la veuë de ces trois qualitez,
+        &amp; des rapports &amp; liaiſons qu’elles ont entr elles, que
+        j’oſe dire à Voſtre Majeſté́ que ſi elle daigne faire
+        tant ſoit peu de reflexon ſur l’vſage &amp; fonction des
+        deux premieres, e lle ſera plainement inſtruite de ce
+        qu’elle
+        ¬¬ 
+        qu’elle doit efperer, ou pluſtoſt de ce qu’elle doit
+        craindre de la troiſieſme, en la perſonne de Matthieu
+        Molé: Car il aſt certain, S1rE, qu’eſtant pere, la
+        Nature en cette qualité luy donne pouuoir ſurſes en
+        fans; &amp; il n’eſt pas moins veritable qu’eſtant premier
+        Preſident, Voſtre Majeſteé luy donne ſous ce tiltre,
+        Authorité́ ſur tous ſes Sujets; Comme en le faiſant
+        Miniſtre d’Eſtat &amp; ſon Garde-des-Seaux, elle luy
+        donne part aà̀ ſes Conſeils plus ſecrets, &amp; aà̀ ces deli
+        berations plus importantes. Que ſi donc il eſt vray
+        de dire que Matthieu Molé abuſant du pouuoir que
+        la Nature luy donne en qualité de pere, il fait injure
+        à ſes enfans; N’eſt-il pas auſſi veritable d’aſſeurer
+        que faiſant ſeruir à de mauuais vſages l’authoriré que
+        Voſtre Majeſté́ luy done en qualiteé de ſon premier
+        Preſident, il fait injuſtice à tous vos Sujets? Et ne
+         peut-on pas encore adjouſter auec la meſme verité́,
+        que pechant dans le Miniſtere de l’Eſtat, &amp; la Garde
+        des Secrets que Voſtre Majeſté luy confie, il trahit
+        ſon Prince &amp; l’Eſtat, &amp; deuient coupable d’vn crime
+        auſſi grand que les effets en ſont dangereux, &amp; les
+        ſuittes pernicieuſes? Et cependant, Si e, ie ne fein
+        dray point de dire à Voſtre Majeſté, que Matthieu
+        Molé ſeſt ſi mal gouuerné en la qualité de Pere &amp;
+        de premier Preſident, qu’elle n’en doit rien eſperer
+        de bon en celle de Miniſtre d’Eſtat, &amp; d’Aſſocié à
+        ſes Conſeils; Mais pluſtoſt elle doit craindre que ce
+        miſerable Pere, &amp; ce Magiſtrat tres-injuſte, ayant ſi
+        . 
+        6
+        outrageuſement abuſé de ſa puiſſance, au reſpet de
+        ſes Enfans &amp; à l’égard de vos Sujets, il n’en faſſe vn
+        auſſi mauuais vſage dans le Miniſtere de l’Eſtat, &amp;
+        l’exercice de la premiere Charge du Royaume. Car
+        ſi Voſtre Majeſté, SIRE, prend la peine d’écouter
+        la voix du Peuple ( qui eſt celle de Dieu, quand elle
+        eſt vniuerſelle &amp; vniforme, &amp; non produite par la
+        hain &amp; paſhon de quelques particuliers) elle ſç̧aura
+        d’elle que tout ce qu’vne molle indulgence, tout ce
+        qu vne complaiſance flateuſe, tout ce qu’vne paſſion
+        aueugle, &amp; vne affection idolâtre, peut produire de
+        mauuais &amp; de reprehenſible en la perſonne d’vn pe
+        re, ſe rencontre en celle de Matthieu Molé, à l’eſ
+        gard de ſes Enfans; pour leſquels, partieulierement
+        pour l’aiſné, il n’a pas ſeulement vn amour deſor
+        donne, mais furieux &amp; maniacle. Si l’affection qu’il
+        leur porte, n’eſtoit ſimplement que deſreglé́e dans
+        ſon excés, elle ſeroit peut-eſtre exeuſable, quoy que
+        touſiours ridicule, puis quelle eſt ſans fondement,
+        &amp; qu’elle n’a pour object en la perſonne de ſes en
+        fans, que des Pigmées &amp; des Auortons; qui outre
+         leurs autres difformirés, ont vne laideur hideuſe
+        dans le viſage, qui approche de celle des Monſtres.
+        Mais d’auoir pour eux vne paſſion enragée, &amp; par
+        vne ambition inſatiable, leur procurerdes honneurs
+        dont ils ſont tout à fait indignes, &amp; les y aduancer en
+        efet au grand ſcandale de l’Egliſe &amp; de l’Eſtat: C’eſt
+        ce qui ne peut proceder que d’vn fonds d’orgueil eſ
+        1 
+        froyable, &amp; d’vn amour propre, que Sainct Paul die
+        etre la racine de rous maux; qui rend Mathieu Molé
+        idolatre de ſes enfans, comme d’vn ouurage qu’il
+        eſtime ſien, quoy qu’il n’ait point ſujet de ſe glo
+        rifier d’vne ſi ſotre production, qui cloche en tous
+        ſens, &amp; qui eſt ſi deffectueuſe. Et en effect, SR;
+        à quoy pourroit-on attribuer qu’à vne preſomption
+        tres-orgueilleuſe qu’a Matthieu Moleé de luy meſme
+        &amp; detout ce qui part de luy? Ceét amour folement
+        paternel qu’il a pour ſon aiſné, qui l’auuegle &amp; l’en
+        chante iuſqu’à ce point, que de luy faire dire que ſon
+        fils de Champlatreux le rauit de ſon entretien, &amp;
+        qu’il le juge le plus habil-homme pour gouuerner,
+        &amp; le plus grand eſprit qui ſoit en France. Quel
+        charme ridicule, &amp; quelle faſcination prodigieuſe
+        produit la chair &amp; le ſang en l’ame de ce pere
+        fol &amp; enyvreé́ de ſon affection paternelle? Ie ne
+        diray rien iey, Sie, aà Voſtre Majeſté de ſon ſe
+        cond fils, pour qui il a obtenu l’Eueſché de Bayeux,
+        &amp; la Theſorerie de la ſaincte Chapelle de Paris, de
+        puis quelques anneés: Si Voſtre Majeſté conſulte les
+        pus gens de bien de ſon Royaume, ils luy diront
+         qu’ils ont gemy, de voir que ce pere infortuné a ſa
+        crifie à ſon ambition forcenée, non moins le ſalut
+        de ſon enfant, que l’honneur de l’Egliſe, qui eſt no
+        tablement intereſſeé dans cét Eueſque pitoyable;
+        Miſer &amp; Miſerabila! qui outre ſes defauts corpo
+         rels qui ſont viſibles, &amp; ſur l’infirmité de ſa com¬ 
+        plexion, mince, &amp; delicate juſqu’à l’exceés, &amp; qui le
+        met dans vne incapacite’ coõtinuelle, &amp; irremediable,
+        de prendre ſoin des affaires de ſon Dioceſe, n’a en
+        core aucune des conditions que requiert Saint Paul
+        en celuy quieſt apelleé a cette dignité ſupreme;com
+        me ſi Matthieu Molé qui fait eſtat de long-temps
+        de meſpriſer l’authorité du Saint Siege qu’iſ combat
+        par ſes eſcrits, ſe ſoucioit auſſi peu des laincts Conci
+        Ies&amp; des Ordonnances de l’Egliſe, ne s’eſtant gue
+        res mis en peine d’eſcouter la voix publique à l’eſ
+        gard de ſon fils, qui ſelon le precepre de l’Apoſtre,
+        doit eſtre fauorable à celuy qu’on deſtine à l’Ep
+        copat, moins encore de conſulrer le Canon neufieſ
+        me du Concile de Neocœſarée. Mais m’arreſtant
+        ſeulement à ce qui regarde ſon aiſne, quel mal-heur,
+        SIRE,; neſeroit-ce point pour voſtre Eſtat, ſi ce pe
+        tit fripon &amp; mutin audacieux, la proye de la fougue,
+        de la luxure &amp; de l’ambition, perdu &amp; abyſmé dans
+        les plus vilaines desbauches, venoit à eſtre pourueu
+        d’vne Charge conſidarable, ſoit dans le maniement
+        des Finances, ſoit dans l’axercice de la iuſtice, ſoit
+        dans quelque autre employ ou Commiſſion d’im¬.
+        portance? Ce mal-heureux perene peutignorer que
+        ſon fils eſt endebté d’vn million de liures, qu’il a
+         emprunté pour ſatisfaire à ſon luxe &amp; à ſa deſbauche:
+        il ſçait qu’il a par tout Paris de ſales pratiques, &amp; des
+        comrmerces tout à fait honteux. Il s’eſt veulay meſ
+        me dans le ſcandale &amp; dans l’infamie, &amp; contraint
+         de ſe 
+         9
+        de ſe déthroner, pour vſer des termes de ſon fils,
+        afin de n’eſtre point Iuge en vne affaire où̀ il s’agiſ
+        ſolt de l’intereſt d’vne Maiſtreſſe qui veut paſſer
+        pour fille, ( quoy qu’elle aye eſté vefue &amp; qui
+        met le peuple en peine de ſç̧auoir ſi elle eſt la Fem
+        me ſecrette, ou la Coneubine publique de Cham
+        platreux. Son logis eſt vn Bordel, où au veu &amp; au
+        ſceu de ſes domeſtiques, ſe retire la nuit vne autre
+        Garſe, qui vient eſſuyer les ſueurs &amp; les fatigues de
+        ſon fils. I ſçait qu’il a fauoriſe le rapt de pluſieurs
+        filles, &amp; que pour auoir trahy ſon Couſin de Nully
+        dans la reſolution qu’ils auoient priſe d’en enleuer
+        vne à ſa Mere, qui demeure aſſez proche de ſainct
+        Paul, il faillit aà perdre la vie, que ce Couſin venoit
+        pour luy oſter, l’eſpeée nuë en la main iuſques dans
+        ſa chambre, ſi vn Valet n’euſt paru au coup, &amp; n’en
+        euſt deſtourné l’atteinte. Et cependant ce meſ
+        chant fourbe, cét ambitieux, cet hypocrite, qui fait
+        eſtat de tromper les ſimples, &amp; qui abuſeroit s’il luy
+        eſtoit poſſible, de l’auctorité des Souuerains, &amp; de
+        la bonté &amp; facilité de la plus grande Reyne du mon
+        de, eſſaye par tous les mauuais artifices dont ſon eſ
+        prit eſt capable, d’eſtablir dans vne des premieres
+        Charges de la Iuſtice, celuy qui ne fit iamais raiſon à̀
+        ſes Creanciers; propoſe pour le maniement des Fi
+        nances celuy qui en eſt le diſſipateur, &amp; en vn mot
+        vante pour le gouuernement &amp; la reforme de l’E¬ 
+        10
+        ſtat, celuy dont le luxe &amp; la deſbauche y ont eauſeé
+        tant de deſordres ſcandaleux. Or cette legere idée,
+        S rRE, que ie viens de donner à Voſtre Majeſte de
+        Matthieu Molé, en qualité de pere, ſembleroit ſuf
+        ſante pour luy faire connoiſtre ce qu’elle en doit at
+        tendre en qualité de Garde des Seaux de France &amp;
+        de Miniſtre d’Eſtat; puiſque ſelon le commun ſen
+        timent des Sages, il eſt trop dangereux d’appeller
+        aux affaires publiques, celuy qui gouuerne ſi mal
+        les ſiennes propres; &amp; qu’eſtant tres-difficile que ce
+        luy qui eſt vitieux en qualité d’homme priué, ſoit
+        bon Citoyen &amp; bon Magiſtrar à l’eſgard des Loix &amp;
+        du public, il eſt tout à fait impoſſible que ceduy là
+        s’acquitte bien de ſa charge dans le Miniſtere de l’E
+        ſtat, qui a ſi mal reüſſi dans le gouuernement de ſa
+        famille &amp; la conduitte de ſes enfans, la nature ou la
+        paſſion ou inclination vicieuſe fortement enracinée
+        en elle, ſe produiſant enfin au dehors, quelque ſe
+        crette violence qu’elle ſe face au dedans, ſur tout
+        l’ambition, qui treuue touſiours dans les afſfaires pu
+        bliques desſujets propres à chatouiller &amp; irriter ſes
+        deſirs, &amp; aà exciter en elle de nouuelles pretentions
+        &amp; de plus hautes eſperances. Mais s’il plaiſt, S1 ,
+        à Voſtre Majeſté, que ie donne encore vn traict de
+        plume à Matthieu Mole, pour vous en exprimer l’i
+        mage en qualité de premier Preſident, ainſi que ie
+        le luy ay repreſenté comme pere, à l’eſgard de ſes eu¬ 
+        fans, I’eſpere qu’elle connoiſtra clairement
+         que s’il eſt deſpourueu des conditions que doir
+        auoir vn bon pere de famille, il a encore moins
+        celles que requiert l’Office d’vn luge, &amp; d’vn
+        Iuge Souuerain, &amp; qui eſt le Chef d’vne Com
+         pagnie la premiere &amp; la plus Auguſte du Ro
+        yaume. Ie ne m’arreſte pas dauantage, SIRs,
+        à faire remarquer à Voſtre Majeſté ce defaut,
+        ie dis cette moleſſe, &amp; cette affection aueugle
+        &amp; idolatre qu’a Matthieu Molé à l’eſgard de ſon
+        aiſné, qui eſt pourtant cres-conſiderable en luy,
+        en la qualité meſme de Magiſtrat &amp; de Premier
+        Preſident, eſtant vray de dire que ce fils eſt l’a
+        me de ſon pere, ou pluſtoſt le Demon qui le
+        poſſede, &amp; qui le meut &amp; le pouſſe à entrepren
+        dre, &amp; à faire tour ce qu’il veut, tou le monde
+        eſtant teſmoin que le procedé calomnieux &amp;
+        rout aà fait damnable, dont ce meſchant hom
+        me ſe ſeruit il n’y a pas long-temps, non ſeule
+        ment pour perſecuter l’innocence d’vn Conſeil
+        ler &amp; d’vn Preſident ſes Conmfreres, mais pour
+        perdre encore vn grand Prince &amp; le Coadju
+        teur de Paris, luy fut ſuggeré par cé́t eſprit per
+        nicieux, auquel le pere ſe laiſſa enfin aller, quoy
+        que preſſé des remords de ſa conſcience &amp; de la
+        crainte de ce qui en pourroit arriuer; il luy re
+        petat ces mos: Vous me perdrez Champlareux, 
+        12
+        Champlatreux, vous me perdrez Et n’eſtant pas
+        encore moins veritable, que ſi Voſtre Maje
+        té ſouffroit ce fol pere en la charge de Gar
+        de-des-Seaux &amp; de Miniſtre d’Eſtat, on pour
+        roit dire de luy ce que Themiſtocle diſoitautre
+        fois de luy meſme: Mon fils diſoit-il, a plus de
+        pouuoir qu’aucun homme qui ſoit en la Grece,
+        carles Atheniens commandent aux autres
+        Grecs, ie commande aux Atheniens;, ma mere
+        me commande, &amp; mon fils à elle. Ainſion pour
+        roit aſſeurer, SiRE, que quelque Garſe fa
+        meuſe auroit tout credit dans voſtre Eſtat, par
+        le moyen de Matthieu Molé́ enchanté de l’affe
+        Ction forcené́e qu’il a pour Champlatreux, s’il
+        demeuroit plus long- temps Prermier Preſident
+        ou Garde des Seaux de Prance. Car diroit-on,
+         Paris donne la loy aux autres villes du Royau
+        me, Matthieu Molé y a tout pouuoir en qualité
+        de Garde des Seaux, &amp; de Premier Preſident,
+        ſon fils luy commande, &amp; la G. à luy, ou quel
+        que autre putain ſemblable. Mais afin, Sine,
+        de faire mieux connoiſtre à Voſtre Majeſté l’in
+        capacité toute entiere qu’à Matthieu Moleé à
+        exercer vne charge de Magiſtraure &amp; de telle
+        importance encore, qu’eſt celle de premier Pre
+        ſident, ie luy diray que c’eſt l’homme peut-eſtre
+        de tout ſon Royaume le plus ſujet à̀ la preuen
+        tion &amp; 
+        13
+        loa &amp; preoceupatjon de l’eſprit, qualité du
+        tout contraire à l’indifference, qui eſt neceſſaire
+        ment requiſe en toutIuge pour bien s’acquitter
+        de ſon Office. C’eſt, Sir, entre pluſieurs au
+        tres, lIe plus grand defaut d’eſprit de Matthie
+        Molé, mais tellement viſible &amp; conneu de tout
+        le monde, que pour vſer icy des termes dont ſe
+        ſert ailleursvn des plus grands Peres del’Eglſe,
+        c’eſtce que chantent les Bergers ſur les monta
+        gnes &amp; les Poëtes ſur les Theatres, c’eſt ce que
+        publient les ignorans aſſemblez au coing des
+        ruës, &amp; les ſçauans dans les Bibliotheques, &amp; les
+        Docteurs dans les Eſcholes, &amp; les Euefques
+        dans les Lieux ſaints; c’eſt, dis-je, ce qui eſt en
+        la bouche de tous les hommes, c’eſt ce qui re
+        ſonne dans le Barreau &amp; dans le Louure, &amp; les
+        lieux plus publics, c’eſt ce que teſmoignent les
+        Iuges &amp; les Parties, c’eſt ce qu’ont eſprouué, &amp;
+        dont ſe plaignent les Grands &amp; les petits, qui ont
+         eu affaire à ceIuge tres inique; Et i’oſe dire en¬.
+        core à Voſtre Majefté, C’eſt ce qui a l’approba
+        tion, &amp; le commun ſentiment des Docteurs, &amp;
+        le premier d’entr’eux, &amp; le plus ſage, &amp; le plus
+        en reputation, eſtaat prié par v autre de par
+        ler à Matthieu Molé de quelqae affaire, où ſon
+        eſprit preoccupé auoit eſté out à fait contraire
+        ¬ 
+        
+        14
+         à̀ la juſtiçe de ſa cauſe, Ie n’y gagneray rien, dit
+        il, car il eſt imprimé parles autres, entendant
+        par les autres les parties de celuy qui luy parloit.
+        Ce qui eſt ellement publie, qu’il a eite dit de
+        luy il y a dos-ja quelques années.
+         Au diable ſoit le ſot víildaſe,
+        Euſ-il iuſqu’̀ l’antonoaaſe
+        Le haut don de preeaion,
+        Ou de preoccupation:
+        Que ſans paſſion ennemie,
+         Ie nore ad bon druit d’ifamie
+         En feit d’Eſtat, au moins ſelon
+        La loy propre au ſage Solon.
+        Car touſiours dangereux &amp; foarbe,
+         Vers les deux partis il ſe cour.e
+         Si fort douteux, qu’eſtans de l’eun,
+        Et puis de l’autre, il n’eſt d’aucun.
+        . Q’auſſi bies-toſt denant la Reyne,
+         Des Souuerains la Somueraine,
+        e rendray ma fay bien camas,
+        Fuſt-il evn Preſes Maximus:
+         Luy faiſanmt evoir en ſa preſence
+        . Auſſi mol enuers ſon ngeance,
+         Q’eſt oppoe à ce Faquin,
+         L’Illuſtre ennemy de Tarquin
+        
+        l 
+        1
+        1
+        Que s’il plaiſoit ehcore, Ss, à Voſtre Ma
+        jeſteé, que ie fiſſe legerement deuant-elle l’ana
+        romie de ce vice; &amp; luy en deſcouuriſſe lescau
+        ſes en la perſonne de Matthieu Molé, je luy di
+        rois que cette preocecupation d’eſprit, ou plu
+        ſtoſt cette obſtination &amp; opiniaſtreté ſansexem
+        ple, &amp; qui, ſion met à part ſes intereſts ambi
+        tieux, eſt la ſource plus vniuerſelle, d’où d’eſ
+        coule la pluſpart des injuſtices qu’il commer,
+        procede de ce meſme orgueil, qui luy faiſant
+        cherir auec vn excez monſtreux ſes enfans
+        comme ſa prouction &amp; ſon ouurage, le rend
+        encore plus idolatre de ſon propre jugement
+        qu’il eſtime eſtre plus sien, &amp; luy appartenir
+        de plus prés, &amp; que pour cela, quand il l’a vne
+        fois formeé, il ne peut ſe reſoudre à deſdire ny à
+        corriger tant ſoit peu, quelque inique d’ail
+        leurs &amp; des-caiſonnable qu’il luy paroiſſe C’et
+        de ce meſme orgueil d’où naiſt en luy la colese;
+        &amp; les paroles iniurieuſes dont il a vſé mille fois
+        enuers les parties, &amp; qu’il a profereées n’agueres
+        &amp; e priué &amp; en public contre des perſonnes Ec
+        cleſiaſtiques, &amp; des Preſtres, &amp; des Docteurs,
+        &amp; des Miniſtres de l’Euangile, &amp; d’vne naiſſan
+        ce au reſte, &amp; d’vne vertu, qui eſt bien au deſſus
+        de la ſienme; &amp; enfin, c’eſt de ce meſme fond 
+        d’orgueil, &amp; de cette vanié preſompueuſe qui
+        domine en Matthieu Molé, que part cette hu.
+        meur railleuſe ſi mal ſeante a vn grand Magi
+        ſtrat, &amp; qui luy eſt pourtant ordinaire, &amp; qui le
+        fiſt paſſer pourvn Comedien en l’eſtime de tous
+        ceux qui eurent affaire à luy ce iour vaique
+        qu’il eut les Seaux, que Voſtre Majeſte luy oſta
+        le lendemain, &amp; dont ſans doute elle le va pr
+        uer pour la ſeconde &amp; la derniere fois, ſi aupa
+        rauantil ne luy arriue vne plus mauuaiſe fortu
+        ne. Car enfin, Sire, pour finir cette lettre, &amp;
+        n’eſtre point ennayeux à Voſtre Majeſté, ie ſuis
+        obligé de luy dire, qu’il faut bien que nos pe
+        ehez ſoient grands, &amp; qu’ils ayent attiré forte
+        ment la colere de Dieu ſur nous, s’il permet
+        que Matthrieu Molé demeure tant ſoit peu de
+        temps dauantage auec charge &amp; auctorité dans
+        le public, ou que Voſtre Majeſté luy ſouffre. La
+         reſiſtance qu a apporté le Duc d’Orleans vo
+        ſtre Oncle, afin qu’il n’euſt point les Seaux, &amp;
+        la eonſtante rteſolution de ce bon &amp; fage Prince
+         à ne point ſe tcouuer auec luy dans voſtre Con
+        ſeil, eſt l’efect de la connoiſfance certaine qu’il
+        a de ſes meſchantes intentions: Ilſçait qu’l n
+        point d’autre veuë en tous ſes deſſeinas, que l’in.
+        tereſt de ſa famille &amp; l’ambition de Champla
+        ruex: 
+        1
+        treux:; Ila l’experience de ſes fourberies &amp; de ſes
+        urahiſons, qui ſeules à vray dire, &amp; ie le dis, SirE,
+        auec douleur &amp; indignation extreme, ornt mis
+        la France, &amp; l’auctorité dé Voſtre Majeſté à
+        deux doigts pres de ſa ruine: Et il eſt teſmoin
+        qu’il fiſt Iigue contre le Duc de Beaufort, le
+        meilleur, le plus ſage, &amp; le plus Genereux Prin
+        ce de voſtre Royaume, y eſtant excité́ par ſon
+        fils, qui penſoit par là acquerir tout credit au
+        pres du Prince de Condé; &amp; que depuis ayant
+        veu ce fils chaſſe de la Maiſon de ce meſme
+        Prince, comme vn coquin, &amp; menaſſé́ d’eſtri
+        uieres, il s’eſt porte à donner à̀ Voſtre Majeſté́,
+        &amp; à la Reyne voſtre Mere, des Conſeils tout à
+         fait violens, qui mettent la diuiſion dans la Fa
+         mille Royale, qui donnent tout ſujet de mau
+        uaiſe ſatisfation au Duec d’Orleans, &amp; qui jet¬.
+        tent le Prince de Condé dans vne mal-heureu
+        ſs neceſſité́ de ſe deffendre des intrigues de ce
+        Faquin, luy qui iuſqu’icy n’a eu vn bras &amp; vn
+        courage, que pour maintenir l’Eſtat &amp; voſtre
+        Couronne contre les efforts de vos Ennemis.
+        Ne permettez pas, Sr, que ce meſchant
+        homme ſoit plus lang-temps dans le pouuoit
+        de faire des injuſtices à vos ſujets, d’irriter la
+        patience &amp; le courage des Princes de voſtre
+        9
+        E 
+         18
+        Sang, &amp; d’entretenir le trouble &amp; la diuiſion
+        dans voſtre Eſtar, par ſes meſchans Conſeils
+        ſe s ſuggeſtions pernicieuſes: Que Voſtre Ma
+        jeſteé ne dffere pas d’vn ſeul iour à luy oſter
+         les Seaux, ſans que pour le peu de temps qu’il
+        les à eus, il en tire autre ad antage ſinon
+        qu’ils luy ſeelent peut eſtre l’abolition de ſes
+        crimes, qui ſeront enſeuelis auec luy dans vne
+        eſtroitte priſon, iuſqu’à̀ la fin de ſa vie; Que
+        Champlatreux ſoit foüeteé &amp; fleurdeliſé en
+        ſa preſence, &amp; qu’au meſme temps ſonſecond
+        fils, priue de ſon Eueſcheé, &amp; reſerreé́ dans la
+        ſolitude d’vn Cloiſtre pour y faire penitence,
+        prie Dieu qu’il donne la grace à ſon pere, en
+        la veü̈e de ce ſpectacle, d’imiter vn peu la
+        Vertu &amp; la ſeueriré paternelle de ce premier
+        Brutus, dont ſes mœurs ſont ſi eſlolgnées, &amp;.
+        que Voſtre Majeſte enfin. r’appelle à̀ elle ce
+        genereux Prince, qui aura bien meilleure gra
+        ce, &amp; plus de bon- heur &amp; de joye à faire
+        bruire ſes armes victorieuſes dans le milieu de
+        la Flandre, ou dans le fond de l’Allemagne,
+        aà la honte &amp; au dommage de vos Ennemis,
+        qu’a ſe fortifier contre les perſecutions de
+        Matthieu Molé, qui ſeul pour ſatis faire à ſa
+        mal-heureuſe ambitio, nous jetre dans la
+        1 
+        19
+        guerre Ciuile, auec l’extreéme regret, &amp; la dou
+        leur commune de tous vos bons’&amp; fideles ſer
+         uiteurs. Ce ſont, Sir, les ſouhaits de tous
+        vos peuples, &amp; c’eſt en particulier, le deſir
+        tres-ardent de celuy qui eſt
+        De Voſtre Majeſté,
+        é
+        Le tres-obeiſſant, &amp; tres-fidele
+        ſeruiteur &amp; ſujet A. L.			</p>
+		</body>
+	</text>
 </TEI>

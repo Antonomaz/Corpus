@@ -1,405 +1,702 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1668_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Les horribles cruautés faites dans les provinces de
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Les horribles cruautés faites dans les provinces de
           France par les gens de guerre d'Erlac et autres.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2022-10-25">25 octobre 2022</date>
-        <availability status="restricted" n="cc-by">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=ZBQD-oJBIZ8C"/>
-          <author/>
-          <title source="Moreau">Horribles (les) cruautés faites dans les provinces de France par
+					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2022-10-25">25 octobre 2022</date>
+				<availability status="restricted" n="cc-by">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=ZBQD-oJBIZ8C"/>
+					<author/>
+					<title source="Moreau">Horribles (les) cruautés faites dans les provinces de France par
             les gens de guerre d'Erlac et autres.</title>
-          <pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
-          <publisher>
-            <persName>Sans Nom</persName>
-          </publisher>
-          <date source="Moreau" when="1649">1649</date>
-          <extent>
-            <measure unit="page" quantity="11"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2996944">Lyon</settlement>
-            <institution>Bibliothèque municipale de Lyon</institution>
-            <repository/>
-            <idno type="cote">SJ IF 247/188, 29b</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
+					<publisher>
+						<persName>Sans nom</persName>
+					</publisher>
+					<date source="Moreau" when="1649">1649</date>
+					<extent>
+						<measure unit="page" quantity="11"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2996944">Lyon</settlement>
+						<institution>Bibliothèque municipale de Lyon</institution>
+						<repository/>
+						<idno type="cote">SJ IF 247/188, 29b</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>True</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">1668. Horribles (les) cruautés faites dans les provinces de France par
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">1668. Horribles (les) cruautés faites dans les provinces de France par
           les gens de guerre d'Erlac et autres. Paris, 1649, 11 pages. Édition augmentée de la
           Champagne désolée par l'armée d'Erlac. On aime à douter de l'authenticité de tous ces
           détails, tant ils sont affreux ! Cependant, l'auteur nomme les villages et les per
           SOIlIleS.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="genre">narration</term>
-          <term type="genre">relation</term>
-          <term type="subject">Cruauté</term>
-          <term type="subject">Exactions</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_20" source="Moreau">
-          <p>Voyage de Flandre</p>
-          <date when="1649-04-30">1649-04-30</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-10-25" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>AA ’bh
-        <lb/>e ea&amp; t6
-        <lb/>’é’e: : Ptep
-        <lb/>DrD r D r
-        <lb/>LESHORIBLES CRAAVTE2
-        <lb/>faites dans les Prouinces de Fran
-        <lb rend="¬" break="no"/>e, par les gens de guerres d’Er.
-        <lb/>lach &amp; autres.
-        <lb/>Q’Eſt à̀ cecoup quel’on voir l’Eſtat de
-        <lb rend="¬" break="no"/> plorable de la pauure France, a pre
-        <lb rend="¬" break="no"/>t lent delaiſfte &amp;eabandonnee de coot
-        <lb/>L le Monde, il ny a plus que deſeſpoir
-        <lb/>dans les Villes, Bourgs, &amp; Villages
-        <lb/>des Prouinces, ce n’eſt que feu, il ny a que des
-        <lb/>pleurs, des gemiſſements, des tortures des viols,
-        <lb/>des Martyres, des cruaute abominables exetcez
-        <lb/>par les gens de guerre du General Erlach &amp; a
-        <lb rend="¬" break="no"/>tres, leſquels ſont pires que des Demons, il a in
-        <lb rend="¬" break="no"/>uenteé tous les iours de nouucaux ſupplices ne ſe
-        <lb/>pouuant ſoûler du ſang des pauures habitans des
-        <lb/>villes &amp; villages, ie ne ſç̧ay par quel moyen vous
-        <lb/>les deſcrire d’autant qu’ils ſont en ſi grand nome
-        <lb/>bre, &amp; me trouuant ſaiſi d’vn grand reſſentiment,
-        <lb/>voyant qu’a preſent qu’il ny a plus de remede,
-        <lb/>l’on a beau crier perſonne ne peut eſcouter, le
-        <lb/>Diable regne a preſent dans la France, &amp; a quanti
-        <lb rend="¬" break="no"/>A i
-        <lb/>7
-        <lb/>c. <pb n="2"/>
-        <lb/>é de Commis ut érre pour cet efet, leſquels a
-        <lb rend="¬" break="no"/>ront bien toſt exacuté́ leurs deſſeins ſi nous n’auoõs
-        <lb/>recours à Dieu par nos prieres, le ſupplier de nous
-        <lb/>regarder en pité, &amp; d’enuoyer à noſtre ſecours
-        <lb/>Monſieur ſaint Michel prote cteur de la France,
-        <lb/>pour combarre tous ces Commis diabolhiques qui
-        <lb/>empeſchent le repos de noſtre bon Roy, &amp; de ſon
-        <lb/>pauure peuple, venez donc grand Guerrier du
-        <lb/>Ciel, venez protecteur de la France, nous atten
-        <lb rend="¬" break="no"/>dons voſtre ſecours auec impatience, nous prions
-        <lb/>Dieu que ee foit au -pluſtoſt, Ainſi ſoit l.
-        <lb/> ...
-        <lb/>Horribles CruauteZ faites dans la
-        <lb/>Cbampagne par les gens
-        <lb/>
-        <lb/> Erlacb.
-        <lb/>TE a r Sauoye du Bourg Tourelle proche de
-        <lb/> Rheims, s’é́ſtant retiré dans vn toità porc auec
-        <lb/>-toute ſa famille, peur de la fureur de quatre Alle
-        <lb rend="¬" break="no"/>’mans, ont demeuré trois iours dans ledit toiét ſans
-        <lb/>manger, les Alemana ſe pomenant dan laCour
-        <lb/>entenderent qu’il y auoit quelqu’vn dans le toict,
-        <lb/>mirent cirq ou ſix botte de paille allumeée aà la por
-        <lb rend="¬" break="no"/>te eſperant qu’ils ſortiroient auſſi toſt :mais es1
-        <lb/>paurs gens n’ayant pas la foree fureat eéoufes de
-        <lb/>la fumée.
-        <lb/> Dans le meſme village François d’Aubty fae
-        <lb/>Ise <pb n="3"/>
-        <lb/>liez pieds &amp; mains, vn baillon dans la bouche, la
-        <lb rend="¬" break="no"/>quelle mouruo pendanr que l’on forçoi ces deut
-        <lb/>belle filles I’nagé́e de dix ans, &amp; l’autre de trej
-        <lb/>leſquelles ſons mortes deux heures apres.
-        <lb/> Au meſme village fut artachee vne vicille fem
-        <lb rend="¬" break="no"/>me à la che minée uy brulerent laplante des pieds
-        <lb/>auec vne pelle toutre rouge, &amp; la’ nature pour luy
-        <lb/>faire dire oi elle auoit ſargem, mourut en meſ
-        <lb rend="¬" break="no"/>me temps.
-        <lb/> Dans Iedie village de Tourelle ’Egliſo a eſté
-        <lb/>pillée, beaucoup de perfonines quisy eſtoientpea
-        <lb rend="¬" break="no"/>1reées ont eſté aaſſacres, violé́es dans ladite Eſ
-        <lb/>giſe.
-        <lb/>¬ Ls vilages d’autour la Riuiere Dattigoy tôuis
-        <lb/>brlezoeaucoup de Borgois &amp; païſans orlt ſté:
-        <lb/>maryrile par ces d́mons, onmue vous pouuez
-        <lb/>voir -apres
-        <lb/>Vn nomme Darbois fut pendu dans ſa maiſon
-        <lb/>auec:toute fa famillte, lireſerue de ſas fille qui ut
-        <lb/>violée par pluſſeurAſſmians.2
-        <lb/> Auvillage de Machau, ils ont maſſacré quan
-        <lb rend="¬" break="no"/>tré de perſonnes pbjuſlé la pluaſpar des maiſons,
-        <lb/>palld l’hgliſe, vjol les fillos do ioula age de lſopo
-        <lb/>ahuict ans.!
-        <lb/>1,.7j
-        <lb/>12.
-        <lb/> Vous ſçauez que le Chaſtqau de ſainé Lamert
-        <lb/>où eſtoit Monſieûr de loyeuſe a eſté́ fort ́, pilleé,j
-        <lb/>onmaſfacr̃ltoares le perſonhes qui eſtole
-        <lb/>dadans.1A1lAM.i lp moi <pb n="4"/>
-        <lb/> Ces inal eureux Allemans pires que des Dia
-        <lb rend="¬" break="no"/>bles, cofferenr vne chevre, la mirent entre deux
-        <lb/> draps dans vn lict, &amp; enuoyerent querir le Curé
-        <lb/>pour luy faire bailler leS Sacrement à la chevre: le
-        <lb/>Curé́ reconnoiſſant la malice de ces abominables
-        <lb/>refufa e meſhe:iomps de luy bailler, ces Alle
-        <lb rend="¬" break="no"/>nans voyant qu’ise vouloit pas, le firent mourir
-        <lb/>d’vne mort que ie ’oſe vous deſcrire uant elle eſt
-        <lb/>cruelle.
-        <lb/> iinq paiſas ſe lanuas dan vn bois fuens at
-        <lb rend="¬" break="no"/>trppés parplſieurs Allemans qui n’eſftoient pas
-        <lb/>encore aſſouuis de ſang, les pericehi à vn apbre,
-        <lb/>les flrent mourir à coup de piſtolets.
-        <lb/>2 Aerois lieusde Rheims ils ont entreé́ dan lE.
-        <lb/>gliſe duvilage qu’ilsont pilleé, &amp; ont tiré quamititeé
-        <lb/>de coups de piſtolets contre l Saiacte Hoſtie aueo
-        <lb/>des blaſphemes abominables, &amp; ont fait leur or
-        <lb rend="¬" break="no"/>1
-        <lb/>dureſur lIes Aurels.
-        <lb/> Dans le mſmevillage ils entrerent danlamai
-        <lb/>ſon d’vn nommé FrançoisViuien, le trpuuant en..
-        <lb/>core dans ſon lict auec ſa femme, ils le prirent &amp;
-        <lb/>lv-hjuſlerent la plante des pleds pour luy faire
-        <lb/>eonfeſſer où eſtoit ſon argent Ce pamire homne
-        <lb/>fut tontraint de le dire, de dépit qu’ils auoiénr de.
-        <lb/>eequils n’y en auoit pas beuicoup le firent mou
-        <lb rend="¬" break="no"/>rir àa pcte feu, prironr en ſuit e ſa feame luy beuſle
-        <lb rend="¬" break="no"/>ent auſſila plate des picds paunluy falreddcoau2
-        <lb/>urir encore quelque choſe. Ne ſçeuret tireraul2 <pb n="5"/>
-        <lb/>e parale d’elle ſinor qu’elle diſoit touſours, mon
-        <lb/>Dieu ayez pitieé de moy, les barhanes voyant cola
-        <lb/>luy miren de la poudre à canon dans la nature, &amp;
-        <lb/>y murent le feu, mourut peu apres.
-        <lb/>Au meſme village, lacques Bourlon fut atta
-        <lb rend="¬" break="no"/>ché́ à vn morceau de bois pied &amp; mainas, pou luy
-        <lb/>faire deſcouutir les caches d’argent qu’il y auoit
-        <lb/>dans le village: voyant qu’il n’en ſçauoit point, le
-        <lb/>fouëtterent l’eſpace d’vn quart-d’heure, puis luy
-        <lb/>fendirent le ventre, luy arracherent le cur, le
-        <lb/>itterent à vn chien qui ne le voulur pas manger.
-        <lb/>Pluſieuts Preſtres, ont eſté dépoüilleés tdut nû̂s
-        <lb/>leur attachant des chats ſur le dos, &amp; les on foü̈e
-        <lb rend="¬" break="no"/>té iuſques à ce qu’ls furent tous eſcorchés: puis les
-        <lb/>3ttcherent à la queuë de leurs cheuaux les traiſ
-        <lb rend="¬" break="no"/>nant par levillage.
-        <lb/>Vous ſçauez qu’ils ont entré dans la Chapelle
-        <lb/>de noſtre Dame de Benoiſt le Vaux, où il ont touu
-        <lb/>pillé, &amp; ont pris l image de la Vierge &amp; l’on
-        <lb/>ouppée par moiceaux auec des haches, &amp; l’ont
-        <lb/>mis dans le feu; il ſe faiſoic quantité de mira
-        <lb rend="¬" break="no"/>cles dans ladite Chapelle.
-        <lb/>Vu ieuaelomme uachant de ſe ſauuer auec ſa
-        <lb/>femme! dans vn bois, fut aotrapé d’vni Ablans
-        <lb/>lequel luy hailla vxcoup de hache ſur la teſte qu’il
-        <lb/>luy fendi iuſques au col, il voulut forcer la feme
-        <lb/>e apres, laquelle ay ma micaſouffrir la mo el
-        <lb/>larc de miſesaahle dax coupad’eſpeos dans <pb n="6"/>
-        <lb/>a emelle, mourut diſant mon ieu patdonnes
-        <lb/>moy. mes faute.
-        <lb/>
-        <lb/>H emmen &amp; les fille de touis nge y on
-        <lb/>eſté violees, ſans y épargner autune adeams le
-        <lb/>gliſe il yfaie de plus grands maſa eres que dun
-        <lb rend="¬" break="no"/>doureleo, dauant que beucoup de pe ſn
-        <lb/>De Vretire ils y font touues ſoerent de nuſiepa
-        <lb/>ouil paſlet il bruſent our, la paanteur yea ſu
-        <lb/>grande i cauſe de la quatite deperſonmes quil ſon
-        <lb/>port, il y meure auſſi quantué de polſonme, de
-        <lb/>oifd auas qu ul nra que del’eaulnſe l ou
-        <lb/>ſe quilon lere quinrie de corps du le puri
-        <lb/>Pohe de Pareyone enme dns ne glſe qus
-        <lb/>eſoiraſeae bieornede, a eauſe de la reſie qui ani
-        <lb/>e le ſoue puedani,s leſouel pileren oi
-        <lb/>leſoe o de ſinue leſnei ol eneu npne
-        <lb/>u n uable qui rira vncoup demouſquet conure
-        <lb/>l Crueiſit &amp;u en ſuire ous les aues iiſques e.
-        <lb/>qilronoa à teree duns la Chappele l y auoi
-        <lb/>puſeun ſemoes oeſiles ls ioleren lespus
-        <lb/>le le aures les foueeret iuſqueaau mounne ſie
-        <lb/>qui auoient eſté Violees furent lud i li queue d
-        <lb rend="¬" break="no"/>lnns cbeuus nier le farlla cbppoila u ren
-        <lb/>erra Que ds u duot Le edr nlaenur leooun
-        <lb/>liſis ae irenmle u pas ton meſne, dui
-        <lb/>uonDiaomuſfre pouis vu muuuis ldinilſire qu
-        <lb/>l luilueuit deeonearualheun Ce pgent pie
-        <lb/>qudlepiables ont prt &amp; emmene quanas
-        <lb/>Dames <pb n="7"/>
-        <lb/>
-        <lb rend="¬" break="no"/>Dames de con dition, &amp; fille dans leur Camp qui
-        <lb/>ſeruent d’eſclaues a ces endiablez
-        <lb/> Il ne faut plus parler de la pauure Champagne
-        <lb/>puisque l’on n’acheue de tot ruiner, il ne reſte
-        <lb/>plus que quelques grains qui ſont ſur la terre, que
-        <lb/>ces enragez ſont manger à leurs cheuaux, Pari
-        <lb rend="¬" break="no"/>ſiens prenez garde à vous.
-        <lb/>-Dans la Picardie, ils cemmenceota tn faire au
-        <lb rend="¬" break="no"/>tant comme ils ont fait dana la Champagne il pns
-        <lb/>deſia pillé́, maſfacré́, violé́, tous les villageois ſe
-        <lb/>retirent dans les, villes principales, come Corbie,
-        <lb/>aint Quenti, Perenne, tout y eſt cyplainp de pau
-        <lb rend="¬" break="no"/>ares villageois qui ſe ſauuenr auee leurs beſtjau.
-        <lb/>ll y va tant de monde qu’ils ſont côtraints de cou
-        <lb rend="¬" break="no"/>che dans les ruës, deſſus le paué, deſſous les au
-        <lb rend="¬" break="no"/>vans, le froid y eſt ſi grand que chacun crie deſi
-        <lb/>n ſericorde iuſques aux peritsenfans, la cherté́ de
-        <lb/>Viures y. eſt bien grande, ihy meure quantité de
-        <lb/>onde de pauureté́.
-        <lb/> Dans l’Anjou &amp; pays du Maine; ie ne vous puis
-        <lb/>décrire le deégaſt qu’il sy fait,les aaſſacresdes gens
-        <lb/>de guerre, les-villageois abandonnent tour, le vol
-        <lb/>ny eſt pas eſpargné, le viole, le beulement des mai
-        <lb rend="¬" break="no"/>ſons, tout eſt en fuitrte, il y a desſeconds Allemans
-        <lb/>hien qu’ils ſoient François de nation. Choſe pi
-        <lb rend="¬" break="no"/>-oyable àvoir, il vaudroit aieur perir out dn
-        <lb/>oup que ant languir ; le raporteray vne hiſtoie
-        <lb/>en paſſant, qui, ’eſtpas moin pitoyable que les
-        <lb/>auires cy-deuant. <pb n="8"/>
-        <lb/> Vne femme nommée Deniſe Baudoüin, ſe
-        <lb/>penſant ſauuer auee ſa fille dans la ville d’Angere,
-        <lb/>comme font à preſent tous les habitans des villa
-        <lb rend="¬" break="no"/>ges, ſe trouuant entre les mais de nos deſnaturez
-        <lb/>&amp; demons deſchainez, ils prirent, cette femme
-        <lb/>luy oſtetent tout ce qu’elle auoit ſur elle, la lierent
-        <lb/>toute nuë, la foüetterent de brins d’arbres, la fille
-        <lb/>fut violée deuant ſa mere, puis en ayant fait à leur
-        <lb/>volonté la lierens à autre arbre, la foleteereat
-        <lb/>cõ̃meſa nmere;, ſuar ces entre faites paſſa parlà deurz
-        <lb/> bons Religieux, leſquels voulant appaiſer la fu.
-        <lb/>rie de ces barbares qui ne pens ſeruir quà̀-aug
-        <lb rend="¬" break="no"/>menter leur furie d’auantage qu’auparauant, ils
-        <lb/>prirent les deux Religieux lés lierent auſſi à vn a
-        <lb rend="¬" break="no"/>bre, &amp; cependant que l’on fuſtigeoit les deux Re
-        <lb rend="¬" break="no"/>igieux la mere &amp; la fille ren lirent l’eſprir, &amp; laiſ
-        <lb rend="¬" break="no"/>erent les deux Rel. gieux pour norts. le ne vouds
-        <lb/>parleray pas des tortures qu’ils enercent pour ſe
-        <lb/>faire donner de l’argent, trop h orribles à d’eſcrire,
-        <lb/> marchons à Bordeaux ò tout certe Pouinre eſt
-        <lb/>en vn deéplorable eſtaf.
-        <lb/>
-        <lb rend="¬" break="no"/>! Dans Bordeaux it y a eu quanîté d bellesE
-        <lb rend="¬" break="no"/> gliſes brulées, &amp; grand nombre d perſonnes qui
-        <lb/>nt fny leut vie tane du feu que dés flarnrmes, oû
-        <lb/>elle eſtehcoed à preſent en’gande déſluiion; e
-        <lb rend="¬" break="no"/>coee à pieſetjvodus y voye que des flammesde
-        <lb/>ſeus, des embraſemens qui eſclairentles Mohtsde
-        <lb/> les valées, vous ’yetende’que des cris des pau
-        <lb rend="¬" break="no"/>-2 <pb n="9"/>
-        <lb/>ures habitans, rant de villages bruſlez, tant de pau
-        <lb rend="¬" break="no"/>ures villageois qui abandonnent leurs biens qu’il
-        <lb/>laiſent aà̀ la protection des ſoldats, vous ne trouuez
-        <lb/>dans les chemins que des corps morts tant grands
-        <lb/>que petits, d’autres petits enfans dans les chemins,
-        <lb/>les villages d’autour de Libourne ſont tous per
-        <lb rend="¬" break="no"/>dus, c’eſt vn pays de deſolation &amp; de triſteſſe.
-        <lb/>Voila l’eſtat deplorable de la pauure France
-        <lb/>ererceée par des Tyrans qui acheuent de la perdre
-        <lb/>entierement; voila de belles exemples pour Paris
-        <lb/>qui touſioars dors, l’on a beau le pouſſer &amp; l’ad
-        <lb rend="¬" break="no"/>uereir du maalheur qui luy doit arriuer; il bouche
-        <lb/>l’oreille, &amp; ne veut pas entendre les cris &amp; cruautez
-        <lb/>des pauures Prouinces qui languiſſenL Moa Dieu,
-        <lb/>puiſque Paris eſt ſi endormy veillez pour luy, &amp; le
-        <lb/>deffen dez du malheur dont il eſt menacé: Illuſtre
-        <lb/>Parlement veillez donc, s’il vous plaiſt, pour le
-        <lb/>ſouiagement du peuple, &amp; conſiderex l’eſtat de
-        <lb rend="¬" break="no"/>plorable de toutes les Prouinces, ſpoyez le ſoula
-        <lb rend="¬" break="no"/>gement du pauure peuple languiſſant, eſt-ce pas
-        <lb/>aſſez pâtir &amp; ſouffrir pour vn homme de neaat qui
-        <lb/>vient de loing, pour vn Miniſtre ſtranger qui
-        <lb/>trouble tour l’Eſtat, qui de long-temps ne pourra
-        <lb/>eſtre en repos, qui ne cherche autre choſe que de
-        <lb/>vous faire perir &amp; toute lsa France: le prie Dieu que
-        <lb/>ſon deſſein ne puiſſe reuſſit.
-        <lb/> F I N. <pb n="10"/>
-        <lb/> Vne femme nommé́e Deniſe Baudoü̈in, ſe
-        <lb/>penſant ſauuer auee ſa fille dans la ville d’Angers,
-        <lb/>comme font à preſent tous les habitans des villa
-        <lb rend="¬" break="no"/>gés, ſe trouuant entre les mais de nos deſnaturez
-        <lb/>&amp; demons deſchainez, ils prirent, certe femme
-        <lb/>luy oſterent tout ce qu’elle auoit ſur elle, la lierent
-        <lb/>toute nuë, la foü̈etcerent de brins d’arbres, la fille
-        <lb/>fut violée deuane ſa mere, puis en ayant fait à leur
-        <lb/>volonté la lierent à autre arbre, la fouleteerent
-        <lb/>coõmeſa mere, ſur ces entre faites paſſa parlaà deux:
-        <lb/> bons Religieux, leſquels voulant appaiſer la fu
-        <lb rend="¬" break="no"/>rie de ces barbares qui ne pens ſeruir quà-aug
-        <lb rend="¬" break="no"/>menter leur furie d’auantage qu’auparauant, ils
-        <lb/>prirent let deux Religieux les lierent auſſi à vn ar
-        <lb rend="¬" break="no"/>bre, &amp; cependant que l’on fuſtigeoit les deux Re
-        <lb rend="¬" break="no"/>ligieux la mete &amp; la fille ren lirent l’eſprit, &amp; laiſ
-        <lb rend="¬" break="no"/>ſerent les deux Rel. gieux pour norts. le ne vous
-        <lb/>parleray pas des tortures qu’ils exercent pour ſe
-        <lb/>faire donner de l’argent, trop horribles à d’eſcrire,
-        <lb/>marchons à Bordeaux où tout certe Proulnre eſt
-        <lb/>en vn déplorable eſtar.
-        <lb/>! Eans Bordeaux il y a eu quantté e belles E
-        <lb rend="¬" break="no"/>gliſes brulé́es, &amp; grand noſbre de perſonnes qui
-        <lb/>ont flny leut vie tane d feu que des flarmmes, oû
-        <lb/> elle eſt ehcoe à̀ preſeat en gande dſolalon;s
-        <lb rend="¬" break="no"/>coe à pieſetjvous ny xoyez que dé flannetsde
-        <lb/>eu, des embraſemens qui eſclairentles ôohts e
-        <lb/>les vallées, vous ’yrntndez que des crîs des pa
-        <lb rend="¬" break="no"/>-(2 </p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="genre">narration</term>
+					<term type="genre">relation</term>
+					<term type="subject">Cruauté</term>
+					<term type="subject">Exactions</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_20" source="Moreau">
+					<p>Voyage de Flandre</p>
+					<date when="1649-04-30">1649-04-30</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-10-25" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<pb n="8"/>
+				<pb n="9"/>
+				<pb n="10"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+AA ’bh
+        e ea&amp; t6
+        ’é’e: : Ptep
+        DrD r D r
+        LESHORIBLES CRAAVTE2
+        faites dans les Prouinces de Fran
+        e, par les gens de guerres d’Er.
+        lach &amp; autres.
+        Q’Eſt à̀ cecoup quel’on voir l’Eſtat de
+         plorable de la pauure France, a pre
+        t lent delaiſfte &amp;eabandonnee de coot
+        L le Monde, il ny a plus que deſeſpoir
+        dans les Villes, Bourgs, &amp; Villages
+        des Prouinces, ce n’eſt que feu, il ny a que des
+        pleurs, des gemiſſements, des tortures des viols,
+        des Martyres, des cruaute abominables exetcez
+        par les gens de guerre du General Erlach &amp; a
+        tres, leſquels ſont pires que des Demons, il a in
+        uenteé tous les iours de nouucaux ſupplices ne ſe
+        pouuant ſoûler du ſang des pauures habitans des
+        villes &amp; villages, ie ne ſç̧ay par quel moyen vous
+        les deſcrire d’autant qu’ils ſont en ſi grand nome
+        bre, &amp; me trouuant ſaiſi d’vn grand reſſentiment,
+        voyant qu’a preſent qu’il ny a plus de remede,
+        l’on a beau crier perſonne ne peut eſcouter, le
+        Diable regne a preſent dans la France, &amp; a quanti
+        A i
+        7
+        c. 
+        é de Commis ut érre pour cet efet, leſquels a
+        ront bien toſt exacuté́ leurs deſſeins ſi nous n’auoõs
+        recours à Dieu par nos prieres, le ſupplier de nous
+        regarder en pité, &amp; d’enuoyer à noſtre ſecours
+        Monſieur ſaint Michel prote cteur de la France,
+        pour combarre tous ces Commis diabolhiques qui
+        empeſchent le repos de noſtre bon Roy, &amp; de ſon
+        pauure peuple, venez donc grand Guerrier du
+        Ciel, venez protecteur de la France, nous atten
+        dons voſtre ſecours auec impatience, nous prions
+        Dieu que ee foit au -pluſtoſt, Ainſi ſoit l.
+         ...
+        Horribles CruauteZ faites dans la
+        Cbampagne par les gens
+        
+         Erlacb.
+        TE a r Sauoye du Bourg Tourelle proche de
+         Rheims, s’é́ſtant retiré dans vn toità porc auec
+        -toute ſa famille, peur de la fureur de quatre Alle
+        ’mans, ont demeuré trois iours dans ledit toiét ſans
+        manger, les Alemana ſe pomenant dan laCour
+        entenderent qu’il y auoit quelqu’vn dans le toict,
+        mirent cirq ou ſix botte de paille allumeée aà la por
+        te eſperant qu’ils ſortiroient auſſi toſt :mais es1
+        paurs gens n’ayant pas la foree fureat eéoufes de
+        la fumée.
+         Dans le meſme village François d’Aubty fae
+        Ise 
+        liez pieds &amp; mains, vn baillon dans la bouche, la
+        quelle mouruo pendanr que l’on forçoi ces deut
+        belle filles I’nagé́e de dix ans, &amp; l’autre de trej
+        leſquelles ſons mortes deux heures apres.
+         Au meſme village fut artachee vne vicille fem
+        me à la che minée uy brulerent laplante des pieds
+        auec vne pelle toutre rouge, &amp; la’ nature pour luy
+        faire dire oi elle auoit ſargem, mourut en meſ
+        me temps.
+         Dans Iedie village de Tourelle ’Egliſo a eſté
+        pillée, beaucoup de perfonines quisy eſtoientpea
+        1reées ont eſté aaſſacres, violé́es dans ladite Eſ
+        giſe.
+        ¬ Ls vilages d’autour la Riuiere Dattigoy tôuis
+        brlezoeaucoup de Borgois &amp; païſans orlt ſté:
+        maryrile par ces d́mons, onmue vous pouuez
+        voir -apres
+        Vn nomme Darbois fut pendu dans ſa maiſon
+        auec:toute fa famillte, lireſerue de ſas fille qui ut
+        violée par pluſſeurAſſmians.2
+         Auvillage de Machau, ils ont maſſacré quan
+        tré de perſonnes pbjuſlé la pluaſpar des maiſons,
+        palld l’hgliſe, vjol les fillos do ioula age de lſopo
+        ahuict ans.!
+        1,.7j
+        12.
+         Vous ſçauez que le Chaſtqau de ſainé Lamert
+        où eſtoit Monſieûr de loyeuſe a eſté́ fort ́, pilleé,j
+        onmaſfacr̃ltoares le perſonhes qui eſtole
+        dadans.1A1lAM.i lp moi 
+         Ces inal eureux Allemans pires que des Dia
+        bles, cofferenr vne chevre, la mirent entre deux
+         draps dans vn lict, &amp; enuoyerent querir le Curé
+        pour luy faire bailler leS Sacrement à la chevre: le
+        Curé́ reconnoiſſant la malice de ces abominables
+        refufa e meſhe:iomps de luy bailler, ces Alle
+        nans voyant qu’ise vouloit pas, le firent mourir
+        d’vne mort que ie ’oſe vous deſcrire uant elle eſt
+        cruelle.
+         iinq paiſas ſe lanuas dan vn bois fuens at
+        trppés parplſieurs Allemans qui n’eſftoient pas
+        encore aſſouuis de ſang, les pericehi à vn apbre,
+        les flrent mourir à coup de piſtolets.
+        2 Aerois lieusde Rheims ils ont entreé́ dan lE.
+        gliſe duvilage qu’ilsont pilleé, &amp; ont tiré quamititeé
+        de coups de piſtolets contre l Saiacte Hoſtie aueo
+        des blaſphemes abominables, &amp; ont fait leur or
+        1
+        dureſur lIes Aurels.
+         Dans le mſmevillage ils entrerent danlamai
+        ſon d’vn nommé FrançoisViuien, le trpuuant en..
+        core dans ſon lict auec ſa femme, ils le prirent &amp;
+        lv-hjuſlerent la plante des pleds pour luy faire
+        eonfeſſer où eſtoit ſon argent Ce pamire homne
+        fut tontraint de le dire, de dépit qu’ils auoiénr de.
+        eequils n’y en auoit pas beuicoup le firent mou
+        rir àa pcte feu, prironr en ſuit e ſa feame luy beuſle
+        ent auſſila plate des picds paunluy falreddcoau2
+        urir encore quelque choſe. Ne ſçeuret tireraul2 
+        e parale d’elle ſinor qu’elle diſoit touſours, mon
+        Dieu ayez pitieé de moy, les barhanes voyant cola
+        luy miren de la poudre à canon dans la nature, &amp;
+        y murent le feu, mourut peu apres.
+        Au meſme village, lacques Bourlon fut atta
+        ché́ à vn morceau de bois pied &amp; mainas, pou luy
+        faire deſcouutir les caches d’argent qu’il y auoit
+        dans le village: voyant qu’il n’en ſçauoit point, le
+        fouëtterent l’eſpace d’vn quart-d’heure, puis luy
+        fendirent le ventre, luy arracherent le cur, le
+        itterent à vn chien qui ne le voulur pas manger.
+        Pluſieuts Preſtres, ont eſté dépoüilleés tdut nû̂s
+        leur attachant des chats ſur le dos, &amp; les on foü̈e
+        té iuſques à ce qu’ls furent tous eſcorchés: puis les
+        3ttcherent à la queuë de leurs cheuaux les traiſ
+        nant par levillage.
+        Vous ſçauez qu’ils ont entré dans la Chapelle
+        de noſtre Dame de Benoiſt le Vaux, où il ont touu
+        pillé, &amp; ont pris l image de la Vierge &amp; l’on
+        ouppée par moiceaux auec des haches, &amp; l’ont
+        mis dans le feu; il ſe faiſoic quantité de mira
+        cles dans ladite Chapelle.
+        Vu ieuaelomme uachant de ſe ſauuer auec ſa
+        femme! dans vn bois, fut aotrapé d’vni Ablans
+        lequel luy hailla vxcoup de hache ſur la teſte qu’il
+        luy fendi iuſques au col, il voulut forcer la feme
+        e apres, laquelle ay ma micaſouffrir la mo el
+        larc de miſesaahle dax coupad’eſpeos dans 
+        a emelle, mourut diſant mon ieu patdonnes
+        moy. mes faute.
+        
+        H emmen &amp; les fille de touis nge y on
+        eſté violees, ſans y épargner autune adeams le
+        gliſe il yfaie de plus grands maſa eres que dun
+        doureleo, dauant que beucoup de pe ſn
+        De Vretire ils y font touues ſoerent de nuſiepa
+        ouil paſlet il bruſent our, la paanteur yea ſu
+        grande i cauſe de la quatite deperſonmes quil ſon
+        port, il y meure auſſi quantué de polſonme, de
+        oifd auas qu ul nra que del’eaulnſe l ou
+        ſe quilon lere quinrie de corps du le puri
+        Pohe de Pareyone enme dns ne glſe qus
+        eſoiraſeae bieornede, a eauſe de la reſie qui ani
+        e le ſoue puedani,s leſouel pileren oi
+        leſoe o de ſinue leſnei ol eneu npne
+        u n uable qui rira vncoup demouſquet conure
+        l Crueiſit &amp;u en ſuire ous les aues iiſques e.
+        qilronoa à teree duns la Chappele l y auoi
+        puſeun ſemoes oeſiles ls ioleren lespus
+        le le aures les foueeret iuſqueaau mounne ſie
+        qui auoient eſté Violees furent lud i li queue d
+        lnns cbeuus nier le farlla cbppoila u ren
+        erra Que ds u duot Le edr nlaenur leooun
+        liſis ae irenmle u pas ton meſne, dui
+        uonDiaomuſfre pouis vu muuuis ldinilſire qu
+        l luilueuit deeonearualheun Ce pgent pie
+        qudlepiables ont prt &amp; emmene quanas
+        Dames 
+        
+        Dames de con dition, &amp; fille dans leur Camp qui
+        ſeruent d’eſclaues a ces endiablez
+         Il ne faut plus parler de la pauure Champagne
+        puisque l’on n’acheue de tot ruiner, il ne reſte
+        plus que quelques grains qui ſont ſur la terre, que
+        ces enragez ſont manger à leurs cheuaux, Pari
+        ſiens prenez garde à vous.
+        -Dans la Picardie, ils cemmenceota tn faire au
+        tant comme ils ont fait dana la Champagne il pns
+        deſia pillé́, maſfacré́, violé́, tous les villageois ſe
+        retirent dans les, villes principales, come Corbie,
+        aint Quenti, Perenne, tout y eſt cyplainp de pau
+        ares villageois qui ſe ſauuenr auee leurs beſtjau.
+        ll y va tant de monde qu’ils ſont côtraints de cou
+        che dans les ruës, deſſus le paué, deſſous les au
+        vans, le froid y eſt ſi grand que chacun crie deſi
+        n ſericorde iuſques aux peritsenfans, la cherté́ de
+        Viures y. eſt bien grande, ihy meure quantité de
+        onde de pauureté́.
+         Dans l’Anjou &amp; pays du Maine; ie ne vous puis
+        décrire le deégaſt qu’il sy fait,les aaſſacresdes gens
+        de guerre, les-villageois abandonnent tour, le vol
+        ny eſt pas eſpargné, le viole, le beulement des mai
+        ſons, tout eſt en fuitrte, il y a desſeconds Allemans
+        hien qu’ils ſoient François de nation. Choſe pi
+        -oyable àvoir, il vaudroit aieur perir out dn
+        oup que ant languir ; le raporteray vne hiſtoie
+        en paſſant, qui, ’eſtpas moin pitoyable que les
+        auires cy-deuant. 
+         Vne femme nommée Deniſe Baudoüin, ſe
+        penſant ſauuer auee ſa fille dans la ville d’Angere,
+        comme font à preſent tous les habitans des villa
+        ges, ſe trouuant entre les mais de nos deſnaturez
+        &amp; demons deſchainez, ils prirent, cette femme
+        luy oſtetent tout ce qu’elle auoit ſur elle, la lierent
+        toute nuë, la foüetterent de brins d’arbres, la fille
+        fut violée deuant ſa mere, puis en ayant fait à leur
+        volonté la lierens à autre arbre, la foleteereat
+        cõ̃meſa nmere;, ſuar ces entre faites paſſa parlà deurz
+         bons Religieux, leſquels voulant appaiſer la fu.
+        rie de ces barbares qui ne pens ſeruir quà̀-aug
+        menter leur furie d’auantage qu’auparauant, ils
+        prirent les deux Religieux lés lierent auſſi à vn a
+        bre, &amp; cependant que l’on fuſtigeoit les deux Re
+        igieux la mere &amp; la fille ren lirent l’eſprir, &amp; laiſ
+        erent les deux Rel. gieux pour norts. le ne vouds
+        parleray pas des tortures qu’ils enercent pour ſe
+        faire donner de l’argent, trop h orribles à d’eſcrire,
+         marchons à Bordeaux ò tout certe Pouinre eſt
+        en vn deéplorable eſtaf.
+        
+        ! Dans Bordeaux it y a eu quanîté d bellesE
+         gliſes brulées, &amp; grand nombre d perſonnes qui
+        nt fny leut vie tane du feu que dés flarnrmes, oû
+        elle eſtehcoed à preſent en’gande déſluiion; e
+        coee à pieſetjvodus y voye que des flammesde
+        ſeus, des embraſemens qui eſclairentles Mohtsde
+         les valées, vous ’yetende’que des cris des pau
+        -2 
+        ures habitans, rant de villages bruſlez, tant de pau
+        ures villageois qui abandonnent leurs biens qu’il
+        laiſent aà̀ la protection des ſoldats, vous ne trouuez
+        dans les chemins que des corps morts tant grands
+        que petits, d’autres petits enfans dans les chemins,
+        les villages d’autour de Libourne ſont tous per
+        dus, c’eſt vn pays de deſolation &amp; de triſteſſe.
+        Voila l’eſtat deplorable de la pauure France
+        ererceée par des Tyrans qui acheuent de la perdre
+        entierement; voila de belles exemples pour Paris
+        qui touſioars dors, l’on a beau le pouſſer &amp; l’ad
+        uereir du maalheur qui luy doit arriuer; il bouche
+        l’oreille, &amp; ne veut pas entendre les cris &amp; cruautez
+        des pauures Prouinces qui languiſſenL Moa Dieu,
+        puiſque Paris eſt ſi endormy veillez pour luy, &amp; le
+        deffen dez du malheur dont il eſt menacé: Illuſtre
+        Parlement veillez donc, s’il vous plaiſt, pour le
+        ſouiagement du peuple, &amp; conſiderex l’eſtat de
+        plorable de toutes les Prouinces, ſpoyez le ſoula
+        gement du pauure peuple languiſſant, eſt-ce pas
+        aſſez pâtir &amp; ſouffrir pour vn homme de neaat qui
+        vient de loing, pour vn Miniſtre ſtranger qui
+        trouble tour l’Eſtat, qui de long-temps ne pourra
+        eſtre en repos, qui ne cherche autre choſe que de
+        vous faire perir &amp; toute lsa France: le prie Dieu que
+        ſon deſſein ne puiſſe reuſſit.
+         F I N. 
+         Vne femme nommé́e Deniſe Baudoü̈in, ſe
+        penſant ſauuer auee ſa fille dans la ville d’Angers,
+        comme font à preſent tous les habitans des villa
+        gés, ſe trouuant entre les mais de nos deſnaturez
+        &amp; demons deſchainez, ils prirent, certe femme
+        luy oſterent tout ce qu’elle auoit ſur elle, la lierent
+        toute nuë, la foü̈etcerent de brins d’arbres, la fille
+        fut violée deuane ſa mere, puis en ayant fait à leur
+        volonté la lierent à autre arbre, la fouleteerent
+        coõmeſa mere, ſur ces entre faites paſſa parlaà deux:
+         bons Religieux, leſquels voulant appaiſer la fu
+        rie de ces barbares qui ne pens ſeruir quà-aug
+        menter leur furie d’auantage qu’auparauant, ils
+        prirent let deux Religieux les lierent auſſi à vn ar
+        bre, &amp; cependant que l’on fuſtigeoit les deux Re
+        ligieux la mete &amp; la fille ren lirent l’eſprit, &amp; laiſ
+        ſerent les deux Rel. gieux pour norts. le ne vous
+        parleray pas des tortures qu’ils exercent pour ſe
+        faire donner de l’argent, trop horribles à d’eſcrire,
+        marchons à Bordeaux où tout certe Proulnre eſt
+        en vn déplorable eſtar.
+        ! Eans Bordeaux il y a eu quantté e belles E
+        gliſes brulé́es, &amp; grand noſbre de perſonnes qui
+        ont flny leut vie tane d feu que des flarmmes, oû
+         elle eſt ehcoe à̀ preſeat en gande dſolalon;s
+        coe à pieſetjvous ny xoyez que dé flannetsde
+        eu, des embraſemens qui eſclairentles ôohts e
+        les vallées, vous ’yrntndez que des crîs des pa
+        -(2			</p>
+		</body>
+	</text>
 </TEI>

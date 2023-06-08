@@ -1,298 +1,488 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2504_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Les motifs de la tyrannie du cardinal Mazarin.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Les motifs de la tyrannie du cardinal Mazarin.</title>
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-          <persName ref="orcid:0000-0001-5815-9506" role="intern">Faure Margaux</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=SVDBjbKUrRUC"/>
-          <author/>
-          <title source="Moreau">Motifs (les) de la tyrannie du cardinal Mazarin.</title>
-          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher ref="isni:0000000109126804" xml:id="IL_CotinetArnoul.xml">
-            <persName>
-              <forename>Arnould</forename>
-              <surname>Cotinet</surname>
-            </persName>
-          </publisher>
-          <date source="Moreau" when="1649">1649</date>
-          <extent>
-            <measure quantity="7" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2996944">Lyon</settlement>
-            <institution>Bibliothèque municipale</institution>
-            <repository/>
-            <idno type="cote">Rés 311391</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+					<persName ref="orcid:0000-0001-5815-9506" role="intern">Faure Margaux</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+				<availability n="cc-by" status="restricted">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=SVDBjbKUrRUC"/>
+					<author/>
+					<title source="Moreau">Motifs (les) de la tyrannie du cardinal Mazarin.</title>
+					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+					<publisher ref="isni:0000000109126804" xml:id="IL_CotinetArnoul.xml">
+						<persName>
+							<forename>Arnould</forename>
+							<surname>Cotinet</surname>
+						</persName>
+					</publisher>
+					<date source="Moreau" when="1649">1649</date>
+					<extent>
+						<measure quantity="7" unit="page"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2996944">Lyon</settlement>
+						<institution>Bibliothèque municipale</institution>
+						<repository/>
+						<idno type="cote">Rés 311391</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>True</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">2504. Motifs (les) de la tyrannie du cardinal Mazarin. Paris, Arnould
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">2504. Motifs (les) de la tyrannie du cardinal Mazarin. Paris, Arnould
           Cottinet, 1649,7 pages.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="genre">non renseigné</term>
-          <term type="subject" ref="personnes/Mazarin.xml">Mazarin</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_28" source="Moreau">
-          <p>Avant la paix</p>
-          <date when="1649-03-01">1649-03-01</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-05-23" who="MF"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>LES MOTIFS
-        <lb/>DE LA
-        <lb/>TYRANNIE
-        <lb/>DV CARDINAL
-        <lb/>MAZARIN. <figure type="decoration"/>
-        <lb/>A PARIS,
-        <lb/>Chez ARNOULD COTINET, ruë
-        <lb/>des Carmes, au petit IESVS.
-        <lb/>M. DC. XLIX. <pb n="2"/>
-        <pb n="3"/>
-        <lb/>3
-        <lb/>LES MOTIFS DE LA TTRANNIE
-        <lb/>7
-        <lb/> epa
-        <lb rend="¬" break="no"/> du Cardinal Maarin..
-        <lb/>OMe i’ay eu conſideré la façon dont i’ay veſ
-        <lb rend="¬" break="no"/>cu, ie n’y trouue point defautes qui meritent de
-        <lb/>s’y arreſter: Et parce qu’en franco les- eſpris
-        <lb/>ſont plus ſcrupuleux qu’en Italie, ie me ſuis re
-        <lb rend="¬" break="no"/>Ea ſlu e ere ne lre nieunuenu eneoela edue
-        <lb/>dit, &amp; monſtrer qu’ayant ſuiuy la piſte de mon predeceſſeur ce
-        <lb/>grand Eſcolier de achiauel, qui tent pour maxime; que le
-        <lb/>Tran ſe deuoit introduire par la doquceur, &amp; maiutenir par la
-        <lb/>cruauté, ie ne croy poiuas auoir failly; l’ay gradc obligation à
-        <lb/>ce perſonnage, dont ihonore la memoire, parce qu’il m’a re
-        <lb rend="¬" break="no"/>conu digne de luy ſucccder par la maoutention des ſiens, dõt
-        <lb/>pas vn n’auoit aſſez d’eſprit ny de capacité pour ſc conſeruer
-        <lb/>aprcs luy ſans mon appuy: &amp; quand ie m’apprnchay dec luy, qu’il
-        <lb/>voyoit mon cmploy eſtrcà controoller ſa cuiſine, &amp; moucher
-        <lb/>des chandelles quand il jouüois, luy rendanr dcs deuoirs cõme
-        <lb/>à vne Diuinite, il iugea que i’eſtois propre à continuër ſes deſ
-        <lb rend="¬" break="no"/>cins, ne croyant pus qu’en Fr ance il y euſt perſonne à qui il
-        <lb/>e puft ſicr, tant à auſe qu’il eſtoit hay generalement de tous
-        <lb/>es François, &amp; meſmes des meſcuans à qu il donnoit cmply;
-        <lb/>Jue pource qu’il ne ugeoit pas que dans la Monarchie autre
-        <lb/>jue moy euſt voulu ſaire ce ue i’ay fait apres luy. ll eſt vray
-        <lb/>que depuis ſa mort i’ay conduit-la barque iuſques à preſeut ſi
-        <lb/>droitenent, que tout a flechy ſous moy:&amp; neuſt eſté l’cntre
-        <lb rend="¬" break="no"/>niſc que d’Emery a faise imprudemnment contre tous les Ot
-        <lb rend="¬" break="no"/>ciers dc France, ie n’aurois eſté heurté: mais il a faict ce man
-        <lb rend="¬" break="no"/>uement, à quoy ie ne puis plus remedict: Auſſs l’ay-jc chaſfe
-        <lb/>e la Cour.
-        <lb/>A <pb n="4"/>
-        <lb/>22!
-        <lb/> eee
-        <lb/>Auparauant cela, ic meſetuois des bans preceptes dupaſſé
-        <lb/>par preſcriptionstemerairos,empriſonnomens iniuſtes, ſuppl
-        <lb/>cas hontcux, boocoai ſegasi, &amp; autres inuentions tyranuiques,
-        <lb/> qui eſtoient neceſſaires pour me maintenir. I’auois acheué de
-        <lb/>ruiner les peuples &amp; les Officiers par impoſicions &amp; taxes ex
-        <lb rend="¬" break="no"/>rraordinaires, à quoy i’eſtois fort aydé par deux ou trojs mille
-        <lb/>Partiſans, gens de ncant, de ſac &amp; de chorde, abandonncz à
-        <lb/>mes eſclaues, qui teduiſoient les hommes au deſeſpoir, pa les
-        <lb/>violences qu’ils leur faiſoient. A l’eſgard de la Nobleſſe ie l’ay
-        <lb/>deſtruite par elle-meſme, enuoyant les plus grands Seigneurs,
-        <lb/>entils hommes, &amp; autres à la guerre, comme ſimples per
-        <lb rend="¬" break="no"/>ſonnes, ne cognoiſſans leur facilité, &amp; fomentant touſiourt,
-        <lb/>comme eſtant le pretexte d mon deuacier qu’il prit pour le
-        <lb/>plus ſpecieux, afin de regner lors qu’ilfit rompre le traitté qui
-        <lb/>auolt eſté ſi ſolemnellementc fait entre les deux Couronnes à
-        <lb/>Veruins, pour aueir ſubicét d’exercer toutes les ecruaucez ima
-        <lb rend="¬" break="no"/>ginables ſut les François, pour tirer l’argent du Royaune: I!
-        <lb/>s’empara de l’auctorité du defunct Roy, abuſant de ſa bonté il
-        <lb/>en eſloigna Mere &amp; Frere ll eſtablit dans les Charges de la
-        <lb/>luſice, des Finances, &amp; de la Guerrc des Chefs à ſa diſpoſition:
-        <lb/>Il mit dans les Gouuernemens dcs Prouinces, Villes, Cha
-        <lb rend="¬" break="no"/>ſteaux, Citadeles, Havres, &amp; Ports de Mer, des gens de ſa Ca
-        <lb rend="¬" break="no"/>balle, afin d’en diſooſer. Il deſtruiſit la Rochelle &amp; autres
-        <lb/>Villes qu’il croyoit luy ponuoir faire obſtaclc; Il mit les plus
-        <lb/>beſles charges de l’Eſtat dans ſa ſamille. Il ſerendt Directeur
-        <lb/>getierdl de tous les Bencficcs de France, qui ſont à la nominatiõ
-        <lb/>d Roy, pour les confertcr à ceux de ſafation. Il enuoya dans
-        <lb/>toutes les prouinces des lneendans, pour y faire regner fon
-        <lb/>non, dont l’horreurfaiſoit trembler les peuples, joignant ces
-        <lb/>Intendans des troupes deVoleuars appellez Fuzeliers, Sergens,
-        <lb/>&amp; Archers, quiruinoienr &amp; deſoloient les lieux où ils alloient
-        <lb/>pour violenter les ſubieéts du Roy. Il authoriſa hautement les
-        <lb/>Maltotiers &amp; Partiſans, par leſquels il faiſoit faire des ttahttez
-        <lb/>iniques, &amp;eremplis d’impietez; &amp; ſe faiſoit adorer cornne vn
-        <lb/>Dieu par la violeoce de quantité deFiloux, Vagabods; &amp;Bi
-        <lb rend="¬" break="no"/>gands
-        <lb/>1 <pb n="5"/>
-        <lb/>1
-        <lb/>8
-        <lb/>n
-        <lb/>3l
-        <lb/>3
-        <lb/>gands e grand nomhre qui luy ſeruoient de gardes, &amp; ſous ce
-        <lb/> nom d’Eminence, tout craignoit, &amp; rien ne luy eſtoit impo
-        <lb rend="¬" break="no"/>ſible.De maniere que ſurvnſibal exemple,i’ay formé ma façon
-        <lb/>de regnes, croyant qu’apres de ſi grandes inſtructions d’vne
-        <lb/>perſonne dont la tyrannie eſtoit tant redoutée, ie pouuois con
-        <lb rend="¬" break="no"/>tinuer ſur ſes pas.
-        <lb/>Ie pourſuiuis donc mon introduction ſur l’auantage que
-        <lb/>mon bonheur me donna d’eſtre honoré du Tiltre de l’arrain
-        <lb/>du Roy au nom de ſa Saincteté. Ce qui me dõna l’audace,apres
-        <lb/>lIe deceds du feu Roy de parler plus facilement a la lReyne dans
-        <lb/>ſa Regence, &amp; d’auoir la qualité de premier Miniſtre au lieu
-        <lb/>de l’Eueſque de Beauuais, tres-bon &amp; ſage Prelat, que ie fis
-        <lb/>eſloigner de la Cour: &amp; par mes conſeils abuſant dla picté́ &amp;
-        <lb/>bonté de la Reyne, ie fus faict dirccteur de l’éducation du Roy,
-        <lb/>&amp; diſpoſay la continuation des vollerics &amp; pilleries que fai
-        <lb rend="¬" break="no"/>ſoicnt les Partiſans dans la France, ſans qu’elle en ſç̧euſt rien;
-        <lb/>Ie confirmay les lntendans dans les Prouinces, &amp; dans vne aſ
-        <lb rend="¬" break="no"/>ſemblée qui ſe fit de quelques Partiſans auec moy chez d’E
-        <lb rend="¬" break="no"/>mery à la cheurette, apres auoir ſardanapaliſé enſemble, i’ar
-        <lb rend="¬" break="no"/>eſtay’auec eux cette façon de viure. Et pourt cét effect ie mis
-        <lb/>dans la Sur-intendance des finances d’Emery, parce que ie
-        <lb/>n’en cognoiſſois pointede plus cruel, inexorable &amp; perfide pour
-        <lb/>ayder à ma tyrannie, que luy, quieſt originaire de mon pays,
-        <lb/>&amp; que ie ſçauois qu’il pouuoit correſpondre à mes furberies
-        <lb/>&amp; meſchancetez, aà cauſe que par les ſiennes il eſchappabelles,
-        <lb/>lors qu’il eſtoit dans l’Argenterie du Roy, &amp; qu’il paſſa dans
-        <lb/>l’intendance ſous le nom de d’Emery, parce que le nom de
-        <lb/>Particelle eſtoit odieux à ſa Maieſté: Et comme ie me-voyois
-        <lb/>fermement eſtably, ie craignois le Duc de Beaufort, à cauſe de
-        <lb/>ſa naiſſance, de ſon courage, &amp; de ſon eſprit. Ie le fis arreſter
-        <lb/>iniuſtement, &amp; par l’entremiſe de l’Abbé de la Riuiere homme
-        <lb/>de neant &amp; d’argent, i’eus pour moy la faueur du ſieurDuc
-        <lb/>d’Orlecans, pour ne me point nuire en Cour. Ie donnay de
-        <lb/>l’employ au Prince de Condé aux arḿes, afin de l’o cuper,
-        <lb/>pour ne luy pas donner loiſir de me mettre mal aupres de la.
-        <lb/>Reyne. I’eſtois au ſapreéme degre de domination en France
-        <lb/>B <pb n="6"/>
-        <lb/>fans eſtre contrarié́ de perſonne; i’auois fait venir mpn ſrere
-        <lb/>que ic fis promouuoir au Cardinalat, moyennant douze mil
-        <lb rend="¬" break="no"/>lions, &amp; l’auois rendu Titulaire de l’Archeueſché d’Aix, &amp;
-        <lb/>fait Vice-roy de Catalogne, Comme auſſi i’auois fait venir
-        <lb/>mon Ncpueu &amp; mes trois Nicpces que ie faiſois traitter de
-        <lb/>Princes &amp; Princeſſes, quoy qu’enfans d’artiſans mechaniques,
-        <lb/>afin d’enfaire des alliances dans les pls grandes familles du
-        <lb/>Royaume, pour ſouſtenir &amp; continuer ma tyrannie ſous l’au
-        <lb rend="¬" break="no"/>ctorité Royale que i’ay vſurpée à la barbe de teus les François,
-        <lb/>&amp; fait paſſer plus de cent ſoixante millions en oſpeces dela les
-        <lb/>monts: Mais comme toutes choſes ſont ſubiettes à varieté, &amp;
-        <lb/>qu’il n’y a rien de pcrmanent, pendant que ie me diucrtiſſois
-        <lb/>aux bouffonncries de quantité de faquins de mon pays, que
-        <lb/>i’entretenois icy à graiſſe d’or, pour amuſer la bonté de la Rey
-        <lb rend="¬" break="no"/>nc à voir des Ballets &amp; Comedies, pour luy empeſcher d’ouyr
-        <lb/>les clameurs des Peuples qui gemiſſoient en langueur ſous la
-        <lb/>peſanteur d’vne tyrannie inſupportable, &amp; pour leſquels i’a
-        <lb rend="¬" break="no"/>uois des yeax de marbre, &amp; des oreilles d’airain: Dieu ſuſcita
-        <lb/>l’Auguſte Parlement de Paris, qui par des aſſemblées, où vray
-        <lb rend="¬" break="no"/>ſemblablement le Sainct Eſprit preſidoit, deſcouurit la cauſe
-        <lb/> des maux de la Monarchie, &amp; en meſme temps y trouua le re
-        <lb rend="¬" break="no"/>mede: d’où vint que mon aueuglement fut tel, que ie fis arre
-        <lb rend="¬" break="no"/>ſter aucuns d’eux, proſcrire les autres, &amp; les heurtay ſi hardi
-        <lb rend="¬" break="no"/>ment, quetour Paris fut eſmeu, ſe mit ſoubs les armes, me
-        <lb/>contraignir honteuſement de rendrc &amp; rappeller ceux que i’a
-        <lb rend="¬" break="no"/>uois mal traictez. Et comme ce Parlement ne faict rien que
-        <lb/>par meure deliberation &amp; bien à propos, il ne voulut rien or
-        <lb rend="¬" break="no"/>donner contre moy ſur l’Arreſt de i6r7. dans la creance qu’on
-        <lb/>auoit dãs mes promeſſes, que ie ne me meſlcrois plas de l’eſtat.
-        <lb/>Quelque temps ſe paſſa que tout eſtoit calme ſous la bonne
-        <lb/>foy d’vne Declaration faicte ſur la reformation des deſordres
-        <lb/> que i’auois continuez, laquelleeſtoit verifiée és Cours Souue
-        <lb rend="¬" break="no"/>aines, chacun croyoit viure en reposen stcendant la conclu¬.
-        <lb/>ſion dc la Paix generale que ie promettois dans peu detemps,
-        <lb/> &amp; en moy- meſme ie premeditois vne vengeance contre le Par.
-        <lb/>lement &amp; le Peuple, ie fis approcher des rouppes de diuers <pb n="7"/>
-        <lb/>4
-        <lb/>Iieux aux enuirons de Paris, &amp; parvne ſurpriſe digne de moy,;
-        <lb/>leniun enenenne en p eneoun e ne epen ie ne a
-        <lb/>des Roys, à deux heures apres minuict, i’enleue la perſonne du
-        <lb/>Roy, &amp; toute la maiſon Royale, Princes &amp; Princeſſes, ſe ren
-        <lb rend="¬" break="no"/>dirent auec moy dans Sainét Gernain en Laye, &amp; en meſme
-        <lb/>temps ie fis bloquer Paris. Ce qu’eſtant faict, le Parlement dé
-        <lb rend="¬" break="no"/>puta les gens du Roy pour venir en Cour, ie leur fis deſnicr
-        <lb/>l’audience, &amp; les fis renuoyer nuittamment, dont ieme repens
-        <lb/>bien fort, cela ayant donné ſujet au Parlement de faire iuſtice
-        <lb/>contre moy, &amp; de me declarer Perturbateur du repos public,
-        <lb/>ennemy du Roy &amp; de ſon ſtat, de faire leuer les armes contre
-        <lb/>moy. Ce quime reduit au deſeſpoir , parce que ie voy l’vnion
-        <lb/>des Parlements de France auec celuy de Paris, la conformité de
-        <lb/>toutes es Villes auec celle de Paris, &amp; que le reſſort que i’at¬
-        <lb rend="¬" break="no"/>tendoispar vneſedition que ie faiſois exciter dans la meſme
-        <lb/>Ville à faute de pain, m’a mãqué par la prudence du Parlemẽt,
-        <lb/>qui y a ſibien &amp; adroittement pourueu, que les viures n’y ont.
-        <lb/>point manqué:Il ne me reſte autre appuy que celuy du Prince
-        <lb/>deCondé, qui me teſmoigne grande affection, ayant pour mon
-        <lb/>ſubiet pis les armes contre ſon pays natal, &amp; la plus oriſſante
-        <lb/>Ville de l’Vniuers, &amp; à ſon deſauanage meſme, enquoy ie luy
-        <lb/>ſuis fort obligé: &amp;ſi Dieu l’illumine pour conſiderer ce qu’f!
-        <lb/>faict, &amp; qu’il me tourne le dos, comme i’en ay grande crainte,
-        <lb/>ie ſuis perdu.
-        <lb/>F I N. </p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="genre">non renseigné</term>
+					<term type="subject" ref="personnes/Mazarin.xml">Mazarin</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_28" source="Moreau">
+					<p>Avant la paix</p>
+					<date when="1649-03-01">1649-03-01</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-05-23" who="MF"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<figure type="decoration"/>
+LES MOTIFS
+        DE LA
+        TYRANNIE
+        DV CARDINAL
+        MAZARIN. 
+        A PARIS,
+        Chez ARNOULD COTINET, ruë
+        des Carmes, au petit IESVS.
+        M. DC. XLIX. 
+        
+        3
+        LES MOTIFS DE LA TTRANNIE
+        7
+         epa
+         du Cardinal Maarin..
+        OMe i’ay eu conſideré la façon dont i’ay veſ
+        cu, ie n’y trouue point defautes qui meritent de
+        s’y arreſter: Et parce qu’en franco les- eſpris
+        ſont plus ſcrupuleux qu’en Italie, ie me ſuis re
+        Ea ſlu e ere ne lre nieunuenu eneoela edue
+        dit, &amp; monſtrer qu’ayant ſuiuy la piſte de mon predeceſſeur ce
+        grand Eſcolier de achiauel, qui tent pour maxime; que le
+        Tran ſe deuoit introduire par la doquceur, &amp; maiutenir par la
+        cruauté, ie ne croy poiuas auoir failly; l’ay gradc obligation à
+        ce perſonnage, dont ihonore la memoire, parce qu’il m’a re
+        conu digne de luy ſucccder par la maoutention des ſiens, dõt
+        pas vn n’auoit aſſez d’eſprit ny de capacité pour ſc conſeruer
+        aprcs luy ſans mon appuy: &amp; quand ie m’apprnchay dec luy, qu’il
+        voyoit mon cmploy eſtrcà controoller ſa cuiſine, &amp; moucher
+        des chandelles quand il jouüois, luy rendanr dcs deuoirs cõme
+        à vne Diuinite, il iugea que i’eſtois propre à continuër ſes deſ
+        cins, ne croyant pus qu’en Fr ance il y euſt perſonne à qui il
+        e puft ſicr, tant à auſe qu’il eſtoit hay generalement de tous
+        es François, &amp; meſmes des meſcuans à qu il donnoit cmply;
+        Jue pource qu’il ne ugeoit pas que dans la Monarchie autre
+        jue moy euſt voulu ſaire ce ue i’ay fait apres luy. ll eſt vray
+        que depuis ſa mort i’ay conduit-la barque iuſques à preſeut ſi
+        droitenent, que tout a flechy ſous moy:&amp; neuſt eſté l’cntre
+        niſc que d’Emery a faise imprudemnment contre tous les Ot
+        ciers dc France, ie n’aurois eſté heurté: mais il a faict ce man
+        uement, à quoy ie ne puis plus remedict: Auſſs l’ay-jc chaſfe
+        e la Cour.
+        A 
+        22!
+         eee
+        Auparauant cela, ic meſetuois des bans preceptes dupaſſé
+        par preſcriptionstemerairos,empriſonnomens iniuſtes, ſuppl
+        cas hontcux, boocoai ſegasi, &amp; autres inuentions tyranuiques,
+         qui eſtoient neceſſaires pour me maintenir. I’auois acheué de
+        ruiner les peuples &amp; les Officiers par impoſicions &amp; taxes ex
+        rraordinaires, à quoy i’eſtois fort aydé par deux ou trojs mille
+        Partiſans, gens de ncant, de ſac &amp; de chorde, abandonncz à
+        mes eſclaues, qui teduiſoient les hommes au deſeſpoir, pa les
+        violences qu’ils leur faiſoient. A l’eſgard de la Nobleſſe ie l’ay
+        deſtruite par elle-meſme, enuoyant les plus grands Seigneurs,
+        entils hommes, &amp; autres à la guerre, comme ſimples per
+        ſonnes, ne cognoiſſans leur facilité, &amp; fomentant touſiourt,
+        comme eſtant le pretexte d mon deuacier qu’il prit pour le
+        plus ſpecieux, afin de regner lors qu’ilfit rompre le traitté qui
+        auolt eſté ſi ſolemnellementc fait entre les deux Couronnes à
+        Veruins, pour aueir ſubicét d’exercer toutes les ecruaucez ima
+        ginables ſut les François, pour tirer l’argent du Royaune: I!
+        s’empara de l’auctorité du defunct Roy, abuſant de ſa bonté il
+        en eſloigna Mere &amp; Frere ll eſtablit dans les Charges de la
+        luſice, des Finances, &amp; de la Guerrc des Chefs à ſa diſpoſition:
+        Il mit dans les Gouuernemens dcs Prouinces, Villes, Cha
+        ſteaux, Citadeles, Havres, &amp; Ports de Mer, des gens de ſa Ca
+        balle, afin d’en diſooſer. Il deſtruiſit la Rochelle &amp; autres
+        Villes qu’il croyoit luy ponuoir faire obſtaclc; Il mit les plus
+        beſles charges de l’Eſtat dans ſa ſamille. Il ſerendt Directeur
+        getierdl de tous les Bencficcs de France, qui ſont à la nominatiõ
+        d Roy, pour les confertcr à ceux de ſafation. Il enuoya dans
+        toutes les prouinces des lneendans, pour y faire regner fon
+        non, dont l’horreurfaiſoit trembler les peuples, joignant ces
+        Intendans des troupes deVoleuars appellez Fuzeliers, Sergens,
+        &amp; Archers, quiruinoienr &amp; deſoloient les lieux où ils alloient
+        pour violenter les ſubieéts du Roy. Il authoriſa hautement les
+        Maltotiers &amp; Partiſans, par leſquels il faiſoit faire des ttahttez
+        iniques, &amp;eremplis d’impietez; &amp; ſe faiſoit adorer cornne vn
+        Dieu par la violeoce de quantité deFiloux, Vagabods; &amp;Bi
+        gands
+        1 
+        1
+        8
+        n
+        3l
+        3
+        gands e grand nomhre qui luy ſeruoient de gardes, &amp; ſous ce
+         nom d’Eminence, tout craignoit, &amp; rien ne luy eſtoit impo
+        ſible.De maniere que ſurvnſibal exemple,i’ay formé ma façon
+        de regnes, croyant qu’apres de ſi grandes inſtructions d’vne
+        perſonne dont la tyrannie eſtoit tant redoutée, ie pouuois con
+        tinuer ſur ſes pas.
+        Ie pourſuiuis donc mon introduction ſur l’auantage que
+        mon bonheur me donna d’eſtre honoré du Tiltre de l’arrain
+        du Roy au nom de ſa Saincteté. Ce qui me dõna l’audace,apres
+        lIe deceds du feu Roy de parler plus facilement a la lReyne dans
+        ſa Regence, &amp; d’auoir la qualité de premier Miniſtre au lieu
+        de l’Eueſque de Beauuais, tres-bon &amp; ſage Prelat, que ie fis
+        eſloigner de la Cour: &amp; par mes conſeils abuſant dla picté́ &amp;
+        bonté de la Reyne, ie fus faict dirccteur de l’éducation du Roy,
+        &amp; diſpoſay la continuation des vollerics &amp; pilleries que fai
+        ſoicnt les Partiſans dans la France, ſans qu’elle en ſç̧euſt rien;
+        Ie confirmay les lntendans dans les Prouinces, &amp; dans vne aſ
+        ſemblée qui ſe fit de quelques Partiſans auec moy chez d’E
+        mery à la cheurette, apres auoir ſardanapaliſé enſemble, i’ar
+        eſtay’auec eux cette façon de viure. Et pourt cét effect ie mis
+        dans la Sur-intendance des finances d’Emery, parce que ie
+        n’en cognoiſſois pointede plus cruel, inexorable &amp; perfide pour
+        ayder à ma tyrannie, que luy, quieſt originaire de mon pays,
+        &amp; que ie ſçauois qu’il pouuoit correſpondre à mes furberies
+        &amp; meſchancetez, aà cauſe que par les ſiennes il eſchappabelles,
+        lors qu’il eſtoit dans l’Argenterie du Roy, &amp; qu’il paſſa dans
+        l’intendance ſous le nom de d’Emery, parce que le nom de
+        Particelle eſtoit odieux à ſa Maieſté: Et comme ie me-voyois
+        fermement eſtably, ie craignois le Duc de Beaufort, à cauſe de
+        ſa naiſſance, de ſon courage, &amp; de ſon eſprit. Ie le fis arreſter
+        iniuſtement, &amp; par l’entremiſe de l’Abbé de la Riuiere homme
+        de neant &amp; d’argent, i’eus pour moy la faueur du ſieurDuc
+        d’Orlecans, pour ne me point nuire en Cour. Ie donnay de
+        l’employ au Prince de Condé aux arḿes, afin de l’o cuper,
+        pour ne luy pas donner loiſir de me mettre mal aupres de la.
+        Reyne. I’eſtois au ſapreéme degre de domination en France
+        B 
+        fans eſtre contrarié́ de perſonne; i’auois fait venir mpn ſrere
+        que ic fis promouuoir au Cardinalat, moyennant douze mil
+        lions, &amp; l’auois rendu Titulaire de l’Archeueſché d’Aix, &amp;
+        fait Vice-roy de Catalogne, Comme auſſi i’auois fait venir
+        mon Ncpueu &amp; mes trois Nicpces que ie faiſois traitter de
+        Princes &amp; Princeſſes, quoy qu’enfans d’artiſans mechaniques,
+        afin d’enfaire des alliances dans les pls grandes familles du
+        Royaume, pour ſouſtenir &amp; continuer ma tyrannie ſous l’au
+        ctorité Royale que i’ay vſurpée à la barbe de teus les François,
+        &amp; fait paſſer plus de cent ſoixante millions en oſpeces dela les
+        monts: Mais comme toutes choſes ſont ſubiettes à varieté, &amp;
+        qu’il n’y a rien de pcrmanent, pendant que ie me diucrtiſſois
+        aux bouffonncries de quantité de faquins de mon pays, que
+        i’entretenois icy à graiſſe d’or, pour amuſer la bonté de la Rey
+        nc à voir des Ballets &amp; Comedies, pour luy empeſcher d’ouyr
+        les clameurs des Peuples qui gemiſſoient en langueur ſous la
+        peſanteur d’vne tyrannie inſupportable, &amp; pour leſquels i’a
+        uois des yeax de marbre, &amp; des oreilles d’airain: Dieu ſuſcita
+        l’Auguſte Parlement de Paris, qui par des aſſemblées, où vray
+        ſemblablement le Sainct Eſprit preſidoit, deſcouurit la cauſe
+         des maux de la Monarchie, &amp; en meſme temps y trouua le re
+        mede: d’où vint que mon aueuglement fut tel, que ie fis arre
+        ſter aucuns d’eux, proſcrire les autres, &amp; les heurtay ſi hardi
+        ment, quetour Paris fut eſmeu, ſe mit ſoubs les armes, me
+        contraignir honteuſement de rendrc &amp; rappeller ceux que i’a
+        uois mal traictez. Et comme ce Parlement ne faict rien que
+        par meure deliberation &amp; bien à propos, il ne voulut rien or
+        donner contre moy ſur l’Arreſt de i6r7. dans la creance qu’on
+        auoit dãs mes promeſſes, que ie ne me meſlcrois plas de l’eſtat.
+        Quelque temps ſe paſſa que tout eſtoit calme ſous la bonne
+        foy d’vne Declaration faicte ſur la reformation des deſordres
+         que i’auois continuez, laquelleeſtoit verifiée és Cours Souue
+        aines, chacun croyoit viure en reposen stcendant la conclu¬.
+        ſion dc la Paix generale que ie promettois dans peu detemps,
+         &amp; en moy- meſme ie premeditois vne vengeance contre le Par.
+        lement &amp; le Peuple, ie fis approcher des rouppes de diuers 
+        4
+        Iieux aux enuirons de Paris, &amp; parvne ſurpriſe digne de moy,;
+        leniun enenenne en p eneoun e ne epen ie ne a
+        des Roys, à deux heures apres minuict, i’enleue la perſonne du
+        Roy, &amp; toute la maiſon Royale, Princes &amp; Princeſſes, ſe ren
+        dirent auec moy dans Sainét Gernain en Laye, &amp; en meſme
+        temps ie fis bloquer Paris. Ce qu’eſtant faict, le Parlement dé
+        puta les gens du Roy pour venir en Cour, ie leur fis deſnicr
+        l’audience, &amp; les fis renuoyer nuittamment, dont ieme repens
+        bien fort, cela ayant donné ſujet au Parlement de faire iuſtice
+        contre moy, &amp; de me declarer Perturbateur du repos public,
+        ennemy du Roy &amp; de ſon ſtat, de faire leuer les armes contre
+        moy. Ce quime reduit au deſeſpoir , parce que ie voy l’vnion
+        des Parlements de France auec celuy de Paris, la conformité de
+        toutes es Villes auec celle de Paris, &amp; que le reſſort que i’at¬
+        tendoispar vneſedition que ie faiſois exciter dans la meſme
+        Ville à faute de pain, m’a mãqué par la prudence du Parlemẽt,
+        qui y a ſibien &amp; adroittement pourueu, que les viures n’y ont.
+        point manqué:Il ne me reſte autre appuy que celuy du Prince
+        deCondé, qui me teſmoigne grande affection, ayant pour mon
+        ſubiet pis les armes contre ſon pays natal, &amp; la plus oriſſante
+        Ville de l’Vniuers, &amp; à ſon deſauanage meſme, enquoy ie luy
+        ſuis fort obligé: &amp;ſi Dieu l’illumine pour conſiderer ce qu’f!
+        faict, &amp; qu’il me tourne le dos, comme i’en ay grande crainte,
+        ie ſuis perdu.
+        F I N.			</p>
+		</body>
+	</text>
 </TEI>

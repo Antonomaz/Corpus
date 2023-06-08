@@ -1,715 +1,1331 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3284_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Remercîment fait au roi par madame la Princesse sur la
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Remercîment fait au roi par madame la Princesse sur la
           délivrance de messieurs les princes.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=3HvzqgV5pTEC"/>
-          <author/>
-          <title source="Moreau">Remercîment fait au roi par madame la Princesse sur la délivrance
+					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+				<availability n="cc-by" status="restricted">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=3HvzqgV5pTEC"/>
+					<author/>
+					<title source="Moreau">Remercîment fait au roi par madame la Princesse sur la délivrance
             de messieurs les princes.</title>
-          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>
-            <persName>Sans Nom</persName>
-          </publisher>
-          <date source="Moreau" when="1651">1651</date>
-          <extent>
-            <measure quantity="19" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2996944">Lyon</settlement>
-            <institution>Bibliothèque municipale</institution>
-            <repository/>
-            <idno type="cote">310611</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>True</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+					<publisher>
+						<persName>Sans nom</persName>
+					</publisher>
+					<date source="Moreau" when="1651">1651</date>
+					<extent>
+						<measure quantity="19" unit="page"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2996944">Lyon</settlement>
+						<institution>Bibliothèque municipale</institution>
+						<repository/>
+						<idno type="cote">310611</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>True</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">3284. Remercîment fait au roi par madame la Princesse sur la délivrance
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">3284. Remercîment fait au roi par madame la Princesse sur la délivrance
           de messieurs les princes. Paris, 1651 , 19 pages. « J'ai vu, j'ai vaincu , disoit
           Alexandre ! »</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="genre">discours adressé</term>
-          <term type="genre">rhétorique épidictique</term>
-          <term type="genre">remerciement</term>
-          <term type="subject" ref="histoire/emprisonnement_des_Princes.xml">Emprisonnement des
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="genre">discours adressé</term>
+					<term type="genre">rhétorique épidictique</term>
+					<term type="genre">remerciement</term>
+					<term type="subject" ref="histoire/emprisonnement_des_Princes.xml">Emprisonnement des
             Princes</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_45" source="Moreau">
-          <p>Mise en liberté des princes</p>
-          <date when="1651-02-13">1651-02-13</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-07-15" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>REMERCIMENT
-        <lb/>FAIT
-        <lb/>AV ROY
-        <lb/>PAR MADAME
-        <lb/>LA
-        <lb/>PRINCESSE
-        <lb/>SVR LA
-        <lb/>DELIVRANCE DE MESSIEVRS
-        <lb/>les Princes.
-        <lb/>A PARIS,
-        <lb/>M. DC. LI. <pb n="2"/>
-        <pb n="3"/>
-        <lb/>3
-        <lb/>REMERCIMENT FAIT
-        <lb/>au Roy au nom de route la Frã
-        <lb rend="¬" break="no"/>ce par Madame la Princeſle ſur
-        <lb/>la deliurance de Meſſieurs les
-        <lb/>Princes.
-        <lb/>Anaxarchus, voulant conſoler Alexandrele
-        <lb/>Graad, du rege qu’ilauoir, d’aoir ue ClirusfomFa,
-        <lb/>ory, lay ditque Theaas &amp;e Dite eſtoient ouſiours
-        <lb/>aſfiſes aux eoſtez de lupter, voulant direpar rcette
-        <lb/>Miſtagogie que le Pinei ne deuoit tamais rienfaire
-        <lb/>qu’auc ſutice,&amp; qu’il denoit uauſioursauoir les lLoix
-        <lb/>deuant ſo yeaux pou reglerſespaſſoub a&amp;e pou le
-        <lb/>reduitcoutinuiellenleatdansvne menieilleuleobeiſ
-        <lb rend="¬" break="no"/>ſance. Ouylctrtes, SE,ſi ls tinoe veut reuſſitpa
-        <lb rend="¬" break="no"/>faitement bien ea toutes ſes enrepriſcs, &amp;s’il yeut at
-        <lb rend="¬" break="no"/>tirer les bonelitbions.de ius&amp; les loüangs deſes
-        <lb/>peuple ſun fa peſanne, il faut quliſe dodlaite la guer
-        <lb rend="¬" break="no"/>neà oy nae, qu’il énaploye oſtes ſes forces à
-        <lb/>faire regner la raiſon auſſi abſolue dans ſon eſpri
-        <lb/>que laiuſtice dans ſon ame. Etfinallemenr il faut qu’il
-        <lb/>lirmteſapuiſſanca par la loy Diume, &amp; parla loy Na
-        <lb rend="¬" break="no"/>urele imprimée. dans leé oœar de ous les hommes,
-        <lb/>puis que tcoute ſum auhoriré ́ rire ſa furce que le
-        <lb/>es deux illuſtres Eedagagues de la vieh maine, &amp;
-        <lb/>ueſe maintient que par l’inuiolable obſeruance de la <pb n="4"/>
-        <lb/>Iuſtice: Autremen quand il e’en eſcarte, Dieu luy en
-        <lb rend="¬" break="no"/>uoie mil leſortes d’afſi&amp;ions, &amp; le liure à la fin ente
-        <lb/>les mains deſe aduerſairs, me fite apo
-        <lb rend="¬" break="no"/>ſonne de Saul &amp; de pluſieurs àtreé Maitanr’n
-        <lb/>n’eſt point de ſibiet qua? e, ſoildsEgé ôdite que
-        <lb/>tout ce que le Price fat, eſt iuſte, afin de.ſe teirroui
-        <lb rend="¬" break="no"/>iours dans les termes de l’obeiſſnce qul luy eſt deuë.
-        <lb/>veu qui il n’eſt pas obligédo rale tuthd a ploin
-        <lb rend="¬" break="no"/>dre de ſes actions, q’à celuy qui la fait ce q’i eſt,
-        <lb/>ainſi qu’il eſt porté par les Deerets d’vn’Souberain, à
-        <lb/>qui il faut adiouſter vne inuiolable foy, ſur peine de
-        <lb/>panition eternelle. C’eſt vn crime de leze aieté
-        <lb/>bien grand, que d’en conceuoir ene mauuaiſe opiai;
-        <lb/>comme dit fort bien Nazarius en ſon Panpgy rique dé
-        <lb/>Conſtantin: Ceſt vne temerité bien rtminel le. quo
-        <lb/>d’interpreter ſes deſſeins en mauuaiſe part: &amp; c’eſt
-        <lb/>eſtre bien pniſſable que detroiuuor à redireà ſa gou
-        <lb rend="¬" break="no"/>uenomenx,veu qu’ilneft rienqui np fsisſctéSape
-        <lb/>ſonneeſt ſacde: ſa Mieté eſtſaréeſon oadſeil ot
-        <lb/>facréſes volontez ſnntſarréesi: ſes Edéts ſan ſare:
-        <lb/>ſon Domaine eſt ſaeé: ſes Images font-facres. Erte
-        <lb rend="¬" break="no"/>antnoins il arriue d’ocdinaide qup de petiteogeansfe
-        <lb/>doane plos de laconçe de palss dosaffairs plbdiqres,
-        <lb/>que ceux qui ſone erpuuolr dte leas teſiderteait
-        <lb/>à radire aux actions du oy lepliqueat ſes Edrûsd
-        <lb/>ſes Declaratlons à leur vloné,&amp; oudtoient quelt
-        <lb/>Conſeil ne decidat uxnaisienqifut pallé adrlauas
-        <lb/>cenſure.. Et bierrſouupn il e nauequ aos gns là
-        <lb/>ne ſont pas ſeulement dapables dexegarlea aiſo
-        <lb/>ny de reformor leur conduaiet....
-        <lb/>Ce qui n’arriua que trop liencieaſenatnt lodsqus
-        <lb/>voſtre Mhieſté fit airiéter Meſfiqurs les Peiuces :car
-        <lb/>il faut aduouerque e EEunopeaefsq pas uinr
-        <lb/>eſtonnée de cet. arreſt inopineé, que ſi txasſes pouples
-        <lb/>euſſent eſté frappez d’vn coupdotoaaere. Quelqu
-        <lb/> vV <pb n="5"/>
-        <lb/> ns diſoient qu’ils s’eſtoient grandement oubliez, &amp;
-        <lb/>que Monſieur le Prince ne cherchoit que les moyens
-        <lb rend="¬" break="no"/> d’afoiblir l authoritc Royale, par le nombre infiny
-        <lb/>des biens fairs qu’il tachoit d’auoir de voſtre Maieĺ.
-        <lb/>Quelques autres diſoient que cetoit parce qu’il par
-        <lb rend="¬" break="no"/> loit trop hautement, &amp; qu’il menaçoit de mal-traiter
-        <lb/>quantité de perſonnes tres releué́es. Dautres dſoient
-        <lb/> que ceſtoit vn coup du Ciel. Et ceux qui penetroient
-        <lb rend="¬" break="no"/>plus aunt dans la veriteé des choſes. diſoient que c’e
-        <lb rend="¬" break="no"/>ſtoit par ce qu’il s’eſtoit rendu redo tble au ardi
-        <lb rend="¬" break="no"/>nal Mazarin, &amp; qu’il l’empeſehoit de gouuerner les
-        <lb/> affaires à l’a mode. En vn mot, hacun en parl it ſe lon
-        <lb/>ſa paſſion, &amp; ſelon la portée de ſa ſurfi.anc,ſans cõ̃
-        <lb rend="¬" break="no"/> ſiderer que voſtre Maieſté n’eſt pas moins Souueraine
-        <lb/> dans ſes Eſlars, que l’intelligence dont porle Auince
-        <lb rend="¬" break="no"/>ne, dans le leu ou elle reſide: puis qu’elle ne doit ia
-        <lb rend="¬" break="no"/> mais rendre compe de ſes actiõs qu’aà̀ la premiere qui
-        <lb/>la eſtablie: &amp; ſans ſç̧auoit auſſi que ce qui a eſté vne
-        <lb/> fois propoſé &amp; reſolu au Conteil de voſtre Maieſté,
-        <lb/>ne peut m ne ſcçaurot eſtre blaſmé de qui que ce ſoit,
-        <lb/>ſans prononcer vn Arreſt de mort contre loy meſme.
-        <lb/>Vos decrets, SIRE, ſont des reſolutions celeſtes &amp;
-        <lb/>myſterieuſes: vos doliberanions ſont des Euripes flu
-        <lb rend="¬" break="no"/> ans &amp; refluans, ſans que perſonne du monde en puiſſe
-        <lb/>connoiſtre la cauſe: voſtre Monarchie eſt vne mac
-        <lb rend="¬" break="no"/>ne dans laquelle ſe ioüent imperceptiblement tous
-        <lb/> les reſſors de la ſageſſe humaneſans que le peple y
-        <lb/>puiſle rien comprendre. Quand Numa fit baſtir ſou
-        <lb rend="¬" break="no"/>terre vn Temple fort tenebreux, dedié au Conſel de
-        <lb/>omulus, il vouloit enſeigner par laà, que come les Rois
-        <lb/>ne peuuent pas atteindre au Conſeil des Dieux, que les
-        <lb/>. Subiets ne peuuent pas pareillement auſſt penetrer dãs
-        <lb/>les ſecrets de leur Prince, Mais comme il eſt quelque
-        <lb rend="¬" break="no"/>fois neceſſaire que les parties les plus nobles d’vn
-        <lb/>corps. quoy que fort ſaines, ſoufſrent le s vio lens ef
-        <lb rend="¬" break="no"/> fſorts dé la Medecine qu’il a priſe pour le remetre en
-        <lb/>B <pb n="6"/>
-        <lb/>6
-        <lb/>ſa premiere ſant́, il eſt pareillement auſſi quelquefois
-        <lb/>neceſſa tes q e les plus grands d’vn Eſtat ſouff ent
-        <lb/>quelque chole pour le reſtablir, ou pour le rendre plus
-        <lb/>loriſant qu il ne ſouloit eſtre,
-        <lb/>Mas ce qi a le p!us eſtoõné rtous vosſubiets, SIRE,
-        <lb/> cça eſté de l’auoir veu transferer de Chaſteau de Vin
-        <lb rend="¬" break="no"/>cennes au Haure de Grace, par le Cardinal Mazarin:
-        <lb/>Car de l’auoir veu quelque temps dans le meſme Bois
-        <lb/>de Vincennes par ordre de voſtre Maieſteé, cela eſtoit
-        <lb/>hors detonnement, quoy qu on ſçeu bien que cette
-        <lb/> capture s eſtoit fait contre voſtre volonté pour plaire
-        <lb/>à celuy qui abuſant de voſtre nom, tranchoit du Sou
-        <lb rend="¬" break="no"/>uerain pour S’aſſuiettir tous les plus grands de voſtre
-        <lb/>Eſtat, &amp; pour tyranniſer vnuerlellement tous vos
-        <lb/>peuples. Mais apres auoir ieté les yeux de voſtre bon
-        <lb rend="¬" break="no"/>té ſur ſon innocence, pour euirer les deſordres que ſa
-        <lb/>detention cauſoit àtout cet Eſtat, &amp; pout luy rendre
-        <lb/>vne par faite iuſtice, il à pleu à voſtre Maieſté de le de
-        <lb rend="¬" break="no"/> liurer des priſons où ſes ennemis le tenoient capif &amp;
-        <lb/> de luy donner ſa premiere liberté ſi apprehendee de
-        <lb/>l eſtranger, &amp; ſi deſiree de tous vos peuples.
-        <lb/>Receuez donc, Sl R E, ce tres-humble remerci
-        <lb rend="¬" break="no"/>ment que ie vous offre de tout mon cœur. au nom de
-        <lb/>route la France, dauoir remis en vn temps ſi oppor
-        <lb rend="¬" break="no"/>tun, vne parte de voſtre ſang en liberté, qi genereu
-        <lb rend="¬" break="no"/>ſement touché de reconnoiſtre vn bien fait de cette
-        <lb/>importane, ne cherchera iamasis que les oecaſions de
-        <lb/>l’eſpancher pour vous: afin de vous rendte le plus glo
-        <lb rend="¬" break="no"/>rieuy Monarque de la terre. Vous vous pouuez bien
-        <lb/>aſſenrer que par cette deliurance vous auez coupé la
-        <lb/>racine a toutes les ligues &amp; aà toutes les factions qu ſe
-        <lb/>pouuoent ttramer dans le Royaume, ſous pretexte
-        <lb/> d vne plus longue detention de leur perſonne. Cas
-        <lb/>quand on nous donnoit des eſperances d vne paix de
-        <lb/>longue durée, ceux quls entendoer quelque peu aux <pb n="7"/>
-        <lb/>aaires, &amp; qui auoit la faculté́ de lire dans les choſes
-        <lb/>à venir, eſtimoient qu’elle eltoit impoſſible lans la de
-        <lb rend="¬" break="no"/>liura ce de Meſſieurs les Princes. Quand on diſoit
-        <lb/> que voſtre Maeſté nous auoit eſté donnée de Dieu en
-        <lb/>nos plus grandes neceſſitez, &amp; lors qu on y ſongeoit
-        <lb/>le moins, pour metre l Eſtat en la plus grande ſplen
-        <lb rend="¬" break="no"/>deur, pour vaincre tous ces ennecmis, &amp; pour ſaire a
-        <lb rend="¬" break="no"/>dorer leſus-Chrſt par toute la tcrre habitable, on di
-        <lb rend="¬" break="no"/>ſoit que tout cela eſtoit fort viſible: mais que pour y
-        <lb/>r euſſir heureuſement, il faloit que Monſieur le Prince
-        <lb/>fut de la partie, afin de ſurmonter auec plus de facili
-        <lb rend="¬" break="no"/>té tout ce qui ſe voudroit oppoſer à de ſi glorieuſes &amp;
-        <lb/>ſi famtes entrepriſes. Ouy, Sl RE, vous pouuez atten
-        <lb rend="¬" break="no"/>dre de luy, ce que les Grecs attendoient auec tant de
-        <lb/>paſſion des deſſendans d’Hercule, qui ſont des Mira
-        <lb rend="¬" break="no"/>culeux exploits, meſlez de Cõſel &amp; de Sageſſe. Ouy,
-        <lb/>SIRE, Voſtre Maieſteé ſe peut aſſeurer d’auoir de
-        <lb rend="¬" break="no"/>ſormais auprés d’elle vn Prince tres zel lé pour la Re
-        <lb rend="¬" break="no"/>ligion Cathohque, Apoſtohque &amp; Romaine: &amp; tres.
-        <lb/>affectionné, &amp; ſaintement paſſionné pour voſtre ſer
-        <lb rend="¬" break="no"/>uice. Bruſlant de deſir deimaintenir ſous l’authorité de
-        <lb/>voſtre nom, la grandeur de voſtre Maieſté, le bien pu
-        <lb rend="¬" break="no"/>blic, la gloire de l’Eſtat &amp; de preuenir tous les deſſeins
-        <lb/>des ennemis de cette Couronne. Ouy, S I RE, Voſtre
-        <lb/> Maieſté ſe peut bien aſſeurer d’entendre dſormals
-        <lb/>opiner en voſtre Conſel, vn Prince ſtlé aux grandes
-        <lb/> affaires, prompt à les conccuoir, vif à les compren
-        <lb rend="¬" break="no"/>dre, meur à les digerer, &amp; courageux à les executer,
-        <lb/>ſelon le commandement qu’il vous aura pleu de luy
-        <lb/>en faire, ainſi que l’ont fort bien temarque ceux qui ſe
-        <lb/> ſont ſeruis de voſtre nom de voſtre authorité pour
-        <lb/>ſa detention, en la Lettre qu’ils ont enuoyée au Parle
-        <lb rend="¬" break="no"/> ment de Paris, le vingtieſme lanuier, de l’année mil
-        <lb/>x cens cinquante. <pb n="8"/>
-        <lb/>28
-        <lb/> ia verite diſent-ils, quand il a falu deliberer ſur
-        <lb/> i’arreſt d vn Prince du Sang grandement eſtimable
-        <lb/> poœur beaucoup de hautes qualitez qu’il-poſſede;
-        <lb/>d’vn Prince quia remporté pluſieures Victoires ſur
-        <lb/> les ennemis de et Eſtat, où̀ il a ſignalé́ ſon coura
-        <lb rend="¬" break="no"/> ge, &amp; quis’eſt acquis vne haute reputation par les
-        <lb/> exploits. de uere qu’on luy a confiez, eſtant en
-        <lb/> éſtar de vedre d grands ſeruices à cette Couron
-        <lb rend="¬" break="no"/> ne, par ſes ouſei &amp; parſes actions, en des temps
-        <lb/> dlfficilies cemroe ſont ordinairement ceux d’vne
-        <lb/> Minortré ſi Iongue que celle de noſtre Monaque.
-        <lb/> Ne viì-t’ pos SR E, de beaux Eloges en faueur
-        <lb/> dnie, pour la liberteé duquel ie vous rends ces
-        <lb/> actious de graces. Certes voſtre Majeſté ne les doit
-        <lb/> pas auoir pout ſuſpectes, puis qu’ils partent de la
-        <lb/>i bolele de ſe propres ennemis, &amp; de ceux qui n’oat
-        <lb/>i iamais trauaillé qu’à ſa perte. Vous voyez bien par
-        <lb/> la, SIRE, ſi ie dis vray, &amp; comme la veriteé eſt d’vne
-        <lb/> nature à ne pouuoir iamais eſtre cacheé́e, non plus
-        <lb/> que la preſence de celuy qui ſe fait voir à̀ roures les
-        <lb/>. choſes crées.
-        <lb/> Enfin, SIRE, c’eſt vn Prince de l’aduis duquel
-        <lb/> voſtre Majeſté ſe peut vrilement ſeruir, pour prati
-        <lb rend="¬" break="no"/> quer encore auec plus d’adreſſe la ſcience de bien
-        <lb/>Regner, que Socrate &amp; Xenophon appellent. la
-        <lb/> ſcience des Rois &amp; des Princes. Polybe diſoit que
-        <lb/> la muſique eſtoit neceſſaireaux Arcadiens pour les
-        <lb/> diuertir, à cauſe que le pays eſt montagneux &amp; -de
-        <lb rend="¬" break="no"/> ſagreable: mais cela ſe peut bien dire à meilleur ti
-        <lb rend="¬" break="no"/>tre de la Politiquie, veu qu’elle n’eſt pas moins ne
-        <lb rend="¬" break="no"/> ceſſaire aux Rois, qu’elle eſt agreable au reſte des
-        <lb/> homnes.
-        <lb/> Veritablement elle leur eſt ſi neceſſaire, SIRE,
-        <lb/> qu’ils ne ſçauroient iamais regner que par emprunt
-        <lb/>ſans ſon entremiſe. Et quand Socrate dit, que Dieu
-        <lb/>faie <pb n="9"/>
-        <lb/>9
-        <lb/>fait beaucoup de graces aux hommes, de leur faire
-        <lb/>apprehender les bonnes maximes ſur la fin de leurs
-        <lb/>iours, il a dit vne ſentence tres veritable au regard
-        <lb/>de ceux qui veulent mourir dans leur pccheé: mais
-        <lb/>non pas au regard de ceux qui veûlent preuenir de
-        <lb/>bonne heure aux inconueniens-de leurs Eſtats,
-        <lb/>pour en euiter le precipice.
-        <lb/>Ce Prince, SIRE, a toures les qualitez d’vn hom
-        <lb rend="¬" break="no"/>me propre à bien conſeiller &amp; à bien conduire vne
-        <lb/>affaire, quoy qu’il ne ſoit pas des plus àgez du mon.
-        <lb/>de. Et quand voſtre Maieſteé l’entendra opiner aux
-        <lb/> choſes d’importance, elle benira l’heure de l’auoir
-        <lb/>-mis en liberté, &amp; de l’auoir appelleé́ aupres de vo
-        <lb rend="¬" break="no"/>ſtre perſonne. Les occaſions où il s’eſt trouué́, &amp; les
-        <lb/>reuolutions d’affaires qui ſe ſont paſſces depuis qu’il
-        <lb/>a l’honneur de porter les armes pour voſtre ſeruice,
-        <lb/>l’ont rendu capable de tout oſer, &amp; de tout entre
-        <lb rend="¬" break="no"/>prendre pour le bien de cette Monarchie. Outrc
-        <lb/>que treize ou quatorze mois de loiſir qu’il a eu ̀
-        <lb/>bien approfondir les Maximes d’Eſtat dans ſa de
-        <lb rend="¬" break="no"/>tention, ne luy ont pas mal appris ſon deuoir, auſſi
-        <lb/>bien enuers Dieu que vers les hommes. C eſt pour
-        <lb rend="¬" break="no"/>quoy voſtre Majeſté ne luy entendra plus proferer
-        <lb/>que des paroles de pieté, ny que des ſentences de
-        <lb/>Polieique.
-        <lb/> Les Princes du Sang, SIRE, ſont à voſtre Ma
-        <lb rend="¬" break="no"/>jeſté, ce que l’ombre eſt au corps, ce que l’image eſt
-        <lb/>à la choſe repreſenteée, ce que le rayon du Soleil
-        <lb/>eſt à ce bel Aſtre du iour, ce que le poinct eſt à̀ l
-        <lb/>ligne, &amp; ce que le cercle eſt à la Sphere: car comme
-        <lb/>ombre ils les doiuent ſuiure, comme images ils les
-        <lb/>doiuent repreſenter, comme rayons du Soleil ils en
-        <lb/>doiuent é́maner pour éclairer au reſte des hommes,
-        <lb/>comme poincts ils en doiuent reſulter, &amp; comme
-        <lb/>cercles ils ſuiuent ou bien ils doiuentſuiure ſes reuo¬ <pb n="10"/>
-        <lb/>
-        <lb rend="¬" break="no"/>10
-        <lb/>lations de quelque narure quelles puiſſent eſtre:
-        <lb/>Bref ils ſont à̀ lEſtat, au dire de Tacite, ce que
-        <lb/>Druſus &amp; Neron eſtoient en la maiſon des Ceſars,
-        <lb/>où ils ſeruoient de baſecs &amp; de colomnes. Oüuy veri
-        <lb rend="¬" break="no"/>rablement, Sl RE, ils ſont rellement neceſſaires à
-        <lb/>la France quelle reçoit vn norabledommage de
-        <lb/>leurs aduerſite, &amp; vn inſigne bon-heur de leur pro
-        <lb rend="¬" break="no"/>ſperité &amp; de leur deliurance.
-        <lb/>Ie ne véux pas dire, S IR E, que voſtre authori
-        <lb rend="¬" break="no"/>té depende aucunemene d’eux, à Dieu ne plaiſe:
-        <lb/>mais ie veux dire que voſtre Majeſté a bien plus d’e
-        <lb/>clat lors quelle eſt enuironnee de ces illuſtres Con
-        <lb rend="¬" break="no"/>querans que lors quelle ne l’eſt pas, ainſi quvn
-        <lb/>beau diamant lors qu’il ſe trouue enuironné de plu
-        <lb rend="¬" break="no"/>ſieurs autres brillans, ou bien ainſi qu’vn grand lys,
-        <lb/>lors qu’il ſe tronue entouré de pluſieurs autres fleu
-        <lb rend="¬" break="no"/>rons au mliea d’vn ſuiperbe partere.
-        <lb/>De meſme, SIRE, quoy que voſtre Maieſté ſoi
-        <lb/>ans doure en eſtat de faire ce que bon luy ſemble
-        <lb/>ſans leur aſſiſtance: Quelle puiſſe propoſer, confe
-        <lb/>rer, reſoudre, commander, &amp; faire execurer tou
-        <lb rend="¬" break="no"/>tes choſes: Que voſtre Authorité ſoit pleniere, ab
-        <lb rend="¬" break="no"/>ſolue, ſouueraine, independante, entée à voſtre
-        <lb/> Couronne, ayant auec elle la ſouueraineté du Roy
-        <lb/>des Roys qui vous a eſtably, &amp; portant au frontiſ
-        <lb rend="¬" break="no"/>pice de ſa grandeur, cette haute &amp; ſourcillcuſe pi
-        <lb rend="¬" break="no"/>thete que l’on graua autre-fois au pied d’eſtail de la
-        <lb/>Statuë de lupiter Olympien, Pui ſſant d’eu meſmes,
-        <lb/>clle ne laiſſara pas de regner auec plus de douceur,
-        <lb/>auec plus de plaiſir, &amp; auec plus de ſarisfaction, lors
-        <lb/>quelle bannira d’aupres d’elle l’olygarchie, tou
-        <lb rend="¬" break="no"/>ſiours accompagnée d’ambitions, de monopoles,
-        <lb/>d’enuies, de ſeditions, &amp; d’vn nombre infiny de
-        <lb/>partialitez, quoy quelle ſoit vne eſpece de gonuuer
-        <lb/>uement fort raiſonnable en apparence: &amp; lors <pb n="11"/>
-        <lb/>qu’elle appellera les Princes de ſon ſang, &amp; les prin
-        <lb rend="¬" break="no"/>cipaux officiers de ſa Couronne en ſes conſeils, afin
-        <lb/>de reſoudre ce qu’il y aura de plus important ̀ deci
-        <lb rend="¬" break="no"/>der pour le bien de cette Couronne.
-        <lb/>Ce ſera à lors, SI RE; que voſtre Majeſté imite
-        <lb rend="¬" break="no"/>ra en cette action ces premiers Roys de Perſc tant
-        <lb/>vantez par Ariſtote, leſquels decidoient les plus
-        <lb/>grandes affaires de leur Royaume en la ville d’Ecba
-        <lb rend="¬" break="no"/>rane, aſſis ſur vn Troſne d’yuoire, au milieu des prin
-        <lb rend="¬" break="no"/>cipaux officiers de leur Couronne, pendant que les
-        <lb/>Gouuerneurs de leurs Prouinces executoient leurs
-        <lb/>Declarations, &amp; leurs Ordonnances. Et quand vo
-        <lb rend="¬" break="no"/>ftre Majeſté les imitera en cesactions, SIR E, elle
-        <lb/>ne fera qu’appuyer de plus en plus, le glorieux Troſ
-        <lb rend="¬" break="no"/>ne de ſa pieté, &amp; le magnifique Tribunal de ſa Iu
-        <lb rend="¬" break="no"/>ſtice, qui ſont les deux Lions qui ſouſtenoient ce
-        <lb rend="¬" break="no"/>luy de Salomon, &amp; qui doiuent eſtre les deux illu
-        <lb rend="¬" break="no"/>ſtres fondemens qui doiuent appuyer le voſtre. Par
-        <lb/>la pieté́ voſtre Majeſté reprimena la prompritude
-        <lb/>de ſes ſubjets, qui ne ſont de leur nature que trop
-        <lb/>remuans, &amp; les rangera doucement daus vne parfai
-        <lb rend="¬" break="no"/>te obeïſſance, &amp; par la Iuſtice elle leur fera voir que
-        <lb/>vous eſtes la veritable Image de Dieu, lequel ſans
-        <lb/>conſideration de perſonne punit les meſchans &amp; re
-        <lb rend="¬" break="no"/>compenſe les debonaaires. La uſtice, dit Plutar
-        <lb rend="¬" break="no"/>que, eſt la fin de la Loy; la Loy eſt l’ouurage du
-        <lb/>Pince, &amp; le Prince eſt l’Image de Dieu qui regit
-        <lb/>toutes choſes, n’ayant beſoin ny d’Appelles pour
-        <lb/>le peindre, ny de Phydias pour le tailler, ny de Po
-        <lb rend="¬" break="no"/>lyclete pour le grauer, ny de Myron pour le tirer en
-        <lb/>moule C eſt luy meſme qui ſe doit former par la
-        <lb/>iuſtice au moule de ſon Createur, qui eſt le plus no
-        <lb rend="¬" break="no"/>ble, le plus beau, &amp; le plus excellent modelle, de
-        <lb/>tous les exemples qu’il ſe puiſſe dreſſer luy meſme.
-        <lb/>Vous eſtes Roy d’vn Empire ſipuiſſant, que ſi tos <pb n="12"/>
-        <lb/>ſubiets viuent vne fois en bonne intelligence ſous
-        <lb/>l’authorireé de vos loix, vous ſerez touſiours ce que
-        <lb/>vous eſtes deſia, qui eſt la terreur des Eſtrangers &amp;
-        <lb/>les delices de tous ceux qui viuent ſous voſtre Em
-        <lb rend="¬" break="no"/>pire. Les murailles de Byſance eſtoient inexpugna
-        <lb rend="¬" break="no"/>bles à cauſe qu’elles eſtoient parfaitement bien ci
-        <lb rend="¬" break="no"/>menté́es. Mais ſi auec l vnion de vos ſubietrs vous
-        <lb/>auez vne fois dix ou douze milions de reſerue dans
-        <lb/>vos coffres, comme auoit Henry le Grand, quand
-        <lb/>toutes les nations du monde feroient armé́es pour
-        <lb/>vous deſtruire: quand les Scyches, les artares, les
-        <lb/>Moſcouites, les Otromans, les lndiens, &amp; tcout le
-        <lb/>reſte des peuples de la terre ſeroient deſia dans vos
-        <lb/>Eſtars pour les enuahir, vingt mille François bien
-        <lb/>vnis &amp; bien zelecz pour voſtre ſeruice, &amp; comman
-        <lb rend="¬" break="no"/>dez par vn Prince que voſtre Majeſté vient de met
-        <lb rend="¬" break="no"/>rre en liberté, extermineroient toutes ces legions
-        <lb/>eſtrangeres, &amp; les reduiroient toutes en poudre,
-        <lb/>tant cette narion eſt adroite à ſurmonter tout ce
-        <lb/>qui s’oppoſeà la fureur de vos armes. Les Romains
-        <lb/>ne renforcoient iamais leurs bataillons, quand ils
-        <lb/>vouloient facilement ſurmonter leurs Ennenis, que
-        <lb/>de ces inſignes guerriers, &amp; deux mille François tail
-        <lb rend="¬" break="no"/>lerent bien en pieces trante mille Maures. Oüy,
-        <lb/>SIRE, ce n’eſt veritablement qu’en l’vnion de vos
-        <lb/>ſubiets que conſiſtent toutes les forces de cé́t Em
-        <lb rend="¬" break="no"/>pire. Et certes il n’y a ny legions, ny fortereſſes, ny
-        <lb/>propugnacles qui vous puiſſent rendre plus redou
-        <lb rend="¬" break="no"/>table aà tout l’Vniuers, que ce lien indiſſoluble, En
-        <lb/>cela voſtre Maieſté ſe trouuera exempre de toutes
-        <lb/>les apprehenfions qui vous pourroient arriuer,
-        <lb/>quelques iniurieſes quelles puiſſent eſtre.
-        <lb/>Le Francçois n’eſt vaincu que par le François meſ
-        <lb rend="¬" break="no"/>me, dit vn de nos Poëtes. Toure la terre habicable
-        <lb/>redoute ces peuples comme la foudre. Que n’ont
-        <lb rend="¬" break="no"/>ils <pb n="13"/>
-        <lb/> 15
-        <lb/>ils pas fait lors que Saint Louys les conduiſoit on
-        <lb/>la Conqueſte de la Terfe Sainte? Que n’ont-ils pas
-        <lb/>fait lors que les Romains les voulurent aſſujettir,
-        <lb/>&amp; que n’ont ils pas fait durant qu’ils ſe rendirent
-        <lb/> maiſtres de la ville de Rome. Mais, S! R E, ſans
-        <lb/>aller chercher des exemples dans des temps ſi eſloi.
-        <lb/>gnez de nous, que n’ont-ils pas fait ſous le Regne de
-        <lb/> Louys le luſte voſtre-tres-honoreé ’ere, dais rou
-        <lb rend="¬" break="no"/>tes les guerres eſtrangeres &amp; domeſtiques que nous
-        <lb/>auons eüs. Et ccrtes, SIR E, que n’ont-ils pas fait
-        <lb/> ſous le voſtre, conduits par Monſieur le Prince. Les
-        <lb/>inſignes progrez qu’il a faits dans la Ilandre pour
-        <lb/>la gloire de voſtre nom, &amp; pour l’accroiſſement de
-        <lb/>cette Monarchie ne ſcauroient paſſer que pour des
-        <lb/>miracles dans l’eſprit des plus clairs voyans, tant ils
-        <lb/>ſone d’vne naturc inconceuale. Voitre Maieſté
-        <lb/>qui n’auoit autre intention de fairc la guerre que
-        <lb/>pour auoir la paix, voyant que c Prince auoit tou
-        <lb rend="¬" break="no"/>tes les qualitea d’vn illuſtre Conquerart, &amp; quc ſa
-        <lb/>condition dc premier Prince du Sang luy donnoit
-        <lb/>vn grand creditſur tous les principau de l’armeée,
-        <lb/>l’obligea de s’en aller en Flandre où il gagna des
-        <lb/> Barailles, &amp; fit des Conqueſtes que la poſtcrité ne
-        <lb/>pourra iamais croire, tant ces actions ſemblent
-        <lb/>eſtre au deſſus de la portee des hommes. Quicon
-        <lb rend="¬" break="no"/>que n’a pas vn grain de foy pour les miracles, n’en
-        <lb/>aura iamais pour des ations de cette naturc, s’il nc
-        <lb/>la veur liberalement donner à la cmplaſance, ou
-        <lb/>bien à la gloire d’vn corps dont il ſe peut dire cſtre
-        <lb/> vne partie.
-        <lb/> Iay veu, i’ay vaincu, diſoit Alexandrc: mais ce
-        <lb/> Prince en pouuoit bien dirc de meſme, puis qu’il a
-        <lb/>forceé́ vingt-quarre ou vingt-cinq placs, &amp; gagné
-        <lb/>quarre ou cinq ſanglantes ’arailles,contre toute
-        <lb/> ſorre d’apparences humaincs. A t’il iameis rien fait
-        <lb/>D <pb n="14"/>
-        <lb/>14
-        <lb/>qu’entaſſcr lauriers ſur lauriers, tant il ſç̧auoit l’art
-        <lb/>de ſurmonter le Enncmis de cette Couronue. A’il
-        <lb/>iamais aſſicgé ſans prendre. La terreur de ſes armes
-        <lb/> obligeait les habitans des places à luy porter les
-        <lb/>cIefs, &amp;Là rcceuoirles conditions telles qu’il luy plai
-        <lb rend="¬" break="no"/>ſoit de les leur faire: car la generoſité de ceux qui
-        <lb/>les deffendoient ou qui les vouloient deffendre,
-        <lb/>n’eſtoit qu’vne vaine protection contre vne puiſſan
-        <lb rend="¬" break="no"/>ce à tout aſſubjetir comme la ſienne. Ils furent con
-        <lb rend="¬" break="no"/>trains de s ’humilier aux decrets de leur ſort, &amp; de
-        <lb/>cherchcrleurs ſuretez dans leur mauuaiſe deſtiné́e.
-        <lb/>De ſorte que le capituler &amp; ſe rendre, leur furent
-        <lb/>des moyens beaucoup plus auantageux que tout ce
-        <lb/>qu’ilsauroient ſçeu pratiquer pour leur deffences.
-        <lb/>L’Eſpagne ne ſe plaint-elle pas encore du ſang que
-        <lb/>ſes coups luy ont fait épancher, &amp; des places que ſa
-        <lb/>Valeur luy a priſes Et la Flandre ne fremit elle pas
-        <lb/>au ſeul bruit de l’eſlargiſſement de ce Vainqueur
-        <lb/>inimitable. Et tout cela, S I R E, ne ſont-ce pas des
-        <lb/>effets qui obligent voſtre Majeſté à le conſiderer
-        <lb/>comme vn Heros qui peut remettre l’Eſtar en ſa
-        <lb/>plus haute ſplendeur, ou du moins à forcer toute
-        <lb/>I’Europe à fairevne Paix generale, telle qu’il plaira
-        <lb/>aà̀ voſtre Maicſte de la faire. Ilneſt point de Roy ſi
-        <lb/>puiſſant, ſi genereux, ny ſi entendu aux affaires, qui
-        <lb/>n’ait beſoin de l aſſiſtance d’vn grand homme d’E
-        <lb rend="¬" break="no"/>ſtar, &amp; d’vn grand Conquerant pour mieux reuſſir.
-        <lb/>en toutes ſes entrepriſes. Ce qui ſe trouue parfaite
-        <lb rend="¬" break="no"/>ment bien en la perſonne de ce Prince, &amp; ie ne ſça
-        <lb rend="¬" break="no"/>che point d’homme ſi doué d’excellentes qualitez
-        <lb/>qui ne face vanité de le ſuiure en toutes ſes entreprr
-        <lb/>ſes. ll a vne parfaite connoiſſance des hommes, des
-        <lb/>affaires, des pays, &amp; ſi il eſt ſç̧auant à toures ſortes
-        <lb/>d’oceurrences. Il n’arien qui reſſente la flarerie, ny
-        <lb/>la laſchetc &amp; moins encore la ſeruitude. Il ne per¬ <pb n="15"/>
-        <lb/>met pas que ſon intereſt marche deuant le voſtre, ny
-        <lb/>deuant celuy du pnblic; qui eſt l’eſcueil où les eſptits
-        <lb/> ambitieux &amp; mercenaires ſe plongent ordinairemant
-        <lb/>pour auancer leurs affaires, Enfin il a l’ordre en ſes
-        <lb/>diſcours, la ſincerté en ſes oppnions, la conſtance &amp;
-        <lb/>le ſecret aux commandemens, la diligence &amp; la fa
-        <lb rend="¬" break="no"/>cilité aux reſolutions, &amp; la fidelirte dans toute ſorfe
-        <lb/>de ſetuice, Et cetes, SI RE, celuy qui eſt admisé
-        <lb/> de tous come luy, ne ſç̧auroit eſtre comparé à per
-        <lb rend="¬" break="no"/>ſonn. Il faut eſtre monté bien haut pour ateeinde à
-        <lb/>des qualitez ſi teleués que les ſiẽnes. Il parle aux hom
-        <lb rend="¬" break="no"/>mes camme s’il parloit à Dieu, il nomme les choſes
-        <lb/>par leur nom, il fauoriſe ouuertement les bons, il re
-        <lb rend="¬" break="no"/>prend doucement ceux qui ont failli,il n’a point-d’o
-        <lb rend="¬" break="no"/>reilles pour les mauuais rapports, ny pout les meſdi
-        <lb rend="¬" break="no"/>ſances, ny pour les flateries, &amp; s’il faut diſſimuler pour
-        <lb/>leſecret, il le fait ſi ſobrement, que l’innocence ny la
-        <lb/>vetté ne s’en ſçauroit iamais plamdre: la Reyne meſ
-        <lb rend="¬" break="no"/>ne auant ſa detention luy. confioit ſes plus ſecretes
-        <lb/>penſees, e,
-        <lb/>Mais cmmerien ne mangue où la grace abonde,
-        <lb/>ie tiens quagi n’a tant ay dé à ſon eſlargiſſement qua
-        <lb/>la pieté dont iA accompagnoit les prieres qu’il faiſoit
-        <lb/>à Dieu. &amp; l’affection qu’il auoit conceuë pout le bien
-        <lb/>Commun de la Parrie: Car s’il a fait autrefois quelque
-        <lb/>choſe qui n’ait pas eſté ſost agreable à tous les peuples
-        <lb/>de France, il la fait pour auoir pas oſé deſobeyr au
-        <lb/>Commandement qu’on luy en auot fait de la part de
-        <lb/>Voſfe Maiaſté, &amp; en celail n’agiſſoit pas tant en mau
-        <lb rend="¬" break="no"/>uais Franç̧ois, qu’en ſeruiteur zellé pour voſtre ſerui
-        <lb rend="¬" break="no"/>ce. S’il auoit de la repugnance à faire ce qu’il faiſoit, il
-        <lb/>Cn auoit encore plus à ne pas ſuiure les ordres qu’on
-        <lb/>luy donnoit de la part de ſon Prince: Lamiué des
-        <lb/>Roys ne s’acquiert que par ceux qui s’accomod ens
-        <lb/>Aux inclmatuions de leur ieuneſſe, ou a xereices &amp; <pb n="16"/>
-        <lb/>16
-        <lb/>p aſſions de leurs plaiſits ouà liceroiſſement de leurs
-        <lb/>finances, ou bien à l’eſtendue de leurs conqueſtes.
-        <lb/>C’eſt ce qui le faiſoit agir contreſa propre conſcience
-        <lb/> ſachã̃t bien qu’vnſuiet de quelque cõditon qu’il puile
-        <lb/>eſtre, ſe doit reſoudré à la hort ou à l’obeiſſance de
-        <lb/>ſon Souuerain, ainſi qu’il arriua à Nabot lſraëlite, le
-        <lb rend="¬" break="no"/>quel ayãt refuſé ſa vgne à Aehab, qui eſtoit vne choſe
-        <lb/>de bien moindre importance que celle qu’on luy cõ
-        <lb rend="¬" break="no"/>mahdot, fut contraime de perdre ſa vie &amp; ſon herita
-        <lb rend="¬" break="no"/>gt tout emſemble pour auoir deſobey à ce Prince.
-        <lb/>Ce n’eſt pourtant pas que l’authorité du Roy ne
-        <lb/>doiuent eſtre douce, puis qu’il a non ſeullement la na
-        <lb rend="¬" break="no"/> ure pour guide: mais encore l’Autheur de la narure
-        <lb/> meſme, lequel rend à̀ chacun ce qui luy a ppartient ſe
-        <lb rend="¬" break="no"/> lon ſes merites. On ne void rien dans les Hſtoires,
-        <lb/>que des Rois punis pour auoir indignement traitté
-        <lb/> lenrs peuples. Ce n’eſt pas vne authorité Roy ale que
-        <lb/>de ſe faire voir ennronné de terreurs, &amp; de marcher
-        <lb/> par tont ſur les cédres de ſes ſbicts &amp; deſes villes fu.
-        <lb/>mantes. L’authonité Roy ale eſt vn rayon de la diui
-        <lb rend="¬" break="no"/>nité &amp; vne trés-grarlde veneratton que nous auons
-        <lb/> pour la perſonne du ’rince: &amp; iles Roys n’ont iàmas
-        <lb/>eſté ecreeés que poür le bien de ceux que Diecu a voulu
-        <lb/>ſousmettre aà leur Empire: Les bons Roys font proſ
-        <lb rend="¬" break="no"/>perer les Royaumes,; &amp; les lfraë lites onteſté tres hu
-        <lb rend="¬" break="no"/>reux lors quils ont eté regis pas de bôs Princes: mais
-        <lb/>au contraire ils ont eſte touſiours affligéz ſous des
-        <lb/>Achis, ſous des Amons, &amp; ſous des Manaſſez Mais
-        <lb/>vous. SIR E, qui ne nous auez eſté donné de Dieu que
-        <lb/>pour noſtre bien, oùsnous ferez la grace d’imit et
-        <lb/>Ioſias, en toutes ſes aCtions -lequel apres s’eſtre rendu
-        <lb/>ſç̧auant en la Loy, aſſemblarous les plus anciens de
-        <lb/>ſon Roy aume &amp; accompagné de tons les Prophetes,
-        <lb/>&amp; de tous les Sacrficareurs, monta aû Temple. &amp;
-        <lb/>’eſtant aſſis enſon ſiege fit alliance deuant Dieu, d’o
-        <lb rend="¬" break="no"/>beir <pb n="17"/>
-        <lb/>17
-        <lb/>beir à ſes Sratuts, à ſes Conſtitutions &amp; à ſes Ordon
-        <lb rend="¬" break="no"/>ances, &amp; fit promettre à tous ſes Subiets, d’aceom
-        <lb rend="¬" break="no"/>plir toutes les parolles de l’Alliance, ſelon la paction
-        <lb/>du Dieu de leurs peres, ce qu’ils garderent tout le
-        <lb/>temps de la vie de ce Prince.
-        <lb/>I’eſpere, SI R E, que vous en ferez de meſme, &amp;
-        <lb/>qu’apres vous eſtre rendu ſçauant en la Loy, qui eſt ſe.
-        <lb/>lon Pindare, la Reine de Deu &amp; des hõmes, ou pour
-        <lb/>en parler plus raiſonnablement auec Demoſtene, vn
-        <lb/>don de Dieu, &amp; vne inuention &amp; ordonnance des Sa
-        <lb rend="¬" break="no"/>ges, pour reprimer les malefices, &amp; maintenir la Re
-        <lb rend="¬" break="no"/>publque, à la regle de laquelle chacun doit dreſſer
-        <lb/>le cours de ſa vie, que voſtre Maieſté aſſemblera tous
-        <lb/>lIes plus anciens de ſon Royaume pour en former vn
-        <lb/>bon Conſeil, ou ſe reſoudront ſagement &amp; prudem
-        <lb rend="¬" break="no"/>ment, ſans intereſt &amp; ſelon Dieu, toutes les affaires les
-        <lb/>plus eſpineuſes, afin de nous redonner ce Siecle d’or
-        <lb/>dont ioüſſoient nos premiers peres. Et puis apres re
-        <lb rend="¬" break="no"/>gner, &amp; entre celuy qu regne, l’vn &amp; l’autre n’ont
-        <lb/>qu’vn meſme ôut, qui eſt le ſalut de l’Eſtat. &amp; tous les
-        <lb/>deux ſont ordonnez pour le bien de la Patre: &amp; c’eſt
-        <lb/>pour cela qu’on dit que ſeruir au Senat c’eſt regner, &amp;
-        <lb/>que regner eſt vne eſpece de ſeruitude. De maniere
-        <lb/>que celuy qui ſçat bien ſeruir le Ptince, ſeait bien
-        <lb/>ſeruir l’Eſtat, &amp; qui ſç̧ait bien ſeruit l’Eſtat ſeait bien
-        <lb/>ſeruir le Prince. Ordonner ou conſeiller ce qu’il
-        <lb/>faut qu’on ordonne eſt vne meſme choſe.
-        <lb/>Voilà, SlR E, vne partie des qualitez d’vn Prin
-        <lb rend="¬" break="no"/>ce pour la deliurance duquel toure la France vous re
-        <lb rend="¬" break="no"/>mercie, &amp; d’vn Prince, SIR E, qui ſera vn iour
-        <lb/>voſtte bras dtoit en la conqueſte de la Terre-Sainte.
-        <lb/>Et voilà, SIRE, les grandes obligations que touite la
-        <lb/>Pr’ance vous a, de luy auoir redonné celuy qui doit
-        <lb/>eſtendreſes limites par tout o le Soſerl eſtend ſa lu
-        <lb rend="¬" break="no"/>miere; tout le monde ſcait bien que Dieu &amp; la Natu
-        <lb rend="¬" break="no"/>. <pb n="18"/>
-        <lb/>18
-        <lb/>re l’ont doü̈é de toutes les gracés qu’on ſç̧auroit deſi
-        <lb rend="¬" break="no"/>ret en la perſonne d’vn Prince, ſon eſprit eſt ſubil,
-        <lb/>penetrant &amp; fort vniuerſel. Son courage inuincible,
-        <lb/>ſon parlert concis &amp; ſententieux, &amp; ſa dextetitc imcõ.
-        <lb/>parable. On vod bien qu’il a l’œil vgilant, le viſage
-        <lb/>benin, &amp; la conſtancefort belle. Ceux qui ont l’hon-
-        <lb/>neur de l’approcher voyaãt ſon naturel &amp; ſon humeur,
-        <lb/>ſont cout raints d’auoüer qu’il eſt l’vn’que en ſon eſpe
-        <lb rend="¬" break="no"/>ce.. Toutes ces excellentes qualitez qui paroiſlen
-        <lb/>éminemment en ſa perſonne me donneront, s il
-        <lb/>vous plaiſt, SlRE, la liberté de vous dire en fa
-        <lb/>faueur, ce que peut-eſtre homme du monde ne vous
-        <lb/>oſeroit dire, tant la Maieſté des Roys eſt enuironnée
-        <lb/>de flateurs &amp; d’hypocrites, contre la volonté́ de So
-        <lb rend="¬" break="no"/>lon: Car il dt qu’il ne faut point approcher des grãds
-        <lb/>que pour leur dire la verité des choſes: mas il la leur
-        <lb/>faut dire auec paroles de ſoye, ainſi que Parſatis me
-        <lb/>re de Cyrus nous l’enſeigne.
-        <lb/>Il faut grand Roy, que vous teniez touſiours ce
-        <lb/>Prince pres de voſtre perſonne, afin qu’il ne s’eſloi
-        <lb rend="¬" break="no"/>gne de vous non plus que l’ombre de ſon corps, que
-        <lb/>les rayons du Soleil de leur Aſtre, que le ruiſſeau
-        <lb/>de ſa ſource, que la tige de ſon arbre, que le corps de
-        <lb/>ſon ame, ni que l’homme de celuy qui luy a donn é
-        <lb/>l’eſtre. Les Planetes ne ſortent iamais de leur Zodia
-        <lb rend="¬" break="no"/>ques, ou ſi par vn mouuement deſreglé il arriue qu’el
-        <lb rend="¬" break="no"/>les enſortent, tout lVniuers en eſt troublé, &amp; out
-        <lb/>le monde ſublunaire ſe trouue dàs vne confuſion tres
-        <lb rend="¬" break="no"/>horrible. Les Princes du Sang ſont les vrayes Pla
-        <lb rend="¬" break="no"/>netes du Ciel où voſtre Maeſté reſide, leur lu.
-        <lb/>miere ne ſe tire que de la preſence de leur Sou
-        <lb rend="¬" break="no"/>uerain, qui eſt le veritable Soleil de ces Planettes rai
-        <lb rend="¬" break="no"/>ſonnables, plus ils en approchent&amp; plus ils ſont ra
-        <lb rend="¬" break="no"/>dieux au reſte des hommes,plus ils vous aggreeront,
-        <lb/>&amp; plus ils en ſeront conſiderables. Simboliſant auec <pb n="19"/>
-        <lb/>vos volontez, &amp; cherſſſant ceux que vous cheriſſez,
-        <lb/>ils en ſeront plus en honneur, plus en authoiité &amp;
-        <lb/> plus en aſſeurance. I n’y aura faction ſi forte &amp; ſi
-        <lb/>puiſſante, quelque dangereuſe qu’elle piſſe eſtre,
-        <lb/>qui s’oſe eſl euer contre eux, quand voſtre Maieſté les
-        <lb/>tiendra ſous vne protecton ſi conſiderabie que la vo.
-        <lb/>ſtre, ny Monarque ſi grand &amp; ſi redoutable en toute
-        <lb/>l’Europe qui veüille entreprendre d’armer contre
-        <lb/>vous, quand ils ne vous abandonneront iamais, &amp;
-        <lb/>qu’ils ſeront touſiours preſts d’expoſer leurs biens &amp;
-        <lb/>leurs vies pour voſtre ſeruice. Ainſi voſtre Maieſté
-        <lb/>leur ſeruira de Prorecteur, contre leurs enuieux, &amp;
-        <lb/>ces illuſtres Heros vous ſeruiront de rempart contre
-        <lb/>tous les plus gtands dela terre. Voyez de grace a
-        <lb rend="¬" break="no"/>preés celà, SIRE, ſi toute la France n’eſt pas bien
-        <lb/>obligée de vous remercier, comme el le fait par mon
-        <lb/>entremiſe, de la deliurance de ces Princes, puis
-        <lb/>qu’ils ſont ſi neceſſaires à Voſtre Maieſté, &amp; puis
-        <lb/>qu’ils doiuent faire le ſalut de toute cette Monar
-        <lb/>chie.
-        <lb/>FIN. </p>
-    </body>
-  </text>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_45" source="Moreau">
+					<p>Mise en liberté des princes</p>
+					<date when="1651-02-13">1651-02-13</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-07-15" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<pb n="8"/>
+				<pb n="9"/>
+				<pb n="10"/>
+				<pb n="11"/>
+				<pb n="12"/>
+				<pb n="13"/>
+				<pb n="14"/>
+				<pb n="15"/>
+				<pb n="16"/>
+				<pb n="17"/>
+				<pb n="18"/>
+				<pb n="19"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+REMERCIMENT
+        FAIT
+        AV ROY
+        PAR MADAME
+        LA
+        PRINCESSE
+        SVR LA
+        DELIVRANCE DE MESSIEVRS
+        les Princes.
+        A PARIS,
+        M. DC. LI. 
+        
+        3
+        REMERCIMENT FAIT
+        au Roy au nom de route la Frã
+        ce par Madame la Princeſle ſur
+        la deliurance de Meſſieurs les
+        Princes.
+        Anaxarchus, voulant conſoler Alexandrele
+        Graad, du rege qu’ilauoir, d’aoir ue ClirusfomFa,
+        ory, lay ditque Theaas &amp;e Dite eſtoient ouſiours
+        aſfiſes aux eoſtez de lupter, voulant direpar rcette
+        Miſtagogie que le Pinei ne deuoit tamais rienfaire
+        qu’auc ſutice,&amp; qu’il denoit uauſioursauoir les lLoix
+        deuant ſo yeaux pou reglerſespaſſoub a&amp;e pou le
+        reduitcoutinuiellenleatdansvne menieilleuleobeiſ
+        ſance. Ouylctrtes, SE,ſi ls tinoe veut reuſſitpa
+        faitement bien ea toutes ſes enrepriſcs, &amp;s’il yeut at
+        tirer les bonelitbions.de ius&amp; les loüangs deſes
+        peuple ſun fa peſanne, il faut quliſe dodlaite la guer
+        neà oy nae, qu’il énaploye oſtes ſes forces à
+        faire regner la raiſon auſſi abſolue dans ſon eſpri
+        que laiuſtice dans ſon ame. Etfinallemenr il faut qu’il
+        lirmteſapuiſſanca par la loy Diume, &amp; parla loy Na
+        urele imprimée. dans leé oœar de ous les hommes,
+        puis que tcoute ſum auhoriré ́ rire ſa furce que le
+        es deux illuſtres Eedagagues de la vieh maine, &amp;
+        ueſe maintient que par l’inuiolable obſeruance de la 
+        Iuſtice: Autremen quand il e’en eſcarte, Dieu luy en
+        uoie mil leſortes d’afſi&amp;ions, &amp; le liure à la fin ente
+        les mains deſe aduerſairs, me fite apo
+        ſonne de Saul &amp; de pluſieurs àtreé Maitanr’n
+        n’eſt point de ſibiet qua? e, ſoildsEgé ôdite que
+        tout ce que le Price fat, eſt iuſte, afin de.ſe teirroui
+        iours dans les termes de l’obeiſſnce qul luy eſt deuë.
+        veu qui il n’eſt pas obligédo rale tuthd a ploin
+        dre de ſes actions, q’à celuy qui la fait ce q’i eſt,
+        ainſi qu’il eſt porté par les Deerets d’vn’Souberain, à
+        qui il faut adiouſter vne inuiolable foy, ſur peine de
+        panition eternelle. C’eſt vn crime de leze aieté
+        bien grand, que d’en conceuoir ene mauuaiſe opiai;
+        comme dit fort bien Nazarius en ſon Panpgy rique dé
+        Conſtantin: Ceſt vne temerité bien rtminel le. quo
+        d’interpreter ſes deſſeins en mauuaiſe part: &amp; c’eſt
+        eſtre bien pniſſable que detroiuuor à redireà ſa gou
+        uenomenx,veu qu’ilneft rienqui np fsisſctéSape
+        ſonneeſt ſacde: ſa Mieté eſtſaréeſon oadſeil ot
+        facréſes volontez ſnntſarréesi: ſes Edéts ſan ſare:
+        ſon Domaine eſt ſaeé: ſes Images font-facres. Erte
+        antnoins il arriue d’ocdinaide qup de petiteogeansfe
+        doane plos de laconçe de palss dosaffairs plbdiqres,
+        que ceux qui ſone erpuuolr dte leas teſiderteait
+        à radire aux actions du oy lepliqueat ſes Edrûsd
+        ſes Declaratlons à leur vloné,&amp; oudtoient quelt
+        Conſeil ne decidat uxnaisienqifut pallé adrlauas
+        cenſure.. Et bierrſouupn il e nauequ aos gns là
+        ne ſont pas ſeulement dapables dexegarlea aiſo
+        ny de reformor leur conduaiet....
+        Ce qui n’arriua que trop liencieaſenatnt lodsqus
+        voſtre Mhieſté fit airiéter Meſfiqurs les Peiuces :car
+        il faut aduouerque e EEunopeaefsq pas uinr
+        eſtonnée de cet. arreſt inopineé, que ſi txasſes pouples
+        euſſent eſté frappez d’vn coupdotoaaere. Quelqu
+         vV 
+         ns diſoient qu’ils s’eſtoient grandement oubliez, &amp;
+        que Monſieur le Prince ne cherchoit que les moyens
+         d’afoiblir l authoritc Royale, par le nombre infiny
+        des biens fairs qu’il tachoit d’auoir de voſtre Maieĺ.
+        Quelques autres diſoient que cetoit parce qu’il par
+         loit trop hautement, &amp; qu’il menaçoit de mal-traiter
+        quantité de perſonnes tres releué́es. Dautres dſoient
+         que ceſtoit vn coup du Ciel. Et ceux qui penetroient
+        plus aunt dans la veriteé des choſes. diſoient que c’e
+        ſtoit par ce qu’il s’eſtoit rendu redo tble au ardi
+        nal Mazarin, &amp; qu’il l’empeſehoit de gouuerner les
+         affaires à l’a mode. En vn mot, hacun en parl it ſe lon
+        ſa paſſion, &amp; ſelon la portée de ſa ſurfi.anc,ſans cõ̃
+         ſiderer que voſtre Maieſté n’eſt pas moins Souueraine
+         dans ſes Eſlars, que l’intelligence dont porle Auince
+        ne, dans le leu ou elle reſide: puis qu’elle ne doit ia
+         mais rendre compe de ſes actiõs qu’aà̀ la premiere qui
+        la eſtablie: &amp; ſans ſç̧auoit auſſi que ce qui a eſté vne
+         fois propoſé &amp; reſolu au Conteil de voſtre Maieſté,
+        ne peut m ne ſcçaurot eſtre blaſmé de qui que ce ſoit,
+        ſans prononcer vn Arreſt de mort contre loy meſme.
+        Vos decrets, SIRE, ſont des reſolutions celeſtes &amp;
+        myſterieuſes: vos doliberanions ſont des Euripes flu
+         ans &amp; refluans, ſans que perſonne du monde en puiſſe
+        connoiſtre la cauſe: voſtre Monarchie eſt vne mac
+        ne dans laquelle ſe ioüent imperceptiblement tous
+         les reſſors de la ſageſſe humaneſans que le peple y
+        puiſle rien comprendre. Quand Numa fit baſtir ſou
+        terre vn Temple fort tenebreux, dedié au Conſel de
+        omulus, il vouloit enſeigner par laà, que come les Rois
+        ne peuuent pas atteindre au Conſeil des Dieux, que les
+        . Subiets ne peuuent pas pareillement auſſt penetrer dãs
+        les ſecrets de leur Prince, Mais comme il eſt quelque
+        fois neceſſaire que les parties les plus nobles d’vn
+        corps. quoy que fort ſaines, ſoufſrent le s vio lens ef
+         fſorts dé la Medecine qu’il a priſe pour le remetre en
+        B 
+        6
+        ſa premiere ſant́, il eſt pareillement auſſi quelquefois
+        neceſſa tes q e les plus grands d’vn Eſtat ſouff ent
+        quelque chole pour le reſtablir, ou pour le rendre plus
+        loriſant qu il ne ſouloit eſtre,
+        Mas ce qi a le p!us eſtoõné rtous vosſubiets, SIRE,
+         cça eſté de l’auoir veu transferer de Chaſteau de Vin
+        cennes au Haure de Grace, par le Cardinal Mazarin:
+        Car de l’auoir veu quelque temps dans le meſme Bois
+        de Vincennes par ordre de voſtre Maieſteé, cela eſtoit
+        hors detonnement, quoy qu on ſçeu bien que cette
+         capture s eſtoit fait contre voſtre volonté pour plaire
+        à celuy qui abuſant de voſtre nom, tranchoit du Sou
+        uerain pour S’aſſuiettir tous les plus grands de voſtre
+        Eſtat, &amp; pour tyranniſer vnuerlellement tous vos
+        peuples. Mais apres auoir ieté les yeux de voſtre bon
+        té ſur ſon innocence, pour euirer les deſordres que ſa
+        detention cauſoit àtout cet Eſtat, &amp; pout luy rendre
+        vne par faite iuſtice, il à pleu à voſtre Maieſté de le de
+         liurer des priſons où ſes ennemis le tenoient capif &amp;
+         de luy donner ſa premiere liberté ſi apprehendee de
+        l eſtranger, &amp; ſi deſiree de tous vos peuples.
+        Receuez donc, Sl R E, ce tres-humble remerci
+        ment que ie vous offre de tout mon cœur. au nom de
+        route la France, dauoir remis en vn temps ſi oppor
+        tun, vne parte de voſtre ſang en liberté, qi genereu
+        ſement touché de reconnoiſtre vn bien fait de cette
+        importane, ne cherchera iamasis que les oecaſions de
+        l’eſpancher pour vous: afin de vous rendte le plus glo
+        rieuy Monarque de la terre. Vous vous pouuez bien
+        aſſenrer que par cette deliurance vous auez coupé la
+        racine a toutes les ligues &amp; aà toutes les factions qu ſe
+        pouuoent ttramer dans le Royaume, ſous pretexte
+         d vne plus longue detention de leur perſonne. Cas
+        quand on nous donnoit des eſperances d vne paix de
+        longue durée, ceux quls entendoer quelque peu aux 
+        aaires, &amp; qui auoit la faculté́ de lire dans les choſes
+        à venir, eſtimoient qu’elle eltoit impoſſible lans la de
+        liura ce de Meſſieurs les Princes. Quand on diſoit
+         que voſtre Maeſté nous auoit eſté donnée de Dieu en
+        nos plus grandes neceſſitez, &amp; lors qu on y ſongeoit
+        le moins, pour metre l Eſtat en la plus grande ſplen
+        deur, pour vaincre tous ces ennecmis, &amp; pour ſaire a
+        dorer leſus-Chrſt par toute la tcrre habitable, on di
+        ſoit que tout cela eſtoit fort viſible: mais que pour y
+        r euſſir heureuſement, il faloit que Monſieur le Prince
+        fut de la partie, afin de ſurmonter auec plus de facili
+        té tout ce qui ſe voudroit oppoſer à de ſi glorieuſes &amp;
+        ſi famtes entrepriſes. Ouy, Sl RE, vous pouuez atten
+        dre de luy, ce que les Grecs attendoient auec tant de
+        paſſion des deſſendans d’Hercule, qui ſont des Mira
+        culeux exploits, meſlez de Cõſel &amp; de Sageſſe. Ouy,
+        SIRE, Voſtre Maieſteé ſe peut aſſeurer d’auoir de
+        ſormais auprés d’elle vn Prince tres zel lé pour la Re
+        ligion Cathohque, Apoſtohque &amp; Romaine: &amp; tres.
+        affectionné, &amp; ſaintement paſſionné pour voſtre ſer
+        uice. Bruſlant de deſir deimaintenir ſous l’authorité de
+        voſtre nom, la grandeur de voſtre Maieſté, le bien pu
+        blic, la gloire de l’Eſtat &amp; de preuenir tous les deſſeins
+        des ennemis de cette Couronne. Ouy, S I RE, Voſtre
+         Maieſté ſe peut bien aſſeurer d’entendre dſormals
+        opiner en voſtre Conſel, vn Prince ſtlé aux grandes
+         affaires, prompt à les conccuoir, vif à les compren
+        dre, meur à les digerer, &amp; courageux à les executer,
+        ſelon le commandement qu’il vous aura pleu de luy
+        en faire, ainſi que l’ont fort bien temarque ceux qui ſe
+         ſont ſeruis de voſtre nom de voſtre authorité pour
+        ſa detention, en la Lettre qu’ils ont enuoyée au Parle
+         ment de Paris, le vingtieſme lanuier, de l’année mil
+        x cens cinquante. 
+        28
+         ia verite diſent-ils, quand il a falu deliberer ſur
+         i’arreſt d vn Prince du Sang grandement eſtimable
+         poœur beaucoup de hautes qualitez qu’il-poſſede;
+        d’vn Prince quia remporté pluſieures Victoires ſur
+         les ennemis de et Eſtat, où̀ il a ſignalé́ ſon coura
+         ge, &amp; quis’eſt acquis vne haute reputation par les
+         exploits. de uere qu’on luy a confiez, eſtant en
+         éſtar de vedre d grands ſeruices à cette Couron
+         ne, par ſes ouſei &amp; parſes actions, en des temps
+         dlfficilies cemroe ſont ordinairement ceux d’vne
+         Minortré ſi Iongue que celle de noſtre Monaque.
+         Ne viì-t’ pos SR E, de beaux Eloges en faueur
+         dnie, pour la liberteé duquel ie vous rends ces
+         actious de graces. Certes voſtre Majeſté ne les doit
+         pas auoir pout ſuſpectes, puis qu’ils partent de la
+        i bolele de ſe propres ennemis, &amp; de ceux qui n’oat
+        i iamais trauaillé qu’à ſa perte. Vous voyez bien par
+         la, SIRE, ſi ie dis vray, &amp; comme la veriteé eſt d’vne
+         nature à ne pouuoir iamais eſtre cacheé́e, non plus
+         que la preſence de celuy qui ſe fait voir à̀ roures les
+        . choſes crées.
+         Enfin, SIRE, c’eſt vn Prince de l’aduis duquel
+         voſtre Majeſté ſe peut vrilement ſeruir, pour prati
+         quer encore auec plus d’adreſſe la ſcience de bien
+        Regner, que Socrate &amp; Xenophon appellent. la
+         ſcience des Rois &amp; des Princes. Polybe diſoit que
+         la muſique eſtoit neceſſaireaux Arcadiens pour les
+         diuertir, à cauſe que le pays eſt montagneux &amp; -de
+         ſagreable: mais cela ſe peut bien dire à meilleur ti
+        tre de la Politiquie, veu qu’elle n’eſt pas moins ne
+         ceſſaire aux Rois, qu’elle eſt agreable au reſte des
+         homnes.
+         Veritablement elle leur eſt ſi neceſſaire, SIRE,
+         qu’ils ne ſçauroient iamais regner que par emprunt
+        ſans ſon entremiſe. Et quand Socrate dit, que Dieu
+        faie 
+        9
+        fait beaucoup de graces aux hommes, de leur faire
+        apprehender les bonnes maximes ſur la fin de leurs
+        iours, il a dit vne ſentence tres veritable au regard
+        de ceux qui veulent mourir dans leur pccheé: mais
+        non pas au regard de ceux qui veûlent preuenir de
+        bonne heure aux inconueniens-de leurs Eſtats,
+        pour en euiter le precipice.
+        Ce Prince, SIRE, a toures les qualitez d’vn hom
+        me propre à bien conſeiller &amp; à bien conduire vne
+        affaire, quoy qu’il ne ſoit pas des plus àgez du mon.
+        de. Et quand voſtre Maieſteé l’entendra opiner aux
+         choſes d’importance, elle benira l’heure de l’auoir
+        -mis en liberté, &amp; de l’auoir appelleé́ aupres de vo
+        ſtre perſonne. Les occaſions où il s’eſt trouué́, &amp; les
+        reuolutions d’affaires qui ſe ſont paſſces depuis qu’il
+        a l’honneur de porter les armes pour voſtre ſeruice,
+        l’ont rendu capable de tout oſer, &amp; de tout entre
+        prendre pour le bien de cette Monarchie. Outrc
+        que treize ou quatorze mois de loiſir qu’il a eu ̀
+        bien approfondir les Maximes d’Eſtat dans ſa de
+        tention, ne luy ont pas mal appris ſon deuoir, auſſi
+        bien enuers Dieu que vers les hommes. C eſt pour
+        quoy voſtre Majeſté ne luy entendra plus proferer
+        que des paroles de pieté, ny que des ſentences de
+        Polieique.
+         Les Princes du Sang, SIRE, ſont à voſtre Ma
+        jeſté, ce que l’ombre eſt au corps, ce que l’image eſt
+        à la choſe repreſenteée, ce que le rayon du Soleil
+        eſt à ce bel Aſtre du iour, ce que le poinct eſt à̀ l
+        ligne, &amp; ce que le cercle eſt à la Sphere: car comme
+        ombre ils les doiuent ſuiure, comme images ils les
+        doiuent repreſenter, comme rayons du Soleil ils en
+        doiuent é́maner pour éclairer au reſte des hommes,
+        comme poincts ils en doiuent reſulter, &amp; comme
+        cercles ils ſuiuent ou bien ils doiuentſuiure ſes reuo¬ 
+        
+        10
+        lations de quelque narure quelles puiſſent eſtre:
+        Bref ils ſont à̀ lEſtat, au dire de Tacite, ce que
+        Druſus &amp; Neron eſtoient en la maiſon des Ceſars,
+        où ils ſeruoient de baſecs &amp; de colomnes. Oüuy veri
+        rablement, Sl RE, ils ſont rellement neceſſaires à
+        la France quelle reçoit vn norabledommage de
+        leurs aduerſite, &amp; vn inſigne bon-heur de leur pro
+        ſperité &amp; de leur deliurance.
+        Ie ne véux pas dire, S IR E, que voſtre authori
+        té depende aucunemene d’eux, à Dieu ne plaiſe:
+        mais ie veux dire que voſtre Majeſté a bien plus d’e
+        clat lors quelle eſt enuironnee de ces illuſtres Con
+        querans que lors quelle ne l’eſt pas, ainſi quvn
+        beau diamant lors qu’il ſe trouue enuironné de plu
+        ſieurs autres brillans, ou bien ainſi qu’vn grand lys,
+        lors qu’il ſe tronue entouré de pluſieurs autres fleu
+        rons au mliea d’vn ſuiperbe partere.
+        De meſme, SIRE, quoy que voſtre Maieſté ſoi
+        ans doure en eſtat de faire ce que bon luy ſemble
+        ſans leur aſſiſtance: Quelle puiſſe propoſer, confe
+        rer, reſoudre, commander, &amp; faire execurer tou
+        tes choſes: Que voſtre Authorité ſoit pleniere, ab
+        ſolue, ſouueraine, independante, entée à voſtre
+         Couronne, ayant auec elle la ſouueraineté du Roy
+        des Roys qui vous a eſtably, &amp; portant au frontiſ
+        pice de ſa grandeur, cette haute &amp; ſourcillcuſe pi
+        thete que l’on graua autre-fois au pied d’eſtail de la
+        Statuë de lupiter Olympien, Pui ſſant d’eu meſmes,
+        clle ne laiſſara pas de regner auec plus de douceur,
+        auec plus de plaiſir, &amp; auec plus de ſarisfaction, lors
+        quelle bannira d’aupres d’elle l’olygarchie, tou
+        ſiours accompagnée d’ambitions, de monopoles,
+        d’enuies, de ſeditions, &amp; d’vn nombre infiny de
+        partialitez, quoy quelle ſoit vne eſpece de gonuuer
+        uement fort raiſonnable en apparence: &amp; lors 
+        qu’elle appellera les Princes de ſon ſang, &amp; les prin
+        cipaux officiers de ſa Couronne en ſes conſeils, afin
+        de reſoudre ce qu’il y aura de plus important ̀ deci
+        der pour le bien de cette Couronne.
+        Ce ſera à lors, SI RE; que voſtre Majeſté imite
+        ra en cette action ces premiers Roys de Perſc tant
+        vantez par Ariſtote, leſquels decidoient les plus
+        grandes affaires de leur Royaume en la ville d’Ecba
+        rane, aſſis ſur vn Troſne d’yuoire, au milieu des prin
+        cipaux officiers de leur Couronne, pendant que les
+        Gouuerneurs de leurs Prouinces executoient leurs
+        Declarations, &amp; leurs Ordonnances. Et quand vo
+        ftre Majeſté les imitera en cesactions, SIR E, elle
+        ne fera qu’appuyer de plus en plus, le glorieux Troſ
+        ne de ſa pieté, &amp; le magnifique Tribunal de ſa Iu
+        ſtice, qui ſont les deux Lions qui ſouſtenoient ce
+        luy de Salomon, &amp; qui doiuent eſtre les deux illu
+        ſtres fondemens qui doiuent appuyer le voſtre. Par
+        la pieté́ voſtre Majeſté reprimena la prompritude
+        de ſes ſubjets, qui ne ſont de leur nature que trop
+        remuans, &amp; les rangera doucement daus vne parfai
+        te obeïſſance, &amp; par la Iuſtice elle leur fera voir que
+        vous eſtes la veritable Image de Dieu, lequel ſans
+        conſideration de perſonne punit les meſchans &amp; re
+        compenſe les debonaaires. La uſtice, dit Plutar
+        que, eſt la fin de la Loy; la Loy eſt l’ouurage du
+        Pince, &amp; le Prince eſt l’Image de Dieu qui regit
+        toutes choſes, n’ayant beſoin ny d’Appelles pour
+        le peindre, ny de Phydias pour le tailler, ny de Po
+        lyclete pour le grauer, ny de Myron pour le tirer en
+        moule C eſt luy meſme qui ſe doit former par la
+        iuſtice au moule de ſon Createur, qui eſt le plus no
+        ble, le plus beau, &amp; le plus excellent modelle, de
+        tous les exemples qu’il ſe puiſſe dreſſer luy meſme.
+        Vous eſtes Roy d’vn Empire ſipuiſſant, que ſi tos 
+        ſubiets viuent vne fois en bonne intelligence ſous
+        l’authorireé de vos loix, vous ſerez touſiours ce que
+        vous eſtes deſia, qui eſt la terreur des Eſtrangers &amp;
+        les delices de tous ceux qui viuent ſous voſtre Em
+        pire. Les murailles de Byſance eſtoient inexpugna
+        bles à cauſe qu’elles eſtoient parfaitement bien ci
+        menté́es. Mais ſi auec l vnion de vos ſubietrs vous
+        auez vne fois dix ou douze milions de reſerue dans
+        vos coffres, comme auoit Henry le Grand, quand
+        toutes les nations du monde feroient armé́es pour
+        vous deſtruire: quand les Scyches, les artares, les
+        Moſcouites, les Otromans, les lndiens, &amp; tcout le
+        reſte des peuples de la terre ſeroient deſia dans vos
+        Eſtars pour les enuahir, vingt mille François bien
+        vnis &amp; bien zelecz pour voſtre ſeruice, &amp; comman
+        dez par vn Prince que voſtre Majeſté vient de met
+        rre en liberté, extermineroient toutes ces legions
+        eſtrangeres, &amp; les reduiroient toutes en poudre,
+        tant cette narion eſt adroite à ſurmonter tout ce
+        qui s’oppoſeà la fureur de vos armes. Les Romains
+        ne renforcoient iamais leurs bataillons, quand ils
+        vouloient facilement ſurmonter leurs Ennenis, que
+        de ces inſignes guerriers, &amp; deux mille François tail
+        lerent bien en pieces trante mille Maures. Oüy,
+        SIRE, ce n’eſt veritablement qu’en l’vnion de vos
+        ſubiets que conſiſtent toutes les forces de cé́t Em
+        pire. Et certes il n’y a ny legions, ny fortereſſes, ny
+        propugnacles qui vous puiſſent rendre plus redou
+        table aà tout l’Vniuers, que ce lien indiſſoluble, En
+        cela voſtre Maieſté ſe trouuera exempre de toutes
+        les apprehenfions qui vous pourroient arriuer,
+        quelques iniurieſes quelles puiſſent eſtre.
+        Le Francçois n’eſt vaincu que par le François meſ
+        me, dit vn de nos Poëtes. Toure la terre habicable
+        redoute ces peuples comme la foudre. Que n’ont
+        ils 
+         15
+        ils pas fait lors que Saint Louys les conduiſoit on
+        la Conqueſte de la Terfe Sainte? Que n’ont-ils pas
+        fait lors que les Romains les voulurent aſſujettir,
+        &amp; que n’ont ils pas fait durant qu’ils ſe rendirent
+         maiſtres de la ville de Rome. Mais, S! R E, ſans
+        aller chercher des exemples dans des temps ſi eſloi.
+        gnez de nous, que n’ont-ils pas fait ſous le Regne de
+         Louys le luſte voſtre-tres-honoreé ’ere, dais rou
+        tes les guerres eſtrangeres &amp; domeſtiques que nous
+        auons eüs. Et ccrtes, SIR E, que n’ont-ils pas fait
+         ſous le voſtre, conduits par Monſieur le Prince. Les
+        inſignes progrez qu’il a faits dans la Ilandre pour
+        la gloire de voſtre nom, &amp; pour l’accroiſſement de
+        cette Monarchie ne ſcauroient paſſer que pour des
+        miracles dans l’eſprit des plus clairs voyans, tant ils
+        ſone d’vne naturc inconceuale. Voitre Maieſté
+        qui n’auoit autre intention de fairc la guerre que
+        pour auoir la paix, voyant que c Prince auoit tou
+        tes les qualitea d’vn illuſtre Conquerart, &amp; quc ſa
+        condition dc premier Prince du Sang luy donnoit
+        vn grand creditſur tous les principau de l’armeée,
+        l’obligea de s’en aller en Flandre où il gagna des
+         Barailles, &amp; fit des Conqueſtes que la poſtcrité ne
+        pourra iamais croire, tant ces actions ſemblent
+        eſtre au deſſus de la portee des hommes. Quicon
+        que n’a pas vn grain de foy pour les miracles, n’en
+        aura iamais pour des ations de cette naturc, s’il nc
+        la veur liberalement donner à la cmplaſance, ou
+        bien à la gloire d’vn corps dont il ſe peut dire cſtre
+         vne partie.
+         Iay veu, i’ay vaincu, diſoit Alexandrc: mais ce
+         Prince en pouuoit bien dirc de meſme, puis qu’il a
+        forceé́ vingt-quarre ou vingt-cinq placs, &amp; gagné
+        quarre ou cinq ſanglantes ’arailles,contre toute
+         ſorre d’apparences humaincs. A t’il iameis rien fait
+        D 
+        14
+        qu’entaſſcr lauriers ſur lauriers, tant il ſç̧auoit l’art
+        de ſurmonter le Enncmis de cette Couronue. A’il
+        iamais aſſicgé ſans prendre. La terreur de ſes armes
+         obligeait les habitans des places à luy porter les
+        cIefs, &amp;Là rcceuoirles conditions telles qu’il luy plai
+        ſoit de les leur faire: car la generoſité de ceux qui
+        les deffendoient ou qui les vouloient deffendre,
+        n’eſtoit qu’vne vaine protection contre vne puiſſan
+        ce à tout aſſubjetir comme la ſienne. Ils furent con
+        trains de s ’humilier aux decrets de leur ſort, &amp; de
+        cherchcrleurs ſuretez dans leur mauuaiſe deſtiné́e.
+        De ſorte que le capituler &amp; ſe rendre, leur furent
+        des moyens beaucoup plus auantageux que tout ce
+        qu’ilsauroient ſçeu pratiquer pour leur deffences.
+        L’Eſpagne ne ſe plaint-elle pas encore du ſang que
+        ſes coups luy ont fait épancher, &amp; des places que ſa
+        Valeur luy a priſes Et la Flandre ne fremit elle pas
+        au ſeul bruit de l’eſlargiſſement de ce Vainqueur
+        inimitable. Et tout cela, S I R E, ne ſont-ce pas des
+        effets qui obligent voſtre Majeſté à le conſiderer
+        comme vn Heros qui peut remettre l’Eſtar en ſa
+        plus haute ſplendeur, ou du moins à forcer toute
+        I’Europe à fairevne Paix generale, telle qu’il plaira
+        aà̀ voſtre Maicſte de la faire. Ilneſt point de Roy ſi
+        puiſſant, ſi genereux, ny ſi entendu aux affaires, qui
+        n’ait beſoin de l aſſiſtance d’vn grand homme d’E
+        ſtar, &amp; d’vn grand Conquerant pour mieux reuſſir.
+        en toutes ſes entrepriſes. Ce qui ſe trouue parfaite
+        ment bien en la perſonne de ce Prince, &amp; ie ne ſça
+        che point d’homme ſi doué d’excellentes qualitez
+        qui ne face vanité de le ſuiure en toutes ſes entreprr
+        ſes. ll a vne parfaite connoiſſance des hommes, des
+        affaires, des pays, &amp; ſi il eſt ſç̧auant à toures ſortes
+        d’oceurrences. Il n’arien qui reſſente la flarerie, ny
+        la laſchetc &amp; moins encore la ſeruitude. Il ne per¬ 
+        met pas que ſon intereſt marche deuant le voſtre, ny
+        deuant celuy du pnblic; qui eſt l’eſcueil où les eſptits
+         ambitieux &amp; mercenaires ſe plongent ordinairemant
+        pour auancer leurs affaires, Enfin il a l’ordre en ſes
+        diſcours, la ſincerté en ſes oppnions, la conſtance &amp;
+        le ſecret aux commandemens, la diligence &amp; la fa
+        cilité aux reſolutions, &amp; la fidelirte dans toute ſorfe
+        de ſetuice, Et cetes, SI RE, celuy qui eſt admisé
+         de tous come luy, ne ſç̧auroit eſtre comparé à per
+        ſonn. Il faut eſtre monté bien haut pour ateeinde à
+        des qualitez ſi teleués que les ſiẽnes. Il parle aux hom
+        mes camme s’il parloit à Dieu, il nomme les choſes
+        par leur nom, il fauoriſe ouuertement les bons, il re
+        prend doucement ceux qui ont failli,il n’a point-d’o
+        reilles pour les mauuais rapports, ny pout les meſdi
+        ſances, ny pour les flateries, &amp; s’il faut diſſimuler pour
+        leſecret, il le fait ſi ſobrement, que l’innocence ny la
+        vetté ne s’en ſçauroit iamais plamdre: la Reyne meſ
+        ne auant ſa detention luy. confioit ſes plus ſecretes
+        penſees, e,
+        Mais cmmerien ne mangue où la grace abonde,
+        ie tiens quagi n’a tant ay dé à ſon eſlargiſſement qua
+        la pieté dont iA accompagnoit les prieres qu’il faiſoit
+        à Dieu. &amp; l’affection qu’il auoit conceuë pout le bien
+        Commun de la Parrie: Car s’il a fait autrefois quelque
+        choſe qui n’ait pas eſté ſost agreable à tous les peuples
+        de France, il la fait pour auoir pas oſé deſobeyr au
+        Commandement qu’on luy en auot fait de la part de
+        Voſfe Maiaſté, &amp; en celail n’agiſſoit pas tant en mau
+        uais Franç̧ois, qu’en ſeruiteur zellé pour voſtre ſerui
+        ce. S’il auoit de la repugnance à faire ce qu’il faiſoit, il
+        Cn auoit encore plus à ne pas ſuiure les ordres qu’on
+        luy donnoit de la part de ſon Prince: Lamiué des
+        Roys ne s’acquiert que par ceux qui s’accomod ens
+        Aux inclmatuions de leur ieuneſſe, ou a xereices &amp; 
+        16
+        p aſſions de leurs plaiſits ouà liceroiſſement de leurs
+        finances, ou bien à l’eſtendue de leurs conqueſtes.
+        C’eſt ce qui le faiſoit agir contreſa propre conſcience
+         ſachã̃t bien qu’vnſuiet de quelque cõditon qu’il puile
+        eſtre, ſe doit reſoudré à la hort ou à l’obeiſſance de
+        ſon Souuerain, ainſi qu’il arriua à Nabot lſraëlite, le
+        quel ayãt refuſé ſa vgne à Aehab, qui eſtoit vne choſe
+        de bien moindre importance que celle qu’on luy cõ
+        mahdot, fut contraime de perdre ſa vie &amp; ſon herita
+        gt tout emſemble pour auoir deſobey à ce Prince.
+        Ce n’eſt pourtant pas que l’authorité du Roy ne
+        doiuent eſtre douce, puis qu’il a non ſeullement la na
+         ure pour guide: mais encore l’Autheur de la narure
+         meſme, lequel rend à̀ chacun ce qui luy a ppartient ſe
+         lon ſes merites. On ne void rien dans les Hſtoires,
+        que des Rois punis pour auoir indignement traitté
+         lenrs peuples. Ce n’eſt pas vne authorité Roy ale que
+        de ſe faire voir ennronné de terreurs, &amp; de marcher
+         par tont ſur les cédres de ſes ſbicts &amp; deſes villes fu.
+        mantes. L’authonité Roy ale eſt vn rayon de la diui
+        nité &amp; vne trés-grarlde veneratton que nous auons
+         pour la perſonne du ’rince: &amp; iles Roys n’ont iàmas
+        eſté ecreeés que poür le bien de ceux que Diecu a voulu
+        ſousmettre aà leur Empire: Les bons Roys font proſ
+        perer les Royaumes,; &amp; les lfraë lites onteſté tres hu
+        reux lors quils ont eté regis pas de bôs Princes: mais
+        au contraire ils ont eſte touſiours affligéz ſous des
+        Achis, ſous des Amons, &amp; ſous des Manaſſez Mais
+        vous. SIR E, qui ne nous auez eſté donné de Dieu que
+        pour noſtre bien, oùsnous ferez la grace d’imit et
+        Ioſias, en toutes ſes aCtions -lequel apres s’eſtre rendu
+        ſç̧auant en la Loy, aſſemblarous les plus anciens de
+        ſon Roy aume &amp; accompagné de tons les Prophetes,
+        &amp; de tous les Sacrficareurs, monta aû Temple. &amp;
+        ’eſtant aſſis enſon ſiege fit alliance deuant Dieu, d’o
+        beir 
+        17
+        beir à ſes Sratuts, à ſes Conſtitutions &amp; à ſes Ordon
+        ances, &amp; fit promettre à tous ſes Subiets, d’aceom
+        plir toutes les parolles de l’Alliance, ſelon la paction
+        du Dieu de leurs peres, ce qu’ils garderent tout le
+        temps de la vie de ce Prince.
+        I’eſpere, SI R E, que vous en ferez de meſme, &amp;
+        qu’apres vous eſtre rendu ſçauant en la Loy, qui eſt ſe.
+        lon Pindare, la Reine de Deu &amp; des hõmes, ou pour
+        en parler plus raiſonnablement auec Demoſtene, vn
+        don de Dieu, &amp; vne inuention &amp; ordonnance des Sa
+        ges, pour reprimer les malefices, &amp; maintenir la Re
+        publque, à la regle de laquelle chacun doit dreſſer
+        le cours de ſa vie, que voſtre Maieſté aſſemblera tous
+        lIes plus anciens de ſon Royaume pour en former vn
+        bon Conſeil, ou ſe reſoudront ſagement &amp; prudem
+        ment, ſans intereſt &amp; ſelon Dieu, toutes les affaires les
+        plus eſpineuſes, afin de nous redonner ce Siecle d’or
+        dont ioüſſoient nos premiers peres. Et puis apres re
+        gner, &amp; entre celuy qu regne, l’vn &amp; l’autre n’ont
+        qu’vn meſme ôut, qui eſt le ſalut de l’Eſtat. &amp; tous les
+        deux ſont ordonnez pour le bien de la Patre: &amp; c’eſt
+        pour cela qu’on dit que ſeruir au Senat c’eſt regner, &amp;
+        que regner eſt vne eſpece de ſeruitude. De maniere
+        que celuy qui ſçat bien ſeruir le Ptince, ſeait bien
+        ſeruir l’Eſtat, &amp; qui ſç̧ait bien ſeruit l’Eſtat ſeait bien
+        ſeruir le Prince. Ordonner ou conſeiller ce qu’il
+        faut qu’on ordonne eſt vne meſme choſe.
+        Voilà, SlR E, vne partie des qualitez d’vn Prin
+        ce pour la deliurance duquel toure la France vous re
+        mercie, &amp; d’vn Prince, SIR E, qui ſera vn iour
+        voſtte bras dtoit en la conqueſte de la Terre-Sainte.
+        Et voilà, SIRE, les grandes obligations que touite la
+        Pr’ance vous a, de luy auoir redonné celuy qui doit
+        eſtendreſes limites par tout o le Soſerl eſtend ſa lu
+        miere; tout le monde ſcait bien que Dieu &amp; la Natu
+        . 
+        18
+        re l’ont doü̈é de toutes les gracés qu’on ſç̧auroit deſi
+        ret en la perſonne d’vn Prince, ſon eſprit eſt ſubil,
+        penetrant &amp; fort vniuerſel. Son courage inuincible,
+        ſon parlert concis &amp; ſententieux, &amp; ſa dextetitc imcõ.
+        parable. On vod bien qu’il a l’œil vgilant, le viſage
+        benin, &amp; la conſtancefort belle. Ceux qui ont l’hon-
+        neur de l’approcher voyaãt ſon naturel &amp; ſon humeur,
+        ſont cout raints d’auoüer qu’il eſt l’vn’que en ſon eſpe
+        ce.. Toutes ces excellentes qualitez qui paroiſlen
+        éminemment en ſa perſonne me donneront, s il
+        vous plaiſt, SlRE, la liberté de vous dire en fa
+        faueur, ce que peut-eſtre homme du monde ne vous
+        oſeroit dire, tant la Maieſté des Roys eſt enuironnée
+        de flateurs &amp; d’hypocrites, contre la volonté́ de So
+        lon: Car il dt qu’il ne faut point approcher des grãds
+        que pour leur dire la verité des choſes: mas il la leur
+        faut dire auec paroles de ſoye, ainſi que Parſatis me
+        re de Cyrus nous l’enſeigne.
+        Il faut grand Roy, que vous teniez touſiours ce
+        Prince pres de voſtre perſonne, afin qu’il ne s’eſloi
+        gne de vous non plus que l’ombre de ſon corps, que
+        les rayons du Soleil de leur Aſtre, que le ruiſſeau
+        de ſa ſource, que la tige de ſon arbre, que le corps de
+        ſon ame, ni que l’homme de celuy qui luy a donn é
+        l’eſtre. Les Planetes ne ſortent iamais de leur Zodia
+        ques, ou ſi par vn mouuement deſreglé il arriue qu’el
+        les enſortent, tout lVniuers en eſt troublé, &amp; out
+        le monde ſublunaire ſe trouue dàs vne confuſion tres
+        horrible. Les Princes du Sang ſont les vrayes Pla
+        netes du Ciel où voſtre Maeſté reſide, leur lu.
+        miere ne ſe tire que de la preſence de leur Sou
+        uerain, qui eſt le veritable Soleil de ces Planettes rai
+        ſonnables, plus ils en approchent&amp; plus ils ſont ra
+        dieux au reſte des hommes,plus ils vous aggreeront,
+        &amp; plus ils en ſeront conſiderables. Simboliſant auec 
+        vos volontez, &amp; cherſſſant ceux que vous cheriſſez,
+        ils en ſeront plus en honneur, plus en authoiité &amp;
+         plus en aſſeurance. I n’y aura faction ſi forte &amp; ſi
+        puiſſante, quelque dangereuſe qu’elle piſſe eſtre,
+        qui s’oſe eſl euer contre eux, quand voſtre Maieſté les
+        tiendra ſous vne protecton ſi conſiderabie que la vo.
+        ſtre, ny Monarque ſi grand &amp; ſi redoutable en toute
+        l’Europe qui veüille entreprendre d’armer contre
+        vous, quand ils ne vous abandonneront iamais, &amp;
+        qu’ils ſeront touſiours preſts d’expoſer leurs biens &amp;
+        leurs vies pour voſtre ſeruice. Ainſi voſtre Maieſté
+        leur ſeruira de Prorecteur, contre leurs enuieux, &amp;
+        ces illuſtres Heros vous ſeruiront de rempart contre
+        tous les plus gtands dela terre. Voyez de grace a
+        preés celà, SIRE, ſi toute la France n’eſt pas bien
+        obligée de vous remercier, comme el le fait par mon
+        entremiſe, de la deliurance de ces Princes, puis
+        qu’ils ſont ſi neceſſaires à Voſtre Maieſté, &amp; puis
+        qu’ils doiuent faire le ſalut de toute cette Monar
+        chie.
+        FIN.			</p>
+		</body>
+	</text>
 </TEI>

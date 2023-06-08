@@ -1,605 +1,1107 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau495_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Avis charitables et burlesques aux religieuses réfugiés
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Avis charitables et burlesques aux religieuses réfugiés
           dans Paris, sur leurs occupations ordinaires.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=kW08AAAAcAAJ"/>
-          <author/>
-          <title source="Moreau">Avis charitables et burlesques aux religieuses réfugiés (sic) dans
+					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+				<availability n="cc-by" status="restricted">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=kW08AAAAcAAJ"/>
+					<author/>
+					<title source="Moreau">Avis charitables et burlesques aux religieuses réfugiés (sic) dans
             Paris, sur leurs occupations ordinaires.</title>
-          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>
-            <persName>Sans Nom</persName>
-          </publisher>
-          <date source="Moreau" when="1652">1652</date>
-          <extent>
-            <measure quantity="12" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2867714">Munich</settlement>
-            <institution>Bibliothèque de l'État de Bavière</institution>
-            <repository/>
-            <idno type="cote"/>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>False</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+					<publisher>
+						<persName>Sans nom</persName>
+					</publisher>
+					<date source="Moreau" when="1652">1652</date>
+					<extent>
+						<measure quantity="12" unit="page"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2867714">Munich</settlement>
+						<institution>Bibliothèque de l'État de Bavière</institution>
+						<repository/>
+						<idno type="cote"/>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>False</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine"/>
-        <p source="Moreau">495. Avis charitables et burlesques aux religieuses réfu- glés (sic) dans
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine"/>
+				<p source="Moreau">495. Avis charitables et burlesques aux religieuses réfu- glés (sic) dans
           Paris , sur leurs occupations ordinaires. Paris , 1652, 12 pages. Rare. Il ne faut pas
           juger trop sévèrement cette pièce sur le titre.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">vers</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-04-06" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>ADVIS CHARITABLE
-        <lb/>ET BVRLESQVES
-        <lb/>AVX
-        <lb/>RELIGIEVSES
-        <lb/>REFVGIEZ DANS PARIS,
-        <lb/>ſur leurs occupations ordinaires.
-        <lb/>A PARIS,
-        <lb/>M. DC. LII. <pb n="2"/>
-        <pb n="3"/>
-        <lb/>3
-        <lb/>EPISTRE ENIGMATIQVE
-        <lb/>à vne Religieuſe de l’Orde
-        <lb/>de ſainct Bernard. <l>
-          <lb/>TRes fine pele de voſtre-Ordre,</l>
-        <l>
-          <lb/> l ni saluan nloei nmrdi</l>
-        <l>
-          <lb/>lais dont la ſublime vetu’:</l>
-        <l>
-          <lb/>le ien i ſe pieds ahouanu.</l>
-        <l>
-          <lb/>lu qur toutea oieaur duine</l>
-        <l>
-          <lb/>ele &amp;t deuoe emnunun e r</l>
-        <l>
-          <lb/>ldis ne ne ſis ps lenmnn</l>
-        <l>
-          <lb/>li ernune ſdes ouienrne</l>
-        <l>
-          <lb/>lee doer de pueunire.</l>
-        <l>
-          <lb/>e l nus loaloir de ni¬¬</l>
-        <l>
-          <lb/>il le ei i oe rlenun</l>
-        <l>
-          <lb/>lſqens l’on cdnun lſes</l>
-        <l>
-          <lb/>e e nuns dependui pli</l>
-        <l>
-          <lb/> ennr ele peuſi le ein a nue.</l>
-        <l>
-          <lb/> un ene re eie neonenes</l>
-        <l>
-          <lb/> lun eſeſoue eireun</l>
-        <l>
-          <lb/> lioe idui e une nnne</l>
-        <l>
-          <lb/>&amp;o pnus leuir qo, qe ran a</l>
-        <l>
-          <lb/>Seie l el nun edeudene</l>
-        <l>
-          <lb/> nu en neune ne loeen</l>
-        <l>
-          <lb/>A i</l>
-        <l>
-          <lb/>a-</l>
-        <pb n="4"/>
-        <l>
-          <lb/>Et que voſtré ame eſt aſſez forte,</l>
-        <l>
-          <lb/>Outre la graca qui l’eſcorte</l>
-        <l>
-          <lb/>De ſa propre &amp; ſeule raiſon,</l>
-        <l>
-          <lb/>Pour tenir le corps en prifon,¬</l>
-        <l>
-          <lb/>Au milieu meſme du grand Monde,</l>
-        <l>
-          <lb/>Où touſiours l Demon fait ronde,</l>
-        <l>
-          <lb/>Vous ſçauez dompter vos deſirs</l>
-        <l>
-          <lb/>Pour la douleurs &amp; les plaiſirs;</l>
-        <l>
-          <lb/>Et comme on vous oit inuincible</l>
-        <l>
-          <lb/>Apres vne mort tres-ſenſible,</l>
-        <l>
-          <lb/>L’on vous voit ſans infirmitez,</l>
-        <l>
-          <lb/>Au milieu de nos vanitez,</l>
-        <l>
-          <lb/>Où mainte &amp; mainte qui ſuccombe,</l>
-        <l>
-          <lb/>Apres auoir chancelé tombe,</l>
-        <l>
-          <lb/>Car helas il s’en trouue peu,</l>
-        <l>
-          <lb/>Qui ne bruſle ſi prés du feu;</l>
-        <l>
-          <lb/>Peu dont la vertu ne seſtonne</l>
-        <l>
-          <lb/>Et que la chair ne deſarçonnus </l>
-        <l>
-          <lb/>De fait ou de conſentement</l>
-        <l>
-          <lb/>Malgré́ le ſaint Commandement.</l>
-        <l>
-          <lb/>C’eſt aux imbecilles tenmt́es,!</l>
-        <l>
-          <lb/>Qui peuuent eſtre ſurmontées,l</l>
-        <l>
-          <lb/>Que ioffe ce preſerupatif</l>
-        <l>
-          <lb/>Contre l’amoureux lenitif;</l>
-        <l>
-          <lb/>Vous eſtes hors de ſes attaintes;¬.</l>
-        <l>
-          <lb/>Future Compagne des Sainctesp v7</l>
-        <l>
-          <lb/>e que l’ay voulu que lonoiei</l>
-        <l>
-          <lb/>A la teſte de cet eſcrir,</l>
-        <l>
-          <lb/>.</l>
-        <l>
-          <lb/>Non</l>
-        <pb n="5"/>
-        <l>
-          <lb/>Noi pas n proles ſi claire,</l>
-        <l>
-          <lb/>Que ce ne ſoient ſombrés myſteres,</l>
-        <l>
-          <lb/>Pour ceux qui ne vous connoiſtront</l>
-        <l>
-          <lb/>Mais qui tous n’apparoiſtront,</l>
-        <l>
-          <lb/>Sans que l’eſprit on.s’alambique,</l>
-        <l>
-          <lb/>Aqui ſçaura la Scholaſtique,</l>
-        <l>
-          <lb/>Que ſi vous deſirez ſçauoit</l>
-        <l>
-          <lb/>Doì i’eſcris quand on me peut voir,</l>
-        <l>
-          <lb/>Mon pys, comme ie m’appelle,</l>
-        <l>
-          <lb/>Et ſi ie ſuis maſle ou femelle,</l>
-        <l>
-          <lb/>le ſuis maſle pour vous ſeruir,</l>
-        <l>
-          <lb/>on pom pour ne vous point mentir,</l>
-        <l>
-          <lb/>Neſt ps dans le Martyrologe,</l>
-        <l>
-          <lb/>Pep le ſuis Alobroge,?</l>
-        <l>
-          <lb/>Ou fai bonne chere qui peut,</l>
-        <l>
-          <lb/>Au eſte on me voit quand on veut,</l>
-        <l>
-          <lb/>lamais encore on n’y fit preſſe,</l>
-        <l>
-          <lb/>E ie vous eſerits dé luteſſe,</l>
-        <l>
-          <lb/>Des Vers prés de ſoixante &amp; dis,</l>
-        <l>
-          <lb/>Ma bonne Sœur adieu vous dis.</l>
-        <pb n="6"/>
-        <pb n="7"/>
-        <l>
-          <lb/>6.</l>
-        <l>
-          <lb/>AAâaAAAââô¬</l>
-        <l>
-          <lb/>sas</l>
-        <l>
-          <lb/>Epggprgpgpp:p</l>
-        <l>
-          <lb/> . . </l>
-        <l>
-          <lb/>JST ¬</l>
-        <l>
-          <lb/>* r a</l>
-        <l>
-          <lb/>1 </l>
-        <l>
-          <lb/>AI.!</l>
-        <l>
-          <lb/>ADVIS SA Vr N E</l>
-        <l>
-          <lb/>aux jeunes Sœurs fugitifs.</l>
-        <l>
-          <lb/>̃¬</l>
-        <l>
-          <lb/>r s </l>
-        <l>
-          <lb/>Qulls &amp;e dhuſtes ugnue..</l>
-        <l>
-          <lb/>Des lieux qui vous eoient capue</l>
-        <l>
-          <lb/>11</l>
-        <l>
-          <lb/>Captiues ſous le bon plaſſir</l>
-        <l>
-          <lb/>Di Dieu qui fait voſtre’deſir;</l>
-        <l>
-          <lb/>Vous qu’vne celeſte alliance</l>
-        <l>
-          <lb/>Souſtrait à l’humaine aceoinrante</l>
-        <l>
-          <lb/>Vous qui le veu disjunetif,</l>
-        <l>
-          <lb/>lntetdit le copulatif,</l>
-        <l>
-          <lb/>Ieues victimes ſans macules,</l>
-        <l>
-          <lb/>Tous, dis je, qui dans vos Cllules;</l>
-        <l>
-          <lb/>Nenfiles que des Chappelots,</l>
-        <l>
-          <lb/>Ou bien joés aux oſſelets,</l>
-        <l>
-          <lb/>Pendant que nous aueres au monde1</l>
-        <l>
-          <lb/>Où tout vice; &amp; tout mal abonde3</l>
-        <l>
-          <lb/>Ne ceſſons de nous employer?.</l>
-        <l>
-          <lb/>A le croiſtre &amp; multipliet.’</l>
-        <l>
-          <lb/>En ce rude temps que belloné</l>
-        <l>
-          <lb/>N’eſpargne &amp; n’oublie perſonne</l>
-        <l>
-          <lb/>Que les Seigneurs, les Courtiſa¬</l>
-        <l>
-          <lb/> Les Bourgeois, &amp; es Aniſan</l>
-        <pb n="8"/>
-        <l>
-          <lb/>3</l>
-        <l>
-          <lb/>ouffrnt des fureurs Martiales,</l>
-        <l>
-          <lb/>Que vous-meſnes ſaintes veſtales,</l>
-        <l>
-          <lb/>5</l>
-        <l>
-          <lb/>Crainte di Soldat efftonteé,</l>
-        <l>
-          <lb/>Sortez pour vous mettre en ſeuret́,</l>
-        <l>
-          <lb/> 5r 1</l>
-        <l>
-          <lb/>De vos ruches toutes faſcAé́e,</l>
-        <l>
-          <lb/>CIE</l>
-        <l>
-          <lb/>Comma Abeilles effaoucfées,</l>
-        <l>
-          <lb/>Et montre ſe do ao’ Conue,</l>
-        <l>
-          <lb/>De peur d’y monſtrer le deuan</l>
-        <l>
-          <lb/>le veux en ce ſtile vulgaire,</l>
-        <l>
-          <lb/>Vous donner aduis ſalutaie,.</l>
-        <l>
-          <lb/>De peur que Satan capti,!</l>
-        <l>
-          <lb/>Ne vienne faſciner vos yex,</l>
-        <l>
-          <lb/>Et ne donne pauures pucelles,</l>
-        <l>
-          <lb/>Par ſes ordinaires cauell4,</l>
-        <l>
-          <lb/>i</l>
-        <l>
-          <lb/>Apres auoir bien combat,..7!</l>
-        <l>
-          <lb/>Crioc en jambe à̀ voſtie Vertu,.</l>
-        <l>
-          <lb/>Car au trauers des ſacrea voiles,</l>
-        <l>
-          <lb/>O ne voit pas tuſiours ſes toiles</l>
-        <l>
-          <lb/>Telle qui croit les é́viter, l</l>
-        <l>
-          <lb/>E</l>
-        <l>
-          <lb/>S’y vient tout droit precipiter,,:</l>
-        <l>
-          <lb/>Quand le bien au mal fait la planche,</l>
-        <l>
-          <lb/>On peut ſuiure l’iniquité,.</l>
-        <l>
-          <lb/>Et qu’vn pretexte aſſez plaufible</l>
-        <l>
-          <lb/>La couure &amp; la rend inuiſible:¬</l>
-        <l>
-          <lb/>Ainſi vous que ce tude -emps,</l>
-        <l>
-          <lb/>O l’o yjt ant de combataps,.</l>
-        <l>
-          <lb/>..</l>
-        <l>
-          <lb/>Et la plus ſaincte branſle au manche,.</l>
-        <l>
-          <lb/>Qand ſoubs couleur de pié.</l>
-        <l>
-          <lb/>1</l>
-        <l>
-          <lb/>7</l>
-        <l>
-          <lb/> Atiré</l>
-        <pb n="9"/>
-        <l>
-          <lb/>A tiré de vos Monaſteres,</l>
-        <l>
-          <lb/>Ou vous faiſiés choſes auſteres,</l>
-        <l>
-          <lb/>Tenans tout le monde à meſpris,</l>
-        <l>
-          <lb/>Gardes- vous, mes Sœurs qu’à Paris,</l>
-        <l>
-          <lb/>Suiuant la naturelle pante,</l>
-        <l>
-          <lb/>Vous ne faſſiés choſe plaiſante,</l>
-        <l>
-          <lb/>Longue abſtinence met en gouſt.</l>
-        <l>
-          <lb/>Et l’habit ne fait apres tout,</l>
-        <l>
-          <lb/>Ny le Moine, ny la Moineſſe,</l>
-        <l>
-          <lb/>En tous eſtats le corps nous preſſe,</l>
-        <l>
-          <lb/>Et nous pouſſe à̀ l’amoureux choc,</l>
-        <l>
-          <lb/>Et ſous la juppe &amp; ſous le froc.</l>
-        <l>
-          <lb/>Mais crainte de quelque ſurpriſe,</l>
-        <l>
-          <lb/>Voiey de quoy ie vous aduile,</l>
-        <l>
-          <lb/>Lon vous à mille fois preſche,</l>
-        <l>
-          <lb/>Que laiſe nourit le peché,</l>
-        <l>
-          <lb/>Que contre ſa flatteuſe amorce,</l>
-        <l>
-          <lb/>loiſiueté nous rend ſans force,</l>
-        <l>
-          <lb/>Croyez ce poinct tres important,</l>
-        <l>
-          <lb/>Et qu’il n’eſt rien de ſi conſtant,</l>
-        <l>
-          <lb/>Sans doute dans cette entrefaite,</l>
-        <l>
-          <lb/>Maſet qui n’eſtoit pas maſette,</l>
-        <l>
-          <lb/>Trouua moyen de badiner,</l>
-        <l>
-          <lb/>Et fit mainte Nonne nonner,</l>
-        <l>
-          <lb/>Vous en ſçaué́s ie le veux croire,</l>
-        <l>
-          <lb/>La notable &amp; plaiſante hiſtoire,</l>
-        <l>
-          <lb/>Mais ſçachez auſſi qu’en ce lieu</l>
-        <l>
-          <lb/>Loiſiueteé donna beau jeu</l>
-        <pb n="10"/>
-        <l>
-          <lb/>ie</l>
-        <l>
-          <lb/>A ce ecoq à poulles grilĺes,</l>
-        <l>
-          <lb/>Que ſi ces jeunes eſueillées</l>
-        <l>
-          <lb/>Euſſent eu quelque autre joü̈et</l>
-        <l>
-          <lb/>Que faire parler vn Muet,</l>
-        <l>
-          <lb/>De l’exercice ſouſtenuë,</l>
-        <l>
-          <lb/>Leur vertu s’eſtant deffenduë,</l>
-        <l>
-          <lb/>Eut vaincu dans cette maiſon,</l>
-        <l>
-          <lb/>La prophane demangaiſon,</l>
-        <l>
-          <lb/>Ne demeurez donc pas oiſiues,</l>
-        <l>
-          <lb/>Belles &amp; charmantes captiues,</l>
-        <l>
-          <lb/>Au monde ou voyans vos attraits,</l>
-        <l>
-          <lb/>Tous les hommes ſont des Maſets,</l>
-        <l>
-          <lb/>Que chacune de vous trauaille,</l>
-        <l>
-          <lb/>Et metre en œuure de la paille,</l>
-        <l>
-          <lb/>Dont chacun doit eſtre aſſorty,</l>
-        <l>
-          <lb/>S’il eſt fidelle au bon Party,</l>
-        <l>
-          <lb/>C’eſt vn labeur ſainctes veſtales,</l>
-        <l>
-          <lb/>Digne de vos mains virginales,¬</l>
-        <l>
-          <lb/>Cette matiere eſt de vil prix,</l>
-        <l>
-          <lb/>Vos doits ne ſeroient point repris,</l>
-        <l>
-          <lb/>D’augmenter par leur induſtrie,</l>
-        <l>
-          <lb/>Le luxe &amp; la galanterie,</l>
-        <l>
-          <lb/>Faites en donc des Chappelets,</l>
-        <l>
-          <lb/>Des nœuds de gands &amp; de colets,</l>
-        <l>
-          <lb/>Des cordons, des galans, des roſes,</l>
-        <l>
-          <lb/>Et milles autres petires choſes,j</l>
-        <l>
-          <lb/>Mais trauaillez ſecrettement</l>
-        <l>
-          <lb/>Chacune en ſon appartement,</l>
-        <l>
-          <lb/>1</l>
-        <pb n="11"/>
-        <l>
-          <lb/> 11</l>
-        <l>
-          <lb/>Fuyez les giandes cCompagaies,</l>
-        <l>
-          <lb/>Les pompes, les ceremonies,</l>
-        <l>
-          <lb/>De peur que quelque doux efſort</l>
-        <l>
-          <lb/>Ny reſueilla le chat qui dort,</l>
-        <l>
-          <lb/>Qau gand dehonour de lEgliſe,</l>
-        <l>
-          <lb/>Quelqu’vn ne vous ſeulaiſe,¬</l>
-        <l>
-          <lb/>Songez que le ſort vous a mis</l>
-        <l>
-          <lb/>Parmy vos plus grands ennemis,</l>
-        <l>
-          <lb/>De vout vous deuez prendre ombrage,</l>
-        <l>
-          <lb/>Saſer le chat loin du fronage,</l>
-        <l>
-          <lb/>Et nabandonner point vos ſens,</l>
-        <l>
-          <lb/>Aux obijets les plus innocens,</l>
-        <l>
-          <lb/>Redoutez quoy que l’on vous die,</l>
-        <l>
-          <lb/>Ies leus, le Cours, la Comedie,</l>
-        <l>
-          <lb/>Les complimens du plus diferer,</l>
-        <l>
-          <lb/>lais ſur tout l’entretient ſeeret,</l>
-        <l>
-          <lb/>L’anmout eſt vne fime beſte,</l>
-        <l>
-          <lb/>Pur la moadaine &amp; la Nonnette,</l>
-        <l>
-          <lb/>Ee ee Prohee dangereux,</l>
-        <l>
-          <lb/>Aendant le moment heureux,</l>
-        <l>
-          <lb/>Chaque iour a fome nouele,</l>
-        <l>
-          <lb/>daius eufin pend la naurele,</l>
-        <l>
-          <lb/> leut fait bien toſt aduouer,</l>
-        <l>
-          <lb/> quel prix on s’y peut jouer.</l>
-        <l>
-          <lb/>Puiſie vous deuotes pueeles</l>
-        <l>
-          <lb/>algre ſes traits demeurer tellas,</l>
-        <l>
-          <lb/>Et puiſſe en vous la chatite,</l>
-        <l>
-          <lb/>Gourmander la fragilité,</l>
-        <pb n="12"/>
-        <l>
-          <lb/>1i</l>
-        <l>
-          <lb/>Choſe certes dure &amp; penible</l>
-        <l>
-          <lb/>A l’appeit concupiſeible,</l>
-        <l>
-          <lb/>Vous le ferez à mon aduis,</l>
-        <l>
-          <lb/>Si vous ſuiuez ces miens deuis;:</l>
-        <l>
-          <lb/>Puiſſiez-vous, dis-je, la paix falteji.¬</l>
-        <l>
-          <lb/>Faire au Conuent bonns retraite, o¬</l>
-        <l>
-          <lb/>Et renoüant vn ſainct Hymen,</l>
-        <l>
-          <lb/>I viure vn Siecle entier. Amen.</l>
-        <lb/>FIN. </p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">vers</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-04-06" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<pb n="8"/>
+				<pb n="9"/>
+				<pb n="10"/>
+				<pb n="11"/>
+				<pb n="12"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<l>
+					<lb/>
+TRes fine pele de voſtre-Ordre,				</l>
+				<l>
+					<lb/>
+l ni saluan nloei nmrdi				</l>
+				<l>
+					<lb/>
+lais dont la ſublime vetu’:				</l>
+				<l>
+					<lb/>
+le ien i ſe pieds ahouanu.				</l>
+				<l>
+					<lb/>
+lu qur toutea oieaur duine				</l>
+				<l>
+					<lb/>
+ele &amp;t deuoe emnunun e r				</l>
+				<l>
+					<lb/>
+ldis ne ne ſis ps lenmnn				</l>
+				<l>
+					<lb/>
+li ernune ſdes ouienrne				</l>
+				<l>
+					<lb/>
+lee doer de pueunire.				</l>
+				<l>
+					<lb/>
+e l nus loaloir de ni¬¬				</l>
+				<l>
+					<lb/>
+il le ei i oe rlenun				</l>
+				<l>
+					<lb/>
+lſqens l’on cdnun lſes				</l>
+				<l>
+					<lb/>
+e e nuns dependui pli				</l>
+				<l>
+					<lb/>
+ennr ele peuſi le ein a nue.				</l>
+				<l>
+					<lb/>
+un ene re eie neonenes				</l>
+				<l>
+					<lb/>
+lun eſeſoue eireun				</l>
+				<l>
+					<lb/>
+lioe idui e une nnne				</l>
+				<l>
+					<lb/>
+&amp;o pnus leuir qo, qe ran a				</l>
+				<l>
+					<lb/>
+Seie l el nun edeudene				</l>
+				<l>
+					<lb/>
+nu en neune ne loeen				</l>
+				<l>
+					<lb/>
+A i				</l>
+				<l>
+					<lb/>
+a-				</l>
+				<l>
+					<lb/>
+Et que voſtré ame eſt aſſez forte,				</l>
+				<l>
+					<lb/>
+Outre la graca qui l’eſcorte				</l>
+				<l>
+					<lb/>
+De ſa propre &amp; ſeule raiſon,				</l>
+				<l>
+					<lb/>
+Pour tenir le corps en prifon,¬				</l>
+				<l>
+					<lb/>
+Au milieu meſme du grand Monde,				</l>
+				<l>
+					<lb/>
+Où touſiours l Demon fait ronde,				</l>
+				<l>
+					<lb/>
+Vous ſçauez dompter vos deſirs				</l>
+				<l>
+					<lb/>
+Pour la douleurs &amp; les plaiſirs;				</l>
+				<l>
+					<lb/>
+Et comme on vous oit inuincible				</l>
+				<l>
+					<lb/>
+Apres vne mort tres-ſenſible,				</l>
+				<l>
+					<lb/>
+L’on vous voit ſans infirmitez,				</l>
+				<l>
+					<lb/>
+Au milieu de nos vanitez,				</l>
+				<l>
+					<lb/>
+Où mainte &amp; mainte qui ſuccombe,				</l>
+				<l>
+					<lb/>
+Apres auoir chancelé tombe,				</l>
+				<l>
+					<lb/>
+Car helas il s’en trouue peu,				</l>
+				<l>
+					<lb/>
+Qui ne bruſle ſi prés du feu;				</l>
+				<l>
+					<lb/>
+Peu dont la vertu ne seſtonne				</l>
+				<l>
+					<lb/>
+Et que la chair ne deſarçonnus				</l>
+				<l>
+					<lb/>
+De fait ou de conſentement				</l>
+				<l>
+					<lb/>
+Malgré́ le ſaint Commandement.				</l>
+				<l>
+					<lb/>
+C’eſt aux imbecilles tenmt́es,!				</l>
+				<l>
+					<lb/>
+Qui peuuent eſtre ſurmontées,l				</l>
+				<l>
+					<lb/>
+Que ioffe ce preſerupatif				</l>
+				<l>
+					<lb/>
+Contre l’amoureux lenitif;				</l>
+				<l>
+					<lb/>
+Vous eſtes hors de ſes attaintes;¬.				</l>
+				<l>
+					<lb/>
+Future Compagne des Sainctesp v7				</l>
+				<l>
+					<lb/>
+e que l’ay voulu que lonoiei				</l>
+				<l>
+					<lb/>
+A la teſte de cet eſcrir,				</l>
+				<l>
+					<lb/>
+.				</l>
+				<l>
+					<lb/>
+Non				</l>
+				<l>
+					<lb/>
+Noi pas n proles ſi claire,				</l>
+				<l>
+					<lb/>
+Que ce ne ſoient ſombrés myſteres,				</l>
+				<l>
+					<lb/>
+Pour ceux qui ne vous connoiſtront				</l>
+				<l>
+					<lb/>
+Mais qui tous n’apparoiſtront,				</l>
+				<l>
+					<lb/>
+Sans que l’eſprit on.s’alambique,				</l>
+				<l>
+					<lb/>
+Aqui ſçaura la Scholaſtique,				</l>
+				<l>
+					<lb/>
+Que ſi vous deſirez ſçauoit				</l>
+				<l>
+					<lb/>
+Doì i’eſcris quand on me peut voir,				</l>
+				<l>
+					<lb/>
+Mon pys, comme ie m’appelle,				</l>
+				<l>
+					<lb/>
+Et ſi ie ſuis maſle ou femelle,				</l>
+				<l>
+					<lb/>
+le ſuis maſle pour vous ſeruir,				</l>
+				<l>
+					<lb/>
+on pom pour ne vous point mentir,				</l>
+				<l>
+					<lb/>
+Neſt ps dans le Martyrologe,				</l>
+				<l>
+					<lb/>
+Pep le ſuis Alobroge,?				</l>
+				<l>
+					<lb/>
+Ou fai bonne chere qui peut,				</l>
+				<l>
+					<lb/>
+Au eſte on me voit quand on veut,				</l>
+				<l>
+					<lb/>
+lamais encore on n’y fit preſſe,				</l>
+				<l>
+					<lb/>
+E ie vous eſerits dé luteſſe,				</l>
+				<l>
+					<lb/>
+Des Vers prés de ſoixante &amp; dis,				</l>
+				<l>
+					<lb/>
+Ma bonne Sœur adieu vous dis.				</l>
+				<l>
+					<lb/>
+6.				</l>
+				<l>
+					<lb/>
+AAâaAAAââô¬				</l>
+				<l>
+					<lb/>
+sas				</l>
+				<l>
+					<lb/>
+Epggprgpgpp:p				</l>
+				<l>
+					<lb/>
+. .				</l>
+				<l>
+					<lb/>
+JST ¬				</l>
+				<l>
+					<lb/>
+* r a				</l>
+				<l>
+					<lb/>
+1				</l>
+				<l>
+					<lb/>
+AI.!				</l>
+				<l>
+					<lb/>
+ADVIS SA Vr N E				</l>
+				<l>
+					<lb/>
+aux jeunes Sœurs fugitifs.				</l>
+				<l>
+					<lb/>
+̃¬				</l>
+				<l>
+					<lb/>
+r s				</l>
+				<l>
+					<lb/>
+Qulls &amp;e dhuſtes ugnue..				</l>
+				<l>
+					<lb/>
+Des lieux qui vous eoient capue				</l>
+				<l>
+					<lb/>
+11				</l>
+				<l>
+					<lb/>
+Captiues ſous le bon plaſſir				</l>
+				<l>
+					<lb/>
+Di Dieu qui fait voſtre’deſir;				</l>
+				<l>
+					<lb/>
+Vous qu’vne celeſte alliance				</l>
+				<l>
+					<lb/>
+Souſtrait à l’humaine aceoinrante				</l>
+				<l>
+					<lb/>
+Vous qui le veu disjunetif,				</l>
+				<l>
+					<lb/>
+lntetdit le copulatif,				</l>
+				<l>
+					<lb/>
+Ieues victimes ſans macules,				</l>
+				<l>
+					<lb/>
+Tous, dis je, qui dans vos Cllules;				</l>
+				<l>
+					<lb/>
+Nenfiles que des Chappelots,				</l>
+				<l>
+					<lb/>
+Ou bien joés aux oſſelets,				</l>
+				<l>
+					<lb/>
+Pendant que nous aueres au monde1				</l>
+				<l>
+					<lb/>
+Où tout vice; &amp; tout mal abonde3				</l>
+				<l>
+					<lb/>
+Ne ceſſons de nous employer?.				</l>
+				<l>
+					<lb/>
+A le croiſtre &amp; multipliet.’				</l>
+				<l>
+					<lb/>
+En ce rude temps que belloné				</l>
+				<l>
+					<lb/>
+N’eſpargne &amp; n’oublie perſonne				</l>
+				<l>
+					<lb/>
+Que les Seigneurs, les Courtiſa¬				</l>
+				<l>
+					<lb/>
+Les Bourgeois, &amp; es Aniſan				</l>
+				<l>
+					<lb/>
+3				</l>
+				<l>
+					<lb/>
+ouffrnt des fureurs Martiales,				</l>
+				<l>
+					<lb/>
+Que vous-meſnes ſaintes veſtales,				</l>
+				<l>
+					<lb/>
+5				</l>
+				<l>
+					<lb/>
+Crainte di Soldat efftonteé,				</l>
+				<l>
+					<lb/>
+Sortez pour vous mettre en ſeuret́,				</l>
+				<l>
+					<lb/>
+5r 1				</l>
+				<l>
+					<lb/>
+De vos ruches toutes faſcAé́e,				</l>
+				<l>
+					<lb/>
+CIE				</l>
+				<l>
+					<lb/>
+Comma Abeilles effaoucfées,				</l>
+				<l>
+					<lb/>
+Et montre ſe do ao’ Conue,				</l>
+				<l>
+					<lb/>
+De peur d’y monſtrer le deuan				</l>
+				<l>
+					<lb/>
+le veux en ce ſtile vulgaire,				</l>
+				<l>
+					<lb/>
+Vous donner aduis ſalutaie,.				</l>
+				<l>
+					<lb/>
+De peur que Satan capti,!				</l>
+				<l>
+					<lb/>
+Ne vienne faſciner vos yex,				</l>
+				<l>
+					<lb/>
+Et ne donne pauures pucelles,				</l>
+				<l>
+					<lb/>
+Par ſes ordinaires cauell4,				</l>
+				<l>
+					<lb/>
+i				</l>
+				<l>
+					<lb/>
+Apres auoir bien combat,..7!				</l>
+				<l>
+					<lb/>
+Crioc en jambe à̀ voſtie Vertu,.				</l>
+				<l>
+					<lb/>
+Car au trauers des ſacrea voiles,				</l>
+				<l>
+					<lb/>
+O ne voit pas tuſiours ſes toiles				</l>
+				<l>
+					<lb/>
+Telle qui croit les é́viter, l				</l>
+				<l>
+					<lb/>
+E				</l>
+				<l>
+					<lb/>
+S’y vient tout droit precipiter,,:				</l>
+				<l>
+					<lb/>
+Quand le bien au mal fait la planche,				</l>
+				<l>
+					<lb/>
+On peut ſuiure l’iniquité,.				</l>
+				<l>
+					<lb/>
+Et qu’vn pretexte aſſez plaufible				</l>
+				<l>
+					<lb/>
+La couure &amp; la rend inuiſible:¬				</l>
+				<l>
+					<lb/>
+Ainſi vous que ce tude -emps,				</l>
+				<l>
+					<lb/>
+O l’o yjt ant de combataps,.				</l>
+				<l>
+					<lb/>
+..				</l>
+				<l>
+					<lb/>
+Et la plus ſaincte branſle au manche,.				</l>
+				<l>
+					<lb/>
+Qand ſoubs couleur de pié.				</l>
+				<l>
+					<lb/>
+1				</l>
+				<l>
+					<lb/>
+7				</l>
+				<l>
+					<lb/>
+Atiré				</l>
+				<l>
+					<lb/>
+A tiré de vos Monaſteres,				</l>
+				<l>
+					<lb/>
+Ou vous faiſiés choſes auſteres,				</l>
+				<l>
+					<lb/>
+Tenans tout le monde à meſpris,				</l>
+				<l>
+					<lb/>
+Gardes- vous, mes Sœurs qu’à Paris,				</l>
+				<l>
+					<lb/>
+Suiuant la naturelle pante,				</l>
+				<l>
+					<lb/>
+Vous ne faſſiés choſe plaiſante,				</l>
+				<l>
+					<lb/>
+Longue abſtinence met en gouſt.				</l>
+				<l>
+					<lb/>
+Et l’habit ne fait apres tout,				</l>
+				<l>
+					<lb/>
+Ny le Moine, ny la Moineſſe,				</l>
+				<l>
+					<lb/>
+En tous eſtats le corps nous preſſe,				</l>
+				<l>
+					<lb/>
+Et nous pouſſe à̀ l’amoureux choc,				</l>
+				<l>
+					<lb/>
+Et ſous la juppe &amp; ſous le froc.				</l>
+				<l>
+					<lb/>
+Mais crainte de quelque ſurpriſe,				</l>
+				<l>
+					<lb/>
+Voiey de quoy ie vous aduile,				</l>
+				<l>
+					<lb/>
+Lon vous à mille fois preſche,				</l>
+				<l>
+					<lb/>
+Que laiſe nourit le peché,				</l>
+				<l>
+					<lb/>
+Que contre ſa flatteuſe amorce,				</l>
+				<l>
+					<lb/>
+loiſiueté nous rend ſans force,				</l>
+				<l>
+					<lb/>
+Croyez ce poinct tres important,				</l>
+				<l>
+					<lb/>
+Et qu’il n’eſt rien de ſi conſtant,				</l>
+				<l>
+					<lb/>
+Sans doute dans cette entrefaite,				</l>
+				<l>
+					<lb/>
+Maſet qui n’eſtoit pas maſette,				</l>
+				<l>
+					<lb/>
+Trouua moyen de badiner,				</l>
+				<l>
+					<lb/>
+Et fit mainte Nonne nonner,				</l>
+				<l>
+					<lb/>
+Vous en ſçaué́s ie le veux croire,				</l>
+				<l>
+					<lb/>
+La notable &amp; plaiſante hiſtoire,				</l>
+				<l>
+					<lb/>
+Mais ſçachez auſſi qu’en ce lieu				</l>
+				<l>
+					<lb/>
+Loiſiueteé donna beau jeu				</l>
+				<l>
+					<lb/>
+ie				</l>
+				<l>
+					<lb/>
+A ce ecoq à poulles grilĺes,				</l>
+				<l>
+					<lb/>
+Que ſi ces jeunes eſueillées				</l>
+				<l>
+					<lb/>
+Euſſent eu quelque autre joü̈et				</l>
+				<l>
+					<lb/>
+Que faire parler vn Muet,				</l>
+				<l>
+					<lb/>
+De l’exercice ſouſtenuë,				</l>
+				<l>
+					<lb/>
+Leur vertu s’eſtant deffenduë,				</l>
+				<l>
+					<lb/>
+Eut vaincu dans cette maiſon,				</l>
+				<l>
+					<lb/>
+La prophane demangaiſon,				</l>
+				<l>
+					<lb/>
+Ne demeurez donc pas oiſiues,				</l>
+				<l>
+					<lb/>
+Belles &amp; charmantes captiues,				</l>
+				<l>
+					<lb/>
+Au monde ou voyans vos attraits,				</l>
+				<l>
+					<lb/>
+Tous les hommes ſont des Maſets,				</l>
+				<l>
+					<lb/>
+Que chacune de vous trauaille,				</l>
+				<l>
+					<lb/>
+Et metre en œuure de la paille,				</l>
+				<l>
+					<lb/>
+Dont chacun doit eſtre aſſorty,				</l>
+				<l>
+					<lb/>
+S’il eſt fidelle au bon Party,				</l>
+				<l>
+					<lb/>
+C’eſt vn labeur ſainctes veſtales,				</l>
+				<l>
+					<lb/>
+Digne de vos mains virginales,¬				</l>
+				<l>
+					<lb/>
+Cette matiere eſt de vil prix,				</l>
+				<l>
+					<lb/>
+Vos doits ne ſeroient point repris,				</l>
+				<l>
+					<lb/>
+D’augmenter par leur induſtrie,				</l>
+				<l>
+					<lb/>
+Le luxe &amp; la galanterie,				</l>
+				<l>
+					<lb/>
+Faites en donc des Chappelets,				</l>
+				<l>
+					<lb/>
+Des nœuds de gands &amp; de colets,				</l>
+				<l>
+					<lb/>
+Des cordons, des galans, des roſes,				</l>
+				<l>
+					<lb/>
+Et milles autres petires choſes,j				</l>
+				<l>
+					<lb/>
+Mais trauaillez ſecrettement				</l>
+				<l>
+					<lb/>
+Chacune en ſon appartement,				</l>
+				<l>
+					<lb/>
+1				</l>
+				<l>
+					<lb/>
+11				</l>
+				<l>
+					<lb/>
+Fuyez les giandes cCompagaies,				</l>
+				<l>
+					<lb/>
+Les pompes, les ceremonies,				</l>
+				<l>
+					<lb/>
+De peur que quelque doux efſort				</l>
+				<l>
+					<lb/>
+Ny reſueilla le chat qui dort,				</l>
+				<l>
+					<lb/>
+Qau gand dehonour de lEgliſe,				</l>
+				<l>
+					<lb/>
+Quelqu’vn ne vous ſeulaiſe,¬				</l>
+				<l>
+					<lb/>
+Songez que le ſort vous a mis				</l>
+				<l>
+					<lb/>
+Parmy vos plus grands ennemis,				</l>
+				<l>
+					<lb/>
+De vout vous deuez prendre ombrage,				</l>
+				<l>
+					<lb/>
+Saſer le chat loin du fronage,				</l>
+				<l>
+					<lb/>
+Et nabandonner point vos ſens,				</l>
+				<l>
+					<lb/>
+Aux obijets les plus innocens,				</l>
+				<l>
+					<lb/>
+Redoutez quoy que l’on vous die,				</l>
+				<l>
+					<lb/>
+Ies leus, le Cours, la Comedie,				</l>
+				<l>
+					<lb/>
+Les complimens du plus diferer,				</l>
+				<l>
+					<lb/>
+lais ſur tout l’entretient ſeeret,				</l>
+				<l>
+					<lb/>
+L’anmout eſt vne fime beſte,				</l>
+				<l>
+					<lb/>
+Pur la moadaine &amp; la Nonnette,				</l>
+				<l>
+					<lb/>
+Ee ee Prohee dangereux,				</l>
+				<l>
+					<lb/>
+Aendant le moment heureux,				</l>
+				<l>
+					<lb/>
+Chaque iour a fome nouele,				</l>
+				<l>
+					<lb/>
+daius eufin pend la naurele,				</l>
+				<l>
+					<lb/>
+leut fait bien toſt aduouer,				</l>
+				<l>
+					<lb/>
+quel prix on s’y peut jouer.				</l>
+				<l>
+					<lb/>
+Puiſie vous deuotes pueeles				</l>
+				<l>
+					<lb/>
+algre ſes traits demeurer tellas,				</l>
+				<l>
+					<lb/>
+Et puiſſe en vous la chatite,				</l>
+				<l>
+					<lb/>
+Gourmander la fragilité,				</l>
+				<l>
+					<lb/>
+1i				</l>
+				<l>
+					<lb/>
+Choſe certes dure &amp; penible				</l>
+				<l>
+					<lb/>
+A l’appeit concupiſeible,				</l>
+				<l>
+					<lb/>
+Vous le ferez à mon aduis,				</l>
+				<l>
+					<lb/>
+Si vous ſuiuez ces miens deuis;:				</l>
+				<l>
+					<lb/>
+Puiſſiez-vous, dis-je, la paix falteji.¬				</l>
+				<l>
+					<lb/>
+Faire au Conuent bonns retraite, o¬				</l>
+				<l>
+					<lb/>
+Et renoüant vn ſainct Hymen,				</l>
+				<l>
+					<lb/>
+I viure vn Siecle entier. Amen.				</l>
+ADVIS CHARITABLE
+        ET BVRLESQVES
+        AVX
+        RELIGIEVSES
+        REFVGIEZ DANS PARIS,
+        ſur leurs occupations ordinaires.
+        A PARIS,
+        M. DC. LII. 
+        
+        3
+        EPISTRE ENIGMATIQVE
+        à vne Religieuſe de l’Orde
+        de ſainct Bernard. 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        FIN.			</p>
+		</body>
+	</text>
 </TEI>

@@ -1,270 +1,426 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1614_GBOOKS">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Harangues faites à la reine régente par mon seigneur le
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Harangues faites à la reine régente par mon seigneur le
           premier président du Parlement.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-        <availability n="cc-by" status="restricted">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://books.google.fr/books?id=J-RBAAAAcAAJ"/>
-          <author ref="isni:0000000121204991">
-            <persName>
-              <forename>Matthieu</forename>
-              <surname>Molé</surname>
-            </persName>
-          </author>
-          <title source="Moreau">Harangues faites à la reine régente par mon seigneur le premier
+					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+				<availability n="cc-by" status="restricted">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://books.google.fr/books?id=J-RBAAAAcAAJ"/>
+					<author ref="isni:0000000121204991">
+						<persName>
+							<forename>Matthieu</forename>
+							<surname>Molé</surname>
+						</persName>
+					</author>
+					<title source="Moreau">Harangues faites à la reine régente par mon seigneur le premier
             président du Parlement.</title>
-          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-          <publisher>
-            <persName>Sans Nom</persName>
-          </publisher>
-          <date source="Moreau" when="1649">1649</date>
-          <extent>
-            <measure quantity="7" unit="page"/>
-          </extent>
-          <note type="format">in-4</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2867714">Munich</settlement>
-            <institution>Bibliothèque de l'État de Bavière</institution>
-            <repository/>
-            <idno type="cote"/>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>False</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+					<publisher>
+						<persName>Sans nom</persName>
+					</publisher>
+					<date source="Moreau" when="1649">1649</date>
+					<extent>
+						<measure quantity="7" unit="page"/>
+					</extent>
+					<note type="format">in-4</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2867714">Munich</settlement>
+						<institution>Bibliothèque de l'État de Bavière</institution>
+						<repository/>
+						<idno type="cote"/>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>False</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="BM_Lyon">Ornements typographiques disposés en triangle au titre. Bandeau et
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="BM_Lyon">Ornements typographiques disposés en triangle au titre. Bandeau et
           lettrine gravés sur bois au titre de départ|Deux harangues : la première, de remontrances
           contre l'arrêt du Grand Conseil du 16 juin 1648 ; la seconde pour demander la liberté en
           faveur de Blancmesnil et Broussel|Moreau, Mazarinades n° 1614</p>
-        <p source="Moreau">1614. Harangues faites à la reine régente par mon seigneur le premier
+				<p source="Moreau">1614. Harangues faites à la reine régente par mon seigneur le premier
           président du Parlement. Paris, 1649, 7 pages. Deux harangues; la première, de remontrances
           contre l'arrêt du grand conseil, du 16 juin 1648; la seconde, pour demander la liberté de
           Blancmesnil et Broussel.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_1" source="Moreau">
-          <p>Avril 1648</p>
-          <date when="1648-04">1648-04</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-04-07" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="1"/>
-        <lb/>HARANGVES
-        <lb/>FAITES
-        <lb/>A LA REYNE
-        <lb/>REGENTE
-        <lb/>PAR MONSEIGNEVR LE
-        <lb/>Premier Preſident du Parlement. <figure type="decoration"/>
-        <lb/>A PARIS,
-        <lb/>M. DC. XLIX.<pb n="2"/>
-        <pb n="3"/>
-        <lb/>3
-        <lb/>HARANGVES FAITES A LA
-        <lb/>Reyne Regente, par Monſeigeur le premier
-        <lb/>Preſident du Parlement.
-        <lb/>MADAME, les Souuerains doiuenr pluſtoſt ſe
-        <lb/>faire obeir, paramour &amp; pagdouceur, quepat
-        <lb/>crainte &amp; par violence: La Clemence dott
-        <lb/>eſtre la principale de leurs vertus, &amp; le but de
-        <lb/>outes leurs aioas. Les Magiſtrats ſont les mediareurs
-        <lb/>entre les Edicts des Prinoes les fopplicaions des peu
-        <lb rend="¬" break="no"/>ples, &amp; camme vnebarriere emrecertz indeendente Au
-        <lb rend="¬" break="no"/>thorite &amp; cete exréme foibleſſe. La Iuſtice doit eſtre le
-        <lb/>lien &amp; l’adouciſſement de ces deux extremtez5; neant
-        <lb rend="¬" break="no"/>moins l’on voit auiourd’huy cete Iuſtice &amp; les Magiſtrats
-        <lb/>priuez de la puiſſance &amp; de la liberté de leur fonction &amp;
-        <lb/>de leur miniſtere, par des mouuemens de puiſſance abſo
-        <lb rend="¬" break="no"/>luë, &amp; par des Edicts forcez, qui cauſent des vexations. v
-        <lb rend="¬" break="no"/>traordinmaires ſi genera les, qu’il n’y a aucune partie de la
-        <lb/>Ftance qui n’en reſſente la riguur; ſi bien que l’oa peut
-        <lb/>dire auec verité, que tous les Iuges priuez de l’Eon
-        <lb rend="¬" break="no"/>neur &amp; de la liberté de leurs fonctioas, n’en ont plus
-        <lb/>que le tiltre, &amp; ncore vn riltte :hoateux &amp; dedans
-        <lb/>l’impuiſſance; l’on aoit touſiours penſé que le temps,
-        <lb/>qui eſt le remede des maux des plus grands; le ſe
-        <lb rend="¬" break="no"/>roit de ceux-cy;nmais au lieu de les auoir changez &amp; adon.
-        <lb/>cis, il les arendus comme incurables: de ſorte, qu’il et a
-        <lb/>caindre quel Auhorité́ du Roy &amp; le bien de l’Ea aie
-        <lb/>A ij <pb n="4"/>
-        <lb/>4
-        <lb/>S’enceſſentent, fi lePalenmeas,dont loſain &amp;ls pnfegs
-        <lb/> ne tendent qu’à̀ ſà conſeruation, ne s’oppoſe genereuſe
-        <lb rend="¬" break="no"/>meut à ces deſordres. C’eſt la raiſon pour laquelle les a
-        <lb rend="¬" break="no"/>theurs detou; cs eoſeila ont entrprisAexunoAu
-        <lb rend="¬" break="no"/>thorité, parce quele eſtleſeul abſtaclee leurseſſeins,
-        <lb/>&amp; dans leſquels l’Authorité duRby ’eſtnullementeſpa
-        <lb rend="¬" break="no"/>gnée; l’on a voulu renuerſer ſes bonnes intentions, enfai
-        <lb rend="¬" break="no"/>at croireà voſtle Majeftéjq’il httepteol audee
-        <lb/>ſa puiſſace, &amp;eqga’ilerpafei les limites, que ſes aſſe
-        <lb rend="¬" break="no"/>blées eſtoiert illicltes , extraiordiairés; &amp; que ce mt
-        <lb/>d’ Vnion &amp; de Ionion!, dont elles etoient qulfs,
-        <lb/>tpinv urme riminel, que’ Auhorié Royale nepo
-        <lb rend="¬" break="no"/>ai ſoufrir, ansaqeao&amp;degraddtion Cem; lou
-        <lb/>qui voudontdonné cespeuicierx cbnſeils &amp; ees fauſfs
-        <lb/>mpreſſions, ſç̧auent blen le contraire de ee qu’ils ontpet
-        <lb rend="¬" break="no"/>ſuadeé; mais ils l’ot fair( non pour le bien de l’Eſtat, mais
-        <lb/>pour leurconiſeruaio pariculiora, preubyant bienleml
-        <lb/>qui léu et poulol arriu l’ou ai exereéde la violehnce
-        <lb/>itraordinairo, f’exil &amp;la priſon;nal-heutreuſe prudencte,
-        <lb/>qui puniſt les innocens comme les coulpables ſans aucne
-        <lb/>piſpn; qu lle. de ſadeffjaace &amp; de ces iniuftesſoup
-        <lb rend="¬" break="no"/>cons5 mnis lesacuſnteuosmeritent bleh nmieu cette qu
-        <lb/>lit́ que les aceuſe; qul n’onr euiamais que du reſpett&amp;
-        <lb/>de l’obeiſsãce pour loRoy,&amp; vne inuiolable fidelité,quils
-        <lb/>pnt prperuellecmalt eſmoignéoen toutes Ies occaos.
-        <lb/>Et il eſt àcraindre e uo doup poreé́dontres l’uthofié du
-        <lb/>Parlemehty ne pore ſon coaro-eop’conitre l’Authoiié
-        <lb/>Royale. Nous ſomimes obligez de faire entendre à volte
-        <lb/>ajeteé, que ces meſmes perſonnes qui ont-celé l’exemple
-        <lb/>e l’apnée bß chdaquelle I’oa s’atit-denblépour le
-        <lb/>meſe <pb n="5"/>
-        <lb/>
-        <lb rend="¬" break="no"/>meſme deſſein, pour les affaires publiques; meſmes pour
-        <lb/>les res des Aydes, &amp; pour les deniers de Polite, &amp;
-        <lb/>d’aileuts oas les Regiſtres ſont remplis, &amp; chargeé
-        <lb/>d’eremples pareils., d’aſſembler toutes les Compagnies
-        <lb/>par l’ordre du Parlement, &amp; lors le Roy l’auoit voulo
-        <lb/>empechermais apres auoir approuué leur aſſemblée,
-        <lb/>&amp;tut ce qui s’eſtoit paſſeé, il auoit meſme recompenſé
-        <lb/>ceux guin auoient fait la meilleute partie, ayant bien
-        <lb/>tcogneu qu’il ne s’y eſtoit rien fait que pour le bien de
-        <lb/>ſonſeruiça&amp; le repos de ſon Eftat. Il eſt bien eſtrange
-        <lb/>qu’vne meſme cauſe qui a produit autresfois des reco
-        <lb rend="¬" break="no"/>gnoiſſances &amp; des recompenſes, ne produife à preſen
-        <lb/>que des menaces, des rigueurs &amp; des ſoupçons, quoy
-        <lb/>qe ceux qui doiuent faire cette eſſemblée ayent le meſ
-        <lb rend="¬" break="no"/> ae ele, le meſne reſpect, &amp; la meſnme aſfetioa au bien
-        <lb/> de l’Eta Quant veritablement nous penſons aà cette éle
-        <lb/> uation, dout nous ne pouuons nous reſſouuenir, ſans
-        <lb/>’ douleur, à ce theatre, à ce throſne, &amp; autres pompes pre
-        <lb rend="¬" break="no"/>ll panespaur le riomphe de noſtre iunooauee eunt la
-        <lb/>ſ quelle en preſence des Prices, &amp; des, plus grads du
-        <lb/>del Rogyaume, le premier Parlement a fait vne efpece d’a
-        <lb rend="¬" break="no"/>tſ ande honnorable: noſtre zele &amp; noſtre innocence ayans
-        <lb/>esl eſteé aceuſez, nos Arreſts des treie May&amp; quint hai
-        <lb/>i ayans eſté caſſez par celuy du Conſeil, apres y auoir eſté
-        <lb/>ie publiquement leus &amp;diffamez par dsfetmes iniurieux:
-        <lb/>di Comment apres cela la Iuſtice peu maintenant conſide
-        <lb rend="¬" break="no"/>&amp; e; car comme vne paille qui ſe rencone dansle i
-        <lb rend="¬" break="no"/> ment fait que l’on en diminuë le prix, puis qu’ellé ehote
-        <lb/> oute la lumiere eſclatante: Auſſilepeuaplen ers de
-        <lb/>lĺ asde ce premier Parlement de. Fraace, apres ’les le
-        <lb/>B
-        <lb/>dl <pb n="6"/>
-        <lb/>,,
-        <lb/>plaiſirs qu’il a receus aux yeux detousles Princes &amp;plus
-        <lb/>grands du Royaumie. Nous ſomnes obligez JMadame,
-        <lb/>pour l’honneur de la Regence ( ſeule conſideration pou
-        <lb/>laquelle nous l’auons ſoufferte) de faire entendreà Voître
-        <lb/>Majeſté, que nous ſçauons bien que cette iniure ne pro
-        <lb rend="¬" break="no"/>cede de voſtre part, yoſtre vertu, votre pieteé, vos ſen
-        <lb rend="¬" break="no"/>mens, &amp; vos inclinations eſtans abſolument &amp;lignez de
-        <lb/>ces violences. Et auſſi nous tenons tout aſſeuré que vou
-        <lb/>ſerez bien-toſt deſabuſée à l’aduantage du Parlement, l
-        <lb/>fauſleé de ces mauuais cõſeils &amp; l’iniuſtice de csimpre
-        <lb rend="¬" break="no"/>ſons dans la fidelité de nos ſeruices à la honte &amp;à la com
-        <lb/>fuſlon de ceux qui vous les ont donnez. Le Parlement,
-        <lb/>Madame, ma chargé de vous faire entendre la Iuſticede
-        <lb/>ſon Arreſt, &amp; de vous ſupplier tres-humblemende ue
-        <lb/>ſupprimer ſPArreſt du Conſeil du ſeie Iuin, doone coe
-        <lb/> re luy, &amp; trouuer bon que ſes A rreſts ſubſiſtantdasl’e
-        <lb/>eeuion, &amp; de donner vne declaration de l’innocented
-        <lb/>Parlement iniuſtement accuſé &amp; iniurié. Nous nefains
-        <lb/>nien dans l’alembleé́e qui tiendra que pout de en, &amp; lé
-        <lb/>ſeruiue du Roy, &amp; le repos de ſon Eſtat, No tous
-        <lb/>iutonstrés-ardamment de nous continuer l’honneur de
-        <lb/>oſtre bien-veillance auécproteſtation que nous ſomme
-        <lb/>ates-obeyſſans &amp; tres-fidelles ſeruitéurs.
-        <lb/>AVTRE HARANGVE
-        <lb/>MADAME,
-        <lb/>Nous ſomes vpnus icy pour teſmoiguer à Vot
-        <lb/>Majeſté, oue ous auons touſiours eſté fes tres-hun: <pb n="7"/>
-        <lb/>bles ſeruiteurs. Nous auons trouueé bien eſtrange, Mada
-        <lb rend="¬" break="no"/>ue, qu’apres des actions de grace ſi eſclatantes rendues
-        <lb/>à Dieu, pour le gain d’vne grande bataille, nos confreres
-        <lb/>ayent eſté arreſtez priſonniers, &amp; que les graces que
-        <lb/>Dieu vous afaites ayent eſté tournéeser diſgraces bien
-        <lb/>udes pour nous. Oüy, Madame, bien rudes; car apres
-        <lb/>auoir bien examineé nos actions, &amp; nos conſciences, nous
-        <lb/>yauons rientrouué digne de la priſon &amp; de la diſgrace.
-        <lb/>Nous venons icy, Madame, pour vous demander les pri
-        <lb rend="¬" break="no"/>ſonniers: mais ce n’eſt pas nous qui les demandons, c’eſt
-        <lb/>cent mil hommes armez qui les demandent. Il a fallu paſ
-        <lb rend="¬" break="no"/>ſer cent Barricades pour vous venir porter nos plaintes.
-        <lb/>Etnous auons ouy le Peuple qui crioit, Viue le Roy, &amp;
-        <lb/>bienautre choſe que nous n’oſerions direà Voſtre Maje
-        <lb rend="¬" break="no"/>ſté. Iln’eſt plus temps, Madame, de conſulter voſtre po
-        <lb rend="¬" break="no"/>liique &amp; voſtre raiſon, le Peuple n’ena point. Ie neſçay
-        <lb/>ſion ne vous trompe point, Madame, &amp; ſi on vous a dit
-        <lb/>l’Eſtat ou eſt voſtre Royaume &amp; voſtre Ville de Paris, le
-        <lb/>mal eſtſi grand qu’il eſt preſque ſans remede. I’apprehen
-        <lb rend="¬" break="no"/>de que Voſtre Maieſté ne ſoit obligée d’accorder à la for
-        <lb rend="¬" break="no"/>ce &amp; à la mutinerie du peuple, ce qu’elle refuſe à la tres
-        <lb rend="¬" break="no"/>humble ſupplication du Parlement.</p>
-    </body>
-  </text>
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_1" source="Moreau">
+					<p>Avril 1648</p>
+					<date when="1648-04">1648-04</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-04-07" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="1"/>
+				<pb n="2"/>
+				<pb n="3"/>
+				<pb n="4"/>
+				<pb n="5"/>
+				<pb n="6"/>
+				<pb n="7"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<figure type="decoration"/>
+HARANGVES
+        FAITES
+        A LA REYNE
+        REGENTE
+        PAR MONSEIGNEVR LE
+        Premier Preſident du Parlement. 
+        A PARIS,
+        M. DC. XLIX.
+        
+        3
+        HARANGVES FAITES A LA
+        Reyne Regente, par Monſeigeur le premier
+        Preſident du Parlement.
+        MADAME, les Souuerains doiuenr pluſtoſt ſe
+        faire obeir, paramour &amp; pagdouceur, quepat
+        crainte &amp; par violence: La Clemence dott
+        eſtre la principale de leurs vertus, &amp; le but de
+        outes leurs aioas. Les Magiſtrats ſont les mediareurs
+        entre les Edicts des Prinoes les fopplicaions des peu
+        ples, &amp; camme vnebarriere emrecertz indeendente Au
+        thorite &amp; cete exréme foibleſſe. La Iuſtice doit eſtre le
+        lien &amp; l’adouciſſement de ces deux extremtez5; neant
+        moins l’on voit auiourd’huy cete Iuſtice &amp; les Magiſtrats
+        priuez de la puiſſance &amp; de la liberté de leur fonction &amp;
+        de leur miniſtere, par des mouuemens de puiſſance abſo
+        luë, &amp; par des Edicts forcez, qui cauſent des vexations. v
+        traordinmaires ſi genera les, qu’il n’y a aucune partie de la
+        Ftance qui n’en reſſente la riguur; ſi bien que l’oa peut
+        dire auec verité, que tous les Iuges priuez de l’Eon
+        neur &amp; de la liberté de leurs fonctioas, n’en ont plus
+        que le tiltre, &amp; ncore vn riltte :hoateux &amp; dedans
+        l’impuiſſance; l’on aoit touſiours penſé que le temps,
+        qui eſt le remede des maux des plus grands; le ſe
+        roit de ceux-cy;nmais au lieu de les auoir changez &amp; adon.
+        cis, il les arendus comme incurables: de ſorte, qu’il et a
+        caindre quel Auhorité́ du Roy &amp; le bien de l’Ea aie
+        A ij 
+        4
+        S’enceſſentent, fi lePalenmeas,dont loſain &amp;ls pnfegs
+         ne tendent qu’à̀ ſà conſeruation, ne s’oppoſe genereuſe
+        meut à ces deſordres. C’eſt la raiſon pour laquelle les a
+        theurs detou; cs eoſeila ont entrprisAexunoAu
+        thorité, parce quele eſtleſeul abſtaclee leurseſſeins,
+        &amp; dans leſquels l’Authorité duRby ’eſtnullementeſpa
+        gnée; l’on a voulu renuerſer ſes bonnes intentions, enfai
+        at croireà voſtle Majeftéjq’il httepteol audee
+        ſa puiſſace, &amp;eqga’ilerpafei les limites, que ſes aſſe
+        blées eſtoiert illicltes , extraiordiairés; &amp; que ce mt
+        d’ Vnion &amp; de Ionion!, dont elles etoient qulfs,
+        tpinv urme riminel, que’ Auhorié Royale nepo
+        ai ſoufrir, ansaqeao&amp;degraddtion Cem; lou
+        qui voudontdonné cespeuicierx cbnſeils &amp; ees fauſfs
+        mpreſſions, ſç̧auent blen le contraire de ee qu’ils ontpet
+        ſuadeé; mais ils l’ot fair( non pour le bien de l’Eſtat, mais
+        pour leurconiſeruaio pariculiora, preubyant bienleml
+        qui léu et poulol arriu l’ou ai exereéde la violehnce
+        itraordinairo, f’exil &amp;la priſon;nal-heutreuſe prudencte,
+        qui puniſt les innocens comme les coulpables ſans aucne
+        piſpn; qu lle. de ſadeffjaace &amp; de ces iniuftesſoup
+        cons5 mnis lesacuſnteuosmeritent bleh nmieu cette qu
+        lit́ que les aceuſe; qul n’onr euiamais que du reſpett&amp;
+        de l’obeiſsãce pour loRoy,&amp; vne inuiolable fidelité,quils
+        pnt prperuellecmalt eſmoignéoen toutes Ies occaos.
+        Et il eſt àcraindre e uo doup poreé́dontres l’uthofié du
+        Parlemehty ne pore ſon coaro-eop’conitre l’Authoiié
+        Royale. Nous ſomimes obligez de faire entendre à volte
+        ajeteé, que ces meſmes perſonnes qui ont-celé l’exemple
+        e l’apnée bß chdaquelle I’oa s’atit-denblépour le
+        meſe 
+        
+        meſme deſſein, pour les affaires publiques; meſmes pour
+        les res des Aydes, &amp; pour les deniers de Polite, &amp;
+        d’aileuts oas les Regiſtres ſont remplis, &amp; chargeé
+        d’eremples pareils., d’aſſembler toutes les Compagnies
+        par l’ordre du Parlement, &amp; lors le Roy l’auoit voulo
+        empechermais apres auoir approuué leur aſſemblée,
+        &amp;tut ce qui s’eſtoit paſſeé, il auoit meſme recompenſé
+        ceux guin auoient fait la meilleute partie, ayant bien
+        tcogneu qu’il ne s’y eſtoit rien fait que pour le bien de
+        ſonſeruiça&amp; le repos de ſon Eftat. Il eſt bien eſtrange
+        qu’vne meſme cauſe qui a produit autresfois des reco
+        gnoiſſances &amp; des recompenſes, ne produife à preſen
+        que des menaces, des rigueurs &amp; des ſoupçons, quoy
+        qe ceux qui doiuent faire cette eſſemblée ayent le meſ
+         ae ele, le meſne reſpect, &amp; la meſnme aſfetioa au bien
+         de l’Eta Quant veritablement nous penſons aà cette éle
+         uation, dout nous ne pouuons nous reſſouuenir, ſans
+        ’ douleur, à ce theatre, à ce throſne, &amp; autres pompes pre
+        ll panespaur le riomphe de noſtre iunooauee eunt la
+        ſ quelle en preſence des Prices, &amp; des, plus grads du
+        del Rogyaume, le premier Parlement a fait vne efpece d’a
+        tſ ande honnorable: noſtre zele &amp; noſtre innocence ayans
+        esl eſteé aceuſez, nos Arreſts des treie May&amp; quint hai
+        i ayans eſté caſſez par celuy du Conſeil, apres y auoir eſté
+        ie publiquement leus &amp;diffamez par dsfetmes iniurieux:
+        di Comment apres cela la Iuſtice peu maintenant conſide
+        &amp; e; car comme vne paille qui ſe rencone dansle i
+         ment fait que l’on en diminuë le prix, puis qu’ellé ehote
+         oute la lumiere eſclatante: Auſſilepeuaplen ers de
+        lĺ asde ce premier Parlement de. Fraace, apres ’les le
+        B
+        dl 
+        ,,
+        plaiſirs qu’il a receus aux yeux detousles Princes &amp;plus
+        grands du Royaumie. Nous ſomnes obligez JMadame,
+        pour l’honneur de la Regence ( ſeule conſideration pou
+        laquelle nous l’auons ſoufferte) de faire entendreà Voître
+        Majeſté, que nous ſçauons bien que cette iniure ne pro
+        cede de voſtre part, yoſtre vertu, votre pieteé, vos ſen
+        mens, &amp; vos inclinations eſtans abſolument &amp;lignez de
+        ces violences. Et auſſi nous tenons tout aſſeuré que vou
+        ſerez bien-toſt deſabuſée à l’aduantage du Parlement, l
+        fauſleé de ces mauuais cõſeils &amp; l’iniuſtice de csimpre
+        ſons dans la fidelité de nos ſeruices à la honte &amp;à la com
+        fuſlon de ceux qui vous les ont donnez. Le Parlement,
+        Madame, ma chargé de vous faire entendre la Iuſticede
+        ſon Arreſt, &amp; de vous ſupplier tres-humblemende ue
+        ſupprimer ſPArreſt du Conſeil du ſeie Iuin, doone coe
+         re luy, &amp; trouuer bon que ſes A rreſts ſubſiſtantdasl’e
+        eeuion, &amp; de donner vne declaration de l’innocented
+        Parlement iniuſtement accuſé &amp; iniurié. Nous nefains
+        nien dans l’alembleé́e qui tiendra que pout de en, &amp; lé
+        ſeruiue du Roy, &amp; le repos de ſon Eſtat, No tous
+        iutonstrés-ardamment de nous continuer l’honneur de
+        oſtre bien-veillance auécproteſtation que nous ſomme
+        ates-obeyſſans &amp; tres-fidelles ſeruitéurs.
+        AVTRE HARANGVE
+        MADAME,
+        Nous ſomes vpnus icy pour teſmoiguer à Vot
+        Majeſté, oue ous auons touſiours eſté fes tres-hun: 
+        bles ſeruiteurs. Nous auons trouueé bien eſtrange, Mada
+        ue, qu’apres des actions de grace ſi eſclatantes rendues
+        à Dieu, pour le gain d’vne grande bataille, nos confreres
+        ayent eſté arreſtez priſonniers, &amp; que les graces que
+        Dieu vous afaites ayent eſté tournéeser diſgraces bien
+        udes pour nous. Oüy, Madame, bien rudes; car apres
+        auoir bien examineé nos actions, &amp; nos conſciences, nous
+        yauons rientrouué digne de la priſon &amp; de la diſgrace.
+        Nous venons icy, Madame, pour vous demander les pri
+        ſonniers: mais ce n’eſt pas nous qui les demandons, c’eſt
+        cent mil hommes armez qui les demandent. Il a fallu paſ
+        ſer cent Barricades pour vous venir porter nos plaintes.
+        Etnous auons ouy le Peuple qui crioit, Viue le Roy, &amp;
+        bienautre choſe que nous n’oſerions direà Voſtre Maje
+        ſté. Iln’eſt plus temps, Madame, de conſulter voſtre po
+        liique &amp; voſtre raiſon, le Peuple n’ena point. Ie neſçay
+        ſion ne vous trompe point, Madame, &amp; ſi on vous a dit
+        l’Eſtat ou eſt voſtre Royaume &amp; voſtre Ville de Paris, le
+        mal eſtſi grand qu’il eſt preſque ſans remede. I’apprehen
+        de que Voſtre Maieſté ne ſoit obligée d’accorder à la for
+        ce &amp; à la mutinerie du peuple, ce qu’elle refuſe à la tres
+        humble ſupplication du Parlement.			</p>
+		</body>
+	</text>
 </TEI>

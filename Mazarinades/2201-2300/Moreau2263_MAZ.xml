@@ -1,302 +1,484 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
-<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2263_MAZ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main" source="Moreau">Lettres de deux amis sur la prise de la Bastille.</title>
-        <title type="sub">Édition Antonomaz</title>
-        <respStmt>
-          <resp>Chaîne de traitement</resp>
-          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" source="Moreau">Lettres de deux amis sur la prise de la Bastille.</title>
+				<title type="sub">Édition Antonomaz</title>
+				<respStmt>
+					<resp>Chaîne de traitement</resp>
+					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-        <ref target="https://github.com/Antonomaz"/>
-        <date type="file_creation" when="2022-03-02">2 mars 2022</date>
-        <availability status="restricted" n="cc-by">
-          <licence target="https://creativecommons.org/licenses/by/4.0"/>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>
-          <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14700"/>
-          <author/>
-          <title source="Mazarine">Lettres de deux amis, sur la prise de la Bastille.</title>
-          <pubPlace source="Mazarine">Sans Lieu</pubPlace>
-          <publisher>
-            <persName>Sans Nom</persName>
-          </publisher>
-          <date source="Mazarine" when="1649">1649</date>
-          <date source="Carrier" when="1649-01-18">18 janvier 1649</date>
-          <extent>
-            <measure unit="page" quantity="8"/>
-          </extent>
-          <note type="format">in-12</note>
-          <relatedItem source="Mazarine" type="identifier" subtype="BM49389" cert="high"
-            target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49389"/>
-        </bibl>
-        <msDesc>
-          <msIdentifier>
-            <settlement ref="geonames:2988507">Paris</settlement>
-            <institution>Bibliothèque Mazarine</institution>
-            <repository/>
-            <idno type="cote">M11473</idno>
-          </msIdentifier>
-          <history>
-            <provenance>
-              <stamp>False</stamp>
-            </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+				<ref target="https://github.com/Antonomaz"/>
+				<date type="file_creation" when="2022-03-02">2 mars 2022</date>
+				<availability status="restricted" n="cc-by">
+					<licence target="https://creativecommons.org/licenses/by/4.0"/>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14700"/>
+					<author/>
+					<title source="Mazarine">Lettres de deux amis, sur la prise de la Bastille.</title>
+					<pubPlace source="Mazarine">Sans lieu</pubPlace>
+					<publisher>
+						<persName>Sans nom</persName>
+					</publisher>
+					<date source="Mazarine" when="1649">1649</date>
+					<date source="Carrier" when="1649-01-18">18 janvier 1649</date>
+					<extent>
+						<measure unit="page" quantity="8"/>
+					</extent>
+					<note type="format">in-12</note>
+					<relatedItem source="Mazarine" type="identifier" subtype="BM49389" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49389"/>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="geonames:2988507">Paris</settlement>
+						<institution>Bibliothèque Mazarine</institution>
+						<repository/>
+						<idno type="cote">M11473</idno>
+					</msIdentifier>
+					<history>
+						<provenance>
+							<stamp>False</stamp>
+						</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p/>
-      </editorialDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="fra">Document en français</language>
-      </langUsage>
-      <abstract>
-        <p source="Mazarine">Également publié dans le recueil éditorial "Recueil de diverses pieces
+				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+			</projectDesc>
+			<editorialDecl>
+				<p/>
+			</editorialDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fra">Document en français</language>
+			</langUsage>
+			<abstract>
+				<p source="Mazarine">Également publié dans le recueil éditorial "Recueil de diverses pieces
           qui ont paru durant les mouvemens derniers de l'année 1649." (BM000059) D'après Hubert
           Carrier, texte est paru à partir du 18 janvier 1649 suivant la date des deux lettres, 17
           janvier 1649 (Bibliothèque Mazarine, Ms 4682-3, f. 302v).</p>
-        <p source="Moreau">2263. Lettres de deux amis sur la prise de la Bastille, . Sans Lieu,
+				<p source="Moreau">2263. Lettres de deux amis sur la prise de la Bastille, . Sans Lieu,
           1649, 8 pages. Datées toutes deux du 17 janvier. - La Bastille fut rendue après quatre ou
           cinq coups de canon tirés contre le pont-levis ; mais, disait-on, par l'ordre de la cour.
           Por tail, conseiller au Parlement, voulait disputer, l'épée à la main, à Lefèvre, autre
           conseiller, l'honneur d'y entrer le premier, à la tête de sa compagnie. Le duc d'Elbeuf
           les fit entrer ensemble avec lui.</p>
-      </abstract>
-      <textClass>
-        <keywords>
-          <term type="form">prose</term>
-          <term type="genre">lettre</term>
-          <term type="handwritten_note" subtype="no"/>
-          <term type="table_of_content" subtype="no"/>
-          <term type="illustration" subtype="no"/>
-          <term type="subject">Bastille</term>
-          <term type="subject">Paris (France)</term>
-        </keywords>
-      </textClass>
-      <settingDesc>
-        <setting xml:id="evt_Moreau_5" source="Moreau">
-          <p>Arrivée du duc de Beaufort à Paris</p>
-          <date when="1649-01-13">1649-01-13</date>
-        </setting>
-      </settingDesc>
-    </profileDesc>
-    <revisionDesc>
-      <change status="corrected" when="2022-03-14" who="AB"/>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <p>
-        <pb n="9"/>
-        <lb/>LETTRES
-        <lb/>DE DEVX AMIS
-        <lb/>Sur la priſe de la Baſtille. <figure type="decoration"/>
-        <lb/>M. DC. XLIX. <pb n="10"/>
-        <pb n="11"/>
-        <lb/>3
-        <lb/>LETTRES DE DEVX AMIS,
-        <lb/>ſur la priſe de la Baſtille.
-        <lb/>MONSIEVR
-        <lb/>Le débord de la riuiere nous tenant
-        <lb/>aſſiegez dans nos logis, ie vous fais ce mot
-        <lb/>AVS pout vous demander deus nouueles de l.
-        <lb/>priſe de la Baſtille. S’il eſt permis de railler
-        <lb/>dans ces miſeres publiques, ie m’eſtonne que Meſſieurs
-        <lb/>de la Ville n’ont commis à la charge de Renaudot, pour
-        <lb/>nous faire ſç̧auoir ce qui ſe paſſe. Ces iours paſſez nous
-        <lb/>auions des relations quotidiennes des affaires de Naples; &amp;
-        <lb/>auiourd’huy à peine ſommes nous aduertis au vray de ce qui
-        <lb/>ſe fait à Paris. Mais il n’importe pas beaucoup que nos curio
-        <lb rend="¬" break="no"/>ſitez ſoient contenté́es, pourueu que nos affaires aillent bien,
-        <lb/>&amp; que nos Bourgeois s’entretiennent en bonne concorde.
-        <lb/>Nous auons vn Preſident Ch. qui eſt vn vray homme de
-        <lb/>cœur: I’apprends qu’il y en a pluſieurs autres de ſa condi
-        <lb rend="¬" break="no"/>tion qui font tout de meſme. Quand ils auront mis ordre
-        <lb/>aux affaires principales &amp; plus vrgentes, ie croy qu’ils pren
-        <lb rend="¬" break="no"/>dront ſoin des moindres, &amp; particulierement de la police du
-        <lb/>pain. Car ie ne trouue pas de raiſon qu’vn pain qui valoit dix
-        <lb/>ſols, en ſoit vendu quinze: Veu que les Boulangers ont ache
-        <lb rend="¬" break="no"/>ré́ &amp; achetent encore le bled au prix courant &amp;
+			</abstract>
+			<textClass>
+				<keywords>
+					<term type="form">prose</term>
+					<term type="genre">lettre</term>
+					<term type="handwritten_note" subtype="no"/>
+					<term type="table_of_content" subtype="no"/>
+					<term type="illustration" subtype="no"/>
+					<term type="subject">Bastille</term>
+					<term type="subject">Paris (France)</term>
+				</keywords>
+			</textClass>
+			<settingDesc>
+				<setting xml:id="evt_Moreau_5" source="Moreau">
+					<p>Arrivée du duc de Beaufort à Paris</p>
+					<date when="1649-01-13">1649-01-13</date>
+				</setting>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change status="corrected" when="2022-03-14" who="AB"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>
+				<pb n="9"/>
+				<pb n="10"/>
+				<pb n="11"/>
+				<pb n="12"/>
+				<pb n="13"/>
+				<pb n="14"/>
+				<pb n="15"/>
+				<pb n="16"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<lb rend="¬" break="no"/>
+				<lb/>
+				<lb/>
+				<lb/>
+				<lb rend="¬" break="no"/>
+				<figure type="decoration"/>
+LETTRES
+        DE DEVX AMIS
+        Sur la priſe de la Baſtille. 
+        M. DC. XLIX. 
+        
+        3
+        LETTRES DE DEVX AMIS,
+        ſur la priſe de la Baſtille.
+        MONSIEVR
+        Le débord de la riuiere nous tenant
+        aſſiegez dans nos logis, ie vous fais ce mot
+        AVS pout vous demander deus nouueles de l.
+        priſe de la Baſtille. S’il eſt permis de railler
+        dans ces miſeres publiques, ie m’eſtonne que Meſſieurs
+        de la Ville n’ont commis à la charge de Renaudot, pour
+        nous faire ſç̧auoir ce qui ſe paſſe. Ces iours paſſez nous
+        auions des relations quotidiennes des affaires de Naples; &amp;
+        auiourd’huy à peine ſommes nous aduertis au vray de ce qui
+        ſe fait à Paris. Mais il n’importe pas beaucoup que nos curio
+        ſitez ſoient contenté́es, pourueu que nos affaires aillent bien,
+        &amp; que nos Bourgeois s’entretiennent en bonne concorde.
+        Nous auons vn Preſident Ch. qui eſt vn vray homme de
+        cœur: I’apprends qu’il y en a pluſieurs autres de ſa condi
+        tion qui font tout de meſme. Quand ils auront mis ordre
+        aux affaires principales &amp; plus vrgentes, ie croy qu’ils pren
+        dront ſoin des moindres, &amp; particulierement de la police du
+        pain. Car ie ne trouue pas de raiſon qu’vn pain qui valoit dix
+        ſols, en ſoit vendu quinze: Veu que les Boulangers ont ache
+        ré́ &amp; achetent encore le bled au prix courant &amp;
         raiſonnable.
-        <lb/>I’entends de ceux du dedans; car quant à ceux du dehors, le
-        <lb/>peril qu’ils courent merite bien qu’ils ſoient ſurpayez &amp; re
-        <lb rend="¬" break="no"/>compenſez, &amp;c. Ce i7. Ianuier 1é6a4.
-        <lb/>A ij <pb n="12"/>
-        <lb/>--a
-        <lb rend="¬" break="no"/>4
-        <lb/>RESPONSE.
-        <lb/>cD7
-        <lb/>ONSIEVR,
-        <lb/>a
-        <lb/>Dans les affaires vrgentes comme celle-cy,
-        <lb/>delet ediſlereieneneonoene
-        <lb/>n’aurois pas manqué de vous viſiter nonob
-        <lb rend="¬" break="no"/>E
-        <lb/>ſtant les eaux qui vous enuironnent. Mais vn
-        <lb/>bon Ciroyen doit garder ſon quartier &amp; ſon
-        <lb/>voiſinage, &amp; y trauailler ſelon ſa portée &amp; ſa conſeience. I’oſe
-        <lb/>vous dire que MonſieurC. &amp; moy auons aſſeuré &amp; conſolé
-        <lb/>mille perſonnes, ſans leur auoir fourny ny armes, ny muni
-        <lb rend="¬" break="no"/>tions. Vn homme en vaut mille quand il a bonne intention,
-        <lb/>&amp; vn peu de conduite; voiey comme ie leur parlois. Noſtre
-        <lb/>cauſe eſt bonne, noſtre conſcience nous le dicte; nos Curez
-        <lb/>nous le preſchent, nos Magiſtrats nous iuſtifient: Nous ſorm
-        <lb rend="¬" break="no"/>mes cent contre vn, que craignez-vous? Si le pain ne vient
-        <lb/>pas par vn coſté il entrera par l’autre: Tenons-nous en bonne
-        <lb/>vnion, nous ſommes inuincibles. C’eſt cette vnion qui main
-        <lb rend="¬" break="no"/>tient les Republiques: c’eſt l’vnion qui conſerue les familles;
-        <lb/>c’eſt le nom que noſtre Ennemy ne ſç̧auroit ny entendre, ny
-        <lb/>prononcerſans fremir, &amp; par la vertu duquel nous le deuons
-        <lb/>exorciſer &amp; chaſſer du corps de cet Eſtat. N’entreprenons
-        <lb/>point ſur les charges les vns des autres: Que les Maiſtres com
-        <lb rend="¬" break="no"/>mandent, que les valets &amp; les enfans obeſſent ; que leshom
-        <lb/>mes aillent à la garde, &amp; à̀ leurs autres factions. Que les fem
-        <lb rend="¬" break="no"/>mes prennent ſoin de leurs meſnages, &amp; d’aſliſter aux prieres
-        <lb/>de l’Egliſe; &amp;s’il y en a qui ſoient ſi extremement timides,
-        <lb/>qu’ellos neſe puiſſent reſoudre, qu’elles digeront leurs crain
-        <lb rend="¬" break="no"/>tes à par-elles, ſans effroyer leur voiſinage, &amp; appoltronnir
-        <lb/>leurs <pb n="13"/>
-        <lb/>leurs maris. C’eſt bien loin de ſe preſenter pour ſeruir aux for
-        <lb rend="¬" break="no"/>cifications de la ville, &amp; de porter la hotte, comme ie l’ay
+        I’entends de ceux du dedans; car quant à ceux du dehors, le
+        peril qu’ils courent merite bien qu’ils ſoient ſurpayez &amp; re
+        compenſez, &amp;c. Ce i7. Ianuier 1é6a4.
+        A ij 
+        --a
+        4
+        RESPONSE.
+        cD7
+        ONSIEVR,
+        a
+        Dans les affaires vrgentes comme celle-cy,
+        delet ediſlereieneneonoene
+        n’aurois pas manqué de vous viſiter nonob
+        E
+        ſtant les eaux qui vous enuironnent. Mais vn
+        bon Ciroyen doit garder ſon quartier &amp; ſon
+        voiſinage, &amp; y trauailler ſelon ſa portée &amp; ſa conſeience. I’oſe
+        vous dire que MonſieurC. &amp; moy auons aſſeuré &amp; conſolé
+        mille perſonnes, ſans leur auoir fourny ny armes, ny muni
+        tions. Vn homme en vaut mille quand il a bonne intention,
+        &amp; vn peu de conduite; voiey comme ie leur parlois. Noſtre
+        cauſe eſt bonne, noſtre conſcience nous le dicte; nos Curez
+        nous le preſchent, nos Magiſtrats nous iuſtifient: Nous ſorm
+        mes cent contre vn, que craignez-vous? Si le pain ne vient
+        pas par vn coſté il entrera par l’autre: Tenons-nous en bonne
+        vnion, nous ſommes inuincibles. C’eſt cette vnion qui main
+        tient les Republiques: c’eſt l’vnion qui conſerue les familles;
+        c’eſt le nom que noſtre Ennemy ne ſç̧auroit ny entendre, ny
+        prononcerſans fremir, &amp; par la vertu duquel nous le deuons
+        exorciſer &amp; chaſſer du corps de cet Eſtat. N’entreprenons
+        point ſur les charges les vns des autres: Que les Maiſtres com
+        mandent, que les valets &amp; les enfans obeſſent ; que leshom
+        mes aillent à la garde, &amp; à̀ leurs autres factions. Que les fem
+        mes prennent ſoin de leurs meſnages, &amp; d’aſliſter aux prieres
+        de l’Egliſe; &amp;s’il y en a qui ſoient ſi extremement timides,
+        qu’ellos neſe puiſſent reſoudre, qu’elles digeront leurs crain
+        tes à par-elles, ſans effroyer leur voiſinage, &amp; appoltronnir
+        leurs 
+        leurs maris. C’eſt bien loin de ſe preſenter pour ſeruir aux for
+        cifications de la ville, &amp; de porter la hotte, comme ie l’ay
         veu
-        <lb/>pratiquer à la Mareſchalle de Chaſtillon pendant le ſiege de
-        <lb/>Montpellier. Or à vous autres, Meſdames, on ne vous de
-        <lb rend="¬" break="no"/>mande rien que de vous abſtenir de pleurs &amp; de crieries, &amp;
+        pratiquer à la Mareſchalle de Chaſtillon pendant le ſiege de
+        Montpellier. Or à vous autres, Meſdames, on ne vous de
+        mande rien que de vous abſtenir de pleurs &amp; de crieries, &amp;
         de
-        <lb/>viure en repos dans vos maiſons. N’auez- vous iamais eſteé pro
-        <lb rend="¬" break="no"/>mener en baſteau iuſques aux Bons hommes? Tandis que
-        <lb/>vous eſtes aſſiſſes &amp; en repos, le Battelier vous conduit ſans
-        <lb/>peril, &amp; preſque ſans peine: Eſtes vous à bord? deux ou trois
-        <lb/>eſtourdis qui voudront ſortir pluſtoſt que les aurres, feront
-        <lb/>vn peu pancher la naſſelle, les femmes s’écrient là-deſſus que
-        <lb/>tout eſt perdu: elles ſe iettent toutes d’vn coſté; &amp; par leur
-        <lb/>tumulte &amp; leur effroy imprudent elles ſe culbutent dans l’eau,
-        <lb/>&amp; en ſont cauſe: ſans cela on les débarquoit facilement, &amp; à
-        <lb/>pied ſec. Ha! mais diſent elles, il y a des traiſtres parmy ceux
-        <lb rend="¬" break="no"/>cy, parmy ceux là. Nous le ſçauons bien, il y en auoit dans la
-        <lb/>coõpagnie de Noſtre Seigneur. Mais ne vous en mettez pas en
-        <lb/>peine, ils ſont cognus, ils ſont obſeruez: Et tel quichancelloit
-        <lb/>aux premieres barricades, eſt maintenant conuerty &amp; affer
-        <lb rend="¬" break="no"/>my. Vous dites que nos ennemis ont des hommes: Ouy, ils
-        <lb/>en ont, mais ces hommes-là ont des femmes &amp; des enfans
-        <lb/>qui ſont parmy nous, &amp; qu’ils aiment mieux que ceux qui
-        <lb/>les payẽt &amp;e qui les ſolicirent de nous mal faireVous ne ſçauez
-        <lb/>donc pas que depuis deux iours plus de trois cens Soldats des
-        <lb/>Gardes ſont retournez pardeçà, ſoit pour l’amour de leurs
-        <lb/>femmes, ſoit pour eſtre bien payez, comme ils ſeront dans nos
-        <lb/>trouppes. Que reſtera-il de delà̀ ſinon quelques pillards d’Al
-        <lb rend="¬" break="no"/>lemans que les payſans aſſommeront au ſon du tocſim dés
-        <lb/>qu’ils enauront la permiſſion? Au reſte les Gouuerneurs de
-        <lb/>nos Frontieres ne ſeront pas ſi traiſtes au Roy. &amp; aà l’Eſtas, <pb n="14"/>
-        <lb/>que de bailler leurs garniſons pours’expoſer en proye à̀ l’Eſ
-        <lb rend="¬" break="no"/>rarger. Quand ils n’auroient pas aſſez de charité pour loux
-        <lb/>patrie, s’ils ont vn peu d’aâge &amp; d’experience, ils ſe ſouuien
-        <lb rend="¬" break="no"/>dront de la honte que laiſſerent à leur poſterité ceux qui s’éri
-        <lb rend="¬" break="no"/>gerent en titre de Coyons pour la penſion de mille francs
-        <lb/>qu’ils receurent du Mareſchal d’Anchre: Mais la plus forte
-        <lb/>raiſon, &amp; qui doit faire impreſſion ſur l’eſprit des plus auiſe,
-        <lb/>&amp; qui a fait reſoudre ces ſages Princes &amp; Seigneurs quiſe ſont
-        <lb/>declarez, c’eſt celle-cy, que la Force &amp; la luſtiee ſont euidem
-        <lb rend="¬" break="no"/>ment de noſtre coſté́: Et par conſequent qu’on ne doit point
-        <lb/>heſiter de s’y ioindre, &amp; d’y prendre party. Quant à la luſtice,
-        <lb/>entenduëcomme vertu, c’eſt a dire raiſon, equité, conformi
-        <lb rend="¬" break="no"/>té à la Loy de Dieu; elle y eſt viſiblement. Nous nous defen
-        <lb rend="¬" break="no"/>dons contre la violence &amp; l’oppreſſion: Nous deman dons
-        <lb/>d’eſtre deliurez d’vn Eſtranger qui nous eyranniſe: Nous ſou
-        <lb rend="¬" break="no"/>haitons la preſence du Roy: Nous deſirons qu’il foit pour
-        <lb rend="¬" break="no"/>ueu d’vnbon Conſeil, &amp; d’vne bonne education. Quant à la
-        <lb/>Iuſtice, entenduë pour les Magiſtrats qui l’exercent: Elle eſt
-        <lb/>abſolument pour nous: Il n’y a point de diuiſion ny de par
-        <lb rend="¬" break="no"/>tage: toutes les voix ſont conformes. Ce n’eſt pas comme
-        <lb/>du temps de la Ligue: lly auoit vn Parlemenr diuiſé &amp; con
-        <lb rend="¬" break="no"/>tradictoire. Celuy qu’on iuſtifioit à Paris, eſtoit condamneé
+        viure en repos dans vos maiſons. N’auez- vous iamais eſteé pro
+        mener en baſteau iuſques aux Bons hommes? Tandis que
+        vous eſtes aſſiſſes &amp; en repos, le Battelier vous conduit ſans
+        peril, &amp; preſque ſans peine: Eſtes vous à bord? deux ou trois
+        eſtourdis qui voudront ſortir pluſtoſt que les aurres, feront
+        vn peu pancher la naſſelle, les femmes s’écrient là-deſſus que
+        tout eſt perdu: elles ſe iettent toutes d’vn coſté; &amp; par leur
+        tumulte &amp; leur effroy imprudent elles ſe culbutent dans l’eau,
+        &amp; en ſont cauſe: ſans cela on les débarquoit facilement, &amp; à
+        pied ſec. Ha! mais diſent elles, il y a des traiſtres parmy ceux
+        cy, parmy ceux là. Nous le ſçauons bien, il y en auoit dans la
+        coõpagnie de Noſtre Seigneur. Mais ne vous en mettez pas en
+        peine, ils ſont cognus, ils ſont obſeruez: Et tel quichancelloit
+        aux premieres barricades, eſt maintenant conuerty &amp; affer
+        my. Vous dites que nos ennemis ont des hommes: Ouy, ils
+        en ont, mais ces hommes-là ont des femmes &amp; des enfans
+        qui ſont parmy nous, &amp; qu’ils aiment mieux que ceux qui
+        les payẽt &amp;e qui les ſolicirent de nous mal faireVous ne ſçauez
+        donc pas que depuis deux iours plus de trois cens Soldats des
+        Gardes ſont retournez pardeçà, ſoit pour l’amour de leurs
+        femmes, ſoit pour eſtre bien payez, comme ils ſeront dans nos
+        trouppes. Que reſtera-il de delà̀ ſinon quelques pillards d’Al
+        lemans que les payſans aſſommeront au ſon du tocſim dés
+        qu’ils enauront la permiſſion? Au reſte les Gouuerneurs de
+        nos Frontieres ne ſeront pas ſi traiſtes au Roy. &amp; aà l’Eſtas, 
+        que de bailler leurs garniſons pours’expoſer en proye à̀ l’Eſ
+        rarger. Quand ils n’auroient pas aſſez de charité pour loux
+        patrie, s’ils ont vn peu d’aâge &amp; d’experience, ils ſe ſouuien
+        dront de la honte que laiſſerent à leur poſterité ceux qui s’éri
+        gerent en titre de Coyons pour la penſion de mille francs
+        qu’ils receurent du Mareſchal d’Anchre: Mais la plus forte
+        raiſon, &amp; qui doit faire impreſſion ſur l’eſprit des plus auiſe,
+        &amp; qui a fait reſoudre ces ſages Princes &amp; Seigneurs quiſe ſont
+        declarez, c’eſt celle-cy, que la Force &amp; la luſtiee ſont euidem
+        ment de noſtre coſté́: Et par conſequent qu’on ne doit point
+        heſiter de s’y ioindre, &amp; d’y prendre party. Quant à la luſtice,
+        entenduëcomme vertu, c’eſt a dire raiſon, equité, conformi
+        té à la Loy de Dieu; elle y eſt viſiblement. Nous nous defen
+        dons contre la violence &amp; l’oppreſſion: Nous deman dons
+        d’eſtre deliurez d’vn Eſtranger qui nous eyranniſe: Nous ſou
+        haitons la preſence du Roy: Nous deſirons qu’il foit pour
+        ueu d’vnbon Conſeil, &amp; d’vne bonne education. Quant à la
+        Iuſtice, entenduë pour les Magiſtrats qui l’exercent: Elle eſt
+        abſolument pour nous: Il n’y a point de diuiſion ny de par
+        tage: toutes les voix ſont conformes. Ce n’eſt pas comme
+        du temps de la Ligue: lly auoit vn Parlemenr diuiſé &amp; con
+        tradictoire. Celuy qu’on iuſtifioit à Paris, eſtoit condamneé
         &amp;
-        <lb/>ſupplieié à̀ Tours. Cela eſtant ainſi, ceux qui combatent
-        <lb/>pour nous, ne peuuent craindre confiſearion aucune ny de
-        <lb/>corps, ny de biens. Quant à la conſcience: Toute la Theolo
-        <lb rend="¬" break="no"/>gie eſt encore pour noſtre party. Pour ce qui eſt des armes,
-        <lb/>nous ſommes plus de vingt contre vn-Voyez quelle pro
-        <lb rend="¬" break="no"/>portion. Mais ie ferois tort aux Gentils-homrmes &amp; àrant de
-        <lb/>braues ſoldars qui nous aſſiſtent, de les faire combatre aà i
-        <lb/>grand auantage, auec la bonte de la cauſe qui les anime; vn <pb n="15"/>
-        <lb/>contre vn. Ils ne m’en deſauoüeront ps. Nos Generaux ne
-        <lb/>ſont pas, Dieu merecy, de la qualité de ceux qui s’éleuerent
-        <lb/>dans la ſedition de Naples. Quant à la perſonne du Roy &amp; de
-        <lb/>Meſſieurs les Princes; nous les honorons de toute l’étenduë
-        <lb/>de nos cœurs, &amp; ne reſpirons rien tant que l’honneur de leur
-        <lb/>preſence &amp; bienueillance. Nous n’auons ny biens, ny vie
-        <lb/>que nous n’expoſions tres-volontiers pour eux: Iamais nous
-        <lb/>ne refuſerons rien pour la grandeur ny pour la pompe de leur
-        <lb/>Cour, ny pour l’accompliſſement de leurs grands deſſeins;
-        <lb/>Mais ny nous P euple, ny la vertueuſe Noblefſe, ny les bons
-        <lb/>Eccleſiaſtiques ne pouuons plus ſouffrir la tyrannie des Fa
-        <lb rend="¬" break="no"/>uoris, des Flatteurs &amp; des Partiſans. C’eſt la honte de la
+        ſupplieié à̀ Tours. Cela eſtant ainſi, ceux qui combatent
+        pour nous, ne peuuent craindre confiſearion aucune ny de
+        corps, ny de biens. Quant à la conſcience: Toute la Theolo
+        gie eſt encore pour noſtre party. Pour ce qui eſt des armes,
+        nous ſommes plus de vingt contre vn-Voyez quelle pro
+        portion. Mais ie ferois tort aux Gentils-homrmes &amp; àrant de
+        braues ſoldars qui nous aſſiſtent, de les faire combatre aà i
+        grand auantage, auec la bonte de la cauſe qui les anime; vn 
+        contre vn. Ils ne m’en deſauoüeront ps. Nos Generaux ne
+        ſont pas, Dieu merecy, de la qualité de ceux qui s’éleuerent
+        dans la ſedition de Naples. Quant à la perſonne du Roy &amp; de
+        Meſſieurs les Princes; nous les honorons de toute l’étenduë
+        de nos cœurs, &amp; ne reſpirons rien tant que l’honneur de leur
+        preſence &amp; bienueillance. Nous n’auons ny biens, ny vie
+        que nous n’expoſions tres-volontiers pour eux: Iamais nous
+        ne refuſerons rien pour la grandeur ny pour la pompe de leur
+        Cour, ny pour l’accompliſſement de leurs grands deſſeins;
+        Mais ny nous P euple, ny la vertueuſe Noblefſe, ny les bons
+        Eccleſiaſtiques ne pouuons plus ſouffrir la tyrannie des Fa
+        uoris, des Flatteurs &amp; des Partiſans. C’eſt la honte de la
         Fran.
-        <lb/>ce, &amp; le ſcandale de toutes les Nations. Le zele m’emporte.
-        <lb/>Ce n’eſt pas à vous à qui il faut faire ces remonſtrances. Vous
-        <lb/>voulez ſcauoir le ſiege de la Baſtille. Voicy comme ie l’a y oüy
-        <lb/>raconter. Le Mercredy 1; du preſent, Monſieur d’Elbeufen
-        <lb rend="¬" break="no"/>uoya ſommer le Gouuerneur de venir parler à luy: ll reſpon
-        <lb rend="¬" break="no"/>dit qu’il ne pouuoit pas le faire, mais que ſi Monſieur d’El.
-        <lb/>beuf vouloit aller ſous la halle où ſont tous ces fuſts de Ca
-        <lb rend="¬" break="no"/>nons, il l’écoureroit parler. Ils ſe virent. Le Gouuerneur re
-        <lb rend="¬" break="no"/>fuſa de bailler ſa place, &amp; qu’il y alloit de la vie. Le Prince
+        ce, &amp; le ſcandale de toutes les Nations. Le zele m’emporte.
+        Ce n’eſt pas à vous à qui il faut faire ces remonſtrances. Vous
+        voulez ſcauoir le ſiege de la Baſtille. Voicy comme ie l’a y oüy
+        raconter. Le Mercredy 1; du preſent, Monſieur d’Elbeufen
+        uoya ſommer le Gouuerneur de venir parler à luy: ll reſpon
+        dit qu’il ne pouuoit pas le faire, mais que ſi Monſieur d’El.
+        beuf vouloit aller ſous la halle où ſont tous ces fuſts de Ca
+        nons, il l’écoureroit parler. Ils ſe virent. Le Gouuerneur re
+        fuſa de bailler ſa place, &amp; qu’il y alloit de la vie. Le Prince
         luy
-        <lb/>répliqua que s’il la pretendoit defendre cõtre vne ville de Pa
-        <lb rend="¬" break="no"/>ris, il couroit la meſme fortune. Sur l’heure meſme Mon
-        <lb rend="¬" break="no"/>ſieur de Liſlebonne fils de Monſieur d’Elbeuf, eut cõmande
-        <lb rend="¬" break="no"/>ment de mener le Canon qu’il pointa contre la muraille de la
-        <lb/>perſpectiue de la grande allée de l’Arſenac. On fit trois em
-        <lb rend="¬" break="no"/>braſeures pour trois grosCanons qui tiroient dans la porte du
-        <lb/>pont- leuis, &amp; qui firent trois ou quatre grands éclats dans la
-        <lb/>pierre de taille, &amp; briſerent le pont leuis enpluſieurs endroits.
-        <lb/>On dit que cependant le ſieur du Tremblay enuoya à S. Ger¬ <pb n="16"/>
-        <lb/>main, &amp; qu’il eut Srdre de rendrela place. Ce’ qu’il fit le Ieu¬.
-        <lb/>dy à trois heures, &amp; en ſortit bagues ſauues auee vingt hom
-        <lb rend="¬" break="no"/>mes, tant foldats que domeſtiques. Monſieur d’lbeuf luy
-        <lb/>dit que par les loisx de la guerre il uoit encouru vn plus rude
-        <lb/>traictenmient, pour auoir defehdul vne place de cette qualité;
-        <lb/>mais qu’il eſtoit ſon amy &amp; ſon ſeruiteur. Sur ce, comme il
-        <lb/>fut queſtion de faire entrer deux Compa gnies de Bourgeois.
-        <lb/>l’vne commandée par Monſieur Poirail Conſeiller de la
-        <lb/>Cour, &amp; l’autre par Mônſienr le Feborte auſſi Conſeiller, ils
-        <lb/>eurenr diſpute aà qui entreroit le premier. Monſieur d’Elbeuf
-        <lb/>leur propoſa de tourner à croix-pile: Monſieur Portail ré
-        <lb rend="¬" break="no"/>pondit qu’il ne ſç̧auoit point ce ieu là, &amp; qu’l en decideroit
-        <lb/>auec ſon eſpée contre l’autre. Sur ce Monſieur d’Elbeuf prit
-        <lb/>Monſieur Portail à l’adroicte, &amp; Monſieur le Febure par la
-        <lb/>gauche, &amp; les introduiſit tous deux en meſme remps. Le len
-        <lb rend="¬" break="no"/>demainendredy matin Monſieur le Prince de Conty norm
-        <lb rend="¬" break="no"/>ma Monſieus de Brouſſelpour Gouuerneur de la Baſtille, qui
-        <lb/>en donna la Lieutenance aà ſon fils, nommé́ la Louuiere, cy
-        <lb/>deuant Lieutenant aux Gardes A dieu. l’ay fnoid au bout des
-        <lb/>doigrs. L’eau entre dans l’Egliſe de nos Celeſtins. Ce di
-        <lb rend="¬" break="no"/>ſeptieſme Ianuier mi ſix cens quarante neuf. </p>
-    </body>
-  </text>
+        répliqua que s’il la pretendoit defendre cõtre vne ville de Pa
+        ris, il couroit la meſme fortune. Sur l’heure meſme Mon
+        ſieur de Liſlebonne fils de Monſieur d’Elbeuf, eut cõmande
+        ment de mener le Canon qu’il pointa contre la muraille de la
+        perſpectiue de la grande allée de l’Arſenac. On fit trois em
+        braſeures pour trois grosCanons qui tiroient dans la porte du
+        pont- leuis, &amp; qui firent trois ou quatre grands éclats dans la
+        pierre de taille, &amp; briſerent le pont leuis enpluſieurs endroits.
+        On dit que cependant le ſieur du Tremblay enuoya à S. Ger¬ 
+        main, &amp; qu’il eut Srdre de rendrela place. Ce’ qu’il fit le Ieu¬.
+        dy à trois heures, &amp; en ſortit bagues ſauues auee vingt hom
+        mes, tant foldats que domeſtiques. Monſieur d’lbeuf luy
+        dit que par les loisx de la guerre il uoit encouru vn plus rude
+        traictenmient, pour auoir defehdul vne place de cette qualité;
+        mais qu’il eſtoit ſon amy &amp; ſon ſeruiteur. Sur ce, comme il
+        fut queſtion de faire entrer deux Compa gnies de Bourgeois.
+        l’vne commandée par Monſieur Poirail Conſeiller de la
+        Cour, &amp; l’autre par Mônſienr le Feborte auſſi Conſeiller, ils
+        eurenr diſpute aà qui entreroit le premier. Monſieur d’Elbeuf
+        leur propoſa de tourner à croix-pile: Monſieur Portail ré
+        pondit qu’il ne ſç̧auoit point ce ieu là, &amp; qu’l en decideroit
+        auec ſon eſpée contre l’autre. Sur ce Monſieur d’Elbeuf prit
+        Monſieur Portail à l’adroicte, &amp; Monſieur le Febure par la
+        gauche, &amp; les introduiſit tous deux en meſme remps. Le len
+        demainendredy matin Monſieur le Prince de Conty norm
+        ma Monſieus de Brouſſelpour Gouuerneur de la Baſtille, qui
+        en donna la Lieutenance aà ſon fils, nommé́ la Louuiere, cy
+        deuant Lieutenant aux Gardes A dieu. l’ay fnoid au bout des
+        doigrs. L’eau entre dans l’Egliſe de nos Celeſtins. Ce di
+        ſeptieſme Ianuier mi ſix cens quarante neuf.			</p>
+		</body>
+	</text>
 </TEI>

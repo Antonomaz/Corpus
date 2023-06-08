@@ -4,9 +4,10 @@ import csv
 import dateutil.parser as duparser
 import flatdict #external dependancy but hopefully just for the temporary fixes anyway until the xml files are normalised/no need for special handling for anything
 test_file: str = "../Mazarinades_jsons/1-100/Moreau100_GALL.json"
-test_dir: str = "../tests/Mazarinades_jsons/*/*.json"
-#test_dir: str = "../Mazarinades_jsons/*/*.json"
+#test_dir: str = "../tests/Mazarinades_jsons/*/*.json"
+test_dir: str = "../Mazarinades_jsons/*/*.json"
 csv_dir:str="../output/stats"
+# old names
 #unknown_pub_place: str = "Sans Lieu"
 #unknown_pub_name: str = "Sans Nom"
 #unknown_pub_date:str = "Sans Date"
