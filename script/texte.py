@@ -203,7 +203,7 @@ class Texte:
         text_soup:BeautifulSoup = BeautifulSoup(self.txt, features="xml")
         imprimatur_text:str = text_soup.find("imprimatur")
         self.imprimatur = imprimatur_text.text if imprimatur_text is not None else None
-        print(self.imprimatur)
+        #print(self.imprimatur)
 
         
         return
@@ -246,3 +246,4 @@ if __name__ == "__main__":
 
     if test != "soft":
         liste = list(corpora(path))
+
