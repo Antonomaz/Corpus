@@ -1,795 +1,602 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau21_GALL">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Mazarine">L'achat de Mazarin, en vers burlesques.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName role="XML_Encoding">
-						<affiliation>
-							<roleName type="status">Stagiaire</roleName>
-						</affiliation>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Mazarine">L'achat de Mazarin, en vers burlesques.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="XML_Encoding">
+            <affiliation>
+              <roleName type="status">Stagiaire</roleName>
+            </affiliation>
 Roblin Camille					</persName>
-					<persName role="XML_Encoding">
-						<affiliation>
-							<roleName type="status">Stagiaire</roleName>
-						</affiliation>
+          <persName role="XML_Encoding">
+            <affiliation>
+              <roleName type="status">Stagiaire</roleName>
+            </affiliation>
 Lecha Mélanie					</persName>
-					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-					<persName role="Corrector">
-						<affiliation>
-							<roleName type="status">Vacataire</roleName>
-						</affiliation>
+          <persName role="Corrector">
+            <affiliation>
+              <roleName type="status">Vacataire</roleName>
+            </affiliation>
 Hip Amélie					</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-02-16">16 février 2021</date>
-				<date type="correction" when="2021-04-27">27 avril 2021</date>
-				<availability status="restricted" n="cc-by">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://gallica.bnf.fr/ark:/12148/bpt6k55769500"/>
-					<author/>
-					<title source="Mazarine">L'achat de Mazarin, en vers burlesques.</title>
-					<pubPlace source="Moreau">Sans lieu</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<date source="Carrier" when="1649-07">juillet 1649</date>
-					<extent>
-						<measure unit="page" quantity="11"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="BM00570" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49440"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2988507">Paris</settlement>
-						<institution>Bibliothèque nationale de France</institution>
-						<repository>Département Littérature et art</repository>
-						<idno type="cote">YE-1813</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-02-16">16 février 2021</date>
+        <date type="correction" when="2021-04-27">27 avril 2021</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k55769500" />
+          <author />
+          <title source="Mazarine">L'achat de Mazarin, en vers burlesques.</title>
+          <pubPlace source="Moreau">Sans lieu</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <date source="Carrier" when="1649-07">juillet 1649</date>
+          <extent>
+            <measure unit="page" quantity="11" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="BM00570" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49440" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2988507">Paris</settlement>
+            <institution>Bibliothèque nationale de France</institution>
+            <repository>Département Littérature et art</repository>
+            <idno type="cote">YE-1813</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine">En vers, 22 huitains d'octosyllabes. Deux états : p. 11 non chiffrée
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine">En vers, 22 huitains d'octosyllabes. Deux états : p. 11 non chiffrée
           (état A) ou chiffrée (état B). Texte paru début juillet 1649, d'après Hubert Carrier
           (Bibliothèque Mazarine, Ms. 4682-1, f. 18 v).</p>
-				<p source="Moreau">21. Achat (l’) de Mazarin en vers burlesques. Sans Lieu, 1649, 11 pages.
+        <p source="Moreau">21. Achat (l’) de Mazarin en vers burlesques. Sans Lieu, 1649, 11 pages.
           Cette pièce a paru pendant le siège de Cambrai.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">vers</term>
-					<term type="genre">poésie</term>
-					<term type="genre" ref="litterature/burlesque.xml">burlesque</term>
-					<term type="genre">satirique</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_23" source="Moreau">
-					<p>Siège de Cambrai</p>
-					<date when="1649-06-26">1649-06-26</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-09-06" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f2.highres"/>
-				<pb n="2" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f3.highres"/>
-				<pb n="3" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f4.highres"/>
-				<pb n="4" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f5.highres"/>
-				<pb n="5" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f6.highres"/>
-				<pb n="6" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f7.highres"/>
-				<pb n="7" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f8.highres"/>
-				<pb n="8" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f9.highres"/>
-				<pb n="9" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f10.highres"/>
-				<pb n="10" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f11.highres"/>
-				<pb n="11" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f12.highres"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<fw place="top-center" type="pageNum">3</fw>
-				<fw place="bot-right" type="sig">A ij</fw>
-				<fw place="top-center" type="pageNum">4</fw>
-				<fw place="bot-right" type="catch">
-					<hi rend="it">
-						<lb/>
-Bruxelles.					</hi>
-				</fw>
-				<fw place="top-center" type="pageNum">5</fw>
-				<fw place="bot-right" type="sig">B</fw>
-				<fw place="top-center" type="pageNum">6</fw>
-				<fw place="top-center" type="pageNum">7</fw>
-				<fw place="top-center" type="pageNum">8</fw>
-				<fw place="bot-right" type="catch">La</fw>
-				<fw place="top-center" type="pageNum">9</fw>
-				<fw place="bot-right" type="sig">C</fw>
-				<fw place="top-center" type="pageNum">10</fw>
-				<fw place="top-center" type="pageNum">11</fw>
-				<l>
-					<lb/>
-POVR moy ie ne veux point cét homme				</l>
-				<l>
-					<lb/>
-Ie craindrois qu'il euſt quelque pomme				</l>
-				<l>
-					<lb/>
-D'angoiſſe à me faire manger,				</l>
-				<l>
-					<lb/>
-Qu'il demeure loin d'Italie:				</l>
-				<l>
-					<lb/>
-Car ie ne veux pas m'engager				</l>
-				<l>
-					<lb/>
-A l'achepter c'eſt bien folie,				</l>
-				<l>
-					<lb/>
-Il s'eſtime de trop grand prix				</l>
-				<l>
-					<lb/>
-Et moy ie le tiens à mépris.				</l>
-				<l>
-					<lb/>
-					<hi rend="it">Viennes en Auſtriche.</hi>
-				</l>
-				<l rend="indent">
-					<lb/>
-Le bon-heur maintenant reſpire				</l>
-				<l>
-					<lb/>
-Pour ce bel &amp; puifſant Empire				</l>
-				<l>
-					<lb/>
-Sa paix repoſe dans ſon lieu				</l>
-				<l>
-					<lb/>
-Pour éuiter tout mal ſiniſtre				</l>
-				<l>
-					<lb/>
-Apres la mort de Richelieu				</l>
-				<l>
-					<lb/>
-Ie ne veux point aucun Miniſtre				</l>
-				<l>
-					<lb/>
-De Frante acheprer, car i'ay peur				</l>
-				<l>
-					<lb/>
-Que Mazarin me fuſt trompeur.				</l>
-				<l>
-					<lb/>
-					<hi rend="it">Madril.</hi>
-				</l>
-				<l rend="indent">
-					<lb/>
-Autresfois i'auois grande enuie				</l>
-				<l>
-					<lb/>
-De rendre la gloire aſſouuie				</l>
-				<l>
-					<lb/>
-Du Miniſtre d'Eſtat François,				</l>
-				<l>
-					<lb/>
-Ie le voulois rendre Pontife				</l>
-				<l>
-					<lb/>
-Il eſt mort ie ne fais plus choix				</l>
-				<l>
-					<lb/>
-De celuy qui vit en Caiffe				</l>
-				<l>
-					<lb/>
-Et que l'on nomme Mazarin,				</l>
-				<l>
-					<lb/>
-Ie crains trop les doigts de ſa main.				</l>
-				<l rend="indent">
-					<lb/>
-					<hi rend="it">Barcelonne.</hi>
-				</l>
-				<l>
-					<lb/>
-Quand i'aurois d'argent d'auantage				</l>
-				<l>
-					<lb/>
-Ie ne prendrois iamais courage				</l>
-				<l>
-					<lb/>
-D'acheter Iules Mazarin,				</l>
-				<l>
-					<lb/>
-Ie crois qu'il eſt comme ſon frere,				</l>
-				<l>
-					<lb/>
-Qu'il a l'eſprit fier &amp; malin,				</l>
-				<l>
-					<lb/>
-Et que s'il parroiſt dehonnaire				</l>
-				<l>
-					<lb/>
-Ce n'eſt pas qu'il n'aye l'eſprit				</l>
-				<l>
-					<lb/>
-Plein de fiel comme l'Ante-chriſt.				</l>
-				<l>
-					<lb/>
-					<hi rend="it">Bruxelles.</hi>
-				</l>
-				<l rend="indent">
-					<lb/>
-Mon deſir iamais ne ſe guinde,				</l>
-				<l>
-					<lb/>
-Quand i'aurois les treſors de l'Inde				</l>
-				<l>
-					<lb/>
-A l'achapt de ce Mazarin,				</l>
-				<l>
-					<lb/>
-Parce que ie ſçais que ce fourbe				</l>
-				<l>
-					<lb/>
-Tend touſiours en mauuaiſe fin,				</l>
-				<l>
-					<lb/>
-Et que ſouuent le droit il courbe				</l>
-				<l>
-					<lb/>
-Pour monſtrer en cette ſaiſon				</l>
-				<l>
-					<lb/>
-Qu'il fait la guerre auec raiſon.				</l>
-				<l>
-					<lb/>
-					<hi rend="it">Amiens.</hi>
-				</l>
-				<l rend="indent">
-					<lb/>
-Ie l'ay veu ce grand perſonnage				</l>
-				<l>
-					<lb/>
-Sans me fier à ſon langage				</l>
-				<l>
-					<lb/>
-Ie n'ay pas voulu l'achepter				</l>
-				<l>
-					<lb/>
-Il vouloit que ma Citadelle				</l>
-				<l>
-					<lb/>
-Feuſt l'argent que ie deu couſter,				</l>
-				<l>
-					<lb/>
-Ie luy donne cette nouuelle				</l>
-				<l>
-					<lb/>
-Qu'il n'y pourra iamais entrer,				</l>
-				<l>
-					<lb/>
-Du moins s'il ne ſe fait chatter.				</l>
-				<l>
-					<lb/>
-					<hi rend="it">Orleans.</hi>
-				</l>
-				<l>
-					<lb/>
-Si i'auois entre mes murailles				</l>
-				<l>
-					<lb/>
-Ce ſubtil inuenteur des tailles				</l>
-				<l>
-					<lb/>
-Des ſubſides, &amp; des impoſts,				</l>
-				<l>
-					<lb/>
-Ie croitois que la fin du monde				</l>
-				<l>
-					<lb/>
-S'approcheroit: car le repos				</l>
-				<l>
-					<lb/>
-N'y feroit deſormais ſa ronde,				</l>
-				<l>
-					<lb/>
-Car ie fçay que le Mazarin				</l>
-				<l>
-					<lb/>
-A la diſcorde dans ſon train.				</l>
-				<l>
-					<lb/>
-					<hi rend="it">Dijon.</hi>
-				</l>
-				<l rend="indent">
-					<lb/>
-Quand il ne vaudroit qu'vne maille,				</l>
-				<l>
-					<lb/>
-N'ayez peur que iamais ie faille				</l>
-				<l>
-					<lb/>
-A ce poinct que d'en faire achapt;				</l>
-				<l>
-					<lb/>
-Ie croirois eſtre ſur la terre,				</l>
-				<l>
-					<lb/>
-Comme entre les mains d'vn Baſchat:				</l>
-				<l>
-					<lb/>
-Qui me feroit viure en la guerre,				</l>
-				<l>
-					<lb/>
-Pour tirer du fonds de mon corps				</l>
-				<l>
-					<lb/>
-Tous mes plus precieux treſors.				</l>
-				<l>
-					<lb/>
-					<hi rend="it">Lyon.</hi>
-				</l>
-				<l rend="indent">
-					<lb/>
-Ie ſuis contant de mon Alphonſe,				</l>
-				<l>
-					<lb/>
-Sa bouche iamais ne prononce,				</l>
-				<l>
-					<lb/>
-Des mouuemens ſur les impoſts,				</l>
-				<l>
-					<lb/>
-Quand on me laiſſeroit ce Iule				</l>
-				<l>
-					<lb/>
-A credit ou bien en depoſt,				</l>
-				<l>
-					<lb/>
-Ie le mettrois ſur vne Mule				</l>
-				<l>
-					<lb/>
-Pour le faire viſte ſortir				</l>
-				<l>
-					<lb/>
-De peur de ne me repenir.				</l>
-				<l>
-					<lb/>
-					<hi rend="it">Grenoble.</hi>
-				</l>
-				<l>
-					<lb/>
-On ſçait que mon humeur eſt noble,				</l>
-				<l>
-					<lb/>
-D'où vient qu'on me nomme Grenoble				</l>
-				<l>
-					<lb/>
-Si bien que ie n'ay pas beſoin				</l>
-				<l>
-					<lb/>
-D'acheter vn homme de boüe,				</l>
-				<l>
-					<lb/>
-Quelque autre en doit prendre le ſoin				</l>
-				<l>
-					<lb/>
-Car pour moy maintenant i'aduoüe				</l>
-				<l>
-					<lb/>
-Que j'auois vn mal-heur exquis				</l>
-				<l>
-					<lb/>
-Si i'auois Mazarin acquis.				</l>
-				<l>
-					<hi rend="it">
-						<lb/>
-Valence.					</hi>
-				</l>
-				<l rend="indent">
-					<lb/>
-On ſçait que pour mon ancien tiltre				</l>
-				<l>
-					<lb/>
-Ie ne dois pas pour vn beliſtre				</l>
-				<l>
-					<lb/>
-Faire degaſt de mon treſor,				</l>
-				<l>
-					<lb/>
-De cet homme plein de chicane,				</l>
-				<l>
-					<lb/>
-Quand il ſeroit tout chargé d'or,				</l>
-				<l>
-					<lb/>
-Ie n'en donnerois pas vn aſue,				</l>
-				<l>
-					<lb/>
-En vn mot, iamais Mazarin				</l>
-				<l>
-					<lb/>
-Ne me fera viure en chagrin.				</l>
-				<l>
-					<lb/>
-					<hi rend="it">Avignon.</hi>
-				</l>
-				<l>
-					<lb/>
-On ſçait que touſiours mon enceinte				</l>
-				<l>
-					<lb/>
-Contient vne perſonne ſaincte,				</l>
-				<l>
-					<lb/>
-Plaine d'amour &amp; de douceur;				</l>
-				<l>
-					<lb/>
-Ha ! ie ſerois bien miſerable				</l>
-				<l>
-					<lb/>
-Si i'achetois ce rauiſſeur,				</l>
-				<l>
-					<lb/>
-Des Louys, dont l'ame execrable				</l>
-				<l>
-					<lb/>
-N'aura deſſein iamais				</l>
-				<l>
-					<lb/>
-De panſer à la Paix.				</l>
-				<l>
-					<lb/>
-					<hi rend="it">Marſeille.</hi>
-				</l>
-				<l>
-					<lb/>
-LLa Mer qui mon eſprit l'imite,				</l>
-				<l>
-					<lb/>
-En quelque maniere n'inuite				</l>
-				<l>
-					<lb/>
-De faire achapt de Mazarin,				</l>
-				<l>
-					<lb/>
-Mais i'aurois peur que par ſes charme				</l>
-				<l>
-					<lb/>
-Il me fit changer de deſſein,				</l>
-				<l>
-					<lb/>
-Et qu'il me fit prendre les armes				</l>
-				<l>
-					<lb/>
-Contre l'authorité du Roy				</l>
-				<l>
-					<lb/>
-Ainſi ie le laiſſe chez ſoy.				</l>
-				<l>
-					<lb/>
-					<hi rend="it">Aix en Prouence.</hi>
-				</l>
-				<l>
-					<lb/>
-Qui voudroit achepter ce traiſtre,				</l>
-				<l>
-					<lb/>
-Qui deſſous la robe d'vn Preſtre				</l>
-				<l>
-					<lb/>
-Cache la rage d'vn demon,				</l>
-				<l>
-					<lb/>
-Il veut ruiner la Prouence,				</l>
-				<l>
-					<lb/>
-Pour rendre immortel ſon renom				</l>
-				<l>
-					<lb/>
-Mais le Ciel prendra ſa vangeance,				</l>
-				<l>
-					<lb/>
-Et fera mourir de douleur				</l>
-				<l>
-					<lb/>
-Le boute feu de ſon mal heur.				</l>
-				<l>
-					<lb/>
-					<hi rend="it">Arles.</hi>
-				</l>
-				<l>
-					<lb/>
-Ie ne ſçay de quelle monnoye				</l>
-				<l>
-					<lb/>
-On pourroit achepter la ioye				</l>
-				<l>
-					<lb/>
-Du Mazarin noſtre grand fleau,				</l>
-				<l>
-					<lb/>
-Il faudroit expoſer la vie				</l>
-				<l>
-					<lb/>
-Des François pour mettre au tõbeau,				</l>
-				<l>
-					<lb/>
-Son inſolence &amp; ſon enuie,				</l>
-				<l>
-					<lb/>
-Si l'on me le donnoit pour rien				</l>
-				<l>
-					<lb/>
-Ie le refuſerois tres bien.				</l>
-				<l>
-					<lb/>
-					<hi rend="it">Mont pellier.</hi>
-				</l>
-				<l>
-					<lb/>
-Que Mazarin faſſe la guerre;				</l>
-				<l>
-					<lb/>
-Mais qu'il n'approche ceſte terre,				</l>
-				<l>
-					<lb/>
-Et qu'il ne ſe mette à l'anquant,				</l>
-				<l>
-					<lb/>
-Il eſt d'vn prix irraiſonnable,				</l>
-				<l>
-					<lb/>
-Si ie l'auois tout quant &amp; quant,				</l>
-				<l>
-					<lb/>
-I'en ferois vn preſent au Diable,				</l>
-				<l>
-					<lb/>
-S'il venoit troubler mon repos				</l>
-				<l>
-					<lb/>
-Ie luy baillereis lur le dos.				</l>
-				<l>
-					<lb/>
-					<hi rend="it">La Rochelle.</hi>
-				</l>
-				<l>
-					<lb/>
-Depuis que ie ne ſuis rebelle,				</l>
-				<l>
-					<lb/>
-Et que ie me monſtre fidelle,				</l>
-				<l>
-					<lb/>
-Ie vis ſans crainte &amp; ſans chagrin,				</l>
-				<l>
-					<lb/>
-On parle d'vn achapt terrible,				</l>
-				<l>
-					<lb/>
-Tel eſt celuy de Mazarin				</l>
-				<l>
-					<lb/>
-Pour lequel ie ſuis inſenſible;				</l>
-				<l>
-					<lb/>
-S'il venoit mes bords eſcumer				</l>
-				<l>
-					<lb/>
-Ie le ietterois dans la Mer.				</l>
-				<l>
-					<lb/>
-					<hi rend="it">Thoulouſe.</hi>
-				</l>
-				<l>
-					<lb/>
-Si Mazarin auoit l'enuie				</l>
-				<l>
-					<lb/>
-Que de venir paſſer ſa vie				</l>
-				<l>
-					<lb/>
-Dans mon enceinte &amp; mon circuit,				</l>
-				<l>
-					<lb/>
-Il faudroit qu'il vint de bon-heure,				</l>
-				<l>
-					<lb/>
-Et qu'il entraſt encor de nuict:				</l>
-				<l>
-					<lb/>
-Car autrement ie vous aſſeure				</l>
-				<l>
-					<lb/>
-Sans le vendre &amp; ſans l'acheter				</l>
-				<l>
-					<lb/>
-Ie le ferois precipiter.				</l>
-				<l>
-					<lb/>
-					<hi rend="it">Bordeaux.</hi>
-				</l>
-				<l>
-					<lb/>
-Bien que ie ſois Ville de marque				</l>
-				<l>
-					<lb/>
-Et qui puis ſeruir mon Monarque;				</l>
-				<l>
-					<lb/>
-Ainſi que i'ay fait autrefois,				</l>
-				<l>
-					<lb/>
-Pourtant ie n'ay pas la penſée				</l>
-				<l>
-					<lb/>
-De prendre Mazarin au choix				</l>
-				<l>
-					<lb/>
-Ma gloire y ſeroit offenſée,				</l>
-				<l>
-					<lb/>
-Que s'il me faiſoit ce defit				</l>
-				<l>
-					<lb/>
-Ce ne ſeroit pas ſon profit,				</l>
-				<l>
-					<lb/>
-					<hi rend="it">Cambray.</hi>
-				</l>
-				<l>
-					<lb/>
-Ie ſuis bien aiſe qu'on m'aſſiege;				</l>
-				<l>
-					<lb/>
-Mais que ie n'entre pas au piege				</l>
-				<l>
-					<lb/>
-De ce Cardinal Mazarin				</l>
-				<l>
-					<lb/>
-Ce me ſeroit choſe faſcheuſe				</l>
-				<l>
-					<lb/>
-S'il me falloit eſtre en ſon train,				</l>
-				<l>
-					<lb/>
-Ie le prie fort qu'il m'excuſe,				</l>
-				<l>
-					<lb/>
-Qu'il viue ſans moy, moy ſans luy,				</l>
-				<l>
-					<lb/>
-Ainſi ie viuray ſans ennuy.				</l>
-				<l>
-					<hi rend="it">
-						<lb/>
-						<lb/>
-Les Autres villes &amp; Fortereſſe;
-            de la France.					</hi>
-				</l>
-				<l>
-					<lb/>
-A t'on iamais veu tel prodige				</l>
-				<l>
-					<lb/>
-Vn Eſtranger qui nous afflige				</l>
-				<l>
-					<lb/>
-Nous veut contraindre à l'achepter,				</l>
-				<l>
-					<lb/>
-Qu'il demeure dans l'Italie				</l>
-				<l>
-					<lb/>
-Nous ne voulons pas arreſter				</l>
-				<l>
-					<lb/>
-Plus long-temps deſſous ſa folie,				</l>
-				<l>
-					<lb/>
-Quand noſtre Roy fera Maieur,				</l>
-				<l>
-					<lb/>
-Nous iouyrons d'vn plus grand-heur.				</l>
-				<l>
-					<hi rend="it">
-						<lb/>
-Paris.					</hi>
-				</l>
-				<l>
-					<lb/>
-Aucune ville ne ſouhaitte,				</l>
-				<l>
-					<lb/>
-De mettre cét homme en ſa boëtte,				</l>
-				<l>
-					<lb/>
-Et moy ie voudrois le tenir;				</l>
-				<l>
-					<lb/>
-Si Mazarin veur faire eſchange				</l>
-				<l>
-					<lb/>
-De ſa perſonne, il doit venir				</l>
-				<l>
-					<lb/>
-Sans auoir peur que l'on ſe vange,				</l>
-				<l>
-					<lb/>
-Pourueu qu'il rameine le Roy,				</l>
-				<l>
-					<lb/>
-Il viuroit en repos chez ſoy.				</l>
-				<l>
-					<lb/>
-FIN.				</l>
-L'ACHAT
-        DE
-        MAZARIN
-        EN VERS BVRLESQVES.
-        M. DC. XLIX 
-        
-        
-        L'ACHAT
-        DV
-        MAZARIN.
-        
-        ROME.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">vers</term>
+          <term type="genre">poésie</term>
+          <term type="genre" ref="litterature/burlesque.xml">burlesque</term>
+          <term type="genre">satirique</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_23" source="Moreau">
+          <p>Siège de Cambrai</p>
+          <date when="1649-06-26">1649-06-26</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-09-06" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f2.highres" />
+        <lb />L'ACHAT
+        <lb />DE
+        <lb />MAZARIN
+        <lb />EN VERS BVRLESQVES.
+        <lb />M. DC. XLIX <pb n="2" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f3.highres" />
+        <pb n="3" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f4.highres" />
+        <fw place="top-center" type="pageNum">3</fw>
+        <lb />L'ACHAT
+        <lb />DV
+        <lb />MAZARIN.
+        <lb />
+        <lb />ROME. <l>
+          <lb />POVR moy ie ne veux point cét homme</l>
+        <l>
+          <lb />Ie craindrois qu'il euſt quelque pomme</l>
+        <l>
+          <lb />D'angoiſſe à me faire manger,</l>
+        <l>
+          <lb />Qu'il demeure loin d'Italie:</l>
+        <l>
+          <lb />Car ie ne veux pas m'engager</l>
+        <l>
+          <lb />A l'achepter c'eſt bien folie,</l>
+        <l>
+          <lb />Il s'eſtime de trop grand prix</l>
+        <l>
+          <lb />Et moy ie le tiens à mépris.</l>
+        <fw place="bot-right" type="sig">A ij</fw>
+        <pb n="4" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f5.highres" />
+        <fw place="top-center" type="pageNum">4</fw>
+        <l>
+          <lb />
+          <hi rend="it">Viennes en Auſtriche.</hi>
+        </l>
+        <l rend="indent">
+          <lb />Le bon-heur maintenant reſpire</l>
+        <l>
+          <lb />Pour ce bel &amp; puifſant Empire</l>
+        <l>
+          <lb />Sa paix repoſe dans ſon lieu</l>
+        <l>
+          <lb />Pour éuiter tout mal ſiniſtre</l>
+        <l>
+          <lb />Apres la mort de Richelieu</l>
+        <l>
+          <lb />Ie ne veux point aucun Miniſtre</l>
+        <l>
+          <lb />De Frante acheprer, car i'ay peur</l>
+        <l>
+          <lb />Que Mazarin me fuſt trompeur.</l>
+        <l>
+          <lb />
+          <hi rend="it">Madril.</hi>
+        </l>
+        <l rend="indent">
+          <lb />Autresfois i'auois grande enuie</l>
+        <l>
+          <lb />De rendre la gloire aſſouuie</l>
+        <l>
+          <lb />Du Miniſtre d'Eſtat François,</l>
+        <l>
+          <lb />Ie le voulois rendre Pontife</l>
+        <l>
+          <lb />Il eſt mort ie ne fais plus choix</l>
+        <l>
+          <lb />De celuy qui vit en Caiffe</l>
+        <l>
+          <lb />Et que l'on nomme Mazarin,</l>
+        <l>
+          <lb />Ie crains trop les doigts de ſa main.</l>
+        <l rend="indent">
+          <lb />
+          <hi rend="it">Barcelonne.</hi>
+        </l>
+        <l>
+          <lb />Quand i'aurois d'argent d'auantage</l>
+        <l>
+          <lb />Ie ne prendrois iamais courage</l>
+        <l>
+          <lb />D'acheter Iules Mazarin,</l>
+        <l>
+          <lb />Ie crois qu'il eſt comme ſon frere,</l>
+        <l>
+          <lb />Qu'il a l'eſprit fier &amp; malin,</l>
+        <l>
+          <lb />Et que s'il parroiſt dehonnaire</l>
+        <l>
+          <lb />Ce n'eſt pas qu'il n'aye l'eſprit</l>
+        <l>
+          <lb />Plein de fiel comme l'Ante-chriſt.</l>
+        <fw place="bot-right" type="catch">
+          <hi rend="it">
+            <lb />Bruxelles.</hi>
+        </fw>
+        <pb n="5" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f6.highres" />
+        <fw place="top-center" type="pageNum">5</fw>
+        <l>
+          <lb />
+          <hi rend="it">Bruxelles.</hi>
+        </l>
+        <l rend="indent">
+          <lb />Mon deſir iamais ne ſe guinde,</l>
+        <l>
+          <lb />Quand i'aurois les treſors de l'Inde</l>
+        <l>
+          <lb />A l'achapt de ce Mazarin,</l>
+        <l>
+          <lb />Parce que ie ſçais que ce fourbe</l>
+        <l>
+          <lb />Tend touſiours en mauuaiſe fin,</l>
+        <l>
+          <lb />Et que ſouuent le droit il courbe</l>
+        <l>
+          <lb />Pour monſtrer en cette ſaiſon</l>
+        <l>
+          <lb />Qu'il fait la guerre auec raiſon.</l>
+        <l>
+          <lb />
+          <hi rend="it">Amiens.</hi>
+        </l>
+        <l rend="indent">
+          <lb />Ie l'ay veu ce grand perſonnage</l>
+        <l>
+          <lb />Sans me fier à ſon langage</l>
+        <l>
+          <lb />Ie n'ay pas voulu l'achepter</l>
+        <l>
+          <lb />Il vouloit que ma Citadelle</l>
+        <l>
+          <lb />Feuſt l'argent que ie deu couſter,</l>
+        <l>
+          <lb />Ie luy donne cette nouuelle</l>
+        <l>
+          <lb />Qu'il n'y pourra iamais entrer,</l>
+        <l>
+          <lb />Du moins s'il ne ſe fait chatter.</l>
+        <l>
+          <lb />
+          <hi rend="it">Orleans.</hi>
+        </l>
+        <l>
+          <lb />Si i'auois entre mes murailles</l>
+        <l>
+          <lb />Ce ſubtil inuenteur des tailles</l>
+        <l>
+          <lb />Des ſubſides, &amp; des impoſts,</l>
+        <l>
+          <lb />Ie croitois que la fin du monde</l>
+        <l>
+          <lb />S'approcheroit: car le repos</l>
+        <l>
+          <lb />N'y feroit deſormais ſa ronde,</l>
+        <l>
+          <lb />Car ie fçay que le Mazarin</l>
+        <l>
+          <lb />A la diſcorde dans ſon train.</l>
+        <fw place="bot-right" type="sig">B</fw>
+        <pb n="6" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f7.highres" />
+        <fw place="top-center" type="pageNum">6</fw>
+        <l>
+          <lb />
+          <hi rend="it">Dijon.</hi>
+        </l>
+        <l rend="indent">
+          <lb />Quand il ne vaudroit qu'vne maille,</l>
+        <l>
+          <lb />N'ayez peur que iamais ie faille</l>
+        <l>
+          <lb />A ce poinct que d'en faire achapt;</l>
+        <l>
+          <lb />Ie croirois eſtre ſur la terre,</l>
+        <l>
+          <lb />Comme entre les mains d'vn Baſchat:</l>
+        <l>
+          <lb />Qui me feroit viure en la guerre,</l>
+        <l>
+          <lb />Pour tirer du fonds de mon corps</l>
+        <l>
+          <lb />Tous mes plus precieux treſors.</l>
+        <l>
+          <lb />
+          <hi rend="it">Lyon.</hi>
+        </l>
+        <l rend="indent">
+          <lb />Ie ſuis contant de mon Alphonſe,</l>
+        <l>
+          <lb />Sa bouche iamais ne prononce,</l>
+        <l>
+          <lb />Des mouuemens ſur les impoſts,</l>
+        <l>
+          <lb />Quand on me laiſſeroit ce Iule</l>
+        <l>
+          <lb />A credit ou bien en depoſt,</l>
+        <l>
+          <lb />Ie le mettrois ſur vne Mule</l>
+        <l>
+          <lb />Pour le faire viſte ſortir</l>
+        <l>
+          <lb />De peur de ne me repenir.</l>
+        <l>
+          <lb />
+          <hi rend="it">Grenoble.</hi>
+        </l>
+        <l>
+          <lb />On ſçait que mon humeur eſt noble,</l>
+        <l>
+          <lb />D'où vient qu'on me nomme Grenoble</l>
+        <l>
+          <lb />Si bien que ie n'ay pas beſoin</l>
+        <l>
+          <lb />D'acheter vn homme de boüe,</l>
+        <l>
+          <lb />Quelque autre en doit prendre le ſoin</l>
+        <l>
+          <lb />Car pour moy maintenant i'aduoüe</l>
+        <l>
+          <lb />Que j'auois vn mal-heur exquis</l>
+        <l>
+          <lb />Si i'auois Mazarin acquis.</l>
+        <pb n="7" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f8.highres" />
+        <fw place="top-center" type="pageNum">7</fw>
+        <l>
+          <hi rend="it">
+            <lb />Valence.</hi>
+        </l>
+        <l rend="indent">
+          <lb />On ſçait que pour mon ancien tiltre</l>
+        <l>
+          <lb />Ie ne dois pas pour vn beliſtre</l>
+        <l>
+          <lb />Faire degaſt de mon treſor,</l>
+        <l>
+          <lb />De cet homme plein de chicane,</l>
+        <l>
+          <lb />Quand il ſeroit tout chargé d'or,</l>
+        <l>
+          <lb />Ie n'en donnerois pas vn aſue,</l>
+        <l>
+          <lb />En vn mot, iamais Mazarin</l>
+        <l>
+          <lb />Ne me fera viure en chagrin.</l>
+        <l>
+          <lb />
+          <hi rend="it">Avignon.</hi>
+        </l>
+        <l>
+          <lb />On ſçait que touſiours mon enceinte</l>
+        <l>
+          <lb />Contient vne perſonne ſaincte,</l>
+        <l>
+          <lb />Plaine d'amour &amp; de douceur;</l>
+        <l>
+          <lb />Ha ! ie ſerois bien miſerable</l>
+        <l>
+          <lb />Si i'achetois ce rauiſſeur,</l>
+        <l>
+          <lb />Des Louys, dont l'ame execrable</l>
+        <l>
+          <lb />N'aura deſſein iamais</l>
+        <l>
+          <lb />De panſer à la Paix.</l>
+        <l>
+          <lb />
+          <hi rend="it">Marſeille.</hi>
+        </l>
+        <l>
+          <lb />LLa Mer qui mon eſprit l'imite,</l>
+        <l>
+          <lb />En quelque maniere n'inuite</l>
+        <l>
+          <lb />De faire achapt de Mazarin,</l>
+        <l>
+          <lb />Mais i'aurois peur que par ſes charme</l>
+        <l>
+          <lb />Il me fit changer de deſſein,</l>
+        <l>
+          <lb />Et qu'il me fit prendre les armes</l>
+        <l>
+          <lb />Contre l'authorité du Roy</l>
+        <l>
+          <lb />Ainſi ie le laiſſe chez ſoy.</l>
+        <pb n="8" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f9.highres" />
+        <fw place="top-center" type="pageNum">8</fw>
+        <l>
+          <lb />
+          <hi rend="it">Aix en Prouence.</hi>
+        </l>
+        <l>
+          <lb />Qui voudroit achepter ce traiſtre,</l>
+        <l>
+          <lb />Qui deſſous la robe d'vn Preſtre</l>
+        <l>
+          <lb />Cache la rage d'vn demon,</l>
+        <l>
+          <lb />Il veut ruiner la Prouence,</l>
+        <l>
+          <lb />Pour rendre immortel ſon renom</l>
+        <l>
+          <lb />Mais le Ciel prendra ſa vangeance,</l>
+        <l>
+          <lb />Et fera mourir de douleur</l>
+        <l>
+          <lb />Le boute feu de ſon mal heur.</l>
+        <l>
+          <lb />
+          <hi rend="it">Arles.</hi>
+        </l>
+        <l>
+          <lb />Ie ne ſçay de quelle monnoye</l>
+        <l>
+          <lb />On pourroit achepter la ioye</l>
+        <l>
+          <lb />Du Mazarin noſtre grand fleau,</l>
+        <l>
+          <lb />Il faudroit expoſer la vie</l>
+        <l>
+          <lb />Des François pour mettre au tõbeau,</l>
+        <l>
+          <lb />Son inſolence &amp; ſon enuie,</l>
+        <l>
+          <lb />Si l'on me le donnoit pour rien</l>
+        <l>
+          <lb />Ie le refuſerois tres bien.</l>
+        <l>
+          <lb />
+          <hi rend="it">Mont pellier.</hi>
+        </l>
+        <l>
+          <lb />Que Mazarin faſſe la guerre;</l>
+        <l>
+          <lb />Mais qu'il n'approche ceſte terre,</l>
+        <l>
+          <lb />Et qu'il ne ſe mette à l'anquant,</l>
+        <l>
+          <lb />Il eſt d'vn prix irraiſonnable,</l>
+        <l>
+          <lb />Si ie l'auois tout quant &amp; quant,</l>
+        <l>
+          <lb />I'en ferois vn preſent au Diable,</l>
+        <l>
+          <lb />S'il venoit troubler mon repos</l>
+        <l>
+          <lb />Ie luy baillereis lur le dos.</l>
+        <fw place="bot-right" type="catch">La</fw>
+        <pb n="9" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f10.highres" />
+        <fw place="top-center" type="pageNum">9</fw>
+        <l>
+          <lb />
+          <hi rend="it">La Rochelle.</hi>
+        </l>
+        <l>
+          <lb />Depuis que ie ne ſuis rebelle,</l>
+        <l>
+          <lb />Et que ie me monſtre fidelle,</l>
+        <l>
+          <lb />Ie vis ſans crainte &amp; ſans chagrin,</l>
+        <l>
+          <lb />On parle d'vn achapt terrible,</l>
+        <l>
+          <lb />Tel eſt celuy de Mazarin</l>
+        <l>
+          <lb />Pour lequel ie ſuis inſenſible;</l>
+        <l>
+          <lb />S'il venoit mes bords eſcumer</l>
+        <l>
+          <lb />Ie le ietterois dans la Mer.</l>
+        <l>
+          <lb />
+          <hi rend="it">Thoulouſe.</hi>
+        </l>
+        <l>
+          <lb />Si Mazarin auoit l'enuie</l>
+        <l>
+          <lb />Que de venir paſſer ſa vie</l>
+        <l>
+          <lb />Dans mon enceinte &amp; mon circuit,</l>
+        <l>
+          <lb />Il faudroit qu'il vint de bon-heure,</l>
+        <l>
+          <lb />Et qu'il entraſt encor de nuict:</l>
+        <l>
+          <lb />Car autrement ie vous aſſeure</l>
+        <l>
+          <lb />Sans le vendre &amp; ſans l'acheter</l>
+        <l>
+          <lb />Ie le ferois precipiter.</l>
+        <fw place="bot-right" type="sig">C</fw>
+        <pb n="10" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f11.highres" />
+        <fw place="top-center" type="pageNum">10</fw>
+        <l>
+          <lb />
+          <hi rend="it">Bordeaux.</hi>
+        </l>
+        <l>
+          <lb />Bien que ie ſois Ville de marque</l>
+        <l>
+          <lb />Et qui puis ſeruir mon Monarque;</l>
+        <l>
+          <lb />Ainſi que i'ay fait autrefois,</l>
+        <l>
+          <lb />Pourtant ie n'ay pas la penſée</l>
+        <l>
+          <lb />De prendre Mazarin au choix</l>
+        <l>
+          <lb />Ma gloire y ſeroit offenſée,</l>
+        <l>
+          <lb />Que s'il me faiſoit ce defit</l>
+        <l>
+          <lb />Ce ne ſeroit pas ſon profit,</l>
+        <l>
+          <lb />
+          <hi rend="it">Cambray.</hi>
+        </l>
+        <l>
+          <lb />Ie ſuis bien aiſe qu'on m'aſſiege;</l>
+        <l>
+          <lb />Mais que ie n'entre pas au piege</l>
+        <l>
+          <lb />De ce Cardinal Mazarin</l>
+        <l>
+          <lb />Ce me ſeroit choſe faſcheuſe</l>
+        <l>
+          <lb />S'il me falloit eſtre en ſon train,</l>
+        <l>
+          <lb />Ie le prie fort qu'il m'excuſe,</l>
+        <l>
+          <lb />Qu'il viue ſans moy, moy ſans luy,</l>
+        <l>
+          <lb />Ainſi ie viuray ſans ennuy.</l>
+        <pb n="11" facs="https://gallica.bnf.fr/ark:/12148/bpt6k55769500/f12.highres" />
+        <fw place="top-center" type="pageNum">11</fw>
+        <l>
+          <hi rend="it">
+            <lb />Les Autres villes &amp; Fortereſſe;
+            <lb />de la France.</hi>
+        </l>
+        <l>
+          <lb />A t'on iamais veu tel prodige</l>
+        <l>
+          <lb />Vn Eſtranger qui nous afflige</l>
+        <l>
+          <lb />Nous veut contraindre à l'achepter,</l>
+        <l>
+          <lb />Qu'il demeure dans l'Italie</l>
+        <l>
+          <lb />Nous ne voulons pas arreſter</l>
+        <l>
+          <lb />Plus long-temps deſſous ſa folie,</l>
+        <l>
+          <lb />Quand noſtre Roy fera Maieur,</l>
+        <l>
+          <lb />Nous iouyrons d'vn plus grand-heur.</l>
+        <l>
+          <hi rend="it">
+            <lb />Paris.</hi>
+        </l>
+        <l>
+          <lb />Aucune ville ne ſouhaitte,</l>
+        <l>
+          <lb />De mettre cét homme en ſa boëtte,</l>
+        <l>
+          <lb />Et moy ie voudrois le tenir;</l>
+        <l>
+          <lb />Si Mazarin veur faire eſchange</l>
+        <l>
+          <lb />De ſa perſonne, il doit venir</l>
+        <l>
+          <lb />Sans auoir peur que l'on ſe vange,</l>
+        <l>
+          <lb />Pourueu qu'il rameine le Roy,</l>
+        <l>
+          <lb />Il viuroit en repos chez ſoy.</l>
+        <l>
+          <lb />FIN.</l>
+      </p>
+    </body>
+  </text>
 </TEI>

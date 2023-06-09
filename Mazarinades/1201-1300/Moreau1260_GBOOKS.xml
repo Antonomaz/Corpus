@@ -1,368 +1,240 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1260_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">L’entrevue de Son Altesse Royale, de M. le Prince et de
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">L’entrevue de Son Altesse Royale, de M. le Prince et de
           M. de Beaufort, et leur magnifique entrée dans le palais d'Orléans, ensemble leur
           entretien touchant les affaires du temps, durant le chemin.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=JfF1ZvEEFjUC"/>
-					<author/>
-					<title source="Moreau">Entrevue (l’) de Son Altesse Royale, de M. le Prince et de M. de
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=JfF1ZvEEFjUC" />
+          <author />
+          <title source="Moreau">Entrevue (l’) de Son Altesse Royale, de M. le Prince et de M. de
             Beaufort, et leur magnifique entrée dans le palais d'Orléans, ensemble leur entretien
             touchant les affaires du temps, durant le chemin.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure quantity="7" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale de Lyon</institution>
-						<repository/>
-						<idno type="cote">Res 309190</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure quantity="7" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale de Lyon</institution>
+            <repository />
+            <idno type="cote">Res 309190</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">1260. Entrevue (l’) de Son Altesse Royale, de M. le Prince et de M. de
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">1260. Entrevue (l’) de Son Altesse Royale, de M. le Prince et de M. de
           Beaufort, et leur magnifique entrée dans le palais d’Orléans, ensemble leur entretien
           touchant lesaffaires dutemps, durant le chemin. Paris, 1652, 7 pagesÏ"“ Après le combat de
           Bleneau. Sotte pièce, dont il faut dire pour- tant qu’elle n’est pas commune.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">entretien</term>
-					<term type="genre">dialogue</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_75" source="Moreau">
-					<p>Arrivée du prince de Condé à Paris</p>
-					<date when="1652-04-11">1652-04-11</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2021-11-15" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<figure type="decoration"/>
-				<gap/>
-LENTREVEVE
-        DE
-        SON ALTESSE
-        ROYALE.
-        DE MONSIEVR LE PRINCE,
-        ET DE MR DE BEAVFORT.
-        Et leur magniſique Entrée dans
-        le Palais d’Orleans.
-        Enſemble leur entretien touchant les ffaires
-        du Temps. 
-        A PARIS.
-        M. DC. XLIX. 
-        
-        AVſſi-toſt que le Courrier eſt venu ad
-        uertir S. A.R. de la venu de Monſieur
-        Le Prince, elle a teſmoigné tant de joye
-        de ce retour, qu’elle s’eſt reſoluë dé́s lors de luy
-        aller au deuant auec toute ſa ſuitte. ll n’eût pas
-        p’toſt diſné, qu’il monta à̀ cheual accompa
-        gné dé quantité de Seigneurs &amp; Gentils-hom
-        mes, qui témoignoient tous également ſus
-        leurs viſages la réjoüiſſance de cette heureuſe
-        artiueée, vne prodigieuſe quantité de caroſſes y
-        ſt ient accourus pour auoir part à cette Entre
-        ueuë̈, &amp; tõute la pleine au deſſous de Ville
-        juif eſtoit couuerte de monde, qui attendoit
-        auec impatience que Monſieur le Prince vint
-        à paroiſtre, qu’on diſoit n’eſtre pas baaucoup,
-        loing.
-        SA. Royale s’eſtant auanceée iuſqu’au pied
-        de la montagne, enuoya quelques-vns des ſiens.
-        pour aller reconnoiſtre la Marche de ce Prin
-        ce, &amp; pour la venir auertir auſſi-toſt qu’ils l’au
-        roient découuert.
-        Ils ne furent pas long-temps perdus de veuë,
-        qu’on les vit reuenir à toute bride, faiſant éon
-        oiſtre par ce prompt retour qu’il eſtoit deſia
-        fort proche; Auſſi- l’on vit preſque en meſme 
-        
-         4
-        temps paroiſtre vn groi de Caualerie, qui fit juger
-        indubitablement que c’eſtoit luy, c’eſt pourquoy
-        pour abbreger encor le chemin, afin de eon
-        tenter plus viſte l’impatience qui tenoit tout le
-        roonde de le vois, S. A. R. qui le deſiroit autant
-        que petrſonne, s’auança atant qu’il pût, &amp; ils
-        ne ſe reconnurent pas pluſtoſt, que S. A. R.
-        remarqua Monſieur le Pcince, &amp; Monſieur le
-        Duc de Beaufort, au milieu de cettetrouppe.
-        Ces deux Princes de leur coſté ayant veu
-        S, A. R. au milieu des ſiens, mirent prompto
-        ment pied̀ erte, &amp; marcherent à pied droie
-        où ils veyolent ſon A. R. qui de ſon coſté eſtant
-        auſi deſtendu de cheual, les vint embraſſer l’vn
-        apres ’autre, pendant qu’ils luy rendoient leurs
-        reſpets par des reuerences continuelles.
-        Alors S. A. R. ayant pris la parole. Vous
-        ſoyez les bien venus, mes chers Couſins, nous
-        vous attendions auec beaucoup d’impatience,
-        &amp; nous repartit Monſieur le Priince, nous ne
-        pouuions. eſtre plus long-temps ſans venir
-        rendre nos deuoirs à V. A. &amp; luy rendre vn
-        compte exact de tout ce que nous auons fait
-        pour ſon ſeruice. l eſt vray, continua Monſieur
-        de Beaufort, qu’il ne manquoit plus que cela 
-        ¬
-        , ,¬
-        à noſtre ſatisfaction &amp; l’honneur que nous receuons
-        auiourd’huy de V. A. R. nous rend tout à fait glo
-        rieux: en ſuitte toute la trouppe qui eſtoit là venuë
-        pourvoir ſes guefriers ſe mit a les careſler &amp; les ſa.
-        lüerpar mille compliments, auſquels Monſieur le
-        Prince nemanquoit pas de repartir en peu de mots,
-        auſfi bien que Monſieur de Beaufort, quià̀ ſon ordi
-        naire n’obmettoit rien de cette ociuilité qui luyeſt
-        comme naturelle.
-         Enfin s’eſtant rejoints à S. A. R. ils commence.
-        rent vn diſcours auec plus de familiariré́, laiſſant à
-        part leſerieux; Couſin dit elleà Monſieuir le Prince,
-        ne riez yous ps de la lettre de Monſieur de l’Ho
-        pital, qui borne voſtre victoireau nombre de qua
-        tre cens hommes: cela eſt bien ayſé à dire, repartit
-        Monſjeur le Prince, à vn homrae qui ’en’ rien
-        veéu, il peut bien n’en craire rial dt tout, ſans pour
-        cea qu’il y en at moins, mafoy di Monſieur de
-        Beaufart, cela eſt bien ayſé à dio mais qe cela ne
-        ſefait pas ſi, facilement vn.da la ſuitte -dit tout hit
-        que ceſfoit vn Mazarin &amp; que rous eux de ce parti
-        pe fons autre choſe qu’abuſer le peuple!
-         S. ARayat pris Monſœur de Chaalgnypa-l6
-        ras, tepea, dit-il à̀ Monſieur le PrmceAn ou
-        ſin, ie uaus donnei cet hmomme our n fpancMaza
-        ria, ie conois aſfex; reparti Moufieur le Pnince,
-        &amp; ie luy ſuis bien ſeruiteur.
-        ,ais mo Couſin, idtermomplteS. . R’ que diriez
-        vous d la reſponſe pliſaae quiafait le PromitrPie¬ 
-        ſident aurt’deputez du Parlement, qui eſtoient allez
-        pour faire de tres humbles remonſtrances à leurs
-        Maieſtez le penſe repartit Moaſieur le Prince, qu’
-        aua apris à parler de puis auſſi bien que le ſieur
-        dHocquincour qui nous menaçoit de tout perdre.
-        Qu’en dites-vous mon Couſin ditSA. R. à Mon
-        ſieur de Beaufort, ie dis Monſieur que nous leur
-        ferons bie faire ce qu’ils ne veulent pas, &amp; quenous
-        apprendrons bien à tous les Mazarins à̀ parler eom
-        me il faut: car ma foy ls ne vallent rien aà la guere,
-        ils ne ſont propres qu’à fourber.
-        Alore Monſieur le Prince prenant vn autte diſ4
-        cours, &amp; regardant ſon Alteſſe Royalle, parMennez;,
-        moy, luy dit il, Monſieur, ſiie vous dis que i’appre
-        hende que vous ne vous ſoyez porté maal depuis que
-        ie n ay eu l’honaeur de rous voir, car ie vous trouue
-        vn peu chanché. Mais vous, repartit S. A. Rorale,
-        vous me paroiſſz ſi maigre &amp; i hallé que vous a’e
-        ſtes preſque as conaoiſſable vn homme repartit,
-        Monſieur le Prince qui n’a point dormy depuis huit
-        igurs peut bien eſtre rel que vous dites, voyez s’l
-        vous plaiſt Monſieur, ſi Monſieur de Beaufort
-        n’eſt pas bien changé&amp; haleé, pourle mois autan
-        que moy il eſtimpoſſible, dit Monſieur de eaufort;
-        d’eſtreatrementaàl gnerre mais nous ironischess
-        Prud’home nous raguftervn peu, &amp; nôus ſaire a
-        uer.
-        Mon Dieu moù Couſn, dit S. A. R. à Monear
-         le Prinee, quevoſtroſcharpe et ſale; Monſieur luy			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">entretien</term>
+          <term type="genre">dialogue</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_75" source="Moreau">
+          <p>Arrivée du prince de Condé à Paris</p>
+          <date when="1652-04-11">1652-04-11</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2021-11-15" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />LENTREVEVE
+        <lb />DE
+        <lb />SON ALTESSE
+        <lb />ROYALE.
+        <lb />DE MONSIEVR LE PRINCE,
+        <lb />ET DE MR DE BEAVFORT.
+        <lb />Et leur magniſique Entrée dans
+        <lb />le Palais d’Orleans.
+        <lb />Enſemble leur entretien touchant les ffaires
+        <lb />du Temps. <figure type="decoration" />
+        <lb />A PARIS.
+        <lb />M. DC. XLIX. <pb n="2" />
+        <pb n="3" />
+        <lb />AVſſi-toſt que le Courrier eſt venu ad
+        <lb rend="¬" break="no" />uertir S. A.R. de la venu de Monſieur
+        <lb />Le Prince, elle a teſmoigné tant de joye
+        <lb />de ce retour, qu’elle s’eſt reſoluë dé́s lors de luy
+        <lb />aller au deuant auec toute ſa ſuitte. ll n’eût pas
+        <lb />p’toſt diſné, qu’il monta à̀ cheual accompa
+        <lb rend="¬" break="no" />gné dé quantité de Seigneurs &amp; Gentils-hom
+        <lb rend="¬" break="no" />mes, qui témoignoient tous également ſus
+        <lb />leurs viſages la réjoüiſſance de cette heureuſe
+        <lb />artiueée, vne prodigieuſe quantité de caroſſes y
+        <lb />ſt ient accourus pour auoir part à cette Entre
+        <lb rend="¬" break="no" />ueuë̈, &amp; tõute la pleine au deſſous de Ville
+        <lb rend="¬" break="no" />juif eſtoit couuerte de monde, qui attendoit
+        <lb />auec impatience que Monſieur le Prince vint
+        <lb />à paroiſtre, qu’on diſoit n’eſtre pas baaucoup,
+        <lb />loing.
+        <lb />SA. Royale s’eſtant auanceée iuſqu’au pied
+        <lb />de la montagne, enuoya quelques-vns des ſiens.
+        <lb />pour aller reconnoiſtre la Marche de ce Prin
+        <lb rend="¬" break="no" />ce, &amp; pour la venir auertir auſſi-toſt qu’ils l’au
+        <lb rend="¬" break="no" />roient découuert.
+        <lb />Ils ne furent pas long-temps perdus de veuë,
+        <lb />qu’on les vit reuenir à toute bride, faiſant éon
+        <lb rend="¬" break="no" />oiſtre par ce prompt retour qu’il eſtoit deſia
+        <lb />fort proche; Auſſi- l’on vit preſque en meſme <pb n="4" />
+        <lb />
+        <lb rend="¬" break="no" /> 4
+        <lb />temps paroiſtre vn groi de Caualerie, qui fit juger
+        <lb />indubitablement que c’eſtoit luy, c’eſt pourquoy
+        <lb />pour abbreger encor le chemin, afin de eon
+        <lb rend="¬" break="no" />tenter plus viſte l’impatience qui tenoit tout le
+        <lb />roonde de le vois, S. A. R. qui le deſiroit autant
+        <lb />que petrſonne, s’auança atant qu’il pût, &amp; ils
+        <lb />ne ſe reconnurent pas pluſtoſt, que S. A. R.
+        <lb />remarqua Monſieur le Pcince, &amp; Monſieur le
+        <lb />Duc de Beaufort, au milieu de cettetrouppe.
+        <lb />Ces deux Princes de leur coſté ayant veu
+        <lb />S, A. R. au milieu des ſiens, mirent prompto
+        <lb rend="¬" break="no" />ment pied̀ erte, &amp; marcherent à pied droie
+        <lb />où ils veyolent ſon A. R. qui de ſon coſté eſtant
+        <lb />auſi deſtendu de cheual, les vint embraſſer l’vn
+        <lb />apres ’autre, pendant qu’ils luy rendoient leurs
+        <lb />reſpets par des reuerences continuelles.
+        <lb />Alors S. A. R. ayant pris la parole. Vous
+        <lb />ſoyez les bien venus, mes chers Couſins, nous
+        <lb />vous attendions auec beaucoup d’impatience,
+        <lb />&amp; nous repartit Monſieur le Priince, nous ne
+        <lb />pouuions. eſtre plus long-temps ſans venir
+        <lb />rendre nos deuoirs à V. A. &amp; luy rendre vn
+        <lb />compte exact de tout ce que nous auons fait
+        <lb />pour ſon ſeruice. l eſt vray, continua Monſieur
+        <lb />de Beaufort, qu’il ne manquoit plus que cela <pb n="5" />
+        <lb />¬
+        <lb rend="¬" break="no" />, ,¬
+        <lb rend="¬" break="no" />à noſtre ſatisfaction &amp; l’honneur que nous receuons
+        <lb />auiourd’huy de V. A. R. nous rend tout à fait glo
+        <lb rend="¬" break="no" />rieux: en ſuitte toute la trouppe qui eſtoit là venuë
+        <lb />pourvoir ſes guefriers ſe mit a les careſler &amp; les ſa.
+        <lb />lüerpar mille compliments, auſquels Monſieur le
+        <lb />Prince nemanquoit pas de repartir en peu de mots,
+        <lb />auſfi bien que Monſieur de Beaufort, quià̀ ſon ordi
+        <lb rend="¬" break="no" />naire n’obmettoit rien de cette ociuilité qui luyeſt
+        <lb />comme naturelle.
+        <lb /> Enfin s’eſtant rejoints à S. A. R. ils commence.
+        <lb />rent vn diſcours auec plus de familiariré́, laiſſant à
+        <lb />part leſerieux; Couſin dit elleà Monſieuir le Prince,
+        <lb />ne riez yous ps de la lettre de Monſieur de l’Ho
+        <lb />pital, qui borne voſtre victoireau nombre de qua
+        <lb rend="¬" break="no" />tre cens hommes: cela eſt bien ayſé à dire, repartit
+        <lb />Monſjeur le Prince, à vn homrae qui ’en’ rien
+        <lb />veéu, il peut bien n’en craire rial dt tout, ſans pour
+        <lb />cea qu’il y en at moins, mafoy di Monſieur de
+        <lb />Beaufart, cela eſt bien ayſé à dio mais qe cela ne
+        <lb />ſefait pas ſi, facilement vn.da la ſuitte -dit tout hit
+        <lb />que ceſfoit vn Mazarin &amp; que rous eux de ce parti
+        <lb />pe fons autre choſe qu’abuſer le peuple!
+        <lb /> S. ARayat pris Monſœur de Chaalgnypa-l6
+        <lb />ras, tepea, dit-il à̀ Monſieur le PrmceAn ou
+        <lb rend="¬" break="no" />ſin, ie uaus donnei cet hmomme our n fpancMaza
+        <lb rend="¬" break="no" />ria, ie conois aſfex; reparti Moufieur le Pnince,
+        <lb />&amp; ie luy ſuis bien ſeruiteur.
+        <lb />,ais mo Couſin, idtermomplteS. . R’ que diriez
+        <lb />vous d la reſponſe pliſaae quiafait le PromitrPie¬ <pb n="6" />
+        <lb />ſident aurt’deputez du Parlement, qui eſtoient allez
+        <lb />pour faire de tres humbles remonſtrances à leurs
+        <lb />Maieſtez le penſe repartit Moaſieur le Prince, qu’
+        <lb />aua apris à parler de puis auſſi bien que le ſieur
+        <lb />dHocquincour qui nous menaçoit de tout perdre.
+        <lb />Qu’en dites-vous mon Couſin ditSA. R. à Mon
+        <lb rend="¬" break="no" />ſieur de Beaufort, ie dis Monſieur que nous leur
+        <lb />ferons bie faire ce qu’ils ne veulent pas, &amp; quenous
+        <lb />apprendrons bien à tous les Mazarins à̀ parler eom
+        <lb rend="¬" break="no" />me il faut: car ma foy ls ne vallent rien aà la guere,
+        <lb />ils ne ſont propres qu’à fourber.
+        <lb />Alore Monſieur le Prince prenant vn autte diſ4
+        <lb />cours, &amp; regardant ſon Alteſſe Royalle, parMennez;,
+        <lb />moy, luy dit il, Monſieur, ſiie vous dis que i’appre
+        <lb rend="¬" break="no" />hende que vous ne vous ſoyez porté maal depuis que
+        <lb />ie n ay eu l’honaeur de rous voir, car ie vous trouue
+        <lb />vn peu chanché. Mais vous, repartit S. A. Rorale,
+        <lb />vous me paroiſſz ſi maigre &amp; i hallé que vous a’e
+        <lb rend="¬" break="no" />ſtes preſque as conaoiſſable vn homme repartit,
+        <lb />Monſieur le Prince qui n’a point dormy depuis huit
+        <lb />igurs peut bien eſtre rel que vous dites, voyez s’l
+        <lb />vous plaiſt Monſieur, ſi Monſieur de Beaufort
+        <lb />n’eſt pas bien changé&amp; haleé, pourle mois autan
+        <lb />que moy il eſtimpoſſible, dit Monſieur de eaufort;
+        <lb />d’eſtreatrementaàl gnerre mais nous ironischess
+        <lb />Prud’home nous raguftervn peu, &amp; nôus ſaire a
+        <lb />uer.
+        <lb />Mon Dieu moù Couſn, dit S. A. R. à Monear
+        <lb /> le Prinee, quevoſtroſcharpe et ſale; Monſieur luy<gap />
+      </p>
+    </body>
+  </text>
 </TEI>

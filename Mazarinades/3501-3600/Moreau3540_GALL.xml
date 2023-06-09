@@ -1,1050 +1,576 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3540_GALL">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Révélation de sainte Geneviève à un religieux de son
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Révélation de sainte Geneviève à un religieux de son
           ordre sur les misères du temps, où elle lui déclare la raison pour laquelle elle n'a pas
           fait de miracles, cette année.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-					<persName ref="orcid:0000-0002-3327-3967" role="intern">Cappe Zoé</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://gallica.bnf.fr/ark:/12148/bpt6k8570705"/>
-					<author/>
-					<title source="Moreau">Révélation de sainte Geneviève à un religieux de son ordre sur les
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+          <persName ref="orcid:0000-0002-3327-3967" role="intern">Cappe Zoé</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k8570705" />
+          <author />
+          <title source="Moreau">Révélation de sainte Geneviève à un religieux de son ordre sur les
             misères du temps, où elle lui déclare la raison pour laquelle elle n'a pas fait de
             miracles, cette année.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1652">1652</date>
-					<extent>
-						<measure quantity="16" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2988507">Paris</settlement>
-						<institution>Bibliothèque nationale de France</institution>
-						<repository>département Philosophie, histoire, sciences de l'homme</repository>
-						<idno type="cote">4-LB37-2626</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1652">1652</date>
+          <extent>
+            <measure quantity="16" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2988507">Paris</settlement>
+            <institution>Bibliothèque nationale de France</institution>
+            <repository>département Philosophie, histoire, sciences de l'homme</repository>
+            <idno type="cote">4-LB37-2626</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">3540. Révélation de sainte Geneviève à un religieux de son ordre sur les
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">3540. Révélation de sainte Geneviève à un religieux de son ordre sur les
           misères du temps, où elle lui déclare la raison pour laquelle elle n'a pas fait de
           miracles, cette année. Paris, 1652, 16 pages. Pamphlet qui mérite d'être recherché, et
           parce qu'il est royaliste et parce qu'il est rare.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">non renseigné</term>
-					<term type="subject"/>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_82" source="Moreau">
-					<p>Descente de la châsse de Sainte-Geneviève</p>
-					<date when="1652-06-11">1652-06-11</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-08-05" who="ZC"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<pb n="12"/>
-				<pb n="13"/>
-				<pb n="14"/>
-				<pb n="15"/>
-				<pb n="16"/>
-				<pb n="17"/>
-				<pb n="18"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<figure type="decoration"/>
-REVELATION
-        DE SAINTE
-        GENEVIEVE
-        a vn Religieux de ſon Ordre,
-        SVR LES MISERE5
-        du Temps.
-        Où elle luy delare la raiſon pour laquelle elle n'a
-        pas fait Miracle cette Année. 
-        A PARIS,
-        M. DC. LII. 
-        
-        REVELA1ON
-        De ſaincte Geneuiéue a vn Religieux
-        de ſon Ordre,
-        Sur les miſeres du temps.
-        ¬2
-        ES iours paſſez Monſeigneur l’Arche
-        ueſque de Paris ayant fait recomman
-        ,cer les prieres des quarantes heures par
-        A toutes les Egliſes de la Ville, pour ſup
-        plier ſa diuine Maieſté de rendre la paix à tout le
-        Royaume &amp; le repos à cette ville &amp; à ce Dioceſe
-        agité miſerablement de differentes conuulſions,
-        de la maladie auſſi bien que de la guerre: Vn bon
-        Religieux ſe treuuant au pied de l’Autel de Sainte
-        Geneuieue, priſt vnc ſainte hardieſſe, &amp; luy dit en
-        ſoſipirant.
-        Grande Sainte, proſterné deuant vos glorieuſes
-         reli ques &amp; vos pretieuſes Cendres, pardonnez-moy
-        ſi ie prens la hiberté de vous ouurir mon eœur, &amp;
-        de vous deſcouuir mes ſentimens, pour diſſiper le
-        troube ou ie fuis &amp; la peinc qui me tourmente;i’ay
-        ſuiet d’auoir recours à vous, pulque c’eſt vous qui
-        eſtes la auſe de moh eſtonnement, &amp; qui par os
-         A ii 
-        1
-        ¬ -¬¬o¬e.¬a¬¬¬a-e¬o¬, ¬o 2.. e2 --aa,.
-        ¬g
-        4
-        ſadintes ſumieres pouuez chaſſer l’horreur de la nuict,
-        &amp; de l’ennuy qui m’afhge, auſſi bien que pluſieurs
-        autres de voſtre ville de Paris, qui pour ne pren
-        dre pas la meſime libetté que moy de vous par
-        ler, ne laiſſent pas de viure dans la meſme inquie
-        tudes plus reſpectueux à l’exterieur enuers vous ce
-        ſemble que moy, mais non pas moins preſſé du meſ
-        me trouble que moy, qui demeurerois ſans doute
-        commeles autres dans l’aſſoupiſſement de mon mal,
-        ſiie ne ſuiuois le mouuement d’vne ſainte confiance
-        que ie ſens que vous faites naiſtre en moy meſme
-        pour le ſoulagement de tous.
-         Donc permettez-moy, grande Sainte, que ie
-        vous demande auec tout le reſpect poſſible, &amp; que
-        ie vous dois, non point par vn eſprit de curioſité
-        qui me rendroit indigne d’eſtre écouté de vous,
-        ny par vn deſir qui ſeroit temeraire d’entrer dans la
-        connoiſſance des deſſeins &amp; des conſeils de Dieu
-        que nous deuons touſiours adorer, mais pouſſe de
-        la compaſſion de la perte de tant de peuples qui
-        periſſent, auſſi bien peut eſtre eternellement, pour
-        eſtre priuez des aililtances de l’Egliſe, comme tem
-        porellement pour eſtre deſpoüillez de leurs biens
-        &amp; des choſes neeeſſaires à la vie. Nos maux dure
-        ront touſiours, &amp; par leur durée deuiendront en
-        core plus inſupportables ſi nous ny cherchons du
-        remede, &amp; où les treuuer ſinon chez vous &amp; par
-        epanuenen dnpenone e e nououn oni
-        C’eſt
-        a¬ -. LA¬ 
-        ¬
-        C’eſt donc ce ſeul deſir de contribuer quelque cho
-        ſe à la conſeruation de la Religion &amp; de la pieté qui
-        ſe deſtruit par cette guerre, à la reparation des Autels
-        qui ſont abatus, des Sacrifices qui ſont abandon
-        ¬
-        5
-        nez, de l’authorité Royale, ie ne diray pas qui ſem
-        ble meſpriſée: mais qui n’eſt pas aſſez reconnuë ny
-        reuerée, &amp; enſin à la paix, au repos &amp; à la tranquili
-        té publique ſy non de toute l’Europe pour le moins
-        de la plus belle &amp; la plus peuplée ville du monde qui
-        vous appartient par tant de titres, &amp; qui vous eſt
-        conſacrée par tant de vœux.
-        D’où vient grande Sainte, que vous ayant rendu
-        nos deuoits nos ſoumiſſions &amp; nos hommagesnous
-        n’auons point receu les effects de voſtre afſection,
-        nous auons ieuné &amp; pleuré́ deuant vous, ſoupiré
-        &amp; prié aux pieds de vos Autels, &amp; vous ne nous
-        auez point eſcoutez, nous auons chanté vos louan
-        ges, &amp; à l’imitation de nos anceſtres nous auons
-        honoré vos ſaints oſſemens d’vn Triomphe public,
-        auec tant de reſpect &amp; de veneration, auec tant
-        d’ardeur &amp; de pieté, &amp; auec tant d’affluence &amp; de
-        eonfiance que nous auions ſuiet d’eſperer de rece
-        uoir par voſtre ſecours, les meſmes aſſiſtances que
-        vous auez renduës autrefois à nos peres, vous ho
-        morant des meſmes ceremonies. Nos ieuſnes n’ont
-        point eſté forcez, nos larmes point feintes, nos
-        voix point languiſſantes, nos prieres ardentes, nos
-        ſouſpirs legitimes &amp; nos vux veritables &amp; accom
-        plis: D’où vient donc que ous auons eſté priuez de 
-        ¬¬¬¬ .
-        8
-        voſtte protection, vous Patronne de cette Ville
-        contre ſes ennemis, Aduocate de cectte populace
-        deuant le Throſne de Dieu, Protectrice de nos Au
-        tels, Ange tutelaire de noſtre Religion, refuge or
-        dinaire en nes aduerſitez, aſile dans nos mal-heurs,
-        bergere de nos troupeaux, pourquoy ſont-ils diſſi
-        pez ſous voſtre conduitte, mere de nos peuples pour
-        quoy ſont-ils perdus entre vos bras, remede aſſeu
-        ré de nos malades, pourquoy ſont-ils eſtouffez de
-        la mort, port ouuert ànos debris, pourquoy periſ
-        ſons nous dans la tempeſte, nos prieres nont-elles
-        pas eſté accompagnez de penitence, nos ſouſpirs
-        de repentence, &amp; nos vœux de fidelité? peut- eſtre
-        nous n’auons pas meriré d’eſtre eſcoutez de Dieu,
-        mais vous que nous auons priée, vous auez tou
-        ſiours merité &amp; touſiours eſté digne d’eſtre eſcou
-        tée &amp; exaucée de ſa diuine Maieſté, nous n’auons
-        rien demandéſans vous, &amp; n’auons rien eſperé qu’a
-        uec vous, nous auez vous fruſtrez de voſtre attente,
-        auez vous prié auecnous, auez vous demandé pour
-        nous? ſi cela eſt ainſi, pourquoy nos miſeres durent
-        elles, naos mal-heurs ſont ils prolongez, nos l’ar
-        mes ne ſont point eſſuyez, nos deſordres point finis
-        &amp; nos peines point terminées?
-        Il continuoit ainſi ſes ſoupirs dans la Meditation
-        des caules de nos diſgraces, quand s’eſtant aſſoupy
-        du ſommeil, Sainte Genneuiefue reueſtuë de lu
-        miere, &amp; portant vn ffambeau blanc dans la main,
-        sappamtaluy, &amp; luy di.
-        2
-        aaé¬¬¬¬¬¬¬
-        a¬ 
-        l
-        A¬
-        3J
-        L eſt vray que i’ay touſiours eu compaſlion de
-         vos miſeres &amp; de vos afflictions, &amp;rouſiours con
-        ſerué mes premiers deſſeins de voſtre prore ction,
-        qui ſe ſont augmentez auſſi bien par le nombre de
-        vosmal-heurs, que par vos ſoupirs &amp; par vos prieres,
-        que i’ay eſcoutées auec tendreſſe de mere, &amp; auec le
-        ſoin que demande la charge que i’ay priſe d’eſtre
-        vôtre Aduocate, &amp; auec plus de ſincerité &amp; d’affectio
-        de vous ſoulager, que vous n’auez pas monſtré de
-        paſſion pour voſtre propre repos: Il eſt encore plus
-        vray que i’ay touſiours veu ſa diuine bonté plus pre
-        ſte &amp; plus prompte à vous ſecourir, que vous n’auez
-        eſté à luy demander de l’aſſiſtance, que ſes bras vous
-        ont eſté plutoſt tendus &amp; ofterts, que vous n’auez
-        eſleué vos mains pour imlorer la miſerirorde.
-        Mais ny la faueur qu’il me fait de meſcouter quant
-        ie luy parle pour vous, nyſa bonté ſollicitée par tant
-        de gens de bien qui viuent parmy vous, n’ont en
-        core peu obtenir la fin de vos diſgraces, ny le reme
-        de de toutes vos miſeres, par ce que vous meſmes
-        vous vous oppoſez à ce que vous ſouhaitez. Dieu
-        pour accorder à ſes Saints qui ioüiſſent de ſa gloi
-        re dans le Ciel &amp; aux prieres de ſes vrays ſeruiteurs
-        qui ſont ſur la rerre; ce que les vns &amp; les autres luy
-        demandent, voit dans ſes creatures de certaines diſ
-        poſitions, deſquelles vous vous eſloignezauſſi ſou
-        uent que l’on taſche de vous y remettre. En vn mot
-        Dieu veut vne humilité, &amp; qui eſt vnaſſuietiſe
-        ¬ -¬ Aum’
-        aa-2 V¬a aam 
-        -a mfa -¬ qre
-        ment entier de l’eſprit des hommes à l’ordre qu’il a
-        eſtablydans la terre, non pas ſeulement à la diuer
-        ſité des ſaiſons de la nature: mais auſli aux puiſſan
-        ces qu’il a ordonnées dans le monde, auſqueles il
-        faut rendre vn Religieux reſpect, vne obeiſſance
-         parfaitte, &amp; vne ſoubmiſſion entiere de l’eſprit qui
-        ¬
-        ne cenfure point leurs deſſeins, ne combat potnt
-        leurs entrepriſes, execute leurs volontez &amp; accom
-        pliſſe leurs commandemens quels qui ſoient dans
-        leurs mœurs &amp; dans leurs vies, &amp; quoy qu’ils com
-        mandent qui ne ſoit point contre Dieu.
-        Paris, tu demande à Dieu qui tient le cœur du Roy
-        dans ſa main, qui le conduiſe, &amp; tu ne veus pas
-        ſuiure les ordres veritable qu’il te donne, tu ne
-        veus pas te ſoubmettre à ton ſeul Monarque, &amp;
-        u te rends captiue de ceux a qui tu ne dois point
-        d’obeiſſance, tu te plains d’vn iouc que tu dis eſtre
-         trop rigoureux, &amp; tu en reçois vn autre qui eſt bien
-        plus pelant, plus iniurieux à Dieu, à ta reputation,
-        aa liberté &amp; à ta vie: iniurieux à Dieu, parce qu’il
-        n’eſt pas legitime, ce n’eſt pas celuy qui veut que tu
-        porte, u cõmets vne eſpece d’idolatrie, u teforme
-        de nouuéaux Dieux, tu reéds de nouuelles adoratios
-        A des Idoles, c’eſt à̀ dire à ceux qui ne ſont que les
-        foibles crayons de la veritable puſſance quetu dois
-        reconnoiſtre dans ton Roy; tu ouures tes portes à
-        des roupes Eſrangeres &amp; ennemies, &amp; u lesfet
-        mes à celle de ton Roy, tu leurs fournis des muni
-        oas &amp; des viures, &amp; tu en refuſes à tes Compa
-        trioes,
-        -ba.¬.
-        .. a.22¬¬¬¬¬¬¬-¬¬¬ 3..A ¬ 
-        l
-        triotes qui ſuiuent leur Roy, tu prens les armes &amp;
-        employe ton artillerie contre tonReoy, ſous de faux
-        pretextes, &amp; tu fauoriſes ceux qui ſont decdlarez er
-        nemis iurez de la Couronne.
-         Ie ſçay bien que tu me peux dire que ce ne ſont pas
-        tes veritables Bourgeois, mais bien la lie du peu
-        ple, &amp; toute ſorte de gens ramaſſez des Prouinces
-        qui ſont cauſes de tous ſes deſordres. Auoüe donc
-        que tu as perdu ta liberté, que ton Parlement n’eſt
-        plus libre, &amp; que pluſieurs n’oſent pas par la crainte,
-        &amp; par la foibleſſe ſouſtenit la verité de leur ſenti
-        ment, ny maintenir la fidelité qu’ils doiuent, &amp;
-        qu’ils ont iurée à leur Souuerai N’as-tu pas veu Pa
-        nsS les premiers de ce corps mal traittés vn iour où il
-        commanç̧oit à reſpirer &amp; à vouloir prendre de la
-        franclſe pour mettre ordre à res diuiſions.
-        lDe quel œil as tu veu ton Autel de Ville aſiegé,
-         bruſle, plle, tes meilleurs Citoyens, les vns en dan
-        ger de lear vie, les autres tuez &amp; maſſacrez, &amp; les au
-        tres pris à rançon, leulement pour vouloir trauail
-        ler à ta conſeruation, &amp; cét horrible ſpectacle ſe
-        paſſer au milieu de ton ſein, ſans que pas vn detes
-        Citoyens priſt les armes pour ſoulager &amp; pour deli
-         urer leurs Chefs, leurs peres, leurs plus grand amis,
-        leurs prorecteurs, leurs Gouuerneuts &amp; les princi
-         paux habitans, il n’eſtoit pas peirmis d’aller eſtein
-        dre le feu qui les alloit conſonimer, d lëur porter
-        n peu d’eau pour eſtancler la ſoif qui les tourmeni
-        -toit par fumee &amp; par la raintode la rmort pre¬ 
-        . er TLETE
-        44a
-        16
-        chaine, il n’eſtoit pas permis de ſortir de la maiſon
-        pour aller apprendre ſeulement des nouuelles de ce
-        qui ſe paſſoit, recueillir les cendres de ceux qu’on
-        vouloit c̃ſommer, d’aſſiſter d’aucuns remedes ceux
-        qui eſtoient bleſſez, de retirer chez ſoy ceux qui ti
-        roient à la fin, ny de prendre les corps de ceux qui
-        eſtoient deſia morts pour leur donner la ſepulture.
-        Paris, ton aueuglement a t’il eſté ſi grand que de
-        e pas voir que tu auois perdu toute ta franchiſe &amp;
-        toute ta liberté. Lequel de tous tes Rois le plus iu
-        ſtement irrité contre toy, ca iamais reduite en vn
-        eſtat ſi miſerable, &amp; tu appelle tes protecteurs les
-        Autheurs de toutes, ces violences, tu demandes des
-        graces &amp; des Amiiſties les armes à la main, tu en
-        demandes pour des incendaires, des prophanateurs
-        des Temples, pour des impies, des ſacrileges &amp;
-        des violateurs des loix diuines &amp; humaines. Tu
-        chicane auecton Roy ſur des mots &amp; des formali¬.
-        tés de paroles, &amp; tune veut pas qu’abandonnant ſes
-        propres intereſts, il conſerue &amp; van ge ceux de Dieu
-        qu il ne peut abandonnaer ſans crime.
-         Tes Roys doiuent agir comme Dieu, il pardon
-        ne &amp; punit tout enſemble, par ce qu’il eſt bon &amp;
-        iuſte tout enſemble, il remet les fautes par l’effet de
-        ſa bonté: mais il ne peut empeſ her que ſa luſtice ne
-        les puniſſe toſt ou tart, ou plus rigoureuſement, ou
-        plus doucenaent dans cette vie ou bien dans l’autre.
-         L’on e fait craindre la Maieſté de ton Roy qui
-        n’a pour toey que des ſentimens depere, &amp; des ten
-        a.a¬ L 
-        aa¬.
-        .- aaa-ar. a aa . rgaaar¬ raaaa, . aamaa. ,a¬¬¬-
-        dreſſes dont il ta voulu donner touſiours toute ſor
-        te de teſmoignages, tu as penſé deuiter quelques le
-        geres contributions neceſſaires pour les affaires de
-        la guerre, &amp; regarde tes villages ruinez, tes mamel
-        les deſſeichées, tes campagnes deſolées, tes meres
-        nourices eſtoufſées, tout le plat pays perdu, &amp; meſ
-        me ſans labour, &amp; ſans eſperance pour les années
-        prochaines. lamais le Roy par ſa luſtice, meſme
-        eſtant iritée, &amp; iamais desMiniſtres d’Eſtat quels
-        qu’ils euſſent peu eſtre, plus violent, plus fourbes &amp;
-        plus inſatiables, n’euſſentiamais tant fait de mal au
-        tour de Paris, tant ruiné de villages, tant violé de
-        lieux ſains &amp; de ſaintes perſonnes, tant abbatu
-        d’Autels, tant pillé de maiſons, tant commis de
-        maſſacres &amp; de cruautés, rant reſpandu de ſang,
-        tant diſlipé de biens, tant accablé de miſerables, que
-        tu as fait par ton iniuſte ſouleuement.
-        L’on a veu deſcouurir &amp; emporter le plomb de tes
-        Egliſes, rompre tes taberuacles, prophaner le tres
-        ſaint Sacrement, tuer tes Preſtres, violer tes Reli
-        gieuſes, abbatre tes maiſons, ny pas laiſſer vn mor
-        ceau de fer, mettre le feu aux pieds de tes arbres frui
-        ctiers, couper tes bleds ſans attendre la maturité,
-        en tirer vne partie, &amp; laiſſer l’autre pourrir enfu
-        mier, tes prez à l’abandon, tes vignes à la mercy
-        des ſoldas, tes viluges deſertés, tes peuples mou
-        rir ſans l’aſſiſtance des Sacremens, tes meilleurs Ci
-        Eeyens noſer parler, eſtre accablés &amp; menacés par
-        des inſolens mercenaincs, gagnes autc vn peu d’ar
-        -q¬ -¬ ¬¬ 
-         12
-        lda... all¬ eg
-        gent, &amp; ce qu’on tiroit de tes maiſons de campa
-        e l oe eioeie pne e e elne ene
-         ne, encore plus outragée s’il ſe peut, euſt pû ſouffir
-        tant de miſeres, franchiſſons le mot, cent &amp; cent Ma
-        2arins, c’eſt à dire auſſi rmauuais eſprits qu’on te for
-        ge eſtre le ſien, n’auroient iarmais en dx ans fait
-        tant de mal, commis tant de crimes, ny ruiné tant de
-        monde, comme ont fit ceux que tu appelle, Paris,
-        tes protecteurs.
-        uſques iey, qu’on fait &amp; que font encore tes
-        gardes à tes portes, ſinon metrre &amp; laſſer les ar
-        mes és mains d’vne populace agitée touſiours de
-        nouueaux mouuemens, ou perſonne ne veut obeir,
-        chaecun veut eſtre maiſtre, &amp; ſe croit eſtre autant ou
-         plus conſiderable que celuy qui luy veut donner
-        l’ordre.
-        C’eſt nourrir la liberté parmy tes artiſans, qui ne
-        reuiennent qu’à regret à l’ouurage, c’eſt fomentér
-        l’eſprit de rebellion, c’eſt entretenir les deſordres
-        paſſez: combien à tes portes s’eſt il fait deſineutes
-        mal à propos, de ſurpriſes, ou pluſtoſt de priſes &amp;
-        de pilieries iniuſtes ſous de faux pretextes &amp; de fauſ
-        ſes apparences, il n’a pas eſté permis d’emmener rien
-        pour ton Roy, ſes fdels ſuiets n’ont pas eu la liber
-        té d’emporter leur argent pour luy aler rendre leurs
-        ſeruices, l’on a foulle ſans raiſon, &amp;-recherche ſanms
-        reſpect, iuſques dans les biaires des morts, meſmede
-        pauares Religieuſes qu’on reportoit au tombeau de
-        , leur
-         ¬.. 
-        l¬
-        leur maiſon, ſous eſperance de butin, &amp; dans cét A la
-        por
-        tumultes de tes portes, combien de meurtres, com-
-        bien d’innocens immolez à la fantaiſie d’vne po-Mont.
-        pulace trompée tous les iours par autant de nou-.
-        tre.
-        uelles qu’on luy en debite. Là, combien de débau
-        ches de ieux de iuremens, d’affrons faits aux plus
-        honneſtes gens, meſme à tes Preſtres, ſortant ou re
-        uenant des lieux de deuotion plus proches de tes
-         murs, pour prier Dieu pour ton repos, lors que tu
-        laiſſois entrer &amp; ſortir toute ſorte de voleurs, &amp;
-        que ceux que l’on te deſcouuroit &amp; arreſtoit à vne
-        porte, ſortoient le lendemain par vne auatre, eſtant
-        ſeulement conduits à ta Maiſon de Ville, pluſtoſt
-         par apparence que par aucune iuſtice. Enfin n’a
-        t’on pas veu cette garde aller auec force &amp; inſolen
-        ce dans les maiſons des pauures vefues &amp; orpelins
-        leurs arracher auec paroles &amp; menaces iniurieuſes, ce
-        qu’ils auoient de reſte pour leur vie, ſous pretexte
-        de naller pas à vne garde plus iniurieuſe à ra gloire,
-        que neceſſaire à ta tranquillité.
-        De tes portes ſi l’on paſſe dans tes ruës, on en
-        tent autre choſe que des fauſſetez, des menſon
-        ges, &amp; des mediſances horribles, imprimées &amp; de
-        bitées par des mains &amp; des voix mercenaires &amp;
-        aiettées pour tromper la credule populace, &amp; pour
-        faire gemir tes bons cytoyens, qui n’ayant pas la
-        libertéde ſe declarer ſeruiteurs de leur Roy, paſſent
-        pour ſeditieux &amp; meſ hans, s’ils s’aſſemblent pour
-        mettre ordre à ces deſordres, &amp;terminer s’ils peuuent
-        leurs calamicez. Si l’on entre dans tes maiſons ne
-        A s.22¬2¬2¬¬¬-ar.. 
-        2a--a-- --eee-,,
-        14
-        ſont- elles pas pour la pluſpart’ dépeupléei, puiſque
-        les trois parts de tes habitans ſe ſont écartez, &amp; que
-        le reſte faiſant bonne mine à l’exterieur, ae laiſſe
-         pas de ſouffrir auec peine, &amp; ſitu ny apporte quel
-        que remede, ſouffrira dans quelque mois tant de
-        diſette, &amp; de viures &amp; de bois, que la mort qui ſe
-        promene par tes ruës, acheuera de conſommer ces
-        cadaures que la neceſſité reduira bien toſt aux abois.
-        Et parmy tout cela quelques bons citoyens détachez
-        de tous intereſts, ne regardant que le bien public, &amp;
-        que ce que l’on doità ſon Roy,s’eſtant vnis dans ſon
-        Palais Royal, l’on a crié qu’il les falloit bruſler, come
-        on auoit fait les autres daus l’Hoſtel de Ville, ſans
-        reſpect d’vne maiſon ſacrée, ny des lmages de ton
-        Roy, qui y pareſſent de toutes pars, l’on s’entrete
-        noit des moyens de piller cette Maiſon Royale, ſous
-        pretexte de ſe ſaiſir de ceux qui s’y entretenoient des
-        moyens de reuoir &amp; de rauoir leur Roy; tes Colo
-        nels &amp; tes Capitaines pour auoir teſmoigné vouloir
-        rendre leurs deuoirs àS. M &amp; la prier ouboliant toure
-        choſe, de reuenir en ton ſein, ſont menacez de pri
-        ſons &amp; de fers, enfin l’on te nourrit de menſonges,
-        lon te deguiſe la verité, l’on ne la peu publier auec
-        aſſeurance, &amp; peut-eſtre toy-meſme ſi tureſpans mon
-        fils, comme ie le ſouhaitte ces lumieres dans les
-        eſprits de tes concitoyens, ſeras-tu diſie, peut eſtre
-        en danger de perâre ta liberté ou bien tavie, tant
-        on a de la peine à ſouffrir les veritez du ciel &amp; de la
-        terre, ſoit celles qui regardent Dieu, ou celles qui
-        touchent le reſpet &amp; l’obeyſſance aux puiſſances 
-        A4
-         -aa- ooo-
-         ¬¬e
-        15
-        eſtablies de ſa diuine main ſur la terre.
-        Tes vœux pourtant &amp; tes prieres n’ont pas eſté
-        inutiles ny mes ſoins ſuperflus, i’ay commencé la
-        merueille &amp; le miracle que tu attendois de moy, i’ay
-        attendry &amp; adoucy l’eſprir du Roy, iuſtement irrite
-        do tant de reuoltes, dans la premiere année de ſa
-        maiorité, dans laquelle apres les acclamations qu’il
-        receut dans tes ruës, de tout ton peuple, le premier
-        iour qu’il fut declaré maieur, il ne pouuoit eſperer
-        de toy, que des paſſions pour ſon ſeruice, &amp; des teſ
-        moignages de perpetuelle obeyſſance, &amp; cependant
-        tu as changé tes premiers mouuemens, quitté ton
-        deuoir, fait brechie preſque irreparable à ta fidelité,
-        &amp; merité pluſtoſt les effects de ſa colere &amp; de ſa iu
-        ſtice que ceux de ſon affection &amp; bien-veillance, que
-        ie t’ay pourtant acquiſe, auſlſi bien que le cœur de la
-        Reyne que ie t’ay gagné, apres tant de noires medi
-        ſances contre ſa vertu, tant de chanſons &amp; diſcours
-        inſolens contre ſa conduitte, apres tant de deſ
-        ſeins contre ſa perſonne Royale &amp; ſacree, apres
-        tant de meſpris iniurieux, que la moindre fem
-        me du Royaume n’auroit pis ſoufferts ſans ven
-        cance, ie l’ay pourtant arrachée de ſon cœur &amp;
-        de ſes mains, auéc dautant plus de force qu’elea plus
-        de puiſſance &amp; d’uthorité pour l’executer. Ainſi
-        P mon entremiſe, tu n’as rien à craindre de ces puiſ
-        ſantes Mieſtez, mais pout l’accompliſſemene en
-        tier de la grace &amp; de la merueille que tu ne deman
-        dess ie n’ay peu ſaire miracle, parce que u n’a pas
-        eſcouté mes ſentimens, ſuiuy mes lumieres, accom
-        3a2¬
-        1
-        ¬Aaadé 
-         --efLaesAn
-        ply les ordres &amp; les loix de Dieu, ny celles de ton
-        deuoir.
-         Voila donc ce qui m’a empeſché iuſques icy,
-        Paris, de te donner le repos que tu m’as demandé,
-        voila tes mouuemens qui m’ont lié les mains, voila
-        les mauuaiſes diſpoſitions qui tempeſchent de rece
-        uoir des aſſiſtances du Ciel, ſors de tes aueugle
-        mens, reuiens à toy-meſme, reprens tonbon ſens,
-        ecoute la verité, ſuis la raiſon, humilie toy deuant
-        Dieu, reconnoiſſant tes fautes, &amp; deuant ton Roy,
-        te ſoumettant à toutes ſes volontez, Ie t’aſſeure de la
-        part du Ciel qu’il n’a que des tendreſſes &amp; des bon
-        tez pour toy, que toutes les apprehenſions de chaſti
-        mens que l’on te donne ſont fauſes &amp; menſongeres,
-        &amp; que s’il t’apporte vn autre eſprit que celuy de paix
-        &amp; de douceur, le Ciel meſme prendra ton party, &amp;
-        t’ayant veuë ſoumiſe aux Loix diuines &amp; humaines,
-        te comblera de tant de felicitez, que tes proſperitez
-        égaleront ta grandeur, &amp; donneront ſuiet aux autres
-        Royaumes de ſuiure ton exemple, abandonnant
-        toute ſorte de diuiſions pour s’vnir à Dieu &amp; a leur
-        Roy.
-         Le reſte de la France ſoumiſe ſous ſa loy te regar
-        de, &amp; ce petit coin qui reſte dans ſon embraſement,
-        eſteindra bien-toſt ſes feux &amp; ſe portera dans l’o
-        beïſſance, ainſitu rendras la paix à ton Royaume, &amp;
-        Pelunener e poeue oeili eonunun ouon oe oue
-        FIN.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">non renseigné</term>
+          <term type="subject" />
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_82" source="Moreau">
+          <p>Descente de la châsse de Sainte-Geneviève</p>
+          <date when="1652-06-11">1652-06-11</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-08-05" who="ZC" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="3" />
+        <lb />REVELATION
+        <lb />DE SAINTE
+        <lb />GENEVIEVE
+        <lb />a vn Religieux de ſon Ordre,
+        <lb />SVR LES MISERE5
+        <lb />du Temps.
+        <lb />Où elle luy delare la raiſon pour laquelle elle n'a
+        <lb />pas fait Miracle cette Année. <figure type="decoration" />
+        <lb />A PARIS,
+        <lb />M. DC. LII. <pb n="4" />
+        <pb n="5" />
+        <lb />REVELA1ON
+        <lb />De ſaincte Geneuiéue a vn Religieux
+        <lb />de ſon Ordre,
+        <lb />Sur les miſeres du temps.
+        <lb />¬2
+        <lb />ES iours paſſez Monſeigneur l’Arche
+        <lb />ueſque de Paris ayant fait recomman
+        <lb rend="¬" break="no" />,cer les prieres des quarantes heures par
+        <lb />A toutes les Egliſes de la Ville, pour ſup
+        <lb rend="¬" break="no" />plier ſa diuine Maieſté de rendre la paix à tout le
+        <lb />Royaume &amp; le repos à cette ville &amp; à ce Dioceſe
+        <lb />agité miſerablement de differentes conuulſions,
+        <lb />de la maladie auſſi bien que de la guerre: Vn bon
+        <lb />Religieux ſe treuuant au pied de l’Autel de Sainte
+        <lb />Geneuieue, priſt vnc ſainte hardieſſe, &amp; luy dit en
+        <lb />ſoſipirant.
+        <lb />Grande Sainte, proſterné deuant vos glorieuſes
+        <lb /> reli ques &amp; vos pretieuſes Cendres, pardonnez-moy
+        <lb />ſi ie prens la hiberté de vous ouurir mon eœur, &amp;
+        <lb />de vous deſcouuir mes ſentimens, pour diſſiper le
+        <lb />troube ou ie fuis &amp; la peinc qui me tourmente;i’ay
+        <lb />ſuiet d’auoir recours à vous, pulque c’eſt vous qui
+        <lb />eſtes la auſe de moh eſtonnement, &amp; qui par os
+        <lb /> A ii <pb n="6" />
+        <lb />1
+        <lb />¬ -¬¬o¬e.¬a¬¬¬a-e¬o¬, ¬o 2.. e2 --aa,.
+        <lb />¬g
+        <lb />4
+        <lb />ſadintes ſumieres pouuez chaſſer l’horreur de la nuict,
+        <lb />&amp; de l’ennuy qui m’afhge, auſſi bien que pluſieurs
+        <lb />autres de voſtre ville de Paris, qui pour ne pren
+        <lb rend="¬" break="no" />dre pas la meſime libetté que moy de vous par
+        <lb rend="¬" break="no" />ler, ne laiſſent pas de viure dans la meſme inquie
+        <lb rend="¬" break="no" />tudes plus reſpectueux à l’exterieur enuers vous ce
+        <lb />ſemble que moy, mais non pas moins preſſé du meſ
+        <lb rend="¬" break="no" />me trouble que moy, qui demeurerois ſans doute
+        <lb />commeles autres dans l’aſſoupiſſement de mon mal,
+        <lb />ſiie ne ſuiuois le mouuement d’vne ſainte confiance
+        <lb />que ie ſens que vous faites naiſtre en moy meſme
+        <lb />pour le ſoulagement de tous.
+        <lb /> Donc permettez-moy, grande Sainte, que ie
+        <lb />vous demande auec tout le reſpect poſſible, &amp; que
+        <lb />ie vous dois, non point par vn eſprit de curioſité
+        <lb />qui me rendroit indigne d’eſtre écouté de vous,
+        <lb />ny par vn deſir qui ſeroit temeraire d’entrer dans la
+        <lb />connoiſſance des deſſeins &amp; des conſeils de Dieu
+        <lb />que nous deuons touſiours adorer, mais pouſſe de
+        <lb />la compaſſion de la perte de tant de peuples qui
+        <lb />periſſent, auſſi bien peut eſtre eternellement, pour
+        <lb />eſtre priuez des aililtances de l’Egliſe, comme tem
+        <lb rend="¬" break="no" />porellement pour eſtre deſpoüillez de leurs biens
+        <lb />&amp; des choſes neeeſſaires à la vie. Nos maux dure
+        <lb rend="¬" break="no" />ront touſiours, &amp; par leur durée deuiendront en
+        <lb rend="¬" break="no" />core plus inſupportables ſi nous ny cherchons du
+        <lb />remede, &amp; où les treuuer ſinon chez vous &amp; par
+        <lb />epanuenen dnpenone e e nououn oni
+        <lb />C’eſt
+        <lb />a¬ -. LA¬ <pb n="7" />
+        <lb />¬
+        <lb rend="¬" break="no" />C’eſt donc ce ſeul deſir de contribuer quelque cho
+        <lb rend="¬" break="no" />ſe à la conſeruation de la Religion &amp; de la pieté qui
+        <lb />ſe deſtruit par cette guerre, à la reparation des Autels
+        <lb />qui ſont abatus, des Sacrifices qui ſont abandon
+        <lb rend="¬" break="no" />¬
+        <lb rend="¬" break="no" />5
+        <lb />nez, de l’authorité Royale, ie ne diray pas qui ſem
+        <lb rend="¬" break="no" />ble meſpriſée: mais qui n’eſt pas aſſez reconnuë ny
+        <lb />reuerée, &amp; enſin à la paix, au repos &amp; à la tranquili
+        <lb rend="¬" break="no" />té publique ſy non de toute l’Europe pour le moins
+        <lb />de la plus belle &amp; la plus peuplée ville du monde qui
+        <lb />vous appartient par tant de titres, &amp; qui vous eſt
+        <lb />conſacrée par tant de vœux.
+        <lb />D’où vient grande Sainte, que vous ayant rendu
+        <lb />nos deuoits nos ſoumiſſions &amp; nos hommagesnous
+        <lb />n’auons point receu les effects de voſtre afſection,
+        <lb />nous auons ieuné &amp; pleuré́ deuant vous, ſoupiré
+        <lb />&amp; prié aux pieds de vos Autels, &amp; vous ne nous
+        <lb />auez point eſcoutez, nous auons chanté vos louan
+        <lb rend="¬" break="no" />ges, &amp; à l’imitation de nos anceſtres nous auons
+        <lb />honoré vos ſaints oſſemens d’vn Triomphe public,
+        <lb />auec tant de reſpect &amp; de veneration, auec tant
+        <lb />d’ardeur &amp; de pieté, &amp; auec tant d’affluence &amp; de
+        <lb />eonfiance que nous auions ſuiet d’eſperer de rece
+        <lb rend="¬" break="no" />uoir par voſtre ſecours, les meſmes aſſiſtances que
+        <lb />vous auez renduës autrefois à nos peres, vous ho
+        <lb rend="¬" break="no" />morant des meſmes ceremonies. Nos ieuſnes n’ont
+        <lb />point eſté forcez, nos larmes point feintes, nos
+        <lb />voix point languiſſantes, nos prieres ardentes, nos
+        <lb />ſouſpirs legitimes &amp; nos vux veritables &amp; accom
+        <lb rend="¬" break="no" />plis: D’où vient donc que ous auons eſté priuez de <pb n="8" />
+        <lb />¬¬¬¬ .
+        <lb />8
+        <lb />voſtte protection, vous Patronne de cette Ville
+        <lb />contre ſes ennemis, Aduocate de cectte populace
+        <lb />deuant le Throſne de Dieu, Protectrice de nos Au
+        <lb rend="¬" break="no" />tels, Ange tutelaire de noſtre Religion, refuge or
+        <lb rend="¬" break="no" />dinaire en nes aduerſitez, aſile dans nos mal-heurs,
+        <lb />bergere de nos troupeaux, pourquoy ſont-ils diſſi
+        <lb rend="¬" break="no" />pez ſous voſtre conduitte, mere de nos peuples pour
+        <lb />quoy ſont-ils perdus entre vos bras, remede aſſeu
+        <lb rend="¬" break="no" />ré de nos malades, pourquoy ſont-ils eſtouffez de
+        <lb />la mort, port ouuert ànos debris, pourquoy periſ
+        <lb rend="¬" break="no" />ſons nous dans la tempeſte, nos prieres nont-elles
+        <lb />pas eſté accompagnez de penitence, nos ſouſpirs
+        <lb />de repentence, &amp; nos vœux de fidelité? peut- eſtre
+        <lb />nous n’auons pas meriré d’eſtre eſcoutez de Dieu,
+        <lb />mais vous que nous auons priée, vous auez tou
+        <lb rend="¬" break="no" />ſiours merité &amp; touſiours eſté digne d’eſtre eſcou
+        <lb rend="¬" break="no" />tée &amp; exaucée de ſa diuine Maieſté, nous n’auons
+        <lb />rien demandéſans vous, &amp; n’auons rien eſperé qu’a
+        <lb rend="¬" break="no" />uec vous, nous auez vous fruſtrez de voſtre attente,
+        <lb />auez vous prié auecnous, auez vous demandé pour
+        <lb />nous? ſi cela eſt ainſi, pourquoy nos miſeres durent
+        <lb />elles, naos mal-heurs ſont ils prolongez, nos l’ar
+        <lb rend="¬" break="no" />mes ne ſont point eſſuyez, nos deſordres point finis
+        <lb />&amp; nos peines point terminées?
+        <lb />Il continuoit ainſi ſes ſoupirs dans la Meditation
+        <lb />des caules de nos diſgraces, quand s’eſtant aſſoupy
+        <lb />du ſommeil, Sainte Genneuiefue reueſtuë de lu
+        <lb rend="¬" break="no" />miere, &amp; portant vn ffambeau blanc dans la main,
+        <lb />sappamtaluy, &amp; luy di.
+        <lb />2
+        <lb />aaé¬¬¬¬¬¬¬
+        <lb rend="¬" break="no" />a¬ <pb n="9" />
+        <lb />l
+        <lb rend="¬" break="no" />A¬
+        <lb rend="¬" break="no" />3J
+        <lb />L eſt vray que i’ay touſiours eu compaſlion de
+        <lb /> vos miſeres &amp; de vos afflictions, &amp;rouſiours con
+        <lb rend="¬" break="no" />ſerué mes premiers deſſeins de voſtre prore ction,
+        <lb />qui ſe ſont augmentez auſſi bien par le nombre de
+        <lb />vosmal-heurs, que par vos ſoupirs &amp; par vos prieres,
+        <lb />que i’ay eſcoutées auec tendreſſe de mere, &amp; auec le
+        <lb />ſoin que demande la charge que i’ay priſe d’eſtre
+        <lb />vôtre Aduocate, &amp; auec plus de ſincerité &amp; d’affectio
+        <lb />de vous ſoulager, que vous n’auez pas monſtré de
+        <lb />paſſion pour voſtre propre repos: Il eſt encore plus
+        <lb />vray que i’ay touſiours veu ſa diuine bonté plus pre
+        <lb rend="¬" break="no" />ſte &amp; plus prompte à vous ſecourir, que vous n’auez
+        <lb />eſté à luy demander de l’aſſiſtance, que ſes bras vous
+        <lb />ont eſté plutoſt tendus &amp; ofterts, que vous n’auez
+        <lb />eſleué vos mains pour imlorer la miſerirorde.
+        <lb />Mais ny la faueur qu’il me fait de meſcouter quant
+        <lb />ie luy parle pour vous, nyſa bonté ſollicitée par tant
+        <lb />de gens de bien qui viuent parmy vous, n’ont en
+        <lb rend="¬" break="no" />core peu obtenir la fin de vos diſgraces, ny le reme
+        <lb rend="¬" break="no" />de de toutes vos miſeres, par ce que vous meſmes
+        <lb />vous vous oppoſez à ce que vous ſouhaitez. Dieu
+        <lb />pour accorder à ſes Saints qui ioüiſſent de ſa gloi
+        <lb rend="¬" break="no" />re dans le Ciel &amp; aux prieres de ſes vrays ſeruiteurs
+        <lb />qui ſont ſur la rerre; ce que les vns &amp; les autres luy
+        <lb />demandent, voit dans ſes creatures de certaines diſ
+        <lb rend="¬" break="no" />poſitions, deſquelles vous vous eſloignezauſſi ſou
+        <lb rend="¬" break="no" />uent que l’on taſche de vous y remettre. En vn mot
+        <lb />Dieu veut vne humilité, &amp; qui eſt vnaſſuietiſe
+        <lb rend="¬" break="no" />¬ -¬ Aum’
+        <lb rend="¬" break="no" />aa-2 V¬a aam <pb n="10" />
+        <lb />-a mfa -¬ qre
+        <lb />ment entier de l’eſprit des hommes à l’ordre qu’il a
+        <lb />eſtablydans la terre, non pas ſeulement à la diuer
+        <lb rend="¬" break="no" />ſité des ſaiſons de la nature: mais auſli aux puiſſan
+        <lb rend="¬" break="no" />ces qu’il a ordonnées dans le monde, auſqueles il
+        <lb />faut rendre vn Religieux reſpect, vne obeiſſance
+        <lb /> parfaitte, &amp; vne ſoubmiſſion entiere de l’eſprit qui
+        <lb />¬
+        <lb rend="¬" break="no" />ne cenfure point leurs deſſeins, ne combat potnt
+        <lb />leurs entrepriſes, execute leurs volontez &amp; accom
+        <lb rend="¬" break="no" />pliſſe leurs commandemens quels qui ſoient dans
+        <lb />leurs mœurs &amp; dans leurs vies, &amp; quoy qu’ils com
+        <lb rend="¬" break="no" />mandent qui ne ſoit point contre Dieu.
+        <lb />Paris, tu demande à Dieu qui tient le cœur du Roy
+        <lb />dans ſa main, qui le conduiſe, &amp; tu ne veus pas
+        <lb />ſuiure les ordres veritable qu’il te donne, tu ne
+        <lb />veus pas te ſoubmettre à ton ſeul Monarque, &amp;
+        <lb />u te rends captiue de ceux a qui tu ne dois point
+        <lb />d’obeiſſance, tu te plains d’vn iouc que tu dis eſtre
+        <lb /> trop rigoureux, &amp; tu en reçois vn autre qui eſt bien
+        <lb />plus pelant, plus iniurieux à Dieu, à ta reputation,
+        <lb />aa liberté &amp; à ta vie: iniurieux à Dieu, parce qu’il
+        <lb />n’eſt pas legitime, ce n’eſt pas celuy qui veut que tu
+        <lb />porte, u cõmets vne eſpece d’idolatrie, u teforme
+        <lb />de nouuéaux Dieux, tu reéds de nouuelles adoratios
+        <lb />A des Idoles, c’eſt à̀ dire à ceux qui ne ſont que les
+        <lb />foibles crayons de la veritable puſſance quetu dois
+        <lb />reconnoiſtre dans ton Roy; tu ouures tes portes à
+        <lb />des roupes Eſrangeres &amp; ennemies, &amp; u lesfet
+        <lb rend="¬" break="no" />mes à celle de ton Roy, tu leurs fournis des muni
+        <lb rend="¬" break="no" />oas &amp; des viures, &amp; tu en refuſes à tes Compa
+        <lb />trioes,
+        <lb />-ba.¬.
+        <lb />.. a.22¬¬¬¬¬¬¬-¬¬¬ 3..A ¬ <pb n="11" />
+        <lb />l
+        <lb />triotes qui ſuiuent leur Roy, tu prens les armes &amp;
+        <lb />employe ton artillerie contre tonReoy, ſous de faux
+        <lb />pretextes, &amp; tu fauoriſes ceux qui ſont decdlarez er
+        <lb />nemis iurez de la Couronne.
+        <lb /> Ie ſçay bien que tu me peux dire que ce ne ſont pas
+        <lb />tes veritables Bourgeois, mais bien la lie du peu
+        <lb rend="¬" break="no" />ple, &amp; toute ſorte de gens ramaſſez des Prouinces
+        <lb />qui ſont cauſes de tous ſes deſordres. Auoüe donc
+        <lb />que tu as perdu ta liberté, que ton Parlement n’eſt
+        <lb />plus libre, &amp; que pluſieurs n’oſent pas par la crainte,
+        <lb />&amp; par la foibleſſe ſouſtenit la verité de leur ſenti
+        <lb rend="¬" break="no" />ment, ny maintenir la fidelité qu’ils doiuent, &amp;
+        <lb />qu’ils ont iurée à leur Souuerai N’as-tu pas veu Pa
+        <lb rend="¬" break="no" />nsS les premiers de ce corps mal traittés vn iour où il
+        <lb />commanç̧oit à reſpirer &amp; à vouloir prendre de la
+        <lb />franclſe pour mettre ordre à res diuiſions.
+        <lb />lDe quel œil as tu veu ton Autel de Ville aſiegé,
+        <lb /> bruſle, plle, tes meilleurs Citoyens, les vns en dan
+        <lb rend="¬" break="no" />ger de lear vie, les autres tuez &amp; maſſacrez, &amp; les au
+        <lb rend="¬" break="no" />tres pris à rançon, leulement pour vouloir trauail
+        <lb rend="¬" break="no" />ler à ta conſeruation, &amp; cét horrible ſpectacle ſe
+        <lb />paſſer au milieu de ton ſein, ſans que pas vn detes
+        <lb />Citoyens priſt les armes pour ſoulager &amp; pour deli
+        <lb rend="¬" break="no" /> urer leurs Chefs, leurs peres, leurs plus grand amis,
+        <lb />leurs prorecteurs, leurs Gouuerneuts &amp; les princi
+        <lb rend="¬" break="no" /> paux habitans, il n’eſtoit pas peirmis d’aller eſtein
+        <lb rend="¬" break="no" />dre le feu qui les alloit conſonimer, d lëur porter
+        <lb />n peu d’eau pour eſtancler la ſoif qui les tourmeni
+        <lb rend="¬" break="no" />-toit par fumee &amp; par la raintode la rmort pre¬ <pb n="12" />
+        <lb />. er TLETE
+        <lb />44a
+        <lb />16
+        <lb />chaine, il n’eſtoit pas permis de ſortir de la maiſon
+        <lb />pour aller apprendre ſeulement des nouuelles de ce
+        <lb />qui ſe paſſoit, recueillir les cendres de ceux qu’on
+        <lb />vouloit c̃ſommer, d’aſſiſter d’aucuns remedes ceux
+        <lb />qui eſtoient bleſſez, de retirer chez ſoy ceux qui ti
+        <lb rend="¬" break="no" />roient à la fin, ny de prendre les corps de ceux qui
+        <lb />eſtoient deſia morts pour leur donner la ſepulture.
+        <lb />Paris, ton aueuglement a t’il eſté ſi grand que de
+        <lb />e pas voir que tu auois perdu toute ta franchiſe &amp;
+        <lb />toute ta liberté. Lequel de tous tes Rois le plus iu
+        <lb rend="¬" break="no" />ſtement irrité contre toy, ca iamais reduite en vn
+        <lb />eſtat ſi miſerable, &amp; tu appelle tes protecteurs les
+        <lb />Autheurs de toutes, ces violences, tu demandes des
+        <lb />graces &amp; des Amiiſties les armes à la main, tu en
+        <lb />demandes pour des incendaires, des prophanateurs
+        <lb />des Temples, pour des impies, des ſacrileges &amp;
+        <lb />des violateurs des loix diuines &amp; humaines. Tu
+        <lb />chicane auecton Roy ſur des mots &amp; des formali¬.
+        <lb />tés de paroles, &amp; tune veut pas qu’abandonnant ſes
+        <lb />propres intereſts, il conſerue &amp; van ge ceux de Dieu
+        <lb />qu il ne peut abandonnaer ſans crime.
+        <lb /> Tes Roys doiuent agir comme Dieu, il pardon
+        <lb rend="¬" break="no" />ne &amp; punit tout enſemble, par ce qu’il eſt bon &amp;
+        <lb />iuſte tout enſemble, il remet les fautes par l’effet de
+        <lb />ſa bonté: mais il ne peut empeſ her que ſa luſtice ne
+        <lb />les puniſſe toſt ou tart, ou plus rigoureuſement, ou
+        <lb />plus doucenaent dans cette vie ou bien dans l’autre.
+        <lb /> L’on e fait craindre la Maieſté de ton Roy qui
+        <lb />n’a pour toey que des ſentimens depere, &amp; des ten
+        <lb rend="¬" break="no" />a.a¬ L <pb n="13" />
+        <lb />aa¬.
+        <lb />.- aaa-ar. a aa . rgaaar¬ raaaa, . aamaa. ,a¬¬¬-
+        <lb rend="¬" break="no" />dreſſes dont il ta voulu donner touſiours toute ſor
+        <lb rend="¬" break="no" />te de teſmoignages, tu as penſé deuiter quelques le
+        <lb rend="¬" break="no" />geres contributions neceſſaires pour les affaires de
+        <lb />la guerre, &amp; regarde tes villages ruinez, tes mamel
+        <lb rend="¬" break="no" />les deſſeichées, tes campagnes deſolées, tes meres
+        <lb />nourices eſtoufſées, tout le plat pays perdu, &amp; meſ
+        <lb rend="¬" break="no" />me ſans labour, &amp; ſans eſperance pour les années
+        <lb />prochaines. lamais le Roy par ſa luſtice, meſme
+        <lb />eſtant iritée, &amp; iamais desMiniſtres d’Eſtat quels
+        <lb />qu’ils euſſent peu eſtre, plus violent, plus fourbes &amp;
+        <lb />plus inſatiables, n’euſſentiamais tant fait de mal au
+        <lb rend="¬" break="no" />tour de Paris, tant ruiné de villages, tant violé de
+        <lb />lieux ſains &amp; de ſaintes perſonnes, tant abbatu
+        <lb />d’Autels, tant pillé de maiſons, tant commis de
+        <lb />maſſacres &amp; de cruautés, rant reſpandu de ſang,
+        <lb />tant diſlipé de biens, tant accablé de miſerables, que
+        <lb />tu as fait par ton iniuſte ſouleuement.
+        <lb />L’on a veu deſcouurir &amp; emporter le plomb de tes
+        <lb />Egliſes, rompre tes taberuacles, prophaner le tres
+        <lb />ſaint Sacrement, tuer tes Preſtres, violer tes Reli
+        <lb rend="¬" break="no" />gieuſes, abbatre tes maiſons, ny pas laiſſer vn mor
+        <lb rend="¬" break="no" />ceau de fer, mettre le feu aux pieds de tes arbres frui
+        <lb rend="¬" break="no" />ctiers, couper tes bleds ſans attendre la maturité,
+        <lb />en tirer vne partie, &amp; laiſſer l’autre pourrir enfu
+        <lb rend="¬" break="no" />mier, tes prez à l’abandon, tes vignes à la mercy
+        <lb />des ſoldas, tes viluges deſertés, tes peuples mou
+        <lb rend="¬" break="no" />rir ſans l’aſſiſtance des Sacremens, tes meilleurs Ci
+        <lb rend="¬" break="no" />Eeyens noſer parler, eſtre accablés &amp; menacés par
+        <lb />des inſolens mercenaincs, gagnes autc vn peu d’ar
+        <lb rend="¬" break="no" />-q¬ -¬ ¬¬ <pb n="14" />
+        <lb /> 12
+        <lb />lda... all¬ eg
+        <lb />gent, &amp; ce qu’on tiroit de tes maiſons de campa
+        <lb rend="¬" break="no" />e l oe eioeie pne e e elne ene
+        <lb /> ne, encore plus outragée s’il ſe peut, euſt pû ſouffir
+        <lb />tant de miſeres, franchiſſons le mot, cent &amp; cent Ma
+        <lb rend="¬" break="no" />2arins, c’eſt à dire auſſi rmauuais eſprits qu’on te for
+        <lb rend="¬" break="no" />ge eſtre le ſien, n’auroient iarmais en dx ans fait
+        <lb />tant de mal, commis tant de crimes, ny ruiné tant de
+        <lb />monde, comme ont fit ceux que tu appelle, Paris,
+        <lb />tes protecteurs.
+        <lb />uſques iey, qu’on fait &amp; que font encore tes
+        <lb />gardes à tes portes, ſinon metrre &amp; laſſer les ar
+        <lb rend="¬" break="no" />mes és mains d’vne populace agitée touſiours de
+        <lb />nouueaux mouuemens, ou perſonne ne veut obeir,
+        <lb />chaecun veut eſtre maiſtre, &amp; ſe croit eſtre autant ou
+        <lb /> plus conſiderable que celuy qui luy veut donner
+        <lb />l’ordre.
+        <lb />C’eſt nourrir la liberté parmy tes artiſans, qui ne
+        <lb />reuiennent qu’à regret à l’ouurage, c’eſt fomentér
+        <lb />l’eſprit de rebellion, c’eſt entretenir les deſordres
+        <lb />paſſez: combien à tes portes s’eſt il fait deſineutes
+        <lb />mal à propos, de ſurpriſes, ou pluſtoſt de priſes &amp;
+        <lb />de pilieries iniuſtes ſous de faux pretextes &amp; de fauſ
+        <lb rend="¬" break="no" />ſes apparences, il n’a pas eſté permis d’emmener rien
+        <lb />pour ton Roy, ſes fdels ſuiets n’ont pas eu la liber
+        <lb rend="¬" break="no" />té d’emporter leur argent pour luy aler rendre leurs
+        <lb />ſeruices, l’on a foulle ſans raiſon, &amp;-recherche ſanms
+        <lb />reſpect, iuſques dans les biaires des morts, meſmede
+        <lb />pauares Religieuſes qu’on reportoit au tombeau de
+        <lb />, leur
+        <lb /> ¬.. <pb n="15" />
+        <lb />l¬
+        <lb rend="¬" break="no" />leur maiſon, ſous eſperance de butin, &amp; dans cét A la
+        <lb />por
+        <lb rend="¬" break="no" />tumultes de tes portes, combien de meurtres, com-
+        <lb />bien d’innocens immolez à la fantaiſie d’vne po-Mont.
+        <lb />pulace trompée tous les iours par autant de nou-.
+        <lb />tre.
+        <lb />uelles qu’on luy en debite. Là, combien de débau
+        <lb rend="¬" break="no" />ches de ieux de iuremens, d’affrons faits aux plus
+        <lb />honneſtes gens, meſme à tes Preſtres, ſortant ou re
+        <lb rend="¬" break="no" />uenant des lieux de deuotion plus proches de tes
+        <lb /> murs, pour prier Dieu pour ton repos, lors que tu
+        <lb />laiſſois entrer &amp; ſortir toute ſorte de voleurs, &amp;
+        <lb />que ceux que l’on te deſcouuroit &amp; arreſtoit à vne
+        <lb />porte, ſortoient le lendemain par vne auatre, eſtant
+        <lb />ſeulement conduits à ta Maiſon de Ville, pluſtoſt
+        <lb /> par apparence que par aucune iuſtice. Enfin n’a
+        <lb />t’on pas veu cette garde aller auec force &amp; inſolen
+        <lb rend="¬" break="no" />ce dans les maiſons des pauures vefues &amp; orpelins
+        <lb />leurs arracher auec paroles &amp; menaces iniurieuſes, ce
+        <lb />qu’ils auoient de reſte pour leur vie, ſous pretexte
+        <lb />de naller pas à vne garde plus iniurieuſe à ra gloire,
+        <lb />que neceſſaire à ta tranquillité.
+        <lb />De tes portes ſi l’on paſſe dans tes ruës, on en
+        <lb rend="¬" break="no" />tent autre choſe que des fauſſetez, des menſon
+        <lb rend="¬" break="no" />ges, &amp; des mediſances horribles, imprimées &amp; de
+        <lb rend="¬" break="no" />bitées par des mains &amp; des voix mercenaires &amp;
+        <lb />aiettées pour tromper la credule populace, &amp; pour
+        <lb />faire gemir tes bons cytoyens, qui n’ayant pas la
+        <lb />libertéde ſe declarer ſeruiteurs de leur Roy, paſſent
+        <lb />pour ſeditieux &amp; meſ hans, s’ils s’aſſemblent pour
+        <lb />mettre ordre à ces deſordres, &amp;terminer s’ils peuuent
+        <lb />leurs calamicez. Si l’on entre dans tes maiſons ne
+        <lb />A s.22¬2¬2¬¬¬-ar.. <pb n="16" />
+        <lb />2a--a-- --eee-,,
+        <lb />14
+        <lb />ſont- elles pas pour la pluſpart’ dépeupléei, puiſque
+        <lb />les trois parts de tes habitans ſe ſont écartez, &amp; que
+        <lb />le reſte faiſant bonne mine à l’exterieur, ae laiſſe
+        <lb /> pas de ſouffrir auec peine, &amp; ſitu ny apporte quel
+        <lb rend="¬" break="no" />que remede, ſouffrira dans quelque mois tant de
+        <lb />diſette, &amp; de viures &amp; de bois, que la mort qui ſe
+        <lb />promene par tes ruës, acheuera de conſommer ces
+        <lb />cadaures que la neceſſité reduira bien toſt aux abois.
+        <lb />Et parmy tout cela quelques bons citoyens détachez
+        <lb />de tous intereſts, ne regardant que le bien public, &amp;
+        <lb />que ce que l’on doità ſon Roy,s’eſtant vnis dans ſon
+        <lb />Palais Royal, l’on a crié qu’il les falloit bruſler, come
+        <lb />on auoit fait les autres daus l’Hoſtel de Ville, ſans
+        <lb />reſpect d’vne maiſon ſacrée, ny des lmages de ton
+        <lb />Roy, qui y pareſſent de toutes pars, l’on s’entrete
+        <lb rend="¬" break="no" />noit des moyens de piller cette Maiſon Royale, ſous
+        <lb />pretexte de ſe ſaiſir de ceux qui s’y entretenoient des
+        <lb />moyens de reuoir &amp; de rauoir leur Roy; tes Colo
+        <lb rend="¬" break="no" />nels &amp; tes Capitaines pour auoir teſmoigné vouloir
+        <lb />rendre leurs deuoirs àS. M &amp; la prier ouboliant toure
+        <lb />choſe, de reuenir en ton ſein, ſont menacez de pri
+        <lb rend="¬" break="no" />ſons &amp; de fers, enfin l’on te nourrit de menſonges,
+        <lb />lon te deguiſe la verité, l’on ne la peu publier auec
+        <lb />aſſeurance, &amp; peut-eſtre toy-meſme ſi tureſpans mon
+        <lb />fils, comme ie le ſouhaitte ces lumieres dans les
+        <lb />eſprits de tes concitoyens, ſeras-tu diſie, peut eſtre
+        <lb />en danger de perâre ta liberté ou bien tavie, tant
+        <lb />on a de la peine à ſouffrir les veritez du ciel &amp; de la
+        <lb />terre, ſoit celles qui regardent Dieu, ou celles qui
+        <lb />touchent le reſpet &amp; l’obeyſſance aux puiſſances <pb n="17" />
+        <lb />A4
+        <lb /> -aa- ooo-
+        <lb /> ¬¬e
+        <lb rend="¬" break="no" />15
+        <lb />eſtablies de ſa diuine main ſur la terre.
+        <lb />Tes vœux pourtant &amp; tes prieres n’ont pas eſté
+        <lb />inutiles ny mes ſoins ſuperflus, i’ay commencé la
+        <lb />merueille &amp; le miracle que tu attendois de moy, i’ay
+        <lb />attendry &amp; adoucy l’eſprir du Roy, iuſtement irrite
+        <lb />do tant de reuoltes, dans la premiere année de ſa
+        <lb />maiorité, dans laquelle apres les acclamations qu’il
+        <lb />receut dans tes ruës, de tout ton peuple, le premier
+        <lb />iour qu’il fut declaré maieur, il ne pouuoit eſperer
+        <lb />de toy, que des paſſions pour ſon ſeruice, &amp; des teſ
+        <lb rend="¬" break="no" />moignages de perpetuelle obeyſſance, &amp; cependant
+        <lb />tu as changé tes premiers mouuemens, quitté ton
+        <lb />deuoir, fait brechie preſque irreparable à ta fidelité,
+        <lb />&amp; merité pluſtoſt les effects de ſa colere &amp; de ſa iu
+        <lb rend="¬" break="no" />ſtice que ceux de ſon affection &amp; bien-veillance, que
+        <lb />ie t’ay pourtant acquiſe, auſlſi bien que le cœur de la
+        <lb />Reyne que ie t’ay gagné, apres tant de noires medi
+        <lb rend="¬" break="no" />ſances contre ſa vertu, tant de chanſons &amp; diſcours
+        <lb />inſolens contre ſa conduitte, apres tant de deſ
+        <lb rend="¬" break="no" />ſeins contre ſa perſonne Royale &amp; ſacree, apres
+        <lb />tant de meſpris iniurieux, que la moindre fem
+        <lb rend="¬" break="no" />me du Royaume n’auroit pis ſoufferts ſans ven
+        <lb rend="¬" break="no" />cance, ie l’ay pourtant arrachée de ſon cœur &amp;
+        <lb />de ſes mains, auéc dautant plus de force qu’elea plus
+        <lb />de puiſſance &amp; d’uthorité pour l’executer. Ainſi
+        <lb />P mon entremiſe, tu n’as rien à craindre de ces puiſ
+        <lb rend="¬" break="no" />ſantes Mieſtez, mais pout l’accompliſſemene en
+        <lb rend="¬" break="no" />tier de la grace &amp; de la merueille que tu ne deman
+        <lb rend="¬" break="no" />dess ie n’ay peu ſaire miracle, parce que u n’a pas
+        <lb />eſcouté mes ſentimens, ſuiuy mes lumieres, accom
+        <lb rend="¬" break="no" />3a2¬
+        <lb rend="¬" break="no" />1
+        <lb />¬Aaadé <pb n="18" />
+        <lb /> --efLaesAn
+        <lb rend="¬" break="no" />ply les ordres &amp; les loix de Dieu, ny celles de ton
+        <lb />deuoir.
+        <lb /> Voila donc ce qui m’a empeſché iuſques icy,
+        <lb />Paris, de te donner le repos que tu m’as demandé,
+        <lb />voila tes mouuemens qui m’ont lié les mains, voila
+        <lb />les mauuaiſes diſpoſitions qui tempeſchent de rece
+        <lb rend="¬" break="no" />uoir des aſſiſtances du Ciel, ſors de tes aueugle
+        <lb rend="¬" break="no" />mens, reuiens à toy-meſme, reprens tonbon ſens,
+        <lb />ecoute la verité, ſuis la raiſon, humilie toy deuant
+        <lb />Dieu, reconnoiſſant tes fautes, &amp; deuant ton Roy,
+        <lb />te ſoumettant à toutes ſes volontez, Ie t’aſſeure de la
+        <lb />part du Ciel qu’il n’a que des tendreſſes &amp; des bon
+        <lb rend="¬" break="no" />tez pour toy, que toutes les apprehenſions de chaſti
+        <lb rend="¬" break="no" />mens que l’on te donne ſont fauſes &amp; menſongeres,
+        <lb />&amp; que s’il t’apporte vn autre eſprit que celuy de paix
+        <lb />&amp; de douceur, le Ciel meſme prendra ton party, &amp;
+        <lb />t’ayant veuë ſoumiſe aux Loix diuines &amp; humaines,
+        <lb />te comblera de tant de felicitez, que tes proſperitez
+        <lb />égaleront ta grandeur, &amp; donneront ſuiet aux autres
+        <lb />Royaumes de ſuiure ton exemple, abandonnant
+        <lb />toute ſorte de diuiſions pour s’vnir à Dieu &amp; a leur
+        <lb />Roy.
+        <lb /> Le reſte de la France ſoumiſe ſous ſa loy te regar
+        <lb rend="¬" break="no" />de, &amp; ce petit coin qui reſte dans ſon embraſement,
+        <lb />eſteindra bien-toſt ſes feux &amp; ſe portera dans l’o
+        <lb rend="¬" break="no" />beïſſance, ainſitu rendras la paix à ton Royaume, &amp;
+        <lb />Pelunener e poeue oeili eonunun ouon oe oue
+        <lb />FIN. </p>
+    </body>
+  </text>
 </TEI>

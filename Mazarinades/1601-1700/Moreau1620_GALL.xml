@@ -1,2003 +1,1374 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1620_GALL">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">La hécatombe prophétique, ou les Cent Centuries de Don
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">La hécatombe prophétique, ou les Cent Centuries de Don
           Pedro Oloso, gentilhomme vénitien, astrologue de la république de Venise, où l'on
           reconnoîtra l'heureuse entreprise de messieurs les Princes et la perte du cardinal
           Mazarin, présenté à Son Altesse Royale.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://gallica.bnf.fr/ark:/12148/bpt6k5613649z"/>
-					<author source="BnF" role="alleged_author">
-						<persName>
-							<forename>Pedro</forename>
-							<surname>Oloso</surname>
-						</persName>
-					</author>
-					<title source="Moreau">Hécatombe (la) prophétique, ou les Cent Centuries de Don Pedro
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k5613649z" />
+          <author source="BnF" role="alleged_author">
+            <persName>
+              <forename>Pedro</forename>
+              <surname>Oloso</surname>
+            </persName>
+          </author>
+          <title source="Moreau">Hécatombe (la) prophétique, ou les Cent Centuries de Don Pedro
             Oloso, gentilhomme vénitien, astrologue de la république de Venise, où l'on reconnoîtra
             l'heureuse entreprise de messieurs les Princes et la perte du cardinal Mazarin, présenté
             (sic) à Son Altesse Royale.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher ref="isni:0000000078043669" xml:id="IL_LormeauLaurens.xml">
-						<persName>
-							<forename>Laurent</forename>
-							<surname>Lormeau</surname>
-						</persName>
-					</publisher>
-					<date source="Moreau" when="1652">1652</date>
-					<extent>
-						<measure quantity="22" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2988507">Paris</settlement>
-						<institution>Bibliothèque nationale de France</institution>
-						<repository>département Littérature et art</repository>
-						<idno type="cote">YE-3777</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher ref="isni:0000000078043669" xml:id="IL_LormeauLaurens.xml">
+            <persName>
+              <forename>Laurent</forename>
+              <surname>Lormeau</surname>
+            </persName>
+          </publisher>
+          <date source="Moreau" when="1652">1652</date>
+          <extent>
+            <measure quantity="22" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2988507">Paris</settlement>
+            <institution>Bibliothèque nationale de France</institution>
+            <repository>département Littérature et art</repository>
+            <idno type="cote">YE-3777</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">1620. Hécatombe (la) prophétique, ou les Cent Centu ries de Don Pedro
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">1620. Hécatombe (la) prophétique, ou les Cent Centu ries de Don Pedro
           Oloso, gentilhomme vénitien, as trologue de la république de Venise, où l'on recon noîtra
           l'heureuse entreprise de messieurs les Princes et la perte du cardinal Mazarin, présenté
           (sic) à Son Altesse Royale. Paris, Laurens Lormeau, 1652, 22 pages.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">vers</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-04-07" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<pb n="12"/>
-				<pb n="13"/>
-				<pb n="14"/>
-				<pb n="15"/>
-				<pb n="16"/>
-				<pb n="17"/>
-				<pb n="18"/>
-				<pb n="19"/>
-				<pb n="20"/>
-				<pb n="21"/>
-				<pb n="22"/>
-				<pb n="23"/>
-				<pb n="24"/>
-				<pb n="25"/>
-				<pb n="26"/>
-				<pb n="27"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<l>
-					<lb/>
-Premier Centurie.				</l>
-				<l>
-					<lb/>
-DIeu ſeul autheur de l’Vniuers,				</l>
-				<l>
-					<lb/>
-Pour vn temps permet la ſouffrance,				</l>
-				<l>
-					<lb/>
-ſuné frappent de reuers,				</l>
-				<l>
-					<lb/>
-Pour nous donner congnoiſſance.				</l>
-				<l>
-					<lb/>
-ſf. Cenrurie¬				</l>
-				<l>
-					<lb/>
-Malheur à̀ luy qui reuient d’auànture,				</l>
-				<l>
-					<lb/>
-Ce ſauuera du danger qui pourra,				</l>
-				<l>
-					<lb/>
-Adieu l’honneur adieu la Prelature,				</l>
-				<l>
-					<lb/>
-La voûte en terre bien-toſt tombera.				</l>
-				<l>
-					<lb/>
-PII. Centurie.				</l>
-				<l>
-					<lb/>
-Dedans la cinquieſme dixaine,.				</l>
-				<l>
-					<lb/>
-Lon verra l’amoureux vinqueur,				</l>
-				<l>
-					<lb/>
-Remply d’vne flãme diuine,				</l>
-				<l>
-					<lb/>
-Requerir la Paix &amp; douceur.				</l>
-				<l>
-					<lb/>
-4				</l>
-				<l>
-					<lb/>
-7				</l>
-				<l>
-					<lb/>
-I. Cenmturie.				</l>
-				<l>
-					<lb/>
-Teſte portant voute d’Herete,				</l>
-				<l>
-					<lb/>
-Sera eſcrazé par les mains,				</l>
-				<l>
-					<lb/>
-De celuy qui fait la conqueſte,				</l>
-				<l>
-					<lb/>
-De l’heritage des Troyens.				</l>
-				<l>
-					<lb/>
-.Cenmurie.				</l>
-				<l>
-					<lb/>
-Par trop fouuent celuy ſe trompeen luy,				</l>
-				<l>
-					<lb/>
-Qui veut iuger l’intention d’autruy,				</l>
-				<l>
-					<lb/>
-Et qui ce croit de ſe faire capable,				</l>
-				<l>
-					<lb/>
-Trompé ſouuent ſe trouue miſerable.				</l>
-				<l>
-					<lb/>
-VI. Centurie.				</l>
-				<l>
-					<lb/>
-Oüy le cœur courageux &amp; gros de viue au¬				</l>
-				<l>
-					<lb/>
-daſſe,				</l>
-				<l>
-					<lb/>
-De luy-meſme ſans fer la victoire ſe traſſe,				</l>
-				<l>
-					<lb/>
-C’eſt luy qui tout ſeul ving &amp; le fer ſeulement,				</l>
-				<l>
-					<lb/>
-Sert a parer aux coups qu’on pouſſe rudement.				</l>
-				<l>
-					<lb/>
-Vl. Centurie.				</l>
-				<l>
-					<lb/>
-Celuy là n’aura peur de cõmettre tout vice				</l>
-				<l>
-					<lb/>
-Qui ne craint ſon honneur ny la Iuſtice,				</l>
-				<l>
-					<lb/>
-qui ſuit ces paſſions de qui la liberté,				</l>
-				<l>
-					<lb/>
-Ne ſe veut eſclairer de l’aſte équite.				</l>
-				<l>
-					<lb/>
-VI. Centurie.				</l>
-				<l>
-					<lb/>
-Non il n’eſt rienplus doux que le bien que				</l>
-				<l>
-					<lb/>
-l’on fait,				</l>
-				<l>
-					<lb/>
-Sans nous couſter beaucoup a l’amy plus par¬				</l>
-				<l>
-					<lb/>
-fait,				</l>
-				<l>
-					<lb/>
-Et l’Hoſpitalité eſt touſiours agreable,				</l>
-				<l>
-					<lb/>
-Puis qu’a l’vn &amp; à l’autre elle ſe rend fauorable.				</l>
-				<l>
-					<lb/>
-5				</l>
-				<l>
-					<lb/>
-. Centurie.				</l>
-				<l>
-					<lb/>
-Ainſi meurt iuſtement le barbare infidelle,				</l>
-				<l>
-					<lb/>
-Qui contra la vertu laſchementſe rebelle,				</l>
-				<l>
-					<lb/>
-Comme fait le coüard qui d’vn courage fier,				</l>
-				<l>
-					<lb/>
-Natandpas celuy-la qu’il enuoye deffier.				</l>
-				<l>
-					<lb/>
-X. Ceuturie.				</l>
-				<l>
-					<lb/>
-Mars &amp; l’Amour ſemblablesde nature,				</l>
-				<l>
-					<lb/>
-Courent touſiours vne meſme aduenture,				</l>
-				<l>
-					<lb/>
-Sont bien-heureux ores en quelques eſtour,				</l>
-				<l>
-					<lb/>
-Ou malheureuxaux cours d’vnautre iour.				</l>
-				<l>
-					<lb/>
-. Centurie.				</l>
-				<l>
-					<lb/>
-Non il ne faut iamais quitter ſon aduantage,				</l>
-				<l>
-					<lb/>
-Eſpargnant l’ennemi qui deffautde courage,				</l>
-				<l>
-					<lb/>
-Faut poutſuiure lapointe&amp; ne repoſer point,				</l>
-				<l>
-					<lb/>
-Qu’on ne l’ait deſarmé &amp; misaudernier point.				</l>
-				<l>
-					<lb/>
-XIl. Centunie.				</l>
-				<l>
-					<lb/>
-Car la gloire qu’on trouue aux entrailles				</l>
-				<l>
-					<lb/>
-felonnes,				</l>
-				<l>
-					<lb/>
-Des mortels ennemis nous vaut milles Cou¬				</l>
-				<l>
-					<lb/>
-ronnes				</l>
-				<l>
-					<lb/>
-Nous donne milles honneurs dans le beau				</l>
-				<l>
-					<lb/>
-Champs du los,				</l>
-				<l>
-					<lb/>
-Que nous allons cueillans au milieu du repos,				</l>
-				<l>
-					<lb/>
-XIll. enturie.				</l>
-				<l>
-					<lb/>
-On’court apnes la mort, mais lors quelle ſe				</l>
-				<l>
-					<lb/>
-tourne,				</l>
-				<l>
-					<lb/>
-Deuers les pourſuiuant ſa faſſe les eſtonne,				</l>
-				<l>
-					<lb/>
-De ſorte qu’ils s’en vont &amp; ne craignent rien				</l>
-				<l>
-					<lb/>
-tant,				</l>
-				<l>
-					<lb/>
-B				</l>
-				<l>
-					<lb/>
-6				</l>
-				<l>
-					<lb/>
-Que cét horrible front qu’ils alloient ſouhait¬				</l>
-				<l>
-					<lb/>
-tan,				</l>
-				<l>
-					<lb/>
-1115				</l>
-				<l>
-					<lb/>
-XIIII Centurie.				</l>
-				<l>
-					<lb/>
-Ce quin’eſt eſbranſlé des aquillons ſeuere				</l>
-				<l>
-					<lb/>
-Ne le ſera iamais des Lephirs debonnaire,				</l>
-				<l>
-					<lb/>
-Et le Roe qui reſiſte aux tonnere du Ciel,				</l>
-				<l>
-					<lb/>
-Pourra bien tenirfermeiaux feu Macerſel.				</l>
-				<l>
-					<lb/>
-XV. Centurie.				</l>
-				<l>
-					<lb/>
-Vn ieune courage imdomptable,				</l>
-				<l>
-					<lb/>
-Pour quelque eſchet ſera ſurpris,				</l>
-				<l>
-					<lb/>
-Mais ſa paſſience admirable,				</l>
-				<l>
-					<lb/>
-Sur tout emportera le pris.				</l>
-				<l>
-					<lb/>
-XVI. Centurie.				</l>
-				<l>
-					<lb/>
-L’innocence eſtant reconnuë,				</l>
-				<l>
-					<lb/>
-Pat lai reuolution du temps,				</l>
-				<l>
-					<lb/>
-La liberté ſera rendü,				</l>
-				<l>
-					<lb/>
-A ceux qu’onnommoit malcontemps¬				</l>
-				<l>
-					<lb/>
-XVII. Centurie.				</l>
-				<l>
-					<lb/>
-Qui na point en ſes faits de fidelle prudence,				</l>
-				<l>
-					<lb/>
-Ne peur auoir auſſi d’aucun bien l’aſſiſtance,				</l>
-				<l>
-					<lb/>
-Et qui ne ſçait iuger des mal-heur auenir,				</l>
-				<l>
-					<lb/>
-Ne pourra d’aucun heur ſes iours entretenir.				</l>
-				<l>
-					<lb/>
-r71J				</l>
-				<l>
-					<lb/>
-XVIII. Cenurie.				</l>
-				<l>
-					<lb/>
-Il n’eſt point de fureur tant ſoit elle petite,				</l>
-				<l>
-					<lb/>
-En ces affections que nos eſprits n’agiſte,				</l>
-				<l>
-					<lb/>
-Et les viues fureurs nous rauiſſent a nous,				</l>
-				<l>
-					<lb/>
-Pour ſur nous exeicer l’éfort de leurs cou¬				</l>
-				<l>
-					<lb/>
-roux..				</l>
-				<l>
-					<lb/>
-XIX. Cenmturia.				</l>
-				<l>
-					<lb/>
-Lors que moins on y ſongera				</l>
-				<l>
-					<lb/>
-Dans la France naiſtra vn Prince,				</l>
-				<l>
-					<lb/>
-Qui de beaucoup reſiouyra,				</l>
-				<l>
-					<lb/>
-Les ſubjects de c’eſte Prouince.				</l>
-				<l>
-					<lb/>
-.l				</l>
-				<l>
-					<lb/>
-XX. Cenrurie.				</l>
-				<l>
-					<lb/>
-Tout ate qui n’eſt pas garny de la Iuſtice,				</l>
-				<l>
-					<lb/>
-Bien qu’aparant parfait en effet n’eſt que vice				</l>
-				<l>
-					<lb/>
-Et tout ce qu’onarraſche a laſte équité,				</l>
-				<l>
-					<lb/>
-Eſt tout plein de fureur ou plein de cruauté.				</l>
-				<l>
-					<lb/>
-XXI. Censurl				</l>
-				<l>
-					<lb/>
-Oüy, il faut oppoſer le pouuoir a la force,				</l>
-				<l>
-					<lb/>
-Affin de l’empeſcher que fierre elle nous fpree				</l>
-				<l>
-					<lb/>
-Le fer combat le fer, &amp; chacun ſans mechef				</l>
-				<l>
-					<lb/>
-Peut repouſſer le traict qui deſſad ſur ſon				</l>
-				<l>
-					<lb/>
-aſele oun e onoue				</l>
-				<l>
-					<lb/>
-Des grabuges de France,				</l>
-				<l>
-					<lb/>
-Puis que leurs bons deſtins,				</l>
-				<l>
-					<lb/>
-Vous pronmettent ſouffrance				</l>
-				<l>
-					<lb/>
-XXIII. enturie.				</l>
-				<l>
-					<lb/>
-Non nul ne fuſt iaais &amp; nul n’eſt pas en¬				</l>
-				<l>
-					<lb/>
-(cores,				</l>
-				<l>
-					<lb/>
-.				</l>
-				<l>
-					<lb/>
-Pareil àt*t au bon heur qui l’honores				</l>
-				<l>
-					<lb/>
-Non pas vn ne viura qui luy reſemble vn iour				</l>
-				<l>
-					<lb/>
-Puis que rien ne reſemble a ſa gloire &amp; amour,				</l>
-				<l>
-					<lb/>
-XXIN Centunier				</l>
-				<l>
-					<lb/>
-Nonceluy laaſſ ne peut eſtre astu i				</l>
-				<l>
-					<lb/>
-¬				</l>
-				<l>
-					<lb/>
-S				</l>
-				<l>
-					<lb/>
-De cent calamitez qui combats la vertu,				</l>
-				<l>
-					<lb/>
-Qui offenſe l ’honneur, &amp; luy eſme prius.				</l>
-				<l>
-					<lb/>
-Par ſon cruël peche d ſon amitié vifue.				</l>
-				<l>
-					<lb/>
-XXV. Cnturie.				</l>
-				<l>
-					<lb/>
-Puis que tout e qui viſt comme ſerf du				</l>
-				<l>
-					<lb/>
-(malheur,				</l>
-				<l>
-					<lb/>
-N’en ſç̧auroit eſviter la picquante douleur,				</l>
-				<l>
-					<lb/>
-Faut eſfayer ces feux &amp; courir ſonorage,				</l>
-				<l>
-					<lb/>
-Qui ſouuent nous accable en la fleur de noſtre				</l>
-				<l>
-					<lb/>
-leſie us oueuli ſ eui ie iae				</l>
-				<l>
-					<lb/>
-Fait plus en ces projects que la vifue proü¬				</l>
-				<l>
-					<lb/>
-eſſe,				</l>
-				<l>
-					<lb/>
-Et ce braue Heros qui a tout ſurmonté,				</l>
-				<l>
-					<lb/>
-Dans vn traiſtre fillet eſt enfin arreſt́.				</l>
-				<l>
-					<lb/>
-XXVI. Centurie.				</l>
-				<l>
-					<lb/>
-Si d’vn cœur genereux la parolle hautaine,				</l>
-				<l>
-					<lb/>
-Qui s’adreſſe a quelqu’vn eſt vne Loy çertaine.				</l>
-				<l>
-					<lb/>
-A qui ce ſent loüé de ſa diuine voix,				</l>
-				<l>
-					<lb/>
-Acquiers vn riche honneur qui ne mourra				</l>
-				<l>
-					<lb/>
-iamais.				</l>
-				<l>
-					<lb/>
-XXVIII. Cnrurie.				</l>
-				<l>
-					<lb/>
-Mellieurs eſt le ſecours durant l’extremité,				</l>
-				<l>
-					<lb/>
-Que celuy qui nous vient hors la neceſſité,				</l>
-				<l>
-					<lb/>
-Plus le’peril eſt grandplus riche eſt laCourone				</l>
-				<l>
-					<lb/>
-Et le bien qui nous oſte a ſa rage felonne.				</l>
-				<l>
-					<lb/>
-XXVIV. enturie				</l>
-				<l>
-					<lb/>
-Puis que l’amy parfait eſt vn ſeond nous				</l>
-				<l>
-					<lb/>
-meſme,				</l>
-				<l>
-					<lb/>
-9				</l>
-				<l>
-					<lb/>
-Il faut tout eſperer de ſonamour extreſme .				</l>
-				<l>
-					<lb/>
-S’attendre tout a luy &amp; croireque noſtrefheur,;				</l>
-				<l>
-					<lb/>
-Eſt ſon bien plus heureux &amp; ſon plus riche				</l>
-				<l>
-					<lb/>
-honneur.				</l>
-				<l>
-					<lb/>
-X X X. Centurie.				</l>
-				<l>
-					<lb/>
-Le bon Dieu, le Dieu ſaintt, le grand Dieu				</l>
-				<l>
-					<lb/>
-de Nature,				</l>
-				<l>
-					<lb/>
-e1.				</l>
-				<l>
-					<lb/>
-A de ſes bien aimez touſiouts ſoigneuſe cure,				</l>
-				<l>
-					<lb/>
-Ne les quitte iamais il rencontre touſiours,				</l>
-				<l>
-					<lb/>
-En leurs extremitez propiſce ſon ſecours.				</l>
-				<l>
-					<lb/>
-2 XXXI Centurie.				</l>
-				<l>
-					<lb/>
-Il n’eſt point de douceur qui reſembleau				</l>
-				<l>
-					<lb/>
-plaiſir,				</l>
-				<l>
-					<lb/>
-Qu’on a d’auoita plain le fruit de ſon deſir,				</l>
-				<l>
-					<lb/>
-C’eſt le comble du bien ous noſtre eſpritaſpire,				</l>
-				<l>
-					<lb/>
-Et que pour bien parfais noſtre vouloir deſire				</l>
-				<l>
-					<lb/>
-XXXII. Centurie.				</l>
-				<l>
-					<lb/>
-Malhureux en celuy qu’ils contẽple l’orage.				</l>
-				<l>
-					<lb/>
-Et ne veut l’euiter pour plaire a ſon courage,				</l>
-				<l>
-					<lb/>
-Bieh-heureux eſt eeluiy qui s’echappe a pro¬				</l>
-				<l>
-					<lb/>
-Du danger qui vouloit ruiner ſon repos. (pos,				</l>
-				<l>
-					<lb/>
-XXXIH. Centurie.				</l>
-				<l>
-					<lb/>
-Tel qui ſouffre en l’effet du naturel deuoir,				</l>
-				<l>
-					<lb/>
-Fldelle &amp; courageux aux hommes ſe fait voir,				</l>
-				<l>
-					<lb/>
-Sa peine a la parfin luy redonde en Couronne,				</l>
-				<l>
-					<lb/>
-Et entre mille honneurs le ſien diuin ſteurõne.				</l>
-				<l>
-					<lb/>
-XXXIV. Centurie.				</l>
-				<l>
-					<lb/>
-Oüy le Peuple ignorant admire l’exellence,				</l>
-				<l>
-					<lb/>
-Du fait qu’il ne peut faire en ſa foible puiſfance				</l>
-				<l>
-					<lb/>
-C				</l>
-				<l>
-					<lb/>
-10				</l>
-				<l>
-					<lb/>
-S’eſtonne de le voir car diuin le fait voir,				</l>
-				<l>
-					<lb/>
-Toutatte qui ſurpaſſe enluy noſtrepouuoir.				</l>
-				<l>
-					<lb/>
-rXxX. Centurie.				</l>
-				<l>
-					<lb/>
-Comme le fol amour foulle toute Iuſtice,				</l>
-				<l>
-					<lb/>
-Et rend ſerues les Loix a ſa fiere malice,				</l>
-				<l>
-					<lb/>
-Il ns reſpecte rieiquſacriielle ardeur, (teur.				</l>
-				<l>
-					<lb/>
-Qui le rend bien ſouuent de cent orimes l’hau¬				</l>
-				<l>
-					<lb/>
-s XVMle ouree.				</l>
-				<l>
-					<lb/>
-Le mal pourſuit le hien &amp; le bien l’infortune				</l>
-				<l>
-					<lb/>
-Selon qu’ilplaipyaux yents de la dame fortune				</l>
-				<l>
-					<lb/>
-Qui legere incertaine &amp;ſats atre arreſté,				</l>
-				<l>
-					<lb/>
-Gouucrhtotout aux cursdéſalegereté.				</l>
-				<l>
-					<lb/>
-XXXVII. Centurie.				</l>
-				<l>
-					<lb/>
-Heureuſe’mille fois ce peut proclamer l’ame				</l>
-				<l>
-					<lb/>
-Qui parfait ſndeſir horsla frayeur dublame,				</l>
-				<l>
-					<lb/>
-ui p’a point de ſoupſon que le fier déhon¬				</l>
-				<l>
-					<lb/>
-neur,				</l>
-				<l>
-					<lb/>
-¬				</l>
-				<l>
-					<lb/>
-Iache de ſes effets la pudicque candeur.				</l>
-				<l>
-					<lb/>
-XXXVIII. Centurie..				</l>
-				<l>
-					<lb/>
-Oüy il faut qu’yne force orgueilleuſe en ſa				</l>
-				<l>
-					<lb/>
-force,.				</l>
-				<l>
-					<lb/>
-Par vn autre pouuoir inſollamment s’efforce,				</l>
-				<l>
-					<lb/>
-Et tout ſuiet puiſſant ne change pas deſort,				</l>
-				<l>
-					<lb/>
-Sans ſentir la fureur d’vneſclatant effort.				</l>
-				<l>
-					<lb/>
-XXXIX. Centurie.				</l>
-				<l>
-					<lb/>
-Que celuy iuſtement par la peyne periſſe,				</l>
-				<l>
-					<lb/>
-Qui auoit contre autruy inuentée en ſon viſſe,				</l>
-				<l>
-					<lb/>
-Et que lemeſme fer du meſchant ayguiſe,				</l>
-				<l>
-					<lb/>
-Pertce ſon ſeiicruël de fureurattiſe.				</l>
-				<l>
-					<lb/>
--X L. centurie.				</l>
-				<l>
-					<lb/>
-S’il qui eontre quelqu’vn veut ayguiſer ſa				</l>
-				<l>
-					<lb/>
-l’ame,				</l>
-				<l>
-					<lb/>
-Iuſtement va reſſeu, la pointe qui l’entame,				</l>
-				<l>
-					<lb/>
-Car iuſte eſt le tourment contre autruy pout				</l>
-				<l>
-					<lb/>
-penſé,				</l>
-				<l>
-					<lb/>
-Qui nous eſt ſur le chef par autruyrelanſé.				</l>
-				<l>
-					<lb/>
-X LI. Centurie.				</l>
-				<l>
-					<lb/>
-Non les ames qu’amour à fermement liez,				</l>
-				<l>
-					<lb/>
-Ne peuuent iamais eſtre au monde deſliez,				</l>
-				<l>
-					<lb/>
-Il y viuent contents aux frutsde leurs enuie,				</l>
-				<l>
-					<lb/>
-Ou d’vn meſme vouloir ils ſortent de la vie.				</l>
-				<l>
-					<lb/>
-X LIl. erie.				</l>
-				<l>
-					<lb/>
-Son malheur auſſi fot que ceſte loy diuine,				</l>
-				<l>
-					<lb/>
-N’a iamais abſenté ſa fatalle ruyne,				</l>
-				<l>
-					<lb/>
-Il l’a touſiours ſuyuie &amp; ce l’angoureux ſort,				</l>
-				<l>
-					<lb/>
-Ne doit comme ie eroy le quitter qu’à la mort.				</l>
-				<l>
-					<lb/>
-X LIII. Centurie.				</l>
-				<l>
-					<lb/>
-Oüy la neceſſité nous ouure le courage,				</l>
-				<l>
-					<lb/>
-A porter conſtemment le ſuruenu dommage,				</l>
-				<l>
-					<lb/>
-Et la prudence agiſtaux deffaux du pouuoir,				</l>
-				<l>
-					<lb/>
-A fin de receuoir les cents en leurs deuoir.				</l>
-				<l>
-					<lb/>
-XLIV. Centnrie.				</l>
-				<l>
-					<lb/>
-L’on voit le plus ſouuent vne cauſe petite,				</l>
-				<l>
-					<lb/>
-Alumer vn grand feu que la fureur excide,				</l>
-				<l>
-					<lb/>
-Car le courage ardent ſemeut a peu de vent,				</l>
-				<l>
-					<lb/>
-Et le mortel peril il meſpriſeſouuent.				</l>
-				<l>
-					<lb/>
-XLV. Centunrie.				</l>
-				<l>
-					<lb/>
-On blafme le yainc a faute de promeffe,				</l>
-				<l>
-					<lb/>
-12				</l>
-				<l>
-					<lb/>
-Et non celuy qui l’eſt par iniuſte fineſſe,				</l>
-				<l>
-					<lb/>
-Car l’honneur ſeullement ſuit la’prôpre vertu,				</l>
-				<l>
-					<lb/>
-Non la deſloyauté qui l’aſche a cohbadtu.				</l>
-				<l>
-					<lb/>
-XLVI. Centur!e				</l>
-				<l>
-					<lb/>
-Le grand Dieu qui maintient la Iuſtice Di¬				</l>
-				<l>
-					<lb/>
-Empeſche les effets de ſa paſſe ruyne, (uine,				</l>
-				<l>
-					<lb/>
-Retient la main du traiſtre &amp; eſmouce ſon fer,				</l>
-				<l>
-					<lb/>
-Ce faiſant bien ſouuent deualler en eafer.				</l>
-				<l>
-					<lb/>
-LVI1. Ce nturie.				</l>
-				<l>
-					<lb/>
-Les Agneaux tendrelets viuentenaſſeurãce,				</l>
-				<l>
-					<lb/>
-Voyant mourir les loups dans les peynes &amp;				</l>
-				<l>
-					<lb/>
-ſouffrance,				</l>
-				<l>
-					<lb/>
-Et la Caille repoſe aux furieux combat,				</l>
-				<l>
-					<lb/>
-Des coqs qu’ils l’ont battuë &amp; fait ſon eſbat.				</l>
-				<l>
-					<lb/>
-x ivIII. Centurie.				</l>
-				<l>
-					<lb/>
-L’heure diuerſe fois finiſſoit ſon deſir,				</l>
-				<l>
-					<lb/>
-Et de contraire faits il formoit ſonplaiſir,				</l>
-				<l>
-					<lb/>
-MaisDieu briſe touſiours du feu de ſa tempeſte.				</l>
-				<l>
-					<lb/>
-Le deſſein qui n’eſt iuſte nyſaintement hõneſte.				</l>
-				<l>
-					<lb/>
-XLIX. Centurie.				</l>
-				<l>
-					<lb/>
-Meurent donc iuſtemẽt au fort de leurs malice				</l>
-				<l>
-					<lb/>
-Ceux qu’ils veuille meurdrir l’innocent par				</l>
-				<l>
-					<lb/>
-leurs vice,				</l>
-				<l>
-					<lb/>
-Et que leurs propre fer contre iceux ayguiſé,				</l>
-				<l>
-					<lb/>
-De frapper leurs poitrine ores paroiſſe vzé.				</l>
-				<l>
-					<lb/>
-L. Centurie.				</l>
-				<l>
-					<lb/>
-Oüy le commencément d’vnouurage entre¬				</l>
-				<l>
-					<lb/>
-pris,				</l>
-				<l>
-					<lb/>
-Selon noſtre deſir reſioûys noseſprits,				</l>
-				<l>
-					<lb/>
-Les				</l>
-				<l>
-					<lb/>
-11				</l>
-				<l>
-					<lb/>
-Les aſſura la fin qui ſoulond’ordinaire,				</l>
-				<l>
-					<lb/>
-Suit le cõmencement ou mauuais ou proſpere.				</l>
-				<l>
-					<lb/>
-L lI. Centurie.				</l>
-				<l>
-					<lb/>
-C’eſt noliſe d’vname oufolle oumal apriſe,				</l>
-				<l>
-					<lb/>
-Delaiſſer imparfaite vnechaſeemtrepriſe,				</l>
-				<l>
-					<lb/>
-La fin eſt plus loüable encor que ſans heur,				</l>
-				<l>
-					<lb/>
-Queſon departement pour eſtre ſans honneur.				</l>
-				<l>
-					<lb/>
-LI I. Centurie.				</l>
-				<l>
-					<lb/>
-o de denrbienaeguuron ne ſȩait leque				</l>
-				<l>
-					<lb/>
-Et de deux maux pareils vers lequel ſe deffẽ̃dre				</l>
-				<l>
-					<lb/>
-On reſte ireſolu &amp; celuy n’a repos,				</l>
-				<l>
-					<lb/>
-Qui n’a rien d’areſté enfaits, &amp; en propos.				</l>
-				<l>
-					<lb/>
-LIII. Centurie.				</l>
-				<l>
-					<lb/>
-Toute choſe ce fait encore que difieille,				</l>
-				<l>
-					<lb/>
-Par laide du Conſeil ſalurtaire &amp; vtille,				</l>
-				<l>
-					<lb/>
-Et rien n’eſt differé qui reſoit la raiſon,				</l>
-				<l>
-					<lb/>
-Pour eſtre de ſon mal l’heureuſe guariſon.				</l>
-				<l>
-					<lb/>
-LIV. Centurie.				</l>
-				<l>
-					<lb/>
-La pluye &amp; eſclaire vifſont teſmoings des				</l>
-				<l>
-					<lb/>
-empeſtes,				</l>
-				<l>
-					<lb/>
-Qui roüllent fierement ſur nos coupable teſtes				</l>
-				<l>
-					<lb/>
-Et les pleurs &amp; les cris content pareillement,				</l>
-				<l>
-					<lb/>
-Les ardeurs qui ont vie en noſtre afſpre tour¬				</l>
-				<l>
-					<lb/>
-ment.				</l>
-				<l>
-					<lb/>
-LV. Centurie.!				</l>
-				<l>
-					<lb/>
-Non il n’eſt point de mal plus ſerfdu vitu¬				</l>
-				<l>
-					<lb/>
-pere,				</l>
-				<l>
-					<lb/>
-Que celuy qui par nous paroiſt à la lumiere,				</l>
-				<l>
-					<lb/>
-14				</l>
-				<l>
-					<lb/>
-Et deceller ſon crime eſt deſapropre mai,				</l>
-				<l>
-					<lb/>
-Se liurer au meſpris &amp; au blaſme inhaumain.				</l>
-				<l>
-					<lb/>
-LVI. Ceuturie.				</l>
-				<l>
-					<lb/>
-Car nul ne peut marcher és voyes de iuſtice				</l>
-				<l>
-					<lb/>
-Qui porte ſur ſon front eſcritte ſa malice,				</l>
-				<l>
-					<lb/>
-Dautant que ceſte Dame enpunit le forfait,				</l>
-				<l>
-					<lb/>
-Et ne veut rien ſouffrir qui ne ſoit tout parfait.				</l>
-				<l>
-					<lb/>
-LVII: Centuirie.				</l>
-				<l>
-					<lb/>
-Oüy vnchaeun ſe croit de luy meſme ſi ſage,				</l>
-				<l>
-					<lb/>
-Que na beſoing d’autruy d’auis ny de langages				</l>
-				<l>
-					<lb/>
-Pour faire ce quel veut &amp; quelrepenſſe en ſoy,				</l>
-				<l>
-					<lb/>
-Conforme au iuſtes vueil de lequitable loy.				</l>
-				<l>
-					<lb/>
-LVIII. Centurie.				</l>
-				<l>
-					<lb/>
-Celuy la meurt cent fois veuf d’honneur &amp;				</l>
-				<l>
-					<lb/>
-de ioye,				</l>
-				<l>
-					<lb/>
-Qui ne vit que pour eſtre à la douleur en proye,				</l>
-				<l>
-					<lb/>
-Car la mort n’eſt point mort ains la vefue dou¬				</l>
-				<l>
-					<lb/>
-leur,				</l>
-				<l>
-					<lb/>
-( cœur.				</l>
-				<l>
-					<lb/>
-Qui plus fort que la mort, poinçonne noſtre				</l>
-				<l>
-					<lb/>
-LIX. Centnrie.				</l>
-				<l>
-					<lb/>
-L’on ſe rid ſort de ceux qui faute de prudenſe				</l>
-				<l>
-					<lb/>
-Ce qu’il ont entrepris, ne mettent en éuidenſe,				</l>
-				<l>
-					<lb/>
-Qui demeure ſans cœur a pourſuiure l’effait,				</l>
-				<l>
-					<lb/>
-qu’ils auoient entrepris pour le rendre parfait.				</l>
-				<l>
-					<lb/>
-LX. Centurie				</l>
-				<l>
-					<lb/>
-Quiconque ſe reſout de courir à la Parque,				</l>
-				<l>
-					<lb/>
-N’a plus ſoucy du mal qui en viuant l’ataque,				</l>
-				<l>
-					<lb/>
-Il ne ſonge qu’à l’heur qu’il eſperent trouuer				</l>
-				<l>
-					<lb/>
-En ce remede heureux qui deſire eſprouuer.				</l>
-				<l>
-					<lb/>
-1.				</l>
-				<l>
-					<lb/>
-r1				</l>
-				<l>
-					<lb/>
-LXI. Centurie				</l>
-				<l>
-					<lb/>
-Comme vn deſeſperé ne ſent pas autre bien				</l>
-				<l>
-					<lb/>
-Que viure ſans attente &amp; n’eſperent plus rien,				</l>
-				<l>
-					<lb/>
-Comme il va que ſe ſoit à conduire ſa vie,i				</l>
-				<l>
-					<lb/>
-En luy toutſeul auſſiſon attente eſtrauie.				</l>
-				<l>
-					<lb/>
-LXII. Centurie.				</l>
-				<l>
-					<lb/>
-S’il veut paruenir aux fins de ſon courage,				</l>
-				<l>
-					<lb/>
-Ne doit rien eſpargner de propre à ſon ou				</l>
-				<l>
-					<lb/>
-urage;				</l>
-				<l>
-					<lb/>
-Il faut tout émployer car ſoauentpar hazard,				</l>
-				<l>
-					<lb/>
-L’on trouue le remede bienpluroſt que par l’art.				</l>
-				<l>
-					<lb/>
-LXXIII. Centurie.				</l>
-				<l>
-					<lb/>
-L’on he peutpas rier auxohemnin: dépan¬				</l>
-				<l>
-					<lb/>
-denſe,				</l>
-				<l>
-					<lb/>
-Qui chaſſe noſtre mal &amp; noſtre bien aduanſe,				</l>
-				<l>
-					<lb/>
-Le Conſeil eſt ſouuent autheur deriche bien,				</l>
-				<l>
-					<lb/>
-Qui nous arriue alors que nous n’eſperons rien				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-LXIV. Centurie				</l>
-				<l>
-					<lb/>
-Ouy, l’eſtat des grands, &amp; leurs gloires Eter¬				</l>
-				<l>
-					<lb/>
-(idelles				</l>
-				<l>
-					<lb/>
-nelles,				</l>
-				<l>
-					<lb/>
-Se maintiennent en bon-heur par leurs ſubjets				</l>
-				<l>
-					<lb/>
-Viuent en leurs vigueur &amp; le Prince plus fort				</l>
-				<l>
-					<lb/>
-Tire de ſes ſujets ſon aſſuré ſupport.				</l>
-				<l>
-					<lb/>
-LXV. Centurie.				</l>
-				<l>
-					<lb/>
-Si le double mal-iurdoublement nous ou¬				</l>
-				<l>
-					<lb/>
-ge				</l>
-				<l>
-					<lb/>
-trage2				</l>
-				<l>
-					<lb/>
-Vn double coup du Ciel double noſt doma¬				</l>
-				<l>
-					<lb/>
-ais ces doubles meſehefs quinousvont pou¬				</l>
-				<l>
-					<lb/>
-ſuiuant				</l>
-				<l>
-					<lb/>
-16				</l>
-				<l>
-					<lb/>
-A nous faire perit s’entrenuiſent ſouuent.				</l>
-				<l>
-					<lb/>
-LXVI. enturie?				</l>
-				<l>
-					<lb/>
-Non en amour rien n’eſt ſi neceſſaire,				</l>
-				<l>
-					<lb/>
-Que ſçauoir biea deſguiſer &amp;ſtaire,				</l>
-				<l>
-					<lb/>
-Qui n’a ces deux pour aydoien ſonifait				</l>
-				<l>
-					<lb/>
-Ne peut auoir aucun plaiſir parfaict.				</l>
-				<l>
-					<lb/>
-LXVII. Centurie.				</l>
-				<l>
-					<lb/>
-Les plus grands ennemis font la grandeVictoire				</l>
-				<l>
-					<lb/>
-Et qui vinc peu de cas Remporte peudeGloire,				</l>
-				<l>
-					<lb/>
-La celebre vertu qui vifue ce fait voir,				</l>
-				<l>
-					<lb/>
-Aux difieilles faits exerce ſon pouuoir.				</l>
-				<l>
-					<lb/>
-LXVIII. Centurie.				</l>
-				<l>
-					<lb/>
-Bien plus douceeſt la mort qui tuë noſtre peine				</l>
-				<l>
-					<lb/>
-Que la vie animée à la mortelle hayne,				</l>
-				<l>
-					<lb/>
-Et qui vis pour mourir au fort de la douleur,				</l>
-				<l>
-					<lb/>
-Eſt cruel meurtrier de ſon heureux bon heur.				</l>
-				<l>
-					<lb/>
-1 LXIX. Centurie				</l>
-				<l>
-					<lb/>
-Otres-heureux Combat dont la belle Vi¬				</l>
-				<l>
-					<lb/>
-Ioyent à lutilité la deſirable Gloire, (̃ire				</l>
-				<l>
-					<lb/>
-Qui cotents nous fait eſtre au feſte de bonheur				</l>
-				<l>
-					<lb/>
-Amaſſant cherement e’eſt hõnorablehueur.				</l>
-				<l>
-					<lb/>
-LXX. Centurie.				</l>
-				<l>
-					<lb/>
-Quand noſtre eſprit conduit du flambeau de				</l>
-				<l>
-					<lb/>
-l’Amour,				</l>
-				<l>
-					<lb/>
-Court vers la choſe aymée &amp; la nuict &amp; le iour				</l>
-				<l>
-					<lb/>
-Ne cherche que le bien comme fait hors d’ha¬				</l>
-				<l>
-					<lb/>
-laine,				</l>
-				<l>
-					<lb/>
-Le Cerfchaſſé des chiens l’agreable Fontaine.				</l>
-				<l>
-					<lb/>
-xm1.				</l>
-				<l>
-					<lb/>
-17				</l>
-				<l>
-					<lb/>
-LX XI. Centurie.				</l>
-				<l>
-					<lb/>
-Comme l’extremité apparoiſt furieuſe,				</l>
-				<l>
-					<lb/>
-Oſaoülle l plaiſir viuement amoureuſe,				</l>
-				<l>
-					<lb/>
-Il n’eſt point de milieu en la neceſſité,				</l>
-				<l>
-					<lb/>
-Et la force forcée oſte la liberte.				</l>
-				<l>
-					<lb/>
-LXXII. Centurie.				</l>
-				<l>
-					<lb/>
-Si la grandeur du cœur du vaillant &amp; du ſage,				</l>
-				<l>
-					<lb/>
-Parfait ſon action en celle du naufrage,				</l>
-				<l>
-					<lb/>
-La valleur ne reluit qu’en l’obſcur tenebreux,				</l>
-				<l>
-					<lb/>
-Du danger qui paroiſt effroyable à nosyeux.				</l>
-				<l>
-					<lb/>
-LXXIII. Centnrie.				</l>
-				<l>
-					<lb/>
-Toute loüange doit pour ſe eſtre priſée,				</l>
-				<l>
-					<lb/>
-Qui ſort d’vne ame iuſte, &amp; d’hõneur embraſée				</l>
-				<l>
-					<lb/>
-Qui cognoiſt le merite, &amp; ne le chante pas,				</l>
-				<l>
-					<lb/>
-Pour aucun riche bien qui demande icy bas.				</l>
-				<l>
-					<lb/>
-LXXl. Centurie.				</l>
-				<l>
-					<lb/>
-Le ſeul temperenment de deux choſes con¬				</l>
-				<l>
-					<lb/>
-traires,				</l>
-				<l>
-					<lb/>
-Eſt heureux aux mortels, &amp; ces faits neceſſaires				</l>
-				<l>
-					<lb/>
-Comme on ſent la douleur que pour courtoiſe				</l>
-				<l>
-					<lb/>
-ilfaut,				</l>
-				<l>
-					<lb/>
-De l’haleyne de l’air qui n’eſt ny froid ny chaut.				</l>
-				<l>
-					<lb/>
-LXXV. Centurie.				</l>
-				<l>
-					<lb/>
-Les eſprits ne ſont faits que pour eſtte agi¬				</l>
-				<l>
-					<lb/>
-ſtez,				</l>
-				<l>
-					<lb/>
-De milles vains deſirs &amp; vaiſnes volontez,				</l>
-				<l>
-					<lb/>
-Et comme ils ſont diuins diuins auſſi leurs reſte				</l>
-				<l>
-					<lb/>
-L-es diuers mouuements qui ſans fin les mo¬				</l>
-				<l>
-					<lb/>
-ele.				</l>
-				<l>
-					<lb/>
-E				</l>
-				<l>
-					<lb/>
-18				</l>
-				<l>
-					<lb/>
-LXXVI. ſenturie.				</l>
-				<l>
-					<lb/>
-y rrr				</l>
-				<l>
-					<lb/>
-¬				</l>
-				<l>
-					<lb/>
-Non celuy nerre point qui en ſon entrepriſs,				</l>
-				<l>
-					<lb/>
-Le ſeulle verité pour ſa condultté a priſe,				</l>
-				<l>
-					<lb/>
-Et qui voit deuant’luy’aux rayons du Soleil,				</l>
-				<l>
-					<lb/>
-Ne peut broncher du pied encontre quelques				</l>
-				<l>
-					<lb/>
-eſcuieil.				</l>
-				<l>
-					<lb/>
-LXXVII. Centurie.				</l>
-				<l>
-					<lb/>
-Vn homme reſolu eſt touſiours miſerable,				</l>
-				<l>
-					<lb/>
-Car la diuerſité de ſes projets l’aceable,				</l>
-				<l>
-					<lb/>
-Et qui d’vn droit chemin ſon voyage ne fait,				</l>
-				<l>
-					<lb/>
-Et change de ſantier peines le parfait.				</l>
-				<l>
-					<lb/>
-r7Y3				</l>
-				<l>
-					<lb/>
-LXXVII. Centuri				</l>
-				<l>
-					<lb/>
-Si l’homme na plus rien qui le faſſe paroiſtre				</l>
-				<l>
-					<lb/>
-Sans la vertu pour guyde &amp; l’honneur pour ſon				</l>
-				<l>
-					<lb/>
-maiſtre,				</l>
-				<l>
-					<lb/>
-Dautant que de ces deux ſalume le flambeau,				</l>
-				<l>
-					<lb/>
-Qui de lhomme honore les iours &amp; le tom¬				</l>
-				<l>
-					<lb/>
-beau.				</l>
-				<l>
-					<lb/>
-J rJ				</l>
-				<l>
-					<lb/>
-LXXlX. Centurie.				</l>
-				<l>
-					<lb/>
-Oüy celuy meurt heureux qui par la mort				</l>
-				<l>
-					<lb/>
-contente,				</l>
-				<l>
-					<lb/>
-Et ſon ardente amour &amp; ſa vertu luyſante,				</l>
-				<l>
-					<lb/>
-Et le tõbeau qu’amour &amp; l’honneur ont parfait,				</l>
-				<l>
-					<lb/>
-Ne peut eſtre du temps iniurieux d’effair.				</l>
-				<l>
-					<lb/>
-LXXX. Centurie.				</l>
-				<l>
-					<lb/>
-Si de trois ennemis vn tout ſeul combatu,				</l>
-				<l>
-					<lb/>
-Suſcombe bien ſouuent de force &amp; de vcrtu,				</l>
-				<l>
-					<lb/>
-Et deux chaiſnes pouſez ſur vn qui les voyſine,				</l>
-				<l>
-					<lb/>
-Le renuerſent auſſi &amp; cauſe ſa ruyne.				</l>
-				<l>
-					<lb/>
-19				</l>
-				<l>
-					<lb/>
-J				</l>
-				<l>
-					<lb/>
-LXXXI. Centurie.				</l>
-				<l>
-					<lb/>
-Oùy l’autheur du forfait en merite la peine.				</l>
-				<l>
-					<lb/>
-Non celuy quine veut que la rendre plus vaine				</l>
-				<l>
-					<lb/>
-Et qui deffend autruy pour ce bien ne doit pas,				</l>
-				<l>
-					<lb/>
-Participer au ſort de ſon iuſte trepas.				</l>
-				<l>
-					<lb/>
-LXXXII. Centurie.				</l>
-				<l>
-					<lb/>
-Non l’on ne doit iamais faire reffus de l’aide				</l>
-				<l>
-					<lb/>
-De ce qui peut donner a nos trauaux remede,				</l>
-				<l>
-					<lb/>
-Faut prendre le ſecours qui ſe preſente doux,				</l>
-				<l>
-					<lb/>
-Qui ne s’eſloigne apres trop promptement de				</l>
-				<l>
-					<lb/>
-nous.				</l>
-				<l>
-					<lb/>
-LXXHI2 pturie.				</l>
-				<l>
-					<lb/>
-Cruëlle deſtinée quelle fierre ſemonce,				</l>
-				<l>
-					<lb/>
-Puis que ſans nul eſpoir eſtoit c’eſte reſponce,				</l>
-				<l>
-					<lb/>
-Dieu qui reſoit aduis contraire a ſon deſir,				</l>
-				<l>
-					<lb/>
-Reſoit l’eſloingnemẽt de ſonplus doux plaiſir.				</l>
-				<l>
-					<lb/>
-LXXXIV Centurie.				</l>
-				<l>
-					<lb/>
-iEl				</l>
-				<l>
-					<lb/>
-Ce qui nous eſt vtille &amp; neceſſaire,.				</l>
-				<l>
-					<lb/>
-Nous ſemble il bien qu’aux loix aduerſaire,				</l>
-				<l>
-					<lb/>
-Car ohaeun veut impoſer a par ſoy;				</l>
-				<l>
-					<lb/>
-A tous effets ſa volonté pour loyj.				</l>
-				<l>
-					<lb/>
-LXXXV. Centurie.				</l>
-				<l>
-					<lb/>
-Tout comme ſont diuers les effets de nature,				</l>
-				<l>
-					<lb/>
-Diuerſement auſſi leurs bien fait og procure,				</l>
-				<l>
-					<lb/>
-Diuers honneurs nous font diuerſement cherir				</l>
-				<l>
-					<lb/>
-Et diuerſes douleurs cruellement mourir.				</l>
-				<l>
-					<lb/>
-LxXXxV. Centurie.j				</l>
-				<l>
-					<lb/>
-L’trompe ayſement celuy la qui ſe lie,				</l>
-				<l>
-					<lb/>
-A la palle trahyſon &amp; point ne ſe deffje,				</l>
-				<l>
-					<lb/>
-20				</l>
-				<l>
-					<lb/>
-Puis que la deffiance eſt l’aſſuré ſuport,				</l>
-				<l>
-					<lb/>
-De nos iours de nos ans contre la fiere mort.				</l>
-				<l>
-					<lb/>
-LxXv1. Centurie.				</l>
-				<l>
-					<lb/>
-Oüy les infortunez cherehent a leurs miſere				</l>
-				<l>
-					<lb/>
-Affin de l’endormir quelque bois ſolitaire,				</l>
-				<l>
-					<lb/>
-Quelque triſte deſert pour n’eſtre point tirez,				</l>
-				<l>
-					<lb/>
-Du penſer des trauaux dont ils ſont martirez.				</l>
-				<l>
-					<lb/>
-LXXXVIII. Centurie.				</l>
-				<l>
-					<lb/>
-Non bien ſouuent la voix n’eſt aux deſir s’em¬				</l>
-				<l>
-					<lb/>
-blable,				</l>
-				<l>
-					<lb/>
-Et le front paroiſtre quay dont l’ame eſt miſe¬				</l>
-				<l>
-					<lb/>
-rable,				</l>
-				<l>
-					<lb/>
-L’eſcorce ne reſenble a la douleur du fiuit,				</l>
-				<l>
-					<lb/>
-Que ſe Soleil dans elle heureuſement a cuit.				</l>
-				<l>
-					<lb/>
-LxxXiX. Centurie.				</l>
-				<l>
-					<lb/>
-Miſerable qui vit &amp; qui viuant n’eſpere,				</l>
-				<l>
-					<lb/>
-Que la mort pour tuer ſa cruëlle miſere,				</l>
-				<l>
-					<lb/>
-Miſerable qui vit combatant iour &amp; nuit,				</l>
-				<l>
-					<lb/>
-L’immortel douleur quitouſiours le pourſuit.				</l>
-				<l>
-					<lb/>
-LXXXxX. Centurie.				</l>
-				<l>
-					<lb/>
-Auſſi le plus ſouuent au cours de noſtre vie,				</l>
-				<l>
-					<lb/>
-Indignes de tous biens nous rend noſtre folye,				</l>
-				<l>
-					<lb/>
-Anenent ſur nos chefs le celeſte couroux,				</l>
-				<l>
-					<lb/>
-De’tous lésfouuerains indignez contre nous.				</l>
-				<l>
-					<lb/>
-LXXXXI. Centurie.				</l>
-				<l>
-					<lb/>
-Les reſolus au mal ne demande perſonne,				</l>
-				<l>
-					<lb/>
-Qui de penſer au mal promptementedes de¬				</l>
-				<l>
-					<lb/>
-toune,				</l>
-				<l>
-					<lb/>
-Ils				</l>
-				<l>
-					<lb/>
-Ils veuillent ſeuls ſi rendre &amp; les infortunez,				</l>
-				<l>
-					<lb/>
-Veuillent viure en malheur comme mal ils ſont				</l>
-				<l>
-					<lb/>
-nez.				</l>
-				<l>
-					<lb/>
-LXXXXII. Centurie.				</l>
-				<l>
-					<lb/>
-Oüy il faut quelque fois diſimuler de ſorte,				</l>
-				<l>
-					<lb/>
-Qu’on n’apperſoiuent pas l’horreur qui nous				</l>
-				<l>
-					<lb/>
-tranſporte,				</l>
-				<l>
-					<lb/>
-Faut eouurir ſon forfait ſinon de paſſion,				</l>
-				<l>
-					<lb/>
-Paroiſtre aux mortels tout autre d’action.				</l>
-				<l>
-					<lb/>
-LXXXXIII. Centurie.				</l>
-				<l>
-					<lb/>
-Tout eſt ſuiet à la mort toute douleur mor¬				</l>
-				<l>
-					<lb/>
-telle,				</l>
-				<l>
-					<lb/>
-Bien que fiere enrigueur ſe termine par elle,				</l>
-				<l>
-					<lb/>
-Et hors de ſentiment de nos humains trauaux,				</l>
-				<l>
-					<lb/>
-Sont les corps enchaſſez aux funeſtes tom¬				</l>
-				<l>
-					<lb/>
-beaux.				</l>
-				<l>
-					<lb/>
-LXXXXIV. Centurie.				</l>
-				<l>
-					<lb/>
-En vain celuy va contre le deſtin,				</l>
-				<l>
-					<lb/>
-i d̂it de l’vn voulant faire de l’autre,				</l>
-				<l>
-					<lb/>
-En vain fait il le meſchant &amp;mutin,				</l>
-				<l>
-					<lb/>
-Onle connoiſt pour vntreiſieſme Apoſtre.				</l>
-				<l>
-					<lb/>
-LXXXXV. centurie.				</l>
-				<l>
-					<lb/>
-Quand l’on contera ſoixante &amp; vnze &amp; trois,				</l>
-				<l>
-					<lb/>
-Vn cas ſubtil l’on verra admirable,				</l>
-				<l>
-					<lb/>
-D’vn fauory vn grand Roy fera choix,				</l>
-				<l>
-					<lb/>
-3				</l>
-				<l>
-					<lb/>
-En l’eſleuant aux charges honorable.				</l>
-				<l>
-					<lb/>
-LXXXXVI. Centurie.				</l>
-				<l>
-					<lb/>
-De peu parler quelques fois il eſt te mps,				</l>
-				<l>
-					<lb/>
-Car trop parler ſouuent porte nuiſſance,				</l>
-				<l>
-					<lb/>
-22				</l>
-				<l>
-					<lb/>
-Pour ſe ſubjet quelque vns malcontants,				</l>
-				<l>
-					<lb/>
-Sopourront voir dans la peine &amp; ſouffrance.				</l>
-				<l>
-					<lb/>
-7				</l>
-				<l>
-					<lb/>
-LXXXXVII. Centurie				</l>
-				<l>
-					<lb/>
-La fortune les armes &amp; le jeu,				</l>
-				<l>
-					<lb/>
-L’inconſtance &amp; la faueur petite,				</l>
-				<l>
-					<lb/>
-Se rencontrants enſemble en vn lieu,				</l>
-				<l>
-					<lb/>
-Pourrontjoüer au double ou au quitte.				</l>
-				<l>
-					<lb/>
-LXXXXVIII.. Centurie.				</l>
-				<l>
-					<lb/>
-Vn fatigué voulant prendre repos,				</l>
-				<l>
-					<lb/>
-Et raconter ſes vaillantes &amp; proeſſe,				</l>
-				<l>
-					<lb/>
-Eſt menaſſé d’aller voir a tropos,				</l>
-				<l>
-					<lb/>
-Par le poiſon aux fierre hardieſſe.				</l>
-				<l>
-					<lb/>
-LXXXXIX. Centurie.				</l>
-				<l>
-					<lb/>
-Quinze &amp; vnze enſemble jointe a deux,				</l>
-				<l>
-					<lb/>
-Mars &amp; Venus ſeront ſurpris enſemble,				</l>
-				<l>
-					<lb/>
-Leurs partie finie &amp; leurs jeux,				</l>
-				<l>
-					<lb/>
-L’on pourra voir &amp; leurs couroux qui tremble.				</l>
-				<l>
-					<lb/>
-C. Centurie.				</l>
-				<l>
-					<lb/>
-Par tropbouffi ilvouloit menaſſer,				</l>
-				<l>
-					<lb/>
-Ceſt innoçant ſans aucune malice,				</l>
-				<l>
-					<lb/>
-Ne croyant pas que Dieu peut terraſſer				</l>
-				<l>
-					<lb/>
-Les incenſſez qui vſe d’artifice.				</l>
-				<l>
-					<lb/>
-FIN.				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-... ..				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-¬				</l>
-				<l>
-					<lb/>
-.				</l>
-				<l>
-					<lb/>
-II				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-1¬				</l>
-				<l>
-					<lb/>
-1				</l>
-LA
-        HECATOMBE
-        PROPHETIQVE.
-        OV LES CENT
-        CENTVRIES DE DOM
-        PEDRO OLOSO
-        GENTILHOMME VENITIEN, ASTRO
-        LOGVE DE LA REPVBLIQVE DE VENIZE.
-        Où l’an recognoiſtra l’heureuſe entrepriſe de Meſſieurs les
-        Princes; Et la perte du Cardinal Mazarin.
-        Preſenté a ſon Alteſse Royalle.
-        A PARIS,
-        Chez LAVRENS LORMEAU, rué S. Iacques
-        à la Croix d’Or, deuant S. Benoiſt.
-        M. DC. LII. 
-        
-        3
-        LA HECATOMBE PROPHETIQVE,
-        où les cent ſenturies de om Pedrs Oloſos Centil
-        homme Venitien, Aftrologue de las Republique de
-        Venize; Où l’on recognoiftra l’heureuſe éntrepri
-        ſe de Meſſieurs les Princes, &amp; la perte du Cardinal
-         Mazarin.
-        Preſenté à ſon Alteſſe Royalle.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">vers</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-04-07" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="3" />
+        <lb />LA
+        <lb />HECATOMBE
+        <lb />PROPHETIQVE.
+        <lb />OV LES CENT
+        <lb />CENTVRIES DE DOM
+        <lb />PEDRO OLOSO
+        <lb />GENTILHOMME VENITIEN, ASTRO
+        <lb rend="¬" break="no" />LOGVE DE LA REPVBLIQVE DE VENIZE.
+        <lb />Où l’an recognoiſtra l’heureuſe entrepriſe de Meſſieurs les
+        <lb />Princes; Et la perte du Cardinal Mazarin.
+        <lb />Preſenté a ſon Alteſse Royalle.
+        <lb />A PARIS,
+        <lb />Chez LAVRENS LORMEAU, rué S. Iacques
+        <lb />à la Croix d’Or, deuant S. Benoiſt.
+        <lb />M. DC. LII. <pb n="4" />
+        <pb n="5" />
+        <lb />3
+        <lb />LA HECATOMBE PROPHETIQVE,
+        <lb />où les cent ſenturies de om Pedrs Oloſos Centil
+        <lb rend="¬" break="no" />homme Venitien, Aftrologue de las Republique de
+        <lb />Venize; Où l’on recognoiftra l’heureuſe éntrepri
+        <lb rend="¬" break="no" />ſe de Meſſieurs les Princes, &amp; la perte du Cardinal
+        <lb /> Mazarin.
+        <lb />Preſenté à ſon Alteſſe Royalle. <l>
+          <lb /> Premier Centurie.</l>
+        <l>
+          <lb />DIeu ſeul autheur de l’Vniuers,</l>
+        <l>
+          <lb />Pour vn temps permet la ſouffrance,</l>
+        <l>
+          <lb />ſuné frappent de reuers,</l>
+        <l>
+          <lb />Pour nous donner congnoiſſance.</l>
+        <l>
+          <lb /> ſf. Cenrurie¬</l>
+        <l>
+          <lb />Malheur à̀ luy qui reuient d’auànture,</l>
+        <l>
+          <lb />Ce ſauuera du danger qui pourra,</l>
+        <l>
+          <lb />Adieu l’honneur adieu la Prelature,</l>
+        <l>
+          <lb />La voûte en terre bien-toſt tombera.</l>
+        <l>
+          <lb /> PII. Centurie.</l>
+        <l>
+          <lb />Dedans la cinquieſme dixaine,.</l>
+        <l>
+          <lb />Lon verra l’amoureux vinqueur,</l>
+        <l>
+          <lb />Remply d’vne flãme diuine,</l>
+        <l>
+          <lb />Requerir la Paix &amp; douceur.</l>
+        <pb n="6" />
+        <l>
+          <lb />4</l>
+        <l>
+          <lb /> 7</l>
+        <l>
+          <lb /> I. Cenmturie.</l>
+        <l>
+          <lb />Teſte portant voute d’Herete,</l>
+        <l>
+          <lb />Sera eſcrazé par les mains,</l>
+        <l>
+          <lb />De celuy qui fait la conqueſte,</l>
+        <l>
+          <lb />De l’heritage des Troyens.</l>
+        <l>
+          <lb /> .Cenmurie.</l>
+        <l>
+          <lb />Par trop fouuent celuy ſe trompeen luy,</l>
+        <l>
+          <lb />Qui veut iuger l’intention d’autruy,</l>
+        <l>
+          <lb />Et qui ce croit de ſe faire capable,</l>
+        <l>
+          <lb />Trompé ſouuent ſe trouue miſerable.</l>
+        <l>
+          <lb /> VI. Centurie.</l>
+        <l>
+          <lb />Oüy le cœur courageux &amp; gros de viue au¬</l>
+        <l>
+          <lb />daſſe,</l>
+        <l>
+          <lb />De luy-meſme ſans fer la victoire ſe traſſe,</l>
+        <l>
+          <lb />C’eſt luy qui tout ſeul ving &amp; le fer ſeulement,</l>
+        <l>
+          <lb />Sert a parer aux coups qu’on pouſſe rudement.</l>
+        <l>
+          <lb />Vl. Centurie.</l>
+        <l>
+          <lb />Celuy là n’aura peur de cõmettre tout vice</l>
+        <l>
+          <lb /> Qui ne craint ſon honneur ny la Iuſtice,</l>
+        <l>
+          <lb />qui ſuit ces paſſions de qui la liberté,</l>
+        <l>
+          <lb />Ne ſe veut eſclairer de l’aſte équite.</l>
+        <l>
+          <lb />VI. Centurie.</l>
+        <l>
+          <lb /> Non il n’eſt rienplus doux que le bien que</l>
+        <l>
+          <lb />l’on fait,</l>
+        <l>
+          <lb />Sans nous couſter beaucoup a l’amy plus par¬</l>
+        <l>
+          <lb />fait,</l>
+        <l>
+          <lb />Et l’Hoſpitalité eſt touſiours agreable,</l>
+        <l>
+          <lb />Puis qu’a l’vn &amp; à l’autre elle ſe rend fauorable.</l>
+        <pb n="7" />
+        <l>
+          <lb />5</l>
+        <l>
+          <lb /> . Centurie.</l>
+        <l>
+          <lb />Ainſi meurt iuſtement le barbare infidelle,</l>
+        <l>
+          <lb />Qui contra la vertu laſchementſe rebelle,</l>
+        <l>
+          <lb />Comme fait le coüard qui d’vn courage fier,</l>
+        <l>
+          <lb />Natandpas celuy-la qu’il enuoye deffier.</l>
+        <l>
+          <lb /> X. Ceuturie.</l>
+        <l>
+          <lb />Mars &amp; l’Amour ſemblablesde nature,</l>
+        <l>
+          <lb />Courent touſiours vne meſme aduenture,</l>
+        <l>
+          <lb />Sont bien-heureux ores en quelques eſtour,</l>
+        <l>
+          <lb />Ou malheureuxaux cours d’vnautre iour.</l>
+        <l>
+          <lb />. Centurie.</l>
+        <l>
+          <lb />Non il ne faut iamais quitter ſon aduantage,</l>
+        <l>
+          <lb />Eſpargnant l’ennemi qui deffautde courage,</l>
+        <l>
+          <lb />Faut poutſuiure lapointe&amp; ne repoſer point,</l>
+        <l>
+          <lb />Qu’on ne l’ait deſarmé &amp; misaudernier point.</l>
+        <l>
+          <lb />XIl. Centunie.</l>
+        <l>
+          <lb />Car la gloire qu’on trouue aux entrailles</l>
+        <l>
+          <lb />felonnes,</l>
+        <l>
+          <lb /> Des mortels ennemis nous vaut milles Cou¬</l>
+        <l>
+          <lb />ronnes</l>
+        <l>
+          <lb />Nous donne milles honneurs dans le beau</l>
+        <l>
+          <lb />Champs du los,</l>
+        <l>
+          <lb />Que nous allons cueillans au milieu du repos,</l>
+        <l>
+          <lb />XIll. enturie.</l>
+        <l>
+          <lb />On’court apnes la mort, mais lors quelle ſe</l>
+        <l>
+          <lb />tourne,</l>
+        <l>
+          <lb />Deuers les pourſuiuant ſa faſſe les eſtonne,</l>
+        <l>
+          <lb />De ſorte qu’ils s’en vont &amp; ne craignent rien</l>
+        <l>
+          <lb />tant,</l>
+        <l>
+          <lb />B</l>
+        <pb n="8" />
+        <l>
+          <lb />6</l>
+        <l>
+          <lb />Que cét horrible front qu’ils alloient ſouhait¬</l>
+        <l>
+          <lb />tan,</l>
+        <l>
+          <lb />1115</l>
+        <l>
+          <lb /> XIIII Centurie.</l>
+        <l>
+          <lb />Ce quin’eſt eſbranſlé des aquillons ſeuere</l>
+        <l>
+          <lb />Ne le ſera iamais des Lephirs debonnaire,</l>
+        <l>
+          <lb />Et le Roe qui reſiſte aux tonnere du Ciel,</l>
+        <l>
+          <lb />Pourra bien tenirfermeiaux feu Macerſel.</l>
+        <l>
+          <lb /> XV. Centurie.</l>
+        <l>
+          <lb />Vn ieune courage imdomptable,</l>
+        <l>
+          <lb />Pour quelque eſchet ſera ſurpris,</l>
+        <l>
+          <lb />Mais ſa paſſience admirable,</l>
+        <l>
+          <lb />Sur tout emportera le pris.</l>
+        <l>
+          <lb /> XVI. Centurie.</l>
+        <l>
+          <lb />L’innocence eſtant reconnuë,</l>
+        <l>
+          <lb />Pat lai reuolution du temps,</l>
+        <l>
+          <lb />La liberté ſera rendü,</l>
+        <l>
+          <lb />A ceux qu’onnommoit malcontemps¬</l>
+        <l>
+          <lb />XVII. Centurie.</l>
+        <l>
+          <lb />Qui na point en ſes faits de fidelle prudence,</l>
+        <l>
+          <lb />Ne peur auoir auſſi d’aucun bien l’aſſiſtance,</l>
+        <l>
+          <lb />Et qui ne ſçait iuger des mal-heur auenir,</l>
+        <l>
+          <lb />Ne pourra d’aucun heur ſes iours entretenir.</l>
+        <l>
+          <lb />r71J</l>
+        <l>
+          <lb /> XVIII. Cenurie.</l>
+        <l>
+          <lb />Il n’eſt point de fureur tant ſoit elle petite,</l>
+        <l>
+          <lb />En ces affections que nos eſprits n’agiſte,</l>
+        <l>
+          <lb />Et les viues fureurs nous rauiſſent a nous,</l>
+        <l>
+          <lb />Pour ſur nous exeicer l’éfort de leurs cou¬</l>
+        <l>
+          <lb />roux..</l>
+        <pb n="9" />
+        <l>
+          <lb /> XIX. Cenmturia.</l>
+        <l>
+          <lb />Lors que moins on y ſongera</l>
+        <l>
+          <lb />Dans la France naiſtra vn Prince,</l>
+        <l>
+          <lb />Qui de beaucoup reſiouyra,</l>
+        <l>
+          <lb />Les ſubjects de c’eſte Prouince.</l>
+        <l>
+          <lb />.l</l>
+        <l>
+          <lb />XX. Cenrurie.</l>
+        <l>
+          <lb />Tout ate qui n’eſt pas garny de la Iuſtice, </l>
+        <l>
+          <lb />Bien qu’aparant parfait en effet n’eſt que vice</l>
+        <l>
+          <lb />Et tout ce qu’onarraſche a laſte équité,</l>
+        <l>
+          <lb />Eſt tout plein de fureur ou plein de cruauté.</l>
+        <l>
+          <lb /> XXI. Censurl</l>
+        <l>
+          <lb />Oüy, il faut oppoſer le pouuoir a la force,</l>
+        <l>
+          <lb />Affin de l’empeſcher que fierre elle nous fpree</l>
+        <l>
+          <lb />Le fer combat le fer, &amp; chacun ſans mechef</l>
+        <l>
+          <lb />Peut repouſſer le traict qui deſſad ſur ſon </l>
+        <l>
+          <lb />aſele oun e onoue</l>
+        <l>
+          <lb />Des grabuges de France,</l>
+        <l>
+          <lb />Puis que leurs bons deſtins,</l>
+        <l>
+          <lb />Vous pronmettent ſouffrance</l>
+        <l>
+          <lb />XXIII. enturie.</l>
+        <l>
+          <lb />Non nul ne fuſt iaais &amp; nul n’eſt pas en¬</l>
+        <l>
+          <lb />(cores,</l>
+        <l>
+          <lb />.</l>
+        <l>
+          <lb />Pareil àt*t au bon heur qui l’honores</l>
+        <l>
+          <lb />Non pas vn ne viura qui luy reſemble vn iour</l>
+        <l>
+          <lb />Puis que rien ne reſemble a ſa gloire &amp; amour,</l>
+        <l>
+          <lb />XXIN Centunier</l>
+        <l>
+          <lb />Nonceluy laaſſ ne peut eſtre astu i</l>
+        <l>
+          <lb />¬</l>
+        <pb n="10" />
+        <l>
+          <lb />S</l>
+        <l>
+          <lb />De cent calamitez qui combats la vertu,</l>
+        <l>
+          <lb />Qui offenſe l ’honneur, &amp; luy eſme prius.</l>
+        <l>
+          <lb />Par ſon cruël peche d ſon amitié vifue.</l>
+        <l>
+          <lb />XXV. Cnturie.</l>
+        <l>
+          <lb />Puis que tout e qui viſt comme ſerf du</l>
+        <l>
+          <lb />(malheur,</l>
+        <l>
+          <lb />N’en ſç̧auroit eſviter la picquante douleur,</l>
+        <l>
+          <lb />Faut eſfayer ces feux &amp; courir ſonorage,</l>
+        <l>
+          <lb />Qui ſouuent nous accable en la fleur de noſtre</l>
+        <l>
+          <lb />leſie us oueuli ſ eui ie iae</l>
+        <l>
+          <lb />Fait plus en ces projects que la vifue proü¬</l>
+        <l>
+          <lb /> eſſe,</l>
+        <l>
+          <lb />Et ce braue Heros qui a tout ſurmonté,</l>
+        <l>
+          <lb />Dans vn traiſtre fillet eſt enfin arreſt́.</l>
+        <l>
+          <lb />XXVI. Centurie.</l>
+        <l>
+          <lb />Si d’vn cœur genereux la parolle hautaine,</l>
+        <l>
+          <lb />Qui s’adreſſe a quelqu’vn eſt vne Loy çertaine.</l>
+        <l>
+          <lb />A qui ce ſent loüé de ſa diuine voix,</l>
+        <l>
+          <lb />Acquiers vn riche honneur qui ne mourra</l>
+        <l>
+          <lb /> iamais.</l>
+        <l>
+          <lb /> XXVIII. Cnrurie.</l>
+        <l>
+          <lb />Mellieurs eſt le ſecours durant l’extremité,</l>
+        <l>
+          <lb />Que celuy qui nous vient hors la neceſſité,</l>
+        <l>
+          <lb />Plus le’peril eſt grandplus riche eſt laCourone</l>
+        <l>
+          <lb />Et le bien qui nous oſte a ſa rage felonne.</l>
+        <l>
+          <lb />XXVIV. enturie</l>
+        <l>
+          <lb />Puis que l’amy parfait eſt vn ſeond nous</l>
+        <l>
+          <lb />meſme,</l>
+        <pb n="11" />
+        <l>
+          <lb />9</l>
+        <l>
+          <lb />Il faut tout eſperer de ſonamour extreſme .</l>
+        <l>
+          <lb />S’attendre tout a luy &amp; croireque noſtrefheur,;</l>
+        <l>
+          <lb />Eſt ſon bien plus heureux &amp; ſon plus riche</l>
+        <l>
+          <lb />honneur.</l>
+        <l>
+          <lb /> X X X. Centurie.</l>
+        <l>
+          <lb />Le bon Dieu, le Dieu ſaintt, le grand Dieu</l>
+        <l>
+          <lb /> de Nature,</l>
+        <l>
+          <lb /> e1.</l>
+        <l>
+          <lb />A de ſes bien aimez touſiouts ſoigneuſe cure,</l>
+        <l>
+          <lb />Ne les quitte iamais il rencontre touſiours,</l>
+        <l>
+          <lb />En leurs extremitez propiſce ſon ſecours.</l>
+        <l>
+          <lb />2 XXXI Centurie.</l>
+        <l>
+          <lb />Il n’eſt point de douceur qui reſembleau</l>
+        <l>
+          <lb />plaiſir,</l>
+        <l>
+          <lb />Qu’on a d’auoita plain le fruit de ſon deſir,</l>
+        <l>
+          <lb />C’eſt le comble du bien ous noſtre eſpritaſpire,</l>
+        <l>
+          <lb />Et que pour bien parfais noſtre vouloir deſire</l>
+        <l>
+          <lb />XXXII. Centurie.</l>
+        <l>
+          <lb />Malhureux en celuy qu’ils contẽple l’orage.</l>
+        <l>
+          <lb />Et ne veut l’euiter pour plaire a ſon courage,</l>
+        <l>
+          <lb />Bieh-heureux eſt eeluiy qui s’echappe a pro¬</l>
+        <l>
+          <lb />Du danger qui vouloit ruiner ſon repos. (pos,</l>
+        <l>
+          <lb />XXXIH. Centurie.</l>
+        <l>
+          <lb />Tel qui ſouffre en l’effet du naturel deuoir,</l>
+        <l>
+          <lb />Fldelle &amp; courageux aux hommes ſe fait voir,</l>
+        <l>
+          <lb />Sa peine a la parfin luy redonde en Couronne,</l>
+        <l>
+          <lb />Et entre mille honneurs le ſien diuin ſteurõne.</l>
+        <l>
+          <lb />XXXIV. Centurie.</l>
+        <l>
+          <lb />Oüy le Peuple ignorant admire l’exellence,</l>
+        <l>
+          <lb />Du fait qu’il ne peut faire en ſa foible puiſfance</l>
+        <l>
+          <lb />C</l>
+        <pb n="12" />
+        <l>
+          <lb /> 10</l>
+        <l>
+          <lb />S’eſtonne de le voir car diuin le fait voir,</l>
+        <l>
+          <lb />Toutatte qui ſurpaſſe enluy noſtrepouuoir.</l>
+        <l>
+          <lb />rXxX. Centurie.</l>
+        <l>
+          <lb />Comme le fol amour foulle toute Iuſtice,</l>
+        <l>
+          <lb />Et rend ſerues les Loix a ſa fiere malice,</l>
+        <l>
+          <lb />Il ns reſpecte rieiquſacriielle ardeur, (teur.</l>
+        <l>
+          <lb />Qui le rend bien ſouuent de cent orimes l’hau¬</l>
+        <l>
+          <lb /> s XVMle ouree.</l>
+        <l>
+          <lb />Le mal pourſuit le hien &amp; le bien l’infortune</l>
+        <l>
+          <lb />Selon qu’ilplaipyaux yents de la dame fortune</l>
+        <l>
+          <lb />Qui legere incertaine &amp;ſats atre arreſté,</l>
+        <l>
+          <lb />Gouucrhtotout aux cursdéſalegereté.</l>
+        <l>
+          <lb />XXXVII. Centurie.</l>
+        <l>
+          <lb />Heureuſe’mille fois ce peut proclamer l’ame</l>
+        <l>
+          <lb />Qui parfait ſndeſir horsla frayeur dublame,</l>
+        <l>
+          <lb />ui p’a point de ſoupſon que le fier déhon¬</l>
+        <l>
+          <lb />neur,</l>
+        <l>
+          <lb />¬ </l>
+        <l>
+          <lb />Iache de ſes effets la pudicque candeur.</l>
+        <l>
+          <lb /> XXXVIII. Centurie..</l>
+        <l>
+          <lb />Oüy il faut qu’yne force orgueilleuſe en ſa</l>
+        <l>
+          <lb />force,.</l>
+        <l>
+          <lb />Par vn autre pouuoir inſollamment s’efforce,</l>
+        <l>
+          <lb />Et tout ſuiet puiſſant ne change pas deſort,</l>
+        <l>
+          <lb />Sans ſentir la fureur d’vneſclatant effort.</l>
+        <l>
+          <lb />XXXIX. Centurie.</l>
+        <l>
+          <lb />Que celuy iuſtement par la peyne periſſe,</l>
+        <l>
+          <lb />Qui auoit contre autruy inuentée en ſon viſſe,</l>
+        <l>
+          <lb />Et que lemeſme fer du meſchant ayguiſe,</l>
+        <l>
+          <lb />Pertce ſon ſeiicruël de fureurattiſe.</l>
+        <pb n="13" />
+        <l>
+          <lb />-X L. centurie.</l>
+        <l>
+          <lb />S’il qui eontre quelqu’vn veut ayguiſer ſa</l>
+        <l>
+          <lb /> l’ame,</l>
+        <l>
+          <lb />Iuſtement va reſſeu, la pointe qui l’entame,</l>
+        <l>
+          <lb />Car iuſte eſt le tourment contre autruy pout</l>
+        <l>
+          <lb />penſé,</l>
+        <l>
+          <lb />Qui nous eſt ſur le chef par autruyrelanſé.</l>
+        <l>
+          <lb /> X LI. Centurie.</l>
+        <l>
+          <lb />Non les ames qu’amour à fermement liez,</l>
+        <l>
+          <lb />Ne peuuent iamais eſtre au monde deſliez,</l>
+        <l>
+          <lb />Il y viuent contents aux frutsde leurs enuie,</l>
+        <l>
+          <lb />Ou d’vn meſme vouloir ils ſortent de la vie.</l>
+        <l>
+          <lb /> X LIl. erie.</l>
+        <l>
+          <lb />Son malheur auſſi fot que ceſte loy diuine,</l>
+        <l>
+          <lb />N’a iamais abſenté ſa fatalle ruyne,</l>
+        <l>
+          <lb />Il l’a touſiours ſuyuie &amp; ce l’angoureux ſort,</l>
+        <l>
+          <lb />Ne doit comme ie eroy le quitter qu’à la mort.</l>
+        <l>
+          <lb />X LIII. Centurie.</l>
+        <l>
+          <lb />Oüy la neceſſité nous ouure le courage,</l>
+        <l>
+          <lb />A porter conſtemment le ſuruenu dommage,</l>
+        <l>
+          <lb />Et la prudence agiſtaux deffaux du pouuoir,</l>
+        <l>
+          <lb />A fin de receuoir les cents en leurs deuoir.</l>
+        <l>
+          <lb />XLIV. Centnrie.</l>
+        <l>
+          <lb /> L’on voit le plus ſouuent vne cauſe petite,</l>
+        <l>
+          <lb />Alumer vn grand feu que la fureur excide,</l>
+        <l>
+          <lb />Car le courage ardent ſemeut a peu de vent,</l>
+        <l>
+          <lb />Et le mortel peril il meſpriſeſouuent.</l>
+        <l>
+          <lb />XLV. Centunrie.</l>
+        <l>
+          <lb />On blafme le yainc a faute de promeffe,</l>
+        <pb n="14" />
+        <l>
+          <lb />12</l>
+        <l>
+          <lb />Et non celuy qui l’eſt par iniuſte fineſſe,</l>
+        <l>
+          <lb />Car l’honneur ſeullement ſuit la’prôpre vertu,</l>
+        <l>
+          <lb />Non la deſloyauté qui l’aſche a cohbadtu.</l>
+        <l>
+          <lb /> XLVI. Centur!e</l>
+        <l>
+          <lb />Le grand Dieu qui maintient la Iuſtice Di¬</l>
+        <l>
+          <lb />Empeſche les effets de ſa paſſe ruyne, (uine,</l>
+        <l>
+          <lb />Retient la main du traiſtre &amp; eſmouce ſon fer,</l>
+        <l>
+          <lb />Ce faiſant bien ſouuent deualler en eafer.</l>
+        <l>
+          <lb />LVI1. Ce nturie.</l>
+        <l>
+          <lb />Les Agneaux tendrelets viuentenaſſeurãce,</l>
+        <l>
+          <lb />Voyant mourir les loups dans les peynes &amp;</l>
+        <l>
+          <lb />ſouffrance,</l>
+        <l>
+          <lb />Et la Caille repoſe aux furieux combat,</l>
+        <l>
+          <lb />Des coqs qu’ils l’ont battuë &amp; fait ſon eſbat.</l>
+        <l>
+          <lb />x ivIII. Centurie.</l>
+        <l>
+          <lb /> L’heure diuerſe fois finiſſoit ſon deſir,</l>
+        <l>
+          <lb />Et de contraire faits il formoit ſonplaiſir,</l>
+        <l>
+          <lb />MaisDieu briſe touſiours du feu de ſa tempeſte.</l>
+        <l>
+          <lb />Le deſſein qui n’eſt iuſte nyſaintement hõneſte.</l>
+        <l>
+          <lb />XLIX. Centurie.</l>
+        <l>
+          <lb />Meurent donc iuſtemẽt au fort de leurs malice</l>
+        <l>
+          <lb />Ceux qu’ils veuille meurdrir l’innocent par</l>
+        <l>
+          <lb />leurs vice,</l>
+        <l>
+          <lb />Et que leurs propre fer contre iceux ayguiſé,</l>
+        <l>
+          <lb />De frapper leurs poitrine ores paroiſſe vzé.</l>
+        <l>
+          <lb />L. Centurie.</l>
+        <l>
+          <lb />Oüy le commencément d’vnouurage entre¬</l>
+        <l>
+          <lb />pris,</l>
+        <l>
+          <lb />Selon noſtre deſir reſioûys noseſprits,</l>
+        <l>
+          <lb />Les</l>
+        <pb n="15" />
+        <l>
+          <lb />11</l>
+        <l>
+          <lb />Les aſſura la fin qui ſoulond’ordinaire,</l>
+        <l>
+          <lb />Suit le cõmencement ou mauuais ou proſpere.</l>
+        <l>
+          <lb />L lI. Centurie.</l>
+        <l>
+          <lb />C’eſt noliſe d’vname oufolle oumal apriſe,</l>
+        <l>
+          <lb />Delaiſſer imparfaite vnechaſeemtrepriſe,</l>
+        <l>
+          <lb />La fin eſt plus loüable encor que ſans heur,</l>
+        <l>
+          <lb />Queſon departement pour eſtre ſans honneur.</l>
+        <l>
+          <lb />LI I. Centurie.</l>
+        <l>
+          <lb />o de denrbienaeguuron ne ſȩait leque</l>
+        <l>
+          <lb />Et de deux maux pareils vers lequel ſe deffẽ̃dre</l>
+        <l>
+          <lb />On reſte ireſolu &amp; celuy n’a repos,</l>
+        <l>
+          <lb />Qui n’a rien d’areſté enfaits, &amp; en propos.</l>
+        <l>
+          <lb /> LIII. Centurie.</l>
+        <l>
+          <lb />Toute choſe ce fait encore que difieille,</l>
+        <l>
+          <lb />Par laide du Conſeil ſalurtaire &amp; vtille,</l>
+        <l>
+          <lb />Et rien n’eſt differé qui reſoit la raiſon,</l>
+        <l>
+          <lb />Pour eſtre de ſon mal l’heureuſe guariſon.</l>
+        <l>
+          <lb /> LIV. Centurie.</l>
+        <l>
+          <lb />La pluye &amp; eſclaire vifſont teſmoings des</l>
+        <l>
+          <lb /> empeſtes,</l>
+        <l>
+          <lb />Qui roüllent fierement ſur nos coupable teſtes</l>
+        <l>
+          <lb />Et les pleurs &amp; les cris content pareillement,</l>
+        <l>
+          <lb />Les ardeurs qui ont vie en noſtre afſpre tour¬</l>
+        <l>
+          <lb />ment.</l>
+        <l>
+          <lb /> LV. Centurie.!</l>
+        <l>
+          <lb />Non il n’eſt point de mal plus ſerfdu vitu¬</l>
+        <l>
+          <lb />pere,</l>
+        <l>
+          <lb />Que celuy qui par nous paroiſt à la lumiere,</l>
+        <pb n="16" />
+        <l>
+          <lb />14</l>
+        <l>
+          <lb />Et deceller ſon crime eſt deſapropre mai,</l>
+        <l>
+          <lb />Se liurer au meſpris &amp; au blaſme inhaumain.</l>
+        <l>
+          <lb />LVI. Ceuturie.</l>
+        <l>
+          <lb />Car nul ne peut marcher és voyes de iuſtice</l>
+        <l>
+          <lb />Qui porte ſur ſon front eſcritte ſa malice,</l>
+        <l>
+          <lb />Dautant que ceſte Dame enpunit le forfait,</l>
+        <l>
+          <lb />Et ne veut rien ſouffrir qui ne ſoit tout parfait.</l>
+        <l>
+          <lb />LVII: Centuirie.</l>
+        <l>
+          <lb />Oüy vnchaeun ſe croit de luy meſme ſi ſage,</l>
+        <l>
+          <lb />Que na beſoing d’autruy d’auis ny de langages</l>
+        <l>
+          <lb />Pour faire ce quel veut &amp; quelrepenſſe en ſoy,</l>
+        <l>
+          <lb />Conforme au iuſtes vueil de lequitable loy.</l>
+        <l>
+          <lb /> LVIII. Centurie.</l>
+        <l>
+          <lb />Celuy la meurt cent fois veuf d’honneur &amp;</l>
+        <l>
+          <lb />de ioye,</l>
+        <l>
+          <lb />Qui ne vit que pour eſtre à la douleur en proye,</l>
+        <l>
+          <lb />Car la mort n’eſt point mort ains la vefue dou¬</l>
+        <l>
+          <lb />leur,</l>
+        <l>
+          <lb />( cœur.</l>
+        <l>
+          <lb />Qui plus fort que la mort, poinçonne noſtre</l>
+        <l>
+          <lb />LIX. Centnrie.</l>
+        <l>
+          <lb />L’on ſe rid ſort de ceux qui faute de prudenſe</l>
+        <l>
+          <lb />Ce qu’il ont entrepris, ne mettent en éuidenſe,</l>
+        <l>
+          <lb />Qui demeure ſans cœur a pourſuiure l’effait,</l>
+        <l>
+          <lb />qu’ils auoient entrepris pour le rendre parfait.</l>
+        <l>
+          <lb />LX. Centurie</l>
+        <l>
+          <lb />Quiconque ſe reſout de courir à la Parque,</l>
+        <l>
+          <lb />N’a plus ſoucy du mal qui en viuant l’ataque,</l>
+        <l>
+          <lb />Il ne ſonge qu’à l’heur qu’il eſperent trouuer</l>
+        <l>
+          <lb />En ce remede heureux qui deſire eſprouuer.</l>
+        <pb n="17" />
+        <l>
+          <lb />1.</l>
+        <l>
+          <lb /> r1</l>
+        <l>
+          <lb />LXI. Centurie</l>
+        <l>
+          <lb />Comme vn deſeſperé ne ſent pas autre bien</l>
+        <l>
+          <lb />Que viure ſans attente &amp; n’eſperent plus rien,</l>
+        <l>
+          <lb />Comme il va que ſe ſoit à conduire ſa vie,i</l>
+        <l>
+          <lb /> En luy toutſeul auſſiſon attente eſtrauie.</l>
+        <l>
+          <lb />LXII. Centurie.</l>
+        <l>
+          <lb />S’il veut paruenir aux fins de ſon courage,</l>
+        <l>
+          <lb />Ne doit rien eſpargner de propre à ſon ou</l>
+        <l>
+          <lb /> urage;</l>
+        <l>
+          <lb />Il faut tout émployer car ſoauentpar hazard,</l>
+        <l>
+          <lb />L’on trouue le remede bienpluroſt que par l’art.</l>
+        <l>
+          <lb />LXXIII. Centurie.</l>
+        <l>
+          <lb />L’on he peutpas rier auxohemnin: dépan¬</l>
+        <l>
+          <lb />denſe,</l>
+        <l>
+          <lb />Qui chaſſe noſtre mal &amp; noſtre bien aduanſe,</l>
+        <l>
+          <lb />Le Conſeil eſt ſouuent autheur deriche bien,</l>
+        <l>
+          <lb />Qui nous arriue alors que nous n’eſperons rien</l>
+        <l>
+          <lb /> 1</l>
+        <l>
+          <lb />LXIV. Centurie</l>
+        <l>
+          <lb />Ouy, l’eſtat des grands, &amp; leurs gloires Eter¬</l>
+        <l>
+          <lb /> (idelles</l>
+        <l>
+          <lb /> nelles,</l>
+        <l>
+          <lb />Se maintiennent en bon-heur par leurs ſubjets</l>
+        <l>
+          <lb />Viuent en leurs vigueur &amp; le Prince plus fort</l>
+        <l>
+          <lb />Tire de ſes ſujets ſon aſſuré ſupport.</l>
+        <l>
+          <lb />LXV. Centurie.</l>
+        <l>
+          <lb /> Si le double mal-iurdoublement nous ou¬</l>
+        <l>
+          <lb /> ge</l>
+        <l>
+          <lb /> trage2</l>
+        <l>
+          <lb />Vn double coup du Ciel double noſt doma¬</l>
+        <l>
+          <lb />ais ces doubles meſehefs quinousvont pou¬</l>
+        <l>
+          <lb />ſuiuant</l>
+        <pb n="18" />
+        <l>
+          <lb />16</l>
+        <l>
+          <lb />A nous faire perit s’entrenuiſent ſouuent.</l>
+        <l>
+          <lb />LXVI. enturie?</l>
+        <l>
+          <lb />Non en amour rien n’eſt ſi neceſſaire,</l>
+        <l>
+          <lb />Que ſçauoir biea deſguiſer &amp;ſtaire,</l>
+        <l>
+          <lb />Qui n’a ces deux pour aydoien ſonifait</l>
+        <l>
+          <lb />Ne peut auoir aucun plaiſir parfaict.</l>
+        <l>
+          <lb />LXVII. Centurie.</l>
+        <l>
+          <lb /> Les plus grands ennemis font la grandeVictoire</l>
+        <l>
+          <lb />Et qui vinc peu de cas Remporte peudeGloire,</l>
+        <l>
+          <lb />La celebre vertu qui vifue ce fait voir,</l>
+        <l>
+          <lb />Aux difieilles faits exerce ſon pouuoir.</l>
+        <l>
+          <lb />LXVIII. Centurie.</l>
+        <l>
+          <lb />Bien plus douceeſt la mort qui tuë noſtre peine</l>
+        <l>
+          <lb />Que la vie animée à la mortelle hayne,</l>
+        <l>
+          <lb />Et qui vis pour mourir au fort de la douleur,</l>
+        <l>
+          <lb />Eſt cruel meurtrier de ſon heureux bon heur.</l>
+        <l>
+          <lb />1 LXIX. Centurie</l>
+        <l>
+          <lb />Otres-heureux Combat dont la belle Vi¬</l>
+        <l>
+          <lb />Ioyent à lutilité la deſirable Gloire, (̃ire</l>
+        <l>
+          <lb />Qui cotents nous fait eſtre au feſte de bonheur</l>
+        <l>
+          <lb />Amaſſant cherement e’eſt hõnorablehueur.</l>
+        <l>
+          <lb />LXX. Centurie.</l>
+        <l>
+          <lb />Quand noſtre eſprit conduit du flambeau de</l>
+        <l>
+          <lb />l’Amour,</l>
+        <l>
+          <lb />Court vers la choſe aymée &amp; la nuict &amp; le iour</l>
+        <l>
+          <lb />Ne cherche que le bien comme fait hors d’ha¬</l>
+        <l>
+          <lb /> laine,</l>
+        <l>
+          <lb />Le Cerfchaſſé des chiens l’agreable Fontaine.</l>
+        <l>
+          <lb /> xm1.</l>
+        <pb n="19" />
+        <l>
+          <lb />17</l>
+        <l>
+          <lb />LX XI. Centurie.</l>
+        <l>
+          <lb />Comme l’extremité apparoiſt furieuſe,</l>
+        <l>
+          <lb />Oſaoülle l plaiſir viuement amoureuſe,</l>
+        <l>
+          <lb />Il n’eſt point de milieu en la neceſſité,</l>
+        <l>
+          <lb />Et la force forcée oſte la liberte.</l>
+        <l>
+          <lb />LXXII. Centurie.</l>
+        <l>
+          <lb />Si la grandeur du cœur du vaillant &amp; du ſage,</l>
+        <l>
+          <lb />Parfait ſon action en celle du naufrage,</l>
+        <l>
+          <lb />La valleur ne reluit qu’en l’obſcur tenebreux,</l>
+        <l>
+          <lb />Du danger qui paroiſt effroyable à nosyeux.</l>
+        <l>
+          <lb />LXXIII. Centnrie.</l>
+        <l>
+          <lb />Toute loüange doit pour ſe eſtre priſée,</l>
+        <l>
+          <lb />Qui ſort d’vne ame iuſte, &amp; d’hõneur embraſée</l>
+        <l>
+          <lb />Qui cognoiſt le merite, &amp; ne le chante pas,</l>
+        <l>
+          <lb />Pour aucun riche bien qui demande icy bas.</l>
+        <l>
+          <lb />LXXl. Centurie.</l>
+        <l>
+          <lb />Le ſeul temperenment de deux choſes con¬</l>
+        <l>
+          <lb />traires,</l>
+        <l>
+          <lb />Eſt heureux aux mortels, &amp; ces faits neceſſaires</l>
+        <l>
+          <lb />Comme on ſent la douleur que pour courtoiſe</l>
+        <l>
+          <lb />ilfaut,</l>
+        <l>
+          <lb />De l’haleyne de l’air qui n’eſt ny froid ny chaut.</l>
+        <l>
+          <lb />LXXV. Centurie.</l>
+        <l>
+          <lb />Les eſprits ne ſont faits que pour eſtte agi¬</l>
+        <l>
+          <lb />ſtez,</l>
+        <l>
+          <lb />De milles vains deſirs &amp; vaiſnes volontez,</l>
+        <l>
+          <lb /> Et comme ils ſont diuins diuins auſſi leurs reſte</l>
+        <l>
+          <lb />L-es diuers mouuements qui ſans fin les mo¬</l>
+        <l>
+          <lb /> ele.</l>
+        <l>
+          <lb />E</l>
+        <pb n="20" />
+        <l>
+          <lb />18</l>
+        <l>
+          <lb />LXXVI. ſenturie.</l>
+        <l>
+          <lb />y rrr</l>
+        <l>
+          <lb />¬</l>
+        <l>
+          <lb />Non celuy nerre point qui en ſon entrepriſs,</l>
+        <l>
+          <lb />Le ſeulle verité pour ſa condultté a priſe,</l>
+        <l>
+          <lb />Et qui voit deuant’luy’aux rayons du Soleil,</l>
+        <l>
+          <lb />Ne peut broncher du pied encontre quelques</l>
+        <l>
+          <lb />eſcuieil.</l>
+        <l>
+          <lb /> LXXVII. Centurie.</l>
+        <l>
+          <lb />Vn homme reſolu eſt touſiours miſerable,</l>
+        <l>
+          <lb />Car la diuerſité de ſes projets l’aceable,</l>
+        <l>
+          <lb />Et qui d’vn droit chemin ſon voyage ne fait,</l>
+        <l>
+          <lb />Et change de ſantier peines le parfait.</l>
+        <l>
+          <lb /> r7Y3</l>
+        <l>
+          <lb /> LXXVII. Centuri</l>
+        <l>
+          <lb />Si l’homme na plus rien qui le faſſe paroiſtre</l>
+        <l>
+          <lb />Sans la vertu pour guyde &amp; l’honneur pour ſon</l>
+        <l>
+          <lb />maiſtre,</l>
+        <l>
+          <lb />Dautant que de ces deux ſalume le flambeau,</l>
+        <l>
+          <lb />Qui de lhomme honore les iours &amp; le tom¬</l>
+        <l>
+          <lb />beau.</l>
+        <l>
+          <lb />J rJ </l>
+        <l>
+          <lb /> LXXlX. Centurie.</l>
+        <l>
+          <lb />Oüy celuy meurt heureux qui par la mort</l>
+        <l>
+          <lb />contente,</l>
+        <l>
+          <lb /> Et ſon ardente amour &amp; ſa vertu luyſante,</l>
+        <l>
+          <lb />Et le tõbeau qu’amour &amp; l’honneur ont parfait,</l>
+        <l>
+          <lb />Ne peut eſtre du temps iniurieux d’effair.</l>
+        <l>
+          <lb />LXXX. Centurie.</l>
+        <l>
+          <lb />Si de trois ennemis vn tout ſeul combatu,</l>
+        <l>
+          <lb />Suſcombe bien ſouuent de force &amp; de vcrtu,</l>
+        <l>
+          <lb />Et deux chaiſnes pouſez ſur vn qui les voyſine,</l>
+        <l>
+          <lb />Le renuerſent auſſi &amp; cauſe ſa ruyne.</l>
+        <pb n="21" />
+        <l>
+          <lb />19</l>
+        <l>
+          <lb /> J</l>
+        <l>
+          <lb />LXXXI. Centurie.</l>
+        <l>
+          <lb /> Oùy l’autheur du forfait en merite la peine.</l>
+        <l>
+          <lb />Non celuy quine veut que la rendre plus vaine</l>
+        <l>
+          <lb />Et qui deffend autruy pour ce bien ne doit pas,</l>
+        <l>
+          <lb />Participer au ſort de ſon iuſte trepas.</l>
+        <l>
+          <lb /> LXXXII. Centurie.</l>
+        <l>
+          <lb />Non l’on ne doit iamais faire reffus de l’aide</l>
+        <l>
+          <lb />De ce qui peut donner a nos trauaux remede,</l>
+        <l>
+          <lb />Faut prendre le ſecours qui ſe preſente doux,</l>
+        <l>
+          <lb />Qui ne s’eſloigne apres trop promptement de</l>
+        <l>
+          <lb />nous.</l>
+        <l>
+          <lb /> LXXHI2 pturie.</l>
+        <l>
+          <lb />Cruëlle deſtinée quelle fierre ſemonce,</l>
+        <l>
+          <lb />Puis que ſans nul eſpoir eſtoit c’eſte reſponce,</l>
+        <l>
+          <lb />Dieu qui reſoit aduis contraire a ſon deſir,</l>
+        <l>
+          <lb />Reſoit l’eſloingnemẽt de ſonplus doux plaiſir.</l>
+        <l>
+          <lb /> LXXXIV Centurie.</l>
+        <l>
+          <lb />iEl</l>
+        <l>
+          <lb />Ce qui nous eſt vtille &amp; neceſſaire,.</l>
+        <l>
+          <lb />Nous ſemble il bien qu’aux loix aduerſaire,</l>
+        <l>
+          <lb />Car ohaeun veut impoſer a par ſoy;</l>
+        <l>
+          <lb />A tous effets ſa volonté pour loyj.</l>
+        <l>
+          <lb /> LXXXV. Centurie.</l>
+        <l>
+          <lb />Tout comme ſont diuers les effets de nature,</l>
+        <l>
+          <lb />Diuerſement auſſi leurs bien fait og procure,</l>
+        <l>
+          <lb />Diuers honneurs nous font diuerſement cherir</l>
+        <l>
+          <lb />Et diuerſes douleurs cruellement mourir.</l>
+        <l>
+          <lb /> LxXXxV. Centurie.j</l>
+        <l>
+          <lb /> L’trompe ayſement celuy la qui ſe lie,</l>
+        <l>
+          <lb />A la palle trahyſon &amp; point ne ſe deffje,</l>
+        <pb n="22" />
+        <l>
+          <lb />20</l>
+        <l>
+          <lb />Puis que la deffiance eſt l’aſſuré ſuport,</l>
+        <l>
+          <lb />De nos iours de nos ans contre la fiere mort.</l>
+        <l>
+          <lb /> LxXv1. Centurie.</l>
+        <l>
+          <lb /> Oüy les infortunez cherehent a leurs miſere</l>
+        <l>
+          <lb />Affin de l’endormir quelque bois ſolitaire,</l>
+        <l>
+          <lb />Quelque triſte deſert pour n’eſtre point tirez,</l>
+        <l>
+          <lb />Du penſer des trauaux dont ils ſont martirez.</l>
+        <l>
+          <lb /> LXXXVIII. Centurie.</l>
+        <l>
+          <lb />Non bien ſouuent la voix n’eſt aux deſir s’em¬</l>
+        <l>
+          <lb />blable,</l>
+        <l>
+          <lb />Et le front paroiſtre quay dont l’ame eſt miſe¬</l>
+        <l>
+          <lb />rable,</l>
+        <l>
+          <lb />L’eſcorce ne reſenble a la douleur du fiuit,</l>
+        <l>
+          <lb />Que ſe Soleil dans elle heureuſement a cuit.</l>
+        <l>
+          <lb /> LxxXiX. Centurie.</l>
+        <l>
+          <lb />Miſerable qui vit &amp; qui viuant n’eſpere,</l>
+        <l>
+          <lb />Que la mort pour tuer ſa cruëlle miſere,</l>
+        <l>
+          <lb />Miſerable qui vit combatant iour &amp; nuit,</l>
+        <l>
+          <lb />L’immortel douleur quitouſiours le pourſuit.</l>
+        <l>
+          <lb />LXXXxX. Centurie.</l>
+        <l>
+          <lb />Auſſi le plus ſouuent au cours de noſtre vie,</l>
+        <l>
+          <lb />Indignes de tous biens nous rend noſtre folye,</l>
+        <l>
+          <lb />Anenent ſur nos chefs le celeſte couroux,</l>
+        <l>
+          <lb />De’tous lésfouuerains indignez contre nous.</l>
+        <l>
+          <lb /> LXXXXI. Centurie.</l>
+        <l>
+          <lb /> Les reſolus au mal ne demande perſonne,</l>
+        <l>
+          <lb /> Qui de penſer au mal promptementedes de¬</l>
+        <l>
+          <lb />toune,</l>
+        <l>
+          <lb />Ils</l>
+        <pb n="23" />
+        <l>
+          <lb />Ils veuillent ſeuls ſi rendre &amp; les infortunez,</l>
+        <l>
+          <lb />Veuillent viure en malheur comme mal ils ſont</l>
+        <l>
+          <lb />nez.</l>
+        <l>
+          <lb />LXXXXII. Centurie.</l>
+        <l>
+          <lb /> Oüy il faut quelque fois diſimuler de ſorte,</l>
+        <l>
+          <lb />Qu’on n’apperſoiuent pas l’horreur qui nous</l>
+        <l>
+          <lb />tranſporte,</l>
+        <l>
+          <lb />Faut eouurir ſon forfait ſinon de paſſion,</l>
+        <l>
+          <lb />Paroiſtre aux mortels tout autre d’action.</l>
+        <l>
+          <lb />LXXXXIII. Centurie.</l>
+        <l>
+          <lb />Tout eſt ſuiet à la mort toute douleur mor¬</l>
+        <l>
+          <lb />telle,</l>
+        <l>
+          <lb />Bien que fiere enrigueur ſe termine par elle,</l>
+        <l>
+          <lb />Et hors de ſentiment de nos humains trauaux,</l>
+        <l>
+          <lb />Sont les corps enchaſſez aux funeſtes tom¬</l>
+        <l>
+          <lb />beaux.</l>
+        <l>
+          <lb /> LXXXXIV. Centurie.</l>
+        <l>
+          <lb />En vain celuy va contre le deſtin,</l>
+        <l>
+          <lb />i d̂it de l’vn voulant faire de l’autre,</l>
+        <l>
+          <lb />En vain fait il le meſchant &amp;mutin,</l>
+        <l>
+          <lb />Onle connoiſt pour vntreiſieſme Apoſtre.</l>
+        <l>
+          <lb />LXXXXV. centurie.</l>
+        <l>
+          <lb />Quand l’on contera ſoixante &amp; vnze &amp; trois,</l>
+        <l>
+          <lb />Vn cas ſubtil l’on verra admirable,</l>
+        <l>
+          <lb />D’vn fauory vn grand Roy fera choix,</l>
+        <l>
+          <lb />3</l>
+        <l>
+          <lb />En l’eſleuant aux charges honorable.</l>
+        <l>
+          <lb />LXXXXVI. Centurie.</l>
+        <l>
+          <lb />De peu parler quelques fois il eſt te mps,</l>
+        <l>
+          <lb />Car trop parler ſouuent porte nuiſſance,</l>
+        <pb n="24" />
+        <l>
+          <lb />22</l>
+        <l>
+          <lb />Pour ſe ſubjet quelque vns malcontants,</l>
+        <l>
+          <lb />Sopourront voir dans la peine &amp; ſouffrance.</l>
+        <l>
+          <lb /> 7</l>
+        <l>
+          <lb />LXXXXVII. Centurie</l>
+        <l>
+          <lb />La fortune les armes &amp; le jeu,</l>
+        <l>
+          <lb />L’inconſtance &amp; la faueur petite,</l>
+        <l>
+          <lb />Se rencontrants enſemble en vn lieu,</l>
+        <l>
+          <lb /> Pourrontjoüer au double ou au quitte.</l>
+        <l>
+          <lb />LXXXXVIII.. Centurie.</l>
+        <l>
+          <lb />Vn fatigué voulant prendre repos,</l>
+        <l>
+          <lb />Et raconter ſes vaillantes &amp; proeſſe,</l>
+        <l>
+          <lb /> Eſt menaſſé d’aller voir a tropos,</l>
+        <l>
+          <lb />Par le poiſon aux fierre hardieſſe.</l>
+        <l>
+          <lb />LXXXXIX. Centurie.</l>
+        <l>
+          <lb />Quinze &amp; vnze enſemble jointe a deux,</l>
+        <l>
+          <lb />Mars &amp; Venus ſeront ſurpris enſemble,</l>
+        <l>
+          <lb />Leurs partie finie &amp; leurs jeux,</l>
+        <l>
+          <lb />L’on pourra voir &amp; leurs couroux qui tremble.</l>
+        <l>
+          <lb />C. Centurie.</l>
+        <l>
+          <lb />Par tropbouffi ilvouloit menaſſer,</l>
+        <l>
+          <lb />Ceſt innoçant ſans aucune malice,</l>
+        <l>
+          <lb />Ne croyant pas que Dieu peut terraſſer</l>
+        <l>
+          <lb />Les incenſſez qui vſe d’artifice.</l>
+        <l>
+          <lb />FIN.</l>
+        <pb n="25" />
+        <l>
+          <lb /> 1</l>
+        <l>
+          <lb />... ..</l>
+        <l>
+          <lb />1 </l>
+        <l>
+          <lb />¬</l>
+        <l>
+          <lb /> .</l>
+        <pb n="26" />
+        <l>
+          <lb /> II</l>
+        <l>
+          <lb />1</l>
+        <l>
+          <lb />1</l>
+        <l>
+          <lb />1</l>
+        <l>
+          <lb />1¬</l>
+        <l>
+          <lb />1</l>
+        <pb n="27" />
+      </p>
+    </body>
+  </text>
 </TEI>

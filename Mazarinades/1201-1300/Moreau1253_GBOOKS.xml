@@ -1,425 +1,265 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1253_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Les entretiens du roi à Saint-Germain.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Les entretiens du roi à Saint-Germain.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=2kWPWm3Rd14C"/>
-					<author/>
-					<title source="Moreau">Entretiens (les) du roi à Saint-Germain.</title>
-					<pubPlace source="Moreau">Sans lieu</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure quantity="8" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale de Lyon</institution>
-						<repository/>
-						<idno type="cote">Res 312384</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=2kWPWm3Rd14C" />
+          <author />
+          <title source="Moreau">Entretiens (les) du roi à Saint-Germain.</title>
+          <pubPlace source="Moreau">Sans lieu</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure quantity="8" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale de Lyon</institution>
+            <repository />
+            <idno type="cote">Res 312384</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">1253. Entretiens (les) du roi à Saint-Germain. (S. 1.), 1649, 8 pages. Ce
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">1253. Entretiens (les) du roi à Saint-Germain. (S. 1.), 1649, 8 pages. Ce
           n’est guère qu’un abrégé de l'Entretien familier du roi et de la reine, etc., et de
           l’Entretien familier du roï avec M. le duc d’An- jou, etc.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">entretien</term>
-					<term type="genre">dialogue</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_13" source="Moreau">
-					<p>Réception de l’envoyé de l’archiduc Léopold au parlement</p>
-					<date when="1649-02-19">1649-02-19</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2021-11-15" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-LES ENTRETIENS
-        DV ROY,
-        A S. GERMAIN.
-        M. DC. XLIX. 
-        
-        LES ENTRETIENS
-        DV ROY
-        A S. GERMAIN.
-        Le Roy.
-        MOn frere, ie ſuis bien aiſe que tu ſois
-        venu dans ma chambre, puiſque ie
-        pourray te dire auec plus de liberté
-        mes ſentimens.
-         Monſieur.
-         Mon petit papa, ie ſeray bien aiſe de les ſçauoir,
-        puiſque à vous &amp; à moy on nous interdit de par
-        ler à petſonne, &amp; que nous pouuons nous conſo
-         ler tous deux, de ce quinousarriue.
-        Le Roy.
-         Mais monfrere, prenons garde auant que de
-        rien dire;ſit quelqu’vn nous eſcoute; car ma bonne
-        haman fait touſiours veiller ſur nos diſcours.
-        Monſiear.
-         Qrevoyons,afn quenous puiſſions parle
-        en ſeureté.
-         B ij 
-        Le Roy. Ne vois-tu perſonne?
-        1
-        Monſieur. Non.
-        Le Roy. Vien done t’aſſeoir aupres daemoy, &amp;
-        nous dirons-ce que nousſçauons. Dy moy, n
-        ſeais u point pourquoy nous demourons tant
-        icy, pour moy ie commence de m’ypien enuuitr,
-        car ie ne ſȩay ce que i’y fais!
-        nſleur ſe m’ennuie binauſ &amp;le emps me
-        dure bien de retourner a Paris, ou ie me plais
-        mieux qu’icy.
-        Le Roy. Mais dy donc, ne ſçay tu paspourquoy
-        nous demeurons tant icy?
-        donſur Ie vous le diray bien mon petitpapa
-        mais ne dittes donc pas que c’eſt moy-qui vos
-        l’ay dir, car ſi ma banne maman le ſçauoit, ie ſe
-        rois bien fuſtige, &amp; vous vous eſtes a cettehenre
-        exempt du fouet.
-         Non, non, dy ſeulemont lerepuaens
-         que ie nen diray mot à perſons
-        ldoneur on pous papa, cdeſt qu’ondit que
-        Monſieur le Cardinal a faijttant de ma ux’a
-        riſiens, qu’ils neveulent plus qu’ilyreuE:
-        L Roy. Mais on m’auoit di que c’eſtoità moay
-        que les Pariſiens veulentmal
-        uaſaue Non nonmoa peusnsloao¬s
-        p ee ſont des cauſeurs qui vous ont ditcplule
-        Parifiens 
-        ? 5
-        Pariſiensvous ainent’de toutleur cœur; mais ils
-        veulent vn mal enragë à̀ onſieur le Cardinal, &amp;e
-        voudroient tous l’egouger s’ils pouuoient.
-        Le Roy. Mais purquoy eſt-cedonc que mà bon
-        ne maman le veut garder, puiſquetourle honde
-        duy veut mal, pour noy ie luy veus bienmal
-        auſſi?
-        aMonſiur: Et moy auſſi, ie voudrois biet qu’l
-        fut bien loin.
-        ..
-         Ry em’eſtonne pourquoy nlegare.
-        onſieur.mMon petit papa, c’eſt que toutdemo
-        deé coit qu’il a enſorcelle ma bonne maman.
-        Le Roy. Comment enſorcelle.
-        Monſieur Qu’il luy a donn des charicteres,afih
-        qu’il ſoit bien puiſſant..
-        Le Roy. omon oacle le Duc d’Oleans, ly e
-        a-t’il nlauiſit:
-        Monſieur. Ombjtquy:.
-        Le Roy, Bt à̀ mcuſin le Pinee de Conde?
-        Monſieur.On dit auſſi qu’il luy ena douné3
-        Le Roy. Ieſus; il eſt donc biemeſhaoe
-        Monſieur.Vaametouyl oſt blen meſchantil
-        eſſt neanss ditqu’ilavndiablefanien,
-        Le RoyO bon Dieu! n’approchons dnc plusda
-        llid e dieoe re lis leo
-        Monſiour. Pleut à Dieu.
-        lop 
-        7 6
-        Le Roy. Il mefer bien plaiſir de meme point
-        border, cat ie l’ayme encore moins que ifaifoi,
-        Monſinar. mon petitpapa,il ne faut pas direcela,
-        -car s’ilſçauoitque: vous &amp;moy nou é l’aios
-        pas, il nous eaſorceleroit pourſefaite aimer.
-        e Roy. Ie luy veux faire bonne mlaemais ieluy
-        feray mauuais ieu, ou ie ne pourray.
-        lonfieur. Vous ferea bie, mon petit papa, pour
-        moy ie luy en veux faire autant..
-        Le Roy. aais d’où viont que nous e eounos
-        as àParis.
-        Mooer. C’eſt que mabonne ranai a fait aſſia
-        ger Paris.
-        e Roy llel’a fait afiege.
-        Monſieur.Ouy vrayment.
-        LrRoy. Et qu croit-élle done dle faire,.
-        Monſieur. Elle croit les faire mourir defalm.
-        Le Roy.mMais que dit-onded fiege¬.
-        Moaſaar. On dit que iaa bonnematan ny fſerà
-        queſang &amp; eaa.:
-        Le Roy. Camn,
-        . Moaûaur,. Oa dit qellea’y fera rien¬.
-        ooy. Tane min, l’enetay bienaiſe , oonm
-        ofeéar-’elde ri4¬.1.
-        oneur. Ceſt qu’on dit, quilsſont plus fa
-        quelle. 
-        2
-         3
-         LeRoyaais heursgens ne ſont-ſls paspourmoy?
-        monfe. Quy vtaitment ils ſontoourvous.
-        Le Roy ais les Pariſiens ont-ilsbien du pain, car
-        rdntends quequefois dire qu’ils merent de
-        -faim,
-        Monffieur. Vraiement, vraiement Sils ont du pain,
-        ils ont du pain &amp; toutes ſortes de viandes pour
-        ſix mois.
-        Le Roy. Et que ferons pous donc pendant ce
-        temps-la, demeureronsnous toufiours icy1
-        monſieur.Ie n’en ſçay rien, ilme faſchaeroit bie.
-        Le Roy. ais qu’en dit-on,
-        Maſieur. On eſpere que le bon Dieu fera deſen
-        ſorcelex ma bonne maman, qu’elle fera leuer le
-        ſiege, &amp; que nous retournerons à Paris.
-        Le Roy-mais ramenerons-nous m le Cardinal?
-        Monſfer. O que nanny, car ſi nous retournons à
-        Paris, il faudra bien qu’il faſſe gile, car les Pari
-        ſiens ne l’y ſouffriroient iamais entrer, ils le tue
-        roient.
-        Le Roy.mais ma bonne maman, les Pariſiens l’ai
-        ment-ils bien?
-        Monſieur.ertes ouy,mon petit papa, car ils ont
-        toufiours conneu qu’elle eſtoit bien deuote, bien
-        bonne &amp; bien-heureuſe, il n’y a que ce meſchant
-        hommea quiils veulnt mal.
-        ¬ 
-         3
-         Le Roy, Hevoudrois donc bien que quelqu’vndit
-        à ma bonne maman, qu’elle le chaſſat, ellene me
-         crorait pas ſi it luy diſois.
-         MoieurNy oyauſi, &amp;ie n’ay pas garde de luiy
-        dire, mais Sire, i’aypeur que nous ayons trop de
-        meuré enſenmble qu’on ne ſe doutede quelque
-        cheſe.
-        :L
-        Le Roy.I’en ay peur auſsi.
-        Monſieur. A Dieu donc, monperit papa, ſ vous
-        ne dittes pas ce quei vous ay dir, ie voaus diray
-        vme autrefoistous ceui ſe paſſe...
-        Le Roy. S’il ne ſe ditque parmoy, ſçaches qu’ll
-        ne ſe ſçaurapas, ie ſuis auſsi ſecret que toy, &amp; ie
-        ſcaybien mé eſſouueni de tout, ſansrien dire,
-        ADieu			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">entretien</term>
+          <term type="genre">dialogue</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_13" source="Moreau">
+          <p>Réception de l’envoyé de l’archiduc Léopold au parlement</p>
+          <date when="1649-02-19">1649-02-19</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2021-11-15" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />LES ENTRETIENS
+        <lb />DV ROY,
+        <lb />A S. GERMAIN.
+        <lb />M. DC. XLIX. <pb n="2" />
+        <pb n="3" />
+        <lb />LES ENTRETIENS
+        <lb />DV ROY
+        <lb />A S. GERMAIN.
+        <lb />Le Roy.
+        <lb />MOn frere, ie ſuis bien aiſe que tu ſois
+        <lb />venu dans ma chambre, puiſque ie
+        <lb />pourray te dire auec plus de liberté
+        <lb />mes ſentimens.
+        <lb /> Monſieur.
+        <lb /> Mon petit papa, ie ſeray bien aiſe de les ſçauoir,
+        <lb />puiſque à vous &amp; à moy on nous interdit de par
+        <lb rend="¬" break="no" />ler à petſonne, &amp; que nous pouuons nous conſo
+        <lb rend="¬" break="no" /> ler tous deux, de ce quinousarriue.
+        <lb />Le Roy.
+        <lb /> Mais monfrere, prenons garde auant que de
+        <lb />rien dire;ſit quelqu’vn nous eſcoute; car ma bonne
+        <lb />haman fait touſiours veiller ſur nos diſcours.
+        <lb />Monſiear.
+        <lb /> Qrevoyons,afn quenous puiſſions parle
+        <lb rend="¬" break="no" />en ſeureté.
+        <lb /> B ij <pb n="4" />
+        <lb />Le Roy. Ne vois-tu perſonne?
+        <lb />1
+        <lb />Monſieur. Non.
+        <lb />Le Roy. Vien done t’aſſeoir aupres daemoy, &amp;
+        <lb />nous dirons-ce que nousſçauons. Dy moy, n
+        <lb />ſeais u point pourquoy nous demourons tant
+        <lb />icy, pour moy ie commence de m’ypien enuuitr,
+        <lb />car ie ne ſȩay ce que i’y fais!
+        <lb />nſleur ſe m’ennuie binauſ &amp;le emps me
+        <lb />dure bien de retourner a Paris, ou ie me plais
+        <lb />mieux qu’icy.
+        <lb />Le Roy. Mais dy donc, ne ſçay tu paspourquoy
+        <lb />nous demeurons tant icy?
+        <lb />donſur Ie vous le diray bien mon petitpapa
+        <lb />mais ne dittes donc pas que c’eſt moy-qui vos
+        <lb />l’ay dir, car ſi ma banne maman le ſçauoit, ie ſe
+        <lb rend="¬" break="no" />rois bien fuſtige, &amp; vous vous eſtes a cettehenre
+        <lb />exempt du fouet.
+        <lb /> Non, non, dy ſeulemont lerepuaens
+        <lb /> que ie nen diray mot à perſons
+        <lb />ldoneur on pous papa, cdeſt qu’ondit que
+        <lb />Monſieur le Cardinal a faijttant de ma ux’a
+        <lb rend="¬" break="no" />riſiens, qu’ils neveulent plus qu’ilyreuE:
+        <lb />L Roy. Mais on m’auoit di que c’eſtoità moay
+        <lb />que les Pariſiens veulentmal
+        <lb />uaſaue Non nonmoa peusnsloao¬s
+        <lb />p ee ſont des cauſeurs qui vous ont ditcplule
+        <lb />Parifiens <pb n="5" />
+        <lb />? 5
+        <lb />Pariſiensvous ainent’de toutleur cœur; mais ils
+        <lb />veulent vn mal enragë à̀ onſieur le Cardinal, &amp;e
+        <lb />voudroient tous l’egouger s’ils pouuoient.
+        <lb />Le Roy. Mais purquoy eſt-cedonc que mà bon
+        <lb rend="¬" break="no" />ne maman le veut garder, puiſquetourle honde
+        <lb />duy veut mal, pour noy ie luy veus bienmal
+        <lb />auſſi?
+        <lb />aMonſiur: Et moy auſſi, ie voudrois biet qu’l
+        <lb />fut bien loin.
+        <lb />..
+        <lb /> Ry em’eſtonne pourquoy nlegare.
+        <lb />onſieur.mMon petit papa, c’eſt que toutdemo
+        <lb rend="¬" break="no" />deé coit qu’il a enſorcelle ma bonne maman.
+        <lb />Le Roy. Comment enſorcelle.
+        <lb />Monſieur Qu’il luy a donn des charicteres,afih
+        <lb />qu’il ſoit bien puiſſant..
+        <lb />Le Roy. omon oacle le Duc d’Oleans, ly e
+        <lb />a-t’il nlauiſit:
+        <lb />Monſieur. Ombjtquy:.
+        <lb />Le Roy, Bt à̀ mcuſin le Pinee de Conde?
+        <lb />Monſieur.On dit auſſi qu’il luy ena douné3
+        <lb rend="¬" break="no" />Le Roy. Ieſus; il eſt donc biemeſhaoe
+        <lb />Monſieur.Vaametouyl oſt blen meſchantil
+        <lb />eſſt neanss ditqu’ilavndiablefanien,
+        <lb />Le RoyO bon Dieu! n’approchons dnc plusda
+        <lb />llid e dieoe re lis leo
+        <lb />Monſiour. Pleut à Dieu.
+        <lb />lop <pb n="6" />
+        <lb />7 6
+        <lb />Le Roy. Il mefer bien plaiſir de meme point
+        <lb rend="¬" break="no" />border, cat ie l’ayme encore moins que ifaifoi,
+        <lb />Monſinar. mon petitpapa,il ne faut pas direcela,
+        <lb />-car s’ilſçauoitque: vous &amp;moy nou é l’aios
+        <lb />pas, il nous eaſorceleroit pourſefaite aimer.
+        <lb />e Roy. Ie luy veux faire bonne mlaemais ieluy
+        <lb />feray mauuais ieu, ou ie ne pourray.
+        <lb />lonfieur. Vous ferea bie, mon petit papa, pour
+        <lb />moy ie luy en veux faire autant..
+        <lb />Le Roy. aais d’où viont que nous e eounos
+        <lb />as àParis.
+        <lb />Mooer. C’eſt que mabonne ranai a fait aſſia
+        <lb />ger Paris.
+        <lb />e Roy llel’a fait afiege.
+        <lb />Monſieur.Ouy vrayment.
+        <lb />LrRoy. Et qu croit-élle done dle faire,.
+        <lb />Monſieur. Elle croit les faire mourir defalm.
+        <lb />Le Roy.mMais que dit-onded fiege¬.
+        <lb />Moaſaar. On dit que iaa bonnematan ny fſerà
+        <lb />queſang &amp; eaa.:
+        <lb />Le Roy. Camn,
+        <lb rend="¬" break="no" />. Moaûaur,. Oa dit qellea’y fera rien¬.
+        <lb />ooy. Tane min, l’enetay bienaiſe , oonm
+        <lb rend="¬" break="no" />ofeéar-’elde ri4¬.1.
+        <lb />oneur. Ceſt qu’on dit, quilsſont plus fa
+        <lb />quelle. <pb n="7" />
+        <lb />2
+        <lb /> 3
+        <lb /> LeRoyaais heursgens ne ſont-ſls paspourmoy?
+        <lb />monfe. Quy vtaitment ils ſontoourvous.
+        <lb />Le Roy ais les Pariſiens ont-ilsbien du pain, car
+        <lb />rdntends quequefois dire qu’ils merent de
+        <lb />-faim,
+        <lb />Monffieur. Vraiement, vraiement Sils ont du pain,
+        <lb />ils ont du pain &amp; toutes ſortes de viandes pour
+        <lb />ſix mois.
+        <lb />Le Roy. Et que ferons pous donc pendant ce
+        <lb />temps-la, demeureronsnous toufiours icy1
+        <lb />monſieur.Ie n’en ſçay rien, ilme faſchaeroit bie.
+        <lb />Le Roy. ais qu’en dit-on,
+        <lb />Maſieur. On eſpere que le bon Dieu fera deſen
+        <lb rend="¬" break="no" />ſorcelex ma bonne maman, qu’elle fera leuer le
+        <lb />ſiege, &amp; que nous retournerons à Paris.
+        <lb />Le Roy-mais ramenerons-nous m le Cardinal?
+        <lb />Monſfer. O que nanny, car ſi nous retournons à
+        <lb />Paris, il faudra bien qu’il faſſe gile, car les Pari
+        <lb rend="¬" break="no" />ſiens ne l’y ſouffriroient iamais entrer, ils le tue
+        <lb rend="¬" break="no" />roient.
+        <lb />Le Roy.mais ma bonne maman, les Pariſiens l’ai
+        <lb rend="¬" break="no" />ment-ils bien?
+        <lb />Monſieur.ertes ouy,mon petit papa, car ils ont
+        <lb />toufiours conneu qu’elle eſtoit bien deuote, bien
+        <lb />bonne &amp; bien-heureuſe, il n’y a que ce meſchant
+        <lb />hommea quiils veulnt mal.
+        <lb />¬ <pb n="8" />
+        <lb /> 3
+        <lb /> Le Roy, Hevoudrois donc bien que quelqu’vndit
+        <lb />à ma bonne maman, qu’elle le chaſſat, ellene me
+        <lb /> crorait pas ſi it luy diſois.
+        <lb /> MoieurNy oyauſi, &amp;ie n’ay pas garde de luiy
+        <lb />dire, mais Sire, i’aypeur que nous ayons trop de
+        <lb rend="¬" break="no" />meuré enſenmble qu’on ne ſe doutede quelque
+        <lb />cheſe.
+        <lb />:L
+        <lb rend="¬" break="no" />Le Roy.I’en ay peur auſsi.
+        <lb />Monſieur. A Dieu donc, monperit papa, ſ vous
+        <lb />ne dittes pas ce quei vous ay dir, ie voaus diray
+        <lb />vme autrefoistous ceui ſe paſſe...
+        <lb />Le Roy. S’il ne ſe ditque parmoy, ſçaches qu’ll
+        <lb />ne ſe ſçaurapas, ie ſuis auſsi ſecret que toy, &amp; ie
+        <lb />ſcaybien mé eſſouueni de tout, ſansrien dire,
+        <lb />ADieu </p>
+    </body>
+  </text>
 </TEI>

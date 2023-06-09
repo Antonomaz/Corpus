@@ -1,1833 +1,957 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau122_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Apologie pour la France, sur sa préséance contre
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Apologie pour la France, sur sa préséance contre
           l'Espagne en cour de Rome.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2022-10-25">25 octobre 2022</date>
-				<availability status="restricted" n="cc-by">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=W49FZnaXMx4C"/>
-					<author/>
-					<title source="Moreau">Apologie pour la France, sur sa préséance contre l'Espagne en cour
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2022-10-25">25 octobre 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=W49FZnaXMx4C" />
+          <author />
+          <title source="Moreau">Apologie pour la France, sur sa préséance contre l'Espagne en cour
             de Rome.</title>
-					<pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
-					<publisher ref="isni:0000000506791357" xml:id="IL_NoelFrancois.xml">
-						<persName>
-							<forename>François</forename>
-							<surname>Noël</surname>
-						</persName>
-					</publisher>
-					<date source="Moreau" when="1651">1651</date>
-					<extent>
-						<measure unit="page" quantity="31"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale de Lyon</institution>
-						<repository/>
-						<idno type="cote">Rés 310589</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
+          <publisher ref="isni:0000000506791357" xml:id="IL_NoelFrancois.xml">
+            <persName>
+              <forename>François</forename>
+              <surname>Noël</surname>
+            </persName>
+          </publisher>
+          <date source="Moreau" when="1651">1651</date>
+          <extent>
+            <measure unit="page" quantity="31" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale de Lyon</institution>
+            <repository />
+            <idno type="cote">Rés 310589</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">122. Apologie pour la France, sur sa préséance contre l'Espagne en cour
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">122. Apologie pour la France, sur sa préséance contre l'Espagne en cour
           de Rome. Paris, François Noël, 1651 , 51 pages. Pièce curieuse et peu commune.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">apologie</term>
-					<term type="subject">Papauté</term>
-					<term type="subject">Relation internationale</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-10-25" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<pb n="12"/>
-				<pb n="13"/>
-				<pb n="14"/>
-				<pb n="15"/>
-				<pb n="16"/>
-				<pb n="17"/>
-				<pb n="18"/>
-				<pb n="19"/>
-				<pb n="20"/>
-				<pb n="21"/>
-				<pb n="22"/>
-				<pb n="23"/>
-				<pb n="24"/>
-				<pb n="25"/>
-				<pb n="26"/>
-				<pb n="27"/>
-				<pb n="28"/>
-				<pb n="29"/>
-				<pb n="30"/>
-				<pb n="31"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-APOLOGIE
-        POVR
-        es lne
-        EN COVR DE ROME.
-        ala
-        e s eau iſe e lele.
-        NoaL, ruë Sainct lacques,
-         cColnunueu drleouil
-        eeeer¬ 
-        
-        3
-        bhbbAp
-        e E bt t eae e e le e
-        Veep’pee’eſſ
-        APOLOGIE POVR LA
-         FPramce, fur ſa preſſeance
-         eotre l’Epagneen Cour
-         de Rome.
-        v 5or Rrez TovVs
-        - ſes fa &amp;-preredus doir de preſſeahe ſur
-        laCprome de Franr, depaus ſon Ongi
-         ne iſas à preſoat.
-         E tout temps la Monarehie
-        J Françoiſe a eſté tenue pour le
-        EV poemiete Royanmes de l cne.
-         leooee pans lex Prinees&amp; Poten
-        ea qul m’ont apporéaueune palion enee
-         iugemenr ; &amp; cela n’a efte reuoqué en dou
-        e auan hmdes ll.ennemy ’declaré des Fran
-         oi, qué la rage pouſſa iuſques là devouloir
-        trans-ferer au Roy d’Angleterre lée tilrre de
-        tres Chreſtien, hereditaire aux Roys de Fran
-        ce; mais le Roy d’Angleterreé reconnoiſſant
-        l’iniuſtioce: de ce Pape ne s’en- voulut iarais 
-        4
-        ſeruir, quoy qu’il fut ſon Partiſan, &amp; auſſi
-         bien que luy ennemy de la rance. Depuis
-         en l’an 1cs;. le Comte de Lune Ambaſfadeur
-        de Philippes ſeoondRyd’Eſpagne, au Con
-        cile de Trente, trouuant les ſieurs de Pibrac
-        &amp; de Ferrieres Ahabaſſadeursde-France; aſ
-        ſis immediatemene aprs l’Ambafſadeur de
-        l’Empereur, s’alla ſeoir pres du Secretaire
-        du Concile, protreſtant ſur la ſeance, com
-        me s’il luy euſt appartenu apres ledit Am
-        baſſadeur de l’mpereur, à quoy il fut alors
-         pertinemmene relſpondu palés Ambaſa
-        deurs de Franece. Mais le Pape Pie Quint de
-        la famille des Medicis de Milan, né ſuiet &amp;
-         Partiſan du Roy d’Eſpagne, ayant ordonneé
-        que les Ambaſſadeurs ſeroient encenſez en
-        meſme temps, les Ambaſſadeues de France
-        apres auoir remonſtré là deſſus le tort qui
-        eſtoit fait à leur Maiftre ſe retirerent, ſe
-         prenant de oet atceneat au Pape meſme, au
-         quelils deolarerent que lafrants meletenoit
-         point pour le Pape ny Pere commun; &amp; de
-         noncerent aux Peelats de Frane qu’ils euſ
-         ſent à ſe departir du Concile. Cela o doaneé́
-        ſujeta anouns d’eſerire de cete preſeance de
-        part &amp; d’autre; &amp; d’y faire pluſiéurs conſide
-         rations, deſquelles ie ftaporteray iey les prin
-        cipales, laiſſant pluſieurs inepties &amp; impo¬ 
-        ftures œidicules d’vn certain Cranaro Ro.
-        main, qui a par ſon diſcours publié dauanta
-        ge ſon ignorance à̀ décrire la cauſe de l’Eſ
-        pagne qu’il vouloit deffendre, qu’il n’a fait
-        de tort à la preſeance de France.
-        La premiere conſideration- oſt l’ancienne
-        ué &amp; durés de la Monarchie ſans interru
-        ption, à quoy il n’y a perſonne ſi peu verſe
-        aux hiſtoires, qui ne ſçache quie depuisoo.
-        ans opeu s’en, faut l’Eſtat de la Francea eſté
-        gouuerné pat Roys pris d’entre.-eux, ſans que
-        et ordre ait eſté interrompu par conqueſte
-        ouvſurparionvniuerſelle de d’Eſtat, faite par
-        alcuns eſtrangers, comme il eſt aduenu à
-        l’eſpagne par la conqueſte qu’en ont faite les
-        Sarrains auec rtinction entiere du ſang
-        Royal des, VViſigos,ënairon-l’an s. Ne
-        pouuant l’origiae de l’ſtat preſent &amp;’eſpgne
-        aſtre pris que de ’elagius qui enuiron l’an
-        7Le. fute fais Chf d’vne petire eroupe de
-        Chreſbiens, auquel teppsril y aooit deſ-ja
-        rois cehs adns-,que les Ftançois ſous le-Roï
-        eommandoient n- Frante! Car de’ prendre
-        le comencement de oette Monarchie dé
-        Aeararich, qui ne fut iamaisen Eeſpage; cems
-        ma fai Crahato, ’eſtſe monſtrerignorant,
-        auſlis hienqude qu les Fiahcois n’eſtoiet.
-        gouuernez que qar Dues auaat lPharamond,
-        B 
-        leſquels dés le temps de Diocletian eſtoient
-        gouuernez par Rois.
-         Laſeconde conſideration eſt la Souuerai
-        neté &amp; independance; la Souuerainete à eſteé
-        telle que du temps des anciens Eempereurs.
-        iln’eſtoit permis qu’aux Rois de Perſe &amp; aux
-        Rois de France de battre monnoie d’or ò
-        fû leur effigie, à ce que dit Procope. Quand
-        aà l’independance, eſle eſt telle, qu’ils n’ont
-        iamais reoeu aucunes loix, que celles de leur
-        Prince, &amp; encore qu’ils ayent plus honore,
-        aidé, &amp; ſecouru les Papes qu’aucune autre
-        natio, comme il ſe dira cy apres: neant.
-        moins ils n’en ont iamais receu aucun regle
-        ment, decret ou ordonnances, que premie
-        rement elle n’ait eſté confirmeée par leurs
-        Rois; &amp; les Legats du Pape ne pouuant en
-        core executer leur pouuoir ſans que premie
-        rement il ne ſoit verifié au Parlement. Auſſi
-        iamais aucun Pape n’a pretendu que la Fran
-        ce fût vn fief dependant du Saint Siege, com
-        me le Pape Gregoire a eſcrit en ſon Regiſtre
-        qui eſt au Vatican, que le Royaume d’aſpag
-        ae l’eſtoit. Quanc à ce que l’oa dit, que leP
-        pe Zacarie donna le Royaume de France à Pe
-        Pin, cela n’eſt point: car Pepin eſtoilt Maiftre
-        du Royaume au para uant que Zacanrie parlat;
-        mais bié pour leuer le ſcrupule de pluſieurs qui 
-        faiſoient diffieulté de ſe diſtraire de l’obeiſ
-        ſance de leur Roy Naturel, le Pape fut con
-        ſulté pour ſçauoir ſi le Prince eſtant incapa
-        ble de commander, le Sujet pouuoit eſtre diſ
-        penſé du ſerment de fidelité qui luy auit fait,
-         &amp;obeyr à vn autre plus capable : ſu cela le
-        Pape donna ſn aduis comme eût fait vn au
-        tre Docteur e Theologie s’il s’ei fûr trouue,
-        auquel le peuple euû̂t eu pareille ereance. De
-        dire que les Anglois onutconquis la France &amp;
-        l’ont renduë tributaire; il eſt bien vrſy qu’y
-        poſſedans deſia de grandes terres qu’ils te
-        oient enfief du Roy aeec les armes des Fran
-        cois qui eſtoient nez en ces prouinces, &amp; ai
-        dez de la faction de Bourgongne qui eſtoit
-        toure Françoiſe, ils prirent pour quelque
-        temps vn grand pied: mais ils s’en fallut beau
-        coup que cette conqueſte fût vniuerſelle, &amp;
-        ne fut le ſang Royaſ eſteint, ny la forme de
-        l’Eſtat changee, comme en la conqueſte que
-        les Sarrazins firent de l’eſpagne ſue les Viſi
-        gots &amp; pour leregard du tribut, il ne ſe trou
-        uera point que la ſomme de cinquante milles
-        eſeus, qui ſe deuoit payer en rembourſement
-        de quelques frais &amp; ceſſion de quelques
-        droirs, ait eſté appellée de ce nom; &amp; les
-        guerres qui recommencerent toſt apres effa
-        cerent cette promeſſe. Mais bien Muregat
-         4 
-        8
-        Roy d’Eſpagne, s’obligea à vn ſale &amp; vilain
-        tribut enuers vnRoy Maure, qui eſtoit de lui
-        fournir tous les ans cinquantes ’pucelles No
-        bles, &amp; autant deroturieres..
-         I atroiſieſme eſt l’ancienneté &amp; Nobleſſe
-        de la Maiſon, qui commande à l’vn &amp; à l’au
-        tre Eſtat; les Suiſſes qui ſaet mieux d’ou
-        viennent les Comtes dAhfpurg, leſquels
-        depuis ont, pris le, nom d’Auſtsi he,! que ne
-        fait VVolfganlaſius qui les fait deſç̧endre de
-        Pharaond, auiſſi bien que Cranaro, vuide
-        ront ayſement ce differend, à, ’auantage da
-        la Maiſon de, Frante peſent, qui regnoi
-        deux censns auant quele- Ghſteaud’Hab
-        ſpurg fuſt baſty. D prendre l’Origine del
-        Maiſon d’Eſpagne des iſigot, les faire
-        deſcendre d’y gouueinqur de Biſcaye nom
-        me Fafilla, ce n’eſt-pas leus faire grand hon:
-        neur, ioint que les Eſtats d Eſpagne ſone ſi
-        lquuent tombez en quenoüille, que les Rois
-        d’apeſentneſe peuuen ire cee Maiſon
-        làlaquelle a eſt́ jenpaupllear cane dau
-        tres, que p il fqllyt prenpde roit,pas laen
-        cor,, cequx quiſqnt, iſſus, de ſaint Loüis &amp; d
-        D. bBlanche ſeqpurept eſe prqfable
-        D. Blanehe eſtanſe aiſne é rangu
-        de Iaquelle eſt-deeeng, le oy diſpagns
-        d’apreſent, Quan a l’Qrigine des-Mſoos
-        qui ont 
-        93.
-        qui ont commandeé en France, l’ont fait ſortir
-        la premiere des anciens Rois des Francçois
-        Orientaux, la deuxieſme de Vtilo Roy de Ba
-        uieres, &amp; la troiſieſme qui regne à preſent
-        de VVirichind le Saxon :ceux toutefois qui ont
-        pris la peine de recueillir ce que lba Croni
-        que des Cronicques, l’Autheur. des Illuſtra
-        tions de la Gaule Orientale &amp; Occidentale,
-        Robeot Ceualis, Geofroy de. Viterbe &amp; au
-        ttes anciens en. diſent, ont remarque que
-        toutes: les trois Maiſons venoient d’vn meſ
-        me tige, qui eſt Dagobert Roy des Fran
-        çois en la Fance Orientale, en l’an ;o6. le
-        quel eut deux fils, Clodouius &amp; Genebauld;
-        de Clodouius eſt venu de Per en fils Clo
-        uis, &amp; ſa poſteiré; de Genehauld eſt venu
-        en’ doite ligne faint Armould, qui àntre au
-        tes enfans eut Anſegiſe;.&amp; Cleodulphe:
-        Anſegiſe, Maire du Palais de Clouis l L eut
-        Pepein le Gros, pere de Charles Martel,
-        d’ou eſt venuë̈ la ſqconde Maiſon qul a re
-        gné en France ; &amp; de Cleodulphe ſon fils
-        eſt veou Martin Maire du. Palais de Thierry
-        Roy d’Auſtrafie, auec Pepinle Gros appel
-        lé́ Couſin -de Martin par Paul. Emille; de
-        Martin fut fils Childebrand, &amp; de certui-ey
-        futfils Theodoric ouiIheodold, lequelſous
-        Charlemagne fut Gouuermeur de Saxe en¬ 
-        uiron l’an8o. &amp; fut appellé le Saxon. Paul
-        Emille eſcrit qu’à cauſe qu’il eſtoit Prince du
-        Sang il precedoit Geilo Conneſtable de
-        France. Ce Theodold eſpouſa la fille de Vvi
-        tichind le Saxon, de laquelle il eut Robert
-        qui eut trois enfans, Thierry Comte de
-        Bourgongne, Eudes Comte de Paris, tureur
-        de Charles le Simple, &amp; depuis fut proclamé
-        Roy de France, &amp; mourut ſans enfans, &amp;
-        Robert Conneſtable de France receu pour
-        Roy apres le deceds de ſon frere du temps
-        de Charles le Simple, lequel mourut l’an
-        9a2. laiſſant ſon fils Hugues le Grand Com
-        te de Paris, Duc &amp; Conneſtable de France,
-        qui eſpouſa la fille de l’Empereur Henrypre
-        mier, ſœur d’Ohon premier d’où naſquit
-        Hugues Capet tige de la troiſieſme race des
-        Roys de France, qui regnent aà̀ preſent; de
-        laquelle ſont ſortis ſes Empereurs d’Orient,
-        des Roys de Sicile, Naples, Hongrie,
-        &amp; Pologne. Par laà l’on peut iuger l’ancien
-        nete &amp; Nobleſſe de cette Maiſon, appuyée
-        ſur l’autorité d’anciens Autheurs,. &amp; non
-        ſur des tirres preſuppoſez par Laſius, deſ
-        quels l’on ne voit ancuns veſtiges ny remar
-        que en l’Hiſtoire, &amp; ce quieſt plus remar
-        quable, &amp; qui ne ſe voit point au autres
-        Eſtats; eſt que cette derniere à ja regné plus 
-        de ſix cens ans, continuant la ſucceſſion par
-        maſles ſans interruption, ſe lon la loi Salique
-        qui n’eſt pas vne loy inuentée par cette troi
-        ſieſme race, comme aucuns ignorans ont
-        mis en auant : mais vne loy fondamentale de
-        lEſtat des anciens François: car Agathias
-        liu. 2. eſcrit que Clotaire fut prefere aux deux
-        filles de Childebert ſon frere, &amp; que Sige
-        bert vn des fils de Clotaire a trois deſes niep
-        ces en’la ſucceſſion du Royaume d’Auſtra
-        ſie. Au Royaume d’Orleans Clotilde fiile de
-        Gontrand ne ſucceda à ſon pere, mais Chil
-        debert nepueu de Clotilde petit fils de Gon
-        trand, &amp; fils de Sigebert, qui mourut auant
-        ſon pere. En ſuitte de ce en la troiſieſme ra
-        ce, l’an . le Roy Huttin eſtant mort &amp;
-        ayant laiſſé vne fillé nommée Ieanne, &amp;
-        Clemenſe ſa femme groſſe, quidopuis ac
-        coucha d’vn fils, lequel ne veſcurque huit
-        iours, Philippes le Long frere de Huttin (l’en.
-        fantmort) fut reconnu Roy de France non
-        obſtant que Othon Duc de Bourgongne,
-        oncle de leanne fille de Hutin, &amp; de Mar
-        guerite de Bourgongne, debatiſt le Royau
-        me eſtre deu à ladite leanne, toutefoisil fut
-        contraint d’acquieſcer au conſementvniuer
-        ſel de toute la France, &amp; ſuiure la loy Salique:
-        depuis elle fut ehcores plus ouuertement 
-        pratiquée au profit de Philippes de Valois, co
-        tre Edoüard d’Angleterre: &amp; de noſtre temps
-        les Eſpagnols pendant les troubles de la
-        France, ayant fait inſtance aux pretendus
-        Eſtats de la Ligue, d’eſlire pour Royne Eli
-        abeth Clara Eugenia fille de Philippes l.
-        Roy d’Eſpagne, &amp; d’elizaberh fille de Hen
-        ry Il. Roy de France, ils en furenr refuſez
-        auec honte, &amp; deffences furent faites auſdits
-        Eſtats de rieninnouer au prejudice de la loy
-        Salique.
-        La quatriefme conſideration &amp; celle qui
-        à mon auis doit peſer le plus, eſt l’introdu
-        ction du Chriſtianiſme; en quoy la France
-        eſt premiere en datte de plus. de quatre
-        vingts ans que l’Eſpagne. Car le Roy Clo
-        uis &amp; les ſiens ſe firent baptiſer l’an 5oo. Et.
-        Ricaret qluufut le premie Roy Chreſtien, ne
-        fit condamnor l’Arridniſme en Eſpagne qu’
-        enuiron l’an 58. lequel pour cela ne laiſſa
-        pas d’y demeurer encores, &amp; depuis les Sar
-        razins ’entrerent, qui reduifitent: les Chré
-        ſtiens tellement à̀ l’eſtroit, que ſans Charle
-        magne qui paſſa iuſques à Crdeue, &amp; releua
-        parmi eux la Religion &amp; leur courage, ils
-        eſtoient tous perdus.
-         r
-        La cinquieſme conſideration depend le
-        cette deriere, &amp; regarde les preuues de pie
-         te&amp; 
-        13
-        1e &amp; affection enuers la Religion, que l’vne
-        &amp; l’ausre nation ont rendu; certe pieté a pa
-        ru aux Francois en cinq points, principale
-        ment en la propagarion de la Religion chre
-        ſtienne, en la retraite &amp; au ſecours donne aux
-        Papes, &amp; en l’accroiſſement &amp; reſtitution du
-        Domaine de l’Egliſe
-        Pour le premier, les Eſpagnols ſerontte
-        moins, auec quel zele les deſcendans de Clo
-        uis ont pourluiuy les Viſigots Arrions leurs
-        predeceſſeurs, leſquels en fin ont eſteé́ chaſſez
-        entierement de Frane: les Bourguignons qui
-        eſtoient de nſeſme Religion, ont eſté par,
-        cette meſme Maiſon contraints de ſe faire
-        Cheſtiens. Les Eſpagnols reſmoignent auſſi
-        par leurs Hiſtoires de que- Charlemagne a
-        fait en Efpagne pout l’auancement de la
-        Religion Chreſtienne contre les Sarrazins,
-        auſquels il auoit jamonſtré que la conqueſte
-        de la France n’eſtoit pas ſi facile que celle
-        d’Eſpagne, les ayant ſemblablement chaſſez
-        de Sardaigne, Corſegue, Maiorque, &amp; Mi
-        norque. L’on ſçais ce que le meſime Char
-        lemagne fit pour chaſſerlldolatrie de l’Alle
-        Imag ne, meſmement parmy les Saxons, ceux.
-        de Bauiers &amp; les Suabes. Ce que les Normans
-        partis de France firent à Naples. en la P’oüille,
-        Calabre &amp; Sicile, contre les Sarazins qu’ils
-        D 
-        14
-        en chaſſerent tout. à fait; ce que depuis
-        les François ont fain aà la conqueſte
-        de la terre Sainte qu’ils:ont poſſedée
-         quatre vingts ans ou ouiron, &amp; en pluſieurs
-        voyage que leurs Roys ont fait en Affrique,
-        &amp; e Aſie, contre les Indetles, &amp; ce que pa
-        reillemenr ils ont fair contre l’hereſie des Al.
-        bigeois ſouſtenuë parvn Roy d’rragô. Tous
-        ces exploits, deſquels les partiularitez re
-        ueilleront la piete des plus refroidis, ſeroient
-        rrop long-temps a deduire par le menu, ſuffit
-        de les toucher en paſſant.!
-         Quant à l’accroiſſement du reuenu de
-        l’Egliſe, ou reſtitution de ce qui luy appar
-        tenoit, iamais nation ny a tant coutribué
-        que la Françoiſe. Pepin donna l’Exarcat en
-        tier de Rauenne au ’ape(comme nous
-        auons fait voir cy deuant ) &amp; luy ayant eſte
-        oſté par Didier Roy des Lôbards, Charle.
-        magne le luy rendit,. Les Normans partis de
-        France luy ornt acquis la reconnoiſſance des
-        Fiefs de Naples, de Sicile: Le Contat de Ve
-        niſſe, &amp; d’Auignon vient. de la Maiſon de
-        Prouence: &amp; bien que quelques vns l’attri
-        buent au l’ape par engagement, autres par
-        achapt, neantmoins il eſt certain que ces
-        titres n’ont eſte recherchez que pour en
-        rendre les Papes Seigneurs incommutables 
-        
-        d’autant que le tirte de donation eut eſte
-        ſujet à eſtre debatu par des-heritiers, qui
-        n’euſſent eu pareille deuotion. bref tout ce
-        que l’Eglirſe Romaine poſſede encorc pour
-        le iourd’huy, eſt party des François. Pour le
-        regard des autres Egliſes ie ſerois trop long,
-        ſi ie voulois ieytapporter toutes les fon
-        dations &amp; dotations d’Egliſes faites par les
-        Roys de France, tant dedans que dehors
-        leurs Royaume; ſeulement dirai-ie en paſ
-        ſant, qu’il ſe trouuera qu’vne bonne partie
-        des meilleures E gliſes d’Allemagne ont eſté
-        fondées &amp; dottée par Charlemagne ou ſa
-        poſterité: mais l’on peut adiouſter icy ’pour
-        teſmoignage de pieteé Françoiſe, que la plus
-        grande part des Chefs d’Ordre de Religieux
-        lont en France.
-        Pour la retraite &amp; ſecours donné́ aux Pa
-        pes, leurs Liures &amp; leurs Hiſtoires en ſont
-        pleines, n’ayans les Papes deſobeiï̈s par les
-        Romains, ou afligez par les Lombards, par
-        les Empereurs, ou par les Rois de Sicile,
-        trouueé autre refuge ny autre ſecours qu’en
-        France; teſmoin Gregoire III. LéonIII.
-         Vrbain, Paſcal, Calixte, Alexandre, &amp; ln
-        nocent lV. &amp; pluſieurs autres; au contraire
-        il neſe trouue qu’vn Pape qui ſe ſoit retire
-        en Eſpagne, encore eſtoit il Schiſmatique, 
-        16
-         .
-        &amp; condamne par deux Conciles: pour le re
-        gard du ſecours, laiſſant celuy qui a eſté don
-        neé aux anciens Papes, par la deuxieſme
-        &amp; troiſieſme race; du temps de nos Peres,
-        le Roy François premier enuoya vne armée
-        pour deliurer le Pape Clement VIl. qui
-        auoit eſté fait priſonnier au ſac de Rome,
-        par l’armée de Charles-Quint, Empereur &amp;
-        Roy d’Eſpagne; &amp; Henry ll. en enuoia vne
-        autre ſous la conduite du Duc de Guife, pour
-        deffendre le Pape Caraffe, contre les Eſpa
-        gnols, qui eſtoient deſia entrez en la Ro:
-        magne.
-        Pour oppſcr à ce que nous auons rappor
-        té́ auoir eſte fait par les François pour la pro
-        pagation de la eligion Chreſtienne, l’on
-        met en auant les Maures chaſſez de Grena
-         de, par Eliſabeth de Caſtille, &amp; Ferdinand
-        d’Arragon, &amp; la deſcouuerte des lndes, où
-        l’on commence d’acheminer ces peuples à
-        la connoiſſance de leſus Chriſt. Pour le pre
-        mier il ſaut loü̈er le zele de ces Frinces, en
-        cores qu’ils n’ayent fait que reparer la faute
-        de leurs predeceſſeurs: mais de mettre cela
-        à l’eſgard de ce que Charlemagne a fait pour
-        les Chreſtiens en leur pais ſeulement, c’eſt
-        vouloir égaler vne Mouche aà vn Elephan
-        y ayant bien grande difſerence de chaſſer
-         des 
-        17
-         des gens affoiblis reduits en vn coin d’vn
-         Eſtat, où combatre vne force vnie qui oc
-        J capoit toure l’Eſpagne, la reduireà l’eſtroit.,
-        J &amp; rendre le deſſus aux Chreſtiens. Quand
-         à̀ la deſcouuerte des Indes, c’eſt impoſer
-         aux ſimples &amp; contre la verité́ de lers i
-        ſtoiresmeſmes, de vouloir faire que la pie
-        tô a meu les Eſpagnols à faire cette entre
-        priſe: s’ll ny euft eu que des hommes à
-        combatre, nonplus qu’en la terre Sainte,
-        ils ſe fuſſent bien gardez d’y allor: mais l’ar
-        gent, d’or, &amp; les perles, les ont bien eſ
-        chauffez d’auantage, que la pieté de laquel
-        le ils eſtoient ſi eſloignez, que les leurs
-        meſmes. eſcriuent, que plufieurs lndicns
-        diſpoſez aà rceuoir le Chriſtianiſme enont
-        eſté́ diuertis paleursmauuais depottemens.
-        Encore pour le iourd huy ils ſe gardent bien
-        de rechercher les peuples, parmy leſquels
-        il ne fe trouaemt point d’or: la ligio
-        qu’ils eſtablifſent enoes quartiers- la, eſtant
-        plutoſt vn acceſſoire. pour ſe maintenir &amp;
-        aſſurer leurs mines d’or, que la cauſe prin
-        eipalede oette conqueſte: de quoyie m’en
-        tapporteérai à? tous ceux qui auec iugement
-        &amp; ſans paſlion auront exactement leu leurs
-        Eiſtoires..
-         Quant à la reſtitution faite aux Papos de 
-        .
-        2,
-        18
-        ce qui dependoit de leur Siege, ils mettent
-        en aut la reſtitution de la Marche d’An
-        oone faite au Pape Eugene, par Alphonce
-        oy dArragon, &amp; celle des villes de Parme.
-        &amp; Plaiſance, au Pape Iule. Pour la premiere
-        elle ne fut point gratuite, ny par deuotion:
-        mais ſe fit auec -pacte &amp; cndtion, que le
-        Pape l’inueſtiroit du Royanme de Naples,
-        duquel il auoit auparauant inueſti le Duc
-        d’Anjou; quat à parme &amp; plaisãce, ce n’eſtoit
-        point vne reſtitution, quivienne de la part
-        d’Eſpagne ſeulement: mais vne conqueſte
-        faite par le Pape, aſliſté́ des Suiſſos, des Ve
-        nitiens, de pluſieurs Seigneurs d’ltalie, &amp;
-        de quelque troupe d’Eſpagnols, qui fai
-        foient la moindte partle. Ainſ c’eſt mal à
-         propos de vouloir alleguerces reſtieutions,
-        &amp; les comparer à l’accroiſſemene. du domai
-        ne de l’Egliſe pronenant des Frauçois; nou
-        plus peuuent les Eſpagnols mettre en auant
-        qu’ils ayent iamais donnéaueun ſeeours aux
-        Papes en leur neoeſſité́: mais poun dimiaues
-        la reputation de cetre pieté. Françoiſe, ils
-        viennent au rieproches. L premier eſt la
-        priſon do Pape Boniface l I’l. on laquelle
-        l’on ne-niera pas que Philippe le Bel n’aye
-        contribué, y ayant eſte pouſſé non ſeule.
-        menr par ſon irereſt particulier, ( ce Pape 
-        1e!
-        ayant voulu entreprendre ſur ſon autorité
-        Royale: nfſis uſſi par les vœux de toutela
-        Chreſtienté, quine pouuoit plus fupporter.
-        l’orgueil de ce Pape, lequel eſtant entré en
-        cette digniteé́ comme vn Renard, regnoit.
-        comme vn Lyon, &amp; mourut en fin enrageé
-        comme vn Chien; de façon que ſa vie&amp;ſa
-        memoire a eſtd condamnée par tous les Eſ
-        criuains quion onfaitmenion. Mais Cle.
-        ment VII. Papeo qui n’auoit nullte des mau
-        uaiſes qualitez de ce Boniface, fut bien plus
-        maltraité par l’armée de-Charles-Quitt,
-        laquelle reduiſit Rome au meſme eſtat que
-        les Gots &amp; les Vandales l’auoient autrefois
-        reduite, ſans que pour le regret que l’on fai
-        ſoit paroiſtre en auoir, l’on voulut relaſcher
-        qu’en payant vne groſſe rançon, comme s’il
-        eut eſte entre les mains des lnfidelles, pour
-        laquelle il fallut vendre le Chapeau de Car.
-        dinal à pluſieurs de la faction d’ſpagne.
-        C’oſt l’obligation que le Saint Siegeà onuers
-        cette naion, laquelle n’a iamais fait grand
-        ſcrupule de faire la guerre aux ’apes. Le
-        fſacond repeoche eſt I’alllance que le Roy de
-        Prance a aueo le Turc; pout la deffence de
-        ſes Eſtats, &amp; liberté du commerce, &amp; pour
-        le bien detoute la Chreſtienteé́, comme il ſe
-        viu au traice qui fut fais entre le Ture &amp; les
-         9 
-        
-        2
-        Venitiens, apres que la bataille de Lepan
-        te fue gagnée, l’armée Cheſnne ſe de
-        banda, le Turc ſe pre parant à courreſur la
-        Chreſtienté, en cette deſvnlon, ſi le Roy ne
-        ſe fut entremis de faire la paix. Auſſi n’a-il ia
-        mais eſté iugé par gens de ſainiugement,
-        que ce fut mal fait de erairer pourſa deffence
-        auec les infidelles Abraham fait alhiance
-        auecAbimelech Roy de la Paleftine, qu’au
-         cuns ont crû̂ eſtre Idolartes. loſu fait allian
-        ce au nom du peuple deDieu auec les Ga
-        baonites, &amp; les ida contre les Amorheens.
-        Dauid ſe retira vers Achis Roy de Gets
-        Idolatre, lors que Saul le perſecutoit: Aſa
-        Roy de luda( duquel il eſt eſorit que le cœur
-        eſtoit parfait au deuant du Seigneur tous les
-        iours de ſa vieſe ſeruit du ſecours de Bena
-        dad Roy de Sirie, contre le Roy Baaſa, Roy
-        d’ſraël: ludas, Machabée., lequel a eſtevn
-        des plus grands Zelateuts des Loy de Dieu
-        s’allia auec les Romains qui eſtoienbldola
-        ſtres. lonathas confirma cette alliance, &amp;.
-        en fit vn autre auec Demerrius, qui eſtoit
-        auſſi Pajen,, &amp;ſecoûrut Demrtius contre:
-        ſes ſujets rebdlles , &amp; la continua depuis!
-        auec Atiochus ſon fils, qu’ilſecourit A
-        ſaces Roy de Perſe, Conſtantin -le Grand
-        S’aida es Gotz, qui ſtoieut ldolatres &amp; lu
-         ſtinian 
-         21
-         tinian trouua bon que Narles s’aidaſt des
-        Lombards, leſquels l’eſtoient auſſi. Mais
-        voyons ſi les HEſpagnolsont eſté plus ſcrupu
-        leux, il eſt bien certain queo le Roy François
-        premier re fut induit à̀ traiter auec le Turc,
-        que pour preuenir l’Empereur Charles
-        Quint, qui faiſoit rechercher le Turc par
-        ſon frere Ferdinand, lequel enuoyoit Am
-        baſſadeurs à Conſtantinople, auec riches
-        preſens pour demander alliance, &amp; ſe ren
-        dre tributaite &amp; vaſſal du Turc, pour le
-        Royaume de Hongrie, le meſme Empereur
-        s’eſt allié auec les Rois de Fez &amp; Maroc, &amp;
-        pris en ſa protection le Roy de Thunes à pre
-        ſontencore au Indes, les eſpgnols pntal
-        hiace aſac pluſiors oys. ldolaures. Le
-        Roy Férdinanid’’Arragon enuoya Pierre
-        Alarthirvers le Soldan d’gypre, pour trai
-        ealliancerauec luy, Alphonce di l’Aſtr9
-        lgu it venir, d’Afrique le ral Murin
-        aec vne grande armée de Maures en eſ
-        pagne, contre Dom Sancho ſon propre
-        fals qui l’aupit depoſſedé du Royaume,
-        aſſiſté du Roy de Grenade, qui eſtoit auſ
-        ſi Maure: &amp; leap-dela erde fils aiſne du
-        dit Alphonce, fit venir vne autre armeée du
-        meſme Miral Murin contre ledit D. Sancho,
-        Pierre Roy -de, Caſtille entues lesarmées
-        E 
-        22
-        qu’il a dreſſées contre les Chreſtiens ſes
-        voiſins s’eſt ſerui de Maures. Acmenon Roy
-        de Tolede Sarrazin reſtablit Alphonce Roy
-        de Leon, qui s’eſtoit retiré vers lui chaſſe
-        par D. Sancho ſon frere D. Raimond ayant
-        haſſeé D. Sancho Roy de Nauarre, eutre
-        cours aux Maures contre D. Sancho Rami
-        res, l’an 1o8;. le meſme fit venir des- Maures
-         d’Afriques, pour faire le Roy de Seuille ſon
-        beau pere, Roy de tous les Maures d’Eſpa
-        gne. D. Sancho Roy de Leon fut remis en
-        ſon Royaume, par le Roy de Cardouë Sat
-        razin: mais il nous faudroit rapporter icy
-        toute l’Hiſtoire d’Eſpagne, dans laquelle
-        telles alliances ſont frequentes. Ainſi ils ne
-        peuuent my pour le paſſé́ ny pour le preſen
-        prendre aucun auantage de cecoſté́ la.
-        Le troiſieſme reproche eſt la collerance
-         des iafidelles ou heretiques. Encela ilsont
-        auſſi peudauantage fur la Franeé, le ale
-        bre des Mahometans n’eſtant pas moindre
-        en Eſpagne, que celuy des Heretiques en
-        France : car il ſe vit à l’oœilque l’lnqiiſition
-        a fait beaucoup de -Marrans &amp; dhipocrites,
-        mais peu de Chreſtiensetla pieté desFan
-        çois paroiſten l’eſpreuue qu’ils oht faite de
-        toutes ſortes de moiens pour reduire à l’an.
-        cienne opinibt êeuxqui en dnt pris-vn au¬ 
-        23
-        e, laquelle n’eſt encore ſi eſloignée du
-        Chriſtianiſme que la Mahomettane ou Iu
-        daiſme, trop frequent en Eſpagne; ceux
-        ci nians la Diuiniré de leſus-Chriſt, en la
-        quelle &amp; en tous les articles du Simbole la.
-        nouuelle opinions’accorde auec l’ancienne;
-        &amp; cette ’toſlerance eſtant comme forcée,
-        Dieu aiahr fait voir pareffet que ce n’eſt pas:
-        ouurage d’homme; &amp; que c’eſt à lui à y met
-        re la main; elle ne peut non plus diminuer
-        la reputaion de la pieté Franç̧oiſe, que le
-        Roi d’aſpagne a dimlnue la ſiéie par le
-        taité qu’il a fait auecſes ſujets de céttemeſ
-        me Religion qui lui tiennent les Prouinces
-        vnles des Païs-bas, par lequel il leuraceorde
-        do ſeulement la liberte de leur Religion,
-        mais auſfi la Souueraineté; en quoy il eſt ex
-        cuſable, puis qu’il n’a pû̂ mieux faire. Com
-        me auſſi la tollerance de toutes Religionse
-        plufieurs lieux aux ’Ihdes eſquels l eſt le
-        plus fort, de peur de uiner le conamétce, &amp;
-        diminuer ſon reuei, qui eſt vne conſide
-        ratlon toutefois bien moins importante.
-        ’La dethſere conſidettibn eſt la compa
-        raiſon de la puiſſnices dés dex Eſtaits:’les
-        Eſpagnols quir meſurent la puiſance des
-        deur eſtarsà l’aulne, n’oublient de conter
-        en la Mappmbonde tous les lleux &amp; millles
-        ; 
-        24
-        qu’ils poſſcde nt és quatre parties du monde,
-        &amp; cela parmy ceux qui ne ſçauent en quoy
-        eonſiſte la puiſſance d’vn Eſtat, a de l’eſclat
-        &amp; de l’apparence, &amp; fait beaucoup de
-        hruit, mais peu d’effet. Car auec tous ces
-        grands Eſtats, en cinquante ans les Roys
-        d’eſpagne n’ont peuvenir à bout d’vne poi
-        gnée de gens aux l’ais has. Et bien que les
-        deux tiers de la rrance le fauoriſaſt, il n’a
-        peu non plus venir à bout de l’autre tiers,
-        lequela ſouſtenu non ſeulement les forces
-        d’eſpagne: mais auſſi celles qu’il auoit ca
-        maſſées d’ltalie, d’Allemagne; &amp; des autres
-        Eſtats qu’il poſſede. Il faut donc recognoi
-        ſtre que la puiſſances d’vn ſtat conſiſte
-        non à̀ l’eſtenduë, mais au nombre &amp; en la
-        valeur des hommes, &amp; en l’abondancedes
-        choſes neceſſaires. Pour cetre derniere i’e
-        ſtime qué les Eſpagnols cederont aiſément
-        cetre prerogatiue à Ia France, puis que la.
-        ſeule rjcheſſe de la Franc canſiſte en fane
-        ce ſſité qu’ils oai de ce qui y croiſt, laquelle
-        a eſté quelques anneées ſi grande parmy eux,
-        qu’auec lecs eus ple l’aaige ei pn
-        ſeulemenit, ls &amp;e J’irgept uilis auoin
-        nis auſſi quantite ſe perles &amp; de pierreries
-        n’ayans plus moyen de payer’autrement
-         Quant au nombro d hommes, la ſeuleFrn
-         -. ¬. ..
-        ? ce en 
-        25
-        e en fournira pour ſortir hors le pais plus
-        que l’ſpagne, s’eſtant en la Prouence &amp; le
-        bas Languaedoc ſeulement, qui ſont les
-        Prouinces les moins peuplees de France, le
-        ué au commencement des troubles vingt
-        deuxmilles hommes, ſans que pour ce elles
-        fuſſens deſarmées ny ’que l’on s’apperceuſt
-        de la diminutiomdu peuple; que ſi ce nomi
-        bre eſtoit ſorty à vn coup dEſpagne il y pa:
-        roiſtroit dauantage. &amp; aux armd́os quiſe ſont
-        faites de part. &amp; d’autre, lenombre dos ran
-        Sois a preſque touſiours eſte auſſi grand.
-        &amp; quelquefois l’a eſté plus que eeluy des
-        eſpagnols &amp; ltuliens enſemble. pris des
-        ſtats depaendans d’ſpagne:&amp; ſi bien les
-        Roys derance ſe ſont ſeruis d’eſtrangets.
-        cela n’a pas eſté faiute de Frarrçois, mais pour
-        n’en vouloir pas tant aguerrir, de peur de
-        les deſbaucher de leur trauail onrdinaire, &amp;
-        pour éuier beaucoup d’autres iuconue
-        niens que l’on peut craindre d’vn trop
-        grand nombre de gens de guerre en vn
-        Eſtar: cqué le Roi d’sſpagne ne craint pas
-        des ſiens, pouree qu’ilen a peu,-&amp; qu’il les
-        ſepare en pays loing rains les vns des autresx.
-        Pour la valeur, il faut rconnoiſtre que la
-        France eſt habitée de deux peuples, quiont
-        acquis plus de repuratio en la guarre qu’au¬ 
-         6
-        cun autre. Si nous conſiderons ce qu’ônt ſair
-        les- aciens Gaulois, nous trouuerons pe
-        ’androits en l’Europe où ils n’ayene mis le
-        pled.
-        .1
-        . I’eEſpagnolfurenncocrains de lesrece
-        uoieparni eux, &amp;ſe ſont rendus plus redou
-        ablos fous le uon de Celuberes que d’I
-        beres. Rome pomatroit contre toutes les
-        utresnatibns pour lhonneur &amp; la reputa:
-        tion: mais contre les Gaulois, les Romains
-        eſtimoient quuly alloit non ſeulement de
-        eur liberteé́, mais auſſi de leurs vies: &amp; ont
-        confeſſe librementque de toutes. les na
-        tions eſtrangeres, aucune ne leur a apporte
-        plus de dommage &amp; d’eonnement que
-        celle-là; les Grecs ne les ont pasmoins re
-        doutez, au trauers deſquels il ſe sot fait voye
-        pour aller iuſques en Aſie: verifiant ce que
-        leurs Ambaſſadeurs direnrvn iour à Alexan
-        dre; que les Gaulois ne craignoient rien, ¬i
-        non que le Ciel tombât. lules Ceſar qui eſt
-        vn teſmoin irreprochable, pour auoir re.
-        connu de plus pres ce que cette nation pou
-        uoit, ne craint point d’auoüer que ſi elle
-        eſtoit vnie, tout le reſte du Monde ne lui
-        pourroit reſiſter, n’ayanrt gagneé́ d’auantage
-        ſureux que par leur deſvnion; &amp; ſi bien les
-        Romainsapres l conqueſte qu’ils ont faite, 
-        y
-        ont cherche tous les moyens de perdre &amp;
-        amolirces courages: neantmomsil ſemble
-        que puis apres pour les reueiller, Dieu ait
-        luſcité les François Nation voiſine peu difte
-        rante d’humeur &amp; de conuerſation, auſ
-        quels uſſi-toſt qu’ils ont paru deç̧à le Rhin,
-        ceux qui eſtoient iſſus des anciens Galois
-        ont tendu les mains &amp; ſe ſont vnis, nonſeu
-        lement pour ſecoü̈er le ioug des Romainss
-        mais auſſi pour chaſſer l’impieté Arrienne,
-        de laquelle faiſoient profeſſion les Bou
-        guignons &amp; les Viſigots. Depuis its ont con
-        tinué à faire preuue de leur valeur contre les
-        Idolatres en Turinge, Saxe, Bauieres, Suau
-        be: puis contre les Friſons, Eeſclauons, Vini
-        des, Vilſes, Obottides, Bohemes,; Mora
-        ues, Carinthiens, Auſtriens, Hongres, Sar
-        razins, Lombards, Soldans d’Egipte, Tures,
-        Bedonins Aſſaſſins. A leur valeur eſt deu
-        1
-        l’Eeſtabliſſement par Charlemagne de l’em
-        pire en Occident; la conqueſte de celui
-        d’Orient, par les Latins ſous Balduin; celles
-        des Royaumes de Naples &amp; Sicile ſous les
-        Normans, &amp; de Hieruſalem ſous Godefroy
-        de Boüillon.
-        Tous ees exploits quiont eſtéaccompa
-        gnez d’vne Piere egale à̀ loeur valeur, &amp;
-        qu’aucune autre nation n’a egalénie nom¬ 1
-        . 
-        28
-        bre ni en qualité́, ont donné telle preemi
-        nence par tout le Monde aux François, que
-        rous les Occidentaux ſont appellez Francs
-        en Leuant; &amp; iuſques aux lndes meſmes
-        auant que les Efpagnols y arriuaſſent: &amp;
-        nommant le Roy ſimplement, l’on en
-        tendoit, de celuy de France, ainſi qu’e
-        crit Suidas Auteur Grec, &amp; Boniface de
-        ,
-        Vitalinis teſmoigne cela auoir eſté com
-        mun &amp; ordinaire de ſon tomps à Rome. Par
-        les Decretales de Paul premier,. ſtienne
-        lII. Adrian premier, Nicolas premier, lean
-        VIII. lnnocent&amp; Honoreé IlI. les Rois de
-        France ſont appellez tres Chreſtiens: non
-        ſeulementpour eſtre oincts d’huile Celeſte:
-        mais auſſi pour auoir aſté &amp; eſtre l’vnique
-        Aſile, &amp; Refuge des l’apes affligez, &amp; le mur
-        inexpugnable de la Chreſtienté, coemme les
-        appelle Honoreé llI. ou eommedit vn autre
-        Pape, la Trouſſe &amp; arquois, d’où Dieu
-        deploie ſes traits pour ſouſmettre &amp; conſer
-        uer en ſon obeyſſance les autres Nations.
-        Saint Gregoire Pape a iugé &amp; eſcrit que le
-        Roy de. France ſurpaſſoit dautant tous
-        les oys des autres nations, que la dignité́
-        Royalle excede par deſſus les autres hom
-        mes: &amp; ſon ſucceſſeureſtienne l II. du nom,
-        dit que la Naton Françoiſe reluit pa deſſus
-        toutes 
-        
-        29
-        toutes les autres. Comme auſſi Balde dit,
-        que les Banieres de France marchent les
-        premieres, ſur leſquelles aucun autre Roy
-        ne peut pretendre auantage d’honneur: &amp;
-        ailleurs dit que les Rois de France portent
-        la Couronae de Liberté &amp; de Gloire par de
-        us tous les autres. Par les decréts Prouin
-        iaux de toutes les Egliſes Carhedrales im
-        priaeé́es à Roma iuſques aà preſent, &amp; par
-        le regiſtre dela Cour Romailne auſſi impri
-        me, Ie Roy de France eſt mis le premier des
-        autres Rois, &amp; le Roy d’Angleterre precede
-        us les Rois des Royaumes d’Eſpagnecon
-        re lequel outefois celui de Caſtille fit tiant
-        au Concile de Baſle l’an tj4. qu’il emporta
-        la preſeance; mais Volateran au neufieſme
-        liure, dernier chapitre, eſcrit que du temps
-        de Ferdinand V.certe cauſerfat derechef
-        plaidee à Rome &amp; terminee n faueur da
-        Roy d’Angleterre par lules l.Les Anglois
-        anciens ennemis des François, ont touſiours
-        reconnui la peſeance de France :; &amp; frere
-        Mathieu Religieux de ſaint Albande Lon
-        dres, dit que Rex Frecoram, Regu cenſerur
-        digmiſſimus&amp; en l’a555. au Chapiore tenu la
-        veille ſainu Georges par les Cheualiers de
-        l’Ordre de la lattere, fut atreſte que le oy
-        de France re tiendroit ſa place au coſté droist.
-        H
-        r¬¬ 
-        
-        .30
-        duChefde l’Ordre, oomnmœ laplusaparent
-        lieu; &amp;le Roy d’Eſpagne ncotequ’il ouſt
-        oſpouſé Marie lour Royne, demeureroità
-        gauche; &amp; depuis oela a eſté derehef lugé
-        à Rome &amp; à Veniſe, la ſueoez desaffares d1.
-        talie aà l’auantage des Eſpagnols ’ayane rien
-        diminué de la greandeuir de la puiſſance des
-        Rois de France, comme n’eſtant pas deu au
-        ſeules armes des ſpagnols, mais à celles
-        d’Allemagne, Angleterre; ’&amp; lealie ,que
-        l’on aveu toutes coniurees à vnfois contfe
-        la France, laquelle les a ſouſtenuës, defa
-        4on qu’elles u'on peu eſbranler ſa Couronne,
-        qu’elle neſe ſoitelouee &amp; paru auſſi puiſſa
-        te qu’auparauant; non plus fau-il queles
-         Eſpagnols vantent la conqoeſte qu’ils ont
-        fait des lndes pourpreuueſe leur valeur: en
-         laquelle comme ils onacereu leunoomme
-        ce, ils ont auſſi diminué grandament leur
-        reputation, ny ayant point eu’de valeur à
-        oombatre contre des gens, non ſealemeat
-        auec des armes, maisauſfi tous auds, qui au
-        bruit d’vn canon ou ̀ la veuë̈s d’ va-oheual
-        fuibieaà milliers. Au cotraits, ilbotac
-        quis beaucoup de blaſme deſgorger auec
-        tant de cruauez vn ſi grand nonabre deaes
-        pauures gens qu’ilsi one deſpeuplé́ la plus
-        part des prouinces de os uaruiep la eote 
-        3i
-        ;
-         e¬
-        inhumanité́ ayant paſſé ſi auant( comme les
-        leurs meſmes eſcriuent) qu’en vne iſle de ſix
-        cens mille habitans, ils n’ont laiſſe que quin
-        ae perſonne. C’eſt vne partie des raiſons &amp;
-        autoritez ſur leſquelles eſt fondée cette pre
-        ſance de France, reuoqué́e en doute par
-         lesſeuls Eſpagnols; qui des quatre nations
-        Oecidentales ont fait touſiours la derniere.
-        FIN.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">apologie</term>
+          <term type="subject">Papauté</term>
+          <term type="subject">Relation internationale</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-10-25" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />APOLOGIE
+        <lb />POVR
+        <lb />es lne
+        <lb />EN COVR DE ROME.
+        <lb />ala
+        <lb />e s eau iſe e lele.
+        <lb />NoaL, ruë Sainct lacques,
+        <lb /> cColnunueu drleouil
+        <lb />eeeer¬ <pb n="2" />
+        <pb n="3" />
+        <lb />3
+        <lb />bhbbAp
+        <lb />e E bt t eae e e le e
+        <lb />Veep’pee’eſſ
+        <lb />APOLOGIE POVR LA
+        <lb /> FPramce, fur ſa preſſeance
+        <lb /> eotre l’Epagneen Cour
+        <lb /> de Rome.
+        <lb />v 5or Rrez TovVs
+        <lb />- ſes fa &amp;-preredus doir de preſſeahe ſur
+        <lb />laCprome de Franr, depaus ſon Ongi
+        <lb /> ne iſas à preſoat.
+        <lb /> E tout temps la Monarehie
+        <lb />J Françoiſe a eſté tenue pour le
+        <lb />EV poemiete Royanmes de l cne.
+        <lb /> leooee pans lex Prinees&amp; Poten
+        <lb rend="¬" break="no" />ea qul m’ont apporéaueune palion enee
+        <lb /> iugemenr ; &amp; cela n’a efte reuoqué en dou
+        <lb rend="¬" break="no" />e auan hmdes ll.ennemy ’declaré des Fran
+        <lb rend="¬" break="no" /> oi, qué la rage pouſſa iuſques là devouloir
+        <lb />trans-ferer au Roy d’Angleterre lée tilrre de
+        <lb />tres Chreſtien, hereditaire aux Roys de Fran
+        <lb rend="¬" break="no" />ce; mais le Roy d’Angleterreé reconnoiſſant
+        <lb />l’iniuſtioce: de ce Pape ne s’en- voulut iarais <pb n="4" />
+        <lb />4
+        <lb />ſeruir, quoy qu’il fut ſon Partiſan, &amp; auſſi
+        <lb /> bien que luy ennemy de la rance. Depuis
+        <lb /> en l’an 1cs;. le Comte de Lune Ambaſfadeur
+        <lb />de Philippes ſeoondRyd’Eſpagne, au Con
+        <lb rend="¬" break="no" />cile de Trente, trouuant les ſieurs de Pibrac
+        <lb />&amp; de Ferrieres Ahabaſſadeursde-France; aſ
+        <lb rend="¬" break="no" />ſis immediatemene aprs l’Ambafſadeur de
+        <lb />l’Empereur, s’alla ſeoir pres du Secretaire
+        <lb />du Concile, protreſtant ſur la ſeance, com
+        <lb rend="¬" break="no" />me s’il luy euſt appartenu apres ledit Am
+        <lb rend="¬" break="no" />baſſadeur de l’mpereur, à quoy il fut alors
+        <lb /> pertinemmene relſpondu palés Ambaſa
+        <lb rend="¬" break="no" />deurs de Franece. Mais le Pape Pie Quint de
+        <lb />la famille des Medicis de Milan, né ſuiet &amp;
+        <lb /> Partiſan du Roy d’Eſpagne, ayant ordonneé
+        <lb />que les Ambaſſadeurs ſeroient encenſez en
+        <lb />meſme temps, les Ambaſſadeues de France
+        <lb />apres auoir remonſtré là deſſus le tort qui
+        <lb />eſtoit fait à leur Maiftre ſe retirerent, ſe
+        <lb /> prenant de oet atceneat au Pape meſme, au
+        <lb rend="¬" break="no" /> quelils deolarerent que lafrants meletenoit
+        <lb /> point pour le Pape ny Pere commun; &amp; de
+        <lb rend="¬" break="no" /> noncerent aux Peelats de Frane qu’ils euſ
+        <lb rend="¬" break="no" /> ſent à ſe departir du Concile. Cela o doaneé́
+        <lb />ſujeta anouns d’eſerire de cete preſeance de
+        <lb />part &amp; d’autre; &amp; d’y faire pluſiéurs conſide
+        <lb rend="¬" break="no" /> rations, deſquelles ie ftaporteray iey les prin
+        <lb rend="¬" break="no" />cipales, laiſſant pluſieurs inepties &amp; impo¬ <pb n="5" />
+        <lb />ftures œidicules d’vn certain Cranaro Ro.
+        <lb />main, qui a par ſon diſcours publié dauanta
+        <lb rend="¬" break="no" />ge ſon ignorance à̀ décrire la cauſe de l’Eſ
+        <lb rend="¬" break="no" />pagne qu’il vouloit deffendre, qu’il n’a fait
+        <lb />de tort à la preſeance de France.
+        <lb />La premiere conſideration- oſt l’ancienne
+        <lb rend="¬" break="no" />ué &amp; durés de la Monarchie ſans interru
+        <lb />ption, à quoy il n’y a perſonne ſi peu verſe
+        <lb />aux hiſtoires, qui ne ſçache quie depuisoo.
+        <lb />ans opeu s’en, faut l’Eſtat de la Francea eſté
+        <lb />gouuerné pat Roys pris d’entre.-eux, ſans que
+        <lb />et ordre ait eſté interrompu par conqueſte
+        <lb />ouvſurparionvniuerſelle de d’Eſtat, faite par
+        <lb />alcuns eſtrangers, comme il eſt aduenu à
+        <lb />l’eſpagne par la conqueſte qu’en ont faite les
+        <lb />Sarrains auec rtinction entiere du ſang
+        <lb />Royal des, VViſigos,ënairon-l’an s. Ne
+        <lb />pouuant l’origiae de l’ſtat preſent &amp;’eſpgne
+        <lb />aſtre pris que de ’elagius qui enuiron l’an
+        <lb />7Le. fute fais Chf d’vne petire eroupe de
+        <lb />Chreſbiens, auquel teppsril y aooit deſ-ja
+        <lb />rois cehs adns-,que les Ftançois ſous le-Roï
+        <lb />eommandoient n- Frante! Car de’ prendre
+        <lb />le comencement de oette Monarchie dé
+        <lb />Aeararich, qui ne fut iamaisen Eeſpage; cems
+        <lb />ma fai Crahato, ’eſtſe monſtrerignorant,
+        <lb />auſlis hienqude qu les Fiahcois n’eſtoiet.
+        <lb />gouuernez que qar Dues auaat lPharamond,
+        <lb />B <pb n="6" />
+        <lb />leſquels dés le temps de Diocletian eſtoient
+        <lb />gouuernez par Rois.
+        <lb /> Laſeconde conſideration eſt la Souuerai
+        <lb rend="¬" break="no" />neté &amp; independance; la Souuerainete à eſteé
+        <lb />telle que du temps des anciens Eempereurs.
+        <lb />iln’eſtoit permis qu’aux Rois de Perſe &amp; aux
+        <lb />Rois de France de battre monnoie d’or ò
+        <lb />fû leur effigie, à ce que dit Procope. Quand
+        <lb />aà l’independance, eſle eſt telle, qu’ils n’ont
+        <lb />iamais reoeu aucunes loix, que celles de leur
+        <lb />Prince, &amp; encore qu’ils ayent plus honore,
+        <lb />aidé, &amp; ſecouru les Papes qu’aucune autre
+        <lb />natio, comme il ſe dira cy apres: neant.
+        <lb />moins ils n’en ont iamais receu aucun regle
+        <lb rend="¬" break="no" />ment, decret ou ordonnances, que premie
+        <lb rend="¬" break="no" />rement elle n’ait eſté confirmeée par leurs
+        <lb />Rois; &amp; les Legats du Pape ne pouuant en
+        <lb rend="¬" break="no" />core executer leur pouuoir ſans que premie
+        <lb rend="¬" break="no" />rement il ne ſoit verifié au Parlement. Auſſi
+        <lb />iamais aucun Pape n’a pretendu que la Fran
+        <lb rend="¬" break="no" />ce fût vn fief dependant du Saint Siege, com
+        <lb rend="¬" break="no" />me le Pape Gregoire a eſcrit en ſon Regiſtre
+        <lb />qui eſt au Vatican, que le Royaume d’aſpag
+        <lb rend="¬" break="no" />ae l’eſtoit. Quanc à ce que l’oa dit, que leP
+        <lb rend="¬" break="no" />pe Zacarie donna le Royaume de France à Pe
+        <lb rend="¬" break="no" />Pin, cela n’eſt point: car Pepin eſtoilt Maiftre
+        <lb />du Royaume au para uant que Zacanrie parlat;
+        <lb />mais bié pour leuer le ſcrupule de pluſieurs qui <pb n="7" />
+        <lb />faiſoient diffieulté de ſe diſtraire de l’obeiſ
+        <lb rend="¬" break="no" />ſance de leur Roy Naturel, le Pape fut con
+        <lb rend="¬" break="no" />ſulté pour ſçauoir ſi le Prince eſtant incapa
+        <lb rend="¬" break="no" />ble de commander, le Sujet pouuoit eſtre diſ
+        <lb rend="¬" break="no" />penſé du ſerment de fidelité qui luy auit fait,
+        <lb /> &amp;obeyr à vn autre plus capable : ſu cela le
+        <lb />Pape donna ſn aduis comme eût fait vn au
+        <lb rend="¬" break="no" />tre Docteur e Theologie s’il s’ei fûr trouue,
+        <lb />auquel le peuple euû̂t eu pareille ereance. De
+        <lb />dire que les Anglois onutconquis la France &amp;
+        <lb />l’ont renduë tributaire; il eſt bien vrſy qu’y
+        <lb />poſſedans deſia de grandes terres qu’ils te
+        <lb rend="¬" break="no" />oient enfief du Roy aeec les armes des Fran
+        <lb />cois qui eſtoient nez en ces prouinces, &amp; ai
+        <lb rend="¬" break="no" />dez de la faction de Bourgongne qui eſtoit
+        <lb />toure Françoiſe, ils prirent pour quelque
+        <lb />temps vn grand pied: mais ils s’en fallut beau
+        <lb rend="¬" break="no" />coup que cette conqueſte fût vniuerſelle, &amp;
+        <lb />ne fut le ſang Royaſ eſteint, ny la forme de
+        <lb />l’Eſtat changee, comme en la conqueſte que
+        <lb />les Sarrazins firent de l’eſpagne ſue les Viſi
+        <lb rend="¬" break="no" />gots &amp; pour leregard du tribut, il ne ſe trou
+        <lb rend="¬" break="no" />uera point que la ſomme de cinquante milles
+        <lb />eſeus, qui ſe deuoit payer en rembourſement
+        <lb />de quelques frais &amp; ceſſion de quelques
+        <lb />droirs, ait eſté appellée de ce nom; &amp; les
+        <lb />guerres qui recommencerent toſt apres effa
+        <lb rend="¬" break="no" />cerent cette promeſſe. Mais bien Muregat
+        <lb /> 4 <pb n="8" />
+        <lb />8
+        <lb />Roy d’Eſpagne, s’obligea à vn ſale &amp; vilain
+        <lb />tribut enuers vnRoy Maure, qui eſtoit de lui
+        <lb />fournir tous les ans cinquantes ’pucelles No
+        <lb rend="¬" break="no" />bles, &amp; autant deroturieres..
+        <lb /> I atroiſieſme eſt l’ancienneté &amp; Nobleſſe
+        <lb />de la Maiſon, qui commande à l’vn &amp; à l’au
+        <lb rend="¬" break="no" />tre Eſtat; les Suiſſes qui ſaet mieux d’ou
+        <lb />viennent les Comtes dAhfpurg, leſquels
+        <lb />depuis ont, pris le, nom d’Auſtsi he,! que ne
+        <lb />fait VVolfganlaſius qui les fait deſç̧endre de
+        <lb />Pharaond, auiſſi bien que Cranaro, vuide
+        <lb rend="¬" break="no" />ront ayſement ce differend, à, ’auantage da
+        <lb />la Maiſon de, Frante peſent, qui regnoi
+        <lb />deux censns auant quele- Ghſteaud’Hab
+        <lb rend="¬" break="no" />ſpurg fuſt baſty. D prendre l’Origine del
+        <lb />Maiſon d’Eſpagne des iſigot, les faire
+        <lb />deſcendre d’y gouueinqur de Biſcaye nom
+        <lb />me Fafilla, ce n’eſt-pas leus faire grand hon:
+        <lb />neur, ioint que les Eſtats d Eſpagne ſone ſi
+        <lb />lquuent tombez en quenoüille, que les Rois
+        <lb />d’apeſentneſe peuuen ire cee Maiſon
+        <lb />làlaquelle a eſt́ jenpaupllear cane dau
+        <lb />tres, que p il fqllyt prenpde roit,pas laen
+        <lb rend="¬" break="no" />cor,, cequx quiſqnt, iſſus, de ſaint Loüis &amp; d
+        <lb />D. bBlanche ſeqpurept eſe prqfable
+        <lb rend="¬" break="no" />D. Blanehe eſtanſe aiſne é rangu
+        <lb />de Iaquelle eſt-deeeng, le oy diſpagns
+        <lb />d’apreſent, Quan a l’Qrigine des-Mſoos
+        <lb />qui ont <pb n="9" />
+        <lb />93.
+        <lb />qui ont commandeé en France, l’ont fait ſortir
+        <lb />la premiere des anciens Rois des Francçois
+        <lb />Orientaux, la deuxieſme de Vtilo Roy de Ba
+        <lb rend="¬" break="no" />uieres, &amp; la troiſieſme qui regne à preſent
+        <lb />de VVirichind le Saxon :ceux toutefois qui ont
+        <lb />pris la peine de recueillir ce que lba Croni
+        <lb rend="¬" break="no" />que des Cronicques, l’Autheur. des Illuſtra
+        <lb rend="¬" break="no" />tions de la Gaule Orientale &amp; Occidentale,
+        <lb />Robeot Ceualis, Geofroy de. Viterbe &amp; au
+        <lb rend="¬" break="no" />ttes anciens en. diſent, ont remarque que
+        <lb />toutes: les trois Maiſons venoient d’vn meſ
+        <lb rend="¬" break="no" />me tige, qui eſt Dagobert Roy des Fran
+        <lb rend="¬" break="no" />çois en la Fance Orientale, en l’an ;o6. le
+        <lb rend="¬" break="no" />quel eut deux fils, Clodouius &amp; Genebauld;
+        <lb />de Clodouius eſt venu de Per en fils Clo
+        <lb rend="¬" break="no" />uis, &amp; ſa poſteiré; de Genehauld eſt venu
+        <lb />en’ doite ligne faint Armould, qui àntre au
+        <lb rend="¬" break="no" />tes enfans eut Anſegiſe;.&amp; Cleodulphe:
+        <lb />Anſegiſe, Maire du Palais de Clouis l L eut
+        <lb />Pepein le Gros, pere de Charles Martel,
+        <lb />d’ou eſt venuë̈ la ſqconde Maiſon qul a re
+        <lb rend="¬" break="no" />gné en France ; &amp; de Cleodulphe ſon fils
+        <lb />eſt veou Martin Maire du. Palais de Thierry
+        <lb />Roy d’Auſtrafie, auec Pepinle Gros appel
+        <lb rend="¬" break="no" />lé́ Couſin -de Martin par Paul. Emille; de
+        <lb />Martin fut fils Childebrand, &amp; de certui-ey
+        <lb />futfils Theodoric ouiIheodold, lequelſous
+        <lb />Charlemagne fut Gouuermeur de Saxe en¬ <pb n="10" />
+        <lb />uiron l’an8o. &amp; fut appellé le Saxon. Paul
+        <lb />Emille eſcrit qu’à cauſe qu’il eſtoit Prince du
+        <lb />Sang il precedoit Geilo Conneſtable de
+        <lb />France. Ce Theodold eſpouſa la fille de Vvi
+        <lb rend="¬" break="no" />tichind le Saxon, de laquelle il eut Robert
+        <lb />qui eut trois enfans, Thierry Comte de
+        <lb />Bourgongne, Eudes Comte de Paris, tureur
+        <lb />de Charles le Simple, &amp; depuis fut proclamé
+        <lb />Roy de France, &amp; mourut ſans enfans, &amp;
+        <lb />Robert Conneſtable de France receu pour
+        <lb />Roy apres le deceds de ſon frere du temps
+        <lb />de Charles le Simple, lequel mourut l’an
+        <lb />9a2. laiſſant ſon fils Hugues le Grand Com
+        <lb rend="¬" break="no" />te de Paris, Duc &amp; Conneſtable de France,
+        <lb />qui eſpouſa la fille de l’Empereur Henrypre
+        <lb rend="¬" break="no" />mier, ſœur d’Ohon premier d’où naſquit
+        <lb />Hugues Capet tige de la troiſieſme race des
+        <lb />Roys de France, qui regnent aà̀ preſent; de
+        <lb />laquelle ſont ſortis ſes Empereurs d’Orient,
+        <lb />des Roys de Sicile, Naples, Hongrie,
+        <lb />&amp; Pologne. Par laà l’on peut iuger l’ancien
+        <lb rend="¬" break="no" />nete &amp; Nobleſſe de cette Maiſon, appuyée
+        <lb />ſur l’autorité d’anciens Autheurs,. &amp; non
+        <lb />ſur des tirres preſuppoſez par Laſius, deſ
+        <lb rend="¬" break="no" />quels l’on ne voit ancuns veſtiges ny remar
+        <lb rend="¬" break="no" />que en l’Hiſtoire, &amp; ce quieſt plus remar
+        <lb rend="¬" break="no" />quable, &amp; qui ne ſe voit point au autres
+        <lb />Eſtats; eſt que cette derniere à ja regné plus <pb n="11" />
+        <lb />de ſix cens ans, continuant la ſucceſſion par
+        <lb />maſles ſans interruption, ſe lon la loi Salique
+        <lb />qui n’eſt pas vne loy inuentée par cette troi
+        <lb rend="¬" break="no" />ſieſme race, comme aucuns ignorans ont
+        <lb />mis en auant : mais vne loy fondamentale de
+        <lb />lEſtat des anciens François: car Agathias
+        <lb />liu. 2. eſcrit que Clotaire fut prefere aux deux
+        <lb />filles de Childebert ſon frere, &amp; que Sige
+        <lb rend="¬" break="no" />bert vn des fils de Clotaire a trois deſes niep
+        <lb rend="¬" break="no" />ces en’la ſucceſſion du Royaume d’Auſtra
+        <lb rend="¬" break="no" />ſie. Au Royaume d’Orleans Clotilde fiile de
+        <lb />Gontrand ne ſucceda à ſon pere, mais Chil
+        <lb rend="¬" break="no" />debert nepueu de Clotilde petit fils de Gon
+        <lb rend="¬" break="no" />trand, &amp; fils de Sigebert, qui mourut auant
+        <lb />ſon pere. En ſuitte de ce en la troiſieſme ra
+        <lb rend="¬" break="no" />ce, l’an . le Roy Huttin eſtant mort &amp;
+        <lb />ayant laiſſé vne fillé nommée Ieanne, &amp;
+        <lb />Clemenſe ſa femme groſſe, quidopuis ac
+        <lb rend="¬" break="no" />coucha d’vn fils, lequel ne veſcurque huit
+        <lb />iours, Philippes le Long frere de Huttin (l’en.
+        <lb />fantmort) fut reconnu Roy de France non
+        <lb rend="¬" break="no" />obſtant que Othon Duc de Bourgongne,
+        <lb />oncle de leanne fille de Hutin, &amp; de Mar
+        <lb rend="¬" break="no" />guerite de Bourgongne, debatiſt le Royau
+        <lb rend="¬" break="no" />me eſtre deu à ladite leanne, toutefoisil fut
+        <lb rend="¬" break="no" />contraint d’acquieſcer au conſementvniuer
+        <lb rend="¬" break="no" />ſel de toute la France, &amp; ſuiure la loy Salique:
+        <lb />depuis elle fut ehcores plus ouuertement <pb n="12" />
+        <lb />pratiquée au profit de Philippes de Valois, co
+        <lb rend="¬" break="no" />tre Edoüard d’Angleterre: &amp; de noſtre temps
+        <lb />les Eſpagnols pendant les troubles de la
+        <lb />France, ayant fait inſtance aux pretendus
+        <lb />Eſtats de la Ligue, d’eſlire pour Royne Eli
+        <lb rend="¬" break="no" />abeth Clara Eugenia fille de Philippes l.
+        <lb />Roy d’Eſpagne, &amp; d’elizaberh fille de Hen
+        <lb rend="¬" break="no" />ry Il. Roy de France, ils en furenr refuſez
+        <lb />auec honte, &amp; deffences furent faites auſdits
+        <lb />Eſtats de rieninnouer au prejudice de la loy
+        <lb />Salique.
+        <lb />La quatriefme conſideration &amp; celle qui
+        <lb />à mon auis doit peſer le plus, eſt l’introdu
+        <lb rend="¬" break="no" />ction du Chriſtianiſme; en quoy la France
+        <lb />eſt premiere en datte de plus. de quatre
+        <lb rend="¬" break="no" />vingts ans que l’Eſpagne. Car le Roy Clo
+        <lb rend="¬" break="no" />uis &amp; les ſiens ſe firent baptiſer l’an 5oo. Et.
+        <lb />Ricaret qluufut le premie Roy Chreſtien, ne
+        <lb />fit condamnor l’Arridniſme en Eſpagne qu’
+        <lb />enuiron l’an 58. lequel pour cela ne laiſſa
+        <lb />pas d’y demeurer encores, &amp; depuis les Sar
+        <lb rend="¬" break="no" />razins ’entrerent, qui reduifitent: les Chré
+        <lb rend="¬" break="no" />ſtiens tellement à̀ l’eſtroit, que ſans Charle
+        <lb rend="¬" break="no" />magne qui paſſa iuſques à Crdeue, &amp; releua
+        <lb />parmi eux la Religion &amp; leur courage, ils
+        <lb />eſtoient tous perdus.
+        <lb /> r
+        <lb />La cinquieſme conſideration depend le
+        <lb />cette deriere, &amp; regarde les preuues de pie
+        <lb /> te&amp; <pb n="13" />
+        <lb />13
+        <lb />1e &amp; affection enuers la Religion, que l’vne
+        <lb />&amp; l’ausre nation ont rendu; certe pieté a pa
+        <lb rend="¬" break="no" />ru aux Francois en cinq points, principale
+        <lb rend="¬" break="no" />ment en la propagarion de la Religion chre
+        <lb rend="¬" break="no" />ſtienne, en la retraite &amp; au ſecours donne aux
+        <lb />Papes, &amp; en l’accroiſſement &amp; reſtitution du
+        <lb />Domaine de l’Egliſe
+        <lb />Pour le premier, les Eſpagnols ſerontte
+        <lb rend="¬" break="no" />moins, auec quel zele les deſcendans de Clo
+        <lb rend="¬" break="no" />uis ont pourluiuy les Viſigots Arrions leurs
+        <lb />predeceſſeurs, leſquels en fin ont eſteé́ chaſſez
+        <lb />entierement de Frane: les Bourguignons qui
+        <lb />eſtoient de nſeſme Religion, ont eſté par,
+        <lb />cette meſme Maiſon contraints de ſe faire
+        <lb />Cheſtiens. Les Eſpagnols reſmoignent auſſi
+        <lb />par leurs Hiſtoires de que- Charlemagne a
+        <lb />fait en Efpagne pout l’auancement de la
+        <lb />Religion Chreſtienne contre les Sarrazins,
+        <lb />auſquels il auoit jamonſtré que la conqueſte
+        <lb />de la France n’eſtoit pas ſi facile que celle
+        <lb />d’Eſpagne, les ayant ſemblablement chaſſez
+        <lb />de Sardaigne, Corſegue, Maiorque, &amp; Mi
+        <lb rend="¬" break="no" />norque. L’on ſçais ce que le meſime Char
+        <lb rend="¬" break="no" />lemagne fit pour chaſſerlldolatrie de l’Alle
+        <lb rend="¬" break="no" />Imag ne, meſmement parmy les Saxons, ceux.
+        <lb />de Bauiers &amp; les Suabes. Ce que les Normans
+        <lb />partis de France firent à Naples. en la P’oüille,
+        <lb />Calabre &amp; Sicile, contre les Sarazins qu’ils
+        <lb />D <pb n="14" />
+        <lb />14
+        <lb />en chaſſerent tout. à fait; ce que depuis
+        <lb />les François ont fain aà la conqueſte
+        <lb />de la terre Sainte qu’ils:ont poſſedée
+        <lb /> quatre vingts ans ou ouiron, &amp; en pluſieurs
+        <lb />voyage que leurs Roys ont fait en Affrique,
+        <lb />&amp; e Aſie, contre les Indetles, &amp; ce que pa
+        <lb rend="¬" break="no" />reillemenr ils ont fair contre l’hereſie des Al.
+        <lb />bigeois ſouſtenuë parvn Roy d’rragô. Tous
+        <lb />ces exploits, deſquels les partiularitez re
+        <lb rend="¬" break="no" />ueilleront la piete des plus refroidis, ſeroient
+        <lb />rrop long-temps a deduire par le menu, ſuffit
+        <lb />de les toucher en paſſant.!
+        <lb /> Quant à l’accroiſſement du reuenu de
+        <lb />l’Egliſe, ou reſtitution de ce qui luy appar
+        <lb rend="¬" break="no" />tenoit, iamais nation ny a tant coutribué
+        <lb />que la Françoiſe. Pepin donna l’Exarcat en
+        <lb rend="¬" break="no" />tier de Rauenne au ’ape(comme nous
+        <lb />auons fait voir cy deuant ) &amp; luy ayant eſte
+        <lb />oſté par Didier Roy des Lôbards, Charle.
+        <lb />magne le luy rendit,. Les Normans partis de
+        <lb />France luy ornt acquis la reconnoiſſance des
+        <lb />Fiefs de Naples, de Sicile: Le Contat de Ve
+        <lb rend="¬" break="no" />niſſe, &amp; d’Auignon vient. de la Maiſon de
+        <lb />Prouence: &amp; bien que quelques vns l’attri
+        <lb rend="¬" break="no" />buent au l’ape par engagement, autres par
+        <lb />achapt, neantmoins il eſt certain que ces
+        <lb />titres n’ont eſte recherchez que pour en
+        <lb />rendre les Papes Seigneurs incommutables <pb n="15" />
+        <lb />
+        <lb rend="¬" break="no" />d’autant que le tirte de donation eut eſte
+        <lb />ſujet à eſtre debatu par des-heritiers, qui
+        <lb />n’euſſent eu pareille deuotion. bref tout ce
+        <lb />que l’Eglirſe Romaine poſſede encorc pour
+        <lb />le iourd’huy, eſt party des François. Pour le
+        <lb />regard des autres Egliſes ie ſerois trop long,
+        <lb />ſi ie voulois ieytapporter toutes les fon
+        <lb rend="¬" break="no" />dations &amp; dotations d’Egliſes faites par les
+        <lb />Roys de France, tant dedans que dehors
+        <lb />leurs Royaume; ſeulement dirai-ie en paſ
+        <lb rend="¬" break="no" />ſant, qu’il ſe trouuera qu’vne bonne partie
+        <lb />des meilleures E gliſes d’Allemagne ont eſté
+        <lb />fondées &amp; dottée par Charlemagne ou ſa
+        <lb />poſterité: mais l’on peut adiouſter icy ’pour
+        <lb />teſmoignage de pieteé Françoiſe, que la plus
+        <lb />grande part des Chefs d’Ordre de Religieux
+        <lb />lont en France.
+        <lb />Pour la retraite &amp; ſecours donné́ aux Pa
+        <lb rend="¬" break="no" />pes, leurs Liures &amp; leurs Hiſtoires en ſont
+        <lb />pleines, n’ayans les Papes deſobeiï̈s par les
+        <lb />Romains, ou afligez par les Lombards, par
+        <lb />les Empereurs, ou par les Rois de Sicile,
+        <lb />trouueé autre refuge ny autre ſecours qu’en
+        <lb />France; teſmoin Gregoire III. LéonIII.
+        <lb /> Vrbain, Paſcal, Calixte, Alexandre, &amp; ln
+        <lb rend="¬" break="no" />nocent lV. &amp; pluſieurs autres; au contraire
+        <lb />il neſe trouue qu’vn Pape qui ſe ſoit retire
+        <lb />en Eſpagne, encore eſtoit il Schiſmatique, <pb n="16" />
+        <lb />16
+        <lb rend="¬" break="no" /> .
+        <lb />&amp; condamne par deux Conciles: pour le re
+        <lb rend="¬" break="no" />gard du ſecours, laiſſant celuy qui a eſté don
+        <lb rend="¬" break="no" />neé aux anciens Papes, par la deuxieſme
+        <lb />&amp; troiſieſme race; du temps de nos Peres,
+        <lb />le Roy François premier enuoya vne armée
+        <lb />pour deliurer le Pape Clement VIl. qui
+        <lb />auoit eſté fait priſonnier au ſac de Rome,
+        <lb />par l’armée de Charles-Quint, Empereur &amp;
+        <lb />Roy d’Eſpagne; &amp; Henry ll. en enuoia vne
+        <lb />autre ſous la conduite du Duc de Guife, pour
+        <lb />deffendre le Pape Caraffe, contre les Eſpa
+        <lb rend="¬" break="no" />gnols, qui eſtoient deſia entrez en la Ro:
+        <lb />magne.
+        <lb />Pour oppſcr à ce que nous auons rappor
+        <lb rend="¬" break="no" />té́ auoir eſte fait par les François pour la pro
+        <lb rend="¬" break="no" />pagation de la eligion Chreſtienne, l’on
+        <lb />met en auant les Maures chaſſez de Grena
+        <lb rend="¬" break="no" /> de, par Eliſabeth de Caſtille, &amp; Ferdinand
+        <lb />d’Arragon, &amp; la deſcouuerte des lndes, où
+        <lb />l’on commence d’acheminer ces peuples à
+        <lb />la connoiſſance de leſus Chriſt. Pour le pre
+        <lb />mier il ſaut loü̈er le zele de ces Frinces, en
+        <lb rend="¬" break="no" />cores qu’ils n’ayent fait que reparer la faute
+        <lb />de leurs predeceſſeurs: mais de mettre cela
+        <lb />à l’eſgard de ce que Charlemagne a fait pour
+        <lb />les Chreſtiens en leur pais ſeulement, c’eſt
+        <lb />vouloir égaler vne Mouche aà vn Elephan
+        <lb />y ayant bien grande difſerence de chaſſer
+        <lb /> des <pb n="17" />
+        <lb />17
+        <lb /> des gens affoiblis reduits en vn coin d’vn
+        <lb /> Eſtat, où combatre vne force vnie qui oc
+        <lb rend="¬" break="no" />J capoit toure l’Eſpagne, la reduireà l’eſtroit.,
+        <lb />J &amp; rendre le deſſus aux Chreſtiens. Quand
+        <lb rend="¬" break="no" /> à̀ la deſcouuerte des Indes, c’eſt impoſer
+        <lb /> aux ſimples &amp; contre la verité́ de lers i
+        <lb rend="¬" break="no" />ſtoiresmeſmes, de vouloir faire que la pie
+        <lb rend="¬" break="no" />tô a meu les Eſpagnols à faire cette entre
+        <lb rend="¬" break="no" />priſe: s’ll ny euft eu que des hommes à
+        <lb />combatre, nonplus qu’en la terre Sainte,
+        <lb />ils ſe fuſſent bien gardez d’y allor: mais l’ar
+        <lb rend="¬" break="no" />gent, d’or, &amp; les perles, les ont bien eſ
+        <lb rend="¬" break="no" />chauffez d’auantage, que la pieté de laquel
+        <lb />le ils eſtoient ſi eſloignez, que les leurs
+        <lb />meſmes. eſcriuent, que plufieurs lndicns
+        <lb />diſpoſez aà rceuoir le Chriſtianiſme enont
+        <lb />eſté́ diuertis paleursmauuais depottemens.
+        <lb />Encore pour le iourd huy ils ſe gardent bien
+        <lb />de rechercher les peuples, parmy leſquels
+        <lb />il ne fe trouaemt point d’or: la ligio
+        <lb />qu’ils eſtablifſent enoes quartiers- la, eſtant
+        <lb />plutoſt vn acceſſoire. pour ſe maintenir &amp;
+        <lb />aſſurer leurs mines d’or, que la cauſe prin
+        <lb rend="¬" break="no" />eipalede oette conqueſte: de quoyie m’en
+        <lb />tapporteérai à? tous ceux qui auec iugement
+        <lb />&amp; ſans paſlion auront exactement leu leurs
+        <lb />Eiſtoires..
+        <lb /> Quant à la reſtitution faite aux Papos de <pb n="18" />
+        <lb />.
+        <lb />2,
+        <lb />18
+        <lb />ce qui dependoit de leur Siege, ils mettent
+        <lb />en aut la reſtitution de la Marche d’An
+        <lb rend="¬" break="no" />oone faite au Pape Eugene, par Alphonce
+        <lb />oy dArragon, &amp; celle des villes de Parme.
+        <lb />&amp; Plaiſance, au Pape Iule. Pour la premiere
+        <lb />elle ne fut point gratuite, ny par deuotion:
+        <lb />mais ſe fit auec -pacte &amp; cndtion, que le
+        <lb />Pape l’inueſtiroit du Royanme de Naples,
+        <lb />duquel il auoit auparauant inueſti le Duc
+        <lb />d’Anjou; quat à parme &amp; plaisãce, ce n’eſtoit
+        <lb />point vne reſtitution, quivienne de la part
+        <lb />d’Eſpagne ſeulement: mais vne conqueſte
+        <lb />faite par le Pape, aſliſté́ des Suiſſos, des Ve
+        <lb />nitiens, de pluſieurs Seigneurs d’ltalie, &amp;
+        <lb />de quelque troupe d’Eſpagnols, qui fai
+        <lb rend="¬" break="no" />foient la moindte partle. Ainſ c’eſt mal à
+        <lb /> propos de vouloir alleguerces reſtieutions,
+        <lb />&amp; les comparer à l’accroiſſemene. du domai
+        <lb rend="¬" break="no" />ne de l’Egliſe pronenant des Frauçois; nou
+        <lb />plus peuuent les Eſpagnols mettre en auant
+        <lb />qu’ils ayent iamais donnéaueun ſeeours aux
+        <lb />Papes en leur neoeſſité́: mais poun dimiaues
+        <lb />la reputation de cetre pieté. Françoiſe, ils
+        <lb />viennent au rieproches. L premier eſt la
+        <lb />priſon do Pape Boniface l I’l. on laquelle
+        <lb />l’on ne-niera pas que Philippe le Bel n’aye
+        <lb />contribué, y ayant eſte pouſſé non ſeule.
+        <lb />menr par ſon irereſt particulier, ( ce Pape <pb n="19" />
+        <lb />1e!
+        <lb />ayant voulu entreprendre ſur ſon autorité
+        <lb />Royale: nfſis uſſi par les vœux de toutela
+        <lb />Chreſtienté, quine pouuoit plus fupporter.
+        <lb />l’orgueil de ce Pape, lequel eſtant entré en
+        <lb />cette digniteé́ comme vn Renard, regnoit.
+        <lb />comme vn Lyon, &amp; mourut en fin enrageé
+        <lb />comme vn Chien; de façon que ſa vie&amp;ſa
+        <lb />memoire a eſtd condamnée par tous les Eſ
+        <lb rend="¬" break="no" />criuains quion onfaitmenion. Mais Cle.
+        <lb rend="¬" break="no" />ment VII. Papeo qui n’auoit nullte des mau
+        <lb rend="¬" break="no" />uaiſes qualitez de ce Boniface, fut bien plus
+        <lb />maltraité par l’armée de-Charles-Quitt,
+        <lb />laquelle reduiſit Rome au meſme eſtat que
+        <lb />les Gots &amp; les Vandales l’auoient autrefois
+        <lb />reduite, ſans que pour le regret que l’on fai
+        <lb rend="¬" break="no" />ſoit paroiſtre en auoir, l’on voulut relaſcher
+        <lb />qu’en payant vne groſſe rançon, comme s’il
+        <lb />eut eſte entre les mains des lnfidelles, pour
+        <lb />laquelle il fallut vendre le Chapeau de Car.
+        <lb />dinal à pluſieurs de la faction d’ſpagne.
+        <lb />C’oſt l’obligation que le Saint Siegeà onuers
+        <lb />cette naion, laquelle n’a iamais fait grand
+        <lb />ſcrupule de faire la guerre aux ’apes. Le
+        <lb />fſacond repeoche eſt I’alllance que le Roy de
+        <lb />Prance a aueo le Turc; pout la deffence de
+        <lb />ſes Eſtats, &amp; liberté du commerce, &amp; pour
+        <lb />le bien detoute la Chreſtienteé́, comme il ſe
+        <lb />viu au traice qui fut fais entre le Ture &amp; les
+        <lb /> 9 <pb n="20" />
+        <lb />
+        <lb />2
+        <lb />Venitiens, apres que la bataille de Lepan
+        <lb rend="¬" break="no" />te fue gagnée, l’armée Cheſnne ſe de
+        <lb rend="¬" break="no" />banda, le Turc ſe pre parant à courreſur la
+        <lb />Chreſtienté, en cette deſvnlon, ſi le Roy ne
+        <lb />ſe fut entremis de faire la paix. Auſſi n’a-il ia
+        <lb rend="¬" break="no" />mais eſté iugé par gens de ſainiugement,
+        <lb />que ce fut mal fait de erairer pourſa deffence
+        <lb />auec les infidelles Abraham fait alhiance
+        <lb />auecAbimelech Roy de la Paleftine, qu’au
+        <lb rend="¬" break="no" /> cuns ont crû̂ eſtre Idolartes. loſu fait allian
+        <lb rend="¬" break="no" />ce au nom du peuple deDieu auec les Ga
+        <lb rend="¬" break="no" />baonites, &amp; les ida contre les Amorheens.
+        <lb />Dauid ſe retira vers Achis Roy de Gets
+        <lb />Idolatre, lors que Saul le perſecutoit: Aſa
+        <lb />Roy de luda( duquel il eſt eſorit que le cœur
+        <lb />eſtoit parfait au deuant du Seigneur tous les
+        <lb />iours de ſa vieſe ſeruit du ſecours de Bena
+        <lb rend="¬" break="no" />dad Roy de Sirie, contre le Roy Baaſa, Roy
+        <lb />d’ſraël: ludas, Machabée., lequel a eſtevn
+        <lb />des plus grands Zelateuts des Loy de Dieu
+        <lb />s’allia auec les Romains qui eſtoienbldola
+        <lb rend="¬" break="no" />ſtres. lonathas confirma cette alliance, &amp;.
+        <lb />en fit vn autre auec Demerrius, qui eſtoit
+        <lb />auſſi Pajen,, &amp;ſecoûrut Demrtius contre:
+        <lb />ſes ſujets rebdlles , &amp; la continua depuis!
+        <lb />auec Atiochus ſon fils, qu’ilſecourit A
+        <lb rend="¬" break="no" />ſaces Roy de Perſe, Conſtantin -le Grand
+        <lb />S’aida es Gotz, qui ſtoieut ldolatres &amp; lu
+        <lb rend="¬" break="no" /> ſtinian <pb n="21" />
+        <lb /> 21
+        <lb /> tinian trouua bon que Narles s’aidaſt des
+        <lb />Lombards, leſquels l’eſtoient auſſi. Mais
+        <lb />voyons ſi les HEſpagnolsont eſté plus ſcrupu
+        <lb rend="¬" break="no" />leux, il eſt bien certain queo le Roy François
+        <lb />premier re fut induit à̀ traiter auec le Turc,
+        <lb />que pour preuenir l’Empereur Charles
+        <lb rend="¬" break="no" />Quint, qui faiſoit rechercher le Turc par
+        <lb />ſon frere Ferdinand, lequel enuoyoit Am
+        <lb rend="¬" break="no" />baſſadeurs à Conſtantinople, auec riches
+        <lb />preſens pour demander alliance, &amp; ſe ren
+        <lb rend="¬" break="no" />dre tributaite &amp; vaſſal du Turc, pour le
+        <lb />Royaume de Hongrie, le meſme Empereur
+        <lb />s’eſt allié auec les Rois de Fez &amp; Maroc, &amp;
+        <lb />pris en ſa protection le Roy de Thunes à pre
+        <lb rend="¬" break="no" />ſontencore au Indes, les eſpgnols pntal
+        <lb rend="¬" break="no" />hiace aſac pluſiors oys. ldolaures. Le
+        <lb />Roy Férdinanid’’Arragon enuoya Pierre
+        <lb />Alarthirvers le Soldan d’gypre, pour trai
+        <lb rend="¬" break="no" />ealliancerauec luy, Alphonce di l’Aſtr9
+        <lb rend="¬" break="no" />lgu it venir, d’Afrique le ral Murin
+        <lb />aec vne grande armée de Maures en eſ
+        <lb rend="¬" break="no" />pagne, contre Dom Sancho ſon propre
+        <lb />fals qui l’aupit depoſſedé du Royaume,
+        <lb />aſſiſté du Roy de Grenade, qui eſtoit auſ
+        <lb rend="¬" break="no" />ſi Maure: &amp; leap-dela erde fils aiſne du
+        <lb rend="¬" break="no" />dit Alphonce, fit venir vne autre armeée du
+        <lb />meſme Miral Murin contre ledit D. Sancho,
+        <lb />Pierre Roy -de, Caſtille entues lesarmées
+        <lb />E <pb n="22" />
+        <lb />22
+        <lb />qu’il a dreſſées contre les Chreſtiens ſes
+        <lb />voiſins s’eſt ſerui de Maures. Acmenon Roy
+        <lb />de Tolede Sarrazin reſtablit Alphonce Roy
+        <lb />de Leon, qui s’eſtoit retiré vers lui chaſſe
+        <lb />par D. Sancho ſon frere D. Raimond ayant
+        <lb />haſſeé D. Sancho Roy de Nauarre, eutre
+        <lb rend="¬" break="no" />cours aux Maures contre D. Sancho Rami
+        <lb rend="¬" break="no" />res, l’an 1o8;. le meſme fit venir des- Maures
+        <lb /> d’Afriques, pour faire le Roy de Seuille ſon
+        <lb />beau pere, Roy de tous les Maures d’Eſpa
+        <lb rend="¬" break="no" />gne. D. Sancho Roy de Leon fut remis en
+        <lb />ſon Royaume, par le Roy de Cardouë Sat
+        <lb rend="¬" break="no" />razin: mais il nous faudroit rapporter icy
+        <lb />toute l’Hiſtoire d’Eſpagne, dans laquelle
+        <lb />telles alliances ſont frequentes. Ainſi ils ne
+        <lb />peuuent my pour le paſſé́ ny pour le preſen
+        <lb />prendre aucun auantage de cecoſté́ la.
+        <lb />Le troiſieſme reproche eſt la collerance
+        <lb /> des iafidelles ou heretiques. Encela ilsont
+        <lb />auſſi peudauantage fur la Franeé, le ale
+        <lb rend="¬" break="no" />bre des Mahometans n’eſtant pas moindre
+        <lb />en Eſpagne, que celuy des Heretiques en
+        <lb />France : car il ſe vit à l’oœilque l’lnqiiſition
+        <lb />a fait beaucoup de -Marrans &amp; dhipocrites,
+        <lb />mais peu de Chreſtiensetla pieté desFan
+        <lb rend="¬" break="no" />çois paroiſten l’eſpreuue qu’ils oht faite de
+        <lb />toutes ſortes de moiens pour reduire à l’an.
+        <lb rend="¬" break="no" />cienne opinibt êeuxqui en dnt pris-vn au¬ <pb n="23" />
+        <lb />23
+        <lb />e, laquelle n’eſt encore ſi eſloignée du
+        <lb />Chriſtianiſme que la Mahomettane ou Iu
+        <lb rend="¬" break="no" />daiſme, trop frequent en Eſpagne; ceux
+        <lb rend="¬" break="no" />ci nians la Diuiniré de leſus-Chriſt, en la
+        <lb rend="¬" break="no" />quelle &amp; en tous les articles du Simbole la.
+        <lb />nouuelle opinions’accorde auec l’ancienne;
+        <lb />&amp; cette ’toſlerance eſtant comme forcée,
+        <lb />Dieu aiahr fait voir pareffet que ce n’eſt pas:
+        <lb />ouurage d’homme; &amp; que c’eſt à lui à y met
+        <lb rend="¬" break="no" />re la main; elle ne peut non plus diminuer
+        <lb />la reputaion de la pieté Franç̧oiſe, que le
+        <lb />Roi d’aſpagne a dimlnue la ſiéie par le
+        <lb />taité qu’il a fait auecſes ſujets de céttemeſ
+        <lb rend="¬" break="no" />me Religion qui lui tiennent les Prouinces
+        <lb />vnles des Païs-bas, par lequel il leuraceorde
+        <lb />do ſeulement la liberte de leur Religion,
+        <lb />mais auſfi la Souueraineté; en quoy il eſt ex
+        <lb rend="¬" break="no" />cuſable, puis qu’il n’a pû̂ mieux faire. Com
+        <lb rend="¬" break="no" />me auſſi la tollerance de toutes Religionse
+        <lb />plufieurs lieux aux ’Ihdes eſquels l eſt le
+        <lb />plus fort, de peur de uiner le conamétce, &amp;
+        <lb />diminuer ſon reuei, qui eſt vne conſide
+        <lb rend="¬" break="no" />ratlon toutefois bien moins importante.
+        <lb />’La dethſere conſidettibn eſt la compa
+        <lb rend="¬" break="no" />raiſon de la puiſſnices dés dex Eſtaits:’les
+        <lb />Eſpagnols quir meſurent la puiſance des
+        <lb />deur eſtarsà l’aulne, n’oublient de conter
+        <lb />en la Mappmbonde tous les lleux &amp; millles
+        <lb />; <pb n="24" />
+        <lb />24
+        <lb />qu’ils poſſcde nt és quatre parties du monde,
+        <lb />&amp; cela parmy ceux qui ne ſçauent en quoy
+        <lb />eonſiſte la puiſſance d’vn Eſtat, a de l’eſclat
+        <lb />&amp; de l’apparence, &amp; fait beaucoup de
+        <lb />hruit, mais peu d’effet. Car auec tous ces
+        <lb />grands Eſtats, en cinquante ans les Roys
+        <lb />d’eſpagne n’ont peuvenir à bout d’vne poi
+        <lb rend="¬" break="no" />gnée de gens aux l’ais has. Et bien que les
+        <lb />deux tiers de la rrance le fauoriſaſt, il n’a
+        <lb />peu non plus venir à bout de l’autre tiers,
+        <lb />lequela ſouſtenu non ſeulement les forces
+        <lb />d’eſpagne: mais auſſi celles qu’il auoit ca
+        <lb rend="¬" break="no" />maſſées d’ltalie, d’Allemagne; &amp; des autres
+        <lb />Eſtats qu’il poſſede. Il faut donc recognoi
+        <lb rend="¬" break="no" />ſtre que la puiſſances d’vn ſtat conſiſte
+        <lb />non à̀ l’eſtenduë, mais au nombre &amp; en la
+        <lb />valeur des hommes, &amp; en l’abondancedes
+        <lb />choſes neceſſaires. Pour cetre derniere i’e
+        <lb rend="¬" break="no" />ſtime qué les Eſpagnols cederont aiſément
+        <lb />cetre prerogatiue à Ia France, puis que la.
+        <lb />ſeule rjcheſſe de la Franc canſiſte en fane
+        <lb rend="¬" break="no" />ce ſſité qu’ils oai de ce qui y croiſt, laquelle
+        <lb />a eſté quelques anneées ſi grande parmy eux,
+        <lb />qu’auec lecs eus ple l’aaige ei pn
+        <lb />ſeulemenit, ls &amp;e J’irgept uilis auoin
+        <lb rend="¬" break="no" />nis auſſi quantite ſe perles &amp; de pierreries
+        <lb />n’ayans plus moyen de payer’autrement
+        <lb /> Quant au nombro d hommes, la ſeuleFrn
+        <lb rend="¬" break="no" /> -. ¬. ..
+        <lb />? ce en <pb n="25" />
+        <lb />25
+        <lb />e en fournira pour ſortir hors le pais plus
+        <lb />que l’ſpagne, s’eſtant en la Prouence &amp; le
+        <lb />bas Languaedoc ſeulement, qui ſont les
+        <lb />Prouinces les moins peuplees de France, le
+        <lb rend="¬" break="no" />ué au commencement des troubles vingt
+        <lb rend="¬" break="no" />deuxmilles hommes, ſans que pour ce elles
+        <lb />fuſſens deſarmées ny ’que l’on s’apperceuſt
+        <lb />de la diminutiomdu peuple; que ſi ce nomi
+        <lb />bre eſtoit ſorty à vn coup dEſpagne il y pa:
+        <lb />roiſtroit dauantage. &amp; aux armd́os quiſe ſont
+        <lb />faites de part. &amp; d’autre, lenombre dos ran
+        <lb rend="¬" break="no" />Sois a preſque touſiours eſte auſſi grand.
+        <lb />&amp; quelquefois l’a eſté plus que eeluy des
+        <lb />eſpagnols &amp; ltuliens enſemble. pris des
+        <lb />ſtats depaendans d’ſpagne:&amp; ſi bien les
+        <lb />Roys derance ſe ſont ſeruis d’eſtrangets.
+        <lb />cela n’a pas eſté faiute de Frarrçois, mais pour
+        <lb />n’en vouloir pas tant aguerrir, de peur de
+        <lb />les deſbaucher de leur trauail onrdinaire, &amp;
+        <lb />pour éuier beaucoup d’autres iuconue
+        <lb rend="¬" break="no" />niens que l’on peut craindre d’vn trop
+        <lb />grand nombre de gens de guerre en vn
+        <lb />Eſtar: cqué le Roi d’sſpagne ne craint pas
+        <lb />des ſiens, pouree qu’ilen a peu,-&amp; qu’il les
+        <lb />ſepare en pays loing rains les vns des autresx.
+        <lb />Pour la valeur, il faut rconnoiſtre que la
+        <lb />France eſt habitée de deux peuples, quiont
+        <lb />acquis plus de repuratio en la guarre qu’au¬ <pb n="26" />
+        <lb /> 6
+        <lb />cun autre. Si nous conſiderons ce qu’ônt ſair
+        <lb />les- aciens Gaulois, nous trouuerons pe
+        <lb />’androits en l’Europe où ils n’ayene mis le
+        <lb />pled.
+        <lb />.1
+        <lb />. I’eEſpagnolfurenncocrains de lesrece
+        <lb rend="¬" break="no" />uoieparni eux, &amp;ſe ſont rendus plus redou
+        <lb rend="¬" break="no" />ablos fous le uon de Celuberes que d’I
+        <lb />beres. Rome pomatroit contre toutes les
+        <lb />utresnatibns pour lhonneur &amp; la reputa:
+        <lb />tion: mais contre les Gaulois, les Romains
+        <lb />eſtimoient quuly alloit non ſeulement de
+        <lb />eur liberteé́, mais auſſi de leurs vies: &amp; ont
+        <lb />confeſſe librementque de toutes. les na
+        <lb rend="¬" break="no" />tions eſtrangeres, aucune ne leur a apporte
+        <lb />plus de dommage &amp; d’eonnement que
+        <lb />celle-là; les Grecs ne les ont pasmoins re
+        <lb rend="¬" break="no" />doutez, au trauers deſquels il ſe sot fait voye
+        <lb />pour aller iuſques en Aſie: verifiant ce que
+        <lb />leurs Ambaſſadeurs direnrvn iour à Alexan
+        <lb rend="¬" break="no" />dre; que les Gaulois ne craignoient rien, ¬i
+        <lb />non que le Ciel tombât. lules Ceſar qui eſt
+        <lb />vn teſmoin irreprochable, pour auoir re.
+        <lb />connu de plus pres ce que cette nation pou
+        <lb rend="¬" break="no" />uoit, ne craint point d’auoüer que ſi elle
+        <lb />eſtoit vnie, tout le reſte du Monde ne lui
+        <lb />pourroit reſiſter, n’ayanrt gagneé́ d’auantage
+        <lb />ſureux que par leur deſvnion; &amp; ſi bien les
+        <lb />Romainsapres l conqueſte qu’ils ont faite, <pb n="27" />
+        <lb />y
+        <lb />ont cherche tous les moyens de perdre &amp;
+        <lb />amolirces courages: neantmomsil ſemble
+        <lb />que puis apres pour les reueiller, Dieu ait
+        <lb />luſcité les François Nation voiſine peu difte
+        <lb rend="¬" break="no" />rante d’humeur &amp; de conuerſation, auſ
+        <lb rend="¬" break="no" />quels uſſi-toſt qu’ils ont paru deç̧à le Rhin,
+        <lb />ceux qui eſtoient iſſus des anciens Galois
+        <lb />ont tendu les mains &amp; ſe ſont vnis, nonſeu
+        <lb rend="¬" break="no" />lement pour ſecoü̈er le ioug des Romainss
+        <lb />mais auſſi pour chaſſer l’impieté Arrienne,
+        <lb />de laquelle faiſoient profeſſion les Bou
+        <lb rend="¬" break="no" />guignons &amp; les Viſigots. Depuis its ont con
+        <lb />tinué à faire preuue de leur valeur contre les
+        <lb />Idolatres en Turinge, Saxe, Bauieres, Suau
+        <lb rend="¬" break="no" />be: puis contre les Friſons, Eeſclauons, Vini
+        <lb rend="¬" break="no" />des, Vilſes, Obottides, Bohemes,; Mora
+        <lb rend="¬" break="no" />ues, Carinthiens, Auſtriens, Hongres, Sar
+        <lb rend="¬" break="no" />razins, Lombards, Soldans d’Egipte, Tures,
+        <lb />Bedonins Aſſaſſins. A leur valeur eſt deu
+        <lb />1
+        <lb />l’Eeſtabliſſement par Charlemagne de l’em
+        <lb rend="¬" break="no" />pire en Occident; la conqueſte de celui
+        <lb />d’Orient, par les Latins ſous Balduin; celles
+        <lb />des Royaumes de Naples &amp; Sicile ſous les
+        <lb />Normans, &amp; de Hieruſalem ſous Godefroy
+        <lb />de Boüillon.
+        <lb />Tous ees exploits quiont eſtéaccompa
+        <lb rend="¬" break="no" />gnez d’vne Piere egale à̀ loeur valeur, &amp;
+        <lb />qu’aucune autre nation n’a egalénie nom¬ 1
+        <lb />. <pb n="28" />
+        <lb />28
+        <lb rend="¬" break="no" />bre ni en qualité́, ont donné telle preemi
+        <lb rend="¬" break="no" />nence par tout le Monde aux François, que
+        <lb />rous les Occidentaux ſont appellez Francs
+        <lb />en Leuant; &amp; iuſques aux lndes meſmes
+        <lb />auant que les Efpagnols y arriuaſſent: &amp;
+        <lb />nommant le Roy ſimplement, l’on en
+        <lb rend="¬" break="no" />tendoit, de celuy de France, ainſi qu’e
+        <lb rend="¬" break="no" />crit Suidas Auteur Grec, &amp; Boniface de
+        <lb />,
+        <lb />Vitalinis teſmoigne cela auoir eſté com
+        <lb rend="¬" break="no" />mun &amp; ordinaire de ſon tomps à Rome. Par
+        <lb />les Decretales de Paul premier,. ſtienne
+        <lb />lII. Adrian premier, Nicolas premier, lean
+        <lb />VIII. lnnocent&amp; Honoreé IlI. les Rois de
+        <lb />France ſont appellez tres Chreſtiens: non
+        <lb />ſeulementpour eſtre oincts d’huile Celeſte:
+        <lb />mais auſſi pour auoir aſté &amp; eſtre l’vnique
+        <lb />Aſile, &amp; Refuge des l’apes affligez, &amp; le mur
+        <lb />inexpugnable de la Chreſtienté, coemme les
+        <lb />appelle Honoreé llI. ou eommedit vn autre
+        <lb />Pape, la Trouſſe &amp; arquois, d’où Dieu
+        <lb />deploie ſes traits pour ſouſmettre &amp; conſer
+        <lb rend="¬" break="no" />uer en ſon obeyſſance les autres Nations.
+        <lb />Saint Gregoire Pape a iugé &amp; eſcrit que le
+        <lb />Roy de. France ſurpaſſoit dautant tous
+        <lb />les oys des autres nations, que la dignité́
+        <lb />Royalle excede par deſſus les autres hom
+        <lb rend="¬" break="no" />mes: &amp; ſon ſucceſſeureſtienne l II. du nom,
+        <lb />dit que la Naton Françoiſe reluit pa deſſus
+        <lb />toutes <pb n="29" />
+        <lb />
+        <lb />29
+        <lb />toutes les autres. Comme auſſi Balde dit,
+        <lb />que les Banieres de France marchent les
+        <lb />premieres, ſur leſquelles aucun autre Roy
+        <lb />ne peut pretendre auantage d’honneur: &amp;
+        <lb />ailleurs dit que les Rois de France portent
+        <lb />la Couronae de Liberté &amp; de Gloire par de
+        <lb rend="¬" break="no" />us tous les autres. Par les decréts Prouin
+        <lb rend="¬" break="no" />iaux de toutes les Egliſes Carhedrales im
+        <lb rend="¬" break="no" />priaeé́es à Roma iuſques aà preſent, &amp; par
+        <lb />le regiſtre dela Cour Romailne auſſi impri
+        <lb rend="¬" break="no" />me, Ie Roy de France eſt mis le premier des
+        <lb />autres Rois, &amp; le Roy d’Angleterre precede
+        <lb />us les Rois des Royaumes d’Eſpagnecon
+        <lb rend="¬" break="no" />re lequel outefois celui de Caſtille fit tiant
+        <lb />au Concile de Baſle l’an tj4. qu’il emporta
+        <lb />la preſeance; mais Volateran au neufieſme
+        <lb />liure, dernier chapitre, eſcrit que du temps
+        <lb />de Ferdinand V.certe cauſerfat derechef
+        <lb />plaidee à Rome &amp; terminee n faueur da
+        <lb />Roy d’Angleterre par lules l.Les Anglois
+        <lb />anciens ennemis des François, ont touſiours
+        <lb />reconnui la peſeance de France :; &amp; frere
+        <lb />Mathieu Religieux de ſaint Albande Lon
+        <lb rend="¬" break="no" />dres, dit que Rex Frecoram, Regu cenſerur
+        <lb />digmiſſimus&amp; en l’a555. au Chapiore tenu la
+        <lb />veille ſainu Georges par les Cheualiers de
+        <lb rend="¬" break="no" />l’Ordre de la lattere, fut atreſte que le oy
+        <lb />de France re tiendroit ſa place au coſté droist.
+        <lb />H
+        <lb />r¬¬ <pb n="30" />
+        <lb />
+        <lb />.30
+        <lb />duChefde l’Ordre, oomnmœ laplusaparent
+        <lb />lieu; &amp;le Roy d’Eſpagne ncotequ’il ouſt
+        <lb />oſpouſé Marie lour Royne, demeureroità
+        <lb />gauche; &amp; depuis oela a eſté derehef lugé
+        <lb />à Rome &amp; à Veniſe, la ſueoez desaffares d1.
+        <lb />talie aà l’auantage des Eſpagnols ’ayane rien
+        <lb />diminué de la greandeuir de la puiſſance des
+        <lb />Rois de France, comme n’eſtant pas deu au
+        <lb />ſeules armes des ſpagnols, mais à celles
+        <lb />d’Allemagne, Angleterre; ’&amp; lealie ,que
+        <lb />l’on aveu toutes coniurees à vnfois contfe
+        <lb />la France, laquelle les a ſouſtenuës, defa
+        <lb rend="¬" break="no" />4on qu’elles u'on peu eſbranler ſa Couronne,
+        <lb />qu’elle neſe ſoitelouee &amp; paru auſſi puiſſa
+        <lb rend="¬" break="no" />te qu’auparauant; non plus fau-il queles
+        <lb /> Eſpagnols vantent la conqoeſte qu’ils ont
+        <lb />fait des lndes pourpreuueſe leur valeur: en
+        <lb /> laquelle comme ils onacereu leunoomme
+        <lb rend="¬" break="no" />ce, ils ont auſſi diminué grandament leur
+        <lb />reputation, ny ayant point eu’de valeur à
+        <lb />oombatre contre des gens, non ſealemeat
+        <lb />auec des armes, maisauſfi tous auds, qui au
+        <lb />bruit d’vn canon ou ̀ la veuë̈s d’ va-oheual
+        <lb />fuibieaà milliers. Au cotraits, ilbotac
+        <lb rend="¬" break="no" />quis beaucoup de blaſme deſgorger auec
+        <lb />tant de cruauez vn ſi grand nonabre deaes
+        <lb />pauures gens qu’ilsi one deſpeuplé́ la plus
+        <lb />part des prouinces de os uaruiep la eote <pb n="31" />
+        <lb />3i
+        <lb />;
+        <lb /> e¬
+        <lb rend="¬" break="no" />inhumanité́ ayant paſſé ſi auant( comme les
+        <lb />leurs meſmes eſcriuent) qu’en vne iſle de ſix
+        <lb />cens mille habitans, ils n’ont laiſſe que quin
+        <lb rend="¬" break="no" />ae perſonne. C’eſt vne partie des raiſons &amp;
+        <lb />autoritez ſur leſquelles eſt fondée cette pre
+        <lb rend="¬" break="no" />ſance de France, reuoqué́e en doute par
+        <lb /> lesſeuls Eſpagnols; qui des quatre nations
+        <lb />Oecidentales ont fait touſiours la derniere.
+        <lb />FIN. </p>
+    </body>
+  </text>
 </TEI>

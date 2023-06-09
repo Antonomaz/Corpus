@@ -1,1179 +1,646 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1885_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Lettre d'un marguillier de Paris à son curé sur la
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Lettre d'un marguillier de Paris à son curé sur la
           conduite de monseigneur le coadjuteur.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName role="XML_Encoding">
-						<affiliation>
-							<roleName type="status">Stagiaire</roleName>
-						</affiliation>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="XML_Encoding">
+            <affiliation>
+              <roleName type="status">Stagiaire</roleName>
+            </affiliation>
 Roblin Camille					</persName>
-					<persName role="XML_Encoding">
-						<affiliation>
-							<roleName type="status">Stagiaire</roleName>
-						</affiliation>
+          <persName role="XML_Encoding">
+            <affiliation>
+              <roleName type="status">Stagiaire</roleName>
+            </affiliation>
 Lecha Mélanie					</persName>
-					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-06-08">8 juin 2021</date>
-				<availability status="restricted" n="cc-by">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=Nj1KAAAAcAAJ"/>
-					<author ref="isni:0000000118096563">
-						<persName>
-							<forename>Jean-François</forename>
-							<surname>Sarasin</surname>
-						</persName>
-					</author>
-					<title source="Moreau">Lettre d'un marguillier de Paris à son curé sur la conduite de
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-06-08">8 juin 2021</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=Nj1KAAAAcAAJ" />
+          <author ref="isni:0000000118096563">
+            <persName>
+              <forename>Jean-François</forename>
+              <surname>Sarasin</surname>
+            </persName>
+          </author>
+          <title source="Moreau">Lettre d'un marguillier de Paris à son curé sur la conduite de
             monseigneur le coadjuteur.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1651">1651</date>
-					<extent>
-						<measure unit="page" quantity="19"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2761369">Vienne</settlement>
-						<institution>Bibliothèque nationale d'Autriche</institution>
-						<repository/>
-						<idno type="cote">127392-B ALT MAG</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1651">1651</date>
+          <extent>
+            <measure unit="page" quantity="19" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2761369">Vienne</settlement>
+            <institution>Bibliothèque nationale d'Autriche</institution>
+            <repository />
+            <idno type="cote">127392-B ALT MAG</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">1885. Lettre d'un marguillier de Paris à son curé sur la conduite de
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">1885. Lettre d'un marguillier de Paris à son curé sur la conduite de
           monseigneur le coadjuteur. Paris, 1651, 19 pages. Le cardinal de Retz, qui nous apprend
           qu'elle est de Sarrazin, secrétaire du prince de Conty, dit que c'est une fort belle pièce
           ( p. 258, de ses Mémoires, coll. Michaud). Mailly la juge au con traire très-sévèrement
           dans la note de la p. 392 de son IVe vo lume. On se rangera assurément, sans hésiter, de
           l'avis du cardinal. Personne n'ignore que Patru a publié la Réponse du curé, etc.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">lettre</term>
-					<term type="subject"/>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_49" source="Moreau">
-					<p>Retraite du Coadjuteur</p>
-					<date when="1651-04-05">1651-04-05</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-10-06" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<pb n="12"/>
-				<pb n="13"/>
-				<pb n="14"/>
-				<pb n="15"/>
-				<pb n="16"/>
-				<pb n="17"/>
-				<pb n="18"/>
-				<pb n="19"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-LETTRE
-         D’VN
-        MARGVILLER
-        DE PARI S,
-        CVRE
-        Sur la conduite de Monſeigneur
-        LE COADIVTEVR.
-         APARIS,
-        M. DC. LI.
-         12S2-B 
-        1
-        1
-        A,
-        e 
-        s
-         A
-        8 A
-        Earrea
-        TSSSS
-        Lettre d’vas Margailler de Paris d̀ ſon Curé, ſar la
-        conduite de Monſeigmeur le Coadjutear.
-        AIONS IEVR
-         I’ay leu l’Aduis deſ-intereſſé ſur la con
-        irte de Monſieur le Coadjuteur, &amp; ſuiuant ſes or
-        dres &amp; le voſtre,j’en ay fait part aux plus notables
-        Bourgeois de mon quartier; C’eſt vne choſe bien
-         faſcheuſe de voir ce Prelat reduit à compoſer des
-        Apologies dans vn temps où il ne deuroit plus
-        auoir d’aurre penſée que de continuer ſes intri¬.
-        gues, afin d’entrer dans le Miniſtere Si les mouue
-        mens qui nous agittent depuis quatre ans, ne doi
-        uent ceſſer que lors qu’il y aura part ; Pleut à Dieu
-        pour ſon repos &amp; pour le noſtre, qu’il y feuſt deſia
-        bien eſtably, Sans mentir il faut aduouër que c’eſt
-        vn homme admirable, il eſt ſçauant, il eſt ferme,
-        &amp; l’on voit dans toutes ſes actions le caractere
-        d’vn eſprit pouſſé d’vne belle ambition, il eſt elo
-        quent, &amp; il ne fit iamais mieux que de mettre luy
-        meſme la main à la plume pour faire ſon Panegy
-        rique eſtant noſtre Archeueſque, il n’y a guere
-        d’apparence qu’il voulur nous dire des choſes qui
-        ne ſont pas; &amp; puis qu’il publie que iuſqu’icy il
-        n’a point eu d’autre objet que ſa propre gloire &amp; 
-        .
-        ..¬¬¬¬¬¬¬a¬¬ ,
-        ¬ 4
-        ſa reputation( penſée digne d’vn grand Prelat)
-        i’eſtime qu’il eſt à propos de le croire.
-        Cependant comme les ſentimens des hommes
-        ne ſont pas rouſiours ſemblables, lors que i’ay fait
-        la lectute de ſon eſcrit, il s’eſt trouué des perſon
-        nes fort bien inſtruites des choſes de ce monde,
-        qui ne ſont pas demeurées d’accond de tout ce
-        qu’il mer en auant, &amp; parce qu’il eſt impor
-        tant que vous ſçachiez ce qui fut dit dans no
-        ſtre conuerſation; I’ay crû que vous ſeriez bien
-        ayſe que ie vous en fiiſe part, &amp; que puis qu’vne
-        petite incommrodiré́ m’oblige de gardet la cham
-        bre, &amp; m’empeſche de pouuoir vous aller ren
-        viſite, ie vous fiſſe ſçauoir par eſcrit toutes les ob
-        ſeruations que l’on fit ſur ce manifeſte de Mon
-        fieur le Coadiuteur.
-        Toute la compagnie dit qu’il eſtoit vray, que
-        lIe iour de l’empriſonnement de Monſieur de
-        Brouſſel(qui fut ce me ſemble le iour que l’on
-        chantoit le Te Deum, pour la quatriéme bataille
-        que Monſieur le Prince auoit gagnée) Monſieur
-        le Coadiuteur fit paroiſtre tout le zele qu’vn Pre
-        lIat doit auoir pour la conſeruation d’vn bon Ci.
-        royen, qu’il dit ſes ſentimens à la Reyne auecge
-        aeroſité, &amp; qu’ayant eſté traicteé de tribun du peu
-        ple, il fie cognoiſtre qu’il auoit du credit dans Pa
-        is,ie me ſouuiens fort. bien encore de ce que le
-        Mercredy au ſoir l’ou me vint dire de ſa part, &amp; à̀
-        ou 
-        .¬
-        5
-        &amp;is lQuartoiers uii, &amp; des ardéaes,quis
-        le lrdoan eſtormorlt e rMiitna qui’auom
-        donné nſi nmupais onſetl fa dajeſt .l.
-        On it q’il eéſtoitvraày que le Roy s’eſlant re
-        dré à ſainct emain; Monſeur le Oadiuteur
-        vfat demmerâPaiss,j ee bien qu’iens &amp;
-        oy rmG’ehnlhoaN bbReyheipid ſſore
-        du cotratre, il le fitadrefteixa houde!la pu de
-        oſtrtao, &amp; ed ne eaignantpantd’po¬ .
-        ſ- ſ̀erſone por aſſemo nos arunomiue!
-        nos rroupes ſortoient pouralloràequbguahto?
-        priſe, il les hatanguit larhimeſ à la postedela
-         Ville &amp; leuodutagoitaupfe encdictil, 1
-        . O demeura d’acoonluple benaaitre alaſ,
-        aſté aceonlmoés Mo aſn ebadiniloldll
-        à Ce mpign ſdhef lene ſaietbſabsorndre:
-        uiſite au Cardirdl MaainMaes:ondiup s’e
-        ſtoit vyse ondit ion dudtraſn ûuounſiurlSor
-        uieae aeifait ondeoliiqulapondi gairdéabpe
-        plus lngeémps lasdeh aupibeſd dafoli
-        d Monſieurle Coadiut eur ertoitdei Mai.
-        inque dans le Palais Royal; Es en edſeous ſaa
-        utns vbousqual levirpſieur, isphisl ſanb¬l
-        , dabsen fmes ſcmdabiaéasai:’! l L
-        Oodlt qa’l:eſtoit vraqlavalelrfne yant?
-        ropploleule ûarihal bazarin a. eCnauréur;
-        luy fit offres de ſeruice &amp;daaesiad,aihqo
-        adêcehayp abx letenoaur onefhon
-        Iq ur Le edSoniILms 
-        re las nains de ſon Alteſſe Royalde, ue de
-        mettre les armes entre les aains du peuplo, h
-        geãt bien que cela ſeroit de trop grãde cõſeque¬.
-        ce pour le lſeruice du Roy, &amp; pour le epos publie.
-        Ons demeura d’aceort que les Princes ayaae
-        eſté espriſonnez, Monſieur le Coadoeu meſ.
-        nage ſi bien l’eſprit de Moaleur l Duc d’Or
-        leans qu’il le fit declarer haemeae eonre le
-        Cardinal Mazarin, &amp; pour laliberté́ de onfear
-        Ie Prinee; aais apres auoir long-temps agié, ſ̂
-        Monſiaax lé Coadiuteur prit cette cc:duite pour
-        rendae ſeuice au Prince, ou pour ſes incereſts par
-        ticuliers, toute la compagnie eonclut, ques’il eue
-        pû caaſſer le Cardinaldu miniſtere ſaua faire ſor
-        it Mefſieurs les Priacea de priſoa, il a’eut pa
-        oanqueé de le faire qo’ea efſot il fie cout lon poſ
-        ſible pour ſe rendre maiſûtre de leursperſonnes,
-        qus lors que le Mareſehal de Turenne appro
-        choit de Paris, iloouloit qu’on les ameat dans
-        la Batille, &amp; que lors qu’il vir qu’on les eondu¬.
-        ſoitauhlavre, deſeſperans de oir reiiſiir ſon del
-        ſein, &amp; appehendaat le retour du Cardinal,apres
-        labataille de Rhetel, il ſe ioignitt aui party ds aeſ
-        ſieurs les Princes pour trouuer ſa ſeureté, &amp; que oe
-        fuc eacore à des conditions ſi rudes, qu’il vouln?
-        plaſtotſe falre ecognoſte le Tyran que le libera
-        eude Monſieur lePrince.
-         a nm demeuea pas d’aeeoe que la ſuite de
-        ous les eſeins de Monſieur le Coadinteusr peus 
-        ere la marqe d’vne vertu inébranlable, qu
-        toutes les actions paſſees de onſieur le Ptince
-        euſſent eſté condamnés par toure la France; Au
-        contraire, on dic que l’ nauoit veu ſouuent on
-        ſieur le Coadiuteur occupé à chanter des Te.
-        Deas pour les belles &amp; gloricuſles acioans que,
-        nuonſieur le Prince auoit faites, mais que o
-        ſieur le Coadiuteuir n’auoit point encores iuſques
-        icy obtenu de ſon Chapitre vn ſeul Te Dças pous
-        cout ce qu’il auoit fair.
-         On dit qu’il eſtoit vray que lots que monſieu
-        IepPtince auoit demandé l’éloignement de ceux
-         qui eſtoient dans les intereſts du Cardinal, on
-         ieur le Coadiuteut en auoit eſté dauis, &amp; que
-        pour ſe faire encenſer par le peuple, il auioit fais
-        inprimer ſon ppinion, mais quelqu’vn adioſta
-        qu’il auoit en cette occaſion manqué aà ce qu’i
-        aoit promis à M. de Lyõne dans les ſecrettes con.
-        enaaces qu’l auoit eus auecque luy, &amp; que dans.
-        la deliberation qui ſe fit ſur le mariage de on
-        eur de aereœur, il auoit ſuiuy fieremene l
-        çoncluſions de eſſieurs lesgensdu Roy.
-         Dans l’endroit oil eſt dit que h. le Coadiu
-        euar eonſentois au resout duCad Mou preni;
-        quelqe ſecret engagement auee luy cmme il
-        auoit deſia fait autrefois, loas qu’il l’auoiiugé ne
-        ceſſair pourſes intereſts)il penoit co qu’il auait!
-        acquis d’honeut &amp;s de edéondit quemalhe;: 
-        Feſe &amp;t pour luy eela n’etoit deſi que trop vray.?
-         Su’eeqle ’on dit que pour décrier u le Coad?
-        ihteur;onſs’eſt aduiiſé depuis peu de publier qu’i
-        alloitau Palais Royal, qu’on parloit de lefaireMi
-        nſtre, &amp; de le rettre dans les conſeils du Roy, on
-        demetifa d’ccrt que la choſe eftoit vraye, quE
-        idane e Chereuſeauoit negocié ſon accosà
-        modeent, qu’ilauoit eſté introduit che la Res
-        ne’ſecrtterment par Courtois, qu’il auoitreſpondur
-        à ſa aiefté de m.le Duc d’Orleans, du Parlement,
-        &amp; dupeuple;&amp;qu’ilëſtoit fàcile de ſger qll y
-        auoit long témps qu’il aſpiroit auiniſtere, quiel
-        ques proteſtations gu’il fit du contraire, que la te
-        talte qu’il auoit faite de Luxembourg n’uoirpae
-        ſté longue, &amp; queſe picquant d’auoir pur les;
-        grandefrs vn meſme eſprit que Diocletian; d
-        Chadt les-Quint il s’eſtoit come le premier blen
-        roſt ennuyé de la vie contemplatiue, &amp; côme ’aue
-        te tepéty d’auoir qulttéda Cour paur leCloifteol
-        -i ë demeura pas d’aetodoqq duta de doo
-        cs de Paris, il eut r’efuſé́ pluiets fois lechapeauà
-        de Card. &amp; pteferé́ la eaüſtdtpeuple à cette emie
-        entsdigitemiais au cohlraiuordequ ’ndes
-        prfncipllrſôns qi le détachu des ineereſtt
-        de A. lPeihte’ de Coneyfuttque ce Printe con
-        ſentit. potil’âconmodement des affaies que
-        l’on donnat b l’Ab de la Riuiere lo Clapeam
-        qetpatenoſgagebmnſttoparty.
-        OQ¬ 
-        3
-         On ne defneura pas auſſi d’accord qu’il eut rous
-        jours meſpriſé de ſe faire connoiſtre par l’eſclat de
-        ſa fortune, &amp; que lors qu’il negocioit pour la l
-        berté de Meſſieirs les Prnces, il eut refuſé l
-        peau de Cardinal, au contraire on dit, que deſi
-        rant d’vn coſteé de cacher ſon ambition, &amp; de
-        l’autre d’y ſatisfaire, il tira vn eſcrit particulier de
-        M. Arnaule, par lequel ledit S Arnaults’obligeoit
-        de faire en lorte que . le Prince ſeconderoit la no
-        mination qu’il eſperoit que . le puc d’Orleans
-        deuoir faire deſaperſonne pour le Carnalat.
-         Pour l’Abaye d’Orcan on dit qu’il eſtoit vray
-        qu’il l’auoit refuſé́e, mais on expliqua certe affaire,
-        en nous aſſeuirant, que dans l’accommodement
-        qu’il auoit fait auec la Cour, on luy auoit pro
-        mis le premier Benefice conſiderable qui vacque
-        roit, &amp; qu’ayant vacqué, vne Abaye de beau
-        coup plus grand conſideration que celle d’Orcan
-        le Cardinal qui la vouloit retenir pour ſoy, quoy
-        qu’il fut ongagé́de danner la premiere vacquante
-        audis ſieur Coadiuteur eſcriuit à Meſſieurs ſe Tel
-        dier &amp; Seruient, pour faire en ſorte, que monfieur
-        de Coadinteur ſe contentaâ̂t de celle d’Orcan, que
-        M. le Tellier nevoulut point ſe charger de ette ne
-        gciatioir, que Seruient l’acccpta, &amp; que M.le
-        Coadiuteurcefuſarl’Ahaye d’Orean, mais non pas
-        l’autre, qui eſtond’vu plus grand reuenu.
-        de il ſeroit
-        urqaeM, lrCoadiuur e
-        v Svvuue a ao¬ 
-        dans les intereſts du Mazarin, quand bien il en
-        treroit preſentement dans le Miniſtere; &amp; ſi tout
-        le monde n’eut pas eſté bien aiſe, qu’il y eut eſté
-        eſtabli apres l’expulſion du Cardinal, toure la
-        Compagnie conclud, qu’il eſtoit impoſible dans
-        l’eſtat reſent d:s affaires, qu’il y entraſt ſans auoir
-        trairé auec le Cardinal, que la Reyue conſeruant
-         touſiours beaucoup d’affection pour ce Miniſtre,
-        tous ceux qui pretendoient receuoir quelque gra
-        ce de ſa Maieſté, commençoient l’eſtabliſſement
-        de leur fortune en luy promertant de contribuer
-        leurs ſoins pour ſon retour, &amp; que la Reyne apres
-        la ſortuie du Mazarin, n’eut iamais conſenti que
-        M. le Coadjuteur eut entré dans le Conſeil du
-        Roy, puiſque ſa Majeſteé eut approuueé́ par ce con
-        ſentement la conduitte de ce prelat, qu’elle a ſi
-        ſouuent aceuſe d’ingratitude, &amp; de faction.
-        Quant à l’aricle où il eſt dit, que M. le Coad
-        jureur eſt trop prudent pour enxfr dans le Min
-        ſtere par la voye du Maœarin, &amp; qu’encone qu’
-        le veüille attirer par des proteſtatiois contraires,
-        il ſcçait bien qu’il n’y a pas trop de confianceà̀ la
-        Cour, &amp; que les chaſes paſees peunen eſlree
-        fondement d’vne iſte&amp; veritabole: eraine; clla
-        uh dit que monfieur le Coadiutea n’uioipg
-        ujes de ſe plaimdré de la dour, puis q’outre
-        dignité auclaquelleit pretend eſte à couaede
-        doible aee de aeſanimel, e yat oeu 
-        
-         n1
-        rant d’autres graces pour ceux de ſa faction, il a
-        touſiours manqué aà ce qu’il auoit promis à̀ la Rey
-        ne &amp; aà ſesminſtres, qu’il eſtoit bien plus heureux
-        queM. le Prince, qui auoit touſiours fidellersent
-        ſeruy leurs Majeſtez, &amp; qui cependant auoit eſté
-        recompenſé de tant de ſeruices par vne priſon de
-        treize mois, reconneuë iniuſte par vne Declarationm
-        du Roy, verifiée dans le Parlement, &amp; que c’eſtoit
-        à M le Prince à dire que les choſes paſſeées peu
-        uent eſtre le fendement d’vne iuſte &amp; veritable
-        crainte.
-        Oa examina fortement l’article, où il eſt dis
-        qu’il ne faut point rsop éleuer des hommes dont
-        nous ne pouirrions pas eſtre les maiſtres, &amp; ouù̀ il
-        eſt paslé de ces nouuelles accuſations enuoyé́es au
-        Parlement contre M. le prince, &amp; des maximes
-        de cette politique, qui aſſeurs que le credit eſt plus
-        dangereux dans la perſonne des Prinees que des
-        partieuliers: on iugea que tout ce raiſonnement
-        partoit d’vn eſprit fort amhitieux, &amp; dont les pro
-        jers eftoient eſpouuentables, puis qu’il auoir re
-        grer de ne pouuoir ſe rendre metere duſangRoyal,
-        ha M. le Curérque veut dire cela ſont-ce desſe
-        iments, qu’vn rrelat doiue inſinur qams. beſpr
-        des Peuples Cé́t eſurlt Anglois qu’on a fait bruſler
-        depuis peu par la main du Bourreau a-t’il quelque
-        hoſe de plus pernicieux?
-        eanant auxaecuſationms, thaun dtt que la De
-        1 
-        clatation de S. A.R les auoit deſtruittes à la con
-        fufion de ceux qui les ont calomnieuſement in
-        uenté́es, que tous les Miniſtres les deſ-aduöoient,
-        &amp; que ces abominables monſtres de ſe dition, qui
-        auoient donnéce pernicieux conſeil à̀ la Reyne,
-        n’auoient garde de ſe nommer de peur d’eſtre dé
-        chirez par les fidelles ſeruiteurs de la maiſon
-        Royalle; que M.le prince demandoit iuſtice tous
-        les iours; que l’on-vouloit vſer ſa patience par des
-        delais: que l’on vouloit gaignet la ajorité du
-        Roy par des contmuelles rerſes, &amp; que ceux qui
-        donnent de tels conſeils, ont vne Pollitique que
-        tous les ſubjets du Roy doiuent apprehender;
-        qu’il n’y anoit guere d’aparence qu’ils euſſent deſ
-        ſein de leur faire iuſtice quand ils auroient l’au
-        thorité en main dans vne Majoriré puis qu’ils la2
-        refuſoient au premier prince du Sang; iniuſte
-        ment calomnié dans les deniers iours de la Re
-        genee, qu’ls voulaient par cette coaduitte obli
-        ger M. le PErince aà ſe retirer, de peur qu’l nefut
-        le ceſmoin de leurs factions, &amp; l’obſtacle de toute
-        leuts intrigues;. Que les remonſtrances du ’pa le¬.
-        maent ſurce ſujet auoient eſteé tres viguireuſes,
-        que . le premier reſident auoit dit qu’on ne
-        pouuoit doucer de la fideliré́ de . le prince, ’puis
-        qu’il l’auoit ſi ſouuent ſcelée auec ſon ſang Roya,
-        &amp; que ſi le ppier quia eſté́ enuoyeé au Par lemens,
-        n’eut porté le uo ddRoy, on ’eus raitteé conmme
-        
-        
-        13
-        vn eſcrit qui n’eſtoit point reueftu de toutes les
-        formes neceſſaires. Vous entendez bien que cela
-        veut dire biffé, &amp; laceré.
-        Sur l’article ou il eſt dit que les princes qui nous
-        promettent auiourd’huy de bel’es choſes les ont
-        autrefois promiſes &amp; ne les ont pas tenüs, &amp;
-        qu’auparuant le blocus ils auoient donné parole,
-        qu’ils ſeroient nos protecteurs, &amp; cependant
-        qu’on les vit incontinanc apres à la teſte des trou
-        pes ennemies. On aſſeura qu’il eſtoit faux que
-        M. le rrinceſe fut iamais engagé auec M leſCoad
-        juteur, &amp; qu’apres le retour du Roy en
-        M. le prince demanda à m. le Coadjuteur en
-        ſence de . le Prince de Conty, de . de Cham
-        platreux, &amp; de trente autres perſonnes de qu
-        teé́, s’il eſtoit vray qu’il luy eut iamais donn
-        cune parole d’engagement, &amp; que M. le Coadju
-        eur demeura d’accord, qu’il n’en auoit iamais re
-        ceu de . le Prince, cela fut aſſeuré par cinq ou
-        ſix qui aſſiſftoient à la leure de l’eſcrit.
-        Au reproche que l’on fait à̀ . le prince d’auoir
-        voulu faire perir M. l Coadiuteur par des voyes
-        contraires à nos mœurs, quelqu’vn dit que ce
-        mal-heureux procez auoit cauſé bien du deſor
-        dre, mais qu’il eſtoit bien mal aiſé de dé́nmeler
-        toutes ces intrigues, qu’il eſtoit certain que le
-        Crdinal, s’en eſtoit ſerui pour perdre M. e Prince,
-        mais que c auoit eſté de concert auec M le Coad¬ 
-        14
-        juteur, qui plus de quinze iours auparauant ſa
-        ioſtificarion alloit tous les ſoirs au palais Royal
-        déguiſé, auec des habits de couleur &amp; des plu
-        mes, que c’eſtoit luy qui auoit pris ſoin de par
-        rain Deſcoutures, qu’il l’auoit recommandé au
-        Curé de S. lean de Greve, qu’il le tint. caché́ dans
-        le clo her de ſon Egliſe durant tout le procez,
-        que c’eſtoit M. le Coadjuteur qui auoit ſollicité́
-        l’amniſtie de Deſcoutures, de Deſmartinaux, Can
-        to, &amp; Sociando: Enfin que depuis ce temps-là̀
-        on auoit veu M. le Coadiuteur en parfaite intelli
-        gence auec les ennemis de M. le prince.
-         Dans l’endroit où il eſt dis que m. le prince a
-        reuele les conſeils que m. le Coadiuteur luy auoit
-        donnez auec ſincerité de cœur &amp; que par ſa re
-        ponſe il ne nie pas abſolument de n’auoir rien
-        ſceu du changement de conſeil qui fut fait à Paſ
-        ques dernier. Chacun ſe iéeria que . le Prinee
-        auoit rien dit que tout le monde ne ſceut deſia,
-        mais que . le Coadiuteur auoit fort déguiſé la
-        vetité dans le Parlement, puis qu’il n’auoit pas
-        die, que ſur la propoſition qu’il auqie faite, . le
-        rinceauoitreſpondu, qu’il n’entn doit point la
-        gerte des tuilles &amp; des pots qu’on iette par les
-        fineſtres, ce qui eut fait iuger quele prince ’a
-        aloit vinaacé qui np fut vray, &amp; quant au
-        hagement de Oonſel,jon ne treuua quetrop de
-        éuſtiflcation dans la reſponſe de m. le Pſince. 
-         16
-        Sut l’article où il eſt dit qu’on ne peut auoir du
-        tout de confiance à i. le prince, que c’eſt baſtir
-        ſur vn ſable mouuant, &amp; ſur des eſperances incer
-        taines. Toure la compagnie iurgea’que . le
-        oadiuteur fait cette plainte pour quelques inte
-        reſts particuliers, pour leſquels on ne creur pas
-        qu’il fuſt à propos d’approuuer toutes las in
-        trigues qu’il fait auec Madame de Chevreu
-        ſe pour ſe venger; l’on adiouſta que noos
-        ne deuons auoir que le bien public deuan
-        les yeux, &amp; l’on demanda en ſuitte ſi l’on
-        deuoit ſe fier aà vn homme qui faits ſt ruis la
-        chaiſe de verite aà ſes cabales, qui proteſtemille
-        fois lIe iourqu’il a renoncé aux affaires, qu’il ne ſe
-        meſle que de ſifler des linoues, &amp; qui cependant
-        court le iour &amp; la nuict pourcabaler, &amp; veuauec
-        temerité diſputer dars parisle paué au premiet
-        Prineedu-Sang, à̀ qui il doit outeſotede reſpect,
-        &amp; fait mille intrigues pour diuiſer la maiſo
-        Royalle, dont la reünion eſt- le ſeul moyen pour
-        donner la palx à l’Eſftat..
-         On demeura d’actd que lrince deuoſt
-        prendre confiance à la parold Royalle poucen
-        que ſes ennemis n’euſſent point aſſez de cndit
-        dans le Conſeil por faireprendre des reſolution
-        contraires aux bonnes &amp; iuftes inteations da ſa
-        .I
-        Majeſté́.1
-        13
-         Ondit qu’Il eſtoit vray que M le prine ne da¬ 
-        ndoit point de place forte pour oſtage, qu’il
-        ne faiſoit pas comme M le Coadiuteur qui vou
-        luſt auoir le mont Olympe pour ſon amy &amp; peur
-        la ſeureté de ceux de ſa caballe lors qu’il ſe recon
-        cilia, mais quand on leut que ſi l’on manquoit de
-        parole à M. le prince il deuoit attendre du Parle
-        ment &amp; du peuple le meſme ſecours qu’il en a deſia
-        receu, on s’eſcria que la rai lerie eſtoitforte, pui
-        que . le Coadiuteur en auoit reſpondu depuis
-        peu à la Cour.
-         Sur le reproche que l’on fait à̀ M. le prince de ce
-        qu’il ne va point au ralais Royal, que les loix fon
-        damentales l’y obligent, &amp; que le parlement l’a
-        ordonneé, chaeun dir qu’il eſtoit ialte que M. le
-        Prince rendiſt ſes reſpects au Roy, que ſon Alteſſe
-        ne deſiroit tien auec tanc de chaleur, que ſi toutes
-        les loix fondamentales de l’Eſtat eſtoient bien ob
-        ſerues, les princes du Sang ſoroient autrtment
-        conſideréz dans le Conſeil du Roy, pps qu’ils
-        ſont les, legitimes adminiſtrateurs de l’Eſtat du.
-        rant les minorirez de nos Roys, que le Cardinal
-        Mazarin comhe nſtrahger n’aurois iamais eſté
-        admis dans la niſtere; que Meſſieurs de Gondy
-        comme elrãngrs n’auroient iamais eu d’entré́e
-        dans le Conſell de nos Roys, qu’ils n’auroent ia
-        mais efté poutueus des premiers benefices d
-        Royaume, que M. le Coadiuteur ne ſerut point
-        ajour hauy e’ eſfat de vouloir temeraiteraent
-        aller 
-        137
-        iler dupris aue os Pnees e ſfroittrop heu
-        epunde ſie puaoiſreſonbabiliue dan la Sanque
-        de eloione qunaureſl lons que le eu len dlli
-        dfirede llle pinte quilad auicoirs ſtnuoni
-        ifutau deſiu de l Conpgnle &amp;e que ſaenuue
-        enoes la il ny eſoit point eourme ſ i ue
-        leans eoauonis lai ſgauolr larniſon quee
-        lienued ler nee ſnrenenr oi de le ere
-        Ier vouehoi fort au ecœus des ennemis dei le
-        Pince, qui ne ſoulaireoient pas ant lerodunn
-        pe de ſon Aleſe qeilluy dnmaſen ceonſein
-        auoir nane qelque deſeinonre fai peen
-        e u que ſapus doute l uoiens beaueoup dn.
-        pienee de le voit ſoruiraſn de rendreſa conou
-        peſiſpoea que lonvoooit pen que ein uieee
-        ea oouaierneeptalenrt que leuni nlde nt
-        eſns puis qu lu pupnent qi eutnieun ſir
-        le enre ile qeie l ſondeir u ie eirnen re
-        Se deno ens de de ln pemenre de ſe eſie
-        des qalomnie qu on ſuy ſnp ſe r nnn edne
-        e iun uie le imbneoui oounie nr enr ep eunr
-        leleineſes pne e pre rneſone de l ſe ſne
-        s’il eſt ncceſſaire.
-        e aeneura dacrod q il foit que nel
-        Puee eonibuſsſire pinn eor pulon ei
-        le pulhoue &amp;s pn oune ne doun que eue er e
-        intention.
-        Sur l’article où il eſt dit que M. le iince prosele
-        E 
-        
-        1
-        de ne point aller à la Cour, tant que l’on meitra
-        dans le Conſeil des gens contre ſon conſ nte
-        ment, bien loin d’appeller cette Declaration vne
-        irrçeqneiliation urée aueec la Cour, on demeurs
-        d’aecord que Mle Prince a iuſteſujet de craindre
-        que l’authorité du gouuernement ne ſait enur
-        les, oaains de ſes ennemis ireconciliables &amp; chaè
-        enn dit que c’eſtoit vne choſe deplorable de ſouf
-        fiir que l’intereſt de eux ou rois partieulier
-        mette l’Eſtat en confuſion, &amp; que les Peuples
-        ſtoient bien innocens de complaire a leura paſe
-        on, &amp; le vous demnde en eſiet a le Cur. ſ
-        leur pſeſenee eſt plus neceſſaire à Paris que eelle
-        de nosPrinces.
-         Quaostaucrieies de Dame Anne &amp; dereſehe,
-        ouE e pmonde die que e’eſtoient des enfauu de
-        eœnr dlauez par . le Coadjuteur, qu’lya erois
-        ans que l’n’ &amp;e l’aure chantoit les Lecons du
-        Sreoiuire qu’illeurauoit enſeigné, &amp; quil ne de
-        uoit aeeuſder de leur docrine peronne quet luy
-        meſme; mais en meſme temps tout la Compagni
-        qui ſe auoit l’hidoire daundy, ſe moequa du hu
-        ard qu’ on pretend que , le Coadjuteur y cou
-        ut ooiſque cene fuit qu’une tereur panque,
-        que depuin meme id a fait uaire des coopline
-        le amis de d le Prnee, qui ſont incapubles de
-        fes actions.
-        ’aila ce qui fut die à plus prés lo que ie faiſois 
-        1i9
-        la lecture de l’Auis Deſintereſfé, vous iugerez par
-        la que nos Bourgeois ſont aſſex bien inſtruits, &amp;
-        qu’ils lont bien las de toutes les intrigues que ces
-        eſprits broü̈illons, qui n’ont fait autre choſe, que
-        de cabaler toute leur vie, continuent de faire pour
-        troublert l’Eſtat &amp; la famille Royalle; Toute la
-        Compagnie ſe leuant dit qu’l eſtoit facile deu
-        ger que la confuſion dans laquelle nous nous
-        voyons n’a pont d’autre cauſe que le meſconten
-        temér de Madame de Chevreuſe, &amp; de . le Coad
-        juteur, &amp; qu’on laiſſoit à iuger aà ce qu’il y a de
-        gens d’honneur, &amp; de bons François dans le
-        Royaume, s’il eſtoit iuſte de petſecuter vne bran
-        che dela Maiſon Royalle, d’ezpoſer la fortune de
-        tous los particuliers, aux deſordres d’vne guerre
-        ciuille: Afin d’allumer le feu pàa rout le Royau
-        me, parce que M. le Prince de Conty n’a point eſ
-        pouſeé Mauemoiſelle de Chevreuſe, &amp; queM. le
-        Coadjuteur n’a point eu le chapeau de Cardinal,
-        quoy que M.le Coadiuteur ſoit la ſeule cauſe, qui
-        par des empreſſemens trop intereſſez, a empeſ
-        ché que le mariage n’ait eſté executeé, &amp; que M. le
-        Prince n’ait iamais formé́ d’obſtacles à la pr
-        tion, ou M. le Coadiuteur aſpire depuis le com
-        mencement de toutes les factions qu’il fomente
-        dans le Royaume.
-        IN.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">lettre</term>
+          <term type="subject" />
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_49" source="Moreau">
+          <p>Retraite du Coadjuteur</p>
+          <date when="1651-04-05">1651-04-05</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-10-06" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />LETTRE
+        <lb /> D’VN
+        <lb />MARGVILLER
+        <lb />DE PARI S,
+        <lb />CVRE
+        <lb />Sur la conduite de Monſeigneur
+        <lb />LE COADIVTEVR.
+        <lb /> APARIS,
+        <lb />M. DC. LI.
+        <lb /> 12S2-B <pb n="2" />
+        <lb />1
+        <lb />1
+        <lb />A,
+        <lb />e <pb n="3" />
+        <lb />s
+        <lb /> A
+        <lb />8 A
+        <lb />Earrea
+        <lb />TSSSS
+        <lb />Lettre d’vas Margailler de Paris d̀ ſon Curé, ſar la
+        <lb />conduite de Monſeigmeur le Coadjutear.
+        <lb />AIONS IEVR
+        <lb /> I’ay leu l’Aduis deſ-intereſſé ſur la con
+        <lb rend="¬" break="no" />irte de Monſieur le Coadjuteur, &amp; ſuiuant ſes or
+        <lb rend="¬" break="no" />dres &amp; le voſtre,j’en ay fait part aux plus notables
+        <lb />Bourgeois de mon quartier; C’eſt vne choſe bien
+        <lb /> faſcheuſe de voir ce Prelat reduit à compoſer des
+        <lb />Apologies dans vn temps où il ne deuroit plus
+        <lb />auoir d’aurre penſée que de continuer ſes intri¬.
+        <lb />gues, afin d’entrer dans le Miniſtere Si les mouue
+        <lb rend="¬" break="no" />mens qui nous agittent depuis quatre ans, ne doi
+        <lb rend="¬" break="no" />uent ceſſer que lors qu’il y aura part ; Pleut à Dieu
+        <lb />pour ſon repos &amp; pour le noſtre, qu’il y feuſt deſia
+        <lb />bien eſtably, Sans mentir il faut aduouër que c’eſt
+        <lb />vn homme admirable, il eſt ſçauant, il eſt ferme,
+        <lb />&amp; l’on voit dans toutes ſes actions le caractere
+        <lb />d’vn eſprit pouſſé d’vne belle ambition, il eſt elo
+        <lb rend="¬" break="no" />quent, &amp; il ne fit iamais mieux que de mettre luy
+        <lb rend="¬" break="no" />meſme la main à la plume pour faire ſon Panegy
+        <lb rend="¬" break="no" />rique eſtant noſtre Archeueſque, il n’y a guere
+        <lb />d’apparence qu’il voulur nous dire des choſes qui
+        <lb />ne ſont pas; &amp; puis qu’il publie que iuſqu’icy il
+        <lb />n’a point eu d’autre objet que ſa propre gloire &amp; <pb n="4" />
+        <lb />.
+        <lb />..¬¬¬¬¬¬¬a¬¬ ,
+        <lb />¬ 4
+        <lb />ſa reputation( penſée digne d’vn grand Prelat)
+        <lb />i’eſtime qu’il eſt à propos de le croire.
+        <lb />Cependant comme les ſentimens des hommes
+        <lb />ne ſont pas rouſiours ſemblables, lors que i’ay fait
+        <lb />la lectute de ſon eſcrit, il s’eſt trouué des perſon
+        <lb rend="¬" break="no" />nes fort bien inſtruites des choſes de ce monde,
+        <lb />qui ne ſont pas demeurées d’accond de tout ce
+        <lb />qu’il mer en auant, &amp; parce qu’il eſt impor
+        <lb rend="¬" break="no" />tant que vous ſçachiez ce qui fut dit dans no
+        <lb rend="¬" break="no" />ſtre conuerſation; I’ay crû que vous ſeriez bien
+        <lb rend="¬" break="no" />ayſe que ie vous en fiiſe part, &amp; que puis qu’vne
+        <lb rend="¬" break="no" />petite incommrodiré́ m’oblige de gardet la cham
+        <lb rend="¬" break="no" />bre, &amp; m’empeſche de pouuoir vous aller ren
+        <lb rend="¬" break="no" />viſite, ie vous fiſſe ſçauoir par eſcrit toutes les ob
+        <lb rend="¬" break="no" />ſeruations que l’on fit ſur ce manifeſte de Mon
+        <lb rend="¬" break="no" />fieur le Coadiuteur.
+        <lb />Toute la compagnie dit qu’il eſtoit vray, que
+        <lb />lIe iour de l’empriſonnement de Monſieur de
+        <lb />Brouſſel(qui fut ce me ſemble le iour que l’on
+        <lb />chantoit le Te Deum, pour la quatriéme bataille
+        <lb />que Monſieur le Prince auoit gagnée) Monſieur
+        <lb />le Coadiuteur fit paroiſtre tout le zele qu’vn Pre
+        <lb rend="¬" break="no" />lIat doit auoir pour la conſeruation d’vn bon Ci.
+        <lb rend="¬" break="no" />royen, qu’il dit ſes ſentimens à la Reyne auecge
+        <lb rend="¬" break="no" />aeroſité, &amp; qu’ayant eſté traicteé de tribun du peu
+        <lb rend="¬" break="no" />ple, il fie cognoiſtre qu’il auoit du credit dans Pa
+        <lb rend="¬" break="no" />is,ie me ſouuiens fort. bien encore de ce que le
+        <lb />Mercredy au ſoir l’ou me vint dire de ſa part, &amp; à̀
+        <lb />ou <pb n="5" />
+        <lb />.¬
+        <lb rend="¬" break="no" />5
+        <lb />&amp;is lQuartoiers uii, &amp; des ardéaes,quis
+        <lb />le lrdoan eſtormorlt e rMiitna qui’auom
+        <lb />donné nſi nmupais onſetl fa dajeſt .l.
+        <lb />On it q’il eéſtoitvraày que le Roy s’eſlant re
+        <lb rend="¬" break="no" />dré à ſainct emain; Monſeur le Oadiuteur
+        <lb />vfat demmerâPaiss,j ee bien qu’iens &amp;
+        <lb />oy rmG’ehnlhoaN bbReyheipid ſſore
+        <lb />du cotratre, il le fitadrefteixa houde!la pu de
+        <lb />oſtrtao, &amp; ed ne eaignantpantd’po¬ .
+        <lb />ſ- ſ̀erſone por aſſemo nos arunomiue!
+        <lb />nos rroupes ſortoient pouralloràequbguahto?
+        <lb />priſe, il les hatanguit larhimeſ à la postedela
+        <lb /> Ville &amp; leuodutagoitaupfe encdictil, 1
+        <lb />. O demeura d’acoonluple benaaitre alaſ,
+        <lb />aſté aceonlmoés Mo aſn ebadiniloldll
+        <lb rend="¬" break="no" />à Ce mpign ſdhef lene ſaietbſabsorndre:
+        <lb rend="¬" break="no" />uiſite au Cardirdl MaainMaes:ondiup s’e
+        <lb rend="¬" break="no" />ſtoit vyse ondit ion dudtraſn ûuounſiurlSor
+        <lb />uieae aeifait ondeoliiqulapondi gairdéabpe
+        <lb />plus lngeémps lasdeh aupibeſd dafoli
+        <lb />d Monſieurle Coadiut eur ertoitdei Mai.
+        <lb rend="¬" break="no" />inque dans le Palais Royal; Es en edſeous ſaa
+        <lb />utns vbousqual levirpſieur, isphisl ſanb¬l
+        <lb />, dabsen fmes ſcmdabiaéasai:’! l L
+        <lb />Oodlt qa’l:eſtoit vraqlavalelrfne yant?
+        <lb />ropploleule ûarihal bazarin a. eCnauréur;
+        <lb />luy fit offres de ſeruice &amp;daaesiad,aihqo
+        <lb />adêcehayp abx letenoaur onefhon
+        <lb rend="¬" break="no" />Iq ur Le edSoniILms <pb n="6" />
+        <lb />re las nains de ſon Alteſſe Royalde, ue de
+        <lb />mettre les armes entre les aains du peuplo, h
+        <lb />geãt bien que cela ſeroit de trop grãde cõſeque¬.
+        <lb />ce pour le lſeruice du Roy, &amp; pour le epos publie.
+        <lb />Ons demeura d’aceort que les Princes ayaae
+        <lb />eſté espriſonnez, Monſieur le Coadoeu meſ.
+        <lb />nage ſi bien l’eſprit de Moaleur l Duc d’Or
+        <lb rend="¬" break="no" />leans qu’il le fit declarer haemeae eonre le
+        <lb />Cardinal Mazarin, &amp; pour laliberté́ de onfear
+        <lb />Ie Prinee; aais apres auoir long-temps agié, ſ̂
+        <lb />Monſiaax lé Coadiuteur prit cette cc:duite pour
+        <lb />rendae ſeuice au Prince, ou pour ſes incereſts par
+        <lb rend="¬" break="no" />ticuliers, toute la compagnie eonclut, ques’il eue
+        <lb rend="¬" break="no" />pû caaſſer le Cardinaldu miniſtere ſaua faire ſor
+        <lb rend="¬" break="no" />it Mefſieurs les Priacea de priſoa, il a’eut pa
+        <lb rend="¬" break="no" />oanqueé de le faire qo’ea efſot il fie cout lon poſ
+        <lb rend="¬" break="no" />ſible pour ſe rendre maiſûtre de leursperſonnes,
+        <lb rend="¬" break="no" />qus lors que le Mareſehal de Turenne appro
+        <lb rend="¬" break="no" />choit de Paris, iloouloit qu’on les ameat dans
+        <lb />la Batille, &amp; que lors qu’il vir qu’on les eondu¬.
+        <lb />ſoitauhlavre, deſeſperans de oir reiiſiir ſon del
+        <lb />ſein, &amp; appehendaat le retour du Cardinal,apres
+        <lb />labataille de Rhetel, il ſe ioignitt aui party ds aeſ
+        <lb rend="¬" break="no" />ſieurs les Princes pour trouuer ſa ſeureté, &amp; que oe
+        <lb />fuc eacore à des conditions ſi rudes, qu’il vouln?
+        <lb />plaſtotſe falre ecognoſte le Tyran que le libera
+        <lb rend="¬" break="no" />eude Monſieur lePrince.
+        <lb /> a nm demeuea pas d’aeeoe que la ſuite de
+        <lb />ous les eſeins de Monſieur le Coadinteusr peus <pb n="7" />
+        <lb />ere la marqe d’vne vertu inébranlable, qu
+        <lb />toutes les actions paſſees de onſieur le Ptince
+        <lb />euſſent eſté condamnés par toure la France; Au
+        <lb />contraire, on dic que l’ nauoit veu ſouuent on
+        <lb rend="¬" break="no" />ſieur le Coadiuteur occupé à chanter des Te.
+        <lb />Deas pour les belles &amp; gloricuſles acioans que,
+        <lb />nuonſieur le Prince auoit faites, mais que o
+        <lb rend="¬" break="no" />ſieur le Coadiuteuir n’auoit point encores iuſques
+        <lb />icy obtenu de ſon Chapitre vn ſeul Te Dças pous
+        <lb />cout ce qu’il auoit fair.
+        <lb rend="¬" break="no" /> On dit qu’il eſtoit vray que lots que monſieu
+        <lb />IepPtince auoit demandé l’éloignement de ceux
+        <lb /> qui eſtoient dans les intereſts du Cardinal, on
+        <lb /> ieur le Coadiuteut en auoit eſté dauis, &amp; que
+        <lb />pour ſe faire encenſer par le peuple, il auioit fais
+        <lb />inprimer ſon ppinion, mais quelqu’vn adioſta
+        <lb />qu’il auoit en cette occaſion manqué aà ce qu’i
+        <lb />aoit promis à M. de Lyõne dans les ſecrettes con.
+        <lb />enaaces qu’l auoit eus auecque luy, &amp; que dans.
+        <lb />la deliberation qui ſe fit ſur le mariage de on
+        <lb rend="¬" break="no" />eur de aereœur, il auoit ſuiuy fieremene l
+        <lb rend="¬" break="no" />çoncluſions de eſſieurs lesgensdu Roy.
+        <lb rend="¬" break="no" /> Dans l’endroit oil eſt dit que h. le Coadiu
+        <lb rend="¬" break="no" />euar eonſentois au resout duCad Mou preni;
+        <lb />quelqe ſecret engagement auee luy cmme il
+        <lb />auoit deſia fait autrefois, loas qu’il l’auoiiugé ne
+        <lb />ceſſair pourſes intereſts)il penoit co qu’il auait!
+        <lb />acquis d’honeut &amp;s de edéondit quemalhe;: <pb n="8" />
+        <lb />Feſe &amp;t pour luy eela n’etoit deſi que trop vray.?
+        <lb /> Su’eeqle ’on dit que pour décrier u le Coad?
+        <lb />ihteur;onſs’eſt aduiiſé depuis peu de publier qu’i
+        <lb />alloitau Palais Royal, qu’on parloit de lefaireMi
+        <lb rend="¬" break="no" />nſtre, &amp; de le rettre dans les conſeils du Roy, on
+        <lb />demetifa d’ccrt que la choſe eftoit vraye, quE
+        <lb />idane e Chereuſeauoit negocié ſon accosà
+        <lb rend="¬" break="no" />modeent, qu’ilauoit eſté introduit che la Res
+        <lb />ne’ſecrtterment par Courtois, qu’il auoitreſpondur
+        <lb />à ſa aiefté de m.le Duc d’Orleans, du Parlement,
+        <lb />&amp; dupeuple;&amp;qu’ilëſtoit fàcile de ſger qll y
+        <lb />auoit long témps qu’il aſpiroit auiniſtere, quiel
+        <lb rend="¬" break="no" />ques proteſtations gu’il fit du contraire, que la te
+        <lb rend="¬" break="no" />talte qu’il auoit faite de Luxembourg n’uoirpae
+        <lb rend="¬" break="no" />ſté longue, &amp; queſe picquant d’auoir pur les;
+        <lb />grandefrs vn meſme eſprit que Diocletian; d
+        <lb />Chadt les-Quint il s’eſtoit come le premier blen
+        <lb />roſt ennuyé de la vie contemplatiue, &amp; côme ’aue
+        <lb />te tepéty d’auoir qulttéda Cour paur leCloifteol
+        <lb />-i ë demeura pas d’aetodoqq duta de doo
+        <lb />cs de Paris, il eut r’efuſé́ pluiets fois lechapeauà
+        <lb />de Card. &amp; pteferé́ la eaüſtdtpeuple à cette emie
+        <lb />entsdigitemiais au cohlraiuordequ ’ndes
+        <lb />prfncipllrſôns qi le détachu des ineereſtt
+        <lb />de A. lPeihte’ de Coneyfuttque ce Printe con
+        <lb />ſentit. potil’âconmodement des affaies que
+        <lb />l’on donnat b l’Ab de la Riuiere lo Clapeam
+        <lb />qetpatenoſgagebmnſttoparty.
+        <lb rend="¬" break="no" />OQ¬ <pb n="9" />
+        <lb />3
+        <lb /> On ne defneura pas auſſi d’accord qu’il eut rous
+        <lb rend="¬" break="no" />jours meſpriſé de ſe faire connoiſtre par l’eſclat de
+        <lb rend="¬" break="no" />ſa fortune, &amp; que lors qu’il negocioit pour la l
+        <lb rend="¬" break="no" />berté de Meſſieirs les Prnces, il eut refuſé l
+        <lb rend="¬" break="no" />peau de Cardinal, au contraire on dit, que deſi
+        <lb rend="¬" break="no" />rant d’vn coſteé de cacher ſon ambition, &amp; de
+        <lb />l’autre d’y ſatisfaire, il tira vn eſcrit particulier de
+        <lb />M. Arnaule, par lequel ledit S Arnaults’obligeoit
+        <lb />de faire en lorte que . le Prince ſeconderoit la no
+        <lb />mination qu’il eſperoit que . le puc d’Orleans
+        <lb />deuoir faire deſaperſonne pour le Carnalat.
+        <lb /> Pour l’Abaye d’Orcan on dit qu’il eſtoit vray
+        <lb />qu’il l’auoit refuſé́e, mais on expliqua certe affaire,
+        <lb />en nous aſſeuirant, que dans l’accommodement
+        <lb />qu’il auoit fait auec la Cour, on luy auoit pro
+        <lb rend="¬" break="no" />mis le premier Benefice conſiderable qui vacque
+        <lb rend="¬" break="no" />roit, &amp; qu’ayant vacqué, vne Abaye de beau
+        <lb />coup plus grand conſideration que celle d’Orcan
+        <lb />le Cardinal qui la vouloit retenir pour ſoy, quoy
+        <lb />qu’il fut ongagé́de danner la premiere vacquante
+        <lb />audis ſieur Coadiuteur eſcriuit à Meſſieurs ſe Tel
+        <lb rend="¬" break="no" />dier &amp; Seruient, pour faire en ſorte, que monfieur
+        <lb />de Coadinteur ſe contentaâ̂t de celle d’Orcan, que
+        <lb />M. le Tellier nevoulut point ſe charger de ette ne
+        <lb rend="¬" break="no" />gciatioir, que Seruient l’acccpta, &amp; que M.le
+        <lb />Coadiuteurcefuſarl’Ahaye d’Orean, mais non pas
+        <lb />l’autre, qui eſtond’vu plus grand reuenu.
+        <lb />de il ſeroit
+        <lb />urqaeM, lrCoadiuur e
+        <lb />v Svvuue a ao¬ <pb n="10" />
+        <lb />dans les intereſts du Mazarin, quand bien il en
+        <lb rend="¬" break="no" />treroit preſentement dans le Miniſtere; &amp; ſi tout
+        <lb />le monde n’eut pas eſté bien aiſe, qu’il y eut eſté
+        <lb />eſtabli apres l’expulſion du Cardinal, toure la
+        <lb />Compagnie conclud, qu’il eſtoit impoſible dans
+        <lb />l’eſtat reſent d:s affaires, qu’il y entraſt ſans auoir
+        <lb />trairé auec le Cardinal, que la Reyue conſeruant
+        <lb /> touſiours beaucoup d’affection pour ce Miniſtre,
+        <lb />tous ceux qui pretendoient receuoir quelque gra
+        <lb rend="¬" break="no" />ce de ſa Maieſté, commençoient l’eſtabliſſement
+        <lb />de leur fortune en luy promertant de contribuer
+        <lb />leurs ſoins pour ſon retour, &amp; que la Reyne apres
+        <lb />la ſortuie du Mazarin, n’eut iamais conſenti que
+        <lb />M. le Coadjuteur eut entré dans le Conſeil du
+        <lb />Roy, puiſque ſa Majeſteé eut approuueé́ par ce con
+        <lb rend="¬" break="no" />ſentement la conduitte de ce prelat, qu’elle a ſi
+        <lb />ſouuent aceuſe d’ingratitude, &amp; de faction.
+        <lb />Quant à l’aricle où il eſt dit, que M. le Coad
+        <lb rend="¬" break="no" />jureur eſt trop prudent pour enxfr dans le Min
+        <lb rend="¬" break="no" />ſtere par la voye du Maœarin, &amp; qu’encone qu’
+        <lb />le veüille attirer par des proteſtatiois contraires,
+        <lb />il ſcçait bien qu’il n’y a pas trop de confianceà̀ la
+        <lb />Cour, &amp; que les chaſes paſees peunen eſlree
+        <lb />fondement d’vne iſte&amp; veritabole: eraine; clla
+        <lb rend="¬" break="no" />uh dit que monfieur le Coadiutea n’uioipg
+        <lb />ujes de ſe plaimdré de la dour, puis q’outre
+        <lb />dignité auclaquelleit pretend eſte à couaede
+        <lb />doible aee de aeſanimel, e yat oeu <pb n="11" />
+        <lb />
+        <lb /> n1
+        <lb />rant d’autres graces pour ceux de ſa faction, il a
+        <lb />touſiours manqué aà ce qu’il auoit promis à̀ la Rey
+        <lb rend="¬" break="no" />ne &amp; aà ſesminſtres, qu’il eſtoit bien plus heureux
+        <lb />queM. le Prince, qui auoit touſiours fidellersent
+        <lb />ſeruy leurs Majeſtez, &amp; qui cependant auoit eſté
+        <lb />recompenſé de tant de ſeruices par vne priſon de
+        <lb />treize mois, reconneuë iniuſte par vne Declarationm
+        <lb />du Roy, verifiée dans le Parlement, &amp; que c’eſtoit
+        <lb />à M le Prince à dire que les choſes paſſeées peu
+        <lb rend="¬" break="no" />uent eſtre le fendement d’vne iuſte &amp; veritable
+        <lb />crainte.
+        <lb />Oa examina fortement l’article, où il eſt dis
+        <lb />qu’il ne faut point rsop éleuer des hommes dont
+        <lb />nous ne pouirrions pas eſtre les maiſtres, &amp; ouù̀ il
+        <lb />eſt paslé de ces nouuelles accuſations enuoyé́es au
+        <lb />Parlement contre M. le prince, &amp; des maximes
+        <lb />de cette politique, qui aſſeurs que le credit eſt plus
+        <lb />dangereux dans la perſonne des Prinees que des
+        <lb />partieuliers: on iugea que tout ce raiſonnement
+        <lb />partoit d’vn eſprit fort amhitieux, &amp; dont les pro
+        <lb rend="¬" break="no" />jers eftoient eſpouuentables, puis qu’il auoir re
+        <lb rend="¬" break="no" />grer de ne pouuoir ſe rendre metere duſangRoyal,
+        <lb rend="¬" break="no" />ha M. le Curérque veut dire cela ſont-ce desſe
+        <lb rend="¬" break="no" />iments, qu’vn rrelat doiue inſinur qams. beſpr
+        <lb />des Peuples Cé́t eſurlt Anglois qu’on a fait bruſler
+        <lb />depuis peu par la main du Bourreau a-t’il quelque
+        <lb />hoſe de plus pernicieux?
+        <lb rend="¬" break="no" />eanant auxaecuſationms, thaun dtt que la De
+        <lb />1 <pb n="12" />
+        <lb />clatation de S. A.R les auoit deſtruittes à la con
+        <lb rend="¬" break="no" />fufion de ceux qui les ont calomnieuſement in
+        <lb rend="¬" break="no" />uenté́es, que tous les Miniſtres les deſ-aduöoient,
+        <lb />&amp; que ces abominables monſtres de ſe dition, qui
+        <lb />auoient donnéce pernicieux conſeil à̀ la Reyne,
+        <lb />n’auoient garde de ſe nommer de peur d’eſtre dé
+        <lb rend="¬" break="no" />chirez par les fidelles ſeruiteurs de la maiſon
+        <lb />Royalle; que M.le prince demandoit iuſtice tous
+        <lb />les iours; que l’on-vouloit vſer ſa patience par des
+        <lb />delais: que l’on vouloit gaignet la ajorité du
+        <lb />Roy par des contmuelles rerſes, &amp; que ceux qui
+        <lb />donnent de tels conſeils, ont vne Pollitique que
+        <lb />tous les ſubjets du Roy doiuent apprehender;
+        <lb />qu’il n’y anoit guere d’aparence qu’ils euſſent deſ
+        <lb rend="¬" break="no" />ſein de leur faire iuſtice quand ils auroient l’au
+        <lb rend="¬" break="no" />thorité en main dans vne Majoriré puis qu’ils la2
+        <lb rend="¬" break="no" />refuſoient au premier prince du Sang; iniuſte
+        <lb rend="¬" break="no" />ment calomnié dans les deniers iours de la Re
+        <lb rend="¬" break="no" />genee, qu’ls voulaient par cette coaduitte obli
+        <lb rend="¬" break="no" />ger M. le PErince aà ſe retirer, de peur qu’l nefut
+        <lb />le ceſmoin de leurs factions, &amp; l’obſtacle de toute
+        <lb />leuts intrigues;. Que les remonſtrances du ’pa le¬.
+        <lb />maent ſurce ſujet auoient eſteé tres viguireuſes,
+        <lb />que . le premier reſident auoit dit qu’on ne
+        <lb />pouuoit doucer de la fideliré́ de . le prince, ’puis
+        <lb />qu’il l’auoit ſi ſouuent ſcelée auec ſon ſang Roya,
+        <lb />&amp; que ſi le ppier quia eſté́ enuoyeé au Par lemens,
+        <lb />n’eut porté le uo ddRoy, on ’eus raitteé conmme
+        <lb />
+        <pb n="13" />
+        <lb />13
+        <lb />vn eſcrit qui n’eſtoit point reueftu de toutes les
+        <lb />formes neceſſaires. Vous entendez bien que cela
+        <lb />veut dire biffé, &amp; laceré.
+        <lb />Sur l’article ou il eſt dit que les princes qui nous
+        <lb />promettent auiourd’huy de bel’es choſes les ont
+        <lb />autrefois promiſes &amp; ne les ont pas tenüs, &amp;
+        <lb />qu’auparuant le blocus ils auoient donné parole,
+        <lb />qu’ils ſeroient nos protecteurs, &amp; cependant
+        <lb />qu’on les vit incontinanc apres à la teſte des trou
+        <lb rend="¬" break="no" />pes ennemies. On aſſeura qu’il eſtoit faux que
+        <lb rend="¬" break="no" />M. le rrinceſe fut iamais engagé auec M leſCoad
+        <lb rend="¬" break="no" />juteur, &amp; qu’apres le retour du Roy en
+        <lb rend="¬" break="no" />M. le prince demanda à m. le Coadjuteur en
+        <lb rend="¬" break="no" />ſence de . le Prince de Conty, de . de Cham
+        <lb rend="¬" break="no" />platreux, &amp; de trente autres perſonnes de qu
+        <lb rend="¬" break="no" />teé́, s’il eſtoit vray qu’il luy eut iamais donn
+        <lb rend="¬" break="no" />cune parole d’engagement, &amp; que M. le Coadju
+        <lb rend="¬" break="no" />eur demeura d’accord, qu’il n’en auoit iamais re
+        <lb rend="¬" break="no" />ceu de . le Prince, cela fut aſſeuré par cinq ou
+        <lb />ſix qui aſſiſftoient à la leure de l’eſcrit.
+        <lb />Au reproche que l’on fait à̀ . le prince d’auoir
+        <lb />voulu faire perir M. l Coadiuteur par des voyes
+        <lb />contraires à nos mœurs, quelqu’vn dit que ce
+        <lb />mal-heureux procez auoit cauſé bien du deſor
+        <lb rend="¬" break="no" />dre, mais qu’il eſtoit bien mal aiſé de dé́nmeler
+        <lb />toutes ces intrigues, qu’il eſtoit certain que le
+        <lb />Crdinal, s’en eſtoit ſerui pour perdre M. e Prince,
+        <lb />mais que c auoit eſté de concert auec M le Coad¬ <pb n="14" />
+        <lb />14
+        <lb />juteur, qui plus de quinze iours auparauant ſa
+        <lb />ioſtificarion alloit tous les ſoirs au palais Royal
+        <lb />déguiſé, auec des habits de couleur &amp; des plu
+        <lb rend="¬" break="no" />mes, que c’eſtoit luy qui auoit pris ſoin de par
+        <lb rend="¬" break="no" />rain Deſcoutures, qu’il l’auoit recommandé au
+        <lb />Curé de S. lean de Greve, qu’il le tint. caché́ dans
+        <lb />le clo her de ſon Egliſe durant tout le procez,
+        <lb />que c’eſtoit M. le Coadjuteur qui auoit ſollicité́
+        <lb />l’amniſtie de Deſcoutures, de Deſmartinaux, Can
+        <lb rend="¬" break="no" />to, &amp; Sociando: Enfin que depuis ce temps-là̀
+        <lb rend="¬" break="no" />on auoit veu M. le Coadiuteur en parfaite intelli
+        <lb rend="¬" break="no" />gence auec les ennemis de M. le prince.
+        <lb /> Dans l’endroit où il eſt dis que m. le prince a
+        <lb />reuele les conſeils que m. le Coadiuteur luy auoit
+        <lb />donnez auec ſincerité de cœur &amp; que par ſa re
+        <lb rend="¬" break="no" />ponſe il ne nie pas abſolument de n’auoir rien
+        <lb rend="¬" break="no" />ſceu du changement de conſeil qui fut fait à Paſ
+        <lb rend="¬" break="no" />ques dernier. Chacun ſe iéeria que . le Prinee
+        <lb />auoit rien dit que tout le monde ne ſceut deſia,
+        <lb />mais que . le Coadiuteur auoit fort déguiſé la
+        <lb />vetité dans le Parlement, puis qu’il n’auoit pas
+        <lb />die, que ſur la propoſition qu’il auqie faite, . le
+        <lb />rinceauoitreſpondu, qu’il n’entn doit point la
+        <lb />gerte des tuilles &amp; des pots qu’on iette par les
+        <lb />fineſtres, ce qui eut fait iuger quele prince ’a
+        <lb rend="¬" break="no" />aloit vinaacé qui np fut vray, &amp; quant au
+        <lb />hagement de Oonſel,jon ne treuua quetrop de
+        <lb />éuſtiflcation dans la reſponſe de m. le Pſince. <pb n="15" />
+        <lb /> 16
+        <lb />Sut l’article où il eſt dit qu’on ne peut auoir du
+        <lb />tout de confiance à i. le prince, que c’eſt baſtir
+        <lb />ſur vn ſable mouuant, &amp; ſur des eſperances incer
+        <lb rend="¬" break="no" />taines. Toure la compagnie iurgea’que . le
+        <lb rend="¬" break="no" />oadiuteur fait cette plainte pour quelques inte
+        <lb rend="¬" break="no" />reſts particuliers, pour leſquels on ne creur pas
+        <lb />qu’il fuſt à propos d’approuuer toutes las in
+        <lb rend="¬" break="no" />trigues qu’il fait auec Madame de Chevreu
+        <lb />ſe pour ſe venger; l’on adiouſta que noos
+        <lb />ne deuons auoir que le bien public deuan
+        <lb />les yeux, &amp; l’on demanda en ſuitte ſi l’on
+        <lb />deuoit ſe fier aà vn homme qui faits ſt ruis la
+        <lb />chaiſe de verite aà ſes cabales, qui proteſtemille
+        <lb />fois lIe iourqu’il a renoncé aux affaires, qu’il ne ſe
+        <lb />meſle que de ſifler des linoues, &amp; qui cependant
+        <lb />court le iour &amp; la nuict pourcabaler, &amp; veuauec
+        <lb />temerité diſputer dars parisle paué au premiet
+        <lb rend="¬" break="no" />Prineedu-Sang, à̀ qui il doit outeſotede reſpect,
+        <lb />&amp; fait mille intrigues pour diuiſer la maiſo
+        <lb />Royalle, dont la reünion eſt- le ſeul moyen pour
+        <lb />donner la palx à l’Eſftat..
+        <lb /> On demeura d’actd que lrince deuoſt
+        <lb />prendre confiance à la parold Royalle poucen
+        <lb />que ſes ennemis n’euſſent point aſſez de cndit
+        <lb />dans le Conſeil por faireprendre des reſolution
+        <lb />contraires aux bonnes &amp; iuftes inteations da ſa
+        <lb />.I
+        <lb />Majeſté́.1
+        <lb />13
+        <lb /> Ondit qu’Il eſtoit vray que M le prine ne da¬ <pb n="16" />
+        <lb />ndoit point de place forte pour oſtage, qu’il
+        <lb />ne faiſoit pas comme M le Coadiuteur qui vou
+        <lb rend="¬" break="no" />luſt auoir le mont Olympe pour ſon amy &amp; peur
+        <lb rend="¬" break="no" />la ſeureté de ceux de ſa caballe lors qu’il ſe recon
+        <lb rend="¬" break="no" />cilia, mais quand on leut que ſi l’on manquoit de
+        <lb rend="¬" break="no" />parole à M. le prince il deuoit attendre du Parle
+        <lb rend="¬" break="no" />ment &amp; du peuple le meſme ſecours qu’il en a deſia
+        <lb rend="¬" break="no" />receu, on s’eſcria que la rai lerie eſtoitforte, pui
+        <lb rend="¬" break="no" />que . le Coadiuteur en auoit reſpondu depuis
+        <lb />peu à la Cour.
+        <lb /> Sur le reproche que l’on fait à̀ M. le prince de ce
+        <lb />qu’il ne va point au ralais Royal, que les loix fon
+        <lb rend="¬" break="no" />damentales l’y obligent, &amp; que le parlement l’a
+        <lb />ordonneé, chaeun dir qu’il eſtoit ialte que M. le
+        <lb />Prince rendiſt ſes reſpects au Roy, que ſon Alteſſe
+        <lb />ne deſiroit tien auec tanc de chaleur, que ſi toutes
+        <lb />les loix fondamentales de l’Eſtat eſtoient bien ob
+        <lb rend="¬" break="no" />ſerues, les princes du Sang ſoroient autrtment
+        <lb />conſideréz dans le Conſeil du Roy, pps qu’ils
+        <lb />ſont les, legitimes adminiſtrateurs de l’Eſtat du.
+        <lb rend="¬" break="no" />rant les minorirez de nos Roys, que le Cardinal
+        <lb />Mazarin comhe nſtrahger n’aurois iamais eſté
+        <lb />admis dans la niſtere; que Meſſieurs de Gondy
+        <lb />comme elrãngrs n’auroient iamais eu d’entré́e
+        <lb />dans le Conſell de nos Roys, qu’ils n’auroent ia
+        <lb rend="¬" break="no" />mais efté poutueus des premiers benefices d
+        <lb />Royaume, que M. le Coadiuteur ne ſerut point
+        <lb />ajour hauy e’ eſfat de vouloir temeraiteraent
+        <lb />aller <pb n="17" />
+        <lb />137
+        <lb />iler dupris aue os Pnees e ſfroittrop heu
+        <lb rend="¬" break="no" />epunde ſie puaoiſreſonbabiliue dan la Sanque
+        <lb />de eloione qunaureſl lons que le eu len dlli
+        <lb />dfirede llle pinte quilad auicoirs ſtnuoni
+        <lb />ifutau deſiu de l Conpgnle &amp;e que ſaenuue
+        <lb />enoes la il ny eſoit point eourme ſ i ue
+        <lb />leans eoauonis lai ſgauolr larniſon quee
+        <lb />lienued ler nee ſnrenenr oi de le ere
+        <lb />Ier vouehoi fort au ecœus des ennemis dei le
+        <lb />Pince, qui ne ſoulaireoient pas ant lerodunn
+        <lb rend="¬" break="no" />pe de ſon Aleſe qeilluy dnmaſen ceonſein
+        <lb />auoir nane qelque deſeinonre fai peen
+        <lb />e u que ſapus doute l uoiens beaueoup dn.
+        <lb />pienee de le voit ſoruiraſn de rendreſa conou
+        <lb />peſiſpoea que lonvoooit pen que ein uieee
+        <lb />ea oouaierneeptalenrt que leuni nlde nt
+        <lb />eſns puis qu lu pupnent qi eutnieun ſir
+        <lb />le enre ile qeie l ſondeir u ie eirnen re
+        <lb />Se deno ens de de ln pemenre de ſe eſie
+        <lb />des qalomnie qu on ſuy ſnp ſe r nnn edne
+        <lb />e iun uie le imbneoui oounie nr enr ep eunr
+        <lb />leleineſes pne e pre rneſone de l ſe ſne
+        <lb />s’il eſt ncceſſaire.
+        <lb />e aeneura dacrod q il foit que nel
+        <lb />Puee eonibuſsſire pinn eor pulon ei
+        <lb />le pulhoue &amp;s pn oune ne doun que eue er e
+        <lb />intention.
+        <lb />Sur l’article où il eſt dit que M. le iince prosele
+        <lb />E <pb n="18" />
+        <lb />
+        <lb rend="¬" break="no" />1
+        <lb />de ne point aller à la Cour, tant que l’on meitra
+        <lb />dans le Conſeil des gens contre ſon conſ nte
+        <lb rend="¬" break="no" />ment, bien loin d’appeller cette Declaration vne
+        <lb />irrçeqneiliation urée aueec la Cour, on demeurs
+        <lb />d’aecord que Mle Prince a iuſteſujet de craindre
+        <lb />que l’authorité du gouuernement ne ſait enur
+        <lb rend="¬" break="no" />les, oaains de ſes ennemis ireconciliables &amp; chaè
+        <lb rend="¬" break="no" />enn dit que c’eſtoit vne choſe deplorable de ſouf
+        <lb rend="¬" break="no" />fiir que l’intereſt de eux ou rois partieulier
+        <lb />mette l’Eſtat en confuſion, &amp; que les Peuples
+        <lb />ſtoient bien innocens de complaire a leura paſe
+        <lb />on, &amp; le vous demnde en eſiet a le Cur. ſ
+        <lb />leur pſeſenee eſt plus neceſſaire à Paris que eelle
+        <lb />de nosPrinces.
+        <lb /> Quaostaucrieies de Dame Anne &amp; dereſehe,
+        <lb />ouE e pmonde die que e’eſtoient des enfauu de
+        <lb />eœnr dlauez par . le Coadjuteur, qu’lya erois
+        <lb />ans que l’n’ &amp;e l’aure chantoit les Lecons du
+        <lb />Sreoiuire qu’illeurauoit enſeigné, &amp; quil ne de
+        <lb />uoit aeeuſder de leur docrine peronne quet luy
+        <lb rend="¬" break="no" />meſme; mais en meſme temps tout la Compagni
+        <lb rend="¬" break="no" />qui ſe auoit l’hidoire daundy, ſe moequa du hu
+        <lb rend="¬" break="no" />ard qu’ on pretend que , le Coadjuteur y cou
+        <lb rend="¬" break="no" />ut ooiſque cene fuit qu’une tereur panque,
+        <lb />que depuin meme id a fait uaire des coopline
+        <lb />le amis de d le Prnee, qui ſont incapubles de
+        <lb />fes actions.
+        <lb />’aila ce qui fut die à plus prés lo que ie faiſois <pb n="19" />
+        <lb />1i9
+        <lb />la lecture de l’Auis Deſintereſfé, vous iugerez par
+        <lb />la que nos Bourgeois ſont aſſex bien inſtruits, &amp;
+        <lb />qu’ils lont bien las de toutes les intrigues que ces
+        <lb />eſprits broü̈illons, qui n’ont fait autre choſe, que
+        <lb />de cabaler toute leur vie, continuent de faire pour
+        <lb />troublert l’Eſtat &amp; la famille Royalle; Toute la
+        <lb />Compagnie ſe leuant dit qu’l eſtoit facile deu
+        <lb rend="¬" break="no" />ger que la confuſion dans laquelle nous nous
+        <lb rend="¬" break="no" />voyons n’a pont d’autre cauſe que le meſconten
+        <lb rend="¬" break="no" />temér de Madame de Chevreuſe, &amp; de . le Coad
+        <lb rend="¬" break="no" />juteur, &amp; qu’on laiſſoit à iuger aà ce qu’il y a de
+        <lb />gens d’honneur, &amp; de bons François dans le
+        <lb />Royaume, s’il eſtoit iuſte de petſecuter vne bran
+        <lb rend="¬" break="no" />che dela Maiſon Royalle, d’ezpoſer la fortune de
+        <lb />tous los particuliers, aux deſordres d’vne guerre
+        <lb />ciuille: Afin d’allumer le feu pàa rout le Royau
+        <lb rend="¬" break="no" />me, parce que M. le Prince de Conty n’a point eſ
+        <lb rend="¬" break="no" />pouſeé Mauemoiſelle de Chevreuſe, &amp; queM. le
+        <lb />Coadjuteur n’a point eu le chapeau de Cardinal,
+        <lb />quoy que M.le Coadiuteur ſoit la ſeule cauſe, qui
+        <lb />par des empreſſemens trop intereſſez, a empeſ
+        <lb rend="¬" break="no" />ché que le mariage n’ait eſté executeé, &amp; que M. le
+        <lb rend="¬" break="no" />Prince n’ait iamais formé́ d’obſtacles à la pr
+        <lb rend="¬" break="no" />tion, ou M. le Coadiuteur aſpire depuis le com
+        <lb rend="¬" break="no" />mencement de toutes les factions qu’il fomente
+        <lb />dans le Royaume.
+        <lb />IN. </p>
+    </body>
+  </text>
 </TEI>

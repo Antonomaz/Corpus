@@ -1,565 +1,341 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3516_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">La ressemblance de madame la duchesse d'Orléans à la
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">La ressemblance de madame la duchesse d'Orléans à la
           colombe qui apporta le rameau d'olive à Noé, présenté à Son Altesse Royale.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2022-10-25">25 octobre 2022</date>
-				<availability status="restricted" n="cc-by">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=1AHNcqusHi8C"/>
-					<author/>
-					<title source="Moreau">Ressemblance (la) de madame la duchesse d'Orléans à la colombe qui
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2022-10-25">25 octobre 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=1AHNcqusHi8C" />
+          <author />
+          <title source="Moreau">Ressemblance (la) de madame la duchesse d'Orléans à la colombe qui
             apporta le rameau d'olive à Noé, présenté (sic) à Son Altesse Royale.</title>
-					<pubPlace source="Moreau">Sans lieu</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure unit="page" quantity="8"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale de Lyon</institution>
-						<repository/>
-						<idno type="cote">Rés 312305</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace source="Moreau">Sans lieu</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure unit="page" quantity="8" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale de Lyon</institution>
+            <repository />
+            <idno type="cote">Rés 312305</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">3516. Ressemblance (la) de madame la duchesse d'Or léans à la colombe qui
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">3516. Ressemblance (la) de madame la duchesse d'Or léans à la colombe qui
           apporta le rameau d'olive à Noé, présenté (sic) à Son Altesse Royale. (S. 1., 1649), 8
           pages.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_29" source="Moreau">
-					<p>Après la paix</p>
-					<date when="1649-04-01">1649-04-01</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-10-25" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-RESSEMLANCE
-        DE MADAME
-        DORLEANS
-        A., cOloun
-        vi ApnQee le l A
-         Peſenté ̀ ſon ltſſe Royaele.
-        M. DC. XLIX. 
-        
-        t
-        ſeeee ’’’ée?
-        LA RESSEMBLANCE DE MADAME
-        e la Ducheſſe ’Orleans à̀ la Colombe, qui
-        apporta le Rameau d’Oliue à Noé.
-        Preſenté ̀ ſon Alreſſe Royale.
-        JADAuE.
-        LV
-        La Colombe qui apporta le Rameau d’Oliue au reſtaus
-        rateur du genre humain, nous a laiſſé n veritable ſymbole
-        des glorieuſes qualitez que voſtre Alteſſe Royale poſſede
-        fi auantageuſement, Dieu l’enuoya à Noé, pour luy oon
-        trer que ſa iuſte colere eſtoit appaiſee, &amp; vous, Mame,
-        vous auez toute voſtre vie employé vos ſoings, vos ſolliei
-        tatiens &amp; ves ptieres à appaiſer la colere du Createur, &amp;
-        moderer celle des creatures. La Colembe eſtoit vn mer
-        ueilleux ſymbole de blancheur, &amp; vous outre la blancheus
-        iacomparable, &amp; les beautez rauiſſantes de voſtre belle
-        face, vous auez vne ametoute blanche, toute pure, &amp; toute
-        xempte de tache, elle eſtoir le ſymbole de la douceur, &amp;
-        vous vous eſtes la douceur meſme; elle eſtoit le ſymbole
-        de l’amour, &amp; vous vous ne viuez que de l’aour de Die
-        &amp;e vous ne reſpirez autre choſe; elle eſtoit leſymbole de
-        l’nnocence, &amp; toute votrevie en eſt vn fidellmireir; el le
-        eſtoit le ſymbole de la Chaſteté, &amp; vous vous en eſtes le
-        prototype; elle eſtoit le ſymbole de la piete, &amp; vous vous
-        en eſtes vn entier exemple; elle apportoit le rameau d’Oli.
-        ue pour obliger à ſe téjoüir de la paix puiſque l’Oliue en eſt
-        le ſymbole, &amp; vous vous n’auez d’autre penſeée quecelle de
-        ptocurer la Paix à toute l’urpe ; elle apportoit la nou
-        aelle de la retraicte des eaux;, &amp; vous pa vos pleuſes &amp;
-        douces ſollicitations vous anez eauſé la retraie des gens.
-        de gerre qui auoient iuuety noſtre Ville &amp;e nos murailles;
-         A ij 
-        Eni’le ſainEſorit potte ordinairement la figure de la
-        Colombe, &amp; c’eſt dans voſtre ſacree poictrine qu’il lancs
-        ſes amoureuſes fleches, &amp; que le Fils de Dieu tepoſe cõme
-        dans ſon thrôae. Enfin, M a, elle éſtoit le ſya.
-        boie deroureés lds vertus, &amp; voſtre Alteſſe Royale les poſ
-        ſede auec emnence. lIe ſçay bien qu’il me faudroit vn vo
-        lume entier, &amp; que d’ailleurs c’eſt a vne plume plus diſerte
-         &amp; plus eloquene que la mienne àentteprepdte de publier
-        la grandeur de toes vos vertus, ie me contenteray d’en
-        effl. urer quel ues vnes, &amp; ſur tout celles dnt la Colombe
-        eſt plus poptement le ſymbole, comme voſtre blancheur,
-        voſtre douceur, oſtre amour, voſte innocence, voſtre
-        chaſteté, voſtre pieté, voaſtre contance, voſtre paience
-         oſtre modeſtit..
-         Mais d’eſt de cette derniere dont ie paleray de plain
-        abord,puiſque i’aurois crainte de l’offenſer, ſi deuãt que par
-        ler des autres vrtus ie ne luy e demandois la pernaiſſions,
-        veu que ie ſçais bien quelle aura peine à ſoufftir des eritea
-        g i luy ſont ttes-aduantageuſes. I’oſe donc, M a as
-        lupplier en tout reſpeét vroſtre Alteſſe Royale de ne point
-        eroire que ie veuille irriter ſa modeſte, quand le tachetay
-        de confirmer tous eeux qui lisont ceoy dans les piex &amp; iu
-        ſtes ſenimens quils ont pous elle, puiſque ie ne vuœ que
-        les oblige à imiter vos Royales verus, à marcher ſus
-        les ſentiers que voſtre pieté leur race. lIe dcay donc de
-        voſtre modeſtie, A aA M e,. que vous eſtes tute mo
-        deſte ſoit en habits, ſoie en paroles, ſoi en actions, ſoit e
-        penſées, mais pourtant que vous excdez dans voltre azele
-        &amp; dans veſtrepieté, &amp; que ſi ous eſtes. tetaperée dans les
-        premiers, vous eſtes exceſſiue dans les ſeconds, &amp; tus
-        les deux vous donnen de la gloire &amp; de l’embllifſemems,
-        &amp; vous cauſent de l’admiraticin. Vous eſtes ,dodeſût a
-        babits, puiſque meſpriſant outes les fuperfluitat du ſietl,
-        vous vus plaiſez d’aller veſtai comme vne fitplé houe
-        gcoiſe,vous etes dodeſte en paroles, puiſque vhus oopd
-        ferez que des Senteces &amp; desracles; vous eſtemodel
-        ct8 
-        5
-        en actions piſque vous ne faites que des ations de Princeſſe &amp;
-        vrayement Princeſſe, vous eſtes modeſtes en penſées puiſque vous
-        n’aués point ces vains ſentimens d’honneur &amp; de gloire, &amp; que
-        vous n’en aués que pour le bien de tout le monde. Mais vous ex
-        redés en zele &amp; en pieté puiſque vous n’aués d’autre but que
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_29" source="Moreau">
+          <p>Après la paix</p>
+          <date when="1649-04-01">1649-04-01</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-10-25" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />RESSEMLANCE
+        <lb />DE MADAME
+        <lb />DORLEANS
+        <lb />A., cOloun
+        <lb />vi ApnQee le l A
+        <lb /> Peſenté ̀ ſon ltſſe Royaele.
+        <lb />M. DC. XLIX. <pb n="2" />
+        <pb n="3" />
+        <lb />t
+        <lb />ſeeee ’’’ée?
+        <lb />LA RESSEMBLANCE DE MADAME
+        <lb />e la Ducheſſe ’Orleans à̀ la Colombe, qui
+        <lb />apporta le Rameau d’Oliue à Noé.
+        <lb />Preſenté ̀ ſon Alreſſe Royale.
+        <lb />JADAuE.
+        <lb />LV
+        <lb />La Colombe qui apporta le Rameau d’Oliue au reſtaus
+        <lb rend="¬" break="no" />rateur du genre humain, nous a laiſſé n veritable ſymbole
+        <lb />des glorieuſes qualitez que voſtre Alteſſe Royale poſſede
+        <lb />fi auantageuſement, Dieu l’enuoya à Noé, pour luy oon
+        <lb rend="¬" break="no" />trer que ſa iuſte colere eſtoit appaiſee, &amp; vous, Mame,
+        <lb />vous auez toute voſtre vie employé vos ſoings, vos ſolliei
+        <lb rend="¬" break="no" />tatiens &amp; ves ptieres à appaiſer la colere du Createur, &amp;
+        <lb />moderer celle des creatures. La Colembe eſtoit vn mer
+        <lb rend="¬" break="no" />ueilleux ſymbole de blancheur, &amp; vous outre la blancheus
+        <lb />iacomparable, &amp; les beautez rauiſſantes de voſtre belle
+        <lb />face, vous auez vne ametoute blanche, toute pure, &amp; toute
+        <lb />xempte de tache, elle eſtoir le ſymbole de la douceur, &amp;
+        <lb />vous vous eſtes la douceur meſme; elle eſtoit le ſymbole
+        <lb />de l’amour, &amp; vous vous ne viuez que de l’aour de Die
+        <lb />&amp;e vous ne reſpirez autre choſe; elle eſtoit leſymbole de
+        <lb />l’nnocence, &amp; toute votrevie en eſt vn fidellmireir; el le
+        <lb />eſtoit le ſymbole de la Chaſteté, &amp; vous vous en eſtes le
+        <lb />prototype; elle eſtoit le ſymbole de la piete, &amp; vous vous
+        <lb />en eſtes vn entier exemple; elle apportoit le rameau d’Oli.
+        <lb />ue pour obliger à ſe téjoüir de la paix puiſque l’Oliue en eſt
+        <lb />le ſymbole, &amp; vous vous n’auez d’autre penſeée quecelle de
+        <lb />ptocurer la Paix à toute l’urpe ; elle apportoit la nou
+        <lb rend="¬" break="no" />aelle de la retraicte des eaux;, &amp; vous pa vos pleuſes &amp;
+        <lb />douces ſollicitations vous anez eauſé la retraie des gens.
+        <lb />de gerre qui auoient iuuety noſtre Ville &amp;e nos murailles;
+        <lb /> A ij <pb n="4" />
+        <lb />Eni’le ſainEſorit potte ordinairement la figure de la
+        <lb />Colombe, &amp; c’eſt dans voſtre ſacree poictrine qu’il lancs
+        <lb />ſes amoureuſes fleches, &amp; que le Fils de Dieu tepoſe cõme
+        <lb />dans ſon thrôae. Enfin, M a, elle éſtoit le ſya.
+        <lb />boie deroureés lds vertus, &amp; voſtre Alteſſe Royale les poſ
+        <lb rend="¬" break="no" />ſede auec emnence. lIe ſçay bien qu’il me faudroit vn vo
+        <lb rend="¬" break="no" />lume entier, &amp; que d’ailleurs c’eſt a vne plume plus diſerte
+        <lb /> &amp; plus eloquene que la mienne àentteprepdte de publier
+        <lb />la grandeur de toes vos vertus, ie me contenteray d’en
+        <lb />effl. urer quel ues vnes, &amp; ſur tout celles dnt la Colombe
+        <lb />eſt plus poptement le ſymbole, comme voſtre blancheur,
+        <lb />voſtre douceur, oſtre amour, voſte innocence, voſtre
+        <lb />chaſteté, voſtre pieté, voaſtre contance, voſtre paience
+        <lb /> oſtre modeſtit..
+        <lb /> Mais d’eſt de cette derniere dont ie paleray de plain
+        <lb />abord,puiſque i’aurois crainte de l’offenſer, ſi deuãt que par
+        <lb rend="¬" break="no" />ler des autres vrtus ie ne luy e demandois la pernaiſſions,
+        <lb />veu que ie ſçais bien quelle aura peine à ſoufftir des eritea
+        <lb />g i luy ſont ttes-aduantageuſes. I’oſe donc, M a as
+        <lb />lupplier en tout reſpeét vroſtre Alteſſe Royale de ne point
+        <lb />eroire que ie veuille irriter ſa modeſte, quand le tachetay
+        <lb />de confirmer tous eeux qui lisont ceoy dans les piex &amp; iu
+        <lb rend="¬" break="no" />ſtes ſenimens quils ont pous elle, puiſque ie ne vuœ que
+        <lb />les oblige à imiter vos Royales verus, à marcher ſus
+        <lb />les ſentiers que voſtre pieté leur race. lIe dcay donc de
+        <lb />voſtre modeſtie, A aA M e,. que vous eſtes tute mo
+        <lb rend="¬" break="no" />deſte ſoit en habits, ſoie en paroles, ſoi en actions, ſoit e
+        <lb />penſées, mais pourtant que vous excdez dans voltre azele
+        <lb />&amp; dans veſtrepieté, &amp; que ſi ous eſtes. tetaperée dans les
+        <lb />premiers, vous eſtes exceſſiue dans les ſeconds, &amp; tus
+        <lb />les deux vous donnen de la gloire &amp; de l’embllifſemems,
+        <lb />&amp; vous cauſent de l’admiraticin. Vous eſtes ,dodeſût a
+        <lb rend="¬" break="no" />babits, puiſque meſpriſant outes les fuperfluitat du ſietl,
+        <lb />vous vus plaiſez d’aller veſtai comme vne fitplé houe
+        <lb />gcoiſe,vous etes dodeſte en paroles, puiſque vhus oopd
+        <lb rend="¬" break="no" />ferez que des Senteces &amp; desracles; vous eſtemodel
+        <lb />ct8 <pb n="5" />
+        <lb />5
+        <lb />en actions piſque vous ne faites que des ations de Princeſſe &amp;
+        <lb />vrayement Princeſſe, vous eſtes modeſtes en penſées puiſque vous
+        <lb />n’aués point ces vains ſentimens d’honneur &amp; de gloire, &amp; que
+        <lb />vous n’en aués que pour le bien de tout le monde. Mais vous ex
+        <lb rend="¬" break="no" />redés en zele &amp; en pieté puiſque vous n’aués d’autre but que
         l’a
-        mour de Dieu dont ie parleray ailleurs, &amp; le bien &amp;
+        <lb rend="¬" break="no" />mour de Dieu dont ie parleray ailleurs, &amp; le bien &amp;
         l’accroiſſement
-        de voſlre Patrie. Mais ſii’en dis dauanage ſur ce point voſtre meſ
-        me modeſtie ſera offencée ie paſſe à voſtre blancheut.
-        ll n’y a perſonne qui ne ſçache que vous eſtes vn chef-d’œuure
-        parfait, &amp; que voſtre beautec incomparable fait honte aux rayons
-        du Soleil a la blancheur des lys, a la couleur vermeille des roſes,
-        vos yeux a lazur du Ciel, &amp; voſtre bouche au corail, &amp; pour preu
-        ue de cette verité ie ne veus que les ſentimens du plus grand
+        <lb />de voſlre Patrie. Mais ſii’en dis dauanage ſur ce point voſtre meſ
+        <lb rend="¬" break="no" />me modeſtie ſera offencée ie paſſe à voſtre blancheut.
+        <lb />ll n’y a perſonne qui ne ſçache que vous eſtes vn chef-d’œuure
+        <lb />parfait, &amp; que voſtre beautec incomparable fait honte aux rayons
+        <lb />du Soleil a la blancheur des lys, a la couleur vermeille des roſes,
+        <lb />vos yeux a lazur du Ciel, &amp; voſtre bouche au corail, &amp; pour preu
+        <lb rend="¬" break="no" />ue de cette verité ie ne veus que les ſentimens du plus grand
         Prinee
-        de la terre dont vous eſtes la chere eſpouſe. Mais ſi voſtre beau vi
-        ſage à tant de cbarmes, il n’y à perſonne qui neſçache que voſtre
-        ame eſt toute blanche &amp; que vous l’auez ſi bien purifiee qu’elles’eſt
-        detachee de tous les ſentiraens du monde pour ſuiure aueuglemet
-        les volontez de Dieu, en admirer les ſecrets ingemens, &amp; recipr.
-        quer aux amoureux ſentimens de voſtre cher eſpoux, &amp; i’oſe ſans
-        prophaner vous dire que vous eſtes toute belle &amp; ſans taſche co
-        me l’eſpoux diuin dt à ſon eſpouſe.
-        Mis ce qu fait mieox éclater. votre blancheur c’eft cette do
-        Ceur meſme qui vous accompagne dans toutes vos ations, &amp; ie
-        neſçay ſi vous auez le plus de glaire à eſtre belle qn’à etre ouce,
-        comme ces deux qualitez ſe quittent rarement puiſque l’vne char.
-        me les yeux &amp; l’autre le cœur. Ceux qui ont le bien de vous ap
-        procher diſent qu’il n’y à pas grande difference entre voſtre no
-        deſte &amp; vaſtre douceur, puiſque ſi vous eſtes modeſte en tout,
+        <lb />de la terre dont vous eſtes la chere eſpouſe. Mais ſi voſtre beau vi
+        <lb rend="¬" break="no" />ſage à tant de cbarmes, il n’y à perſonne qui neſçache que voſtre
+        <lb />ame eſt toute blanche &amp; que vous l’auez ſi bien purifiee qu’elles’eſt
+        <lb />detachee de tous les ſentiraens du monde pour ſuiure aueuglemet
+        <lb />les volontez de Dieu, en admirer les ſecrets ingemens, &amp; recipr.
+        <lb rend="¬" break="no" />quer aux amoureux ſentimens de voſtre cher eſpoux, &amp; i’oſe ſans
+        <lb />prophaner vous dire que vous eſtes toute belle &amp; ſans taſche co
+        <lb rend="¬" break="no" />me l’eſpoux diuin dt à ſon eſpouſe.
+        <lb />Mis ce qu fait mieox éclater. votre blancheur c’eft cette do
+        <lb rend="¬" break="no" />Ceur meſme qui vous accompagne dans toutes vos ations, &amp; ie
+        <lb />neſçay ſi vous auez le plus de glaire à eſtre belle qn’à etre ouce,
+        <lb />comme ces deux qualitez ſe quittent rarement puiſque l’vne char.
+        <lb rend="¬" break="no" />me les yeux &amp; l’autre le cœur. Ceux qui ont le bien de vous ap
+        <lb rend="¬" break="no" />procher diſent qu’il n’y à pas grande difference entre voſtre no
+        <lb rend="¬" break="no" />deſte &amp; vaſtre douceur, puiſque ſi vous eſtes modeſte en tout,
         vous
-        eſtes douce en tout, ſoit en paroles, ſoit en actions, ſeit en penſee.
-        Vouseſtes douce en paroles paiſque vous n’aez iamais proſeré
-        aucun mot plain d’aigreur, &amp; qui ait pû faſcher la moindre perſon
-        ne du monde, vous eſtes douce en eétions piſque vous n’auez ia
-        mais fait aucune action en colere. Enfin vous eſtes douce en pen
-        ſées, puiſque vous n’auez eu iamais aucun ſetiment dée vengeance
-        &amp; de haine, &amp; que vous n’auez iamais teſpiré que la ehaié, la
-        douceur &amp; Ia clemensee.
-        . 
-        C’et auſſi cette haute charité qui vous fait admirer comme le
-        Buiſſon ardent de Moyſe, &amp; qui nous fait dire comme ſaint Paul:
-        que vous ne viuiez point en vous: mas toute en Dieu. C’eſt cette
-        charité qui vous rat ſouuent en extaſe, comme le meſme S. Paul
-        qui vous fait dire comme S. Bernard. Que vous eſtes toute pleine
-        d’amour:mais de cét amour diuin qui embraſe les Seraphins, qui reſ.
-        jot &amp;e enflamneles Bien heureux, &amp; qui viuifie les Saiates Amos
-        ſur terre. Enfin c’eſt cette charité qui eſt eipanchée dans voſtre a
-        me, &amp; qui porte voſtre cœur à aymet vniquement Dieu, comae la
-        ſource de toutes les douceurs &amp; de toutes les delices. Mais cette
-        grande charité eſt touſiours accompagnée des tendreſſes pour le
-        prochain, &amp; fi vous aymez reſpectueuſement le Createur, vous ay
-        nez Chreſtiennement ſes Creatures, &amp; principalement ſes Pau
-        ures, dans leſquels vous recognoiſſez ſa viuante Image, &amp;
+        <lb />eſtes douce en tout, ſoit en paroles, ſoit en actions, ſeit en penſee.
+        <lb />Vouseſtes douce en paroles paiſque vous n’aez iamais proſeré
+        <lb />aucun mot plain d’aigreur, &amp; qui ait pû faſcher la moindre perſon
+        <lb rend="¬" break="no" />ne du monde, vous eſtes douce en eétions piſque vous n’auez ia
+        <lb rend="¬" break="no" />mais fait aucune action en colere. Enfin vous eſtes douce en pen
+        <lb rend="¬" break="no" />ſées, puiſque vous n’auez eu iamais aucun ſetiment dée vengeance
+        <lb />&amp; de haine, &amp; que vous n’auez iamais teſpiré que la ehaié, la
+        <lb />douceur &amp; Ia clemensee.
+        <lb />. <pb n="6" />
+        <lb />C’et auſſi cette haute charité qui vous fait admirer comme le
+        <lb />Buiſſon ardent de Moyſe, &amp; qui nous fait dire comme ſaint Paul:
+        <lb />que vous ne viuiez point en vous: mas toute en Dieu. C’eſt cette
+        <lb />charité qui vous rat ſouuent en extaſe, comme le meſme S. Paul
+        <lb />qui vous fait dire comme S. Bernard. Que vous eſtes toute pleine
+        <lb />d’amour:mais de cét amour diuin qui embraſe les Seraphins, qui reſ.
+        <lb />jot &amp;e enflamneles Bien heureux, &amp; qui viuifie les Saiates Amos
+        <lb />ſur terre. Enfin c’eſt cette charité qui eſt eipanchée dans voſtre a
+        <lb rend="¬" break="no" />me, &amp; qui porte voſtre cœur à aymet vniquement Dieu, comae la
+        <lb />ſource de toutes les douceurs &amp; de toutes les delices. Mais cette
+        <lb />grande charité eſt touſiours accompagnée des tendreſſes pour le
+        <lb />prochain, &amp; fi vous aymez reſpectueuſement le Createur, vous ay
+        <lb rend="¬" break="no" />nez Chreſtiennement ſes Creatures, &amp; principalement ſes Pau
+        <lb rend="¬" break="no" />ures, dans leſquels vous recognoiſſez ſa viuante Image, &amp;
         voſtre
-        reſſemblance; Ouy Madame, il n’y a perſonne qui ne ſçache que
-        vous aymez tellement les Pauures, que vous taſchez deſubuenir à
-        leur neceſſitez, &amp; à les rerirer de leur miſere. Il n’y a perſonne qui
-        ne ſçache que voſtre profonde humilité́ vous faict regarder toutes
-        perſonnes, comme creées de Dieu, auſſi ben que vous, &amp; coname
-        ſes vrayes Images.
-        C’eſt enquoy il n’y a perſonne qui ne iuge de voſtre innocence
-        &amp; de voſtre candeur.Quand on vous void embrazée d’vne ſigran
-        de charité, on ſçat que vous n’eſtes capable d’aucun peché, puis
+        <lb />reſſemblance; Ouy Madame, il n’y a perſonne qui ne ſçache que
+        <lb />vous aymez tellement les Pauures, que vous taſchez deſubuenir à
+        <lb />leur neceſſitez, &amp; à les rerirer de leur miſere. Il n’y a perſonne qui
+        <lb />ne ſçache que voſtre profonde humilité́ vous faict regarder toutes
+        <lb />perſonnes, comme creées de Dieu, auſſi ben que vous, &amp; coname
+        <lb />ſes vrayes Images.
+        <lb />C’eſt enquoy il n’y a perſonne qui ne iuge de voſtre innocence
+        <lb />&amp; de voſtre candeur.Quand on vous void embrazée d’vne ſigran
+        <lb rend="¬" break="no" />de charité, on ſçat que vous n’eſtes capable d’aucun peché, puis
         que
-        Voſtre Alteſſe Royal ne ſe plaiſt que dans l’exercice des Vertus,
-        on ſcait que toute voſtre vie eſt vn tableau de l’lnnocence où tou
-        cs les Vertus ſont naifuement repreſenté́es par laTheorie &amp; par
+        <lb />Voſtre Alteſſe Royal ne ſe plaiſt que dans l’exercice des Vertus,
+        <lb />on ſcait que toute voſtre vie eſt vn tableau de l’lnnocence où tou
+        <lb rend="¬" break="no" />cs les Vertus ſont naifuement repreſenté́es par laTheorie &amp; par
         la
-        praticque. onſç̧ait que vous auez vne ſi grande horreur du vice que
-        vous ne pouuez ſouffrr aucun vicieux, &amp; que vous haſſez toutes
-        les infames, onſç̧ait que comme cette glorieuſe Vierge dont voué
-        portez le nom vous foulez au pied le Dragon lnfernal,pour ne luoy
-        donner aucune priſe ſur voſtreinnocéce, on ſçait que plus il eſprou
-        ue voſtre Vertu, plus vous paroiſſez inuincible, &amp; plus vous
+        <lb />praticque. onſç̧ait que vous auez vne ſi grande horreur du vice que
+        <lb />vous ne pouuez ſouffrr aucun vicieux, &amp; que vous haſſez toutes
+        <lb />les infames, onſç̧ait que comme cette glorieuſe Vierge dont voué
+        <lb />portez le nom vous foulez au pied le Dragon lnfernal,pour ne luoy
+        <lb />donner aucune priſe ſur voſtreinnocéce, on ſçait que plus il eſprou
+        <lb rend="¬" break="no" />ue voſtre Vertu, plus vous paroiſſez inuincible, &amp; plus vous
         reſiſtez
-        à ſes attaques;Enfin on ſçat que c’eſt Votre Alteſſe Royal quieſt
-        le vray miroir de l’Innocence, &amp; l’elixir de la candeur.
-         Iene diray rien dauantage de voſte chaſteté, puis que toute la
-        terre laſç̧ai, &amp; que voſtre innocence en eſt vn fidelle teſnoignage 
-        
-        7
-        ear à quoy bon d’aller dirẽ que vous eſtes la plus chaſtePrinceſſe de
-        la terre Ne leſçais on pas’à quoy bon d’aller dire que vous auez
-        voüé toutes vos aſections à Monſeigneur le Duc, ne le ſçait-on
-        pas &amp; ne l’eſprouue-t’il pas tous les jours, &amp; ne pouuez vous pas
-        dire auecl’Epouſe au Cantique, mon cher Eſpoux eſt à moy &amp; moy
-        ie ſuis à luy, puis que vous l’aimez ſi cherement &amp; que luy vous
-        cherit auecrant de tandreſſe. I’ay donc à me taire ſur ce ſujet, ſç̧a
-        chant bien qu’on peut dre de vous ce qu’on dt de la bien-heureu
-        ſe Vierge. Que vous paroiſſez entre les filles d’Adam ce que le lys
-        parmi les eſpines y conſeruant touſiours ſon inte grté.
-         Mais quoy patleray-ie de voſtre pieé c’eſt vn abyſme ſans fond,
-        &amp; elle eſt ſi grande qu’on n’en peut eſflairet que les moindres par
-        ticularitez ſoit l’amout de Dieu, ſoit l’amour de voſtre Patrie,
+        <lb />à ſes attaques;Enfin on ſçat que c’eſt Votre Alteſſe Royal quieſt
+        <lb />le vray miroir de l’Innocence, &amp; l’elixir de la candeur.
+        <lb /> Iene diray rien dauantage de voſte chaſteté, puis que toute la
+        <lb />terre laſç̧ai, &amp; que voſtre innocence en eſt vn fidelle teſnoignage <pb n="7" />
+        <lb />
+        <lb rend="¬" break="no" />7
+        <lb />ear à quoy bon d’aller dirẽ que vous eſtes la plus chaſtePrinceſſe de
+        <lb />la terre Ne leſçais on pas’à quoy bon d’aller dire que vous auez
+        <lb />voüé toutes vos aſections à Monſeigneur le Duc, ne le ſçait-on
+        <lb />pas &amp; ne l’eſprouue-t’il pas tous les jours, &amp; ne pouuez vous pas
+        <lb />dire auecl’Epouſe au Cantique, mon cher Eſpoux eſt à moy &amp; moy
+        <lb />ie ſuis à luy, puis que vous l’aimez ſi cherement &amp; que luy vous
+        <lb />cherit auecrant de tandreſſe. I’ay donc à me taire ſur ce ſujet, ſç̧a
+        <lb rend="¬" break="no" />chant bien qu’on peut dre de vous ce qu’on dt de la bien-heureu
+        <lb rend="¬" break="no" />ſe Vierge. Que vous paroiſſez entre les filles d’Adam ce que le lys
+        <lb />parmi les eſpines y conſeruant touſiours ſon inte grté.
+        <lb /> Mais quoy patleray-ie de voſtre pieé c’eſt vn abyſme ſans fond,
+        <lb />&amp; elle eſt ſi grande qu’on n’en peut eſflairet que les moindres par
+        <lb rend="¬" break="no" />ticularitez ſoit l’amout de Dieu, ſoit l’amour de voſtre Patrie,
         pour
-        I’amour de Dieu i’en ay déja touché quelque choſe, &amp; pour l’a
-        mour de voſtre Patrie, la France en a reſſenti ces iours paſſez des
-        preuues, &amp; ſi Paris goufte les douceurs de la paix il ſait que Voſtre
-        Alteſſe Royale y a contribué de la meilleure partie, puis que Mon
-        ſeigneur le Duc voſtte mary par vos endres &amp; pieuſes ſollicita
-        tions s’eſt tant donné de peine pour vous la procurer, &amp; nous
+        <lb />I’amour de Dieu i’en ay déja touché quelque choſe, &amp; pour l’a
+        <lb rend="¬" break="no" />mour de voſtre Patrie, la France en a reſſenti ces iours paſſez des
+        <lb />preuues, &amp; ſi Paris goufte les douceurs de la paix il ſait que Voſtre
+        <lb />Alteſſe Royale y a contribué de la meilleure partie, puis que Mon
+        <lb rend="¬" break="no" />ſeigneur le Duc voſtte mary par vos endres &amp; pieuſes ſollicita
+        <lb rend="¬" break="no" />tions s’eſt tant donné de peine pour vous la procurer, &amp; nous
         ſom
-        mes tous confus de tantde vertueuſes &amp; iuſtes remonſtrances dét
-        Voſtre Alteſſe Royale a flechi la Reine, luy remonſtrant noſtre
-        obeyſſance &amp; noſtre miſere, &amp; ſi enfin elle vous a eſcouté ous
-        ſçauons tres- bien queſa Majeſté n’a iamais eſté que res-bonne, &amp;
-        nous voulons croire pieuſcment que coammetres ſage elle n’a rien
-        faict que bien conſeillée, &amp; vous, Madame, tres-affectionnée.
-        lIe n’oſerois ren dire de voſtre coſtance, puis que ce ſeroit en
-        quelque façon renouueller vos peines; mais pourtant permetrez
-        moy de dire, Madame, que vous auez toufiouts pris toutes les afli.
-        ctions qui vous ſont arriuees comme venantes de la main de Dieu ſi
-        ous auez veu Monſeigneut voſtre mary eſloigné de la Cour de
-        ſon propre frere noſtre Roy deffunct d’heureuſe memoire; Si vous
-        auez vou Monſeigneur voſtre frere deſpouillé preſqee de tout ſon
-        Domaine: Qu’auez vous iamais fait autre choſe que d’admirer les
-        ſacrez iugemens de Dieu, &amp; d’attendre l’iſſuë de ſes volonés.
-        Enfin ſi Dieu a voulu eſprouuet voſtre conſtance ne couronnant
-        pas voſtreheureux naariage de la naiſſance de quelques Princes:
-         A 
-        mais s’il ne vous a donné iuſques à cette beure que de belles Prin
-        ceſſes, ne vous eſtes vous pas armée de conſtance &amp; de
+        <lb rend="¬" break="no" />mes tous confus de tantde vertueuſes &amp; iuſtes remonſtrances dét
+        <lb />Voſtre Alteſſe Royale a flechi la Reine, luy remonſtrant noſtre
+        <lb />obeyſſance &amp; noſtre miſere, &amp; ſi enfin elle vous a eſcouté ous
+        <lb />ſçauons tres- bien queſa Majeſté n’a iamais eſté que res-bonne, &amp;
+        <lb />nous voulons croire pieuſcment que coammetres ſage elle n’a rien
+        <lb />faict que bien conſeillée, &amp; vous, Madame, tres-affectionnée.
+        <lb />lIe n’oſerois ren dire de voſtre coſtance, puis que ce ſeroit en
+        <lb />quelque façon renouueller vos peines; mais pourtant permetrez
+        <lb rend="¬" break="no" />moy de dire, Madame, que vous auez toufiouts pris toutes les afli.
+        <lb />ctions qui vous ſont arriuees comme venantes de la main de Dieu ſi
+        <lb />ous auez veu Monſeigneut voſtre mary eſloigné de la Cour de
+        <lb />ſon propre frere noſtre Roy deffunct d’heureuſe memoire; Si vous
+        <lb />auez vou Monſeigneur voſtre frere deſpouillé preſqee de tout ſon
+        <lb />Domaine: Qu’auez vous iamais fait autre choſe que d’admirer les
+        <lb />ſacrez iugemens de Dieu, &amp; d’attendre l’iſſuë de ſes volonés.
+        <lb />Enfin ſi Dieu a voulu eſprouuet voſtre conſtance ne couronnant
+        <lb />pas voſtreheureux naariage de la naiſſance de quelques Princes:
+        <lb /> A <pb n="8" />
+        <lb />mais s’il ne vous a donné iuſques à cette beure que de belles Prin
+        <lb rend="¬" break="no" />ceſſes, ne vous eſtes vous pas armée de conſtance &amp; de
         patience,
-        eſperant que Dieu y mertroit bon ordre: oais que vous eſtes heu.
-        reuſe, Madame, d’auoir vne ſi grande confiance en Dieu, que de
-        temettre tout entre ſes mans: Que vous eſtes heureuſe, Madame,
-        d’auoir vn fort détachement des choſes de la terre pour vous vnir à
-        celles du Ciel,eſperés auſſi, eſpereés- que eu benira vos vertucuſes
-         intentions, &amp; que lors que vous y ſongerez le moins, que ce.ſera
-        pout lors qu’il recognoiſtra voſtre azcle: lI’oſe vous pronoſtiquer en
-        oute ſeureté, qe’il vous donnera lelon vos ſouhaits, ceux de Mon
-        ſeigneur voſtre mary,&amp; de toute la France, vn glorieux enfant
+        <lb />eſperant que Dieu y mertroit bon ordre: oais que vous eſtes heu.
+        <lb rend="¬" break="no" />reuſe, Madame, d’auoir vne ſi grande confiance en Dieu, que de
+        <lb />temettre tout entre ſes mans: Que vous eſtes heureuſe, Madame,
+        <lb />d’auoir vn fort détachement des choſes de la terre pour vous vnir à
+        <lb />celles du Ciel,eſperés auſſi, eſpereés- que eu benira vos vertucuſes
+        <lb /> intentions, &amp; que lors que vous y ſongerez le moins, que ce.ſera
+        <lb />pout lors qu’il recognoiſtra voſtre azcle: lI’oſe vous pronoſtiquer en
+        <lb />oute ſeureté, qe’il vous donnera lelon vos ſouhaits, ceux de Mon
+        <lb rend="¬" break="no" />ſeigneur voſtre mary,&amp; de toute la France, vn glorieux enfant
         di
-        gne reietton du ſang de Bourbon &amp; de la Maiſcn de Lorraine, va
-        enfant qui ſera la tetreur des ennemis du Roy, l’amour de tous les
-        Erançois, l’eſtonnement de tous les Eſtrangers, &amp; le Protecteurt de
-        lEgliſe. Vn enfant qui ſea le vray miroir d’amour, de fageſſe, de
-        ptudence, de picte, &amp; de courags.
-        Toute la France, Madame prie tous les iours Dieu qu’il veüille
-        bnir vos trauaux &amp; voſtre zele par vne ſi heureuſe naiſlance; mais
-        psincipalemen les Pariſiens qui ſouhaitteroient impatiemment
-        Soſtre retour dans leur ville, n’attendent que le moment peur auois
-        le bien de vous oſfrir leurs biens, leurs fortues &amp; leurs perſonnes,
-        pour tendre graces à Voſtre Alteſſe Royalie, de ans de oins, de?
-        peines, &amp; de bons ſentimens qoe vous auez eu pour leu: bien, pou
-        leur repos, pour vous aſſeurer qu’ils veulent tous viure &amp; mourit
-        jnniolablement ves tres- humbles, tres-obeïſſans, ttes-obligez2
-        ſeruiteurs: Prians Dicu prepetuellement pour la proſpe:ite de Vo
-        :e Alteſſe oyallc.luy deſira.s rne longue &amp; heureuſe vie, co
-         bee de toes ſortes de faueurs.			</p>
-		</body>
-	</text>
+        <lb rend="¬" break="no" />gne reietton du ſang de Bourbon &amp; de la Maiſcn de Lorraine, va
+        <lb />enfant qui ſera la tetreur des ennemis du Roy, l’amour de tous les
+        <lb />Erançois, l’eſtonnement de tous les Eſtrangers, &amp; le Protecteurt de
+        <lb />lEgliſe. Vn enfant qui ſea le vray miroir d’amour, de fageſſe, de
+        <lb />ptudence, de picte, &amp; de courags.
+        <lb />Toute la France, Madame prie tous les iours Dieu qu’il veüille
+        <lb />bnir vos trauaux &amp; voſtre zele par vne ſi heureuſe naiſlance; mais
+        <lb />psincipalemen les Pariſiens qui ſouhaitteroient impatiemment
+        <lb />Soſtre retour dans leur ville, n’attendent que le moment peur auois
+        <lb />le bien de vous oſfrir leurs biens, leurs fortues &amp; leurs perſonnes,
+        <lb />pour tendre graces à Voſtre Alteſſe Royalie, de ans de oins, de?
+        <lb />peines, &amp; de bons ſentimens qoe vous auez eu pour leu: bien, pou
+        <lb />leur repos, pour vous aſſeurer qu’ils veulent tous viure &amp; mourit
+        <lb />jnniolablement ves tres- humbles, tres-obeïſſans, ttes-obligez2
+        <lb />ſeruiteurs: Prians Dicu prepetuellement pour la proſpe:ite de Vo
+        <lb rend="¬" break="no" />:e Alteſſe oyallc.luy deſira.s rne longue &amp; heureuſe vie, co
+        <lb rend="¬" break="no" /> bee de toes ſortes de faueurs. </p>
+    </body>
+  </text>
 </TEI>

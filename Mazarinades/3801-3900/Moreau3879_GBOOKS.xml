@@ -1,389 +1,248 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3879_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Le triomphe de monseigneur le duc de Beaufort.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Le triomphe de monseigneur le duc de Beaufort.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2022-10-25">25 octobre 2022</date>
-				<availability status="restricted" n="cc-by">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=v31dWMtHX2oC"/>
-					<author/>
-					<title source="Moreau">Triomphe (le) de monseigneur le duc de Beaufort.</title>
-					<pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
-					<publisher ref="isni:0000000110423830" xml:id="IL_LaVigneNicolasde.xml">
-						<persName>
-							<forename>Nicolas de</forename>
-							<surname>La Vigne</surname>
-						</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure unit="page" quantity="8"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale de Lyon</institution>
-						<repository/>
-						<idno type="cote">Rés 312138</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2022-10-25">25 octobre 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=v31dWMtHX2oC" />
+          <author />
+          <title source="Moreau">Triomphe (le) de monseigneur le duc de Beaufort.</title>
+          <pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
+          <publisher ref="isni:0000000110423830" xml:id="IL_LaVigneNicolasde.xml">
+            <persName>
+              <forename>Nicolas de</forename>
+              <surname>La Vigne</surname>
+            </persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure unit="page" quantity="8" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale de Lyon</institution>
+            <repository />
+            <idno type="cote">Rés 312138</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">3879. Triomphe (le) de monseigneur le duc de Beaufort. Paris, Nicolas de
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">3879. Triomphe (le) de monseigneur le duc de Beaufort. Paris, Nicolas de
           La Vigne, 1649, 8 pages.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">panégyrique</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_6" source="Moreau">
-					<p>Lettre du parlement de Paris aux autres parlements du royaume</p>
-					<date when="1649-01-18">1649-01-18</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-10-25" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<imprimatur>AVEC PERMISSION.</imprimatur>
-TRoMpHE
-        LE DVCDE
-        BEAVFORT
-        elnieie
-        
-        
-        
-        
-        3
-        e?û
-        E E
-         T.
-        ern
-        
-        TRI OMPHE
-        DE MONSEIGNEVR
-        T E T T
-         4
-        l I DV L Ai
-        ED
-        r r 8
-        AV U 1
-         ONSEIGNEVR.
-        ’it aduoüer que voſtre nom eſt ſi
-        glorieux, &amp; que vos armes ſont ſi puiſſans
-        es, qu’elles oat ietteé laterreur &amp; l’eſpou¬ 
-        .
-        4
-        uante dans les cœurs de nos ennemis, qui
-        ont eſtécontraints de ſe retirer, &amp; d’aban
-        doaner leur pernicieuſe entrepriſe. Nos
-        Lys eſpaouis par vos victeires ont embau
-        me toute la. France de l’agreable odeur de
-        voſtre courage.. Vos lauriets ſont ſiverds,
-        qu’ils doiuenr ſeruir d’ormbrages &amp; de ſeu
-        reté à tout ce Royaume, &amp; ſemblent vea
-        loir eſleuer voſtre gloire ſur la ruiae de
-        ces mutins, &amp; de ces ſeditieu, quiſontfor
-        cez dedreſſer des Autels à voſtre vertucon
-        noiſſans’que tous vos effoartsn’ont point
-        d’autre fin que de proteger’les oppreſſea,
-        deſengager les Innoans, i&amp; faire ployer
-        l’inſolenc d’vn eſtranger, qui par ſes-abo
-        minables deſfſeins taſchoit à troubler &amp; rui
-        ner entieremenc ce Royaume..L’eſtat dans
-        lequel nous nous voyons maintenaat eſt
-        vne preuue manifeſte, &amp; vne marque cu
-        dente de toutes ces veritez: car s’il eſt vra
-         que la neceſſité des affaires n’ait iamais fait
-        gouſter quelques ausrtumies, quls plaiſirs
-         quelles douceursn’anuons-nous pas ieceus
-        pat lebruit des comlhaats, daas leſquels vous
-         e 
-        5
-        eſtes touſiours demeuré victo ieux; com
-        bien d’exploits ſigna!ez nous ont reſioü̈is,
-        leſquels dans cent ans à peine paſſeroient
-        pour veritables, &amp; trouueroient plus d’en
-        trée aux yeux que dans la penſeée. Les Hi
-        ſtoires nous apprennent que les Romains
-        s’aſſeurant entierement dans leurs fola¬.
-        ſtres auguresconceurent vne grande eſpe
-        rance de l’Empire d’Anthonin, &amp; de
-        Marc Aurele Tous les François, Mon
-        ſeigneur, en la confiance de vos vertus
-        eſtabliſſent tout leur bon -heur, &amp; tout le
-        repos que vous al’ez rendre a ce Royau
-        me. L’antiquité, bien qu’orgueilieuſe de
-        ces Heros, confeſſe n’auoir iama veu des
-        faictsplusg’orieux, ny ouy denerueil
-        les plus veritables, &amp; ces grandes conque
-        ſtes, qui par leur recit cauſent de l’eſton
-        emen a toutes les Nations ne peuuent.
-        eſtre comsrables aux voſtres, qu’auec v
-        ne gtande diſproportion.. C’eſt vous,
-        Monſeigneur, qui par des reſſorts inoüis
-        qevoſtre prudençe,, auez en vn moment
-        ſbranlé l’eſtabliſſement, &amp; le fondement
-         B 
-        de l’entrepriſe de ce mauuais Miniſtre, &amp;
-        ceux qui eſtoient de ſon iniuſte cabale, ad
-        uoüent que c’eſt voſtre grandeur décou
-        age quia abbattu ſes mouuemens ſourcil
-        leux, &amp; qui a reduit toutes ſes vaines pre
-        tentions enfumée &amp; pouſſiere.
-         Perſonne ne doute que vos predeceſ
-        ſeurs ne ſe ſoient rendus recommandables
-        par de rares pe fections, les vns par l’excel
-        lence de leur eſpit, &amp; par leur admira
-        ble prudence, les autres par la luſtice, &amp;
-        gandeur de leurs actions: mais nous pou
-        uons voir en vous ſeul toutes ces belles
-        qualitez qui leur auoient eſteé departies
-        en détail, &amp; dire qu’en vous poſſedant
-        nous ioü̂iſſons des a ppanageas de-toutes les
-        ve: ts qui ſe ſont legées dans voſtre per
-        ſonne: comme dans vn rare ſuiet Iamais
-        Prince n’a paru plus miraculeux en ſes ef
-        fects, &amp; en ſes executioss ,-pis que l’on
-        vous voit touſiours en haleine, touſiours
-        couuert de pouſſiere &amp; de ſueur comme de
-        lauriers, touſiours preſt à veſtir le harnois,
-        &amp; le piedà l’eſtrir, pour courir la cartiere 
-        3
-        5
-        de l’immortalité, &amp; quin’auez point d’au
-        tres esbats qu’vn rude cliquetis d’armes, &amp;
-        l’effroy de quelque bataille. Enfin, Mon
-        ſeigneur, le Soleil, va, eſclaire vos faits par
-        tout, ou ſa lumiere eſclattera, &amp; ne nous
-        donnera plus le iour qu’en nous ramenant.
-        l’admiration de vos vertus..
-         Viuez donques, Monſeigneur, mais vi
-        uez pour la vie des F anç̧ois, qui ne vous
-        admirent que comme l Ange Tutelaire
-        de la France, &amp; qui ne vous conſiderent
-        que comme l’arc-boutant de ſon repos, &amp;
-        deſa felicité! Bel Aſtrie, qui pouuez diſſi
-        per les orages de la guerre, r’amenez-nous
-        noſtreMonarque triomphant que ce
-        Lyon nous a rauy., rendeznous cette
-        Couronne d’oliues qu’il nous a tant de
-        fois oſtée. Faites, faites, que le bon-heur
-        de la France ne ſoit pas dauantage alteré,
-        que nos Lys ne ſoient point fanez, que
-        ce Royaume ſoit le Paradis des hommes,
-        &amp; en reconnoiſſance de tant de graces &amp;
-        de faueurs, nous prierõ̃s le Tout-puiſſant
-        qu’il ne pemette pas que vos lauriers ſe 
-        deſſechent, qu’il rende vos victoires ſo
-        lemnelles, que les armées de noſtre Roy
-        ſous voſtre ſage conduite ſoient touſiours
-        triomphantes, &amp; que ſa faueur ſeconde
-        touſiours vos deſſeins, &amp; ne ſelaſſe iamais
-        de verſer ſur vous ſes benedictions. Ce ſe
-        ront les vœux &amp; le ſouhaits continuels de
-        tous les bons François.
-        FIN.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">panégyrique</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_6" source="Moreau">
+          <p>Lettre du parlement de Paris aux autres parlements du royaume</p>
+          <date when="1649-01-18">1649-01-18</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-10-25" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />TRoMpHE
+        <lb />LE DVCDE
+        <lb />BEAVFORT
+        <lb />elnieie
+        <lb />
+        <imprimatur>AVEC PERMISSION.</imprimatur>
+        <pb n="2" />
+        <pb n="3" />
+        <lb />3
+        <lb />e?û
+        <lb />E E
+        <lb /> T.
+        <lb />ern
+        <lb />
+        <lb />TRI OMPHE
+        <lb />DE MONSEIGNEVR
+        <lb />T E T T
+        <lb /> 4
+        <lb />l I DV L Ai
+        <lb rend="¬" break="no" />ED
+        <lb rend="¬" break="no" />r r 8
+        <lb />AV U 1
+        <lb /> ONSEIGNEVR.
+        <lb />’it aduoüer que voſtre nom eſt ſi
+        <lb />glorieux, &amp; que vos armes ſont ſi puiſſans
+        <lb />es, qu’elles oat ietteé laterreur &amp; l’eſpou¬ <pb n="4" />
+        <lb />.
+        <lb />4
+        <lb />uante dans les cœurs de nos ennemis, qui
+        <lb />ont eſtécontraints de ſe retirer, &amp; d’aban
+        <lb rend="¬" break="no" />doaner leur pernicieuſe entrepriſe. Nos
+        <lb />Lys eſpaouis par vos victeires ont embau
+        <lb rend="¬" break="no" />me toute la. France de l’agreable odeur de
+        <lb />voſtre courage.. Vos lauriets ſont ſiverds,
+        <lb />qu’ils doiuenr ſeruir d’ormbrages &amp; de ſeu
+        <lb rend="¬" break="no" />reté à tout ce Royaume, &amp; ſemblent vea
+        <lb rend="¬" break="no" />loir eſleuer voſtre gloire ſur la ruiae de
+        <lb />ces mutins, &amp; de ces ſeditieu, quiſontfor
+        <lb rend="¬" break="no" />cez dedreſſer des Autels à voſtre vertucon
+        <lb rend="¬" break="no" />noiſſans’que tous vos effoartsn’ont point
+        <lb />d’autre fin que de proteger’les oppreſſea,
+        <lb />deſengager les Innoans, i&amp; faire ployer
+        <lb />l’inſolenc d’vn eſtranger, qui par ſes-abo
+        <lb rend="¬" break="no" />minables deſfſeins taſchoit à troubler &amp; rui
+        <lb rend="¬" break="no" />ner entieremenc ce Royaume..L’eſtat dans
+        <lb />lequel nous nous voyons maintenaat eſt
+        <lb />vne preuue manifeſte, &amp; vne marque cu
+        <lb rend="¬" break="no" />dente de toutes ces veritez: car s’il eſt vra
+        <lb /> que la neceſſité des affaires n’ait iamais fait
+        <lb />gouſter quelques ausrtumies, quls plaiſirs
+        <lb /> quelles douceursn’anuons-nous pas ieceus
+        <lb />pat lebruit des comlhaats, daas leſquels vous
+        <lb /> e <pb n="5" />
+        <lb />5
+        <lb />eſtes touſiours demeuré victo ieux; com
+        <lb rend="¬" break="no" />bien d’exploits ſigna!ez nous ont reſioü̈is,
+        <lb />leſquels dans cent ans à peine paſſeroient
+        <lb rend="¬" break="no" />pour veritables, &amp; trouueroient plus d’en
+        <lb rend="¬" break="no" />trée aux yeux que dans la penſeée. Les Hi
+        <lb rend="¬" break="no" />ſtoires nous apprennent que les Romains
+        <lb />s’aſſeurant entierement dans leurs fola¬.
+        <lb />ſtres auguresconceurent vne grande eſpe
+        <lb rend="¬" break="no" />rance de l’Empire d’Anthonin, &amp; de
+        <lb />Marc Aurele Tous les François, Mon
+        <lb rend="¬" break="no" />ſeigneur, en la confiance de vos vertus
+        <lb />eſtabliſſent tout leur bon -heur, &amp; tout le
+        <lb />repos que vous al’ez rendre a ce Royau
+        <lb rend="¬" break="no" />me. L’antiquité, bien qu’orgueilieuſe de
+        <lb />ces Heros, confeſſe n’auoir iama veu des
+        <lb />faictsplusg’orieux, ny ouy denerueil
+        <lb rend="¬" break="no" />les plus veritables, &amp; ces grandes conque
+        <lb rend="¬" break="no" />ſtes, qui par leur recit cauſent de l’eſton
+        <lb rend="¬" break="no" />emen a toutes les Nations ne peuuent.
+        <lb />eſtre comsrables aux voſtres, qu’auec v
+        <lb rend="¬" break="no" />ne gtande diſproportion.. C’eſt vous,
+        <lb />Monſeigneur, qui par des reſſorts inoüis
+        <lb />qevoſtre prudençe,, auez en vn moment
+        <lb />ſbranlé l’eſtabliſſement, &amp; le fondement
+        <lb /> B <pb n="6" />
+        <lb />de l’entrepriſe de ce mauuais Miniſtre, &amp;
+        <lb />ceux qui eſtoient de ſon iniuſte cabale, ad
+        <lb rend="¬" break="no" />uoüent que c’eſt voſtre grandeur décou
+        <lb rend="¬" break="no" />age quia abbattu ſes mouuemens ſourcil
+        <lb rend="¬" break="no" />leux, &amp; qui a reduit toutes ſes vaines pre
+        <lb rend="¬" break="no" />tentions enfumée &amp; pouſſiere.
+        <lb /> Perſonne ne doute que vos predeceſ
+        <lb rend="¬" break="no" />ſeurs ne ſe ſoient rendus recommandables
+        <lb />par de rares pe fections, les vns par l’excel
+        <lb rend="¬" break="no" />lence de leur eſpit, &amp; par leur admira
+        <lb rend="¬" break="no" />ble prudence, les autres par la luſtice, &amp;
+        <lb />gandeur de leurs actions: mais nous pou
+        <lb rend="¬" break="no" />uons voir en vous ſeul toutes ces belles
+        <lb />qualitez qui leur auoient eſteé departies
+        <lb />en détail, &amp; dire qu’en vous poſſedant
+        <lb />nous ioü̂iſſons des a ppanageas de-toutes les
+        <lb />ve: ts qui ſe ſont legées dans voſtre per
+        <lb rend="¬" break="no" />ſonne: comme dans vn rare ſuiet Iamais
+        <lb />Prince n’a paru plus miraculeux en ſes ef
+        <lb rend="¬" break="no" />fects, &amp; en ſes executioss ,-pis que l’on
+        <lb />vous voit touſiours en haleine, touſiours
+        <lb />couuert de pouſſiere &amp; de ſueur comme de
+        <lb />lauriers, touſiours preſt à veſtir le harnois,
+        <lb />&amp; le piedà l’eſtrir, pour courir la cartiere <pb n="7" />
+        <lb />3
+        <lb rend="¬" break="no" />5
+        <lb />de l’immortalité, &amp; quin’auez point d’au
+        <lb rend="¬" break="no" />tres esbats qu’vn rude cliquetis d’armes, &amp;
+        <lb />l’effroy de quelque bataille. Enfin, Mon
+        <lb rend="¬" break="no" />ſeigneur, le Soleil, va, eſclaire vos faits par
+        <lb />tout, ou ſa lumiere eſclattera, &amp; ne nous
+        <lb />donnera plus le iour qu’en nous ramenant.
+        <lb />l’admiration de vos vertus..
+        <lb /> Viuez donques, Monſeigneur, mais vi
+        <lb rend="¬" break="no" />uez pour la vie des F anç̧ois, qui ne vous
+        <lb />admirent que comme l Ange Tutelaire
+        <lb />de la France, &amp; qui ne vous conſiderent
+        <lb />que comme l’arc-boutant de ſon repos, &amp;
+        <lb />deſa felicité! Bel Aſtrie, qui pouuez diſſi
+        <lb rend="¬" break="no" />per les orages de la guerre, r’amenez-nous
+        <lb />noſtreMonarque triomphant que ce
+        <lb />Lyon nous a rauy., rendeznous cette
+        <lb />Couronne d’oliues qu’il nous a tant de
+        <lb />fois oſtée. Faites, faites, que le bon-heur
+        <lb />de la France ne ſoit pas dauantage alteré,
+        <lb />que nos Lys ne ſoient point fanez, que
+        <lb />ce Royaume ſoit le Paradis des hommes,
+        <lb />&amp; en reconnoiſſance de tant de graces &amp;
+        <lb />de faueurs, nous prierõ̃s le Tout-puiſſant
+        <lb />qu’il ne pemette pas que vos lauriers ſe <pb n="8" />
+        <lb />deſſechent, qu’il rende vos victoires ſo
+        <lb rend="¬" break="no" />lemnelles, que les armées de noſtre Roy
+        <lb />ſous voſtre ſage conduite ſoient touſiours
+        <lb />triomphantes, &amp; que ſa faueur ſeconde
+        <lb />touſiours vos deſſeins, &amp; ne ſelaſſe iamais
+        <lb />de verſer ſur vous ſes benedictions. Ce ſe
+        <lb rend="¬" break="no" />ront les vœux &amp; le ſouhaits continuels de
+        <lb />tous les bons François.
+        <lb />FIN. </p>
+    </body>
+  </text>
 </TEI>

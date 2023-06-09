@@ -1,413 +1,318 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3575_GALL">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Le salut aux courtisans.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Le salut aux courtisans.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2022-09-14">14 septembre 2022</date>
-				<availability status="restricted" n="cc-by">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://gallica.bnf.fr/ark:/12148/bpt6k5707738q"/>
-					<author/>
-					<title source="Moreau">Salut (le) aux courtisans.</title>
-					<pubPlace ref="geonames:0000000" source="Moreau">Sans lieu</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure unit="page" quantity="7"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="sans notice"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2988507">Paris</settlement>
-						<institution>Bibliothèque nationale de France</institution>
-						<repository>département Littérature et art</repository>
-						<idno type="cote">YE-4336</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2022-09-14">14 septembre 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k5707738q" />
+          <author />
+          <title source="Moreau">Salut (le) aux courtisans.</title>
+          <pubPlace ref="geonames:0000000" source="Moreau">Sans lieu</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure unit="page" quantity="7" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="sans notice" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2988507">Paris</settlement>
+            <institution>Bibliothèque nationale de France</institution>
+            <repository>département Littérature et art</repository>
+            <idno type="cote">YE-4336</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Antonomaz">L'intitulé "Stances" masque en fait une chanson. Ces couplets se
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Antonomaz">L'intitulé "Stances" masque en fait une chanson. Ces couplets se
           chantaient sur l'air des "Rochelais" (on les retrouve dans le Chansonnier dit de Maurepas,
           BnF Ms f. fr. 12638, vol. 23, p. 140-141). Comme beaucoup de couplets de la Fronde,il
           s'agit d'autant de traits satiriques dirigés contre des personnalités en vue, notamment
           ici les généraux qui avaient assiégé Paris et peinent à conclure la paix.</p>
-				<p source="Mazarine">10 sizains d'octosyllabes. Condé,Gaston, D'Harcourt, Villeroy sont
+        <p source="Mazarine">10 sizains d'octosyllabes. Condé,Gaston, D'Harcourt, Villeroy sont
           fustigés et ridiculisés pour leur conduite pendant le siège de Paris et la conférence de
           Saint-Germain-en-Laye.</p>
-				<p source="Moreau">3575. Salut (le) aux courtisans. (S. |., 1649), 7 pages. ../ r mAs)</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">vers</term>
-					<term type="genre" ref="litterature/chansons.xml">chanson</term>
-					<term type="genre">satirique</term>
-					<term type="subject"/>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_29" source="Moreau">
-					<p>Après la paix</p>
-					<date when="1649-04-01">1649-04-01</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-11-02" who="KA"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<l>
-					<lb/>
-p				</l>
-				<l>
-					<lb/>
-4				</l>
-				<l>
-					<lb/>
-A l				</l>
-				<l>
-					<lb/>
-A T te¬				</l>
-				<l>
-					<lb/>
-S AA				</l>
-				<l>
-					<lb/>
-D A.V 1				</l>
-				<l>
-					<lb/>
-A V X				</l>
-				<l>
-					<lb/>
-COVRTISANS				</l>
-				<l>
-					<lb/>
-T				</l>
-				<l>
-					<lb/>
-e				</l>
-				<l>
-					<lb/>
-MDC. XLIX.				</l>
-				<l>
-					<lb/>
-4¬				</l>
-				<l>
-					<lb/>
-E¬				</l>
-				<l>
-					<lb/>
-3				</l>
-				<l>
-					<lb/>
-’ aa A aA’d’A &amp;a di8				</l>
-				<l>
-					<lb/>
-A				</l>
-				<l>
-					<lb/>
-2 SA				</l>
-				<l>
-					<lb/>
-AV X				</l>
-				<l>
-					<lb/>
-T ¬				</l>
-				<l>
-					<lb/>
-N tC				</l>
-				<l>
-					<lb/>
-COVRTISANS				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-STANCES.				</l>
-				<l>
-					<lb/>
-A				</l>
-				<l>
-					<lb/>
-edlut augrand Ducadol’eans.				</l>
-				<l>
-					<lb/>
-¬				</l>
-				<l>
-					<lb/>
-Et à Meſsieurs ſes adherans				</l>
-				<l>
-					<lb/>
-Qui ſont ſortis par la ruiere;				</l>
-				<l>
-					<lb/>
-ais quand ainſi vous ſortirez				</l>
-				<l>
-					<lb/>
-etne eie onr l e eiene				</l>
-				<l>
-					<lb/>
-8				</l>
-				<l>
-					<lb/>
-Salut au Prince de Condé				</l>
-				<l>
-					<lb/>
-ous aueZ fort long temps rodé,				</l>
-				<l>
-					<lb/>
-4				</l>
-				<l>
-					<lb/>
-Et moleſté l’Iſle de France,				</l>
-				<l>
-					<lb/>
-Quel aſtre icy vous aconduit,				</l>
-				<l>
-					<lb/>
-Paſſe t’on par la Conference				</l>
-				<l>
-					<lb/>
-Auſsi bien de iour que de nuict.				</l>
-				<l>
-					<lb/>
-Salut à l’inuincible Harcourt				</l>
-				<l>
-					<lb/>
-Qui ſeul eſtiez ſorty de iour				</l>
-				<l>
-					<lb/>
-Pour ſurprendre la Normandie,				</l>
-				<l>
-					<lb/>
-Suiuez le chemin de la Court				</l>
-				<l>
-					<lb/>
-Car en faiſant telle ſortie				</l>
-				<l>
-					<lb/>
-Vous y demeurerieZ bien court.				</l>
-				<l>
-					<lb/>
-dt				</l>
-				<l>
-					<lb/>
-Bondy Seignor Precipalin				</l>
-				<l>
-					<lb/>
-Grand ſeruitor de aſcari				</l>
-				<l>
-					<lb/>
-Fuſs iez vous encore à Cremone,				</l>
-				<l>
-					<lb/>
-Pourtant vous eſteshomme de bies				</l>
-				<l>
-					<lb/>
-A ce que dit Dame Simone				</l>
-				<l>
-					<lb/>
-ar vous ne preneZ iamais rien.				</l>
-				<l>
-					<lb/>
-Dieu				</l>
-				<l>
-					<lb/>
-5				</l>
-				<l>
-					<lb/>
-Dieu gard le Marcſchal Lampon				</l>
-				<l>
-					<lb/>
-Dieu ard le eaiſtre du cann,				</l>
-				<l>
-					<lb/>
-Que vous nous auez mis en peine,				</l>
-				<l>
-					<lb/>
-Auez vous bien pu rétrouuer				</l>
-				<l>
-					<lb/>
-Le chemin du Cours à la Reyne?				</l>
-				<l>
-					<lb/>
-Car c’eſt par là qu’il faut rentrer.				</l>
-				<l>
-					<lb/>
-4				</l>
-				<l>
-					<lb/>
-Salut à tous ces grands guerriers,				</l>
-				<l>
-					<lb/>
-A tous es chercheurs de lauriers				</l>
-				<l>
-					<lb/>
-Grands conquerans de atalogne,				</l>
-				<l>
-					<lb/>
-Prenans Paris pour Lrida				</l>
-				<l>
-					<lb/>
-Vous aueZ eu de la beſongne				</l>
-				<l>
-					<lb/>
-Qui eſtencore voſtre agenda.				</l>
-				<l>
-					<lb/>
-epgs				</l>
-				<l>
-					<lb/>
-La conqueſte de harento.				</l>
-				<l>
-					<lb/>
-De Brie, S. Clou, &amp; eMeudon				</l>
-				<l>
-					<lb/>
-B				</l>
-				<l>
-					<lb/>
-6				</l>
-				<l>
-					<lb/>
-Et dleS. Denis la ſouffrancos;				</l>
-				<l>
-					<lb/>
-Cela eſt-il en comparaiſon				</l>
-				<l>
-					<lb/>
-De la perte que fila France				</l>
-				<l>
-					<lb/>
-Perdant le braue Chaſtillon.				</l>
-				<l>
-					<lb/>
-es				</l>
-				<l>
-					<lb/>
-Icy giſt voſtre point d’honneur				</l>
-				<l>
-					<lb/>
-Lſcoute i ie ſuis menteur,				</l>
-				<l>
-					<lb/>
-La choſe eſt aſſez d’importance.				</l>
-				<l>
-					<lb/>
-Si nous euſsions voulu boucher				</l>
-				<l>
-					<lb/>
-La porte de la Conference				</l>
-				<l>
-					<lb/>
-Vous n’euſsiez ſceu par oùrentrer.				</l>
-				<l>
-					<lb/>
-M				</l>
-				<l>
-					<lb/>
-Que lque part que ſoit aarin				</l>
-				<l>
-					<lb/>
-Dieu le preſerue du farcin				</l>
-				<l>
-					<lb/>
-Que ne fuft-il dedans lV’eniſe				</l>
-				<l>
-					<lb/>
-Du moins s’il n’y eſt Cardinal,				</l>
-				<l>
-					<lb/>
-Et n’ayme la faineantiſe				</l>
-				<l>
-					<lb/>
-Ilpourna eſie Maeſehal				</l>
-				<l>
-					<lb/>
-7				</l>
-				<l>
-					<lb/>
-2 de8				</l>
-				<l>
-					<lb/>
-on bon Seigneur de Villeroy				</l>
-				<l>
-					<lb/>
-Si vous nous rameniez le Roy,				</l>
-				<l>
-					<lb/>
-ous ſerions dans nos allegreſſes				</l>
-				<l>
-					<lb/>
-Comme veritables François,				</l>
-				<l>
-					<lb/>
-ous luy ſerions mille careſſes				</l>
-				<l>
-					<lb/>
-Viuans &amp; mourans ſous ſes loix.				</l>
-				<l>
-					<lb/>
-FIN				</l>
-			</p>
-		</body>
-	</text>
+        <p source="Moreau">3575. Salut (le) aux courtisans. (S. |., 1649), 7 pages. ../ r mAs)</p>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">vers</term>
+          <term type="genre" ref="litterature/chansons.xml">chanson</term>
+          <term type="genre">satirique</term>
+          <term type="subject" />
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_29" source="Moreau">
+          <p>Après la paix</p>
+          <date when="1649-04-01">1649-04-01</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-11-02" who="KA" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <l>
+          <lb />p </l>
+        <l>
+          <lb />4 </l>
+        <l>
+          <lb />A l</l>
+        <l>
+          <lb />A T te¬</l>
+        <l>
+          <lb />S AA</l>
+        <l>
+          <lb />D A.V 1</l>
+        <l>
+          <lb />A V X</l>
+        <l>
+          <lb />COVRTISANS</l>
+        <l>
+          <lb />T</l>
+        <l>
+          <lb />e</l>
+        <l>
+          <lb />MDC. XLIX.</l>
+        <l>
+          <lb />4¬ </l>
+        <pb n="2" />
+        <l>
+          <lb />E¬</l>
+        <l>
+          <lb />3</l>
+        <l>
+          <lb />’ aa A aA’d’A &amp;a di8</l>
+        <l>
+          <lb /> A</l>
+        <l>
+          <lb />2 SA</l>
+        <l>
+          <lb />AV X</l>
+        <l>
+          <lb />T ¬</l>
+        <l>
+          <lb />N tC</l>
+        <l>
+          <lb />COVRTISANS</l>
+        <l>
+          <lb />
+        </l>
+        <l>
+          <lb />STANCES.</l>
+        <l>
+          <lb />A </l>
+        <l>
+          <lb />edlut augrand Ducadol’eans.</l>
+        <l>
+          <lb /> ¬</l>
+        <l>
+          <lb /> Et à Meſsieurs ſes adherans</l>
+        <l>
+          <lb />Qui ſont ſortis par la ruiere;</l>
+        <l>
+          <lb />ais quand ainſi vous ſortirez</l>
+        <l>
+          <lb />etne eie onr l e eiene</l>
+        <l>
+          <lb />8</l>
+        <l>
+          <lb />Salut au Prince de Condé</l>
+        <l>
+          <lb />ous aueZ fort long temps rodé,</l>
+        <pb n="3" />
+        <l>
+          <lb />4</l>
+        <l>
+          <lb />Et moleſté l’Iſle de France,</l>
+        <l>
+          <lb /> Quel aſtre icy vous aconduit,</l>
+        <l>
+          <lb />Paſſe t’on par la Conference</l>
+        <l>
+          <lb />Auſsi bien de iour que de nuict.</l>
+        <l>
+          <lb />Salut à l’inuincible Harcourt</l>
+        <l>
+          <lb />Qui ſeul eſtiez ſorty de iour</l>
+        <l>
+          <lb />Pour ſurprendre la Normandie,</l>
+        <l>
+          <lb />Suiuez le chemin de la Court</l>
+        <l>
+          <lb />Car en faiſant telle ſortie</l>
+        <l>
+          <lb />Vous y demeurerieZ bien court.</l>
+        <l>
+          <lb />dt</l>
+        <l>
+          <lb />Bondy Seignor Precipalin</l>
+        <l>
+          <lb />Grand ſeruitor de aſcari</l>
+        <l>
+          <lb />Fuſs iez vous encore à Cremone,</l>
+        <l>
+          <lb />Pourtant vous eſteshomme de bies</l>
+        <l>
+          <lb />A ce que dit Dame Simone</l>
+        <l>
+          <lb />ar vous ne preneZ iamais rien.</l>
+        <l>
+          <lb />Dieu</l>
+        <pb n="4" />
+        <l>
+          <lb />5</l>
+        <l>
+          <lb />Dieu gard le Marcſchal Lampon</l>
+        <l>
+          <lb />Dieu ard le eaiſtre du cann,</l>
+        <l>
+          <lb />Que vous nous auez mis en peine,</l>
+        <l>
+          <lb />Auez vous bien pu rétrouuer</l>
+        <l>
+          <lb />Le chemin du Cours à la Reyne?</l>
+        <l>
+          <lb />Car c’eſt par là qu’il faut rentrer.</l>
+        <l>
+          <lb />4</l>
+        <l>
+          <lb />Salut à tous ces grands guerriers,</l>
+        <l>
+          <lb />A tous es chercheurs de lauriers</l>
+        <l>
+          <lb />Grands conquerans de atalogne,</l>
+        <l>
+          <lb />Prenans Paris pour Lrida</l>
+        <l>
+          <lb />Vous aueZ eu de la beſongne</l>
+        <l>
+          <lb />Qui eſtencore voſtre agenda.</l>
+        <l>
+          <lb />epgs</l>
+        <l>
+          <lb />La conqueſte de harento.</l>
+        <l>
+          <lb />De Brie, S. Clou, &amp; eMeudon</l>
+        <l>
+          <lb />B</l>
+        <pb n="5" />
+        <l>
+          <lb />6</l>
+        <l>
+          <lb />Et dleS. Denis la ſouffrancos;</l>
+        <l>
+          <lb />Cela eſt-il en comparaiſon</l>
+        <l>
+          <lb />De la perte que fila France</l>
+        <l>
+          <lb />Perdant le braue Chaſtillon.</l>
+        <l>
+          <lb /> es</l>
+        <l>
+          <lb />Icy giſt voſtre point d’honneur</l>
+        <l>
+          <lb />Lſcoute i ie ſuis menteur,</l>
+        <l>
+          <lb />La choſe eſt aſſez d’importance.</l>
+        <l>
+          <lb />Si nous euſsions voulu boucher</l>
+        <l>
+          <lb />La porte de la Conference</l>
+        <l>
+          <lb />Vous n’euſsiez ſceu par oùrentrer.</l>
+        <l>
+          <lb />M</l>
+        <l>
+          <lb />Que lque part que ſoit aarin</l>
+        <l>
+          <lb />Dieu le preſerue du farcin</l>
+        <l>
+          <lb />Que ne fuft-il dedans lV’eniſe</l>
+        <l>
+          <lb />Du moins s’il n’y eſt Cardinal,</l>
+        <l>
+          <lb />Et n’ayme la faineantiſe</l>
+        <l>
+          <lb />Ilpourna eſie Maeſehal</l>
+        <pb n="6" />
+        <l>
+          <lb /> 7</l>
+        <l>
+          <lb />2 de8</l>
+        <l>
+          <lb />on bon Seigneur de Villeroy</l>
+        <l>
+          <lb />Si vous nous rameniez le Roy,</l>
+        <l>
+          <lb />ous ſerions dans nos allegreſſes</l>
+        <l>
+          <lb />Comme veritables François,</l>
+        <l>
+          <lb /> ous luy ſerions mille careſſes</l>
+        <l>
+          <lb />Viuans &amp; mourans ſous ſes loix.</l>
+        <l>
+          <lb />FIN</l>
+      </p>
+    </body>
+  </text>
 </TEI>

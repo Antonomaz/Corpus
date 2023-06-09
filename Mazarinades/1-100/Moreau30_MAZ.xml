@@ -1,1031 +1,569 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau30_MAZ">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Actions de grâces des pauvres paysans de l’élection de
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Actions de grâces des pauvres paysans de l’élection de
           Paris pour le soulagement des tailles que la reine leur a promis par la déclaration de la
           paix</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2022-01-31">31 janvier 2022</date>
-				<availability status="restricted" n="cc-by">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz17519"/>
-					<author/>
-					<title source="Mazarine">Actions de graces des pauvres paisans de l'election de Paris,
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2022-01-31">31 janvier 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz17519" />
+          <author />
+          <title source="Mazarine">Actions de graces des pauvres paisans de l'election de Paris,
             pour le soulagement des tailles que la Reyne leur a promis par la declaration de la
             paix.</title>
-					<pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
-					<publisher ref="isni:0000000002569584" xml:id="IL_RemyVeuvedeJean.xml">
-						<persName>
-							<forename>Veuve de Jean</forename>
-							<surname>Rémy</surname>
-						</persName>
-					</publisher>
-					<date source="Mazarine" when="1649">1649</date>
-					<date source="Carrier" when="1649-04">avril 1649</date>
-					<extent>
-						<measure unit="page" quantity="16"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="BM48891" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48891"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2988507">Paris</settlement>
-						<institution>Bibliothèque Mazarine</institution>
-						<repository/>
-						<idno type="cote">M12428</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace source="Mazarine" ref="geonames:2988507">Paris</pubPlace>
+          <publisher ref="isni:0000000002569584" xml:id="IL_RemyVeuvedeJean.xml">
+            <persName>
+              <forename>Veuve de Jean</forename>
+              <surname>Rémy</surname>
+            </persName>
+          </publisher>
+          <date source="Mazarine" when="1649">1649</date>
+          <date source="Carrier" when="1649-04">avril 1649</date>
+          <extent>
+            <measure unit="page" quantity="16" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48891" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48891" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2988507">Paris</settlement>
+            <institution>Bibliothèque Mazarine</institution>
+            <repository />
+            <idno type="cote">M12428</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine">Deux états de la p. de titre : second i de "permission" penché (A), ou
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine">Deux états de la p. de titre : second i de "permission" penché (A), ou
           dans sa position rectifiée (B). D'après Hubert Carrier, texte paru en avril 1649
           (Bibliothèque Mazarine, Ms. 4682-1, f. 22 v.).</p>
-				<p source="Moreau">30. Actions de grâces des pauvres paysans de l’élection de Paris pour le
+        <p source="Moreau">30. Actions de grâces des pauvres paysans de l’élection de Paris pour le
           soulagement des tailles que la reine leur a promis par la déclaration de la paix. Paris,
           veuve Jean Rémy, 1649, 16 pages.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">rhétorique épidictique</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-					<term type="subject" ref="institution/fiscalite.xml">Taille (impôt)</term>
-					<term type="subject">France -- 1648-1653 (Fronde)</term>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_18" source="Moreau">
-					<p>Paix de Saint-Germain</p>
-					<date when="1649-03-30">1649-03-30</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-02-07" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<pb n="12"/>
-				<pb n="13"/>
-				<pb n="14"/>
-				<pb n="15"/>
-				<pb n="16"/>
-				<pb n="17"/>
-				<pb n="18"/>
-				<pb n="19"/>
-				<pb n="20"/>
-				<pb n="21"/>
-				<pb n="22"/>
-				<pb n="23"/>
-				<pb n="24"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<figure type="decoration"/>
-				<imprimatur>AVEC PERMISSION.</imprimatur>
-ACTIONS
-        DE
-        GRACES
-        DES
-        PAVVRES PAISANS
-        DE L’ELECTION DE PARIS,
-        POVR LE SOVLAGEMENT
-        DES TAILLES
-        QVE LA REYNE LEVR A PROMIS
-        par la Declaration de la PAIX.. 
-        A PARIS
-        Chez la Vefue IEAN REMY, ruë Sainct Iacques,
-        à l'image S. Remy, prés le College du Pleſſis.
-        M. DC. XLIX. 
-        
-        
-        ACTIONS DE GRACES
-        des Pauures Paiſans de l Eſlection
-        de Paris, pour le ſoulagement des
-        Tailles que la eyne leur a promis.
-        MADAME,
-        Comme c’eſt vne peine extréme
-        lſl d’aimer ſans oſer découurir ſon affe
-        e ction; auſſi c’eſt vn tourment le plus
-        Inſſe de ous de ſouffrir ſans oſer ſe plaindre: Le
-        cœur demande vne langue pour augmenter ſon
-        amour en l’exprimant; Et les douleurs veulent des
-        paroles pour en diminuer &amp; adoucir le reſſentiment
-        en les racontant. Ainuſi l’amour &amp; la douleur ſe veu¬.
-        lent faire connoiſtre, &amp; l’vn &amp; l’autre donnent des
-        peines tres-ſenſibles, ſi l’on ne peut dire ce qui affli.
-        ge ou ce qui contente. Voſtre Majeſté, MA DAME,
-        nous à ms en cét Eſtat, car vos biens-faits ont forcé
-        nos cœurs vous aimer: mais noſtre cœur &amp; noſtre
-        amour n’ont point de langue; ou ſi nous en auons
-        vne, elle manque de diſcours digne d’eftre eſcouté
-        par voſtre Majeſté &amp; par vos Courtiſans. Nous deſi
-        rons rendre graces au Roy &amp; à vous MADAmME; Mais
-        le langage de la charuëeſt trop bas pour ſe faire ene
-         1
-         A i 
-        4
-        rendre ax oreilles des Roys, de telle ſorte que ſi
-        dans nos horribles ſouffrances noſtre douleur na
-        point eu de bouche pour ſe plaindre, la ioye que nous
-        receuons à preſent dans l’eſperance que voſtre Ma
-        jeſté nous donne de nous ſoulager, n’a point de lan
-        gage pour vous remercior. De ſorte que ſi deſirer &amp;
-        ne pouuoir, eſt vne eſpece de martyre, il faut confeſ
-        ſer que vous nous faites ſouffrir en nous ſoulageant,
-        &amp; nous rendes ingrats à force de nous bien faire.
-        Vous auez trop de grandeur, &amp; nous trop de foi
-        bleſſe pour penſer de vous pouuoir ſarisfaire iuſqu’à
-        relpoint de ne vous plus demeurer redeuables: ce ſe
-        roit oublier ce que vous eſtes &amp; ce que nous ſommes,
-        ſi nous croyons que noſtre pouuoir en vous ſeruant
-        peut eſgaller vos biens faits; puiſque la mort meſme
-        qui nous acquitte de toutes choſes, ne nous acquit
-        era non plus que noſtre vie de ce que nous vous de
-        uons. Mais ce qui ne ſe peut payer par la mort ſe doit
-        payer par l’amour; &amp; pourtant noſtre profeſſion n’e
-        ltant point pour vous ſeruir de la langue ny de la plu
-        me, nous vous offrons le ſeruice du cœur, &amp; vous
-        preſentons ce que vous poſſedez deſia. Et de fait, ¬i
-        noſtre cœur ſe porte où eſt noſtre amour, &amp; ſi noſtre
-        amour le trouue où eſt la bonté́;, l’amour de vos per
-        fections vous doit acquerir la poſſeſſion de tous les
-        cœurs de l’niuers, puis que Dieu &amp; la Nature ont
-        donné au Roy &amp; a voſtre Majeſteé́ tout ce qui peut
-        gaigner les Amours du Ciel &amp; de la terre. Il eſt vray
-        MDamE, que l’amour &amp; l’eſtime de vos Vertus
-        ſeroient plus grapds, ſi aous en auionsplus de con
-        oiſſance. 
-        noiſſance, car la pluſpart de vos belles qualitez in
-        connuës aà̀ la terre, &amp; que pieuſement nous croyons
-        eſtre aimées &amp; bien connuës du Ciel, ſont ſi hau
-        tes &amp; ſi eminentes, &amp; elles s’eſloignent tellement de
-        noſtre veü qu’il n’y a que celuy qui les peut don
-        ner qui les puiſſe connoiſtre, non plus que luy ſeul
-        qui les puiſſe recompenſer. Les perſonnes de noſtre
-        ſorte occupées pour la plus part aux exercices de la
-        beſche &amp; de la hoüe, comme elles ne peuuent en
-        tendre vos Vertus plus releuées, auſſi elles n’en peu
-        uent parler, &amp; nous ſommes ſi groſſiers, que nous
-        faiſons plus d’eſtat des effects de voſtre miſericorde
-        ſur les pauures Sujets du jRoy voſtre fils, que de vos
-        autres perfections. Nous aimons &amp; admirons le So
-        leil pour ſa chaleur &amp; pour ſa lumiere, mais particu
-        lierement parce qu’il fait croiſtre &amp; meuir les fruits
-        qui nous font viure, ſans conſiderer mille autres mer
-        ueilles de cebel Aſtre, qui nous font voir qu’entre
-        toutes les creatures il eſt le plus admirable &amp; que
-        Dieu l’a choiſi pour y poſer ſon tabernacle &amp; pour
-        nous faire voir en racourcy vn rayon eſclatant de ſa
-        Diuinité: Toutesfois noſtre ignorance n’eſt pas en
-        core ſi grande que vos act ions ne nous facent voir
-        que vous pouuex reduire en pratique toutes les plus
-        ſaintes maximes que tous les Princes &amp; les plus ſages
-        Politiques n’ont eu qu’en Theorie. Nous voyons cet
-        te Pieté, qui eſtant ſans fente, vous fera triompher
-        dans le Ciel, comme voſtre Royalle naiſſance &amp; vo
-        ſtre Auguſte mariage vous ont donneé des triomphes
-        ela terre, La conſderation de tous les glorieux ad¬ 
-        ¬¬
-        ¬¬
-        uantages que le Ciel fauorable a départis à voſtre
-        Majeſté nous donnent de l’eſtonnement; Mais M A
-        DAME, la compaſſion qu’on nous a aſſeuré que vous
-        auez priſe de nos maux paſſez nous donnent de
-        l’amour, &amp; nous font croire que ia mais les Princes ne
-        repreſentent mieux l’image de Dieu, qu’en faiſant
-        des actions de miſericorde. Que benit ſoit a iamais ce
-        grand Dieu de Miſericorde, qui nous promet de
-        nous faire receuoir les eſſects de la voſtre. Benit ſoit
-        voſlre cœur qui a receu du Roy des Roys ces ſaintes
-        inſpirations; que benit ſoit cét eſprit admirable qui
-        agſſant prés de vous pour noſtre bien, &amp; pour noſtre
-        gloire a contribué auec Dieu &amp; voſtre bon naturel à
-        nous aſſeurer apres tant de miſeres que nous ſerions
-        deſchargez pour trois années de toute ſorte de tailles
-        &amp; d’impoſitions. La copaſſion non plus que l’amour
-        ne vient que de la connoiſſance, &amp; auſſi-toſt que
-        vous auez connu l’effroyable excez de nos miſeres,
-        voſtre Majeſté a compati, vous auez ietté la veuë ſur
-        les ruines &amp; ſur les deſolations de nos villages, de nos
-        champs &amp; de nos Egliſes, ſur la maigreur &amp; ſur la nu
-        dité de nos corps, qui paſles &amp; defigurez portent en
-        core ſur leur viſage l’image de la mort: vous auez en
-        tendu les cris des enfans affamez, des Vierges violées,
-        des vieillards battus &amp; generalement d’vn nombre
-        infini de pauures innocens François miſerablement
-        rourmentez &amp; maſſacrez par des nations barbares &amp;
-        eſtrangeres: Vous auez regardé l’eſtat deplorable où
-        nous eſtions reduits, ſans maiſon, ſans habits, &amp; ſans
-        pain, &amp; vollre cœur enfin touché́ de la fin de nos mi¬ 
-        ſeres nous a fait voir ſa commiſeration.
-        Et dans la conſideration de tant de ſouffrances,
-        vous auez fait reflexion ſur vous-meſme de ce que
-        vous eſtes, &amp; de ce que nous ſommes, de ce que vous
-        poſſedez à preſent, &amp; de ce que vous eſtiez il y a cin
-        quante ans: vous auez regardé la main puiſſante qui
-        vous a tiré du neant, &amp; vous a choiſi de cette maſſe
-        commune d’Adam pour vous faire naiſtre dans la
-        pourpre &amp; vous donner par aliance la premiere Cou
-        ronne de l’Vniuers, en vous rendant la femme, &amp; la
-        vefue du plus grand Roy du monde, &amp; par meſme
-        moyen la mere &amp; la Regente de noſtre ieune &amp; in
-        comparable Monarque; Heureuſe certes, &amp; cent fois
-        la plus heureuſe de toutes les femmes, ſi apres cette
-        gloire mondaine, vous pouuez par des actios d’huma
-        nité &amp; de miſericorde enuers vos peuples acquerir les
-        recompenſes &amp; les Couronnes que Dieu diſtribue
-        dans le Ciel à tous ceux qui ont ſoulagé les pauures &amp;
-        protegé́ les innocens. Voſtre Majeſté́ a penſé à la reſ
-        ſemblance naturelle de vous &amp; de nous; &amp; ayant mis
-        voſtre cœur en la place du noſtre, vous auez eſcoute
-        vos penſees qui vous faiſoient dire: Si Dieu m’auoit
-        fait naiſtre dans la cendre auſſi bien que ſur le thrô
-        ne, pour la charruë̈ auſſi bien que pour le Sceptre,
-        dans la ſeruitude comme ie, ſuis dans le commande
-        ment, dans la nudité, dans la faim &amp; dans le trauail
-        comme ie ſuis dans l’abondance: quelle aſſiſtance de
-        ſirerois-ie de receuoir de ceux qui ſeroient ſur le trô
-        ne, &amp; qui poſlederoient les Couronnes &amp; les treſors;
-        Et par conſequent ie deſire donner aux pauures villa
-        a 
-        ¬¬-
-        geois. ce que ſii’eſtois en leur place, ie deſirerois re
-        ceuoir de celuy que Dieu auroit peu mettre en l’Eſtat
-        ou ie ſuis.
-        Il faut croire Madame, que Dieu agiſſant envo
-        ſtre eſprit de la ſoi te, a fait ainſi parler ceſte loy na
-        turelle dans voſtre cœur pour vous faire dire &amp; pra
-        tiquer qu’il faut faire aux autres ce que vous ſou
-        haitteriz railonnablement vous deuoit eſtre fait
-        La pluſparr des Grands de la terre croyent qu’il
-        faut quitter la douceur naturelle lors qu ils com
-        mencent d’eſtre eſleués ſur les humains, &amp; que ſe
-        couurant de la pourpre, ils ſe doiuent deſpouller de
-        toute humanité, mettre en oubly toutes les Loys
-        ciuiles &amp; naturelles, &amp; deſormais viure en demons &amp;
-        le mocquer de tout ce qui s’oppoſe à̀ leurs imagina
-        tions &amp; à leurs plus iniultes voloteés: mais pour voſtre
-        rcgard Madame. nous rendons graces a Dieu de ce
-        que vous aſſuiettiſſez voſte pouuoir à la raiſon, &amp;
-        que par cét acte d’humanité que vous nous faites
-        receuoir, vous monſtrez que vous cognoiſſez bien
-        que vous eſtes femme &amp; Reyne tout enſemble; com
-        me Reyne ſç̧achant bien commander à vos ſuiets &amp;
-        les humilier, &amp; comme femme prenant pitié de ceux
-        qui ont la nature ſemblable à̀ la voſtre.
-         Car ſi en qualité de femme vous auez ſuiui la lu
-        miere naturelle en nous prometant de nous ſoulager,
-        auſi comme ſouueraine ſur nous vous aueés eſcouté
-        la loy de voſtre ſceptre. Vous vous eſtes acquit
-        tée de deux differens offices tout à lafois, qui ſem
-        blent eltre oppoſez; mais pour noſtre conſolation &amp;
-        pour
-        -¬¬-¬ 
-         5
-        pour voſtre gloire, nous deuons éroire que vous les
-        auez accordez enſemble par vne ſainte harmonie
-        pour le bien de cet Eſtar.
-        Vn tres-ſage Empereur deſirant d’eſtre auſſi bien
-        eſtimé le pere que le Monarque de ſon peuple, parle
-        en cette ſorte, dans ſes loix: C’eſt le premier ſoin de
-        ma penſée, &amp; le plus paſſionné amour de mon cœur,
-        que ma chariteé́ &amp; mon humanité paroiſſent ſans ceſ
-        ſ à donner ordre que les pauures de mon Empire
-        ſoient nourtis &amp; ſoulagez de tout ce qui leur ſera ne
-        ceſſaire: Mais Madame, nous voyons que cetre loü̈a
-        ble compaſſion qui n’eſtoit peut eſtre que dans les
-        Loix de cet Empereur, eſt grauée dans voſtre cœur;
-        &amp; cette pieté qui peut eſtre n’eſtoit que ſur ſa langue
-        ou ſur ſa plume, voſtre Majeſté à enuie de le prati
-        quer par ſes actions.
-        Si pour eſtre femme, ſi pour eſtre Reyne, vous
-        auez creu eſtre obligee de nous regarderen pitié, vous
-        auez creu le deuoir encore d’auantage pour auoir eſté
-        l’eſpouſe &amp; la, vefue d’vn Roy trẽs-Chreſtien, &amp;
-        pour eſtre la mere &amp; la Regente de noſtre ieune Roy
-        Dieu-donné qui a ſuccedéà ſon pere en cette admira
-        ble qualité auſſi bieua qu’à ſon Sceptte &amp; à ſa Couron
-        ne. Vn Chreſtien ou vne Chreſtienne ſans charité,
-        ſont ſemblables aà vn Ciel ſans Aſtres, à̀ vn Soleil ſans
-        lumiere &amp; ſans chaleur, a vn corps ſans ame &amp; à vne
-        ombre ſans corps;, ils veulent porter le nom de celuy
-        qui nous a donne ſon ſang &amp; ſa vie pour noſtre ſalut,
-        &amp; n’en veulent pas imiter les actions ny enſuiure
-        les preceptes. Ils deuiennent pariures &amp; infidelese:
-        C 
-        p
-        16
-        ar ils n’executent pas ce qu’ils ont promis par ſer
-        ment alors que par le bapteſme ils ont eſté enrollez
-        au nombre des Chreſtiens: car les parrains &amp; les mar
-        raines iurent pour les enfans qu’ils ſanctifient en les
-        faiſant baptiſer qu’ils viuront charitablement: c’eſt
-        donc la premiere obligation du veritable Chreſtien
-        &amp; la premiere cauſe de ſa felicité eternelle, comme le
-        defftaut d’icelle eſt le ſujet de leur condemnation &amp;
-        l’enfer perpetuel desméchans. La charité eſt la clef de
-        Ieſus qui ouure les cœurs &amp; les coffres pour faire du
-        bien aux indigens, &amp; qui ferme les portes de
-        l’Enfer, &amp; fait ouurir celle des Cieux. Vous auez
-        conſideré l’effet de cette noble Vertu, &amp; combien
-        Dieu vous a rendu puiſſante pour l’exercer: De ce que
-        vous auez receu de ſa main vous auez reconnu ce que
-        vous deuez rendre, &amp; par les dons qu’il vous a faits,
-        vous auez appris l’obligation que vous auez de le ſer.
-        uir en aſsiſtant les pauures Sujets de voſtre fils. Que
-        ſi chaque Chreſtien eſt obligé de viure charitable
-        ment, combien d’auantage y eſtes vous obligée en
-        qualité de Regente &amp; de mere du premier Roy des
-        Chreſtiens? Et ſi au iour du lugement Dieu fera ren
-        dre compte au moindre des Chreſtiens de ſa charité,
-        combien plus à celle qui porte les deux glorieux til
-        tres de fille du Roy tres-Catholique, de femme, &amp; de
-        mere des Rois tres Chreſtiens.
-        Enfin Madame, nous rendons graces à Dieu de
-        voir que voſtre Majeſté preuenant le tenmps de ce
-        rude &amp; dernier examen, voſtre repentence &amp; les
-         Saintes actions que vous auez deſſein de laire, vo us 
-        anaaaa
-         11
-        rendent deſia prepar̈e à pratiquer des vertus qui
-        donnent le Paradis: Nous auons eſté ruinez &amp; vous
-        nous voulez reſtaurer, nous auons eſté deſpoü̈illez
-        &amp; vous nous voulez donner le moyen de nous reue
-        ſtir; la crainte de la mort nous auoit fait abandon
-        ner nos maiſons &amp; voſtre charité́ nous y faiſant ren
-        trer vous nous auez logé; &amp; pour ce ſuiet ce Iuge
-        Eternel vous dira, eez ame benite de monpere prendre
-        poſſeſſion du R oyaume du ſiel; &amp; alors pour vne cou
-        ronne periſſable vous en aurez vne eternelle.
-        Mais Madame, pour ſç̧auoir la grandeur de la
-        recompenſe, il faudroit ſçauoir combien eſt grand
-        le bien fait qui ſe meſure ſelon l’extremité des mi
-        ſeres deſquelles vous nous auez tirez; nous ne pre
-        tendons pas icy d’exagerer nos ſouffrances, car com
-        me nous n’auons pas aſſez d’eloquence pour les ex
-        primer; vn cœur ſi tendre &amp; ſi pitoyable comme le
-        voſtre ne les pourroit entendre ſans emotion: c’eſt
-        aſſez de dire qu’il n’y a point de condition ſi miſe
-        rable que nous n’euſſions preferée à la noſtre.
-        Nous ne doutons point que ſi voſtre Maieſté eut
-        eu connoiſſance de la moitié de nos ſouffrances,
-        nous n’euſſions eu pluſtoſt du ſecours: Mais malheur
-        ſur ceux qui ont eſté cauſe de tous ſes deſordres en
-        voſtre Royaume, malheur ſur ces flateuts &amp; ſur ces
-        Courtiſans intereſſez qui peſchans en eau trouble,
-        offuſquent la verité, &amp; par mille ſuptiles chimeres
-        d’authorité Royale, &amp; de gloire de l’Eſtar, ont fait pan
-        cher voſtre eſprit &amp; deſtourné́ vos yeux, en ſorte que
-        croyant que nos maux eſtoient neceſlaires à l con¬ 
-        12
-        ſeruation de voſtre grandeur &amp;a celle du Roy, vous
-        n’auez peu prendre le loiſir de conſiderer nos ne ceſ
-        itez: Le Dicu de lumieres apres vous auoir tenu
-        dans cét aueuglement, pour nous chaſtier de nos pe
-        chez, vous fera comprendre vn iour( &amp; nous l’en
-        prions de tout noſtre cœur &amp; auec des larmes de ſang)
-        que tous ces pernicieux conſeils ne tirent leur origine
-        que de l’Eſcholle d’iniquité, &amp; qu’ils procedent plu
-        toſt de l’eſprit malin des Demons creé́s pour la ruine
-        de ce Royaume, que des inſpirations des Anges qui
-        en ſont les Protecteurs.
-        Et nous rendons graces tres-humbles à noſtre Dieu
-        de ce que deſia nous ſentons les effets de ſa miſeri
-        corde &amp; de la voſtre, &amp; que dés auſsi-roſt que ces im
-        pies Conſeillers ont donné loiſir à voſtre Majeſté de
-        reſpire r, vous nous auez ſoulagés: &amp; comme le cœur
-        t quoy qu’il ſoit poſé au milieu du corps, s’incline
-        pourtant vers la partie la plus foible: ainſi ovus eſtant
-        à preſent le principe de la vie &amp; du bonheur de cét
-        Eſtat, vous communiquzà ce grand corps les eſprits
-        qui le font ſubſiſter &amp; reuiure;, vous auez tourné vo
-        ſtre cœur par compaſsion ſur les pauures Villageois,
-         qui tiennent le moindre rang entre les ordres de cet
-        te Monarchie, portant de cette ſorte la main &amp; le re
-        mede à la partie la plus malade &amp; la plus extenuée.
-        L’Amour qui fait tout entreprendre, meſme au de.
-        laà du pouuoir, nous à fait iuſques icy parler, pour teſ
-        moigner en quelque ſorte les reſſentimens que nous
-        auons; mais la grandeur du bien-fair que nous eſpe
-        rons, nous oblige au ſilence, afin que ceſſant de par
-         les 
-        ler nous donnions loiſir à noſtre eſprit de penſer que
-        dans ce ſoulagement tant de biens ſont compris qu’l
-        n’y a que Dieu ſeul qui le puiſſe auoir inſpiré, &amp; lors
-        que vous l’aurez reduit en acte, il n’ a auſli que luy
-        ſeul qui le puiſſe reconnoiſtre: Car quelle creature
-        dans le Ciel ou dans la terre pourroi feurnir vne re
-        compenſe ſuffiſante à vne grace, qui a redonné lavie
-        &amp; le couuert à vn million d’orphelins &amp; de vierges
-        eſcartées &amp; cachées dans les cauernes &amp; l’eſpeſſeur
-        des foreſts pour eſuiter les violences de tant de ſol.
-        dats acharnez apres eux. Quel autre que le Createur
-        pourroit ſatis faire a vne œuure charitable qui a em
-        peſché la mort de mille &amp; mille pauurcs Laboureurs
-        &amp; Vignerons’Quel moindre que luy pourroit recom
-        penſer ceſte incomparable Reyne qui a garanti tant
-        de familles languſſantesde la faim, du deſelpoir &amp; du
-        rmbeau, leſquelles e ſtoient ſur le point de perir
-        ſans ceſte paix que le Ciel a enuoyée tout aà coup?
-        Il eit vray pourtant, Madame, que nous ne ſom
-        mes pas encore à la fin de nos miſeres. Mais voſtre
-        pouuoir &amp; voſtre miſericorde ne ſont pas finies auſsi,
-        ſi la continuation de la guerre eſtrangore menaſſe en
-        core la France de beaucoup de ſouffrances, voſtre Ma
-        jeſté a auſſi beaucoup de compaſſion &amp; tout le mon
-        de eſpere qu’ayant ſi bien commencé vous ne vou
-        drez pas rendre vn ſi bel ouurage imparfait, mais que
-        vous ferez tous vos efforts poeur la procurer à tou
-        te la Chreſtienté; Nous vous coniurons encore d’y
-        trauailler le plus puiſſamment que vous pourrez, &amp;
-        vous ſupplions de pardonner à noſtre importunité;
-        D 
-        
-        aaaaaaa
-        Nous croyons que ce ſeroit offenſer voſtre grandeu
-        &amp; voſtre pieté ſi vous melurant comme vne perſonne
-        du commun nous ceſſions de vous prier, où parce
-        que vous manqueriez de pouuoir ou de volonté de
-        nous ſoulager. Dieu dont vous portez l’image &amp; du
-        quet vous tenez la place en ce monde, ne ſe plaiſt
-        rien tant qu’a donner, &amp; rien ne luy eſttant agreable
-        que de ſe voir prié &amp; importuné, iuſques à ce point
-        que pourueu que nos prieres ayent pour principal
-        but la gloire de ſon nom, &amp; qu’elles ſoient faites auec
-        ferme foy &amp; iuſtice, non ſeulement elles paſſent pour
-        des actes de Religion, mais auſſi elles ſont touſiours
-        exaucées: Auſsi- toſt que nous auons receu vn bien
-        fait de ſa main, il deſire que nous recommencions à
-        luy en demander vn autre, &amp; touſious ainſi inceſſam
-        ment, iuſques à ce que nous ayons receu dans le Ciel
-        ce dernier bien, qui mettant fin à nos miſeres, la met
-        auſsi a nos deſirs, &amp; à nos prieres pour nos propres in
-        tereſts. Et ſur cette conſideration, croyns que vo
-        ſtre Maieſté ſera bien aiſe de conformer ſes volontez
-        à celles de Dieu, nous vous ſupplions tres-humble
-        ment qu’il vous plaiſe de vous informer plus ample
-        ment de noſtre ruine, de noſtre foibleſſe &amp; de noſtre
-        fardeau, afin que par vne luſtico naturelle, meſurant
-        aux années aà venir les impoſitios aà̀ nos forces, il vous
-        plaiſe d’ohliger le Roy à continuer durant &amp; apres ſa
-        minorité ſes graces &amp; ſes miſericordes deſſus nous, à
-        proportion de la connoiſſance que vous luy ferez
-        auoir de noſtre pauureté.
-         Cette priere, Madame, ne doit pas eſtre vne impor¬ 
-        tunité deſagreable pour vous, ou inutile pour ce di
-        cours, parce qu’elle fait la meilleure partie de noſtre
-        action de grace, &amp; done vne plus longue eſtenduë à la
-        croyance que nous auõs de la gradeur de vos Vertus
-         C’eſt vne eſpece de ſouuerain honneur que nous
-         vous rendons, de croire que rien ne vous eſt , impo
-        ſſible c’et eſleuer bien haut voſtre bonteé que de pen
-        ſer qu’elle ne ſe laſſera iamais de bien faire;, c’eſt la
-        faire approcher de certe puiſſance Souueraine qui eſt
-        ſur les Cieux, dõt vous portez la figure ſur la terrec’eſt
-        en partie reçognoiſtre vos biens faits, que d’auoir
-        des reſſentimens ſi grands de voſtre Pieté &amp; de voſtre
-        puiſſance, qui eſt telle qu’auſſi toſt que nous auone
-        receu de vous quelque bien, vous teſmoignes d’aueir
-        encore la volonté́ de nous en donner vn autre, &amp;
-        qu’eſtans ſoulagés d’vne partie de nos ſouffrances,
-        vous auez le pouuoir de nous deliurer du reſte.
-        lPardonnez, Madame, a lignorance de noſtre pro
-        feſſion, qui ſçait mieux ſe ſeruir des inſtrumens du
-        meſnage &amp; de l’agriculture, que des fleurs de laRe
-        thorique ny de l’eloquence: ſi nous n’auons bien par
-        lé noſtre meſtier nous exeuſe; pour bien dire il faut
-        de la Science, mais pourbien aimer il n’en faut pas:
-        la nature ſans aucun art apprend à̀ noſtre cœur à
-        aimer les perfections de voſtre Maieſteé &amp; à̀ benir ſes
-        biens faits, comme nous auons ſouffert ſes chaſti
-        mens ſans oſer murmurer n’y nous plaindre.
-        Les Egiptiens preſentoient l’image de leur cœur
-        &amp; de leur langue à ceux qui les auoient obligés; Et
-        pour cét efſet ils conſacrerent le Peſcher à Harpo¬ 
-        .¬¬¬E¬¬
-        crate, parce que cét arbre porte le portrait de nos
-        cœurs dans ſes fruits, &amp; l’imge de nos langues dans
-        ſes fueilles, pour luy montrer que iamais leur lan
-        gue n’auroit d’autre parolle, n’y leur cœur d’autre
-        penſee que pour ſa gloire.
-        Mdame, ce cœur que ce peuple ne donnoit qu’en
-        figure, nous vous le repreſentons en eſſence, &amp; ne
-        pouuans exprimer nos affections comme il faut pour
-        parler aux Souuerains, nous employerons l’vſage de
-        noſtre cœur &amp; de noſtre langue pleins d’innocence
-        &amp; de ſimplicité,pour vous; le ſuppliant tres-humble
-        ment du meſme deſir que nous ſouhaittons de viure
-        heureuſement, qu’il conſerue voſtre ſanté, voſtre vie
-        &amp; voſtre Royalle grandeur en toute ſorte de felicité
-        mondaine durant voſtre ſeiour ſur la terre: Et qu’en
-        ſin apres auoir paracheué voſtre courſe &amp; continué
-        à faire des actions de charité &amp; de miſericorde en
-        uers les François &amp; enuers tous les Chreétiens, nous
-        vous puiſſions voir porter vne Couronne incorrup
-        tible dans les Cieux &amp; ioüir eternelement des felici
-        tez Cleſtes que Dieu garde à ceux qui auront aimé
-        la Paix &amp; qui l’auront procuree aà̀ leurs peuples.
-        Ce ſont les prieres des Pauures habitans des bourgs
-        &amp; villages des enuirons de Paris qui ont eſté ruiné́s
-        durant ces deſordres, pour finir l’action de graces.
-        qu’ils font aà la Reyne de ce quelle leur à promis de
-        les ſoulager.
-        FIN.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">rhétorique épidictique</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+          <term type="subject" ref="institution/fiscalite.xml">Taille (impôt)</term>
+          <term type="subject">France -- 1648-1653 (Fronde)</term>
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_18" source="Moreau">
+          <p>Paix de Saint-Germain</p>
+          <date when="1649-03-30">1649-03-30</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-02-07" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="9" />
+        <lb />ACTIONS
+        <lb />DE
+        <lb />GRACES
+        <lb />DES
+        <lb />PAVVRES PAISANS
+        <lb />DE L’ELECTION DE PARIS,
+        <lb />POVR LE SOVLAGEMENT
+        <lb />DES TAILLES
+        <lb />QVE LA REYNE LEVR A PROMIS
+        <lb />par la Declaration de la PAIX.. <figure type="decoration" />
+        <lb />A PARIS
+        <lb />Chez la Vefue IEAN REMY, ruë Sainct Iacques,
+        <lb />à l'image S. Remy, prés le College du Pleſſis.
+        <lb />M. DC. XLIX. <imprimatur>AVEC PERMISSION.</imprimatur>
+        <pb n="10" />
+        <pb n="11" />
+        <lb />ACTIONS DE GRACES
+        <lb />des Pauures Paiſans de l Eſlection
+        <lb />de Paris, pour le ſoulagement des
+        <lb />Tailles que la eyne leur a promis.
+        <lb />MADAME,
+        <lb />Comme c’eſt vne peine extréme
+        <lb />lſl d’aimer ſans oſer découurir ſon affe
+        <lb rend="¬" break="no" />e ction; auſſi c’eſt vn tourment le plus
+        <lb />Inſſe de ous de ſouffrir ſans oſer ſe plaindre: Le
+        <lb />cœur demande vne langue pour augmenter ſon
+        <lb />amour en l’exprimant; Et les douleurs veulent des
+        <lb />paroles pour en diminuer &amp; adoucir le reſſentiment
+        <lb />en les racontant. Ainuſi l’amour &amp; la douleur ſe veu¬.
+        <lb />lent faire connoiſtre, &amp; l’vn &amp; l’autre donnent des
+        <lb />peines tres-ſenſibles, ſi l’on ne peut dire ce qui affli.
+        <lb />ge ou ce qui contente. Voſtre Majeſté, MA DAME,
+        <lb />nous à ms en cét Eſtat, car vos biens-faits ont forcé
+        <lb />nos cœurs vous aimer: mais noſtre cœur &amp; noſtre
+        <lb />amour n’ont point de langue; ou ſi nous en auons
+        <lb />vne, elle manque de diſcours digne d’eftre eſcouté
+        <lb />par voſtre Majeſté &amp; par vos Courtiſans. Nous deſi
+        <lb rend="¬" break="no" />rons rendre graces au Roy &amp; à vous MADAmME; Mais
+        <lb />le langage de la charuëeſt trop bas pour ſe faire ene
+        <lb /> 1
+        <lb /> A i <pb n="12" />
+        <lb />4
+        <lb />rendre ax oreilles des Roys, de telle ſorte que ſi
+        <lb />dans nos horribles ſouffrances noſtre douleur na
+        <lb />point eu de bouche pour ſe plaindre, la ioye que nous
+        <lb />receuons à preſent dans l’eſperance que voſtre Ma
+        <lb rend="¬" break="no" />jeſté nous donne de nous ſoulager, n’a point de lan
+        <lb rend="¬" break="no" />gage pour vous remercior. De ſorte que ſi deſirer &amp;
+        <lb />ne pouuoir, eſt vne eſpece de martyre, il faut confeſ
+        <lb rend="¬" break="no" />ſer que vous nous faites ſouffrir en nous ſoulageant,
+        <lb />&amp; nous rendes ingrats à force de nous bien faire.
+        <lb />Vous auez trop de grandeur, &amp; nous trop de foi
+        <lb rend="¬" break="no" />bleſſe pour penſer de vous pouuoir ſarisfaire iuſqu’à
+        <lb />relpoint de ne vous plus demeurer redeuables: ce ſe
+        <lb rend="¬" break="no" />roit oublier ce que vous eſtes &amp; ce que nous ſommes,
+        <lb />ſi nous croyons que noſtre pouuoir en vous ſeruant
+        <lb />peut eſgaller vos biens faits; puiſque la mort meſme
+        <lb />qui nous acquitte de toutes choſes, ne nous acquit
+        <lb rend="¬" break="no" />era non plus que noſtre vie de ce que nous vous de
+        <lb rend="¬" break="no" />uons. Mais ce qui ne ſe peut payer par la mort ſe doit
+        <lb />payer par l’amour; &amp; pourtant noſtre profeſſion n’e
+        <lb rend="¬" break="no" />ltant point pour vous ſeruir de la langue ny de la plu
+        <lb rend="¬" break="no" />me, nous vous offrons le ſeruice du cœur, &amp; vous
+        <lb />preſentons ce que vous poſſedez deſia. Et de fait, ¬i
+        <lb />noſtre cœur ſe porte où eſt noſtre amour, &amp; ſi noſtre
+        <lb />amour le trouue où eſt la bonté́;, l’amour de vos per
+        <lb rend="¬" break="no" />fections vous doit acquerir la poſſeſſion de tous les
+        <lb />cœurs de l’niuers, puis que Dieu &amp; la Nature ont
+        <lb />donné au Roy &amp; a voſtre Majeſteé́ tout ce qui peut
+        <lb />gaigner les Amours du Ciel &amp; de la terre. Il eſt vray
+        <lb />MDamE, que l’amour &amp; l’eſtime de vos Vertus
+        <lb />ſeroient plus grapds, ſi aous en auionsplus de con
+        <lb rend="¬" break="no" />oiſſance. <pb n="13" />
+        <lb />noiſſance, car la pluſpart de vos belles qualitez in
+        <lb rend="¬" break="no" />connuës aà̀ la terre, &amp; que pieuſement nous croyons
+        <lb />eſtre aimées &amp; bien connuës du Ciel, ſont ſi hau
+        <lb rend="¬" break="no" />tes &amp; ſi eminentes, &amp; elles s’eſloignent tellement de
+        <lb />noſtre veü qu’il n’y a que celuy qui les peut don
+        <lb rend="¬" break="no" />ner qui les puiſſe connoiſtre, non plus que luy ſeul
+        <lb />qui les puiſſe recompenſer. Les perſonnes de noſtre
+        <lb />ſorte occupées pour la plus part aux exercices de la
+        <lb />beſche &amp; de la hoüe, comme elles ne peuuent en
+        <lb rend="¬" break="no" />tendre vos Vertus plus releuées, auſſi elles n’en peu
+        <lb rend="¬" break="no" />uent parler, &amp; nous ſommes ſi groſſiers, que nous
+        <lb />faiſons plus d’eſtat des effects de voſtre miſericorde
+        <lb />ſur les pauures Sujets du jRoy voſtre fils, que de vos
+        <lb />autres perfections. Nous aimons &amp; admirons le So
+        <lb rend="¬" break="no" />leil pour ſa chaleur &amp; pour ſa lumiere, mais particu
+        <lb rend="¬" break="no" />lierement parce qu’il fait croiſtre &amp; meuir les fruits
+        <lb />qui nous font viure, ſans conſiderer mille autres mer
+        <lb rend="¬" break="no" />ueilles de cebel Aſtre, qui nous font voir qu’entre
+        <lb />toutes les creatures il eſt le plus admirable &amp; que
+        <lb />Dieu l’a choiſi pour y poſer ſon tabernacle &amp; pour
+        <lb />nous faire voir en racourcy vn rayon eſclatant de ſa
+        <lb />Diuinité: Toutesfois noſtre ignorance n’eſt pas en
+        <lb rend="¬" break="no" />core ſi grande que vos act ions ne nous facent voir
+        <lb />que vous pouuex reduire en pratique toutes les plus
+        <lb />ſaintes maximes que tous les Princes &amp; les plus ſages
+        <lb />Politiques n’ont eu qu’en Theorie. Nous voyons cet
+        <lb rend="¬" break="no" />te Pieté, qui eſtant ſans fente, vous fera triompher
+        <lb />dans le Ciel, comme voſtre Royalle naiſſance &amp; vo
+        <lb rend="¬" break="no" />ſtre Auguſte mariage vous ont donneé des triomphes
+        <lb />ela terre, La conſderation de tous les glorieux ad¬ <pb n="14" />
+        <lb />¬¬
+        <lb rend="¬" break="no" />¬¬
+        <lb rend="¬" break="no" />uantages que le Ciel fauorable a départis à voſtre
+        <lb />Majeſté nous donnent de l’eſtonnement; Mais M A
+        <lb rend="¬" break="no" />DAME, la compaſſion qu’on nous a aſſeuré que vous
+        <lb />auez priſe de nos maux paſſez nous donnent de
+        <lb />l’amour, &amp; nous font croire que ia mais les Princes ne
+        <lb />repreſentent mieux l’image de Dieu, qu’en faiſant
+        <lb />des actions de miſericorde. Que benit ſoit a iamais ce
+        <lb />grand Dieu de Miſericorde, qui nous promet de
+        <lb />nous faire receuoir les eſſects de la voſtre. Benit ſoit
+        <lb />voſlre cœur qui a receu du Roy des Roys ces ſaintes
+        <lb />inſpirations; que benit ſoit cét eſprit admirable qui
+        <lb />agſſant prés de vous pour noſtre bien, &amp; pour noſtre
+        <lb />gloire a contribué auec Dieu &amp; voſtre bon naturel à
+        <lb />nous aſſeurer apres tant de miſeres que nous ſerions
+        <lb />deſchargez pour trois années de toute ſorte de tailles
+        <lb />&amp; d’impoſitions. La copaſſion non plus que l’amour
+        <lb />ne vient que de la connoiſſance, &amp; auſſi-toſt que
+        <lb />vous auez connu l’effroyable excez de nos miſeres,
+        <lb />voſtre Majeſté a compati, vous auez ietté la veuë ſur
+        <lb />les ruines &amp; ſur les deſolations de nos villages, de nos
+        <lb />champs &amp; de nos Egliſes, ſur la maigreur &amp; ſur la nu
+        <lb rend="¬" break="no" />dité de nos corps, qui paſles &amp; defigurez portent en
+        <lb rend="¬" break="no" />core ſur leur viſage l’image de la mort: vous auez en
+        <lb rend="¬" break="no" />tendu les cris des enfans affamez, des Vierges violées,
+        <lb />des vieillards battus &amp; generalement d’vn nombre
+        <lb />infini de pauures innocens François miſerablement
+        <lb />rourmentez &amp; maſſacrez par des nations barbares &amp;
+        <lb />eſtrangeres: Vous auez regardé l’eſtat deplorable où
+        <lb />nous eſtions reduits, ſans maiſon, ſans habits, &amp; ſans
+        <lb />pain, &amp; vollre cœur enfin touché́ de la fin de nos mi¬ <pb n="15" />
+        <lb />ſeres nous a fait voir ſa commiſeration.
+        <lb />Et dans la conſideration de tant de ſouffrances,
+        <lb />vous auez fait reflexion ſur vous-meſme de ce que
+        <lb />vous eſtes, &amp; de ce que nous ſommes, de ce que vous
+        <lb />poſſedez à preſent, &amp; de ce que vous eſtiez il y a cin
+        <lb rend="¬" break="no" />quante ans: vous auez regardé la main puiſſante qui
+        <lb />vous a tiré du neant, &amp; vous a choiſi de cette maſſe
+        <lb />commune d’Adam pour vous faire naiſtre dans la
+        <lb />pourpre &amp; vous donner par aliance la premiere Cou
+        <lb rend="¬" break="no" />ronne de l’Vniuers, en vous rendant la femme, &amp; la
+        <lb />vefue du plus grand Roy du monde, &amp; par meſme
+        <lb />moyen la mere &amp; la Regente de noſtre ieune &amp; in
+        <lb rend="¬" break="no" />comparable Monarque; Heureuſe certes, &amp; cent fois
+        <lb />la plus heureuſe de toutes les femmes, ſi apres cette
+        <lb />gloire mondaine, vous pouuez par des actios d’huma
+        <lb rend="¬" break="no" />nité &amp; de miſericorde enuers vos peuples acquerir les
+        <lb />recompenſes &amp; les Couronnes que Dieu diſtribue
+        <lb />dans le Ciel à tous ceux qui ont ſoulagé les pauures &amp;
+        <lb />protegé́ les innocens. Voſtre Majeſté́ a penſé à la reſ
+        <lb rend="¬" break="no" />ſemblance naturelle de vous &amp; de nous; &amp; ayant mis
+        <lb />voſtre cœur en la place du noſtre, vous auez eſcoute
+        <lb />vos penſees qui vous faiſoient dire: Si Dieu m’auoit
+        <lb />fait naiſtre dans la cendre auſſi bien que ſur le thrô
+        <lb rend="¬" break="no" />ne, pour la charruë̈ auſſi bien que pour le Sceptre,
+        <lb />dans la ſeruitude comme ie, ſuis dans le commande
+        <lb rend="¬" break="no" />ment, dans la nudité, dans la faim &amp; dans le trauail
+        <lb />comme ie ſuis dans l’abondance: quelle aſſiſtance de
+        <lb rend="¬" break="no" />ſirerois-ie de receuoir de ceux qui ſeroient ſur le trô
+        <lb rend="¬" break="no" />ne, &amp; qui poſlederoient les Couronnes &amp; les treſors;
+        <lb />Et par conſequent ie deſire donner aux pauures villa
+        <lb rend="¬" break="no" />a <pb n="16" />
+        <lb />¬¬-
+        <lb rend="¬" break="no" />geois. ce que ſii’eſtois en leur place, ie deſirerois re
+        <lb rend="¬" break="no" />ceuoir de celuy que Dieu auroit peu mettre en l’Eſtat
+        <lb />ou ie ſuis.
+        <lb />Il faut croire Madame, que Dieu agiſſant envo
+        <lb rend="¬" break="no" />ſtre eſprit de la ſoi te, a fait ainſi parler ceſte loy na
+        <lb rend="¬" break="no" />turelle dans voſtre cœur pour vous faire dire &amp; pra
+        <lb rend="¬" break="no" />tiquer qu’il faut faire aux autres ce que vous ſou
+        <lb rend="¬" break="no" />haitteriz railonnablement vous deuoit eſtre fait
+        <lb />La pluſparr des Grands de la terre croyent qu’il
+        <lb />faut quitter la douceur naturelle lors qu ils com
+        <lb rend="¬" break="no" />mencent d’eſtre eſleués ſur les humains, &amp; que ſe
+        <lb />couurant de la pourpre, ils ſe doiuent deſpouller de
+        <lb />toute humanité, mettre en oubly toutes les Loys
+        <lb />ciuiles &amp; naturelles, &amp; deſormais viure en demons &amp;
+        <lb />le mocquer de tout ce qui s’oppoſe à̀ leurs imagina
+        <lb rend="¬" break="no" />tions &amp; à leurs plus iniultes voloteés: mais pour voſtre
+        <lb />rcgard Madame. nous rendons graces a Dieu de ce
+        <lb />que vous aſſuiettiſſez voſte pouuoir à la raiſon, &amp;
+        <lb />que par cét acte d’humanité que vous nous faites
+        <lb />receuoir, vous monſtrez que vous cognoiſſez bien
+        <lb />que vous eſtes femme &amp; Reyne tout enſemble; com
+        <lb rend="¬" break="no" />me Reyne ſç̧achant bien commander à vos ſuiets &amp;
+        <lb />les humilier, &amp; comme femme prenant pitié de ceux
+        <lb />qui ont la nature ſemblable à̀ la voſtre.
+        <lb /> Car ſi en qualité de femme vous auez ſuiui la lu
+        <lb rend="¬" break="no" />miere naturelle en nous prometant de nous ſoulager,
+        <lb />auſi comme ſouueraine ſur nous vous aueés eſcouté
+        <lb />la loy de voſtre ſceptre. Vous vous eſtes acquit
+        <lb rend="¬" break="no" />tée de deux differens offices tout à lafois, qui ſem
+        <lb rend="¬" break="no" />blent eltre oppoſez; mais pour noſtre conſolation &amp;
+        <lb />pour
+        <lb />-¬¬-¬ <pb n="17" />
+        <lb /> 5
+        <lb />pour voſtre gloire, nous deuons éroire que vous les
+        <lb />auez accordez enſemble par vne ſainte harmonie
+        <lb />pour le bien de cet Eſtar.
+        <lb />Vn tres-ſage Empereur deſirant d’eſtre auſſi bien
+        <lb />eſtimé le pere que le Monarque de ſon peuple, parle
+        <lb />en cette ſorte, dans ſes loix: C’eſt le premier ſoin de
+        <lb />ma penſée, &amp; le plus paſſionné amour de mon cœur,
+        <lb />que ma chariteé́ &amp; mon humanité paroiſſent ſans ceſ
+        <lb rend="¬" break="no" />ſ à donner ordre que les pauures de mon Empire
+        <lb />ſoient nourtis &amp; ſoulagez de tout ce qui leur ſera ne
+        <lb rend="¬" break="no" />ceſſaire: Mais Madame, nous voyons que cetre loü̈a
+        <lb rend="¬" break="no" />ble compaſſion qui n’eſtoit peut eſtre que dans les
+        <lb />Loix de cet Empereur, eſt grauée dans voſtre cœur;
+        <lb />&amp; cette pieté qui peut eſtre n’eſtoit que ſur ſa langue
+        <lb />ou ſur ſa plume, voſtre Majeſté à enuie de le prati
+        <lb rend="¬" break="no" />quer par ſes actions.
+        <lb />Si pour eſtre femme, ſi pour eſtre Reyne, vous
+        <lb />auez creu eſtre obligee de nous regarderen pitié, vous
+        <lb />auez creu le deuoir encore d’auantage pour auoir eſté
+        <lb />l’eſpouſe &amp; la, vefue d’vn Roy trẽs-Chreſtien, &amp;
+        <lb />pour eſtre la mere &amp; la Regente de noſtre ieune Roy
+        <lb />Dieu-donné qui a ſuccedéà ſon pere en cette admira
+        <lb rend="¬" break="no" />ble qualité auſſi bieua qu’à ſon Sceptte &amp; à ſa Couron
+        <lb rend="¬" break="no" />ne. Vn Chreſtien ou vne Chreſtienne ſans charité,
+        <lb />ſont ſemblables aà vn Ciel ſans Aſtres, à̀ vn Soleil ſans
+        <lb />lumiere &amp; ſans chaleur, a vn corps ſans ame &amp; à vne
+        <lb />ombre ſans corps;, ils veulent porter le nom de celuy
+        <lb />qui nous a donne ſon ſang &amp; ſa vie pour noſtre ſalut,
+        <lb />&amp; n’en veulent pas imiter les actions ny enſuiure
+        <lb />les preceptes. Ils deuiennent pariures &amp; infidelese:
+        <lb />C <pb n="18" />
+        <lb />p
+        <lb rend="¬" break="no" />16
+        <lb />ar ils n’executent pas ce qu’ils ont promis par ſer
+        <lb rend="¬" break="no" />ment alors que par le bapteſme ils ont eſté enrollez
+        <lb />au nombre des Chreſtiens: car les parrains &amp; les mar
+        <lb rend="¬" break="no" />raines iurent pour les enfans qu’ils ſanctifient en les
+        <lb />faiſant baptiſer qu’ils viuront charitablement: c’eſt
+        <lb />donc la premiere obligation du veritable Chreſtien
+        <lb />&amp; la premiere cauſe de ſa felicité eternelle, comme le
+        <lb />defftaut d’icelle eſt le ſujet de leur condemnation &amp;
+        <lb />l’enfer perpetuel desméchans. La charité eſt la clef de
+        <lb />Ieſus qui ouure les cœurs &amp; les coffres pour faire du
+        <lb />bien aux indigens, &amp; qui ferme les portes de
+        <lb />l’Enfer, &amp; fait ouurir celle des Cieux. Vous auez
+        <lb />conſideré l’effet de cette noble Vertu, &amp; combien
+        <lb />Dieu vous a rendu puiſſante pour l’exercer: De ce que
+        <lb />vous auez receu de ſa main vous auez reconnu ce que
+        <lb />vous deuez rendre, &amp; par les dons qu’il vous a faits,
+        <lb />vous auez appris l’obligation que vous auez de le ſer.
+        <lb />uir en aſsiſtant les pauures Sujets de voſtre fils. Que
+        <lb />ſi chaque Chreſtien eſt obligé de viure charitable
+        <lb rend="¬" break="no" />ment, combien d’auantage y eſtes vous obligée en
+        <lb />qualité de Regente &amp; de mere du premier Roy des
+        <lb />Chreſtiens? Et ſi au iour du lugement Dieu fera ren
+        <lb rend="¬" break="no" />dre compte au moindre des Chreſtiens de ſa charité,
+        <lb />combien plus à celle qui porte les deux glorieux til
+        <lb rend="¬" break="no" />tres de fille du Roy tres-Catholique, de femme, &amp; de
+        <lb />mere des Rois tres Chreſtiens.
+        <lb />Enfin Madame, nous rendons graces à Dieu de
+        <lb />voir que voſtre Majeſté preuenant le tenmps de ce
+        <lb />rude &amp; dernier examen, voſtre repentence &amp; les
+        <lb /> Saintes actions que vous auez deſſein de laire, vo us <pb n="19" />
+        <lb />anaaaa
+        <lb /> 11
+        <lb />rendent deſia prepar̈e à pratiquer des vertus qui
+        <lb />donnent le Paradis: Nous auons eſté ruinez &amp; vous
+        <lb />nous voulez reſtaurer, nous auons eſté deſpoü̈illez
+        <lb />&amp; vous nous voulez donner le moyen de nous reue
+        <lb rend="¬" break="no" />ſtir; la crainte de la mort nous auoit fait abandon
+        <lb rend="¬" break="no" />ner nos maiſons &amp; voſtre charité́ nous y faiſant ren
+        <lb rend="¬" break="no" />trer vous nous auez logé; &amp; pour ce ſuiet ce Iuge
+        <lb />Eternel vous dira, eez ame benite de monpere prendre
+        <lb />poſſeſſion du R oyaume du ſiel; &amp; alors pour vne cou
+        <lb rend="¬" break="no" />ronne periſſable vous en aurez vne eternelle.
+        <lb />Mais Madame, pour ſç̧auoir la grandeur de la
+        <lb />recompenſe, il faudroit ſçauoir combien eſt grand
+        <lb />le bien fait qui ſe meſure ſelon l’extremité des mi
+        <lb rend="¬" break="no" />ſeres deſquelles vous nous auez tirez; nous ne pre
+        <lb rend="¬" break="no" />tendons pas icy d’exagerer nos ſouffrances, car com
+        <lb rend="¬" break="no" />me nous n’auons pas aſſez d’eloquence pour les ex
+        <lb rend="¬" break="no" />primer; vn cœur ſi tendre &amp; ſi pitoyable comme le
+        <lb />voſtre ne les pourroit entendre ſans emotion: c’eſt
+        <lb />aſſez de dire qu’il n’y a point de condition ſi miſe
+        <lb rend="¬" break="no" />rable que nous n’euſſions preferée à la noſtre.
+        <lb />Nous ne doutons point que ſi voſtre Maieſté eut
+        <lb />eu connoiſſance de la moitié de nos ſouffrances,
+        <lb />nous n’euſſions eu pluſtoſt du ſecours: Mais malheur
+        <lb />ſur ceux qui ont eſté cauſe de tous ſes deſordres en
+        <lb />voſtre Royaume, malheur ſur ces flateuts &amp; ſur ces
+        <lb />Courtiſans intereſſez qui peſchans en eau trouble,
+        <lb />offuſquent la verité, &amp; par mille ſuptiles chimeres
+        <lb />d’authorité Royale, &amp; de gloire de l’Eſtar, ont fait pan
+        <lb rend="¬" break="no" />cher voſtre eſprit &amp; deſtourné́ vos yeux, en ſorte que
+        <lb />croyant que nos maux eſtoient neceſlaires à l con¬ <pb n="20" />
+        <lb />12
+        <lb />ſeruation de voſtre grandeur &amp;a celle du Roy, vous
+        <lb />n’auez peu prendre le loiſir de conſiderer nos ne ceſ
+        <lb rend="¬" break="no" />itez: Le Dicu de lumieres apres vous auoir tenu
+        <lb />dans cét aueuglement, pour nous chaſtier de nos pe
+        <lb rend="¬" break="no" />chez, vous fera comprendre vn iour( &amp; nous l’en
+        <lb />prions de tout noſtre cœur &amp; auec des larmes de ſang)
+        <lb />que tous ces pernicieux conſeils ne tirent leur origine
+        <lb />que de l’Eſcholle d’iniquité, &amp; qu’ils procedent plu
+        <lb rend="¬" break="no" />toſt de l’eſprit malin des Demons creé́s pour la ruine
+        <lb />de ce Royaume, que des inſpirations des Anges qui
+        <lb />en ſont les Protecteurs.
+        <lb />Et nous rendons graces tres-humbles à noſtre Dieu
+        <lb />de ce que deſia nous ſentons les effets de ſa miſeri
+        <lb rend="¬" break="no" />corde &amp; de la voſtre, &amp; que dés auſsi-roſt que ces im
+        <lb rend="¬" break="no" />pies Conſeillers ont donné loiſir à voſtre Majeſté de
+        <lb />reſpire r, vous nous auez ſoulagés: &amp; comme le cœur
+        <lb />t quoy qu’il ſoit poſé au milieu du corps, s’incline
+        <lb />pourtant vers la partie la plus foible: ainſi ovus eſtant
+        <lb />à preſent le principe de la vie &amp; du bonheur de cét
+        <lb />Eſtat, vous communiquzà ce grand corps les eſprits
+        <lb />qui le font ſubſiſter &amp; reuiure;, vous auez tourné vo
+        <lb rend="¬" break="no" />ſtre cœur par compaſsion ſur les pauures Villageois,
+        <lb /> qui tiennent le moindre rang entre les ordres de cet
+        <lb rend="¬" break="no" />te Monarchie, portant de cette ſorte la main &amp; le re
+        <lb rend="¬" break="no" />mede à la partie la plus malade &amp; la plus extenuée.
+        <lb />L’Amour qui fait tout entreprendre, meſme au de.
+        <lb rend="¬" break="no" />laà du pouuoir, nous à fait iuſques icy parler, pour teſ
+        <lb rend="¬" break="no" />moigner en quelque ſorte les reſſentimens que nous
+        <lb />auons; mais la grandeur du bien-fair que nous eſpe
+        <lb rend="¬" break="no" />rons, nous oblige au ſilence, afin que ceſſant de par
+        <lb rend="¬" break="no" /> les <pb n="21" />
+        <lb />ler nous donnions loiſir à noſtre eſprit de penſer que
+        <lb />dans ce ſoulagement tant de biens ſont compris qu’l
+        <lb />n’y a que Dieu ſeul qui le puiſſe auoir inſpiré, &amp; lors
+        <lb />que vous l’aurez reduit en acte, il n’ a auſli que luy
+        <lb />ſeul qui le puiſſe reconnoiſtre: Car quelle creature
+        <lb />dans le Ciel ou dans la terre pourroi feurnir vne re
+        <lb rend="¬" break="no" />compenſe ſuffiſante à vne grace, qui a redonné lavie
+        <lb />&amp; le couuert à vn million d’orphelins &amp; de vierges
+        <lb />eſcartées &amp; cachées dans les cauernes &amp; l’eſpeſſeur
+        <lb />des foreſts pour eſuiter les violences de tant de ſol.
+        <lb />dats acharnez apres eux. Quel autre que le Createur
+        <lb />pourroit ſatis faire a vne œuure charitable qui a em
+        <lb rend="¬" break="no" />peſché la mort de mille &amp; mille pauurcs Laboureurs
+        <lb />&amp; Vignerons’Quel moindre que luy pourroit recom
+        <lb rend="¬" break="no" />penſer ceſte incomparable Reyne qui a garanti tant
+        <lb />de familles languſſantesde la faim, du deſelpoir &amp; du
+        <lb />rmbeau, leſquelles e ſtoient ſur le point de perir
+        <lb />ſans ceſte paix que le Ciel a enuoyée tout aà coup?
+        <lb />Il eit vray pourtant, Madame, que nous ne ſom
+        <lb rend="¬" break="no" />mes pas encore à la fin de nos miſeres. Mais voſtre
+        <lb />pouuoir &amp; voſtre miſericorde ne ſont pas finies auſsi,
+        <lb />ſi la continuation de la guerre eſtrangore menaſſe en
+        <lb rend="¬" break="no" />core la France de beaucoup de ſouffrances, voſtre Ma
+        <lb rend="¬" break="no" />jeſté a auſſi beaucoup de compaſſion &amp; tout le mon
+        <lb rend="¬" break="no" />de eſpere qu’ayant ſi bien commencé vous ne vou
+        <lb rend="¬" break="no" />drez pas rendre vn ſi bel ouurage imparfait, mais que
+        <lb />vous ferez tous vos efforts poeur la procurer à tou
+        <lb rend="¬" break="no" />te la Chreſtienté; Nous vous coniurons encore d’y
+        <lb />trauailler le plus puiſſamment que vous pourrez, &amp;
+        <lb />vous ſupplions de pardonner à noſtre importunité;
+        <lb />D <pb n="22" />
+        <lb />
+        <lb rend="¬" break="no" />aaaaaaa
+        <lb />Nous croyons que ce ſeroit offenſer voſtre grandeu
+        <lb rend="¬" break="no" />&amp; voſtre pieté ſi vous melurant comme vne perſonne
+        <lb />du commun nous ceſſions de vous prier, où parce
+        <lb />que vous manqueriez de pouuoir ou de volonté de
+        <lb />nous ſoulager. Dieu dont vous portez l’image &amp; du
+        <lb rend="¬" break="no" />quet vous tenez la place en ce monde, ne ſe plaiſt
+        <lb />rien tant qu’a donner, &amp; rien ne luy eſttant agreable
+        <lb />que de ſe voir prié &amp; importuné, iuſques à ce point
+        <lb />que pourueu que nos prieres ayent pour principal
+        <lb />but la gloire de ſon nom, &amp; qu’elles ſoient faites auec
+        <lb />ferme foy &amp; iuſtice, non ſeulement elles paſſent pour
+        <lb />des actes de Religion, mais auſſi elles ſont touſiours
+        <lb />exaucées: Auſsi- toſt que nous auons receu vn bien
+        <lb rend="¬" break="no" />fait de ſa main, il deſire que nous recommencions à
+        <lb />luy en demander vn autre, &amp; touſious ainſi inceſſam
+        <lb rend="¬" break="no" />ment, iuſques à ce que nous ayons receu dans le Ciel
+        <lb />ce dernier bien, qui mettant fin à nos miſeres, la met
+        <lb />auſsi a nos deſirs, &amp; à nos prieres pour nos propres in
+        <lb rend="¬" break="no" />tereſts. Et ſur cette conſideration, croyns que vo
+        <lb rend="¬" break="no" />ſtre Maieſté ſera bien aiſe de conformer ſes volontez
+        <lb />à celles de Dieu, nous vous ſupplions tres-humble
+        <lb rend="¬" break="no" />ment qu’il vous plaiſe de vous informer plus ample
+        <lb rend="¬" break="no" />ment de noſtre ruine, de noſtre foibleſſe &amp; de noſtre
+        <lb />fardeau, afin que par vne luſtico naturelle, meſurant
+        <lb />aux années aà venir les impoſitios aà̀ nos forces, il vous
+        <lb />plaiſe d’ohliger le Roy à continuer durant &amp; apres ſa
+        <lb />minorité ſes graces &amp; ſes miſericordes deſſus nous, à
+        <lb />proportion de la connoiſſance que vous luy ferez
+        <lb />auoir de noſtre pauureté.
+        <lb /> Cette priere, Madame, ne doit pas eſtre vne impor¬ <pb n="23" />
+        <lb />tunité deſagreable pour vous, ou inutile pour ce di
+        <lb rend="¬" break="no" />cours, parce qu’elle fait la meilleure partie de noſtre
+        <lb />action de grace, &amp; done vne plus longue eſtenduë à la
+        <lb />croyance que nous auõs de la gradeur de vos Vertus
+        <lb rend="¬" break="no" /> C’eſt vne eſpece de ſouuerain honneur que nous
+        <lb /> vous rendons, de croire que rien ne vous eſt , impo
+        <lb rend="¬" break="no" />ſſible c’et eſleuer bien haut voſtre bonteé que de pen
+        <lb rend="¬" break="no" />ſer qu’elle ne ſe laſſera iamais de bien faire;, c’eſt la
+        <lb />faire approcher de certe puiſſance Souueraine qui eſt
+        <lb />ſur les Cieux, dõt vous portez la figure ſur la terrec’eſt
+        <lb />en partie reçognoiſtre vos biens faits, que d’auoir
+        <lb />des reſſentimens ſi grands de voſtre Pieté &amp; de voſtre
+        <lb />puiſſance, qui eſt telle qu’auſſi toſt que nous auone
+        <lb />receu de vous quelque bien, vous teſmoignes d’aueir
+        <lb />encore la volonté́ de nous en donner vn autre, &amp;
+        <lb />qu’eſtans ſoulagés d’vne partie de nos ſouffrances,
+        <lb />vous auez le pouuoir de nous deliurer du reſte.
+        <lb />lPardonnez, Madame, a lignorance de noſtre pro
+        <lb rend="¬" break="no" />feſſion, qui ſçait mieux ſe ſeruir des inſtrumens du
+        <lb />meſnage &amp; de l’agriculture, que des fleurs de laRe
+        <lb rend="¬" break="no" />thorique ny de l’eloquence: ſi nous n’auons bien par
+        <lb rend="¬" break="no" />lé noſtre meſtier nous exeuſe; pour bien dire il faut
+        <lb />de la Science, mais pourbien aimer il n’en faut pas:
+        <lb />la nature ſans aucun art apprend à̀ noſtre cœur à
+        <lb />aimer les perfections de voſtre Maieſteé &amp; à̀ benir ſes
+        <lb />biens faits, comme nous auons ſouffert ſes chaſti
+        <lb rend="¬" break="no" />mens ſans oſer murmurer n’y nous plaindre.
+        <lb />Les Egiptiens preſentoient l’image de leur cœur
+        <lb />&amp; de leur langue à ceux qui les auoient obligés; Et
+        <lb />pour cét efſet ils conſacrerent le Peſcher à Harpo¬ <pb n="24" />
+        <lb />.¬¬¬E¬¬
+        <lb rend="¬" break="no" />crate, parce que cét arbre porte le portrait de nos
+        <lb />cœurs dans ſes fruits, &amp; l’imge de nos langues dans
+        <lb />ſes fueilles, pour luy montrer que iamais leur lan
+        <lb rend="¬" break="no" />gue n’auroit d’autre parolle, n’y leur cœur d’autre
+        <lb />penſee que pour ſa gloire.
+        <lb />Mdame, ce cœur que ce peuple ne donnoit qu’en
+        <lb />figure, nous vous le repreſentons en eſſence, &amp; ne
+        <lb />pouuans exprimer nos affections comme il faut pour
+        <lb />parler aux Souuerains, nous employerons l’vſage de
+        <lb />noſtre cœur &amp; de noſtre langue pleins d’innocence
+        <lb />&amp; de ſimplicité,pour vous; le ſuppliant tres-humble
+        <lb rend="¬" break="no" />ment du meſme deſir que nous ſouhaittons de viure
+        <lb />heureuſement, qu’il conſerue voſtre ſanté, voſtre vie
+        <lb />&amp; voſtre Royalle grandeur en toute ſorte de felicité
+        <lb />mondaine durant voſtre ſeiour ſur la terre: Et qu’en
+        <lb />ſin apres auoir paracheué voſtre courſe &amp; continué
+        <lb />à faire des actions de charité &amp; de miſericorde en
+        <lb rend="¬" break="no" />uers les François &amp; enuers tous les Chreétiens, nous
+        <lb />vous puiſſions voir porter vne Couronne incorrup
+        <lb rend="¬" break="no" />tible dans les Cieux &amp; ioüir eternelement des felici
+        <lb rend="¬" break="no" />tez Cleſtes que Dieu garde à ceux qui auront aimé
+        <lb />la Paix &amp; qui l’auront procuree aà̀ leurs peuples.
+        <lb />Ce ſont les prieres des Pauures habitans des bourgs
+        <lb />&amp; villages des enuirons de Paris qui ont eſté ruiné́s
+        <lb />durant ces deſordres, pour finir l’action de graces.
+        <lb />qu’ils font aà la Reyne de ce quelle leur à promis de
+        <lb />les ſoulager.
+        <lb />FIN. </p>
+    </body>
+  </text>
 </TEI>

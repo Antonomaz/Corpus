@@ -1,785 +1,466 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2312_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Liste des malcontents de la cour, avec le sujet de leurs
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Liste des malcontents de la cour, avec le sujet de leurs
           plaintes.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2022-10-25">25 octobre 2022</date>
-				<availability status="restricted" n="cc-by">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=iqZcD6iWM0IC"/>
-					<author/>
-					<title source="Moreau">Liste des malcontents de la cour, avec le sujet de leurs
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2022-10-25">25 octobre 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=iqZcD6iWM0IC" />
+          <author />
+          <title source="Moreau">Liste des malcontents de la cour, avec le sujet de leurs
             plaintes.</title>
-					<pubPlace source="Moreau">Sans lieu</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure unit="page" quantity="7"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale de Lyon</institution>
-						<repository/>
-						<idno type="cote">SJ IF 247/188, 114</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace source="Moreau">Sans lieu</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure unit="page" quantity="7" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale de Lyon</institution>
+            <repository />
+            <idno type="cote">SJ IF 247/188, 114</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">2312. Liste des malcontents de la cour, avec le sujet de leurs
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">2312. Liste des malcontents de la cour, avec le sujet de leurs
           plaintes.(S. l. n. d.), 7 pages. Février 1649; car le chevalier de La Valette était encore
           en prison. Pauvre imitation d'une pièce publiée sous le même titre en 1623.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">liste</term>
-					<term type="genre">pamphlet</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_13" source="Moreau">
-					<p>Réception de l’envoyé de l’archiduc Léopold au parlement</p>
-					<date when="1649-02-19">1649-02-19</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-10-25" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-1
-        5
-         -¬.¬¬¬¬¬,„
-        DES
-        T E
-         r
-        
-        ¬4
-        MALCONTENS
-        R
-        T T
-        RT¬ T
-        ;
-        T7D
-        DE LACOVR,
-        1 H
-        AVEC LE SVIET DE LEVRS
-        D J
-        7 E T
-        7 E
-        TT T
-        PLAINIES
-        LM’esr auſi facile de nordre la Lune, cbraſſr la Tene,
-         e puiie la Mer, que de prodre en cee Lſle tous les Mal-cn
-         ens, qui le treuuent dans l ſiecle ou oous ſomn cs ce leiot uvou
-        or raconte i’nſny &amp; racour en peu de mots, ce qu ne peut x pli
-        quer qu auec ies hures enters. l n’y a chotc en la naure qu ne ſoit
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">liste</term>
+          <term type="genre">pamphlet</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_13" source="Moreau">
+          <p>Réception de l’envoyé de l’archiduc Léopold au parlement</p>
+          <date when="1649-02-19">1649-02-19</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-10-25" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />1
+        <lb />5
+        <lb /> -¬.¬¬¬¬¬,„
+        <lb />DES
+        <lb />T E
+        <lb /> r
+        <lb />
+        <lb rend="¬" break="no" />¬4
+        <lb />MALCONTENS
+        <lb />R
+        <lb />T T
+        <lb />RT¬ T
+        <lb />;
+        <lb />T7D
+        <lb />DE LACOVR,
+        <lb />1 H
+        <lb />AVEC LE SVIET DE LEVRS
+        <lb />D J
+        <lb />7 E T
+        <lb />7 E
+        <lb />TT T
+        <lb />PLAINIES
+        <lb />LM’esr auſi facile de nordre la Lune, cbraſſr la Tene,
+        <lb /> e puiie la Mer, que de prodre en cee Lſle tous les Mal-cn
+        <lb rend="¬" break="no" /> ens, qui le treuuent dans l ſiecle ou oous ſomn cs ce leiot uvou
+        <lb rend="¬" break="no" />or raconte i’nſny &amp; racour en peu de mots, ce qu ne peut x pli
+        <lb rend="¬" break="no" />quer qu auec ies hures enters. l n’y a chotc en la naure qu ne ſoit
         mal
-        contente de quel coſt́ que nous tourneons les ycux, nous ne ieno
-        trerons qu’n melcontnt ment genal par tont l vnvrs.
-        Le Cel ſe mécontente de la terre, &amp; ſen ble ſe plaindre, que pour tnt
-        de douces nſlnence qu’l nuoye par l’alp ct grcable de es a yon, lle
-        ne fait autre choſe que vomir ce qu’el’e a de vmn contre luy. Et d ft
-        les in quit des hommes ſont parvcnues à tel de gre, qu’en bret l Ccl
-        ſera conrraint, ou de ſe conmer ſoy-meſme pour conſomcr l’nivers,
-        ou de vcrſer rous les icux qu’l ontint en ſon loble, pour abuuer la ter
-        re dans ſes propre mal heurs &amp; l’enſeueli dans ſes propres
+        <lb rend="¬" break="no" />contente de quel coſt́ que nous tourneons les ycux, nous ne ieno
+        <lb rend="¬" break="no" />trerons qu’n melcontnt ment genal par tont l vnvrs.
+        <lb />Le Cel ſe mécontente de la terre, &amp; ſen ble ſe plaindre, que pour tnt
+        <lb />de douces nſlnence qu’l nuoye par l’alp ct grcable de es a yon, lle
+        <lb />ne fait autre choſe que vomir ce qu’el’e a de vmn contre luy. Et d ft
+        <lb />les in quit des hommes ſont parvcnues à tel de gre, qu’en bret l Ccl
+        <lb />ſera conrraint, ou de ſe conmer ſoy-meſme pour conſomcr l’nivers,
+        <lb />ou de vcrſer rous les icux qu’l ontint en ſon loble, pour abuuer la ter
+        <lb rend="¬" break="no" />re dans ſes propre mal heurs &amp; l’enſeueli dans ſes propres
         ruynes.
-        L’Hſl menr du ſeu ſe plainc du Ciel par ce que par la rapide vit eſle, il
-        l’empece d’abotr plus haut..
-        L’Air e plint du teu à caue que la moyenne reion cſt tousiours froi
-        de, &amp; de ces plintess’eſleuent quelque fos des troubles
+        <lb />L’Hſl menr du ſeu ſe plainc du Ciel par ce que par la rapide vit eſle, il
+        <lb />l’empece d’abotr plus haut..
+        <lb />L’Air e plint du teu à caue que la moyenne reion cſt tousiours froi
+        <lb rend="¬" break="no" />de, &amp; de ces plintess’eſleuent quelque fos des troubles
         eſtranges.
-        La Mer eplaint de’Ar, qui iournellement boulevetſant ſcs flots de
-        te peltes, l’attaque furieucmnt de ſcs fcudcs.
-         Les matelts ſc p’nent de la mer, &amp; la terrc ſe plaint de l’ocea, de
-        duy enuover de ſi rudes ſecouſes. Dref, ie ne trouve que meſcoutetemernt
-        &amp; déplafir par tout ou ie rourne les yeux.
-        Si ie pourmene ma v u par route la tertc ie n’y treuueray que ḿcon
-        contentement, que plaintes &amp; que reuolte, 
-         Le Sophy ſe plaint du Ture, le Ture des Polonnis, les Chreſtiens e
-        plainent d eux, &amp; eux- meſmes de leur mauuaiſe intelligence.
-        L’Atque ie plain de lAſie, l Aſie de l’Europe, l’Europe de l’Ame
-        riqu.
-        L’Iaiie ſe plaint des Eſpagnols, les Eſpagnols des Holandois , &amp; les
-        Ho’andois des autres.
-        Le Roy d’Epagne e plaint da Roy de France, &amp; le Roy de France
-        ſe plant de l’pagnel d’enua’ir à ſon delauantage ſur ſes voſias.
-        Searon meſme ſe plant à preſent qu’Appo’lon ayt eſtbly le Pa naſſe
-        urleſque ſur vne de es E’paules; &amp; que ſa tcſle l’ans ceſſc mclinée pour
-        ladorecr demeure fi long tenps en cette poftu: e.
-        Enſm pour conclure, c eſt vne viaye Comedie, chacun ſe plaint, cha
-        cun cſt nal content, &amp; ſemble n’y avoir auunremcd à tous les
+        <lb />La Mer eplaint de’Ar, qui iournellement boulevetſant ſcs flots de
+        <lb />te peltes, l’attaque furieucmnt de ſcs fcudcs.
+        <lb /> Les matelts ſc p’nent de la mer, &amp; la terrc ſe plaint de l’ocea, de
+        <lb />duy enuover de ſi rudes ſecouſes. Dref, ie ne trouve que meſcoutetemernt
+        <lb />&amp; déplafir par tout ou ie rourne les yeux.
+        <lb />Si ie pourmene ma v u par route la tertc ie n’y treuueray que ḿcon
+        <lb rend="¬" break="no" />contentement, que plaintes &amp; que reuolte, <pb n="2" />
+        <lb /> Le Sophy ſe plaint du Ture, le Ture des Polonnis, les Chreſtiens e
+        <lb />plainent d eux, &amp; eux- meſmes de leur mauuaiſe intelligence.
+        <lb />L’Atque ie plain de lAſie, l Aſie de l’Europe, l’Europe de l’Ame
+        <lb rend="¬" break="no" />riqu.
+        <lb />L’Iaiie ſe plaint des Eſpagnols, les Eſpagnols des Holandois , &amp; les
+        <lb />Ho’andois des autres.
+        <lb />Le Roy d’Epagne e plaint da Roy de France, &amp; le Roy de France
+        <lb />ſe plant de l’pagnel d’enua’ir à ſon delauantage ſur ſes voſias.
+        <lb />Searon meſme ſe plant à preſent qu’Appo’lon ayt eſtbly le Pa naſſe
+        <lb />urleſque ſur vne de es E’paules; &amp; que ſa tcſle l’ans ceſſc mclinée pour
+        <lb />ladorecr demeure fi long tenps en cette poftu: e.
+        <lb />Enſm pour conclure, c eſt vne viaye Comedie, chacun ſe plaint, cha
+        <lb rend="¬" break="no" />cun cſt nal content, &amp; ſemble n’y avoir auunremcd à tous les
         meſcon
-        tentemens. ais quelquesplaines que taye entendues en tous les
+        <lb rend="¬" break="no" />tentemens. ais quelquesplaines que taye entendues en tous les
         endrois
-        ou cuoſité mayt voulu porter, ie ne ſus particulerement voulu ar
-        reſter en rance, pour y voir la face exterieure du pays conaſte ce
+        <lb />ou cuoſité mayt voulu porter, ie ne ſus particulerement voulu ar
+        <lb rend="¬" break="no" />reſter en rance, pour y voir la face exterieure du pays conaſte ce
         qui
-        s’y praque &amp; doner mon ;ugementſur les duerſes ta cçons de fare que i’y
-        ay vcuües.
-        Le Roy premierement ſe plaint &amp; iuſtement de tant d’Edits qu’on luy
-        ft inuener pour ſmcharger ſon pauure peuple, &amp; eſt marry de voir
-        tant de ſanſues &amp; tant de parti zans qu ſont continellemen à ſes oreil
-        lles, pour luy perſua ’er la verifcation de nouuelles &amp;
+        <lb />s’y praque &amp; doner mon ;ugementſur les duerſes ta cçons de fare que i’y
+        <lb />ay vcuües.
+        <lb />Le Roy premierement ſe plaint &amp; iuſtement de tant d’Edits qu’on luy
+        <lb />ft inuener pour ſmcharger ſon pauure peuple, &amp; eſt marry de voir
+        <lb />tant de ſanſues &amp; tant de parti zans qu ſont continellemen à ſes oreil
+        <lb rend="¬" break="no" />lles, pour luy perſua ’er la verifcation de nouuelles &amp;
         nouuelles inuen
-        tions peritieuſes à ſon Ryaume, &amp; ſe plaint auſli qut ſes
+        <lb rend="¬" break="no" />tions peritieuſes à ſon Ryaume, &amp; ſe plaint auſli qut ſes
         Courtiſans ne
-        ſont amais ſaouls, que depuis trois ans il a fait d’eyxceſfucs dépences, &amp;
-        que la pluſpart de ſes Capitaines n’ont rien empo:t́, que les Financiers
-        ont leurs coffres plains, &amp; cependant que le domaine, eſt aléné.
-        De dire que monſieur de C onty n’eſt pas au nombre des mal. contens,
-        ce ſeroit vn blme vniuerſel: car il n’ya perſone qui ne ſca che que les hi
-        ſeres du peuple &amp; l’irterreſt du Royaume n’ait eſté le
+        <lb />ſont amais ſaouls, que depuis trois ans il a fait d’eyxceſfucs dépences, &amp;
+        <lb />que la pluſpart de ſes Capitaines n’ont rien empo:t́, que les Financiers
+        <lb />ont leurs coffres plains, &amp; cependant que le domaine, eſt aléné.
+        <lb />De dire que monſieur de C onty n’eſt pas au nombre des mal. contens,
+        <lb />ce ſeroit vn blme vniuerſel: car il n’ya perſone qui ne ſca che que les hi
+        <lb rend="¬" break="no" />ſeres du peuple &amp; l’irterreſt du Royaume n’ait eſté le
         principal ſujet de
-        ſes meſcontentemens.
-        Monſieur de Lon gueville outre l’opreſſion publique-a ſuiet d’eſtre mal
-        conten puis qu’apres auoir ouuert le chen à la concluſon d’vne paix
-        gencrale ( ſelon l’ordre de ſa ieſté Regente) &amp; ayant reſte pour ce ſu
-        iet deux ans à b nſter. o a refuſé tous les aduantages qu’il avoit
+        <lb />ſes meſcontentemens.
+        <lb />Monſieur de Lon gueville outre l’opreſſion publique-a ſuiet d’eſtre mal
+        <lb rend="¬" break="no" />conten puis qu’apres auoir ouuert le chen à la concluſon d’vne paix
+        <lb />gencrale ( ſelon l’ordre de ſa ieſté Regente) &amp; ayant reſte pour ce ſu
+        <lb rend="¬" break="no" />iet deux ans à b nſter. o a refuſé tous les aduantages qu’il avoit
         obre
-        nus pour le ſoulaemenr de la France.
-        naonſieur d’Ebeaf y eſt trop intereſſé, pour n’eſtre pas de la partie, le
-        refus de l’employ que ſon courage merite, &amp; vn plein douaire que ſa iuſtice
-        denande, l’obligent aſſez à ſeplaindre de cette iniuſtice.
-        Vne priſon de trois années iointe aux fauſſes ac uſations que l’on a im
-        putées à l’inocence de monſicur de Beaufort, l’excite aſſe à venir
+        <lb rend="¬" break="no" />nus pour le ſoulaemenr de la France.
+        <lb />naonſieur d’Ebeaf y eſt trop intereſſé, pour n’eſtre pas de la partie, le
+        <lb />refus de l’employ que ſon courage merite, &amp; vn plein douaire que ſa iuſtice
+        <lb />denande, l’obligent aſſez à ſeplaindre de cette iniuſtice.
+        <lb />Vne priſon de trois années iointe aux fauſſes ac uſations que l’on a im
+        <lb rend="¬" break="no" />putées à l’inocence de monſicur de Beaufort, l’excite aſſe à venir
         y pren
-        dre ſa place, &amp; monſeur de la mothe Houdencourt, que l’os a
+        <lb rend="¬" break="no" />dre ſa place, &amp; monſeur de la mothe Houdencourt, que l’os a
         traté de
-        cette fat on, n’en eſt pas moins exerpt, quond meſme on luy-rendroitſa
-        Duché de Cardonne. Et quelque auis &amp; conſeil que l’on faſſe cousrir ſus
-        ce ſuiet, ie ne erois pas que monſicur de Bouillon ne ſoit fſuſehé, ou de la
-        Principauté de Sedé, ou du payemét des penſiõs qu’on lui auois ptonalſes. 
-         ¬ ¬
-         Si l’on refuſe à Monſieur de Longueville va Eſftat de la Couronne,
+        <lb />cette fat on, n’en eſt pas moins exerpt, quond meſme on luy-rendroitſa
+        <lb />Duché de Cardonne. Et quelque auis &amp; conſeil que l’on faſſe cousrir ſus
+        <lb />ce ſuiet, ie ne erois pas que monſicur de Bouillon ne ſoit fſuſehé, ou de la
+        <lb />Principauté de Sedé, ou du payemét des penſiõs qu’on lui auois ptonalſes. <pb n="3" />
+        <lb /> ¬ ¬
+        <lb rend="¬" break="no" /> Si l’on refuſe à Monſieur de Longueville va Eſftat de la Couronne,
         le.
-        Go uuernement du Haure de Geace, la ſuruiuance de ſes dignitez, &amp; le
-        ou la gement du peuple. Il ciendra lieu de doable mal-e oncent.
-        Nous y aiouſterons monſieur de Matignon &amp; mônſieur de Eeuueron,
-        fi oa leur denie la charge de uc &amp; Pai de Francequ’ils merite aſſe z
-        pour les ſeruices qu’ls ont rendus à l’Eflat.
-        S’il m’eſt permirs d’aller de Paris à la Cour, quoy quelespaſſages ſoyen
-        bouchze à ceux qut ont bonne m nne, iy erouuerois encor vne infnite
-        e al cantens.
-        ET de fat, LE ROY ſe meſcont ente ſort de ce que l’on l’empeſche
-        de revenir en ſa bonne ville de Paris, il trouue mauuais les faux rapores
-        que l’on fait au Coneil, &amp; ſa Maieſte ſçat bien que les Paſiens, &amp; ge
-        neralem.nt toute la France crien VIVE LE RO, puſque laurs
-        Drapeu ont pour Deviſe, RE G E ſ ioſtranm qan irms, nous e cher
-        chons, car il elt noſtre SOVVR AI N, &amp; ſo abſence nous meſ
-        contente tous.
-        Monſi:ur Le Duc d’Anjou eſt courouſſé de ce l’on ne veut pas qu’il
-        parle à ſon P’ent Papa, pour ’cnt retenir auec luy de ſon retous à Paris.
-        Sa aaieſté Regente facbée d’eſtre contrainte de chaſſer vn de ſes mi
-        niſtres pour l’enorné de les ctines.
-         Son Alteſſe Royalle ſe plaint d eſtre ainſi etentt.!
-        Mdame la Ducheſſe d’Orleans eſt bien fachee de vor les affaires aia¬i
-        brouillees, cetre bonne Princeſſe eſt tousiours enpriese pour inuaquer le
-        5auueur, &amp; apporte vn grand ſoin pour moyeaners vn bon accomode
-        ment entre les deux part1s
-         Mademoelle eſt auſſi ma contonte de voir ſouffrir les bons &amp; fidel
-        les Prançois, que ſi elle enduroit elle meſme les pelnes qu’on leur
+        <lb />Go uuernement du Haure de Geace, la ſuruiuance de ſes dignitez, &amp; le
+        <lb />ou la gement du peuple. Il ciendra lieu de doable mal-e oncent.
+        <lb />Nous y aiouſterons monſieur de Matignon &amp; mônſieur de Eeuueron,
+        <lb />fi oa leur denie la charge de uc &amp; Pai de Francequ’ils merite aſſe z
+        <lb />pour les ſeruices qu’ls ont rendus à l’Eflat.
+        <lb />S’il m’eſt permirs d’aller de Paris à la Cour, quoy quelespaſſages ſoyen
+        <lb />bouchze à ceux qut ont bonne m nne, iy erouuerois encor vne infnite
+        <lb />e al cantens.
+        <lb />ET de fat, LE ROY ſe meſcont ente ſort de ce que l’on l’empeſche
+        <lb />de revenir en ſa bonne ville de Paris, il trouue mauuais les faux rapores
+        <lb />que l’on fait au Coneil, &amp; ſa Maieſte ſçat bien que les Paſiens, &amp; ge
+        <lb rend="¬" break="no" />neralem.nt toute la France crien VIVE LE RO, puſque laurs
+        <lb />Drapeu ont pour Deviſe, RE G E ſ ioſtranm qan irms, nous e cher
+        <lb rend="¬" break="no" />chons, car il elt noſtre SOVVR AI N, &amp; ſo abſence nous meſ
+        <lb rend="¬" break="no" />contente tous.
+        <lb />Monſi:ur Le Duc d’Anjou eſt courouſſé de ce l’on ne veut pas qu’il
+        <lb />parle à ſon P’ent Papa, pour ’cnt retenir auec luy de ſon retous à Paris.
+        <lb />Sa aaieſté Regente facbée d’eſtre contrainte de chaſſer vn de ſes mi
+        <lb rend="¬" break="no" />niſtres pour l’enorné de les ctines.
+        <lb /> Son Alteſſe Royalle ſe plaint d eſtre ainſi etentt.!
+        <lb />Mdame la Ducheſſe d’Orleans eſt bien fachee de vor les affaires aia¬i
+        <lb />brouillees, cetre bonne Princeſſe eſt tousiours enpriese pour inuaquer le
+        <lb />5auueur, &amp; apporte vn grand ſoin pour moyeaners vn bon accomode
+        <lb />ment entre les deux part1s
+        <lb /> Mademoelle eſt auſſi ma contonte de voir ſouffrir les bons &amp; fidel
+        <lb rend="¬" break="no" />les Prançois, que ſi elle enduroit elle meſme les pelnes qu’on leur
         fait
-        ſouffrir.
-        Le Pince de Condé eſt tres mal-content de s’eſtre inopiaément
-        reuué engagé dans vn party ſi mniuſte, ouù il eſt battu de ſon petit Frere.
-        Madame la Princeſſe s’atriſte de ce que monſieur le Pince ſe met en
-        de trop grand perils pour faire mal aux Franços, qui n’ont iamais eſté
-        ſes ennemis.
-         Le Cardinal Mazarin fait de ſon abſence vn pronoſtic aſſaré deſon meſ
-        contenrement SES NECES fachees d’vn ſi funſte reuers de la
-        Foreune ayment mieux retourner ſe marier à ſainct P:erre de Rome qu’à
-        faintPerre des Chams.
-        Laperte d’vn mary, d’v frere &amp; d’vn conſin, ce ſont de trop
+        <lb />ſouffrir.
+        <lb />Le Pince de Condé eſt tres mal-content de s’eſtre inopiaément
+        <lb />reuué engagé dans vn party ſi mniuſte, ouù il eſt battu de ſon petit Frere.
+        <lb />Madame la Princeſſe s’atriſte de ce que monſieur le Pince ſe met en
+        <lb />de trop grand perils pour faire mal aux Franços, qui n’ont iamais eſté
+        <lb />ſes ennemis.
+        <lb /> Le Cardinal Mazarin fait de ſon abſence vn pronoſtic aſſaré deſon meſ
+        <lb rend="¬" break="no" />contenrement SES NECES fachees d’vn ſi funſte reuers de la
+        <lb />Foreune ayment mieux retourner ſe marier à ſainct P:erre de Rome qu’à
+        <lb />faintPerre des Chams.
+        <lb rend="¬" break="no" />Laperte d’vn mary, d’v frere &amp; d’vn conſin, ce ſont de trop
         funeſtes
-        obiets pour ne pas affl ger la Ducheſſe dBguillon.
-        1 eœrofus du ounernemier de Normahdie auCointee Harcourt (que
-        mefſieùts es Normans ont ſurnomme le Conme ade Hlapeo) eſt le fu:et de
-        .
-        l pluvulaire de ſon meſerintentemient.
-        ’L’anpriſonnement du Mareſchal d Loſpiral ſur lba Remonſtranee qu’il
-        faAſoit la-eyne dela Iuſtice demoarmes, le met au nombte des mal
-        ! 
-        ec ntens. Ie Te llier, oant ſa maree abas veut y eſtre introduit, &amp; Iolly
-        on eate, eſt elleuent affligé, de ce ſoudain chanemant d’affai
-        1e. ul ioit 1res-aie ’eſlre en, vn mei leur oemploy Ou en de
-        imeurt auec ion maiſt, e ſan reſcontontement
-        .
-        LS pneox-deſlcins lu Clevaler de la Valette luy ſont trouluer ſon
-        meſontetemnt dans obſeurité d’vne ’riſon.
-        Il es Mal- heureux iuccez des affates de Moſieur de Guiſe, à Naples
-        ’arriées par es Fourbes du Ca dnal, luy denrcnt lieu d ſe plaindre,
-        les Earols mecontentẽt cetrNob e Maſon de ne le pas laiſſ-r veni
-        en rance, oar le enger dutt que luy a fait ce pe fide arin.
-        Le Dur de Mercœure à raiſon d’eſtre mal-ontent, eſlnt oyſif, pe n
-        dant qute ion Frcre fait reuiure en ſoy les Heros de ſa Race.
-         Duc Durez eſt bien embrou ille daus le doute du party qu’il doit
-        ſuiure.
-         Le Maeſe hl de Gramont eſt mal content de voir que ſes proicts rouſ
-        iſſ ns uiſi mal les vns que les autres,.
-        Le Marechal de Villeroy ſeſplant que ſon pouuoir eſt trop fo ble pour
-        obtenir les pretentious que son gendre eſperoit remporter au preiudice
-        de mouſieur e Due d’Elbeuf.
-        Le Comte d’Alais, Sa emme, &amp; Sa Suitre treuue dans ſa prſou vn ſu
-        iet de triſtſſe.
-        Quoy que la R I V I ERE cpurre jouſiours, ou reut limter ſa eour
-        ſe pour le metre an Liſte.
-         La Milleraye n’a point quté́ le li ct voyant ſes affaires en ſi mauuais
-        eſtat, le Telhier le ſeconde dans ſa peur, &amp; ’ubeu tit vne tierce auee
-        ſes mal-contes.
-        . Le Mareſchal de Rantzau eſt mal conent de ce cue l’on l’a démis de ſes
-        charges, ſans avi voulu entendre cn ſes eeuſes,ny le recevou en ſes oſ
-        fres &amp; prooſitions: cer il croyoit, que ſi on l’eut examiń de prés, qu’il
-        ſe fupurgée l’opnton qu’on auot mbu de ſes pratiques.
-         Le Chancellier vu itoit eſtre aſſeoré d’eſtre enſevely dans les bou ës
-         de ſaint Gemain, ne voulant lus de celles de Paris.
-        Taeonhaſte Renaudot. upon mé LE GAZETTIE R, à cau
-        e de fon e xercice, eſt des plus mecontens, encor que Ma zasin
+        <lb />obiets pour ne pas affl ger la Ducheſſe dBguillon.
+        <lb />1 eœrofus du ounernemier de Normahdie auCointee Harcourt (que
+        <lb />mefſieùts es Normans ont ſurnomme le Conme ade Hlapeo) eſt le fu:et de
+        <lb />.
+        <lb rend="¬" break="no" />l pluvulaire de ſon meſerintentemient.
+        <lb />’L’anpriſonnement du Mareſchal d Loſpiral ſur lba Remonſtranee qu’il
+        <lb />faAſoit la-eyne dela Iuſtice demoarmes, le met au nombte des mal
+        <lb rend="¬" break="no" />! <pb n="4" />
+        <lb />ec ntens. Ie Te llier, oant ſa maree abas veut y eſtre introduit, &amp; Iolly
+        <lb />on eate, eſt elleuent affligé, de ce ſoudain chanemant d’affai
+        <lb rend="¬" break="no" />1e. ul ioit 1res-aie ’eſlre en, vn mei leur oemploy Ou en de
+        <lb />imeurt auec ion maiſt, e ſan reſcontontement
+        <lb />.
+        <lb />LS pneox-deſlcins lu Clevaler de la Valette luy ſont trouluer ſon
+        <lb />meſontetemnt dans obſeurité d’vne ’riſon.
+        <lb />Il es Mal- heureux iuccez des affates de Moſieur de Guiſe, à Naples
+        <lb />’arriées par es Fourbes du Ca dnal, luy denrcnt lieu d ſe plaindre,
+        <lb />les Earols mecontentẽt cetrNob e Maſon de ne le pas laiſſ-r veni
+        <lb />en rance, oar le enger dutt que luy a fait ce pe fide arin.
+        <lb />Le Dur de Mercœure à raiſon d’eſtre mal-ontent, eſlnt oyſif, pe n
+        <lb />dant qute ion Frcre fait reuiure en ſoy les Heros de ſa Race.
+        <lb /> Duc Durez eſt bien embrou ille daus le doute du party qu’il doit
+        <lb />ſuiure.
+        <lb /> Le Maeſe hl de Gramont eſt mal content de voir que ſes proicts rouſ
+        <lb />iſſ ns uiſi mal les vns que les autres,.
+        <lb />Le Marechal de Villeroy ſeſplant que ſon pouuoir eſt trop fo ble pour
+        <lb />obtenir les pretentious que son gendre eſperoit remporter au preiudice
+        <lb />de mouſieur e Due d’Elbeuf.
+        <lb />Le Comte d’Alais, Sa emme, &amp; Sa Suitre treuue dans ſa prſou vn ſu
+        <lb rend="¬" break="no" />iet de triſtſſe.
+        <lb />Quoy que la R I V I ERE cpurre jouſiours, ou reut limter ſa eour
+        <lb rend="¬" break="no" />ſe pour le metre an Liſte.
+        <lb /> La Milleraye n’a point quté́ le li ct voyant ſes affaires en ſi mauuais
+        <lb />eſtat, le Telhier le ſeconde dans ſa peur, &amp; ’ubeu tit vne tierce auee
+        <lb />ſes mal-contes.
+        <lb />. Le Mareſchal de Rantzau eſt mal conent de ce cue l’on l’a démis de ſes
+        <lb />charges, ſans avi voulu entendre cn ſes eeuſes,ny le recevou en ſes oſ
+        <lb />fres &amp; prooſitions: cer il croyoit, que ſi on l’eut examiń de prés, qu’il
+        <lb />ſe fupurgée l’opnton qu’on auot mbu de ſes pratiques.
+        <lb /> Le Chancellier vu itoit eſtre aſſeoré d’eſtre enſevely dans les bou ës
+        <lb /> de ſaint Gemain, ne voulant lus de celles de Paris.
+        <lb />Taeonhaſte Renaudot. upon mé LE GAZETTIE R, à cau
+        <lb rend="¬" break="no" />e de fon e xercice, eſt des plus mecontens, encor que Ma zasin
         luy-ay
-        pomis beaucoup, ponr l’obhigede demeurer à ſaiat German ,eſtan
-        bien inſorné que ſes Comms neluy vedent pas ta de menerieçom
-        me ils aifoyet du temps des troubUlc de Nples, &amp; que le
+        <lb />pomis beaucoup, ponr l’obhigede demeurer à ſaiat German ,eſtan
+        <lb />bien inſorné que ſes Comms neluy vedent pas ta de menerieçom
+        <lb rend="¬" break="no" />me ils aifoyet du temps des troubUlc de Nples, &amp; que le
         Chancelliet
-        n’ pas le pouair de luy ſedler ſes dépeſches pour l’ouuerture u,ont
-        piété́, ce q luy donne vn grand déplaſr ds’ ſlre fiez à des
+        <lb />n’ pas le pouair de luy ſedler ſes dépeſches pour l’ouuerture u,ont
+        <lb rend="¬" break="no" />piété́, ce q luy donne vn grand déplaſr ds’ ſlre fiez à des
         perſonnes
-        qui ſont ſuiets aux diſgraces :e, ly eonel e reyenir vn ſamey- pus
-        - que c’eſt vn lour f hees, anſi qu’il le diloit ces iouts paſſe dasn
-         Exraordinaire qu’il vapd.. le dexié́me ious le Novenbre .
-        Le pauvregarçon......, yonne, tremble ſans ceſſe, d’entgnr;
-        dire aux ens d Maiarin ſon maiſtre qu’ils l veulent qui er, péyayant
-        bien-oſt ſa chute,il aprehende de levenir vn luit des rilées a tajps.
-        Bautru 
-        Baatr, ne peut eftre bien-aiſe de ctte diſcorde, car il n’aur pas les
-        penſious que ces plaſanteries luy auoyent fait adiuiger par ce miniſtre
-        eſtranger, qui an a ſté idolatre, comme chose propre à son naturel.
-        De taconter par le mnu les naéconencmnens de chaque particulier qui
-        ſuiuent la Cour, les Monopoleurs y ſont tous en corps ou eu eſprit, &amp; ce
-        ſeroit ourdir vne taille de longue durée.
-        Le Parlement n’eſt pas bien appoinréa Conſeil, le premiertaſche a re
-        metere la France e ſa premaiere ſplendeur, &amp; l’autre veut faire
+        <lb />qui ſont ſuiets aux diſgraces :e, ly eonel e reyenir vn ſamey- pus
+        <lb />- que c’eſt vn lour f hees, anſi qu’il le diloit ces iouts paſſe dasn
+        <lb /> Exraordinaire qu’il vapd.. le dexié́me ious le Novenbre .
+        <lb rend="¬" break="no" />Le pauvregarçon......, yonne, tremble ſans ceſſe, d’entgnr;
+        <lb />dire aux ens d Maiarin ſon maiſtre qu’ils l veulent qui er, péyayant
+        <lb />bien-oſt ſa chute,il aprehende de levenir vn luit des rilées a tajps.
+        <lb />Bautru <pb n="5" />
+        <lb />Baatr, ne peut eftre bien-aiſe de ctte diſcorde, car il n’aur pas les
+        <lb />penſious que ces plaſanteries luy auoyent fait adiuiger par ce miniſtre
+        <lb />eſtranger, qui an a ſté idolatre, comme chose propre à son naturel.
+        <lb />De taconter par le mnu les naéconencmnens de chaque particulier qui
+        <lb />ſuiuent la Cour, les Monopoleurs y ſont tous en corps ou eu eſprit, &amp; ce
+        <lb />ſeroit ourdir vne taille de longue durée.
+        <lb />Le Parlement n’eſt pas bien appoinréa Conſeil, le premiertaſche a re
+        <lb rend="¬" break="no" />metere la France e ſa premaiere ſplendeur, &amp; l’autre veut faire
         veri fer de
-        nouucau x Edits contre les remontrances des mieux ſencez du Royau
-        meC’eſt vn mal-heur deſplorable à vn Eſtat depuis que les valets
+        <lb />nouucau x Edits contre les remontrances des mieux ſencez du Royau
+        <lb rend="¬" break="no" />meC’eſt vn mal-heur deſplorable à vn Eſtat depuis que les valets
         veules
-         aire les maiûtres.
-        Depuis que les Fiaanciers ont appris à plumer ils quitent la chaſſe des
-        Sanglier des Cerfs pour s’adonsier à la volerie&amp; de fait, ont a veu qu’en
-        moins de deux ans, ils ont volé6plus haut que Dedale leur pere, ſon
-        minence ne veut pſus cuer de ſa naain aucun des Sangliers de France,
-        comme il a fait cy-deuant ou rapport de ſon Panegyriſte Theophraſte
-        de la Gazettiee, cét actionſi héroique fut miſe dans la Gazette dés le
-        Samedy en ſuivat, d’ou l’on peut bien i’ger à preſent que ce chetif
-        quancre auroit plus d’adreſſe à eſtre Charutir que miniſtre d’Eſtat, &amp;
-        ceux quai oat is ſa généalogie au iour ont tort de n’avoir pas dt que ſ
-        grand mere eftoit la meilleur crieuſe de boudin, qui ayt iamais cntré
-        dans Parlersae. C’eſt pour qaoy cét habille homas a montré́ tant de dox
-        aérité à aer vs oochon en France.
-         Mais à la fin Icare, eſt tousioars Ieare, la preſormption eſt queſquefois
-        csuſe de noftre mal- henr; eſtis quen appelldant ouones Ioes.
-        C’eſt à dire, out le monde en prend Iupiter à teſmoia.
-        Ve ſeale conſolatioo teſte à eeux qui ſoas fftge de aette maladie’âà,
-        qe quand on les diſgratie, leurs coff oſont tous ours plains &amp; ainſi be.
-        i ganaioi, vaut mieux que rien du tout, le conreant eſt meillcur que le
-        coenss Pource qui eſt du reſte des financicrs, ils ſont mal contons de
-        ce que tout le aaonde aboye apts oux, &amp; de fair, o a tort de lenr enuies
-        vaos qu’ile rongene il ya ſi long-temps, &amp; ou qui déclamez contre eu
-        i vous ee en leurs places vous pouriez faire pis.
-        Quoy gue ce ſoit, le meſcontentemene qu’ils ont eſt fi grand, qu’o
-        ien, qu’ils ſe ſont liguez auec deux ou trois de l Vnivefité pour im
-        pronuer la d finitioa de Platon qui dit que bon eſt anial implae
+        <lb /> aire les maiûtres.
+        <lb />Depuis que les Fiaanciers ont appris à plumer ils quitent la chaſſe des
+        <lb />Sanglier des Cerfs pour s’adonsier à la volerie&amp; de fait, ont a veu qu’en
+        <lb />moins de deux ans, ils ont volé6plus haut que Dedale leur pere, ſon
+        <lb />minence ne veut pſus cuer de ſa naain aucun des Sangliers de France,
+        <lb />comme il a fait cy-deuant ou rapport de ſon Panegyriſte Theophraſte
+        <lb />de la Gazettiee, cét actionſi héroique fut miſe dans la Gazette dés le
+        <lb />Samedy en ſuivat, d’ou l’on peut bien i’ger à preſent que ce chetif
+        <lb />quancre auroit plus d’adreſſe à eſtre Charutir que miniſtre d’Eſtat, &amp;
+        <lb />ceux quai oat is ſa généalogie au iour ont tort de n’avoir pas dt que ſ
+        <lb />grand mere eftoit la meilleur crieuſe de boudin, qui ayt iamais cntré
+        <lb />dans Parlersae. C’eſt pour qaoy cét habille homas a montré́ tant de dox
+        <lb rend="¬" break="no" />aérité à aer vs oochon en France.
+        <lb /> Mais à la fin Icare, eſt tousioars Ieare, la preſormption eſt queſquefois
+        <lb />csuſe de noftre mal- henr; eſtis quen appelldant ouones Ioes.
+        <lb />C’eſt à dire, out le monde en prend Iupiter à teſmoia.
+        <lb />Ve ſeale conſolatioo teſte à eeux qui ſoas fftge de aette maladie’âà,
+        <lb />qe quand on les diſgratie, leurs coff oſont tous ours plains &amp; ainſi be.
+        <lb />i ganaioi, vaut mieux que rien du tout, le conreant eſt meillcur que le
+        <lb />coenss Pource qui eſt du reſte des financicrs, ils ſont mal contons de
+        <lb />ce que tout le aaonde aboye apts oux, &amp; de fair, o a tort de lenr enuies
+        <lb />vaos qu’ile rongene il ya ſi long-temps, &amp; ou qui déclamez contre eu
+        <lb />i vous ee en leurs places vous pouriez faire pis.
+        <lb />Quoy gue ce ſoit, le meſcontentemene qu’ils ont eſt fi grand, qu’o
+        <lb />ien, qu’ils ſe ſont liguez auec deux ou trois de l Vnivefité pour im
+        <lb rend="¬" break="no" />pronuer la d finitioa de Platon qui dit que bon eſt anial implae
         bp,
-        c’eſt à dire, l’bomos aſût vn ammal à dex pieds ſas lamos, e qu’ils veu
-        let reuetſer eette Phliloſohie par epérience: car ſur tout eſûans
+        <lb />c’eſt à dire, l’bomos aſût vn ammal à dex pieds ſas lamos, e qu’ils veu
+        <lb rend="¬" break="no" />let reuetſer eette Phliloſohie par epérience: car ſur tout eſûans
         ho
-        nes, ils ne veulent encourir le blaſnae d’etre appelle inplnes,
+        <lb rend="¬" break="no" />nes, ils ne veulent encourir le blaſnae d’etre appelle inplnes,
         ſans phi
-        mos, ear fi iaſques iey ils n’euſſent point en’de plumes, ls
+        <lb rend="¬" break="no" />mos, ear fi iaſques iey ils n’euſſent point en’de plumes, ls
         n’euſent volé
-        i hue, ny entré auane dans es treſonr du Roy.
-         Feſlx qoi paeit veroo cognoſere eanſa.
-         C’eſt à dire, Huret oeluy qui a peu oonnoiſtre les caaſes des choe.
-         Mos voyons les Cours ’rmy-partis &amp; nal-ootees de tait d’Edi;
-        qu’on leur a uulu faireveriſfie.Et les BourgooisdeParas sõr aroemye 
-        6
-         dl’abſence de leur Roy, &amp; pomair ſcauoir le rombre des meſcoutens il
-        faudroit aller ce maiions en ions.
-        Pour moy, il faut que ie confſte, que tant de partiſans &amp; inventeurs
-        d’Edits deutoyent eſlre repus, ce ſont cdes on;eurs de peuples, des ſan¬
-        Sües furieuſes qui ont ſuccé ce qu’ly a de bon dans ce Ryaune, i’s
+        <lb />i hue, ny entré auane dans es treſonr du Roy.
+        <lb /> Feſlx qoi paeit veroo cognoſere eanſa.
+        <lb /> C’eſt à dire, Huret oeluy qui a peu oonnoiſtre les caaſes des choe.
+        <lb /> Mos voyons les Cours ’rmy-partis &amp; nal-ootees de tait d’Edi;
+        <lb />qu’on leur a uulu faireveriſfie.Et les BourgooisdeParas sõr aroemye <pb n="6" />
+        <lb />6
+        <lb /> dl’abſence de leur Roy, &amp; pomair ſcauoir le rombre des meſcoutens il
+        <lb />faudroit aller ce maiions en ions.
+        <lb />Pour moy, il faut que ie confſte, que tant de partiſans &amp; inventeurs
+        <lb />d’Edits deutoyent eſlre repus, ce ſont cdes on;eurs de peuples, des ſan¬
+        <lb rend="¬" break="no" />Sües furieuſes qui ont ſuccé ce qu’ly a de bon dans ce Ryaune, i’s
         ma
-        nient tout lrget &amp; toutes les fnanccs, re çoiuent tous les
+        <lb rend="¬" break="no" />nient tout lrget &amp; toutes les fnanccs, re çoiuent tous les
         deuiers, &amp; ie
-        orgent du trauail dc mle &amp; nille pauures erſonnes qui n’ont point de
-        panpour ſuſtanter leur vie; ce ſont ces nobles voleurs qu cAulent tous
-        nos deſplaſirs.
-        Ne nat a il pom bien- toſt vn Hercnlle courageux, qui de ſa maſſué
-        écra ze cecs monltres h rmaphroits d’Eſtat, ſous la furie de sõ coproux?
-        Ne vcrrons nous iamais noſtre France, la texreur de tout l’vniucrs, &amp; l’vni
-        que ſoutient de toute la terre, qui de l eſclat brillant de ſes
+        <lb />orgent du trauail dc mle &amp; nille pauures erſonnes qui n’ont point de
+        <lb />panpour ſuſtanter leur vie; ce ſont ces nobles voleurs qu cAulent tous
+        <lb />nos deſplaſirs.
+        <lb />Ne nat a il pom bien- toſt vn Hercnlle courageux, qui de ſa maſſué
+        <lb />écra ze cecs monltres h rmaphroits d’Eſtat, ſous la furie de sõ coproux?
+        <lb />Ne vcrrons nous iamais noſtre France, la texreur de tout l’vniucrs, &amp; l’vni
+        <lb rend="¬" break="no" />que ſoutient de toute la terre, qui de l eſclat brillant de ſes
         coura geuſes
-        entrcpriſes a eſpouuenté lupiter dans le Cel, Neptune dans l’occean, &amp;
-        Pluton aux creux de ſes Cauernes, reprendre ſes anciennes forces, &amp;
-        ſoit reſtit üee en ſa premiere Maieſté. Sera- il dit qu’vn oyaume ſi floriſ
-        ſant ſoit vollé par vne bande effrenée de Corſares, vn nombre
+        <lb />entrcpriſes a eſpouuenté lupiter dans le Cel, Neptune dans l’occean, &amp;
+        <lb />Pluton aux creux de ſes Cauernes, reprendre ſes anciennes forces, &amp;
+        <lb />ſoit reſtit üee en ſa premiere Maieſté. Sera- il dit qu’vn oyaume ſi floriſ
+        <lb rend="¬" break="no" />ſant ſoit vollé par vne bande effrenée de Corſares, vn nombre
         infiny de
-        Pyrares &amp; eſcumeursaillent inceſſnment &amp; e ffront ément à l’auance ment
-        de ſa ruyne? &amp; desbandent tous les reſſors de leurs pcrnieieuſes inuentions
-        pour enleaer ſes threſors &amp; ſes forces, la deſpou iller de cette maſle i
-        gueur dont elle s’armoit autres-fois &amp; pour l’anacomiſer en
+        <lb />Pyrares &amp; eſcumeursaillent inceſſnment &amp; e ffront ément à l’auance ment
+        <lb />de ſa ruyne? &amp; desbandent tous les reſſors de leurs pcrnieieuſes inuentions
+        <lb />pour enleaer ſes threſors &amp; ſes forces, la deſpou iller de cette maſle i
+        <lb rend="¬" break="no" />gueur dont elle s’armoit autres-fois &amp; pour l’anacomiſer en
         toutes ſes par
-        ties ? N’eſt-ce pas aſſez, depuis la mort dé́plorable de Louis X
+        <lb rend="¬" break="no" />ties ? N’eſt-ce pas aſſez, depuis la mort dé́plorable de Louis X
         III.
-        &amp; que durant le bas aage de noſtre inuincble LOV1S, cette confu
-        ſion s’eſt inſinuece par toute l’eſtendue de ce Royaume. Et cette
+        <lb />&amp; que durant le bas aage de noſtre inuincble LOV1S, cette confu
+        <lb rend="¬" break="no" />ſion s’eſt inſinuece par toute l’eſtendue de ce Royaume. Et cette
         monar.
-        chie a eſté́ la proye, tantoſt des fauoris, tantoſt des
+        <lb rend="¬" break="no" />chie a eſté́ la proye, tantoſt des fauoris, tantoſt des
         antropophges,
-        qu s’eſtoient meſmes nourris de ſon laict ? Qels mal heuts a-t’on veu
-        naſtrcs de ſes maudires inuentions, ou en ſonmes nous réduits ? Quelle
-        licence importune ſe donne-t’ils auiourd’huy en cet Eſtat.
-        Vous ſeuls d diuins oracles du Parlement, pouuez attaquer &amp; combatre
-        ces monltres, vous ſeuls pouuez eſtoutfer leurs deſſeins, la Iuſtice vous a
-        donné ſa naſſue pour terraſſer leurs ceimes, deffendons- nous contre ces
-        deuoreurs qui pillcnt ainſi nos biens à nos yeux, &amp; maſquent leurs en
-        trepres du nom du Roy qui ne reſpire que la Iuſtice, qui a pour ſes
+        <lb />qu s’eſtoient meſmes nourris de ſon laict ? Qels mal heuts a-t’on veu
+        <lb />naſtrcs de ſes maudires inuentions, ou en ſonmes nous réduits ? Quelle
+        <lb />licence importune ſe donne-t’ils auiourd’huy en cet Eſtat.
+        <lb />Vous ſeuls d diuins oracles du Parlement, pouuez attaquer &amp; combatre
+        <lb />ces monltres, vous ſeuls pouuez eſtoutfer leurs deſſeins, la Iuſtice vous a
+        <lb />donné ſa naſſue pour terraſſer leurs ceimes, deffendons- nous contre ces
+        <lb />deuoreurs qui pillcnt ainſi nos biens à nos yeux, &amp; maſquent leurs en
+        <lb rend="¬" break="no" />trepres du nom du Roy qui ne reſpire que la Iuſtice, qui a pour ſes
         com
-        pagnes l douceur &amp; ’nocence, qui envn mot n’a rien de plus
+        <lb rend="¬" break="no" />pagnes l douceur &amp; ’nocence, qui envn mot n’a rien de plus
         agreable
-        que de recherchen le ſoulagement des pauures &amp; deſolez François. ll n’y
-        a pas vn de nous qui ne ſoit ual-contens de ſes inſignes voleurs de parti
-        ſans, nous ne voyens pas leurs, bras, mais aous ſenons bien lers
+        <lb />que de recherchen le ſoulagement des pauures &amp; deſolez François. ll n’y
+        <lb />a pas vn de nous qui ne ſoit ual-contens de ſes inſignes voleurs de parti
+        <lb rend="¬" break="no" />ſans, nous ne voyens pas leurs, bras, mais aous ſenons bien lers
         mains,
-        nous ne les connoiſſions pas, mais leur frippons de Comis nous les oat
-        bien fait connoiſtre malgré nous. O Dieu Theſee, qui domptas iadis
-        tant de monſtre, &amp; terraças tant de pirates, leſquels acharnez ſur le sang
-        des pauures paſſans, enſanglaacoient leurs mains paricides dans leurs -vies
-        innocentes, ſi les parques te permettoient de franchir noſtre bord &amp; que
-        du trenchantde ton fer tu peuſſe ietter à bas tous ces monoppleurs, cons.
-        bien noôtre France te-ſeroit elle redeuable, nous ſerioas à lors contens-&amp;
-        paſſerions aſſeurément nos iours, dans vne tranquilité, douce &amp; paiſjble,
-        
-        
-        ¬-¬¬¬¬ ----a a
-        1
-        7
-        ſans reſſentir ls dures trauerſes, &amp; encourir les triſtes eſclandies duquel
-        nous ſommes iournellement attaquez.
-        IE Vous ay décrit quelque choſe du méconentement de quelques
-        vns en particulicr, mis en gencral toute la France eſt
+        <lb />nous ne les connoiſſions pas, mais leur frippons de Comis nous les oat
+        <lb />bien fait connoiſtre malgré nous. O Dieu Theſee, qui domptas iadis
+        <lb />tant de monſtre, &amp; terraças tant de pirates, leſquels acharnez ſur le sang
+        <lb />des pauures paſſans, enſanglaacoient leurs mains paricides dans leurs -vies
+        <lb />innocentes, ſi les parques te permettoient de franchir noſtre bord &amp; que
+        <lb />du trenchantde ton fer tu peuſſe ietter à bas tous ces monoppleurs, cons.
+        <lb />bien noôtre France te-ſeroit elle redeuable, nous ſerioas à lors contens-&amp;
+        <lb />paſſerions aſſeurément nos iours, dans vne tranquilité, douce &amp; paiſjble,
+        <lb />
+        <pb n="7" />
+        <lb />¬-¬¬¬¬ ----a a
+        <lb rend="¬" break="no" />1
+        <lb />7
+        <lb />ſans reſſentir ls dures trauerſes, &amp; encourir les triſtes eſclandies duquel
+        <lb />nous ſommes iournellement attaquez.
+        <lb />IE Vous ay décrit quelque choſe du méconentement de quelques
+        <lb rend="¬" break="no" />vns en particulicr, mis en gencral toute la France eſt
         mal-eontente, ie
-        n’y entend que plantes, que cris, que gemiſſemens &amp; pleurs. Pour la
-        redre ſns ḿcontenemens il faut chaſſer tous ceux qi luy cauſent
-        du trouble, c’eſt le ſouurain remede, &amp; pour cette raiſon Nſſeigneurs
-        de Parlemcat ont prononcé cet Areſt ſi ſolennele contre ce tratre Si
-        cilien, qni a c mpcſché la Concluſion de la Paix generale comme
+        <lb />n’y entend que plantes, que cris, que gemiſſemens &amp; pleurs. Pour la
+        <lb rend="¬" break="no" />redre ſns ḿcontenemens il faut chaſſer tous ceux qi luy cauſent
+        <lb />du trouble, c’eſt le ſouurain remede, &amp; pour cette raiſon Nſſeigneurs
+        <lb />de Parlemcat ont prononcé cet Areſt ſi ſolennele contre ce tratre Si
+        <lb rend="¬" break="no" />cilien, qni a c mpcſché la Concluſion de la Paix generale comme
         nous
-        l’auons veu par la Gazette du v:ngriéme Fevrier é9.
-        Tous ſont mal contens de la guerre &amp; ſi cettc miſere dure plus long
-        temps la moitié du Royame ſera contrainte de faire placc à l’autre
-        d’aban ſonncr leur pays.
-        Si ie tourne les yeux de tous coſtez, ie ne rencontreray que deſolation
-        generalle, tous les Villages &amp; ourgades ſont ru ynez, les Vlles appau
-        urie, les chaſteaux &amp; forts foudroyez, ce quee ne regrette
+        <lb />l’auons veu par la Gazette du v:ngriéme Fevrier é9.
+        <lb />Tous ſont mal contens de la guerre &amp; ſi cettc miſere dure plus long
+        <lb rend="¬" break="no" />temps la moitié du Royame ſera contrainte de faire placc à l’autre
+        <lb />d’aban ſonncr leur pays.
+        <lb />Si ie tourne les yeux de tous coſtez, ie ne rencontreray que deſolation
+        <lb />generalle, tous les Villages &amp; ourgades ſont ru ynez, les Vlles appau
+        <lb rend="¬" break="no" />urie, les chaſteaux &amp; forts foudroyez, ce quee ne regrette
         point tant
-        qu’vne infinité de pauures vefucs &amp; orphelins qui crient mmſéricorde, &amp;
-        ne ſç̧auent par quel moyen reſpirer l’air de la vie, cant les calamitez ſont
-        grandes &amp; inſuportables, &amp; ce auſſ bien entre les Familles Catholiques
-        que de’autre party.
-        Songeons donc à nos affaires &amp; à celle qu’on minutte contre nous,
-        ce ſert vn meſcontentement bien grand, ſi on faiſoit quelque choſe en
-        ce Royaume contre l’intention du pub’ic,
-        Nous aurions à lors ſuiet d’eſtre mal-contens, &amp; pour vn il y enauroit
-        cent mille, il vaut mieux ſe garder du Loup eſtant encor en ſon ieune àge
-        &amp; luy liner les dents de bonne heure, que d’attedre qu’il ayt toutes ſes
-        forces pour ſe ietter ſur le troupeau.
-        Mla pr vſa mias ledunt
-         C’eſt à dire, Les maux qui ſont préueus ſont moins inſu portable,
-        Et partant nous pouuons eſperer de noſtre grande Re yne, apres ce
-        mauuais teops paſé, que par vne bonne préuoyanc, elle readra’les
-        Francçois auſſi contens qu’ils l’eſtoient du viuant de cette bonne Princeſſe
-        Anne de Bctagne, auſſi henureux que du temps de Louyſe de Vaude
-        mont, &amp; auſſi paiſible qu’il l’ont eſteé avec Eli zabeth
-        d’Auſtriche.			</p>
-		</body>
-	</text>
+        <lb />qu’vne infinité de pauures vefucs &amp; orphelins qui crient mmſéricorde, &amp;
+        <lb />ne ſç̧auent par quel moyen reſpirer l’air de la vie, cant les calamitez ſont
+        <lb />grandes &amp; inſuportables, &amp; ce auſſ bien entre les Familles Catholiques
+        <lb />que de’autre party.
+        <lb />Songeons donc à nos affaires &amp; à celle qu’on minutte contre nous,
+        <lb />ce ſert vn meſcontentement bien grand, ſi on faiſoit quelque choſe en
+        <lb />ce Royaume contre l’intention du pub’ic,
+        <lb />Nous aurions à lors ſuiet d’eſtre mal-contens, &amp; pour vn il y enauroit
+        <lb />cent mille, il vaut mieux ſe garder du Loup eſtant encor en ſon ieune àge
+        <lb />&amp; luy liner les dents de bonne heure, que d’attedre qu’il ayt toutes ſes
+        <lb />forces pour ſe ietter ſur le troupeau.
+        <lb />Mla pr vſa mias ledunt
+        <lb /> C’eſt à dire, Les maux qui ſont préueus ſont moins inſu portable,
+        <lb />Et partant nous pouuons eſperer de noſtre grande Re yne, apres ce
+        <lb />mauuais teops paſé, que par vne bonne préuoyanc, elle readra’les
+        <lb />Francçois auſſi contens qu’ils l’eſtoient du viuant de cette bonne Princeſſe
+        <lb />Anne de Bctagne, auſſi henureux que du temps de Louyſe de Vaude
+        <lb rend="¬" break="no" />mont, &amp; auſſi paiſible qu’il l’ont eſteé avec Eli zabeth
+        d’Auſtriche. </p>
+    </body>
+  </text>
 </TEI>

@@ -1,406 +1,310 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3713_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Stances à Mademoiselle.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Stances à Mademoiselle.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2022-10-25">25 octobre 2022</date>
-				<availability status="restricted" n="cc-by">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=IKKicVYEJuYC"/>
-					<author>
-						<persName>Laisné</persName>
-					</author>
-					<title source="Moreau">Stances à Mademoiselle.</title>
-					<pubPlace source="Moreau">Sans lieu</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure unit="page" quantity="4"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale de Lyon</institution>
-						<repository/>
-						<idno type="cote">Rés 311790</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2022-10-25">25 octobre 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=IKKicVYEJuYC" />
+          <author>
+            <persName>Laisné</persName>
+          </author>
+          <title source="Moreau">Stances à Mademoiselle.</title>
+          <pubPlace source="Moreau">Sans lieu</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure unit="page" quantity="4" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale de Lyon</institution>
+            <repository />
+            <idno type="cote">Rés 311790</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">3713. Stances à Mademoiselle. (S. 1., 1649), 4 pages- ll^ p' 13 (yj Signé
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">3713. Stances à Mademoiselle. (S. 1., 1649), 4 pages- ll^ p' 13 (yj Signé
           L'Aisné. Cet auteur a publié en 1650 la France réjouie par le génie du roi, etc.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">vers</term>
-					<term type="genre">discours adressé</term>
-					<term type="genre">stances</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-10-25" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<l>
-					<lb/>
-ſs				</l>
-				<l>
-					<lb/>
-oo0				</l>
-				<l>
-					<lb/>
-S				</l>
-				<l>
-					<lb/>
-I				</l>
-				<l>
-					<lb/>
-STANCES				</l>
-				<l>
-					<lb/>
-e				</l>
-				<l>
-					<lb/>
-MADAMOISELLE				</l>
-				<l>
-					<lb/>
-IT				</l>
-				<l>
-					<lb/>
-Eines de ces Monts glorieux				</l>
-				<l>
-					<lb/>
-os6				</l>
-				<l>
-					<lb/>
-Dont le ſommet voiſin des cieux				</l>
-				<l>
-					<lb/>
-l				</l>
-				<l>
-					<lb/>
-¬				</l>
-				<l>
-					<lb/>
-Voit ſes lay ſormer les orages				</l>
-				<l>
-					<lb/>
-Muſes, quittez voſtre ſeiour,				</l>
-				<l>
-					<lb/>
-Et venez voir en cette Cour				</l>
-				<l>
-					<lb/>
-Vn obiet dont les auantages				</l>
-				<l>
-					<lb/>
-Doiuent donner à nos riuages				</l>
-				<l>
-					<lb/>
-poſtre denmeure &amp;r a eire auuour.				</l>
-				<l>
-					<lb/>
-e				</l>
-				<l>
-					<lb/>
-Chierhe vos arrais les plus doux,				</l>
-				<l>
-					<lb/>
-C’eſt vne fille comme vous				</l>
-				<l>
-					<lb/>
-Pour qui i’iuite vos careſſes,				</l>
-				<l>
-					<lb/>
-Et pour rendre à ſes qualitez				</l>
-				<l>
-					<lb/>
-Les droits qu’elles ont merite,				</l>
-				<l>
-					<lb/>
-Sans recourir à ant d’adreſes,				</l>
-				<l>
-					<lb/>
-7				</l>
-				<l>
-					<lb/>
-2				</l>
-				<l>
-					<lb/>
-Vous n’auez, diuinss Princeſſes¬				</l>
-				<l>
-					<lb/>
-Qu’à ietter l’œil ſur vos beaute.				</l>
-				<l>
-					<lb/>
-o				</l>
-				<l>
-					<lb/>
-N’employez point icy vos voix				</l>
-				<l>
-					<lb/>
-A dire qu’elle ſort de Rois				</l>
-				<l>
-					<lb/>
-De qui tout a ecraint la puiſſance,				</l>
-				<l>
-					<lb/>
-Admirez, pluſtoſt ſa bonté,				</l>
-				<l>
-					<lb/>
-Qui meſlant à ſa Maieſlé				</l>
-				<l>
-					<lb/>
-Vne obligeante complaiſance				</l>
-				<l>
-					<lb/>
-Fait auoüer que ſa naſſance				</l>
-				<l>
-					<lb/>
-Cede à ſa generoſié.				</l>
-				<l>
-					<lb/>
-e				</l>
-				<l>
-					<lb/>
-Ce n’eſt point voſtre illuſtre rang,				</l>
-				<l>
-					<lb/>
-O Prnceſſe, ny voſtre ſang.				</l>
-				<l>
-					<lb/>
-Qui vous rend ſi conſiderable,				</l>
-				<l>
-					<lb/>
-Ces biens vous ſont düs ſeulement,				</l>
-				<l>
-					<lb/>
-D’autres peuuent egalement				</l>
-				<l>
-					<lb/>
-Se vanter d’vn ſort fauorable				</l>
-				<l>
-					<lb/>
-Mais peù ſçauent l’art admirable				</l>
-				<l>
-					<lb/>
-De le poſſeder noblement.				</l>
-				<l>
-					<lb/>
-aêe				</l>
-				<l>
-					<lb/>
-efprit né pour la ſplendeur.				</l>
-				<l>
-					<lb/>
-qus Dieu donne la grandeur				</l>
-				<l>
-					<lb/>
-onne ne pare nurri.				</l>
-				<l>
-					<lb/>
-reeu d peunun os ſs.				</l>
-				<l>
-					<lb/>
-ae quueie er rei				</l>
-				<l>
-					<lb/>
-2L				</l>
-				<l>
-					<lb/>
-5				</l>
-				<l>
-					<lb/>
-Dans quelque cœur indigne d’elle,				</l>
-				<l>
-					<lb/>
-La gloire dont elle eſincelle				</l>
-				<l>
-					<lb/>
-ſouille ce qu’elle a d’eclat.				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-Ainſi cette lampe des cieux,				</l>
-				<l>
-					<lb/>
-Qui paur l’vſage de nos yeux				</l>
-				<l>
-					<lb/>
-De ſon feu propre et enmmee,				</l>
-				<l>
-					<lb/>
-Ne ſouffre point d’impureté				</l>
-				<l>
-					<lb/>
-Mais cells dans qui la clarté́				</l>
-				<l>
-					<lb/>
-Par arifice eſt allumee,				</l>
-				<l>
-					<lb/>
-Touſiours de beaucoup de fumee				</l>
-				<l>
-					<lb/>
-Inſecte ſon luſtre emprunteé.				</l>
-				<l>
-					<lb/>
-e				</l>
-				<l>
-					<lb/>
-Doux rauiſſement de la Cour,				</l>
-				<l>
-					<lb/>
-Ò le refpect auec l’amour				</l>
-				<l>
-					<lb/>
-Viuent ſous voſtre obeiſſance,				</l>
-				<l>
-					<lb/>
-Dans l’horreur de ces temps cruelse,				</l>
-				<l>
-					<lb/>
-Ou nos maux ſont continuels,				</l>
-				<l>
-					<lb/>
-Sans le bien de voſtre preſence,				</l>
-				<l>
-					<lb/>
-Auroit-on preſque dans l France				</l>
-				<l>
-					<lb/>
-Dequoy rendre grace aue Autels.				</l>
-				<l>
-					<lb/>
-aeo				</l>
-				<l>
-					<lb/>
-Enfin, apres tant de malheurs,				</l>
-				<l>
-					<lb/>
-Pari a nma ſia à ſes plun,				</l>
-				<l>
-					<lb/>
-Sans crainte que rien ne l’outrage:				</l>
-				<l>
-					<lb/>
-Mais quoy qu’il puiſſe conceuoir,				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-4				</l>
-				<l>
-					<lb/>
-Dans ſon plus agreable eſpoir				</l>
-				<l>
-					<lb/>
-Rien ne le charme dauantage				</l>
-				<l>
-					<lb/>
-Brillant miracle de noſtre age.				</l>
-				<l>
-					<lb/>
-Que le bon-heur de vous reuoir.				</l>
-				<l>
-					<lb/>
-5e				</l>
-				<l>
-					<lb/>
-Dans vous, ce port maieſtueux				</l>
-				<l>
-					<lb/>
-Voſtre cœur noble &amp; verrueux				</l>
-				<l>
-					<lb/>
-Ou rien que de haut ne reſpirs				</l>
-				<l>
-					<lb/>
-Tant d’appas dont vous eſclattez,,				</l>
-				<l>
-					<lb/>
-Noas ont tellement enchante,				</l>
-				<l>
-					<lb/>
-Que ſi la terre eſt voſtre empire,				</l>
-				<l>
-					<lb/>
-C’eſt moins que ce qu’on vous deſire				</l>
-				<l>
-					<lb/>
-Et c’eſt moins que vous meritez.				</l>
-				<l>
-					<lb/>
-9				</l>
-				<l>
-					<lb/>
-L’AISNE				</l>
-				<l>
-					<lb/>
-!				</l>
-			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">vers</term>
+          <term type="genre">discours adressé</term>
+          <term type="genre">stances</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-10-25" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <l>
+          <lb />ſs</l>
+        <l>
+          <lb />oo0</l>
+        <l>
+          <lb />S</l>
+        <l>
+          <lb /> I </l>
+        <l>
+          <lb />STANCES</l>
+        <l>
+          <lb />e</l>
+        <l>
+          <lb />MADAMOISELLE</l>
+        <l>
+          <lb />IT </l>
+        <l>
+          <lb /> Eines de ces Monts glorieux</l>
+        <l>
+          <lb />os6</l>
+        <l>
+          <lb /> Dont le ſommet voiſin des cieux</l>
+        <l>
+          <lb />l </l>
+        <l>
+          <lb />¬</l>
+        <l>
+          <lb /> Voit ſes lay ſormer les orages</l>
+        <l>
+          <lb />Muſes, quittez voſtre ſeiour,</l>
+        <l>
+          <lb />Et venez voir en cette Cour</l>
+        <l>
+          <lb />Vn obiet dont les auantages</l>
+        <l>
+          <lb />Doiuent donner à nos riuages</l>
+        <l>
+          <lb /> poſtre denmeure &amp;r a eire auuour.</l>
+        <l>
+          <lb />e</l>
+        <l>
+          <lb />Chierhe vos arrais les plus doux,</l>
+        <l>
+          <lb />C’eſt vne fille comme vous</l>
+        <l>
+          <lb />Pour qui i’iuite vos careſſes,</l>
+        <l>
+          <lb />Et pour rendre à ſes qualitez</l>
+        <l>
+          <lb />Les droits qu’elles ont merite,</l>
+        <l>
+          <lb /> Sans recourir à ant d’adreſes,</l>
+        <pb n="2" />
+        <l>
+          <lb />7</l>
+        <l>
+          <lb />2</l>
+        <l>
+          <lb />Vous n’auez, diuinss Princeſſes¬</l>
+        <l>
+          <lb />Qu’à ietter l’œil ſur vos beaute.</l>
+        <l>
+          <lb />o</l>
+        <l>
+          <lb />N’employez point icy vos voix</l>
+        <l>
+          <lb />A dire qu’elle ſort de Rois</l>
+        <l>
+          <lb />De qui tout a ecraint la puiſſance,</l>
+        <l>
+          <lb />Admirez, pluſtoſt ſa bonté,</l>
+        <l>
+          <lb />Qui meſlant à ſa Maieſlé</l>
+        <l>
+          <lb />Vne obligeante complaiſance</l>
+        <l>
+          <lb />Fait auoüer que ſa naſſance</l>
+        <l>
+          <lb />Cede à ſa generoſié.</l>
+        <l>
+          <lb /> e</l>
+        <l>
+          <lb />Ce n’eſt point voſtre illuſtre rang,</l>
+        <l>
+          <lb />O Prnceſſe, ny voſtre ſang.</l>
+        <l>
+          <lb />Qui vous rend ſi conſiderable,</l>
+        <l>
+          <lb />Ces biens vous ſont düs ſeulement,</l>
+        <l>
+          <lb />D’autres peuuent egalement</l>
+        <l>
+          <lb />Se vanter d’vn ſort fauorable</l>
+        <l>
+          <lb />Mais peù ſçauent l’art admirable</l>
+        <l>
+          <lb />De le poſſeder noblement.</l>
+        <l>
+          <lb />aêe</l>
+        <l>
+          <lb /> efprit né pour la ſplendeur.</l>
+        <l>
+          <lb /> qus Dieu donne la grandeur</l>
+        <l>
+          <lb />onne ne pare nurri.</l>
+        <l>
+          <lb />reeu d peunun os ſs.</l>
+        <l>
+          <lb />ae quueie er rei</l>
+        <l>
+          <lb />2L</l>
+        <pb n="3" />
+        <l>
+          <lb />5</l>
+        <l>
+          <lb />Dans quelque cœur indigne d’elle,</l>
+        <l>
+          <lb />La gloire dont elle eſincelle</l>
+        <l>
+          <lb /> ſouille ce qu’elle a d’eclat.</l>
+        <l>
+          <lb />
+        </l>
+        <l>
+          <lb />Ainſi cette lampe des cieux,</l>
+        <l>
+          <lb />Qui paur l’vſage de nos yeux</l>
+        <l>
+          <lb />De ſon feu propre et enmmee,</l>
+        <l>
+          <lb />Ne ſouffre point d’impureté</l>
+        <l>
+          <lb />Mais cells dans qui la clarté́</l>
+        <l>
+          <lb />Par arifice eſt allumee,</l>
+        <l>
+          <lb />Touſiours de beaucoup de fumee</l>
+        <l>
+          <lb />Inſecte ſon luſtre emprunteé.</l>
+        <l>
+          <lb />e</l>
+        <l>
+          <lb />Doux rauiſſement de la Cour,</l>
+        <l>
+          <lb />Ò le refpect auec l’amour</l>
+        <l>
+          <lb />Viuent ſous voſtre obeiſſance,</l>
+        <l>
+          <lb />Dans l’horreur de ces temps cruelse,</l>
+        <l>
+          <lb />Ou nos maux ſont continuels,</l>
+        <l>
+          <lb />Sans le bien de voſtre preſence,</l>
+        <l>
+          <lb />Auroit-on preſque dans l France</l>
+        <l>
+          <lb />Dequoy rendre grace aue Autels.</l>
+        <l>
+          <lb />aeo</l>
+        <l>
+          <lb />Enfin, apres tant de malheurs,</l>
+        <l>
+          <lb />Pari a nma ſia à ſes plun,</l>
+        <l>
+          <lb />Sans crainte que rien ne l’outrage:</l>
+        <l>
+          <lb />Mais quoy qu’il puiſſe conceuoir,</l>
+        <l>
+          <lb />
+        </l>
+        <pb n="4" />
+        <l>
+          <lb />4</l>
+        <l>
+          <lb />Dans ſon plus agreable eſpoir</l>
+        <l>
+          <lb />Rien ne le charme dauantage</l>
+        <l>
+          <lb />Brillant miracle de noſtre age.</l>
+        <l>
+          <lb />Que le bon-heur de vous reuoir.</l>
+        <l>
+          <lb />5e</l>
+        <l>
+          <lb />Dans vous, ce port maieſtueux</l>
+        <l>
+          <lb />Voſtre cœur noble &amp; verrueux</l>
+        <l>
+          <lb />Ou rien que de haut ne reſpirs</l>
+        <l>
+          <lb />Tant d’appas dont vous eſclattez,,</l>
+        <l>
+          <lb />Noas ont tellement enchante,</l>
+        <l>
+          <lb />Que ſi la terre eſt voſtre empire,</l>
+        <l>
+          <lb /> C’eſt moins que ce qu’on vous deſire</l>
+        <l>
+          <lb />Et c’eſt moins que vous meritez.</l>
+        <l>
+          <lb />9</l>
+        <l>
+          <lb />L’AISNE</l>
+        <l>
+          <lb />!</l>
+      </p>
+    </body>
+  </text>
 </TEI>

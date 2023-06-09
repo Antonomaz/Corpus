@@ -1,535 +1,318 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1662_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">L'honneur du ministre étranger, enseveli dans le
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">L'honneur du ministre étranger, enseveli dans le
           tombeau.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2022-10-25">25 octobre 2022</date>
-				<availability status="restricted" n="cc-by">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=hj_ecBwiyzEC"/>
-					<author/>
-					<title source="Moreau">Honneur (l') du ministre étranger, enseveli dans le
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2022-10-25">25 octobre 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=hj_ecBwiyzEC" />
+          <author />
+          <title source="Moreau">Honneur (l') du ministre étranger, enseveli dans le
             tombeau.</title>
-					<pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure unit="page" quantity="8"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale de Lyon</institution>
-						<repository/>
-						<idno type="cote">Rés 311594</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure unit="page" quantity="8" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale de Lyon</institution>
+            <repository />
+            <idno type="cote">Rés 311594</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">1662. Honneur (l') du ministre étranger, enseveli dans le tombeau. Paris,
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">1662. Honneur (l') du ministre étranger, enseveli dans le tombeau. Paris,
           1649, 8 pages. Même pièce que le Bonheur de la France en la mort de Maza rin, etc.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">pamphlet</term>
-					<term type="subject" ref="personnes/Mazarin.xml">Mazarin</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-10-25" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<imprimatur>Auec Permißion.</imprimatur>
-HONNV
-        MINISTRE
-        ESTRANGER
-        ns ev
-        NS LE TOMBEAV.
-        3
-        p
-        ut
-        p
-        
-        
-        
-        
-        ?.
-        sA
-        ogpgupup
-        u
-        iidſ’&amp;aetpep
-        ONNE V R
-        pv
-        rrT r D
-        , HE
-         iſl lu
-        VI , L -
-        ’
-         -eu eqe
-        ESTRAGER
-         -i l
-         i d ai EE
-        Dans le,Tomnbeau
-        ueb eſt ab si’ea fai E, a ſa ſainces qe fait
-        ept auaau ardle pprone la, reſnſepu
-         t la cerre qui luy a donné I’Eſtre &amp; l’eſtime Je
-        ſaireeaiome dune ſan fhing, pur ne le ia
-        eurmls adaapnt ſs mels uuue i
-        anaiie edadpanule, ſteguép et-li
-        airl medreir de eeonini ſeiaeide ed
-        oé l’hanoni pour iaiiſonj 2
-         reletl eſi pu i ni dine ie aaſoi og
-        teniae qu’ilairt yiuq perſpqiue al dlA, de
-        aouaau b’etllnodipéiſos
-        gens de bien par la bouche du Proo n l ddn
-        oeane leara laiſynlee-eir ſeca enel
-        lee pau. aqpe Moyſoſtſ de e poje ,’ſtant
-        A ij 
-        aya da Dieu, &amp; daa aoradas il eta ut4, Tcto
-        dt que ſa mcimoire ſera aoompagu ’a lagqge a
-        tion que ’honnour de ſa v fara ouaere, ân u
-        delà deés tespa, llecéas ea ominmdh uu pege
-        is benedicfione.
-        La deuxieſne cſt qde ’hoiana honeſentre libre
-        ment dans toute ſorte de compagnie, au lieu q’vn hom
-        me infame en eſt honteuſemt chaſſé, d’où vient qu’an
-        ciennement les Romains ayant interdit aux meéchans la con
-        qeſatio dés gensabien on es fyoiepar-ou-pmpe
-        ſe eu &amp; eau, &amp; ’aura qu’e tous llſeux u ils llpi,
-        IIs n’y portolent qudes hſles e des calalaitea. o o ta
-        ſoitpopur- aucun vœu publie, les faiſant paſſer pour
-        des gcouniez En effet lebonlçr neſe tepbnapas
-        entrevnehmmede bie, va méaantorhaae, illaut
-        que les bons cçonuerſent auec les bons, pour viure heureux
-        &amp; en repos, &amp;e ls cotraitd n’et permiqu’ãx Medecins,
-        qui ſeuls ont la ibeté onuerſer aue les malades.
-        La troiſieſme raiſon c’eſt que l’honneur nous donne le
-        oyen de ſeruir le prochain.
-         Pour vo la arouaceaole aaoeeaqibpl ya
-         e eu brte de gaodrpone iuſiiame Elagha
-         tsite.
-         L duſaaeeſt a’d-de Dlao, pas laqole ’hoa4
-         loy etred- gdedblela-guaa et an’dbias ,
-        part lequel le neſme homie et ronduoaphadlae ſeuis e
-        - rdeb, é- eéniee pdntbncadaasdaa Mugiſtats,
-        dans les Predicateurs, dans leMiaes d’ftao, dûias
-         que ho grand Apotre graé da oe Man diſaioitrefoisque
-         vſage u’ enduoit alapout- e aud dp pâocdhaiusy
-        auod icqustdeeourotré nalduide it aunma
-         aern ie ſPcbbi1
-        - r es Ctye eh ’gauledogpndenroallaaa de
-         x boané rentdêe 3 qeelſoû aolonchpaaa erdl 
-        l’honneur, &amp; qu’il eſt mort tiuilemene, il eſt incapable de
-        rendre ce don vril au prochain: ear qu’elle apparence qu’vn
-        homnme infame oucupe vn lieu d’honneur, paroiſſe en pu
-        blique, gouuerne vn Eſtar, il faut viure dans vne bonne
-        renommée pour ſeruir au prochain, &amp; pour tendre ce don
-        profitable, ed vitam ctrendere facts ooe opns. Ce qui
-        vous fait voit qu’il n’y a rien aua monde de plus cher que
-        l’honneuar, &amp; qu’vn homtme qui ld’a perda eſt banny pour
-        iamais de la memoire des gens de bien; de la conuerſatio
-        des ges d’honneur, &amp; terdu ncapable deſeruir le pro
-        chain.
-        Ot ſuppoſé que Iul Masarin ait eſté honmme d’hon
-        neur, ie dis qu’idl l’a perdu ſas eſporahce de iamais le pou
-        uir tecouur, pare aque deés mainterant il éſt rt dans la
-        mamoire des hmmes de ben, &amp; de iuſtes, partë qu’il
-        ne trouue on quelque lieu que ce ſoit àucuan iefuge qui luy
-        ſoit faudrable &amp; prapice, paree qu’il ne s’eſt iahnis meſlé
-        de ſeruir le prochain que otr le perdre; en s’eſtabliſſant
-        ſur ſes ruines, s’il a perdu l’honneur lleſt mort titilénent,
-        &amp; partant i’ay eu raiſu de vous péſéiér ſodn iombeau qu1
-        n’eſt autre qu la médiſanee, Sepalesis pdtes eſt guttr
-        Premirient l at res eonſtant ue l’honheit ne le fe
-        ra pas vnaues au delà dé́s temps &amp; qu’il et efi mort dans
-        l memoire des iuiſtss, la raſon ’eſt que pbu eſtehdte
-        l’honneu de ſon aom au delâa de ſon tormbtau ; il faut poſ
-        fader la uſtioe, s’il ſt cay que teluy qi eope vr arbre
-        per le pisl, n’a pas eauie de manet de ſes fri&amp;s, s’ll eſt
-        vray que celuy qub tatie ve ontae ans ſa ſource, n’a pas
-        deſſtin d’eſtancher fa ſof dans ſn ruiſſeau, voyadnt que lIu
-        le Macia a tale vouu naut-iſtes, qu’il les à tous chaſſé
-        hors de Fcanee qui dra ql’a-Eu ie dé poſſeer la
-        iuſtice: u’aſt poarquoy i défi ndott dans la memoire
-        des iuſftas.
-        ¬..... I..
-        B 
-        Ie me trompe il s’eſt vanteé vne fois en ſa vie en bonne com
-        pagnie, de la pouuoir poſſeder &amp; d’en faire à ſa diſcretion à
-        la faueur de l’eſclat de ſes finances Mais le malheur a voulu
-        pour luy que ſes louys ſe ſont trouué trop petits pour lé temps
-        qui court. Et la balance qui les a peſe trop iuſte pour approu
-        uer ſes preſens, d’ou eſt venu que deſeſperant de ſe pouuoir ia
-        mais poſſeder la iuſtice: il a fait courir deſſus elle afin d’em
-        priſonner celle qui prepare aux autres des baſtilles pour pri
-        ſon, eſt contre la uſtice: ce n’eſt pas pour la poſſeder c’eſt pour
-        quoy il ne peut iamais viure dans la memoire des iuſtes.
-        Diſons d’auantage que s’il a poſſedé la iuſtice, ç̧a eſté pour
-        mal tratter la verité, Iaſtitia&amp; veriras obuiuevunt ſibi.
-        On nous depeint la iuſtice auec vne eſpée en l’vne de ſes
-        mains, &amp; vne balance en l’autre, pour moy ie ne ſç̧ay ſi ces fa
-        meux peintres de l’antiquité auoient quelque cognoiſſancade
-        ſainct Michel, que la rance a choiſi pour protecteur à cauſe
-        Lqu’il eſt armé de la ſorte, mais ie ſçay bien que lule Mazarin
-        a porté́ enuie à cét Archange, &amp; que ſous pretexte de proteget
-        la France &amp; de la deffendre, il a pris l’eſpée en vne de ſes
-        mains, &amp; la balance en l’autre, afin de diſpoſer à ſa fantaſie
-        des Parlemens, comme il faiſoit des armes, mais qu’eſt- il ar
-        rué de là, deux choſes.
-        La pnemiere c’eſt que dans cette balane, qu’il tenoit en
-        vne de ſes mains on y a peſé ſon merite, au poids, de fes acti
-        ons. &amp; quand il a veu quechacun cognoiſſoit, que c’eſtoit ſa
-        malicc &amp; la corruption de ſa vie, qui le faiſoit hauſſer, &amp; qui
-        l’enfloit de preſomption, il eſt airué vne ſeconde choſe c’eû
-         qu’il s’eſt ſeruy de l’eſpeée, qu’il tenoit en lI’autre main pour
-        aſſaſſiner, &amp; pour perdfe tous ceux qui ont mis au iour ſes
-        meſchancetez, &amp; qui ont deſcouuert la verité apres cela dires
-        vous que ce luy-là eſt homme de bien qui ſous pretexte de Iu
-        ſtice aſſaſſine la verité pour, athoriſer ſa malice, ce qui reſte
-        de ta race pour faire reſouuenir ſes habitans des maux que tu
-        leur a fſait, en remuant les cendres que ne penſois-tu voyant 
-        le débordement des eaux qui ſe ſont groſſies pour venir
-        lauer le Palais par les pieds, que la cime e veux dire les Chefs
-        eſtoient tous innocens, &amp; ſans malice puis que la plus baſſe
-        partie eſtoit de cet edifice eſtot ſi nette &amp; ſi purifiée, il
-        eſt vray que s’il ouſt fallu autant de pain à la riuiere pour
-        aſſouuir la rage de ſa faim qu’il luy a fallu de bois nous eu
-        ſions apprehendez, de n’en point auoir pour nous mais elle
-        eſtſaoule &amp; doreſnauant, ſon enflure ſe diminura a vn Prin.
-        ce malheureux, que tu dois regretter ces entrepriſes puis qu’il
-        te procurent l’abandon de tous ceux quiont eu de l’amour
-        pour toy.
-        N’auez vous iamais fait reflexion ſut ce que raporte l’Eſ
-        criture Saincte de ce malheureux Sennacherib, il ſe voyoit
-        victorieux, de quantitez de belles villes, il ſe conſideroit
-        enuironneé d’vne floriſſante d’Armée, il ſe glorifioit d’a
-        uoir en ſa ſuitte pluſieurs Roy captifs, enfſé de preſom
-        ption, &amp; tout glorieux de victoires, il sapproche de la ville
-        de Ieruſalem, il l’aſſiege, il la fait ſommer, il penſe deſia
-        la tenir, quoy dit- il, ſur qui ſe fient ces mutins, Nunqnid
-        nonmprineipes mei ſmoul reges ſune, eſt-ce pas moy qul a ſubiu
-        gué tout l’Vniuers, par la porte de mes armes? eſt-ce pas
-        moy qui a reduit toute la paleſtine, ſous mon obeyſſan
-        ce? eſt-ce pas moy qui a contraint tous les Princes eſtran
-        gers de receuoir mes commandemens-’&amp; mes loix: rien
-        n’eſt capable de reſiſter à ma puiſſance, voyés vn peu
-        comme ce ſuperbe parle &amp; comme il fait. ſonner hault
-        ſes victoires. Mais attendez vn peu &amp; vous verrez que
-        Dieu eſt iuſte, c’eſtoit la nuict qu’il parloit de la ſorte lors
-        quv’n Ange executeur, deſcendu du Ciel vient reduire
-        en vn moment toute ſon armée en poudre: le iour ne
-        fut pas ſi toſt venu qu’il ſe voulu leuer, mais il eſt eſtonné
-        qu’l n’entend, perſonne il apelle ſes pages il mande ſes
-        Officiers, on ne luy ré́pond as, il ſe leue, il ſort de ſa
-        Chambre, le premier qu’il rencontre c’eſt vne de ſes gar¬ 
-        des couchez par terre, il le frappe auec le pied, &amp; du
-        cop qu’il luy donne il fait ſortir la cendre de ſes armes;
-        bin eſtonne il paſſe plus auant, il preic l’oreille, &amp; n’en
-        tend point de brut il ſort, &amp; oit toue ſon armé́e couché
-        par terre dans vn eſpoucntable ſilece. E cem ſurreaiſſe ?
-        cicalo ueni omnia cednera morftaienn. le vus laiſſe à
-        penſcr qu’elle ftayeur, lurpris ce ’rne quand il ſe vit tout
-        ſeu! au milieu de tants de morts.
-        Paris voila la figure de ce que tu vois à̀ tes portes, c’eſt
-        vn lPrince enflé de vanité &amp; de preſmption qui t’afflig,
-        eſecouce comme il parle il te penſe d ſi tenir, mais Dieu
-        qui lcait que u ne combas que pour le Roy &amp; pour la iu
-        ſtce, ta enuoyé vn Ange, vn beaufoit qui eſt deſcendu
-        d’en-haut pour venit abbatutte au pied de ſcs murailles les
-        forces de ce Prince, &amp; pour rendre vains &amp; inutils les con
-        ſeils pernicieux de tous ceux qui te veulent perdre. Voyez
-        vous par laà comme ce Iule Mazarin à eſté́ lncapable de
-        ſeruir le prochain puis que par ſon infidelite &amp; ſes fourbes
-        il a meſme pecrdu tous ceux qui l’ont ſuiuy de plus pre2,
-        &amp; qui l’one appuyez du ſecour de leurs armes, &amp; partant
-        ayane peedu ſa renomḿe, i’ay eu raiſon de vous preſen
-        ter ſon tombeau, &amp; de vous dire, Sepulshrm paens eſt
-        guttaur orua. Voicy des terribles funerailles qui ot fat
-        pleurer ceux qui les conſideren auparauant qu’elles fuſſent
-        arriué il y a long- tenmps, celuy qui en eſt le ſubiet de
-        uoit eſtre au tombes, Pais reſiouys toy, il tire à la lni les
-        harpies l’ont acoompognea peadant ſa vie, le ſuiuronit apres
-        a mort u- ſeras gueris de touts ces peſtes &amp; dans vne pler
-        ne ſanaté u iouyras de’ la peeſnce de ton Roy, à qui t dois
-        toute ta vie ſouhiter auec v infinité́ de ourohnes des
-        eternelles benedictions
-        FIN.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">pamphlet</term>
+          <term type="subject" ref="personnes/Mazarin.xml">Mazarin</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-10-25" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb /> HONNV
+        <lb />MINISTRE
+        <lb />ESTRANGER
+        <lb />ns ev
+        <lb />NS LE TOMBEAV.
+        <lb />3
+        <lb />p
+        <lb />ut
+        <lb />p
+        <lb />
+        <imprimatur>Auec Permißion.</imprimatur>
+        <pb n="2" />
+        <pb n="3" />
+        <lb />?.
+        <lb />sA
+        <lb />ogpgupup
+        <lb />u
+        <lb />iidſ’&amp;aetpep
+        <lb />ONNE V R
+        <lb />pv
+        <lb />rrT r D
+        <lb />, HE
+        <lb /> iſl lu
+        <lb rend="¬" break="no" />VI , L -
+        <lb />’
+        <lb /> -eu eqe
+        <lb />ESTRAGER
+        <lb /> -i l
+        <lb /> i d ai EE
+        <lb />Dans le,Tomnbeau
+        <lb />ueb eſt ab si’ea fai E, a ſa ſainces qe fait
+        <lb />ept auaau ardle pprone la, reſnſepu
+        <lb /> t la cerre qui luy a donné I’Eſtre &amp; l’eſtime Je
+        <lb />ſaireeaiome dune ſan fhing, pur ne le ia
+        <lb rend="¬" break="no" />eurmls adaapnt ſs mels uuue i
+        <lb rend="¬" break="no" />anaiie edadpanule, ſteguép et-li
+        <lb />airl medreir de eeonini ſeiaeide ed
+        <lb />oé l’hanoni pour iaiiſonj 2
+        <lb /> reletl eſi pu i ni dine ie aaſoi og
+        <lb />teniae qu’ilairt yiuq perſpqiue al dlA, de
+        <lb />aouaau b’etllnodipéiſos
+        <lb />gens de bien par la bouche du Proo n l ddn
+        <lb />oeane leara laiſynlee-eir ſeca enel
+        <lb rend="¬" break="no" />lee pau. aqpe Moyſoſtſ de e poje ,’ſtant
+        <lb />A ij <pb n="4" />
+        <lb />aya da Dieu, &amp; daa aoradas il eta ut4, Tcto
+        <lb />dt que ſa mcimoire ſera aoompagu ’a lagqge a
+        <lb rend="¬" break="no" />tion que ’honnour de ſa v fara ouaere, ân u
+        <lb />delà deés tespa, llecéas ea ominmdh uu pege
+        <lb />is benedicfione.
+        <lb />La deuxieſne cſt qde ’hoiana honeſentre libre
+        <lb rend="¬" break="no" />ment dans toute ſorte de compagnie, au lieu q’vn hom
+        <lb rend="¬" break="no" />me infame en eſt honteuſemt chaſſé, d’où vient qu’an
+        <lb rend="¬" break="no" />ciennement les Romains ayant interdit aux meéchans la con
+        <lb rend="¬" break="no" />qeſatio dés gensabien on es fyoiepar-ou-pmpe
+        <lb />ſe eu &amp; eau, &amp; ’aura qu’e tous llſeux u ils llpi,
+        <lb />IIs n’y portolent qudes hſles e des calalaitea. o o ta
+        <lb rend="¬" break="no" />ſoitpopur- aucun vœu publie, les faiſant paſſer pour
+        <lb />des gcouniez En effet lebonlçr neſe tepbnapas
+        <lb />entrevnehmmede bie, va méaantorhaae, illaut
+        <lb />que les bons cçonuerſent auec les bons, pour viure heureux
+        <lb />&amp; en repos, &amp;e ls cotraitd n’et permiqu’ãx Medecins,
+        <lb />qui ſeuls ont la ibeté onuerſer aue les malades.
+        <lb />La troiſieſme raiſon c’eſt que l’honneur nous donne le
+        <lb />oyen de ſeruir le prochain.
+        <lb /> Pour vo la arouaceaole aaoeeaqibpl ya
+        <lb /> e eu brte de gaodrpone iuſiiame Elagha
+        <lb rend="¬" break="no" /> tsite.
+        <lb /> L duſaaeeſt a’d-de Dlao, pas laqole ’hoa4
+        <lb /> loy etred- gdedblela-guaa et an’dbias ,
+        <lb />part lequel le neſme homie et ronduoaphadlae ſeuis e
+        <lb />- rdeb, é- eéniee pdntbncadaasdaa Mugiſtats,
+        <lb />dans les Predicateurs, dans leMiaes d’ftao, dûias
+        <lb /> que ho grand Apotre graé da oe Man diſaioitrefoisque
+        <lb /> vſage u’ enduoit alapout- e aud dp pâocdhaiusy
+        <lb />auod icqustdeeourotré nalduide it aunma
+        <lb /> aern ie ſPcbbi1
+        <lb />- r es Ctye eh ’gauledogpndenroallaaa de
+        <lb /> x boané rentdêe 3 qeelſoû aolonchpaaa erdl <pb n="5" />
+        <lb />l’honneur, &amp; qu’il eſt mort tiuilemene, il eſt incapable de
+        <lb />rendre ce don vril au prochain: ear qu’elle apparence qu’vn
+        <lb rend="¬" break="no" />homnme infame oucupe vn lieu d’honneur, paroiſſe en pu
+        <lb rend="¬" break="no" />blique, gouuerne vn Eſtar, il faut viure dans vne bonne
+        <lb />renommée pour ſeruir au prochain, &amp; pour tendre ce don
+        <lb />profitable, ed vitam ctrendere facts ooe opns. Ce qui
+        <lb />vous fait voit qu’il n’y a rien aua monde de plus cher que
+        <lb />l’honneuar, &amp; qu’vn homtme qui ld’a perda eſt banny pour
+        <lb />iamais de la memoire des gens de bien; de la conuerſatio
+        <lb />des ges d’honneur, &amp; terdu ncapable deſeruir le pro
+        <lb rend="¬" break="no" />chain.
+        <lb />Ot ſuppoſé que Iul Masarin ait eſté honmme d’hon
+        <lb rend="¬" break="no" />neur, ie dis qu’idl l’a perdu ſas eſporahce de iamais le pou
+        <lb rend="¬" break="no" />uir tecouur, pare aque deés mainterant il éſt rt dans la
+        <lb />mamoire des hmmes de ben, &amp; de iuſtes, partë qu’il
+        <lb />ne trouue on quelque lieu que ce ſoit àucuan iefuge qui luy
+        <lb />ſoit faudrable &amp; prapice, paree qu’il ne s’eſt iahnis meſlé
+        <lb />de ſeruir le prochain que otr le perdre; en s’eſtabliſſant
+        <lb />ſur ſes ruines, s’il a perdu l’honneur lleſt mort titilénent,
+        <lb />&amp; partant i’ay eu raiſu de vous péſéiér ſodn iombeau qu1
+        <lb />n’eſt autre qu la médiſanee, Sepalesis pdtes eſt guttr
+        <lb />Premirient l at res eonſtant ue l’honheit ne le fe
+        <lb rend="¬" break="no" />ra pas vnaues au delà dé́s temps &amp; qu’il et efi mort dans
+        <lb />l memoire des iuiſtss, la raſon ’eſt que pbu eſtehdte
+        <lb />l’honneu de ſon aom au delâa de ſon tormbtau ; il faut poſ
+        <lb rend="¬" break="no" />fader la uſtioe, s’il ſt cay que teluy qi eope vr arbre
+        <lb />per le pisl, n’a pas eauie de manet de ſes fri&amp;s, s’ll eſt
+        <lb />vray que celuy qub tatie ve ontae ans ſa ſource, n’a pas
+        <lb />deſſtin d’eſtancher fa ſof dans ſn ruiſſeau, voyadnt que lIu
+        <lb rend="¬" break="no" />le Macia a tale vouu naut-iſtes, qu’il les à tous chaſſé
+        <lb />hors de Fcanee qui dra ql’a-Eu ie dé poſſeer la
+        <lb />iuſtice: u’aſt poarquoy i défi ndott dans la memoire
+        <lb />des iuſftas.
+        <lb />¬..... I..
+        <lb />B <pb n="6" />
+        <lb />Ie me trompe il s’eſt vanteé vne fois en ſa vie en bonne com
+        <lb rend="¬" break="no" />pagnie, de la pouuoir poſſeder &amp; d’en faire à ſa diſcretion à
+        <lb />la faueur de l’eſclat de ſes finances Mais le malheur a voulu
+        <lb />pour luy que ſes louys ſe ſont trouué trop petits pour lé temps
+        <lb />qui court. Et la balance qui les a peſe trop iuſte pour approu
+        <lb rend="¬" break="no" />uer ſes preſens, d’ou eſt venu que deſeſperant de ſe pouuoir ia
+        <lb rend="¬" break="no" />mais poſſeder la iuſtice: il a fait courir deſſus elle afin d’em
+        <lb rend="¬" break="no" />priſonner celle qui prepare aux autres des baſtilles pour pri
+        <lb rend="¬" break="no" />ſon, eſt contre la uſtice: ce n’eſt pas pour la poſſeder c’eſt pour
+        <lb rend="¬" break="no" />quoy il ne peut iamais viure dans la memoire des iuſtes.
+        <lb />Diſons d’auantage que s’il a poſſedé la iuſtice, ç̧a eſté pour
+        <lb />mal tratter la verité, Iaſtitia&amp; veriras obuiuevunt ſibi.
+        <lb />On nous depeint la iuſtice auec vne eſpée en l’vne de ſes
+        <lb />mains, &amp; vne balance en l’autre, pour moy ie ne ſç̧ay ſi ces fa
+        <lb rend="¬" break="no" />meux peintres de l’antiquité auoient quelque cognoiſſancade
+        <lb />ſainct Michel, que la rance a choiſi pour protecteur à cauſe
+        <lb />Lqu’il eſt armé de la ſorte, mais ie ſçay bien que lule Mazarin
+        <lb />a porté́ enuie à cét Archange, &amp; que ſous pretexte de proteget
+        <lb />la France &amp; de la deffendre, il a pris l’eſpée en vne de ſes
+        <lb />mains, &amp; la balance en l’autre, afin de diſpoſer à ſa fantaſie
+        <lb />des Parlemens, comme il faiſoit des armes, mais qu’eſt- il ar
+        <lb rend="¬" break="no" />rué de là, deux choſes.
+        <lb />La pnemiere c’eſt que dans cette balane, qu’il tenoit en
+        <lb />vne de ſes mains on y a peſé ſon merite, au poids, de fes acti
+        <lb rend="¬" break="no" />ons. &amp; quand il a veu quechacun cognoiſſoit, que c’eſtoit ſa
+        <lb />malicc &amp; la corruption de ſa vie, qui le faiſoit hauſſer, &amp; qui
+        <lb />l’enfloit de preſomption, il eſt airué vne ſeconde choſe c’eû
+        <lb /> qu’il s’eſt ſeruy de l’eſpeée, qu’il tenoit en lI’autre main pour
+        <lb />aſſaſſiner, &amp; pour perdfe tous ceux qui ont mis au iour ſes
+        <lb />meſchancetez, &amp; qui ont deſcouuert la verité apres cela dires
+        <lb />vous que ce luy-là eſt homme de bien qui ſous pretexte de Iu
+        <lb rend="¬" break="no" />ſtice aſſaſſine la verité pour, athoriſer ſa malice, ce qui reſte
+        <lb />de ta race pour faire reſouuenir ſes habitans des maux que tu
+        <lb />leur a fſait, en remuant les cendres que ne penſois-tu voyant <pb n="7" />
+        <lb />le débordement des eaux qui ſe ſont groſſies pour venir
+        <lb />lauer le Palais par les pieds, que la cime e veux dire les Chefs
+        <lb />eſtoient tous innocens, &amp; ſans malice puis que la plus baſſe
+        <lb />partie eſtoit de cet edifice eſtot ſi nette &amp; ſi purifiée, il
+        <lb />eſt vray que s’il ouſt fallu autant de pain à la riuiere pour
+        <lb />aſſouuir la rage de ſa faim qu’il luy a fallu de bois nous eu
+        <lb rend="¬" break="no" />ſions apprehendez, de n’en point auoir pour nous mais elle
+        <lb />eſtſaoule &amp; doreſnauant, ſon enflure ſe diminura a vn Prin.
+        <lb />ce malheureux, que tu dois regretter ces entrepriſes puis qu’il
+        <lb />te procurent l’abandon de tous ceux quiont eu de l’amour
+        <lb />pour toy.
+        <lb />N’auez vous iamais fait reflexion ſut ce que raporte l’Eſ
+        <lb rend="¬" break="no" />criture Saincte de ce malheureux Sennacherib, il ſe voyoit
+        <lb />victorieux, de quantitez de belles villes, il ſe conſideroit
+        <lb />enuironneé d’vne floriſſante d’Armée, il ſe glorifioit d’a
+        <lb rend="¬" break="no" />uoir en ſa ſuitte pluſieurs Roy captifs, enfſé de preſom
+        <lb rend="¬" break="no" />ption, &amp; tout glorieux de victoires, il sapproche de la ville
+        <lb />de Ieruſalem, il l’aſſiege, il la fait ſommer, il penſe deſia
+        <lb />la tenir, quoy dit- il, ſur qui ſe fient ces mutins, Nunqnid
+        <lb />nonmprineipes mei ſmoul reges ſune, eſt-ce pas moy qul a ſubiu
+        <lb rend="¬" break="no" />gué tout l’Vniuers, par la porte de mes armes? eſt-ce pas
+        <lb />moy qui a reduit toute la paleſtine, ſous mon obeyſſan
+        <lb rend="¬" break="no" />ce? eſt-ce pas moy qui a contraint tous les Princes eſtran
+        <lb rend="¬" break="no" />gers de receuoir mes commandemens-’&amp; mes loix: rien
+        <lb />n’eſt capable de reſiſter à ma puiſſance, voyés vn peu
+        <lb />comme ce ſuperbe parle &amp; comme il fait. ſonner hault
+        <lb />ſes victoires. Mais attendez vn peu &amp; vous verrez que
+        <lb />Dieu eſt iuſte, c’eſtoit la nuict qu’il parloit de la ſorte lors
+        <lb />quv’n Ange executeur, deſcendu du Ciel vient reduire
+        <lb />en vn moment toute ſon armée en poudre: le iour ne
+        <lb />fut pas ſi toſt venu qu’il ſe voulu leuer, mais il eſt eſtonné
+        <lb />qu’l n’entend, perſonne il apelle ſes pages il mande ſes
+        <lb />Officiers, on ne luy ré́pond as, il ſe leue, il ſort de ſa
+        <lb />Chambre, le premier qu’il rencontre c’eſt vne de ſes gar¬ <pb n="8" />
+        <lb />des couchez par terre, il le frappe auec le pied, &amp; du
+        <lb />cop qu’il luy donne il fait ſortir la cendre de ſes armes;
+        <lb />bin eſtonne il paſſe plus auant, il preic l’oreille, &amp; n’en
+        <lb rend="¬" break="no" />tend point de brut il ſort, &amp; oit toue ſon armé́e couché
+        <lb />par terre dans vn eſpoucntable ſilece. E cem ſurreaiſſe ?
+        <lb />cicalo ueni omnia cednera morftaienn. le vus laiſſe à
+        <lb />penſcr qu’elle ftayeur, lurpris ce ’rne quand il ſe vit tout
+        <lb />ſeu! au milieu de tants de morts.
+        <lb />Paris voila la figure de ce que tu vois à̀ tes portes, c’eſt
+        <lb />vn lPrince enflé de vanité &amp; de preſmption qui t’afflig,
+        <lb />eſecouce comme il parle il te penſe d ſi tenir, mais Dieu
+        <lb />qui lcait que u ne combas que pour le Roy &amp; pour la iu
+        <lb rend="¬" break="no" />ſtce, ta enuoyé vn Ange, vn beaufoit qui eſt deſcendu
+        <lb />d’en-haut pour venit abbatutte au pied de ſcs murailles les
+        <lb />forces de ce Prince, &amp; pour rendre vains &amp; inutils les con
+        <lb rend="¬" break="no" />ſeils pernicieux de tous ceux qui te veulent perdre. Voyez
+        <lb rend="¬" break="no" />vous par laà comme ce Iule Mazarin à eſté́ lncapable de
+        <lb />ſeruir le prochain puis que par ſon infidelite &amp; ſes fourbes
+        <lb />il a meſme pecrdu tous ceux qui l’ont ſuiuy de plus pre2,
+        <lb />&amp; qui l’one appuyez du ſecour de leurs armes, &amp; partant
+        <lb />ayane peedu ſa renomḿe, i’ay eu raiſon de vous preſen
+        <lb rend="¬" break="no" />ter ſon tombeau, &amp; de vous dire, Sepulshrm paens eſt
+        <lb />guttaur orua. Voicy des terribles funerailles qui ot fat
+        <lb />pleurer ceux qui les conſideren auparauant qu’elles fuſſent
+        <lb />arriué il y a long- tenmps, celuy qui en eſt le ſubiet de
+        <lb rend="¬" break="no" />uoit eſtre au tombes, Pais reſiouys toy, il tire à la lni les
+        <lb />harpies l’ont acoompognea peadant ſa vie, le ſuiuronit apres
+        <lb />a mort u- ſeras gueris de touts ces peſtes &amp; dans vne pler
+        <lb rend="¬" break="no" />ne ſanaté u iouyras de’ la peeſnce de ton Roy, à qui t dois
+        <lb />toute ta vie ſouhiter auec v infinité́ de ourohnes des
+        <lb />eternelles benedictions
+        <lb />FIN. </p>
+    </body>
+  </text>
 </TEI>

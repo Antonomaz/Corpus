@@ -1,452 +1,280 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2604_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">L'orage dissipé de devant la ville de Bordeaux par la
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">L'orage dissipé de devant la ville de Bordeaux par la
           présence de Sa Majesté.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=pAodiuEe6K8C"/>
-					<author/>
-					<title source="Moreau">Orage (l') dissipé de devant la ville de Bordeaux par la présence
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=pAodiuEe6K8C" />
+          <author />
+          <title source="Moreau">Orage (l') dissipé de devant la ville de Bordeaux par la présence
             de Sa Majesté.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher>
-						<persName>
-							<forename>David</forename>
-							<surname>Beauplet</surname>
-						</persName>
-					</publisher>
-					<date source="Moreau" when="1650">1650</date>
-					<extent>
-						<measure quantity="7" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2643743">Londres</settlement>
-						<institution>The British Library</institution>
-						<repository/>
-						<idno type="cote"/>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>False</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher>
+            <persName>
+              <forename>David</forename>
+              <surname>Beauplet</surname>
+            </persName>
+          </publisher>
+          <date source="Moreau" when="1650">1650</date>
+          <extent>
+            <measure quantity="7" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2643743">Londres</settlement>
+            <institution>The British Library</institution>
+            <repository />
+            <idno type="cote" />
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>False</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">2604. Orage (l') dissipé de devant la ville de Bordeaux , par la présence
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">2604. Orage (l') dissipé de devant la ville de Bordeaux , par la présence
           de Sa Majesté. Paris, David Beauplet, 1650, 7 pages.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">récit</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_38" source="Moreau">
-					<p>Paix de Bordeaux</p>
-					<date when="1650-10-01">1650-10-01</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-05-30" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<figure type="decoration"/>
-L'ORAGE
-        DISSIPE
-        DE DEVANT LA VILLE
-        BORDEAVX
-        PAR LA PRESENCE DE SA
-        MAIESTE. 
-        A PARIS,
-        Chez DAVID BEAVPLET, demeurant à l'entrée de la
-        ruë de la Huchette, à la Corne de Cerf.
-        M. DC. XXXXX.
-        
-        3
-        L’ORAGE
-        DISSIPE
-        DE DEVANT LA
-        ville de Bordeaux par la pre
-        ſence de Sa Majeſté.
-        COMME le plus ſouuent lors qu’v
-        vaiſſeaueſt expoſeé aux ondes incon
-        ſtantes, les Mariniers prevoyants
-        quelque tempeſte penſent neant
-        moints que ſe ue ſera qu’vne pette
-         bourraſque, qui auſſi courte que vio
-        lente ſe pourra conuertir en vne pai
-        ſible bonnace: le Ciels’arme d’eſclairs, &amp; ſe couure
-        d’obſcures nuees, qui crevantes ſur eux auec vne groſ
-        ſe teapeſte, meſlee de tonnerres eſpouuantables, &amp;
-        les tourbillons de vents, parmy les tenebres de cét ho
-        rage, les leuant tantoſt ſur les flots iuſques aux eſtoil
-        les, &amp; tantoſt ouurant les onudes par le milieu, l’enfon
-        çant auc haorreur iuſques aux abiſtaes: font perdre
-        aux Matteloes tout eſpoir de ſalut: &amp; le bleſme Pilote
-        ayant quelque tems reſiſté à la fortune, fait abbatre
-        es voilles, &amp; toumant ſon gouuenail ſelon l’oeca;
-        A ii 
-        fion, eſt contraint de l’abbandonntt à cauſe du buict
-        q ſort tout à la fois des foudres, des vents, des eux,
-        des crls, des tenebres, &amp; de la conſuſion qui cſt entout
-        lIe vaſſeau, n’ayant plus de moyen de commander ny
-        les Matte lots d’obeyr, &amp; ainſi leur ſeul recours eſtant
-         aus priecs, n’attendant plus que l’heure d’eſtre en
-        louty des ondes qui rempliſſent dé́ja le vaiſſeau;
-        Neptune comme ſatisfait d’auoir puny ces audacieux
-         qui auoient auparauant mépriſé ſonpouuoir, le Ciel
-        deuient derechefſerain, &amp; la mer calme, &amp; les vents
-        abbayans contre les vagues oyant lutté́ tout le ious
-        enſemble ſe retirent en leurs Cauernes, laiſſant le mi
-        ſerable vaiſſeau en quelque repos, qui tout froiſſe de
-         la tempeſte &amp; entr’ouuert de ſes ſecouſſes, ſetrouue
-        enfin à port aſſeuré lors que ceux qui eſtoient dedans
-         n’eſperoient rien moins que la mort.
-        Ainſi me ſemble-t’il ( Grand Roy) de cette jlluſlre
-        &amp; ſamcuſe ville de Bordeaux, qui ayant au commen
-        cement mépriſe en quelque ſorte voſtre puiſſance, à
-        enfin reconnu ſa faute d’auoir abuſé fi long-temps de
-        voſtre bonte, laquelle vous ne luy auiez monſtré qu0
-        trop grãde, en lny ailant tan de fois de h belles offies.
-        Mais enfin, voyant ſes furces eſtre inutilles, ayant a
-        combatre de ſi puiſſantes Deitez, elle l’a auec vne
-        prudence nompareille eſtimé les prieres plus propres
-        pour obtenir de tels courages, ee qu’elle deſiroit, que
-        la force qui ne peut faire autre effeét nuers eu, qus
-        d’accroiſtre de beaucoup le courage &amp; l’indignatiou.
-         Et de vray, que pouuoit-elle employer deplus ville
-        pour ſon ſalut, de plus grand pour ſon honneur, &amp;
-        queſque enfin luy euſt peu eſtre plus glorieux que de
-        reconnoiſtre &amp; rendre ſes de buoirs à̀ ſon Roy, lors
-        qu’on croyoirt qu’elle eſtoit tout a fait retire de ſon
-        obeyſſance ? De combien de nations eét acte ſera-t’i
-        admiré ? A combien de médiſans fſermera-t’il la bou
-        che? Et combie ſerat’il eſlimé geuereux par tout
-        la poſuarité. 
-        .
-        Lots qu’on apenſé que Bordeaux eſtoit proche de
-        ſa ruynae, lors que les Bordelois meſmes le croyoiet,
-         au moment meſme qu’il n’y auoit plus pour dire
-        ainſiaueune eſperance de ſalut: le Ciel a lors a com
-        mnencé de reprendre ſa premiere ſerenité ce n’a eſté
-        que paix &amp; tranquillité, lors qu’on croyoit qu’il n’y
-        auroit que guerre &amp;e maſſacre, que douceur &amp; ioye,
-        Qa on n’eſperoit que triſteſſes &amp; douleuars, &amp; vne ſin
-        cere amitié au lieu de haine &amp; enuire mortelle..
-         Mtais pourquoy? grand Neptune auez-vous eſté ſi
-        long-temps courroucé ?Pourquoy n’auez-vous poine
-        ealmé ſeslots vnpeu de meilleure heure ? Pourquoy
-        diſiz auez-vous attends que le vaiſſeau ait eſté́ tout
-        roſfe ?aſtoit-eos pour monſtrer uoſtre puiſſance plus
-        grende en donaant la vie à des perſonnes qui ſe c oy
-        oient eſtre toat proche de la perte d’icelles, ou pour
-        vous venger de ceux quiauoient en que lque lorte ſi
-        ardimient meſpriſé voſtre Sceptre, mais quoy, pour
-        ions-nouscroire qu’vn ſi Grand Roy doüé de tant de
-        vetus, d’n ſ grand eſprit, &amp; d’vae Ame pour dire
-        ainfi toute Celeſte, peur auotr des deſleins ſi bas &amp; ſi
-        terrteſtres. Rejettons ceepenſée de noſte eſpritcõ̃
-        me vne choſe qui nosſeroi impusée; grand crime
-         pourrionsous. diſ,je cocepoir des intentions de
-        aurree de ſang dans vne peſpnne qu ne re ſpire
-        aare choſe que l’nnocence &amp; la douceur, non, no,
-        oyons qu’il eſt tropbien appris pour ne ſç̧auoir que
-        l’eſtcrituce dis, que qui cherehe la vengea nce de lhom
-        e trouaairra celle de Dieu: qu’il arriue raje me nt que,
-        ls appetits de ſe venger ſuccsdent comme on les a
-        pojece, Qu’il y a vne aaain du Ciel qui les arreſte
-        qui nous append que lors qu’onde libere d la ft u
-        oed’auuy il faut appeller la ſie nne au Conſei!. Ms
-        pouy ml’arreſter icy. ſi long-emps, ne ſç̧auos
-        ouspasto bie qu’aa lie de gueqte &amp; de ee an
-        olleae ſouhantent rien taa; que l’amitié :! Paix,
-        8. 
-         6
-        que pour l’auoir il abbandonne ſa vill de Paris, &amp; que
-        par ſon déparr il en laiſſe les habisans dans vne pes
-        petuelle nuit puis qu’ils perdent en luy ce Soleil donô
-        ils rirent toutes leurs lamieres: I l’abbandonne diſie
-        quoy qu’il ſçache que perdant ſon abſence ils ſerons
-        plongez dans vne triſteſſe qui pourſa grandeuz ne
-        peut exprimner. Et qui plus oſt, iabbandonepuoads
-        ler en des lieux extrémetaent éloignis &amp;petillos9
-        qu’il mettoit ſa vis dans vnéuident dange.. 2
-         N’aceuſons donc point vne action qui menit ôu
-        lieu de blaſme vne gloire immortelle. te l’aceufond
-        point, diſaie pniſque qu’eſtatla Juſfticauaaſmoell
-        ne pourroit tourer qu’a vn deshonnear daqel nouô
-        ne pourrions uoûs guarbtit, nas au btraiaé, oì
-        blons-laà de toutes les laages qu aoas pantraa
-        ſnuenater, &amp; eſtimons apes que us ’ausonsrien
-        dit auprix de cs qu’elle merite.
-         Comparons ce Grand Roy à ce mermorabls iœſa
-        qui apres auor eu ette cruelle guorte õrn Pomp̂s
-        ou il moutut plus de deux cens milles homnes, où
-        Pompée ayant eſté vaineu, ſe retia chez Ptolomeéé
-        Roy d’Egypre, lequel luy ayant faict coupper la taît
-        l’e nuoya à Ceſar quipar v ate monmapareil degenr
-        roſité l’euoyant au dieu de ſereſiouyr de lanortdaſoa
-        plus grad enneny ſe mit àpleurer amerement
-        ayant vne autre fois rencontté́ le plus grand grin
-        de ’loquence qui ayt iamais eſté, lequel ayant eon
-        leparty du grand Pompée craignoit de le rencontret!
-        vitorieux, mais cé́e inuineible beros me lL’euſt pan
-        pluſtoſt apperceu qu’il mit pied à terre &amp;l res4ut ¬.
-        vec beaucoup de duceur &amp; de conrtolfle lypatdon
-        nant comme il auoit fait à pluſieurs autres..
-        A qui donc de graee pourrions.- nous mien c:
-        parer vn ſi grand Monarque que lors qu’il a qelqo
-        auantage ſurſes e nneas; &amp; qu’il puroit les deſtrpit:
-        &amp; ruyner de fôds ea cõble;dais ll es naitlsuaiep 
-        8
-        nét en ſa protection, comme cé́t illuſtre Guërrler &amp;
-        pleure ceux qui y ont perdu la-vie ? Combien donc de
-        lauriers &amp; de palmes a r’emporté cét llluſtre Price de
-        cette ation? Combien de loüanges y a t’il acquis? Et
-        conabien glorieux &amp; illuſtres ſeront ces fameux Bor
-        delôs aptes auoir faict de ſi genereuſes actions, maais
-        quels lus grands honneurs luy rendrone ſes bons
-        ſujects de ſa ville de Paris, lors qu’il yſera de retour,
-        que d’applaudiſſemens &amp; cris d’alle greſſ retentirons
-        ea l air durant cette heureuſe iournee, pour. porter la
-        aouelle de leur ioye iuſques aux Cieux, afin qu
-        les Eſtoillſes meſmes ſe reſiouyſſants de cette heuru
-        ſe Arriuéerendent la auit plus ſeraine pour donnerz
-        oecafioa au peuple de l’employer en feſtins, feux,
-        dances, auec vne tres-grande ſatisfaction. Il me
-        ſemble que j’entends deja les Naiades de la Seine
-        accorder aux doux accens be leurs vox, des chan
-        ſousà ſa gloire, &amp; les grauer ſur le urs maiſons de mar
-        bres, afſinqu’ainſi elles demeurent immortelles.,
-        VIVE LE ROY.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">récit</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_38" source="Moreau">
+          <p>Paix de Bordeaux</p>
+          <date when="1650-10-01">1650-10-01</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-05-30" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />L'ORAGE
+        <lb />DISSIPE
+        <lb />DE DEVANT LA VILLE
+        <lb />BORDEAVX
+        <lb />PAR LA PRESENCE DE SA
+        <lb />MAIESTE. <figure type="decoration" />
+        <lb />A PARIS,
+        <lb />Chez DAVID BEAVPLET, demeurant à l'entrée de la
+        <lb />ruë de la Huchette, à la Corne de Cerf.
+        <lb />M. DC. XXXXX.<pb n="2" />
+        <pb n="3" />
+        <lb />3
+        <lb />L’ORAGE
+        <lb />DISSIPE
+        <lb />DE DEVANT LA
+        <lb />ville de Bordeaux par la pre
+        <lb rend="¬" break="no" />ſence de Sa Majeſté.
+        <lb />COMME le plus ſouuent lors qu’v
+        <lb />vaiſſeaueſt expoſeé aux ondes incon
+        <lb rend="¬" break="no" />ſtantes, les Mariniers prevoyants
+        <lb />quelque tempeſte penſent neant
+        <lb rend="¬" break="no" />moints que ſe ue ſera qu’vne pette
+        <lb /> bourraſque, qui auſſi courte que vio
+        <lb rend="¬" break="no" />lente ſe pourra conuertir en vne pai
+        <lb rend="¬" break="no" />ſible bonnace: le Ciels’arme d’eſclairs, &amp; ſe couure
+        <lb />d’obſcures nuees, qui crevantes ſur eux auec vne groſ
+        <lb rend="¬" break="no" />ſe teapeſte, meſlee de tonnerres eſpouuantables, &amp;
+        <lb />les tourbillons de vents, parmy les tenebres de cét ho
+        <lb rend="¬" break="no" />rage, les leuant tantoſt ſur les flots iuſques aux eſtoil
+        <lb rend="¬" break="no" />les, &amp; tantoſt ouurant les onudes par le milieu, l’enfon
+        <lb rend="¬" break="no" />çant auc haorreur iuſques aux abiſtaes: font perdre
+        <lb />aux Matteloes tout eſpoir de ſalut: &amp; le bleſme Pilote
+        <lb />ayant quelque tems reſiſté à la fortune, fait abbatre
+        <lb />es voilles, &amp; toumant ſon gouuenail ſelon l’oeca;
+        <lb />A ii <pb n="4" />
+        <lb />fion, eſt contraint de l’abbandonntt à cauſe du buict
+        <lb />q ſort tout à la fois des foudres, des vents, des eux,
+        <lb />des crls, des tenebres, &amp; de la conſuſion qui cſt entout
+        <lb />lIe vaſſeau, n’ayant plus de moyen de commander ny
+        <lb />les Matte lots d’obeyr, &amp; ainſi leur ſeul recours eſtant
+        <lb /> aus priecs, n’attendant plus que l’heure d’eſtre en
+        <lb rend="¬" break="no" />louty des ondes qui rempliſſent dé́ja le vaiſſeau;
+        <lb />Neptune comme ſatisfait d’auoir puny ces audacieux
+        <lb /> qui auoient auparauant mépriſé ſonpouuoir, le Ciel
+        <lb />deuient derechefſerain, &amp; la mer calme, &amp; les vents
+        <lb />abbayans contre les vagues oyant lutté́ tout le ious
+        <lb />enſemble ſe retirent en leurs Cauernes, laiſſant le mi
+        <lb rend="¬" break="no" />ſerable vaiſſeau en quelque repos, qui tout froiſſe de
+        <lb /> la tempeſte &amp; entr’ouuert de ſes ſecouſſes, ſetrouue
+        <lb />enfin à port aſſeuré lors que ceux qui eſtoient dedans
+        <lb /> n’eſperoient rien moins que la mort.
+        <lb />Ainſi me ſemble-t’il ( Grand Roy) de cette jlluſlre
+        <lb />&amp; ſamcuſe ville de Bordeaux, qui ayant au commen
+        <lb rend="¬" break="no" />cement mépriſe en quelque ſorte voſtre puiſſance, à
+        <lb />enfin reconnu ſa faute d’auoir abuſé fi long-temps de
+        <lb />voſtre bonte, laquelle vous ne luy auiez monſtré qu0
+        <lb />trop grãde, en lny ailant tan de fois de h belles offies.
+        <lb />Mais enfin, voyant ſes furces eſtre inutilles, ayant a
+        <lb />combatre de ſi puiſſantes Deitez, elle l’a auec vne
+        <lb />prudence nompareille eſtimé les prieres plus propres
+        <lb />pour obtenir de tels courages, ee qu’elle deſiroit, que
+        <lb />la force qui ne peut faire autre effeét nuers eu, qus
+        <lb />d’accroiſtre de beaucoup le courage &amp; l’indignatiou.
+        <lb /> Et de vray, que pouuoit-elle employer deplus ville
+        <lb />pour ſon ſalut, de plus grand pour ſon honneur, &amp;
+        <lb />queſque enfin luy euſt peu eſtre plus glorieux que de
+        <lb />reconnoiſtre &amp; rendre ſes de buoirs à̀ ſon Roy, lors
+        <lb />qu’on croyoirt qu’elle eſtoit tout a fait retire de ſon
+        <lb />obeyſſance ? De combien de nations eét acte ſera-t’i
+        <lb />admiré ? A combien de médiſans fſermera-t’il la bou
+        <lb rend="¬" break="no" />che? Et combie ſerat’il eſlimé geuereux par tout
+        <lb />la poſuarité. <pb n="5" />
+        <lb />.
+        <lb rend="¬" break="no" />Lots qu’on apenſé que Bordeaux eſtoit proche de
+        <lb />ſa ruynae, lors que les Bordelois meſmes le croyoiet,
+        <lb /> au moment meſme qu’il n’y auoit plus pour dire
+        <lb />ainſiaueune eſperance de ſalut: le Ciel a lors a com
+        <lb rend="¬" break="no" />mnencé de reprendre ſa premiere ſerenité ce n’a eſté
+        <lb />que paix &amp; tranquillité, lors qu’on croyoit qu’il n’y
+        <lb />auroit que guerre &amp;e maſſacre, que douceur &amp; ioye,
+        <lb />Qa on n’eſperoit que triſteſſes &amp; douleuars, &amp; vne ſin
+        <lb rend="¬" break="no" />cere amitié au lieu de haine &amp; enuire mortelle..
+        <lb /> Mtais pourquoy? grand Neptune auez-vous eſté ſi
+        <lb />long-temps courroucé ?Pourquoy n’auez-vous poine
+        <lb rend="¬" break="no" />ealmé ſeslots vnpeu de meilleure heure ? Pourquoy
+        <lb />diſiz auez-vous attends que le vaiſſeau ait eſté́ tout
+        <lb />roſfe ?aſtoit-eos pour monſtrer uoſtre puiſſance plus
+        <lb />grende en donaant la vie à des perſonnes qui ſe c oy
+        <lb rend="¬" break="no" />oient eſtre toat proche de la perte d’icelles, ou pour
+        <lb />vous venger de ceux quiauoient en que lque lorte ſi
+        <lb />ardimient meſpriſé voſtre Sceptre, mais quoy, pour
+        <lb rend="¬" break="no" />ions-nouscroire qu’vn ſi Grand Roy doüé de tant de
+        <lb />vetus, d’n ſ grand eſprit, &amp; d’vae Ame pour dire
+        <lb />ainfi toute Celeſte, peur auotr des deſleins ſi bas &amp; ſi
+        <lb />terrteſtres. Rejettons ceepenſée de noſte eſpritcõ̃
+        <lb rend="¬" break="no" />me vne choſe qui nosſeroi impusée; grand crime
+        <lb /> pourrionsous. diſ,je cocepoir des intentions de
+        <lb />aurree de ſang dans vne peſpnne qu ne re ſpire
+        <lb />aare choſe que l’nnocence &amp; la douceur, non, no,
+        <lb />oyons qu’il eſt tropbien appris pour ne ſç̧auoir que
+        <lb />l’eſtcrituce dis, que qui cherehe la vengea nce de lhom
+        <lb rend="¬" break="no" />e trouaairra celle de Dieu: qu’il arriue raje me nt que,
+        <lb />ls appetits de ſe venger ſuccsdent comme on les a
+        <lb />pojece, Qu’il y a vne aaain du Ciel qui les arreſte
+        <lb />qui nous append que lors qu’onde libere d la ft u
+        <lb rend="¬" break="no" />oed’auuy il faut appeller la ſie nne au Conſei!. Ms
+        <lb />pouy ml’arreſter icy. ſi long-emps, ne ſç̧auos
+        <lb />ouspasto bie qu’aa lie de gueqte &amp; de ee an
+        <lb rend="¬" break="no" />olleae ſouhantent rien taa; que l’amitié :! Paix,
+        <lb />8. <pb n="6" />
+        <lb /> 6
+        <lb />que pour l’auoir il abbandonne ſa vill de Paris, &amp; que
+        <lb />par ſon déparr il en laiſſe les habisans dans vne pes
+        <lb />petuelle nuit puis qu’ils perdent en luy ce Soleil donô
+        <lb />ils rirent toutes leurs lamieres: I l’abbandonne diſie
+        <lb />quoy qu’il ſçache que perdant ſon abſence ils ſerons
+        <lb />plongez dans vne triſteſſe qui pourſa grandeuz ne
+        <lb />peut exprimner. Et qui plus oſt, iabbandonepuoads
+        <lb />ler en des lieux extrémetaent éloignis &amp;petillos9
+        <lb />qu’il mettoit ſa vis dans vnéuident dange.. 2
+        <lb /> N’aceuſons donc point vne action qui menit ôu
+        <lb />lieu de blaſme vne gloire immortelle. te l’aceufond
+        <lb />point, diſaie pniſque qu’eſtatla Juſfticauaaſmoell
+        <lb />ne pourroit tourer qu’a vn deshonnear daqel nouô
+        <lb />ne pourrions uoûs guarbtit, nas au btraiaé, oì
+        <lb />blons-laà de toutes les laages qu aoas pantraa
+        <lb />ſnuenater, &amp; eſtimons apes que us ’ausonsrien
+        <lb />dit auprix de cs qu’elle merite.
+        <lb /> Comparons ce Grand Roy à ce mermorabls iœſa
+        <lb rend="¬" break="no" />qui apres auor eu ette cruelle guorte õrn Pomp̂s
+        <lb />ou il moutut plus de deux cens milles homnes, où
+        <lb />Pompée ayant eſté vaineu, ſe retia chez Ptolomeéé
+        <lb />Roy d’Egypre, lequel luy ayant faict coupper la taît
+        <lb />l’e nuoya à Ceſar quipar v ate monmapareil degenr
+        <lb />roſité l’euoyant au dieu de ſereſiouyr de lanortdaſoa
+        <lb />plus grad enneny ſe mit àpleurer amerement
+        <lb />ayant vne autre fois rencontté́ le plus grand grin
+        <lb />de ’loquence qui ayt iamais eſté, lequel ayant eon
+        <lb />leparty du grand Pompée craignoit de le rencontret!
+        <lb />vitorieux, mais cé́e inuineible beros me lL’euſt pan
+        <lb />pluſtoſt apperceu qu’il mit pied à terre &amp;l res4ut ¬.
+        <lb />vec beaucoup de duceur &amp; de conrtolfle lypatdon
+        <lb rend="¬" break="no" />nant comme il auoit fait à pluſieurs autres..
+        <lb />A qui donc de graee pourrions.- nous mien c:
+        <lb />parer vn ſi grand Monarque que lors qu’il a qelqo
+        <lb />auantage ſurſes e nneas; &amp; qu’il puroit les deſtrpit:
+        <lb />&amp; ruyner de fôds ea cõble;dais ll es naitlsuaiep <pb n="7" />
+        <lb />8
+        <lb />nét en ſa protection, comme cé́t illuſtre Guërrler &amp;
+        <lb />pleure ceux qui y ont perdu la-vie ? Combien donc de
+        <lb />lauriers &amp; de palmes a r’emporté cét llluſtre Price de
+        <lb />cette ation? Combien de loüanges y a t’il acquis? Et
+        <lb />conabien glorieux &amp; illuſtres ſeront ces fameux Bor
+        <lb rend="¬" break="no" />delôs aptes auoir faict de ſi genereuſes actions, maais
+        <lb />quels lus grands honneurs luy rendrone ſes bons
+        <lb />ſujects de ſa ville de Paris, lors qu’il yſera de retour,
+        <lb />que d’applaudiſſemens &amp; cris d’alle greſſ retentirons
+        <lb />ea l air durant cette heureuſe iournee, pour. porter la
+        <lb />aouelle de leur ioye iuſques aux Cieux, afin qu
+        <lb />les Eſtoillſes meſmes ſe reſiouyſſants de cette heuru
+        <lb />ſe Arriuéerendent la auit plus ſeraine pour donnerz
+        <lb />oecafioa au peuple de l’employer en feſtins, feux,
+        <lb />dances, auec vne tres-grande ſatisfaction. Il me
+        <lb />ſemble que j’entends deja les Naiades de la Seine
+        <lb />accorder aux doux accens be leurs vox, des chan
+        <lb rend="¬" break="no" />ſousà ſa gloire, &amp; les grauer ſur le urs maiſons de mar
+        <lb />bres, afſinqu’ainſi elles demeurent immortelles.,
+        <lb />VIVE LE ROY. </p>
+    </body>
+  </text>
 </TEI>

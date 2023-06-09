@@ -1,1066 +1,592 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau745_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">La conférence secrète tenue, à Pontoise, entre le roi, la
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">La conférence secrète tenue, à Pontoise, entre le roi, la
           reine, le cardinal Mazarin, messieurs les princes et plusieurs autres grands seigneurs de
           la cour.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=9GFCAAAAcAAJ"/>
-					<author/>
-					<title source="Moreau">Conférence (la) secrète tenue, à Pontoise, entre le roi, la reine,
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=9GFCAAAAcAAJ" />
+          <author />
+          <title source="Moreau">Conférence (la) secrète tenue, à Pontoise, entre le roi, la reine,
             le cardinal Mazarin, messieurs les princes et plusieurs autres grands seigneurs de la
             cour.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1652">1652</date>
-					<extent>
-						<measure quantity="16" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="BM01415" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50318"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2867714">Munich</settlement>
-						<institution>Bibliothèque de l'État de Bavière</institution>
-						<repository/>
-						<idno type="cote"/>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>False</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1652">1652</date>
+          <extent>
+            <measure quantity="16" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="BM01415" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm50318" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2867714">Munich</settlement>
+            <institution>Bibliothèque de l'État de Bavière</institution>
+            <repository />
+            <idno type="cote" />
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>False</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine">Reprise du texte publié à Paris en 1649 sous les titres "Histoire des
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine">Reprise du texte publié à Paris en 1649 sous les titres "Histoire des
           esprits revenus à S. Germain. Burlesque &amp; serieux." (BM01413) et "Le roman des esprits
           revenus a S. Germain. Burlesque &amp; serieux." (BM01398 et BM01414), sauf les deux
           premières pages jusqu'à la fin de la dernière phrase complète.</p>
-				<p source="Moreau">745. Conférence (la) secrète tenue, à Pontoise, entre le roi, la reine,
+        <p source="Moreau">745. Conférence (la) secrète tenue, à Pontoise, entre le roi, la reine,
           le cardinal- Mazarin, messieurs les princes et plusieurs autres grands seigneurs de la
           cour. Paris, 1652, 16 pages. Contrefacon d’une pièce qui a paru en 1649, sous les titres
           de - Histoire des esprits et Roman des esprits revenus de Saint-Germain,</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="subject">Louis, roi de France, XIV, 1638-1715</term>
-					<term type="subject">Anne d'Autriche, 1601-1666</term>
-					<term type="subject">Condé, Louis de Bourbon, prince de, 1621-1686</term>
-					<term type="subject">Conti, Armand de Bourbon, prince de, 1629-1666</term>
-					<term type="subject">Longueville, Henri, duc de, II d'Orléans, 1595-1663</term>
-					<term type="subject">Orléans, Gaston, duc d', 1608-1660</term>
-					<term type="subject">Orléans, Marguerite de Lorraine, duchesse d', 1615-1672</term>
-					<term type="subject">Montpensier, Anne-Marie-Louise-Henriette d'Orléans, duchesse de,
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="subject">Louis, roi de France, XIV, 1638-1715</term>
+          <term type="subject">Anne d'Autriche, 1601-1666</term>
+          <term type="subject">Condé, Louis de Bourbon, prince de, 1621-1686</term>
+          <term type="subject">Conti, Armand de Bourbon, prince de, 1629-1666</term>
+          <term type="subject">Longueville, Henri, duc de, II d'Orléans, 1595-1663</term>
+          <term type="subject">Orléans, Gaston, duc d', 1608-1660</term>
+          <term type="subject">Orléans, Marguerite de Lorraine, duchesse d', 1615-1672</term>
+          <term type="subject">Montpensier, Anne-Marie-Louise-Henriette d'Orléans, duchesse de,
             1627-1693</term>
-					<term type="subject">La Meilleraye, Charles de la Porte, duc de, 1602-1664</term>
-					<term type="subject">Gramont, Antoine de, 1604-1678</term>
-					<term type="subject">Orléans, Philippe, duc d', 1640-1701</term>
-					<term type="subject">Roquelaure, Gaston-Jean-Baptiste de Bessuejouls, duc de,
+          <term type="subject">La Meilleraye, Charles de la Porte, duc de, 1602-1664</term>
+          <term type="subject">Gramont, Antoine de, 1604-1678</term>
+          <term type="subject">Orléans, Philippe, duc d', 1640-1701</term>
+          <term type="subject">Roquelaure, Gaston-Jean-Baptiste de Bessuejouls, duc de,
             1617-1683</term>
-					<term type="subject">Pontoise (Val d'Oise)</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_90" source="Moreau">
-					<p>Mort de Mancini</p>
-					<date when="1652-07-13">1652-07-13</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-03-23" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<pb n="12"/>
-				<pb n="13"/>
-				<pb n="14"/>
-				<pb n="15"/>
-				<pb n="16"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-LA
-        CONFERENCE
-        SECRETTE
-        TENVE A PONTOISE
-        ENTRE
-        LE ROY,
-        LA REYNE.
-        Le Cardinal Mazarin, Meſſieurs les
-         Pinces &amp; pluſieurs autre Grands
-        Seigneurs de la Cour.
-        A PARIS,
-        M. DC. LII.
-        
-        2
-        CONFERENCE SECRETTE
-        tenue à Ponitoiſe.
-        IE parle pour auoir veu &amp; entendu toutes
-        ces choſes; quelqu’vn me diraauſſi-toſt,
-        a que c’eſt en ſonge, &amp; ie luy répond que
-        c’eſt ainſi que ie l’entends, ie ne dormois pourtét
-        point quand i’ay fait ce ſonge, cela ſemblera d’a
-        bord bien eſtrange; mais il n’eſt pas impoſſible
-        qu’vneſprit- agiſle de toutes les manieres.
-        Cepandant ie me louuiens que ces iours paſ
-        ſez à̀ Pontoiſe, eſtant entré dans le grand Iardin
-        du Chaſteau, dans le deſſein d’y prendre le plai
-        ſirde la promenade, qui eſtoit tres-agreable ſe
-        ſoir-la,à cauſe de la ſerenité de l’air, &amp; de la ſoli
-        ude du lieu, où ie ne rencontrois perſonne, ie
-        fs des tours d’allée, autant qu’il en faut pour
-        laſſer vn homme, qui ne ſeroit pas des plus ca
-        pables de fatiguer, dés-la ie fus bien ayſe de
-        rouuer des ſieges, comme vous le pouuez pen
-        ler, qui eſtoient la mis fort à̀ propos, le long d’vn
-        petit taillis, pour la ommodité de ceux qui ſont
-        bien ayſes de n’eſtre pas touſiours debout, là ie
-        m’aſſis aſſez doucement comme vous le pou
-         uez croire, de peur de me faire mal dont ie n’a
-         uois guere enuie.
-         Ie e fus pas ſi long-temps qu’il y a, que i’en
-        parle, que ie m’auiſay que ie me repoſerois en
-         tore bien mieux ſi ieſtois couché tout de mon
-        ong, chacun fait comme il l’entend, pour moy
-        A ij 
-        ie me iettay tout librement ſur l’herbe, dans v
-        lieu aſſez couuert, de peur d’eſtre inquieré par
-        la rencontre des autres!
-        O que-i’eſtois contenat de me voir tout ſeul
-        loin de l’embaras du monde &amp; de la Cour mais
-        que cette ſatisfaction dura peu, &amp; que ie me vis
-        tout à coup ſurpris, lors que i’y penſois le moins
-        ie m’endormis pourtant aſſez agreablement agi
-        t́ de differentes imaginations tantoſt le ma
-        gnifique balet d’Orphée, &amp; l’illuſtre tragi-co
-        medies d’En dromede, me repaſſoient dans la
-        memoire comme ſi ces choſes meuſſent eſte er
-        core preſentes, &amp; il me ſembloit voir le Cardi,
-        nal Mazarin rire en ſa barbe, à la veue de ces
-        magnificences, dont il ſe glorifioit d’eſtrel’Au
-        teur, ie me figurois, des ſiecles d’or plus d’v
-        Million, ſous ſon Miniſtere, ie me fondois
-        ſur ce qu’il commenç̧oit par les ris, les leu
-        &amp; la danſe qui ſontc les ordinaires compagnesde
-        de la felicité. Ie remarquois comme il faiſoit
-        rtous les ſoirs arrouſer à ſes deſpends, le cours de
-        la Reyne, &amp; ie le voyois deſia transſorme en vn
-        delicieux par terre: où il deuoit ſemer tous les
-        eſcus de France, i’admirois ces ſuperbes ba
-        ſtiments, pour ſes Eminentiſſimes Cheuaux
-        &amp; ie diſois deſia qu’elles maiſons fera-t’il
-        pour habiter des hommes, ainſi ie reſiois
-        fort agreablement pour l’auenir. Au milieau
-        d’vn ſi doux ſommeil, quelque bruit impos
-         tu 
-        2
-        1l
-        l
-        l
-        l
-        al
-        8l
-        portun de perſonnes qul parloient aſſez haut, m’eé
-        ueilla mal-gré moy, &amp; rompit le charme de mes
-        yeux qui ne vouloient point s’ouurir. Ie ne fus pas
-        plutoſt en liberté de voir, que ie regar day du coſté
-        des ſieges,, ouù ie vis paſſer vne troupe de Gardes
-        &amp; de Suiſſes, qui ſe diſoient: il n’ya perſonne, al
-        lons fermer les portes: Comme ie connoiſſois la
-        brutalité de ces gens-là, qui ne conſiderent per
-        ſonne, ie ne branlay pas de ma place, de peuz de re
-        ceuoir quelque coup, dont ces gens-là font bon
-        marcheé; &amp; de plus, ie craignois qu’ils ne me cher
-        chaſſent pour me chaſtier, d’eſtre entré ſi libre
-        ment dans ce iardis, ſans leuar permiſſion: Apeine
-         eſtoient-ils paſſez, qu’vne troupe magnifique de
-        erſonnes illuſtres parut au milieu de I’allée, qui
-        venoit à petit-pas au lieu où ie m’eſtois repoſeé pre
-        mierement. Ie ne fus pas peu ſurpris à l’éclat de
-        tant de maiefté: &amp; bien dauantage, qund iere
-        connu le Roy, la Reine, le Cardinal, &amp; les Prin
-        ces. I’eſtois en doute, ſi ie voulois prendre lafuit
-        e oume teai cadhé: mais onſiderant que ſi ie
-        courrois à qulque porte, qui eſtoit aſſeureément
-        bien gardé́e, ie omberois entre les mains de ces
-        Satelſires impioyables, &amp; qu’ils me tueroient au
-        ſimple ſoupçon que i leurdõnerois d’aſtre laà pour
-        quelque mamuais deſſein; dans cetre apprehenſion,
-        ie me tiens ſans faire de bruit, le mieux couuert
-        qu’il m’eſtoit poſſble, auec cetce reſolution, que
-         quelqu’vn de cete belle Compagnie venait à 
-        me dé́couurir, ie demanderois à̀ parler à̀ la Reine;
-        &amp; apres luy auoir demandé pardon de ma temeri
-        té, ie luy conterois naifuement toute ma faute, &amp;
-        luy ferois ſçauoir toures les miſeres de Paris,
-        pour la diſpoſer à la compaſſion, &amp; puis ie luy de
-        manderois la grace d’eſtre mis dehors auec quel
-        que ſeureté.
-        Sur cette confiance, ie leuay vn pe les youx &amp;
-        ie les vis qu’ils prenoient place ſur les meſmes ſie
-        ges ou i’auois eu l’honneur de m’aſſeoir aupara
-        uant. l’eſtois aſſez pres d’eux pour ouyr leurs diſ
-        -cours, &amp; i’euſſe voulu en eſtre bien loin. Quelques
-        vns s’eſtoient deſa auancez de pr ler des deſordres
-        de l’Eſtat; mais le Roy leur impoſa ſilence, &amp; leur
-        diſt, qu’il n’eſtoit la venu que pour ſe recreer, &amp;.
-        non pas pour parler d’affaires; qu’il vouloitr ioü̈er
-        à quelque petit ieu, ou bien que l’on racontaſt
-        qulque bonne htoire Toue la Courquiral
-        ſerieux aà̀ l’inſtant meſme, &amp; chacun prit vnviſage
-        riant pour luy complaire, la Reine meſme fit vous
-        que cela luy eſtoit fort agreable; lay auoit que!
-        le Cardinal qui ne pouuoit faire bonné niine, à
-        cauſe de ſon mauuaisjeu. Le Roy ſe tournant de
-        ſon coſté, luy diſt, Monſieur le Cardinal vous qui
-        en ſç̧auez tcouſiours de. bodnuios, ne nous endirez
-        vous point quelque-vne quioit belle?.
-         Sire, reſpondit-il froidement, ievous en dirois
-        bien vne, mais ie crains qu’elle ne donne dela rer
-        reur à Voſtre Maieſté, tant elle eſt effnoyable. ll 
-        l
-        1l
-        1
-        7
-        vaut mieux ue vous commençiez le premier, &amp;
-        puis que chacun à ſon rangen diſe quelqu’vne re
-        creatiue, &amp; la mienne ſera la derniere, afin que
-        nous nous en allions ſouper là̀ deſſus auec plus d’a
-        petit: Mon Dieu, dit le Roy, que i’ay enuie de la
-        ſç̧auoir; mais puiſque vous voulez que ie com
-        mence, ie m’en vay me deſpecher, &amp; que chacun
-        le faſſe curt; à mon exemple, pour venir viſtement
-        à la voſtre! Cela dit, il raconta en peu de mots la
-        generoſité du petit Alexandre, qui pleuroit quand
-        ſon pere aſſiegeoit quelque ville d’importance; &amp;
-        adiouſta, qu’l auoit pleureé quelquesfois la nuict
-        de ce que ſà bonrlenahan aſſiegeoit ſa bonne Vil
-        le de Paris. Le Duc d’Anjou, diſt que ſon petit Pa
-        pa auoit dit la’ſienne, &amp; qu’il n’en ſçauoit point
-        d’autre’pour l’heure. La Reine raconta le ſixieſ
-        me tome de CGleopatre, dont Calpreelé hiy auoit
-        fait preſent depuis peu. Monſieur le Duc d’Or
-        leanspour la ſienne, prit le trait du bon Caligula,
-        qui-fit autrefois deelarer ſon cheual Conſul de Ro
-        me, &amp; fit abaiſſer les degrez du Capitole, afin de
-        l’y faire monter, &amp; de donner place à ce braue che
-        ual au plus pres de ſa petſonne. On fit vne poſe en
-        cet endroit, dautant que’Monſieur le Prince ſe
-        ptit à rirede cecteé plaiſanetie,tou le monde à
-        on imitarion, excepteé le Cardinal qui ne rioit que
-        du bout des dents.
-         Enfin, Monſieurs le Prince reprit la ſuite, &amp; ra
-        conta la haataille del Phlaſaleé douant. Roae, o 
-        8
-        Ceſar fut victorieux, adioû̂tant qu’il n’eſperoit pas
-        vn moindre ſuccez queluy.
-        Madame la Ducheſſe d’Orleans alloit contet
-        toute la Cout Saincte; mais la Reine la pria defi
-        ir, pour ne point rompre l’ordre que le Roy auoit
-        mis pour la briefueté. Madamoiſelle ſe ſouuint
-        des genereuſes amours de Statira, qui ayma &amp; qui
-        fut aymee d’Oroondate, l’ennemy deſon pays.
-         Madame la Princeſſe la mere, raconta les affli
-        tions de la mal- lbeureuſe locaſte, quand elle vid
-        ſes deux enfants chefs de deux partis diuiſez, &amp; re
-        ſolu de faire vne guerre mortee à leur propre
-        ſang, adiouſtant qu’elle ſe truoit auiourd’huy
-        dans la meſme peine.
-         Madame la Princeſſe la fille, remnit en jeul’in
-        fortunée Pſichié, quieuttant de tsauerſes -daps l’a
-        mour de ſon Cupidon Le ſour de la Melleraye
-        raconta le trait de Neron, quifit mettre le feu aux
-        quatre coins de Rome, &amp; prenoit plaiſir de ſon
-        Palais, de voir liiacoudie à tsauers d’ene Eſme
-        raude..
-        Le Mareſchal de Grandmont mit ſur le capis
-        l’Hiſtoire du premies Roy des Patches, qui appris
-        es peuples à ombattre en fuyant: Monſieuor le
-        Prince luy repartit, que celuy-là courdità la Gui
-        he, dont toute la compagnie f. vn ee lat de rire,
-        &amp; le Mareſchal pour ne pas demeurer auec ſa cour
-        te-hone, luy repartit qu fſon Cefar beunoit à la
-        lampo. Enfinle Cardinal Mazanin,apres quel
-        Roy 
-        Roy luy eut teſmoigné ſon enuie, touchant l’Hi
-         ſtoire qu’il auoit promiſe deés le commencement:
-        Il prit la parole en cetreſorte.
-        Sire, ie ne prendray point icy d’autre hiſtoire que
-         la mienne, &amp; ne vous diray rien qui ne me ſoit ar
-        l
-        riué, depuis queie ſuis dans le miniſtere: i’ay eſteé
-        touſiours tourmenté d’eſprits, ils n’ont pas manqueé
-        vn ſeul iour de m’apparoitre, ny vne ſeule nuict de
-        troublet mon repos; mais ils ne m’ont iamais fait
-        ant de peine, ny traitté ſi rigoureuſement, que de
-        puis la nuict des Roys que ie tiray voſtre Maieſté de
-        Paris, pour venir aà̀ ſainct-Germain. Il ſemble de
-        puis ce temps là qu’ils ſoient deuenus enragés, ils
-         ne taſchent qu’à me nuire, &amp; à m’inquieter, &amp; ie
-        n’en treuue pas vn bon qui me flatte de quelque
-        douce harmonie, comme auparauant, pour m’en
-        dormir, &amp; me donner quelque relaſche. Encor il
-        ſemble que l’enfer a fait ouuerture de toutes ſes
-        portes, &amp; qu’il a déchaiſneé les plus meſchants con
-        tre moy. I en vient des trouppes innombrables
-        m’attaquer par leurs menaces, &amp; m’eſpouuentor
-        par leurs cris funeſtes, &amp; quelques fois m’habillent
-        de toutes les couleurs imaginables, ormme ſii’e
-        ſtois leur fou de feſte. I’ay beau renforcer mes gar
-        des, cela ne les empeſche point dé venir, &amp; ces
-        mal-heureux eſprits ne treuuent point d’obſtacles,
-        qui les arreſtent: ils ſont touſiours aprés ma quëue,
-        &amp; i’ay peur qu’il n’y en ayeiey quelqu’vn qui m’e
-        coute, &amp; qui n’aillereporter aux autrestout ce que
-        ie dis à preſene. La Reynel’interrompit aà̀ ces mots, 
-         0
-        &amp; ’eſcria toute craintiue: ha mon Dieu Monſieur
-        le Cardinal, que vous me faites peur, ie mourrois
-        sS’il en venoit quelqu’vn à ma chambre, quand ie
-        ſuis toute ſeule, ieferay coucher cette nuict toutes
-        mes filles à ma chambre encor ne me croiray-ie
-        pas tropbien gardeée. Toutres les autres femmes de la
-        trouppe s’eſcrierent à ſan imiration, &amp; prote
-        ſterent de faire le ſemblable, horſmis Madame la
-        Princeſſe la mere, qui leur diſt: Ne voyez vous pa
-        bien que Monſieur le Cardinal ſe moque, &amp; que
-        ce n’eſt que pour vous eſpouuenter qu’il dit cela,
-        ſans rire qu’il ſçais bien noſtre foible, &amp; qu’il aſ
-        ſeure cela ſerieuſement, afin d’auoir noſtre crean
-        ce. Madame, reprit le Cardinal, il n’y a riende plus
-        veriltable que ce queie vous dis ſur cela. Monſieur
-        le Prince, le voyant perſuadé, ſe mit à gauſſer, luy
-        &amp; la compagnie, &amp; dire que c’eſtoit de beaux con
-        tes, dont on l’auoit bercé́ en ſon enfance, &amp; qu’il
-        n’auoit iamais veu de ces eſprits qui reuiennent;
-        que ce n’eſtoit que de belles imaginations de quel
-        que mélancholique, pour amuſer les femmes,; mais
-        iopsſons pmus enrnounenis le bonne, duiei
-        reſte il ne pfendroit point la querele de Monſieur
-        le Cardinal, contre des ennemis qui eſtoiens inui
-        ſibles, que ſon eépée n’eſtoit point à l’eſpreuue des
-        charmes, comme celle d’Amadis de Gaule, &amp; que
-        ces eſprits la changeroient bien-toſt en vne dague
-        deplob qui ployeroit iuſqu’aà la garde, au premier
-        coup qu’il viendroit à̀ fraper. LeRoy qui eſtoit im
-        patient d’enteédre le reſte, aſſeura qu’il n’auoit point 
-        peur, &amp; pria ſa bonne Maman, &amp; les autres de ne
-         rien craindre, &amp; de laiſſer dire Monſieur le Cardi
-         nal. Tout le monde ſe mit auſſi-toſt en deuoir de l’eſ
-         couter, &amp; il pourſuiuit en cette ſorte. C’eſt vne ve
-        riteé que l’Eſcriture ſaincte confirme, qu’il y a de ces eſ
-        prits, &amp; pluſt à Dieu qu’il n’yen euſt pas tant, ie ſerois
-        vn peu plus à mon ayſe: &amp; pour conuaincre la Com
-        pagnie ſur ce qui en eſt;ie m’en vay gager tout ce qu’on
-        voudra, quoy que diſe Monſieur le Prince, que les ar
-        mes dont il s’eſt ſeruy pour gaigner ſes victoires, &amp;
-        celles dont il s’eſt ſeruy tout nouuellement aà la ba
-        taille de Lens, qui eſtoient ſi claires &amp; ſi luiſantes, &amp;
-        qui auoient aeſté fourbies &amp; eſclaircies par ces eſprits
-        dont ie parle, ſont à preſent deuenuës toutes noires
-        par la malice de ces meſmes eſprits qui ſe ſont piqués
-        de les voir trop eſclattantes. Tout le monde ietta les
-        yeux ſur Monſieur le Ptince: ce qui l’obligea a dire
-        qu’il auoit à ſon coſteé la meſme eſpée dont il s’eſtoit
-        ſeruy à la bataille de Lens, &amp; que ſi le Roy luy vouloit
-        donner permiſſion de la tirer en ſa preſence, on ver
-        roit la verité de ce myſtere.
-        Le Roy,ſans luy donner le loiſir de la tirer, luy meſ
-        me l’alla prendre &amp; la mit hors du fourreau, &amp; on re
-        marqua ſur la lame quelques petites taches noires, &amp;
-        les Dames dont l’imagination eſtoit preuenuë, y en
-        treuuoient beaucoupdauantage. Luy ſans s’eſtonner
-        de cette belle preuue, leur diſt que ces taches n’eſtoient
-        qu’vn peu de roü̈ille qui s’eſtoit la engendreée, à cauſe
-        qu’il auoit eſté vn peu long-temps ſans la tirer du
-        fourreau. Toutes les femmes pour lors ſe treuuoient
-        1 
-        en beau camp de parler, &amp; elles euſſent dit vne quan
-        tité d’hiſtoires par ouy dire ſur ce ſujet, pour conuain
-        cre Monſieur le Prince; mais le Roy apreés auoir dit
-        qu’il en auoit quelquefois ouy quelques vnes en ſa
-        chambre, qui l auoient bien rejouy, ſans iamais l’auoir
-        eſpouuante, il preſſa le Cardinal de continuer: ce qu’il
-        fit en ces termes.
-        Encor qu’il n’y ayt perſonne de vous qui doute de
-        l’exiſtence des eſprits, toutesfois ie penſe eſtre le mieuxl
-        inſtruit, &amp; le mieux perſuadeé́ de a compagnie, auſſ1
-        ie croy qu’il m’ont ioüé leurs plus vilains tours, &amp;
-        qu’ils m’ont pris pour l’objet de toutes leurs funeſtes
-        recreations. Ils inuentent tous les iours mille nou
-        ucautés, qu’ils apportent de la Cour infernale, pour
-        me faire enrager: ie croy qu’ils taſchent à me iette
-        dans le deſeſpor pour me faire rendre l’ame ſans con
-        feſſion. Les Dames me chantent vn S’alue Regina, com
-        me l’on fait à ceux quiſont prés d’endurer le ſupplice;
-        autres vn Libera comme ſi i’eſtois deſ-ja mott; quel
-        ques-vns me mettent en pouſſiere: d’autres ſe con
-        tentent de me porter en terre, en chantant des Pſeau
-        mes de Dauid Il en vient qui m’honorent pour ſe
-        mocquer de moy, &amp; qui me traitent d’Eminence, &amp;
-        montrent vn precipice où̀ ie ſuis tout preſt de mettre
-        les pieds, d’autres en forme de Choüettes, &amp; deHibous,
-        me prediſent plus de mal-heurs qu’il n’en eſt arriué au
-        monde depuis qu’il ſubſiſte, quelques-vns me dechi
-        rent aà belles dents comme des chiens affameés; il y
-        en a qui ſe contentent de me chanter poüille, &amp; de me
-        dire plus d’iniure qu’vn million de harangeres n’en
-        pour¬ 
-        1l
-        1!
-        2
-        1l
-        !
-        nl
-        pourroient inuenter toutes enſemble: D’autres, font
-        des Remonſtrances au Parlement, pour l’animer en
-        cor dauantage contre-moy: Quelques-vns me pro
-        curent charitablement la haine du peuple, come ſi ie
-        n’en eſtois pas deſia aſſez hay; ceux-là font vn bruit de
-        tous les Diables à mes oreilles, come s’ils ſonnoient le
-        toxin, pour emouuoir la populace à ſe ietter ſur moy.
-        Quelques amateurs de ragouſts me mettent au court
-        bouillon, &amp; puis me laiſſent là ſans me manger, pour
-        mefare plus grand dépit, diſant, que ie ne vaut rien
-        ny à roſtir, ny à lhoü̈illir: Il en eſt qui diſent de moy
-        toutes les méchancetez imaginables au Roy, à la Rei
-        ne &amp; aà M. le Prince, qui ne ſont pas preſens &amp; qui ne
-        les entendent pas, &amp; toutesfois ils ſe promettent qu’ils
-        m’abandonneront, &amp; me laiſſeront perir dans vne
-         guerre que i’ay allumeée;, Et tous ont la forme de Reli
-        gieux, de Cheualiers, de Philoſophes ou de Theolo
-        giens. Ce ſont là les plus malicieux, &amp; ceux qui me
-        ourmentent d’auancage: Ie voy bien que ceux-là
-        vous donnent trop d’effroy, il en viéẽt de plus gaillards
-        qui ſe preſentent deuant moy, &amp; quifont cent bouf
-         onneries, qui ne laiſſent pas de me faſcher encor quel
-        lesſoient paiſantes.
-        Ceux-cy ſont déguiſez en Turlupins, en Panta
-        lons &amp; Goguelus, qui me font cent niches &amp; centſor
-        ettes, tantoſtils me mettent entre deux Diables, puis
-        ils me rognent ma Soutane &amp; mon Chapeau pour me
-        rendre ſemblable à eux, &amp; m’appellent le Cardinal
-        burleſque, ils me font danſer vne balade en ceteſtat,
-        &amp; me donent touſiours quelque nazarde, ou quelque
-        ſobriquet en paſſaut quine me couſte que le prendre: 
-        14
-        L’vn m’appelle Na zin, l’autre Maſquarin, &amp; d’autres
-        Tabarin: Et comme il s’en trouue touſiours de plus
-        malicieux les vns que les autres, qui s’amuſent à me
-        rogner les ongles iuſqu’aà la chair, pour me faire dire
-        ouf en ltalien; les autres me coupent les aiſles comme
-        ſi i’en auois, &amp; d’autres auec vn oignon m’en font ſau
-        ter l’eau aux yeux pour me faire pleurer: Ils mefont
-        voir mes ayeuls en Crieurs de mort au rats, en Violos,
-         en Preneurs de taulpes, en banqueroutiers, en porte
-        poulets, &amp; enmarchands d’allumettes, ſi bien que ie
-        ne puis pas quelquesfois au milieu de ces inquietudes,
-        m’empeſcher de rire d’vne ſi belle Genealogie: Que
-        s’il leur prend enuie de faire quelque muſique enra
-        gée, pour me déplaire &amp; m’inquierer d’auantage, ils
-        me font comme le pilier ouù̀ ils attachent leurs parties,
-        &amp; ie me treuue en vn inſtant ſi chargé de lambeaux de
-        vieux papiers, qu’il s’en faut bien peu que ie n’en ſois
-        accableé, &amp; quelques-vns me montrant au doigt, di
-        ſent, voila le Cardinal en pieces. Puis quand ils ſont
-        ſoulsde criailler, ils ramaſſent tous ces papiers en vn
-        pacquet qu’ils me mettent ſur le corps, &amp; diſent oila
-        Mazarin pris au treébuchet dans l’vnion: en effet, il
-        me ſeroit impoſſible de me remuë̈rſous vn faix ſi pe
-        ſant: Tout le monde ſe prit à rire de ces plaiſantes
-        imaginations, &amp; chacun luy fit quelque queſtionſur
-        vn ſuiet ſi riſible. Le Roy luy demanda ſi ces eſprits
-        eſtoient faits comme des hommes, &amp; il luy répondit,
-        qu’ils prenoient toutes ſortes de formes, meſmes des
-        plus cruels animaux.
-        La Reine luy demanda, ſi c’eſtoit en dormant qu’il
-        auoit toutes ces belles viſios, aà quoy il reſpoôdit, qu’il
-        1 
-        1l
-        1
-        n’en ſç̧auoit rien, &amp; qu’il neſçauoit plus en quel eſtat i
-        eſtoit ſi toſt qu’ils venoient à paroiſtre. M. le Due d’An
-        jou fut curieux de ſç̧auoir s’ils ne mangeoient point les
-        hoõmes, il fit reſponſe, qu’ils ne mageoient que les petits
-        enfans qui ne vouloient pas obeyr: M. le Duc d’Or
-        leans demanda ce que c’eſtoit que ces eſprits, &amp; il luy
-        aſſeura que c’eſtoit les ames des hommes. M. le Prince
-        voulut ſçauoir de quelle couleur ils eſtoient, &amp; il luy dit
-        qil ne les auoit iamais pû diſcerner, dont il fut fortſa
-        tisfait. Le Mareſc. de Grandmont fut d’aduis qu’on les
-        fit fuyr auec la Croix &amp; l’eau beniſte: Et le ſieur de la
-        Melleraye dit, qu’il ne failloft que mettre le feu à la mai
-        ſon quand ils y ſeroient tous entrez, afin de les faire pe
-        rir dans cet embraſement, &amp; de les remettre en enfer
-        d’où ils eſtoient ſortisſans permiſſion. Mais le Cardinal
-        leur fit reſponſe, que ces eſprits ne s’enfuyoient point
-        par des coniurations, &amp; que le feu n’auoit point de puiſ
-        ſance ſur eux: Toutes les Dames commençoient deſia
-        à dire leur ratelée, lors que me treuuant laſſé d’eſtre cou
-        chéſur vn bras, ie voulus le retirer de deſſous mon coſté,
-        mais par malheur, venant à rencontrer quelques fu eil
-        lesſeiches oûie voulois le poſer, cela fit vn peu de bruit,
-        qui leur donna tant d’épouuente qu’elles ſe mirent à
-        fuyr à trauers le lardin comme des Bacchantes, diſant
-        qu’ils auoient ouy vn eſprit, la Reine tenoit le Roypar
-        la main, &amp; M. le Duc d’Anjou la tenoit par la robe; il
-        n’y eut que Madame la Ducheſſe d’Orleans qui eut de
-        la preſence d’eſprit aſſez pour faire vn grand ſigne de
-        crois en courcant comme les autres: Le Mareſchal de
-        Grandmont voyant qu’il n’eſtoie queſtion que de fuyr,
-        fit merueilles de ſes iambas en cette occaſion, il fuc le 
-        e
-        premier à la porte a attendre les autres, &amp; Mademoiſelle
-        qi S’y peſenta la premiere, luy dit, qu’il courroit aà̀ la
-        Guiche auſſi bien que le Roy des Parthes. Il n’y eut que
-        M. le Prince qui demeura ſeul, bien plus eſtonné de les
-        voir fuir que du ſuiet de leur fuite; il commença aà leur
-        rer, qu’il ne falloit pas aller au bois qui auoit peur des
-        fueilles: &amp; le ſieur de la Melleraye qui l’entendit, di,
-        qu’il les falloit bruſler: il treuua le Duc d’Orleansau
-        baut de l’alĺe, qu’il pria de ne point aller ſi viſte, &amp; qu’
-        is matcheroient enſemble, &amp; il luy reſpondit vnpeu
-        effrayeé, qu’il feroit tout ce qu’il voudroit. Ce pendant
-        ie demeuray ſeul bien épouuanté d’auoir donné cette
-        alarme, &amp; i’attendois à tout moment des Satellires plu
-        toſt que des efprits pour m’aſſomer; mais graceà Dieu,
-        tout Ie paſſa en riſé́e: quand toute la trouppe ſe fut r’aſ
-        femblée à la porte, à qui M. le Prince perſuadaen rail
-        lant, que desfueilles &amp;vn peu de vent auoient cauſé tout
-        le deſordre. Tout le mondeſe retira duiardin, &amp; l’on
-        ferma la porte auſſitoſt apres, ie demeuray là enrepos le
-         teſte de la naict, quoy que ie ne fufſe pas ſanscrainte
-        que l’on enoyaſt quelque determineé, comme le ſieux
-        de Roquelaure, pour eprouuer l’aueneure de l’eſprit:
-        mais ſoit que cela fut eſtimé trop bas pour employer ſon
-        oourage, ou que perſonne n’eut la penſeée de l’engager à
-        aire coup, à la bonne pour moy, perſonne n’entra das
-        le lardin tout le reſte de la nuict, &amp; le lendemain ſi toſt
-        que la porte fut ouuerte, &amp; que quelques-vns y furent
-        entrez, pouſe promener en attendant le leuer du Roy,
-        ie me reciray bien viſte de ce lieu, &amp; iem’an vinsà Patis
-        andireAdieuà perſonne
-        FIN.			</p>
-		</body>
-	</text>
+          <term type="subject">Pontoise (Val d'Oise)</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_90" source="Moreau">
+          <p>Mort de Mancini</p>
+          <date when="1652-07-13">1652-07-13</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-03-23" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />LA
+        <lb />CONFERENCE
+        <lb />SECRETTE
+        <lb />TENVE A PONTOISE
+        <lb />ENTRE
+        <lb />LE ROY,
+        <lb />LA REYNE.
+        <lb />Le Cardinal Mazarin, Meſſieurs les
+        <lb /> Pinces &amp; pluſieurs autre Grands
+        <lb />Seigneurs de la Cour.
+        <lb />A PARIS,
+        <lb />M. DC. LII.<pb n="2" />
+        <pb n="3" />
+        <lb />2
+        <lb />CONFERENCE SECRETTE
+        <lb />tenue à Ponitoiſe.
+        <lb />IE parle pour auoir veu &amp; entendu toutes
+        <lb />ces choſes; quelqu’vn me diraauſſi-toſt,
+        <lb />a que c’eſt en ſonge, &amp; ie luy répond que
+        <lb />c’eſt ainſi que ie l’entends, ie ne dormois pourtét
+        <lb />point quand i’ay fait ce ſonge, cela ſemblera d’a
+        <lb rend="¬" break="no" />bord bien eſtrange; mais il n’eſt pas impoſſible
+        <lb />qu’vneſprit- agiſle de toutes les manieres.
+        <lb />Cepandant ie me louuiens que ces iours paſ
+        <lb rend="¬" break="no" />ſez à̀ Pontoiſe, eſtant entré dans le grand Iardin
+        <lb />du Chaſteau, dans le deſſein d’y prendre le plai
+        <lb rend="¬" break="no" />ſirde la promenade, qui eſtoit tres-agreable ſe
+        <lb />ſoir-la,à cauſe de la ſerenité de l’air, &amp; de la ſoli
+        <lb rend="¬" break="no" />ude du lieu, où ie ne rencontrois perſonne, ie
+        <lb />fs des tours d’allée, autant qu’il en faut pour
+        <lb />laſſer vn homme, qui ne ſeroit pas des plus ca
+        <lb rend="¬" break="no" />pables de fatiguer, dés-la ie fus bien ayſe de
+        <lb />rouuer des ſieges, comme vous le pouuez pen
+        <lb rend="¬" break="no" />ler, qui eſtoient la mis fort à̀ propos, le long d’vn
+        <lb />petit taillis, pour la ommodité de ceux qui ſont
+        <lb />bien ayſes de n’eſtre pas touſiours debout, là ie
+        <lb />m’aſſis aſſez doucement comme vous le pou
+        <lb rend="¬" break="no" /> uez croire, de peur de me faire mal dont ie n’a
+        <lb rend="¬" break="no" /> uois guere enuie.
+        <lb /> Ie e fus pas ſi long-temps qu’il y a, que i’en
+        <lb />parle, que ie m’auiſay que ie me repoſerois en
+        <lb rend="¬" break="no" /> tore bien mieux ſi ieſtois couché tout de mon
+        <lb />ong, chacun fait comme il l’entend, pour moy
+        <lb />A ij <pb n="4" />
+        <lb />ie me iettay tout librement ſur l’herbe, dans v
+        <lb />lieu aſſez couuert, de peur d’eſtre inquieré par
+        <lb />la rencontre des autres!
+        <lb />O que-i’eſtois contenat de me voir tout ſeul
+        <lb />loin de l’embaras du monde &amp; de la Cour mais
+        <lb />que cette ſatisfaction dura peu, &amp; que ie me vis
+        <lb />tout à coup ſurpris, lors que i’y penſois le moins
+        <lb />ie m’endormis pourtant aſſez agreablement agi
+        <lb rend="¬" break="no" />t́ de differentes imaginations tantoſt le ma
+        <lb rend="¬" break="no" />gnifique balet d’Orphée, &amp; l’illuſtre tragi-co
+        <lb />medies d’En dromede, me repaſſoient dans la
+        <lb />memoire comme ſi ces choſes meuſſent eſte er
+        <lb rend="¬" break="no" />core preſentes, &amp; il me ſembloit voir le Cardi,
+        <lb />nal Mazarin rire en ſa barbe, à la veue de ces
+        <lb />magnificences, dont il ſe glorifioit d’eſtrel’Au
+        <lb rend="¬" break="no" />teur, ie me figurois, des ſiecles d’or plus d’v
+        <lb />Million, ſous ſon Miniſtere, ie me fondois
+        <lb />ſur ce qu’il commenç̧oit par les ris, les leu
+        <lb />&amp; la danſe qui ſontc les ordinaires compagnesde
+        <lb />de la felicité. Ie remarquois comme il faiſoit
+        <lb />rtous les ſoirs arrouſer à ſes deſpends, le cours de
+        <lb />la Reyne, &amp; ie le voyois deſia transſorme en vn
+        <lb />delicieux par terre: où il deuoit ſemer tous les
+        <lb />eſcus de France, i’admirois ces ſuperbes ba
+        <lb rend="¬" break="no" />ſtiments, pour ſes Eminentiſſimes Cheuaux
+        <lb />&amp; ie diſois deſia qu’elles maiſons fera-t’il
+        <lb />pour habiter des hommes, ainſi ie reſiois
+        <lb />fort agreablement pour l’auenir. Au milieau
+        <lb />d’vn ſi doux ſommeil, quelque bruit impos
+        <lb rend="¬" break="no" /> tu <pb n="5" />
+        <lb />2
+        <lb />1l
+        <lb />l
+        <lb />l
+        <lb />l
+        <lb />al
+        <lb />8l
+        <lb />portun de perſonnes qul parloient aſſez haut, m’eé
+        <lb rend="¬" break="no" />ueilla mal-gré moy, &amp; rompit le charme de mes
+        <lb />yeux qui ne vouloient point s’ouurir. Ie ne fus pas
+        <lb />plutoſt en liberté de voir, que ie regar day du coſté
+        <lb />des ſieges,, ouù ie vis paſſer vne troupe de Gardes
+        <lb />&amp; de Suiſſes, qui ſe diſoient: il n’ya perſonne, al
+        <lb rend="¬" break="no" />lons fermer les portes: Comme ie connoiſſois la
+        <lb />brutalité de ces gens-là, qui ne conſiderent per
+        <lb rend="¬" break="no" />ſonne, ie ne branlay pas de ma place, de peuz de re
+        <lb rend="¬" break="no" />ceuoir quelque coup, dont ces gens-là font bon
+        <lb />marcheé; &amp; de plus, ie craignois qu’ils ne me cher
+        <lb rend="¬" break="no" />chaſſent pour me chaſtier, d’eſtre entré ſi libre
+        <lb rend="¬" break="no" />ment dans ce iardis, ſans leuar permiſſion: Apeine
+        <lb /> eſtoient-ils paſſez, qu’vne troupe magnifique de
+        <lb />erſonnes illuſtres parut au milieu de I’allée, qui
+        <lb />venoit à petit-pas au lieu où ie m’eſtois repoſeé pre
+        <lb rend="¬" break="no" />mierement. Ie ne fus pas peu ſurpris à l’éclat de
+        <lb />tant de maiefté: &amp; bien dauantage, qund iere
+        <lb rend="¬" break="no" />connu le Roy, la Reine, le Cardinal, &amp; les Prin
+        <lb rend="¬" break="no" />ces. I’eſtois en doute, ſi ie voulois prendre lafuit
+        <lb rend="¬" break="no" />e oume teai cadhé: mais onſiderant que ſi ie
+        <lb />courrois à qulque porte, qui eſtoit aſſeureément
+        <lb />bien gardé́e, ie omberois entre les mains de ces
+        <lb />Satelſires impioyables, &amp; qu’ils me tueroient au
+        <lb />ſimple ſoupçon que i leurdõnerois d’aſtre laà pour
+        <lb />quelque mamuais deſſein; dans cetre apprehenſion,
+        <lb />ie me tiens ſans faire de bruit, le mieux couuert
+        <lb />qu’il m’eſtoit poſſble, auec cetce reſolution, que
+        <lb /> quelqu’vn de cete belle Compagnie venait à <pb n="6" />
+        <lb />me dé́couurir, ie demanderois à̀ parler à̀ la Reine;
+        <lb />&amp; apres luy auoir demandé pardon de ma temeri
+        <lb rend="¬" break="no" />té, ie luy conterois naifuement toute ma faute, &amp;
+        <lb />luy ferois ſçauoir toures les miſeres de Paris,
+        <lb />pour la diſpoſer à la compaſſion, &amp; puis ie luy de
+        <lb rend="¬" break="no" />manderois la grace d’eſtre mis dehors auec quel
+        <lb />que ſeureté.
+        <lb />Sur cette confiance, ie leuay vn pe les youx &amp;
+        <lb />ie les vis qu’ils prenoient place ſur les meſmes ſie
+        <lb rend="¬" break="no" />ges ou i’auois eu l’honneur de m’aſſeoir aupara
+        <lb rend="¬" break="no" />uant. l’eſtois aſſez pres d’eux pour ouyr leurs diſ
+        <lb rend="¬" break="no" />-cours, &amp; i’euſſe voulu en eſtre bien loin. Quelques
+        <lb rend="¬" break="no" />vns s’eſtoient deſa auancez de pr ler des deſordres
+        <lb />de l’Eſtat; mais le Roy leur impoſa ſilence, &amp; leur
+        <lb />diſt, qu’il n’eſtoit la venu que pour ſe recreer, &amp;.
+        <lb />non pas pour parler d’affaires; qu’il vouloitr ioü̈er
+        <lb />à quelque petit ieu, ou bien que l’on racontaſt
+        <lb />qulque bonne htoire Toue la Courquiral
+        <lb />ſerieux aà̀ l’inſtant meſme, &amp; chacun prit vnviſage
+        <lb />riant pour luy complaire, la Reine meſme fit vous
+        <lb />que cela luy eſtoit fort agreable; lay auoit que!
+        <lb />le Cardinal qui ne pouuoit faire bonné niine, à
+        <lb />cauſe de ſon mauuaisjeu. Le Roy ſe tournant de
+        <lb />ſon coſté, luy diſt, Monſieur le Cardinal vous qui
+        <lb />en ſç̧auez tcouſiours de. bodnuios, ne nous endirez
+        <lb rend="¬" break="no" />vous point quelque-vne quioit belle?.
+        <lb /> Sire, reſpondit-il froidement, ievous en dirois
+        <lb />bien vne, mais ie crains qu’elle ne donne dela rer
+        <lb rend="¬" break="no" />reur à Voſtre Maieſté, tant elle eſt effnoyable. ll <pb n="7" />
+        <lb />l
+        <lb />1l
+        <lb />1
+        <lb />7
+        <lb />vaut mieux ue vous commençiez le premier, &amp;
+        <lb />puis que chacun à ſon rangen diſe quelqu’vne re
+        <lb rend="¬" break="no" />creatiue, &amp; la mienne ſera la derniere, afin que
+        <lb />nous nous en allions ſouper là̀ deſſus auec plus d’a
+        <lb rend="¬" break="no" />petit: Mon Dieu, dit le Roy, que i’ay enuie de la
+        <lb />ſç̧auoir; mais puiſque vous voulez que ie com
+        <lb rend="¬" break="no" />mence, ie m’en vay me deſpecher, &amp; que chacun
+        <lb />le faſſe curt; à mon exemple, pour venir viſtement
+        <lb />à la voſtre! Cela dit, il raconta en peu de mots la
+        <lb />generoſité du petit Alexandre, qui pleuroit quand
+        <lb />ſon pere aſſiegeoit quelque ville d’importance; &amp;
+        <lb />adiouſta, qu’l auoit pleureé quelquesfois la nuict
+        <lb />de ce que ſà bonrlenahan aſſiegeoit ſa bonne Vil
+        <lb rend="¬" break="no" />le de Paris. Le Duc d’Anjou, diſt que ſon petit Pa
+        <lb rend="¬" break="no" />pa auoit dit la’ſienne, &amp; qu’il n’en ſçauoit point
+        <lb />d’autre’pour l’heure. La Reine raconta le ſixieſ
+        <lb rend="¬" break="no" />me tome de CGleopatre, dont Calpreelé hiy auoit
+        <lb />fait preſent depuis peu. Monſieur le Duc d’Or
+        <lb rend="¬" break="no" />leanspour la ſienne, prit le trait du bon Caligula,
+        <lb />qui-fit autrefois deelarer ſon cheual Conſul de Ro
+        <lb rend="¬" break="no" />me, &amp; fit abaiſſer les degrez du Capitole, afin de
+        <lb />l’y faire monter, &amp; de donner place à ce braue che
+        <lb rend="¬" break="no" />ual au plus pres de ſa petſonne. On fit vne poſe en
+        <lb />cet endroit, dautant que’Monſieur le Prince ſe
+        <lb />ptit à rirede cecteé plaiſanetie,tou le monde à
+        <lb />on imitarion, excepteé le Cardinal qui ne rioit que
+        <lb />du bout des dents.
+        <lb /> Enfin, Monſieurs le Prince reprit la ſuite, &amp; ra
+        <lb rend="¬" break="no" />conta la haataille del Phlaſaleé douant. Roae, o <pb n="8" />
+        <lb />8
+        <lb />Ceſar fut victorieux, adioû̂tant qu’il n’eſperoit pas
+        <lb />vn moindre ſuccez queluy.
+        <lb />Madame la Ducheſſe d’Orleans alloit contet
+        <lb />toute la Cout Saincte; mais la Reine la pria defi
+        <lb rend="¬" break="no" />ir, pour ne point rompre l’ordre que le Roy auoit
+        <lb />mis pour la briefueté. Madamoiſelle ſe ſouuint
+        <lb />des genereuſes amours de Statira, qui ayma &amp; qui
+        <lb rend="¬" break="no" />fut aymee d’Oroondate, l’ennemy deſon pays.
+        <lb /> Madame la Princeſſe la mere, raconta les affli
+        <lb rend="¬" break="no" />tions de la mal- lbeureuſe locaſte, quand elle vid
+        <lb />ſes deux enfants chefs de deux partis diuiſez, &amp; re
+        <lb rend="¬" break="no" />ſolu de faire vne guerre mortee à leur propre
+        <lb />ſang, adiouſtant qu’elle ſe truoit auiourd’huy
+        <lb />dans la meſme peine.
+        <lb /> Madame la Princeſſe la fille, remnit en jeul’in
+        <lb rend="¬" break="no" />fortunée Pſichié, quieuttant de tsauerſes -daps l’a
+        <lb rend="¬" break="no" />mour de ſon Cupidon Le ſour de la Melleraye
+        <lb />raconta le trait de Neron, quifit mettre le feu aux
+        <lb />quatre coins de Rome, &amp; prenoit plaiſir de ſon
+        <lb />Palais, de voir liiacoudie à tsauers d’ene Eſme
+        <lb rend="¬" break="no" />raude..
+        <lb />Le Mareſchal de Grandmont mit ſur le capis
+        <lb />l’Hiſtoire du premies Roy des Patches, qui appris
+        <lb />es peuples à ombattre en fuyant: Monſieuor le
+        <lb />Prince luy repartit, que celuy-là courdità la Gui
+        <lb rend="¬" break="no" />he, dont toute la compagnie f. vn ee lat de rire,
+        <lb />&amp; le Mareſchal pour ne pas demeurer auec ſa cour
+        <lb rend="¬" break="no" />te-hone, luy repartit qu fſon Cefar beunoit à la
+        <lb />lampo. Enfinle Cardinal Mazanin,apres quel
+        <lb />Roy <pb n="9" />
+        <lb />Roy luy eut teſmoigné ſon enuie, touchant l’Hi
+        <lb rend="¬" break="no" /> ſtoire qu’il auoit promiſe deés le commencement:
+        <lb />Il prit la parole en cetreſorte.
+        <lb />Sire, ie ne prendray point icy d’autre hiſtoire que
+        <lb /> la mienne, &amp; ne vous diray rien qui ne me ſoit ar
+        <lb rend="¬" break="no" />l
+        <lb />riué, depuis queie ſuis dans le miniſtere: i’ay eſteé
+        <lb />touſiours tourmenté d’eſprits, ils n’ont pas manqueé
+        <lb />vn ſeul iour de m’apparoitre, ny vne ſeule nuict de
+        <lb />troublet mon repos; mais ils ne m’ont iamais fait
+        <lb />ant de peine, ny traitté ſi rigoureuſement, que de
+        <lb rend="¬" break="no" />puis la nuict des Roys que ie tiray voſtre Maieſté de
+        <lb />Paris, pour venir aà̀ ſainct-Germain. Il ſemble de
+        <lb rend="¬" break="no" />puis ce temps là qu’ils ſoient deuenus enragés, ils
+        <lb /> ne taſchent qu’à me nuire, &amp; à m’inquieter, &amp; ie
+        <lb />n’en treuue pas vn bon qui me flatte de quelque
+        <lb />douce harmonie, comme auparauant, pour m’en
+        <lb rend="¬" break="no" />dormir, &amp; me donner quelque relaſche. Encor il
+        <lb />ſemble que l’enfer a fait ouuerture de toutes ſes
+        <lb />portes, &amp; qu’il a déchaiſneé les plus meſchants con
+        <lb rend="¬" break="no" />tre moy. I en vient des trouppes innombrables
+        <lb />m’attaquer par leurs menaces, &amp; m’eſpouuentor
+        <lb />par leurs cris funeſtes, &amp; quelques fois m’habillent
+        <lb />de toutes les couleurs imaginables, ormme ſii’e
+        <lb rend="¬" break="no" />ſtois leur fou de feſte. I’ay beau renforcer mes gar
+        <lb rend="¬" break="no" />des, cela ne les empeſche point dé venir, &amp; ces
+        <lb />mal-heureux eſprits ne treuuent point d’obſtacles,
+        <lb />qui les arreſtent: ils ſont touſiours aprés ma quëue,
+        <lb />&amp; i’ay peur qu’il n’y en ayeiey quelqu’vn qui m’e
+        <lb rend="¬" break="no" />coute, &amp; qui n’aillereporter aux autrestout ce que
+        <lb />ie dis à preſene. La Reynel’interrompit aà̀ ces mots, <pb n="10" />
+        <lb /> 0
+        <lb />&amp; ’eſcria toute craintiue: ha mon Dieu Monſieur
+        <lb />le Cardinal, que vous me faites peur, ie mourrois
+        <lb />sS’il en venoit quelqu’vn à ma chambre, quand ie
+        <lb />ſuis toute ſeule, ieferay coucher cette nuict toutes
+        <lb />mes filles à ma chambre encor ne me croiray-ie
+        <lb />pas tropbien gardeée. Toutres les autres femmes de la
+        <lb />trouppe s’eſcrierent à ſan imiration, &amp; prote
+        <lb rend="¬" break="no" />ſterent de faire le ſemblable, horſmis Madame la
+        <lb />Princeſſe la mere, qui leur diſt: Ne voyez vous pa
+        <lb />bien que Monſieur le Cardinal ſe moque, &amp; que
+        <lb />ce n’eſt que pour vous eſpouuenter qu’il dit cela,
+        <lb />ſans rire qu’il ſçais bien noſtre foible, &amp; qu’il aſ
+        <lb rend="¬" break="no" />ſeure cela ſerieuſement, afin d’auoir noſtre crean
+        <lb rend="¬" break="no" />ce. Madame, reprit le Cardinal, il n’y a riende plus
+        <lb />veriltable que ce queie vous dis ſur cela. Monſieur
+        <lb />le Prince, le voyant perſuadé, ſe mit à gauſſer, luy
+        <lb />&amp; la compagnie, &amp; dire que c’eſtoit de beaux con
+        <lb rend="¬" break="no" />tes, dont on l’auoit bercé́ en ſon enfance, &amp; qu’il
+        <lb />n’auoit iamais veu de ces eſprits qui reuiennent;
+        <lb />que ce n’eſtoit que de belles imaginations de quel
+        <lb rend="¬" break="no" />que mélancholique, pour amuſer les femmes,; mais
+        <lb />iopsſons pmus enrnounenis le bonne, duiei
+        <lb />reſte il ne pfendroit point la querele de Monſieur
+        <lb />le Cardinal, contre des ennemis qui eſtoiens inui
+        <lb rend="¬" break="no" />ſibles, que ſon eépée n’eſtoit point à l’eſpreuue des
+        <lb />charmes, comme celle d’Amadis de Gaule, &amp; que
+        <lb />ces eſprits la changeroient bien-toſt en vne dague
+        <lb />deplob qui ployeroit iuſqu’aà la garde, au premier
+        <lb />coup qu’il viendroit à̀ fraper. LeRoy qui eſtoit im
+        <lb rend="¬" break="no" />patient d’enteédre le reſte, aſſeura qu’il n’auoit point <pb n="11" />
+        <lb />peur, &amp; pria ſa bonne Maman, &amp; les autres de ne
+        <lb /> rien craindre, &amp; de laiſſer dire Monſieur le Cardi
+        <lb rend="¬" break="no" /> nal. Tout le monde ſe mit auſſi-toſt en deuoir de l’eſ
+        <lb rend="¬" break="no" /> couter, &amp; il pourſuiuit en cette ſorte. C’eſt vne ve
+        <lb rend="¬" break="no" />riteé que l’Eſcriture ſaincte confirme, qu’il y a de ces eſ
+        <lb rend="¬" break="no" />prits, &amp; pluſt à Dieu qu’il n’yen euſt pas tant, ie ſerois
+        <lb />vn peu plus à mon ayſe: &amp; pour conuaincre la Com
+        <lb rend="¬" break="no" />pagnie ſur ce qui en eſt;ie m’en vay gager tout ce qu’on
+        <lb />voudra, quoy que diſe Monſieur le Prince, que les ar
+        <lb rend="¬" break="no" />mes dont il s’eſt ſeruy pour gaigner ſes victoires, &amp;
+        <lb />celles dont il s’eſt ſeruy tout nouuellement aà la ba
+        <lb rend="¬" break="no" />taille de Lens, qui eſtoient ſi claires &amp; ſi luiſantes, &amp;
+        <lb />qui auoient aeſté fourbies &amp; eſclaircies par ces eſprits
+        <lb />dont ie parle, ſont à preſent deuenuës toutes noires
+        <lb />par la malice de ces meſmes eſprits qui ſe ſont piqués
+        <lb />de les voir trop eſclattantes. Tout le monde ietta les
+        <lb />yeux ſur Monſieur le Ptince: ce qui l’obligea a dire
+        <lb />qu’il auoit à ſon coſteé la meſme eſpée dont il s’eſtoit
+        <lb />ſeruy à la bataille de Lens, &amp; que ſi le Roy luy vouloit
+        <lb />donner permiſſion de la tirer en ſa preſence, on ver
+        <lb rend="¬" break="no" />roit la verité de ce myſtere.
+        <lb />Le Roy,ſans luy donner le loiſir de la tirer, luy meſ
+        <lb rend="¬" break="no" />me l’alla prendre &amp; la mit hors du fourreau, &amp; on re
+        <lb rend="¬" break="no" />marqua ſur la lame quelques petites taches noires, &amp;
+        <lb />les Dames dont l’imagination eſtoit preuenuë, y en
+        <lb />treuuoient beaucoupdauantage. Luy ſans s’eſtonner
+        <lb />de cette belle preuue, leur diſt que ces taches n’eſtoient
+        <lb />qu’vn peu de roü̈ille qui s’eſtoit la engendreée, à cauſe
+        <lb />qu’il auoit eſté vn peu long-temps ſans la tirer du
+        <lb />fourreau. Toutes les femmes pour lors ſe treuuoient
+        <lb />1 <pb n="12" />
+        <lb />en beau camp de parler, &amp; elles euſſent dit vne quan
+        <lb rend="¬" break="no" />tité d’hiſtoires par ouy dire ſur ce ſujet, pour conuain
+        <lb rend="¬" break="no" />cre Monſieur le Prince; mais le Roy apreés auoir dit
+        <lb />qu’il en auoit quelquefois ouy quelques vnes en ſa
+        <lb />chambre, qui l auoient bien rejouy, ſans iamais l’auoir
+        <lb />eſpouuante, il preſſa le Cardinal de continuer: ce qu’il
+        <lb />fit en ces termes.
+        <lb />Encor qu’il n’y ayt perſonne de vous qui doute de
+        <lb />l’exiſtence des eſprits, toutesfois ie penſe eſtre le mieuxl
+        <lb />inſtruit, &amp; le mieux perſuadeé́ de a compagnie, auſſ1
+        <lb />ie croy qu’il m’ont ioüé leurs plus vilains tours, &amp;
+        <lb />qu’ils m’ont pris pour l’objet de toutes leurs funeſtes
+        <lb />recreations. Ils inuentent tous les iours mille nou
+        <lb rend="¬" break="no" />ucautés, qu’ils apportent de la Cour infernale, pour
+        <lb />me faire enrager: ie croy qu’ils taſchent à me iette
+        <lb />dans le deſeſpor pour me faire rendre l’ame ſans con
+        <lb rend="¬" break="no" />feſſion. Les Dames me chantent vn S’alue Regina, com
+        <lb rend="¬" break="no" />me l’on fait à ceux quiſont prés d’endurer le ſupplice;
+        <lb />autres vn Libera comme ſi i’eſtois deſ-ja mott; quel
+        <lb rend="¬" break="no" />ques-vns me mettent en pouſſiere: d’autres ſe con
+        <lb rend="¬" break="no" />tentent de me porter en terre, en chantant des Pſeau
+        <lb rend="¬" break="no" />mes de Dauid Il en vient qui m’honorent pour ſe
+        <lb />mocquer de moy, &amp; qui me traitent d’Eminence, &amp;
+        <lb />montrent vn precipice où̀ ie ſuis tout preſt de mettre
+        <lb />les pieds, d’autres en forme de Choüettes, &amp; deHibous,
+        <lb />me prediſent plus de mal-heurs qu’il n’en eſt arriué au
+        <lb />monde depuis qu’il ſubſiſte, quelques-vns me dechi
+        <lb rend="¬" break="no" />rent aà belles dents comme des chiens affameés; il y
+        <lb />en a qui ſe contentent de me chanter poüille, &amp; de me
+        <lb />dire plus d’iniure qu’vn million de harangeres n’en
+        <lb />pour¬ <pb n="13" />
+        <lb />1l
+        <lb />1!
+        <lb />2
+        <lb />1l
+        <lb />!
+        <lb />nl
+        <lb />pourroient inuenter toutes enſemble: D’autres, font
+        <lb />des Remonſtrances au Parlement, pour l’animer en
+        <lb rend="¬" break="no" />cor dauantage contre-moy: Quelques-vns me pro
+        <lb rend="¬" break="no" />curent charitablement la haine du peuple, come ſi ie
+        <lb />n’en eſtois pas deſia aſſez hay; ceux-là font vn bruit de
+        <lb />tous les Diables à mes oreilles, come s’ils ſonnoient le
+        <lb />toxin, pour emouuoir la populace à ſe ietter ſur moy.
+        <lb />Quelques amateurs de ragouſts me mettent au court
+        <lb />bouillon, &amp; puis me laiſſent là ſans me manger, pour
+        <lb />mefare plus grand dépit, diſant, que ie ne vaut rien
+        <lb />ny à roſtir, ny à lhoü̈illir: Il en eſt qui diſent de moy
+        <lb />toutes les méchancetez imaginables au Roy, à la Rei
+        <lb rend="¬" break="no" />ne &amp; aà M. le Prince, qui ne ſont pas preſens &amp; qui ne
+        <lb />les entendent pas, &amp; toutesfois ils ſe promettent qu’ils
+        <lb />m’abandonneront, &amp; me laiſſeront perir dans vne
+        <lb /> guerre que i’ay allumeée;, Et tous ont la forme de Reli
+        <lb rend="¬" break="no" />gieux, de Cheualiers, de Philoſophes ou de Theolo
+        <lb rend="¬" break="no" />giens. Ce ſont là les plus malicieux, &amp; ceux qui me
+        <lb />ourmentent d’auancage: Ie voy bien que ceux-là
+        <lb />vous donnent trop d’effroy, il en viéẽt de plus gaillards
+        <lb />qui ſe preſentent deuant moy, &amp; quifont cent bouf
+        <lb rend="¬" break="no" /> onneries, qui ne laiſſent pas de me faſcher encor quel
+        <lb rend="¬" break="no" />lesſoient paiſantes.
+        <lb />Ceux-cy ſont déguiſez en Turlupins, en Panta
+        <lb rend="¬" break="no" />lons &amp; Goguelus, qui me font cent niches &amp; centſor
+        <lb rend="¬" break="no" />ettes, tantoſtils me mettent entre deux Diables, puis
+        <lb />ils me rognent ma Soutane &amp; mon Chapeau pour me
+        <lb />rendre ſemblable à eux, &amp; m’appellent le Cardinal
+        <lb />burleſque, ils me font danſer vne balade en ceteſtat,
+        <lb />&amp; me donent touſiours quelque nazarde, ou quelque
+        <lb />ſobriquet en paſſaut quine me couſte que le prendre: <pb n="14" />
+        <lb />14
+        <lb />L’vn m’appelle Na zin, l’autre Maſquarin, &amp; d’autres
+        <lb />Tabarin: Et comme il s’en trouue touſiours de plus
+        <lb />malicieux les vns que les autres, qui s’amuſent à me
+        <lb />rogner les ongles iuſqu’aà la chair, pour me faire dire
+        <lb />ouf en ltalien; les autres me coupent les aiſles comme
+        <lb />ſi i’en auois, &amp; d’autres auec vn oignon m’en font ſau
+        <lb rend="¬" break="no" />ter l’eau aux yeux pour me faire pleurer: Ils mefont
+        <lb />voir mes ayeuls en Crieurs de mort au rats, en Violos,
+        <lb /> en Preneurs de taulpes, en banqueroutiers, en porte
+        <lb />poulets, &amp; enmarchands d’allumettes, ſi bien que ie
+        <lb />ne puis pas quelquesfois au milieu de ces inquietudes,
+        <lb />m’empeſcher de rire d’vne ſi belle Genealogie: Que
+        <lb />s’il leur prend enuie de faire quelque muſique enra
+        <lb rend="¬" break="no" />gée, pour me déplaire &amp; m’inquierer d’auantage, ils
+        <lb />me font comme le pilier ouù̀ ils attachent leurs parties,
+        <lb />&amp; ie me treuue en vn inſtant ſi chargé de lambeaux de
+        <lb />vieux papiers, qu’il s’en faut bien peu que ie n’en ſois
+        <lb />accableé, &amp; quelques-vns me montrant au doigt, di
+        <lb rend="¬" break="no" />ſent, voila le Cardinal en pieces. Puis quand ils ſont
+        <lb />ſoulsde criailler, ils ramaſſent tous ces papiers en vn
+        <lb />pacquet qu’ils me mettent ſur le corps, &amp; diſent oila
+        <lb />Mazarin pris au treébuchet dans l’vnion: en effet, il
+        <lb />me ſeroit impoſſible de me remuë̈rſous vn faix ſi pe
+        <lb rend="¬" break="no" />ſant: Tout le monde ſe prit à rire de ces plaiſantes
+        <lb />imaginations, &amp; chacun luy fit quelque queſtionſur
+        <lb />vn ſuiet ſi riſible. Le Roy luy demanda ſi ces eſprits
+        <lb />eſtoient faits comme des hommes, &amp; il luy répondit,
+        <lb />qu’ils prenoient toutes ſortes de formes, meſmes des
+        <lb />plus cruels animaux.
+        <lb />La Reine luy demanda, ſi c’eſtoit en dormant qu’il
+        <lb />auoit toutes ces belles viſios, aà quoy il reſpoôdit, qu’il
+        <lb />1 <pb n="15" />
+        <lb />1l
+        <lb />1
+        <lb />n’en ſç̧auoit rien, &amp; qu’il neſçauoit plus en quel eſtat i
+        <lb />eſtoit ſi toſt qu’ils venoient à paroiſtre. M. le Due d’An
+        <lb rend="¬" break="no" />jou fut curieux de ſç̧auoir s’ils ne mangeoient point les
+        <lb />hoõmes, il fit reſponſe, qu’ils ne mageoient que les petits
+        <lb />enfans qui ne vouloient pas obeyr: M. le Duc d’Or
+        <lb rend="¬" break="no" />leans demanda ce que c’eſtoit que ces eſprits, &amp; il luy
+        <lb />aſſeura que c’eſtoit les ames des hommes. M. le Prince
+        <lb />voulut ſçauoir de quelle couleur ils eſtoient, &amp; il luy dit
+        <lb />qil ne les auoit iamais pû diſcerner, dont il fut fortſa
+        <lb rend="¬" break="no" />tisfait. Le Mareſc. de Grandmont fut d’aduis qu’on les
+        <lb />fit fuyr auec la Croix &amp; l’eau beniſte: Et le ſieur de la
+        <lb />Melleraye dit, qu’il ne failloft que mettre le feu à la mai
+        <lb rend="¬" break="no" />ſon quand ils y ſeroient tous entrez, afin de les faire pe
+        <lb rend="¬" break="no" />rir dans cet embraſement, &amp; de les remettre en enfer
+        <lb />d’où ils eſtoient ſortisſans permiſſion. Mais le Cardinal
+        <lb />leur fit reſponſe, que ces eſprits ne s’enfuyoient point
+        <lb />par des coniurations, &amp; que le feu n’auoit point de puiſ
+        <lb rend="¬" break="no" />ſance ſur eux: Toutes les Dames commençoient deſia
+        <lb />à dire leur ratelée, lors que me treuuant laſſé d’eſtre cou
+        <lb rend="¬" break="no" />chéſur vn bras, ie voulus le retirer de deſſous mon coſté,
+        <lb />mais par malheur, venant à rencontrer quelques fu eil
+        <lb rend="¬" break="no" />lesſeiches oûie voulois le poſer, cela fit vn peu de bruit,
+        <lb />qui leur donna tant d’épouuente qu’elles ſe mirent à
+        <lb />fuyr à trauers le lardin comme des Bacchantes, diſant
+        <lb />qu’ils auoient ouy vn eſprit, la Reine tenoit le Roypar
+        <lb />la main, &amp; M. le Duc d’Anjou la tenoit par la robe; il
+        <lb />n’y eut que Madame la Ducheſſe d’Orleans qui eut de
+        <lb />la preſence d’eſprit aſſez pour faire vn grand ſigne de
+        <lb />crois en courcant comme les autres: Le Mareſchal de
+        <lb />Grandmont voyant qu’il n’eſtoie queſtion que de fuyr,
+        <lb />fit merueilles de ſes iambas en cette occaſion, il fuc le <pb n="16" />
+        <lb />e
+        <lb />premier à la porte a attendre les autres, &amp; Mademoiſelle
+        <lb />qi S’y peſenta la premiere, luy dit, qu’il courroit aà̀ la
+        <lb />Guiche auſſi bien que le Roy des Parthes. Il n’y eut que
+        <lb />M. le Prince qui demeura ſeul, bien plus eſtonné de les
+        <lb />voir fuir que du ſuiet de leur fuite; il commença aà leur
+        <lb />rer, qu’il ne falloit pas aller au bois qui auoit peur des
+        <lb />fueilles: &amp; le ſieur de la Melleraye qui l’entendit, di,
+        <lb />qu’il les falloit bruſler: il treuua le Duc d’Orleansau
+        <lb />baut de l’alĺe, qu’il pria de ne point aller ſi viſte, &amp; qu’
+        <lb rend="¬" break="no" />is matcheroient enſemble, &amp; il luy reſpondit vnpeu
+        <lb />effrayeé, qu’il feroit tout ce qu’il voudroit. Ce pendant
+        <lb />ie demeuray ſeul bien épouuanté d’auoir donné cette
+        <lb />alarme, &amp; i’attendois à tout moment des Satellires plu
+        <lb rend="¬" break="no" />toſt que des efprits pour m’aſſomer; mais graceà Dieu,
+        <lb />tout Ie paſſa en riſé́e: quand toute la trouppe ſe fut r’aſ
+        <lb rend="¬" break="no" />femblée à la porte, à qui M. le Prince perſuadaen rail
+        <lb rend="¬" break="no" />lant, que desfueilles &amp;vn peu de vent auoient cauſé tout
+        <lb />le deſordre. Tout le mondeſe retira duiardin, &amp; l’on
+        <lb />ferma la porte auſſitoſt apres, ie demeuray là enrepos le
+        <lb /> teſte de la naict, quoy que ie ne fufſe pas ſanscrainte
+        <lb />que l’on enoyaſt quelque determineé, comme le ſieux
+        <lb />de Roquelaure, pour eprouuer l’aueneure de l’eſprit:
+        <lb />mais ſoit que cela fut eſtimé trop bas pour employer ſon
+        <lb />oourage, ou que perſonne n’eut la penſeée de l’engager à
+        <lb />aire coup, à la bonne pour moy, perſonne n’entra das
+        <lb />le lardin tout le reſte de la nuict, &amp; le lendemain ſi toſt
+        <lb />que la porte fut ouuerte, &amp; que quelques-vns y furent
+        <lb />entrez, pouſe promener en attendant le leuer du Roy,
+        <lb />ie me reciray bien viſte de ce lieu, &amp; iem’an vinsà Patis
+        <lb />andireAdieuà perſonne
+        <lb rend="¬" break="no" />FIN. </p>
+    </body>
+  </text>
 </TEI>

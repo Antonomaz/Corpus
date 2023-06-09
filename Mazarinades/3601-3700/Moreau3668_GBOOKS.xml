@@ -1,851 +1,493 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3668_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">La seure , l'éclatante et la glorieuse victoire des
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">La seure , l'éclatante et la glorieuse victoire des
           Bourdelois, malgré la trahison de leurs faux amis par manière d'épitaphe, avec deux
           épitaphes pour M. de Chambret (Chambaret), leur général.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-					<persName ref="orcid:0000-0002-3327-3967" role="intern">Cappe Zoé</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=V6gsZHsgD3IC"/>
-					<author/>
-					<title source="Moreau">Seure (la), l'éclatante et la glorieuse victoire des Bourdelois,
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+          <persName ref="orcid:0000-0002-3327-3967" role="intern">Cappe Zoé</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=V6gsZHsgD3IC" />
+          <author />
+          <title source="Moreau">Seure (la), l'éclatante et la glorieuse victoire des Bourdelois,
             malgré la trahison de leurs faux amis par manière d'épitaphe, avec deux épitaphes pour
             M. de Chambret (Chambaret), leur général.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure quantity="15" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale</institution>
-						<repository/>
-						<idno type="cote">311080</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure quantity="15" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
+            <repository />
+            <idno type="cote">311080</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">3668. Seure (la) , l'éclatante et la glorieuse victoire des Rourdelois,
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">3668. Seure (la) , l'éclatante et la glorieuse victoire des Rourdelois,
           malgré la trahison de leurs faux amis par manière d'épitaphe, avec deux épitaphes pour M.
           de Chambret (Chambaret), leur général. Paris, 1649, 1 5 pages. Ridicule fatras, qui n'est
           pourtant pas commun. Tout ce qu'il en faut retenir, c'est que Charabaret passait pour
           avoir été tué par un des siens dans la déroute.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">vers</term>
-					<term type="form">prose</term>
-					<term type="genre">épitaphe</term>
-					<term type="subject"/>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_20" source="Moreau">
-					<p>Voyage de Flandre</p>
-					<date when="1649-04-30">1649-04-30</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-06-09" who="ZC"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<pb n="12"/>
-				<pb n="13"/>
-				<pb n="14"/>
-				<pb n="15"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<figure type="decoration"/>
-				<l>
-					<lb/>
-i4				</l>
-				<l>
-					<lb/>
-opeptepttottebett				</l>
-				<l>
-					<lb/>
-Epitaphe de M de Chambret				</l>
-				<l>
-					<lb/>
-General des Bourdelois.				</l>
-				<l>
-					<lb/>
-I giſt du gnand Chamlbret, le corps aſſaſtin				</l>
-				<l>
-					<lb/>
-Par les laſcdes valetn,de l’infamo Cminenn.				</l>
-				<l>
-					<lb/>
-Il eſtois deſtiné				</l>
-				<l>
-					<lb/>
-euurr paur l Fhnm				</l>
-				<l>
-					<lb/>
-nu ſaeenin lqrds ſt aomdam				</l>
-				<l>
-					<lb/>
-A tirer la Finm				</l>
-				<l>
-					<lb/>
-De us e ae deo				</l>
-				<l>
-					<lb/>
-Et pis eſtre damui:				</l>
-				<l>
-					<lb/>
-FI N.				</l>
-				<l>
-					<lb/>
-¬¬ep¬¬-,				</l>
-				<l>
-					<lb/>
-Autre.				</l>
-				<l>
-					<lb/>
-giſt de MaZarl, l’ennemy nadoutable,				</l>
-				<l>
-					<lb/>
-LQu’il n’eut ianaais vainc, que par la trahisi				</l>
-				<l>
-					<lb/>
-Il uy faidloit quelqu’ame deteſtabl				</l>
-				<l>
-					<lb/>
-Qui le ſeruift du fer ou du poiſon.				</l>
-				<l>
-					<lb/>
-Anſi finift vne vie ſi bele				</l>
-				<l>
-					<lb/>
-Cianmbrer, reoitla mont d’vne main infidele,				</l>
-				<l>
-					<lb/>
-Et de cas annemis s’aſſeuront les deſtins;				</l>
-				<l>
-					<lb/>
-Toutesfois c’eſt bien peu, les remords les deſchire.				</l>
-				<l>
-					<lb/>
-Leur crime à tout moment les geſne, les aartyre,				</l>
-				<l>
-					<lb/>
-Et ſos non loge encor cent frayeurs dans leurſeins.				</l>
-				<l>
-					<lb/>
-FIN.				</l>
-LA SEVRE,
-        L'ESCLATANTE
-        ET LA GLORIEVSE
-        VICTOIRE
-        DES
-        BOVRDELOIS,
-        MALGRE LA TRAHISON
-        de leurs faux amis, par maniere
-        d'Epitaphe.
-        Auec deux Epitaphes pour Monſieur de Chambres
-        leur General. 
-        A PARIS.
-        M. DC. XLIX. 
-        
-        LA SEVRE, L’ESCLATANTE.
-        &amp; la glorieuſe Victoire des Bourdelois mal
-        greé la trahiſon de leurs faux amis, par ma
-        niere d’épitaphe.
-        ee
-         As s A s, ſi vous arreſtez icy vos pas pous
-        conſiderer ces tombeaux, prenez bien gar
-        g de que quelque compaſſion ne vous ſur
-        ? orenne, &amp; que vous ne pleuriez pour ceux
-        là que le Ciel a rendus plus heureux que vous. Ils ont
-        eu le courage de vouſoir deffendre eux- meſmes &amp;
-        leur Patrie, de la tyrannie qui l’opprime: c’eſt vne gloi
-        re apres laquelle ils ne nous ſç̧auroient donner à pleu
-        rer. De ſi grands deſſeins rendent ſi dignes &amp; ſi heu
-        cçon que reiuſſiſſe l’entrepriſe, on doit pluſtoſt benir
-        leur bon-heur, ou meſpriſer leur malheur, que non
-        pas de plaindre eur perte. Mais ils ſont morts? il eſt
-        vray, ils ne ſont pas les ſeuls qui ont cedé au deſtin, &amp;
-        qui ont ſuccomhé ſous le faix de leurs nobles entre
-        priſes.
-        Leur bon-heur toutesfois n’en eſtpas moins grand;
-         A ij 
-        ſi nous le conſiderons auec des yeux eſpurez de fauſſes
-        lumieres. La vertu qui prend vn illuſtre deſſein dans
-        ce premier mouuement eſt tellement heureuſe, qu’il
-        n’eſt plus rien capable d’amoindrir ſa felicité. Que ce
-        deſſein ait vne iſſuë fauorable ou contraire, n’impor
-        te; comme les ſuccez ne ſont pas dans ſa main, &amp; que
-        les éuenemens ne releuent point de ſon empire, laſeu
-        le impreſſion qu’elle c’eſt donnée d’vne ſi belle ima
-        ge, eſt cout ce qui la felicite &amp; qui la comble de ioye
-        &amp; de bon-heur.
-        Qui doute que le deſſein des Bourdelois ( qui ſont
-        ceux qui repoſent heureuſemét icy) ne fuſt vn illuſtre
-        deſſein? Ils ont vû̂ quaſi toute la France armeée pour la
-        ruine de ſon tyran:ls ont vû de rous les bouts du mon
-        de venir des ennemis coniurez pour ſa ruine. La gran
-        de &amp; la populeuſe ville de Paris; Ils l’ont entenduë ne
-        crier que la mort de ce cruel, &amp; ne vomir qu’impreca
-        tions contre ce Barbare. En ce temps-laà quand ils ſe
-        fuſſent vnis au reſte de tant de genereux ennemis, leur
-        generoſité n’euſt pas touſiours eſté moindre que celle
-        des autres. Mais ils ont creu qu’il y auoit aſſez d’eſpé́es
-        nuës pour trancher vne ſeule teſte; &amp; qu’inutillement
-        les leurs ſeroient peut eſtre deſgainées. Que le coup
-        ſans doute ſeroit fait auant qu’ils fuſſent preparez.
-        Qu’il y auroit de la honte à arriuer trop tart; &amp; qu’il
-        valoit mieux demeurerà attendre les euenemens.
-        Certes de fait, vne infinité de perſonnes onteſté
-        ſurpriſes au ſuccez des affaires. Iamais l’on ne ce fuſt
-        imaginé́ 
-        imaginé́ que Patis ſi fort cuſt ainſi honteuſement ſuc
-        combeé, &amp; que ces fiers Habitans euſſent pû ſouffrir
-        tant de traiſtres les oonduire, &amp; diſpoſer à leur yeux ſi
-        perfidement de leurs biens, de leur honneur, &amp; de.
-        leur vie.
-        Vn ſi grand malheur, a ſurpris beaucoup de fortes.
-        ames, &amp; a affligé toutes les bonnes. En ce rencontre
-        toutefois, toutes les Prouinces ont ſuiuy le triſteſort
-        de cette alheureuſe ville. De touteparts onta tendu
-        le col &amp; les mains Qnauoitſecoüéle ioug, mas onen
-        a receu vn tout nouueau beaucoup plus peſant que le
-         premier,; &amp; le changement de nôtre fortune, c’eſt pour
-        nous fait auec tant de deſauantage, queſi aupaiauant
-        nous eſtions malheureux, auiourd’huy nous forhtaes
-        au dernier degré de noſtre malheur, &amp;tout proches
-        du deſeſpoir.
-        Les Bourdelois qui n’auoient rien ditpendant les cla
-        meurs de toutce Royaume; qui s’eœſtient tenus com
-        me dans le reſpect, lors que leur licence pouuoit eſtre
-        authioriſé́e par l’vniuerſelle; quand ils ont vu tout cal
-        me, que toure la France eſtoit de rchef abbatuë, &amp;
-        auoit plus que iamais la gorge ſous le pied de ſon y
-        ran; ils ſe ſont eſmeus à ce triſte ſpectacle. Ils eſpe
-        roient peut-eſtre que le Regnes’alloit adouicir; lls ont
-        vû̂ arriuer tout le rehours de leur eſperance. Ce fier
-        animal qui: ſe veut ſeoir ſur le Troſne de uoſtre
-        Agneau ( ſiie l’oſe dire en ces termes) ne leur apû̂ pa
-        roiſtre en cet Eſtat, ſans leur faire horreur. Alors cette 
-        6
-        generofe qui c’eſtoitretenué ne s’eſt plus moderée.
-        Ce feu caché a briſé cesnachots &amp; avoulu faire voir aà
-        rout le monde qu’il bruſloit, encores que ſa flâme
-        n’euſt pas eſteé apperceuë, tellement que ceux que nos
-        fureurs n’auoient point animez, ont trouue dans no
-        ſre trmidité plus de courage, qu’ils n’auoient fait de
-        colere dans noſtre couroux.
-         Ie ne veux point dire ce qu’ils ont fait, on lo ſcçait
-        aſſez; ils neſe ſont pas aiſſez brauer; ils ont braué; ils
-        fons ſortis de leur ville; ils ont tenu la campagne; ils
-        ont commancé &amp; heureuſement pourſuiuy vn ſiege
-        cependant qu’ils eſtoient les ſeuls en France, qui ne
-        baiſaſfonp pas le qul au bouc, &amp; n’adoraſſent pas l’ima
-        ge&amp;ele pouuoir delh beſte
-         Leur deſſein eſtoit done ſans doute des plus illu
-        ſtres; D’auoir ſans crainte ny ſans ſecours, entrepris
-        euic feilcd qurn’auoit pas reuſſi à toute la France. Vn
-        xempleſ fs dui malheurde leurs pareils, deuoit in
-        timider des courages mediocres; &amp; les leurs doiuent
-        auioineſteé des plus grads de s’eſtre mis à la mercy d’vne
-        mer où cant de vaiſſeaux à leurs yeux venoient de fai
-        re n’ufrage dans! vn temps qui promettoit à tous les
-        nochers vuheureux voyage.
-        Si donc leur deſſein a eſté́ illuſtre, leur eſtat eſt plein
-        de felicité &amp; de gloire. Ils ſontmorts, mais ils le ſont
-        pour vnebonnhe cauſe;ce n’eſt point vn ecrime qui les à
-        fait perir. Lavertu eſt ce rameau d’or qui coõduiſitEnée
-        aux entres du treſpas ſans qu’il perdit la vie: &amp; cette 
-        meſme vertu qu’ils ont profeſſé́e a fait qu’ils ont expi
-        eé ſans perdre le iour, &amp; qu’ils viuront dans la memoi
-        re des gens de bien, malgré le treſpas.
-        Nous conſiderons ce qu’on appelle leur infortune
-        auec enuie; &amp; nous diſons picquez d’emulation, qu’ils
-        ſont beameux d’eſtre inforrunez! Certes de fait, vn bon
-        heur ſi grad eſt vn treſor bien rare; il eſt de ceux que les
-        morts emportent auec eux. Les Peuples qui iettoient
-        dans la foſſe de leurs deffuncts, de l’or, des pierreries,
-        des eſclaues, ne leur donnoient rien d’vn prix égal aux
-        richeſſes, que nos illuſtres Bourdelois ont emportées.
-        La terre pourriſſoir ſes ſotres vanitez, auec le corps au
-        quel elles eſtoient voüées; mais le vray bien, &amp; la ri
-        cheſſe qui les ont ſuiuis, ſont des treſors incorru
-        ptibles; &amp; tout le monde ſçaura touſiours qu’ils ſont
-        morts pour la deffence de la publique liberté.
-        Ceux qui deux mille ans auant eux ont eu le bon
-        heur &amp; le coutage d’en faire de meſmes, viuent enco
-        res, quelle longue vie: il ne faut done pas que nous
-        croyons qu’ilsſoient morts, puis qu’ils ſont heritiers
-        du deſtin de ceux qui ne peuuent mourit; pourquoy
-        doncques les pleurerions nous?
-        Ie te le redis doncencores paſſant, ne pleure point
-        pour eux, regarde au haut de cet Epitaphe, &amp; tu les
-        verras proclamer vainqueurs. S’ilsſont des vainqueurs
-        ils ne veulent entendre que chants de triomphe, &amp;
-        ne ſe ſcçauroient plaire aux plaintes lugubres; Les
-        ſouſpirs ſont trop triſtes pour eux. Faits ton deuoir 
-        paſſant, puiblie leur victoire &amp; non pas leur mort.
-        Le but de leurs combats tu le ſç̧ais, ils ne vouloient
-        queſortir de la ryrannie du Mazarin. Les commande
-        mens d’vn vaſſal &amp; pluſtoſt du moindre de tous les
-        hommes eſtoient inſupportables à ces ames Heroi
-        ques. Ils cherchoient à̀ ce liberer de ſon indigne &amp;
-        trop ample pouuoir. Hé bien, n’ont ils pas heureuſe
-        ment reuſſi? Mais c’eſt en mourant; &amp; qu’importe s’ils
-        ſont arriuez au lieu par vn autte chemin? N’eſt-ce pas
-        touſiours la meſme choſeeneſont ils pas touſiours dans
-        l’eſtat qu’ils ont ſouihaité? Leur victoire meſme eſt
-        d’autant plus illuſtre qu’elle eſt promptement empor
-        tée; ils ont auſſi-toſt obtenu que deſiré leur bon-heur.
-        Autrement il y auoit vne infiniteé de difficultez à vain
-        cre. Les ſuccez ſont douteux, quoy que les deſſeins
-        ſoent bons. Il eut fallu long-tempscombattre &amp; peut
-        eſtre en vain. Apres pluſieurs coups receus &amp; donnez,
-        le tyran pouuoit auoir le deſſus, leurs eſpées pou
-        uoient eſtre encor changées en chaiſnes, &amp; tout leur
-        courage ne les garantiſſoit pas ben de lacaptiuité.
-        Ils ſont graces à Dieu, exempts de tous ſes perils. Ils
-        brauent, delà où ils ſont en toute aſſeurance, l’audace
-        du fier demon qui nous domine encores. Ces mauuais
-        deſſeins ne les ſç̧auroient plus ioindre; ils ne ſont plus
-        que pour les deteſter, &amp; non pas pour les reſſentir.
-        Quelle plus grande victoire pouuoient-ils rempor
-        ter ſur l’ennemy de leur liberté affranchie. Quand ils
-        auroient en mille rencontres, vaincu mille de ſes va
-        lets, 
-        lets, comme le ſieur d’Eſpernon &amp; beaucoup d’au
-        tres, dont il y en a quelques-vns d’encores bienplus
-        grande eſtoffe. Quand ils auroient paſſé au tranchant
-        de l’eſpé́e deux cens mille de ſes eſclaues, &amp; qu’il ne
-        ſeroir plus meſme en France; ils n’en ſeroient pas
-        mieux affranchis qu’ils ſont, Leur liberté courroit en
-        cores peut-eſtre plus de riſque, il pourroit retourner
-        dans vn lieu où il eſt ſi bien maintenu, &amp; reprendre
-        par vne autre reuolution, l’empire qu’on luy auroit
-        vne fois oſteé..
-        Combien la fortune a telle ſouuent ioü̈é des rolles
-        de cette nature. Ne ſç̧auons nous pas que Marcus apres
-        auoir eſté le premier à̀ Rome, mendia du pain long
-        temps, &amp; fuſt vne fois contraint de ſe noyer iuſques à̀
-        la bouche pour les ames de ſes ennemis, &amp; qu’enfin, il
-         reuintencor apres tous ſes malheurs auſſi grand qu’il
-        euſt iamais eſté. Combien de bãnis en grace ſont reue
-        nus, auſſi grands &amp; auſſi puiſſans qu’auparauent. N’a
-        on pas vû cent fois des perſonnes eſtre quaſi rappel
-        lée de la mort à la Couronne, &amp; eſtre peu s’en faut eſ
-        leuez ſur le troſne du plus profond du tombeau. Sur
-        tout en ce rencontre ou la memoire des grands ſerui
-        ces que Mazarin a rendus à cet Eſtat, eſt touſiours ſi
-        preſente à ceux quli dominent; ou l’on le conſerue
-        pour de ſi bonnes &amp; de ſiiuſtes raiſons, il ſeroit à crain
-        dre que s’il s’eſtoit retiré on ne le vouluſt bien-toſt
-        rappeller.
-         La liberté de ces illuſtres mortseſt donc de cette fa¬ 
-        9
-        Ie
-        çon bien mieux aſfermie qu’elle ne le ſeroit s’ils vi
-        uoient encores &amp; vainqueurs. En cet eſtat, quelle fe
-        licité eſt compatrable à celle-laà qu’ils ont receuë? qui
-        peut de ceux qui reſtent en France viuans, ce dire au
-        tant heureux que morts ils le ſont?
-        Helas! nous demeurons dans la tyrannie qu’ils ont
-        ſurmontée, il faut que nous portions le peſant ioug.
-         qu’ils ont ſecoü̈eé. Il faut que nous obeiſſions à̀ noſtre
-        ennemy, &amp; qu’encor nous baiſions les fers où il nous
-        fait gemr. La vie d’où ces genereux expirez ſont ſortis,
-        nous attache à ces loix malgré nous. Puis qu’il faut vi
-        ure il le faut ſeruir.
-        Encor ſi noſtre malheur en deraeuroit où il eſt. Si
-        ne pouuans plus rien eſperer, nous ne deuions plus
-        nien craindre; Mais quelque grande que ſoit noſtre
-        miſereapparente, nous deuons encor eſtre bien plus
-        malheureux. Quand ce cruel nous aura rauy tous nos
-        biens, on le verra s’en prendre impitoyablement à
-        nos vies; &amp; ayant immollé tous nos treſorsà ſon aua
-        rice, facrifier encore noſtre ſang à ſa cruauté. Bien
-        toſt noſtre inhumain Silla va faire d’autant de Fran
-        cois, autant d’hoſties. Bien-toſt nous allons voir en
-        France les meſmes proſcritions qui enſanglanterent
-        autrefois Rome &amp; le meſme Triumvirat.
-        Pourquoy ſommes nous demeurez apres nos chers
-        reres? Pourquoy ne pleurons nous pas pluſtoſt pour
-        nous que pour eux. Si les larmes de compaſſion l’one
-         araché́es par vn objet de miſere, c’eſt pour nous ſeuls 
-         1
-        qu’on en doit verſer. Pour eux, on ne peut les conſi
-        derer dans le triſte &amp; le funebre eſtat où nous ſommes
-        reduits. Toute la France doit benir l’inuiolable fideli
-        teé qu’ils luy ont teſmoignée; Tous les vrais François
-        doiuent aller porter des fleurs ſur leurs tombes, &amp; cou
-        ronner leur ſepultures de mille feſtons. Nous leur de
-        nons mille ſortes d’hommages; &amp; des Payens les ado
-        roient comme des hommes que la mort leur auroit
-        rendu des Dieux protecteurs. Pour moy ie ne trouue
-        pas qu’il yait d’impieté à̀ leur ſacrifier des loü̈anges; ll
-        a eſté de tout temps permis de loiü̈er apres leur treſ
-        pas, ceux qui dans les actions de leur vie ont eſté tous
-        pleins de gloire &amp; d’honneur.
-        Chantons donc ſans nous laſſer des chants de triom
-        phe pour eux, encore qu’on crie par tout leur déroute.
-        Ceux qui ſont morts &amp; que nous loüons n’ont point
-        eu la laſcheté de fuit. Il eſt vray que l’armée du Par
-        lement de Bourdeaux a eſteé miſe en route: Il eſt vray
-        que la trahiſon dequantiteé de laſches, payez pour tra
-        hir ceux qu’ils feignoient de ſeruir, a rompu l’ordre
-        des batailſons. Il eſt vray que ces perfides à la veue
-        d’vne poignée d’ennemis ont fuy comme ils l’auoient
-        promis, &amp; qu’ils n’ont ainſi eſté que trop fidelles de
-        dans leur infidelité. En fuyant ils entraiſnoient com
-         me par force ceux qui n’eſtoient pas reſolus de par
-         tir; ainſi ces traiſtres rompoient les rangs &amp; ſemoient
-        - lI’eſpouuente parmy ceux qui ne ſcçauoient ce quec’e
-        ſtoit de frermin 
-        En vn grand nombrs de ſoldats les plus vaillans font
-        ordinairementce qu’ils voyont faire, pource que c’eſt
-        vne exercce folie aà vn partieulier d’entreprendre rien
-        tour ſeul dans vne déroute qui voit fuir s’y prepare, &amp;
-        n’eſt pas ſi temeraire de vouloir demeurer ſeul contre
-        rtous les ennemis; Bien ſouuent la fuite eſt vn ordre
-        donné pour ce ſauuer, lors que le General voit qu’il eſt
-        impoſſible de faire ferme: &amp; il ne faut pas douter que
-        les traiſtres en fuyans ne diſent, ſauue qui peut, pour
-        rendre la déroute plus prompte &amp; la victoire des en
-        nemis plus aſſeuréc.
-        . En ce rencontre Monſieur de CHAMBRET le ge
-        nereux, General des vancus, fit ce qu’il pû̂t pour re
-        medier au malheur de ſon iuſte party. Il ne faut pas
-        douter qu’il ne ſe meſlaſt ſouuent parmy les fuyards
-        pour les rappeller. Mis quoy! ce grand Capitaine ne
-        parloit qu’à des traiſtres ou qu’à des trahis; qu’à des
-        gens payez pour la fuite, ou à̀ d’autres qui raiſonnable
-        ment ne pouuoient pas demeurer dans vne déroute ¬i
-        generale &amp; ſi bien tramée. Ce fuſt dans cét eſpouuen
-        tement que moururent ceux que nous loüons &amp; que
-        nous ne pleurons pas. Ce fuſt en cette confuſion
-        que le vaillant &amp; le ſage de Chambret faiſant ſon de
-        uoir, auquel il n’aiamais manqué pendant ſa vie, re
-        ceut par la main d’vn traiſtre, &amp; des ſiens propres le
-        coup mortel, que tous les ennemis enſemble n’cuſſent
-        oſé iamas luy donner.
-        Vous auez par la ſans y penſer, laſches eſclaues du
-        moindre 
-        moindre des hommes, teſmoigné l’eſtat que vous fai
-        ſiez de celuy que vous auez fait aſſaſſiner. D’Eſpernon
-        n’auoit pas creu le pouuoir vaincre en iuſte guerre;
-        Mazarin ny ſo Conſeil ne ſe l’eſtoient pas imaginez.
-        C’eſtoit vn homme incorruptible aux promeſſes, &amp;
-        qui ſç̧auoit meſpriſer les menaces. C’eſtoit vn vray
-        General, &amp; non pas vn homme à piller ſon party ſans
-        le ſeruir. Enfin, il eſtoit tel, qu’il a fallu des traiſtres
-        pours’en deffaire, parce qu’il n’y auoit point d’eſpe
-        rance de le ggner ny de le vainere. Certorius autre
-        fois en Eſpagne euſtvn meſme deſtin; lesplus grands
-        hommes de la terre n’en euſſent ſceu venir aà bout;
-        quelques perfides aſſaſſins le déroberent à la terre. Il
-        fuyoit comme toy de Chambret la perſecution des
-        ryrans de ſa patrie. Comme toy il faiſoit peur &amp; dom
-        mage à ces enemis, &amp; comme à eoy de Iaſches fami
-        hers luy oſterent vne vie qu’il auoit genereuſerment
-        deffenduë contre toutes les forces de l’Empire.
-        Mais fi comme toy il euſt vne deſtinée en ſa fin dé
-        plorable comme il auoit eu auſſi comme toy vne vie
-        en ſaſuite glorieuſe; comme luy tu ne mouras iamais
-        dans la memoire deshommes, &amp; l’eſclat de ta haute &amp;
-        de ta fublime vertu, brillera du fonds de ton tombeau,
-        &amp; inſtruira la Poſterité.
-         FI N.
-        *3
-        E			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">vers</term>
+          <term type="form">prose</term>
+          <term type="genre">épitaphe</term>
+          <term type="subject" />
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_20" source="Moreau">
+          <p>Voyage de Flandre</p>
+          <date when="1649-04-30">1649-04-30</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-06-09" who="ZC" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />LA SEVRE,
+        <lb />L'ESCLATANTE
+        <lb />ET LA GLORIEVSE
+        <lb />VICTOIRE
+        <lb />DES
+        <lb />BOVRDELOIS,
+        <lb />MALGRE LA TRAHISON
+        <lb />de leurs faux amis, par maniere
+        <lb />d'Epitaphe.
+        <lb />Auec deux Epitaphes pour Monſieur de Chambres
+        <lb />leur General. <figure type="decoration" />
+        <lb />A PARIS.
+        <lb />M. DC. XLIX. <pb n="2" />
+        <pb n="3" />
+        <lb />LA SEVRE, L’ESCLATANTE.
+        <lb />&amp; la glorieuſe Victoire des Bourdelois mal
+        <lb rend="¬" break="no" />greé la trahiſon de leurs faux amis, par ma
+        <lb rend="¬" break="no" />niere d’épitaphe.
+        <lb />ee
+        <lb /> As s A s, ſi vous arreſtez icy vos pas pous
+        <lb />conſiderer ces tombeaux, prenez bien gar
+        <lb rend="¬" break="no" />g de que quelque compaſſion ne vous ſur
+        <lb rend="¬" break="no" />? orenne, &amp; que vous ne pleuriez pour ceux
+        <lb rend="¬" break="no" />là que le Ciel a rendus plus heureux que vous. Ils ont
+        <lb />eu le courage de vouſoir deffendre eux- meſmes &amp;
+        <lb />leur Patrie, de la tyrannie qui l’opprime: c’eſt vne gloi
+        <lb rend="¬" break="no" />re apres laquelle ils ne nous ſç̧auroient donner à pleu
+        <lb rend="¬" break="no" />rer. De ſi grands deſſeins rendent ſi dignes &amp; ſi heu
+        <lb rend="¬" break="no" />cçon que reiuſſiſſe l’entrepriſe, on doit pluſtoſt benir
+        <lb />leur bon-heur, ou meſpriſer leur malheur, que non
+        <lb />pas de plaindre eur perte. Mais ils ſont morts? il eſt
+        <lb />vray, ils ne ſont pas les ſeuls qui ont cedé au deſtin, &amp;
+        <lb />qui ont ſuccomhé ſous le faix de leurs nobles entre
+        <lb rend="¬" break="no" />priſes.
+        <lb />Leur bon-heur toutesfois n’en eſtpas moins grand;
+        <lb /> A ij <pb n="4" />
+        <lb />ſi nous le conſiderons auec des yeux eſpurez de fauſſes
+        <lb />lumieres. La vertu qui prend vn illuſtre deſſein dans
+        <lb />ce premier mouuement eſt tellement heureuſe, qu’il
+        <lb />n’eſt plus rien capable d’amoindrir ſa felicité. Que ce
+        <lb />deſſein ait vne iſſuë fauorable ou contraire, n’impor
+        <lb rend="¬" break="no" />te; comme les ſuccez ne ſont pas dans ſa main, &amp; que
+        <lb />les éuenemens ne releuent point de ſon empire, laſeu
+        <lb rend="¬" break="no" />le impreſſion qu’elle c’eſt donnée d’vne ſi belle ima
+        <lb rend="¬" break="no" />ge, eſt cout ce qui la felicite &amp; qui la comble de ioye
+        <lb />&amp; de bon-heur.
+        <lb />Qui doute que le deſſein des Bourdelois ( qui ſont
+        <lb />ceux qui repoſent heureuſemét icy) ne fuſt vn illuſtre
+        <lb />deſſein? Ils ont vû̂ quaſi toute la France armeée pour la
+        <lb />ruine de ſon tyran:ls ont vû de rous les bouts du mon
+        <lb rend="¬" break="no" />de venir des ennemis coniurez pour ſa ruine. La gran
+        <lb rend="¬" break="no" />de &amp; la populeuſe ville de Paris; Ils l’ont entenduë ne
+        <lb />crier que la mort de ce cruel, &amp; ne vomir qu’impreca
+        <lb rend="¬" break="no" />tions contre ce Barbare. En ce temps-laà quand ils ſe
+        <lb />fuſſent vnis au reſte de tant de genereux ennemis, leur
+        <lb />generoſité n’euſt pas touſiours eſté moindre que celle
+        <lb />des autres. Mais ils ont creu qu’il y auoit aſſez d’eſpé́es
+        <lb />nuës pour trancher vne ſeule teſte; &amp; qu’inutillement
+        <lb />les leurs ſeroient peut eſtre deſgainées. Que le coup
+        <lb />ſans doute ſeroit fait auant qu’ils fuſſent preparez.
+        <lb />Qu’il y auroit de la honte à arriuer trop tart; &amp; qu’il
+        <lb />valoit mieux demeurerà attendre les euenemens.
+        <lb />Certes de fait, vne infinité de perſonnes onteſté
+        <lb />ſurpriſes au ſuccez des affaires. Iamais l’on ne ce fuſt
+        <lb />imaginé́ <pb n="5" />
+        <lb />imaginé́ que Patis ſi fort cuſt ainſi honteuſement ſuc
+        <lb rend="¬" break="no" />combeé, &amp; que ces fiers Habitans euſſent pû ſouffrir
+        <lb />tant de traiſtres les oonduire, &amp; diſpoſer à leur yeux ſi
+        <lb />perfidement de leurs biens, de leur honneur, &amp; de.
+        <lb />leur vie.
+        <lb />Vn ſi grand malheur, a ſurpris beaucoup de fortes.
+        <lb />ames, &amp; a affligé toutes les bonnes. En ce rencontre
+        <lb />toutefois, toutes les Prouinces ont ſuiuy le triſteſort
+        <lb />de cette alheureuſe ville. De touteparts onta tendu
+        <lb />le col &amp; les mains Qnauoitſecoüéle ioug, mas onen
+        <lb />a receu vn tout nouueau beaucoup plus peſant que le
+        <lb /> premier,; &amp; le changement de nôtre fortune, c’eſt pour
+        <lb />nous fait auec tant de deſauantage, queſi aupaiauant
+        <lb />nous eſtions malheureux, auiourd’huy nous forhtaes
+        <lb />au dernier degré de noſtre malheur, &amp;tout proches
+        <lb />du deſeſpoir.
+        <lb />Les Bourdelois qui n’auoient rien ditpendant les cla
+        <lb rend="¬" break="no" />meurs de toutce Royaume; qui s’eœſtient tenus com
+        <lb rend="¬" break="no" />me dans le reſpect, lors que leur licence pouuoit eſtre
+        <lb />authioriſé́e par l’vniuerſelle; quand ils ont vu tout cal
+        <lb rend="¬" break="no" />me, que toure la France eſtoit de rchef abbatuë, &amp;
+        <lb />auoit plus que iamais la gorge ſous le pied de ſon y
+        <lb rend="¬" break="no" />ran; ils ſe ſont eſmeus à ce triſte ſpectacle. Ils eſpe
+        <lb rend="¬" break="no" />roient peut-eſtre que le Regnes’alloit adouicir; lls ont
+        <lb />vû̂ arriuer tout le rehours de leur eſperance. Ce fier
+        <lb />animal qui: ſe veut ſeoir ſur le Troſne de uoſtre
+        <lb />Agneau ( ſiie l’oſe dire en ces termes) ne leur apû̂ pa
+        <lb rend="¬" break="no" />roiſtre en cet Eſtat, ſans leur faire horreur. Alors cette <pb n="6" />
+        <lb />6
+        <lb />generofe qui c’eſtoitretenué ne s’eſt plus moderée.
+        <lb />Ce feu caché a briſé cesnachots &amp; avoulu faire voir aà
+        <lb />rout le monde qu’il bruſloit, encores que ſa flâme
+        <lb />n’euſt pas eſteé apperceuë, tellement que ceux que nos
+        <lb />fureurs n’auoient point animez, ont trouue dans no
+        <lb rend="¬" break="no" />ſre trmidité plus de courage, qu’ils n’auoient fait de
+        <lb />colere dans noſtre couroux.
+        <lb /> Ie ne veux point dire ce qu’ils ont fait, on lo ſcçait
+        <lb />aſſez; ils neſe ſont pas aiſſez brauer; ils ont braué; ils
+        <lb />fons ſortis de leur ville; ils ont tenu la campagne; ils
+        <lb />ont commancé &amp; heureuſement pourſuiuy vn ſiege
+        <lb />cependant qu’ils eſtoient les ſeuls en France, qui ne
+        <lb />baiſaſfonp pas le qul au bouc, &amp; n’adoraſſent pas l’ima
+        <lb rend="¬" break="no" />ge&amp;ele pouuoir delh beſte
+        <lb rend="¬" break="no" /> Leur deſſein eſtoit done ſans doute des plus illu
+        <lb rend="¬" break="no" />ſtres; D’auoir ſans crainte ny ſans ſecours, entrepris
+        <lb />euic feilcd qurn’auoit pas reuſſi à toute la France. Vn
+        <lb />xempleſ fs dui malheurde leurs pareils, deuoit in
+        <lb rend="¬" break="no" />timider des courages mediocres; &amp; les leurs doiuent
+        <lb />auioineſteé des plus grads de s’eſtre mis à la mercy d’vne
+        <lb />mer où cant de vaiſſeaux à leurs yeux venoient de fai
+        <lb rend="¬" break="no" />re n’ufrage dans! vn temps qui promettoit à tous les
+        <lb />nochers vuheureux voyage.
+        <lb />Si donc leur deſſein a eſté́ illuſtre, leur eſtat eſt plein
+        <lb />de felicité &amp; de gloire. Ils ſontmorts, mais ils le ſont
+        <lb />pour vnebonnhe cauſe;ce n’eſt point vn ecrime qui les à
+        <lb />fait perir. Lavertu eſt ce rameau d’or qui coõduiſitEnée
+        <lb />aux entres du treſpas ſans qu’il perdit la vie: &amp; cette <pb n="7" />
+        <lb />meſme vertu qu’ils ont profeſſé́e a fait qu’ils ont expi
+        <lb rend="¬" break="no" />eé ſans perdre le iour, &amp; qu’ils viuront dans la memoi
+        <lb rend="¬" break="no" />re des gens de bien, malgré le treſpas.
+        <lb />Nous conſiderons ce qu’on appelle leur infortune
+        <lb />auec enuie; &amp; nous diſons picquez d’emulation, qu’ils
+        <lb />ſont beameux d’eſtre inforrunez! Certes de fait, vn bon
+        <lb rend="¬" break="no" />heur ſi grad eſt vn treſor bien rare; il eſt de ceux que les
+        <lb />morts emportent auec eux. Les Peuples qui iettoient
+        <lb />dans la foſſe de leurs deffuncts, de l’or, des pierreries,
+        <lb />des eſclaues, ne leur donnoient rien d’vn prix égal aux
+        <lb />richeſſes, que nos illuſtres Bourdelois ont emportées.
+        <lb />La terre pourriſſoir ſes ſotres vanitez, auec le corps au
+        <lb rend="¬" break="no" />quel elles eſtoient voüées; mais le vray bien, &amp; la ri
+        <lb rend="¬" break="no" />cheſſe qui les ont ſuiuis, ſont des treſors incorru
+        <lb rend="¬" break="no" />ptibles; &amp; tout le monde ſçaura touſiours qu’ils ſont
+        <lb />morts pour la deffence de la publique liberté.
+        <lb />Ceux qui deux mille ans auant eux ont eu le bon
+        <lb rend="¬" break="no" />heur &amp; le coutage d’en faire de meſmes, viuent enco
+        <lb rend="¬" break="no" />res, quelle longue vie: il ne faut done pas que nous
+        <lb />croyons qu’ilsſoient morts, puis qu’ils ſont heritiers
+        <lb />du deſtin de ceux qui ne peuuent mourit; pourquoy
+        <lb />doncques les pleurerions nous?
+        <lb />Ie te le redis doncencores paſſant, ne pleure point
+        <lb />pour eux, regarde au haut de cet Epitaphe, &amp; tu les
+        <lb />verras proclamer vainqueurs. S’ilsſont des vainqueurs
+        <lb />ils ne veulent entendre que chants de triomphe, &amp;
+        <lb />ne ſe ſcçauroient plaire aux plaintes lugubres; Les
+        <lb />ſouſpirs ſont trop triſtes pour eux. Faits ton deuoir <pb n="8" />
+        <lb />paſſant, puiblie leur victoire &amp; non pas leur mort.
+        <lb />Le but de leurs combats tu le ſç̧ais, ils ne vouloient
+        <lb />queſortir de la ryrannie du Mazarin. Les commande
+        <lb rend="¬" break="no" />mens d’vn vaſſal &amp; pluſtoſt du moindre de tous les
+        <lb />hommes eſtoient inſupportables à ces ames Heroi
+        <lb rend="¬" break="no" />ques. Ils cherchoient à̀ ce liberer de ſon indigne &amp;
+        <lb />trop ample pouuoir. Hé bien, n’ont ils pas heureuſe
+        <lb rend="¬" break="no" />ment reuſſi? Mais c’eſt en mourant; &amp; qu’importe s’ils
+        <lb />ſont arriuez au lieu par vn autte chemin? N’eſt-ce pas
+        <lb />touſiours la meſme choſeeneſont ils pas touſiours dans
+        <lb />l’eſtat qu’ils ont ſouihaité? Leur victoire meſme eſt
+        <lb />d’autant plus illuſtre qu’elle eſt promptement empor
+        <lb rend="¬" break="no" />tée; ils ont auſſi-toſt obtenu que deſiré leur bon-heur.
+        <lb />Autrement il y auoit vne infiniteé de difficultez à vain
+        <lb rend="¬" break="no" />cre. Les ſuccez ſont douteux, quoy que les deſſeins
+        <lb />ſoent bons. Il eut fallu long-tempscombattre &amp; peut
+        <lb />eſtre en vain. Apres pluſieurs coups receus &amp; donnez,
+        <lb />le tyran pouuoit auoir le deſſus, leurs eſpées pou
+        <lb rend="¬" break="no" />uoient eſtre encor changées en chaiſnes, &amp; tout leur
+        <lb />courage ne les garantiſſoit pas ben de lacaptiuité.
+        <lb />Ils ſont graces à Dieu, exempts de tous ſes perils. Ils
+        <lb />brauent, delà où ils ſont en toute aſſeurance, l’audace
+        <lb />du fier demon qui nous domine encores. Ces mauuais
+        <lb />deſſeins ne les ſç̧auroient plus ioindre; ils ne ſont plus
+        <lb />que pour les deteſter, &amp; non pas pour les reſſentir.
+        <lb />Quelle plus grande victoire pouuoient-ils rempor
+        <lb rend="¬" break="no" />ter ſur l’ennemy de leur liberté affranchie. Quand ils
+        <lb />auroient en mille rencontres, vaincu mille de ſes va
+        <lb rend="¬" break="no" />lets, <pb n="9" />
+        <lb />lets, comme le ſieur d’Eſpernon &amp; beaucoup d’au
+        <lb rend="¬" break="no" />tres, dont il y en a quelques-vns d’encores bienplus
+        <lb />grande eſtoffe. Quand ils auroient paſſé au tranchant
+        <lb />de l’eſpé́e deux cens mille de ſes eſclaues, &amp; qu’il ne
+        <lb />ſeroir plus meſme en France; ils n’en ſeroient pas
+        <lb />mieux affranchis qu’ils ſont, Leur liberté courroit en
+        <lb rend="¬" break="no" />cores peut-eſtre plus de riſque, il pourroit retourner
+        <lb />dans vn lieu où il eſt ſi bien maintenu, &amp; reprendre
+        <lb />par vne autre reuolution, l’empire qu’on luy auroit
+        <lb />vne fois oſteé..
+        <lb />Combien la fortune a telle ſouuent ioü̈é des rolles
+        <lb />de cette nature. Ne ſç̧auons nous pas que Marcus apres
+        <lb />auoir eſté le premier à̀ Rome, mendia du pain long
+        <lb rend="¬" break="no" />temps, &amp; fuſt vne fois contraint de ſe noyer iuſques à̀
+        <lb />la bouche pour les ames de ſes ennemis, &amp; qu’enfin, il
+        <lb /> reuintencor apres tous ſes malheurs auſſi grand qu’il
+        <lb />euſt iamais eſté. Combien de bãnis en grace ſont reue
+        <lb rend="¬" break="no" />nus, auſſi grands &amp; auſſi puiſſans qu’auparauent. N’a
+        <lb rend="¬" break="no" />on pas vû cent fois des perſonnes eſtre quaſi rappel
+        <lb rend="¬" break="no" />lée de la mort à la Couronne, &amp; eſtre peu s’en faut eſ
+        <lb rend="¬" break="no" />leuez ſur le troſne du plus profond du tombeau. Sur
+        <lb />tout en ce rencontre ou la memoire des grands ſerui
+        <lb rend="¬" break="no" />ces que Mazarin a rendus à cet Eſtat, eſt touſiours ſi
+        <lb />preſente à ceux quli dominent; ou l’on le conſerue
+        <lb />pour de ſi bonnes &amp; de ſiiuſtes raiſons, il ſeroit à crain
+        <lb rend="¬" break="no" />dre que s’il s’eſtoit retiré on ne le vouluſt bien-toſt
+        <lb />rappeller.
+        <lb /> La liberté de ces illuſtres mortseſt donc de cette fa¬ <pb n="10" />
+        <lb />9
+        <lb />Ie
+        <lb />çon bien mieux aſfermie qu’elle ne le ſeroit s’ils vi
+        <lb rend="¬" break="no" />uoient encores &amp; vainqueurs. En cet eſtat, quelle fe
+        <lb rend="¬" break="no" />licité eſt compatrable à celle-laà qu’ils ont receuë? qui
+        <lb />peut de ceux qui reſtent en France viuans, ce dire au
+        <lb rend="¬" break="no" />tant heureux que morts ils le ſont?
+        <lb />Helas! nous demeurons dans la tyrannie qu’ils ont
+        <lb />ſurmontée, il faut que nous portions le peſant ioug.
+        <lb /> qu’ils ont ſecoü̈eé. Il faut que nous obeiſſions à̀ noſtre
+        <lb />ennemy, &amp; qu’encor nous baiſions les fers où il nous
+        <lb />fait gemr. La vie d’où ces genereux expirez ſont ſortis,
+        <lb />nous attache à ces loix malgré nous. Puis qu’il faut vi
+        <lb rend="¬" break="no" />ure il le faut ſeruir.
+        <lb />Encor ſi noſtre malheur en deraeuroit où il eſt. Si
+        <lb />ne pouuans plus rien eſperer, nous ne deuions plus
+        <lb />nien craindre; Mais quelque grande que ſoit noſtre
+        <lb />miſereapparente, nous deuons encor eſtre bien plus
+        <lb />malheureux. Quand ce cruel nous aura rauy tous nos
+        <lb />biens, on le verra s’en prendre impitoyablement à
+        <lb />nos vies; &amp; ayant immollé tous nos treſorsà ſon aua
+        <lb rend="¬" break="no" />rice, facrifier encore noſtre ſang à ſa cruauté. Bien
+        <lb rend="¬" break="no" />toſt noſtre inhumain Silla va faire d’autant de Fran
+        <lb rend="¬" break="no" />cois, autant d’hoſties. Bien-toſt nous allons voir en
+        <lb />France les meſmes proſcritions qui enſanglanterent
+        <lb />autrefois Rome &amp; le meſme Triumvirat.
+        <lb />Pourquoy ſommes nous demeurez apres nos chers
+        <lb />reres? Pourquoy ne pleurons nous pas pluſtoſt pour
+        <lb />nous que pour eux. Si les larmes de compaſſion l’one
+        <lb /> araché́es par vn objet de miſere, c’eſt pour nous ſeuls <pb n="11" />
+        <lb /> 1
+        <lb />qu’on en doit verſer. Pour eux, on ne peut les conſi
+        <lb rend="¬" break="no" />derer dans le triſte &amp; le funebre eſtat où nous ſommes
+        <lb />reduits. Toute la France doit benir l’inuiolable fideli
+        <lb rend="¬" break="no" />teé qu’ils luy ont teſmoignée; Tous les vrais François
+        <lb />doiuent aller porter des fleurs ſur leurs tombes, &amp; cou
+        <lb rend="¬" break="no" />ronner leur ſepultures de mille feſtons. Nous leur de
+        <lb rend="¬" break="no" />nons mille ſortes d’hommages; &amp; des Payens les ado
+        <lb rend="¬" break="no" />roient comme des hommes que la mort leur auroit
+        <lb />rendu des Dieux protecteurs. Pour moy ie ne trouue
+        <lb />pas qu’il yait d’impieté à̀ leur ſacrifier des loü̈anges; ll
+        <lb />a eſté de tout temps permis de loiü̈er apres leur treſ
+        <lb rend="¬" break="no" />pas, ceux qui dans les actions de leur vie ont eſté tous
+        <lb />pleins de gloire &amp; d’honneur.
+        <lb />Chantons donc ſans nous laſſer des chants de triom
+        <lb rend="¬" break="no" />phe pour eux, encore qu’on crie par tout leur déroute.
+        <lb />Ceux qui ſont morts &amp; que nous loüons n’ont point
+        <lb />eu la laſcheté de fuit. Il eſt vray que l’armée du Par
+        <lb rend="¬" break="no" />lement de Bourdeaux a eſteé miſe en route: Il eſt vray
+        <lb />que la trahiſon dequantiteé de laſches, payez pour tra
+        <lb rend="¬" break="no" />hir ceux qu’ils feignoient de ſeruir, a rompu l’ordre
+        <lb />des batailſons. Il eſt vray que ces perfides à la veue
+        <lb />d’vne poignée d’ennemis ont fuy comme ils l’auoient
+        <lb />promis, &amp; qu’ils n’ont ainſi eſté que trop fidelles de
+        <lb rend="¬" break="no" />dans leur infidelité. En fuyant ils entraiſnoient com
+        <lb rend="¬" break="no" /> me par force ceux qui n’eſtoient pas reſolus de par
+        <lb rend="¬" break="no" /> tir; ainſi ces traiſtres rompoient les rangs &amp; ſemoient
+        <lb />- lI’eſpouuente parmy ceux qui ne ſcçauoient ce quec’e
+        <lb rend="¬" break="no" />ſtoit de frermin <pb n="12" />
+        <lb />En vn grand nombrs de ſoldats les plus vaillans font
+        <lb />ordinairementce qu’ils voyont faire, pource que c’eſt
+        <lb />vne exercce folie aà vn partieulier d’entreprendre rien
+        <lb />tour ſeul dans vne déroute qui voit fuir s’y prepare, &amp;
+        <lb />n’eſt pas ſi temeraire de vouloir demeurer ſeul contre
+        <lb />rtous les ennemis; Bien ſouuent la fuite eſt vn ordre
+        <lb />donné pour ce ſauuer, lors que le General voit qu’il eſt
+        <lb />impoſſible de faire ferme: &amp; il ne faut pas douter que
+        <lb />les traiſtres en fuyans ne diſent, ſauue qui peut, pour
+        <lb />rendre la déroute plus prompte &amp; la victoire des en
+        <lb rend="¬" break="no" />nemis plus aſſeuréc.
+        <lb />. En ce rencontre Monſieur de CHAMBRET le ge
+        <lb rend="¬" break="no" />nereux, General des vancus, fit ce qu’il pû̂t pour re
+        <lb rend="¬" break="no" />medier au malheur de ſon iuſte party. Il ne faut pas
+        <lb />douter qu’il ne ſe meſlaſt ſouuent parmy les fuyards
+        <lb />pour les rappeller. Mis quoy! ce grand Capitaine ne
+        <lb />parloit qu’à des traiſtres ou qu’à des trahis; qu’à des
+        <lb />gens payez pour la fuite, ou à̀ d’autres qui raiſonnable
+        <lb rend="¬" break="no" />ment ne pouuoient pas demeurer dans vne déroute ¬i
+        <lb />generale &amp; ſi bien tramée. Ce fuſt dans cét eſpouuen
+        <lb rend="¬" break="no" />tement que moururent ceux que nous loüons &amp; que
+        <lb />nous ne pleurons pas. Ce fuſt en cette confuſion
+        <lb />que le vaillant &amp; le ſage de Chambret faiſant ſon de
+        <lb rend="¬" break="no" />uoir, auquel il n’aiamais manqué pendant ſa vie, re
+        <lb rend="¬" break="no" />ceut par la main d’vn traiſtre, &amp; des ſiens propres le
+        <lb />coup mortel, que tous les ennemis enſemble n’cuſſent
+        <lb />oſé iamas luy donner.
+        <lb />Vous auez par la ſans y penſer, laſches eſclaues du
+        <lb />moindre <pb n="13" />
+        <lb />moindre des hommes, teſmoigné l’eſtat que vous fai
+        <lb rend="¬" break="no" />ſiez de celuy que vous auez fait aſſaſſiner. D’Eſpernon
+        <lb />n’auoit pas creu le pouuoir vaincre en iuſte guerre;
+        <lb />Mazarin ny ſo Conſeil ne ſe l’eſtoient pas imaginez.
+        <lb />C’eſtoit vn homme incorruptible aux promeſſes, &amp;
+        <lb />qui ſç̧auoit meſpriſer les menaces. C’eſtoit vn vray
+        <lb />General, &amp; non pas vn homme à piller ſon party ſans
+        <lb />le ſeruir. Enfin, il eſtoit tel, qu’il a fallu des traiſtres
+        <lb />pours’en deffaire, parce qu’il n’y auoit point d’eſpe
+        <lb rend="¬" break="no" />rance de le ggner ny de le vainere. Certorius autre
+        <lb rend="¬" break="no" />fois en Eſpagne euſtvn meſme deſtin; lesplus grands
+        <lb />hommes de la terre n’en euſſent ſceu venir aà bout;
+        <lb />quelques perfides aſſaſſins le déroberent à la terre. Il
+        <lb />fuyoit comme toy de Chambret la perſecution des
+        <lb />ryrans de ſa patrie. Comme toy il faiſoit peur &amp; dom
+        <lb rend="¬" break="no" />mage à ces enemis, &amp; comme à eoy de Iaſches fami
+        <lb rend="¬" break="no" />hers luy oſterent vne vie qu’il auoit genereuſerment
+        <lb />deffenduë contre toutes les forces de l’Empire.
+        <lb />Mais fi comme toy il euſt vne deſtinée en ſa fin dé
+        <lb rend="¬" break="no" />plorable comme il auoit eu auſſi comme toy vne vie
+        <lb />en ſaſuite glorieuſe; comme luy tu ne mouras iamais
+        <lb />dans la memoire deshommes, &amp; l’eſclat de ta haute &amp;
+        <lb />de ta fublime vertu, brillera du fonds de ton tombeau,
+        <lb />&amp; inſtruira la Poſterité.
+        <lb /> FI N.
+        <lb />*3
+        <lb />E <pb n="14" />
+        <l>
+          <lb /> i4</l>
+        <l>
+          <lb />opeptepttottebett</l>
+        <l>
+          <lb />Epitaphe de M de Chambret</l>
+        <l>
+          <lb /> General des Bourdelois.</l>
+        <l>
+          <lb />I giſt du gnand Chamlbret, le corps aſſaſtin</l>
+        <l>
+          <lb /> Par les laſcdes valetn,de l’infamo Cminenn.</l>
+        <l>
+          <lb />Il eſtois deſtiné</l>
+        <l>
+          <lb /> euurr paur l Fhnm</l>
+        <l>
+          <lb />nu ſaeenin lqrds ſt aomdam</l>
+        <l>
+          <lb />A tirer la Finm</l>
+        <l>
+          <lb />De us e ae deo</l>
+        <l>
+          <lb />Et pis eſtre damui:</l>
+        <l>
+          <lb />FI N.</l>
+        <pb n="15" />
+        <l>
+          <lb /> ¬¬ep¬¬-,</l>
+        <l>
+          <lb />Autre.</l>
+        <l>
+          <lb /> giſt de MaZarl, l’ennemy nadoutable,</l>
+        <l>
+          <lb />LQu’il n’eut ianaais vainc, que par la trahisi</l>
+        <l>
+          <lb />Il uy faidloit quelqu’ame deteſtabl</l>
+        <l>
+          <lb />Qui le ſeruift du fer ou du poiſon.</l>
+        <l>
+          <lb />Anſi finift vne vie ſi bele</l>
+        <l>
+          <lb />Cianmbrer, reoitla mont d’vne main infidele,</l>
+        <l>
+          <lb />Et de cas annemis s’aſſeuront les deſtins;</l>
+        <l>
+          <lb />Toutesfois c’eſt bien peu, les remords les deſchire.</l>
+        <l>
+          <lb />Leur crime à tout moment les geſne, les aartyre,</l>
+        <l>
+          <lb />Et ſos non loge encor cent frayeurs dans leurſeins.</l>
+        <l>
+          <lb />FIN.</l>
+      </p>
+    </body>
+  </text>
 </TEI>

@@ -1,438 +1,270 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1077_GALL">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Dialogue de deux feuillantines sur les affaires de
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Dialogue de deux feuillantines sur les affaires de
           Mazarin.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://gallica.bnf.fr/ark:/12148/bpt6k857072x"/>
-					<author/>
-					<title source="Moreau">Dialogue de deux feuillantines sur les affaires de Mazarin.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure quantity="8" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2988507">Paris</settlement>
-						<institution>Bibliothèque nationale de France</institution>
-						<repository>Département Philosophie, histoire, sciences de l'homme</repository>
-						<idno type="cote">4-LB37-389</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k857072x" />
+          <author />
+          <title source="Moreau">Dialogue de deux feuillantines sur les affaires de Mazarin.</title>
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure quantity="8" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2988507">Paris</settlement>
+            <institution>Bibliothèque nationale de France</institution>
+            <repository>Département Philosophie, histoire, sciences de l'homme</repository>
+            <idno type="cote">4-LB37-389</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">1077. Dialogue de deux feuillantines sur les affaires de Mazarin. Paris,
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">1077. Dialogue de deux feuillantines sur les affaires de Mazarin. Paris,
           1649, 8 pages. Sur l’intérêt du couvent, et non sur les affaires de Mazarin. La mère est
           mazarine, et la sœur parlementaire, C’est pourquoi la mère dit que dans les couvents « les
           richesses passent premier que Dieu. » '</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">dialogue</term>
-					<term type="subject">Louis XIV</term>
-					<term type="subject">France</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2021-11-10" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<pb n="9"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-DIALOGVE
-        DE DEVX
-        FEVILLANTINES,
-        SVR LES AFFAIRES
-        DE
-        MAZARIN
-        A PARIS.
-        M. DC. XLIX. 
-        
-        DIALOGVE DE DEVX
-        Feuillantines, ſur les affaires de Mazarin
-        Mere Elzabeth.
-        M’aner ieni oeileeiuee
-        que toute choſe auoir ſon tenmps, que la
-        iun nidle ſeinue e leenue oei lenr
-        cours honneſtes auec quelques-vnes de ſes
-        Compagnes
-        Sœur Catherine.
-        Ma mere il n’eſt pas neceſſaire d’alleguer
-        aucune raiſon pour lha preuue de ce diſcours
-         la veritéen eſe ſi enanu qu’il ſeroit mal
-        ſeant à vne perſonne de diſcourir comme
-        d’vne choſe extraordinaire.
-        Mere Ehzabet.
-         Vous eſtes en verite plus habile, qu’au
-        cun de la maiſon ne croit vos diſcours, ſeroit
-        plus conuenable à quelque fameux Do
-        cteur qu’a vne ſimple Nouice comme vous
-        eſtes
-        ;
-        A i
-        4 
-        e.
-         4..
-         Seur Carherine.
-         Ne faut pas vous eſtonner de ſi peu de
-        choſe, vous neſçauez dans vn Cloiſtre ce
-         q
-        qui eſt eſtimé dans Paris,vous perdez l’hon
-        neur que l’on peut receuoir dans l’entre
-        tien de quelque perſonne
-         Mere ElZabeh.
-        Il ſemble que vous ſouffriez &amp; tirez blaſme
-        d’eſtre en cette maiſon.
-        ’Sdur atreriné.
-        e iou e e e ſdois en ſanuſaie
-        &amp; que i’en tire vanité, ie mentirois.
-         Mere Ehzbeih.
-        Vous auez grand tort d’y eſtre venuë -ſai
-        mécontente.
-         Sœur athérine.
-        Si les baricades dé Parisne fuſſent arti
-        uces e e far oie a reutſtue e oéthabit.
-        ene e ’Vſee’elaibeth
-        Mon Dieu patſonnmoy ſi ie vousin
-        terrompt lun ces paroles quel bruit couroit
-        IT ãu emps qe Vôs eſtes’entrés et ootre
-        coifmoniaiuiepafero de teeooiulon
-        ſeigfeût le Cardinàl de ceſer tſt qui
-        a eſté dõfiflé contdé luy. .
-        A
-        Sœur Cah. 
-         Sœur Catherine.
-        Vous deuez croire que l’on ne ſongeoit pas à
-        faire cette laſche action.
-        Mere Eliſabet.
-        Ieſus que dites-vous, eſtimez vous laſche
-        action de faire du bien aà̀ ſon prochain, de par
-        donner à ſon ennemy: ie voy bien ma ſœur que
-        voſtre vocation n’eſt pas du ſaint Eſprit, veus
-        portez du mal à vn homme qui fait regner les
-        Hoſpitaux.
-         Sur Catherine.
-        l’apperçois que la maiſon eſt Mazariniſte
-        qu’lle profite apres ce miniſtre, qu’elle ſera ſans
-        doute flambée s’il n’obtient pardon de ſes offen
-        ſes.
-         Mere Elizabet.
-        Ces paroles ſont eſtranges, penſez-vous que
-        noſtre maiſon ne ſoit apuyée que de ce Cardinal.
-        . Sur Casberi.
-        Elle peut peut- eftre encore eſtre appuyée de
-        quelqu’vn de ſa cabale.
-        2 Mere Eliabet.
-        
-        Non non.
-         Soeur Catherine.
-        Expliquez-vous s’il vous plaiſt.
-         Mere Eliuabeh.
-        Ne ſçauriez vous entendre à demymot. 
-        6.
-         Soeur Ctherine
-         Ie n’ay pas de couſtume d’entendee à-ſi peu
-         de paroles ie n’ay pas eſté e leuée priſonniere ilne
-        ma. pas eſté neceſſire d’apprendre ce meſtier,
-        i’ay eſté touſiours lbre.
-        Mpe Flzabet.
-        Vous offenſez la maiſon, croyez-vous que l’o!
-        ne s’entrerienne qu’à demi t
-        3
-         ſe r Calede
-        Cuelquefois ileſf nmeceſſre de peur encou
-        rirreprimande, rout fois laiſſms ça là, ce ſont
-        les ſecrets Conuentuls, ie vousprie de-cnti
-        nuerle diſcours que vous auez commenge, quel
-        eſt l’appuy de noſtre maiſon. cela me pouuant
-        ſeruir dans le temps que ie feray profeſſion de
-        garder le vœu de chaſteté ou de coutinence.
-         Mere Elizahe.
-        e ne puis vous pendre raiſon qu’à meſm.
-        temps ie n’e ſleue Monſiour leCardinal iuſques
-        au Cief.le.
-         ii
-         Sur CaehoI2
-         D’où vous vient ce ſentiment, dite vous cela
-        FEe ler pune e ue eſie eun lus eounnui
-        ’terl lſadbed!
-        Dans les Monaſteres les ticheſſes ſont pree
-         -
-        .
-        mieres ué Dieu
-        ¬ 
-         Sœ Catbernm
-         Bonne penſée; l diable nien eſt doe pas eſ
-        loigné, derechef laiſſons ce diſcours, ie vous pis
-        de me dire le ſujet qui vous donne occaſion d’é
-        leuer le Cardinal.
-        e Mere liſabae.2
-        Si vousme promette’de ’nepoiareueler ce
-        que ie diray, ie vous donneray éontentement.
-         Sur Cdpherine.
-        Ie vousle proamets &amp; ie vous ttendray päle
-        Mere Blbeen? ti2
-         Monſieur le Cardinal viſitant les Dames de
-         la Cour, donne luiet aux Pringes &amp; Seigneurs de
-        nous donner des penſionnaires.
-         Su Cat’ene.
-        C’eſt aſſez, vne fille d’honneur ne doit venir
-        ceans puiſque c’eſt la retraite des perſonnes deſ
-        honnorées, deuez vous tenir pour fcndement
-        vne choſe ſi deffectueuſe les bonnes œuures ſont
-        elles ennemies de noſtre Maiſon, ſont-elles des r
-        foudres &amp; des tonnerres, pour la reduire en
-        pouſſiere.
-        Mere Eliſabeh.
-        C’eſt aſſez diſcourir, ie vous vois paſſionnée,
-        vous ne ſçauez ce que c’eſt que de viure en com
-        munauté. 
-        ſ¬¬.sa,¬.¬......
-        Sœar Catherue.
-        Appellez vou intigue de comunauté, de
-        faire le mal pour le bien.
-        Mere Eliſabe.
-        Vous auez l’eſprit trop ieune pour çompren
-        dre ce que ie veux dire, il eſt temps de nous reti
-        rer, le ſecond coup de Veſpres eſt ſonné.
-         Sœur Carherine.
-        Tous auez preuenu ce que i’auois volonté de
-        vous dire, il faut me haſter ſi ie yeux euiter la diſ
-        grace de mes Superieure l
-        .
-        JN
-        l
-        FIN			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">dialogue</term>
+          <term type="subject">Louis XIV</term>
+          <term type="subject">France</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2021-11-10" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="2" />
+        <lb />DIALOGVE
+        <lb />DE DEVX
+        <lb />FEVILLANTINES,
+        <lb />SVR LES AFFAIRES
+        <lb />DE
+        <lb />MAZARIN
+        <lb />A PARIS.
+        <lb />M. DC. XLIX. <pb n="3" />
+        <pb n="4" />
+        <lb />DIALOGVE DE DEVX
+        <lb />Feuillantines, ſur les affaires de Mazarin
+        <lb />Mere Elzabeth.
+        <lb />M’aner ieni oeileeiuee
+        <lb />que toute choſe auoir ſon tenmps, que la
+        <lb />iun nidle ſeinue e leenue oei lenr
+        <lb />cours honneſtes auec quelques-vnes de ſes
+        <lb />Compagnes
+        <lb rend="¬" break="no" />Sœur Catherine.
+        <lb />Ma mere il n’eſt pas neceſſaire d’alleguer
+        <lb />aucune raiſon pour lha preuue de ce diſcours
+        <lb /> la veritéen eſe ſi enanu qu’il ſeroit mal
+        <lb rend="¬" break="no" />ſeant à vne perſonne de diſcourir comme
+        <lb />d’vne choſe extraordinaire.
+        <lb />Mere Ehzabet.
+        <lb /> Vous eſtes en verite plus habile, qu’au
+        <lb rend="¬" break="no" />cun de la maiſon ne croit vos diſcours, ſeroit
+        <lb />plus conuenable à quelque fameux Do
+        <lb rend="¬" break="no" />cteur qu’a vne ſimple Nouice comme vous
+        <lb />eſtes
+        <lb />;
+        <lb rend="¬" break="no" />A i
+        <lb />4 <pb n="5" />
+        <lb />e.
+        <lb /> 4..
+        <lb /> Seur Carherine.
+        <lb /> Ne faut pas vous eſtonner de ſi peu de
+        <lb />choſe, vous neſçauez dans vn Cloiſtre ce
+        <lb /> q
+        <lb />qui eſt eſtimé dans Paris,vous perdez l’hon
+        <lb rend="¬" break="no" />neur que l’on peut receuoir dans l’entre
+        <lb rend="¬" break="no" />tien de quelque perſonne
+        <lb rend="¬" break="no" /> Mere ElZabeh.
+        <lb />Il ſemble que vous ſouffriez &amp; tirez blaſme
+        <lb />d’eſtre en cette maiſon.
+        <lb />’Sdur atreriné.
+        <lb />e iou e e e ſdois en ſanuſaie
+        <lb />&amp; que i’en tire vanité, ie mentirois.
+        <lb /> Mere Ehzbeih.
+        <lb />Vous auez grand tort d’y eſtre venuë -ſai
+        <lb />mécontente.
+        <lb /> Sœur athérine.
+        <lb />Si les baricades dé Parisne fuſſent arti
+        <lb />uces e e far oie a reutſtue e oéthabit.
+        <lb />ene e ’Vſee’elaibeth
+        <lb />Mon Dieu patſonnmoy ſi ie vousin
+        <lb rend="¬" break="no" />terrompt lun ces paroles quel bruit couroit
+        <lb />IT ãu emps qe Vôs eſtes’entrés et ootre
+        <lb />coifmoniaiuiepafero de teeooiulon
+        <lb />ſeigfeût le Cardinàl de ceſer tſt qui
+        <lb />a eſté dõfiflé contdé luy. .
+        <lb />A
+        <lb />Sœur Cah. <pb n="6" />
+        <lb /> Sœur Catherine.
+        <lb />Vous deuez croire que l’on ne ſongeoit pas à
+        <lb />faire cette laſche action.
+        <lb />Mere Eliſabet.
+        <lb />Ieſus que dites-vous, eſtimez vous laſche
+        <lb />action de faire du bien aà̀ ſon prochain, de par
+        <lb rend="¬" break="no" />donner à ſon ennemy: ie voy bien ma ſœur que
+        <lb />voſtre vocation n’eſt pas du ſaint Eſprit, veus
+        <lb />portez du mal à vn homme qui fait regner les
+        <lb />Hoſpitaux.
+        <lb /> Sur Catherine.
+        <lb />l’apperçois que la maiſon eſt Mazariniſte
+        <lb />qu’lle profite apres ce miniſtre, qu’elle ſera ſans
+        <lb />doute flambée s’il n’obtient pardon de ſes offen
+        <lb rend="¬" break="no" />ſes.
+        <lb /> Mere Elizabet.
+        <lb />Ces paroles ſont eſtranges, penſez-vous que
+        <lb />noſtre maiſon ne ſoit apuyée que de ce Cardinal.
+        <lb />. Sur Casberi.
+        <lb />Elle peut peut- eftre encore eſtre appuyée de
+        <lb />quelqu’vn de ſa cabale.
+        <lb />2 Mere Eliabet.
+        <lb />
+        <lb rend="¬" break="no" />Non non.
+        <lb /> Soeur Catherine.
+        <lb />Expliquez-vous s’il vous plaiſt.
+        <lb /> Mere Eliuabeh.
+        <lb />Ne ſçauriez vous entendre à demymot. <pb n="7" />
+        <lb />6.
+        <lb /> Soeur Ctherine
+        <lb /> Ie n’ay pas de couſtume d’entendee à-ſi peu
+        <lb /> de paroles ie n’ay pas eſté e leuée priſonniere ilne
+        <lb />ma. pas eſté neceſſire d’apprendre ce meſtier,
+        <lb />i’ay eſté touſiours lbre.
+        <lb />Mpe Flzabet.
+        <lb />Vous offenſez la maiſon, croyez-vous que l’o!
+        <lb />ne s’entrerienne qu’à demi t
+        <lb />3
+        <lb /> ſe r Calede
+        <lb />Cuelquefois ileſf nmeceſſre de peur encou
+        <lb rend="¬" break="no" />rirreprimande, rout fois laiſſms ça là, ce ſont
+        <lb />les ſecrets Conuentuls, ie vousprie de-cnti
+        <lb rend="¬" break="no" />nuerle diſcours que vous auez commenge, quel
+        <lb rend="¬" break="no" />eſt l’appuy de noſtre maiſon. cela me pouuant
+        <lb />ſeruir dans le temps que ie feray profeſſion de
+        <lb />garder le vœu de chaſteté ou de coutinence.
+        <lb /> Mere Elizahe.
+        <lb />e ne puis vous pendre raiſon qu’à meſm.
+        <lb />temps ie n’e ſleue Monſiour leCardinal iuſques
+        <lb />au Cief.le.
+        <lb /> ii
+        <lb /> Sur CaehoI2
+        <lb /> D’où vous vient ce ſentiment, dite vous cela
+        <lb />FEe ler pune e ue eſie eun lus eounnui
+        <lb rend="¬" break="no" />’terl lſadbed!
+        <lb />Dans les Monaſteres les ticheſſes ſont pree
+        <lb /> -
+        <lb />.
+        <lb />mieres ué Dieu
+        <lb rend="¬" break="no" />¬ <pb n="8" />
+        <lb /> Sœ Catbernm
+        <lb /> Bonne penſée; l diable nien eſt doe pas eſ
+        <lb rend="¬" break="no" />loigné, derechef laiſſons ce diſcours, ie vous pis
+        <lb />de me dire le ſujet qui vous donne occaſion d’é
+        <lb rend="¬" break="no" />leuer le Cardinal.
+        <lb />e Mere liſabae.2
+        <lb />Si vousme promette’de ’nepoiareueler ce
+        <lb />que ie diray, ie vous donneray éontentement.
+        <lb /> Sur Cdpherine.
+        <lb />Ie vousle proamets &amp; ie vous ttendray päle
+        <lb />Mere Blbeen? ti2
+        <lb /> Monſieur le Cardinal viſitant les Dames de
+        <lb /> la Cour, donne luiet aux Pringes &amp; Seigneurs de
+        <lb />nous donner des penſionnaires.
+        <lb /> Su Cat’ene.
+        <lb />C’eſt aſſez, vne fille d’honneur ne doit venir
+        <lb />ceans puiſque c’eſt la retraite des perſonnes deſ
+        <lb rend="¬" break="no" />honnorées, deuez vous tenir pour fcndement
+        <lb />vne choſe ſi deffectueuſe les bonnes œuures ſont
+        <lb />elles ennemies de noſtre Maiſon, ſont-elles des r
+        <lb />foudres &amp; des tonnerres, pour la reduire en
+        <lb />pouſſiere.
+        <lb />Mere Eliſabeh.
+        <lb />C’eſt aſſez diſcourir, ie vous vois paſſionnée,
+        <lb />vous ne ſçauez ce que c’eſt que de viure en com
+        <lb rend="¬" break="no" />munauté. <pb n="9" />
+        <lb />ſ¬¬.sa,¬.¬......
+        <lb />Sœar Catherue.
+        <lb />Appellez vou intigue de comunauté, de
+        <lb />faire le mal pour le bien.
+        <lb />Mere Eliſabe.
+        <lb />Vous auez l’eſprit trop ieune pour çompren
+        <lb rend="¬" break="no" />dre ce que ie veux dire, il eſt temps de nous reti
+        <lb rend="¬" break="no" />rer, le ſecond coup de Veſpres eſt ſonné.
+        <lb /> Sœur Carherine.
+        <lb />Tous auez preuenu ce que i’auois volonté de
+        <lb />vous dire, il faut me haſter ſi ie yeux euiter la diſ
+        <lb rend="¬" break="no" />grace de mes Superieure l
+        <lb />.
+        <lb rend="¬" break="no" />JN
+        <lb />l
+        <lb />FIN </p>
+    </body>
+  </text>
 </TEI>

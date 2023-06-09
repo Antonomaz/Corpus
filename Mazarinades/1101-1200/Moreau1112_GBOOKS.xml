@@ -1,467 +1,287 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1112_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Discours de deux aveugles sur la paix et sur les affaires
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Discours de deux aveugles sur la paix et sur les affaires
           de ce temps, en forme de dialogue.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=Qeq86LfoFhoC"/>
-					<author/>
-					<title source="Moreau">Discours de deux aveugles sur la paix et sur les affaires de ce
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=Qeq86LfoFhoC" />
+          <author />
+          <title source="Moreau">Discours de deux aveugles sur la paix et sur les affaires de ce
             temps, en forme de dialogue.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure quantity="8" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale de Lyon</institution>
-						<repository/>
-						<idno type="cote">Rés 312048</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure quantity="8" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale de Lyon</institution>
+            <repository />
+            <idno type="cote">Rés 312048</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">1112. Discours de deux aveugles sur la paix et sur les affaires de ce
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">1112. Discours de deux aveugles sur la paix et sur les affaires de ce
           temps, en forme de dialogue. Paris, 1649, 8 pages. Licux communs de la Fronde. Je remarque
           sculement qu’un des deux aveugles se plaint de ce que sa femme avait payé 25 sous un pain
           qui était tout de son.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">dialogue</term>
-					<term type="subject"/>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_18" source="Moreau">
-					<p>Paix de Saint-Germain</p>
-					<date when="1649-03-30">1649-03-30</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-02-24" who="KA"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-DISCOVRS
-        DE DEUX
-        AVEVGLES
-        SVR
-        LA PAIX
-        ET SVR LES AFFAIRES
-        DV TEMPS.
-        En forme de dialogue 
-        .
-        ¬.
-        
-        mi
-        1
-        l
-        noauaoole 
-        epptêé
-        sS v s s
-        D
-        T
-        I
-        DI V
-        DE DEvxX
-         ET
-        AVEVGLES
-        SVR
-        T
-        I
-        
-        A Al
-        L A.
-        ET SVR LES AFFAIRES
-         DV TEMPS.
-        En forme de Dialogue.
-         IEV vous gard, compere Thibaut,
-        e
-        V vous vous eſtes aujourd’huy leué
-        ll de prand̀ manin , ae pont ee le
-        ae beau temps qui vous ya obligé, ou
-        bien le bruit de la Paix; car pour ce qui de
-        pend de faire fortune ny vous ny moy ces
-         jours iey, qui deuroient pourtant eſtre les meil
-        leurs de l’année, ie ne le croy pas; &amp; j’auoü̈e
-        que la pluſpart eſt en quelque facçon obligée
-         A ij 
-         4
-        deſe retrancher, à cauſe des miſeres du temps.
-         Thibaut.
-         Vous dites vray, mon pauure Colas, j’ay veu
-        qu’à tel jour qu’aujourd’huy, &amp; pendant toutes
-        les Feſtes, ie ’uſſe pas voulu donner ma
-        queſte pour dix eſcus, mais ie penſe que cette
-        anné́e ie ne ſerois pas mal ſi ie pouuois trou
-        uérvn ſeul eſeu: Mais à propos de la Paix, puis
-        que vous m’en parleé́s, qu’en dit-on, j’ay peur
-        que ce Bruit ne ſoit faux.
-        Le grand Colas.
-        On dit qu’elle eſt faite, &amp; ie l’ay oüy dire
-        à vn Monſieur qui eſtoit dans vn Caroſſe, qui
-        a dit à quelque autre en paſſant que tout eſtoit
-        figneé &amp; arreſfé, &amp; pour témoignage de cela il
-        m’a donné vn ſols marqué, ces gens la ſç̧a
-        uent bien tout ce qu’il ſe paſſe; neſmes j’ay
-        entendu publier quelque Declaration du Roy,
-        auec les Articles de la Paix.
-        . A -
-        1
-        ,Thdau4
-         Pouroaeu que cela ſoit vray tout ſera bien,
-        &amp;e pourueu qu’elleſoitàà noltre auanrage, au
-         aoins les pauuesgens pourront gaigner leut
-        vie, &amp; chacun dans ſa condition, Aueé́s vous
-        point ſçeu les Articles, &amp; ſi ce ſont les mieſ
-        mcs! 
-        1 les que les premiers? ſur tout ie voudrois bie
-        ſçauoir ſi les monopoles ſont bas, &amp; ſi noſtre
-        bon Roy reuiendra bientoſt à Paris.
-         Le grand Colas.
-        Ie ne ſçay riten de tout cela, &amp; ie n’en ay en
-        eores rien apris: pour moy ie ne eroy pas que
-        nmos Generaux ayentſigné vne paix qu’à noſtre
-        auantage, ils font trop affectionnés pour le
-        peuple, entre autres Monſieur de Beaufort;
-        d’aiſleurs les Meſſieurs du Parlement ne fe
-        ront rien auſſi qu’à noſtre auantage.
-        Thibaut.
-        Ce qui me fait eſperer quelque bon ſuccés,
-        c’eſt que toutes les Prouinces ſont en armes,
-        qui ne les mettront pas bas que par ordre
-        du Roy, &amp; qu’on n’etermine vne bande de
-         Soldats qui ruinent tout le Royaume.
-         Le graud Colas.
-        Ile veux croire que toute la France eſt bien
-        troublé́e, maais ſans aller bien loin, il fautcon
-        feſſer que Paris eſt aufſi bien diminué en ſon
-        endroit, ce n’eſt plus ce qu’il a efté́, vn temps
-        a eſteé́ qu’ony viuoit heureux &amp; content: mais
-        maintenant tout eſt renuerſeé, il faut en loü̈er
-        Dieu, principalement depuis trois mois on y
-        B 
-        6
-        a ſoutt utnt q’on puiiſ mir fair en liu
-        d m le; car quels plus grands maux que le
-        froid, la fmine, &amp; la guerre.
-        Thibaut..
-        Ie le dois bien ſçauoir par experience;, car
-        quand le Roy partit de Paris il n’y auoit mor
-        ceau de bois en noſtre maiſon; De; pls j’ay
-        ſt par deux diuerſes fois deux jours ſans gou
-        1er au pain, moy, ma femme, &amp; trois enfans que
-        j’a, ce qui me faiſoit encore plus grand dueil:
-        &amp; pour la guerre j’ay penſéeſtre deuxou trois
-        fos ecraſé parmy des Soldats; &amp; vne fois en
-        tr’autres ie me trouuay tellement embaraſſé de
-        cheuaux, qu’il y en eut vn qui me marcha ſur
-        le pied, dont j’ay eſté́ preſque deux mois ma
-        lade ſans bouger de la maiſon, ce qui he porte
-        grand prejudice.
-        Le grand olas.
-        Vous n’eſtes pas ſeul mon pauure Compere,
-        qui audés eſté incommodé, mais c’eſtvne pau
-        ure conſolation, ie me ſuis bien des fois allé
-        coucher ſans ſouper moy &amp; toute ma famille,
-        aais le plus grand mal que nous auons eu dans
-        noſtre maiſon, c’eſt qu’vn jour ma femme
-        nous apporta vn pain de vingt &amp; cinq ſols qui
-        n’eltoit que de ſon, qui nons penſa faire mou¬ 
-        rir, j’en ay eu dix ou douze jours le fleux de
-        ventre, dont ie ne ſuis pas encore trop bien
-        reſait, on n’auoit pas aecoiumé de manger
-        à Paris dupain quie fuſto;
-        i hidaut.
-        .¬l
-        Ce n’eſt pas la grande choſe, mon pauure
-        Colas, auspris-de ce ui n’arriua quelque
-        temps apres que ie fus gquery de mon pied
-        comme ie vous ay dit; ’il faur donc quevous
-        ſçachiés que comme ie paſſois par vne petite
-        ruëauprés Npſtre Dame; il y auoit vne chaiſ
-        netesduë̈ -dont-je ne me geſtois pas qinme
-        fiſt culbuter, il ma couſté vne partie dece que
-        j’auois pour nme faire guerir, j’eſtois tout meur
-        try, &amp; entre autres ie me fis vn grand trouà la
-        reſte, &amp; me deſpouilleé tout vne jambe; mais
-        Dieu mercy ce ne fut pas celle que j’auois euë
-         bleſſée.
-        Le gramd olas.
-        l’ay bien plus ſujet de me reſſouuenir de la
-        guerre de Paris que vous, mon pauure Thi
-        baut, ie n’auois qu’vn garç̧on qui ſç̧auoit bien
-        gaigner ſa vie, vous en aués entendu parler, il
-        S’appelloit Geruais, qui fut rué à Charen
-        ton, ſa mere en a penſé mourir, il nous ſeruoit
-        bien. 
-        Thibaue
-        Eſt poſible maon Colas, ie n’ea ſçauois rien
-         qu’il euſt eſté taé,ie vous diray que cetee guer
-        re eſt cauſe de la rayne de la moitié de Paris,
-        c’eſt pourquoy Dieu par ſa grace nous donne
-        vne bonne paix l yaſi mauuaiſe paix qui ne
-        ſoimelleure quvhe bono guetre..
-        , L gand Celau
-         Nouſçaurons bien oſt ce qu’on aura con
-        clad à ſël ie m’inforerAypattiulierenent
-        desArtleles, &amp; à la premoiere lrencontre no?
-        en patlerons, epenant arteſtous nous icy, il
-        eſt plus de ſepe heures, &amp; ie n’ay encore rle
-        rouué.
-         Thilapt,
-        Ny moy auſſi.
-        Lé graamd Colas.
-        3
-         ee-
-        u
-        Adieu, mou pauure Cooptre, juſqu’au
-         revoir.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">dialogue</term>
+          <term type="subject" />
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_18" source="Moreau">
+          <p>Paix de Saint-Germain</p>
+          <date when="1649-03-30">1649-03-30</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-02-24" who="KA" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />DISCOVRS
+        <lb />DE DEUX
+        <lb />AVEVGLES
+        <lb />SVR
+        <lb />LA PAIX
+        <lb />ET SVR LES AFFAIRES
+        <lb />DV TEMPS.
+        <lb />En forme de dialogue <pb n="2" />
+        <lb />.
+        <lb />¬.
+        <lb />
+        <lb rend="¬" break="no" />mi
+        <lb />1
+        <lb />l
+        <lb />noauaoole <pb n="3" />
+        <lb />epptêé
+        <lb />sS v s s
+        <lb />D
+        <lb />T
+        <lb />I
+        <lb />DI V
+        <lb />DE DEvxX
+        <lb /> ET
+        <lb />AVEVGLES
+        <lb />SVR
+        <lb />T
+        <lb />I
+        <lb />
+        <lb rend="¬" break="no" />A Al
+        <lb />L A.
+        <lb />ET SVR LES AFFAIRES
+        <lb /> DV TEMPS.
+        <lb />En forme de Dialogue.
+        <lb /> IEV vous gard, compere Thibaut,
+        <lb />e
+        <lb />V vous vous eſtes aujourd’huy leué
+        <lb />ll de prand̀ manin , ae pont ee le
+        <lb />ae beau temps qui vous ya obligé, ou
+        <lb />bien le bruit de la Paix; car pour ce qui de
+        <lb rend="¬" break="no" />pend de faire fortune ny vous ny moy ces
+        <lb /> jours iey, qui deuroient pourtant eſtre les meil
+        <lb rend="¬" break="no" />leurs de l’année, ie ne le croy pas; &amp; j’auoü̈e
+        <lb />que la pluſpart eſt en quelque facçon obligée
+        <lb /> A ij <pb n="4" />
+        <lb /> 4
+        <lb />deſe retrancher, à cauſe des miſeres du temps.
+        <lb /> Thibaut.
+        <lb /> Vous dites vray, mon pauure Colas, j’ay veu
+        <lb />qu’à tel jour qu’aujourd’huy, &amp; pendant toutes
+        <lb />les Feſtes, ie ’uſſe pas voulu donner ma
+        <lb />queſte pour dix eſcus, mais ie penſe que cette
+        <lb />anné́e ie ne ſerois pas mal ſi ie pouuois trou
+        <lb rend="¬" break="no" />uérvn ſeul eſeu: Mais à propos de la Paix, puis
+        <lb />que vous m’en parleé́s, qu’en dit-on, j’ay peur
+        <lb />que ce Bruit ne ſoit faux.
+        <lb />Le grand Colas.
+        <lb />On dit qu’elle eſt faite, &amp; ie l’ay oüy dire
+        <lb />à vn Monſieur qui eſtoit dans vn Caroſſe, qui
+        <lb />a dit à quelque autre en paſſant que tout eſtoit
+        <lb />figneé &amp; arreſfé, &amp; pour témoignage de cela il
+        <lb />m’a donné vn ſols marqué, ces gens la ſç̧a
+        <lb rend="¬" break="no" />uent bien tout ce qu’il ſe paſſe; neſmes j’ay
+        <lb />entendu publier quelque Declaration du Roy,
+        <lb />auec les Articles de la Paix.
+        <lb />. A -
+        <lb rend="¬" break="no" />1
+        <lb />,Thdau4
+        <lb /> Pouroaeu que cela ſoit vray tout ſera bien,
+        <lb />&amp;e pourueu qu’elleſoitàà noltre auanrage, au
+        <lb /> aoins les pauuesgens pourront gaigner leut
+        <lb />vie, &amp; chacun dans ſa condition, Aueé́s vous
+        <lb />point ſçeu les Articles, &amp; ſi ce ſont les mieſ
+        <lb rend="¬" break="no" />mcs! <pb n="5" />
+        <lb />1 les que les premiers? ſur tout ie voudrois bie
+        <lb rend="¬" break="no" />ſçauoir ſi les monopoles ſont bas, &amp; ſi noſtre
+        <lb />bon Roy reuiendra bientoſt à Paris.
+        <lb /> Le grand Colas.
+        <lb />Ie ne ſçay riten de tout cela, &amp; ie n’en ay en
+        <lb rend="¬" break="no" />eores rien apris: pour moy ie ne eroy pas que
+        <lb />nmos Generaux ayentſigné vne paix qu’à noſtre
+        <lb />auantage, ils font trop affectionnés pour le
+        <lb />peuple, entre autres Monſieur de Beaufort;
+        <lb />d’aiſleurs les Meſſieurs du Parlement ne fe
+        <lb rend="¬" break="no" />ront rien auſſi qu’à noſtre auantage.
+        <lb />Thibaut.
+        <lb />Ce qui me fait eſperer quelque bon ſuccés,
+        <lb />c’eſt que toutes les Prouinces ſont en armes,
+        <lb />qui ne les mettront pas bas que par ordre
+        <lb />du Roy, &amp; qu’on n’etermine vne bande de
+        <lb /> Soldats qui ruinent tout le Royaume.
+        <lb /> Le graud Colas.
+        <lb />Ile veux croire que toute la France eſt bien
+        <lb />troublé́e, maais ſans aller bien loin, il fautcon
+        <lb rend="¬" break="no" />feſſer que Paris eſt aufſi bien diminué en ſon
+        <lb />endroit, ce n’eſt plus ce qu’il a efté́, vn temps
+        <lb />a eſteé́ qu’ony viuoit heureux &amp; content: mais
+        <lb />maintenant tout eſt renuerſeé, il faut en loü̈er
+        <lb />Dieu, principalement depuis trois mois on y
+        <lb />B <pb n="6" />
+        <lb />6
+        <lb />a ſoutt utnt q’on puiiſ mir fair en liu
+        <lb />d m le; car quels plus grands maux que le
+        <lb />froid, la fmine, &amp; la guerre.
+        <lb />Thibaut..
+        <lb />Ie le dois bien ſçauoir par experience;, car
+        <lb />quand le Roy partit de Paris il n’y auoit mor
+        <lb />ceau de bois en noſtre maiſon; De; pls j’ay
+        <lb />ſt par deux diuerſes fois deux jours ſans gou
+        <lb />1er au pain, moy, ma femme, &amp; trois enfans que
+        <lb />j’a, ce qui me faiſoit encore plus grand dueil:
+        <lb />&amp; pour la guerre j’ay penſéeſtre deuxou trois
+        <lb />fos ecraſé parmy des Soldats; &amp; vne fois en
+        <lb rend="¬" break="no" />tr’autres ie me trouuay tellement embaraſſé de
+        <lb />cheuaux, qu’il y en eut vn qui me marcha ſur
+        <lb />le pied, dont j’ay eſté́ preſque deux mois ma
+        <lb />lade ſans bouger de la maiſon, ce qui he porte
+        <lb />grand prejudice.
+        <lb />Le grand olas.
+        <lb />Vous n’eſtes pas ſeul mon pauure Compere,
+        <lb />qui audés eſté incommodé, mais c’eſtvne pau
+        <lb rend="¬" break="no" />ure conſolation, ie me ſuis bien des fois allé
+        <lb />coucher ſans ſouper moy &amp; toute ma famille,
+        <lb />aais le plus grand mal que nous auons eu dans
+        <lb />noſtre maiſon, c’eſt qu’vn jour ma femme
+        <lb />nous apporta vn pain de vingt &amp; cinq ſols qui
+        <lb />n’eltoit que de ſon, qui nons penſa faire mou¬ <pb n="7" />
+        <lb />rir, j’en ay eu dix ou douze jours le fleux de
+        <lb />ventre, dont ie ne ſuis pas encore trop bien
+        <lb />reſait, on n’auoit pas aecoiumé de manger
+        <lb />à Paris dupain quie fuſto;
+        <lb />i hidaut.
+        <lb />.¬l
+        <lb />Ce n’eſt pas la grande choſe, mon pauure
+        <lb />Colas, auspris-de ce ui n’arriua quelque
+        <lb />temps apres que ie fus gquery de mon pied
+        <lb />comme ie vous ay dit; ’il faur donc quevous
+        <lb />ſçachiés que comme ie paſſois par vne petite
+        <lb />ruëauprés Npſtre Dame; il y auoit vne chaiſ
+        <lb />netesduë̈ -dont-je ne me geſtois pas qinme
+        <lb />fiſt culbuter, il ma couſté vne partie dece que
+        <lb />j’auois pour nme faire guerir, j’eſtois tout meur
+        <lb rend="¬" break="no" />try, &amp; entre autres ie me fis vn grand trouà la
+        <lb />reſte, &amp; me deſpouilleé tout vne jambe; mais
+        <lb />Dieu mercy ce ne fut pas celle que j’auois euë
+        <lb /> bleſſée.
+        <lb />Le gramd olas.
+        <lb />l’ay bien plus ſujet de me reſſouuenir de la
+        <lb />guerre de Paris que vous, mon pauure Thi
+        <lb rend="¬" break="no" />baut, ie n’auois qu’vn garç̧on qui ſç̧auoit bien
+        <lb />gaigner ſa vie, vous en aués entendu parler, il
+        <lb />S’appelloit Geruais, qui fut rué à Charen
+        <lb rend="¬" break="no" />ton, ſa mere en a penſé mourir, il nous ſeruoit
+        <lb />bien. <pb n="8" />
+        <lb />Thibaue
+        <lb />Eſt poſible maon Colas, ie n’ea ſçauois rien
+        <lb /> qu’il euſt eſté taé,ie vous diray que cetee guer
+        <lb rend="¬" break="no" />re eſt cauſe de la rayne de la moitié de Paris,
+        <lb />c’eſt pourquoy Dieu par ſa grace nous donne
+        <lb />vne bonne paix l yaſi mauuaiſe paix qui ne
+        <lb />ſoimelleure quvhe bono guetre..
+        <lb />, L gand Celau
+        <lb /> Nouſçaurons bien oſt ce qu’on aura con
+        <lb rend="¬" break="no" />clad à ſël ie m’inforerAypattiulierenent
+        <lb />desArtleles, &amp; à la premoiere lrencontre no?
+        <lb />en patlerons, epenant arteſtous nous icy, il
+        <lb />eſt plus de ſepe heures, &amp; ie n’ay encore rle
+        <lb />rouué.
+        <lb /> Thilapt,
+        <lb />Ny moy auſſi.
+        <lb />Lé graamd Colas.
+        <lb />3
+        <lb /> ee-
+        <lb />u
+        <lb />Adieu, mou pauure Cooptre, juſqu’au
+        <lb /> revoir. </p>
+    </body>
+  </text>
 </TEI>

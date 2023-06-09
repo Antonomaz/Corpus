@@ -1,1640 +1,1137 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Socard62_GALL">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title source="Socard" type="main">Le parnasse alarmé</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title source="Socard" type="main">Le parnasse alarmé</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-					<persName ref="orcid:0000-0001-5815-9506" role="intern">Faure Margaux</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://gallica.bnf.fr/ark:/12148/bpt6k507885"/>
-					<author source="BnF" ref="isni:0000000080815971">
-						<persName>
-							<forename>Gilles</forename>
-							<surname>Ménage</surname>
-						</persName>
-					</author>
-					<title source="Socard">Parnasse (Le) alarmé</title>
-					<pubPlace ref="geonames:2988507" source="Socard">Paris</pubPlace>
-					<publisher ref="isni:0000000122787623" source="BnF" xml:id="IL_CourbeAugustin.xml">
-						<persName>
-							<forename>Augustin</forename>
-							<surname>Courbé</surname>
-						</persName>
-					</publisher>
-					<date source="Socard" when="1649">1649</date>
-					<extent>
-						<measure quantity="16" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2988507">Paris</settlement>
-						<institution>Bibliothèque nationale de France</institution>
-						<repository>département Littérature et art</repository>
-						<idno type="cote">X-2549</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>False</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+          <persName ref="orcid:0000-0001-5815-9506" role="intern">Faure Margaux</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k507885" />
+          <author source="BnF" ref="isni:0000000080815971">
+            <persName>
+              <forename>Gilles</forename>
+              <surname>Ménage</surname>
+            </persName>
+          </author>
+          <title source="Socard">Parnasse (Le) alarmé</title>
+          <pubPlace ref="geonames:2988507" source="Socard">Paris</pubPlace>
+          <publisher ref="isni:0000000122787623" source="BnF" xml:id="IL_CourbeAugustin.xml">
+            <persName>
+              <forename>Augustin</forename>
+              <surname>Courbé</surname>
+            </persName>
+          </publisher>
+          <date source="Socard" when="1649">1649</date>
+          <extent>
+            <measure quantity="16" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2988507">Paris</settlement>
+            <institution>Bibliothèque nationale de France</institution>
+            <repository>département Littérature et art</repository>
+            <idno type="cote">X-2549</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>False</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Socard">62. Parnasse (Le) alarmé. A Paris, 1649. In-4° de 16 pages. En vers de 8
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Socard">62. Parnasse (Le) alarmé. A Paris, 1649. In-4° de 16 pages. En vers de 8
           syllabes. Voyez le n° R.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">vers</term>
-					<term type="genre">non renseigné</term>
-					<term type="subject"/>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-08-09" who="MF"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<pb n="12"/>
-				<pb n="13"/>
-				<pb n="14"/>
-				<pb n="15"/>
-				<pb n="16"/>
-				<pb n="17"/>
-				<pb n="18"/>
-				<pb n="19"/>
-				<pb n="20"/>
-				<pb n="21"/>
-				<pb n="22"/>
-				<pb n="23"/>
-				<pb n="24"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<figure type="decoration"/>
-				<l>
-					<lb/>
-LE PARNASSE				</l>
-				<l>
-					<lb/>
-ALARME.				</l>
-				<l>
-					<lb/>
-5 Noſſeigneurs Academiques,				</l>
-				<l>
-					<lb/>
-iunie erunue le nere ſiai.				</l>
-				<l>
-					<lb/>
-t Souuerains Arbitres des mots;				</l>
-				<l>
-					<lb/>
-Does faiſeurs d’Auant propos.				</l>
-				<l>
-					<lb/>
-Cardinaux Hiſtoriographes				</l>
-				<l>
-					<lb/>
-Sur Intendas des Orthographes,				</l>
-				<l>
-					<lb/>
-Raffineurs de locutions,				</l>
-				<l>
-					<lb/>
-Entrepreneurs de verſions,				</l>
-				<l>
-					<lb/>
-Paiſeurs de breues &amp; de longues,				</l>
-				<l>
-					<lb/>
-De voyelles &amp; de diphthongues.				</l>
-				<l>
-					<lb/>
-Vpplie humblemen Calepin,				</l>
-				<l>
-					<lb/>
-Auec Nicot, Eſtienne, Oudin,				</l>
-				<l>
-					<lb/>
-Et tous autres Dictionnaires,				</l>
-				<l>
-					<lb/>
-Lexicons, &amp; vocabulaires,				</l>
-				<l>
-					<lb/>
-Par qui les Eſcholiers François				</l>
-				<l>
-					<lb/>
-Des langues apprennent les Lois.				</l>
-				<l>
-					<lb/>
-Diſans, que depuis dix années,				</l>
-				<l>
-					<lb/>
-On a par diuerſes menées				</l>
-				<l>
-					<lb/>
-Banny des Romans, des Poulets,				</l>
-				<l>
-					<lb/>
-Des Lettres douces, des ballets,				</l>
-				<l>
-					<lb/>
-Des Madrigaux, des Elegies.				</l>
-				<l>
-					<lb/>
-Des Sonnets, &amp; des Comedies,				</l>
-				<l>
-					<lb/>
-Ces nobles mgts, moult, ains, jafoi,				</l>
-				<l>
-					<lb/>
-A iij				</l>
-				<l>
-					<lb/>
-l				</l>
-				<l>
-					<lb/>
-¬				</l>
-				<l>
-					<lb/>
-2				</l>
-				<l>
-					<lb/>
-¬¬				</l>
-				<l>
-					<lb/>
-TS¬e-g-				</l>
-				<l>
-					<lb/>
-e				</l>
-				<l>
-					<lb/>
-rrgrs				</l>
-				<l>
-					<lb/>
-Oes, adomeq, aime, ainſi ſoit,				</l>
-				<l>
-					<lb/>
-A tant, ſi que, piteux, is:lle,				</l>
-				<l>
-					<lb/>
-Trop plus, trop nmieux, ie quiers, ſnele.				</l>
-				<l>
-					<lb/>
-Il ne ni’en chaut, ie n’en pauis muis,				</l>
-				<l>
-					<lb/>
-A grand radon, à toutr iamais				</l>
-				<l>
-					<lb/>
-Mauuaiſte, blandice, emprance,				</l>
-				<l>
-					<lb/>
-Tollir, euder, angoſſe, ſince				</l>
-				<l>
-					<lb/>
-Pieca, ſcrent, illec, ancois,				</l>
-				<l>
-					<lb/>
-Comme eſtant de mauuais François,				</l>
-				<l>
-					<lb/>
-Et ce ſans reſpect de l’vſage				</l>
-				<l>
-					<lb/>
-Ny de ces Maiſtres du langage,				</l>
-				<l>
-					<lb/>
-Les Amyots, &amp; les Ronſards,				</l>
-				<l>
-					<lb/>
-Les du Belley, &amp; les Tiards				</l>
-				<l>
-					<lb/>
-Les Berthauds, &amp; les Vigenaires				</l>
-				<l>
-					<lb/>
-Auſquels on prefere Porcheres;				</l>
-				<l>
-					<lb/>
-Les du Vairs, &amp; les Coifſeteaux,				</l>
-				<l>
-					<lb/>
-A qui l’on prepoſe Eſcuteaux,				</l>
-				<l>
-					<lb/>
-Et en que telle outrecuidance				</l>
-				<l>
-					<lb/>
-( Sort dt ſaufvoſtre reuerence)				</l>
-				<l>
-					<lb/>
-lſt prejudice aux Supplians,				</l>
-				<l>
-					<lb/>
-Vos bns &amp; fidelles cliens,				</l>
-				<l>
-					<lb/>
-Et que de Gournay la pucelle				</l>
-				<l>
-					<lb/>
-Cete ſç̧auante Oamoſclle,				</l>
-				<l>
-					<lb/>
-En faueur de l Antiquité				</l>
-				<l>
-					<lb/>
-Euſt noſtre corps ſollicite:				</l>
-				<l>
-					<lb/>
-De tmre ſes plantes publiques				</l>
-				<l>
-					<lb/>
-Au deé́cry de ces mots antiqucs:				</l>
-				<l>
-					<lb/>
-Toutefois, comme nous penſions				</l>
-				<l>
-					<lb/>
-Qe				</l>
-				<l>
-					<lb/>
-5				</l>
-				<l>
-					<lb/>
-Que Ie reſte des dictions				</l>
-				<l>
-					<lb/>
-Ne ſouffroit auecun dommage				</l>
-				<l>
-					<lb/>
-Par ces Correcteurs du langage,				</l>
-				<l>
-					<lb/>
-Et que ſous voſtre authoriteé				</l>
-				<l>
-					<lb/>
-Nous aurions toute ſeureteé́,				</l>
-				<l>
-					<lb/>
-Nous nous ſerions par defference				</l>
-				<l>
-					<lb/>
-Tous contenus dans le ſilence,				</l>
-				<l>
-					<lb/>
-Aimans mieux perdre ces bons mots				</l>
-				<l>
-					<lb/>
-Que de troubler voſtre repos.				</l>
-				<l>
-					<lb/>
-Cependant on ſç̧ait par la ville				</l>
-				<l>
-					<lb/>
-que depuis voſtre Gomberuille,				</l>
-				<l>
-					<lb/>
-Auroit iniuſtement proſcrit,				</l>
-				<l>
-					<lb/>
-Le pauure, car, d’vnſien eſcrit;				</l>
-				<l>
-					<lb/>
-Comme eſtant vn mot trop antique,				</l>
-				<l>
-					<lb/>
-Et qui tiroit ſur le gothique,				</l>
-				<l>
-					<lb/>
-Et qu’auſſi-toſt le ſieur Baro				</l>
-				<l>
-					<lb/>
-Sur ce mot cria tant hara,				</l>
-				<l>
-					<lb/>
-Qu’on alloit par cette crierie				</l>
-				<l>
-					<lb/>
-Bannir de la Chancelerie,				</l>
-				<l>
-					<lb/>
-Ce cartel eſt noſtre plaiſir,				</l>
-				<l>
-					<lb/>
-Tant lors on eſtoit de loiſir.				</l>
-				<l>
-					<lb/>
-Sans que Conrard le Secretaire				</l>
-				<l>
-					<lb/>
-D’vn tel mal ne pouuant ſe taire,				</l>
-				<l>
-					<lb/>
-S’oppoſa genereuſement				</l>
-				<l>
-					<lb/>
-A ce cruel banniſſement:				</l>
-				<l>
-					<lb/>
-Vous remonſtrant qu’en tout affaire				</l>
-				<l>
-					<lb/>
-Le car eſt vn mot neçeſſaire;				</l>
-				<l>
-					<lb/>
-Que c’eſt vn mor de liaiſon,				</l>
-				<l>
-					<lb/>
-¬				</l>
-				<l>
-					<lb/>
-BJ				</l>
-				<l>
-					<lb/>
-L¬¬¬¬¬¬¬				</l>
-				<l>
-					<lb/>
-a v¬ ¬				</l>
-				<l>
-					<lb/>
-¬r¬¬¬¬				</l>
-				<l>
-					<lb/>
-6				</l>
-				<l>
-					<lb/>
-Introducteur de la raiſon,				</l>
-				<l>
-					<lb/>
-Et que depuis plus de cent luſtres				</l>
-				<l>
-					<lb/>
-Touſiours par des emplois illuſtres,				</l>
-				<l>
-					<lb/>
-Il ſert vtilement nos Rois;				</l>
-				<l>
-					<lb/>
-Dans leurs traitez &amp; dans leurs L oix,				</l>
-				<l>
-					<lb/>
-Et fuſt, non ſans quelque rſée				</l>
-				<l>
-					<lb/>
-Sa remonſtrance authoriſée,				</l>
-				<l>
-					<lb/>
-ParS. Amant, &amp; par Faret,				</l>
-				<l>
-					<lb/>
-D’vne Chanlon de cabaret,				</l>
-				<l>
-					<lb/>
-Dont, car, commençant la repriſe				</l>
-				<l>
-					<lb/>
-Fait que tout le monde l’a priſe,				</l>
-				<l>
-					<lb/>
-Que lors par trois ou quatre fois				</l>
-				<l>
-					<lb/>
-Ils chanterent à haute vois,				</l>
-				<l>
-					<lb/>
-En pleine troupe Academique,				</l>
-				<l>
-					<lb/>
-En faiſant aà̀ Baro la nique.				</l>
-				<l>
-					<lb/>
-Voire meſme quelques eſprits,				</l>
-				<l>
-					<lb/>
-Qui meſhamment ont entrepris				</l>
-				<l>
-					<lb/>
-De nous redu:re à l’indigence,				</l>
-				<l>
-					<lb/>
-’ouloient contre toure apparence,				</l>
-				<l>
-					<lb/>
-Par brigues &amp; par faux teſmoins,				</l>
-				<l>
-					<lb/>
-I’roſcrire, encore, neantmons,				</l>
-				<l>
-					<lb/>
-P nrjuoy, d’autant, cependant, oncques				</l>
-				<l>
-					<lb/>
-r, rufo:, partnt, &amp; donque,				</l>
-				<l>
-					<lb/>
-Et prononcer vn interdit,				</l>
-				<l>
-					<lb/>
-Tant contre, ladite, &amp; lelt,				</l>
-				<l>
-					<lb/>
-Que contre, lequcl &amp; luquelle				</l>
-				<l>
-					<lb/>
-Vn qu dam, n tel, ne relle;				</l>
-				<l>
-					<lb/>
-Mais graces à l’Abbé Chambon,				</l>
-				<l>
-					<lb/>
-7				</l>
-				<l>
-					<lb/>
-A Sirmond, an Pere Bourbon				</l>
-				<l>
-					<lb/>
-Au ſieur Godeau le Paraplaraſte				</l>
-				<l>
-					<lb/>
-Au bon Baudouyn le Meraphraſte,				</l>
-				<l>
-					<lb/>
-Au Politique Prieuſac;				</l>
-				<l>
-					<lb/>
-Au grand Epiſtolier Balſac,				</l>
-				<l>
-					<lb/>
-A Chapelain l’Archipuriſte:				</l>
-				<l>
-					<lb/>
-A Vayer le Dialogiſte.				</l>
-				<l>
-					<lb/>
-Qui de parfait Pirrhonien,				</l>
-				<l>
-					<lb/>
-S’eſt fait Academicien,				</l>
-				<l>
-					<lb/>
-Au vieil Menard le Satyrique,				</l>
-				<l>
-					<lb/>
-A Sillon le Melancholique,				</l>
-				<l>
-					<lb/>
-Au petit Abbeé́ de Bourzay,				</l>
-				<l>
-					<lb/>
-Contre l’aduis de Cerizay,				</l>
-				<l>
-					<lb/>
-De l’Eſtoille, de Malleuillé,				</l>
-				<l>
-					<lb/>
-De Gombaut &amp; de Gomberuille,				</l>
-				<l>
-					<lb/>
-Et d’autres à nous inconnus				</l>
-				<l>
-					<lb/>
-Ces mots ont eſté maintenus:				</l>
-				<l>
-					<lb/>
-Or Noſſeigneurs Academiques;				</l>
-				<l>
-					<lb/>
-Noſſeigneurs les Hypercritiques,				</l>
-				<l>
-					<lb/>
-Ce n’eſt pas tout, nos pauures mots				</l>
-				<l>
-					<lb/>
-Ont bien enduré d’autres maux,				</l>
-				<l>
-					<lb/>
-Mil ont eſteé́ bannis des Mettres				</l>
-				<l>
-					<lb/>
-Les vns accourcis de trois lettres,				</l>
-				<l>
-					<lb/>
-Les autres d’aurant allongez:				</l>
-				<l>
-					<lb/>
-Leurs genres ont eſté changez				</l>
-				<l>
-					<lb/>
-Panvne trop laſche molleſſe,				</l>
-				<l>
-					<lb/>
-Qu’ils appellent delicateſſe;				</l>
-				<l>
-					<lb/>
-Cerizay des mots maſculins				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-lL				</l>
-				<l>
-					<lb/>
-8				</l>
-				<l>
-					<lb/>
-Ayant fait des mots feminins ¬				</l>
-				<l>
-					<lb/>
-Car ce beau mignon fait la figue				</l>
-				<l>
-					<lb/>
-A quiconque dit vn intrigue,				</l>
-				<l>
-					<lb/>
-Et veut contre toute raiſon				</l>
-				<l>
-					<lb/>
-Que l’on die de la poiſon.				</l>
-				<l>
-					<lb/>
-Vme Epitaphe, vae Epigramme				</l>
-				<l>
-					<lb/>
-Vae Nauire, vne Anagramme,				</l>
-				<l>
-					<lb/>
-Vme reprocbe, vae Daché;				</l>
-				<l>
-					<lb/>
-Vne menſonge, ve Eueſcheé́,				</l>
-				<l>
-					<lb/>
-La Doute, vne Hymne, vne Epithese				</l>
-				<l>
-					<lb/>
-Vne eſuantail, vne ſquelette.				</l>
-				<l>
-					<lb/>
-Bref, ce délicat Cerizay				</l>
-				<l>
-					<lb/>
-Euſt chaque mot feminiſé,				</l>
-				<l>
-					<lb/>
-Sans reſpect ny d’analogie,				</l>
-				<l>
-					<lb/>
-Ny d’auecune étymologie,				</l>
-				<l>
-					<lb/>
-Pour condeſcendre au doux Habert				</l>
-				<l>
-					<lb/>
-Sans que l’Abbé de Bois robert				</l>
-				<l>
-					<lb/>
-Nommé grand Chanſonnier deFrance,				</l>
-				<l>
-					<lb/>
-Fauory de ſo Eminence,				</l>
-				<l>
-					<lb/>
-Cét admirable patrelin				</l>
-				<l>
-					<lb/>
-Ay mant le genre maſculin.				</l>
-				<l>
-					<lb/>
-S’oppoſe de tout ſon courage				</l>
-				<l>
-					<lb/>
-A cet effeminé langage.				</l>
-				<l>
-					<lb/>
-De plus, depuis quare ou cinq ans				</l>
-				<l>
-					<lb/>
-Vn de vou plu gnnd paruiſuans,				</l>
-				<l>
-					<lb/>
-Afin de nonus faire iniuſtice				</l>
-				<l>
-					<lb/>
-Par belle &amp; par pure malice,				</l>
-				<l>
-					<lb/>
-Aurot de ſon authorité.				</l>
-				<l>
-					<lb/>
-E-exaaeeee				</l>
-				<l>
-					<lb/>
-Dans				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-l¬¬¬¬¬¬¬¬¬¬				</l>
-				<l>
-					<lb/>
-57				</l>
-				<l>
-					<lb/>
-Dans l’Auantpropos d’vn traité				</l>
-				<l>
-					<lb/>
-Qu’il a fait ſuiuant ſon caprice				</l>
-				<l>
-					<lb/>
-De la faculſé concoctrice,				</l>
-				<l>
-					<lb/>
-(Mais qui par ces obſcuritez				</l>
-				<l>
-					<lb/>
-auſe au Lecteur des cruditez)				</l>
-				<l>
-					<lb/>
-PRanny de ce nobl e Royaume,				</l>
-				<l>
-					<lb/>
-Du Latin le docte ldiome,				</l>
-				<l>
-					<lb/>
-( Comme langage de pedant)				</l>
-				<l>
-					<lb/>
-Et par cét eſtrauge accident,				</l>
-				<l>
-					<lb/>
-La pauure langue Layiale				</l>
-				<l>
-					<lb/>
-Alloit eſtre trouſſéeen male,				</l>
-				<l>
-					<lb/>
-Si le bel Aduocat Belot				</l>
-				<l>
-					<lb/>
-Du bareau l’illuſtre fallor,				</l>
-				<l>
-					<lb/>
-N’en euſt pris en main la deffence,				</l>
-				<l>
-					<lb/>
-Et protegé ſon innocence;				</l>
-				<l>
-					<lb/>
-En quoy certes, &amp; ſa bonté				</l>
-				<l>
-					<lb/>
-Et ſon ele, &amp; ſa charité,				</l>
-				<l>
-					<lb/>
-Se firent d’auant plus paroiſtre				</l>
-				<l>
-					<lb/>
-Quil n’a l’honneur de la connoiſtre,				</l>
-				<l>
-					<lb/>
-Semblable a ces preux Cheualiers				</l>
-				<l>
-					<lb/>
-Les Palladins aduanturiers,				</l>
-				<l>
-					<lb/>
-Qqui deffendant des inconuës				</l>
-				<l>
-					<lb/>
-Ont porté leurs nos iuqu’aux nuës.				</l>
-				<l>
-					<lb/>
-En fin ie ne ſçay quels Autheurs				</l>
-				<l>
-					<lb/>
-Auroient preſerit aux Correcteurs				</l>
-				<l>
-					<lb/>
-Vne impertinente Orthographe				</l>
-				<l>
-					<lb/>
-Leurs faiſant mettre paragrafe,				</l>
-				<l>
-					<lb/>
-Filoſfie, otre, le tans,				</l>
-				<l>
-					<lb/>
-C				</l>
-				<l>
-					<lb/>
-l				</l>
-				<l>
-					<lb/>
-¬				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-L’iuer, L’oromne, le Printans,				</l>
-				<l>
-					<lb/>
-Plare Rale, le Reome,				</l>
-				<l>
-					<lb/>
-Saint Ogut, &amp; S. Gerome,.				</l>
-				<l>
-					<lb/>
-Et retranchant mal aà propos				</l>
-				<l>
-					<lb/>
-L’S de la pluſpart des mots;				</l>
-				<l>
-					<lb/>
-Comme, d Eſlat, d’oſier, de noſftre				</l>
-				<l>
-					<lb/>
-Dere, d’ſtonnment, d’Apeſtre,				</l>
-				<l>
-					<lb/>
-Dont ſon vſage eſt mal traite				</l>
-				<l>
-					<lb/>
-Autant &amp; plus qu’il fuſt du T.				</l>
-				<l>
-					<lb/>
-Lorſque de toutes leurs querelles				</l>
-				<l>
-					<lb/>
-Elle fit iuges les voyel les;				</l>
-				<l>
-					<lb/>
-Si bien que les petits Grimaux				</l>
-				<l>
-					<lb/>
-Ne rencontrans point tous ces mots,				</l>
-				<l>
-					<lb/>
-Suiuant noſtre ordre alphabetique				</l>
-				<l>
-					<lb/>
-Quiretient l’Orthographe antique,				</l>
-				<l>
-					<lb/>
-I ntrent auſſi-toſt en courroux,				</l>
-				<l>
-					<lb/>
-Lt lors nous frapent à grands coups.				</l>
-				<l>
-					<lb/>
-Sou fflettant le Dictionnaire				</l>
-				<l>
-					<lb/>
-Auſli bien que le Deſpotaire.				</l>
-				<l>
-					<lb/>
-Mais tout cela n’eſt rien au pris				</l>
-				<l>
-					<lb/>
-De ce que nous auons appris,				</l>
-				<l>
-					<lb/>
-Qe au gelas dans ſa Harangue,				</l>
-				<l>
-					<lb/>
-ppno à noauelle langue,				</l>
-				<l>
-					<lb/>
-Eque ſous voſtre authorité				</l>
-				<l>
-					<lb/>
-En dept de l’antiquité,				</l>
-				<l>
-					<lb/>
-Dans ſon nouueau Vocabulaire,				</l>
-				<l>
-					<lb/>
-t dans ſla nouuelle Grammaire,				</l>
-				<l>
-					<lb/>
-ll ſupprimoit nos dietions				</l>
-				<l>
-					<lb/>
-l				</l>
-				<l>
-					<lb/>
-ii				</l>
-				<l>
-					<lb/>
-Auecque noalocutions;				</l>
-				<l>
-					<lb/>
-Ce qui, ſaafvoſtre reuerenee				</l>
-				<l>
-					<lb/>
-Outre la haute ipoelnence,				</l>
-				<l>
-					<lb/>
-Qu’vn eſtrangor &amp; Sauoyard				</l>
-				<l>
-					<lb/>
-Eace le procez à Ronſad;				</l>
-				<l>
-					<lb/>
-Seroit vne extrém injuſtice				</l>
-				<l>
-					<lb/>
-Qu’à la fin apresle ſeruice,				</l>
-				<l>
-					<lb/>
-ue par nos doctes dictions				</l>
-				<l>
-					<lb/>
-A tant, &amp; tant de Nations				</l>
-				<l>
-					<lb/>
-En toure ſorte de ſcience				</l>
-				<l>
-					<lb/>
-Nous auons rendudaas la Fance,				</l>
-				<l>
-					<lb/>
-On nous caſſaſt honteuſement.				</l>
-				<l>
-					<lb/>
-Nous l’oſons dire hautement,				</l>
-				<l>
-					<lb/>
-qQue tous les vieils Dictionnaires.				</l>
-				<l>
-					<lb/>
-Sont abſolument neceſſaires.				</l>
-				<l>
-					<lb/>
-Par eux s’entendent les Autheurs,				</l>
-				<l>
-					<lb/>
-Pe: eux ſe font les Traducteurs;				</l>
-				<l>
-					<lb/>
-Ils er ucnt à̀ tous de lumieres				</l>
-				<l>
-					<lb/>
-DPans les plus obſeures matieres,				</l>
-				<l>
-					<lb/>
-Ils ſont les Docteurs des Docteurs,				</l>
-				<l>
-					<lb/>
-Les Precepteurs des Precepreurs,				</l>
-				<l>
-					<lb/>
-Les maiſtres des aaiſtres des Claſſes;				</l>
-				<l>
-					<lb/>
-Et tels qu’on a creuſçauantaſſes				</l>
-				<l>
-					<lb/>
-A la faueur de leurs bons mors,				</l>
-				<l>
-					<lb/>
-Sans eux n’eſtoient rien que desſots,				</l>
-				<l>
-					<lb/>
-Témoing, Noſſeigneurs, ce bon homme				</l>
-				<l>
-					<lb/>
-pil leil ienele oeſen aea.				</l>
-				<l>
-					<lb/>
-s				</l>
-				<l>
-					<lb/>
-Qui paſſeroit pourvn feſei,				</l>
-				<l>
-					<lb/>
-.				</l>
-				<l>
-					<lb/>
-S’il n’auoit point les trois iſtienn				</l>
-				<l>
-					<lb/>
-Auee les Gſoſes anciennes,				</l>
-				<l>
-					<lb/>
-Le Nomenclateur lunius,				</l>
-				<l>
-					<lb/>
-t Mathias Martinius.				</l>
-				<l>
-					<lb/>
-Mais ſans parler iey desautres,				</l>
-				<l>
-					<lb/>
-Vous ſçauez que parny les voſtres				</l>
-				<l>
-					<lb/>
-Les pPluu renomez Traducteurs,				</l>
-				<l>
-					<lb/>
-t les plus celebes Autheurs,				</l>
-				<l>
-					<lb/>
-Qui s’en font maintenant à croire,				</l>
-				<l>
-					<lb/>
-Nous ſont obligez de leur gloire,				</l>
-				<l>
-					<lb/>
-Et cependant, ôſiecle, ô mœurs,				</l>
-				<l>
-					<lb/>
-Ce ſont eux qui par leurs clameus				</l>
-				<l>
-					<lb/>
-Auiourd’huy dans l’Academie				</l>
-				<l>
-					<lb/>
-Nous traitent auec infamie.				</l>
-				<l>
-					<lb/>
-Quantesfſois dans les verſions				</l>
-				<l>
-					<lb/>
-Sans le ſecours des dictions,				</l>
-				<l>
-					<lb/>
-De moy Calepin &amp; d’sſtienne				</l>
-				<l>
-					<lb/>
-Baudoüin eſtoit-il en grand peine;				</l>
-				<l>
-					<lb/>
-Sans nous Collomby dans Iuſtin¬				</l>
-				<l>
-					<lb/>
-Pſtoit au bout de ſon Latin;				</l>
-				<l>
-					<lb/>
-t dans ſon Terence Voiture				</l>
-				<l>
-					<lb/>
-Auoit l’eſprit à la torture;				</l>
-				<l>
-					<lb/>
-Dans quinte-Curſe Vaugelas				</l>
-				<l>
-					<lb/>
-Deés le prermier mot eſtoit las,				</l>
-				<l>
-					<lb/>
-Vaugelas se grand Interprete,				</l>
-				<l>
-					<lb/>
-Le quel aujourd’huy nous maltralte;				</l>
-				<l>
-					<lb/>
-Mamard fans nous traduiſoir mal				</l>
-				<l>
-					<lb/>
-So				</l>
-				<l>
-					<lb/>
-Son Catul &amp; ſon Martial,				</l>
-				<l>
-					<lb/>
-Er le Seneque faiſoit nargues				</l>
-				<l>
-					<lb/>
-A voſtre Candidat de Fargues				</l>
-				<l>
-					<lb/>
-Sans nous Giry n’entendoit rien				</l>
-				<l>
-					<lb/>
-Aux eſcrits de Tertullien,				</l>
-				<l>
-					<lb/>
-Et l’obſcur Apologetique				</l>
-				<l>
-					<lb/>
-A tous coups luy faiſoit la nique;				</l>
-				<l>
-					<lb/>
-Dedans les Pſeaumes du Marais,				</l>
-				<l>
-					<lb/>
-N’euſt pas fait comme il fait flores;				</l>
-				<l>
-					<lb/>
-Le beau Patru dans ſaharangue				</l>
-				<l>
-					<lb/>
-Ne ſçauoit de qui prendre langue,				</l>
-				<l>
-					<lb/>
-Et cent fois, eſtoit aà quia,				</l>
-				<l>
-					<lb/>
-Dans l’Oraiſon pro Archia;				</l>
-				<l>
-					<lb/>
-Colletet dans ſa Sainte Marthe,				</l>
-				<l>
-					<lb/>
-Prenoit ſouuent Renard pour Marthe;				</l>
-				<l>
-					<lb/>
-Meſme le hardy d’Ablancourt.				</l>
-				<l>
-					<lb/>
-Dans Tacite ſe trouuoit court;				</l>
-				<l>
-					<lb/>
-Sans nous Habert n’entendoit notte				</l>
-				<l>
-					<lb/>
-Dans la Morale d’Ariſtote,				</l>
-				<l>
-					<lb/>
-(C’eſt à̀ dire en la verſion)				</l>
-				<l>
-					<lb/>
-Qu’auec beaucoup d’attention				</l>
-				<l>
-					<lb/>
-Et non faite en langue Latine,				</l>
-				<l>
-					<lb/>
-De gens deminente doctrine:				</l>
-				<l>
-					<lb/>
-Car quand au texte. Vt dicitar.				</l>
-				<l>
-					<lb/>
-Gacus is eſt, non legitur.				</l>
-				<l>
-					<lb/>
-Que fi nous ſommes moins vtiles				</l>
-				<l>
-					<lb/>
-Aux l’Eſtoiles, aux Gomberuilles,				</l>
-				<l>
-					<lb/>
-Aux Ceriſays, aux S. Amants,				</l>
-				<l>
-					<lb/>
-D				</l>
-				<l>
-					<lb/>
-aR				</l>
-				<l>
-					<lb/>
-Aux Conrards, Baros, &amp; Racans,				</l>
-				<l>
-					<lb/>
-Et tels autres ſç̧auants Critiques				</l>
-				<l>
-					<lb/>
-Des ouurages Academiques,				</l>
-				<l>
-					<lb/>
-Les grands, &amp; fameux Palatins,				</l>
-				<l>
-					<lb/>
-Eſtrangers aux pays Latins.				</l>
-				<l>
-					<lb/>
-ll eſt pourtant tres veritable				</l>
-				<l>
-					<lb/>
-Que ce qu’ils ſçauent de la fable,				</l>
-				<l>
-					<lb/>
-lls l’ont appris des verſions				</l>
-				<l>
-					<lb/>
-A l’aide de nos dictions,				</l>
-				<l>
-					<lb/>
-Qu’il fut autrefois neceſſaire				</l>
-				<l>
-					<lb/>
-De leur faire en langue vulgaire:				</l>
-				<l>
-					<lb/>
-Ainſi quoy qu’indiſertement				</l>
-				<l>
-					<lb/>
-Nous leur ſeruions de truchement.				</l>
-				<l>
-					<lb/>
-Mais ſans regarder aux offices,				</l>
-				<l>
-					<lb/>
-Aux aſſiſtances, &amp; ſeruices				</l>
-				<l>
-					<lb/>
-Que vous rendent les ſuppliants:				</l>
-				<l>
-					<lb/>
-oyez les inconueniens				</l>
-				<l>
-					<lb/>
-Que cauſeronr voſtre Grammaire,				</l>
-				<l>
-					<lb/>
-Anec voſtre vocabulaire				</l>
-				<l>
-					<lb/>
-Vous n’en eſtes qu’à l’ABC.				</l>
-				<l>
-					<lb/>
-Depuis plus d’vn luſtre paſſeé,				</l>
-				<l>
-					<lb/>
-Que l’on trauaille à̀ cet ouurage.				</l>
-				<l>
-					<lb/>
-O nos chers Maiſtres du langage				</l>
-				<l>
-					<lb/>
-Vous ſçaucz qu’on ne fixe pent				</l>
-				<l>
-					<lb/>
-Les langues en vn meſme point:				</l>
-				<l>
-					<lb/>
-Tel mot qui fu hier à̀ la mode,				</l>
-				<l>
-					<lb/>
-qQui ce iourd’huy n’eſt pas cemmode,				</l>
-				<l>
-					<lb/>
-Et tel qui fut hier deſcné,				</l>
-				<l>
-					<lb/>
-15				</l>
-				<l>
-					<lb/>
-Paſſe auiourd’huy pour motcnié				</l>
-				<l>
-					<lb/>
-C’eſt apres tout Monſieur l’uſage,				</l>
-				<l>
-					<lb/>
-Qui fait &amp; deffait le langage,				</l>
-				<l>
-					<lb/>
-S bien qu’il pourroit arriuer,				</l>
-				<l>
-					<lb/>
-Quand vous ſeriez preſt d’acheuer				</l>
-				<l>
-					<lb/>
-Voſtre nouueau Vocabulaire				</l>
-				<l>
-					<lb/>
-Et voſtre nouuelle Grammaire;				</l>
-				<l>
-					<lb/>
-Que grand nombre des dictions,				</l>
-				<l>
-					<lb/>
-Et pluſieurs des locutions;				</l>
-				<l>
-					<lb/>
-Qu’on trouue maintenant nouuelles,				</l>
-				<l>
-					<lb/>
-Et qui vous paroiſſent tres-belles,				</l>
-				<l>
-					<lb/>
-Ne ſeroient plus lors de ſaiſon:				</l>
-				<l>
-					<lb/>
-Nous ioigrdons à cette raiſon				</l>
-				<l>
-					<lb/>
-Que tous les iours voſtre critique				</l>
-				<l>
-					<lb/>
-Deſcriant quelque mot antique,				</l>
-				<l>
-					<lb/>
-Et les -meilleurs, &amp; les plus beaux				</l>
-				<l>
-					<lb/>
-Sans qu’elle en faſſe de nouueaux,				</l>
-				<l>
-					<lb/>
-L’on ſeroit ô mal-heur inſigne				</l>
-				<l>
-					<lb/>
-Reduit à ſe parler parſigne:				</l>
-				<l>
-					<lb/>
-mMais quand vous feriez d’autres mots,				</l>
-				<l>
-					<lb/>
-Combien ſouffriroit-on de maux				</l>
-				<l>
-					<lb/>
-Auant que de les bien apprendre,				</l>
-				<l>
-					<lb/>
-Et de les faire ien entendre;				</l>
-				<l>
-					<lb/>
-Combien vous fraudroit-il de temps				</l>
-				<l>
-					<lb/>
-Pour appaiſer les mal contans,				</l>
-				<l>
-					<lb/>
-Et faire que ce beau langage,				</l>
-				<l>
-					<lb/>
-Fut omologuéparl’vſage,				</l>
-				<l>
-					<lb/>
-Ce conſideré Noſſegneurs,				</l>
-				<l>
-					<lb/>
-a a aaa.				</l>
-				<l>
-					<lb/>
--em¬¬				</l>
-				<l>
-					<lb/>
-16				</l>
-				<l>
-					<lb/>
-¬,				</l>
-				<l>
-					<lb/>
-Pour preuenirtous ces mal-heurs,				</l>
-				<l>
-					<lb/>
-Qu’il plaiſe à voſtre courrtoiſie				</l>
-				<l>
-					<lb/>
-Rendre le droit de Bourgeoiſie				</l>
-				<l>
-					<lb/>
-Aux mots iniuſtement proſcripts				</l>
-				<l>
-					<lb/>
-De ces beaux &amp; doctes eſcrits,				</l>
-				<l>
-					<lb/>
-Laiſſez voſtre Vocabulaire				</l>
-				<l>
-					<lb/>
-Abandonnez voſtre Grammaire,				</l>
-				<l>
-					<lb/>
-N’innouez ny ne faites rien,				</l>
-				<l>
-					<lb/>
-En la langue, &amp; vous ferez bien.				</l>
-				<l>
-					<lb/>
-FIN.				</l>
-				<l>
-					<lb/>
-cCCCacCacCCCCCcce CeCC				</l>
-				<l>
-					<lb/>
-PERISSIO N.				</l>
-				<l>
-					<lb/>
-I I eſt permis a Ia v aoe , lmprimeur &amp; Libraire à Paris,				</l>
-				<l>
-					<lb/>
-d’mpumoe ou fare mpnmor, vendre &amp; debitet v Liue meitule,				</l>
-				<l>
-					<lb/>
-’araſſe adarmeé Et deffenſes a tous autres de l’impner aict ce				</l>
-				<l>
-					<lb/>
-nouieſme May 43.				</l>
-				<l>
-					<lb/>
-0				</l>
-				<l>
-					<lb/>
-RESPoNSE				</l>
-				<l>
-					<lb/>
-PARNASSE				</l>
-				<l>
-					<lb/>
-ALAME				</l>
-				<l>
-					<lb/>
-PAR L’ACADEMIE FRANCOISE.				</l>
-				<l>
-					<lb/>
-3¬¬				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-. 9				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-. .				</l>
-				<l>
-					<lb/>
-p?¬				</l>
-				<l>
-					<lb/>
-4				</l>
-				<l>
-					<lb/>
-AAA dbbe				</l>
-				<l>
-					<lb/>
-êeom&amp;&amp;s				</l>
-				<l>
-					<lb/>
-Gee				</l>
-				<l>
-					<lb/>
-VFpFpeuerup				</l>
-				<l>
-					<lb/>
-RESPONSE				</l>
-				<l>
-					<lb/>
-PARNASSE				</l>
-				<l>
-					<lb/>
-ALARME.				</l>
-				<l>
-					<lb/>
-Ee&amp;e iſin laleque le eſtphioue,				</l>
-				<l>
-					<lb/>
-ee nenue oele ſe iie				</l>
-				<l>
-					<lb/>
-Pour vn Aduocat ſans pratique,				</l>
-				<l>
-					<lb/>
-S nu nmerlrons le eounre rqu¬,				</l>
-				<l>
-					<lb/>
-De e ene dloe e pnoes llonune				</l>
-				<l>
-					<lb/>
-Dieu qu’il pleuuroit de reparti				</l>
-				<l>
-					<lb/>
-Qeroln lieninlnidae oſ oe a¬				</l>
-				<l>
-					<lb/>
-Les Callepins &amp; les Nicots,				</l>
-				<l>
-					<lb/>
-Qu ſons res premniers paune¬				</l>
-				<l>
-					<lb/>
-s				</l>
-				<l>
-					<lb/>
-Tu erois qu’entre les Iodelets				</l>
-				<l>
-					<lb/>
-Tu pourras auoir quelqu’eſtime.				</l>
-				<l>
-					<lb/>
-En debitant dans le Palais				</l>
-				<l>
-					<lb/>
-Ta burleſque &amp; plaiſante rime;				</l>
-				<l>
-					<lb/>
-Tu crois au moins ſi ce debit				</l>
-				<l>
-					<lb/>
-Ne te donne quelque credit				</l>
-				<l>
-					<lb/>
-Parmy les bouffons agreables,				</l>
-				<l>
-					<lb/>
-Qu’il te vauda mieux qtvn hreſor				</l>
-				<l>
-					<lb/>
-Sil te peut faire vn vray Montmor,				</l>
-				<l>
-					<lb/>
-Courir toutes les bonnes tables.				</l>
-				<l>
-					<lb/>
-Qu’as-tu plus aà luy roprocher?				</l>
-				<l>
-					<lb/>
-Il t’attend laà ce Paraſite,				</l>
-				<l>
-					<lb/>
-Pour te coëffer de la marmite				</l>
-				<l>
-					<lb/>
-Où jadis tu le fis poeſcher:				</l>
-				<l>
-					<lb/>
-Quand il criera dedans l’office				</l>
-				<l>
-					<lb/>
-Que ſans cauſe &amp; ſans Benefice				</l>
-				<l>
-					<lb/>
-Aduocat &amp; Preſtre de nom,				</l>
-				<l>
-					<lb/>
-Tu n’as abandonné Bartole				</l>
-				<l>
-					<lb/>
-Que pour bouffonner ſous leſtole,				</l>
-				<l>
-					<lb/>
-Carde la peſle &amp; le fourgon.				</l>
-				<l>
-					<lb/>
-¬¬¬				</l>
-				<l>
-					<lb/>
-Quoy! ſe pehide aAcadeuaie!.				</l>
-				<l>
-					<lb/>
-T’eriger contre elle en Marot!				</l>
-				<l>
-					<lb/>
-Il euſt mieux valu qu’Aſtarot				</l>
-				<l>
-					<lb/>
-Euſt berſé tà uſe endormie;				</l>
-				<l>
-					<lb/>
-En pauureAduocat neſpriſé́,				</l>
-				<l>
-					<lb/>
-En Preſtre ridiculiſé,¬				</l>
-				<l>
-					<lb/>
-Tu n’as pû faire ta fortune:.				</l>
-				<l>
-					<lb/>
-Mais comme Pote mêdiſane., ii				</l>
-				<l>
-					<lb/>
-ine ie e en en e n iae				</l>
-				<l>
-					<lb/>
-a¬				</l>
-				<l>
-					<lb/>
-le ſuis ſeur que telles douceurs				</l>
-				<l>
-					<lb/>
-N’eſtans pas fort à ton vſage,				</l>
-				<l>
-					<lb/>
-Entre ta Muſe &amp; les neuf Sœurs				</l>
-				<l>
-					<lb/>
-Nous verrons vn triſte ménage;				</l>
-				<l>
-					<lb/>
-Auſſi ne t’appartient-il pas				</l>
-				<l>
-					<lb/>
-Ny de te plaire à leurs appas,				</l>
-				<l>
-					<lb/>
-Ny de connoiſtre leurs Myſteres:				</l>
-				<l>
-					<lb/>
-Quand vn Pedant leur fait l’amour,				</l>
-				<l>
-					<lb/>
-Et s’erige en homme de Cour,				</l>
-				<l>
-					<lb/>
-Il merite les eſtriuieres.				</l>
-				<l>
-					<lb/>
-B				</l>
-				<l>
-					<lb/>
-Voila quel ſera ton deſtin,				</l>
-				<l>
-					<lb/>
-Voila quelle ſera ta gloires				</l>
-				<l>
-					<lb/>
-Deſormais ſi tu me veux croire,				</l>
-				<l>
-					<lb/>
-Retranche-toy dans ton Larin,				</l>
-				<l>
-					<lb/>
-Et ne fay plus en noſtre langue				</l>
-				<l>
-					<lb/>
-Poëme, Requeſte, ny Harangue,				</l>
-				<l>
-					<lb/>
-Si tu ne veux eſtre frotté.				</l>
-				<l>
-					<lb/>
-Ainſi reſpond l’Academie				</l>
-				<l>
-					<lb/>
-Au Pedant qui par vanité				</l>
-				<l>
-					<lb/>
-Cherche a l’auoir pour ennemie.				</l>
-				<l>
-					<lb/>
-FIN.				</l>
-LE
-        PARNASSE
-        ALARME 
-         A PARIS
-         M. DC. XLIX.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">vers</term>
+          <term type="genre">non renseigné</term>
+          <term type="subject" />
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-08-09" who="MF" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <pb n="2" />
+        <pb n="3" />
+        <lb />LE
+        <lb />PARNASSE
+        <lb />ALARME <figure type="decoration" />
+        <lb /> A PARIS
+        <lb /> M. DC. XLIX. <pb n="4" />
+        <pb n="5" />
+        <l>
+          <lb />LE PARNASSE</l>
+        <l>
+          <lb /> ALARME.</l>
+        <l>
+          <lb />5 Noſſeigneurs Academiques,</l>
+        <l>
+          <lb /> iunie erunue le nere ſiai.</l>
+        <l>
+          <lb />t Souuerains Arbitres des mots;</l>
+        <l>
+          <lb />Does faiſeurs d’Auant propos.</l>
+        <l>
+          <lb />Cardinaux Hiſtoriographes</l>
+        <l>
+          <lb />Sur Intendas des Orthographes,</l>
+        <l>
+          <lb />Raffineurs de locutions,</l>
+        <l>
+          <lb />Entrepreneurs de verſions,</l>
+        <l>
+          <lb />Paiſeurs de breues &amp; de longues,</l>
+        <l>
+          <lb />De voyelles &amp; de diphthongues.</l>
+        <l>
+          <lb />Vpplie humblemen Calepin,</l>
+        <l>
+          <lb /> Auec Nicot, Eſtienne, Oudin,</l>
+        <l>
+          <lb />Et tous autres Dictionnaires,</l>
+        <l>
+          <lb />Lexicons, &amp; vocabulaires,</l>
+        <l>
+          <lb />Par qui les Eſcholiers François</l>
+        <l>
+          <lb />Des langues apprennent les Lois.</l>
+        <l>
+          <lb />Diſans, que depuis dix années,</l>
+        <l>
+          <lb />On a par diuerſes menées</l>
+        <l>
+          <lb />Banny des Romans, des Poulets,</l>
+        <l>
+          <lb />Des Lettres douces, des ballets,</l>
+        <l>
+          <lb />Des Madrigaux, des Elegies.</l>
+        <l>
+          <lb />Des Sonnets, &amp; des Comedies,</l>
+        <l>
+          <lb />Ces nobles mgts, moult, ains, jafoi,</l>
+        <l>
+          <lb /> A iij</l>
+        <l>
+          <lb />l</l>
+        <l>
+          <lb />¬</l>
+        <pb n="6" />
+        <l>
+          <lb />2</l>
+        <l>
+          <lb />¬¬</l>
+        <l>
+          <lb /> TS¬e-g-</l>
+        <l>
+          <lb />e</l>
+        <l>
+          <lb />rrgrs </l>
+        <l>
+          <lb />Oes, adomeq, aime, ainſi ſoit,</l>
+        <l>
+          <lb />A tant, ſi que, piteux, is:lle,</l>
+        <l>
+          <lb />Trop plus, trop nmieux, ie quiers, ſnele.</l>
+        <l>
+          <lb />Il ne ni’en chaut, ie n’en pauis muis,</l>
+        <l>
+          <lb />A grand radon, à toutr iamais</l>
+        <l>
+          <lb />Mauuaiſte, blandice, emprance,</l>
+        <l>
+          <lb />Tollir, euder, angoſſe, ſince</l>
+        <l>
+          <lb />Pieca, ſcrent, illec, ancois,</l>
+        <l>
+          <lb />Comme eſtant de mauuais François,</l>
+        <l>
+          <lb />Et ce ſans reſpect de l’vſage</l>
+        <l>
+          <lb />Ny de ces Maiſtres du langage,</l>
+        <l>
+          <lb />Les Amyots, &amp; les Ronſards,</l>
+        <l>
+          <lb />Les du Belley, &amp; les Tiards</l>
+        <l>
+          <lb />Les Berthauds, &amp; les Vigenaires</l>
+        <l>
+          <lb />Auſquels on prefere Porcheres;</l>
+        <l>
+          <lb />Les du Vairs, &amp; les Coifſeteaux,</l>
+        <l>
+          <lb />A qui l’on prepoſe Eſcuteaux,</l>
+        <l>
+          <lb />Et en que telle outrecuidance</l>
+        <l>
+          <lb />( Sort dt ſaufvoſtre reuerence)</l>
+        <l>
+          <lb />lſt prejudice aux Supplians,</l>
+        <l>
+          <lb />Vos bns &amp; fidelles cliens,</l>
+        <l>
+          <lb />Et que de Gournay la pucelle</l>
+        <l>
+          <lb />Cete ſç̧auante Oamoſclle,</l>
+        <l>
+          <lb />En faueur de l Antiquité</l>
+        <l>
+          <lb />Euſt noſtre corps ſollicite:</l>
+        <l>
+          <lb />De tmre ſes plantes publiques</l>
+        <l>
+          <lb />Au deé́cry de ces mots antiqucs:</l>
+        <l>
+          <lb />Toutefois, comme nous penſions</l>
+        <l>
+          <lb />Qe</l>
+        <pb n="7" />
+        <l>
+          <lb />5</l>
+        <l>
+          <lb />Que Ie reſte des dictions</l>
+        <l>
+          <lb />Ne ſouffroit auecun dommage</l>
+        <l>
+          <lb />Par ces Correcteurs du langage,</l>
+        <l>
+          <lb />Et que ſous voſtre authoriteé</l>
+        <l>
+          <lb />Nous aurions toute ſeureteé́,</l>
+        <l>
+          <lb />Nous nous ſerions par defference</l>
+        <l>
+          <lb />Tous contenus dans le ſilence,</l>
+        <l>
+          <lb />Aimans mieux perdre ces bons mots</l>
+        <l>
+          <lb />Que de troubler voſtre repos.</l>
+        <l>
+          <lb />Cependant on ſç̧ait par la ville</l>
+        <l>
+          <lb />que depuis voſtre Gomberuille,</l>
+        <l>
+          <lb />Auroit iniuſtement proſcrit,</l>
+        <l>
+          <lb />Le pauure, car, d’vnſien eſcrit;</l>
+        <l>
+          <lb />Comme eſtant vn mot trop antique,</l>
+        <l>
+          <lb />Et qui tiroit ſur le gothique,</l>
+        <l>
+          <lb />Et qu’auſſi-toſt le ſieur Baro</l>
+        <l>
+          <lb />Sur ce mot cria tant hara,</l>
+        <l>
+          <lb />Qu’on alloit par cette crierie</l>
+        <l>
+          <lb />Bannir de la Chancelerie,</l>
+        <l>
+          <lb />Ce cartel eſt noſtre plaiſir,</l>
+        <l>
+          <lb />Tant lors on eſtoit de loiſir.</l>
+        <l>
+          <lb />Sans que Conrard le Secretaire</l>
+        <l>
+          <lb />D’vn tel mal ne pouuant ſe taire,</l>
+        <l>
+          <lb />S’oppoſa genereuſement</l>
+        <l>
+          <lb />A ce cruel banniſſement:</l>
+        <l>
+          <lb />Vous remonſtrant qu’en tout affaire</l>
+        <l>
+          <lb />Le car eſt vn mot neçeſſaire;</l>
+        <l>
+          <lb />Que c’eſt vn mor de liaiſon,</l>
+        <l>
+          <lb />¬</l>
+        <l>
+          <lb />BJ</l>
+        <pb n="8" />
+        <l>
+          <lb />L¬¬¬¬¬¬¬</l>
+        <l>
+          <lb /> a v¬ ¬</l>
+        <l>
+          <lb />¬r¬¬¬¬</l>
+        <l>
+          <lb />6</l>
+        <l>
+          <lb />Introducteur de la raiſon,</l>
+        <l>
+          <lb />Et que depuis plus de cent luſtres</l>
+        <l>
+          <lb />Touſiours par des emplois illuſtres,</l>
+        <l>
+          <lb />Il ſert vtilement nos Rois;</l>
+        <l>
+          <lb />Dans leurs traitez &amp; dans leurs L oix,</l>
+        <l>
+          <lb />Et fuſt, non ſans quelque rſée</l>
+        <l>
+          <lb />Sa remonſtrance authoriſée,</l>
+        <l>
+          <lb />ParS. Amant, &amp; par Faret,</l>
+        <l>
+          <lb />D’vne Chanlon de cabaret,</l>
+        <l>
+          <lb />Dont, car, commençant la repriſe</l>
+        <l>
+          <lb />Fait que tout le monde l’a priſe,</l>
+        <l>
+          <lb />Que lors par trois ou quatre fois</l>
+        <l>
+          <lb />Ils chanterent à haute vois,</l>
+        <l>
+          <lb />En pleine troupe Academique,</l>
+        <l>
+          <lb />En faiſant aà̀ Baro la nique.</l>
+        <l>
+          <lb />Voire meſme quelques eſprits,</l>
+        <l>
+          <lb />Qui meſhamment ont entrepris</l>
+        <l>
+          <lb />De nous redu:re à l’indigence,</l>
+        <l>
+          <lb />’ouloient contre toure apparence,</l>
+        <l>
+          <lb />Par brigues &amp; par faux teſmoins,</l>
+        <l>
+          <lb />I’roſcrire, encore, neantmons,</l>
+        <l>
+          <lb /> P nrjuoy, d’autant, cependant, oncques</l>
+        <l>
+          <lb />r, rufo:, partnt, &amp; donque,</l>
+        <l>
+          <lb />Et prononcer vn interdit,</l>
+        <l>
+          <lb />Tant contre, ladite, &amp; lelt,</l>
+        <l>
+          <lb />Que contre, lequcl &amp; luquelle</l>
+        <l>
+          <lb />Vn qu dam, n tel, ne relle;</l>
+        <l>
+          <lb />Mais graces à l’Abbé Chambon,</l>
+        <pb n="9" />
+        <l>
+          <lb />7</l>
+        <l>
+          <lb />A Sirmond, an Pere Bourbon</l>
+        <l>
+          <lb />Au ſieur Godeau le Paraplaraſte</l>
+        <l>
+          <lb />Au bon Baudouyn le Meraphraſte,</l>
+        <l>
+          <lb />Au Politique Prieuſac;</l>
+        <l>
+          <lb />Au grand Epiſtolier Balſac,</l>
+        <l>
+          <lb />A Chapelain l’Archipuriſte:</l>
+        <l>
+          <lb />A Vayer le Dialogiſte.</l>
+        <l>
+          <lb />Qui de parfait Pirrhonien,</l>
+        <l>
+          <lb />S’eſt fait Academicien,</l>
+        <l>
+          <lb />Au vieil Menard le Satyrique,</l>
+        <l>
+          <lb />A Sillon le Melancholique,</l>
+        <l>
+          <lb />Au petit Abbeé́ de Bourzay,</l>
+        <l>
+          <lb />Contre l’aduis de Cerizay,</l>
+        <l>
+          <lb />De l’Eſtoille, de Malleuillé,</l>
+        <l>
+          <lb />De Gombaut &amp; de Gomberuille,</l>
+        <l>
+          <lb />Et d’autres à nous inconnus</l>
+        <l>
+          <lb /> Ces mots ont eſté maintenus:</l>
+        <l>
+          <lb />Or Noſſeigneurs Academiques;</l>
+        <l>
+          <lb />Noſſeigneurs les Hypercritiques,</l>
+        <l>
+          <lb />Ce n’eſt pas tout, nos pauures mots</l>
+        <l>
+          <lb />Ont bien enduré d’autres maux,</l>
+        <l>
+          <lb />Mil ont eſteé́ bannis des Mettres</l>
+        <l>
+          <lb /> Les vns accourcis de trois lettres,</l>
+        <l>
+          <lb /> Les autres d’aurant allongez:</l>
+        <l>
+          <lb />Leurs genres ont eſté changez</l>
+        <l>
+          <lb />Panvne trop laſche molleſſe,</l>
+        <l>
+          <lb />Qu’ils appellent delicateſſe;</l>
+        <l>
+          <lb />Cerizay des mots maſculins</l>
+        <pb n="10" />
+        <l>
+          <lb />1</l>
+        <l>
+          <lb />lL</l>
+        <l>
+          <lb />8</l>
+        <l>
+          <lb /> Ayant fait des mots feminins ¬</l>
+        <l>
+          <lb />Car ce beau mignon fait la figue</l>
+        <l>
+          <lb />A quiconque dit vn intrigue,</l>
+        <l>
+          <lb />Et veut contre toute raiſon</l>
+        <l>
+          <lb />Que l’on die de la poiſon.</l>
+        <l>
+          <lb />Vme Epitaphe, vae Epigramme</l>
+        <l>
+          <lb />Vae Nauire, vne Anagramme,</l>
+        <l>
+          <lb />Vme reprocbe, vae Daché;</l>
+        <l>
+          <lb />Vne menſonge, ve Eueſcheé́,</l>
+        <l>
+          <lb /> La Doute, vne Hymne, vne Epithese</l>
+        <l>
+          <lb />Vne eſuantail, vne ſquelette.</l>
+        <l>
+          <lb />Bref, ce délicat Cerizay</l>
+        <l>
+          <lb />Euſt chaque mot feminiſé,</l>
+        <l>
+          <lb />Sans reſpect ny d’analogie,</l>
+        <l>
+          <lb />Ny d’auecune étymologie,</l>
+        <l>
+          <lb />Pour condeſcendre au doux Habert</l>
+        <l>
+          <lb />Sans que l’Abbé de Bois robert</l>
+        <l>
+          <lb />Nommé grand Chanſonnier deFrance,</l>
+        <l>
+          <lb />Fauory de ſo Eminence,</l>
+        <l>
+          <lb />Cét admirable patrelin</l>
+        <l>
+          <lb />Ay mant le genre maſculin.</l>
+        <l>
+          <lb />S’oppoſe de tout ſon courage</l>
+        <l>
+          <lb />A cet effeminé langage.</l>
+        <l>
+          <lb /> De plus, depuis quare ou cinq ans</l>
+        <l>
+          <lb />Vn de vou plu gnnd paruiſuans,</l>
+        <l>
+          <lb />Afin de nonus faire iniuſtice</l>
+        <l>
+          <lb />Par belle &amp; par pure malice,</l>
+        <l>
+          <lb />Aurot de ſon authorité.</l>
+        <l>
+          <lb />E-exaaeeee</l>
+        <l>
+          <lb />Dans</l>
+        <pb n="11" />
+        <l>
+          <lb />1</l>
+        <l>
+          <lb />l¬¬¬¬¬¬¬¬¬¬</l>
+        <l>
+          <lb />57</l>
+        <l>
+          <lb />Dans l’Auantpropos d’vn traité</l>
+        <l>
+          <lb />Qu’il a fait ſuiuant ſon caprice</l>
+        <l>
+          <lb />De la faculſé concoctrice,</l>
+        <l>
+          <lb />(Mais qui par ces obſcuritez</l>
+        <l>
+          <lb />auſe au Lecteur des cruditez)</l>
+        <l>
+          <lb />PRanny de ce nobl e Royaume,</l>
+        <l>
+          <lb />Du Latin le docte ldiome,</l>
+        <l>
+          <lb />( Comme langage de pedant)</l>
+        <l>
+          <lb />Et par cét eſtrauge accident,</l>
+        <l>
+          <lb />La pauure langue Layiale</l>
+        <l>
+          <lb />Alloit eſtre trouſſéeen male,</l>
+        <l>
+          <lb />Si le bel Aduocat Belot</l>
+        <l>
+          <lb />Du bareau l’illuſtre fallor,</l>
+        <l>
+          <lb />N’en euſt pris en main la deffence,</l>
+        <l>
+          <lb />Et protegé ſon innocence;</l>
+        <l>
+          <lb />En quoy certes, &amp; ſa bonté</l>
+        <l>
+          <lb />Et ſon ele, &amp; ſa charité,</l>
+        <l>
+          <lb />Se firent d’auant plus paroiſtre</l>
+        <l>
+          <lb />Quil n’a l’honneur de la connoiſtre,</l>
+        <l>
+          <lb /> Semblable a ces preux Cheualiers</l>
+        <l>
+          <lb />Les Palladins aduanturiers,</l>
+        <l>
+          <lb />Qqui deffendant des inconuës</l>
+        <l>
+          <lb />Ont porté leurs nos iuqu’aux nuës.</l>
+        <l>
+          <lb />En fin ie ne ſçay quels Autheurs</l>
+        <l>
+          <lb />Auroient preſerit aux Correcteurs</l>
+        <l>
+          <lb />Vne impertinente Orthographe</l>
+        <l>
+          <lb />Leurs faiſant mettre paragrafe,</l>
+        <l>
+          <lb /> Filoſfie, otre, le tans,</l>
+        <l>
+          <lb />C</l>
+        <pb n="12" />
+        <l>
+          <lb />l</l>
+        <l>
+          <lb />¬</l>
+        <l>
+          <lb />1</l>
+        <l>
+          <lb />L’iuer, L’oromne, le Printans,</l>
+        <l>
+          <lb />Plare Rale, le Reome,</l>
+        <l>
+          <lb />Saint Ogut, &amp; S. Gerome,.</l>
+        <l>
+          <lb />Et retranchant mal aà propos</l>
+        <l>
+          <lb />L’S de la pluſpart des mots;</l>
+        <l>
+          <lb />Comme, d Eſlat, d’oſier, de noſftre</l>
+        <l>
+          <lb />Dere, d’ſtonnment, d’Apeſtre,</l>
+        <l>
+          <lb />Dont ſon vſage eſt mal traite</l>
+        <l>
+          <lb />Autant &amp; plus qu’il fuſt du T.</l>
+        <l>
+          <lb />Lorſque de toutes leurs querelles</l>
+        <l>
+          <lb />Elle fit iuges les voyel les;</l>
+        <l>
+          <lb />Si bien que les petits Grimaux</l>
+        <l>
+          <lb />Ne rencontrans point tous ces mots,</l>
+        <l>
+          <lb />Suiuant noſtre ordre alphabetique</l>
+        <l>
+          <lb /> Quiretient l’Orthographe antique,</l>
+        <l>
+          <lb />I ntrent auſſi-toſt en courroux,</l>
+        <l>
+          <lb />Lt lors nous frapent à grands coups.</l>
+        <l>
+          <lb />Sou fflettant le Dictionnaire</l>
+        <l>
+          <lb />Auſli bien que le Deſpotaire.</l>
+        <l>
+          <lb />Mais tout cela n’eſt rien au pris</l>
+        <l>
+          <lb />De ce que nous auons appris,</l>
+        <l>
+          <lb />Qe au gelas dans ſa Harangue,</l>
+        <l>
+          <lb />ppno à noauelle langue,</l>
+        <l>
+          <lb /> Eque ſous voſtre authorité</l>
+        <l>
+          <lb />En dept de l’antiquité,</l>
+        <l>
+          <lb />Dans ſon nouueau Vocabulaire,</l>
+        <l>
+          <lb />t dans ſla nouuelle Grammaire,</l>
+        <l>
+          <lb />ll ſupprimoit nos dietions</l>
+        <l>
+          <lb /> l</l>
+        <pb n="13" />
+        <l>
+          <lb />ii</l>
+        <l>
+          <lb />Auecque noalocutions;</l>
+        <l>
+          <lb />Ce qui, ſaafvoſtre reuerenee</l>
+        <l>
+          <lb />Outre la haute ipoelnence,</l>
+        <l>
+          <lb />Qu’vn eſtrangor &amp; Sauoyard</l>
+        <l>
+          <lb />Eace le procez à Ronſad;</l>
+        <l>
+          <lb />Seroit vne extrém injuſtice</l>
+        <l>
+          <lb />Qu’à la fin apresle ſeruice,</l>
+        <l>
+          <lb />ue par nos doctes dictions</l>
+        <l>
+          <lb />A tant, &amp; tant de Nations</l>
+        <l>
+          <lb />En toure ſorte de ſcience</l>
+        <l>
+          <lb />Nous auons rendudaas la Fance,</l>
+        <l>
+          <lb />On nous caſſaſt honteuſement.</l>
+        <l>
+          <lb />Nous l’oſons dire hautement,</l>
+        <l>
+          <lb />qQue tous les vieils Dictionnaires.</l>
+        <l>
+          <lb />Sont abſolument neceſſaires.</l>
+        <l>
+          <lb />Par eux s’entendent les Autheurs,</l>
+        <l>
+          <lb />Pe: eux ſe font les Traducteurs;</l>
+        <l>
+          <lb />Ils er ucnt à̀ tous de lumieres</l>
+        <l>
+          <lb />DPans les plus obſeures matieres,</l>
+        <l>
+          <lb />Ils ſont les Docteurs des Docteurs,</l>
+        <l>
+          <lb />Les Precepteurs des Precepreurs,</l>
+        <l>
+          <lb />Les maiſtres des aaiſtres des Claſſes;</l>
+        <l>
+          <lb />Et tels qu’on a creuſçauantaſſes</l>
+        <l>
+          <lb />A la faueur de leurs bons mors,</l>
+        <l>
+          <lb />Sans eux n’eſtoient rien que desſots,</l>
+        <l>
+          <lb />Témoing, Noſſeigneurs, ce bon homme</l>
+        <l>
+          <lb />pil leil ienele oeſen aea.</l>
+        <pb n="14" />
+        <l>
+          <lb /> s</l>
+        <l>
+          <lb />Qui paſſeroit pourvn feſei,</l>
+        <l>
+          <lb />.</l>
+        <l>
+          <lb />S’il n’auoit point les trois iſtienn</l>
+        <l>
+          <lb />Auee les Gſoſes anciennes,</l>
+        <l>
+          <lb />Le Nomenclateur lunius,</l>
+        <l>
+          <lb />t Mathias Martinius.</l>
+        <l>
+          <lb />Mais ſans parler iey desautres,</l>
+        <l>
+          <lb />Vous ſçauez que parny les voſtres</l>
+        <l>
+          <lb />Les pPluu renomez Traducteurs,</l>
+        <l>
+          <lb />t les plus celebes Autheurs,</l>
+        <l>
+          <lb />Qui s’en font maintenant à croire,</l>
+        <l>
+          <lb />Nous ſont obligez de leur gloire,</l>
+        <l>
+          <lb />Et cependant, ôſiecle, ô mœurs,</l>
+        <l>
+          <lb />Ce ſont eux qui par leurs clameus</l>
+        <l>
+          <lb />Auiourd’huy dans l’Academie</l>
+        <l>
+          <lb />Nous traitent auec infamie.</l>
+        <l>
+          <lb />Quantesfſois dans les verſions</l>
+        <l>
+          <lb />Sans le ſecours des dictions,</l>
+        <l>
+          <lb />De moy Calepin &amp; d’sſtienne</l>
+        <l>
+          <lb />Baudoüin eſtoit-il en grand peine;</l>
+        <l>
+          <lb />Sans nous Collomby dans Iuſtin¬</l>
+        <l>
+          <lb /> Pſtoit au bout de ſon Latin;</l>
+        <l>
+          <lb />t dans ſon Terence Voiture</l>
+        <l>
+          <lb />Auoit l’eſprit à la torture;</l>
+        <l>
+          <lb /> Dans quinte-Curſe Vaugelas</l>
+        <l>
+          <lb />Deés le prermier mot eſtoit las,</l>
+        <l>
+          <lb />Vaugelas se grand Interprete,</l>
+        <l>
+          <lb />Le quel aujourd’huy nous maltralte;</l>
+        <l>
+          <lb />Mamard fans nous traduiſoir mal</l>
+        <l>
+          <lb /> So</l>
+        <pb n="15" />
+        <l>
+          <lb />Son Catul &amp; ſon Martial,</l>
+        <l>
+          <lb />Er le Seneque faiſoit nargues</l>
+        <l>
+          <lb />A voſtre Candidat de Fargues</l>
+        <l>
+          <lb />Sans nous Giry n’entendoit rien</l>
+        <l>
+          <lb />Aux eſcrits de Tertullien,</l>
+        <l>
+          <lb />Et l’obſcur Apologetique</l>
+        <l>
+          <lb />A tous coups luy faiſoit la nique;</l>
+        <l>
+          <lb />Dedans les Pſeaumes du Marais,</l>
+        <l>
+          <lb />N’euſt pas fait comme il fait flores;</l>
+        <l>
+          <lb />Le beau Patru dans ſaharangue</l>
+        <l>
+          <lb />Ne ſçauoit de qui prendre langue,</l>
+        <l>
+          <lb />Et cent fois, eſtoit aà quia,</l>
+        <l>
+          <lb />Dans l’Oraiſon pro Archia;</l>
+        <l>
+          <lb />Colletet dans ſa Sainte Marthe,</l>
+        <l>
+          <lb /> Prenoit ſouuent Renard pour Marthe;</l>
+        <l>
+          <lb />Meſme le hardy d’Ablancourt.</l>
+        <l>
+          <lb />Dans Tacite ſe trouuoit court;</l>
+        <l>
+          <lb />Sans nous Habert n’entendoit notte</l>
+        <l>
+          <lb />Dans la Morale d’Ariſtote,</l>
+        <l>
+          <lb />(C’eſt à̀ dire en la verſion)</l>
+        <l>
+          <lb />Qu’auec beaucoup d’attention</l>
+        <l>
+          <lb /> Et non faite en langue Latine,</l>
+        <l>
+          <lb /> De gens deminente doctrine:</l>
+        <l>
+          <lb />Car quand au texte. Vt dicitar.</l>
+        <l>
+          <lb />Gacus is eſt, non legitur.</l>
+        <l>
+          <lb />Que fi nous ſommes moins vtiles</l>
+        <l>
+          <lb />Aux l’Eſtoiles, aux Gomberuilles,</l>
+        <l>
+          <lb />Aux Ceriſays, aux S. Amants,</l>
+        <l>
+          <lb /> D</l>
+        <pb n="16" />
+        <l>
+          <lb />aR</l>
+        <l>
+          <lb />Aux Conrards, Baros, &amp; Racans,</l>
+        <l>
+          <lb />Et tels autres ſç̧auants Critiques</l>
+        <l>
+          <lb />Des ouurages Academiques,</l>
+        <l>
+          <lb />Les grands, &amp; fameux Palatins,</l>
+        <l>
+          <lb />Eſtrangers aux pays Latins.</l>
+        <l>
+          <lb />ll eſt pourtant tres veritable</l>
+        <l>
+          <lb />Que ce qu’ils ſçauent de la fable,</l>
+        <l>
+          <lb />lls l’ont appris des verſions</l>
+        <l>
+          <lb />A l’aide de nos dictions,</l>
+        <l>
+          <lb />Qu’il fut autrefois neceſſaire</l>
+        <l>
+          <lb />De leur faire en langue vulgaire:</l>
+        <l>
+          <lb />Ainſi quoy qu’indiſertement</l>
+        <l>
+          <lb />Nous leur ſeruions de truchement.</l>
+        <l>
+          <lb />Mais ſans regarder aux offices,</l>
+        <l>
+          <lb />Aux aſſiſtances, &amp; ſeruices</l>
+        <l>
+          <lb />Que vous rendent les ſuppliants:</l>
+        <l>
+          <lb />oyez les inconueniens</l>
+        <l>
+          <lb />Que cauſeronr voſtre Grammaire,</l>
+        <l>
+          <lb />Anec voſtre vocabulaire</l>
+        <l>
+          <lb />Vous n’en eſtes qu’à l’ABC.</l>
+        <l>
+          <lb />Depuis plus d’vn luſtre paſſeé,</l>
+        <l>
+          <lb />Que l’on trauaille à̀ cet ouurage.</l>
+        <l>
+          <lb />O nos chers Maiſtres du langage</l>
+        <l>
+          <lb />Vous ſçaucz qu’on ne fixe pent</l>
+        <l>
+          <lb />Les langues en vn meſme point:</l>
+        <l>
+          <lb />Tel mot qui fu hier à̀ la mode,</l>
+        <l>
+          <lb />qQui ce iourd’huy n’eſt pas cemmode,</l>
+        <l>
+          <lb />Et tel qui fut hier deſcné,</l>
+        <pb n="17" />
+        <l>
+          <lb />15</l>
+        <l>
+          <lb />Paſſe auiourd’huy pour motcnié</l>
+        <l>
+          <lb /> C’eſt apres tout Monſieur l’uſage,</l>
+        <l>
+          <lb />Qui fait &amp; deffait le langage,</l>
+        <l>
+          <lb />S bien qu’il pourroit arriuer,</l>
+        <l>
+          <lb />Quand vous ſeriez preſt d’acheuer</l>
+        <l>
+          <lb />Voſtre nouueau Vocabulaire</l>
+        <l>
+          <lb />Et voſtre nouuelle Grammaire;</l>
+        <l>
+          <lb />Que grand nombre des dictions,</l>
+        <l>
+          <lb />Et pluſieurs des locutions;</l>
+        <l>
+          <lb />Qu’on trouue maintenant nouuelles,</l>
+        <l>
+          <lb />Et qui vous paroiſſent tres-belles,</l>
+        <l>
+          <lb />Ne ſeroient plus lors de ſaiſon:</l>
+        <l>
+          <lb />Nous ioigrdons à cette raiſon</l>
+        <l>
+          <lb />Que tous les iours voſtre critique</l>
+        <l>
+          <lb />Deſcriant quelque mot antique,</l>
+        <l>
+          <lb />Et les -meilleurs, &amp; les plus beaux</l>
+        <l>
+          <lb /> Sans qu’elle en faſſe de nouueaux,</l>
+        <l>
+          <lb />L’on ſeroit ô mal-heur inſigne</l>
+        <l>
+          <lb />Reduit à ſe parler parſigne:</l>
+        <l>
+          <lb />mMais quand vous feriez d’autres mots,</l>
+        <l>
+          <lb /> Combien ſouffriroit-on de maux</l>
+        <l>
+          <lb /> Auant que de les bien apprendre,</l>
+        <l>
+          <lb /> Et de les faire ien entendre;</l>
+        <l>
+          <lb /> Combien vous fraudroit-il de temps</l>
+        <l>
+          <lb />Pour appaiſer les mal contans,</l>
+        <l>
+          <lb />Et faire que ce beau langage,</l>
+        <l>
+          <lb />Fut omologuéparl’vſage,</l>
+        <l>
+          <lb /> Ce conſideré Noſſegneurs,</l>
+        <l>
+          <lb />a a aaa. </l>
+        <pb n="18" />
+        <l>
+          <lb />-em¬¬</l>
+        <l>
+          <lb /> 16</l>
+        <l>
+          <lb />¬,</l>
+        <l>
+          <lb />Pour preuenirtous ces mal-heurs,</l>
+        <l>
+          <lb />Qu’il plaiſe à voſtre courrtoiſie</l>
+        <l>
+          <lb />Rendre le droit de Bourgeoiſie</l>
+        <l>
+          <lb />Aux mots iniuſtement proſcripts</l>
+        <l>
+          <lb />De ces beaux &amp; doctes eſcrits,</l>
+        <l>
+          <lb />Laiſſez voſtre Vocabulaire</l>
+        <l>
+          <lb />Abandonnez voſtre Grammaire,</l>
+        <l>
+          <lb />N’innouez ny ne faites rien,</l>
+        <l>
+          <lb />En la langue, &amp; vous ferez bien.</l>
+        <l>
+          <lb />FIN.</l>
+        <l>
+          <lb />cCCCacCacCCCCCcce CeCC</l>
+        <l>
+          <lb />PERISSIO N.</l>
+        <l>
+          <lb />I I eſt permis a Ia v aoe , lmprimeur &amp; Libraire à Paris,</l>
+        <l>
+          <lb /> d’mpumoe ou fare mpnmor, vendre &amp; debitet v Liue meitule,</l>
+        <l>
+          <lb /> ’araſſe adarmeé Et deffenſes a tous autres de l’impner aict ce</l>
+        <l>
+          <lb />nouieſme May 43.</l>
+        <l>
+          <lb />0</l>
+        <pb n="19" />
+        <l>
+          <lb />RESPoNSE</l>
+        <l>
+          <lb />PARNASSE</l>
+        <l>
+          <lb /> ALAME</l>
+        <l>
+          <lb />PAR L’ACADEMIE FRANCOISE.</l>
+        <pb n="20" />
+        <l>
+          <lb />3¬¬</l>
+        <l>
+          <lb />1</l>
+        <l>
+          <lb />. 9</l>
+        <l>
+          <lb />1</l>
+        <l>
+          <lb /> . .</l>
+        <l>
+          <lb /> p?¬</l>
+        <l>
+          <lb /> 4</l>
+        <pb n="21" />
+        <l>
+          <lb />AAA dbbe</l>
+        <l>
+          <lb />êeom&amp;&amp;s</l>
+        <l>
+          <lb />Gee</l>
+        <l>
+          <lb />VFpFpeuerup</l>
+        <l>
+          <lb />RESPONSE</l>
+        <l>
+          <lb />PARNASSE</l>
+        <l>
+          <lb />ALARME.</l>
+        <l>
+          <lb />Ee&amp;e iſin laleque le eſtphioue,</l>
+        <l>
+          <lb />ee nenue oele ſe iie</l>
+        <l>
+          <lb />Pour vn Aduocat ſans pratique,</l>
+        <l>
+          <lb />S nu nmerlrons le eounre rqu¬,</l>
+        <l>
+          <lb />De e ene dloe e pnoes llonune</l>
+        <l>
+          <lb />Dieu qu’il pleuuroit de reparti</l>
+        <l>
+          <lb />Qeroln lieninlnidae oſ oe a¬</l>
+        <l>
+          <lb />Les Callepins &amp; les Nicots,</l>
+        <l>
+          <lb />Qu ſons res premniers paune¬</l>
+        <pb n="22" />
+        <l>
+          <lb />s</l>
+        <l>
+          <lb />Tu erois qu’entre les Iodelets</l>
+        <l>
+          <lb />Tu pourras auoir quelqu’eſtime.</l>
+        <l>
+          <lb />En debitant dans le Palais</l>
+        <l>
+          <lb />Ta burleſque &amp; plaiſante rime;</l>
+        <l>
+          <lb />Tu crois au moins ſi ce debit</l>
+        <l>
+          <lb />Ne te donne quelque credit</l>
+        <l>
+          <lb />Parmy les bouffons agreables,</l>
+        <l>
+          <lb />Qu’il te vauda mieux qtvn hreſor</l>
+        <l>
+          <lb />Sil te peut faire vn vray Montmor,</l>
+        <l>
+          <lb />Courir toutes les bonnes tables.</l>
+        <l>
+          <lb />Qu’as-tu plus aà luy roprocher?</l>
+        <l>
+          <lb />Il t’attend laà ce Paraſite,</l>
+        <l>
+          <lb />Pour te coëffer de la marmite</l>
+        <l>
+          <lb />Où jadis tu le fis poeſcher:</l>
+        <l>
+          <lb />Quand il criera dedans l’office</l>
+        <l>
+          <lb />Que ſans cauſe &amp; ſans Benefice</l>
+        <l>
+          <lb />Aduocat &amp; Preſtre de nom,</l>
+        <l>
+          <lb />Tu n’as abandonné Bartole</l>
+        <l>
+          <lb />Que pour bouffonner ſous leſtole,</l>
+        <l>
+          <lb />Carde la peſle &amp; le fourgon.</l>
+        <l>
+          <lb />¬¬¬</l>
+        <pb n="23" />
+        <l>
+          <lb />Quoy! ſe pehide aAcadeuaie!.</l>
+        <l>
+          <lb />T’eriger contre elle en Marot!</l>
+        <l>
+          <lb />Il euſt mieux valu qu’Aſtarot</l>
+        <l>
+          <lb />Euſt berſé tà uſe endormie;</l>
+        <l>
+          <lb />En pauureAduocat neſpriſé́,</l>
+        <l>
+          <lb />En Preſtre ridiculiſé,¬</l>
+        <l>
+          <lb />Tu n’as pû faire ta fortune:.</l>
+        <l>
+          <lb />Mais comme Pote mêdiſane., ii</l>
+        <l>
+          <lb /> ine ie e en en e n iae</l>
+        <l>
+          <lb /> a¬</l>
+        <l>
+          <lb />le ſuis ſeur que telles douceurs</l>
+        <l>
+          <lb />N’eſtans pas fort à ton vſage,</l>
+        <l>
+          <lb />Entre ta Muſe &amp; les neuf Sœurs</l>
+        <l>
+          <lb />Nous verrons vn triſte ménage;</l>
+        <l>
+          <lb />Auſſi ne t’appartient-il pas</l>
+        <l>
+          <lb />Ny de te plaire à leurs appas,</l>
+        <l>
+          <lb />Ny de connoiſtre leurs Myſteres:</l>
+        <l>
+          <lb />Quand vn Pedant leur fait l’amour,</l>
+        <l>
+          <lb />Et s’erige en homme de Cour,</l>
+        <l>
+          <lb />Il merite les eſtriuieres.</l>
+        <l>
+          <lb />B</l>
+        <pb n="24" />
+        <l>
+          <lb />Voila quel ſera ton deſtin,</l>
+        <l>
+          <lb />Voila quelle ſera ta gloires</l>
+        <l>
+          <lb />Deſormais ſi tu me veux croire,</l>
+        <l>
+          <lb />Retranche-toy dans ton Larin,</l>
+        <l>
+          <lb />Et ne fay plus en noſtre langue</l>
+        <l>
+          <lb />Poëme, Requeſte, ny Harangue,</l>
+        <l>
+          <lb />Si tu ne veux eſtre frotté.</l>
+        <l>
+          <lb />Ainſi reſpond l’Academie</l>
+        <l>
+          <lb />Au Pedant qui par vanité</l>
+        <l>
+          <lb />Cherche a l’auoir pour ennemie.</l>
+        <l>
+          <lb />FIN.</l>
+      </p>
+    </body>
+  </text>
 </TEI>

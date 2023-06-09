@@ -1,542 +1,326 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau765_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Le conseiller fidèle au roi.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Le conseiller fidèle au roi.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=W72eNNaCzvIC"/>
-					<author/>
-					<title source="Moreau">Conseiller (le) fidèle au roi.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher ref="isni:0000000109126804" source="BM_Lyon" xml:id="IL_CotinetArnoul.xml">
-						<persName>
-							<forename>Arnould</forename>
-							<surname>Cotinet</surname>
-						</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure quantity="8" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale</institution>
-						<repository/>
-						<idno type="cote"/>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>False</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=W72eNNaCzvIC" />
+          <author />
+          <title source="Moreau">Conseiller (le) fidèle au roi.</title>
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher ref="isni:0000000109126804" source="BM_Lyon" xml:id="IL_CotinetArnoul.xml">
+            <persName>
+              <forename>Arnould</forename>
+              <surname>Cotinet</surname>
+            </persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure quantity="8" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
+            <repository />
+            <idno type="cote" />
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>False</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">765. Conseiller (le) fidèlf au roi. Paris, Avnould Cotti- net, 1649, 8
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">765. Conseiller (le) fidèlf au roi. Paris, Avnould Cotti- net, 1649, 8
           pages.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="yes" ref="librairie/illustrations.xml"/>
-				</keywords>
-			</textClass>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-03-23" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<figure type="illustration"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-Claude dellefne Comte Ce Cn R ſs Coſal
-        dſtat. Grejre d lOnre u Cprit, Surtendnt e
-        iniances - lepotenhaire noura Paix Generale.
-        , rvee t¬ 
-        3
-        LE
-        CONSEILLER
-        FIDEL
-        AV ROY.
-        SIRE.
-        LES anciens Politiques ont, ſelon mon iugement, tres-pro
-        prement comparé les tepubliques afligées au nauire flottant
-        ar la mer,agité de bouraſques, &amp; de tempeſtes. Et toutainſi que
-        ceux qui ſont dans ce nauire conſpenc d’vn neſme accord à l.
-        fauuer du perilt, les plus forts &amp; les plus robuſtes-coucans qui aux
-        atennes, qui aux cordages, qui à la hane, quiſur le tillac; les
-        autres (noins propros ans efforts, mais plus xparimentez) re
-        tans pour gouuerner &amp; commader. De meſme la-Ropubliqui
-        aſailſie de quelques deſordres, par gacre eſtrangere, ciuileo
-        aatrement, requlert ſemblabl ſecours de ſes Citoyens, po
-        poaſſer la eempéſte arriete, &amp; ſe garantir de l’oage qui la me
-        ace, partie par forces, &amp; violencs, partiepar bons
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="yes" ref="librairie/illustrations.xml" />
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-03-23" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="2" />
+        <figure type="illustration" />
+        <lb />Claude dellefne Comte Ce Cn R ſs Coſal
+        <lb />dſtat. Grejre d lOnre u Cprit, Surtendnt e
+        <lb />iniances - lepotenhaire noura Paix Generale.
+        <lb />, rvee t¬ <pb n="3" />
+        <lb />3
+        <lb />LE
+        <lb />CONSEILLER
+        <lb />FIDEL
+        <lb />AV ROY.
+        <lb />SIRE.
+        <lb />LES anciens Politiques ont, ſelon mon iugement, tres-pro
+        <lb rend="¬" break="no" />prement comparé les tepubliques afligées au nauire flottant
+        <lb />ar la mer,agité de bouraſques, &amp; de tempeſtes. Et toutainſi que
+        <lb />ceux qui ſont dans ce nauire conſpenc d’vn neſme accord à l.
+        <lb />fauuer du perilt, les plus forts &amp; les plus robuſtes-coucans qui aux
+        <lb />atennes, qui aux cordages, qui à la hane, quiſur le tillac; les
+        <lb />autres (noins propros ans efforts, mais plus xparimentez) re
+        <lb rend="¬" break="no" />tans pour gouuerner &amp; commader. De meſme la-Ropubliqui
+        <lb />aſailſie de quelques deſordres, par gacre eſtrangere, ciuileo
+        <lb />aatrement, requlert ſemblabl ſecours de ſes Citoyens, po
+        <lb />poaſſer la eempéſte arriete, &amp; ſe garantir de l’oage qui la me
+        <lb rend="¬" break="no" />ace, partie par forces, &amp; violencs, partiepar bons
         conſeils&amp;t
-        alaraires aduertfſemes.
-        ’ljii’ei ya bosvoiſn, quirne ſeeore ſelon ſn paiee
-        ſonaure voirn, quandlefeu eoſt en ſa maiſon. Auſſieſt-il ecerain
-         qee ceux l e ſont pas boas ſebiees,qui e tolleo conûagratloa
-        e embrazemet publie, e s’eſoreent d’y cootribuër, oupoue
-         in n’appoeent quolquoſeau d’oau, pour aue les aumes
-        ſehe d’eſteindelofou.
-        Ta mo uefiaulige aumene deuoin ederepreſene
-        A 
-        4
-         aàVoſtre Maiſté́ par ce petit diſcours les miſeres de ce pauure &amp;
-         -deſaſtré Royaume, ſi iniuſtcmét traitté par les pcrnicieux con
-        ſeils dc ceux qui ſont cnnemis de la grandeur de voſtre Eſtat, aſin
-        qu’ilvous plaiſe d’y apporter quelque remcde; lequel, ſclon mon
-        aduis, vous deucz chercher &amp; embraſſer, pour premierement ap
-         paiſer l’irc du bon Dieu, par le quel vu chacun de nous cft main
-         tenat i eſttauge ment trauaille.
-        ll ne faut pas s’approcher des l’riuces pour leur complaire:car
-        c’eſt les perdre; mais bicn lcur dire la verité́ pure &amp; nette; où au
-        contraire lcs latteuts, amis de tablc &amp; de bouche, n’ont au
-        trc but quc leur profit ,tous lours conſeils ne font que trahiſon,
-        &amp;tromperie, Iouhaittant tutes ſotes de bicns aux Princes,
-        fors qu’vn bon entcndemecnt, &amp; la prudence. En fin, Sl RE, les
-        lattecurs font vn meſticr ſordide, &amp; ont la langue &amp; l’ame vena
-        le,comme eſt celle du plus pernicieux de tous les hommecs de
-        ce temps; duquel, au tres-grandregret de tous vos bons &amp; fidele
-        ſubicéts, &amp; ſeruitcutS, vous eſtes tous les iours cni:ouné. l’cn
-        tens parler de ce prerendu Miniſtre cſtranger, &amp; tout clſcmbl
-        Machiaucliſte, que nous pouuons comparer à l’llirondelle, la
-        quclle nous rompt la teſte de ſon caquct, quand le tcmps cſt
-        doux &amp; benin, &amp; laquelle auſſi nous quitte, &amp; nous abandonnc
-        duranc les rigueurs &amp; les plus gtandes froiducs de l’Hyucr.
-         le dis cecy, SlRE, pour vous ramenteuoir le danger où uvous
-        eſtes, viuãt auiourd’huy au milieu d’vn ſi grãd flatteur, qui ayme
-        le voſtre plus que vous meſme, &amp; qui ne taſche qu’à vous pcrdre,
-        &amp; uoſtre oaume; eſtanc tres-aſſeuré, que ſi toutes ces violéces
-        ociniuſtces, doumto vſe à l’endroit de vos pauures ſubiets,
-        ae eſſent bien toſt, nc Vous en garentiront iamais, ains en ha
-        teront d’auantage la ruine ſi maniſeſte &amp; ſi cuidente.
-        Neanemoins, SlRE, il vous eſt auſſi ayſé d’v pouruoir, comme
-        ie penſe m’eſtre facile de l’eſcrire. Il e reſte que d’inuoquer
-        laydede Dieu, &amp; d’y apporter voſtre conſeotement, pour nous
-        gauuerner, cõme vos predeceſſeurs Roys ont fait, &amp; de vous ſer
-        ur de bons &amp; naturels ſubiects &amp; ſeruiteurs, au lieu de
+        <lb />alaraires aduertfſemes.
+        <lb />’ljii’ei ya bosvoiſn, quirne ſeeore ſelon ſn paiee
+        <lb />ſonaure voirn, quandlefeu eoſt en ſa maiſon. Auſſieſt-il ecerain
+        <lb /> qee ceux l e ſont pas boas ſebiees,qui e tolleo conûagratloa
+        <lb />e embrazemet publie, e s’eſoreent d’y cootribuër, oupoue
+        <lb /> in n’appoeent quolquoſeau d’oau, pour aue les aumes
+        <lb />ſehe d’eſteindelofou.
+        <lb />Ta mo uefiaulige aumene deuoin ederepreſene
+        <lb />A <pb n="4" />
+        <lb />4
+        <lb /> aàVoſtre Maiſté́ par ce petit diſcours les miſeres de ce pauure &amp;
+        <lb /> -deſaſtré Royaume, ſi iniuſtcmét traitté par les pcrnicieux con
+        <lb rend="¬" break="no" />ſeils dc ceux qui ſont cnnemis de la grandeur de voſtre Eſtat, aſin
+        <lb />qu’ilvous plaiſe d’y apporter quelque remcde; lequel, ſclon mon
+        <lb />aduis, vous deucz chercher &amp; embraſſer, pour premierement ap
+        <lb rend="¬" break="no" /> paiſer l’irc du bon Dieu, par le quel vu chacun de nous cft main
+        <lb rend="¬" break="no" /> tenat i eſttauge ment trauaille.
+        <lb />ll ne faut pas s’approcher des l’riuces pour leur complaire:car
+        <lb />c’eſt les perdre; mais bicn lcur dire la verité́ pure &amp; nette; où au
+        <lb />contraire lcs latteuts, amis de tablc &amp; de bouche, n’ont au
+        <lb rend="¬" break="no" />trc but quc leur profit ,tous lours conſeils ne font que trahiſon,
+        <lb />&amp;tromperie, Iouhaittant tutes ſotes de bicns aux Princes,
+        <lb />fors qu’vn bon entcndemecnt, &amp; la prudence. En fin, Sl RE, les
+        <lb />lattecurs font vn meſticr ſordide, &amp; ont la langue &amp; l’ame vena
+        <lb rend="¬" break="no" />le,comme eſt celle du plus pernicieux de tous les hommecs de
+        <lb />ce temps; duquel, au tres-grandregret de tous vos bons &amp; fidele
+        <lb />ſubicéts, &amp; ſeruitcutS, vous eſtes tous les iours cni:ouné. l’cn
+        <lb rend="¬" break="no" />tens parler de ce prerendu Miniſtre cſtranger, &amp; tout clſcmbl
+        <lb />Machiaucliſte, que nous pouuons comparer à l’llirondelle, la
+        <lb rend="¬" break="no" />quclle nous rompt la teſte de ſon caquct, quand le tcmps cſt
+        <lb />doux &amp; benin, &amp; laquelle auſſi nous quitte, &amp; nous abandonnc
+        <lb />duranc les rigueurs &amp; les plus gtandes froiducs de l’Hyucr.
+        <lb /> le dis cecy, SlRE, pour vous ramenteuoir le danger où uvous
+        <lb />eſtes, viuãt auiourd’huy au milieu d’vn ſi grãd flatteur, qui ayme
+        <lb />le voſtre plus que vous meſme, &amp; qui ne taſche qu’à vous pcrdre,
+        <lb />&amp; uoſtre oaume; eſtanc tres-aſſeuré, que ſi toutes ces violéces
+        <lb />ociniuſtces, doumto vſe à l’endroit de vos pauures ſubiets,
+        <lb />ae eſſent bien toſt, nc Vous en garentiront iamais, ains en ha
+        <lb rend="¬" break="no" />teront d’auantage la ruine ſi maniſeſte &amp; ſi cuidente.
+        <lb />Neanemoins, SlRE, il vous eſt auſſi ayſé d’v pouruoir, comme
+        <lb />ie penſe m’eſtre facile de l’eſcrire. Il e reſte que d’inuoquer
+        <lb />laydede Dieu, &amp; d’y apporter voſtre conſeotement, pour nous
+        <lb />gauuerner, cõme vos predeceſſeurs Roys ont fait, &amp; de vous ſer
+        <lb rend="¬" break="no" />ur de bons &amp; naturels ſubiects &amp; ſeruiteurs, au lieu de
         pauuros
-        ſoufftetex &amp; indigens, qui neantmoins ſe ſont agrandis, &amp; ſon
-        deuenus riches au detriment du pauuire, &amp; des deſpoüilles de la
-        .
-         euue
-        12. 
-        veufue &amp; de l’orphelin. Que s’il aduientle eontraire, ſans doute
-        que ccluy qui eſt mal à ſon ayſe, ne demãdera, ny ne recherchera
-        nien autre qu’vnc eſpece de changement, &amp; de remumentr;
-        d’autant que par ce moyen, il croira recouurer vne meilleure &amp;
-        plasayſéec façon de Viure.
-        Cux la voue enompenc grandement, SIRE, qui vous perſua
-        det, que les conſeils de cet ignorant Miniſtre ſont à vVoſtre ad
-        uantage.ll n’y en peut auoir de plus ſeurs, que d’acquerir l’amour
-        devos ſubjets, que vous auez touſiours trouué ſi zelez &amp; ſi afſc
-        ûionnez enuers Voſtre Maieſté. Hé́; bon Dieu! ſe peut -il faire
-        qu’ayant connoiſſance d’vn ſi mauuais traittement, vous ne
-        chaſtiez puiſſamment ceux qui ſont les autheurs dec tan de deſa
-        lres, &amp; de familles ruineées? Ces trompeurs &amp; ces traiſtres
+        <lb />ſoufftetex &amp; indigens, qui neantmoins ſe ſont agrandis, &amp; ſon
+        <lb />deuenus riches au detriment du pauuire, &amp; des deſpoüilles de la
+        <lb />.
+        <lb /> euue
+        <lb />12. <pb n="5" />
+        <lb />veufue &amp; de l’orphelin. Que s’il aduientle eontraire, ſans doute
+        <lb />que ccluy qui eſt mal à ſon ayſe, ne demãdera, ny ne recherchera
+        <lb />nien autre qu’vnc eſpece de changement, &amp; de remumentr;
+        <lb />d’autant que par ce moyen, il croira recouurer vne meilleure &amp;
+        <lb />plasayſéec façon de Viure.
+        <lb />Cux la voue enompenc grandement, SIRE, qui vous perſua
+        <lb rend="¬" break="no" />det, que les conſeils de cet ignorant Miniſtre ſont à vVoſtre ad
+        <lb rend="¬" break="no" />uantage.ll n’y en peut auoir de plus ſeurs, que d’acquerir l’amour
+        <lb />devos ſubjets, que vous auez touſiours trouué ſi zelez &amp; ſi afſc
+        <lb rend="¬" break="no" />ûionnez enuers Voſtre Maieſté. Hé́; bon Dieu! ſe peut -il faire
+        <lb />qu’ayant connoiſſance d’vn ſi mauuais traittement, vous ne
+        <lb />chaſtiez puiſſamment ceux qui ſont les autheurs dec tan de deſa
+        <lb rend="¬" break="no" />lres, &amp; de familles ruineées? Ces trompeurs &amp; ces traiſtres
         Con
-        ſeillers ſont neantmoins viuans ſur terre, &amp; pres de voſtre Mae
-        té à leur ayſe, puis qu’il plaiſt à Dieu; ſoit pour noſtre punit
+        <lb rend="¬" break="no" />ſeillers ſont neantmoins viuans ſur terre, &amp; pres de voſtre Mae
+        <lb rend="¬" break="no" />té à leur ayſe, puis qu’il plaiſt à Dieu; ſoit pour noſtre punit
         ion,
-        ſoit auſſi pour la vengeance des iniuſtices qui ſe commetent.
-        ls vous ont embourbé i auant dans ces deſordres, que nous
-        royons, que ſi Dieu n’a pitié de nous, &amp; que la Reyne ne ſe reé
-        eille de l’endormiſſement duquel ils la tiennent enſorcelée, il
-        J grande apparenoce, que noſtre perte &amp; la voſtre eſt inéuirable,
-        ſi Dieu n’y met la main.
-        le demanderois volontiers qui a fait le temps ſi mauuais? ſinon
-        les iniuſtces commiſes pas l’aduis du plus meſchant &amp; enfariné
-        Politique qui fut onc ſur la terre. D’où viẽt npoſtre grande diſet
-        e, &amp; la pauureté où nous ſommes reduits? ſi ce n’eſt par l’enri
-        chiſſement de quelques oleurs domeſtiques, qui ſeroient aſſez
-        iches de la quatrieſme partie de ce qu’ils ont a preſene au dona.
-        mage du pauure Peuple, &amp; dont vn nombre infiny de gens de
-        bien &amp; dec ſeruices ſeroient aſſez recogaus.
-        Mais quoy noſtre mal en eſt là, que la porte eſt fernée à toutses
-        emonſtrances. Vos Officiers n’ont plus d’audiãce, où il eſt que
-        ion d’argent, pratiquant ce ſordide Prouerbe. Palet oarlo ao
-        qaee. Si bien que l’argent que l’on tire eſt le plus ſouuent ai¬.
-        néſur leſang du pauure Peuple, auquel (ſi aucun y a on a
-        deadé à plufieurs fois plus d’argene, qu’ils n’en auoient de
-        oãt en let maiſon pour acheter dpain à leur famille en ces
-        B 
-        chers&amp; miſerables temps.
-        Qui auroit vny à ce compte tous les deniers &amp; profits des Edicts
-        faits depuis 2;. ans, ils ſe trouueroient ſuffiſans pour entretenir
-        long-temps vne tres-grande armée,ſans moleſter vos pauures &amp;
-        deſolez ſubiets. Où au contraire tous ces deniers ſe ſont diſſipez,
-        vne partie employéc en baſtiments inutils, autre partie en luxe,
-        &amp; la plus grande partic s’en eſtallée dans le gouffre inſatiable de
-        ces maudits Monopoleurs &amp;Partiſans executeurs de vos Ediéts.
-        A propos de Paruſans, l’on ſç̧ait leurs Contracts aduantageux,
-        qui ſont fait à leur profit, moyennant les bonspreſens quiſe font.
-         à ceux qui les fauoriſent, profitans encor plus partels moyens,
-        que par le credit qu’ils onten vos eſpargnes, &amp; ſans ſe mettre en
-        peine de faire verifier le tout par cét auguſte Parlement, duque
-        n ne ſçauroit aſſez dignement loüer la fidelité &amp; ſincerité de
-        vie. Cecy, S lRE, n’eſt point vn conte fait à plaiſir, &amp; tout
-        ainſi qu’on a eſcrit les actions des ſiecles paſſez, les voſtres, &amp;
-        celles de voſtre temps &amp; recgne, ſeront eſcrittes à la Poſterité, &amp;
-        qualifiées du tiltre qu’elles meriteront ſans aucun dégui
-        ſement; ce qui n’eſt pas de petite importance à voſtre hon
-        eur.
-        Chaſſe, S I RE, ces traiſtres de Financiers qui ſont autour de
-        vous, &amp; qui ſuccent voſtre ſang, comme ſangſuës &amp; harpies,
-        ennemis des gens de bien, &amp;de voſtre eſtat, amis de leur bourſe
-        &amp;t de leur profit particulier. Vous auez deſia commécé́ par quel
-        ques-vns, chaſſez apres eux tous les autres qui les reſſemblent:
-        car telles gens auancent la ruine de voſtre Eſtat, &amp; de voſtre
-        pauure peuple. Dittes à ceux à qui vous auez tant donné, qu’ils ſe
-        oneentent pour ce coup, &amp; qu’ils ſont trop goulus.
-        C’eſt vae choſe tres- aſſeurée, que ſi vous croyez, S IR E, vo
-        ſtée flatteur politique eſtranger, &amp; pernicieuſe mouſche, gueſ
-        pe de l’Eſtat, il vous fſera trtbucher en vne peine incroyable,
+        <lb />ſoit auſſi pour la vengeance des iniuſtices qui ſe commetent.
+        <lb />ls vous ont embourbé i auant dans ces deſordres, que nous
+        <lb />royons, que ſi Dieu n’a pitié de nous, &amp; que la Reyne ne ſe reé
+        <lb rend="¬" break="no" />eille de l’endormiſſement duquel ils la tiennent enſorcelée, il
+        <lb />J grande apparenoce, que noſtre perte &amp; la voſtre eſt inéuirable,
+        <lb />ſi Dieu n’y met la main.
+        <lb />le demanderois volontiers qui a fait le temps ſi mauuais? ſinon
+        <lb />les iniuſtces commiſes pas l’aduis du plus meſchant &amp; enfariné
+        <lb />Politique qui fut onc ſur la terre. D’où viẽt npoſtre grande diſet
+        <lb rend="¬" break="no" />e, &amp; la pauureté où nous ſommes reduits? ſi ce n’eſt par l’enri
+        <lb rend="¬" break="no" />chiſſement de quelques oleurs domeſtiques, qui ſeroient aſſez
+        <lb />iches de la quatrieſme partie de ce qu’ils ont a preſene au dona.
+        <lb />mage du pauure Peuple, &amp; dont vn nombre infiny de gens de
+        <lb />bien &amp; dec ſeruices ſeroient aſſez recogaus.
+        <lb />Mais quoy noſtre mal en eſt là, que la porte eſt fernée à toutses
+        <lb />emonſtrances. Vos Officiers n’ont plus d’audiãce, où il eſt que
+        <lb rend="¬" break="no" />ion d’argent, pratiquant ce ſordide Prouerbe. Palet oarlo ao
+        <lb />qaee. Si bien que l’argent que l’on tire eſt le plus ſouuent ai¬.
+        <lb />néſur leſang du pauure Peuple, auquel (ſi aucun y a on a
+        <lb />deadé à plufieurs fois plus d’argene, qu’ils n’en auoient de
+        <lb />oãt en let maiſon pour acheter dpain à leur famille en ces
+        <lb />B <pb n="6" />
+        <lb />chers&amp; miſerables temps.
+        <lb />Qui auroit vny à ce compte tous les deniers &amp; profits des Edicts
+        <lb />faits depuis 2;. ans, ils ſe trouueroient ſuffiſans pour entretenir
+        <lb />long-temps vne tres-grande armée,ſans moleſter vos pauures &amp;
+        <lb />deſolez ſubiets. Où au contraire tous ces deniers ſe ſont diſſipez,
+        <lb />vne partie employéc en baſtiments inutils, autre partie en luxe,
+        <lb />&amp; la plus grande partic s’en eſtallée dans le gouffre inſatiable de
+        <lb />ces maudits Monopoleurs &amp;Partiſans executeurs de vos Ediéts.
+        <lb />A propos de Paruſans, l’on ſç̧ait leurs Contracts aduantageux,
+        <lb />qui ſont fait à leur profit, moyennant les bonspreſens quiſe font.
+        <lb /> à ceux qui les fauoriſent, profitans encor plus partels moyens,
+        <lb />que par le credit qu’ils onten vos eſpargnes, &amp; ſans ſe mettre en
+        <lb />peine de faire verifier le tout par cét auguſte Parlement, duque
+        <lb />n ne ſçauroit aſſez dignement loüer la fidelité &amp; ſincerité de
+        <lb />vie. Cecy, S lRE, n’eſt point vn conte fait à plaiſir, &amp; tout
+        <lb />ainſi qu’on a eſcrit les actions des ſiecles paſſez, les voſtres, &amp;
+        <lb />celles de voſtre temps &amp; recgne, ſeront eſcrittes à la Poſterité, &amp;
+        <lb />qualifiées du tiltre qu’elles meriteront ſans aucun dégui
+        <lb rend="¬" break="no" />ſement; ce qui n’eſt pas de petite importance à voſtre hon
+        <lb rend="¬" break="no" />eur.
+        <lb />Chaſſe, S I RE, ces traiſtres de Financiers qui ſont autour de
+        <lb />vous, &amp; qui ſuccent voſtre ſang, comme ſangſuës &amp; harpies,
+        <lb />ennemis des gens de bien, &amp;de voſtre eſtat, amis de leur bourſe
+        <lb />&amp;t de leur profit particulier. Vous auez deſia commécé́ par quel
+        <lb rend="¬" break="no" />ques-vns, chaſſez apres eux tous les autres qui les reſſemblent:
+        <lb />car telles gens auancent la ruine de voſtre Eſtat, &amp; de voſtre
+        <lb />pauure peuple. Dittes à ceux à qui vous auez tant donné, qu’ils ſe
+        <lb />oneentent pour ce coup, &amp; qu’ils ſont trop goulus.
+        <lb />C’eſt vae choſe tres- aſſeurée, que ſi vous croyez, S IR E, vo
+        <lb rend="¬" break="no" />ſtée flatteur politique eſtranger, &amp; pernicieuſe mouſche, gueſ
+        <lb rend="¬" break="no" />pe de l’Eſtat, il vous fſera trtbucher en vne peine incroyable,
         &amp;
-        vous rendra ſi deſnué de tout, que Vous n’aurez iamais vn bon
-        iour qui vous ſoit paiſible, &amp; n’y aura ſi petit en voſtre Royaume,
-        qui en ſa condition neſe trouue plus heureux que vous.
-        L’on dit du Cardinal d’orcle, qui gourmanda iadis toutel’Am
-        gleterre, que quand ilparloit, ou eſcriuoit, il diſoit, Moy, &amp;
-        les 
-        Roy;&amp; fut ſi inſolent que de faire reuerer ſon Chappeau dans
-        ſon ani chambre aux ſuruenans, auſſi finit-il ſes iours de ſon
-        propre mouuement, pour ue pas tomber dans Vue mot plus i
-        ame, &amp; plus honteuſe.
-        Le Cardinal Balué n’eſtoit pas meilleur que luy; Philippe de
-        Cõmines le qualifiant du tiltre d perurbateur du repos public,
-        &amp;la Chronique ſcandaleuſe dit, qu’il auoit fait de moult gran
-        dcs &amp; merueilleuſes diableries.
-        Vn Eueſque de Verdun, qui- eſtoit adherant à ce Cardina,
-        eſtlanttombé en faute reconnuë par le Roy Louys vnzieſme, eſ
-        ptouua iuſtement les Cages de fer, qu’il auoit inuentées, pour
-        ſupplicier d’autant plus les Criminels. Et dit-on quc ce meſme
-        Eueſque n’y coucha que quatorze mois, ou quatorze ans. Auſſi
-        le Cardinal Balu fut empoiſonneé, &amp; fit-on véẽdre ſes plus riches
-        &amp; precieux meubles, pour en faire quelques reſtitutioas, ſoit par
-        aumoſnes, ou fondation de quelques hoſpitaux.
-        Que ce Cardinal Mazarin faſſe ce qu’il pourra pour vous met
-        re en deffianee &amp;ſoupçon de Vos pauures ſubiets, de voſtre bon
-        ne ville de Paris, vos bons &amp; fidoles ſeruiteurs, qui ne
+        <lb />vous rendra ſi deſnué de tout, que Vous n’aurez iamais vn bon
+        <lb />iour qui vous ſoit paiſible, &amp; n’y aura ſi petit en voſtre Royaume,
+        <lb />qui en ſa condition neſe trouue plus heureux que vous.
+        <lb />L’on dit du Cardinal d’orcle, qui gourmanda iadis toutel’Am
+        <lb rend="¬" break="no" />gleterre, que quand ilparloit, ou eſcriuoit, il diſoit, Moy, &amp;
+        les <pb n="7" />
+        <lb />Roy;&amp; fut ſi inſolent que de faire reuerer ſon Chappeau dans
+        <lb />ſon ani chambre aux ſuruenans, auſſi finit-il ſes iours de ſon
+        <lb />propre mouuement, pour ue pas tomber dans Vue mot plus i
+        <lb rend="¬" break="no" />ame, &amp; plus honteuſe.
+        <lb />Le Cardinal Balué n’eſtoit pas meilleur que luy; Philippe de
+        <lb />Cõmines le qualifiant du tiltre d perurbateur du repos public,
+        <lb />&amp;la Chronique ſcandaleuſe dit, qu’il auoit fait de moult gran
+        <lb rend="¬" break="no" />dcs &amp; merueilleuſes diableries.
+        <lb />Vn Eueſque de Verdun, qui- eſtoit adherant à ce Cardina,
+        <lb />eſtlanttombé en faute reconnuë par le Roy Louys vnzieſme, eſ
+        <lb rend="¬" break="no" />ptouua iuſtement les Cages de fer, qu’il auoit inuentées, pour
+        <lb />ſupplicier d’autant plus les Criminels. Et dit-on quc ce meſme
+        <lb />Eueſque n’y coucha que quatorze mois, ou quatorze ans. Auſſi
+        <lb />le Cardinal Balu fut empoiſonneé, &amp; fit-on véẽdre ſes plus riches
+        <lb />&amp; precieux meubles, pour en faire quelques reſtitutioas, ſoit par
+        <lb />aumoſnes, ou fondation de quelques hoſpitaux.
+        <lb />Que ce Cardinal Mazarin faſſe ce qu’il pourra pour vous met
+        <lb rend="¬" break="no" />re en deffianee &amp;ſoupçon de Vos pauures ſubiets, de voſtre bon
+        <lb rend="¬" break="no" />ne ville de Paris, vos bons &amp; fidoles ſeruiteurs, qui ne
         penſerent
-        iamais qu’à vous aymer &amp; ſeruir, &amp; à prier Dieu continuellemét
-        pourvous, &amp; la proſperité de vos armes: tous ſes deſſeins chi
-         aeiques tourneront en fſumée, &amp; toutes ſes fauſſes impreſſions
-        s’euanouyront à ſa honte &amp; à ſa confuſio, peut- eſtre auſf par
-        vne fin tragique de ſes iours.
-        Il n’eſt pas iuſques aux Princes eſtrangers &amp; bons Catholi
-        es, qui ne demeurent eſtõnez de tellas menées, &amp; s’émerueil
-        lent de ne voir ſur quel lgitime ſujet onfonde la haine que l’on
-        pore tant à voſtre augſte Parlement, qui vous a touſiours ſi fi
-        delement ſeruy en toutes occurtences, ſoit auſfi à vos pauures
+        <lb />iamais qu’à vous aymer &amp; ſeruir, &amp; à prier Dieu continuellemét
+        <lb />pourvous, &amp; la proſperité de vos armes: tous ſes deſſeins chi
+        <lb rend="¬" break="no" /> aeiques tourneront en fſumée, &amp; toutes ſes fauſſes impreſſions
+        <lb />s’euanouyront à ſa honte &amp; à ſa confuſio, peut- eſtre auſf par
+        <lb />vne fin tragique de ſes iours.
+        <lb />Il n’eſt pas iuſques aux Princes eſtrangers &amp; bons Catholi
+        <lb rend="¬" break="no" />es, qui ne demeurent eſtõnez de tellas menées, &amp; s’émerueil
+        <lb rend="¬" break="no" />lent de ne voir ſur quel lgitime ſujet onfonde la haine que l’on
+        <lb />pore tant à voſtre augſte Parlement, qui vous a touſiours ſi fi
+        <lb rend="¬" break="no" />delement ſeruy en toutes occurtences, ſoit auſfi à vos pauures
         &amp;
-        deſolez ſubiets fi ce n’eſt par les faux bruitsſemez pat leurs en
-         nemis, deſquels vous eſtes enaironné, veu que les vns &amp; les au
-        res ne parlerent iamai qu’à l’auancement de voûîre grandeur,
-        &amp; de celuy de uoſtre Eſtat.
-        Le Roy Louys douzieſme eſtoit vn bon Prince, &amp; tres-heu¬
-        ceux, il ayrmoit ſesſubjets, &amp; eſtoit aymé d’eux grandement, il
-         les gounernois doucement, &amp; en Pere, comme vous deuez fſaire, 
-        SIRE. Le nom de Roy eſt vn nom d’amour. Car qui a le eœur
-        d’vn homme à ſa deuotion, il pent fairc eſtat de ſes richeſſes &amp;
-        moyens. Et lcſubjet qui aymeſon Prince, n’eſpargne iamais ſa
-        vie, nyſes biens pour ſa defcnſe.
-        Dion Chryſoſtomc cormpare les bons Roys aux Bœufs, &amp; les
-        mauuais aux Lyons, diſant que le Bœufeſt vn animal dec profit,
-        qui n’a rien ſur luy qui ne ſoit vtilc. Vn bontoy cſt de meſme en
-        uers ſes ſubjcts. Mais le mauuais oy n’a rien de bon en luy, no
-        plus que le Lyon, lequel n’a que des dents pour deuorer, &amp; des
-        griffes pour deſchirer.
-         lc ceſſeray d’en parler dauantage, pour vous dire que vous
-        chaſſiez bien loin arriere de vous, tous les Maletoltiers, &amp; don
-        neurs de memoires au dommage du Peuple, &amp; de la choſc publi
-        que: &amp; faites, pour l’honncur de Dicu, faire le procez par
+        <lb />deſolez ſubiets fi ce n’eſt par les faux bruitsſemez pat leurs en
+        <lb rend="¬" break="no" /> nemis, deſquels vous eſtes enaironné, veu que les vns &amp; les au
+        <lb rend="¬" break="no" />res ne parlerent iamai qu’à l’auancement de voûîre grandeur,
+        <lb />&amp; de celuy de uoſtre Eſtat.
+        <lb />Le Roy Louys douzieſme eſtoit vn bon Prince, &amp; tres-heu¬
+        <lb rend="¬" break="no" />ceux, il ayrmoit ſesſubjets, &amp; eſtoit aymé d’eux grandement, il
+        <lb /> les gounernois doucement, &amp; en Pere, comme vous deuez fſaire, <pb n="8" />
+        <lb />SIRE. Le nom de Roy eſt vn nom d’amour. Car qui a le eœur
+        <lb />d’vn homme à ſa deuotion, il pent fairc eſtat de ſes richeſſes &amp;
+        <lb />moyens. Et lcſubjet qui aymeſon Prince, n’eſpargne iamais ſa
+        <lb />vie, nyſes biens pour ſa defcnſe.
+        <lb />Dion Chryſoſtomc cormpare les bons Roys aux Bœufs, &amp; les
+        <lb />mauuais aux Lyons, diſant que le Bœufeſt vn animal dec profit,
+        <lb />qui n’a rien ſur luy qui ne ſoit vtilc. Vn bontoy cſt de meſme en
+        <lb rend="¬" break="no" />uers ſes ſubjcts. Mais le mauuais oy n’a rien de bon en luy, no
+        <lb />plus que le Lyon, lequel n’a que des dents pour deuorer, &amp; des
+        <lb />griffes pour deſchirer.
+        <lb /> lc ceſſeray d’en parler dauantage, pour vous dire que vous
+        <lb />chaſſiez bien loin arriere de vous, tous les Maletoltiers, &amp; don
+        <lb rend="¬" break="no" />neurs de memoires au dommage du Peuple, &amp; de la choſc publi
+        <lb rend="¬" break="no" />que: &amp; faites, pour l’honncur de Dicu, faire le procez par
         voſtre
-        Cour de Parlement, &amp; ne feignez pas de luy bien recoimandes
-        cét affaire à tous Partiſans &amp; Eſtrangers, leſquels ayans trouué le
-        morceau friant, ont(comme ondt) gagué de l’appetit en man
-        geant, &amp; ſont à la fin deuenus auſſi grands maiſtrcs, que les
+        <lb />Cour de Parlement, &amp; ne feignez pas de luy bien recoimandes
+        <lb />cét affaire à tous Partiſans &amp; Eſtrangers, leſquels ayans trouué le
+        <lb />morceau friant, ont(comme ondt) gagué de l’appetit en man
+        <lb rend="¬" break="no" />geant, &amp; ſont à la fin deuenus auſſi grands maiſtrcs, que les
         ltai
-        liens, ſang-ſuës du pauure Peuple, lntenteurs, Mitſtrcs, &amp; exe
-        cuteurs de tous ls Edicts de daces, &amp; d’inmpoſts, par le moyen
-        deſquels ce Royaume eſt ſi deſolé &amp; reduit en tel acceſſoire, que
-        etout y eſt à vendre, &amp; tellcrment à vendre, que l’on pourroir dire
-        tout de bon, Royaume d veadre, ainſi que l’on dſoit de Rome,
-        Cieé́ à vendre, lors qu’elle commença à ſe perdre.
-        Ce faiſant, ſivous voulez que voſtre Peuple vous ayrme à bon
-        eſcient, il faut que vous l’aymiez de meſme, &amp; luy faſſiez ſentir
-        les effects de voſtre amour, &amp; recognoiſſiez que Dieu vous a
-        faict &amp; creé pour le lPeuple, &amp; non pas le Peuple pour vous. Le
-        Peuple peut aucunement bien vinre, &amp; eſtre ſans Roy: mais vs
-        Roy ne peut eftre ſans Peuple. Dieu, SIRE, vous en benira, &amp;
-        fera proſperer tres-amplement. Ainſi ſoit- il.
-        FIN.			</p>
-		</body>
-	</text>
+        <lb />liens, ſang-ſuës du pauure Peuple, lntenteurs, Mitſtrcs, &amp; exe
+        <lb rend="¬" break="no" />cuteurs de tous ls Edicts de daces, &amp; d’inmpoſts, par le moyen
+        <lb />deſquels ce Royaume eſt ſi deſolé &amp; reduit en tel acceſſoire, que
+        <lb />etout y eſt à vendre, &amp; tellcrment à vendre, que l’on pourroir dire
+        <lb />tout de bon, Royaume d veadre, ainſi que l’on dſoit de Rome,
+        <lb />Cieé́ à vendre, lors qu’elle commença à ſe perdre.
+        <lb />Ce faiſant, ſivous voulez que voſtre Peuple vous ayrme à bon
+        <lb />eſcient, il faut que vous l’aymiez de meſme, &amp; luy faſſiez ſentir
+        <lb />les effects de voſtre amour, &amp; recognoiſſiez que Dieu vous a
+        <lb />faict &amp; creé pour le lPeuple, &amp; non pas le Peuple pour vous. Le
+        <lb />Peuple peut aucunement bien vinre, &amp; eſtre ſans Roy: mais vs
+        <lb />Roy ne peut eftre ſans Peuple. Dieu, SIRE, vous en benira, &amp;
+        <lb />fera proſperer tres-amplement. Ainſi ſoit- il.
+        <lb />FIN. </p>
+    </body>
+  </text>
 </TEI>

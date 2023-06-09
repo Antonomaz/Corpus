@@ -1,508 +1,373 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2923_GALL">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Les propriétés diaboliques D. C.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Les propriétés diaboliques D. C.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://gallica.bnf.fr/ark:/12148/bpt6k5425505v"/>
-					<author/>
-					<title source="Moreau">Propriétés (les) diaboliques D. C.</title>
-					<pubPlace source="Moreau">Sans lieu</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<date source="Carrier" notBefore="1649-01" notAfter="1649-03" when="1649">pendant le blocus de
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k5425505v" />
+          <author />
+          <title source="Moreau">Propriétés (les) diaboliques D. C.</title>
+          <pubPlace source="Moreau">Sans lieu</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <date source="Carrier" notBefore="1649-01" notAfter="1649-03" when="1649">pendant le blocus de
             Paris</date>
-					<extent>
-						<measure quantity="7" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="BM00656" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49521"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2988507">Paris</settlement>
-						<institution>Bibliothèque nationale de France</institution>
-						<repository>département Littérature et art</repository>
-						<idno type="cote">YE-4048</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <extent>
+            <measure quantity="7" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="BM00656" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49521" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2988507">Paris</settlement>
+            <institution>Bibliothèque nationale de France</institution>
+            <repository>département Littérature et art</repository>
+            <idno type="cote">YE-4048</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine">En vers octosyllabes monorimes sur "diable". Selon Hubert Carrier, les
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine">En vers octosyllabes monorimes sur "diable". Selon Hubert Carrier, les
           initiales "D. C." correspondraient au prince de Condé (Bibliothèque Mazarine, Ms 4682-4,
           f. 262v). Texte paru pendant le blocus de Paris d’après H. Carrier.</p>
-				<p source="Moreau">2923. Propriétés (les) diaboliques D. C. Sans Lieu, 1649, 7 pages..</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">vers</term>
-					<term type="subject">Condé, Louis de Bourbon, prince de, 1621-1686</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-06-22" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<l>
-					<lb/>
-LES PROPRIETEZ DIABOLIQVES.				</l>
-				<l>
-					<lb/>
-D. C.				</l>
-				<l>
-					<lb/>
-IL iure comme vn diable.				</l>
-				<l>
-					<lb/>
-Il chante comme vn diable.				</l>
-				<l>
-					<lb/>
-Il parle commevu diable.				</l>
-				<l>
-					<lb/>
-Il boit comme vn diable.				</l>
-				<l>
-					<lb/>
-Il crie comme vn diable.				</l>
-				<l>
-					<lb/>
-Il iouë comme vn diable.				</l>
-				<l>
-					<lb/>
-Il ſe bat comme vn diable.				</l>
-				<l>
-					<lb/>
-Il vainct comme vndiable.				</l>
-				<l>
-					<lb/>
-Il gaigne comme vn diable.				</l>
-				<l>
-					<lb/>
-Il court comme vn diable.				</l>
-				<l>
-					<lb/>
-Il ſalue comme vn diable.				</l>
-				<l>
-					<lb/>
-Il mange comme vn diable.				</l>
-				<l>
-					<lb/>
-Il veille comme vn diable.				</l>
-				<l>
-					<lb/>
-Il dort comme vn diable.				</l>
-				<l>
-					<lb/>
-Il s’eſueille comme vn diable.				</l>
-				<l>
-					<lb/>
-Il carreſſe comme vn diable.				</l>
-				<l>
-					<lb/>
-Il recompenſe comme vn diable..				</l>
-				<l>
-					<lb/>
-Il punit comme vn diable.				</l>
-				<l>
-					<lb/>
-Il promet eomme vn diable.				</l>
-				<l>
-					<lb/>
-Il tient comme vn diable.				</l>
-				<l>
-					<lb/>
-Il engeolle comme vn diable.				</l>
-				<l>
-					<lb/>
-Ilprend comme vn diable.				</l>
-				<l>
-					<lb/>
-4				</l>
-				<l>
-					<lb/>
-Il reçoit comme vn diable.				</l>
-				<l>
-					<lb/>
-Il donne comme vn diable.				</l>
-				<l>
-					<lb/>
-il Prie comme vn diable.				</l>
-				<l>
-					<lb/>
-il benit comme vn diable.				</l>
-				<l>
-					<lb/>
-il maudit comme vn diable.				</l>
-				<l>
-					<lb/>
-Il lit comme vn diable.				</l>
-				<l>
-					<lb/>
-il eſcrit comme vn diable.				</l>
-				<l>
-					<lb/>
-il apprend comme vn diable.				</l>
-				<l>
-					<lb/>
-il touche comme vn diable.				</l>
-				<l>
-					<lb/>
-il ſent comme vn diable.				</l>
-				<l>
-					<lb/>
-il flaire comme vn diable.				</l>
-				<l>
-					<lb/>
-il gouſte comme vn diable.				</l>
-				<l>
-					<lb/>
-ilentend comme vn diable.				</l>
-				<l>
-					<lb/>
-il void comme vn diable.				</l>
-				<l>
-					<lb/>
-il marche comme vn diable.				</l>
-				<l>
-					<lb/>
-il frotte comme vn diable.				</l>
-				<l>
-					<lb/>
-il aime comme vn diable.				</l>
-				<l>
-					<lb/>
-il baiſe comme vn diable.				</l>
-				<l>
-					<lb/>
-il rit comme vn diable.				</l>
-				<l>
-					<lb/>
-il pleure comme vn diable.				</l>
-				<l>
-					<lb/>
-il fuit comme vn diable.				</l>
-				<l>
-					<lb/>
-il met comme vn diable.				</l>
-				<l>
-					<lb/>
-il oſte comme vn diable.				</l>
-				<l>
-					<lb/>
-il tire comme vn diable.				</l>
-				<l>
-					<lb/>
-il traitte comme vn diable.				</l>
-				<l>
-					<lb/>
-il tue comme vn diable.				</l>
-				<l>
-					<lb/>
-il ſerre comme vn diable.				</l>
-				<l>
-					<lb/>
-il emopoigne comme vn diable.				</l>
-				<l>
-					<lb/>
-il choque				</l>
-				<l>
-					<lb/>
-A				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-5				</l>
-				<l>
-					<lb/>
-il choque comme vn diable.				</l>
-				<l>
-					<lb/>
-il attaque comme vndiable.				</l>
-				<l>
-					<lb/>
-il enleue comme vn diable.				</l>
-				<l>
-					<lb/>
-il afflige comme vn diable.				</l>
-				<l>
-					<lb/>
-il leue le ſiege comme vn diable.				</l>
-				<l>
-					<lb/>
-il babille comme vn diable.				</l>
-				<l>
-					<lb/>
-il entretient comme vn diable.				</l>
-				<l>
-					<lb/>
-il obeit comme vn diable.				</l>
-				<l>
-					<lb/>
-il ſert comme vn diable:				</l>
-				<l>
-					<lb/>
-il chaſſe comme vn diable.				</l>
-				<l>
-					<lb/>
-il beſongne comme vn diable.				</l>
-				<l>
-					<lb/>
-il ſeme comme vn diable.				</l>
-				<l>
-					<lb/>
-il plante comme vn diable.				</l>
-				<l>
-					<lb/>
-il moiſſonne comme vn diable.				</l>
-				<l>
-					<lb/>
-il coupe comme vn diable.				</l>
-				<l>
-					<lb/>
-il enfile comme vn diable.				</l>
-				<l>
-					<lb/>
-il defile comme vn diable				</l>
-				<l>
-					<lb/>
-il vend comme vn diable.				</l>
-				<l>
-					<lb/>
-il trafique comme vn diable.				</l>
-				<l>
-					<lb/>
-il ment comme vn diable.				</l>
-				<l>
-					<lb/>
-i l monte comme vn diable.				</l>
-				<l>
-					<lb/>
-il deſcend comme vn diable.				</l>
-				<l>
-					<lb/>
-il entre comme vn diable.				</l>
-				<l>
-					<lb/>
-ilſort comme vn diable.				</l>
-				<l>
-					<lb/>
-ils’emporte comme vn diable.				</l>
-				<l>
-					<lb/>
-il eſt prompt comme vn diable.				</l>
-				<l>
-					<lb/>
-il eſt lourdcomme vn diable.				</l>
-				<l>
-					<lb/>
-ileſtagile comme vn diable.				</l>
-				<l>
-					<lb/>
-E				</l>
-				<l>
-					<lb/>
-il eſt fourbe come vn diable.				</l>
-				<l>
-					<lb/>
-il eſt auaricieux come vn diable.				</l>
-				<l>
-					<lb/>
-il eſt pareſſeux comme vn diable.				</l>
-				<l>
-					<lb/>
-il eſt gourmand comme vn diable				</l>
-				<l>
-					<lb/>
-il eſt enuieux comme vn diable.				</l>
-				<l>
-					<lb/>
-il eft luxurieux comme vn diable.				</l>
-				<l>
-					<lb/>
-il eſt enfant comme vn diable.				</l>
-				<l>
-					<lb/>
-il eſt homme comme vu diable.				</l>
-				<l>
-					<lb/>
-il eſt ſage comme vn diable.				</l>
-				<l>
-					<lb/>
-il eſt prudent comme vn diable.				</l>
-				<l>
-					<lb/>
-il eſt genereux come vn diable.				</l>
-				<l>
-					<lb/>
-il eſt temcraire comme vn diable.				</l>
-				<l>
-					<lb/>
-il eſt poltron comme vn diale.				</l>
-				<l>
-					<lb/>
-il a vn nez comme vn diable.				</l>
-				<l>
-					<lb/>
-il a des yeux de diable.				</l>
-				<l>
-					<lb/>
-il a des iouües de diable.				</l>
-				<l>
-					<lb/>
-il a vne bouche de diable.				</l>
-				<l>
-					<lb/>
-il a vn menton de diable.				</l>
-				<l>
-					<lb/>
-il a vn front de diable.				</l>
-				<l>
-					<lb/>
-il a des ſourcils de diable.				</l>
-				<l>
-					<lb/>
-il a des cheueux de diable.				</l>
-				<l>
-					<lb/>
-il a des bras de diable.				</l>
-				<l>
-					<lb/>
-il a des mains de diable.				</l>
-				<l>
-					<lb/>
-il a vn ventre de diable.				</l>
-				<l>
-					<lb/>
-il a des cuiſſes de diab le.				</l>
-				<l>
-					<lb/>
-i!i				</l>
-				<l>
-					<lb/>
-il a des genoux de d’able ,li				</l>
-				<l>
-					<lb/>
-lii				</l>
-				<l>
-					<lb/>
-il a des iambes de diabe.				</l>
-				<l>
-					<lb/>
-2				</l>
-				<l>
-					<lb/>
-il a des pieds de diable.				</l>
-				<l>
-					<lb/>
-.				</l>
-				<l>
-					<lb/>
-l1				</l>
-				<l>
-					<lb/>
-il porte des habits de diable.				</l>
-				<l>
-					<lb/>
-il porte vn courage de diable.				</l>
-				<l>
-					<lb/>
-il porte vn viſage de diable.				</l>
-				<l>
-					<lb/>
-il contribue aux vœux que ſait le diable.				</l>
-				<l>
-					<lb/>
-Enfin, il fait tout comme vn diable.				</l>
-				<l>
-					<lb/>
-il eſt tout comme vn diable				</l>
-				<l>
-					<lb/>
-il a tout de diable.				</l>
-				<l>
-					<lb/>
-il porte tout du diable.				</l>
-				<l>
-					<lb/>
-il contribue tout au diable.				</l>
-				<l>
-					<lb/>
-Concluons donc qu’il eſt diable.				</l>
-LES
-        PROPRIETEZ
-        DIABOLIOVES
-        D. C.
-        M. DC. XLIX. 
-        
-        3			</p>
-		</body>
-	</text>
+        <p source="Moreau">2923. Propriétés (les) diaboliques D. C. Sans Lieu, 1649, 7 pages..</p>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">vers</term>
+          <term type="subject">Condé, Louis de Bourbon, prince de, 1621-1686</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-06-22" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="2" />
+        <lb />LES
+        <lb />PROPRIETEZ
+        <lb />DIABOLIOVES
+        <lb />D. C.
+        <lb />M. DC. XLIX. <pb n="3" />
+        <pb n="4" />
+        <lb />3 <l>
+          <lb />LES PROPRIETEZ DIABOLIQVES.</l>
+        <l>
+          <lb />D. C.</l>
+        <l>
+          <lb />IL iure comme vn diable.</l>
+        <l>
+          <lb /> Il chante comme vn diable.</l>
+        <l>
+          <lb />Il parle commevu diable.</l>
+        <l>
+          <lb />Il boit comme vn diable.</l>
+        <l>
+          <lb />Il crie comme vn diable.</l>
+        <l>
+          <lb />Il iouë comme vn diable.</l>
+        <l>
+          <lb />Il ſe bat comme vn diable.</l>
+        <l>
+          <lb />Il vainct comme vndiable.</l>
+        <l>
+          <lb />Il gaigne comme vn diable.</l>
+        <l>
+          <lb />Il court comme vn diable.</l>
+        <l>
+          <lb />Il ſalue comme vn diable.</l>
+        <l>
+          <lb />Il mange comme vn diable.</l>
+        <l>
+          <lb />Il veille comme vn diable.</l>
+        <l>
+          <lb />Il dort comme vn diable.</l>
+        <l>
+          <lb />Il s’eſueille comme vn diable.</l>
+        <l>
+          <lb />Il carreſſe comme vn diable.</l>
+        <l>
+          <lb /> Il recompenſe comme vn diable..</l>
+        <l>
+          <lb />Il punit comme vn diable.</l>
+        <l>
+          <lb />Il promet eomme vn diable.</l>
+        <l>
+          <lb />Il tient comme vn diable.</l>
+        <l>
+          <lb /> Il engeolle comme vn diable.</l>
+        <l>
+          <lb />Ilprend comme vn diable.</l>
+        <pb n="5" />
+        <l>
+          <lb />4</l>
+        <l>
+          <lb />Il reçoit comme vn diable.</l>
+        <l>
+          <lb />Il donne comme vn diable.</l>
+        <l>
+          <lb />il Prie comme vn diable.</l>
+        <l>
+          <lb />il benit comme vn diable.</l>
+        <l>
+          <lb />il maudit comme vn diable.</l>
+        <l>
+          <lb />Il lit comme vn diable.</l>
+        <l>
+          <lb />il eſcrit comme vn diable.</l>
+        <l>
+          <lb />il apprend comme vn diable.</l>
+        <l>
+          <lb />il touche comme vn diable.</l>
+        <l>
+          <lb />il ſent comme vn diable.</l>
+        <l>
+          <lb />il flaire comme vn diable.</l>
+        <l>
+          <lb />il gouſte comme vn diable.</l>
+        <l>
+          <lb />ilentend comme vn diable.</l>
+        <l>
+          <lb />il void comme vn diable.</l>
+        <l>
+          <lb />il marche comme vn diable.</l>
+        <l>
+          <lb />il frotte comme vn diable.</l>
+        <l>
+          <lb />il aime comme vn diable.</l>
+        <l>
+          <lb />il baiſe comme vn diable.</l>
+        <l>
+          <lb />il rit comme vn diable.</l>
+        <l>
+          <lb />il pleure comme vn diable.</l>
+        <l>
+          <lb />il fuit comme vn diable.</l>
+        <l>
+          <lb />il met comme vn diable.</l>
+        <l>
+          <lb />il oſte comme vn diable.</l>
+        <l>
+          <lb />il tire comme vn diable.</l>
+        <l>
+          <lb />il traitte comme vn diable.</l>
+        <l>
+          <lb />il tue comme vn diable.</l>
+        <l>
+          <lb />il ſerre comme vn diable.</l>
+        <l>
+          <lb />il emopoigne comme vn diable.</l>
+        <l>
+          <lb />il choque</l>
+        <l>
+          <lb />A</l>
+        <l>
+          <lb />1</l>
+        <pb n="6" />
+        <l>
+          <lb />5</l>
+        <l>
+          <lb />il choque comme vn diable.</l>
+        <l>
+          <lb />il attaque comme vndiable.</l>
+        <l>
+          <lb />il enleue comme vn diable.</l>
+        <l>
+          <lb />il afflige comme vn diable.</l>
+        <l>
+          <lb />il leue le ſiege comme vn diable.</l>
+        <l>
+          <lb />il babille comme vn diable.</l>
+        <l>
+          <lb />il entretient comme vn diable.</l>
+        <l>
+          <lb />il obeit comme vn diable.</l>
+        <l>
+          <lb />il ſert comme vn diable:</l>
+        <l>
+          <lb />il chaſſe comme vn diable.</l>
+        <l>
+          <lb />il beſongne comme vn diable.</l>
+        <l>
+          <lb />il ſeme comme vn diable.</l>
+        <l>
+          <lb />il plante comme vn diable.</l>
+        <l>
+          <lb />il moiſſonne comme vn diable.</l>
+        <l>
+          <lb />il coupe comme vn diable.</l>
+        <l>
+          <lb />il enfile comme vn diable.</l>
+        <l>
+          <lb />il defile comme vn diable</l>
+        <l>
+          <lb />il vend comme vn diable.</l>
+        <l>
+          <lb />il trafique comme vn diable.</l>
+        <l>
+          <lb />il ment comme vn diable.</l>
+        <l>
+          <lb />i l monte comme vn diable.</l>
+        <l>
+          <lb />il deſcend comme vn diable.</l>
+        <l>
+          <lb />il entre comme vn diable.</l>
+        <l>
+          <lb />ilſort comme vn diable.</l>
+        <l>
+          <lb />ils’emporte comme vn diable.</l>
+        <l>
+          <lb />il eſt prompt comme vn diable.</l>
+        <l>
+          <lb />il eſt lourdcomme vn diable.</l>
+        <l>
+          <lb />ileſtagile comme vn diable.</l>
+        <l>
+          <lb />E</l>
+        <pb n="7" />
+        <l>
+          <lb />il eſt fourbe come vn diable.</l>
+        <l>
+          <lb />il eſt auaricieux come vn diable.</l>
+        <l>
+          <lb />il eſt pareſſeux comme vn diable.</l>
+        <l>
+          <lb />il eſt gourmand comme vn diable</l>
+        <l>
+          <lb />il eſt enuieux comme vn diable.</l>
+        <l>
+          <lb />il eft luxurieux comme vn diable.</l>
+        <l>
+          <lb />il eſt enfant comme vn diable.</l>
+        <l>
+          <lb />il eſt homme comme vu diable.</l>
+        <l>
+          <lb />il eſt ſage comme vn diable.</l>
+        <l>
+          <lb />il eſt prudent comme vn diable.</l>
+        <l>
+          <lb />il eſt genereux come vn diable.</l>
+        <l>
+          <lb />il eſt temcraire comme vn diable.</l>
+        <l>
+          <lb />il eſt poltron comme vn diale.</l>
+        <l>
+          <lb />il a vn nez comme vn diable.</l>
+        <l>
+          <lb />il a des yeux de diable.</l>
+        <l>
+          <lb />il a des iouües de diable.</l>
+        <l>
+          <lb />il a vne bouche de diable.</l>
+        <l>
+          <lb />il a vn menton de diable.</l>
+        <l>
+          <lb />il a vn front de diable.</l>
+        <l>
+          <lb />il a des ſourcils de diable.</l>
+        <l>
+          <lb />il a des cheueux de diable.</l>
+        <l>
+          <lb />il a des bras de diable.</l>
+        <l>
+          <lb />il a des mains de diable.</l>
+        <l>
+          <lb />il a vn ventre de diable.</l>
+        <l>
+          <lb />il a des cuiſſes de diab le.</l>
+        <l>
+          <lb />i!i</l>
+        <l>
+          <lb />il a des genoux de d’able ,li</l>
+        <l>
+          <lb />lii</l>
+        <l>
+          <lb />il a des iambes de diabe.</l>
+        <l>
+          <lb />2</l>
+        <l>
+          <lb />il a des pieds de diable.</l>
+        <l>
+          <lb />.</l>
+        <l>
+          <lb />l1</l>
+        <pb n="8" />
+        <l>
+          <lb />il porte des habits de diable.</l>
+        <l>
+          <lb />il porte vn courage de diable.</l>
+        <l>
+          <lb />il porte vn viſage de diable.</l>
+        <l>
+          <lb />il contribue aux vœux que ſait le diable.</l>
+        <l>
+          <lb />Enfin, il fait tout comme vn diable.</l>
+        <l>
+          <lb />il eſt tout comme vn diable</l>
+        <l>
+          <lb />il a tout de diable.</l>
+        <l>
+          <lb />il porte tout du diable.</l>
+        <l>
+          <lb />il contribue tout au diable.</l>
+        <l>
+          <lb /> Concluons donc qu’il eſt diable.</l>
+      </p>
+    </body>
+  </text>
 </TEI>

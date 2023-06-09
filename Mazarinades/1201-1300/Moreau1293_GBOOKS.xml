@@ -1,480 +1,295 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1293_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">L'état déplorable des femmes d’amour de Paris, la
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">L'état déplorable des femmes d’amour de Paris, la
           harangue de leur ambassadeur envoyé au cardinal Mazarin, et son succès.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=PXxKAAAAcAAJ"/>
-					<author/>
-					<title source="Moreau">État (l') déplorable des femmes d’amour de Paris, la harangue de
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=PXxKAAAAcAAJ" />
+          <author />
+          <title source="Moreau">État (l') déplorable des femmes d’amour de Paris, la harangue de
             leur ambassadeur envoyé au cardinal Mazarin, et son succès.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure quantity="7" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2761369">Vienne</settlement>
-						<institution>Bibliothèque nationale d'Autriche</institution>
-						<repository/>
-						<idno type="cote">127076-B</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>False</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure quantity="7" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2761369">Vienne</settlement>
+            <institution>Bibliothèque nationale d'Autriche</institution>
+            <repository />
+            <idno type="cote">127076-B</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>False</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">1293. État (P) déplorable des femmes d’amour de Paris, la harangue de
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">1293. État (P) déplorable des femmes d’amour de Paris, la harangue de
           leur ambassadeur envoyé au cardinal Mazarin, et son succès. Paris, 1649, 7 pages. Pièce
           ordurière et médiocrement spirituelle.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">non renseigné</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_28" source="Moreau">
-					<p>Avant la paix</p>
-					<date when="1649-03-01">1649-03-01</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2021-11-15" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-L’ESTAT
-        DEPLORABLE
-        DES FEMMES D’AMOVR
-        DE PARIS.
-        LA HARANGVE
-        DE LEVR AMBASSADEVR
-        ENVOYE
-        AV CARDINAL MAZARIN,
-        &amp; ſon ſucces.
-        A PARIS,
-        M. DC.XLIX. 
-        
-        L’ESTAT
-        DEPLORABLE
-        DES FEMMES D’AMOVR
-        DE PARIS.
-        LA HARANGVE
-        DE LEVR AMBASSADEVR
-        ENVOYE
-        AV CARDINAL MAZARIN,
-        &amp; ſon ſucces.
-        û, ’Aſtre qui ſeruit a la conduite des Roys, ſeruita2
-        Tſ
-         l enleuement de eeluy de toute la France, &amp; il ſe
-         peut dire de cette nuit que la grandeur de nos
-         joyes nous en faiſoit voir l’extremiteé. Nous nouis
-         eſtions aſſemblees lc iour d’auparauant dans le
-        deſſein de nous reſioiyr, &amp; a faueur que nous fit
-        Venus d’inſpirer quelques vns des ſiens de nous ver voir, ne
-        ſcruit par peu a nous dõner quelque s’atisfaction. Nous auions
-        mange des viandes auſi friandes &amp; bû des vins auſft delicats
-        qu’il ſe puiſſe gouſter: Nous eſtions preſts de nous mertre au
-        ht &amp; ie m’imaginois tout ce qui ſe peut de plaiſir entre es
-        bras, quaãd vnvalet de celuy qui deuot coucher auec’moy vint
-        l’auertir qu’il vouloir y dire vn mot d’importance; ce qu l’a
-        ra cha de maoy &amp; e’visbien à ſon retour qu’il faloitq’l artit
-          
-        (&amp; quoy qu’ilauoit eſté Roy, qu’ilm’auoit preomûsdee faire
-        Reyne) qu’il ne me doneroir aucun gage de ſon affetion.
-        Ie luy dis a d’enauëc des larmes, la bonne mine, fa haute
-        naiſſance&amp; ſa bonne chiere m’auoient émû, &amp;s’il ua’euſt dõ̃né
-        dequoy ſubſiſter auiourd’huy ie n’aurois pas a me plaindre. lIe
-        me couchay &amp; paſſay la nu auecaſſés de quietuiſe: maonhu
-         eur n’eſt pas de m’atacher par trop au plaiſir: ſon abſance ne
-        me carſa point de ſoupirs &amp; ſi mon ami ne m’euſt éueillée das
-        la liberte qu’i auoit d’entrer on ma chaambre, ie pourrois en
-        cores eſtre endormie, les prenieres aroles que i’enrendis de
-        luy a moa reueil, tou eſt perdu le oy a eſtée enleué, ie m’en
-        quis ſi quelques vns que ie conneſſois eſtoient ſortis auec Iuy,
-        il me reſpondit qu’ouy des l heure meſme ie ne d’outay point
-         de ma perte ie m’habille, ie dõne auis de ces nouuelles a quel
-        ques perſonnes de ma conneſſance ie les treuuay plus ſurpriſes
-        que moy, i’eſtois ſans argent &amp; elles auſi, nous attendions
-        quel qu’vn dans vn ſi grand iour de ioye, perſonne ne nous vint
-        viſiter. ll falut recourre a ce que nous pouuions auoir de hardes
-        nous les mimes e gage pour auoir de l’argent dequoy auoir d
-        pain. Nous auons veſcu iuſques a preſent ſans que nos fonds
-        s’il y en a nous ayent produits aucunes rentes, &amp; n’ayant plus
-        dequoy toutes nous nous ſommes aſlemblés, nous auons ſcû la
-        cauſe de noſtre mal &amp; auoas projeté le deſſein d’y remedier.
-        Apeine certe reſolution eſfoit formée qu’vn nõmé Bertrand
-        homme de confidence dans tous nos plaiſirs entr au lieu ou
-        nous eſtions, il fe plaignit de meſme nous fut animé par nos
-        reſolutons &amp; ſçachant que nous voulions rompre le cours a la
-        neceſſité que pour ce il faloitſupplier leCna MAzaa,
-        tit pour fon intereſt que pour le noſtre il.s offrit d’aller à ſaint
-        Ge. main expoſer nos penſées anu Car linal, &amp; le ſupplier de
-        mettre fin à̀ nos miſeres.
-         hacune contriboua de ce qu’e’le pût à ce voyage vne des
-        plus illuſtes luy fit donuer vn paſſe-ort, en ſorte qu’vn peu
-        connû de ceux qui elloent au corps de garde, &amp; ayant ſeruy
-        autrefois a ce luy qui eſtoit Capitaine de cartier &amp; en faction
-        ur les deux heures apres midy le iour de Vendredy abouché
-        de 
-        5
-        de celles qui l’e nuoyoient arriua à ſain t G ermain ſur les ſix
-        heures &amp; au petit coucher du Cardinal Maz arin eut audie ce
-        Il fit grandes reue ences &amp;apres auoir baſé le bord de la cou.
-        ucrture de ſon lit, ſigne qu’il t eſmoignoit ce qu’il eſtoit il exe
-        cuta ſa commiſſion en cetre ſorte
-        Ie ſuis enuoyé de tout Paris( MOSEGEvRpuis qu’il n’y a
-         perſonne de raiſonnable qui ne ſoit de celles qui m ont deputé
-        deuers vous. Ie ne vous aborde pas auoud’huy comme i’ay fait
-        autrefois ou le ſeul deſlein de vous produire du plaiſir eſtoit
-        tout le ſuject de ma viſite. Cetre conſideration ne me touche
-        plus, la douleur à tout oceupé mon ame &amp; pourueu que ie vous
-        puiſſe bien exprimer mes ſentimens, ie croy m’eftre tres bien
-        aquité de ma commiſſion.
-        La luſtice qui donne le branſlſe à tout ce qui eſt au mode eſt
-        ſans pouuoir aupres de nous, tout Paris ſe laiſſe conduire a ſes
-        mouuemens, il n’ya que nos maiſons qui n’en ſont point ébrã
-        lées, faute du droit qui n’y agit plus. Nos Dames neantmoins
-        qui ſont amoureuſes, tres ſenfibles dans ces ſorteade mal-heurs
-        en ont fair leurs plaintes &amp; fi elles n’euſſent apprehendé de ne
-        pas bien fa re gouſter leurs raiſons à vos pates aduerſes, elles
-        leurs auroent preſenté des requ ſtes touchant leurs miſeres,
-        affin que ces peres du public euſſent aà ſubuenir a leurs neceſſi
-        tés, côme aà celles de perſonnes publques Cete pẽſée fut miſe
-        en deberation &amp; ne fut pas ſuiuie parce que la compagnée ſe
-        repreſenta l’impuiſſance des veux, la diſcretion des ieunes &amp;
-        cet eſprir de vertuqui ſe rencõ̃tre dans les vns &amp; dãis les autres ¬
-        &amp; qu ſe porte con re tout ce qui approche tant ſoit peu de la
-        fobleſſe de la nature. Ces meſſieers ainfi n’ayans pas eſlé ctû̂s
-        Capables d’efeouter nos plantes d’ẽteriner hos requeſles nous
-        nous ſomnes adreſſés a vous;que ce deſſein a eſté bien proijeté,,
-        &amp; s’il ne reuſſit; que ie ſuis mal-heu eux. MonsEie v, nous
-        vous auons cõſidesé enrãce cõmevn Scicilien dont les meurs
-        ſe ſont factes à Rome, &amp; dont l’eſprit a eſté nourry danstoutes!
-        les adreſſes &amp; les cõplaiſances qui ſe pranquent enre les fem
-        mes, &amp; ceux qui ſe fnt voir par faictement hôõmes nous uons
-        cI que vote Eminence ſe ſouuiendro de ces delice que 
-        vous auez gouſtees parmy nus, de ces delicateſſes die leſquel
-        les nous auõs veſcu &amp; que vos ioyes pſſees &amp; noſtre mal-
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">non renseigné</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_28" source="Moreau">
+          <p>Avant la paix</p>
+          <date when="1649-03-01">1649-03-01</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2021-11-15" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="5" />
+        <lb />L’ESTAT
+        <lb />DEPLORABLE
+        <lb />DES FEMMES D’AMOVR
+        <lb />DE PARIS.
+        <lb />LA HARANGVE
+        <lb />DE LEVR AMBASSADEVR
+        <lb />ENVOYE
+        <lb />AV CARDINAL MAZARIN,
+        <lb />&amp; ſon ſucces.
+        <lb />A PARIS,
+        <lb />M. DC.XLIX. <pb n="6" />
+        <pb n="7" />
+        <lb />L’ESTAT
+        <lb />DEPLORABLE
+        <lb />DES FEMMES D’AMOVR
+        <lb />DE PARIS.
+        <lb />LA HARANGVE
+        <lb />DE LEVR AMBASSADEVR
+        <lb />ENVOYE
+        <lb />AV CARDINAL MAZARIN,
+        <lb />&amp; ſon ſucces.
+        <lb />û, ’Aſtre qui ſeruit a la conduite des Roys, ſeruita2
+        <lb />Tſ
+        <lb /> l enleuement de eeluy de toute la France, &amp; il ſe
+        <lb /> peut dire de cette nuit que la grandeur de nos
+        <lb /> joyes nous en faiſoit voir l’extremiteé. Nous nouis
+        <lb /> eſtions aſſemblees lc iour d’auparauant dans le
+        <lb />deſſein de nous reſioiyr, &amp; a faueur que nous fit
+        <lb />Venus d’inſpirer quelques vns des ſiens de nous ver voir, ne
+        <lb />ſcruit par peu a nous dõner quelque s’atisfaction. Nous auions
+        <lb />mange des viandes auſi friandes &amp; bû des vins auſft delicats
+        <lb />qu’il ſe puiſſe gouſter: Nous eſtions preſts de nous mertre au
+        <lb />ht &amp; ie m’imaginois tout ce qui ſe peut de plaiſir entre es
+        <lb />bras, quaãd vnvalet de celuy qui deuot coucher auec’moy vint
+        <lb />l’auertir qu’il vouloir y dire vn mot d’importance; ce qu l’a
+        <lb rend="¬" break="no" />ra cha de maoy &amp; e’visbien à ſon retour qu’il faloitq’l artit
+          <pb n="8" />
+        <lb />(&amp; quoy qu’ilauoit eſté Roy, qu’ilm’auoit preomûsdee faire
+        <lb />Reyne) qu’il ne me doneroir aucun gage de ſon affetion.
+        <lb />Ie luy dis a d’enauëc des larmes, la bonne mine, fa haute
+        <lb />naiſſance&amp; ſa bonne chiere m’auoient émû, &amp;s’il ua’euſt dõ̃né
+        <lb />dequoy ſubſiſter auiourd’huy ie n’aurois pas a me plaindre. lIe
+        <lb />me couchay &amp; paſſay la nu auecaſſés de quietuiſe: maonhu
+        <lb rend="¬" break="no" /> eur n’eſt pas de m’atacher par trop au plaiſir: ſon abſance ne
+        <lb />me carſa point de ſoupirs &amp; ſi mon ami ne m’euſt éueillée das
+        <lb />la liberte qu’i auoit d’entrer on ma chaambre, ie pourrois en
+        <lb rend="¬" break="no" />cores eſtre endormie, les prenieres aroles que i’enrendis de
+        <lb />luy a moa reueil, tou eſt perdu le oy a eſtée enleué, ie m’en
+        <lb rend="¬" break="no" />quis ſi quelques vns que ie conneſſois eſtoient ſortis auec Iuy,
+        <lb />il me reſpondit qu’ouy des l heure meſme ie ne d’outay point
+        <lb /> de ma perte ie m’habille, ie dõne auis de ces nouuelles a quel
+        <lb rend="¬" break="no" />ques perſonnes de ma conneſſance ie les treuuay plus ſurpriſes
+        <lb />que moy, i’eſtois ſans argent &amp; elles auſi, nous attendions
+        <lb rend="¬" break="no" />quel qu’vn dans vn ſi grand iour de ioye, perſonne ne nous vint
+        <lb />viſiter. ll falut recourre a ce que nous pouuions auoir de hardes
+        <lb />nous les mimes e gage pour auoir de l’argent dequoy auoir d
+        <lb />pain. Nous auons veſcu iuſques a preſent ſans que nos fonds
+        <lb />s’il y en a nous ayent produits aucunes rentes, &amp; n’ayant plus
+        <lb />dequoy toutes nous nous ſommes aſlemblés, nous auons ſcû la
+        <lb />cauſe de noſtre mal &amp; auoas projeté le deſſein d’y remedier.
+        <lb />Apeine certe reſolution eſfoit formée qu’vn nõmé Bertrand
+        <lb />homme de confidence dans tous nos plaiſirs entr au lieu ou
+        <lb />nous eſtions, il fe plaignit de meſme nous fut animé par nos
+        <lb />reſolutons &amp; ſçachant que nous voulions rompre le cours a la
+        <lb />neceſſité que pour ce il faloitſupplier leCna MAzaa,
+        <lb />tit pour fon intereſt que pour le noſtre il.s offrit d’aller à ſaint
+        <lb />Ge. main expoſer nos penſées anu Car linal, &amp; le ſupplier de
+        <lb />mettre fin à̀ nos miſeres.
+        <lb /> hacune contriboua de ce qu’e’le pût à ce voyage vne des
+        <lb />plus illuſtes luy fit donuer vn paſſe-ort, en ſorte qu’vn peu
+        <lb />connû de ceux qui elloent au corps de garde, &amp; ayant ſeruy
+        <lb />autrefois a ce luy qui eſtoit Capitaine de cartier &amp; en faction
+        <lb />ur les deux heures apres midy le iour de Vendredy abouché
+        <lb />de <pb n="9" />
+        <lb />5
+        <lb />de celles qui l’e nuoyoient arriua à ſain t G ermain ſur les ſix
+        <lb />heures &amp; au petit coucher du Cardinal Maz arin eut audie ce
+        <lb />Il fit grandes reue ences &amp;apres auoir baſé le bord de la cou.
+        <lb />ucrture de ſon lit, ſigne qu’il t eſmoignoit ce qu’il eſtoit il exe
+        <lb rend="¬" break="no" />cuta ſa commiſſion en cetre ſorte
+        <lb />Ie ſuis enuoyé de tout Paris( MOSEGEvRpuis qu’il n’y a
+        <lb /> perſonne de raiſonnable qui ne ſoit de celles qui m ont deputé
+        <lb />deuers vous. Ie ne vous aborde pas auoud’huy comme i’ay fait
+        <lb />autrefois ou le ſeul deſlein de vous produire du plaiſir eſtoit
+        <lb />tout le ſuject de ma viſite. Cetre conſideration ne me touche
+        <lb />plus, la douleur à tout oceupé mon ame &amp; pourueu que ie vous
+        <lb />puiſſe bien exprimer mes ſentimens, ie croy m’eftre tres bien
+        <lb />aquité de ma commiſſion.
+        <lb />La luſtice qui donne le branſlſe à tout ce qui eſt au mode eſt
+        <lb />ſans pouuoir aupres de nous, tout Paris ſe laiſſe conduire a ſes
+        <lb />mouuemens, il n’ya que nos maiſons qui n’en ſont point ébrã
+        <lb rend="¬" break="no" />lées, faute du droit qui n’y agit plus. Nos Dames neantmoins
+        <lb />qui ſont amoureuſes, tres ſenfibles dans ces ſorteade mal-heurs
+        <lb />en ont fair leurs plaintes &amp; fi elles n’euſſent apprehendé de ne
+        <lb />pas bien fa re gouſter leurs raiſons à vos pates aduerſes, elles
+        <lb />leurs auroent preſenté des requ ſtes touchant leurs miſeres,
+        <lb />affin que ces peres du public euſſent aà ſubuenir a leurs neceſſi
+        <lb rend="¬" break="no" />tés, côme aà celles de perſonnes publques Cete pẽſée fut miſe
+        <lb />en deberation &amp; ne fut pas ſuiuie parce que la compagnée ſe
+        <lb />repreſenta l’impuiſſance des veux, la diſcretion des ieunes &amp;
+        <lb />cet eſprir de vertuqui ſe rencõ̃tre dans les vns &amp; dãis les autres ¬
+        <lb rend="¬" break="no" />&amp; qu ſe porte con re tout ce qui approche tant ſoit peu de la
+        <lb />fobleſſe de la nature. Ces meſſieers ainfi n’ayans pas eſlé ctû̂s
+        <lb />Capables d’efeouter nos plantes d’ẽteriner hos requeſles nous
+        <lb />nous ſomnes adreſſés a vous;que ce deſſein a eſté bien proijeté,,
+        <lb />&amp; s’il ne reuſſit; que ie ſuis mal-heu eux. MonsEie v, nous
+        <lb />vous auons cõſidesé enrãce cõmevn Scicilien dont les meurs
+        <lb />ſe ſont factes à Rome, &amp; dont l’eſprit a eſté nourry danstoutes!
+        <lb />les adreſſes &amp; les cõplaiſances qui ſe pranquent enre les fem
+        <lb rend="¬" break="no" />mes, &amp; ceux qui ſe fnt voir par faictement hôõmes nous uons
+        <lb />cI que vote Eminence ſe ſouuiendro de ces delice que <pb n="10" />
+        <lb />vous auez gouſtees parmy nus, de ces delicateſſes die leſquel
+        <lb rend="¬" break="no" />les nous auõs veſcu &amp; que vos ioyes pſſees &amp; noſtre mal-
         heur
-        preſent vous don neroient quel que pité de l’eſtat o nous ſom
-         mes. Eſtant ciclen nous auõs pené que le pays vous donne
-        roit quelques ten lreſſes pur nous, car il me ſouuienot qu’vn
-        iour de dans vos duertſſemens i’enendois des Meſſicurs qui
-        diſoiente ne ſçay ſi c’eſtoit par flatere)que Venus eſtoie neé
-        de Scicile &amp; ſur ce il vous priſt vn gran eſclat de rire ce qui
-        me fitbien voirou que la verité eſtoit telle ou que cetre larerie
-        vous eſtot bien agreable: mais quand voſtre naſſance ne vous
-        donneroit aucuns bons ſentimens pour nouis, le long emps
-        que vous auez eſté à Rome, vous pu donner les veritables lu
-        mieres qui vous doiuent éclairer en ce rencontre. Cette ville
-        qui a touſiours eſteé la maitreſſe &amp; le ſoleil du mon de a par ſes
-        clartés reconnû la beauté de lavie dans ce plaiſir, ſe l’eſt reſer.
-        uée ſans la cõmuniquer à d’autres parce qn’elles ne le meri
-        toient pas Pour ce les Empereurs ont faict ſiſouuent de leurs
-        Palais, les lieus de leur plaiſir, leurs femmes &amp; leurs filles ont
-        tant obligé de conſuls de preteurs &amp; de tribuns &amp; meſmes
-        aujourd huy que Rome ſemble eſtre tout a faict ehangee
-        de face auectoute ſa ſeuerité &amp; ſon ſcrupule elle a authoriſé ce
-        diuertiſſe ment; que cette couſtume eſt louable quiempeſche
-        les pechez contrenatue, les viols, &amp; les adulteres, que Solon
-        fit bien d’acheter des femmes d’amour pour reioü̈ir la ieuneſſe
-        d’Athene, que Lieurgue prudemment en vſa quand l-n’en a
-        point parle dans ſes Loys Et que les peuples d Angleterre, &amp;
-        de Corinthe, honoroient bien leurs dieux lors que dans
-        leurs ſacrifices au lieu de deſtruire les creatures ils s’eploioient
-        a en faire. i ie parlois a vn homme. moins intelligent &amp; que
-        ieuſſe plus de memoire ie vous en dirois d’auantage mais vous
-        meſme qui auez xperimenté les ioyes qui ſe gouſtent de
-        dans l’amour, nous auons a vous faire des reproches de ſouf
-        frir nos mauuais traictemens,. Vous ſçauez que l’amou eſt vn
-        enfant qui ayme les ſuecreris &amp; les ieux &amp; a preſent to:tes
-        nos hilles ſontreduites a manger du pam. Cét enfant ayme fort
-        3
-         les Tapiſeriasde hauselice&amp; les pourtrais ievous iure qu’il 
-        1
-        ne voit plus que des parois &amp; il y a cinq iours que vne que vous
-        conneſſez fut obligé́e de vendre voire pourtraict auec vne
-        quantite d’autres à vil pris pour auoir du pain. Cette action
-        quoy que neceſſaire me ſembla hnteuſe &amp; ſi i’euſſe eu de l ar
-        gent ie l’euſſe pris pour le conſeruer &amp; le retirer d’infamie.
-        MonsiGv, au nom de ces illuſtres Dames ſongés au pliſir
-        que vous auez eu auec elles, a leſtime qu’elles font de vous, a
-        vVoſtre gloire &amp; ſi vos ſoldats mal traitent tant de filles à la Ca
-        pagne pour aſſouuir leur paſſion ramenés les à Paris, nous en
-        ferons ouurir les portes a qu’elle heure que ce ſoit nous auron
-        dequoy vous ſatisfaire &amp; eux auſſi, il n’y aura pas vne de ces
-        Dames qui n’eœn reçoiue beacoup de plaiſirs &amp; dedans leur
-        plus mauuaiſes ſemaines elles pourront eſtre contentes ayane
-        touſiours leur Car dinal.
-        Enſuite Bertrand fit la la reuerence ainſi qu’il auoit eſté in
-        ſtruict &amp; alloit faire ſa eiuilité à part quand il vit Mazarin,
+        <lb />preſent vous don neroient quel que pité de l’eſtat o nous ſom
+        <lb rend="¬" break="no" /> mes. Eſtant ciclen nous auõs pené que le pays vous donne
+        <lb rend="¬" break="no" />roit quelques ten lreſſes pur nous, car il me ſouuienot qu’vn
+        <lb />iour de dans vos duertſſemens i’enendois des Meſſicurs qui
+        <lb />diſoiente ne ſçay ſi c’eſtoit par flatere)que Venus eſtoie neé
+        <lb />de Scicile &amp; ſur ce il vous priſt vn gran eſclat de rire ce qui
+        <lb />me fitbien voirou que la verité eſtoit telle ou que cetre larerie
+        <lb />vous eſtot bien agreable: mais quand voſtre naſſance ne vous
+        <lb />donneroit aucuns bons ſentimens pour nouis, le long emps
+        <lb />que vous auez eſté à Rome, vous pu donner les veritables lu
+        <lb rend="¬" break="no" />mieres qui vous doiuent éclairer en ce rencontre. Cette ville
+        <lb />qui a touſiours eſteé la maitreſſe &amp; le ſoleil du mon de a par ſes
+        <lb />clartés reconnû la beauté de lavie dans ce plaiſir, ſe l’eſt reſer.
+        <lb />uée ſans la cõmuniquer à d’autres parce qn’elles ne le meri
+        <lb rend="¬" break="no" />toient pas Pour ce les Empereurs ont faict ſiſouuent de leurs
+        <lb />Palais, les lieus de leur plaiſir, leurs femmes &amp; leurs filles ont
+        <lb />tant obligé de conſuls de preteurs &amp; de tribuns &amp; meſmes
+        <lb />aujourd huy que Rome ſemble eſtre tout a faict ehangee
+        <lb />de face auectoute ſa ſeuerité &amp; ſon ſcrupule elle a authoriſé ce
+        <lb />diuertiſſe ment; que cette couſtume eſt louable quiempeſche
+        <lb />les pechez contrenatue, les viols, &amp; les adulteres, que Solon
+        <lb />fit bien d’acheter des femmes d’amour pour reioü̈ir la ieuneſſe
+        <lb />d’Athene, que Lieurgue prudemment en vſa quand l-n’en a
+        <lb />point parle dans ſes Loys Et que les peuples d Angleterre, &amp;
+        <lb />de Corinthe, honoroient bien leurs dieux lors que dans
+        <lb />leurs ſacrifices au lieu de deſtruire les creatures ils s’eploioient
+        <lb />a en faire. i ie parlois a vn homme. moins intelligent &amp; que
+        <lb />ieuſſe plus de memoire ie vous en dirois d’auantage mais vous
+        <lb />meſme qui auez xperimenté les ioyes qui ſe gouſtent de
+        <lb rend="¬" break="no" />dans l’amour, nous auons a vous faire des reproches de ſouf
+        <lb rend="¬" break="no" />frir nos mauuais traictemens,. Vous ſçauez que l’amou eſt vn
+        <lb />enfant qui ayme les ſuecreris &amp; les ieux &amp; a preſent to:tes
+        <lb />nos hilles ſontreduites a manger du pam. Cét enfant ayme fort
+        <lb />3
+        <lb /> les Tapiſeriasde hauselice&amp; les pourtrais ievous iure qu’il <pb n="11" />
+        <lb />1
+        <lb />ne voit plus que des parois &amp; il y a cinq iours que vne que vous
+        <lb />conneſſez fut obligé́e de vendre voire pourtraict auec vne
+        <lb />quantite d’autres à vil pris pour auoir du pain. Cette action
+        <lb />quoy que neceſſaire me ſembla hnteuſe &amp; ſi i’euſſe eu de l ar
+        <lb rend="¬" break="no" />gent ie l’euſſe pris pour le conſeruer &amp; le retirer d’infamie.
+        <lb />MonsiGv, au nom de ces illuſtres Dames ſongés au pliſir
+        <lb />que vous auez eu auec elles, a leſtime qu’elles font de vous, a
+        <lb />vVoſtre gloire &amp; ſi vos ſoldats mal traitent tant de filles à la Ca
+        <lb rend="¬" break="no" />pagne pour aſſouuir leur paſſion ramenés les à Paris, nous en
+        <lb />ferons ouurir les portes a qu’elle heure que ce ſoit nous auron
+        <lb />dequoy vous ſatisfaire &amp; eux auſſi, il n’y aura pas vne de ces
+        <lb />Dames qui n’eœn reçoiue beacoup de plaiſirs &amp; dedans leur
+        <lb />plus mauuaiſes ſemaines elles pourront eſtre contentes ayane
+        <lb />touſiours leur Car dinal.
+        <lb />Enſuite Bertrand fit la la reuerence ainſi qu’il auoit eſté in
+        <lb rend="¬" break="no" />ſtruict &amp; alloit faire ſa eiuilité à part quand il vit Mazarin,
         qui
-        changea &amp; s’eſtoit apercû de ce trouble des le temps qu’il luy
-        auoit parlé de reuenir à Paris, C’eſt pourquoy ſans attendre
-        reſponce faiſane vne double reuerence &amp; bonne mine a mau
-        uais ieu ſortit par vn eſcalier ſecret, ſe trouuadans la cour ou vn
-        Lieutenant des gardes luy demanda s’il n’auoit point quelque
-        lettre pour luy, il luy dit que les poulets eſtoiéit trop de reſerue
-        à Paris, pour les en laiſſer ſortir. Trouuant ainſi touſiours quel
-        que coaneſſance il paſſa les corps de garde les plus auancez,
-        tout la nuit vnt à ’aris, &amp; quelques Bourgeois à la poe qui
-        eſtoient de garde reconneſſans le pelerin alerent auec luy au
-        conclaue de ces Dames qui receurent plus de fruit de leur
-        viſite que de leur ambaſſade. Et ce recit eſt ſi veritable qu’en
-        de ceux de la gar de qui alla faire voir la iuſteſſe de ſon coup &amp;
-        la ſorce deſes armes dans la viſite qu’il fit, apresauoir tout ſeeu
-        de leur conduteur a pris la peine de donner cecy au pubhice
-        pour faire voir l’ingrat tude &amp; l’auarice de Mazarin, qui ne ſe
-        ſouuient point des faueurs qu’il a receus &amp; ſans ployer la toi
-        lete ne laiſſe pas de voler le bordel.			</p>
-		</body>
-	</text>
+        <lb />changea &amp; s’eſtoit apercû de ce trouble des le temps qu’il luy
+        <lb />auoit parlé de reuenir à Paris, C’eſt pourquoy ſans attendre
+        <lb />reſponce faiſane vne double reuerence &amp; bonne mine a mau
+        <lb rend="¬" break="no" />uais ieu ſortit par vn eſcalier ſecret, ſe trouuadans la cour ou vn
+        <lb />Lieutenant des gardes luy demanda s’il n’auoit point quelque
+        <lb />lettre pour luy, il luy dit que les poulets eſtoiéit trop de reſerue
+        <lb />à Paris, pour les en laiſſer ſortir. Trouuant ainſi touſiours quel
+        <lb rend="¬" break="no" />que coaneſſance il paſſa les corps de garde les plus auancez,
+        <lb />tout la nuit vnt à ’aris, &amp; quelques Bourgeois à la poe qui
+        <lb />eſtoient de garde reconneſſans le pelerin alerent auec luy au
+        <lb />conclaue de ces Dames qui receurent plus de fruit de leur
+        <lb />viſite que de leur ambaſſade. Et ce recit eſt ſi veritable qu’en
+        <lb />de ceux de la gar de qui alla faire voir la iuſteſſe de ſon coup &amp;
+        <lb />la ſorce deſes armes dans la viſite qu’il fit, apresauoir tout ſeeu
+        <lb />de leur conduteur a pris la peine de donner cecy au pubhice
+        <lb />pour faire voir l’ingrat tude &amp; l’auarice de Mazarin, qui ne ſe
+        <lb />ſouuient point des faueurs qu’il a receus &amp; ſans ployer la toi
+        <lb rend="¬" break="no" />lete ne laiſſe pas de voler le bordel. </p>
+    </body>
+  </text>
 </TEI>

@@ -1,1207 +1,868 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2853_GALL">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Première partie de la science universelle des courtisans,
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Première partie de la science universelle des courtisans,
           qui consiste dans les déclinaisons de leur grammaire, en vers burlesques.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName role="XML_Encoding">
-						<affiliation>
-							<roleName type="status">Stagiaire</roleName>
-						</affiliation>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="XML_Encoding">
+            <affiliation>
+              <roleName type="status">Stagiaire</roleName>
+            </affiliation>
 Roblin Camille					</persName>
-					<persName role="XML_Encoding">
-						<affiliation>
-							<roleName type="status">Stagiaire</roleName>
-						</affiliation>
+          <persName role="XML_Encoding">
+            <affiliation>
+              <roleName type="status">Stagiaire</roleName>
+            </affiliation>
 Lecha Mélanie					</persName>
-					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-02-23">23 février 2021</date>
-				<availability status="restricted" n="cc-by">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://gallica.bnf.fr/ark:/12148/bpt6k57078100"/>
-					<author/>
-					<title source="Moreau">Première partie de la science universelle des courtisans, qui
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-02-23">23 février 2021</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k57078100" />
+          <author />
+          <title source="Moreau">Première partie de la science universelle des courtisans, qui
             consiste dans les déclinaisons de leur grammaire, en vers burlesques.</title>
-					<pubPlace ref="geonames:2988507">Paris</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure unit="page" quantity="15"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2988507">Paris</settlement>
-						<institution>Bibliothèque nationale de France</institution>
-						<repository>Département Littérature et art</repository>
-						<idno type="cote">YE-4023</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace ref="geonames:2988507">Paris</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure unit="page" quantity="15" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2988507">Paris</settlement>
+            <institution>Bibliothèque nationale de France</institution>
+            <repository>Département Littérature et art</repository>
+            <idno type="cote">YE-4023</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">2853. Première partie de la science universelle des cour tisans, qui
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">2853. Première partie de la science universelle des cour tisans, qui
           consiste dans les déclinaisons de leur gram maire, en vers burlesques. Paris, 1649. Trois
           parties, la première de 15, les deux autres de 12 pages.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">vers</term>
-					<term type="genre">poésie</term>
-					<term type="genre" ref="litterature/burlesque.xml">burlesque</term>
-					<term type="genre">satirique</term>
-					<term type="subject"/>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2021-11-08" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f2.highres"/>
-				<pb n="2" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f3.highres"/>
-				<pb n="3" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f4.highres"/>
-				<pb n="4" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f5.highres"/>
-				<pb n="5" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f6.highres"/>
-				<pb n="6" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f7.highres"/>
-				<pb n="7" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f8.highres"/>
-				<pb n="8" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f9.highres"/>
-				<pb n="9" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f10.highres"/>
-				<pb n="10" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f11.highres"/>
-				<pb n="11" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f12.highres"/>
-				<pb n="12" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f13.highres"/>
-				<pb n="13" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f14.highres"/>
-				<pb n="14" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f15.highres"/>
-				<pb n="15" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f16.highres"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<figure type="decoration"/>
-				<fw place="top-center" type="pageNum">3</fw>
-				<fw place="bot-right" type="sig">A ij</fw>
-				<fw place="top-center" type="pageNum">4</fw>
-				<fw place="bot-right" type="catch">En</fw>
-				<fw place="top-center" type="pageNum">5</fw>
-				<fw place="top-center" type="pageNum">6</fw>
-				<fw place="top-center" type="pageNum">7</fw>
-				<fw place="top-center" type="pageNum">s3</fw>
-				<fw place="bot-right" type="catch">Le</fw>
-				<fw place="top-center" type="pageNum">9</fw>
-				<fw place="top-center" type="pageNum">109</fw>
-				<fw place="top-center" type="pageNum">1</fw>
-				<fw place="top-center" type="pageNum">H2</fw>
-				<fw place="top-center" type="pageNum">13</fw>
-				<fw place="top-center" type="pageNum">14</fw>
-				<fw place="top-center" type="pageNum">15</fw>
-				<title type="sub">e,ee ti’fee’ttete deedde te’iAe’det 1 Premiere partie dela ſeience
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">vers</term>
+          <term type="genre">poésie</term>
+          <term type="genre" ref="litterature/burlesque.xml">burlesque</term>
+          <term type="genre">satirique</term>
+          <term type="subject" />
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2021-11-08" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f2.highres" />
+        <lb />PREMIERE PARTIE
+        <lb />DE LA
+        <lb />SCIENCE
+        <lb />VNIVERSELLE
+        <lb />DES
+        <lb />COVRTISANS: Qui conſiſte dans les declinaiſons
+        <lb />de leur Grammaire.
+        <lb />EN VERS BVRLESQVES. <figure type="decoration" />
+        <lb />A PAR1S.
+        <lb />M. DC. XLIX. <pb n="2" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f3.highres" />
+        <pb n="3" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f4.highres" />
+        <fw place="top-center" type="pageNum">3</fw>
+        <title type="sub">e,ee ti’fee’ttete deedde te’iAe’det 1 Premiere partie dela ſeience
           vnjuerſelle des Couriſans, quiconſiſte dans les declinaiſons deleur Gammaire, En er
           utleſques.</title>
-				<title type="sub">La premiere Decdinaiſ̂n de la Cou.</title>
-				<title type="sub">La ſeconde Declinaiſon.</title>
-				<title type="sub">La troiſiefme Deelmael’ suq</title>
-				<title type="sub">La quatmieſme Doliaiſil</title>
-				<title type="sub">La cinquieſme Déclinaijfon</title>
-				<title type="sub">Le nombre ſingulierduel plurier.</title>
-				<title type="sub">Les diuers s des Noms.</title>
-				<l>
-					<lb/>
-Les Courtiſans de qpui lieuie				</l>
-				<l>
-					<lb/>
-J,Eſt eſſentielle à la vie,				</l>
-				<l>
-					<lb/>
-De paroiſtue &amp; de pruenir,				</l>
-				<l>
-					<lb/>
-Souuent ne ſe peuuens tenir				</l>
-				<l>
-					<lb/>
-Dans le meſme rod qu’ leus tige,				</l>
-				<l>
-					<lb/>
-Le droict d&amp; la raiſom exige				</l>
-				<l>
-					<lb/>
-Ils ſont cotraines de déliner,				</l>
-				<l>
-					<lb/>
-Lors qu’ils ne veulent s’incliner				</l>
-				<l>
-					<lb/>
-Au bon plaiſir de la fortune,				</l>
-				<l>
-					<lb/>
-Laquelle n’eſt iamais commane,				</l>
-				<l>
-					<lb/>
-Pour monſtrer leurs declinaiſons,				</l>
-				<l>
-					<lb/>
-De leurs diuerſes oraiſons,				</l>
-				<l>
-					<lb/>
-le dois deſcouurir les paties,				</l>
-				<l>
-					<lb/>
-Dont touſiours elles fone baſties;				</l>
-				<l>
-					<lb/>
-Vous ſçauez que les Rud̂imens,				</l>
-				<l>
-					<lb/>
-qui contiennent les Elemens				</l>
-				<l>
-					<lb/>
-Des langues que lon veut apprende,.				</l>
-				<l>
-					<lb/>
-Ont huict parties a nous rendre,				</l>
-				<l>
-					<lb/>
-A ſçauoir les noms &amp; pronoms,				</l>
-				<l>
-					<lb/>
-s				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-8				</l>
-				<l>
-					<lb/>
-!				</l>
-				<l>
-					<lb/>
-Verbes &amp; participans noms,				</l>
-				<l>
-					<lb/>
-S				</l>
-				<l>
-					<lb/>
-Qu’on decline ou conjugue encore,				</l>
-				<l>
-					<lb/>
-Selon Donat &amp; Dioſcore,				</l>
-				<l>
-					<lb/>
-Auerbes prepoſfions,				</l>
-				<l>
-					<lb/>
-Copules interjections,				</l>
-				<l>
-					<lb/>
-Sont quatre parties dernieres,				</l>
-				<l>
-					<lb/>
-Que l’on void en pluſieurs matieres,				</l>
-				<l>
-					<lb/>
-La grammaire du Courtiſant,				</l>
-				<l>
-					<lb/>
-A huict parties en diſant,				</l>
-				<l>
-					<lb/>
-Telles que ie viens de deſcrire,				</l>
-				<l>
-					<lb/>
-Qui peut-eſtre vous feront rire,				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-.				</l>
-				<l>
-					<lb/>
-Les noms ſignifient leurs corps,				</l>
-				<l>
-					<lb/>
-Qui ſont ſouuent plains des remords,				</l>
-				<l>
-					<lb/>
-Les pronoms prouiennent des terres,				</l>
-				<l>
-					<lb/>
-Qui ſont acquiſes par les guerres,				</l>
-				<l>
-					<lb/>
-Ou bien par les faueurs des Roix,				</l>
-				<l>
-					<lb/>
-Par la nature ou par les loix;				</l>
-				<l>
-					<lb/>
-Ces pronoms ſont autant de tiltres,¬				</l>
-				<l>
-					<lb/>
-Qui les diſtinguent de belitres,				</l>
-				<l>
-					<lb/>
-Des Artiſans &amp; Roturiers;				</l>
-				<l>
-					<lb/>
-Et les font paſſer grands guerriers;ii				</l>
-				<l>
-					<lb/>
-Hommes d’honneur &amp; de merire,				</l>
-				<l>
-					<lb/>
-Et dont l’extraction inuite				</l>
-				<l>
-					<lb/>
-Les peuples de leur rendre honneurs				</l>
-				<l>
-					<lb/>
-Les recognoiſſans pour Seigneurs,				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-¬				</l>
-				<l>
-					<lb/>
-en v mot ſont des Gentilshommes,				</l>
-				<l>
-					<lb/>
-Qui dans les terres où nous fommes				</l>
-				<l>
-					<lb/>
-Ont du pouuoir deſſus. nos bieus,2				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-Par droit &amp; par phaſiaurs moyensili				</l>
-				<l>
-					<lb/>
-Leurs verbes qui ſont des parls				</l>
-				<l>
-					<lb/>
-Qui ne ſentent point nos eſcolesi				</l>
-				<l>
-					<lb/>
-Sont des mors biendits-&amp; clhoiſis ,y				</l>
-				<l>
-					<lb/>
-u				</l>
-				<l>
-					<lb/>
-Par qui nos eœurs eſtansſaiſis,				</l>
-				<l>
-					<lb/>
-Suiuent leurs plaiſis &amp; leurs-modes,				</l>
-				<l>
-					<lb/>
-Et nous viuons à leurs meflõdes				</l>
-				<l>
-					<lb/>
-Les participes de las Cour, llo 2				</l>
-				<l>
-					<lb/>
-l				</l>
-				<l>
-					<lb/>
-Sont des bons mots qu’aechaueiour,¬				</l>
-				<l>
-					<lb/>
-On inuente dans noſtre langue				</l>
-				<l>
-					<lb/>
-Pour rendre plus douce vneharangue,				</l>
-				<l>
-					<lb/>
-Leurs aduerbes font leurs accensi				</l>
-				<l>
-					<lb/>
-Diuers, ſelon le diuars temps,				</l>
-				<l>
-					<lb/>
-Et le ſujet qui ſe prononce, i				</l>
-				<l>
-					<lb/>
-Soit pour demande ou pour reſponce,				</l>
-				<l>
-					<lb/>
-Ou pluſtoſt leurs aduerbes ſont				</l>
-				<l>
-					<lb/>
-La delicateſſe qu’ils ont				</l>
-				<l>
-					<lb/>
-A parler dans la compagnie,				</l>
-				<l>
-					<lb/>
-Qui rend plus douce leurt manie,				</l>
-				<l>
-					<lb/>
-Toutes leurs propoſitions,				</l>
-				<l>
-					<lb/>
-Sont des fourbes &amp; fictions;				</l>
-				<l>
-					<lb/>
-Qu’ils inuentent d’vn artifice;				</l>
-				<l>
-					<lb/>
-Subtil pour coaurir leur malice,				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-Les conjonctions en-apres				</l>
-				<l>
-					<lb/>
-Sont les moyeas les plus ſeerets,				</l>
-				<l>
-					<lb/>
-Qu’ils ont inuencez daas leurs ames,				</l>
-				<l>
-					<lb/>
-Qui ſemblentviure dans les flammes,				</l>
-				<l>
-					<lb/>
-Comme la Salemendre au feu,				</l>
-				<l>
-					<lb/>
-Ces Meſſieurs quand ils ont conçeu				</l>
-				<l>
-					<lb/>
-Quelques moyens pour bien conioindre				</l>
-				<l>
-					<lb/>
-Leurs affaires par lart de feindre,				</l>
-				<l>
-					<lb/>
-Pour aſſouuir leurs paſſions,				</l>
-				<l>
-					<lb/>
-Vſent des interiections,				</l>
-				<l>
-					<lb/>
-oui ſont des eſlans pitoyables,				</l>
-				<l>
-					<lb/>
-Triſtes, ioyeux au lamentables,				</l>
-				<l>
-					<lb/>
-Plein de ſouſpirs ou bien de rits,				</l>
-				<l>
-					<lb/>
-C’eſt ſelon comme leurs eſpris,				</l>
-				<l>
-					<lb/>
-Ou le ſuiet des ioyes ou des larmes				</l>
-				<l>
-					<lb/>
-Pour les plaiſirs ou les allarmes,				</l>
-				<l>
-					<lb/>
-Parmy ces huict voix d’oraiſon,				</l>
-				<l>
-					<lb/>
-Nous n’en trouuons dans la ſaiſon				</l>
-				<l>
-					<lb/>
-que trois qui ſont bien declinables,				</l>
-				<l>
-					<lb/>
-E qui ſont fort conſiderables,				</l>
-				<l>
-					<lb/>
-l’ay deſſein de vous eſclaircir				</l>
-				<l>
-					<lb/>
-qQuelles ſont pour bien réüſſir,				</l>
-				<l>
-					<lb/>
-On les nomment dans les principes,				</l>
-				<l>
-					<lb/>
-Les noms, pronoms &amp; participes,				</l>
-				<l>
-					<lb/>
-En ces trois paries en chef,				</l>
-				<l>
-					<lb/>
-Il faut regarder derechef,				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-Le genre, eſpece &amp; la figure,				</l>
-				<l>
-					<lb/>
-Les cas, le nombre par nature,				</l>
-				<l>
-					<lb/>
-Les articles, les accidans				</l>
-				<l>
-					<lb/>
-Qui ſe treuuent touſiours dedans,				</l>
-				<l>
-					<lb/>
-Ayant conſiderez les eauſes				</l>
-				<l>
-					<lb/>
-De ces trois principalles choſes				</l>
-				<l>
-					<lb/>
-Nous viendrons aux declinaiſons				</l>
-				<l>
-					<lb/>
-Qui feront voir que leurs raiſons				</l>
-				<l>
-					<lb/>
-Sont quelquesfois fort legitimes,				</l>
-				<l>
-					<lb/>
-Et bien ſouuent plaines de crimes,				</l>
-				<l>
-					<lb/>
-Pour bien commencer comme il faut				</l>
-				<l>
-					<lb/>
-t pour ne faire aucun defaut,				</l>
-				<l>
-					<lb/>
-Les articles ſeront mes guides				</l>
-				<l>
-					<lb/>
-Qui ſont trois qui comme trois brides,				</l>
-				<l>
-					<lb/>
-Regiſſent ces trois voix par tout				</l>
-				<l>
-					<lb/>
-Du commencement iuſques au bout,				</l>
-				<l>
-					<lb/>
-Les articles ſont les trois ſorte				</l>
-				<l>
-					<lb/>
-De nobleſſe que ie tranſporte,				</l>
-				<l>
-					<lb/>
-A la partie qu’apres ſuit,				</l>
-				<l>
-					<lb/>
-Où ſans faire beaucoup de bruit,				</l>
-				<l>
-					<lb/>
-Ie deſcouuriray l’excellence				</l>
-				<l>
-					<lb/>
-Du genre ou bien de leur naiſſance,				</l>
-				<l>
-					<lb/>
-Qui par vn moyen rauiſſant,				</l>
-				<l>
-					<lb/>
-Fera voir la beaaté du ſang,				</l>
-				<l>
-					<lb/>
-ui vous deſcouurira l’eſpece				</l>
-				<l>
-					<lb/>
-Et la figure qui la preſſe				</l>
-				<l>
-					<lb/>
-Auee les acoidens quiſont				</l>
-				<l>
-					<lb/>
-Snp				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-Auoir d’honneur ou de l’affront,				</l>
-				<l>
-					<lb/>
-Iey ſeulemét ie deſire				</l>
-				<l>
-					<lb/>
-Traiter du cas heureux ou pire, l				</l>
-				<l>
-					<lb/>
-Du nombre, mais pour bien parler; e23				</l>
-				<l>
-					<lb/>
-Faut aux declinaiſons aller,				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-On a couſtume dans les claſſes,				</l>
-				<l>
-					<lb/>
-Principalement les plus baſfes,				</l>
-				<l>
-					<lb/>
-De faire le meſme diſcours,¬				</l>
-				<l>
-					<lb/>
-Si bien que i’ay là mon recoüs,				</l>
-				<l>
-					<lb/>
-Et m’enfonçant dans la ſixieſme,l				</l>
-				<l>
-					<lb/>
-I’apperçois vn enfant tout bleſme,i				</l>
-				<l>
-					<lb/>
-Qui me dit que dans chaque nonm				</l>
-				<l>
-					<lb/>
-On treuue ſix cas enenom’				</l>
-				<l>
-					<lb/>
-Leſquels communement on nommes,,				</l>
-				<l>
-					<lb/>
-Nominatif, genitif, come ¬				</l>
-				<l>
-					<lb/>
-Datif auec l’accuſatif,				</l>
-				<l>
-					<lb/>
-Le vocatif &amp; l’ablatif;				</l>
-				<l>
-					<lb/>
-En ces ſix cas il me fait eroire				</l>
-				<l>
-					<lb/>
-Que le nom y trouue ſa gloire,				</l>
-				<l>
-					<lb/>
-Et que l’on trouue dans ces cas,				</l>
-				<l>
-					<lb/>
-Ses vertus auec ſes appas,				</l>
-				<l>
-					<lb/>
-En ſuitte ce Docteur friuolle,				</l>
-				<l>
-					<lb/>
-M’enſeigne que dans leur ſoolle,				</l>
-				<l>
-					<lb/>
-On treuue dans les noms Latins,				</l>
-				<l>
-					<lb/>
-Deux nombres qui font les deſtins,				</l>
-				<l>
-					<lb/>
-D’vne ou bien de pluſieurs petſonnes,				</l>
-				<l>
-					<lb/>
-Soient elles meſchantes ou bonnes,				</l>
-				<l>
-					<lb/>
-¬¬ ¬ouan¬¬				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-Le premier eſt dit ſinglie l				</l>
-				<l>
-					<lb/>
-nt l’autre eſtappellé pluriot,				</l>
-				<l>
-					<lb/>
-Il me raconte d’auaneagejioi				</l>
-				<l>
-					<lb/>
-Qe parmy les Cre ſoarlaiegagos				</l>
-				<l>
-					<lb/>
-dioüte aces deue proededesy l				</l>
-				<l>
-					<lb/>
-n troiſieſme par aeidaes				</l>
-				<l>
-					<lb/>
-Qui duél touſiours on appelle,				</l>
-				<l>
-					<lb/>
-Sans que l’on rendecrhinelle, ?				</l>
-				<l>
-					<lb/>
-La claſſe pour ce ſuietla,				</l>
-				<l>
-					<lb/>
-Ie vous diray pourquoy cea4				</l>
-				<l>
-					<lb/>
-Apres que i’auray fait leconte				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-ITouchant pluſieuts edlinaiſons,				</l>
-				<l>
-					<lb/>
-Qui ſelon lesrerminaaſons.				</l>
-				<l>
-					<lb/>
-et leurs genitifs ſontdiuerſes;				</l>
-				<l>
-					<lb/>
-Ainſi que les couleurs. des Perſes				</l>
-				<l>
-					<lb/>
-l m’a dit que communemene,¬				</l>
-				<l>
-					<lb/>
-On en faitcinqentieremen,				</l>
-				<l>
-					<lb/>
-Dans ces Latins &amp; dans larece,				</l>
-				<l>
-					<lb/>
-Comme appertpanlaregleexpreſſê,				</l>
-				<l>
-					<lb/>
-Ces declinaiſons ntleus cas i				</l>
-				<l>
-					<lb/>
-Plus differants qu’ohneoroicpas ;				</l>
-				<l>
-					<lb/>
-Tanr au plurier qu’e l’auuenombre;				</l>
-				<l>
-					<lb/>
-t meſme dans le duelſormbfe, i				</l>
-				<l>
-					<lb/>
-Ce ieune enfant m’ayaneappris				</l>
-				<l>
-					<lb/>
-La valeur&amp; le iuſte pruei n iil				</l>
-				<l>
-					<lb/>
-¬, ae¬ ¬d a,¬¬				</l>
-				<l>
-					<lb/>
-8				</l>
-				<l>
-					<lb/>
-De ce que l’enfant ous raonte,				</l>
-				<l>
-					<lb/>
-C				</l>
-				<l>
-					<lb/>
-,				</l>
-				<l>
-					<lb/>
-i¬				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-Des declinaiſons differentes, ii				</l>
-				<l>
-					<lb/>
-En cas &amp; nombres ineonſtantes				</l>
-				<l>
-					<lb/>
-Apres dans mon entendemens s				</l>
-				<l>
-					<lb/>
-I’ay conçeu forti gaillandelment l vte				</l>
-				<l>
-					<lb/>
-Les Declinaiſons plus bi-iarmse				</l>
-				<l>
-					<lb/>
-Des Courtiſans où des Icarres,				</l>
-				<l>
-					<lb/>
-Qui volent à Paris au tour				</l>
-				<l>
-					<lb/>
-Des Princes, &amp; Dames de Cour,				</l>
-				<l>
-					<lb/>
-l’ay recogneu leurs cas encore ii				</l>
-				<l>
-					<lb/>
-Qui font bien que la Cour i’honores i¬				</l>
-				<l>
-					<lb/>
-Mais que i’ayme mieux tenir loing,				</l>
-				<l>
-					<lb/>
-Eour iure ecrant de ant de ſoaung				</l>
-				<l>
-					<lb/>
-Qu’il faut auoir en eeſte claſſe;				</l>
-				<l>
-					<lb/>
-Où iamais vn eſprit ne paſſe,.				</l>
-				<l>
-					<lb/>
-N’y ne prend entiers ſes degrez:				</l>
-				<l>
-					<lb/>
-Si ce n’eſt celuy des ſecrets,				</l>
-				<l>
-					<lb/>
-I’ay tracé la fidelle image				</l>
-				<l>
-					<lb/>
-De leurs nombres de qui l’vſage,				</l>
-				<l>
-					<lb/>
-Eſt difficile dans ce temps,				</l>
-				<l>
-					<lb/>
-Et dont tous ne ſont pas contants.				</l>
-				<l>
-					<lb/>
-Maintenant ilfaut que iiexplique,				</l>
-				<l>
-					<lb/>
-Et que ie reduiſe en pratique,				</l>
-				<l>
-					<lb/>
-Ce que ie viens de propoſer				</l>
-				<l>
-					<lb/>
-A fin de ne plus abbuſér				</l>
-				<l>
-					<lb/>
-De voſtre bonne patiene				</l>
-				<l>
-					<lb/>
-l i				</l>
-				<l>
-					<lb/>
-nrendes dons ceſte ſcienoe, l				</l>
-				<l>
-					<lb/>
-ie				</l>
-				<l>
-					<lb/>
-¬				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-Les cinq declinaiſons de Cour,				</l>
-				<l>
-					<lb/>
-ouel’on renconteoà chaque iour,¬				</l>
-				<l>
-					<lb/>
-Ont vne difference grande,¬				</l>
-				<l>
-					<lb/>
-Ainſi que le deſtein demande				</l>
-				<l>
-					<lb/>
-Le Courtiſant en premier lieu				</l>
-				<l>
-					<lb/>
-Commence à decliner quand Dieu,				</l>
-				<l>
-					<lb/>
-Pour la punitiondes crimes,				</l>
-				<l>
-					<lb/>
-Par ſes iuſtes ſaintes maximes				</l>
-				<l>
-					<lb/>
-lInterromptſes pretenſions;				</l>
-				<l>
-					<lb/>
-Et les met en confuſions,				</l>
-				<l>
-					<lb/>
-Vous ne ſçauries iamais biencroire;				</l>
-				<l>
-					<lb/>
-Comme il pert de ſa vaine gloire				</l>
-				<l>
-					<lb/>
-u le eie eonl eileſl				</l>
-				<l>
-					<lb/>
-n ſecond lieu le Courtiſaat;				</l>
-				<l>
-					<lb/>
-Quand pour parroiſtre bien diſant.				</l>
-				<l>
-					<lb/>
-Parle de Dieuſans reuerence,!				</l>
-				<l>
-					<lb/>
-Où bien quand porte d’arrogance:				</l>
-				<l>
-					<lb/>
-le lus nen e ieonenepen				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-dloe i1				</l>
-				<l>
-					<lb/>
-Dieu pour rabaiſſet ſe ſopebe,				</l>
-				<l>
-					<lb/>
-Le rend digne de pjaiſtre Plerbe,				</l>
-				<l>
-					<lb/>
-la0				</l>
-				<l>
-					<lb/>
-Il voit ſes maux entrtensoi ibouv n0				</l>
-				<l>
-					<lb/>
-Ayant decliné Doiaop uiflab olnpiniA				</l>
-				<l>
-					<lb/>
-Enſuite noſtre Gëatilehoamete siie09				</l>
-				<l>
-					<lb/>
-no8				</l>
-				<l>
-					<lb/>
-Ainſi dans laCôur iE ſeſfonoélh				</l>
-				<l>
-					<lb/>
-¬				</l>
-				<l>
-					<lb/>
-Decline encore de rëhef, a¬				</l>
-				<l>
-					<lb/>
-iuo				</l>
-				<l>
-					<lb/>
-Lors que ſans crairde néchef lli1				</l>
-				<l>
-					<lb/>
-Il veut viure à ſa Phansaeiſie p oluqnmnl				</l>
-				<l>
-					<lb/>
-Et que ſon ame n’eſt ſaifieolulo ron i1				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-Que d’vne vilearbifioui e l				</l>
-				<l>
-					<lb/>
-ir9 l i				</l>
-				<l>
-					<lb/>
-De viure à ſa deaeioe				</l>
-				<l>
-					<lb/>
-0				</l>
-				<l>
-					<lb/>
-Er de n’obeir à ſon perelûs os oli				</l>
-				<l>
-					<lb/>
-Le Ciel animé de coles uIoeb iu vl92				</l>
-				<l>
-					<lb/>
-Tache ſes deſſeins arreſter				</l>
-				<l>
-					<lb/>
-Pour auoir decliné Patedi				</l>
-				<l>
-					<lb/>
-il b r				</l>
-				<l>
-					<lb/>
-oidlie				</l>
-				<l>
-					<lb/>
-ſin				</l>
-				<l>
-					<lb/>
-Bien ſouuent il decllneecoe lii				</l>
-				<l>
-					<lb/>
-¬				</l>
-				<l>
-					<lb/>
-Alors que ſans hotge ildeuorel				</l>
-				<l>
-					<lb/>
-Les biens qu’il a’a pis-dmaſſ e				</l>
-				<l>
-					<lb/>
-Comme ſon para treſpaſſo, h ́				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-Il ſe voit reduit dans la honte,				</l>
-				<l>
-					<lb/>
-Et la rage qui le ſurmonte,				</l>
-				<l>
-					<lb/>
-Le rend confus en vn telpoîné.				</l>
-				<l>
-					<lb/>
-Que le deſplaiſif quile pouinr,				</l>
-				<l>
-					<lb/>
-Fait meſme qu’il ſe deſeſpere:				</l>
-				<l>
-					<lb/>
-Voila ce qu’il a pourſalaire,				</l>
-				<l>
-					<lb/>
-Il voit ſes deſſeins abbatus,				</l>
-				<l>
-					<lb/>
-Pour auoir decliné fructus.				</l>
-				<l>
-					<lb/>
-Enfin dans la Cour on decline,				</l>
-				<l>
-					<lb/>
-Quand pour auois fortbonnemine;				</l>
-				<l>
-					<lb/>
-L’on ſe mocque deſeségaux,				</l>
-				<l>
-					<lb/>
-De la prouienent des grands maux,				</l>
-				<l>
-					<lb/>
-Comme le meurtre &amp; la diſgrace:				</l>
-				<l>
-					<lb/>
-OQnpeutr bienauoir de l’audace;				</l>
-				<l>
-					<lb/>
-Mais il faut auoir de l’eſprit				</l>
-				<l>
-					<lb/>
-Pour prendre le ſort quand ilrit,				</l>
-				<l>
-					<lb/>
-Et parvne main violante,				</l>
-				<l>
-					<lb/>
-Saiſir l’occaſion preſente,				</l>
-				<l>
-					<lb/>
-Autrement on paſſe pounniés,				</l>
-				<l>
-					<lb/>
-Pour auoir decliné Dies.				</l>
-				<l>
-					<lb/>
-Le premier leur eſt méoriſable				</l>
-				<l>
-					<lb/>
-Soit dans le ieu, ſoit à la tahle				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-,LLaamm--rr				</l>
-				<l>
-					<lb/>
-Dans leurs charges &amp; qualitez,				</l>
-				<l>
-					<lb/>
-Ils abhorrent les vnitez				</l>
-				<l>
-					<lb/>
-,1				</l>
-				<l>
-					<lb/>
-1				</l>
-				<l>
-					<lb/>
-Croyant quelles leurs ſont funeſtas				</l>
-				<l>
-					<lb/>
-Pour monſtrer dans les plus hautes feſtes				</l>
-				<l>
-					<lb/>
-Des merites &amp; de l’honneur,				</l>
-				<l>
-					<lb/>
-Chaeun d’eux tranche du Seigneur,				</l>
-				<l>
-					<lb/>
-Le plurier conuient à ldeur mode:				</l>
-				<l>
-					<lb/>
-Parce qu’il leur eſt plus commode i				</l>
-				<l>
-					<lb/>
-Pour bien paroiſtre dans la Gour				</l>
-				<l>
-					<lb/>
-Où l’orgueil baſtit ſon ſejour,				</l>
-				<l>
-					<lb/>
-Le duel parmy le delice,				</l>
-				<l>
-					<lb/>
-De l’amour leu ſemble propiee ’i				</l>
-				<l>
-					<lb/>
-Et parmy les defits de Mars				</l>
-				<l>
-					<lb/>
-C’eſt la que comme descefats;				</l>
-				<l>
-					<lb/>
-Ils font paroiſtre leur vaillanoe,				</l>
-				<l>
-					<lb/>
-A leur honneur, &amp; de la Ftance.				</l>
-				<l>
-					<lb/>
-Les nombres du nom’on des oas ,				</l>
-				<l>
-					<lb/>
-Qui ſouuent mettentau treſpas				</l>
-				<l>
-					<lb/>
-Ceux à qui le nom s’attribuë,’				</l>
-				<l>
-					<lb/>
-Quand leur ame ſe treuue imbuë				</l>
-				<l>
-					<lb/>
-D’vn deſſein mauuais &amp; peruers				</l>
-				<l>
-					<lb/>
-i				</l>
-				<l>
-					<lb/>
-Que ie veux taire das mes vers, ’¬				</l>
-				<l>
-					<lb/>
-Ce cas qui ne ſont autres chſes,				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-que des accidents qui des cauſes,				</l>
-				<l>
-					<lb/>
-Arriuent inopi nement				</l>
-				<l>
-					<lb/>
-Cauſent bien de l’eſtonnement,				</l>
-				<l>
-					<lb/>
-Ils ſont bien plus que ſix en nõbre:				</l>
-				<l>
-					<lb/>
-Et qui cauſent du mal-enconbre,				</l>
-				<l>
-					<lb/>
-Plus de ſix fois aux Courtiſans				</l>
-				<l>
-					<lb/>
-dans la Cour paſſent leur remps.				</l>
-				<l>
-					<lb/>
-e pinide la premiere partie.				</l>
-PREMIERE PARTIE
-        DE LA
-        SCIENCE
-        VNIVERSELLE
-        DES
-        COVRTISANS: Qui conſiſte dans les declinaiſons
-        de leur Grammaire.
-        EN VERS BVRLESQVES. 
-        A PAR1S.
-        M. DC. XLIX.			</p>
-		</body>
-	</text>
+        <l>
+          <lb />Les Courtiſans de qpui lieuie</l>
+        <l>
+          <lb />J,Eſt eſſentielle à la vie,</l>
+        <l>
+          <lb />De paroiſtue &amp; de pruenir,</l>
+        <l>
+          <lb />Souuent ne ſe peuuens tenir</l>
+        <l>
+          <lb />Dans le meſme rod qu’ leus tige,</l>
+        <l>
+          <lb />Le droict d&amp; la raiſom exige</l>
+        <l>
+          <lb />Ils ſont cotraines de déliner,</l>
+        <l>
+          <lb />Lors qu’ils ne veulent s’incliner</l>
+        <l>
+          <lb />Au bon plaiſir de la fortune,</l>
+        <l>
+          <lb />Laquelle n’eſt iamais commane,</l>
+        <l>
+          <lb /> Pour monſtrer leurs declinaiſons,</l>
+        <l>
+          <lb />De leurs diuerſes oraiſons,</l>
+        <l>
+          <lb />le dois deſcouurir les paties,</l>
+        <l>
+          <lb />Dont touſiours elles fone baſties;</l>
+        <l>
+          <lb />Vous ſçauez que les Rud̂imens,</l>
+        <l>
+          <lb />qui contiennent les Elemens</l>
+        <l>
+          <lb />Des langues que lon veut apprende,.</l>
+        <l>
+          <lb />Ont huict parties a nous rendre,</l>
+        <l>
+          <lb />A ſçauoir les noms &amp; pronoms,</l>
+        <fw place="bot-right" type="sig">A ij</fw>
+        <l>
+          <lb />s</l>
+        <l>
+          <lb />
+        </l>
+        <pb n="4" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f5.highres" />
+        <l>
+          <lb />8</l>
+        <l>
+          <lb />!</l>
+        <fw place="top-center" type="pageNum">4</fw>
+        <l>
+          <lb />Verbes &amp; participans noms,</l>
+        <l>
+          <lb /> S</l>
+        <l>
+          <lb />Qu’on decline ou conjugue encore,</l>
+        <l>
+          <lb />Selon Donat &amp; Dioſcore,</l>
+        <l>
+          <lb />Auerbes prepoſfions,</l>
+        <l>
+          <lb />Copules interjections, </l>
+        <l>
+          <lb /> Sont quatre parties dernieres,</l>
+        <l>
+          <lb />Que l’on void en pluſieurs matieres,</l>
+        <l>
+          <lb />La grammaire du Courtiſant,</l>
+        <l>
+          <lb />A huict parties en diſant,</l>
+        <l>
+          <lb />Telles que ie viens de deſcrire,</l>
+        <l>
+          <lb />Qui peut-eſtre vous feront rire,</l>
+        <l>
+          <lb />1</l>
+        <l>
+          <lb />.</l>
+        <l>
+          <lb />Les noms ſignifient leurs corps,</l>
+        <l>
+          <lb />Qui ſont ſouuent plains des remords,</l>
+        <l>
+          <lb /> Les pronoms prouiennent des terres,</l>
+        <l>
+          <lb />Qui ſont acquiſes par les guerres,</l>
+        <l>
+          <lb />Ou bien par les faueurs des Roix,</l>
+        <l>
+          <lb />Par la nature ou par les loix;</l>
+        <l>
+          <lb />Ces pronoms ſont autant de tiltres,¬</l>
+        <l>
+          <lb />Qui les diſtinguent de belitres,</l>
+        <l>
+          <lb />Des Artiſans &amp; Roturiers;</l>
+        <l>
+          <lb />Et les font paſſer grands guerriers;ii</l>
+        <l>
+          <lb />Hommes d’honneur &amp; de merire, </l>
+        <l>
+          <lb />Et dont l’extraction inuite</l>
+        <l>
+          <lb /> Les peuples de leur rendre honneurs</l>
+        <l>
+          <lb />Les recognoiſſans pour Seigneurs,</l>
+        <fw place="bot-right" type="catch"> En</fw>
+        <l>
+          <lb />
+        </l>
+        <pb n="5" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f6.highres" />
+        <l>
+          <lb />¬</l>
+        <fw place="top-center" type="pageNum">5</fw>
+        <l>
+          <lb />en v mot ſont des Gentilshommes, </l>
+        <l>
+          <lb />Qui dans les terres où nous fommes</l>
+        <l>
+          <lb />Ont du pouuoir deſſus. nos bieus,2</l>
+        <l>
+          <lb />1</l>
+        <l>
+          <lb />Par droit &amp; par phaſiaurs moyensili</l>
+        <l>
+          <lb />Leurs verbes qui ſont des parls</l>
+        <l>
+          <lb />Qui ne ſentent point nos eſcolesi</l>
+        <l>
+          <lb />Sont des mors biendits-&amp; clhoiſis ,y</l>
+        <l>
+          <lb />u</l>
+        <l>
+          <lb />Par qui nos eœurs eſtansſaiſis,</l>
+        <l>
+          <lb />Suiuent leurs plaiſis &amp; leurs-modes,</l>
+        <l>
+          <lb />Et nous viuons à leurs meflõdes</l>
+        <l>
+          <lb /> Les participes de las Cour, llo 2</l>
+        <l>
+          <lb />l</l>
+        <l>
+          <lb /> Sont des bons mots qu’aechaueiour,¬</l>
+        <l>
+          <lb />On inuente dans noſtre langue</l>
+        <l>
+          <lb />Pour rendre plus douce vneharangue,</l>
+        <l>
+          <lb />Leurs aduerbes font leurs accensi</l>
+        <l>
+          <lb />Diuers, ſelon le diuars temps,</l>
+        <l>
+          <lb />Et le ſujet qui ſe prononce, i</l>
+        <l>
+          <lb />Soit pour demande ou pour reſponce,</l>
+        <l>
+          <lb />Ou pluſtoſt leurs aduerbes ſont</l>
+        <l>
+          <lb />La delicateſſe qu’ils ont</l>
+        <l>
+          <lb />A parler dans la compagnie,</l>
+        <l>
+          <lb />Qui rend plus douce leurt manie,</l>
+        <l>
+          <lb />Toutes leurs propoſitions,</l>
+        <l>
+          <lb />Sont des fourbes &amp; fictions;</l>
+        <l>
+          <lb />Qu’ils inuentent d’vn artifice;</l>
+        <l>
+          <lb /> Subtil pour coaurir leur malice,</l>
+        <l>
+          <lb />
+        </l>
+        <pb n="6" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f7.highres" />
+        <fw place="top-center" type="pageNum">6</fw>
+        <l>
+          <lb />Les conjonctions en-apres</l>
+        <l>
+          <lb />Sont les moyeas les plus ſeerets,</l>
+        <l>
+          <lb />Qu’ils ont inuencez daas leurs ames,</l>
+        <l>
+          <lb />Qui ſemblentviure dans les flammes,</l>
+        <l>
+          <lb />Comme la Salemendre au feu,</l>
+        <l>
+          <lb />Ces Meſſieurs quand ils ont conçeu</l>
+        <l>
+          <lb /> Quelques moyens pour bien conioindre</l>
+        <l>
+          <lb />Leurs affaires par lart de feindre,</l>
+        <l>
+          <lb />Pour aſſouuir leurs paſſions,</l>
+        <l>
+          <lb />Vſent des interiections,</l>
+        <l>
+          <lb />oui ſont des eſlans pitoyables,</l>
+        <l>
+          <lb />Triſtes, ioyeux au lamentables,</l>
+        <l>
+          <lb /> Plein de ſouſpirs ou bien de rits,</l>
+        <l>
+          <lb /> C’eſt ſelon comme leurs eſpris,</l>
+        <l>
+          <lb />Ou le ſuiet des ioyes ou des larmes</l>
+        <l>
+          <lb />Pour les plaiſirs ou les allarmes,</l>
+        <l>
+          <lb />Parmy ces huict voix d’oraiſon,</l>
+        <l>
+          <lb />Nous n’en trouuons dans la ſaiſon</l>
+        <l>
+          <lb />que trois qui ſont bien declinables,</l>
+        <l>
+          <lb />E qui ſont fort conſiderables,</l>
+        <l>
+          <lb />l’ay deſſein de vous eſclaircir</l>
+        <l>
+          <lb />qQuelles ſont pour bien réüſſir,</l>
+        <l>
+          <lb />On les nomment dans les principes,</l>
+        <l>
+          <lb />Les noms, pronoms &amp; participes,</l>
+        <l>
+          <lb />En ces trois paries en chef,</l>
+        <l>
+          <lb />Il faut regarder derechef,</l>
+        <l>
+          <lb />
+        </l>
+        <pb n="7" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f8.highres" />
+        <fw place="top-center" type="pageNum">7</fw>
+        <l>
+          <lb />Le genre, eſpece &amp; la figure,</l>
+        <l>
+          <lb />Les cas, le nombre par nature,</l>
+        <l>
+          <lb />Les articles, les accidans</l>
+        <l>
+          <lb />Qui ſe treuuent touſiours dedans,</l>
+        <l>
+          <lb />Ayant conſiderez les eauſes</l>
+        <l>
+          <lb />De ces trois principalles choſes</l>
+        <l>
+          <lb />Nous viendrons aux declinaiſons</l>
+        <l>
+          <lb />Qui feront voir que leurs raiſons</l>
+        <l>
+          <lb />Sont quelquesfois fort legitimes,</l>
+        <l>
+          <lb /> Et bien ſouuent plaines de crimes,</l>
+        <l>
+          <lb />Pour bien commencer comme il faut</l>
+        <l>
+          <lb />t pour ne faire aucun defaut,</l>
+        <l>
+          <lb />Les articles ſeront mes guides</l>
+        <l>
+          <lb />Qui ſont trois qui comme trois brides,</l>
+        <l>
+          <lb />Regiſſent ces trois voix par tout</l>
+        <l>
+          <lb />Du commencement iuſques au bout,</l>
+        <l>
+          <lb />Les articles ſont les trois ſorte</l>
+        <l>
+          <lb />De nobleſſe que ie tranſporte,</l>
+        <l>
+          <lb />A la partie qu’apres ſuit,</l>
+        <l>
+          <lb />Où ſans faire beaucoup de bruit,</l>
+        <l>
+          <lb />Ie deſcouuriray l’excellence</l>
+        <l>
+          <lb />Du genre ou bien de leur naiſſance,</l>
+        <l>
+          <lb />Qui par vn moyen rauiſſant,</l>
+        <l>
+          <lb />Fera voir la beaaté du ſang,</l>
+        <l>
+          <lb />ui vous deſcouurira l’eſpece</l>
+        <l>
+          <lb />Et la figure qui la preſſe</l>
+        <l>
+          <lb />Auee les acoidens quiſont</l>
+        <l>
+          <lb />Snp</l>
+        <l>
+          <lb />
+        </l>
+        <pb n="8" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f9.highres" />
+        <fw place="top-center" type="pageNum">s3</fw>
+        <l>
+          <lb />Auoir d’honneur ou de l’affront,</l>
+        <l>
+          <lb />Iey ſeulemét ie deſire</l>
+        <l>
+          <lb />Traiter du cas heureux ou pire, l</l>
+        <l>
+          <lb />Du nombre, mais pour bien parler; e23</l>
+        <l>
+          <lb />Faut aux declinaiſons aller,</l>
+        <l>
+          <lb />
+        </l>
+        <l>
+          <lb />On a couſtume dans les claſſes,</l>
+        <l>
+          <lb />Principalement les plus baſfes,</l>
+        <l>
+          <lb />De faire le meſme diſcours,¬</l>
+        <l>
+          <lb />Si bien que i’ay là mon recoüs,</l>
+        <l>
+          <lb />Et m’enfonçant dans la ſixieſme,l</l>
+        <l>
+          <lb />I’apperçois vn enfant tout bleſme,i</l>
+        <l>
+          <lb />Qui me dit que dans chaque nonm </l>
+        <l>
+          <lb />On treuue ſix cas enenom’</l>
+        <l>
+          <lb />Leſquels communement on nommes,,</l>
+        <l>
+          <lb />Nominatif, genitif, come ¬</l>
+        <l>
+          <lb />Datif auec l’accuſatif,</l>
+        <l>
+          <lb />Le vocatif &amp; l’ablatif;</l>
+        <l>
+          <lb />En ces ſix cas il me fait eroire</l>
+        <l>
+          <lb />Que le nom y trouue ſa gloire,</l>
+        <l>
+          <lb />Et que l’on trouue dans ces cas,</l>
+        <l>
+          <lb />Ses vertus auec ſes appas,</l>
+        <l>
+          <lb />En ſuitte ce Docteur friuolle,</l>
+        <l>
+          <lb />M’enſeigne que dans leur ſoolle,</l>
+        <l>
+          <lb />On treuue dans les noms Latins,</l>
+        <l>
+          <lb />Deux nombres qui font les deſtins,</l>
+        <l>
+          <lb />D’vne ou bien de pluſieurs petſonnes,</l>
+        <l>
+          <lb />Soient elles meſchantes ou bonnes,</l>
+        <l>
+          <lb />¬¬ ¬ouan¬¬</l>
+        <fw place="bot-right" type="catch"> Le</fw>
+        <l>
+          <lb />
+        </l>
+        <pb n="9" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f10.highres" />
+        <fw place="top-center" type="pageNum">9</fw>
+        <l>
+          <lb />Le premier eſt dit ſinglie l</l>
+        <l>
+          <lb />nt l’autre eſtappellé pluriot,</l>
+        <l>
+          <lb />Il me raconte d’auaneagejioi</l>
+        <l>
+          <lb />Qe parmy les Cre ſoarlaiegagos </l>
+        <l>
+          <lb />dioüte aces deue proededesy l</l>
+        <l>
+          <lb />n troiſieſme par aeidaes</l>
+        <l>
+          <lb />Qui duél touſiours on appelle, </l>
+        <l>
+          <lb />Sans que l’on rendecrhinelle, ?</l>
+        <l>
+          <lb />La claſſe pour ce ſuietla,</l>
+        <l>
+          <lb />Ie vous diray pourquoy cea4</l>
+        <l>
+          <lb />Apres que i’auray fait leconte</l>
+        <l>
+          <lb />1</l>
+        <l>
+          <lb />ITouchant pluſieuts edlinaiſons,</l>
+        <l>
+          <lb />Qui ſelon lesrerminaaſons.</l>
+        <l>
+          <lb />et leurs genitifs ſontdiuerſes;</l>
+        <l>
+          <lb />Ainſi que les couleurs. des Perſes</l>
+        <l>
+          <lb />l m’a dit que communemene,¬</l>
+        <l>
+          <lb />On en faitcinqentieremen,</l>
+        <l>
+          <lb />Dans ces Latins &amp; dans larece,</l>
+        <l>
+          <lb />Comme appertpanlaregleexpreſſê,</l>
+        <l>
+          <lb />Ces declinaiſons ntleus cas i</l>
+        <l>
+          <lb />Plus differants qu’ohneoroicpas ; </l>
+        <l>
+          <lb />Tanr au plurier qu’e l’auuenombre;</l>
+        <l>
+          <lb />t meſme dans le duelſormbfe, i</l>
+        <l>
+          <lb />Ce ieune enfant m’ayaneappris </l>
+        <l>
+          <lb />La valeur&amp; le iuſte pruei n iil</l>
+        <l>
+          <lb />¬, ae¬ ¬d a,¬¬</l>
+        <l>
+          <lb />8</l>
+        <l>
+          <lb />De ce que l’enfant ous raonte,</l>
+        <l>
+          <lb />C</l>
+        <l>
+          <lb />,</l>
+        <l>
+          <lb />i¬</l>
+        <l>
+          <lb />
+        </l>
+        <pb n="10" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f11.highres" />
+        <fw place="top-center" type="pageNum"> 109</fw>
+        <l>
+          <lb />Des declinaiſons differentes, ii</l>
+        <l>
+          <lb />En cas &amp; nombres ineonſtantes</l>
+        <l>
+          <lb />Apres dans mon entendemens s </l>
+        <l>
+          <lb />I’ay conçeu forti gaillandelment l vte</l>
+        <l>
+          <lb />Les Declinaiſons plus bi-iarmse </l>
+        <l>
+          <lb />Des Courtiſans où des Icarres,</l>
+        <l>
+          <lb />Qui volent à Paris au tour</l>
+        <l>
+          <lb />Des Princes, &amp; Dames de Cour,</l>
+        <l>
+          <lb />l’ay recogneu leurs cas encore ii</l>
+        <l>
+          <lb />Qui font bien que la Cour i’honores i¬</l>
+        <l>
+          <lb />Mais que i’ayme mieux tenir loing,</l>
+        <l>
+          <lb />Eour iure ecrant de ant de ſoaung</l>
+        <l>
+          <lb />Qu’il faut auoir en eeſte claſſe;</l>
+        <l>
+          <lb />Où iamais vn eſprit ne paſſe,.</l>
+        <l>
+          <lb />N’y ne prend entiers ſes degrez:</l>
+        <l>
+          <lb />Si ce n’eſt celuy des ſecrets,</l>
+        <l>
+          <lb />I’ay tracé la fidelle image </l>
+        <l>
+          <lb />De leurs nombres de qui l’vſage,</l>
+        <l>
+          <lb />Eſt difficile dans ce temps,</l>
+        <l>
+          <lb />Et dont tous ne ſont pas contants.</l>
+        <l>
+          <lb />Maintenant ilfaut que iiexplique,</l>
+        <l>
+          <lb />Et que ie reduiſe en pratique,</l>
+        <l>
+          <lb />Ce que ie viens de propoſer</l>
+        <l>
+          <lb /> A fin de ne plus abbuſér</l>
+        <l>
+          <lb />De voſtre bonne patiene</l>
+        <l>
+          <lb />l i</l>
+        <l>
+          <lb />nrendes dons ceſte ſcienoe, l</l>
+        <l>
+          <lb />ie</l>
+        <l>
+          <lb />¬</l>
+        <l>
+          <lb />
+        </l>
+        <pb n="11" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f12.highres" />
+        <fw place="top-center" type="pageNum"> 1</fw>
+        <l>
+          <lb /> Les cinq declinaiſons de Cour,</l>
+        <l>
+          <lb />ouel’on renconteoà chaque iour,¬</l>
+        <l>
+          <lb />Ont vne difference grande,¬</l>
+        <l>
+          <lb />Ainſi que le deſtein demande </l>
+        <title type="sub">La premiere Decdinaiſ̂n de la Cou.</title>
+        <l>
+          <lb />Le Courtiſant en premier lieu</l>
+        <l>
+          <lb />Commence à decliner quand Dieu,</l>
+        <l>
+          <lb />Pour la punitiondes crimes,</l>
+        <l>
+          <lb />Par ſes iuſtes ſaintes maximes</l>
+        <l>
+          <lb />lInterromptſes pretenſions;</l>
+        <l>
+          <lb /> Et les met en confuſions,</l>
+        <l>
+          <lb />Vous ne ſçauries iamais biencroire;</l>
+        <l>
+          <lb />Comme il pert de ſa vaine gloire</l>
+        <l>
+          <lb />u le eie eonl eileſl</l>
+        <title type="sub"> La ſeconde Declinaiſon.</title>
+        <l>
+          <lb /> n ſecond lieu le Courtiſaat;</l>
+        <l>
+          <lb />Quand pour parroiſtre bien diſant.</l>
+        <l>
+          <lb />Parle de Dieuſans reuerence,!</l>
+        <l>
+          <lb />Où bien quand porte d’arrogance:</l>
+        <l>
+          <lb />le lus nen e ieonenepen</l>
+        <l>
+          <lb />
+        </l>
+        <pb n="12" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f13.highres" />
+        <fw place="top-center" type="pageNum">H2</fw>
+        <l>
+          <lb />dloe i1</l>
+        <l>
+          <lb />Dieu pour rabaiſſet ſe ſopebe, </l>
+        <l>
+          <lb />Le rend digne de pjaiſtre Plerbe,</l>
+        <l>
+          <lb />la0</l>
+        <l>
+          <lb />Il voit ſes maux entrtensoi ibouv n0</l>
+        <l>
+          <lb />Ayant decliné Doiaop uiflab olnpiniA</l>
+        <title type="sub">La troiſiefme Deelmael’ suq</title>
+        <l>
+          <lb /> Enſuite noſtre Gëatilehoamete siie09</l>
+        <l>
+          <lb />no8</l>
+        <l>
+          <lb />Ainſi dans laCôur iE ſeſfonoélh </l>
+        <l>
+          <lb />¬</l>
+        <l>
+          <lb />Decline encore de rëhef, a¬</l>
+        <l>
+          <lb />iuo</l>
+        <l>
+          <lb />Lors que ſans crairde néchef lli1</l>
+        <l>
+          <lb />Il veut viure à ſa Phansaeiſie p oluqnmnl</l>
+        <l>
+          <lb />Et que ſon ame n’eſt ſaifieolulo ron i1</l>
+        <l>
+          <lb />1</l>
+        <l>
+          <lb />Que d’vne vilearbifioui e l</l>
+        <l>
+          <lb />ir9 l i</l>
+        <l>
+          <lb />De viure à ſa deaeioe </l>
+        <l>
+          <lb />0</l>
+        <l>
+          <lb />Er de n’obeir à ſon perelûs os oli</l>
+        <l>
+          <lb />Le Ciel animé de coles uIoeb iu vl92</l>
+        <l>
+          <lb />Tache ſes deſſeins arreſter</l>
+        <l>
+          <lb /> Pour auoir decliné Patedi</l>
+        <title type="sub"> La quatmieſme Doliaiſil</title>
+        <l>
+          <lb />il b r</l>
+        <l>
+          <lb /> oidlie</l>
+        <l>
+          <lb /> ſin</l>
+        <l>
+          <lb />Bien ſouuent il decllneecoe lii</l>
+        <l>
+          <lb />¬</l>
+        <l>
+          <lb />Alors que ſans hotge ildeuorel</l>
+        <l>
+          <lb />Les biens qu’il a’a pis-dmaſſ e</l>
+        <l>
+          <lb />Comme ſon para treſpaſſo, h ́</l>
+        <l>
+          <lb />
+        </l>
+        <l>
+          <lb />
+        </l>
+        <pb n="13" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f14.highres" />
+        <fw place="top-center" type="pageNum">13</fw>
+        <l>
+          <lb />Il ſe voit reduit dans la honte,</l>
+        <l>
+          <lb />Et la rage qui le ſurmonte,</l>
+        <l>
+          <lb />Le rend confus en vn telpoîné.</l>
+        <l>
+          <lb />Que le deſplaiſif quile pouinr,</l>
+        <l>
+          <lb />Fait meſme qu’il ſe deſeſpere:</l>
+        <l>
+          <lb />Voila ce qu’il a pourſalaire,</l>
+        <l>
+          <lb />Il voit ſes deſſeins abbatus,</l>
+        <l>
+          <lb />Pour auoir decliné fructus.</l>
+        <title type="sub"> La cinquieſme Déclinaijfon</title>
+        <l>
+          <lb />Enfin dans la Cour on decline,</l>
+        <l>
+          <lb />Quand pour auois fortbonnemine;</l>
+        <l>
+          <lb />L’on ſe mocque deſeségaux,</l>
+        <l>
+          <lb />De la prouienent des grands maux,</l>
+        <l>
+          <lb />Comme le meurtre &amp; la diſgrace:</l>
+        <l>
+          <lb />OQnpeutr bienauoir de l’audace;</l>
+        <l>
+          <lb />Mais il faut auoir de l’eſprit</l>
+        <l>
+          <lb />Pour prendre le ſort quand ilrit,</l>
+        <l>
+          <lb />Et parvne main violante,</l>
+        <l>
+          <lb />Saiſir l’occaſion preſente,</l>
+        <l>
+          <lb />Autrement on paſſe pounniés,</l>
+        <l>
+          <lb />Pour auoir decliné Dies.</l>
+        <title type="sub">Le nombre ſingulierduel plurier.</title>
+        <l>
+          <lb />Le premier leur eſt méoriſable</l>
+        <l>
+          <lb />Soit dans le ieu, ſoit à la tahle</l>
+        <l>
+          <lb />
+        </l>
+        <pb n="14" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f15.highres" />
+        <l>
+          <lb />,LLaamm--rr</l>
+        <fw place="top-center" type="pageNum">14</fw>
+        <l>
+          <lb />Dans leurs charges &amp; qualitez,</l>
+        <l>
+          <lb />Ils abhorrent les vnitez</l>
+        <l>
+          <lb />,1</l>
+        <l>
+          <lb />1</l>
+        <l>
+          <lb />Croyant quelles leurs ſont funeſtas</l>
+        <l>
+          <lb />Pour monſtrer dans les plus hautes feſtes </l>
+        <l>
+          <lb />Des merites &amp; de l’honneur,</l>
+        <l>
+          <lb />Chaeun d’eux tranche du Seigneur,</l>
+        <l>
+          <lb />Le plurier conuient à ldeur mode:</l>
+        <l>
+          <lb />Parce qu’il leur eſt plus commode i</l>
+        <l>
+          <lb />Pour bien paroiſtre dans la Gour</l>
+        <l>
+          <lb />Où l’orgueil baſtit ſon ſejour,</l>
+        <l>
+          <lb />Le duel parmy le delice,</l>
+        <l>
+          <lb />De l’amour leu ſemble propiee ’i</l>
+        <l>
+          <lb />Et parmy les defits de Mars </l>
+        <l>
+          <lb />C’eſt la que comme descefats;</l>
+        <l>
+          <lb />Ils font paroiſtre leur vaillanoe,</l>
+        <l>
+          <lb />A leur honneur, &amp; de la Ftance.</l>
+        <title type="sub">Les diuers s des Noms.</title>
+        <l>
+          <lb />Les nombres du nom’on des oas , </l>
+        <l>
+          <lb />Qui ſouuent mettentau treſpas </l>
+        <l>
+          <lb />Ceux à qui le nom s’attribuë,’</l>
+        <l>
+          <lb />Quand leur ame ſe treuue imbuë</l>
+        <l>
+          <lb />D’vn deſſein mauuais &amp; peruers</l>
+        <l>
+          <lb />i</l>
+        <l>
+          <lb />Que ie veux taire das mes vers, ’¬</l>
+        <l>
+          <lb /> Ce cas qui ne ſont autres chſes,</l>
+        <l>
+          <lb />
+        </l>
+        <pb n="15" facs="https://gallica.bnf.fr/ark:/12148/bpt6k57078100/f16.highres" />
+        <fw place="top-center" type="pageNum">15</fw>
+        <l>
+          <lb />que des accidents qui des cauſes,</l>
+        <l>
+          <lb />Arriuent inopi nement</l>
+        <l>
+          <lb />Cauſent bien de l’eſtonnement,</l>
+        <l>
+          <lb />Ils ſont bien plus que ſix en nõbre:</l>
+        <l>
+          <lb />Et qui cauſent du mal-enconbre,</l>
+        <l>
+          <lb />Plus de ſix fois aux Courtiſans</l>
+        <l>
+          <lb />dans la Cour paſſent leur remps.</l>
+        <l>
+          <lb />e pinide la premiere partie.</l>
+      </p>
+    </body>
+  </text>
 </TEI>

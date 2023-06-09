@@ -1,457 +1,284 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau819_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Le courrier de l’armée de monsieur le Prince, envoyé à
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Le courrier de l’armée de monsieur le Prince, envoyé à
           Son Altesse Royale, apportant les particularités de tout ce qui s'est passé entre les deux
           armées.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=BXxs5t5obW0C"/>
-					<author/>
-					<title source="Moreau">Courrier (le) de l’armée de monsieur le Prince, envoyé à Son
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=BXxs5t5obW0C" />
+          <author />
+          <title source="Moreau">Courrier (le) de l’armée de monsieur le Prince, envoyé à Son
             Altesse Royale, apportant les particularités de tout ce qui s'est passé entre les deux
             armées.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1652">1652</date>
-					<extent>
-						<measure quantity="8" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale de Lyon</institution>
-						<repository/>
-						<idno type="cote">Res 309262</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1652">1652</date>
+          <extent>
+            <measure quantity="8" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale de Lyon</institution>
+            <repository />
+            <idno type="cote">Res 309262</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">819. Courrier (le) de l’armée de monsieur le Prince, en- voyé à Son
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">819. Courrier (le) de l’armée de monsieur le Prince, en- voyé à Son
           Altesse Royale, apportantles particularités de tout ce qui s'est passé entre les deux
           armées. Pa- ris, 1652, 8 pages. Le prince de Condé était à Saintes et à Saint-Jean
           d’Angely, le comte d’Harcourt dans les Iles , les Espagnols à Bourg. Ce pam- phlet ne
           manque pas d’intérêt, et tl n’est pas commun.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">nouvelles</term>
-					<term type="subject">Nouvelles, occasionnels et canards</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_60" source="Moreau">
-					<p>Suite de l’arrêt du 29 décembre 1651</p>
-					<date when="1652-01-01">1652-01-01</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2021-11-18" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-LE
-        COVRIER
-        DE MONSIER
-        LE PRINCE
-        ENVOYE’
-        A Son Alteſse Royale.
-        APPORTANT LES PARTICVLARITEZ
-        de tout ce qui ſ’eſt paſt entre les deusx
-        Armées.
-        A PARIS,
-        M. DC. LII. 
-        
-        LE
-        COVRIER
-        DE MONSIER
-        LE PRINCE
-        ENVTOE’
-        A Son Alteſse Royale.
-        APPORTANT LES PARTICVLARITEZ
-        de tout ce qui ſ’eſt paſt entre les deusx
-         Armées.
-        Monseigneur,
-        LE Caraſtete que ie porte vous eſt aſſeze
-        gneu Ee vous e diſpenſerez, s’il vous plaiſt, 
-        0 2
-        d’adjoûter mes ſoins aux proteſtations que ie
-        vous vay faire, puis que vous deſirez qué ie vous
-        Apprenne des Nouuelles:.
-        Les deux Armées ſont dans leurs Quartiers
-        d’Hyuer; Elles n’entreprennent rien de conſi
-        derable l’vne ſur l autre; Il eſt vray qu’il ſe fait
-        quantitéde Prſonniers de part &amp; d’aurre, des
-        Coureurs des deux coſtez ſe rencontrans ſou
-        uent à cauſe de leur voiſinage. Le Comte de
-        Harcourt s’eſtans pbſte dains les lſles, ſç̧auoir,
-        à Soubize, Moëſe; Sainct lean d’Angely, &amp;
-        autres Places voiſines. Et Monſieur le Prin
-        ce, és enuirons de Xaintes &amp; de Sainct lean;
-        On attendoit quelque combat ces dcrniers
-        jours, qui ont eſté bien froids &amp; fort ſecs,
-        mais la pluye eſt reuenuë; &amp; par conſequent,
-        impoſſible de ſe batrre en vn pays tres-incom
-        mode. En ce temps-laà le Comte de Harcour
-        s’avançoit vers Marennes, qui eſt vn des beaux
-        Bourgs de France, ſur l’eſperance de s’en ſaiſi,
-        &amp; de boucler par ce moyen Broü̈iage, quin’en
-        eſt eſloigné que d’vne demy-lieueë; Mais le
-        Comte du Daugnon ayant préueu, cela, auoit
-        deſarmé les Habitans, &amp; apres uoir retifé las
-        Broü̈age quarante des plus apparans pout luy
-        ſeruir d’Oſtages. Ill a enuoyé́ dans ce Bourg lài
-        huit cens Hlommes en gamiſon pour aoppo¬ i
-        ſer aux deſſeins du Comte de Harcour, quihe
-        a poiit
-        ¬
-        ¬¬ 
-        5
-        a point aproché depuis cette nouuelle; Il y a des
-        malades dans l’Armée de Monſieur le Prince,
-        qui eſt toû̂jours compoſée de huict à neuf mille
-        hommes effectifs
-        L’arriuée de Monſieur le Prince de Conty aà
-        Agen a remis le calme dans la Ville, &amp; l’aſfeu
-        rance dans l’eſprit de ſes Habitans qui eſtoient
-        tous diuiſez, ſur les nouuelles qu’ils auoient que
-        Monſieur de Sainct Luc deſcendoit ſur eux; ce
-        quiles intimidoit ſi fort, que la plus grande par
-        tie ſe vouloir rendre ſans reſitance:; mais Mon
-        ſieur le Prince de Conty a remis le courage dans
-        le cœur de ces Gens-la, &amp; à fait avancer quel
-        n Peuimens, qui eſtoient en garniſon dans
-         iaces eſloignées, afin de les ſecourir plus
-        J1 npe nent, n’ayant point voulu receuoir de
-        tropes lans leurs murailles. Tout y eſt tran
-        qulle, &amp; l’on attend icy ce l’rince là; le ne ſçay
-        uapres ſon depart le delordre ne recommence
-        ra point de nouueau; tout le haut pays eſtant
-        malſatisfait de la conduite des lnrendans qu’on
-        leur a donne, qu’il eſt incroyable des plaintes
-        qu’on fait contr’eux, pour leur auarice &amp; leurs
-        malverſations; y ayant tel petit Conſeiller dans
-        l’exercice de cette Charge, qui par des exactions
-        eſtranges a pour luy plus de cinquante mille eſ
-        us; On en murmure fort, &amp; quoy qu’on parle
-        yde leur faire rendre compte de leur admini
-        B 
-        6.
-        ſtration, ie ne ſcay ſi on y pourra reüſſir, veu le !
-        rang qu’ils tiennent dans l’eſprit de ſon Alteſſe, :
-        qui n a donné ces Commiſſions, par malheur, :
-        qu’aà des jeunes Gens affamez, &amp; d’vne fortune!
-        bien eſtroite.
-        L’Armee Eſpagnole eſt montée aà̀ Bourg pour
-        fy eſtablir; Le Commandant Vateville ayant
-        remonſtré́ à ſon Alteſſe que ſes Vaiſſeaux ne
-        pouuoient ſubſiſter à Talmont,où̀ les vents ſont
-        fort impetueux, &amp; où la Rade eſt fort incomm
-        de; ll a remonſtré auſſi qu’il y auoit perdu pen
-        dant ces derniers orages, quantiré d’Ancres
-        de Cables, &amp; que ces Vaiſſeaux auoient beſoin:
-        d’eſtre radoubez, &amp; ces Gens rafraiſchis;ce qui :
-        a obligé́ ſon Alteſſe d’eſcrire au Parlement de
-        l’Ormee, pour le prier de trouuer bon que ces
-        Meſſieurs la ſe logeaſſent dans ce poſte. Afin
-        que vous ſçachiez qui eſt ce Parlement de l’0r¬.
-        mé́e, ce ſont deux à trois cens Bourgeois de tou
-        tes conditions qui ſ’aſſemblent ſur vn Baſtion
-        de la Ville, où il y a quelques allés d’Ormeaux;
-        &amp; là ils decident les affaires, y font des propoſ
-        tions, &amp; y donnent des avis, &amp; tout cela, parvne
-        aueugle &amp; furieuſe paſſion aux intereſts de Mr..,
-        le Prince, qui ſe ſert d’eux dans tous ces !deſſeins.
-        Ie vous avouë que depuis que les Eſpagnols
-        occupent vne Ville ſi voiſine que celle-cy, qui
-         n’en eſt qu’a trois lieuë̈s, cela jette quelque con¬ 1
-        ¬¬.. 
-        fuſion &amp; quelque ſecrette douleur dans l’ame
-        de pluſieurs, qui ne ſe peuuent conſoler de voir
-        vn Ennemy naturel eſtre Maiſtre d’vne Place
-        qui ſe peut tres-bien fortifier, &amp; d’où l’on peu
-        afamer cette Ville, en empeſchant qu’aucune
-        prouiſion ne vienne du coſté de la Mer, &amp; en re
-        ranchant le commerce. Ie voy quantiteé de per.
-        ſonnes qui en gemiſſent, ſoit que l’intereſt les y
-        oblige, parce que pluſieurs HBabitans de cette
-        Ville y poſſedent de grands biens, ou ſoit que
-        l’inclination Françoiſe ne ſe puiſſe jamais fier à
-        eux: Tant y a l’Eſpagnol eſt à Bourg: &amp; quoy
-        qu’ils oſent ſe venir promener e cette Ville, on
-        eſt ſi accouſtumé à les hair, qu’on ne les peut
-        voir ſans leur faire quelque niche; juſques là
-        qu’vne de nos Dames bailla vn ſoufflet à vn de
-        leurs Chefs, pour auoir voulu luy toucher le
-        bras, dans vne boutique de Marrhand.
-        Vn Milord Anglois, ſuiuy de quarante per
-        ſonnes, tous Gens de commandement, aeſté
-        lalüier ſon Alteſſe; on dit qu’il eſt venu faire des
-        ptopoſitions à M. le Prince de la part de ſa Re
-        publique; d’autres aſſeurent qu’il n’eſt venu que
-        pour le ſeruir comme vn franc-Champion, ou
-        comme vn Avanturier; mais il y a grande appa
-        nce que ſi Monſieur le Prince eſt trop pouſſe,
-        qu’il ſe prendra par tout.
-        ll n’ya que la Chambre de l’Edit qui ſe ſouſ
-        ¬ 
-        8
-        met à l’Interdiction du Roy, le Parlement entre
-        toûjours, fondé ſur ce que Monſieur le Procu
-        rer Ge neral portant au Palais la Declararion
-        du Roy, auee l’lnterdiction, il fut rencontreé
-        par quantité́ de Gens armez, qui luy firent ren
-        dre ls Paquets du Roy, ſi bien qu’il ne les ap
-        porta point au Palais comme il deſiroit faire’; Et
-        le Parlement ignore, ou fait ſemblant d’ignorer
-        qu’il y ait eu Interdiction ou Declaration aucu
-        ne. Cetre Ville eſt auſſi tran quille qu’en plaine
-        Paix; l’on ne s’y diuertit pas moins, &amp; l’on n’y
-        fait pas moindre chere;, Les prouiſions nous y
-        viennent de tous coſtez en abondance, &amp; ſi l’on
-        vous perſuade que l’on ſoit diuiſé icy, &amp; que
-        tout ſe ruine; n’en croyez rien; Et perſuadez
-        vous que le party de ſon Alteſſe y eſt toûjours
-        le plus fort; &amp; que ceux qui voudroient y appor
-        ter quelque changement, n’oſeroient encore
-        auoir remué́; Ie ne ſç̧ay ce qui en ſera pour l’ad
-        venir; Croyez-moy, &amp; tout ce que vous appren
-        drez de moy, n’eſtant aucunement paſſionné.
-        E
-        FIN.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">nouvelles</term>
+          <term type="subject">Nouvelles, occasionnels et canards</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_60" source="Moreau">
+          <p>Suite de l’arrêt du 29 décembre 1651</p>
+          <date when="1652-01-01">1652-01-01</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2021-11-18" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />LE
+        <lb />COVRIER
+        <lb />DE MONSIER
+        <lb />LE PRINCE
+        <lb />ENVOYE’
+        <lb />A Son Alteſse Royale.
+        <lb />APPORTANT LES PARTICVLARITEZ
+        <lb />de tout ce qui ſ’eſt paſt entre les deusx
+        <lb />Armées.
+        <lb />A PARIS,
+        <lb />M. DC. LII. <pb n="2" />
+        <pb n="3" />
+        <lb />LE
+        <lb />COVRIER
+        <lb />DE MONSIER
+        <lb />LE PRINCE
+        <lb />ENVTOE’
+        <lb />A Son Alteſse Royale.
+        <lb />APPORTANT LES PARTICVLARITEZ
+        <lb />de tout ce qui ſ’eſt paſt entre les deusx
+        <lb /> Armées.
+        <lb />Monseigneur,
+        <lb />LE Caraſtete que ie porte vous eſt aſſeze
+        <lb />gneu Ee vous e diſpenſerez, s’il vous plaiſt, <pb n="4" />
+        <lb />0 2
+        <lb />d’adjoûter mes ſoins aux proteſtations que ie
+        <lb />vous vay faire, puis que vous deſirez qué ie vous
+        <lb />Apprenne des Nouuelles:.
+        <lb />Les deux Armées ſont dans leurs Quartiers
+        <lb />d’Hyuer; Elles n’entreprennent rien de conſi
+        <lb rend="¬" break="no" />derable l’vne ſur l autre; Il eſt vray qu’il ſe fait
+        <lb />quantitéde Prſonniers de part &amp; d’aurre, des
+        <lb />Coureurs des deux coſtez ſe rencontrans ſou
+        <lb rend="¬" break="no" />uent à cauſe de leur voiſinage. Le Comte de
+        <lb />Harcourt s’eſtans pbſte dains les lſles, ſç̧auoir,
+        <lb />à Soubize, Moëſe; Sainct lean d’Angely, &amp;
+        <lb />autres Places voiſines. Et Monſieur le Prin
+        <lb rend="¬" break="no" />ce, és enuirons de Xaintes &amp; de Sainct lean;
+        <lb />On attendoit quelque combat ces dcrniers
+        <lb />jours, qui ont eſté bien froids &amp; fort ſecs,
+        <lb />mais la pluye eſt reuenuë; &amp; par conſequent,
+        <lb />impoſſible de ſe batrre en vn pays tres-incom
+        <lb rend="¬" break="no" />mode. En ce temps-laà le Comte de Harcour
+        <lb />s’avançoit vers Marennes, qui eſt vn des beaux
+        <lb />Bourgs de France, ſur l’eſperance de s’en ſaiſi,
+        <lb />&amp; de boucler par ce moyen Broü̈iage, quin’en
+        <lb />eſt eſloigné que d’vne demy-lieueë; Mais le
+        <lb />Comte du Daugnon ayant préueu, cela, auoit
+        <lb />deſarmé les Habitans, &amp; apres uoir retifé las
+        <lb />Broü̈age quarante des plus apparans pout luy
+        <lb />ſeruir d’Oſtages. Ill a enuoyé́ dans ce Bourg lài
+        <lb />huit cens Hlommes en gamiſon pour aoppo¬ i
+        <lb />ſer aux deſſeins du Comte de Harcour, quihe
+        <lb rend="¬" break="no" />a poiit
+        <lb />¬
+        <lb rend="¬" break="no" />¬¬ <pb n="5" />
+        <lb />5
+        <lb />a point aproché depuis cette nouuelle; Il y a des
+        <lb />malades dans l’Armée de Monſieur le Prince,
+        <lb />qui eſt toû̂jours compoſée de huict à neuf mille
+        <lb />hommes effectifs
+        <lb />L’arriuée de Monſieur le Prince de Conty aà
+        <lb />Agen a remis le calme dans la Ville, &amp; l’aſfeu
+        <lb rend="¬" break="no" />rance dans l’eſprit de ſes Habitans qui eſtoient
+        <lb />tous diuiſez, ſur les nouuelles qu’ils auoient que
+        <lb />Monſieur de Sainct Luc deſcendoit ſur eux; ce
+        <lb />quiles intimidoit ſi fort, que la plus grande par
+        <lb rend="¬" break="no" />tie ſe vouloir rendre ſans reſitance:; mais Mon
+        <lb rend="¬" break="no" />ſieur le Prince de Conty a remis le courage dans
+        <lb />le cœur de ces Gens-la, &amp; à fait avancer quel
+        <lb rend="¬" break="no" />n Peuimens, qui eſtoient en garniſon dans
+        <lb /> iaces eſloignées, afin de les ſecourir plus
+        <lb />J1 npe nent, n’ayant point voulu receuoir de
+        <lb />tropes lans leurs murailles. Tout y eſt tran
+        <lb rend="¬" break="no" />qulle, &amp; l’on attend icy ce l’rince là; le ne ſçay
+        <lb />uapres ſon depart le delordre ne recommence
+        <lb rend="¬" break="no" />ra point de nouueau; tout le haut pays eſtant
+        <lb rend="¬" break="no" />malſatisfait de la conduite des lnrendans qu’on
+        <lb />leur a donne, qu’il eſt incroyable des plaintes
+        <lb />qu’on fait contr’eux, pour leur auarice &amp; leurs
+        <lb />malverſations; y ayant tel petit Conſeiller dans
+        <lb />l’exercice de cette Charge, qui par des exactions
+        <lb />eſtranges a pour luy plus de cinquante mille eſ
+        <lb rend="¬" break="no" />us; On en murmure fort, &amp; quoy qu’on parle
+        <lb />yde leur faire rendre compte de leur admini
+        <lb rend="¬" break="no" />B <pb n="6" />
+        <lb />6.
+        <lb />ſtration, ie ne ſcay ſi on y pourra reüſſir, veu le !
+        <lb />rang qu’ils tiennent dans l’eſprit de ſon Alteſſe, :
+        <lb />qui n a donné ces Commiſſions, par malheur, :
+        <lb />qu’aà des jeunes Gens affamez, &amp; d’vne fortune!
+        <lb />bien eſtroite.
+        <lb />L’Armee Eſpagnole eſt montée aà̀ Bourg pour
+        <lb />fy eſtablir; Le Commandant Vateville ayant
+        <lb />remonſtré́ à ſon Alteſſe que ſes Vaiſſeaux ne
+        <lb />pouuoient ſubſiſter à Talmont,où̀ les vents ſont
+        <lb />fort impetueux, &amp; où la Rade eſt fort incomm
+        <lb rend="¬" break="no" />de; ll a remonſtré auſſi qu’il y auoit perdu pen
+        <lb rend="¬" break="no" />dant ces derniers orages, quantiré d’Ancres
+        <lb />de Cables, &amp; que ces Vaiſſeaux auoient beſoin:
+        <lb />d’eſtre radoubez, &amp; ces Gens rafraiſchis;ce qui :
+        <lb rend="¬" break="no" />a obligé́ ſon Alteſſe d’eſcrire au Parlement de
+        <lb />l’Ormee, pour le prier de trouuer bon que ces
+        <lb />Meſſieurs la ſe logeaſſent dans ce poſte. Afin
+        <lb />que vous ſçachiez qui eſt ce Parlement de l’0r¬.
+        <lb />mé́e, ce ſont deux à trois cens Bourgeois de tou
+        <lb rend="¬" break="no" />tes conditions qui ſ’aſſemblent ſur vn Baſtion
+        <lb />de la Ville, où il y a quelques allés d’Ormeaux;
+        <lb />&amp; là ils decident les affaires, y font des propoſ
+        <lb rend="¬" break="no" />tions, &amp; y donnent des avis, &amp; tout cela, parvne
+        <lb />aueugle &amp; furieuſe paſſion aux intereſts de Mr..,
+        <lb />le Prince, qui ſe ſert d’eux dans tous ces !deſſeins.
+        <lb rend="¬" break="no" />Ie vous avouë que depuis que les Eſpagnols
+        <lb />occupent vne Ville ſi voiſine que celle-cy, qui
+        <lb /> n’en eſt qu’a trois lieuë̈s, cela jette quelque con¬ 1
+        <lb />¬¬.. <pb n="7" />
+        <lb />fuſion &amp; quelque ſecrette douleur dans l’ame
+        <lb />de pluſieurs, qui ne ſe peuuent conſoler de voir
+        <lb />vn Ennemy naturel eſtre Maiſtre d’vne Place
+        <lb />qui ſe peut tres-bien fortifier, &amp; d’où l’on peu
+        <lb />afamer cette Ville, en empeſchant qu’aucune
+        <lb />prouiſion ne vienne du coſté de la Mer, &amp; en re
+        <lb rend="¬" break="no" />ranchant le commerce. Ie voy quantiteé de per.
+        <lb />ſonnes qui en gemiſſent, ſoit que l’intereſt les y
+        <lb />oblige, parce que pluſieurs HBabitans de cette
+        <lb />Ville y poſſedent de grands biens, ou ſoit que
+        <lb />l’inclination Françoiſe ne ſe puiſſe jamais fier à
+        <lb />eux: Tant y a l’Eſpagnol eſt à Bourg: &amp; quoy
+        <lb />qu’ils oſent ſe venir promener e cette Ville, on
+        <lb />eſt ſi accouſtumé à les hair, qu’on ne les peut
+        <lb />voir ſans leur faire quelque niche; juſques là
+        <lb />qu’vne de nos Dames bailla vn ſoufflet à vn de
+        <lb />leurs Chefs, pour auoir voulu luy toucher le
+        <lb />bras, dans vne boutique de Marrhand.
+        <lb />Vn Milord Anglois, ſuiuy de quarante per
+        <lb rend="¬" break="no" />ſonnes, tous Gens de commandement, aeſté
+        <lb />lalüier ſon Alteſſe; on dit qu’il eſt venu faire des
+        <lb />ptopoſitions à M. le Prince de la part de ſa Re
+        <lb rend="¬" break="no" />publique; d’autres aſſeurent qu’il n’eſt venu que
+        <lb />pour le ſeruir comme vn franc-Champion, ou
+        <lb />comme vn Avanturier; mais il y a grande appa
+        <lb rend="¬" break="no" />nce que ſi Monſieur le Prince eſt trop pouſſe,
+        <lb />qu’il ſe prendra par tout.
+        <lb />ll n’ya que la Chambre de l’Edit qui ſe ſouſ
+        <lb rend="¬" break="no" />¬ <pb n="8" />
+        <lb />8
+        <lb />met à l’Interdiction du Roy, le Parlement entre
+        <lb />toûjours, fondé ſur ce que Monſieur le Procu
+        <lb rend="¬" break="no" />rer Ge neral portant au Palais la Declararion
+        <lb />du Roy, auee l’lnterdiction, il fut rencontreé
+        <lb />par quantité́ de Gens armez, qui luy firent ren
+        <lb rend="¬" break="no" />dre ls Paquets du Roy, ſi bien qu’il ne les ap
+        <lb rend="¬" break="no" />porta point au Palais comme il deſiroit faire’; Et
+        <lb />le Parlement ignore, ou fait ſemblant d’ignorer
+        <lb />qu’il y ait eu Interdiction ou Declaration aucu
+        <lb rend="¬" break="no" />ne. Cetre Ville eſt auſſi tran quille qu’en plaine
+        <lb />Paix; l’on ne s’y diuertit pas moins, &amp; l’on n’y
+        <lb />fait pas moindre chere;, Les prouiſions nous y
+        <lb />viennent de tous coſtez en abondance, &amp; ſi l’on
+        <lb />vous perſuade que l’on ſoit diuiſé icy, &amp; que
+        <lb />tout ſe ruine; n’en croyez rien; Et perſuadez
+        <lb rend="¬" break="no" />vous que le party de ſon Alteſſe y eſt toûjours
+        <lb />le plus fort; &amp; que ceux qui voudroient y appor
+        <lb rend="¬" break="no" />ter quelque changement, n’oſeroient encore
+        <lb />auoir remué́; Ie ne ſç̧ay ce qui en ſera pour l’ad
+        <lb rend="¬" break="no" />venir; Croyez-moy, &amp; tout ce que vous appren
+        <lb rend="¬" break="no" />drez de moy, n’eſtant aucunement paſſionné.
+        <lb />E
+        <lb />FIN. </p>
+    </body>
+  </text>
 </TEI>

@@ -1,378 +1,239 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau4003_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">La vérité sans fard.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">La vérité sans fard.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-					<persName ref="orcid:0000-0002-3327-3967" role="intern">Cappe Zoé</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=mhpHWnbPBcMC&amp;"/>
-					<author/>
-					<title source="Moreau">Vérité (la) sans fard.</title>
-					<pubPlace source="Moreau">Sans lieu</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau">Sans date</date>
-					<date source="BM_Lyon" when="1649">1649</date>
-					<extent>
-						<measure quantity="7" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale</institution>
-						<repository/>
-						<idno type="cote">A 492766</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+          <persName ref="orcid:0000-0002-3327-3967" role="intern">Cappe Zoé</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=mhpHWnbPBcMC&amp;" />
+          <author />
+          <title source="Moreau">Vérité (la) sans fard.</title>
+          <pubPlace source="Moreau">Sans lieu</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="Sans date">Sans date</date>
+          <date source="BM_Lyon" when="1649">1649</date>
+          <extent>
+            <measure quantity="7" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
+            <repository />
+            <idno type="cote">A 492766</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">4003. Vérité (la) sans fard. (S. 1. n. d. ), 7 pages. lié F. 10 ( 307</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">non renseigné</term>
-					<term type="subject"/>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-04-07" who="ZC"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-LA
-        VERITE
-        SANS FARD 
-        
-        LA VERITE
-        SANS FARD.
-         ESSIEVS, qui vpyez &amp; ontende
-         tous les iours le recit de milles &amp; mily
-        ſacrileges, jettez les yeux de vdſtre compaſ
-        ſioſae cét execrable monſtrede naepure,qui
-        merie à̀ idſts raiſon d’eſtre cpmparé à̀ euse
-        engeance de vipere, qui venant au m6
-        rongé pouſortir les en railles dalme qui!
-        luy a dorné l’entrée da lavi Il a parcou
-        l’Itliesla Cicile lieu de ſafſence, il
-        preiinleefon corpsàdes infesplaiſirs pu
-        raſchenà fadis fortui, e a rotetouses les Eſ
-        gnes deſpulelles la eſté chaiſſé aueeinfami5,,
-        ileſtvenu an Franoearila out d’&amp;pcqp
-        les fertilis venir ers’luy uec5elle fuJe,
-        quiil a eté enrrains d’aduoüa ftaclçmen
-        d danoit que faire dalr d’auantas.
-        ni
-        . 
-        4
-        parcourir ny l’Italie, ny la Cicile, ny les
-        Eſpagnes pour baſtir ſa fortune;’ la France
-        eſt ſa mere nourrice, c’eſt elle qui l’a receu
-        entre ſes bras, &amp; cependant pour comble
-        de graces il nous rauis nos Louïs; &amp; nous
-        priue de la douce conuerſatrion de noſtre
-        Roy, en ioüiſſant de ſa Mere. Ie croy ve
-        ritablement que par ſes eharmes Diaboli
-        ques il l’a enchantée, elle qul autrefois ge
-         miſſoit &amp; pleuroit lors qu’elle voyoit ſo
-        pvuple oppreſſé par les tyfannles de inilles
-        &amp; hilles Maltotiers &amp; Partiſans; Il n’auoit
-        pa pnis pour lors poſſeſſion de ſon me, il
-        d’auaoit pas charmé ſon eſprit;, e ae luy
-        auroit pas efacor parlé́ touchanr les duces
-        lammes d’amour: Mais ce n’eſt pas encore
-        fait, Voubs voyez blen mainronanc, Meſ
-        ſieurs, qué nos ſoies le jöet &amp; la ii
-        ſée des aurtres Nations , mousſouffrns ue
-        felôéteſtable Cdiaal ous metde le pied
-        ſut la gorge iOuy eea eſt faic, la iFtanee eſt
-        eſt perduë pour auoir voulu eſlae,: voſtte,
-        Piifteſſe à vn 8ouabraie dignié crelle e
-        netſtoit eene fois d’auantage: is tes
-        Auguiſte Parletaant vous m’eraſe&amp;a, sil
-        vois ’plft, -ille vous dis que vmua aez
-         manque
-         .
-         a 
-        5
-        manqué en ne tenant point parole à ce
-        grand Roy LouysXIII lors qu’il mourut.
-         r6
-        Iuſte Roy tu auois bien dir, nous le voyons
-        &amp; l’experimentons à noſtre propre domma
-        ge, qu’il ne failloit iamais luy donnert la Re
-        gence, que c’eſtoit vn eſprit volage, &amp; vne
-        girouëtte à tout vent, elle veut ſe lauer de
-        dans le ſang des Francois, &amp; veut mettre
-        tout au feu &amp; au pillage pour ſatisfaire à ſa
-         bruralité́: Mais vn ſeul à combatu &amp; expoſé
-        la vie cent &amp; cent fois pour rendre la liberté
-        à ſa Patrie, &amp; pour reprimer l’audace &amp; la co
-        lere de cette autruche, qui digerant le fer &amp;
-        l’acier, prendra plus de plaiſir à voir le ſang
-         des François. Beaufort, nom agreable à tous
-        les François, ouy c’eſtce grand Duc de Beau
-        fott, ce courage inuincible, qui triomphe
-        maintenant de ſes ennemis. Mazarin s’eſt
-        artiràſur ſoy la haine de teout le monde aà cauſe
-         dë ſa lubricité: t luy par ſon courage l’aplau
-        diſſement de tous; Si mos Chefs n’euſſent
-        point trahys &amp; arreſté le cours de ſes victoi
-        res, il pourroit mainenane rendre la pareille
-        à ce deteſtable Cardinal, qui lauoic detenu
-         l’eſpace d’vn ſi long temps dedans le bois
-        de Vinciennes: mais cruauté eftange, il luy
-        B 
-        ?
-         6
-        ouleit oſter la conuerſation des hiures,:&amp;
-        faire comme cét horrible monſtre de nature,
-        qui ſe diſoit grand amy de Dieu- Mahomét,
-        qui defendit aux Turcs la lecture d’aucun li
-        nre( excepté l’Alcoran)’crainte qu’ils ne
-        s’appôtceuſſent de ces fourbes.
-         Mazarin veut l’imiter en toutes ſesactions,
-        i dit que la lobricit́ eſt licite; puis qu’elle eſt
-        permile chez les Turcs, il chatoü̈ille l’oreille
-        de la Reyne, il fait comme fes Cyrennes, il
-        l’endore pour enfin la faire tomber dans vr
-        preclpice. Mais grande Reyno la plus ver
-        tueuſe qui aitiamais paru dans la France, ou
-        utez maintenant les yeux, oſtez ce bandeau
-        qui vous empeſche de cognoiſtre la veriteé &amp;
-        le peril où vous eſtes; Implorez, l’aſſiſtance
-        d’enhaut elle ſeule peut vous la monſtrer, &amp;
-        Vous le faire eognoiſtre: Maisque me ſert-il,
-        Meſfiouis, de perdre icy mon temps à luy
-        vouloir perſuader; en l’eſtat qu’olle eſt ell!
-        h’entend rien, elle eſt trop endormie. Mais:
-        Grand Disu, oùſont vs foudres, queneles
-        amcez vous ſur la eſteder cée horriple Magi
-        ecleni qublaſifbirenchané, qu’elle l’aymee
-        ne le peumqaittez, quoy qu’ils agiſſede laper
-        elaraacs Ele roſſemble à cepe Semima¬ 
-         7
-        ramis, elle fait demembrer &amp; corcher tous
-        les iouts la France, la peau de laquelle elle ſe
-        couure pour plaire d’auantage à ce brutal de
-        Mazarin: Elle ayme comme Semiramis vn
-        cheual &amp; vn brutal, Quoy nos Lys ſeront ils
-        ainſi profanez, retire toy d’icy miſerable, ne
-        vient plus meſler les abominables regles des
-        Turcs auec noſtre Chriſtianiſme, va chercher
-        ailleurs vn autre proye, &amp; ne vient plus ter
-        nir la renommé́e de ces genereux Franç̧ois par
-        tes inſolences perpetuelles, Tu re dis Cardi
-        nal du S. Siege Apoſtolique, en fais tuaucu
-        ne fonction, non car dis moy, à̀ quoy paſſe
-        tu les iours, à perdre l’vn, à̀ oſter la vieà l’autre,
-        eſt-ce la la fonction d’vn Cardinal; Non, non
-        ſonge à toy, abaiſſe toy &amp; t’humilie deuant
-        Dieu &amp; deuant les hommes, autant que tu t’é́s
-        eſleué, Regarde la main de ce grand Dieu pres
-        à lancer ſes foudres ſur ta malheureuſe teſte,
-        fais penitence afin que Dieu te pardonne tou
-        res tes pilleries &amp; voleries, &amp; qu’il ne te donne
-        point la mort eternelle, que tuas à iuſterai
-        ſon meritée.
-        FIN.			</p>
-		</body>
-	</text>
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">4003. Vérité (la) sans fard. (S. 1. n. d. ), 7 pages. lié F. 10 ( 307</p>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">non renseigné</term>
+          <term type="subject" />
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-04-07" who="ZC" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />LA
+        <lb />VERITE
+        <lb />SANS FARD <pb n="2" />
+        <pb n="3" />
+        <lb />LA VERITE
+        <lb />SANS FARD.
+        <lb /> ESSIEVS, qui vpyez &amp; ontende
+        <lb /> tous les iours le recit de milles &amp; mily
+        <lb />ſacrileges, jettez les yeux de vdſtre compaſ
+        <lb rend="¬" break="no" />ſioſae cét execrable monſtrede naepure,qui
+        <lb />merie à̀ idſts raiſon d’eſtre cpmparé à̀ euse
+        <lb rend="¬" break="no" />engeance de vipere, qui venant au m6
+        <lb />rongé pouſortir les en railles dalme qui!
+        <lb />luy a dorné l’entrée da lavi Il a parcou
+        <lb />l’Itliesla Cicile lieu de ſafſence, il
+        <lb />preiinleefon corpsàdes infesplaiſirs pu
+        <lb />raſchenà fadis fortui, e a rotetouses les Eſ
+        <lb />gnes deſpulelles la eſté chaiſſé aueeinfami5,,
+        <lb />ileſtvenu an Franoearila out d’&amp;pcqp
+        <lb />les fertilis venir ers’luy uec5elle fuJe,
+        <lb />quiil a eté enrrains d’aduoüa ftaclçmen
+        <lb />d danoit que faire dalr d’auantas.
+        <lb />ni
+        <lb />. <pb n="4" />
+        <lb />4
+        <lb />parcourir ny l’Italie, ny la Cicile, ny les
+        <lb />Eſpagnes pour baſtir ſa fortune;’ la France
+        <lb />eſt ſa mere nourrice, c’eſt elle qui l’a receu
+        <lb />entre ſes bras, &amp; cependant pour comble
+        <lb />de graces il nous rauis nos Louïs; &amp; nous
+        <lb />priue de la douce conuerſatrion de noſtre
+        <lb />Roy, en ioüiſſant de ſa Mere. Ie croy ve
+        <lb rend="¬" break="no" />ritablement que par ſes eharmes Diaboli
+        <lb rend="¬" break="no" />ques il l’a enchantée, elle qul autrefois ge
+        <lb rend="¬" break="no" /> miſſoit &amp; pleuroit lors qu’elle voyoit ſo
+        <lb rend="¬" break="no" />pvuple oppreſſé par les tyfannles de inilles
+        <lb />&amp; hilles Maltotiers &amp; Partiſans; Il n’auoit
+        <lb />pa pnis pour lors poſſeſſion de ſon me, il
+        <lb />d’auaoit pas charmé ſon eſprit;, e ae luy
+        <lb />auroit pas efacor parlé́ touchanr les duces
+        <lb />lammes d’amour: Mais ce n’eſt pas encore
+        <lb />fait, Voubs voyez blen mainronanc, Meſ
+        <lb rend="¬" break="no" />ſieurs, qué nos ſoies le jöet &amp; la ii
+        <lb rend="¬" break="no" />ſée des aurtres Nations , mousſouffrns ue
+        <lb />felôéteſtable Cdiaal ous metde le pied
+        <lb />ſut la gorge iOuy eea eſt faic, la iFtanee eſt
+        <lb />eſt perduë pour auoir voulu eſlae,: voſtte,
+        <lb />Piifteſſe à vn 8ouabraie dignié crelle e
+        <lb />netſtoit eene fois d’auantage: is tes
+        <lb rend="¬" break="no" />Auguiſte Parletaant vous m’eraſe&amp;a, sil
+        <lb />vois ’plft, -ille vous dis que vmua aez
+        <lb /> manque
+        <lb /> .
+        <lb /> a <pb n="5" />
+        <lb />5
+        <lb />manqué en ne tenant point parole à ce
+        <lb />grand Roy LouysXIII lors qu’il mourut.
+        <lb /> r6
+        <lb />Iuſte Roy tu auois bien dir, nous le voyons
+        <lb />&amp; l’experimentons à noſtre propre domma
+        <lb rend="¬" break="no" />ge, qu’il ne failloit iamais luy donnert la Re
+        <lb rend="¬" break="no" />gence, que c’eſtoit vn eſprit volage, &amp; vne
+        <lb />girouëtte à tout vent, elle veut ſe lauer de
+        <lb rend="¬" break="no" />dans le ſang des Francois, &amp; veut mettre
+        <lb />tout au feu &amp; au pillage pour ſatisfaire à ſa
+        <lb /> bruralité́: Mais vn ſeul à combatu &amp; expoſé
+        <lb />la vie cent &amp; cent fois pour rendre la liberté
+        <lb />à ſa Patrie, &amp; pour reprimer l’audace &amp; la co
+        <lb rend="¬" break="no" />lere de cette autruche, qui digerant le fer &amp;
+        <lb />l’acier, prendra plus de plaiſir à voir le ſang
+        <lb /> des François. Beaufort, nom agreable à tous
+        <lb />les François, ouy c’eſtce grand Duc de Beau
+        <lb rend="¬" break="no" />fott, ce courage inuincible, qui triomphe
+        <lb />maintenant de ſes ennemis. Mazarin s’eſt
+        <lb />artiràſur ſoy la haine de teout le monde aà cauſe
+        <lb /> dë ſa lubricité: t luy par ſon courage l’aplau
+        <lb rend="¬" break="no" />diſſement de tous; Si mos Chefs n’euſſent
+        <lb />point trahys &amp; arreſté le cours de ſes victoi
+        <lb rend="¬" break="no" />res, il pourroit mainenane rendre la pareille
+        <lb />à ce deteſtable Cardinal, qui lauoic detenu
+        <lb /> l’eſpace d’vn ſi long temps dedans le bois
+        <lb />de Vinciennes: mais cruauté eftange, il luy
+        <lb />B <pb n="6" />
+        <lb />?
+        <lb /> 6
+        <lb />ouleit oſter la conuerſation des hiures,:&amp;
+        <lb />faire comme cét horrible monſtre de nature,
+        <lb />qui ſe diſoit grand amy de Dieu- Mahomét,
+        <lb />qui defendit aux Turcs la lecture d’aucun li
+        <lb rend="¬" break="no" />nre( excepté l’Alcoran)’crainte qu’ils ne
+        <lb />s’appôtceuſſent de ces fourbes.
+        <lb /> Mazarin veut l’imiter en toutes ſesactions,
+        <lb />i dit que la lobricit́ eſt licite; puis qu’elle eſt
+        <lb />permile chez les Turcs, il chatoü̈ille l’oreille
+        <lb />de la Reyne, il fait comme fes Cyrennes, il
+        <lb />l’endore pour enfin la faire tomber dans vr
+        <lb />preclpice. Mais grande Reyno la plus ver
+        <lb rend="¬" break="no" />tueuſe qui aitiamais paru dans la France, ou
+        <lb rend="¬" break="no" />utez maintenant les yeux, oſtez ce bandeau
+        <lb />qui vous empeſche de cognoiſtre la veriteé &amp;
+        <lb />le peril où vous eſtes; Implorez, l’aſſiſtance
+        <lb />d’enhaut elle ſeule peut vous la monſtrer, &amp;
+        <lb />Vous le faire eognoiſtre: Maisque me ſert-il,
+        <lb />Meſfiouis, de perdre icy mon temps à luy
+        <lb />vouloir perſuader; en l’eſtat qu’olle eſt ell!
+        <lb />h’entend rien, elle eſt trop endormie. Mais:
+        <lb />Grand Disu, oùſont vs foudres, queneles
+        <lb />amcez vous ſur la eſteder cée horriple Magi
+        <lb rend="¬" break="no" />ecleni qublaſifbirenchané, qu’elle l’aymee
+        <lb />ne le peumqaittez, quoy qu’ils agiſſede laper
+        <lb />elaraacs Ele roſſemble à cepe Semima¬ <pb n="7" />
+        <lb /> 7
+        <lb />ramis, elle fait demembrer &amp; corcher tous
+        <lb />les iouts la France, la peau de laquelle elle ſe
+        <lb />couure pour plaire d’auantage à ce brutal de
+        <lb />Mazarin: Elle ayme comme Semiramis vn
+        <lb />cheual &amp; vn brutal, Quoy nos Lys ſeront ils
+        <lb />ainſi profanez, retire toy d’icy miſerable, ne
+        <lb />vient plus meſler les abominables regles des
+        <lb />Turcs auec noſtre Chriſtianiſme, va chercher
+        <lb />ailleurs vn autre proye, &amp; ne vient plus ter
+        <lb rend="¬" break="no" />nir la renommé́e de ces genereux Franç̧ois par
+        <lb />tes inſolences perpetuelles, Tu re dis Cardi
+        <lb rend="¬" break="no" />nal du S. Siege Apoſtolique, en fais tuaucu
+        <lb rend="¬" break="no" />ne fonction, non car dis moy, à̀ quoy paſſe
+        <lb />tu les iours, à perdre l’vn, à̀ oſter la vieà l’autre,
+        <lb />eſt-ce la la fonction d’vn Cardinal; Non, non
+        <lb />ſonge à toy, abaiſſe toy &amp; t’humilie deuant
+        <lb />Dieu &amp; deuant les hommes, autant que tu t’é́s
+        <lb />eſleué, Regarde la main de ce grand Dieu pres
+        <lb />à lancer ſes foudres ſur ta malheureuſe teſte,
+        <lb />fais penitence afin que Dieu te pardonne tou
+        <lb rend="¬" break="no" />res tes pilleries &amp; voleries, &amp; qu’il ne te donne
+        <lb />point la mort eternelle, que tuas à iuſterai
+        <lb rend="¬" break="no" />ſon meritée.
+        <lb />FIN. </p>
+    </body>
+  </text>
 </TEI>

@@ -1,1146 +1,625 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau525_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Avis important et nécessaire sur l’état et la crise des
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Avis important et nécessaire sur l’état et la crise des
           affaires présentes, donné par un notable bourgeois en l’assemblée de l'hôtel de
           ville.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2022-10-25">25 octobre 2022</date>
-				<availability status="restricted" n="cc-by">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=F2i8t_wYB3MC"/>
-					<author/>
-					<title source="Moreau">Avis important et nécessaire sur l’état et la crise des affaires
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2022-10-25">25 octobre 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=F2i8t_wYB3MC" />
+          <author />
+          <title source="Moreau">Avis important et nécessaire sur l’état et la crise des affaires
             présentes, donné par un notable bourgeois en l’assemblée de l'hôtel de ville.</title>
-					<pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1652">1652</date>
-					<extent>
-						<measure unit="page" quantity="16"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale de Lyon</institution>
-						<repository/>
-						<idno type="cote">Rés 309401</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1652">1652</date>
+          <extent>
+            <measure unit="page" quantity="16" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale de Lyon</institution>
+            <repository />
+            <idno type="cote">Rés 309401</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">525. Avis important et nécessaire sur l’état et l_ç,bieﬁ des affaires
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">525. Avis important et nécessaire sur l’état et l_ç,bieﬁ des affaires
           présentes, donné par un notable bourgeois en l’assemblée de l'hôtel de ville. Paris,
           1652,16 p. Le duc d'Orléans avaît pris le titre et les fonctions de lieutenant général du
           royaume. L'auteur a un système d’impôt fort plaisant, qui repose sur cette extravagance :
           que Paris compte six millions d’habitants. Il ne faut pas, après cela , s’étonner qu’Isaac
           Loppin suppose soixante millions d’âmes dans toute la France. Voir ci-après l’Avis
           trés-jüste et légitime au roi trés-chrétien, etc.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">avis</term>
-					<term type="genre">discours adressé</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_91" source="Moreau">
-					<p>Lieutenance générale du duc d’Orléans</p>
-					<date when="1652-07-20">1652-07-20</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-10-25" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<pb n="12"/>
-				<pb n="13"/>
-				<pb n="14"/>
-				<pb n="15"/>
-				<pb n="16"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-7
-        . 8
-        I
-        V L
-        IMPORTANT
-        ET ECESSAIRE
-        
-        ET
-        4¬ D
-        
-        LA CRISE
-         DES
-        IC E
-        AFFAIRES PRESENTES.
-        PAR VN NOTAABLE BOVRGEoIS
-        en l’Aſſemblee de l’Hoſtel de Vile.
-        3A PARS.
-        l
-        e¬¬ 
-        
-        3
-        edbhfbtſ hnbA
-        ea
-        à
-        83090l
-        e p?
-         aait8.
-        ’eeee VVFp ee
-        A DVIS TRESIMPORTAN
-        y r¬
-        &amp; eceſſaire, ſur l’Eſftat &amp; la Criſe des
-        AAffaires preſentes; Donné par vn notable
-         lourgeois entAſſemblée de l’Hoſtel de Ville.
-        .n.2
-        ESSHEvRS,
-        I’ay remarqué dans l’iſtoire que la
-        Ville de Rome eſtant deuenuë la Capi
-        tale du Monde, par le moyen de la bon
-        ne intelligence &amp; panfaite vnion de ſes Citoyens, de
-        uint vn heaire d’horreur à tout l’Vniuers, par la diui
-        fion &amp; deſ-vnion maudite de ſes meſmes Habitans: qui
-        s’eſtants iettez en diuerſes factions en faueur de ceux
-        qui la geuuernoient, &amp; cette ſeparation d’inelina
-        tions ayant ſuſpendu rous les effets merueilleux que
-        chaque party attendoit de cette malheureuſe Ville, elle
-        fut remplie de ſeditions, de deſordres, d’incommoditez,
-        &amp; deuint enfin la proye des Eſtrangers, auſquels elle ſe
-        donna au pillage comme d’elle-méme, d’autant que
-        pendant que les mieux intentionnez s’efſorçoient de
-        leur en defandre l’abord; les Fationnaires d’autre part
-        aſchoient par tous moyens de les y introduire: ainſi
-        elle ſe vit toute renmplie de ſang &amp; du meurtre de ſes
-        Citoyens, abandonnez à la proſeription &amp; à la fureur
-        les vns des autres.
-        Carthage la ſuperbe, qui portoit ſon ambition plus
-        loin que la terre, la vit reſerrée dans la ſeale enceinte 
-        4
-        de ſes murailles; ſe veit elle-meſme la proye de celles
-        qu’elle auoit voulu reduire, &amp; fut enfin malheureuſe
-        ment raſé́e, ſans qu’il reſtaſt preſque vne ſeule marque
-        de ſa grandeur paſſée:les diſſentionsciuiles &amp; inteſtines,
-        luy oterent l’Empire du Monde, qu’elle tenoit deſia
-        preſque tout entier, &amp; luy cauſa cette deſolation dont
-        elle ne s’eſt iamais relcuee.
-        Conſtantinople dans ſon plus bel ́clat, &amp; dans la
-        plus haute ſplendsur de l’Empire d’Orient, dont elle
-        eſtoit la Capitale, ſe vit ſur le penchant de ſa Ruine par
-        ces fatales diſcordes des Paleologues, des Comnenes,
-         des Baudoüins, &amp; des Myrtilles, &amp; eſt deuenuë enfin la
-         Conqueſte du Turc par ſa ſeule diuiſion.
-        Florence, Genes, Milan, Naples, ſe ſon veuẽs to
-         tes remplies de meurtres, de maſſacres, de ſang, de feu &amp;
-        d’horreur par la fureur de leurs-bourgeois animez les
-        vns contre les autres, &amp; eous cela n’a prodnuit que des
-        ruines deplorables dans leurs citez.
-        Et ſans allerchercher des Eemples chez les Eſtran
-        gers, combien de fois Paris s’eſt-il veu reduit à ces
-        dangereuſecs extremitez ? La diuiſion de nos peres ne
-         fut-elle pas la cauſe que Henry V. Roy d’Angleterre
-        y treuua vne entŕe; qu’vn Eſttanger appuyeé d’vne Rey
-        ne Eſtraogere, &amp; qui auoit eſté Regente, s’empatra de la
-        Couronne &amp; de ñs libertez aupréiudice de Charles
-        VIl. le legitime Monarque, pendant que la phſpart des
-        Princes du ſang eſtoiét ſous les armes pour s’y oppoſer,
-        l’inſenſibilit é des Pariſiens, &amp; leurs factions, fit auorter
-        tous leurs bons deſſeis: mais combien cher le paye
-        rent-ils par apré́s, quand ils virent les Anglois infolents
-        qui les traitoient comme des Eſclaues? quels regrets
-        n’eurent-ils point de ce t yrannique afront, lors qu’il
-        n’eſtoit plus temps d’y apporter du remede?
-        S; Paris n’eſt point pery dés ce temps-l, ie croy que
-        c’eſt parce qu’il n’eſtoit pas encor arriué au dernier
-         periode de ſon accroiſfement; Mais auiourd’huy qu’il
-        eſt 
-        et fans çoasredi la plusofiſſante Cité du Mon
-        de O. qu’il. eſt dahgoru Mefeuxs, que les fa
-        ctions qui s’y eleueut nae lé piecipitent de ſi haur das d.
-        funeſtes tuines; il y a de.grandes diſpoſtions à c mal
-        heur. Nos Princes ueritablement lon armez à ſa deften
-        ſe, maisilsne ſont pas ſoutenus omme il taut, vn Eſtr ã
-        ges vent. s’emparu de oute l’authiorieseone eyne
-        Eſtrangere&amp; Regeni le rotrege au preiudice du ſanmg,
-        beaocaup de gros Bourgeois iiennent les plus emi
-        nentes harges dans cette faction Mazarinepar. leur
-        propre iue ſt qu’on fomente de preſens ou de:pro.
-        meſſes enx quele c du benpobli aniqe noſre
-        conſeruation ſonti hus &amp;-dmpeſchezlrar. ceux qu
-        lont danslcs chargos, &amp; ceux qui ſont emportez par le
-        torrent de leu s afte ctions crienax amnesaux armes,
-        la Guerre, pit d Maarin: Cependant les Allemans
-        ſonit à aos portes, qu orûleri, qui pillent,qui tuene,
-        &amp; nous doanent chaqne iout de nuueaux ſpectacles
-        de léuc impitoyable uauté
-        Si nos Princes ſortent auec le p de troupes qu’ils
-        nt pû-tamafferà leurs propesfiais, ils expoſent leurs
-        perſunnes &amp; tout noftre’appuy, leux mode n’eſtpas ſuf
-        filanmt pour ieſiſter au ennémis, &amp; nô̂ſtre foibleſſe ſe
-        découur &amp; saugmente parleu fuitoupar leur per
-        te: ſi lon y joint ceux de la Villeu trient auet tant
-        d’e mpreſſe ment qu’ils veuslene ſotir, l’on verra au pre
-        mier choe Paris tout-reply de lamertaions de fem
-        mes qui aunt perdua leurs pauure marys qui gai
-        gnoient a vie de toutleur famifle, ou s’en prendre à
-        ceux qui les aur õt mene auc õbt qui ne ſoepoint reſ
-        ponſables de la vie des ſoldats, non plus que de la leur
-        propre, mais leurs ennemis ſe preualant de ces deſor
-        dres feron crier contre leur conduire, &amp;empeſche
-        ront s’ils peuuenttout l’effect qu’on en pourroit eſ
-        pere.
-        .
-         Il faut donc leuer dos toupes’ pſompte ment. pour
-        ¬ 
-        6.
-        pour s’oppoſer aux violeces’ desenemis qui nus
-        iennent comme bloqués. l’en ſuis alen d’accord auee!
-        vous, mais il y a quantité de Mazarins qui s’y oppoſe
-        ront, ils ont les charges en main, ils ſont les Maiſtres
-        de la Police, ils ont gaigne beaucoup de bons Bou
-        geois par leurs malicieuſes intrigues: par laà ils preten
-        dent tenir outes choſes en ſuſpends, les tirer dans ne
-        longueur tres- dangereuſe, &amp; puis enfin nous jetter
-        dans le malheur dont ils ne ſe mettent pas en peine,
-        pourueu qu’ils trouuent leur maudit itereſt dans nô
-        tre debris.
-         faut deprompts remedes à tous ces maux, autre
-        ment ils prendront vn tel accroiſſement qu’on ne pour
-         plus y apporter d’ordre quand ils auront preualupar
-        deſſus toutes nos precautions.
-        l’y vois vn bon commencement, mais qui ſera is
-        tile s’il n’eſt pouſſé bier plus auant, &amp; auec celerite.
-        ous eſtes bien aſſurés des bonnes intentions d
-        Noſſeigneurs les Princes quelque défiance que les Ma
-        arin vous en ayent voulu donner, erfaiſant courir le
-        bruit que leur Paix eſtoit faite, &amp; que tout ecy ne ſe
-        pratiquoit que pour nous amuſer. Vous ſçauez indubi
-        ablement que S. A. R. deſire la Paix, &amp; qu’il em
-        ployera touteſorte de moyens pous nous la procurer.
-         Vous ne doute point de la fermet é de Monſieur le
-        Prince à tenir ſa parole, &amp; puis qu’il n’en a pas manqué
-        à ſes enneis meſmes, Iugez ’il en manquera iamais à
-        l’endroi de ceux quile ſeruiront de la bonne maniere.
-        Lfranchiſe,; &amp; la ſinterité de Monſieus de Beaufort
-        vous eſt trop connué, &amp; vous eſtes certains qu’il ir de
-        bonne ſorte au ſecours de l’Eſtar &amp; du Peuple, ainſi
-        qu’il a fait deſia par le paſſé: outre que ces’trois Princes
-        galement offenſe par le rebut qu’on fait d’eux a
-        Conſeils du Roy, ouis deuroient preſidez ſans contre.
-        dit, &amp; par l’intereſt qu’ils ont à maintenir l’authorité
-        Royale qui s’abaiſſe ſous la pyrannie Eſtrangere, ferbon 
-         out ler poſibl pour oſter ceét abuas inſupportable, &amp;
-         pour nous rendre le calme qui nous eſt rauypar des vio
-        lences eſtranges.
-        Il faut doncagir tout de bon en cette dangereuſe con
-         joncture, &amp; ne rien epargner pour r’auoir naoſtre libert é́
-         qu’on opprime viſiblement a noſtre plus grade infamie:
-        il faur montrer que nous ſommes François, &amp; fide lles
-        Sujets de noſtre Roy que les Eſtrangers detiennent en
-         iuiuſtice, &amp; duquel ils perdent impunement l’Eſtat.
-        Le Parlement vient de commencer par l’etabliſſe.
-        ment qu’il vient de faire de Monſeigneur le Duc d Or
-        leans en la charge de Lieut enãt Generaſſime du Royau
-        me, il faut qne la Ville acheue ce chef-d’œuure qui doit
-        confondre les ennemis de la Paix, &amp; nous re donner le
-        calme qui nous eſt neceſſaire.
-        Le premier remede qu’il faut apporter à nos deſon
-        dres, &amp; dont ie vous donne auis, c’eſt d’examiner d’a
-        bord le dedans de noſtre Ville, d’en bien re connoiſtre
-        l’eſtat, d’en diſſiper les factons, &amp; y retablir vne ferme
-        vnion de volontez &amp; vne bonne intelligence : ie n’en
-        ends pas d’aller etablir vne muleitude de Loix &amp; de la
-        policet auec vn long eſpace de temps, ( cela ne ſe peut
-        faire qu’en vne ſaiſon plus tranquille mais de gré &amp; de
-        force tout enſemble rappeller tout le monde aà ſon de
-        uoir: En voicy l’infaillible moyen. Il faut changer tous
-        les Officiers de Ville qui ſont ſoupç̧onnez d’eſtre Ma
-         earins, que vqus re connoiſtrez auſſi-toſt par l’oppoſi
-        ion q’ils y voudront faire : car celuy qui murmurera
-        deſe voir depoſ ſera ſans doute yn franc Mazarin, c’eſl
-        à dire plus attaché à ſon intereſt propre qu’à̀ celuy du
-        public, puiſque dans vne neceſſité preſſante il aura re
-        gret, ou ſeulement de ſe voir priué d’vn petit auantage
-        qu’il poſſedoit, ou peut eſtre enragera de ne pouuir
-        plus conſpirer auec le Mazarin ſon Maiſtre. Mais qu’il
-        depite tant qu’il luy plaira, il le faut deſtituer abſolu.
-        aent, &amp; mettre enſaplaee vn homme de bien &amp; de lu¬ 
-        9
-        ſtice qui ſoit zelée pour le bien commun, &amp; qui ſoit ia
-        corruptible.
-        Ce ſeroit vne grande honte à ces Meſſieurs de ſe plain
-        dre en cette occaſiõ, ouils deuroient venir eux-meſmes
-        ſe demettre genereuſement, afin de faire voir qu’ils
-        ont eſté &amp; ſont encor de veritables Officiers de Police,
-        dont tout les ſoins &amp; les ſollicitudes ſont pour l’Eſtat &amp;
-        non point pour eux meſmes. Que s’ils ont le cœut ſi fort
-        attaché́ à leur bien particulier, qu’ils témoigneut qu’ils
-        ont debourſé quelque fſomme de deniers à l’achapt de
-        cette charge, il faut qu’ils attenaden l’établiſſement de
-        la Paix pour le remplacémnt de cctte ſomme, ou bien
-        s’ils le meritent, la reſtltution’en leuts charges: Dieu
-         merey il ny en a pas vn’quine puiſſe ſubſiſter apres cette
-         perte, &amp; à qui il ne reſte encore aſſez dequoy viure, &amp;
-        pour luy &amp; pour ſa famille, au del de quoy tout le relle
-        n’eſt que pure ambition au dire d’vn illuſtre Romain
-        qui pratiqua la meſme choſe
-        Il ne faut donc pas que le Marechal de l’Hoſpital, le
-        Preuoſt des Marchands, le Lieutenane Ciuil, &amp; quel
-        ques autres reſiſtent ſur ce point s’ils veulens faire voit
-        qu’ils ſont bons Magiſtrats, &amp; qu’ils ont merité́ la place
-        qu’ils tiennent par leur ele au bien public, qu’ils n’au
-         ront iamais mieux téuoign qu’en certe occaſion.
-        Que s’ils ont fourny quelques ſomnes imaenſes au
-        Mazarin pour s’appuyer de ſa faueur dans la joü̈iſſance
-        de leurs Officess c’eſt vn crime ſordide qu’ils ne doiuent
-        point mettre au iour: car ilſeroit ſufiſant pour leur faire
-        leur procez r &amp; les chaſtier de la tefte pour certe hon
-        teuſe proſtiutiorde a Iuſtice à la tyrannique auarice
-        &amp; inſatiable auidité de cét Eſtranger, &amp; pour la lalch.
-        té ſi fort intereſſ́e d’vn Fira çois auily par cette noie
-        pratique.
-         Cette depoſiti&amp; d’Officiers qui ſe doit faire tout d’vn
-        coup doie eſtre ſuiulotout aufſi-eoſt d’vne ſu bſtitution à̀
-        leurs charge. Il ſe trouueraeacore aſſez de perſonn s
-         deſintereſſées, 
-        9
-         deſintereſſées, &amp; affcctionńes au bien de leuf Patrie pour
-         accepter ces Offices dans des remps difficiles, &amp; o il y a
-        beaucoup moins à acquerir de richaeſſes que de gloirc:
-         mais l’honneur d’auoir bien ſeruy ſon Roy &amp; ſa Patrie eſt
-        vn bien de grand prix aux curs genereux &amp; veritabfe
-         nent François, &amp; cela leur vaudra mieux vn lour que les
-        millions de rentes qu’one amaſſé ceux qui les auront
-        pretedé.
-        Cette éâlecti ſe doit faire en l’aſéblée des notables dans
-         l’Hoſtel de Ville au gré de S. A. R. qui en vertu de la qua
-        lité de Lieutenant Generaliſſime du Royaume à pouuoir
-        de ce fairer: Ordre que par apres lé Roy approuuera quãd
-        il connoiſt a le frict merueil leux qu’il aura produit com
-        me celuy de l’auoir degagé de la tyrannie Eſtrangere, de
-        l’auoir mis en pleine poſſeſſion de ſa Couronne &amp; de ſon
-        Sceptre, &amp; d’auoir eſtably la Paix ſur tous les Peuples qui
-        luy ſont ſoumis, &amp; qui au licu d’eſtre occupez à dé́plorer
-        leuts ruines ne feront que luy donner mille benedictions
-        d’vn bon-heur qui ſera commun à rout lemonde..
-         Tout ce procedé qui ſe peut acheuer en moins d’vn
-        bur ne doit point s’arreſter là, ou ſe relaſcher dans la
-        pourſuitte du bien quenousrecherchons; il faut chaſſer
-        &amp; au plus viſteles ennemis qui tiennent lIes auenues de
-        ns portes qui deſolent nos champs &amp; nos maiſons, &amp; qui
-        ſacr ifient inſodemrment à leut rage nos Concitoyens, qui
-        pouſſez d’vn ele indiſcret &amp; ſans oonduite ſe vont expo
-        ſer volontaitement à faire de vains efforts pour la liberté
-        publique.
-        Ie ſçay bien, Meſſieurs, que nos Priaces ont vne armée
-         qui ne nous manquera pas au beſoin, mais quoy quelle
-        loit ſuffiſance pour faire quelque progrez, &amp; pour baſan
-        cer l’auantage tantoſt d’vn coſté &amp; puis de l’autre: elle
-        ne l’eſt pourtant pas pour faire vn effort tel que nous le
-        ſouhaittons: il faut de bien plus grandes forccs pouroſter
-        toute celle de os eanemis, &amp; c’et à quoy i faut eond,,
-        C 
-         10
-        , buerchaeun ſelon ſon poſſible.
-         Nous n’ignorons paaque Monſieur e Due de IL orra
-         ne ne marche à noſtre ſecours, Meflieurs les Princes nous
-         enont aſſeureé, &amp; quelque dé́pit qu’en temoaignent les Ma¬ 3
-        zarins qui publient qu’il vient ſe vanger ſo les Franicois
-        du rauage qu’ils ont fait autte foisen ſon. pais qu’il crom
-         pera tou le mond &amp; qu’id n’oft que pour luy l me ſem
-        ble toutefois, (&amp; ie croy que vous ſerez demon aduis;
-        „que par toutes les rnſons -de Politiqué: il ne nous peut
-        faire que du bien quand ne l voudroit pas: Car outte
-         qu’il amene des forces qui combartront pour nous, &amp;
-        ſous l’ordre. de nos Princes quenous ſeuiron au beſoin,
-        il he peut faire aucune entrepriſe ſunoſtre libeseé. Oe
-         deſſein eſt bien ecloigné de i penſée, &amp; eroip ridiculé pour
-         en-former. d parels, nous ſommes donc bie certains
-         quil ne vienticy que pour cherchr lai’aix Generale,
-        . dans le tratré d laquelle il peuc trouuter la poſſeſſion de
-        ſes terres qui nous ſont de cres-infertiles conquaſtecs.
-         Citte pretention eſt trop iuſte pour eſtre deſauouée:
-         l hoimmage qu’il en doit à la hrance eſt trop legitime pou
-         trouuer de la reſiſtance danis l’eſprit de ce l’rineà le re¬
-        dre à quiil appartiene; &amp; puis qu’on m’a guere prerendu
-        autre choſe dans la Guerre qu’on-luya fate, &amp; qu’on’en
-        retire rien dauantage aà preſent, ileſt ſâns doue ben plus
-         raſonnahle de vendre ces erres quine nous poduiſet
-        rien à celu qui les fcra bien valoir comme proprietair;
-        accord qui eſt tres glorieux au Roy qui verra vn Sou
-        rain luy rendre hommage d’vn Eſtar qu’il luy a remdu, tre
-        hcureux aux Peuples de cette concré́e qiipaciſſenr depuis
-        ſi long-temps, &amp; qui doit eſtre enfin la plesae ſatis fation
-        de ce Prnce qui ne demande qu’jouir paiſiblemcnt du
-        bien qui luy cſt lgitimement acquis; &amp; que nos Roys
-        ont touſiours parage aux. Ducs -de- Lorrainc ſansy rere
-         nir d’autre droit que celuy-de l’honamage, qui eſt vne
-        marquede leur graudeur &amp;de leut aaagficence
-        ¬!¬¬-L-AAAL 
-         1t
-         le ecroy que paàr là uous eſtes plaihement informez de
-         ſon intention qui ne peut eſtre autre quetellc-là, &amp; que
-        aous ne deuons attendre qu: vn ſecours aſſuiréde ſa venuë.
-        . ne faut pourtant pas s’aſſurer tellement ſur ſes for
-        ces que nous n’employons point les noſtres, il faut re
-        mettre à ſon A. Rpour lequel il vient, à diſpoſer du mo
-        de qu’il amene ſelon la neceſlité de l’Eſtat, nais de noſtte
-        parc, il faut donnerordre à vne prompte leuée de ſoldats
-        qui ne manqueront pas d’eſtre neceſſaires en cette preſ
-         ſante occaſ.
-        Ie ſçay bien le moyen qui eſtdans labouche des mieux
-        in entionnés, qui eſt d’obliger chaque Bourgeois à four
-         nir vn cercain nombre d’honamnes ſelon ſa capacité, &amp; de
-        les entretenir à ſesfrais &amp; dé́pends Il ſeroic ſans doute
-        fort bon, tres-efficace, ſi tous les Bourgeois eſtoient
-        Capitaines, &amp; aſſez capables pour pouruoir à toutes les
-        neceſſitez de la Milice ſelon les occurences mais paree
-        queccla dépend de l’experienee de la conduite &amp; le la
-         vleur des Chefs, i eſt nen ſeuleent tres-important,
-        mis abſolumens neceſſaire de leur remettre tout cde ſoin
-        qu’ls font exactement paroiſtre quand il-eſt remps.
-        La raiſon militaire qui l’ordonaerainſi, eſt qu’ils ſoſt
-         obligez de faire de ftequentesrueus de ’armée pouta
-        ’maintenir en bon ardte, &amp; pourempeſcher ldiffûîpatio,
-        qu’il faue y rerenir le ſoldtat par l’eſperance de la folde,
-        qu’il le faut exciter par là de hautes &amp; difficiles entre
-        priſes, &amp; qu’enfinil le faut recoapenſer ſouuene ſar ſe
-        champ ſelon les belles aions rqu’il a faites: outre qu
-        ſelon les ocçaons il fau euployer dol’argent, tantoſt
-         gaigner des ennamis par la liberalité, eantoſt à ſe rendie
-         affidez des gens capables d’aller reconuoiſtre es’Eume
-        mis, leurs forces, leurs. poſtures, &amp; leuts marches;Tas.
-        toſt à faire éleuer des poncs &amp;des fortspourauoirti.
-        . berté des paſſages, puis paur le aharroy des natis
-         uaiuons de; guerosy &amp;nillrausres aacau; sſ¬ 
-        2
-         quels la conduite &amp; la vigilanc-des chefs doit auoir ne
-         eſſairement le droit de ouruoir comme a des choſes
-         qui arriuent à tous les moments dans vne armée.
-         Il y a encore vne aeutre raiſon tres-plauſible à cette ne
-        ce ſſité́, qui eſt que les Chefs s’attachent plus fortement
-         les ſoldats à leur ſeruice par ce nmoyen de les payer eux
-         meſmes, qu’ils obeiſſent plus ponctuellement à ceux deſ
-         quels ils dépendent ſi abſolument, qu’ils gardent le reſ
-        pect &amp; fidelité qu’ils leurs doiuent; &amp; enfin ce moyen
-        établit vne dependance ſi parfaite &amp; vne liaiſon ſi forte
-        que nen ne les peut ſeparer que la ort, cequi fait tout le
-        ’bon ordre d’vne armée.
-        e n’eſt donc point là l’employ d’vn Bourgeois de diſ¬
-        poſer de la ſolde des Troupes, &amp; nous ne trouuons point
-        que les Romains ny autres ’euples dans leurs plus extrê̂
-         mes neceſſitez ayent mis en vſage cet expedient, il faut
-        quelque ordre plus precis ſur ce ſujet.
-         Je vous auertis donc, Meſſieurs, d’vn moyen au
-        quel nous deuons bien exactement prendre garde
-        comme le plus important &amp; le plus abſolument
-        neceſſaire, ſi nous voulons bien &amp; heureuſement reüſ.
-         ſir; c’eſt -de faire vn amas de deniers que nous fourni
-        rons ſelon voſtre capacite paatieulierede nous coitiſer
-        s’il ſe peut nous-meſme volontairement pour cela, &amp;
-        de faire vne ſomme capable de ſubuenir à tous les frais
-        de la Guerre, que nous s õmes auiourd’huy contraints de
-        faire pour ſl propre libert́: Que ne doit on point
-         faire pour auoir laPaix &amp; la Liberté, les animaux nous
-        l’enſeignent lors qu’ils ſe retranchent d’vne pareie de
-        leurs membres pour ſauuer le reſte du corps, ainſi fait
-        le Caſtor quand il eſt pourſuiuy par les Chaſſeurs, qui
-        S’arrache ce qu’il porte, ou pour arreſter ceux qui le
-        pourluiuent à le ramaſſer, ou pour courir plus legere
-        ment en ſe déchargeant de cette parie: Ainſi font les
-        inſe ces qui ſe coupent la queuë eus, meſmes quand
-        elle 
-        9
-        ele eſt engagé́e paur ſe donner l liberté. Il faut
-        ſe retrancher, MESSIEVRS, de quelque choſe,
-        pour nous procurer l’abondance de tout;&amp; pleuſt
-        a Dieu que cela fuſt volontaire à l’endroit de tous, on
-        verroit vne Vnion dans Paris qui ſeroit inuincible aux
-        attaques de tous les Ennemis de la terre habitable:i
-        Mais de crainte que ſi on laiſſoit cetre liberté́ de con
-        tribuer, cela ne fit pas grand effet, ou fuſt d’vne trop
-        lente procedure, comme beaucoup ſe dégarniſſent le
-        plus tard qu’ils peunuent, ie reuue vn remede à̀ ce mal
-        qui pouruoira auſſi à tous les autres.
-        le trouue, &amp; l’experience le preuuera, qu’il y a bien
-        ſix millions de perſonnes, tat hõ̃mes, femmes, qu’en
-        fants, dans la Ville de Paris. De ce nombre il y e
-        a vn million qui ſont tout à fait miſerables, qui n’ont
-        pas moyen de contribuer aucune choſe. Il y en a trois
-        millions de mediocres, &amp; deux millions d’aiſez.
-        De ce nombre oſtez vn million de pauures, il reſte
-        cinqmillions qui peuuent fournir quelque choſe. Que
-        chaque perſonne, tant maſle que femelle, grands que
-        petits, ſoient taxez à vingt ſols par chacune teſte: Voila
-        deſia cinq millions; outre cette ſomme, il y a deux
-        millions de perſonnes aſſez accommodez pour four
-        nir encor deux millions: Le tout fait ſept millions, ſans
-        preſque incommoder le public.¬
-        De toute cette multitude, il y en a pour le moins
-        deux cent mille qui ont maiſon dãs Paris ceux-là peu
-        uent bien fournir ſans s’incommoder beaucoup cha
-        cun cent ſols. Voila encor vn million, qui fait deſia
-        lhuict millions de liures, ſans beaucoup de difficulté.
-        Ceux à preſent qui ont porte Cochere, probablement
-        ſont aſſez Riches pour fournir par deſſus tout cela cha
-        Cun vne piſtole, il y en apour le moins ving mille; voi
-        la deux cent mille francs: il y en à pour le moinsqua
-        tre mille qui roulent le Caroſſe, &amp; qui n’out pas moins
-        D 
-        de dix mille liures de rente, qu’ils ſe etranchet ds
-        mille francs pour cette année, ils ne mouront pas de
-        faim pour cela, ils feront quatre millions. Voila defia
-        onze millions deux cent mille franes. Il y en a plus de
-        deux cent qui ont vingt mille francs de rente, qu’ils ad
-        iouſtent encor chacunmille francs: Voila deux cent
-        mille francs.
-        ll y en a pour le moins cent qui ont trente mille Ii
-        ure de rente qu’ils y e aioûtent chacun mille: Voila
-        encor cent mille francs. Le tout ſe monte deſia à onze
-        millions cinq cens mille francs. Il y en a plus de cin
-        quante qui ont quarante mille francs, plus de trente
-        qui en ont cinquante mille, plus de vingt qui enone
-        ſoixante mille, plus de dix qui en ont ſoixante &amp; dix
-        mille, plus de dix qui en ont quatre-vingts mille, plus
-        de dix qui en ont quatre-vingt dix mille, plus de dix
-        qui en ont cent mille, plus de dix qui en ont cent ſie
-        vingt mille, plus de dix qui ont cinquante mil eſeus;.
-        quelques-vns quiont eeat mil eſcus, &amp; quatre cent:
-        mille francs. Voila encor bien cinqcens ille francs,
-        le tout monte defia à douze millions. Sans compter:
-        ce que les zelez offriront volontairement de leur part,
-        ce que lesgrands du Royaume dépenſeront noblémt,
-        ce que les riches marchands propoſeront pour auoirle
-        rétabliſſemét du commerce, ce que les Eccleſiaſtiques
-        reſenterout, du moins ceux qui regarderont lagloire
-        de Dieu, &amp; la iuſtice de ſes peuples, peut-eſtre feroant
-        ils bien deux millious.
-        Mais s’ilfalloit eneor trouuer vn moyer tres aſſuré
-        pour auoir des deniers ſans incommoder en quelque
-        façon que ce ſoit le puhlic, moyen qui feroit enrage
-        Ies Mazarins, ece ſetoit de les obliger eux-meſmes a.
-        fournir dequoy leurfaire la guetre. Ilne faudroit que
-        faire re cherchedes biensqui reſtent à plus de deux cés
-        Maarins qui ſont en Cour, &amp; à faute de conribuer 
-        5
-        aux frais de la guerre comnme les autres, les confiſquer
-        ainſi qu’õ a fait la fameuſe Bibliote que de leur Maiſtre,
-        &amp; les expoſer à l’enchere, on en treuueroit ſans doute,
-        bien-toſt de l’argent en aſſez grande quantiré: Certe
-        Loy ſe pratiquoit chez les omains quand quelqu’vn
-        eſtoit declareé l’ennemy de la Republique.
-        Il y en a encor vn pareil à celuy-cy, qui eſt de faire
-        recherche de quantité de partiſans qui ſont tous Ma
-        arins, &amp; autres prodigieuſemét riches par la faueur de
-        leur Mazarin, qui ſont au nombre de plus de deux cent,
-        qui fourniroient tous chacun cent mille francs ſans
-        s’incommoder par trop, ’eſtit pas le reuenu d’vne an
-        née, outre que ce ſeroit dautant afoiblir le party de
-        ees Ennemis de l’Eſtat, &amp; de la Ville.
-        On pourroit icy faire deux difficultez auſquelles il
-        faut pouruoir, la premiere qu’il y en auroit beaucoup
-        peut eſtre qui deceleroiẽt le bien qu’ils ont pour ne pas
-        tant contredire, ce qui feroit vn notable dechet des ſõ̃
-        mes: Mais pour y obuier, il ne faudroit que confiſquer
-        au public le ſurplus du bien que chacû ſeroit cenſé poſ
-        ſeder, &amp; auroit declaré luy meſme.
-        L’autre difficultée eſt que les deſordres empeſcherõt
-        de pré́uoir tout ce que l’on deuoit auoir de ſes rentes
-        cette preſente année, mais elle eſt inutile, puiſque c’eſt
-        pour pouruoir autout qu’on donneroit cette partie, &amp;
-        afin que l’année prochaine &amp; les ſuiuãtes fuſſent remi
-        ſes en eftat de fournir les meſmes reuenus, ſur leſquels
-        n rejetteroir raiſonnablement ces contributions.
-        Cette ſomme de deniers eſtant ainſi amaſſée le plus
-        romptement que faire ſe pourroit, &amp; meſme par l’auã
-        ce qu’en pourroiét faire vne quãtitéde riches, du moins
-        d’vne partie, il faudroit l mertre toute ſous la directi6̃
-        de quatre notables bourgeois qui ſeroient cõ̃me les I¬.
-        tendants de cette Finance; &amp; qui la diſtribueroient aux
-        chefs de l’armée, ſelon-que la neceſſité le demãderoit,. 
-        Pendant que cela ſe feroit, il faudroit faire de tres
-        expreſſes defenſes de s’aſſébler de iour ny de nuict en
-        aucunes maiſons particulieres; Commandement aux
-        Officiers des quartiers d’y tenir la main: Ordre à Mr le
-        Cardinal de Retz de ſe tienir en ſon Archeueſche: de
-        faire prier Dieu pour la paix generale, &amp; l’on verroit
-        dans peu de temps que toutes choſes proſpereroient
-        à l’honneur de Dieu &amp; du Roy, à la gloire des Princes
-        de ſon Sang, à la confuſion des Ennemis, &amp; du Sceptre
-        François, &amp; à la Concluſion de la Paix generale.
-        FIN.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">avis</term>
+          <term type="genre">discours adressé</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_91" source="Moreau">
+          <p>Lieutenance générale du duc d’Orléans</p>
+          <date when="1652-07-20">1652-07-20</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-10-25" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb /> 7
+        <lb />. 8
+        <lb />I
+        <lb />V L
+        <lb />IMPORTANT
+        <lb />ET ECESSAIRE
+        <lb />
+        <lb />ET
+        <lb />4¬ D
+        <lb />
+        <lb />LA CRISE
+        <lb /> DES
+        <lb />IC E
+        <lb />AFFAIRES PRESENTES.
+        <lb />PAR VN NOTAABLE BOVRGEoIS
+        <lb />en l’Aſſemblee de l’Hoſtel de Vile.
+        <lb />3A PARS.
+        <lb />l
+        <lb />e¬¬ <pb n="2" />
+        <pb n="3" />
+        <lb />3
+        <lb />edbhfbtſ hnbA
+        <lb />ea
+        <lb />à
+        <lb />83090l
+        <lb />e p?
+        <lb /> aait8.
+        <lb />’eeee VVFp ee
+        <lb />A DVIS TRESIMPORTAN
+        <lb />y r¬
+        <lb rend="¬" break="no" />&amp; eceſſaire, ſur l’Eſftat &amp; la Criſe des
+        <lb />AAffaires preſentes; Donné par vn notable
+        <lb /> lourgeois entAſſemblée de l’Hoſtel de Ville.
+        <lb />.n.2
+        <lb />ESSHEvRS,
+        <lb />I’ay remarqué dans l’iſtoire que la
+        <lb />Ville de Rome eſtant deuenuë la Capi
+        <lb rend="¬" break="no" />tale du Monde, par le moyen de la bon
+        <lb rend="¬" break="no" />ne intelligence &amp; panfaite vnion de ſes Citoyens, de
+        <lb rend="¬" break="no" />uint vn heaire d’horreur à tout l’Vniuers, par la diui
+        <lb rend="¬" break="no" />fion &amp; deſ-vnion maudite de ſes meſmes Habitans: qui
+        <lb />s’eſtants iettez en diuerſes factions en faueur de ceux
+        <lb />qui la geuuernoient, &amp; cette ſeparation d’inelina
+        <lb rend="¬" break="no" />tions ayant ſuſpendu rous les effets merueilleux que
+        <lb />chaque party attendoit de cette malheureuſe Ville, elle
+        <lb />fut remplie de ſeditions, de deſordres, d’incommoditez,
+        <lb />&amp; deuint enfin la proye des Eſtrangers, auſquels elle ſe
+        <lb />donna au pillage comme d’elle-méme, d’autant que
+        <lb />pendant que les mieux intentionnez s’efſorçoient de
+        <lb />leur en defandre l’abord; les Fationnaires d’autre part
+        <lb />aſchoient par tous moyens de les y introduire: ainſi
+        <lb />elle ſe vit toute renmplie de ſang &amp; du meurtre de ſes
+        <lb />Citoyens, abandonnez à la proſeription &amp; à la fureur
+        <lb />les vns des autres.
+        <lb />Carthage la ſuperbe, qui portoit ſon ambition plus
+        <lb />loin que la terre, la vit reſerrée dans la ſeale enceinte <pb n="4" />
+        <lb />4
+        <lb />de ſes murailles; ſe veit elle-meſme la proye de celles
+        <lb />qu’elle auoit voulu reduire, &amp; fut enfin malheureuſe
+        <lb rend="¬" break="no" />ment raſé́e, ſans qu’il reſtaſt preſque vne ſeule marque
+        <lb />de ſa grandeur paſſée:les diſſentionsciuiles &amp; inteſtines,
+        <lb />luy oterent l’Empire du Monde, qu’elle tenoit deſia
+        <lb />preſque tout entier, &amp; luy cauſa cette deſolation dont
+        <lb />elle ne s’eſt iamais relcuee.
+        <lb />Conſtantinople dans ſon plus bel ́clat, &amp; dans la
+        <lb />plus haute ſplendsur de l’Empire d’Orient, dont elle
+        <lb />eſtoit la Capitale, ſe vit ſur le penchant de ſa Ruine par
+        <lb />ces fatales diſcordes des Paleologues, des Comnenes,
+        <lb /> des Baudoüins, &amp; des Myrtilles, &amp; eſt deuenuë enfin la
+        <lb /> Conqueſte du Turc par ſa ſeule diuiſion.
+        <lb />Florence, Genes, Milan, Naples, ſe ſon veuẽs to
+        <lb rend="¬" break="no" /> tes remplies de meurtres, de maſſacres, de ſang, de feu &amp;
+        <lb />d’horreur par la fureur de leurs-bourgeois animez les
+        <lb />vns contre les autres, &amp; eous cela n’a prodnuit que des
+        <lb />ruines deplorables dans leurs citez.
+        <lb />Et ſans allerchercher des Eemples chez les Eſtran
+        <lb rend="¬" break="no" />gers, combien de fois Paris s’eſt-il veu reduit à ces
+        <lb />dangereuſecs extremitez ? La diuiſion de nos peres ne
+        <lb /> fut-elle pas la cauſe que Henry V. Roy d’Angleterre
+        <lb />y treuua vne entŕe; qu’vn Eſttanger appuyeé d’vne Rey
+        <lb rend="¬" break="no" />ne Eſtraogere, &amp; qui auoit eſté Regente, s’empatra de la
+        <lb />Couronne &amp; de ñs libertez aupréiudice de Charles
+        <lb />VIl. le legitime Monarque, pendant que la phſpart des
+        <lb />Princes du ſang eſtoiét ſous les armes pour s’y oppoſer,
+        <lb />l’inſenſibilit é des Pariſiens, &amp; leurs factions, fit auorter
+        <lb />tous leurs bons deſſeis: mais combien cher le paye
+        <lb rend="¬" break="no" />rent-ils par apré́s, quand ils virent les Anglois infolents
+        <lb />qui les traitoient comme des Eſclaues? quels regrets
+        <lb />n’eurent-ils point de ce t yrannique afront, lors qu’il
+        <lb />n’eſtoit plus temps d’y apporter du remede?
+        <lb />S; Paris n’eſt point pery dés ce temps-l, ie croy que
+        <lb />c’eſt parce qu’il n’eſtoit pas encor arriué au dernier
+        <lb /> periode de ſon accroiſfement; Mais auiourd’huy qu’il
+        <lb />eſt <pb n="5" />
+        <lb />et fans çoasredi la plusofiſſante Cité du Mon
+        <lb />de O. qu’il. eſt dahgoru Mefeuxs, que les fa
+        <lb rend="¬" break="no" />ctions qui s’y eleueut nae lé piecipitent de ſi haur das d.
+        <lb />funeſtes tuines; il y a de.grandes diſpoſtions à c mal
+        <lb rend="¬" break="no" />heur. Nos Princes ueritablement lon armez à ſa deften
+        <lb rend="¬" break="no" />ſe, maisilsne ſont pas ſoutenus omme il taut, vn Eſtr ã
+        <lb rend="¬" break="no" />ges vent. s’emparu de oute l’authiorieseone eyne
+        <lb />Eſtrangere&amp; Regeni le rotrege au preiudice du ſanmg,
+        <lb />beaocaup de gros Bourgeois iiennent les plus emi
+        <lb rend="¬" break="no" />nentes harges dans cette faction Mazarinepar. leur
+        <lb />propre iue ſt qu’on fomente de preſens ou de:pro.
+        <lb />meſſes enx quele c du benpobli aniqe noſre
+        <lb />conſeruation ſonti hus &amp;-dmpeſchezlrar. ceux qu
+        <lb />lont danslcs chargos, &amp; ceux qui ſont emportez par le
+        <lb />torrent de leu s afte ctions crienax amnesaux armes,
+        <lb />la Guerre, pit d Maarin: Cependant les Allemans
+        <lb />ſonit à aos portes, qu orûleri, qui pillent,qui tuene,
+        <lb />&amp; nous doanent chaqne iout de nuueaux ſpectacles
+        <lb />de léuc impitoyable uauté
+        <lb />Si nos Princes ſortent auec le p de troupes qu’ils
+        <lb />nt pû-tamafferà leurs propesfiais, ils expoſent leurs
+        <lb />perſunnes &amp; tout noftre’appuy, leux mode n’eſtpas ſuf
+        <lb />filanmt pour ieſiſter au ennémis, &amp; nô̂ſtre foibleſſe ſe
+        <lb />découur &amp; saugmente parleu fuitoupar leur per
+        <lb rend="¬" break="no" />te: ſi lon y joint ceux de la Villeu trient auet tant
+        <lb />d’e mpreſſe ment qu’ils veuslene ſotir, l’on verra au pre
+        <lb rend="¬" break="no" />mier choe Paris tout-reply de lamertaions de fem
+        <lb rend="¬" break="no" />mes qui aunt perdua leurs pauure marys qui gai
+        <lb rend="¬" break="no" />gnoient a vie de toutleur famifle, ou s’en prendre à
+        <lb />ceux qui les aur õt mene auc õbt qui ne ſoepoint reſ
+        <lb rend="¬" break="no" />ponſables de la vie des ſoldats, non plus que de la leur
+        <lb />propre, mais leurs ennemis ſe preualant de ces deſor
+        <lb rend="¬" break="no" />dres feron crier contre leur conduire, &amp;empeſche
+        <lb rend="¬" break="no" />ront s’ils peuuenttout l’effect qu’on en pourroit eſ
+        <lb rend="¬" break="no" />pere.
+        <lb />.
+        <lb /> Il faut donc leuer dos toupes’ pſompte ment. pour
+        <lb />¬ <pb n="6" />
+        <lb />6.
+        <lb />pour s’oppoſer aux violeces’ desenemis qui nus
+        <lb />iennent comme bloqués. l’en ſuis alen d’accord auee!
+        <lb />vous, mais il y a quantité de Mazarins qui s’y oppoſe
+        <lb rend="¬" break="no" />ront, ils ont les charges en main, ils ſont les Maiſtres
+        <lb />de la Police, ils ont gaigne beaucoup de bons Bou
+        <lb rend="¬" break="no" />geois par leurs malicieuſes intrigues: par laà ils preten
+        <lb rend="¬" break="no" />dent tenir outes choſes en ſuſpends, les tirer dans ne
+        <lb />longueur tres- dangereuſe, &amp; puis enfin nous jetter
+        <lb />dans le malheur dont ils ne ſe mettent pas en peine,
+        <lb />pourueu qu’ils trouuent leur maudit itereſt dans nô
+        <lb rend="¬" break="no" />tre debris.
+        <lb /> faut deprompts remedes à tous ces maux, autre
+        <lb rend="¬" break="no" />ment ils prendront vn tel accroiſſement qu’on ne pour
+        <lb rend="¬" break="no" /> plus y apporter d’ordre quand ils auront preualupar
+        <lb rend="¬" break="no" />deſſus toutes nos precautions.
+        <lb />l’y vois vn bon commencement, mais qui ſera is
+        <lb rend="¬" break="no" />tile s’il n’eſt pouſſé bier plus auant, &amp; auec celerite.
+        <lb />ous eſtes bien aſſurés des bonnes intentions d
+        <lb />Noſſeigneurs les Princes quelque défiance que les Ma
+        <lb rend="¬" break="no" />arin vous en ayent voulu donner, erfaiſant courir le
+        <lb />bruit que leur Paix eſtoit faite, &amp; que tout ecy ne ſe
+        <lb />pratiquoit que pour nous amuſer. Vous ſçauez indubi
+        <lb rend="¬" break="no" />ablement que S. A. R. deſire la Paix, &amp; qu’il em
+        <lb rend="¬" break="no" />ployera touteſorte de moyens pous nous la procurer.
+        <lb /> Vous ne doute point de la fermet é de Monſieur le
+        <lb />Prince à tenir ſa parole, &amp; puis qu’il n’en a pas manqué
+        <lb />à ſes enneis meſmes, Iugez ’il en manquera iamais à
+        <lb />l’endroi de ceux quile ſeruiront de la bonne maniere.
+        <lb />Lfranchiſe,; &amp; la ſinterité de Monſieus de Beaufort
+        <lb />vous eſt trop connué, &amp; vous eſtes certains qu’il ir de
+        <lb />bonne ſorte au ſecours de l’Eſtar &amp; du Peuple, ainſi
+        <lb />qu’il a fait deſia par le paſſé: outre que ces’trois Princes
+        <lb />galement offenſe par le rebut qu’on fait d’eux a
+        <lb />Conſeils du Roy, ouis deuroient preſidez ſans contre.
+        <lb />dit, &amp; par l’intereſt qu’ils ont à maintenir l’authorité
+        <lb />Royale qui s’abaiſſe ſous la pyrannie Eſtrangere, ferbon <pb n="7" />
+        <lb /> out ler poſibl pour oſter ceét abuas inſupportable, &amp;
+        <lb /> pour nous rendre le calme qui nous eſt rauypar des vio
+        <lb rend="¬" break="no" />lences eſtranges.
+        <lb />Il faut doncagir tout de bon en cette dangereuſe con
+        <lb rend="¬" break="no" /> joncture, &amp; ne rien epargner pour r’auoir naoſtre libert é́
+        <lb /> qu’on opprime viſiblement a noſtre plus grade infamie:
+        <lb />il faur montrer que nous ſommes François, &amp; fide lles
+        <lb />Sujets de noſtre Roy que les Eſtrangers detiennent en
+        <lb /> iuiuſtice, &amp; duquel ils perdent impunement l’Eſtat.
+        <lb />Le Parlement vient de commencer par l’etabliſſe.
+        <lb />ment qu’il vient de faire de Monſeigneur le Duc d Or
+        <lb rend="¬" break="no" />leans en la charge de Lieut enãt Generaſſime du Royau
+        <lb rend="¬" break="no" />me, il faut qne la Ville acheue ce chef-d’œuure qui doit
+        <lb />confondre les ennemis de la Paix, &amp; nous re donner le
+        <lb />calme qui nous eſt neceſſaire.
+        <lb />Le premier remede qu’il faut apporter à nos deſon
+        <lb rend="¬" break="no" />dres, &amp; dont ie vous donne auis, c’eſt d’examiner d’a
+        <lb rend="¬" break="no" />bord le dedans de noſtre Ville, d’en bien re connoiſtre
+        <lb />l’eſtat, d’en diſſiper les factons, &amp; y retablir vne ferme
+        <lb />vnion de volontez &amp; vne bonne intelligence : ie n’en
+        <lb rend="¬" break="no" />ends pas d’aller etablir vne muleitude de Loix &amp; de la
+        <lb />policet auec vn long eſpace de temps, ( cela ne ſe peut
+        <lb />faire qu’en vne ſaiſon plus tranquille mais de gré &amp; de
+        <lb />force tout enſemble rappeller tout le monde aà ſon de
+        <lb rend="¬" break="no" />uoir: En voicy l’infaillible moyen. Il faut changer tous
+        <lb />les Officiers de Ville qui ſont ſoupç̧onnez d’eſtre Ma
+        <lb /> earins, que vqus re connoiſtrez auſſi-toſt par l’oppoſi
+        <lb rend="¬" break="no" />ion q’ils y voudront faire : car celuy qui murmurera
+        <lb />deſe voir depoſ ſera ſans doute yn franc Mazarin, c’eſl
+        <lb />à dire plus attaché à ſon intereſt propre qu’à̀ celuy du
+        <lb />public, puiſque dans vne neceſſité preſſante il aura re
+        <lb rend="¬" break="no" />gret, ou ſeulement de ſe voir priué d’vn petit auantage
+        <lb />qu’il poſſedoit, ou peut eſtre enragera de ne pouuir
+        <lb />plus conſpirer auec le Mazarin ſon Maiſtre. Mais qu’il
+        <lb />depite tant qu’il luy plaira, il le faut deſtituer abſolu.
+        <lb />aent, &amp; mettre enſaplaee vn homme de bien &amp; de lu¬ <pb n="8" />
+        <lb />9
+        <lb rend="¬" break="no" />ſtice qui ſoit zelée pour le bien commun, &amp; qui ſoit ia
+        <lb rend="¬" break="no" />corruptible.
+        <lb />Ce ſeroit vne grande honte à ces Meſſieurs de ſe plain
+        <lb rend="¬" break="no" />dre en cette occaſiõ, ouils deuroient venir eux-meſmes
+        <lb />ſe demettre genereuſement, afin de faire voir qu’ils
+        <lb />ont eſté &amp; ſont encor de veritables Officiers de Police,
+        <lb />dont tout les ſoins &amp; les ſollicitudes ſont pour l’Eſtat &amp;
+        <lb />non point pour eux meſmes. Que s’ils ont le cœut ſi fort
+        <lb />attaché́ à leur bien particulier, qu’ils témoigneut qu’ils
+        <lb />ont debourſé quelque fſomme de deniers à l’achapt de
+        <lb />cette charge, il faut qu’ils attenaden l’établiſſement de
+        <lb />la Paix pour le remplacémnt de cctte ſomme, ou bien
+        <lb />s’ils le meritent, la reſtltution’en leuts charges: Dieu
+        <lb /> merey il ny en a pas vn’quine puiſſe ſubſiſter apres cette
+        <lb /> perte, &amp; à qui il ne reſte encore aſſez dequoy viure, &amp;
+        <lb />pour luy &amp; pour ſa famille, au del de quoy tout le relle
+        <lb />n’eſt que pure ambition au dire d’vn illuſtre Romain
+        <lb />qui pratiqua la meſme choſe
+        <lb />Il ne faut donc pas que le Marechal de l’Hoſpital, le
+        <lb />Preuoſt des Marchands, le Lieutenane Ciuil, &amp; quel
+        <lb rend="¬" break="no" />ques autres reſiſtent ſur ce point s’ils veulens faire voit
+        <lb />qu’ils ſont bons Magiſtrats, &amp; qu’ils ont merité́ la place
+        <lb />qu’ils tiennent par leur ele au bien public, qu’ils n’au
+        <lb /> ront iamais mieux téuoign qu’en certe occaſion.
+        <lb />Que s’ils ont fourny quelques ſomnes imaenſes au
+        <lb />Mazarin pour s’appuyer de ſa faueur dans la joü̈iſſance
+        <lb />de leurs Officess c’eſt vn crime ſordide qu’ils ne doiuent
+        <lb />point mettre au iour: car ilſeroit ſufiſant pour leur faire
+        <lb />leur procez r &amp; les chaſtier de la tefte pour certe hon
+        <lb rend="¬" break="no" />teuſe proſtiutiorde a Iuſtice à la tyrannique auarice
+        <lb />&amp; inſatiable auidité de cét Eſtranger, &amp; pour la lalch.
+        <lb />té ſi fort intereſſ́e d’vn Fira çois auily par cette noie
+        <lb />pratique.
+        <lb /> Cette depoſiti&amp; d’Officiers qui ſe doit faire tout d’vn
+        <lb />coup doie eſtre ſuiulotout aufſi-eoſt d’vne ſu bſtitution à̀
+        <lb />leurs charge. Il ſe trouueraeacore aſſez de perſonn s
+        <lb /> deſintereſſées, <pb n="9" />
+        <lb />9
+        <lb /> deſintereſſées, &amp; affcctionńes au bien de leuf Patrie pour
+        <lb /> accepter ces Offices dans des remps difficiles, &amp; o il y a
+        <lb />beaucoup moins à acquerir de richaeſſes que de gloirc:
+        <lb /> mais l’honneur d’auoir bien ſeruy ſon Roy &amp; ſa Patrie eſt
+        <lb />vn bien de grand prix aux curs genereux &amp; veritabfe
+        <lb rend="¬" break="no" /> nent François, &amp; cela leur vaudra mieux vn lour que les
+        <lb />millions de rentes qu’one amaſſé ceux qui les auront
+        <lb />pretedé.
+        <lb />Cette éâlecti ſe doit faire en l’aſéblée des notables dans
+        <lb /> l’Hoſtel de Ville au gré de S. A. R. qui en vertu de la qua
+        <lb rend="¬" break="no" />lité de Lieutenant Generaliſſime du Royaume à pouuoir
+        <lb />de ce fairer: Ordre que par apres lé Roy approuuera quãd
+        <lb />il connoiſt a le frict merueil leux qu’il aura produit com
+        <lb rend="¬" break="no" />me celuy de l’auoir degagé de la tyrannie Eſtrangere, de
+        <lb />l’auoir mis en pleine poſſeſſion de ſa Couronne &amp; de ſon
+        <lb />Sceptre, &amp; d’auoir eſtably la Paix ſur tous les Peuples qui
+        <lb />luy ſont ſoumis, &amp; qui au licu d’eſtre occupez à dé́plorer
+        <lb />leuts ruines ne feront que luy donner mille benedictions
+        <lb />d’vn bon-heur qui ſera commun à rout lemonde..
+        <lb /> Tout ce procedé qui ſe peut acheuer en moins d’vn
+        <lb />bur ne doit point s’arreſter là, ou ſe relaſcher dans la
+        <lb />pourſuitte du bien quenousrecherchons; il faut chaſſer
+        <lb />&amp; au plus viſteles ennemis qui tiennent lIes auenues de
+        <lb />ns portes qui deſolent nos champs &amp; nos maiſons, &amp; qui
+        <lb />ſacr ifient inſodemrment à leut rage nos Concitoyens, qui
+        <lb />pouſſez d’vn ele indiſcret &amp; ſans oonduite ſe vont expo
+        <lb rend="¬" break="no" />ſer volontaitement à faire de vains efforts pour la liberté
+        <lb />publique.
+        <lb />Ie ſçay bien, Meſſieurs, que nos Priaces ont vne armée
+        <lb /> qui ne nous manquera pas au beſoin, mais quoy quelle
+        <lb />loit ſuffiſance pour faire quelque progrez, &amp; pour baſan
+        <lb rend="¬" break="no" />cer l’auantage tantoſt d’vn coſté &amp; puis de l’autre: elle
+        <lb />ne l’eſt pourtant pas pour faire vn effort tel que nous le
+        <lb />ſouhaittons: il faut de bien plus grandes forccs pouroſter
+        <lb />toute celle de os eanemis, &amp; c’et à quoy i faut eond,,
+        <lb />C <pb n="10" />
+        <lb /> 10
+        <lb />, buerchaeun ſelon ſon poſſible.
+        <lb /> Nous n’ignorons paaque Monſieur e Due de IL orra
+        <lb rend="¬" break="no" /> ne ne marche à noſtre ſecours, Meflieurs les Princes nous
+        <lb /> enont aſſeureé, &amp; quelque dé́pit qu’en temoaignent les Ma¬ 3
+        <lb />zarins qui publient qu’il vient ſe vanger ſo les Franicois
+        <lb />du rauage qu’ils ont fait autte foisen ſon. pais qu’il crom
+        <lb rend="¬" break="no" /> pera tou le mond &amp; qu’id n’oft que pour luy l me ſem
+        <lb rend="¬" break="no" />ble toutefois, (&amp; ie croy que vous ſerez demon aduis;
+        <lb rend="¬" break="no" />„que par toutes les rnſons -de Politiqué: il ne nous peut
+        <lb rend="¬" break="no" />faire que du bien quand ne l voudroit pas: Car outte
+        <lb /> qu’il amene des forces qui combartront pour nous, &amp;
+        <lb />ſous l’ordre. de nos Princes quenous ſeuiron au beſoin,
+        <lb />il he peut faire aucune entrepriſe ſunoſtre libeseé. Oe
+        <lb /> deſſein eſt bien ecloigné de i penſée, &amp; eroip ridiculé pour
+        <lb /> en-former. d parels, nous ſommes donc bie certains
+        <lb /> quil ne vienticy que pour cherchr lai’aix Generale,
+        <lb />. dans le tratré d laquelle il peuc trouuter la poſſeſſion de
+        <lb />ſes terres qui nous ſont de cres-infertiles conquaſtecs.
+        <lb /> Citte pretention eſt trop iuſte pour eſtre deſauouée:
+        <lb /> l hoimmage qu’il en doit à la hrance eſt trop legitime pou
+        <lb /> trouuer de la reſiſtance danis l’eſprit de ce l’rineà le re¬
+        <lb rend="¬" break="no" />dre à quiil appartiene; &amp; puis qu’on m’a guere prerendu
+        <lb />autre choſe dans la Guerre qu’on-luya fate, &amp; qu’on’en
+        <lb />retire rien dauantage aà preſent, ileſt ſâns doue ben plus
+        <lb /> raſonnahle de vendre ces erres quine nous poduiſet
+        <lb />rien à celu qui les fcra bien valoir comme proprietair;
+        <lb />accord qui eſt tres glorieux au Roy qui verra vn Sou
+        <lb rend="¬" break="no" />rain luy rendre hommage d’vn Eſtar qu’il luy a remdu, tre
+        <lb rend="¬" break="no" />hcureux aux Peuples de cette concré́e qiipaciſſenr depuis
+        <lb />ſi long-temps, &amp; qui doit eſtre enfin la plesae ſatis fation
+        <lb />de ce Prnce qui ne demande qu’jouir paiſiblemcnt du
+        <lb />bien qui luy cſt lgitimement acquis; &amp; que nos Roys
+        <lb />ont touſiours parage aux. Ducs -de- Lorrainc ſansy rere
+        <lb rend="¬" break="no" /> nir d’autre droit que celuy-de l’honamage, qui eſt vne
+        <lb />marquede leur graudeur &amp;de leut aaagficence
+        <lb />¬!¬¬-L-AAAL <pb n="11" />
+        <lb /> 1t
+        <lb /> le ecroy que paàr là uous eſtes plaihement informez de
+        <lb /> ſon intention qui ne peut eſtre autre quetellc-là, &amp; que
+        <lb />aous ne deuons attendre qu: vn ſecours aſſuiréde ſa venuë.
+        <lb />. ne faut pourtant pas s’aſſurer tellement ſur ſes for
+        <lb rend="¬" break="no" />ces que nous n’employons point les noſtres, il faut re
+        <lb rend="¬" break="no" />mettre à ſon A. Rpour lequel il vient, à diſpoſer du mo
+        <lb rend="¬" break="no" />de qu’il amene ſelon la neceſlité de l’Eſtat, nais de noſtte
+        <lb />parc, il faut donnerordre à vne prompte leuée de ſoldats
+        <lb />qui ne manqueront pas d’eſtre neceſſaires en cette preſ
+        <lb rend="¬" break="no" /> ſante occaſ.
+        <lb />Ie ſçay bien le moyen qui eſtdans labouche des mieux
+        <lb />in entionnés, qui eſt d’obliger chaque Bourgeois à four
+        <lb rend="¬" break="no" /> nir vn cercain nombre d’honamnes ſelon ſa capacité, &amp; de
+        <lb />les entretenir à ſesfrais &amp; dé́pends Il ſeroic ſans doute
+        <lb />fort bon, tres-efficace, ſi tous les Bourgeois eſtoient
+        <lb />Capitaines, &amp; aſſez capables pour pouruoir à toutes les
+        <lb />neceſſitez de la Milice ſelon les occurences mais paree
+        <lb />queccla dépend de l’experienee de la conduite &amp; le la
+        <lb /> vleur des Chefs, i eſt nen ſeuleent tres-important,
+        <lb rend="¬" break="no" />mis abſolumens neceſſaire de leur remettre tout cde ſoin
+        <lb />qu’ls font exactement paroiſtre quand il-eſt remps.
+        <lb />La raiſon militaire qui l’ordonaerainſi, eſt qu’ils ſoſt
+        <lb /> obligez de faire de ftequentesrueus de ’armée pouta
+        <lb />’maintenir en bon ardte, &amp; pourempeſcher ldiffûîpatio,
+        <lb />qu’il faue y rerenir le ſoldtat par l’eſperance de la folde,
+        <lb rend="¬" break="no" />qu’il le faut exciter par là de hautes &amp; difficiles entre
+        <lb rend="¬" break="no" />priſes, &amp; qu’enfinil le faut recoapenſer ſouuene ſar ſe
+        <lb />champ ſelon les belles aions rqu’il a faites: outre qu
+        <lb rend="¬" break="no" />ſelon les ocçaons il fau euployer dol’argent, tantoſt
+        <lb /> gaigner des ennamis par la liberalité, eantoſt à ſe rendie
+        <lb /> affidez des gens capables d’aller reconuoiſtre es’Eume
+        <lb rend="¬" break="no" />mis, leurs forces, leurs. poſtures, &amp; leuts marches;Tas.
+        <lb />toſt à faire éleuer des poncs &amp;des fortspourauoirti.
+        <lb />. berté des paſſages, puis paur le aharroy des natis
+        <lb /> uaiuons de; guerosy &amp;nillrausres aacau; sſ¬ <pb n="12" />
+        <lb />2
+        <lb /> quels la conduite &amp; la vigilanc-des chefs doit auoir ne
+        <lb rend="¬" break="no" /> eſſairement le droit de ouruoir comme a des choſes
+        <lb /> qui arriuent à tous les moments dans vne armée.
+        <lb /> Il y a encore vne aeutre raiſon tres-plauſible à cette ne
+        <lb rend="¬" break="no" />ce ſſité́, qui eſt que les Chefs s’attachent plus fortement
+        <lb /> les ſoldats à leur ſeruice par ce nmoyen de les payer eux
+        <lb rend="¬" break="no" /> meſmes, qu’ils obeiſſent plus ponctuellement à ceux deſ
+        <lb rend="¬" break="no" /> quels ils dépendent ſi abſolument, qu’ils gardent le reſ
+        <lb rend="¬" break="no" />pect &amp; fidelité qu’ils leurs doiuent; &amp; enfin ce moyen
+        <lb />établit vne dependance ſi parfaite &amp; vne liaiſon ſi forte
+        <lb />que nen ne les peut ſeparer que la ort, cequi fait tout le
+        <lb />’bon ordre d’vne armée.
+        <lb />e n’eſt donc point là l’employ d’vn Bourgeois de diſ¬
+        <lb rend="¬" break="no" />poſer de la ſolde des Troupes, &amp; nous ne trouuons point
+        <lb />que les Romains ny autres ’euples dans leurs plus extrê̂
+        <lb rend="¬" break="no" /> mes neceſſitez ayent mis en vſage cet expedient, il faut
+        <lb />quelque ordre plus precis ſur ce ſujet.
+        <lb /> Je vous auertis donc, Meſſieurs, d’vn moyen au
+        <lb rend="¬" break="no" />quel nous deuons bien exactement prendre garde
+        <lb />comme le plus important &amp; le plus abſolument
+        <lb />neceſſaire, ſi nous voulons bien &amp; heureuſement reüſ.
+        <lb /> ſir; c’eſt -de faire vn amas de deniers que nous fourni
+        <lb rend="¬" break="no" />rons ſelon voſtre capacite paatieulierede nous coitiſer
+        <lb />s’il ſe peut nous-meſme volontairement pour cela, &amp;
+        <lb />de faire vne ſomme capable de ſubuenir à tous les frais
+        <lb />de la Guerre, que nous s õmes auiourd’huy contraints de
+        <lb />faire pour ſl propre libert́: Que ne doit on point
+        <lb /> faire pour auoir laPaix &amp; la Liberté, les animaux nous
+        <lb />l’enſeignent lors qu’ils ſe retranchent d’vne pareie de
+        <lb />leurs membres pour ſauuer le reſte du corps, ainſi fait
+        <lb />le Caſtor quand il eſt pourſuiuy par les Chaſſeurs, qui
+        <lb />S’arrache ce qu’il porte, ou pour arreſter ceux qui le
+        <lb />pourluiuent à le ramaſſer, ou pour courir plus legere
+        <lb rend="¬" break="no" />ment en ſe déchargeant de cette parie: Ainſi font les
+        <lb />inſe ces qui ſe coupent la queuë eus, meſmes quand
+        <lb />elle <pb n="13" />
+        <lb />9
+        <lb />ele eſt engagé́e paur ſe donner l liberté. Il faut
+        <lb />ſe retrancher, MESSIEVRS, de quelque choſe,
+        <lb />pour nous procurer l’abondance de tout;&amp; pleuſt
+        <lb />a Dieu que cela fuſt volontaire à l’endroit de tous, on
+        <lb />verroit vne Vnion dans Paris qui ſeroit inuincible aux
+        <lb />attaques de tous les Ennemis de la terre habitable:i
+        <lb />Mais de crainte que ſi on laiſſoit cetre liberté́ de con
+        <lb rend="¬" break="no" />tribuer, cela ne fit pas grand effet, ou fuſt d’vne trop
+        <lb />lente procedure, comme beaucoup ſe dégarniſſent le
+        <lb />plus tard qu’ils peunuent, ie reuue vn remede à̀ ce mal
+        <lb />qui pouruoira auſſi à tous les autres.
+        <lb />le trouue, &amp; l’experience le preuuera, qu’il y a bien
+        <lb />ſix millions de perſonnes, tat hõ̃mes, femmes, qu’en
+        <lb rend="¬" break="no" />fants, dans la Ville de Paris. De ce nombre il y e
+        <lb rend="¬" break="no" />a vn million qui ſont tout à fait miſerables, qui n’ont
+        <lb />pas moyen de contribuer aucune choſe. Il y en a trois
+        <lb />millions de mediocres, &amp; deux millions d’aiſez.
+        <lb />De ce nombre oſtez vn million de pauures, il reſte
+        <lb />cinqmillions qui peuuent fournir quelque choſe. Que
+        <lb />chaque perſonne, tant maſle que femelle, grands que
+        <lb />petits, ſoient taxez à vingt ſols par chacune teſte: Voila
+        <lb />deſia cinq millions; outre cette ſomme, il y a deux
+        <lb />millions de perſonnes aſſez accommodez pour four
+        <lb rend="¬" break="no" />nir encor deux millions: Le tout fait ſept millions, ſans
+        <lb />preſque incommoder le public.¬
+        <lb rend="¬" break="no" />De toute cette multitude, il y en a pour le moins
+        <lb />deux cent mille qui ont maiſon dãs Paris ceux-là peu
+        <lb rend="¬" break="no" />uent bien fournir ſans s’incommoder beaucoup cha
+        <lb rend="¬" break="no" />cun cent ſols. Voila encor vn million, qui fait deſia
+        <lb />lhuict millions de liures, ſans beaucoup de difficulté.
+        <lb />Ceux à preſent qui ont porte Cochere, probablement
+        <lb />ſont aſſez Riches pour fournir par deſſus tout cela cha
+        <lb rend="¬" break="no" />Cun vne piſtole, il y en apour le moins ving mille; voi
+        <lb rend="¬" break="no" />la deux cent mille francs: il y en à pour le moinsqua
+        <lb rend="¬" break="no" />tre mille qui roulent le Caroſſe, &amp; qui n’out pas moins
+        <lb />D <pb n="14" />
+        <lb />de dix mille liures de rente, qu’ils ſe etranchet ds
+        <lb />mille francs pour cette année, ils ne mouront pas de
+        <lb />faim pour cela, ils feront quatre millions. Voila defia
+        <lb />onze millions deux cent mille franes. Il y en a plus de
+        <lb />deux cent qui ont vingt mille francs de rente, qu’ils ad
+        <lb rend="¬" break="no" />iouſtent encor chacunmille francs: Voila deux cent
+        <lb />mille francs.
+        <lb />ll y en a pour le moins cent qui ont trente mille Ii
+        <lb rend="¬" break="no" />ure de rente qu’ils y e aioûtent chacun mille: Voila
+        <lb />encor cent mille francs. Le tout ſe monte deſia à onze
+        <lb />millions cinq cens mille francs. Il y en a plus de cin
+        <lb rend="¬" break="no" />quante qui ont quarante mille francs, plus de trente
+        <lb />qui en ont cinquante mille, plus de vingt qui enone
+        <lb />ſoixante mille, plus de dix qui en ont ſoixante &amp; dix
+        <lb />mille, plus de dix qui en ont quatre-vingts mille, plus
+        <lb />de dix qui en ont quatre-vingt dix mille, plus de dix
+        <lb />qui en ont cent mille, plus de dix qui en ont cent ſie
+        <lb />vingt mille, plus de dix qui ont cinquante mil eſeus;.
+        <lb />quelques-vns quiont eeat mil eſcus, &amp; quatre cent:
+        <lb />mille francs. Voila encor bien cinqcens ille francs,
+        <lb />le tout monte defia à douze millions. Sans compter:
+        <lb />ce que les zelez offriront volontairement de leur part,
+        <lb />ce que lesgrands du Royaume dépenſeront noblémt,
+        <lb />ce que les riches marchands propoſeront pour auoirle
+        <lb />rétabliſſemét du commerce, ce que les Eccleſiaſtiques
+        <lb />reſenterout, du moins ceux qui regarderont lagloire
+        <lb />de Dieu, &amp; la iuſtice de ſes peuples, peut-eſtre feroant
+        <lb rend="¬" break="no" />ils bien deux millious.
+        <lb />Mais s’ilfalloit eneor trouuer vn moyer tres aſſuré
+        <lb />pour auoir des deniers ſans incommoder en quelque
+        <lb />façon que ce ſoit le puhlic, moyen qui feroit enrage
+        <lb />Ies Mazarins, ece ſetoit de les obliger eux-meſmes a.
+        <lb />fournir dequoy leurfaire la guetre. Ilne faudroit que
+        <lb />faire re cherchedes biensqui reſtent à plus de deux cés
+        <lb />Maarins qui ſont en Cour, &amp; à faute de conribuer <pb n="15" />
+        <lb />5
+        <lb />aux frais de la guerre comnme les autres, les confiſquer
+        <lb />ainſi qu’õ a fait la fameuſe Bibliote que de leur Maiſtre,
+        <lb />&amp; les expoſer à l’enchere, on en treuueroit ſans doute,
+        <lb />bien-toſt de l’argent en aſſez grande quantiré: Certe
+        <lb />Loy ſe pratiquoit chez les omains quand quelqu’vn
+        <lb />eſtoit declareé l’ennemy de la Republique.
+        <lb />Il y en a encor vn pareil à celuy-cy, qui eſt de faire
+        <lb />recherche de quantité de partiſans qui ſont tous Ma
+        <lb rend="¬" break="no" />arins, &amp; autres prodigieuſemét riches par la faueur de
+        <lb />leur Mazarin, qui ſont au nombre de plus de deux cent,
+        <lb />qui fourniroient tous chacun cent mille francs ſans
+        <lb />s’incommoder par trop, ’eſtit pas le reuenu d’vne an
+        <lb rend="¬" break="no" />née, outre que ce ſeroit dautant afoiblir le party de
+        <lb />ees Ennemis de l’Eſtat, &amp; de la Ville.
+        <lb />On pourroit icy faire deux difficultez auſquelles il
+        <lb />faut pouruoir, la premiere qu’il y en auroit beaucoup
+        <lb />peut eſtre qui deceleroiẽt le bien qu’ils ont pour ne pas
+        <lb />tant contredire, ce qui feroit vn notable dechet des ſõ̃
+        <lb rend="¬" break="no" />mes: Mais pour y obuier, il ne faudroit que confiſquer
+        <lb />au public le ſurplus du bien que chacû ſeroit cenſé poſ
+        <lb rend="¬" break="no" />ſeder, &amp; auroit declaré luy meſme.
+        <lb />L’autre difficultée eſt que les deſordres empeſcherõt
+        <lb />de pré́uoir tout ce que l’on deuoit auoir de ſes rentes
+        <lb />cette preſente année, mais elle eſt inutile, puiſque c’eſt
+        <lb />pour pouruoir autout qu’on donneroit cette partie, &amp;
+        <lb />afin que l’année prochaine &amp; les ſuiuãtes fuſſent remi
+        <lb rend="¬" break="no" />ſes en eftat de fournir les meſmes reuenus, ſur leſquels
+        <lb />n rejetteroir raiſonnablement ces contributions.
+        <lb />Cette ſomme de deniers eſtant ainſi amaſſée le plus
+        <lb />romptement que faire ſe pourroit, &amp; meſme par l’auã
+        <lb rend="¬" break="no" />ce qu’en pourroiét faire vne quãtitéde riches, du moins
+        <lb />d’vne partie, il faudroit l mertre toute ſous la directi6̃
+        <lb />de quatre notables bourgeois qui ſeroient cõ̃me les I¬.
+        <lb />tendants de cette Finance; &amp; qui la diſtribueroient aux
+        <lb />chefs de l’armée, ſelon-que la neceſſité le demãderoit,. <pb n="16" />
+        <lb />Pendant que cela ſe feroit, il faudroit faire de tres
+        <lb />expreſſes defenſes de s’aſſébler de iour ny de nuict en
+        <lb />aucunes maiſons particulieres; Commandement aux
+        <lb />Officiers des quartiers d’y tenir la main: Ordre à Mr le
+        <lb />Cardinal de Retz de ſe tienir en ſon Archeueſche: de
+        <lb />faire prier Dieu pour la paix generale, &amp; l’on verroit
+        <lb />dans peu de temps que toutes choſes proſpereroient
+        <lb />à l’honneur de Dieu &amp; du Roy, à la gloire des Princes
+        <lb />de ſon Sang, à la confuſion des Ennemis, &amp; du Sceptre
+        <lb />François, &amp; à la Concluſion de la Paix generale.
+        <lb />FIN. </p>
+    </body>
+  </text>
 </TEI>

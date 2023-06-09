@@ -1,391 +1,249 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1007_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Députation du parlement d'Angleterre à M. le prince de
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Députation du parlement d'Angleterre à M. le prince de
           Condé, sur l'offre d'une armée entretenue qu'il lui fait.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=n0qvlQF-xdUC&amp;hl=fr"/>
-					<author/>
-					<title source="Moreau">Députation du parlement d'Angleterre à M. le prince de Condé, sur
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=n0qvlQF-xdUC&amp;hl=fr" />
+          <author />
+          <title source="Moreau">Députation du parlement d'Angleterre à M. le prince de Condé, sur
             l'offre d'une armée entretenue qu'il lui fait.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1652">1652</date>
-					<extent>
-						<measure quantity="7" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale de Lyon</institution>
-						<repository/>
-						<idno type="cote">Res 309259</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1652">1652</date>
+          <extent>
+            <measure quantity="7" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale de Lyon</institution>
+            <repository />
+            <idno type="cote">Res 309259</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">1007. Députation du parlement d'Angleterre à M. le prince de Condé, sur
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">1007. Députation du parlement d'Angleterre à M. le prince de Condé, sur
           l’offre d’une armée entretenue qu'il lui fait. Paris, 1652, 7 pages. Pauvre pièce , qui a
           pourtant été contrefaite sous le titre de : La Déclaration de messieurs du parlement d’
           Angleterre, etc. Louis XIV (1638-1715 ; roi de France) Anne d'Autriche (1601-1666 ; reine
           de France) Condé, Louis de Bourbon (1621-1686 ; prince de) Conti, Armand de Bourbon
           (1629-1666 ; prince de) Longueville, Henri II (1595-1663 ; duc de) France. Conseil d'État
           (13..-1791)</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">non renseigné</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2021-11-10" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<gap/>
-DEPVTATION
-        DV
-        PARLEMENT
-        D'ANGLETERRE
-        A Monſieur le Prince de Condé,
-        Sur l’offre d’vne Armeé́e entre
-        tenuë̈ qu’il luy fait,
-        A PARIS,
-        M. DC. LII. 
-        
-        QAnidb
-        s
-        Voeseeifisi
-        DEPVTATION DV PAR
-         lement d’Angleterre aà Mon
-        ſieur le Prince de Condé, Sur
-        l’offre d’vne Armée entrete
-        nuë̈ qu’il luy faict
-        NEn’eſt pas d’aujourd’hnuy que les anciens En
-         nems de la France, la deſirent voir troublée
-        par des guerres oiuiles &amp; domeſtiques, Com
-        me deſnans profiter de noſtre foibleſſe; Et ſur tous
-        les Anglois ont bien fait paroiſtre le deſſein qu’ils
-        ut touſ-jours eu de renouueller par la guerre leurs
-        vielles prerentions ſur la Guyenne, Tant en vertu de
-        l Deelaration du Roy Charles VI. faite à leur profit
-        ar ce Priacetroublé d’eſpnt, l’&amp; qui fut deſauoüé
-        par le Parlement &amp; les Eſtats du Royaume, comme
-        ontraire ̀ la Loy Salique &amp; auxLoix fondamentales
-        du Royaume ) que par le Traicté de Bretigny, dont
-         ils ſe ſeruent pour monſtrer leur droit pretendu qu’ils
-        diſent auoir ſur cette grande Prouince, ſans mettre en
-        udence la verité qu’ils en ont eſté deſcheus pour
-         A 
-         erime de felonnie, par les Arreſts’d Parlement.
-         Pour cé́ effect ils ont pris leurs temps pour.
-        aſſiſter les Partys des Princes du Sang aux gueres
-        qu’ils le ſont faites entr’eux, comme celle des deur
-        Maiſons de Bougongne &amp;d’O leas , qù outtp
-        couſté au Royu ne &amp; qui ont duré Ii longj- teupa
-         Dur ant leſquelles les Roys d’Angleterre dat aſtéle
-        Duc de Bourgogne eohtre le Duc d’rlens;don.
-        mes &amp; de moyens pour entretenir cete guerrede i
-        longue halein:, &amp; taſché́ parnty nos troubles dereu
-        trer en l’anienne poſſeſſioni le la uyene.
-        Et durant les premiers troubles en Francepoule
-         faict de la Relgon, les mefmes Anglois ont aſele
-         Party des Nouueaux Peoteſtans, &amp; par leur induſtle,
-         ſe ſont ſaſis du Havre de Grace, pour plus iſéitnt
-        faire paſſer leurs trouppes en France comme ilso!
-         fait de la Ville de Calais, qu’ils ont tenuë̈ tantd’aa
-         neées.
-         Et aux deruies Troubles ſons le Aegne du fe
-         Roy Louys XIII. d’heureuſe memoire, dans la Re
-        bellion de ceux de la Religion preendué Reforet,
-         ils ont enuoyé leur Armee Naualle aux Rochelois,ſe
-         ſont emparez de l’Ille deRés, pretendànts qu’̀ leura
-        riuée toute la Guyenne ſe ſouſleuroit pour faireu
-         puiſſant Party contre le Roy, &amp; eſſayer en ſuite de
-        proteger les meſmes Pretendus Reformez daus l
-        meſme Prouince ſousles- Leopars d’Agleterre.
-        . 
-        dl
-         lmy
-        lgi
-        ele
-        lei
-        luéle
-        letil
-        ir eee
-        su
-        ,Cq
-        3nlu
-        lo
-        l
-        orlhſ
-        4
-        qe?
-        1
-        . .
-        ¬.¬-2¬
-        9
-         ba euë ejne Ilahel d’Anglatare àon ſecor
-        quelle enuoya au Roy Henry le Grand, n’auoient.
-        re bue que par cerre aſfiftaace, mete les Anglois
-        eaGuyenane, ce n’eſtoit pas l’intention de ce gran
-        Roypde vair demembrer vne ſi belle piece de la Coul
-        oane quiluy apparrenoit..
-        Ainſi iamxais les Anglois n’ont quitté lear penſé
-        deatreteanir uos toubles ciuils &amp; ſe rendre ueceſſai
-         es à aucun des Partis forez, pour par nos diui
-        lns &amp; affobliſſement eſſayer d’affernir leur puiſ
-        ance aeFranc.
-         C’eſt ce qui s’et paſſeé en ce derniertrouble exrité
-        au fiet du Cardinal Mazarin depuis l’empriſonne
-        en des Ptinces pa fes confeils que Monſieur le
-        Pince deliureé, contre la volonteé́ dadit Cardinal,
-        eâé hligé de pouruor à la conſeruatiou de ſa’per
-        anne par ſon eſloignemene de la Cour, od il ſç̧auoit
-        l mauuais deſſein du meſme coatne luy En ſorue.
-        u ledt Saineun Prince. s’eft touſiours- tenu ſur la
-        denfiue, &amp;loes. que. s’en allant prendre poſſeſſn
-        d foGouueremantde Guyenn, il s’eſt uou atoa
-        quépa les ooppas dudit Cadinal, ſur la Flaze de
-        ouron pour le depoſfeden da o ca qu’il enoioen
-        bBdres ,4 &amp; les contraigniu à ſoetir luy &amp; ſa Maiſon
-        paurcrchen ſa feuqréen Guyenne, ou i a eſté auſſi
-        oſt pourſuiuy : En fin il s’eſbves obligé d’en vnl
-        aarnas pour ſ iuſte deffenf, &amp; de feſeaird l’ſ.¬
-         B 
-        4
-        ſiues de ſes ami poudaarriſue pid me Arde
-        :1
-        conſiderable.
-        i.1.
-         Ce qu’ayantſceu le Patlement d’Angleterte pous
-        ne ſortr hors de ſes pretentions, &amp; oonſiderant qu’en
-        la conſtitution des affaites. de Monſieur le trinee,
-        pourſuiuy par les armes, s’aduiſa de luy fairefçauoit
-        la volonté qu’il auoit de le ſecourir; &amp; poux ceét effet
-        le meſmne Parloment choſi le Milord d’Igby &amp; le
-        Cheualier Hamilton pourDeputez, qu’ilsont enuoyé
-        à Monſieur le Priaca pour luy fmreentendre leurve
-        lolution à l’aſſiſter d’vne Armeée de huit aà dixmle
-        hommes entretenus, afn de luy donner moyen de re..
-        ſiſter à la violence par la force &amp; le mettre en eſtatde
-        s’aſſeurer contre les mauuais deſſeins du Carninalt
-        Mazarin
-        Au commencement de cette année, ces deux De
-        putez du Parlement d’Angleterre arriuereat ves
-        Monſieur le Prince auec leur lettre de creance, &amp; luy
-        propoſerent l’offre d’vne Armé́e entretenuë de huit
-        à dix mille hommes pour ſa deffenſe, demandant
-        pour Placa de Retraitte à celle de Royaen ain
-        tonge, &amp; de plus grandes forces s’il en auoit beſoin.
-        Monſieur le Prince remercie les Deputez, &amp; leur
-        die qu’il eſtoit obligé au Parlement d’Anglererte de
-        la bonne volonté́ qu’il teſmoignoit pour ſ’aſſiſter, &amp;
-        qu’il les en feroit congratuler par le Cheualier de la.
-        Riuiere, enuoyé de la part en Angleterre, leur pronmiſt			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">non renseigné</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2021-11-10" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />DEPVTATION
+        <lb />DV
+        <lb />PARLEMENT
+        <lb />D'ANGLETERRE
+        <lb />A Monſieur le Prince de Condé,
+        <lb />Sur l’offre d’vne Armeé́e entre
+        <lb rend="¬" break="no" />tenuë̈ qu’il luy fait,
+        <lb />A PARIS,
+        <lb />M. DC. LII. <pb n="3" />
+        <pb n="4" />
+        <lb />QAnidb
+        <lb />s
+        <lb />Voeseeifisi
+        <lb />DEPVTATION DV PAR
+        <lb rend="¬" break="no" /> lement d’Angleterre aà Mon
+        <lb rend="¬" break="no" />ſieur le Prince de Condé, Sur
+        <lb />l’offre d’vne Armée entrete
+        <lb rend="¬" break="no" />nuë̈ qu’il luy faict
+        <lb />NEn’eſt pas d’aujourd’hnuy que les anciens En
+        <lb rend="¬" break="no" /> nems de la France, la deſirent voir troublée
+        <lb />par des guerres oiuiles &amp; domeſtiques, Com
+        <lb rend="¬" break="no" />me deſnans profiter de noſtre foibleſſe; Et ſur tous
+        <lb />les Anglois ont bien fait paroiſtre le deſſein qu’ils
+        <lb />ut touſ-jours eu de renouueller par la guerre leurs
+        <lb />vielles prerentions ſur la Guyenne, Tant en vertu de
+        <lb />l Deelaration du Roy Charles VI. faite à leur profit
+        <lb />ar ce Priacetroublé d’eſpnt, l’&amp; qui fut deſauoüé
+        <lb />par le Parlement &amp; les Eſtats du Royaume, comme
+        <lb />ontraire ̀ la Loy Salique &amp; auxLoix fondamentales
+        <lb />du Royaume ) que par le Traicté de Bretigny, dont
+        <lb /> ils ſe ſeruent pour monſtrer leur droit pretendu qu’ils
+        <lb />diſent auoir ſur cette grande Prouince, ſans mettre en
+        <lb />udence la verité qu’ils en ont eſté deſcheus pour
+        <lb /> A <pb n="5" />
+        <lb /> erime de felonnie, par les Arreſts’d Parlement.
+        <lb /> Pour cé́ effect ils ont pris leurs temps pour.
+        <lb />aſſiſter les Partys des Princes du Sang aux gueres
+        <lb />qu’ils le ſont faites entr’eux, comme celle des deur
+        <lb />Maiſons de Bougongne &amp;d’O leas , qù outtp
+        <lb />couſté au Royu ne &amp; qui ont duré Ii longj- teupa
+        <lb /> Dur ant leſquelles les Roys d’Angleterre dat aſtéle
+        <lb />Duc de Bourgogne eohtre le Duc d’rlens;don.
+        <lb />mes &amp; de moyens pour entretenir cete guerrede i
+        <lb />longue halein:, &amp; taſché́ parnty nos troubles dereu
+        <lb rend="¬" break="no" />trer en l’anienne poſſeſſioni le la uyene.
+        <lb />Et durant les premiers troubles en Francepoule
+        <lb /> faict de la Relgon, les mefmes Anglois ont aſele
+        <lb /> Party des Nouueaux Peoteſtans, &amp; par leur induſtle,
+        <lb /> ſe ſont ſaſis du Havre de Grace, pour plus iſéitnt
+        <lb />faire paſſer leurs trouppes en France comme ilso!
+        <lb /> fait de la Ville de Calais, qu’ils ont tenuë̈ tantd’aa
+        <lb rend="¬" break="no" /> neées.
+        <lb /> Et aux deruies Troubles ſons le Aegne du fe
+        <lb /> Roy Louys XIII. d’heureuſe memoire, dans la Re
+        <lb rend="¬" break="no" />bellion de ceux de la Religion preendué Reforet,
+        <lb /> ils ont enuoyé leur Armee Naualle aux Rochelois,ſe
+        <lb /> ſont emparez de l’Ille deRés, pretendànts qu’̀ leura
+        <lb />riuée toute la Guyenne ſe ſouſleuroit pour faireu
+        <lb /> puiſſant Party contre le Roy, &amp; eſſayer en ſuite de
+        <lb />proteger les meſmes Pretendus Reformez daus l
+        <lb />meſme Prouince ſousles- Leopars d’Agleterre.
+        <lb />. <pb n="6" />
+        <lb />dl
+        <lb /> lmy
+        <lb />lgi
+        <lb />ele
+        <lb rend="¬" break="no" />lei
+        <lb />luéle
+        <lb />letil
+        <lb />ir eee
+        <lb />su
+        <lb />,Cq
+        <lb />3nlu
+        <lb />lo
+        <lb />l
+        <lb />orlhſ
+        <lb />4
+        <lb />qe?
+        <lb />1
+        <lb />. .
+        <lb />¬.¬-2¬
+        <lb rend="¬" break="no" />9
+        <lb /> ba euë ejne Ilahel d’Anglatare àon ſecor
+        <lb />quelle enuoya au Roy Henry le Grand, n’auoient.
+        <lb />re bue que par cerre aſfiftaace, mete les Anglois
+        <lb />eaGuyenane, ce n’eſtoit pas l’intention de ce gran
+        <lb />Roypde vair demembrer vne ſi belle piece de la Coul
+        <lb />oane quiluy apparrenoit..
+        <lb />Ainſi iamxais les Anglois n’ont quitté lear penſé
+        <lb />deatreteanir uos toubles ciuils &amp; ſe rendre ueceſſai
+        <lb rend="¬" break="no" /> es à aucun des Partis forez, pour par nos diui
+        <lb rend="¬" break="no" />lns &amp; affobliſſement eſſayer d’affernir leur puiſ
+        <lb />ance aeFranc.
+        <lb /> C’eſt ce qui s’et paſſeé en ce derniertrouble exrité
+        <lb />au fiet du Cardinal Mazarin depuis l’empriſonne
+        <lb rend="¬" break="no" />en des Ptinces pa fes confeils que Monſieur le
+        <lb />Pince deliureé, contre la volonteé́ dadit Cardinal,
+        <lb />eâé hligé de pouruor à la conſeruatiou de ſa’per
+        <lb rend="¬" break="no" />anne par ſon eſloignemene de la Cour, od il ſç̧auoit
+        <lb />l mauuais deſſein du meſme coatne luy En ſorue.
+        <lb />u ledt Saineun Prince. s’eft touſiours- tenu ſur la
+        <lb />denfiue, &amp;loes. que. s’en allant prendre poſſeſſn
+        <lb />d foGouueremantde Guyenn, il s’eſt uou atoa
+        <lb rend="¬" break="no" />quépa les ooppas dudit Cadinal, ſur la Flaze de
+        <lb />ouron pour le depoſfeden da o ca qu’il enoioen
+        <lb />bBdres ,4 &amp; les contraigniu à ſoetir luy &amp; ſa Maiſon
+        <lb />paurcrchen ſa feuqréen Guyenne, ou i a eſté auſſi
+        <lb />oſt pourſuiuy : En fin il s’eſbves obligé d’en vnl
+        <lb />aarnas pour ſ iuſte deffenf, &amp; de feſeaird l’ſ.¬
+        <lb rend="¬" break="no" /> B <pb n="7" />
+        <lb />4
+        <lb />ſiues de ſes ami poudaarriſue pid me Arde
+        <lb />:1
+        <lb />conſiderable.
+        <lb />i.1.
+        <lb /> Ce qu’ayantſceu le Patlement d’Angleterte pous
+        <lb />ne ſortr hors de ſes pretentions, &amp; oonſiderant qu’en
+        <lb />la conſtitution des affaites. de Monſieur le trinee,
+        <lb />pourſuiuy par les armes, s’aduiſa de luy fairefçauoit
+        <lb />la volonté qu’il auoit de le ſecourir; &amp; poux ceét effet
+        <lb />le meſmne Parloment choſi le Milord d’Igby &amp; le
+        <lb />Cheualier Hamilton pourDeputez, qu’ilsont enuoyé
+        <lb />à Monſieur le Priaca pour luy fmreentendre leurve
+        <lb rend="¬" break="no" />lolution à l’aſſiſter d’vne Armeée de huit aà dixmle
+        <lb />hommes entretenus, afn de luy donner moyen de re..
+        <lb />ſiſter à la violence par la force &amp; le mettre en eſtatde
+        <lb />s’aſſeurer contre les mauuais deſſeins du Carninalt
+        <lb />Mazarin
+        <lb />Au commencement de cette année, ces deux De
+        <lb rend="¬" break="no" />putez du Parlement d’Angleterre arriuereat ves
+        <lb />Monſieur le Prince auec leur lettre de creance, &amp; luy
+        <lb />propoſerent l’offre d’vne Armé́e entretenuë de huit
+        <lb />à dix mille hommes pour ſa deffenſe, demandant
+        <lb />pour Placa de Retraitte à celle de Royaen ain
+        <lb rend="¬" break="no" />tonge, &amp; de plus grandes forces s’il en auoit beſoin.
+        <lb />Monſieur le Prince remercie les Deputez, &amp; leur
+        <lb />die qu’il eſtoit obligé au Parlement d’Anglererte de
+        <lb />la bonne volonté́ qu’il teſmoignoit pour ſ’aſſiſter, &amp;
+        <lb />qu’il les en feroit congratuler par le Cheualier de la.
+        <lb />Riuiere, enuoyé de la part en Angleterre, leur pronmiſt <gap />
+      </p>
+    </body>
+  </text>
 </TEI>

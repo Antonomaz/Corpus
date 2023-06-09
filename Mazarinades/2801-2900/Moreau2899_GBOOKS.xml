@@ -1,851 +1,474 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2899_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">La promenade de Gentilly.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">La promenade de Gentilly.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-					<persName ref="orcid:0000-0001-5815-9506" role="intern">Faure Margaux</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=1IETiR9hrBcC"/>
-					<author/>
-					<title source="Moreau">Promenade (la) de Gentilly.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure quantity="8" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale</institution>
-						<repository/>
-						<idno type="cote">SJ IF 247/188, 73</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>False</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+          <persName ref="orcid:0000-0001-5815-9506" role="intern">Faure Margaux</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=1IETiR9hrBcC" />
+          <author />
+          <title source="Moreau">Promenade (la) de Gentilly.</title>
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure quantity="8" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
+            <repository />
+            <idno type="cote">SJ IF 247/188, 73</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>False</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">2899. Promenade (la) de Gentilly. Paris, 1649, 8 pages. Le plus grand
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">2899. Promenade (la) de Gentilly. Paris, 1649, 8 pages. Le plus grand
           mérite de ce pamphlet est de n'être pas commun.</p>
-				<p source="Antonomaz">La page de titre est manquante dans la numérisation.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">non renseigné</term>
-					<term type="subject"/>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-07-11" who="MF"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<pb n="9"/>
-				<pb n="10"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-3
-        LA PROMENADE DE
-        Gentilly.
-        MA chere Couſine, &amp; mon aymable
-         commere s Autiee vouu pour agrea
-        lb hle qu apues dſaenoun il ro penr
-        Q menor ai Gentily: c’eſt bien le ſieule
-         pls diueriſſantque ie veis lamais, &amp;
-        lerediol inr pu n ſeeu punoune.
-        nea qui ſont allentour de Paris. En efet i me
-        pnini que la prenmiere foi que ſonrr le ene
-        le de le enur on de dln oouau eauer r n ens
-        Pumener, &amp;eapres y auoi fait grsnd’chere, ie f
-        ul heneuſe qui dyiaides e e puni ue unr
-        ele le voui ds ey ennealmenuen n uoe
-        pl ſea diſoreue pour riun plnt pulee i no
-        e ioeſrant eu ſlemhluble eneore, de vonu
-        rendre lemeſme ſeruiee,
-         Mrgaeriere Roſie
-        l boone cqpuſnue, nue pula nee que
-         elſe odlie eun leoe uniſen e ouone ouer
-        eue anseloue ie nue bſſineiois mo uſint
-        Pn ſauiuui dle rou pp unnne e e ns ons
-        e ner na pmauſeihnrieoui ue u ſlen oue
-        iee de leſorſlos dun roſire me ſiu n rn ntr
-        lene deiſſenre e ien eieoae ſeieune
-        udſe qiue il ſis e riſiues denrie, e ſſ deoeu
-        A i v
-        A
-        4
-        A 
-         N
-        ſ Srupoleiſe, que de ls vadroislpas ay dire f
-        do peſonne, oinsec uyefae; lMaen4
-        difcourant noùpérdons temp?, ſoreons&amp; nousal.
-        lons pourmener, nou nous ntretiendrons dans le
-        chemin de pluſieurs choſes &amp; autres..
-        .
-        lley i oRog0
-        - Maineenaa qu ous voieydans la campagne
-        &amp;en lbereé de parler, pernéé́ que ie vous diſe,
-         lbrement heipenſéosI-àpopos de confeſſion &amp;,
-        de ſerapule, ens le fuasaaii &amp; n’ay pas enuie de.
-        l’eftae meseles ade qivode à confefeaur,
-        bons ’ereleſiſtes ou adr Codelieps neleſotli
-        iai,’paos que leyvas trouuent des expediens ſi,
-        ſhſeiles à’toées d peeaê,’quà leur dire le
-         pldseaspas lſe oatps eapablésdeé iofis cauiſe
-        la moihadre- inquietude, &amp; queé- les aüt lſſ&amp;t
-        tout ſos laniſerieorde e Dieu ſns embarſſet les
-        onſtſenes.i eéie iſfeſſéa da Penseefté à’
-        Peſt-nefstné e la’lſſinl, qi M’abtru
-        toute ma vie criminelle, &amp; toutes s?aCbé-
-        gnes de l’enfer mais quand ce vint à̀ luy declaei
-        quo ’auoisspeh depais les Roys puse mile
-        mas ’d ppior gut ’ hi’u&amp;iee ſeeuay eqſ’ fhprie
-        les libſes, uectlues, calomnies; e londe
-         ohxmne &amp; fauſſemént publlées contte la oynes
-        eoaae lea roed, eles Mintesiinpefſthau
-        Eaſ lilaiaiſrie ſlilderiſliſie
-        e abandonnanel le Ceaihifaf ’fßſiſe
-        y eomme de quedquedr theneuent
-        ſorey du’pllts creux des Eafers.
-         Maguenës
-        ad 1 
-        gia Sn.
-         Veiuablemet ſſy bint equenud des Coafe
-        ſaurs, nais ie n’en ay point trouué encor de ſi ra.
-        des,&amp; ie me ſuis touſioues laiſſé dire qu’ils traittoiée
-        ouſiours les femmes auec moias de rigueur que les
-        hommes, parce qu’ils en eſperoient plus de cour
-        toiſies: &amp; que ee n’eſt pas vn ſereà eſtremenéu
-        dement. Vne autrefois addreſſez vous aux Fueïl
-        lansils ſont doux &amp; benins, &amp; ie ſçay d’vne de mes
-        eimes amies: que pourueu que le paeché qu’oa
-        leur declare ſoit de la Nature de ceux qui ſont ca
-        ez, &amp; deſquels la moirié demeure ou dans la che
-        miſe, ou daa les draps, ou parmy les tenebres de
-        lanuict qu’ils en donnent facilement l’abſolution.
-         Al’imitation de leur Pere S. Bernard qui pardo
-        oit à tout le aonde; Mais pour vous en parler ſai
-        tnt ie ne ſoait paa de quelle acon ils traireaat
-        lepaehd de aaédiſaace.
-        Aaoiens Rge
-         Certes j’aduouë moy-meſme que c’eſt tres-mal
-        ſi, &amp; que de coos les. pechaez il n’y ea a point de
-        plus laſche que celuy de la médirſance. Neaaunaoin
-        eommece de peithaesa beaucoup adua
-        é noſtre traffic, &amp; pluſieura de nous autres Mar
-        hauds qui n’auoient du papier que pour les frui
-        ieres en one mainenant de doreépour lePtices,
-        &amp; d’autre teut cauppé.
-        Pour bie efnire des paalas,
-         Des archaadesds Palais.
-         lenefuaiamais plas ioyoue, &amp;l’air delaeaap 
-        6
-        ge m’inſpire des eees nurei Que du-ni,
-        de moy chere Couſine? ne ſoiu- le pas de bonne
-        compagnie, de belle humeur, &amp; d’vn ageaeable œna
-        reien: e veu chaert melaneolie, dſipeees,
-        reſierie qui oeeupent ton eſprit, &amp; t’oſter cesſcru
-        pules qui troublent ta conſcence, &amp; apres t’auoir „
-        bien diuerty, ioveux rte donner à colation de l’ar¬
-        gent d vne rame de papier, que ie vendis l’aure
-        iouir bien tard’au ſoit, pour imprimer l’Antinop¬,,
-        cierdes nopces de Monſieur de Mercœur, &amp; dela.,
-        Niepce de Mazarin.
-        Marguerite Roſier.
-         Non, non, ie ne puis diſfiper cette profondeme¬,
-        lancolie que me cauſe le ſcrupule que i’ay, d’auois
-        vendu du papier à ces Imprimeurs, qui ont trauail
-        eneune le r rnene di nuſene opnmdlue let
-        ceſſe Pour ceux quiſont indifferens, i’en donnevo
-        lontiers &amp; les lis auee plaiſir, &amp; meſme la diuerſité
-        m’en plaiſt. Car les vns donnent des nayardes à M
-        arin &amp; luy font danſer des cabriolles friſées; les au
-        tres font ſauter des ſauts perilleuxaux Parcyſans,
-        &amp; contiennenc la Nobleſſede lour exrration, ily
-        en a qui n’ont quedes codemontades, des croteſ
-        ques, des paſſepaſſes, &amp; des charlatanerles,d’autres
-        qui ne parlent que des meſcontans, des fous, &amp; des.
-        Veſeſpereas daures eafin qui ne diſinu raa demal,,
-        ou que des choſes pour faire rire.
-        Atoinete Roger.
-        ¬.
-        Ie ne m’arreſte pas à ce qu’ils chantent, ouaà ce
-        qMile contienaent, a eoalaore aulememquils
-        ¬aaaaaſ 
-        s onfile beucoup gaigrer, &amp; qu’ils ſont ecan.
-        a nous nous ſommes acquicrez, &amp; que noſ
-        ne eux que uama. me ſoaniene a
-        ord’vn homme dena eonnpiſſanc, qui me,
-        niourenriant qu’l auroii eſteé damné́ ’l neut
-        n pechémortel; &amp; voicy comment il auoitau
-        is faitvn enfant à vne: femme, qui en recon
-        aue de cete faueur luy donnoit de l’arsenr,
-        reioie de la neeſſité, au moyen deq il
-         aſſez honneſtement, &amp; ſans cela l ſe fuſt de
-        e&amp; damne; il eneſt de meſne de nousautres
-        uandes de papier, ans ces lmprimeurs qui
-        one enrichy aux deſpens de la reputation de
-        edes autres, nous eſtions reduits à la beſace,
-        oI i ayme mieux que Madamoiſelle de B-l.
-        oſe pſe pour auoir des galands, &amp; que ſa vie
-         le Marais, que de ae voit neceſſiteuſe, &amp; en
-        t de mouri de faim, ou de me coupper la gor
-        luiu baiſous la deſs, le emp nous preſe de
-        enretourner à Paris.
-        Maiguéritre Roſie.
-        luduë en partle ce que vous dittes; Mais auſi
-        iez moy qu’il faut reſpecter les puiſſances
-        raines, &amp; ne iamais parler en mauuaiſe part
-        rs actlons: car outre qu’elles nous ſont incon
-        il ne nous eſt pas permis de les eſplucher,
-         encor de les condamner. Vne Reyne ne
-        it elle affctionner vn ſage Miniſtre ſans in
-        t a vonſeienee; ne peuueneils eſts ous,
-        nſemble dans va cabinet ſans fairevn tioars:
-        uent-ils traitter des afaires d’Eſtat ſans tra
-        ¬¬¬..
-        ¬¬-m
-        lſſ
-        i
-        s
-        e
-        ſ
-        t
-        tae
-        e
-        ilreſiu
-        Ieſl
-        s?
-        d
-        e1
-        h8
-        sile
-        t
-        is
-        E1
-        ili8
-        i
-        l
-        1
-        it
-        tſs 
-        ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
-        hirle party de iea ?ecnfidlcen de da lilaoda
-        Peuples, ſan ſe rendeeefelaues de bena paſſion6
-        lay remarqué dans l’Hiſtoire que la Reyeàlan
-        che mere de S. Louys tres-verueuſe &amp; tres ſage
-        Prineeſſe, ſ ſeruit adec vne iudicieuſe conduite,
-        &amp; vne addreſſe d’eſprit merueilleuſe des chatnmes
-        de ſa beauté, pour gaigner ceux qu’elle iuigeoit c
-        pables de gouuerner le Royaumae, &amp; apros leauoi
-        long temps entrereaus de promeſes, ou daeſpe
-        ee, elle leur faiſoit bien connoitre que ſes defeau
-        n’eſtoient que pour eonſeruer l’Eſtat, &amp; s’asqſi*
-        des fidelles ſeruitCurs, comme de pradens Min
-        ſtres. l faut auoir la meſme croance de la Rayne,
-        ue rien ſoupçonner de mal ea toutes ſesactidn
-        Atoinette Roger.
-        Vrayemét ma Couſine, ou auez bonfoyevou
-        deurie aller ouo les looaeaà confeſe, pailque le
-        ſcrupoles de la Confeſſion vous rendeut ſcaua
-        &amp; que voſtre langue en deuiene mieux affileée. V
-        ſerblez ma ſoet Caherine qui eſt deuena ao:
-         quente depuis qu’elle a fait la dauote, &amp; quipaſ;
-        abieude qu’eſſe a conetaée à̀ la Confefſonyou
-        lon he di qua du maſl &amp;e dei poehez, padepeſype
-        neeſſammene, &amp;e ne dit ianaais biei de peſoan
-        Mais qu’n chaoun viu à as gue ea ſi mod
-        ferloluie oamaſien de agt uue deſpemde n
-        appartiendra, &amp; de m’accommoder eepandat ?
-         l’oecaſion s’en preſente; &amp; faite corme los Prr
-        reurs qui e ſout iamais plus rauis qus quandprê
-        le mode ſe mange lesotoilos, eſe ednſomno
-         Ib..
-        oeei. 
-        aa
-        Trfara
-        Ill
-        l
-        s
-        lll!
-        l
-        llll4
-        l
-        lle
-        l
-        l
-        E!
-        l
-        I
-        I
-        1
-        1
-        El
-        s
-        1
-        aa
-        !
-        li
-        l
-        ll
-        llla
-        1
-        a
-        l
-        llll
-        ll
-        l
-        Flilll
-        I
-        a
-        I
-        n
-         a
-        s 
-        ¬ ¬
-        4
-        hirle party de iea econfulcen de da lharoédas
-        Peuples, ſans ſe rendreeclaues de les paſab.
-        Iay remarqué dans l’Hiſtoire que la ReyneBlan
-        che mere de S. Louys tres-vertueuſe &amp; tres fage
-        Princeſſe, ſe ſeruit adee vne iudicieuſe conduite.
-         &amp; vne addreſſe d’eſprit merueilleuſe des chatmes
-        de ſa beauté, pour gaigner ceux qu’elle iuigeolt co
-        pables de gouuernet le Royaume, &amp; apros leauoi
-        long emps entrereaus de promeſes, ou daiſpe
-        ee, lle leur faiſoit bien connoitre que fes deſfeins
-        n’eſtoient que pouroonſeruer l’Eſtat, &amp;s’arquri
-        dee fidelles ſeruiteurs, comme de peadens in
-        ſâtresl faut auoir la meſme croance de la yne,
-        ne rien ſoupçonnaer de mal ea toutes ſesactin.
-        Anatoinette Roger.
-         Vrayemér ma Couſine, vous auez boafoyeou1
-        deurles aller toua les loù confeſſe, puique les
-        ſcrupoles de la Confeſſion vous renden caua?
-        &amp;e que voſtre langue en deuient aieux affilée. Vo
-        ſermbleu ma ſut Caherine qul a deuenaeeo
-        quente depuis qu’elle a fait la dnote, &amp; qui pat
-        Eaounuo qu dle eonuſe la Cmnfeafno
-        Ion nodit que du aal &amp;e des poehez, palepeſy
-        ineeſſamment, &amp; ne dit aaais bie de parſont
-        Mais qu’n chacun vi a ſa guiſe &amp;a ſa mo
-        fsrlolue amaſien de ragt u deſpem de p
-        appartiendra, &amp; de m’aceomoder cepandaat ?
-         l’occaſion s’en preſente; &amp; faire comme lesPre
-        ruro qui ne ſohit iamais plus auius qus quandu
-        le moude ſe mange hes oioils, &amp;e ſe ednomuo
-        .!
-        oes. 
-        rrrrr
-        rrn
-        l
-        1
-        lili
-        l
-        al
-        il
-        E
-        l
-        u
-        l
-        ll
-        r
-        ãs
-        l
-        1
-        i
-        1
-        I
-        n
-        l
-        1
-        la
-        u
-        l
-        llll
-        ſ
-        l
-        l
-        llii
-        a
-        ll1
-        Aata
-        l
-        l
-        s
-        I
-        a
-        I
-        n
-        m
-         a
-        m
-        s 
-        ¬¬-¬---¬¬¬¬¬¬¬
-        hirle party de ie tecmnfdcer do da lharodaz
-        Peuples, ſans ſe rendreefelaues de les paſuoa
-        lay remarqú dans l’Hiſtoire que la Reyaelan
-        che mere de S. Louays tres-vertueuſe &amp; tres ſoge
-        Princeſſe, ſ ſeruit adec vnae iudicieuſe conduite,
-        &amp; vne addreſſe d’eſprit merueilleuſe des chatmes
-        de ſa beauté, pour gaigner ceux qu’elle iugeit co
-        pables de gouuerner le Royaume, &amp; apros leauoi
-        long temps entreteaus de poomefſes, o deſpe
-        ce, lle leur faiſoit bien connoiſtre que ſes deſſeins
-        a’eſtoient que pour conſeruer l’Eſtat, &amp; s’acqſi
-        dee fidelles ſeruiteurs, comne de pradens in
-        ſtres. l faut auoir la meſme creance de la Reyne,
-        ne rien ſoupçonnor de mal ea toutes ſeaction
-        Antoinerte Roger.
-         Vrayemét ma Couſine, vou auez bofoyevou
-        deuriez aller ou les ioaà confeſſe, puilque le
-        ſcrupoles de la Confeſſion vous rendeut caua
-        &amp;e que voſtre langue en deuieat naieux affilée. Vo
-        ſembleu ma ſoeut Caheriue qul a deaennealo:
-        quente depuis qu’ellea fait la dauote, &amp; quipaſ
-        aoinoad qu dle oon&amp;e la &amp;onheſiun
-        Ion nodit que du aal &amp;e des poehez, padepeſy
-        ineeſamment, &amp; ne dit iaais bie de perſoan
-        Mdais qu’n chacun viu a ſa guſe &amp;ea ſa mod,
-        fnsneloluiet amaſter de rag ue deſpemde p!
-        appartiendra, &amp; de m’accommoder cepandaar ?
-         l’oecaſion s’enpreſente; &amp; faire cohma lesPr
-        raur qui ne ſoie amais plus aais qua quand
-        le mode ſe mage les oieoilos, &amp;ſes dnfomma
-        i.
-        oeié.			</p>
-		</body>
-	</text>
+        <p source="Antonomaz">La page de titre est manquante dans la numérisation.</p>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">non renseigné</term>
+          <term type="subject" />
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-07-11" who="MF" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />3
+        <lb />LA PROMENADE DE
+        <lb />Gentilly.
+        <lb />MA chere Couſine, &amp; mon aymable
+        <lb /> commere s Autiee vouu pour agrea
+        <lb rend="¬" break="no" />lb hle qu apues dſaenoun il ro penr
+        <lb />Q menor ai Gentily: c’eſt bien le ſieule
+        <lb /> pls diueriſſantque ie veis lamais, &amp;
+        <lb />lerediol inr pu n ſeeu punoune.
+        <lb />nea qui ſont allentour de Paris. En efet i me
+        <lb />pnini que la prenmiere foi que ſonrr le ene
+        <lb />le de le enur on de dln oouau eauer r n ens
+        <lb />Pumener, &amp;eapres y auoi fait grsnd’chere, ie f
+        <lb />ul heneuſe qui dyiaides e e puni ue unr
+        <lb />ele le voui ds ey ennealmenuen n uoe
+        <lb />pl ſea diſoreue pour riun plnt pulee i no
+        <lb />e ioeſrant eu ſlemhluble eneore, de vonu
+        <lb />rendre lemeſme ſeruiee,
+        <lb /> Mrgaeriere Roſie
+        <lb />l boone cqpuſnue, nue pula nee que
+        <lb /> elſe odlie eun leoe uniſen e ouone ouer
+        <lb />eue anseloue ie nue bſſineiois mo uſint
+        <lb />Pn ſauiuui dle rou pp unnne e e ns ons
+        <lb />e ner na pmauſeihnrieoui ue u ſlen oue
+        <lb />iee de leſorſlos dun roſire me ſiu n rn ntr
+        <lb />lene deiſſenre e ien eieoae ſeieune
+        <lb />udſe qiue il ſis e riſiues denrie, e ſſ deoeu
+        <lb />A i v
+        <lb />A
+        <lb />4
+        <lb />A <pb n="2" />
+        <lb /> N
+        <lb />ſ Srupoleiſe, que de ls vadroislpas ay dire f
+        <lb />do peſonne, oinsec uyefae; lMaen4
+        <lb />difcourant noùpérdons temp?, ſoreons&amp; nousal.
+        <lb />lons pourmener, nou nous ntretiendrons dans le
+        <lb />chemin de pluſieurs choſes &amp; autres..
+        <lb />.
+        <lb />lley i oRog0
+        <lb />- Maineenaa qu ous voieydans la campagne
+        <lb />&amp;en lbereé de parler, pernéé́ que ie vous diſe,
+        <lb /> lbrement heipenſéosI-àpopos de confeſſion &amp;,
+        <lb />de ſerapule, ens le fuasaaii &amp; n’ay pas enuie de.
+        <lb />l’eftae meseles ade qivode à confefeaur,
+        <lb />bons ’ereleſiſtes ou adr Codelieps neleſotli
+        <lb rend="¬" break="no" />iai,’paos que leyvas trouuent des expediens ſi,
+        <lb />ſhſeiles à’toées d peeaê,’quà leur dire le
+        <lb /> pldseaspas lſe oatps eapablésdeé iofis cauiſe
+        <lb />la moihadre- inquietude, &amp; queé- les aüt lſſ&amp;t
+        <lb />tout ſos laniſerieorde e Dieu ſns embarſſet les
+        <lb />onſtſenes.i eéie iſfeſſéa da Penseefté à’
+        <lb />Peſt-nefstné e la’lſſinl, qi M’abtru
+        <lb />toute ma vie criminelle, &amp; toutes s?aCbé-
+        <lb />gnes de l’enfer mais quand ce vint à̀ luy declaei
+        <lb />quo ’auoisspeh depais les Roys puse mile
+        <lb rend="¬" break="no" />mas ’d ppior gut ’ hi’u&amp;iee ſeeuay eqſ’ fhprie
+        <lb />les libſes, uectlues, calomnies; e londe
+        <lb /> ohxmne &amp; fauſſemént publlées contte la oynes
+        <lb />eoaae lea roed, eles Mintesiinpefſthau
+        <lb rend="¬" break="no" />Eaſ lilaiaiſrie ſlilderiſliſie
+        <lb />e abandonnanel le Ceaihifaf ’fßſiſe
+        <lb />y eomme de quedquedr theneuent
+        <lb />ſorey du’pllts creux des Eafers.
+        <lb /> Maguenës
+        <lb />ad 1 <pb n="3" />
+        <lb />gia Sn.
+        <lb /> Veiuablemet ſſy bint equenud des Coafe
+        <lb rend="¬" break="no" />ſaurs, nais ie n’en ay point trouué encor de ſi ra.
+        <lb />des,&amp; ie me ſuis touſioues laiſſé dire qu’ils traittoiée
+        <lb />ouſiours les femmes auec moias de rigueur que les
+        <lb />hommes, parce qu’ils en eſperoient plus de cour
+        <lb rend="¬" break="no" />toiſies: &amp; que ee n’eſt pas vn ſereà eſtremenéu
+        <lb rend="¬" break="no" />dement. Vne autrefois addreſſez vous aux Fueïl
+        <lb rend="¬" break="no" />lansils ſont doux &amp; benins, &amp; ie ſçay d’vne de mes
+        <lb />eimes amies: que pourueu que le paeché qu’oa
+        <lb />leur declare ſoit de la Nature de ceux qui ſont ca
+        <lb rend="¬" break="no" />ez, &amp; deſquels la moirié demeure ou dans la che
+        <lb rend="¬" break="no" />miſe, ou daa les draps, ou parmy les tenebres de
+        <lb />lanuict qu’ils en donnent facilement l’abſolution.
+        <lb /> Al’imitation de leur Pere S. Bernard qui pardo
+        <lb rend="¬" break="no" />oit à tout le aonde; Mais pour vous en parler ſai
+        <lb rend="¬" break="no" />tnt ie ne ſoait paa de quelle acon ils traireaat
+        <lb />lepaehd de aaédiſaace.
+        <lb />Aaoiens Rge
+        <lb /> Certes j’aduouë moy-meſme que c’eſt tres-mal
+        <lb />ſi, &amp; que de coos les. pechaez il n’y ea a point de
+        <lb />plus laſche que celuy de la médirſance. Neaaunaoin
+        <lb />eommece de peithaesa beaucoup adua
+        <lb rend="¬" break="no" />é noſtre traffic, &amp; pluſieura de nous autres Mar
+        <lb rend="¬" break="no" />hauds qui n’auoient du papier que pour les frui
+        <lb rend="¬" break="no" />ieres en one mainenant de doreépour lePtices,
+        <lb />&amp; d’autre teut cauppé.
+        <lb />Pour bie efnire des paalas,
+        <lb /> Des archaadesds Palais.
+        <lb /> lenefuaiamais plas ioyoue, &amp;l’air delaeaap <pb n="4" />
+        <lb />6
+        <lb />ge m’inſpire des eees nurei Que du-ni,
+        <lb />de moy chere Couſine? ne ſoiu- le pas de bonne
+        <lb rend="¬" break="no" />compagnie, de belle humeur, &amp; d’vn ageaeable œna
+        <lb rend="¬" break="no" />reien: e veu chaert melaneolie, dſipeees,
+        <lb />reſierie qui oeeupent ton eſprit, &amp; t’oſter cesſcru
+        <lb rend="¬" break="no" />pules qui troublent ta conſcence, &amp; apres t’auoir „
+        <lb />bien diuerty, ioveux rte donner à colation de l’ar¬
+        <lb rend="¬" break="no" />gent d vne rame de papier, que ie vendis l’aure
+        <lb />iouir bien tard’au ſoit, pour imprimer l’Antinop¬,,
+        <lb />cierdes nopces de Monſieur de Mercœur, &amp; dela.,
+        <lb />Niepce de Mazarin.
+        <lb />Marguerite Roſier.
+        <lb /> Non, non, ie ne puis diſfiper cette profondeme¬,
+        <lb />lancolie que me cauſe le ſcrupule que i’ay, d’auois
+        <lb />vendu du papier à ces Imprimeurs, qui ont trauail
+        <lb rend="¬" break="no" />eneune le r rnene di nuſene opnmdlue let
+        <lb />ceſſe Pour ceux quiſont indifferens, i’en donnevo
+        <lb rend="¬" break="no" />lontiers &amp; les lis auee plaiſir, &amp; meſme la diuerſité
+        <lb />m’en plaiſt. Car les vns donnent des nayardes à M
+        <lb rend="¬" break="no" />arin &amp; luy font danſer des cabriolles friſées; les au
+        <lb rend="¬" break="no" />tres font ſauter des ſauts perilleuxaux Parcyſans,
+        <lb />&amp; contiennenc la Nobleſſede lour exrration, ily
+        <lb />en a qui n’ont quedes codemontades, des croteſ
+        <lb rend="¬" break="no" />ques, des paſſepaſſes, &amp; des charlatanerles,d’autres
+        <lb />qui ne parlent que des meſcontans, des fous, &amp; des.
+        <lb />Veſeſpereas daures eafin qui ne diſinu raa demal,,
+        <lb />ou que des choſes pour faire rire.
+        <lb />Atoinete Roger.
+        <lb />¬.
+        <lb />Ie ne m’arreſte pas à ce qu’ils chantent, ouaà ce
+        <lb />qMile contienaent, a eoalaore aulememquils
+        <lb />¬aaaaaſ <pb n="5" />
+        <lb />s onfile beucoup gaigrer, &amp; qu’ils ſont ecan.
+        <lb />a nous nous ſommes acquicrez, &amp; que noſ
+        <lb rend="¬" break="no" />ne eux que uama. me ſoaniene a
+        <lb />ord’vn homme dena eonnpiſſanc, qui me,
+        <lb />niourenriant qu’l auroii eſteé damné́ ’l neut
+        <lb />n pechémortel; &amp; voicy comment il auoitau
+        <lb rend="¬" break="no" />is faitvn enfant à vne: femme, qui en recon
+        <lb rend="¬" break="no" />aue de cete faueur luy donnoit de l’arsenr,
+        <lb />reioie de la neeſſité, au moyen deq il
+        <lb /> aſſez honneſtement, &amp; ſans cela l ſe fuſt de
+        <lb rend="¬" break="no" />e&amp; damne; il eneſt de meſne de nousautres
+        <lb rend="¬" break="no" />uandes de papier, ans ces lmprimeurs qui
+        <lb />one enrichy aux deſpens de la reputation de
+        <lb />edes autres, nous eſtions reduits à la beſace,
+        <lb />oI i ayme mieux que Madamoiſelle de B-l.
+        <lb />oſe pſe pour auoir des galands, &amp; que ſa vie
+        <lb /> le Marais, que de ae voit neceſſiteuſe, &amp; en
+        <lb />t de mouri de faim, ou de me coupper la gor
+        <lb rend="¬" break="no" />luiu baiſous la deſs, le emp nous preſe de
+        <lb />enretourner à Paris.
+        <lb />Maiguéritre Roſie.
+        <lb />luduë en partle ce que vous dittes; Mais auſi
+        <lb />iez moy qu’il faut reſpecter les puiſſances
+        <lb />raines, &amp; ne iamais parler en mauuaiſe part
+        <lb />rs actlons: car outre qu’elles nous ſont incon
+        <lb rend="¬" break="no" />il ne nous eſt pas permis de les eſplucher,
+        <lb /> encor de les condamner. Vne Reyne ne
+        <lb />it elle affctionner vn ſage Miniſtre ſans in
+        <lb rend="¬" break="no" />t a vonſeienee; ne peuueneils eſts ous,
+        <lb />nſemble dans va cabinet ſans fairevn tioars:
+        <lb />uent-ils traitter des afaires d’Eſtat ſans tra
+        <lb rend="¬" break="no" />¬¬¬..
+        <lb rend="¬" break="no" />¬¬-m
+        <lb />lſſ
+        <lb />i
+        <lb />s
+        <lb />e
+        <lb />ſ
+        <lb />t
+        <lb />tae
+        <lb />e
+        <lb />ilreſiu
+        <lb />Ieſl
+        <lb />s?
+        <lb />d
+        <lb />e1
+        <lb />h8
+        <lb />sile
+        <lb />t
+        <lb />is
+        <lb />E1
+        <lb />ili8
+        <lb />i
+        <lb />l
+        <lb />1
+        <lb />it
+        <lb />tſs <pb n="6" />
+        <lb />¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+        <lb rend="¬" break="no" />hirle party de iea ?ecnfidlcen de da lilaoda
+        <lb />Peuples, ſan ſe rendeeefelaues de bena paſſion6
+        <lb />lay remarqué dans l’Hiſtoire que la Reyeàlan
+        <lb rend="¬" break="no" />che mere de S. Louys tres-verueuſe &amp; tres ſage
+        <lb />Prineeſſe, ſ ſeruit adec vne iudicieuſe conduite,
+        <lb />&amp; vne addreſſe d’eſprit merueilleuſe des chatnmes
+        <lb />de ſa beauté, pour gaigner ceux qu’elle iuigeoit c
+        <lb rend="¬" break="no" />pables de gouuerner le Royaumae, &amp; apros leauoi
+        <lb />long temps entrereaus de promeſes, ou daeſpe
+        <lb />ee, elle leur faiſoit bien connoitre que ſes defeau
+        <lb />n’eſtoient que pour eonſeruer l’Eſtat, &amp; s’asqſi*
+        <lb />des fidelles ſeruitCurs, comme de pradens Min
+        <lb rend="¬" break="no" />ſtres. l faut auoir la meſme croance de la Rayne,
+        <lb />ue rien ſoupçonner de mal ea toutes ſesactidn
+        <lb />Atoinette Roger.
+        <lb />Vrayemét ma Couſine, ou auez bonfoyevou
+        <lb />deurie aller ouo les looaeaà confeſe, pailque le
+        <lb />ſcrupoles de la Confeſſion vous rendeut ſcaua
+        <lb rend="¬" break="no" />&amp; que voſtre langue en deuiene mieux affileée. V
+        <lb />ſerblez ma ſoet Caherine qui eſt deuena ao:
+        <lb /> quente depuis qu’elle a fait la dauote, &amp; quipaſ;
+        <lb />abieude qu’eſſe a conetaée à̀ la Confefſonyou
+        <lb />lon he di qua du maſl &amp;e dei poehez, padepeſype
+        <lb />neeſſammene, &amp;e ne dit ianaais biei de peſoan
+        <lb />Mais qu’n chaoun viu à as gue ea ſi mod
+        <lb />ferloluie oamaſien de agt uue deſpemde n
+        <lb />appartiendra, &amp; de m’accommoder eepandat ?
+        <lb /> l’oecaſion s’en preſente; &amp; faite corme los Prr
+        <lb />reurs qui e ſout iamais plus rauis qus quandprê
+        <lb />le mode ſe mange lesotoilos, eſe ednſomno
+        <lb rend="¬" break="no" /> Ib..
+        <lb />oeei. <pb n="7" />
+        <lb />aa
+        <lb />Trfara
+        <lb />Ill
+        <lb />l
+        <lb />s
+        <lb />lll!
+        <lb />l
+        <lb />llll4
+        <lb />l
+        <lb />lle
+        <lb />l
+        <lb />l
+        <lb />E!
+        <lb />l
+        <lb />I
+        <lb />I
+        <lb />1
+        <lb />1
+        <lb />El
+        <lb />s
+        <lb />1
+        <lb />aa
+        <lb />!
+        <lb />li
+        <lb />l
+        <lb />ll
+        <lb />llla
+        <lb />1
+        <lb />a
+        <lb />l
+        <lb />llll
+        <lb />ll
+        <lb />l
+        <lb />Flilll
+        <lb />I
+        <lb />a
+        <lb />I
+        <lb />n
+        <lb /> a
+        <lb />s <pb n="8" />
+        <lb />¬ ¬
+        <lb rend="¬" break="no" />4
+        <lb />hirle party de iea econfulcen de da lharoédas
+        <lb />Peuples, ſans ſe rendreeclaues de les paſab.
+        <lb />Iay remarqué dans l’Hiſtoire que la ReyneBlan
+        <lb rend="¬" break="no" />che mere de S. Louys tres-vertueuſe &amp; tres fage
+        <lb />Princeſſe, ſe ſeruit adee vne iudicieuſe conduite.
+        <lb /> &amp; vne addreſſe d’eſprit merueilleuſe des chatmes
+        <lb />de ſa beauté, pour gaigner ceux qu’elle iuigeolt co
+        <lb rend="¬" break="no" />pables de gouuernet le Royaume, &amp; apros leauoi
+        <lb />long emps entrereaus de promeſes, ou daiſpe
+        <lb rend="¬" break="no" />ee, lle leur faiſoit bien connoitre que fes deſfeins
+        <lb />n’eſtoient que pouroonſeruer l’Eſtat, &amp;s’arquri
+        <lb />dee fidelles ſeruiteurs, comme de peadens in
+        <lb rend="¬" break="no" />ſâtresl faut auoir la meſme croance de la yne,
+        <lb />ne rien ſoupçonnaer de mal ea toutes ſesactin.
+        <lb />Anatoinette Roger.
+        <lb /> Vrayemér ma Couſine, vous auez boafoyeou1
+        <lb />deurles aller toua les loù confeſſe, puique les
+        <lb />ſcrupoles de la Confeſſion vous renden caua?
+        <lb />&amp;e que voſtre langue en deuient aieux affilée. Vo
+        <lb />ſermbleu ma ſut Caherine qul a deuenaeeo
+        <lb />quente depuis qu’elle a fait la dnote, &amp; qui pat
+        <lb />Eaounuo qu dle eonuſe la Cmnfeafno
+        <lb />Ion nodit que du aal &amp;e des poehez, palepeſy
+        <lb />ineeſſamment, &amp; ne dit aaais bie de parſont
+        <lb rend="¬" break="no" />Mais qu’n chacun vi a ſa guiſe &amp;a ſa mo
+        <lb />fsrlolue amaſien de ragt u deſpem de p
+        <lb />appartiendra, &amp; de m’aceomoder cepandaat ?
+        <lb /> l’occaſion s’en preſente; &amp; faire comme lesPre
+        <lb />ruro qui ne ſohit iamais plus auius qus quandu
+        <lb />le moude ſe mange hes oioils, &amp;e ſe ednomuo
+        <lb />.!
+        <lb />oes. <pb n="9" />
+        <lb />rrrrr
+        <lb />rrn
+        <lb />l
+        <lb />1
+        <lb />lili
+        <lb />l
+        <lb />al
+        <lb />il
+        <lb />E
+        <lb />l
+        <lb />u
+        <lb />l
+        <lb />ll
+        <lb />r
+        <lb />ãs
+        <lb />l
+        <lb />1
+        <lb />i
+        <lb />1
+        <lb />I
+        <lb />n
+        <lb />l
+        <lb />1
+        <lb />la
+        <lb />u
+        <lb />l
+        <lb />llll
+        <lb />ſ
+        <lb />l
+        <lb />l
+        <lb />llii
+        <lb />a
+        <lb />ll1
+        <lb />Aata
+        <lb />l
+        <lb />l
+        <lb />s
+        <lb />I
+        <lb />a
+        <lb />I
+        <lb />n
+        <lb />m
+        <lb /> a
+        <lb />m
+        <lb />s <pb n="10" />
+        <lb />¬¬-¬---¬¬¬¬¬¬¬
+        <lb rend="¬" break="no" />hirle party de ie tecmnfdcer do da lharodaz
+        <lb />Peuples, ſans ſe rendreefelaues de les paſuoa
+        <lb />lay remarqú dans l’Hiſtoire que la Reyaelan
+        <lb rend="¬" break="no" />che mere de S. Louays tres-vertueuſe &amp; tres ſoge
+        <lb />Princeſſe, ſ ſeruit adec vnae iudicieuſe conduite,
+        <lb />&amp; vne addreſſe d’eſprit merueilleuſe des chatmes
+        <lb />de ſa beauté, pour gaigner ceux qu’elle iugeit co
+        <lb rend="¬" break="no" />pables de gouuerner le Royaume, &amp; apros leauoi
+        <lb />long temps entreteaus de poomefſes, o deſpe
+        <lb />ce, lle leur faiſoit bien connoiſtre que ſes deſſeins
+        <lb />a’eſtoient que pour conſeruer l’Eſtat, &amp; s’acqſi
+        <lb />dee fidelles ſeruiteurs, comne de pradens in
+        <lb rend="¬" break="no" />ſtres. l faut auoir la meſme creance de la Reyne,
+        <lb />ne rien ſoupçonnor de mal ea toutes ſeaction
+        <lb />Antoinerte Roger.
+        <lb /> Vrayemét ma Couſine, vou auez bofoyevou
+        <lb />deuriez aller ou les ioaà confeſſe, puilque le
+        <lb />ſcrupoles de la Confeſſion vous rendeut caua
+        <lb />&amp;e que voſtre langue en deuieat naieux affilée. Vo
+        <lb />ſembleu ma ſoeut Caheriue qul a deaennealo:
+        <lb />quente depuis qu’ellea fait la dauote, &amp; quipaſ
+        <lb />aoinoad qu dle oon&amp;e la &amp;onheſiun
+        <lb />Ion nodit que du aal &amp;e des poehez, padepeſy
+        <lb />ineeſamment, &amp; ne dit iaais bie de perſoan
+        <lb />Mdais qu’n chacun viu a ſa guſe &amp;ea ſa mod,
+        <lb />fnsneloluiet amaſter de rag ue deſpemde p!
+        <lb />appartiendra, &amp; de m’accommoder cepandaar ?
+        <lb /> l’oecaſion s’enpreſente; &amp; faire cohma lesPr
+        <lb />raur qui ne ſoie amais plus aais qua quand
+        <lb />le mode ſe mage les oieoilos, &amp;ſes dnfomma
+        <lb />i.
+        <lb />oeié. </p>
+    </body>
+  </text>
 </TEI>

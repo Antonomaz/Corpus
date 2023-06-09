@@ -1,543 +1,326 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1175_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Le duc de Beaufort aux bons bourgeois de Paris.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Le duc de Beaufort aux bons bourgeois de Paris.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=vQPLIgpYskAC&amp;"/>
-					<author/>
-					<title source="Moreau">Duc (le) de Beaufort aux bons bourgeois de Paris.</title>
-					<pubPlace source="Moreau">Sans lieu</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Antonomaz" when="1651-07-30">30 juillet 1651</date>
-					<extent>
-						<measure quantity="7" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale</institution>
-						<repository/>
-						<idno type="cote">SJ IF 247/176, 69</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=vQPLIgpYskAC&amp;" />
+          <author />
+          <title source="Moreau">Duc (le) de Beaufort aux bons bourgeois de Paris.</title>
+          <pubPlace source="Moreau">Sans lieu</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Antonomaz" when="1651-07-30">30 juillet 1651</date>
+          <extent>
+            <measure quantity="7" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
+            <repository />
+            <idno type="cote">SJ IF 247/176, 69</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">1175. Duc (le) de Beaufort aux bons bourgeois de Paris. Cinquième
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">1175. Duc (le) de Beaufort aux bons bourgeois de Paris. Cinquième
           affiche. Le 30 juillet 1651 . Pendant cette maladie du duc de Beaufort, qui causa tant
           d’émotion dans Paris, et que la populace attribuait à un empoisonnement. Le duc cautionne
           le prince de Condé auprès des Parisiens ; et il laisse entendre qu’il aurait bien pu être
           empoisonné ! Cette affiche a été publiée en pamphlet, dans le même temps, sous le même
           titre, s. 1. n. d., 7 pages. Elle n’en est pas plus com- mune.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">discours adressé</term>
-					<term type="genre">affiche</term>
-					<term type="subject">Beaufort, François de Bourbon-Vendôme, 1616-1669, duc de</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_52" source="Moreau">
-					<p>Le Tellier, Servien et de Lionne sont éloignés de la cour</p>
-					<date when="1651-07-20">1651-07-20</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-07-06" who="KA"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-LE DVC.
-        BEAVFORT
-        a bons pourgeos
-        eepr 
-        i
-        3
-        e
-        s
-        s
-        
-        
-        a
-        a
-        9
-        s
-        a
-        s
-        e
-        a
-        1
-        e
-        a
-        a
-        a
-        E
-        2
-        a
-        aa
-        1
-        aaa
-        es
-        ß
-        e
-        at
-        a
-        a
-        2t
-        ?
-        a
-        n
-        ſal!
-        uas
-        i
-        s
-        à
-        2
-        tee
-        i
-        s
-        a
-        e
-        aeaeaddss
-        sas
-        a
-        s
-        a
-        a
-        1
-        E
-        1
-        e
-        ai
-        i
-        a
-        F
-        E
-        m
-        s
-        a
-        s
-        is
-        e
-        t
-        a?
-        ſ
-        i
-        a
-        pg
-        s
-        i
-        3
-        F
-        a
-        a?
-        aas
-        E
-        as
-        aa
-        a
-        e
-        s
-        Ede eel
-        e
-        8
-        a
-        ns
-        s
-        a 
-        68
-        ,AAAAAA
-        e e
-        ſ’ePpet
-        LE DVC DE B EAVFORT,
-        aux bons Bourgeois de
-        Paris.
-         ESSIEvRS,
-        L Puiſque ie ſuis ſi mal
-        heur eux, que la maladie qui me
-        tient dans le lict depuis ſi long
-        temps, m’empeche de pouuoir
-        rendre du ſeruice au public, dans
-        la plus belle occaion qui ſe ſoit ia
-        mais preſentée, pour terminer les
-        maux que le Card. Maz. &amp; ſes pen.
-        ſionnaires vous font ſouffrir de
-        puis tant d’années, &amp; que M. le
-        Prince animé par le zele qu’il a
-        pour le bien de l’Eſtat, &amp; le ſou la
-        gement du peuple, nous a fait nai
-        ttre en reſoluton de la faire reüſ¬ 
-        ſir à voſtre aduantage, commeil
-        m’aſſeure tous les iours &amp; encore
-        hyer; pourueu que la recognoiſ
-        ſance que vous deuez auoir- des
-        bons ſeruices qu’il vous rend, luy
-        puiſie faire trouuer aſſeurance de
-        ſa perſonne dans Paris, entre les
-        mains des Bourgeois, pour le re
-        pos deſquels il s’expoſe à la hayne
-        des Partiſans du Card. Maz. no
-        ſtre ennemy, qui vaſcheut encores
-        plus que iamais de perdrece grand
-        Prince, parce qu’il vous procure
-        du bien par leur eſloignement.
-        Vouis ne deuez point douter que
-        s’il ne cherchoit que la ſeureté de
-         ſa perſonne ſeulement, il n’auroit
-        qu’à ſe retirer en ſon Gouuerne
-        mé̃t, où il n’auroit rien à̀ craindre;
-        mais par la bonté que ce Prince a
-        de preferer le bien publie au ſien
-        proore, pour vous faire cognoi
-        ſtre l’amitié qu’il a pour vous, qui 
-        1
-        auez demandé ſa liberteé, il reſte dans
-        cette Ville pour continuer ſes ſerui
-        ces aux Pariſiens. C’eſt vne action ſi
-        digne d’vn tel Prince(ſans le ſecours
-        duquel nosſou ffrances ſont ſans re
-        mede) ſi neceſſaire pour la conſerua
-        tion de l’Eſtat, &amp; ſi vtile pour voſtre
-        propre repos, que i’eſpere encores
-        qu’ayant conſerué quelque memoi
-        re des ſeruices que i’ay eu l’honneur
-        de vous rendre, &amp; pour leſquels vous
-        m’auez teſm oigné tant d’amití; la
-        priere que ie vous faits de ne point
-        abandonner les intereſts de Mon
-        ſieur le Prince(qui ſont les miens &amp;
-        les voſtres) ne ſera pas ſans effect,
-        puiſque de ſa conſeruation deſpendla
-        mienne &amp; la voſtre propre, n’ayant
-        tous deux qu’vn meſme but, d’em
-        peſcher que ces harpies n’acheuent
-        de deſchirer l’Eſtat, &amp; de ruyner les
-        ſubiets du Roy par le reſtabliſſement
-        de la tyrannie de leur maiſtre; lere¬ 
-        6
-        tour duquel ne peut eſtte ſupporta
-        ble aux gens de’bien, puifque la pen
-        ſeé méme leur en doit eſtre horrible.
-        Sil vous reſte dan quequepeu
-        d’affection pour moy, fecondez les
-        bonnes intentions de Monſieur le
-        Prince, attendant que ma ſanté me
-        permette de me rendre aux aſſem
-        blées qui ſe font, pour y ſeruir le pu
-        blic; c’eſt ce que ie vous demande
-        auec route la paſſionimaginable, c’eſt
-        vne grace que vous ne deuez pas me.
-        refuſer;puis qu’il eſt tres-certain que
-        ſi l’on ſouffre les creatures du Cardi
-        nal, ils ne manqueront pas de deſcri
-        er ma conduite &amp; celle de Monſieur
-        le Prince auprés du Roy &amp; de la
-        Reyne, afin que s’ils ne peuuent re
-        ſtablir leur maiſtre par les cabales
-        qu’ils font tous les iours, ils puiſ
-        ſent procurer ſon retour par la hay
-        ne qu’ils conuſeilleront à leurs Ma
-        jeſtez d’auoir contre nous, ce qui 
-         a 1
-        cauſeroit dans la Majorité noſtre
-        perte &amp; la voſtre Ma maladic vous
-        doit aſſez faire voir l’attentat qu’ils
-        uoient fait ſur ma perſonne, &amp; dont
-        ie n’ay encores oſé me plaindre crai
-        gnant pis: celuy que l’on vouloit ſaire
-        ſur celle de Monſieur le rince, vous
-        fait auſſi cognoiſtre le deſſein qu’ils
-        auoient fait de le perdre, comme le
-        ſeul obſtacle à ler tyrannie: Enſin
-         tous les deux enſemble vous mon
-        ſtrent clairement qu’on n’en vou
-        loit à nous deux, que pour ſe ven
-        ger apres des Pariſiens qui ont
-        chaſſé leur maiſtre, &amp; pour mieux y
-        reüſſir nous perdre, parce qu’il n’y a
-        que nous deux qui nous oppoſions
-        à leurs mauuais deſſeins, ſous la fa
-        ueur de ſon Alteſſe Royalle, les aſ
-        ſiſtances de laquelle ie vous ſupplie
-        d’implorer dans ce reucontre.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">discours adressé</term>
+          <term type="genre">affiche</term>
+          <term type="subject">Beaufort, François de Bourbon-Vendôme, 1616-1669, duc de</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_52" source="Moreau">
+          <p>Le Tellier, Servien et de Lionne sont éloignés de la cour</p>
+          <date when="1651-07-20">1651-07-20</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-07-06" who="KA" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />LE DVC.
+        <lb />BEAVFORT
+        <lb />a bons pourgeos
+        <lb />eepr <pb n="2" />
+        <lb />i
+        <lb />3
+        <lb />e
+        <lb />s
+        <lb />s
+        <lb />
+        <lb rend="¬" break="no" />
+        <lb rend="¬" break="no" />a
+        <lb />a
+        <lb />9
+        <lb />s
+        <lb />a
+        <lb />s
+        <lb />e
+        <lb />a
+        <lb />1
+        <lb />e
+        <lb />a
+        <lb />a
+        <lb />a
+        <lb />E
+        <lb />2
+        <lb />a
+        <lb />aa
+        <lb />1
+        <lb />aaa
+        <lb />es
+        <lb />ß
+        <lb />e
+        <lb />at
+        <lb />a
+        <lb />a
+        <lb />2t
+        <lb />?
+        <lb />a
+        <lb />n
+        <lb />ſal!
+        <lb />uas
+        <lb />i
+        <lb />s
+        <lb />à
+        <lb />2
+        <lb />tee
+        <lb />i
+        <lb />s
+        <lb />a
+        <lb />e
+        <lb />aeaeaddss
+        <lb />sas
+        <lb />a
+        <lb />s
+        <lb />a
+        <lb />a
+        <lb />1
+        <lb />E
+        <lb />1
+        <lb />e
+        <lb />ai
+        <lb />i
+        <lb />a
+        <lb />F
+        <lb />E
+        <lb />m
+        <lb />s
+        <lb />a
+        <lb />s
+        <lb />is
+        <lb />e
+        <lb />t
+        <lb />a?
+        <lb />ſ
+        <lb />i
+        <lb />a
+        <lb />pg
+        <lb />s
+        <lb />i
+        <lb />3
+        <lb />F
+        <lb />a
+        <lb />a?
+        <lb />aas
+        <lb />E
+        <lb />as
+        <lb />aa
+        <lb />a
+        <lb />e
+        <lb />s
+        <lb />Ede eel
+        <lb />e
+        <lb />8
+        <lb />a
+        <lb />ns
+        <lb />s
+        <lb />a <pb n="3" />
+        <lb />68
+        <lb />,AAAAAA
+        <lb />e e
+        <lb />ſ’ePpet
+        <lb />LE DVC DE B EAVFORT,
+        <lb />aux bons Bourgeois de
+        <lb />Paris.
+        <lb /> ESSIEvRS,
+        <lb />L Puiſque ie ſuis ſi mal
+        <lb rend="¬" break="no" />heur eux, que la maladie qui me
+        <lb />tient dans le lict depuis ſi long
+        <lb rend="¬" break="no" />temps, m’empeche de pouuoir
+        <lb />rendre du ſeruice au public, dans
+        <lb />la plus belle occaion qui ſe ſoit ia
+        <lb rend="¬" break="no" />mais preſentée, pour terminer les
+        <lb />maux que le Card. Maz. &amp; ſes pen.
+        <lb rend="¬" break="no" />ſionnaires vous font ſouffrir de
+        <lb rend="¬" break="no" />puis tant d’années, &amp; que M. le
+        <lb />Prince animé par le zele qu’il a
+        <lb />pour le bien de l’Eſtat, &amp; le ſou la
+        <lb rend="¬" break="no" />gement du peuple, nous a fait nai
+        <lb rend="¬" break="no" />ttre en reſoluton de la faire reüſ¬ <pb n="4" />
+        <lb />ſir à voſtre aduantage, commeil
+        <lb />m’aſſeure tous les iours &amp; encore
+        <lb />hyer; pourueu que la recognoiſ
+        <lb rend="¬" break="no" />ſance que vous deuez auoir- des
+        <lb />bons ſeruices qu’il vous rend, luy
+        <lb />puiſie faire trouuer aſſeurance de
+        <lb />ſa perſonne dans Paris, entre les
+        <lb />mains des Bourgeois, pour le re
+        <lb rend="¬" break="no" />pos deſquels il s’expoſe à la hayne
+        <lb />des Partiſans du Card. Maz. no
+        <lb rend="¬" break="no" />ſtre ennemy, qui vaſcheut encores
+        <lb />plus que iamais de perdrece grand
+        <lb />Prince, parce qu’il vous procure
+        <lb />du bien par leur eſloignement.
+        <lb />Vouis ne deuez point douter que
+        <lb />s’il ne cherchoit que la ſeureté de
+        <lb /> ſa perſonne ſeulement, il n’auroit
+        <lb />qu’à ſe retirer en ſon Gouuerne
+        <lb rend="¬" break="no" />mé̃t, où il n’auroit rien à̀ craindre;
+        <lb />mais par la bonté que ce Prince a
+        <lb />de preferer le bien publie au ſien
+        <lb />proore, pour vous faire cognoi
+        <lb rend="¬" break="no" />ſtre l’amitié qu’il a pour vous, qui <pb n="5" />
+        <lb />1
+        <lb />auez demandé ſa liberteé, il reſte dans
+        <lb />cette Ville pour continuer ſes ſerui
+        <lb rend="¬" break="no" />ces aux Pariſiens. C’eſt vne action ſi
+        <lb />digne d’vn tel Prince(ſans le ſecours
+        <lb />duquel nosſou ffrances ſont ſans re
+        <lb rend="¬" break="no" />mede) ſi neceſſaire pour la conſerua
+        <lb rend="¬" break="no" />tion de l’Eſtat, &amp; ſi vtile pour voſtre
+        <lb />propre repos, que i’eſpere encores
+        <lb />qu’ayant conſerué quelque memoi
+        <lb rend="¬" break="no" />re des ſeruices que i’ay eu l’honneur
+        <lb />de vous rendre, &amp; pour leſquels vous
+        <lb />m’auez teſm oigné tant d’amití; la
+        <lb />priere que ie vous faits de ne point
+        <lb />abandonner les intereſts de Mon
+        <lb rend="¬" break="no" />ſieur le Prince(qui ſont les miens &amp;
+        <lb />les voſtres) ne ſera pas ſans effect,
+        <lb />puiſque de ſa conſeruation deſpendla
+        <lb />mienne &amp; la voſtre propre, n’ayant
+        <lb />tous deux qu’vn meſme but, d’em
+        <lb rend="¬" break="no" />peſcher que ces harpies n’acheuent
+        <lb />de deſchirer l’Eſtat, &amp; de ruyner les
+        <lb />ſubiets du Roy par le reſtabliſſement
+        <lb />de la tyrannie de leur maiſtre; lere¬ <pb n="6" />
+        <lb />6
+        <lb />tour duquel ne peut eſtte ſupporta
+        <lb rend="¬" break="no" />ble aux gens de’bien, puifque la pen
+        <lb rend="¬" break="no" />ſeé méme leur en doit eſtre horrible.
+        <lb />Sil vous reſte dan quequepeu
+        <lb />d’affection pour moy, fecondez les
+        <lb />bonnes intentions de Monſieur le
+        <lb />Prince, attendant que ma ſanté me
+        <lb />permette de me rendre aux aſſem
+        <lb rend="¬" break="no" />blées qui ſe font, pour y ſeruir le pu
+        <lb rend="¬" break="no" />blic; c’eſt ce que ie vous demande
+        <lb />auec route la paſſionimaginable, c’eſt
+        <lb />vne grace que vous ne deuez pas me.
+        <lb />refuſer;puis qu’il eſt tres-certain que
+        <lb />ſi l’on ſouffre les creatures du Cardi
+        <lb rend="¬" break="no" />nal, ils ne manqueront pas de deſcri
+        <lb rend="¬" break="no" />er ma conduite &amp; celle de Monſieur
+        <lb />le Prince auprés du Roy &amp; de la
+        <lb />Reyne, afin que s’ils ne peuuent re
+        <lb rend="¬" break="no" />ſtablir leur maiſtre par les cabales
+        <lb />qu’ils font tous les iours, ils puiſ
+        <lb rend="¬" break="no" />ſent procurer ſon retour par la hay
+        <lb rend="¬" break="no" />ne qu’ils conuſeilleront à leurs Ma
+        <lb rend="¬" break="no" />jeſtez d’auoir contre nous, ce qui <pb n="7" />
+        <lb /> a 1
+        <lb />cauſeroit dans la Majorité noſtre
+        <lb />perte &amp; la voſtre Ma maladic vous
+        <lb />doit aſſez faire voir l’attentat qu’ils
+        <lb />uoient fait ſur ma perſonne, &amp; dont
+        <lb />ie n’ay encores oſé me plaindre crai
+        <lb rend="¬" break="no" />gnant pis: celuy que l’on vouloit ſaire
+        <lb />ſur celle de Monſieur le rince, vous
+        <lb />fait auſſi cognoiſtre le deſſein qu’ils
+        <lb />auoient fait de le perdre, comme le
+        <lb />ſeul obſtacle à ler tyrannie: Enſin
+        <lb /> tous les deux enſemble vous mon
+        <lb rend="¬" break="no" />ſtrent clairement qu’on n’en vou
+        <lb rend="¬" break="no" />loit à nous deux, que pour ſe ven
+        <lb rend="¬" break="no" />ger apres des Pariſiens qui ont
+        <lb />chaſſé leur maiſtre, &amp; pour mieux y
+        <lb />reüſſir nous perdre, parce qu’il n’y a
+        <lb />que nous deux qui nous oppoſions
+        <lb />à leurs mauuais deſſeins, ſous la fa
+        <lb rend="¬" break="no" />ueur de ſon Alteſſe Royalle, les aſ
+        <lb rend="¬" break="no" />ſiſtances de laquelle ie vous ſupplie
+        <lb />d’implorer dans ce reucontre. </p>
+    </body>
+  </text>
 </TEI>

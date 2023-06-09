@@ -1,795 +1,446 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2425_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Maximes fondamentales touchant le gouvernement et les
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Maximes fondamentales touchant le gouvernement et les
           pernicieux desseins des Espagnols.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2022-10-25">25 octobre 2022</date>
-				<availability status="restricted" n="cc-by">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=SBz1JGfiN_0C"/>
-					<author/>
-					<title source="Moreau">Maximes fondamentales touchant le gouvernement et les pernicieux
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2022-10-25">25 octobre 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=SBz1JGfiN_0C" />
+          <author />
+          <title source="Moreau">Maximes fondamentales touchant le gouvernement et les pernicieux
             desseins des Espagnols.</title>
-					<pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
-					<publisher ref="isni:0000000002569584" xml:id="IL_RemyVeuvedeJean.xml">
-						<persName>
-							<forename>Veuve de Jean</forename>
-							<surname>Rémy</surname>
-						</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure unit="page" quantity="15"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale de Lyon</institution>
-						<repository/>
-						<idno type="cote">Rés 311085</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace source="Moreau" ref="geonames:2988507">Paris</pubPlace>
+          <publisher ref="isni:0000000002569584" xml:id="IL_RemyVeuvedeJean.xml">
+            <persName>
+              <forename>Veuve de Jean</forename>
+              <surname>Rémy</surname>
+            </persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure unit="page" quantity="15" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale de Lyon</institution>
+            <repository />
+            <idno type="cote">Rés 311085</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">2425. Maximes fondamentales touchant le gouverne ment et les pernicieux
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">2425. Maximes fondamentales touchant le gouverne ment et les pernicieux
           desseins des Espagnols. Paris, veuve Jean Remy, 1649, 15 pages. Rare. Tout ce que les
           Espagnols ont reproché à Louis XIV.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">maximes</term>
-					<term type="genre">formes gnomiques</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-10-25" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<pb n="12"/>
-				<pb n="13"/>
-				<pb n="14"/>
-				<pb n="15"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-MAXIMES
-         T
-         FONDAMENTALLES
-        TOVCHANT LE GOVVERNEMENT
-        &amp; les pernicieux deſſeins des Eſpagnols
-        s
-        F
-        eas
-        Chez la VefueIEAN R E MY, ruë ſainct Iacques, à
-        I’Image S. Remy, prés le College du Pleſſis.
-        AMDC XLiXx. 
-        
-        o
-        A?
-        AS1
-        S
-        si
-        eeeeE3
-        MAXIMES
-        r¬
-        FONDAMENTALLES.
-        e e ounone en ene
-        &amp; les pernicieux deſſeins des Eſpagnols.
-        1.
-        Les Epagnols nm ceſſemt iamais de conquerir.
-         EPVIS cent ans ils ont acquis ſous
-        SVen lue e ieei e in eoene ee
-        ’j Sainteté &amp; de la Religlon, plus de
-        &amp; cent Royaumes &amp; Empires aux ln
-        - des dont ils ont tout à ſait eéxterminé
-        Ies Roys &amp; leur race, &amp; aſſujetty miſerablemens
-        leurs Peſples; àptes les auoiraffoiblis par des car
-        nages &amp;tueries incroyables ils ont acquis en Ita
-        e au preiudice de la libeirté d’Italie, ſur les Fra.
-        çois, qui ed eſtoient Princes legitimes &amp; naturels,
-        le Duché de Milan,le Reyaume de Naples, &amp;au
-        patatdnt le Royauhie-de Sieile; en Alemagneilt
-        nt iufques à preſet teu l’Empire herediraite
-         A ij 
-        &amp; font ce qu’ils peent pour efaner l’Eleion,
-        comme ils font é́s Royaumes de Hongrie, &amp; de
-        Boheme ils ont le Palatinat, lullhiers, Cambray, &amp;
-        toute la plus grande part de la ſucceſſion de Cle
-        ues, ils tiennent toute l’Allemagne diuiſeée. Ils ont
-        voulu auoir la France au temps de la Ligue; ils
-        auoient n’agueres oceupé tous les Griſons; ils ont
-        fait des entrepriſes ſur la ville de Straſbourg &amp;
-        autres.
-        11I.
-        ls comumencent toutes leurs conqueſtes par pratiques, &amp;
-        meneées couuertes, que leurs Mimiſtres fomt dons
-         les Eſtats qa’ils veullent enuahir.
-        lls furent aux Indes ſous pretexte de traffie, &amp;
-        de leur porter l’Euangile; Les plaintes de tous les
-        Eſtats de l’Europe ſont ſunce ſajet toutés ſembla
-        bles, ainſi le diſent les ltaliens; les Allemands, les
-        Anglois &amp; les François ne s’en peuuent taire;.
-        La Reyne Eliſabeth fut recherchée de paix par
-        Philippes II. leurs Ambaſſadeurs eſtoient aſſem
-        blez à Bourbourg. Ce n’eſtoit que pouirl’endor¬.
-        mirafin d’opprimer l’Angleterre par l’arméequ’ils
-        appelloient(ſans auoir compté́ auec Dieu. )L’in
-        uincible Henry l I I. au9is pairx auec le meſne
-        PhilippesII. lon beau frere quand il forma la Li
-        gue en Frante qui debaucha quaſi cout l’Eſtar, &amp;
-         faillit 
-        1
-        faillit à meſme temps à ietter dans le tombeau
-        l Eſtat auec le oy d’vn meſme coup. Qui n’en lit
-        l’hiſtoire, ou qui ne la veu, aura de la peine à croi
-        re les artifices épouuantables dont on ſe ſeruoit
-        pour faire hair le Roy le plus aimable qui fut
-        iamais
-        1II.
-         Ils entreprennent plus hardiment ſur les Cathol’ques
-         que ſur les Heretiques..
-        Teſmoins en ſont l’Italie, le Portugal, &amp; la Fran
-        ce, iamas les Eſpagnols n’ont ſi genereuſement
-        oſté le bien des Heretiques qu’ils nous ont oſté
-        Milan &amp; Naples, &amp; en vn temps que nous faiſions
-        bruſler tous vifs les Heretiques. Charles Quint
-        rendit au Duc de Saue Heretique ſes Eſtats, &amp; ne
-        uous voulut lamais rendre le Duçhé́ de Milan...
-        IV.
-        Ils laiſſeut en repos les Mahometas, pour entrepren
-         dre ſur les Eſlats de la Chreſtieté.
-         Si ce que les Eſpagnols ont dépenſé contre la
-        France, contre l’ltalie, contre l Allemagne, &amp; coa¬ 
-        re ’Angſeterre euſt eſte employé conte les
-        Tures, il y en euſt eu aſſez de la moitié pour les
-        chaſſer de l’Europe. Charles Quint rendit Tunis
-        à Muleaſſem Ture, &amp; ny luy ny les ſiens ne nous
-        ont iarmais voulu rendre la Nauarre.
-        V.
-        ls ſe ſeruent touſiours du pretexte de la Religion,
-         ſuiuant le precepte de
-        Machiael.
-         Ainfi aux Indes, en Allemagne, en France,aux
-        Griſons, tous les Conquerans ont eu cette ruſé;
-        anſi Philippe de Macedoine ſous prerexre de van
-        ger le ſacrileges aſſeruit les Grees; Alexandre le
-        Grand uouloit eſtrecreu engendré de Dieu, pour
-        pouuoir plus facilement tyranniſer les hommes;
-        Les Romains pour adouir la ſeruitude des Na
-        tions portoient leurs Dieux à Rome, Mahomet
-         le Ture, le Cherife ont eu le meſme pretexte; on
-        le reconnoiſt auſſi bien à Rome qu’à ’aris, &amp; les
-        ltaliens comme les François, diſent que le maſ
-        que eſt leué, &amp; qu’ilya deſa long-temps qu’on
-        - oit à trauersde ce faux viſage. 
-        7
-        V1.
-         onprmnns ſr l l’lpe , unt u piiu an
-        1
-        1
-        temporel, auſi hardiment que ontre les aures
-        Prninces de ſeurope.
-        Ils publent les ndulgences en Sicile, ils diſpo
-        lent des excommunicatins, &amp; par deriſion ilsy
-        ont voulu celebrer le lubilé, ils ont pris beau
-        coup de fois des terres de l’Eſtat du Pape; leos
-        pris Rome &amp; l’ont piĺe, ué len Cardioau
-        Hanconné le Pape. Vn Seeretaire de la Maiſon
-        ’Auſtricheen la gonealogie de leurMaifon, im
-        primee auee Eloge &amp;epriuutge de l’Empereur
-        doiphell. dit que Rodolphe d’Aſboug premies
-        Empereur, fat ecomnunie pout auoit fait la
-        gnere pux Eelefiaſtiqus, y que l’Euaſque d
-        ale elehanmt quil eaaole efé eleoupiqu opa
-        eur, leuant les oaims au Giel s’eeria; O Chbiſle ſfi
-        mirer ue iu ſe dlelituo icomfe a te conmes deturb. C
-        on E uoſue auoit peur pre teie Maiſon tiraſt
-        eſs- Chi. hs de oihroſneeelar peſone
-        de ſonLaianutenant, eſtoit vnsiPnphétle de l’ad
-        ear, ils onrinuent en leia ambiticux deſſai.
-        ile mcràmdeoad Ia imoteé o dd ſonir d’lalie,
-        3 
-        8
-        pour n’eſtre pas aſſujettie à leur brigues, pratiques
-        &amp; menées qui pourroient diminuer la liberté, &amp;
-        qui pourroient la rendre ſuſpecte aux autres
-        Princes de l’Europe, ou bien de s’vnir auee tous
-        ſes autres enfans, pour ranger ce dernier venu qui
-        veut s’approprier le partage de ſes freres, &amp; oppri
-         mer ſa mere.
-        .V11.
-        Ilomt les mpeſmes mau e leue ouuraement, &amp; beu
-         coup plus grands que les autres Eſtats.
-        12.
-         Lers gouuernenes ſonx: trien naux à la fonule
-        des Sujets, qui de trols en trbis ansi ſont deuoré́s
-        par ceux qui viennent de nouueau conme des
-        miouches maigres; Las charges ſont venalles e
-        tuc eux oucn les acquierr parldes priſons quicoû̂
-        ontbien pluache qu la taxe &amp; l’annuel, ilsont
-        toutes ſortes d’impoſitions, d’aecez, ſubcides iuſ
-        ques a en auoir pour mangorde la chair aux iours
-        defendus; ils font payor lacentieſme, la vingtieſ
-        medu fonds en quelqes Prouinces; Sicile Na
-        ples, &amp; Milan ctient pour cela iuſques au Ciel,
-        Leurs ſoldats logent àdifcretion, &amp; on vſentpous
-        les femmes &amp; les fillex comme l’hiſtoire le témoi
-        gne, 
-        9e
-        gne, &amp; la veriteé le publie dans les plaintes des lta
-        liens.. Ceux qui rairtent le plsmiad los Peu ples:
-        ſont les mieux recompenſez entre eux, ils doi
-        uent plus qu’ils ne payeront de vingrs années,
-        leurs ſoldas font les meſoca mausiqe ceu des
-        autres Nauions, &amp; s’ils ne ſont paslmieux payez.
-        Les jalouſies enre eux ſont prodigieuſescone
-        les Eſtrangers qui les ſeruent, tefmoim le Prince
-        de PRarme, Qo, &amp; aquuros quie ſont enoores nvie,l
-        leurs Algazilane ſone pas plusmdrtois qe fs!
-        Sergens.
-         E2l
-        i
-        Qund i fent du ien a queljues vap lau les, Cle
-        e n’t ps pat imouir qu’ils leoimpotenee gpr e
-        l’ſe ſeuit d’eux comns des raſtrese
-        ..,8
-        ̀ pedre l’ſat.
-        
-         Les preuues de ceſa ſont inuhicble, e le
-        ſens bonnun en eſt un petpeuuel eonmmonaa
-        IX.
-         L’humeur des Eſpaguols et inſûppotable, ̀ etoues le
-         Natious da l’Eape.
-         L’Aheur du peſeh-diſdous dit loy-meſme 
-        10.
-        qu’il les lrait a’oauſe dé P’orgueil; fls frrépriſent
-        toudolesautie Peaples , con he ſi ce n’eftoiehr que
-        des Mores de Goinée, ou des eſefaues d’Angola,
-        le Conneſtable deaſtille deandoit en la ran
-        che Cormueſle Connetable de France eſtit ga
-        land hommerar portleur diſcours, &amp; leurs vr
-        ſagcs ſon des pieuues vluantes dé’la theze, fir!
-        tout dans Natples, Mlan, &amp; neſmiels ’onr iandais
-        voulu uffoique leus Suieésfſſſeér ſous nos!
-        Eueſgoçs, &amp; ltimar f’tcois ati’ays-bas, &amp;
-        fallu que le Pape ait fléchy ſous leur orgue, pout
-        faire de nouueaux Eueſthez’à leur fantaiſie. Il ſe
-        roit à deſirer pour l’inſtruction do ceux qui en
-        dobstear;’ qu’is fifſent d̈raht quelues années
-        leur apprentiſſage des ſuiettions ſous vn Vice
-        Roy, pour voit ce qu’ils nous diroient à̀ leur retour
-        de nos Gouuerneurs de Preuinces. I’en appelle
-        à teſmoin encores les bons Religieux des Ordres
-        noluieau qfbtt’elprbulé des Su périeurs ſpa
-        grol; ſi fcauenitbieu c que ie veux direé.
-        8
-        X.!
-        Qdandls donent di ſecours à’quelques Peuples n
-        leurs neceſſite, ’eft à ’deſſeini de les opprnmer.
-        , Pagee aoyéns Riomains ſe endirene Mai. 
-         it.
-        ſtres de tout le moh de du remps de la Liguc, le?
-        Eſpgnols aydoient vne partie de l’Eſtat pour lé
-        pouuoir opprimier tour, &amp; l’aſſuiettir entierement
-        En ltalie ils font du bien en détail, pour l’acque
-        rir tout en gros, ils ont aydé les rebelles Valtelns
-        pour auoir l’Eſtat des Griſons, ils ſont apres pour
-        en faire le meſme du coſteé de l’Allemagne.
-        x1.
-        Quand ils ont paix, &amp; aliance auec quelques-vns c’et
-         pur puomir q drſr des ntelomes
-        dad leurs Efh.
-        2
-        EA.
-         Pnlippe I. beau frére de Heniy ’t ’eſee
-        &amp; forma la Ligue en Frante, &amp; y employa beau
-        coup le temps car ledr beſonge Sa lentemdent!
-        Has ſe-eflemlne oſioursi La plainte des vVe
-        Hties eſtpubque des entteptfes faites’ſur leut
-        Viſle en pline paix, la coiqeſte du Portugalſe?
-        lſe de meſmé, terdiand’nous promit dé nous,
-        laſet ’prendre Ndples pot uoir le Coniré de,
-        ouſfllr lil’vdſut’ s ares paſeager Napes,
-        aéeboul, da chairgé de hbioite le eout com
-        He ; &amp;ſieoit l Nepies de Louysx &amp;
-        mestoi-il vn genouil à tee deaiiy aSuione! 
-        
-        n, il oſta la Nauarre à ſa propre Niepce; s’ils ne
-        Ie fſſenlt’pas ſers du pietexte de l’allince &amp; du
-        mriage d’Angleterre, ils n’euſſeni pas pris ſi fa
-        ciement le l’alatinat.
-        X11!
-        i
-        .
-        Il t le deſſein de deeuir Moarques de tous
-         le monde.
-        .?
-        Ils le dſent eux-meſme, &amp; nes’y feignent pas;
-        Ceux qui les flattent parlént d’eüx comme d’vne
-        Mnar hi aqiſſante aux lndes, ils-diſoient le Roy
-        d’Eſpagne eſt Empereur de tout le monde, &amp;con
-        meils le Viſenchàchn los en croit, les lialien,,
-        lés Allemada, ley Agſois &amp; les rancois ’en,
-        ſonnplaits depjſs Cnirles Quine; ce n’eſt pas,
-        vie polainte egere: mais vno publique profeſſion
-        que ces Eſpagnols font aur yeux meſme de ſla
-        Sainctete &amp; de routés les Nations, de la terme, j
-        Ceſt vns eropanee quots ous lee Peuiples dp
-        l’Furope qpui ne peut eſtro mal fondee, puis que
-        le Epagols pnt tous lés ioura out ce, quis
-        peuuengpoury,aui.
-         I eL.
-         xiir 
-        3.
-        X1I1.
-         haque Prnce lreſfien eſtoblgé en Dieu &amp; eonſeien
-         e, ſurpeine de peché mortel de ’oppoſer à toaut ceux
-         quui veulent détruire ſon Eſlat, de la coſeraaio du
-        quel il eſt reſpomſable à Dieu par le uremens quil
-        ena fait és mains de l’Egliſe, e ſon Sacre.
-         Si quelqu’vn en doute il doit eſtre tenu peut
-        raiſtre aà ſapatrie.
-        xIV.
-         Cely a, ’ieus eſtre Morque naiauſel, aua
-         la egoine de l’Eaope peaeeſte par ee -deſſen l
-         pobb̂qement, &amp; veaa ue eour le moade le croye
-         qeil proonre &amp; rechrcbe par tomet ooyes pſfb
-        que tous les R oys, tous les Princes, aues leRal
-        pabliques deuuiennent ſés ſjess, &amp; par conſeqe
-        que tous les R yames an parſcceſfos comme ele
-        chf, que tous les Poteataes vadaux oà Sauuenains,
-         que oret Rbliques, que touees lei viles &amp;s pea
-        plas bs de l’Enaoiniuaſelleaenr quo aa
-        . lesdomaaion, apea qel anae oinat déaaes.
-        1. Quand los Roiaans ont aſſuiery lVoiaers, il
-        P 
-        en ont ainſi vſé, &amp; les Roys auſquels ils ont laiſſéle
-        nom, n’ont eſté que des petits eſtaffiers des Procõ
-        ſuls iuſques à ce qu’enfin le nõ de oy &amp; la dignité
-        ſe ſoient tout aà fait perdus; C’eſt la pratique de
-        tous les Monarques Vniuerſels; Les Eſpagnols
-        voulans la Monarchie de l’Europe propoſent de
-        falre des Roys &amp; printes’Souuerains’ comme ils
-        ont fait de ceux des ndes, des Roys de Naples, Si
-        cile; Portugal. Ils s’imaginent d’enuoyer aux plus
-        floeHſſantes Prouinces des Vice Roys, qui de tois
-        en trois ans emportent en Eſpagne les deſpoüilles
-        des Nations, auec des Eloges come celuy du Duc
-        d’Oſſonne, qui erigent é́s villes plus floriſantes
-        daaraphées qemome ceus dl Duc d’AlSesnA n
-        ueêrs: auec des isſcripeions du Comte de Fuentes
-        au Milanois, &amp; aucreaſe mblables, qui doute de
-        cectvaricé u’a pointde ſentiment &amp; rononce au
-        ſoys commu.
-        7.
-        V.
-        1
-        Tas leyſjeede lquedtes Pinces a qlqe gſtat q’ils
-        bu, ſo Raadllqu;, doient de
-         ſt, ſoi dfa
-         ſneillas aſquaia dts Efax das aaces, ſous
-        leſquels Dieu les a fais n’aitre, ils les doiuent ſeruir
-        2aſhut cotre loas x qii do adldar detuei¬ 
-        re, &amp; ſon! tenus en conſfience de deſirer que celuy
-        qui veut détruire leur Prince &amp; ſon Eſtar, &amp; s’ac
-        querirſ domination ne prmoſpere point; ains que Dieu
-        confonde la vanité de ſes deſſeins inuſtes &amp; tyran
-        niques, &amp; par conſequent doiuent tenir l’œl ouuert
-        ſut tous ceux qui truaillent dans les Eſtats par
-        quelque retexte que ce ſoit, à porter les cœurs &amp;
-        les affections des peuples, à fauorniſer en quelque ma
-        niere que ce puiſſe eſfre les deſſeins de celuy qui veut
-        nanger ſous ſon Eſtat tous les autres. Et de plus doi
-        uent eſtre plainemet ſouſmis de ce qu’il veut faire,
-        autremt c’eſt trabir ſon pays, &amp; conmertre v
-        grand ime deuant Diea qui veut que nous AI
-        MIONS LE ROY, &amp; que nous hſſions,
-        &amp; ayons’en horreur tous ceux qui le veullent riner
-        &amp; qui ſouhaittene l perte de ſon Eſtat.
-        Tout ce diſcours a vne neceſſité infaillible
-        en la verité de l’Hiſtoire 2. en la Polirique 3.
-        en la Theologie, chacune en ſon endroit.
-        EIN.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">maximes</term>
+          <term type="genre">formes gnomiques</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-10-25" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />MAXIMES
+        <lb /> T
+        <lb /> FONDAMENTALLES
+        <lb />TOVCHANT LE GOVVERNEMENT
+        <lb />&amp; les pernicieux deſſeins des Eſpagnols
+        <lb />s
+        <lb />F
+        <lb />eas
+        <lb />Chez la VefueIEAN R E MY, ruë ſainct Iacques, à
+        <lb />I’Image S. Remy, prés le College du Pleſſis.
+        <lb />AMDC XLiXx. <pb n="2" />
+        <pb n="3" />
+        <lb />o
+        <lb />A?
+        <lb />AS1
+        <lb />S
+        <lb />si
+        <lb />eeeeE3
+        <lb />MAXIMES
+        <lb />r¬
+        <lb rend="¬" break="no" />FONDAMENTALLES.
+        <lb />e e ounone en ene
+        <lb />&amp; les pernicieux deſſeins des Eſpagnols.
+        <lb />1.
+        <lb />Les Epagnols nm ceſſemt iamais de conquerir.
+        <lb /> EPVIS cent ans ils ont acquis ſous
+        <lb />SVen lue e ieei e in eoene ee
+        <lb />’j Sainteté &amp; de la Religlon, plus de
+        <lb />&amp; cent Royaumes &amp; Empires aux ln
+        <lb rend="¬" break="no" />- des dont ils ont tout à ſait eéxterminé
+        <lb />Ies Roys &amp; leur race, &amp; aſſujetty miſerablemens
+        <lb />leurs Peſples; àptes les auoiraffoiblis par des car
+        <lb rend="¬" break="no" />nages &amp;tueries incroyables ils ont acquis en Ita
+        <lb rend="¬" break="no" />e au preiudice de la libeirté d’Italie, ſur les Fra.
+        <lb />çois, qui ed eſtoient Princes legitimes &amp; naturels,
+        <lb />le Duché de Milan,le Reyaume de Naples, &amp;au
+        <lb rend="¬" break="no" />patatdnt le Royauhie-de Sieile; en Alemagneilt
+        <lb />nt iufques à preſet teu l’Empire herediraite
+        <lb /> A ij <pb n="4" />
+        <lb />&amp; font ce qu’ils peent pour efaner l’Eleion,
+        <lb />comme ils font é́s Royaumes de Hongrie, &amp; de
+        <lb />Boheme ils ont le Palatinat, lullhiers, Cambray, &amp;
+        <lb />toute la plus grande part de la ſucceſſion de Cle
+        <lb rend="¬" break="no" />ues, ils tiennent toute l’Allemagne diuiſeée. Ils ont
+        <lb />voulu auoir la France au temps de la Ligue; ils
+        <lb />auoient n’agueres oceupé tous les Griſons; ils ont
+        <lb />fait des entrepriſes ſur la ville de Straſbourg &amp;
+        <lb />autres.
+        <lb />11I.
+        <lb />ls comumencent toutes leurs conqueſtes par pratiques, &amp;
+        <lb />meneées couuertes, que leurs Mimiſtres fomt dons
+        <lb /> les Eſtats qa’ils veullent enuahir.
+        <lb />lls furent aux Indes ſous pretexte de traffie, &amp;
+        <lb />de leur porter l’Euangile; Les plaintes de tous les
+        <lb />Eſtats de l’Europe ſont ſunce ſajet toutés ſembla
+        <lb rend="¬" break="no" />bles, ainſi le diſent les ltaliens; les Allemands, les
+        <lb />Anglois &amp; les François ne s’en peuuent taire;.
+        <lb />La Reyne Eliſabeth fut recherchée de paix par
+        <lb />Philippes II. leurs Ambaſſadeurs eſtoient aſſem
+        <lb rend="¬" break="no" />blez à Bourbourg. Ce n’eſtoit que pouirl’endor¬.
+        <lb />mirafin d’opprimer l’Angleterre par l’arméequ’ils
+        <lb />appelloient(ſans auoir compté́ auec Dieu. )L’in
+        <lb rend="¬" break="no" />uincible Henry l I I. au9is pairx auec le meſne
+        <lb />PhilippesII. lon beau frere quand il forma la Li
+        <lb rend="¬" break="no" />gue en Frante qui debaucha quaſi cout l’Eſtar, &amp;
+        <lb /> faillit <pb n="5" />
+        <lb />1
+        <lb />faillit à meſme temps à ietter dans le tombeau
+        <lb />l Eſtat auec le oy d’vn meſme coup. Qui n’en lit
+        <lb />l’hiſtoire, ou qui ne la veu, aura de la peine à croi
+        <lb rend="¬" break="no" />re les artifices épouuantables dont on ſe ſeruoit
+        <lb />pour faire hair le Roy le plus aimable qui fut
+        <lb />iamais
+        <lb />1II.
+        <lb /> Ils entreprennent plus hardiment ſur les Cathol’ques
+        <lb /> que ſur les Heretiques..
+        <lb />Teſmoins en ſont l’Italie, le Portugal, &amp; la Fran
+        <lb rend="¬" break="no" />ce, iamas les Eſpagnols n’ont ſi genereuſement
+        <lb />oſté le bien des Heretiques qu’ils nous ont oſté
+        <lb />Milan &amp; Naples, &amp; en vn temps que nous faiſions
+        <lb />bruſler tous vifs les Heretiques. Charles Quint
+        <lb />rendit au Duc de Saue Heretique ſes Eſtats, &amp; ne
+        <lb />uous voulut lamais rendre le Duçhé́ de Milan...
+        <lb />IV.
+        <lb />Ils laiſſeut en repos les Mahometas, pour entrepren
+        <lb rend="¬" break="no" /> dre ſur les Eſlats de la Chreſtieté.
+        <lb /> Si ce que les Eſpagnols ont dépenſé contre la
+        <lb />France, contre l’ltalie, contre l Allemagne, &amp; coa¬ <pb n="6" />
+        <lb />re ’Angſeterre euſt eſte employé conte les
+        <lb />Tures, il y en euſt eu aſſez de la moitié pour les
+        <lb />chaſſer de l’Europe. Charles Quint rendit Tunis
+        <lb />à Muleaſſem Ture, &amp; ny luy ny les ſiens ne nous
+        <lb />ont iarmais voulu rendre la Nauarre.
+        <lb />V.
+        <lb />ls ſe ſeruent touſiours du pretexte de la Religion,
+        <lb /> ſuiuant le precepte de
+        <lb />Machiael.
+        <lb /> Ainfi aux Indes, en Allemagne, en France,aux
+        <lb />Griſons, tous les Conquerans ont eu cette ruſé;
+        <lb />anſi Philippe de Macedoine ſous prerexre de van
+        <lb rend="¬" break="no" />ger le ſacrileges aſſeruit les Grees; Alexandre le
+        <lb />Grand uouloit eſtrecreu engendré de Dieu, pour
+        <lb />pouuoir plus facilement tyranniſer les hommes;
+        <lb />Les Romains pour adouir la ſeruitude des Na
+        <lb rend="¬" break="no" />tions portoient leurs Dieux à Rome, Mahomet
+        <lb /> le Ture, le Cherife ont eu le meſme pretexte; on
+        <lb />le reconnoiſt auſſi bien à Rome qu’à ’aris, &amp; les
+        <lb />ltaliens comme les François, diſent que le maſ
+        <lb rend="¬" break="no" />que eſt leué, &amp; qu’ilya deſa long-temps qu’on
+        <lb />- oit à trauersde ce faux viſage. <pb n="7" />
+        <lb />7
+        <lb />V1.
+        <lb /> onprmnns ſr l l’lpe , unt u piiu an
+        <lb />1
+        <lb />1
+        <lb />temporel, auſi hardiment que ontre les aures
+        <lb />Prninces de ſeurope.
+        <lb />Ils publent les ndulgences en Sicile, ils diſpo
+        <lb rend="¬" break="no" />lent des excommunicatins, &amp; par deriſion ilsy
+        <lb />ont voulu celebrer le lubilé, ils ont pris beau
+        <lb rend="¬" break="no" />coup de fois des terres de l’Eſtat du Pape; leos
+        <lb />pris Rome &amp; l’ont piĺe, ué len Cardioau
+        <lb />Hanconné le Pape. Vn Seeretaire de la Maiſon
+        <lb />’Auſtricheen la gonealogie de leurMaifon, im
+        <lb rend="¬" break="no" />primee auee Eloge &amp;epriuutge de l’Empereur
+        <lb rend="¬" break="no" />doiphell. dit que Rodolphe d’Aſboug premies
+        <lb />Empereur, fat ecomnunie pout auoit fait la
+        <lb />gnere pux Eelefiaſtiqus, y que l’Euaſque d
+        <lb />ale elehanmt quil eaaole efé eleoupiqu opa
+        <lb />eur, leuant les oaims au Giel s’eeria; O Chbiſle ſfi
+        <lb rend="¬" break="no" />mirer ue iu ſe dlelituo icomfe a te conmes deturb. C
+        <lb />on E uoſue auoit peur pre teie Maiſon tiraſt
+        <lb />eſs- Chi. hs de oihroſneeelar peſone
+        <lb rend="¬" break="no" />de ſonLaianutenant, eſtoit vnsiPnphétle de l’ad
+        <lb rend="¬" break="no" />ear, ils onrinuent en leia ambiticux deſſai.
+        <lb />ile mcràmdeoad Ia imoteé o dd ſonir d’lalie,
+        <lb />3 <pb n="8" />
+        <lb />8
+        <lb />pour n’eſtre pas aſſujettie à leur brigues, pratiques
+        <lb />&amp; menées qui pourroient diminuer la liberté, &amp;
+        <lb />qui pourroient la rendre ſuſpecte aux autres
+        <lb />Princes de l’Europe, ou bien de s’vnir auee tous
+        <lb />ſes autres enfans, pour ranger ce dernier venu qui
+        <lb />veut s’approprier le partage de ſes freres, &amp; oppri
+        <lb rend="¬" break="no" /> mer ſa mere.
+        <lb />.V11.
+        <lb />Ilomt les mpeſmes mau e leue ouuraement, &amp; beu
+        <lb rend="¬" break="no" /> coup plus grands que les autres Eſtats.
+        <lb />12.
+        <lb /> Lers gouuernenes ſonx: trien naux à la fonule
+        <lb />des Sujets, qui de trols en trbis ansi ſont deuoré́s
+        <lb />par ceux qui viennent de nouueau conme des
+        <lb />miouches maigres; Las charges ſont venalles e
+        <lb rend="¬" break="no" />tuc eux oucn les acquierr parldes priſons quicoû̂
+        <lb rend="¬" break="no" />ontbien pluache qu la taxe &amp; l’annuel, ilsont
+        <lb />toutes ſortes d’impoſitions, d’aecez, ſubcides iuſ
+        <lb rend="¬" break="no" />ques a en auoir pour mangorde la chair aux iours
+        <lb />defendus; ils font payor lacentieſme, la vingtieſ
+        <lb rend="¬" break="no" />medu fonds en quelqes Prouinces; Sicile Na
+        <lb rend="¬" break="no" />ples, &amp; Milan ctient pour cela iuſques au Ciel,
+        <lb />Leurs ſoldats logent àdifcretion, &amp; on vſentpous
+        <lb />les femmes &amp; les fillex comme l’hiſtoire le témoi
+        <lb rend="¬" break="no" />gne, <pb n="9" />
+        <lb />9e
+        <lb />gne, &amp; la veriteé le publie dans les plaintes des lta
+        <lb rend="¬" break="no" />liens.. Ceux qui rairtent le plsmiad los Peu ples:
+        <lb />ſont les mieux recompenſez entre eux, ils doi
+        <lb rend="¬" break="no" />uent plus qu’ils ne payeront de vingrs années,
+        <lb />leurs ſoldas font les meſoca mausiqe ceu des
+        <lb />autres Nauions, &amp; s’ils ne ſont paslmieux payez.
+        <lb />Les jalouſies enre eux ſont prodigieuſescone
+        <lb />les Eſtrangers qui les ſeruent, tefmoim le Prince
+        <lb />de PRarme, Qo, &amp; aquuros quie ſont enoores nvie,l
+        <lb />leurs Algazilane ſone pas plusmdrtois qe fs!
+        <lb />Sergens.
+        <lb /> E2l
+        <lb />i
+        <lb />Qund i fent du ien a queljues vap lau les, Cle
+        <lb />e n’t ps pat imouir qu’ils leoimpotenee gpr e
+        <lb />l’ſe ſeuit d’eux comns des raſtrese
+        <lb />..,8
+        <lb />̀ pedre l’ſat.
+        <lb />
+        <lb rend="¬" break="no" /> Les preuues de ceſa ſont inuhicble, e le
+        <lb />ſens bonnun en eſt un petpeuuel eonmmonaa
+        <lb rend="¬" break="no" />IX.
+        <lb /> L’humeur des Eſpaguols et inſûppotable, ̀ etoues le
+        <lb /> Natious da l’Eape.
+        <lb /> L’Aheur du peſeh-diſdous dit loy-meſme <pb n="10" />
+        <lb />10.
+        <lb />qu’il les lrait a’oauſe dé P’orgueil; fls frrépriſent
+        <lb />toudolesautie Peaples , con he ſi ce n’eftoiehr que
+        <lb />des Mores de Goinée, ou des eſefaues d’Angola,
+        <lb />le Conneſtable deaſtille deandoit en la ran
+        <lb rend="¬" break="no" />che Cormueſle Connetable de France eſtit ga
+        <lb rend="¬" break="no" />land hommerar portleur diſcours, &amp; leurs vr
+        <lb rend="¬" break="no" />ſagcs ſon des pieuues vluantes dé’la theze, fir!
+        <lb />tout dans Natples, Mlan, &amp; neſmiels ’onr iandais
+        <lb />voulu uffoique leus Suieésfſſſeér ſous nos!
+        <lb />Eueſgoçs, &amp; ltimar f’tcois ati’ays-bas, &amp;
+        <lb />fallu que le Pape ait fléchy ſous leur orgue, pout
+        <lb rend="¬" break="no" />faire de nouueaux Eueſthez’à leur fantaiſie. Il ſe
+        <lb rend="¬" break="no" />roit à deſirer pour l’inſtruction do ceux qui en
+        <lb />dobstear;’ qu’is fifſent d̈raht quelues années
+        <lb />leur apprentiſſage des ſuiettions ſous vn Vice
+        <lb />Roy, pour voit ce qu’ils nous diroient à̀ leur retour
+        <lb />de nos Gouuerneurs de Preuinces. I’en appelle
+        <lb />à teſmoin encores les bons Religieux des Ordres
+        <lb />noluieau qfbtt’elprbulé des Su périeurs ſpa
+        <lb />grol; ſi fcauenitbieu c que ie veux direé.
+        <lb />8
+        <lb />X.!
+        <lb />Qdandls donent di ſecours à’quelques Peuples n
+        <lb />leurs neceſſite, ’eft à ’deſſeini de les opprnmer.
+        <lb />, Pagee aoyéns Riomains ſe endirene Mai. <pb n="11" />
+        <lb /> it.
+        <lb />ſtres de tout le moh de du remps de la Liguc, le?
+        <lb />Eſpgnols aydoient vne partie de l’Eſtat pour lé
+        <lb />pouuoir opprimier tour, &amp; l’aſſuiettir entierement
+        <lb />En ltalie ils font du bien en détail, pour l’acque
+        <lb rend="¬" break="no" />rir tout en gros, ils ont aydé les rebelles Valtelns
+        <lb />pour auoir l’Eſtat des Griſons, ils ſont apres pour
+        <lb />en faire le meſme du coſteé de l’Allemagne.
+        <lb />x1.
+        <lb />Quand ils ont paix, &amp; aliance auec quelques-vns c’et
+        <lb /> pur puomir q drſr des ntelomes
+        <lb />dad leurs Efh.
+        <lb />2
+        <lb />EA.
+        <lb /> Pnlippe I. beau frére de Heniy ’t ’eſee
+        <lb />&amp; forma la Ligue en Frante, &amp; y employa beau
+        <lb rend="¬" break="no" />coup le temps car ledr beſonge Sa lentemdent!
+        <lb />Has ſe-eflemlne oſioursi La plainte des vVe
+        <lb rend="¬" break="no" />Hties eſtpubque des entteptfes faites’ſur leut
+        <lb />Viſle en pline paix, la coiqeſte du Portugalſe?
+        <lb />lſe de meſmé, terdiand’nous promit dé nous,
+        <lb />laſet ’prendre Ndples pot uoir le Coniré de,
+        <lb />ouſfllr lil’vdſut’ s ares paſeager Napes,
+        <lb />aéeboul, da chairgé de hbioite le eout com
+        <lb />He ; &amp;ſieoit l Nepies de Louysx &amp;
+        <lb />mestoi-il vn genouil à tee deaiiy aSuione! <pb n="12" />
+        <lb />
+        <lb />n, il oſta la Nauarre à ſa propre Niepce; s’ils ne
+        <lb />Ie fſſenlt’pas ſers du pietexte de l’allince &amp; du
+        <lb />mriage d’Angleterre, ils n’euſſeni pas pris ſi fa
+        <lb rend="¬" break="no" />ciement le l’alatinat.
+        <lb />X11!
+        <lb />i
+        <lb />.
+        <lb />Il t le deſſein de deeuir Moarques de tous
+        <lb /> le monde.
+        <lb />.?
+        <lb />Ils le dſent eux-meſme, &amp; nes’y feignent pas;
+        <lb />Ceux qui les flattent parlént d’eüx comme d’vne
+        <lb />Mnar hi aqiſſante aux lndes, ils-diſoient le Roy
+        <lb />d’Eſpagne eſt Empereur de tout le monde, &amp;con
+        <lb rend="¬" break="no" />meils le Viſenchàchn los en croit, les lialien,,
+        <lb />lés Allemada, ley Agſois &amp; les rancois ’en,
+        <lb />ſonnplaits depjſs Cnirles Quine; ce n’eſt pas,
+        <lb />vie polainte egere: mais vno publique profeſſion
+        <lb />que ces Eſpagnols font aur yeux meſme de ſla
+        <lb />Sainctete &amp; de routés les Nations, de la terme, j
+        <lb />Ceſt vns eropanee quots ous lee Peuiples dp
+        <lb rend="¬" break="no" />l’Furope qpui ne peut eſtro mal fondee, puis que
+        <lb rend="¬" break="no" />le Epagols pnt tous lés ioura out ce, quis
+        <lb />peuuengpoury,aui.
+        <lb /> I eL.
+        <lb /> xiir <pb n="13" />
+        <lb />3.
+        <lb />X1I1.
+        <lb /> haque Prnce lreſfien eſtoblgé en Dieu &amp; eonſeien
+        <lb rend="¬" break="no" /> e, ſurpeine de peché mortel de ’oppoſer à toaut ceux
+        <lb /> quui veulent détruire ſon Eſlat, de la coſeraaio du
+        <lb rend="¬" break="no" />quel il eſt reſpomſable à Dieu par le uremens quil
+        <lb />ena fait és mains de l’Egliſe, e ſon Sacre.
+        <lb /> Si quelqu’vn en doute il doit eſtre tenu peut
+        <lb />raiſtre aà ſapatrie.
+        <lb />xIV.
+        <lb /> Cely a, ’ieus eſtre Morque naiauſel, aua
+        <lb /> la egoine de l’Eaope peaeeſte par ee -deſſen l
+        <lb /> pobb̂qement, &amp; veaa ue eour le moade le croye
+        <lb /> qeil proonre &amp; rechrcbe par tomet ooyes pſfb
+        <lb />que tous les R oys, tous les Princes, aues leRal
+        <lb />pabliques deuuiennent ſés ſjess, &amp; par conſeqe
+        <lb />que tous les R yames an parſcceſfos comme ele
+        <lb rend="¬" break="no" />chf, que tous les Poteataes vadaux oà Sauuenains,
+        <lb /> que oret Rbliques, que touees lei viles &amp;s pea
+        <lb rend="¬" break="no" />plas bs de l’Enaoiniuaſelleaenr quo aa
+        <lb />. lesdomaaion, apea qel anae oinat déaaes.
+        <lb />1. Quand los Roiaans ont aſſuiery lVoiaers, il
+        <lb />P <pb n="14" />
+        <lb />en ont ainſi vſé, &amp; les Roys auſquels ils ont laiſſéle
+        <lb />nom, n’ont eſté que des petits eſtaffiers des Procõ
+        <lb rend="¬" break="no" />ſuls iuſques à ce qu’enfin le nõ de oy &amp; la dignité
+        <lb />ſe ſoient tout aà fait perdus; C’eſt la pratique de
+        <lb />tous les Monarques Vniuerſels; Les Eſpagnols
+        <lb />voulans la Monarchie de l’Europe propoſent de
+        <lb />falre des Roys &amp; printes’Souuerains’ comme ils
+        <lb />ont fait de ceux des ndes, des Roys de Naples, Si
+        <lb rend="¬" break="no" />cile; Portugal. Ils s’imaginent d’enuoyer aux plus
+        <lb />floeHſſantes Prouinces des Vice Roys, qui de tois
+        <lb />en trois ans emportent en Eſpagne les deſpoüilles
+        <lb />des Nations, auec des Eloges come celuy du Duc
+        <lb />d’Oſſonne, qui erigent é́s villes plus floriſantes
+        <lb />daaraphées qemome ceus dl Duc d’AlSesnA n
+        <lb />ueêrs: auec des isſcripeions du Comte de Fuentes
+        <lb />au Milanois, &amp; aucreaſe mblables, qui doute de
+        <lb />cectvaricé u’a pointde ſentiment &amp; rononce au
+        <lb />ſoys commu.
+        <lb />7.
+        <lb />V.
+        <lb />1
+        <lb />Tas leyſjeede lquedtes Pinces a qlqe gſtat q’ils
+        <lb />bu, ſo Raadllqu;, doient de
+        <lb rend="¬" break="no" /> ſt, ſoi dfa
+        <lb /> ſneillas aſquaia dts Efax das aaces, ſous
+        <lb />leſquels Dieu les a fais n’aitre, ils les doiuent ſeruir
+        <lb />2aſhut cotre loas x qii do adldar detuei¬ <pb n="15" />
+        <lb />re, &amp; ſon! tenus en conſfience de deſirer que celuy
+        <lb />qui veut détruire leur Prince &amp; ſon Eſtar, &amp; s’ac
+        <lb rend="¬" break="no" />querirſ domination ne prmoſpere point; ains que Dieu
+        <lb />confonde la vanité de ſes deſſeins inuſtes &amp; tyran
+        <lb rend="¬" break="no" />niques, &amp; par conſequent doiuent tenir l’œl ouuert
+        <lb />ſut tous ceux qui truaillent dans les Eſtats par
+        <lb />quelque retexte que ce ſoit, à porter les cœurs &amp;
+        <lb />les affections des peuples, à fauorniſer en quelque ma
+        <lb rend="¬" break="no" />niere que ce puiſſe eſfre les deſſeins de celuy qui veut
+        <lb />nanger ſous ſon Eſtat tous les autres. Et de plus doi
+        <lb rend="¬" break="no" />uent eſtre plainemet ſouſmis de ce qu’il veut faire,
+        <lb />autremt c’eſt trabir ſon pays, &amp; conmertre v
+        <lb />grand ime deuant Diea qui veut que nous AI
+        <lb rend="¬" break="no" />MIONS LE ROY, &amp; que nous hſſions,
+        <lb />&amp; ayons’en horreur tous ceux qui le veullent riner
+        <lb />&amp; qui ſouhaittene l perte de ſon Eſtat.
+        <lb />Tout ce diſcours a vne neceſſité infaillible
+        <lb />en la verité de l’Hiſtoire 2. en la Polirique 3.
+        <lb />en la Theologie, chacune en ſon endroit.
+        <lb />EIN. </p>
+    </body>
+  </text>
 </TEI>

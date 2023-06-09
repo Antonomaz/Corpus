@@ -1,1144 +1,624 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau734_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Conduite du cardinal Mazarin depuis son retour en France,
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Conduite du cardinal Mazarin depuis son retour en France,
           adressée aux compagnies souveraines, Maison de Ville et bons bourgeois de Paris.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=8ndKAAAAcAAJ"/>
-					<author/>
-					<title source="Moreau">Conduite du cardinal Mazarin depuis son retour en France, adressée
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=8ndKAAAAcAAJ" />
+          <author />
+          <title source="Moreau">Conduite du cardinal Mazarin depuis son retour en France, adressée
             aux compagnies souveraines, Maison de Ville et bons bourgeois de Paris.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher ref="isni:0000000359773502" xml:id="IL_GuillemotVeuvedeJean.xml">
-						<persName>
-							<forename>Veuve de Jean</forename>
-							<surname>Guillemot</surname>
-						</persName>
-					</publisher>
-					<date source="Moreau" when="1652">1652</date>
-					<extent>
-						<measure quantity="15" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2761369">Vienne</settlement>
-						<institution>Bibliothèque nationale d'Autriche</institution>
-						<repository/>
-						<idno type="cote">127203-B</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>False</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher ref="isni:0000000359773502" xml:id="IL_GuillemotVeuvedeJean.xml">
+            <persName>
+              <forename>Veuve de Jean</forename>
+              <surname>Guillemot</surname>
+            </persName>
+          </publisher>
+          <date source="Moreau" when="1652">1652</date>
+          <extent>
+            <measure quantity="15" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2761369">Vienne</settlement>
+            <institution>Bibliothèque nationale d'Autriche</institution>
+            <repository />
+            <idno type="cote">127203-B</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>False</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">734. Conduite du cardinal Mazarin depuis son retour en France, adressée
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">734. Conduite du cardinal Mazarin depuis son retour en France, adressée
           aux compagnies souveraines, Maison de Ville et bons bourgeois de Paris. Paris, veuve Jean
           Guillemot , 1652, 15 pages. Après le combat de la porte Saint-Antoine. Le pamphlet se
           termine sur la 14° page. La 15° ne contient que le privilége accordé à la veuve J.
           Guillemot par le duc d’Orléans.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_88" source="Moreau">
-					<p>Incendie de l’Hôtel de Ville</p>
-					<date when="1652-07-04">1652-07-04</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-03-23" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<pb n="12"/>
-				<pb n="13"/>
-				<pb n="14"/>
-				<pb n="15"/>
-				<pb n="16"/>
-				<pb n="17"/>
-				<pb n="18"/>
-				<pb n="19"/>
-				<pb n="20"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<figure type="decoration"/>
-				<imprimatur>
-					<lb/>
-					<lb/>
-					<lb/>
-					<lb rend="¬" break="no"/>
-					<lb/>
-					<lb rend="¬" break="no"/>
-					<lb/>
-					<lb/>
-					<lb/>
-					<lb/>
-					<lb/>
-					<lb rend="¬" break="no"/>
-					<lb/>
-					<lb/>
-					<lb/>
-					<lb rend="¬" break="no"/>
-					<lb/>
-					<lb/>
-					<lb rend="¬" break="no"/>
-					<lb rend="¬" break="no"/>
-					<lb/>
-					<lb/>
-					<lb/>
-					<lb rend="¬" break="no"/>
-					<lb/>
-					<lb/>
-					<lb/>
-					<lb/>
-DE PAR SON ALTESSE
-          Royalle.
-          Vio v R ’ v y deuxiéme du mois de Dece
-          bre 1yr. Monſejgneur Fils de France, Oncle du
-          Roy, Duc d’orleans, eſant a Paris, voulant fauoar
-          blement traiter la Vefue I. GVILLE OT apres auoir
-          eſté particulierement informé de ſa capacité, &amp; des
-          ſoins qu’elle prend da faire fidellement &amp; correctement
-          imprimer les Pieces, Ouurages &amp; Relations qui luy
-          ſont enuoyé́es pour ſon ſeruice. Son Alteſſe Royalle
-           luy a permis de porter la qualité de ſon Imprimeuſe or
-          dinaire. Veut &amp; ordonnae qu’elle ſoit employée dans les
-          Eſtats des Officiers de ſa Maiſon, &amp; qu’elle jouiſſe des
-          Honneurs, Priuileges, Franchiſes, Libertez &amp; Droirs
-           que ſes autres Domeſtiques. Faiſant Son Alteſſe Royal
-          le defenſes à tous Imprimeurs &amp; autres, d’imprimer ou
-          contrefaire, &amp; mettre au jour ſous quelque prerexte que
-          ce puiſſe eſtre, les Relations, Pieces &amp; autres Ouura
-           ges d’Imprimerie, qu’elle fait ou pourra faire à l’adue
-          nir pour le ſeruice &amp; par l’ordre de Son Alteſſe Royalle,
-          qui a pour témoignage de cette ſienne volonté ſigné
-          le preſent Breuet, &amp; commandé eſtre contreſigné par.
-           moy ſon Conſeiller &amp; Secretaire de ſes Commande
-          mens, Maiſon &amp; Finances.
-          GASTON.
-          Signé,
-          Et plus bas,
-          DE FROMONT.				</imprimatur>
-CONDVITE
-        DV
-        CARDINAL MAZARIN,
-        depuis ſon retour en France,
-        ADRESSE AVX COMPAGNIES
-        Souueraines, Maiſon de Ville, &amp; bons
-        Bourgeois de Paris. 
-        A PARIS,
-        De l'Imprimerie de la Veufue I. GVILLEMOT, Imprimeuſe
-        ord. de ſon Alt. Royale, ruë des Marmouzets, proche
-        l’Egliſe de la Magdeleine.
-        M. DC. LII. 
-        
-        3
-        CONDVITE DV
-        Cardinal Mazarin, depuis ſon
-        retour en rance,
-        Adreſſée aux Compagnies S’ouueraines, Maiſon
-        de Ville, &amp; bons Bourgeous de Paris.
-        SANs exorde &amp; ſans mouuemens, ſuiuant la
-        forme de l’Areopage, laiſſons les figures, &amp;
-        les amplificarions de Rhetorique à pluſieurs
-        Eſcriuains, bons &amp; mauuais, qui rempliſſent
-        le monde de liures: Expoſons naifuement
-        a je faicts dans vne affaire de la premiere im
-        portance, puis qu’il s’agit du ſalut du Roy, du Sang Royal
-        &amp; de la Royaute; par conſequent de celuy de rous les par
-        ticuliers, qui ne ſeroient pas ſages s’ils croyoient que leurs
-        perſonnes, familles &amp; biens ſe peuuent ſauuer, ſi le public
-        vient à perir; pour faire voir qu’il eſt dans ce danger, les
-        Compagnies ſouueraines, la Maiſon de Ville, &amp; Ies bons
-        Bourgeois de Paris ſont ſuppliez de faire reflexion ſur l’e
-        ſtat, auquel le Cardinal Mazarin a reduit les affires de la
-        France depuis qu’il y eſt retourń, ſans mettre en conſide
-        ration ce qu’il auoit fait deuant ſon depart, &amp; qui auoit
-        donné lieu aux Declarations &amp; Arreſts qui l’auoient
-        banny.
-        Conuaincons-le premierement de pariure &amp; perfidie, par
-        les letrres ſigńes de ſa main, enuoýes &amp; publiées par luy
-        lors qu’il eſtoit ſur le point de r’entrer en France. 
-        4
-        Daus la Leetre addreſſee a Foy.
-        Ie ne me veux point ingerer aà l’aduenir en aucune façon
-        dans le maniment des affaires: ce pomt, en cas que voſtre
-        Ma jeſt́ aye aſſez bonne opinion de moy pour me l’ordon
-        ner, eſtant le ſeul qui pourroit me rendre coupable d’vne
-        deſobeiſſance enuers voſtre Majeſté.
-        as la Lettre à la Reye.
-        Ie prends la liberteé de demander vneautre grace au Roy;
-        qui eſt d’auoir la bonté de me diſpenſer d’auoir aucune
-        part dans le maniment des affaires;, quand ſa Majeſte au
-        roit aſſez bonne opinion de ma ſuffiſance, &amp; la protection
-        de voſtre Majeſte aupres du Roy (en cas que cetrepreuê
-        tion d’vne choſe à laquelle peut-eſtre ſa Majeſteé ne ſonge
-        pas, ne ſoit point trop preſomptueuſe) pour empeſcher que
-        ie ne ſois pas expos é à̀ commettre vne deſobeïſſance, com
-         me il arriueroit infailliblement, ſion auoit la moindre pen
-        sé́e de me faire cét honneur.
-         Ainſi cet homme pretendoit d’endormir ceux qui s’op
-        poſoient à ſon rerour, ou de piper les peuples, qui pour
-        auoir la paix luy euſſent volontiers accorde le contente
-        ment de pouuoir eſtre dans- la Cour pour la ſatisfaction
-        partieuliere de la Reyne, pourueu qu’il s’abſtint de la con
-        duite des affaires, qu’il renonçaſt à l’entrée dans les Con
-        ſeils, ne ſe meſlaſt point de faire changer ce qui auroit eſté
-        reſolu, &amp; obeït aà la Declaration du Roy, qui exclut les
-        Cardinaux du Miniſtere.
-        Pour faire voir que les proteſtations du Cardinal Ma
-        zarin n’eſtoient que des fourberies, dés le premier iour de
-        ſon reſtabliſſement dans la Cour, il reprit ſa place &amp; ſa
-        qualité nouuelle en France de premier Miniſtre: voulut
-        tout ſeul definir routes choſes; renuerſa les reſolutions pri
-        les, conduiſit la Cour là où il luy plû̂t; diſpoſa des Armé́es
-        &amp; des Finances; preſida aux deſpeſches, ou pluſtoſt les di
-        ta; euoqua tout à̀ ſa connoiſſance, diſtribua les Benefices,
-        les Dignitez, les Charges, les Offices &amp; les employs, non
-        ſeulement agiſſant, mais parlant en Souuerain: diſant, le
-        vos 
-        5j
-        oous donne le vous aeorde ee que vous voulez l’y tpé
-        L ’luuununy qus et pudt l ndlru
-        u ou dpuſedue lſe aiedauntde ſaure pnouſdre eier
-        SC aeee’qu neile vouloieat pout pour Conſieles.
-        il eltoit Roy de France.
-        leeo’oe toue es proedarnſoen de noce pu
-        buqe, uonreole Anoe Naon, &amp; ſuſnianes ou E
-        anreune de noune us ſe rdiouais idioan nnu oue laiſle
-        onou ſioporme ures peoues de l puaſane eſe:
-        e un i dlepuis lonreroon nrede, ou lelenene dun
-         Cunt ni duns les plu inpouuues aaien rungte.
-        eu au pund preiadie de la Pooe, ious nemro loion
-        es ulue oursores ceeain e eopble dienouuir la luſe
-        eniement, danimuer le coauge de le oblee,
-        eet le peuples ̀ ſeeonder les bonoes nentionsde
-        Monſeigneur le Duc d’Orleans.
-        re perenier ileu, nou poſons d ſalt veiable, que
-        court etant biois le Caiedina Maarin enuoya qvuit
-        ’noaadeur de pontugl, aee tous les apoliuins
-        oi eſointApurl eur ſt dooner de larenrt pou pe
-        lFuis qples it pout ſaire le oape ue l drpbaſladeue
-        uores ue loooe conſaneneeoeele Cardnul laaapn e
-        aſposet paur las en aler pompement aues lele
-        itin eouuert le oy de oreugal, pour luy apporerle¬s
-        articles ſuiuans.
-        o e i ouloit eouoer on meenae &amp;e la oide
-        an aiſſeaux Francois qui ſe trouuoient ſur lMeditemae
-        nee, aux aures que la France oquiperoe en toute dilie
-        eues pour alier appuyet vme nooueile emolte dans le
-        oyame de Naples, que le R oy de Porugaleneveurois
-        tous les aduantages: Quie la conqueſte de cere Couroon
-        roit ponr l, a Hranee ne ſe eterua queceains fee,
-        deſquls elle pourroit diſpoſer, qui ſont eux que le Car
-        dimal Mazarin a enuie de mattre dans ſa maiſon
-        ’oue n ene rerorl perpene lgue orenfiuae d
-        fen ſae aueclePortugal.
-        B 
-        é6
-        3 Que la Freaee ’obllgenoit à ae faire amais pairz auee
-        ’Eſpagne, que les Royaumes de Porcugal &amp; de Naples ne
-        demeuraſſenr au Roy de Portgal &amp; à ſes heritiers..
-        4. Que le Pape ſeroite forcé par corce puiſſante armeé́e n
-        uale, &amp; par les Cardinaux &amp; Princes d’Iralie qui ſont de la
-        faction de France, à reeognoiſtre le Roy de Portugal, &amp;
-        à confiraer les Nomiuations aux Eueſchez &amp; autres Be4
-        nefices.
-        5. Que les Candinas Barberins, leurs amis &amp; Princes al.
-        liez de la Franee fanoribesoient de leurs conleils &amp; de tou
-        te leur puiſſanee l’entrepriſe de Naples.
-        6. Qu’en conſideration de cette ligue etermaelle enere la
-        France &amp; le Portugal, &amp; pour maitenir la bonse correſ
-        pondance, noſtre R y eſpouſeroit l’lnfaute de Portugal;
-         dequoyla. Ryne doonoit prefentenment ſa parole, ayanb
-        promis de ſa bouche qu’elle feroit valloir tous ces articles,
-        &amp; principalement le dennier,
-         Ens ſuire de cela l’Ambaſſadeur partitr en diligence auec
-        le Pere Criuelly Carme, autres Napolirains, emporta
-        les articles ſignez, receut de l’argent pour deffrayer toute
-        la ſuitre, &amp; parce qu’il laiſſoir des debtes à̀ Paris, on luy
-        donna des Lettres d’Eſtat, qui portent deffenſes de faire
-        vendre ſes meubles iuſques à ſonretour.
-        On a aduis depuis peu de iours que les articles ont eſté́
-        ſignez par le Roy de Portugal, &amp; qu’en ſuitre la ligue
-        offenſuie &amp; deffenfiue entre la France &amp; le Portugal con
-        re l’Eſpagne, a eſté publié́e aà Lisbonne. Que la nouuelle
-        eſtant arriuée à Madrid, a fait reſoudre le Conſeil d’Eſpa
-         gme a rechercher vne nouuelle ligue contre la France auee,
-        les Anglois, &amp; meſenes à taſcher d’y engager par ceux cy!
-        les Hollandois, lors qu’ils ſeroat d’accord, ce qui eſt bien
-        aduancé. Surquoy tous les bons &amp; ſages François feront
-        s’it leur plaiſt, les reflexions ſuiuantes.
-        1. Que le feu Roy, conſeillé par le Cardinal de Richelieu,
-        paincipal promoteur du ſouſleuement de Portugal, pour
-        ne rendre point les choſes irreconciliables, &amp; e bannir! 
-        poioelà paiipor iais,’ee peue faiee l Casdisat Ms
-        aal ; voalue ppjpcoil ligue ofenlus&amp; def
-        fenſiue, demandeées inſtamment par les Portgais: Qe
-        Rent dorane a Begese, qualesa ppurſoitas qu’ayen
-        pâ faire les Portugais en l’aſemble de Manſter, a tos
-        jours reiſté à cett deandee Sa Majeſtéagant eſlé porués
-        à ce refus, par les coſçils de Moaſeigneur le uc d’o!
-        leans, ſocode par coux de feu Mafieur le Prinçe 5qui
-        eonmme ſages politiques, preogyoit que ces artileac2
-        cordé jeteroit l’Eſpagae das e inadignation, qui ſeroait
-        ſuiuie de la rupeure de l’aſſonble; quand &amp; quand d
-        deſeſpoir de la paix que le Cardnal Mazarin uut banni
-        pour iamais, &amp; en ſuice perpeseros miſes:.
-        a Ou iuge; ſſi par cett proedure du Cardinal, qu’i
-        ſe moque de nous, lors qu’il nous veut perſuader dans ſe
-        letres, que les Eſpagnols ffrent de raiter la paix auee
-         luy.
-         Que le Caedinal Mazri, qui veut eſtreemployépous
-        la conelure, ſe ead iaaable de cece comrmiffioa.. A
-        quaoy nous pouuons dioeter ce que ous çauons centai
-        nement, que iamais les Eſpaguols ne feraot, ay n’lcou
-        teront aucune propoſlon;, que le Cardinal Mazari
-        ne ſoit, ou hois de credit en France, ou eloigné de la
-        France.
-        4. Qu’auſſi tot que ce bon-heurs naus ſera arriueé, nous
-        aurons la paix, &amp; que les Eſpagnols, qui la deſirent, la trai
-        teront auec des perſonnes ſiuceres en leurs paroles, &amp; ſa
-        ges en leut conduite: mais qu’il eſt fort à craindre ſi ce biea
-        S’eſloigne; c’eſt à dire, ſi nous gardons encore quelque
-        uemps le Cardinal Mazarin; que la concluſion ne ſoit pas
-         aduantageuſe pour la France, comme elle auroit eſté́ il y a
-        hait ans, ſi nous n’euſſions point eu, ou ceu le Cardinal
-         Mazarin, qui pour ſe naintenir enauthorité́ a aainenula
-        guerre.
-        ;..Que la paix ant neceſſaire, ne pauanr iamais eſtre
-        auec la ligue offnfiue deffenſiue, qu le dinal Ma¬ 
-        arin viet de faire, ſeul de ſa teſte, &amp; pir aurhorit́ ſoooe
-        raine, il oblige la France à la rompre, &amp; enſuite àdeſobli
-        ger le Portugal.
-        6. Que l’enrrepriſe, quoy que preſumée chnerique, d’at.
-        taquer de nouueau le Royaume de Naples, ayant eſté de
-        clarée aux Princes d’Italie, qui ne veulent point de trou
-        ble, les irrite contre nous; &amp; a empeſché iuſques à preſens
-        ceux qui aſſiſtoient les Venitiens d’eauoyer leurs Galeres,
-        &amp; de permettre les lesées de gens de guerre, chaeun les
-        voulaut garde pour ſa ſeurete..
-        . Nous voyons auſſi l’inſolence du Cardinal Mazarin,
-        qui diſpoſe tout ſeul du Mariage de noſtre Roy, plus ab
-        ſolument que ne feroit vn pere de ſon fils, ou vn toteur d
-        ſon pupil, qui communiquertoit leur deſſein, au moins pax
-        bien-ſeance, aux plus proches parens.
-        8. Par ce traiteé le Cardinal Mazarin ne s’oublie pas; vou
-        lant retenir pour luy &amp; pour les ſiens les principaux fiefs
-        du Royauime de Naples. On peut prouuer auſſi qu’il a of
-        fart autrefois la conqueſte de ce meſme Royaume à̀ Mond
-        ſieur le Prince, à condition qu’il conſentiroit, que le
-        Royaume de Sieile demeureroit à la maiſon Mazrine
-        dequoy vn homme d’honneur &amp; de condirion a les preuues
-        par eſcrit. Ainſi lesfolies, les inrereſts du Cardual Maza
-        rin ſe ioent de la reputarion, du repos, &amp; des biens de la
-        Frace. Veons aux autres erimes d’Eſtar, qu’il a commis
-        depuis ſon rerour.
-        L Nous auons ſceu la belle entrepriſe qu’il a faite pous
-        auoir Briſac, qui eſt l’vne des plus fortes places de l’Euro
-        pe, &amp; la plus importante conqueſte de la France. Le Car
-        dinal azarin pour s’aſſeurer de certe retraire, s’eſt ſeruy
-        d’vne Dame, laquelle par tromperie ſe ſaiſit du Gouuer
-        neur: peſane apees cea gager la garniſoh, en reſpan
-        dans quel ques piſtoles, que cette Dame iettoit de ſa main,
-        ſans que ceux qui les ramaſſoient en ſe moquant d’elle,
-        ayent perdu l’affecmoa qu’ils ont pour leur chef, quia trou.
-        u’uentideſe ettre en liberré́, &amp; de rentrer daesl
-        .
-        place 
-        9
-        plaee fait auee le Comte de Hatceot, que lo Cardial
-        azarin a voulu faire arreſter. ais il ne ſe ſoucie pas de
-        perdre ce chef de ſon party, &amp; de hazarder Brifſac, qu’v
-        deſeſpoir peut faire tomber entre les mains des ennemis de
-        la France, apres qu’elle a employé́ des ſonmmes immenſes
-        pour l’acquenir, &amp; pou le conſeruer.
-        . Il a reduit Barcelonne à l’eſtat où elle eſt, c’eſt à dire
-        en grand danger auee la Caralogne, &amp; le Rouſſillon, qui
-        couſtent à la France pluas de ſoixante millions, &amp; la
-        vie de quarante ou de cinquante mille hommes, &amp; ce qui
-        eſt plus deplorable, la reputation du Roy &amp; de la France
-        n’et comptée pour rien par la folie de celuy qui a aban
-        donné vn Mareſchal de France qu’il a aurrefois mal traitté:
-        ne luy enuoyant,ny hommes, ny argent, ny viures, ny mu
-        nitions: appliquant toutes les forces &amp; fiances du Roy à
-        Ja deffence de ſa fortune, qu’il veut nmaaintenir contre les
-        oppoſitions legitimes des Princes du Sang Royal, contre
-        les iuſtes Arreſts des Parlemens, &amp; contre l’auerfion gene
-        lIe de tous les peuples. Il eſt encore ſi remeraire qu’il oſe
-        aceuſer de routes les pertes que fait la France, ceux qui
-        pour l’vnir veulent chaſſer vn eſtranger qui la diuiſe, &amp;
-        nous veut fairecroire que les enfans de la maiſon doiuent
-        ou la quitter ou ſouffrir la priſon, ou reconnoiſtre ſon Em.
-        pire &amp; dependre de luy ;auquel cas il leur donnera toute
-        la France piece à piece.
-        s. Nous n’imputerons qu’à luy ſeul la perte de Grauelines,
-        e’eſt à̀ dre de noſtre meilleure conqueſte dans les- Pays
-        bas, &amp; que nous deuions la genereuſe reſolution &amp; ſage
-        aonduire de ſon Alteſſe Royale;, cetre porte pour entrer
-        dans la Flandre; ce fort rempart qui couuroit Dunquer
-        que, a eſté emporte auec fi peu de peine &amp; à ſt petits fcais
-        de la part des enpenmis; quae nous aurions ſujet d’en rougir
-        de hontce, ſi pour la décharge de noſtre honneur, nous
-        n’alleguions, que la France eſtoit gouuernée par le Cardi.
-        aal Maazarin, qui pour çontenter ſa cholere contre le ſieur
-        de Caſtelnau, auoit fait abandoauer Bourbourg, &amp; pou
-        C 
-        2
-        rentrer en Franée comme triomphat, auoit dégarnyles
-        places frontieres, par lettres. écrites aux Gouuerneurs,
-        auſquelsil auoit demandeé leurs meilleurs ſoldars pour luy
-        lainre leorre conpoſe cere belle armee, quſ ppei
-        dans ſeseſcris mpertinens, L’aſſenablee de es as, qa’il die
-        auoir amenez pour le ſecours da loy, parlant en Prince ſouue
-        rain, &amp; allié de la Couronne, lors qu’il ſe faſoit ſuiure par
-        des Franç̧ois, &amp; autres gens qui eſtoient à la ſolde de Sa Ma
-        jeſté, commandez par des Mareſchaux de France. Diſons
-        auſſi, que nonobſtane touces les-ſollicitations des Gouuer
-        neurs qui le preſſoient, pour auoir les hommes, &amp; les cho.
-        ſes neceſſaires aà̀ la conſeruation des vil les conquiſes; ila
-        negligeé toutes les ſollicitations pour ne ſonger qu’aà dreſſer
-        ne armée, qui fuſt en eſtat dé battre ceux qui l’auoient
-        chaſſé, ou qui s’oppoſoient à ſon reſtablſſement.
-        4. Son eſprit vacillant, qui a cherché́ des appuis de rous
-        coſtez, l’a porté à mettre en vente Grauelines, Mardic, &amp;
-        Dunquerque, qu’il a preſentez premierement aux Hol
-        landois; taſchant de leur perſuader, que ces places leurs
-        ſeroient tres commodes contre les Anglois, auec leſquels.
-        ils entroient en guerre: mais ces aduilez republiquains,
-        ayant eſteé informez, qu’au meſme temps le Cardinal Ma
-        zarin faiſoit pareilles offres aux Anglois, les preſſant d’a.
-        cheter ces meſmes places, pour s’en ſeruir contre ces Hol
-        landois;, ces doubles negotiations n’ont produit autre cho
-        fe, que le mépris, qu’on a fait de tous coſtez de cet erernel
-        negotiant, qui vendroit en gros ou en dé́tail out le Royau
-        ne de France, s’il trouuoit vn marchant aſſez puiſſant &amp;
-        aſſez fol, pour en traiter auec loy. Grand opprobre pous
-        nous, qui auec nos eſprits éclairez, auec nos langues diſer.
-        tes, &amp; courages eſleuez, auons enduré du Cardinl M.
-        zarin pour la diſſipaciode l’Eſtat, çe que les moynes de
-        ſes Abbayeés, n’auroient point toleré pour la degradatioa
-        -dvn petit bois. N’entendons-nous pas nos voiſins, qu
-        nous ctiems. O laâchbe, ô infams nation qui ſouffrez v
-        aſtrange vſutpateur, ce que vosaeeſues n’aurolemrps
-        8 
-        difſimale en vn Prinoe legitime. Gentils, hommes regardei
-        vo- peres, &amp; conſiderez vos enfans, imitez ceux-là, &amp; laiſ
-        ſez bon exemple à ceux- cy.
-        3. Nous ſçauons auſſi que le Cardinal Mazarir, pour fa
-        re croire à la Reyne qu’il n’auoit point de retraite. ſſeureée
-        hoe de France, à cauſe des ennemis qu’il auoie faits pour
-         le ſeruice du Roy, a tont de nouueau irriteé rous les Princes
-        &amp; Republiques d Iralie par les pyrateries, ayant fait pillesr
-        ſur tous nos alliez &amp; voiſins. Il a affecte plus partieuliere
-        ment de faſcher le Pape, violant le reſpeét que la pieté́ de
-        os Roys a rouſiouts rendu au ſaint Siege, ce qui eſtmon
-        ſtrueux en vn Cardjnal, qui a entrepris encbre depnis peu
-        de ſe brouil ler auec Rome, pour faire conuaoiſtre, qu’il ne
-        pouuoit eſtre en ſeurete dans le ſejour ordinaire des per
-        ſonnes de ſa condition, non plus qu’à Veniſe, ayant part
-        es brigandages violé ſon ſerment de noble Venitien ny
-        en Allemagne, où il eſt tenu pour va infame affronreur, ny
-        en Piedmont, apres l’auoirabandonné aux Eſpagnols ,o
-        ils ont pris Trin, &amp; vont prendre Creſcentm, qui bloquent
-        Cazal, &amp; contraignent le Due de Sauoye à s’accommoder
-        auec l’Eſpagne,; ainſi il conclud que nous deuos ſoffrir
-         les maux extremes qu’il nous fait, parce qu’il en a fait de
-        moindres aà nos voiſins.
-        6, Pour faire voir que nous auons raiſon d’appeller nos
-        nauxextremes, entrons dans le Royaume, pour ietter l’œil
-        ſur cinq ou ſix Prouiaces deſoleées, par le retour du Car
-         dinal Mazarin, &amp; ne faiſons point de difficulté́ de dire, que
-        toute la France eſt menacée d’vn pareil traitement: à̀ ſça
-        uoir de la profanation des Temples, des Preſtres meurtris
-         ou chaſſez, des Vierges dédiées à̀ Dieu, des filles &amp; fem
-        ’mes violées, des bourgs &amp; villages bruſlez, des payſans
-        maſſacrez, &amp; generalemeng de toute ſorte de barbaries la
-         diſcipline n’eftant point obſeruée dans les armeées, ny la
-        police gardée à la ſuite de la Cour, ſon paſſage eſtant mar
-        qué par les incendies, par les ruines, par la farmaine, &amp; par
-        les maladies cotagieaſes: labendace n’ayaat paou qae
-        1 
-        allſ¬ ,,,,
-         n2
-        ddns la maiſon du Cardinal Maxaria, anquel nous poui
-        uons demander; qu’il nous monſtre quelque aduant ge
-        acquis au Roy par ſon retour, comme nous faiſons voir
-        million de malheurs, &amp; deſordres qu’il nousa apportez, &amp;
-        qui ſont venus fi auant, que ſi vne courageuſe relolution ne
-        lesarreſte par vn puiſſant remede, les peuples deſeſperez ſe
-        ront capables de toute ſorte de penſées &amp; d’efforts: on
-        çait ce que la rage a fait dire à pluſieurs, qui poarront ve¬.
-        nir aux effets, ſion ne les appaiſe, pas l’eternel banniſſe.
-        ment de l’aureur de leurs calamitez.
-        7. La plus violente apprehonſioun des ſages, vient du pe
-        de ſoin que le Cardinal Mazarin prend de l’education du
-        Roy, &amp; des auerſios qu’il luy donne contre ſes proches,
-        contre ſes plus fideles ſeruiteurs, &amp; contre la ville de Paris;
-        à quoy nous adiouſterons, qu’il taſche d’eſtouffer par tous
-        moyens dans le bon narurel de noſtre jeune Prince,la com
-        paſſion des miſeres de ſes Subjets, ne luy parlant que de la
-        puiſfance abſoluë &amp; aurhorité Royale, ſans jamais faire
-        mention, ny de la clemence, uy de la iuſtice. Ce qui nous
-        fair craindre que deces premieres impreſſions, &amp; maudites
-        inſtructions ne procede, non ſeulement noſtre malheur,
-        mais celuy de noſtre Roy, qui ne peut regner heureuſe
-        ment s’il n’a l’empire ſur nos cœurs, &amp; ſi nous n’auons
-        l’honneur de ſa bienueillance; ou s’il a plus d’inclination
-        pour la gurre que pour la paix, comme il arriuera, s’il
-        demeure plus long-temps captif du Cardinal Mazarin.
-        8. Entre les iniuſtices &amp; oppreſſions, que le Cardinal Ma
-        zarin a faites en grand nombre depuis ſon retour, nous de
-        uons loger celle que ſouffre le Due d’Angouleſme; apres
-        auoir traité les Prouenceaux auec beaucoup de modera.
-        ion &amp; ſans intereſt, a’ayant iamais enttepris, que ce qui
-        luy a eſteé ordonne tres-expreſſement par la Reyne pour
-        lors Regente; il ſe trouue exclus de ſon Gouuernement,
-        eſt priſonnier, &amp; en grand dapger de ſa vie, qu’il auroir dé
-        ja perduë, s’il eût eſté rencontré en campagne, ou sl ſe
-        faſt ms en deffence, le comandement ayaat eſte fait à
-        ceux 
-        13
-        eeux qui l’ot arreſteé de faire mains-baſſes, au eas qu’ileuſt
-        reſiſté. Toutes ces violences ſont faites pout aſſaurer la
-        Prouece au Duc de Mercœur, qui a eſpouſé la niepce du
-        Cardinal Mazarin, qui fait aſſieger les villes, &amp; perſecute
-        les caualiers qui ont obey aux ordres du Roy, ainſi qu’on
-         iuſtifieras par pluſieurs lettres de ſa Majeſté, &amp; meſmes
-        par celles du Cardinal maazarin. Il veut faireperir vn Prin.
-        ce vertueux, &amp; grand ſeruiteur du Roy, pour s’eſtablir
-        en Prouence, ayant deſſein au cas qu’il ſe voye contraint
-        d’abandonner le milieu du Royaume, de ſe cantonner
-        das cette exrremité, &amp; d’y conduire le Roy, auec reſolu
-        tion ſi on le preſſe de le tranſporter hors de la France, eſtat
-        capable de tour entreprendre, &amp; la Reyne de tout ſouffrir.
-        9. Nous n’aurons point de peine de perſuader à la Ville de
-        Paris ce qu’elle void &amp; ſent, à ſçauoir que la rage conceué
-        par le Cardinal maarin contre le Parlement, qui l’a con.
-        damneé, contre les Compagnies Souueraines, &amp; maiſon de
-        Ville, qui ont demandé ſon eſloignement, contre les Bour
-        geois, qui ont crié ſi ſouuent point de mazarin, l’a porrté à
-        faire approcher ſes armées, qui ont rauagé tous les enui
-        rons de Paris: ll a premierement ſaccage depuis Eſtampes
-        1uſques aà nos Fau-bourgs, il a fait paſſer ſes armees en
-        Brje pour la deſoler; il les a logees dans la bonne France,
-        pour y faire la moiſſon deuant le temps; il veut maintenant
-        ’eſtablir en vn lieu d’ol il puiſſe gaſter nos vendanges, &amp;
-        fermer les paſſages aux viures, ayant pris le deſſus &amp; les
-        deſſous des riuieres qui nous uourriſſent, ainſi il ne nous
-        laiſſe plus que le deſeſpoir pour eonſeiller.
-        o. N’oubliant rien de ce qui peut conanter l’eſprit vin
-        dicatif d’vn homme de ſa naron, il a voulu depuis peu de
-        iours faire dans Paris vn maſſacre plus cruel que celuy des
-        Veſpres de Sicile d’ou il eſt ſorty. Il auoit projeté d’entrer
-        dãsParis par trahiſon &amp; par force pour nous piſler, &amp;ſe def
-        faire des plus gens debien, ayant deſiré d’obliger à̀ la re
-        taire Monſeigaeur leDuc d’Orleans, ou de l’enuelopper
-        daus le maſare, auquel ilanoit detia Monfieur le Prio 
-        14
-        ce, trois auvres Princes, pluſieurs Oficiers des Compa
-        gnies Souuer. ines, &amp; quantité́ de bons Citoyens. Ayant
-        encontre de la reſiſtence, il ſe logea auee le Roy ſur vne
-        eminence pour accouſtumer au ſangvn Prinee de quator
-        ze ans, qui voyoit deuant ſoy comme dans vn Amphſthea
-        tre ſes vaillans Subjets immolez de part &amp; d’autre la for
-        tune du Cardinal Mazarin. Eſt il poſfible que cette Prn
-        ceſſe pour laquelle nous auons eu aurrefois tait de com.
-        paſſion n’en ayt point maintenant pour nous? qu’elle por
-        re ce fils accordé aux larmes de noftre pieteé, à tirer celles
-        de noſtre miſere? &amp; ne voye pas que ſi Paris qui eſt la te.
-        te du Royaume eſt rudement frappé́; tout le corps tom
-        bera en conuulſion? Faut-il que pluſieurs millions de
-        François ſentent ce ſyncope mortel, pour contenter a
-        furie d’vn eſtranger, qui a pour principal conſeiller vn en
-        ragé Zongo Vndedei banny de ſon pays, qui ne parle que
-        de fers, que de feux, &amp; que de faim pour les Pariſiens,
-        qui ont traitté auec tant de courtoiſie le maiſtre, &amp; le
-        alet?
-        . Si le Cardinal Mazarin eſt ſi effronté de dire, que les
-        Princes ſont les veritables cauſes de nos deſordres, nous
-        alleguerons leurs proreſtations enregiſtreées dans les Gref
-        fes des Compagnies Souueraies, &amp; maiſon de Vlle de
-        Paris; &amp; nous ne repreſenterons que l’humanité &amp; dou
-        leur de Monſeigneur le Duc d’Orleans, vray heritier des
-        vertus du Roy Henry le Grand ſon pere, nous ſommes aſ
-        ſeurez qu’il poſera les armes auſſi toſt que le Cardinal as
-        zarin ſe ſera retiré, ſa vie &amp; celles des Princes du ſang vnis
-        auec luy qui appartiennent au public, ne pouuant eſtre en
-        ſeureté́ ſans cér eſloignement.
-         2. Peut-on dire que le Cardinal nrazarln ſoit bon pour
-        nous &amp; ſage pour ſoy, lors qu’il nous veut ruiner, &amp; e pe
-        dre luy meſme pour nous gouuerher endeſpit de nos Loix,
-        &amp; de la raiſon qui les a’ faires, &amp; les veut conſeruer: aais
-        peut. on dire que ceux quile latnt ou qui de maintien
-        aent par corrupi ſoieur plus geade biea qua nôus qu 
-        3
-        eruns ſpre ſs empoonner, eonentons nore cone
-        ſeleue ei ioneaes er i e luie pueine enoir dne ene
-        eie e eile deiai urenas lei de u repneue pnun ne
-        pne e ſreono deproſairaer lonnr ur de un ſoenenon q!
-        oeſle nununouein ſounu leun lſsleie ponun ne e
-        pl un iſoue le bonns eenie, poue ſe rone oe rern
-        erpse lous e pe oons l oeeoſies qoin oi odonoere
-        noeu oee oſer le ropun de loeure pnrn nmoun ope one e
-        ees de n ponr dlrnes qui peoat e peie puo en ene
-        n iuſele u dereie ins lanunpe eoieoen er.
-        niſe eue rnen ouennri ſne onireuene e ene e
-        no oienene eui nine len e pulr eiei eoe iuenrene
-        en ene eneneiens feene le eoedueſluilenin nne de
-        aoune e un eie lneere punrini eneue e ie inre
-        oeſeue eoi e nul eſlne dln l ornnue enr p ne nn
-        Ple en deee erani le ean deneoe ileur llre enele
-        une nueueſinoni eaeinusnia ie rya e nue meie
-         ni p e ſle e noenreanonſiprere li eu ne re ole
-        eue ueie eoneſune le ennueronedi ie u ner
-        nue dnule eodlnie oui ouie e ſi ne e e eun eleſe
-        nmeenunue eilei line el ene iue deenrur re n nle
-        one dune ourne en nierns pous cels ſeroun nre oen pe
-        leuoeſopu oiulianene, &amp;e ae ſerue ys deſe pine
-        au Ciel.
-        Omn honeſta ratis expedieodlaeſalasis, praſerin pb
-        FIN.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_88" source="Moreau">
+          <p>Incendie de l’Hôtel de Ville</p>
+          <date when="1652-07-04">1652-07-04</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-03-23" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="5" />
+        <lb />CONDVITE
+        <lb />DV
+        <lb />CARDINAL MAZARIN,
+        <lb />depuis ſon retour en France,
+        <lb />ADRESSE AVX COMPAGNIES
+        <lb />Souueraines, Maiſon de Ville, &amp; bons
+        <lb />Bourgeois de Paris. <figure type="decoration" />
+        <lb />A PARIS,
+        <lb />De l'Imprimerie de la Veufue I. GVILLEMOT, Imprimeuſe
+        <lb />ord. de ſon Alt. Royale, ruë des Marmouzets, proche
+        <lb />l’Egliſe de la Magdeleine.
+        <lb />M. DC. LII. <pb n="6" />
+        <pb n="7" />
+        <lb />3
+        <lb />CONDVITE DV
+        <lb />Cardinal Mazarin, depuis ſon
+        <lb />retour en rance,
+        <lb />Adreſſée aux Compagnies S’ouueraines, Maiſon
+        <lb />de Ville, &amp; bons Bourgeous de Paris.
+        <lb />SANs exorde &amp; ſans mouuemens, ſuiuant la
+        <lb />forme de l’Areopage, laiſſons les figures, &amp;
+        <lb />les amplificarions de Rhetorique à pluſieurs
+        <lb />Eſcriuains, bons &amp; mauuais, qui rempliſſent
+        <lb />le monde de liures: Expoſons naifuement
+        <lb />a je faicts dans vne affaire de la premiere im
+        <lb rend="¬" break="no" />portance, puis qu’il s’agit du ſalut du Roy, du Sang Royal
+        <lb />&amp; de la Royaute; par conſequent de celuy de rous les par
+        <lb rend="¬" break="no" />ticuliers, qui ne ſeroient pas ſages s’ils croyoient que leurs
+        <lb />perſonnes, familles &amp; biens ſe peuuent ſauuer, ſi le public
+        <lb />vient à perir; pour faire voir qu’il eſt dans ce danger, les
+        <lb />Compagnies ſouueraines, la Maiſon de Ville, &amp; Ies bons
+        <lb />Bourgeois de Paris ſont ſuppliez de faire reflexion ſur l’e
+        <lb rend="¬" break="no" />ſtat, auquel le Cardinal Mazarin a reduit les affires de la
+        <lb />France depuis qu’il y eſt retourń, ſans mettre en conſide
+        <lb rend="¬" break="no" />ration ce qu’il auoit fait deuant ſon depart, &amp; qui auoit
+        <lb />donné lieu aux Declarations &amp; Arreſts qui l’auoient
+        <lb />banny.
+        <lb />Conuaincons-le premierement de pariure &amp; perfidie, par
+        <lb />les letrres ſigńes de ſa main, enuoýes &amp; publiées par luy
+        <lb />lors qu’il eſtoit ſur le point de r’entrer en France. <pb n="8" />
+        <lb />4
+        <lb />Daus la Leetre addreſſee a Foy.
+        <lb />Ie ne me veux point ingerer aà l’aduenir en aucune façon
+        <lb />dans le maniment des affaires: ce pomt, en cas que voſtre
+        <lb />Ma jeſt́ aye aſſez bonne opinion de moy pour me l’ordon
+        <lb rend="¬" break="no" />ner, eſtant le ſeul qui pourroit me rendre coupable d’vne
+        <lb />deſobeiſſance enuers voſtre Majeſté.
+        <lb />as la Lettre à la Reye.
+        <lb />Ie prends la liberteé de demander vneautre grace au Roy;
+        <lb />qui eſt d’auoir la bonté de me diſpenſer d’auoir aucune
+        <lb />part dans le maniment des affaires;, quand ſa Majeſte au
+        <lb rend="¬" break="no" />roit aſſez bonne opinion de ma ſuffiſance, &amp; la protection
+        <lb />de voſtre Majeſte aupres du Roy (en cas que cetrepreuê
+        <lb rend="¬" break="no" />tion d’vne choſe à laquelle peut-eſtre ſa Majeſteé ne ſonge
+        <lb />pas, ne ſoit point trop preſomptueuſe) pour empeſcher que
+        <lb />ie ne ſois pas expos é à̀ commettre vne deſobeïſſance, com
+        <lb rend="¬" break="no" /> me il arriueroit infailliblement, ſion auoit la moindre pen
+        <lb rend="¬" break="no" />sé́e de me faire cét honneur.
+        <lb /> Ainſi cet homme pretendoit d’endormir ceux qui s’op
+        <lb rend="¬" break="no" />poſoient à ſon rerour, ou de piper les peuples, qui pour
+        <lb />auoir la paix luy euſſent volontiers accorde le contente
+        <lb rend="¬" break="no" />ment de pouuoir eſtre dans- la Cour pour la ſatisfaction
+        <lb />partieuliere de la Reyne, pourueu qu’il s’abſtint de la con
+        <lb rend="¬" break="no" />duite des affaires, qu’il renonçaſt à l’entrée dans les Con
+        <lb rend="¬" break="no" />ſeils, ne ſe meſlaſt point de faire changer ce qui auroit eſté
+        <lb />reſolu, &amp; obeït aà la Declaration du Roy, qui exclut les
+        <lb />Cardinaux du Miniſtere.
+        <lb />Pour faire voir que les proteſtations du Cardinal Ma
+        <lb rend="¬" break="no" />zarin n’eſtoient que des fourberies, dés le premier iour de
+        <lb />ſon reſtabliſſement dans la Cour, il reprit ſa place &amp; ſa
+        <lb />qualité nouuelle en France de premier Miniſtre: voulut
+        <lb />tout ſeul definir routes choſes; renuerſa les reſolutions pri
+        <lb rend="¬" break="no" />les, conduiſit la Cour là où il luy plû̂t; diſpoſa des Armé́es
+        <lb />&amp; des Finances; preſida aux deſpeſches, ou pluſtoſt les di
+        <lb rend="¬" break="no" />ta; euoqua tout à̀ ſa connoiſſance, diſtribua les Benefices,
+        <lb />les Dignitez, les Charges, les Offices &amp; les employs, non
+        <lb />ſeulement agiſſant, mais parlant en Souuerain: diſant, le
+        <lb />vos <pb n="9" />
+        <lb />5j
+        <lb />oous donne le vous aeorde ee que vous voulez l’y tpé
+        <lb />L ’luuununy qus et pudt l ndlru
+        <lb />u ou dpuſedue lſe aiedauntde ſaure pnouſdre eier
+        <lb />SC aeee’qu neile vouloieat pout pour Conſieles.
+        <lb />il eltoit Roy de France.
+        <lb />leeo’oe toue es proedarnſoen de noce pu
+        <lb />buqe, uonreole Anoe Naon, &amp; ſuſnianes ou E
+        <lb />anreune de noune us ſe rdiouais idioan nnu oue laiſle
+        <lb />onou ſioporme ures peoues de l puaſane eſe:
+        <lb />e un i dlepuis lonreroon nrede, ou lelenene dun
+        <lb /> Cunt ni duns les plu inpouuues aaien rungte.
+        <lb />eu au pund preiadie de la Pooe, ious nemro loion
+        <lb />es ulue oursores ceeain e eopble dienouuir la luſe
+        <lb />eniement, danimuer le coauge de le oblee,
+        <lb />eet le peuples ̀ ſeeonder les bonoes nentionsde
+        <lb />Monſeigneur le Duc d’Orleans.
+        <lb />re perenier ileu, nou poſons d ſalt veiable, que
+        <lb />court etant biois le Caiedina Maarin enuoya qvuit
+        <lb />’noaadeur de pontugl, aee tous les apoliuins
+        <lb />oi eſointApurl eur ſt dooner de larenrt pou pe
+        <lb />lFuis qples it pout ſaire le oape ue l drpbaſladeue
+        <lb />uores ue loooe conſaneneeoeele Cardnul laaapn e
+        <lb />aſposet paur las en aler pompement aues lele
+        <lb />itin eouuert le oy de oreugal, pour luy apporerle¬s
+        <lb />articles ſuiuans.
+        <lb />o e i ouloit eouoer on meenae &amp;e la oide
+        <lb />an aiſſeaux Francois qui ſe trouuoient ſur lMeditemae
+        <lb />nee, aux aures que la France oquiperoe en toute dilie
+        <lb rend="¬" break="no" />eues pour alier appuyet vme nooueile emolte dans le
+        <lb />oyame de Naples, que le R oy de Porugaleneveurois
+        <lb />tous les aduantages: Quie la conqueſte de cere Couroon
+        <lb />roit ponr l, a Hranee ne ſe eterua queceains fee,
+        <lb />deſquls elle pourroit diſpoſer, qui ſont eux que le Car
+        <lb rend="¬" break="no" />dimal Mazarin a enuie de mattre dans ſa maiſon
+        <lb rend="¬" break="no" />’oue n ene rerorl perpene lgue orenfiuae d
+        <lb />fen ſae aueclePortugal.
+        <lb />B <pb n="10" />
+        <lb />é6
+        <lb />3 Que la Freaee ’obllgenoit à ae faire amais pairz auee
+        <lb />’Eſpagne, que les Royaumes de Porcugal &amp; de Naples ne
+        <lb />demeuraſſenr au Roy de Portgal &amp; à ſes heritiers..
+        <lb />4. Que le Pape ſeroite forcé par corce puiſſante armeé́e n
+        <lb rend="¬" break="no" />uale, &amp; par les Cardinaux &amp; Princes d’Iralie qui ſont de la
+        <lb />faction de France, à reeognoiſtre le Roy de Portugal, &amp;
+        <lb />à confiraer les Nomiuations aux Eueſchez &amp; autres Be4
+        <lb />nefices.
+        <lb />5. Que les Candinas Barberins, leurs amis &amp; Princes al.
+        <lb />liez de la Franee fanoribesoient de leurs conleils &amp; de tou
+        <lb />te leur puiſſanee l’entrepriſe de Naples.
+        <lb />6. Qu’en conſideration de cette ligue etermaelle enere la
+        <lb />France &amp; le Portugal, &amp; pour maitenir la bonse correſ
+        <lb rend="¬" break="no" />pondance, noſtre R y eſpouſeroit l’lnfaute de Portugal;
+        <lb /> dequoyla. Ryne doonoit prefentenment ſa parole, ayanb
+        <lb />promis de ſa bouche qu’elle feroit valloir tous ces articles,
+        <lb />&amp; principalement le dennier,
+        <lb /> Ens ſuire de cela l’Ambaſſadeur partitr en diligence auec
+        <lb />le Pere Criuelly Carme, autres Napolirains, emporta
+        <lb />les articles ſignez, receut de l’argent pour deffrayer toute
+        <lb />la ſuitre, &amp; parce qu’il laiſſoir des debtes à̀ Paris, on luy
+        <lb />donna des Lettres d’Eſtat, qui portent deffenſes de faire
+        <lb />vendre ſes meubles iuſques à ſonretour.
+        <lb />On a aduis depuis peu de iours que les articles ont eſté́
+        <lb />ſignez par le Roy de Portugal, &amp; qu’en ſuitre la ligue
+        <lb />offenſuie &amp; deffenfiue entre la France &amp; le Portugal con
+        <lb rend="¬" break="no" />re l’Eſpagne, a eſté publié́e aà Lisbonne. Que la nouuelle
+        <lb />eſtant arriuée à Madrid, a fait reſoudre le Conſeil d’Eſpa
+        <lb rend="¬" break="no" /> gme a rechercher vne nouuelle ligue contre la France auee,
+        <lb />les Anglois, &amp; meſenes à taſcher d’y engager par ceux cy!
+        <lb />les Hollandois, lors qu’ils ſeroat d’accord, ce qui eſt bien
+        <lb />aduancé. Surquoy tous les bons &amp; ſages François feront
+        <lb />s’it leur plaiſt, les reflexions ſuiuantes.
+        <lb />1. Que le feu Roy, conſeillé par le Cardinal de Richelieu,
+        <lb />paincipal promoteur du ſouſleuement de Portugal, pour
+        <lb />ne rendre point les choſes irreconciliables, &amp; e bannir! <pb n="11" />
+        <lb />poioelà paiipor iais,’ee peue faiee l Casdisat Ms
+        <lb />aal ; voalue ppjpcoil ligue ofenlus&amp; def
+        <lb />fenſiue, demandeées inſtamment par les Portgais: Qe
+        <lb />Rent dorane a Begese, qualesa ppurſoitas qu’ayen
+        <lb />pâ faire les Portugais en l’aſemble de Manſter, a tos
+        <lb />jours reiſté à cett deandee Sa Majeſtéagant eſlé porués
+        <lb />à ce refus, par les coſçils de Moaſeigneur le uc d’o!
+        <lb />leans, ſocode par coux de feu Mafieur le Prinçe 5qui
+        <lb />eonmme ſages politiques, preogyoit que ces artileac2
+        <lb />cordé jeteroit l’Eſpagae das e inadignation, qui ſeroait
+        <lb />ſuiuie de la rupeure de l’aſſonble; quand &amp; quand d
+        <lb />deſeſpoir de la paix que le Cardnal Mazarin uut banni
+        <lb />pour iamais, &amp; en ſuice perpeseros miſes:.
+        <lb />a Ou iuge; ſſi par cett proedure du Cardinal, qu’i
+        <lb />ſe moque de nous, lors qu’il nous veut perſuader dans ſe
+        <lb />letres, que les Eſpagnols ffrent de raiter la paix auee
+        <lb /> luy.
+        <lb /> Que le Caedinal Mazri, qui veut eſtreemployépous
+        <lb />la conelure, ſe ead iaaable de cece comrmiffioa.. A
+        <lb />quaoy nous pouuons dioeter ce que ous çauons centai
+        <lb rend="¬" break="no" />nement, que iamais les Eſpaguols ne feraot, ay n’lcou
+        <lb rend="¬" break="no" />teront aucune propoſlon;, que le Cardinal Mazari
+        <lb />ne ſoit, ou hois de credit en France, ou eloigné de la
+        <lb />France.
+        <lb />4. Qu’auſſi tot que ce bon-heurs naus ſera arriueé, nous
+        <lb />aurons la paix, &amp; que les Eſpagnols, qui la deſirent, la trai
+        <lb rend="¬" break="no" />teront auec des perſonnes ſiuceres en leurs paroles, &amp; ſa
+        <lb rend="¬" break="no" />ges en leut conduite: mais qu’il eſt fort à craindre ſi ce biea
+        <lb />S’eſloigne; c’eſt à dire, ſi nous gardons encore quelque
+        <lb />uemps le Cardinal Mazarin; que la concluſion ne ſoit pas
+        <lb /> aduantageuſe pour la France, comme elle auroit eſté́ il y a
+        <lb rend="¬" break="no" />hait ans, ſi nous n’euſſions point eu, ou ceu le Cardinal
+        <lb /> Mazarin, qui pour ſe naintenir enauthorité́ a aainenula
+        <lb />guerre.
+        <lb />;..Que la paix ant neceſſaire, ne pauanr iamais eſtre
+        <lb />auec la ligue offnfiue deffenſiue, qu le dinal Ma¬ <pb n="12" />
+        <lb />arin viet de faire, ſeul de ſa teſte, &amp; pir aurhorit́ ſoooe
+        <lb rend="¬" break="no" />raine, il oblige la France à la rompre, &amp; enſuite àdeſobli
+        <lb rend="¬" break="no" />ger le Portugal.
+        <lb />6. Que l’enrrepriſe, quoy que preſumée chnerique, d’at.
+        <lb />taquer de nouueau le Royaume de Naples, ayant eſté de
+        <lb rend="¬" break="no" />clarée aux Princes d’Italie, qui ne veulent point de trou
+        <lb rend="¬" break="no" />ble, les irrite contre nous; &amp; a empeſché iuſques à preſens
+        <lb />ceux qui aſſiſtoient les Venitiens d’eauoyer leurs Galeres,
+        <lb />&amp; de permettre les lesées de gens de guerre, chaeun les
+        <lb />voulaut garde pour ſa ſeurete..
+        <lb />. Nous voyons auſſi l’inſolence du Cardinal Mazarin,
+        <lb />qui diſpoſe tout ſeul du Mariage de noſtre Roy, plus ab
+        <lb rend="¬" break="no" />ſolument que ne feroit vn pere de ſon fils, ou vn toteur d
+        <lb />ſon pupil, qui communiquertoit leur deſſein, au moins pax
+        <lb />bien-ſeance, aux plus proches parens.
+        <lb />8. Par ce traiteé le Cardinal Mazarin ne s’oublie pas; vou
+        <lb rend="¬" break="no" />lant retenir pour luy &amp; pour les ſiens les principaux fiefs
+        <lb />du Royauime de Naples. On peut prouuer auſſi qu’il a of
+        <lb rend="¬" break="no" />fart autrefois la conqueſte de ce meſme Royaume à̀ Mond
+        <lb />ſieur le Prince, à condition qu’il conſentiroit, que le
+        <lb />Royaume de Sieile demeureroit à la maiſon Mazrine
+        <lb />dequoy vn homme d’honneur &amp; de condirion a les preuues
+        <lb />par eſcrit. Ainſi lesfolies, les inrereſts du Cardual Maza
+        <lb rend="¬" break="no" />rin ſe ioent de la reputarion, du repos, &amp; des biens de la
+        <lb />Frace. Veons aux autres erimes d’Eſtar, qu’il a commis
+        <lb rend="¬" break="no" />depuis ſon rerour.
+        <lb />L Nous auons ſceu la belle entrepriſe qu’il a faite pous
+        <lb />auoir Briſac, qui eſt l’vne des plus fortes places de l’Euro
+        <lb rend="¬" break="no" />pe, &amp; la plus importante conqueſte de la France. Le Car
+        <lb rend="¬" break="no" />dinal azarin pour s’aſſeurer de certe retraire, s’eſt ſeruy
+        <lb />d’vne Dame, laquelle par tromperie ſe ſaiſit du Gouuer
+        <lb rend="¬" break="no" />neur: peſane apees cea gager la garniſoh, en reſpan
+        <lb rend="¬" break="no" />dans quel ques piſtoles, que cette Dame iettoit de ſa main,
+        <lb />ſans que ceux qui les ramaſſoient en ſe moquant d’elle,
+        <lb />ayent perdu l’affecmoa qu’ils ont pour leur chef, quia trou.
+        <lb />u’uentideſe ettre en liberré́, &amp; de rentrer daesl
+        <lb />.
+        <lb />place <pb n="13" />
+        <lb />9
+        <lb />plaee fait auee le Comte de Hatceot, que lo Cardial
+        <lb />azarin a voulu faire arreſter. ais il ne ſe ſoucie pas de
+        <lb />perdre ce chef de ſon party, &amp; de hazarder Brifſac, qu’v
+        <lb />deſeſpoir peut faire tomber entre les mains des ennemis de
+        <lb />la France, apres qu’elle a employé́ des ſonmmes immenſes
+        <lb />pour l’acquenir, &amp; pou le conſeruer.
+        <lb />. Il a reduit Barcelonne à l’eſtat où elle eſt, c’eſt à dire
+        <lb />en grand danger auee la Caralogne, &amp; le Rouſſillon, qui
+        <lb />couſtent à la France pluas de ſoixante millions, &amp; la
+        <lb />vie de quarante ou de cinquante mille hommes, &amp; ce qui
+        <lb />eſt plus deplorable, la reputation du Roy &amp; de la France
+        <lb />n’et comptée pour rien par la folie de celuy qui a aban
+        <lb rend="¬" break="no" />donné vn Mareſchal de France qu’il a aurrefois mal traitté:
+        <lb />ne luy enuoyant,ny hommes, ny argent, ny viures, ny mu
+        <lb rend="¬" break="no" />nitions: appliquant toutes les forces &amp; fiances du Roy à
+        <lb />Ja deffence de ſa fortune, qu’il veut nmaaintenir contre les
+        <lb />oppoſitions legitimes des Princes du Sang Royal, contre
+        <lb />les iuſtes Arreſts des Parlemens, &amp; contre l’auerfion gene
+        <lb rend="¬" break="no" />lIe de tous les peuples. Il eſt encore ſi remeraire qu’il oſe
+        <lb />aceuſer de routes les pertes que fait la France, ceux qui
+        <lb />pour l’vnir veulent chaſſer vn eſtranger qui la diuiſe, &amp;
+        <lb />nous veut fairecroire que les enfans de la maiſon doiuent
+        <lb />ou la quitter ou ſouffrir la priſon, ou reconnoiſtre ſon Em.
+        <lb />pire &amp; dependre de luy ;auquel cas il leur donnera toute
+        <lb />la France piece à piece.
+        <lb />s. Nous n’imputerons qu’à luy ſeul la perte de Grauelines,
+        <lb />e’eſt à̀ dre de noſtre meilleure conqueſte dans les- Pays
+        <lb />bas, &amp; que nous deuions la genereuſe reſolution &amp; ſage
+        <lb rend="¬" break="no" />aonduire de ſon Alteſſe Royale;, cetre porte pour entrer
+        <lb />dans la Flandre; ce fort rempart qui couuroit Dunquer
+        <lb rend="¬" break="no" />que, a eſté emporte auec fi peu de peine &amp; à ſt petits fcais
+        <lb />de la part des enpenmis; quae nous aurions ſujet d’en rougir
+        <lb />de hontce, ſi pour la décharge de noſtre honneur, nous
+        <lb />n’alleguions, que la France eſtoit gouuernée par le Cardi.
+        <lb />aal Maazarin, qui pour çontenter ſa cholere contre le ſieur
+        <lb />de Caſtelnau, auoit fait abandoauer Bourbourg, &amp; pou
+        <lb />C <pb n="14" />
+        <lb />2
+        <lb />rentrer en Franée comme triomphat, auoit dégarnyles
+        <lb />places frontieres, par lettres. écrites aux Gouuerneurs,
+        <lb />auſquelsil auoit demandeé leurs meilleurs ſoldars pour luy
+        <lb />lainre leorre conpoſe cere belle armee, quſ ppei
+        <lb rend="¬" break="no" />dans ſeseſcris mpertinens, L’aſſenablee de es as, qa’il die
+        <lb />auoir amenez pour le ſecours da loy, parlant en Prince ſouue
+        <lb rend="¬" break="no" />rain, &amp; allié de la Couronne, lors qu’il ſe faſoit ſuiure par
+        <lb />des Franç̧ois, &amp; autres gens qui eſtoient à la ſolde de Sa Ma
+        <lb rend="¬" break="no" />jeſté, commandez par des Mareſchaux de France. Diſons
+        <lb />auſſi, que nonobſtane touces les-ſollicitations des Gouuer
+        <lb rend="¬" break="no" />neurs qui le preſſoient, pour auoir les hommes, &amp; les cho.
+        <lb />ſes neceſſaires aà̀ la conſeruation des vil les conquiſes; ila
+        <lb />negligeé toutes les ſollicitations pour ne ſonger qu’aà dreſſer
+        <lb />ne armée, qui fuſt en eſtat dé battre ceux qui l’auoient
+        <lb />chaſſé, ou qui s’oppoſoient à ſon reſtablſſement.
+        <lb />4. Son eſprit vacillant, qui a cherché́ des appuis de rous
+        <lb />coſtez, l’a porté à mettre en vente Grauelines, Mardic, &amp;
+        <lb />Dunquerque, qu’il a preſentez premierement aux Hol
+        <lb rend="¬" break="no" />landois; taſchant de leur perſuader, que ces places leurs
+        <lb />ſeroient tres commodes contre les Anglois, auec leſquels.
+        <lb />ils entroient en guerre: mais ces aduilez republiquains,
+        <lb />ayant eſteé informez, qu’au meſme temps le Cardinal Ma
+        <lb rend="¬" break="no" />zarin faiſoit pareilles offres aux Anglois, les preſſant d’a.
+        <lb />cheter ces meſmes places, pour s’en ſeruir contre ces Hol
+        <lb rend="¬" break="no" />landois;, ces doubles negotiations n’ont produit autre cho
+        <lb rend="¬" break="no" />fe, que le mépris, qu’on a fait de tous coſtez de cet erernel
+        <lb />negotiant, qui vendroit en gros ou en dé́tail out le Royau
+        <lb rend="¬" break="no" />ne de France, s’il trouuoit vn marchant aſſez puiſſant &amp;
+        <lb />aſſez fol, pour en traiter auec loy. Grand opprobre pous
+        <lb />nous, qui auec nos eſprits éclairez, auec nos langues diſer.
+        <lb />tes, &amp; courages eſleuez, auons enduré du Cardinl M.
+        <lb />zarin pour la diſſipaciode l’Eſtat, çe que les moynes de
+        <lb />ſes Abbayeés, n’auroient point toleré pour la degradatioa
+        <lb />-dvn petit bois. N’entendons-nous pas nos voiſins, qu
+        <lb />nous ctiems. O laâchbe, ô infams nation qui ſouffrez v
+        <lb />aſtrange vſutpateur, ce que vosaeeſues n’aurolemrps
+        <lb />8 <pb n="15" />
+        <lb />difſimale en vn Prinoe legitime. Gentils, hommes regardei
+        <lb />vo- peres, &amp; conſiderez vos enfans, imitez ceux-là, &amp; laiſ
+        <lb rend="¬" break="no" />ſez bon exemple à ceux- cy.
+        <lb />3. Nous ſçauons auſſi que le Cardinal Mazarir, pour fa
+        <lb rend="¬" break="no" />re croire à la Reyne qu’il n’auoit point de retraite. ſſeureée
+        <lb />hoe de France, à cauſe des ennemis qu’il auoie faits pour
+        <lb /> le ſeruice du Roy, a tont de nouueau irriteé rous les Princes
+        <lb />&amp; Republiques d Iralie par les pyrateries, ayant fait pillesr
+        <lb />ſur tous nos alliez &amp; voiſins. Il a affecte plus partieuliere
+        <lb rend="¬" break="no" />ment de faſcher le Pape, violant le reſpeét que la pieté́ de
+        <lb />os Roys a rouſiouts rendu au ſaint Siege, ce qui eſtmon
+        <lb rend="¬" break="no" />ſtrueux en vn Cardjnal, qui a entrepris encbre depnis peu
+        <lb />de ſe brouil ler auec Rome, pour faire conuaoiſtre, qu’il ne
+        <lb />pouuoit eſtre en ſeurete dans le ſejour ordinaire des per
+        <lb rend="¬" break="no" />ſonnes de ſa condition, non plus qu’à Veniſe, ayant part
+        <lb />es brigandages violé ſon ſerment de noble Venitien ny
+        <lb />en Allemagne, où il eſt tenu pour va infame affronreur, ny
+        <lb />en Piedmont, apres l’auoirabandonné aux Eſpagnols ,o
+        <lb />ils ont pris Trin, &amp; vont prendre Creſcentm, qui bloquent
+        <lb />Cazal, &amp; contraignent le Due de Sauoye à s’accommoder
+        <lb />auec l’Eſpagne,; ainſi il conclud que nous deuos ſoffrir
+        <lb /> les maux extremes qu’il nous fait, parce qu’il en a fait de
+        <lb />moindres aà nos voiſins.
+        <lb />6, Pour faire voir que nous auons raiſon d’appeller nos
+        <lb />nauxextremes, entrons dans le Royaume, pour ietter l’œil
+        <lb />ſur cinq ou ſix Prouiaces deſoleées, par le retour du Car
+        <lb rend="¬" break="no" /> dinal Mazarin, &amp; ne faiſons point de difficulté́ de dire, que
+        <lb />toute la France eſt menacée d’vn pareil traitement: à̀ ſça
+        <lb rend="¬" break="no" />uoir de la profanation des Temples, des Preſtres meurtris
+        <lb /> ou chaſſez, des Vierges dédiées à̀ Dieu, des filles &amp; fem
+        <lb rend="¬" break="no" />’mes violées, des bourgs &amp; villages bruſlez, des payſans
+        <lb />maſſacrez, &amp; generalemeng de toute ſorte de barbaries la
+        <lb /> diſcipline n’eftant point obſeruée dans les armeées, ny la
+        <lb />police gardée à la ſuite de la Cour, ſon paſſage eſtant mar
+        <lb rend="¬" break="no" />qué par les incendies, par les ruines, par la farmaine, &amp; par
+        <lb />les maladies cotagieaſes: labendace n’ayaat paou qae
+        <lb />1 <pb n="16" />
+        <lb />allſ¬ ,,,,
+        <lb /> n2
+        <lb />ddns la maiſon du Cardinal Maxaria, anquel nous poui
+        <lb rend="¬" break="no" />uons demander; qu’il nous monſtre quelque aduant ge
+        <lb />acquis au Roy par ſon retour, comme nous faiſons voir
+        <lb />million de malheurs, &amp; deſordres qu’il nousa apportez, &amp;
+        <lb />qui ſont venus fi auant, que ſi vne courageuſe relolution ne
+        <lb />lesarreſte par vn puiſſant remede, les peuples deſeſperez ſe
+        <lb rend="¬" break="no" />ront capables de toute ſorte de penſées &amp; d’efforts: on
+        <lb />çait ce que la rage a fait dire à pluſieurs, qui poarront ve¬.
+        <lb />nir aux effets, ſion ne les appaiſe, pas l’eternel banniſſe.
+        <lb />ment de l’aureur de leurs calamitez.
+        <lb />7. La plus violente apprehonſioun des ſages, vient du pe
+        <lb />de ſoin que le Cardinal Mazarin prend de l’education du
+        <lb />Roy, &amp; des auerſios qu’il luy donne contre ſes proches,
+        <lb />contre ſes plus fideles ſeruiteurs, &amp; contre la ville de Paris;
+        <lb />à quoy nous adiouſterons, qu’il taſche d’eſtouffer par tous
+        <lb />moyens dans le bon narurel de noſtre jeune Prince,la com
+        <lb rend="¬" break="no" />paſſion des miſeres de ſes Subjets, ne luy parlant que de la
+        <lb />puiſfance abſoluë &amp; aurhorité Royale, ſans jamais faire
+        <lb />mention, ny de la clemence, uy de la iuſtice. Ce qui nous
+        <lb />fair craindre que deces premieres impreſſions, &amp; maudites
+        <lb />inſtructions ne procede, non ſeulement noſtre malheur,
+        <lb />mais celuy de noſtre Roy, qui ne peut regner heureuſe
+        <lb rend="¬" break="no" />ment s’il n’a l’empire ſur nos cœurs, &amp; ſi nous n’auons
+        <lb />l’honneur de ſa bienueillance; ou s’il a plus d’inclination
+        <lb />pour la gurre que pour la paix, comme il arriuera, s’il
+        <lb />demeure plus long-temps captif du Cardinal Mazarin.
+        <lb />8. Entre les iniuſtices &amp; oppreſſions, que le Cardinal Ma
+        <lb rend="¬" break="no" />zarin a faites en grand nombre depuis ſon retour, nous de
+        <lb rend="¬" break="no" />uons loger celle que ſouffre le Due d’Angouleſme; apres
+        <lb />auoir traité les Prouenceaux auec beaucoup de modera.
+        <lb rend="¬" break="no" />ion &amp; ſans intereſt, a’ayant iamais enttepris, que ce qui
+        <lb />luy a eſteé ordonne tres-expreſſement par la Reyne pour
+        <lb />lors Regente; il ſe trouue exclus de ſon Gouuernement,
+        <lb />eſt priſonnier, &amp; en grand dapger de ſa vie, qu’il auroir dé
+        <lb rend="¬" break="no" />ja perduë, s’il eût eſté rencontré en campagne, ou sl ſe
+        <lb />faſt ms en deffence, le comandement ayaat eſte fait à
+        <lb />ceux <pb n="17" />
+        <lb />13
+        <lb />eeux qui l’ot arreſteé de faire mains-baſſes, au eas qu’ileuſt
+        <lb />reſiſté. Toutes ces violences ſont faites pout aſſaurer la
+        <lb />Prouece au Duc de Mercœur, qui a eſpouſé la niepce du
+        <lb />Cardinal Mazarin, qui fait aſſieger les villes, &amp; perſecute
+        <lb />les caualiers qui ont obey aux ordres du Roy, ainſi qu’on
+        <lb /> iuſtifieras par pluſieurs lettres de ſa Majeſté, &amp; meſmes
+        <lb />par celles du Cardinal maazarin. Il veut faireperir vn Prin.
+        <lb />ce vertueux, &amp; grand ſeruiteur du Roy, pour s’eſtablir
+        <lb />en Prouence, ayant deſſein au cas qu’il ſe voye contraint
+        <lb />d’abandonner le milieu du Royaume, de ſe cantonner
+        <lb />das cette exrremité, &amp; d’y conduire le Roy, auec reſolu
+        <lb rend="¬" break="no" />tion ſi on le preſſe de le tranſporter hors de la France, eſtat
+        <lb rend="¬" break="no" />capable de tour entreprendre, &amp; la Reyne de tout ſouffrir.
+        <lb />9. Nous n’aurons point de peine de perſuader à la Ville de
+        <lb />Paris ce qu’elle void &amp; ſent, à ſçauoir que la rage conceué
+        <lb />par le Cardinal maarin contre le Parlement, qui l’a con.
+        <lb rend="¬" break="no" />damneé, contre les Compagnies Souueraines, &amp; maiſon de
+        <lb />Ville, qui ont demandé ſon eſloignement, contre les Bour
+        <lb rend="¬" break="no" />geois, qui ont crié ſi ſouuent point de mazarin, l’a porrté à
+        <lb />faire approcher ſes armées, qui ont rauagé tous les enui
+        <lb rend="¬" break="no" />rons de Paris: ll a premierement ſaccage depuis Eſtampes
+        <lb />1uſques aà nos Fau-bourgs, il a fait paſſer ſes armees en
+        <lb />Brje pour la deſoler; il les a logees dans la bonne France,
+        <lb />pour y faire la moiſſon deuant le temps; il veut maintenant
+        <lb />’eſtablir en vn lieu d’ol il puiſſe gaſter nos vendanges, &amp;
+        <lb rend="¬" break="no" />fermer les paſſages aux viures, ayant pris le deſſus &amp; les
+        <lb />deſſous des riuieres qui nous uourriſſent, ainſi il ne nous
+        <lb />laiſſe plus que le deſeſpoir pour eonſeiller.
+        <lb />o. N’oubliant rien de ce qui peut conanter l’eſprit vin
+        <lb rend="¬" break="no" />dicatif d’vn homme de ſa naron, il a voulu depuis peu de
+        <lb />iours faire dans Paris vn maſſacre plus cruel que celuy des
+        <lb />Veſpres de Sicile d’ou il eſt ſorty. Il auoit projeté d’entrer
+        <lb />dãsParis par trahiſon &amp; par force pour nous piſler, &amp;ſe def
+        <lb rend="¬" break="no" />faire des plus gens debien, ayant deſiré d’obliger à̀ la re
+        <lb rend="¬" break="no" />taire Monſeigaeur leDuc d’Orleans, ou de l’enuelopper
+        <lb />daus le maſare, auquel ilanoit detia Monfieur le Prio <pb n="18" />
+        <lb />14
+        <lb />ce, trois auvres Princes, pluſieurs Oficiers des Compa
+        <lb />gnies Souuer. ines, &amp; quantité́ de bons Citoyens. Ayant
+        <lb />encontre de la reſiſtence, il ſe logea auee le Roy ſur vne
+        <lb />eminence pour accouſtumer au ſangvn Prinee de quator
+        <lb rend="¬" break="no" />ze ans, qui voyoit deuant ſoy comme dans vn Amphſthea
+        <lb rend="¬" break="no" />tre ſes vaillans Subjets immolez de part &amp; d’autre la for
+        <lb rend="¬" break="no" />tune du Cardinal Mazarin. Eſt il poſfible que cette Prn
+        <lb rend="¬" break="no" />ceſſe pour laquelle nous auons eu aurrefois tait de com.
+        <lb />paſſion n’en ayt point maintenant pour nous? qu’elle por
+        <lb rend="¬" break="no" />re ce fils accordé aux larmes de noftre pieteé, à tirer celles
+        <lb />de noſtre miſere? &amp; ne voye pas que ſi Paris qui eſt la te.
+        <lb />te du Royaume eſt rudement frappé́; tout le corps tom
+        <lb rend="¬" break="no" />bera en conuulſion? Faut-il que pluſieurs millions de
+        <lb />François ſentent ce ſyncope mortel, pour contenter a
+        <lb />furie d’vn eſtranger, qui a pour principal conſeiller vn en
+        <lb rend="¬" break="no" />ragé Zongo Vndedei banny de ſon pays, qui ne parle que
+        <lb />de fers, que de feux, &amp; que de faim pour les Pariſiens,
+        <lb />qui ont traitté auec tant de courtoiſie le maiſtre, &amp; le
+        <lb />alet?
+        <lb />. Si le Cardinal Mazarin eſt ſi effronté de dire, que les
+        <lb />Princes ſont les veritables cauſes de nos deſordres, nous
+        <lb />alleguerons leurs proreſtations enregiſtreées dans les Gref
+        <lb rend="¬" break="no" />fes des Compagnies Souueraies, &amp; maiſon de Vlle de
+        <lb />Paris; &amp; nous ne repreſenterons que l’humanité &amp; dou
+        <lb rend="¬" break="no" />leur de Monſeigneur le Duc d’Orleans, vray heritier des
+        <lb />vertus du Roy Henry le Grand ſon pere, nous ſommes aſ
+        <lb rend="¬" break="no" />ſeurez qu’il poſera les armes auſſi toſt que le Cardinal as
+        <lb />zarin ſe ſera retiré, ſa vie &amp; celles des Princes du ſang vnis
+        <lb />auec luy qui appartiennent au public, ne pouuant eſtre en
+        <lb />ſeureté́ ſans cér eſloignement.
+        <lb /> 2. Peut-on dire que le Cardinal nrazarln ſoit bon pour
+        <lb />nous &amp; ſage pour ſoy, lors qu’il nous veut ruiner, &amp; e pe
+        <lb rend="¬" break="no" />dre luy meſme pour nous gouuerher endeſpit de nos Loix,
+        <lb />&amp; de la raiſon qui les a’ faires, &amp; les veut conſeruer: aais
+        <lb />peut. on dire que ceux quile latnt ou qui de maintien
+        <lb />aent par corrupi ſoieur plus geade biea qua nôus qu <pb n="19" />
+        <lb />3
+        <lb />eruns ſpre ſs empoonner, eonentons nore cone
+        <lb />ſeleue ei ioneaes er i e luie pueine enoir dne ene
+        <lb />eie e eile deiai urenas lei de u repneue pnun ne
+        <lb />pne e ſreono deproſairaer lonnr ur de un ſoenenon q!
+        <lb />oeſle nununouein ſounu leun lſsleie ponun ne e
+        <lb />pl un iſoue le bonns eenie, poue ſe rone oe rern
+        <lb />erpse lous e pe oons l oeeoſies qoin oi odonoere
+        <lb />noeu oee oſer le ropun de loeure pnrn nmoun ope one e
+        <lb />ees de n ponr dlrnes qui peoat e peie puo en ene
+        <lb />n iuſele u dereie ins lanunpe eoieoen er.
+        <lb />niſe eue rnen ouennri ſne onireuene e ene e
+        <lb />no oienene eui nine len e pulr eiei eoe iuenrene
+        <lb />en ene eneneiens feene le eoedueſluilenin nne de
+        <lb />aoune e un eie lneere punrini eneue e ie inre
+        <lb />oeſeue eoi e nul eſlne dln l ornnue enr p ne nn
+        <lb />Ple en deee erani le ean deneoe ileur llre enele
+        <lb />une nueueſinoni eaeinusnia ie rya e nue meie
+        <lb /> ni p e ſle e noenreanonſiprere li eu ne re ole
+        <lb />eue ueie eoneſune le ennueronedi ie u ner
+        <lb />nue dnule eodlnie oui ouie e ſi ne e e eun eleſe
+        <lb />nmeenunue eilei line el ene iue deenrur re n nle
+        <lb />one dune ourne en nierns pous cels ſeroun nre oen pe
+        <lb />leuoeſopu oiulianene, &amp;e ae ſerue ys deſe pine
+        <lb />au Ciel.
+        <lb />Omn honeſta ratis expedieodlaeſalasis, praſerin pb
+        <lb />FIN. <pb n="20" />
+        <imprimatur>
+          <lb />DE PAR SON ALTESSE
+          <lb />Royalle.
+          <lb />Vio v R ’ v y deuxiéme du mois de Dece
+          <lb rend="¬" break="no" />bre 1yr. Monſejgneur Fils de France, Oncle du
+          <lb />Roy, Duc d’orleans, eſant a Paris, voulant fauoar
+          <lb rend="¬" break="no" />blement traiter la Vefue I. GVILLE OT apres auoir
+          <lb />eſté particulierement informé de ſa capacité, &amp; des
+          <lb />ſoins qu’elle prend da faire fidellement &amp; correctement
+          <lb />imprimer les Pieces, Ouurages &amp; Relations qui luy
+          <lb />ſont enuoyé́es pour ſon ſeruice. Son Alteſſe Royalle
+          <lb /> luy a permis de porter la qualité de ſon Imprimeuſe or
+          <lb rend="¬" break="no" />dinaire. Veut &amp; ordonnae qu’elle ſoit employée dans les
+          <lb />Eſtats des Officiers de ſa Maiſon, &amp; qu’elle jouiſſe des
+          <lb />Honneurs, Priuileges, Franchiſes, Libertez &amp; Droirs
+          <lb /> que ſes autres Domeſtiques. Faiſant Son Alteſſe Royal
+          <lb rend="¬" break="no" />le defenſes à tous Imprimeurs &amp; autres, d’imprimer ou
+          <lb />contrefaire, &amp; mettre au jour ſous quelque prerexte que
+          <lb />ce puiſſe eſtre, les Relations, Pieces &amp; autres Ouura
+          <lb rend="¬" break="no" /> ges d’Imprimerie, qu’elle fait ou pourra faire à l’adue
+          <lb rend="¬" break="no" />nir pour le ſeruice &amp; par l’ordre de Son Alteſſe Royalle,
+          <lb />qui a pour témoignage de cette ſienne volonté ſigné
+          <lb />le preſent Breuet, &amp; commandé eſtre contreſigné par.
+          <lb /> moy ſon Conſeiller &amp; Secretaire de ſes Commande
+          <lb rend="¬" break="no" />mens, Maiſon &amp; Finances.
+          <lb />GASTON.
+          <lb />Signé,
+          <lb />Et plus bas,
+          <lb />DE FROMONT.</imprimatur>
+      </p>
+    </body>
+  </text>
 </TEI>

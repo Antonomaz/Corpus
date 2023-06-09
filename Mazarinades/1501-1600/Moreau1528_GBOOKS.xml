@@ -1,738 +1,532 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/master/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1528_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">La guerre en fuite hors du royaume de France, en vers
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">La guerre en fuite hors du royaume de France, en vers
           burlesques.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2022-10-25">25 octobre 2022</date>
-				<availability status="restricted" n="cc-by">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=wTLAU2D5FR8C"/>
-					<author/>
-					<title source="Moreau">Guerre (la) en fuite hors du royaume de France, en vers
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2022-10-25">25 octobre 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=wTLAU2D5FR8C" />
+          <author />
+          <title source="Moreau">Guerre (la) en fuite hors du royaume de France, en vers
             burlesques.</title>
-					<pubPlace source="Moreau">Sans lieu</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure unit="page" quantity="8"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale de Lyon</institution>
-						<repository/>
-						<idno type="cote">Rés 312047</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace source="Moreau">Sans lieu</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure unit="page" quantity="8" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale de Lyon</institution>
+            <repository />
+            <idno type="cote">Rés 312047</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">1528. Guerre (la) en fuite hors du royaume de France, en vers
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">1528. Guerre (la) en fuite hors du royaume de France, en vers
           burlesques.Sans Lieu, 1649,8 pages.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">vers</term>
-					<term type="genre" ref="litterature/burlesque.xml">burlesque</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_18" source="Moreau">
-					<p>Paix de Saint-Germain</p>
-					<date when="1649-03-30">1649-03-30</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-10-25" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<l>
-					<lb/>
-3				</l>
-				<l>
-					<lb/>
-&amp;; t,&amp;As &amp;				</l>
-				<l>
-					<lb/>
-LA GVERRE EN FVITE				</l>
-				<l>
-					<lb/>
-bors du R oyaume de France.				</l>
-				<l>
-					<lb/>
-EN VERS BVRLESQVES.				</l>
-				<l>
-					<lb/>
-. N a touſioars vau ſar la terre				</l>
-				<l>
-					<lb/>
-e pue la flureiur dl lu puere				</l>
-				<l>
-					<lb/>
-ſlé et meſme elleeſt à̀ noſtre dam,				</l>
-				<l>
-					<lb/>
-P Preſque auſſi vieille comme Adam.				</l>
-				<l>
-					<lb/>
-pa e acor ne ſçay-ie ſi cét homme				</l>
-				<l>
-					<lb/>
-A pres auoir mordu la ponmme,				</l>
-				<l>
-					<lb/>
-Auec Eue qui le ſurprend				</l>
-				<l>
-					<lb/>
-N a point eu quelque different.				</l>
-				<l>
-					<lb/>
-C ain par vne a ction noire				</l>
-				<l>
-					<lb/>
-Oecit Abel d’vne naachoire,				</l>
-				<l>
-					<lb/>
-Et le meurtriſſant de ſes mains				</l>
-				<l>
-					<lb/>
-Tua le reſte des hunaains,				</l>
-				<l>
-					<lb/>
-Qui depuis ont perdu la vie				</l>
-				<l>
-					<lb/>
-u par le meurtre, ou par ’enuie.				</l>
-				<l>
-					<lb/>
-Ie ſç̧ay bien que depuis aui				</l>
-				<l>
-					<lb/>
-L’oni n’a ceſſé de faire ainſi,				</l>
-				<l>
-					<lb/>
-Tant vae mauuaiſe nature				</l>
-				<l>
-					<lb/>
-Met noſtre eſtat à l’auanture,				</l>
-				<l>
-					<lb/>
-Quand pour vn zeth ou pour vn rieu				</l>
-				<l>
-					<lb/>
-On prend noſtre ame &amp; noſtre bien.				</l>
-				<l>
-					<lb/>
-Il n’eſt point de ſi puiſſant charme				</l>
-				<l>
-					<lb/>
-Ny qui nous donne tant d’allarme				</l>
-				<l>
-					<lb/>
-ue l’intéreſt, &amp; le pouuoir				</l>
-				<l>
-					<lb/>
-De tenit ce qu’on peut auoir,				</l>
-				<l>
-					<lb/>
-Et l’homme d’ordiaaire aſpire				</l>
-				<l>
-					<lb/>
-A prendre vne ſorted’empire				</l>
-				<l>
-					<lb/>
-&amp;’il voit que ſa felicite				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-4				</l>
-				<l>
-					<lb/>
-Luy preſente vne authorité.				</l>
-				<l>
-					<lb/>
-De-là l’on a veu les batailles,				</l>
-				<l>
-					<lb/>
-Nous cauſer tant de funorailles,				</l>
-				<l>
-					<lb/>
-Tant de corps couchez a l’enuers				</l>
-				<l>
-					<lb/>
-Mangez de verminc &amp; de vers,				</l>
-				<l>
-					<lb/>
-Sans honneur &amp; ſans ſepulture				</l>
-				<l>
-					<lb/>
-Contre tout droit de la nature,				</l>
-				<l>
-					<lb/>
-Tant de vefues, tant d’orphelins,				</l>
-				<l>
-					<lb/>
-Tant de nobles &amp; de vilains,				</l>
-				<l>
-					<lb/>
-Paſſez au tranchant de l’eſp ée				</l>
-				<l>
-					<lb/>
-Dont la campagne eſt oceupeée.				</l>
-				<l>
-					<lb/>
-Ninue fut le premier qui mit				</l>
-				<l>
-					<lb/>
-Tant de peuples qu’ilſeſoumit,				</l>
-				<l>
-					<lb/>
-Au loug deſon obe yſſance				</l>
-				<l>
-					<lb/>
-Tant il eut d’heur &amp; de puiſſanee,				</l>
-				<l>
-					<lb/>
-Et monſtra ptemier le chemin				</l>
-				<l>
-					<lb/>
-D’eſtre cruel &amp; inhumain.				</l>
-				<l>
-					<lb/>
-Depuis on a veu que l’orage.				</l>
-				<l>
-					<lb/>
-A touſiours augmenté ſa rage,				</l>
-				<l>
-					<lb/>
-Et l’on eſt venu dans tel poinét				</l>
-				<l>
-					<lb/>
-Qu’à cette heure on n’eſpargne poiit				</l>
-				<l>
-					<lb/>
-Le compere ny la commere				</l>
-				<l>
-					<lb/>
-Pourueu qu’on face ſon affaire,				</l>
-				<l>
-					<lb/>
-Et qu’on puiſſe auoir del’autruy				</l>
-				<l>
-					<lb/>
-Tout ce qu’on peut prendre ſur luy,				</l>
-				<l>
-					<lb/>
-Sans qu’on garde aucune meſure				</l>
-				<l>
-					<lb/>
-Quand on luy veut faire vne iniure.				</l>
-				<l>
-					<lb/>
-Dans la France meſme ſouuent				</l>
-				<l>
-					<lb/>
-Ons’eſt veu touché de ce vent				</l>
-				<l>
-					<lb/>
-Qui n’ameine rien que carnage,				</l>
-				<l>
-					<lb/>
-Que meurtre, que ſoin, que dommage.				</l>
-				<l>
-					<lb/>
-Comme on a veu ces iours paſſez:				</l>
-				<l>
-					<lb/>
-Mais nous auons eſté laſſee				</l>
-				<l>
-					<lb/>
-Bien-taſt de cette guerre infame,				</l>
-				<l>
-					<lb/>
-Ee ie vous iure ſur noname				</l>
-				<l>
-					<lb/>
-Que aous n’eſtions guere conteas				</l>
-				<l>
-					<lb/>
-				</l>
-				<l>
-					<lb/>
-1.				</l>
-				<l>
-					<lb/>
-21				</l>
-				<l>
-					<lb/>
-¬				</l>
-				<l>
-					<lb/>
-De				</l>
-				<l>
-					<lb/>
-5				</l>
-				<l>
-					<lb/>
-Que nous n’eſtions guere eontans				</l>
-				<l>
-					<lb/>
-De la faire durer long-temps.				</l>
-				<l>
-					<lb/>
-Le Ciel propiee &amp; ſe courable				</l>
-				<l>
-					<lb/>
-Tout d’vn coup nous fut fauorable,				</l>
-				<l>
-					<lb/>
-Et comme il nous auoit tracé				</l>
-				<l>
-					<lb/>
-Ce mal toutd’va coup commencé,				</l>
-				<l>
-					<lb/>
-De meſme auſſi voulut-il faire				</l>
-				<l>
-					<lb/>
-Pour mettre d fin ce grand affaire,				</l>
-				<l>
-					<lb/>
-Car les Meſſieurs de Parlemen				</l>
-				<l>
-					<lb/>
-Ont couru ſi diligemnaent				</l>
-				<l>
-					<lb/>
-u deuant de cette tempeſte				</l>
-				<l>
-					<lb/>
-Qui fondoit deſſus noſtre teſte,				</l>
-				<l>
-					<lb/>
-Que ie m’eſmerueœille comment				</l>
-				<l>
-					<lb/>
-Ils ont tout fait ſi promptement;				</l>
-				<l>
-					<lb/>
-Puis la Reine qui les ſeconde,				</l>
-				<l>
-					<lb/>
-Reine la meilleure du monde,				</l>
-				<l>
-					<lb/>
-Reine qui ne demande rien				</l>
-				<l>
-					<lb/>
-Que noltre honneur &amp; noſtre bien,				</l>
-				<l>
-					<lb/>
-Fort aiſeément s’eſt accordé́e				</l>
-				<l>
-					<lb/>
-A a Paix qu’on a demandée.				</l>
-				<l>
-					<lb/>
-Cette paix bannit d’auec nous				</l>
-				<l>
-					<lb/>
-La guerre, la peine, &amp; les eoup;				</l>
-				<l>
-					<lb/>
-Si bien qu’au ieu de ees miſeres				</l>
-				<l>
-					<lb/>
-Les plaſirs nous ſont proſperes				</l>
-				<l>
-					<lb/>
-Que nous ne ſentons auiourd’huy				</l>
-				<l>
-					<lb/>
-Ny plus de mal, ny plus d’enauy,				</l>
-				<l>
-					<lb/>
-Cuerre, peſte de la nature,				</l>
-				<l>
-					<lb/>
-Image de la ſepulture,				</l>
-				<l>
-					<lb/>
-Meſchante qui ne fus iaaais				</l>
-				<l>
-					<lb/>
-Que la marraſtre de la Paix				</l>
-				<l>
-					<lb/>
-Cette Deeſſe bien ainmée				</l>
-				<l>
-					<lb/>
-Et-de tous les bonseſtimée,				</l>
-				<l>
-					<lb/>
-Guerre l’eſpouuante &amp; l’effroy				</l>
-				<l>
-					<lb/>
-Du peuple &amp; de ſon ieune Roy,				</l>
-				<l>
-					<lb/>
-Gerre qui retiens pour tes guidos				</l>
-				<l>
-					<lb/>
-Les meſ hantes ſœurs Eumenides,				</l>
-				<l>
-					<lb/>
-Qul pris ta naiſſance aux enfers				</l>
-				<l>
-					<lb/>
-Dont tu nous veux donner les fers,				</l>
-				<l>
-					<lb/>
-Et comme pour punir aos vices				</l>
-				<l>
-					<lb/>
-Tu nous preparois des ſupplices				</l>
-				<l>
-					<lb/>
-Qui nous faiſant du mal par tout				</l>
-				<l>
-					<lb/>
-N’auroient iamais riue ny bout,				</l>
-				<l>
-					<lb/>
-Si ce n’eſtoit que la clemence				</l>
-				<l>
-					<lb/>
-De l’eternelle Sapience				</l>
-				<l>
-					<lb/>
-A yant pitié de ſes humains				</l>
-				<l>
-					<lb/>
-Ne nous eutoſté detes mains.				</l>
-				<l>
-					<lb/>
-Va-t’en done, eruelle enragée,				</l>
-				<l>
-					<lb/>
-Te noyer daas la mer Egea,				</l>
-				<l>
-					<lb/>
-Va parmy ces Geans eruels				</l>
-				<l>
-					<lb/>
-Pour les ſupplices eternels				</l>
-				<l>
-					<lb/>
-Sont deſtinez par leur audace				</l>
-				<l>
-					<lb/>
-A punir leur meſchante race,				</l>
-				<l>
-					<lb/>
-Pour auoir voulu debout er				</l>
-				<l>
-					<lb/>
-Du haut eiel le grand Iupiter				</l>
-				<l>
-					<lb/>
-Heureux celay qui voit reſoudre				</l>
-				<l>
-					<lb/>
-Ta malice &amp; ta rage en poudre,				</l>
-				<l>
-					<lb/>
-Qu’heureux eſt le peuple &amp; le Roy				</l>
-				<l>
-					<lb/>
-Qui ſe peut deffaire de tay,				</l>
-				<l>
-					<lb/>
-Et qui te ſait eſtre baanie				</l>
-				<l>
-					<lb/>
-Chez l’Arabe, ou dans l’Hyrcanie,				</l>
-				<l>
-					<lb/>
-Où tu verras à bras ouuerts				</l>
-				<l>
-					<lb/>
-Qu’on te fera de beaux oouuerts,				</l>
-				<l>
-					<lb/>
-Car ces peuples deé́s leur naiſſance				</l>
-				<l>
-					<lb/>
-Se ſont rangez ſous ta puiſſance,				</l>
-				<l>
-					<lb/>
-Faiſant toute leur anite				</l>
-				<l>
-					<lb/>
-De malice &amp; de cruauteé,				</l>
-				<l>
-					<lb/>
-Mais l’humeur Fran çoiſe eſt ſi belle				</l>
-				<l>
-					<lb/>
-Qu’elle n’aime poiat la querelle,				</l>
-				<l>
-					<lb/>
-Fuyant touſiours l’occaſian				</l>
-				<l>
-					<lb/>
-De faire vne laſehe aéction,.				</l>
-				<l>
-					<lb/>
-Et de ſe voir ta trjbutaire				</l>
-				<l>
-					<lb/>
-uand c’eſt pour vn mauuais affaire.				</l>
-				<l>
-					<lb/>
-Mais quaad il faut adroitemet				</l>
-				<l>
-					<lb/>
-Te mettre dans le monument				</l>
-				<l>
-					<lb/>
-Et rompreta rage effrontée,				</l>
-				<l>
-					<lb/>
-On la void alors indompté́e,				</l>
-				<l>
-					<lb/>
-Ne ſe laiſſant point outrager				</l>
-				<l>
-					<lb/>
-A la force d’vn eſtranger,				</l>
-				<l>
-					<lb/>
-Et ſe rendant touſiours contraire				</l>
-				<l>
-					<lb/>
-Au dommage qu’on luy veut faire				</l>
-				<l>
-					<lb/>
-Penſes-tu qu’il te fait beau voir				</l>
-				<l>
-					<lb/>
-Maintenant qu’il te faut auoir				</l>
-				<l>
-					<lb/>
-Le viſage bas, à la ſorte				</l>
-				<l>
-					<lb/>
-Que l’à toute perſonae morre,				</l>
-				<l>
-					<lb/>
-Toy qui auois accouſtumé				</l>
-				<l>
-					<lb/>
-De l’auoir touſiours enflamae.				</l>
-				<l>
-					<lb/>
-Que ie ris quand ie vois ces chaiſnes				</l>
-				<l>
-					<lb/>
-Que tu portes ou que tu traiſnes				</l>
-				<l>
-					<lb/>
-Dont tu prenois la volonté				</l>
-				<l>
-					<lb/>
-De nous mettre en captiuiteé,				</l>
-				<l>
-					<lb/>
-Qui te iettent aux fers toy-meſme				</l>
-				<l>
-					<lb/>
-Toute defaite &amp; toute bleſme				</l>
-				<l>
-					<lb/>
-Creuant de rage &amp; de deſpit				</l>
-				<l>
-					<lb/>
-D’auoir perdu tout tn eredit:				</l>
-				<l>
-					<lb/>
-Ie contenple a tes pieds des armes,				</l>
-				<l>
-					<lb/>
-Des cris, des pleurs &amp; des allarmes,				</l>
-				<l>
-					<lb/>
-Et des hommes couchez dedans				</l>
-				<l>
-					<lb/>
-Qui rongent &amp; grincent lears dents;				</l>
-				<l>
-					<lb/>
-Des plaſtrons auec des eſpées				</l>
-				<l>
-					<lb/>
-Qui dans le ſang furent trempees,				</l>
-				<l>
-					<lb/>
-Des caſques, des lances des traits,				</l>
-				<l>
-					<lb/>
-Des tambours, &amp; des allecrets,				</l>
-				<l>
-					<lb/>
-Des cuiraces &amp; des trompettes,				</l>
-				<l>
-					<lb/>
-Les pertes que tu nous as faites,				</l>
-				<l>
-					<lb/>
-Le renuerſement des maiſons,				</l>
-				<l>
-					<lb/>
-Les fruits gaſtez dans leurs ſaiſons,				</l>
-				<l>
-					<lb/>
-Et les frayeurs eſpouuantables				</l>
-				<l>
-					<lb/>
-Que cauſont tes mains deteſtables.				</l>
-				<l>
-					<lb/>
-.,				</l>
-				<l>
-					<lb/>
-Va, ſouffre maintenant l’aſſaut,				</l>
-				<l>
-					<lb/>
-S ois plus legere, &amp; d’vn plein ſaut				</l>
-				<l>
-					<lb/>
-Monte ſur le char qu’on atelle,				</l>
-				<l>
-					<lb/>
-Et de ta charge criminelle				</l>
-				<l>
-					<lb/>
-Fais-le plier deſſous le fais				</l>
-				<l>
-					<lb/>
-Des malheurs que tu nous as fais.				</l>
-				<l>
-					<lb/>
-Va done, obeys à la Reine,				</l>
-				<l>
-					<lb/>
-Sois ſouple âà la cour ſouueraine,				</l>
-				<l>
-					<lb/>
-Qui ſouſtenant noſtre intereſt				</l>
-				<l>
-					<lb/>
-A donné ton dernier arreſt.				</l>
-				<l>
-					<lb/>
-Va, crains nſtre ieune Moarque				</l>
-				<l>
-					<lb/>
-Qui ſe fait vne belle marque				</l>
-				<l>
-					<lb/>
-De ta defaite, &amp; deſormais				</l>
-				<l>
-					<lb/>
-Nous prepare vne belle paix,				</l>
-				<l>
-					<lb/>
-Car nous auons bonne eſperance				</l>
-				<l>
-					<lb/>
-Qu’il doit ſi bien regir la France				</l>
-				<l>
-					<lb/>
-Qu’on ’aura que contentement				</l>
-				<l>
-					<lb/>
-Sous vn ſi beau gouuernemet.				</l>
-				<l>
-					<lb/>
-FIN.				</l>
-LA GVERRE
-        ENFVITE
-        de France.
-        EN VFRS BVRLESQVES.
-        
-        C			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">vers</term>
+          <term type="genre" ref="litterature/burlesque.xml">burlesque</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_18" source="Moreau">
+          <p>Paix de Saint-Germain</p>
+          <date when="1649-03-30">1649-03-30</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-10-25" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />LA GVERRE
+        <lb />ENFVITE
+        <lb />de France.
+        <lb />EN VFRS BVRLESQVES.
+        <lb />
+        <lb rend="¬" break="no" />C <pb n="2" />
+        <pb n="3" />
+        <l>
+          <lb />3</l>
+        <l>
+          <lb />&amp;; t,&amp;As &amp;</l>
+        <l>
+          <lb />LA GVERRE EN FVITE</l>
+        <l>
+          <lb />bors du R oyaume de France.</l>
+        <l>
+          <lb />EN VERS BVRLESQVES.</l>
+        <l>
+          <lb />. N a touſioars vau ſar la terre</l>
+        <l>
+          <lb /> e pue la flureiur dl lu puere</l>
+        <l>
+          <lb />ſlé et meſme elleeſt à̀ noſtre dam,</l>
+        <l>
+          <lb />P Preſque auſſi vieille comme Adam.</l>
+        <l>
+          <lb />pa e acor ne ſçay-ie ſi cét homme</l>
+        <l>
+          <lb />A pres auoir mordu la ponmme,</l>
+        <l>
+          <lb />Auec Eue qui le ſurprend</l>
+        <l>
+          <lb />N a point eu quelque different.</l>
+        <l>
+          <lb />C ain par vne a ction noire</l>
+        <l>
+          <lb />Oecit Abel d’vne naachoire,</l>
+        <l>
+          <lb />Et le meurtriſſant de ſes mains</l>
+        <l>
+          <lb />Tua le reſte des hunaains,</l>
+        <l>
+          <lb />Qui depuis ont perdu la vie</l>
+        <l>
+          <lb />u par le meurtre, ou par ’enuie.</l>
+        <l>
+          <lb />Ie ſç̧ay bien que depuis aui</l>
+        <l>
+          <lb />L’oni n’a ceſſé de faire ainſi,</l>
+        <l>
+          <lb />Tant vae mauuaiſe nature</l>
+        <l>
+          <lb />Met noſtre eſtat à l’auanture,</l>
+        <l>
+          <lb />Quand pour vn zeth ou pour vn rieu</l>
+        <l>
+          <lb />On prend noſtre ame &amp; noſtre bien.</l>
+        <l>
+          <lb />Il n’eſt point de ſi puiſſant charme</l>
+        <l>
+          <lb />Ny qui nous donne tant d’allarme</l>
+        <l>
+          <lb />ue l’intéreſt, &amp; le pouuoir</l>
+        <l>
+          <lb />De tenit ce qu’on peut auoir,</l>
+        <l>
+          <lb />Et l’homme d’ordiaaire aſpire</l>
+        <l>
+          <lb />A prendre vne ſorted’empire</l>
+        <l>
+          <lb /> &amp;’il voit que ſa felicite</l>
+        <l>
+          <lb />
+        </l>
+        <pb n="4" />
+        <l>
+          <lb /> 4</l>
+        <l>
+          <lb />Luy preſente vne authorité.</l>
+        <l>
+          <lb /> De-là l’on a veu les batailles,</l>
+        <l>
+          <lb />Nous cauſer tant de funorailles,</l>
+        <l>
+          <lb />Tant de corps couchez a l’enuers</l>
+        <l>
+          <lb />Mangez de verminc &amp; de vers,</l>
+        <l>
+          <lb />Sans honneur &amp; ſans ſepulture</l>
+        <l>
+          <lb />Contre tout droit de la nature,</l>
+        <l>
+          <lb />Tant de vefues, tant d’orphelins,</l>
+        <l>
+          <lb /> Tant de nobles &amp; de vilains,</l>
+        <l>
+          <lb />Paſſez au tranchant de l’eſp ée</l>
+        <l>
+          <lb />Dont la campagne eſt oceupeée.</l>
+        <l>
+          <lb />Ninue fut le premier qui mit</l>
+        <l>
+          <lb />Tant de peuples qu’ilſeſoumit,</l>
+        <l>
+          <lb />Au loug deſon obe yſſance</l>
+        <l>
+          <lb />Tant il eut d’heur &amp; de puiſſanee,</l>
+        <l>
+          <lb />Et monſtra ptemier le chemin</l>
+        <l>
+          <lb />D’eſtre cruel &amp; inhumain.</l>
+        <l>
+          <lb />Depuis on a veu que l’orage.</l>
+        <l>
+          <lb />A touſiours augmenté ſa rage,</l>
+        <l>
+          <lb />Et l’on eſt venu dans tel poinét</l>
+        <l>
+          <lb />Qu’à cette heure on n’eſpargne poiit</l>
+        <l>
+          <lb />Le compere ny la commere</l>
+        <l>
+          <lb />Pourueu qu’on face ſon affaire,</l>
+        <l>
+          <lb />Et qu’on puiſſe auoir del’autruy</l>
+        <l>
+          <lb />Tout ce qu’on peut prendre ſur luy,</l>
+        <l>
+          <lb />Sans qu’on garde aucune meſure</l>
+        <l>
+          <lb />Quand on luy veut faire vne iniure.</l>
+        <l>
+          <lb />Dans la France meſme ſouuent</l>
+        <l>
+          <lb />Ons’eſt veu touché de ce vent</l>
+        <l>
+          <lb />Qui n’ameine rien que carnage,</l>
+        <l>
+          <lb />Que meurtre, que ſoin, que dommage.</l>
+        <l>
+          <lb />Comme on a veu ces iours paſſez:</l>
+        <l>
+          <lb />Mais nous auons eſté laſſee</l>
+        <l>
+          <lb />Bien-taſt de cette guerre infame,</l>
+        <l>
+          <lb />Ee ie vous iure ſur noname</l>
+        <l>
+          <lb />Que aous n’eſtions guere conteas</l>
+        <l>
+          <lb />
+        </l>
+        <l>
+          <lb />1.</l>
+        <l>
+          <lb />21</l>
+        <l>
+          <lb />¬</l>
+        <l>
+          <lb /> De</l>
+        <pb n="5" />
+        <l>
+          <lb />5</l>
+        <l>
+          <lb />Que nous n’eſtions guere eontans</l>
+        <l>
+          <lb />De la faire durer long-temps.</l>
+        <l>
+          <lb />Le Ciel propiee &amp; ſe courable</l>
+        <l>
+          <lb />Tout d’vn coup nous fut fauorable,</l>
+        <l>
+          <lb />Et comme il nous auoit tracé</l>
+        <l>
+          <lb />Ce mal toutd’va coup commencé,</l>
+        <l>
+          <lb />De meſme auſſi voulut-il faire</l>
+        <l>
+          <lb />Pour mettre d fin ce grand affaire,</l>
+        <l>
+          <lb />Car les Meſſieurs de Parlemen</l>
+        <l>
+          <lb />Ont couru ſi diligemnaent</l>
+        <l>
+          <lb />u deuant de cette tempeſte</l>
+        <l>
+          <lb />Qui fondoit deſſus noſtre teſte,</l>
+        <l>
+          <lb />Que ie m’eſmerueœille comment</l>
+        <l>
+          <lb />Ils ont tout fait ſi promptement;</l>
+        <l>
+          <lb />Puis la Reine qui les ſeconde,</l>
+        <l>
+          <lb />Reine la meilleure du monde,</l>
+        <l>
+          <lb />Reine qui ne demande rien</l>
+        <l>
+          <lb />Que noltre honneur &amp; noſtre bien,</l>
+        <l>
+          <lb />Fort aiſeément s’eſt accordé́e</l>
+        <l>
+          <lb />A a Paix qu’on a demandée.</l>
+        <l>
+          <lb />Cette paix bannit d’auec nous</l>
+        <l>
+          <lb />La guerre, la peine, &amp; les eoup;</l>
+        <l>
+          <lb />Si bien qu’au ieu de ees miſeres</l>
+        <l>
+          <lb />Les plaſirs nous ſont proſperes</l>
+        <l>
+          <lb />Que nous ne ſentons auiourd’huy</l>
+        <l>
+          <lb />Ny plus de mal, ny plus d’enauy,</l>
+        <l>
+          <lb />Cuerre, peſte de la nature,</l>
+        <l>
+          <lb />Image de la ſepulture,</l>
+        <l>
+          <lb />Meſchante qui ne fus iaaais</l>
+        <l>
+          <lb />Que la marraſtre de la Paix</l>
+        <l>
+          <lb />Cette Deeſſe bien ainmée</l>
+        <l>
+          <lb />Et-de tous les bonseſtimée,</l>
+        <l>
+          <lb />Guerre l’eſpouuante &amp; l’effroy</l>
+        <l>
+          <lb />Du peuple &amp; de ſon ieune Roy,</l>
+        <l>
+          <lb />Gerre qui retiens pour tes guidos</l>
+        <l>
+          <lb />Les meſ hantes ſœurs Eumenides,</l>
+        <pb n="6" />
+        <l>
+          <lb />Qul pris ta naiſſance aux enfers</l>
+        <l>
+          <lb />Dont tu nous veux donner les fers,</l>
+        <l>
+          <lb />Et comme pour punir aos vices</l>
+        <l>
+          <lb />Tu nous preparois des ſupplices</l>
+        <l>
+          <lb />Qui nous faiſant du mal par tout</l>
+        <l>
+          <lb />N’auroient iamais riue ny bout,</l>
+        <l>
+          <lb />Si ce n’eſtoit que la clemence</l>
+        <l>
+          <lb />De l’eternelle Sapience</l>
+        <l>
+          <lb />A yant pitié de ſes humains</l>
+        <l>
+          <lb />Ne nous eutoſté detes mains.</l>
+        <l>
+          <lb />Va-t’en done, eruelle enragée,</l>
+        <l>
+          <lb />Te noyer daas la mer Egea,</l>
+        <l>
+          <lb />Va parmy ces Geans eruels</l>
+        <l>
+          <lb />Pour les ſupplices eternels</l>
+        <l>
+          <lb />Sont deſtinez par leur audace</l>
+        <l>
+          <lb />A punir leur meſchante race,</l>
+        <l>
+          <lb />Pour auoir voulu debout er</l>
+        <l>
+          <lb />Du haut eiel le grand Iupiter</l>
+        <l>
+          <lb />Heureux celay qui voit reſoudre</l>
+        <l>
+          <lb />Ta malice &amp; ta rage en poudre,</l>
+        <l>
+          <lb />Qu’heureux eſt le peuple &amp; le Roy</l>
+        <l>
+          <lb />Qui ſe peut deffaire de tay,</l>
+        <l>
+          <lb />Et qui te ſait eſtre baanie</l>
+        <l>
+          <lb />Chez l’Arabe, ou dans l’Hyrcanie,</l>
+        <l>
+          <lb />Où tu verras à bras ouuerts</l>
+        <l>
+          <lb />Qu’on te fera de beaux oouuerts,</l>
+        <l>
+          <lb />Car ces peuples deé́s leur naiſſance</l>
+        <l>
+          <lb />Se ſont rangez ſous ta puiſſance,</l>
+        <l>
+          <lb />Faiſant toute leur anite</l>
+        <l>
+          <lb />De malice &amp; de cruauteé,</l>
+        <l>
+          <lb />Mais l’humeur Fran çoiſe eſt ſi belle</l>
+        <l>
+          <lb />Qu’elle n’aime poiat la querelle,</l>
+        <l>
+          <lb />Fuyant touſiours l’occaſian</l>
+        <l>
+          <lb />De faire vne laſehe aéction,.</l>
+        <l>
+          <lb />Et de ſe voir ta trjbutaire</l>
+        <l>
+          <lb />uand c’eſt pour vn mauuais affaire.</l>
+        <pb n="7" />
+        <l>
+          <lb />Mais quaad il faut adroitemet</l>
+        <l>
+          <lb />Te mettre dans le monument</l>
+        <l>
+          <lb />Et rompreta rage effrontée,</l>
+        <l>
+          <lb />On la void alors indompté́e,</l>
+        <l>
+          <lb />Ne ſe laiſſant point outrager</l>
+        <l>
+          <lb />A la force d’vn eſtranger,</l>
+        <l>
+          <lb />Et ſe rendant touſiours contraire</l>
+        <l>
+          <lb />Au dommage qu’on luy veut faire</l>
+        <l>
+          <lb />Penſes-tu qu’il te fait beau voir</l>
+        <l>
+          <lb />Maintenant qu’il te faut auoir</l>
+        <l>
+          <lb />Le viſage bas, à la ſorte</l>
+        <l>
+          <lb />Que l’à toute perſonae morre,</l>
+        <l>
+          <lb />Toy qui auois accouſtumé</l>
+        <l>
+          <lb />De l’auoir touſiours enflamae.</l>
+        <l>
+          <lb />Que ie ris quand ie vois ces chaiſnes</l>
+        <l>
+          <lb />Que tu portes ou que tu traiſnes</l>
+        <l>
+          <lb />Dont tu prenois la volonté</l>
+        <l>
+          <lb />De nous mettre en captiuiteé,</l>
+        <l>
+          <lb />Qui te iettent aux fers toy-meſme</l>
+        <l>
+          <lb />Toute defaite &amp; toute bleſme</l>
+        <l>
+          <lb />Creuant de rage &amp; de deſpit</l>
+        <l>
+          <lb />D’auoir perdu tout tn eredit:</l>
+        <l>
+          <lb />Ie contenple a tes pieds des armes,</l>
+        <l>
+          <lb />Des cris, des pleurs &amp; des allarmes,</l>
+        <l>
+          <lb />Et des hommes couchez dedans</l>
+        <l>
+          <lb />Qui rongent &amp; grincent lears dents;</l>
+        <l>
+          <lb />Des plaſtrons auec des eſpées</l>
+        <l>
+          <lb />Qui dans le ſang furent trempees,</l>
+        <l>
+          <lb />Des caſques, des lances des traits,</l>
+        <l>
+          <lb />Des tambours, &amp; des allecrets,</l>
+        <l>
+          <lb />Des cuiraces &amp; des trompettes,</l>
+        <l>
+          <lb />Les pertes que tu nous as faites,</l>
+        <l>
+          <lb />Le renuerſement des maiſons,</l>
+        <l>
+          <lb />Les fruits gaſtez dans leurs ſaiſons,</l>
+        <l>
+          <lb />Et les frayeurs eſpouuantables</l>
+        <l>
+          <lb />Que cauſont tes mains deteſtables.</l>
+        <pb n="8" />
+        <l>
+          <lb /> .,</l>
+        <l>
+          <lb />Va, ſouffre maintenant l’aſſaut,</l>
+        <l>
+          <lb />S ois plus legere, &amp; d’vn plein ſaut</l>
+        <l>
+          <lb />Monte ſur le char qu’on atelle,</l>
+        <l>
+          <lb />Et de ta charge criminelle</l>
+        <l>
+          <lb />Fais-le plier deſſous le fais</l>
+        <l>
+          <lb />Des malheurs que tu nous as fais.</l>
+        <l>
+          <lb />Va done, obeys à la Reine,</l>
+        <l>
+          <lb />Sois ſouple âà la cour ſouueraine,</l>
+        <l>
+          <lb />Qui ſouſtenant noſtre intereſt</l>
+        <l>
+          <lb />A donné ton dernier arreſt.</l>
+        <l>
+          <lb />Va, crains nſtre ieune Moarque</l>
+        <l>
+          <lb />Qui ſe fait vne belle marque</l>
+        <l>
+          <lb />De ta defaite, &amp; deſormais</l>
+        <l>
+          <lb />Nous prepare vne belle paix,</l>
+        <l>
+          <lb />Car nous auons bonne eſperance</l>
+        <l>
+          <lb />Qu’il doit ſi bien regir la France</l>
+        <l>
+          <lb />Qu’on ’aura que contentement</l>
+        <l>
+          <lb />Sous vn ſi beau gouuernemet.</l>
+        <l>
+          <lb />FIN.</l>
+      </p>
+    </body>
+  </text>
 </TEI>

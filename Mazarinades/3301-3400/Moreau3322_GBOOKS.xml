@@ -1,747 +1,423 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3322_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Remontrance du roi Louis XII au roi Louis XI sur leur
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Remontrance du roi Louis XII au roi Louis XI sur leur
           différente façon de régner.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-					<persName ref="orcid:0000-0001-5815-9506" role="intern">Faure Margaux</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=ZTHrzgQP6zEC"/>
-					<author role="speaker" ref="isni:0000000121029388">
-						<persName>Louis XII</persName>
-					</author>
-					<title source="Moreau">Remontrance du roi Louis XII au roi Louis XI sur leur différente
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+          <persName ref="orcid:0000-0001-5815-9506" role="intern">Faure Margaux</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=ZTHrzgQP6zEC" />
+          <author role="speaker" ref="isni:0000000121029388">
+            <persName>Louis XII</persName>
+          </author>
+          <title source="Moreau">Remontrance du roi Louis XII au roi Louis XI sur leur différente
             façon de régner.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1649">1649</date>
-					<extent>
-						<measure quantity="14" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale</institution>
-						<repository/>
-						<idno type="cote">Rés 367793</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>False</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1649">1649</date>
+          <extent>
+            <measure quantity="14" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
+            <repository />
+            <idno type="cote">Rés 367793</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>False</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">3322. Remontrance du roi Louis XII au roi Louis XI sur leur différente
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">3322. Remontrance du roi Louis XII au roi Louis XI sur leur différente
           façon de régner. Paris, 1649, 14 piges. Contrefaçon du Dialogue entre le roi Louis XI et
           le roi Louis XII, etc.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">rhétorique délibérative</term>
-					<term type="genre">remontrances</term>
-					<term type="subject"/>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-07-19" who="MF"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<pb n="12"/>
-				<pb n="13"/>
-				<pb n="14"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-REMONSTRANCE
-        DV
-        ROY LOVIS XII
-        AV
-        ROY LOVIS XI
-        SVR LEVR DIFFERENTE FA
-        çon de regner.
-        A PARIS,
-        M. DC. XLIX. 
-        
-        3
-        REMONSTRANCE
-        Roy Louys II. a Roy ouy
-        AI. ſur leur dférente façon de
-        egner.
-        LOVyYS.. X1l.
-        geEve ls Ptlaços auſquels Dieu
-        J donne l’eſprt de iuement, &amp;e de
-        y ſ diſeaoment,&amp; lonfait connoi
-         ſtrepilsdaaormne&amp;epouxan
-        t eapahlesdofaillir. Aduonfran
-        chementque l’écladgradu, la vanié de
-        commaander nuous aſbloüie le plaa ſouueo l’eſ
-        prit&amp;euous empaeſcçherdeenoerea9ueſmos
-        E conſideer que os ’aurioaocue puiſſan
-        ceſi ellene nauseſtuiiehau, cqe Dieuau
-        thriſant ne iuſteRoyauté, &amp; Epielegi
-        ime. contieneſeul, tan de illiens ’ajesdans
-        loheyſſance. &amp; le, deaoir, leſquellesy.peu
-        roient eſtre cntpaintes ny vinetée pqrlene
-        foarce exterieur, ſi Die ndiſppſetleurs volo
-        A ij 
-        4
-        tez à ſe ſoumettre aà la domination de celuy qui
-        leur a eſté donné pour Chef, &amp; Souuerain en ter
-        re. Tremblons &amp; fremiſſons auec ſuiet dans l’ap
-        prehenſion des iugemens de Dieu. Puis que d’au
-        trant plus que nous ſommes releuez en grandeur
-        &amp; authorité, d’autant plus ſommes nous conta
-        bles &amp; reſponſables deuant Dieu, qui fait miſeri
-        cordeaux petits, &amp; chaſtie puiſſamment les grads,
-        &amp; les Puiſſans de la terre. Conſiderons que le pou
-        uoir &amp; l’authoriteé́ nous ſont donnez de la part du
-        Trés-haut, lequel interrogera de tres-haur nos
-        œuures &amp; ſondera nos penſé́es. le me ſuis main
-        cesfois eſtonné des attaches que vaus auiez pour
-        cette miſerable vie, laquelle bien conſiderée eſt
-        beaucoup plus detrempée de fiel, &amp; d’amertume
-        que de douceurs. Hé! bon Dieu, croyez-vous que
-        les Reliques que vous faiſiez venir de tous les co
-        ſtez de la France, au Pleſſis Lez-Tours quelque
-        peu auant voſtre deceds; puiſſent adiouſter vn
-        moment aux iours de voſtre vie, dont Dieu auoit
-        preſerpt les bormes; Vous imaginez-vous, que
-        ce bon Hermitte Galabrois euſt le pouuoir d’en
-        prolonger la durée; Dites-moy ie vous prie leſ
-        quels eſtoient les plus capifs, ou’ceux que vous
-        teniez enfermez dans des cages de fer, &amp; liez à des
-         groſſes boulles de fonte que vous nommez vos
-        fillettes, ou vous -meſmes qui vous eſtiez recluds
-         a.,,,,,
-        dans 
-        dans vn Chaſteau enuironaé de gens de guerre,
-        dont les marailles eſtoient parſemées de broches
-        de fer, erenelées a pluſieurs pointes, &amp; ſi draës
-        qu’homme ne les pouuoit outrepaſſer, outre que
-        vous auiez fait reueſtir tout le circuit de la Morte
-        du ?leſſis d’vn treills de gros barrcaux, auec qua
-        re moineaux de fer bien eſpoix aux encognures,
-        &amp; forces cannoniers où quarante Archers iour &amp;
-        nuict eſtoient en ſentinelle, y euſt-il iamais cri
-        minel plus eſtroitement reſerreé; Ne peut-on pas
-        dire que c’eſtoit vne priſon volontaire, dans la
-        quelle vous vous eſtiez enfermez, auec cette ſeu
-        le difference, que les autres priſonniers ſont or
-        dinairemet detenus dans les cachors, &amp; les geo
-        les par l’ordonnance d’vn luge ſuperieur; mais
-        vous n’auiez autre luge que vous-meſme, ou plu
-        ſtoſt le teſmoignage ſecret de voſtre conſcience,
-        laquelle vous repreſentant les rigoureux tt aite
-        mens que vous auiez exerceé́ contre grands &amp; pe
-        tits, vous donnoit ſuiet de craindre tout le mon
-        de, puis que vous vous eſtiez rendu redourablea
-        ous. Encores ſi les Corps de gardes, doubles &amp;
-        triples, ſi les fortereſſes, &amp; les donjons, bref ſi
-        aucune inuention pouuoit barrer l’entreé́e aux
-        maladies, &amp; les empeſcher d’aſſaillir les Grands
-        de la tertre; l’aduouë que nous aurions vn grand
-        aduantage ſur le commun, &amp; que noſtre condi. 
-        8
-        ion ſeroit encores plus eminé́e, mais les mala
-        ies &amp; la mott meſme ſe font voye à trauers les
-        Ceorps de garde, forcent les barricades, eſcala
-        dent lesmurs, &amp; viennent ſaiſir les plus robuſtes
-        Monarques au milieu de leur Throſne; Bon Dieï
-        que ceux-laà furent hardis qui oſerent vous an
-        noncer la mort, puis que le ſeul nom vous eſtoit
-        tellement en horreur, que vous auiez fait tres
-        expreſſes deffences de le proferer en voſtre pre
-        ſence aux dernieres periodes de voſtre vie. Les
-        dix- mil eſeus que vous donniez chaſque mois
-        à voſtre Medecin Coetier, n’euſſent pas eſté mal
-        employez s’il euſt eu le pouuoir de prolonger vos
-        iours, mais vous &amp; moy auons enfilé́ la route de
-        toute la terre, &amp; auons experimenté́ la vanité de
-        noſtre condition. Dieu ma fait touſiours la grace
-        de recognoiſtre que i’eſtois homme mortel, ſem
-        blable à̀ tous, formé &amp; baſty de meſme faç̧on que
-        les autres; &amp; que iamais aucun Roy n’a eu autre
-        principe de naiſſance, l’entrée de la vie nous eſt
-        commune auec le reſte des hommes, &amp; l iſſueë pa
-        reillement n’eſt pas plus glorieux de partir de cer.
-        te vie, auec la benediction des Peuples que Dieu
-        nous a ſouſmis, que non pas retenir iuſques au
-        dernier ſouſpir cette autre ſeuerité́, laquelle fait
-        craindre, &amp; redouter les Rois; mais auſli d’autre
-        part, les fait hayt durant leur vie, &amp; rend apres 
-        leur mort leur memoire odieuſe à la poſterité ne
-        croyez-vous pas que l’amedu feu Roy voſtre fils,
-        &amp; la mienne ne ſe ſentiſſent maintenant toucheées
-        d’vne grande conſolation, voyant la ſatis faction
-        que nos Peuples ont eu de nos gouuernemens,
-        Les regrets qu’ils ont teſmoigné à noſtre mort,
-        &amp; les benedictions qu’ils rendent à noſtre me.
-        moire. Il me ſouuient qu’aux Obſeques du feu
-        Roy voſtre fils, qu’on pouuoit nommer à meil
-        leur titre que les Empereurs Romains, Les deli
-        ces des hommes, viuge Gentils- hommes de ſa
-        Chambre, voulurent auoir l’honneur quoy qu’a
-        uec grande fatigue, de porter le cercueïl deplomb
-        dans lequel eſtoit ſon corps, depuis noſtre Dame
-        des Champs iuſques au tombeau, ſans vouloir
-        ſouffrir que les Porteurs de ſel de Paris nomme
-        Annonares, joü̈iſſent des Priuileges qu’ils auoient
-         de ce faire, mais bien plus, lors que l’on deſcen
-        dit le Corps, dans le caueau de S. Denys, &amp; que le
-        Grand¬ Maiſtre ſelon l’ordre vient à rompre le
-        baſton, deux Officiert du deffunct Roy, l’vn Som
-        meillier, &amp; l’autre Archer de la Garde, moururent
-        ſubitement de regret &amp; de triſteſſes; C’eſt vne ſe
-        conde vie ou pluſtoſt ne eſpece d’immortalité,
-        que la bonne odeur laquelle nous laiſſons de nos
-        deportemens, ou au contraire c’eſt vn inſigne
-        ma heur pour vn Prince, quand la memoire de 
-        s
-        ſes actions neſert qu’à̀ ſe faire deteſter, &amp; rendre
-        execrable à la poſterité.
-        LOVYSXI..
-        vOmme les humeurs des perſonnes ſont au
-        tant diflerentes que leurs conditions, auſſi
-        eſt-il mal ais e, voire meſme impoſſible de ſatisfai
-        re vn chacun, &amp; qu’vn Souuerain,lequel ſur toutes
-        choſes doit butrer à la conſeruation de ſon autho
-        rité, puiſſe contenter grands &amp; petits, &amp; parcon
-         ſequent receuoir loü̈ange &amp; approbation des vns
-        &amp; des autresS’il eſt d’humenr guerriere, il ſera ay.
-        mé des Soldats, &amp; des gens de guerre; mais d’vn
-        autre coſté les Peuples decrieront ſon gouuerne
-        ment ſous ombre qu’ils contribuent du leur, pour
-        la ſuſiſtance des armées, ſi d’autre- part il cherit la
-        Paix, &amp; tâche de conſeruer ſes Sujets dans le repos,
-        o le fera paſſer pour vn Caſanier, &amp; ce la donnera
-        cœur de vouloir entreprendre ſur ſon authorité́;
-        Les plus accomplis Monarques de l’Antiquité n’oe
-        iamais poſſedé vne gloire parfaite, ny laiſſé́ apres
-        euxvne reputarion ſi netre que les mauuais eſprits
-        ny ayant trouueé à redire; Dauid qui eſtoit vn Roy
-        ſelon le cœur de Dieu recontra pourtant vn nom
-        meé Semey, lequel luy fit milles outrages, &amp; le char
-        gea d’vne infinité d’opprobres, l’appellanthomme
-         de 
-        de ſang, fils de betail. &amp; vſurpateur du Throſne de
-         Sauil;, iI n’eſt pas meſe qu’apres la mort du ſage
-        Roy alomon, les Peuples neſe plaigniſſen des,
-        charges qu’on leurs auoit donnez. Si Ceſar n’euſt
-        pas eſté ſi indulgent il euſt conſeruéſa vie, &amp;pre
-        uenü l’attentau commis ſur ſa perſonne, par ceu
-        qu’il auoit garany de la mort, la deffiance eſt
-        quelquefois naeceſſaire à vn Prince, puis qu’e
-        ſtant tres aſſeuré que pluſieurs portent enuie à
-        ſa grandeur, il ne ſç̧auroit apportee trop de-pre
-        cçaution pour ſa conſeuati...
-        LOV YS XII.
-        ’En demeute d’accord, mais aduoü̈ez pour
-        ant que c’eſt mourir mille fois que de viure
-        continuellemens dans des tranſſes, allarmes &amp;.
-        deffiances, comme on dit que faiſoit l’ancien De
-        nis le Tiran de Siracuſe, lequel poqur ſe maintenir
-        dans la domination confia la garde de ſa perſonne
-        à des barbares eſtrangers, ayans eſloigné tous
-        ceux de ſa connoiſſance, ençor ne ’eſtimantpas
-        aſſez en ſeureé́, il s’enferma dansvne forte. Ci
-        tadelle, ou pluſtoſt s’empriſonna volontairemen,
-        Le razoir dont ſon Barbier ſe ſeruoit à luy faire le
-        poil luy donnant de lombrage, il fit appredre, 
-        à deux ieunes filles qu’il aymoit à faire la barbe;
-        mais eſtant deuenuë̈s grandes, il ne voulut plus’
-        qu’elles le touchaſſene auee le fer, ſi bien qu’il
-        rrouua inuention de ſe faire rotir la barbe &amp; les
-        nouſtaches duec des eoques de noix bruſléees.
-        Quan ll eſtoit queſtion d’aller coucher auec ſa!
-        Dame;, ll faiſoit aupatauant viſiter tous les coings
-        &amp; recoings, il auoie entouré ſon lict d’vn large &amp;
-        profondfoſſé, auee vn pohtleuis, lequel il hauſ
-        ſoit &amp; bdiſſoit luy meſme, ſelon qu’il en eſtoit
-        beſoin; Lors qu’il voulolt-haranguer ſon Peuple,
-        il parloit du faix d’vne Tour, il auoit fait baſtir
-        vn jeu de paulme dans le pourpris de ſon Cha
-        ſteau où parfois il ſe diuertiſſoit; arriua vn iour
-        que s’eſtant depoüillé pour ioüier, il donna ſes ha
-        bits &amp; ſon eſpee en garde à vn ieune garçon qu’il
-        aymoit eſperduëment, quelqu’v de la compa
-        gnie dit en fe gauſſant à ce ieune homme, au
-        moins’ il met à preſent ſa vie entre les mains de
-        ce ieune homme, s’eſtant pris à ſouſrire, fut ap
-        perceu de Denys, lequel ſur le champ les fit uer
-        tous deur, l’vn pour auoir monſtré le-che min
-        d’artenceér à ſa petſonne, l’adutre pour l’auoir ap
-        prouueé par ſon ſouſris 3 V oſla ce me ſemble vne
-        image d’vn Prince mal-heureux, lequel ayantl
-        mieux aymé le rendre-maiſtre des corps de ſes, 
-        Sujets s’et rendu quant &amp; quent eſclaue deſoy
-        meſme, n rapportaat aupe fruict de ſa doina
-        ion ryrannique qu’vne haine puolique duans
-        ſa vie, &amp; vne malediction eternelle apres ſa mdr
-        iuſques là meſme que les plus delicieux obie4
-        de la le, &amp; lea plus ſenſibles yvoluprez ſon pei
-        es d’amerumes a qui regne de la ſorte; Ainſi
-        que ee meſme Tyean fist aduoüer à ſon Fauory
-        Damocles, lequel voulut ioüir des plaiſirs d’vns
-         Royamté́ momentanée: le-demeure bien d’acoord
-        qu’il n’eſt ny ſeur ny expedient de ſe fier indiff.
-        emment à tous, &amp; qu’vn Sonuerain eſtobligeéd
-        veiller à ſa conſeruation, puis que le ſalut de ſo
-        Peuplé en deſpend, mais autie choſo eſt, de a
-        comnaetre à toutes ſortes de trencontres &amp; ſaas
-        diſtmction, autre choſe eſt auſſi de viure en telle
-        deffiance, &amp; perplexité d’eſprit qu’on ne ſoit ia
-        mais etepo, &amp; qu’on neſe puiſſe fierà qui qu!
-        eſoic, ainſi quil vous arriu quelque peur auan
-        voſtre decés! où ous entraſtes en tel ſoupços que
-        vous n’eſtiez pas aſſcure de vos plui roelep, vouas
-        deffianc meſme de voſtre propre ſils, de voſtre
-        fille, &amp; du Duci de Bourbon voſtre gendre, el
-        moing lots qu’eſtans en ne gallerie au Claſteanu
-        du Pleſſis Lez. Tous, vous commadaſtes aà vn
-        Captaire de yos Gardes de taſter ſans faite ſem¬ 
-        blant de rien, air Gentils-hommes. qui acom
-        pagnerene voſtre fils, d&amp;e voſtre gendre pour voir
-        t’ils ’auoient poine de brogantines ſous leur
-        robbes. Croyez-moy la plus ferme garde d’n
-        Prince eſt l’amour &amp; l’affection de ſon Peu
-        ple, nous auons beau employer toute la pru
-        deae humaine, pout gatantir noſtre vie des aa
-        tentats des meéchans, cela ſert de peu s’il fe ren
-        contre quelque deſeſpereé volontaire qui aban
-        donne ſa vie pour eſtre maiſtre de l’autre, &amp; bien
-        que par vne particuliere grace de Dieu, il ne ſes
-        enmarqua point de ſemblables exemples arsiueées
-        en la perſonne d’aucun Roy de la ſeconde &amp; troi
-        iéme lignée, ſi eſt oce pourtant que l’Hiſtoire
-        tant ancienne que moderne, ne nous exſournit
-        que trop dans toutes ſortes. d’Eſtats. &amp; de Mo
-        narchies. Ie ne puis paſſer ſous ſilence deux bel
-        les remarques que ie fis dernierement lors qu’or
-        me liſoit deuant moy vne Hiſtoire Rdmaine; L
-        pcemiere eſt de Nuia Pompilius, lequel ayan
-        eſté proclamé Roy, à̀ cauſe de ſa vertu, prudence
-        e doucaur, fit incontinent caſſer &amp; congedier
-        eertalnes compagnies de Sattelites au nombre
-        de tiois cens, leſquels auoient accouſtuné́ d’e
-        ſtre autour de la perſonne du Roy. Romulus ſon
-        predeceſſeur qui pourtant ne laiſſa pas d’eſtre
-         is 
-        13
-        nmis e pieces, à cauſe de laſpreté́ de ſes mœurs.
-        Ces Gardes ſe noômoient Ceĺres, conmme qui di
-        roit gens prompts à la main, &amp; diſpots à̀ tout fai
-        re. La raiſon qu’allegua ce bon Prince fut qu’il
-         ne ſe vouloit point deffier de ceux qui ſe loruoiét
-        en luy, ny eſtre Roy des gens qui ſe deffiaſſent
-        de luy. L’autre exemple eſt tirée des loüanges que
-        Senecque donnoit aà l’Empereur Neron, lequel
-        fut autant iuſte, moderé &amp; clement, comme le
-        reſte de ſa vie fut monſtrueux &amp; abominable. Ce
-        Philoſophe parlant à Neron luy diſoit que l’a
-        mour &amp; l’affection de ſes Citoyens eſtoit toute
-        ſa deffence &amp; la ſauuegarde, qu’il n’auoit beſoin
-        d’autre’ protection exterieure, puis qu’il eſtoirt en
-        plaine aſſeurance par le moyen des biens-fait
-        qu’il eorçoie enuers tous, &amp; que les armes dont
-        iI eſtoit enuironneé ne luy ſeruoient que de para
-        des, &amp; non pas de deffences. C’eſt pour vous dire
-        que le plus fort donjon de la Royauté eſt l’aſſi
-        ſtance dans les inconueniens de la vie, &amp; l’amour
-        des Sujets: l’vn &amp; l’autre venant aà manquer pour
-        prudent, &amp; accort que puiſſe eſtre le Prince a ſuet
-        de tout craindre dans vne aſſeurance de toutes
-        choſes. Nos ſucceſſeurs pourront iuger dans la
-        diferente façon de noſtre gouuernement, lequel
-        leur ſera plus expedient ou de regner par la force
-        D 
-        &amp; puiſſance abſoluë, ou par vne douce &amp; tran
-        quille authorité; I’aduoüe que le premier rend
-        vn Prince redoutable durant ſa vie, mais l’autre
-        luy acquiert vne gloire qui ſe perpetuë à la poſte
-         riteé, &amp; comme noſtre ameeſt de condition im
-        mortelle, auſſi deuons-npus eſtendre naos deſirs
-         au delaà des bornes de noſtre vie, &amp; nous proeu
-        rer vne eſpece d’eterniteé par la bonne odeur de
-        nos deportemens, en quoy giſt le ſolide &amp; le ve
-        ritable bon-heur de celuy qui aſpire aux recom
-        pences que Dieu promet aux bons Princes.
-        FIN.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">rhétorique délibérative</term>
+          <term type="genre">remontrances</term>
+          <term type="subject" />
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-07-19" who="MF" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />REMONSTRANCE
+        <lb />DV
+        <lb />ROY LOVIS XII
+        <lb />AV
+        <lb />ROY LOVIS XI
+        <lb />SVR LEVR DIFFERENTE FA
+        <lb rend="¬" break="no" />çon de regner.
+        <lb />A PARIS,
+        <lb />M. DC. XLIX. <pb n="2" />
+        <pb n="3" />
+        <lb />3
+        <lb />REMONSTRANCE
+        <lb />Roy Louys II. a Roy ouy
+        <lb />AI. ſur leur dférente façon de
+        <lb />egner.
+        <lb />LOVyYS.. X1l.
+        <lb />geEve ls Ptlaços auſquels Dieu
+        <lb />J donne l’eſprt de iuement, &amp;e de
+        <lb />y ſ diſeaoment,&amp; lonfait connoi
+        <lb /> ſtrepilsdaaormne&amp;epouxan
+        <lb />t eapahlesdofaillir. Aduonfran
+        <lb rend="¬" break="no" />chementque l’écladgradu, la vanié de
+        <lb />commaander nuous aſbloüie le plaa ſouueo l’eſ
+        <lb />prit&amp;euous empaeſcçherdeenoerea9ueſmos
+        <lb />E conſideer que os ’aurioaocue puiſſan
+        <lb rend="¬" break="no" />ceſi ellene nauseſtuiiehau, cqe Dieuau
+        <lb rend="¬" break="no" />thriſant ne iuſteRoyauté, &amp; Epielegi
+        <lb rend="¬" break="no" />ime. contieneſeul, tan de illiens ’ajesdans
+        <lb />loheyſſance. &amp; le, deaoir, leſquellesy.peu
+        <lb rend="¬" break="no" />roient eſtre cntpaintes ny vinetée pqrlene
+        <lb />foarce exterieur, ſi Die ndiſppſetleurs volo
+        <lb />A ij <pb n="4" />
+        <lb />4
+        <lb />tez à ſe ſoumettre aà la domination de celuy qui
+        <lb />leur a eſté donné pour Chef, &amp; Souuerain en ter
+        <lb rend="¬" break="no" />re. Tremblons &amp; fremiſſons auec ſuiet dans l’ap
+        <lb rend="¬" break="no" />prehenſion des iugemens de Dieu. Puis que d’au
+        <lb rend="¬" break="no" />trant plus que nous ſommes releuez en grandeur
+        <lb />&amp; authorité, d’autant plus ſommes nous conta
+        <lb rend="¬" break="no" />bles &amp; reſponſables deuant Dieu, qui fait miſeri
+        <lb rend="¬" break="no" />cordeaux petits, &amp; chaſtie puiſſamment les grads,
+        <lb />&amp; les Puiſſans de la terre. Conſiderons que le pou
+        <lb rend="¬" break="no" />uoir &amp; l’authoriteé́ nous ſont donnez de la part du
+        <lb />Trés-haut, lequel interrogera de tres-haur nos
+        <lb />œuures &amp; ſondera nos penſé́es. le me ſuis main
+        <lb rend="¬" break="no" />cesfois eſtonné des attaches que vaus auiez pour
+        <lb />cette miſerable vie, laquelle bien conſiderée eſt
+        <lb />beaucoup plus detrempée de fiel, &amp; d’amertume
+        <lb />que de douceurs. Hé! bon Dieu, croyez-vous que
+        <lb />les Reliques que vous faiſiez venir de tous les co
+        <lb rend="¬" break="no" />ſtez de la France, au Pleſſis Lez-Tours quelque
+        <lb />peu auant voſtre deceds; puiſſent adiouſter vn
+        <lb />moment aux iours de voſtre vie, dont Dieu auoit
+        <lb />preſerpt les bormes; Vous imaginez-vous, que
+        <lb />ce bon Hermitte Galabrois euſt le pouuoir d’en
+        <lb />prolonger la durée; Dites-moy ie vous prie leſ
+        <lb rend="¬" break="no" />quels eſtoient les plus capifs, ou’ceux que vous
+        <lb />teniez enfermez dans des cages de fer, &amp; liez à des
+        <lb /> groſſes boulles de fonte que vous nommez vos
+        <lb />fillettes, ou vous -meſmes qui vous eſtiez recluds
+        <lb /> a.,,,,,
+        <lb />dans <pb n="5" />
+        <lb />dans vn Chaſteau enuironaé de gens de guerre,
+        <lb />dont les marailles eſtoient parſemées de broches
+        <lb />de fer, erenelées a pluſieurs pointes, &amp; ſi draës
+        <lb />qu’homme ne les pouuoit outrepaſſer, outre que
+        <lb />vous auiez fait reueſtir tout le circuit de la Morte
+        <lb />du ?leſſis d’vn treills de gros barrcaux, auec qua
+        <lb rend="¬" break="no" />re moineaux de fer bien eſpoix aux encognures,
+        <lb />&amp; forces cannoniers où quarante Archers iour &amp;
+        <lb />nuict eſtoient en ſentinelle, y euſt-il iamais cri
+        <lb rend="¬" break="no" />minel plus eſtroitement reſerreé; Ne peut-on pas
+        <lb />dire que c’eſtoit vne priſon volontaire, dans la
+        <lb rend="¬" break="no" />quelle vous vous eſtiez enfermez, auec cette ſeu
+        <lb rend="¬" break="no" />le difference, que les autres priſonniers ſont or
+        <lb rend="¬" break="no" />dinairemet detenus dans les cachors, &amp; les geo
+        <lb rend="¬" break="no" />les par l’ordonnance d’vn luge ſuperieur; mais
+        <lb />vous n’auiez autre luge que vous-meſme, ou plu
+        <lb rend="¬" break="no" />ſtoſt le teſmoignage ſecret de voſtre conſcience,
+        <lb />laquelle vous repreſentant les rigoureux tt aite
+        <lb rend="¬" break="no" />mens que vous auiez exerceé́ contre grands &amp; pe
+        <lb rend="¬" break="no" />tits, vous donnoit ſuiet de craindre tout le mon
+        <lb rend="¬" break="no" />de, puis que vous vous eſtiez rendu redourablea
+        <lb />ous. Encores ſi les Corps de gardes, doubles &amp;
+        <lb />triples, ſi les fortereſſes, &amp; les donjons, bref ſi
+        <lb />aucune inuention pouuoit barrer l’entreé́e aux
+        <lb />maladies, &amp; les empeſcher d’aſſaillir les Grands
+        <lb />de la tertre; l’aduouë que nous aurions vn grand
+        <lb />aduantage ſur le commun, &amp; que noſtre condi. <pb n="6" />
+        <lb />8
+        <lb />ion ſeroit encores plus eminé́e, mais les mala
+        <lb rend="¬" break="no" />ies &amp; la mott meſme ſe font voye à trauers les
+        <lb />Ceorps de garde, forcent les barricades, eſcala
+        <lb rend="¬" break="no" />dent lesmurs, &amp; viennent ſaiſir les plus robuſtes
+        <lb />Monarques au milieu de leur Throſne; Bon Dieï
+        <lb />que ceux-laà furent hardis qui oſerent vous an
+        <lb rend="¬" break="no" />noncer la mort, puis que le ſeul nom vous eſtoit
+        <lb />tellement en horreur, que vous auiez fait tres
+        <lb rend="¬" break="no" />expreſſes deffences de le proferer en voſtre pre
+        <lb rend="¬" break="no" />ſence aux dernieres periodes de voſtre vie. Les
+        <lb />dix- mil eſeus que vous donniez chaſque mois
+        <lb />à voſtre Medecin Coetier, n’euſſent pas eſté mal
+        <lb />employez s’il euſt eu le pouuoir de prolonger vos
+        <lb />iours, mais vous &amp; moy auons enfilé́ la route de
+        <lb />toute la terre, &amp; auons experimenté́ la vanité de
+        <lb />noſtre condition. Dieu ma fait touſiours la grace
+        <lb />de recognoiſtre que i’eſtois homme mortel, ſem
+        <lb rend="¬" break="no" />blable à̀ tous, formé &amp; baſty de meſme faç̧on que
+        <lb />les autres; &amp; que iamais aucun Roy n’a eu autre
+        <lb />principe de naiſſance, l’entrée de la vie nous eſt
+        <lb />commune auec le reſte des hommes, &amp; l iſſueë pa
+        <lb rend="¬" break="no" />reillement n’eſt pas plus glorieux de partir de cer.
+        <lb />te vie, auec la benediction des Peuples que Dieu
+        <lb />nous a ſouſmis, que non pas retenir iuſques au
+        <lb />dernier ſouſpir cette autre ſeuerité́, laquelle fait
+        <lb />craindre, &amp; redouter les Rois; mais auſli d’autre
+        <lb />part, les fait hayt durant leur vie, &amp; rend apres <pb n="7" />
+        <lb />leur mort leur memoire odieuſe à la poſterité ne
+        <lb />croyez-vous pas que l’amedu feu Roy voſtre fils,
+        <lb />&amp; la mienne ne ſe ſentiſſent maintenant toucheées
+        <lb />d’vne grande conſolation, voyant la ſatis faction
+        <lb />que nos Peuples ont eu de nos gouuernemens,
+        <lb />Les regrets qu’ils ont teſmoigné à noſtre mort,
+        <lb />&amp; les benedictions qu’ils rendent à noſtre me.
+        <lb rend="¬" break="no" />moire. Il me ſouuient qu’aux Obſeques du feu
+        <lb />Roy voſtre fils, qu’on pouuoit nommer à meil
+        <lb rend="¬" break="no" />leur titre que les Empereurs Romains, Les deli
+        <lb rend="¬" break="no" />ces des hommes, viuge Gentils- hommes de ſa
+        <lb />Chambre, voulurent auoir l’honneur quoy qu’a
+        <lb rend="¬" break="no" />uec grande fatigue, de porter le cercueïl deplomb
+        <lb />dans lequel eſtoit ſon corps, depuis noſtre Dame
+        <lb />des Champs iuſques au tombeau, ſans vouloir
+        <lb />ſouffrir que les Porteurs de ſel de Paris nomme
+        <lb />Annonares, joü̈iſſent des Priuileges qu’ils auoient
+        <lb /> de ce faire, mais bien plus, lors que l’on deſcen
+        <lb rend="¬" break="no" />dit le Corps, dans le caueau de S. Denys, &amp; que le
+        <lb />Grand¬ Maiſtre ſelon l’ordre vient à rompre le
+        <lb />baſton, deux Officiert du deffunct Roy, l’vn Som
+        <lb rend="¬" break="no" />meillier, &amp; l’autre Archer de la Garde, moururent
+        <lb />ſubitement de regret &amp; de triſteſſes; C’eſt vne ſe
+        <lb rend="¬" break="no" />conde vie ou pluſtoſt ne eſpece d’immortalité,
+        <lb />que la bonne odeur laquelle nous laiſſons de nos
+        <lb />deportemens, ou au contraire c’eſt vn inſigne
+        <lb />ma heur pour vn Prince, quand la memoire de <pb n="8" />
+        <lb />s
+        <lb />ſes actions neſert qu’à̀ ſe faire deteſter, &amp; rendre
+        <lb />execrable à la poſterité.
+        <lb />LOVYSXI..
+        <lb />vOmme les humeurs des perſonnes ſont au
+        <lb rend="¬" break="no" />tant diflerentes que leurs conditions, auſſi
+        <lb />eſt-il mal ais e, voire meſme impoſſible de ſatisfai
+        <lb rend="¬" break="no" />re vn chacun, &amp; qu’vn Souuerain,lequel ſur toutes
+        <lb />choſes doit butrer à la conſeruation de ſon autho
+        <lb rend="¬" break="no" />rité, puiſſe contenter grands &amp; petits, &amp; parcon
+        <lb rend="¬" break="no" /> ſequent receuoir loü̈ange &amp; approbation des vns
+        <lb />&amp; des autresS’il eſt d’humenr guerriere, il ſera ay.
+        <lb />mé des Soldats, &amp; des gens de guerre; mais d’vn
+        <lb />autre coſté les Peuples decrieront ſon gouuerne
+        <lb rend="¬" break="no" />ment ſous ombre qu’ils contribuent du leur, pour
+        <lb />la ſuſiſtance des armées, ſi d’autre- part il cherit la
+        <lb />Paix, &amp; tâche de conſeruer ſes Sujets dans le repos,
+        <lb />o le fera paſſer pour vn Caſanier, &amp; ce la donnera
+        <lb />cœur de vouloir entreprendre ſur ſon authorité́;
+        <lb />Les plus accomplis Monarques de l’Antiquité n’oe
+        <lb />iamais poſſedé vne gloire parfaite, ny laiſſé́ apres
+        <lb />euxvne reputarion ſi netre que les mauuais eſprits
+        <lb />ny ayant trouueé à redire; Dauid qui eſtoit vn Roy
+        <lb />ſelon le cœur de Dieu recontra pourtant vn nom
+        <lb rend="¬" break="no" />meé Semey, lequel luy fit milles outrages, &amp; le char
+        <lb rend="¬" break="no" />gea d’vne infinité d’opprobres, l’appellanthomme
+        <lb /> de <pb n="9" />
+        <lb />de ſang, fils de betail. &amp; vſurpateur du Throſne de
+        <lb /> Sauil;, iI n’eſt pas meſe qu’apres la mort du ſage
+        <lb />Roy alomon, les Peuples neſe plaigniſſen des,
+        <lb />charges qu’on leurs auoit donnez. Si Ceſar n’euſt
+        <lb />pas eſté ſi indulgent il euſt conſeruéſa vie, &amp;pre
+        <lb rend="¬" break="no" />uenü l’attentau commis ſur ſa perſonne, par ceu
+        <lb />qu’il auoit garany de la mort, la deffiance eſt
+        <lb />quelquefois naeceſſaire à vn Prince, puis qu’e
+        <lb rend="¬" break="no" />ſtant tres aſſeuré que pluſieurs portent enuie à
+        <lb />ſa grandeur, il ne ſç̧auroit apportee trop de-pre
+        <lb rend="¬" break="no" />cçaution pour ſa conſeuati...
+        <lb />LOV YS XII.
+        <lb />’En demeute d’accord, mais aduoü̈ez pour
+        <lb rend="¬" break="no" />ant que c’eſt mourir mille fois que de viure
+        <lb />continuellemens dans des tranſſes, allarmes &amp;.
+        <lb />deffiances, comme on dit que faiſoit l’ancien De
+        <lb rend="¬" break="no" />nis le Tiran de Siracuſe, lequel poqur ſe maintenir
+        <lb />dans la domination confia la garde de ſa perſonne
+        <lb />à des barbares eſtrangers, ayans eſloigné tous
+        <lb />ceux de ſa connoiſſance, ençor ne ’eſtimantpas
+        <lb />aſſez en ſeureé́, il s’enferma dansvne forte. Ci
+        <lb rend="¬" break="no" />tadelle, ou pluſtoſt s’empriſonna volontairemen,
+        <lb />Le razoir dont ſon Barbier ſe ſeruoit à luy faire le
+        <lb />poil luy donnant de lombrage, il fit appredre, <pb n="10" />
+        <lb />à deux ieunes filles qu’il aymoit à faire la barbe;
+        <lb />mais eſtant deuenuë̈s grandes, il ne voulut plus’
+        <lb />qu’elles le touchaſſene auee le fer, ſi bien qu’il
+        <lb />rrouua inuention de ſe faire rotir la barbe &amp; les
+        <lb />nouſtaches duec des eoques de noix bruſléees.
+        <lb />Quan ll eſtoit queſtion d’aller coucher auec ſa!
+        <lb />Dame;, ll faiſoit aupatauant viſiter tous les coings
+        <lb />&amp; recoings, il auoie entouré ſon lict d’vn large &amp;
+        <lb />profondfoſſé, auee vn pohtleuis, lequel il hauſ
+        <lb rend="¬" break="no" />ſoit &amp; bdiſſoit luy meſme, ſelon qu’il en eſtoit
+        <lb />beſoin; Lors qu’il voulolt-haranguer ſon Peuple,
+        <lb />il parloit du faix d’vne Tour, il auoit fait baſtir
+        <lb />vn jeu de paulme dans le pourpris de ſon Cha
+        <lb rend="¬" break="no" />ſteau où parfois il ſe diuertiſſoit; arriua vn iour
+        <lb />que s’eſtant depoüillé pour ioüier, il donna ſes ha
+        <lb rend="¬" break="no" />bits &amp; ſon eſpee en garde à vn ieune garçon qu’il
+        <lb />aymoit eſperduëment, quelqu’v de la compa
+        <lb rend="¬" break="no" />gnie dit en fe gauſſant à ce ieune homme, au
+        <lb />moins’ il met à preſent ſa vie entre les mains de
+        <lb />ce ieune homme, s’eſtant pris à ſouſrire, fut ap
+        <lb rend="¬" break="no" />perceu de Denys, lequel ſur le champ les fit uer
+        <lb />tous deur, l’vn pour auoir monſtré le-che min
+        <lb />d’artenceér à ſa petſonne, l’adutre pour l’auoir ap
+        <lb rend="¬" break="no" />prouueé par ſon ſouſris 3 V oſla ce me ſemble vne
+        <lb />image d’vn Prince mal-heureux, lequel ayantl
+        <lb />mieux aymé le rendre-maiſtre des corps de ſes, <pb n="11" />
+        <lb />Sujets s’et rendu quant &amp; quent eſclaue deſoy
+        <lb />meſme, n rapportaat aupe fruict de ſa doina
+        <lb rend="¬" break="no" />ion ryrannique qu’vne haine puolique duans
+        <lb />ſa vie, &amp; vne malediction eternelle apres ſa mdr
+        <lb />iuſques là meſme que les plus delicieux obie4
+        <lb />de la le, &amp; lea plus ſenſibles yvoluprez ſon pei
+        <lb />es d’amerumes a qui regne de la ſorte; Ainſi
+        <lb />que ee meſme Tyean fist aduoüer à ſon Fauory
+        <lb />Damocles, lequel voulut ioüir des plaiſirs d’vns
+        <lb /> Royamté́ momentanée: le-demeure bien d’acoord
+        <lb />qu’il n’eſt ny ſeur ny expedient de ſe fier indiff.
+        <lb />emment à tous, &amp; qu’vn Sonuerain eſtobligeéd
+        <lb />veiller à ſa conſeruation, puis que le ſalut de ſo
+        <lb />Peuplé en deſpend, mais autie choſo eſt, de a
+        <lb />comnaetre à toutes ſortes de trencontres &amp; ſaas
+        <lb />diſtmction, autre choſe eſt auſſi de viure en telle
+        <lb />deffiance, &amp; perplexité d’eſprit qu’on ne ſoit ia
+        <lb rend="¬" break="no" />mais etepo, &amp; qu’on neſe puiſſe fierà qui qu!
+        <lb />eſoic, ainſi quil vous arriu quelque peur auan
+        <lb />voſtre decés! où ous entraſtes en tel ſoupços que
+        <lb />vous n’eſtiez pas aſſcure de vos plui roelep, vouas
+        <lb />deffianc meſme de voſtre propre ſils, de voſtre
+        <lb />fille, &amp; du Duci de Bourbon voſtre gendre, el
+        <lb rend="¬" break="no" />moing lots qu’eſtans en ne gallerie au Claſteanu
+        <lb />du Pleſſis Lez. Tous, vous commadaſtes aà vn
+        <lb />Captaire de yos Gardes de taſter ſans faite ſem¬ <pb n="12" />
+        <lb />blant de rien, air Gentils-hommes. qui acom
+        <lb rend="¬" break="no" />pagnerene voſtre fils, d&amp;e voſtre gendre pour voir
+        <lb />t’ils ’auoient poine de brogantines ſous leur
+        <lb />robbes. Croyez-moy la plus ferme garde d’n
+        <lb />Prince eſt l’amour &amp; l’affection de ſon Peu
+        <lb rend="¬" break="no" />ple, nous auons beau employer toute la pru
+        <lb rend="¬" break="no" />deae humaine, pout gatantir noſtre vie des aa
+        <lb />tentats des meéchans, cela ſert de peu s’il fe ren
+        <lb rend="¬" break="no" />contre quelque deſeſpereé volontaire qui aban
+        <lb rend="¬" break="no" />donne ſa vie pour eſtre maiſtre de l’autre, &amp; bien
+        <lb />que par vne particuliere grace de Dieu, il ne ſes
+        <lb />enmarqua point de ſemblables exemples arsiueées
+        <lb />en la perſonne d’aucun Roy de la ſeconde &amp; troi
+        <lb rend="¬" break="no" />iéme lignée, ſi eſt oce pourtant que l’Hiſtoire
+        <lb />tant ancienne que moderne, ne nous exſournit
+        <lb />que trop dans toutes ſortes. d’Eſtats. &amp; de Mo
+        <lb rend="¬" break="no" />narchies. Ie ne puis paſſer ſous ſilence deux bel
+        <lb rend="¬" break="no" />les remarques que ie fis dernierement lors qu’or
+        <lb />me liſoit deuant moy vne Hiſtoire Rdmaine; L
+        <lb />pcemiere eſt de Nuia Pompilius, lequel ayan
+        <lb />eſté proclamé Roy, à̀ cauſe de ſa vertu, prudence
+        <lb />e doucaur, fit incontinent caſſer &amp; congedier
+        <lb />eertalnes compagnies de Sattelites au nombre
+        <lb />de tiois cens, leſquels auoient accouſtuné́ d’e
+        <lb rend="¬" break="no" />ſtre autour de la perſonne du Roy. Romulus ſon
+        <lb />predeceſſeur qui pourtant ne laiſſa pas d’eſtre
+        <lb /> is <pb n="13" />
+        <lb />13
+        <lb />nmis e pieces, à cauſe de laſpreté́ de ſes mœurs.
+        <lb />Ces Gardes ſe noômoient Ceĺres, conmme qui di
+        <lb rend="¬" break="no" />roit gens prompts à la main, &amp; diſpots à̀ tout fai
+        <lb rend="¬" break="no" />re. La raiſon qu’allegua ce bon Prince fut qu’il
+        <lb /> ne ſe vouloit point deffier de ceux qui ſe loruoiét
+        <lb />en luy, ny eſtre Roy des gens qui ſe deffiaſſent
+        <lb />de luy. L’autre exemple eſt tirée des loüanges que
+        <lb />Senecque donnoit aà l’Empereur Neron, lequel
+        <lb />fut autant iuſte, moderé &amp; clement, comme le
+        <lb />reſte de ſa vie fut monſtrueux &amp; abominable. Ce
+        <lb />Philoſophe parlant à Neron luy diſoit que l’a
+        <lb rend="¬" break="no" />mour &amp; l’affection de ſes Citoyens eſtoit toute
+        <lb />ſa deffence &amp; la ſauuegarde, qu’il n’auoit beſoin
+        <lb />d’autre’ protection exterieure, puis qu’il eſtoirt en
+        <lb />plaine aſſeurance par le moyen des biens-fait
+        <lb />qu’il eorçoie enuers tous, &amp; que les armes dont
+        <lb />iI eſtoit enuironneé ne luy ſeruoient que de para
+        <lb rend="¬" break="no" />des, &amp; non pas de deffences. C’eſt pour vous dire
+        <lb />que le plus fort donjon de la Royauté eſt l’aſſi
+        <lb rend="¬" break="no" />ſtance dans les inconueniens de la vie, &amp; l’amour
+        <lb />des Sujets: l’vn &amp; l’autre venant aà manquer pour
+        <lb />prudent, &amp; accort que puiſſe eſtre le Prince a ſuet
+        <lb />de tout craindre dans vne aſſeurance de toutes
+        <lb />choſes. Nos ſucceſſeurs pourront iuger dans la
+        <lb />diferente façon de noſtre gouuernement, lequel
+        <lb />leur ſera plus expedient ou de regner par la force
+        <lb />D <pb n="14" />
+        <lb />&amp; puiſſance abſoluë, ou par vne douce &amp; tran
+        <lb rend="¬" break="no" />quille authorité; I’aduoüe que le premier rend
+        <lb />vn Prince redoutable durant ſa vie, mais l’autre
+        <lb />luy acquiert vne gloire qui ſe perpetuë à la poſte
+        <lb rend="¬" break="no" /> riteé, &amp; comme noſtre ameeſt de condition im
+        <lb rend="¬" break="no" />mortelle, auſſi deuons-npus eſtendre naos deſirs
+        <lb /> au delaà des bornes de noſtre vie, &amp; nous proeu
+        <lb rend="¬" break="no" />rer vne eſpece d’eterniteé par la bonne odeur de
+        <lb />nos deportemens, en quoy giſt le ſolide &amp; le ve
+        <lb rend="¬" break="no" />ritable bon-heur de celuy qui aſpire aux recom
+        <lb rend="¬" break="no" />pences que Dieu promet aux bons Princes.
+        <lb />FIN. </p>
+    </body>
+  </text>
 </TEI>

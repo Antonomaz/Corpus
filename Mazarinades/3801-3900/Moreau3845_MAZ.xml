@@ -1,256 +1,185 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3845_MAZ">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Le trictrac de la cour.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Le trictrac de la cour.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2022-03-02">2 mars 2022</date>
-				<availability status="restricted" n="cc-by">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14805"/>
-					<author/>
-					<title source="Mazarine">Le trique-trac de la Cour.</title>
-					<pubPlace source="Mazarine">Sans lieu</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Mazarine" when="1652">1652</date>
-					<date source="Carrier" notBefore="1652-01" notAfter="1652-09-10" when="1652">entre janvier et début
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2022-03-02">2 mars 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14805" />
+          <author />
+          <title source="Mazarine">Le trique-trac de la Cour.</title>
+          <pubPlace source="Mazarine">Sans lieu</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Mazarine" when="1652">1652</date>
+          <date source="Carrier" notBefore="1652-01" notAfter="1652-09-10" when="1652">entre janvier et début
             septembre 1652</date>
-					<extent>
-						<measure unit="page" quantity="3"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="BM48975" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48975"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2988507">Paris</settlement>
-						<institution>Bibliothèque Mazarine</institution>
-						<repository/>
-						<idno type="cote">M12358</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <extent>
+            <measure unit="page" quantity="3" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="BM48975" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm48975" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2988507">Paris</settlement>
+            <institution>Bibliothèque Mazarine</institution>
+            <repository />
+            <idno type="cote">M12358</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine">Titre de départ Texte paru en 1652 d'après Célestin Moreau, entre
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine">Titre de départ Texte paru en 1652 d'après Célestin Moreau, entre
           janvier début de septembre d'après Hubert Carrier (Bibliothèque Mazarine, Ms.4682-5, f.
           336v)</p>
-				<p source="Moreau">3845. Trictrac(le) dela cour. (S. 1., 1652), 3 pages. Wio^PV Rare. Vet
+        <p source="Moreau">3845. Trictrac(le) dela cour. (S. 1., 1652), 3 pages. Wio^PV Rare. Vet
           r-&lt; • .&gt;- -&amp; ' Il y a de l'esprit, et surtout de l'insolence. Le duc de Guise :
           « Si je sors de mon coin , je serai un Jean de retour. » Mazarin : « J'ai fait mon plein ;
           mais je ne puis passer sans bonheur. » Le Parlement : « Nous sommes en chemin de gagner le
           tour de bredouille. » Ce pamphlet a été réimprimé dans le VIe volume des Mémoires du
           cardinal de Retz. Genève, Fabry, 1777, in-8°.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_97" source="Moreau">
-					<p>Premier édit d’amnistie</p>
-					<date when="1652-08-26">1652-08-26</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-03-18" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-I
-        LE
-        TRIQVE-TRAC
-        DE LA COVR.
-        La Reyne.
-        Ie ſuis enfiĺe.
-        Le Roy.
-        Ie n’ayme point les Dames noires.
-        Le ardimal.
-        l’ay fait mon plain, mais ie ne puis paſſer ſans bon
-        heur.
-        Le ſhaacelier.
-        l’ay le mien auſſi, mais ie ſuis enfillé ſi ie ne le tiens
-        encore vn coup.
-        Monſieur de Beaufort.
-        Par le plus grand bon-heur du monde, i’ay éuité
-        l’enfillas.
-        Monſiesr de la Aeilleraye.
-        lI’ay trop hazardé.
-        Monſieur de Chauigny.
-        Ie ne deuois point parler ſur le jeu
-        Meſieurs du Paslement.
-        Nous ſommes en chemin de gaigner le tour de
-        Bredoüille. 
-        
-        Ies Tarens du Card aal.
-        Le bruict de ce jeu rompt la teſte.
-        Monſieur le Due d’Orleans.
-        Ie n’y entends rien, &amp; i’ay le dé malheureux.
-        Lſonſieur de l R iuiere.
-        Ie vois faire vne belle Eſchole, mais ie n’oſe en
-        aduertir.
-        Monſieur le Prinee.
-        Au hazard d’eſtre enfillé́, i’enfille touſiours.
-        Monſicur de Longueville.
-        I’ay doublé, ie ne ſçay quelle choſe faire.
-        La Reyne d’Angleterre.
-        l’ay tout perdu aà ce jeu.
-        Les Files de la Reyne.
-        On nous enfille ſi on ameine gros jeu.
-        Monſieur de haſteau- Neuf
-        Ie reprends mon coin par vn double as.
-        eſſieurs du Conſeil.
-        On ne peut maiquer d’en prendre ſur nous, car
-        noſtre jeu eſt rouſiours deé́couuert.
-        Les Pariſans.
-        Noſtre jeu eſt paſſé.
-        d’Emery.
-        Il faut m’en aller apres ce malheureux obſtacle.
-        Monſſeur Seruien.
-        l’ameine le jeu que l’on veut, car ie pipe le dé.
-        Les Pariſies.
-        Il faut touſiours garnir le coin Bourgeois. 
-        Les Oſfeirs des Elefioos.
-        Sijnous mettona dedans nous remplirons ſans dif
-        ficulté.
-        Monſieur de Guiſe.
-        Si ie ſors mon coin, ie ſeray vn Iean, de retour.
-        Monſieur de MonbaZo.
-        93
-        Il faut m’en aller, ie n’ay point de bois aà̀ abattre:
-        Madame de MonbaZon.
-        Ie n’ay qu’vn jean qui ne peut, mais au reſte ie
-        ſuis toute découuerte.
-        Les Dames de la Cour.
-        Nous nous laiſſons rellement preſſer, qu’on nous
-        enfille touſiours.
-        Les Courtiſans.
-        Nous remuons rouſours le filet, aieus fe gail
-        gnons rien pour cela.
-        FIN.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_97" source="Moreau">
+          <p>Premier édit d’amnistie</p>
+          <date when="1652-08-26">1652-08-26</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-03-18" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="9" />
+        <lb />I
+        <lb />LE
+        <lb />TRIQVE-TRAC
+        <lb />DE LA COVR.
+        <lb />La Reyne.
+        <lb />Ie ſuis enfiĺe.
+        <lb />Le Roy.
+        <lb />Ie n’ayme point les Dames noires.
+        <lb />Le ardimal.
+        <lb />l’ay fait mon plain, mais ie ne puis paſſer ſans bon
+        <lb rend="¬" break="no" />heur.
+        <lb />Le ſhaacelier.
+        <lb />l’ay le mien auſſi, mais ie ſuis enfillé ſi ie ne le tiens
+        <lb />encore vn coup.
+        <lb />Monſieur de Beaufort.
+        <lb />Par le plus grand bon-heur du monde, i’ay éuité
+        <lb />l’enfillas.
+        <lb />Monſiesr de la Aeilleraye.
+        <lb />lI’ay trop hazardé.
+        <lb />Monſieur de Chauigny.
+        <lb />Ie ne deuois point parler ſur le jeu
+        <lb rend="¬" break="no" />Meſieurs du Paslement.
+        <lb />Nous ſommes en chemin de gaigner le tour de
+        <lb />Bredoüille. <pb n="10" />
+        <lb />
+        <lb />Ies Tarens du Card aal.
+        <lb />Le bruict de ce jeu rompt la teſte.
+        <lb />Monſieur le Due d’Orleans.
+        <lb />Ie n’y entends rien, &amp; i’ay le dé malheureux.
+        <lb />Lſonſieur de l R iuiere.
+        <lb />Ie vois faire vne belle Eſchole, mais ie n’oſe en
+        <lb />aduertir.
+        <lb />Monſieur le Prinee.
+        <lb />Au hazard d’eſtre enfillé́, i’enfille touſiours.
+        <lb />Monſicur de Longueville.
+        <lb />I’ay doublé, ie ne ſçay quelle choſe faire.
+        <lb />La Reyne d’Angleterre.
+        <lb />l’ay tout perdu aà ce jeu.
+        <lb />Les Files de la Reyne.
+        <lb />On nous enfille ſi on ameine gros jeu.
+        <lb />Monſieur de haſteau- Neuf
+        <lb />Ie reprends mon coin par vn double as.
+        <lb />eſſieurs du Conſeil.
+        <lb />On ne peut maiquer d’en prendre ſur nous, car
+        <lb />noſtre jeu eſt rouſiours deé́couuert.
+        <lb />Les Pariſans.
+        <lb />Noſtre jeu eſt paſſé.
+        <lb />d’Emery.
+        <lb />Il faut m’en aller apres ce malheureux obſtacle.
+        <lb />Monſſeur Seruien.
+        <lb />l’ameine le jeu que l’on veut, car ie pipe le dé.
+        <lb />Les Pariſies.
+        <lb />Il faut touſiours garnir le coin Bourgeois. <pb n="11" />
+        <lb />Les Oſfeirs des Elefioos.
+        <lb />Sijnous mettona dedans nous remplirons ſans dif
+        <lb rend="¬" break="no" />ficulté.
+        <lb />Monſieur de Guiſe.
+        <lb />Si ie ſors mon coin, ie ſeray vn Iean, de retour.
+        <lb />Monſieur de MonbaZo.
+        <lb />93
+        <lb />Il faut m’en aller, ie n’ay point de bois aà̀ abattre:
+        <lb />Madame de MonbaZon.
+        <lb />Ie n’ay qu’vn jean qui ne peut, mais au reſte ie
+        <lb />ſuis toute découuerte.
+        <lb />Les Dames de la Cour.
+        <lb />Nous nous laiſſons rellement preſſer, qu’on nous
+        <lb />enfille touſiours.
+        <lb />Les Courtiſans.
+        <lb />Nous remuons rouſours le filet, aieus fe gail
+        <lb rend="¬" break="no" />gnons rien pour cela.
+        <lb />FIN. </p>
+    </body>
+  </text>
 </TEI>

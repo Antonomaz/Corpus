@@ -1,980 +1,539 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau1suppl189_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Le premier courrier des princes, apportant toutes les
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Le premier courrier des princes, apportant toutes les
           nouvelles tant de la cour que de l'armée de Son Altesse Royale et d'ailleurs</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=2HEXtG8S-3UC"/>
-					<author/>
-					<title source="Moreau">Premier (le) courrier des princes, apportant toutes les nouvelles
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=2HEXtG8S-3UC" />
+          <author />
+          <title source="Moreau">Premier (le) courrier des princes, apportant toutes les nouvelles
             tant de la cour que de l'armée de Son Altesse Royale et d'ailleurs</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher ref="isni:0000000364435102" xml:id="IL_ChouqueuxAndre.xml">
-						<persName>
-							<forename>André</forename>
-							<surname>Chouqueux</surname>
-						</persName>
-					</publisher>
-					<date source="Moreau" when="1652">1652</date>
-					<extent>
-						<measure quantity="16" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2996944">Lyon</settlement>
-						<institution>Bibliothèque municipale</institution>
-						<repository/>
-						<idno type="cote">rés 309149</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher ref="isni:0000000364435102" xml:id="IL_ChouqueuxAndre.xml">
+            <persName>
+              <forename>André</forename>
+              <surname>Chouqueux</surname>
+            </persName>
+          </publisher>
+          <date source="Moreau" when="1652">1652</date>
+          <extent>
+            <measure quantity="16" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2996944">Lyon</settlement>
+            <institution>Bibliothèque municipale</institution>
+            <repository />
+            <idno type="cote">rés 309149</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">189. Premier (le) courrier des princes, apportant toutes les nouvelles
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">189. Premier (le) courrier des princes, apportant toutes les nouvelles
           tant de la cour que de l'armée de Son Altesse Royale et d'ailleurs. Paris, André Chou-
           queux, 1652, 16 pages. Je ne connais que ce numéro. En faut-il d'autres? et combien ? La
           cour était à Gien ; voilà pour la date. Le brave Sirot avait été blessé devant Gergeau au
           corps et au visage ; c'est tout ce qu'on y peut recueillir de nouvelles.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">nouvelles</term>
-					<term type="subject">Condé, Louis de Bourbon (1621-1686 ; prince de)</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-09-20" who="KA"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<pb n="12"/>
-				<pb n="13"/>
-				<pb n="14"/>
-				<pb n="15"/>
-				<pb n="16"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<figure type="decoration"/>
-				<imprimatur>Auec Permißion de ſon Al. Royale.</imprimatur>
-LE PREMIER
-        COVRRIER
-        DES PRINCES
-        APPORTANT TOVTES
-        les nouuelles, tant de la Cour
-        que de l’Armée de ſon Alteſ
-        ſe Royale &amp; d’ailleurs.
-        A PARIS,
-        Chez ANDRE CHOVQVEUX, ruë Sainct
-         André des Arts.
-         MD DC. LII.
-        
-        
-        
-        
-        PREMIER COVRRIER DES
-         Princes.
-        1
-        AV LECTEVR.
-         MY LECTEVR, omme parcy-deuant u s.
-         prins conmcentement d’apprendre les nounelles de
-        Guyenne, lors que Monſeigneurle Prince de Condey eſtoi
-        &amp; de ce qui ſe paſſoit en la gaere qui s’y faiſois auec plus
-        d’effee qu’à preſent, qu’il en eſt aqbſene. On a iugé qu com
-        me le fart de la guerre eſt ainenant vers la riuiere de Eoire
-        s pays de Sologne &amp; de Gaſtinois, u aurois à plaiſir d’ap
-        prendre ce qui ſe paſſe emtre les armées Mazariner &amp; celle
-        des Prmces de Frace nis ſous les ondres de ſonAl. Royale,
-        &amp; comnae encela on a voulu ſasis fare à ta uriofee, on r’eſt
-        adſe d’obſeruer les nouuelles de l’eſtat preſent de ceſte guerre
-        ſelon le rapport qui s’en peut aprendre des Courries des.
-        Princes, que nos te donnerons d’oreſnauant a meſure qu’iis
-        arrineront, pourue que tu aye nmaſtre-trauail, nos ſoins es
-        plyez les renelir &amp; nos peines agreables... 
-        .
-        4
-        &amp;,
-        e ep? p:
-        PREMIER CORRER DEsS PRNcES,
-        Apporrant touies les nouuelles tant de la Cour que
-        de l’armée de ſon ALTESSE ROYALE &amp; d’ailleurs.
-         Es nouuelles d’Angersous apprennent le mau
-        uais traicterhment que ceſte ville là areç̧eu &amp; re
-         çot iournellemient par ceux que le Cardinal Maza
-        rin y a enuoyez &amp; le regret qu’elle a de voir le peu de
-        fidelité qu’on luy a tenueé lors qu’envoyant ſes Depu
-        tez aà̀ Saumur pour proteſter de leur ’obeyſſance au
-        Roy &amp; luy teſmoigner le contentement auec lequel
-        ſa Maieſté ſeroit touſiours bien receuë̈ en ſa ville
-        d’Angers, qui a de tout temps eſteé tres-fidelle à ſon
-        Roy, moyennant leſquelles proteſtations on’luy
-        aioit promis de maintenir &amp; conſeruet ſes priuile
-         ges, &amp; qu’il ny ſeroit fait ni apporteé aucunechoſequî
-        peut donner ſuiet de plainte &amp; de meſcontentenent
-        à ſes habitans par ceux qui y entreroient au nom de
-        ſadte Majeſté, qu’aucontraire, ils en receuroient vh
-         traictement ſi doux, qu’ils auroient tous ſujet de s’en
-        loü̈er.
-         Mais comme le Cardinal Mazarin fait profeſſion
-        de violer toure foy, donner &amp; tient pour maximes
-        tres pernicieuſes, que l’on ne doit tenir ny garder la
-        foy &amp; la parolle aux ſuiets, il en a bien fait connoi
-        ſtre
-        
-        
-        . 
-        te les effetreuers eſte vild’Angers s ca coamné
-        elle eut tres-librement ouuert ſes portes à ceux que
-        le Cardinaly enuoyoit pour s’en aſſurer, &amp; fait entretr
-        nombre do gés de guerre plus grand qu’il n’auoit eſté.
-        accordeé, pou chaſtier ſes habitans, qui auoient pris
-        les armes ſous le Duc de Rohan leur Gouuerneur
-        pour leur iuſte deffenſe à empeſcher leurtune, com
-        me s’eſtant inſtruicts de ce que pluſieurs ville de
-        Guyene, Poictou, de Berry &amp; d’autres paysauoient
-        enduoré ſous latyrénre des ſoldats de ce Cardinal, ils ne
-        furét ſitoſt ontrez qu’au lieu d’y entretenit lesarticles?
-        porte pai la capitulatiõ à eux accordé́e, que lesſoldats
-        commencerent d’y viure comme à diſegetion, &amp; leur
-        chef à exiger des ſommes immenſes des habitans.
-        Et conte la Declararion expreſſe du Roy de l’an
-        née i648. verifiées en ſon Parlement de Pat les I
-        tendans de la luſtice euſſent eſté caſſez &amp; reuoquez,
-        le Cardinal, qui ne fait non plus d’eſtat des Ordon
-        nances du Roy, ni des Arreſts de Parlement de Fran
-        ee, que d’vne chanſon, y a enuoié vneperſonne à ſade
-        uotion pour Intendant de laluſtice, lequeleuec deux
-        cens Mouſquetaires qu’il a logez dans le Chaſtaau
-        coneraint les Marchands par empriſonnement des
-        Magiſtrats &amp; d’autres principaux habitans à payer les
-        ſommes qui leur eſtoiaent impoſea dont la-ville à en
-        oye ſes deputez au Parlement de, Paris, en faire
-        ſes plaintes.
-        L’onſçailes depareens uiolen barbaes &amp; ué,
-         B
-        A¬ 
-        6
-        huains que les Soldats Maariris ont comnis é́s e
-        uironsde Saumur, de Tours de Blois ſans eſpargnor
-        lesleux ſacrez ny auoir eſgard à fexe.ny à la’qualité
-        des perſonnes qu’ils ont cruellement traictés, oputre
-        les vols, &amp; Larcias inendiens &amp; bruſlements qu’ils
-        ont commis en vne infinité de lieux, à la ruiae &amp; de
-        ſolarion du pauuare peuple
-         Le deſſein d ces-impie eſtranger &amp; eunemy no
-        toire eſtant de faire approchet ſes armées es enuirons
-        de Paris pour ſe vanger de ceſte grande ville capitale
-        u Royaume on la faiſant fouffrir, la famine &amp; l di
-        tte de toutes choſes par-la reſoluion ps luy priſ4
-        &amp;e faire ſaiſtr ou tes les aduenues &amp; faire que la neceſ
-        ſité nettant ceſte grande ville en grande peine le
-        grand peule ſetoir contramct àsentrecpouppe la
-        gorge, &amp; àſe ruiner de luylmeſme, cequieua; aſſou
-        uy ſa malheureuſe retentiou: Mais la deroute d’n
-        bonne partie des trouppes parles armesde’ſon Alreſ
-        fe oyale, commandées paronſeur Ptinc4d
-        Cond́, ont deſtouneé ce grandmalecelapourtan as
-        fait perdre la volonté de ce Scelert d’aclauarla rûine
-        de la Ffbuce par la coninuation de la guerre, empeſ
-        ehantque le Roy neretourne enſa bonne villed Pa-
-        ris.
-        ’Car au gfand’Conſeil de guanquiſetina ſae
-        ily a pea dd iburs, pour viuà quy larmée, Maari
-        ſeroit employée, il y eu de grandes paroqlles conte
-        taeionentre le Mareſchad da Vdlrby,louuerneur 
-        
-        de la peiſonne du Roy, &amp; le Mareſchal du Pleſfis
-        Praſln, eſclaue de ce Cardinal, ſç̧auoir ſi ſa Maieſté
-        -etourneroit à Patis, le Meſchal de. illeroy pro¬.
-        poſa de. canluire ſadite Maiſté́ en ſa bonne uille
-        deParis fans le Cardinal &amp; qu’il ſȩauoit quelle y ſe
-        oit tresbien receu par les’anſiens qui aymenna.¬.
-        turellement leu Roy, &amp;ſe tinnent tres eureuy
-        lots qu’il y ſejoufs comoau ,ceatre de ſon jpos.
-        Maisil fuat auſſi toftconttedispar le Mareſchal.d4
-        Pleſſis Praſlin au contraire, ſelanla reſolutiõ̃ de Ma
-        arin, qu’ilae falloir poindamener le oy aà̀ Pais &amp;
-        que ſon Epinence e deſiipas esouqnor en, vne
-        ville qui b’aunoiiugé &amp; andamné́ oomme, criminel
-        de leze Maieſté, &amp; qu’il falloit continuer la guerreé́
-        pout ronplaſuenernion deice;; ce Mareſe
-        ehal faconſnethpar lesMaais e le Mareſcha
-        de-Villeeoy mbnuts6.2..
-         oauoarun lo uroiuol oout ſie olus ouiſn
-        enntre Meſſieurs les ainoos à uiré la pluſpartdes gar!
-        iſons, nurr ſoulsmea des yille&amp; Jplace Jonre
-        de Fraae, mais de cellesda lFlandtes, d’lralie de.
-        Catalogne onquiſes pat les armosodgts,2
-        aſté cauſe quol’Eſpagnol aueconobere gvaſſeaue
-        caſſiegé la ville de Grauelinaes amerl&amp; prrela
-        quelle auoix eſté le commoancement du bonheur &amp;.
-        de la g loire des arms de ſor lR. ſç̧achane que
-        le Mareſrade, Gnçey eneſtoit abln, que la gar
-        niſon eaaauoi eſté affolbhie prnbonue arjtiode 
-         3
-         Solda’qu’on en auioit tité́ ſelon les ordre de Maxa¬
-        rln, &amp; qu’elle eſtoit nal pourueuë pour ſe deffendre
-        &amp; ſouſtenir vn l’on ſiege, de mauieio qu’il eſt com¬ i
-        re aſſeeré qu’en l’eſtat preſent auque la France ſe
-        troiiuent à̀ preſent, que c’eſte place tres-jmportante
-        au’ Royaume ſe poe &amp; retquitnra à ſus premiers
-        Maiſtres, ne pouudneſtre ſecouruë
-         Ee méſne ſe peut dire de lCacaloge d’ou ce meſ
-        ne Cardinal aà̀ tirer; les meilleuſtes trouppes que le
-        Roy y entretenoit poar y eõſeruer ſon authorité, puis
-        que les Catalanss’eſtoiẽt d leur pareslbre &amp; volõ̃té
-        donné à̀ ſa Maieſté Tres-Chraſbienne laquelle e
-        ployé tant de mlhone d’brede milliers de bons &amp;
-        vaillans Soldats pour ſa conſeruation tontre l’Eſpa
-        gnol, en ſorte que le Mareſchl odancourt qui
-        comamande pouir ſ Maieſté, n’ayantfderny agee
-        pour empeſcher la perte de ceſteprinoipauté, &amp; ſans
-        eſperance d’en renuoyer pendant nos troubles. clui
-        le, ayant fait tout ce qu’vn grand &amp; vallaut Capitai
-        ne peut tefmoigner-en la condrite de la guerre, ſers
-        contraint de ceder à̀ la force Eſpagnole laquelle
-        ayant tenuegtemps la ville de Darcelonne Blo,
-        quée - fhiegée par mer &amp; par terre, par Montjoux
-        Citadelle qui-la commade, s’e rendra finalle
-        ment maiſtre, ce qui ſera par neceſſité ſuiuy du reſte
-        de la Catalogne qui ne ſe pourra plus coſeruer.
-        Ilfaue eſperer Ie meſme de ce queles Ftaois po¬!
-        ſedeut en ltalie, car l’Eſpaguolqui y degrades in
-        trigues 
-        9.
-        agae&amp;idtolligence, voulaaoſpſerori de l’oeefiie.
-        denos guerres ciuille, trauailleà fairtl vne puiſxté
-        lgueaue les Princes &amp; Rapubſiques d’Italie, pou
-        en chaſſer les François &amp; reprendre Cazal, Monacho
-        eautres pl aces que le Roy a eonquiſes par le bon
-        heur de ſes armes: Ce Cardinal y ayant ſemé́ la diui?
-        ſiona &amp; altere les cœurs &amp; la bonne volonté que les
-        Princes &amp; Potenrats Iraliens, auoient pour la France;
-        de laquelle’ils ont touſiours eſté puiſsãment ſecourus
-        lors que l’Eſpagnol leur a-fait la guerret mais depuis
-        que Mazarin yaontretenu des Corſadires &amp; des Pyra
-        tes, il les a rendus ennemis de la France, pauure, Frcéd
-        malheureuſe en ta condition pceſente, de voir que
-        pour maintrenir vn eſtranger &amp; tyran on y voye les
-        Ftançois arme contreles François, courir aà ta ruineé,
-        deſchirant tes propres entrailles, &amp; mertre l’Eſtat
-        au bord de ſa perte; pour aſſouuir ce monſtre impi
-        roiable &amp; alrere du ſang de ton peuple.
-        Il eſt ſi inſolent qu’au lieu de s’arreſter dans le cours
-        deſa malheureuſe conduite, &amp; deſſaier à̀ ſe retirer
-        -pour eontenrer laFrance, de laquelleil s’eſt rendu eni
-        nemy, il recherche s’authoriſer plus que iamais par de
-        nouuelles aliances qu’il proteſte, comme celle du
-        aariage de l’vne de ſes niepces auee le fils du Duc
-        de Boiillon, auquel il promet des Gouuememens &amp;
-        des Benefices, come ſi la Faace depondoit toute de
-        lay &amp; qu’len peuſt diſpoſer à ſon plaiſrrà, ce ſubjer
-        ilaſai alléen Cour, le meſme Dc de Boü̈illou uy
-        ¬ 
-         ic
-        à fait donner la charge de Conſeiler d’Eftat, &amp; d’eſ¬:
-        tre commeil eſt aà̀ preſent des premiers au Conſeil ſe¬.
-        eret &amp; de guerre du Roy, afin d’y faire paſſer &amp; reſou
-        -dre tout ce qui entrera en l’Imagination de ce Cardi
-        nal, qurveut eſloigner ſa Maieſté le plus qu’il pourra
-        de Paris, puis qu’il connoiſt que les grandes villes &amp;
-        ſur tout ceſte capitale eſt reſolueë de receuoir ſa Maie¬.
-        ſté en cas qu’elle n’y amene Mazarin.
-         Son Alteſſe Royalle intereſſée au ſalut de la France
-         au repos du peuple, trauaille grandement aà groſſir
-        ſon armée pour ruiner celle deoſtrecommun enne¬
-        my, à quoy il n’eſpargne ſes ſoins ny ſon credit, tants
-        enuers le Duc Charles de Lorraine, qui luy offre ſes
-        trouppes, qu’enuers les Cours Souueraines, pour les
-        entrerenr dans l’vnion reſolaë pour le bien de
-        l’Eſtat.
-        Monſieur le Prince ſecondans la bonne’ intention,
-        de ſon Alteſle Royale, a touſiours proteſté com
-        me il fait encore, qu’au cas que Mazarin ſoit eſloigné,
-        il poſera les armes &amp; les joindra auec celles du Roy,;
-        pour les employer contre les ennemis eſtrangers, &amp;
-        empeſcher leurs irruptions en France, les autres Prin
-        ces vnis conſpirent au meſme deſſein.
-         Et defait ſon Alceſſe Royale &amp; ledit Seigneur
-        Prince ayant fait leuer bon nombre de Cauallerie&amp;
-        d’Infanterie dans Paris &amp; aux enuirons, &amp; fourny ar
-        gent pour l’entretenir, en font partir iournellemenc
-        des Compagnies pour s’alle rendre en l’armée de-la 
-        11
-        dite Alteſſa en Gaſtinis, où elle groſſit ſous la
-        conduitte du Comte de Tauanne, aſſiſté du Marquls
-        de la Boulaye &amp; du Baron de Clinchant vaillant &amp; et
-        permenté́ Capitaine, pour la ſubſiſtance de laquelle
-        atmée, on achepre du bled &amp; des fourrages aux lieux
-        où l’on en l’on en peut trouuer.
-         L’arrmée Mazarine a paſſé la Loire, &amp; eſt entré́e en
-        Gſtinois preés la ville de S. TFarge au, qu’on dirauoir
-        comme inueſtie, car pour Gerjeau, il ny paſſe per
-        ſonnes à cauſe ds quelques arches que fit rompre le
-        Baron de Sirop lors qu’il l’attaqua, contre le Comte
-        de Paluau, où il fut bleſſeé au viſage &amp; au corps, eh
-        telle ſorte qu’apres auoir eſté́ penſé fort ſoigneuſe
-        ment, tantpar vn Chirurgien que ſon Alteſſe Royale
-        lay enuoya que par d’autres Chirurgiens d’Orleans, il
-        mourut au tres-grand regret de ſadite Alteſſe &amp; de
-        toute l’armée, comme vieil &amp; vaillant Capitaine qui
-        s’eſt trouué en ſix vingts barailles &amp; combats &amp; à
-        quanrité de ſieges où il a laiſſé́ mille belles preuues de
-        fon grand courage.
-        La Cour eſt touſiours à̀ Gyen, où ſe tient fort ſo
-        uant Conſeil, pour reſoudre où le Roy prendra ſa
-        marche, le Cardinal Mazarin a beaucoup de fois
-        propoſeé de mener ſa Maieſteé à Lyon, peut-eſtre plus
-        proche d’Italie où il pourroit faire ſa retraitte er cas
-        qu’il y fuſt contraint.
-         Autres ont eſté d’auis de retourner en Berry, preſ
-        ſer &amp; prendre Mouron, que Mouieut le Prince a’faii
-        ¬ 
-        12
-        nouuellement pourueoit de ſoldats &amp; de munltions
-        neceſſaires pour la deffenſe.
-         Autres Conſeillent de retourner à Tours, oùeſten
-        core le Grand Conſeil auec ces deux Semeſtres, pour
-        de là aller à̀ Angers, mais iuſques à preſent il n’y a rien
-        de reſolu, &amp; le Cardinal attend les nouuelles leuées
-        qu’il fait faire ſoudement aà̀ P’aris &amp; ailleurs, pour leſ
-        quels faire, il a enuoyé des Capitaines auec argent &amp;
-        Commiſſions, &amp; lors qu’elles ſeront arriuées, ſon deſ
-        ſein eſt de venir aà̀ vne autre bataille, qu’il s’imagine
-        gaigner ſur Meſſieurs les Princes.
-         L’on eſcrit de Dijon qu’vne armée du Duc Char
-        les de Lorraine, commandé́e par le Major Hogge Sa
-        uoyard, eſt artiuée à Jounelle &amp; à Vezon en la Fran
-        che-Comté, auec ordre exprés de paſſer en France, &amp;
-        joindre l’armé́e de ſon Alteſſe Royale, pour à̀ quoy
-        faire lepain de munition en pluſieurs lieux, afin de
-        preuenir le deſordre que ces trouppes Lorraines
-        pourroient fare en leur paſſage..
-        De plus le Comte de Volmo à quatre mille che
-        uaux Allemans qu’il promet amener aà ſa meſme Al
-        teſſe Royale, aux conditions accordées.
-        On mande d’Amiens que le Due d’Elbœuf &amp; le
-        Mareſchal d’Aumont ont ordre expreés de leuer l
-        plua de trouppes qu’ils pourront pour enuoyer à Ca
-        lais, à Dunerque &amp; au ſecours deGraueline, maisque
-        faute d’argent ils ne trouuent point de ſoldats qui ſe
-        veulẽt s’ẽrooller, ce qui pourra empeſçber de ſecourir
-        Graueline, 
-        Grueline, où̀ les ennemis ont deſia pris quelqes
-        Forts, qui ſeruent pour les loger &amp; incommoder
-        d’autant plus la place.
-         Les nouuelles de Bruxelles plus dernieres, ſont que
-        le Duc Charles en deuoit ſortir pour aller ordonner
-        vna autre corps d’armée conduitte par le Comte de Li
-        gneuille ſon Lieutenant General, qui doiuent paſſer
-        par le Barrois en Baſſigny, &amp; marcher vers l’armeée de
-        ſon Alteſſe Royale.
-        Le premier corps d’armée arriué en Franche- Com
-        teé, eſt venu d’Alſace où le Duc Charles les auoit en
-        uoyez hyuerner, ce derrier ſort du pays de Liege, &amp;
-        prennent deux differentes routes en leur marchepour
-        la France.
-         Qui eſt malheur bien grand de ce que l’on eſt con
-        trant de faire, ainſi entre des armées eſtrangeres au
-        Royaume qui n’y peuuent cauſer que de la ruine, &amp;
-        de la deſolation, &amp; cela oblige pour preuenir la mal
-        heureuſe intention du Cardinal Mazarin, qui deſire
-        voir les Princes, la Nobleſſe, les meilleurs Capitaines,
-        &amp; les plus belles forces Françoiſes s’entre-ruiner pour
-        encourager, comme l’on croit, les ennemis eſtran
-        gers de nous faire plus facilement la guerre, n’entre
-        tenant les armeées d’hommes &amp; d’argent que pour en
-        fuirte ferendre Maiſtre des Prouinces de France qu’ls
-        iugeront eſtre plus à leur bien ſceance, ſans y pou
-        uoireſtreenpeſchez.
-         Lestfouppes de l’armée de fon Altee Royale qui
-        D
-        ., .-¬aſ
-        r¬¬2,. ..... 
-        i4
-        eſtoit poſtée prés de Lorris en Gaſtinois, s’eſtendent
-        à preſent iuſques à Montargis pour s’oppoſer aux Ma
-        zarins, qui ſont au dcç̧à la Loire, &amp; qui ont eſté con
-        traint de quitter la Sologne, à cauſe de la peſte &amp; de
-        la charté des viures qui y regnent, &amp; qui ſe pourroit
-        communiquer au reſte de l’armeée par les trouppes du
-        Marquis du Pleſſis Belliere, qui ſont ainſi infectées de
-        la contagion, e qui eſt cauſe qu’on leur fait changer
-        de lieu pours’en garentir, ceſemble que ce ſoit vne
-        iuſte punitionDuine qui ſe deſchiarge ſuri ces gens-là
-        qui ont commis tant d’impietez, larcins &amp; volleries,;
-        &amp; ruiné tant de peuples qui à preſent crient ven
-        geance aà Dieu.
-        Les Villes des Prouinces attendent la reſolution
-        de celle de Paris, &amp; lors quand elles ſçauront, qu’el le
-        ſe ſera ouuertement declarée contre le Cardinal Ma
-        zarin &amp; ſes adherans, &amp; qu’elle s’vnira auecles Prin
-        ces pour chaſſer ce cruel tyran, elles proteſtent faire le
-        meſme, &amp; de receuoir le Roy lors qu’il- luy plaira y
-        aller, mais ſans armer &amp; ſans le Mazarin, comme ne
-        ſe pouuant fier à ce violateur de foy, qui expoſe ain¬i
-        les villes ou ſes Emiſſaires entrent auec armés aà̀ la.
-        proye de ſes ſoldats, qui eſt la ſeule raiſon qui les fait à
-         preſent roidir &amp; refuſer leurs portes aux Mazarins
-        lors qu’ils s’y preſenteront, aymant mieux employer
-        leurs vies, leurs moyens &amp; leurs iuſtes deffences que
-        de ſouffri r telles violances &amp; cruautez fi barbares.!
-         aville e Sens eſtant aſſiſe ſur la riuiere d’’onne,
-        i 
-        15
-        &amp; par laquelle ſe conduiſent à Paris les vins d’Auxer
-        re &amp; de Bourgogne &amp; quantité́ d’autres marchandi
-        ſes, comme trescommode;cela auoir fait reſoudre au
-        Cardinal Mazarin de faitẽ marcher ſon armée de ce
-        toſteé́ là, pour s’emparer de ce paſſage &amp; empeſchet.
-        par cette condute les vins &amp; les bleds qui viennent
-        à Paris, auec deſſein auſſi d’y loger, &amp; pour cet effet;
-        il auoit enuoyé́ à la ville vne lettre de cachet du Roy,
-        faire entendre que ſa vlaieſteé deſiroit y venir.
-         Sur quoyfut tenuë aſſembleée ou fut mis en conſi
-        deration les voleries,’que les gens de ce Cardinal
-        auoient commis és villes qui-leurs adoient ouuert les
-        portes, quelques promeſſes qu’on leur euſt fait de
-        ne faire aucun tort, &amp; qu’ils ne feroient pas mois
-        atriuer de deſordre aà leurville ces choſes repreſenté́es
-        tout le corps d’vne commune voix reſolurent de ne
-        point receuoir le Roy qu’auec ſa ſeule maiſon, ſans
-        armée &amp; ſans Mazarin, mdisque ſ Maieſté́ deſirane y
-        venirainſi, elle y ſeroit tres- bien ’receuë, en ſa ville de
-        Sens comme ayant eſté touſiouts affectionné́e à ſoa
-        ſeruice &amp; des plus portez à luy rendre l’beiſſance
-        quelleluy doit.
-         Le reſulcat de ceſte aſſemblée-de ville, fut mis en
-        tre les mins detrois de leuts Dputez qu’ils éuoye
-        renten Cour: Mais au lieu d’eſtre cſcoutez &amp; d’ena
-        tendre leurs raiſons. On les a fat arreſter &amp; por ſe
-        vanget de ce reffus, ils ouoyerent quelques compa
-        gnies de Caualerle adux nuirdedeville ds Sensou
-        
-        ..1
-        ¬-TA¬¬¬ 
-         16
-        ils commencerent a piller &amp; à bruſler, &amp; euſſent fait
-        le meſme aux faux-bourgs, ſans l’ordre que ceux de.
-        Sens y donnerent.
-         Surquoy il faut remarquer ſur l’aduis de l’approche
-        de l’armée Mazarine vers le pays Senenois, la pluſpart
-        de la Nobleſſe abandonna ſes Chaſteaux &amp; Maiſons
-        de campagne, &amp; s’eſtant retirez auec les meilleurs de
-        leurs meubles en ladite ville, comme auoient ’fait
-        auſſi les paiſans de plus de trente bourgs &amp; villages
-        circonuoiſins qui y amenerent tout ce qu’ils auoient
-        pour l’oſter de la voye de ces volleurs, &amp; eſtãt ainſi re
-        irez à Sens, les Caualiers Mazarins ne manquerent
-        pas de faire leurs courſes ordinaires au plus prez de la
-        ville, auec des deſolations incroyables.
-         Alors par le Conſel du corps de la ville, la’pluſpart
-        des Gentils hommes quis’y eſtoient refugiez monte
-        terent aà cheual auec leurs domeſtiques, &amp; entre les
-        payſans furent choiſis enuiron deux cens, qui auec
-        cinq cens ieunes hommes de la ville, tous bien armez
-        ſortirent ſur les deux heures de nuict, &amp; allerent.don
-        ner vne Camiſade à cette Caualerie quis’eſtoient auã
-        cez iuſques à vn quart de lieuë de Sens, ils les ſurpri
-        rentendormis &amp; les eſuellerent ſi promptement que
-        ſans leur donner temps de faire brider leurs cheuaux,
-        ny de prendre leurs armes, ils en tuerent la pluſpart,
-        &amp; quelques priſonniers qu’ils emeneret en ladite vil
-        le auec tout le buuin, ce qui reſioiit grandemeut
-        noſtre Burgeoiſie dee yoi ainfi deſliuréo.
-        2 e
-        FIN.
-        AE
-        a			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">nouvelles</term>
+          <term type="subject">Condé, Louis de Bourbon (1621-1686 ; prince de)</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-09-20" who="KA" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />LE PREMIER
+        <lb />COVRRIER
+        <lb />DES PRINCES
+        <lb />APPORTANT TOVTES
+        <lb />les nouuelles, tant de la Cour
+        <lb />que de l’Armée de ſon Alteſ
+        <lb rend="¬" break="no" />ſe Royale &amp; d’ailleurs.<figure type="decoration" />
+        <lb />A PARIS,
+        <lb />Chez ANDRE CHOVQVEUX, ruë Sainct
+        <lb /> André des Arts.
+        <lb /> MD DC. LII.
+        <lb />
+        <imprimatur>Auec Permißion de ſon Al. Royale.</imprimatur>
+        <pb n="2" />
+        <pb n="3" />
+        <lb />PREMIER COVRRIER DES
+        <lb /> Princes.
+        <lb />1
+        <lb />AV LECTEVR.
+        <lb /> MY LECTEVR, omme parcy-deuant u s.
+        <lb /> prins conmcentement d’apprendre les nounelles de
+        <lb />Guyenne, lors que Monſeigneurle Prince de Condey eſtoi
+        <lb />&amp; de ce qui ſe paſſoit en la gaere qui s’y faiſois auec plus
+        <lb />d’effee qu’à preſent, qu’il en eſt aqbſene. On a iugé qu com
+        <lb rend="¬" break="no" />me le fart de la guerre eſt ainenant vers la riuiere de Eoire
+        <lb />s pays de Sologne &amp; de Gaſtinois, u aurois à plaiſir d’ap
+        <lb rend="¬" break="no" />prendre ce qui ſe paſſe emtre les armées Mazariner &amp; celle
+        <lb />des Prmces de Frace nis ſous les ondres de ſonAl. Royale,
+        <lb />&amp; comnae encela on a voulu ſasis fare à ta uriofee, on r’eſt
+        <lb />adſe d’obſeruer les nouuelles de l’eſtat preſent de ceſte guerre
+        <lb />ſelon le rapport qui s’en peut aprendre des Courries des.
+        <lb />Princes, que nos te donnerons d’oreſnauant a meſure qu’iis
+        <lb />arrineront, pourue que tu aye nmaſtre-trauail, nos ſoins es
+        <lb rend="¬" break="no" />plyez les renelir &amp; nos peines agreables... <pb n="4" />
+        <lb />.
+        <lb />4
+        <lb />&amp;,
+        <lb />e ep? p:
+        <lb />PREMIER CORRER DEsS PRNcES,
+        <lb />Apporrant touies les nouuelles tant de la Cour que
+        <lb />de l’armée de ſon ALTESSE ROYALE &amp; d’ailleurs.
+        <lb /> Es nouuelles d’Angersous apprennent le mau
+        <lb rend="¬" break="no" />uais traicterhment que ceſte ville là areç̧eu &amp; re
+        <lb rend="¬" break="no" /> çot iournellemient par ceux que le Cardinal Maza
+        <lb rend="¬" break="no" />rin y a enuoyez &amp; le regret qu’elle a de voir le peu de
+        <lb />fidelité qu’on luy a tenueé lors qu’envoyant ſes Depu
+        <lb rend="¬" break="no" />tez aà̀ Saumur pour proteſter de leur ’obeyſſance au
+        <lb />Roy &amp; luy teſmoigner le contentement auec lequel
+        <lb />ſa Maieſté ſeroit touſiours bien receuë̈ en ſa ville
+        <lb />d’Angers, qui a de tout temps eſteé tres-fidelle à ſon
+        <lb />Roy, moyennant leſquelles proteſtations on’luy
+        <lb />aioit promis de maintenir &amp; conſeruet ſes priuile
+        <lb rend="¬" break="no" /> ges, &amp; qu’il ny ſeroit fait ni apporteé aucunechoſequî
+        <lb />peut donner ſuiet de plainte &amp; de meſcontentenent
+        <lb />à ſes habitans par ceux qui y entreroient au nom de
+        <lb />ſadte Majeſté, qu’aucontraire, ils en receuroient vh
+        <lb /> traictement ſi doux, qu’ils auroient tous ſujet de s’en
+        <lb />loü̈er.
+        <lb /> Mais comme le Cardinal Mazarin fait profeſſion
+        <lb />de violer toure foy, donner &amp; tient pour maximes
+        <lb />tres pernicieuſes, que l’on ne doit tenir ny garder la
+        <lb />foy &amp; la parolle aux ſuiets, il en a bien fait connoi
+        <lb rend="¬" break="no" />ſtre
+        <lb />
+        <lb rend="¬" break="no" />
+        <lb rend="¬" break="no" />. <pb n="5" />
+        <lb />te les effetreuers eſte vild’Angers s ca coamné
+        <lb />elle eut tres-librement ouuert ſes portes à ceux que
+        <lb />le Cardinaly enuoyoit pour s’en aſſurer, &amp; fait entretr
+        <lb />nombre do gés de guerre plus grand qu’il n’auoit eſté.
+        <lb />accordeé, pou chaſtier ſes habitans, qui auoient pris
+        <lb />les armes ſous le Duc de Rohan leur Gouuerneur
+        <lb />pour leur iuſte deffenſe à empeſcher leurtune, com
+        <lb rend="¬" break="no" />me s’eſtant inſtruicts de ce que pluſieurs ville de
+        <lb />Guyene, Poictou, de Berry &amp; d’autres paysauoient
+        <lb />enduoré ſous latyrénre des ſoldats de ce Cardinal, ils ne
+        <lb />furét ſitoſt ontrez qu’au lieu d’y entretenit lesarticles?
+        <lb />porte pai la capitulatiõ à eux accordé́e, que lesſoldats
+        <lb />commencerent d’y viure comme à diſegetion, &amp; leur
+        <lb />chef à exiger des ſommes immenſes des habitans.
+        <lb />Et conte la Declararion expreſſe du Roy de l’an
+        <lb rend="¬" break="no" />née i648. verifiées en ſon Parlement de Pat les I
+        <lb rend="¬" break="no" />tendans de la luſtice euſſent eſté caſſez &amp; reuoquez,
+        <lb />le Cardinal, qui ne fait non plus d’eſtat des Ordon
+        <lb rend="¬" break="no" />nances du Roy, ni des Arreſts de Parlement de Fran
+        <lb rend="¬" break="no" />ee, que d’vne chanſon, y a enuoié vneperſonne à ſade
+        <lb rend="¬" break="no" />uotion pour Intendant de laluſtice, lequeleuec deux
+        <lb />cens Mouſquetaires qu’il a logez dans le Chaſtaau
+        <lb />coneraint les Marchands par empriſonnement des
+        <lb />Magiſtrats &amp; d’autres principaux habitans à payer les
+        <lb />ſommes qui leur eſtoiaent impoſea dont la-ville à en
+        <lb rend="¬" break="no" />oye ſes deputez au Parlement de, Paris, en faire
+        <lb />ſes plaintes.
+        <lb />L’onſçailes depareens uiolen barbaes &amp; ué,
+        <lb /> B
+        <lb />A¬ <pb n="6" />
+        <lb />6
+        <lb />huains que les Soldats Maariris ont comnis é́s e
+        <lb />uironsde Saumur, de Tours de Blois ſans eſpargnor
+        <lb />lesleux ſacrez ny auoir eſgard à fexe.ny à la’qualité
+        <lb />des perſonnes qu’ils ont cruellement traictés, oputre
+        <lb />les vols, &amp; Larcias inendiens &amp; bruſlements qu’ils
+        <lb />ont commis en vne infinité de lieux, à la ruiae &amp; de
+        <lb rend="¬" break="no" />ſolarion du pauuare peuple
+        <lb /> Le deſſein d ces-impie eſtranger &amp; eunemy no
+        <lb rend="¬" break="no" />toire eſtant de faire approchet ſes armées es enuirons
+        <lb />de Paris pour ſe vanger de ceſte grande ville capitale
+        <lb />u Royaume on la faiſant fouffrir, la famine &amp; l di
+        <lb />tte de toutes choſes par-la reſoluion ps luy priſ4
+        <lb />&amp;e faire ſaiſtr ou tes les aduenues &amp; faire que la neceſ
+        <lb rend="¬" break="no" />ſité nettant ceſte grande ville en grande peine le
+        <lb />grand peule ſetoir contramct àsentrecpouppe la
+        <lb />gorge, &amp; àſe ruiner de luylmeſme, cequieua; aſſou
+        <lb />uy ſa malheureuſe retentiou: Mais la deroute d’n
+        <lb />bonne partie des trouppes parles armesde’ſon Alreſ
+        <lb rend="¬" break="no" />fe oyale, commandées paronſeur Ptinc4d
+        <lb />Cond́, ont deſtouneé ce grandmalecelapourtan as
+        <lb />fait perdre la volonté de ce Scelert d’aclauarla rûine
+        <lb />de la Ffbuce par la coninuation de la guerre, empeſ
+        <lb rend="¬" break="no" />ehantque le Roy neretourne enſa bonne villed Pa-
+        <lb />ris.
+        <lb />’Car au gfand’Conſeil de guanquiſetina ſae
+        <lb />ily a pea dd iburs, pour viuà quy larmée, Maari
+        <lb />ſeroit employée, il y eu de grandes paroqlles conte
+        <lb rend="¬" break="no" />taeionentre le Mareſchad da Vdlrby,louuerneur <pb n="7" />
+        <lb />
+        <lb rend="¬" break="no" />de la peiſonne du Roy, &amp; le Mareſchal du Pleſfis
+        <lb />Praſln, eſclaue de ce Cardinal, ſç̧auoir ſi ſa Maieſté
+        <lb />-etourneroit à Patis, le Meſchal de. illeroy pro¬.
+        <lb />poſa de. canluire ſadite Maiſté́ en ſa bonne uille
+        <lb />deParis fans le Cardinal &amp; qu’il ſȩauoit quelle y ſe
+        <lb rend="¬" break="no" />oit tresbien receu par les’anſiens qui aymenna.¬.
+        <lb />turellement leu Roy, &amp;ſe tinnent tres eureuy
+        <lb />lots qu’il y ſejoufs comoau ,ceatre de ſon jpos.
+        <lb />Maisil fuat auſſi toftconttedispar le Mareſchal.d4
+        <lb />Pleſſis Praſlin au contraire, ſelanla reſolutiõ̃ de Ma
+        <lb rend="¬" break="no" />arin, qu’ilae falloir poindamener le oy aà̀ Pais &amp;
+        <lb />que ſon Epinence e deſiipas esouqnor en, vne
+        <lb />ville qui b’aunoiiugé &amp; andamné́ oomme, criminel
+        <lb />de leze Maieſté, &amp; qu’il falloit continuer la guerreé́
+        <lb />pout ronplaſuenernion deice;; ce Mareſe
+        <lb />ehal faconſnethpar lesMaais e le Mareſcha
+        <lb />de-Villeeoy mbnuts6.2..
+        <lb /> oauoarun lo uroiuol oout ſie olus ouiſn
+        <lb />enntre Meſſieurs les ainoos à uiré la pluſpartdes gar!
+        <lb />iſons, nurr ſoulsmea des yille&amp; Jplace Jonre
+        <lb />de Fraae, mais de cellesda lFlandtes, d’lralie de.
+        <lb />Catalogne onquiſes pat les armosodgts,2
+        <lb />aſté cauſe quol’Eſpagnol aueconobere gvaſſeaue
+        <lb />caſſiegé la ville de Grauelinaes amerl&amp; prrela
+        <lb />quelle auoix eſté le commoancement du bonheur &amp;.
+        <lb />de la g loire des arms de ſor lR. ſç̧achane que
+        <lb />le Mareſrade, Gnçey eneſtoit abln, que la gar
+        <lb rend="¬" break="no" />niſon eaaauoi eſté affolbhie prnbonue arjtiode <pb n="8" />
+        <lb /> 3
+        <lb /> Solda’qu’on en auioit tité́ ſelon les ordre de Maxa¬
+        <lb rend="¬" break="no" />rln, &amp; qu’elle eſtoit nal pourueuë pour ſe deffendre
+        <lb />&amp; ſouſtenir vn l’on ſiege, de mauieio qu’il eſt com¬ i
+        <lb />re aſſeeré qu’en l’eſtat preſent auque la France ſe
+        <lb rend="¬" break="no" />troiiuent à̀ preſent, que c’eſte place tres-jmportante
+        <lb />au’ Royaume ſe poe &amp; retquitnra à ſus premiers
+        <lb />Maiſtres, ne pouudneſtre ſecouruë
+        <lb /> Ee méſne ſe peut dire de lCacaloge d’ou ce meſ
+        <lb rend="¬" break="no" />ne Cardinal aà̀ tirer; les meilleuſtes trouppes que le
+        <lb />Roy y entretenoit poar y eõſeruer ſon authorité, puis
+        <lb />que les Catalanss’eſtoiẽt d leur pareslbre &amp; volõ̃té
+        <lb />donné à̀ ſa Maieſté Tres-Chraſbienne laquelle e
+        <lb />ployé tant de mlhone d’brede milliers de bons &amp;
+        <lb />vaillans Soldats pour ſa conſeruation tontre l’Eſpa
+        <lb rend="¬" break="no" />gnol, en ſorte que le Mareſchl odancourt qui
+        <lb />comamande pouir ſ Maieſté, n’ayantfderny agee
+        <lb rend="¬" break="no" />pour empeſcher la perte de ceſteprinoipauté, &amp; ſans
+        <lb />eſperance d’en renuoyer pendant nos troubles. clui
+        <lb rend="¬" break="no" />le, ayant fait tout ce qu’vn grand &amp; vallaut Capitai
+        <lb rend="¬" break="no" />ne peut tefmoigner-en la condrite de la guerre, ſers
+        <lb />contraint de ceder à̀ la force Eſpagnole laquelle
+        <lb />ayant tenuegtemps la ville de Darcelonne Blo,
+        <lb />quée - fhiegée par mer &amp; par terre, par Montjoux
+        <lb />Citadelle qui-la commade, s’e rendra finalle
+        <lb rend="¬" break="no" />ment maiſtre, ce qui ſera par neceſſité ſuiuy du reſte
+        <lb rend="¬" break="no" />de la Catalogne qui ne ſe pourra plus coſeruer.
+        <lb />Ilfaue eſperer Ie meſme de ce queles Ftaois po¬!
+        <lb />ſedeut en ltalie, car l’Eſpaguolqui y degrades in
+        <lb rend="¬" break="no" />trigues <pb n="9" />
+        <lb />9.
+        <lb />agae&amp;idtolligence, voulaaoſpſerori de l’oeefiie.
+        <lb />denos guerres ciuille, trauailleà fairtl vne puiſxté
+        <lb />lgueaue les Princes &amp; Rapubſiques d’Italie, pou
+        <lb />en chaſſer les François &amp; reprendre Cazal, Monacho
+        <lb />eautres pl aces que le Roy a eonquiſes par le bon
+        <lb rend="¬" break="no" />heur de ſes armes: Ce Cardinal y ayant ſemé́ la diui?
+        <lb />ſiona &amp; altere les cœurs &amp; la bonne volonté que les
+        <lb />Princes &amp; Potenrats Iraliens, auoient pour la France;
+        <lb />de laquelle’ils ont touſiours eſté puiſsãment ſecourus
+        <lb />lors que l’Eſpagnol leur a-fait la guerret mais depuis
+        <lb />que Mazarin yaontretenu des Corſadires &amp; des Pyra
+        <lb rend="¬" break="no" />tes, il les a rendus ennemis de la France, pauure, Frcéd
+        <lb />malheureuſe en ta condition pceſente, de voir que
+        <lb />pour maintrenir vn eſtranger &amp; tyran on y voye les
+        <lb />Ftançois arme contreles François, courir aà ta ruineé,
+        <lb />deſchirant tes propres entrailles, &amp; mertre l’Eſtat
+        <lb />au bord de ſa perte; pour aſſouuir ce monſtre impi
+        <lb rend="¬" break="no" />roiable &amp; alrere du ſang de ton peuple.
+        <lb />Il eſt ſi inſolent qu’au lieu de s’arreſter dans le cours
+        <lb />deſa malheureuſe conduite, &amp; deſſaier à̀ ſe retirer
+        <lb />-pour eontenrer laFrance, de laquelleil s’eſt rendu eni
+        <lb />nemy, il recherche s’authoriſer plus que iamais par de
+        <lb />nouuelles aliances qu’il proteſte, comme celle du
+        <lb />aariage de l’vne de ſes niepces auee le fils du Duc
+        <lb />de Boiillon, auquel il promet des Gouuememens &amp;
+        <lb />des Benefices, come ſi la Faace depondoit toute de
+        <lb />lay &amp; qu’len peuſt diſpoſer à ſon plaiſrrà, ce ſubjer
+        <lb />ilaſai alléen Cour, le meſme Dc de Boü̈illou uy
+        <lb />¬ <pb n="10" />
+        <lb /> ic
+        <lb />à fait donner la charge de Conſeiler d’Eftat, &amp; d’eſ¬:
+        <lb />tre commeil eſt aà̀ preſent des premiers au Conſeil ſe¬.
+        <lb />eret &amp; de guerre du Roy, afin d’y faire paſſer &amp; reſou
+        <lb rend="¬" break="no" />-dre tout ce qui entrera en l’Imagination de ce Cardi
+        <lb rend="¬" break="no" />nal, qurveut eſloigner ſa Maieſté le plus qu’il pourra
+        <lb />de Paris, puis qu’il connoiſt que les grandes villes &amp;
+        <lb />ſur tout ceſte capitale eſt reſolueë de receuoir ſa Maie¬.
+        <lb />ſté en cas qu’elle n’y amene Mazarin.
+        <lb /> Son Alteſſe Royalle intereſſée au ſalut de la France
+        <lb /> au repos du peuple, trauaille grandement aà groſſir
+        <lb />ſon armée pour ruiner celle deoſtrecommun enne¬
+        <lb rend="¬" break="no" />my, à quoy il n’eſpargne ſes ſoins ny ſon credit, tants
+        <lb />enuers le Duc Charles de Lorraine, qui luy offre ſes
+        <lb />trouppes, qu’enuers les Cours Souueraines, pour les
+        <lb />entrerenr dans l’vnion reſolaë pour le bien de
+        <lb />l’Eſtat.
+        <lb />Monſieur le Prince ſecondans la bonne’ intention,
+        <lb />de ſon Alteſle Royale, a touſiours proteſté com
+        <lb rend="¬" break="no" />me il fait encore, qu’au cas que Mazarin ſoit eſloigné,
+        <lb />il poſera les armes &amp; les joindra auec celles du Roy,;
+        <lb />pour les employer contre les ennemis eſtrangers, &amp;
+        <lb />empeſcher leurs irruptions en France, les autres Prin
+        <lb rend="¬" break="no" />ces vnis conſpirent au meſme deſſein.
+        <lb /> Et defait ſon Alceſſe Royale &amp; ledit Seigneur
+        <lb />Prince ayant fait leuer bon nombre de Cauallerie&amp;
+        <lb />d’Infanterie dans Paris &amp; aux enuirons, &amp; fourny ar
+        <lb rend="¬" break="no" />gent pour l’entretenir, en font partir iournellemenc
+        <lb />des Compagnies pour s’alle rendre en l’armée de-la <pb n="11" />
+        <lb />11
+        <lb />dite Alteſſa en Gaſtinis, où elle groſſit ſous la
+        <lb />conduitte du Comte de Tauanne, aſſiſté du Marquls
+        <lb />de la Boulaye &amp; du Baron de Clinchant vaillant &amp; et
+        <lb rend="¬" break="no" />permenté́ Capitaine, pour la ſubſiſtance de laquelle
+        <lb />atmée, on achepre du bled &amp; des fourrages aux lieux
+        <lb />où l’on en l’on en peut trouuer.
+        <lb /> L’arrmée Mazarine a paſſé la Loire, &amp; eſt entré́e en
+        <lb />Gſtinois preés la ville de S. TFarge au, qu’on dirauoir
+        <lb />comme inueſtie, car pour Gerjeau, il ny paſſe per
+        <lb rend="¬" break="no" />ſonnes à cauſe ds quelques arches que fit rompre le
+        <lb />Baron de Sirop lors qu’il l’attaqua, contre le Comte
+        <lb />de Paluau, où il fut bleſſeé au viſage &amp; au corps, eh
+        <lb />telle ſorte qu’apres auoir eſté́ penſé fort ſoigneuſe
+        <lb rend="¬" break="no" />ment, tantpar vn Chirurgien que ſon Alteſſe Royale
+        <lb rend="¬" break="no" />lay enuoya que par d’autres Chirurgiens d’Orleans, il
+        <lb />mourut au tres-grand regret de ſadite Alteſſe &amp; de
+        <lb />toute l’armée, comme vieil &amp; vaillant Capitaine qui
+        <lb />s’eſt trouué en ſix vingts barailles &amp; combats &amp; à
+        <lb />quanrité de ſieges où il a laiſſé́ mille belles preuues de
+        <lb />fon grand courage.
+        <lb />La Cour eſt touſiours à̀ Gyen, où ſe tient fort ſo
+        <lb rend="¬" break="no" />uant Conſeil, pour reſoudre où le Roy prendra ſa
+        <lb />marche, le Cardinal Mazarin a beaucoup de fois
+        <lb />propoſeé de mener ſa Maieſteé à Lyon, peut-eſtre plus
+        <lb />proche d’Italie où il pourroit faire ſa retraitte er cas
+        <lb />qu’il y fuſt contraint.
+        <lb /> Autres ont eſté d’auis de retourner en Berry, preſ
+        <lb rend="¬" break="no" />ſer &amp; prendre Mouron, que Mouieut le Prince a’faii
+        <lb />¬ <pb n="12" />
+        <lb />12
+        <lb />nouuellement pourueoit de ſoldats &amp; de munltions
+        <lb />neceſſaires pour la deffenſe.
+        <lb /> Autres Conſeillent de retourner à Tours, oùeſten
+        <lb rend="¬" break="no" />core le Grand Conſeil auec ces deux Semeſtres, pour
+        <lb />de là aller à̀ Angers, mais iuſques à preſent il n’y a rien
+        <lb />de reſolu, &amp; le Cardinal attend les nouuelles leuées
+        <lb />qu’il fait faire ſoudement aà̀ P’aris &amp; ailleurs, pour leſ
+        <lb rend="¬" break="no" />quels faire, il a enuoyé des Capitaines auec argent &amp;
+        <lb />Commiſſions, &amp; lors qu’elles ſeront arriuées, ſon deſ
+        <lb rend="¬" break="no" />ſein eſt de venir aà̀ vne autre bataille, qu’il s’imagine
+        <lb />gaigner ſur Meſſieurs les Princes.
+        <lb /> L’on eſcrit de Dijon qu’vne armée du Duc Char
+        <lb rend="¬" break="no" />les de Lorraine, commandé́e par le Major Hogge Sa
+        <lb rend="¬" break="no" />uoyard, eſt artiuée à Jounelle &amp; à Vezon en la Fran
+        <lb rend="¬" break="no" />che-Comté, auec ordre exprés de paſſer en France, &amp;
+        <lb />joindre l’armé́e de ſon Alteſſe Royale, pour à̀ quoy
+        <lb />faire lepain de munition en pluſieurs lieux, afin de
+        <lb />preuenir le deſordre que ces trouppes Lorraines
+        <lb />pourroient fare en leur paſſage..
+        <lb />De plus le Comte de Volmo à quatre mille che
+        <lb rend="¬" break="no" />uaux Allemans qu’il promet amener aà ſa meſme Al
+        <lb rend="¬" break="no" />teſſe Royale, aux conditions accordées.
+        <lb />On mande d’Amiens que le Due d’Elbœuf &amp; le
+        <lb />Mareſchal d’Aumont ont ordre expreés de leuer l
+        <lb />plua de trouppes qu’ils pourront pour enuoyer à Ca
+        <lb rend="¬" break="no" />lais, à Dunerque &amp; au ſecours deGraueline, maisque
+        <lb />faute d’argent ils ne trouuent point de ſoldats qui ſe
+        <lb />veulẽt s’ẽrooller, ce qui pourra empeſçber de ſecourir
+        <lb />Graueline, <pb n="13" />
+        <lb />Grueline, où̀ les ennemis ont deſia pris quelqes
+        <lb />Forts, qui ſeruent pour les loger &amp; incommoder
+        <lb />d’autant plus la place.
+        <lb /> Les nouuelles de Bruxelles plus dernieres, ſont que
+        <lb />le Duc Charles en deuoit ſortir pour aller ordonner
+        <lb />vna autre corps d’armée conduitte par le Comte de Li
+        <lb rend="¬" break="no" />gneuille ſon Lieutenant General, qui doiuent paſſer
+        <lb />par le Barrois en Baſſigny, &amp; marcher vers l’armeée de
+        <lb />ſon Alteſſe Royale.
+        <lb />Le premier corps d’armée arriué en Franche- Com
+        <lb rend="¬" break="no" />teé, eſt venu d’Alſace où le Duc Charles les auoit en
+        <lb rend="¬" break="no" />uoyez hyuerner, ce derrier ſort du pays de Liege, &amp;
+        <lb />prennent deux differentes routes en leur marchepour
+        <lb />la France.
+        <lb /> Qui eſt malheur bien grand de ce que l’on eſt con
+        <lb rend="¬" break="no" />trant de faire, ainſi entre des armées eſtrangeres au
+        <lb />Royaume qui n’y peuuent cauſer que de la ruine, &amp;
+        <lb />de la deſolation, &amp; cela oblige pour preuenir la mal
+        <lb rend="¬" break="no" />heureuſe intention du Cardinal Mazarin, qui deſire
+        <lb />voir les Princes, la Nobleſſe, les meilleurs Capitaines,
+        <lb />&amp; les plus belles forces Françoiſes s’entre-ruiner pour
+        <lb />encourager, comme l’on croit, les ennemis eſtran
+        <lb rend="¬" break="no" />gers de nous faire plus facilement la guerre, n’entre
+        <lb rend="¬" break="no" />tenant les armeées d’hommes &amp; d’argent que pour en
+        <lb />fuirte ferendre Maiſtre des Prouinces de France qu’ls
+        <lb />iugeront eſtre plus à leur bien ſceance, ſans y pou
+        <lb rend="¬" break="no" />uoireſtreenpeſchez.
+        <lb /> Lestfouppes de l’armée de fon Altee Royale qui
+        <lb />D
+        <lb />., .-¬aſ
+        <lb />r¬¬2,. ..... <pb n="14" />
+        <lb />i4
+        <lb />eſtoit poſtée prés de Lorris en Gaſtinois, s’eſtendent
+        <lb />à preſent iuſques à Montargis pour s’oppoſer aux Ma
+        <lb rend="¬" break="no" />zarins, qui ſont au dcç̧à la Loire, &amp; qui ont eſté con
+        <lb rend="¬" break="no" />traint de quitter la Sologne, à cauſe de la peſte &amp; de
+        <lb />la charté des viures qui y regnent, &amp; qui ſe pourroit
+        <lb />communiquer au reſte de l’armeée par les trouppes du
+        <lb />Marquis du Pleſſis Belliere, qui ſont ainſi infectées de
+        <lb />la contagion, e qui eſt cauſe qu’on leur fait changer
+        <lb />de lieu pours’en garentir, ceſemble que ce ſoit vne
+        <lb />iuſte punitionDuine qui ſe deſchiarge ſuri ces gens-là
+        <lb />qui ont commis tant d’impietez, larcins &amp; volleries,;
+        <lb />&amp; ruiné tant de peuples qui à preſent crient ven
+        <lb rend="¬" break="no" />geance aà Dieu.
+        <lb />Les Villes des Prouinces attendent la reſolution
+        <lb />de celle de Paris, &amp; lors quand elles ſçauront, qu’el le
+        <lb />ſe ſera ouuertement declarée contre le Cardinal Ma
+        <lb rend="¬" break="no" />zarin &amp; ſes adherans, &amp; qu’elle s’vnira auecles Prin
+        <lb rend="¬" break="no" />ces pour chaſſer ce cruel tyran, elles proteſtent faire le
+        <lb />meſme, &amp; de receuoir le Roy lors qu’il- luy plaira y
+        <lb />aller, mais ſans armer &amp; ſans le Mazarin, comme ne
+        <lb />ſe pouuant fier à ce violateur de foy, qui expoſe ain¬i
+        <lb />les villes ou ſes Emiſſaires entrent auec armés aà̀ la.
+        <lb />proye de ſes ſoldats, qui eſt la ſeule raiſon qui les fait à
+        <lb /> preſent roidir &amp; refuſer leurs portes aux Mazarins
+        <lb />lors qu’ils s’y preſenteront, aymant mieux employer
+        <lb />leurs vies, leurs moyens &amp; leurs iuſtes deffences que
+        <lb />de ſouffri r telles violances &amp; cruautez fi barbares.!
+        <lb /> aville e Sens eſtant aſſiſe ſur la riuiere d’’onne,
+        <lb />i <pb n="15" />
+        <lb />15
+        <lb />&amp; par laquelle ſe conduiſent à Paris les vins d’Auxer
+        <lb rend="¬" break="no" />re &amp; de Bourgogne &amp; quantité́ d’autres marchandi
+        <lb rend="¬" break="no" />ſes, comme trescommode;cela auoir fait reſoudre au
+        <lb />Cardinal Mazarin de faitẽ marcher ſon armée de ce
+        <lb />toſteé́ là, pour s’emparer de ce paſſage &amp; empeſchet.
+        <lb />par cette condute les vins &amp; les bleds qui viennent
+        <lb />à Paris, auec deſſein auſſi d’y loger, &amp; pour cet effet;
+        <lb />il auoit enuoyé́ à la ville vne lettre de cachet du Roy,
+        <lb />faire entendre que ſa vlaieſteé deſiroit y venir.
+        <lb /> Sur quoyfut tenuë aſſembleée ou fut mis en conſi
+        <lb rend="¬" break="no" />deration les voleries,’que les gens de ce Cardinal
+        <lb />auoient commis és villes qui-leurs adoient ouuert les
+        <lb />portes, quelques promeſſes qu’on leur euſt fait de
+        <lb />ne faire aucun tort, &amp; qu’ils ne feroient pas mois
+        <lb />atriuer de deſordre aà leurville ces choſes repreſenté́es
+        <lb />tout le corps d’vne commune voix reſolurent de ne
+        <lb />point receuoir le Roy qu’auec ſa ſeule maiſon, ſans
+        <lb />armée &amp; ſans Mazarin, mdisque ſ Maieſté́ deſirane y
+        <lb />venirainſi, elle y ſeroit tres- bien ’receuë, en ſa ville de
+        <lb />Sens comme ayant eſté touſiouts affectionné́e à ſoa
+        <lb />ſeruice &amp; des plus portez à luy rendre l’beiſſance
+        <lb />quelleluy doit.
+        <lb /> Le reſulcat de ceſte aſſemblée-de ville, fut mis en
+        <lb />tre les mins detrois de leuts Dputez qu’ils éuoye
+        <lb rend="¬" break="no" />renten Cour: Mais au lieu d’eſtre cſcoutez &amp; d’ena
+        <lb />tendre leurs raiſons. On les a fat arreſter &amp; por ſe
+        <lb />vanget de ce reffus, ils ouoyerent quelques compa
+        <lb rend="¬" break="no" />gnies de Caualerle adux nuirdedeville ds Sensou
+        <lb />
+        <lb rend="¬" break="no" />..1
+        <lb />¬-TA¬¬¬ <pb n="16" />
+        <lb /> 16
+        <lb />ils commencerent a piller &amp; à bruſler, &amp; euſſent fait
+        <lb />le meſme aux faux-bourgs, ſans l’ordre que ceux de.
+        <lb />Sens y donnerent.
+        <lb /> Surquoy il faut remarquer ſur l’aduis de l’approche
+        <lb />de l’armée Mazarine vers le pays Senenois, la pluſpart
+        <lb />de la Nobleſſe abandonna ſes Chaſteaux &amp; Maiſons
+        <lb />de campagne, &amp; s’eſtant retirez auec les meilleurs de
+        <lb />leurs meubles en ladite ville, comme auoient ’fait
+        <lb />auſſi les paiſans de plus de trente bourgs &amp; villages
+        <lb />circonuoiſins qui y amenerent tout ce qu’ils auoient
+        <lb />pour l’oſter de la voye de ces volleurs, &amp; eſtãt ainſi re
+        <lb rend="¬" break="no" />irez à Sens, les Caualiers Mazarins ne manquerent
+        <lb />pas de faire leurs courſes ordinaires au plus prez de la
+        <lb />ville, auec des deſolations incroyables.
+        <lb /> Alors par le Conſel du corps de la ville, la’pluſpart
+        <lb />des Gentils hommes quis’y eſtoient refugiez monte
+        <lb rend="¬" break="no" />terent aà cheual auec leurs domeſtiques, &amp; entre les
+        <lb />payſans furent choiſis enuiron deux cens, qui auec
+        <lb />cinq cens ieunes hommes de la ville, tous bien armez
+        <lb />ſortirent ſur les deux heures de nuict, &amp; allerent.don
+        <lb rend="¬" break="no" />ner vne Camiſade à cette Caualerie quis’eſtoient auã
+        <lb rend="¬" break="no" />cez iuſques à vn quart de lieuë de Sens, ils les ſurpri
+        <lb rend="¬" break="no" />rentendormis &amp; les eſuellerent ſi promptement que
+        <lb />ſans leur donner temps de faire brider leurs cheuaux,
+        <lb />ny de prendre leurs armes, ils en tuerent la pluſpart,
+        <lb />&amp; quelques priſonniers qu’ils emeneret en ladite vil
+        <lb rend="¬" break="no" />le auec tout le buuin, ce qui reſioiit grandemeut
+        <lb />noſtre Burgeoiſie dee yoi ainfi deſliuréo.
+        <lb />2 e
+        <lb />FIN.
+        <lb />AE
+        <lb />a </p>
+    </body>
+  </text>
 </TEI>

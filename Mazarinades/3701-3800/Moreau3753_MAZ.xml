@@ -1,1315 +1,719 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau3753_MAZ">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Taxes faites des maisons sises aux environs de Paris et
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Taxes faites des maisons sises aux environs de Paris et
           ailleurs, en exécution de l'arrêt suivant du conseil.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
-					<persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
-					<persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName role="Project_manager" ref="orcid:0000-0001-9518-1040">Abiven Karine</persName>
+          <persName role="Project_manager" ref="orcid:0000-0002-4795-2362">Lejeune Gaël</persName>
+          <persName role="OCRisation" ref="orcid:0000-0002-0007-1664">Tanguy
             Jean-Baptiste</persName>
-					<persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2022-03-02">2 mars 2022</date>
-				<availability status="restricted" n="cc-by">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14745"/>
-					<author ref="isni:0000000055360231" source="Mazarine">
-						<persName>Anne d'Autriche</persName>
-					</author>
-					<author ref="isni:0000000121754977" source="Mazarine">
-						<orgName>Conseil d'État</orgName>
-					</author>
-					<author ref="isni:0000000383255772" source="Mazarine">
-						<persName>Louis XIV</persName>
-					</author>
-					<title source="Mazarine">Taxes faites des maisons sises aux environs de Paris et ailleurs,
+          <persName role="engineer" ref="orcid:0000-0003-0850-8266">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2022-03-02">2 mars 2022</date>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://mazarinum.bibliotheque-mazarine.fr/ark:/61562/mz14745" />
+          <author ref="isni:0000000055360231" source="Mazarine">
+            <persName>Anne d'Autriche</persName>
+          </author>
+          <author ref="isni:0000000121754977" source="Mazarine">
+            <orgName>Conseil d'État</orgName>
+          </author>
+          <author ref="isni:0000000383255772" source="Mazarine">
+            <persName>Louis XIV</persName>
+          </author>
+          <title source="Mazarine">Taxes faites des maisons sises aux environs de Paris et ailleurs,
             en exécution de l'arrest suivant du Conseil.</title>
-					<pubPlace source="Mazarine">Sans lieu</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Mazarine" when="1649">1649</date>
-					<date source="Carrier" when="1649-02-18">18 février 1649</date>
-					<extent>
-						<measure unit="page" quantity="12"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="BM49935" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49935"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2988507">Paris</settlement>
-						<institution>Bibliothèque Mazarine</institution>
-						<repository/>
-						<idno type="cote">M11964</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>False</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace source="Mazarine">Sans lieu</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Mazarine" when="1649">1649</date>
+          <date source="Carrier" when="1649-02-18">18 février 1649</date>
+          <extent>
+            <measure unit="page" quantity="12" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="BM49935" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49935" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2988507">Paris</settlement>
+            <institution>Bibliothèque Mazarine</institution>
+            <repository />
+            <idno type="cote">M11964</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>False</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine">Liste des terres et des propriétaires, des frondeurs d'après Célestin
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine">Liste des terres et des propriétaires, des frondeurs d'après Célestin
           Moreau, taxés en vertu de l'arrêt du Conseil du Roi du 15 février 1649 (BM01031). Autre
           édition : à Lyon par Jean-Aymé de Candy, jouxte la copie imprimée à St-Germain.
           Moreau3753. Titre de départ. Arrêt et rôle signés "De Guenegaud". Arrêt du conseil d'État
           daté du 15 février 1649. D'après Hubert Carrier, texte paru le 18 février 1649
           (Bibliothèque Mazarine, Ms. 4682-5, f. 298v).</p>
-				<p source="Moreau">3753. Taxes faites des maisons sises aux environs de Paris et ailleurs ,
+        <p source="Moreau">3753. Taxes faites des maisons sises aux environs de Paris et ailleurs ,
           en exécution de l'arrêt suivant du {, f- I Ç li.%) conseil. Saint-Germain en Laje, le 18
           février 1649, 12 pages. Rare. L'arrêt du conseil est du 15 février. Ce rôle est d'autant
           plus curieux qu'il est une liste nominative des principaux frondeurs. Il y a, sous la date
           du 22 février, un arrêt du Parlement contre l'arrêt du conseil.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">liste</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-					<term type="subject" ref="institution/fiscalite.xml">Impôts</term>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_12" source="Moreau">
-					<p>Arrestation du chevalier de La Valette</p>
-					<date when="1649-02-11">1649-02-11</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-03-18" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<pb n="12"/>
-				<pb n="13"/>
-				<pb n="14"/>
-				<pb n="15"/>
-				<pb n="16"/>
-				<pb n="17"/>
-				<pb n="18"/>
-				<pb n="19"/>
-				<pb n="20"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<gap/>
-				<imprimatur>Avec privilége.</imprimatur>
-TAXES FAITES
-        DES MAISONS SISES
-        AVX ENVIRONS DE PARIS
-        ET AILLEVRS 
-        
-        gnificatiou qui ſera faite deſdites taxes aiux rece
-        eurs &amp; fermiers deſdites terres, maiſons &amp; herira
-        ges, ils payeront en ce lieu entre les mains du ſieur
-        Longuet Treſorier géneral de l’extraordinaire des
-        guerres, commis par Sa Majeſté à la tecepte d ſdits
-        deniers: autrement &amp; à̀ faute de ce faire dans ledit
-        temps, le recouvrement deſdits deniets ſera fit par
-        les trdupes d’infanterie &amp; de cavalerie de Sa Majeſté;
-        à chacune deſquelles, ſera donné vn Role particulier
-        deſdites taxes, par cantons, pour leur tenir lieu de
-        montres, ſubſiſtance &amp; recrués, leſquels ils execute
-        ront contre les y dénommez par ſaiſie &amp; vente de
-        tous les meubles, beſtiaux &amp; materiaux qui ſe trou
-        veront dans leſdites maiſons, meſme par coupe des
-        bois de haute fuſtaye &amp; taillis, &amp; autres voyes qui
-        leur ſerot ordonnez par Sa Majeſté, comme pour ſes
-        propres deniers &amp; affaires: Et ſera le preſent Ai reſt
-        exécuté, nonobſtant oppoſition ou empeſchemene
-        quelconque. Fait au Conſeil d’Eſtat du Roy, Sa Ma
-        jeſté y eſtant, la Reine Régente ſa Mere preſente,
-        tenu à S. Germain en Laye, le quinzieſme iour de
-        Feévrieri649. Signé,DE GVENEGAVD. 
-        ROLE DES TAXES
-        1
-        QVe Le ROY N SON CONSe1L,
-        - p
-        la Reine Regente ſa mere préſente, a ordonné eſtre payces par
-        les proprietaires des terres, maiſons &amp; heritages cy-apres men¬e
-        ionneé́es, ſZes és environs de la ville de Pars &amp; ailleurs, au
-        payement deſquelles ſeront les Receveurs &amp; Fermiers d’icel
-        les contraints cõ̃me pour les deniers&amp; affaires de Sa Majeſlé,
-        meſme parvente &amp; adiudication des meubles, beſtiaux &amp;.
-        materiaux qui ſe trouveront dans leſditesterres, maiſons &amp;
-        heritages appartenmans ax proprietaires d’icelles, par couppe
-        de bois de haute fuſtaye, tails, &amp;autres voyes s’il y échet:
-        pour eftre les deniers en provenans employeZà la ſubſisſtanc
-        &amp; entretenement des troupes de Sadite ajeſteé eſtans eés en
-        virons de ladite ville, ſuivant l’Arreſt du Conſeil du quin
-        iéme jour de Fevrier 649.
-        PREMIEREMEN T.
-        T
-        Es terres de Champlaſtreux &amp; le Pleſis Vallée, aparte
-        ans au ſieurMolé, cy devat prémier Preſident de la Cour
-        de Par lemet, transférée aà Montargis, payera pour partie
-        de ladite ſubſiſtance &amp; entretenement des troupes de Sa Maje
-        ſté, comme il eſt dit cy-deſſus la ſomme de huict mil livres
-        viii. mil livres.
-        La terre de Gouſſainville appartenant au ſieur Nicolai Pré
-        ſident en la Chambre des Compres, payera huict mil livres
-        ey,
-        viii. m.l.
-        La terre du MeſnilS. Denis, appartenant au ſieur de Mont
-        maur, payera quatre mil livres, cy,
-        iiii. m. l.
-        Les terres de Roiſſy, Eponeé, Bray ſur Seine, Balagny, appar
-        tenans au ſieur de Meſme, cy-devant Préſident en ſadite Cour
-        payera ſix mil livres cy,
-        vi-m. l.
-        Les terres du Meſnil &amp; Moregard, appartenans au ſieur Ame
-        lot prémiet Préſident à la Cour des Aydes, payera ſix mil livres
-        cy,
-        La terre de
-        vi. m.l.
-        appartenant au ſieur
-        d’Orieux, Preſident en la Cour des aAydes, payeratrois mii! 
-        
-        Z
-        
-        7
-        4
-        iii. m.l.
-        livres, cy
-        La terre de Fontenay ſur Marle appartenant à la Veuſve du
-        ii. m. l.
-        ſieur Méliand, payera deux mil livres, cy
-        Vne maiſon à S. Cloud appart enant au ſieur le Cogneux, ey
-        devant Preéſident en ladite Cour, payera ſix mil livres, cy vim.l,
-        Les terres de Vatan &amp; Brévannes apartenant au ſieur aubry,
-        Preſident en la Chambre des Compres, payera quatre mil li
-        iiii. m. l.
-        vres, cy
-        La terre de la Fertéen Normandie appartenant au ſieur Marc
-        iv. m. l.
-        la Ferté, payera quatre mil livres, cy
-        Vne aaiſon ſize à Vitry appartenant au ſieur le Noir, Preſi
-        dent en la Cour des Aydes, payera trois mil livres, n l
-        La terre du Tremblay appartenant au ſieur du Trembley,
-        iv. .l.
-        payera quatre mil livres, cy
-        La terre d’Heſanville appartenant à Maiſlre
-        ii m. l.
-        Prelabé, payera deux mil livres, cy
-        Vne maiſon ſize à S. Aubin appartenant au ſieur de Grieux,
-        Preſident en ladite Cour des Aydes, payera rois mil livres,
-        iii. m. l.
-        cy
-        La terte du Pleſſis, &amp; vne ferme dans Vilpinte, appartenant
-        au ſieur de Fleelle Preſident en la Chambre des Comptes,
-        iV. m. l.
-        payera quatre mil livres, cy
-        La terre d’Avry la Chapelle appartenant au ſieur de riou,
-        Preſident en la Cour des aydes, payera trois mi! livres, cy
-        iii. m. l.
-        La terre de Ville- Evrard appartenant au ſieur Dollu, payera
-        ii. m. l.
-        deux mil livres, cy
-        La terre de Courberon appartenant au ſieur de Neſmon, y
-        devan Preſident en la Cour de Parlement, payera ſix mil livres,
-        vi. m.l.
-        ey
-        La terre de Berny appartenant au ſieur de Bellicvre, cy-de
-        vant Preſdent en ladite Cour, payera fix mil livres, cy vi. m. I.
-        La terre de Magnanville appartenant au ſieur Briſſonnes
-        Maiſtre des Requeſtes, payera quatre mil livres, cy i m.l
-        La terre de Baville appartenant au ſieur de la Mognon a aiſ
-        iv. m.l.
-        tre des Re queſtes, payera quatre mil livres, cy
-        La terre de Bonnelle appartenant au ſieur de Bonnelle,paye
-        e iii. m. l.
-        ra trois mil livres, cy
-        Vne maiſon ſize dans le village d’Aty, appartenant au ſieur
-        Boucherat Maiſtre des Requeſtes, payera quatre mil livres,
-        La terre
-        iV. m. l.
-        cy 
-        a.
-        5
-        La terre de Villebon appartenant au ſieur Potier ey-devant
-        Preſident en ladite Cour, payera ſix mil livres, cy vi. m. I.
-        La terre de Beauregard, appartenant au ſieur Ardier Preſi
-        denmt en la Chambre des Comptes, payera quatre mil livres,
-        iv. m. l.
-        cy
-        Laerre de Morman appartenant au ſieur le Févre Treſorier
-        ii. m.l.
-        de France, payera deux mil livres, cy
-        La terre dû Vivier appartenant au ſieur Creſpin, cy devant
-        Conſeiller en ladite Cour, payera trois mil livres, cy- iii. m.l.
-        La terre de Rezé appartenant au ſieur Beſnard, payera qua
-        iv. m. I.
-        tre mil livres, cy
-        La terre deMuontrenet appartenant au ſieurGarnier Preſident
-        en la Ccour des Aydes payer a t ois mil livres, cy iii. m. l.
-        Vne maiſon ize à P ntoiſe, apartenant au ſieur de Brouſſel..
-        les, ei devant Conleiller en ladite Cour, payera trois mille
-        iii. m. l.
-        lives. ey
-        La terre deCrevan,. aprtenant au ſieur le Nain ci devant
-        Conſeiller en ladireLour, payera trois mil le livres. ey iii. m. l.
-        La terre de Gyonut, apartenant au ſieur Vion, payera
-        ii. m. l.
-        deux mille livres. cy
-        La terre de Lartiges, apartenant au ſieur le Meuſnier ci-de
-        vant Conſeillest en ladite Cour, payera rois mille liv. iii m. l..
-        La terre de Romilly, aparteuant au ſieur Duret de Chevri,
-        iiii. m. l.
-        payera quatre mille livres. cy.
-        La terre de Nogent les Vierges, apartenant au ſieur deChail
-        lou Maiſtre des Comptes, payera trois mille livres. cy iii. m.l.
-        La terre de Iauſſigny, apartenant au ſieur de Bragelonne
-        Coſeiller en la Cur des Aydes, payera deux mille liv. ii. m. lI.
-        La rérre de Roquancourt, apartenant au ſieur SanguiCon
-        ſeiller en la Cour des Aydes, payera deux mil le ivres. ii. m. l.
-        Vne maiſon ſize à Suſſy, apartenant au ſieur Gontier, ci- de
-        vant Conſeiller en la Cour, payera rrois mille livres. iii. m. I.
-        La terre de Livry Electioa de Melun, &amp; vne maiſon ſize à
-        Cuvilly Election de Paris, apartenant au ſieur Lionne grand
-        Audiancier, payera trois mille livres. cy
-        iii. m.
-        Mole,
-        La terre de la Broſſe, aparrenant à Maiſtre
-        Receveur des reſtes de la Chambre des Comptes, payera deux
-        mille livres. cy
-        ii. m. l.
-        La terre de Taterny apartenant au ſieut de Leſealopier,.
-        payera deux mille livres. cy
-        ii. m. l,
-        La terre d’Oolle apartenant au ſieur Champeron eci-devant
-        B
-        , 2aaao.,,.,, a,, ,¬ ,. Aaa.....2...
-        74
-        - L
-        -a¬¬¬¬¬¬....... ¬.¬¬2¬¬.¬¬¬¬¬¬.-¬¬ 
-        
-        . ?
-        1
-        6
-        Conſeiller enla Cout, payera trois mille livres. ey iii. m. I.
-        La terre de Nuë apartenant au ſieur Chezelles, payera deux
-        ii. m. l.
-        mille livres. ey
-        La terre de la Grange apartenant au ſieur Sevin, ci-devant
-        Conſeiller en la Cour, payera trois mille livres. cy lii. m. I.
-        La terre d’Eveſquemont appartenant au ſieur Leſſeville
-        Maiſtredes Comptes, payera trols mil le livres. cy iii. m. l.
-        La terre de Torcy appartenant au ſieur de la Croix Maiſtre
-        des Comptes, payera trois mille livres. cy
-        iii. m. l.
-        Vne terre au village de Montauban apartenant au ſieur de
-        Villebois, payera deux mille livres. cy
-        ii. m. I.
-        Les moulins de Goneſſe apartenans au fieur Laiſné ci-d e.
-        vant Conſeiller en ia Cour, payeroat trois mille livres. iii. m.I.
-        La terre Doynville apartenant au ſieur Barthelemi Maiſtre
-        iii. m. l.
-        des Comptes, payer a trois mil livres. cy
-        La terre de Valenton apartenant au eur Godefroy, paye
-        ii. m. l.
-        ra deux mil livres. cy
-        La terre d’Eſchartcon apartenant au ſieur Bouguier ci- de
-        vant Conſellier en la Cour, payera trois rmil livres. cy iii. m. l.
-        La terre de Bagneux apartenant au ſieur Chapelier Avocat gé
-        néral en la Cout des Aydes, payera deux mil livres. ii. m.l.
-        La terre de Vanvre apartenant au ſieur Préoſt ei- deva nt
-        Conſeiller en la Cour, payera trois mile livres. ey iii. m. l.
-        Vne terre à la Planchette apartenant à Maiſtre
-        Noire, payera mil livres. cy.
-        ml.
-        La terre de Chatenay &amp; vne ferme à S. Denis en France ap
-        partenant au ſieur de Longueil ci-devant Conſeiller en la Cour,
-        iii. m. l.
-        payera trois mil livres. cy
-        Laterre de l’Epine apartenant au ſieur d Mouſſy Maiſlre.
-        des Cmpes, payera trois mil livres. cy
-        iii. m. l.
-        La terre de Richebourg pres Clermont en Normandie ap
-        qartenant au ſieur Iaſſaut Maiſtte des Requeſtes, payera quatre
-        mil livres. cy
-        iiii. m. I.
-        La terre de Gilvoiſin apartenant au ſieur Gobelin, payera
-        ii. m. l.
-        deux mil lilvres. cy
-        La terre de Ludy pres Melun appartenant au ſieur Payen,
-        eci-devant Conſeiller en ladite Cour, payera trois mil li
-        iii. m. l.
-        vres. cy
-        La terre de Biſſeuil apartenaat au ſieur Amelot Maiſtre des
-        Requeſtes, payera quatre mil iivres. cy
-        iiii. m. l.
-        La tetre de Briére le Caaſtel apparteuant au ſieur Merat 
-        
-        Maiſtre des comptes, payera trois mil livres. ecy iii. m.I.
-        La terre de Poully &amp; autres lieux en dé́pendans apartenans
-        au ſieur Coquey ei devant Conſeiller en la cour, payera
-        iii. m. l.
-        trois mil livres. cv
-        La terre d’Auffemont apartenant au ſieur Lieutenant civil
-        vi. m. l.
-        de Paris, payera ſix mil livres. cy
-        La terre de Bernieres appartenant au ſieur de Bernieres
-        Maiſtre des Requeſtes, payera quatre mil livres. ey iiii. m. l.
-        La Baronnie de Melay pres Chartres appartenant au ſieur d
-        Thou, ci-devant Préſident auix Enqueſtes, payera quarre mil
-        iii. m.l.
-        Iivres. cy
-        La terre du Tremblay apart enant au ſieur Miron Maiſtte des
-        iii. m. I.
-        comptes, payera trois mil livres. cy
-        La t erre d’Aurheü̈il apartenant au ſieur Viallard, payera qua
-        iiii. m.l.
-        tre mil livres. cy
-        La terre de Périgny appartenaut au ſieur le Picard Maiſtre
-        iiii. m. I.
-        des Requeſtes, payera quatre mil liores. cy
-        Les terres du Blanmeſnil &amp; Groſlay apartenans au ſieur Pot
-        ier ci-devant Préſident aux Enqueſtes, payera quatre mil li
-        iiii. m. l.
-        vres. cy
-        La terre de Boiſgreffier pais d’Aunis appartenant au ſieur
-        de Cumont, ci-devant conſeiller en ladite cour, payera trois
-        iii. m. l.
-        mil livres; cy
-        La terre de Billet en France appartenant au ſieur Dubois,
-        ii. m. l.
-        payera deux mil livres cy
-        La terre de Gois pres Provins apartenant au ſieur du Tillet,
-        ci-devat conſeiller en ladite cour, payera trois mil liv. iii. m. l.
-        La terre du Boullay apartenant au ſieur Favier maiſtre des
-        iiii. m. l.
-        Requeſtes, payera quatre mil livres. ci
-        La terre de Chaſtiilon apartenant au ſieur Lientenant erimi
-        nel au chaſtelet de Paris, payora quatre mil livres. iiii. m. l.
-        La terre de Neuville apartenant au ſieur de la Grange maiſ
-        iii. m. l.
-        tre des comptes, payera trois mil livres. ci
-        Vne maiſon ſize à Ieci, apartenant au ſieur de la Nuve, ci
-        devant conſeiller en ladite cour, payera trois mil liv. iii. m. l.
-        La terre de Villemenon apartenant au ſieur Lieutenant par
-        ii. m.l.
-        ticulier au chaſtelet, payera deux mil livres. ci
-        ne maiſon ſize àPutheaux apartenant au ſieur benoiſe, ci
-        devant conſeiller, payera quatre mil livres. ci iiii. m. l.
-        La terre des Mecures pres Mon fort appartenant au ſieur
-        Courtin miſtre des Requeſtes, payera quare mil liv. iiii. m. l.
-        A
-        6 
-        1
-        8
-        e
-        La terre de la Galliſſonniére appartenant au ſieur Barri
-        maiſtre des Requeſtes, payera quatre mil livres. ci iiii. m.l.
-        La terre du Tremblay &amp; de Mouſſel dans lait Tremblai ap
-        partenans au ſieur de Bermont conſeiller en la cour, payera
-        trois mil livres. ci
-        iii. m. l
-        La terre de Bougival apartenant au ſieur Goret, payera ttoi.
-        mil livres. ci.
-        , a¬¬¬¬
-        3
-        iii. m. ls
-        La taetre de S. Germain pres Corbeil apartenant au ſieur le.
-        Roy ci- devant conſeiller en ladite cour, payera trois mil li¬;
-        vres. ci
-        iii. m. l.
-        Vn tiers dans la terre de S. Peceais apartenant au ſieur Lor
-        in ci-devant conſeiller en ladite cour, payera trois mil li
-        iii. m. I.
-        vres. ei
-        La maiſon de Villetou ſize à Noiſi apartenant au ſieur de Vil
-        ii. m. l.
-        lefort, payera deux mil livres. ci
-        La terre de Briére apartenant au ſieus Maupeou, ci devant
-        conſciller en ladite cour, pyera trois mil livres. ei. iii. md.
-        La terre de Marcouville pres Ponthoiſe aparrenant au ſieur
-        de la range, ci-devant conſeiller en ladite our, payera trois
-        mil livres. ci
-        iii. m. l.
-        La terre de Charni appartenant au ſieur Lottin maiſtre des
-        Requeſtes, payera quatre mil livres. ci
-        iiii. m l.
-        La maiſon de Chauconin appartenant au ſieur Pinon paye
-        ii. m. I.
-        ra deux mil livres. ci
-        La terre de Courtault &amp; aures lieux appartenans au ſieur
-        de Montecot Maiſtre des Requeſtes, payera quatre mil li
-        vres. ci
-        iiii. m. l.
-        La e re de Louvre apartenant au ſieur ſe Feron, ci-devant
-        Preéſident aux Enqueſtes, payera quatre mil livres. ci iiii. m.l.
-        Laterre de la Magdelaine apartenant au ſieur Bragelonne,
-        ci-devant Préſident aux Enqueſtes., payera quatre mil li
-        vres. ci
-        iiii. m. l..
-        La terre de Champigni appartenant au ſieur Bochard maiſ
-        tre des Requeſtes, payera quatremil livres. ei iiii. m. l.
-        Les terres du aeſnil, Erouard &amp; Noiſi apartenans au ſieus
-        Coulon ci-devant conſeilier en ladite cour, payera trois mil
-        livres. ci
-        iii. m. l.
-        La terre de Fourqueux apartenant au ſieur Bouvard conſeil
-        ler en ladite cour, payera trois mil livres. ci
-        ii. mil l.
-        Les t erres d’Erblay, Gentl &amp; E richi apartenans au ſieut
-        P evolt nmare d-sR qeſtspay era trois mil iivres, i iii.n.l.
-        
-        La
-        ¬¬¬- 
-        
-        La terre de reſſy apartenant au ſieur de la Baillie, pa;yra
-        ii. m.l.
-        deux il livres. ci
-        ee-e du Tilet pres &amp;onneſſe apatrennnt au ſieur itad
-        A ldeat eonſe ller en ladiue eou paera rols nmil le l
-        e nilon ſae i gent aparrerant auſeur de lafieres
-        mairedus equeies, pyera quare millre llnl
-        luenre dle Pooeate panenan aus leur de Pn re s
-        Aelan eonſeaier enrla dire Cour paera trois ml liu il m
-        u te de la ouete apartenoni au fieur de Brouie miltre
-        iiii. m. I.
-        des Requeſles, payera quatre mil livres c
-        ,eete oele apartenant au ſieur Chalet, payera devi
-        ii. m.l.
-        mil livres ci
-        lerre de vlereg aparenant au ſient de villecsi eide
-        n Cou ſleuler enlu die ecour, pera roius ail liren le rl
-        ett de pruneuauit apar eant au ſieur Foule maiſtre
-        iiii. m. l.
-        des Requeſes, payera quatre mil livres. i
-        a ere de Noiuan aparenant au ieur de la parre, ei devaut
-        pduden aux Eenqueſen payera quae oil li il l
-        aerre de Ploule apartenant au ſieur price, payera oi
-        iii. m.l.
-        mil livres. ci
-        a ere de Tore en pbouroogne apartenn au ſeur de To
-        re, deuant Preſiden aux Enqueſies, payera quare ui li
-        iiii. m.l.
-        vres. ei
-        Les terres de Tilemon &amp; Beaumont apartenans u ſieur le
-        Nin maiire des e queſtes, payera uatre mil les i l
-        a rare de Varie aparte nanit au ſieur Re bin, payer nl li
-        m.1.
-        vres. ci
-        a erre du val coeatrice apartenant au ſieur Thibeuf. ci
-        en Conſe iller en ladue cout, payera ruis mill l l
-        Ea maſon de plaiſanee apartenant au ſieur de Villeſavi,
-        iiii. m.l.
-        payera quatre mil livres. ci
-        eee de &amp;eri&amp; maiſon de chatou, appartenans au ient
-        Por ail, ei devant eonſeiller en ladine cour, payera rois mil
-        iii. n.I.
-        livres. ci
-        La erte de Tierſan apartenant au ſieur Ruellan Maiſtre
-        iiii. m.l.
-        des Requeſes, payera quatre mil livres. 5
-        e teres deChlray’&amp; Vuali apartenans aur ſieur pitaul,
-        e devat conſeiller en iae cour, payera trois mil liv. ii m.1.
-        ere de lonnnio pureniau uſieun ouare lels
-        aevant eonſeailler en ladite cour de Parlement, tramsféte à
-        iii. m. l.
-        Montargis, payera trois mille livres. .
-        Là eee de Sereelles apartenant an ſieur de Sercelles, paye:
-        &amp; 6
-        
-        
-        
-        .
-        ra deux mil livres. i
-        10
-        ll
-        ii. m.I.
-        l erre de De pres plois, &amp; la ferrme de Canu-gny pes
-        Peiei ns anenrenani n ſeur perr, qy le unr ere iee er
-        Enqueſtes, pyera quatre mil livres, ,
-        iv m. l.
-        la erre de Gournay appatenant au ſieur Amelot aie
-        des equeſtes, payera quai re nil lres, ey
-        iv m.l.
-        l eee dus enenin preslanyapparenn au ſieu, lole
-        denant Preſident au Enqueſes, payer quare mi ſi re
-        cy
-        iv ml.
-        la ere des P’ippes pres gros bois apparrenant au ſieur Co
-        dard, payera trois inil livre, ey
-        iii m. I.
-        e es de arttoy appartenant au ſieur non, ey deans
-        conſe iler enladne cout pnyer rolsnmi lre e ’ n
-        larerre de oiſt pre ioyaumont , apparenut au ſeutle
-        anpoeou, cy detant conleiller en ladie cour, payer r,
-        mil livres, cy
-        ii. m. lL
-        le malſou ſie auvilage d clamard, apparrenan a ſ
-        Penoyer &amp; es le tiriers, payera mi lue e
-        m.l.
-        e ere de nualnaiſou appafennr u ſieut rerro, el
-        ran conſeiller en ladite cout, payera rois mnil liutes li
-        , lea retre d rauonne anparenaut auſieur euoonnme, es de
-        vann cenſeiler enladite cour, pyera rois mit ivres ei iu m
-        Ve nmalſon ſe uoer ilſies appurenuu u lieu l o
-        telon A drocat, payera deux mil lire;,
-        ii. m.I.
-        a terre de l’Eſart appattenont au’fieur Benard, ei devo
-        Cſeiler en ladlne couinnre nron ni ire eie nn
-        Ale lere de uu ls Vileppurenanr au ſieur d oley el
-        deount Peſdent aix Enqueſes , payer quare mni e
-        i
-        lV. m. .
-        , a erte de ortefontaine appartenant a la Veuve du fent
-        autman payera rois mi livres ey
-        iii. m..
-        La terre de Iuſanrigny appartemant au ſieur ole el dea
-        preide au enqueſilen p yera quare nmai nere e ee
-        naere de brou appartenant au ſieur Fedeau, ei devant con.
-        ſeler en ladne cour, payen rois mni lire, nuenur
-        Ale lorre de ouney pareune a la veaoſe u ueur de
-        Quinecy, payera deux mil’livres, ecy
-        ii. m. l.
-        terres de oriſelles &amp; chauaoi, appartenanes uufieurde
-        Pouils, y le ont ceonſeiuler en e ie ououne pue e e eoenos
-        livres, ei
-        iii. m. l.
-        Laetre de Vlermes &amp; vne maiſon ſiue a Sureſne, appare
-        pnt a la Veutve du ſieu Boulanger, ci- deuant reſ der l 
-        ſa¬¬
-        1.1
-        es 1
-        x
-        1.
-        1.1
-        t e
-        e 1
-        is 1
-        2 11
-        Enqueſtes, payera quatre mil livres, ci
-        V. m.
-        La terre du Fay appartenant au ſieur Paluau, ci devant Con
-        ſeiller en ladite Cour, payera trois mil livres, ci iii. m. 1
-        La terre de la Douze appartenant au ſieur Charton, ci- devan
-        Preſident aux Requeſtes du Palais, payera quatre mil livres,
-        iv. m.l.
-        La terre de Margency appartenant à la Veufue du ſieur Pre
-        ii m.1.
-        ſident Fayette, payera deux mil livres, cy
-        La terre de Nogent &amp; dépendances appartenant au ſieur du
-        Tillet, ei-devant Preſident aux Requeſtes du Palais, payera
-        quatre mil livres, ci
-        iv. m.l.
-        La terre de Fleury appartenanbau ſieur de Machault, ei-de
-        vant Conſeiller en ladite Cour, payera trois mil livres,
-        ci
-        iii m. l.
-        La terre de chauvry appartenant au ſieur de Cott’gnon,
-        payera trois mil livres, ci
-        iii m.
-        Vne maiſon ſize au village de Villepreux, appartenant au
-        ſieur de Gondy, payera trois mil livres, ci
-        iii m.!.
-        La terre &amp; ſeigneurie d’Avron appartenant au ſieur de Bre
-        tonvilliers, ci- devant Conſeiller en ladite Cour, payera rois
-        mil livres, ci
-        iii m.l.
-        Vne maiſon ſize au village de Fontenay ſous Bayeux appar
-        tenant à M aiſtre
-        Milet, ci- devan Procu
-        reur en ladite Cour, payera mil livres, ci
-        m. I.
-        La terre de Bourdeux &amp; la Morlay appartenans au ſieur de
-        Banquemare ci- devat Prefident aux Requeſtes du Palais, paye
-        ra quatre mil livres, ei
-        iv m. l.
-        Vne maiſon pres S. Cloud appartenant au ſieur de la Gaſtine,
-        payera deux mil livres, cy
-        ii m.I.
-        La terre de Chailly appartenant au ſieur Graſſeteau, ci-de
-        vãit Conſeiller en ladite Cour, payera troismil livres, ci iii mI.
-        La terre de Givry appartenant au ſieur Courtin, ci devant
-        Conſeller en ladie Coir payera rrois mil livres, ci iii m.I.
-        La terre de Rubelle appartenant au ſieur Bonneau, ci- deant
-        Conſeiller en ladite Cour, payera trois mil livres, ci iii m. l.
-        L a terre de Gagny appartenant au ſieur Fezzary, payera deux
-        mil livres, ey
-        ii m. I.
-        La terre de la Houſſaye appartenant au ſieur Pelletier, ey de
-        vant Conſeiller en ladire Cour, payera trois mil liv. cy iii m.1.
-        Vne maiſon appellée Ableiges appartenaut à la Veufe du
-        ſieur d’Ableiges payera trois mil livres, cy
-        iii m. l.
-        La terre de Caumartin &amp; l’Hermitage app artenant au ſieur
-        . a,
-        7
-        4. 
-        
-        12
-        le Févre, ei- devant Conſeiller en ladite Cour payera trois mil
-        iii m. I.
-        livres, ci
-        La maiſon de Villers ſur Marne appartenant au ſieur Gau
-        iii m. l.
-        mont, payera trois mil livres, ci.
-        La maiſon d’Esboullets appartenant au ſieur Larcher, paye
-        ii m. l.
-        ra deux mil livres, ey
-        La terre de la Grenne Ahebly appartenant au ſieur Charlet,
-        cy-devant Conſeiller en ladite Cour, payera trois mil livres,
-        iii m. 1.
-        cy
-        Vne maiſon fize au village de Montreü̈il appartenant à Mai
-        Droiet, ci-devan Greffier en ladite
-        ſtre
-        ii m. l.
-        Cour, payera deux mil livres, cy
-        Ve maiſon ſze au village de S. Maur oppartenant au ſieu
-        ii m.l.
-        Formé, payera deux mil livres, cy
-        La maiſon &amp; terre de l’Eſta g &amp; Garches, appartenans a
-        ſieur Talon, ci devant Advocat géneral au Parlſement, payei
-        iii m.l
-        trois mil livres cy
-        La terre de Breviande appartenant au ſieur Melian ei-de
-        va Proeureur géneral, payera quate mil livres, ci iv m.l
-        appartenant au ſieu
-        La terre de
-        de Blgnon, ei-devant Advocat géneral en ladite Cour de Par le
-        menransfeŕe à Montargis, payera la ſomme de trois mil li
-        iiim.1
-        vres, cy
-        Somme touale du contenu au pteſen one,
-        cinqcens vingt-troismil livres.
-        Fait &amp; arreſté au Conſeil d’Eſtatdlu Roy, Sa Majeſté y eſtant,
-        IoRuinme Regente Sa Mere preſene, ſuivant l’Arreſt donné en
-        ieeluy ce ourd’nuy 5 jour de F́vriers9. Sine, LOVIS.
-        E plus bas, DE GVENEGAvD.
-        ſolaionné aux Originaux par moy ſonſeilles
-        Secretaire du Roy &amp; de ſes inances.
-        Inpriméa S Germain en Laye, le 8 Février 1649			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">liste</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+          <term type="subject" ref="institution/fiscalite.xml">Impôts</term>
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_12" source="Moreau">
+          <p>Arrestation du chevalier de La Valette</p>
+          <date when="1649-02-11">1649-02-11</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-03-18" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="9" />
+        <lb />TAXES FAITES
+        <lb />DES MAISONS SISES
+        <lb />AVX ENVIRONS DE PARIS
+        <lb />ET AILLEVRS <gap />
+        <pb n="10" />
+        <lb />gnificatiou qui ſera faite deſdites taxes aiux rece
+        <lb rend="¬" break="no" />eurs &amp; fermiers deſdites terres, maiſons &amp; herira
+        <lb rend="¬" break="no" />ges, ils payeront en ce lieu entre les mains du ſieur
+        <lb />Longuet Treſorier géneral de l’extraordinaire des
+        <lb />guerres, commis par Sa Majeſté à la tecepte d ſdits
+        <lb />deniers: autrement &amp; à̀ faute de ce faire dans ledit
+        <lb />temps, le recouvrement deſdits deniets ſera fit par
+        <lb />les trdupes d’infanterie &amp; de cavalerie de Sa Majeſté;
+        <lb />à chacune deſquelles, ſera donné vn Role particulier
+        <lb />deſdites taxes, par cantons, pour leur tenir lieu de
+        <lb />montres, ſubſiſtance &amp; recrués, leſquels ils execute
+        <lb rend="¬" break="no" />ront contre les y dénommez par ſaiſie &amp; vente de
+        <lb />tous les meubles, beſtiaux &amp; materiaux qui ſe trou
+        <lb rend="¬" break="no" />veront dans leſdites maiſons, meſme par coupe des
+        <lb />bois de haute fuſtaye &amp; taillis, &amp; autres voyes qui
+        <lb />leur ſerot ordonnez par Sa Majeſté, comme pour ſes
+        <lb />propres deniers &amp; affaires: Et ſera le preſent Ai reſt
+        <lb />exécuté, nonobſtant oppoſition ou empeſchemene
+        <lb />quelconque. Fait au Conſeil d’Eſtat du Roy, Sa Ma
+        <lb rend="¬" break="no" />jeſté y eſtant, la Reine Régente ſa Mere preſente,
+        <lb />tenu à S. Germain en Laye, le quinzieſme iour de
+        <lb />Feévrieri649. Signé,DE GVENEGAVD. <pb n="11" />
+        <lb />ROLE DES TAXES
+        <lb />1
+        <lb />QVe Le ROY N SON CONSe1L,
+        <lb />- p
+        <lb />la Reine Regente ſa mere préſente, a ordonné eſtre payces par
+        <lb />les proprietaires des terres, maiſons &amp; heritages cy-apres men¬e
+        <lb />ionneé́es, ſZes és environs de la ville de Pars &amp; ailleurs, au
+        <lb />payement deſquelles ſeront les Receveurs &amp; Fermiers d’icel
+        <lb rend="¬" break="no" />les contraints cõ̃me pour les deniers&amp; affaires de Sa Majeſlé,
+        <lb />meſme parvente &amp; adiudication des meubles, beſtiaux &amp;.
+        <lb />materiaux qui ſe trouveront dans leſditesterres, maiſons &amp;
+        <lb />heritages appartenmans ax proprietaires d’icelles, par couppe
+        <lb />de bois de haute fuſtaye, tails, &amp;autres voyes s’il y échet:
+        <lb />pour eftre les deniers en provenans employeZà la ſubſisſtanc
+        <lb />&amp; entretenement des troupes de Sadite ajeſteé eſtans eés en
+        <lb rend="¬" break="no" />virons de ladite ville, ſuivant l’Arreſt du Conſeil du quin
+        <lb rend="¬" break="no" />iéme jour de Fevrier 649.
+        <lb />PREMIEREMEN T.
+        <lb />T
+        <lb />Es terres de Champlaſtreux &amp; le Pleſis Vallée, aparte
+        <lb rend="¬" break="no" />ans au ſieurMolé, cy devat prémier Preſident de la Cour
+        <lb />de Par lemet, transférée aà Montargis, payera pour partie
+        <lb />de ladite ſubſiſtance &amp; entretenement des troupes de Sa Maje
+        <lb rend="¬" break="no" />ſté, comme il eſt dit cy-deſſus la ſomme de huict mil livres
+        <lb />viii. mil livres.
+        <lb />La terre de Gouſſainville appartenant au ſieur Nicolai Pré
+        <lb rend="¬" break="no" />ſident en la Chambre des Compres, payera huict mil livres
+        <lb />ey,
+        <lb />viii. m.l.
+        <lb />La terre du MeſnilS. Denis, appartenant au ſieur de Mont
+        <lb rend="¬" break="no" />maur, payera quatre mil livres, cy,
+        <lb />iiii. m. l.
+        <lb />Les terres de Roiſſy, Eponeé, Bray ſur Seine, Balagny, appar
+        <lb rend="¬" break="no" />tenans au ſieur de Meſme, cy-devant Préſident en ſadite Cour
+        <lb />payera ſix mil livres cy,
+        <lb />vi-m. l.
+        <lb />Les terres du Meſnil &amp; Moregard, appartenans au ſieur Ame
+        <lb rend="¬" break="no" />lot prémiet Préſident à la Cour des Aydes, payera ſix mil livres
+        <lb />cy,
+        <lb />La terre de
+        <lb />vi. m.l.
+        <lb />appartenant au ſieur
+        <lb />d’Orieux, Preſident en la Cour des aAydes, payeratrois mii! <pb n="12" />
+        <lb />
+        <lb />Z
+        <lb />
+        <lb />7
+        <lb />4
+        <lb />iii. m.l.
+        <lb />livres, cy
+        <lb />La terre de Fontenay ſur Marle appartenant à la Veuſve du
+        <lb />ii. m. l.
+        <lb />ſieur Méliand, payera deux mil livres, cy
+        <lb />Vne maiſon à S. Cloud appart enant au ſieur le Cogneux, ey
+        <lb rend="¬" break="no" />devant Preéſident en ladite Cour, payera ſix mil livres, cy vim.l,
+        <lb />Les terres de Vatan &amp; Brévannes apartenant au ſieur aubry,
+        <lb />Preſident en la Chambre des Compres, payera quatre mil li
+        <lb rend="¬" break="no" />iiii. m. l.
+        <lb />vres, cy
+        <lb />La terre de la Fertéen Normandie appartenant au ſieur Marc
+        <lb />iv. m. l.
+        <lb />la Ferté, payera quatre mil livres, cy
+        <lb />Vne aaiſon ſize à Vitry appartenant au ſieur le Noir, Preſi
+        <lb rend="¬" break="no" />dent en la Cour des Aydes, payera trois mil livres, n l
+        <lb />La terre du Tremblay appartenant au ſieur du Trembley,
+        <lb />iv. .l.
+        <lb />payera quatre mil livres, cy
+        <lb />La terre d’Heſanville appartenant à Maiſlre
+        <lb />ii m. l.
+        <lb />Prelabé, payera deux mil livres, cy
+        <lb />Vne maiſon ſize à S. Aubin appartenant au ſieur de Grieux,
+        <lb />Preſident en ladite Cour des Aydes, payera rois mil livres,
+        <lb />iii. m. l.
+        <lb />cy
+        <lb />La terte du Pleſſis, &amp; vne ferme dans Vilpinte, appartenant
+        <lb />au ſieur de Fleelle Preſident en la Chambre des Comptes,
+        <lb />iV. m. l.
+        <lb />payera quatre mil livres, cy
+        <lb />La terre d’Avry la Chapelle appartenant au ſieur de riou,
+        <lb />Preſident en la Cour des aydes, payera trois mi! livres, cy
+        <lb />iii. m. l.
+        <lb />La terre de Ville- Evrard appartenant au ſieur Dollu, payera
+        <lb />ii. m. l.
+        <lb />deux mil livres, cy
+        <lb />La terre de Courberon appartenant au ſieur de Neſmon, y
+        <lb rend="¬" break="no" />devan Preſident en la Cour de Parlement, payera ſix mil livres,
+        <lb />vi. m.l.
+        <lb />ey
+        <lb />La terre de Berny appartenant au ſieur de Bellicvre, cy-de
+        <lb rend="¬" break="no" />vant Preſdent en ladite Cour, payera fix mil livres, cy vi. m. I.
+        <lb />La terre de Magnanville appartenant au ſieur Briſſonnes
+        <lb />Maiſtre des Requeſtes, payera quatre mil livres, cy i m.l
+        <lb />La terre de Baville appartenant au ſieur de la Mognon a aiſ
+        <lb rend="¬" break="no" />iv. m.l.
+        <lb />tre des Re queſtes, payera quatre mil livres, cy
+        <lb />La terre de Bonnelle appartenant au ſieur de Bonnelle,paye
+        <lb rend="¬" break="no" />e iii. m. l.
+        <lb />ra trois mil livres, cy
+        <lb />Vne maiſon ſize dans le village d’Aty, appartenant au ſieur
+        <lb />Boucherat Maiſtre des Requeſtes, payera quatre mil livres,
+        <lb />La terre
+        <lb />iV. m. l.
+        <lb />cy <pb n="13" />
+        <lb />a.
+        <lb />5
+        <lb />La terre de Villebon appartenant au ſieur Potier ey-devant
+        <lb />Preſident en ladite Cour, payera ſix mil livres, cy vi. m. I.
+        <lb />La terre de Beauregard, appartenant au ſieur Ardier Preſi
+        <lb rend="¬" break="no" />denmt en la Chambre des Comptes, payera quatre mil livres,
+        <lb />iv. m. l.
+        <lb />cy
+        <lb />Laerre de Morman appartenant au ſieur le Févre Treſorier
+        <lb />ii. m.l.
+        <lb />de France, payera deux mil livres, cy
+        <lb />La terre dû Vivier appartenant au ſieur Creſpin, cy devant
+        <lb />Conſeiller en ladite Cour, payera trois mil livres, cy- iii. m.l.
+        <lb />La terre de Rezé appartenant au ſieur Beſnard, payera qua
+        <lb rend="¬" break="no" />iv. m. I.
+        <lb />tre mil livres, cy
+        <lb />La terre deMuontrenet appartenant au ſieurGarnier Preſident
+        <lb />en la Ccour des Aydes payer a t ois mil livres, cy iii. m. l.
+        <lb />Vne maiſon ize à P ntoiſe, apartenant au ſieur de Brouſſel..
+        <lb />les, ei devant Conleiller en ladite Cour, payera trois mille
+        <lb />iii. m. l.
+        <lb />lives. ey
+        <lb />La terre deCrevan,. aprtenant au ſieur le Nain ci devant
+        <lb />Conſeiller en ladireLour, payera trois mil le livres. ey iii. m. l.
+        <lb />La terre de Gyonut, apartenant au ſieur Vion, payera
+        <lb />ii. m. l.
+        <lb />deux mille livres. cy
+        <lb />La terre de Lartiges, apartenant au ſieur le Meuſnier ci-de
+        <lb rend="¬" break="no" />vant Conſeillest en ladite Cour, payera rois mille liv. iii m. l..
+        <lb />La terre de Romilly, aparteuant au ſieur Duret de Chevri,
+        <lb />iiii. m. l.
+        <lb />payera quatre mille livres. cy.
+        <lb />La terre de Nogent les Vierges, apartenant au ſieur deChail
+        <lb rend="¬" break="no" />lou Maiſtre des Comptes, payera trois mille livres. cy iii. m.l.
+        <lb />La terre de Iauſſigny, apartenant au ſieur de Bragelonne
+        <lb />Coſeiller en la Cur des Aydes, payera deux mille liv. ii. m. lI.
+        <lb />La rérre de Roquancourt, apartenant au ſieur SanguiCon
+        <lb rend="¬" break="no" />ſeiller en la Cour des Aydes, payera deux mil le ivres. ii. m. l.
+        <lb />Vne maiſon ſize à Suſſy, apartenant au ſieur Gontier, ci- de
+        <lb rend="¬" break="no" />vant Conſeiller en la Cour, payera rrois mille livres. iii. m. I.
+        <lb />La terre de Livry Electioa de Melun, &amp; vne maiſon ſize à
+        <lb />Cuvilly Election de Paris, apartenant au ſieur Lionne grand
+        <lb />Audiancier, payera trois mille livres. cy
+        <lb />iii. m.
+        <lb />Mole,
+        <lb />La terre de la Broſſe, aparrenant à Maiſtre
+        <lb />Receveur des reſtes de la Chambre des Comptes, payera deux
+        <lb />mille livres. cy
+        <lb />ii. m. l.
+        <lb />La terre de Taterny apartenant au ſieut de Leſealopier,.
+        <lb />payera deux mille livres. cy
+        <lb />ii. m. l,
+        <lb />La terre d’Oolle apartenant au ſieur Champeron eci-devant
+        <lb />B
+        <lb />, 2aaao.,,.,, a,, ,¬ ,. Aaa.....2...
+        <lb />74
+        <lb />- L
+        <lb />-a¬¬¬¬¬¬....... ¬.¬¬2¬¬.¬¬¬¬¬¬.-¬¬ <pb n="14" />
+        <lb />
+        <lb rend="¬" break="no" />. ?
+        <lb />1
+        <lb />6
+        <lb />Conſeiller enla Cout, payera trois mille livres. ey iii. m. I.
+        <lb />La terre de Nuë apartenant au ſieur Chezelles, payera deux
+        <lb />ii. m. l.
+        <lb />mille livres. ey
+        <lb />La terre de la Grange apartenant au ſieur Sevin, ci-devant
+        <lb />Conſeiller en la Cour, payera trois mille livres. cy lii. m. I.
+        <lb />La terre d’Eveſquemont appartenant au ſieur Leſſeville
+        <lb />Maiſtredes Comptes, payera trols mil le livres. cy iii. m. l.
+        <lb />La terre de Torcy appartenant au ſieur de la Croix Maiſtre
+        <lb />des Comptes, payera trois mille livres. cy
+        <lb />iii. m. l.
+        <lb />Vne terre au village de Montauban apartenant au ſieur de
+        <lb rend="¬" break="no" />Villebois, payera deux mille livres. cy
+        <lb />ii. m. I.
+        <lb />Les moulins de Goneſſe apartenans au fieur Laiſné ci-d e.
+        <lb rend="¬" break="no" />vant Conſeiller en ia Cour, payeroat trois mille livres. iii. m.I.
+        <lb />La terre Doynville apartenant au ſieur Barthelemi Maiſtre
+        <lb />iii. m. l.
+        <lb />des Comptes, payer a trois mil livres. cy
+        <lb />La terre de Valenton apartenant au eur Godefroy, paye
+        <lb rend="¬" break="no" />ii. m. l.
+        <lb />ra deux mil livres. cy
+        <lb />La terre d’Eſchartcon apartenant au ſieur Bouguier ci- de
+        <lb rend="¬" break="no" />vant Conſellier en la Cour, payera trois rmil livres. cy iii. m. l.
+        <lb />La terre de Bagneux apartenant au ſieur Chapelier Avocat gé
+        <lb rend="¬" break="no" />néral en la Cout des Aydes, payera deux mil livres. ii. m.l.
+        <lb />La terre de Vanvre apartenant au ſieur Préoſt ei- deva nt
+        <lb />Conſeiller en la Cour, payera trois mile livres. ey iii. m. l.
+        <lb />Vne terre à la Planchette apartenant à Maiſtre
+        <lb />Noire, payera mil livres. cy.
+        <lb />ml.
+        <lb />La terre de Chatenay &amp; vne ferme à S. Denis en France ap
+        <lb rend="¬" break="no" />partenant au ſieur de Longueil ci-devant Conſeiller en la Cour,
+        <lb />iii. m. l.
+        <lb />payera trois mil livres. cy
+        <lb />Laterre de l’Epine apartenant au ſieur d Mouſſy Maiſlre.
+        <lb />des Cmpes, payera trois mil livres. cy
+        <lb />iii. m. l.
+        <lb />La terre de Richebourg pres Clermont en Normandie ap
+        <lb rend="¬" break="no" />qartenant au ſieur Iaſſaut Maiſtte des Requeſtes, payera quatre
+        <lb />mil livres. cy
+        <lb />iiii. m. I.
+        <lb />La terre de Gilvoiſin apartenant au ſieur Gobelin, payera
+        <lb />ii. m. l.
+        <lb />deux mil lilvres. cy
+        <lb />La terre de Ludy pres Melun appartenant au ſieur Payen,
+        <lb />eci-devant Conſeiller en ladite Cour, payera trois mil li
+        <lb rend="¬" break="no" />iii. m. l.
+        <lb />vres. cy
+        <lb />La terre de Biſſeuil apartenaat au ſieur Amelot Maiſtre des
+        <lb />Requeſtes, payera quatre mil iivres. cy
+        <lb />iiii. m. l.
+        <lb />La tetre de Briére le Caaſtel apparteuant au ſieur Merat <pb n="15" />
+        <lb />
+        <lb rend="¬" break="no" />Maiſtre des comptes, payera trois mil livres. ecy iii. m.I.
+        <lb />La terre de Poully &amp; autres lieux en dé́pendans apartenans
+        <lb />au ſieur Coquey ei devant Conſeiller en la cour, payera
+        <lb />iii. m. l.
+        <lb />trois mil livres. cv
+        <lb />La terre d’Auffemont apartenant au ſieur Lieutenant civil
+        <lb />vi. m. l.
+        <lb />de Paris, payera ſix mil livres. cy
+        <lb />La terre de Bernieres appartenant au ſieur de Bernieres
+        <lb />Maiſtre des Requeſtes, payera quatre mil livres. ey iiii. m. l.
+        <lb />La Baronnie de Melay pres Chartres appartenant au ſieur d
+        <lb />Thou, ci-devant Préſident auix Enqueſtes, payera quarre mil
+        <lb />iii. m.l.
+        <lb />Iivres. cy
+        <lb />La terre du Tremblay apart enant au ſieur Miron Maiſtte des
+        <lb />iii. m. I.
+        <lb />comptes, payera trois mil livres. cy
+        <lb />La t erre d’Aurheü̈il apartenant au ſieur Viallard, payera qua
+        <lb rend="¬" break="no" />iiii. m.l.
+        <lb />tre mil livres. cy
+        <lb />La terre de Périgny appartenaut au ſieur le Picard Maiſtre
+        <lb />iiii. m. I.
+        <lb />des Requeſtes, payera quatre mil liores. cy
+        <lb />Les terres du Blanmeſnil &amp; Groſlay apartenans au ſieur Pot
+        <lb rend="¬" break="no" />ier ci-devant Préſident aux Enqueſtes, payera quatre mil li
+        <lb rend="¬" break="no" />iiii. m. l.
+        <lb />vres. cy
+        <lb />La terre de Boiſgreffier pais d’Aunis appartenant au ſieur
+        <lb />de Cumont, ci-devant conſeiller en ladite cour, payera trois
+        <lb />iii. m. l.
+        <lb />mil livres; cy
+        <lb />La terre de Billet en France appartenant au ſieur Dubois,
+        <lb />ii. m. l.
+        <lb />payera deux mil livres cy
+        <lb />La terre de Gois pres Provins apartenant au ſieur du Tillet,
+        <lb />ci-devat conſeiller en ladite cour, payera trois mil liv. iii. m. l.
+        <lb />La terre du Boullay apartenant au ſieur Favier maiſtre des
+        <lb />iiii. m. l.
+        <lb />Requeſtes, payera quatre mil livres. ci
+        <lb />La terre de Chaſtiilon apartenant au ſieur Lientenant erimi
+        <lb rend="¬" break="no" />nel au chaſtelet de Paris, payora quatre mil livres. iiii. m. l.
+        <lb />La terre de Neuville apartenant au ſieur de la Grange maiſ
+        <lb rend="¬" break="no" />iii. m. l.
+        <lb />tre des comptes, payera trois mil livres. ci
+        <lb />Vne maiſon ſize à Ieci, apartenant au ſieur de la Nuve, ci
+        <lb rend="¬" break="no" />devant conſeiller en ladite cour, payera trois mil liv. iii. m. l.
+        <lb />La terre de Villemenon apartenant au ſieur Lieutenant par
+        <lb rend="¬" break="no" />ii. m.l.
+        <lb />ticulier au chaſtelet, payera deux mil livres. ci
+        <lb />ne maiſon ſize àPutheaux apartenant au ſieur benoiſe, ci
+        <lb rend="¬" break="no" />devant conſeiller, payera quatre mil livres. ci iiii. m. l.
+        <lb />La terre des Mecures pres Mon fort appartenant au ſieur
+        <lb />Courtin miſtre des Requeſtes, payera quare mil liv. iiii. m. l.
+        <lb />A
+        <lb />6 <pb n="16" />
+        <lb />1
+        <lb />8
+        <lb />e
+        <lb />La terre de la Galliſſonniére appartenant au ſieur Barri
+        <lb />maiſtre des Requeſtes, payera quatre mil livres. ci iiii. m.l.
+        <lb />La terre du Tremblay &amp; de Mouſſel dans lait Tremblai ap
+        <lb rend="¬" break="no" />partenans au ſieur de Bermont conſeiller en la cour, payera
+        <lb />trois mil livres. ci
+        <lb />iii. m. l
+        <lb />La terre de Bougival apartenant au ſieur Goret, payera ttoi.
+        <lb />mil livres. ci.
+        <lb />, a¬¬¬¬
+        <lb rend="¬" break="no" />3
+        <lb />iii. m. ls
+        <lb />La taetre de S. Germain pres Corbeil apartenant au ſieur le.
+        <lb />Roy ci- devant conſeiller en ladite cour, payera trois mil li¬;
+        <lb />vres. ci
+        <lb />iii. m. l.
+        <lb />Vn tiers dans la terre de S. Peceais apartenant au ſieur Lor
+        <lb rend="¬" break="no" />in ci-devant conſeiller en ladite cour, payera trois mil li
+        <lb rend="¬" break="no" />iii. m. I.
+        <lb />vres. ei
+        <lb />La maiſon de Villetou ſize à Noiſi apartenant au ſieur de Vil
+        <lb rend="¬" break="no" />ii. m. l.
+        <lb />lefort, payera deux mil livres. ci
+        <lb />La terre de Briére apartenant au ſieus Maupeou, ci devant
+        <lb />conſciller en ladite cour, pyera trois mil livres. ei. iii. md.
+        <lb />La terre de Marcouville pres Ponthoiſe aparrenant au ſieur
+        <lb />de la range, ci-devant conſeiller en ladite our, payera trois
+        <lb />mil livres. ci
+        <lb />iii. m. l.
+        <lb />La terre de Charni appartenant au ſieur Lottin maiſtre des
+        <lb />Requeſtes, payera quatre mil livres. ci
+        <lb />iiii. m l.
+        <lb />La maiſon de Chauconin appartenant au ſieur Pinon paye
+        <lb rend="¬" break="no" />ii. m. I.
+        <lb />ra deux mil livres. ci
+        <lb />La terre de Courtault &amp; aures lieux appartenans au ſieur
+        <lb />de Montecot Maiſtre des Requeſtes, payera quatre mil li
+        <lb rend="¬" break="no" />vres. ci
+        <lb />iiii. m. l.
+        <lb />La e re de Louvre apartenant au ſieur ſe Feron, ci-devant
+        <lb />Preéſident aux Enqueſtes, payera quatre mil livres. ci iiii. m.l.
+        <lb />Laterre de la Magdelaine apartenant au ſieur Bragelonne,
+        <lb />ci-devant Préſident aux Enqueſtes., payera quatre mil li
+        <lb rend="¬" break="no" />vres. ci
+        <lb />iiii. m. l..
+        <lb />La terre de Champigni appartenant au ſieur Bochard maiſ
+        <lb rend="¬" break="no" />tre des Requeſtes, payera quatremil livres. ei iiii. m. l.
+        <lb />Les terres du aeſnil, Erouard &amp; Noiſi apartenans au ſieus
+        <lb />Coulon ci-devant conſeilier en ladite cour, payera trois mil
+        <lb rend="¬" break="no" />livres. ci
+        <lb />iii. m. l.
+        <lb />La terre de Fourqueux apartenant au ſieur Bouvard conſeil
+        <lb rend="¬" break="no" />ler en ladite cour, payera trois mil livres. ci
+        <lb />ii. mil l.
+        <lb />Les t erres d’Erblay, Gentl &amp; E richi apartenans au ſieut
+        <lb />P evolt nmare d-sR qeſtspay era trois mil iivres, i iii.n.l.
+        <lb />
+        <lb rend="¬" break="no" />La
+        <lb />¬¬¬- <pb n="17" />
+        <lb />
+        <lb />La terre de reſſy apartenant au ſieur de la Baillie, pa;yra
+        <lb />ii. m.l.
+        <lb />deux il livres. ci
+        <lb />ee-e du Tilet pres &amp;onneſſe apatrennnt au ſieur itad
+        <lb />A ldeat eonſe ller en ladiue eou paera rols nmil le l
+        <lb />e nilon ſae i gent aparrerant auſeur de lafieres
+        <lb />mairedus equeies, pyera quare millre llnl
+        <lb />luenre dle Pooeate panenan aus leur de Pn re s
+        <lb />Aelan eonſeaier enrla dire Cour paera trois ml liu il m
+        <lb />u te de la ouete apartenoni au fieur de Brouie miltre
+        <lb />iiii. m. I.
+        <lb />des Requeſles, payera quatre mil livres c
+        <lb />,eete oele apartenant au ſieur Chalet, payera devi
+        <lb />ii. m.l.
+        <lb />mil livres ci
+        <lb />lerre de vlereg aparenant au ſient de villecsi eide
+        <lb rend="¬" break="no" />n Cou ſleuler enlu die ecour, pera roius ail liren le rl
+        <lb />ett de pruneuauit apar eant au ſieur Foule maiſtre
+        <lb />iiii. m. l.
+        <lb />des Requeſes, payera quatre mil livres. i
+        <lb />a ere de Noiuan aparenant au ieur de la parre, ei devaut
+        <lb />pduden aux Eenqueſen payera quae oil li il l
+        <lb />aerre de Ploule apartenant au ſieur price, payera oi
+        <lb />iii. m.l.
+        <lb />mil livres. ci
+        <lb />a ere de Tore en pbouroogne apartenn au ſeur de To
+        <lb rend="¬" break="no" />re, deuant Preſiden aux Enqueſies, payera quare ui li
+        <lb rend="¬" break="no" />iiii. m.l.
+        <lb />vres. ei
+        <lb />Les terres de Tilemon &amp; Beaumont apartenans u ſieur le
+        <lb />Nin maiire des e queſtes, payera uatre mil les i l
+        <lb />a rare de Varie aparte nanit au ſieur Re bin, payer nl li
+        <lb rend="¬" break="no" />m.1.
+        <lb />vres. ci
+        <lb />a erre du val coeatrice apartenant au ſieur Thibeuf. ci
+        <lb rend="¬" break="no" />en Conſe iller en ladue cout, payera ruis mill l l
+        <lb />Ea maſon de plaiſanee apartenant au ſieur de Villeſavi,
+        <lb />iiii. m.l.
+        <lb />payera quatre mil livres. ci
+        <lb />eee de &amp;eri&amp; maiſon de chatou, appartenans au ient
+        <lb />Por ail, ei devant eonſeiller en ladine cour, payera rois mil
+        <lb />iii. n.I.
+        <lb />livres. ci
+        <lb />La erte de Tierſan apartenant au ſieur Ruellan Maiſtre
+        <lb />iiii. m.l.
+        <lb />des Requeſes, payera quatre mil livres. 5
+        <lb />e teres deChlray’&amp; Vuali apartenans aur ſieur pitaul,
+        <lb />e devat conſeiller en iae cour, payera trois mil liv. ii m.1.
+        <lb />ere de lonnnio pureniau uſieun ouare lels
+        <lb />aevant eonſeailler en ladite cour de Parlement, tramsféte à
+        <lb />iii. m. l.
+        <lb />Montargis, payera trois mille livres. .
+        <lb />Là eee de Sereelles apartenant an ſieur de Sercelles, paye:
+        <lb />&amp; 6
+        <lb />
+        <pb n="18" />
+        <lb />
+        <lb rend="¬" break="no" />.
+        <lb />ra deux mil livres. i
+        <lb />10
+        <lb />ll
+        <lb rend="¬" break="no" />ii. m.I.
+        <lb />l erre de De pres plois, &amp; la ferrme de Canu-gny pes
+        <lb />Peiei ns anenrenani n ſeur perr, qy le unr ere iee er
+        <lb />Enqueſtes, pyera quatre mil livres, ,
+        <lb />iv m. l.
+        <lb />la erre de Gournay appatenant au ſieur Amelot aie
+        <lb />des equeſtes, payera quai re nil lres, ey
+        <lb />iv m.l.
+        <lb />l eee dus enenin preslanyapparenn au ſieu, lole
+        <lb />denant Preſident au Enqueſes, payer quare mi ſi re
+        <lb />cy
+        <lb />iv ml.
+        <lb />la ere des P’ippes pres gros bois apparrenant au ſieur Co
+        <lb rend="¬" break="no" />dard, payera trois inil livre, ey
+        <lb />iii m. I.
+        <lb />e es de arttoy appartenant au ſieur non, ey deans
+        <lb rend="¬" break="no" />conſe iler enladne cout pnyer rolsnmi lre e ’ n
+        <lb />larerre de oiſt pre ioyaumont , apparenut au ſeutle
+        <lb />anpoeou, cy detant conleiller en ladie cour, payer r,
+        <lb />mil livres, cy
+        <lb />ii. m. lL
+        <lb />le malſou ſie auvilage d clamard, apparrenan a ſ
+        <lb />Penoyer &amp; es le tiriers, payera mi lue e
+        <lb />m.l.
+        <lb />e ere de nualnaiſou appafennr u ſieut rerro, el
+        <lb />ran conſeiller en ladite cout, payera rois mnil liutes li
+        <lb />, lea retre d rauonne anparenaut auſieur euoonnme, es de
+        <lb />vann cenſeiler enladite cour, pyera rois mit ivres ei iu m
+        <lb />Ve nmalſon ſe uoer ilſies appurenuu u lieu l o
+        <lb />telon A drocat, payera deux mil lire;,
+        <lb />ii. m.I.
+        <lb />a terre de l’Eſart appattenont au’fieur Benard, ei devo
+        <lb />Cſeiler en ladlne couinnre nron ni ire eie nn
+        <lb />Ale lere de uu ls Vileppurenanr au ſieur d oley el
+        <lb />deount Peſdent aix Enqueſes , payer quare mni e
+        <lb />i
+        <lb />lV. m. .
+        <lb />, a erte de ortefontaine appartenant a la Veuve du fent
+        <lb />autman payera rois mi livres ey
+        <lb />iii. m..
+        <lb />La terre de Iuſanrigny appartemant au ſieur ole el dea
+        <lb />preide au enqueſilen p yera quare nmai nere e ee
+        <lb />naere de brou appartenant au ſieur Fedeau, ei devant con.
+        <lb />ſeler en ladne cour, payen rois mni lire, nuenur
+        <lb />Ale lorre de ouney pareune a la veaoſe u ueur de
+        <lb />Quinecy, payera deux mil’livres, ecy
+        <lb />ii. m. l.
+        <lb />terres de oriſelles &amp; chauaoi, appartenanes uufieurde
+        <lb />Pouils, y le ont ceonſeiuler en e ie ououne pue e e eoenos
+        <lb />livres, ei
+        <lb />iii. m. l.
+        <lb />Laetre de Vlermes &amp; vne maiſon ſiue a Sureſne, appare
+        <lb rend="¬" break="no" />pnt a la Veutve du ſieu Boulanger, ci- deuant reſ der l <pb n="19" />
+        <lb />ſa¬¬
+        <lb rend="¬" break="no" />1.1
+        <lb />es 1
+        <lb />x
+        <lb />1.
+        <lb />1.1
+        <lb />t e
+        <lb />e 1
+        <lb />is 1
+        <lb />2 11
+        <lb />Enqueſtes, payera quatre mil livres, ci
+        <lb />V. m.
+        <lb />La terre du Fay appartenant au ſieur Paluau, ci devant Con
+        <lb />ſeiller en ladite Cour, payera trois mil livres, ci iii. m. 1
+        <lb />La terre de la Douze appartenant au ſieur Charton, ci- devan
+        <lb />Preſident aux Requeſtes du Palais, payera quatre mil livres,
+        <lb />iv. m.l.
+        <lb />La terre de Margency appartenant à la Veufue du ſieur Pre
+        <lb rend="¬" break="no" />ii m.1.
+        <lb />ſident Fayette, payera deux mil livres, cy
+        <lb />La terre de Nogent &amp; dépendances appartenant au ſieur du
+        <lb />Tillet, ei-devant Preſident aux Requeſtes du Palais, payera
+        <lb />quatre mil livres, ci
+        <lb />iv. m.l.
+        <lb />La terre de Fleury appartenanbau ſieur de Machault, ei-de
+        <lb rend="¬" break="no" />vant Conſeiller en ladite Cour, payera trois mil livres,
+        <lb />ci
+        <lb />iii m. l.
+        <lb />La terre de chauvry appartenant au ſieur de Cott’gnon,
+        <lb />payera trois mil livres, ci
+        <lb />iii m.
+        <lb />Vne maiſon ſize au village de Villepreux, appartenant au
+        <lb />ſieur de Gondy, payera trois mil livres, ci
+        <lb />iii m.!.
+        <lb />La terre &amp; ſeigneurie d’Avron appartenant au ſieur de Bre
+        <lb rend="¬" break="no" />tonvilliers, ci- devant Conſeiller en ladite Cour, payera rois
+        <lb />mil livres, ci
+        <lb />iii m.l.
+        <lb />Vne maiſon ſize au village de Fontenay ſous Bayeux appar
+        <lb rend="¬" break="no" />tenant à M aiſtre
+        <lb />Milet, ci- devan Procu
+        <lb rend="¬" break="no" />reur en ladite Cour, payera mil livres, ci
+        <lb />m. I.
+        <lb />La terre de Bourdeux &amp; la Morlay appartenans au ſieur de
+        <lb />Banquemare ci- devat Prefident aux Requeſtes du Palais, paye
+        <lb rend="¬" break="no" />ra quatre mil livres, ei
+        <lb />iv m. l.
+        <lb />Vne maiſon pres S. Cloud appartenant au ſieur de la Gaſtine,
+        <lb />payera deux mil livres, cy
+        <lb />ii m.I.
+        <lb />La terre de Chailly appartenant au ſieur Graſſeteau, ci-de
+        <lb rend="¬" break="no" />vãit Conſeiller en ladite Cour, payera troismil livres, ci iii mI.
+        <lb />La terre de Givry appartenant au ſieur Courtin, ci devant
+        <lb />Conſeller en ladie Coir payera rrois mil livres, ci iii m.I.
+        <lb />La terre de Rubelle appartenant au ſieur Bonneau, ci- deant
+        <lb />Conſeiller en ladite Cour, payera trois mil livres, ci iii m. l.
+        <lb />L a terre de Gagny appartenant au ſieur Fezzary, payera deux
+        <lb />mil livres, ey
+        <lb />ii m. I.
+        <lb />La terre de la Houſſaye appartenant au ſieur Pelletier, ey de
+        <lb rend="¬" break="no" />vant Conſeiller en ladire Cour, payera trois mil liv. cy iii m.1.
+        <lb />Vne maiſon appellée Ableiges appartenaut à la Veufe du
+        <lb />ſieur d’Ableiges payera trois mil livres, cy
+        <lb />iii m. l.
+        <lb />La terre de Caumartin &amp; l’Hermitage app artenant au ſieur
+        <lb />. a,
+        <lb />7
+        <lb />4. <pb n="20" />
+        <lb />
+        <lb rend="¬" break="no" />12
+        <lb />le Févre, ei- devant Conſeiller en ladite Cour payera trois mil
+        <lb />iii m. I.
+        <lb />livres, ci
+        <lb />La maiſon de Villers ſur Marne appartenant au ſieur Gau
+        <lb rend="¬" break="no" />iii m. l.
+        <lb />mont, payera trois mil livres, ci.
+        <lb />La maiſon d’Esboullets appartenant au ſieur Larcher, paye
+        <lb rend="¬" break="no" />ii m. l.
+        <lb />ra deux mil livres, ey
+        <lb />La terre de la Grenne Ahebly appartenant au ſieur Charlet,
+        <lb />cy-devant Conſeiller en ladite Cour, payera trois mil livres,
+        <lb />iii m. 1.
+        <lb />cy
+        <lb />Vne maiſon fize au village de Montreü̈il appartenant à Mai
+        <lb rend="¬" break="no" />Droiet, ci-devan Greffier en ladite
+        <lb />ſtre
+        <lb />ii m. l.
+        <lb />Cour, payera deux mil livres, cy
+        <lb />Ve maiſon ſze au village de S. Maur oppartenant au ſieu
+        <lb />ii m.l.
+        <lb />Formé, payera deux mil livres, cy
+        <lb />La maiſon &amp; terre de l’Eſta g &amp; Garches, appartenans a
+        <lb />ſieur Talon, ci devant Advocat géneral au Parlſement, payei
+        <lb />iii m.l
+        <lb />trois mil livres cy
+        <lb />La terre de Breviande appartenant au ſieur Melian ei-de
+        <lb />va Proeureur géneral, payera quate mil livres, ci iv m.l
+        <lb />appartenant au ſieu
+        <lb />La terre de
+        <lb />de Blgnon, ei-devant Advocat géneral en ladite Cour de Par le
+        <lb />menransfeŕe à Montargis, payera la ſomme de trois mil li
+        <lb />iiim.1
+        <lb />vres, cy
+        <lb />Somme touale du contenu au pteſen one,
+        <lb />cinqcens vingt-troismil livres.
+        <lb />Fait &amp; arreſté au Conſeil d’Eſtatdlu Roy, Sa Majeſté y eſtant,
+        <lb />IoRuinme Regente Sa Mere preſene, ſuivant l’Arreſt donné en
+        <lb />ieeluy ce ourd’nuy 5 jour de F́vriers9. Sine, LOVIS.
+        <lb />E plus bas, DE GVENEGAvD.
+        <lb />ſolaionné aux Originaux par moy ſonſeilles
+        <lb />Secretaire du Roy &amp; de ſes inances.
+        <lb />Inpriméa S Germain en Laye, le 8 Février 1649
+        <lb />
+        <imprimatur>Avec privilége.</imprimatur>
+      </p>
+    </body>
+  </text>
 </TEI>

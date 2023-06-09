@@ -1,479 +1,298 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau650_GBOOKS">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Le catéchisme de la cour.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Le catéchisme de la cour.</title>
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-					<persName ref="orcid:0000-0002-3327-3967" role="intern">Cappe Zoé</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://books.google.fr/books?id=sdhBAAAAcAAJ&amp;hl=fr"/>
-					<author ref="isni:0000000110257852" role="dubious_author" source="Carrier">
-						<persName>
-							<forename>Roger de</forename>
-							<surname>Bussy-Rabutin</surname>
-						</persName>
-					</author>
-					<title source="Moreau">Catéchisme (le) de la cour.</title>
-					<pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
-					<publisher ref="isni:0000000360431147" xml:id="IL_ClementPhilippe.xml">
-						<persName>
-							<forename>Philippe</forename>
-							<surname>Clément</surname>
-						</persName>
-					</publisher>
-					<date source="Moreau" when="1652">1652</date>
-					<date source="Carrier" notBefore="1652-02-20" when="1652">Texte daté de fin février 1652</date>
-					<extent>
-						<measure quantity="8" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="BM00743" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49603"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2867714">Munich</settlement>
-						<institution>Bibliothèque de l'État de Bavière</institution>
-						<repository/>
-						<idno type="cote"/>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>False</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+          <persName ref="orcid:0000-0002-3327-3967" role="intern">Cappe Zoé</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://books.google.fr/books?id=sdhBAAAAcAAJ&amp;hl=fr" />
+          <author ref="isni:0000000110257852" role="dubious_author" source="Carrier">
+            <persName>
+              <forename>Roger de</forename>
+              <surname>Bussy-Rabutin</surname>
+            </persName>
+          </author>
+          <title source="Moreau">Catéchisme (le) de la cour.</title>
+          <pubPlace ref="geonames:2988507" source="Moreau">Paris</pubPlace>
+          <publisher ref="isni:0000000360431147" xml:id="IL_ClementPhilippe.xml">
+            <persName>
+              <forename>Philippe</forename>
+              <surname>Clément</surname>
+            </persName>
+          </publisher>
+          <date source="Moreau" when="1652">1652</date>
+          <date source="Carrier" notBefore="1652-02-20" when="1652">Texte daté de fin février 1652</date>
+          <extent>
+            <measure quantity="8" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="BM00743" cert="high" target="https://mazarinades.bibliotheque-mazarine.fr/ark:/61562/bm49603" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2867714">Munich</settlement>
+            <institution>Bibliothèque de l'État de Bavière</institution>
+            <repository />
+            <idno type="cote" />
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>False</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine">En colonnes. Catéchisme parodique visant les personnages les plus en
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine">En colonnes. Catéchisme parodique visant les personnages les plus en
           vue de la Cour. Texte en deux parties (Mazarine Ms. 4682-2, f. 34v). La deuxième partie
           "La suitte du catechisme de la Cour" est datée de la fin mars 1652 (BM00745). Autre
           édition de la première partie (BM00744). Texte attribué à Bussy Rabutin selon Mailly,
           repris par Cosnac et Federn, réfuté par Hubert Carrier (Les Muses guerrières, Paris, 1996,
           pp. 273-278). Texte daté de fin février 1652, d'après Hubert Carrier (Mazarine Ms. 4682-2,
           f. 34v).</p>
-				<p source="Moreau">650. Catéchisme (le) de la cour. Paris, Philippe Clé- ment, 1652. Deux
+        <p source="Moreau">650. Catéchisme (le) de la cour. Paris, Philippe Clé- ment, 1652. Deux
           parties de 8 pages chacune. Parodie spirituelle, mais peu décente du catéchisme. Ce
           pamphlet n’a rien de commun avec le Catéchisme des courtisans, qui parut en 1649, ou avec
           celui qui porte la date de 1668, Cologne, petit in-12.</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">prose</term>
-					<term type="genre">catéchisme</term>
-					<term type="genre">pamphlet</term>
-					<term type="subject"/>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-04-05" who="ZC"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="1"/>
-				<pb n="2"/>
-				<pb n="3"/>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-LE
-        CATECHISME
-        DE LA COVR.
-        A PARIS,
-        Chez PHILIPPES CLEMENT, ruë des Fossez.
-        M DC. LII. 
-        
-        LE CTECHISME DE L COVR.
-        Le Maiſte. LeM. Quel eſt le ſigne du
-        SrEs vous Mazarin? ) Mazarin?
-        I Le Diſejpe lLep. ceſt le ſgnede la
-        Oiy par la grace de Dieu Croix de Vvarn, impri
-        qui eſt noſte intereſt. mée ſur l’or ou ſur l’argent.
-        Le MQui eſt celuy qu’on j parce qu’auec icelle le Ma
-        doit appedler Mazarin? ſaarin fait toutes choſes.
-        LeD’celuy qui fait pro-ſLe Comment ſe fat il
-        feſſion du Mazaraniſme, Le D. En prenant de tou
-        ou de la ſcience Mazarine. tes mains au nomdu Roy.
-        Le M. Qu’eſt-ce que leſ Le . Pour quoy le faites
-        Mazatiniſme ou la Do-l vous ainſi?
-        rine MaarineLe D. Pour ce que ſoubs
-        Le D. C’eſt celle que les le nom &amp; authorite du
-        fauoris tyrans ont enſei-! Roy, on peut exiger &amp;
-        gnée, &amp; que les courtiſans leuer tout ce qu’on veut
-        embraſſent de tout leurl ſur le peuple.
-         Le . Qu’elle eſt la fin du
-        œur.
-        Le M. Eſt il neceſſaire de j Mazarimſme.
-        ſçauoir ceſte doctrine.LeD. De ſe rendre le Mai
-        Le D. Il eſt tres neceſſaireſtre abſolu du Roy, des
-        à ſalut, c’eſt à dire pour fai- Princes, du Parlement &amp;
-        re ſes affaires en ce monde. des peuples. 
-        42
-        Le. Comnbien des choſesjdé bons Apoſtres, diuiſé
-        ſont neceſlaies pouu paren douze aruieles.
-         le eeit z-le en Latin.
-        uer à cctte ſin?
-        LeD Cin ohſederl’eſ-jIe D. Le voey pluſtoſten
-        prit du Roy, luy donnantl mauuais ltalien &amp; ſ’rauç.
-        de mauuaiſes impreſlions!. Ie croy au Roy pour
-        contre ſes Princes, les Par-l mon intereſt, lequel eſt
-        lemens &amp; les peuples.j tout puiſſnt à fane agir
-        iettant la diuiſion dans la toutes choſes.
-        miſon Royale.. rendantl2. Et au Mazarin ſon vni¬.
-        nuls tous les Arreſts du que fauory.
-        Plement pr ceux du. Qui a eilé conceu de
-        Conſeil. 4. leuant vnetres leſprit de Machiauel, eſt
-        pſlante amée qui raua- né du Card. de Richelieu.
-        ge &amp; deſtruiſerout.5 pro-l4. Il a ſouffert depuis vn
-        1
-        mertant monrs &amp; mer-lan, ſoubs Gaſton &amp; la
-        ueilles à ceux de lon paty. J Fronde, eſt mort pour
-        Le Qu’e lle eſt la foy ſon Miniſtere.
-        5. ll eſt deſcendu aux en
-        lazarine?
-        Le D. C’ſt de croire que! fers &amp; depuis eſt reſucité́
-        tout eſtant au Roy, on des morts.
-        pet fort bien le prendre6. Il eſt monté́ au throſne,
-        ſans eſtre obligé de reſti-il eſt aſſis à la dextre d’vn
-        tuer, ou ſans endre copte. Roy tout puiſſant.
-        Le . Ou eſt conrenu le 7. De là, il viendra icy.
-        ſommaire de ceſle ſoy.. pour perleeuter les viuans
-        Le D. Dans le Symbole l&amp; les morts.
-        8. ie
-        l 
-        1. le croy à ſoneſprit.Le . Où eſt ecompris ce
-        s. L’egliſe des malins oul qu’il doit croire.
-        cogregation des P’artſans. l lLe D. Au credo, lequel il
-        nJ
-         o. La remiſſion des pe- doit ſç̧auoir en lntahen &amp;
-         chez au gouuernement de François.
-        1 l’Eſtat &amp; maniement des j Le . Qu’eſt-ce qu’il doit
-        l Finances
-         doit faire.
-         n La eſurrection des im- Le D. Il doit fairs la Sou
-         aà tous ceux de qui il eſpe
-        poſts.
-        l
-        1
-        12. Et la maltote eternel- re quelque choſe.
-         Le . Qu’eſt-ce qu’il doit
-        le. Aen.
-        Le u. Que doit croire demahder:
-        ſommairement tou hom¬!Le D. Plus qu’il ne luy ſera
-        ue qui eſt Mazarin.deu, &amp; pardeſſus, quelque
-        Le D. I doit ecroire en ge-benefice en recompenſe.
-        uel que cout e uaelel Le . Queles ont le
-        Conſel d’mhaul aie eſt j vectus Theologales du
-        fais, &amp; ce qu’il defait eſt l Maariniſme.
-        défait, &amp; en parieuhiet,Le D. Trois ambition,
-        que hots du Maariniſmeauarice, vengeance.
-        il nmya pont dſlue ſeu Q’ele ſontlea ve
-        Le l Couabien de choſes l tus Cardinales.
-        ngeneal don ſcauoirvn lLe D. Quarre rahſon
-         ingratitûde,-inſolence,!
-        Mazarin.
-         e D.Trois.i. ce qu’il doit i paillardiniſe.
-        coire. a2. ee qu’iſ doit fai- Le Queſt-ee que la
-        e3ce qu’il doit deaãder.l Charité Mazarine? 
-        Le D. C’eſt l’amour de ſoy. Lururieux vn peu ſeras
-        meſime, par lequel on ay- de corps ou de conſente
-        me ſon inrereſt pardeſſus ment..
-        toues choſes, &amp; le po-7. L’auoin d’autruy tu
-        chain pour noſtre intereſtl n’embleras, ſi t ne peux
-        comme nous meſme. aucunement.
-        Le mM. Comment aymez8. Faux teſmoignage tu
-        l diras, pour ſeruir l’Etan
-        voſtre prochain?
-        Le D. En ſouhaittant ſon promptement.
-        bien.
-        9. L’œuure de la chiair ne
-        Le . Quels ſont les dix deſireras, qu’à l’ſtalienne
-        Commandemens de la loy l ſeulement.
-        Mazarine.
-         le lnn eaunnrenl
-        Le D. . Vn ſeul intereſt tu uoiteras, que pour les a
-        adoreras &amp; aymeras par-uoir injuſtement.
-        
-        faitement.
-         Le . Qu’elle recompen
-        2. En vain l’argent du’ce auront ceux qui gar
-        Roy ne manieras ny autre dent ſes commandemes.
-        choſe pareillement.i Le D. D’eſtre les. biens
-        3. Les occaſions tu ob- l venus à la Cõur &amp; paſſer l,
-        ſerueras, peſchant en eauë pour loneſts hommes
-        trouble ſeurement.Le’.. Quels mau encon
-        eleiſenioni lonoſerai ien oaut qui e am l
-        à fin que viues longueJ greſſent.
-         ſ Le . e meſprls, Iinli
-        ment.
-        5. Leur homicideme ſeras gence ou faute d’argent.
-        de fat ny volontairement- Leaa. Quels ſont les lacte¬ 
-        mens du Mazaraniſme. J nous.
-        Ee D. Les cinq groſſes fer-l. Bien heureux ſont les
-        mes, la taille en parti &amp; l debonnaires, car ils nous
-         laiſſent poſſeder leurs ter
-        lapaulette..
-        Le . Qu’appellez vous l res.
-        . 1
-        3. Bien heureux ſont ceux
-        peché d’origine?
-        Le D. C’eſt d’eſtre Fon-qui pleurent, car par leurs
-         l’armes nous ſommes reſ
-        deur.
-        Le M. Ce peché ſe peut-il joüis.
-        4. Bien heureux ſont ceux
-        effacer?
-        Le D. Non qu’auec de l’ar- qui ont fain &amp; ſoif de iu
-        gent, où en donnant beau- ſtice, car ils ſeront raſaſ
-        coup d’eaueë beniſte de ſiez &amp; nous auſſ, par la
-        Cour, en allant adorer l’i-venalité́ des offices.
-        5. Bien heureux ſont les
-        dole Maz.
-        Le M. Qu’elles ſont les miſericordieux, car s’ls
-         nous donnent quartier
-        bonnes œuures.
-        Le D. Faire ieuſner, met-l nous ne leur en donne
-        eas tretout à l’aumoſne &amp; enrons point.
-         oyer les gens de bien à̀s. Bien heureux ſont ceux
-         qui ont leur bien clairt &amp;
-        2 l’hoſptal.
-         Le . Conmbien y à il de l net, car nous le pourrons
-        rs Beatitudes.
-        l pluſtoſt prendre.
-        Le D. Il y en à huict. 7. Bien heureux ſont les
-        1. Bien heureux ſont les pacifiques, car ils ayme
-        2 pauures d’eſprit, car par ce, ront mieux ſe rendre que
-        1 moyen le Royaume eſt à lſe deffendre. 
-        8
-        8. Bien heureux ſont ceux uent à l’homme Mazin.
-        qui ſouffrent perſecution, l Le D. Quatre le iugo
-        ¬¬¬.
-        car par ainſi le bien du gement, le ſuplice, la
-        Royaume eſt à nous.mort &amp; l’enfer.
-        LeM. Qu’elles ſont les l
-        choſes dernieres qui arri-l
-        FIN.			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">prose</term>
+          <term type="genre">catéchisme</term>
+          <term type="genre">pamphlet</term>
+          <term type="subject" />
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-04-05" who="ZC" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="1" />
+        <lb />LE
+        <lb />CATECHISME
+        <lb />DE LA COVR.
+        <lb />A PARIS,
+        <lb />Chez PHILIPPES CLEMENT, ruë des Fossez.
+        <lb />M DC. LII. <pb n="2" />
+        <pb n="3" />
+        <lb />LE CTECHISME DE L COVR.
+        <lb />Le Maiſte. LeM. Quel eſt le ſigne du
+        <lb />SrEs vous Mazarin? ) Mazarin?
+        <lb />I Le Diſejpe lLep. ceſt le ſgnede la
+        <lb />Oiy par la grace de Dieu Croix de Vvarn, impri
+        <lb rend="¬" break="no" />qui eſt noſte intereſt. mée ſur l’or ou ſur l’argent.
+        <lb />Le MQui eſt celuy qu’on j parce qu’auec icelle le Ma
+        <lb rend="¬" break="no" />doit appedler Mazarin? ſaarin fait toutes choſes.
+        <lb />LeD’celuy qui fait pro-ſLe Comment ſe fat il
+        <lb />feſſion du Mazaraniſme, Le D. En prenant de tou
+        <lb rend="¬" break="no" />ou de la ſcience Mazarine. tes mains au nomdu Roy.
+        <lb />Le M. Qu’eſt-ce que leſ Le . Pour quoy le faites
+        <lb />Mazatiniſme ou la Do-l vous ainſi?
+        <lb />rine MaarineLe D. Pour ce que ſoubs
+        <lb />Le D. C’eſt celle que les le nom &amp; authorite du
+        <lb />fauoris tyrans ont enſei-! Roy, on peut exiger &amp;
+        <lb />gnée, &amp; que les courtiſans leuer tout ce qu’on veut
+        <lb />embraſſent de tout leurl ſur le peuple.
+        <lb /> Le . Qu’elle eſt la fin du
+        <lb />œur.
+        <lb />Le M. Eſt il neceſſaire de j Mazarimſme.
+        <lb />ſçauoir ceſte doctrine.LeD. De ſe rendre le Mai
+        <lb rend="¬" break="no" />Le D. Il eſt tres neceſſaireſtre abſolu du Roy, des
+        <lb />à ſalut, c’eſt à dire pour fai- Princes, du Parlement &amp;
+        <lb />re ſes affaires en ce monde. des peuples. <pb n="4" />
+        <lb />42
+        <lb />Le. Comnbien des choſesjdé bons Apoſtres, diuiſé
+        <lb />ſont neceſlaies pouu paren douze aruieles.
+        <lb /> le eeit z-le en Latin.
+        <lb />uer à cctte ſin?
+        <lb />LeD Cin ohſederl’eſ-jIe D. Le voey pluſtoſten
+        <lb />prit du Roy, luy donnantl mauuais ltalien &amp; ſ’rauç.
+        <lb />de mauuaiſes impreſlions!. Ie croy au Roy pour
+        <lb />contre ſes Princes, les Par-l mon intereſt, lequel eſt
+        <lb />lemens &amp; les peuples.j tout puiſſnt à fane agir
+        <lb />iettant la diuiſion dans la toutes choſes.
+        <lb />miſon Royale.. rendantl2. Et au Mazarin ſon vni¬.
+        <lb />nuls tous les Arreſts du que fauory.
+        <lb />Plement pr ceux du. Qui a eilé conceu de
+        <lb />Conſeil. 4. leuant vnetres leſprit de Machiauel, eſt
+        <lb />pſlante amée qui raua- né du Card. de Richelieu.
+        <lb />ge &amp; deſtruiſerout.5 pro-l4. Il a ſouffert depuis vn
+        <lb />1
+        <lb rend="¬" break="no" />mertant monrs &amp; mer-lan, ſoubs Gaſton &amp; la
+        <lb />ueilles à ceux de lon paty. J Fronde, eſt mort pour
+        <lb />Le Qu’e lle eſt la foy ſon Miniſtere.
+        <lb />5. ll eſt deſcendu aux en
+        <lb rend="¬" break="no" />lazarine?
+        <lb />Le D. C’ſt de croire que! fers &amp; depuis eſt reſucité́
+        <lb />tout eſtant au Roy, on des morts.
+        <lb />pet fort bien le prendre6. Il eſt monté́ au throſne,
+        <lb />ſans eſtre obligé de reſti-il eſt aſſis à la dextre d’vn
+        <lb />tuer, ou ſans endre copte. Roy tout puiſſant.
+        <lb />Le . Ou eſt conrenu le 7. De là, il viendra icy.
+        <lb />ſommaire de ceſle ſoy.. pour perleeuter les viuans
+        <lb />Le D. Dans le Symbole l&amp; les morts.
+        <lb />8. ie
+        <lb />l <pb n="5" />
+        <lb />1. le croy à ſoneſprit.Le . Où eſt ecompris ce
+        <lb />s. L’egliſe des malins oul qu’il doit croire.
+        <lb />cogregation des P’artſans. l lLe D. Au credo, lequel il
+        <lb />nJ
+        <lb /> o. La remiſſion des pe- doit ſç̧auoir en lntahen &amp;
+        <lb /> chez au gouuernement de François.
+        <lb />1 l’Eſtat &amp; maniement des j Le . Qu’eſt-ce qu’il doit
+        <lb />l Finances
+        <lb /> doit faire.
+        <lb /> n La eſurrection des im- Le D. Il doit fairs la Sou
+        <lb rend="¬" break="no" /> aà tous ceux de qui il eſpe
+        <lb rend="¬" break="no" />poſts.
+        <lb />l
+        <lb />1
+        <lb />12. Et la maltote eternel- re quelque choſe.
+        <lb /> Le . Qu’eſt-ce qu’il doit
+        <lb />le. Aen.
+        <lb />Le u. Que doit croire demahder:
+        <lb />ſommairement tou hom¬!Le D. Plus qu’il ne luy ſera
+        <lb />ue qui eſt Mazarin.deu, &amp; pardeſſus, quelque
+        <lb />Le D. I doit ecroire en ge-benefice en recompenſe.
+        <lb />uel que cout e uaelel Le . Queles ont le
+        <lb rend="¬" break="no" />Conſel d’mhaul aie eſt j vectus Theologales du
+        <lb />fais, &amp; ce qu’il defait eſt l Maariniſme.
+        <lb />défait, &amp; en parieuhiet,Le D. Trois ambition,
+        <lb />que hots du Maariniſmeauarice, vengeance.
+        <lb />il nmya pont dſlue ſeu Q’ele ſontlea ve
+        <lb rend="¬" break="no" />Le l Couabien de choſes l tus Cardinales.
+        <lb />ngeneal don ſcauoirvn lLe D. Quarre rahſon
+        <lb /> ingratitûde,-inſolence,!
+        <lb />Mazarin.
+        <lb /> e D.Trois.i. ce qu’il doit i paillardiniſe.
+        <lb />coire. a2. ee qu’iſ doit fai- Le Queſt-ee que la
+        <lb rend="¬" break="no" />e3ce qu’il doit deaãder.l Charité Mazarine? <pb n="6" />
+        <lb />Le D. C’eſt l’amour de ſoy. Lururieux vn peu ſeras
+        <lb />meſime, par lequel on ay- de corps ou de conſente
+        <lb rend="¬" break="no" />me ſon inrereſt pardeſſus ment..
+        <lb />toues choſes, &amp; le po-7. L’auoin d’autruy tu
+        <lb />chain pour noſtre intereſtl n’embleras, ſi t ne peux
+        <lb />comme nous meſme. aucunement.
+        <lb />Le mM. Comment aymez8. Faux teſmoignage tu
+        <lb />l diras, pour ſeruir l’Etan
+        <lb />voſtre prochain?
+        <lb />Le D. En ſouhaittant ſon promptement.
+        <lb />bien.
+        <lb />9. L’œuure de la chiair ne
+        <lb />Le . Quels ſont les dix deſireras, qu’à l’ſtalienne
+        <lb />Commandemens de la loy l ſeulement.
+        <lb />Mazarine.
+        <lb /> le lnn eaunnrenl
+        <lb />Le D. . Vn ſeul intereſt tu uoiteras, que pour les a
+        <lb rend="¬" break="no" />adoreras &amp; aymeras par-uoir injuſtement.
+        <lb />
+        <lb rend="¬" break="no" />faitement.
+        <lb /> Le . Qu’elle recompen
+        <lb rend="¬" break="no" />2. En vain l’argent du’ce auront ceux qui gar
+        <lb />Roy ne manieras ny autre dent ſes commandemes.
+        <lb />choſe pareillement.i Le D. D’eſtre les. biens
+        <lb />3. Les occaſions tu ob- l venus à la Cõur &amp; paſſer l,
+        <lb />ſerueras, peſchant en eauë pour loneſts hommes
+        <lb />trouble ſeurement.Le’.. Quels mau encon
+        <lb />eleiſenioni lonoſerai ien oaut qui e am l
+        <lb />à fin que viues longueJ greſſent.
+        <lb /> ſ Le . e meſprls, Iinli
+        <lb />ment.
+        <lb />5. Leur homicideme ſeras gence ou faute d’argent.
+        <lb />de fat ny volontairement- Leaa. Quels ſont les lacte¬ <pb n="7" />
+        <lb />mens du Mazaraniſme. J nous.
+        <lb />Ee D. Les cinq groſſes fer-l. Bien heureux ſont les
+        <lb />mes, la taille en parti &amp; l debonnaires, car ils nous
+        <lb /> laiſſent poſſeder leurs ter
+        <lb rend="¬" break="no" />lapaulette..
+        <lb />Le . Qu’appellez vous l res.
+        <lb />. 1
+        <lb />3. Bien heureux ſont ceux
+        <lb />peché d’origine?
+        <lb />Le D. C’eſt d’eſtre Fon-qui pleurent, car par leurs
+        <lb /> l’armes nous ſommes reſ
+        <lb rend="¬" break="no" />deur.
+        <lb />Le M. Ce peché ſe peut-il joüis.
+        <lb />4. Bien heureux ſont ceux
+        <lb />effacer?
+        <lb />Le D. Non qu’auec de l’ar- qui ont fain &amp; ſoif de iu
+        <lb rend="¬" break="no" />gent, où en donnant beau- ſtice, car ils ſeront raſaſ
+        <lb rend="¬" break="no" />coup d’eaueë beniſte de ſiez &amp; nous auſſ, par la
+        <lb />Cour, en allant adorer l’i-venalité́ des offices.
+        <lb />5. Bien heureux ſont les
+        <lb />dole Maz.
+        <lb />Le M. Qu’elles ſont les miſericordieux, car s’ls
+        <lb /> nous donnent quartier
+        <lb />bonnes œuures.
+        <lb />Le D. Faire ieuſner, met-l nous ne leur en donne
+        <lb rend="¬" break="no" />eas tretout à l’aumoſne &amp; enrons point.
+        <lb /> oyer les gens de bien à̀s. Bien heureux ſont ceux
+        <lb /> qui ont leur bien clairt &amp;
+        <lb />2 l’hoſptal.
+        <lb /> Le . Conmbien y à il de l net, car nous le pourrons
+        <lb />rs Beatitudes.
+        <lb />l pluſtoſt prendre.
+        <lb />Le D. Il y en à huict. 7. Bien heureux ſont les
+        <lb />1. Bien heureux ſont les pacifiques, car ils ayme
+        <lb rend="¬" break="no" />2 pauures d’eſprit, car par ce, ront mieux ſe rendre que
+        <lb />1 moyen le Royaume eſt à lſe deffendre. <pb n="8" />
+        <lb />8
+        <lb />8. Bien heureux ſont ceux uent à l’homme Mazin.
+        <lb />qui ſouffrent perſecution, l Le D. Quatre le iugo
+        <lb rend="¬" break="no" />¬¬¬.
+        <lb />car par ainſi le bien du gement, le ſuplice, la
+        <lb />Royaume eſt à nous.mort &amp; l’enfer.
+        <lb />LeM. Qu’elles ſont les l
+        <lb />choſes dernieres qui arri-l
+        <lb />FIN. </p>
+    </body>
+  </text>
 </TEI>

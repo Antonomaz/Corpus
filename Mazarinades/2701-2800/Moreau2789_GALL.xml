@@ -1,1116 +1,611 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Moreau2789_GALL">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main" source="Moreau">Plaintes de la France à ses peuples sur l'emprisonnement
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" source="Moreau">Plaintes de la France à ses peuples sur l'emprisonnement
           des princes, contre Mazarin.</title>
-				<title type="sub">Édition Antonomaz</title>
-				<respStmt>
-					<resp>Chaîne de traitement</resp>
-					<persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
-					<persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
-					<persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
+        <title type="sub">Édition Antonomaz</title>
+        <respStmt>
+          <resp>Chaîne de traitement</resp>
+          <persName ref="orcid:0000-0001-9518-1040" role="Project_manager">Abiven Karine</persName>
+          <persName ref="orcid:0000-0002-4795-2362" role="Project_manager">Lejeune Gaël</persName>
+          <persName ref="orcid:0000-0002-0007-1664" role="OCRisation">Tanguy
             Jean-Baptiste</persName>
-					<persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
-				<ref target="https://github.com/Antonomaz"/>
-				<date type="file_creation" when="2021-11-02">2 novembre 2021</date>
-				<availability n="cc-by" status="restricted">
-					<licence target="https://creativecommons.org/licenses/by/4.0"/>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<bibl>
-					<ref target="https://gallica.bnf.fr/ark:/12148/bpt6k5725183d"/>
-					<author/>
-					<title source="Moreau">Plaintes de la France à ses peuples sur l'emprisonnement des
+          <persName ref="orcid:0000-0003-0850-8266" role="engineer">Bartz Alexandre</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet ANTONOMAZ / Sorbonne Université</publisher>
+        <ref target="https://github.com/Antonomaz" />
+        <date type="file_creation" when="2021-11-02">2 novembre 2021</date>
+        <availability n="cc-by" status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0" />
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k5725183d" />
+          <author />
+          <title source="Moreau">Plaintes de la France à ses peuples sur l'emprisonnement des
             princes, contre Mazarin.</title>
-					<pubPlace source="Moreau">Sans lieu</pubPlace>
-					<publisher>
-						<persName>Sans nom</persName>
-					</publisher>
-					<date source="Moreau" when="1651">1651</date>
-					<extent>
-						<measure quantity="14" unit="page"/>
-					</extent>
-					<note type="format">in-4</note>
-					<relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none"/>
-				</bibl>
-				<msDesc>
-					<msIdentifier>
-						<settlement ref="geonames:2988507">Paris</settlement>
-						<institution>Bibliothèque nationale de France</institution>
-						<repository>département Littérature et art</repository>
-						<idno type="cote">YE-3951</idno>
-					</msIdentifier>
-					<history>
-						<provenance>
-							<stamp>True</stamp>
-						</provenance>
-					</history>
-				</msDesc>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<projectDesc>
-				<p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
+          <pubPlace source="Moreau">Sans lieu</pubPlace>
+          <publisher>
+            <persName>Sans nom</persName>
+          </publisher>
+          <date source="Moreau" when="1651">1651</date>
+          <extent>
+            <measure quantity="14" unit="page" />
+          </extent>
+          <note type="format">in-4</note>
+          <relatedItem source="Mazarine" type="identifier" subtype="none" cert="low" target="none" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement ref="geonames:2988507">Paris</settlement>
+            <institution>Bibliothèque nationale de France</institution>
+            <repository>département Littérature et art</repository>
+            <idno type="cote">YE-3951</idno>
+          </msIdentifier>
+          <history>
+            <provenance>
+              <stamp>True</stamp>
+            </provenance>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANTONOMAZ. Son objectif principal
           est de fournir un texte destiné à l'exploration avec des outils électroniques. De ce fait,
           ce n'est ni une édition philologique, ni une édition pédagogique ou de redécouverte d'un
           auteur oublié.</p>
-				<p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
+        <p>Les textes encodés dans le cadre du projet ANTONOMAZ sont issus de numérisations de
           bibliothèques numériques publiques et de Google livres.</p>
-				<p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
-			</projectDesc>
-			<editorialDecl>
-				<p/>
-			</editorialDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="fra">Document en français</language>
-			</langUsage>
-			<abstract>
-				<p source="Mazarine"/>
-				<p source="Moreau">2789. Plaintes de la France à ses peuples sur l'empri sonnement des
+        <p>L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec Kraken.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p />
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="Mazarine" />
+        <p source="Moreau">2789. Plaintes de la France à ses peuples sur l'empri sonnement des
           princes, contre Mazarin. Sans Lieu, 1651, 14 pages. Je n'ai rien à en dire si ce n'est
           qu'elles ont été imprimées également sous ce titre :</p>
-			</abstract>
-			<textClass>
-				<keywords>
-					<term type="form">vers</term>
-					<term type="genre">lamentation</term>
-					<term type="genre">plainte</term>
-					<term type="genre">prosopopée</term>
-					<term type="handwritten_note" subtype="no"/>
-					<term type="table_of_content" subtype="no"/>
-					<term type="illustration" subtype="no"/>
-				</keywords>
-			</textClass>
-			<settingDesc>
-				<setting xml:id="evt_Moreau_43" source="Moreau">
-					<p>Remontrances du parlement pour la liberté des princes</p>
-					<date when="1651-01-20">1651-01-20</date>
-				</setting>
-			</settingDesc>
-		</profileDesc>
-		<revisionDesc>
-			<change status="corrected" when="2022-06-17" who="AB"/>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-			<p>
-				<pb n="4"/>
-				<pb n="5"/>
-				<pb n="6"/>
-				<pb n="7"/>
-				<pb n="8"/>
-				<pb n="9"/>
-				<pb n="10"/>
-				<pb n="11"/>
-				<pb n="12"/>
-				<pb n="13"/>
-				<pb n="14"/>
-				<pb n="15"/>
-				<pb n="16"/>
-				<pb n="17"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb rend="¬" break="no"/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-				<lb/>
-PLAINTES
-        DE LA FRANCE
-        A SES PEVPLES
-        SVR L’EMPRISONNEMENT
-        DES PRINCES
-        CONTRE MAZARIN
-        M. DC. LI. 
-        
-        PLAINTES
-        DE LA FRANCE
-        A SESPEVPLES
-        SVR L’EMPRISONNEMENT
-         Hes
-        T 1
-         DES PRINCES
-        
-        CONTRE MAARIN.
-        I.
-         Oy qui renuerſes du tonnerre.
-         La vaine pompe des humains
-        Et relleues des meſmes mains
-        Lobſcure humilité qui languit ſur la terre
-        Toy qui par des chemins ſecrets
-        Au gré de tes ſages decrets
-        Guides le cours fatal de la iciſitude
-        Qui peuples les vagues deſers
-        Et qui fait vne ſolitude
-        Des pompeuſeitez qui brauoient l’Vniuers
-        II..
-        Toy qui formes &amp; quifais croiſtre
-        Les Troſnes les plus éclatans
-        Et qui les vas precipitans
-        Dans le premier neant dontr les as faienaiſſte
-        Qui de mes Eſtats menacez
-        Partant de longs ſiecles paſſez
-        As de ta forte main ſouſten la puiſſãnce
-        Meſme mal me preſſe aujourd’huy
-        n
-        Et ien’ay pas moinsdnnocence
-        i8
-        Ne meſet dos pAi Qudeſe cours &amp;&amp; d’appuy.
-         p, - au-. .
-        A ij
-        
-        4
-        1I.
-         Ie me vis ſous le regnié Auguſte
-        D’yn Monarque dont l’équité
-        Fiſtpute a felicié
-        Et ieveſcus heureuſe autant qu’il eſtoit iuſte
-         Auſſi choiſit-il pour mo bien
-        Et pour le ſolide ſouſtien
-        Du plus henreux Eſtat qui floriſſoit au Monde
-        Vn Miniſtre dont lebon- heur
-        Et dont la ſageſſe profonde
-        Ne donnoit point de bone à ma vaſte grandeur.
-        IV.
-        1
-         Si des mal-heurs l’eénornleſuitte
-        Si mes cruels deſtins changeans
-        Si l’intereſt de mes Regens
-        A corrompu le cours de ſa iluſte onduitte
-        Si ie n’ay plus de R ichelieux
-        Si le conſeil des vicieux
-         C
-        Preſide au Trbunal qui faie mes aduaatuiresi
-        Ne mets par leur crime en oubly2
-        
-        Vanger deſſur eux mes injues
-        i
-        Mais las ne frappe point ceux qur h’dnt poinefâtlly
-        V.
-        Leur conuoitiſe &amp; eenuie
-        
-        Leur cruelletirmidité
-        M’ont abbatuë &amp; m’ont oſt́
-        
-        Ce vigoureux efpuitqu ms nloitla vië
-        deun eonunene oe ne p n ononuenaone e e
-        .
-        Maintenant foible &amp; languiſſane l ei l e
-        De ſes etremes maux f’a plu&amp; qufſesdenuſ il
-        
-        Traiſtres qui me percez le fbſne. ’
-        
-        Penſez-vous que ie puſſfe viure
-        i
-        
-        
-        1
-        A y a r
-        Apres que voſurours m’neolt’tutfbffſae
-        eà -¬ a aa ¬e aaoa
-        
-        
-        5
-        VI.
-         Vous auez d’vne fauſſe amorce.
-         Et d’vne perfide façon.
-        Deſſus le chef de mon Sanſon.
-        
-        Porté les durs cizeaux quitrahirent ſa fonce
-        Mais quelques ſeurs que vous ſoyez
-         Si fermement que vous çroyez
-         Voſtre injuſte puiſsance à ce coup eſtablie.
-        On la verra ſous ſon effort
-        Dans voſtre ſang enſeuelie
-        Et ſon heur reſtably ſuruira voſtre mort.
-        VII..
-        Pour rendre ma teſte afſranchie
-        Des outrages d’vn triſte ſort
-        Il falloit tourner voſtre effort
-        Sur les vieux enneais dê ctte Monanchie
-        Falloit-il auoir conſenty
-        A faire reuiure vn party
-        Que voſtre intereſt ſeul en fin fe concilire
-        Pout abbattre mon haut renom
-        
-        Pour rendre ma gloire abolie
-        .
-        Et peut eſtre m’oſter vn iour iuſqu’mõn nom
-        VIII..
-        Ie n’ay pas beſoin de redire
-        La longue &amp; dure affliction
-         Dont leur cruelle ambition
-        eis i
-        ti1
-         Soubs pretexte de zele agita mon Empire
-        Nos meurtres encortout nouueaux
-        Nos ruines &amp; nos tombeaux
-         Nos Heros maſſacrez nosflames &amp; nos peſtes.
-         Et tant de tragiques effects
-        Sont autant de boucher funeſtes
-        n n
-        Qui ſe plaignent encor desuiaux qu’il nous ont faits 6
-        7r
-        IX.
-         Que n’arreſt iez-vous la futie
-        Detant de nouueaux conjurez.
-        1
-        De tant d’enfans deſnaturez
-        De Monſtres affamez du ſang de leur patrie..
-        Ces fiers &amp; perfides Geans
-        Ces gouffres aux meurtres beans.
-        Ces Serpens auortez de mes triſtes ntrailles
-        Qui recompenſoient mon amour
-        Par des ſanglantes funerailles
-        Et deſchiroient les flancs qui les mirent aqu iour.
-        X.
-         Quand ils repaiſſoientma creoyanê
-        D’vn fantoſme honteux &amp; vain
-        Leur cruelle &amp; barbare fain
-         Nourriſſoit ſon ardeur de ma propre ſubſtance
-        Les meurtres de mes Citoyens
-         4
-         Eſtoient les damnables moyens
-         Qu ilsvoulloient employer pour exerces leurs imes
-         Et ſoüillans ma fidelité
-         Ils entrainoient dans leurs abyſmes
-         Mon amour mon deuoir auecma liberteé.
-        
-        X1.
-        Mais par vne eſtrange foibleſſe
-        Par vn horrible aueuglement
-        Par vn triſte abandonne ment
-        Vn ſecret lugement du Ciel qui me delaiſre
-        Quand on abbat mes vrays Guerriers
-        On eſleuemes meurtriers
-        1.
-        Aux rangs qu’ont merité mes ſerüiteuts fideles
-        Et tout noirs de leur attentat
-        On met dans leurs mains criminelles
-        Laſeureté du Prince &amp; l’appuy del’Eſtat ee-s.
-        7
-         25
-        1
-        U T T
-        . L?
-        On enchaine mes fps Alç̧ides,,.
-        Lors que d’vn deſſein plein d’horreur
-        nl
-        On m’abandonne à la fureur
-        De tant de fiers Tyrans &amp; de Monſtres auides;
-        Ce grand eœur demeuré per clus
-        Son bras ne m aſſiſtepa plus
-        Et l’on n’entendra plus lebruit de mon fonnere
-        Quand mes ennemis triomphans
-        
-        Mettront leur Troſne dans ma terre
-        Sur les triſtes tombeaux de mes plus chegs enfans.:
-        XIII.
-         L’affreuſe &amp; ſanglante megere
-        Soufflera mes feux inteſins
-        Et la hainede mes deſtins
-        Ioindra ma propre rage à̀ la rage eſtrangece.
-        Nes cœurs contre nous animez
-        Nos bras contre nos bras armez..
-        Feront tomber par tout les coups dela tempeſte
-        A lors nons naurons plus le bras
-        Qui pouuoit garantir la teſte
-        Et nos mains puniront nos curages, ingrats.
-        XIV.
-        Lors dans vne horrible miſere
-        Toute la pitié Ceſſera
-        Le ſang propre ſe deſtruira
-        Le fils s’immolera par le meurtredupere
-        L’enorme &amp; la cruelle fain
-         Cé montre auide parle &amp; vain
-        Eſtouffera les fruicts dans le ſein de laterre
-        Mes amis ſeront mes tyrans
-        dans les fureurs de la guerre
-        ei ſaay pour ſeuls ſuboiedn des mouts ou dermoutans.
-        
-        ll e
-        
-        
-        
-        S8
-         -
-        xXV
-         Aquoy ſert d’eſtre maghnajime l ln
-        
-         e1.
-        D’auoir ſi ſouuent combattu .
-        
-        !
-        Si cette ſublime vertu
-        Si le mente paſſe auiod’huy por vcrime
-        Si deſormais pour mes vainqueursl
-        Tous mes peuples n’ont plus de ecœurs ’l hainesj
-        Que pour tourner onitreu eurs neſpris &amp; leurs
-        Si me deffendre eſt trahiſon
-        Si l on met les vertus aux chaiſhes?
-         Si mes liberateurs méritent la priſôf,
-        V V .II I
-        .
-        Par vos maximes tyrainiques d e
-        Les hautes vertus vont perir
-        1.l li
-        Et qui voudra les acquerir
-        Si l iniure eſt le prix des actes herofſes isii
-        
-         Si l’on punit v innocent
-        Et s’il faut qu’vn guerrier puiſſant
-        e1e
-        Et des indignes ferstioseẽt ſe recopenſel
-        Qui voudra me ſeruir d’appuy aidii
-        2
-        olEl i
-        Et pourront pour ma deffence
-        XVI.
-         7 T
-         Combien de victoires- galgfélsili io
-         Par combien d’actes genereux
-        At il rendu mon regne heureux
-        Depuis qu’il a pour moy les ar més empoignées
-         Des premiers coups de ſa valeur
-         Sur le point que noſtre malheur
-        Aoit fat trebucher d’vné cheute coinmune l
-         Le Royaume &amp; le Potentat
-        Mlgté la mort &amp; la fortune
-        Ne ſt l pas reuiute &amp; le Prine &amp; l’Eſtat.
-        ¬ ,aa
-        
-         A
-        15n i
-        Ceux qui ſeront moins forẗss&amp; mahisuiſãs! que layi i
-        
-        .
-        
-        
-        V1
-        Pouuons
-         aaa 2 ¬ ao 9
-         y y
-        XIII.
-        Pouuons nous douter qu’il nous ayme,
-        Il a deſtruit nos ennemis,
-        A nous meſmeil nous a ſoubmis,
-        Il nous a preſerué de nous contre nous meſme,
-        Pour nous rendre le douxrepos
-        Que nos ſureurs mal à propos
-        Troubloient d’vne licence &amp; trop longue &amp; trop forte,
-        Il fit ceſſer tout ſonpouuoit,
-        Et par l’amour ſeul qu’il nous porte,
-        Nous forca de nous meſme à rentrer au deuoir.
-        XIIII.
-        Trop hautaine &amp; trop temeraire,
-        Il m’abaiſſa pour m’eſlſeuer,
-        Il m’expoſa pour me ſauuer,
-        Et ce remede fut à mon mal neeſſaire,
-        Comme vn ſubit &amp; fier torrent,
-        Se deſtruis uy meſme en courant,3
-        Et par ſa violence abbat ſa violence:
-        Ainſi mon eſtat en fureur
-        Seperdoit dans fon iaſolence,
-        Et pat ſa propre force abaiſfois ſa grandeur.
-        Xv.
-        Mais quand ſon cœur par ma licence
-        Eſt ſi iuſtement anime,
-        Ilvoit qu’on ne l’auoit armé
-        Que pour venger l’affront qu’attira l’imprudénce:
-        Son bras ſans ſon intention
-        Seruit la noire paſſioa
-        Pe l’iniqgue yran qui ma pette a iutées,
-        Et ne ceſſane de la chereher.
-         La trouue à la finaſſeurée
-         En attachant les mains qui pouuoient l’enmapeſche
-        C  10
-        
-         XVI.
-        Silfaut vn grand Heros deſtruire,
-        Et ſi l’on doit moins l’eſleuer,
-        Parce qu’il a ſeeu me ſauuer,
-        Qon ne doue l abaiſſer parce qu’il me peut nuire,
-        Si cette iuſtice d’Eſtat,
-        Et ſice licite attentat
-        Doit eſtre de mon bien vne ferme aſſeurance,
-        Exercez-les ſans paſſion,
-        Et du moins faites difference
-        De l’infidelité d’auec ’ambition,
-        XVII.
-        Non il n’en veut pas à m goire,
-        Et loin d’enuier ma grandeur,;
-        Son innocente &amp; noble ardeut
-        Ne cherche que pou moy le gaind’vne victoire;
-        Si ce haut &amp; ſenſible honneur:
-        Ne faiſoit pas tout ſon bonheui,
-        Il feroit peu d’eſtat de l’eſclat qu’il luy donne,
-        Et croit qu’on peut plus meriter
-         loe ue euene ueni de eloire ſl one
-         XVII.
-         Si ſon credit eſt redoutable,
-        S’il eſt à mon Eſtat fatal,
-        Voſtre imprudence a fait ce mal,
-        Voſtre meſme imprudence eneſt ſeule coupable:
-        Pour bien faite il fallois zer,
-        S’il demandoit le refuſer,
-        Agir d’vne puiſſance abſoluë &amp; royalle.
-        Et garder voſtre authorité
-        Où voſtreeraie deſloyalle
-        ane s i i
-         a
-        
-        531
-        E
-        N’a monſtré que foibleſſe &amp; qu’infillité.i
-        
-        p.
-         e. ii
-        XIX.
-        At’il de plus hauts aduantages
-        Que mes autres Guerriers n’ayent eus,
-        Quand mes ennemis abbatus.
-        Ont gemy ſous l’effort de leurs braues courages;
-        Si ſon illuſtre &amp; noble ſang
-        Merite encor vn plus haut rang,
-        Pourquoy deſtruiſe4-vous auec la violence
-        Et des motifs trop inhumains
-         Les iutes fruits de ſa vaillance,
-        Les droitsde,la naure, &amp; l’œuure de vos mains.
-        XX.
-         Vous penſiez que cette victime
-        Deuoit diſſiper vos terreurs,
-        Mais vos craintes &amp; vos erceurs
-        Ne peuuent iuſtements’effacer par vn crime:
-        Cependant nous l’approuuons tous
-        Vous faires pecher auec vous
-        Mes peuples abaſez de vos noires malices;
-        Et beniſſant voſtre deſſein,
-        Vous ren dez leurs plaſits complices
-        Des coups dont vos fureurs leut ont ouuert le ſein.
-        XX1.
-        D’vn ſubtil &amp; doux artifice
-        On les perd parce qu’il leur plaiſt,
-        Et lour hane aueugle qu’elle eſt,
-        Par vn chemindofleurs les meine au precipice;
-        oa les frappe en les obhgeant,
-        Et l’on les uë en les vengeant,
-        
-        D’vn coup qui fait enſemhle &amp; leur ioye &amp; leur perte,
-        Et d’vne horrible rahiſo
-        Dans la coupe leur eſt offerte
-        Sous la douceur du miella rigueur du poiſon.
-        
-        12
-        XX1I.
-        Vn Miniſtre obſeur ſans naiſſance
-        Pour eſtablir ſes noirs projets,
-        Corrompt ou deſtruit mes ſubiets,
-         Eſloigne monrepos, diſſipe ma finance:
-         Il a de mon peuple oppreſſé
-        Le ſang goutte à goutte ſuccé,
-        De tous mes Qfieious épuiſé la ſubſtance,
-        Attaqué mes Corps ſouuerins,
-        Et pour comble de ma ſouſfrance
-         Il met tous mes ſoldats l’vn contre l’autre aux mains.
-        XXIII.
-        C’eſt pour me ietter dans le gouffre,
-        Si fa main conduit mon timon,
-        Et s’il paſſe pour mon demon,
-        C’eſt vn demon qui potte &amp; la flame-&amp; le ſouffre?
-        Traiſtre, de mon bien ennemy,
-        Dragon, qu’a ſur moy reuomy
-        Vne tetre où l’enfer voit regner ſes maliees,
-        Retoutne en ces infames lieux,
-        S
-        Remporte auec toy mes ſupplices,
-        Et laſſes en repos icy regner mes dieux.
-        XXIIIH
-         Vous perſonnes ſages &amp; habiles
-        
-        Qui compoſez mes Parlemens,
-        Par les genereux mouuemens
-        oupot e’ent les ornds enurs aun choſesunciles.
-        Par vos aduis,par vos Arreſts,
-        Prene en main les intereſts
-         Qui me ſont ſi ſacrez &amp; ſi conſfiderables,
-        Et par des reſoluions
-        Dont les grands eſprits ſont capables,
-        Sç̧achez faire valloir les Declarations.
-        
-        
-        C’et ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
-         13
-        ,
-         C’eſt vous qui enez la balance
-        De la ſouueraine equit́s1
-        
-        Et dont la iuſte auctorité,
-        Mai ies as gndure; qgtques loix de Frances
-        S’ils &amp;nt peche ’ceontre ’Eſat
-        !
-        S’ils ont commis quel que atontat
-        Contte la Rqate, que leurteſte enjeſponde:
-        Mais s’ils ſont de touit crimpexempats,
-        Que voſtre Iugement confone
-        i222.
-        Les calomniqgus des Pticesinnpcens..
-        XXV
-        Et vous qui depuis tane de,-luſttes
-        Fuſtes mes braues defenſeurse
-        
-        1
-        
-        Nobles &amp; dignes ſucceſſeurs;
-        1luhu!
-        De tra eieoppreu d&amp;e aasoeie pulurirn
-        Vous qui vous viſtestant de fos u ae
-         Hardis teſmoins de leurs explais,.
-        Verrez-vausſns crahi le ſang qui vous anim
-        Et l’amour que vous me pojtez,n
-         e13
-        Qu’vn pouuoir tyranniue-opprime
-        La Verri, m gade, &amp; qu yous imite¬.:
-        XXVII.
-        Ames trop long temps obſtjnées,
-        Sentez enfin voſtre douleur,
-        Peuples voyez voſtre malheur
-        Dans c luy d’vn Heros qui fait vos deſtiné́es,
-        Depuis que le Ciel mit en luy
-        Tout ma force &amp; mon appuy,
-        Voſte ſort &amp; le ſien. cnntraire ou fauorable.
-        Sont liez d’vn meſme lien,
-        Et le meſme couu qui l’accable
-        Reſpand en meſme temps voſtre ſang &amp; le ſien. 
-        e 1
-        i1
-         Ouurez les youx os oſiepalire io l,?,
-        il l
-        Le precipce eſt ſous vos pas
-        Et pu ſis a donor le ure doass l ſn e eline l l
-        Les gdiases lonte eohſe&amp;ape’lſſEs poſriieſspgle
-        mi
-        H ſi
-        Ne ſoyez donc plus aueuglê, no n
-        n3
-        Et me ſoyez plus eoaſee i lenp
-         o!
-        Par les prbesteds f’&amp; vhe inpradtte aiuiee jl
-        ;3
-        Conſultez bien vds ſ̈ereſts, i
-        Votre deuoir, voſtre iſfiée e
-        Et regardez vhi peûtoſt hal’ depluis presi
-        X.
-        Ne perdez pas la ouiſelań̈e ilii
-        1.
-        De ce que leur bras vous’vdlu, l
-        Rendez leur ſalut pour ſutlio oul au ?
-        l
-        Et pour vous delier fnteieut deliorante3
-        Des meſmes coups ſu éue laiice il
-        Vos propres chefs ſonflencez; le
-        S’ous eſes eooſee ueeaualt miſne oiaeei,
-        2’.
-        Fuiez tant de maux preparez,
-        
-        Et de peur d’vn comunl nàuftage ll
-        Sauue vou ar le pole queoins ſlaut ouuſi&amp;ezpee			</p>
-		</body>
-	</text>
+      </abstract>
+      <textClass>
+        <keywords>
+          <term type="form">vers</term>
+          <term type="genre">lamentation</term>
+          <term type="genre">plainte</term>
+          <term type="genre">prosopopée</term>
+          <term type="handwritten_note" subtype="no" />
+          <term type="table_of_content" subtype="no" />
+          <term type="illustration" subtype="no" />
+        </keywords>
+      </textClass>
+      <settingDesc>
+        <setting xml:id="evt_Moreau_43" source="Moreau">
+          <p>Remontrances du parlement pour la liberté des princes</p>
+          <date when="1651-01-20">1651-01-20</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change status="corrected" when="2022-06-17" who="AB" />
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <pb n="4" />
+        <lb />PLAINTES
+        <lb />DE LA FRANCE
+        <lb />A SES PEVPLES
+        <lb />SVR L’EMPRISONNEMENT
+        <lb />DES PRINCES
+        <lb />CONTRE MAZARIN
+        <lb />M. DC. LI. <pb n="5" />
+        <pb n="6" />
+        <lb />PLAINTES
+        <lb />DE LA FRANCE
+        <lb />A SESPEVPLES
+        <lb />SVR L’EMPRISONNEMENT
+        <lb /> Hes
+        <lb />T 1
+        <lb /> DES PRINCES
+        <lb />
+        <lb />CONTRE MAARIN.
+        <lb />I.
+        <lb /> Oy qui renuerſes du tonnerre.
+        <lb /> La vaine pompe des humains
+        <lb />Et relleues des meſmes mains
+        <lb />Lobſcure humilité qui languit ſur la terre
+        <lb />Toy qui par des chemins ſecrets
+        <lb />Au gré de tes ſages decrets
+        <lb />Guides le cours fatal de la iciſitude
+        <lb />Qui peuples les vagues deſers
+        <lb />Et qui fait vne ſolitude
+        <lb />Des pompeuſeitez qui brauoient l’Vniuers
+        <lb />II..
+        <lb />Toy qui formes &amp; quifais croiſtre
+        <lb />Les Troſnes les plus éclatans
+        <lb />Et qui les vas precipitans
+        <lb />Dans le premier neant dontr les as faienaiſſte
+        <lb />Qui de mes Eſtats menacez
+        <lb />Partant de longs ſiecles paſſez
+        <lb />As de ta forte main ſouſten la puiſſãnce
+        <lb />Meſme mal me preſſe aujourd’huy
+        <lb />n
+        <lb />Et ien’ay pas moinsdnnocence
+        <lb />i8
+        <lb />Ne meſet dos pAi Qudeſe cours &amp;&amp; d’appuy.
+        <lb /> p, - au-. .
+        <lb />A ij
+        <lb />
+        <pb n="7" />4
+        <lb />1I.
+        <lb /> Ie me vis ſous le regnié Auguſte
+        <lb />D’yn Monarque dont l’équité
+        <lb />Fiſtpute a felicié
+        <lb />Et ieveſcus heureuſe autant qu’il eſtoit iuſte
+        <lb /> Auſſi choiſit-il pour mo bien
+        <lb />Et pour le ſolide ſouſtien
+        <lb />Du plus henreux Eſtat qui floriſſoit au Monde
+        <lb />Vn Miniſtre dont lebon- heur
+        <lb />Et dont la ſageſſe profonde
+        <lb />Ne donnoit point de bone à ma vaſte grandeur.
+        <lb />IV.
+        <lb />1
+        <lb /> Si des mal-heurs l’eénornleſuitte
+        <lb />Si mes cruels deſtins changeans
+        <lb />Si l’intereſt de mes Regens
+        <lb />A corrompu le cours de ſa iluſte onduitte
+        <lb />Si ie n’ay plus de R ichelieux
+        <lb />Si le conſeil des vicieux
+        <lb /> C
+        <lb />Preſide au Trbunal qui faie mes aduaatuiresi
+        <lb />Ne mets par leur crime en oubly2
+        <lb />
+        <lb />Vanger deſſur eux mes injues
+        <lb />i
+        <lb />Mais las ne frappe point ceux qur h’dnt poinefâtlly
+        <lb />V.
+        <lb />Leur conuoitiſe &amp; eenuie
+        <lb />
+        <lb />Leur cruelletirmidité
+        <lb />M’ont abbatuë &amp; m’ont oſt́
+        <lb />
+        <lb />Ce vigoureux efpuitqu ms nloitla vië
+        <lb />deun eonunene oe ne p n ononuenaone e e
+        <lb />.
+        <lb />Maintenant foible &amp; languiſſane l ei l e
+        <lb rend="¬" break="no" />De ſes etremes maux f’a plu&amp; qufſesdenuſ il
+        <lb />
+        <lb />Traiſtres qui me percez le fbſne. ’
+        <lb />
+        <lb />Penſez-vous que ie puſſfe viure
+        <lb />i
+        <lb />
+        <lb rend="¬" break="no" />
+        <lb />1
+        <lb />A y a r
+        <lb />Apres que voſurours m’neolt’tutfbffſae
+        <lb />eà -¬ a aa ¬e aaoa
+        <lb rend="¬" break="no" />
+        <pb n="8" />
+        <lb />5
+        <lb />VI.
+        <lb /> Vous auez d’vne fauſſe amorce.
+        <lb /> Et d’vne perfide façon.
+        <lb />Deſſus le chef de mon Sanſon.
+        <lb rend="¬" break="no" />
+        <lb />Porté les durs cizeaux quitrahirent ſa fonce
+        <lb />Mais quelques ſeurs que vous ſoyez
+        <lb /> Si fermement que vous çroyez
+        <lb /> Voſtre injuſte puiſsance à ce coup eſtablie.
+        <lb />On la verra ſous ſon effort
+        <lb />Dans voſtre ſang enſeuelie
+        <lb />Et ſon heur reſtably ſuruira voſtre mort.
+        <lb />VII..
+        <lb />Pour rendre ma teſte afſranchie
+        <lb />Des outrages d’vn triſte ſort
+        <lb />Il falloit tourner voſtre effort
+        <lb />Sur les vieux enneais dê ctte Monanchie
+        <lb />Falloit-il auoir conſenty
+        <lb />A faire reuiure vn party
+        <lb />Que voſtre intereſt ſeul en fin fe concilire
+        <lb />Pout abbattre mon haut renom
+        <lb />
+        <lb />Pour rendre ma gloire abolie
+        <lb />.
+        <lb />Et peut eſtre m’oſter vn iour iuſqu’mõn nom
+        <lb />VIII..
+        <lb />Ie n’ay pas beſoin de redire
+        <lb />La longue &amp; dure affliction
+        <lb /> Dont leur cruelle ambition
+        <lb />eis i
+        <lb />ti1
+        <lb /> Soubs pretexte de zele agita mon Empire
+        <lb />Nos meurtres encortout nouueaux
+        <lb />Nos ruines &amp; nos tombeaux
+        <lb /> Nos Heros maſſacrez nosflames &amp; nos peſtes.
+        <lb /> Et tant de tragiques effects
+        <lb />Sont autant de boucher funeſtes
+        <lb />n n
+        <lb />Qui ſe plaignent encor desuiaux qu’il nous ont faits <pb n="9" />6
+        <lb />7r
+        <lb />IX.
+        <lb /> Que n’arreſt iez-vous la futie
+        <lb />Detant de nouueaux conjurez.
+        <lb />1
+        <lb />De tant d’enfans deſnaturez
+        <lb />De Monſtres affamez du ſang de leur patrie..
+        <lb />Ces fiers &amp; perfides Geans
+        <lb />Ces gouffres aux meurtres beans.
+        <lb />Ces Serpens auortez de mes triſtes ntrailles
+        <lb />Qui recompenſoient mon amour
+        <lb />Par des ſanglantes funerailles
+        <lb />Et deſchiroient les flancs qui les mirent aqu iour.
+        <lb />X.
+        <lb /> Quand ils repaiſſoientma creoyanê
+        <lb />D’vn fantoſme honteux &amp; vain
+        <lb />Leur cruelle &amp; barbare fain
+        <lb /> Nourriſſoit ſon ardeur de ma propre ſubſtance
+        <lb />Les meurtres de mes Citoyens
+        <lb /> 4
+        <lb /> Eſtoient les damnables moyens
+        <lb /> Qu ilsvoulloient employer pour exerces leurs imes
+        <lb /> Et ſoüillans ma fidelité
+        <lb /> Ils entrainoient dans leurs abyſmes
+        <lb /> Mon amour mon deuoir auecma liberteé.
+        <lb />
+        <lb />X1.
+        <lb />Mais par vne eſtrange foibleſſe
+        <lb />Par vn horrible aueuglement
+        <lb />Par vn triſte abandonne ment
+        <lb />Vn ſecret lugement du Ciel qui me delaiſre
+        <lb />Quand on abbat mes vrays Guerriers
+        <lb />On eſleuemes meurtriers
+        <lb />1.
+        <lb />Aux rangs qu’ont merité mes ſerüiteuts fideles
+        <lb />Et tout noirs de leur attentat
+        <lb />On met dans leurs mains criminelles
+        <lb />Laſeureté du Prince &amp; l’appuy del’Eſtat <pb n="10" />ee-s.
+        <lb />7
+        <lb /> 25
+        <lb />1
+        <lb />U T T
+        <lb />. L?
+        <lb />On enchaine mes fps Alç̧ides,,.
+        <lb />Lors que d’vn deſſein plein d’horreur
+        <lb />nl
+        <lb />On m’abandonne à la fureur
+        <lb />De tant de fiers Tyrans &amp; de Monſtres auides;
+        <lb />Ce grand eœur demeuré per clus
+        <lb />Son bras ne m aſſiſtepa plus
+        <lb />Et l’on n’entendra plus lebruit de mon fonnere
+        <lb />Quand mes ennemis triomphans
+        <lb />
+        <lb />Mettront leur Troſne dans ma terre
+        <lb />Sur les triſtes tombeaux de mes plus chegs enfans.:
+        <lb />XIII.
+        <lb /> L’affreuſe &amp; ſanglante megere
+        <lb />Soufflera mes feux inteſins
+        <lb />Et la hainede mes deſtins
+        <lb />Ioindra ma propre rage à̀ la rage eſtrangece.
+        <lb />Nes cœurs contre nous animez
+        <lb />Nos bras contre nos bras armez..
+        <lb />Feront tomber par tout les coups dela tempeſte
+        <lb />A lors nons naurons plus le bras
+        <lb />Qui pouuoit garantir la teſte
+        <lb />Et nos mains puniront nos curages, ingrats.
+        <lb />XIV.
+        <lb />Lors dans vne horrible miſere
+        <lb />Toute la pitié Ceſſera
+        <lb />Le ſang propre ſe deſtruira
+        <lb />Le fils s’immolera par le meurtredupere
+        <lb />L’enorme &amp; la cruelle fain
+        <lb /> Cé montre auide parle &amp; vain
+        <lb />Eſtouffera les fruicts dans le ſein de laterre
+        <lb />Mes amis ſeront mes tyrans
+        <lb />dans les fureurs de la guerre
+        <lb />ei ſaay pour ſeuls ſuboiedn des mouts ou dermoutans.
+        <lb />
+        <lb />ll e
+        <lb />
+        <pb n="11" />
+        <lb />
+        <lb />S8
+        <lb /> -
+        <lb />xXV
+        <lb rend="¬" break="no" /> Aquoy ſert d’eſtre maghnajime l ln
+        <lb />
+        <lb /> e1.
+        <lb />D’auoir ſi ſouuent combattu .
+        <lb />
+        <lb />!
+        <lb />Si cette ſublime vertu
+        <lb />Si le mente paſſe auiod’huy por vcrime
+        <lb />Si deſormais pour mes vainqueursl
+        <lb />Tous mes peuples n’ont plus de ecœurs ’l hainesj
+        <lb />Que pour tourner onitreu eurs neſpris &amp; leurs
+        <lb />Si me deffendre eſt trahiſon
+        <lb />Si l on met les vertus aux chaiſhes?
+        <lb /> Si mes liberateurs méritent la priſôf,
+        <lb rend="¬" break="no" />V V .II I
+        <lb />.
+        <lb />Par vos maximes tyrainiques d e
+        <lb />Les hautes vertus vont perir
+        <lb />1.l li
+        <lb />Et qui voudra les acquerir
+        <lb />Si l iniure eſt le prix des actes herofſes isii
+        <lb />
+        <lb /> Si l’on punit v innocent
+        <lb />Et s’il faut qu’vn guerrier puiſſant
+        <lb rend="¬" break="no" />e1e
+        <lb />Et des indignes ferstioseẽt ſe recopenſel
+        <lb />Qui voudra me ſeruir d’appuy aidii
+        <lb />2
+        <lb />olEl i
+        <lb rend="¬" break="no" />Et pourront pour ma deffence
+        <lb />XVI.
+        <lb /> 7 T
+        <lb rend="¬" break="no" /> Combien de victoires- galgfélsili io
+        <lb /> Par combien d’actes genereux
+        <lb />At il rendu mon regne heureux
+        <lb />Depuis qu’il a pour moy les ar més empoignées
+        <lb /> Des premiers coups de ſa valeur
+        <lb /> Sur le point que noſtre malheur
+        <lb />Aoit fat trebucher d’vné cheute coinmune l
+        <lb /> Le Royaume &amp; le Potentat
+        <lb />Mlgté la mort &amp; la fortune
+        <lb />Ne ſt l pas reuiute &amp; le Prine &amp; l’Eſtat.
+        <lb />¬ ,aa
+        <lb rend="¬" break="no" />
+        <lb /> A
+        <lb />15n i
+        <lb />Ceux qui ſeront moins forẗss&amp; mahisuiſãs! que layi i
+        <lb />
+        <lb />.
+        <lb />
+        <lb />
+        <lb rend="¬" break="no" />V1
+        <lb />Pouuons
+        <lb /> aaa 2 ¬ ao <pb n="12" />9
+        <lb /> y y
+        <lb />XIII.
+        <lb />Pouuons nous douter qu’il nous ayme,
+        <lb />Il a deſtruit nos ennemis,
+        <lb />A nous meſmeil nous a ſoubmis,
+        <lb />Il nous a preſerué de nous contre nous meſme,
+        <lb />Pour nous rendre le douxrepos
+        <lb />Que nos ſureurs mal à propos
+        <lb />Troubloient d’vne licence &amp; trop longue &amp; trop forte,
+        <lb />Il fit ceſſer tout ſonpouuoit,
+        <lb />Et par l’amour ſeul qu’il nous porte,
+        <lb />Nous forca de nous meſme à rentrer au deuoir.
+        <lb />XIIII.
+        <lb />Trop hautaine &amp; trop temeraire,
+        <lb />Il m’abaiſſa pour m’eſlſeuer,
+        <lb />Il m’expoſa pour me ſauuer,
+        <lb />Et ce remede fut à mon mal neeſſaire,
+        <lb />Comme vn ſubit &amp; fier torrent,
+        <lb />Se deſtruis uy meſme en courant,3
+        <lb />Et par ſa violence abbat ſa violence:
+        <lb />Ainſi mon eſtat en fureur
+        <lb />Seperdoit dans fon iaſolence,
+        <lb />Et pat ſa propre force abaiſfois ſa grandeur.
+        <lb />Xv.
+        <lb />Mais quand ſon cœur par ma licence
+        <lb />Eſt ſi iuſtement anime,
+        <lb />Ilvoit qu’on ne l’auoit armé
+        <lb />Que pour venger l’affront qu’attira l’imprudénce:
+        <lb />Son bras ſans ſon intention
+        <lb />Seruit la noire paſſioa
+        <lb />Pe l’iniqgue yran qui ma pette a iutées,
+        <lb />Et ne ceſſane de la chereher.
+        <lb /> La trouue à la finaſſeurée
+        <lb /> En attachant les mains qui pouuoient l’enmapeſche
+        <lb />C <pb n="13" /> 10
+        <lb />
+        <lb /> XVI.
+        <lb />Silfaut vn grand Heros deſtruire,
+        <lb />Et ſi l’on doit moins l’eſleuer,
+        <lb />Parce qu’il a ſeeu me ſauuer,
+        <lb />Qon ne doue l abaiſſer parce qu’il me peut nuire,
+        <lb />Si cette iuſtice d’Eſtat,
+        <lb />Et ſice licite attentat
+        <lb />Doit eſtre de mon bien vne ferme aſſeurance,
+        <lb />Exercez-les ſans paſſion,
+        <lb />Et du moins faites difference
+        <lb />De l’infidelité d’auec ’ambition,
+        <lb />XVII.
+        <lb />Non il n’en veut pas à m goire,
+        <lb />Et loin d’enuier ma grandeur,;
+        <lb />Son innocente &amp; noble ardeut
+        <lb />Ne cherche que pou moy le gaind’vne victoire;
+        <lb />Si ce haut &amp; ſenſible honneur:
+        <lb />Ne faiſoit pas tout ſon bonheui,
+        <lb />Il feroit peu d’eſtat de l’eſclat qu’il luy donne,
+        <lb />Et croit qu’on peut plus meriter
+        <lb /> loe ue euene ueni de eloire ſl one
+        <lb rend="¬" break="no" /> XVII.
+        <lb /> Si ſon credit eſt redoutable,
+        <lb />S’il eſt à mon Eſtat fatal,
+        <lb />Voſtre imprudence a fait ce mal,
+        <lb />Voſtre meſme imprudence eneſt ſeule coupable:
+        <lb />Pour bien faite il fallois zer,
+        <lb />S’il demandoit le refuſer,
+        <lb />Agir d’vne puiſſance abſoluë &amp; royalle.
+        <lb />Et garder voſtre authorité
+        <lb />Où voſtreeraie deſloyalle
+        <lb />ane s i i
+        <lb /> a
+        <lb rend="¬" break="no" />
+        <lb />531
+        <lb />E
+        <lb />N’a monſtré que foibleſſe &amp; qu’infillité.i
+        <lb rend="¬" break="no" />
+        <lb />p.
+        <lb /> e. <pb n="14" />ii
+        <lb />XIX.
+        <lb />At’il de plus hauts aduantages
+        <lb />Que mes autres Guerriers n’ayent eus,
+        <lb />Quand mes ennemis abbatus.
+        <lb />Ont gemy ſous l’effort de leurs braues courages;
+        <lb />Si ſon illuſtre &amp; noble ſang
+        <lb />Merite encor vn plus haut rang,
+        <lb />Pourquoy deſtruiſe4-vous auec la violence
+        <lb />Et des motifs trop inhumains
+        <lb /> Les iutes fruits de ſa vaillance,
+        <lb />Les droitsde,la naure, &amp; l’œuure de vos mains.
+        <lb />XX.
+        <lb /> Vous penſiez que cette victime
+        <lb />Deuoit diſſiper vos terreurs,
+        <lb />Mais vos craintes &amp; vos erceurs
+        <lb />Ne peuuent iuſtements’effacer par vn crime:
+        <lb />Cependant nous l’approuuons tous
+        <lb />Vous faires pecher auec vous
+        <lb />Mes peuples abaſez de vos noires malices;
+        <lb />Et beniſſant voſtre deſſein,
+        <lb />Vous ren dez leurs plaſits complices
+        <lb />Des coups dont vos fureurs leut ont ouuert le ſein.
+        <lb />XX1.
+        <lb />D’vn ſubtil &amp; doux artifice
+        <lb />On les perd parce qu’il leur plaiſt,
+        <lb />Et lour hane aueugle qu’elle eſt,
+        <lb />Par vn chemindofleurs les meine au precipice;
+        <lb />oa les frappe en les obhgeant,
+        <lb />Et l’on les uë en les vengeant,
+        <lb />
+        <lb />D’vn coup qui fait enſemhle &amp; leur ioye &amp; leur perte,
+        <lb />Et d’vne horrible rahiſo
+        <lb />Dans la coupe leur eſt offerte
+        <lb />Sous la douceur du miella rigueur du poiſon.
+        <lb />
+        <pb n="15" />12
+        <lb />XX1I.
+        <lb />Vn Miniſtre obſeur ſans naiſſance
+        <lb />Pour eſtablir ſes noirs projets,
+        <lb />Corrompt ou deſtruit mes ſubiets,
+        <lb /> Eſloigne monrepos, diſſipe ma finance:
+        <lb /> Il a de mon peuple oppreſſé
+        <lb />Le ſang goutte à goutte ſuccé,
+        <lb />De tous mes Qfieious épuiſé la ſubſtance,
+        <lb />Attaqué mes Corps ſouuerins,
+        <lb />Et pour comble de ma ſouſfrance
+        <lb /> Il met tous mes ſoldats l’vn contre l’autre aux mains.
+        <lb />XXIII.
+        <lb />C’eſt pour me ietter dans le gouffre,
+        <lb />Si fa main conduit mon timon,
+        <lb />Et s’il paſſe pour mon demon,
+        <lb />C’eſt vn demon qui potte &amp; la flame-&amp; le ſouffre?
+        <lb />Traiſtre, de mon bien ennemy,
+        <lb />Dragon, qu’a ſur moy reuomy
+        <lb />Vne tetre où l’enfer voit regner ſes maliees,
+        <lb />Retoutne en ces infames lieux,
+        <lb />S
+        <lb rend="¬" break="no" />Remporte auec toy mes ſupplices,
+        <lb />Et laſſes en repos icy regner mes dieux.
+        <lb />XXIIIH
+        <lb /> Vous perſonnes ſages &amp; habiles
+        <lb />
+        <lb />Qui compoſez mes Parlemens,
+        <lb />Par les genereux mouuemens
+        <lb />oupot e’ent les ornds enurs aun choſesunciles.
+        <lb />Par vos aduis,par vos Arreſts,
+        <lb />Prene en main les intereſts
+        <lb /> Qui me ſont ſi ſacrez &amp; ſi conſfiderables,
+        <lb />Et par des reſoluions
+        <lb />Dont les grands eſprits ſont capables,
+        <lb />Sç̧achez faire valloir les Declarations.
+        <lb />
+        <lb />
+        <lb />C’et <pb n="16" />¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+        <lb rend="¬" break="no" /> 13
+        <lb />,
+        <lb /> C’eſt vous qui enez la balance
+        <lb />De la ſouueraine equit́s1
+        <lb />
+        <lb />Et dont la iuſte auctorité,
+        <lb />Mai ies as gndure; qgtques loix de Frances
+        <lb />S’ils &amp;nt peche ’ceontre ’Eſat
+        <lb rend="¬" break="no" />!
+        <lb />S’ils ont commis quel que atontat
+        <lb />Contte la Rqate, que leurteſte enjeſponde:
+        <lb />Mais s’ils ſont de touit crimpexempats,
+        <lb />Que voſtre Iugement confone
+        <lb />i222.
+        <lb />Les calomniqgus des Pticesinnpcens..
+        <lb />XXV
+        <lb />Et vous qui depuis tane de,-luſttes
+        <lb />Fuſtes mes braues defenſeurse
+        <lb />
+        <lb />1
+        <lb />
+        <lb />Nobles &amp; dignes ſucceſſeurs;
+        <lb />1luhu!
+        <lb />De tra eieoppreu d&amp;e aasoeie pulurirn
+        <lb />Vous qui vous viſtestant de fos u ae
+        <lb /> Hardis teſmoins de leurs explais,.
+        <lb />Verrez-vausſns crahi le ſang qui vous anim
+        <lb />Et l’amour que vous me pojtez,n
+        <lb /> e13
+        <lb rend="¬" break="no" />Qu’vn pouuoir tyranniue-opprime
+        <lb />La Verri, m gade, &amp; qu yous imite¬.:
+        <lb />XXVII.
+        <lb />Ames trop long temps obſtjnées,
+        <lb />Sentez enfin voſtre douleur,
+        <lb />Peuples voyez voſtre malheur
+        <lb />Dans c luy d’vn Heros qui fait vos deſtiné́es,
+        <lb />Depuis que le Ciel mit en luy
+        <lb />Tout ma force &amp; mon appuy,
+        <lb />Voſte ſort &amp; le ſien. cnntraire ou fauorable.
+        <lb />Sont liez d’vn meſme lien,
+        <lb />Et le meſme couu qui l’accable
+        <lb />Reſpand en meſme temps voſtre ſang &amp; le ſien. <pb n="17" />
+        <lb />e 1
+        <lb />i1
+        <lb /> Ouurez les youx os oſiepalire io l,?,
+        <lb />il l
+        <lb />Le precipce eſt ſous vos pas
+        <lb />Et pu ſis a donor le ure doass l ſn e eline l l
+        <lb />Les gdiases lonte eohſe&amp;ape’lſſEs poſriieſspgle
+        <lb />mi
+        <lb />H ſi
+        <lb />Ne ſoyez donc plus aueuglê, no n
+        <lb />n3
+        <lb />Et me ſoyez plus eoaſee i lenp
+        <lb /> o!
+        <lb />Par les prbesteds f’&amp; vhe inpradtte aiuiee jl
+        <lb />;3
+        <lb />Conſultez bien vds ſ̈ereſts, i
+        <lb />Votre deuoir, voſtre iſfiée e
+        <lb />Et regardez vhi peûtoſt hal’ depluis presi
+        <lb />X.
+        <lb />Ne perdez pas la ouiſelań̈e ilii
+        <lb />1.
+        <lb />De ce que leur bras vous’vdlu, l
+        <lb />Rendez leur ſalut pour ſutlio oul au ?
+        <lb />l
+        <lb />Et pour vous delier fnteieut deliorante3
+        <lb />Des meſmes coups ſu éue laiice il
+        <lb />Vos propres chefs ſonflencez; le
+        <lb />S’ous eſes eooſee ueeaualt miſne oiaeei,
+        <lb />2’.
+        <lb />Fuiez tant de maux preparez,
+        <lb />
+        <lb />Et de peur d’vn comunl nàuftage ll
+        <lb />Sauue vou ar le pole queoins ſlaut ouuſi&amp;ezpee </p>
+    </body>
+  </text>
 </TEI>
