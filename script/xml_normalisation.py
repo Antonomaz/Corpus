@@ -10,6 +10,9 @@ from json_stats_normalised import test_stats #unknown_pub_date, unknown_pub_name
 #test_dir:str = "../tests/Mazarinades_tests/*/*.xml"
 test_dir:str = "../Mazarinades/*/*.xml"
 back_up_dir:str = "../Mazarinades_bak/*/*.xml"
+maz_dir:str = "../Mazarinades/Bibliotheque_Mazarine/*.xml"
+#maz_dir:str = "../tests/Mazarinades_tests/Bibliotheque_Mazarine/*.xml"
+
 test_file1:str = "../tests/Mazarinades_tests/1701-1800/Moreau1751_GBOOKS.xml"
 test_file2:str = "../tests/Mazarinades_tests/1701-1800/Moreau1704_GALL.xml"
 test_file3:str = "../tests/Mazarinades_tests/2401-2500/Moreau2497_GBOOKS.xml"
@@ -129,7 +132,7 @@ def name_genre(form:dict, value_to_change:str, replacement:str):
     return form
 
 
-def rewrite_xml(input_filepath:str, output_filepath:str, xml_string:str, xml_declaration="toto"):
+def rewrite_xml(input_filepath:str, output_filepath:str, xml_string:str, xml_declaration=""):
     input_file = open(file=input_filepath, mode="r", encoding="utf-8")
     output_file = open(file=output_filepath, mode="w")
     if xml_declaration == "":
@@ -140,8 +143,9 @@ def rewrite_xml(input_filepath:str, output_filepath:str, xml_string:str, xml_dec
             xml_declaration += line
     #print(f"XML DEC:{xml_declaration}")
     #print(f"body: {xml_string}")
-    output_file.write(xml_declaration+xml_string)
-    return 
+    new_xml_str:str = xml_declaration+xml_string
+    output_file.write(new_xml_str)
+    return new_xml_str
 
 def normalise_names(input_filepath:str, output_filepath:str, value_to_change:str="", replacement:str="", xml_declaration:str = ""):
     #parse og xml
@@ -276,19 +280,20 @@ def normalise_xml_dir(dir_path:str, value_to_change:str = "", replacement:str=""
         #new_xml = normalise_names(input_filepath=filepath, output_filepath=filepath, value_to_change=value_to_change, replacement=replacement)
     return
 
-#normalise_xml(input_filepath=test_file1)
-#normalise_xml(input_filepath=test_file2)
-#normalise_xml(input_filepath=test_file3)
-#normalise_xml(input_filepath=test_file4)
-#normalise_xml(input_filepath=test_file5, output_filepath="temp.xml")
-#normalise_xml(input_filepath=test_file6, output_filepath="temp_xml/temp.xml")
-#normalise_xml(input_filepath=test_file7, output_filepath="temp_xml/temp.xml")
-#tei_to_json_file(filepath="temp_xml/temp.xml", main_output_dir="./temp")
-normalise_xml_dir(dir_path=test_dir, value_to_change="pièce de théâtre", replacement="texte de forme théâtrale", change_name=True)
-#normalise_names(input_filepath=test_file8, output_filepath="temp_xml/temp.xml", value_to_change="pièce de théâtre", replacement="texte de forme théâtrale")
-#tei_to_json_file(filepath="temp_xml/temp.xml", main_output_dir="./temp")
-#test_stats()
 
-#tree = ET.parse(test_file8)
-#root = tree.getroot()
-#print(root[1][0].tag)
+def change_attribute_name(input_filepath:str, output_filepath:str, tag:str, old_attribute:str, new_attribute:str, namespace:str=""):
+    ET.register_namespace(prefix="", uri=namespace)
+    xml_tree = ET.parse(source=input_filepath)
+    tags_to_change:list = xml_tree.findall(f".//ns:{tag}[@{old_attribute}]", namespaces={"ns":namespace})
+    #print(tags_to_change)
+    for tag_c in tags_to_change:
+        tag_c.set(new_attribute, tag_c.get(old_attribute))
+        tag_c.attrib.pop(old_attribute)
+    ET.indent(tree=xml_tree)
+    new_xml_string:str = ET.tostring(element=xml_tree.getroot(), encoding="utf-8", method="xml").decode()
+    return rewrite_xml(input_filepath=input_filepath, output_filepath=output_filepath, xml_string=new_xml_string)
+
+def change_attribute_name_dir(dir_path:str, tag:str, old_attribute:str, new_attribute:str, namespace:str=""):
+    for filepath in glob.glob(pathname=dir_path):
+        change_attribute_name(input_filepath=filepath, output_filepath=filepath, tag=tag, old_attribute=old_attribute,new_attribute=new_attribute, namespace=namespace)
+    return
