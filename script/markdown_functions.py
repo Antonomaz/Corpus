@@ -41,7 +41,7 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     md < "Il note également que ces chiffres varient au cours de la Fronde : si 64% des mazarinades de l'échantillon étudié présentent une adresse typographique complète en 1649, ils ne sont plus que 38% en 1652."
     #print(stat_dict["all_info_publisher_stats"].at[2, "percentage"])
     #print(stat_dict)
-    md >> markdown_filepath
+    md > markdown_filepath
     return stat_dict
 
 update_markdown_stats(data_dir=data_dir, markdown_filepath="../tests/Markdown/test.md")
