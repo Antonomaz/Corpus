@@ -22,7 +22,7 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     md < "Les statistiques ici proposées ne concernent pas la totalité du corpus, comme c'est le cas dans la partie précédente, mais uniquement les mazarinades qui composent le corpus du projet Antonomaz, c'est-à-dire celles trouvées dans les bibliothèques numériques accessibles, soit un peu plus de 3 000 documents."
     md < "Taux d'anonymat"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
-    md < f"Sur Antonomaz, environ {ceil(stat_dict['author_stats'].at[1, 'percentage'])}  % d’écrits ({stat_dict['author_stats'].at[1, 'count']} imprimés) sont sans nom d'auteurs, {ceil(stat_dict['author_stats'].at[2, 'percentage'])}  % affichent un pseudonyme au sens large : initiales et pseudonymes ({stat_dict['author_stats'].at[1, 'count']}  imprimés)."
+    md < f"Sur Antonomaz, environ {ceil(stat_dict['author_stats'].at[1, 'percentage'])}  % d’écrits ({stat_dict['author_stats'].at[1, 'count']} imprimés) sont sans nom d'auteurs, {int(stat_dict['author_stats'].at[2, 'percentage'])}  % affichent un pseudonyme au sens large : initiales et pseudonymes ({stat_dict['author_stats'].at[2, 'count']}  imprimés)."
     md < "Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur le document), l'imprimé n'est pas compté comme anonyme."
     md < stat_dict["author_stats"].to_html(header=True)
     md < "Statistiques proposées par H. Carrier (échantillon de 1000 écrits, 1/5 du corpus global)"|md.bold
