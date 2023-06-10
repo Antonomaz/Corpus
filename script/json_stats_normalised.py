@@ -314,15 +314,48 @@ def imprimatur_stats(dir_path:str, save_to_csv:bool=True):
     file_count: int = len(file_list)
     imprimatur_count: int = 0
     for filepath in file_list:
-        print(filepath)
+        #print(filepath)
         data_dict: dict = json.load(open(filepath))
-        print(data_dict.keys())
+        #print(data_dict.keys())
         if (impr:= data_dict["imprimatur"]) is not None:
             imprimatur_count += 1
     stat_dict:dict = {"file_count": file_count, "imprimatur-ed_file_count": imprimatur_count, "imprimatur-ed_file_percentage": imprimatur_count/file_count * 100}
     if save_to_csv:
         write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="imprimatur_stat", fieldnames=[k for k in stat_dict.keys()], iterable_values=False)    
     return stat_dict
+
+def imprimatur_per_year_stats(dir_path:str, save_to_csv:bool):
+    file_list: list = glob.glob(dir_path)
+    file_count: int = len(file_list)
+    no_imprimatur_count:int = 0
+    result_dict: dict = {unknown_pub_date: 0}
+    for filepath in file_list:
+        data_dict: dict = json.load(open(filepath))
+        pub_date = data_dict["entête"]["pubDate"]
+        #handling lists
+        if data_dict["imprimatur"] is None:
+            no_imprimatur_count+=1
+        else:
+            if isinstance(pub_date, list):
+                for p_d in pub_date:
+                    temp_dict:dict = dict.fromkeys(result_dict, 0)
+                    temp_dict, updated_key = pub_date_helper(result_dict=temp_dict, pub_date_dict=p_d, filepath=filepath)
+                    if updated_key != unknown_pub_date:
+                        if updated_key in result_dict:
+                            result_dict[updated_key] +=1
+                        else:
+                                result_dict[updated_key] = 1
+                        break
+                else:
+                    result_dict[unknown_pub_date] +=1
+            else:
+                result_dict, _ = pub_date_helper(result_dict=result_dict, pub_date_dict=pub_date,filepath=filepath)
+    print(sum(result_dict.values())+no_imprimatur_count)
+    print(sum(result_dict.values()))
+    stat_dict:dict = {key: (val, val/file_count * 100) for key, val in result_dict.items()}
+    if save_to_csv:
+        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="imprimatur_per_year_stats", fieldnames=["year", "count", "percentage"])
+    return result_dict
 
 def all_info_publisher_stats(dir_path:str, save_to_csv:bool = True):
     file_list: list = glob.glob(dir_path)
@@ -395,7 +428,9 @@ def test_stats():
     print(pub_place_dict)
     pub_date_dict:dict = pub_date_stats(dir_path=test_dir, save_to_csv=False) #ok_count
     print(pub_date_dict)
-    #imprimatur_dict: dict = imprimatur_stats(dir_path=test_dir)
+    imprimatur_dict: dict = imprimatur_stats(dir_path=test_dir, save_to_csv=False)
+    print(imprimatur_dict)
     #write_to_csv(data_dict=imprimatur_dict, csv_dir=csv_dir, filename="imprimatur_stats")
-    print(all_info_publisher_stats(dir_path=test_dir, save_to_csv=True))
+    print(all_info_publisher_stats(dir_path=test_dir, save_to_csv=False))
+    print(imprimatur_per_year_stats(dir_path=test_dir, save_to_csv=True))
     return
