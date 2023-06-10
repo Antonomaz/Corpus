@@ -22,7 +22,7 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     md < "Les statistiques ici proposées ne concernent pas la totalité du corpus, comme c'est le cas dans la partie précédente, mais uniquement les mazarinades qui composent le corpus du projet Antonomaz, c'est-à-dire celles trouvées dans les bibliothèques numériques accessibles, soit un peu plus de 3 000 documents."
     md < "Taux d'anonymat"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
-    md < "Sur Antonomaz, environ 50 % d’écrits (1530 imprimés) sont sans nom d'auteurs, 7 % affichent un pseudonyme au sens large : initiales et pseudonymes (218 imprimés)."
+    md < f"Sur Antonomaz, environ {ceil(stat_dict['author_stats'].at[1, 'percentage'])}  % d’écrits ({stat_dict['author_stats'].at[1, 'count']} imprimés) sont sans nom d'auteurs, {ceil(stat_dict['author_stats'].at[2, 'percentage'])}  % affichent un pseudonyme au sens large : initiales et pseudonymes ({stat_dict['author_stats'].at[1, 'count']}  imprimés)."
     md < "Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur le document), l'imprimé n'est pas compté comme anonyme."
     md < stat_dict["author_stats"].to_html(header=True)
     md < "Statistiques proposées par H. Carrier (échantillon de 1000 écrits, 1/5 du corpus global)"|md.bold
@@ -33,7 +33,8 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     md < "Son chiffre rend donc compte de l'anonymat affiché (il compte comme anonymes même les pièces dont l'auteur nous est connu par le contexte, et pouvait l'être, parfois évidemment, par les contemporains). Le chiffre ne reflète donc pas le savoir actuel sur les auteurs de mazarinades, mais est un très bon indicateur de l'effet d'anonymat massif produit par ces imprimés."
     md < "Taux d'anonymat typographique (noms d'imprimeur-libraire indiqués ou non)"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
-    md < f"{ceil(stat_dict['all_info_publisher_stats'].at[2, 'percentage']) } % de mazarinades inscrivent une adresse typographique complète (environ la même proportion que celle indiquée par Carrier _infra_). Pour les {ceil(stat_dict['all_info_publisher_stats'].at[0, 'percentage']) } % imprimés restants, on peut penser que c'est par prudence que ni le nom ni l'adresse des imprimeurs-libraires ne sont affichés ; cela représentait un risque commercial puisque l'acheteur ne pouvait pas identifier le lieu où se procurer le libelle."
+    md < f"{ceil(stat_dict['all_info_publisher_stats'].at[2, 'percentage']) } % de mazarinades inscrivent une adresse typographique complète (environ la même proportion que celle indiquée par Carrier _infra_). Pour les {int(stat_dict['all_info_publisher_stats'].at[0, 'percentage']) } % imprimés restants, on peut penser que c'est par prudence que ni le nom ni l'adresse des imprimeurs-libraires ne sont affichés ; cela représentait un risque commercial puisque l'acheteur ne pouvait pas identifier le lieu où se procurer le libelle."
+    md < stat_dict["all_info_publisher_stats"].to_html(header=True)
     md < "Statistiques proposées par H. Carrier (échantillon de 1000 écrits, 1/5 du corpus global)"|md.bold
     md < "Sur son échantillon de 1000 mazarinades calibrées en fonction des genres et des années, H. Carrier calcule que 16 % des mazarinades ne donnent aucune information éditoriale, 31 % affichent le lieu et la date de publication. Enfin, il note que  53 % de ces imprimés ont une adresse typographique complète (lieu, date, nom d'imprimeur), sensiblement la même proportion que pour Antonomaz."
     md < "Globlament donc on peut affirmer qu'une mazarinade sur deux affiche son origine typographique."|md.bold
@@ -43,4 +44,4 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     md >> markdown_filepath
     return stat_dict
 
-update_markdown_stats(data_dir=data_dir, markdown_filepath="test.md")
+update_markdown_stats(data_dir=data_dir, markdown_filepath="../tests/Markdown/test.md")
