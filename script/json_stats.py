@@ -217,15 +217,18 @@ def publisher_stats(dir_path: str, save_to_csv:bool = True) -> dict:
 
 def pub_place_helper(result_dict: dict, pub_place_dict: dict):
     pub_place: str = pub_place_dict["#text"]
+    updated_key:str = ""
     if pub_place == unknown_pub_place:
-        print(pub_place_dict)
+        #print(pub_place_dict)
         result_dict[unknown_pub_place] +=1
+        updated_key = unknown_pub_place
     else:
         if pub_place in result_dict:
             result_dict[pub_place] += 1
         else:
             result_dict[pub_place] = 1
-    return result_dict
+        updated_key = pub_place
+    return result_dict, updated_key
 
 
 def pub_place_stats(dir_path: str, save_to_csv:bool = True, filepath:str=""):
@@ -254,11 +257,11 @@ def pub_place_stats(dir_path: str, save_to_csv:bool = True, filepath:str=""):
             # handling lists
             if isinstance(pub_place, list):
                 for p in pub_place:
-                    result_dict = pub_place_helper(result_dict=result_dict, pub_place_dict=p)
+                    result_dict, _ = pub_place_helper(result_dict=result_dict, pub_place_dict=p)
                     if pub_place.index(p) != 0:
                         dup_count +=1
             else:
-               result_dict = pub_place_helper(result_dict=result_dict, pub_place_dict=pub_place)
+               result_dict, _ = pub_place_helper(result_dict=result_dict, pub_place_dict=pub_place)
         if sum(result_dict.values()) == old_sum:
             print(pub_place)
      # {<page count>: (<number of docs for page count>, <percent compared to total file count>)}
