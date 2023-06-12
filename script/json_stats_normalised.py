@@ -4,9 +4,10 @@ import csv
 import dateutil.parser as duparser
 import flatdict #external dependancy but hopefully just for the temporary fixes anyway until the xml files are normalised/no need for special handling for anything
 test_file: str = "../Mazarinades_jsons/1-100/Moreau100_GALL.json"
-test_dir: str = "../tests/Mazarinades_jsons/*/*.json"
-#test_dir: str = "../Mazarinades_jsons/*/*.json"
+#test_dir: str = "../tests/Mazarinades_jsons/*/*.json"
+test_dir: str = "../Mazarinades_jsons/*/*.json"
 csv_dir:str="../output/stats"
+# old names
 #unknown_pub_place: str = "Sans Lieu"
 #unknown_pub_name: str = "Sans Nom"
 #unknown_pub_date:str = "Sans Date"
@@ -141,40 +142,31 @@ def publisher_helper(result_dict: dict, publisher_dict: dict, filepath = "", in_
     persName_keys:list = ["surname", "forename", "orgName"]
     keys: list = ["named_publisher", "pseudonym", "unnamed_publisher"]
     updated_key:str = ""
-    # inconsistent formatting handling
-    # note: persName/orgName
-    if "persName" not in publisher_dict and ("surname" or "orgName" in publisher_dict):
-        print("a")
-    else:
-        #print(publisher_dict)
-        # regular case
-        flat_publisher_dict = flatdict.FlatDict(value=publisher_dict)
-        #print(flat_publisher_dict)
-        #pseudonyms
-        if "pseudonyme" in flat_publisher_dict.values():
+    flat_publisher_dict = flatdict.FlatDict(value=publisher_dict)
+    #print(flat_publisher_dict)
+    #pseudonyms
+    if "pseudonyme" in flat_publisher_dict.values():
             result_dict["pseudonym"] +=1
             updated_key = keys[1]
-        else:
-            persName = publisher_dict["persName"]
-            if isinstance(persName, dict):
-               if "surname" or "orgName" in persName:
+    else:
+        persName = publisher_dict["persName"]
+        if isinstance(persName, dict):
+            if "surname" or "orgName" in persName:
                 result_dict["named_publisher"] += 1
                 updated_key = keys[0]
-                # not normal for this one
-               elif unknown_pub_name in persName.values():
-                   result_dict["unnamed_publisher"] +=1
-                   print(publisher_dict, filepath)
-            elif isinstance(persName, str):
-                #print(publisher_dict, filepath, file=open("temp.txt", "a"))
-                if persName == unknown_pub_name:
-                    result_dict["unnamed_publisher"] += 1
-                    updated_key = keys[2]
-                    #print(publisher_dict)
-                else:
-                    result_dict["named_publisher"] +=1
-                    updated_key = keys[0]
-                #else:
-                #    print(publisher_dict, filepath)
+            # not normal for this one
+            elif unknown_pub_name in persName.values():
+                result_dict["unnamed_publisher"] +=1
+                print(publisher_dict, filepath)
+        elif isinstance(persName, str):
+            #print(publisher_dict, filepath, file=open("temp.txt", "a"))
+            if persName == unknown_pub_name:
+                result_dict["unnamed_publisher"] += 1
+                updated_key = keys[2]
+                #print(publisher_dict)
+            else:
+                result_dict["named_publisher"] +=1
+                updated_key = keys[0]
     return result_dict, updated_key
 
 # assumption: no case where one publisher is clearly known and the other has a pseudonym or is unnamed
@@ -217,17 +209,20 @@ def publisher_stats(dir_path: str, save_to_csv:bool = True) -> dict:
     return stat_dict
 
 
-def pub_place_helper(result_dict: dict, pub_place_dict: dict):
+def pub_place_helper(result_dict: dict, pub_place_dict: dict)-> tuple[dict, str]:
     pub_place: str = pub_place_dict["#text"]
+    updated_key:str = ""
     if pub_place == unknown_pub_place:
         #print(pub_place_dict)
         result_dict[unknown_pub_place] +=1
+        updated_key = unknown_pub_place
     else:
         if pub_place in result_dict:
             result_dict[pub_place] += 1
         else:
             result_dict[pub_place] = 1
-    return result_dict
+        updated_key = pub_place
+    return result_dict, updated_key
 
 
 def pub_place_stats(dir_path: str, save_to_csv:bool = True, filepath:str=""):
@@ -238,29 +233,20 @@ def pub_place_stats(dir_path: str, save_to_csv:bool = True, filepath:str=""):
     dup_count:int = 0 
     for filepath in file_list:
         old_sum:int = sum(result_dict.values())
-        # print(filepath)
         data_dict: dict = json.load(open(filepath))
-        #print(data_dict["entête"]["pubPlace"])
         pub_place = data_dict["entête"]["pubPlace"]
         #handling inconsistent formatting
         if isinstance(pub_place, str):
-            print(pub_place, filepath)
-            #if pub_place == unknown_pub_place:
-            #    result_dict[unknown_pub_place] +=1
-            #else:
-            #    if pub_place in result_dict:
-            #     result_dict[pub_place] += 1
-            #    else:
-            #        result_dict[pub_place] = 1
+            print(f"ERROR!!!!!!!!! {pub_place}, {filepath}")            
         else:            
             # handling lists
             if isinstance(pub_place, list):
                 for p in pub_place:
-                    result_dict = pub_place_helper(result_dict=result_dict, pub_place_dict=p)
+                    result_dict, _ = pub_place_helper(result_dict=result_dict, pub_place_dict=p)
                     if pub_place.index(p) != 0:
                         dup_count +=1
             else:
-               result_dict = pub_place_helper(result_dict=result_dict, pub_place_dict=pub_place)
+               result_dict, _ = pub_place_helper(result_dict=result_dict, pub_place_dict=pub_place)
         if sum(result_dict.values()) == old_sum:
             print(pub_place)
      # {<page count>: (<number of docs for page count>, <percent compared to total file count>)}
@@ -275,35 +261,14 @@ def pub_date_helper(result_dict:dict, pub_date_dict:dict, filepath:str= ""):
     updated_key: str|int = ""
     when_key:str = "@when"
     if when_key not in pub_date_dict:
-        #print(pub_date_dict, filepath, file=open(no_when_file, "a"))
         if unknown_pub_date in pub_date_dict.values():
-            #print(pub_date_dict, filepath)
-            #print(pub_date_dict, filepath, file=open(file=no_date_dict_file, mode="a"))
             result_dict[unknown_pub_date]+=1
             updated_key = unknown_pub_date
         else:
-            #mooooore edge cases and inconsistent formatting
-            print(pub_date_dict, filepath)
-            #if "@notAfter" in pub_date_dict:
-            #    pub_date = duparser.parse(timestr=pub_date_dict["@notAfter"]).year
-            #    updated_key = pub_date
-            #    if pub_date in result_dict:
-            #        result_dict[pub_date] += 1
-            #    else:
-            #        result_dict[pub_date] = 1
-            #elif "@notBefore" in pub_date_dict:
-            #    pub_date = duparser.parse(timestr=pub_date_dict["@notBefore"]).year
-            #    updated_key = pub_date
-            #    if pub_date in result_dict:
-            #        result_dict[pub_date] += 1
-            #    else:
-            #        result_dict[pub_date] = 1
-            #else:
-            #    print(pub_date_dict)
+            print(f"ERROR!!!!!!!!! {pub_date_dict}, {filepath}")            
     else: 
         if unknown_pub_date in pub_date_dict.values():
             result_dict[unknown_pub_date]+=1
-            #print(pub_date_dict, filepath)
         else:               
             #using the year by default
             pub_date = duparser.parse(timestr=pub_date_dict["@when"]).year
@@ -321,26 +286,10 @@ def pub_date_stats(dir_path: str, save_to_csv:bool=True):
     for filepath in file_list:
         data_dict: dict = json.load(open(filepath))
         pub_date = data_dict["entête"]["pubDate"]
-        #print(pub_date)
-        #handling inconsistent formatting
-        if isinstance(pub_date, str):
-            print(pub_date, filepath)
-        #    if pub_date == unknown_pub_date:
-        #        result_dict[pub_date] += 1
-        #    else:
-                #using the year by default
-        #        pub_date = duparser.parse(timestr=pub_date).year
-        #        if pub_date in result_dict:
-        #         result_dict[pub_date] += 1
-        #        else:
-        #            result_dict[pub_date] = 1
-        # regular case
-        else:
-            # handling lists
-            if isinstance(pub_date, list):
-                #print(result_dict)
-                temp_dict:dict = dict.fromkeys(result_dict, 0)
-                for p_d in pub_date:
+        # handling lists
+        if isinstance(pub_date, list):
+            temp_dict:dict = dict.fromkeys(result_dict, 0)
+            for p_d in pub_date:
                     temp_dict, updated_key = pub_date_helper(result_dict=temp_dict, pub_date_dict=p_d, filepath=filepath)
                     if updated_key != unknown_pub_date:
                         if updated_key in result_dict:
@@ -348,45 +297,140 @@ def pub_date_stats(dir_path: str, save_to_csv:bool=True):
                         else:
                             result_dict[updated_key] = 1
                         break
-                else:
-                    result_dict[unknown_pub_date] +=1  
-                    print(pub_date)
-             
             else:
-                result_dict, _ = pub_date_helper(result_dict=result_dict, pub_date_dict=pub_date,filepath=filepath)
+                result_dict[unknown_pub_date] +=1  
+                print(pub_date)  
+        else:
+            result_dict, _ = pub_date_helper(result_dict=result_dict, pub_date_dict=pub_date,filepath=filepath)
     print(sum(result_dict.values()))
     # {<page count>: (<number of docs for page count>, <percent compared to total file count>)}
     stat_dict:dict = {key: (val, val/file_count * 100) for key, val in result_dict.items()}
     if save_to_csv:
-        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="pub_date_stat", fieldnames=["year", "count", "percentage"])
+        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="pub_date_stats", fieldnames=["year", "count", "percentage"])
     return stat_dict   
 
 def imprimatur_stats(dir_path:str, save_to_csv:bool=True):
     file_list: list = glob.glob(dir_path)
     file_count: int = len(file_list)
     imprimatur_count: int = 0
-    #imprimatur_list:list = []
     for filepath in file_list:
-        print(filepath)
+        #print(filepath)
         data_dict: dict = json.load(open(filepath))
-        print(data_dict.keys())
+        #print(data_dict.keys())
         if (impr:= data_dict["imprimatur"]) is not None:
             imprimatur_count += 1
-            #if impr not in imprimatur_list:
-                #imprimatur_list.append(impr)
-    #print(imprimatur_list)
     stat_dict:dict = {"file_count": file_count, "imprimatur-ed_file_count": imprimatur_count, "imprimatur-ed_file_percentage": imprimatur_count/file_count * 100}
     if save_to_csv:
         write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="imprimatur_stat", fieldnames=[k for k in stat_dict.keys()], iterable_values=False)    
     return stat_dict
 
+def imprimatur_per_year_stats(dir_path:str, save_to_csv:bool):
+    file_list: list = glob.glob(dir_path)
+    file_count: int = len(file_list)
+    no_imprimatur_count:int = 0
+    result_dict: dict = {unknown_pub_date: 0}
+    for filepath in file_list:
+        data_dict: dict = json.load(open(filepath))
+        pub_date = data_dict["entête"]["pubDate"]
+        #handling lists
+        if data_dict["imprimatur"] is None:
+            no_imprimatur_count+=1
+        else:
+            if isinstance(pub_date, list):
+                for p_d in pub_date:
+                    temp_dict:dict = dict.fromkeys(result_dict, 0)
+                    temp_dict, updated_key = pub_date_helper(result_dict=temp_dict, pub_date_dict=p_d, filepath=filepath)
+                    if updated_key != unknown_pub_date:
+                        if updated_key in result_dict:
+                            result_dict[updated_key] +=1
+                        else:
+                                result_dict[updated_key] = 1
+                        break
+                else:
+                    result_dict[unknown_pub_date] +=1
+            else:
+                result_dict, _ = pub_date_helper(result_dict=result_dict, pub_date_dict=pub_date,filepath=filepath)
+    print(sum(result_dict.values())+no_imprimatur_count)
+    print(sum(result_dict.values()))
+    stat_dict:dict = {key: (val, val/file_count * 100) for key, val in result_dict.items()}
+    if save_to_csv:
+        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="imprimatur_per_year_stats", fieldnames=["year", "count", "percentage"])
+    return result_dict
+
+def all_info_publisher_stats(dir_path:str, save_to_csv:bool = True):
+    file_list: list = glob.glob(dir_path)
+    file_count: int = len(file_list)
+    result_dict:dict = {"unnamed_publisher": 0, "pseudonym": 0, "named_publisher+known_pub_date+known_pub_place":0}
+    for filepath in file_list:
+        data_dict: dict = json.load(open(filepath))
+        pub_date = data_dict["entête"]["pubDate"]
+        pub_date_is_known:bool = False
+        pub_place = data_dict["entête"]["pubPlace"]
+        pub_place_is_known:bool = False
+        publisher = data_dict["entête"]["publisher"]
+        publisher_is_known:bool = False
+        has_pseudonym:bool = False
+        #pub_date
+        if isinstance(pub_date, list):
+            for p_d in pub_date:
+                _, updated_key = pub_date_helper(result_dict={unknown_pub_date:0}, pub_date_dict=p_d)
+                if updated_key != unknown_pub_date:
+                    pub_date_is_known = True
+                    break
+        else:
+            _, updated_key = pub_date_helper(result_dict={unknown_pub_date:0}, pub_date_dict=pub_date)
+            if updated_key != unknown_pub_date:
+                pub_date_is_known = True
+        # pub_place
+        if isinstance(pub_place, list):
+            for p_p in pub_place:
+                _, updated_key = pub_place_helper(result_dict={unknown_pub_place:0}, pub_place_dict=p_p)
+                if updated_key != unknown_pub_place:
+                    pub_place_is_known = True
+                    break
+        else:
+            _, updated_key = pub_place_helper(result_dict={unknown_pub_place:0}, pub_place_dict=pub_place)
+            if updated_key != unknown_pub_place:
+                pub_place_is_known = True
+        # publisher
+        if isinstance(publisher, list):
+            for p in publisher:
+                _, updated_key = publisher_helper(result_dict={"named_publisher":0,"pseudonym":0, "unnamed_publisher":0}, publisher_dict=p)
+                if updated_key == "pseudonym":
+                    result_dict["pseudonym"]+=1
+                    has_pseudonym = True
+                elif updated_key != "unnamed_publisher":
+                    publisher_is_known = True
+                    break
+        else:
+            _, updated_key = publisher_helper(result_dict={"named_publisher":0,"pseudonym":0, "unnamed_publisher":0}, publisher_dict=publisher)
+            if updated_key == "pseudonym":
+                result_dict["pseudonym"]+=1
+                has_pseudonym = True
+            elif updated_key != "unnamed_publisher":
+                publisher_is_known = True
+        if all([pub_date_is_known, pub_place_is_known, publisher_is_known]):
+            result_dict["named_publisher+known_pub_date+known_pub_place"] +=1
+        elif not has_pseudonym:
+            result_dict["unnamed_publisher"] +=1
+    print(sum(result_dict.values()))
+    stat_dict:dict = {key: (val, val/file_count*100) for key, val in result_dict.items()}
+    if save_to_csv:
+        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="all_info_publisher_stats", fieldnames=["info status","count","percentage"], iterable_values=True)
+    return stat_dict
 def test_stats():
     #print(corrected_file_stats(dir_path=test_dir, save_to_csv=False)) #ok count
     #print(nb_page_stats(dir_path=test_dir, save_to_csv=False)) #ok count
     #print(author_stats(dir_path=test_dir, save_to_csv=False )) #ok count
-    print(publisher_stats(dir_path=test_dir, save_to_csv=False)) #ok count
-    print(pub_place_stats(dir_path=test_dir, save_to_csv=False)) #ok count
-    print(pub_date_stats(dir_path=test_dir, save_to_csv=False)) #ok_count
-    #imprimatur_dict: dict = imprimatur_stats(dir_path=test_dir)
+    publisher_dict:dict = publisher_stats(dir_path=test_dir, save_to_csv=False) #ok count
+    print(publisher_dict)
+    pub_place_dict:dict = pub_place_stats(dir_path=test_dir, save_to_csv=False)#ok count
+    print(pub_place_dict)
+    pub_date_dict:dict = pub_date_stats(dir_path=test_dir, save_to_csv=False) #ok_count
+    print(pub_date_dict)
+    imprimatur_dict: dict = imprimatur_stats(dir_path=test_dir, save_to_csv=False)
+    print(imprimatur_dict)
     #write_to_csv(data_dict=imprimatur_dict, csv_dir=csv_dir, filename="imprimatur_stats")
+    print(all_info_publisher_stats(dir_path=test_dir, save_to_csv=False))
+    print(imprimatur_per_year_stats(dir_path=test_dir, save_to_csv=True))
     return

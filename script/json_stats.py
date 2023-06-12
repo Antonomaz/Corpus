@@ -217,15 +217,18 @@ def publisher_stats(dir_path: str, save_to_csv:bool = True) -> dict:
 
 def pub_place_helper(result_dict: dict, pub_place_dict: dict):
     pub_place: str = pub_place_dict["#text"]
+    updated_key:str = ""
     if pub_place == unknown_pub_place:
-        print(pub_place_dict)
+        #print(pub_place_dict)
         result_dict[unknown_pub_place] +=1
+        updated_key = unknown_pub_place
     else:
         if pub_place in result_dict:
             result_dict[pub_place] += 1
         else:
             result_dict[pub_place] = 1
-    return result_dict
+        updated_key = pub_place
+    return result_dict, updated_key
 
 
 def pub_place_stats(dir_path: str, save_to_csv:bool = True, filepath:str=""):
@@ -254,11 +257,11 @@ def pub_place_stats(dir_path: str, save_to_csv:bool = True, filepath:str=""):
             # handling lists
             if isinstance(pub_place, list):
                 for p in pub_place:
-                    result_dict = pub_place_helper(result_dict=result_dict, pub_place_dict=p)
+                    result_dict, _ = pub_place_helper(result_dict=result_dict, pub_place_dict=p)
                     if pub_place.index(p) != 0:
                         dup_count +=1
             else:
-               result_dict = pub_place_helper(result_dict=result_dict, pub_place_dict=pub_place)
+               result_dict, _ = pub_place_helper(result_dict=result_dict, pub_place_dict=pub_place)
         if sum(result_dict.values()) == old_sum:
             print(pub_place)
      # {<page count>: (<number of docs for page count>, <percent compared to total file count>)}
@@ -378,6 +381,68 @@ def imprimatur_stats(dir_path:str, save_to_csv:bool=True):
         write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="imprimatur_stat", fieldnames=[k for k in stat_dict.keys()], iterable_values=False)    
     return stat_dict
 
+def all_info_publisher_stats(dir_path:str, save_to_csv:bool = True):
+    file_list: list = glob.glob(dir_path)
+    file_count: int = len(file_list)
+    result_dict:dict = {"unnamed_publisher": 0, "pseudonym": 0, "named_publisher+known_pub_date+known_pub_place":0}
+    for filepath in file_list:
+        data_dict: dict = json.load(open(filepath))
+        pub_date = data_dict["entête"]["pubDate"]
+        pub_date_is_known:bool = False
+        pub_place = data_dict["entête"]["pubPlace"]
+        pub_place_is_known:bool = False
+        publisher = data_dict["entête"]["publisher"]
+        publisher_is_known:bool = False
+        has_pseudonym:bool = False
+        #pub_date
+        if isinstance(pub_date, list):
+            for p_d in pub_date:
+                _, updated_key = pub_date_helper(result_dict={unknown_pub_date:0}, pub_date_dict=p_d)
+                if updated_key != unknown_pub_date:
+                    pub_date_is_known = True
+                    break
+        else:
+            _, updated_key = pub_date_helper(result_dict={unknown_pub_date:0}, pub_date_dict=pub_date)
+            if updated_key != unknown_pub_date:
+                pub_date_is_known = True
+        # pub_place
+        if isinstance(pub_place, list):
+            for p_p in pub_place:
+                _, updated_key = pub_place_helper(result_dict={unknown_pub_place:0}, pub_place_dict=p_p)
+                if updated_key != unknown_pub_place:
+                    pub_place_is_known = True
+                    break
+        else:
+            _, updated_key = pub_place_helper(result_dict={unknown_pub_place:0}, pub_place_dict=pub_place)
+            if updated_key != unknown_pub_place:
+                pub_place_is_known = True
+        # publisher
+        if isinstance(publisher, list):
+            for p in publisher:
+                _, updated_key = publisher_helper(result_dict={"named_publisher":0,"pseudonym":0, "unnamed_publisher":0}, publisher_dict=p)
+                if updated_key == "pseudonym":
+                    result_dict["pseudonym"]+=1
+                    has_pseudonym = True
+                elif updated_key != "unnamed_publisher":
+                    publisher_is_known = True
+                    break
+        else:
+            _, updated_key = publisher_helper(result_dict={"named_publisher":0,"pseudonym":0, "unnamed_publisher":0}, publisher_dict=publisher)
+            if updated_key == "pseudonym":
+                result_dict["pseudonym"]+=1
+                has_pseudonym = True
+            elif updated_key != "unnamed_publisher":
+                publisher_is_known = True
+        if all([pub_date_is_known, pub_place_is_known, publisher_is_known]):
+            result_dict["named_publisher+known_pub_date+known_pub_place"] +=1
+        elif not has_pseudonym:
+            result_dict["unnamed_publisher"] +=1
+    print(sum(result_dict.values()))
+    stat_dict:dict = {key: (val, val/file_count*100) for key, val in result_dict.items()}
+    if save_to_csv:
+        write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="all_info_publisher_stats", fieldnames=["info status","count","percentage"], iterable_values=True)
+    return stat_dict
+
 def test_stats():
     ##print(corrected_file_stats(dir_path=test_dir, save_to_csv=False)) #ok count
     ##print(nb_page_stats(dir_path=test_dir)) #ok count
@@ -385,6 +450,7 @@ def test_stats():
     print(publisher_stats(dir_path=test_dir, save_to_csv=False)) #ok count
     print(pub_place_stats(dir_path=test_dir, save_to_csv=False)) #ok count
     print(pub_date_stats(dir_path=test_dir, save_to_csv=False)) #ok_count
+    print(all_info_publisher_stats(dir_path=test_dir, save_to_csv=True))
     #imprimatur_dict: dict = imprimatur_stats(dir_path=test_dir)
     #write_to_csv(data_dict=imprimatur_dict, csv_dir=csv_dir, filename="imprimatur_stats")
     return
