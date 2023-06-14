@@ -4,7 +4,7 @@
 
 * [La bibliographie Moreau en ligne](https://antonomaz.huma-num.fr/tools/Biblio_Moreau.html) : version transcrite automatiquement (non corrigée) et interrogeable en ligne des *Bibliographies* de C. Moreau, E. Labadie et E. Socard.
 * [Le GitHub](https://github.com/Antonomaz) du projet présente l'ensemble des données produites par et pour le projet, et notamment l'ensemble des [textes](https://github.com/Antonomaz/corpus) en XML-TEI.
-* [Le corpus en *open source*](https://doi.org/10.5281/zenodo.7443183), dans une archive Zenodo.
+* [Le corpus Antonomaz en *open source*](https://doi.org/10.5281/zenodo.7443183), dans une archive Zenodo, évolutive.
 * [Le carnet de recherche](https://cahier.hypotheses.org/antonomaz) du projet collectif autour des libelles de la première modernité.
 * [Convertisseur OCR 17](https://ceres.huma-num.fr/ocr/), plateforme offrant la possibilité de réaliser une transcription automatique de PDFs, entrainée sur des données du 17e siècle, et développée par le [CERES](https://ceres.sorbonne-universite.fr/).
 
