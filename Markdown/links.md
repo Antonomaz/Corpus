@@ -16,6 +16,7 @@ de la Bibliothèque Mazarine.
 * Fonds de la [Bibliothèque Méjanes](https://odyssee.univ-amu.fr/items/show/338#?c=0&m=0&s=0&cv=0) (Aix en Provence) : recueils factices entièrement numérisés.
 * ["The mazarinades project at UNC"](https://scalar.usc.edu/works/the-mazarinades-project-at-unc/index) (bibliothèque de l'Université de Caroline du nord). 
 * La collection ["Newberry French Pamphlets"](https://archive.org/details/newberryfrenchpamphlets?tab=collection), pamphlets de la Révolution française, et plus largement de la France d'Ancien Régime.
+* Collection de mazarinades, en partie numérisées à l'[université d'Utrecht](https://objects.library.uu.nl/reader/index.php?obj=1874-362745&lan=en#page//11/37/98/1137982617693477766839687527466063178.jpg/mode/1up)
 * [Chansons et poésies satiriques du 17e siècle](https://satires17.univ-st-etienne.fr).
 * Projet ["Desenrollando el cordel/Démêler le cordel"](https://desenrollandoelcordel.unige.ch/inicio.html), imprimés de large diffusion au 19e siècle. 
 * La [Gazette de Renaudot](https://www.unicaen.fr/gazette/index.php).
