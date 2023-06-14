@@ -7,7 +7,7 @@ import texte
 from tqdm.auto import tqdm
 
 input_dir_path:str = "../Mazarinades/*/*.xml"
-path = "../Mazarinades/Antonomaz/*.xml"
+#path = "../Mazarinades/Antonomaz/*.xml"
 #input_dir_path = "../tests/Mazarinades_tests/*/*.xml"
 #file_list:list = glob(path)
 test_file5:str = "../tests/Mazarinades_tests/2001-2100/Moreau2022_GBOOKS.xml"
@@ -42,7 +42,8 @@ def tei_to_json_file(filepath:str, main_output_dir:str=main_output_dir):
         "entête": json_att_list[0],
         "texte": json_att_list[1]
         }
-    json.dump(obj=tempdict, fp=open(file=new_filepath, mode="w", encoding="utf-8"), indent=4, ensure_ascii=False)
+    json.dump(obj=tempdict, fp=(f:=open(file=new_filepath, mode="w", encoding="utf-8")), indent=4, ensure_ascii=False)
+    f.close()
     return tempdict
 
 #tei_to_json_file(filepath=test_file5)

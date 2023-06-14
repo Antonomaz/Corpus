@@ -145,6 +145,8 @@ def rewrite_xml(input_filepath:str, output_filepath:str, xml_string:str, xml_dec
     #print(f"body: {xml_string}")
     new_xml_str:str = xml_declaration+xml_string
     output_file.write(new_xml_str)
+    output_file.close()
+    input_file.close()
     return new_xml_str
 
 def normalise_names(input_filepath:str, output_filepath:str, value_to_change:str="", replacement:str="", xml_declaration:str = ""):
@@ -152,7 +154,8 @@ def normalise_names(input_filepath:str, output_filepath:str, value_to_change:str
     og_tree = ET.parse(source=input_filepath)
     og_root = og_tree.getroot()
     og_body = og_root[1][0]
-    xml_dict:dict = xmltodict.parse(open(input_filepath).read())
+    xml_dict:dict = xmltodict.parse((f := open(input_filepath)).read())
+    f.close()
     dict_header:dict =xml_dict["TEI"]["teiHeader"]
     publisher:dict|list = dict_header["fileDesc"]["sourceDesc"]["bibl"]["publisher"]
     pub_date:dict|list = dict_header["fileDesc"]["sourceDesc"]["bibl"]["date"]
@@ -200,6 +203,7 @@ def normalise_names(input_filepath:str, output_filepath:str, value_to_change:str
     ET.indent(tree=new_tree)
     new_xml_string:str = ET.tostring(element=new_tree.getroot(), encoding="utf-8", method="xml").decode()
     rewrite_xml(input_filepath=input_filepath, output_filepath=output_filepath, xml_string=new_xml_string, xml_declaration=xml_declaration)
+    input_file.close()
     return new_xml
 
 #change genre classification
@@ -220,7 +224,8 @@ def normalise_xml(input_filepath:str, output_filepath:str, change_name:bool = Fa
     og_tree = ET.parse(source=input_filepath)
     og_root = og_tree.getroot()
     og_body = og_root[1][0]
-    xml_dict:dict = xmltodict.parse(xml_input=open(file=input_filepath, mode="rb"), force_cdata=True)
+    xml_dict:dict = xmltodict.parse(xml_input=(f:=open(file=input_filepath, mode="rb")), force_cdata=True)
+    f.close()
     dict_header:dict =xml_dict["TEI"]["teiHeader"]
  
     publisher = dict_header["fileDesc"]["sourceDesc"]["bibl"]["publisher"]
@@ -258,7 +263,8 @@ def normalise_xml(input_filepath:str, output_filepath:str, change_name:bool = Fa
         if was_str:
             print("was str:", xml_dict["TEI"]["teiHeader"]["fileDesc"]["sourceDesc"]["bibl"]["pubPlace"])
     #print(f"after: {pub_place}")
-    xmltodict.unparse(input_dict=xml_dict, pretty=True, output=open(file=output_filepath, mode="w"), short_empty_elements=True)
+    xmltodict.unparse(input_dict=xml_dict, pretty=True, output=(ff := open(file=output_filepath, mode="w")), short_empty_elements=True)
+    ff.close()
     new_tree = ET.parse(output_filepath)
     #new_root = new_tree.getroot()
     new_tree.getroot()[1][0] = og_body
@@ -271,6 +277,7 @@ def normalise_xml(input_filepath:str, output_filepath:str, change_name:bool = Fa
     rewrite_xml(input_filepath=input_filepath, output_filepath=output_filepath,xml_string=new_xml_string, xml_declaration=xml_declaration)
     if change_name:
         normalise_names(input_filepath=input_filepath, output_filepath=output_filepath, value_to_change=value_to_change, replacement=replacement, xml_declaration=xml_declaration)
+    output_file.close()
     return new_tree
 
 

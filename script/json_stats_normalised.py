@@ -31,7 +31,8 @@ def write_to_csv(data_dict:dict, csv_dir:str = csv_dir, filename:str="", mode:st
         rowdict:dict = {fieldnames[0]:key}
         for i in range(1,len(fieldnames)):
             rowdict[fieldnames[i]] = val[i-1]
-        res.writerow(rowdict=rowdict)      
+        res.writerow(rowdict=rowdict)  
+    csv_file.close()    
     return
 
 def corrected_file_stats(dir_path: str, save_to_csv:bool = True) -> dict:
@@ -47,7 +48,8 @@ def corrected_file_stats(dir_path: str, save_to_csv:bool = True) -> dict:
     file_count: int = len(file_list)
     corrected_file_count: int = 0
     for filepath in file_list:
-        data_dict: dict = json.load(open(filepath))
+        data_dict: dict = json.load((f:= open(filepath)))
+        f.close()
         if data_dict["corrector"]:
             corrected_file_count += 1
     stat_dict:dict = {"file_count": file_count, "corrected_file_count": corrected_file_count, "corrected_file_percentage": corrected_file_count/file_count * 100}
@@ -61,7 +63,8 @@ def nb_page_stats(dir_path: str, save_to_csv:bool = True):
     result_dict: dict = {}
     file_count: int = len(file_list)
     for filepath in file_list:
-        data_dict: dict = json.load(open(filepath))
+        data_dict: dict = json.load((f:= open(filepath)))
+        f.close()
         nbPages:int = data_dict["entête"]["nbPages"]
         if nbPages in result_dict:
             result_dict[nbPages] += 1
@@ -114,7 +117,8 @@ def author_stats(dir_path: str, save_to_csv:bool = True) -> dict:
     result_dict: dict = {"named_author": 0, "unnamed_author":0, "pseudonym": 0}
     file_count: int = len(file_list)
     for filepath in file_list:
-        data_dict: dict = json.load(open(filepath))
+        data_dict: dict = json.load(f:= open(filepath))
+        f.close()
         author = data_dict["entête"]["author"]
         # list handling
         if isinstance(author, list):
@@ -178,7 +182,8 @@ def publisher_stats(dir_path: str, save_to_csv:bool = True) -> dict:
     file_count: int = len(file_list)
     for filepath in file_list:
         #print(filepath)
-        data_dict: dict = json.load(open(filepath))
+        data_dict: dict = json.load(f := open(filepath))
+        f.close()
         publisher = data_dict["entête"]["publisher"]
         # handling lists of publishers
         if isinstance(publisher, list):
@@ -233,7 +238,8 @@ def pub_place_stats(dir_path: str, save_to_csv:bool = True, filepath:str=""):
     dup_count:int = 0 
     for filepath in file_list:
         old_sum:int = sum(result_dict.values())
-        data_dict: dict = json.load(open(filepath))
+        data_dict: dict = json.load(f := open(filepath))
+        f.close()
         pub_place = data_dict["entête"]["pubPlace"]
         #handling inconsistent formatting
         if isinstance(pub_place, str):
@@ -284,7 +290,8 @@ def pub_date_stats(dir_path: str, save_to_csv:bool=True):
     result_dict: dict = {unknown_pub_date: 0}
     file_count: int = len(file_list)
     for filepath in file_list:
-        data_dict: dict = json.load(open(filepath))
+        data_dict: dict = json.load(f := open(filepath))
+        f.close()
         pub_date = data_dict["entête"]["pubDate"]
         # handling lists
         if isinstance(pub_date, list):
@@ -315,7 +322,8 @@ def imprimatur_stats(dir_path:str, save_to_csv:bool=True):
     imprimatur_count: int = 0
     for filepath in file_list:
         #print(filepath)
-        data_dict: dict = json.load(open(filepath))
+        data_dict: dict = json.load(f := open(filepath))
+        f.close()
         #print(data_dict.keys())
         if (impr:= data_dict["imprimatur"]) is not None:
             imprimatur_count += 1
@@ -330,7 +338,8 @@ def imprimatur_per_year_stats(dir_path:str, save_to_csv:bool):
     no_imprimatur_count:int = 0
     result_dict: dict = {unknown_pub_date: 0}
     for filepath in file_list:
-        data_dict: dict = json.load(open(filepath))
+        data_dict: dict = json.load(f :=  open(filepath))
+        f.close()
         pub_date = data_dict["entête"]["pubDate"]
         #handling lists
         if data_dict["imprimatur"] is None:
@@ -362,7 +371,8 @@ def all_info_publisher_stats(dir_path:str, save_to_csv:bool = True):
     file_count: int = len(file_list)
     result_dict:dict = {"unnamed_publisher": 0, "pseudonym": 0, "named_publisher+known_pub_date+known_pub_place":0}
     for filepath in file_list:
-        data_dict: dict = json.load(open(filepath))
+        data_dict: dict = json.load(f := open(filepath))
+        f.close()
         pub_date = data_dict["entête"]["pubDate"]
         pub_date_is_known:bool = False
         pub_place = data_dict["entête"]["pubPlace"]
@@ -419,9 +429,9 @@ def all_info_publisher_stats(dir_path:str, save_to_csv:bool = True):
         write_to_csv(data_dict=stat_dict, csv_dir=csv_dir, filename="all_info_publisher_stats", fieldnames=["info status","count","percentage"], iterable_values=True)
     return stat_dict
 def test_stats():
-    #print(corrected_file_stats(dir_path=test_dir, save_to_csv=False)) #ok count
-    #print(nb_page_stats(dir_path=test_dir, save_to_csv=False)) #ok count
-    #print(author_stats(dir_path=test_dir, save_to_csv=False )) #ok count
+    print(corrected_file_stats(dir_path=test_dir, save_to_csv=False)) #ok count
+    print(nb_page_stats(dir_path=test_dir, save_to_csv=False)) #ok count
+    print(author_stats(dir_path=test_dir, save_to_csv=False )) #ok count
     publisher_dict:dict = publisher_stats(dir_path=test_dir, save_to_csv=False) #ok count
     print(publisher_dict)
     pub_place_dict:dict = pub_place_stats(dir_path=test_dir, save_to_csv=False)#ok count
