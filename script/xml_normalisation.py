@@ -25,7 +25,11 @@ test_file8:str = "../tests/Mazarinades_tests/1301-1400/Moreau1372_GALL.xml"
 unknown_pub_place: str = "Sans Lieu"
 unknown_pub_name: str = "Sans Nom"
 unknown_pub_date:str = "Sans Date"
-namespace:str = "http://www.tei-c.org/ns/1.0"
+# constants
+XMLNS:str = "http://www.tei-c.org/ns/1.0"
+ODD_LINK:str = "https://raw.githubusercontent.com/Antonomaz/ODD/main/Schema/ODD_Antonomaz.rng"
+XML_HEADER:str = f"<?xml version='1.0' encoding='utf-8'?>\n<?xml-model href='{ODD_LINK}' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>\n<?xml-model href='{ODD_LINK}' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>\n"
+
 
 def normalise_publisher(publisher_field:dict):
     if isinstance(publisher_field, dict):
@@ -101,7 +105,7 @@ def name_publisher(publisher:dict):
     return publisher
 
 def name_pub_date(pub_date:dict):
-    print(pub_date)
+    #print(pub_date)
     pub_date_flatdict = flatdict.FlatDict(value=pub_date)
     #print(f"pub_date: {pub_date}")
     if "Sans Date" in pub_date_flatdict.values():
@@ -113,7 +117,7 @@ def name_pub_date(pub_date:dict):
     return pub_date
 
 def name_pub_place(pub_place:dict):
-    print(f"pub_place: {pub_place}")
+    #print(f"pub_place: {pub_place}")
     pub_place_flatdict = flatdict.FlatDict(value=pub_place)
     if "Sans Lieu" in pub_place_flatdict.values():
         for flat_key in pub_place_flatdict:
@@ -128,7 +132,7 @@ def name_genre(form:dict, value_to_change:str, replacement:str):
         if form_flatdict[flat_key] == value_to_change:
             form_flatdict[flat_key] = replacement
             form = form_flatdict.as_dict()
-            print(f"form: {form}")
+            #print(f"form: {form}")
     return form
 
 
@@ -136,11 +140,7 @@ def rewrite_xml(input_filepath:str, output_filepath:str, xml_string:str, xml_dec
     input_file = open(file=input_filepath, mode="r", encoding="utf-8")
     output_file = open(file=output_filepath, mode="w")
     if xml_declaration == "":
-    #retrieve xml_declaration
-        for line in input_file:
-            if re.match(pattern=r"^(<TEI).*", string=line):
-                break
-            xml_declaration += line
+        xml_declaration = XML_HEADER
     #print(f"XML DEC:{xml_declaration}")
     #print(f"body: {xml_string}")
     new_xml_str:str = xml_declaration+xml_string
@@ -210,16 +210,17 @@ def normalise_names(input_filepath:str, output_filepath:str, value_to_change:str
 #<term type="genre">pièce de théâtre</term>
 #./1301-1400/Moreau1372_GALL.xml
 
-def normalise_xml(input_filepath:str, output_filepath:str, change_name:bool = False, value_to_change:str="", replacement:str = ""):
+def normalise_xml(input_filepath:str, output_filepath:str, change_name:bool = False, value_to_change:str="", replacement:str = "", xml_declaration:str|None = XML_HEADER):
     input_file = open(file=input_filepath, mode="r", encoding="utf-8")
-    #retrieve xml_declaration
-    xml_declaration:str = ""
-    for line in input_file:
-        if re.match(pattern=r"^(<TEI).*", string=line):
-            break
-        xml_declaration += line
-    # register namespace
-    ET.register_namespace(prefix="", uri=namespace)
+    if xml_declaration is None:
+        #retrieve xml_declaration
+        xml_declaration = ""
+        for line in input_file:
+            if re.match(pattern=r"^(<TEI).*", string=line):
+                break
+            xml_declaration += line
+    # register XMLNS
+    ET.register_namespace(prefix="", uri=XMLNS)
     #parse the original xml
     og_tree = ET.parse(source=input_filepath)
     og_root = og_tree.getroot()
@@ -281,17 +282,18 @@ def normalise_xml(input_filepath:str, output_filepath:str, change_name:bool = Fa
     return new_tree
 
 
-def normalise_xml_dir(dir_path:str, value_to_change:str = "", replacement:str="", change_name: bool = False):
+def normalise_xml_dir(dir_path:str, value_to_change:str = "", replacement:str="", change_name: bool = False, xml_declaration:str|None = XML_HEADER):
     for filepath in tqdm(glob.glob(pathname=dir_path)):
-        new_xml = normalise_xml(input_filepath=filepath, output_filepath=filepath, value_to_change=value_to_change, replacement=replacement, change_name=change_name)
+        print(filepath)
+        new_xml = normalise_xml(input_filepath=filepath, output_filepath=filepath, value_to_change=value_to_change, replacement=replacement, change_name=change_name, xml_declaration=xml_declaration)
         #new_xml = normalise_names(input_filepath=filepath, output_filepath=filepath, value_to_change=value_to_change, replacement=replacement)
     return
 
 
 def change_attribute_name(input_filepath:str, output_filepath:str, tag:str, old_attribute:str, new_attribute:str, namespace:str=""):
-    ET.register_namespace(prefix="", uri=namespace)
+    ET.register_namespace(prefix="", uri=XMLNS)
     xml_tree = ET.parse(source=input_filepath)
-    tags_to_change:list = xml_tree.findall(f".//ns:{tag}[@{old_attribute}]", namespaces={"ns":namespace})
+    tags_to_change:list = xml_tree.findall(f".//ns:{tag}[@{old_attribute}]", namespaces={"ns":XMLNS})
     #print(tags_to_change)
     for tag_c in tags_to_change:
         tag_c.set(new_attribute, tag_c.get(old_attribute))
@@ -302,5 +304,24 @@ def change_attribute_name(input_filepath:str, output_filepath:str, tag:str, old_
 
 def change_attribute_name_dir(dir_path:str, tag:str, old_attribute:str, new_attribute:str, namespace:str=""):
     for filepath in glob.glob(pathname=dir_path):
-        change_attribute_name(input_filepath=filepath, output_filepath=filepath, tag=tag, old_attribute=old_attribute,new_attribute=new_attribute, namespace=namespace)
+        change_attribute_name(input_filepath=filepath, output_filepath=filepath, tag=tag, old_attribute=old_attribute,new_attribute=new_attribute, namespace=XMLNS)
     return
+
+if __name__ == "__main__":
+    #normalise_xml(input_filepath=test_file1)
+    #normalise_xml(input_filepath=test_file2)
+    #normalise_xml(input_filepath=test_file3)
+    #normalise_xml(input_filepath=test_file4)
+    #normalise_xml(input_filepath=test_file5, output_filepath="temp.xml")
+    #normalise_xml(input_filepath=test_file6, output_filepath="temp_xml/temp.xml")
+    #normalise_xml(input_filepath=test_file7, output_filepath="temp_xml/temp.xml")
+    #tei_to_json_file(filepath="temp_xml/temp.xml", main_output_dir="./temp")
+    #normalise_names(input_filepath=test_file8, output_filepath="temp_xml/temp.xml", value_to_change="pièce de théâtre", replacement="texte de forme théâtrale")
+    #tei_to_json_file(filepath="temp_xml/temp.xml", main_output_dir="./temp")
+#test_stats()
+
+    #change_attribute_name(input_filepath=test_BM_file, output_filepath="temp_xml/BM.xml", tag="pb", old_attribute="n", new_attribute="vue", namespace=namespace)
+    #change_attribute_name_dir(dir_path=maz_dir, tag="pb", old_attribute="n", new_attribute="vue", namespace=namespace)
+
+    normalise_xml_dir(dir_path=test_dir, value_to_change="pièce de théâtre", replacement="texte de forme théâtrale", change_name=True)
+    #normalise_xml_dir(dir_path="../Mazarinades/Antonomaz/*.xml", value_to_change="pièce de théâtre", replacement="texte de forme théâtrale", change_name=True)
