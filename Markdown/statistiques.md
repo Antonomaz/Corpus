@@ -137,7 +137,7 @@ Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur 
 
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr style="text-align: center;">
       <th></th>
       <th>Nombre d'auteurs</th>
       <th>Pourcentage</th>
