@@ -39,9 +39,29 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     md < "Sur son échantillon de 1000 mazarinades calibrées en fonction des genres et des années, H. Carrier calcule que 16 % des mazarinades ne donnent aucune information éditoriale, 31 % affichent le lieu et la date de publication. Enfin, il note que  53 % de ces imprimés ont une adresse typographique complète (lieu, date, nom d'imprimeur), sensiblement la même proportion que pour Antonomaz."
     md < "Globlament donc on peut affirmer qu'une mazarinade sur deux affiche son origine typographique."|md.bold
     md < "Il note également que ces chiffres varient au cours de la Fronde : si 64% des mazarinades de l'échantillon étudié présentent une adresse typographique complète en 1649, ils ne sont plus que 38% en 1652."
+    md < "Imprimatur"|md.h3
+    md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
+    md < stat_dict["imprimatur_stat"].to_html(header=True)
+    md < "Imprimatur per year"|md.h3
+    md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
+    md < stat_dict["imprimatur_per_year_stats"].to_html(header=True)
+    md < "Nombre de pages"|md.h3
+    md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
+    md < stat_dict["nb_page_stat"].to_html(header=True)
+    md < "Date de publication"|md.h3
+    md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
+    md < stat_dict["pub_date_stat"].to_html(header=True)
+    md < "Lieu de publication"|md.h3
+    md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
+    md < stat_dict["pub_place_stat"].to_html(header=True)
+    md < "Nom d'imprimeur"|md.h3
+    md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
+    md < stat_dict["publisher_stats"].to_html(header=True)
+
+    
     #print(stat_dict["all_info_publisher_stats"].at[2, "percentage"])
     #print(stat_dict)
     md > markdown_filepath
     return stat_dict
 
-update_markdown_stats(data_dir=data_dir, markdown_filepath="../tests/Markdown/test.md")
+update_markdown_stats(data_dir=data_dir, markdown_filepath="../Markdown/statistiques.md")
