@@ -138,7 +138,6 @@ Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
       <th>authorship status</th>
       <th>count</th>
       <th>percentage</th>
@@ -146,19 +145,16 @@ Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur 
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
       <td>named_author</td>
       <td>1248</td>
       <td>40.717781</td>
     </tr>
     <tr>
-      <th>1</th>
       <td>unnamed_author</td>
       <td>1747</td>
       <td>56.998369</td>
     </tr>
     <tr>
-      <th>2</th>
       <td>pseudonym</td>
       <td>70</td>
       <td>2.283850</td>
@@ -187,7 +183,6 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
       <th>info status</th>
       <th>count</th>
       <th>percentage</th>
@@ -195,19 +190,16 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
       <td>unnamed_publisher</td>
       <td>1390</td>
       <td>45.350734</td>
     </tr>
     <tr>
-      <th>1</th>
       <td>pseudonym</td>
       <td>4</td>
       <td>0.130506</td>
     </tr>
     <tr>
-      <th>2</th>
       <td>named_publisher+known_pub_date+known_pub_place</td>
       <td>1671</td>
       <td>54.518760</td>
@@ -230,7 +222,6 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
       <th>file_count</th>
       <th>imprimatur-ed_file_count</th>
       <th>imprimatur-ed_file_percentage</th>
@@ -238,7 +229,6 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
       <td>3065</td>
       <td>755</td>
       <td>24.632953</td>
@@ -253,7 +243,6 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
       <th>year</th>
       <th>count</th>
       <th>percentage</th>
@@ -261,49 +250,41 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
       <td>Sans date</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>1</th>
       <td>1649</td>
       <td>476</td>
       <td>15.530179</td>
     </tr>
     <tr>
-      <th>2</th>
       <td>1652</td>
       <td>164</td>
       <td>5.350734</td>
     </tr>
     <tr>
-      <th>3</th>
       <td>1651</td>
       <td>54</td>
       <td>1.761827</td>
     </tr>
     <tr>
-      <th>4</th>
       <td>1650</td>
       <td>37</td>
       <td>1.207178</td>
     </tr>
     <tr>
-      <th>5</th>
       <td>1655</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>6</th>
       <td>1648</td>
       <td>18</td>
       <td>0.587276</td>
     </tr>
     <tr>
-      <th>7</th>
       <td>1653</td>
       <td>4</td>
       <td>0.130506</td>
@@ -318,7 +299,6 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
       <th>nb_page</th>
       <th>count</th>
       <th>percentage</th>
@@ -326,535 +306,446 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
       <td>8</td>
       <td>918</td>
       <td>29.951060</td>
     </tr>
     <tr>
-      <th>1</th>
       <td>7</td>
       <td>584</td>
       <td>19.053834</td>
     </tr>
     <tr>
-      <th>2</th>
       <td>6</td>
       <td>169</td>
       <td>5.513866</td>
     </tr>
     <tr>
-      <th>3</th>
       <td>16</td>
       <td>141</td>
       <td>4.600326</td>
     </tr>
     <tr>
-      <th>4</th>
       <td>4</td>
       <td>268</td>
       <td>8.743883</td>
     </tr>
     <tr>
-      <th>5</th>
       <td>32</td>
       <td>44</td>
       <td>1.435563</td>
     </tr>
     <tr>
-      <th>6</th>
       <td>11</td>
       <td>95</td>
       <td>3.099511</td>
     </tr>
     <tr>
-      <th>7</th>
       <td>10</td>
       <td>29</td>
       <td>0.946166</td>
     </tr>
     <tr>
-      <th>8</th>
       <td>12</td>
       <td>127</td>
       <td>4.143556</td>
     </tr>
     <tr>
-      <th>9</th>
       <td>2</td>
       <td>7</td>
       <td>0.228385</td>
     </tr>
     <tr>
-      <th>10</th>
       <td>15</td>
       <td>123</td>
       <td>4.013051</td>
     </tr>
     <tr>
-      <th>11</th>
       <td>14</td>
       <td>67</td>
       <td>2.185971</td>
     </tr>
     <tr>
-      <th>12</th>
       <td>20</td>
       <td>44</td>
       <td>1.435563</td>
     </tr>
     <tr>
-      <th>13</th>
       <td>23</td>
       <td>30</td>
       <td>0.978793</td>
     </tr>
     <tr>
-      <th>14</th>
       <td>25</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>15</th>
       <td>84</td>
       <td>5</td>
       <td>0.163132</td>
     </tr>
     <tr>
-      <th>16</th>
       <td>30</td>
       <td>17</td>
       <td>0.554649</td>
     </tr>
     <tr>
-      <th>17</th>
       <td>18</td>
       <td>18</td>
       <td>0.587276</td>
     </tr>
     <tr>
-      <th>18</th>
       <td>133</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>19</th>
       <td>31</td>
       <td>25</td>
       <td>0.815661</td>
     </tr>
     <tr>
-      <th>20</th>
       <td>64</td>
       <td>3</td>
       <td>0.097879</td>
     </tr>
     <tr>
-      <th>21</th>
       <td>75</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>22</th>
       <td>27</td>
       <td>9</td>
       <td>0.293638</td>
     </tr>
     <tr>
-      <th>23</th>
       <td>22</td>
       <td>21</td>
       <td>0.685155</td>
     </tr>
     <tr>
-      <th>24</th>
       <td>40</td>
       <td>12</td>
       <td>0.391517</td>
     </tr>
     <tr>
-      <th>25</th>
       <td>44</td>
       <td>6</td>
       <td>0.195759</td>
     </tr>
     <tr>
-      <th>26</th>
       <td>80</td>
       <td>4</td>
       <td>0.130506</td>
     </tr>
     <tr>
-      <th>27</th>
       <td>19</td>
       <td>28</td>
       <td>0.913540</td>
     </tr>
     <tr>
-      <th>28</th>
       <td>24</td>
       <td>50</td>
       <td>1.631321</td>
     </tr>
     <tr>
-      <th>29</th>
       <td>274</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>30</th>
       <td>38</td>
       <td>8</td>
       <td>0.261011</td>
     </tr>
     <tr>
-      <th>31</th>
       <td>28</td>
       <td>14</td>
       <td>0.456770</td>
     </tr>
     <tr>
-      <th>32</th>
       <td>3</td>
       <td>43</td>
       <td>1.402936</td>
     </tr>
     <tr>
-      <th>33</th>
       <td>39</td>
       <td>8</td>
       <td>0.261011</td>
     </tr>
     <tr>
-      <th>34</th>
       <td>270</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>35</th>
       <td>108</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>36</th>
       <td>116</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>37</th>
       <td>36</td>
       <td>13</td>
       <td>0.424144</td>
     </tr>
     <tr>
-      <th>38</th>
       <td>87</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>39</th>
       <td>43</td>
       <td>3</td>
       <td>0.097879</td>
     </tr>
     <tr>
-      <th>40</th>
       <td>48</td>
       <td>4</td>
       <td>0.130506</td>
     </tr>
     <tr>
-      <th>41</th>
       <td>35</td>
       <td>6</td>
       <td>0.195759</td>
     </tr>
     <tr>
-      <th>42</th>
       <td>1</td>
       <td>23</td>
       <td>0.750408</td>
     </tr>
     <tr>
-      <th>43</th>
       <td>13</td>
       <td>8</td>
       <td>0.261011</td>
     </tr>
     <tr>
-      <th>44</th>
       <td>29</td>
       <td>3</td>
       <td>0.097879</td>
     </tr>
     <tr>
-      <th>45</th>
       <td>26</td>
       <td>12</td>
       <td>0.391517</td>
     </tr>
     <tr>
-      <th>46</th>
       <td>37</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>47</th>
       <td>46</td>
       <td>5</td>
       <td>0.163132</td>
     </tr>
     <tr>
-      <th>48</th>
       <td>119</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>49</th>
       <td>34</td>
       <td>4</td>
       <td>0.130506</td>
     </tr>
     <tr>
-      <th>50</th>
       <td>240</td>
       <td>2</td>
       <td>0.065253</td>
     </tr>
     <tr>
-      <th>51</th>
       <td>192</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>52</th>
       <td>63</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>53</th>
       <td>59</td>
       <td>2</td>
       <td>0.065253</td>
     </tr>
     <tr>
-      <th>54</th>
       <td>94</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>55</th>
       <td>72</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>56</th>
       <td>45</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>57</th>
       <td>42</td>
       <td>3</td>
       <td>0.097879</td>
     </tr>
     <tr>
-      <th>58</th>
       <td>248</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>59</th>
       <td>9</td>
       <td>3</td>
       <td>0.097879</td>
     </tr>
     <tr>
-      <th>60</th>
       <td>17</td>
       <td>3</td>
       <td>0.097879</td>
     </tr>
     <tr>
-      <th>61</th>
       <td>166</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>62</th>
       <td>74</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>63</th>
       <td>47</td>
       <td>3</td>
       <td>0.097879</td>
     </tr>
     <tr>
-      <th>64</th>
       <td>152</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>65</th>
       <td>118</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>66</th>
       <td>95</td>
       <td>2</td>
       <td>0.065253</td>
     </tr>
     <tr>
-      <th>67</th>
       <td>56</td>
       <td>2</td>
       <td>0.065253</td>
     </tr>
     <tr>
-      <th>68</th>
       <td>5</td>
       <td>5</td>
       <td>0.163132</td>
     </tr>
     <tr>
-      <th>69</th>
       <td>456</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>70</th>
       <td>235</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>71</th>
       <td>54</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>72</th>
       <td>50</td>
       <td>2</td>
       <td>0.065253</td>
     </tr>
     <tr>
-      <th>73</th>
       <td>218</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>74</th>
       <td>68</td>
       <td>2</td>
       <td>0.065253</td>
     </tr>
     <tr>
-      <th>75</th>
       <td>150</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>76</th>
       <td>311</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>77</th>
       <td>52</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>78</th>
       <td>263</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>79</th>
       <td>114</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>80</th>
       <td>41</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>81</th>
       <td>79</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>82</th>
       <td>718</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>83</th>
       <td>199</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>84</th>
       <td>107</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>85</th>
       <td>57</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>86</th>
       <td>331</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>87</th>
       <td>428</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>88</th>
       <td>325</td>
       <td>1</td>
       <td>0.032626</td>
@@ -869,7 +760,6 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
       <th>year</th>
       <th>count</th>
       <th>percentage</th>
@@ -877,79 +767,66 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
       <td>Sans Date</td>
       <td>38</td>
       <td>1.239804</td>
     </tr>
     <tr>
-      <th>1</th>
       <td>1649</td>
       <td>1414</td>
       <td>46.133768</td>
     </tr>
     <tr>
-      <th>2</th>
       <td>1652</td>
       <td>938</td>
       <td>30.603589</td>
     </tr>
     <tr>
-      <th>3</th>
       <td>1651</td>
       <td>332</td>
       <td>10.831974</td>
     </tr>
     <tr>
-      <th>4</th>
       <td>1650</td>
       <td>276</td>
       <td>9.004894</td>
     </tr>
     <tr>
-      <th>5</th>
       <td>1654</td>
       <td>12</td>
       <td>0.391517</td>
     </tr>
     <tr>
-      <th>6</th>
       <td>1662</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>7</th>
       <td>1655</td>
       <td>2</td>
       <td>0.065253</td>
     </tr>
     <tr>
-      <th>8</th>
       <td>1648</td>
       <td>41</td>
       <td>1.337684</td>
     </tr>
     <tr>
-      <th>9</th>
       <td>1634</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>10</th>
       <td>1653</td>
       <td>8</td>
       <td>0.261011</td>
     </tr>
     <tr>
-      <th>11</th>
       <td>1663</td>
       <td>1</td>
       <td>0.032626</td>
     </tr>
     <tr>
-      <th>12</th>
       <td>1656</td>
       <td>1</td>
       <td>0.032626</td>
@@ -964,7 +841,6 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
       <th>place</th>
       <th>count</th>
       <th>percentage</th>
@@ -972,43 +848,36 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
       <td>Sans Lieu</td>
       <td>713</td>
       <td>23.262643</td>
     </tr>
     <tr>
-      <th>1</th>
       <td>Saint-Germain-en-Laye</td>
       <td>16</td>
       <td>0.522023</td>
     </tr>
     <tr>
-      <th>2</th>
       <td>Paris</td>
       <td>2201</td>
       <td>71.810767</td>
     </tr>
     <tr>
-      <th>3</th>
       <td>Pontoise</td>
       <td>20</td>
       <td>0.652529</td>
     </tr>
     <tr>
-      <th>4</th>
       <td>Orléans</td>
       <td>27</td>
       <td>0.880914</td>
     </tr>
     <tr>
-      <th>5</th>
       <td>Bordeaux</td>
       <td>35</td>
       <td>1.141925</td>
     </tr>
     <tr>
-      <th>6</th>
       <td>Rouen</td>
       <td>24</td>
       <td>0.783034</td>
@@ -1023,7 +892,6 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
       <th>publisher status</th>
       <th>count</th>
       <th>percentage</th>
@@ -1031,19 +899,16 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
       <td>named_publisher</td>
       <td>1693</td>
       <td>55.236542</td>
     </tr>
     <tr>
-      <th>1</th>
       <td>unnamed_publisher</td>
       <td>1368</td>
       <td>44.632953</td>
     </tr>
     <tr>
-      <th>2</th>
       <td>pseudonym</td>
       <td>4</td>
       <td>0.130506</td>

@@ -24,7 +24,7 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
     md < f"Sur Antonomaz, environ {ceil(stat_dict['author_stats'].at[1, 'percentage'])}  % d’écrits ({stat_dict['author_stats'].at[1, 'count']} imprimés) sont sans nom d'auteurs, {int(stat_dict['author_stats'].at[2, 'percentage'])}  % affichent un pseudonyme au sens large : initiales et pseudonymes ({stat_dict['author_stats'].at[2, 'count']} imprimés)."
     md < "Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur le document), l'imprimé n'est pas compté comme anonyme."
-    md < stat_dict["author_stats"].to_html(header=True)
+    md < stat_dict["author_stats"].to_html(header=True, index=False)
     md < "Statistiques proposées par H. Carrier (échantillon de 1000 écrits, 1/5 du corpus global)"|md.bold
     md < f"A titre de comparaison, on peut observer les statistiques qu'H. Carrier avait proposées, établies sur un ensemble \"d'un millier de mazarinades prises au hasard\", où \"les différents genres et années de publication se trouvent équitablement répartis\" par H. Carrier (_La Presse de la Fronde (1648-1653): Les mazarinades. Les hommes du livre_, Genève, Droz, 1991, t. 2, p. 150.)."
     md < "Il estime l’anonymat à 83% des pièces, à quoi il ajoute 7% de cryptonymes."|md.bold
@@ -34,29 +34,29 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     md < "Taux d'anonymat typographique (noms d'imprimeur-libraire indiqués ou non)"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
     md < f"{ceil(stat_dict['all_info_publisher_stats'].at[2, 'percentage']) } % de mazarinades inscrivent une adresse typographique complète (environ la même proportion que celle indiquée par Carrier _infra_). Pour les {int(stat_dict['all_info_publisher_stats'].at[0, 'percentage']) } % imprimés restants, on peut penser que c'est par prudence que ni le nom ni l'adresse des imprimeurs-libraires ne sont affichés ; cela représentait un risque commercial puisque l'acheteur ne pouvait pas identifier le lieu où se procurer le libelle."
-    md < stat_dict["all_info_publisher_stats"].to_html(header=True)
+    md < stat_dict["all_info_publisher_stats"].to_html(header=True, index=False)
     md < "Statistiques proposées par H. Carrier (échantillon de 1000 écrits, 1/5 du corpus global)"|md.bold
     md < "Sur son échantillon de 1000 mazarinades calibrées en fonction des genres et des années, H. Carrier calcule que 16 % des mazarinades ne donnent aucune information éditoriale, 31 % affichent le lieu et la date de publication. Enfin, il note que  53 % de ces imprimés ont une adresse typographique complète (lieu, date, nom d'imprimeur), sensiblement la même proportion que pour Antonomaz."
     md < "Globlament donc on peut affirmer qu'une mazarinade sur deux affiche son origine typographique."|md.bold
     md < "Il note également que ces chiffres varient au cours de la Fronde : si 64% des mazarinades de l'échantillon étudié présentent une adresse typographique complète en 1649, ils ne sont plus que 38% en 1652."
     md < "Imprimatur"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
-    md < stat_dict["imprimatur_stat"].to_html(header=True)
+    md < stat_dict["imprimatur_stat"].to_html(header=True, index=False)
     md < "Imprimatur per year"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
-    md < stat_dict["imprimatur_per_year_stats"].to_html(header=True)
+    md < stat_dict["imprimatur_per_year_stats"].to_html(header=True, index=False)
     md < "Nombre de pages"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
-    md < stat_dict["nb_page_stat"].to_html(header=True)
+    md < stat_dict["nb_page_stat"].to_html(header=True, index=False)
     md < "Date de publication"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
-    md < stat_dict["pub_date_stat"].to_html(header=True)
+    md < stat_dict["pub_date_stat"].to_html(header=True, index=False)
     md < "Lieu de publication"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
-    md < stat_dict["pub_place_stat"].to_html(header=True)
+    md < stat_dict["pub_place_stat"].to_html(header=True, index=False)
     md < "Nom d'imprimeur"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
-    md < stat_dict["publisher_stats"].to_html(header=True)
+    md < stat_dict["publisher_stats"].to_html(header=True, index=False)
 
     
     #print(stat_dict["all_info_publisher_stats"].at[2, "percentage"])
