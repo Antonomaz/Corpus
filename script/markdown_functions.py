@@ -62,6 +62,7 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     # renaming column labels
     imprimatur_per_year_stats_df = stat_dict["imprimatur_per_year_stats"]
     imprimatur_per_year_stats_df.columns = ["Année", "Nombre avec imprimatur", "Pourcentage avec imprimatur"]
+    imprimatur_per_year_stats_df.sort_values(by=["Année"], inplace=True)
     print(imprimatur_per_year_stats_df)
     md < imprimatur_per_year_stats_df.to_html(header=True, index=False)
     md < "Nombre de pages"|md.h3

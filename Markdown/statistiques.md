@@ -250,9 +250,9 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
   </thead>
   <tbody>
     <tr>
-      <td>Sans date</td>
-      <td>1</td>
-      <td>0.032626</td>
+      <td>1648</td>
+      <td>18</td>
+      <td>0.587276</td>
     </tr>
     <tr>
       <td>1649</td>
@@ -260,9 +260,9 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
       <td>15.530179</td>
     </tr>
     <tr>
-      <td>1652</td>
-      <td>164</td>
-      <td>5.350734</td>
+      <td>1650</td>
+      <td>37</td>
+      <td>1.207178</td>
     </tr>
     <tr>
       <td>1651</td>
@@ -270,9 +270,14 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
       <td>1.761827</td>
     </tr>
     <tr>
-      <td>1650</td>
-      <td>37</td>
-      <td>1.207178</td>
+      <td>1652</td>
+      <td>164</td>
+      <td>5.350734</td>
+    </tr>
+    <tr>
+      <td>1653</td>
+      <td>4</td>
+      <td>0.130506</td>
     </tr>
     <tr>
       <td>1655</td>
@@ -280,14 +285,9 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
       <td>0.032626</td>
     </tr>
     <tr>
-      <td>1648</td>
-      <td>18</td>
-      <td>0.587276</td>
-    </tr>
-    <tr>
-      <td>1653</td>
-      <td>4</td>
-      <td>0.130506</td>
+      <td>Sans date</td>
+      <td>1</td>
+      <td>0.032626</td>
     </tr>
   </tbody>
 </table>
