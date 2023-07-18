@@ -45,14 +45,18 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     all_info_publisher_stats_df.set_index("info_status", inplace=True)
     all_info_publisher_stats_df.index = ["Imprimeur anonyme", "Pseudonyme", "Adresse typographique complète"]
     print(all_info_publisher_stats_df)
-    md < all_info_publisher_stats_df.to_html(header=True, index=True)
+    md < all_info_publisher_stats_df.to_html(header=True, index=True).replace('<th>', '<th scope="col">')
     md < "Statistiques proposées par H. Carrier (échantillon de 1000 écrits, 1/5 du corpus global)"|md.bold
     md < "Sur son échantillon de 1000 mazarinades calibrées en fonction des genres et des années, H. Carrier calcule que 16 % des mazarinades ne donnent aucune information éditoriale, 31 % affichent le lieu et la date de publication. Enfin, il note que  53 % de ces imprimés ont une adresse typographique complète (lieu, date, nom d'imprimeur), sensiblement la même proportion que pour Antonomaz."
     md < "Globlament donc on peut affirmer qu'une mazarinade sur deux affiche son origine typographique."|md.bold
     md < "Il note également que ces chiffres varient au cours de la Fronde : si 64% des mazarinades de l'échantillon étudié présentent une adresse typographique complète en 1649, ils ne sont plus que 38% en 1652."
     md < "Imprimatur"|md.h3
+    # renaming column labels
+    imprimatur_stat_df = stat_dict["imprimatur_stat"]
+    imprimatur_stat_df.columns = ["Nombre total de mazarinades", "Nombre avec imprimatur", "Pourcentage avec imprimatur"]
+    print(imprimatur_stat_df)
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
-    md < stat_dict["imprimatur_stat"].to_html(header=True, index=False)
+    md < imprimatur_stat_df.to_html(header=True, index=False)
     md < "Imprimatur per year"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
     md < stat_dict["imprimatur_per_year_stats"].to_html(header=True, index=False)

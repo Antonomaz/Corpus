@@ -183,24 +183,24 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
-      <th>Nombre de mazarinades</th>
-      <th>Pourcentage</th>
+      <th scope="col"></th>
+      <th scope="col">Nombre de mazarinades</th>
+      <th scope="col">Pourcentage</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>Imprimeur anonyme</th>
+      <th scope="col">Imprimeur anonyme</th>
       <td>1390</td>
       <td>45.350734</td>
     </tr>
     <tr>
-      <th>Pseudonyme</th>
+      <th scope="col">Pseudonyme</th>
       <td>4</td>
       <td>0.130506</td>
     </tr>
     <tr>
-      <th>Adresse typographique complète</th>
+      <th scope="col">Adresse typographique complète</th>
       <td>1671</td>
       <td>54.518760</td>
     </tr>
@@ -222,9 +222,9 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>file_count</th>
-      <th>imprimatur-ed_file_count</th>
-      <th>imprimatur-ed_file_percentage</th>
+      <th>Nombre total de mazarinades</th>
+      <th>Nombre avec imprimatur</th>
+      <th>Pourcentage avec imprimatur</th>
     </tr>
   </thead>
   <tbody>
