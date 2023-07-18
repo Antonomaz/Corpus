@@ -138,9 +138,9 @@ Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>authorship status</th>
-      <th>count</th>
-      <th>percentage</th>
+      <th>Statut de l'auteur</th>
+      <th>Nombre d'auteurs</th>
+      <th>Pourcentage</th>
     </tr>
   </thead>
   <tbody>

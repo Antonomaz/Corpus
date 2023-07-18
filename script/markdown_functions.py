@@ -24,7 +24,10 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
     md < f"Sur Antonomaz, environ {ceil(stat_dict['author_stats'].at[1, 'percentage'])}  % d’écrits ({stat_dict['author_stats'].at[1, 'count']} imprimés) sont sans nom d'auteurs, {int(stat_dict['author_stats'].at[2, 'percentage'])}  % affichent un pseudonyme au sens large : initiales et pseudonymes ({stat_dict['author_stats'].at[2, 'count']} imprimés)."
     md < "Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur le document), l'imprimé n'est pas compté comme anonyme."
-    md < stat_dict["author_stats"].to_html(header=True, index=False)
+    author_stats_df = stat_dict["author_stats"]
+    author_stats_df.columns = ["Statut de l'auteur", "Nombre d'auteurs", "Pourcentage"]
+    author_stats_df.index = ["Auteur nommé", "Auteur Anonyme", "Pseudonyme"]
+    md < author_stats_df.to_html(header=True, index=False)
     md < "Statistiques proposées par H. Carrier (échantillon de 1000 écrits, 1/5 du corpus global)"|md.bold
     md < f"A titre de comparaison, on peut observer les statistiques qu'H. Carrier avait proposées, établies sur un ensemble \"d'un millier de mazarinades prises au hasard\", où \"les différents genres et années de publication se trouvent équitablement répartis\" par H. Carrier (_La Presse de la Fronde (1648-1653): Les mazarinades. Les hommes du livre_, Genève, Droz, 1991, t. 2, p. 150.)."
     md < "Il estime l’anonymat à 83% des pièces, à quoi il ajoute 7% de cryptonymes."|md.bold
