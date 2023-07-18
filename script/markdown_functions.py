@@ -69,7 +69,7 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     # renaming column labels
     nb_page_stat_df = stat_dict["nb_page_stat"]
     nb_page_stat_df.columns = ["Nombre de pages", "Nombre de mazarinades", "Pourcentage"]
-    nb_page_stat_df.sort_values("Nombre de pages")
+    nb_page_stat_df.sort_values(by=["Nombre de pages"], inplace=True)
     print(nb_page_stat_df)
     md < stat_dict["nb_page_stat"].to_html(header=True, index=False)
     md < "Date de publication"|md.h3
