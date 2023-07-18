@@ -135,11 +135,11 @@ Sur Antonomaz, environ 57  % d’écrits (1747 imprimés) sont sans nom d'auteur
 
 Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur le document), l'imprimé n'est pas compté comme anonyme.
 
-<table style="width:100%;" border="1" class="dataframe">
+<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: center;">
       <th></th>
-      <th>Nombre d'auteurs</th>
+      <th>Nombre de mazarinades</th>
       <th>Pourcentage</th>
     </tr>
   </thead>
@@ -183,24 +183,24 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>info status</th>
-      <th>count</th>
-      <th>percentage</th>
+      <th></th>
+      <th>Nombre de mazarinades</th>
+      <th>Pourcentage</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>unnamed_publisher</td>
+      <th>Imprimeur anonyme</th>
       <td>1390</td>
       <td>45.350734</td>
     </tr>
     <tr>
-      <td>pseudonym</td>
+      <th>Pseudonyme</th>
       <td>4</td>
       <td>0.130506</td>
     </tr>
     <tr>
-      <td>named_publisher+known_pub_date+known_pub_place</td>
+      <th>Adresse typographique complète</th>
       <td>1671</td>
       <td>54.518760</td>
     </tr>
