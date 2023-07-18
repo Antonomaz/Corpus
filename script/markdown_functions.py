@@ -57,11 +57,20 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     print(imprimatur_stat_df)
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
     md < imprimatur_stat_df.to_html(header=True, index=False)
-    md < "Imprimatur per year"|md.h3
+    md < "Imprimatur par an"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
-    md < stat_dict["imprimatur_per_year_stats"].to_html(header=True, index=False)
+    # renaming column labels
+    imprimatur_per_year_stats_df = stat_dict["imprimatur_per_year_stats"]
+    imprimatur_per_year_stats_df.columns = ["Année", "Nombre avec imprimatur", "Pourcentage avec imprimatur"]
+    print(imprimatur_per_year_stats_df)
+    md < imprimatur_per_year_stats_df.to_html(header=True, index=False)
     md < "Nombre de pages"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
+    # renaming column labels
+    nb_page_stat_df = stat_dict["nb_page_stat"]
+    nb_page_stat_df.columns = ["Nombre de pages", "Nombre de mazarinades", "Pourcentage"]
+    nb_page_stat_df.sort_values("Nombre de pages")
+    print(nb_page_stat_df)
     md < stat_dict["nb_page_stat"].to_html(header=True, index=False)
     md < "Date de publication"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
