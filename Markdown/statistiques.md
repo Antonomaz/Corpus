@@ -135,7 +135,7 @@ Sur Antonomaz, environ 57  % d’écrits (1747 imprimés) sont sans nom d'auteur
 
 Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur le document), l'imprimé n'est pas compté comme anonyme.
 
-<table border="1" class="dataframe">
+<table style="width:100%;" border="1" class="dataframe">
   <thead>
     <tr style="text-align: center;">
       <th></th>
@@ -150,7 +150,7 @@ Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur 
       <td>40.717781</td>
     </tr>
     <tr>
-      <th>Auteur Anonyme</th>
+      <th>Auteur anonyme</th>
       <td>1747</td>
       <td>56.998369</td>
     </tr>

@@ -27,9 +27,9 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     author_stats_df = stat_dict["author_stats"]
     author_stats_df.columns = ["Statut de l'auteur", "Nombre d'auteurs", "Pourcentage"]
     author_stats_df.set_index("Statut de l'auteur", inplace=True)
-    author_stats_df.index = ["Auteur nommé", "Auteur Anonyme", "Pseudonyme"]
+    author_stats_df.index = ["Auteur nommé", "Auteur anonyme", "Pseudonyme"]
     print(author_stats_df)
-    md < author_stats_df.to_html(header=True, index=True, justify="center", index_names=True)
+    md < author_stats_df.to_html(header=True, index=True, justify="center", index_names=True).replace('<table', '<table style="width:100%;"')
     md < "Statistiques proposées par H. Carrier (échantillon de 1000 écrits, 1/5 du corpus global)"|md.bold
     md < f"A titre de comparaison, on peut observer les statistiques qu'H. Carrier avait proposées, établies sur un ensemble \"d'un millier de mazarinades prises au hasard\", où \"les différents genres et années de publication se trouvent équitablement répartis\" par H. Carrier (_La Presse de la Fronde (1648-1653): Les mazarinades. Les hommes du livre_, Genève, Droz, 1991, t. 2, p. 150.)."
     md < "Il estime l’anonymat à 83% des pièces, à quoi il ajoute 7% de cryptonymes."|md.bold
