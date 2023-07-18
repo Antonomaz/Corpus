@@ -236,16 +236,16 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
   </tbody>
 </table>
 
-### Imprimatur per year
+### Imprimatur par an
 
 __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>year</th>
-      <th>count</th>
-      <th>percentage</th>
+      <th>Année</th>
+      <th>Nombre avec imprimatur</th>
+      <th>Pourcentage avec imprimatur</th>
     </tr>
   </thead>
   <tbody>
@@ -299,9 +299,9 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>nb_page</th>
-      <th>count</th>
-      <th>percentage</th>
+      <th>Nombre de pages</th>
+      <th>Nombre de mazarinades</th>
+      <th>Pourcentage</th>
     </tr>
   </thead>
   <tbody>
