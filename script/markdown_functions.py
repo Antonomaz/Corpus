@@ -10,7 +10,7 @@ antonomaz_corpus_link:str="https://github.com/Antonomaz"
 bibliography_stats:str = "../Markdown/script_fuel/bibliography_stats.md"
 
 def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STATISTIQUES", bibliographies_link:str=bibliographies_link, antonomaz_corpus_link:str=antonomaz_corpus_link, bibliography_stats:str = bibliography_stats):
-    #load the stats data
+    #load the stats data (key name: base file name without extension)
     stat_dict:dict = {Path(csv_file).parts[-1][:-4]: pd.read_csv(filepath_or_buffer=csv_file) for csv_file in glob.glob(data_dir)}
     #write markdown file
     md = markdownipy.markdownipy()
@@ -26,7 +26,9 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     md < "Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur le document), l'imprimé n'est pas compté comme anonyme."
     author_stats_df = stat_dict["author_stats"]
     author_stats_df.columns = ["Statut de l'auteur", "Nombre d'auteurs", "Pourcentage"]
+    author_stats_df.set_index("Statut de l'auteur", inplace=True)
     author_stats_df.index = ["Auteur nommé", "Auteur Anonyme", "Pseudonyme"]
+    print(author_stats_df)
     md < author_stats_df.to_html(header=True, index=False)
     md < "Statistiques proposées par H. Carrier (échantillon de 1000 écrits, 1/5 du corpus global)"|md.bold
     md < f"A titre de comparaison, on peut observer les statistiques qu'H. Carrier avait proposées, établies sur un ensemble \"d'un millier de mazarinades prises au hasard\", où \"les différents genres et années de publication se trouvent équitablement répartis\" par H. Carrier (_La Presse de la Fronde (1648-1653): Les mazarinades. Les hommes du livre_, Genève, Droz, 1991, t. 2, p. 150.)."

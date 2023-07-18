@@ -138,24 +138,20 @@ Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>Statut de l'auteur</th>
       <th>Nombre d'auteurs</th>
       <th>Pourcentage</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>named_author</td>
       <td>1248</td>
       <td>40.717781</td>
     </tr>
     <tr>
-      <td>unnamed_author</td>
       <td>1747</td>
       <td>56.998369</td>
     </tr>
     <tr>
-      <td>pseudonym</td>
       <td>70</td>
       <td>2.283850</td>
     </tr>
