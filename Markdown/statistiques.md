@@ -760,51 +760,16 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>year</th>
-      <th>count</th>
-      <th>percentage</th>
+      <th>Année</th>
+      <th>Nombre de mazarinades</th>
+      <th>Pourcentage</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Sans Date</td>
-      <td>38</td>
-      <td>1.239804</td>
-    </tr>
-    <tr>
-      <td>1649</td>
-      <td>1414</td>
-      <td>46.133768</td>
-    </tr>
-    <tr>
-      <td>1652</td>
-      <td>938</td>
-      <td>30.603589</td>
-    </tr>
-    <tr>
-      <td>1651</td>
-      <td>332</td>
-      <td>10.831974</td>
-    </tr>
-    <tr>
-      <td>1650</td>
-      <td>276</td>
-      <td>9.004894</td>
-    </tr>
-    <tr>
-      <td>1654</td>
-      <td>12</td>
-      <td>0.391517</td>
-    </tr>
-    <tr>
-      <td>1662</td>
+      <td>1634</td>
       <td>1</td>
       <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>1655</td>
-      <td>2</td>
-      <td>0.065253</td>
     </tr>
     <tr>
       <td>1648</td>
@@ -812,9 +777,24 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
       <td>1.337684</td>
     </tr>
     <tr>
-      <td>1634</td>
-      <td>1</td>
-      <td>0.032626</td>
+      <td>1649</td>
+      <td>1414</td>
+      <td>46.133768</td>
+    </tr>
+    <tr>
+      <td>1650</td>
+      <td>276</td>
+      <td>9.004894</td>
+    </tr>
+    <tr>
+      <td>1651</td>
+      <td>332</td>
+      <td>10.831974</td>
+    </tr>
+    <tr>
+      <td>1652</td>
+      <td>938</td>
+      <td>30.603589</td>
     </tr>
     <tr>
       <td>1653</td>
@@ -822,14 +802,34 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
       <td>0.261011</td>
     </tr>
     <tr>
-      <td>1663</td>
-      <td>1</td>
-      <td>0.032626</td>
+      <td>1654</td>
+      <td>12</td>
+      <td>0.391517</td>
+    </tr>
+    <tr>
+      <td>1655</td>
+      <td>2</td>
+      <td>0.065253</td>
     </tr>
     <tr>
       <td>1656</td>
       <td>1</td>
       <td>0.032626</td>
+    </tr>
+    <tr>
+      <td>1662</td>
+      <td>1</td>
+      <td>0.032626</td>
+    </tr>
+    <tr>
+      <td>1663</td>
+      <td>1</td>
+      <td>0.032626</td>
+    </tr>
+    <tr>
+      <td>Sans Date</td>
+      <td>38</td>
+      <td>1.239804</td>
     </tr>
   </tbody>
 </table>
@@ -841,31 +841,26 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>place</th>
-      <th>count</th>
-      <th>percentage</th>
+      <th>Lieu</th>
+      <th>Nombre de mazarinades</th>
+      <th>Pourcentage</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Sans Lieu</td>
-      <td>713</td>
-      <td>23.262643</td>
-    </tr>
     <tr>
       <td>Saint-Germain-en-Laye</td>
       <td>16</td>
       <td>0.522023</td>
     </tr>
     <tr>
-      <td>Paris</td>
-      <td>2201</td>
-      <td>71.810767</td>
-    </tr>
-    <tr>
       <td>Pontoise</td>
       <td>20</td>
       <td>0.652529</td>
+    </tr>
+    <tr>
+      <td>Rouen</td>
+      <td>24</td>
+      <td>0.783034</td>
     </tr>
     <tr>
       <td>Orléans</td>
@@ -878,9 +873,14 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
       <td>1.141925</td>
     </tr>
     <tr>
-      <td>Rouen</td>
-      <td>24</td>
-      <td>0.783034</td>
+      <td>Sans Lieu</td>
+      <td>713</td>
+      <td>23.262643</td>
+    </tr>
+    <tr>
+      <td>Paris</td>
+      <td>2201</td>
+      <td>71.810767</td>
     </tr>
   </tbody>
 </table>
@@ -892,24 +892,20 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>publisher status</th>
-      <th>count</th>
-      <th>percentage</th>
+      <th>Nombre de mazarinades</th>
+      <th>Pourcentage</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>named_publisher</td>
       <td>1693</td>
       <td>55.236542</td>
     </tr>
     <tr>
-      <td>unnamed_publisher</td>
       <td>1368</td>
       <td>44.632953</td>
     </tr>
     <tr>
-      <td>pseudonym</td>
       <td>4</td>
       <td>0.130506</td>
     </tr>

@@ -24,9 +24,10 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
     md < f"Sur Antonomaz, environ {ceil(stat_dict['author_stats'].at[1, 'percentage'])}  % d’écrits ({stat_dict['author_stats'].at[1, 'count']} imprimés) sont sans nom d'auteurs, {int(stat_dict['author_stats'].at[2, 'percentage'])}  % affichent un pseudonyme au sens large : initiales et pseudonymes ({stat_dict['author_stats'].at[2, 'count']} imprimés)."
     md < "Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur le document), l'imprimé n'est pas compté comme anonyme."
+    # changing column and row labels
     author_stats_df = stat_dict["author_stats"]
-    author_stats_df.columns = ["Statut de l'auteur", "Nombre de mazarinades", "Pourcentage"]
-    author_stats_df.set_index("Statut de l'auteur", inplace=True)
+    author_stats_df.columns = ["authorship_status", "Nombre de mazarinades", "Pourcentage"]
+    author_stats_df.set_index("authorship_status", inplace=True)
     author_stats_df.index = ["Auteur nommé", "Auteur anonyme", "Pseudonyme"]
     print(author_stats_df)
     md < author_stats_df.to_html(header=True, index=True, justify="center", index_names=True)
@@ -75,13 +76,29 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     md < stat_dict["nb_page_stat"].to_html(header=True, index=False)
     md < "Date de publication"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
-    md < stat_dict["pub_date_stat"].to_html(header=True, index=False)
+    # renaming column labels
+    pub_date_stat_df = stat_dict["pub_date_stat"]
+    pub_date_stat_df.columns = ["Année", "Nombre de mazarinades", "Pourcentage"]
+    pub_date_stat_df.sort_values(by=["Année"], inplace=True)
+    print(pub_date_stat_df)
+    md < pub_date_stat_df.to_html(header=True, index=False)
     md < "Lieu de publication"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
-    md < stat_dict["pub_place_stat"].to_html(header=True, index=False)
+    # renaming column labels
+    pub_place_stat_df = stat_dict["pub_place_stat"]
+    pub_place_stat_df.columns = ["Lieu", "Nombre de mazarinades", "Pourcentage"]
+    pub_place_stat_df.sort_values(by=["Pourcentage"], inplace=True)
+    print(pub_place_stat_df)
+    md < pub_place_stat_df.to_html(header=True, index=False)
     md < "Nom d'imprimeur"|md.h3
     md < "Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)"|md.bold
-    md < stat_dict["publisher_stats"].to_html(header=True, index=False)
+    # changing column and row labels
+    publisher_stats_df = stat_dict["publisher_stats"]
+    publisher_stats_df.columns = ["publisher_status", "Nombre de mazarinades", "Pourcentage"]
+    publisher_stats_df.set_index("publisher_status", inplace=True)
+    publisher_stats_df.index = ["Imprimeur nommé", "Imprimeur anonyme", "Pseudonyme"]
+    print(publisher_stats_df)
+    md < publisher_stats_df.to_html(header=True, index=False)
 
     
     #print(stat_dict["all_info_publisher_stats"].at[2, "percentage"])
