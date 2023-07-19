@@ -848,29 +848,9 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
   </thead>
   <tbody>
     <tr>
-      <td>Saint-Germain-en-Laye</td>
-      <td>16</td>
-      <td>0.522023</td>
-    </tr>
-    <tr>
-      <td>Pontoise</td>
-      <td>20</td>
-      <td>0.652529</td>
-    </tr>
-    <tr>
-      <td>Rouen</td>
-      <td>24</td>
-      <td>0.783034</td>
-    </tr>
-    <tr>
-      <td>Orléans</td>
-      <td>27</td>
-      <td>0.880914</td>
-    </tr>
-    <tr>
-      <td>Bordeaux</td>
-      <td>35</td>
-      <td>1.141925</td>
+      <td>Paris</td>
+      <td>2201</td>
+      <td>71.810767</td>
     </tr>
     <tr>
       <td>Sans Lieu</td>
@@ -878,9 +858,29 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
       <td>23.262643</td>
     </tr>
     <tr>
-      <td>Paris</td>
-      <td>2201</td>
-      <td>71.810767</td>
+      <td>Bordeaux</td>
+      <td>35</td>
+      <td>1.141925</td>
+    </tr>
+    <tr>
+      <td>Orléans</td>
+      <td>27</td>
+      <td>0.880914</td>
+    </tr>
+    <tr>
+      <td>Rouen</td>
+      <td>24</td>
+      <td>0.783034</td>
+    </tr>
+    <tr>
+      <td>Pontoise</td>
+      <td>20</td>
+      <td>0.652529</td>
+    </tr>
+    <tr>
+      <td>Saint-Germain-en-Laye</td>
+      <td>16</td>
+      <td>0.522023</td>
     </tr>
   </tbody>
 </table>
@@ -892,20 +892,24 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
+      <th></th>
       <th>Nombre de mazarinades</th>
       <th>Pourcentage</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <th>Imprimeur nommé</th>
       <td>1693</td>
       <td>55.236542</td>
     </tr>
     <tr>
+      <th>Imprimeur anonyme</th>
       <td>1368</td>
       <td>44.632953</td>
     </tr>
     <tr>
+      <th>Pseudonyme</th>
       <td>4</td>
       <td>0.130506</td>
     </tr>

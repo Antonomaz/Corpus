@@ -87,7 +87,7 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     # renaming column labels
     pub_place_stat_df = stat_dict["pub_place_stat"]
     pub_place_stat_df.columns = ["Lieu", "Nombre de mazarinades", "Pourcentage"]
-    pub_place_stat_df.sort_values(by=["Pourcentage"], inplace=True)
+    pub_place_stat_df.sort_values(by=["Pourcentage"], inplace=True, ascending=False)
     print(pub_place_stat_df)
     md < pub_place_stat_df.to_html(header=True, index=False)
     md < "Nom d'imprimeur"|md.h3
@@ -98,7 +98,7 @@ def update_markdown_stats(data_dir:str, markdown_filepath:str="", title:str="STA
     publisher_stats_df.set_index("publisher_status", inplace=True)
     publisher_stats_df.index = ["Imprimeur nommé", "Imprimeur anonyme", "Pseudonyme"]
     print(publisher_stats_df)
-    md < publisher_stats_df.to_html(header=True, index=False)
+    md < publisher_stats_df.to_html(header=True, index=True)
 
     
     #print(stat_dict["all_info_publisher_stats"].at[2, "percentage"])
