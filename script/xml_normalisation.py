@@ -3,12 +3,14 @@ import xml.etree.ElementTree as ET
 import glob
 import flatdict
 import re
+from pathlib import Path
 import dateutil.parser as duparser
 from tqdm.auto import tqdm
 from tei_to_json import tei_to_json_file
 from json_stats_normalised import test_stats #unknown_pub_date, unknown_pub_name, unknown_pub_place
 #test_dir:str = "../tests/Mazarinades_tests/*/*.xml"
-test_dir:str = "../Mazarinades/*/*.xml"
+#test_dir:str = "../Mazarinades/*/*.xml"
+
 back_up_dir:str = "../Mazarinades_bak/*/*.xml"
 maz_dir:str = "../Mazarinades/Bibliotheque_Mazarine/*.xml"
 #maz_dir:str = "../tests/Mazarinades_tests/Bibliotheque_Mazarine/*.xml"
@@ -21,7 +23,7 @@ test_file5:str = "../tests/Mazarinades_tests/2001-2100/Moreau2022_GBOOKS.xml"
 test_file6:str = "../tests/Mazarinades_tests/2001-2100/Moreau2082_GBOOKS.xml"
 test_file7:str = "../tests/Mazarinades_tests/2001-2100/Moreau2012_GBOOKS.xml"
 test_file8:str = "../tests/Mazarinades_tests/1301-1400/Moreau1372_GALL.xml"
-
+test_file9:str = "../Mazarinades/3001-3100/Moreau3003_GBOOKS.xml"
 unknown_pub_place: str = "Sans Lieu"
 unknown_pub_name: str = "Sans Nom"
 unknown_pub_date:str = "Sans Date"
@@ -307,6 +309,74 @@ def change_attribute_name_dir(dir_path:str, tag:str, old_attribute:str, new_attr
         change_attribute_name(input_filepath=filepath, output_filepath=filepath, tag=tag, old_attribute=old_attribute,new_attribute=new_attribute, namespace=XMLNS)
     return
 
+def reformat_first_page():
+    return
+
+def update_xml_body(input_filepath:str, output_dir:str, text_dir_path:str, engine:str|None=None, xml_declaration:str|None = XML_HEADER):
+    input_file = open(file=input_filepath, mode="r", encoding="utf-8")
+    if xml_declaration is None:
+        #retrieve xml_declaration
+        xml_declaration = ""
+        for line in input_file:
+            if re.match(pattern=r"^(<TEI).*", string=line):
+                break
+            xml_declaration += line
+    if engine is None:
+        engine = Path(text_dir_path).stem
+    # register XMLNS
+    ET.register_namespace(prefix="", uri=XMLNS)
+    #parse the original xml
+    og_tree = ET.parse(source=input_filepath)
+    og_root = og_tree.getroot()
+    og_header = og_root[0]
+    og_body = og_root[1][0]
+    # update engine in projectDesc
+    og_projectDesc_p_list:list = og_root.findall(f".//ns:projectDesc/ns:p", namespaces={"ns":XMLNS})
+    for project_p in og_projectDesc_p_list:
+        if "kraken" in project_p.text.lower():
+            project_p.text = f"L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec {engine}."
+            print(project_p.text)
+    # update the body of the document
+    # keep the first page
+    dummy_root = ET.Element("dummy_root")
+    dummy_root.text = ""
+    dummy_tree = ET.ElementTree(element=(dummy_root))
+    #first_page_str:str = ""
+    capture:bool = False
+    for element in og_body.iter():
+        print(capture)
+        if element.tag == f"{{{XMLNS}}}pb":
+            if element.attrib.get("n") == "1":
+                capture = True
+            else: 
+                capture = False
+                break
+        if capture:
+            dummy_subelement = ET.SubElement(dummy_root, element.tag, element.attrib)
+            dummy_subelement.tail = element.tail
+            dummy_root.append(ET.Element(element.tag))
+            #dummy_root.text += ET.tostring(element=element, encoding="unicode", xml_declaration=False)
+    #print(ET.tostring(element=dummy_root, encoding="unicode", xml_declaration=False))
+    # keep track of figures to re-insert them in the corrected text in the appropriate location later
+    figure_elements: list[dict] = []
+    for element in reversed(list(og_body.iter())):
+        if element.tag == f"{{{XMLNS}}}figure":
+            figure_loc_dict:dict = {"figure_el": element, "context":None, "pb": None}
+            figure_elements.append(figure_loc_dict)
+            continue
+        elif len(figure_elements) != 0:
+            #print(f"tag: {element.tag}")
+            #print(f"tail:{element.tail}")
+            if element.tag == f"{{{XMLNS}}}pb":
+                if figure_elements[-1]["pb"] is None:
+                    figure_elements[-1]["pb"] = element.attrib.get("n")
+            else:
+                if figure_elements[-1]["context"] is None:
+                    figure_elements[-1]["context"] = element.tail    
+    print(figure_elements)    
+    return
+    
+
 if __name__ == "__main__":
     #normalise_xml(input_filepath=test_file1)
     #normalise_xml(input_filepath=test_file2)
@@ -318,10 +388,14 @@ if __name__ == "__main__":
     #tei_to_json_file(filepath="temp_xml/temp.xml", main_output_dir="./temp")
     #normalise_names(input_filepath=test_file8, output_filepath="temp_xml/temp.xml", value_to_change="pièce de théâtre", replacement="texte de forme théâtrale")
     #tei_to_json_file(filepath="temp_xml/temp.xml", main_output_dir="./temp")
-#test_stats()
-
+    #test_stats()
     #change_attribute_name(input_filepath=test_BM_file, output_filepath="temp_xml/BM.xml", tag="pb", old_attribute="n", new_attribute="vue", namespace=namespace)
     #change_attribute_name_dir(dir_path=maz_dir, tag="pb", old_attribute="n", new_attribute="vue", namespace=namespace)
 
-    normalise_xml_dir(dir_path=test_dir, value_to_change="pièce de théâtre", replacement="texte de forme théâtrale", change_name=True)
+    #normalise_xml_dir(dir_path=test_dir, value_to_change="pièce de théâtre", replacement="texte de forme théâtrale", change_name=True)
     #normalise_xml_dir(dir_path="../Mazarinades/Antonomaz/*.xml", value_to_change="pièce de théâtre", replacement="texte de forme théâtrale", change_name=True)
+    
+    #################################### update tests 
+    test_dir:str = "../tests"
+    text_dir_path:str = "../../Ressources/PDF_to_TEI/2-textes_concat/kraken4.3.13.dev18/"
+    update_xml_body(input_filepath=test_file9, output_dir=test_dir, text_dir_path=text_dir_path,xml_declaration=XML_HEADER)
