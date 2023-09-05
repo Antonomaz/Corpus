@@ -1,7 +1,7 @@
 # STATISTIQUES
 
 Vu le nombre important d'entités dans le corpus des mazarinades, il semble utile de proposer quelques exploitations statistiques.
-Nous le faisons à partir de deux jeux de données combinés : les métadonnées issues de la tradition bibliographique (les plus complètes), et celles issues du corpus Antonomaz, moins complètes (2/3 de cet ensemble), mais plus précises sur certains points (présence ou non d'un nom d'auteur et d'un nom d'imprimeur libraire).
+Nous le faisons à partir de deux jeux de données combinés : les métadonnées issues de la tradition bibliographique (les plus complètes), et celles issues du corpus Antonomaz, moins complètes (2/3 de cet ensemble), mais plus précises sur certains points (présence ou non d'un nom d'auteur et d'un nom d'imprimeur libraire, d'une permission...).
 
 [Bibliographies](https://antonomaz.huma-num.fr/tools/Biblio_Moreau.html) [Projet Antonomaz](https://github.com/Antonomaz)
 
@@ -56,7 +56,7 @@ En exploitant les données issues des bibliographies du XIXe siècle, à savoir 
     <td>3 196</td>
   </tr>
   <tr>
-    <th scope="row">Pourcentage</th>
+    <th scope="row">%</th>
     <td>3 %</td>
     <td>91.3 %</td>
     <td>1 %</td>
@@ -105,7 +105,7 @@ Les données suivantes ont été calculées à partir des 4 664 entrées des bib
     <td>3840</td>
   </tr>
   <tr>
-    <th scope="row">Pourcentage</th>
+    <th scope="row">%</th>
     <td>11 %</td>
     <td>6 %</td>
     <td>20 %</td>
@@ -140,45 +140,40 @@ Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur 
     <tr style="text-align: center;">
       <th></th>
       <th>Nombre de mazarinades</th>
-      <th>Pourcentage</th>
+      <th>%</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>Auteur nommé</th>
       <td>1248</td>
-      <td>40.717781</td>
+      <td>40.7</td>
     </tr>
     <tr>
       <th>Auteur anonyme</th>
       <td>1747</td>
-      <td>56.998369</td>
+      <td>57</td>
     </tr>
     <tr>
       <th>Pseudonyme</th>
       <td>70</td>
-      <td>2.283850</td>
+      <td>2.3</td>
     </tr>
   </tbody>
 </table>
 
-__Statistiques proposées par H. Carrier (échantillon de 1000 écrits, 1/5 du corpus global)__
+À titre de comparaison, on peut observer les statistiques qu'H. Carrier avait proposées, établies sur un ensemble "d'un millier de mazarinades prises au hasard", où "les différents genres et années de publication se trouvent équitablement répartis" par H. Carrier (_La Presse de la Fronde (1648-1653): Les mazarinades. Les hommes du livre_, Genève, Droz, 1991, t. 2, p. 150.).
+Il travaille donc sur un échantillon de 1000 écrits, soit 1/5 du corpus global.
 
-A titre de comparaison, on peut observer les statistiques qu'H. Carrier avait proposées, établies sur un ensemble "d'un millier de mazarinades prises au hasard", où "les différents genres et années de publication se trouvent équitablement répartis" par H. Carrier (_La Presse de la Fronde (1648-1653): Les mazarinades. Les hommes du livre_, Genève, Droz, 1991, t. 2, p. 150.).
+__Carrier estime l’anonymat affiché à 83% des pièces, à quoi il ajoute 7% de cryptonymes.__
 
-__Il estime l’anonymat à 83% des pièces, à quoi il ajoute 7% de cryptonymes.__
-
-__Seules 10% de cet échantillon de mazarinades affichent donc un nom d'auteur, et 90 % effacent leur origine énonciative.__
-
-Il exclut les pièces officielles types actes royaux, mais aussi "lettres authentiques, manifestes et déclarations des principaux personnages de l’État", problablement parce qu'il estime qu'elles sont évidemment attribuées et que la question de l'auteur n'a pas d'intérêt (_ibid._, p. 77). 
-
-Son chiffre rend donc compte de l'anonymat affiché (il compte comme anonymes même les pièces dont l'auteur nous est connu par le contexte, et pouvait l'être, parfois évidemment, par les contemporains). Le chiffre ne reflète donc pas le savoir actuel sur les auteurs de mazarinades, mais est un très bon indicateur de l'effet d'anonymat massif produit par ces imprimés.
+Ainsi, si on considère comme Carrier l'anonymat affiché, seules 10% de cet échantillon de mazarinades affichent un nom d'auteur, et 90 % effacent leur origine énonciative. Il exclut les pièces officielles types actes royaux, mais aussi "lettres authentiques, manifestes et déclarations des principaux personnages de l’État", problablement parce qu'il estime qu'elles sont évidemment attribuées et que la question de l'auteur n'a pas d'intérêt (_ibid._, p. 77). Son chiffre rend donc compte de l'anonymat affiché (il compte comme anonymes même les pièces dont l'auteur nous est connu par le contexte, et pouvait l'être, parfois évidemment, par les contemporains). Le chiffre ne reflète donc pas le savoir actuel sur les auteurs de mazarinades, mais est un très bon indicateur de l'effet d'anonymat massif produit par ces imprimés.
 
 ### Taux d'anonymat typographique (noms d'imprimeur-libraire indiqués ou non)
 
 __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 
-55 % de mazarinades inscrivent une adresse typographique complète (environ la même proportion que celle indiquée par Carrier _infra_). Pour les 45 % imprimés restants, on peut penser que c'est par prudence que ni le nom ni l'adresse des imprimeurs-libraires ne sont affichés ; cela représentait un risque commercial puisque l'acheteur ne pouvait pas identifier le lieu où se procurer le libelle.
+55 % de mazarinades inscrivent une adresse typographique complète (environ la même proportion que celle indiquée par Carrier _infra_). Pour les 45 % imprimés restants, on peut penser que c'est par prudence que ni le nom ni l'adresse des imprimeurs-libraires ne sont affichés. En contrepartie, cet effacement représentait un risque commercial puisque l'acheteur ne pouvait pas identifier le lieu où se procurer le libelle.
 
 <table border="1" class="dataframe">
   <thead>
@@ -192,727 +187,45 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
     <tr>
       <th scope="col">Imprimeur anonyme</th>
       <td>1390</td>
-      <td>45.350734</td>
+      <td>45.3</td>
     </tr>
     <tr>
       <th scope="col">Pseudonyme</th>
       <td>4</td>
-      <td>0.130506</td>
+      <td>0.15</td>
     </tr>
     <tr>
       <th scope="col">Adresse typographique complète</th>
       <td>1671</td>
-      <td>54.518760</td>
+      <td>54.55</td>
     </tr>
   </tbody>
 </table>
 
-__Statistiques proposées par H. Carrier (échantillon de 1000 écrits, 1/5 du corpus global)__
-
-Sur son échantillon de 1000 mazarinades calibrées en fonction des genres et des années, H. Carrier calcule que 16 % des mazarinades ne donnent aucune information éditoriale, 31 % affichent le lieu et la date de publication. Enfin, il note que  53 % de ces imprimés ont une adresse typographique complète (lieu, date, nom d'imprimeur), sensiblement la même proportion que pour Antonomaz.
+Sur son échantillon de 1000 mazarinades calibrées en fonction des genres et des années (1/5 du corpus global), H. Carrier calcule que 16 % des mazarinades ne donnent aucune information éditoriale, 31 % affichent le lieu et la date de publication. Enfin, il note que  53 % de ces imprimés ont une adresse typographique complète (lieu, date, nom d'imprimeur), sensiblement la même proportion que pour Antonomaz.
 
 __Globlament donc on peut affirmer qu'une mazarinade sur deux affiche son origine typographique.__
 
-Il note également que ces chiffres varient au cours de la Fronde : si 64% des mazarinades de l'échantillon étudié présentent une adresse typographique complète en 1649, ils ne sont plus que 38% en 1652.
+Carrier note également que ces chiffres varient au cours de la Fronde : si 64% des mazarinades de l'échantillon étudié présentent une adresse typographique complète en 1649, ils ne sont plus que 38% en 1652.
 
-### Imprimatur
+### Affichage d'un privilège ou d'une permission
 
-__Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
+Les libelles émanent soit d'officines d'imprimeurs qui agissent clandestinement ou peuvent réponde aux demandes des pouvoirs ayant le contrôle de l'imprimé (pouvoir royal, parlements, voire factions comme celle de Condé ou de Gaston d'Orléans). 
+La grande majorité (3/4) ne sont pas officiellement autorisés et ne mentionnent donc pas de privilège ou de permis d'imprimer ou de vendre. Il est vraisemblable que les mentions "Avec permission de vendre" ne correspondent pas toujours à une autorisation effective des pouvoirs. 
 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th>Nombre total de mazarinades</th>
-      <th>Nombre avec imprimatur</th>
-      <th>Pourcentage avec imprimatur</th>
+      <th>Nombre avec privilège ou permission</th>
+      <th>%</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>3065</td>
       <td>755</td>
-      <td>24.632953</td>
-    </tr>
-  </tbody>
-</table>
-
-### Imprimatur par an
-
-__Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Année</th>
-      <th>Nombre avec imprimatur</th>
-      <th>Pourcentage avec imprimatur</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1648</td>
-      <td>18</td>
-      <td>0.587276</td>
-    </tr>
-    <tr>
-      <td>1649</td>
-      <td>476</td>
-      <td>15.530179</td>
-    </tr>
-    <tr>
-      <td>1650</td>
-      <td>37</td>
-      <td>1.207178</td>
-    </tr>
-    <tr>
-      <td>1651</td>
-      <td>54</td>
-      <td>1.761827</td>
-    </tr>
-    <tr>
-      <td>1652</td>
-      <td>164</td>
-      <td>5.350734</td>
-    </tr>
-    <tr>
-      <td>1653</td>
-      <td>4</td>
-      <td>0.130506</td>
-    </tr>
-    <tr>
-      <td>1655</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>Sans date</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-  </tbody>
-</table>
-
-### Nombre de pages
-
-__Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Nombre de pages</th>
-      <th>Nombre de mazarinades</th>
-      <th>Pourcentage</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>23</td>
-      <td>0.750408</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>7</td>
-      <td>0.228385</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>43</td>
-      <td>1.402936</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>268</td>
-      <td>8.743883</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>5</td>
-      <td>0.163132</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>169</td>
-      <td>5.513866</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>584</td>
-      <td>19.053834</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>918</td>
-      <td>29.951060</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>3</td>
-      <td>0.097879</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>29</td>
-      <td>0.946166</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>95</td>
-      <td>3.099511</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>127</td>
-      <td>4.143556</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>8</td>
-      <td>0.261011</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>67</td>
-      <td>2.185971</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>123</td>
-      <td>4.013051</td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td>141</td>
-      <td>4.600326</td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>3</td>
-      <td>0.097879</td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>18</td>
-      <td>0.587276</td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td>28</td>
-      <td>0.913540</td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td>44</td>
-      <td>1.435563</td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td>21</td>
-      <td>0.685155</td>
-    </tr>
-    <tr>
-      <td>23</td>
-      <td>30</td>
-      <td>0.978793</td>
-    </tr>
-    <tr>
-      <td>24</td>
-      <td>50</td>
-      <td>1.631321</td>
-    </tr>
-    <tr>
       <td>25</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>26</td>
-      <td>12</td>
-      <td>0.391517</td>
-    </tr>
-    <tr>
-      <td>27</td>
-      <td>9</td>
-      <td>0.293638</td>
-    </tr>
-    <tr>
-      <td>28</td>
-      <td>14</td>
-      <td>0.456770</td>
-    </tr>
-    <tr>
-      <td>29</td>
-      <td>3</td>
-      <td>0.097879</td>
-    </tr>
-    <tr>
-      <td>30</td>
-      <td>17</td>
-      <td>0.554649</td>
-    </tr>
-    <tr>
-      <td>31</td>
-      <td>25</td>
-      <td>0.815661</td>
-    </tr>
-    <tr>
-      <td>32</td>
-      <td>44</td>
-      <td>1.435563</td>
-    </tr>
-    <tr>
-      <td>34</td>
-      <td>4</td>
-      <td>0.130506</td>
-    </tr>
-    <tr>
-      <td>35</td>
-      <td>6</td>
-      <td>0.195759</td>
-    </tr>
-    <tr>
-      <td>36</td>
-      <td>13</td>
-      <td>0.424144</td>
-    </tr>
-    <tr>
-      <td>37</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>38</td>
-      <td>8</td>
-      <td>0.261011</td>
-    </tr>
-    <tr>
-      <td>39</td>
-      <td>8</td>
-      <td>0.261011</td>
-    </tr>
-    <tr>
-      <td>40</td>
-      <td>12</td>
-      <td>0.391517</td>
-    </tr>
-    <tr>
-      <td>41</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>42</td>
-      <td>3</td>
-      <td>0.097879</td>
-    </tr>
-    <tr>
-      <td>43</td>
-      <td>3</td>
-      <td>0.097879</td>
-    </tr>
-    <tr>
-      <td>44</td>
-      <td>6</td>
-      <td>0.195759</td>
-    </tr>
-    <tr>
-      <td>45</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>46</td>
-      <td>5</td>
-      <td>0.163132</td>
-    </tr>
-    <tr>
-      <td>47</td>
-      <td>3</td>
-      <td>0.097879</td>
-    </tr>
-    <tr>
-      <td>48</td>
-      <td>4</td>
-      <td>0.130506</td>
-    </tr>
-    <tr>
-      <td>50</td>
-      <td>2</td>
-      <td>0.065253</td>
-    </tr>
-    <tr>
-      <td>52</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>54</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>56</td>
-      <td>2</td>
-      <td>0.065253</td>
-    </tr>
-    <tr>
-      <td>57</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>59</td>
-      <td>2</td>
-      <td>0.065253</td>
-    </tr>
-    <tr>
-      <td>63</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>64</td>
-      <td>3</td>
-      <td>0.097879</td>
-    </tr>
-    <tr>
-      <td>68</td>
-      <td>2</td>
-      <td>0.065253</td>
-    </tr>
-    <tr>
-      <td>72</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>74</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>75</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>79</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>80</td>
-      <td>4</td>
-      <td>0.130506</td>
-    </tr>
-    <tr>
-      <td>84</td>
-      <td>5</td>
-      <td>0.163132</td>
-    </tr>
-    <tr>
-      <td>87</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>94</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>95</td>
-      <td>2</td>
-      <td>0.065253</td>
-    </tr>
-    <tr>
-      <td>107</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>108</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>114</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>116</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>118</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>119</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>133</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>150</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>152</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>166</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>192</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>199</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>218</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>235</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>240</td>
-      <td>2</td>
-      <td>0.065253</td>
-    </tr>
-    <tr>
-      <td>248</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>263</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>270</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>274</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>311</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>325</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>331</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>428</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>456</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>718</td>
-      <td>1</td>
-      <td>0.032626</td>
     </tr>
   </tbody>
 </table>
-
-### Date de publication
-
-__Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Année</th>
-      <th>Nombre de mazarinades</th>
-      <th>Pourcentage</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1634</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>1648</td>
-      <td>41</td>
-      <td>1.337684</td>
-    </tr>
-    <tr>
-      <td>1649</td>
-      <td>1414</td>
-      <td>46.133768</td>
-    </tr>
-    <tr>
-      <td>1650</td>
-      <td>276</td>
-      <td>9.004894</td>
-    </tr>
-    <tr>
-      <td>1651</td>
-      <td>332</td>
-      <td>10.831974</td>
-    </tr>
-    <tr>
-      <td>1652</td>
-      <td>938</td>
-      <td>30.603589</td>
-    </tr>
-    <tr>
-      <td>1653</td>
-      <td>8</td>
-      <td>0.261011</td>
-    </tr>
-    <tr>
-      <td>1654</td>
-      <td>12</td>
-      <td>0.391517</td>
-    </tr>
-    <tr>
-      <td>1655</td>
-      <td>2</td>
-      <td>0.065253</td>
-    </tr>
-    <tr>
-      <td>1656</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>1662</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>1663</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>Sans Date</td>
-      <td>38</td>
-      <td>1.239804</td>
-    </tr>
-  </tbody>
-</table>
-
-### Lieu de publication
-
-__Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Lieu</th>
-      <th>Nombre de mazarinades</th>
-      <th>Pourcentage</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Paris</td>
-      <td>2201</td>
-      <td>71.810767</td>
-    </tr>
-    <tr>
-      <td>Sans Lieu</td>
-      <td>713</td>
-      <td>23.262643</td>
-    </tr>
-    <tr>
-      <td>Bordeaux</td>
-      <td>35</td>
-      <td>1.141925</td>
-    </tr>
-    <tr>
-      <td>Orléans</td>
-      <td>27</td>
-      <td>0.880914</td>
-    </tr>
-    <tr>
-      <td>Rouen</td>
-      <td>24</td>
-      <td>0.783034</td>
-    </tr>
-    <tr>
-      <td>Pontoise</td>
-      <td>20</td>
-      <td>0.652529</td>
-    </tr>
-    <tr>
-      <td>Saint-Germain-en-Laye</td>
-      <td>16</td>
-      <td>0.522023</td>
-    </tr>
-  </tbody>
-</table>
-
-### Nom d'imprimeur
-
-__Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Nombre de mazarinades</th>
-      <th>Pourcentage</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Imprimeur nommé</th>
-      <td>1693</td>
-      <td>55.236542</td>
-    </tr>
-    <tr>
-      <th>Imprimeur anonyme</th>
-      <td>1368</td>
-      <td>44.632953</td>
-    </tr>
-    <tr>
-      <th>Pseudonyme</th>
-      <td>4</td>
-      <td>0.130506</td>
-    </tr>
-  </tbody>
-</table>
-
