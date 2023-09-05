@@ -208,27 +208,6 @@ __Globlament donc on peut affirmer qu'une mazarinade sur deux affiche son origin
 
 Carrier note également que ces chiffres varient au cours de la Fronde : si 64% des mazarinades de l'échantillon étudié présentent une adresse typographique complète en 1649, ils ne sont plus que 38% en 1652.
 
-### Imprimatur
-
-__Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Nombre total de mazarinades</th>
-      <th>Nombre avec imprimatur</th>
-      <th>Pourcentage avec imprimatur</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>3065</td>
-      <td>755</td>
-      <td>24.632953</td>
-    </tr>
-  </tbody>
-</table>
-
 ### Affichage d'un privilège ou d'une permission
 
 Les libelles émanent soit d'officines d'imprimeurs qui agissent clandestinement ou peuvent réponde aux demandes des pouvoirs ayant le contrôle de l'imprimé (pouvoir royal, parlements, voire factions comme celle de Condé ou de Gaston d'Orléans). La grande majorité ne sont pas officiellement autorisés et ne mentionnent donc pas de privilège ou de permis d'imprimer ou de vendre. Il est vraisemblable que les mentions "Avec permission de vendre" ne correspondent pas toujours à une autorisation effective des pouvoirs. 
@@ -238,51 +217,16 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>Année</th>
-      <th>Nombre avec imprimatur</th>
+      <th>Nombre total de mazarinades</th>
+      <th>Nombre avec privilège ou permission</th>
       <th>Pourcentage avec imprimatur</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>1648</td>
-      <td>18</td>
-      <td>0.587276</td>
-    </tr>
-    <tr>
-      <td>1649</td>
-      <td>476</td>
-      <td>15.530179</td>
-    </tr>
-    <tr>
-      <td>1650</td>
-      <td>37</td>
-      <td>1.207178</td>
-    </tr>
-    <tr>
-      <td>1651</td>
-      <td>54</td>
-      <td>1.761827</td>
-    </tr>
-    <tr>
-      <td>1652</td>
-      <td>164</td>
-      <td>5.350734</td>
-    </tr>
-    <tr>
-      <td>1653</td>
-      <td>4</td>
-      <td>0.130506</td>
-    </tr>
-    <tr>
-      <td>1655</td>
-      <td>1</td>
-      <td>0.032626</td>
-    </tr>
-    <tr>
-      <td>Sans date</td>
-      <td>1</td>
-      <td>0.032626</td>
+      <td>3065</td>
+      <td>755</td>
+      <td>24.632953</td>
     </tr>
   </tbody>
 </table>
