@@ -187,17 +187,17 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
     <tr>
       <th scope="col">Imprimeur anonyme</th>
       <td>1390</td>
-      <td>45.350734</td>
+      <td>45.3</td>
     </tr>
     <tr>
       <th scope="col">Pseudonyme</th>
       <td>4</td>
-      <td>0.130506</td>
+      <td>0.15</td>
     </tr>
     <tr>
       <th scope="col">Adresse typographique complète</th>
       <td>1671</td>
-      <td>54.518760</td>
+      <td>54,55</td>
     </tr>
   </tbody>
 </table>
@@ -225,7 +225,7 @@ La grande majorité (3/4) ne sont pas officiellement autorisés et ne mentionnen
     <tr>
       <td>3065</td>
       <td>755</td>
-      <td>24.632953</td>
+      <td>25</td>
     </tr>
   </tbody>
 </table>
