@@ -56,7 +56,7 @@ En exploitant les données issues des bibliographies du XIXe siècle, à savoir 
     <td>3 196</td>
   </tr>
   <tr>
-    <th scope="row">Pourcentage</th>
+    <th scope="row">%</th>
     <td>3 %</td>
     <td>91.3 %</td>
     <td>1 %</td>
@@ -105,7 +105,7 @@ Les données suivantes ont été calculées à partir des 4 664 entrées des bib
     <td>3840</td>
   </tr>
   <tr>
-    <th scope="row">Pourcentage</th>
+    <th scope="row">%</th>
     <td>11 %</td>
     <td>6 %</td>
     <td>20 %</td>
@@ -140,7 +140,7 @@ Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur 
     <tr style="text-align: center;">
       <th></th>
       <th>Nombre de mazarinades</th>
-      <th>Pourcentage</th>
+      <th>%</th>
     </tr>
   </thead>
   <tbody>
