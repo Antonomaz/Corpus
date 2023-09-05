@@ -147,17 +147,17 @@ Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur 
     <tr>
       <th>Auteur nommé</th>
       <td>1248</td>
-      <td>40.717781</td>
+      <td>40.7</td>
     </tr>
     <tr>
       <th>Auteur anonyme</th>
       <td>1747</td>
-      <td>56.998369</td>
+      <td>57</td>
     </tr>
     <tr>
       <th>Pseudonyme</th>
       <td>70</td>
-      <td>2.283850</td>
+      <td>2.3</td>
     </tr>
   </tbody>
 </table>
