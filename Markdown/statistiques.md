@@ -197,7 +197,7 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
     <tr>
       <th scope="col">Adresse typographique complète</th>
       <td>1671</td>
-      <td>54,55</td>
+      <td>54.55</td>
     </tr>
   </tbody>
 </table>
@@ -218,7 +218,7 @@ La grande majorité (3/4) ne sont pas officiellement autorisés et ne mentionnen
     <tr style="text-align: right;">
       <th>Nombre total de mazarinades</th>
       <th>Nombre avec privilège ou permission</th>
-      <th>Pourcentage avec imprimatur</th>
+      <th>%</th>
     </tr>
   </thead>
   <tbody>
