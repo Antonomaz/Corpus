@@ -162,9 +162,8 @@ Dès que nous avons pu identifier l'auteur (même si ce n'est pas explicite sur 
   </tbody>
 </table>
 
-__Statistiques proposées par H. Carrier (échantillon de 1000 écrits, 1/5 du corpus global)__
-
-A titre de comparaison, on peut observer les statistiques qu'H. Carrier avait proposées, établies sur un ensemble "d'un millier de mazarinades prises au hasard", où "les différents genres et années de publication se trouvent équitablement répartis" par H. Carrier (_La Presse de la Fronde (1648-1653): Les mazarinades. Les hommes du livre_, Genève, Droz, 1991, t. 2, p. 150.).
+À titre de comparaison, on peut observer les statistiques qu'H. Carrier avait proposées, établies sur un ensemble "d'un millier de mazarinades prises au hasard", où "les différents genres et années de publication se trouvent équitablement répartis" par H. Carrier (_La Presse de la Fronde (1648-1653): Les mazarinades. Les hommes du livre_, Genève, Droz, 1991, t. 2, p. 150.).
+Il travaille donc sur un échantillon de 1000 écrits, soit 1/5 du corpus global.
 
 __Carrier estime l’anonymat affiché à 83% des pièces, à quoi il ajoute 7% de cryptonymes.__
 
@@ -203,13 +202,11 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
   </tbody>
 </table>
 
-__Statistiques proposées par H. Carrier (échantillon de 1000 écrits, 1/5 du corpus global)__
-
-Sur son échantillon de 1000 mazarinades calibrées en fonction des genres et des années, H. Carrier calcule que 16 % des mazarinades ne donnent aucune information éditoriale, 31 % affichent le lieu et la date de publication. Enfin, il note que  53 % de ces imprimés ont une adresse typographique complète (lieu, date, nom d'imprimeur), sensiblement la même proportion que pour Antonomaz.
+Sur son échantillon de 1000 mazarinades calibrées en fonction des genres et des années (1/5 du corpus global), H. Carrier calcule que 16 % des mazarinades ne donnent aucune information éditoriale, 31 % affichent le lieu et la date de publication. Enfin, il note que  53 % de ces imprimés ont une adresse typographique complète (lieu, date, nom d'imprimeur), sensiblement la même proportion que pour Antonomaz.
 
 __Globlament donc on peut affirmer qu'une mazarinade sur deux affiche son origine typographique.__
 
-Il note également que ces chiffres varient au cours de la Fronde : si 64% des mazarinades de l'échantillon étudié présentent une adresse typographique complète en 1649, ils ne sont plus que 38% en 1652.
+Carrier note également que ces chiffres varient au cours de la Fronde : si 64% des mazarinades de l'échantillon étudié présentent une adresse typographique complète en 1649, ils ne sont plus que 38% en 1652.
 
 ### Imprimatur
 
@@ -232,7 +229,9 @@ __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
   </tbody>
 </table>
 
-### Imprimatur par an
+### Affichage d'un privilège ou d'une permission
+
+Les libelles émanent soit d'officines d'imprimeurs qui agissent clandestinement ou peuvent réponde aux demandes des pouvoirs ayant le contrôle de l'imprimé (pouvoir royal, parlements, voire factions comme celle de Condé ou de Gaston d'Orléans). La grande majorité ne sont pas officiellement autorisés et ne mentionnent donc pas de privilège ou de permis d'imprimer ou de vendre. Il est vraisemblable que les mentions "Avec permission de vendre" ne correspondent pas toujours à une autorisation effective des pouvoirs. 
 
 __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 
