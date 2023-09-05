@@ -178,7 +178,7 @@ Son chiffre rend donc compte de l'anonymat affiché (il compte comme anonymes m�
 
 __Statistiques sur l'échantillon Antonomaz (2/3 du corpus global)__
 
-55 % de mazarinades inscrivent une adresse typographique complète (environ la même proportion que celle indiquée par Carrier _infra_). Pour les 45 % imprimés restants, on peut penser que c'est par prudence que ni le nom ni l'adresse des imprimeurs-libraires ne sont affichés ; cela représentait un risque commercial puisque l'acheteur ne pouvait pas identifier le lieu où se procurer le libelle.
+55 % de mazarinades inscrivent une adresse typographique complète (environ la même proportion que celle indiquée par Carrier _infra_). Pour les 45 % imprimés restants, on peut penser que c'est par prudence que ni le nom ni l'adresse des imprimeurs-libraires ne sont affichés. En contrepartie, cet effacement représentait un risque commercial puisque l'acheteur ne pouvait pas identifier le lieu où se procurer le libelle.
 
 <table border="1" class="dataframe">
   <thead>
