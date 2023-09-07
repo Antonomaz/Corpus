@@ -27,6 +27,7 @@ test_file7: str = "../tests/Mazarinades_tests/2001-2100/Moreau2012_GBOOKS.xml"
 test_file8: str = "../tests/Mazarinades_tests/1301-1400/Moreau1372_GALL.xml"
 test_file9: str = "../Mazarinades/3001-3100/Moreau3003_GBOOKS.xml"
 test_file10: str = "../TODO/Moreau23_GBOOKS.xml"
+test_file11: str = "../Mazarinades/1-100/Moreau56_GALL.xml"
 unknown_pub_place: str = "Sans Lieu"
 unknown_pub_name: str = "Sans Nom"
 unknown_pub_date: str = "Sans Date"
@@ -372,56 +373,78 @@ def update_xml_body(input_filepath: str, output_dir: str, text_dir_path: str, en
     og_root = og_tree.getroot()
     og_header = og_root[0]
     og_body = og_root[1][0]
+    # set xml:id
+    # og_root.set("xml:id", Path(input_filepath).stem)
     # update engine in projectDesc
     og_projectDesc_p_list: list = og_root.findall(
         f".//ns:projectDesc/ns:p", namespaces={"ns": XMLNS})
-    for project_p in og_projectDesc_p_list:
-        if "kraken" in project_p.text.lower():
-            project_p.text = f"L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec {engine}."
-            print(project_p.text)
-    # update the body of the document
-    # keep the first page
-    dummy_root = ET.Element("dummy_root")
-    dummy_root.text = ""
-    dummy_tree = ET.ElementTree(element=(dummy_root))
-    # first_page_str:str = ""
-    capture: bool = False
-    for element in og_body.iter():
-        print(capture)
-        print(element.tag)
-        if element.tag == f"{{{XMLNS}}}pb":
-            if element.attrib.get("n") == "1":
-                capture = True
+    if "amélie" in (ET.tostring(og_root, encoding='utf-8', method='xml').lower().decode('utf-8')):
+        for project_p in og_projectDesc_p_list:
+            if "kraken" in project_p.text.lower():
+                project_p.text = f"L'édition présentée ici est issue d'une transcription manuelle réalisée par Amélie Hip."
+        print(project_p.text)
+        print("Manual transcription.")
+    else:
+        for project_p in og_projectDesc_p_list:
+            if "kraken" in project_p.text.lower():
+                project_p.text = f"L'édition présentée ici est issue d'un processus d'OCRisation réalisé avec {engine}."
+                print(project_p.text)
+        # update the body of the document
+        # keep the first page
+        dummy_root = ET.Element("dummy_root")
+        dummy_root.text = ""
+        dummy_tree = ET.ElementTree(element=(dummy_root))
+        # first_page_str:str = ""
+        capture: bool = False
+        for element in og_body.iter():
+            print(capture)
+            print(element.tag)
+            if element.tag == f"{{{XMLNS}}}pb":
+                if element.attrib.get("n") == "1":
+                    capture = True
+                else:
+                    capture = False
+                    break
+            if capture:
+                dummy_subelement = ET.SubElement(
+                    dummy_root, element.tag, element.attrib)
+                dummy_subelement.text = element.text
+                dummy_subelement.tail = element.tail
+        og_pb1: str = ET.tostring(
+            element=dummy_root, encoding="unicode", xml_declaration=False)
+        # make new body
+        new_text_path: str = os.path.join(
+            text_dir_path, f"{Path(input_filepath).stem}.txt")
+        with open(new_text_path, "r") as text_file:
+            print("before")
+            print(og_pb1)
+            og_pb1 = re.sub(pattern=r"<.*dummy_root.*?>",
+                            repl="", string=og_pb1)
+            print("after")
+            print(og_pb1)
+            new_text: str = text_file.read()
+            pb2_match = re.match(r"(.*)(<pb n=\"2\" />)(.*)",
+                                 new_text, flags=re.DOTALL)
+            if pb2_match is not None:
+                # print(re.match(r"<pb n=\"1\" />(.*)<pb n=\"2\" />", new_text, re.DOTALL))
+                new_text = re.sub(
+                    pattern=r"<pb n=\"1\" />(.*)<pb n=\"2\" />", repl=f"{og_pb1}<pb n=\"2\" />", string=new_text, flags=re. DOTALL)
+                print(new_text)
             else:
-                capture = False
-                break
-        if capture:
-            dummy_subelement = ET.SubElement(
-                dummy_root, element.tag, element.attrib)
-            dummy_subelement.text = element.text
-            dummy_subelement.tail = element.tail
-    og_pb1: str = ET.tostring(
-        element=dummy_root, encoding="unicode", xml_declaration=False)
-    # make new body
-    new_text_path: str = os.path.join(
-        text_dir_path, f"{Path(input_filepath).stem}.txt")
-    with open(new_text_path, "r") as text_file:
-        print("before")
-        print(og_pb1)
-        og_pb1 = re.sub(pattern=r"<.*dummy_root.*?>", repl="", string=og_pb1)
-        print("after")
-        print(og_pb1)
-        new_text: str = text_file.read()
-        pb2_match = re.match(r"(.*)(<pb n=\"2\" />)(.*)",
-                             new_text, flags=re.DOTALL)
-        if pb2_match is not None:
-            # print(re.match(r"<pb n=\"1\" />(.*)<pb n=\"2\" />", new_text, re.DOTALL))
-            new_text = re.sub(
-                pattern=r"<pb n=\"1\" />(.*)<pb n=\"2\" />", repl=f"{og_pb1}<pb n=\"2\" />", string=new_text, flags=re.DOTALL)
-            print(new_text)
-        else:
-            new_text = re.sub(pattern=r"<pb n=\"1\" />(.*)",
-                              repl=og_pb1, string=new_text, flags=re.DOTALL)
+                new_text = re.sub(pattern=r"<pb n=\"1\" />(.*)",
+                                  repl=og_pb1, string=new_text, flags=re.DOTALL)
+            # replace new body in <text>
+            text_tag = og_root.find(f".//ns:text", namespaces={"ns": XMLNS})
+            if text_tag is not None:
+                text_tag.clear()
+                text_tag.append(ET.fromstring(
+                    f"<body><p>{new_text}</p></body>"))
+            # print(ET.tostring(og_root, encoding="utf-8", method="xml").decode("utf-8"))
+            # save new xml file
+    with open(os.path.join(output_dir, os.path.basename(input_filepath)), "w") as output_file:
+        output_file.write(
+            f"{xml_declaration}{ET.tostring(og_root, encoding='utf-8', method='xml').decode('utf-8')}")
+    return
 
     # keep track of figures to re-insert them in the corrected text in the appropriate location later
     # figure_elements: list[dict] = []
@@ -463,6 +486,9 @@ if __name__ == "__main__":
 
     # update tests
     test_dir: str = "../tests"
-    text_dir_path: str = "../../Ressources/PDF_to_TEI/2-textes_concat/kraken4.3.13.dev18/"
-    update_xml_body(input_filepath=test_file10, output_dir=test_dir,
+    text_dir_path: str = "../../Ressources/PDF_to_TEI/2-textes_concat/kraken4.3.13.dev25/"
+    update_xml_body(input_filepath=test_file11, output_dir=test_dir,
                     text_dir_path=text_dir_path, xml_declaration=XML_HEADER)
+    # for filepath in glob.glob("../Mazarinades/1-100/*"):
+    #    update_xml_body(input_filepath=filepath, output_dir=test_dir,
+    #                    text_dir_path=text_dir_path, xml_declaration=XML_HEADER)
