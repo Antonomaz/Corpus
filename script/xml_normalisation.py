@@ -365,7 +365,8 @@ def update_xml_body(input_filepath: str, output_dir: str, text_dir_path: str, en
                 break
             xml_declaration += line
     if engine is None:
-        engine = Path(text_dir_path).stem
+        engine = os.path.basename(text_dir_path)
+        print(engine)
     # register XMLNS
     ET.register_namespace(prefix="", uri=XMLNS)
     # parse the original xml
@@ -397,8 +398,8 @@ def update_xml_body(input_filepath: str, output_dir: str, text_dir_path: str, en
         # first_page_str:str = ""
         capture: bool = False
         for element in og_body.iter():
-            print(capture)
-            print(element.tag)
+            # print(capture)
+            # print(element.tag)
             if element.tag == f"{{{XMLNS}}}pb":
                 if element.attrib.get("n") == "1":
                     capture = True
@@ -416,12 +417,12 @@ def update_xml_body(input_filepath: str, output_dir: str, text_dir_path: str, en
         new_text_path: str = os.path.join(
             text_dir_path, f"{Path(input_filepath).stem}.txt")
         with open(new_text_path, "r") as text_file:
-            print("before")
-            print(og_pb1)
+            # print("before")
+            # print(og_pb1)
             og_pb1 = re.sub(pattern=r"<.*dummy_root.*?>",
                             repl="", string=og_pb1)
-            print("after")
-            print(og_pb1)
+            # print("after")
+            # print(og_pb1)
             new_text: str = text_file.read()
             pb2_match = re.match(r"(.*)(<pb n=\"2\" />)(.*)",
                                  new_text, flags=re.DOTALL)
@@ -429,7 +430,7 @@ def update_xml_body(input_filepath: str, output_dir: str, text_dir_path: str, en
                 # print(re.match(r"<pb n=\"1\" />(.*)<pb n=\"2\" />", new_text, re.DOTALL))
                 new_text = re.sub(
                     pattern=r"<pb n=\"1\" />(.*)<pb n=\"2\" />", repl=f"{og_pb1}<pb n=\"2\" />", string=new_text, flags=re. DOTALL)
-                print(new_text)
+                # print(new_text)
             else:
                 new_text = re.sub(pattern=r"<pb n=\"1\" />(.*)",
                                   repl=og_pb1, string=new_text, flags=re.DOTALL)
@@ -442,6 +443,7 @@ def update_xml_body(input_filepath: str, output_dir: str, text_dir_path: str, en
             # print(ET.tostring(og_root, encoding="utf-8", method="xml").decode("utf-8"))
             # save new xml file
     with open(os.path.join(output_dir, os.path.basename(input_filepath)), "w") as output_file:
+        ET.indent(og_tree)
         output_file.write(
             f"{xml_declaration}{ET.tostring(og_root, encoding='utf-8', method='xml').decode('utf-8')}")
     return
@@ -486,9 +488,9 @@ if __name__ == "__main__":
 
     # update tests
     test_dir: str = "../tests"
-    text_dir_path: str = "../../Ressources/PDF_to_TEI/2-textes_concat/kraken4.3.13.dev25/"
-    update_xml_body(input_filepath=test_file11, output_dir=test_dir,
-                    text_dir_path=text_dir_path, xml_declaration=XML_HEADER)
-    # for filepath in glob.glob("../Mazarinades/1-100/*"):
-    #    update_xml_body(input_filepath=filepath, output_dir=test_dir,
-    #                    text_dir_path=text_dir_path, xml_declaration=XML_HEADER)
+    text_dir_path: str = "../../Ressources/PDF_to_TEI/2-textes_concat/kraken4.3.13.dev25"
+    # update_xml_body(input_filepath=test_file11, output_dir=test_dir, text_dir_path=text_dir_path, xml_declaration=XML_HEADER)
+    maz_dir_1_100: str = "../Mazarinades/1-100/"
+    for filepath in glob.glob("../Mazarinades/1-100/*"):
+        update_xml_body(input_filepath=filepath, output_dir=maz_dir_1_100,
+                        text_dir_path=text_dir_path, xml_declaration=XML_HEADER)
