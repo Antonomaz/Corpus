@@ -14,7 +14,8 @@ from json_stats_normalised import test_stats
 # test_dir:str = "../Mazarinades/*/*.xml"
 
 back_up_dir: str = "../Mazarinades_bak/*/*.xml"
-maz_dir: str = "../Mazarinades/Bibliotheque_Mazarine/*.xml"
+all_dir: str = "../Mazarinades/**/**.xml"
+# maz_dir: str = "../Mazarinades/Bibliotheque_Mazarine/*.xml"
 # maz_dir:str = "../tests/Mazarinades_tests/Bibliotheque_Mazarine/*.xml"
 
 test_file1: str = "../tests/Mazarinades_tests/1701-1800/Moreau1751_GBOOKS.xml"
@@ -346,8 +347,10 @@ def change_attribute_name(input_filepath: str, output_filepath: str, tag: str, o
 
 def change_attribute_name_dir(dir_path: str, tag: str, old_attribute: str, new_attribute: str, namespace: str = ""):
     for filepath in glob.glob(pathname=dir_path):
-        change_attribute_name(input_filepath=filepath, output_filepath=filepath, tag=tag,
-                              old_attribute=old_attribute, new_attribute=new_attribute, namespace=XMLNS)
+        if "MAZ" in filepath:
+            print(filepath)
+            change_attribute_name(input_filepath=filepath, output_filepath=filepath, tag=tag,
+                                  old_attribute=old_attribute, new_attribute=new_attribute, namespace=XMLNS)
     return
 
 
@@ -481,16 +484,16 @@ if __name__ == "__main__":
     # tei_to_json_file(filepath="temp_xml/temp.xml", main_output_dir="./temp")
     # test_stats()
     # change_attribute_name(input_filepath=test_BM_file, output_filepath="temp_xml/BM.xml", tag="pb", old_attribute="n", new_attribute="vue", namespace=namespace)
-    # change_attribute_name_dir(dir_path=maz_dir, tag="pb", old_attribute="n", new_attribute="vue", namespace=namespace)
+    change_attribute_name_dir(dir_path=all_dir, tag="pb",
+                              old_attribute="n", new_attribute="vue", namespace=XMLNS)
 
     # normalise_xml_dir(dir_path=test_dir, value_to_change="pièce de théâtre", replacement="texte de forme théâtrale", change_name=True)
     # normalise_xml_dir(dir_path="../Mazarinades/Antonomaz/*.xml", value_to_change="pièce de théâtre", replacement="texte de forme théâtrale", change_name=True)
 
     # update tests
-    test_dir: str = "../tests"
-    text_dir_path: str = "../../Ressources/PDF_to_TEI/2-textes_concat/kraken4.3.13.dev25"
+    # test_dir: str = "../tests"
+    # text_dir_path: str = "../../Ressources/#PDF_to_TEI/2-textes_concat/kraken4.3.13.dev25"
     # update_xml_body(input_filepath=test_file11, output_dir=test_dir, text_dir_path=text_dir_path, xml_declaration=XML_HEADER)
-    maz_dir_1_100: str = "../Mazarinades/1-100/"
-    for filepath in glob.glob("../Mazarinades/1-100/*"):
-        update_xml_body(input_filepath=filepath, output_dir=maz_dir_1_100,
-                        text_dir_path=text_dir_path, xml_declaration=XML_HEADER)
+    # maz_dir_1_100: str = "../Mazarinades/1-100/"
+    # for filepath in glob.glob("../Mazarinades/1-100/*"):
+    #    update_xml_body(input_filepath=filepath, output_dir=maz_dir_1_100, text_dir_path=text_dir_path, xml_declaration=XML_HEADER)
