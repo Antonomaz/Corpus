@@ -240,8 +240,10 @@ if __name__ == "__main__":
     path = "Corpus/Mazarinades/*/*.xml"
 
     testfile = "Corpus/Mazarinades/1-100/Moreau3_MAZ.xml"
-
-    texte = Texte(testfile)
+#    try:
+#      texte = Texte(testfile)
+#    except:
+#      continue
     print(texte.__dict__)
 
     if test != "soft":

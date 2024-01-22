@@ -52,7 +52,11 @@ def tei_to_json_dir(input_dir_path:str=input_dir_path, output_dir_path:str = mai
     filepath_list:list = glob(input_dir_path)
     res_dict:dict = {}
     for filepath in tqdm(filepath_list):
-        res_dict[filepath] = tei_to_json_file(filepath=filepath, main_output_dir=output_dir_path)
+#        try:
+          res_dict[filepath] = tei_to_json_file(filepath=filepath, main_output_dir=output_dir_path)
+#        except:
+#          print(filepath)
+#          continue
     return res_dict
           
 #tei_to_json_dir()
