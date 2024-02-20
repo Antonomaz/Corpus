@@ -35,6 +35,12 @@ def corpora(path: str | list):
 class Texte:
     lexique = mots_LGERM
 
+    pages_regex = re.compile(r"(?:<pb\s*.*?\s*>)")
+    # In the case of `<lb rend="¬" break="no" />`, we could add a dash at the end of the line
+    line_breaks_and_figures = re.compile(r'\n|<\s*lb?\s*/>|<\s*lb?\s*>|<\\\s*lb?\s*>|(?:<lb?\s*(?:(?:rend=".*?")|(?:break=".*?"))*\s*/?>)|<figure\s*type"\w*"\s*/>')
+    tabs_and_tags = re.compile(r'<.*?/?>|\t')
+    double_spaces_and_beyond = re.compile(r'(\s){2,}')
+
     def __init__(self, path):
         # added in
         self.pages_number = None
@@ -160,29 +166,29 @@ class Texte:
         # 2023-06-05
         # elts = {e.tag: e.text for e in soup.find_all()} not sure what it was supposed to do: doesn't return anything
         elts = {tag.name: tag.text for tag in soup.find_all()}
-        # print(elts)
-        # print(elts.keys())
 
         # 2024-02-03
         pages_number = BeautifulSoup(self.txt, "xml")
         pages_number = pages_number.find_all("pb")
 
-        txt = re.split(r"(?:<pb .*?>)", self.txt)[1:]
+        txt = self.pages_regex.split(self.txt)[1:]
 
         if not txt:
             print(f"Empty file: {self.path = }")
             return
 
         if len(pages_number) < len(txt):
-            print(f"Number of pages and number of texts don't match: {self.path = }"
-                  f", {len(pages_number) = }, {len(txt) = }")
+            print(
+                f"Number of pages and number of texts don't match: {self.path = }"
+                f", {len(pages_number) = }, {len(txt) = }"
+            )
 
         combined = zip(pages_number, txt)
-        combined = [(e[0], re.split(r'\n|<lb/>|<l>|<\\l>|<l\s*rend="\w+"\s*>', e[1])) for e in combined]
+        combined = [(e[0], self.line_breaks_and_figures.split(e[1])) for e in combined]
         # |<figure\s*type"\w*"\s*/> in the following regex (should be covered by <.*?/?>)
-        combined = [(e[0], [re.sub(r'<.*?/?>|\t', "", line) for line in e[1]]) for e in combined]
+        combined = [(e[0], [self.tabs_and_tags.sub("", line) for line in e[1]]) for e in combined]
         # removing double spaces but keeping the right space
-        combined = [(e[0], [re.sub(r'(\s){2,}', r'\1', line) for line in e[1]]) for e in combined]
+        combined = [(e[0], [self.double_spaces_and_beyond.sub(r'\1', line) for line in e[1]]) for e in combined]
         combined = [(e[0], [line.strip() for line in e[1] if line.strip()]) for e in combined]
         combined = [e for e in combined if e[1]]
 
