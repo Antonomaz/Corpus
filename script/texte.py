@@ -7,7 +7,7 @@ from collections import Counter
 import xmltodict
 from bs4 import BeautifulSoup
 from numpy import mean
-from tqdm import tqdm
+from tqdm.auto import tqdm
 
 
 def eval_sub_type(str_):
@@ -24,7 +24,7 @@ with open("LGERM.json", encoding="utf-8") as f:
 mots_LGERM = set(LGERM)
 
 
-def corpora(path: str|list):
+def corpora(path: str | list):
     if isinstance(path, str):
         path = glob.glob(path)
 
@@ -37,8 +37,9 @@ class Texte:
 
     def __init__(self, path):
         # added in
+        self.pages_number = None
         self.corrector: bool = None
-        self.imprimatur:str = None
+        self.imprimatur: str = None
         self.elts = None
 
         self.ttrs = None
@@ -56,10 +57,10 @@ class Texte:
         self.lexicalite = None
         self.lignes_non_lexicalisees = 0
 
-        self.n_words:int = None
-        self.n_lines:int = None
-        self.n_pages:int = None
-        self.n_chars:int = None
+        self.n_words: int = None
+        self.n_lines: int = None
+        self.n_pages: int = None
+        self.n_chars: int = None
 
         self.path = path
 
@@ -129,7 +130,7 @@ class Texte:
 
         # publisher
         dict_header["publisher"] = dict_["fileDesc"]["sourceDesc"]["bibl"]["publisher"]
-        #print(dict_header["publisher"])
+        # print(dict_header["publisher"])
 
         # checking if the file has been reviewed or not
         persName_dict: dict = {}
@@ -152,21 +153,39 @@ class Texte:
 
     def process_body(self):
         tei_head = re.search(r"<teiHeader>.*?</teiHeader>", self.txt, re.DOTALL).group()
-        #print(tei_head)
+        # print(tei_head)
 
         soup = BeautifulSoup(tei_head, "html.parser")
 
         # 2023-06-05
         # elts = {e.tag: e.text for e in soup.find_all()} not sure what it was supposed to do: doesn't return anything
         elts = {tag.name: tag.text for tag in soup.find_all()}
-        #print(elts)
-        #print(elts.keys())
-        
+        # print(elts)
+        # print(elts.keys())
+
+        # 2024-02-03
+        pages_number = BeautifulSoup(self.txt, "xml")
+        pages_number = pages_number.find_all("pb")
+
         txt = re.split(r"(?:<pb .*?>)", self.txt)[1:]
-        txt = [re.split(r"\n|<lb/>|<l>|<\\l>", line) for line in txt]
-        txt = [[re.sub(r"<.*?>|  |\t", "", line) for line in page] for page in txt]
-        txt = [[line.strip() for line in page if line.strip()] for page in txt]
-        txt = [page for page in txt if page]
+
+        if not txt:
+            print(f"Empty file: {self.path = }")
+            return
+
+        if len(pages_number) < len(txt):
+            print(f"Number of pages and number of texts don't match: {self.path = }"
+                  f", {len(pages_number) = }, {len(txt) = }")
+
+        combined = zip(pages_number, txt)
+        combined = [(e[0], re.split(r'\n|<lb/>|<l>|<\\l>|<l rend="\w+">', e[1])) for e in combined]
+        combined = [(e[0], [re.sub(r"<.*?>|  |\t", "", line) for line in e[1]]) for e in combined]
+        combined = [(e[0], [line.strip() for line in e[1] if line.strip()]) for e in combined]
+        combined = [e for e in combined if e[1]]
+
+        pages_number, txt = zip(*combined)
+
+        pages_number = [e.get("n") if e.get("n") else e.get("vue") for e in pages_number]
 
         pages = [' '.join(line for line in page) for page in txt]
 
@@ -176,10 +195,11 @@ class Texte:
             print(f"Empty file: {self.path = }")
             return
 
+        self.pages_number = pages_number
+
         self.texte = txt
 
         self.elts = elts
-
 
         self.n_pages = len(self.txt)
         self.n_lines = sum(len(page) for page in txt)
@@ -198,14 +218,13 @@ class Texte:
 
         self.pages = pages
         self.plain = plain
-        
-        # added in: 2023-06-04
-        text_soup:BeautifulSoup = BeautifulSoup(self.txt, features="xml")
-        imprimatur_text:str = text_soup.find("imprimatur")
-        self.imprimatur = imprimatur_text.text if imprimatur_text is not None else None
-        #print(self.imprimatur)
 
-        
+        # added in: 2023-06-04
+        text_soup: BeautifulSoup = BeautifulSoup(self.txt, features="xml")
+        imprimatur_text: str = text_soup.find("imprimatur")
+        self.imprimatur = imprimatur_text.text if imprimatur_text is not None else None
+        # print(self.imprimatur)
+
         return
 
     def mesurer_ttr(self, text):
@@ -227,7 +246,7 @@ class Texte:
 
         return len(mots) / len(tokens)
 
-    @ staticmethod
+    @staticmethod
     def mesurer_hapax(text):
         mots = text.split()
         count = Counter(mots)
@@ -240,12 +259,11 @@ if __name__ == "__main__":
     path = "Corpus/Mazarinades/*/*.xml"
 
     testfile = "Corpus/Mazarinades/1-100/Moreau3_MAZ.xml"
-#    try:
-#      texte = Texte(testfile)
-#    except:
-#      continue
-    print(texte.__dict__)
+    #    try:
+    #      texte = Texte(testfile)
+    #      print(texte.__dict__)
+    #    except:
+    #      continue
 
     if test != "soft":
         liste = list(corpora(path))
-
