@@ -36,8 +36,7 @@ class Texte:
     lexique = mots_LGERM
 
     pages_regex = re.compile(r"(?:<pb\s*.*?\s*>)")
-    # In the case of `<lb rend="¬" break="no" />`, we could add a dash at the end of the line
-    line_breaks_and_figures = re.compile(r'\n|<\s*lb?\s*/>|<\s*lb?\s*>|<\\\s*lb?\s*>|(?:<lb?\s*(?:(?:rend=".*?"\s*)|(?:break=".*?"\s*))*\s*/?>)|<figure\s*type"\w*"\s*/>')
+    line_breaks_and_figures = re.compile(r'\n|(?:<\s*(?:lb?|figure)\s*(?:\w*=".*?"\s*)*/?>)')
     tabs_and_tags = re.compile(r'<.*?/?>|\t')
     double_spaces_and_beyond = re.compile(r'(\s){2,}')
 
