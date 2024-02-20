@@ -1,6 +1,7 @@
 from glob import glob
 import json
 from pathlib import Path
+from concurrent.futures import ProcessPoolExecutor
 
 import texte
 
@@ -54,13 +55,15 @@ def tei_to_json_file(filepath: str, main_output_dir: str = main_output_dir):
 
 def tei_to_json_dir(input_dir_path: str = input_dir_path, output_dir_path: str = main_output_dir):
     filepath_list: list = glob(input_dir_path)
-    res_dict: dict = {}
-    for filepath in tqdm(filepath_list):
-        #        try:
-        res_dict[filepath] = tei_to_json_file(filepath=filepath, main_output_dir=output_dir_path)
-    #        except:
-    #          print(filepath)
-    #          continue
-    return res_dict
+    # res_dict: dict = {}
+    # for filepath in tqdm(filepath_list):
+    #     #        try:
+    #     res_dict[filepath] = tei_to_json_file(filepath=filepath, main_output_dir=output_dir_path)
+    # #        except:
+    # #          print(filepath)
+    # #          continue
+    # return res_dict
+    with ProcessPoolExecutor() as executor:
+        _ = list(tqdm(executor.map(tei_to_json_file, filepath_list), total=len(filepath_list)))
 
 # tei_to_json_dir()
