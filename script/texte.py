@@ -178,8 +178,11 @@ class Texte:
                   f", {len(pages_number) = }, {len(txt) = }")
 
         combined = zip(pages_number, txt)
-        combined = [(e[0], re.split(r'\n|<lb/>|<l>|<\\l>|<l rend="\w+">', e[1])) for e in combined]
-        combined = [(e[0], [re.sub(r"<.*?>|  |\t", "", line) for line in e[1]]) for e in combined]
+        combined = [(e[0], re.split(r'\n|<lb/>|<l>|<\\l>|<l\s*rend="\w+"\s*>', e[1])) for e in combined]
+        # |<figure\s*type"\w*"\s*/> in the following regex (should be covered by <.*?/?>)
+        combined = [(e[0], [re.sub(r'<.*?/?>|\t', "", line) for line in e[1]]) for e in combined]
+        # removing double spaces but keeping the right space
+        combined = [(e[0], [re.sub(r'(\s){2,}', r'\1', line) for line in e[1]]) for e in combined]
         combined = [(e[0], [line.strip() for line in e[1] if line.strip()]) for e in combined]
         combined = [e for e in combined if e[1]]
 
