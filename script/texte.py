@@ -115,7 +115,8 @@ class Texte:
         dict_header["change"] = dict_["revisionDesc"]["change"]
 
         titre = dict_["fileDesc"]["titleStmt"]["title"]
-        titre = [e for e in titre if e["@type"] == "main"][0]["#text"]
+        titre = [e["#text"] for e in titre if e["@type"] == "main" and "#text" in e]
+
         dict_header["titre"] = titre if isinstance(titre, str) else " ".join(titre)
 
         dict_header["dates"] = dict_["fileDesc"]["publicationStmt"]["date"]
@@ -157,7 +158,7 @@ class Texte:
         return (self.header)["nbPages"]
 
     def process_body(self):
-        tei_head = re.search(r"<teiHeader>.*?</teiHeader>", self.txt, re.DOTALL).group()
+        tei_head = re.search(r"<teiHeader.*?>.*?</teiHeader>", self.txt, re.DOTALL).group()
         # print(tei_head)
 
         soup = BeautifulSoup(tei_head, "html.parser")
